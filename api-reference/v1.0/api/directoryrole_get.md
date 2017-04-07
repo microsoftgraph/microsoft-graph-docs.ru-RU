@@ -1,0 +1,61 @@
+# <a name="get-directoryrole"></a>Получение объекта directoryRole
+
+Получение свойств объекта directoryRole.
+
+## <a name="prerequisites"></a>Необходимые компоненты
+Для применения этого API требуется одна из указанных **областей**: *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+GET /directoryRoles/{id}
+```
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод **не** поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика (например, $filter не поддерживается).
+
+## <a name="request-headers"></a>Заголовки запросов
+| Имя       | Тип | Описание|
+|:-----------|:------|:----------|
+| Authorization  | строка  | Bearer <token>. Обязательный параметр. |
+
+## <a name="request-body"></a>Тело запроса
+Не указывайте тело запроса для этого метода.
+## <a name="response"></a>Отклик
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryRole](../resources/directoryrole.md) в тексте отклика.
+## <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryrole"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/directoryRoles/{id}
+```
+##### <a name="response"></a>Отклик
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryRole"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "roleTemplateId": "roleTemplateId-value",
+  "id": "id-value"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get directoryRole",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
