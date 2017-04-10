@@ -7,22 +7,28 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта NamedItem](../api/nameditem_get.md) | [NamedItem](nameditem.md) |Чтение свойств и связей объекта namedItem.|
+|[Add](../api/nameditem_add.md)|[NamedItem](nameditem.md)|Добавляет новое имя в определенную коллекцию.|
+|[AddFormulaLocal](../api/nameditem_addformulalocal.md)|[NamedItem](nameditem.md)|Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.|
+|[Get NamedItem](../api/nameditem_get.md) | [NamedItem](nameditem.md) |Чтение свойств и связей объекта namedItem.|
 |[Обновление](../api/nameditem_update.md) | [NamedItem](nameditem.md)    |Обновление объекта NamedItem. |
 |[Range](../api/nameditem_range.md)|[Range](range.md)|Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.|
 |[Список](../api/nameditem_list.md) | Коллекция объектов [NamedItem](nameditem.md) |Получение коллекции объектов namedItem. |
+
 
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
 |name|string|Имя объекта. Только для чтения.|
+|comment|строка|Представляет примечание, связанное с этим именем.|
+|scope|строка|Указывает, относится ли имя к книге или определенному листу. Только для чтения.|
 |type|string|Указывает тип ссылки, связанный с именем. Возможные значения: `String`, `Integer`, `Double`, `Boolean`, `Range`. Только для чтения.|
 |значение|object|Представляет формулу, на которую ссылается имя. Например, =Sheet14!$B$2:$H$12, =4,75 и т. д. Только для чтения.|
 |visible|boolean|Определяет, является ли объект видимым.|
 
 ## <a name="relationships"></a>Связи
-Нет
-
+| Связь       | Тип    |Описание|
+|:---------------|:--------|:----------|
+|worksheet|[worksheet](worksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,9 +45,12 @@
 ```json
 {
   "name": "string",
+  "comment": "string",
+  "scope": "string",
   "type": "string",
   "value": {"@odata.type": "microsoft.graph.range"},
   "visible": true
+  
 }
 
 ```

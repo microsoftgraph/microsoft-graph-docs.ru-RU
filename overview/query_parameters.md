@@ -32,9 +32,13 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/addre
 ### <a name="search"></a>$search
 Чтобы ограничить результаты запроса с помощью условия поиска, используйте параметр запроса **$search**. 
 
->  **Примечание.** В настоящее время можно искать сообщения, но не контакты или события. Запрос **$search** возвращает до 250 результатов. В поисковом запросе нельзя использовать параметры **$filter** и **$orderby**.
+>  **Примечание.** В настоящее время параметр **$search** можно использовать для коллекций [message](../api-reference/v1.0/resources/message.md) и [person](../api-reference/beta/resources/person.md), но не для коллекций [contact](../api-reference/v1.0/resources/contact.md) или [event](../api-reference/v1.0/resources/event.md). Запрос **$search** возвращает до 250 результатов. В запросе **$search** нельзя использовать параметры **$filter** и **$orderby**.
 
-Условия поиска указываются с использованием расширенного синтаксиса запросов (AQS). Результаты сортируются по дате и времени отправки сообщения.
+Условия поиска указываются с использованием расширенного синтаксиса запросов (AQS). 
+
+**Применение параметра $search к сообщениям**
+
+Результаты поиска сортируются по дате и времени отправки сообщения.
 
 Вы можете указать следующие свойства объекта **message** в условии **$search**: **attachments**, **bccRecipients**, **body**, **category**, **ccRecipients**, **content**, **from**, **hasAttachments**, **participants**, **receivedDateTime**, **sender**, **subject**, **toRecipients**.
 
