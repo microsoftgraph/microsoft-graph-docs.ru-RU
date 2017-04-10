@@ -6,7 +6,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
+GET /workbook/worksheets(<id|name>)/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -15,7 +15,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/Image(width=0,height=0,fitti
 | Authorization  | Токен носителя.|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|
@@ -33,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/Image(width=0,height=0,fitti
 Ниже приведен пример запроса.
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 Content-type: application/json
 Content-length: 77
 
