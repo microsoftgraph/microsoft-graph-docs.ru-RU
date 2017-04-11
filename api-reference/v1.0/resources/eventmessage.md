@@ -38,8 +38,8 @@
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
 |bccRecipients|Коллекция [recipient](recipient.md)|Получатели скрытой копии сообщения.|
-|body|[itemBody](itembody.md)|Текст сообщения.|
-|bodyPreview|String|Первые 255 символов в тексте сообщения.|
+|body|[itemBody](itembody.md)|Текст сообщения. В формате HTML или текстовом формате.|
+|bodyPreview|String|Первые 255 символов в тексте сообщения. В текстовом формате.|
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|String|Версия сообщения.|
