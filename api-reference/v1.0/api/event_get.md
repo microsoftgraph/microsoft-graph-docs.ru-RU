@@ -2,6 +2,12 @@
 
 Получение свойств и отношений указанного объекта [event](../resources/event.md).
 
+В настоящее время эта операция возвращает текст события только в формате HTML.
+
+Так как ресурс **event** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `GET` можно получить настраиваемые свойства и данные расширения в экземпляре **event**.
+
+### <a name="support-various-time-zones"></a>Поддержка разных часовых поясов
+
 Для всех операций GET, которые возвращают события, можно использовать заголовок `Prefer: outlook.timezone`, чтобы задать часовой пояс для указанного в отклике времени начала и завершения события. 
 
 Например, заголовок `Prefer: outlook.timezone` задает в отклике время начала и завершения согласно североамериканскому восточному времени.
@@ -13,9 +19,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 Узнать, какой именно часовой пояс использовался при создании события, позволят свойства **OriginalStartTimeZone** и **OriginalEndTimeZone** ресурса **event**.
 
-Так как ресурс **event** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `GET` можно получить настраиваемые свойства и данные расширения в экземпляре **event**.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуется одна из указанных **областей**: *Calendars.Read*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,8 +47,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer <token>. Обязательный параметр. |
-| Prefer: | outlook.timezone | Часовой пояс по умолчанию для событий, указанных в отклике. |
+| Authorization  | string  | Токен носителя. Обязательный. |
+| Prefer: outlook.timezone | string | Часовой пояс по умолчанию для событий, указанных в отклике. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
@@ -51,16 +56,21 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 В случае успеха этот метод возвратит код отклика `200 OK` и объект [event](../resources/event.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+Первый пример возвращает указанное событие. Он указывает следующее:
+
+- Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени. 
+- Параметр запроса `$select`, который возвращает конкретные свойства. Без параметра `$select` будут возвращены все свойства событий.
 <!-- {
   "blockType": "request",
   "name": "get_event"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}
+Prefer: outlook.timezone="Pacific Standard Time"
+
+GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,35 +79,60 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
+Preference-Applied: outlook.timezone="Pacific Standard Time"
+Content-length: 1928
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "datetime-value"
-  },
-  "iCalUId": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true,
-  "start": {
-    "dateTime": "datetime-value",
-    "timeZone": "timezone-value"
-  },
-  "end": {
-    "dateTime": "datetime-value",
-    "timeZone": "timezone-value"
-  },        
-  "location": {
-    "displayName": "displayName-value"
-  },
-  "organizer": {
-    "emailAddress": {
-      "address": "address-value",
-      "name": "name-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)/$entity",
+    "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
+    "id":"AAMkAGIAAAoZDOFAAA=",
+    "subject":"Orientation ",
+    "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
+    "body":{
+        "contentType":"html",
+        "content":"<html><head></head><body><p>Dana, this is the time you selected for our orientation. Please bring the notes I sent you.</p></body></html>"
+    },
+    "start":{
+        "dateTime":"2017-04-21T10:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "end":{
+        "dateTime":"2017-04-21T12:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "location":{
+        "displayName":"Assembly Hall"
+    },
+    "attendees":[
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Fanny Downs",
+                "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+            }
+        },
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Dana Swope",
+                "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+            }
+        }
+    ],
+    "organizer":{
+        "emailAddress":{
+            "name":"Fanny Downs",
+            "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+        }
     }
-  }
 }
 ```
 

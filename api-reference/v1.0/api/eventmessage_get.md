@@ -1,7 +1,10 @@
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
-Получение свойств и связей объекта eventMessage.
-## <a name="prerequisites"></a>Необходимые компоненты
+Получение свойств и связей объекта [eventMessage](../resources/eventmessage.md).
+
+В настоящее время эта операция возвращает текст сообщения о событии только в формате HTML.
+
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Mail.Read*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +54,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
+    "contentType": "html",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",

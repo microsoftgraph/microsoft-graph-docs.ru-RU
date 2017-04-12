@@ -1,8 +1,24 @@
 # <a name="list-events"></a>Список событий
 
-Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. Этот список содержит собрания с одним экземпляром и образцы рядов.
+Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.
+
+В настоящее время эта операция возвращает текст события только в формате HTML.
 
 Чтобы получить расширенные экземпляры события, вы можете [получить представление календаря](calendar_list_calendarview.md) или [экземпляры события](event_list_instances.md).
+
+### <a name="support-various-time-zones"></a>Поддержка разных часовых поясов
+
+Для всех операций GET, которые возвращают события, можно использовать заголовок `Prefer: outlook.timezone`, чтобы задать часовой пояс для указанного в отклике времени начала и завершения события. 
+
+Например, заголовок `Prefer: outlook.timezone` задает в отклике время начала и завершения согласно североамериканскому восточному времени.
+```http
+Prefer: outlook.timezone="Eastern Standard Time"
+```
+
+Если событие создано с применением другого часового пояса, время начала и завершения будет изменено в соответствии с часовым поясом, указанным в заголовке `Prefer`. Поддерживаемые часовые пояса указаны в этом [списке](../resources/datetimetimezone.md). Если заголовок `Prefer: outlook.timezone` не указан, время начала и завершения возвращается в формате UTC.
+
+Узнать, какой именно часовой пояс использовался при создании события, позволят свойства **OriginalStartTimeZone** и **OriginalEndTimeZone** ресурса **event**.
+
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуется одна из указанных **областей**: *Calendars.Read; Calendars.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
@@ -26,27 +42,33 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
 ## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer <token>. Обязательный параметр.  |
-| Content-Type   | application/json  | 
+| Имя       | Тип | Описание|
+|:-----------|:------|:----------|
+| Authorization  | string  | Токен носителя. Обязательный. |
+| Prefer: outlook.timezone | string | Часовой пояс по умолчанию для событий, указанных в отклике. Необязательный. | 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Event](../resources/event.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+Ниже приведен пример запроса. Он указывает следующее:
+
+- Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени. 
+- Параметр запроса `$select`, который возвращает конкретные свойства. Без параметра `$select` будут возвращены все свойства событий.
+
 <!-- {
   "blockType": "request",
   "name": "get_events"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+
+GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -56,22 +78,64 @@ GET https://graph.microsoft.com/v1.0/me/events
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
+Preference-Applied: outlook.timezone="Pacific Standard Time"
+Content-length: 1932
 
 {
-  "value": [
-    {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
-      "responseStatus": {
-        "response": "",
-        "time": "datetime-value"
-      },
-      "iCalUId": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
-      "isReminderOn": true
-    }
-  ]
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)",
+    "value":[
+        {
+            "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
+            "id":"AAMkAGIAAAoZDOFAAA=",
+            "subject":"Orientation ",
+            "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
+            "body":{
+                "contentType":"html",
+                "content":"<html><head></head><body><p>Dana, this is the time you selected for our orientation. Please bring the notes I sent you.</p></body></html>"
+            },
+            "start":{
+                "dateTime":"2017-04-21T10:00:00.0000000",
+                "timeZone":"Pacific Standard Time"
+            },
+            "end":{
+                "dateTime":"2017-04-21T12:00:00.0000000",
+                "timeZone":"Pacific Standard Time"
+            },
+            "location":{
+                "displayName":"Assembly Hall"
+            },
+            "attendees":[
+                {
+                    "type":"required",
+                    "status":{
+                        "response":"none",
+                        "time":"0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress":{
+                        "name":"Fanny Downs",
+                        "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                    }
+                },
+                {
+                    "type":"required",
+                    "status":{
+                        "response":"none",
+                        "time":"0001-01-01T00:00:00Z"
+                    },
+                    "emailAddress":{
+                        "name":"Dana Swope",
+                        "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+                    }
+                }
+            ],
+            "organizer":{
+                "emailAddress":{
+                    "name":"Fanny Downs",
+                    "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 
