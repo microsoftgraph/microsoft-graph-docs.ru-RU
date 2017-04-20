@@ -6,7 +6,7 @@
 
 |**Значение emptySuggestionsReason**|**Причины**|
 |:-----|:-----|
-| attendeesUnavailable | Имеются сведения о доступности всех участников, но ни для одного периода времени не достигнут порог достоверности собрания (значение по умолчанию — 50 %). Это пороговое значение зависит от сведений о доступности участников для предложенного периода времени. Если участник свободен, вероятность посещения составляет 100 %, если его состояние неизвестно — 49 %, а если он занят — 0 %.|
+| attendeesUnavailable | Имеются сведения о доступности всех участников, но ни для одного периода времени не достигнут порог [достоверности собрания](../api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) (значение по умолчанию — 50 %).|
 | attendeesUnavailableOrUnknown | Отсутствуют сведения о доступности некоторых или всех участников, из-за чего значение достоверности собрания становится ниже заданного порога (значение по умолчанию — 50 %). Доступность участника может стать неизвестной, если он находится за пределами организации или произошла ошибка при получении сведений о доступности.|
 | locationsUnavailable | Свойство **isRequired** параметра [locationConstraint](locationconstraint.md) указано как обязательное, но для рассчитанных периодов времени нет доступных площадок. |
 | organizerUnavailable | Для параметра **isOrganizerOptional** задано значение false, но организатор недоступен в запрашиваемый период времени. |
@@ -34,7 +34,7 @@
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|Причина отсутствия предложений в результатах. Возможные значения: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` и `unknown`.|
+|emptySuggestionsReason|String|Причина отсутствия предложений в результатах. Возможные значения: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` и `unknown`. Строка для этого свойства остается пустой, если свойство **meetingTimeSuggestions** включает предложения о собрании.|
 |meetingTimeSuggestions|Коллекция объектов [meetingTimeSuggestion](meetingTimeSuggestion.md)|Массив предложений.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
