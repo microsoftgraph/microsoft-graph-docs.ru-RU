@@ -376,7 +376,7 @@
 4. При необходимости измените электронный адрес получателя и нажмите кнопку **Отправить сообщение**. Под кнопкой появится сообщение, что отправка выполнена успешно. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Опробуйте REST API с помощью [песочницы Graph](https://graph.microsoft.io/graph-explorer).
+- Попробуйте REST API, используя [песочницу Graph](https://graph.microsoft.io/graph-explorer).
 - Просмотрите другие [примеры AngularJS](https://github.com/search?utf8=%E2%9C%93&q=angular+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) на сайте GitHub.
 
 

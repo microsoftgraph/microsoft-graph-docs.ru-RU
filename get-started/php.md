@@ -173,7 +173,7 @@ if($response.getStatusCode() === 201) {
 Проверьте папку "Входящие" в почтовом ящике, выбранном в разделе [Вызов Microsoft Graph с помощью REST](#call-microsoft-graph-using-rest). Вы должны получить сообщение от учетной записи, которая использовалась для входа в приложение.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Опробуйте [Microsoft Graph Explorer](https://graph.microsoft.io/graph-explorer).
+- Попробуйте [песочницу Microsoft Graph](https://graph.microsoft.io/graph-explorer).
 
 
 ## <a name="see-also"></a>См. также

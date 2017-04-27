@@ -320,7 +320,7 @@ using Microsoft.Graph;
 4. Нажмите кнопку **Отправить сообщение**. Появится сообщение об успешной отправке сообщения.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Опробуйте REST API с помощью [песочницы Graph](https://graph.microsoft.io/graph-explorer).
+- Попробуйте REST API, используя [песочницу Graph](https://graph.microsoft.io/graph-explorer).
 - Вы можете найти примеры распространенных операций в [библиотеке фрагментов кода с использованием пакеты SDK Microsoft Graph для Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample) или изучить другие [примеры для Xamarin](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin) на сайте GitHub.
 
 ## <a name="see-also"></a>См. также

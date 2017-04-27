@@ -656,7 +656,7 @@ URI перенаправления выступает в роли URL-адрес
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Опробуйте REST API с помощью [песочницы Graph](https://graph.microsoft.io/graph-explorer).
+- Попробуйте REST API, используя [песочницу Graph](https://graph.microsoft.io/graph-explorer).
 - Вы можете найти примеры распространенных операций в [примере приложения Snippets Microsoft Graph для ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-snippets-sample) и других [примерах ASP.NET](http://aka.ms/aspnetgraphsamples) на сайте GitHub.
 
 ## <a name="see-also"></a>См. также

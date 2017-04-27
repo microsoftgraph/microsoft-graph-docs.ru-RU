@@ -133,7 +133,7 @@ Authorization: Bearer eyJ0eXAi...b66LoPVA
 Теперь вы знаете, как вызывать Microsoft Graph, и можете создавать другие вызовы, необходимые для вашего приложения, используя справочник по API. Обратите внимание, что необходимые для вызовов разрешения настраиваются во время регистрации приложения.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Опробуйте другие варианты REST API с помощью [песочницы Graph](https://graph.microsoft.io/graph-explorer).
+- Попробуйте другие возможности REST API, используя [песочницу Graph](https://graph.microsoft.io/graph-explorer).
 
 ## <a name="see-also"></a>См. также
 - [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)

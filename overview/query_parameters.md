@@ -19,7 +19,7 @@
 
 **Кодирование параметров запроса**
 
-- Если вы пользуетесь параметрами запроса в [Microsoft Graph Explorer](https://graph.microsoft.io/en-us/graph-explorer#), вы можете просто скопировать и вставить приведенные ниже примеры, не применяя кодировку URL к строке запроса. Следующий пример можно использовать _в Graph Explorer_, не кодируя пробелы и кавычки:
+- Если вы пользуетесь параметрами запроса в [песочнице Microsoft Graph](https://graph.microsoft.io/en-us/graph-explorer#), вы можете просто скопировать и вставить приведенные ниже примеры, не применяя кодировку URL к строке запроса. Следующий пример можно использовать _в Graph Explorer_, не кодируя пробелы и кавычки:
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
 ``` 

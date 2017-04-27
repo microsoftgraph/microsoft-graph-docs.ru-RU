@@ -205,7 +205,7 @@
 3. Нажмите кнопку **Отправить сообщение**. Под кнопкой появится сообщение, что отправка выполнена успешно.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Опробуйте REST API с помощью [песочницы Graph](https://graph.microsoft.io/graph-explorer).
+- Попробуйте REST API, используя [песочницу Graph](https://graph.microsoft.io/graph-explorer).
 - Примеры распространенных операций REST и SDK вы найдете во [фрагментах кода на языке Objective C с использованием Microsoft Graph для iOS](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## <a name="see-also"></a>См. также

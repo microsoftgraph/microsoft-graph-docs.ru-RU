@@ -46,7 +46,7 @@ Microsoft Graph предоставляет две конечные точки: /
 - [Приступите к работе](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started) с Microsoft Graph на выбранной вами платформе.
 - В оглавлении вы найдете ресурсы и операции, которые можно использовать в рабочих приложениях.
 - Опробуйте [бета-версии новых API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/beta-overview).
-- Откройте [Microsoft Graph Explorer](https://graph.microsoft.io/graph-explorer).
+- Откройте [песочницу Microsoft Graph](https://graph.microsoft.io/graph-explorer).
 - Просмотрите [другие примеры фрагментов кода Microsoft Graph](https://github.com/search?q=org%3Amicrosoftgraph+snippets-sample).
 
  >  Ваше мнение важно для нас. Для связи с нами используйте сайт [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Помечайте свои вопросы тегами {MicrosoftGraph} и {office365}.
