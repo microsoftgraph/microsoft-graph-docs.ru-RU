@@ -13,9 +13,9 @@ DELETE /groups/{id}/owners/{id}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer <token>. Обязательный параметр. |
+| Authorization  | string  | Носитель &lt;токен&gt;. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -29,7 +29,7 @@ DELETE /groups/{id}/owners/{id}/$ref
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```
 Укажите в запросе свойство `id` удаляемого объекта каталога после сегмента $ref.
 

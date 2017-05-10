@@ -16,7 +16,7 @@ POST /workbook/worksheets(<id|name>)/tables/add
 | Authorization  | Токен носителя.|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|
@@ -41,7 +41,7 @@ Content-type: application/json
 Content-length: 54
 
 {
-  "address": "address-value",
+  "address": "Sheet1!A1:D5",
   "hasHeaders": true
 }
 ```
