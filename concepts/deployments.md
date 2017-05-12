@@ -16,7 +16,7 @@
 ### <a name="microsoft-graph-explorer"></a>Песочница Microsoft Graph
 | Песочница Microsoft Graph в Китае | Песочница Microsoft Graph|
 |---------------------------|----------------|
-|https://graph.microsoft.io/zh-cn/graph-explorer| https://graph.microsoft.io/en-us/graph-explorer|
+|https://developer.microsoft.com/ru-ru/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
 
 ### <a name="azure-openid-connect-and-oauth20"></a>Azure OpenID Connect и OAuth2.0
 Конечные точки, которые используются для получения маркеров для входа или для вызова службы Microsoft Graph, предоставляемой 21Vianet, отличаются от конечных точек других предложений. 
