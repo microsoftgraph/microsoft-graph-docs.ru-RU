@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Токен носителя. Обязательный. |
+| Authorization  | строка  | Bearer <token>. Обязательный параметр. |
 | Prefer: outlook.timezone | string | Часовой пояс по умолчанию для событий, указанных в отклике. |
 
 ## <a name="request-body"></a>Тело запроса
@@ -60,22 +60,27 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 
 - Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени. 
 - Параметр запроса `$select`, который возвращает конкретные свойства. Без параметра `$select` будут возвращены все свойства событий.
+
 <!-- {
   "blockType": "request",
   "name": "get_event"
 }-->
-```http
-Prefer: outlook.timezone="Pacific Standard Time"
 
+```http
 GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
+
 ##### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

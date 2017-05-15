@@ -1,6 +1,6 @@
 # <a name="list-events"></a>Список событий
 
-Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.
+Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. Этот список содержит собрания с одним экземпляром и образцы рядов.
 
 В настоящее время эта операция возвращает текст события только в формате HTML.
 
@@ -44,10 +44,10 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Токен носителя. Обязательный. |
+| Authorization  | строка  | Bearer <token>. Обязательный параметр. |
 | Prefer: outlook.timezone | string | Часовой пояс по умолчанию для событий, указанных в отклике. Необязательный. | 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.
@@ -63,9 +63,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
   "name": "get_events"
 }-->
 ```http
-Prefer: outlook.timezone="Pacific Standard Time"
-
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.

@@ -1,15 +1,19 @@
 # <a name="list-available-drives"></a>Список доступных дисков
 
 Получение списка ресурсов [Drive](../resources/drive.md), доступных целевому объекту [User](../resources/user.md) или [Group](../resources/group.md). Приложение также может запросить набор библиотек документов на корневом сайте SharePoint.
+
 ## <a name="prerequisites"></a>Необходимые условия
+
 Для применения этого API требуется одна из указанных **областей**:
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /drives
 GET /me/drives
@@ -20,29 +24,34 @@ GET /groups/{id}/drives
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
 
 ## <a name="request-body"></a>Тело запроса
+
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Drive](../resources/drive.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса на получение списка дисков пользователя.
 
 <!-- {
   "blockType": "request",
   "name": "get_drives"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/drives
 ```
 
 ##### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.drive",
   "isCollection": true
 } -->
@@ -55,7 +64,7 @@ Content-length: 579
   "value": [
     {
       "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "driveType": "business",    
+      "driveType": "business",
       "owner": {
           "user": {
               "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",

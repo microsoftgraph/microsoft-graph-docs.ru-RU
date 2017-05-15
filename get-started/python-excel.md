@@ -15,9 +15,9 @@
 
 
 ## <a name="authorization-and-scopes"></a>Авторизация и области
-Для аутентификации вызовов REST API для Excel можно использовать [конечную точку Azure AD версии 2.0](https://graph.microsoft.io/en-us/docs/authorization/converged_auth). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
+Для аутентификации вызовов REST API для Excel можно использовать [конечную точку Azure AD версии 2.0](https://graph.microsoft.io/en-us/docs/concepts/converged_auth). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
   
-Для использования ресурса Excel требуется одна из следующих [областей разрешений](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes):
+Для использования ресурса Excel требуется одна из следующих [областей разрешений](https://graph.microsoft.io/en-us/docs/concepts/permission_scopes):
 
 * Files.Read; 
 * Files.ReadWrite.

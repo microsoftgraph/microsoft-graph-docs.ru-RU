@@ -16,7 +16,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 ### <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Авторизация  | Bearer {code}|
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ### <a name="request-body"></a>Текст запроса
@@ -31,7 +31,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
   "name": "get_workbookpivottable"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/pivotTables/{id}
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
