@@ -4,38 +4,41 @@
 
 **Примечание.** Элементы, возвращаемые из личного хранилища OneDrive, не включают аспект **SharePointIds**.
 
-### <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [ "listId", "listItemId", "listItemUniqueId", "siteId", "siteUrl", "webId" ],
   "@odata.type": "microsoft.graph.sharepointIds"
 }-->
+
 ```json
 {
     "listId": "string",
     "listItemId": "string",
     "listItemUniqueId": "string",
     "siteId": "string",
+    "siteUrl": "url",
     "webId": "string"
 }
 ```
 
-### <a name="properties"></a>Свойства
+## <a name="properties"></a>Свойства
 
-| Свойство          | Тип    | Описание                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| listId            | string  | Уникальный идентификатор списка элементов в SharePoint.                          |
-| listItemId        | string  | Целочисленный идентификатор элемента в списке.                    |
-| listItemUniqueId  | string  | Уникальный идентификатор элемента в OneDrive для бизнеса или на сайте SharePoint. |
-| siteId            | string  | Уникальный идентификатор семейства веб-сайтов, в котором хранится элемент. |
-| webId             | string  | Уникальный идентификатор сайта, на котором хранится элемент.                          |
+| Свойство         | Тип         | Описание                                                                                  |
+| :--------------- | :----------- | :------------------------------------------------------------------------------------------- |
+| listId           | string       | Уникальный идентификатор (GUID) списка, содержащего элемент, в SharePoint.                              |
+| listItemId       | string       | Целочисленный идентификатор элемента в списке.                               |
+| listItemUniqueId | string       | Уникальный идентификатор (GUID) элемента в OneDrive для бизнеса или на сайте SharePoint. |
+| siteId           | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.                        |
+| siteUrl          | string (url) | URL-адрес SharePoint для сайта, содержащего элемент.                                      |
+| webId            | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPWeb), содержащего элемент.                                    |
 
-## <a name="remarks"></a>Заметки 
+## <a name="remarks"></a>Заметки
 
-Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
+Дополнительные сведения об аспектах ресурса **driveItem** см. в описании типа [**driveItem**](driveitem.md).
 
 
 
