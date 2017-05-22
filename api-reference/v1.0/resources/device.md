@@ -2,6 +2,9 @@
 
 Представляет устройство, зарегистрированное в организации. Экземпляры device могут создаваться в облаке с помощью службы Device Registration Service или Intune. Их используют политики условного доступа для многофакторной проверки подлинности. Представленными устройствами могут быть компьютеры и ноутбуки, смартфоны и планшеты. Наследуется из [directoryObject](directoryobject.md).
 
+С помощью этого ресурса можно добавлять собственные данные к настраиваемым свойствам, применяя [расширения](../../../concepts/extensibility_overview.md).
+
+
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
@@ -15,6 +18,11 @@
 |[Список экземпляров registeredOwner](../api/device_list_registeredowners.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к зарегистрированным владельцам устройства, из свойства навигации registeredOwners.|
 |[Создание экземпляра registeredUser](../api/device_post_registeredusers.md) |[directoryObject](directoryobject.md)| Добавление зарегистрированного пользователя устройства путем записи данных в свойство навигации registeredUsers.|
 |[Список экземпляров registeredUser](../api/device_list_registeredusers.md) |Коллекция [directoryObject](directoryobject.md)| Получение зарегистрированных пользователей устройства из свойства навигации registeredUsers.|
+|**Открытые расширения**| | |
+|[Создание открытого расширения](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
+|[Получение открытого расширения](../api/opentypeextension_get.md) |Коллекция [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
+|**Расширения схемы**| | |
+|[Добавление значений расширений для схемы](../../../concepts/extensibility_schema_groups.md) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    |Описание|
@@ -39,6 +47,7 @@
 ## <a name="relationships"></a>Отношения
 | Связь | Тип    |Описание|
 |:---------------|:--------|:----------|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null.|
 |registeredOwners|Коллекция [directoryObject](directoryobject.md)|Пользователи, относящиеся к зарегистрированным владельцам устройства. Только для чтения. Допускается значение null.|
 |registeredUsers|Коллекция [directoryObject](directoryobject.md)|Зарегистрированные пользователи устройства. Только для чтения. Допускается значение null.|
 
@@ -46,11 +55,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "extensions",
     "registeredOwners",
     "registeredUsers"
   ],
@@ -79,6 +89,12 @@
 }
 
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](../../../concepts/extensibility_open_users.md)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

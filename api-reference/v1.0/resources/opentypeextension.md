@@ -2,6 +2,8 @@
 
 Открытые расширения (ранее звались расширениями данных Office 365) позволяют легко добавлять нетипизированные свойства непосредственно в ресурс в Microsoft Graph. Открытые расширения представлены ресурсом **openTypeExtension**. Все открытые расширения, добавленные в ресурс, отображаются в свойстве навигации **extensions**, которое является производным от абстрактного типа [extension](extension.md).  Каждое расширение, помимо пользовательских данных, содержит свойство **extensionName** — единственное предопределенное записываемое свойство. Чтобы обеспечить уникальность имен расширений, можно использовать формат обратных записей DNS, который зависит от _принадлежащего вам домена_, например `Com.Contoso.ContactInfo`. Не используйте домен Майкрософт (`Com.Microsoft` или `Com.OnMicrosoft`) в имени расширения.
 
+Пример открытого расширения. [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](../../../concepts/extensibility_open_users.md).
+
 Открытые расширения поддерживаются указанными ниже ресурсами в соответствующих версиях — общедоступной (1.0 или бета-версии) или предварительной (бета-версии).
 
 | Ресурс | Версия |
@@ -10,12 +12,12 @@
 | [event](event.md) для календаря | Общедоступная версия |
 | [event](event.md) для календаря группы | Общедоступная версия |
 | [post](post.md) цепочки беседы группы | Общедоступная версия |
-| [device](../../beta/resources/device.md) | Только предварительная версия |
-| [group](../../beta/resources/group.md) | Только предварительная версия |
+| [device](device.md) | Общедоступная версия |
+| [group](group.md) | Общедоступная версия |
 | [message](message.md) | Общедоступная версия |
-| [organization](../../beta/resources/organization.md) | Только предварительная версия |
+| [organization](organization.md) | Общедоступная версия |
 | [contact](contact.md) (личный контакт) | Общедоступная версия |
-| [user](../../beta/resources/user.md) | Только предварительная версия |
+| [user](user.md) | Общедоступная версия |
 
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Что использовать — открытые расширения (для ресурсов Outlook) или расширенные свойства
@@ -56,7 +58,7 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post_opentypeextension.md) | Объект [openTypeExtension](opentypeextension.md) либо объект [message](../resources/message.md), [event](../resources/event.md) или [contact](../resources/contact.md), содержащий объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.| 
+|[Post](../api/opentypeextension_post_opentypeextension.md) | Объект [openTypeExtension](opentypeextension.md) (в существующем экземпляре ресурса) либо новый ресурс [contact](../resources/contact.md), [event](../resources/event.md) или [message](../resources/message.md), содержащий объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.| 
 |[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
 |[Update](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)    |Обновление объекта openTypeExtension. |
 |[Delete](../api/opentypeextension_delete.md) | Нет |Удаление объекта openTypeExtension. |

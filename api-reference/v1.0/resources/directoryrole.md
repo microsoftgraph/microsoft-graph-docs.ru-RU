@@ -11,10 +11,11 @@
 |[Получение directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) | Считывание свойств и отношений объекта directoryRole. |
 |[Создание члена](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| Добавление пользователя в роль каталога путем записи данных в свойство навигации members.|
 |[Список членов](../api/directoryrole_list_members.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к членам роли каталога, из свойства навигации members.|
+|[Удаление члена](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| Удаление ресурса user из роли каталога.|
 |[Активация directoryRole](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | Активация роли каталога.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
 |description|String|Описание роли каталога. Только для чтения. |
 |displayName|Строка|Отображаемое имя роли каталога. Только для чтения. |
@@ -22,7 +23,7 @@
 |roleTemplateId|String| Свойство **id** ресурса [directoryRoleTemplate](directoryroletemplate.md), определяющего значения свойств для этой роли. При активации роли каталога на клиенте следует указать свойство с помощью операции POST. После активации роли каталога свойство доступно только для чтения. |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 |members|Коллекция [directoryObject](directoryobject.md)|Пользователи, которые относятся к членам этой роли каталога. Методы HTTP: GET, POST, DELETE. Только для чтения. Допускается значение null.|
 

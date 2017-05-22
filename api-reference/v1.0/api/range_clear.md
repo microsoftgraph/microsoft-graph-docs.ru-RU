@@ -3,21 +3,24 @@
 Очищает значения, формат, заливку, границу диапазона и т. д.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/clear
-POST /workbook/worksheets(<id|name>)/range(<address>)/clear
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/clear
+GET /workbook/names(<name>)/range/clear
+GET /workbook/worksheets/{id|name}/range(<address>)/clear
+GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|
@@ -36,7 +39,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/clear
   "name": "range_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
 Content-type: application/json
 Content-length: 32
 

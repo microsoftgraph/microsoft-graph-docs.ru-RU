@@ -3,17 +3,20 @@
 Сбрасывает фильтр для определенного столбца.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns(<id|name>)/filter/clear
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/filter/clear
+POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -30,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/filter
   "name": "filter_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/filter/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
 
 ##### <a name="response"></a>Отклик

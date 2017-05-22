@@ -1,12 +1,12 @@
-# <a name="get-incremental-changes-for-users-preview"></a>Получение добавочных изменений для пользователей (предварительная версия)
+# <a name="get-incremental-changes-for-users"></a>Получение добавочных изменений для пользователей
 
-[Запрос](./delta_query_overview.md) позволяет запрашивать добавления, удаления или обновления пользователей с помощью серии вызовов функции [delta](../api-reference/beta/api/user_delta.md). Запрос изменений позволяет находить изменения пользователей. При этом не требуется получать полный набор пользователей из Microsoft Graph и сравнивать изменения.
+[Запрос](./delta_query_overview.md) позволяет запрашивать добавления, удаления или обновления пользователей с помощью серии вызовов функции [delta](../api-reference/v1.0/api/user_delta.md). Запрос изменений позволяет находить изменения пользователей. При этом не требуется получать полный набор пользователей из Microsoft Graph и сравнивать изменения.
 
-Запрос изменений поддерживает как полную синхронизацию с получением всех пользователей в клиенте, так и добавочную синхронизацию с получением тех пользователей, которые изменились с момента последней синхронизации. Как правило, сначала выполняется полная синхронизация пользователей в клиенте, а потом периодически добавляются их изменения. 
+Клиенты, выполняющие синхронизацию пользователей с локальным хранилищем профилей, в ближайшем будущем смогут использовать запрос изменений как для первичной полной синхронизации, так и для добавочной синхронизации. Как правило, сначала выполняется полная синхронизация пользователей в клиенте, а потом периодически добавляются изменения.
 
 ## <a name="tracking-user-changes"></a>Отслеживание изменений пользователей
 
-Как правило, цикл отслеживания изменений пользователей состоит из одного или нескольких запросов GET с вызовом функции **delta**. Запрос GET совершается практически так же, как и при [получении списка пользователей](../api-reference/beta/api/user_list.md), но в него нужно включить:
+Как правило, цикл отслеживания изменений пользователей состоит из одного или нескольких запросов GET с вызовом функции **delta**. Запрос GET совершается практически так же, как и при [получении списка пользователей](../api-reference/v1.0/api/user_list.md), но в него нужно включить:
 
 - функцию **delta**;
 - [маркер состояния](./delta_query_overview.md) (_deltaToken_ или _skipToken_) из предыдущего вызова функции **delta** в запросе GET.
@@ -22,7 +22,7 @@
 
 ## <a name="initial-request"></a>Исходный запрос
 
-Чтобы начать отслеживать изменения в ресурсе пользователя, необходимо совершить к нему запрос, включающий функцию delta. 
+Чтобы начать отслеживать изменения в ресурсе пользователя, необходимо совершить к нему запрос, включающий функцию delta.
 
 Обратите внимание на следующее:
 
@@ -30,12 +30,12 @@
 - Исходный запрос не включает маркер состояния. Маркеры состояния будут использоваться в последующих запросах.
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$select=displayName,givenName,surname
+GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
 
-### <a name="initial-response"></a>Исходный ответ
+## <a name="initial-response"></a>Исходный ответ
 
-В случае успеха этот метод возвращает код ответа `200, OK` и объект коллекции [user](../api-reference/beta/resources/user.md) в тексте ответа. Если полный набор пользователей не помещается на одну страницу, ответ также будет включать маркер состояния nextLink.
+В случае успеха этот метод возвращает код ответа `200 OK` и объект коллекции [user](../api-reference/v1.0/resources/user.md) в тексте ответа. Если полный набор пользователей не помещается на одну страницу, ответ также будет включать маркер состояния nextLink.
 
 В этом примере возвращается URL-адрес nextLink. Это означает, что в текущем сеансе можно получить дополнительные страницы данных. Параметр $select из исходного запроса кодируется в URL-адресе nextLink.
 
@@ -44,8 +44,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users(displayName,givenName,surname)",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(displayName,givenName,surname)",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa",
   "value": [
     {
       "displayName":"Testuser1",
@@ -68,7 +68,7 @@ Content-type: application/json
 Второй запрос указывает маркер `skipToken`, полученный из предыдущего ответа. Обратите внимание, что параметр `$select` указывать не обязательно, так как `skipToken` включает его в закодированном виде.
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
+GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
 
 ## <a name="nextlink-response"></a>Ответ nextLink
@@ -80,8 +80,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
   "value": [
     {
       "displayName":"Testuser3",
@@ -104,7 +104,7 @@ Content-type: application/json
 Третий запрос продолжает использовать маркер `skipToken`, полученный из последнего запроса на синхронизацию. 
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
+GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
 ```
 
 ## <a name="final-nextlink-response"></a>Последний ответ nextLink
@@ -116,8 +116,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": [
     {
       "displayName":"Testuser5",
@@ -140,7 +140,7 @@ Content-type: application/json
 С помощью маркера `deltaToken` из [последнего ответа](#final-nextlink-response) вы сможете получить пользователей, измененных (добавленных, удаленных или обновленных) с момента последнего запроса.
 
 ``` http
-GET https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
+GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 
 ## <a name="deltalink-response"></a>Ответ deltaLink
@@ -152,8 +152,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": []
 }
 ```
@@ -165,8 +165,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": [
     {
       "displayName":"Testuser7",
@@ -175,9 +175,12 @@ Content-type: application/json
       "id":"25dcffff-959e-4ece-9973-e5d9b800e8cc"
     },
     {
-      "removed":"changed",
-      "id":"8ffff70c-1c63-4860-b963-e34ec660931d"
+      "id":"8ffff70c-1c63-4860-b963-e34ec660931d",
+      "@removed": {
+         "reason": "changed"
+      }
     }
+  ]
 }
 ```
 ## <a name="see-also"></a>См. также

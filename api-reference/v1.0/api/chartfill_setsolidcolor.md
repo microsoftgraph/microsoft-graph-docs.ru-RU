@@ -3,21 +3,24 @@
 Задает заливку одним цветом для элемента диаграммы.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/format/fill/setSolidColor
-POST /workbook/worksheets(<id|name>)/charts(<name>)/title/format/fill/setSolidColor
-POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidColor
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|
@@ -36,7 +39,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/setSolidC
   "name": "chartfill_setsolidcolor"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/setSolidColor
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
 Content-type: application/json
 Content-length: 28
 

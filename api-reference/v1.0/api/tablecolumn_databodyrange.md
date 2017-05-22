@@ -3,20 +3,23 @@
 Получает объект диапазона, связанный с основными данными столбца.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns(<id|name>)/DataBodyRange
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/DataBodyRange
+POST /workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
@@ -30,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/DataBo
   "name": "tablecolumn_databodyrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/DataBodyRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
 ```
 
 ##### <a name="response"></a>Отклик

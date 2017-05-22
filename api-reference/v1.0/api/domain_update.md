@@ -1,0 +1,73 @@
+# <a name="update-domain"></a>Обновление домена
+
+Обновление свойств объекта домена.
+
+> **Важно!** Можно обновить только проверенные домены.
+
+### <a name="prerequisites"></a>Необходимые компоненты
+
+Для применения этого API требуется одна из следующих **областей**: *Domain.ReadWrite.All* или *Directory.AccessAsUser.All*.
+
+### <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /domains/{id}
+```
+
+> В качестве параметра {id} укажите домен, используя его полное доменное имя.
+
+### <a name="request-headers"></a>Заголовки запросов
+
+| Имя       | Описание|
+|:-----------|:-----------|
+| Authorization  | Bearer &lt;token&gt; *(обязательно)* |
+| Content-Type  | application/json |
+
+### <a name="request-body"></a>Тело запроса
+
+В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.
+
+### <a name="response"></a>Отклик
+
+При успешном выполнении этот метод возвращает код отклика `204 No Content` и не возвращает тело отклика.
+
+### <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "update_domain"
+}-->
+```http
+PATCH https://graph.microsoft.com/V1.0/domains/contoso.com
+Content-type: application/json
+
+{
+  "isDefault": true,
+  "supportedServices": [
+    "Email",
+    "OfficeCommunicationsOnline"
+  ]
+}
+```
+
+##### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.domain"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update domain",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

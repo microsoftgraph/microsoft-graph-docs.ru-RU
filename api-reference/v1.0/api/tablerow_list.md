@@ -3,11 +3,14 @@
 Получение списка объектов tableRow.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables(<id|name>)/rows
-GET /workbook/worksheets(<id|name>)/tables(<id|name>)/rows
+GET /workbook/tables/{id|name}/rows
+GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
@@ -15,7 +18,7 @@ GET /workbook/worksheets(<id|name>)/tables(<id|name>)/rows
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -30,7 +33,7 @@ GET /workbook/worksheets(<id|name>)/tables(<id|name>)/rows
   "name": "get_tablerowcollection"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.

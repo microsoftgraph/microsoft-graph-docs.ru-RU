@@ -3,17 +3,20 @@
 Получает объект диапазона, связанный с телом данных таблицы.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/DataBodyRange
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/DataBodyRange
+POST /workbook/tables/{id|name}/DataBodyRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/DataBodyRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -30,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/DataBodyRange
   "name": "table_databodyrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/DataBodyRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/DataBodyRange
 ```
 
 ##### <a name="response"></a>Отклик

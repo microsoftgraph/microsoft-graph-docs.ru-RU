@@ -3,12 +3,15 @@
 Получение свойств и связей объекта ChartGridlines.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/majorgridlines
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
@@ -16,7 +19,7 @@ GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridline
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -31,7 +34,7 @@ GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridline
   "name": "get_chartgridlines"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.

@@ -3,21 +3,24 @@
 Возвращает объект, представляющий диапазон, который смещен от указанного диапазона. Измерение возвращаемого диапазона будет соответствовать этому диапазону. Если результирующий диапазон выходит за пределы таблицы листа, вызывается исключение.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/OffsetRange
-POST /workbook/worksheets(<id|name>)/range(<address>)/OffsetRange
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/OffsetRange
+GET /workbook/names(<name>)/range/OffsetRange
+GET /workbook/worksheets/{id|name}/range(<address>)/OffsetRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|
@@ -37,7 +40,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/OffsetRange
   "name": "range_offsetrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
 Content-type: application/json
 Content-length: 49
 

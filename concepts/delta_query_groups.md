@@ -1,12 +1,12 @@
-# <a name="get-incremental-changes-for-groups-preview"></a>Получение добавочных изменений для групп (предварительная версия)
+# <a name="get-incremental-changes-for-groups"></a>Получение добавочных изменений для групп
 
-[Запрос изменений](./delta_query_overview.md) позволяет запрашивать добавления, удаления или обновления групп с помощью серии вызовов функции [delta](../api-reference/beta/api/group_delta.md). Запрос изменений позволяет находить изменения в группах. При этом не требуется получать полный набор групп из Microsoft Graph и сравнивать изменения.
+[Запрос изменений](./delta_query_overview.md) позволяет запрашивать добавления, удаления или обновления групп с помощью серии вызовов функции [delta](../api-reference/v1.0/api/group_delta.md). Запрос изменений позволяет находить изменения в группах. При этом не требуется получать полный набор групп из Microsoft Graph и сравнивать изменения.
 
-Запрос изменений поддерживает как полную синхронизацию с получением всех групп в клиенте, так и добавочную синхронизацию с получением тех групп, которые изменились с момента последней синхронизации. Как правило, сначала выполняется полная синхронизация групп в клиенте, а затем в группы периодически добавляются изменения. 
+Клиенты, выполняющие синхронизацию групп с локальным хранилищем профилей, в ближайшем будущем смогут использовать запрос изменений как для первичной полной синхронизации, так и для добавочной синхронизации. Как правило, сначала выполняется полная синхронизация групп в клиенте, а затем в группы периодически добавляются изменения. 
 
 ## <a name="tracking-group-changes"></a>Отслеживание изменений в группах
 
-Как правило, цикл отслеживания изменений в группах состоит из одного или нескольких запросов GET с функцией **delta**. Запрос GET совершается практически так же, как и при [получении списка групп](../api-reference/beta/api/group_list.md), но в него нужно включить:
+Как правило, цикл отслеживания изменений в группах состоит из одного или нескольких запросов GET с функцией **delta**. Запрос GET совершается практически так же, как и при [получении списка групп](../api-reference/v1.0/api/group_list.md), но в него нужно включить:
 
 - функцию **delta**;
 - [маркер состояния](./delta_query_overview.md) (_deltaToken_ или _skipToken_) из предыдущего вызова функции **delta** в запросе GET.
@@ -30,12 +30,12 @@
 - Исходный запрос не включает маркер состояния. Маркеры состояния будут использоваться в последующих запросах.
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description
 ```
 
-### <a name="initial-response"></a>Исходный ответ
+## <a name="initial-response"></a>Исходный ответ
 
-В случае успеха этот метод возвращает код ответа `200, OK` и объект коллекции [group](../api-reference/beta/resources/group.md) в тексте ответа. Если полный набор групп не помещается на одну страницу, ответ также будет включать маркер состояния nextLink.
+В случае успеха этот метод возвращает код ответа `200 OK` и объект коллекции [group](../api-reference/v1.0/resources/group.md) в тексте ответа. Если полный набор групп не помещается на одну страницу, ответ также будет включать маркер состояния nextLink.
 
 В этом примере возвращается URL-адрес nextLink. Это означает, что в текущем сеансе можно получить дополнительные страницы данных. Параметр $select из исходного запроса кодируется в URL-адресе nextLink.
 
@@ -44,8 +44,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(displayName,description)",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(displayName,description)",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ",
   "value": [
     {
       "displayName":"TestGroup1",
@@ -66,7 +66,7 @@ Content-type: application/json
 Второй запрос указывает маркер `skipToken`, полученный из предыдущего ответа. Обратите внимание, что параметр `$select` указывать не обязательно, так как `skipToken` включает его в закодированном виде.
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
+GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
 ```
 
 ## <a name="nextlink-response"></a>Ответ nextLink
@@ -78,8 +78,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
   "value": [
     {
       "displayName":"TestGroup3",
@@ -100,7 +100,7 @@ Content-type: application/json
 Третий запрос продолжает использовать маркер `skipToken`, полученный из последнего запроса на синхронизацию. 
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
+GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
 ## <a name="final-nextlink-response"></a>Последний ответ nextLink
@@ -112,8 +112,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": [
     {
       "displayName":"TestGroup5",
@@ -134,7 +134,7 @@ Content-type: application/json
 С помощью маркера `deltaToken` из [последнего ответа](#final-nextlink-response) вы сможете получить группы, измененные (добавленные, удаленные или обновленные) с момента последнего запроса.
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
+GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
 ```
 
 ## <a name="deltalink-response"></a>Ответ deltaLink
@@ -146,8 +146,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": []
 }
 ```
@@ -159,8 +159,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": [
     {
       "displayName":"TestGroup7",

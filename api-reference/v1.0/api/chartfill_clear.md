@@ -3,18 +3,21 @@
 Очищает цвет заливки элемента диаграммы.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/title/format/fill/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -31,7 +34,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/clear
   "name": "chartfill_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
 ```
 
 ##### <a name="response"></a>Отклик

@@ -2,6 +2,9 @@
 
 Папка, содержащая контакты.
 
+В этом ресурсе возможно использование [запроса изменений](../../../concepts/delta_query_overview.md) для отслеживания добавочных дополнений, удалений и обновлений благодаря функции [delta](../api/contactfolder_delta.md).
+
+
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
@@ -11,6 +14,7 @@
 |[Удаление](../api/contactfolder_delete.md) | Нет |Удаление объекта contactFolder. |
 |[Список экземпляров childFolders](../api/contactfolder_list_childfolders.md) |Коллекция [ContactFolder](contactfolder.md)| Получение коллекции дочерних папок для указанной папки с контактами.|
 |[Создание дочернего элемента contactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Создание дочернего элемента contactFolder для указанной папки.|
+|[delta](../api/contact_delta.md)|Коллекция [contact](contact.md)| Получение набора папок контактов, которые были добавлены в почтовый ящик пользователя или удалены из него.|
 |[Список контактов в папке](../api/contactfolder_list_contacts.md) |Коллекция [contact](contact.md)| Получение коллекции контактов из стандартной папки с контактами для пользователя, выполнившего вход (`.../me/contacts`), или из указанной папки с контактами.|
 |[Создание контакта в папке](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Добавление контакта в корневую папку с контактами или конечную точку `contacts` другой папки с контактами.|
 |[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |Создание одного или несколько расширенных свойств с одним значением в новом или существующем экземпляре contactFolder.   |
@@ -38,7 +42,7 @@
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -60,6 +64,12 @@
 }
 
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](../../../concepts/delta_query_overview.md)
+- [Получение добавочных изменений сообщений в папке](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

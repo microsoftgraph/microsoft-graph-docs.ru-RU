@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-users-using-open-extensions-preview"></a>Добавление настраиваемых данных для пользователей с помощью открытых расширений (предварительная версия)
+# <a name="add-custom-data-to-users-using-open-extensions"></a>Добавление пользовательских данных в ресурсы user с помощью открытых расширений
 Мы рассмотрим пример использования *открытых расширений*. 
 
 Представьте, что вы разрабатываете приложение, доступное на множестве клиентских платформ, например на компьютерах и мобильных устройствах.  Вы хотите, чтобы пользователи могли настраивать интерфейс, чтобы он выглядел одинаково независимо от того, какое устройство они используют для входа в приложение. Это распространенное требование для приложений. 
@@ -10,14 +10,15 @@
 3. изменить данные перемещаемого профиля пользователя (значение открытого расширения);
 4. удалить данные перемещаемого профиля пользователя.
 
->**Примечание.** В этой статье показано, как добавлять, считывать, обновлять и удалять открытые расширения для ресурса *user*.  Эти методы также поддерживаются для типов ресурсов *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* и *organizaton*.  Просто измените приведенные ниже примеры запросов, используя любой из этих типов ресурсов. Приведенные ниже примеры можно сократить. 
+>**Примечание.** В этой статье показано, как добавлять, считывать, обновлять и удалять открытые расширения для ресурса *user*.  Эти методы также поддерживаются для типов ресурсов *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* и *organizaton*.  
+Просто измените приведенные ниже примеры запросов, используя любой из этих типов ресурсов. Приведенные ниже примеры можно сократить. 
 
 ## <a name="1-add-roaming-profile-information"></a>1. Добавление данных перемещаемого профиля
 Пользователь входит в приложение и настраивает его внешний вид.  Эти параметры приложения должны перемещаться, чтобы интерфейс выглядел одинаково на любом устройстве.  В этой статье мы рассмотрим, как добавить данные перемещаемого профиля в ресурс пользователя.
 
 ##### <a name="request"></a>Запрос
 ```http
-POST https://graph.microsoft.com/beta/me/extensions
+POST https://graph.microsoft.com/v1.0/me/extensions
 Content-type: application/json
 {
     "@odata.type":"microsoft.graph.openTypeExtension",
@@ -48,7 +49,7 @@ Content-length: 420
 
 ##### <a name="request"></a>Запрос
 ```http
-GET https://graph.microsoft.com/beta/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
+GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
 ```
 ##### <a name="response"></a>Отклик
 ```http
@@ -80,7 +81,7 @@ Content-length: 420
 
 ##### <a name="request"></a>Запрос
 ```http
-PATCH https://graph.microsoft.com/beta/me/extensions/com.contoso.roamingSettings
+PATCH https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 Content-type: application/json
 {
     "theme":"light",
@@ -99,7 +100,7 @@ HTTP/1.1 204 No content
 
 ##### <a name="request"></a>Запрос
 ```http
-DELETE https://graph.microsoft.com/beta/me/extensions/com.contoso.roamingSettings
+DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
 ##### <a name="response"></a>Отклик
@@ -110,4 +111,9 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](extensibility_overview.md)
-- [Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](extensibility_schema_groups.md)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](extensibility_schema_groups.md)
+- [Тип ресурса openTypeExtension](../api-reference/v1.0/resources/opentypeextension.md)
+- [Создание открытого расширения](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
+- [Получение открытого расширения](../api-reference/v1.0/api/opentypeextension_get.md)
+- [Обновление открытого расширения](../api-reference/v1.0/api/opentypeextension_update.md)
+- [Удаление открытого расширения](../api-reference/v1.0/api/opentypeextension_delete.md)

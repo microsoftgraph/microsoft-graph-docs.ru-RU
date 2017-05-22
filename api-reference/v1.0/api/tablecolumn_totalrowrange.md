@@ -3,20 +3,23 @@
 Получает объект диапазона, связанный со строкой итогов столбца.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns(<id|name>)/TotalRowRange
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/TotalRowRange
+POST /workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
@@ -30,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/TotalR
   "name": "tablecolumn_totalrowrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/TotalRowRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
 ```
 
 ##### <a name="response"></a>Отклик

@@ -2,6 +2,7 @@
 
 Элемент mailFolder в почтовом ящике пользователя, например папка "Входящие", "Черновики" или "Отправленные". Элементы mailFolder могут содержать сообщения и дочерние элементы mailFolder.
 
+В этом ресурсе возможно использование [запроса изменений](../../../concepts/delta_query_overview.md) для отслеживания добавочных дополнений, удалений и обновлений благодаря функции [delta](../api/mailfolder_delta.md).
 
 ## <a name="methods"></a>Методы
 
@@ -15,6 +16,7 @@
 |[Обновление](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)|Обновление указанного объекта mailFolder. |
 |[Удаление](../api/mailfolder_delete.md) | Нет |Удаление указанного объекта mailFolder. |
 |[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|Копирование элемента mailFolder и его содержимого в другой элемент mailFolder.|
+|[delta](../api/mailfolder_delta.md)|Коллекция [mailFolder](mailfolder.md)|Получение набора папок почты, которые были добавлены в почтовый ящик пользователя или удалены из него.|
 |[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|Перемещение элемента mailFolder и его содержимого в другой элемент mailFolder.|
 |[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем элементе mailFolder.   |
 |[Получение элемента mailFolder с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Получение элементов mailFolder, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
@@ -52,7 +54,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -77,6 +79,12 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 }
 
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](../../../concepts/delta_query_overview.md)
+- [Получение добавочных изменений сообщений в папке](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

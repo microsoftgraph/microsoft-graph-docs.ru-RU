@@ -3,21 +3,24 @@
 Возвращает используемый диапазон заданного объекта диапазона.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/UsedRange
-POST /workbook/worksheets(<id|name>)/range(<address>)/UsedRange
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/UsedRange
+GET /workbook/names(<name>)/range/UsedRange
+GET /workbook/worksheets/{id|name}/range(<address>)/UsedRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|
@@ -36,7 +39,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/UsedRange
   "name": "range_usedrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
 Content-type: application/json
 Content-length: 24
 

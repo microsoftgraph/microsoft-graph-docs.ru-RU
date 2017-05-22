@@ -14,20 +14,26 @@
 
 |**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ | 
-| [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
+| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
+| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
  
 ## <a name="http-request"></a>HTTP-запрос
 В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `PATCH` для этого экземпляра расширения.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /devices/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /groups/{id}/extensions/{extensionId}
 PATCH /groups/{id}/events/{id}/extensions/{extensionId}
 PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /organization/{Id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
 >**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно обновить. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают обновление открытых расширений этих экземпляров подобным образом.

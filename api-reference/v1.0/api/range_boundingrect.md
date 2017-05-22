@@ -3,21 +3,24 @@
 Возвращает наименьший объект диапазона, включающий в себя заданные диапазоны. Например, GetBoundingRect для "B2:C5" и "D10:E15" — "B2:E16".
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/BoundingRect
-POST /workbook/worksheets(<id|name>)/range(<address>)/BoundingRect
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/BoundingRect
+GET /workbook/names(<name>)/range/BoundingRect
+GET /workbook/worksheets/{id|name}/range(<address>)/BoundingRect
+GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|
@@ -36,7 +39,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/BoundingRect
   "name": "range_boundingrect"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
 Content-type: application/json
 Content-length: 42
 

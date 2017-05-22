@@ -3,16 +3,19 @@
 Возвращает ряд на основании сведений о его позиции в коллекции.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/series/ItemAt
+POST /workbook/worksheets/{id|name}/charts(<name>)/series/ItemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Тело запроса
@@ -34,7 +37,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/series/ItemAt
   "name": "chartseriescollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/series/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series/ItemAt
 Content-type: application/json
 Content-length: 20
 

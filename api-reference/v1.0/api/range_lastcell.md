@@ -3,18 +3,21 @@
 Возвращает последнюю ячейку в диапазоне. Например, последняя ячейка диапазона B2:D5 — D5.
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/LastCell
-POST /workbook/worksheets(<id|name>)/range(<address>)/LastCell
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastCell
+GET /workbook/names(<name>)/range/LastCell
+GET /workbook/worksheets/{id|name}/range(<address>)/LastCell
+GET /workbook/tables/{id|name}/columns/{id|name}/range/LastCell
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -31,7 +34,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastCell
   "name": "range_lastcell"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastCell
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastCell
 ```
 
 ##### <a name="response"></a>Отклик

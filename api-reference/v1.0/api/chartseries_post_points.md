@@ -3,16 +3,19 @@
 С помощью этого API можно создать объект ChartPoints.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points
+POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -30,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points
   "name": "create_chartpoints_from_chartseries"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 Content-type: application/json
 Content-length: 3
 

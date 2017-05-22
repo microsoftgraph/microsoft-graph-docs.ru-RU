@@ -2,29 +2,27 @@
 
 Содержит сведения о SKU службы, на которую компания подписана.
 
-В случае SKU службы, на которую выполнена подписка, поддерживаются только операции чтения. Создание, обновление и удаление не поддерживаются. Выражения фильтра запроса не поддерживаются.
-
-Наследуется от [directoryObject](directoryobject.md).
-
+В подписанных SKU поддерживается только операция чтения. Создание, обновление и удаление не поддерживаются. Выражения фильтра запроса не поддерживаются. Наследуется от [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Считывает свойства объекта subscribedSku.|
+|[Получение объекта subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Чтение свойств и связей объекта subscribedSku.|
+|[Список объектов subscribedSku](../api/subscribedsku_list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение списка коммерческих подписок, приобретенных организацией.|
 
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|Например, Enabled, LockedOut и Suspended.|
-|consumedUnits|Int32|Количество лицензий, которые были назначены.|
-|id|String|Уникальный идентификатор объекта sku, подписка на который выполнена. Ключ. Только для чтения.|
-|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)|Сведения о количестве и состоянии предварительно оплаченных лицензий.|
-|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)|Сведения о планах обслуживания, доступных в отношении SKU.|
-|skuId|Guid|Уникальный идентификатор (GUID) для SKU службы.|
-|skuPartNumber|String|Артикул SKU, например: AAD_PREMIUM или RMSBASIC.|
-|appliesTo|String|Например, User или Company.|
+|appliesTo|String| Например, User или Company. |
+|capabilityStatus|Строка| Например, Enabled. |
+|consumedUnits|Int32| Количество лицензий, которые были назначены. |
+|id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Ключ, значение NULL не допускается. |
+|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
+|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Значение NULL не допускается |
+|skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. |
+|skuPartNumber|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

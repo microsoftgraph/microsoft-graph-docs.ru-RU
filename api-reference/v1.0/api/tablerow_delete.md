@@ -3,17 +3,20 @@
 Удаляет строку из таблицы.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows(<index>)/delete
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)/delete
+POST /workbook/tables/{id|name}/rows(<index>)/delete
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -30,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)/delete
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows(<index>)/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
 ```
 
 ##### <a name="response"></a>Отклик

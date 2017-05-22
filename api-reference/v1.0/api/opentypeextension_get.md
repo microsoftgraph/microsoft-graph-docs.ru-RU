@@ -6,9 +6,9 @@
 
 |**Сценарий GET**|**Поддерживаемые ресурсы**|**Текст ответа**|
 |:-----|:-----|:-----|
-|Получение определенного расширения из экземпляра известного ресурса.| [contact](../resources/contact.md), [event](../resources/event.md), [event для группы](../resources/event.md), [post для группы](../resources/post.md), [message](../resources/message.md) | Только открытое расширение.|
-|Получение экземпляра известного ресурса, дополненного определенным расширением.|Contact, event, event для группы, message|Экземпляр известного ресурса, дополненный открытым расширением.|
-|Поиск экземпляров ресурсов и их дополнение определенным расширением. |Contact, event, event для группы, message|Экземпляры ресурса, дополненные открытым расширением.|
+|Получение определенного расширения из экземпляра известного ресурса.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Только открытое расширение.|
+|Получение экземпляра известного ресурса, дополненного определенным расширением.|Device, event, group, group event, group post, message, organization, personal contact, user |Экземпляр известного ресурса, дополненный открытым расширением.|
+|Поиск экземпляров ресурсов и их дополнение определенным расширением. |Event, group event, group post, message, personal contact|Экземпляры ресурса, дополненные открытым расширением.|
 
 
 ## <a name="prerequisites"></a>Необходимые условия
@@ -17,10 +17,14 @@
 
 |**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.Read_ | [group event](../resources/event.md) | _Calendars.Read_ | 
-| [Group post](../resources/post.md) | _Group.Read.All_ | [message](../resources/message.md) | _Mail.Read_ | 
-| [contact](../resources/contact.md) (личный контакт) | _Contacts.Read_ |
- 
+| [Device](../resources/device.md) | _Directory.Read.All_ | [Event](../resources/event.md) | _Calendars.Read_ | 
+| [Group](../resources/group.md) | _Group.Read.All_ | [Group event](../resources/event.md) | _Group.Read.All_ | 
+| [Group post](../resources/post.md) | _Group.Read.All_ | [Message](../resources/message.md) | _Mail.Read_ | 
+| [Organization](../resources/organization.md) | _Directory.Read.All_ | [contact](../resources/contact.md) (личный контакт) | _Contacts.Read_ |
+| [User](../resources/user.md) | _User.Read.All_ | | |
+
+
+
 ## <a name="http-request"></a>HTTP-запрос
 
 В этом разделе указан синтаксис для каждого из трех перечисленных выше сценариев с `GET`.
@@ -31,24 +35,40 @@
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /devices/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /groups/{Id}/extensions/{extensionId}
 GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /organization/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Получение известного экземпляра ресурса с соответствующим расширением 
 
-Используйте такой же запрос REST, что и при получении экземпляра ресурса, найдите расширение, соответствующее заданному свойству **id**, и дополните экземпляр расширением.
+Для типов ресурса, таких как event, group event, group post, message, personal contact, можно использовать такой же запрос REST, что и при получении экземпляра ресурса. Найдите расширение, соответствующее заданному свойству **id**, и дополните экземпляр расширением. Отклик включает большинство свойств ресурса.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+```
+
+
+Для типов ресурса device, group, organization и user также необходимо использовать параметр `$select`, чтобы включить свойство **id** и другие свойства, которые необходимо получить из экземпляра ресурса:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
 ### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>Фильтрация экземпляров ресурсов с соответствующим расширением 
@@ -57,10 +77,11 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения коллекции или экземпляров ресурсов, чье расширение нужно получить. Все другие варианты синтаксиса, позволяющие определить эти коллекции или экземпляры ресурсов, поддерживают получение открытых расширений этих экземпляров или коллекций подобным образом.

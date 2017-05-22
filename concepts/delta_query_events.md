@@ -1,4 +1,4 @@
-# <a name="get-incremental-changes-to-events-in-a-calendar-view-preview"></a>Получение добавочных изменений для событий в представлении календаря (предварительная версия)
+# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Получение добавочных изменений для событий в представлении календаря 
 
 Представление календаря — это коллекция событий в диапазоне дат и времени из календаря по умолчанию (../me/calendarview) или другого календаря пользователя. С помощью запроса изменений вы можете получать новые, обновленные или удаленные события в представлении календаря. Возвращаемые события могут включать повторения и исключения из повторяющейся серии, а также отдельные экземпляры. Разностные данные позволяют поддерживать и синхронизировать локальное хранилище событий пользователя. При этом вам не требуется каждый раз получать весь набор событий пользователя с сервера.
 
@@ -8,7 +8,7 @@
 
 Запрос изменений для событий относится к указанным календарю и диапазону дат и времени (т. е. представлению календаря). Чтобы отслеживать изменения в нескольких календарях, необходимо наблюдать за каждым календарем отдельно. 
 
-Как правило, цикл отслеживания изменений событий в представлении календаря состоит из одного или нескольких запросов GET с функцией [delta](../api-reference/beta/api/event_delta.md). Исходный запрос GET во многом аналогичен [получению списка calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/calendar_list_calendarview), но он также содержит функцию **delta**:
+Как правило, цикл отслеживания изменений событий в представлении календаря состоит из одного или нескольких запросов GET с функцией [delta](../api-reference/v1.0/api/event_delta.md). Исходный запрос GET во многом аналогичен [получению списка calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), но он также содержит функцию **delta**:
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -63,7 +63,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
   "name": "get_calendarview_delta_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -83,8 +83,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -153,7 +153,7 @@ Content-type: application/json
   "name": "get_calendarview_delta_2"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -172,8 +172,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -244,7 +244,7 @@ Content-type: application/json
   "name": "get_calendarview_delta_3"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -264,8 +264,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -311,7 +311,7 @@ Content-type: application/json
   "name": "get_calendarview_delta_next"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -328,8 +328,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -380,6 +380,6 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 - [Запрос изменений Microsoft Graph](../Concepts/delta_query_overview.md)
-- [Получение добавочных изменений для сообщений (предварительная версия)](../Concepts/delta_query_messages.md)
-- [Получение добавочных изменений для групп (предварительная версия)](../Concepts/delta_query_groups.md)
-- [Получение добавочных изменений для пользователей (предварительная версия)](../Concepts/delta_query_users.md)
+- [Получение добавочных изменений для сообщений](../Concepts/delta_query_messages.md)
+- [Получение добавочных изменений для групп](../Concepts/delta_query_groups.md)
+- [Получение добавочных изменений для пользователей](../Concepts/delta_query_users.md)

@@ -2,12 +2,20 @@
 
 Представляет клиента Azure Active Directory. Для клиентов поддерживаются только операции чтения и обновления. Создание и удаление не поддерживаются. Наследуется от [directoryObject](directoryobject.md).
 
+С помощью этого ресурса можно добавлять собственные данные к настраиваемым свойствам, применяя [расширения](../../../concepts/extensibility_overview.md).
+
+
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization_get.md) | [organization](organization.md) |Считывание свойств и связей объекта организации.|
 |[Update](../api/organization_update.md) | [organization](organization.md)  |Обновление объекта организации. (Можно обновлять только свойства **marketingNotificationMails** и **technicalNotificationMails**.) |
+|**Открытые расширения**| | |
+|[Создание открытого расширения](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
+|[Получение открытого расширения](../api/opentypeextension_get.md) |Коллекция [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
+|**Расширения схемы**| | |
+|[Добавление значений расширений для схемы](../../../concepts/extensibility_schema_groups.md) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 
 ## <a name="properties"></a>Свойства
 
@@ -36,17 +44,20 @@
 | telephoneNumber                      | String                                                            |                                                                                                                                                                                                                                                                                      |
 | verifiedDomains                      | Коллекция [VerifiedDomain](verifieddomain.md)                    | Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается.                                                                                                                                                                                                                 |
 
-## <a name="relationships"></a>Связи
-Нет
+## <a name="relationships"></a>Отношения
+| Связь | Тип    |Описание|
+|:---------------|:--------|:----------|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для организации. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+## <a name="json-representation"></a>Описание в формате JSON
+
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "extensions"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.organization"
@@ -76,6 +87,12 @@
 }
 
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](../../../concepts/extensibility_open_users.md)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,11 +3,14 @@
 Получение свойств и связей объекта диапазона.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/range(address='<address>')
-GET /workbook/tables(<id|name>)/columns(<id|name>)/range
+GET /workbook/worksheets/{id|name}/range(address='<address>')
+GET /workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
@@ -15,7 +18,7 @@ GET /workbook/tables(<id|name>)/columns(<id|name>)/range
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса

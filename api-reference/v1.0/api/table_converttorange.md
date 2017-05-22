@@ -3,17 +3,20 @@
 Преобразовывает таблицу в обычный диапазон ячеек. Все данные сохраняются.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/convertToRange
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/convertToRange
+POST /workbook/tables/{id|name}/convertToRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -30,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/convertToRange
   "name": "table_converttorange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/convertToRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/convertToRange
 ```
 
 ##### <a name="response"></a>Отклик

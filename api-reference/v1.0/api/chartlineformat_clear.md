@@ -3,18 +3,21 @@
 Очищает формат линий элемента диаграммы.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/line/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -31,7 +34,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlin
   "name": "chartlineformat_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/line/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
 ```
 
 ##### <a name="response"></a>Отклик

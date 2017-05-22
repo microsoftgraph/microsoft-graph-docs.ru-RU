@@ -1,0 +1,63 @@
+# <a name="delete-schemaextension"></a>Удаление schemaExtension
+
+Удаление определения [расширения схемы](../resources/schemaExtension.md).
+
+Только приложение, которое создало расширение схемы (приложение-владелец), может удалить определение расширения схемы, причем только тогда, когда расширение находится в состоянии **InDevelopment**. Удаление определения расширения схемы не влияет на доступ к пользовательским данным, добавленным в ресурс на основе этого определения.
+
+
+## <a name="prerequisites"></a>Необходимые компоненты
+Для применения этого API требуется следующая **область**: *Directory.AccessAsUser.All*
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /schemaExtensions/{id}
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+| Имя      |Описание|
+|:----------|:----------|
+| Authorization  | Bearer &lt;token&gt;. Обязательный. |
+ 
+
+## <a name="request-body"></a>Основной текст запросов
+Не указывайте тело запроса для этого метода.
+
+
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
+
+## <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "delete_schemaextension"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+## <a name="see-also"></a>См. также
+
+- [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](../../../concepts/extensibility_schema_groups.md)
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Delete schemaExtension",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

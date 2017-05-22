@@ -3,21 +3,24 @@
 Получает объект диапазона, содержащий одну ячейку, на основе номера строки и столбца. Ячейка может быть вне родительского диапазона, если она расположена в таблице листа. Возвращаемая ячейка располагается относительно верхней левой ячейки диапазона.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Cell
-POST /workbook/worksheets(<id|name>)/range(<address>)/Cell
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Cell
+GET /workbook/names(<name>)/range/Cell
+GET /workbook/worksheets/{id|name}/range(<address>)/Cell
+GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|
@@ -37,7 +40,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Cell
   "name": "range_cell"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
 Content-type: application/json
 Content-length: 37
 

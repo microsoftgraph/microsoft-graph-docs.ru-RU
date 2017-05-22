@@ -3,12 +3,15 @@
 Получение свойств и связей объекта RangeFill.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/fill
-GET /workbook/worksheets(<id|name>)/range(<address>)/format/fill
-GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill
+GET /workbook/worksheets/{id|name}/range(<address>)/format/fill
+GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
@@ -16,7 +19,7 @@ GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса

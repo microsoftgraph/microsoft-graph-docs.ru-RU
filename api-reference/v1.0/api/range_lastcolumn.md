@@ -3,18 +3,21 @@
 Возвращает последний столбец в диапазоне. Например, последний столбец диапазона B2:D5 — D2:D5.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/LastColumn
-POST /workbook/worksheets(<id|name>)/range(<address>)/LastColumn
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastColumn
+GET /workbook/names(<name>)/range/LastColumn
+GET /workbook/worksheets/{id|name}/range(<address>)/LastColumn
+GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -31,7 +34,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastColumn
   "name": "range_lastcolumn"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastColumn
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastColumn
 ```
 
 ##### <a name="response"></a>Отклик

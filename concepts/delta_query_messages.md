@@ -1,6 +1,6 @@
-# <a name="get-incremental-changes-to-messages-in-a-folder-preview"></a>Получение добавочных изменений для сообщений в папке (предварительная версия)
+# <a name="get-incremental-changes-to-messages-in-a-folder"></a>Получение добавочных изменений для сообщений в папке 
 
-Запрос изменений позволяет запрашивать добавления, удаления или обновления сообщений в папке с помощью серии вызовов функции [delta](../api-reference/beta/api/message_delta.md). Разностные данные позволяют поддерживать и синхронизировать локальное хранилище сообщений пользователя. При этом вам не требуется каждый раз получать весь набор сообщений пользователя с сервера.
+Запрос изменений позволяет запрашивать добавления, удаления или обновления сообщений в папке с помощью серии вызовов функции [delta](../api-reference/v1.0/api/message_delta.md). Разностные данные позволяют поддерживать и синхронизировать локальное хранилище сообщений пользователя. При этом вам не требуется каждый раз получать весь набор сообщений пользователя с сервера.
 
 Запрос изменений поддерживает как полную синхронизацию с получением всех сообщений в папке (например, в папке "Входящие" пользователя), так и добавочную синхронизацию с получением всех сообщений в этой папке, которые изменились с момента последней синхронизации. Как правило, сначала выполняется полная синхронизация сообщений в папке, а затем в папку периодически добавляются изменения. 
 
@@ -8,10 +8,10 @@
 
 Запрос изменений выполняется отдельно для каждой папки. Чтобы отслеживать изменения сообщений в иерархии папок, необходимо наблюдать за каждой папкой отдельно. 
 
-Как правило, цикл отслеживания изменений сообщений в папке почты состоит из одного или нескольких запросов GET с функцией **delta**. Исходный запрос GET во многом аналогичен [получению сообщений](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages), но он также содержит функцию **delta**:
+Как правило, цикл отслеживания изменений сообщений в папке почты состоит из одного или нескольких запросов GET с функцией **delta**. Исходный запрос GET во многом аналогичен [получению сообщений](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages), но он также содержит функцию **delta**:
 
 ```
-GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 ```
 
 Запрос GET с функцией **delta** возвращает одно из следующих значений:
@@ -92,7 +92,7 @@ since the completion of the very first round.
   "name": "get_messages_delta_1"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -109,8 +109,8 @@ Prefer: odata.maxpagesize=2
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -149,7 +149,7 @@ Prefer: odata.maxpagesize=2
   "name": "get_messages_delta_2"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -165,8 +165,8 @@ Prefer: odata.maxpagesize=2
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -206,7 +206,7 @@ Prefer: odata.maxpagesize=2
   "name": "get_messages_delta_3"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -222,8 +222,8 @@ Prefer: odata.maxpagesize=2
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -251,7 +251,7 @@ Prefer: odata.maxpagesize=2
   "name": "get_messages_delta_next"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -260,6 +260,6 @@ Prefer: odata.maxpagesize=2
 ## <a name="see-also"></a>См. также
 
 - [Запрос изменений Microsoft Graph](../Concepts/delta_query_overview.md)
-- [Получение добавочных изменений для событий в представлении календаря (предварительная версия)](../Concepts/delta_query_events.md)
-- [Получение добавочных изменений для групп (предварительная версия)](../Concepts/delta_query_groups.md)
-- [Получение добавочных изменений для пользователей (предварительная версия)](../Concepts/delta_query_users.md)
+- [Получение добавочных изменений для событий в представлении календаря](../Concepts/delta_query_events.md)
+- [Получение добавочных изменений для групп](../Concepts/delta_query_groups.md)
+- [Получение добавочных изменений для пользователей](../Concepts/delta_query_users.md)

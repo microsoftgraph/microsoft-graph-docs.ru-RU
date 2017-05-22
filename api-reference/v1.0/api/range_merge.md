@@ -3,21 +3,24 @@
 Объединяет ячейки диапазона в одну область на листе.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/merge
-POST /workbook/worksheets(<id|name>)/range(<address>)/merge
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/merge
+POST /workbook/worksheets/{id|name}/range(<address>)/merge
+POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|

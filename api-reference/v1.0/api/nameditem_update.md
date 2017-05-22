@@ -3,6 +3,9 @@
 Обновление свойств объекта NamedItem.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,7 +40,6 @@ Content-type: application/json
 Content-length: 87
 
 {
-  "name": "name-value",
   "type": "type-value",
   "scope": "scope-value",
   "comment": "comment-value",

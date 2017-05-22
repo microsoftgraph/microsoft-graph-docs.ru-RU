@@ -3,17 +3,20 @@
 С помощью этого API можно создать объект TableRow.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows
+POST /workbook/tables/{id|name}/rows
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -31,7 +34,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows
   "name": "create_tablerow_from_table"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows
 Content-type: application/json
 Content-length: 45
 

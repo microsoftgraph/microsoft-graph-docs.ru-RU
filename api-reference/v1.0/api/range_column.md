@@ -3,21 +3,24 @@
 Возвращает столбец в диапазоне.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Column
-POST /workbook/worksheets(<id|name>)/range(<address>)/Column
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Column
+GET /workbook/names(<name>)/range/Column
+GET /workbook/worksheets/{id|name}/range(<address>)/Column
+GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр       | Тип    |Описание|
@@ -36,7 +39,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Column
   "name": "range_column"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
 Content-type: application/json
 Content-length: 21
 

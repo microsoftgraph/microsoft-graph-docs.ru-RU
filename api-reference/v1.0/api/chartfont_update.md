@@ -3,20 +3,23 @@
 Обновление свойств объекта ChartFont.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/format/font
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/format/font
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство       | Тип    |Описание|
@@ -38,7 +41,7 @@ PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/format/fo
   "name": "update_chartfont"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/format/font
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
 Content-type: application/json
 Content-length: 134
 

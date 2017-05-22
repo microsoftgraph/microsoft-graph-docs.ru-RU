@@ -3,16 +3,19 @@
 Получает объект диапазона, содержащий одну ячейку, на основе номеров строки и столбца. Ячейка может выходить за пределы родительского диапазона, если она расположена в сетке листа.
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
+GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="response"></a>Отклик
@@ -27,7 +30,7 @@ GET /workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
   "name": "worksheet_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 ```
 
 ##### <a name="response"></a>Отклик

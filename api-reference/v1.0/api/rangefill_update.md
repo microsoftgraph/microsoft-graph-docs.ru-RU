@@ -3,20 +3,23 @@
 Обновление свойств объекта rangeFill.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/fill
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/fill
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/fill
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство       | Тип    |Описание|
@@ -53,9 +56,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 28
 
-{
-  "color": "color-value"
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
