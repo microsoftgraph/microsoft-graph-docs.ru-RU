@@ -1,0 +1,105 @@
+# <a name="group-delta"></a>group: delta
+
+[Запросы изменений](../../../concepts/delta_query_overview.md) позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Чтобы узнать об изменениях в группах, выполните запрос с помощью функции *delta*. Подробные сведения вы найдете [здесь](../../../concepts/delta_query_overview.md).
+
+## <a name="prerequisites"></a>Необходимые условия
+
+Для применения этого API требуется одна из указанных **областей**: *Group.Read.All* или *Group.ReadWrite.All*
+
+### <a name="http-request"></a>HTTP-запрос
+
+Чтобы начать отслеживать изменения, выполните запрос к ресурсу groups, включающий функцию delta. 
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /groups/delta
+```
+
+### <a name="query-parameters"></a>Параметры запроса
+
+Отслеживание изменений в группах — это цикл из одного или нескольких вызовов функции **delta**. Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в первом запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в токене, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в ответ. Параметры запроса нужно указать только один раз в первом запросе. Копируйте и применяйте URL-адрес `nextLink` или `deltaLink` из предыдущего ответа в последующих запросах, так как в нем уже содержаться закодированные параметры.
+
+| Параметр запроса       | Тип    |Описание|
+|:---------------|:--------|:----------|
+| $deltatoken | строка | Этот [токен состояния](../../../concepts/delta_query_overview.md) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции групп и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| $skipToken | строка | Этот [токен состояния](../../../concepts/delta_query_overview.md) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции групп получены не все изменения. |
+
+### <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод поддерживает параметры запросов OData для настройки ответа.
+
+- Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство _id_ возвращается всегда. 
+- Запросы изменений поддерживают параметры `$select`, `$top` и `$expand` для групп. 
+- Единственное поддерживаемое выражение с параметром `$orderby` — `$orderby=receivedDateTime+desc`. Если выражение `$orderby` не указано, результаты будут возвращаться в непредсказуемом порядке. 
+- Параметр `$search` не поддерживается.
+
+### <a name="request-headers"></a>Заголовки запросов
+| Имя       | Описание|
+|:---------------|:----------|
+| Authorization  | Bearer &lt;token&gt;|
+| Content-Type  | application/json |
+
+### <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
+
+### <a name="response"></a>Ответ
+
+В случае успешного выполнения этот метод возвращает код ответа `200, OK` и объект коллекции [group](../resources/group.md) в тексте ответа. Ответ также включает токен состояния — URL-адрес nextLink или deltaLink.
+
+- Если возвращается URL-адрес nextLink, это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес nextLink, пока в ответ не будет включен URL-адрес deltaLink.
+
+- Если возвращается URL-адрес deltaLink, это означает, что больше нет данных о текущем состоянии ресурса. В последующих запросах приложение использует URL-адрес deltaLink, чтобы узнавать об изменениях ресурса.
+
+ </br>
+- [Дополнительные сведения](../../../concepts/delta_query_overview.md)</br>
+- [Примеры запросов](../../../concepts/delta_query_groups.md)</br>
+    
+### <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "group_delta"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups/delta
+```
+
+##### <a name="response"></a>Отклик
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups","@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvY1FSSc_",
+  "value":[
+    {
+      "classification": "classification-value",
+      "createdDateTime":"datetime-value",
+      "description":"Test group 1",
+      "displayName":"TestGroup1",
+      "groupTypes": [
+        "groupTypes-value"
+      ],
+      "mail": "mail-value"
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "group: delta",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

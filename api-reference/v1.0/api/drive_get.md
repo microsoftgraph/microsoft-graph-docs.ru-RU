@@ -3,12 +3,12 @@
 Получение свойств и отношений ресурса [Drive](../resources/drive.md). Drive — это контейнер верхнего уровня для файловой системы. Интерфейс API Graph позволяет получить доступ к ресурсу Drive для библиотеки документов пользователя OneDrive, OneDrive для бизнеса или SharePoint.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
+
 Для применения этого API требуется одна из указанных **областей**:
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
-
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="get-a-users-onedrive"></a>Получение доступа к OneDrive пользователя
 
@@ -17,29 +17,35 @@
 ### <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## <a name="get-the-document-library-assocaited-with-a-group"></a>Получение доступа к библиотеке документов, связанной с группой
+## <a name="get-the-document-library-associated-with-a-group"></a>Получение библиотеки документов, связанной с группой
 
-Чтобы получить доступ к стандартной библиотеке документов ресурса [Group](../resources/group.md), ваше приложение отправляет запрос на получение отношения **drive** в ресурсе Group.
+Для доступа к библиотеке документов [группы](../resources/group.md) по умолчанию приложение запрашивает отношение **drive** для объекта Group.
 
 ### <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{idOrUserPrincipalName}/drive
 ```
 
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
 
 ## <a name="request-body"></a>Тело запроса
+
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [Drive](../resources/drive.md) в теле отклика.
 
 ## <a name="example"></a>Пример

@@ -1,6 +1,6 @@
 # <a name="get-started-with-microsoft-graph-in-an-aspnet-46-mvc-app"></a>Начало работы с Microsoft Graph в приложении ASP.NET 4.6 MVC
 
-В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из конечной точки Azure AD версии 2.0 и вызвать Microsoft Graph. В ней рассматривается создание [примера приложения Microsoft Graph Connect для ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample) и объясняются основные понятия, которые необходимо реализовать для использования Microsoft Graph. В этой статье также описывается, как получить доступ к Microsoft Graph с помощью [клиентской библиотеки .NET Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) или необработанных вызовов REST.
+В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из конечной точки Azure AD версии 2.0 и вызвать Microsoft Graph. В ней рассматривается создание [примера приложения Microsoft Graph Connect для ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample) и объясняются основные понятия, которые необходимо реализовать для использования Microsoft Graph.
 
 На приведенном ниже рисунке показано создаваемое приложение. 
 
@@ -8,12 +8,7 @@
 
 [Конечная точка Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview) позволяет пользователям входить с учетной записью Майкрософт (MSA), с рабочей или учебной учетной записью. Приложение использует [ПО промежуточного слоя OpenID Connect OWIN для ASP.Net](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) и [библиотеку проверки подлинности Майкрософт (MSAL) для .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) для входа в систему и управления маркером.
 
->Сейчас доступна предварительная версия библиотеки MSAL, поэтому ее не следует использовать в рабочем коде. Она используется здесь только в демонстрационных целях. 
-
-**Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) вы сможете быстро приступить к работе.
-
-Чтобы скачать версию примера приложения Connect, которая использует конечную точку Azure AD и получает доступ к Microsoft Graph с помощью вызовов REST, см. [пример Office 365 Connect ASP.NET MVC](https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth).
-
+**Не хотите создавать приложение?** Воспользуйтесь [кратким руководством по Microsoft Graph](https://developer.microsoft.com/en-us/graph/quick-start) для быстрого начала работы. Обратите внимание, что у нас также есть [REST-версия этого приложения](https://github.com/microsoftgraph/aspnet-connect-rest-sample).
 
 ## <a name="prerequisites"></a>Необходимые условия
 
@@ -58,7 +53,7 @@
 
 3. Найдите клавиши настройки приложения в элементе **appSettings**. Замените значения заполнителей ENTER_YOUR_CLIENT_ID и ENTER_YOUR_SECRET значениями, которые вы только что скопировали.
 
-URI перенаправления выступает в роли URL-адреса зарегистрированного проекта. Запрошенные [области разрешений](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) позволяют приложению получить данные профилей пользователей и отправить сообщение электронной почты.
+URI перенаправления выступает в роли URL-адреса зарегистрированного проекта. Запрошенные [области разрешений](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes) позволяют приложению получить данные профилей пользователей и отправить сообщение электронной почты.
 
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>Проверка подлинности пользователя и получение маркера доступа
@@ -81,7 +76,7 @@ URI перенаправления выступает в роли URL-адрес
   - Microsoft.Owin.Security.OpenIdConnect
   - Microsoft.Owin.Security.Cookies
   - Microsoft.Owin.Host.SystemWeb
-  - Microsoft.Identity.Client -Pre
+  - Microsoft.Identity.Client
 
 Теперь вернемся к созданию приложения.
 
@@ -232,10 +227,7 @@ URI перенаправления выступает в роли URL-адрес
 
 ## <a name="call-microsoft-graph"></a>Вызов Microsoft Graph
 
-Если вы используете библиотеку Microsoft Graph, продолжайте чтение. При использовании REST см. раздел [Использование API REST](#using-the-rest-api).
-
-### <a name="using-the-library"></a>Использование библиотеки
-В этом шаге вы рассмотрите классы **SDKHelper**, **GraphService** и **HomeController**. 
+На этом шаге вы рассмотрите классы **SDKHelper**, **GraphService** и **HomeController**. 
 
  - Класс **SDKHelper** инициализирует экземпляр **GraphServiceClient** из библиотеки перед каждым вызовом Microsoft Graph. В этом случае маркер доступа добавляется в запрос. 
  - Класс **GraphService** создает и отправляет запросы в Microsoft Graph с помощью библиотеки и обрабатывает отклики.
@@ -305,15 +297,39 @@ URI перенаправления выступает в роли URL-адрес
 
 1. Замените часть кода *// SendEmail* следующими методами для создания и отправки сообщения электронной почты.
 
-        // Send an email message from the current user.
-        public async Task SendEmail(GraphServiceClient graphClient, Message message)
+        public async Task<Message> BuildEmailMessage(GraphServiceClient graphClient, string recipients, string subject)
         {
-            await graphClient.Me.SendMail(message, true).Request().PostAsync();
-        }
 
-        // Create the email message.
-        public Message BuildEmailMessage(string recipients, string subject)
-        {
+            // Get current user photo
+            Stream photoStream = await GetCurrentUserPhotoStreamAsync(graphClient);
+
+
+            // If the user doesn't have a photo, or if the user account is MSA, we use a default photo
+
+            if ( photoStream == null)
+            {
+                photoStream = System.IO.File.OpenRead(System.Web.Hosting.HostingEnvironment.MapPath("/Content/test.jpg"));
+            }
+
+            MemoryStream photoStreamMS = new MemoryStream();
+            // Copy stream to MemoryStream object so that it can be converted to byte array.
+            photoStream.CopyTo(photoStreamMS);
+
+            DriveItem photoFile = await UploadFileToOneDrive(graphClient, photoStreamMS.ToArray());
+
+            MessageAttachmentsCollectionPage attachments = new MessageAttachmentsCollectionPage();
+            attachments.Add(new FileAttachment
+            {
+                ODataType = "#microsoft.graph.fileAttachment",
+                ContentBytes = photoStreamMS.ToArray(),
+                ContentType = "image/png",
+                Name = "me.png"
+            });
+
+            Permission sharingLink = await GetSharingLinkAsync(graphClient, photoFile.Id);
+
+            // Add the sharing link to the email body.
+            string bodyContent = string.Format(Resource.Graph_SendMail_Body_Content, sharingLink.Link.WebUrl);
 
             // Prepare the recipient list.
             string[] splitter = { ";" };
@@ -335,13 +351,74 @@ URI перенаправления выступает в роли URL-адрес
             {
                 Body = new ItemBody
                 {
-                    Content = Resource.Graph_SendMail_Body_Content,
+                    Content = bodyContent,
                     ContentType = BodyType.Html,
                 },
                 Subject = subject,
-                ToRecipients = recipientList
+                ToRecipients = recipientList,
+                Attachments = attachments
             };
             return email;
+        }
+
+        // Gets the stream content of the signed-in user's photo. 
+        // This snippet doesn't work with consumer accounts.
+        public async Task<Stream> GetCurrentUserPhotoStreamAsync(GraphServiceClient graphClient)
+        {
+            Stream currentUserPhotoStream = null;
+
+            try
+            {
+                currentUserPhotoStream = await graphClient.Me.Photo.Content.Request().GetAsync();
+
+            }
+
+            // If the user account is MSA (not work or school), the service will throw an exception.
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return currentUserPhotoStream;
+
+        }
+
+        // Uploads the specified file to the user's root OneDrive directory.
+        public async Task<DriveItem> UploadFileToOneDrive(GraphServiceClient graphClient, byte[] file)
+        {
+            DriveItem uploadedFile = null;
+
+            try
+            {
+                MemoryStream fileStream = new MemoryStream(file);
+                uploadedFile = await graphClient.Me.Drive.Root.ItemWithPath("me.png").Content.Request().PutAsync<DriveItem>(fileStream);
+
+            }
+
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return uploadedFile;
+        }
+
+        public static async Task<Permission> GetSharingLinkAsync(GraphServiceClient graphClient, string Id)
+        {
+            Permission permission = null;
+
+            try
+            {
+                permission = await graphClient.Me.Drive.Items[Id].CreateLink("view").Request().PostAsync();
+            }
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return permission;
         }
 
 1. В папке **Controllers** откройте файл HomeController.cs.
@@ -384,7 +461,7 @@ URI перенаправления выступает в роли URL-адрес
             }
 
             // Build the email message.
-            Message message = graphService.BuildEmailMessage(Request.Form["recipients"], Request.Form["subject"]);
+            Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
             try
             {
 
@@ -432,218 +509,6 @@ URI перенаправления выступает в роли URL-адрес
         SDKHelper.SignOutClient();
 
 Теперь вы готовы к [запуску приложения](#run-the-app).
-
-### <a name="using-the-rest-api"></a>Использование API REST
-В этом шаге вы будете работать с классами **GraphService**, **GraphResources** и **HomeController**. 
-
- - Класс **GraphService** создает и отправляет HTTP-запросы в Microsoft Graph и обрабатывает отклики. 
- - Класс **GraphResources** представляет данные, которые приложение отправляет в Microsoft Graph и получает оттуда. 
- - Класс **HomeController** содержит действия, которые отправляют вызовы в Microsoft Graph в ответ на события пользовательского интерфейса.
-
-Для начала определите свой слой доступа к данным.
-
-1. В папке **Models** откройте файл GraphService.cs.
-
-1. Добавьте следующие операторы **using**.
-
-        using Newtonsoft.Json;
-        using Newtonsoft.Json.Linq;
-        using System.Net;
-        using System.Net.Http;
-        using System.Net.Http.Headers;
-        using System.Text;
-
-1. Замените часть кода *// GetMyEmailAddress* следующим методом. Таким образом будет получен электронный адрес текущего пользователя. 
-
-        // Get the current user's email address from their profile.
-        public async Task<string> GetMyEmailAddress(string accessToken)
-        {
-
-            // Get the current user. 
-            // The app only needs the user's email address, so select the mail and userPrincipalName properties.
-            // If the mail property isn't defined, userPrincipalName should map to the email for all account types. 
-            string endpoint = "https://graph.microsoft.com/v1.0/me";
-            string queryParameter = "?$select=mail,userPrincipalName";
-            UserInfo me = new UserInfo();
-
-            using (var client = new HttpClient())
-            {
-                using (var request = new HttpRequestMessage(HttpMethod.Get, endpoint + queryParameter))
-                {
-                    request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                    using (HttpResponseMessage response = await client.SendAsync(request))
-                    {
-                        if (response.StatusCode == HttpStatusCode.OK)
-                        {
-                            var json = JObject.Parse(await response.Content.ReadAsStringAsync());
-                            me.Address = !string.IsNullOrEmpty(json.GetValue("mail").ToString())?json.GetValue("mail").ToString():json.GetValue("userPrincipalName").ToString();
-                        }
-                        return me.Address?.Trim();
-                    }
-                }
-            }
-        }
-
-1. Замените часть кода *// SendEmail* следующими методами для создания и отправки сообщения электронной почты.
-
-        // Send an email message from the current user.
-        public async Task<string> SendEmail(string accessToken, MessageRequest email)
-        {
-            string endpoint = "https://graph.microsoft.com/v1.0/me/sendMail";
-            using (var client = new HttpClient())
-            {
-                using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
-                {
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                    request.Content = new StringContent(JsonConvert.SerializeObject(email), Encoding.UTF8, "application/json");
-                    using (HttpResponseMessage response = await client.SendAsync(request))
-                    {
-                        if (response.IsSuccessStatusCode)
-                        {
-                            return Resource.Graph_SendMail_Success_Result;
-                        }
-                        return response.ReasonPhrase;
-                    }
-                }
-            }
-        }
-
-        // Create the email message.
-        public MessageRequest BuildEmailMessage(string recipients, string subject)
-        {
-
-            // Prepare the recipient list.
-            string[] splitter = { ";" };
-            string[] splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
-            List<Recipient> recipientList = new List<Recipient>();
-            foreach (string recipient in splitRecipientsString)
-            {
-                recipientList.Add(new Recipient
-                {
-                    EmailAddress = new UserInfo
-                    {
-                        Address = recipient.Trim()
-                    }
-                });
-            }
-
-            // Build the email message.
-            Message message = new Message
-            {
-                Body = new ItemBody
-                {
-                    Content = Resource.Graph_SendMail_Body_Content,
-                    ContentType = "HTML"
-                },
-                Subject = subject,
-                ToRecipients = recipientList
-            };
-
-            return new MessageRequest
-            {
-                Message = message,
-                SaveToSentItems = true
-            };
-        }
-
-1. Щелкните правой кнопкой мыши папку **Models** и выберите пункт **Add** > **Class**.
-
-1. Присвойте имя классу *GraphResources* и нажмите кнопку **ОК**.
-
-1. Замените содержимое приведенным ниже кодом.
- 
-        using System;
-        using System.Collections.Generic;
-
-        namespace Microsoft_Graph_SDK_ASPNET_Connect.Models
-        {
-            public class UserInfo
-            {
-                public string Address { get; set; }
-            }
-
-            public class Message
-            {
-                public string Subject { get; set; }
-                public ItemBody Body { get; set; }
-                public List<Recipient> ToRecipients { get; set; }
-            }
-
-          public class Recipient
-            {
-                public UserInfo EmailAddress { get; set; }
-            }
-
-            public class ItemBody
-            {
-                public string ContentType { get; set; }
-                public string Content { get; set; }
-            }
-
-            public class MessageRequest
-            {
-                public Message Message { get; set; }
-                public bool SaveToSentItems { get; set; }
-            }
-        }
-
-1. В папке **Controllers** откройте файл HomeController.cs.
-  
-1. Замените часть кода *// Controller actions* следующими действиями.
-
-        [Authorize]
-        // Get the current user's email address from their profile.
-        public async Task<ActionResult> GetMyEmailAddress()
-        {
-            try
-            {
-
-                // Get an access token.
-                string accessToken = await SampleAuthProvider.Instance.GetUserAccessTokenAsync();
-
-                // Get the current user's email address. 
-                ViewBag.Email = await graphService.GetMyEmailAddress(accessToken);
-                return View("Graph");
-            }
-            catch (Exception e)
-            {
-                if (e.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
-                return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + e.Message });
-            }
-        }
-
-        [Authorize]
-        // Send mail on behalf of the current user.
-        public async Task<ActionResult> SendEmail()
-        {
-            if (string.IsNullOrEmpty(Request.Form["email-address"]))
-            {
-                ViewBag.Message = Resource.Graph_SendMail_Message_GetEmailFirst;
-                return View("Graph");
-            }
-
-            // Build the email message.
-            MessageRequest email = graphService.BuildEmailMessage(Request.Form["recipients"], Request.Form["subject"]);
-            try
-            {
-
-                // Get an access token.
-                string accessToken = await SampleAuthProvider.Instance.GetUserAccessTokenAsync();
-
-                // Send the email.
-                ViewBag.Message = await graphService.SendEmail(accessToken, email);
-
-                // Reset the current user's email address and the status to display when the page reloads.
-                ViewBag.Email = Request.Form["email-address"];
-                return View("Graph");
-            }
-            catch (Exception e)
-            {
-                if (e.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
-                return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + e.Message });
-            }
-        }
 
 ## <a name="run-the-app"></a>Запуск приложения
 1. Нажмите клавишу F5 для сборки и запуска приложения. 

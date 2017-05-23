@@ -1,7 +1,7 @@
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
-С помощью этого API можно создать папку почты.
-## <a name="prerequisites"></a>Необходимые компоненты
+Используйте этот API, чтобы создать папку почты в корневой папке почтового ящика пользователя.
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -19,11 +19,10 @@ POST /users/{id | userPrincipalName}/mailFolders
 
 | Параметр       | Тип    |Описание|
 |:---------------|:--------|:----------|
-|parentFolderId|String|Идентификатор родительской папки либо имя известной папки `Inbox`, `Drafts`, `SentItems` или `DeletedItems`.|
 |displayName|String|Отображаемое имя новой папки.|
 
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [MailFolder](../resources/mailfolder.md) в тексте отклика.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код ответа `201, Created` и объект [MailFolder](../resources/mailfolder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -38,8 +37,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value"
+  "displayName": "displayName-value"
 }
 ```
 

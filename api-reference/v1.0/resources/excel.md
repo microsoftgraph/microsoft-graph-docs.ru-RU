@@ -5,18 +5,20 @@
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-Можно получить доступ к набору объектов Excel (например, Table, Range или Chart) с помощью стандартных интерфейсов API REST, чтобы выполнять в книге операции создания, чтения, обновления и удаления (CRUD). Пример: `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`.  
+Можно получить доступ к набору объектов Excel (например, Table, Range или Chart) с помощью стандартных интерфейсов API REST, чтобы выполнять в книге операции создания, чтения, обновления и удаления (CRUD). Например, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 возвращает коллекцию объектов листа, включенных в книгу.    
 
 
-## <a name="authorization-and-scopes"></a>Авторизация и области
+** Примечание. REST API Excel поддерживает только книги в формате Office Open XML. Книги с расширением `.xls` не поддерживаются. 
+
+## <a name="authorization-and-scopes"></a>Авторизация и разрешения
 
 Для проверки подлинности интерфейсов API Excel можно использовать [конечную точку Azure AD вер. 20](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth). Для всех интерфейсов API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
   
 Для использования ресурса Excel требуется одна из указанных ниже [областей разрешений](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes).
 
-* Files.Read 
-* Files.ReadWrite
+* Files.Read; 
+* Files.ReadWrite.
 
 
 ## <a name="sessions-and-persistence"></a>Сеансы и сохраняемость
@@ -130,7 +132,7 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-Отклик 
+Ответ 
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201, Created
@@ -145,6 +147,34 @@ content-type: application/json;odata.metadata
   "visibility": "Visible"
 }
 ```
+
+#### <a name="get-a-new-worksheet"></a>Получение нового листа 
+ 
+<!-- { "blockType": "ignored" } -->
+```http
+GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+```
+
+Ответ 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 200, OK
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
+  "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
+  "name": "Sheet32243",
+  "position": 5,
+  "visibility": "Visible"
+}
+```
+
+** Примечание. Листы также можно получать, используя идентификатор. Однако в настоящее время идентификатор содержит символы `{` и "}", поэтому необходимо использовать кодировку URL, чтобы API работал. Пример. Чтобы получить лист с идентификатором `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, преобразуйте идентификатор в путь URL: `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
 
 #### <a name="delete-a-worksheet"></a>Удаление листа
 
@@ -168,7 +198,7 @@ HTTP code: 204, No Content
 Запрос 
 
 ```
-PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B00000000-0001-0000-0100-000000000000%7D')
+PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
 content-type: Application/Json 
 accept: application/Json 
 authorization: Bearer {access-token} 
@@ -207,7 +237,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
@@ -228,6 +258,8 @@ content-type: application/json;odata.metadata
   ]
 }
 ```
+
+** Примечание. Идентификатор диаграмма содержит символы `{` и `}` (пример: `{00000000-0008-0000-0100-000003000000}`), поэтому необходимо использовать кодировку URL, чтобы API работал. Пример. Чтобы получить объект диаграммы, преобразуйте идентификатор в путь URL: `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
 
 #### <a name="get-chart-image"></a>Получение изображения диаграммы
 
@@ -1191,7 +1223,7 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
 ##### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
+https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
