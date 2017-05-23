@@ -1,6 +1,8 @@
-# <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>Начало работы с Microsoft Graph в приложении с Xamarin.Forms
+# <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>Начало работы с Microsoft Graph в приложении на базе Xamarin.Forms
 
-В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из [конечной точки Azure AD версии 2.0](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) и вызвать Microsoft Graph. В ней представлен разбор кода [приложения Microsoft Graph Connect для Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) и рассматриваются основные понятия, которые необходимо реализовать в приложении, использующем Microsoft Graph. В этой статье также описывается доступ к Microsoft Graph с помощью [клиентской библиотеки Microsoft Graph](http://www.nuget.org/packages/Microsoft.Graph/).
+> **Создаете приложения для корпоративных клиентов?** Ваше приложение может не работать, если корпоративный клиент включит функции корпоративной безопасности для мобильных устройств, например <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">условный доступ с устройств</a>. В этом случае у пользователей могут возникать ошибки, а вы не будете об этом знать. 
+
+В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из [конечной точки Azure AD версии 2.0](https://developer.microsoft.com/graph/docs/concepts/converged_auth) и вызвать Microsoft Graph. В ней представлен разбор кода [приложения Microsoft Graph Connect для Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) и рассматриваются основные понятия, которые необходимо реализовать в приложении, использующем Microsoft Graph. В этой статье также описывается доступ к Microsoft Graph с помощью [клиентской библиотеки Microsoft Graph](http://www.nuget.org/packages/Microsoft.Graph/).
 
 Вы создадите такое приложение.
 
@@ -8,7 +10,7 @@
 | --- | ------- | ----|
 | <img src="images/UWP.png" alt="Connect sample on UWP" width="100%" /> | <img src="images/Droid.png" alt="Connect sample on Android" width="100%" /> | <img src="images/iOS.png" alt="Connect sample on iOS" width="100%" /> |
 
-**Не хотите создавать приложение?** Вы можете быстро приступить к работе с помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) или скачать [приложение Microsoft Graph Connect для Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample), которое рассматривается в этой статье.
+**Не хотите создавать приложение?** Вы можете быстро приступить к работе с помощью [краткого руководства по Microsoft Graph](https://developer.microsoft.com/graph/quick-start) или скачать [приложение Microsoft Graph Connect для Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample), которое рассматривается в этой статье.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
@@ -24,7 +26,7 @@
 
 - Последний пакет SDK для iOS
 - Последняя версия Xcode
-- Mac OS X Yosemite (10.10) или более поздней версии 
+- Mac OS X Sierra (10.12) и более поздней версии 
 - [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/)
 - [Агент Xamarin Mac, подключенный к Visual Studio](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
@@ -37,9 +39,9 @@
     
     Откроется страница регистрации со свойствами приложения.
  
-4. В разделе **Платформы** нажмите **Добавление платформы**.
-5. Выберите **мобильную платформу**.
-6. Скопируйте идентификатор приложения. Эти значения потребуется ввести в примере приложения.
+4. В разделе **Платформы** выберите **Добавление платформы**.
+5. Выберите **Собственное приложение**.
+6. Скопируйте идентификатор приложения. Вам потребуется ввести это значение в примере приложения.
 
     Идентификатор приложения уникален. URI перенаправления — это уникальный универсальный код ресурса (URI), предоставляемый каждому приложению операционной системой Windows 10, чтобы гарантировать, что сообщения, отправленные на этот URI, отправляются только этому приложению. 
 
@@ -50,133 +52,17 @@
 1. Откройте файл решения для начального проекта в Visual Studio.
 2. Откройте файл **App.cs** в проекте **XamarinConnect (Portable)** и найдите поле `ClientId`. Замените временное значение идентификатором зарегистрированного приложения.
 
-```c#
+```
 public static string ClientID = "ENTER_YOUR_CLIENT_ID";
-public static string[] Scopes = { "User.Read", "Mail.Send" };
+public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
 ```
 В значении `Scopes` хранятся области разрешений Microsoft Graph, запрашиваемые приложением, когда пользователь проходит проверку подлинности. Обратите внимание, что конструктор класса `App` использует значение ClientID для создания экземпляра класса MSAL `PublicClientApplication`. Этот класс потребуется позже для проверки подлинности пользователя.
 
-```c#
+```
 IdentityClientApp = new PublicClientApplication(ClientID);
 ```
 
-## <a name="install-the-microsoft-authentication-library-msal"></a>Установка библиотеки проверки подлинности (Майкрософт) — MSAL
-
-[Библиотека проверки подлинности (Майкрософт)](https://www.nuget.org/packages/Microsoft.Identity.Client) содержит классы и методы, которые упрощают проверку подлинности пользователей через конечную точку версии 2.0.
-
-1. В обозревателе решений щелкните правой кнопкой мыши проект **XamarinConnect (Portable)** и выберите пункт **Управление пакетами NuGet...**
-2. Нажмите кнопку "Обзор" и найдите файл Microsoft.Identity.Client.
-3. Выберите последнюю версию библиотеки проверки подлинности (Майкрософт) и нажмите кнопку **Установить**.
-
-Повторите эти действия для проектов **XamarinConnect.Droid**, **XamarinConnect.iOS** и **XamarinConnect.UWP**. Сборка приложения не удастся, если MSAL не установлена во всех четырех проектах.
-
-## <a name="install-the-microsoft-graph-client-library"></a>Установка клиентской библиотеки Microsoft Graph
-
-1. В обозревателе решений щелкните правой кнопкой мыши проект **XamarinConnect (Portable)** и выберите пункт **Управление пакетами NuGet...**
-2. Нажмите кнопку "Обзор" и найдите файл Microsoft.Graph.
-3. Выберите последнюю версию клиентской библиотеки Microsoft Graph и нажмите кнопку **Установить**.
-
-## <a name="create-the-authenticationhelpercs-class"></a>Создание класса AuthenticationHelper.cs
-
-Откройте файл AuthenticationHelper.cs в проекте **XamarinConnect (Portable)**. Этот файл содержит весь код проверки подлинности, а также дополнительную логику, которая сохраняет сведения о пользователях и выполняет принудительную проверку подлинности только при выходе пользователя из приложения. Этот класс содержит как минимум три метода: `GetTokenForUserAsync`, `Signout` и `GetAuthenticatedClient`.
-
-Метод `GetTokenHelperAsync` выполняется только во время проверки подлинности пользователя и каждый раз, когда приложение вызывает Microsoft Graph.
-
-**Использование объявлений**
-
-Убедитесь, что в начале файла есть следующие объявления:
-
-```c#
-using Microsoft.Graph;
-using System;
-using System.Diagnostics;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
-using Microsoft.Identity.Client;
-```
-
-**Поля класса**
-
-Убедитесь, что класс AuthenticationHelper содержит следующие поля:
-
-```c#
-public static string TokenForUser = null;
-public static DateTimeOffset expiration;
-private static GraphServiceClient graphClient = null;
-```
-
-Пример сохраняет в поле объект `GraphServicesClient`, чтобы его не пришлось создавать несколько раз. Он сохраняет `DateTimeOffset` для срока действия маркера доступа, чтобы не получать новый маркер, пока срок действия текущего не будет близок к завершению.
-
-**GetTokenForUserAsync**
-
-Метод `GetTokenForUserAsync` использует класс `PublicClientApplicationClass`, экземпляр которого создан в файле **App.cs**, чтобы получить маркер доступа для пользователя. Если пользователь еще не прошел проверку подлинности, открывается пользовательский интерфейс проверки подлинности.
-
-```c#
-        public static async Task<string> GetTokenForUserAsync()
-        {
-            if (TokenForUser == null || expiration <= DateTimeOffset.UtcNow.AddMinutes(5))
-            {
-                AuthenticationResult authResult = await App.IdentityClientApp.AcquireTokenAsync(App.Scopes);
-
-                TokenForUser = authResult.Token;
-                expiration = authResult.ExpiresOn;
-            }
-
-            return TokenForUser;
-        }
-```
-
-**Выход**
-
-Метод `Signout` выполняет выход из системы для всех пользователей, вошедших с помощью `PublicClientApplication` (в данном случае — только для одного пользователя), и обнуляет значение `TokenForUser`. Кроме того, он обнуляет значение `GraphServicesClient`.
-
-```c#
-        public static void SignOut()
-        {
-            foreach (var user in App.IdentityClientApp.Users)
-            {
-                user.SignOut();
-            }
-            graphClient = null;
-            TokenForUser = null;
-
-        }
-``` 
-
-**GetAuthenticatedClient**
-
-Наконец, вам потребуется метод, создающий `GraphServicesClient`. Этот метод создает клиент, использующий метод `GetTokenForUserAsync` для каждого вызова Microsoft Graph через клиент.
-
-```c#
-        public static GraphServiceClient GetAuthenticatedClient()
-        {
-            if (graphClient == null)
-            {
-                // Create Microsoft Graph client.
-                try
-                {
-                    graphClient = new GraphServiceClient(
-                        "https://graph.microsoft.com/v1.0",
-                        new DelegateAuthenticationProvider(
-                            async (requestMessage) =>
-                            {
-                                var token = await GetTokenForUserAsync();
-                                requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", token);
-                            }));
-                    return graphClient;
-                }
-
-                catch (Exception ex)
-                {
-                    Debug.WriteLine("Could not create a graph client: " + ex.Message);
-                }
-            }
-
-            return graphClient;
-        }
-```
-
-## <a name="send-an-email-with-microsoft-graph"></a>Отправка электронного сообщения с помощью Microsoft Graph
+## <a name="send-an-email-with-microsoft-graph"></a>Отправка электронного письма с помощью Microsoft Graph
 
 Откройте файл MailHelper.cs начального проекта. Этот файл содержит код для создания и отправки электронного сообщения. Он состоит из одного метода (``ComposeAndSendMailAsync``), который создает и отправляет запрос POST конечной точке **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
 
@@ -184,18 +70,145 @@ private static GraphServiceClient graphClient = null;
 
 **Использование объявлений**
 
-Добавьте в начало файла следующие объявления:
+Убедитесь, что вверху файла есть указанные ниже объявления.
 
-```c#
+```
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.Graph;
 ```
 
-Так как пользователь может указать несколько адресов, строку ``recipients`` необходимо разбить на несколько объектов `EmailAddress`, используемых для создания списка объектов `Recipients`, которые затем можно передать в POST-тексте запроса:
+Первая задача в методе ``ComposeAndSendMailAsync`` — получение фотографии текущего пользователя из Microsoft Graph. В этой строке выполняется вызов усеченного метода `GetCurrentUserPhotoStreamAsync`:
 
-```c#
+```
+            // Get current user photo
+            Stream photoStream = await GetCurrentUserPhotoStreamAsync();
+```
+
+Полностью метод `GetCurrentUserPhotoStreamAsync` выглядит так:
+
+```
+        // Gets the stream content of the signed-in user's photo. 
+        // This snippet doesn't work with consumer accounts.
+        public async Task<Stream> GetCurrentUserPhotoStreamAsync()
+        {
+            Stream currentUserPhotoStream = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                currentUserPhotoStream = await graphClient.Me.Photo.Content.Request().GetAsync();
+
+            }
+
+            // If the user account is MSA (not work or school), the service will throw an exception.
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return currentUserPhotoStream;
+
+        }
+```
+
+Если у пользователя нет фотографии, то эта логика получает другой файл изображения, включенный в проект:
+
+```
+            // If the user doesn't have a photo, or if the user account is MSA, we use a default photo
+
+            if (photoStream == null)
+            {
+                var assembly = typeof(MailHelper).GetTypeInfo().Assembly;
+                photoStream = assembly.GetManifestResourceStream("XamarinConnect.test.jpg");
+            }
+```
+
+Теперь, когда у нас есть поток изображений, мы можем отправить файл в OneDrive, вызвав усеченный метод `UploadFileToOneDriveAsync`:
+
+```
+            MemoryStream photoStreamMS = new MemoryStream();
+            // Copy stream to MemoryStream object so that it can be converted to byte array.
+            photoStream.CopyTo(photoStreamMS);
+
+            DriveItem photoFile = await UploadFileToOneDriveAsync(photoStreamMS.ToArray());
+```
+
+Полностью метод `UploadFileToOneDriveAsync` выглядит так:
+
+```
+        // Uploads the specified file to the user's root OneDrive directory.
+        public async Task<DriveItem> UploadFileToOneDriveAsync(byte[] file)
+        {
+            DriveItem uploadedFile = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                MemoryStream fileStream = new MemoryStream(file);
+                uploadedFile = await graphClient.Me.Drive.Root.ItemWithPath("me.png").Content.Request().PutAsync<DriveItem>(fileStream);
+
+            }
+
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return uploadedFile;
+        }
+```
+
+Кроме того, мы можем использовать этот поток для создания объекта `MessageAttachmentsCollectionPage`, который можно передать вместе с сообщением:
+
+```
+            MessageAttachmentsCollectionPage attachments = new MessageAttachmentsCollectionPage();
+            attachments.Add(new FileAttachment
+            {
+                ODataType = "#microsoft.graph.fileAttachment",
+                ContentBytes = photoStreamMS.ToArray(),
+                ContentType = "image/png",
+                Name = "me.png"
+            });
+```
+
+Мы можем получить ссылку для общего доступа к недавно добавленному в OneDrive файлу, вызвав усеченный метод `GetSharingLinkAsync`. Строка `bodyContent` содержит заполнитель для этой ссылки:
+
+```
+            // Get the sharing link and insert it into the message body.
+            Permission sharingLink = await GetSharingLinkAsync(photoFile.Id);
+            string bodyContentWithSharingLink = String.Format(bodyContent, sharingLink.Link.WebUrl);
+```
+
+Полностью метод `GetSharingLinkAsync` выглядит так:
+
+```
+        public static async Task<Permission> GetSharingLinkAsync(string Id)
+        {
+            Permission permission = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                permission = await graphClient.Me.Drive.Items[Id].CreateLink("view").Request().PostAsync();
+            }
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return permission;
+        }
+```
+
+Так как пользователь может указать несколько адресов, строку ``recipients`` необходимо разбить на несколько объектов `EmailAddress`, используемых для создания списка объектов `Recipients`, которые затем можно передать в теле POST-запроса:
+
+```
             // Prepare the recipient list
             string[] splitter = { ";" };
             var splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
@@ -207,9 +220,9 @@ using Microsoft.Graph;
             }
 ```
 
-Затем необходимо создать объект `Message` и отправить его конечной точке **me/microsoft.graph.SendMail** с помощью `GraphServiceClient`. Так как строка ``bodyContent`` — это документ HTML, запрос задает для параметра **ContentType** значение HTML.
+В конце необходимо создать объект `Message` и отправить его в конечную точку **me/microsoft.graph.SendMail** с помощью `GraphServiceClient`. Так как строка ``bodyContent`` представляет собой документ HTML, запрос задает для параметра **ContentType** значение HTML.
 
-```c#
+```
             try
             {
                 var graphClient = AuthenticationHelper.GetAuthenticatedClient();
@@ -218,11 +231,12 @@ using Microsoft.Graph;
                 {
                     Body = new ItemBody
                     {
-                        Content = bodyContent,
+                        Content = bodyContentWithSharingLink,
                         ContentType = BodyType.Html,
                     },
                     Subject = subject,
                     ToRecipients = recipientList,
+                    Attachments = attachments
                 };
 
                 try
@@ -245,7 +259,7 @@ using Microsoft.Graph;
 
 Готовый класс должен выглядеть следующим образом:
 
-```c#
+```
     public class MailHelper
     {
         /// <summary>
@@ -259,6 +273,38 @@ using Microsoft.Graph;
                                                             string bodyContent,
                                                             string recipients)
         {
+
+            // Get current user photo
+            Stream photoStream = await GetCurrentUserPhotoStreamAsync();
+
+
+            // If the user doesn't have a photo, or if the user account is MSA, we use a default photo
+
+            if (photoStream == null)
+            {
+                var assembly = typeof(MailHelper).GetTypeInfo().Assembly;
+                photoStream = assembly.GetManifestResourceStream("XamarinConnect.test.jpg");
+            }
+
+            MemoryStream photoStreamMS = new MemoryStream();
+            // Copy stream to MemoryStream object so that it can be converted to byte array.
+            photoStream.CopyTo(photoStreamMS);
+
+            DriveItem photoFile = await UploadFileToOneDriveAsync(photoStreamMS.ToArray());
+
+            MessageAttachmentsCollectionPage attachments = new MessageAttachmentsCollectionPage();
+            attachments.Add(new FileAttachment
+            {
+                ODataType = "#microsoft.graph.fileAttachment",
+                ContentBytes = photoStreamMS.ToArray(),
+                ContentType = "image/png",
+                Name = "me.png"
+            });
+
+            // Get the sharing link and insert it into the message body.
+            Permission sharingLink = await GetSharingLinkAsync(photoFile.Id);
+            string bodyContentWithSharingLink = String.Format(bodyContent, sharingLink.Link.WebUrl);
+
 
             // Prepare the recipient list
             string[] splitter = { ";" };
@@ -278,11 +324,12 @@ using Microsoft.Graph;
                 {
                     Body = new ItemBody
                     {
-                        Content = bodyContent,
+                        Content = bodyContentWithSharingLink,
                         ContentType = BodyType.Html,
                     },
                     Subject = subject,
                     ToRecipients = recipientList,
+                    Attachments = attachments
                 };
 
                 try
@@ -302,7 +349,73 @@ using Microsoft.Graph;
                 throw new Exception("We could not send the message: " + e.Message);
             }
         }
+
+        // Gets the stream content of the signed-in user's photo. 
+        // This snippet doesn't work with consumer accounts.
+        public async Task<Stream> GetCurrentUserPhotoStreamAsync()
+        {
+            Stream currentUserPhotoStream = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                currentUserPhotoStream = await graphClient.Me.Photo.Content.Request().GetAsync();
+
+            }
+
+            // If the user account is MSA (not work or school), the service will throw an exception.
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return currentUserPhotoStream;
+
+        }
+
+        // Uploads the specified file to the user's root OneDrive directory.
+        public async Task<DriveItem> UploadFileToOneDriveAsync(byte[] file)
+        {
+            DriveItem uploadedFile = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                MemoryStream fileStream = new MemoryStream(file);
+                uploadedFile = await graphClient.Me.Drive.Root.ItemWithPath("me.png").Content.Request().PutAsync<DriveItem>(fileStream);
+
+            }
+
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return uploadedFile;
+        }
+
+        public static async Task<Permission> GetSharingLinkAsync(string Id)
+        {
+            Permission permission = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                permission = await graphClient.Me.Drive.Items[Id].CreateLink("view").Request().PostAsync();
+            }
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return permission;
+        }
+
+
     }
+}
 ``` 
 
 Вы выполнили три действия, необходимых для взаимодействия с Microsoft Graph: регистрацию приложения, проверку подлинности пользователя и создание запроса. 
@@ -317,7 +430,7 @@ using Microsoft.Graph;
 
 3. Войдите с помощью личной, рабочей или учебной учетной записи и предоставьте необходимые разрешения.
 
-4. Нажмите кнопку **Отправить сообщение**. Появится сообщение об успешной отправке сообщения.
+4. Нажмите кнопку **Отправить сообщение**. После отправки письма отобразится сообщение об успешном выполнении этой операции. Это письмо включает фотографию в виде вложения, а также ссылку для общего доступа к добавленному в OneDrive файлу.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - Попробуйте REST API, используя [песочницу Graph](https://graph.microsoft.io/graph-explorer).

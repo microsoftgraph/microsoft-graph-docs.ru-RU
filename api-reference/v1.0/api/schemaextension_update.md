@@ -1,0 +1,110 @@
+# <a name="update-schemaextension"></a>Обновление schemaExtension
+
+Обновление свойств в определении указанного ресурса [schemaExtension](../resources/schemaextension.md).
+
+Это обновление применяется ко всем ресурсам, включенным в свойство **targetTypes** расширения. Эти ресурсы входят в число [поддерживаемых](../../../concepts/extensibility_overview.md#supported-resources).
+
+Только приложение, которое создало расширение схемы (приложение-владелец), может внести дополнения в расширение, причем только тогда, когда расширение находится в состоянии **InDevelopment** или **Available**. Это означает, что приложению не удастся удалить настраиваемые свойства или целевые типы ресурсов из определения. Но приложение может изменить описание расширения.
+
+## <a name="prerequisites"></a>Необходимые компоненты
+Для применения этого API требуется следующая **область**: *Directory.AccessAsUser.All*
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /schemaExtensions/{id}
+```
+### <a name="optional-request-headers"></a>Необязательные заголовки запросов
+| Имя      |Описание|
+|:----------|:----------|
+| Authorization  | Bearer &lt;token&gt;. Обязательный. |
+| Content-Type   | application/json | 
+
+## <a name="request-body"></a>Тело запроса
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
+
+| Свойство       | Тип    |Описание|
+|:---------------|:--------|:----------|
+|description|String|Описание расширения схемы.|
+|properties|Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)|Коллекция имен и типов свойств, составляющих определение расширения схемы. Разрешено вносить изменения только в виде дополнений. |
+|status|String|Состояние жизненного цикла расширения схемы. Начальное состояние при создании расширения схемы: **InDevelopment**. Возможные варианты перехода: из состояния **InDevelopment** в состояние **Available**, из состояния **Available** в состояние **Deprecated** и из состояния **Deprecated** в состояние **Available**.|
+|targetTypes|Коллекция String|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешено вносить изменения только в виде дополнений.|
+
+## <a name="response"></a>Отклик
+При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [schemaExtension](../resources/schemaextension.md) в теле отклика.
+## <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "update_schemaextension"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/schemaExtensions/{id}
+Content-type: application/json
+Content-length: 201
+
+{
+  "properties": [
+    {
+      "name":"new-name-value",
+      "type":"new-type-value"
+    },
+    {
+      "name":"additional-name-value",
+      "type":"additional-type-value"
+    }
+  ],
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 201
+
+{
+  "id": "id-value",
+  "description": "description-value",
+  "targetTypes": [
+    "targetTypes-value"
+  ],
+  "properties": [
+    {
+      "name":"name-value",
+      "type":"type-value"
+    },
+    {
+      "name":"new-name-value",
+      "type":"new-type-value"
+    },
+    {
+      "name":"additional-name-value",
+      "type":"additional-type-value"
+    }  
+  ],
+  "status": "status-value",
+  "owner": "owner-value"
+}
+```
+
+## <a name="see-also"></a>См. также
+
+- [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](../../../concepts/extensibility_schema_groups.md)
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update schemaextension",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
