@@ -3,21 +3,29 @@
 С помощью этого API можно создать объект Table.
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются указанные **области**: 
+
+    * Files.ReadWrite.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/tables/$/add
+POST /workbook/worksheets/{id|name}/tables/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {code}|
 
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [Table](../resources/table.md) в формате JSON.
+В тексте запроса укажите следующие параметры: 
 
+### <a name="request-parameters"></a>Параметры запроса
+| Имя       | Тип|Описание|
+|:---------------|:----------|
+| Адрес  | string| Адрес диапазона. Если вы отзываете этот API для пути `worksheets/{id|name}/tables/add`, отпадает необходимость в поддержке префикса имени листа в адресе. Однако при выполнении аналогичного действия для пути`workbook/tables/add` нужно указывать имя листа, на котором требуется создать таблицу (например, `sheet1!A1:D4`)|
+| hasHeaders  | boolean|Логическое значение, указывающее, имеет ли диапазон метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.|
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Table](../resources/table.md) в тексте отклика.
@@ -30,19 +38,15 @@ POST /workbook/worksheets(<id|name>)/tables/$/add
   "name": "create_table_from_worksheet"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/tables/$/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/tables/$/add
 Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
-  "name": "name-value",
-  "showHeaders": true,
-  "showTotals": true,
-  "style": "style-value"
+  "address": "",
+  "hasHeaders": false
 }
 ```
-Предоставьте в тексте запроса описание объекта [Table](../resources/table.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
