@@ -123,8 +123,7 @@
 |onenote|[OneNote](onenote.md)| Только для чтения.|
 |ownedDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, принадлежащие пользователю. Только для чтения. Допускается значение null.|
 |ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, принадлежащие пользователю. Только для чтения. Допускается значение null.|
-|Фотография
-|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
+|Фотография|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
 |registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускает значение null.|
 |sites|Коллекция объектов [site](site.md) | Коллекция сайтов, доступных для этого пользователя. Только для чтения. |
 
