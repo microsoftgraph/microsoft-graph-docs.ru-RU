@@ -4,7 +4,7 @@
 
 Выберите статью, посвященную выбранным вами поставщику проверки подлинности и платформе разработки, и приступайте к подключению к Microsoft Graph.
 
-Вы можете выполнить действия, указанные в статье, посвященной вашей платформе разработки, либо воспользоваться [кратким руководством](http://dev.office.com/getting-started/office365apis), чтобы быстро подготовить решение к работе.
+Вы можете выполнить действия, указанные в статье, посвященной вашей платформе разработки, либо воспользоваться [кратким руководством](https://developer.microsoft.com/graph/quick-start), чтобы быстро подготовить решение к работе.
 
 Готовые примеры Connect вы найдете в репозитории [Microsoft Graph ](https://github.com/microsoftgraph) на сайте GitHub. Ниже представлены примеры для разных поставщиков проверки подлинности и платформ, а также указано, что они используют для подключения к Microsoft Graph: REST или клиентскую библиотеку Microsoft Graph.
 
@@ -20,7 +20,7 @@
         <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">Пример с использованием пакета SDK</a>
     </td> 
         <td>
-                <a href="https://github.com/microsoftgraph/android-java-connect-sample">Пример с использованием пакета SDK</a> или ¶<a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST</a>
+                <a href="https://github.com/microsoftgraph/android-java-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST</a>
     </td> 
   </tr>
   <tr>
@@ -29,7 +29,7 @@
         <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
     </td> 
         <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-sample">Пример с использованием пакета SDK</a> или ¶<a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST</a>
+        <a href="https://github.com/microsoftgraph/angular-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST</a>
     </td> 
   </tr>
   <tr>
@@ -38,7 +38,7 @@
         <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
     </td>     
     <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">Пример с использованием пакета SDK</a> или ¶<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST</a>
+        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST</a>
     </td> 
   </tr>
   <tr>
@@ -65,7 +65,7 @@
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Пример с использованием пакета SDK</a> или ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST</a>
     </td> 
   </tr>
   <tr>
@@ -74,7 +74,7 @@
         <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
     </td>     
     <td>
-            <a href="https://github.com/microsoftgraph/php-connect-sample">Пример с использованием пакета SDK</a> или ¶<a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST</a>
+            <a href="https://github.com/microsoftgraph/php-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST</a>
     </td> 
   </tr>
   <tr>
@@ -100,7 +100,7 @@
         <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
     </td>     
     <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">Пример с использованием пакета SDK</a> или ¶<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST</a>
+        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST</a>
     </td> 
   </tr>
   <tr>
@@ -115,5 +115,5 @@
 
 ## <a name="see-also"></a>См. также
 - Попробуйте примеры вызовов REST в нашем [обозревателе API](https://graph.microsoft.io/graph-explorer).
-- [Документация по конечной точке Azure AD](https://azure.microsoft.com/en-us/documentation/services/active-directory/)
-- [Документация по конечной точке Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+- [Документация по конечной точке Azure AD](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Документация по конечной точке Azure AD версии 2.0](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

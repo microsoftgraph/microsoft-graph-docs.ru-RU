@@ -32,7 +32,7 @@ GET /directoryObjects/{id}
   "name": "get_directoryobject"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryObject/{id}
+GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 ##### <a name="response"></a>Отклик
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
