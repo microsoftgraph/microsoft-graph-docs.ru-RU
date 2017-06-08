@@ -1,6 +1,6 @@
-# <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>Начало работы с Microsoft Graph в приложении с Xamarin.Forms
+# <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>Начало работы с Microsoft Graph в приложении на базе Xamarin.Forms
 
-> **Создаете приложения для корпоративных клиентов?** Ваше приложение может не работать, если корпоративный клиент включит функции корпоративной безопасности для мобильных устройств, например <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">условный доступ с устройств</a>. В этом случае у пользователей могут возникать ошибки, а вы не будете об этом знать. 
+> **Создаете приложения для корпоративных клиентов?** Ваше приложение может не работать, если корпоративный клиент включит функции корпоративной безопасности для мобильных устройств, например <a href="https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">условный доступ с устройств</a>. В этом случае у пользователей могут возникать ошибки, а вы не будете об этом знать. 
 
 В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из [конечной точки Azure AD версии 2.0](https://developer.microsoft.com/graph/docs/concepts/converged_auth) и вызвать Microsoft Graph. В ней представлен разбор кода [приложения Microsoft Graph Connect для Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) и рассматриваются основные понятия, которые необходимо реализовать в приложении, использующем Microsoft Graph. В этой статье также описывается доступ к Microsoft Graph с помощью [клиентской библиотеки Microsoft Graph](http://www.nuget.org/packages/Microsoft.Graph/).
 
@@ -26,24 +26,24 @@
 
 - Последний пакет SDK для iOS
 - Последняя версия Xcode
-- Mac OS X Sierra (10.12) и выше 
-- [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/)
+- Mac OS X Sierra (10.12) и более поздней версии 
+- [Xamarin.iOS](https://docs.microsoft.com/visualstudio/mac/installation)
 - [Агент Xamarin Mac, подключенный к Visual Studio](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
 
 ## <a name="register-the-app"></a>Регистрация приложения
  
 1. Войдите на [портал регистрации приложений](https://apps.dev.microsoft.com/) с помощью личной, рабочей или учебной учетной записи.
-2. Выберите пункт **Добавить приложение**.
-3. Введите имя приложения и выберите пункт **Создать приложение**.
+2. Выберите **Добавить приложение**.
+3. Введите имя приложения и выберите **Создать**.
     
     Откроется страница регистрации со свойствами приложения.
  
 4. В разделе **Платформы** нажмите **Добавление платформы**.
-5. Выберите **мобильную платформу**.
-6. Скопируйте идентификатор приложения. Эти значения потребуется ввести в примере приложения.
+5. Выберите **Собственное приложение**.
+6. Скопируйте значение идентификатора приложения и значение пользовательского URI перенаправления (под заголовком **Собственное приложение**), которые были созданы для вас при добавлении платформы **Собственное приложение**. Это значение URI должно содержать значение идентификатора приложения и иметь такой формат: `msal[Application Id]://auth`. Эти значения потребуется ввести в демонстрационном приложении.
 
-    Идентификатор приложения уникален. URI перенаправления — это уникальный универсальный код ресурса (URI), предоставляемый каждому приложению операционной системой Windows 10, чтобы гарантировать, что сообщения, отправленные на этот URI, отправляются только этому приложению. 
+    Идентификатор приложения является уникальным. 
 
 7. Нажмите кнопку **Сохранить**.
 
@@ -52,15 +52,24 @@
 1. Откройте файл решения для начального проекта в Visual Studio.
 2. Откройте файл **App.cs** в проекте **XamarinConnect (Portable)** и найдите поле `ClientId`. Замените временное значение идентификатором зарегистрированного приложения.
 
-```
-public static string ClientID = "ENTER_YOUR_CLIENT_ID";
-public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
-```
-В значении `Scopes` хранятся области разрешений Microsoft Graph, запрашиваемые приложением, когда пользователь проходит проверку подлинности. Обратите внимание, что конструктор класса `App` использует значение ClientID для создания экземпляра класса MSAL `PublicClientApplication`. Этот класс потребуется позже для проверки подлинности пользователя.
+    ```
+    public static string ClientID = "ENTER_YOUR_CLIENT_ID";
+    public static string RedirectUri = "msal" + ClientID + "://auth";
+    public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
+    ```
+    В значении `Scopes` хранятся области разрешений Microsoft Graph, запрашиваемые приложением, когда пользователь проходит проверку подлинности. Обратите внимание, что конструктор класса `App` использует значение ClientID для создания экземпляра класса MSAL `PublicClientApplication`. Этот класс потребуется позже для проверки подлинности пользователя.
+    
+    ```
+    IdentityClientApp = new PublicClientApplication(ClientID);
+    ```
 
-```
-IdentityClientApp = new PublicClientApplication(ClientID);
-```
+3. Откройте файл UserDetailsClient.iOS\info.plist в текстовом редакторе. К сожалению, этот файл невозможно редактировать в Visual Studio. Найдите элемент `<string>msalENTER_YOUR_CLIENT_ID</string>` в ключе `CFBundleURLSchemes`.
+
+4. Замените `ENTER_YOUR_CLIENT_ID` на идентификатор приложения, который вы получили при регистрации. Оставьте `msal` перед идентификатором приложения. В результате полученное строковое значение должно выглядеть так: `<string>msal[application id]</string>`.
+
+5. Откройте файл UserDetailsClient.Droid\Properties\AndroidManifest.xml. Найдите элемент `<data android:scheme="msalENTER_YOUR_CLIENT_ID" android:host="auth" />`.
+
+6. Замените `ENTER_YOUR_CLIENT_ID` на идентификатор приложения, который вы получили при регистрации. Оставьте `msal` перед идентификатором приложения. В результате полученное строковое значение должно выглядеть так: `<data android:scheme="msal[application id]" android:host="auth" />`.
 
 ## <a name="send-an-email-with-microsoft-graph"></a>Отправка электронного сообщения с помощью Microsoft Graph
 
@@ -70,7 +79,7 @@ IdentityClientApp = new PublicClientApplication(ClientID);
 
 **Использование объявлений**
 
-Убедитесь, что в начале файла есть следующие объявления:
+Убедитесь, что вверху файла есть указанные ниже объявления.
 
 ```
 using System;
@@ -81,7 +90,7 @@ using System.Threading.Tasks;
 using Microsoft.Graph;
 ```
 
-Первая задача в методе ``ComposeAndSendMailAsync`` — получение фотографии текущего пользователя из Microsoft Graph. Эта строка вызывает усеченный метод `GetCurrentUserPhotoStreamAsync`:
+Первая задача в методе ``ComposeAndSendMailAsync`` — получение фотографии текущего пользователя из Microsoft Graph. В этой строке выполняется вызов усеченного метода `GetCurrentUserPhotoStreamAsync`:
 
 ```
             // Get current user photo
@@ -115,7 +124,7 @@ using Microsoft.Graph;
         }
 ```
 
-Если у пользователя нет фотографии, эта логика получает другой файл изображения, включенный в проект:
+Если у пользователя нет фотографии, то эта логика получает другой файл изображения, включенный в проект:
 
 ```
             // If the user doesn't have a photo, or if the user account is MSA, we use a default photo
@@ -176,7 +185,7 @@ using Microsoft.Graph;
             });
 ```
 
-Мы можем получить ссылку для общего доступа к недавно отправленному в OneDrive файлу, вызвав усеченный метод `GetSharingLinkAsync`. Строка `bodyContent` содержит заполнитель для ссылки:
+Мы можем получить ссылку для общего доступа к недавно добавленному в OneDrive файлу, вызвав усеченный метод `GetSharingLinkAsync`. Строка `bodyContent` содержит заполнитель для этой ссылки:
 
 ```
             // Get the sharing link and insert it into the message body.
@@ -206,7 +215,7 @@ using Microsoft.Graph;
         }
 ```
 
-Так как пользователь может указать несколько адресов, строку ``recipients`` необходимо разбить на несколько объектов `EmailAddress`, используемых для создания списка объектов `Recipients`, которые затем можно передать в POST-тексте запроса:
+Так как пользователь может указать несколько адресов, строку ``recipients`` необходимо разбить на несколько объектов `EmailAddress`, используемых для создания списка объектов `Recipients`, который затем можно передать в теле POST-запроса:
 
 ```
             // Prepare the recipient list
@@ -415,7 +424,6 @@ using Microsoft.Graph;
 
 
     }
-}
 ``` 
 
 Вы выполнили три действия, необходимых для взаимодействия с Microsoft Graph: регистрацию приложения, проверку подлинности пользователя и создание запроса. 
@@ -430,13 +438,13 @@ using Microsoft.Graph;
 
 3. Войдите с помощью личной, рабочей или учебной учетной записи и предоставьте необходимые разрешения.
 
-4. Нажмите кнопку **Отправить сообщение**. Появится сообщение, что письмо отправлено. Это письмо включает вложенную фотографию и ссылку для общего доступа к отправленному в OneDrive файлу.
+4. Нажмите кнопку **Отправить сообщение**. После отправки письма отобразится сообщение об успешном выполнении этой операции. Это письмо включает фотографию в виде вложения, а также ссылку для общего доступа к добавленному в OneDrive файлу.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Попробуйте REST API, используя [песочницу Graph](https://graph.microsoft.io/graph-explorer).
+- Попробуйте REST API, используя [песочницу Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Вы можете найти примеры распространенных операций в [библиотеке фрагментов кода с использованием пакеты SDK Microsoft Graph для Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample) или изучить другие [примеры для Xamarin](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin) на сайте GitHub.
 
 ## <a name="see-also"></a>См. также
 - [Клиентская библиотека .NET Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)

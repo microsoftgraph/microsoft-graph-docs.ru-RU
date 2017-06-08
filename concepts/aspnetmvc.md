@@ -53,181 +53,11 @@
 
 3. Найдите клавиши настройки приложения в элементе **appSettings**. Замените значения заполнителей ENTER_YOUR_CLIENT_ID и ENTER_YOUR_SECRET значениями, которые вы только что скопировали.
 
-URI перенаправления выступает в роли URL-адреса зарегистрированного проекта. Запрошенные [области разрешений](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) позволяют приложению получить данные профилей пользователей и отправить сообщение электронной почты.
-
-
-## <a name="authenticate-the-user-and-get-an-access-token"></a>Проверка подлинности пользователя и получение маркера доступа
-
-На этом этапе вы добавите код для входа и управления маркером. Но для начала подробнее рассмотрим поток проверки подлинности.
-
-В этом приложении используется поток предоставления кода авторизации с делегированным удостоверением пользователя. В веб-приложении для этого потока требуются идентификатор, пароль и URI перенаправления зарегистрированного приложения. 
-
-Поток проверки подлинности можно разделить на следующие основные этапы.
-
-1. Перенаправление пользователя для проверки подлинности и согласия
-2. Получение кода авторизации
-3. Обмен кода авторизации на маркер доступа
-4. Использование маркера обновления для получения нового маркера доступа по истечении срока действия текущего
-
-Приложение использует [ПО промежуточного слоя OpenID Connect OWIN для ASP.Net](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) и [библиотеку проверки подлинности Майкрософт (MSAL) для .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) для входа в систему и управления маркером. Они обрабатывают большинство задач проверки подлинности.
-    
-В начальном проекте уже объявлены указанные ниже зависимости ПО промежуточного слоя MSAL NuGet.
-
-  - Microsoft.Owin.Security.OpenIdConnect
-  - Microsoft.Owin.Security.Cookies
-  - Microsoft.Owin.Host.SystemWeb
-  - Microsoft.Identity.Client
-
-Теперь вернемся к созданию приложения.
-
-1. В папке **App_Start** откройте файл Startup.Auth.cs. 
-
-1. Замените метод **ConfigureAuth** указанным ниже кодом. Таким образом, вы зададите координаты для связи с Azure AD и установите проверку подлинности на основе файлов cookie, которые использует ПО промежуточного слоя OpenID Connect.
-
-        public void ConfigureAuth(IAppBuilder app)
-        {
-            app.SetDefaultSignInAsAuthenticationType(CookieAuthenticationDefaults.AuthenticationType);
-
-            app.UseCookieAuthentication(new CookieAuthenticationOptions());
-
-            app.UseOpenIdConnectAuthentication(
-                new OpenIdConnectAuthenticationOptions
-                {
-
-                    // The `Authority` represents the Microsoft v2.0 authentication and authorization service.
-                    // The `Scope` describes the permissions that your app will need. See https://azure.microsoft.com/documentation/articles/active-directory-v2-scopes/                    
-                    ClientId = appId,
-                    Authority = "https://login.microsoftonline.com/common/v2.0",
-                    PostLogoutRedirectUri = redirectUri,
-                    RedirectUri = redirectUri,
-                    Scope = "openid email profile offline_access " + graphScopes,
-                    TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = false,
-                        // In a real application you would use IssuerValidator for additional checks, 
-                        // like making sure the user's organization has signed up for your app.
-                        //     IssuerValidator = (issuer, token, tvp) =>
-                        //     {
-                        //         if (MyCustomTenantValidation(issuer)) 
-                        //             return issuer;
-                        //         else
-                        //             throw new SecurityTokenInvalidIssuerException("Invalid issuer");
-                        //     },
-                    },
-                    Notifications = new OpenIdConnectAuthenticationNotifications
-                    {
-                        AuthorizationCodeReceived = async (context) =>
-                        {
-                            var code = context.Code;
-                            string signedInUserID = context.AuthenticationTicket.Identity.FindFirst(ClaimTypes.NameIdentifier).Value;
-                            ConfidentialClientApplication cca = new ConfidentialClientApplication(
-                                appId, 
-                                redirectUri,
-                                new ClientCredential(appSecret),
-                                new SessionTokenCache(signedInUserID, context.OwinContext.Environment["System.Web.HttpContextBase"] as HttpContextBase));
-                                string[] scopes = graphScopes.Split(new char[] { ' ' });
-
-                            AuthenticationResult result = await cca.AcquireTokenByAuthorizationCodeAsync(scopes, code);
-                        },
-                        AuthenticationFailed = (context) =>
-                        {
-                            context.HandleResponse();
-                            context.Response.Redirect("/Error?message=" + context.Exception.Message);
-                            return Task.FromResult(0);
-                        }
-                    }
-                });
-        }
-  
-  Класс OWIN Startup (определенный в Startup.cs) вызывает метод **ConfigureAuth** при запуске приложения, а это, в свою очередь, вызывает **app.UseOpenIdConnectAuthentication** для инициализации ПО промежуточного слоя для входа и первоначального запроса маркера. Приложение запрашивает следующие области разрешений:
-
-  - **openid**, **email**, **profile** для входа
-  - **offline\_access** (требуется для получения маркера обновления), **User.Read**, **Mail.Send** для приобретения маркера
-  
-  Объект MSAL **ConfidentialClientApplication** представляет приложение и обрабатывает задачи управления маркером. Он инициализируется с помощью **SessionTokenCache** (пример применения кэша маркера определен в TokenStorage/SessionTokenCache.cs), где хранятся данные маркера Кэш сохраняет маркеры в текущем сеансе HTTP на основе идентификатора пользователя, но рабочее приложение, скорее всего, будет использовать более долговременное хранилище.
-
-Теперь добавим код для примера поставщика проверки подлинности, который разработан таким образом, чтобы его было легко заменить вашим настраиваемым поставщиком проверки подлинности. Классы интерфейса и поставщика уже добавлены в проект.
-
-1. В папке **Helpers** откройте файл SampleAuthProvider.cs.
-
-1. Замените метод **GetUserAccessTokenAsync** следующим кодом, в котором используется MSAL для получения маркера доступа.
-
-        // Get an access token. First tries to get the token from the token cache.
-        public async Task<string> GetUserAccessTokenAsync()
-        {
-            string signedInUserID = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
-            tokenCache = new SessionTokenCache(
-                signedInUserID, 
-                HttpContext.Current.GetOwinContext().Environment["System.Web.HttpContextBase"] as HttpContextBase);
-            //var cachedItems = tokenCache.ReadItems(appId); // see what's in the cache
-
-            ConfidentialClientApplication cca = new ConfidentialClientApplication(
-                appId, 
-                redirectUri,
-                new ClientCredential(appSecret), 
-                tokenCache);
-
-            try
-            {
-                AuthenticationResult result = await cca.AcquireTokenSilentAsync(scopes.Split(new char[] { ' ' }));
-                return result.Token;
-            }
-
-            // Unable to retrieve the access token silently.
-            catch (MsalSilentTokenAcquisitionException)
-            {
-                HttpContext.Current.Request.GetOwinContext().Authentication.Challenge(
-                    new AuthenticationProperties() { RedirectUri = "/" },
-                    OpenIdConnectAuthenticationDefaults.AuthenticationType);
-
-                throw new Exception(Resource.Error_AuthChallengeNeeded);
-            }
-        }
-
-  MSAL проверяет кэш на наличие совпадающего маркера доступа, срок действия которого не истек и не подходит к концу. Если не удается найти действующий маркер, он использует маркер обновления (при наличии действующего маркера) для получения нового маркера доступа. Если не удается получить новый маркер доступа автоматически, MSAL вызывает исключение **MsalSilentTokenAcquisitionException**, указывая, что требуется действие пользователя. 
-
-Далее добавьте код для обработки входа и выхода из пользовательского интерфейса.
-
-1. В папке **Controllers** откройте файл AccountController.cs.  
-
-1. Добавьте следующие методы в класс **AccountController**. Метод **SignIn** подает сигнал ПО промежуточного слоя, что следует отправить запрос о проверке подлинности в Azure AD.
-
-        public void SignIn()
-        {
-            if (!Request.IsAuthenticated)
-            {
-                // Signal OWIN to send an authorization request to Azure.
-                HttpContext.GetOwinContext().Authentication.Challenge(
-                    new AuthenticationProperties { RedirectUri = "/" },
-                    OpenIdConnectAuthenticationDefaults.AuthenticationType);
-            }
-        }
-
-        // Here we just clear the token cache, sign out the GraphServiceClient, and end the session with the web app.  
-        public void SignOut()
-        {
-            if (Request.IsAuthenticated)
-            {
-                // Get the user's token cache and clear it.
-                string userObjectId = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
-
-                SessionTokenCache tokenCache = new SessionTokenCache(userObjectId, HttpContext);
-                tokenCache.Clear(userObjectId);
-            }
-
-            //SDKHelper.SignOutClient();
-
-            // Send an OpenID Connect sign-out request. 
-            HttpContext.GetOwinContext().Authentication.SignOut(
-            CookieAuthenticationDefaults.AuthenticationType);
-            Response.Redirect("/");
-        }
-
-Теперь вы готовы добавить код для вызова Microsoft Graph. 
+URI перенаправления выступает в роли URL-адреса зарегистрированного проекта. Запрошенные [области разрешений](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes) позволяют приложению получить данные профилей пользователей и отправить сообщение электронной почты.
 
 ## <a name="call-microsoft-graph"></a>Вызов Microsoft Graph
 
-В этом шаге вы рассмотрите классы **SDKHelper**, **GraphService** и **HomeController**. 
+На этом шаге вы рассмотрите классы **SDKHelper**, **GraphService** и **HomeController**. 
 
  - Класс **SDKHelper** инициализирует экземпляр **GraphServiceClient** из библиотеки перед каждым вызовом Microsoft Graph. В этом случае маркер доступа добавляется в запрос. 
  - Класс **GraphService** создает и отправляет запросы в Microsoft Graph с помощью библиотеки и обрабатывает отклики.
@@ -296,6 +126,12 @@ URI перенаправления выступает в роли URL-адрес
   Обратите внимание на сегмент **Select**, который требует, чтобы возвращались только элементы **mail** и **userPrinicipalName**. Можно использовать сегменты **Select** и **Filter**, чтобы уменьшить размер полезных данных отклика.
 
 1. Замените часть кода *// SendEmail* следующими методами для создания и отправки сообщения электронной почты.
+
+        // Send an email message from the current user.
+        public async Task SendEmail(GraphServiceClient graphClient, Message message)
+        {
+            await graphClient.Me.SendMail(message, true).Request().PostAsync();
+        }
 
         public async Task<Message> BuildEmailMessage(GraphServiceClient graphClient, string recipients, string subject)
         {
@@ -460,13 +296,14 @@ URI перенаправления выступает в роли URL-адрес
                 return View("Graph");
             }
 
-            // Build the email message.
-            Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
             try
             {
 
                 // Initialize the GraphServiceClient.
                 GraphServiceClient graphClient = SDKHelper.GetAuthenticatedClient();
+
+                // Build the email message.
+                Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
 
                 // Send the email.
                 await graphService.SendEmail(graphClient, message);
@@ -478,37 +315,12 @@ URI перенаправления выступает в роли URL-адрес
             }
             catch (ServiceException se)
             {
-                if (se.Error.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+                if (se.Error.Code == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
                 return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + se.Error.Message });
-           }
+            }
         }
 
-Теперь измените исключение, которое возвращает поставщик проверки подлинности, если требуется действие пользователя.
-
-1. В папке **Helpers** откройте файл SampleAuthProvider.cs.
-
-1. Добавьте следующий оператор **using**.
-
-        using Microsoft.Graph;
-  
-1. В блоке **catch** метода **GetUserAccessTokenAsync** измените возвращаемое исключение, как показано ниже.
-
-        throw new ServiceException(
-            new Error
-            {
-                Code = GraphErrorCode.AuthenticationFailure.ToString(),
-                Message = Resource.Error_AuthChallengeNeeded,
-            });
-
-Наконец, добавьте вызов для выхода клиента. 
-
-1. В папке **Controllers** откройте файл AccountController.cs. 
-
-1. Раскомментируйте приведенную ниже строку.
-
-        SDKHelper.SignOutClient();
-
-Теперь вы готовы к [запуску приложения](#run-the-app).
+Теперь вы можете [запустить приложение](#run-the-app).
 
 ## <a name="run-the-app"></a>Запуск приложения
 1. Нажмите клавишу F5 для сборки и запуска приложения. 

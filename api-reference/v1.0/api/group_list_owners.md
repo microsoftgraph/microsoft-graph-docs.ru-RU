@@ -1,8 +1,10 @@
-# <a name="list-owners"></a>Список владельцев
+Перечисление владельцев
 
 Получение списка владельцев группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы. 
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Group.Read.All* или *Group.ReadWrite.All*
+
+## <a name="prerequisites"></a>Необходимые компоненты
+Для выполнения этого API требуются следующие **разрешения**: *Group.Read.All* или одно из *User.ReadBasic.All*, *User.Read.All* или *User.ReadWrite.All*
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,7 +20,7 @@ GET /groups/{id}/owners
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [user](../resources/user.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -45,7 +47,7 @@ Content-length: 55
 {
   "value": [
     {
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.user"
     }
   ]
 }
