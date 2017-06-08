@@ -12,18 +12,19 @@
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
+
+## <a name="optional-request-parameter"></a>Необязательный параметр запросов
+В URL-адресе запроса предоставьте необязательный параметр запросов.
+
+| Параметр       | Тип    |Описание|
+|:---------------|:--------|:----------|
+|valuesOnly|Boolean|Необязательный параметр. Учитывает только ячейки со значениями (игнорирует форматирование).|
+
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {code}|
-
-
-## <a name="request-body"></a>Тело запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр       | Тип    |Описание|
-|:---------------|:--------|:----------|
-|valuesOnly|boolean|Необязательный параметр. Учитывает только ячейки со значениями (игнорирует форматирование).|
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
@@ -37,13 +38,9 @@ GET /workbook/worksheets/{id|name}/UsedRange
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
 Content-type: application/json
-Content-length: 24
 
-{
-  "valuesOnly": true
-}
 ```
 
 ##### <a name="response"></a>Отклик

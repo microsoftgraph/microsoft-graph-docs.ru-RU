@@ -1,10 +1,21 @@
 # <a name="list-users"></a>Список пользователей
 
-Получение списка, включающего объекты пользователей.
+Получение списка объектов пользователей.
 
-> Примечание. В списке пользователей возвращается только стандартный набор свойств (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). С помощью параметра `$select` можно получить остальные свойства и связи объекта [user](../resources/user.md).
+> Примечание. В списке пользователей возвращается только стандартный набор свойств (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). С помощью `$select` можно получить остальные свойства и связи объекта [user](../resources/user.md). Однако только следующие свойства можно выбрать для отдельных пользователей (например, /v1.0/me?$select=aboutMe), не для коллекции пользователей (например, /v1.0/users?$select=aboutMe):
+>* aboutMe
+>* birthday
+>* hireDate
+>* interests
+>* mySite
+>* pastProjects
+>* preferredName
+>* responsibilities
+>* schools
+>* skills
+>* mailboxSettings
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

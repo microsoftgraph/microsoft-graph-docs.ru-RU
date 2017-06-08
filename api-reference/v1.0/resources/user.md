@@ -10,6 +10,8 @@
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
+|[Перечисление пользователей](../api/user_list.md) |Коллекция объектов [user](user.md)| Получение списка, включающего объекты user.|
+|[Создание пользователя](../api/user_post_users.md) |[user](user.md)| Создание объекта user.|
 |[Получение пользователя](../api/user_get.md) | [user](user.md) |Чтение свойств и связей объекта пользователя.|
 |[Обновление пользователя](../api/user_update.md) | [user](user.md) |Обновление объекта пользователя. |
 |[Удаление пользователя](../api/user_delete.md) | Нет |Удаление объекта пользователя. |
@@ -37,7 +39,7 @@
 |[Список registeredDevices](../api/user_list_registereddevices.md) |Коллекция [directoryObject](directoryobject.md)| Получение устройств, зарегистрированных для пользователя, из свойства навигации registeredDevices.|
 |[Список createdObjects](../api/user_list_createdobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение объектов каталога, созданных пользователем, из свойства навигации createdObjects.|
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.|
-|[Перечисление объектов licenseDetails](../api/user_list_licensedetails.md) |Коллекция объектов [licenseDetails](licensedetails.md)| Получение коллекции объектов licenseDetails.| 
+|[Перечисление licenseDetails](../api/user_list_licensedetails.md) |Коллекция объектов [licenseDetails](licensedetails.md)| Получение коллекции объектов licenseDetails.| 
 |[checkMemberGroups](../api/user_checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
 |[getMemberGroups](../api/user_getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|Коллекция строк| Возвращает все группы и роли каталога, участником которых является пользователь. Это транзитивная проверка. |
@@ -62,6 +64,7 @@
 |birthday|DateTimeOffset|День рождения пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |businessPhones|Коллекция строк|Номера телефонов пользователя. ПРИМЕЧАНИЕ. Несмотря на то что это коллекция строк, в качестве этого свойства можно указать только одно число.|
 |city|String|Город, в котором находится пользователь. Поддерживает параметр $filter.|
+|companyName|String|Название организации, с которой связан пользователь.|
 |country|String|Страна или регион, в котором находится пользователь, например "США" или "Соединенное Королевство". Поддерживает параметр $filter.|
 |department|String|Название отдела, в котором работает пользователь. Поддерживает параметр $filter.|
 |displayName|String|Отображаемое имя пользователя в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.|
@@ -114,20 +117,19 @@
 |диск|[drive](drive.md)|Хранилище OneDrive пользователя. Только для чтения.|
 |drives|Коллекция объектов [drive](drive.md). | Коллекция дисков, доступных для этого пользователя. Только для чтения. |
 |events|Коллекция [Event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
-|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для пользователя. Только для чтения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для пользователя. Только для чтения. Допускается значение null.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Классификация релевантности для сообщений пользователя, основанная на явных обозначениях, переопределяющих заданные релевантность или важность. |
 |mailFolders|Коллекция [MailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
 |manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы и роли каталога, участником которых является пользователь. Только для чтения. Допускается значение null.|
-|messages|Коллекция [Message](message.md)|Сообщения в почтовом ящике или папке. Только для чтения. Допускает значение null.|
+|messages|Коллекция [Message](message.md)|Сообщения в почтовом ящике или папке. Только для чтения. Допускается значение null.|
 |onenote|[OneNote](onenote.md)| Только для чтения.|
 |ownedDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, принадлежащие пользователю. Только для чтения. Допускается значение null.|
 |ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, принадлежащие пользователю. Только для чтения. Допускается значение null.|
 |Фотография|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
-|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускает значение null.|
-|sites|Коллекция объектов [site](site.md) | Коллекция сайтов, доступных для этого пользователя. Только для чтения. |
+|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже этот ресурс представлен в формате JSON.
 
@@ -156,7 +158,6 @@
     "ownedDevices",
     "ownedObjects",
     "photo",
-    "sites",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -226,9 +227,9 @@
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "ownedObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sites": [ {"@odata.type": "microsoft.graph.site" }]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 
 ```

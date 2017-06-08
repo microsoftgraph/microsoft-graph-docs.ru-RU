@@ -1,8 +1,11 @@
+
 # <a name="update-user"></a>Обновление пользователя
 
 Обновление свойств объекта пользователя.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из следующих **областей**: *User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+## <a name="prerequisites"></a>Необходимые условия
+Для применения этого API требуется одна из следующих **областей**: *User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*.
+
+При обновлении свойства passwordProfile необходима область *Directory.AccessAsUser.All*.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

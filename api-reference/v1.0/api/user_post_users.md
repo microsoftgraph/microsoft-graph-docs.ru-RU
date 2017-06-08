@@ -1,8 +1,8 @@
 # <a name="create-user"></a>Создание пользователя
 
 С помощью этого API можно создать пользователя. В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
-## <a name="prerequisites"></a>Необходимые компоненты
-Одна из указанных ниже **областей** требуется для применения этого API. *Directory.ReadWrite*
+## <a name="prerequisites"></a>Необходимые условия
+Для применения этого API требуется одна из следующих **областей**: *User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All*.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -46,7 +46,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "displayName-value",
   "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com",
+  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "password-value"

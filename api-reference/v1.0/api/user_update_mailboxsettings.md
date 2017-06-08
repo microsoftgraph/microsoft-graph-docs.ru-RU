@@ -7,7 +7,7 @@
 **Примечание.** Вам не удастся создать или удалить какие-либо параметры почтового ящика.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется следующая **область**: *Mailboxsettings.ReadWrite*  
+Для применения этого API требуется **область** *MailboxSettings.ReadWrite*.  
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
