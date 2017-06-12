@@ -17,10 +17,11 @@
 ```http
 GET /drives
 GET /me/drives
-GET /groups/{id}/drives
+GET /sites/{site-id}/drives
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
 
 ## <a name="request-body"></a>Тело запроса
