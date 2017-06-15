@@ -1,56 +1,62 @@
 # <a name="group-resource-type"></a>Тип ресурса group
 
-Представляет группу Azure Active Directory, которая может быть группой Office 365, группой безопасности или динамической группой. Наследуется от [directoryObject](directoryobject.md).
+Представляет группу Azure Active Directory (Azure AD), которая может быть группой Office 365, группой безопасности или динамической группой. Наследуется от [directoryObject](directoryobject.md).
 
 Этот ресурс поддерживает:
 
 - добавление собственных данных к настраиваемым свойствам с помощью [расширений](../../../concepts/extensibility_overview.md);
 - отслеживание дополнений, удалений и обновлений с помощью [запроса изменений](../../../concepts/delta_query_overview.md) (функция [delta](../api/user_delta.md)).
 
-> **Microsoft Teams создан на основе групп Office 365**. С Microsoft Teams можно использовать большинство API групп. Для создания группы нельзя использовать [этот API](../api/group_post_groups.md). Дополнительные сведения см. в [документации по Microsoft Teams](teams_api_overview.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
+|**Управление группами**| | |
 |[Создание группы](../api/group_post_groups.md) | [group](group.md) |Создание группы. Это может быть группа Office 365, группа безопасности или динамическая группа.|
 |[Получение группы](../api/group_get.md) | [group](group.md) |Считывание свойств объекта group.|
 |[Список групп](../api/group_list.md) |Коллекция [group](group.md) |Список объектов group и их свойств.|
 |[Обновление группы](../api/group_update.md) | [group](group.md) |Обновление свойств объекта group. |
 |[Удаление группы](../api/group_delete.md) | Нет |Удаление объекта group. |
-|[Добавление члена](../api/group_post_members.md) |Нет| Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты).|
-|[Список членов](../api/group_list_members.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей и групп, являющихся непосредственными членами этой группы, из свойства навигации **members**.|
-|[Удаление члена](../api/group_delete_members.md) | Нет |Удаление члена из группы Office 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
-|[Список memberOf](../api/group_list_memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп, непосредственным членом которых является эта группа, из свойства навигации **memberOf**.|
 |[Добавление владельца](../api/group_post_owners.md) |Нет| Добавление владельца группы путем помещения в свойство навигации **owners** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты).|
 |[Список владельцев](../api/group_list_owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение владельцев группы из свойства навигации **owners**.|
 |[Удаление владельца](../api/group_delete_owners.md) | Нет |Удаление владельца из группы Office 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **owners**.|
+|[Добавление члена](../api/group_post_members.md) |Нет| Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты).|
+|[Список членов](../api/group_list_members.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей и групп, являющихся непосредственными членами этой группы, из свойства навигации **members**.|
+|[Удаление члена](../api/group_delete_members.md) | Нет |Удаление члена из группы Office 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
 |[checkMemberGroups](../api/group_checkmembergroups.md)|Коллекция строк|Проверка данной группы на членство в списке групп. Это транзитивная функция.|
 |[getMemberGroups](../api/group_getmembergroups.md)|Коллекция строк|Возврат всех групп, в которых состоит эта группа. Это транзитивная функция.|
-|[getMemberObjects](../api/group_getmemberobjects.md)|Коллекция строк|Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
+|[getMemberObjects](../api/group_getmemberobjects.md)|Коллекция String|Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
+|[delta](../api/group_delta.md)|Коллекция групп| Получение добавочных изменений для групп. |
+|**Calendar**| | |
 |[Создание события](../api/group_post_events.md) |[Event](event.md)| Создание экземпляра Event путем помещения в коллекцию событий.|
 |[Список событий](../api/group_list_events.md) |Коллекция [Event](event.md)| Получение коллекции объектов Event.|
 |[Список calendarView](../api/group_list_calendarview.md) |Коллекция [Event](event.md)| Получение коллекции событий за указанный интервал времени.|
+|**Беседы**| | |
 |[Создание беседы](../api/group_post_conversations.md) |[Conversation](conversation.md)| Создание экземпляра Conversation путем помещения в коллекцию бесед.|
 |[Список бесед](../api/group_list_conversations.md) |Коллекция [Conversation](conversation.md)| Получение коллекции объектов Conversation.|
 |[Список цепочек бесед](../api/group_list_threads.md) |Коллекция [ConversationThread](conversationthread.md)| Получение всех цепочек группы.|
 |[Список acceptedSenders](../api/group_list_acceptedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка acceptedSenders для данной группы.|
 |[Добавление acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Добавление User или Group в коллекцию acceptedSenders.|
 |[Удаление acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Удаление User или Group из коллекции acceptedSenders.|
-|[Добавление rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Добавление User или Group в коллекцию rejectedSenders.|
 |[Список rejectedSenders](../api/group_list_rejectedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка rejectedSenders для данной группы.|
+|[Добавление rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Добавление User или Group в коллекцию rejectedSenders.|
 |[Удаление rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Удаление новых User или Group из коллекции rejectedSenders.|
-|[addFavorite](../api/group_addfavorite.md)|Нет|Добавление группы в список избранных групп текущего пользователя. Поддерживается только для групп Office 365.|
-|[removeFavorite](../api/group_removefavorite.md)|Нет|Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для групп Office 365.|
-|[subscribeByMail](../api/group_subscribebymail.md)|Нет|Задает для свойства isSubscribedByMail значение **true**. Позволяет текущему пользователю получать беседы по электронной почте. Поддерживается только для групп Office 365.|
-|[unsubscribeByMail](../api/group_unsubscribebymail.md)|Нет|Задает для свойства isSubscribedByMail значение **false**. Отключает получение бесед по электронной почте для текущего пользователя. Поддерживается только для групп Office 365.|
-|[resetUnseenCount](../api/group_resetunseencount.md)|Нет|Сброс значений unseenCount до 0 для всех записей, которые текущий пользователь не просматривал со времени последнего посещения. Поддерживается только для групп Office 365.|
-|[delta](../api/group_delta.md)|Коллекция групп| Получение добавочных изменений для групп. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension_get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
 |**Расширения схемы**| | |
 |[Добавление значений расширений для схемы](../../../concepts/extensibility_schema_groups.md) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
+|**Другие ресурсы групп**| | |
+|[Перечисление фотографий](../api/group_list_photos.md) |Коллекция объектов [profilePhoto](photo.md)| Получение коллекции фотографий профиля для группы.|
+|[Перечисление планов](../api/plannergroup_list_plans.md) |Коллекция объектов [plannerPlan](plannerPlan.md)| Получение планов, принадлежащих группе.|
+|**Параметры пользователя**| | |
+|[addFavorite](../api/group_addfavorite.md)|Нет|Добавление группы в список избранных групп текущего пользователя. Поддерживается только для групп Office 365.|
+|[removeFavorite](../api/group_removefavorite.md)|Нет|Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для групп Office 365.|
+|[Перечисление memberOf](../api/group_list_memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп и административных единиц, непосредственным участником которых является пользователь, из свойства навигации **memberOf**.|
+|[subscribeByMail](../api/group_subscribebymail.md)|Нет|Задает для свойства isSubscribedByMail значение **true**. Позволяет текущему пользователю получать беседы по электронной почте. Поддерживается только для групп Office 365.|
+|[unsubscribeByMail](../api/group_unsubscribebymail.md)|Нет|Задает для свойства isSubscribedByMail значение **false**. Отключает получение бесед по электронной почте для текущего пользователя. Поддерживается только для групп Office 365.|
+|[resetUnseenCount](../api/group_resetunseencount.md)|Нет|Сброс значений unseenCount до 0 для всех записей, которые текущий пользователь не просматривал со времени последнего посещения. Поддерживается только для групп Office 365.|
 
 
 ## <a name="properties"></a>Свойства
@@ -79,20 +85,20 @@
 | Связь | Тип    |Описание|
 |:---------------|:--------|:----------|
 |acceptedSenders|Коллекция [directoryObject](directoryobject.md)|Список пользователей или групп, которым разрешено создавать записи или события календаря в этой группе. Если этот список не пуст, то добавлять записи разрешено только перечисленным в нем пользователям и группам.|
-|календарь|[calendar](calendar.md)|Календарь группы. Только для чтения.|
+|calendar|[calendar](calendar.md)|Календарь группы. Только для чтения.|
 |calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения.|
 |conversations|Коллекция [conversation](conversation.md)|Беседы группы.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Пользователь или приложение, создавшие группу. ПРИМЕЧАНИЕ. Это значение не задается, если пользователь является администратором. Только для чтения.|
-|диск|[drive](drive.md)|Диск группы. Только для чтения.|
-|события|Коллекция [event](event.md)|События в календаре группы.|
+|drive|[drive](drive.md)|Диск группы. Только для чтения.|
+|events|Коллекция [event](event.md)|События в календаре группы.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для группы. Только для чтения. Допускает значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которых состоит эта группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение null.|
-|члены|Коллекция [directoryObject](directoryobject.md)| Пользователи и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп Office 365 и групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается для групп Office 365 и групп безопасности). Допускается значение null.|
+|members|Коллекция [directoryObject](directoryobject.md)| Пользователи и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп Office 365 и групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается для групп Office 365 и групп безопасности). Допускается значение null.|
 |onenote|[OneNote](onenote.md)| Только для чтения.|
-|planner|[Planner](planner.md)| Точка входа в ресурс Planner, который может существовать для единой группы.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Максимальное количество владельцев: 10. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп Office 365 и групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается для групп Office 365 и групп безопасности). Допускается значение null.|
-|Фотография
-|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
+|photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
+|photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
+|planner|[Planner](planner.md)| Точка входа в ресурс Planner, который может существовать для единой группы.|
 |rejectedSenders|Коллекция [directoryObject](directoryobject.md)|Список пользователей или групп, которым запрещено создавать записи или события календаря в этой группе. Допускается значение null.|
 |sites|Коллекция объектов [site](site.md)|Список сайтов SharePoint в этой группе. Для доступа к сайту по умолчанию используйте путь /sites/root.
 |threads|Коллекция [conversationThread](conversationthread.md)| Цепочки бесед группы. Допускается значение null.|

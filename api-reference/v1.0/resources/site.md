@@ -11,12 +11,14 @@
 | [Получение корневого сайта][]    | GET /sites/root                                   |
 | [Получение сайта][]         | GET /sites/{site-id}                              |
 | [Получение сайта по пути][] | GET /sites/{hostname}:/{site-path}                |
+| [Получение сайта для группы][] | GET /groups/{group-id}/sites/root             |
 
 [Получение сайта]: ../api/site_get.md
 [Получение корневого сайта]: ../api/site_get.md
 [Получение сайта по пути]: ../api/site_get.md
+[Получение сайта для группы]: ../api/site_get.md
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление ресурса **site** в формате JSON.
 

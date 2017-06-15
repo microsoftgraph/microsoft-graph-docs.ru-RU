@@ -1,9 +1,8 @@
-# <a name="get-drive"></a>Получение доступа к диску
+# <a name="get-drive"></a>Получение доступа к ресурсу Drive
 
+Получение свойств и отношений ресурса [Drive](../resources/drive.md). Drive — это контейнер верхнего уровня для файловой системы. API Graph позволяет получить доступ к ресурсу Drive для OneDrive, OneDrive для бизнеса и библиотек документов SharePoint.
 
-Получение свойств и отношений ресурса [Drive](../resources/drive.md). Drive — это контейнер верхнего уровня для файловой системы. Интерфейс API Graph позволяет получить доступ к ресурсу Drive для библиотеки документов пользователя OneDrive, OneDrive для бизнеса или SharePoint.
-
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 
 Для применения этого API требуется одна из указанных **областей**:
 
@@ -13,7 +12,7 @@
 
 ## <a name="get-a-users-onedrive"></a>Получение доступа к OneDrive пользователя
 
-Чтобы получить доступ к хранилищу OneDrive для бизнеса или OneDrive пользователя, ваше приложение должно отправить запрос на получение отношения **drive** в ресурсе [User](../resources/user.md).
+Чтобы получить доступ к хранилищу пользователя OneDrive или OneDrive для бизнеса, ваше приложение должно запросить отношение **drive** для ресурса [User](../resources/user.md).
 
 ### <a name="http-request"></a>HTTP-запрос
 
@@ -39,15 +38,15 @@ GET /groups/{idOrUserPrincipalName}/drive
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [Drive](../resources/drive.md) в теле отклика.
+В случае успеха этот метод возвращает код ответа `200 OK` и ресурс [Drive](../resources/drive.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 
@@ -63,9 +62,9 @@ GET /groups/{idOrUserPrincipalName}/drive
 GET https://graph.microsoft.com/v1.0/me/drive
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
