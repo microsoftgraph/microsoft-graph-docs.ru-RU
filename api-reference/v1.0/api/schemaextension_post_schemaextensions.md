@@ -18,7 +18,7 @@ POST /schemaExtensions
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | В заголовке указывается "Bearer &lt;токен&gt;". Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
@@ -37,7 +37,7 @@ POST /schemaExtensions
 При успешном выполнении этот метод возвращает код отклика `201, Created` и объект [schemaExtension](../resources/schemaextension.md) в теле отклика.
 
 ## <a name="example"></a>Пример
-### <a name="request-1"></a>Запрос 1
+### <a name="request-1"></a>Запрос 1
 В первом примере мы создаем уникальную строку со свойством **id** для определения расширения схемы, используя проверенное доменное имя (`graphlearn`) и имя схемы (`courses`). Уникальная строка имеет такой формат: \{_&#65279;доменноеИмя_\}\_\{_&#65279;имяСхемы_\}.
 
 В теле запроса должно быть представление объекта [schemaExtension](../resources/schemaextension.md) в формате JSON.

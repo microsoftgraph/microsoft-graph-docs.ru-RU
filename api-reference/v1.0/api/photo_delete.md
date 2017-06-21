@@ -18,10 +18,10 @@ DELETE /drive/root/createdByUser/photo
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | if-match  | string  | Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.|
-| Authorization  | строка  | Bearer <token>. Обязательный параметр. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте тело запроса для этого метода.
 
 
@@ -39,7 +39,7 @@ DELETE /drive/root/createdByUser/photo
 DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": false

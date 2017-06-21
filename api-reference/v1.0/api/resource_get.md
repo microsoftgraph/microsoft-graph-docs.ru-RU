@@ -2,7 +2,7 @@
 
 Получение двоичных данных объекта [resource](../resources/resource.md) файла или изображения.
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из следующих **областей**:  
+Для выполнения этого API требуется одно из следующих **разрешений**:  
 
 Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All.
 
@@ -17,9 +17,9 @@ GET /groups/{id}/onenote/resources/{id}/content
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | `Bearer <token>` (приложению предоставляется допустимый токен OAuth на основании учетных данных пользователя и пользователя c разрешенным доступом) |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении это метод возвращает код отклика `200 OK` и двоичные данные изображения или файла в теле отклика.
@@ -36,7 +36,7 @@ GET /groups/{id}/onenote/resources/{id}/content
 GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,

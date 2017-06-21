@@ -9,7 +9,7 @@
 Если операция имеет состояние `failed`, свойства `@api.diagnostics` и error предоставляют данные об ошибке.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из следующих **областей**:  
+Для выполнения этого API требуется одно из следующих **разрешений**:  
 
 Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All.  
 
@@ -26,10 +26,10 @@ GET /groups/{id}/onenote/operations/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | `Bearer <token>` (приложению предоставляется допустимый токен OAuth на основании учетных данных пользователя и пользователя c разрешенным доступом) |
-| Accept | string | `application/json` | 
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Accept | строка | `application/json` | 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [onenoteOperation](../resources/onenoteoperation.md) в теле отклика.
@@ -43,8 +43,8 @@ GET /groups/{id}/onenote/operations/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/operations/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireRow
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {code}|
+| Авторизация  | Bearer {токен}. Обязательный. |
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -37,8 +37,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireRow
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/EntireRow
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

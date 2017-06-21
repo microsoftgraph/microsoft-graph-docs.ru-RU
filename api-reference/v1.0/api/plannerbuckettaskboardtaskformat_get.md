@@ -15,9 +15,9 @@ GET /planner/tasks/<id>/bucketTaskBoardFormat
 ### <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Токен носителя.|
+| Авторизация  | Bearer {токен}. Обязательный. |
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Основной текст запросов
 Не указывайте тело запроса для этого метода.
 ### <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код ответа `200 OK` и объект [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) в тексте ответа.
@@ -34,8 +34,8 @@ GET /planner/tasks/<id>/bucketTaskBoardFormat
 ```http
 GET https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/bucketTaskBoardFormat
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -13,7 +13,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ### <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {code}|
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ### <a name="request-body"></a>Текст запроса
@@ -34,7 +34,7 @@ POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotT
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,

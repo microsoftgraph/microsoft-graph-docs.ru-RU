@@ -2,7 +2,7 @@
 
 Получение списка объектов [schemaExtension](../resources/schemaextension.md), созданных любыми приложениями, которыми вы владеете в текущем клиенте (они могут иметь состояние **InDevelopment**, **Available** или **Deprecated**), и всех других расширений схемы, принадлежащих другим приложениям и отмеченных как **Available**. 
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All* или *Directory.AccessAsUser.All*.
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -11,12 +11,12 @@
 GET /schemaExtensions
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>Текст запроса
@@ -34,7 +34,7 @@ GET /schemaExtensions
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphlearn_test'
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

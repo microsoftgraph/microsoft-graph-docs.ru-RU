@@ -11,7 +11,7 @@
 | [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
 | [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
 | [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [contact](../resources/contact.md) (личный контакт) | _Contacts.ReadWrite_ |
 | [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
 
  
@@ -44,10 +44,10 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
-| Authorization | %Токен% носителя|
+| Авторизация | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте тело запроса для этого метода.
 
 
@@ -75,7 +75,7 @@ DELETE https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953c
  
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": false

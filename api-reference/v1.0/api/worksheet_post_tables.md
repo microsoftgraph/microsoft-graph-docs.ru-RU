@@ -15,7 +15,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {code}|
+| Авторизация  | Bearer {токен}. Обязательный. |
 
 
 ## <a name="request-body"></a>Текст запроса

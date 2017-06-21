@@ -12,7 +12,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>Параметры функции
 В URL-адресе запроса укажите перечисленные ниже параметры функции и их значения.
 
-| Параметр       | Тип    |Описание|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |startDateTime|String|Дата и время начала события, для которого настроено напоминание. Значение представлено в формате ISO 8601, например "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|Дата и время окончания события, для которого настроено напоминание. Значение представлено в формате ISO 8601, например "2015-11-08T20:00:00.0000000".|
@@ -21,11 +21,11 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer <token>. Обязательный параметр.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json |
-| Предпочтительно | <Часовой-пояс>. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.| 
+| Prefer | {Часовой пояс}. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.| 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -40,11 +40,11 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
   "name": "user_reminderview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/reminderView?startDateTime=startDateTime-value&endDateTime=endDateTime-value
+GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -57,31 +57,30 @@ Content-type: application/json
 Content-length: 673
 
 {
-  "value": [
-    {
-      "eventId": "eventId-value",
-      "eventStartTime": {
-        "dateTime": "dateTime-value",
-        "timeZone": "timeZone-value"
-      },
-      "eventEndTime": {
-        "dateTime": "dateTime-value",
-        "timeZone": "timeZone-value"
-      },
-      "changeKey": "changeKey-value",
-      "eventSubject": "eventSubject-value",
-      "eventLocation": {
-        "displayName": "displayName-value",
-        "address": {
-          "street": "street-value",
-          "city": "city-value",
-          "state": "state-value",
-          "countryOrRegion": "countryOrRegion-value",
-          "postalCode": "postalCode-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.reminder)",
+    "value": [
+        {
+            "eventId": "AAMkADNsvAAA=",
+            "changeKey": "SuFHwDRP1EeXJUopWbSLlgAAmBvk2g==",
+            "eventSubject": "Plan summer company picnic",
+            "eventWebLink": "https://outlook.office365.com/owa/?itemid=AAMkADNsvAAA%3D&exvsurl=1&path=/calendar/item",
+            "eventStartTime": {
+                "dateTime": "2017-06-09T18:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "eventEndTime": {
+                "dateTime": "2017-06-09T19:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "eventLocation": {
+                "displayName": "Conf Room 3"
+            },
+            "reminderFireTime": {
+                "dateTime": "2017-06-09T17:45:00.0000000",
+                "timeZone": "UTC"
+            }
         }
-      }
-    }
-  ]
+    ]
 }
 ```
 

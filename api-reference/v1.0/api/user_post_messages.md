@@ -17,7 +17,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer <token>. Обязательный параметр.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса

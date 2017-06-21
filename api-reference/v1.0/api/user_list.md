@@ -1,16 +1,16 @@
 # <a name="list-users"></a>Список пользователей
 
-Получение списка объектов пользователей.
+Получение списка объектов User.
 
 > Примечание. В списке пользователей возвращается только стандартный набор свойств (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). С помощью `$select` можно получить остальные свойства и связи объекта [user](../resources/user.md). Однако только следующие свойства можно выбрать для отдельных пользователей (например, /v1.0/me?$select=aboutMe), не для коллекции пользователей (например, /v1.0/users?$select=aboutMe):
->* aboutMe
+>* aboutMe;
 >* birthday
 >* hireDate
 >* interests
 >* mySite
 >* pastProjects
 >* preferredName
->* responsibilities
+>* responsibilities;
 >* schools
 >* skills
 >* mailboxSettings
@@ -23,11 +23,11 @@
 GET /users
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer <token>. Обязательный параметр.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>Текст запроса
@@ -44,8 +44,8 @@ GET /users
 ```http
 GET https://graph.microsoft.com/v1.0/users
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -21,7 +21,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | `Bearer <token>` Действительный токен OAuth, предоставляемый приложению на основе учетных данных пользователя и пользователь, имеющий доступ. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` | 
 
 ## <a name="request-body"></a>Текст запроса

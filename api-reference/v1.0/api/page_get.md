@@ -22,7 +22,7 @@ GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 Параметр запроса `includeIDs=true` используется для [обновления страниц](../api/page_update.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из следующих **областей**:  
+Для выполнения этого API требуется одно из следующих **разрешений**:  
 
 Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All.
 
@@ -34,17 +34,17 @@ GET /users/{id | userPrincipalName}/onenote/pages/{id}
 GET /groups/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) `select` и `expand` для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) `select` и `expand` для настройки ответа.
 
 Отклик, возвращаемый по умолчанию, разворачивает `parentSection` и выбирает свойства `id`, `name` и `self` раздела. Допустимые значения `expand` для страниц: `parentNotebook` и `parentSection`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | `Bearer <token>` (приложению предоставляется допустимый токен OAuth на основании учетных данных пользователя и пользователя c разрешенным доступом) |
-| Accept | string | `application/json` |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Accept | строка | `application/json` |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [page](../resources/page.md) в теле отклика.
@@ -56,7 +56,7 @@ GET /groups/{id}/onenote/pages/{id}
 GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Показанный здесь объект отклика усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

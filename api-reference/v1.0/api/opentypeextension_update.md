@@ -17,7 +17,7 @@
 | [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
 | [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
 | [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [contact](../resources/contact.md) (личный контакт) | _Contacts.ReadWrite_ |
 | [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
  
 ## <a name="http-request"></a>HTTP-запрос
@@ -52,7 +52,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Тело запроса

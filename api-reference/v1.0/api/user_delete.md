@@ -12,9 +12,9 @@ DELETE /users/{id | userPrincipalName}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer <token>. Обязательный параметр.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте тело запроса для этого метода.
 
 
@@ -32,7 +32,7 @@ DELETE /users/{id | userPrincipalName}
 DELETE https://graph.microsoft.com/v1.0/users/mba9a3254-9f18-4209-aeb3-9e42a35b5be4
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true

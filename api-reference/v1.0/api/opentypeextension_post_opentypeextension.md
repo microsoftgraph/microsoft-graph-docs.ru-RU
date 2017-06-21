@@ -66,7 +66,7 @@ POST /users/{id|userPrincipalName}/extensions
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Тело запроса

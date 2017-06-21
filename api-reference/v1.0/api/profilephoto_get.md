@@ -9,8 +9,8 @@
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуется одна из указанных **областей** (в зависимости от типа фотографии):
 
-*    Фотография профиля любого пользователя в клиенте, в том числе пользователя, вошедшего в систему: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*.
-*    Фотография профиля конкретного пользователя, вошедшего в систему: *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*.
+*   Фотография профиля любого пользователя в клиенте, в том числе пользователя, вошедшего в систему: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*.
+*   Фотография профиля конкретного пользователя, вошедшего в систему: *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*.
 * Фотография профиля **группы** - *Group.Read.All; Group.ReadWrite.All*.
 * Фотография **контакта** - *Contacts.ReadWrite*.
 
@@ -38,14 +38,14 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Носитель \<токен\>. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте основной текст запроса для этого метода.
 ## <a name="response-for-getting-the-photo"></a>Отклик для запроса на получение фотографии
 При успешном выполнении этот метод возвращает код отклика `200 OK` и двоичные данные запрашиваемой фотографии.  Если фотография не существует, операция возвратит отклик `404 Not Found`.

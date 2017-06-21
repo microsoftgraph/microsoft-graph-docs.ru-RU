@@ -16,7 +16,7 @@ POST /groups/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | `Bearer <token>` Действительный токен OAuth, предоставляемый приложению на основе учетных данных пользователя и пользователь, имеющий доступ. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -25,7 +25,7 @@ POST /groups/{id}/onenote/sectionGroups/{id}/sections
 В рамках одного и того же уровня иерархии имена разделов должны быть уникальными. Имя должно содержать не более 50 символов, в нем не должно быть следующих знаков:  ?*\/:<>|&#''%~
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [section](../resources/section.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

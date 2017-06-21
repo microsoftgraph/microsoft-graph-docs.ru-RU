@@ -14,7 +14,7 @@ PATCH /subscriptions/{subscriptionId}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer <token>. Обязательный параметр. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [subscription](../resources/subscription.md) в тексте отклика.
@@ -35,7 +35,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -24,7 +24,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:-----------|:------|
-| Авторизация  | Bearer <token>. Обязательный параметр.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса

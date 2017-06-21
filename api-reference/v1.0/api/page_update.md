@@ -16,10 +16,10 @@ PATCH /groups/{id}/onenote/pages/{id}/content
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | `Bearer <token>` (приложению предоставляется допустимый токен OAuth на основании учетных данных пользователя и пользователя c разрешенным доступом) |
-| Content-Type | string | `application/json` |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | строка | `application/json` |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите массив объектов [patchContentCommand](../resources/patchcontentcommand.md), представляющих изменения, вносимые в страницу. Дополнительные сведения и примеры см. в статье <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Обновление страниц OneNote</a>.
 
 ## <a name="response"></a>Отклик
@@ -51,7 +51,7 @@ Content-length: 312
 ]
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true,
