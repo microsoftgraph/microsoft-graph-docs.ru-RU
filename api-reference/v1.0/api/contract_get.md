@@ -2,7 +2,7 @@
 
 Получение свойств и связей объекта [Contract](../resources/contract.md).
 
-### <a name="prerequisites"></a>Необходимые компоненты
+### <a name="prerequisites"></a>Необходимые условия
 
 Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*.
 
@@ -20,9 +20,9 @@ GET /contracts/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt; *(обязательно)* |
+| Авторизация  | Bearer {токен}. Обязательный. |
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Основной текст запросов
 
 Не указывайте тело запроса для этого метода.
 

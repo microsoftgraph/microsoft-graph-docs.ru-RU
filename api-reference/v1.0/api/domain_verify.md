@@ -1,10 +1,10 @@
 # <a name="domain-verify"></a>domain: verify
 
-Проверка владения доменом.
+Проверка права собственности на домен.
 
 > **Важно!** Применяется только к непроверенному домену. Для непроверенного домена свойство isVerified объекта [domain](../resources/domain.md) будет иметь значение false.
 
-### <a name="prerequisites"></a>Необходимые компоненты
+### <a name="prerequisites"></a>Необходимые условия
 
 Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All* или *Domain.ReadWrite.All*.
 
@@ -21,7 +21,7 @@ POST /domains/{id}/verify
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt; *(обязательно)*|
+| Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
 ### <a name="request-body"></a>Текст запроса

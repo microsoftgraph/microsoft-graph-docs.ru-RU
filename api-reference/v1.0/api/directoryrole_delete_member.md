@@ -18,9 +18,9 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt; *(обязательно)* |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 
 Не указывайте тело запроса для этого метода.
 
@@ -44,7 +44,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryroles/{id}/members/{id}/$ref
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true

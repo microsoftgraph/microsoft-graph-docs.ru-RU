@@ -6,7 +6,7 @@
 > - Вам не удастся восстановить удаленные домены.<br />
 > - Вам не удастся удалить домен, если какие-либо ресурсы или объекты все еще зависят от него. Вы можете найти все зависимые ресурсы с помощью API [перечисления domainNameReferences](domain_list_domainnamereferences.md).
 
-### <a name="prerequisites"></a>Необходимые компоненты
+### <a name="prerequisites"></a>Необходимые условия
 
 Для применения этого API требуется одна из следующих **областей**: *Domain.ReadWrite.All* или *Directory.AccessAsUser.All*.
 
@@ -22,7 +22,7 @@ DELETE /domains/{id}
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt; *(обязательно)* |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
 ### <a name="request-body"></a>Текст запроса

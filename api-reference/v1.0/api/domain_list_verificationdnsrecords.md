@@ -26,7 +26,7 @@ GET /domains/{id}/verificationDnsRecords
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt; *(обязательно)* |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
 ### <a name="request-body"></a>Текст запроса

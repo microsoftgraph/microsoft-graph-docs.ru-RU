@@ -2,7 +2,7 @@
 
 Получение списка объектов [directoryObject](../resources/directoryobject.md) со ссылкой на домен. Возвращаемый список содержит все объекты каталога, у которых есть зависимости от домена.
 
-### <a name="prerequisites"></a>Необходимые компоненты
+### <a name="prerequisites"></a>Необходимые условия
 
 Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All* или *Domain.ReadWrite.All*.
 
@@ -22,9 +22,9 @@ GET /domains/{id}/domainNameReferences
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt; *(обязательно)* |
+| Авторизация  | Bearer {токен}. Обязательный. |
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Основной текст запросов
 
 Не указывайте тело запроса для этого метода.
 
