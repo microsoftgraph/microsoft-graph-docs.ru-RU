@@ -5,8 +5,11 @@
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуется одна из указанных **областей**:
 
-  * Files.Read.All
-  * Files.ReadWrite.All
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
+
 
 **Примечание.** Даже при успешной отправке запроса /sharedWithMe в областях Files.Read или Files.ReadWrite некоторые файлы могут отсутствовать. Кроме того, если одна из областей **All** отсутствует, общие элементы. возвращаемые этим API будут недоступны.
 

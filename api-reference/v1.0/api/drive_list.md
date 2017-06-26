@@ -7,8 +7,11 @@
 Для применения этого API требуется одна из указанных **областей**:
 
 * Files.Read
-* Files.ReadWrite
+* Files.ReadWrite.
+* Files.Read.All
+* Files.ReadWrite.All
 * Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -22,7 +25,7 @@ GET /sites/{site-id}/drives
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-body"></a>Тело запроса
 

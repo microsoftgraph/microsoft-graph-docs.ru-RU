@@ -6,7 +6,9 @@
 
 Для применения этого API требуется одна из указанных **областей**:
 
-  * Files.ReadWrite
+* Files.ReadWrite.
+* Files.ReadWrite.All
+* Shares.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +57,7 @@ Content-type: application/json
 ```
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,

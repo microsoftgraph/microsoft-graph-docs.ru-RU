@@ -11,8 +11,13 @@
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуется одна из указанных **областей**:
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite.
+* Files.Read.All
+* Files.ReadWrite.All
+* Files.ReadWrite.AppFolder
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -26,10 +31,10 @@ GET /me/drive/special/{name}
 
 | Имя          | Тип   | Описание               |
 |:--------------|:-------|:--------------------------|
-| Authorization | строка | Bearer {токен}. Обязательный. |
+| Authorization | string | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

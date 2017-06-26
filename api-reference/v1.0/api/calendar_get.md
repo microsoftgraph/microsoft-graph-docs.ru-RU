@@ -29,9 +29,9 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [calendar](../resources/calendar.md) в тексте отклика.
@@ -55,14 +55,21 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+    "id": "AAMkAGI2TGuLAAA=",
+    "name": "Calendar",
+    "color": "auto",
+    "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "canEdit":true,
+    "owner":{
+        "name":"Fanny Downs",
+        "address":"fannyd@adatum.onmicrosoft.com"
+    }
 }
 ```
 

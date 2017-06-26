@@ -5,7 +5,10 @@
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**:
 
-  * Files.ReadWrite
+* Files.ReadWrite.
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +47,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,7 +5,9 @@
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуется одна из указанных **областей**:
 
-  * Files.ReadWrite
+* Files.ReadWrite.
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-запрос
 

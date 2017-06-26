@@ -42,9 +42,9 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type   | строка  | application/json | 
-| Предпочтительно | строка | <Time zone>. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.|
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type   | string  | application/json | 
+| Предпочтительно | string | outlook.timezone="Стандартное восточное время США". Необязательный. С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если этот заголовок не задан, ответ возвращается в формате UTC. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
