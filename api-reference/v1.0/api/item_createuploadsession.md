@@ -10,7 +10,11 @@
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуется одна из указанных **областей**:
 
-  * Files.ReadWrite
+* Files.ReadWrite.
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
+> **Примечание.** Разрешение приложения Files.ReadWrite.All пока не поддерживается в этом API. Полная поддержка ожидается в скором времени. 
 
 ## <a name="create-an-upload-session"></a>Создание сеанса отправки
 

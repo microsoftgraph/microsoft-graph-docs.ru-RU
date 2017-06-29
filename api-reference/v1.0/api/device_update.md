@@ -2,8 +2,8 @@
 
 Обновление свойств зарегистрированного устройства.
 
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных ниже **областей**. *Directory.AccessAsUser.All* или *Device.ReadWrite.All*
+## <a name="prerequisites"></a>Необходимые условия
+Для выполнения этого API требуется одно из следующих **разрешений**: *Device.ReadWrite.All* или *Directory.AccessAsUser.All* 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -15,7 +15,7 @@ PATCH /devices/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Укажите в тексте запроса значения обновляемых свойств объекта [device](../resources/device.md).

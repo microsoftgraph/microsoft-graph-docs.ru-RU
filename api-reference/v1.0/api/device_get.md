@@ -2,7 +2,7 @@
 
 Получение свойств и связей объекта устройства.
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных ниже **областей**. *Directory.Read.All*, *Directory.ReadWrite.All*, *Directory.AccessAsUser.All* или *Device.ReadWrite.All*
+Для выполнения этого API требуется одно из следующих **разрешений**: *Device.ReadWrite.All*, *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -17,9 +17,9 @@ GET /devices/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [device](../resources/device.md) в тексте отклика.

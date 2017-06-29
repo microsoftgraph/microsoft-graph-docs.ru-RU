@@ -7,8 +7,11 @@
 Для применения этого API требуется одна из указанных **областей**:
 
 * Files.Read
-* Files.ReadWrite
+* Files.ReadWrite.
+* Files.Read.All
+* Files.ReadWrite.All
 * Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="get-a-users-onedrive"></a>Получение доступа к OneDrive пользователя
 

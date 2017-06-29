@@ -80,9 +80,9 @@ Content-Type: application/json
 }
 ```
 
-Свойства changeType, notificationUrl, resource и expirationDateTime являются обязательными. Определения и значения свойств представлены в [описании типа ресурса subscription](subscription.md). Хотя свойство clientState является необязательным, в нашем процессе обработки уведомлений рекомендуется указать его.
+Необходимы свойства `changeType`, `notificationUrl`, `resource` и `expirationDateTime`. Определения и значения свойств представлены в [описании типа ресурса subscription](subscription.md). Хотя свойство `clientState` необязательное, рекомендуем указать его в нашем процессе обработки уведомлений.
 
-В случае успешного выполнения Microsoft Graph возвращает код `200 OK` и объект [subscription](subscription.md) в теле отклика.
+В случае успешного выполнения Microsoft Graph возвращает код `201 Created` и объект [subscription](subscription.md) в теле отклика.
 
 # <a name="renewing-a-subscription"></a>Возобновление подписки
 
@@ -118,8 +118,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 Объект уведомления содержит следующие свойства:
 
-* id — идентификатор подписки, к которой относится уведомление.
-* expirationDateTime — время окончания срока действия для подписки.
+* subscriptionId — идентификатор подписки, к которой относится уведомление.
+* subscriptionExpirationDateTime — время окончания срока действия для подписки.
 * clientState — свойство clientState, указанное в запросе на подписку.
 * changeType — тип события, вызвавшего уведомление. Примеры: *created* при получении сообщения или *updated*, когда сообщение помечается как прочитанное.
 * resource — URI ресурса относительно `https://graph.microsoft.com`. 
@@ -127,7 +127,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
   * @odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект.
   * @odata.id — идентификатор OData для объекта.
   * @odata.etag — HTTP-тег сущности, представляющий версию объекта.
-  * Id — идентификатор объекта.
+  * id — идентификатор объекта.
 
 
 > Примечание. Значение Id, указанное в resourceData, действительно в момент добавления уведомления в очередь. Некоторые действия, например перемещение сообщения в другую папку, могут привести к изменению идентификатора ресурса. 
@@ -140,8 +140,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 {
   "value":[
   {
-    "id":"<subscription_guid>",
-    "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
+    "subscriptionId":"<subscription_guid>",
+    "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
     "clientState":"SecretClientState",
     "changeType":"Created",
     "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
@@ -150,7 +150,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
       "@odata.type":"#Microsoft.Graph.Message",
       "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-      "Id":"<long_id_string>"
+      "id":"<long_id_string>"
     }
   }
   ]

@@ -3,7 +3,7 @@
 Создание и регистрация нового устройства в организации.
 
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных ниже **областей**. *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
+Для выполнения этого API требуется одно из следующих **разрешений**: *Device.ReadWrite.All* или *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -14,7 +14,7 @@ POST /devices
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | application/json |
 
 ## <a name="request-body"></a>Текст запроса
