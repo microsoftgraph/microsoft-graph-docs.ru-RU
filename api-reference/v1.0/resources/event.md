@@ -39,7 +39,7 @@
 
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attendees|Коллекция объектов [attendee](attendee.md)|Коллекция участников события.|
 |body|[itemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
@@ -76,7 +76,7 @@
 |webLink|String|URL-адрес для открытия события в Outlook Web App.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 ## <a name="relationships"></a>Отношения
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileAttachment.md) и [itemAttachment](itemAttachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
 |календарь|[calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|
@@ -142,7 +142,10 @@
 
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "instances": [ { "@odata.type": "microsoft.graph.event" }]
+  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
+  "instances": [ { "@odata.type": "microsoft.graph.event" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 
 }
 

@@ -25,7 +25,7 @@
 
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |childFolderCount|Int32|Количество непосредственных дочерних элементов mailFolder в текущем элементе mailFolder.|
 |displayName|Строка|Отображаемое имя элемента mailFolder.|
@@ -44,7 +44,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |childFolders|Коллекция объектов [MailFolder](mailfolder.md)|Коллекция дочерних папок в элементе mailFolder.|
 |messages|Коллекция объектов [Message](message.md)|Коллекция сообщений в элементе mailFolder.|
@@ -75,14 +75,19 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
   "id": "string (identifier)",
   "parentFolderId": "string",
   "totalItemCount": 1024,
-  "unreadItemCount": 1024
+  "unreadItemCount": 1024,
+
+  "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 
 ```
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](../../../concepts/delta_query_overview.md)
+- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](../../../concepts/delta_query_overview.md)
 - [Получение добавочных изменений сообщений в папке](../../../concepts/delta_query_messages.md)
 
 
