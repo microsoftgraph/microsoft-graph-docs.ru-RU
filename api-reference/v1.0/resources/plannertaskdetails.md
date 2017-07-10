@@ -1,9 +1,11 @@
-# <a name="plannertaskdetails-resource-type"></a>Тип ресурса plannerTaskDetails
+<a id="plannertaskdetails-resource-type" class="xliff"></a>
+# Тип ресурса plannerTaskDetails
 
 Ресурс **plannerTaskDetails** представляет дополнительные сведения о задаче. С каждым объектом [task](plannertask.md) связан объект details.
 
 
-### <a name="methods"></a>Методы
+<a id="methods" class="xliff"></a>
+## Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
@@ -11,21 +13,23 @@
 |[Обновление](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Обновление объекта **plannerTaskDetails**. |
 
 
-### <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+<a id="properties" class="xliff"></a>
+## Свойства
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
 |description|Строка|Описание задачи.|
 |id|String| Только для чтения. Идентификатор сведений о задаче. Идентификатор состоит из 28 символов и чувствителен к регистру. [Проверка формата](planner_identifiers_disclaimer.md) выполняется для службы.|
-|previewType|строка|Устанавливает тип эскиза для задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.|
+|previewType|string|Устанавливает тип эскиза задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
-### <a name="relationships"></a>Отношения
+<a id="relationships" class="xliff"></a>
+## Отношения
 Нет
 
 
-### <a name="json-representation"></a>Представление JSON
-
+<a id="json-representation" class="xliff"></a>
+## Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

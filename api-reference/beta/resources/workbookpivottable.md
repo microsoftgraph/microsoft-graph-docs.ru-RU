@@ -1,28 +1,32 @@
-# <a name="pivottable-resource-type"></a>Тип ресурсов pivotTable
+<a id="pivottable-resource-type" class="xliff"></a>
+# Тип ресурсов pivotTable
 
 Представляет сводную таблицу Excel.
 
-### <a name="methods"></a>Методы
+<a id="methods" class="xliff"></a>
+## Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение workbookPivotTable](../api/workbookpivottable_get.md) | [workbookPivotTable](workbookpivottable.md) |Чтение свойств и связей объекта workbookPivotTable.|
-|[Refresh](../api/workbookpivottable_refresh.md)|Нет|Обновляет сводную таблицу.    |
+|[Refresh](../api/workbookpivottable_refresh.md)|Нет|Обновляет сводную таблицу. |
 |[Refreshall](../api/workbookpivottable_refreshall.md)|Нет|Обновляет все таблицы на заданном листе. Обратите внимание, что это действие доступно только в коллекции сводных таблиц.|
 
-### <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+<a id="properties" class="xliff"></a>
+## Свойства
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Идентификатор сводной таблицы.    Только для чтения.|
+|id|String| Идентификатор сводной таблицы.   Только для чтения.|
 |name|String|Имя сводной таблицы.    |
 
-### <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+<a id="relationships" class="xliff"></a>
+## Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.    |
+|worksheet|[worksheet](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
 
-### <a name="json-representation"></a>Представление JSON
-
+<a id="json-representation" class="xliff"></a>
+## Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
