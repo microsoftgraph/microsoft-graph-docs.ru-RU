@@ -1,10 +1,14 @@
-# <a name="plannerplandetails-resource-type"></a>Тип ресурса plannerPlanDetails
+<a id="plannerplandetails-resource-type" class="xliff"></a>
+
+# Тип ресурса plannerPlanDetails
 
 
 Ресурс **plannerPlanDetails** представляет дополнительные сведения о плане. С каждым объектом [plan](plannerplan.md) связан объект details.
 
 
-### <a name="methods"></a>Методы
+<a id="methods" class="xliff"></a>
+
+## Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
@@ -12,19 +16,24 @@
 |[Обновление](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)    |Обновление объекта **plannerPlanDetails**. |
 
 
-### <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+<a id="properties" class="xliff"></a>
+
+## Свойства
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Объект с описаниями шести категорий, которые могут быть связаны с задачами в плане.|
 |id|String| Только для чтения. Идентификатор сведений о плане. Идентификатор состоит из 28 символов и чувствителен к регистру. [Проверка формата](planner_identifiers_disclaimer.md) выполняется для службы.|
 |sharedWith|[plannerUserIds](planneruserids.md)|Список идентификаторов пользователей, у которых есть доступ к этому плану. Если вы используете Группы Office 365, то для предоставления доступа к плану [группы](group.md) используйте API Групп. Вы также можете добавить в эту коллекцию существующих членов группы, но они смогут получить доступ к плану, принадлежащему группе, и без этого. |
 
-### <a name="relationships"></a>Отношения
+<a id="relationships" class="xliff"></a>
+
+## Связи
 Нет
 
 
-### <a name="json-representation"></a>Представление JSON
+<a id="json-representation" class="xliff"></a>
 
+## Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

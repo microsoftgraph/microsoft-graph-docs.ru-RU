@@ -1,18 +1,24 @@
-# <a name="plannertask-resource-type"></a>Тип ресурса plannerTask
+<a id="plannertask-resource-type" class="xliff"></a>
+
+# Тип ресурса plannerTask
 
 Ресурс **plannerTask** представляет задачу планировщика в Office 365. Задача планировщика содержится в [плане](plannerplan.md) и может быть назначена [сегменту](plannerbucket.md) в плане. Каждый объект задачи имеет объект [details](plannertaskdetails.md), который может содержать дополнительные сведения о задаче. Дополнительные сведения об отношениях между группой, планом и задачей см. в [этом обзоре](planner_overview.md).
 
 
-### <a name="methods"></a>Методы
+<a id="methods" class="xliff"></a>
+
+## Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта plannerTask](../api/plannertask_get.md) | [plannerTask](plannertask.md) |Чтение свойств и отношений объекта **plannerTask**.|
-|[Обновление](../api/plannertask_update.md) | [plannerTask](plannertask.md)    |Обновление объекта **plannerTask**. |
+|[Обновление](../api/plannertask_update.md) | [plannerTask](plannertask.md) |Обновление объекта **plannerTask**. |
 |[Удаление](../api/plannertask_delete.md) | Нет |Удаление объекта **plannerTask**. |
 
-### <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+<a id="properties" class="xliff"></a>
+
+## Свойства
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|Количество элементов контрольного списка со значением false, указывающим, что задача не выполнена.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|Категории, к которым применена задача. Возможные значения см. [здесь](plannerappliedcategories.md).|
@@ -31,21 +37,24 @@
 |orderHint|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner_order_hint_format.md).|
 |percentComplete|Int32|Процент выполнения задачи. Если установлено значение `100`, задача считается выполненной. |
 |planId|Строка|Идентификатор плана, к которому относится задача.|
-|previewType|string|Устанавливает тип предварительного просмотра задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|previewType|строка|Устанавливает тип предварительного просмотра задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Количество внешних ссылок на задачу.|
 |startDateTime|DateTimeOffset|Дата и время начала задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |title|Строка|Название задачи.|
 
-### <a name="relationships"></a>Отношения
-| Связь | Тип    |Описание|
+<a id="relationships" class="xliff"></a>
+
+## Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Только для чтения. Допускает значение null. Используется для правильного отображения задачи на доске задач при сортировке по свойству assignedTo.|
 |bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Только для чтения. Допускает значение null. Используется для правильного отображения задачи на доске задач при сортировке по сегменту.|
 |details|[plannerTaskDetails](plannertaskdetails.md)| Только для чтения. Допускает значение null. Дополнительные сведения о задаче.|
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Только для чтения. Допускает значение null. Используется для правильного отображения задачи на доске задач при сортировке по ходу выполнения.|
 
-### <a name="json-representation"></a>Представление в формате JSON
+<a id="json-representation" class="xliff"></a>
 
+## Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

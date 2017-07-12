@@ -1,15 +1,21 @@
-# <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
+<a id="extensionschemaproperty-resource-type" class="xliff"></a>
+
+# Тип ресурса extensionSchemaProperty
 
 Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения [schemaExtension](schemaextension.md).
 
 
-### <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+<a id="properties" class="xliff"></a>
+
+## Свойства
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|String| Имя строго типизированного свойства, определенного в качестве части расширения схемы.|
-|type|String| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
+|type|Строка| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
 
-#### <a name="supported-property-data-types"></a>Поддерживаемые типы данных свойств 
+<a id="supported-property-data-types" class="xliff"></a>
+
+#### Поддерживаемые типы данных свойств 
 При определении свойства в расширении схемы поддерживаются следующие типы данных:
 
 | Тип свойства | Примечания |
@@ -20,8 +26,9 @@
 | Целое число | 32-разрядное значение. Не поддерживается для ресурсов message, event и post. |
 | String | Не более 256 символов. |
 
-### <a name="json-representation"></a>Представление в формате JSON
+<a id="json-representation" class="xliff"></a>
 
+## Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
