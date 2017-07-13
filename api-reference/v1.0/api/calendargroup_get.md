@@ -1,37 +1,4 @@
-# <a name="get-calendargroup"></a>Получение объекта calendarGroup
-
-Получение свойств и связей, принадлежащих объекту группы календарей.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Calendars.Read*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-Любой объект [calendarGroup](../resources/calendargroup.md) пользователя.
-```http
-GET /me/calendarGroups/{id}
-GET /users/{id | userPrincipalName}/calendarGroups/{id}
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [calendarGroup](../resources/calendargroup.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_calendargroup"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="ab42c-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="ab42c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

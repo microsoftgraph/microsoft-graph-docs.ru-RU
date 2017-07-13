@@ -1,40 +1,13 @@
-<a id="plannerplandetails-resource-type" class="xliff"></a>
+<span data-ttu-id="89c53-p103">Список идентификаторов пользователей, у которых есть доступ к этому плану. Если вы используете Группы Office 365, то для предоставления доступа к плану [группы](group.md) используйте API Групп. Вы также можете добавить в эту коллекцию существующих членов группы, но они смогут получить доступ к плану, принадлежащему группе, и без этого.</span><span class="sxs-lookup"><span data-stu-id="89c53-p103">Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>|Список идентификаторов пользователей, у которых есть доступ к этому плану. Если вы используете Группы Office 365, то для предоставления доступа к плану [группы](group.md) используйте API Групп. Вы также можете добавить в эту коллекцию существующих членов группы, но они смогут получить доступ к плану, принадлежащему группе, и без этого. |
 
-# Тип ресурса plannerPlanDetails
-
-
-Ресурс **plannerPlanDetails** представляет дополнительные сведения о плане. С каждым объектом [plan](plannerplan.md) связан объект details.
-
-
-<a id="methods" class="xliff"></a>
-
-## Методы
-
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Получение объекта plannerPlanDetails](../api/plannerplandetails_get.md) | [plannerPlanDetails](plannerplandetails.md) |Чтение свойств и отношений объекта **plannerPlanDetails**.|
-|[Обновление](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)    |Обновление объекта **plannerPlanDetails**. |
-
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Объект с описаниями шести категорий, которые могут быть связаны с задачами в плане.|
-|id|String| Только для чтения. Идентификатор сведений о плане. Идентификатор состоит из 28 символов и чувствителен к регистру. [Проверка формата](planner_identifiers_disclaimer.md) выполняется для службы.|
-|sharedWith|[plannerUserIds](planneruserids.md)|Список идентификаторов пользователей, у которых есть доступ к этому плану. Если вы используете Группы Office 365, то для предоставления доступа к плану [группы](group.md) используйте API Групп. Вы также можете добавить в эту коллекцию существующих членов группы, но они смогут получить доступ к плану, принадлежащему группе, и без этого. |
-
+## <span data-ttu-id="89c53-132">Связи</span><span class="sxs-lookup"><span data-stu-id="89c53-132">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-
-## Связи
-Нет
+<span data-ttu-id="89c53-133">Нет</span><span class="sxs-lookup"><span data-stu-id="89c53-133">None</span></span>
 
 
+## <span data-ttu-id="89c53-134">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="89c53-134">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="89c53-135">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="89c53-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

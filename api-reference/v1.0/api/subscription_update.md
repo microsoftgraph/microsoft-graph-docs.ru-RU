@@ -1,26 +1,13 @@
-# <a name="update-subscription"></a>Обновление подписки
+<span data-ttu-id="cfec9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cfec9-p102">Bearer token. Required.</span></span>  | Bearer {токен}. Обязательный. |
 
-Возобновление подписки путем увеличения срока действия.
-
-Даты окончания срока действия для подписок на ресурсы задаются отдельными типами ресурсов.  Чтобы не пропускать уведомления, следует продлевать подписки задолго до конечной даты.  Отдельные даты окончания срока действия представлены в описании ресурса [subscription](../resources/subscription.md).
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных ниже **областей** (в зависимости от целевого ресурса): *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* или *Files.ReadWrite.All*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /subscriptions/{subscriptionId}
-```
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [subscription](../resources/subscription.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="cfec9-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="cfec9-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="cfec9-118">В случае успеха этот метод возвращает код отклика `200 OK` и объект [subscription](../resources/subscription.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cfec9-118">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <span data-ttu-id="cfec9-119">Пример</span><span class="sxs-lookup"><span data-stu-id="cfec9-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="cfec9-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="cfec9-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="cfec9-121">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cfec9-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -34,8 +21,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="cfec9-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="cfec9-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="cfec9-123">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="cfec9-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

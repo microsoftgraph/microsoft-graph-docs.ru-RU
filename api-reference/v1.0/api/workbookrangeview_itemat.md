@@ -1,44 +1,4 @@
-# <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
-
-
-### <a name="prerequisites"></a>Обязательные условия
-Для применения этого API требуются указанные **области**:
-### <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/itemAt(index={n})
-
-```
-### <a name="request-headers"></a>Заголовки запросов
-| Имя       | Описание|
-|:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
-
-### <a name="request-body"></a>Текст запроса
-В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|index|Int32|Индекс элемента, который нужно вернуть.|
-
-### <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200, OK` и объект [workbookRangeView](../resources/workbookrangeview.md) в теле отклика.
-
-### <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "workbookrangeview_itemat"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/itemAt(index=0)
-
-```
-
-##### <a name="response"></a>Ответ
+<span data-ttu-id="6d836-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="6d836-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

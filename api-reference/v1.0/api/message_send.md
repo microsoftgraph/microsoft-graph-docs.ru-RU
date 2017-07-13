@@ -1,29 +1,12 @@
-# <a name="message-send"></a>message: send
-
-Отправка сообщения из папки черновиков. Черновик сообщения может быть предназначен для нового сообщения, ответа, ответа всем пользователям или пересылки. Затем сообщение сохраняется в папке "Отправленные".
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.Send*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/send
-POST /users/{id | userPrincipalName}/messages/{id}/send
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="3af15-p103">В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="3af15-p103">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="3af15-120">Пример</span><span class="sxs-lookup"><span data-stu-id="3af15-120">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="3af15-121">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="3af15-121">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="3af15-122">Запрос</span><span class="sxs-lookup"><span data-stu-id="3af15-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="3af15-123">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3af15-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_send"
@@ -32,9 +15,11 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
 
-##### <a name="response"></a>Отклик
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="3af15-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="3af15-124">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="3af15-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="3af15-125">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="3af15-126">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="3af15-126">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

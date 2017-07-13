@@ -1,47 +1,4 @@
-# <a name="create-chartpoints"></a>Создание объекта ChartPoints
-
-С помощью этого API можно создать объект ChartPoints.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются указанные **области**: 
-
-    * Files.ReadWrite.
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
-
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Описание|
-|:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-
-
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [ChartPoints](../resources/chartpoint.md) в формате JSON.
-
-
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [ChartPoints](../resources/chartpoint.md) в тексте отклика.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "create_chartpoints_from_chartseries"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
-Content-type: application/json
-Content-length: 3
-
-{
-}
-```
-Предоставьте в тексте запроса описание объекта [ChartPoints](../resources/chartpoint.md) в формате JSON.
-##### <a name="response"></a>Отклик
+<span data-ttu-id="d5403-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="d5403-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

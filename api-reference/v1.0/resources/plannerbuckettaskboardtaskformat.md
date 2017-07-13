@@ -1,37 +1,13 @@
-<a id="plannerbuckettaskboardtaskformat-resource-type" class="xliff"></a>
+<span data-ttu-id="29cfa-p103">Указание, используемое для расположения задач в представлении сегментов на доске задач. Используемый формат описан [здесь](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="29cfa-p103">Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Указание, используемое для расположения задач в представлении сегментов на доске задач. Используемый формат описан [здесь](planner_order_hint_format.md).|
 
-# Тип ресурса plannerBucketTaskBoardTaskFormat
-
-Ресурс **plannerBucketTaskBoardTaskFormat** представляет информацию, используемую для правильного отображения задачи в представлении Buckets на доске задач (представление, предусматривающее упорядочивание по задачам в сегментах, которым назначены). С каждым объектом [task](plannertask.md) связан один объект **plannerBucketTaskBoardTaskFormat**.
-
-
-<a id="methods" class="xliff"></a>
-
-## Методы
-
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Получение plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Считывание свойств и связей объекта **plannerBucketTaskBoardTaskFormat**.|
-|[Обновление](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Обновление объекта **plannerBucketTaskBoardTaskFormat**. |
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner_identifiers_disclaimer.md) проводится для службы.|
-|orderHint|String|Указание, используемое для расположения задач в представлении сегментов на доске задач. Используемый формат описан [здесь](planner_order_hint_format.md).|
-
+## <span data-ttu-id="29cfa-128">Связи</span><span class="sxs-lookup"><span data-stu-id="29cfa-128">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-
-## Связи
-Нет
+<span data-ttu-id="29cfa-129">Нет</span><span class="sxs-lookup"><span data-stu-id="29cfa-129">None</span></span>
 
 
+## <span data-ttu-id="29cfa-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="29cfa-130">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="29cfa-131">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="29cfa-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

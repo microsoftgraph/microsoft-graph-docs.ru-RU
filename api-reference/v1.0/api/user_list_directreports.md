@@ -1,37 +1,4 @@
-# <a name="list-directreports"></a>Список directReports
-
-Получение подчиненных пользователя. Возвращает пользователей и контакты, для которых данный пользователь назначен руководителем.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *User.Read; User.ReadWrite; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | userPrincipalName}/directReports
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение|
-|:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json  | 
-
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_directreports"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/directReports
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="47bf1-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="47bf1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

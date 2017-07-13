@@ -1,43 +1,14 @@
-# <a name="move-a-driveitem"></a>Перемещение ресурса DriveItem
-
-Чтобы переместить ресурс DriveItem в новый родительский элемент, веб-приложению требуется обновить элемент **parentReference** из DriveItem. Это особый случай, касающийся метода [Обновление](item_update.md). Приложение может объединять процедуры перемещения элемента в новый контейнер и обновления других свойств элемента в один запрос.
-
-С помощью этого запроса нельзя перемещать элементы между [исками](../resources/drive.md).
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**:
-
-* Files.ReadWrite.
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
-
-## <a name="http-request"></a>HTTP-запрос
-
-```http
-PATCH /me/drive/items/{item-id}
-PATCH /me/drive/root:/{item-path}
-PATCH /drives/{drive-id}/items/{item-id}
-PATCH /groups/{group-id}/drive/{item-id}
-```
-
-## <a name="request-headers"></a>Заголовки запросов
-
-| Имя          | Тип   | Описание                                                                                                                                                         |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом eTag папки, то возвращается отклик `412 Precondition Failed`. |
-
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте новое значение для поля свойства **parentReference**. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в другие значения свойств. Чтобы производительность была максимальной, не следует включать существующие значения, которые не изменились.
+<span data-ttu-id="a6c20-p103">**Примечание.** При перемещении элементов в корень OneDrive не следует использовать синтаксис `"id:" "root"`. Нужно использовать действительный идентификатор корневой папки или путь `{"path": "/drive/root"}` для родительской ссылки.</span><span class="sxs-lookup"><span data-stu-id="a6c20-p103">**Note:** When moving items to the root of a OneDrive you cannot use the `"id:" "root"` syntax. You either need to use the real ID of the root folder, or use `{"path": "/drive/root"}` for the parent reference.</span></span>
 
 **Примечание.** При перемещении элементов в корень OneDrive не следует использовать синтаксис `"id:" "root"`. Нужно использовать действительный идентификатор корневой папки или путь `{"path": "/drive/root"}` для родительской ссылки.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.
+## <span data-ttu-id="a6c20-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="a6c20-125">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="a6c20-126">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a6c20-126">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a>Пример
-В этом примере элемент, определяемый идентификатором элемента {item-id}, перемещается в папку **Документы** в OneDrive пользователя.
+## <span data-ttu-id="a6c20-127">Пример</span><span class="sxs-lookup"><span data-stu-id="a6c20-127">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="a6c20-128">В этом примере элемент, определяемый идентификатором элемента {item-id}, перемещается в папку **Документы** в OneDrive пользователя.</span><span class="sxs-lookup"><span data-stu-id="a6c20-128">This example moves an item specified by {item-id} into the **Documents** folder in the user's OneDrive.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -53,8 +24,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+## <span data-ttu-id="a6c20-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="a6c20-129">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="a6c20-130">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a6c20-130">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

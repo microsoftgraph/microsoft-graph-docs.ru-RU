@@ -1,50 +1,20 @@
-# <a name="add-attachment"></a>Добавление вложения
+<span data-ttu-id="217d6-p103">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="217d6-p103">Nature of the data in the body of an entity. Required.</span></span>  | Характер данных в теле объекта. Обязательный. |
 
-С помощью этого API можно добавить [вложение](../resources/attachment.md) к событию. Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md) по умолчанию для пользователя или группы.
-```http
-POST /me/events/{id}/attachments
-POST /users/{id | userPrincipalName}/events/{id}/attachments
-POST /groups/{id}/events/{id}/attachments
-
-POST /me/calendar/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
-```
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) по умолчанию для пользователя.
-```http
-POST /me/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) пользователя.
-```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
+## <span data-ttu-id="217d6-122">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="217d6-122">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="217d6-123">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="217d6-123">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
 
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [attachment](../resources/attachment.md) в тексте отклика.
+## <span data-ttu-id="217d6-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="217d6-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="217d6-125">В случае успеха этот метод возвращает код отклика `201, Created` и объект [attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="217d6-125">If successful, this method returns `201, Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a>Пример (вложенный файл)
+## <span data-ttu-id="217d6-126">Пример (вложенный файл)</span><span class="sxs-lookup"><span data-stu-id="217d6-126">Example (file attachment)</span></span>
+<a id="example-file-attachment" class="xliff"></a>
 
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+##### <span data-ttu-id="217d6-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="217d6-127">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="217d6-128">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="217d6-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
@@ -61,10 +31,11 @@ Content-length: 151
 }
 ```
 
-Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
+<span data-ttu-id="217d6-129">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="217d6-129">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+##### <span data-ttu-id="217d6-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="217d6-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="217d6-131">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="217d6-131">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,11 +60,13 @@ Content-Length: 735
 }
 ```
 
-## <a name="example-item-attachment"></a>Пример (вложенный элемент)
+## <span data-ttu-id="217d6-132">Пример (вложенный элемент)</span><span class="sxs-lookup"><span data-stu-id="217d6-132">Example (item attachment)</span></span>
+<a id="example-item-attachment" class="xliff"></a>
 
-##### <a name="request"></a>Запрос
+##### <span data-ttu-id="217d6-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="217d6-133">Request</span></span>
+<a id="request" class="xliff"></a>
 
-В этом примере к одному событию прикрепляется другое в качестве вложения.
+<span data-ttu-id="217d6-134">В этом примере к одному событию прикрепляется другое в качестве вложения.</span><span class="sxs-lookup"><span data-stu-id="217d6-134">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -126,8 +99,9 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="217d6-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="217d6-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="217d6-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="217d6-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

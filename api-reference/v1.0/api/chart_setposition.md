@@ -1,38 +1,12 @@
-# <a name="chart-setposition"></a>Chart: setPosition
-
-Располагает диаграмму относительно ячеек на листе.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются указанные **области**: 
-
-    * Files.ReadWrite.
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
-
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Описание|
-|:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|startCell|string|Начальная ячейка. Место, куда будет перемещена диаграмма. Начальная ячейка — это верхняя левая или верхняя правая ячейка (это зависит от того, использует ли пользователь параметры отображения справа налево).|
-|endCell|string|Необязательный. Конечная ячейка. Если указан этот параметр, значения ширины и высоты диаграммы будут заданы так, чтобы полностью покрыть данную ячейку или диапазон.|
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="50c52-p104">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="50c52-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="50c52-131">Пример</span><span class="sxs-lookup"><span data-stu-id="50c52-131">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="50c52-132">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="50c52-132">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="50c52-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="50c52-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="50c52-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="50c52-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chart_setposition"
@@ -48,8 +22,9 @@ Content-length: 66
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <span data-ttu-id="50c52-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="50c52-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="50c52-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="50c52-136">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

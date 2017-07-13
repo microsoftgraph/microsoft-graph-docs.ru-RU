@@ -1,48 +1,4 @@
-# <a name="delete-contact"></a>Удаление контакта
-
-Удаление контакта.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Contacts.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-Объект [contact](../resources/contact.md) из стандартной пользовательской папки [contactFolder](../resources/contactfolder.md).
-```http
-DELETE /me/contacts/{id}
-DELETE /users/{id | userPrincipalName}/contacts/{id}
-```
-Объект [contact](../resources/contact.md) из пользовательской папки [contactFolder](../resources/contactfolder.md) верхнего уровня.
-```http
-DELETE /me/contactFolders/{id}/contacts/{id}
-DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
-```
-Объект [contact](../resources/contact.md) из дочерней папки в папке [contactFolder](../resources/mailfolder.md). Приведенный ниже пример показывает один уровень вложенности, но для хранения контакта допускается несколько.
-```http
-DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
-DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "delete_contact"
-}-->
-```http
-DELETE https://graph.microsoft.com/v1.0/me/contacts/{id}
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="8897e-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="8897e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

@@ -1,71 +1,16 @@
-<a id="domain-resource-type" class="xliff"></a>
-
-# Тип ресурса domain
-
-Представляет домен, связанный с клиентом.
-
-Это ресурс позволяет связать домены с клиентом, подтвердить право собственности на домен и настроить поддерживаемые службы.  С его помощью регистраторы могут автоматизировать связь домена для таких служб, как Office 365. Например, в процессе регистрации домена регистратор может включить личный домен для электронной почты, веб-сайтов, аутентификации и т. д.
-
-Чтобы связать домен с клиентом:
-
-1. [Свяжите](../api/domain_post_domains.md) домен с клиентом.
-
-2. [Получите](../api/domain_list_verificationdnsrecords.md) записи о проверке домена. Добавьте сведения из записи о проверке в файл зоны домена, используя конфигурацию регистратора доменных имен или DNS-сервера.
-
-3. [Подтвердите](../api/domain_verify.md) право собственности на домен. После этого для свойства *isVerified* будет установлено значение *true*.
-
-4. [Укажите](../api/domain_update.md) поддерживаемые службы, которые вы планируете использовать в домене.
-
-5. [Настройте](../api/domain_list_serviceconfigurationrecords.md) поддерживаемые службы, получив список записей, необходимых для работы служб домена. Добавьте данные из записи конфигурации в файл зоны домена, используя конфигурацию регистратора доменных имен или DNS-сервера.
-
-<a id="methods" class="xliff"></a>
-
-## Методы
-
-| Метод   | Возвращаемый тип |Описание|
-|:---------------|:--------|:----------|
-|[Получение домена](../api/domain_get.md) | [domain](domain.md) | Чтение свойств и отношений объекта domain.|
-|[Создание домена](../api/domain_post_domains.md) | [domain](domain.md) | Добавление домена в клиент. |
-|[Перечисление domainNameReference](../api/domain_list_domainnamereferences.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка объектов каталога со ссылкой на домен.|
-|[Перечисление serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |Коллекция [domainDnsRecord](domaindnsrecord.md)|  Получение списка записей DNS домена для настройки домена.|
-|[Перечисление verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |Коллекция [domainDnsRecord](domaindnsrecord.md)|  Получение списка записей DNS домена для проверки домена.|
-|[Обновление домена](../api/domain_update.md) | [domain](domain.md) |Обновление домена.|
-|[Удаление домена](../api/domain_delete.md) | Нет |Удаление домена.|
-|[Проверка домена](../api/domain_verify.md)|[domain](domain.md)|Проверка права собственности на домен.|
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
-
-| Свойство   | Тип | Описание |
-|:---------------|:--------|:----------|
-|authenticationType|Строка| Указывает тип аутентификации, настроенный для домена. Возможные значения: *Managed* и *Federated*.<br> *Managed* означает управляемый домен, аутентификацию пользователей в котором выполняет Azure AD.<br>*Federated* означает, что аутентификацию выполняет поставщик удостоверений, например локальная служба Active Directory клиента, через службы федерации Active Directory (AD FS). Не допускает значение null. |
-|availabilityStatus|Строка| Это свойство всегда имеет значение null, когда не используется действие [verify](../api/domain_verify.md). Когда используется действие [verify](../api/domain_verify.md), в ответе возвращается объект **domain**. Свойство **availabilityStatus** объекта **domain** в ответе — либо *AvailableImmediately*, либо *EmailVerifiedDomainTakeoverScheduled*.|
-|id|String| Полное имя домена. Ключ, неизменяемое, не допускает значение null, уникальное. |
-|isAdminManaged|Boolean| Свойство имеет значение false, если управление записью DNS домена делегировано в Office 365. В противном случае возвращается значение true. Не допускает значение null. |
-|isDefault|Логический| Значение true, если это домен по умолчанию, который используется для создания пользователя. У компании может быть только один домен по умолчанию. Не допускает значение null. |
-|isInitial|Логический| Значение true, если это исходный домен, созданный веб-службами Майкрософт (companyname.onmicrosoft.com). У компании может быть только один исходный домен. Не допускает значение null. |
-|isRoot|Boolean| Значение true, если это проверенный корневой домен. Значение false, если домен является поддоменом или не проверен. Не допускает значение null. |
-|isVerified|Boolean| Значение true, если право собственности на домен подтверждено. Не допускает значение null. |
-|supportedServices|Коллекция String| Возможности, назначенные домену.<br><br>Могут включать ноль, одно или несколько из следующих значений: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*.<br><br> Значения, которые можно добавлять и удалять с помощью API Graph: *Email*, *OfficeCommunicationsOnline*, *Yammer*.<br>Не допускает значение null.|
-|state|[domainState](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
-
-<a id="relationships" class="xliff"></a>
-
-## Связи
+<span data-ttu-id="43d71-p114">Отношения между доменом и другими объектами в каталоге, такими как записи проверки и записи конфигурации служб, предоставляются через свойства навигации. Сведения о таких отношениях можно прочесть, указав соответствующие свойства навигации в запросах.</span><span class="sxs-lookup"><span data-stu-id="43d71-p114">Relationships between a domain and other objects in the directory such as its verification records and service configuration records are exposed through navigation properties. You can read these relationships by targeting these navigation properties in your requests.</span></span>
 
 Отношения между доменом и другими объектами в каталоге, такими как записи проверки и записи конфигурации служб, предоставляются через свойства навигации. Сведения о таких отношениях можно прочесть, указав соответствующие свойства навигации в запросах.
 
-| Связь | Тип |Описание|
+| <span data-ttu-id="43d71-199">Связь</span><span class="sxs-lookup"><span data-stu-id="43d71-199">Relationship</span></span> | <span data-ttu-id="43d71-200">Тип</span><span class="sxs-lookup"><span data-stu-id="43d71-200">Type</span></span> |<span data-ttu-id="43d71-201">Описание</span><span class="sxs-lookup"><span data-stu-id="43d71-201">Description</span></span>|
 |:---------------|:--------|:----------|
-|domainNameReferences|Коллекция [directoryObject](directoryobject.md)| Только для чтения, допускает значение null.|
-|serviceConfigurationRecords|Коллекция [domainDnsRecord](domaindnsrecord.md)| DNS-записи, которые клиент добавляет в файл зоны DNS домена, чтобы использовать домен с Microsoft Online Services.<br>Только для чтения, допускает значение null. |
-|verificationDnsRecords|Коллекция [domainDnsRecord](domaindnsrecord.md)| DNS-записи, которые клиент добавляет в файл зоны DNS домена, чтобы подтвердить право собственности на домен в Azure AD.<br>Только для чтения, допускает значение null.|
+|<span data-ttu-id="43d71-202">domainNameReferences</span><span class="sxs-lookup"><span data-stu-id="43d71-202">domainNameReferences</span></span>|<span data-ttu-id="43d71-203">Коллекция [directoryObject](directoryobject.md)</span><span class="sxs-lookup"><span data-stu-id="43d71-203">[directoryObject](directoryobject.md) collection</span></span>| <span data-ttu-id="43d71-204">Только для чтения, допускает значение null.</span><span class="sxs-lookup"><span data-stu-id="43d71-204">Read-only, Nullable</span></span>|
+|<span data-ttu-id="43d71-205">serviceConfigurationRecords</span><span class="sxs-lookup"><span data-stu-id="43d71-205">serviceConfigurationRecords</span></span>|<span data-ttu-id="43d71-206">Коллекция [domainDnsRecord](domaindnsrecord.md)</span><span class="sxs-lookup"><span data-stu-id="43d71-206">[domainDnsRecord](domaindnsrecord.md) collection</span></span>| <span data-ttu-id="43d71-207">DNS-записи, которые клиент добавляет в файл зоны DNS домена, чтобы использовать домен с Microsoft Online Services.</span><span class="sxs-lookup"><span data-stu-id="43d71-207">DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.</span></span><br><span data-ttu-id="43d71-208">Только для чтения, допускает значение null.</span><span class="sxs-lookup"><span data-stu-id="43d71-208">Read-only, Nullable</span></span> |
+|<span data-ttu-id="43d71-209">verificationDnsRecords</span><span class="sxs-lookup"><span data-stu-id="43d71-209">verificationDnsRecords</span></span>|<span data-ttu-id="43d71-210">Коллекция [domainDnsRecord](domaindnsrecord.md)</span><span class="sxs-lookup"><span data-stu-id="43d71-210">[domainDnsRecord](domaindnsrecord.md) collection</span></span>| <span data-ttu-id="43d71-211">DNS-записи, которые клиент добавляет в файл зоны DNS домена, чтобы подтвердить право собственности на домен в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="43d71-211">DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.</span></span><br><span data-ttu-id="43d71-212">Только для чтения, допускает значение null.</span><span class="sxs-lookup"><span data-stu-id="43d71-212">Read-only, Nullable</span></span>|
 
+## <span data-ttu-id="43d71-213">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="43d71-213">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="43d71-214">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="43d71-214">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

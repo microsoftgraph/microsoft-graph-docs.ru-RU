@@ -1,38 +1,16 @@
-# <a name="update-domain"></a>Обновление домена
-
-Обновление свойств объекта домена.
-
-> **Важно!** Можно обновить только проверенные домены.
-
-### <a name="prerequisites"></a>Необходимые условия
-
-Для применения этого API требуется одна из следующих **областей**: *Domain.ReadWrite.All* или *Directory.AccessAsUser.All*.
-
-### <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /domains/{id}
-```
-
-> В качестве параметра {id} укажите домен, используя его полное доменное имя.
-
-### <a name="request-headers"></a>Заголовки запросов
-
-| Имя       | Описание|
-|:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>Текст запроса
+<span data-ttu-id="fb74c-p102">В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.</span><span class="sxs-lookup"><span data-stu-id="fb74c-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
 В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.
 
-### <a name="response"></a>Отклик
+### <span data-ttu-id="fb74c-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="fb74c-120">Response</span></span>
+<a id="response" class="xliff"></a>
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content` и не возвращает тело отклика.
+<span data-ttu-id="fb74c-121">При успешном выполнении этот метод возвращает код отклика `204 No Content` и не возвращает тело отклика.</span><span class="sxs-lookup"><span data-stu-id="fb74c-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-### <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <span data-ttu-id="fb74c-122">Пример</span><span class="sxs-lookup"><span data-stu-id="fb74c-122">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="fb74c-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="fb74c-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -51,7 +29,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <span data-ttu-id="fb74c-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="fb74c-124">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

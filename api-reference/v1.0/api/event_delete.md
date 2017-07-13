@@ -1,43 +1,11 @@
-# <a name="delete-event"></a>Удаление события
-
-Удаление события.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite* 
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/events/{id}
-DELETE /users/{id | userPrincipalName}/events/{id}
-DELETE /groups/{id}/events/{id}
-
-DELETE /me/calendar/events/{id}
-DELETE /users/{id | userPrincipalName}/calendar/events/{id}
-DELETE /groups/{id}/calendar/events/{id}/
-
-DELETE /me/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
-DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="48daa-p102">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="48daa-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="48daa-119">Пример</span><span class="sxs-lookup"><span data-stu-id="48daa-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="48daa-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="48daa-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="48daa-121">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="48daa-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_event"
@@ -45,8 +13,9 @@ DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <span data-ttu-id="48daa-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="48daa-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="48daa-123">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="48daa-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

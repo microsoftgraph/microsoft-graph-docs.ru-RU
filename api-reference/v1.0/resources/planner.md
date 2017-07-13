@@ -1,40 +1,8 @@
-<a id="planner-resource-type" class="xliff"></a>
+<span data-ttu-id="b72c8-p105">Только для чтения. Допускает значение null. Возвращает коллекцию указанных задач.</span><span class="sxs-lookup"><span data-stu-id="b72c8-p105">Read-only. Nullable. Returns a collection of the specified tasks</span></span>| Только для чтения. Допускает значение null. Возвращает коллекцию указанных задач.|
 
-# Тип ресурса planner
-
-Ресурс **planner** — это точка входа для объектной модели Планировщика. Он возвращает одноэлементный ресурс **planner**.  Он не содержит свойства, которые можно использовать.
-
-
-<a id="methods" class="xliff"></a>
-
-## Методы
-
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Создание объекта plannerBucket](../api/planner_post_buckets.md) |[plannerBucket](plannerbucket.md)| Создайте объект **plannerBucket**, отправив запрос POST в коллекцию buckets.|
-|[Создание объекта plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Создайте объект **plannerPlan**, отправив запрос POST в коллекцию plans.|
-|[Создание объекта plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Создайте объект **plannerTask**, отправив запрос POST в коллекцию tasks.|
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор ресурса **planner**.|
-
-<a id="relationships" class="xliff"></a>
-
-## Связи
-| Связь | Тип   |Описание|
-|:---------------|:--------|:----------|
-|buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускает значение null. Возвращает коллекцию указанных сегментов.|
-|plans|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускает значение null. Возвращает коллекцию указанных планов.|
-|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускает значение null. Возвращает коллекцию указанных задач.|
-
+## <span data-ttu-id="b72c8-145">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="b72c8-145">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="b72c8-146">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b72c8-146">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,153 +1,4 @@
-# <a name="update-open-extension"></a>Обновление открытого расширения
-
-Обновление открытого расширения (объекта [openTypeExtension](../resources/openTypeExtension.md)) с использованием свойств, указанных в теле запроса.
-
-- Если свойство в теле запроса совпадает с именем существующего свойства в расширении, то данные в расширении будут обновлены.
-- В противном случае это свойство и его данные будут добавлены в расширение. 
-
-Данные в расширении могут относиться к элементарным типам или массиву элементарных типов.
-
-
-## <a name="prerequisites"></a>Обязательные условия
-
-Для применения этого API требуется одно из указанных ниже **разрешений** (в зависимости от ресурса, в котором создано расширение).
-
-|**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
-|:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [contact](../resources/contact.md) (личный контакт) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
- 
-## <a name="http-request"></a>HTTP-запрос
-В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `PATCH` для этого экземпляра расширения.
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /devices/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/extensions/{extensionId}
-PATCH /groups/{id}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-PATCH /organization/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-```
-
->**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно обновить. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают обновление открытых расширений этих экземпляров подобным образом.
-
-См. раздел [Тело запроса](#request-body) о том, как включить в тело запроса пользовательские данные для изменения или дополнения этого расширения.
-
-
-## <a name="parameters"></a>Параметры
-|**Параметр**|**Тип**|**Описание**|
-|:-----|:-----|:-----|
-|_Параметры URL-адреса_|
-|id|string|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
-|extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
-
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Значение |
-|:---------------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type | application/json |
-
-## <a name="request-body"></a>Тело запроса
-
-Задайте основной текст JSON объекта [openTypeExtension](../resources/openTypeExtension.md) с указанными ниже обязательными парами имя-значение и любыми пользовательскими данными, которые необходимо изменить или добавить в это расширение. Полезные данные JSON могут иметь простой тип или представлять собой массив элементов простого типа.
-
-| Имя       | Значение |
-|:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
-| extensionName | %уникальная_строка% |
-
-
-## <a name="response"></a>Отклик
-
-При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [openTypeExtension](../resources/openTypeExtension.md).
-
-
-## <a name="example"></a>Пример
-#### <a name="request-1"></a>Запрос 1
-
-В первом примере показано, как обновить расширение в сообщении. Изначально расширение представлено указанными ниже полезными данными JSON.
-
-<!-- { "blockType": "ignored" } -->
-```http
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
-    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-    "extensionName": "Com.Contoso.Referral",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
-    "companyName": "Wingtip Toys",
-    "dealValue": 500050,
-    "expirationDate": "2015-12-03T10:00:00Z"
-}
-```
-
-Вы можете ссылаться на расширение по его имени:
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
-```
-
-Кроме того, вы можете ссылаться на расширение по его полному имени:
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
-```
-
-Для обновления указанного выше расширения используйте любой пример запроса и приведенный ниже тело запроса следующими способами:
-- изменив значение параметра `companyName` с `Wingtip Toys` на `Wingtip Toys (USA)`;
-- изменив значение параметра `dealValue` с `500050` на `500100`;
-- добавив новые данные в качестве пользовательского свойства `updated`.
-
-<!-- { "blockType": "ignored" } -->
-```http
-{
-    "@odata.type": "Microsoft.Graph.OpenTypeExtension",
-    "extensionName": "Com.Contoso.Referral",
-    "companyName": "Wingtip Toys (USA)",
-    "dealValue": "500100",
-    "expirationDate": "2015-12-03T10:00:00.000Z",
-    "updated": "2015-10-29T11:00:00.000Z"
-} 
-```
-
-
-#### <a name="response-1"></a>Отклик 1
-
-Вот отклик, который не зависит от способа, которым вы ссылаетесь на расширение.
-
-<!-- { "blockType": "ignored" } -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
-    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
-    "extensionName": "Com.Contoso.Referral",
-    "companyName": "Wingtip Toys (USA)",
-    "dealValue": 500100,
-    "expirationDate": "2015-12-03T10:00:00Z",
-    "updated": "2015-10-29T11:00:00.000Z"
-}
-```
-
-****
-
-#### <a name="request-2"></a>Запрос 2
+<span data-ttu-id="b1324-p107">Во втором примере показано, как обновить расширение в публикации группы. Изначально расширение представлено указанными ниже полезными данными JSON, в котором параметр `expirationDate` имеет значение `2015-07-03T13:04:00Z`:</span><span class="sxs-lookup"><span data-stu-id="b1324-p107">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
 
 Во втором примере показано, как обновить расширение в публикации группы. Изначально расширение представлено указанными ниже полезными данными JSON, в котором параметр `expirationDate` имеет значение `2015-07-03T13:04:00Z`:
 
@@ -170,7 +21,7 @@ Content-type: application/json
 }
 ```
 
-Ниже приведен запрос и тело запроса для изменения значения параметра `expirationDate` на `2016-07-30T11:00:00Z`.
+<span data-ttu-id="b1324-183">Ниже приведен запрос и тело запроса для изменения значения параметра `expirationDate` на `2016-07-30T11:00:00Z`.</span><span class="sxs-lookup"><span data-stu-id="b1324-183">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -194,9 +45,10 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response-2"></a>Отклик 2
+#### <span data-ttu-id="b1324-184">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="b1324-184">Response 2</span></span>
+<a id="response-2" class="xliff"></a>
 
-Вот отклик для второго примера, в котором отображается обновленный параметр `expirationDate` в расширении.
+<span data-ttu-id="b1324-185">Вот отклик для второго примера, в котором отображается обновленный параметр `expirationDate` в расширении.</span><span class="sxs-lookup"><span data-stu-id="b1324-185">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
 
 <!-- {  
   "blockType": "response",  

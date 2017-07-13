@@ -1,30 +1,12 @@
-# <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
-
-Обновляет сводную таблицу на заданном листе.
-
-### <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются такие **области**: _Files.Read, Files.ReadWrite_.
-### <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
-
-```
-### <a name="request-headers"></a>Заголовки запросов
-| Имя       | Описание|
-|:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
-
-### <a name="request-body"></a>Текст запроса
-
-### <a name="response"></a>Отклик
+<span data-ttu-id="432e7-p103">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="432e7-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
-### <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+### <span data-ttu-id="432e7-119">Пример</span><span class="sxs-lookup"><span data-stu-id="432e7-119">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="432e7-120">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="432e7-120">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="432e7-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="432e7-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="432e7-122">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="432e7-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "workbookpivottable_refreshall"
@@ -33,8 +15,9 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="432e7-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="432e7-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="432e7-124">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="432e7-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

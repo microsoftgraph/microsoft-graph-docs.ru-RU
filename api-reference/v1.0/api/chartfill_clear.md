@@ -1,34 +1,12 @@
-# <a name="chartfill-clear"></a>ChartFill: clear
-
-Очищает цвет заливки элемента диаграммы.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются указанные **области**: 
-
-    * Files.ReadWrite.
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
-
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Описание|
-|:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-
-
-## <a name="request-body"></a>Текст запроса
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="29d97-p102">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="29d97-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="29d97-117">Пример</span><span class="sxs-lookup"><span data-stu-id="29d97-117">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="29d97-118">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="29d97-118">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="29d97-119">Запрос</span><span class="sxs-lookup"><span data-stu-id="29d97-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="29d97-120">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="29d97-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartfill_clear"
@@ -37,8 +15,9 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <span data-ttu-id="29d97-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="29d97-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="29d97-122">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="29d97-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,38 +1,12 @@
-# <a name="send-mail"></a>Отправка почты
-
-Отправка сообщения, указанного в теле запроса. Сообщение сохраняется в папке "Отправленные" по умолчанию.
-
-Вы можете включить [вложенный файл](../resources/fileattachment.md) в тот же вызов действия **sendMail**.
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Mail.Send*
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id | userPrincipalName}/sendMail
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Тело запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|Отправляемое сообщение. Обязательный.|
-|SaveToSentItems|Логическое|Указывает, нужно ли сохранять сообщение в папке "Отправленные". Указывайте этот параметр, если задано значение false (по умолчанию используется true).  Задавать не обязательно. |
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="920ab-p105">В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="920ab-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="920ab-133">Пример</span><span class="sxs-lookup"><span data-stu-id="920ab-133">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="920ab-134">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="920ab-134">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="920ab-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="920ab-135">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="920ab-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="920ab-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -68,8 +42,9 @@ Content-length: 512
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="920ab-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="920ab-137">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="920ab-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="920ab-138">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

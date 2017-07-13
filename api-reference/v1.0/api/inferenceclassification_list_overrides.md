@@ -1,37 +1,4 @@
-# <a name="list-overrides"></a>Список переопределений
-
-Получение переопределений, настроенных пользователем для классификации сообщений от определенных отправителей.
-
-Каждое переопределение соответствует SMTP-адресу отправителя. Изначально у пользователя нет переопределений.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуются указанные **области**: *Mail.Read*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/inferenceClassification/overrides
-GET /users/{id}/inferenceClassification/overrides
-```
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика. Если у пользователя нет настроенных переопределений, возвращается пустая коллекция.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_overrides"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="e0bc9-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="e0bc9-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

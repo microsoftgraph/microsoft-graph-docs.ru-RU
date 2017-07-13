@@ -1,49 +1,17 @@
-# <a name="update-schemaextension"></a>Обновление schemaExtension
+<span data-ttu-id="9d57f-p107">Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешено вносить изменения только в виде дополнений.</span><span class="sxs-lookup"><span data-stu-id="9d57f-p107">Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.  Only additive changes are permitted.</span></span>|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешено вносить изменения только в виде дополнений.|
 
-Обновление свойств в определении указанного ресурса [schemaExtension](../resources/schemaextension.md).
+## <span data-ttu-id="9d57f-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="9d57f-142">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Это обновление применяется ко всем ресурсам, включенным в свойство **targetTypes** расширения. Эти ресурсы входят в число [поддерживаемых](../../../concepts/extensibility_overview.md#supported-resources).
+<span data-ttu-id="9d57f-143">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="9d57f-143">If successful, this method returns a `204 No Content` response code.</span></span>
 
-Только приложение, которое создало расширение схемы (приложение-владелец), может внести дополнения в расширение, причем только тогда, когда расширение находится в состоянии **InDevelopment** или **Available**. Это означает, что приложению не удастся удалить настраиваемые свойства или целевые типы ресурсов из определения. Но приложение может изменить описание расширения.
+## <span data-ttu-id="9d57f-144">Пример</span><span class="sxs-lookup"><span data-stu-id="9d57f-144">Example</span></span>
+<a id="example" class="xliff"></a>
 
-## <a name="prerequisites"></a>Необходимые условия
+##### <span data-ttu-id="9d57f-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="9d57f-145">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Для применения этого API требуется следующая **область**: *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP-запрос
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /schemaExtensions/{id}
-```
-
-### <a name="optional-request-headers"></a>Необязательные заголовки запросов
-
-| Имя      |Описание|
-|:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type   | application/json | 
-
-## <a name="request-body"></a>Тело запроса
-
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
-
-| Свойство   | Тип |Описание|
-|:---------------|:--------|:----------|
-|description|String|Описание расширения схемы.|
-|properties|Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)|Коллекция имен и типов свойств, составляющих определение расширения схемы. Разрешено вносить изменения только в виде дополнений. |
-|status|String|Состояние жизненного цикла расширения схемы. Начальное состояние при создании расширения схемы: **InDevelopment**. Возможные варианты перехода: из состояния **InDevelopment** в состояние **Available**, из состояния **Available** в состояние **Deprecated** и из состояния **Deprecated** в состояние **Available**.|
-|targetTypes|Коллекция String|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешено вносить изменения только в виде дополнений.|
-
-## <a name="response"></a>Отклик
-
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
-
-## <a name="example"></a>Пример
-
-##### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса.
+<span data-ttu-id="9d57f-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9d57f-146">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_schemaextension"
@@ -67,7 +35,8 @@ Content-length: 201
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <span data-ttu-id="9d57f-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="9d57f-147">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",
@@ -78,10 +47,11 @@ Content-length: 201
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a>См. также
+## <span data-ttu-id="9d57f-148">См. также</span><span class="sxs-lookup"><span data-stu-id="9d57f-148">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
-- [Добавление пользовательских данных в группы с помощью расширений схемы](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="9d57f-149">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="9d57f-149">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="9d57f-150">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="9d57f-150">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

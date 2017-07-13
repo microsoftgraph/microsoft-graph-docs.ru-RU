@@ -1,33 +1,8 @@
-<a id="pivottable-resource-type" class="xliff"></a>
-# Тип ресурсов pivotTable
+<span data-ttu-id="2060b-p103">Лист, содержащий текущую сводную таблицу. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2060b-p103">The worksheet containing the current PivotTable. Read-only.</span></span>| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
 
-Представляет сводную таблицу Excel.
-
-<a id="methods" class="xliff"></a>
-## Методы
-
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Получение workbookPivotTable](../api/workbookpivottable_get.md) | [workbookPivotTable](workbookpivottable.md) |Чтение свойств и связей объекта workbookPivotTable.|
-|[Refresh](../api/workbookpivottable_refresh.md)|Нет|Обновляет сводную таблицу. |
-|[Refreshall](../api/workbookpivottable_refreshall.md)|Нет|Обновляет все таблицы на заданном листе. Обратите внимание, что это действие доступно только в коллекции сводных таблиц.|
-
-<a id="properties" class="xliff"></a>
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|String| Идентификатор сводной таблицы.   Только для чтения.|
-|name|String|Имя сводной таблицы.    |
-
-<a id="relationships" class="xliff"></a>
-## Связи
-| Связь | Тип   |Описание|
-|:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
-
+## <span data-ttu-id="2060b-136">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2060b-136">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="2060b-137">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2060b-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

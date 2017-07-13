@@ -1,62 +1,11 @@
-# <a name="delete-open-extension"></a>Удаление открытого расширения
-
-Удаление открытого расширения (объекта [openTypeExtension](../resources/openTypeExtension.md)) из указанного экземпляра ресурса. 
-
-## <a name="prerequisites"></a>Необходимые условия
-
-Для выполнения этого API требуется одно из указанных **разрешений** (в зависимости от ресурса, из которого удаляется расширение):
-
-|**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
-|:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [contact](../resources/contact.md) (личный контакт) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
-
- 
-## <a name="http-request"></a>HTTP-запрос
-В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `DELETE` для этого экземпляра расширения.
-
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /devices/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/extensions/{extensionId}
-DELETE /groups/{id}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-DELETE /organization/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-```
-
->**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно удалить. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают удаление открытых расширений этих экземпляров подобным образом.
-
-## <a name="parameters"></a>Параметры
-|**Параметр**|**Тип**|**Описание**|
-|:-----|:-----|:-----|
-|_Параметры URL-адреса_|
-|id|string|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
-|extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
-
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Значение |
-|:---------------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
-
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="58809-p105">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="58809-p105">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-В первом примере показано, как сослаться на расширение по его имени и удалить расширение в указанном сообщении.
+## <span data-ttu-id="58809-156">Пример</span><span class="sxs-lookup"><span data-stu-id="58809-156">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="58809-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="58809-157">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="58809-158">В первом примере показано, как сослаться на расширение по его имени и удалить расширение в указанном сообщении.</span><span class="sxs-lookup"><span data-stu-id="58809-158">The first example references an extension by its name and deletes the extension in the specified message.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_opentypeextension"
@@ -65,7 +14,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 DELETE https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
 ```
 
-Во втором примере показано, как удалить расширение в событии указанной группы.
+<span data-ttu-id="58809-159">Во втором примере показано, как удалить расширение в событии указанной группы.</span><span class="sxs-lookup"><span data-stu-id="58809-159">The second example deletes an extension in the specified group event.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -74,8 +23,9 @@ DELETE https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953c
 
  
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="58809-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="58809-160">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="58809-161">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="58809-161">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

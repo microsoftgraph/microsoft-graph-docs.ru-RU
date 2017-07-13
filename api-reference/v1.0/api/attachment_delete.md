@@ -1,73 +1,11 @@
-# <a name="delete-attachment"></a>Удаление вложения
-
-Удаление вложения из события календаря, сообщения почты или записи группы.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**:
-
-* При доступе к вложениям в сообщениях: *Mail.ReadWrite*
-* При доступе к вложениям в событиях: *Calendars.ReadWrite*
-* При доступе к вложениям в событиях или записях групп: *Group.ReadWrite.All*
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md) по умолчанию для пользователя или группы.
-```http
-DELETE /me/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-DELETE /groups/{id}/events/{id}/attachments/{id}
-
-DELETE /me/calendar/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
-```
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) по умолчанию для пользователя.
-```http
-DELETE /me/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-```
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) пользователя.
-```http
-DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-```
-Вложения [сообщения](../resources/message.md) в почтовом ящике пользователя.
-```http
-DELETE /me/messages/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
-```
-Вложения [сообщения](../resources/message.md) в папке [mailFolder](../resources/mailfolder.md) верхнего уровня в почтовом ящике пользователя.
-```http
-DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
-```
-Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.
-```http
-DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
-```
-Вложения для [записи](../resources/post.md) в [цепочке](../resources/conversationthread.md) [беседы](../resources/conversation.md) в группе.
-```http
-DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
-DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="9ace4-p103">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="9ace4-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса на удаление вложения из данных, касающихся события.
+## <span data-ttu-id="9ace4-130">Пример</span><span class="sxs-lookup"><span data-stu-id="9ace4-130">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="9ace4-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ace4-131">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="9ace4-132">Ниже приведен пример запроса на удаление вложения из данных, касающихся события.</span><span class="sxs-lookup"><span data-stu-id="9ace4-132">Here is an example of the request to delete an attachment on an event.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
@@ -75,8 +13,9 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="9ace4-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ace4-133">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="9ace4-134">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="9ace4-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

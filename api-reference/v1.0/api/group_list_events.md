@@ -1,36 +1,4 @@
-# <a name="list-events"></a>Список событий
-
-Получение списка объектов [event](../resources/event.md).
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: _Group.Read.All_ или _Group.ReadWrite.All_
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /groups/{id}/events
-GET /groups/{id}/calendar/events
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Event](../resources/event.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_events"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/events
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="772ea-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="772ea-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

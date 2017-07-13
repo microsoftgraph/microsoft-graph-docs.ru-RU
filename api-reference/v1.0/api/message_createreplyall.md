@@ -1,47 +1,4 @@
-# <a name="message-createreplyall"></a>message: createReplyAll
-
-Создание черновика сообщения ответа всем пользователям. После этого вы сможете [обновить](../api/message_update.md) или [отправить](../api/message_send.md) черновик.
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/createReplyAll
-POST /users/{id | userPrincipalName}/messages/{id}/createReplyAll
-POST /me/mailFolders/{id}/messages/{id}/createReplyAll
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [Message](../resources/message.md) в тексте отклика.
-
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "message_createreplyall"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
-```
-
-##### <a name="response"></a>Ответ
+<span data-ttu-id="34338-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="34338-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

@@ -1,39 +1,4 @@
-# <a name="get-schemaextension"></a>Получение schemaExtension
-Получение свойств указанного определения [schemaExtension](../resources/schemaextension.md).
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All* или *Directory.AccessAsUser.All*.
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /schemaExtensions/{id}
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя      |Описание|
-|:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type   | application/json | 
-
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
-
-## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [schemaExtension](../resources/schemaextension.md) в теле отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_schemaextension"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="d1b69-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="d1b69-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -62,10 +27,11 @@ Content-length: 201
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <span data-ttu-id="d1b69-127">См. также</span><span class="sxs-lookup"><span data-stu-id="d1b69-127">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
-- [Добавление пользовательских данных в группы с помощью расширений схемы](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="d1b69-128">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="d1b69-128">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="d1b69-129">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="d1b69-129">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

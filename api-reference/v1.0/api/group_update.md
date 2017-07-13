@@ -1,49 +1,15 @@
-# <a name="update-group"></a>Обновление группы
-
-Обновление свойств, принадлежащих объекту группы.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется следующая **область**: *Group.ReadWrite.All*
-
-## <a name="http-request"></a>HTTP-запрос
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /groups/{id}
-```
-
-## <a name="request-headers"></a>Заголовки запросов
-
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
-
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|autoSubscribeNewMembers|Boolean|Значение, используемое по умолчанию: **false**. Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте.|
-|description|String|Необязательное описание для группы. |
-|displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. Поддерживает параметры $filter и $orderby.|
-|groupTypes|Коллекция строк|Указывает тип создаваемой группы. Возможные значения: **Unified** для создания группы Office 365 или **DynamicMembership** для создания динамических групп.  Для остальных типов групп, таких как группы безопасности и поддерживающие почту группы безопасности, это свойство не задается.|
-|mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. Если для свойства **securityEnabled** также задано значение **true**, это группа безопасности с включенной поддержкой почты. В противном случае это группа рассылки Microsoft Exchange.|
-|mailNickname|String|Почтовый псевдоним для группы. Это свойство должно быть указано при создании группы. Поддерживает параметр $filter.|
-|securityEnabled|Boolean|Указывает, является ли эта группа группой безопасности. Если для свойства **mailEnabled** также задано значение true, эта группа является группой безопасности, поддерживающей почту; в противном случае — это группа безопасности. Для групп Office 365 должно быть задано значение **false**. Поддерживает параметр $filter.|
-|visibility|Boolean|Определяет видимость группы Office 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|
-
-**Примечание**
-
-- Свойство **autoSubscribeNewMembers** можно обновить, указав его в его собственном запросе PATCH, не включая при этом другие свойства, описанные в таблице выше.
+<span data-ttu-id="999a6-p110">Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers**, поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes).</span><span class="sxs-lookup"><span data-stu-id="999a6-p110">Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.</span></span>
 - Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers**, поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes).
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+## <span data-ttu-id="999a6-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="999a6-162">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="999a6-163">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="999a6-163">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a>Пример
+## <span data-ttu-id="999a6-164">Пример</span><span class="sxs-lookup"><span data-stu-id="999a6-164">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Запрос
+##### <span data-ttu-id="999a6-165">Запрос</span><span class="sxs-lookup"><span data-stu-id="999a6-165">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -66,7 +32,8 @@ Content-length: 211
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <span data-ttu-id="999a6-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="999a6-166">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

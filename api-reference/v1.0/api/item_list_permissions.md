@@ -1,62 +1,12 @@
-# <a name="list-permissions-on-a-driveitem"></a>Создание списка разрешений для доступа к ресурсу DriveItem
-
-Создание списка действующих разрешений для доступа к ресурсу [DriveItem](../resources/driveitem.md).
-
-Связи между **разрешениями** ресурса DriveItem невозможно развернуть как часть запроса на [получение DriveItem](item_get.md) или коллекции DriveItems. Необходимо открыть доступ непосредственно к свойству разрешений.
-
-## <a name="access-to-permissions"></a>Доступ к разрешениям
-
-Коллекция разрешений включает потенциально конфиденциальные данные и может быть недоступна для каждого абонента.
-
-* Все разрешения будут возвращены владельцу элемента. Включает совладельцев.
-* Абоненту, который не является владельцем, возвращаются только применяемые к нему разрешения.
-* Свойства разрешений, которые содержат секретную информацию (например, `shareId` и `webUrl`) возвращаются только абонентам, которые могут создать разрешение.
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**:
-
-* Files.Read
-* Files.ReadWrite.
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/items/{item-id}/permissions
-GET /me/drive/root:/{path}:/permissions
-GET /drives/{drive-id}/items/{item-id}/permissions
-GET /groups/{group-id}/drive/items/{item-id}/permissions
-```
-
-## <a name="request-headers"></a>Заголовки запросов
-
-| Имя          | Тип   | Описание                                                                                                                                     |
-|:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | string | Если указан заголовок запроса, а предоставленный тег etag совпадает с текущим тегом etag элемента, то возвращается отклик `HTTP 304 Not Modified`. |
-
-
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
-
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию ресурсов [Permission](../resources/permission.md) в тексте отклика.
-
-Действующие разрешения элемента могут поступать из двух источников:
-
-* разрешения, которые были применены непосредственно к самому элементу;
-* разрешения, унаследованные от предшествующих элементов.
+<span data-ttu-id="b3361-p103">Абоненты могут распознать унаследованное разрешение, проверив свойство **inheritedFrom**. Это свойство — ресурс [**itemReference**](../resources/itemreference.md), отсылающий к предшествующему элементу, от которого унаследовано разрешение.</span><span class="sxs-lookup"><span data-stu-id="b3361-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
 
 Абоненты могут распознать унаследованное разрешение, проверив свойство **inheritedFrom**. Это свойство — ресурс [**itemReference**](../resources/itemreference.md), отсылающий к предшествующему элементу, от которого унаследовано разрешение.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="b3361-138">Пример</span><span class="sxs-lookup"><span data-stu-id="b3361-138">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="b3361-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="b3361-139">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="b3361-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b3361-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_permissions"
@@ -66,8 +16,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions
 ```
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+##### <span data-ttu-id="b3361-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="b3361-141">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b3361-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b3361-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,7 +69,7 @@ Content-Type: application/json
 }
 ```
 
-Дополнительные сведения о том, как получить единый ресурс разрешения см. в статье [Получение разрешения](permission_get.md).
+<span data-ttu-id="b3361-143">Дополнительные сведения о том, как получить единый ресурс разрешения см. в статье [Получение разрешения](permission_get.md).</span><span class="sxs-lookup"><span data-stu-id="b3361-143">See [Get permission](permission_get.md) for more details on retrieving a single permission resource.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

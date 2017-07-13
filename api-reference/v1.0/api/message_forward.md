@@ -1,38 +1,12 @@
-# <a name="message-forward"></a>message: forward
-
-Пересылка сообщения. Сообщение сохраняется в папке "Отправленные".
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.Send*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/forward
-POST /users/{id | userPrincipalName}/messages/{id}/forward
-POST /me/mailFolders/{id}/messages/{id}/forward
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|comment|String|Добавляемый комментарий. Может быть пустой строкой.|
-|toRecipients|Коллекция объектов [Recipient](../resources/recipient.md)|Список получателей.|
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="41f89-p105">В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="41f89-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="41f89-134">Пример</span><span class="sxs-lookup"><span data-stu-id="41f89-134">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="41f89-135">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="41f89-135">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="41f89-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="41f89-136">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="41f89-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="41f89-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_forward"
@@ -55,9 +29,11 @@ Content-length: 166
 }
 ```
 
-##### <a name="response"></a>Отклик
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="41f89-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="41f89-138">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="41f89-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="41f89-139">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="41f89-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="41f89-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

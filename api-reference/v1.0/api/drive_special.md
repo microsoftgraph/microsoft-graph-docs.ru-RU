@@ -1,49 +1,20 @@
-# <a name="get-a-special-folder-by-name"></a>Получение доступа к специальной папке по имени
-
-Используйте специальную коллекцию для доступа к специальной папке по имени.
-
-Применение специальных папок обеспечивает доступ к известным папкам в OneDrive с помощью простых псевдонимов, благодаря чему можно не искать папку по пути (что потребует локализации) и не ссылаться на нее с использованием идентификатора. Если специальная папка будет переименована или перемещена в другое расположение на диске, такой синтаксис по-прежнему позволит найти ее.
-
-Когда приложение впервые пробует записать что-то в специальную папку, она создается автоматически, если не была создана ранее. Если пользователь удалил такую папку, она создается повторно при записи в нее.
-
-**Примечание.**  Если у вас есть разрешения только для чтения и вы запрашиваете несуществующую специальную папку, возвратится сообщение об ошибке `403 Forbidden`.
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**:
-
-* Files.Read
-* Files.ReadWrite.
-* Files.Read.All
-* Files.ReadWrite.All
-* Files.ReadWrite.AppFolder
-* Sites.Read.All
-* Sites.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/special/{name}
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
-
-| Имя          | Тип   | Описание               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer {токен}. Обязательный. |
+<span data-ttu-id="b3bdc-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b3bdc-p103">Bearer {token}. Required.</span></span> | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <span data-ttu-id="b3bdc-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b3bdc-128">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="b3bdc-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b3bdc-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвратит код отклика `200 OK` и объект [driveItem](../resources/driveitem.md) в теле отклика.
+## <span data-ttu-id="b3bdc-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="b3bdc-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b3bdc-131">В случае успеха этот метод возвратит код отклика `200 OK` и объект [driveItem](../resources/driveitem.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="b3bdc-131">If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-## <a name="example"></a>Пример
+## <span data-ttu-id="b3bdc-132">Пример</span><span class="sxs-lookup"><span data-stu-id="b3bdc-132">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса на получение списка дисков пользователя.
+##### <span data-ttu-id="b3bdc-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="b3bdc-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="b3bdc-134">Ниже приведен пример запроса на получение списка дисков пользователя.</span><span class="sxs-lookup"><span data-stu-id="b3bdc-134">Here is an example of the request for the user's drives.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -53,8 +24,9 @@ GET /me/drive/special/{name}
 GET https://graph.microsoft.com/v1.0/me/drive/special/{name}
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+##### <span data-ttu-id="b3bdc-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="b3bdc-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b3bdc-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b3bdc-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,9 +45,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Заметки
+## <span data-ttu-id="b3bdc-137">Заметки</span><span class="sxs-lookup"><span data-stu-id="b3bdc-137">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-Чтобы получить список дочерних элементов для специальной папки, можно запросить коллекцию `children` или с помощью параметра [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) развернуть этот список.
+<span data-ttu-id="b3bdc-138">Чтобы получить список дочерних элементов для специальной папки, можно запросить коллекцию `children` или с помощью параметра [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) развернуть этот список.</span><span class="sxs-lookup"><span data-stu-id="b3bdc-138">To request the children of a special folder, you can request the `children` collection or use the [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) option to expand the children collection.</span></span>
 
 
 <!-- {

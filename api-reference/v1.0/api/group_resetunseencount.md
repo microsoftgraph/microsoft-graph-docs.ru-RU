@@ -1,29 +1,12 @@
-# <a name="group-resetunseencount"></a>group: resetUnseenCount
-
-Сброс свойства unseenCount всех записей, которые пользователь не просматривал со своего предыдущего посещения. Поддерживается только для групп Office 365.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Group.ReadWrite.All* 
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/resetUnseenCount
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="4dcc5-p103">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="4dcc5-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="4dcc5-118">Пример</span><span class="sxs-lookup"><span data-stu-id="4dcc5-118">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="4dcc5-119">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="4dcc5-119">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="4dcc5-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="4dcc5-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="4dcc5-121">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4dcc5-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_resetunseencount"
@@ -32,8 +15,9 @@ POST /groups/{id}/resetUnseenCount
 POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <span data-ttu-id="4dcc5-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="4dcc5-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="4dcc5-123">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4dcc5-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

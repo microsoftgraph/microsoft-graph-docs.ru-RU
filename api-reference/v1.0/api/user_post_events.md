@@ -1,83 +1,4 @@
-# <a name="create-event"></a>Создание события
-
-Создайте [событие](../resources/event.md) в календаре пользователя по умолчанию или указанном календаре.
-
-В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md). 
-
-При создании события сервер отправляет приглашения всем участникам.
-
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events
-POST /users/{id | userPrincipalName}/events
-
-POST /me/calendar/events
-POST /users/{id | userPrincipalName}/calendar/events
-
-POST /me/calendars/{id}/events
-POST /users/{id | userPrincipalName}/calendars/{id}/events
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json. Обязательный.  |
-
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-
-Так как ресурс **event** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к событию при его создании.
-
-## <a name="response"></a>Ответ
-В случае успеха этот метод возвращает код ответа `201, Created` и объект [event](../resources/event.md) в тексте ответа.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса. В нем используется заголовок запроса `Prefer: outlook.timezone`, чтобы указать, что для параметров времени **start** и **end** в ответе следует использовать этот часовой пояс.
-<!-- {
-  "blockType": "request",
-  "name": "create_event_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/events
-Prefer: outlook.timezone="Pacific Standard Time"
-Content-type: application/json
-Content-length: 600
-
-{
-  "subject": "Let's go for lunch",
-  "body": {
-    "contentType": "HTML",
-    "content": "Does late morning work for you?"
-  },
-  "start": {
-      "dateTime": "2017-04-15T12:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "end": {
-      "dateTime": "2017-04-15T14:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "location":{
-      "displayName":"Harry's Bar"
-  },
-  "attendees": [
-    {
-      "emailAddress": {
-        "address":"fannyd@contoso.onmicrosoft.com",
-        "name": "Fanny Downs"
-      },
-      "type": "required"
-    }
-  ]
-}
-```
-Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-##### <a name="response"></a>Ответ
+<span data-ttu-id="4d001-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="4d001-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -159,10 +80,11 @@ Content-length: 2197
     }
 }
 ```
-## <a name="see-also"></a>См. также
+## <span data-ttu-id="4d001-131">См. также</span><span class="sxs-lookup"><span data-stu-id="4d001-131">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
-- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="4d001-132">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="4d001-132">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="4d001-133">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="4d001-133">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

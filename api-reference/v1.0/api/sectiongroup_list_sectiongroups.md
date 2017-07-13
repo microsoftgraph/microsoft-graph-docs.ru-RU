@@ -1,46 +1,4 @@
-# <a name="list-sectiongroups"></a>Перечисление sectionGroups
-
-Получение списка [групп разделов](../resources/sectiongroup.md) из указанной группы разделов.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для выполнения этого API требуется одно из следующих **разрешений**:  
-
-Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All.
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onenote/sectionGroups/{id}/sectionGroups
-GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sectionGroups
-GET /groups/{id}/onenote/sectionGroups/{id}/sectionGroups
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
-
-По умолчанию используется порядок сортировки `name asc`.
-
-Запрос, используемый по умолчанию, разворачивает `parentNotebook` и выбирает соответствующие свойства `id`, `displayName` и `self`. Допустимые значения `expand` для групп разделов: `sections`, `sectionGroups`, `parentNotebook` и `parentSectionGroup`.
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Accept | строка | `application/json` |  
-
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [sectionGroup](../resources/sectiongroup.md) в теле отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_sectiongroups"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sectionGroups
-```
-##### <a name="response"></a>Отклик
+<span data-ttu-id="78046-p103">Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="78046-p103">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

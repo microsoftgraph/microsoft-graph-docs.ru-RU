@@ -1,33 +1,18 @@
-# <a name="get-resource"></a>Получение ресурса
+<span data-ttu-id="6d2f0-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6d2f0-p101">Bearer token. Required.</span></span>  | Bearer {токен}. Обязательный. |
 
-Получение двоичных данных объекта [resource](../resources/resource.md) файла или изображения.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для выполнения этого API требуется одно из следующих **разрешений**:  
+## <span data-ttu-id="6d2f0-115">Основной текст запросов</span><span class="sxs-lookup"><span data-stu-id="6d2f0-115">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="6d2f0-116">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6d2f0-116">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="6d2f0-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="6d2f0-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="6d2f0-118">При успешном выполнении это метод возвращает код отклика `200 OK` и двоичные данные изображения или файла в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="6d2f0-118">If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.</span></span>
 
-Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All.
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onenote/resources/{id}/content
-GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
-GET /groups/{id}/onenote/resources/{id}/content
-```
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-При успешном выполнении это метод возвращает код отклика `200 OK` и двоичные данные изображения или файла в теле отклика.
-
-Примечание. Изображения не будут отображаться непосредственно в браузере, так как для их получения необходима авторизация (как и для остальной части содержимого страницы).
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+<span data-ttu-id="6d2f0-119">Примечание. Изображения не будут отображаться непосредственно в браузере, так как для их получения необходима авторизация (как и для остальной части содержимого страницы).</span><span class="sxs-lookup"><span data-stu-id="6d2f0-119">Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.</span></span>
+## <span data-ttu-id="6d2f0-120">Пример</span><span class="sxs-lookup"><span data-stu-id="6d2f0-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="6d2f0-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="6d2f0-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="6d2f0-122">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6d2f0-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_resource"
@@ -35,8 +20,9 @@ GET /groups/{id}/onenote/resources/{id}/content
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="6d2f0-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="6d2f0-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="6d2f0-124">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6d2f0-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

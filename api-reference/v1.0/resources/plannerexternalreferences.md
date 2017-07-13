@@ -1,20 +1,10 @@
-<a id="plannerexternalreferences-resource-type" class="xliff"></a>
-
-# Тип ресурса plannerExternalReferences
-
-Ресурс **plannerExternalReferences** представляет коллекцию справочных материалов для задачи. Это открытый тип. Он является частью объекта [сведений о задаче](plannertaskdetails.md). Значение в паре "свойство-значение" представляет собой объект [externalReference](plannerexternalreference.md).
-
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
+<span data-ttu-id="d2cc0-p102">Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить **допустимые URL-адреса** на базе протоколов **HTTP/HTTPS** в качестве свойств с объектами [externalReference](plannerexternalreference.md) в качестве значений. Согласно OData имена свойств в открытых типах не могут содержать символы `.`, `:` и `%`, поэтому их нужно зашифровать. Ниже показан пример. Чтобы удалить определенные справочные материалы, задайте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="d2cc0-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
 Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить **допустимые URL-адреса** на базе протоколов **HTTP/HTTPS** в качестве свойств с объектами [externalReference](plannerexternalreference.md) в качестве значений. Согласно OData имена свойств в открытых типах не могут содержать символы `.`, `:` и `%`, поэтому их нужно зашифровать. Ниже показан пример. Чтобы удалить определенные справочные материалы, задайте свойству значение `null`.
 
+## <span data-ttu-id="d2cc0-112">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="d2cc0-112">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
 
-## Представление в формате JSON
-
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="d2cc0-113">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d2cc0-113">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,7 +28,7 @@
 }
 ```
 
-Пример:
+<span data-ttu-id="d2cc0-114">Пример:</span><span class="sxs-lookup"><span data-stu-id="d2cc0-114">// Example</span></span>
 
 ```json
 {

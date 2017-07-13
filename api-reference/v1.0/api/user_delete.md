@@ -1,29 +1,11 @@
-# <a name="delete-a-user"></a>Удаление пользователя
-
-Удаление пользователя.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Directory.AccessAsUser.All*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id | userPrincipalName}
-```
-
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение|
-|:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="e2674-p102">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e2674-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="e2674-117">Пример</span><span class="sxs-lookup"><span data-stu-id="e2674-117">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="e2674-118">Запрос</span><span class="sxs-lookup"><span data-stu-id="e2674-118">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e2674-119">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e2674-119">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_user"
@@ -31,8 +13,9 @@ DELETE /users/{id | userPrincipalName}
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/mba9a3254-9f18-4209-aeb3-9e42a35b5be4
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <span data-ttu-id="e2674-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="e2674-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e2674-121">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e2674-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,33 +1,16 @@
-# <a name="get-photo"></a>Получение фотографии
+<span data-ttu-id="c1988-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c1988-p101">Bearer token. Required.</span></span>  | Bearer {токен}. Обязательный. |
 
-Получение свойств и связей объекта фотографии.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**:
-
-  * Files.Read
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | userPrincipalName}/photo
-GET /groups/{id}/photo
-GET /drive/root/createdByUser/photo
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="c1988-117">Основной текст запросов</span><span class="sxs-lookup"><span data-stu-id="c1988-117">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="c1988-118">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c1988-118">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="c1988-119">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1988-119">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="c1988-120">В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c1988-120">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <span data-ttu-id="c1988-121">Пример</span><span class="sxs-lookup"><span data-stu-id="c1988-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="c1988-122">Запрос</span><span class="sxs-lookup"><span data-stu-id="c1988-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="c1988-123">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c1988-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -35,8 +18,9 @@ GET /drive/root/createdByUser/photo
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="c1988-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1988-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="c1988-125">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c1988-125">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

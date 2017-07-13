@@ -1,50 +1,12 @@
-# <a name="event-decline"></a>event: decline
-
-Отклонение приглашения на указанное событие.
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/decline
-POST /users/{id | userPrincipalName}/events/{id}/decline
-POST /groups/{id}/events/{id}/decline
-
-POST /me/calendar/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
-POST /groups/{id}/calendar/events/{id}/decline
-
-POST /me/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
-
-POST /me/calendargroup/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/decline
-
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/decline
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/decline
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|comment|String|Текст, включенный в ответ. Необязательный.|
-|sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="388c6-p105">В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="388c6-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="388c6-135">Пример</span><span class="sxs-lookup"><span data-stu-id="388c6-135">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="388c6-136">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="388c6-136">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="388c6-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="388c6-137">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="388c6-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="388c6-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_decline"
@@ -60,9 +22,11 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a>Отклик
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="388c6-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="388c6-139">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="388c6-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="388c6-140">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="388c6-141">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="388c6-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

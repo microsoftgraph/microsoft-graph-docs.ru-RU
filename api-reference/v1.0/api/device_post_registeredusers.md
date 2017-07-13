@@ -1,47 +1,4 @@
-# <a name="create-registereduser"></a>Создание объекта registeredUser
-
-Добавление зарегистрированного пользователя устройства.
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных ниже **областей**. *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /devices/{id}/registeredUsers
-
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
-
-
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "create_directoryobject_from_device"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers
-Content-type: application/json
-Content-length: 30
-
-{
-  "directoryObject": {
-  }
-}
-```
-Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
-##### <a name="response"></a>Отклик
+<span data-ttu-id="e5b98-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="e5b98-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

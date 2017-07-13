@@ -1,35 +1,9 @@
-# <a name="plannerplan-resource-type"></a>Тип ресурса plannerPlan
+<span data-ttu-id="ae289-p109">Только для чтения. Допускает значение null. Коллекция задач в плане.</span><span class="sxs-lookup"><span data-stu-id="ae289-p109">Read-only. Nullable. Collection of tasks in the plan.</span></span>| Только для чтения. Допускает значение null. Коллекция задач в плане.|
 
-Ресурс **plannerPlan** представляет план в Office 365. План может принадлежать [группе](group.md). Он содержит коллекцию объектов [plannerTask](plannerTask.md). Кроме того, он может содержать коллекцию объектов [plannerBucket](plannerBucket.md). Каждый объект plan имеет объект [details](plannerPlanDetails.md), который может содержать дополнительные сведения о плане. Дополнительные сведения об отношениях, которыми связаны группы, планы и задачи, см. в статье [Планировщик](planner_overview.md).
+## <span data-ttu-id="ae289-171">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ae289-171">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
 
-## <a name="methods"></a>Методы
-
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Получение plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Считывание свойств и связей объекта **plannerPlan**.|
-|[Перечисление контейнеров](../api/plannerplan_list_buckets.md) |Коллекция [plannerBucket](plannerbucket.md)| Получение коллекции объектов **plannerBucket**.|
-|[Перечисление задач](../api/plannerplan_list_tasks.md) |Коллекция объектов [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[Обновление](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |Обновление объекта **plannerPlan**. |
-
-## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания плана. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id|String| Только для чтения. Идентификатор плана. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner_identifiers_disclaimer.md) выполняется в службе.|
-|owner|Строка|Идентификатор [группы](group.md), которая является владельцем плана. В этом поле можно указать только идентификатор существующей группы, которая допустима. После задания значения его сможет обновить только владелец.|
-|title|String|Обязательный. Название плана.|
-|createdBy|[identitySet](identityset.md)|Только для чтения. Пользователь, создавший этот план.|
-
-## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
-|:---------------|:--------|:----------|
-|buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускает значение null. Коллекция контейнеров в плане.|
-|подробности|[plannerPlanDetails](plannerplandetails.md)| Только для чтения. Допускает значение null. Дополнительные сведения о плане.|
-|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускает значение null. Коллекция задач в плане.|
-
-## <a name="json-representation"></a>Представление JSON
-
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="ae289-172">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ae289-172">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

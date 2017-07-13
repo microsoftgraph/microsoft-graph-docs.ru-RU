@@ -1,33 +1,13 @@
-<a id="domaindnscnamerecord-resource-type" class="xliff"></a>
-# Тип ресурса domainDnsCnameRecord
+<span data-ttu-id="bddb3-p107">Значение, используемое при настройке свойства срока жизни (ttl) записи CNAME на узле DNS. Не допускает значения null.</span><span class="sxs-lookup"><span data-stu-id="bddb3-p107">Value to use when configuring the time-to-live (ttl) property of the CNAME record at the DNS host. Not nullable</span></span>| Значение, используемое при настройке свойства срока жизни (ttl) записи CNAME на узле DNS. Не допускает значения null. |
 
-Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md).
-
-
-<a id="methods" class="xliff"></a>
-## Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).
-
-<a id="properties" class="xliff"></a>
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|canonicalName|String| Каноническое имя записи CNAME. Используется для настройки записи CNAME в узле DNS. |
-|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
-|isOptional|Boolean| Если имеет значение false, пользователю необходимо настроить запись CNAME на узле DNS, чтобы службы Microsoft Online Services правильно работали с доменом. Не допускает значения null. |
-|подпись|String| Значение, используемое при настройке *псевдонима, узла и имени* для записи CNAME на узле DNS. |
-|recordType|String| Тип записи DNS. Это свойство всегда имеет значение *CName*. Ключевое.|
-|supportedService|String| Служба или функция Microsoft Online, имеющая зависимость от этой записи CNAME.</br></br>Может иметь одно из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* или *Intune*.|
-|ttl|Int32| Значение, используемое при настройке свойства срока жизни (ttl) записи CNAME на узле DNS. Не допускает значения null. |
-
+## <span data-ttu-id="bddb3-139">Связи</span><span class="sxs-lookup"><span data-stu-id="bddb3-139">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## Связи
-Нет
+<span data-ttu-id="bddb3-140">Нет</span><span class="sxs-lookup"><span data-stu-id="bddb3-140">None</span></span>
 
 
+## <span data-ttu-id="bddb3-141">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bddb3-141">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="bddb3-142">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bddb3-142">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

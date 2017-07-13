@@ -1,38 +1,4 @@
-# <a name="list-directoryroletemplates"></a>Список объектов directoryRoleTemplate
-
-Получение списка объектов directoryRoleTemplate.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Directory.Read.All* ИЛИ *Directory.ReadWrite.All* ИЛИ *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /directoryRoleTemplates
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика (например, $filter не поддерживается).
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryRoleTemplate](../resources/directoryroletemplate.md) в теле отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-
-<!-- {
-  "blockType": "request",
-  "name": "get_directoryroletemplates"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
-```
-##### <a name="response"></a>Отклик
+<span data-ttu-id="3dcb5-p102">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3dcb5-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

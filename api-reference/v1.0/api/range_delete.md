@@ -1,39 +1,12 @@
-# <a name="range-delete"></a>Range: delete
-
-Удаляет ячейки, связанные с диапазоном.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются указанные **области**: 
-
-    * Files.ReadWrite.
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/names(<name>)/range/delete
-POST /workbook/worksheets/{id|name}/range(<address>)/delete
-POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
-
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Описание|
-|:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|shift|string|Указывает направление сдвига ячеек.  Возможные значения: `Up`, `Left`.|
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="ff4b5-p103">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="ff4b5-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="ff4b5-125">Пример</span><span class="sxs-lookup"><span data-stu-id="ff4b5-125">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="ff4b5-126">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="ff4b5-126">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="ff4b5-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="ff4b5-127">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="ff4b5-128">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ff4b5-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_delete"
@@ -48,8 +21,9 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <span data-ttu-id="ff4b5-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="ff4b5-129">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="ff4b5-130">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ff4b5-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

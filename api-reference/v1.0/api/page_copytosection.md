@@ -1,42 +1,12 @@
-# <a name="page-copytosection"></a>page: copyToSection
-Копирование страницы в определенный раздел.
-
-Для операций Copy необходимо использовать модель асинхронного вызова.  То есть сначала вызовите действие Copy, а затем опросите конечную точку операции, чтобы получить результат.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для выполнения этого API требуется одно из следующих **разрешений**:   
-
-Notes.Create, Notes.ReadWrite или Notes.ReadWrite.All.  
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/onenote/pages/{id}/copyToSection
-POST /users/{id | userPrincipalName}/onenote/pages/{id}/copyToSection
-POST /groups/{id}/onenote/pages/{id}/copyToSection
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите объект JSON, который содержит параметры, требуемые операцией.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|groupId|String|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
-|id|String|Обязательный. Идентификатор целевого раздела.|
-
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="ebac1-p104">В случае успешного выполнения этот метод возвращает код ответа `202 Accepted` и заголовок `Operation-Location`. [Чтобы получить сведения о состоянии операции копирования](onenoteoperation_get.md), опросите конечную точку Operation-Location.</span><span class="sxs-lookup"><span data-stu-id="ebac1-p104">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).</span></span>
 В случае успешного выполнения этот метод возвращает код ответа `202 Accepted` и заголовок `Operation-Location`. [Чтобы получить сведения о состоянии операции копирования](onenoteoperation_get.md), опросите конечную точку Operation-Location.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="ebac1-134">Пример</span><span class="sxs-lookup"><span data-stu-id="ebac1-134">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="ebac1-135">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="ebac1-135">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="ebac1-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="ebac1-136">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="ebac1-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ebac1-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "page_copytosection"
@@ -52,8 +22,9 @@ Content-length: 52
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="ebac1-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="ebac1-138">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="ebac1-139">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ebac1-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

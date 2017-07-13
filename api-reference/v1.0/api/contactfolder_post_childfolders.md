@@ -1,47 +1,4 @@
-# <a name="create-contactfolder"></a>Создание объекта ContactFolder
-
-Создание дочернего объекта contactFolder указанной папки. 
-
-Вы также можете [создать объект contactFolder в папке контактов пользователя по умолчанию](user_post_contactfolders.md).
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Contacts.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/contactFolders/{id}/childFolders
-POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json. Обязательный.  |
-
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [ContactFolder](../resources/contactfolder.md) в формате JSON.
-
-
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [ContactFolder](../resources/contactfolder.md) в тексте отклика.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "create_contactfolder_from_contactfolder"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
-Content-type: application/json
-Content-length: 84
-
-{
-  "displayName": "displayName-value"
-}
-```
-Предоставьте в тексте запроса описание объекта [contactFolder](../resources/contactfolder.md) в формате JSON.
-##### <a name="response"></a>Отклик
+<span data-ttu-id="8f4bc-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="8f4bc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

@@ -1,37 +1,13 @@
-<a id="plannerprogresstaskboardtaskformat-resource-type" class="xliff"></a>
+<span data-ttu-id="982e4-p103">Указание, используемое для расположения задачи в представлении "Ход выполнения" на доске задач. Используемый формат описан [здесь](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="982e4-p103">Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Указание, используемое для расположения задачи в представлении "Ход выполнения" на доске задач. Используемый формат описан [здесь](planner_order_hint_format.md).|
 
-# Тип ресурса plannerProgressTaskBoardTaskFormat
-
-Ресурс **plannerProgressTaskBoardTaskFormat** представляет информацию, используемую для правильного отображения задачи в представлении "Ход выполнения" на доске задач (представлении с сортировкой по состоянию поля PercentComplete и столбцами "Не начато", "В процессе" и "Выполнено"). С каждым объектом [task](plannertask.md) связан один объект **plannerProgressTaskBoardTaskFormat**.
-
-
-<a id="methods" class="xliff"></a>
-
-## Методы
-
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Получение объекта plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat_get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Чтение свойств и отношений объекта **plannerProgressTaskBoardTaskFormat**.|
-|[Обновление](../api/plannerprogresstaskboardtaskformat_update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |Обновление объекта **plannerProgressTaskBoardTaskFormat**. |
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner_identifiers_disclaimer.md) проводится для службы.|
-|orderHint|Строка|Указание, используемое для расположения задачи в представлении "Ход выполнения" на доске задач. Используемый формат описан [здесь](planner_order_hint_format.md).|
-
+## <span data-ttu-id="982e4-128">Связи</span><span class="sxs-lookup"><span data-stu-id="982e4-128">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-
-## Связи
-Нет
+<span data-ttu-id="982e4-129">Нет</span><span class="sxs-lookup"><span data-stu-id="982e4-129">None</span></span>
 
 
+## <span data-ttu-id="982e4-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="982e4-130">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="982e4-131">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="982e4-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

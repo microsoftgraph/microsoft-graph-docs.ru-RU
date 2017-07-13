@@ -1,31 +1,11 @@
-# <a name="delete-device"></a>Удаление устройства
-
-Удаление зарегистрированного устройства.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных ниже **областей**. *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /devices/{id}
-```
-> Примечание. Параметр id в запросе — это свойство id объекта device, а не свойство deviceId.
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="ed2a6-p102">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="ed2a6-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="ed2a6-120">Пример</span><span class="sxs-lookup"><span data-stu-id="ed2a6-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="ed2a6-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="ed2a6-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="ed2a6-122">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ed2a6-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -33,8 +13,9 @@ DELETE /devices/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="ed2a6-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="ed2a6-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="ed2a6-124">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ed2a6-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

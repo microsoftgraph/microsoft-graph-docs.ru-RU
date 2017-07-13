@@ -1,38 +1,14 @@
-# <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
-
-Удаление элемента из объекта directoryRole.
-
-## <a name="prerequisites"></a>Необходимые компоненты
-
-Для применения этого API требуется следующая **область**: *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP-запрос
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-DELETE /directoryroles/{id}/members/{id}/$ref
-```
-
-## <a name="request-headers"></a>Заголовки запросов
-
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-
-Не указывайте тело запроса для этого метода.
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="36c67-p102">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="36c67-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+## <span data-ttu-id="36c67-119">Пример</span><span class="sxs-lookup"><span data-stu-id="36c67-119">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Запрос
+##### <span data-ttu-id="36c67-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="36c67-120">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Ниже приведен пример запроса.
+<span data-ttu-id="36c67-121">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="36c67-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_directoryobject_from_directoryrole"
@@ -42,9 +18,10 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 DELETE https://graph.microsoft.com/v1.0/directoryroles/{id}/members/{id}/$ref
 ```
 
-##### <a name="response"></a>Отклик
+##### <span data-ttu-id="36c67-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="36c67-122">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Ниже приведен пример ответа. 
+<span data-ttu-id="36c67-123">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="36c67-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

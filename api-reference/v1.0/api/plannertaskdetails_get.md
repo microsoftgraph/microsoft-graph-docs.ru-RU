@@ -1,40 +1,4 @@
-# <a name="get-plannertaskdetails"></a>Получение объекта plannerTaskDetails
-
-Получение свойств и отношений объекта **plannertaskdetails**.
-### <a name="prerequisites"></a>Необходимые условия
-Для выполнения этого API требуются следующие **разрешения**: 
-
-*Groups.Read.All*
-
-### <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /planner/tasks/<id>/details
-```
-
-### <a name="request-headers"></a>Заголовки запросов
-| Имя      |Описание|
-|:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-
-### <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-### <a name="response"></a>Ответ
-В случае успеха этот метод возвращает код ответа `200 OK` и объект [plannerTaskDetails](../resources/plannertaskdetails.md) в тексте ответа.
-
-Этот метод может возвращать любые [коды состояния HTTP](../../../concepts/errors.md). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner_overview.md#common-planner-error-conditions).
-
-### <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_plannertaskdetails"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="fe9a5-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="fe9a5-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

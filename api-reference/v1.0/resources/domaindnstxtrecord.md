@@ -1,32 +1,13 @@
-<a id="domaindnstxtrecord-resource-type" class="xliff"></a>
-# Тип ресурса domainDnsTxtRecord
+<span data-ttu-id="92341-p105">Значение, используемое при настройке свойства *ttl* (срока жизни) для записи MX на узле DNS. Не допускает значения null.</span><span class="sxs-lookup"><span data-stu-id="92341-p105">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span>| Значение, используемое при настройке свойства *ttl* (срока жизни) для записи MX на узле DNS. Не допускает значения null. |
 
-Представляет запись типа TXT, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md).
-
-<a id="methods" class="xliff"></a>
-## Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).
-
-<a id="properties" class="xliff"></a>
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения. |
-|isOptional|Boolean| Если имеет значение false, пользователю необходимо настроить запись типа TXT на узле DNS, чтобы службы Microsoft Online Services правильно работали с доменом. |
-|label|String| Значение, используемое при настройке свойства *name* для записи типа TXT на узле DNS.|
-|recordType|String| Тип записи DNS. Это свойство всегда имеет значение *Txt*. Ключ. |
-|supportedService|String| Служба или компонент Microsoft Online Services, зависящие от этой записи типа TXT.</br></br>Возможные значения: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*. |
-|text|String| Значение, используемое при настройке свойства *text* на узле DNS. |
-|ttl|Int32| Значение, используемое при настройке свойства *ttl* (срока жизни) для записи MX на узле DNS. Не допускает значения null. |
-
+## <span data-ttu-id="92341-137">Связи</span><span class="sxs-lookup"><span data-stu-id="92341-137">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## Связи
-Нет
+<span data-ttu-id="92341-138">Нет</span><span class="sxs-lookup"><span data-stu-id="92341-138">None</span></span>
 
 
+## <span data-ttu-id="92341-139">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="92341-139">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="92341-140">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="92341-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

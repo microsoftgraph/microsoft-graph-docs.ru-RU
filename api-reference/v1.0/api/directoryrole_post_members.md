@@ -1,29 +1,18 @@
-# <a name="add-directory-role-member"></a>Добавление участника роли каталога
+<span data-ttu-id="abfb9-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="abfb9-p101">Bearer token. Required.</span></span>  | Bearer {токен}. Обязательный. |
+| <span data-ttu-id="abfb9-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="abfb9-114">Content-Type</span></span>  | <span data-ttu-id="abfb9-115">application/json</span><span class="sxs-lookup"><span data-stu-id="abfb9-115">application/json</span></span>  |
 
-С помощью этого API можно создать участника роли каталога.
+## <span data-ttu-id="abfb9-116">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="abfb9-116">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="abfb9-117">Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="abfb9-117">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется следующая **область**: *Directory.AccessAsUser.All*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /directoryRoles/{id}/members/$ref
+## <span data-ttu-id="abfb9-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="abfb9-118">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="abfb9-119">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`.</span><span class="sxs-lookup"><span data-stu-id="abfb9-119">If successful, this method returns `204, No Content` response code.</span></span>
 
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.
-
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204, No Content`.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+## <span data-ttu-id="abfb9-120">Пример</span><span class="sxs-lookup"><span data-stu-id="abfb9-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="abfb9-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="abfb9-121">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -38,8 +27,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. 
+##### <span data-ttu-id="abfb9-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="abfb9-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="abfb9-123">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="abfb9-123">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

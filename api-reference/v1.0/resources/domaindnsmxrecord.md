@@ -1,32 +1,12 @@
-<a id="domaindnsmxrecord-resource-type" class="xliff"></a>
-# Тип ресурса domainDnsMxRecord
+<span data-ttu-id="2417d-p105">Значение, используемое при настройке свойства *ttl* (срока жизни) для записи MX на узле DNS. Не допускает значения null.</span><span class="sxs-lookup"><span data-stu-id="2417d-p105">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span>| Значение, используемое при настройке свойства *ttl* (срока жизни) для записи MX на узле DNS. Не допускает значения null. |
 
-Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md).
-
-<a id="methods" class="xliff"></a>
-## Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).
-
-<a id="properties" class="xliff"></a>
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
-|isOptional|Boolean| Если указано значение false, для правильной работы Microsoft Online Services с доменом пользователь должен настроить запись MX на узле DNS. |
-|label|String| Значение, используемое при настройке свойства *псевдонима, узла или имени* для записи MX на узле DNS. |
-|mailExchange|String| Значение, используемое при настройке *значения, ответа или целевого объекта* для записи MX на узле DNS.|
-|preference|Int32| Значение, используемое при настройке свойства *приоритета или предпочтения* для записи MX на узле DNS. |
-|recordType|String| Тип записи DNS. Это свойство всегда имеет значение *Mx*. Ключ. |
-|supportedService|String| Служба или компонент Microsoft Online Services, зависящие от этой записи типа MX.</br></br>Возможные значения: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*. |
-|ttl|Int32| Значение, используемое при настройке свойства *ttl* (срока жизни) для записи MX на узле DNS. Не допускает значения null. |
-
+## <span data-ttu-id="2417d-140">Связи</span><span class="sxs-lookup"><span data-stu-id="2417d-140">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## Связи
-Нет
+<span data-ttu-id="2417d-141">Нет</span><span class="sxs-lookup"><span data-stu-id="2417d-141">None</span></span>
 
+## <span data-ttu-id="2417d-142">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2417d-142">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="2417d-143">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2417d-143">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

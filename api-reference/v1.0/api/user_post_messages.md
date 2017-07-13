@@ -1,60 +1,4 @@
-# <a name="create-message"></a>Создание объекта Message
-
-С помощью этого API можно создать черновик нового сообщения. Черновики можно создавать в любой папке и при необходимости изменять перед отправкой. Для сохранения в папке "Черновики" используйте ярлык /messages.
-
-Создавая черновик, в тот же **POST**-запрос вы можете включить [attachment](../resources/attachment.md).
-
-## <a name="prerequisites"></a>Обязательные условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages
-POST /users/{id|userPrincipalName}/messages
-POST /me/mailFolders/{id}/messages
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Тело запроса
-Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
-
-Так как ресурс **message** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в сообщение при его создании.
-
-
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [message](../resources/message.md) в теле отклика.
-
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "create_message_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/messages
-Content-type: application/json
-Content-length: 248
-
-{
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
-}
-```
-Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
-##### <a name="response-1"></a>Отклик 1
+<span data-ttu-id="3bd5b-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="3bd5b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -79,10 +23,11 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <span data-ttu-id="3bd5b-130">См. также</span><span class="sxs-lookup"><span data-stu-id="3bd5b-130">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
-- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="3bd5b-131">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="3bd5b-131">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="3bd5b-132">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="3bd5b-132">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

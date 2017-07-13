@@ -1,46 +1,4 @@
-# <a name="update-mailfolder"></a>Обновление объекта MailFolder
-
-Обновление свойств объекта MailFolder.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/mailFolders/{id}
-PATCH /users/{id | userPrincipalName}/mailFolders/{id}
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json. Обязательный.  |
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
-
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|displayName|Строка|Отображаемое имя объекта mailFolder.|
-
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "update_mailfolder"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/mailFolders/{id}
-Content-type: application/json
-Content-length: 159
-
-{
-  "displayName": "displayName-value",
-}
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="af1dc-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="af1dc-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

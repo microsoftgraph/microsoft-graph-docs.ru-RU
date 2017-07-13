@@ -1,45 +1,4 @@
-# <a name="assign-a-manager"></a>Назначение руководителя
-
-С помощью этого API можно назначить руководителя пользователю.
-> Примечание. Назначать подчиненных невозможно. Вместо этого используйте данный API.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных ниже **областей**. *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-PUT /users/{id}/manager/$ref
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.
-
-
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "create_directoryobject_from_group"
-}-->
-```http
-PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
-Content-type: application/json
-Content-length: xxx
-
-{
-  "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
-}
-```
-Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
-##### <a name="response"></a>Отклик
+<span data-ttu-id="e72ec-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="e72ec-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

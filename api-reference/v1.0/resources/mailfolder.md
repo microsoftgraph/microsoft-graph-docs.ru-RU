@@ -1,60 +1,10 @@
-# <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
-
-Элемент mailFolder в почтовом ящике пользователя, например папка "Входящие", "Черновики" или "Отправленные". Элементы mailFolder могут содержать сообщения и дочерние элементы mailFolder.
-
-В этом ресурсе возможно использование [запроса изменений](../../../concepts/delta_query_overview.md) для отслеживания добавочных дополнений, удалений и обновлений благодаря функции [delta](../api/mailfolder_delta.md).
-
-## <a name="methods"></a>Методы
-
-| Метод       | Возвращаемый тип  |Описание|
-|:---------------|:--------|:----------|
-|[Получение объекта mailFolder](../api/mailfolder_get.md) | [mailFolder](mailfolder.md) |Чтение свойств и связей объекта mailFolder.|
-|[Создание объекта MailFolder](../api/mailfolder_post_childfolders.md) |[MailFolder](mailfolder.md)| Создание объекта mailFolder в текущем объекте путем публикации в коллекции элементов childFolders.|
-|[Вывод списка объектов childFolder](../api/mailfolder_list_childfolders.md) |Коллекция [MailFolder](mailfolder.md)| Получение коллекции папок в указанной папке. С помощью ярлыка `.../me/MailFolders` вы можете получить коллекцию папок верхнего уровня и перейти к другой папке.|
-|[Создание сообщения](../api/mailfolder_post_messages.md) |[Message](message.md)| Создание сообщения в текущем элементе mailFolder путем его публикации в коллекции сообщений.|
-|[Вывод списка сообщений](../api/mailfolder_list_messages.md) |Коллекция объектов [Message](message.md)| Получение всех сообщений в почтовом ящике пользователя, вошедшего в систему, или в указанной папке почтового ящика.|
-|[Обновление](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)|Обновление указанного объекта mailFolder. |
-|[Удаление](../api/mailfolder_delete.md) | Нет |Удаление указанного объекта mailFolder. |
-|[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|Копирование элемента mailFolder и его содержимого в другой элемент mailFolder.|
-|[delta](../api/mailfolder_delta.md)|Коллекция [mailFolder](mailfolder.md)|Получение набора папок почты, которые были добавлены в почтовый ящик пользователя или удалены из него.|
-|[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|Перемещение элемента mailFolder и его содержимого в другой элемент mailFolder.|
-|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем элементе mailFolder.   |
-|[Получение элемента mailFolder с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Получение элементов mailFolder, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
-|[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [mailFolder](mailFolder.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем элементе mailFolder.  |
-|[Получение элемента mailFolder с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Получение элемента mailFolder, который содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |
+<span data-ttu-id="72166-p107">Коллекция расширенных свойств с одним значением, определенных для элемента mailFolder. Только для чтения. Допускается значение null.</span><span class="sxs-lookup"><span data-stu-id="72166-p107">The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.</span></span>| Коллекция расширенных свойств с одним значением, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
 
 
-## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|childFolderCount|Int32|Количество непосредственных дочерних элементов mailFolder в текущем элементе mailFolder.|
-|displayName|Строка|Отображаемое имя элемента mailFolder.|
-|id|String|Уникальный идентификатор элемента mailFolder. Вы можете использовать следующие известные имена для доступа к соответствующим папкам: Inbox, Drafts, SentItems, DeletedItems.|
-|parentFolderId|Строка|Уникальный идентификатор родительского элемента mailFolder для элемента mailFolder.|
-|totalItemCount|Int32|Количество элементов в элементе mailFolder.|
-|unreadItemCount|Int32|Количество элементов, помеченных как непрочитанные, в элементе mailFolder.|
+## <span data-ttu-id="72166-200">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="72166-200">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
 
-**Эффективный доступ к сведениям о количестве элементов**
-
-Используя такие свойства папки, как TotalItemCount и UnreadItemCount, можно удобно вычислять количество прочитанных элементов в папке. Благодаря им можно не использовать запросы (например, указанный ниже), выполнение которых может привести к значительным задержкам.
-```
-https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
-```
-Элементы mailFolder в Outlook могут содержать элементы нескольких типов, например, папка "Входящие" может содержать элементы приглашений на собрания, не связанные с почтовыми элементами. Свойства TotalItemCount и UnreadItemCount включают элементы в элементе mailFolder независимо от их типов.
-
-
-## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
-|:---------------|:--------|:----------|
-|childFolders|Коллекция объектов [MailFolder](mailfolder.md)|Коллекция дочерних папок в элементе mailFolder.|
-|messages|Коллекция объектов [Message](message.md)|Коллекция сообщений в элементе mailFolder.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
-
-
-## <a name="json-representation"></a>Представление JSON
-
-Ниже этот ресурс представлен в формате JSON.
+<span data-ttu-id="72166-201">Ниже этот ресурс представлен в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="72166-201">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -85,10 +35,11 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 
 ```
 
-## <a name="see-also"></a>См. также
+## <span data-ttu-id="72166-202">См. также</span><span class="sxs-lookup"><span data-stu-id="72166-202">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](../../../concepts/delta_query_overview.md)
-- [Получение добавочных изменений сообщений в папке](../../../concepts/delta_query_messages.md)
+- [<span data-ttu-id="72166-203">Отслеживание изменений данных Microsoft Graph с помощью разностного запроса</span><span class="sxs-lookup"><span data-stu-id="72166-203">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
+- [<span data-ttu-id="72166-204">Получение добавочных изменений сообщений в папке</span><span class="sxs-lookup"><span data-stu-id="72166-204">Get incremental changes to messages in a folder</span></span>](../../../concepts/delta_query_messages.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

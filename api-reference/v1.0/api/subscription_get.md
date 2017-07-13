@@ -1,28 +1,16 @@
-# <a name="get-subscription"></a>Получение подписки
+<span data-ttu-id="a85af-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a85af-p101">Bearer token. Required.</span></span>  | Bearer {токен}. Обязательный. |
 
-Получение свойств и связей подписки.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных ниже **областей** (в зависимости от целевого ресурса): *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* или *Files.ReadWrite.All*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /subscriptions/{subscriptionId}
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [subscription](../resources/subscription.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="a85af-116">Основной текст запросов</span><span class="sxs-lookup"><span data-stu-id="a85af-116">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="a85af-117">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a85af-117">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="a85af-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="a85af-118">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="a85af-119">В случае успеха этот метод возвращает код отклика `200 OK` и объект [subscription](../resources/subscription.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a85af-119">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <span data-ttu-id="a85af-120">Пример</span><span class="sxs-lookup"><span data-stu-id="a85af-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="a85af-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="a85af-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="a85af-122">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a85af-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_subscription"
@@ -30,8 +18,9 @@ GET /subscriptions/{subscriptionId}
 ```http
 GET https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="a85af-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="a85af-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="a85af-124">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a85af-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

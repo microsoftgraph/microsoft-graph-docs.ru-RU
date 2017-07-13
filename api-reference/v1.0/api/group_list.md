@@ -1,48 +1,4 @@
-# <a name="list-groups"></a>Список групп
-
-Список всех групп, доступных в организации, в том числе из функции "Группы Office 365". Возвращаются [свойства по умолчанию](../api/group_get.md#default-properties) для каждой группы.
-
-Чтобы получить только результаты из функции "Группы Office 365" (т. н. единые группы), примените фильтр **groupTypes**:
-```
-GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
-```
-
-С помощью параметра `$orderby` запросов OData можно сортировать группы в организации по значениям **displayName**, как показано в следующем примере:
-```
-GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
-```
-
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Group.Read.All* или *Group.ReadWrite.All*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /groups
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [group](../resources/group.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_groups"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/groups
-```
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+<span data-ttu-id="d8ad9-p103">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове возвращаются [все свойства](../api/group_get.md#default-properties).</span><span class="sxs-lookup"><span data-stu-id="d8ad9-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
 
 Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове возвращаются [все свойства](../api/group_get.md#default-properties).
 

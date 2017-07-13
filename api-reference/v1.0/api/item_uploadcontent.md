@@ -1,18 +1,20 @@
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Отправка или замена содержимого элемента driveItem
+<span data-ttu-id="e5195-p101">Используя простой API отправки, вы можете отправлять содержимое нового файла или обновлять содержимое существующего файла с помощью одного вызова API. Этот метод поддерживает файлы размером не более 4 МБ.</span><span class="sxs-lookup"><span data-stu-id="e5195-p101">The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.</span></span>
 
 Используя простой API отправки, вы можете отправлять содержимое нового файла или обновлять содержимое существующего файла с помощью одного вызова API. Этот метод поддерживает файлы размером не более 4 МБ.
 
-Сведения о том, как отправлять большие файлы, см. в разделе [Отправка больших файлов с помощью сеанса отправки](item_createuploadsession.md).
+<span data-ttu-id="e5195-104">Сведения о том, как отправлять большие файлы, см. в разделе [Отправка больших файлов с помощью сеанса отправки](item_createuploadsession.md).</span><span class="sxs-lookup"><span data-stu-id="e5195-104">To upload large files see [Upload large files with an upload session](item_createuploadsession.md).</span></span>
 
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**:
+## <span data-ttu-id="e5195-105">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="e5195-105">Prerequisites</span></span>
+<a id="prerequisites" class="xliff"></a>
+<span data-ttu-id="e5195-106">Для применения этого API требуется одна из указанных **областей**:</span><span class="sxs-lookup"><span data-stu-id="e5195-106">One of the following **scopes** is required to execute this API:</span></span>
 
-* Files.ReadWrite.
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+* <span data-ttu-id="e5195-107">Files.ReadWrite.</span><span class="sxs-lookup"><span data-stu-id="e5195-107">Files.ReadWrite</span></span>
+* <span data-ttu-id="e5195-108">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5195-108">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="e5195-109">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5195-109">Sites.ReadWrite.All</span></span>
 
 
-## <a name="http-request"></a>HTTP-запрос
+## <span data-ttu-id="e5195-110">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e5195-110">HTTP request</span></span>
+<a id="http-request" class="xliff"></a>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /me/drive/items/{parent-id}:/{filename}:/content
@@ -21,14 +23,17 @@ PUT /me/drive/items/{parent-id}/children/{filename}/content
 PUT /groups/{id}/drive/items/{parent-id}/children/{filename}/content
 ```
 
-## <a name="request-body"></a>Основной текст запроса
-Содержимое текста запроса должно представлять собой двоичный поток файла, который необходимо отправить.
+## <span data-ttu-id="e5195-111">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="e5195-111">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="e5195-112">Содержимое текста запроса должно представлять собой двоичный поток файла, который необходимо отправить.</span><span class="sxs-lookup"><span data-stu-id="e5195-112">The contents of the request body should be the binary stream of the file to be uploaded.</span></span>
 
-## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает объект [driveItem](../resources/driveitem.md) в тексте отклика для вновь созданного файла.
+## <span data-ttu-id="e5195-113">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5195-113">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e5195-114">При успешном выполнении этот метод возвращает объект [driveItem](../resources/driveitem.md) в тексте отклика для вновь созданного файла.</span><span class="sxs-lookup"><span data-stu-id="e5195-114">If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created file.</span></span>
 
-## <a name="example"></a>Пример
-В этом примере показано, как отправить файл с указанием пути в хранилище OneDrive пользователя, вошедшего в систему.
+## <span data-ttu-id="e5195-115">Пример</span><span class="sxs-lookup"><span data-stu-id="e5195-115">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="e5195-116">В этом примере показано, как отправить файл с указанием пути в хранилище OneDrive пользователя, вошедшего в систему.</span><span class="sxs-lookup"><span data-stu-id="e5195-116">This example uploads a file by path to the signed-in user's OneDrive.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -41,8 +46,9 @@ Content-type: text/plain
 The contents of the file goes here.
 ```
 
-## <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+## <span data-ttu-id="e5195-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5195-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e5195-118">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e5195-118">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

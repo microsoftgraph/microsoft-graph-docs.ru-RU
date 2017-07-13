@@ -1,15 +1,7 @@
-<a id="plannerorderhintsbyassignee-resource-type" class="xliff"></a>
-
-# Тип ресурса plannerOrderHintsByAssignee
-
-**plannerOrderHintsByAssignee** — это ресурс, который содержит [указания в отношении порядка](planner_order_hint_format.md) расположения исполнителей задачи [plannerTask](plannerTask.md) в представлении "Кому назначено" на доске задач. Это открытый тип. Свойства — это идентификаторы исполнителей, а значения — указания в отношении порядка расположения.
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
+<span data-ttu-id="2b601-p102">Свойства открытого типа может задавать клиент. Он должен указать идентификаторы исполнителей как имена свойств, а допустимое [указание в отношении порядка расположения](planner_order_hint_format.md) как значение. Свойства этого типа невозможно удалить. Служба будет автоматически удалять значения после обновления заданий в содержащем их объекте [plannerTask](plannerTask.md).</span><span class="sxs-lookup"><span data-stu-id="2b601-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner_order_hint_format.md) as the value. Properties cannot be removed from this type. The service will automatically remove values as the assignments on the containing [plannerTask](plannerTask.md) are updated.</span></span>
 Свойства открытого типа может задавать клиент. Он должен указать идентификаторы исполнителей как имена свойств, а допустимое [указание в отношении порядка расположения](planner_order_hint_format.md) как значение. Свойства этого типа невозможно удалить. Служба будет автоматически удалять значения после обновления заданий в содержащем их объекте [plannerTask](plannerTask.md).
 
-Пример:
+<span data-ttu-id="2b601-110">Пример:</span><span class="sxs-lookup"><span data-stu-id="2b601-110">Example:</span></span>
 
 <!-- {
   "blockType": "resource",

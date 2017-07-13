@@ -1,31 +1,10 @@
-# <a name="delete-directoryobject"></a>Удаление объекта directoryObject
-
-Удаляет объект directoryObject.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются указанные ниже **области**. _Directory.AccessAsUser.All_
-
-**ПРИМЕЧАНИЕ.** Пользователи, группы и контакты являются типами объекта каталога. По этой причине, если вам нужно удалить пользователей, можно и нужно использовать следующую **область**: _User.ReadWrite.All_
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /directoryObjects/{id}
-
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="f553d-p103">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="f553d-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+## <span data-ttu-id="f553d-121">Пример</span><span class="sxs-lookup"><span data-stu-id="f553d-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="f553d-122">Запрос</span><span class="sxs-lookup"><span data-stu-id="f553d-122">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -34,7 +13,8 @@ DELETE /directoryObjects/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
 ```
-##### <a name="response"></a>Отклик
+##### <span data-ttu-id="f553d-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="f553d-123">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

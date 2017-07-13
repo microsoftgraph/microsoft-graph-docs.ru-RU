@@ -1,46 +1,4 @@
-# <a name="get-domain"></a>Получение домена
-
-Получение свойств и связей объекта домена.
-
-### <a name="prerequisites"></a>Необходимые условия
-
-Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All* или *Domain.ReadWrite.All*.
-
-### <a name="http-request"></a>HTTP-запрос
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /domains/{id}
-```
-
-> В качестве параметра {id} укажите домен, используя его полное доменное имя.
-
-### <a name="optional-query-parameters"></a>Необязательные параметры запросов
-
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
-
-### <a name="request-headers"></a>Заголовки запросов
-
-| Имя      |Описание|
-|:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
-### <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [domain](../resources/domain.md) в теле отклика.
-### <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-
-<!-- {
-  "blockType": "request",
-  "name": "get_domain"
-}-->
-```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com
-```
-##### <a name="response"></a>Отклик
+<span data-ttu-id="fb6d4-p102">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fb6d4-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

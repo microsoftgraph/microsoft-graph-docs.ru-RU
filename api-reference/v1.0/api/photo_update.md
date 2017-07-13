@@ -1,33 +1,17 @@
-# <a name="update-photo"></a>Обновление фотографии
-
-Обновление свойств объекта фотографии.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**:
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /users/{id | userPrincipalName}/photo
-PATCH /groups/{id}/photo
-PATCH /drive/root/createdByUser/photo
-```
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-
-## <a name="request-body"></a>Текст запроса
+<span data-ttu-id="41e72-p102">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="41e72-p102">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Описание|
+| <span data-ttu-id="41e72-118">Свойство</span><span class="sxs-lookup"><span data-stu-id="41e72-118">Property</span></span>     | <span data-ttu-id="41e72-119">Тип</span><span class="sxs-lookup"><span data-stu-id="41e72-119">Type</span></span>   |<span data-ttu-id="41e72-120">Описание</span><span class="sxs-lookup"><span data-stu-id="41e72-120">Description</span></span>|
 |:---------------|:--------|:----------|
 
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [photo](../resources/photo.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="41e72-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="41e72-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="41e72-122">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [photo](../resources/photo.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="41e72-122">If successful, this method returns a `200 OK` response code and updated [photo](../resources/photo.md) object in the response body.</span></span>
+## <span data-ttu-id="41e72-123">Пример</span><span class="sxs-lookup"><span data-stu-id="41e72-123">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="41e72-124">Запрос</span><span class="sxs-lookup"><span data-stu-id="41e72-124">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="41e72-125">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="41e72-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_photo"
@@ -43,8 +27,9 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="41e72-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="41e72-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="41e72-127">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="41e72-127">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -1,30 +1,11 @@
-# <a name="delete-page"></a>Удаление страницы
-
-Удаление страницы OneNote.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из следующих **областей**:   
-
-Notes.ReadWrite или Notes.ReadWrite.All. 
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/onenote/pages/{id}
-DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
-DELETE /groups/{id}/oennote/pages/{id}
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-
-## <a name="response"></a>Ответ
+<span data-ttu-id="89967-p102">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="89967-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="89967-118">Пример</span><span class="sxs-lookup"><span data-stu-id="89967-118">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="89967-119">Запрос</span><span class="sxs-lookup"><span data-stu-id="89967-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="89967-120">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="89967-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_page"
@@ -32,8 +13,9 @@ DELETE /groups/{id}/oennote/pages/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="89967-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="89967-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="89967-122">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="89967-122">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

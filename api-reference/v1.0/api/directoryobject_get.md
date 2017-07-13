@@ -1,40 +1,4 @@
-# <a name="get-directoryobject"></a>Получение объекта DirectoryObject
-
-Получение свойств и связей объекта DirectoryObject.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных ниже **областей**. 
-- _Directory.Read.All_ 
-- _Directory.AccessAsUser.All_
-
-> Примечание. Области разрешений перечислены в порядке возрастания необходимого уровня привилегий.
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /directoryObjects/{id}
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-
-<!-- {
-  "blockType": "request",
-  "name": "get_directoryobject"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
-```
-##### <a name="response"></a>Отклик
+<span data-ttu-id="e7c1a-p102">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e7c1a-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

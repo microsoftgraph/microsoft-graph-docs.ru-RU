@@ -1,49 +1,12 @@
-# <a name="event-snoozereminder"></a>event: snoozeReminder
-
-Откладывание напоминания до нового времени.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/events/{id}/snoozeReminder
-POST /groups/{id}/events/{id}/snoozeReminder
-
-POST /me/calendar/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
-POST /groups/{id}/calendar/events/{id}/snoozeReminder
-
-POST /me/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|newReminderTime|DateTimeTimeZone|Новые дата и время для активации напоминания.|
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="110c3-p103">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="110c3-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="110c3-129">Пример</span><span class="sxs-lookup"><span data-stu-id="110c3-129">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="110c3-130">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="110c3-130">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="110c3-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="110c3-131">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="110c3-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="110c3-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_snoozereminder"
@@ -61,8 +24,9 @@ Content-length: 97
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="110c3-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="110c3-133">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="110c3-134">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="110c3-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

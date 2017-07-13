@@ -1,43 +1,4 @@
-# <a name="create-calendar"></a>Создание объекта Calendar
-
-С помощью этого API можно создать календарь.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id | userPrincipalName}/calendars
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
-
-
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [calendar](../resources/calendar.md) в тексте отклика.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "create_calendar_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/calendars
-Content-type: application/json
-
-{
-  "name": "Volunteer"
-}
-```
-Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
-##### <a name="response"></a>Отклик
+<span data-ttu-id="45d12-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="45d12-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

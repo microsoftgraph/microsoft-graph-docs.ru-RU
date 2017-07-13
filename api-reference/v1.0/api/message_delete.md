@@ -1,31 +1,11 @@
-# <a name="delete-message"></a>Удаление сообщения
-
-Удаление сообщения.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite* 
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/messages/{id}
-DELETE /users/{id | userPrincipalName}/messages/{id}
-DELETE /me/mailFolders/{id}/messages/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="404b6-p102">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="404b6-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="404b6-119">Пример</span><span class="sxs-lookup"><span data-stu-id="404b6-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="404b6-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="404b6-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="404b6-121">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="404b6-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_message"
@@ -33,8 +13,9 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <span data-ttu-id="404b6-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="404b6-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="404b6-123">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="404b6-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

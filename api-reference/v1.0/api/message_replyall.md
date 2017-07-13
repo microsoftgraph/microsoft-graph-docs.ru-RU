@@ -1,37 +1,12 @@
-# <a name="message-replyall"></a>message: replyAll
-
-Ответ всем получателям сообщения. Затем сообщение сохраняется в папке "Отправленные".
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.Send*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/me/messages/{id}/replyAll
-POST /users/{id | userPrincipalName}/messages/{id}/replyAll
-POST /me/mailFolders/{id}/messages/{id}/replyAll
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|comment|String|Добавляемый комментарий. Может быть пустой строкой.|
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="ec2bd-p105">В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="ec2bd-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `202, Accepted`. В теле отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="ec2bd-131">Пример</span><span class="sxs-lookup"><span data-stu-id="ec2bd-131">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="ec2bd-132">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="ec2bd-132">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="ec2bd-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="ec2bd-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="ec2bd-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ec2bd-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_replyall"
@@ -47,8 +22,9 @@ Content-length: 32
 ```
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="ec2bd-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="ec2bd-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="ec2bd-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ec2bd-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

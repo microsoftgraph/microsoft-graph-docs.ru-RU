@@ -1,127 +1,39 @@
-# <a name="add-custom-data-to-resources-using-extensions"></a>Добавление пользовательских данных в ресурсы с помощью расширений
-
-Microsoft Graph предоставляет одну конечную точку API для доступа к полезным данным и статистике по пользователям с помощью ряда ресурсов, например [user](../api-reference/v1.0/resources/user.md) и [message](../api-reference/v1.0/resources/message.md). Теперь существует способ _**расширить**_ Microsoft Graph с помощью собственных данных приложения. Для добавления специальных свойств в ресурсы Microsoft Graph внешнее хранилище данных не нужно. Например, вы можете хранить данные профиля пользователя приложения в Microsoft Graph, дополнив объект **user**. Кроме того, вы можете оставить существующее хранилище для профилей пользователей приложения и просто добавить идентификатор хранилища приложения в ресурс **user**.
-
-В Microsoft Graph есть два типа расширений. Выберите тип с учетом особенностей вашего приложения:
-
-*  **Открытые расширения**. Отличный способ начать для разработчиков.
-*  **Расширения схемы**. Более универсальный механизм для разработчиков, которых интересует хранение типизированных данных, возможность совместного доступа к схеме, фильтрации, а также проверки и авторизации входных данных.
-
->**Важно!** Не используйте расширения для хранения данных учетных записей, государственных идентификационных номеров, данных держателей карт, данных финансовых счетов, медицинских сведений и конфиденциальных биографических данных.
-
-## <a name="supported-resources"></a>Поддерживаемые ресурсы
-
-В следующей таблице перечислены ресурсы, которые поддерживают открытые расширения и расширения схемы, и указано, находятся ли они на стадии общей доступности (доступны в конечных точках бета-версии и версии 1.0) или бета-тестирования (доступны только в конечной точке бета-версии).  
-
-| Ресурс | Открытые расширения | Расширения схемы |
-|---------------|-------|-------|
-| [Административная единица](../api-reference/beta/resources/administrativeunit.md) | Только предварительная версия | Только предварительная версия |
-|  [event](../api-reference/v1.0/resources/event.md) для календаря | Общедоступная версия | Общедоступная версия |
-|  [device](../api-reference/v1.0/resources/device.md) | Общедоступная версия | Общедоступная версия |
-|  [group](../api-reference/v1.0/resources/group.md) | Общедоступная версия | Общедоступная версия |
-|  [event для календаря группы](../api-reference/v1.0/resources/event.md) | Общедоступная версия | Общедоступная версия |
-|  [post цепочки беседы группы](../api-reference/v1.0/resources/post.md) | Общедоступная версия | Общедоступная версия |
-|  [message](../api-reference/v1.0/resources/message.md) | Общедоступная версия | Общедоступная версия |
-|  [organization](../api-reference/v1.0/resources/organization.md) | Общедоступная версия | Общедоступная версия |
-|  [contact](../api-reference/v1.0/resources/contact.md) (личный контакт)| Общедоступная версия | Общедоступная версия |
-|  [user](../api-reference/v1.0/resources/user.md) | Общедоступная версия | Общедоступная версия |
-
-Расширения всех этих ресурсов можно использовать, выполнив вход с помощью рабочей или учебной учетной записи. Кроме того, выполнив вход с помощью личной учетной записи, можно использовать расширения следующих ресурсов: **event**, **post**, **group**, **message**, **contact** и **user**. 
-
-## <a name="open-extensions"></a>Открытые расширения
-
-[Открытые расширения](../api-reference/v1.0/resources/opentypeextension.md) (прежнее название — расширения данных Office 365) относятся к [открытым типам](http://www.odata.org/getting-started/advanced-tutorial/#openType) и позволяют добавлять нетипизированные данные приложений непосредственно в экземпляр ресурса. 
-
-Открытые расширения, наряду с их пользовательскими данными, доступны через свойство навигации **extensions** экземпляра ресурса. Свойство **extensionName** — это единственное _предварительно определенное_ записываемое свойство в открытом расширении. При создании открытого расширения нужно назначить свойству **extensionName** имя, которое уникально для клиента. Для этого можно использовать обратный формат службы доменных имен (DNS), который зависит от _вашего собственного домена_, например `Com.Contoso.ContactInfo`. Не используйте домен Майкрософт (`Com.Microsoft` или `Com.OnMicrosoft`) в имени расширения.
-
-Вы можете [создать открытое расширение](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md) в экземпляре ресурса и сохранить в нем все пользовательские данные с помощью одной операции (обратите внимание на [приведенные ниже ограничения](known_issues.md#extensions) для некоторых поддерживаемых ресурсов). Позже вы сможете [считывать](../api-reference/v1.0/api/opentypeextension_get.md), [обновлять](../api-reference/v1.0/api/opentypeextension_update.md) или [удалять](../api-reference/v1.0/api/opentypeextension_delete.md) расширение и его данные.
-
-Пример открытого расширения см. в статье [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](extensibility_open_users.md).
-
-## <a name="schema-extensions"></a>Расширения схемы
-
-[Расширения схемы](../api-reference/v1.0/resources/schemaextension.md) дают возможность определять схему, используемую для расширения типа ресурса. Вначале нужно создать определение расширения схемы. Затем используйте ее для расширения экземпляров ресурса с помощью строго типизированных пользовательских данных. Кроме того, с помощью свойства [status](#schema-extensions-lifecycle) можно сделать так, чтобы расширение схемы было доступно другим приложениям. Эти приложения смогут использовать расширение для собственных данных и создавать на его основе другие типы взаимодействия.
-
-При создании определения расширения схемы необходимо присвоить уникальное имя его свойству **id**. Есть два варианта:
-
-- Если у вас уже есть личный подтвержденный домен `.com`, уникальное имя может состоять из доменного имени и имени схемы в следующем формате: \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Например, `contoso_mySchema`, если ваш личный домен — contoso.com.  Это предпочтительный способ.
-- Если у вас нет подтвержденного личного домена, можете присвоить свойству **id** имя схемы (без префикса в виде доменного имени), например `mySchema`. Microsoft Graph присвоит ему идентификатор строки на основе предоставленного имени в следующем формате: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.  Например, `extkvbmkofy_mySchema`.
-
-Это уникальное имя **id** будет использоваться как имя сложного типа, который будет хранить ваши пользовательские данные в экземпляре расширенного ресурса. 
-
-В отличие от открытых расширений, для управления определениями расширений схемы ([list](../api-reference/v1.0/api/schemaextension_list.md), [create](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), [get](../api-reference/v1.0/api/schemaextension_get.md), [update](../api-reference/v1.0/api/schemaextension_update.md) и [delete](../api-reference/v1.0/api/schemaextension_delete.md)) и их данными (для добавления, получения, обновления и удаления данных) нужны отдельные наборы операций API. 
-
-Так как расширения схемы доступны в виде сложных типов в экземплярах целевых ресурсов, вы можете выполнять операции CRUD над пользовательскими данными в расширении схемы следующими способами:
-
-- Указывать пользовательские данные при создании нового экземпляра ресурса с помощью метода `POST`.
-- Читать пользовательские данные с помощью метода `GET`.
-- Добавлять или обновлять пользовательские данные в существующем экземпляре ресурса с помощью метода `PATCH`.
-- Устанавливать значение null для сложного типа с помощью метода `PATCH` для удаления пользовательских данных в экземпляре ресурса. 
-
-Пример расширения схемы см. в статье [Добавление пользовательских данных в группы с помощью расширений схемы](extensibility_schema_groups.md).
-
-
-### <a name="schema-extensions-lifecycle"></a>Жизненный цикл расширений схемы
-
-Когда приложение создает определение расширения схемы, оно помечается как владелец такого расширения. 
-
-Приложение-владелец может перемещать расширение из одного состояния в другое, используя операцию PATCH для свойства **status**. В зависимости от текущего состояния приложение-владелец может обновлять или удалять расширение. Любые обновления расширения схемы должны всегда быть только дополнительными и не прерывающими.
-
-
-| Состояние | Поведение в состоянии жизненного цикла |
-|-------------|------------|
-| InDevelopment | <ul><li>Начальное состояние после создания. Идет разработка расширения схемы, которую выполняет приложение-владелец. </li><li>В этом состоянии только приложение-владелец может расширять экземпляры ресурса с использованием этого определения схемы и только в том каталоге, в котором данное приложение зарегистрировано. </li><li>Только приложение-владелец может добавить изменения в определение расширения или удалить его. </li><li>Приложение-владелец может заменить состояние **InDevelopment** расширения на **Available**.</li></ul> |
-| Available | <ul><li>Расширение схемы доступно для всех приложений в любом клиенте. </li><li>После того как приложение-владелец заменит состояние расширения на **Available**, любое приложение может просто добавлять пользовательские данные в экземпляры ресурсов, типы которых указаны в расширении (если у приложения есть соответствующие разрешения). Приложение может назначать пользовательские данные при создании нового экземпляра или обновлении существующего. </li><li>Только приложение-владелец может добавлять изменения в определение расширения. <br>В этом состоянии удалить определение расширения не может никакое приложение. </li><li>Приложение-владелец может изменить состояние **Available** расширения схемы на **Deprecated**.</li></ul> |
-| Deprecated | <ul><li>Определение расширения схемы больше не доступно для чтения или изменения. </li><li>Приложения не могут просмотреть, обновить, добавить свойства или удалить расширение. </li><li>Но они по-прежнему могут читать, обновлять и удалять _значения свойств_ расширения. </li><li>Приложение-владелец может заменить состояние **Deprecated** расширения схемы на **Available**.</li></ul> |
-
-### <a name="supported-property-data-types"></a>Поддерживаемые типы данных свойств
-
-При определении свойства в расширении схемы поддерживаются следующие типы данных:
-
-| Тип свойства | Примечания |
-|-------------|------------|
-| Binary | Не более 256 байт. |
-| Boolean | Не поддерживается для ресурсов message, event и post. |
-| DateTime | Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC. |
-| Целое число | 32-разрядное значение. Не поддерживается для ресурсов message, event и post. |
-| String | Не более 256 символов |
-
->**Примечание.** Многозначные свойства не поддерживаются.
-
-### <a name="azure-ad-directory-schema-extensions"></a>Расширения схемы каталога Azure AD
-
-Azure AD поддерживает схожий тип расширений, известный как [расширения схемы каталога](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), для нескольких ресурсов [directoryObject](../api-reference/v1.0/resources/directoryObject.md). Для создания определений расширений схемы каталога и управления ими необходимо использовать API Graph Azure AD, но вы можете использовать API Graph Microsoft для добавления, получения, обновления и удаления _данных_ в свойствах этих расширений.
-
-## <a name="permissions"></a>Permissions
+<span data-ttu-id="bb5ad-p116">Для чтения или записи данных расширений в ресурсе необходимы те же [разрешения](./permissions_reference.md), что и для чтения или записи ресурса. Например, чтобы приложение могло добавить данные в профиль пользователя, который вошел в учетную запись, у него должно быть разрешение *User.ReadWrite.All*.</span><span class="sxs-lookup"><span data-stu-id="bb5ad-p116">The same [permissions](./permissions_reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource.  For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.</span></span>
 
 Для чтения или записи данных расширений в ресурсе необходимы те же [разрешения](./permissions_reference.md), что и для чтения или записи ресурса. Например, чтобы приложение могло добавить данные в профиль пользователя, который вошел в учетную запись, у него должно быть разрешение *User.ReadWrite.All*.
 
-Кроме того, для создания определений расширения схемы и управления ими приложению необходимо разрешение *Directory.AccessAsUser.All*.
+<span data-ttu-id="bb5ad-229">Кроме того, для создания определений расширения схемы и управления ими приложению необходимо разрешение *Directory.AccessAsUser.All*.</span><span class="sxs-lookup"><span data-stu-id="bb5ad-229">Additionally, to create and manage schema extension definitions, an application must be granted the *Directory.AccessAsUser.All* permission.</span></span>
 
-## <a name="data-limits"></a>Ограничения данных
+## <span data-ttu-id="bb5ad-230">Ограничения данных</span><span class="sxs-lookup"><span data-stu-id="bb5ad-230">Data limits</span></span>
+<a id="data-limits" class="xliff"></a>
 
-### <a name="open-extension-limits"></a>Ограничения открытых расширений
-К ресурсам каталогов, таким как **user**, **group**, **device**, применимы следующие ограничения:
+### <span data-ttu-id="bb5ad-231">Ограничения открытых расширений</span><span class="sxs-lookup"><span data-stu-id="bb5ad-231">Open extension limits</span></span>
+<a id="open-extension-limits" class="xliff"></a>
+<span data-ttu-id="bb5ad-232">К ресурсам каталогов, таким как **user**, **group**, **device**, применимы следующие ограничения:</span><span class="sxs-lookup"><span data-stu-id="bb5ad-232">The following limits apply to directory resources (such as **user**, **group**, **device**):</span></span>
 
-- Каждое открытое расширение может содержать до 2 КБ данных (включая само определение расширения).
-- Приложение может создавать до двух открытых расширений для каждого экземпляра ресурса.
+- <span data-ttu-id="bb5ad-233">Каждое открытое расширение может содержать до 2 КБ данных (включая само определение расширения).</span><span class="sxs-lookup"><span data-stu-id="bb5ad-233">Each open extension can have up to 2KB of data (including the extension definition itself).</span></span>
+- <span data-ttu-id="bb5ad-234">Приложение может создавать до двух открытых расширений для каждого экземпляра ресурса.</span><span class="sxs-lookup"><span data-stu-id="bb5ad-234">An application can add up to two open extensions per resource instance.</span></span>
 
-### <a name="schema-extension-limits"></a>Ограничения расширений схемы
-Приложение может создать не более пяти определений **расширений схемы**.
+### <span data-ttu-id="bb5ad-235">Ограничения расширений схемы</span><span class="sxs-lookup"><span data-stu-id="bb5ad-235">Schema extension limits</span></span>
+<a id="schema-extension-limits" class="xliff"></a>
+<span data-ttu-id="bb5ad-236">Приложение может создать не более пяти определений **расширений схемы**.</span><span class="sxs-lookup"><span data-stu-id="bb5ad-236">An application may create no more than five **schema extension** definitions.</span></span>
 
-## <a name="known-limitations"></a>Известные ограничения
+## <span data-ttu-id="bb5ad-237">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="bb5ad-237">Known limitations</span></span>
+<a id="known-limitations" class="xliff"></a>
 
-Об известных ограничениях на использование расширений можно узнать в [соответствующем разделе](known_issues.md#extensions) статьи об известных проблемах.
+<span data-ttu-id="bb5ad-238">Об известных ограничениях на использование расширений можно узнать в [соответствующем разделе](known_issues.md#extensions) статьи об известных проблемах.</span><span class="sxs-lookup"><span data-stu-id="bb5ad-238">For known limitations using extensions, see the [extensions section](known_issues.md#extensions) in the known issues article.</span></span>
 
-## <a name="extension-examples"></a>Примеры расширений
+## <span data-ttu-id="bb5ad-239">Примеры расширений</span><span class="sxs-lookup"><span data-stu-id="bb5ad-239">Extension examples</span></span>
+<a id="extension-examples" class="xliff"></a>
 
-[Добавление пользовательских данных в ресурсы user с помощью открытых расширений](extensibility_open_users.md)
+[<span data-ttu-id="bb5ad-240">Добавление пользовательских данных в ресурсы user с помощью открытых расширений</span><span class="sxs-lookup"><span data-stu-id="bb5ad-240">Add custom data to users using open extensions</span></span>](extensibility_open_users.md)
 
-[Добавление пользовательских данных в группы с помощью расширений схемы](extensibility_schema_groups.md)
+[<span data-ttu-id="bb5ad-241">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="bb5ad-241">Add custom data to groups using schema extensions</span></span>](extensibility_schema_groups.md)
 
-## <a name="see-also"></a>См. также
+## <span data-ttu-id="bb5ad-242">См. также</span><span class="sxs-lookup"><span data-stu-id="bb5ad-242">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
+<span data-ttu-id="bb5ad-243">
+  [Домены Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)</span><span class="sxs-lookup"><span data-stu-id="bb5ad-243">[Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)</span></span>
 
-  [Домены Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
-
-[Добавление и подтверждение домена для клиента Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+[<span data-ttu-id="bb5ad-244">Добавление и подтверждение домена для клиента Office 365</span><span class="sxs-lookup"><span data-stu-id="bb5ad-244">Adding and verifying a domain for an Office 365 tenant</span></span>](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

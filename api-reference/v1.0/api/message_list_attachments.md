@@ -1,47 +1,4 @@
-# <a name="list-attachments"></a>Список вложений
-
-Получение списка объектов [attachment](../resources/attachment.md), вложенных в сообщение.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.Read* 
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-Вложения [сообщения](../resources/message.md) в почтовом ящике пользователя.
-```http
-GET /me/messages/{id}/attachments
-GET /users/{id | userPrincipalName}/messages/{id}/attachments
-```
-Вложения [сообщения](../resources/message.md) в папке [mailFolder](../resources/mailfolder.md) верхнего уровня в почтовом ящике пользователя.
-```http
-GET /me/mailFolders/{id}/messages/{id}/attachments
-GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
-```
-Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.
-```http
-GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_attachments"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="02f58-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="02f58-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

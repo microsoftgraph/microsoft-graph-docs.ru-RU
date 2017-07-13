@@ -1,30 +1,19 @@
-# <a name="create-acceptedsender"></a>Создание объекта acceptedSender
+<span data-ttu-id="abd14-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="abd14-p102">Bearer token. Required.</span></span>  | Bearer {токен}. Обязательный.  |
 
-Добавление пользователя или группы в список объектов acceptedSender.
-
-Укажите пользователя или группу с помощью параметра `@odata.id` в тексте запроса. Пользователи из списка разрешенных отправителей могут отправлять записи в беседы группы. Убедитесь, что в списках разрешенных и запрещенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Group.ReadWrite.All*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/acceptedSenders/$ref
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-
-## <a name="request-body"></a>Текст запроса
-Укажите в тексте запроса идентификатор объекта user или group.
+## <span data-ttu-id="abd14-115">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="abd14-115">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="abd14-116">Укажите в тексте запроса идентификатор объекта user или group.</span><span class="sxs-lookup"><span data-stu-id="abd14-116">In the request body, supply the id of a user or group object.</span></span>
 
 
-## <a name="response"></a>Отклик
-Этот метод возвращает код отклика `204, No Content`, но не возвращает текст отклика.
+## <span data-ttu-id="abd14-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="abd14-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="abd14-118">Этот метод возвращает код отклика `204, No Content`, но не возвращает текст отклика.</span><span class="sxs-lookup"><span data-stu-id="abd14-118">This method returns `204, No Content` response code and no response body.</span></span>
 
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="abd14-119">Пример</span><span class="sxs-lookup"><span data-stu-id="abd14-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="abd14-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="abd14-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="abd14-121">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="abd14-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -38,8 +27,9 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <span data-ttu-id="abd14-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="abd14-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="abd14-123">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="abd14-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

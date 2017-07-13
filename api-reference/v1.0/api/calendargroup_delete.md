@@ -1,40 +1,4 @@
-# <a name="delete-calendargroup"></a>Удаление объекта calendarGroup
-
-Удаление группы календарей, отличной от стандартной.
-
-**Примечание**. Outlook.com поддерживает только группу календарей по умолчанию, доступную по ссылке /me/calendars. Удалить группу календарей в Outlook.com невозможно.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/calendarGroups/{id}
-DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Основной текст запросов
-Не указывайте тело запроса для этого метода.
-
-
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "delete_calendargroup"
-}-->
-```http
-DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="254e9-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="254e9-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

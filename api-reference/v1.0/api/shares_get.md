@@ -1,82 +1,21 @@
-# <a name="accessing-shared-driveitems"></a>Доступ к общим элементам DriveItem
-
-Вы можете получить доступ к общим элементам [DriveItem](../resources/driveitem.md) или коллекции общих элементов, используя параметр **shareId** или URL-адрес для совместного доступа.
-
-Чтобы использовать URL-адрес для совместного доступа с этим API, вашему приложению необходимо [ преобразовать URL-адрес в токен общего доступа](#transform-a-sharing-url).
-
-## <a name="prerequisites"></a>Необходимые компоненты
-
-Для применения этого API требуется одна из указанных **областей**:
-
-* Files.ReadWrite.
-* Files.ReadWrite.All
-* Shares.ReadWrite.All
-
-## <a name="http-request"></a>HTTP-запрос
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /shares/{sharingIdOrUrl}
-```
-
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
-
-## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK` и ресурс [sharedDriveItem](../resources/shareddriveitem.md) в тексте отклика.
-
-## <a name="example"></a>Пример
-
-##### <a name="request"></a>Запрос
-
-Вот пример запроса для получения общего элемента:
-
-<!-- {
-  "blockType": "request",
-  "name": "get_shares_by_url"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
-```
-##### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "B64397C8-07AE-43E4-920E-32BFB4331A5B",
-  "name": "contoso project.docx",
-  "owner": {
-    "user": {
-      "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
-      "displayName": "Ryan Gregg"
-    }
-  }
-}
-```
-
-## <a name="access-the-shared-item-directly"></a>Прямой доступ к общему элементу
+<span data-ttu-id="dbf78-p101">Так как элемент [**SharedDriveItem**](../resources/shareddriveitem.md) содержит полезную информацию, большинство приложений будут стремиться получить прямой доступ к общему элементу [DriveItem](../resources/driveitem.md). Ресурс **SharedDriveItem** включает связи **корня** и **элементов**, которые могут получать доступ к содержимому в области общего элемента.</span><span class="sxs-lookup"><span data-stu-id="dbf78-p101">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
 Так как элемент [**SharedDriveItem**](../resources/shareddriveitem.md) содержит полезную информацию, большинство приложений будут стремиться получить прямой доступ к общему элементу [DriveItem](../resources/driveitem.md). Ресурс **SharedDriveItem** включает связи **корня** и **элементов**, которые могут получать доступ к содержимому в области общего элемента.
 
-### <a name="example-single-file"></a>Пример (один файл)
+### <span data-ttu-id="dbf78-122">Пример (один файл)</span><span class="sxs-lookup"><span data-stu-id="dbf78-122">Example (single file)</span></span>
+<a id="example-single-file" class="xliff"></a>
 
-##### <a name="request"></a>Запрос
+##### <span data-ttu-id="dbf78-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="dbf78-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
-При запросе связи **корня** будет возвращен элемент **DriveItem**, к которому был предоставлен доступ.
+<span data-ttu-id="dbf78-124">При запросе связи **корня** будет возвращен элемент **DriveItem**, к которому был предоставлен доступ.</span><span class="sxs-lookup"><span data-stu-id="dbf78-124">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
 ```
 
-##### <a name="response"></a>Ответ
+##### <span data-ttu-id="dbf78-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="dbf78-125">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -91,17 +30,20 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-shared-folder"></a>Пример (общая папка)
+### <span data-ttu-id="dbf78-126">Пример (общая папка)</span><span class="sxs-lookup"><span data-stu-id="dbf78-126">Example (shared folder)</span></span>
+<a id="example-shared-folder" class="xliff"></a>
 
-##### <a name="request"></a>Запрос
+##### <span data-ttu-id="dbf78-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="dbf78-127">Request</span></span>
+<a id="request" class="xliff"></a>
 
-При запросе связи **корня** и расширении **дочерней** коллекции будет возвращен элемент **DriveItem**, к которому был предоставлен доступ, а также файлы в общей папке.
+<span data-ttu-id="dbf78-128">При запросе связи **корня** и расширении **дочерней** коллекции будет возвращен элемент **DriveItem**, к которому был предоставлен доступ, а также файлы в общей папке.</span><span class="sxs-lookup"><span data-stu-id="dbf78-128">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
 ```
 
-##### <a name="response"></a>Отклик
+##### <span data-ttu-id="dbf78-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="dbf78-129">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -130,19 +72,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a>Преобразование URL-адреса для совместного доступа
+## <span data-ttu-id="dbf78-130">Преобразование URL-адреса для совместного доступа</span><span class="sxs-lookup"><span data-stu-id="dbf78-130">Transform a sharing URL</span></span>
+<a id="transform-a-sharing-url" class="xliff"></a>
 
-Чтобы получить доступ к URL-адресу для совместного доступа с помощью API **общих ресурсов**, необходимо преобразовать URL-адрес в токен для совместного доступа.
+<span data-ttu-id="dbf78-131">Чтобы получить доступ к URL-адресу для совместного доступа с помощью API **общих ресурсов**, необходимо преобразовать URL-адрес в токен для совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="dbf78-131">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
 
-Чтобы преобразовать URL-адрес в токен для совместного доступа, выполните указанные ниже действия.
+<span data-ttu-id="dbf78-132">Чтобы преобразовать URL-адрес в токен для совместного доступа, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="dbf78-132">To transform a URL into a sharing token:</span></span>
 
-1. Закодируйте URL-адрес для общего доступа с использованием кодировки Base64.
-2. Преобразуйте данные в кодировке Base64 в [формат URL-адреса с недополненной кодировкой Base64](https://en.wikipedia.org/wiki/Base64), выполнив указанные ниже действия.
-  1. Удалите символы `=` в конце строки.
-  2. Замените небезопасные символы URL-адреса на эквивалентные символы; замените `/` на `_`, а `+` — на `-`.
-3. Добавьте `u!` в начало строки.
+1. <span data-ttu-id="dbf78-133">Закодируйте URL-адрес для общего доступа с использованием кодировки Base64.</span><span class="sxs-lookup"><span data-stu-id="dbf78-133">Base64 encode the sharing URL.</span></span>
+2. <span data-ttu-id="dbf78-134">Преобразуйте данные в кодировке Base64 в [формат URL-адреса с недополненной кодировкой Base64](https://en.wikipedia.org/wiki/Base64), выполнив указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="dbf78-134">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
+  1. <span data-ttu-id="dbf78-135">Удалите символы `=` в конце строки.</span><span class="sxs-lookup"><span data-stu-id="dbf78-135">Trim trailing `=` characters from the string</span></span>
+  2. <span data-ttu-id="dbf78-136">Замените небезопасные символы URL-адреса на эквивалентные символы; замените `/` на `_`, а `+` — на `-`.</span><span class="sxs-lookup"><span data-stu-id="dbf78-136">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
+3. <span data-ttu-id="dbf78-137">Добавьте `u!` в начало строки.</span><span class="sxs-lookup"><span data-stu-id="dbf78-137">Append `u!` to the beginning of the string.</span></span>
 
-Например, указанный ниже метод C# преобразует входную строку в токен общего доступа.
+<span data-ttu-id="dbf78-138">Например, указанный ниже метод C# преобразует входную строку в токен общего доступа.</span><span class="sxs-lookup"><span data-stu-id="dbf78-138">For example, the following C# method transforms an input string into a sharing token:</span></span>
 
 ```csharp
 string UrlToSharingToken(string inputUrl) {

@@ -1,23 +1,8 @@
-<a id="plannerassignment-resource-type" class="xliff"></a>
+<span data-ttu-id="3a2c0-p103">Указание, которое позволяет упорядочить назначенных пользователей для задачи. Используемый формат описан [здесь](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="3a2c0-p103">Hint used to order assignees in a task. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Указание, которое позволяет упорядочить назначенных пользователей для задачи. Используемый формат описан [здесь](planner_order_hint_format.md).|
 
-# Тип ресурса plannerAssignment
-
-Ресурс **plannerAssignment** представляет назначение задачи пользователю. Этот тип используется в открытом типе [plannerAssignments](plannerassignments.md).
-
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|assignedBy|[identitySet](identityset.md)|Удостоверение пользователя, назначившего задачу.|
-|assignedDateTime|DateTimeOffset|Дата и время назначения задачи. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|orderHint|String|Указание, которое позволяет упорядочить назначенных пользователей для задачи. Используемый формат описан [здесь](planner_order_hint_format.md).|
-
+## <span data-ttu-id="3a2c0-120">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="3a2c0-120">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="3a2c0-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3a2c0-121">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

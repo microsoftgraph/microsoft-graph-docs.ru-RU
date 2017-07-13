@@ -1,48 +1,4 @@
-# <a name="update-contactfolder"></a>Обновление объекта contactFolder
-
-Обновление свойств объекта contactFolder.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Contacts.ReadWrite*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/contactFolders/{id}
-PATCH /users/{id | userPrincipalName}/contactFolders/{id}
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json. Обязательный.  |
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
-
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|displayName|String|Отображаемое имя папки.|
-|parentFolderId|String|Идентификатор родительской папки для данной папки.|
-
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [contactFolder](../resources/contactfolder.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "update_contactfolder"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/contactFolders/{id}
-Content-type: application/json
-Content-length: 84
-
-{
-  "parentFolderId": "parentFolderId-value",
-  "displayName": "displayName-value"
-}
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="430be-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="430be-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

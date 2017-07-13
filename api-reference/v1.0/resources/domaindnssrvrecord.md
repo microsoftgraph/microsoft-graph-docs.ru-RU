@@ -1,37 +1,14 @@
-<a id="domaindnssrvrecord-resource-type" class="xliff"></a>
-# Тип ресурса domainDnsSrvRecord
+<span data-ttu-id="ed053-p105">Значение, используемое при настройке свойства *ttl* (срока жизни) для записи SRV на узле DNS. Не допускает значения null.</span><span class="sxs-lookup"><span data-stu-id="ed053-p105">Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable</span></span>| Значение, используемое при настройке свойства *ttl* (срока жизни) для записи SRV на узле DNS. Не допускает значения null. |
+|<span data-ttu-id="ed053-149">weight</span><span class="sxs-lookup"><span data-stu-id="ed053-149">weight</span></span>|<span data-ttu-id="ed053-150">Int32</span><span class="sxs-lookup"><span data-stu-id="ed053-150">Int32</span></span>| <span data-ttu-id="ed053-151">Значение, используемое при настройке свойства *weight* записи SRV на узле DNS.</span><span class="sxs-lookup"><span data-stu-id="ed053-151">Value to use when configuring the *weight* property of the SRV record at the DNS host.</span></span> |
 
-Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md).
-
-<a id="methods" class="xliff"></a>
-## Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).
-
-<a id="properties" class="xliff"></a>
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
-|isOptional|Boolean| Если указано значение false, для правильной работы Microsoft Online Services с доменом пользователь должен настроить запись SRV на узле DNS. |
-|label|String| Значение, используемое при настройке свойства *name* записи SRV на узле DNS. |
-|nameTarget|String| Значение, используемое при настройке свойства *Target* записи SRV на узле DNS. |
-|port|Int32| Значение, используемое при настройке свойства *port* записи SRV на узле DNS. |
-|priority|Int32| Значение, используемое при настройке свойства *priority* записи SRV на узле DNS. |
-|protocol|String| Значение, используемое при настройке свойства *protocol* для записи SRV на узле DNS. |
-|recordType|String|  Тип записи DNS. Это свойство всегда имеет значение *Srv*. Ключ. |
-|service|String| Значение, используемое при настройке свойства *service* для записи SRV на узле DNS. |
-|supportedService|String| Служба или компонент Microsoft Online Services, зависящие от этой записи типа SRV.</br></br>Возможные значения: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*. |
-|ttl|Int32| Значение, используемое при настройке свойства *ttl* (срока жизни) для записи SRV на узле DNS. Не допускает значения null. |
-|weight|Int32| Значение, используемое при настройке свойства *weight* записи SRV на узле DNS. |
-
+## <span data-ttu-id="ed053-152">Связи</span><span class="sxs-lookup"><span data-stu-id="ed053-152">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## Связи
-Нет
+<span data-ttu-id="ed053-153">Нет</span><span class="sxs-lookup"><span data-stu-id="ed053-153">None</span></span>
 
 
+## <span data-ttu-id="ed053-154">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ed053-154">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="ed053-155">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ed053-155">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

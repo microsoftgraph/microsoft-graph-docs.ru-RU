@@ -1,21 +1,11 @@
-<a id="planneruserids-resource-type" class="xliff"></a>
-
-# Тип ресурса plannerUserIds
-
-Ресурс **plannerUserIds** представляет список идентификаторов пользователей, которым предоставлен доступ к [плану](plannerplan.md). Это открытый тип. Если вы используете функцию "Группы Office 365", то для предоставления доступа к плану [группы](group.md) применяйте API для групп (чтобы управлять членством в группах). Вы также можете добавить существующих участников группы в эту коллекцию, хотя им необязательно иметь доступ к плану, принадлежащему группе.
-
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
+<span data-ttu-id="36cdb-p102">Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить идентификаторы пользователей в качестве свойств, причем они должны иметь значение `true` (логическое). Если больше не нужно предоставлять доступ для идентификаторов пользователей, задайте для свойств значение `false` (логическое), и свойства будут автоматически удалены.</span><span class="sxs-lookup"><span data-stu-id="36cdb-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить идентификаторы пользователей в качестве свойств, причем они должны иметь значение `true` (логическое). Если больше не нужно предоставлять доступ для идентификаторов пользователей, задайте для свойств значение `false` (логическое), и свойства будут автоматически удалены.
 
 
+## <span data-ttu-id="36cdb-110">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="36cdb-110">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
 
-## Представление в формате JSON
-
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="36cdb-111">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="36cdb-111">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -31,7 +21,7 @@
 }
 ```
 
-Пример:
+<span data-ttu-id="36cdb-112">Пример:</span><span class="sxs-lookup"><span data-stu-id="36cdb-112">// Example</span></span>
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id

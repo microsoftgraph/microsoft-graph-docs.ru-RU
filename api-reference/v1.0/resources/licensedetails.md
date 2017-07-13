@@ -1,38 +1,12 @@
-<a id="licensedetails-resource-type" class="xliff"></a>
+<span data-ttu-id="0e6e5-p104">Уникальное отображаемое имя SKU. Имеет то же значение, что и свойство skuPartNumber в связанном объекте [SubscribedSku](subscribedsku.md). Пример: AAD_Premium. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="0e6e5-p104">Unique SKU display name. Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium". Read-only</span></span>| Уникальное отображаемое имя SKU. Имеет то же значение, что и свойство skuPartNumber в связанном объекте [SubscribedSku](subscribedsku.md). Пример: AAD_Premium. Только для чтения. |
 
-# Тип ресурса licenseDetails
-
-Содержит сведения о лицензии, назначенной пользователю.
-
-<a id="methods" class="xliff"></a>
-
-## Методы
-
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Перечисление licenseDetails](../api/user_list_licensedetails.md) | Коллекция licenseDetails |Получение списка объектов licenseDetails для пользователя.|
-
-<!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор объекта сведений о лицензии. Только для чтения, ключевое, не допускает значения null. |
-|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, назначенных вместе с лицензией. Только для чтения, не допускает значения null. |
-|skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. Имеет то же значение, что и свойство skuId в связанном объекте [SubscribedSku](subscribedsku.md). Только для чтения. |
-|skuPartNumber|String| Уникальное отображаемое имя SKU. Имеет то же значение, что и свойство skuPartNumber в связанном объекте [SubscribedSku](subscribedsku.md). Пример: AAD_Premium. Только для чтения. |
-
+## <span data-ttu-id="0e6e5-132">Связи</span><span class="sxs-lookup"><span data-stu-id="0e6e5-132">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
+<span data-ttu-id="0e6e5-133">Нет</span><span class="sxs-lookup"><span data-stu-id="0e6e5-133">None</span></span>
 
-## Связи
-Нет
-
+## <span data-ttu-id="0e6e5-134">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0e6e5-134">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="0e6e5-135">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0e6e5-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

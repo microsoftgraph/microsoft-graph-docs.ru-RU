@@ -1,35 +1,12 @@
-<a id="domaindnsrecord-resource-type" class="xliff"></a>
+<span data-ttu-id="73b04-p104">Значение, используемое при настройке свойства срока жизни (ttl) записи DNS на узле DNS. Не допускает значение null.</span><span class="sxs-lookup"><span data-stu-id="73b04-p104">Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable</span></span>| Значение, используемое при настройке свойства срока жизни (ttl) записи DNS на узле DNS. Не допускает значение null. |
 
-# Тип ресурса domainDnsRecord
-
-Для работы служб Microsoft Online Services с доменом необходимо добавить записи DNS в файл зоны DNS домена. Объект **DomainDnsRecord** представляет такие записи DNS. Базовый объект для объектов [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md) и [DomainDnsSrvRecord](domaindnssrvrecord.md).
-
-<a id="methods" class="xliff"></a>
-
-## Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
-|isOptional|Логический| Если указано значение false, для правильной работы служб Microsoft Online Services с доменом клиент должен настроить эту запись на узле DNS. |
-|label|Строка| Значение, используемое при настройке имени записи DNS на узле DNS. |
-|recordType|Строка| Указывает, какой тип записи DNS представляет этот объект.</br></br>Возможные значения: *CName*, *Mx*, *Srv*, *Txt*.</br></br>Ключ |
-|supportedService|Строка| Веб-служба или функция Майкрософт, зависящая от этой записи DNS.</br></br>Возможные значения: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
-|ttl|Int32| Значение, используемое при настройке свойства срока жизни (ttl) записи DNS на узле DNS. Не допускает значение null. |
-
+## <span data-ttu-id="73b04-135">Связи</span><span class="sxs-lookup"><span data-stu-id="73b04-135">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
+<span data-ttu-id="73b04-136">Нет</span><span class="sxs-lookup"><span data-stu-id="73b04-136">None</span></span>
 
-## Связи
-Нет
-
+## <span data-ttu-id="73b04-137">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="73b04-137">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="73b04-138">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="73b04-138">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

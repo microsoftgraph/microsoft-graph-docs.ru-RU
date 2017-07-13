@@ -1,26 +1,9 @@
-<a id="plannerchecklistitem-resource-type" class="xliff"></a>
+<span data-ttu-id="fd05c-p104">Используется для указания относительного порядка элементов в списке. Используемый формат описан [здесь](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="fd05c-p104">Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Используется для указания относительного порядка элементов в списке. Используемый формат описан [здесь](planner_order_hint_format.md).|
+|<span data-ttu-id="fd05c-125">title</span><span class="sxs-lookup"><span data-stu-id="fd05c-125">title</span></span>|<span data-ttu-id="fd05c-126">Строка</span><span class="sxs-lookup"><span data-stu-id="fd05c-126">String</span></span>|<span data-ttu-id="fd05c-127">Название элемента списка</span><span class="sxs-lookup"><span data-stu-id="fd05c-127">Title of the checklist item</span></span>|
 
-# Тип ресурса plannerChecklistItem
-
-
-Ресурс **plannerChecklistItem** представляет элемент в контрольном списке задачи. Контрольный список задачи представлен [объектом checklistItems](plannerchecklistitems.md).
-
-
-<a id="properties" class="xliff"></a>
-
-## Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|isChecked|Логический|Значение — `true`, если элемент проверен, в противном случае — `false`.|
-|lastModifiedBy|[identitySet](identityset.md)| Только для чтения. Идентификатор автора последних изменений.|
-|lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|orderHint|Строка|Используется для указания относительного порядка элементов в списке. Используемый формат описан [здесь](planner_order_hint_format.md).|
-|title|Строка|Название элемента списка|
-
+## <span data-ttu-id="fd05c-128">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="fd05c-128">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="fd05c-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fd05c-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

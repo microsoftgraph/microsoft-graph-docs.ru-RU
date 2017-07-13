@@ -1,77 +1,4 @@
-# <a name="get-event"></a>Получение события
-
-Получение свойств и отношений указанного объекта [event](../resources/event.md).
-
-В настоящее время эта операция возвращает текст события только в формате HTML.
-
-Так как ресурс **event** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `GET` можно получить настраиваемые свойства и данные расширения в экземпляре **event**.
-
-### <a name="support-various-time-zones"></a>Поддержка разных часовых поясов
-
-Для всех операций GET, которые возвращают события, можно использовать заголовок `Prefer: outlook.timezone`, чтобы задать часовой пояс для указанного в отклике времени начала и завершения события. 
-
-Например, заголовок `Prefer: outlook.timezone` задает в отклике время начала и завершения согласно североамериканскому восточному времени.
-```http
-Prefer: outlook.timezone="Eastern Standard Time"
-```
-
-Если событие создано с применением другого часового пояса, время начала и завершения будет изменено в соответствии с часовым поясом, указанным в заголовке `Prefer`. Поддерживаемые часовые пояса указаны в этом [списке](../resources/datetimetimezone.md). Если заголовок `Prefer: outlook.timezone` не указан, время начала и завершения возвращается в формате UTC.
-
-Узнать, какой именно часовой пояс использовался при создании события, позволят свойства **OriginalStartTimeZone** и **OriginalEndTimeZone** ресурса **event**.
-
-
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Calendars.Read*
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events/{id}
-GET /users/{id | userPrincipalName}/events/{id}
-GET /groups/{id}/events/{id}
-
-GET /me/calendar/events/{id}
-GET /users/{id | userPrincipalName}/calendar/events/{id}
-GET /groups/{id}/calendar/events/{id}
-
-GET /me/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | string | Часовой пояс по умолчанию для событий, указанных в отклике. |
-
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвратит код отклика `200 OK` и объект [event](../resources/event.md) в теле отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Первый пример возвращает указанное событие. Он указывает следующее:
-
-- Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени. 
-- Параметр запроса `$select`, который возвращает конкретные свойства. Без параметра `$select` будут возвращены все свойства событий.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_event"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
-Prefer: outlook.timezone="Pacific Standard Time"
-```
-
-##### <a name="response"></a>Отклик
+<span data-ttu-id="623d9-p105">Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="623d9-p105">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
 
 Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.
 
@@ -141,10 +68,11 @@ Content-length: 1928
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <span data-ttu-id="623d9-142">См. также</span><span class="sxs-lookup"><span data-stu-id="623d9-142">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
-- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="623d9-143">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="623d9-143">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="623d9-144">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="623d9-144">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

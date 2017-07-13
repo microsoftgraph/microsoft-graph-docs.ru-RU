@@ -1,43 +1,12 @@
-# <a name="rangesort-apply"></a>RangeSort: apply
-
-Выполняет сортировку.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются указанные **области**: 
-
-    * Files.ReadWrite.
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/names(<name>)/range/sort/apply
-POST /workbook/worksheets/{id|name}/range(<address>)/sort/apply
-POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
-
-```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Описание|
-|:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-
-
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|fields|SortField|Список условий для сортировки.|
-|matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
-|hasHeaders|boolean|Необязательный параметр. Указывает, есть ли у диапазона заголовок.|
-|orientation|string|Необязательный параметр. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows`, `Columns`.|
-|метод|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
-
-## <a name="response"></a>Отклик
+<span data-ttu-id="5b383-p106">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="5b383-p106">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <span data-ttu-id="5b383-142">Пример</span><span class="sxs-lookup"><span data-stu-id="5b383-142">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="5b383-143">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="5b383-143">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="5b383-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="5b383-144">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="5b383-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5b383-145">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangesort_apply"
@@ -68,8 +37,9 @@ Content-length: 358
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <span data-ttu-id="5b383-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b383-146">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="5b383-147">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="5b383-147">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

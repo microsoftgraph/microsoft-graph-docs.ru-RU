@@ -1,43 +1,4 @@
-# <a name="update-device"></a>Обновление устройства
-
-Обновление свойств зарегистрированного устройства.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для выполнения этого API требуется одно из следующих **разрешений**: *Device.ReadWrite.All* или *Directory.AccessAsUser.All* 
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /devices/{id}
-```
-> Примечание. Параметр id в запросе — это свойство id объекта device, а не свойство deviceId.
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-
-## <a name="request-body"></a>Текст запроса
-Укажите в тексте запроса значения обновляемых свойств объекта [device](../resources/device.md).
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
-
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "update_device"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/devices/{id}
-Content-type: application/json
-
-{
-  "accountEnabled": true
-}
-```
-##### <a name="response"></a>Ответ
+<span data-ttu-id="68b29-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="68b29-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
