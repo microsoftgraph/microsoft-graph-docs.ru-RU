@@ -2,7 +2,7 @@
 Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *User.ReadWrite.All; Directory.ReadWrite.All*
+Для применения этого API требуется одна из указанных **областей**: *Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
