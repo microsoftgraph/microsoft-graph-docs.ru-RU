@@ -19,7 +19,7 @@
 
 **Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) вы сможете быстро приступить к работе.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 
 Чтобы приступить к работе, вам понадобится следующее: 
 
@@ -73,16 +73,16 @@
 
 1. Откройте рабочую область проекта Xcode (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) в папке **starter-project**, перейдите к папке **Authentication** и откройте файл **AuthenticationProvider.m.** Добавьте в этот класс приведенный ниже код.
 
-        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)    (NSError *))completion{
+        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)   (NSError *))completion{
             [NXOAuth2AuthenticationProvider setClientId:kClientId
                                               scopes:scopes];
     
     
             /**
-             Obtains access token by performing login with UI, where viewController specifies the parent view controller.
-             @param viewController The view controller to present the UI on.
+            Obtains access token by performing login with UI, where viewController specifies the parent view controller.
+            @param viewController The view controller to present the UI on.
              @param completionHandler The completion handler to be called when the authentication has completed.
-             error should be non nil if there was no error, and should contain any error(s) that occurred.
+            error should be non nil if there was no error, and should contain any error(s) that occurred.
              */
 
                 if ([[NXOAuth2AuthenticationProvider sharedAuthProvider] loginSilent]) {
@@ -94,11 +94,11 @@
                     NSLog(@"Authentication successful.");
                     completion(nil);
                     }
-                    else {
-                        NSLog(@"Authentication failed - %@", error.localizedDescription);
+                 else {
+                     NSLog(@"Authentication failed - %@", error.localizedDescription);
                     completion(error);
                     }
-                    }];
+                }];
             }
     
         }
@@ -183,7 +183,7 @@
             }
             else {
                 NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
-                    self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
+                self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
                 }
             }];
     
@@ -210,5 +210,6 @@
 
 ## <a name="see-also"></a>См. также
 - [Microsoft Graph SDK для iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Получение доступа от имени пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Получение доступа без пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

@@ -46,7 +46,7 @@
     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">Пример с использованием REST</a>
     </td>     
-     <td>
+    <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">Пример с использованием пакета SDK</a>
     </td> 
   </tr>
@@ -65,7 +65,7 @@
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Пример с использованием пакета SDK</a> или <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST</a>
     </td> 
   </tr>
   <tr>
@@ -114,6 +114,7 @@
 </table>
 
 ## <a name="see-also"></a>См. также
-- Попробуйте примеры вызовов REST в нашем [обозревателе API](https://graph.microsoft.io/graph-explorer).
-- [Документация по конечной точке Azure AD](https://azure.microsoft.com/documentation/services/active-directory/)
-- [Документация по конечной точке Azure AD версии 2.0](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+- Попробуйте примеры вызовов REST в нашем [обозревателе API](https://graph.microsoft.io/graph-explorer)
+- [Получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Получение доступа от имени пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Получение доступа без пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

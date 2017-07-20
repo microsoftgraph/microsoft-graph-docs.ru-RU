@@ -36,7 +36,7 @@ Microsoft Graph предоставляет одну конечную точку 
 
 Вы можете [создать открытое расширение](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md) в экземпляре ресурса и сохранить в нем все пользовательские данные с помощью одной операции (обратите внимание на [приведенные ниже ограничения](known_issues.md#extensions) для некоторых поддерживаемых ресурсов). Позже вы сможете [считывать](../api-reference/v1.0/api/opentypeextension_get.md), [обновлять](../api-reference/v1.0/api/opentypeextension_update.md) или [удалять](../api-reference/v1.0/api/opentypeextension_delete.md) расширение и его данные.
 
-Пример открытого расширения см. в статье [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](extensibility_open_users.md).
+Пример открытого расширения: [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](extensibility_open_users.md)
 
 ## <a name="schema-extensions"></a>Расширения схемы
 
@@ -58,7 +58,7 @@ Microsoft Graph предоставляет одну конечную точку 
 - Добавлять или обновлять пользовательские данные в существующем экземпляре ресурса с помощью метода `PATCH`.
 - Устанавливать значение null для сложного типа с помощью метода `PATCH` для удаления пользовательских данных в экземпляре ресурса. 
 
-Пример расширения схемы см. в статье [Добавление пользовательских данных в группы с помощью расширений схемы](extensibility_schema_groups.md).
+Пример расширения схемы: [Добавление пользовательских данных в группы с помощью расширений схемы](extensibility_schema_groups.md)
 
 
 ### <a name="schema-extensions-lifecycle"></a>Жизненный цикл расширений схемы
@@ -113,15 +113,20 @@ Azure AD поддерживает схожий тип расширений, из
 
 Об известных ограничениях на использование расширений можно узнать в [соответствующем разделе](known_issues.md#extensions) статьи об известных проблемах.
 
-## <a name="extension-examples"></a>Примеры расширений
+## <a name="see-also"></a>См. также
+
+[Домены Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+[Добавление и подтверждение домена для клиента Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+
+
+## <a name="next-steps"></a>Дальнейшие действия
+
+Пример использования открытого расширения для добавления в ресурс **user** данных о перемещаемом профиле:
 
 [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](extensibility_open_users.md)
 
+Пример использования расширения схемы для добавления в ресурс **group** данных об учебном курсе:
+
 [Добавление пользовательских данных в группы с помощью расширений схемы](extensibility_schema_groups.md)
 
-## <a name="see-also"></a>См. также
-
-
-  [Домены Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
-
-[Добавление и подтверждение домена для клиента Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
