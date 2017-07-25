@@ -135,7 +135,7 @@
            });
         }
 
-1. Замените функцию **postSendMail** приведенным ниже кодом. Этот код настраивает и отправляет запрос POST конечной точке */me/sendMail*, а затем обрабатывает отклик.
+1. Замените функцию **postSendMail** приведенным ниже кодом. Этот код настраивает и отправляет запрос POST конечной точке */me/sendMail*, а затем обрабатывает ответ.
 
         function postSendMail(accessToken, message, callback) {
           request
@@ -205,7 +205,5 @@
 
 
 ## <a name="see-also"></a>См. также
-- Попробуйте примеры вызовов REST в нашем [обозревателе API](https://graph.microsoft.io/graph-explorer)
-- [Получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Получение доступа от имени пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Получение доступа без пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

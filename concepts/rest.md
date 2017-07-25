@@ -44,7 +44,7 @@ https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize
 | client_id | Идентификатор приложения, создаваемый при его регистрации. С его помощью Azure AD определяет приложения, которые запрашивают вход. |
 | redirect_uri | Адрес, на который Azure перенаправит пользователя после того, как он разрешит приложению доступ. Это значение должно соответствовать значению **URI перенаправления**, которое использовалось при регистрации приложения. |
 | response_type | Тип ответа, который ожидается приложением. Для потока предоставления кода авторизации используется значение `code`. |
-| scope | Разделенный пробелами список [разрешений Microsoft Graph](./permissions_reference.md), запрашиваемых приложением. Вы также можете указать [области OpenId Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) для [единого входа](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/).  |
+| Область | Разделенный пробелами список [разрешений Microsoft Graph](./permissions_reference.md), запрашиваемых приложением. Вы также можете указать [области OpenId Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) для [единого входа](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/).  |
 | state | Включенное в запрос значение, которое также возвращается в ответе с маркером и используется для проверки. |
 
 Например, URL-адрес запроса для приложения, которому требуется доступ на чтение почты, может выглядеть так:
@@ -72,7 +72,7 @@ http://localhost/myapp/?code=AwABAAAA...cZZ6IgAA&state=1234
 | code | Код авторизации, полученный на предыдущем этапе. |
 | redirect_uri | Это значение должно совпадать со значением, используемым в запросе кода авторизации. |
 | grant_type | Тип предоставления, используемый приложением. Для потока предоставления кода авторизации используется значение `code`. |
-| scope | Разделенный пробелами список [разрешений Microsoft Graph](./permissions_reference.md), запрашиваемых приложением. |
+| Область | Разделенный пробелами список [разрешений Microsoft Graph](./permissions_reference.md), запрашиваемых приложением. |
 
 URL-адрес запроса для нашего приложения с кодом, полученным на предыдущем этапе, выглядит так:
 
@@ -136,6 +136,5 @@ Authorization: Bearer eyJ0eXAi...b66LoPVA
 - Попробуйте другие возможности REST API, используя [песочницу Graph](https://graph.microsoft.io/graph-explorer).
 
 ## <a name="see-also"></a>См. также
-- [Получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Получение доступа от имени пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Получение доступа без пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

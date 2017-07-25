@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-users-using-open-extensions-example"></a>Добавление пользовательских данных в ресурсы user с помощью открытых расширений (пример)
+# <a name="add-custom-data-to-users-using-open-extensions"></a>Добавление пользовательских данных в ресурсы user с помощью открытых расширений
 Мы рассмотрим пример использования *открытых расширений*. 
 
 Представьте, что вы разрабатываете приложение, доступное на множестве клиентских платформ, например на компьютерах и мобильных устройствах.  Вы хотите, чтобы пользователи могли настраивать интерфейс, чтобы он выглядел одинаково независимо от того, какое устройство они используют для входа в приложение. Это распространенное требование для приложений. 
@@ -51,7 +51,7 @@ Content-length: 420
 ```http
 GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -90,7 +90,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 ```
 HTTP/1.1 204 No content
 ```
@@ -103,7 +103,7 @@ HTTP/1.1 204 No content
 DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 ```
 HTTP/1.1 204 No content
 ```
@@ -111,7 +111,7 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](extensibility_overview.md)
-- [Добавление пользовательских данных в ресурсы group с помощью расширений схемы (пример)](extensibility_schema_groups.md)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](extensibility_schema_groups.md)
 - [Тип ресурса openTypeExtension](../api-reference/v1.0/resources/opentypeextension.md)
 - [Создание открытого расширения](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
 - [Получение открытого расширения](../api-reference/v1.0/api/opentypeextension_get.md)

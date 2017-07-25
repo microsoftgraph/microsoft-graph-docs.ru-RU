@@ -106,9 +106,3 @@ def authorized():
 > **Примечание**. В запросе необходимо также отправлять заголовок **Content-Type** со значением, принимаемым API Graph, например `application/json`.
 
 API Microsoft Graph — это мощный единый API, с помощью которого можно взаимодействовать со всеми типами данных корпорации Майкрософт. Сведения о других возможностях API Microsoft Graph см. в справочнике по API.
-
-## <a name="see-also"></a>См. также
-- Попробуйте примеры вызовов REST в нашем [обозревателе API](https://graph.microsoft.io/graph-explorer)
-- [Получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Получение доступа от имени пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Получение доступа без пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

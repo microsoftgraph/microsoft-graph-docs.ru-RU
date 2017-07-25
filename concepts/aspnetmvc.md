@@ -263,7 +263,7 @@ URI перенаправления выступает в роли URL-адрес
 
         using Microsoft.Graph;
   
-1. Замените часть кода *// Controller actions* указанными ниже действиями.
+1. Замените часть кода *// Controller actions* следующими действиями.
 
         [Authorize]
         // Get the current user's email address from their profile.
@@ -320,7 +320,7 @@ URI перенаправления выступает в роли URL-адрес
             }
         }
 
-Теперь вы готовы к [запуску приложения](#run-the-app).
+Теперь вы можете [запустить приложение](#run-the-app).
 
 ## <a name="run-the-app"></a>Запуск приложения
 1. Нажмите клавишу F5 для сборки и запуска приложения. 
@@ -340,6 +340,5 @@ URI перенаправления выступает в роли URL-адрес
 - [Клиентская библиотека .NET Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 - [Сценарий проверки подлинности веб-приложения для веб-API](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
 - [Интеграция идентификатора Майкрософт и Microsoft Graph в веб-приложении с помощью OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
-- [Получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Получение доступа от имени пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Получение доступа без пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
