@@ -1,20 +1,9 @@
-# <a name="serviceplaninfo-resource-type"></a>Тип ресурса servicePlanInfo
-
-Содержит сведения о плане обслуживания, связанном с подписанным SKU. Свойство **servicePlans** объекта [subscribedSku](subscribedsku.md) представляет собой коллекцию объектов **servicePlanInfo**.
+<span data-ttu-id="c241b-p103">Объект, которому может быть назначен план обслуживания. Возможные значения:</span><span class="sxs-lookup"><span data-stu-id="c241b-p103">The object the service plan can be assigned to. Possible values:</span></span>|Объект, которому может быть назначен план обслуживания. Возможные значения:<br/><span data-ttu-id="c241b-127">"User" — план обслуживания можно назначить отдельным пользователям.</span><span class="sxs-lookup"><span data-stu-id="c241b-127">"User" - service plan can be assigned to individual users.</span></span><br/><span data-ttu-id="c241b-128">"Company" — план обслуживания можно назначить всему клиенту.</span><span class="sxs-lookup"><span data-stu-id="c241b-128">"Company" - service plan can be assigned to the entire tenant.</span></span>|
 
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
-|:---------------|:--------|:----------|
-|servicePlanId|Guid|Уникальный идентификатор плана обслуживания.|
-|servicePlanName|String|Имя плана обслуживания.|
-|provisioningStatus|String|Состояние подготовки плана обслуживания.|
-|appliesTo|String||
+## <a name="json-representation"></a><span data-ttu-id="c241b-129">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="c241b-129">JSON representation</span></span>
 
-
-## <a name="json-representation"></a>Представление JSON
-
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="c241b-130">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c241b-130">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
