@@ -228,8 +228,7 @@ Content-length: 326
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](extensibility_overview.md)
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](extensibility_open_users.md)
-- 
-  [Домены Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Домены Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Добавление и проверка домена для НОВОГО плана Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [Тип ресурса schemaExtension](../api-reference/v1.0/resources/schemaextension.md)
 - [Перечисление schemaExtensions](../api-reference/v1.0/api/schemaextension_list.md)

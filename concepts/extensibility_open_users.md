@@ -103,7 +103,7 @@ HTTP/1.1 204 No content
 DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 ```
 HTTP/1.1 204 No content
 ```

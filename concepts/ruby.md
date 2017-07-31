@@ -125,7 +125,7 @@
 
     def login
         redirect_to '/auth/microsoft_v2_auth'
-      end
+    end
 
 Затем необходимо указать, на какую страницу приложения будет переходить OmniAuth после проверки подлинности. Раскомментируйте приведенный ниже маршрут.
 
@@ -150,7 +150,7 @@
 В файле `app/controllers/pages_controller.rb` замените пустой метод `callback` приведенным ниже кодом.
 
     ```
-      def callback
+    def callback
         # Access the authentication hash for omniauth
         # and extract the auth token, user name, and email
         data = request.env['omniauth.auth']
