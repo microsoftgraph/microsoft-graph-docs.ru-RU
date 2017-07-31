@@ -1,119 +1,22 @@
-# <a name="add-custom-data-to-users-using-open-extensions"></a>Добавление пользовательских данных в ресурсы user с помощью открытых расширений
-Мы рассмотрим пример использования *открытых расширений*. 
-
-Представьте, что вы разрабатываете приложение, доступное на множестве клиентских платформ, например на компьютерах и мобильных устройствах.  Вы хотите, чтобы пользователи могли настраивать интерфейс, чтобы он выглядел одинаково независимо от того, какое устройство они используют для входа в приложение. Это распространенное требование для приложений. 
-
-В этой статье мы покажем вам, как:
-
-1. добавить открытое расширение, представляющее данные перемещаемого профиля пользователя;
-2. запросить данные у пользователя и вернуть перемещаемый профиль;
-3. изменить данные перемещаемого профиля пользователя (значение открытого расширения);
-4. удалить данные перемещаемого профиля пользователя.
-
->**Примечание.** В этой статье показано, как добавлять, считывать, обновлять и удалять открытые расширения для ресурса *user*.  Эти методы также поддерживаются для типов ресурсов *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* и *organizaton*.  
-Просто измените приведенные ниже примеры запросов, используя любой из этих типов ресурсов. Приведенные ниже примеры можно сократить. 
-
-## <a name="1-add-roaming-profile-information"></a>1. Добавление данных перемещаемого профиля
-Пользователь входит в приложение и настраивает его внешний вид.  Эти параметры приложения должны перемещаться, чтобы интерфейс выглядел одинаково на любом устройстве.  В этой статье мы рассмотрим, как добавить данные перемещаемого профиля в ресурс пользователя.
-
-##### <a name="request"></a>Запрос
-```http
-POST https://graph.microsoft.com/v1.0/me/extensions
-Content-type: application/json
-{
-    "@odata.type":"microsoft.graph.openTypeExtension",
-    "extensionName":"com.contoso.roamingSettings",
-    "theme":"dark",
-    "color":"purple",
-    "lang":"Japanese"
-}
-```
-##### <a name="response"></a>Отклик
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-Content-length: 420
-
-{
-    "@odata.type": "#microsoft.graph.openTypeExtension",
-    "extensionName": "com.contoso.roamingSettings",
-    "id": "com.contoso.roamingSettings",
-    "theme": "dark",
-    "color": "purple",
-    "lang": "Japanese"
-}
-```
-
-## <a name="2-retrieve-roaming-profile-information"></a>2. Получение данных перемещаемого профиля
-Когда пользователь входит в приложение с другого устройства, приложение может получить данные профиля пользователя, а также соответствующие параметры перемещения. Для этого можно получить ресурс пользователя и дополнить свойство навигации расширения.
-
-##### <a name="request"></a>Запрос
-```http
-GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
-```
-##### <a name="response"></a>Отклик
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-length: 420
-
-{
-    "id": "84b80893-8749-40a3-97b7-68513b600544",
-    "displayName": "John Smith",
-    "mail": "john@contoso.com",
-    "mobilePhone": "1-555-6589",
-    "extensions": [
-        {
-            "@odata.type": "#microsoft.graph.openTypeExtension",
-            "extensionName": "com.contoso.roamingSettings",
-            "id": "com.contoso.roamingSettings",
-            "theme": "dark",
-            "color": "purple",
-            "lang": "Japanese"
-        }
-    ]
-}
-```
->**Примечание.** Если у вас есть несколько расширений, вы можете отфильтровать их по свойству *id*, чтобы получить нужное расширение.
-
-## <a name="3-change-roaming-profile-information"></a>3. Изменение данных перемещаемого профиля
-Пользователь может изменить данные своего перемещаемого профиля.  Это можно сделать с помощью запроса ```PATCH``` со значением открытого расширения. 
-
-##### <a name="request"></a>Запрос
-```http
-PATCH https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
-Content-type: application/json
-{
-    "theme":"light",
-    "color":"yellow",
-    "lang":"Swahili"
-}
-```
-
-##### <a name="response"></a>Отклик
-```
-HTTP/1.1 204 No content
-```
-
-## <a name="4-delete-a-users-roaming-profile"></a>4. Удаление перемещаемого профиля пользователя
+<span data-ttu-id="a6917-p107">Пользователь решает, что ему не больше не нужен перемещаемый профиль, и удаляет его. Это можно сделать с помощью запроса ```DELETE``` со значением открытого расширения.</span><span class="sxs-lookup"><span data-stu-id="a6917-p107">The user decides that they don't want a roaming profile anymore, so they delete it. This can be done with a ```DELETE``` request on the open extension value.</span></span>
 Пользователь решает, что ему не больше не нужен перемещаемый профиль, и удаляет его. Это можно сделать с помощью запроса ```DELETE``` со значением открытого расширения.
 
-##### <a name="request"></a>Запрос
+##### <a name="request"></a><span data-ttu-id="a6917-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="a6917-135">Request</span></span>
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a><span data-ttu-id="a6917-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="a6917-136">Response</span></span>
 ```
 HTTP/1.1 204 No content
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a><span data-ttu-id="a6917-137">См. также</span><span class="sxs-lookup"><span data-stu-id="a6917-137">See also</span></span>
 
-- [Добавление пользовательских данных в ресурсы с помощью расширений](extensibility_overview.md)
-- [Добавление пользовательских данных в группы с помощью расширений схемы](extensibility_schema_groups.md)
-- [Тип ресурса openTypeExtension](../api-reference/v1.0/resources/opentypeextension.md)
-- [Создание открытого расширения](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
-- [Получение открытого расширения](../api-reference/v1.0/api/opentypeextension_get.md)
-- [Обновление открытого расширения](../api-reference/v1.0/api/opentypeextension_update.md)
-- [Удаление открытого расширения](../api-reference/v1.0/api/opentypeextension_delete.md)
+- [<span data-ttu-id="a6917-138">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="a6917-138">Add custom data to resources using extensions</span></span>](extensibility_overview.md)
+- [<span data-ttu-id="a6917-139">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="a6917-139">Add custom data to groups using schema extensions</span></span>](extensibility_schema_groups.md)
+- [<span data-ttu-id="a6917-140">Тип ресурса openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="a6917-140">openTypeExtension resource type</span></span>](../api-reference/v1.0/resources/opentypeextension.md)
+- [<span data-ttu-id="a6917-141">Создание открытого расширения</span><span class="sxs-lookup"><span data-stu-id="a6917-141">Create open extension</span></span>](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
+- [<span data-ttu-id="a6917-142">Получение открытого расширения</span><span class="sxs-lookup"><span data-stu-id="a6917-142">Get open extension</span></span>](../api-reference/v1.0/api/opentypeextension_get.md)
+- [<span data-ttu-id="a6917-143">Обновление открытого расширения</span><span class="sxs-lookup"><span data-stu-id="a6917-143">Update open extension</span></span>](../api-reference/v1.0/api/opentypeextension_update.md)
+- [<span data-ttu-id="a6917-144">Удаление открытого расширения</span><span class="sxs-lookup"><span data-stu-id="a6917-144">Delete open extension</span></span>](../api-reference/v1.0/api/opentypeextension_delete.md)
