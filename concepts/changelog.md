@@ -1,35 +1,57 @@
-<a id="changelog-for-microsoft-graph" class="xliff"></a>
-
-# Журнал изменений Microsoft Graph
+# <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.  
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known_issues.md).
 
-<a id="june-2017" class="xliff"></a>
+## <a name="july-2017"></a>Июль 2017 г.
 
-## Июнь 2017 г.
+### <a name="intune-apis"></a>API Intune
 
-<a id="project-rome" class="xliff"></a>
+|Тип&nbsp;изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета-версия|Добавлено действие [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_iosmobileappconfiguration_assign.md) для объекта [iosMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosmobileappconfiguration). |
+|Дополнение|Бета-версия|Добавлено действие [syncDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_syncdevice.md) для объекта [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice). |
+|Изменение|Бета-версия|Добавлены свойства **appsInstallAllowList**, **appsLaunchBlockList** и **appsHideList** для объекта [androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration).|
+|Изменение|Бета-версия|Добавлено свойство **disableAppEncryptionIfDeviceEncryptionIsEnabled** для объекта [androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection).|
+|Изменение|Бета-версия|Добавлено свойство **disableAppEncryptionIfDeviceEncryptionIsEnabled** для объекта [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection).|
+|Изменение|Бета-версия|Добавлено свойство **complianceGracePeriodExpirationDateTime** для объекта [deviceComplianceDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedevicestatus).|
+|Изменение|Бета-версия|Добавлено свойство **complianceGracePeriodExpirationDateTime** для объекта [deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate).|
+|Изменение|Бета-версия|Добавлено свойство **complianceGracePeriodExpirationDateTime** для объекта [deviceConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdevicestatus).|
+|Изменение|Бета-версия|Добавлено свойство **subscriptions** для объекта [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement).|
+|Изменение|Бета-версия|Добавлено свойство **version** для объекта [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector).|
+|Изменение|Бета-версия|Добавлено свойство **utcTimeOffsetInMinutes** для объекта [iosUpdateConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosupdateconfiguration).|
+|Изменение|Бета-версия|Добавлено свойство **complianceGracePeriodExpirationDateTime** для объекта [iosUpdateDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosupdatedevicestatus).|
+|Изменение|Бета-версия|Добавлено свойство **preSharedKey** для объекта [macOSWiFiConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration).|
+|Изменение|Бета-версия|Добавлены свойства **phoneNumber**, **androidSecurityPatchLevel** и **userDisplayName** для объекта [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice).|
+|Изменение|Бета-версия|Добавлены свойства **userName**, **deviceModel**, **platform** и **complianceGracePeriodExpirationDateTime** для объекта [managedDeviceMobileAppConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus).|
+|Изменение|Бета-версия|Добавлено свойство **userPrincipalName** для объекта [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappinstallstatus).|
+|Изменение|Бета-версия|Добавлено свойство **overrideDefaultRule** для объекта [onPremisesConditionalAccessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings).|
+|Изменение|Бета-версия|Добавлено свойство **userPrincipalName** для объекта [userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_userappinstallstatus).|
+|Изменение|Бета-версия|Добавлены свойства **connectAppBlockAutoLaunch**, **deviceAccountBlockExchangeServices**, **deviceAccountEmailAddress**, **deviceAccountExchangeServerAddress**, **deviceAccountRequirePasswordRotation**, **deviceAccountSessionInitiationProtocolAddress**, **settingsBlockMyMeetingsAndFiles**, **settingsBlockSessionResume**, **settingsBlockSigninSuggestions**, **settingsDefaultVolume**, **settingsScreenTimeoutInMinutes**, **settingsSessionTimeoutInMinutes** и **settingsSleepTimeoutInMinutes** для объекта [windows10TeamGeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration).|
+|Изменение|Бета-версия|Добавлено свойство навигации **deploymentSummary** для объекта [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection).|
+|Изменение|Бета-версия|Добавлены свойства **settingName**, **userId**, **userName**, **userEmail** и **currentValue** к сложному типу [deviceCompliancePolicySettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate).|
+|Изменение|Бета|Для сложного типа [deviceConfigurationSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationsettingstate) добавлены свойства **settingName**, **userId**, **userName**, **userEmail** и **currentValue**|
+|Изменение|Бета-версия|Добавлено свойство **unknownCount** к сложному типу [deviceOperatingSystemSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary).|
 
-### Project Rome
+
+
+## <a name="june-2017"></a>Июнь 2017 г.
+
+### <a name="project-rome"></a>Project Rome
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета|Добавлены следующие ресурсы и API:<br/>[Действие](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity)<br/>[Создание или замена действия](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity)<br/>[Удаление действия](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_activity)<br/>[Элемент журнала](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem)<br/>[Создание или замена элемента журнала](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem)<br/>[Удаление элемента журнала](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_historyitem)|
 
-<a id="outlook-calendar" class="xliff"></a>
-
-### Календарь Outlook
+### <a name="outlook-calendar"></a>Календарь Outlook
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|1.0|Повышен уровень для следующих 4 свойств [calendar](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/calendar) до версии 1.0: **canEdit**, **canShare**, **canViewPrivateItems** и **owner**.|
 
 
-<a id="intune-apis" class="xliff"></a>
-
-### Интерфейсы API Intune
+### <a name="intune-apis"></a>Интерфейсы API Intune
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
@@ -82,37 +104,27 @@
 |Изменение|Бета-версия|Добавлено свойство **address** для сложного типа [vpnServer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_vpnserver).|
 
 
-<a id="may-2017" class="xliff"></a>
+## <a name="may-2017"></a>Май 2017 г.
 
-## Май 2017 г.
-
-<a id="application-api-changes" class="xliff"></a>
-
-### Изменения в API приложений
+### <a name="application-api-changes"></a>Изменения в API приложений
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
-|Изменение|Бета| Обновление API приложений. Это первый набор изменений, включающий изменение структуры и переименование свойств объекта [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application).<br/>**Новые объекты:** [api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api]), [informationalUrl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/informationalUrl), [installedClient](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/installedclient), [permissionScope](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permissionscope), [preauthorizedApplication](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/preauthorizedapplication), [web](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/web).<br/>**Удаленные свойства:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions.<br/>**Переименованные свойства:** с appId на id, с identifierUris на applicationAliases, с availableToOtherTenants на orgRestrictions, с mainLogo на logo, с oauth2Permissions на publishedPermissionsScopes, с publicClient на allowPublicClient, с replyUrls на redirectUrls.<br/>**Новые свойства:** tags. |
+|Изменение|Бета-версии| Обновление API приложений. Это первый набор изменений, включающий изменение структуры и переименование свойств объекта [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application).<br/>**Новые объекты:** [api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api]), [informationalUrl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/informationalUrl), [installedClient](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/installedclient), [permissionScope](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permissionscope), [preauthorizedApplication](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/preauthorizedapplication), [web](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/web).<br/>**Удаленные свойства:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions.<br/>**Переименованные свойства:** с appId на id, с identifierUris на applicationAliases, с availableToOtherTenants на orgRestrictions, с mainLogo на logo, с oauth2Permissions на publishedPermissionsScopes, с publicClient на allowPublicClient, с replyUrls на redirectUrls.<br/>**Новые свойства:** tags. |
 
-<a id="remove-deprecated-planner-api" class="xliff"></a>
-
-### Удаление устаревшего API Планировщика
+### <a name="remove-deprecated-planner-api"></a>Удаление устаревшего API Планировщика
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:-------------|
 |Удаление|Бета-версия|Удалены следующие объекты:<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard**|
 
-<a id="project-rome" class="xliff"></a>
-
-### Project Rome
+### <a name="project-rome"></a>Project Rome
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:-------------|
 |Дополнение|Бета|Добавлена поддержка Project Rome, в том числе [получения списка устройств](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_devices), [отправки команды устройству](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/send_device_command) и [проверки состояния команды](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/get_device_command_status).|
 |Дополнение|Бета-версия|Добавлена поддержка ресурсов [activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) и [historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) для объектов user, включая [создание или замену activity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity) и [создание или замену historyItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem).|
 
-<a id="administrative-units-property-changes" class="xliff"></a>
-
-### Изменения свойств административных единиц
+### <a name="administrative-units-property-changes"></a>Изменения свойств административных единиц
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -121,43 +133,33 @@
 | Изменение        | Бета       | Свойство навигации scopedAdministrators объекта [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) заменено на scopedRoleMembers. |
 | Изменение        | Бета       | Свойство навигации scopedAdministrators объекта [directoryRole](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/directoryrole) заменено на scopedMembers. |
 
-<a id="add-users-and-groups-webhook-support-in-preview" class="xliff"></a>
-
-### Добавлена поддержка пользователей и групп в веб-перехватчиках в бета-версии
+### <a name="add-users-and-groups-webhook-support-in-preview"></a>Добавлена поддержка пользователей и групп в веб-перехватчиках в бета-версии
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 | Изменение        | Бета       | Добавлена поддержка пользователей и групп в [веб-перехватчиках](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/webhooks).
 
-<a id="add-delta-query-to-v10" class="xliff"></a>
-
-### Добавлена поддержка запросов изменений в версии 1.0
+### <a name="add-delta-query-to-v10"></a>Добавлена поддержка запросов изменений в версии 1.0
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 | Дополнение      | 1.0       | Добавлена поддержка функции delta в версии 1.0. Она позволяет выполнять [запрос изменений](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview) для следующих объектов:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Примеры см. в следующих статьях:<br/>[Получение добавочных изменений для групп](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Получение добавочных изменений для сообщений в папке](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Получение добавочных изменений для пользователей](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 | Изменение        | Бета       | Добавлена возможность дополнительной фильтрации запросов (по идентификатору) для [пользователей](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_delta) и [групп](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_delta). |
 
-<a id="added-user-resource-support-for-deleted-items" class="xliff"></a>
-
-### Добавлена поддержка работы с удаленными элементами для ресурса user
+### <a name="added-user-resource-support-for-deleted-items"></a>Добавлена поддержка работы с удаленными элементами для ресурса user
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 | Дополнение      | Бета       | Добавлена поддержка [восстановления и окончательного удаления пользователей](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory). |
 
-<a id="added-onpremisesprovisioningerror" class="xliff"></a>
-
-### Добавлен объект OnPremisesProvisioningError
+### <a name="added-onpremisesprovisioningerror"></a>Добавлен объект OnPremisesProvisioningError
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 | Дополнение      | Бета       | Новый объект: [OnPremisesProvisioningError](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/onpremisesprovisioningerror) |
 | Изменение        | Бета       | В объекты [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user), [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) и [orgcontact](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/orgcontact) добавлено свойство OnPremisesProvisioningError. |
 
-<a id="added-deleteddatetime-property" class="xliff"></a>
-
-### Добавлено свойство deletedDateTime
+### <a name="added-deleteddatetime-property"></a>Добавлено свойство deletedDateTime
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -165,25 +167,19 @@
 |Изменение|Бета|В объект [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) добавлено свойство deletedDateTime.
 |Изменение|Бета|В объект [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) добавлено свойство deletedDateTime.
 
-<a id="added-domain-operations-to-v10" class="xliff"></a>
-
-### Добавлены операции с доменами в версии 1.0
+### <a name="added-domain-operations-to-v10"></a>Добавлены операции с доменами в версии 1.0
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|1.0|Добавлены операции с [доменами](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain).<br/>Новые объекты:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain);<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord);<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord);<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord);<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord);<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord);<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord).<br/>Новые действия:</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
 
-<a id="added-contracts-to-v10" class="xliff"></a>
-
-### Добавлены контракты в версии 1.0
+### <a name="added-contracts-to-v10"></a>Добавлены контракты в версии 1.0
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|1.0|Новый объект:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
 
-<a id="added-licensedetails-to-v10" class="xliff"></a>
-
-### Добавлен объект licenseDetails в версии 1.0
+### <a name="added-licensedetails-to-v10"></a>Добавлен объект licenseDetails в версии 1.0
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -191,9 +187,7 @@
 |Изменение  |1.0|Добавлено свойство навигации [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_list_licensedetails) для объекта [user](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user). |
 
 
-<a id="drive-api" class="xliff"></a>
-
-### API Диска
+### <a name="drive-api"></a>API Диска
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:----------|:--------------|
@@ -203,9 +197,7 @@
 | Изменение | Бета | В объект **sharingLink** добавлены свойства **configuratorUrl** и **webHtml**. <br/> Добавлены тип ресурса **folderView** и свойство **view** для типа ресурса **folder**. <br/> В объект **driveItem** добавлено свойство навигации **listItem**. <br/> В объект **drive** добавлено свойство навигации **list**.
 
 
-<a id="extensions-open-extensions" class="xliff"></a>
-
-### Расширения (открытые расширения)
+### <a name="extensions-open-extensions"></a>Расширения (открытые расширения)
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -215,9 +207,7 @@
 |Дополнение|Бета|Поддержка параметра `$expand` для [получения открытых расширений](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) в объекте [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit).|
 
 
-<a id="extensions-schema-extensions" class="xliff"></a>
-
-### Расширения (расширения схемы) 
+### <a name="extensions-schema-extensions"></a>Расширения (расширения схемы) 
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -228,17 +218,13 @@
 |Изменение|1.0 и бета| Теперь вы можете задать для сложного типа расширения схемы значение null, чтобы удалить расширение схемы из экземпляра ресурса. |
 
 
-<a id="group" class="xliff"></a>
-
-### Группа
+### <a name="group"></a>Группа
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:----------|:--------------|
 | Дополнение | 1.0 и бета | Добавлены свойства навигации **drives** и **sites** для объекта **group**.
 
-<a id="insights-apis" class="xliff"></a>
-
-### API Insights
+### <a name="insights-apis"></a>API Insights
 
 |**Тип изменения**|**Версия**|**Описание**| 
 |:-------------|:-----------|:--------------|
@@ -247,9 +233,7 @@
 |Изменение|Бета|Новое свойство **Type** в<br />ресурсе [resourceVisualization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_resourcevisualization). <br />
 |Удаление|Бета-версия|Удалены следующие объекты:<br/>**workingWith**<br/>**trendingAround**<br/>|
 
-<a id="intune-apis" class="xliff"></a>
-
-### API Intune
+### <a name="intune-apis"></a>API Intune
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
@@ -311,27 +295,21 @@
 |Изменение|Бета|Удалено свойство **archiveFolder** для сложного типа [mailboxSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailboxSettings).|
 
 
-<a id="outlook-calendar" class="xliff"></a>
-
-### Календарь Outlook
+### <a name="outlook-calendar"></a>Календарь Outlook
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|1.0 и бета-версия|Для метода **findMeetingTimes** добавлено значение перечисления **unrestricted**, указываемое в качестве свойства **activityDomain** в составе параметра **timeConstraint**. Это позволяет методу **findMeetingTimes** искать интервалы времени, соответствующие типу планируемого мероприятия. Дополнительные сведения см. в разделе [request body](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body).|
-|Дополнение|Бета|Содержание объекта **event** теперь можно получать в виде обычного текста, а не только в формате HTML. Дополнительные сведения см. в описаниях событий [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_get) и [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_events).|
+|Дополнение|Бета-версия|Содержание объекта **event** теперь можно получать в виде обычного текста, а не только в формате HTML. Дополнительные сведения см. в описаниях событий [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_get) и [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_events).|
 
-<a id="outlook-mail" class="xliff"></a>
-
-### Почта Outlook
+### <a name="outlook-mail"></a>Почта Outlook
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
-|Изменение|Бета|Содержание объекта **message** теперь можно получать в виде обычного текста, а не только в формате HTML. Дополнительные сведения см. в описаниях событий [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/message_get) и [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages).|
+|Изменение|Бета-версия|Содержание объекта **message** теперь можно получать в виде обычного текста, а не только в формате HTML. Дополнительные сведения см. в описаниях событий [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/message_get) и [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages).|
 
 
-<a id="outlook-tasks" class="xliff"></a>
-
-### Задачи Outlook
+### <a name="outlook-tasks"></a>Задачи Outlook
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -340,17 +318,13 @@
 |Дополнение|Бета|Задачи Outlook поддерживают вложения (ресурсы [attachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/attachment), [fileAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/fileattachment), [itemAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemattachment) и [referenceAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/referenceattachment)). |
 |Дополнение|Бета|Задачи Outlook поддерживают [расширенные свойства](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/extended-properties-overview) (ресурсы [singleValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/singlevaluelegacyextendedproperty) и [multiValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/multivaluelegacyextendedproperty)). |
 
-<a id="planner-apis" class="xliff"></a>
-
-### API Планировщика
+### <a name="planner-apis"></a>API Планировщика
 
 |**Тип изменения**|**Версия**|**Описание**| 
 |:-------------|:-----------|:--------------|
 |Дополнение|1.0|Добавлен [API Планировщика](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/planner_overview).<br />Новые ресурсы:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlan); <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTask); <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlanDetails); <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTaskDetails); <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerBucket); <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat); <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat); <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat) | 
 
-<a id="sharepoint-sites" class="xliff"></a>
-
-### Сайты SharePoint
+### <a name="sharepoint-sites"></a>Сайты SharePoint
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:----------|:--------------|
@@ -358,9 +332,7 @@
 | Изменение        | Бета      | Изменился формат идентификатора ресурса **site**. Это критическое изменение в бета-версии API.
 | Удаленные элементы       | Бета      | Объект **sharePoint** удален из бета-версии API. Эта функциональность теперь доступна из коллекции **sites**.
 
-<a id="sharepoint-lists" class="xliff"></a>
-
-### Списки SharePoint
+### <a name="sharepoint-lists"></a>Списки SharePoint
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:----------|:--------------|
@@ -370,54 +342,40 @@
 
 
 
-<a id="april-2017" class="xliff"></a>
+## <a name="april-2017"></a>Апрель 2017 г.
 
-## Апрель 2017 г.
-
-<a id="administrative-units-property-changes" class="xliff"></a>
-
-### Изменения свойств административных единиц
+### <a name="administrative-units-property-changes"></a>Изменения свойств административных единиц
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Изменение|Бета-версия| Обновления API административных единиц будут предоставлены в бета-версиях. Первый набор изменений будет применен 3 мая 2017 г. Изменения включают в себя следующие переименования:<br />сложный тип - **roleMemberInfo** для объекта scopedRoleMembership теперь зовется **identity**;<br />свойство навигации - **scopedAdministratorOf** для объекта user теперь зовется **scopedRoleMemberOf**;<br />свойство навигации - **scopedAdministrators** для объекта administrativeUnit теперь зовется **scopedRoleMembers**;<br />свойство навигации - **scopedAdministrators** для объекта directoryRole теперь зовется **scopedMembers**. |
 
-<a id="application-and-serviceprincipal-api-changes" class="xliff"></a>
-
-### Изменения в API application и servicePrincipal
+### <a name="application-and-serviceprincipal-api-changes"></a>Изменения в API application и servicePrincipal
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Изменение|Бета-версия| API [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) и [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) будут обновлены в бета-версии. Первый набор изменений будет применен 15 мая 2017 г. Изменения включают переименование и реструктуризацию свойств. Некоторые свойства (например, appRoles и addIns) будут доступны только после применения изменений. Прежде чем выйдет версия 1.0 с изменениями, будут выпущены бета-версии. |
 
-<a id="added-preview-support-for-cloud-solution-provider-developers" class="xliff"></a>
-
-### Добавлена поддержка бета-версий для разработчиков, присоединившихся к программе Cloud Solution Provider
+### <a name="added-preview-support-for-cloud-solution-provider-developers"></a>Добавлена поддержка бета-версий для разработчиков, присоединившихся к программе Cloud Solution Provider
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Приложения, разрешение на использование которых было заранее предоставлено согласно программе Cloud Solution Provider, теперь могут вызывать Microsoft Graph. Описание см. в новой [статье об авторизации](https://graph.microsoft.io/en-us/docs/concepts/auth_cloudsolutionprovider). |
 
-<a id="added-onpremises-properties-to-user-entity" class="xliff"></a>
-
-### Добавлены свойства onPremises к объекту user
+### <a name="added-onpremises-properties-to-user-entity"></a>Добавлены свойства onPremises к объекту user
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета-версия|К объекту [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) добавлены новые свойства для onPremises: onPremisesDomainName, OnPremisesSamAccountName и onPremisesUserPrincipalName. |
 
-<a id="new-planner-apis-and-an-update-to-the-group-visibility-property" class="xliff"></a>
-
-### Новые API Планировщика и обновление свойства видимости группы
+### <a name="new-planner-apis-and-an-update-to-the-group-visibility-property"></a>Новые API Планировщика и обновление свойства видимости группы
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Изменение|Бета-версия|Добавлено значение **HiddenMembership** для свойства видимости объекта [Group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group). |
 |Дополнение|Бета-версия|Добавлен новый [API Планировщика](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/planner_overview).<br />Новые ресурсы:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan); <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTask); <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails); <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTaskDetails); <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerBucket); <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerassignedtotaskboardtaskformat); <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerbuckettaskboardtaskformat); <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerprogresstaskboardtaskformat). | 
 
-<a id="intune-apis" class="xliff"></a>
-
-### API Intune
+### <a name="intune-apis"></a>API Intune
 |**Тип изменения**|**Версия**|**Описание**|
 |:---|:---|:---|
 |Дополнение|Бета|Добавлены новые объекты:<br/>[androidForWorkCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy);<br/>[deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate);<br/>[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_deviceinstallstate);<br/>[deviceManagementScript](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscript)<br/>[deviceManagementScriptGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscriptgroupassignment)<br/>[deviceManagementScriptState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscriptstate)<br/>[eBookGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_ebookgroupassignment);<br/>[iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_iosvppebook);<br/>[managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_managedebook);<br/>[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_userinstallstatesummary);<br/>[windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsmanagementapp)<br/>[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsmanagementapphealthstate)<br/>|
@@ -466,13 +424,9 @@
 |Изменение|Бета-версия|Изменены следующие свойства сложного типа [omaSettingBase64](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingbase64):<br/>**fileName** больше не обязательно указывать.<br/>|
 |Изменение|Бета-версия|Изменены следующие свойства сложного типа [omaSettingStringXml](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingstringxml):<br/>**fileName** больше не обязательно указывать.<br/>|
 
-<a id="march-2017" class="xliff"></a>
+## <a name="march-2017"></a>Март 2017 г.
 
-## Март 2017 г.
-
-<a id="intune-apis" class="xliff"></a>
-
-### API Intune
+### <a name="intune-apis"></a>API Intune
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
@@ -563,43 +517,33 @@
 |Изменение|Бета-версия|Изменен тип следующих свойств сложного типа [windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation):<br/>**applicableArchitecture** теперь относится не к [windowsArchitecture](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/windowsArchitecture), а к String.<br/>|
 |Изменение|Бета-версия|Изменены следующие свойства сложного типа [windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation):<br/>свойство **applicableArchitecture** сделано обязательным.<br/>|
 
-<a id="add-contracts-to-microsoft-graph" class="xliff"></a>
-
-### Добавление контрактов в Microsoft Graph
+### <a name="add-contracts-to-microsoft-graph"></a>Добавление контрактов в Microsoft Graph
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Новый ресурс:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract). |
 
-<a id="add-domain-operations-to-microsoft-graph" class="xliff"></a>
-
-### Добавление операций с доменами в Microsoft Graph
+### <a name="add-domain-operations-to-microsoft-graph"></a>Добавление операций с доменами в Microsoft Graph
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Добавлены функции к объектам [domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain).<br/>Новые объекты:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain);<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord);<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord);<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord);<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord);<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord);<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord).<br/>Новые действия:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete);</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify). |
 
-<a id="add-custom-data-to-microsoft-graph-using-schema-extensions" class="xliff"></a>
-
-### Добавление пользовательских данных в Microsoft Graph с помощью расширений схемы
+### <a name="add-custom-data-to-microsoft-graph-using-schema-extensions"></a>Добавление пользовательских данных в Microsoft Graph с помощью расширений схемы
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
-|Дополнение|Бета-версия|Добавление данных приложения в Microsoft Graph с помощью [расширений схемы](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)  поддерживается для следующих ресурсов:<br/>administrative unit;<br/>calendar event;<br/>device;<br/>group;<br/>message;<br/>organization;<br/>personal contact;<br/>post;<br/>user.<br/>Пример приведен в следующей статье:<br/>[Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups).|
-|Дополнение|Бета-версия|Предоставлен альтернативный способ создания определения расширения схемы без подтвержденного личного домена .com. Подробности см. в разделе [Расширения схемы](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).|
+|Дополнение|Бета|Добавление данных приложения в Microsoft Graph с помощью [расширений схемы](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)  поддерживается для следующих ресурсов:<br/>administrative unit;<br/>calendar event;<br/>device;<br/>group;<br/>message;<br/>organization;<br/>personal contact;<br/>post;<br/>user.<br/>Пример приведен в следующей статье:<br/>[Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups).|
+|Дополнение|Бета|Предоставлен альтернативный способ создания определения расширения схемы без подтвержденного личного домена .com. Подробности см. в разделе [Расширения схемы](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).|
 
-<a id="add-custom-data-to-microsoft-graph-using-open-extensions" class="xliff"></a>
-
-### Добавление пользовательских данных в Microsoft Graph с помощью открытых расширений
+### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>Добавление пользовательских данных в Microsoft Graph с помощью открытых расширений
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Изменение| 1.0 и бета-версия | Вместо термина "расширения данных Office 365" теперь используется "открытые расширения". |
 |Дополнение|Бета-версия|Добавлены ресурсы, которые поддерживают [открытые расширения](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>administrative unit;<br/>device;<br/>group;<br/>organization;<br/>user.<br/>Пример приведен в следующей статье:<br/>[Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users).|
 
-<a id="directory-apis" class="xliff"></a>
-
-### API каталогов
+### <a name="directory-apis"></a>API каталогов
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -609,29 +553,21 @@
 |Дополнение|Бета|Новый объект:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
 |Изменение  |Бета|Добавлено свойство навигации [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) для объекта [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user). |
 
-<a id="reports-apis" class="xliff"></a>
-
-### API отчетов
+### <a name="reports-apis"></a>API отчетов
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета|Представлена предварительная версия нового API для функций создания отчетов в Office 365. С его помощью можно получать отчеты об использовании служб Office 365 сотрудниками компании. Например, вы можете определить, кто использует службу по максимуму, а кому вообще не нужна лицензия Office 365. Дополнительные сведения см. в статье о ресурсе [report](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/report).|
 
-<a id="directory-apis" class="xliff"></a>
-
-### API каталогов
+### <a name="directory-apis"></a>API каталогов
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета|Новый объект:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract). |
 
-<a id="february-2017" class="xliff"></a>
+## <a name="february-2017"></a>Февраль 2017 г.
 
-## Февраль 2017 г.
-
-<a id="intune-apis" class="xliff"></a>
-
-### API Intune
+### <a name="intune-apis"></a>API Intune
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
@@ -671,13 +607,9 @@
 
 
 
-<a id="january-2017" class="xliff"></a>
+## <a name="january-2017"></a>Январь 2017 г.
 
-## Январь 2017 г.
-
-<a id="outlook-calendar" class="xliff"></a>
-
-### Календарь Outlook
+### <a name="outlook-calendar"></a>Календарь Outlook
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -687,9 +619,7 @@
 |Изменение|1.0|Сложный тип [attendee](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/attendee) теперь является производным от attendeeBase, который, в свою очередь, является производным от [recipient](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/recipient). Он состоит из тех же свойств **status**, **type** и **emailAddress**, что и раньше, а также унаследованных свойств.|
 |Дополнение|Бета|В ресурс [calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar) добавлено свойство hexColor.|
 
-<a id="intune-apis" class="xliff"></a>
-
-### API Intune
+### <a name="intune-apis"></a>API Intune
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -712,41 +642,29 @@
 |Изменение|Бета|Добавлены свойства **brandingOptions**, **defaultLocale**, **displayName**, **fromEmailAddress**, **lastModifiedDateTime**, **localizedNotificationMessages** к объекту [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_notification_notificationmessagetemplate).|
 |Изменение|Бета|Добавлены свойства **appsAllowTrustedAppsSideloading**, **appsBlockWindowsStoreOriginatedApps**, **developerUnlockSetting**, **edgeBlockAccessToAboutFlags**, **edgeBlockDeveloperTools**, **edgeBlockExtensions**, **edgeBlockInPrivateBrowsing**, **edgeFirstRunUrl**, **edgeHomepageUrls**, **gameDvrBlocked**, **settingsBlockAddProvisioningPackage**, **settingsBlockChangeLanguage**, **settingsBlockChangePowerSleep**, **settingsBlockChangeRegion**, **settingsBlockChangeSystemTime**, **settingsBlockEditDeviceName**, **settingsBlockRemoveProvisioningPackage**, **sharedUserAppDataAllowed**, **smartScreenBlockPromptOverride**, **smartScreenBlockPromptOverrideForFiles**, **storageRestrictAppDataToSystemVolume**, **storageRestrictAppInstallToSystemVolume**, **webRtcBlockLocalhostIpAddress**, **windowsStoreBlockAutoUpdate** и **windowsStoreEnablePrivateStoreOnly** к объекту [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration).|
 
-<a id="december-2016" class="xliff"></a>
+## <a name="december-2016"></a>Декабрь 2016 г.
 
-## Декабрь 2016 г.
-
-<a id="delta-query" class="xliff"></a>
-
-### Запрос на получение различий
+### <a name="delta-query"></a>Запрос на получение различий
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета|В следующие объекты добавлена новая функция delta для выполнения [запроса на получение различий](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Примеры см. в следующих статьях:<br/>[Получение добавочных изменений групп (предварительная версия)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Получение добавочных изменений сообщений в папке (предварительная версия)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Получение добавочных изменений пользователей (предварительная версия)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 
-<a id="excel-apis" class="xliff"></a>
-
-### API Excel
+### <a name="excel-apis"></a>API Excel
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|v1.0|Добавлены ресурс workbookPivotTable, действия refresh и refreshAll в сводных таблицах, ресурс workbookRangeView, действие visibleView в отфильтрованном диапазоне для возврата workbookRangeView пользователю, коллекция строк get и ресурс range из visibleView, функции columnsAfter, columnsBefore, resizedRange, rowsAbove и rowsBelow из ресурса range и новые свойства таблицы.|
 
-<a id="intune-apis" class="xliff"></a>
-
-### API Intune
+### <a name="intune-apis"></a>API Intune
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета|Добавлены API ресурсов и методов для Microsoft Intune. Это большой набор ресурсов и методов для поддержки общедоступной предварительной версии Intune на портале Azure. Сведения о службе Intune см. в статье [Документация по Intune](https://go.microsoft.com/fwlink/?linkid=836405). Сведения о ресурсах и API Intune см. в разделе [Работа с Intune в Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview).|
 
-<a id="october-2016" class="xliff"></a>
+## <a name="october-2016"></a>Октябрь 2016 г.
 
-## Октябрь 2016 г.
-
-<a id="authorization-provider" class="xliff"></a>
-
-### Поставщик услуг авторизации
+### <a name="authorization-provider"></a>Поставщик услуг авторизации
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -754,30 +672,22 @@
 |Дополнение|1.0 и бета-версия|Конечная точка авторизации 2.0 теперь поддерживает [разрешения, требующие согласия администратора](http://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) ([конечная точка предоставления согласия администратора](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)).|
 |Дополнение|1.0 и бета-версия|Конечная точка авторизации 2.0 теперь поддерживает согласие администратора для всех пользователей клиента ([конечная точка предоставления согласия администратора](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)).|
 
-<a id="invitation-apis" class="xliff"></a>
-
-### API приглашений
+### <a name="invitation-apis"></a>API приглашений
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Добавлено свойство invitedUserType к типу объекта приглашений, определяющее тип приглашаемого пользователя (**Guest** или **Member**).|
 |Удаление|Бета|Мы удалим свойство invitedToGroups для типа объекта invitation 11 ноября 2016 г. Это значит, что вы больше не сможете добавить приглашаемого пользователя в группу с помощью этого API. Это можно будет сделать с помощью [API добавления членов](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_post_members).|
 
-<a id="september-2016" class="xliff"></a>
+## <a name="september-2016"></a>Сентябрь 2016 г.
 
-## Сентябрь 2016 г.
-
-<a id="azure-ad-application-proxy" class="xliff"></a>
-
-### Прокси приложения Azure AD
+### <a name="azure-ad-application-proxy"></a>Прокси приложения Azure AD
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета|Теперь API Azure AD Application Proxy доступны в конечной точке Microsoft Graph бета-версии. Эти API позволяют безопасно публиковать локальные приложения для пользователей, находящихся за пределами корпоративной сети, используя Azure AD в качестве общей системы управления доступом. Опубликованные API позволяют создавать приложения, которые могут получать и обновлять различные аспекты прокси приложения, например параметры _connectors_, _connectorGroups_ и _onPremisesPublishing_ приложения.|
 
-<a id="drive" class="xliff"></a>
-
-### Drive
+### <a name="drive"></a>Drive
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -785,9 +695,7 @@
 |Дополнение|Бета-версия|Добавлена функция _search_ к объекту drive, которая позволяет искать элементы не только в корневой папке диска.|
 
 
-<a id="driveitem" class="xliff"></a>
-
-### DriveItem
+### <a name="driveitem"></a>DriveItem
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -797,17 +705,13 @@
 |Дополнение|Бета-версия|Добавлено значение _quickXorHash_ для файлов в OneDrive для бизнеса.|
 |Дополнение|Бета-версия|Добавлена область для объекта _createSharingLink_, которая позволяет создавать ссылки для совместного доступа в компании или анонимного совместного доступа.|
 
-<a id="extended-properties" class="xliff"></a>
-
-### Расширенные свойства
+### <a name="extended-properties"></a>Расширенные свойства
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|Теперь [расширенные свойства](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/extended-properties-overview) поддерживаются в следующих ресурсах: message, mailFolder, event, calendar, contact, contactFolder, group event, group calendar, group post.|
 
-<a id="groups" class="xliff"></a>
-
-### Группы
+### <a name="groups"></a>Группы
 
 Добавлена поддержка динамического членства в группах с помощью общедоступной ознакомительной версии API, включая дополнения, указанные в таблице ниже.
 
@@ -819,33 +723,25 @@
 |Дополнение|Бета-версия|Добавлено свойство **preferredLanguage**, которое указывает предпочитаемый язык для группы Office 365.|
 |Дополнение|Бета-версия|Добавлено свойство **theme**, которое позволяет указать цветовую тему группы Office 365.|
 
-<a id="hybrid-deployment-support" class="xliff"></a>
-
-### Поддержка гибридного развертывания
+### <a name="hybrid-deployment-support"></a>Поддержка гибридного развертывания
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|Приложения могут использовать API Почты, Календаря и Контактов Outlook версии 1.0 для доступа к локальным почтовым ящикам в гибридном развертывании Exchange 2016 с накопительным пакетом обновления 3 (CU3). Дополнительные сведения о поддержке REST API см. в разделах, посвященных соответствующему [гибридному развертыванию](https://developer.microsoft.com/en-us/graph/docs/overview/hybrid_rest_support). **Примечание.** Если вы используете эти наборы API версии 1.0, то теперь ваши приложения (включая рабочие) будут работать с локальными почтовыми ящиками, которые соответствуют требованиям для гибридных развертываний. Доступна только предварительная версия этой возможности.|
 
-<a id="identityriskevents" class="xliff"></a>
-
-### IdentityRiskEvents
+### <a name="identityriskevents"></a>IdentityRiskEvents
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Изменение|Бета|В рамках изменения схемы, при котором тип двух свойств расположений будет заменен новым сложным типом в конечной точке identityRiskEvents, в конечной точке identityRiskEvents изменены или добавлены следующие свойства:</br>**location** теперь относится не к Edm.String, а к signInLocation ComplexType;<br/>**previousLocation** теперь относится не к Edm.String, а к signInLocation ComplexType;<br/>**signInLocation** — новый элемент ComplexType, содержащий свойства city, state, countryOrRegion и geoCoordinates;<br/>**geoCoordinates** — новый элемент ComplexType, содержащий свойства latitude и longitude.|
 
-<a id="invitation-manager" class="xliff"></a>
-
-### Диспетчер приглашений
+### <a name="invitation-manager"></a>Диспетчер приглашений
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета|Теперь API диспетчера приглашений доступны в конечной точке Microsoft Graph бета-версии. С помощью API диспетчера приглашений вы можете создать приглашение для добавления внешнего пользователя в организацию. Кроме того, при приглашении пользователя вы можете добавить его в группу Office 365. Дополнительные сведения см. в статье [о диспетчере приглашений](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/invitation).|
 
-<a id="onedrive" class="xliff"></a>
-
-### OneDrive
+### <a name="onedrive"></a>OneDrive
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -857,9 +753,7 @@
 |Дополнение|1.0|Добавлено свойство **processingMetadata** для свойства quickXorHash сложного типа hashes. |
 |Дополнение|1.0|Добавлено свойство **quickXorHash** к сложному типу hashes. |
 
-<a id="outlook-calendar" class="xliff"></a>
-
-### Календарь Outlook
+### <a name="outlook-calendar"></a>Календарь Outlook
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -867,37 +761,29 @@
 |Дополнение|Бета-версия|Добавлено действие [forward](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_forward) к ресурсу event.|
 |Дополнение|Бета-версия|К ресурсу [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar) добавлены свойства, c помощью которых можно предоставлять общий доступ к календарю: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, **isShareWithMe** и **owner**.|
 
-<a id="outlook-mail" class="xliff"></a>
-
-### Почта Outlook
+### <a name="outlook-mail"></a>Почта Outlook
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|Добавлен сложный тип [mailboxSettings](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailboxsettings), который включает свойства **automaticRepliesSetting**, **timeZone** и **language**.|
 |Дополнение|1.0|Добавлено свойство **mailboxSettings** к ресурсу [user](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user).|
 |Дополнение|Бета|Добавлена возможность создавать, отображать, получать и удалять один или несколько экземпляров объекта [mention](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mention) в сообщении. С помощью объектов mention можно привлечь внимание других пользователей в сообщении.|
-|Дополнение|Бета-версия|Добавлена поддержка действия [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) для получения подсказок для определенных получателей. Добавлены следующие ресурсы: automaticRepliesMailTips, mailTips, mailTipsError.|
+|Дополнение|Бета|Добавлена поддержка действия [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) для получения подсказок для определенных получателей. Добавлены следующие ресурсы: automaticRepliesMailTips, mailTips, mailTipsError.|
 
-<a id="query-parameters" class="xliff"></a>
-
-### Параметры запроса
+### <a name="query-parameters"></a>Параметры запроса
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Изменение|Бета|С 26 сентября 2016 г. поддерживаются параметры запроса без префиксов $. Префикс $ в параметрах запроса не является обязательным. Дополнительные сведения см. в записи блога [Поддержка параметров запросов без префиксов $ в Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).|
 
-<a id="sharepoint" class="xliff"></a>
-
-### SharePoint
+### <a name="sharepoint"></a>SharePoint
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Доступ к сайтам и спискам SharePoint [по идентификатору](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/list_get) или [URL-адресу](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/baseitem_getbyurl).|
 |Дополнение|Бета-версия|Возможность [отображать, создавать, получать и удалять экземпляры объектов listItem](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/listitem).|
 
-<a id="users" class="xliff"></a>
-
-### Пользователи
+### <a name="users"></a>Пользователи
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -906,148 +792,108 @@
 |Дополнение|Бета-версия|Добавлено служебное действие **invalidateAllRefreshTokens**, которое аннулирует все токены обновления и токены сеанса пользователя, выпущенные для приложений, сбрасывая значения свойства **refreshTokensValidFromDateTime** и указывая для него текущую дату и время.|
 
 
-<a id="webhooks" class="xliff"></a>
-
-### Веб-перехватчики
+### <a name="webhooks"></a>Веб-перехватчики
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета|В веб-перехватчики добавлены корневые элементы Drive в качестве ресурса, доступного для подписки.|
 
-<a id="august-2016" class="xliff"></a>
+## <a name="august-2016"></a>Август 2016 г.
 
-## Август 2016 г.
-
-<a id="contacts" class="xliff"></a>
-
-### Контакты
+### <a name="contacts"></a>Контакты
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета|В рамках изменения схемы, при котором удаляются несколько свойств и добавляются соответствующие коллекции в конечную точку contacts, в эту конечную точку добавлены следующие свойства: _Websites Collection(ComplexType: Website)_,_Phones Collection (ComplexType: Phone)_, _PostalAddress Collection(ComplexType: PhysicalAddress)_. Дополнительные сведения см. в записи блога [Предстоящие изменения API Контактов и Людей](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/).|
 |Удаление|Бета|В рамках изменения схемы, при котором удаляются несколько свойств и добавляются соответствующие коллекции в конечную точку contacts, из этой конечной точки удалены следующие свойства: _BusinessHomePage_,_HomePhones_, _MobilePhone1_, _BusinessPhones_, _HomeAddress_, _BusinessAddress_, _OtherAddress_. Дополнительные сведения см. в записи блога [Предстоящие изменения API Контактов и Людей](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/).|
 
-<a id="excel-apis" class="xliff"></a>
-
-### API Excel
+### <a name="excel-apis"></a>API Excel
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|REST API Excel стал общедоступным в Microsoft Graph. Теперь вы можете обеспечить глубокую и сложную интеграцию с книгами Excel в Office 365. Дополнительные сведения см. в записи блога [Настройка использования REST API для Excel в приложениях с помощью Microsoft Graph](http://dev.office.com/blogs/power-your-apps-with-the-new-excel-rest-api).|
 
-<a id="people" class="xliff"></a>
-
-### Люди
+### <a name="people"></a>Люди
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
-|Изменение|Бета-версия|Свойство _WebSite_ переименовано на _Websites_. Дополнительные сведения см. в записи [Предстоящие изменения API Контактов и Людей](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/).|
+|Изменение|Бета|Свойство _WebSite_ переименовано на _Websites_. Дополнительные сведения см. в записи [Предстоящие изменения API Контактов и Людей](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/).|
 
-<a id="privileged-identity-management" class="xliff"></a>
-
-### Управление привилегированными пользователями (PIM)
+### <a name="privileged-identity-management"></a>Управление привилегированными пользователями (PIM)
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета|Теперь REST API управления привилегированными пользователями доступны в конечной точке Microsoft Graph (бета-версия). [Управление привилегированными пользователями](https://azure.microsoft.com/en-us/documentation/articles/active-directory-privileged-identity-management-configure/) обеспечивает активацию "точно в срок" для привилегированных ролей в организации Azure AD, например ролей глобального администратора, администратора выставления счетов и т. д. C помощью опубликованных API разработчики могут создавать приложения, которые получают и обновляют привилегированные роли и активируют роли для пользователей. Дополнительные сведения см. в статьях [Microsoft Graph: доступна бета-версия API для Azure AD Privileged Identity Management](http://dev.office.com/blogs/microsoft-graph-azure-ad-privileged-identity-management-apis-beta) и [Azure AD Privileged Identity Management](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/privilegedidentitymanagement_root).|
 
-<a id="july-2016" class="xliff"></a>
+## <a name="july-2016"></a>Июль 2016 г.
 
-## Июль 2016 г.
-
-<a id="administrative-units" class="xliff"></a>
-
-### Административные единицы
+### <a name="administrative-units"></a>Административные единицы
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета|Представлен новый API Administrative Units (предварительная версия). Административные единицы позволяют организациям делить Azure Active Directory на подразделения и делегировать административные обязанности этим подразделениям. Подразделения могут представлять регионы, отделы, места возникновения затрат и т. д. Теперь ими можно управлять с помощью API Microsoft Graph.|
 
-<a id="june-2016" class="xliff"></a>
+## <a name="june-2016"></a>Июнь 2016 г.
 
-## Июнь 2016 г.
-
-<a id="identityriskevents" class="xliff"></a>
-
-### IdentityRiskEvents
+### <a name="identityriskevents"></a>IdentityRiskEvents
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета|Представлен новый API IdentityRiskEvents (предварительная версия). Этот API работает в сочетании с защитой идентификации Azure Active Directory. Его можно использовать для запрашивания событий рисков, созданных функцией защиты идентификации. Дополнительные сведения см. в статье [Знакомство с предварительной версией нового API в Microsoft Graph: IdentityRiskEvents](http://dev.office.com/blogs/identityriskevents-api-preview).
 
-<a id="subscriptions" class="xliff"></a>
-
-### Подписки
+### <a name="subscriptions"></a>Подписки
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Области, предназначенные только для приложений, теперь поддерживаются для подписок _mail_ и _contacts_.|
 
-<a id="may-2016" class="xliff"></a>
+## <a name="may-2016"></a>Май 2016 г.
 
-## Май 2016 г.
-
-<a id="calendar" class="xliff"></a>
-
-### Календарь
+### <a name="calendar"></a>Календарь
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Существенные изменения|Бета|Изменения в API findMeetingTimes. Дополнительные сведения см. в записи блога [Обновление API findMeetingTimes в Microsoft Graph](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update). Это изменение вступило в силу 19 мая 2016 г.
 
-<a id="contact" class="xliff"></a>
-
-### Контакт
+### <a name="contact"></a>Контакт
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|Добавлен абстрактный тип _extensions_ для поддержки открытого типа openTypeExtension в OData версии 4.|
 
-<a id="directory" class="xliff"></a>
-
-### Каталог
+### <a name="directory"></a>Каталог
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
-|Существенные изменения|Бета-версия|Свойство _settingTemplateId_ теперь называется _templateId_. Это изменение вступило в силу 19 мая 2016 г.|
+|Существенные изменения|Бета|Свойство _settingTemplateId_ теперь называется _templateId_. Это изменение вступило в силу 19 мая 2016 г.|
 
-<a id="event" class="xliff"></a>
-
-### Событие
+### <a name="event"></a>Событие
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|Добавлен абстрактный тип _extensions_ для поддержки открытого типа openTypeExtension в OData версии 4.|
 
-<a id="eventmessages" class="xliff"></a>
-
-### EventMessages
+### <a name="eventmessages"></a>EventMessages
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|Добавлены типы _inferenceClassification_ и _extensions_ к объекту _eventMessages_.|
 |Дополнение|Бета-версия|Добавлено свойство _responseRequested_ к _eventMessageRequest_.|
 
-<a id="messages" class="xliff"></a>
-
-### Сообщения
+### <a name="messages"></a>Сообщения
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|Добавлены типы _inferenceClassification_ и _extensions_ к объекту _message_.|
 |Дополнение|Бета-версия|Добавлено свойство _wellknownname_ к объекту _contactFolder_.|Изменения в API _findMeetingTimes_. Дополнительные сведения см. в записи блога [Обновление API findMeetingTimes в Microsoft Graph](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update). Это изменение вступило в силу 19 мая 2016 г.|
 
-<a id="post" class="xliff"></a>
-
-### Запись
+### <a name="post"></a>Запись
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|Добавлен абстрактный тип _extensions_ для поддержки открытого типа openTypeExtension в OData версии 4.|
 
-<a id="user" class="xliff"></a>
-
-### User
+### <a name="user"></a>User
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1055,13 +901,9 @@
 |Дополнение|Бета-версия|Добавлено свойство _timeZone_ к типу _mailboxsettings_.|
 |Дополнение|Бета-версия|Добавлен API _findMeetingTimes_ для объекта _user_.|
 
-<a id="april-2016" class="xliff"></a>
+## <a name="april-2016"></a>Апрель 2016 г.
 
-## Апрель 2016 г.
-
-<a id="general" class="xliff"></a>
-
-### Общие
+### <a name="general"></a>Общие
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1071,21 +913,15 @@
 |Дополнение|Бета|Теперь Azure Active Directory используется в качестве резервного ресурса для запросов /beta/users/id/photo, когда приложению Outlook не удается обслужить запрос (например, когда у пользователя нет лицензии на почтовый ящик или у клиента нет подписки на Exchange Online). ПРИМЕЧАНИЕ. Этот резервный ресурс доступен и для запросов GET, и для запросов PATCH.|
 |Дополнение|Бета|Добавлена поддержка сегмента приведения в пути expand. Например: "https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event"|
 
-<a id="onedrive" class="xliff"></a>
-
-### OneDrive
+### <a name="onedrive"></a>OneDrive
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Исправление|v1.0|Устранена неисправность, из-за которой при выполнении запросов createLink в OneDrive возникала ошибка 500: "Неподдерживаемый тип свойства расширения".|
 
-<a id="march-2016" class="xliff"></a>
+## <a name="march-2016"></a>Март 2016 г.
 
-## Март 2016 г.
-
-<a id="calendar" class="xliff"></a>
-
-### Календарь
+### <a name="calendar"></a>Календарь
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1096,18 +932,14 @@
 |Изменение|Бета-версия|У метода _findMeetingTimes_ появился новый параметр _ReturnSuggestionHints_.|
 |Изменение|Бета-версия|Метод _findMeetingTimes_ теперь возвращает коллекцию объектов _meetingTimeCandidate_.|
 
-<a id="drive" class="xliff"></a>
-
-### Drive
+### <a name="drive"></a>Drive
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0 и бета-версия|Добавлена функция _recent_ для вывода списка элементов, которые недавно использовал пользователь, вошедший в систему. Этот список включает элементы, находящиеся на диске пользователя, а также элементы на других дисках, к которым у пользователя есть доступ. Пример: GET /me/drive/recent.|
 |Дополнение|1.0 и бета-версия|Добавлена функция _sharedWithMe_ для вывода списка элементов, доступ к которым предоставлен текущему пользователю. Пример: GET /me/drive/sharedWithMe.|
 
-<a id="driveitem" class="xliff"></a>
-
-### DriveItem
+### <a name="driveitem"></a>DriveItem
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1118,17 +950,13 @@
 |Дополнение|1.0 и бета-версия|Атрибуты экземпляра _conflictBehavior_ теперь можно применять к _driveItem_.|
 |Дополнение|Бета|Добавлена функция _invite_, которая позволяет отправить приглашение к совместному использованию для существующего элемента. Приглашение к совместному использованию создает уникальную ссылку для совместного доступа и отправляет ее получателю приглашения. Пример: POST /drive/items/{item-id}/invite
 
-<a id="event" class="xliff"></a>
-
-### Событие
+### <a name="event"></a>Событие
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Добавлены новое свойство _onlineMeetingUrl_ и новый метод _cancel_.|
 
-<a id="event-messages" class="xliff"></a>
-
-### Сообщения о событиях
+### <a name="event-messages"></a>Сообщения о событиях
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1136,17 +964,13 @@
 |Дополнение|Бета-версия|Добавлены свойства _singleValueExtendedProperties_ и _multiValueExtendedProperties_.|
 |Дополнение|Бета-версия|Добавлен новый метод _unsubscribe_.|
 
-<a id="excel" class="xliff"></a>
-
-### Excel
+### <a name="excel"></a>Excel
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета|Мы добавляем новые REST API Excel, которые позволяют считывать и изменять данные в рабочей книге Excel. Теперь вы можете создавать интеллектуальные приложения, с помощью которых пользователи смогут эффективно анализировать содержимое, хранящееся в рабочих книгах Excel. Используйте аналитические функции Excel, создавайте таблицы и визуально привлекательные диаграммы в своем приложении. Дополнительные сведения см. в статье [Работа с Excel в Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/excel).|
 
-<a id="general" class="xliff"></a>
-
-### Общие
+### <a name="general"></a>Общие
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1156,18 +980,14 @@
 |Изменение|Бета|Удалены имена свойств подписок.|
 |Дополнение|Бета|Мы добавили возможность находить (с помощью _directorySettingTemplates_) и переопределять поведение по умолчанию (путем создания _setting_ на основе шаблона) для объектов и связанных с ними функций. Изначально для управления поведением групп Office использовался только этот шаблон.|
 
-<a id="mail-folder" class="xliff"></a>
-
-### Папка почты
+### <a name="mail-folder"></a>Папка почты
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Добавлены свойства _wellKnownName_ и _userConfigurations_.|
 |Дополнение|Бета-версия|Добавлены свойства _singleValueExtendedProperties_ и _multiValueExtendedProperties_.|
 
-<a id="messages" class="xliff"></a>
-
-### Сообщения
+### <a name="messages"></a>Сообщения
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1178,26 +998,20 @@
 |Изменение|Бета-версия|У метода _createForward_ появились новые параметры — _Message_, _ToRecipients_ и _comment_.|
 |Изменение|Бета-версия|У методов _reply_, _replyAll_ и _forward_ появился новый параметр — _Message_.|
 
-<a id="permission" class="xliff"></a>
-
-### Разрешение
+### <a name="permission"></a>Разрешение
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0 и бета-версия|Добавлено свойство _sharingInvitation_ для предоставления сведений о приглашении к совместному использованию, связанном с этим разрешением.|
 
-<a id="person" class="xliff"></a>
-
-### Человек
+### <a name="person"></a>Человек
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Добавлены новые свойства: _birthday_, _personNotes_, _isFavorite_, _phones_, _permission_, _postalAddresses_, _websites_, _yomiCompany_, _department_, _profession_, _mailboxType_ и _personType_.|
 |Дополнение|Бета-версия|Добавлены новые типы перечислений: _physicalAddressType_, _webSite_, _phone_ и _webSiteType_.|
 
-<a id="reference-attachment" class="xliff"></a>
-
-### Вложение в виде ссылки
+### <a name="reference-attachment"></a>Вложение в виде ссылки
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1205,37 +1019,27 @@
 |Дополнение|Бета-версия|Добавлены свойства _singleValueExtendedProperties_ и _multiValueExtendedProperties_.|
 |Дополнение|Бета-версия|Добавлены новые типы перечислений — _referenceAttachmentProvider_ и _referenceAttachmentPermission_.|
 
-<a id="subscriptions" class="xliff"></a>
-
-### Подписки
+### <a name="subscriptions"></a>Подписки
 
 |**Тип изменения**|**Конечная точка**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|Теперь веб-перехватчики общедоступны в конечной точке версии 1.0 благодаря ресурсу _/Subscriptions_. Вы можете создавать, считывать, продлевать и удалять подписки на уведомления о данных из чатов в Outlook и группах Office 365.|
 
-<a id="user" class="xliff"></a>
-
-### Пользователь
+### <a name="user"></a>Пользователь
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета-версия|Добавлено свойство _mailboxSettings_ и соответствующие типы.|
 
-<a id="february-2016" class="xliff"></a>
+## <a name="february-2016"></a>Февраль 2016 г.
 
-## Февраль 2016 г.
-
-<a id="driveitem" class="xliff"></a>
-
-### DriveItem
+### <a name="driveitem"></a>DriveItem
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0 и бета-версия|Новое свойство _remoteItem_ для driveItem для учетных записей Майкрософт.|
 
-<a id="general" class="xliff"></a>
-
-### Общие
+### <a name="general"></a>Общие
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1243,58 +1047,42 @@
 |Изменение|1.0 и бета-версия|Запросы Drive для учетных записей, хранилища OneDrive которых подготовлены по запросу, работают более надежно и в большем количестве сценариев, где для используемых по умолчанию сайтов SharePoint клиента применяются нестандартные имена.|
 |Удаление|Бета|Из бета-версии схемы удалены различные нереализованные типы для более точного соответствия схеме версии 1.0.|
 
-<a id="subscriptions" class="xliff"></a>
-
-### Подписки
+### <a name="subscriptions"></a>Подписки
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета|Проверка notificationUrl на создание подписок. Дополнительные сведения см. в статье [Обновление веб-перехватчиков Microsoft Graph — январь 2016 г.](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016)|
 |Дополнение|Бета|Теперь можно удалять объекты подписки: DELETE https://graph.microsoft.com/beta/subscriptions/|
 
-<a id="users" class="xliff"></a>
-
-### Пользователи
+### <a name="users"></a>Пользователи
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Изменение|1.0 и бета-версия|Теперь для учетных записей Майкрософт возвращается _displayName_.|
 
-<a id="january-2016" class="xliff"></a>
+## <a name="january-2016"></a>Январь 2016 г.
 
-## Январь 2016 г.
-
-<a id="contacts" class="xliff"></a>
-
-### Контакты
+### <a name="contacts"></a>Контакты
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|1.0|В набор объектов личных контактов добавлено свойство mobilePhone.|
 
-<a id="directoryobjects" class="xliff"></a>
-
-### directoryObjects
+### <a name="directoryobjects"></a>directoryObjects
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Исправление|1.0 и бета-версия|Исправлены действия вызовов, привязанные к directoryObjects, при которых возникали сбои со следующим сообщением об ошибке:  Тип значения, возвращаемого в результате операции, невозможен для заданного набора объектов. Это относится к следующим действиям: _microsoft.graph.checkMemberObjects_, _microsoft.graph.getMemberObjects_, _microsoft.graph.checkMemberGroups_, _microsoft.graph.assignLicense_, _microsoft.graph.changePassword_.|
 
-<a id="december-2015" class="xliff"></a>
+## <a name="december-2015"></a>Декабрь 2015 г.
 
-## Декабрь 2015 г.
-
-<a id="contacts" class="xliff"></a>
-
-### Контакты
+### <a name="contacts"></a>Контакты
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета-версия|В набор объектов личных контактов добавлено свойство mobilePhone.|
 
-<a id="general" class="xliff"></a>
-
-### Общие
+### <a name="general"></a>Общие
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
@@ -1305,25 +1093,19 @@
 |Дополнение|1.0 и бета-версия|Добавлено свойство authorization_uri в заголовок www-authenticate ответа 401. Вы можете использовать этот универсальный код ресурса для запуска потока получения токена.|
 |Дополнение|1.0 и бета-версия|Улучшены сообщения об ошибках для пользователей и групп.|
 
-<a id="groups" class="xliff"></a>
-
-### Группы
+### <a name="groups"></a>Группы
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Исправление|1.0 и бета-версия|Исправлен вызов следующих действий групп: _microsoft.graph.addFavorite_, _microsoft.graph.removeFavorite_ и _microsoft.graph.resetUnseenCount_.|
 
-<a id="messages" class="xliff"></a>
-
-### Сообщения
+### <a name="messages"></a>Сообщения
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
 |Дополнение|Бета-версия|К типу eventMessage добавлен подтип для свойств eventMessageRequest eventMessage, startDateTime, endDateTime, location, type, recurrence и isOutOfDate.|
 
-<a id="users" class="xliff"></a>
-
-### Пользователи
+### <a name="users"></a>Пользователи
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:--------------|:-----------|:--------------|
