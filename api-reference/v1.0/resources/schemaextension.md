@@ -1,43 +1,8 @@
-# <a name="schemaextension-resource-type-schema-extensions"></a>Тип ресурса schemaExtension (расширения схемы)
+<span data-ttu-id="2edbb-p106">Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы. Возможные варианты: **contact**, **device**, **event**, **group**, **message**, **organization**, **post** или **user**.</span><span class="sxs-lookup"><span data-stu-id="2edbb-p106">Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from **contact**, **device**, **event**, **group**, **message**, **organization**, **post**, or **user**.</span></span>|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы. Возможные варианты: **contact**, **device**, **event**, **group**, **message**, **organization**, **post** или **user**.|
 
-С помощью расширений схемы вы можете задать схему, которую необходимо расширить, и добавить строго типизированные пользовательские данные в тип ресурса. В расширенном ресурсе пользовательские данные имеют сложный тип. 
+## <a name="json-representation"></a><span data-ttu-id="2edbb-166">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="2edbb-166">JSON representation</span></span>
 
-Расширения схемы поддерживаются в ресурсах указанных ниже типов.
-
- - [contact](contact.md)
- - [device](device.md)
- - [event](event.md) (для пользователя или календаря группы Office 365)
- - [post](post.md) (для группы Office 365)
- - [group](group.md)
- - [message](message.md) 
- - [organization](organization.md)
- - [user](user.md)
-
-Сведения о том, как добавлять пользовательские данные в группы, см. в [примере расширения схемы](../../../concepts/extensibility_schema_groups.md).
-
-## <a name="methods"></a>Методы
-
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Создание](../api/schemaextension_post_schemaextensions.md) | schemaExtension |Создание определения расширения схемы.|
-|[Перечисление](../api/schemaextension_list.md) | schemaExtension |Создание списка доступных определений schemaExtension и их свойств.|
-|[Получение](../api/schemaextension_get.md) | schemaExtension |Получение свойств указанного определения schemaExtension.|
-|[Обновление](../api/schemaextension_update.md) | schemaExtension   |Обновление определения schemaExtension. |
-|[Удаление](../api/schemaextension_delete.md) | Нет |Удаление определения schemaExtension. |
-
-## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|description|String|Описание расширения схемы.|
-|id|String|Уникальный идентификатор для определения расширения схемы. <br>Значение можно присвоить одним из двух способов: <ul><li>Сцепите имя одного из ваших проверенных доменов с именем расширения схемы, чтобы создать уникальную строку такого формата: \{_&#65279;доменноеИмя_\}\_\{_&#65279;имяСхемы_\}. Например, `contoso_mySchema`. </li><li>Укажите имя схемы и предоставьте Microsoft Graph возможность использовать его для назначения **id** в таком формате: ext\{_&#65279;8-случайных-букв-или-цифр_\}\_\{_&#65279;имя-схемы_\}. Например, `extkvbmkofy_mySchema`.</li></ul>После создания это свойство невозможно изменить. |
-|owner|String|appId приложения, создавшего расширение схемы. Только для чтения.|
-|properties|Коллекция [extensionSchemaProperty](extensionschemaproperty.md)|Коллекция имен и типов свойств, составляющих определение расширения схемы.|
-|status|Строка|Состояние жизненного цикла расширения схемы. Возможные состояния: **InDevelopment**, **Available** и **Deprecated**. При создании свойство автоматически получает значение **InDevelopment**. [Расширения схемы](../../../concepts/extensibility_overview.md#schema-extensions) предоставляют дополнительные сведения о возможных переходах из одного состояния в другое и об их поведении.|
-|targetTypes|Коллекция строк|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы. Возможные варианты: **contact**, **device**, **event**, **group**, **message**, **organization**, **post** или **user**.|
-
-## <a name="json-representation"></a>Представление в формате JSON
-
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="2edbb-167">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2edbb-167">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
