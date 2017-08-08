@@ -260,14 +260,25 @@
       <Item text="Вывод объекта directoryRoleTemplate" url="/en-us/api-reference/v1.0/api/directoryroletemplate_get" SEOKeyword="Вывод объекта directoryRoleTemplate, API Microsoft Graph, API для управления каталогами" SEODescription="Получение свойств и связей объекта directoryRoleTemplate." />
     </Item>
     <Item text="Домены" url="/en-us/api-reference/v1.0/resources/domain">
-      <Item text="Список доменов" url="/en-us/api-reference/v1.0/api/domain_list" />
+	  <Item text="Список доменов" url="/en-us/api-reference/v1.0/api/domain_list" />
       <Item text="Создание домена" url="/en-us/api-reference/v1.0/api/domain_post_domains" />
       <Item text="Удаление домена" url="/en-us/api-reference/v1.0/api/domain_delete" />
       <Item text="Получение домена" url="/en-us/api-reference/v1.0/api/domain_get" />
       <Item text="Обновление домена" url="/en-us/api-reference/v1.0/api/domain_update" />
       <Item text="Проверка домена" url="/en-us/api-reference/v1.0/api/domain_verify" />
 	  </Item>
-    <Item text="Диспетчер приглашений" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="С помощью диспетчера приглашений можно создать приглашение на добавление внешнего пользователя в каталог организации. ">
+    <Item text="Параметр группы" url="/en-us/api-reference/v1.0/resources/groupsetting">
+	  <Item text="Создание параметра" url="/en-us/api-reference/v1.0/api/groupsetting_post_groupsettings" />
+	  <Item text="Получение параметра" url="/en-us/api-reference/v1.0/api/groupsetting_get" />
+	  <Item text="Перечисление параметров" url="/en-us/api-reference/v1.0/api/groupsetting_list" />
+	  <Item text="Обновление параметра" url="/en-us/api-reference/v1.0/api/groupsetting_update" />
+	  <Item text="Удаление параметра" url="/en-us/api-reference/v1.0/api/groupsetting_delete" />
+	</Item>
+	<Item text="Шаблон параметров группы" url="/en-us/api-reference/v1.0/resources/groupsettingtemplate">
+	  <Item text="Перечисление шаблонов параметров группы" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_list" />
+	  <Item text="Получение шаблона параметров группы" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_get" />
+	</Item>
+	<Item text="Диспетчер приглашений" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="С помощью диспетчера приглашений можно создать приглашение на добавление внешнего пользователя в каталог организации. ">
       <Item text="Создание приглашения" url="/en-us/api-reference/v1.0/api/invitation_post" SEODescription="Создает приглашение на добавление внешнего пользователя в каталог организации." />
     </Item>
     <Item text="Организация" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="структура организации пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="">
@@ -910,7 +921,7 @@
       <Item text="Параметр каталога" url="/en-us/api-reference/beta/resources/directorysetting" SEOKeyword="API для управления объектами directorySetting, API Microsoft Graph, API для управления объектами directorysetting" SEODescription="Управляет поведением сущностей и компонентов как на уровне клиента, так и на уровне конкретной сущности.">
         <Item text="Создание параметра" url="/en-us/api-reference/beta/api/directorysetting_post_settings" SEOKeyword="Создание объекта directorySetting, API Microsoft Graph, API для управления каталогами" SEODescription="Получение списка объектов DirectoryRole." />
         <Item text="Получение параметра" url="/en-us/api-reference/beta/api/directorysetting_get" SEOKeyword="Получение объекта directorySetting, API Microsoft Graph, API для управления каталогами" SEODescription="С помощью этого API можно создать объект DirectoryRole." />
-        <Item text="Список параметров" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="Список объектов directorySetting, API Microsoft Graph, API для управления каталогами" SEODescription="Получение свойств и связей объекта DirectoryRole." />
+        <Item text="Перечисление параметров" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="Перечисление объектов directorySetting, API Microsoft Graph, Directory API" SEODescription="Получение свойств и связей объекта DirectoryRole." />
         <Item text="Обновление параметра" url="/en-us/api-reference/beta/api/directorysetting_update" SEOKeyword="Изменение объекта directorySetting, API Microsoft Graph, API для управления каталогами" SEODescription="Изменение свойств объекта DirectoryRole." />
         <Item text="Удаление параметра" url="/en-us/api-reference/beta/api/directorysetting_delete" SEOKeyword="Удаление объекта directorySetting, API Microsoft Graph, API для управления каталогами" SEODescription="Удаление объекта DirectoryRole." />
       </Item>
