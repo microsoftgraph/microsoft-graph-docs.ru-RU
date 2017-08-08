@@ -12,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite
 GET /me/onenote/sectionGroups/{id}/sections
 GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 GET /groups/{id}/onenote/sectionGroups/{id}/sections
+GET /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
@@ -24,7 +25,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |  
 
 ## <a name="request-body"></a>Текст запроса
@@ -39,7 +40,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}/sections
   "name": "get_sections"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/oennote/sectionGroups/{id}/sections
+GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.

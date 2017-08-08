@@ -12,11 +12,12 @@ Notes.Create, Notes.ReadWrite или Notes.ReadWrite.All.
 POST /me/onenote/notebooks/{id}/sectionGroups
 POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/sectionGroups
 POST /groups/{id}/onenote/notebooks/{id}/sectionGroups
+POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса

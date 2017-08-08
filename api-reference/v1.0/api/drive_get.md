@@ -17,7 +17,7 @@
 
 Чтобы получить доступ к хранилищу пользователя OneDrive или OneDrive для бизнеса, ваше приложение должно запросить отношение **drive** для ресурса [User](../resources/user.md).
 
-### <a name="http-request"></a>HTTP-запрос
+## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
@@ -30,7 +30,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 Для доступа к библиотеке документов [группы](../resources/group.md) по умолчанию приложение запрашивает отношение **drive** для объекта Group.
 
-### <a name="http-request"></a>HTTP-запрос
+## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 

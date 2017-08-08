@@ -19,7 +19,7 @@
 GET /sites/{site-id}/sites
 ```
 
-### <a name="example"></a>Пример
+## <a name="example"></a>Пример
 
 #### <a name="request"></a>Запрос
 

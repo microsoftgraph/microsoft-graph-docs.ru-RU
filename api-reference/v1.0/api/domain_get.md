@@ -2,11 +2,11 @@
 
 Получение свойств и связей объекта домена.
 
-### <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Необходимые компоненты
 
 Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All* или *Domain.ReadWrite.All*.
 
-### <a name="http-request"></a>HTTP-запрос
+## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,22 +15,22 @@ GET /domains/{id}
 
 > В качестве параметра {id} укажите домен, используя его полное доменное имя.
 
-### <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
 
-### <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 ### <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [domain](../resources/domain.md) в теле отклика.
-### <a name="example"></a>Пример
+## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 
 <!-- {

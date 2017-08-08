@@ -12,14 +12,15 @@ Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All.
 GET /me/onenote/resources/{id}/content
 GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
 GET /groups/{id}/onenote/resources/{id}/content
+GET /sites/{id}/onenote/resources/{id}/content
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении это метод возвращает код отклика `200 OK` и двоичные данные изображения или файла в теле отклика.

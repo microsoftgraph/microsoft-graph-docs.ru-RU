@@ -12,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite
 GET /me/onenote/notebooks/{id}/sections
 GET /users/{id | userPrincipalName}/onenote/notebooks/{id}/sections
 GET /groups/{id}/onenote/notebooks/{id}/sections
+GET /sites/{id}/onenote/notebooks/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
@@ -24,7 +25,7 @@ GET /groups/{id}/onenote/notebooks/{id}/sections
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |  
 
 ## <a name="request-body"></a>Текст запроса

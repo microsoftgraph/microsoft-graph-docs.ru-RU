@@ -2,27 +2,27 @@
 
 Получение свойств и связей объекта [Contract](../resources/contract.md).
 
-### <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Необходимые компоненты
 
 Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*.
 
-### <a name="http-request"></a>HTTP-запрос
+## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /contracts/{id}
 ```
 
-### <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
 
-### <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-### <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте тело запроса для этого метода.
 
@@ -30,7 +30,7 @@ GET /contracts/{id}
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [Contract](../resources/contract.md) в теле отклика.
 
-### <a name="example"></a>Пример
+## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 
 <!-- {

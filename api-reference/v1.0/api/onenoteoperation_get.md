@@ -19,6 +19,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite
 GET /me/onenote/operations/{id}
 GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
+GET /sites/{id}/onenote/operations/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Нет.
@@ -26,7 +27,7 @@ GET /groups/{id}/onenote/operations/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` | 
 
 ## <a name="request-body"></a>Текст запроса

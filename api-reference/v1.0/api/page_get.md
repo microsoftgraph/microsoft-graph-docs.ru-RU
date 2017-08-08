@@ -32,16 +32,17 @@ Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All.
 GET /me/onenote/pages/{id}
 GET /users/{id | userPrincipalName}/onenote/pages/{id}
 GET /groups/{id}/onenote/pages/{id}
+GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) `select` и `expand` для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) `select` и `expand` для настройки отклика.
 
 Отклик, возвращаемый по умолчанию, разворачивает `parentSection` и выбирает свойства `id`, `name` и `self` раздела. Допустимые значения `expand` для страниц: `parentNotebook` и `parentSection`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса

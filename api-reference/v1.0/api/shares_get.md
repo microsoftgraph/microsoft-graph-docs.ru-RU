@@ -66,7 +66,7 @@ Content-type: application/json
 
 Так как элемент [**SharedDriveItem**](../resources/shareddriveitem.md) содержит полезную информацию, большинство приложений будут стремиться получить прямой доступ к общему элементу [DriveItem](../resources/driveitem.md). Ресурс **SharedDriveItem** включает связи **корня** и **элементов**, которые могут получать доступ к содержимому в области общего элемента.
 
-### <a name="example-single-file"></a>Пример (один файл)
+## <a name="example-single-file"></a>Пример (один файл)
 
 ##### <a name="request"></a>Запрос
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-shared-folder"></a>Пример (общая папка)
+## <a name="example-shared-folder"></a>Пример (общая папка)
 
 ##### <a name="request"></a>Запрос
 

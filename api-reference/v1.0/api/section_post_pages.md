@@ -9,15 +9,16 @@ Notes.Create, Notes.ReadWrite или Notes.ReadWrite.All.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/oennote/sections/{id}/pages
+POST /me/onenote/sections/{id}/pages
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
+POST /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | string | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type | строка | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите HTML-содержимое страницы.
