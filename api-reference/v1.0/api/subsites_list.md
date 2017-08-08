@@ -1,17 +1,17 @@
-# <a name="enumerate-subsites-of-a-site"></a>Перечисление дочерних сайтов
+# <a name="enumerate-subsites-of-a-site"></a><span data-ttu-id="0aba7-101">Перечисление дочерних сайтов</span><span class="sxs-lookup"><span data-stu-id="0aba7-101">Enumerate subsites of a site</span></span>
 
-Получение коллекции дочерних сайтов определенного [сайта][].
+<span data-ttu-id="0aba7-102">Получение коллекции дочерних сайтов определенного [сайта][].</span><span class="sxs-lookup"><span data-stu-id="0aba7-102">Get a collection of subsites defined for a [site][].</span></span>
 
-[site]: ../resources/site.md
+<span data-ttu-id="0aba7-103">[site]: ../resources/site.md</span><span class="sxs-lookup"><span data-stu-id="0aba7-103">[site]: ../resources/site.md</span></span>
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a><span data-ttu-id="0aba7-104">Необходимые условия</span><span class="sxs-lookup"><span data-stu-id="0aba7-104">Prerequisites</span></span>
 
-Для выполнения этого API требуется одно из следующих разрешений:
+<span data-ttu-id="0aba7-105">Для выполнения этого API требуется одно из следующих разрешений:</span><span class="sxs-lookup"><span data-stu-id="0aba7-105">One of the following scopes is required to execute this request:</span></span>
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+* <span data-ttu-id="0aba7-106">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="0aba7-106">Sites.Read.All</span></span>
+* <span data-ttu-id="0aba7-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0aba7-107">Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a>HTTP-запрос
+## <a name="http-request"></a><span data-ttu-id="0aba7-108">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0aba7-108">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -19,9 +19,9 @@
 GET /sites/{site-id}/sites
 ```
 
-### <a name="example"></a>Пример
+## <a name="example"></a><span data-ttu-id="0aba7-109">Пример</span><span class="sxs-lookup"><span data-stu-id="0aba7-109">Example</span></span>
 
-#### <a name="request"></a>Запрос
+#### <a name="request"></a><span data-ttu-id="0aba7-110">Запрос</span><span class="sxs-lookup"><span data-stu-id="0aba7-110">Request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites" } -->
 
@@ -29,7 +29,7 @@ GET /sites/{site-id}/sites
 GET /sites/{site-id}/sites
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a><span data-ttu-id="0aba7-111">Отклик</span><span class="sxs-lookup"><span data-stu-id="0aba7-111">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
