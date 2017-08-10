@@ -1,6 +1,6 @@
-<span data-ttu-id="010a0-p111">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="010a0-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="8b9b0-p111">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8b9b0-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -30,11 +30,10 @@ Content-length: 337
 }
 ```
 
-### <span data-ttu-id="010a0-163">См. также</span><span class="sxs-lookup"><span data-stu-id="010a0-163">See also</span></span>
-<a id="see-also" class="xliff"></a>
+### <a name="see-also"></a><span data-ttu-id="8b9b0-163">См. также</span><span class="sxs-lookup"><span data-stu-id="8b9b0-163">See also</span></span>
 
-- [<span data-ttu-id="010a0-164">Отслеживание изменений данных Microsoft Graph с помощью разностного запроса</span><span class="sxs-lookup"><span data-stu-id="010a0-164">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
-- [<span data-ttu-id="010a0-165">Получение добавочных изменений сообщений в папке</span><span class="sxs-lookup"><span data-stu-id="010a0-165">Get incremental changes to messages in a folder</span></span>](../../../concepts/delta_query_messages.md)
+- [<span data-ttu-id="8b9b0-164">Отслеживание изменений данных Microsoft Graph с помощью разностного запроса</span><span class="sxs-lookup"><span data-stu-id="8b9b0-164">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
+- [<span data-ttu-id="8b9b0-165">Получение добавочных изменений сообщений в папке</span><span class="sxs-lookup"><span data-stu-id="8b9b0-165">Get incremental changes to messages in a folder</span></span>](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,81 +1,16 @@
-# <a name="onenote-resource-type"></a>Тип ресурса onenote
+<span data-ttu-id="496e5-p106">Разделы во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.</span><span class="sxs-lookup"><span data-stu-id="496e5-p106">The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.</span></span>|Разделы во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
 
-Точка входа для ресурсов OneNote.
 
-Все вызовы службы OneNote через API Microsoft Graph выполняются с помощью следующего корневого URL-адреса службы:
+## <a name="methods"></a><span data-ttu-id="496e5-146">Методы</span><span class="sxs-lookup"><span data-stu-id="496e5-146">Methods</span></span>
 
-```
-https://graph.microsoft.com/{version}/{location}/onenote/ 
-```
-
-В качестве расположения можно задать записную книжку пользователя в Office 365 или личном хранилище OneDrive, а также записную книжку группы в Office 365. Записные книжки, размещенные на сайте SharePoint, на данный момент не поддерживаются. 
-
-**Записные книжки пользователя**. Чтобы получить доступ к персональным записным книжкам в OneDrive для бизнеса или личном хранилище OneDrive, воспользуйтесь одним из следующих URL-адресов:
-
-```
-https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
-https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
-https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
-```
-
-**Записные книжки группы**. Чтобы получить доступ к записным книжкам группы, воспользуйтесь следующим корневым URL-адресом службы:
-
-```
-https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
-```
-
-Различные уровни доступа к записным книжкам OneNote реализованы при помощи указанных ниже областей разрешений. Выбор областей разрешений зависит от расположения целевых записных книжек и функциональности приложения. 
-
-**Области для персональных записных книжек в OneDrive для бизнеса или личном хранилище OneDrive, владельцем которых является текущий пользователь**
-
-| Область | Разрешение на портале Azure | Описание |
-|:-------|:------|:------|
-| Notes.Create | Создание записных книжек OneNote пользователей | Просмотр названий записных книжек OneNote и разделов, создание новых записных книжек, разделов и страниц. |
-| Notes.Read | Чтение записных книжек OneNote пользователей | Чтение записных книжек OneNote. |
-| Notes.ReadWrite | Чтение и запись записных книжек OneNote пользователей | Чтение и изменение записных книжек OneNote, а также предоставление общего доступа к ним. |
-
-**Области для личных записных книжек, к которым другие пользователи предоставили общий доступ, и для записных книжек групп, к которым предоставлен доступ текущему пользователю**
-
-| Область | Разрешение на портале Azure | Описание |
-|:-------|:------|:------|
-| Notes.Read.All | Чтение всех записных книжек OneNote, к которым есть доступ у пользователя | Чтение всех записных книжек OneNote, доступных вошедшему пользователю. |
-| Notes.ReadWrite.All | Чтение и запись всех записных книжек OneNote, доступных пользователю | Чтение и изменение всех записных книжек OneNote, доступных вошедшему пользователю, а также предоставление общего доступа к ним. |
-
-**Примечание.** Доступ к записным книжкам на сайте SharePoint через API Graph в настоящее время не поддерживается.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "notebooks",
-    "pages",
-    "resources",
-    "sectionGroups",
-    "sections"
-  ],
-  "@odata.type": "microsoft.graph.onenote"
-}-->
-
-## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| <span data-ttu-id="496e5-147">Метод</span><span class="sxs-lookup"><span data-stu-id="496e5-147">Method</span></span>           | <span data-ttu-id="496e5-148">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="496e5-148">Return Type</span></span>    |<span data-ttu-id="496e5-149">Описание</span><span class="sxs-lookup"><span data-stu-id="496e5-149">Description</span></span>|
 |:---------------|:--------|:----------|
-|notebooks|Коллекция [Notebook](notebook.md)|Коллекция записных книжек OneNote, принадлежащих пользователю или группе. Только для чтения. Допускается значение null.|
-|operations|Коллекция [Operation](onenoteoperation.md) |Состояние операций OneNote. Получение коллекции операций не поддерживается, но можно получить состояние длительных операций, если в отклике возвращается заголовок `Operation-Location`. Только для чтения. Допускается значение null.|
-|pages|Коллекция [Page](page.md)|Страницы всех записных книжек OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
-|resources|Коллекция [Resource](resource.md) |Изображения и другие ресурсы file на страницах OneNote. Получение коллекции ресурсов не поддерживается, но можно [получить двоичное содержимое определенного ресурса](resource.md). Только для чтения. Допускается значение null.|
-|sectionGroups|Коллекция [SectionGroup](sectiongroup.md)|Группы разделов во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
-|sections|Коллекция [Section](section.md)|Разделы во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
-
-
-## <a name="methods"></a>Методы
-
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Создание записной книжки](../api/onenote_post_notebooks.md) |[Notebook](notebook.md)| Создание записной книжки путем публикации в коллекции записных книжек.|
-|[Перечисление записных книжек](../api/onenote_list_notebooks.md) |Коллекция [Notebook](notebook.md)| Получение коллекции записных книжек.|
-|[Создание страницы](../api/onenote_post_pages.md) |[Page](page.md)| Создание страницы путем публикации в коллекции страниц.|
-|[Перечисление страниц](../api/onenote_list_pages.md) |Коллекция [Page](page.md)| Получение коллекции страниц.|
-|[Перечисление групп разделов](../api/onenote_list_sectiongroups.md) |Коллекция [SectionGroup](sectiongroup.md)| Получение коллекции групп разделов.|
-|[Перечисление разделов](../api/onenote_list_sections.md) |Коллекция [Section](section.md)| Получение коллекции разделов.|
+|[<span data-ttu-id="496e5-150">Создание записной книжки</span><span class="sxs-lookup"><span data-stu-id="496e5-150">Create notebook</span></span>](../api/onenote_post_notebooks.md) |[<span data-ttu-id="496e5-151">Notebook</span><span class="sxs-lookup"><span data-stu-id="496e5-151">Notebook</span></span>](notebook.md)| <span data-ttu-id="496e5-152">Создание записной книжки путем публикации в коллекции записных книжек.</span><span class="sxs-lookup"><span data-stu-id="496e5-152">Create a notebook by posting to the notebooks collection.</span></span>|
+|[<span data-ttu-id="496e5-153">Перечисление записных книжек</span><span class="sxs-lookup"><span data-stu-id="496e5-153">List notebooks</span></span>](../api/onenote_list_notebooks.md) |<span data-ttu-id="496e5-154">Коллекция [Notebook](notebook.md)</span><span class="sxs-lookup"><span data-stu-id="496e5-154">[Notebook](notebook.md) collection</span></span>| <span data-ttu-id="496e5-155">Получение коллекции записных книжек.</span><span class="sxs-lookup"><span data-stu-id="496e5-155">Get a collection of notebooks.</span></span>|
+|[<span data-ttu-id="496e5-156">Создание страницы</span><span class="sxs-lookup"><span data-stu-id="496e5-156">Create page</span></span>](../api/onenote_post_pages.md) |[<span data-ttu-id="496e5-157">Page</span><span class="sxs-lookup"><span data-stu-id="496e5-157">Page</span></span>](page.md)| <span data-ttu-id="496e5-158">Создание страницы путем публикации в коллекции страниц.</span><span class="sxs-lookup"><span data-stu-id="496e5-158">Create a page by posting to the pages collection.</span></span>|
+|[<span data-ttu-id="496e5-159">Перечисление страниц</span><span class="sxs-lookup"><span data-stu-id="496e5-159">List pages</span></span>](../api/onenote_list_pages.md) |<span data-ttu-id="496e5-160">Коллекция [Page](page.md)</span><span class="sxs-lookup"><span data-stu-id="496e5-160">[Page](page.md) collection</span></span>| <span data-ttu-id="496e5-161">Получение коллекции страниц.</span><span class="sxs-lookup"><span data-stu-id="496e5-161">Get a collection of pages.</span></span>|
+|[<span data-ttu-id="496e5-162">Перечисление групп разделов</span><span class="sxs-lookup"><span data-stu-id="496e5-162">List section groups</span></span>](../api/onenote_list_sectiongroups.md) |<span data-ttu-id="496e5-163">Коллекция [SectionGroup](sectiongroup.md)</span><span class="sxs-lookup"><span data-stu-id="496e5-163">[SectionGroup](sectiongroup.md) collection</span></span>| <span data-ttu-id="496e5-164">Получение коллекции групп разделов.</span><span class="sxs-lookup"><span data-stu-id="496e5-164">Get a collection of section groups.</span></span>|
+|[<span data-ttu-id="496e5-165">Перечисление разделов</span><span class="sxs-lookup"><span data-stu-id="496e5-165">List sections</span></span>](../api/onenote_list_sections.md) |<span data-ttu-id="496e5-166">Коллекция [Section](section.md)</span><span class="sxs-lookup"><span data-stu-id="496e5-166">[Section](section.md) collection</span></span>| <span data-ttu-id="496e5-167">Получение коллекции разделов.</span><span class="sxs-lookup"><span data-stu-id="496e5-167">Get a collection of sections.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

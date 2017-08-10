@@ -1,39 +1,4 @@
-# <a name="list-licensedetails"></a>Перечисление licenseDetails
-
-Получение списка объектов licenseDetails.
-
-### <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из следующих **областей**: *User.Read*, *User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All или Directory.AccessAsUser.All*.
-
-### <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/licenseDetails
-GET /users/{id}/licenseDetails
-```
-### <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
-
-### <a name="request-headers"></a>Заголовки запросов
-| Имя      |Описание|
-|:----------|:----------|
-| Authorization  | Bearer &lt;code&gt;|
-
-### <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
-### <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [licenseDetails](../resources/licensedetails.md) в теле отклика.
-### <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-
-<!-- {
-  "blockType": "request",
-  "name": "get_licensedetails"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/licenseDetails
-```
-##### <a name="response"></a>Отклик
+<span data-ttu-id="b6ddf-p101">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b6ddf-p101">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

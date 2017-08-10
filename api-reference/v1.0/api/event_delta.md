@@ -1,6 +1,6 @@
-<span data-ttu-id="d9ed2-p112">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d9ed2-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="d2c11-p112">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d2c11-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -30,11 +30,10 @@ Content-length: 359
 }
 ```
 
-### <span data-ttu-id="d9ed2-166">См. также</span><span class="sxs-lookup"><span data-stu-id="d9ed2-166">See also</span></span>
-<a id="see-also" class="xliff"></a>
+### <a name="see-also"></a><span data-ttu-id="d2c11-166">См. также</span><span class="sxs-lookup"><span data-stu-id="d2c11-166">See also</span></span>
 
-- [<span data-ttu-id="d9ed2-167">Отслеживание изменений данных Microsoft Graph с помощью разностного запроса</span><span class="sxs-lookup"><span data-stu-id="d9ed2-167">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
-- [<span data-ttu-id="d9ed2-168">Получение добавочных изменений событий в календаре</span><span class="sxs-lookup"><span data-stu-id="d9ed2-168">Get incremental changes to events in a calendar</span></span>](../../../concepts/delta_query_events.md)
+- [<span data-ttu-id="d2c11-167">Отслеживание изменений данных Microsoft Graph с помощью разностного запроса</span><span class="sxs-lookup"><span data-stu-id="d2c11-167">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
+- [<span data-ttu-id="d2c11-168">Получение добавочных изменений событий в календаре</span><span class="sxs-lookup"><span data-stu-id="d2c11-168">Get incremental changes to events in a calendar</span></span>](../../../concepts/delta_query_events.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
