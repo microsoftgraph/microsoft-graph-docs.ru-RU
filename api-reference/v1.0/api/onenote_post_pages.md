@@ -1,6 +1,6 @@
 # <a name="create-page"></a>Создание страницы
 
-Создание страницы OneNote в разделе по умолчанию записной книжки по умолчанию.
+Создание страницы OneNote в разделе, используемом по умолчанию, в записной книжке, используемой по умолчанию.
 
 Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, примените параметр запроса `sectionName`.  Пример: `../onenote/pages?sectionName=My%20section`
 
@@ -17,15 +17,16 @@ Notes.Create, Notes.ReadWrite или Notes.ReadWrite.All.
 POST /me/onenote/pages
 POST /users/{id | userPrincipalName}/onenote/pages
 POST /groups/{id}/onenote/pages
+POST /sites/{id}/onenote/pages
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов  
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | string | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type | строка | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите содержимое HTML для страницы.
 
 Тело может содержать HTML-код, размещенный непосредственно в теле запроса, либо формат составного сообщения, как показано в примере. Если вы отправляете двоичные данные, необходимо отправить составной запрос.

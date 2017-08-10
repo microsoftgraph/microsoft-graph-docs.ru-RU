@@ -4,7 +4,24 @@
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known_issues.md).
 
+## <a name="august-2017"></a>Август 2017 г.
+
+### <a name="onenote"></a>OneNote
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | 1.0 и бета-версия | Добавлено свойство навигации [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) для **site**.  |
+| Дополнение | Бета-версия | Добавлены целевые параметры *siteCollectionId* и *siteId* для операций копирования. Пример: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md). |
+
+
 ## <a name="july-2017"></a>Июль 2017 г.
+
+### <a name="group-settings"></a>Параметры группы
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение     | 1.0       | Добавлена поддержка параметров группы.<br/>Новые типы ресурсов: [groupSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsetting.md), [groupSettingTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsettingtemplate.md), [settingValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingvalue.md) и [settingTemplateValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingtemplatevalue.md). |
+| Изменение       | 1.0       | Добавлено свойство **classification** и свойство навигации **settings** для [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group.md). |
 
 ### <a name="intune-apis"></a>API Intune
 

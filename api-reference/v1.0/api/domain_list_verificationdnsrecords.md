@@ -6,11 +6,11 @@
 
 Для корневых доменов требуется проверка. Например, для домена contoso.com требуется проверка. Если корневой домен проверен, то его дочерние домены будут автоматически считаться проверенными. Например, если домен contoso.com проверен, то его дочерний домен subdomain.contoso.com будет автоматически считаться проверенным.
 
-### <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Обязательные условия
 
 Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All* или *Domain.ReadWrite.All*.
 
-### <a name="http-request"></a>HTTP-запрос
+## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/verificationDnsRecords
@@ -18,18 +18,18 @@ GET /domains/{id}/verificationDnsRecords
 
 > В качестве параметра {id} укажите домен, используя его полное доменное имя.
 
-### <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
 
-### <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте тело запроса для этого метода.
 
@@ -37,7 +37,7 @@ GET /domains/{id}/verificationDnsRecords
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в теле отклика.
 
-### <a name="example"></a>Пример
+## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 
 <!-- {

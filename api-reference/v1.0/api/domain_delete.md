@@ -6,11 +6,11 @@
 > - Вам не удастся восстановить удаленные домены.<br />
 > - Вам не удастся удалить домен, если какие-либо ресурсы или объекты все еще зависят от него. Вы можете найти все зависимые ресурсы с помощью API [перечисления domainNameReferences](domain_list_domainnamereferences.md).
 
-### <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Обязательные условия
 
 Для применения этого API требуется одна из следующих **областей**: *Domain.ReadWrite.All* или *Directory.AccessAsUser.All*.
 
-### <a name="http-request"></a>HTTP-запрос
+## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
@@ -18,14 +18,14 @@ DELETE /domains/{id}
 
 > В качестве параметра {id} укажите домен, используя его полное доменное имя.
 
-### <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте тело запроса для этого метода.
 
@@ -33,7 +33,7 @@ DELETE /domains/{id}
 
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Он не возвращает тело отклика.
 
-### <a name="example"></a>Пример
+## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 
 <!-- {

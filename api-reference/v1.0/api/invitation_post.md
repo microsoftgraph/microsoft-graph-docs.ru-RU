@@ -1,4 +1,4 @@
-# <a name="create-invitation"></a>Создание приглашения
+# <a name="create-invitation"></a>Создание приглашений
 
 Используйте этот API для создания [приглашения](../resources/invitation.md). Приглашение позволяет добавить внешнего пользователя в организацию.
 
@@ -7,21 +7,21 @@
 1. Microsoft Graph может автоматически отправить письмо с приглашением, или ваше приложение может использовать полученное в отклике свойство *inviteRedeemUrl* для отправки специального приглашения выбранным вами способом. Вы можете настроить содержимое и язык письма, отправляемого Microsoft Graph, используя [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
 2. Когда приглашается пользователь, создается объект user (userType задано значение Guest), который требуется для управления доступом к ресурсам. Приглашенный пользователь должен пройти процесс активации, чтобы получить доступ к соответствующим ресурсам.
 
-### <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Обязательные условия
 Для выполнения этого API требуется одна из следующих областей: *User.Invite.All*, *User.ReadWrite.All* или *Directory.ReadWrite.All*.
 
-### <a name="http-request"></a>HTTP-запрос
+## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
-### <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-### <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса должно быть представление объекта [invitation](../resources/invitation.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые обязательно указывать при создании приглашения.
@@ -35,7 +35,7 @@ POST /invitations
 ### <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [invitation](../resources/invitation.md) в теле отклика.
 
-### <a name="example"></a>Пример
+## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {

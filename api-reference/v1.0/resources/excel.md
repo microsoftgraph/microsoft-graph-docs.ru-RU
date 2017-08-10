@@ -9,11 +9,11 @@
 возвращает коллекцию объектов листа, включенных в книгу.    
 
 
-** Примечание. REST API Excel поддерживает только книги в формате Office Open XML. Книги с расширением `.xls` не поддерживаются. 
+**Примечание.** REST API Excel поддерживает только книги в формате Office Open XML. Книги с расширением `.xls` не поддерживаются. 
 
-## <a name="authorization-and-scopes"></a>Авторизация и разрешения
+## <a name="authorization-and-scopes"></a>Авторизация и области
 
-Для проверки подлинности интерфейсов API Excel можно использовать [конечную точку Azure AD вер. 20](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth). Для всех интерфейсов API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
+Для проверки подлинности в случае API Excel можно использовать [конечную точку Azure AD 20](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth). Для всех интерфейсов API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
   
 Для использования ресурса Excel требуется одна из указанных ниже [областей разрешений](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes).
 
@@ -158,7 +158,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
@@ -237,7 +237,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
@@ -1256,7 +1256,7 @@ content-type: application/json
 
 Ошибки возвращаются с HTTP-кодом и объектом ошибки. Ошибки `code` и `message` объясняют причины возникновения ошибки.
  
-Ниже приведен пример.
+Пример.
 
 <!-- { "blockType": "ignored" } -->
 ```http

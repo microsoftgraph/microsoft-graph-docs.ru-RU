@@ -2,23 +2,23 @@
 
 Используйте этот API, что создать объект **plannerPlan**.
 
-### <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Необходимые условия
 Для выполнения этого API требуются следующие **разрешения**: 
 
 *Group.ReadWrite.All*
 
-### <a name="http-request"></a>HTTP-запрос
+## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/plans
 
 ```
-### <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-### <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON. В качестве свойства владельца **PlannerPlan** необходимо указать идентификатор объекта [group](../resources/group.md).
 
 ### <a name="response"></a>Отклик
@@ -26,7 +26,7 @@ POST /planner/plans
 
 Этот метод может возвращать любые [коды состояния HTTP](../../../concepts/errors.md). Приложения должны обрабатывать ошибки 400, 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner_overview.md#common-planner-error-conditions).
 
-### <a name="example"></a>Пример
+## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {

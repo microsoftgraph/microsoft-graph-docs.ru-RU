@@ -60,7 +60,7 @@ POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
 POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-### <a name="response"></a>Отклик
+#### <a name="response-example"></a>Пример отклика
 Ниже приведен пример отклика.
 
 <!-- {
@@ -100,7 +100,7 @@ Content-Range: bytes 0-25/128
 
 **Важно!** Приложение должно указывать в заголовках **Content-Range** всех запросов один и тот же общий размер файла. Если объявить для фрагмента другой размер файла, запрос не будет выполнен.
 
-### <a name="response"></a>Отклик
+#### <a name="response-example"></a>Пример отклика
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -166,7 +166,7 @@ Content-Type: application/json
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-### <a name="response"></a>Отклик
+#### <a name="response-example"></a>Пример отклика
 
 <!-- { "blockType": "response" } -->
 ```http

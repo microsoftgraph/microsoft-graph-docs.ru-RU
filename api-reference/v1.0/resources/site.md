@@ -42,6 +42,7 @@
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
   "name": "string",
@@ -66,7 +67,7 @@
 | **root**                 | [root](root.md)                     | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения. |
-| **webUrl**               | string (url)                        | URL-адрес для отображения элемента в браузере. Только для чтения.                                          |
+| **webUrl**               | строка (url-адрес)                        | URL-адрес для отображения элемента в браузере. Только для чтения.                                          |
 
 ## <a name="relationships"></a>Связи
 
@@ -76,11 +77,13 @@
 | **drives**        | Collection([drive][])    | Коллекция дисков (библиотек документов) на этом сайте.
 | **items**         | Collection([baseItem][]) | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
 | **sites**         | Collection([site][])     | Коллекция дочерних сайтов этого сайта.
+| **onenote**       | [onenote][]              | Вызывает службу OneNote для выполнения операций, касающихся записных книжек.
 
 [baseItem]: baseitem.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [site]: site.md
+[onenote]: onenote.md
 
 <!-- {
   "type": "#page.annotation",
