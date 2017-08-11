@@ -3,6 +3,7 @@
   <Item text="Обзор" url="/en-us/concepts/overview" SEOKeyword="Обзор, API Microsoft Graph, обзор" SEODescription="Microsoft Graph позволяет приложениям получать доступ к цифровым данным, связанным с работой и повседневной жизнью, в интеллектуальном облаке Майкрософт. Преимущества для разработчиков: Конечная точка единого API Майкрософт для доступа к данным и аналитике в облаке Майкрософт." />    
   <Item text="Рекомендованные сценарии" url="/en-us/concepts/featured_scenarios"> 
 	  <Item text="Поиск времени собраний" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="Получение сведений о релевантных людях" url="/en-us/concepts/people_example" SEODescription="Используйте API People для получения сведений о людях, наиболее релевантных для пользователя." />
   </Item>
   <Item text="Создание первого приложения" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, API Microsoft Graph, пошаговые инструкции" SEODescription="Начало работы с Microsoft Graph для доступа к данным облака Майкрософт в приложении для Android" />
@@ -547,6 +548,12 @@
       </Item>
     </Item>
   </Item>
+  <Item text="Люди" url="/en-us/api-reference/v1.0/resources/social_overview">
+	<Item text="Человек" url="/en-us/api-reference/v1.0/resources/person">
+		<Item text="Список людей" url="/en-us/api-reference/v1.0/api/user_list_people" />
+		<Item text="Вывод сведений о человеке" url="/en-us/api-reference/v1.0/api/person_get" />
+	</Item>
+  </Item>
   <Item text="Личный контакт" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="контакты пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="API для управления личными контактами">
     <Item text="Контакт" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="контакты пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="Контакт">
       <Item text="Список контактов" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="Список контактов, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты контактов." />
@@ -751,7 +758,8 @@
         <Item text="Перечисление удаленных групп" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Список групп" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="Список групп, API Microsoft Graph, API для управления группами" SEODescription="Получение списка, включающего объекты групп." />
         <Item text="Список присоединенных групп" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="Список объектов joinedTeams, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка групп Microsoft Teams, к которым принадлежит пользователь." />
-        <Item text="Перечисление свойств member of" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="Список свойств memberOf, API Microsoft Graph, API для управления группами" SEODescription="Получение списка объектов DirectoryObject." />
+        <Item text="Список политик жизненного цикла" url="/en-us/api-reference/beta/api/group_list_grouplifecyclepolicies" />
+		<Item text="Список участников" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="Список свойств memberOf, API Microsoft Graph, API для управления группами" SEODescription="Получение списка объектов DirectoryObject." />
         <Item text="Список элементов" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="Список элементов, API Microsoft Graph, API для управления группами" SEODescription="Получение списка объектов DirectoryObject." />
         <Item text="Список владельцев" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="Список владельцев, API Microsoft Graph, API для управления группами" SEODescription="Получение списка объектов DirectoryObject." />
         <Item text="Удаление группы без возможности восстановления" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
@@ -814,7 +822,17 @@
           <Item text="Получение многозначного свойства" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
         </Item>
       </Item>
-      <Item text="Заметки" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="заметки пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="">
+      <Item text="Политика жизненного цикла" url="/en-us/api-reference/beta/resources/grouplifecyclepolicy">
+		<Item text="Создание политики" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="Список политик" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_list" />
+		<Item text="Получение политики" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_get" />
+		<Item text="Обновление политики" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_update" />
+		<Item text="Удаление политики" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_delete" />
+		<Item text="Добавление группы" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_addgroup" />
+		<Item text="Удаление группы" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_removegroup" />
+		<Item text="Возобновление группы" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_renewgroup" />	  
+	  </Item>
+	  <Item text="Примечания" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="заметки пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="">
         <Item text="Список записных книжек" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Список записных книжек, API Microsoft Graph, API для управления заметками" SEODescription="Получение списка, включающего объекты записных книжек (…/resources/notebook.md)." />
         <Item text="Создание записной книжки" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Создание записной книжки, API Microsoft Graph, API для управления заметками" SEODescription="Создание записной книжки в OneNote (…/resources/notebook.md)." />
       </Item>
