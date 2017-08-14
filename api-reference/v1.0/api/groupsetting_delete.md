@@ -1,9 +1,9 @@
-<span data-ttu-id="ec309-p102">При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает никакие данные в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ec309-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="10014-p102">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="10014-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает никакие данные в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a><span data-ttu-id="ec309-120">Пример</span><span class="sxs-lookup"><span data-stu-id="ec309-120">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ec309-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="ec309-121">Request</span></span>
+## <a name="example"></a><span data-ttu-id="10014-120">Пример</span><span class="sxs-lookup"><span data-stu-id="10014-120">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="10014-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="10014-121">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_groupsetting"
@@ -11,7 +11,7 @@
 ```http
 DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="ec309-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="ec309-122">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="10014-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="10014-122">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

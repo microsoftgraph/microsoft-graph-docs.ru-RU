@@ -1,12 +1,11 @@
-<span data-ttu-id="bdfe8-p102">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="bdfe8-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="649f7-p102">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="649f7-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
-## <span data-ttu-id="bdfe8-117">Пример</span><span class="sxs-lookup"><span data-stu-id="bdfe8-117">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="bdfe8-118">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="bdfe8-118">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="bdfe8-119">Запрос</span><span class="sxs-lookup"><span data-stu-id="bdfe8-119">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="bdfe8-120">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bdfe8-120">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="649f7-117">Пример</span><span class="sxs-lookup"><span data-stu-id="649f7-117">Example</span></span>
+<span data-ttu-id="649f7-118">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="649f7-118">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="649f7-119">Запрос</span><span class="sxs-lookup"><span data-stu-id="649f7-119">Request</span></span>
+<span data-ttu-id="649f7-120">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="649f7-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablerow_delete"
@@ -15,9 +14,8 @@
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
 ```
 
-##### <span data-ttu-id="bdfe8-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="bdfe8-121">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="bdfe8-122">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="bdfe8-122">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="649f7-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="649f7-121">Response</span></span>
+<span data-ttu-id="649f7-122">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="649f7-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

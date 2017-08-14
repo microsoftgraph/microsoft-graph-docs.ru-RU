@@ -1,4 +1,4 @@
-<span data-ttu-id="b1324-p107">Во втором примере показано, как обновить расширение в публикации группы. Изначально расширение представлено указанными ниже полезными данными JSON, в котором параметр `expirationDate` имеет значение `2015-07-03T13:04:00Z`:</span><span class="sxs-lookup"><span data-stu-id="b1324-p107">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
+<span data-ttu-id="7b225-p107">Во втором примере показано, как обновить расширение в публикации группы. Изначально расширение представлено указанными ниже полезными данными JSON, в котором параметр `expirationDate` имеет значение `2015-07-03T13:04:00Z`:</span><span class="sxs-lookup"><span data-stu-id="7b225-p107">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
 
 Во втором примере показано, как обновить расширение в публикации группы. Изначально расширение представлено указанными ниже полезными данными JSON, в котором параметр `expirationDate` имеет значение `2015-07-03T13:04:00Z`:
 
@@ -21,7 +21,7 @@
 }
 ```
 
-<span data-ttu-id="b1324-183">Ниже приведен запрос и тело запроса для изменения значения параметра `expirationDate` на `2016-07-30T11:00:00Z`.</span><span class="sxs-lookup"><span data-stu-id="b1324-183">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
+<span data-ttu-id="7b225-183">Ниже приведен запрос и тело запроса для изменения значения параметра `expirationDate` на `2016-07-30T11:00:00Z`.</span><span class="sxs-lookup"><span data-stu-id="7b225-183">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -45,10 +45,9 @@ Content-type: application/json
 }
 ```
 
-#### <span data-ttu-id="b1324-184">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="b1324-184">Response 2</span></span>
-<a id="response-2" class="xliff"></a>
+#### <a name="response-2"></a><span data-ttu-id="7b225-184">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="7b225-184">Response 2</span></span>
 
-<span data-ttu-id="b1324-185">Вот отклик для второго примера, в котором отображается обновленный параметр `expirationDate` в расширении.</span><span class="sxs-lookup"><span data-stu-id="b1324-185">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
+<span data-ttu-id="7b225-185">Вот отклик для второго примера, в котором отображается обновленный параметр `expirationDate` в расширении.</span><span class="sxs-lookup"><span data-stu-id="7b225-185">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
 
 <!-- {  
   "blockType": "response",  

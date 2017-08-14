@@ -1,12 +1,11 @@
-<span data-ttu-id="cf233-p102">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="cf233-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c35fa-p102">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="c35fa-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
-## <span data-ttu-id="cf233-124">Пример</span><span class="sxs-lookup"><span data-stu-id="cf233-124">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="cf233-125">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="cf233-125">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="cf233-126">Запрос</span><span class="sxs-lookup"><span data-stu-id="cf233-126">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="cf233-127">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cf233-127">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c35fa-124">Пример</span><span class="sxs-lookup"><span data-stu-id="c35fa-124">Example</span></span>
+<span data-ttu-id="c35fa-125">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="c35fa-125">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c35fa-126">Запрос</span><span class="sxs-lookup"><span data-stu-id="c35fa-126">Request</span></span>
+<span data-ttu-id="c35fa-127">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c35fa-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_apply"
@@ -35,9 +34,8 @@ Content-length: 321
 }
 ```
 
-##### <span data-ttu-id="cf233-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="cf233-128">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="cf233-129">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="cf233-129">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c35fa-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="c35fa-128">Response</span></span>
+<span data-ttu-id="c35fa-129">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c35fa-129">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

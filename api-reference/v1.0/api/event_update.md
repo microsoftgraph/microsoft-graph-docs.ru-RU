@@ -1,4 +1,4 @@
-<span data-ttu-id="aa66a-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="aa66a-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="3e590-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="3e590-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -23,11 +23,10 @@ Content-length: 285
 }
 ```
 
-## <span data-ttu-id="aa66a-189">См. также</span><span class="sxs-lookup"><span data-stu-id="aa66a-189">See also</span></span>
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a><span data-ttu-id="3e590-189">См. также</span><span class="sxs-lookup"><span data-stu-id="3e590-189">See also</span></span>
 
-- [<span data-ttu-id="aa66a-190">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="aa66a-190">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="aa66a-191">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="aa66a-191">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="3e590-190">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="3e590-190">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="3e590-191">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="3e590-191">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

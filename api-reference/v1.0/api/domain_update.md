@@ -1,13 +1,13 @@
-<span data-ttu-id="2cb0a-p102">В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.</span><span class="sxs-lookup"><span data-stu-id="2cb0a-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
+<span data-ttu-id="94a8c-p102">В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.</span><span class="sxs-lookup"><span data-stu-id="94a8c-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
 В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.
 
-### <a name="response"></a><span data-ttu-id="2cb0a-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="2cb0a-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="94a8c-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="94a8c-120">Response</span></span>
 
-<span data-ttu-id="2cb0a-121">При успешном выполнении этот метод возвращает код отклика `204 No Content` и не возвращает тело отклика.</span><span class="sxs-lookup"><span data-stu-id="2cb0a-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+<span data-ttu-id="94a8c-121">При успешном выполнении этот метод возвращает код отклика `204 No Content` и не возвращает тело отклика.</span><span class="sxs-lookup"><span data-stu-id="94a8c-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2cb0a-122">Пример</span><span class="sxs-lookup"><span data-stu-id="2cb0a-122">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2cb0a-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="2cb0a-123">Request</span></span>
+## <a name="example"></a><span data-ttu-id="94a8c-122">Пример</span><span class="sxs-lookup"><span data-stu-id="94a8c-122">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="94a8c-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="94a8c-123">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -26,7 +26,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="2cb0a-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="2cb0a-124">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="94a8c-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="94a8c-124">Response</span></span>
 
 <!-- {
   "blockType": "response",

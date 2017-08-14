@@ -1,22 +1,19 @@
-<span data-ttu-id="43da9-p101">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="43da9-p101">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="0f742-p101">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="0f742-p101">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-| <span data-ttu-id="43da9-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="43da9-120">Property</span></span>     | <span data-ttu-id="43da9-121">Тип</span><span class="sxs-lookup"><span data-stu-id="43da9-121">Type</span></span>   | <span data-ttu-id="43da9-122">Описание</span><span class="sxs-lookup"><span data-stu-id="43da9-122">Description</span></span>                   |
+| <span data-ttu-id="0f742-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="0f742-120">Property</span></span>     | <span data-ttu-id="0f742-121">Тип</span><span class="sxs-lookup"><span data-stu-id="0f742-121">Type</span></span>   | <span data-ttu-id="0f742-122">Описание</span><span class="sxs-lookup"><span data-stu-id="0f742-122">Description</span></span>                   |
 |:-------------|:-------|:------------------------------|
-| <span data-ttu-id="43da9-123">**roles**</span><span class="sxs-lookup"><span data-stu-id="43da9-123">**roles**</span></span>    | <span data-ttu-id="43da9-124">String</span><span class="sxs-lookup"><span data-stu-id="43da9-124">String</span></span> | <span data-ttu-id="43da9-125">Массив типов разрешений.</span><span class="sxs-lookup"><span data-stu-id="43da9-125">An array of permission types.</span></span> |
+| <span data-ttu-id="0f742-123">**roles**</span><span class="sxs-lookup"><span data-stu-id="0f742-123">**roles**</span></span>    | <span data-ttu-id="0f742-124">String</span><span class="sxs-lookup"><span data-stu-id="0f742-124">String</span></span> | <span data-ttu-id="0f742-125">Массив типов разрешений.</span><span class="sxs-lookup"><span data-stu-id="0f742-125">An array of permission types.</span></span> |
 
+## <a name="response"></a><span data-ttu-id="0f742-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="0f742-126">Response</span></span>
 
-## <span data-ttu-id="43da9-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="43da9-126">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="43da9-127">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [permission](../resources/permission.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="43da9-127">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
+<span data-ttu-id="0f742-127">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [permission](../resources/permission.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0f742-127">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <span data-ttu-id="43da9-128">Пример</span><span class="sxs-lookup"><span data-stu-id="43da9-128">Example</span></span>
-<a id="example" class="xliff"></a>
+## <a name="example"></a><span data-ttu-id="0f742-128">Пример</span><span class="sxs-lookup"><span data-stu-id="0f742-128">Example</span></span>
 
-##### <span data-ttu-id="43da9-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="43da9-129">Request</span></span>
-<a id="request" class="xliff"></a>
+##### <a name="request"></a><span data-ttu-id="0f742-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="0f742-129">Request</span></span>
 
-<span data-ttu-id="43da9-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="43da9-130">Here is an example of the request.</span></span>
+<span data-ttu-id="0f742-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0f742-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_permission"
@@ -29,10 +26,9 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-##### <span data-ttu-id="43da9-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="43da9-131">Response</span></span>
-<a id="response" class="xliff"></a>
+##### <a name="response"></a><span data-ttu-id="0f742-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="0f742-131">Response</span></span>
 
-<span data-ttu-id="43da9-132">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="43da9-132">Here is an example of the response.</span></span>
+<span data-ttu-id="0f742-132">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="0f742-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

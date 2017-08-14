@@ -1,4 +1,4 @@
-<span data-ttu-id="d8ad9-p103">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове возвращаются [все свойства](../api/group_get.md#default-properties).</span><span class="sxs-lookup"><span data-stu-id="d8ad9-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
+<span data-ttu-id="c1673-p103">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове возвращаются [все свойства](../api/group_get.md#default-properties).</span><span class="sxs-lookup"><span data-stu-id="c1673-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
 
 Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове возвращаются [все свойства](../api/group_get.md#default-properties).
 

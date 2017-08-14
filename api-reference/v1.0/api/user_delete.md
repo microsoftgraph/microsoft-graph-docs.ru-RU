@@ -1,11 +1,10 @@
-<span data-ttu-id="e2674-p102">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e2674-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="8eb58-p102">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="8eb58-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
-## <span data-ttu-id="e2674-117">Пример</span><span class="sxs-lookup"><span data-stu-id="e2674-117">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="e2674-118">Запрос</span><span class="sxs-lookup"><span data-stu-id="e2674-118">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="e2674-119">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e2674-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8eb58-117">Пример</span><span class="sxs-lookup"><span data-stu-id="8eb58-117">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8eb58-118">Запрос</span><span class="sxs-lookup"><span data-stu-id="8eb58-118">Request</span></span>
+<span data-ttu-id="8eb58-119">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8eb58-119">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_user"
@@ -13,9 +12,8 @@
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/mba9a3254-9f18-4209-aeb3-9e42a35b5be4
 ```
-##### <span data-ttu-id="e2674-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="e2674-120">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="e2674-121">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e2674-121">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="8eb58-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="8eb58-120">Response</span></span>
+<span data-ttu-id="8eb58-121">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="8eb58-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

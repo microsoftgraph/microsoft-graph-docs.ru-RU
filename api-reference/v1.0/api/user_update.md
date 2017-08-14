@@ -1,13 +1,11 @@
-<span data-ttu-id="68b88-p123">Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает параметр $filter.</span><span class="sxs-lookup"><span data-stu-id="68b88-p123">A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.</span></span>|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает параметр $filter.          |
+<span data-ttu-id="0627b-p123">Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает параметр $filter.</span><span class="sxs-lookup"><span data-stu-id="0627b-p123">A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.</span></span>|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает параметр $filter.          |
 
-## <span data-ttu-id="68b88-261">Отклик</span><span class="sxs-lookup"><span data-stu-id="68b88-261">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="68b88-262">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="68b88-262">If successful, this method returns a `204 No Content` response code.</span></span>
-## <span data-ttu-id="68b88-263">Пример</span><span class="sxs-lookup"><span data-stu-id="68b88-263">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="68b88-264">Запрос</span><span class="sxs-lookup"><span data-stu-id="68b88-264">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="68b88-265">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="68b88-265">Here is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="0627b-261">Отклик</span><span class="sxs-lookup"><span data-stu-id="0627b-261">Response</span></span>
+
+<span data-ttu-id="0627b-262">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="0627b-262">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="example"></a><span data-ttu-id="0627b-263">Пример</span><span class="sxs-lookup"><span data-stu-id="0627b-263">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0627b-264">Запрос</span><span class="sxs-lookup"><span data-stu-id="0627b-264">Request</span></span>
+<span data-ttu-id="0627b-265">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0627b-265">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_user"
@@ -40,9 +38,8 @@ Content-length: 491
   "companyName": "companyName-value"
 }
 ```
-##### <span data-ttu-id="68b88-266">Отклик</span><span class="sxs-lookup"><span data-stu-id="68b88-266">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="68b88-267">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="68b88-267">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="0627b-266">Отклик</span><span class="sxs-lookup"><span data-stu-id="0627b-266">Response</span></span>
+<span data-ttu-id="0627b-267">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="0627b-267">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

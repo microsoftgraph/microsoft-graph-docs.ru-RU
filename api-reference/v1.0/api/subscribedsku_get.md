@@ -1,38 +1,5 @@
-# <a name="get-subscribedsku"></a>Вывод объекта SubscribedSku
-Получение определенной коммерческой подписки, приобретенной организацией.
-
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-GET /subscribedSkus/{id}
-```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика (например, $filter не поддерживается).
-
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | &lt;Токен&gt; носителя. *Обязательный* |
-
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [subscribedSku](../resources/subscribedsku.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "name": "get_subscribedsku"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
-```
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<span data-ttu-id="23a62-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="23a62-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

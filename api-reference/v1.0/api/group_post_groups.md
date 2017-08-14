@@ -1,4 +1,4 @@
-<span data-ttu-id="6b6d1-p107">Ниже приведен пример отклика. Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будет возвращено больше свойств.</span><span class="sxs-lookup"><span data-stu-id="6b6d1-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. More properties will be returned from an actual call.</span></span>
+<span data-ttu-id="541f0-p107">Ниже приведен пример отклика. Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будет возвращено больше свойств.</span><span class="sxs-lookup"><span data-stu-id="541f0-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. More properties will be returned from an actual call.</span></span>
 Ниже приведен пример отклика. Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будет возвращено больше свойств.
 <!-- {
   "blockType": "response",

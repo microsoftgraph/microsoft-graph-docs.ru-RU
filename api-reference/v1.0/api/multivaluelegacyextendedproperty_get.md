@@ -1,4 +1,4 @@
-<span data-ttu-id="5776d-p106">Примечание. Показанный здесь объект **event** усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="5776d-p106">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="cae51-p106">Примечание. Показанный здесь объект **event** усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="cae51-p106">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 Примечание. Показанный здесь объект **event** усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 

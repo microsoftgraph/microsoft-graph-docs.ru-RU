@@ -1,4 +1,4 @@
-<span data-ttu-id="9d105-p107">Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="9d105-p107">Here is an example of the response. The **body** property is returned in the default HTML format.</span></span>
+<span data-ttu-id="2b63d-p107">Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="2b63d-p107">Here is an example of the response. The **body** property is returned in the default HTML format.</span></span>
 Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.
 <!-- {
   "blockType": "response",

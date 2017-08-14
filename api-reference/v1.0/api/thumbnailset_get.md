@@ -1,17 +1,15 @@
-<span data-ttu-id="f580d-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f580d-p101">Bearer token. Required.</span></span>  | Bearer {токен}. Обязательный. |
+<span data-ttu-id="60b47-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="60b47-p101">Bearer {token}. Required.</span></span>  | Bearer {токен}. Обязательный. |
 
 
-## <span data-ttu-id="f580d-118">Основной текст запросов</span><span class="sxs-lookup"><span data-stu-id="f580d-118">Request body</span></span>
-<a id="request-body" class="xliff"></a>
-<span data-ttu-id="f580d-119">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f580d-119">Do not supply a request body for this method.</span></span>
-## <span data-ttu-id="f580d-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="f580d-120">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="f580d-121">В случае успеха этот метод возвращает код отклика `200 OK` и объект [thumbnailSet](../resources/thumbnailset.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f580d-121">If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.</span></span>
-## <span data-ttu-id="f580d-122">Пример</span><span class="sxs-lookup"><span data-stu-id="f580d-122">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="f580d-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="f580d-123">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="f580d-124">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f580d-124">Here is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="60b47-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="60b47-118">Request body</span></span>
+<span data-ttu-id="60b47-119">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="60b47-119">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="60b47-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="60b47-120">Response</span></span>
+
+<span data-ttu-id="60b47-121">В случае успеха этот метод возвращает код отклика `200 OK` и объект [thumbnailSet](../resources/thumbnailset.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="60b47-121">If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="60b47-122">Пример</span><span class="sxs-lookup"><span data-stu-id="60b47-122">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="60b47-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="60b47-123">Request</span></span>
+<span data-ttu-id="60b47-124">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="60b47-124">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_thumbnailset"
@@ -19,9 +17,8 @@
 ```http
 GET https://graph.microsoft.com/v1.0/drive/root/thumbnails/{id}
 ```
-##### <span data-ttu-id="f580d-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="f580d-125">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="f580d-126">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f580d-126">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="60b47-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="60b47-125">Response</span></span>
+<span data-ttu-id="60b47-126">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="60b47-126">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
