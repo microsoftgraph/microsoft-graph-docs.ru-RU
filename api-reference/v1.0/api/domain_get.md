@@ -2,7 +2,7 @@
 
 Получение свойств и связей объекта домена.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 
 Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All* или *Domain.ReadWrite.All*.
 
@@ -28,7 +28,9 @@ GET /domains/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-### <a name="response"></a>Отклик
+
+## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [domain](../resources/domain.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

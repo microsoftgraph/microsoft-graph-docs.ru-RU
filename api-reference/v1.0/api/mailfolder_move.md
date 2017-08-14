@@ -3,7 +3,7 @@
 Перемещение папки почты со всем ее содержимым в другую папку почты.
 
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
+Для применения этого API требуется следующая **область**: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,6 +24,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 |destinationId|String|Идентификатор папки либо имя известной папки *Inbox*, *Drafts*, *SentItems* или *DeletedItems*.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [MailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

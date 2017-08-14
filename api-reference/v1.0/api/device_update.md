@@ -19,7 +19,9 @@ PATCH /devices/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Укажите в тексте запроса значения обновляемых свойств объекта [device](../resources/device.md).
+
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример

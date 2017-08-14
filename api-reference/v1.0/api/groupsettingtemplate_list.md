@@ -2,7 +2,7 @@
 
 Шаблоны параметров группы представляют набор шаблонов, на базе которых можно создавать параметры группы для использования в клиенте.  Эта операция позволяет получить список доступных объектов groupSettingTemplate.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Для применения этого API требуются следующие **области**: *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*.
 
@@ -23,7 +23,9 @@ GET /groupSettingTemplates
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupSettingTemplate](../resources/groupsettingtemplate.md) в теле отклика.
 
 ## <a name="example"></a>Пример

@@ -22,7 +22,8 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 |:---------------|:--------|:----------|
 |index|Int32|Индекс элемента, который нужно вернуть.|
 
-### <a name="response"></a>Отклик
+## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [workbookRangeView](../resources/workbookrangeview.md) в теле отклика.
 
 ## <a name="example"></a>Пример

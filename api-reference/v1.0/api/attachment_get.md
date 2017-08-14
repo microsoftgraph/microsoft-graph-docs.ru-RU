@@ -72,7 +72,9 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
+
+## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код ответа `200 OK` и объект **attachment** в тексте ответа. Кроме того, возвращаются свойства этого типа вложения: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) или [referenceAttachment](../resources/referenceAttachment.md).
 
 ## <a name="example-file-attachment"></a>Пример (вложенный файл)
@@ -124,7 +126,7 @@ Content-length: 199
 GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Отклик 1
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -156,7 +158,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
 ```
 
-##### <a name="response-2"></a>Ответ 2
+##### <a name="response-2"></a>Отклик 2
 <!-- {
   "blockType": "response",
   "truncated": true,

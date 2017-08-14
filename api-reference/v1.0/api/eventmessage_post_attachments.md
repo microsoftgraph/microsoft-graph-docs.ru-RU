@@ -2,7 +2,7 @@
 
 С помощью этого API можно создать объект Attachment.
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются указанные **области**:  _Mail.ReadWrite_
+Для применения этого API требуется следующая **область**:  _Mail.ReadWrite_
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,14 +12,14 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [Attachment](../resources/attachment.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Attachment](../resources/attachment.md) в тексте отклика.
 
 ## <a name="example-file-attachment"></a>Пример (вложенный файл)

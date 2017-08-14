@@ -26,6 +26,7 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 |password|string|Необязательный пароль защиты листа.|
 
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

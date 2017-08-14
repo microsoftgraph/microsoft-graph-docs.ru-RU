@@ -160,9 +160,11 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвращает код отклика `200 OK`.
 
 #### <a name="get-resource-instance-using-expand"></a>Запрос GET на получение экземпляра ресурса с помощью `$expand`

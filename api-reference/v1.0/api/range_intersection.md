@@ -28,6 +28,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 |anotherRange|string|Объект или адрес диапазона, который будет использоваться для определения пересечения диапазонов.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример

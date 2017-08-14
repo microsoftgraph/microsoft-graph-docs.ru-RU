@@ -1,7 +1,7 @@
 # <a name="list-calendargroups"></a>Список объектов calendarGroup
 
 Получение групп календарей пользователя.
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Calendars.Read; Calendars.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -18,7 +18,9 @@ GET /users/{id | userPrincipalName}/calendarGroups
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [CalendarGroup](../resources/calendargroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

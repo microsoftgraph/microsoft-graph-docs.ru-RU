@@ -1,7 +1,7 @@
 # <a name="create-user"></a>Создание пользователя
 
 С помощью этого API можно создать пользователя. В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из следующих **областей**: *User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All*.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -29,6 +29,7 @@ POST /users
 |userPrincipalName |string |Имя участника-пользователя (polzovatel@contoso.com).|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвратит код отклика `201, Created` и объект [user](../resources/user.md) в теле отклика.
 
 ## <a name="example"></a>Пример

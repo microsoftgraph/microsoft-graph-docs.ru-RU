@@ -21,9 +21,10 @@ PATCH /planner/tasks/<id>/progressTaskBoardFormat
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|orderHint|Строка|Указание, используемое для расположения задачи в представлении "Ход выполнения" на доске задач. Формат определяется, как описано [здесь](../resources/planner_order_hint_format.md).|
+|orderHint|String|Указание, используемое для расположения задачи в окне "Ход выполнения" доски задач. Формат определяется, как описано [здесь](../resources/planner_order_hint_format.md).|
 
-### <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](../../../concepts/errors.md). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner_overview.md#common-planner-error-conditions).

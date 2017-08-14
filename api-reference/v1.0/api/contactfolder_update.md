@@ -1,8 +1,8 @@
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
 Обновление свойств объекта contactFolder.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Contacts.ReadWrite*
+## <a name="prerequisites"></a>Необходимые условия
+Для применения этого API требуется одна из указанных ниже **областей**. *Contacts.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,6 +24,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |parentFolderId|String|Идентификатор родительской папки для данной папки.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [contactFolder](../resources/contactfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

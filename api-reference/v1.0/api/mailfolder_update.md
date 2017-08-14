@@ -1,8 +1,8 @@
 # <a name="update-mailfolder"></a>Обновление объекта MailFolder
 
 Обновление свойств объекта MailFolder.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
+## <a name="prerequisites"></a>Необходимые условия
+Для применения этого API требуется следующая **область**: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,6 +23,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 |displayName|Строка|Отображаемое имя объекта mailFolder.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

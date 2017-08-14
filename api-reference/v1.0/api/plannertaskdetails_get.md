@@ -4,7 +4,7 @@
 ## <a name="prerequisites"></a>Необходимые условия
 Для выполнения этого API требуются следующие **разрешения**: 
 
-*Groups.Read.All*
+*Group.Read.All*
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +19,9 @@ GET /planner/tasks/<id>/details
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-### <a name="response"></a>Ответ
+
+## <a name="response"></a>Ответ
+
 В случае успеха этот метод возвращает код ответа `200 OK` и объект [plannerTaskDetails](../resources/plannertaskdetails.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](../../../concepts/errors.md). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner_overview.md#common-planner-error-conditions).

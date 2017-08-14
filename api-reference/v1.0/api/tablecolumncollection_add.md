@@ -28,6 +28,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 |values|(boolean, string или number)|Необязательный параметр. Двухмерный массив неформатированных значений столбца таблицы.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

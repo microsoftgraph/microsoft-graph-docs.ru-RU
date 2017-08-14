@@ -27,6 +27,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 |criteria|FilterCriteria|Применяемые условия.|
 
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

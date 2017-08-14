@@ -28,6 +28,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 |index|number|Значение индекса получаемого объекта. Используется нулевой индекс.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [RangeBorder](../resources/rangeborder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

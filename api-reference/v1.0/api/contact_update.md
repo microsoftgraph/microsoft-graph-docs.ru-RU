@@ -2,7 +2,7 @@
 
 Обновление свойств объекта contact.
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Contacts.ReadWrite*
+Для применения этого API требуется одна из указанных ниже **областей**. *Contacts.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 Объект [contact](../resources/contact.md) из стандартной пользовательской папки [contactFolder](../resources/contactfolder.md).
@@ -67,6 +67,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |yomiSurname|Строка|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвратит код отклика `200 OK` и обновленный объект [contact](../resources/contact.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

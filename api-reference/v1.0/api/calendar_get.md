@@ -2,7 +2,7 @@
 
 Получение свойств и связей объекта календаря.
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Calendars.Read*
+Для применения этого API требуется одна из указанных ниже **областей**. *Calendars.Read*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 [Календарь](../resources/calendar.md) пользователя или группы по умолчанию.
@@ -33,7 +33,9 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [calendar](../resources/calendar.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

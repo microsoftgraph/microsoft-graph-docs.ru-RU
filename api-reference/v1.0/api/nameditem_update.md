@@ -26,6 +26,7 @@ PATCH /workbook/names(<name>)
 |comment|   строка  |Представляет примечание, связанное с этим именем.|
 
 ## <a name="response"></a>Ответ
+
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [NamedItem](../resources/nameditem.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

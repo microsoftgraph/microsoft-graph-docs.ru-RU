@@ -2,8 +2,8 @@
 
 С помощью этого API можно создать дочернюю папку почты.
 
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
+## <a name="prerequisites"></a>Необходимые условия
+Для применения этого API требуется следующая **область**: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -27,6 +27,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |displayName|String|Отображаемое имя новой папки.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [MailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

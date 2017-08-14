@@ -13,13 +13,14 @@ POST /directoryRoles/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`.
 
 ## <a name="example"></a>Пример

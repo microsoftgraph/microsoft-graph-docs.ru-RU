@@ -7,7 +7,7 @@
 При создании события сервер отправляет приглашения всем участникам.
 
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,6 +33,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 Так как ресурс **event** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к событию при его создании.
 
 ## <a name="response"></a>Ответ
+
 В случае успеха этот метод возвращает код ответа `201, Created` и объект [event](../resources/event.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

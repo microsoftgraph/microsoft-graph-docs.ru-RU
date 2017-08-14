@@ -2,7 +2,7 @@
 
 Добавляет контакт в корневую папку с контактами или конечную точку contacts другой папки с контактами.
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Contacts.ReadWrite*
+Для применения этого API требуется одна из указанных ниже **областей**. *Contacts.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,8 +20,8 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [Contact](../resources/contact.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Contact](../resources/contact.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

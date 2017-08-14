@@ -20,7 +20,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
@@ -31,6 +31,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 |groupIds|String|Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект коллекции String в тексте отклика.
 
 ## <a name="example"></a>Пример

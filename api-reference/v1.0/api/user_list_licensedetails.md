@@ -21,7 +21,9 @@ GET /users/{id}/licenseDetails
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
-### <a name="response"></a>Отклик
+
+## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [licenseDetails](../resources/licensedetails.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

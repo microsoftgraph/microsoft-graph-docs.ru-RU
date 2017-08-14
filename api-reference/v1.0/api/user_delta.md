@@ -42,7 +42,7 @@ GET /users/delta
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-### <a name="response"></a>Отклик
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код ответа `200, OK` и объект коллекции [user](../resources/user.md) в тексте ответа. Ответ также включает URL-адрес nextLink или deltaLink. 
 

@@ -1,7 +1,7 @@
 # <a name="list-subscribedskus"></a>Список объектов SubscribedSku
 Получение списка коммерческих подписок, приобретенных организацией.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -19,7 +19,9 @@ GET /subscribedSkus
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [subscribedSku](../resources/subscribedsku.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -31,8 +33,8 @@ GET /subscribedSkus
 ```http
 GET https://graph.microsoft.com/v1.0/subscribedSkus
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

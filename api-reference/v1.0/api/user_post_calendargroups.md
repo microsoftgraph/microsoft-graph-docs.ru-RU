@@ -1,7 +1,7 @@
 # <a name="create-calendargroup"></a>Создание объекта CalendarGroup
 
 С помощью этого API можно создать объект CalendarGroup.
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -18,6 +18,7 @@ POST /users/{id | userPrincipalName}/calendarGroups
 Предоставьте в тексте запроса описание объекта [CalendarGroup](../resources/calendargroup.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [CalendarGroup](../resources/calendargroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -64,7 +64,6 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 | @odata.type | Microsoft.Graph.OpenTypeExtension |
 | extensionName | %уникальная_строка% |
 
-
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [openTypeExtension](../resources/openTypeExtension.md).

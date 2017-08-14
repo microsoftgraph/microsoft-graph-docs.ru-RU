@@ -3,7 +3,7 @@
 Создание черновика сообщения ответа. После этого вы сможете [обновить](../api/message_update.md) или [отправить](../api/message_send.md) черновик.
 
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
+Для применения этого API требуется следующая **область**: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,12 +15,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Message](../resources/message.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

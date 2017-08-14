@@ -2,7 +2,7 @@
 
 Получение свойств и связей объекта [Contract](../resources/contract.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 
 Для применения этого API требуется одна из следующих **областей**: *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*.
 
@@ -26,7 +26,7 @@ GET /contracts/{id}
 
 Не указывайте тело запроса для этого метода.
 
-### <a name="response"></a>Отклик
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [Contract](../resources/contract.md) в теле отклика.
 

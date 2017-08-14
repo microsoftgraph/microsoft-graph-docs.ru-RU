@@ -22,6 +22,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 ## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример

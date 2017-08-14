@@ -2,7 +2,7 @@
 
 Удаление объекта eventMessage.
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются указанные **области**: _Mail.ReadWrite_ 
+Для применения этого API требуется следующая **область**: _Mail.ReadWrite_ 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,13 +15,13 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

@@ -1,7 +1,7 @@
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются такие **области**: _Files.Read, Files.ReadWrite_.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -16,7 +16,8 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
 
 ## <a name="request-body"></a>Текст запроса
 
-### <a name="response"></a>Отклик
+## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [workbookRangeView](../resources/workbookrangeview.md) в теле отклика.
 
 ## <a name="example"></a>Пример

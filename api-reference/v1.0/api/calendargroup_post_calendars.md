@@ -1,8 +1,8 @@
 # <a name="create-calendar"></a>Создание объекта Calendar
 
 С помощью этого API можно создать календарь в группе календарей.
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных ниже **областей**. _Calendars.ReadWrite_
+## <a name="prerequisites"></a>Необходимые условия
+Для применения этого API требуется одна из указанных **областей**: _Calendars.ReadWrite_
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 Объект [calendarGroup](../resources/calendargroup.md) по умолчанию для пользователя.
@@ -24,8 +24,8 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [Calendar](../resources/calendar.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Calendar](../resources/calendar.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

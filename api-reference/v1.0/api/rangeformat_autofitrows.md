@@ -23,6 +23,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 ## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

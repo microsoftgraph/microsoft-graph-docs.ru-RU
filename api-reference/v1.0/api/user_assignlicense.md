@@ -23,6 +23,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 |removeLicenses|Guid|Коллекция идентификаторов GUID, указывающих удаляемые лицензии.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [user](../resources/user.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

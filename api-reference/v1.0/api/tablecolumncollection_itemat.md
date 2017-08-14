@@ -27,6 +27,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 |index|number|Значение индекса получаемого объекта. Используется нулевой индекс.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

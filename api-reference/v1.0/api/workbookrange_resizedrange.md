@@ -1,7 +1,7 @@
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 Возвращает объект диапазона, подобный текущему объекту диапазона, но увеличенный (или уменьшенный) на некоторое количество строк и столбцов в правом нижнем углу.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются такие **области**: _Files.Read, Files.ReadWrite_.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -30,7 +30,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 |deltaRows|Int32||
 |deltaColumns|Int32||
 
-### <a name="response"></a>Отклик
+## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [workbookRange](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример

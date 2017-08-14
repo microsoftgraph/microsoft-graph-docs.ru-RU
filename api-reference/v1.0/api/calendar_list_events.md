@@ -5,7 +5,7 @@
 Чтобы получить расширенные экземпляры события, вы можете [получить представление календаря](calendar_list_calendarview.md) или [экземпляры события](event_list_instances.md).
 
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Calendars.Read*
+Для применения этого API требуется одна из указанных ниже **областей**. *Calendars.Read*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 [Календарь](../resources/calendar.md) пользователя или группы по умолчанию.
@@ -37,7 +37,9 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Event](../resources/event.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

@@ -2,8 +2,8 @@
 
 Копирование сообщения в папку.
 
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
+## <a name="prerequisites"></a>Необходимые условия
+Для применения этого API требуется следующая **область**: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,7 +15,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -26,6 +26,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 |destinationId|String|Идентификатор целевой папки либо имя известной папки `Inbox`, `Drafts`, `SentItems` или `DeletedItems`.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Message](../resources/message.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

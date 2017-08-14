@@ -35,6 +35,7 @@ GET /groups/{group-id}/drive/items/{item-id}
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

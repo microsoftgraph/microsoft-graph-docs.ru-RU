@@ -10,7 +10,7 @@
 
 * Files.ReadWrite.
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -23,6 +23,7 @@ GET /shares/{sharingIdOrUrl}
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвращает код отклика `200 OK` и ресурс [sharedDriveItem](../resources/shareddriveitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -28,6 +28,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 |anotherRange|string|Объект, адрес или имя диапазона.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример

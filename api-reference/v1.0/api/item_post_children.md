@@ -22,8 +22,8 @@ POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание создаваемого ресурса [DriveItem](../resources/driveitem.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

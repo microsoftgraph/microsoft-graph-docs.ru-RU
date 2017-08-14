@@ -26,6 +26,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series/ItemAt
 |index|number|Значение индекса получаемого объекта. Используется нулевой индекс.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [ChartSeries](../resources/chartseries.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

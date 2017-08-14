@@ -9,8 +9,8 @@
 * Files.ReadWrite.
 * Files.Read.All
 * Files.ReadWrite.All
-* Shares.Read.All
-* Shares.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -28,6 +28,7 @@ GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [Permission](../resources/permission.md) в теле отклика.
 
 ## <a name="example"></a>Пример

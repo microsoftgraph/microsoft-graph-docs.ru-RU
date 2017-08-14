@@ -38,6 +38,7 @@ GET /me/drive/special/{name}
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвратит код отклика `200 OK` и объект [driveItem](../resources/driveitem.md) в теле отклика.
 
 ## <a name="example"></a>Пример

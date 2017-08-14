@@ -24,6 +24,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 В теле запроса укажите массив объектов [patchContentCommand](../resources/patchcontentcommand.md), представляющих изменения, вносимые в страницу. Дополнительные сведения и примеры см. в статье <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Обновление страниц OneNote</a>.
 
 ## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвращает код отклика `204 No Content`.  Для запроса PATCH не возвращается никаких данных JSON.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

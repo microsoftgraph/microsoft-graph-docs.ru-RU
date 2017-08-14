@@ -2,7 +2,7 @@
 
 Получение списка, включающего объекты параметров группы.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Для применения этого API требуется одна из указанных **областей**: *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*
 
@@ -27,7 +27,9 @@ GET group/{id}/settings
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupSetting](../resources/groupsetting.md) в теле отклика.
 ## <a name="example"></a>Пример
 

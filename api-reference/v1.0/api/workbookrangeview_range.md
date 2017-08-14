@@ -1,7 +1,7 @@
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 Возвращение диапазона, связанного с ресурсом rangeView.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуются такие **области**: _Files.Read, Files.ReadWrite_.
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -18,7 +18,8 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/r
 
 ## <a name="request-body"></a>Текст запроса
 
-### <a name="response"></a>Отклик
+## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [workbookRange](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример

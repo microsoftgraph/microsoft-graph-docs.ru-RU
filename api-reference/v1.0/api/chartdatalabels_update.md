@@ -23,7 +23,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |position|string|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
-|разделитель|string|Строка, представляющая разделитель для меток данных на диаграмме.|
+|separator|string|Строка, представляющая разделитель для меток данных на диаграмме.|
 |showBubbleSize|boolean|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
 |showCategoryName|boolean|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
 |showLegendKey|boolean|Логическое значение, которое указывает, отображаются ли условные обозначения для меток данных.|
@@ -32,6 +32,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 |showValue|boolean|Логическое значение, которое указывает, отображается ли значение метки данных.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartDataLabels](../resources/chartdatalabels.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

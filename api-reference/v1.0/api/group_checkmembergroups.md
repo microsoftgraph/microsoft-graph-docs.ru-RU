@@ -13,7 +13,7 @@ POST /groups/{id}/checkMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -23,6 +23,7 @@ POST /groups/{id}/checkMemberGroups
 |groupIds|String|Массив идентификаторов групп|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект коллекции String в тексте отклика.
 
 ## <a name="example"></a>Пример

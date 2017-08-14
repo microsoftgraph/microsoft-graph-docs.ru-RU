@@ -2,7 +2,7 @@
 
 Обновление свойств объекта calendarGroup.
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных ниже **областей**. _Calendars.ReadWrite_
+Для применения этого API требуется одна из указанных **областей**: _Calendars.ReadWrite_
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 Любой объект [calendarGroup](../resources/calendargroup.md) пользователя.
@@ -24,6 +24,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 |name|String|Имя группы.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [calendarGroup](../resources/calendargroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

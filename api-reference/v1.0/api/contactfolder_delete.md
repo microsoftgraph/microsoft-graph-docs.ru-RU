@@ -2,7 +2,7 @@
 
 Удаление любого объекта contactFolder, кроме объекта contactFolder по умолчанию.
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Contacts.ReadWrite*
+Для применения этого API требуется одна из указанных ниже **областей**. *Contacts.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -12,13 +12,13 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

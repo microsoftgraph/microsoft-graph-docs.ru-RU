@@ -31,6 +31,7 @@ POST /workbook/worksheets({id|name})/names/add
 |примечание|string|Комментарий, связанный с именованным элементом|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [NamedItem](../resources/NamedItem.md) в тексте отклика.
 
 

@@ -1,7 +1,7 @@
 # <a name="create-event"></a>Создание объекта Event
 
 С помощью этого API можно создать объект Event в календаре по умолчанию или указанном календаре.
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,8 +33,8 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="request-body"></a>Тело запроса
 Предоставьте в тексте запроса описание объекта [Event](../resources/event.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Event](../resources/event.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

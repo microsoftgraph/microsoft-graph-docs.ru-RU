@@ -2,7 +2,7 @@
 
 С помощью этого API можно создать объект Message в папке почты.
 ## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
+Для применения этого API требуется следующая **область**: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,8 +18,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [Message](../resources/message.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Message](../resources/message.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

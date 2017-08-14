@@ -8,7 +8,7 @@
 
 * Files.ReadWrite.
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -34,8 +34,8 @@ PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 |:-------------|:-------|:------------------------------|
 | **roles**    | String | Массив типов разрешений. |
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [permission](../resources/permission.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

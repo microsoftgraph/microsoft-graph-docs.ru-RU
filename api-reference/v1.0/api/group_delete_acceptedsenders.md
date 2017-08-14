@@ -1,7 +1,7 @@
 # <a name="remove-acceptedsender"></a>Удаление объекта acceptedSender
 
 Удаление пользователя или группы из списка acceptedSenders. 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Group.ReadWrite.All*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -14,11 +14,11 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

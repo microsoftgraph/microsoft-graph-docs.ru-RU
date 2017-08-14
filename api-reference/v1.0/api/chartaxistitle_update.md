@@ -28,6 +28,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 |visible|boolean|Логическое значение, которое определяет видимость названия оси.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartAxisTitle](../resources/chartaxistitle.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

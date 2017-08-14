@@ -9,7 +9,7 @@
 
 * Files.ReadWrite.
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -31,6 +31,7 @@ DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

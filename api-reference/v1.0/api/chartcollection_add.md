@@ -28,6 +28,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 |seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Возможные значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [Chart](../resources/chart.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -1,7 +1,7 @@
 # <a name="user-reminderview"></a>user: reminderView
 Возвращает список напоминаний календаря за указанный период времени. 
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Calendars.Read; Calendars.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -29,6 +29,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200, OK` и объект коллекции [reminder](../resources/reminder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

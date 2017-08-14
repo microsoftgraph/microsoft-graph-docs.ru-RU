@@ -3,8 +3,8 @@
 Создание объекта contactFolder в стандартной папке контактов пользователя.
 
 Вы также можете [создать объект contactFolder, вложенный в любую указанную папку контактов](contactfolder_post_childfolders.md).
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**: *Contacts.ReadWrite*
+## <a name="prerequisites"></a>Необходимые условия
+Для применения этого API требуется одна из указанных ниже **областей**. *Contacts.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,8 +19,8 @@ POST /users/{id | userPrincipalName}/contactFolders
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [ContactFolder](../resources/contactfolder.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [ContactFolder](../resources/contactfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

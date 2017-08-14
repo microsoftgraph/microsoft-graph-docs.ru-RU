@@ -27,7 +27,9 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Ответ
+
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [sectionGroup](../resources/sectiongroup.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
