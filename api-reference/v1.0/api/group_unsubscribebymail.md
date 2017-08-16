@@ -1,7 +1,7 @@
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 
 С помощью этого метода можно заблокировать для текущего пользователя получение уведомлений электронной почты о новых записях, событиях и файлов в этой группе. Поддерживается только для групп Office 365. 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 Для применения этого API требуется одна из указанных **областей**: *Group.ReadWrite.All* 
 *Group.ReadWrite.All*
 ## <a name="http-request"></a>HTTP-запрос
@@ -17,6 +17,7 @@ POST /groups/{id}/unsubscribeByMail
 ## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

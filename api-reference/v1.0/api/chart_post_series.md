@@ -21,8 +21,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [ChartSeries](../resources/chartseries.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [ChartSeries](../resources/chartseries.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

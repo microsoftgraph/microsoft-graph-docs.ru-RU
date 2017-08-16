@@ -23,8 +23,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [RangeBorder](../resources/rangeborder.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [RangeBorder](../resources/rangeborder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

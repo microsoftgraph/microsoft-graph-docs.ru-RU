@@ -1,7 +1,7 @@
 # <a name="list-calendarview"></a>Список calendarView
 
 Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного либо другого календаря пользователя, которое определяется заданным диапазоном времени.
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 Для применения этого API требуется одна из указанных **областей**: *Calendars.Read; Calendars.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,9 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Event](../resources/event.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

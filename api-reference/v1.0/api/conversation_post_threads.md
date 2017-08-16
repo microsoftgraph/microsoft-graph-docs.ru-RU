@@ -6,7 +6,7 @@
 
 Примечание. Вы также можете [начать новую беседу, создав цепочку](group_post_threads.md).
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для применения этого API требуются указанные ниже **области**. *Group.ReadWrite.All*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -16,13 +16,13 @@ POST /groups/{id}/conversations/{id}/threads
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите описание объекта [ConversationThread](../resources/conversationthread.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвратит код отклика `201, Created` и объект [ConversationThread](../resources/conversationthread.md) в теле отклика.
 
 ## <a name="example"></a>Пример

@@ -21,8 +21,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [ChartPoints](../resources/chartpoint.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [ChartPoints](../resources/chartpoint.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

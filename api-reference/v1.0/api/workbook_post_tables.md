@@ -21,8 +21,8 @@ POST /workbook/tables/$/add
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [Table](../resources/table.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код ответа `201, Created` и объект [Table](../resources/table.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

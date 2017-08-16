@@ -25,6 +25,7 @@ PUT /groups/{id}/drive/items/{parent-id}/children/{filename}/content
 Содержимое текста запроса должно представлять собой двоичный поток файла, который необходимо отправить.
 
 ## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвращает объект [driveItem](../resources/driveitem.md) в тексте отклика для вновь созданного файла.
 
 ## <a name="example"></a>Пример
@@ -41,8 +42,10 @@ Content-type: text/plain
 The contents of the file goes here.
 ```
 
-## <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <a name="response"></a>Отклик
+
+Ниже приводится пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

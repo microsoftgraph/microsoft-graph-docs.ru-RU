@@ -17,7 +17,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -30,6 +30,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 |renameAs|String|Имя копии. По умолчанию используется имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код ответа `202 Accepted` и заголовок `Operation-Location`. [Чтобы получить сведения о состоянии операции копирования](onenoteoperation_get.md), опросите конечную точку Operation-Location.
 
 ## <a name="example"></a>Пример

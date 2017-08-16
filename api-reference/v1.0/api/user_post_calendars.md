@@ -1,7 +1,7 @@
 # <a name="create-calendar"></a>Создание объекта Calendar
 
 С помощью этого API можно создать календарь.
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 Для применения этого API требуется одна из указанных **областей**: *Calendars.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -17,8 +17,8 @@ POST /users/{id | userPrincipalName}/calendars
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [calendar](../resources/calendar.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

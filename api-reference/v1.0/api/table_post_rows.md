@@ -22,8 +22,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [TableRow](../resources/tablerow.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [TableRow](../resources/tablerow.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

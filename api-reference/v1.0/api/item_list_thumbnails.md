@@ -42,6 +42,7 @@ GET /groups/{group-id}/drive/items/{item-id}/thumbnails
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ThumbnailSet](../resources/thumbnailset.md) в теле отклика.
 
 ## <a name="example"></a>Пример

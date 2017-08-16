@@ -22,8 +22,8 @@ POST /groups/{id}/threads
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [conversationThread](../resources/conversationthread.md), содержащего объект [post](../resources/post.md), в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [conversationThread](../resources/conversationthread.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -4,8 +4,8 @@
 
 Создавая черновик, в тот же **POST**-запрос вы можете включить [attachment](../resources/attachment.md).
 
-## <a name="prerequisites"></a>Обязательные условия
-Для применения этого API требуется одна из указанных **областей**: *Mail.ReadWrite*
+## <a name="prerequisites"></a>Предварительные условия
+Для применения этого API требуется следующая **область**: *Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -25,8 +25,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 Так как ресурс **message** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в сообщение при его создании.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [message](../resources/message.md) в теле отклика.
 
 ## <a name="example"></a>Пример

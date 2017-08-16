@@ -17,8 +17,8 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
+## <a name="response"></a>Отклик
 
-## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример

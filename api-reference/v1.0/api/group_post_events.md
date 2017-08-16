@@ -1,7 +1,7 @@
 # <a name="create-event"></a>Создание объекта Event
 
 С помощью этого API можно создать [событие](../resources/event.md).
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Group.ReadWrite.All*
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -17,8 +17,8 @@ POST /groups/{id}/calendar/events
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [Event](../resources/event.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Event](../resources/event.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

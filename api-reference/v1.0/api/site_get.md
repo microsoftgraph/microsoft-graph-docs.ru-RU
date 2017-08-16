@@ -10,14 +10,14 @@
 * уникальный идентификатор семейства веб-сайтов (guid);
 * уникальный идентификатор сайта (guid).
 
-Кроме того, существует зарезервированный идентификатор сайта `root`, который всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже:
+Кроме того, существует зарезервированный идентификатор сайта `root`, который всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже.
 
 * `/sites/root`. Корневой сайт клиента.
 * `/groups/{group-id}/sites/root`. Сайт группы для ресурса group.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 
-Для применения этого API требуется одна из указанных областей:
+Для выполнения этого API требуется одно из следующих разрешений:
 
 * Sites.Read.All
 * Sites.ReadWrite.All
@@ -49,7 +49,7 @@ GET /groups/{group-id}/sites/root
 
 ## <a name="example"></a>Пример
 
-### <a name="request"></a>Запрос
+##### <a name="request"></a>Запрос
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -57,7 +57,7 @@ GET /groups/{group-id}/sites/root
 GET https://graph.microsoft.com/v1.0/sites/{site-id}
 ```
 
-### <a name="response"></a>Отклик
+##### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

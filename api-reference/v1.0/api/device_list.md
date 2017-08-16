@@ -2,7 +2,7 @@
 
 Получение списка объектов устройств, зарегистрированных в организации.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 Для выполнения этого API требуется одно из следующих **разрешений**: *Device.ReadWrite.All*, *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -19,7 +19,9 @@ GET /devices
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [device](../resources/device.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

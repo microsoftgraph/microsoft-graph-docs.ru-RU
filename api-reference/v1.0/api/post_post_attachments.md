@@ -21,8 +21,8 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [Attachment](../resources/attachment.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `201, Created` и объект [Attachment](../resources/attachment.md) в теле отклика.
 
 ## <a name="example-file-attachment"></a>Пример (вложенный файл)

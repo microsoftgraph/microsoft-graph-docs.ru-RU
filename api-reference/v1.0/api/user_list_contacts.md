@@ -1,7 +1,7 @@
 # <a name="list-contacts"></a>Список контактов
 
 Получении коллекции контактов из папки контактов по умолчанию для вошедшего пользователя.
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**: *Contacts.Read; Contacts.ReadWrite*
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,9 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Contact](../resources/contact.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
