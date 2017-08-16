@@ -4,14 +4,28 @@
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known_issues.md).
 
-## <a name="august-2017"></a>Август 2017 г.
+## <a name="august-2017"></a>Август 2017 г.
+
+### <a name="people"></a>People 
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | 1.0 | В версии 1.0 добавлены [API People](../api-reference/v1.0/resources/person.md). Подробнее об API People см. в статье, посвященной [нахождению релевантных сведений о пользователях](people_example.md).|
+
+### <a name="group-lifecycle-policy"></a>Политика жизненного цикла группы
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | Бета | Добавлена сущность [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy). |
+| Дополнение | Бета | Добавлены следующие API для политики жизненного цикла группы, а именно для: [создания](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [перечисления](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [получения](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [обновления](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [удаления](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [добавления группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [удаления группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) и [возобновления группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
+| Дополнение | Бета | Добавлена функция [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) в объект [группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group). |
 
 ### <a name="onenote"></a>OneNote
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
-| Дополнение | 1.0 и бета-версия | Добавлено свойство навигации [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) для **site**.  |
-| Дополнение | Бета-версия | Добавлены целевые параметры *siteCollectionId* и *siteId* для операций копирования. Пример: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md). |
+| Дополнение | 1.0 и бета-версия | Добавлено свойство навигации [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) для **site**.  |
+| Дополнение | Бета | Добавлены целевые параметры *siteCollectionId* и *siteId* для операций копирования. Пример: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 
 ## <a name="july-2017"></a>Июль 2017 г.

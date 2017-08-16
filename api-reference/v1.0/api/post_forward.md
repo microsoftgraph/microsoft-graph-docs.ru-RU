@@ -5,7 +5,7 @@
 ## <a name="prerequisites"></a>Необходимые условия
 Для применения этого API требуется одна из указанных **областей**:
 
-*Group.ReadWrite*, *Group.Readwrite.All*
+*Group.ReadWrite.All*
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -28,6 +28,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 |toRecipients|Коллекция объектов [recipient](../resources/recipient.md)|Получатели, которым пересылается цепочка.|
 
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
