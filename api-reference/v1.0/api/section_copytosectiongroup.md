@@ -1,12 +1,47 @@
-<span data-ttu-id="e3258-p105">В случае успешного выполнения этот метод возвращает код ответа `202 Accepted` и заголовок `Operation-Location`. [Чтобы получить сведения о состоянии операции копирования](onenoteoperation_get.md), опросите конечную точку Operation-Location.</span><span class="sxs-lookup"><span data-stu-id="e3258-p105">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).</span></span>
-В случае успешного выполнения этот метод возвращает код ответа `202 Accepted` и заголовок `Operation-Location`. [Чтобы получить сведения о состоянии операции копирования](onenoteoperation_get.md), опросите конечную точку Operation-Location.
+# <a name="section-copytosectiongroup"></a><span data-ttu-id="3188e-101">section: copyToSectionGroup</span><span class="sxs-lookup"><span data-stu-id="3188e-101">section: copyToSectionGroup</span></span>
+<span data-ttu-id="3188e-102">Копирование раздела в указанную группу разделов.</span><span class="sxs-lookup"><span data-stu-id="3188e-102">Copies a section to a specific section group.</span></span>
 
-## <span data-ttu-id="e3258-138">Пример</span><span class="sxs-lookup"><span data-stu-id="e3258-138">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="e3258-139">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="e3258-139">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="e3258-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3258-140">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="e3258-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e3258-141">Here is an example of the request.</span></span>
+<span data-ttu-id="3188e-103">Для операций Copy необходимо использовать модель асинхронного вызова:  сначала вызовите действие Copy, а затем опросите конечную точку операции, чтобы получить результат.</span><span class="sxs-lookup"><span data-stu-id="3188e-103">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="3188e-104">Необходимые условия</span><span class="sxs-lookup"><span data-stu-id="3188e-104">Prerequisites</span></span>
+<span data-ttu-id="3188e-105">Для выполнения этого API требуется одно из следующих **разрешений**:</span><span class="sxs-lookup"><span data-stu-id="3188e-105">One of the following **scopes** is required to execute this API:</span></span>   
+
+<span data-ttu-id="3188e-106">Notes.Create, Notes.ReadWrite или Notes.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="3188e-106">Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All</span></span> 
+
+## <a name="http-request"></a><span data-ttu-id="3188e-107">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3188e-107">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /me/onenote/sections/{id}/copyToSectionGroup
+POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToSectionGroup
+POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
+```
+## <a name="request-headers"></a><span data-ttu-id="3188e-108">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3188e-108">Request headers</span></span>
+| <span data-ttu-id="3188e-109">Имя</span><span class="sxs-lookup"><span data-stu-id="3188e-109">Name</span></span>       | <span data-ttu-id="3188e-110">Тип</span><span class="sxs-lookup"><span data-stu-id="3188e-110">Type</span></span> | <span data-ttu-id="3188e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="3188e-111">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="3188e-112">Authorization</span><span class="sxs-lookup"><span data-stu-id="3188e-112">Authorization</span></span>  | <span data-ttu-id="3188e-113">string</span><span class="sxs-lookup"><span data-stu-id="3188e-113">string</span></span>  | <span data-ttu-id="3188e-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3188e-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3188e-116">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3188e-116">Content-Type</span></span> | <span data-ttu-id="3188e-117">строка</span><span class="sxs-lookup"><span data-stu-id="3188e-117">string</span></span> | `application/json` |
+
+## <a name="request-body"></a><span data-ttu-id="3188e-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3188e-118">Request body</span></span>
+<span data-ttu-id="3188e-119">В тексте запроса укажите объект JSON, который содержит параметры, требуемые операцией.</span><span class="sxs-lookup"><span data-stu-id="3188e-119">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span>
+
+| <span data-ttu-id="3188e-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="3188e-120">Parameter</span></span>    | <span data-ttu-id="3188e-121">Тип</span><span class="sxs-lookup"><span data-stu-id="3188e-121">Type</span></span>   |<span data-ttu-id="3188e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="3188e-122">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="3188e-123">groupId</span><span class="sxs-lookup"><span data-stu-id="3188e-123">groupId</span></span>|<span data-ttu-id="3188e-124">String</span><span class="sxs-lookup"><span data-stu-id="3188e-124">String</span></span>|<span data-ttu-id="3188e-p102">Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.</span><span class="sxs-lookup"><span data-stu-id="3188e-p102">The id of the group to copy to. Use only when copying to an Office 365 group.</span></span>|
+|<span data-ttu-id="3188e-127">id</span><span class="sxs-lookup"><span data-stu-id="3188e-127">id</span></span>|<span data-ttu-id="3188e-128">Строка</span><span class="sxs-lookup"><span data-stu-id="3188e-128">String</span></span>|<span data-ttu-id="3188e-p103">Обязательный. Идентификатор целевой группы разделов.</span><span class="sxs-lookup"><span data-stu-id="3188e-p103">Required. The id of the destination section group.</span></span> |
+|<span data-ttu-id="3188e-131">renameAs</span><span class="sxs-lookup"><span data-stu-id="3188e-131">renameAs</span></span>|<span data-ttu-id="3188e-132">String</span><span class="sxs-lookup"><span data-stu-id="3188e-132">String</span></span>|<span data-ttu-id="3188e-p104">Имя копии. По умолчанию используется имя существующего элемента.</span><span class="sxs-lookup"><span data-stu-id="3188e-p104">The name of the copy. Defaults to the name of the existing item.</span></span> |
+
+<!--groupId missing-->
+<!--|siteCollectionId|String||
+|siteId|String||-->
+
+## <a name="response"></a><span data-ttu-id="3188e-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="3188e-135">Response</span></span>
+
+<span data-ttu-id="3188e-p105">В случае успешного выполнения этот метод возвращает код ответа `202 Accepted` и заголовок `Operation-Location`. [Чтобы получить сведения о состоянии операции копирования](onenoteoperation_get.md), опросите конечную точку Operation-Location.</span><span class="sxs-lookup"><span data-stu-id="3188e-p105">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).</span></span>
+
+## <a name="example"></a><span data-ttu-id="3188e-138">Пример</span><span class="sxs-lookup"><span data-stu-id="3188e-138">Example</span></span>
+<span data-ttu-id="3188e-139">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="3188e-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3188e-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="3188e-140">Request</span></span>
+<span data-ttu-id="3188e-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3188e-141">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "section_copytosectiongroup"
@@ -23,9 +58,8 @@ Content-length: 84
 }
 ```
 
-##### <span data-ttu-id="e3258-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3258-142">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="e3258-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e3258-143">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="3188e-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="3188e-142">Response</span></span>
+<span data-ttu-id="3188e-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="3188e-143">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
