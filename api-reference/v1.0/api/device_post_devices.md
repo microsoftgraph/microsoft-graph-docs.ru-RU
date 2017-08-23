@@ -1,5 +1,65 @@
-<span data-ttu-id="59415-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="59415-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+# <a name="create-device"></a><span data-ttu-id="b4214-101">Создание устройства</span><span class="sxs-lookup"><span data-stu-id="b4214-101">Create device</span></span>
+
+<span data-ttu-id="b4214-102">Создание и регистрация нового устройства в организации.</span><span class="sxs-lookup"><span data-stu-id="b4214-102">Create and register a new device in the organization.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="b4214-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b4214-103">Permissions</span></span>
+<span data-ttu-id="b4214-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="b4214-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+
+|<span data-ttu-id="b4214-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b4214-106">Permission type</span></span>      | <span data-ttu-id="b4214-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b4214-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="b4214-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b4214-108">Delegated (work or school account)</span></span> | <span data-ttu-id="b4214-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b4214-109">Directory.AccessAsUser.All</span></span>    | 
+|<span data-ttu-id="b4214-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b4214-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b4214-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b4214-111">Not supported.</span></span>    | 
+|<span data-ttu-id="b4214-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b4214-112">Application</span></span> | <span data-ttu-id="b4214-113">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4214-113">Device.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="b4214-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b4214-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices
+
+```
+## <a name="request-headers"></a><span data-ttu-id="b4214-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b4214-115">Request headers</span></span>
+| <span data-ttu-id="b4214-116">Имя</span><span class="sxs-lookup"><span data-stu-id="b4214-116">Name</span></span>       | <span data-ttu-id="b4214-117">Тип</span><span class="sxs-lookup"><span data-stu-id="b4214-117">Type</span></span> | <span data-ttu-id="b4214-118">Описание</span><span class="sxs-lookup"><span data-stu-id="b4214-118">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="b4214-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="b4214-119">Authorization</span></span>  | <span data-ttu-id="b4214-120">string</span><span class="sxs-lookup"><span data-stu-id="b4214-120">string</span></span>  | <span data-ttu-id="b4214-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b4214-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b4214-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b4214-123">Content-type</span></span> | <span data-ttu-id="b4214-124">string</span><span class="sxs-lookup"><span data-stu-id="b4214-124">string</span></span> | <span data-ttu-id="b4214-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b4214-125">application/json</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="b4214-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b4214-126">Request body</span></span>
+<span data-ttu-id="b4214-127">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b4214-127">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+
+## <a name="response"></a><span data-ttu-id="b4214-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="b4214-128">Response</span></span>
+
+<span data-ttu-id="b4214-129">В случае успеха этот метод возвращает код отклика `201, Created` и объект [device](../resources/device.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b4214-129">If successful, this method returns `201, Created` response code and [device](../resources/device.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="b4214-130">Пример</span><span class="sxs-lookup"><span data-stu-id="b4214-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b4214-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="b4214-131">Request</span></span>
+<span data-ttu-id="b4214-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b4214-132">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "create_device_from_devices"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/devices
+Content-type: application/json
+
+{
+  "accountEnabled":false,
+  "alternativeSecurityIds":
+  [
+    {
+      "type":2,
+      "key":"Y3YxN2E1MWFlYw=="
+    }
+  ],
+  "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
+  "displayName":"Test device",
+  "operatingSystem":"linux",
+  "operatingSystemVersion":"1"
+}
+```
+<span data-ttu-id="b4214-133">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b4214-133">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="b4214-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="b4214-134">Response</span></span>
+<span data-ttu-id="b4214-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="b4214-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

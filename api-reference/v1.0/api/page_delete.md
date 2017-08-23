@@ -1,10 +1,35 @@
-<span data-ttu-id="271c8-p102">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="271c8-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+# <a name="delete-page"></a><span data-ttu-id="0762d-101">Удаление страницы</span><span class="sxs-lookup"><span data-stu-id="0762d-101">Delete page</span></span>
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+<span data-ttu-id="0762d-102">Удаление страницы OneNote.</span><span class="sxs-lookup"><span data-stu-id="0762d-102">Delete a OneNote page.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0762d-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0762d-103">Permissions</span></span>
+<span data-ttu-id="0762d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="0762d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="271c8-118">Пример</span><span class="sxs-lookup"><span data-stu-id="271c8-118">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="271c8-119">Запрос</span><span class="sxs-lookup"><span data-stu-id="271c8-119">Request</span></span>
-<span data-ttu-id="271c8-120">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="271c8-120">Here is an example of the request.</span></span>
+|<span data-ttu-id="0762d-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0762d-106">Permission type</span></span>      | <span data-ttu-id="0762d-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0762d-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="0762d-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0762d-108">Delegated (work or school account)</span></span> | <span data-ttu-id="0762d-109">Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0762d-109">Notes.ReadWrite, or Notes.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="0762d-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0762d-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0762d-111">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0762d-111">Notes.ReadWrite</span></span>    | 
+|<span data-ttu-id="0762d-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0762d-112">Application</span></span> | <span data-ttu-id="0762d-113">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0762d-113">Notes.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="0762d-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0762d-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/onenote/pages/{id}
+DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
+DELETE /groups/{id}/onenote/pages/{id}
+DELETE /sites/{id}/onenote/pages/{id}
+```
+## <a name="request-headers"></a><span data-ttu-id="0762d-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0762d-115">Request headers</span></span>
+| <span data-ttu-id="0762d-116">Имя</span><span class="sxs-lookup"><span data-stu-id="0762d-116">Name</span></span>       | <span data-ttu-id="0762d-117">Тип</span><span class="sxs-lookup"><span data-stu-id="0762d-117">Type</span></span> | <span data-ttu-id="0762d-118">Описание</span><span class="sxs-lookup"><span data-stu-id="0762d-118">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="0762d-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="0762d-119">Authorization</span></span>  | <span data-ttu-id="0762d-120">string</span><span class="sxs-lookup"><span data-stu-id="0762d-120">string</span></span>  | <span data-ttu-id="0762d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0762d-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="response"></a><span data-ttu-id="0762d-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="0762d-123">Response</span></span>
+
+<span data-ttu-id="0762d-p103">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="0762d-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="0762d-126">Пример</span><span class="sxs-lookup"><span data-stu-id="0762d-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0762d-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="0762d-127">Request</span></span>
+<span data-ttu-id="0762d-128">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0762d-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_page"
@@ -12,8 +37,8 @@
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="271c8-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="271c8-121">Response</span></span>
-<span data-ttu-id="271c8-122">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="271c8-122">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="0762d-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="0762d-129">Response</span></span>
+<span data-ttu-id="0762d-130">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="0762d-130">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

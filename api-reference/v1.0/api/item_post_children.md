@@ -1,16 +1,17 @@
-# <a name="create-a-new-folder"></a><span data-ttu-id="10a03-101">Создание папки</span><span class="sxs-lookup"><span data-stu-id="10a03-101">Create a new folder</span></span>
+# <a name="create-a-new-folder"></a><span data-ttu-id="313a9-101">Создание папки</span><span class="sxs-lookup"><span data-stu-id="313a9-101">Create a new folder</span></span>
 
-<span data-ttu-id="10a03-102">Создание папки или ресурса [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) с указанным родительским элементом или по указанному пути.</span><span class="sxs-lookup"><span data-stu-id="10a03-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
+<span data-ttu-id="313a9-102">Создание папки или ресурса [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) с указанным родительским элементом или по указанному пути.</span><span class="sxs-lookup"><span data-stu-id="313a9-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="10a03-103">Необходимые условия</span><span class="sxs-lookup"><span data-stu-id="10a03-103">Prerequisites</span></span>
-<span data-ttu-id="10a03-104">Для применения этого API требуется одна из указанных **областей**:</span><span class="sxs-lookup"><span data-stu-id="10a03-104">One of the following **scopes** is required to execute this API:</span></span>
+## <a name="permissions"></a><span data-ttu-id="313a9-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="313a9-103">Permissions</span></span>
+<span data-ttu-id="313a9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="313a9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-* <span data-ttu-id="10a03-105">Files.ReadWrite.</span><span class="sxs-lookup"><span data-stu-id="10a03-105">Files.ReadWrite</span></span>
-* <span data-ttu-id="10a03-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10a03-106">Files.ReadWrite.All</span></span>
-* <span data-ttu-id="10a03-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10a03-107">Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="313a9-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="313a9-106">Permission type</span></span>      | <span data-ttu-id="313a9-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="313a9-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="313a9-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="313a9-108">Delegated (work or school account)</span></span> | <span data-ttu-id="313a9-109">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="313a9-109">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="313a9-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="313a9-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="313a9-111">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="313a9-111">Files.ReadWrite, Files.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="313a9-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="313a9-112">Application</span></span> | <span data-ttu-id="313a9-113">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="313a9-113">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> | 
 
-
-## <a name="http-request"></a><span data-ttu-id="10a03-108">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="10a03-108">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="313a9-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="313a9-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/children
@@ -19,17 +20,17 @@ POST /drives/{drive-id}/items/{parent-item-id}/children
 POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ```
 
-## <a name="request-body"></a><span data-ttu-id="10a03-109">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="10a03-109">Request body</span></span>
-<span data-ttu-id="10a03-110">Предоставьте в тексте запроса описание создаваемого ресурса [DriveItem](../resources/driveitem.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="10a03-110">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
+## <a name="request-body"></a><span data-ttu-id="313a9-115">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="313a9-115">Request body</span></span>
+<span data-ttu-id="313a9-116">Предоставьте в тексте запроса описание создаваемого ресурса [DriveItem](../resources/driveitem.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="313a9-116">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10a03-111">Отклик</span><span class="sxs-lookup"><span data-stu-id="10a03-111">Response</span></span>
+## <a name="response"></a><span data-ttu-id="313a9-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="313a9-117">Response</span></span>
 
-<span data-ttu-id="10a03-112">В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="10a03-112">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="313a9-118">В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="313a9-118">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10a03-113">Пример</span><span class="sxs-lookup"><span data-stu-id="10a03-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="313a9-119">Пример</span><span class="sxs-lookup"><span data-stu-id="313a9-119">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="10a03-114">Запрос</span><span class="sxs-lookup"><span data-stu-id="10a03-114">Request</span></span>
-<span data-ttu-id="10a03-115">Ниже приведен пример запроса на создание папки в корневом каталоге OneDrive пользователя.</span><span class="sxs-lookup"><span data-stu-id="10a03-115">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
+##### <a name="request"></a><span data-ttu-id="313a9-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="313a9-120">Request</span></span>
+<span data-ttu-id="313a9-121">Ниже приведен пример запроса на создание папки в корневом каталоге OneDrive пользователя.</span><span class="sxs-lookup"><span data-stu-id="313a9-121">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -45,9 +46,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="10a03-116">Отклик</span><span class="sxs-lookup"><span data-stu-id="10a03-116">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="313a9-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="313a9-122">Response</span></span>
 
-<span data-ttu-id="10a03-117">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="10a03-117">Here is an example of the response.</span></span>
+<span data-ttu-id="313a9-123">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="313a9-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
