@@ -1,8 +1,15 @@
 # <a name="get-contact"></a>Получение контакта
 
 Получение свойств и связей объекта контакта.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**: *Contacts.Read; Contacts.ReadWrite*
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Делегированные (рабочая или учебная учетная запись) | Contacts.Read, Contacts.ReadWrite    | 
+|Делегированные (личная учетная запись Майкрософт) | Contacts.Read, Contacts.ReadWrite    | 
+|Для приложений | Contacts.Read, Contacts.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 Объект [contact](../resources/contact.md) из стандартной пользовательской папки [contactFolder](../resources/contactfolder.md).

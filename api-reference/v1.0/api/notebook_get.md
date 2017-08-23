@@ -1,10 +1,14 @@
 # <a name="get-notebook"></a>Получение записной книжки
 
 Получение свойств и связей объекта [notebook](../resources/notebook.md).
-## <a name="prerequisites"></a>Необходимые компоненты
-Для выполнения этого API требуется одно из следующих **разрешений**:
-  
-Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All. 
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Делегированные (рабочая или учебная учетная запись) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    | 
+|Делегированные (личная учетная запись Майкрософт) | Notes.Create, Notes.Read, Notes.ReadWrite    | 
+|Для приложений | Notes.Read.All, Notes.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

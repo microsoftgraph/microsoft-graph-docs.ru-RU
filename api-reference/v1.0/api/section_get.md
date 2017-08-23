@@ -1,10 +1,14 @@
 # <a name="get-section"></a>Получение раздела
 
-Получение свойств и отношений объекта [section](../resources/section.md).
-## <a name="prerequisites"></a>Необходимые условия
-Для выполнения этого API требуется одно из следующих **разрешений**:  
+Получение свойств и связей объекта [section](../resources/section.md).
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All. 
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Делегированные (рабочая или учебная учетная запись) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    | 
+|Делегированные (личная учетная запись Майкрософт) | Notes.Create, Notes.Read, Notes.ReadWrite    | 
+|Для приложений | Notes.Read.All, Notes.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

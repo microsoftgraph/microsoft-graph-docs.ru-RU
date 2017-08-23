@@ -2,13 +2,14 @@
 
 Создание папки или ресурса [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) с указанным родительским элементом или по указанному пути.
 
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных **областей**:
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite.
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Делегированные (личная учетная запись Майкрософт) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Для приложений | Files.ReadWrite.All, Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

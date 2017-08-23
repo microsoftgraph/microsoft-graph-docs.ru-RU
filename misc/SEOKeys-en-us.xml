@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item text="Обзор" url="/en-us/concepts/overview" SEOKeyword="Обзор, API Microsoft Graph, обзор" SEODescription="Microsoft Graph позволяет приложениям получать доступ к цифровым данным, связанным с работой и повседневной жизнью, в интеллектуальном облаке Майкрософт. Преимущества для разработчиков: Конечная точка единого API Майкрософт для доступа к данным и аналитике в облаке Майкрософт." />    
   <Item text="Рекомендованные сценарии" url="/en-us/concepts/featured_scenarios"> 
@@ -2120,11 +2120,9 @@
         <Item text="Настройка устройства" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration">
           <Item text="Назначение" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="Получение кратких сведений о конфигурации устройства" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get_deviceconfigurationdeviceoverview" />
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="Перечисление состояний устройств, касающихся конфигураций устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationdevicestatus" />
-          <Item text="Перечисление назначений группы для настройки устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationgroupassignment" />
-          <Item text="Перечисление состояний пользователей, касающихся конфигураций устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationuserstatus" />
+
+          <Item text="windowsPrivacyAccessControls" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
         </Item>
         <Item text="Назначение конфигураций устройств" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationassignment_get" />
@@ -2511,6 +2509,8 @@
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update" />
+          <Item text="Действие windowsDefenderScan" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan" />
+          <Item text="windowsDefenderUpdateSignatures" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
         </Item>
         <Item text="Оценка мультимедийного содержимого для Австралии" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="Оценка мультимедийного содержимого для Канады" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingcanada" />
@@ -2549,15 +2549,6 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsdevicemalwarestate_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsdevicemalwarestate_update" />
         </Item>
-        <Item text="Связанные приложения для Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10associatedapps" />
-        <Item text="База профилей сертификатов для Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase">
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get" />
-          <Item text="Получение кратких сведений о конфигурации устройства" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get_deviceconfigurationdeviceoverview" />
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list" />
-          <Item text="Перечисление состояний устройств, касающихся конфигураций устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationdevicestatus" />
-          <Item text="Перечисление назначений группы для настройки устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationgroupassignment" />
-          <Item text="Перечисление состояний пользователей, касающихся конфигураций устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationuserstatus" />
-        </Item>
         <Item text="Объект settingStateDeviceSummary" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_get" />
@@ -2580,7 +2571,16 @@
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_update" />
         </Item>
-        <Item text="Политика соответствия для Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy">
+        <Item text="Связанные приложения для Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10associatedapps" />
+        <Item text="База профилей сертификатов для Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase">
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get" />
+          <Item text="Получение кратких сведений о конфигурации устройства" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get_deviceconfigurationdeviceoverview" />
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list" />
+          <Item text="Перечисление состояний устройств, касающихся конфигураций устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationdevicestatus" />
+          <Item text="Перечисление назначений группы для настройки устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationgroupassignment" />
+          <Item text="Перечисление состояний пользователей, касающихся конфигураций устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationuserstatus" />
+        </Item>
+        <Item text="Политика соответствия требованиям для Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy">
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10compliancepolicy_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10compliancepolicy_delete" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10compliancepolicy_get" />
@@ -2902,6 +2902,13 @@
           <Item text="Перечисление состояний пользователей, касающихся конфигураций устройств" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphoneeasemailprofileconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphoneeasemailprofileconfiguration_update" />
         </Item>
+      <Item text="Элемент управления доступом к конфиденциальным данным в Windows" url="en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem">
+        <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_list" />
+        <Item text="Получение" url="/en-us/api-reference/beta/api/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_get" />
+        <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_create" />
+        <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_delete" />
+        <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_update" />
+      </Item>
         <Item text="Состояние защиты Windows" url="/en-us/api-reference/beta/resources/intune_endpointprotection_windowsprotectionstate">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsprotectionstate_list" />
           <Item text="Получение" url="/en-us/api-reference/beta" />
@@ -3879,7 +3886,8 @@
 		  <Item text="Вывод отчета об активности SharePoint" url="/en-us/api-reference/beta/api/reportroot_sharepointactivity" SEOKeyword="Вывод отчета об активности SharePoint, API Microsoft Graph, API для управления отчетами" SEODescription="Получение отчетов об активности SharePoint. Ответ представляет собой CSV-файл в двоичном потоке." />
 		  <Item text="Вывод отчета об использовании сайта SharePoint" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="Вывод отчета об использовании сайта SharePoint, API Microsoft Graph, API для управления отчетами" SEODescription="Получение отчетов об использовании сайта SharePoint. Ответ представляет собой CSV-файл в двоичном потоке." />
 		  <Item text="Вывод отчета об активности Yammer" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="Вывод отчета об активности Yammer, API Microsoft Graph, API для управления отчетами" SEODescription="Получение отчетов об активности Yammer. Ответ представляет собой CSV-файл в двоичном потоке." />
-		  <Item text="Вывод отчета об использовании устройств в Yammer" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Вывод отчета об использовании устройств в Yammer, API Microsoft Graph, API для управления отчетами" SEODescription="Получение отчетов об использовании устройств в Yammer. Ответ представляет собой CSV-файл в двоичном потоке." />
+		  <Item text="Вывод отчета об использовании устройств в Yammer" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Вывод отчета об использовании устройств в Yammer, API Microsoft Graph, API для управления отчетами" SEODescription="Получение отчетов об использовании устройств в Yammer. Отклик представляет собой CSV-файл в двоичном потоке." />
+		  <Item text="Получение отчета об активности групп Yammer" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="Получение отчета об активности групп Yammer." />
 		</Item>
 	</Item>
     <Item text="Расширения схемы" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="API для управления расширениями, API расширений схемы, расширения схемы" SEODescription="API для добавления пользовательских данных в ресурсы Microsoft Graph.">

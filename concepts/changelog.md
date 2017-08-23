@@ -6,7 +6,34 @@
 
 ## <a name="august-2017"></a>Август 2017 г.
 
-### <a name="people"></a>People 
+### <a name="intune-apis"></a>API Intune
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета-версия|Добавлен новый объект:<br/>[windowsPrivacyDataAccessControlItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem)<br/>|
+|Дополнение|Бета|Добавлены новые сложные типы:<br/>[configurationManagerClientEnabledFeatures](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_configurationmanagerclientenabledfeatures)<br/>[windowsDefenderScanActionResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult)<br/>|
+|Дополнение|Бета-версия|Добавлено действие [windowsDefenderScan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderscan.md) для [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Дополнение|Бета-версия|Добавлено действие [windowsDefenderUpdateSignatures](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures.md) для [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) |
+|Дополнение|Бета-версия|Добавлено действие [windowsPrivacyAccessControls](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols.md) для [deviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration) |
+|Изменение|Бета-версия|Добавлены свойства **automaticallyUpdateApps** и **countryOrRegion** для объекта [appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_applevolumepurchaseprogramtoken)|
+|Изменение|Бета-версия|Добавлено свойство **enableAuthenticationViaCompanyPortal** для объекта [depEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile)|
+|Изменение|Бета-версия|Добавлено свойство **notificationMessageCCList** для объекта [deviceComplianceActionItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem)|
+|Изменение|Бета-версия|Добавлено свойство **notApplicableCount** для объекта [deviceComplianceDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedeviceoverview)|
+|Изменение|Бета-версия|Добавлено свойство **notApplicableCount** для объекта [deviceComplianceUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceuseroverview)|
+|Изменение|Бета-версия|Добавлено свойство **notApplicableCount** для объекта [deviceConfigurationDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdeviceoverview)|
+|Изменение|Бета-версия|Добавлено свойство **notApplicableCount** для объекта [deviceConfigurationUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview)|
+|Изменение|Бета-версия|Добавлено свойство **configurationManagerClientEnabledFeatures** для объекта [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice)|
+|Изменение|Бета-версия|Удалено свойство **intuneBrand** для объекта [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_organization)|
+|Изменение|Бета-версия|Добавлены свойства **smartScreenEnableInShell**, **smartScreenBlockOverrideForFiles**, **applicationGuardEnabled**, **applicationGuardBlockFileTransfer**, **applicationGuardBlockNonEnterpriseContent**, **applicationGuardAllowPersistence** и **applicationGuardForceAuditing** для объекта [windows10EndpointProtectionConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration)|
+|Изменение|Бета-версия|Добавлены свойства **searchBlockDiacritics**, **searchDisableAutoLanguageDetection**, **searchDisableIndexingEncryptedItems**, **searchEnableRemoteQueries**, **searchDisableUseLocation**, **searchDisableIndexerBackoff**, **searchDisableIndexingRemovableDrive**, **searchEnableAutomaticIndexSizeManangement**, **smartScreenEnableAppInstallControl** и **privacyAdvertisingId** для объекта [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration)|
+|Изменение|Бета-версия|Удалено свойство **settingsDeviceName** для объекта [windows10TeamGeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration)|
+|Изменение|Бета-версия|Удалено свойство **restartMode** для объекта [windowsUpdateForBusinessConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration)|
+|Изменение|Бета-версия|Добавлены свойства навигации **detectedApps** и **managedDevices** для объекта [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement)|
+|Изменение|Бета-версия|Добавлено свойство навигации **privacyAccessControls** для объекта [windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration)|
+|Изменение|Бета-версия|Добавлено свойство **secureByDefault** для сложного типа [deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings)|
+|Изменение|Бета-версия|Добавлено свойство **restartMode** для сложного типа [windowsUpdateScheduledInstall](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdatescheduledinstall)|
+
+
+### <a name="people"></a>Люди 
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
@@ -41,8 +68,8 @@
 
 |Тип&nbsp;изменения|Версия|Описание|
 |:---|:---|:---|
-|Дополнение|Бета-версия|Добавлено действие [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_iosmobileappconfiguration_assign.md) для объекта [iosMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosmobileappconfiguration). |
-|Дополнение|Бета-версия|Добавлено действие [syncDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_syncdevice.md) для объекта [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice). |
+|Дополнение|Бета-версия|Добавлено действие [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_iosmobileappconfiguration_assign) для объекта [iosMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosmobileappconfiguration). |
+|Дополнение|Бета-версия|Добавлено действие [syncDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_syncdevice) для объекта [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice). |
 |Изменение|Бета-версия|Добавлены свойства **appsInstallAllowList**, **appsLaunchBlockList** и **appsHideList** для объекта [androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration).|
 |Изменение|Бета-версия|Добавлено свойство **disableAppEncryptionIfDeviceEncryptionIsEnabled** для объекта [androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection).|
 |Изменение|Бета-версия|Добавлено свойство **disableAppEncryptionIfDeviceEncryptionIsEnabled** для объекта [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection).|

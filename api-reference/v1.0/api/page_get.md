@@ -21,10 +21,14 @@ GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 
 Параметр запроса `includeIDs=true` используется для [обновления страниц](../api/page_update.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
-Для выполнения этого API требуется одно из следующих **разрешений**:  
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-Notes.Read, Notes.ReadWrite, Notes.Read.All или Notes.ReadWrite.All.
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Делегированные (рабочая или учебная учетная запись) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    | 
+|Делегированные (личная учетная запись Майкрософт) | Notes.Read, Notes.ReadWrite    | 
+|Для приложений | Notes.Read.All, Notes.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

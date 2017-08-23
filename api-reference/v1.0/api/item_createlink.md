@@ -6,12 +6,14 @@
 
 Ресурсы DriveItem наследуют разрешения от своих предков.
 
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей**:
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite.
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Делегированные (личная учетная запись Майкрософт) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Для приложений | Files.ReadWrite.All, Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -114,9 +116,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="http-response"></a>HTTP-отклик
+## <a name="http-response"></a>HTTP-ответ
 
-Если для элемента создается новая ссылка совместного доступа, возвращается код отклика `201 Created`, а если возвращается существующая ссылка — код `200 OK`.
+Если для элемента создается новая ссылка для общего доступа, возвращается код ответа `201 Created`, а если возвращается существующая ссылка — код `200 OK`.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 ```http
