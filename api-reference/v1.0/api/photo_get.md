@@ -1,14 +1,39 @@
-<span data-ttu-id="a3322-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a3322-p101">Bearer {token}. Required.</span></span>  | Bearer {токен}. Обязательный. |
+# <a name="get-photo"></a><span data-ttu-id="d236a-101">Получение фотографии</span><span class="sxs-lookup"><span data-stu-id="d236a-101">Get photo</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="a3322-117">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a3322-117">Request body</span></span>
-<span data-ttu-id="a3322-118">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a3322-118">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d236a-102">Получение свойств и связей объекта фотографии.</span><span class="sxs-lookup"><span data-stu-id="d236a-102">Retrieve the properties and relationships of photo object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d236a-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d236a-103">Permissions</span></span>
+<span data-ttu-id="d236a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d236a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="a3322-119">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3322-119">Response</span></span>
+|<span data-ttu-id="d236a-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d236a-106">Permission type</span></span>      | <span data-ttu-id="d236a-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d236a-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="d236a-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d236a-108">Delegated (work or school account)</span></span> | <span data-ttu-id="d236a-109">Files.Read</span><span class="sxs-lookup"><span data-stu-id="d236a-109">Files.Read</span></span>    | 
+|<span data-ttu-id="d236a-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d236a-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d236a-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="d236a-111">Files.Read</span></span>    | 
+|<span data-ttu-id="d236a-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d236a-112">Application</span></span> | <span data-ttu-id="d236a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d236a-113">Not supported.</span></span> | 
 
-<span data-ttu-id="a3322-120">В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a3322-120">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a3322-121">Пример</span><span class="sxs-lookup"><span data-stu-id="a3322-121">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a3322-122">Запрос</span><span class="sxs-lookup"><span data-stu-id="a3322-122">Request</span></span>
-<span data-ttu-id="a3322-123">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a3322-123">Here is an example of the request.</span></span>
+## <a name="http-request"></a><span data-ttu-id="d236a-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d236a-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id | userPrincipalName}/photo
+GET /groups/{id}/photo
+GET /drive/root/createdByUser/photo
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="d236a-115">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d236a-115">Optional query parameters</span></span>
+<span data-ttu-id="d236a-116">Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d236a-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="d236a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d236a-117">Request headers</span></span>
+| <span data-ttu-id="d236a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="d236a-118">Name</span></span>       | <span data-ttu-id="d236a-119">Тип</span><span class="sxs-lookup"><span data-stu-id="d236a-119">Type</span></span> | <span data-ttu-id="d236a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="d236a-120">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="d236a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d236a-121">Authorization</span></span>  | <span data-ttu-id="d236a-122">string</span><span class="sxs-lookup"><span data-stu-id="d236a-122">string</span></span>  | <span data-ttu-id="d236a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d236a-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="d236a-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d236a-125">Request body</span></span>
+<span data-ttu-id="d236a-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d236a-126">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="d236a-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="d236a-127">Response</span></span>
+
+<span data-ttu-id="d236a-128">В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d236a-128">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d236a-129">Пример</span><span class="sxs-lookup"><span data-stu-id="d236a-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d236a-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="d236a-130">Request</span></span>
+<span data-ttu-id="d236a-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d236a-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -16,8 +41,8 @@
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a><span data-ttu-id="a3322-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3322-124">Response</span></span>
-<span data-ttu-id="a3322-125">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a3322-125">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="d236a-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="d236a-132">Response</span></span>
+<span data-ttu-id="d236a-133">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="d236a-133">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

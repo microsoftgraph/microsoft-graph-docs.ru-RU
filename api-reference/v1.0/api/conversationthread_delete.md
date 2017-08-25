@@ -1,10 +1,37 @@
-<span data-ttu-id="29d23-p102">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="29d23-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+# <a name="delete-conversationthread"></a><span data-ttu-id="551da-101">Удаление объекта conversationThread</span><span class="sxs-lookup"><span data-stu-id="551da-101">Delete conversationThread</span></span>
 
-В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
+<span data-ttu-id="551da-102">Удаление объекта conversationThread.</span><span class="sxs-lookup"><span data-stu-id="551da-102">Delete conversationThread.</span></span>
+## <a name="permissions"></a><span data-ttu-id="551da-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="551da-103">Permissions</span></span>
+<span data-ttu-id="551da-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="551da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="29d23-117">Пример</span><span class="sxs-lookup"><span data-stu-id="29d23-117">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="29d23-118">Запрос</span><span class="sxs-lookup"><span data-stu-id="29d23-118">Request</span></span>
-<span data-ttu-id="29d23-119">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="29d23-119">Here is an example of the request.</span></span>
+|<span data-ttu-id="551da-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="551da-106">Permission type</span></span>      | <span data-ttu-id="551da-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="551da-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="551da-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="551da-108">Delegated (work or school account)</span></span> | <span data-ttu-id="551da-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="551da-109">Group.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="551da-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="551da-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="551da-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="551da-111">Not supported.</span></span>    | 
+|<span data-ttu-id="551da-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="551da-112">Application</span></span> | <span data-ttu-id="551da-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="551da-113">Group.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="551da-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="551da-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /groups/{id}/threads/{id}
+DELETE /groups/{id}/conversations/{id}/threads/{id}
+
+```
+## <a name="request-headers"></a><span data-ttu-id="551da-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="551da-115">Request headers</span></span>
+| <span data-ttu-id="551da-116">Заголовок</span><span class="sxs-lookup"><span data-stu-id="551da-116">Header</span></span>       | <span data-ttu-id="551da-117">Значение</span><span class="sxs-lookup"><span data-stu-id="551da-117">Value</span></span> |
+|:---------------|:--------|
+| <span data-ttu-id="551da-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="551da-118">Authorization</span></span>  | <span data-ttu-id="551da-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="551da-p102">Bearer {token}. Required.</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="551da-121">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="551da-121">Request body</span></span>
+<span data-ttu-id="551da-122">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="551da-122">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="551da-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="551da-123">Response</span></span>
+
+<span data-ttu-id="551da-p103">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="551da-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="551da-126">Пример</span><span class="sxs-lookup"><span data-stu-id="551da-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="551da-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="551da-127">Request</span></span>
+<span data-ttu-id="551da-128">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="551da-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_conversationthread"
@@ -12,8 +39,8 @@
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="29d23-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="29d23-120">Response</span></span>
-<span data-ttu-id="29d23-121">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="29d23-121">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="551da-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="551da-129">Response</span></span>
+<span data-ttu-id="551da-130">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="551da-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

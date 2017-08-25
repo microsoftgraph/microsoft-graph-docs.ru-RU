@@ -1,5 +1,57 @@
-<span data-ttu-id="9c2f6-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9c2f6-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+# <a name="list-serviceconfigurationrecords"></a><span data-ttu-id="19317-101">Перечисление serviceConfigurationRecords</span><span class="sxs-lookup"><span data-stu-id="19317-101">List serviceConfigurationRecords</span></span>
+
+<span data-ttu-id="19317-102">Получение списка объектов [domainDnsRecord](../resources/domaindnsrecord.md), которые требуются, чтобы включить службы для домена.</span><span class="sxs-lookup"><span data-stu-id="19317-102">Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.</span></span>
+
+<span data-ttu-id="19317-p101">Используйте возвращенный список для добавления записей в файле зоны домена. Это можно сделать с помощью регистратора доменных имен или путем настройки DNS-сервера.</span><span class="sxs-lookup"><span data-stu-id="19317-p101">Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="19317-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="19317-105">Permissions</span></span>
+
+<span data-ttu-id="19317-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="19317-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+
+|<span data-ttu-id="19317-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="19317-108">Permission type</span></span>      | <span data-ttu-id="19317-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="19317-109">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="19317-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="19317-110">Delegated (work or school account)</span></span> | <span data-ttu-id="19317-111">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="19317-111">Directory.Read.All</span></span>    | 
+|<span data-ttu-id="19317-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="19317-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19317-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="19317-113">Not supported.</span></span>    | 
+|<span data-ttu-id="19317-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="19317-114">Application</span></span> | <span data-ttu-id="19317-115">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="19317-115">Directory.Read.All, Domain.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="19317-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="19317-116">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /domains/contoso.com/serviceConfigurationRecords
+```
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="19317-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="19317-117">Optional query parameters</span></span>
+
+<span data-ttu-id="19317-118">Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="19317-118">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="19317-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="19317-119">Request headers</span></span>
+
+| <span data-ttu-id="19317-120">Имя</span><span class="sxs-lookup"><span data-stu-id="19317-120">Name</span></span>      |<span data-ttu-id="19317-121">Описание</span><span class="sxs-lookup"><span data-stu-id="19317-121">Description</span></span>|
+|:----------|:----------|
+| <span data-ttu-id="19317-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="19317-122">Authorization</span></span>  | <span data-ttu-id="19317-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="19317-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="19317-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="19317-125">Content-Type</span></span>  | <span data-ttu-id="19317-126">application/json</span><span class="sxs-lookup"><span data-stu-id="19317-126">application/json</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="19317-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="19317-127">Request body</span></span>
+
+<span data-ttu-id="19317-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="19317-128">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="19317-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="19317-129">Response</span></span>
+
+<span data-ttu-id="19317-130">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="19317-130">If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="19317-131">Пример</span><span class="sxs-lookup"><span data-stu-id="19317-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="19317-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="19317-132">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_serviceconfigurationrecords"
+}-->
+```http
+GET https://graph.microsoft.com/V1.0/domains/contoso.com/serviceConfigurationRecords
+```
+##### <a name="response"></a><span data-ttu-id="19317-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="19317-133">Response</span></span>
+<span data-ttu-id="19317-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="19317-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

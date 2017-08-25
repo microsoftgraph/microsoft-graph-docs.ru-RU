@@ -1,6 +1,57 @@
-<span data-ttu-id="df1ec-p102">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="df1ec-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="list-group-settings"></a><span data-ttu-id="466ec-101">Перечисление параметров группы</span><span class="sxs-lookup"><span data-stu-id="466ec-101">List group settings</span></span>
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+<span data-ttu-id="466ec-102">Получение списка, включающего объекты параметров группы.</span><span class="sxs-lookup"><span data-stu-id="466ec-102">Retrieve a list of group setting objects.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="466ec-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="466ec-103">Permissions</span></span>
+
+<span data-ttu-id="466ec-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="466ec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+
+|<span data-ttu-id="466ec-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="466ec-106">Permission type</span></span>      | <span data-ttu-id="466ec-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="466ec-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="466ec-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="466ec-108">Delegated (work or school account)</span></span> | <span data-ttu-id="466ec-109">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="466ec-109">One of the following scopes is required to execute this API: Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All</span></span>    | 
+|<span data-ttu-id="466ec-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="466ec-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="466ec-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="466ec-111">Not supported.</span></span>    | 
+|<span data-ttu-id="466ec-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="466ec-112">Application</span></span> | <span data-ttu-id="466ec-113">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="466ec-113">Directory.Read.All, Directory.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="466ec-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="466ec-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+
+<span data-ttu-id="466ec-115">Перечисление параметров на уровне клиента или отдельной группы.</span><span class="sxs-lookup"><span data-stu-id="466ec-115">List tenant-wide or group settings.</span></span>
+
+```http
+GET /groupSettings
+GET group/{id}/settings
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="466ec-116">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="466ec-116">Optional query parameters</span></span>
+<span data-ttu-id="466ec-117">Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="466ec-117">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
+
+> <span data-ttu-id="466ec-118">Примечание. $filter не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="466ec-118">Note: $filter is not supported.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="466ec-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="466ec-119">Request headers</span></span>
+| <span data-ttu-id="466ec-120">Имя</span><span class="sxs-lookup"><span data-stu-id="466ec-120">Name</span></span> | <span data-ttu-id="466ec-121">Описание</span><span class="sxs-lookup"><span data-stu-id="466ec-121">Description</span></span> |
+|:----------|:----------|
+| <span data-ttu-id="466ec-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="466ec-122">Authorization</span></span>  | <span data-ttu-id="466ec-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="466ec-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="466ec-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="466ec-125">Request body</span></span>
+<span data-ttu-id="466ec-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="466ec-126">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="466ec-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="466ec-127">Response</span></span>
+
+<span data-ttu-id="466ec-128">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupSetting](../resources/groupsetting.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="466ec-128">If successful, this method returns a `200 OK` response code and collection of [groupSetting](../resources/groupsetting.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="466ec-129">Пример</span><span class="sxs-lookup"><span data-stu-id="466ec-129">Example</span></span>
+
+##### <a name="request"></a><span data-ttu-id="466ec-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="466ec-130">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_groupsettings"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groupSettings
+```
+##### <a name="response"></a><span data-ttu-id="466ec-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="466ec-131">Response</span></span>
+
+<span data-ttu-id="466ec-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="466ec-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

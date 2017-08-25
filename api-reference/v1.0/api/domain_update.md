@@ -1,13 +1,45 @@
-<span data-ttu-id="94a8c-p102">В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.</span><span class="sxs-lookup"><span data-stu-id="94a8c-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
+# <a name="update-domain"></a><span data-ttu-id="b2d67-101">Обновление домена</span><span class="sxs-lookup"><span data-stu-id="b2d67-101">Update domain</span></span>
 
-В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.
+<span data-ttu-id="b2d67-102">Обновление свойств объекта домена.</span><span class="sxs-lookup"><span data-stu-id="b2d67-102">Update the properties of domain object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="94a8c-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="94a8c-120">Response</span></span>
+> <span data-ttu-id="b2d67-103">**Важно!** Можно обновить только проверенные домены.</span><span class="sxs-lookup"><span data-stu-id="b2d67-103">**Important:** Only verified domains can be updated.</span></span>
 
-<span data-ttu-id="94a8c-121">При успешном выполнении этот метод возвращает код отклика `204 No Content` и не возвращает тело отклика.</span><span class="sxs-lookup"><span data-stu-id="94a8c-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b2d67-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b2d67-104">Permissions</span></span>
 
-## <a name="example"></a><span data-ttu-id="94a8c-122">Пример</span><span class="sxs-lookup"><span data-stu-id="94a8c-122">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="94a8c-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="94a8c-123">Request</span></span>
+<span data-ttu-id="b2d67-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="b2d67-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+
+|<span data-ttu-id="b2d67-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b2d67-107">Permission type</span></span>      | <span data-ttu-id="b2d67-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b2d67-108">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="b2d67-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b2d67-109">Delegated (work or school account)</span></span> | <span data-ttu-id="b2d67-110">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b2d67-110">Directory.AccessAsUser.All</span></span>    | 
+|<span data-ttu-id="b2d67-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b2d67-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b2d67-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b2d67-112">Not supported.</span></span>    | 
+|<span data-ttu-id="b2d67-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b2d67-113">Application</span></span> | <span data-ttu-id="b2d67-114">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b2d67-114">Domain.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="b2d67-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b2d67-115">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /domains/{id}
+```
+
+> <span data-ttu-id="b2d67-116">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="b2d67-116">For {id}, specify the domain with its fully qualified domain name.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="b2d67-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b2d67-117">Request headers</span></span>
+
+| <span data-ttu-id="b2d67-118">Имя</span><span class="sxs-lookup"><span data-stu-id="b2d67-118">Name</span></span>       | <span data-ttu-id="b2d67-119">Описание</span><span class="sxs-lookup"><span data-stu-id="b2d67-119">Description</span></span>|
+|:-----------|:-----------|
+| <span data-ttu-id="b2d67-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b2d67-120">Authorization</span></span>  | <span data-ttu-id="b2d67-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b2d67-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b2d67-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b2d67-123">Content-Type</span></span>  | <span data-ttu-id="b2d67-124">application/json</span><span class="sxs-lookup"><span data-stu-id="b2d67-124">application/json</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="b2d67-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b2d67-125">Request body</span></span>
+
+<span data-ttu-id="b2d67-p103">В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.</span><span class="sxs-lookup"><span data-stu-id="b2d67-p103">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
+
+## <a name="response"></a><span data-ttu-id="b2d67-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="b2d67-129">Response</span></span>
+
+<span data-ttu-id="b2d67-130">При успешном выполнении этот метод возвращает код отклика `204 No Content` и не возвращает тело отклика.</span><span class="sxs-lookup"><span data-stu-id="b2d67-130">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="b2d67-131">Пример</span><span class="sxs-lookup"><span data-stu-id="b2d67-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b2d67-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="b2d67-132">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -26,7 +58,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="94a8c-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="94a8c-124">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b2d67-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="b2d67-133">Response</span></span>
 
 <!-- {
   "blockType": "response",

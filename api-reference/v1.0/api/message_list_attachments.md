@@ -1,5 +1,57 @@
-<span data-ttu-id="4e2e9-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="4e2e9-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+# <a name="list-attachments"></a><span data-ttu-id="9b20f-101">Список вложений</span><span class="sxs-lookup"><span data-stu-id="9b20f-101">List attachments</span></span>
+
+<span data-ttu-id="9b20f-102">Получение списка объектов [attachment](../resources/attachment.md), вложенных в сообщение.</span><span class="sxs-lookup"><span data-stu-id="9b20f-102">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9b20f-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9b20f-103">Permissions</span></span>
+<span data-ttu-id="9b20f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="9b20f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="9b20f-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9b20f-106">Permission type</span></span>      | <span data-ttu-id="9b20f-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9b20f-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="9b20f-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9b20f-108">Delegated (work or school account)</span></span> | <span data-ttu-id="9b20f-109">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9b20f-109">Mail.Read</span></span>    | 
+|<span data-ttu-id="9b20f-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9b20f-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9b20f-111">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9b20f-111">Mail.Read</span></span>    | 
+|<span data-ttu-id="9b20f-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9b20f-112">Application</span></span> | <span data-ttu-id="9b20f-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9b20f-113">Mail.Read</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="9b20f-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9b20f-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="9b20f-115">Вложения [сообщения](../resources/message.md) в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="9b20f-115">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+```http
+GET /me/messages/{id}/attachments
+GET /users/{id | userPrincipalName}/messages/{id}/attachments
+```
+<span data-ttu-id="9b20f-116">Вложения [сообщения](../resources/message.md) в папке [mailFolder](../resources/mailfolder.md) верхнего уровня в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="9b20f-116">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+```http
+GET /me/mailFolders/{id}/messages/{id}/attachments
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
+```
+<span data-ttu-id="9b20f-p102">Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.</span><span class="sxs-lookup"><span data-stu-id="9b20f-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+```http
+GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="9b20f-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9b20f-119">Optional query parameters</span></span>
+<span data-ttu-id="9b20f-120">Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9b20f-120">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9b20f-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9b20f-121">Request headers</span></span>
+| <span data-ttu-id="9b20f-122">Имя</span><span class="sxs-lookup"><span data-stu-id="9b20f-122">Name</span></span>       | <span data-ttu-id="9b20f-123">Тип</span><span class="sxs-lookup"><span data-stu-id="9b20f-123">Type</span></span> | <span data-ttu-id="9b20f-124">Описание</span><span class="sxs-lookup"><span data-stu-id="9b20f-124">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="9b20f-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="9b20f-125">Authorization</span></span>  | <span data-ttu-id="9b20f-126">string</span><span class="sxs-lookup"><span data-stu-id="9b20f-126">string</span></span>  | <span data-ttu-id="9b20f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9b20f-p103">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="9b20f-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9b20f-129">Request body</span></span>
+<span data-ttu-id="9b20f-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9b20f-130">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="9b20f-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="9b20f-131">Response</span></span>
+
+<span data-ttu-id="9b20f-132">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9b20f-132">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9b20f-133">Пример</span><span class="sxs-lookup"><span data-stu-id="9b20f-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9b20f-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="9b20f-134">Request</span></span>
+<span data-ttu-id="9b20f-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9b20f-135">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_attachments"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
+```
+##### <a name="response"></a><span data-ttu-id="9b20f-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="9b20f-136">Response</span></span>
+<span data-ttu-id="9b20f-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="9b20f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
