@@ -2,8 +2,14 @@
 
 Получение списка объектов licenseDetails.
 
-## <a name="prerequisites"></a>Обязательные условия
-Для применения этого API требуется одна из следующих **областей**: *User.Read*, *User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All или Directory.AccessAsUser.All*.
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Делегированные (личная учетная запись Майкрософт) | User.Read    | 
+|Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

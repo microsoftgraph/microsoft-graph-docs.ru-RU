@@ -2,18 +2,18 @@
 
 Удаление подписки.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="permissions"></a>Разрешения
 
-В таблице ниже перечислены рекомендуемые разрешения, которые требуются для каждого ресурса.
+В приведенной ниже таблице перечислены рекомендуемые разрешения для каждого ресурса. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-| Тип ресурса / Элемент        | Область               |
+| Тип ресурса или элемент        | Разрешение          |
 |-----------------------------|---------------------|
-| Контакты                    | Contacts.Read       |
-| Беседы               | Group.Read.All      |
-| События                      | Calendars.Read      |
-| Сообщения                    | Mail.Read           |
-| Диск (хранилище OneDrive пользователя)    | Files.ReadWrite.     |
-| Диски (контент и диски в SharePoint, к которым предоставлен общий доступ) | Files.ReadWrite.All |
+| Contacts                    | Contacts.Read       |
+| Conversations               | Group.Read.All      |
+| Events                      | Calendars.Read      |
+| Messages                    | Mail.Read           |
+| Drive (хранилище OneDrive пользователя)    | Files.ReadWrite.     |
+| Drives (контент и библиотеки документов в SharePoint, к которым предоставлен общий доступ) | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -6,13 +6,13 @@
 
 > **Примечание.** Эта операция в версии 1.0 поддерживает только рабочие или учебные почтовые ящики пользователя (не личные).
 
-## <a name="prerequisites"></a>Необходимые компоненты
-Для применения этого API требуется одна из указанных **областей** (в зависимости от типа фотографии):
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-*   Фотография профиля любого пользователя в клиенте, в том числе пользователя, вошедшего в систему: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*.
-*   Фотография профиля конкретного пользователя, вошедшего в систему: *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*.
-* Фотография профиля **группы** - *Group.Read.All; Group.ReadWrite.All*.
-* Фотография **контакта** - *Contacts.ReadWrite*.
+*   Фотография профиля любого пользователя в клиенте, в том числе вошедшего пользователя: User.ReadBasic.All, User.Read.All, User.ReadWrite.All.
+*   Фотография конкретного вошедшего пользователя: User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All.
+* Фотография профиля **группы**: Group.Read.All, Group.ReadWrite.All.
+* Фотография **контакта**: Contacts.Read, Contacts.ReadWrite.
 
 ## <a name="http-request-to-get-the-photo"></a>HTTP-запрос для получения фотографии
 <!-- { "blockType": "ignored" } -->
@@ -43,9 +43,9 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте основной текст запроса для этого метода.
 ## <a name="response-for-getting-the-photo"></a>Отклик для запроса на получение фотографии
 При успешном выполнении этот метод возвращает код отклика `200 OK` и двоичные данные запрашиваемой фотографии.  Если фотография не существует, операция возвратит отклик `404 Not Found`.

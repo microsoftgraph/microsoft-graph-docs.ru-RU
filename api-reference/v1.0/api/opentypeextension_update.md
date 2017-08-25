@@ -5,20 +5,19 @@
 - Если свойство в теле запроса совпадает с именем существующего свойства в расширении, то данные в расширении будут обновлены.
 - В противном случае это свойство и его данные будут добавлены в расширение. 
 
-Данные в расширении могут относиться к элементарным типам или массиву элементарных типов.
+Данные в расширении могут относиться к элементарным типам или массивам элементарных типов.
 
+## <a name="permissions"></a>Разрешения
 
-## <a name="prerequisites"></a>Обязательные условия
-
-Для применения этого API требуется одно из указанных ниже **разрешений** (в зависимости от ресурса, в котором создано расширение).
+Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, в котором создано расширение). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [contact](../resources/contact.md) (личный контакт) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+| [device](../resources/device.md) | Device.ReadWrite.All | [event](../resources/event.md) | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | [event](../resources/event.md) для групп | Group.ReadWrite.All |
+| [post](../resources/post.md) для групп | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite |
+| [user](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>HTTP-запрос
 В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `PATCH` для этого экземпляра расширения.

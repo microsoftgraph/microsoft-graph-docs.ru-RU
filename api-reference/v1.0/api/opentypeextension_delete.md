@@ -2,19 +2,18 @@
 
 Удаление открытого расширения (объекта [openTypeExtension](../resources/openTypeExtension.md)) из указанного экземпляра ресурса. 
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="permissions"></a>Разрешения
 
-Для выполнения этого API требуется одно из указанных **разрешений** (в зависимости от ресурса, из которого удаляется расширение):
+Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, из которого удаляется расширение). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [contact](../resources/contact.md) (личный контакт) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+| [device](../resources/device.md) | Device.ReadWrite.All | [event](../resources/event.md) | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | [event](../resources/event.md) для групп | Group.ReadWrite.All |
+| [post](../resources/post.md) для групп | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite |
+| [user](../resources/user.md) | Directory.AccessAsUser.All | | |
 
- 
 ## <a name="http-request"></a>HTTP-запрос
 В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `DELETE` для этого экземпляра расширения.
 

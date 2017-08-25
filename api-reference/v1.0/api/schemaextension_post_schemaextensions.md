@@ -6,8 +6,15 @@
 
 Ознакомьтесь с примерами того, как [определить расширение схемы, описывающее учебный курс](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course), использовать определение расширения схемы для [создания группы с данными учебного курса](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data) и [добавить данные учебного курса в существующую группу](../../../concepts/extensibility_schema_groups.md#4-add-update-or-remove-custom-data-in-an-existing-group).
 
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется следующая **область**: *Directory.AccessAsUser.All*
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    | 
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | 
+|Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

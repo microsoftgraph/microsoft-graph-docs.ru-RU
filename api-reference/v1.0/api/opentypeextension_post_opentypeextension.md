@@ -1,20 +1,18 @@
 # <a name="create-open-extension"></a>Создание открытого расширения
 
-Создание открытого расширения (объекта [openTypeExtension](../resources/openTypeExtension.md)) и добавление пользовательских свойств в новый или существующий экземпляр ресурса. 
+Создание открытого расширения (объекта [openTypeExtension](../resources/openTypeExtension.md)) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса. 
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="permissions"></a>Разрешения
 
-Для выполнения этого API требуется одно из указанных **разрешений** (в зависимости от ресурса, в котором создается расширение):
+Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, в котором создается расширение). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [contact](../resources/contact.md) (личный контакт) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
-
-
+| [device](../resources/device.md) | Device.ReadWrite.All | [event](../resources/event.md) | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | [event](../resources/event.md) для групп | Group.ReadWrite.All |
+| [post](../resources/post.md) для групп | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite |
+| [user](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -97,7 +95,7 @@ POST /users/{id|userPrincipalName}/extensions
 
 
 ## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+##### <a name="request-1"></a>Запрос 1
 
 В первом примере сообщение и расширение создаются в одном запросе. Текст запроса включает следующие данные:
 

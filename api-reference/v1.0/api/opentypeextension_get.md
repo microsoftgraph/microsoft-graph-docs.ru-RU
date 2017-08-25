@@ -11,17 +11,17 @@
 |Поиск экземпляров ресурсов и их дополнение определенным расширением. |Event, group event, group post, message, personal contact|Экземпляры ресурса, дополненные открытым расширением.|
 
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="permissions"></a>Разрешения
 
-Для выполнения этого API требуется одно из указанных ниже **разрешений** (в зависимости от ресурса, содержащего расширение).
+Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, содержащего расширение). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
 |:-----|:-----|:-----|:-----|
-| [Device](../resources/device.md) | _Directory.Read.All_ | [Event](../resources/event.md) | _Calendars.Read_ | 
-| [Group](../resources/group.md) | _Group.Read.All_ | [Group event](../resources/event.md) | _Group.Read.All_ | 
-| [Group post](../resources/post.md) | _Group.Read.All_ | [Message](../resources/message.md) | _Mail.Read_ | 
-| [Organization](../resources/organization.md) | _Directory.Read.All_ | [contact](../resources/contact.md) (личный контакт) | _Contacts.Read_ |
-| [User](../resources/user.md) | _User.Read.All_ | | |
+| [Device](../resources/device.md) | Directory.Read.All | [Event](../resources/event.md) | Calendars.Read | 
+| [Group](../resources/group.md) | Group.Read.All | [Event](../resources/event.md) для групп | Group.Read.All | 
+| [Post](../resources/post.md) для групп | Group.Read.All | [Message](../resources/message.md) | Mail.Read | 
+| [Organization](../resources/organization.md) | Directory.Read.All | [Contact](../resources/contact.md) (личный контакт) | Contacts.Read |
+| [User](../resources/user.md) | User.Read.All | | |
 
 
 

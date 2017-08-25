@@ -1,8 +1,15 @@
 # <a name="get-device"></a>Получение устройства
 
 Получение свойств и связей объекта устройства.
-## <a name="prerequisites"></a>Предварительные условия
-Для выполнения этого API требуется одно из следующих **разрешений**: *Device.ReadWrite.All*, *Directory.Read.All*, *Directory.ReadWrite.All* или *Directory.AccessAsUser.All*
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | 
+|Для приложений | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
