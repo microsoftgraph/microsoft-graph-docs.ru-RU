@@ -1,17 +1,16 @@
-# <a name="patternedrecurrence-resource-type"></a>Тип ресурса patternedRecurrence
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="51070-101">Тип ресурса patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="51070-101">patternedRecurrence resource type</span></span>
 
-Расписание и диапазон повторения.
+<span data-ttu-id="51070-102">Расписание и диапазон повторения.</span><span class="sxs-lookup"><span data-stu-id="51070-102">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="51070-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="51070-103">Properties</span></span>
+| <span data-ttu-id="51070-104">Свойство</span><span class="sxs-lookup"><span data-stu-id="51070-104">Property</span></span>     | <span data-ttu-id="51070-105">Тип</span><span class="sxs-lookup"><span data-stu-id="51070-105">Type</span></span>   |<span data-ttu-id="51070-106">Описание</span><span class="sxs-lookup"><span data-stu-id="51070-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|pattern|[RecurrencePattern](recurrencepattern.md)|Частота события.|
-|range|[RecurrenceRange](recurrencerange.md)|Продолжительность события.|
+|<span data-ttu-id="51070-107">pattern</span><span class="sxs-lookup"><span data-stu-id="51070-107">pattern</span></span>|[<span data-ttu-id="51070-108">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="51070-108">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="51070-109">Частота события.</span><span class="sxs-lookup"><span data-stu-id="51070-109">The frequency of an event.</span></span>|
+|<span data-ttu-id="51070-110">range</span><span class="sxs-lookup"><span data-stu-id="51070-110">range</span></span>|[<span data-ttu-id="51070-111">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="51070-111">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="51070-112">Продолжительность события.</span><span class="sxs-lookup"><span data-stu-id="51070-112">The duration of an event.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="51070-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="51070-113">JSON representation</span></span>
 
-## <a name="json-representation"></a>Представление JSON
-
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="51070-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="51070-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,16 +1,16 @@
-# <a name="create-page"></a><span data-ttu-id="c1ffe-101">Создание страницы</span><span class="sxs-lookup"><span data-stu-id="c1ffe-101">Create page</span></span>
+# <a name="create-page"></a><span data-ttu-id="74fe4-101">Создание страницы</span><span class="sxs-lookup"><span data-stu-id="74fe4-101">Create page</span></span>
 
-<span data-ttu-id="c1ffe-102">Создание объекта [page](../resources/page.md) в указанном разделе.</span><span class="sxs-lookup"><span data-stu-id="c1ffe-102">Create a new [page](../resources/page.md) in the specified section.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c1ffe-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c1ffe-103">Permissions</span></span>
-<span data-ttu-id="c1ffe-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c1ffe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="74fe4-102">Создание объекта [page](../resources/page.md) в указанном разделе.</span><span class="sxs-lookup"><span data-stu-id="74fe4-102">Create a new [page](../resources/page.md) in the specified section.</span></span>
+## <a name="permissions"></a><span data-ttu-id="74fe4-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="74fe4-103">Permissions</span></span>
+<span data-ttu-id="74fe4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="74fe4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="c1ffe-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c1ffe-106">Permission type</span></span>      | <span data-ttu-id="c1ffe-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c1ffe-107">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="c1ffe-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c1ffe-108">Delegated (work or school account)</span></span> | <span data-ttu-id="c1ffe-109">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c1ffe-109">Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="c1ffe-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c1ffe-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c1ffe-111">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c1ffe-111">Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="c1ffe-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c1ffe-112">Application</span></span> | <span data-ttu-id="c1ffe-113">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c1ffe-113">Notes.ReadWrite.All</span></span> | 
+|<span data-ttu-id="74fe4-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="74fe4-106">Permission type</span></span>      | <span data-ttu-id="74fe4-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="74fe4-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="74fe4-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="74fe4-108">Delegated (work or school account)</span></span> | <span data-ttu-id="74fe4-109">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74fe4-109">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="74fe4-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="74fe4-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74fe4-111">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="74fe4-111">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="74fe4-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="74fe4-112">Application</span></span> | <span data-ttu-id="74fe4-113">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74fe4-113">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c1ffe-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c1ffe-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="74fe4-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="74fe4-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sections/{id}/pages
@@ -18,24 +18,24 @@ POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
 POST /sites/{id}/onenote/sections/{id}/pages
 ```
-## <a name="request-headers"></a><span data-ttu-id="c1ffe-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c1ffe-115">Request headers</span></span>
-| <span data-ttu-id="c1ffe-116">Имя</span><span class="sxs-lookup"><span data-stu-id="c1ffe-116">Name</span></span>       | <span data-ttu-id="c1ffe-117">Тип</span><span class="sxs-lookup"><span data-stu-id="c1ffe-117">Type</span></span> | <span data-ttu-id="c1ffe-118">Описание</span><span class="sxs-lookup"><span data-stu-id="c1ffe-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="74fe4-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="74fe4-115">Request headers</span></span>
+| <span data-ttu-id="74fe4-116">Имя</span><span class="sxs-lookup"><span data-stu-id="74fe4-116">Name</span></span>       | <span data-ttu-id="74fe4-117">Тип</span><span class="sxs-lookup"><span data-stu-id="74fe4-117">Type</span></span> | <span data-ttu-id="74fe4-118">Описание</span><span class="sxs-lookup"><span data-stu-id="74fe4-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="c1ffe-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="c1ffe-119">Authorization</span></span>  | <span data-ttu-id="c1ffe-120">string</span><span class="sxs-lookup"><span data-stu-id="c1ffe-120">string</span></span>  | <span data-ttu-id="c1ffe-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c1ffe-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c1ffe-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c1ffe-123">Content-Type</span></span> | <span data-ttu-id="c1ffe-124">string</span><span class="sxs-lookup"><span data-stu-id="c1ffe-124">string</span></span> | <span data-ttu-id="c1ffe-p103">`text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="c1ffe-p103">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
+| <span data-ttu-id="74fe4-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="74fe4-119">Authorization</span></span>  | <span data-ttu-id="74fe4-120">string</span><span class="sxs-lookup"><span data-stu-id="74fe4-120">string</span></span>  | <span data-ttu-id="74fe4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="74fe4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="74fe4-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="74fe4-123">Content-Type</span></span> | <span data-ttu-id="74fe4-124">string</span><span class="sxs-lookup"><span data-stu-id="74fe4-124">string</span></span> | <span data-ttu-id="74fe4-p103">`text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="74fe4-p103">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c1ffe-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c1ffe-127">Request body</span></span>
-<span data-ttu-id="c1ffe-128">В тексте запроса укажите HTML-содержимое страницы.</span><span class="sxs-lookup"><span data-stu-id="c1ffe-128">In the request body, supply the page HTML content.</span></span>
+## <a name="request-body"></a><span data-ttu-id="74fe4-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="74fe4-127">Request body</span></span>
+<span data-ttu-id="74fe4-128">В тексте запроса укажите HTML-содержимое страницы.</span><span class="sxs-lookup"><span data-stu-id="74fe4-128">In the request body, supply the page HTML content.</span></span>
 
-<span data-ttu-id="c1ffe-p104">Текст может содержать HTML-код, размещенный прямо в тексте запроса, либо формат составного сообщения, как показано в примере. Если вы отправляете двоичные данные, необходимо отправить составной запрос.</span><span class="sxs-lookup"><span data-stu-id="c1ffe-p104">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
+<span data-ttu-id="74fe4-p104">Текст может содержать HTML-код, размещенный прямо в тексте запроса, либо формат составного сообщения, как показано в примере. Если вы отправляете двоичные данные, необходимо отправить составной запрос.</span><span class="sxs-lookup"><span data-stu-id="74fe4-p104">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c1ffe-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1ffe-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="74fe4-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="74fe4-131">Response</span></span>
 
-<span data-ttu-id="c1ffe-132">В случае успешного выполнения этот метод возвращает код ответа `201 Created` и новый объект [page](../resources/page.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="c1ffe-132">If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
+<span data-ttu-id="74fe4-132">В случае успешного выполнения этот метод возвращает код ответа `201 Created` и новый объект [page](../resources/page.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="74fe4-132">If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c1ffe-133">Пример</span><span class="sxs-lookup"><span data-stu-id="c1ffe-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c1ffe-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="c1ffe-134">Request</span></span>
-<span data-ttu-id="c1ffe-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c1ffe-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="74fe4-133">Пример</span><span class="sxs-lookup"><span data-stu-id="74fe4-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="74fe4-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="74fe4-134">Request</span></span>
+<span data-ttu-id="74fe4-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="74fe4-135">Here is an example of the request.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -77,8 +77,8 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-##### <a name="response"></a><span data-ttu-id="c1ffe-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1ffe-136">Response</span></span>
-<span data-ttu-id="c1ffe-p105">Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c1ffe-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="74fe4-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="74fe4-136">Response</span></span>
+<span data-ttu-id="74fe4-p105">Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="74fe4-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

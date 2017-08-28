@@ -1,38 +1,38 @@
-# <a name="accessing-shared-driveitems"></a><span data-ttu-id="1884b-101">Доступ к общим элементам DriveItem</span><span class="sxs-lookup"><span data-stu-id="1884b-101">Accessing shared DriveItems</span></span>
+# <a name="accessing-shared-driveitems"></a><span data-ttu-id="a78c1-101">Доступ к общим элементам DriveItem</span><span class="sxs-lookup"><span data-stu-id="a78c1-101">Accessing shared DriveItems</span></span>
 
-<span data-ttu-id="1884b-102">Вы можете получить доступ к общим элементам [DriveItem](../resources/driveitem.md) или коллекции общих элементов, используя параметр **shareId** или URL-адрес для совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="1884b-102">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
+<span data-ttu-id="a78c1-102">Вы можете получить доступ к общим элементам [DriveItem](../resources/driveitem.md) или коллекции общих элементов, используя параметр **shareId** или URL-адрес для совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="a78c1-102">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
 
-<span data-ttu-id="1884b-103">Чтобы использовать URL-адрес для совместного доступа с этим API, вашему приложению необходимо [преобразовать URL-адрес в токен общего доступа](#transform-a-sharing-url).</span><span class="sxs-lookup"><span data-stu-id="1884b-103">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#transform-a-sharing-url).</span></span>
+<span data-ttu-id="a78c1-103">Чтобы использовать URL-адрес для совместного доступа с этим API, вашему приложению необходимо [преобразовать URL-адрес в токен общего доступа](#transform-a-sharing-url).</span><span class="sxs-lookup"><span data-stu-id="a78c1-103">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#transform-a-sharing-url).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1884b-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1884b-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a78c1-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a78c1-104">Permissions</span></span>
 
-<span data-ttu-id="1884b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="1884b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="a78c1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="a78c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="1884b-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1884b-107">Permission type</span></span>      | <span data-ttu-id="1884b-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1884b-108">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="1884b-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1884b-109">Delegated (work or school account)</span></span> | <span data-ttu-id="1884b-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1884b-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="1884b-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1884b-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1884b-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1884b-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="1884b-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1884b-113">Application</span></span> | <span data-ttu-id="1884b-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1884b-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> | 
+|<span data-ttu-id="a78c1-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a78c1-107">Permission type</span></span>      | <span data-ttu-id="a78c1-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a78c1-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="a78c1-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a78c1-109">Delegated (work or school account)</span></span> | <span data-ttu-id="a78c1-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a78c1-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a78c1-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a78c1-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a78c1-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a78c1-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a78c1-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a78c1-113">Application</span></span> | <span data-ttu-id="a78c1-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a78c1-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1884b-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1884b-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a78c1-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a78c1-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /shares/{sharingIdOrUrl}
 ```
 
-## <a name="request-body"></a><span data-ttu-id="1884b-116">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1884b-116">Request body</span></span>
-<span data-ttu-id="1884b-117">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1884b-117">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a78c1-116">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a78c1-116">Request body</span></span>
+<span data-ttu-id="a78c1-117">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a78c1-117">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1884b-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="1884b-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a78c1-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="a78c1-118">Response</span></span>
 
-<span data-ttu-id="1884b-119">При успешном выполнении этот метод возвращает код отклика `200 OK` и ресурс [sharedDriveItem](../resources/shareddriveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1884b-119">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="a78c1-119">При успешном выполнении этот метод возвращает код отклика `200 OK` и ресурс [sharedDriveItem](../resources/shareddriveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a78c1-119">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1884b-120">Пример</span><span class="sxs-lookup"><span data-stu-id="1884b-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a78c1-120">Пример</span><span class="sxs-lookup"><span data-stu-id="a78c1-120">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1884b-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="1884b-121">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a78c1-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="a78c1-121">Request</span></span>
 
-<span data-ttu-id="1884b-122">Вот пример запроса для получения общего элемента:</span><span class="sxs-lookup"><span data-stu-id="1884b-122">Here is an example of the request to retrieve a shared item:</span></span>
+<span data-ttu-id="a78c1-122">Вот пример запроса для получения общего элемента:</span><span class="sxs-lookup"><span data-stu-id="a78c1-122">Here is an example of the request to retrieve a shared item:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -41,9 +41,9 @@ GET /shares/{sharingIdOrUrl}
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
 ```
-##### <a name="response"></a><span data-ttu-id="1884b-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="1884b-123">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a78c1-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="a78c1-123">Response</span></span>
 
-<span data-ttu-id="1884b-124">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1884b-124">Here is an example of the response.</span></span>
+<span data-ttu-id="a78c1-124">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a78c1-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -65,21 +65,21 @@ Content-type: application/json
 }
 ```
 
-## <a name="access-the-shared-item-directly"></a><span data-ttu-id="1884b-125">Прямой доступ к общему элементу</span><span class="sxs-lookup"><span data-stu-id="1884b-125">Access the shared item directly</span></span>
+## <a name="access-the-shared-item-directly"></a><span data-ttu-id="a78c1-125">Прямой доступ к общему элементу</span><span class="sxs-lookup"><span data-stu-id="a78c1-125">Access the shared item directly</span></span>
 
-<span data-ttu-id="1884b-p102">Так как элемент [**SharedDriveItem**](../resources/shareddriveitem.md) содержит полезную информацию, большинство приложений будут стремиться получить прямой доступ к общему элементу [DriveItem](../resources/driveitem.md). Ресурс **SharedDriveItem** включает связи **корня** и **элементов**, которые могут получать доступ к содержимому в области общего элемента.</span><span class="sxs-lookup"><span data-stu-id="1884b-p102">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
+<span data-ttu-id="a78c1-p102">Так как элемент [**SharedDriveItem**](../resources/shareddriveitem.md) содержит полезную информацию, большинство приложений будут стремиться получить прямой доступ к общему элементу [DriveItem](../resources/driveitem.md). Ресурс **SharedDriveItem** включает связи **корня** и **элементов**, которые могут получать доступ к содержимому в области общего элемента.</span><span class="sxs-lookup"><span data-stu-id="a78c1-p102">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
-## <a name="example-single-file"></a><span data-ttu-id="1884b-128">Пример (один файл)</span><span class="sxs-lookup"><span data-stu-id="1884b-128">Example (single file)</span></span>
+## <a name="example-single-file"></a><span data-ttu-id="a78c1-128">Пример (один файл)</span><span class="sxs-lookup"><span data-stu-id="a78c1-128">Example (single file)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1884b-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="1884b-129">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a78c1-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="a78c1-129">Request</span></span>
 
-<span data-ttu-id="1884b-130">При запросе связи **корня** будет возвращен элемент **DriveItem**, к которому был предоставлен доступ.</span><span class="sxs-lookup"><span data-stu-id="1884b-130">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
+<span data-ttu-id="a78c1-130">При запросе связи **корня** будет возвращен элемент **DriveItem**, к которому был предоставлен доступ.</span><span class="sxs-lookup"><span data-stu-id="a78c1-130">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
 ```
 
-##### <a name="response"></a><span data-ttu-id="1884b-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="1884b-131">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a78c1-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="a78c1-131">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -94,17 +94,17 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-shared-folder"></a><span data-ttu-id="1884b-132">Пример (общая папка)</span><span class="sxs-lookup"><span data-stu-id="1884b-132">Example (shared folder)</span></span>
+## <a name="example-shared-folder"></a><span data-ttu-id="a78c1-132">Пример (общая папка)</span><span class="sxs-lookup"><span data-stu-id="a78c1-132">Example (shared folder)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1884b-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="1884b-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a78c1-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="a78c1-133">Request</span></span>
 
-<span data-ttu-id="1884b-134">При запросе связи **корня** и расширении **дочерней** коллекции будет возвращен элемент **DriveItem**, к которому был предоставлен доступ, а также файлы в общей папке.</span><span class="sxs-lookup"><span data-stu-id="1884b-134">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
+<span data-ttu-id="a78c1-134">При запросе связи **корня** и расширении **дочерней** коллекции будет возвращен элемент **DriveItem**, к которому был предоставлен доступ, а также файлы в общей папке.</span><span class="sxs-lookup"><span data-stu-id="a78c1-134">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
 ```
 
-##### <a name="response"></a><span data-ttu-id="1884b-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="1884b-135">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a78c1-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="a78c1-135">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -133,19 +133,19 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a><span data-ttu-id="1884b-136">Преобразование URL-адреса для совместного доступа</span><span class="sxs-lookup"><span data-stu-id="1884b-136">Transform a sharing URL</span></span>
+## <a name="transform-a-sharing-url"></a><span data-ttu-id="a78c1-136">Преобразование URL-адреса для совместного доступа</span><span class="sxs-lookup"><span data-stu-id="a78c1-136">Transform a sharing URL</span></span>
 
-<span data-ttu-id="1884b-137">Чтобы получить доступ к URL-адресу для совместного доступа с помощью API **общих ресурсов**, необходимо преобразовать URL-адрес в токен для совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="1884b-137">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
+<span data-ttu-id="a78c1-137">Чтобы получить доступ к URL-адресу для совместного доступа с помощью API **общих ресурсов**, необходимо преобразовать URL-адрес в токен для совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="a78c1-137">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
 
-<span data-ttu-id="1884b-138">Чтобы преобразовать URL-адрес в токен для совместного доступа, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="1884b-138">To transform a URL into a sharing token:</span></span>
+<span data-ttu-id="a78c1-138">Чтобы преобразовать URL-адрес в токен для совместного доступа, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="a78c1-138">To transform a URL into a sharing token:</span></span>
 
-1. <span data-ttu-id="1884b-139">Закодируйте URL-адрес для общего доступа с использованием кодировки Base64.</span><span class="sxs-lookup"><span data-stu-id="1884b-139">Base64 encode the sharing URL.</span></span>
-2. <span data-ttu-id="1884b-140">Преобразуйте данные в кодировке Base64 в [формат URL-адреса с недополненной кодировкой Base64](https://en.wikipedia.org/wiki/Base64), выполнив указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="1884b-140">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
-  1. <span data-ttu-id="1884b-141">Удалите символы `=` в конце строки.</span><span class="sxs-lookup"><span data-stu-id="1884b-141">Trim trailing `=` characters from the string</span></span>
-  2. <span data-ttu-id="1884b-142">Замените небезопасные символы URL-адреса на эквивалентные символы; замените `/` на `_`, а `+` — на `-`.</span><span class="sxs-lookup"><span data-stu-id="1884b-142">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
-3. <span data-ttu-id="1884b-143">Добавьте `u!` в начало строки.</span><span class="sxs-lookup"><span data-stu-id="1884b-143">Append `u!` to the beginning of the string.</span></span>
+1. <span data-ttu-id="a78c1-139">Закодируйте URL-адрес для общего доступа с использованием кодировки Base64.</span><span class="sxs-lookup"><span data-stu-id="a78c1-139">Base64 encode the sharing URL.</span></span>
+2. <span data-ttu-id="a78c1-140">Преобразуйте данные в кодировке Base64 в [формат URL-адреса с недополненной кодировкой Base64](https://en.wikipedia.org/wiki/Base64), выполнив указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="a78c1-140">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
+  1. <span data-ttu-id="a78c1-141">Удалите символы `=` в конце строки.</span><span class="sxs-lookup"><span data-stu-id="a78c1-141">Trim trailing `=` characters from the string</span></span>
+  2. <span data-ttu-id="a78c1-142">Замените небезопасные символы URL-адреса на эквивалентные символы; замените `/` на `_`, а `+` — на `-`.</span><span class="sxs-lookup"><span data-stu-id="a78c1-142">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
+3. <span data-ttu-id="a78c1-143">Добавьте `u!` в начало строки.</span><span class="sxs-lookup"><span data-stu-id="a78c1-143">Append `u!` to the beginning of the string.</span></span>
 
-<span data-ttu-id="1884b-144">Например, указанный ниже метод C# преобразует входную строку в токен общего доступа.</span><span class="sxs-lookup"><span data-stu-id="1884b-144">For example, the following C# method transforms an input string into a sharing token:</span></span>
+<span data-ttu-id="a78c1-144">Например, указанный ниже метод C# преобразует входную строку в токен общего доступа.</span><span class="sxs-lookup"><span data-stu-id="a78c1-144">For example, the following C# method transforms an input string into a sharing token:</span></span>
 
 ```csharp
 string UrlToSharingToken(string inputUrl) {

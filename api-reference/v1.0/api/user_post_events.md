@@ -1,22 +1,22 @@
-# <a name="create-event"></a><span data-ttu-id="2439f-101">Создание события</span><span class="sxs-lookup"><span data-stu-id="2439f-101">Create Event</span></span>
+# <a name="create-event"></a><span data-ttu-id="5f868-101">Создание события</span><span class="sxs-lookup"><span data-stu-id="5f868-101">Create Event</span></span>
 
-<span data-ttu-id="2439f-102">Создайте [событие](../resources/event.md) в календаре пользователя по умолчанию или указанном календаре.</span><span class="sxs-lookup"><span data-stu-id="2439f-102">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
+<span data-ttu-id="5f868-102">Создайте [событие](../resources/event.md) в календаре пользователя по умолчанию или указанном календаре.</span><span class="sxs-lookup"><span data-stu-id="5f868-102">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
 
-<span data-ttu-id="2439f-103">В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md).</span><span class="sxs-lookup"><span data-stu-id="2439f-103">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
+<span data-ttu-id="5f868-103">В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md).</span><span class="sxs-lookup"><span data-stu-id="5f868-103">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
 
-<span data-ttu-id="2439f-104">При создании события сервер отправляет приглашения всем участникам.</span><span class="sxs-lookup"><span data-stu-id="2439f-104">When the event is created, the server send invitations to all attendees.</span></span>
+<span data-ttu-id="5f868-104">При создании события сервер отправляет приглашения всем участникам.</span><span class="sxs-lookup"><span data-stu-id="5f868-104">When the event is created, the server send invitations to all attendees.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="2439f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2439f-105">Permissions</span></span>
-<span data-ttu-id="2439f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="2439f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5f868-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5f868-105">Permissions</span></span>
+<span data-ttu-id="5f868-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="5f868-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="2439f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2439f-108">Permission type</span></span>      | <span data-ttu-id="2439f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2439f-109">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="2439f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2439f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2439f-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2439f-111">Calendars.ReadWrite</span></span>    | 
-|<span data-ttu-id="2439f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2439f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2439f-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2439f-113">Calendars.ReadWrite</span></span>    | 
-|<span data-ttu-id="2439f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2439f-114">Application</span></span> | <span data-ttu-id="2439f-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2439f-115">Calendars.ReadWrite</span></span> | 
+|<span data-ttu-id="5f868-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5f868-108">Permission type</span></span>      | <span data-ttu-id="5f868-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5f868-109">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="5f868-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5f868-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5f868-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5f868-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="5f868-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5f868-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5f868-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5f868-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="5f868-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5f868-114">Application</span></span> | <span data-ttu-id="5f868-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5f868-115">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2439f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2439f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5f868-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5f868-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events
@@ -28,24 +28,24 @@ POST /users/{id | userPrincipalName}/calendar/events
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
 ```
-## <a name="request-headers"></a><span data-ttu-id="2439f-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2439f-117">Request headers</span></span>
-| <span data-ttu-id="2439f-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2439f-118">Header</span></span>       | <span data-ttu-id="2439f-119">Значение</span><span class="sxs-lookup"><span data-stu-id="2439f-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="5f868-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5f868-117">Request headers</span></span>
+| <span data-ttu-id="5f868-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="5f868-118">Header</span></span>       | <span data-ttu-id="5f868-119">Значение</span><span class="sxs-lookup"><span data-stu-id="5f868-119">Value</span></span> |
 |:-----------|:------|
-| <span data-ttu-id="2439f-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2439f-120">Authorization</span></span>  | <span data-ttu-id="2439f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2439f-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2439f-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2439f-123">Content-Type</span></span>  | <span data-ttu-id="2439f-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2439f-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="5f868-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5f868-120">Authorization</span></span>  | <span data-ttu-id="5f868-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5f868-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5f868-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5f868-123">Content-Type</span></span>  | <span data-ttu-id="5f868-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5f868-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2439f-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2439f-126">Request body</span></span>
-<span data-ttu-id="2439f-127">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2439f-127">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5f868-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5f868-126">Request body</span></span>
+<span data-ttu-id="5f868-127">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5f868-127">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-<span data-ttu-id="2439f-128">Так как ресурс **event** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к событию при его создании.</span><span class="sxs-lookup"><span data-stu-id="2439f-128">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
+<span data-ttu-id="5f868-128">Так как ресурс **event** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к событию при его создании.</span><span class="sxs-lookup"><span data-stu-id="5f868-128">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2439f-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="2439f-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5f868-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="5f868-129">Response</span></span>
 
-<span data-ttu-id="2439f-130">В случае успеха этот метод возвращает код ответа `201, Created` и объект [event](../resources/event.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="2439f-130">If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+<span data-ttu-id="5f868-130">В случае успеха этот метод возвращает код ответа `201, Created` и объект [event](../resources/event.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="5f868-130">If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2439f-131">Пример</span><span class="sxs-lookup"><span data-stu-id="2439f-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2439f-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="2439f-132">Request</span></span>
-<span data-ttu-id="2439f-p104">Ниже приведен пример запроса. В нем используется заголовок запроса `Prefer: outlook.timezone`, чтобы указать, что для параметров времени **start** и **end** в ответе следует использовать этот часовой пояс.</span><span class="sxs-lookup"><span data-stu-id="2439f-p104">Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response should use that time zone.</span></span>
+## <a name="example"></a><span data-ttu-id="5f868-131">Пример</span><span class="sxs-lookup"><span data-stu-id="5f868-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5f868-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="5f868-132">Request</span></span>
+<span data-ttu-id="5f868-p104">Ниже приведен пример запроса. В нем используется заголовок запроса `Prefer: outlook.timezone`, чтобы указать, что для параметров времени **start** и **end** в ответе следует использовать этот часовой пояс.</span><span class="sxs-lookup"><span data-stu-id="5f868-p104">Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response should use that time zone.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -84,9 +84,9 @@ Content-length: 600
   ]
 }
 ```
-<span data-ttu-id="2439f-135">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2439f-135">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="2439f-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="2439f-136">Response</span></span>
-<span data-ttu-id="2439f-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="2439f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="5f868-135">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5f868-135">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="5f868-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="5f868-136">Response</span></span>
+<span data-ttu-id="5f868-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="5f868-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -167,10 +167,10 @@ Content-length: 2197
     }
 }
 ```
-## <a name="see-also"></a><span data-ttu-id="2439f-140">См. также</span><span class="sxs-lookup"><span data-stu-id="2439f-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5f868-140">См. также</span><span class="sxs-lookup"><span data-stu-id="5f868-140">See also</span></span>
 
-- [<span data-ttu-id="2439f-141">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="2439f-141">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="2439f-142">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="2439f-142">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="5f868-141">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="5f868-141">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="5f868-142">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="5f868-142">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

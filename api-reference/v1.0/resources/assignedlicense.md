@@ -1,17 +1,16 @@
-# <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
+# <a name="assignedlicense-resource-type"></a><span data-ttu-id="02580-101">Тип ресурса assignedLicense</span><span class="sxs-lookup"><span data-stu-id="02580-101">assignedLicense resource type</span></span>
 
-Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта [user](user.md) представляет собой коллекцию объектов **assignedLicense**.
+<span data-ttu-id="02580-p101">Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта [user](user.md) представляет собой коллекцию объектов **assignedLicense**.</span><span class="sxs-lookup"><span data-stu-id="02580-p101">Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="02580-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="02580-104">Properties</span></span>
+| <span data-ttu-id="02580-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="02580-105">Property</span></span>     | <span data-ttu-id="02580-106">Тип</span><span class="sxs-lookup"><span data-stu-id="02580-106">Type</span></span>   |<span data-ttu-id="02580-107">Описание</span><span class="sxs-lookup"><span data-stu-id="02580-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|disabledPlans|Коллекция объектов Guid|Коллекция уникальных идентификаторов отключенных планов.|
-|skuId|Guid|Уникальный идентификатор SKU.|
+|<span data-ttu-id="02580-108">disabledPlans</span><span class="sxs-lookup"><span data-stu-id="02580-108">disabledPlans</span></span>|<span data-ttu-id="02580-109">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="02580-109">Guid collection</span></span>|<span data-ttu-id="02580-110">Коллекция уникальных идентификаторов отключенных планов.</span><span class="sxs-lookup"><span data-stu-id="02580-110">A collection of the unique identifiers for plans that have been disabled.</span></span>|
+|<span data-ttu-id="02580-111">skuId</span><span class="sxs-lookup"><span data-stu-id="02580-111">skuId</span></span>|<span data-ttu-id="02580-112">Guid</span><span class="sxs-lookup"><span data-stu-id="02580-112">Guid</span></span>|<span data-ttu-id="02580-113">Уникальный идентификатор SKU.</span><span class="sxs-lookup"><span data-stu-id="02580-113">The unique identifier for the SKU.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="02580-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="02580-114">JSON representation</span></span>
 
-## <a name="json-representation"></a>Представление JSON
-
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="02580-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="02580-115">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
