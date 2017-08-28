@@ -1,20 +1,16 @@
-<a id="plannertaskdetails-resource-type" class="xliff"></a>
-# Тип ресурса plannerTaskDetails
+# <a name="plannertaskdetails-resource-type"></a>Тип ресурса plannerTaskDetails
 
 Ресурс **plannerTaskDetails** представляет дополнительные сведения о задаче. С каждым объектом [task](plannertask.md) связан объект details.
 
 
-<a id="methods" class="xliff"></a>
-## Методы
+## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта plannerTaskDetails](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |Чтение свойств и отношений объекта **plannerTaskDetails**.|
 |[Обновление](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Обновление объекта **plannerTaskDetails**. |
 
-
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
@@ -23,13 +19,11 @@
 |previewType|string|Устанавливает тип эскиза задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
-<a id="relationships" class="xliff"></a>
-## Отношения
+## <a name="relationships"></a>Отношения
 Нет
 
 
-<a id="json-representation" class="xliff"></a>
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

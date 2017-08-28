@@ -20,7 +20,6 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 

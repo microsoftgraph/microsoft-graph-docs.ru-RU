@@ -10,8 +10,6 @@
 | displayName  | String | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный адрес электронной почты для расположения.              |
 
-
-
 ## <a name="json-representation"></a>Представление в формате JSON
 
 <!-- {

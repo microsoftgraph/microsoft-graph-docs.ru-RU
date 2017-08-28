@@ -12,7 +12,7 @@
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список событий](../api/user_list_events.md)|Коллекция [event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
+|[Список событий](../api/user_list_events.md)|Коллекция объектов [event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
 |[Создание события](../api/user_post_events.md) |[event](event.md)| Создание события путем записи в коллекцию экземпляров.|
 |[Получение события](../api/event_get.md) | [event](event.md) |Считывание свойств и отношений объекта event.|
 |[Обновление](../api/event_update.md) | [event](event.md) |Обновление объекта event. |
@@ -35,8 +35,6 @@
 |[Получение события с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | Получение событий, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем событии.  |
 |[Получение события с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | Получение события, которое содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |
-
-
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -78,15 +76,14 @@
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileAttachment.md) и [itemAttachment](itemAttachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
-|календарь|[calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|
+|attachments|Коллекция объектов [attachment](attachment.md)|Коллекция вложений [fileAttachment](fileAttachment.md) и [itemAttachment](itemAttachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
+|calendar|[calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для события. Только для чтения. Допускается значение null.|
-|instances|Коллекция [event](event.md)|Экземпляры события. Свойство навигации. Только для чтения. Допускается значение null.|
+|instances|Коллекция объектов [event](event.md)|Экземпляры события. Свойство навигации. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для события. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для события. Только для чтения. Допускается значение null.|
 
-
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже этот ресурс представлен в формате JSON.
 

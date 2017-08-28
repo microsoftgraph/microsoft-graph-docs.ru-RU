@@ -5,12 +5,11 @@
 Тип, производный от [attendeeBase](attendeebase.md).
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Ответ участника (нет, принято, отклонено и т. д.) на событие, а также дата и время отправки ответа.|
 |type|String|Тип участника: `Required`, `Optional`, `Resource`.|
 |emailAddress|[emailAddress](emailAddress.md)|Включает имя и SMTP-адрес участника.|
-
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

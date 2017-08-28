@@ -10,20 +10,17 @@
 |Получение экземпляра известного ресурса, дополненного определенным расширением.|Device, event, group, group event, group post, message, organization, personal contact, user |Экземпляр известного ресурса, дополненный открытым расширением.|
 |Поиск экземпляров ресурсов и их дополнение определенным расширением. |Event, group event, group post, message, personal contact|Экземпляры ресурса, дополненные открытым расширением.|
 
-
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, содержащего расширение). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
 |:-----|:-----|:-----|:-----|
-| [Device](../resources/device.md) | Directory.Read.All | [Event](../resources/event.md) | Calendars.Read | 
-| [Group](../resources/group.md) | Group.Read.All | [Event](../resources/event.md) для групп | Group.Read.All | 
-| [Post](../resources/post.md) для групп | Group.Read.All | [Message](../resources/message.md) | Mail.Read | 
+| [Device](../resources/device.md) | Directory.Read.All | [Event](../resources/event.md) | Calendars.Read |
+| [Group](../resources/group.md) | Group.Read.All | [Event](../resources/event.md) для групп | Group.Read.All |
+| [Post](../resources/post.md) для групп | Group.Read.All | [Message](../resources/message.md) | Mail.Read |
 | [Organization](../resources/organization.md) | Directory.Read.All | [Contact](../resources/contact.md) (личный контакт) | Contacts.Read |
 | [User](../resources/user.md) | User.Read.All | | |
-
-
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -93,7 +90,6 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |Id|string|Заполнитель уникального идентификатора для объекта в соответствующей коллекции, например сообщения, события или контакта. Обязательный. Не следует путать его со свойством **id** объекта **openTypeExtension**.|
 |extensionId|string|Заполнитель имени расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полного имени, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве **id** при создании расширения. Обязательный.|
 
-
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Убедитесь, что вы применяете [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке `$filter`.
@@ -101,15 +97,13 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |**Имя**|**Значение**|**Описание**|
 |:---------------|:--------|:-------|
 |$filter|string|Возвращает расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
-|$filter с **любым** оператором|string|Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.| 
+|$filter с **любым** оператором|string|Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
 |$expand|string|Дополняет экземпляр ресурса расширением. |
-
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
-
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.

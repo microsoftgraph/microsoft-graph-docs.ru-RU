@@ -24,12 +24,11 @@
 |[Список вложений для записи](../api/post_list_attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для записи. |
 |[Удаление](../api/attachment_delete.md) | Нет |Удаление объекта, представляющего вложение, которое было добавлено к сообщению, записи или данным о событии. |
 
-
 ## <a name="properties"></a>Свойства
 
 Ниже перечислены базовые свойства любого ресурса attachment. Чтобы просмотреть дополнительные свойства, откройте статью о конкретном типе вложения ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) или [referenceAttachment](../resources/referenceAttachment.md)).
 
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип MIME.|
 |id|String| Только для чтения.|

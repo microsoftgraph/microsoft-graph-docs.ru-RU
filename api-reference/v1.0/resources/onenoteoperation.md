@@ -28,7 +28,7 @@
 
 ```
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
 |error|[onenoteOperationError](onenoteoperationerror.md)|Ошибка при выполнении операции.|
@@ -48,7 +48,6 @@
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение операции](../api/onenoteoperation_get.md) | [onenoteOperation](onenoteoperation.md) |Получение состояния операции. |
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

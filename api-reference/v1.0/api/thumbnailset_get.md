@@ -24,7 +24,6 @@ GET /drives/{id}/root/thumbnails/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 

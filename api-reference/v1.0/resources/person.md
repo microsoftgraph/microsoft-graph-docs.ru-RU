@@ -9,7 +9,6 @@
 |[List people](../api/user_list_people.md) | **person** |Получение коллекции объектов person, упорядоченных по их релевантности для [пользователя](../resources/user.md).|
 |[Get person](../api/person_get.md) | **person** |Получение свойств и связей объекта person.|
 
-
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|

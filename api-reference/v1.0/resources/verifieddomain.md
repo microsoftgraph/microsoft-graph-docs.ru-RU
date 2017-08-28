@@ -4,14 +4,13 @@
 
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |capabilities|String|Примеры: “Email”, “OfficeCommunicationsOnline”.|
 |isDefault|Boolean|                Значение **true** указывает, что это связанный с клиентом домен по умолчанию. В противном случае используется значение **false**.            |
 |isInitial|Boolean|Значение **true** указывает, что это первоначальный домен, связанный с клиентом. В противном случае используется значение **false**.|
 |name|String|Доменное имя, например "contoso.onmicrosoft.com"|
 |type|String|Пример: "Managed".|
-
 
 ## <a name="json-representation"></a>Представление JSON
 

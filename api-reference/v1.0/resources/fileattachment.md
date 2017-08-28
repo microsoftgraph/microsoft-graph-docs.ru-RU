@@ -16,9 +16,8 @@
 |[Получение](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Чтение свойств и связей объекта fileAttachment.|
 |[Удаление](../api/attachment_delete.md) | Нет |Удаление объекта fileAttachment. |
 
-
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentBytes|Двоичный доступ|Двоичное содержимое файла.|
 |contentId|String|Идентификатор вложения в хранилище Exchange.|

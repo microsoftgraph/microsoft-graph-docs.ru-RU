@@ -4,14 +4,13 @@
 
 ## <a name="properties"></a>Свойства
 
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |endDate|Date|Дата окончания ряда.|
 |numberOfOccurrences|Int32|Количество повторений события.|
 |recurrenceTimeZone|String |Часовой пояс для свойств **startDate** и **endDate**. |
 |startDate|Date|Дата начала ряда.|
 |type|String|Диапазон повторения: EndDate = 0, NoEnd = 1, Numbered = 2. Возможные значения: `EndDate`, `NoEnd`, `Numbered`.||
-
 
 ## <a name="json-representation"></a>Представление JSON
 

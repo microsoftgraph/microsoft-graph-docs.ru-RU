@@ -4,11 +4,11 @@
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.ReadWrite    | 
-|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.ReadWrite    | 
-|Для приложений | Calendars.Read, Calendars.ReadWrite | 
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.ReadWrite    |
+|Для приложений | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json | 
+| Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.

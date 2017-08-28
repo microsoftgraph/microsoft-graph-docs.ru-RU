@@ -18,7 +18,7 @@
 | [post](../resources/post.md) для групп | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
 | [organization](../resources/organization.md) | Directory.AccessAsUser.All | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite |
 | [user](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>HTTP-запрос
 В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `PATCH` для этого экземпляра расширения.
 
@@ -46,7 +46,6 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 |_Параметры URL-адреса_|
 |id|string|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
 |extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
-
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |

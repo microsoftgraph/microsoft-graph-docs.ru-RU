@@ -22,11 +22,11 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.ReadWrite    | 
-|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.ReadWrite    | 
-|Для приложений | Calendars.Read, Calendars.ReadWrite | 
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.ReadWrite    |
+|Для приложений | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | string | Часовой пояс по умолчанию для событий, указанных в отклике. Необязательный. | 
+| Prefer: outlook.timezone | string | Часовой пояс по умолчанию для событий, указанных в отклике. Необязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.

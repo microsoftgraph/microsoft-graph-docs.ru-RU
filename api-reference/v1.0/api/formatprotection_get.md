@@ -21,7 +21,6 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 

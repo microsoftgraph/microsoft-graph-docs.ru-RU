@@ -4,12 +4,11 @@
 
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|Пример: "Enabled".|
 |provisioningStatus|String|Пример: "Success".|
 |service|String|Имя службы, например “AccessControlS2S”.|
-
 
 ## <a name="json-representation"></a>Представление JSON
 

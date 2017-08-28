@@ -159,7 +159,6 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 

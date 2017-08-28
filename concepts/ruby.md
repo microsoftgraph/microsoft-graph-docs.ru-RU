@@ -285,7 +285,7 @@
 3. Введите адрес `http://localhost:3000` в веб-браузере.
 
 ## <a name="see-also"></a>См. также
-- Попробуйте REST API, используя [песочницу Graph](https://graph.microsoft.io/graph-explorer).
+- Попробуйте REST API, используя [песочницу Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Просмотрите другие [примеры Microsoft Graph](https://github.com/microsoftgraph) на сайте GitHub.
 
 

@@ -1,9 +1,7 @@
-<a id="rangeview-resource-type" class="xliff"></a>
-# Тип ресурсов rangeView
+# <a name="rangeview-resource-type"></a>Тип ресурсов rangeView
 Объект rangeView представляет набор видимых ячеек в родительском диапазоне.
 
-<a id="methods" class="xliff"></a>
-## Методы
+## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
@@ -11,9 +9,7 @@
 |[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|Получение видимой ячейки из диапазона с учетом индекса.|
 |[Диапазон](../api/workbookrangeview_range.md)|[workbookRange](range.md)|Возвращение экземпляра range, связанного с ресурсом rangeView.|
 
-
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columnCount|Int32|Возвращает количество видимых столбцов. Только для чтения.|
@@ -27,14 +23,12 @@
 |valueTypes|Json|Представляет тип данных каждой ячейки. Только для чтения. Возможные значения: Unknown, Empty, String, Integer, Double, Boolean, Error. |
 |values|Json|Представляет необработанные значения указанного объекта rangeView. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.   |
 
-<a id="relationships" class="xliff"></a>
-## Связи
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |rows|Коллекция [workbookRangeView](workbookrangeview.md)| Представляет коллекцию видимых ячеек в диапазоне, сопоставленных с указанным диапазоном. Только для чтения.    Только для чтения.|
 
-<a id="json-representation" class="xliff"></a>
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

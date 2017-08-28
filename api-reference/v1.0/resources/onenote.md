@@ -43,7 +43,6 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 |sectionGroups|Коллекция [SectionGroup](sectiongroup.md)|Группы разделов во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускает значение null.|
 |sections|Коллекция [Section](section.md)|Разделы во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
 
-
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|

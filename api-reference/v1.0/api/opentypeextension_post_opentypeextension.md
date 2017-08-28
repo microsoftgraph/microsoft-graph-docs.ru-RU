@@ -13,7 +13,7 @@
 | [post](../resources/post.md) для групп | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
 | [organization](../resources/organization.md) | Directory.AccessAsUser.All | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite |
 | [user](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>HTTP-запрос
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>Создание расширения в новом экземпляре ресурса
@@ -60,7 +60,6 @@ POST /users/{id|userPrincipalName}/extensions
 |_Параметры URL-адреса_|
 |id|string|Уникальный идентификатор объекта в соответствующей коллекции. Обязательный.|
 
-
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
@@ -91,11 +90,9 @@ POST /users/{id|userPrincipalName}/extensions
 | Создание расширения с явным созданием _нового_ экземпляра ресурса | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Включает новый экземпляр, дополненный объектом [openTypeExtension](../resources/openTypeExtension.md). |
 | Создание расширения с неявным созданием экземпляра ресурса | [post](../resources/post.md) | Ответ содержит только код ответа без текста. |
 | Создание расширения в _существующем_ экземпляре ресурса | Все поддерживаемые ресурсы | Включает объект **openTypeExtension**. |
- 
-
 
 ## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+##### <a name="request-1"></a>Запрос 1
 
 В первом примере сообщение и расширение создаются в одном запросе. Текст запроса включает следующие данные:
 
