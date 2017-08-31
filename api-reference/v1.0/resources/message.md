@@ -40,7 +40,6 @@
 |[Создание многозначного расширенного свойства](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [message](message.md) | Создание одного или нескольких многозначных расширенных свойств в новом или существующем сообщении.  |
 |[Получение сообщения с многозначным расширенным свойством](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | Получение сообщения, которое содержит многозначное расширенное свойство, с помощью `$expand`. |
 
-
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -95,8 +94,7 @@ Prefer: outlook.allow-unsafe-html
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Только для чтения. Допускается значение null.|
 
-
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже этот ресурс представлен в формате JSON.
 

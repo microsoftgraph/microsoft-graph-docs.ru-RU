@@ -1,8 +1,15 @@
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 Возвращение диапазона, связанного с ресурсом rangeView.
 
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуются такие **области**: _Files.Read, Files.ReadWrite_.
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -18,8 +25,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/r
 
 ## <a name="request-body"></a>Текст запроса
 
-## <a name="response"></a>Отклик
-
+### <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200, OK` и объект [workbookRange](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример

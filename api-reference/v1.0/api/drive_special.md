@@ -6,24 +6,27 @@
 
 Когда приложение впервые пробует записать что-то в специальную папку, она создается автоматически, если не была создана ранее. Если пользователь удалил такую папку, она создается повторно при записи в нее.
 
-**Примечание.**  Если у вас есть разрешения только на чтение и вы запрашиваете несуществующую специальную папку, возвратится сообщение об ошибке `403 Forbidden`.
+>**Примечание.**  Если у вас есть разрешения только для чтения и вы запрашиваете несуществующую специальную папку, возвратится сообщение об ошибке `403 Forbidden`.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Делегированные (рабочая или учебная учетная запись) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
-|Делегированные (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Files.ReadWrite.AppFolder    | 
-|Для приложений | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
+|Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                           |
+|:--------------------------------------|:------------------------------------------------------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Files.ReadWrite.AppFolder           |
+|Для приложений                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/special/{name}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+
+Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand` и `$select` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -31,8 +34,8 @@ GET /me/drive/special/{name}
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -42,6 +45,7 @@ GET /me/drive/special/{name}
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса на получение списка дисков пользователя.
 
 <!-- {
@@ -74,7 +78,7 @@ Content-type: application/json
 
 ## <a name="remarks"></a>Заметки
 
-Чтобы получить список дочерних элементов для специальной папки, можно запросить коллекцию `children` или с помощью параметра [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) развернуть этот список.
+Чтобы получить список дочерних элементов для специальной папки, можно запросить коллекцию `children` или с помощью параметра [$expand](../../../concepts/query_parameters.md) развернуть этот список.
 
 
 <!-- {

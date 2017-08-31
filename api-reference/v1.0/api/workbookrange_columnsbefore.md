@@ -1,6 +1,7 @@
-# <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
+# <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
-Получает объект диапазона, связанный со строкой итогов столбца.
+Возвращает определенное количество столбцов слева от заданного диапазона.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -13,20 +14,25 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowRange
+POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
+| Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="parameters"></a>Параметры
 
-## <a name="response"></a>Отклик
+| Параметр    | Тип   |Описание|
+|:---------------|:--------|:----------|
+|count|Int32|Количество столбцов, которые нужно включить в результирующий диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.|
 
-В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
+## <a name="request-body"></a>Тело запроса
+
+### <a name="response"></a>Отклик
+В случае успеха этот метод возвращает код отклика `200, OK` и объект [workbookRange](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -34,10 +40,10 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowR
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "tablecolumn_totalrowrange"
+  "name": "workbookrange_columnsbefore"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/TotalRowRange
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 
 ##### <a name="response"></a>Ответ
@@ -50,24 +56,14 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "TableColumn: TotalRowRange",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
