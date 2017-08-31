@@ -22,7 +22,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 
 В API Microsoft Graph также есть методы и действия, которые поддерживают основные варианты использования сообщений.
 
-| Варианты использования           | Ресурсы REST    | См. также |
+| Варианты использования        | Ресурсы REST | См. также |
 |:---------------|:--------|:----------|
 | **Действия, ориентированные на пользователя** | | |
 | Создание, чтение, ответ, пересылка, отправка, обновление или удаление сообщений | [message](../resources/message.md) | [Методы ресурса message](../resources/message.md#methods) |
@@ -39,14 +39,11 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 | Добавление пользовательских данных приложения в сообщение с помощью расширений | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md) |
 | Доступ к пользовательским данным для редко предоставляемых свойств Outlook MAPI | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Общие сведения о расширенных свойствах Outlook](../resources/extended-properties-overview.md) |
 
-
-
-
 ## <a name="next-steps"></a>Дальнейшие действия
 API почты открывает новые способы взаимодействия с пользователями: 
 
 - Узнайте больше о [методах](../resources/message.md#methods), [свойствах](../resources/message.md#properties) и [отношениях](../resources/message.md#relationships) ресурсов [message](../resources/message.md) и [mailFolder](../resources/mailfolder.md).
-- Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
 

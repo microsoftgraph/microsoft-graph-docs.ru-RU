@@ -15,7 +15,8 @@
 [Обновление свойства inferenceClassification сообщения](../api/message_update.md)
 
 
-**Единообразная классификация сообщений от определенных отправителей с помощью переопределений**
+**Единообразная классификация сообщений от определенных отправителей с помощью переопределения**
 
-[Применение переопределения для отправителя](../api/inferenceclassification_post_overrides.md) | [Список всех переопределений пользователя](../api/inferenceclassification_list_overrides.md) | 
+[Создание операции переопределения для отправителя](../api/inferenceclassification_post_overrides.md) | [Перечисление всех операций переопределения для пользователей](../api/inferenceclassification_list_overrides.md) |
+
 [Обновление операции переопределения для отправителя](../api/inferenceclassificationoverride_update.md) | [Удаление операции переопределения для отправителя](../api/inferenceclassificationoverride_delete.md) 

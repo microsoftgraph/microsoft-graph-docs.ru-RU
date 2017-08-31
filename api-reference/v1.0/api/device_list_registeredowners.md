@@ -1,8 +1,8 @@
 # <a name="list-registeredowners"></a>Список registeredOwners
 
 Получение списка пользователей, являющихся зарегистрированными владельцами устройства.
-## <a name="prerequisites"></a>Необходимые условия
-Для применения этого API требуется одна из указанных ниже **областей**. 
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 - *Device.ReadWrite.All* и *User.ReadBasic.All*
 - *Directory.Read.All*
 - *Directory.ReadWrite.All* 
