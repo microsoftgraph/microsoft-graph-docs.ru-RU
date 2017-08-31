@@ -1,12 +1,16 @@
-# <a name="range-delete"></a><span data-ttu-id="af7bb-101">Range: delete</span><span class="sxs-lookup"><span data-stu-id="af7bb-101">Range: delete</span></span>
+# <a name="range-delete"></a><span data-ttu-id="fc6ed-101">Range: delete</span><span class="sxs-lookup"><span data-stu-id="fc6ed-101">Range: delete</span></span>
 
-<span data-ttu-id="af7bb-102">Удаляет ячейки, связанные с диапазоном.</span><span class="sxs-lookup"><span data-stu-id="af7bb-102">Deletes the cells associated with the range.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="af7bb-103">Необходимые условия</span><span class="sxs-lookup"><span data-stu-id="af7bb-103">Prerequisites</span></span>
-<span data-ttu-id="af7bb-104">Для применения этого API требуются указанные **области**:</span><span class="sxs-lookup"><span data-stu-id="af7bb-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="fc6ed-102">Удаляет ячейки, связанные с диапазоном.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-102">Deletes the cells associated with the range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fc6ed-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fc6ed-103">Permissions</span></span>
+<span data-ttu-id="fc6ed-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="fc6ed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="af7bb-105">Files.ReadWrite.</span><span class="sxs-lookup"><span data-stu-id="af7bb-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="fc6ed-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fc6ed-106">Permission type</span></span>      | <span data-ttu-id="fc6ed-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fc6ed-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="fc6ed-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fc6ed-108">Delegated (work or school account)</span></span> | <span data-ttu-id="fc6ed-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fc6ed-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="fc6ed-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fc6ed-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc6ed-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-111">Not supported.</span></span>    |
+|<span data-ttu-id="fc6ed-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fc6ed-112">Application</span></span> | <span data-ttu-id="fc6ed-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="af7bb-106">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="af7bb-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fc6ed-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fc6ed-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/delete
@@ -14,27 +18,26 @@ POST /workbook/worksheets/{id|name}/range(<address>)/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="af7bb-107">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="af7bb-107">Request headers</span></span>
-| <span data-ttu-id="af7bb-108">Имя</span><span class="sxs-lookup"><span data-stu-id="af7bb-108">Name</span></span>       | <span data-ttu-id="af7bb-109">Описание</span><span class="sxs-lookup"><span data-stu-id="af7bb-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fc6ed-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fc6ed-115">Request headers</span></span>
+| <span data-ttu-id="fc6ed-116">Имя</span><span class="sxs-lookup"><span data-stu-id="fc6ed-116">Name</span></span>       | <span data-ttu-id="fc6ed-117">Описание</span><span class="sxs-lookup"><span data-stu-id="fc6ed-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="af7bb-110">Авторизация</span><span class="sxs-lookup"><span data-stu-id="af7bb-110">Authorization</span></span>  | <span data-ttu-id="af7bb-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="af7bb-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fc6ed-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fc6ed-118">Authorization</span></span>  | <span data-ttu-id="fc6ed-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="fc6ed-121">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fc6ed-121">Request body</span></span>
+<span data-ttu-id="fc6ed-122">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-122">In the request body, provide a JSON object with the following parameters.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="af7bb-113">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="af7bb-113">Request body</span></span>
-<span data-ttu-id="af7bb-114">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="af7bb-114">In the request body, provide a JSON object with the following parameters.</span></span>
-
-| <span data-ttu-id="af7bb-115">Параметр</span><span class="sxs-lookup"><span data-stu-id="af7bb-115">Parameter</span></span>    | <span data-ttu-id="af7bb-116">Тип</span><span class="sxs-lookup"><span data-stu-id="af7bb-116">Type</span></span>   |<span data-ttu-id="af7bb-117">Описание</span><span class="sxs-lookup"><span data-stu-id="af7bb-117">Description</span></span>|
+| <span data-ttu-id="fc6ed-123">Параметр</span><span class="sxs-lookup"><span data-stu-id="fc6ed-123">Parameter</span></span>    | <span data-ttu-id="fc6ed-124">Тип</span><span class="sxs-lookup"><span data-stu-id="fc6ed-124">Type</span></span>   |<span data-ttu-id="fc6ed-125">Описание</span><span class="sxs-lookup"><span data-stu-id="fc6ed-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="af7bb-118">shift</span><span class="sxs-lookup"><span data-stu-id="af7bb-118">shift</span></span>|<span data-ttu-id="af7bb-119">string</span><span class="sxs-lookup"><span data-stu-id="af7bb-119">string</span></span>|<span data-ttu-id="af7bb-p102">Указывает направление сдвига ячеек.  Возможные значения: `Up`, `Left`.</span><span class="sxs-lookup"><span data-stu-id="af7bb-p102">Specifies which way to shift the cells.  Possible values are: `Up`, `Left`.</span></span>|
+|<span data-ttu-id="fc6ed-126">shift</span><span class="sxs-lookup"><span data-stu-id="fc6ed-126">shift</span></span>|<span data-ttu-id="fc6ed-127">string</span><span class="sxs-lookup"><span data-stu-id="fc6ed-127">string</span></span>|<span data-ttu-id="fc6ed-p103">Указывает направление сдвига ячеек.  Возможные значения: `Up`, `Left`.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-p103">Specifies which way to shift the cells.  Possible values are: `Up`, `Left`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="af7bb-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="af7bb-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fc6ed-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="fc6ed-130">Response</span></span>
 
-<span data-ttu-id="af7bb-p103">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="af7bb-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="fc6ed-p104">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="af7bb-125">Пример</span><span class="sxs-lookup"><span data-stu-id="af7bb-125">Example</span></span>
-<span data-ttu-id="af7bb-126">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="af7bb-126">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="af7bb-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="af7bb-127">Request</span></span>
-<span data-ttu-id="af7bb-128">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="af7bb-128">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fc6ed-133">Пример</span><span class="sxs-lookup"><span data-stu-id="fc6ed-133">Example</span></span>
+<span data-ttu-id="fc6ed-134">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-134">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="fc6ed-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="fc6ed-135">Request</span></span>
+<span data-ttu-id="fc6ed-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_delete"
@@ -49,8 +52,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="af7bb-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="af7bb-129">Response</span></span>
-<span data-ttu-id="af7bb-130">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="af7bb-130">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="fc6ed-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="fc6ed-137">Response</span></span>
+<span data-ttu-id="fc6ed-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="fc6ed-138">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

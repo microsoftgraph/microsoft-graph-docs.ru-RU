@@ -1,5 +1,66 @@
-<span data-ttu-id="d9ced-p106">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="d9ced-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+# <a name="update-plannerplandetails"></a><span data-ttu-id="3de57-101">Обновление объекта plannerplandetails</span><span class="sxs-lookup"><span data-stu-id="3de57-101">Update plannerplandetails</span></span>
+
+<span data-ttu-id="3de57-102">Обновление свойств объекта **plannerplandetails**.</span><span class="sxs-lookup"><span data-stu-id="3de57-102">Update the properties of **plannerplandetails** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3de57-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3de57-103">Permissions</span></span>
+<span data-ttu-id="3de57-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="3de57-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="3de57-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3de57-106">Permission type</span></span>      | <span data-ttu-id="3de57-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3de57-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="3de57-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3de57-108">Delegated (work or school account)</span></span> | <span data-ttu-id="3de57-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3de57-109">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="3de57-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3de57-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3de57-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3de57-111">Not supported.</span></span>    |
+|<span data-ttu-id="3de57-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3de57-112">Application</span></span> | <span data-ttu-id="3de57-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3de57-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="3de57-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3de57-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /planner/plans/<id>/details
+```
+## <a name="optional-request-headers"></a><span data-ttu-id="3de57-115">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3de57-115">Optional request headers</span></span>
+| <span data-ttu-id="3de57-116">Имя</span><span class="sxs-lookup"><span data-stu-id="3de57-116">Name</span></span>       | <span data-ttu-id="3de57-117">Описание</span><span class="sxs-lookup"><span data-stu-id="3de57-117">Description</span></span>|
+|:-----------|:-----------|
+| <span data-ttu-id="3de57-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3de57-118">Authorization</span></span>  | <span data-ttu-id="3de57-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3de57-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3de57-121">If-Match</span><span class="sxs-lookup"><span data-stu-id="3de57-121">If-Match</span></span>  | <span data-ttu-id="3de57-p103">Последнее известное значение ETag обновляемого объекта plannerPlanDetails. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3de57-p103">Last known ETag value for the plannerPlanDetails to be updated. Required.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="3de57-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3de57-124">Request body</span></span>
+<span data-ttu-id="3de57-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="3de57-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="3de57-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="3de57-128">Property</span></span>     | <span data-ttu-id="3de57-129">Тип</span><span class="sxs-lookup"><span data-stu-id="3de57-129">Type</span></span>   |<span data-ttu-id="3de57-130">Описание</span><span class="sxs-lookup"><span data-stu-id="3de57-130">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="3de57-131">categoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="3de57-131">categoryDescriptions</span></span>|[<span data-ttu-id="3de57-132">plannerCategoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="3de57-132">plannerCategoryDescriptions</span></span>](../resources/plannercategorydescriptions.md)|<span data-ttu-id="3de57-133">Объект с описаниями шести категорий, которые могут быть связаны с задачами в плане.</span><span class="sxs-lookup"><span data-stu-id="3de57-133">An object that specifies the descriptions of the six categories that can be associated with tasks in the plan</span></span>|
+|<span data-ttu-id="3de57-134">sharedWith</span><span class="sxs-lookup"><span data-stu-id="3de57-134">sharedWith</span></span>|[<span data-ttu-id="3de57-135">plannerUserIds</span><span class="sxs-lookup"><span data-stu-id="3de57-135">plannerUserIds</span></span>](../resources/planneruserids.md)|<span data-ttu-id="3de57-p105">Список идентификаторов пользователей, у которых есть доступ к этому плану. Если вы используете Группы Office 365, используйте API Групп для предоставления доступа к плану [группы](../resources/group.md). Вы также можете добавить в эту коллекцию существующих членов группы, но они смогут получить доступ к плану, принадлежащему группе, и без этого.</span><span class="sxs-lookup"><span data-stu-id="3de57-p105">Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](../resources/group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="3de57-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="3de57-139">Response</span></span>
+
+<span data-ttu-id="3de57-140">В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerPlanDetails](../resources/plannerplandetails.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="3de57-140">If successful, this method returns a `200 OK` response code and updated [plannerPlanDetails](../resources/plannerplandetails.md) object in the response body.</span></span>
+
+<span data-ttu-id="3de57-p106">Этот метод может возвращать любые [коды состояния HTTP](../../../concepts/errors.md). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner_overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="3de57-p106">This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).</span></span>
+
+## <a name="example"></a><span data-ttu-id="3de57-144">Пример</span><span class="sxs-lookup"><span data-stu-id="3de57-144">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3de57-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="3de57-145">Request</span></span>
+<span data-ttu-id="3de57-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3de57-146">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "update_plannerplandetails"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
+Content-type: application/json
+Content-length: 212
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+
+{
+  "sharedWith": {
+    "6463a5ce-2119-4198-9f2a-628761df4a62" : true,
+    "d95e6152-f683-4d78-9ff5-67ad180fea4a" : false,
+  },
+  "categoryDescriptions": {
+    "category1": "Indoors",
+    "category3": null,
+  }
+}
+```
+##### <a name="response"></a><span data-ttu-id="3de57-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="3de57-147">Response</span></span>
+<span data-ttu-id="3de57-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="3de57-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

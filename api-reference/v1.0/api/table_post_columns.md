@@ -1,34 +1,37 @@
-# <a name="create-tablecolumn"></a><span data-ttu-id="2e866-101">Создание объекта TableColumn</span><span class="sxs-lookup"><span data-stu-id="2e866-101">Create TableColumn</span></span>
+# <a name="create-tablecolumn"></a><span data-ttu-id="3f833-101">Создание объекта TableColumn</span><span class="sxs-lookup"><span data-stu-id="3f833-101">Create TableColumn</span></span>
 
-<span data-ttu-id="2e866-102">С помощью этого API можно создать объект TableColumn.</span><span class="sxs-lookup"><span data-stu-id="2e866-102">Use this API to create a new TableColumn.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="2e866-103">Необходимые условия</span><span class="sxs-lookup"><span data-stu-id="2e866-103">Prerequisites</span></span>
-<span data-ttu-id="2e866-104">Для применения этого API требуются указанные **области**:</span><span class="sxs-lookup"><span data-stu-id="2e866-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="3f833-102">С помощью этого API можно создать объект TableColumn.</span><span class="sxs-lookup"><span data-stu-id="3f833-102">Use this API to create a new TableColumn.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3f833-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3f833-103">Permissions</span></span>
+<span data-ttu-id="3f833-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="3f833-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="2e866-105">Files.ReadWrite.</span><span class="sxs-lookup"><span data-stu-id="2e866-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="3f833-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3f833-106">Permission type</span></span>      | <span data-ttu-id="3f833-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3f833-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="3f833-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3f833-108">Delegated (work or school account)</span></span> | <span data-ttu-id="3f833-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3f833-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3f833-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3f833-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3f833-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3f833-111">Not supported.</span></span>    |
+|<span data-ttu-id="3f833-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3f833-112">Application</span></span> | <span data-ttu-id="3f833-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3f833-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2e866-106">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2e866-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3f833-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3f833-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="2e866-107">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2e866-107">Request headers</span></span>
-| <span data-ttu-id="2e866-108">Имя</span><span class="sxs-lookup"><span data-stu-id="2e866-108">Name</span></span>       | <span data-ttu-id="2e866-109">Описание</span><span class="sxs-lookup"><span data-stu-id="2e866-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3f833-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3f833-115">Request headers</span></span>
+| <span data-ttu-id="3f833-116">Имя</span><span class="sxs-lookup"><span data-stu-id="3f833-116">Name</span></span>       | <span data-ttu-id="3f833-117">Описание</span><span class="sxs-lookup"><span data-stu-id="3f833-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="2e866-110">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2e866-110">Authorization</span></span>  | <span data-ttu-id="2e866-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2e866-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3f833-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3f833-118">Authorization</span></span>  | <span data-ttu-id="3f833-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3f833-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="3f833-121">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3f833-121">Request body</span></span>
+<span data-ttu-id="3f833-122">Предоставьте в тексте запроса описание объекта [TableColumn](../resources/tablecolumn.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3f833-122">In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="2e866-113">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2e866-113">Request body</span></span>
-<span data-ttu-id="2e866-114">Предоставьте в тексте запроса описание объекта [TableColumn](../resources/tablecolumn.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2e866-114">In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.</span></span>
+## <a name="response"></a><span data-ttu-id="3f833-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="3f833-123">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="2e866-115">Отклик</span><span class="sxs-lookup"><span data-stu-id="2e866-115">Response</span></span>
+<span data-ttu-id="3f833-124">В случае успеха этот метод возвращает код отклика `201, Created` и объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3f833-124">If successful, this method returns `201, Created` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
 
-<span data-ttu-id="2e866-116">В случае успеха этот метод возвращает код отклика `201, Created` и объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2e866-116">If successful, this method returns `201, Created` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="2e866-117">Пример</span><span class="sxs-lookup"><span data-stu-id="2e866-117">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2e866-118">Запрос</span><span class="sxs-lookup"><span data-stu-id="2e866-118">Request</span></span>
-<span data-ttu-id="2e866-119">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2e866-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3f833-125">Пример</span><span class="sxs-lookup"><span data-stu-id="3f833-125">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3f833-126">Запрос</span><span class="sxs-lookup"><span data-stu-id="3f833-126">Request</span></span>
+<span data-ttu-id="3f833-127">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3f833-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_tablecolumn_from_table"
@@ -45,9 +48,9 @@ Content-length: 81
   "values": "values-value"
 }
 ```
-<span data-ttu-id="2e866-120">Предоставьте в тексте запроса описание объекта [TableColumn](../resources/tablecolumn.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2e866-120">In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="2e866-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="2e866-121">Response</span></span>
-<span data-ttu-id="2e866-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="2e866-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="3f833-128">Предоставьте в тексте запроса описание объекта [TableColumn](../resources/tablecolumn.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3f833-128">In the request body, supply a JSON representation of [TableColumn](../resources/tablecolumn.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="3f833-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="3f833-129">Response</span></span>
+<span data-ttu-id="3f833-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="3f833-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

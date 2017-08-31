@@ -1,11 +1,37 @@
-<span data-ttu-id="caee8-p102">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="caee8-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+# <a name="filter-clear"></a><span data-ttu-id="3b39e-101">Filter: clear</span><span class="sxs-lookup"><span data-stu-id="3b39e-101">Filter: clear</span></span>
 
-В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
+<span data-ttu-id="3b39e-102">Сброс фильтра для определенного столбца.</span><span class="sxs-lookup"><span data-stu-id="3b39e-102">Clear the filter on the given column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3b39e-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3b39e-103">Permissions</span></span>
+<span data-ttu-id="3b39e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="3b39e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="caee8-117">Пример</span><span class="sxs-lookup"><span data-stu-id="caee8-117">Example</span></span>
-<span data-ttu-id="caee8-118">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="caee8-118">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="caee8-119">Запрос</span><span class="sxs-lookup"><span data-stu-id="caee8-119">Request</span></span>
-<span data-ttu-id="caee8-120">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="caee8-120">Here is an example of the request.</span></span>
+|<span data-ttu-id="3b39e-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3b39e-106">Permission type</span></span>      | <span data-ttu-id="3b39e-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3b39e-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="3b39e-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3b39e-108">Delegated (work or school account)</span></span> | <span data-ttu-id="3b39e-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3b39e-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3b39e-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3b39e-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b39e-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3b39e-111">Not supported.</span></span>    |
+|<span data-ttu-id="3b39e-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3b39e-112">Application</span></span> | <span data-ttu-id="3b39e-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3b39e-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="3b39e-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3b39e-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
+
+```
+## <a name="request-headers"></a><span data-ttu-id="3b39e-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3b39e-115">Request headers</span></span>
+| <span data-ttu-id="3b39e-116">Имя</span><span class="sxs-lookup"><span data-stu-id="3b39e-116">Name</span></span>       | <span data-ttu-id="3b39e-117">Описание</span><span class="sxs-lookup"><span data-stu-id="3b39e-117">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="3b39e-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3b39e-118">Authorization</span></span>  | <span data-ttu-id="3b39e-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3b39e-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="3b39e-121">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3b39e-121">Request body</span></span>
+
+## <a name="response"></a><span data-ttu-id="3b39e-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="3b39e-122">Response</span></span>
+
+<span data-ttu-id="3b39e-p103">В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="3b39e-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="3b39e-125">Пример</span><span class="sxs-lookup"><span data-stu-id="3b39e-125">Example</span></span>
+<span data-ttu-id="3b39e-126">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="3b39e-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3b39e-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="3b39e-127">Request</span></span>
+<span data-ttu-id="3b39e-128">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3b39e-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_clear"
@@ -14,8 +40,8 @@
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="caee8-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="caee8-121">Response</span></span>
-<span data-ttu-id="caee8-122">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="caee8-122">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="3b39e-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="3b39e-129">Response</span></span>
+<span data-ttu-id="3b39e-130">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="3b39e-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
