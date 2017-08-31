@@ -1,33 +1,36 @@
-# <a name="create-chart"></a><span data-ttu-id="0f35c-101">Создание объекта Chart</span><span class="sxs-lookup"><span data-stu-id="0f35c-101">Create Chart</span></span>
+# <a name="create-chart"></a><span data-ttu-id="0204d-101">Создание объекта Chart</span><span class="sxs-lookup"><span data-stu-id="0204d-101">Create Chart</span></span>
 
-<span data-ttu-id="0f35c-102">С помощью этого API можно создать объект Chart.</span><span class="sxs-lookup"><span data-stu-id="0f35c-102">Use this API to create a new Chart.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="0f35c-103">Необходимые условия</span><span class="sxs-lookup"><span data-stu-id="0f35c-103">Prerequisites</span></span>
-<span data-ttu-id="0f35c-104">Для применения этого API требуются указанные **области**:</span><span class="sxs-lookup"><span data-stu-id="0f35c-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="0204d-102">С помощью этого API можно создать объект Chart.</span><span class="sxs-lookup"><span data-stu-id="0204d-102">Use this API to create a new Chart.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0204d-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0204d-103">Permissions</span></span>
+<span data-ttu-id="0204d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="0204d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="0f35c-105">Files.ReadWrite.</span><span class="sxs-lookup"><span data-stu-id="0f35c-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="0204d-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0204d-106">Permission type</span></span>      | <span data-ttu-id="0204d-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0204d-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="0204d-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0204d-108">Delegated (work or school account)</span></span> | <span data-ttu-id="0204d-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0204d-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0204d-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0204d-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0204d-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0204d-111">Not supported.</span></span>    |
+|<span data-ttu-id="0204d-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0204d-112">Application</span></span> | <span data-ttu-id="0204d-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0204d-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0f35c-106">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0f35c-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0204d-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0204d-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="0f35c-107">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0f35c-107">Request headers</span></span>
-| <span data-ttu-id="0f35c-108">Имя</span><span class="sxs-lookup"><span data-stu-id="0f35c-108">Name</span></span>       | <span data-ttu-id="0f35c-109">Описание</span><span class="sxs-lookup"><span data-stu-id="0f35c-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0204d-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0204d-115">Request headers</span></span>
+| <span data-ttu-id="0204d-116">Имя</span><span class="sxs-lookup"><span data-stu-id="0204d-116">Name</span></span>       | <span data-ttu-id="0204d-117">Описание</span><span class="sxs-lookup"><span data-stu-id="0204d-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="0f35c-110">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0f35c-110">Authorization</span></span>  | <span data-ttu-id="0f35c-p101">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0f35c-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0204d-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0204d-118">Authorization</span></span>  | <span data-ttu-id="0204d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0204d-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="0204d-121">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0204d-121">Request body</span></span>
+<span data-ttu-id="0204d-122">Предоставьте в тексте запроса описание объекта [Chart](../resources/chart.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0204d-122">In the request body, supply a JSON representation of [Chart](../resources/chart.md) object.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="0f35c-113">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0f35c-113">Request body</span></span>
-<span data-ttu-id="0f35c-114">Предоставьте в тексте запроса описание объекта [Chart](../resources/chart.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0f35c-114">In the request body, supply a JSON representation of [Chart](../resources/chart.md) object.</span></span>
+## <a name="response"></a><span data-ttu-id="0204d-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="0204d-123">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="0f35c-115">Отклик</span><span class="sxs-lookup"><span data-stu-id="0f35c-115">Response</span></span>
+<span data-ttu-id="0204d-124">В случае успеха этот метод возвращает код отклика `201, Created` и объект [Chart](../resources/chart.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0204d-124">If successful, this method returns `201, Created` response code and [Chart](../resources/chart.md) object in the response body.</span></span>
 
-<span data-ttu-id="0f35c-116">В случае успеха этот метод возвращает код отклика `201, Created` и объект [Chart](../resources/chart.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0f35c-116">If successful, this method returns `201, Created` response code and [Chart](../resources/chart.md) object in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="0f35c-117">Пример</span><span class="sxs-lookup"><span data-stu-id="0f35c-117">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0f35c-118">Запрос</span><span class="sxs-lookup"><span data-stu-id="0f35c-118">Request</span></span>
-<span data-ttu-id="0f35c-119">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0f35c-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0204d-125">Пример</span><span class="sxs-lookup"><span data-stu-id="0204d-125">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0204d-126">Запрос</span><span class="sxs-lookup"><span data-stu-id="0204d-126">Request</span></span>
+<span data-ttu-id="0204d-127">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0204d-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_chart_from_worksheet"
@@ -43,9 +46,9 @@ Content-length: 52
   "left": 99
 }
 ```
-<span data-ttu-id="0f35c-120">Предоставьте в тексте запроса описание объекта [Chart](../resources/chart.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0f35c-120">In the request body, supply a JSON representation of [Chart](../resources/chart.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="0f35c-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="0f35c-121">Response</span></span>
-<span data-ttu-id="0f35c-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="0f35c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0204d-128">Предоставьте в тексте запроса описание объекта [Chart](../resources/chart.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0204d-128">In the request body, supply a JSON representation of [Chart](../resources/chart.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="0204d-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="0204d-129">Response</span></span>
+<span data-ttu-id="0204d-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="0204d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
