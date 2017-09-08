@@ -5,13 +5,13 @@
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
-|Делегированные (личная учетная запись Майкрософт) | User.ReadWrite    | 
-|Для приложений | User.ReadWrite.All, Directory.ReadWrite.All | 
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | User.ReadWrite    |
+|Для приложений | User.ReadWrite.All, Directory.ReadWrite.All |
 
-При обновлении свойства passwordProfile необходима область Directory.AccessAsUser.All.
+При обновлении свойства passwordProfile необходимо разрешение Directory.AccessAsUser.All.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
