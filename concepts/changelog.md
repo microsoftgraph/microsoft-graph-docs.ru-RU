@@ -4,7 +4,44 @@
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known_issues.md).
 
+## <a name="september-2017"></a>Сентябрь 2017 г.
+
+### <a name="outlook-calendar"></a>Календарь Outlook
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | Бета | Добавлено свойство **locations** для ресурса [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event), позволяющее организовать событие, в котором могут участвовать пользователи из нескольких мест. |
+| Дополнение | Бета | Добавлено свойство **locationType** для сложного типа [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location).|
+| Дополнение | Бета | Добавлены свойства **uniqueId** и **uniqueIdType** для сложного типа [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location). В настоящее время эти свойства предназначены только для внутреннего использования.|
+
+
+### <a name="outlook-inbox-message-rules"></a>Правила обработки сообщений для папки "Входящие" Outlook
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | Бета | Добавлено свойство навигации **messageRules** для ресурса [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder). **messageRules** — это набор экземпляров [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule). |
+| Дополнение | Бета | Добавлены объект [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) и сложные типы [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates) и [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange).  |
+| Дополнение | Бета | Добавлены следующие операции CRUD для правил обработки сообщений: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update) и [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
+
+
+### <a name="outlook-user-choices"></a>Настройки пользователей Outlook
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | Бета | Добавлено новое свойство навигации **masterCategories** для объекта [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser).  |
+| Дополнение | Бета | Добавлена новая функция [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) для объекта [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser).  |
+| Дополнение | Бета | Добавлена новая функция [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) для объекта [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser).  |
+
+
 ## <a name="august-2017"></a>Август 2017 г.
+
+### <a name="group-lifecycle-policy"></a>Политика жизненного цикла группы
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | Бета | Добавлена сущность [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy). |
+| Дополнение | Бета | Добавлены следующие API для политики жизненного цикла группы, а именно для: [создания](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [перечисления](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [получения](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [обновления](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [удаления](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [добавления группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [удаления группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) и [возобновления группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
+| Дополнение | Бета | Добавлена функция [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) для объекта [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group). |
 
 ### <a name="intune-apis"></a>API Intune
 |Тип изменения|Версия|Описание|
@@ -32,6 +69,12 @@
 |Изменение|Бета-версия|Добавлено свойство **secureByDefault** для сложного типа [deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings)|
 |Изменение|Бета-версия|Добавлено свойство **restartMode** для сложного типа [windowsUpdateScheduledInstall](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdatescheduledinstall)|
 
+### <a name="onenote"></a>OneNote
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | 1.0 и бета-версия | Добавлено свойство навигации [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) для **site**.  |
+| Дополнение | Бета-версия | Добавлены целевые параметры *siteCollectionId* и *siteId* для операций копирования. Пример: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 ### <a name="people"></a>Люди 
 
@@ -39,20 +82,7 @@
 |:-------------|:-----------|:--------------|
 | Дополнение | 1.0 | В версии 1.0 добавлены [API People](../api-reference/v1.0/resources/person.md). Подробнее об API People см. в статье, посвященной [нахождению релевантных сведений о пользователях](people_example.md).|
 
-### <a name="group-lifecycle-policy"></a>Политика жизненного цикла группы
 
-|**Тип изменения**|**Версия**|**Описание**|
-|:-------------|:-----------|:--------------|
-| Дополнение | Бета | Добавлена сущность [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy). |
-| Дополнение | Бета | Добавлены следующие API для политики жизненного цикла группы, а именно для: [создания](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [перечисления](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [получения](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [обновления](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [удаления](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [добавления группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [удаления группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) и [возобновления группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
-| Дополнение | Бета | Добавлена функция [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) в объект [группы](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group). |
-
-### <a name="onenote"></a>OneNote
-
-|**Тип изменения**|**Версия**|**Описание**|
-|:-------------|:-----------|:--------------|
-| Дополнение | 1.0 и бета-версия | Добавлено свойство навигации [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) для **site**.  |
-| Дополнение | Бета | Добавлены целевые параметры *siteCollectionId* и *siteId* для операций копирования. Пример: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 
 ## <a name="july-2017"></a>Июль 2017 г.

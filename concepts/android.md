@@ -70,9 +70,8 @@
 
     b. Нажмите **Добавление платформы** и выберите **Собственное приложение**.
 
-    > **Примечание.** Портал регистрации приложений предоставляет URI перенаправления, который выглядит следующим образом: *msalНОВЫЙ ИДЕНТИФИКАТОР ПРИЛОЖЕНИЯ://auth*. Не используйте встроенные URI перенаправления. [Приложение Connect для Android](https://github.com/microsoftgraph/android-java-connect-sample) использует библиотеку аутентификации MSAL, которой нужен этот URI перенаправления. При использовании [поддерживаемой сторонней библиотеки](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) или библиотеки **ADAL** необходимо использовать встроенные URI перенаправления.
+    > **Примечание.** Портал регистрации приложений предоставляет URI перенаправления, который выглядит следующим образом: *msalВВЕДИТЕ_ИД_КЛИЕНТА://auth*. Не используйте встроенные URI перенаправления. [Приложение Connect для Android](https://github.com/microsoftgraph/android-java-connect-sample) использует библиотеку аутентификации MSAL, которой нужен этот URI перенаправления. При использовании [поддерживаемой сторонней библиотеки](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) или библиотеки **ADAL** необходимо использовать встроенные URI перенаправления.
 
-    С инструкциями по настройке и без них
 
     a. Добавьте делегированные разрешения. Вам потребуются разрешения **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** и **User.ReadBasic.All**. 
    
@@ -232,27 +231,40 @@
 
 Приложение необходимо подготовить к обработке ответа от сервера авторизации, содержащего код, который можно обменять на маркер доступа.
 
-1. Необходимо сообщить системе Android, что приложение Connect может обрабатывать запросы, поступающие на URL-адрес перенаправления, настроенный при регистрации приложения. Для этого откройте файл **AndroidManifest** и добавьте представленные ниже дочерние элементы в элемент проекта **\<application/\>**.
+1. Необходимо сообщить системе Android, что приложение Connect может обрабатывать запросы, поступающие на URL-адрес перенаправления, настроенный при регистрации приложения. Для этого откройте файл строковых ресурсов **strings.xml** и добавьте представленные ниже дочерние элементы в элемент проекта **\<application/\>**.
+   ```xml
+   <!DOCTYPE resources [
+       <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
+       ]>
+
+    ...
+    <string name="client_Id">&clientId;</string>
+    <string name="msalPrefix">msal&clientId;</string>
+
+   ```
+
+   Строковые ресурсы используются в файле **AndroidManifest.xml**. Библиотека **MSAL** считывает идентификатор клиента в среде выполнения и возвращает ответы REST на URL-адрес перенаправления, определенный для **BrowserTabActivity**.
+
     ```xml
         <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
         <application ...>
             ...
-            <activity
-                android:name="com.microsoft.identity.client.BrowserTabActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.VIEW" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                    <category android:name="android.intent.category.BROWSABLE" />
-                    <data android:scheme="msalENTER_YOUR_CLIENT_ID"
-                        android:host="auth" />
-                </intent-filter>
-            </activity>
-            <meta-data
-                android:name="https://login.microsoftonline.com/common"
-                android:value="authority string"/>
-            <meta-data
-                android:name="com.microsoft.identity.client.ClientId"
-                android:value="ENTER_YOUR_CLIENT_ID"/>
+           <activity
+               android:name="com.microsoft.identity.client.BrowserTabActivity">
+               <intent-filter>
+                   <action android:name="android.intent.action.VIEW" />
+                   <category android:name="android.intent.category.DEFAULT" />
+                   <category android:name="android.intent.category.BROWSABLE" />
+                   <data android:scheme="@string/msalPrefix"
+                       android:host="auth" />
+               </intent-filter>
+           </activity>
+           <meta-data
+               android:name="https://login.microsoftonline.com/common"
+               android:value="authority string"/>
+           <meta-data
+               android:name="com.microsoft.identity.client.ClientId"
+               android:value="@string/client_Id"/>
         </application>
     ```
 2. Библиотеке **MSAL** нужен доступ к идентификатору приложения, назначенному порталом регистрации. **В библиотеке MSAL идентификатор приложения обозначается как "Идентификатор клиента"**. Библиотека получает идентификатор приложения (идентификатор клиента) из контекста приложения, передаваемого в конструктор библиотеки. 

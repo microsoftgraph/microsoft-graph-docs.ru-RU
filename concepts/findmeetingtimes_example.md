@@ -34,7 +34,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 
 Два вызова действия **findMeetingTimes** включают следующие параметры. Все [параметры](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body) для действия **findMeetingTimes** являются необязательными.
 
-- **attendees**: один участник, Fanny Downs, для свойства **type** которого задано значение `required`.
+- **attendees**: один участник, Samantha Booth, для свойства **type** которого задано значение `required`.
 - **locationConstraint**: предлагать место не нужно.
 - **timeConstraint**: первый вызов просматривает диапазон времени с 9:00 18 апреля до 17:00 20 апреля, после того как он не может предложить время, второй вызов просматривает диапазон времени с 9:00 до 17:00 21 апреля.
 - **meetingDuration**: два часа.
@@ -59,8 +59,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -134,8 +134,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -208,7 +208,7 @@ Content-Length: 714
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }
