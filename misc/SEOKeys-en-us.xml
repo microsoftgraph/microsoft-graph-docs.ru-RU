@@ -28,8 +28,8 @@
   </Item>
   <Item text="Использование API" url="/en-us/concepts/use_the_api">
     <Item text="Просмотр графа" url="/en-us/concepts/traverse_the_graph" />
-    <Item text="Получение данных на страницах" url="/en-us/concepts/paging" SEOKeyword="Разбиение на страницы, API Microsoft Graph, обзор" SEODescription="Разбиение на страницы в Microsoft Graph." />
-    <Item text="Настройка запросов" url="/en-us/concepts/query_parameters" SEOKeyword="Параметры запроса, API Microsoft Graph, обзор" SEODescription="Служба Microsoft Graph совместима с OData версии 4 и предоставляет сведения о поддерживаемых параметрах запросов OData." />
+    <Item text="Разбиение на страницы" url="/en-us/concepts/paging" SEOKeyword="Разбиение на страницы, API Microsoft Graph, обзор" SEODescription="Разбиение на страницы в Microsoft Graph." />
+    <Item text="Использование параметров запроса" url="/en-us/concepts/query_parameters" SEOKeyword="Параметры запроса, API Microsoft Graph, обзор" SEODescription="Служба Microsoft Graph совместима с OData версии 4 и предоставляет сведения о поддерживаемых параметрах запросов OData." />
     <Item text="Пакетные запросы" url="/en-us/concepts/json_batching" />
     <Item text="Регулирование" url="/en-us/concepts/throttling" />
     <Item text="Управление версиями и поддержка" url="/en-us/concepts/versioning_and_support" />
@@ -145,9 +145,16 @@
       <Item text="Удаление владельца" url="/en-us/api-reference/v1.0/api/group_delete_owners" />
       <Item text="Сброс количества непросмотренных элементов" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="group: resetUnseenCount, API Microsoft Graph, API для управления группами" SEODescription="" />
       <Item text="Подписка по почте" url="/en-us/api-reference/v1.0/api/group_subscribebymail" SEOKeyword="group: subscribeByMail, API Microsoft Graph, API для управления группами" SEODescription="" />
-      <Item text="Отмена подписки по почте" url="/en-us/api-reference/v1.0/api/group_unsubscribebymail" SEOKeyword="group: unsubscribeByMail, API Microsoft Graph, API для управления группами" SEODescription="" />
+      <Item text="Отмена подписки по почте" url="/en-us/api-reference/v1.0/api/group_unsubscribebymail" SEOKeyword="group: unsubscribeByMail; API Microsoft Graph, API для управления группами" SEODescription="" />
     </Item>
-    <Item text="Календарь" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="календарь пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="Календарь">
+    <Item text="Вложение" url="/en-us/api-reference/v1.0/resources/attachment">
+		<Item text="Ресурс вложенного файла" url="/en-us/api-reference/v1.0/resources/fileattachment" />
+		<Item text="Ресурс вложенного элемента" url="/en-us/api-reference/v1.0/resources/itemattachment" />
+		<Item text="Ресурс вложенной ссылки" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
+		<Item text="Получение вложения" url="/en-us/api-reference/v1.0/api/attachment_get" />
+		<Item text="Удаление вложения" url="/en-us/api-reference/v1.0/api/attachment_delete" />
+	</Item>
+	<Item text="Календарь" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="календарь пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="Календарь">
       <Item text="Список событий" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="Список событий, API Microsoft Graph, API для управления группами" SEODescription="Получение списка, включающего объекты событий." />
       <Item text="Создание события" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="Создание события, API Microsoft Graph, API для управления группами" SEODescription="С помощью этого API можно создать объект Event." />
       <Item text="Получение события" url="/en-us/api-reference/v1.0/api/event_get" />
@@ -214,15 +221,8 @@
       <Item text="Список вложений" url="/en-us/api-reference/v1.0/api/post_list_attachments" SEOKeyword="Список вложений в записи, API Microsoft Graph, API для управления беседами в Outlook" SEODescription="Получение списка объектов вложений." />
       <Item text="Добавление вложения" url="/en-us/api-reference/v1.0/api/post_post_attachments" SEOKeyword="Создание вложенной записи, API Microsoft Graph, API для управления беседами в Outlook" SEODescription="С помощью этого API можно создать объект Attachment." />
       <Item text="Создание открытого расширения" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Получение модуля обработки данных, API Microsoft Graph, API для управления объектами openTypeExtension" SEODescription="Получение свойств и связей объекта openTypeExtension." />
-      <Item text="Получение открытого расширения" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Получение модуля обработки данных, API Microsoft Graph, API для управления объектами openTypeExtension" SEODescription="Получение свойств и связей объекта openTypeExtension." />
+      <Item text="Получение открытого расширения" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Получение модуля обработки данных, API Microsoft Graph, API для управления объектами openTypeExtension" SEODescription="Получение свойств и связей объекта opentypeextension." />
     </Item>
-  </Item>
-  <Item text="Вложение" url="/en-us/api-reference/v1.0/resources/attachment">
-    <Item text="Ресурс вложенного файла" url="/en-us/api-reference/v1.0/resources/fileattachment" />
-    <Item text="Ресурс вложенного элемента" url="/en-us/api-reference/v1.0/resources/itemattachment" />
-    <Item text="Ресурс вложенной ссылки" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
-    <Item text="Получение вложения" url="/en-us/api-reference/v1.0/api/attachment_get" />
-    <Item text="Удаление вложения" url="/en-us/api-reference/v1.0/api/attachment_delete" />
   </Item>
   <Item text="Azure Active Directory" url="/en-us/api-reference/v1.0/resources/azure_ad_overview" SEOKeyword="Объект каталога, API Microsoft Graph, API для управления пользователями" SEODescription="">
     <Item text="Контракты" url="/en-us/api-reference/v1.0/resources/contract">
@@ -336,7 +336,6 @@
       <Item text="Список диапазонов" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
     </Item>
   </Item>
-  
   <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="диск пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="API-интерфейсы OneDrive">
     <Item text="Диски" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="диск пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="API для управления диском">
       <Item text="Вывод диска" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Вывод диска, API Microsoft Graph, API для управления дисками" SEODescription="Получение свойств и связей объекта дисков." />
@@ -384,6 +383,7 @@
         <Item text="Список записных книжек" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="Список записных книжек, API Microsoft Graph, API для управления заметками" SEODescription="Получение списка, включающего объекты записных книжек (…/resources/notebook.md)." />
         <Item text="Создание записной книжки" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Создание записной книжки, API Microsoft Graph, API для управления заметками" SEODescription="Создание записной книжки в OneNote (…/resources/notebook.md)." />
         <Item text="Вывод записной книжки" url="/en-us/api-reference/v1.0/api/notebook_get" SEOKeyword="Вывод записной книжки, API Microsoft Graph, API для управления записными книжками" SEODescription="Получение свойств и связей объекта записной книжки (…/resources/notebook.md)." />
+		<Item text="Получение последних записных книжек" url="/en-us/api-reference/v1.0/api/notebook_getrecentnotebooks" />
         <Item text="Копирование записной книжки" url="/en-us/api-reference/v1.0/api/notebook_copynotebook" SEOKeyword="notebook: copyNotebook, API Microsoft Graph, API для управления записными книжками" SEODescription="" />
         <Item text="Список разделов" url="/en-us/api-reference/v1.0/api/notebook_list_sections" SEOKeyword="Список разделов, API Microsoft Graph, API для управления записными книжками" SEODescription="Получение списка, включающего объекты разделов (…/resources/section.md)." />
         <Item text="Создание раздела" url="/en-us/api-reference/v1.0/api/notebook_post_sections" SEOKeyword="Создание раздела, API Microsoft Graph, API для управления записными книжками" SEODescription="Создание раздела (…/resources/section.md) в указанной записной книжке." />
@@ -460,7 +460,14 @@
       <Item text="Создание открытого расширения" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Получение модуля обработки данных, API Microsoft Graph, API для управления объектами openTypeExtension" SEODescription="Получение свойств и связей объекта openTypeExtension." />
       <Item text="Получение открытого расширения" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Получение модуля обработки данных, API Microsoft Graph, API для управления объектами openTypeExtension" SEODescription="Получение свойств и связей объекта openTypeExtension." />
     </Item>
-    <Item text="Календарь" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="API для приложения &quot;Календарь Outlook&quot;, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Календарь, служащий контейнером для сведений о событиях.">
+    <Item text="Вложение" url="/en-us/api-reference/v1.0/resources/attachment">
+		<Item text="Ресурс вложенного файла" url="/en-us/api-reference/v1.0/resources/fileattachment" />
+		<Item text="Ресурс вложенного элемента" url="/en-us/api-reference/v1.0/resources/itemattachment" />
+		<Item text="Ресурс вложенной ссылки" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
+		<Item text="Получение вложения" url="/en-us/api-reference/v1.0/api/attachment_get" />
+		<Item text="Удаление вложения" url="/en-us/api-reference/v1.0/api/attachment_delete" />
+	</Item>
+	<Item text="Календарь" url="/en-us/api-reference/v1.0/resources/calendar" SEOKeyword="API для приложения &quot;Календарь Outlook&quot;, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Календарь, служащий контейнером для сведений о событиях.">
       <Item text="Список календарей" url="/en-us/api-reference/v1.0/api/user_list_calendars" SEOKeyword="Список календарей, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты календарей." />
       <Item text="Создание календаря" url="/en-us/api-reference/v1.0/api/user_post_calendars" SEOKeyword="Создание объекта Calendar, API Microsoft Graph, API для управления объектами User" SEODescription="С помощью этого API можно создать объект Calendar." />
       <Item text="Вывод календаря" url="/en-us/api-reference/v1.0/api/calendar_get" SEOKeyword="Вывод календаря, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Получение свойств и связей объекта календаря." />
@@ -518,7 +525,14 @@
       <Item text="Создание открытого расширения" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Получение модуля обработки данных, API Microsoft Graph, API для управления объектами openTypeExtension" SEODescription="Получение свойств и связей объекта openTypeExtension." />
       <Item text="Получение открытого расширения" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Получение модуля обработки данных, API Microsoft Graph, API для управления объектами openTypeExtension" SEODescription="Получение свойств и связей объекта openTypeExtension." />
     </Item>
-    <Item text="Сортировка почты" url="/en-us/api-reference/v1.0/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="">
+    <Item text="Вложение" url="/en-us/api-reference/v1.0/resources/attachment">
+		<Item text="Ресурс вложенного файла" url="/en-us/api-reference/v1.0/resources/fileattachment" />
+		<Item text="Ресурс вложенного элемента" url="/en-us/api-reference/v1.0/resources/itemattachment" />
+		<Item text="Ресурс вложенной ссылки" url="/en-us/api-reference/v1.0/resources/referenceattachment" />
+		<Item text="Получение вложения" url="/en-us/api-reference/v1.0/api/attachment_get" />
+		<Item text="Удаление вложения" url="/en-us/api-reference/v1.0/api/attachment_delete" />
+	</Item>
+	<Item text="Сортировка почты" url="/en-us/api-reference/v1.0/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="">
       <Item text="Создание переопределения" url="/en-us/api-reference/v1.0/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="Создание переопределения для отправителя, определенного адресом SMTP." />
       <Item text="Список переопределений" url="/en-us/api-reference/v1.0/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="Получение списка переопределений для отправителя, указанного адресом SMTP." />
       <Item text="Обновление переопределения" url="/en-us/api-reference/v1.0/api/inferenceclassificationoverride_update" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="Обновление переопределения для отправителя, определенного адресом SMTP." />
@@ -713,12 +727,11 @@
         <Item text="Создание переопределения" url="/en-us/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="Создание переопределения для отправителя, определенного адресом SMTP." />
         <Item text="Список папок" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEOKeyword="Список объектов MailFolder, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка объектов MailFolder." />
         <Item text="Создание папки почты" url="/en-us/api-reference/beta/api/user_post_mailfolders" SEOKeyword="Создание объекта MailFolder, API Microsoft Graph, API для управления объектами User" SEODescription="С помощью этого API можно создать объект MailFolder." />
-        <Item text="Отправка почты" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="sendMail (для пользователей), API Microsoft Graph, API для управления пользователями" SEODescription="" />
-        <Item text="Получение параметров почтового ящика" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" SEOKeyword="Пользователь: Получение параметров почтового ящика, API Microsoft Graph, API для управления пользователями" SEODescription="" />
-        <Item text="Обновление параметров почтового ящика" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" SEOKeyword="Пользователь: Обновление параметров почтового ящика, API Microsoft Graph, API для управления пользователями" SEODescription="" />
-        <Item text="Получение подсказок" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
+        <Item text="Отправка почты" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail; API Microsoft Graph, API для управления пользователями" SEODescription="" />
+        <Item text="Перечисление правил" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
+		<Item text="Создание правил" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
+		<Item text="Получение подсказок" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
       </Item>
-      
       <Item text="Заметки" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="заметки пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="">
         <Item text="Список записных книжек" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Список записных книжек, API Microsoft Graph, API для управления заметками" SEODescription="Получение списка, включающего объекты записных книжек (…/resources/notebook.md)." />
         <Item text="Создание записной книжки" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Создание записной книжки, API Microsoft Graph, API для управления заметками" SEODescription="Создание записной книжки в OneNote (…/resources/notebook.md)." />
@@ -731,6 +744,14 @@
       <Item text="Задачи Outlook" url="/en-us/api-reference/beta/resources/outlooktask">
 		<Item text="Перечисление задач" url="/en-us/api-reference/beta/api/outlookuser_list_tasks" />
 		<Item text="Создание задач" url="/en-us/api-reference/beta/api/outlookuser_post_tasks" />
+	  </Item>
+	  <Item text="Параметры Outlook" url="/en-us/api-reference/beta/resources/outlookuser">
+		<Item text="Получение настроек языков" url="/en-us/api-reference/beta/api/outlookuser_supportedlanguages" />
+		<Item text="Получение настроек часовых поясов" url="/en-us/api-reference/beta/api/outlookuser_supportedtimezones" />
+		<Item text="Получение параметров почтового ящика" url="/en-us/api-reference/beta/api/user_get_mailboxsettings" />
+		<Item text="Обновление параметров почтового ящика" url="/en-us/api-reference/beta/api/user_update_mailboxsettings" />
+		<Item text="Перечисление категорий" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Создание категории" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />		
 	  </Item>
 	  <Item text="Люди" url="/en-us/api-reference/beta/resources/person" SEOKeyword="взаимодействующие с пользователями люди, API Microsoft Graph, API для управления пользователями" SEODescription="">
         <Item text="Список людей" url="/en-us/api-reference/beta/api/user_list_people" SEOKeyword="Список людей, API Microsoft Graph, API для управления пользователями" SEODescription="Получение списка объектов людей." />
@@ -770,9 +791,16 @@
         <Item text="Восстановление удаленной группы" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
         <Item text="Подписка по почте" url="/en-us/api-reference/beta/api/group_subscribebymail" SEOKeyword="group: subscribeByMail, API Microsoft Graph, API для управления группами" SEODescription="" />
         <Item text="Отмена подписки по почте" url="/en-us/api-reference/beta/api/group_unsubscribebymail" SEOKeyword="group: unsubscribeByMail, API Microsoft Graph, API для управления группами" SEODescription="" />
-        <Item text="Обновление группы" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="Обновление группы, API Microsoft Graph, API для управления группами" SEODescription="Обновление свойств, принадлежащих объекту Group." />
+        <Item text="Обновление группы" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="Обновление группы, API Microsoft Graph, API для управления группами" SEODescription="Обновление свойств, принадлежащих объекту группы." />
       </Item>
-      <Item text="Календарь" url="/en-us/api-reference/beta/resources/event" SEOKeyword="календарь пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="">
+      <Item text="Вложение" url="/en-us/api-reference/beta/resources/attachment">
+      <Item text="Ресурс вложенного файла" url="/en-us/api-reference/beta/resources/fileattachment" />
+      <Item text="Ресурс вложенного элемента" url="/en-us/api-reference/beta/resources/itemattachment" />
+      <Item text="Ресурс вложенной ссылки" url="/en-us/api-reference/beta/resources/referenceattachment" />
+      <Item text="Получение вложения" url="/en-us/api-reference/beta/api/attachment_get" />
+      <Item text="Удаление вложения" url="/en-us/api-reference/beta/api/attachment_delete" />
+    </Item>
+	  <Item text="Календарь" url="/en-us/api-reference/beta/resources/event" SEOKeyword="календарь пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="">
         <Item text="Список событий" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="Список событий, API Microsoft Graph, API для управления группами" SEODescription="Получение списка, включающего объекты событий." />
         <Item text="Создание события" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="Создание события, API Microsoft Graph, API для управления группами" SEODescription="С помощью этого API можно создать объект Event." />
         <Item text="Получение события" url="/en-us/api-reference/beta/api/event_get" />
@@ -853,13 +881,6 @@
         <Item text="Создание открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Создание открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно создать открытое расширение." />
         <Item text="Получение открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Получение открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно получить открытое расширение." />
       </Item>
-    </Item>
-    <Item text="Вложение" url="/en-us/api-reference/beta/resources/attachment">
-      <Item text="Ресурс вложенного файла" url="/en-us/api-reference/beta/resources/fileattachment" />
-      <Item text="Ресурс вложенного элемента" url="/en-us/api-reference/beta/resources/itemattachment" />
-      <Item text="Ресурс вложенной ссылки" url="/en-us/api-reference/beta/resources/referenceattachment" />
-      <Item text="Получение вложения" url="/en-us/api-reference/beta/api/attachment_get" />
-      <Item text="Удаление вложения" url="/en-us/api-reference/beta/api/attachment_delete" />
     </Item>
     <Item text="Azure Active Directory" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="Объект каталога, API Microsoft Graph, API для управления пользователями" SEODescription="">
       <Item text="Административная единица" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="API для управления административными единицами, API Microsoft Graph" SEODescription="Административная единица предоставляет концептуальный контейнер для объектов каталога User и Group. С помощью административных единиц администратор компании теперь может делегировать администратору региона или отдела административные обязанности по управлению пользователями и группами в рамках административной единицы или ее области.">
@@ -3535,8 +3556,9 @@
         <Item text="Список записных книжек" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Список записных книжек, API Microsoft Graph, API для управления заметками" SEODescription="Получение списка, включающего объекты записных книжек (…/resources/notebook.md)." />
         <Item text="Создание записной книжки" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Создание записной книжки, API Microsoft Graph, API для управления заметками" SEODescription="Создание записной книжки в OneNote (…/resources/notebook.md)." />
         <Item text="Вывод записной книжки" url="/en-us/api-reference/beta/api/notebook_get" SEOKeyword="Вывод записной книжки, API Microsoft Graph, API для управления записными книжками" SEODescription="Получение свойств и связей объекта записной книжки (…/resources/notebook.md)." />
-        <Item text="Копирование записной книжки" url="/en-us/api-reference/beta/api/notebook_copynotebook" SEOKeyword="notebook: copyNotebook, API Microsoft Graph, API для управления записными книжками" SEODescription="" />
-        <Item text="Список разделов" url="/en-us/api-reference/beta/api/notebook_list_sections" SEOKeyword="Список разделов, API Microsoft Graph, API для управления записными книжками" SEODescription="Получение списка, включающего объекты разделов (…/resources/section.md)." />
+        <Item text="Копирование записной книжки" url="/en-us/api-reference/beta/api/notebook_copynotebook" SEOKeyword="notebook: copyNotebook; API Microsoft Graph, API для управления записными книжками" SEODescription="" />
+		<Item text="Получение последних записных книжек" url="/en-us/api-reference/beta/api/notebook_getrecentnotebooks" />
+        <Item text="Перечисление разделов" url="/en-us/api-reference/beta/api/notebook_list_sections" SEOKeyword="Список разделов, API Microsoft Graph, API для управления записными книжками" SEODescription="Получение списка, включающего объекты разделов (…/resources/section.md)." />
         <Item text="Создание раздела" url="/en-us/api-reference/beta/api/notebook_post_sections" SEOKeyword="Создание раздела, API Microsoft Graph, API для управления записными книжками" SEODescription="Создание раздела (…/resources/section.md) в указанной записной книжке." />
         <Item text="Список групп разделов" url="/en-us/api-reference/beta/api/notebook_list_sectiongroups" SEOKeyword="Список объектов sectionGroup, API Microsoft Graph, API для управления записными книжками" SEODescription="Получение списка, включающего группы разделов (…/resources/sectiongroup.md) из указанной записной книжки." />
         <Item text="Создание группы разделов" url="/en-us/api-reference/beta/api/notebook_post_sectiongroups" SEOKeyword="Создание объекта sectionGroup, API Microsoft Graph, API для управления записными книжками" SEODescription="Создание группы разделов (…/resources/sectiongroup.md) в указанной записной книжке." />
@@ -3631,8 +3653,15 @@
         <Item text="Список вложений" url="/en-us/api-reference/beta/api/eventmessage_list_attachments" SEOKeyword="Список вложений, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Получение списка объектов вложений." />
         <Item text="Создание открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Создание открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно создать открытое расширение." />
         <Item text="Получение открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Получение открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно получить открытое расширение." />
+      </Item> 
+	  <Item text="Вложение" url="/en-us/api-reference/beta/resources/attachment">
+		  <Item text="Ресурс вложенного файла" url="/en-us/api-reference/beta/resources/fileattachment" />
+		  <Item text="Ресурс вложенного элемента" url="/en-us/api-reference/beta/resources/itemattachment" />
+		  <Item text="Ресурс вложенной ссылки" url="/en-us/api-reference/beta/resources/referenceattachment" />
+		  <Item text="Получение вложения" url="/en-us/api-reference/beta/api/attachment_get" />
+		  <Item text="Удаление вложения" url="/en-us/api-reference/beta/api/attachment_delete" />
       </Item>
-      <Item text="Календарь" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="API для приложения &quot;Календарь Outlook&quot;, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Календарь, служащий контейнером для сведений о событиях.">
+	  <Item text="Календарь" url="/en-us/api-reference/beta/resources/calendar" SEOKeyword="API для приложения &quot;Календарь Outlook&quot;, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Календарь, служащий контейнером для сведений о событиях.">
         <Item text="Список календарей" url="/en-us/api-reference/beta/api/user_list_calendars" SEOKeyword="Список календарей, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты календарей." />
         <Item text="Создание календаря" url="/en-us/api-reference/beta/api/user_post_calendars" SEOKeyword="Создание объекта Calendar, API Microsoft Graph, API для управления объектами User" SEODescription="С помощью этого API можно создать объект Calendar." />
         <Item text="Вывод календаря" url="/en-us/api-reference/beta/api/calendar_get" SEOKeyword="Вывод календаря, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Получение свойств и связей объекта календаря." />
@@ -3643,12 +3672,8 @@
         <Item text="Поиск времени собраний" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="Время проведения собраний, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Получение списка, включающего объекты событий." />
         <Item text="Создание объекта Event" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="Создание объекта Event, API Microsoft Graph, API календаря" SEODescription="С помощью этого API можно создать объект Event." />
         <Item text="Представление напоминаний" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, API Microsoft Graph, API для управления пользователями" SEODescription="" />
-      </Item>
-      <Item text="Представление календаря" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="Перечисление объектов CalendarView, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты событий.">
-        <Item text="Список представлений календаря" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="Список объектов CalendarView, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты событий." />
-        <Item text="Представление напоминаний" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, API Microsoft Graph, API для управления пользователями" SEODescription="" />
-      </Item>
-      <Item text="Группа календарей" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="API для управления calendarGroup, API Microsoft Graph, API для управления calendarGroup" SEODescription="Группа календарей.">
+      </Item>  
+	  <Item text="Группа календарей" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="API для управления calendarGroup, API Microsoft Graph, API для управления calendarGroup" SEODescription="Группа календарей.">
         <Item text="Список групп календарей" url="/en-us/api-reference/beta/api/user_list_calendargroups" SEOKeyword="Список объектов CalendarGroup, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты CalendarGroup." />
         <Item text="Создание группы календарей" url="/en-us/api-reference/beta/api/user_post_calendargroups" SEOKeyword="Создание объекта CalendarGroup, API Microsoft Graph, API для управления объектами User" SEODescription="С помощью этого API можно создать объект CalendarGroup." />
         <Item text="Вывод группы календарей" url="/en-us/api-reference/beta/api/calendargroup_get" SEOKeyword="Вывод объекта calendarGroup, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Получение свойств и связей объекта calendarGroup." />
@@ -3657,7 +3682,18 @@
         <Item text="Список календарей в группе календарей" url="/en-us/api-reference/beta/api/calendargroup_list_calendars" SEOKeyword="Список календарей, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Получение списка, включающего объекты календарей." />
         <Item text="Создание календаря в группе календарей" url="/en-us/api-reference/beta/api/calendargroup_post_calendars" SEOKeyword="Создание группы календарей, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="С помощью этого API можно создать объект Calendar." />
       </Item>
-      <Item text="Расширенные свойства" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
+	  <Item text="Представление календаря" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="Перечисление объектов CalendarView, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты событий.">
+        <Item text="Список представлений календаря" url="/en-us/api-reference/beta/api/user_list_calendarview" SEOKeyword="Список объектов CalendarView, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты событий." />
+        <Item text="Представление напоминаний" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView; API Microsoft Graph, API для управления пользователями" SEODescription="" />
+      </Item>
+	  <Item text="Категории" url="/en-us/api-reference/beta/resources/outlookcategory">
+		<Item text="Перечисление категорий" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Создание категории" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="Получение категории" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="Обновление категории" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="Удаление категории" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>      
+	  <Item text="Расширенные свойства" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
         <Item text="Однозначное расширенное свойство" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
           <Item text="Создание однозначного свойства" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
           <Item text="Получение однозначного свойства" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
@@ -3691,7 +3727,21 @@
         <Item text="Создание открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Создание открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно создать открытое расширение." />
         <Item text="Получение открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Получение открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно получить открытое расширение." />
       </Item>
-      <Item text="Сортировка почты" url="/en-us/api-reference/beta/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="">
+      <Item text="Вложение" url="/en-us/api-reference/beta/resources/attachment">
+		  <Item text="Ресурс вложенного файла" url="/en-us/api-reference/beta/resources/fileattachment" />
+		  <Item text="Ресурс вложенного элемента" url="/en-us/api-reference/beta/resources/itemattachment" />
+		  <Item text="Ресурс вложенной ссылки" url="/en-us/api-reference/beta/resources/referenceattachment" />
+		  <Item text="Получение вложения" url="/en-us/api-reference/beta/api/attachment_get" />
+		  <Item text="Удаление вложения" url="/en-us/api-reference/beta/api/attachment_delete" />
+      </Item>
+	  <Item text="Категории" url="/en-us/api-reference/beta/resources/outlookcategory">
+		<Item text="Перечисление категорий" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Создание категории" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="Получение категории" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="Обновление категории" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="Удаление категории" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>    
+	  <Item text="Сортировка почты" url="/en-us/api-reference/beta/resources/manage_focused_inbox" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="">
         <Item text="Создание переопределения" url="/en-us/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="Создание переопределения для отправителя, определенного адресом SMTP." />
         <Item text="Список переопределений" url="/en-us/api-reference/beta/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="Получение списка переопределений для отправителя, указанного адресом SMTP." />
         <Item text="Обновление переопределения" url="/en-us/api-reference/beta/api/inferenceclassificationoverride_update" SEOKeyword="Microsoft Graph, сортировка почты" SEODescription="Обновление переопределения для отправителя, определенного адресом SMTP." />
@@ -3710,7 +3760,14 @@
         <Item text="Список дочерних папок" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEOKeyword="Список объектов childFolder, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Получение списка объектов MailFolder." />
         <Item text="Создание дочерней папки почты" url="/en-us/api-reference/beta/api/mailfolder_post_childfolders" SEOKeyword="Создание объекта MailFolder, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="С помощью этого API можно создать объект MailFolder." />
       </Item>
-      <Item text="Расширенные свойства" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
+      <Item text="Правила" url="/en-us/api-reference/beta/resources/messagerule">
+		<Item text="Перечисление правил" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
+		<Item text="Создание правила" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
+		<Item text="Получение правила" url="/en-us/api-reference/beta/api/messagerule_get" />
+		<Item text="Обновление правила" url="/en-us/api-reference/beta/api/messagerule_update" />	  
+		<Item text="Удаление правила" url="/en-us/api-reference/beta/api/messagerule_delete" />
+	  </Item>
+	  <Item text="Расширенные свойства" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
         <Item text="Однозначное расширенное свойство" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
           <Item text="Создание однозначного свойства" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
           <Item text="Получение однозначного свойства" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
@@ -3732,7 +3789,7 @@
         <Item text="Список вложений" url="/en-us/api-reference/beta/api/outlooktask_list_attachments" />
         <Item text="Добавление вложения" url="/en-us/api-reference/beta/api/outlooktask_post_attachments" />
       </Item>
-      <Item text="Папка задач Outlook" url="/en-us/api-reference/beta/resources/outlooktaskfolder">
+	  <Item text="Папка задач Outlook" url="/en-us/api-reference/beta/resources/outlooktaskfolder">
         <Item text="Список" url="/en-us/api-reference/beta/api/outlookuser_list_taskfolders" />
         <Item text="Создание" url="/en-us/api-reference/beta/api/outlookuser_post_taskfolders" />
         <Item text="Получение" url="/en-us/api-reference/beta/api/outlooktaskfolder_get" />
@@ -3750,6 +3807,20 @@
         <Item text="Перечисление папок задач в группах" url="/en-us/api-reference/beta/api/outlooktaskfolder_list_tasks" />
         <Item text="Создание папки задач в группе" url="/en-us/api-reference/beta/api/outlooktaskfolder_post_tasks" />
       </Item>
+	  <Item text="Вложение" url="/en-us/api-reference/beta/resources/attachment">
+		  <Item text="Ресурс вложенного файла" url="/en-us/api-reference/beta/resources/fileattachment" />
+		  <Item text="Ресурс вложенного элемента" url="/en-us/api-reference/beta/resources/itemattachment" />
+		  <Item text="Ресурс вложенной ссылки" url="/en-us/api-reference/beta/resources/referenceattachment" />
+		  <Item text="Получение вложения" url="/en-us/api-reference/beta/api/attachment_get" />
+		  <Item text="Удаление вложения" url="/en-us/api-reference/beta/api/attachment_delete" />
+      </Item>
+	  <Item text="Категории" url="/en-us/api-reference/beta/resources/outlookcategory">
+		<Item text="Перечисление категорий" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+		<Item text="Создание категории" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+		<Item text="Получение категории" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+		<Item text="Обновление категории" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+		<Item text="Удаление категории" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>    
       <Item text="Расширенные свойства" url="/en-us/api-reference/beta/resources/extended-properties-overview">
         <Item text="Однозначные расширенные свойства" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty">
           <Item text="Создание однозначного свойства" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" />
@@ -3789,7 +3860,14 @@
           <Item text="Создание открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Создание открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно создать открытое расширение." />
           <Item text="Получение открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Получение открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно получить открытое расширение." />
         </Item>
-        <Item text="Папка контактов" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="API для управления объектом contactFolder, API Microsoft Graph, API для управления объектом contactFolder" SEODescription="Папка, содержащая контакты.">
+        <Item text="Категории" url="/en-us/api-reference/beta/resources/outlookcategory">
+			<Item text="Перечисление категорий" url="/en-us/api-reference/beta/api/outlookuser_list_mastercategories" />
+			<Item text="Создание категории" url="/en-us/api-reference/beta/api/outlookuser_post_mastercategories" />
+			<Item text="Получение категории" url="/en-us/api-reference/beta/api/outlookcategory_get" />
+			<Item text="Обновление категории" url="/en-us/api-reference/beta/api/outlookcategory_update" />
+			<Item text="Удаление категории" url="/en-us/api-reference/beta/api/outlookcategory_delete" />
+	  </Item>    
+		<Item text="Папка контактов" url="/en-us/api-reference/beta/resources/contactfolder" SEOKeyword="API для управления объектом contactFolder, API Microsoft Graph, API для управления объектом contactFolder" SEODescription="Папка, содержащая контакты.">
           <Item text="Список папок контактов" url="/en-us/api-reference/beta/api/user_list_contactfolders" SEOKeyword="Список объектов ContactFolder, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка объектов ContactFolder." />
           <Item text="Создание папки контактов" url="/en-us/api-reference/beta/api/user_post_contactfolders" SEOKeyword="Создание объекта ContactFolder, API Microsoft Graph, API для управления объектами User" SEODescription="С помощью этого API можно создать объект ContactFolder." />
           <Item text="Вывод папки контактов" url="/en-us/api-reference/beta/api/contactfolder_get" SEOKeyword="Вывод объекта contactFolder, API Microsoft Graph, API для управления объектом contactFolder" SEODescription="Получение свойств и связей объекта contactFolder." />

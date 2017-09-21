@@ -2,7 +2,9 @@
 
 В Microsoft Graph предусмотрены необязательные параметры запросов, с помощью которых можно указывать и регулировать объем возвращаемых данных. Поддерживаются указанные ниже параметры запросов.
 
-|Имя|Описание|Примеры (щелкните пример, чтобы попробовать поработать с ним в [песочнице Graph][graph-explorer])
+>**Примечание.** Щелкните примеры, чтобы попробовать поработать с ними в [песочнице Graph][graph-explorer].
+
+|Имя|Описание|Пример|
 |:---------------|:--------|:-------|
 |[$count](#count)|Возвращает общее количество соответствующих ресурсов.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
 |[$expand](#expand)|Получает связанные ресурсы.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
@@ -14,11 +16,11 @@
 |[$skipToken](#skiptoken)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. (Вместо этого параметра некоторые API используют `$skip`.) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
 |[$top](#top)|Задает размер страницы результатов. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
 
-Эти параметры совместимы с [языком запросов OData версии 4][odata-query]. API Microsoft Graph поддерживают не все параметры, а поддержка конечных точек `v1.0` и `beta` может существенно отличаться. 
+Эти параметры совместимы с [языком запросов OData версии 4][odata-query]. Параметры, которые поддерживаются всеми API Microsoft Graph для конечной точки `v1.0`, могут значительно отличаться от таковых для конечной точки `beta`. 
 
 > **Примечание.** В конечной точке `beta` префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`. Дополнительные сведения и примеры см. в статье [Поддержка параметров запросов без префиксов $ в Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
 
-**Кодирование параметров запросов.**
+## <a name="encoding-query-parameters"></a>Кодирование параметров запроса
 
 К значениям параметров запросов нужно применить процентное кодирование. Многие клиенты HTTP, браузеры и инструменты (например, [песочница Graph][graph-explorer]) помогут вам в этом. Если запрос неудачный, одна из возможных причин — не удалось должным образом закодировать значения параметров запросов.
 
@@ -47,15 +49,15 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
->**Примечание.** `$count` не поддерживается коллекциями ресурсов, производных от [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md), таких как [user](../api-reference/v1.0/resources/user.md) или [group](../api-reference/v1.0/resources/group.md).
+>**Примечание.** Параметр `$count` не поддерживается коллекциями ресурсов, производных от [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md), такими как коллекции [user](../api-reference/v1.0/resources/user.md) или [group](../api-reference/v1.0/resources/group.md).
 
 ## <a name="expand"></a>expand
 
-Многие ресурсы Microsoft Graph выводят как объявленные свойства ресурса, так и его отношения с другими ресурсами. Эти отношения также называются свойствами ссылки или навигации и могут ссылаться как на один ресурс, так и на коллекцию ресурсов. Например, папки почты, управляющий и прямые подчиненные пользователя выводятся как отношения. 
+Многие ресурсы Microsoft Graph выводят как объявленные свойства ресурса, так и его связи с другими ресурсами. Эти связи также называются свойствами ссылки или навигации и могут ссылаться как на один ресурс, так и на коллекцию ресурсов. Например, папки почты, руководитель и подчиненные пользователя выводятся как связи. 
 
 Как правило, в одном запросе можно отдельно (но не одновременно) запросить или свойства ресурса, или одно из отношений. С помощью строкового параметра запроса `$expand` в результаты можно включить расширенный ресурс или коллекцию, на которые ссылается одно отношение (свойство навигации).
 
-В примере ниже возвращаются сведения о корневом диске, а также дочерние элементы верхнего уровня на диске:
+В приведенном ниже примере возвращаются сведения о корневом каталоге, а также дочерние элементы верхнего уровня на диске.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
@@ -87,18 +89,31 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 [Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
 
-Поддержка операторов `$filter` зависит от того, какой API Microsoft Graph используется. Обычно поддерживаются следующие логические операторы: равно (`eq`), не равно (`ne`), больше (`gt`), больше или равно (`ge`), меньше (`lt`), меньше или равно (`le`), и (`and`), или (`or`), нет (`not`). Часто поддерживается строковый оператор `startswith`. Некоторые API поддерживают лямбда-оператор `any`. Примеры использования см. в таблице ниже. Дополнительные сведения о синтаксисе `$filter` см. в [статье о протоколе OData][odata-filter].  
+Поддержка операторов `$filter` зависит от того, какой API Microsoft Graph используется. В большинстве случаев поддерживаются следующие операторы: 
 
-В таблице ниже приведено несколько примеров использования параметра запроса `$filter`.
+- `eq` (равняется);
+- `ne` (не равняется);
+- `gt` (больше чем);
+- `ge` (не меньше чем);
+- `lt` (меньше чем), `le` (не больше чем);
+- `and` (и);
+- `or` (или);
+- `not` (не).
+ 
+Часто поддерживается строковый оператор `startswith`. Некоторые API поддерживают лямбда-оператор `any`. Примеры использования см. в приведенной ниже таблице. Дополнительные сведения о синтаксисе `$filter` см. в [статье о протоколе OData][odata-filter].  
 
-|Описание|Примеры (щелкните пример, чтобы попробовать поработать с ним в [песочнице Graph][graph-explorer])|
+Приведенная ниже таблица содержит несколько примеров использования параметра запроса `$filter`.
+
+>**Примечание.** Щелкните примеры, чтобы попробовать поработать с ними в [песочнице Graph][graph-explorer].
+
+|Описание|Пример|
 |:--------|:-------|
 |  Поиск пользователей с именем Mary по нескольким свойствам. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
-| Получение всех событий вошедшего в систему пользователя, которые начинаются после 01.07.2017 г. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
-| Получение всех электронных писем с определенного адреса, полученных вошедшим в систему пользователем. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
-| Получение всех электронных писем, полученных вошедшим в систему пользователем в апреле 2017 г. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
-| Получение всех непрочитанных электронных писем в папке "Входящие" пользователя. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| Получение списка всех групп Office 365 в организации | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| Получение всех событий для вошедшего пользователя, которые начинаются после 01.07.2017 г. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
+| Получение всех сообщений с определенного адреса, полученных вошедшим пользователем. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
+| Получение всех сообщений, полученных вошедшим пользователем в апреле 2017 г. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
+| Получение всех непрочитанных сообщений в папке "Входящие" вошедшего пользователя. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
+| Получение списка всех групп Office 365 в организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 
 > **Примечание.** Ресурсы Azure AD не поддерживают следующие операторы `$filter`: `ne`, `gt`, `ge`, `lt`, `le` и `not`. В настоящее время строковый оператор `contains` не поддерживается ни одним ресурсом Microsoft Graph.
 
@@ -132,7 +147,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
  > **Примечание.** Ресурсы Azure AD, производные от [directoryObject](../api-reference/v1.0/resources/directoryobject.md), такие как [user](../api-reference/v1.0/resources/user.md) и [group](../api-reference/v1.0/resources/group.md), не позволяют объединять параметр `$orderby` с выражениями `$filter`. 
 
-## <a name="search"></a>search
+## <a name="search"></a>поиск
 
 Параметр запроса `$search` позволяет ограничить результаты запроса с помощью условия поиска.
 
@@ -142,7 +157,21 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 Условия поиска сообщений указываются с использованием [расширенного синтаксиса запросов (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). Результаты сортируются по дате и времени отправки сообщения.
 
-Вы можете указать следующие свойства для объекта `message` в условии `$search`: `attachments`, `bccRecipients`, `body`, `category`, `ccRecipients`, `content`, `from`, `hasAttachments`, `participants`, `receivedDateTime`, `sender`, `subject`, `toRecipients`.
+Вы можете указать следующие свойства для объекта `message` в условии `$search`:
+
+- `attachments`
+- `bccRecipients`
+- `body`
+- `category`
+- `ccRecipients`
+- `content`
+- `from`
+- `hasAttachments`
+- `participants`
+- `receivedDateTime`
+- `sender`
+- `subject`
+- `toRecipients`
 
 Если для поиска в сообщениях указано только значение, используются такие свойства поиска по умолчанию: `from`, `subject` и `body`.
 
@@ -183,15 +212,15 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
-В этом запросе фактически выполняется два поиска: нечеткий поиск по свойствам `displayName` и `emailAddress` людей, релевантных для вошедшего в систему пользователя, и поиск по теме "пицца" в отношении этих людей. Результаты упорядочиваются и затем возвращаются. Обратите внимание, что поиск не имеет ограничений, поэтому результаты могут содержать список пользователей с нечетким соответствием имени "tyl" или теме "pizza", как вместе, так и по отдельности.
+В этом запросе фактически выполняется два поиска: нечеткий поиск по свойствам `displayName` и `emailAddress` людей, релевантных для вошедшего пользователя, и поиск по теме "pizza" в отношении этих людей. Результаты ранжируются, упорядочиваются и возвращаются. Обратите внимание, что поиск не имеет ограничений, поэтому результаты могут содержать список пользователей с нечетким соответствием имени "tyl" или пользователей, интересующихся темой "pizza", или и тех, и других.
 
-Дополнительные сведения об API People см. в статье [Использование API People в Microsoft Graph для получения сведений о наиболее релевантных для вас людях](./people_example.md).  
+Дополнительные сведения об API поиска людей см. в статье [Получение сведений о релевантных людях](./people_example.md).  
 
 ## <a name="select"></a>select
 
-Параметр запроса `$select` позволяет возвратить набор свойств, отличный от набора по умолчанию для отдельного ресурса или коллекции ресурсов. С помощью параметра $select можно указать подмножество или множество свойств по умолчанию.
+Параметр запроса `$select` позволяет возвратить набор свойств, отличный от набора по умолчанию, для отдельного ресурса или коллекции ресурсов. С помощью параметра $select можно указать подмножество или супермножество свойств по умолчанию.
 
-Например, при получении сообщений от вошедшего в систему пользователя можно указать, что необходимо вернуть только свойства `from` и `subject`:
+Например, при получении сообщений вошедшего пользователя можно указать, что необходимо вернуть только свойства `from` и `subject`:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
@@ -212,7 +241,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
 
-> **Примечание.** Некоторые API Microsoft Graph, например Почта и Календарь Outlook (`message`, `event`, `calendar`), используют `$skip` для разбиения по страницам. Если результаты запроса занимают несколько страниц, эти API возвращают свойство `@odata:nextLink` с URL-адресом, содержащим параметр `$skip`. Этот URL-адрес можно использовать для возврата следующей страницы результатов. Дополнительные сведения см. в статье о [разбиении по страницам](./paging.md).
+> **Примечание.** Некоторые API Microsoft Graph, например для почты и календарей Outlook (`message`, `event`, `calendar`), используют `$skip` для разбиения по страницам. Если результаты запроса занимают несколько страниц, эти API возвращают свойство `@odata:nextLink` с URL-адресом, содержащим параметр `$skip`. Этот URL-адрес можно использовать для возврата следующей страницы результатов. Дополнительные сведения см. в статье о [разбиении по страницам](./paging.md).
 
 ## <a name="skiptoken"></a>skipToken
 
@@ -223,9 +252,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 Параметр запроса `$top` позволяет задать размер страницы в результирующем наборе. 
 
-Если результирующий набор будет содержать больше одной страницы элементов, текст ответа будет содержать параметр `@odata.nextLink`. Этот параметр содержит URL-адрес, с помощью которого можно получить следующую страницу результатов. Дополнительные сведения см. в статье о [разбиении по страницам](./paging.md). 
+Если результирующий набор будет содержать больше одной страницы элементов, тело отклика будет содержать параметр `@odata.nextLink`. Этот параметр содержит URL-адрес, с помощью которого можно получить следующую страницу результатов. Дополнительные сведения см. в статье о [разбиении по страницам](./paging.md). 
 
-Например, следующий запрос возвращает первые пять сообщений в папке "Входящие" пользователя:
+Например, следующий запрос возвращает первые пять сообщений в почтовом ящике пользователя:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
@@ -236,7 +265,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 ## <a name="error-handling-for-query-parameters"></a>Обработка ошибок параметров запроса
 
-Некоторые запросы возвращают сообщение об ошибке, если указанный параметр запроса не поддерживается. Например, невозможно использовать параметр `$expand` для отношения `user/photo`. 
+Некоторые запросы возвращают сообщение об ошибке, если указанный параметр запроса не поддерживается. Например, невозможно использовать `$expand` для связи `user/photo`. 
 
 ```http
 https://graph.microsoft.com/beta/me?$expand=photo
@@ -255,7 +284,7 @@ https://graph.microsoft.com/beta/me?$expand=photo
 }
 ```
 
-При этом необходимо отметить, что указанные в запросе параметры могут просто не сработать. Это может произойти, если не поддерживается либо сам параметр, либо их сочетание. В таких случаях необходимо проверить возвращенные запросом данные и определить, дали ли указанные параметры запроса желаемый результат. 
+При этом необходимо отметить, что указанные в запросе параметры могут просто не сработать. Это может произойти, если не поддерживаются либо сами параметры, либо их сочетание. В таких случаях необходимо проверить возвращенные запросом данные и определить, дали ли указанные параметры запроса желаемый результат. 
 
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
