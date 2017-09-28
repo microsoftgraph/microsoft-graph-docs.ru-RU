@@ -24,6 +24,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
