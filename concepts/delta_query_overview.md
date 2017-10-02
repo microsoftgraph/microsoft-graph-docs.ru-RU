@@ -67,7 +67,7 @@
 | Папки личных контактов | Функция [delta](../api-reference/v1.0/api/contactfolder_delta.md) ресурса [contactFolder](../api-reference/v1.0/resources/contactfolder.md) |
 | Личные контакты в папке | Функция [delta](../api-reference/v1.0/api/contact_delta.md) ресурса [contact](../api-reference/v1.0/resources/contact.md) |
 | Пользователи | Функция [delta](../api-reference/v1.0/api/user_delta.md) ресурса [user](../api-reference/v1.0/resources/user.md) | 
-| Элементы на диске\* | Функция [delta](../api-reference/v1.0/api/item_delta.md) ресурса [driveItem](../api-reference/v1.0/resources/driveItem.md) |
+| Элементы на диске\* | Функция [delta](../api-reference/v1.0/api/driveitem_delta.md) ресурса [driveItem](../api-reference/v1.0/resources/driveitem.md) |
 
 
 > \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для ресурсов drive будет обновлен в соответствии с использованием других типов ресурсов. Дополнительные сведения о текущем синтаксисе см. на странице <https://developer.microsoft.com/ru-ru/graph/docs/api-reference/v1.0/api/item_delta>
