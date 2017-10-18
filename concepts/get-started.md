@@ -115,6 +115,6 @@
 
 ## <a name="see-also"></a>См. также
 
-- Попробуйте примеры вызовов REST в нашем [обозревателе API](https://graph.microsoft.io/graph-explorer).
+- Опробуйте примеры вызовов REST в [песочнице Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
 - [Документация по конечной точке Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
 - [Документация по конечной точке Azure AD версии 2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)

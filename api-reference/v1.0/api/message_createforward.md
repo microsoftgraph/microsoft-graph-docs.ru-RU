@@ -1,6 +1,6 @@
 # <a name="message-createforward"></a>message: createForward
 
-Создание черновика пересылаемого сообщения. После этого вы сможете [обновить](../api/message_update.md) или [отправить](../api/message_send.md) черновик.
+Создание черновика для пересылки указанного ресурса [message](../resources/message.md). После этого можно [обновить](../api/message_update.md) черновик, чтобы добавить содержимое в **текст** или изменить другие свойства сообщения, либо просто [отправить](../api/message_send.md) черновик.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
@@ -26,6 +26,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -41,24 +42,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "Comment-value",
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "address": "address-value"
-      }
-    },
-    {
-      "emailAddress": {
-        "address": "address-value"
-      }
-    }
-  ]
-}
 ```
 
 ##### <a name="response"></a>Ответ

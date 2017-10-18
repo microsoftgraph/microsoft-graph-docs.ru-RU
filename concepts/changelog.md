@@ -6,20 +6,128 @@
 
 ## <a name="september-2017"></a>Сентябрь 2017 г.
 
+### <a name="intune-apis"></a>API Intune
+
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета|Добавлены новые объекты:<br/>[activeDirectoryWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md)<br/>[azureADWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile.md)<br/>[deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md)<br/>[deviceEnrollmentLimitConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentlimitconfiguration.md)<br/>[deviceEnrollmentPlatformRestrictionsConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration.md)<br/>[deviceEnrollmentWindowsHelloForBusinessConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md)<br/>[deviceManagementPartner](../api-reference/beta/resources/intune_onboarding_devicemanagementpartner.md)<br/>[enrollmentConfigurationAssignment](../api-reference/beta/resources/intune_onboarding_enrollmentconfigurationassignment.md)<br/>[windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md)<br/>[windows10NetworkBoundaryConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10networkboundaryconfiguration.md)<br/>[windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md)<br/>[windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md)<br/>[windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md)<br/>|
+|Дополнение|Бета|Добавлены новые сложные типы:<br/>[adminConsent](../api-reference/beta/resources/intune_devices_adminconsent.md)<br/>[allDevicesAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alldevicesassignmenttarget.md)<br/>[allLicensedUsersAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alllicensedusersassignmenttarget.md)<br/>[deviceAndAppManagementAssignmentTarget](../api-reference/beta/resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)<br/>[deviceEnrollmentPlatformRestriction](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestriction.md)<br/>[deviceHealthAttestationState](../api-reference/beta/resources/intune_devices_devicehealthattestationstate.md)<br/>[exclusionGroupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_exclusiongroupassignmenttarget.md)<br/>[groupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_groupassignmenttarget.md)<br/>[outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings.md)<br/>[windowsFirewallNetworkProfile](../api-reference/beta/resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)<br/>[windowsNetworkIsolationCloudResource](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresource.md)<br/>[windowsNetworkIsolationCloudResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresourcecollection.md)<br/>[windowsNetworkIsolationIPRangeCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationiprangecollection.md)<br/>[windowsNetworkIsolationPolicy](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy.md)<br/>[windowsNetworkIsolationResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationresourcecollection.md)<br/>|
+|Дополнение|Бета|Добавлено действие [sync](../api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync.md) для объекта [windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md). |
+|Дополнение|Бета|Добавлено действие [assign](../api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign.md) для объекта [windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md). |
+|Дополнение|Бета|Добавлено действие [localActions](../api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_localactions.md) для объекта [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy.md). |
+|Дополнение|Бета|Добавлено действие [setPriority](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority.md) для объекта [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md). |
+|Дополнение|Бета|Добавлено действие [assign](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign.md) для объекта [deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md). |
+|Дополнение|Бета|Добавлено действие uploadDepToken для коллекции [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md). |
+|Дополнение|Бета|Добавлено действие syncWithAppleDeviceEnrollmentProgram для коллекции [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md). |
+|Дополнение|Бета|Добавлено действие updateMobileAppIdentifierDeployments для объекта [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md). |
+|Дополнение|Бета|Добавлено действие assign для объекта [targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md). |
+|Дополнение|Бета|Добавлено действие assign для объекта [targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md). |
+|Дополнение|Бета|Добавлено действие assign для объекта [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md). |
+|Дополнение|Бета|Добавлена функция getEncryptionPublicKey для коллекции [depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md). |
+|Изменение|Бета|Добавлены свойства **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders**, **requireCompanyPortalAppIntegrity** и **conditionStatementId** для объекта [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md).|
+|Изменение|Бета|Добавлены свойства **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** и **requireCompanyPortalAppIntegrity** для объекта [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md).|
+|Изменение|Бета|Добавлены свойства **blockCrossProfileCopyPaste** и **requireAppVerify** для объекта [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md).|
+|Изменение|Бета|Добавлены свойства **kioskModeApps** и **requireAppVerify** для объекта [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md).|
+|Изменение|Бета|Удалено свойство **kioskModeManagedApps** объекта [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md).|
+|Изменение|Бета|Удалены свойства **cloudPkiProvider**, **createdDateTime**, **description**, **lastModifiedDateTime**, **displayName**, **syncStatus**, **lastSyncError**, **lastSyncDateTime**, **credentials**, **trustedRootCertificate** и **version** объекта [cloudPkiSubscription](../api-reference/beta/resources/intune_deviceconfig_cloudpkisubscription.md).|
+|Изменение|Бета|Удалены свойства **assignmentStatus**, **assignmentProgress** и **assignmentErrorMessage** объекта [deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md).|
+|Изменение|Бета|Добавлено свойство **adminConsent** для объекта [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md).|
+|Изменение|Бета|Добавлены свойства **vppTokenOrganizationName**, **vppTokenAccountType** и **vppTokenAppleId** для объекта [iosVppApp](../api-reference/beta/resources/intune_apps_iosvppapp.md).|
+|Изменение|Бета|Добавлены свойства **deviceEnrollmentType**, **wiFiMacAddress** и **deviceHealthAttestationState** для объекта [managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice.md).|
+|Изменение|Бета|Добавлено свойство **legacyAppConfiguration** для объекта [managedDeviceMobileAppConfiguration](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration.md).|
+|Изменение|Бета|Добавлено свойство **notApplicableCount** для объекта [managedDeviceMobileAppConfigurationDeviceSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md).|
+|Изменение|Бета|Добавлено свойство **notApplicableCount** для объекта [managedDeviceMobileAppConfigurationUserSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationusersummary.md).|
+|Изменение|Бета|Добавлены свойства **firewallBlockStatefulFTP**, **firewallIdleTimeoutForSecurityAssociationInSeconds**, **firewallPreSharedKeyEncodingMethod**, **firewallIPSecExemptionsAllowNeighborDiscovery**, **firewallIPSecExemptionsAllowICMP**, **firewallIPSecExemptionsAllowRouterDiscovery**, **firewallIPSecExemptionsAllowDHCP**, **firewallCertificateRevocationListCheckMethod**, **firewallMergeKeyingModuleSettings**, **firewallPacketQueueingMethod**, **firewallProfileDomain**, **firewallProfilePublic**, **firewallProfilePrivate**, **defenderAttackSurfaceReductionExcludedPaths**, **defenderOfficeAppsOtherProcessInjectionType**, **defenderOfficeAppsExecutableContentCreationOrLaunchType**, **defenderOfficeAppsLaunchChildProcessType**, **defenderOfficeMacroCodeAllowWin32ImportsType**, **defenderScriptObfuscatedMacroCodeType**, **defenderScriptDownloadedPayloadExecutionType**, **defenderEmailContentExecutionType**, **defenderGuardMyFoldersType**, **defenderGuardedFoldersAllowedAppPaths**, **defenderAdditionalGuardedFolders**, **defenderNetworkProtectionType**, **defenderExploitProtectionXml**, **defenderExploitProtectionXmlFileName**, **defenderSecurityCenterBlockExploitProtectionOverride**, **appLockerApplicationControl**, **applicationGuardBlockClipboardSharing**, **applicationGuardAllowPrintToPDF**, **applicationGuardAllowPrintToXPS**, **applicationGuardAllowPrintToLocalPrinters**, **applicationGuardAllowPrintToNetworkPrinters** и **bitLockerDisableWarningForOtherDiskEncryption** для объекта [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md).|
+|Изменение|Бета|Добавлены свойства **displayAppListWithGdiDPIScalingTurnedOn**, **displayAppListWithGdiDPIScalingTurnedOff**, **messagingBlockSync**, **messagingBlockMMS** и **messagingBlockRichCommunicationServices** для объекта [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md).|
+|Изменение|Бета|Удалено свойство **bluetoothDeviceName** объекта [windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md).|
+|Изменение|Бета|Удалены свойства **deviceAccountBlockExchangeServices**, **deviceAccountEmailAddress**, **deviceAccountExchangeServerAddress**, **deviceAccountRequirePasswordRotation** и **deviceAccountSessionInitiationProtocolAddress** объекта [windows10TeamGeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration.md).|
+|Изменение|Бета|Добавлено свойство навигации **localActions** для объекта [androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md).|
+|Изменение|Бета|Добавлены свойства навигации **windowsAutopilotSettings**, **windowsAutopilotDeviceIdentities**, **windowsAutopilotDeploymentProfiles**, **deviceEnrollmentConfigurations**, **deviceManagementPartners** и **depOnboardingSettings** для объекта [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md).|
+|Изменение|Бета|Удалено свойство навигации **cloudPkiSubscriptions** объекта [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md).|
+|Изменение|Бета|Добавлено свойство навигации **assignments** для объекта [targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md).|
+|Изменение|Бета|Добавлено свойство навигации **assignments** для объекта [targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md).|
+|Изменение|Бета|Добавлено свойство навигации **assignments** для объекта [windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md).|
+
+### <a name="onedrive"></a>OneDrive
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | 1.0 | Добавлено свойство **system** для ресурса [Drive][].  |
+| Дополнение | 1.0 | Добавлена связь **list** для ресурса [Drive][]. |
+| Дополнение | 1.0 | Добавлена связь **listItem** для ресурса [DriveItem][]. |
+| Дополнение | 1.0 | Добавлены связи **list** и **listItem** для ресурса [SharedDriveItem][]. |
+| Дополнение | 1.0 | Добавлены новые сложные типы: [FolderView][] |
+| Дополнение | 1.0 | Добавлено свойство **view** для сложного типа [Folder][]. |
+| Дополнение | 1.0 | Добавлено свойство **driveType** для сложного типа [ItemReference][]. |
+| Дополнение | 1.0 | Добавлены свойства **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** и **frameRate** для сложного типа [Video][]. |
+| Дополнение | Бета | Добавлено свойство **system** для ресурса [Drive][Drive-beta].  |
+| Дополнение | Бета | Добавлена связь **activities** для ресурса [Drive][Drive-beta]. |
+| Дополнение | Бета | Добавлено свойство **publication** для ресурса [DriveItem][DriveItem-beta]. |
+| Дополнение | Бета | Добавлены связи **activities** и **versions** для ресурса [DriveItem][DriveItem-beta]. |
+| Дополнение | Бета | Добавлены новые объекты: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]. |
+| Дополнение | Бета | Добавлены новые сложные типы: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta] и [VersionAction][VersionAction-beta]. |
+| Дополнение | Бета | Добавлено свойство **driveType** для сложного типа [ItemReference][ItemReference-beta]. |
+| Удаление | Бета | Удалено свойство **tenantId** сложного типа [SharepointIds][SharepointIds-beta]. |
+| Дополнение | 1.0 | Добавлены свойства **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** и **frameRate** для сложного типа [Video][Video-beta]. |
+| Дополнение | Бета | Добавлены действия [CheckIn][CheckIn-beta] и [CheckOut][CheckOut-beta] для ресурса [DriveItem][DriveItem-beta]. |
+| Дополнение | Бета | Добавлены свойства **expirationDateTime**, **password**, **message** и **recipients** для действия [CreateLink][CreateLink-beta] ресурса [DriveItem][DriveItem-beta]. |
+
+[Drive]: ../api-reference/v1.0/resources/drive.md
+[DriveItem]: ../api-reference/v1.0/resources/driveitem.md
+[SharedDriveItem]: ../api-reference/v1.0/resources/shareddriveitem.md
+[FolderView]: ../api-reference/v1.0/resources/folderview.md
+[Folder]: ../api-reference/v1.0/resources/folder.md
+[ItemReference]: ../api-reference/v1.0/resources/itemreference.md
+[Video]: ../api-reference/v1.0/resources/video.md
+[Drive-beta]: ../api-reference/beta/resources/drive.md
+[DriveItem-beta]: ../api-reference/beta/resources/driveitem.md
+[DriveItemVersion-beta]: ../api-reference/beta/resources/driveitemversion.md
+[ItemActivity-beta]: ../api-reference/beta/resources/itemactivity.md
+[CommentAction-beta]: ../api-reference/beta/resources/commentaction.md
+[CreateAction-beta]: ../api-reference/beta/resources/createaction.md
+[DeleteAction-beta]: ../api-reference/beta/resources/deleteaction.md
+[EditAction-beta]: ../api-reference/beta/resources/editaction.md
+[ItemActionSet-beta]: ../api-reference/beta/resources/itemactionset.md
+[ItemActivityTimeSet-beta]: ../api-reference/beta/resources/itemactivitytimeset.md
+[MentionAction-beta]: ../api-reference/beta/resources/mentionaction.md
+[MoveAction-beta]: ../api-reference/beta/resources/moveaction.md
+[PublicationFacet-beta]: ../api-reference/beta/resources/publicationfacet.md
+[RenameAction-beta]: ../api-reference/beta/resources/renameaction.md
+[RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
+[ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
+[VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
+[ItemReference-beta]: ../api-reference/beta/resources/itemreference.md
+[SharepointIds-beta]: ../api-reference/beta/resources/sharepointids.md
+[Video-beta]: ../api-reference/beta/resources/video.md
+[CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
+[CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
+[CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
+
+
 ### <a name="outlook-calendar"></a>Календарь Outlook
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
-| Дополнение | Бета | Добавлено свойство **locations** для ресурса [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event), позволяющее организовать событие, в котором могут участвовать пользователи из нескольких мест. |
+| Дополнение | Бета | Добавлены функции [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findroomlists) и [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findrooms) для объекта [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user). |
+| Дополнение | Бета | Добавлено свойство **locations** для объекта [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event), позволяющее организовать событие, в котором могут участвовать пользователи из нескольких расположений. |
 | Дополнение | Бета | Добавлено свойство **locationType** для сложного типа [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location).|
 | Дополнение | Бета | Добавлены свойства **uniqueId** и **uniqueIdType** для сложного типа [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location). В настоящее время эти свойства предназначены только для внутреннего использования.|
+| Изменение | 1.0 и бета-версия | Если у вас есть соответствующие делегированные разрешения от вошедшего пользователя, вы можете указать чужой идентификатор или имя участника-пользователя, чтобы [получить календарь](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get) или [получить события из календаря](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), если соответствующий пользователь предоставил доступ к этому календарю или делегировал его вошедшему пользователю. |
 
-
-### <a name="outlook-inbox-message-rules"></a>Правила обработки сообщений для папки "Входящие" Outlook
+### <a name="outlook-contacts"></a>Контакты Outlook
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
-| Дополнение | Бета | Добавлено свойство навигации **messageRules** для ресурса [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder). **messageRules** — это набор экземпляров [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule). |
+| Изменение | 1.0 и бета-версия | Если у вас есть соответствующие делегированные разрешения от вошедшего пользователя, вы можете указать чужой идентификатор или имя участника-пользователя, чтобы [получить папку контактов](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get) или [получить контакты из папки](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), если соответствующий пользователь предоставил доступ к этой папке или делегировал свой почтовый ящик вошедшему пользователю. |
+
+
+### <a name="outlook-mail"></a>Почта Outlook
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | Бета | Добавлено свойство **internetMessageHeaders** для объекта [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/message). |
+| Дополнение | Бета | Добавлен сложный тип [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/internetmessageheader).|
+| Дополнение | Бета | Добавлено свойство навигации **messageRules** для объекта [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder). **messageRules** — это набор экземпляров [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule). |
 | Дополнение | Бета | Добавлены объект [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) и сложные типы [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates) и [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange).  |
 | Дополнение | Бета | Добавлены следующие операции CRUD для правил обработки сообщений: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update) и [delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
 
@@ -28,9 +136,82 @@
 
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
-| Дополнение | Бета | Добавлено новое свойство навигации **masterCategories** для объекта [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser).  |
+| Дополнение | Бета | Добавлено новое свойство навигации **masterCategories** для объекта [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser). **masterCategories** — это коллекция объектов [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory). |
+| Дополнение | Бета | Добавлен объект [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory). |
+| Дополнение | Бета | Добавлены следующие операции CRUD для объекта [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory): [создание](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_post_mastercategories), [получение](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_get), [обновление](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_update) и [удаление](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_delete). |
 | Дополнение | Бета | Добавлена новая функция [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) для объекта [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser).  |
 | Дополнение | Бета | Добавлена новая функция [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) для объекта [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser).  |
+
+
+### <a name="sharepoint-lists"></a>Списки SharePoint
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | 1.0 | Добавлены новые объекты: [ColumnDefinition][], [ColumnLink][], [ContentType][], [List][], [ListItem][]. |
+| Дополнение | 1.0 | Добавлены связи **columns**, **contentTypes**, **items** и **lists** для ресурса [Site][]. |
+| Дополнение | 1.0 | Добавлены новые сложные типы: [BooleanColumn][], [CalculatedColumn][], [ChoiceColumn][], [ContentTypeInfo][], [ContentTypeOrder][], [CurrencyColumn][], [DateTimeColumn][], [DefaultColumnValue][], [ListInfo][], [LookupColumn][], [NumberColumn][], [PersonOrGroupColumn][], [SystemFacet][], [TextColumn][]. |
+| Дополнение | Бета | Добавлены новые объекты: [BaseItemVersion][BaseItemVersion-beta], [ColumnLink][ColumnLink-beta], [ContentType][ContentType-beta], [ListItemVersion][ListItemVersion-beta]. |
+| Дополнение | Бета | Добавлены свойства **columnGroup**, **currency**, **defaultValue** и **displayName** для объекта [ColumnDefinition][ColumnDefinition-beta]. |
+| Дополнение | Бета | Добавлены свойства **displayName** и **system** для ресурса [List][List-beta]. |
+| Дополнение | Бета | Добавлены связи **activities** и **contentTypes** для ресурса [List][List-beta]. |
+| Дополнение | Бета | Добавлено свойство **contentType** для ресурса [ListItem][ListItem-beta]. |
+| Дополнение | Бета | Добавлены связи **activities** и **versions** для ресурса [ListItem][ListItem-beta]. |
+| Дополнение | Бета | Добавлена связь **contentTypes** для ресурса [Site][Site-beta]. |
+| Дополнение | Бета | Добавлено свойство **outputType** для типа [BooleanColumn][BooleanColumn-beta]. |
+| Дополнение | Бета | Добавлены новые сложные типы: [ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta], [CurrencyColumn][CurrencyColumn-beta] и [SystemFacet][SystemFacet-beta]. |
+| Дополнение | Бета | Добавлено свойство **contentTypesEnabled** для сложного типа [ListInfo][ListInfo-beta]. |
+| Дополнение | Бета | Добавлено свойство **allowUnlimitedLength** для сложного типа [LookupColumn][LookupColumn-beta]. |
+| Изменение   | Бета | Имя свойства **allowMultipleValue** изменено на **allowMultipleValues** для сложного типа [LookupColumn][LookupColumn-beta]. |
+| Изменение   | Бета | Имя свойства **chooseFrom** изменено на **chooseFromType** для сложного типа [PersonOrGroupColumn][PersonOrGroupColumn-beta]. |
+| Удаление | Бета | Удалено свойство **locale** сложного типа [NumberColumn][NumberColumn-beta]. |
+| Удаление | Бета | Удалено свойство **enforceUniqueValues** сложного типа [PersonOrGroupColumn][PersonOrGroupColumn-beta]. |
+
+[BaseItemVersion-beta]: ../api-reference/beta/resources/baseitemversion.md
+[BooleanColumn-beta]:  ../api-reference/beta/resources/booleanColumn.md
+[BooleanColumn]: ../api-reference/v1.0/resources/booleancolumn.md
+[CalculatedColumn]: ../api-reference/v1.0/resources/calculatedcolumn.md
+[ChoiceColumn]: ../api-reference/v1.0/resources/choicecolumn.md
+[ColumnDefinition-beta]: ../api-reference/beta/resources/columndefinition.md
+[ColumnDefinition]: ../api-reference/v1.0/resources/columndefinition.md
+[ColumnLink-beta]: ../api-reference/beta/resources/columnLink.md
+[ColumnLink]: ../api-reference/v1.0/resources/columnLink.md
+[ContentType-beta]: ../api-reference/beta/resources/contentType.md
+[ContentType]: ../api-reference/v1.0/resources/contentType.md
+[ContentTypeInfo-beta]: ../api-reference/beta/resources/contentTypeInfo.md
+[ContentTypeInfo]: ../api-reference/v1.0/resources/contentTypeInfo.md
+[ContentTypeOrder-beta]: ../api-reference/beta/resources/contentTypeOrder.md
+[ContentTypeOrder]: ../api-reference/v1.0/resources/contentTypeOrder.md
+[CurrencyColumn-beta]: ../api-reference/beta/resources/currencycolumn.md
+[CurrencyColumn]: ../api-reference/v1.0/resources/currencycolumn.md
+[DateTimeColumn]: ../api-reference/v1.0/resources/datetimecolumn.md
+[DefaultColumnValue]: ../api-reference/v1.0/resources/defaultColumnValue.md
+[List-beta]: ../api-reference/beta/resources/list.md
+[List]: ../api-reference/v1.0/resources/list.md
+[ListInfo-beta]: ../api-reference/beta/resources/listinfo.md
+[ListInfo]: ../api-reference/v1.0/resources/listinfo.md
+[ListItem-beta]: ../api-reference/beta/resources/listitem.md
+[ListItem]: ../api-reference/v1.0/resources/listitem.md
+[ListItemVersion-beta]: ../api-reference/beta/resources/listitemversion.md
+[LookupColumn-beta]: ../api-reference/beta/resources/lookupColumn.md
+[LookupColumn]: ../api-reference/v1.0/resources/lookupcolumn.md
+[NumberColumn-beta]: ../api-reference/beta/resources/numberColumn.md
+[NumberColumn]: ../api-reference/v1.0/resources/numbercolumn.md
+[PersonOrGroupColumn-beta]: ../api-reference/beta/resources/personOrGroupColumn.md
+[PersonOrGroupColumn]: ../api-reference/v1.0/resources/personorgroupcolumn.md
+[Site-beta]: ../api-reference/beta/resources/site.md
+[Site]: ../api-reference/v1.0/resources/site.md
+[SystemFacet-beta]: ../api-reference/beta/resources/systemfacet.md
+[SystemFacet]: ../api-reference/v1.0/resources/systemFacet.md
+[TextColumn]: ../api-reference/v1.0/resources/textcolumn.md
+
+
+### <a name="sharepoint-sites"></a>Сайты SharePoint
+
+|**Тип изменения**|**Версия**|**Описание**|
+|:-------------|:-----------|:--------------|
+| Дополнение | Бета | Добавлены свойства **dataLocationCode** и **root** для сложного типа [SiteCollection][SiteCollection-beta]. |
+
+[SiteCollection-beta]: ../api-reference/beta/resources/sitecollection.md
 
 
 ## <a name="august-2017"></a>Август 2017 г.
@@ -74,7 +255,7 @@
 |**Тип изменения**|**Версия**|**Описание**|
 |:-------------|:-----------|:--------------|
 | Дополнение | 1.0 и бета-версия | Добавлено свойство навигации [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) для **site**.  |
-| Дополнение | Бета-версия | Добавлены целевые параметры *siteCollectionId* и *siteId* для операций копирования. Пример: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
+| Дополнение | Бета | Добавлены целевые параметры *siteCollectionId* и *siteId* для операций копирования. Пример: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 ### <a name="people"></a>Люди 
 
@@ -85,7 +266,7 @@
 
 
 
-## <a name="july-2017"></a>Июль 2017 г.
+## <a name="july-2017"></a>июль 2017 г.
 
 ### <a name="group-settings"></a>Параметры группы
 

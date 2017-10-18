@@ -1,6 +1,15 @@
 # <a name="add-attachment"></a>Добавление вложения
 
-С помощью этого API можно создать экземпляр Attachment.
+С помощью этого API можно создать объект Attachment.
+
+Допустимые типы вложений:
+
+* файл (ресурс [fileAttachment](../resources/fileattachment.md));
+* элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));
+* ссылка на файл (ресурс [referenceAttachment](../resources/referenceAttachment.md)).
+
+Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md). 
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
