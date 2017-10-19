@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: baseItem
+ms.openlocfilehash: bbfebd734407259c391cdb1ce74beb96dc74d8bf
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
 **baseItem** — это абстрактный ресурс, который содержит стандартный набор свойств, также используемых несколькими другими типами ресурсов. Ниже перечислены ресурсы, производные от ресурса **baseItem**.
@@ -45,9 +56,9 @@
 | lastModifiedDateTime | dateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.                                   |
 | name                 | string            | Имя элемента. Чтение и запись.                                                      |
 | parentReference      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.                              |
-| webUrl               | string (url)      | URL-адрес для отображения ресурса в браузере. Только для чтения.                              |
+| webUrl               | строка (url-адрес)      | URL-адрес для отображения ресурса в браузере. Только для чтения.                              |
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 [itemReference]: itemreference.md
 
 ## <a name="remarks"></a>Примечания
@@ -61,8 +72,5 @@
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/baseItem",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Resources/BaseItem"
 } -->

@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: quota
+ms.openlocfilehash: f786a2cf84b9553d2f36d0355a9c34a541243d81
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
 # <a name="quota-resource-type"></a>Тип ресурса quota
 
 Ресурс **quota** предоставляет сведения об ограничениях дискового пространства в ресурсе [Drive](drive.md).
@@ -41,12 +52,10 @@
 | `critical` | Объем свободного дискового пространства менее 1 % общего объема дискового пространства.                                                                                                                       |
 | `exceeded` | Объем использованного дискового пространства превышает максимально допустимый объем дискового пространства. Вам не удастся добавлять новые файлы или папки на диск, пока объем использованного дискового пространства не станет меньше общего объема дискового пространства или пока вы не приобретете дополнительное дисковое пространство. |
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "quota resource",
-  "keywords": "",
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Quota"
+} -->

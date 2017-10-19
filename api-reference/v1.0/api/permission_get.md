@@ -1,8 +1,26 @@
-# <a name="get-permission"></a>Получение разрешения
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "Получение разрешений"
+ms.openlocfilehash: 34171ca2c862857069f904103681ecc9b1646fc7
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 
-Получение свойств и связей объекта разрешений.
+В этой статье рассказывается, как возвратить действующее разрешение на общий доступ для конкретного ресурса разрешения.
+
+Действующие разрешения для элемента могут быть заданы непосредственно для элемента или унаследованы от его предков.
+
+Вызывающая сторона может распознать унаследованное разрешение, проверив свойство `inheritedFrom`. Это свойство представляет собой ресурс [itemReference](../resources/itemReference.md), ссылающийся на элемент, от которого унаследовано разрешение.
+
+Уровни разрешений SharePoint, заданные для элемента, возвращаются с префиксом SP. Примеры: SP.View Only, SP.Limited Access, SP.View Web Analytics Data. См. [полный список ролей SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -14,46 +32,44 @@
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /me/drive/items/{item-id}/permissions/{perm-id}
-GET /me/drive/root:/{path}:/permissions/{perm-id}
 GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+GET /me/drive/items/{item-id}/permissions/{perm-id}
+GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+Этот метод поддерживает [параметр запроса $select](../../../concepts/query_parameters.md) для формирования ответа.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [Permission](../resources/permission.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на доступ к разрешению для корневой папки.
+Ниже показан пример запроса на доступ к разрешению для папки.
 
-<!-- {
-  "blockType": "request",
-  "name": "get_permission"
-}-->
+<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions/{perm-id}
+GET /me/drive/items/{item-id}/permissions/{perm-id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
-} -->
+
+### <a name="response"></a>Ответ
+
+При успешном выполнении этот метод возвращает ресурс [Permission](../resources/permission.md) для указанного идентификатора. 
+
+<!-- {"blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 762
 
 {
   "grantedTo": {
@@ -67,7 +83,7 @@ Content-length: 762
 }
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
 Ресурс [Permission](../resources/permission.md) использует _аспекты_ для предоставления сведений о типе разрешения, представленного ресурсом.
 
@@ -75,12 +91,16 @@ Content-length: 762
 
 Разрешения с аспектом [**invitation**](../resources/sharinginvitation.md) представляют разрешения, добавленные при приглашении определенных пользователей или групп поработать с файлом.
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### <a name="error-responses"></a>Ответы с ошибками
+
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+
+[error-response]: ../../../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "Get permission",
-  "keywords": "",
+  "description": "Get a DriveItem's sharing permissions",
+  "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Get permission"
-}-->
+  "tocPath": "Sharing/Permissions"
+} -->

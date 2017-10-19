@@ -1,8 +1,21 @@
-# <a name="deleted-resource-type"></a>Тип ресурса Deleted
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Deleted
+ms.openlocfilehash: 1d45219b2ef26bdc96c46e386d66d91874f9bc0b
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="deleted-facet"></a>Аспект Deleted
 
-Тип ресурса **Deleted** указывает, что элемент был удален. В этой версии API наличие ненулевого значения ресурса указывает, что файл был удален. Нулевое (или отсутствующее) значение указывает, что файл не удален.
+Ресурс **Deleted** указывает, что элемент был удален.
+В этой версии API наличие ненулевого значения ресурса указывает, что файл был удален.
+Нулевое (или отсутствующее) значение указывает, что файл не удален.
 
-Дополнительные сведения о записи исправлений и поиске удаленных элементов см. в статье [Просмотр изменений элемента](../api/item_delta.md).
+Дополнительные сведения об отслеживании изменений и поиске удаленных элементов см. в статье о том, как [просматривать изменения для элемента](../api/driveitem_delta.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -20,7 +33,6 @@
   "state": "string"
 }
 ```
-
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип   | Описание                               |
@@ -31,13 +43,10 @@
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deleted resource",
-  "keywords": "",
+  "description": "The deleted facet providers properties about deleted items",
+  "keywords": "deleted,delete,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Deleted"
+} -->

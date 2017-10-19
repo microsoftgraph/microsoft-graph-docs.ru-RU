@@ -1,12 +1,22 @@
-# <a name="filesysteminfo-resource-type"></a>Тип ресурса FileSystemInfo
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: FileSystemInfo
+ms.openlocfilehash: 9a5214f9c5e161de0be66ac634c7c5538b203772
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="filesysteminfo-facet"></a>Аспект FileSystemInfo
 
-Ресурс **FileSystemInfo** содержит свойства, которые отображаются в локальной файловой системе устройства для локальной версии элемента. Этот аспект можно использовать, чтобы указать последнюю дату изменения или создания элемента, какой она была на локальном устройстве.
+Ресурс **FileSystemInfo** содержит свойства, которые отображаются в локальной файловой системе устройства для локальной версии элемента.
+Этот аспект можно использовать, чтобы указать дату создания или последнего изменения элемента, какой она была на локальном устройстве.
 
-**Примечание.** Свойство **FileSystemInfo** недоступно для DriveItems в SharePoint или OneDrive для бизнеса.
+Он доступен в свойстве fileSystemInfo ресурсов [driveItem][item-resource].
 
 ## <a name="json-representation"></a>Представление JSON
-
-Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -18,8 +28,9 @@
 
 ```json
 {
-  "createdDateTime": "datetime",
-  "lastModifiedDateTime": "datetime"
+  "createdDateTime" : "datetime",
+  "lastAccessedDateTime": "datetime",
+  "lastModifiedDateTime" : "datetime"
 }
 ```
 
@@ -33,24 +44,28 @@
 
 ## <a name="notes"></a>Примечания
 
-Значения свойств **createdDateTime** и **lastModifiedDateTime** отличаются от этих же свойств ресурса [DriveItem](driveitem.md). В качестве значений для ресурса DriveItem выступают созданные или измененные дата и время, которые можно увидеть в службе. Значения, хранящиеся в ресурсе **FileSystemInfo**, предоставляются клиентом.
+Значения свойств **createdDateTime** и **lastModifiedDateTime** отличаются от этих же свойств ресурса [DriveItem](driveitem.md).
+В качестве значений для ресурса DriveItem выступают дата и время создания или изменения, которые зарегистрированы в службе.
+Значения, хранящиеся в ресурсе **FileSystemInfo**, предоставляет клиент.
 
-Например, если файл был создан на устройстве в понедельник, но не загружен в службу до вторника, клиент, загружающий файл, должен прописать аспект `fileSystemInfo`включить дату создания в понедельник. При получении метаданных элемента в качестве даты его создания указывается вторник, но в аспекте `fileSystemInfo` отображается исходная дата создания — понедельник.
+Например, если файл был создан на устройстве в понедельник, но не отправлен в службу до вторника, клиент, отправляющий файл, должен записать дату создания, соответствующую понедельнику, в аспект `fileSystemInfo`. При получении метаданных элемента в качестве даты его создания будет указан вторник, но в аспекте `fileSystemInfo` будет отображаться исходная дата создания — понедельник.
 
 Эти свойства доступны для чтения и записи. Если вы загружаете файл и вам известны локальные клиентские значения для этих полей, их необходимо включить в запрос.
 
 Если содержимое файла обновлено и эти свойства не предоставлены, **lastModifiedDateTime** автоматически сбрасывает текущее время.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
+
+* Свойство **lastAccessedDateTime** недоступно для элементов в SharePoint Online или в OneDrive для бизнеса.
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "fileSystemInfo resource",
-  "keywords": "",
+  "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
+  "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/FileSystemInfo"
+} -->

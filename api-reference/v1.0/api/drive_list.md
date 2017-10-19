@@ -1,6 +1,17 @@
-# <a name="list-available-drives"></a>Список доступных дисков
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "Создание списка ресурсов Drive"
+ms.openlocfilehash: 84771e589a65d11fc06707eb01b6211cf90a8581
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="list-available-drives"></a>Создание списка доступных дисков
 
-Получение списка ресурсов [Drive](../resources/drive.md), доступных целевому объекту [User](../resources/user.md) или [Group](../resources/group.md). Приложение также может запросить набор библиотек документов на корневом сайте SharePoint.
+В этой статье рассказывается, как получить список ресурсов [Drive](../resources/drive.md), доступных для целевого объекта User, Group или [Site](../resources/site.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -12,88 +23,105 @@
 |Делегированные (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Для приложений | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-## <a name="http-request"></a>HTTP-запрос
+## <a name="list-a-groups-drives"></a>Создание списка дисков группы
 
-<!-- { "blockType": "ignored" } -->
+Чтобы создать список библиотек документов для группы, ваше приложение должно запросить связь **drives** в объекте Group.
+
+### <a name="http-request"></a>HTTP-запрос
+
+<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
 
 ```http
-GET /drives
+GET /groups/{groupId}/drives
+```
+
+## <a name="list-a-sites-drives"></a>Создание списка дисков сайта
+
+Чтобы создать список библиотек документов для сайта, ваше приложение должно запросить связь **drives** в объекте Site.
+
+<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
+
+```http
+GET /sites/{siteId}/drives
+```
+
+## <a name="list-a-users-drives"></a>Создание списка дисков пользователя
+
+<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
+
+```http
+GET /users/{userId}/drives
+```
+
+## <a name="list-the-current-users-drives"></a>Создание списка дисков текущего пользователя
+
+<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
+
+```http
 GET /me/drives
-GET /sites/{site-id}/drives
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.
 
-## <a name="request-body"></a>Тело запроса
+Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки ответа.
 
-Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Drive](../resources/drive.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код ответа `200 OK` и коллекцию объектов [Drive](../resources/drive.md) в теле ответа.
 
-## <a name="example"></a>Пример
+<!-- { "blockType": "response", 
+       "@odata.type": "Collection(microsoft.graph.drive)",
+       "name": ["group-list-drives", "site-list-drives", "user-list-drives", "enum-drives"],
+       "truncated": true } -->
 
-##### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса на получение списка дисков пользователя.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drives"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/drives
-```
-
-##### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive",
-  "isCollection": true
-} -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 579
+Content-Type: application/json
 
 {
   "value": [
     {
-      "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "driveType": "business",
+      "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+      "driveType": "documentLibrary",
+      "name": "Shared Documents",
       "owner": {
-          "user": {
-              "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-              "displayName": "Ryan Gregg"
-          }
-      },
-      "quota": {
-          "deleted": 256938,
-          "remaining": 1099447353539,
-          "state": "normal",
-          "total": 1099511627776
+        "user": {
+          "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+          "displayName": "Ryan Gregg"
+        }
+      }
+    },
+    {
+      "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+      "driveType": "documentLibrary",
+      "name": "Contoso Project Files",
+      "owner": {
+        "user": {
+          "id": "406B2281-18E8-4416-9857-38C531B904F1",
+          "displayName": "Daron Spektor"
+        }
       }
     }
   ]
 }
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
-У большинства пользователей есть только ресурс Drive. Для групп и некоторых пользователей может быть доступно несколько дисков.
+У большинства пользователей имеется только один ресурс Drive.
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+Для групп и сайтов может быть доступно несколько ресурсов Drive.
+
+По умолчанию ресурсы Drive с аспектом [system][] скрыты.
+Чтобы создать их список, включите параметр `system` в оператор `$select`.
+
+[system]: ../resources/systemFacet.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "List drives",
-  "keywords": "",
+  "description": "List the available drives for a user, group, or site.",
+  "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/List Drives"
-}-->
+  "tocPath": "Drives/List drives"
+} -->

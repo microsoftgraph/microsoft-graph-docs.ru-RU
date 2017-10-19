@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: site
+ms.openlocfilehash: db465f93f336a51d862daf6e05b1d6bc422247ea
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
 # <a name="site-resource"></a>Ресурс site
 
 Ресурс **site** предоставляет метаданные и связи для сайта SharePoint.
@@ -6,17 +17,19 @@
 
 Все приведенные ниже примеры относятся к `https://graph.microsoft.com/v1.0`.
 
-| Имя задачи            | Пример запроса                                   |
-| :------------------- | :------------------------------------------------ |
-| [Получение корневого сайта][]    | GET /sites/root                                   |
-| [Получение сайта][]         | GET /sites/{site-id}                              |
-| [Получение сайта по пути][] | GET /sites/{hostname}:/{site-path}                |
-| [Получение сайта для группы][] | GET /groups/{group-id}/sites/root             |
+| Имя задачи                | Пример запроса
+|:-------------------------|:--------------------------------------------------
+| [Получение корневого сайта][]        | GET /sites/root
+| [Получение сайта][]             | GET /sites/{site-id}
+| [Получение сайта по пути][]     | GET /sites/{hostname}:/{site-path}
+| [Получение сайта для группы][] | GET /groups/{group-id}/sites/root
+| [Поиск сайтов][]     | GET /sites?search={query}
 
 [Получение сайта]: ../api/site_get.md
 [Получение корневого сайта]: ../api/site_get.md
-[Получение сайта по пути]: ../api/site_get.md
+[Получение сайта по пути]: ../api/site_getbypath.md
 [Получение сайта для группы]: ../api/site_get.md
+[Поиск сайтов]: ../api/site_search.md
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -38,10 +51,13 @@
   "displayName": "string",
 
   /* relationships */
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
+  "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
@@ -71,17 +87,23 @@
 
 ## <a name="relationships"></a>Связи
 
-| Имя связи | Тип                     | Описание
-|:------------------|:-------------------------|:----------------------------------
-| **drive**         | [drive][]                | Диск по умолчанию (библиотека документов) для этого сайта.
-| **drives**        | Collection([drive][])    | Коллекция дисков (библиотек документов) на этом сайте.
-| **items**         | Collection([baseItem][]) | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
-| **sites**         | Collection([site][])     | Коллекция дочерних сайтов этого сайта.
-| **onenote**       | [onenote][]              | Вызывает службу OneNote для выполнения операций, касающихся записных книжек.
+| Имя связи | Тип                             | Описание
+|:------------------|:---------------------------------|:----------------------
+| **columns**       | Collection([columnDefinition][]) | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.
+| **contentTypes**  | Collection([contentType][])      | Коллекция типов контента, определенных для этого сайта.
+| **drive**         | [drive][]                        | Диск по умолчанию (библиотека документов) для этого сайта.
+| **drives**        | Collection([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
+| **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
+| **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
+| **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
+| **onenote**       | [onenote][]                      | Вызывает службу OneNote для выполнения операций, связанных с записными книжками.
 
+[columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
+[contentType]: contentType.md
 [drive]: drive.md
 [identitySet]: identityset.md
+[list]: list.md
 [site]: site.md
 [onenote]: onenote.md
 
@@ -90,8 +112,6 @@
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/Site",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Sites",
+  "tocBookmarks": { "Resources/Site": "#" }
 } -->

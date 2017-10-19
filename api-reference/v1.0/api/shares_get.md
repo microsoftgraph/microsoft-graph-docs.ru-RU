@@ -1,8 +1,19 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "Доступ к общим элементам"
+ms.openlocfilehash: d396e7bb79f3c2bbc9c824d48b6fa3df4a5ef26c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
 # <a name="accessing-shared-driveitems"></a>Доступ к общим элементам DriveItem
 
 Вы можете получить доступ к общим элементам [DriveItem](../resources/driveitem.md) или коллекции общих элементов, используя параметр **shareId** или URL-адрес для совместного доступа.
 
-Чтобы использовать URL-адрес для совместного доступа с этим API, вашему приложению необходимо [преобразовать URL-адрес в токен общего доступа](#transform-a-sharing-url).
+Чтобы использовать URL-адрес для совместного доступа с этим API, вашему приложению необходимо [преобразовать URL-адрес в токен общего доступа](#encoding-sharing-urls).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -17,38 +28,55 @@
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /shares/{sharingIdOrUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+### <a name="path-parameters"></a>Параметры пути
 
-## <a name="response"></a>Отклик
+| Имя параметра        | Значение    | Описание                                                                         |
+|:----------------------|:---------|:------------------------------------------------------------------------------------|
+| **sharingTokenOrUrl** | `string` | Обязательный. Маркер общего доступа, возвращенный API, или правильно закодированный URL-адрес для общего доступа. |
+
+### <a name="encoding-sharing-urls"></a>Кодирование URL-адресов для общего доступа
+
+Чтобы закодировать URL-адрес для общего доступа, используйте следующую логику:
+
+1. Для начала примените к URL-адресу кодировку base64.
+2. Преобразуйте результат из кодировки base64 в [недополненный формат base64url](https://en.wikipedia.org/wiki/Base64), удалив символы `=` в конце значения и заменив `/` символом `_`, а `+` — символом `-`.)
+3. Добавьте `u!` в начало строки.
+
+Пример кодирования URL-адреса на языке C#:
+
+```csharp
+string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&authKey=1201919!12921!1";
+string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
+string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
+```
+
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и ресурс [sharedDriveItem](../resources/shareddriveitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Вот пример запроса для получения общего элемента:
 
-<!-- {
-  "blockType": "request",
-  "name": "get_shares_by_url"
-}-->
+<!-- { "blockType": "request", "name": "get-shared-root" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
-##### <a name="response"></a>Отклик
+
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-} -->
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -61,6 +89,10 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
+  },
+  "remoteItem": { 
+    "driveId": "",
+    "id": ""
   }
 }
 ```
@@ -71,15 +103,19 @@ Content-type: application/json
 
 ## <a name="example-single-file"></a>Пример (один файл)
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
-При запросе связи **корня** будет возвращен элемент **DriveItem**, к которому был предоставлен доступ.
+При запросе связи **driveItem** будет возвращен элемент **DriveItem**, к которому предоставлен общий доступ.
+
+<!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
+GET /shares/{shareIdOrUrl}/driveItem
 ```
 
-##### <a name="response"></a>Ответ
+### <a name="response"></a>Ответ
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -96,15 +132,19 @@ Content-Type: application/json
 
 ## <a name="example-shared-folder"></a>Пример (общая папка)
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
-При запросе связи **корня** и расширении **дочерней** коллекции будет возвращен элемент **DriveItem**, к которому был предоставлен доступ, а также файлы в общей папке.
+При запросе связи **driveItem** и расширении коллекции **children** будет возвращен элемент **DriveItem**, к которому предоставлен общий доступ, а также файлы, содержащиеся в общей папке.
+
+<!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
+GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -114,7 +154,7 @@ Content-Type: application/json
   "id": "9FFFDB3C-5B87-4062-9606-1B008CA88E44",
   "name": "Contoso Project",
   "eTag": "2246BD2D-7811-4660-BD0F-1CF36133677B,1",
-  "folder": {}
+  "folder": {},
   "size": 10911212,
   "children": [
     {
@@ -133,33 +173,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a>Преобразование URL-адреса для совместного доступа
+## <a name="error-responses"></a>Ответы с ошибками
 
-Чтобы получить доступ к URL-адресу для совместного доступа с помощью API **общих ресурсов**, необходимо преобразовать URL-адрес в токен для совместного доступа.
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 
-Чтобы преобразовать URL-адрес в токен для совместного доступа, выполните указанные ниже действия.
+## <a name="remarks"></a>Замечания
 
-1. Закодируйте URL-адрес для общего доступа с использованием кодировки Base64.
-2. Преобразуйте данные в кодировке Base64 в [формат URL-адреса с недополненной кодировкой Base64](https://en.wikipedia.org/wiki/Base64), выполнив указанные ниже действия.
-  1. Удалите символы `=` в конце строки.
-  2. Замените небезопасные символы URL-адреса на эквивалентные символы; замените `/` на `_`, а `+` — на `-`.
-3. Добавьте `u!` в начало строки.
+* В случае OneDrive для бизнеса и SharePoint API общих ресурсов всегда требует аутентификации. С его помощью невозможно обращаться к содержимому, доступ к которому предоставлен анонимно, без контекста пользователя.
 
-Например, указанный ниже метод C# преобразует входную строку в токен общего доступа.
+[error-response]: ../../../concepts/errors.md
 
-```csharp
-string UrlToSharingToken(string inputUrl) {
-  var base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(inputUrl));
-  return "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update permission",
-  "keywords": "",
+  "description": "Access the contents of a sharing link with the OneDrive API.",
+  "keywords": "shares,shared,sharing,share link, sharing link, share id, share token",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Update permission"
-}-->
+  "tocPath": "Sharing/Use a link"
+} -->

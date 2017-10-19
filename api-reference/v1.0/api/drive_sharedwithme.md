@@ -1,8 +1,20 @@
-# <a name="list-items-shared-with-the-signed-in-user"></a>Список элементов, к которым предоставлен общий доступ для пользователя, выполнившего вход
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "Создание списка файлов, к которым мне предоставлен доступ"
+ms.openlocfilehash: df6ae423c1c474f8707c71379970c51153eee5c2
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему
 
 Получение коллекции ресурсов [DriveItem](../resources/driveitem.md), к которым предоставлен общий доступ для владельца ресурса [Drive](../resources/drive.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -11,31 +23,23 @@
 |Делегированные (личная учетная запись Майкрософт) | Files.Read.All, Files.ReadWrite.All    |
 |Для приложений | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-Кроме того, если одно из разрешений **All** отсутствует, общие элементы, возвращаемые этим API, будут недоступны.
+**Примечание.** Несмотря на то что при наличии разрешений Files.Read или Files.ReadWrite запрос /sharedWithMe будет успешно выполнен, могут отсутствовать некоторые свойства.
+Кроме того, если отсутствует одно из разрешений **All**, общие элементы, возвращаемые этим API, будут недоступны.
 
 ## <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "ignored" } -->
-```
-GET /me/drive/sharedWithMe
-```
+<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
-
-## <a name="example"></a>Пример
-
-<!-- { "blockType": "request", "name": "drive-sharedwithme", "scopes": "files.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/sharedWithMe
+GET /me/drive/sharedWithMe
 ```
 
 ## <a name="response"></a>Отклик
 
 Возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md), содержащую ресурсы DriveItem, к которым предоставлен общий доступ для владельца диска. В этом примере, так как указан диск по умолчанию пользователя, запрос возвращает элементы, к которым предоставлен общий доступ для пользователя, выполнившего вход.
 
+<!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -76,15 +80,16 @@ Content-Type: application/json
 
 Элементы DriveItem, возвращенные действием **sharedWithMe**, будут всегда содержать аспект [**remoteItem**](../resources/remoteitem.md), который указывает, что это элементы с другого диска. Чтобы получить доступ к общему ресурсу DriveItem, следует отправить запрос, используя указанные в **remoteItem** данные, в следующем формате:
 
-<!-- {"blockType": "ignored"} -->
+<!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/drives/{remoteItem.parentReference.driveId}/items/{remoteItem.id}
+GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Retrieve a list of files shared with the signed-in user.",
-  "keywords": "sharedWithMe onedrive shared files",
+  "description": "List the items shared with the owner of a drive.",
+  "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Shared with me"
+  "tocPath": "Sharing/Shared with me"
 } -->

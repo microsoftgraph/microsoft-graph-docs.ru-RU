@@ -20,6 +20,11 @@ GET /users/{id | userPrincipalName}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+
+По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
+
+Чтобы возвратить альтернативный набор свойств, необходимо указать нужный набор свойств [user](../resources/user.md) с помощью параметра запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
@@ -31,10 +36,16 @@ GET /users/{id | userPrincipalName}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [user](../resources/user.md) в тексте отклика.
-## <a name="example"></a>Пример
+При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [user](../resources/user.md) в теле ответа.
+
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-standard-users-request"></a>Пример 1. Обычный запрос пользователей
+
+По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). В этом примере показаны запрос и ответ, используемые по умолчанию. 
+
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+
 <!-- {
   "blockType": "request",
   "name": "get_user"
@@ -43,7 +54,7 @@ GET /users/{id | userPrincipalName}
 GET https://graph.microsoft.com/v1.0/me
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -68,6 +79,36 @@ Content-length: 491
    "surname": "surname-value",
    "userPrincipalName": "userPrincipalName-value",
    "id": "id-value"
+}
+```
+
+### <a name="example-2-users-request-using-select"></a>Пример 2. Запрос пользователей с помощью оператора $select
+
+Если вам необходим другой набор свойств, вы можете использовать параметр запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
+
+##### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "get_user"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me?$select=displayName,givenName,postalCode
+```
+##### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "postalCode": "postalCode-value"
 }
 ```
 

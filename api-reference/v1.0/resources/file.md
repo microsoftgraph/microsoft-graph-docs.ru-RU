@@ -1,10 +1,22 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: File
+ms.openlocfilehash: fd1aa4628fb4f3ba58474028c46840e7c1e2d53c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
 # <a name="file-resource-type"></a>Тип ресурса File
 
 Ресурс **File** — это единая структура, объединяющая элементы данных, связанные с файлами.
 
-Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **file**, то этот ресурс представляет файл. Помимо других свойств, у файлов есть связь **content**, которая содержит байтовый поток файла.
+Если у ресурса [**DriveItem**](driveitem.md) есть аспект **file**, значение которого не равно null, то этот ресурс представляет файл.
+Помимо других свойств, у файлов есть связь **content**, которая содержит байтовый поток файла.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -32,14 +44,10 @@
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->

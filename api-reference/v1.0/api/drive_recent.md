@@ -1,8 +1,20 @@
-# <a name="list-recent-files"></a>Список последних файлов
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "Создание списка последних файлов"
+ms.openlocfilehash: fd1b25a41369d354d18167f17b3c35e9d40bf3f4
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="list-recent-files"></a>Создание списка последних файлов
 
 Указание набора элементов, которые недавно использовались пользователем, вошедшим в свою учетную запись. Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -13,27 +25,23 @@
 
 ## <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "ignored" } -->
-```
+<!-- { "blockType": "request",
+       "name": "view-recent-files", 
+       "scopes": "files.read",
+       "target": "action" } -->
+
+```http
 GET /me/drive/recent
 ```
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="response"></a>Ответ
 
-## <a name="example"></a>Пример
+Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец диска недавно получал доступ.
 
-<!-- { "blockType": "request", "name": "drive-recent", "scopes": "files.read" } -->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/recent
-```
+<!-- { "blockType": "response",
+       "@odata.type": "Collection(microsoft.graph.driveItem)",
+       "truncated": true} -->
 
-## <a name="response"></a>Отклик
-
-Возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец диска недавно получал доступ. Элементы не на диске пользователя будут содержать аспект [RemoteItem](../resources/remoteitem.md), который предоставляет данные для доступа к общему элементу.
-
-
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -52,6 +60,9 @@ Content-Type: application/json
           "driveId": "1991210caf",
           "id": "1991210caf!104"
         }
+      },
+      "fileSystemInfo": {
+        "lastAccessedDateTime": "2017-02-20T19:13:00Z"
       }
     },
     {
@@ -62,25 +73,29 @@ Content-Type: application/json
       "parentReference": {
         "driveId": "1312def",
         "id": "1312def!123"
+      },
+      "fileSystemInfo": {
+        "lastAccessedDateTime": "2017-02-20T16:43:21Z"
       }
     }
   ]
 }
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
 Некоторые элементы driveItem, возвращенные **последним** действием, будут содержать аспект **remoteItem**, который указывает, что это элементы с другого диска. Чтобы получить доступ к исходному объекту driveItem, следует отправить запрос, используя данные, указанные в **remoteItem** в следующем формате:
 
-<!-- {"blockType": "ignored"} -->
+<!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/drives/{remoteItem.driveId}/items/{remoteItem.id}
+GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Retrieve a list of files shared with the signed-in user.",
-  "keywords": "sharedWithMe onedrive shared files",
+  "description": "Retrieve a list of recently used files for the owner of the drive.",
+  "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Shared with me"
+  "tocPath": "Drives/Recent files"
 } -->

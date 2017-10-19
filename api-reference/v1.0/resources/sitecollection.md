@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SiteCollection
+ms.openlocfilehash: 6b36f3a0c2d958081f1b5663231a541f2e8a000f
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
 # <a name="sitecollection-resource"></a>Ресурс SiteCollection
 
 Ресурс **siteCollection** предоставляет больше сведений о семействе веб-сайтов.
@@ -25,7 +36,7 @@
 
 | Имя свойства | Тип    | Описание                                                                                                                  |
 |:--------------|:--------|:---------------------------------------------------
-| **hostname**  | string  | Имя узла для семейства веб-сайтов. Только для чтения.
+| **hostname**  | строка  | Имя узла для семейства веб-сайтов. Только для чтения.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -35,5 +46,5 @@
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "Facets/SiteCollection"
 }-->

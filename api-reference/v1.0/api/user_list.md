@@ -20,11 +20,11 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
 
-По умолчанию возвращается только стандартный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
+По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
-Чтобы возвратился альтернативный набор свойства, необходимо указать нужный набор [пользовательских](../resources/user.md) свойств с помощью параметра запроса ODATA `$select`. Например, чтобы вернуть свойства _displayName_, _givenName_, _id_ и _postalCode_, нужно добавить к запросу следующее: `$select=displayName,givenName,postalCode`
+Чтобы возвратить альтернативный набор свойств, необходимо указать нужный набор свойств [user](../resources/user.md) с помощью параметра запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
 
 > Примечание. Некоторые свойства не могут быть возвращены в пользовательском наборе. Следующие свойства поддерживаются только при [получении одного пользователя](./user_get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_
 
@@ -41,13 +41,16 @@ GET /users
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [user](../resources/user.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код ответа `200 OK` и коллекцию объектов [user](../resources/user.md) в теле ответа.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-standard-users-request"></a>Пример 1. Обычный запрос пользователей
+
+По умолчанию возвращается только стандартный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). В этом примере показаны запрос и ответ, используемые по умолчанию. 
 
 ##### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -58,7 +61,6 @@ GET https://graph.microsoft.com/v1.0/users
 
 ##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,6 +88,45 @@ Content-length: 608
       "surname": "surname-value",
       "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
+    }
+  ]
+}
+```
+
+### <a name="example-2-users-request-using-select"></a>Пример 2. Запрос пользователей с помощью оператора $select
+
+Если вам необходим другой набор свойств, вы можете использовать параметр запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
+
+##### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_users"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
+```
+
+##### <a name="response"></a>Отклик
+
+Примечание. Представленный здесь объект отклика может быть усечен для краткости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 159
+
+{
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "postalCode": "postalCode-value"
     }
   ]
 }

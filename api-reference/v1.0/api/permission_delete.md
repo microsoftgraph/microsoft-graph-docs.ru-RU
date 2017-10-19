@@ -1,10 +1,23 @@
-# <a name="delete-permission"></a>Удаление разрешения
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "Отмена доступа к элементу"
+ms.openlocfilehash: cf573b49edc326ca221545657b29b1f2e86ba417
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Удаление разрешения на общий доступ для файла или папки
 
 Отмена доступа к ресурсу [DriveItem](../resources/driveitem.md).
 
-Удалять можно только те разрешения, которые не были унаследованы. Свойство **inheritedFrom** должно иметь значение `null`.
+Вы можете удалить только те разрешения на общий доступ, которые **не** были унаследованы.
+Свойство **inheritedFrom** должно иметь значение `null`.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -16,53 +29,44 @@
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-DELETE /me/drive/items/{item-id}/permissions/{perm-id}
-DELETE /me/drive/root:/{path}:/permissions/{perm-id}
-DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
+DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
+DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
 | Имя          | Тип   | Описание                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется. |
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="response"></a>Ответ
 
-## <a name="response"></a>Отклик
-
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+В этом примере показано, как удалить разрешение, идентифицированное как {perm-id}, из элемента {item-id} в хранилище OneDrive текущего пользователя.
 
-Ниже приведен пример запроса.
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
 
-<!-- {
-  "blockType": "request",
-  "name": "delete_permission"
-}-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
 ```
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-Ниже приведен пример отклика.
+<!-- { "blockType": "response", "truncated": false } -->
 
-<!-- {
-  "blockType": "response",
-  "truncated": false
-} -->
 ```http
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
 * [Диски](../resources/drive.md), у которых для свойства **driveType** задано значение `personal` (личное хранилище OneDrive), не могут создавать и изменять разрешения в корневом ресурсе DriveItem. 
 
@@ -70,8 +74,8 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete permission",
-  "keywords": "",
+  "description": "Remove an item's sharing permissions",
+  "keywords": "permission, permissions, sharing, remove permissions, delete permissions",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Delete permission"
-}-->
+  "tocPath": "Sharing/Remove permissions"
+} -->

@@ -1,10 +1,19 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SearchResult
+ms.openlocfilehash: 33ce07c947d858f05844dd9dc2589379131c9dbb
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
 # <a name="searchresult-resource-type"></a>Тип ресурса SearchResult
 
-Ресурс **SearchResult** указывает, что элемент получен в ответ на поисковый запрос.
+Ресурс **SearchResult** указывает, что элемент представляет собой ответ на поисковый запрос.
 
-## <a name="json-representation"></a>Представление JSON
-
-Ниже представлено описание ресурса в формате JSON.
+## <a name="json-representation"></a>Представление в формате JSON
 
 <!-- {
   "blockType": "resource",
@@ -20,22 +29,18 @@
 
 ## <a name="properties"></a>Свойства
 
-| Свойство            | Тип   | Описание                                                                                                                                                                         |
-|:--------------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| onClickTelemetryUrl | Строка | URL-адрес обратного вызова, с помощью которого можно записывать данные телеметрии. Когда пользователь использует этот элемент, приложение должно выполнять запрос GET на этот URL-адрес, чтобы повышать качество результатов. |
+| Свойство            | Тип   | Описание
+|:--------------------|:-------|:----------------------------------------------
+| onClickTelemetryUrl | Строка | URL-адрес обратного вызова, с помощью которого можно записывать данные телеметрии. Когда пользователь использует этот элемент, приложение должно выполнять запрос GET на этот URL-адрес, чтобы повышать качество результатов.
 
 ## <a name="remarks"></a>Заметки 
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchResult resource",
-  "keywords": "",
+  "description": "The search result facet indicates an item is from a search.",
+  "keywords": "search result facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SearchResult"
+} -->

@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Package
+ms.openlocfilehash: 33be73ed79438bdf28b76747b6efb79290be8d0c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
 # <a name="package-resource-type"></a>Тип ресурса Package
 
 Ресурс **Package** указывает, что элемент DriveItem — это элемент верхнего уровня в "пакете" или коллекции элементов, с которыми следует обращаться как с коллекцией, а не как с отдельными элементами.
@@ -11,7 +22,7 @@
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.package" } -->
 ```json
 {
-  "type": "string"
+  "type": "oneNote"
 }
 ```
 
@@ -28,5 +39,6 @@
   "type": "#page.annotation",
   "description": "The Package facet indicates that an item is the root of a special collection of items that should be treated as a single unit.",
   "keywords": "package, facet, onenote",
-  "section": "documentation"
+  "section": "documentation",
+  "tocPath": "Facets/Package"
 } -->

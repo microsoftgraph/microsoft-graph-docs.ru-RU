@@ -1,6 +1,19 @@
-# <a name="get-drive"></a>Получение доступа к ресурсу Drive
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "Получение доступа к ресурсу Drive"
+ms.openlocfilehash: 91a140dbcb1550bc850656452a6fa24a84dd5500
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="get-drive"></a>Получение ресурса Drive
 
-Получение свойств и отношений ресурса [Drive](../resources/drive.md). Drive — это контейнер верхнего уровня для файловой системы. API Graph позволяет получить доступ к ресурсу Drive для OneDrive, OneDrive для бизнеса и библиотек документов SharePoint.
+В этой статье рассказывается, как получить свойства и связи ресурса [Drive](../resources/drive.md).
+
+Drive — это контейнер верхнего уровня для файловой системы, например OneDrive или библиотек документов SharePoint.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -12,74 +25,109 @@
 |Делегированные (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Для приложений | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-## <a name="get-a-users-onedrive"></a>Получение OneDrive пользователя
+## <a name="get-current-users-onedrive"></a>Получение хранилища OneDrive текущего пользователя
 
-Чтобы получить доступ к хранилищу пользователя OneDrive или OneDrive для бизнеса, ваше приложение должно запросить отношение **drive** для ресурса [User](../resources/user.md).
+Доступ к диску пользователя, выполнившего вход в систему (при использовании делегированной проверки подлинности), можно получить из одноэлементного множества `me`.
 
-## <a name="http-request"></a>HTTP-запрос
+Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен диск пользователя (при использовании делегированной проверки подлинности).
 
-<!-- { "blockType": "ignored" } -->
+### <a name="http-request"></a>HTTP-запрос
+
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive
+```
+
+## <a name="get-a-users-onedrive"></a>Получение хранилища OneDrive пользователя
+
+Чтобы получить доступ к хранилищу OneDrive или OneDrive для бизнеса пользователя, ваше приложение должно запросить связь **drive** в ресурсе User.
+
+Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен диск пользователя (при использовании делегированной проверки подлинности).
+
+### <a name="http-request"></a>HTTP-запрос
+
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+
+```http
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
+### <a name="path-parameters"></a>Параметры пути
+
+| Имя параметра | Значение  | Описание                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _idOrUserPrincipalName_     | строка | Обязательный. Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive. |
+
 ## <a name="get-the-document-library-associated-with-a-group"></a>Получение библиотеки документов, связанной с группой
 
-Для доступа к библиотеке документов [группы](../resources/group.md) по умолчанию приложение запрашивает отношение **drive** для объекта Group.
+Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для группы, ваше приложение должно запросить связь **drive** в объекте Group.
 
-## <a name="http-request"></a>HTTP-запрос
+### <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
 ```http
-GET /groups/{idOrUserPrincipalName}/drive
+GET /groups/{groupId}/drive
 ```
 
+### <a name="path-parameters"></a>Параметры пути
+
+| Имя параметра | Значение  | Описание                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _groupId_      | строка | Обязательный. Идентификатор группы, которой принадлежит библиотека документов. |
+
+## <a name="get-the-document-library-for-a-site"></a>Получение библиотеки документов для сайта
+
+Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для [сайта](../resources/site.md), ваше приложение должно запросить связь **drive** в объекте Site.
+
+### <a name="http-request"></a>HTTP-запрос
+
+```http
+GET /sites/{siteId}/drive
+```
+
+### <a name="path-parameters"></a>Параметры пути
+
+| Имя параметра | Значение  | Описание                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _siteId_       | строка | Обязательный. Идентификатор для сайта, который содержит библиотеку документов. |
+
+## <a name="get-a-drive-by-id"></a>Получение диска с использованием его идентификатора
+
+Если у вас есть уникальный идентификатор диска, вы можете получить доступ к этому диску непосредственно из коллекции дисков верхнего уровня.
+
+### <a name="http-request"></a>HTTP-запрос
+
+<!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
+
+```http
+GET /drives/{driveId}
+```
+
+### <a name="path-parameters"></a>Параметры пути
+
+| Имя параметра | Значение  | Описание                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _driveId_      | строка | Обязательный. Идентификатор запрошенного диска. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand` и `$select` для настройки отклика.
+Эти методы поддерживают [параметр запроса $select][odata-query-parameters] для формирования ответа.
 
-## <a name="request-body"></a>Тело запроса
+## <a name="http-response"></a>HTTP-ответ
 
-Не указывайте тело запроса для этого метода.
+Каждый из этих методов возвращает [ресурс Drive][drive-resource] для соответствующего диска в теле ответа.
 
-## <a name="response"></a>Ответ
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
 
-В случае успеха этот метод возвращает код ответа `200 OK` и ресурс [Drive](../resources/drive.md) в теле ответа.
-
-## <a name="example"></a>Пример
-
-##### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса для получения сведений о хранилище OneDrive для бизнеса или OneDrive пользователя после входа.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drive"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive
-```
-
-##### <a name="response"></a>Ответ
-
-Ниже приведен пример ответа.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive"
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
     "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-    "driveType": "business",    
+    "driveType": "business",
     "owner": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
@@ -95,12 +143,17 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### <a name="error-response-codes"></a>Коды ответов с ошибками
+
+Если диск не существует, и не удается подготовить его к работе автоматически (при использовании делегированной проверки подлинности), будет возвращен ответ `HTTP 404`.
+
+[drive-resource]: ../resources/drive.md
+[odata-query-parameters]: ../../../concepts/query_parameters.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Get Drive"
-}-->
+  "tocPath": "Drives/Get drive"
+} -->

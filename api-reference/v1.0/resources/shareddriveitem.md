@@ -1,4 +1,15 @@
-# <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: sharedDriveItem
+ms.openlocfilehash: 3b4497c1a15704388dbb4bb4ba181d3985d65a69
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="shareddriveitem-resource-type"></a>Тип ресурса sharedDriveItem
 
 Ресурс **sharedDriveItem** возвращается, если для доступа к общему элементу [driveItem](driveitem.md) используется API [Shares](../api/shares_get.md).
 
@@ -16,15 +27,16 @@
 
 ```json
 {
-    "id": "string",
-    "name": "string",
-    "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "id": "string",
+  "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-    /* relationships*/
-    "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-    "root": { "@odata.type": "microsoft.graph.driveItem" },
-    "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-    "site": { "@odata.type": "microsoft.graph.site" }
+  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "list": { "@odata.type": "microsoft.graph.list" },
+  "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
 
@@ -38,12 +50,25 @@
 
 ## <a name="relationships"></a>Связи
 
-| Связь | Тип                                  | Описание                                                                                                                                                                                                |
-| :----------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| элементы        | Коллекция ([DriveItem](driveitem.md)) | Коллекция общих ресурсов **driveItem**. Эту коллекцию невозможно перечислить, но вы можете получить доступ к элементам по их уникальным идентификаторам.                                                                        |
-| root         | [DriveItem](driveitem.md)             | Общий элемент **driveItem** верхнего уровня. Если предоставлен общий доступ к одному файлу, этот элемент будет файлом. Если предоставлен общий доступ к папке, этот элемент будет папкой. Определить, какой вариант используется, можно с помощью аспектов элемента. |
-| driveItem    | [driveItem](driveitem.md)             | Элемент **driveItem** для ресурса, к которому предоставлен общий доступ.  Совпадает со свойством **root**.                                                                                                             |
-| site         | [site](site.md)                       | Ресурс **site** с элементом, к которому предоставлен общий доступ.                                                                                                                                                |
+| Имя связи | Тип                | Описание
+| ------------------|:--------------------|:-----------------------------------
+| **driveItem**     | [**driveItem**][driveItem]   | Используется для доступа к базовому объекту **driveItem**
+| **list**          | [**list**][list]        | Используется для доступа к базовому объекту **list**
+| **listItem**      | [**listItem**][listItem]    | Используется для доступа к базовому объекту **listItem**
+| **site**          | [**site**][site]        | Используется для доступа к базовому объекту **site**
+
+
+Кроме того, для объектов **driveItem**, к которым предоставлен доступ в личных учетных записях OneDrive, можно использовать указанные ниже связи.
+
+| Имя связи | Тип                         | Описание
+| ------------------|:-----------------------------|:-----------------------------------
+| **items**         | Коллекция объектов [**driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Вам не удастся выполнить перечисление этой коллекции.
+| **driveItem**     | [**driveItem**][driveItem]            | Используется для доступа к базовому объекту **driveItem**
+
+[driveItem]: driveItem.md
+[list]: list.md
+[listItem]: listItem.md
+[site]: site.md
 
 ## <a name="methods"></a>Методы
 
@@ -55,12 +80,10 @@
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "Share resource returns information about a shared item or collection of items.",
+  "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Share"
+} -->

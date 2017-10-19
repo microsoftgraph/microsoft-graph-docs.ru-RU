@@ -1,6 +1,18 @@
-# <a name="remoteitem-resource-type"></a>Тип ресурса RemoteItem
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: remoteItem
+ms.openlocfilehash: fd324460b3486f90c342feb1c782c0cf74d77416
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="remoteitem-resource-type"></a>Тип ресурса remoteItem
 
-Ресурс **remoteItem** указывает, что элемент [**driveItem**](driveitem.md) ссылается на элемент, находящийся на другом диске. Этот ресурс предоставляет уникальные идентификаторы исходного диска и целевого элемента.
+Ресурс **remoteItem** указывает, что элемент [**driveItem**](driveitem.md) ссылается на элемент, находящийся на другом диске.
+Этот ресурс предоставляет уникальные идентификаторы исходного диска и целевого элемента.
 
 Элементы [**DriveItem**](driveitem.md) с аспектом **remoteItem**, не равным null, — это ресурсы, к которым предоставлен общий доступ, ресурсы, добавленные в хранилище OneDrive пользователя, или ресурсы в элементах, возвращенных из коллекций разнородных элементов (например, результатов поиска).
 
@@ -28,7 +40,6 @@
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -52,7 +63,6 @@
 | shared               | [shared](shared.md)                 | Указывает, что к элементу был предоставлен общий доступ для других пользователей, и предоставляет сведения о состоянии совместного использования элемента. Только для чтения.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Обеспечивает взаимодействие между элементами в OneDrive для бизнеса и SharePoint с использованием полного набора идентификаторов элемента. Только для чтения.                                          |
 | size                 | Int64                               | Размер удаленного элемента. Только для чтения.                                                                                                                               |
-| specialFolder        | [SpecialFolder](specialfolder.md)   | Если текущий элемент также доступен в качестве специальной папки, то будет возвращен этот аспект. Только для чтения.                                                                     |
 | webDavUrl            | Url                                 | URL-адрес, совместимый с протоколом DAV, для элемента.                                                                                                                                  |
 | webUrl               | Url                                 | URL-адрес для отображения ресурса в браузере. Только для чтения.                                                                                                         |
 
@@ -60,10 +70,10 @@
 
 Дополнительные сведения об аспектах ресурса **driveItem** см. в описании типа [driveItem](driveitem.md).
 
-
 <!-- {
   "type": "#page.annotation",
-  "description": "remoteItem resource type provides a link to an item in another drive.",
-  "keywords": "remoteitem symlink remote drive shared with me add to onedrive",
-  "section": "documentation"
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
+  "section": "documentation",
+  "tocPath": "Facets/RemoteItem"
 } -->
