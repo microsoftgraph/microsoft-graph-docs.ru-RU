@@ -1,18 +1,50 @@
-# <a name="list-contacts"></a><span data-ttu-id="10300-101">Список контактов</span><span class="sxs-lookup"><span data-stu-id="10300-101">List contacts</span></span>
+# <a name="list-contacts"></a><span data-ttu-id="c0d2e-101">Список контактов</span><span class="sxs-lookup"><span data-stu-id="c0d2e-101">List contacts</span></span>
 
-<span data-ttu-id="10300-102">Получение коллекции контактов из папки контактов по умолчанию для вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="10300-102">Get a contact collection from the default Contacts folder of the signed-in user.</span></span>
-## <a name="permissions"></a><span data-ttu-id="10300-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="10300-103">Permissions</span></span>
-<span data-ttu-id="10300-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="10300-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="c0d2e-102">В этой статье рассказывается, как получить коллекцию контактов из папки контактов, используемой по умолчанию, для пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-102">Get a contact collection from the default Contacts folder of the signed-in user.</span></span>
 
-|<span data-ttu-id="10300-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="10300-106">Permission type</span></span>      | <span data-ttu-id="10300-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="10300-107">Permissions (from least to most privileged)</span></span>              |
+
+### <a name="get-contacts-in-another-users-contact-folder"></a><span data-ttu-id="c0d2e-103">Получение контактов из папки контактов другого пользователя</span><span class="sxs-lookup"><span data-stu-id="c0d2e-103">Get contacts in another user's contact folder</span></span>
+
+<span data-ttu-id="c0d2e-104">Если у вас есть разрешения приложения или соответствующие делегированные [разрешения](#permissions) от одного пользователя, то вы можете получить контакты из папки контактов другого пользователя.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-104">If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get contacts from another user's contact folder.</span></span> <span data-ttu-id="c0d2e-105">В этом разделе основное внимание уделено сценариям, в которых используются делегированные разрешения.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-105">This section focuses on scenarios that involve delegated permissions.</span></span>
+
+<span data-ttu-id="c0d2e-106">Например, ваше приложение получило делегированные разрешения от пользователя John.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-106">For example, your app has acquired delegated permissions from the user, John.</span></span> <span data-ttu-id="c0d2e-107">Предположим, что другой пользователь (Garth) поделился своей папкой контактов с пользователем John.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-107">Suppose another user, Garth, has shared a contact folder with John.</span></span> <span data-ttu-id="c0d2e-108">Вы можете получить контакты из этой общей папки, указав идентификатор пользователя (или имя участника-пользователя) Garth в показанном ниже примере запроса.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-108">You can get the contacts in that shared folder by specifying Garth’s user ID (or user principal name) in the example query shown below.</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/contacts
+```
+
+<span data-ttu-id="c0d2e-109">Эта возможность применяется для всех поддерживаемых операций GET над контактами для отдельного пользователя, как показано в разделе [HTTP-запрос](#http-request) ниже.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-109">This capability applies to all the supported GET contacts operations for an individual user, as listed in the [HTTP request](#http-request) section below.</span></span> <span data-ttu-id="c0d2e-110">Она также применяется, если пользователь Garth делегировал весь свой почтовый ящик пользователю John.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-110">It also applies if Garth has delegated his entire mailbox to John.</span></span>
+
+<span data-ttu-id="c0d2e-111">Если пользователь Garth не поделился своей папкой контактов с пользователем John и не делегировал свой почтовый ящик этому пользователю, указав идентификатор пользователя или имя участника-пользователя Garth в этих операциях GET, будет возвращена ошибка.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-111">If Garth has not shared his contact folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error.</span></span> <span data-ttu-id="c0d2e-112">В таких случаях, указав идентификатор пользователя или имя участника-пользователя, можно только получить контакты в папке контактов пользователя, выполнившего вход в систему, а запрос будет эквивалентен использованию ярлыка /me:</span><span class="sxs-lookup"><span data-stu-id="c0d2e-112">In such cases, specifying a user ID or user principal name only works for getting contacts in the signed-in user’s own contact folders, and the query is equivalent to using the /me shortcut:</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/contacts
+```
+
+<span data-ttu-id="c0d2e-113">Эта возможность доступна только в операциях GET для:</span><span class="sxs-lookup"><span data-stu-id="c0d2e-113">This capability is available in only GET operations of:</span></span>
+
+- <span data-ttu-id="c0d2e-114">общих папок контактов;</span><span class="sxs-lookup"><span data-stu-id="c0d2e-114">Shared contact folders</span></span>
+- <span data-ttu-id="c0d2e-115">общих календарей;</span><span class="sxs-lookup"><span data-stu-id="c0d2e-115">Shared calendars</span></span>
+- <span data-ttu-id="c0d2e-116">контактов и событий в общих папках;</span><span class="sxs-lookup"><span data-stu-id="c0d2e-116">Contacts and events in shared folders</span></span>
+- <span data-ttu-id="c0d2e-117">указанных выше ресурсов в делегированных почтовых ящиках.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-117">The above resources in delegated mailboxes</span></span>
+
+<span data-ttu-id="c0d2e-118">Эта возможность недоступна в других операциях для контактов, событий и их папок.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-118">This capability is not available in other operations for contacts, events, and their folders.</span></span>
+
+
+## <a name="permissions"></a><span data-ttu-id="c0d2e-119">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c0d2e-119">Permissions</span></span>
+<span data-ttu-id="c0d2e-p105">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c0d2e-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="c0d2e-122">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c0d2e-122">Permission type</span></span>      | <span data-ttu-id="c0d2e-123">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c0d2e-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="10300-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="10300-108">Delegated (work or school account)</span></span> | <span data-ttu-id="10300-109">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="10300-109">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="10300-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="10300-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10300-111">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="10300-111">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="10300-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="10300-112">Application</span></span> | <span data-ttu-id="10300-113">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="10300-113">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="c0d2e-124">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c0d2e-124">Delegated (work or school account)</span></span> | <span data-ttu-id="c0d2e-125">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c0d2e-125">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="c0d2e-126">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c0d2e-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c0d2e-127">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c0d2e-127">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="c0d2e-128">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c0d2e-128">Application</span></span> | <span data-ttu-id="c0d2e-129">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c0d2e-129">Contacts.Read, Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="10300-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="10300-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c0d2e-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c0d2e-130">HTTP request</span></span>
 
-<span data-ttu-id="10300-115">Для получения всех контактов в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="10300-115">To get all the contacts in a user's mailbox:</span></span>
+<span data-ttu-id="c0d2e-131">Для получения всех контактов в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="c0d2e-131">To get all the contacts in a user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,7 +52,7 @@ GET /me/contacts
 GET /users/{id | userPrincipalName}/contacts
 ```
 
-<span data-ttu-id="10300-116">Для получения контактов, которые хранятся в определенной папке в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="10300-116">To get contacts in a specific folder in the user's mailbox:</span></span>
+<span data-ttu-id="c0d2e-132">Для получения контактов, которые хранятся в определенной папке в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="c0d2e-132">To get contacts in a specific folder in the user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -30,30 +62,30 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="10300-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="10300-117">Optional query parameters</span></span>
-<span data-ttu-id="10300-118">Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="10300-118">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c0d2e-133">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c0d2e-133">Optional query parameters</span></span>
+<span data-ttu-id="c0d2e-134">Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-134">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="10300-119">Например, с помощью параметра запроса `$filter` можно фильтровать контакты на основе домена, указанного в адресе электронной почты:</span><span class="sxs-lookup"><span data-stu-id="10300-119">For example, you can use the `$filter` query parameter to filter contacts based on the domain of their email addresses:</span></span>
+<span data-ttu-id="c0d2e-135">Например, с помощью параметра запроса `$filter` можно фильтровать контакты на основе домена, указанного в адресе электронной почты:</span><span class="sxs-lookup"><span data-stu-id="c0d2e-135">For example, you can use the `$filter` query parameter to filter contacts based on the domain of their email addresses:</span></span>
 
 `https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq '@domain.com')`
 
 
 
-## <a name="request-headers"></a><span data-ttu-id="10300-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="10300-120">Request headers</span></span>
-| <span data-ttu-id="10300-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="10300-121">Header</span></span>       | <span data-ttu-id="10300-122">Значение</span><span class="sxs-lookup"><span data-stu-id="10300-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c0d2e-136">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c0d2e-136">Request headers</span></span>
+| <span data-ttu-id="c0d2e-137">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c0d2e-137">Header</span></span>       | <span data-ttu-id="c0d2e-138">Значение</span><span class="sxs-lookup"><span data-stu-id="c0d2e-138">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="10300-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="10300-123">Authorization</span></span>  | <span data-ttu-id="10300-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="10300-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="10300-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="10300-126">Content-Type</span></span>   | <span data-ttu-id="10300-127">application/json</span><span class="sxs-lookup"><span data-stu-id="10300-127">application/json</span></span>  |
+| <span data-ttu-id="c0d2e-139">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c0d2e-139">Authorization</span></span>  | <span data-ttu-id="c0d2e-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-p106">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c0d2e-142">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c0d2e-142">Content-Type</span></span>   | <span data-ttu-id="c0d2e-143">application/json</span><span class="sxs-lookup"><span data-stu-id="c0d2e-143">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="10300-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="10300-128">Request body</span></span>
-<span data-ttu-id="10300-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="10300-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c0d2e-144">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c0d2e-144">Request body</span></span>
+<span data-ttu-id="c0d2e-145">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-145">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10300-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="10300-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c0d2e-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="c0d2e-146">Response</span></span>
 
-<span data-ttu-id="10300-131">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Contact](../resources/contact.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="10300-131">If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="10300-132">Пример</span><span class="sxs-lookup"><span data-stu-id="10300-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="10300-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="10300-133">Request</span></span>
-<span data-ttu-id="10300-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="10300-134">Here is an example of the request.</span></span>
+<span data-ttu-id="c0d2e-147">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Contact](../resources/contact.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-147">If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c0d2e-148">Пример</span><span class="sxs-lookup"><span data-stu-id="c0d2e-148">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c0d2e-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="c0d2e-149">Request</span></span>
+<span data-ttu-id="c0d2e-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-150">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_contacts"
@@ -63,8 +95,8 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 ```
 
 
-##### <a name="response"></a><span data-ttu-id="10300-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="10300-135">Response</span></span>
-<span data-ttu-id="10300-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="10300-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c0d2e-151">Ответ</span><span class="sxs-lookup"><span data-stu-id="c0d2e-151">Response</span></span>
+<span data-ttu-id="c0d2e-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c0d2e-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

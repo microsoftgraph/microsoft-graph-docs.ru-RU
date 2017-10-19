@@ -1,12 +1,24 @@
-# <a name="file-resource-type"></a>Тип ресурса File
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: File
+ms.openlocfilehash: fd1aa4628fb4f3ba58474028c46840e7c1e2d53c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/28/2017
+---
+# <a name="file-resource-type"></a><span data-ttu-id="dbe65-102">Тип ресурса File</span><span class="sxs-lookup"><span data-stu-id="dbe65-102">File resource type</span></span>
 
-Ресурс **File** — это единая структура, объединяющая элементы данных, связанные с файлами.
+<span data-ttu-id="dbe65-103">Ресурс **File** — это единая структура, объединяющая элементы данных, связанные с файлами.</span><span class="sxs-lookup"><span data-stu-id="dbe65-103">The **File** resource groups file-related data items into a single structure.</span></span>
 
-Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **file**, то этот ресурс представляет файл. Помимо других свойств, у файлов есть связь **content**, которая содержит байтовый поток файла.
+<span data-ttu-id="dbe65-104">Если у ресурса [**DriveItem**](driveitem.md) есть аспект **file**, значение которого не равно null, то этот ресурс представляет файл.</span><span class="sxs-lookup"><span data-stu-id="dbe65-104">If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents an file.</span></span>
+<span data-ttu-id="dbe65-105">Помимо других свойств, у файлов есть связь **content**, которая содержит байтовый поток файла.</span><span class="sxs-lookup"><span data-stu-id="dbe65-105">If a DriveItem has a non-null file facet, the item represents an file. In addition to other properties, files have a **content** relationship which contains the byte stream of the file.</span></span>
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a><span data-ttu-id="dbe65-106">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="dbe65-106">JSON representation</span></span>
 
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="dbe65-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dbe65-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -21,25 +33,21 @@
 }
 ```
 
-## <a name="properties"></a>Свойства
+## <a name="properties"></a><span data-ttu-id="dbe65-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="dbe65-108">Properties</span></span>
 
-| Свойство | Тип                    | Описание                                                                                                                                      |
+| <span data-ttu-id="dbe65-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="dbe65-109">Property</span></span> | <span data-ttu-id="dbe65-110">Тип</span><span class="sxs-lookup"><span data-stu-id="dbe65-110">Type</span></span>                    | <span data-ttu-id="dbe65-111">Описание</span><span class="sxs-lookup"><span data-stu-id="dbe65-111">Description</span></span>                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [HashesType](hashes.md) | Хэши двоичного содержимого файла (если они доступны). Только для чтения.                                                                                    |
-| mimeType | string                  | Тип MIME файла. Он определяется логикой на сервере и может не совпадать со значением, предоставленным при отправке файла. Только для чтения. |
+| <span data-ttu-id="dbe65-112">hashes</span><span class="sxs-lookup"><span data-stu-id="dbe65-112">hashes</span></span>   | [<span data-ttu-id="dbe65-113">HashesType</span><span class="sxs-lookup"><span data-stu-id="dbe65-113">HashesType</span></span>](hashes.md) | <span data-ttu-id="dbe65-p102">Хэши двоичного содержимого файла (если они доступны). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="dbe65-p102">Hashes of the file's binary content, if available. Read-only.</span></span>                                                                                    |
+| <span data-ttu-id="dbe65-116">mimeType</span><span class="sxs-lookup"><span data-stu-id="dbe65-116">mimeType</span></span> | <span data-ttu-id="dbe65-117">string</span><span class="sxs-lookup"><span data-stu-id="dbe65-117">string</span></span>                  | <span data-ttu-id="dbe65-p103">Тип MIME файла. Он определяется логикой на сервере и может не совпадать со значением, предоставленным при отправке файла. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="dbe65-p103">The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only.</span></span> |
 
-## <a name="remarks"></a>Заметки 
+## <a name="remarks"></a><span data-ttu-id="dbe65-121">Заметки</span><span class="sxs-lookup"><span data-stu-id="dbe65-121">Remarks</span></span> 
 
-Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
+<span data-ttu-id="dbe65-122">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="dbe65-122">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->
