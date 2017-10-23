@@ -1,24 +1,24 @@
-# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="4091c-101">Получение объектов каталога из списка идентификаторов</span><span class="sxs-lookup"><span data-stu-id="4091c-101">Get directory objects from a list of ids</span></span>
+# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="3d826-101">Получение объектов каталога из списка идентификаторов</span><span class="sxs-lookup"><span data-stu-id="3d826-101">Get directory objects from a list of ids</span></span>
 
-<span data-ttu-id="4091c-p101">Возвращает объекты каталогов, указанные в списке идентификаторов.  ПРИМЕЧАНИЕ. Возвращаемые объекты каталогов представляют собой полные объекты, содержащие **все** свойства. Параметр запроса `$select` недоступен для этой операции.</span><span class="sxs-lookup"><span data-stu-id="4091c-p101">Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.</span></span>
+<span data-ttu-id="3d826-p101">Возвращает объекты каталогов, указанные в списке идентификаторов.  ПРИМЕЧАНИЕ. Возвращаемые объекты каталогов представляют собой полные объекты, содержащие **все** свойства. Параметр запроса `$select` недоступен для этой операции.</span><span class="sxs-lookup"><span data-stu-id="3d826-p101">Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.</span></span>
 
-<span data-ttu-id="4091c-105">Ниже перечислены некоторые распространенные случаи использования этой функции.</span><span class="sxs-lookup"><span data-stu-id="4091c-105">Some common uses for this function are to:</span></span>
+<span data-ttu-id="3d826-105">Ниже перечислены некоторые распространенные случаи использования этой функции.</span><span class="sxs-lookup"><span data-stu-id="3d826-105">Some common uses for this function are to:</span></span>
 
-* <span data-ttu-id="4091c-106">Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](directoryobject_getmemberobjects.md) или [getMemberGroups](directoryobject_getmembergroups.md), в базовые объекты каталогов.</span><span class="sxs-lookup"><span data-stu-id="4091c-106">Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](directoryobject_getmemberobjects.md) or [getMemberGroups](directoryobject_getmembergroups.md)  to their backing directory objects.</span></span>
-* <span data-ttu-id="4091c-107">Разрешение идентификаторов, которые приложение хранит во внешнем хранилище, в базовые объекты каталогов.</span><span class="sxs-lookup"><span data-stu-id="4091c-107">Resolve ids persisted in an external store by the application to their backing directory objects.</span></span>
+* <span data-ttu-id="3d826-106">Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](directoryobject_getmemberobjects.md) или [getMemberGroups](directoryobject_getmembergroups.md), в базовые объекты каталогов.</span><span class="sxs-lookup"><span data-stu-id="3d826-106">Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](directoryobject_getmemberobjects.md) or [getMemberGroups](directoryobject_getmembergroups.md)  to their backing directory objects.</span></span>
+* <span data-ttu-id="3d826-107">Разрешение идентификаторов, которые приложение хранит во внешнем хранилище, в базовые объекты каталогов.</span><span class="sxs-lookup"><span data-stu-id="3d826-107">Resolve ids persisted in an external store by the application to their backing directory objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4091c-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4091c-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3d826-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3d826-108">Permissions</span></span>
 
-<span data-ttu-id="4091c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="4091c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="3d826-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="3d826-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="4091c-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4091c-111">Permission type</span></span>      | <span data-ttu-id="4091c-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4091c-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3d826-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3d826-111">Permission type</span></span>      | <span data-ttu-id="3d826-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3d826-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4091c-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4091c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="4091c-114">Directory.Read.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4091c-114">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="4091c-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4091c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4091c-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4091c-116">Not supported.</span></span>    |
-|<span data-ttu-id="4091c-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4091c-117">Application</span></span> | <span data-ttu-id="4091c-118">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="4091c-118">Directory.Read.All</span></span> |
+|<span data-ttu-id="3d826-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3d826-113">Delegated (work or school account)</span></span> | <span data-ttu-id="3d826-114">Directory.Read.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3d826-114">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="3d826-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3d826-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3d826-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3d826-116">Not supported.</span></span>    |
+|<span data-ttu-id="3d826-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3d826-117">Application</span></span> | <span data-ttu-id="3d826-118">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="3d826-118">Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4091c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4091c-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3d826-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3d826-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -26,29 +26,29 @@
 POST /directoryObjects/getById
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4091c-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4091c-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3d826-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3d826-120">Request headers</span></span>
 
-| <span data-ttu-id="4091c-121">Имя</span><span class="sxs-lookup"><span data-stu-id="4091c-121">Name</span></span>       | <span data-ttu-id="4091c-122">Тип</span><span class="sxs-lookup"><span data-stu-id="4091c-122">Type</span></span> | <span data-ttu-id="4091c-123">Описание</span><span class="sxs-lookup"><span data-stu-id="4091c-123">Description</span></span>|
+| <span data-ttu-id="3d826-121">Имя</span><span class="sxs-lookup"><span data-stu-id="3d826-121">Name</span></span>       | <span data-ttu-id="3d826-122">Тип</span><span class="sxs-lookup"><span data-stu-id="3d826-122">Type</span></span> | <span data-ttu-id="3d826-123">Описание</span><span class="sxs-lookup"><span data-stu-id="3d826-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="4091c-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4091c-124">Authorization</span></span>  | <span data-ttu-id="4091c-125">string</span><span class="sxs-lookup"><span data-stu-id="4091c-125">string</span></span>  | <span data-ttu-id="4091c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4091c-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4091c-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4091c-128">Content-Type</span></span>  | <span data-ttu-id="4091c-129">application/json</span><span class="sxs-lookup"><span data-stu-id="4091c-129">application/json</span></span>  |
+| <span data-ttu-id="3d826-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="3d826-124">Authorization</span></span>  | <span data-ttu-id="3d826-125">string</span><span class="sxs-lookup"><span data-stu-id="3d826-125">string</span></span>  | <span data-ttu-id="3d826-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3d826-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3d826-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3d826-128">Content-Type</span></span>  | <span data-ttu-id="3d826-129">application/json</span><span class="sxs-lookup"><span data-stu-id="3d826-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4091c-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="4091c-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3d826-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="3d826-130">Request body</span></span>
 
-<span data-ttu-id="4091c-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="4091c-131">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="3d826-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="3d826-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="4091c-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="4091c-132">Parameter</span></span>   | <span data-ttu-id="4091c-133">Тип</span><span class="sxs-lookup"><span data-stu-id="4091c-133">Type</span></span> |<span data-ttu-id="4091c-134">Описание</span><span class="sxs-lookup"><span data-stu-id="4091c-134">Description</span></span>|
+| <span data-ttu-id="3d826-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="3d826-132">Parameter</span></span>   | <span data-ttu-id="3d826-133">Тип</span><span class="sxs-lookup"><span data-stu-id="3d826-133">Type</span></span> |<span data-ttu-id="3d826-134">Описание</span><span class="sxs-lookup"><span data-stu-id="3d826-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4091c-135">ids</span><span class="sxs-lookup"><span data-stu-id="4091c-135">ids</span></span>|<span data-ttu-id="4091c-136">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="4091c-136">String collection</span></span>| <span data-ttu-id="4091c-p104">Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов.</span><span class="sxs-lookup"><span data-stu-id="4091c-p104">A collection of ids for which to return objects. You can specify up to 1000 ids.</span></span> |
-|<span data-ttu-id="4091c-139">types</span><span class="sxs-lookup"><span data-stu-id="4091c-139">types</span></span>|<span data-ttu-id="4091c-140">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="4091c-140">String collection</span></span>| <span data-ttu-id="4091c-p105">Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от `directoryObject`. Пример: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md). В значениях не учитывается регистр символов.</span><span class="sxs-lookup"><span data-stu-id="4091c-p105">A collection of resource types that specifies the set of resource collections to search. If not specified, the default is [directoryObject](../resources/directoryobject.md), which contains all of the resource types defined in the directory. Any object that derives from `directoryObject` may be specified in the collection; for example: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), and so on. The values are not case sensitive.</span></span>|
+|<span data-ttu-id="3d826-135">ids</span><span class="sxs-lookup"><span data-stu-id="3d826-135">ids</span></span>|<span data-ttu-id="3d826-136">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="3d826-136">String collection</span></span>| <span data-ttu-id="3d826-p104">Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов.</span><span class="sxs-lookup"><span data-stu-id="3d826-p104">A collection of ids for which to return objects. You can specify up to 1000 ids.</span></span> |
+|<span data-ttu-id="3d826-139">types</span><span class="sxs-lookup"><span data-stu-id="3d826-139">types</span></span>|<span data-ttu-id="3d826-140">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="3d826-140">String collection</span></span>| <span data-ttu-id="3d826-p105">Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от `directoryObject`. Пример: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md). В значениях не учитывается регистр символов.</span><span class="sxs-lookup"><span data-stu-id="3d826-p105">A collection of resource types that specifies the set of resource collections to search. If not specified, the default is [directoryObject](../resources/directoryobject.md), which contains all of the resource types defined in the directory. Any object that derives from `directoryObject` may be specified in the collection; for example: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), and so on. The values are not case sensitive.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4091c-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="4091c-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3d826-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="3d826-145">Response</span></span>
 
-<span data-ttu-id="4091c-146">В случае успеха этот метод возвращает код отклика `200, OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4091c-146">If successful, this method returns `200, OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="3d826-146">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3d826-146">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4091c-147">Пример</span><span class="sxs-lookup"><span data-stu-id="4091c-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3d826-147">Пример</span><span class="sxs-lookup"><span data-stu-id="3d826-147">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4091c-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="4091c-148">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="3d826-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="3d826-148">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -65,9 +65,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="4091c-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="4091c-149">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="3d826-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="3d826-149">Response</span></span>
 
-<span data-ttu-id="4091c-p106">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4091c-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="3d826-p106">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3d826-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
     "value": [
       {
         "@odata.type": "#microsoft.graph.user",

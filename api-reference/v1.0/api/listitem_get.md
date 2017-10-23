@@ -3,48 +3,48 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: "Получение записи из списка SharePoint"
-ms.openlocfilehash: 29db5f5a3005aca0003489db4bdb13219e612a96
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: eaa97e169a8fcfdcb676679bb6dedd3a192925d8
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
-# <a name="get-an-item-in-a-list"></a><span data-ttu-id="64b5f-102">Получение элемента списка</span><span class="sxs-lookup"><span data-stu-id="64b5f-102">Get an item in a list</span></span>
+# <a name="get-an-item-in-a-list"></a><span data-ttu-id="25342-102">Получение элемента списка</span><span class="sxs-lookup"><span data-stu-id="25342-102">Get an item in a list</span></span>
 
-<span data-ttu-id="64b5f-103">Возвращает метаданные [элемента][] в [списке][].</span><span class="sxs-lookup"><span data-stu-id="64b5f-103">Returns the metadata for an [item][] in a [list][].</span></span>
+<span data-ttu-id="25342-103">Возвращает метаданные [элемента][] в [списке][].</span><span class="sxs-lookup"><span data-stu-id="25342-103">Returns the metadata for an [item][] in a [list][].</span></span>
 
 [list]: ../resources/list.md
 [item]: ../resources/listItem.md
 
-## <a name="permissions"></a><span data-ttu-id="64b5f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="64b5f-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="25342-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="25342-106">Permissions</span></span>
 
-<span data-ttu-id="64b5f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="64b5f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="25342-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="25342-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="64b5f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="64b5f-109">Permission type</span></span>      | <span data-ttu-id="64b5f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="64b5f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="25342-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="25342-109">Permission type</span></span>      | <span data-ttu-id="25342-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="25342-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="64b5f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="64b5f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="64b5f-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64b5f-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="64b5f-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="64b5f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64b5f-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64b5f-114">Not supported.</span></span>    |
-|<span data-ttu-id="64b5f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="64b5f-115">Application</span></span> | <span data-ttu-id="64b5f-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64b5f-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="25342-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="25342-111">Delegated (work or school account)</span></span> | <span data-ttu-id="25342-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25342-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="25342-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="25342-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="25342-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="25342-114">Not supported.</span></span>    |
+|<span data-ttu-id="25342-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="25342-115">Application</span></span> | <span data-ttu-id="25342-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25342-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="64b5f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="64b5f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="25342-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="25342-117">HTTP request</span></span>
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
 
-## <a name="example"></a><span data-ttu-id="64b5f-118">Пример</span><span class="sxs-lookup"><span data-stu-id="64b5f-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="25342-118">Пример</span><span class="sxs-lookup"><span data-stu-id="25342-118">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="64b5f-119">Запрос</span><span class="sxs-lookup"><span data-stu-id="64b5f-119">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="25342-119">Запрос</span><span class="sxs-lookup"><span data-stu-id="25342-119">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list-item" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 
-##### <a name="response"></a><span data-ttu-id="64b5f-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="64b5f-120">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="25342-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="25342-120">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
