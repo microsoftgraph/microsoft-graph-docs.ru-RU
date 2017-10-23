@@ -30,7 +30,7 @@ POST /groups/{id}/conversations/{id}/threads
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвратит код отклика `201, Created` и объект [ConversationThread](../resources/conversationthread.md) в теле отклика.
+В случае успеха этот метод возвратит код отклика `201 Created` и объект [ConversationThread](../resources/conversationthread.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -56,7 +56,7 @@ Content-type: application/json
 В теле запроса укажите описание объекта [conversationThread](../resources/conversationthread.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 
-В случае успеха этот метод возвратит код отклика `201, Created` и `id` новой цепочки в теле отклика. Ниже приведен пример отклика. 
+В случае успеха этот метод возвратит код отклика `201 Created` и `id` новой цепочки в теле отклика. Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true,

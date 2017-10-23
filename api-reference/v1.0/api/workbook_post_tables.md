@@ -26,7 +26,7 @@ POST /workbook/tables/$/add
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `201, Created` и объект [Table](../resources/table.md) в тексте ответа.
+В случае успеха этот метод возвращает код ответа `201 Created` и объект [Table](../resources/table.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

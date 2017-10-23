@@ -34,7 +34,7 @@ POST /directoryRoles
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвратит код отклика `201, Created` и объект [directoryRole](../resources/directoryrole.md) в теле отклика.
+В случае успеха этот метод возвратит код отклика `201 Created` и объект [directoryRole](../resources/directoryrole.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

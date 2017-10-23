@@ -43,7 +43,7 @@ POST /schemaExtensions
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `201, Created` и объект [schemaExtension](../resources/schemaextension.md) в теле отклика.
+При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [schemaExtension](../resources/schemaextension.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

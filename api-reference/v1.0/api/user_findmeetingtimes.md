@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `200, OK` и объект [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) в тексте ответа. 
+В случае успеха этот метод возвращает код ответа `200 OK` и объект [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) в тексте ответа. 
 
 Объект **meetingTimeSuggestionsResult** включает коллекцию предложений и свойство **emptySuggestionsReason**. Каждое предложение определяется как объект [meetingTimeSuggestion](../resources/meetingTimeSuggestion.md), где средняя вероятность присутствия участников составляет 50 % или определенное процентное значение, указанное в параметре **minimumAttendeePercentage**. 
 

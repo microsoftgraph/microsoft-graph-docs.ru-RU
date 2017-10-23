@@ -31,7 +31,7 @@ GET /workbook/worksheets/{id|name}/UsedRange
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -43,8 +43,6 @@ GET /workbook/worksheets/{id|name}/UsedRange
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
-Content-type: application/json
-
 ```
 
 ##### <a name="response"></a>Ответ

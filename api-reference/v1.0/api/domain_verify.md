@@ -35,7 +35,7 @@ POST /domains/{id}/verify
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200, OK` и объект [domain](../resources/domain.md) в теле отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [domain](../resources/domain.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

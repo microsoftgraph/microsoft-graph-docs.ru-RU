@@ -28,7 +28,7 @@ workbook-session-id: {session-id}
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код отклика `204, No content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -43,6 +43,9 @@ Content-type: application/json
 workbook-session-id: {session-id}
 Content-length: 0
 
+{
+
+}
 ```
 
 Обратите внимание, что заголовок workbook-session-id является обязательным. 

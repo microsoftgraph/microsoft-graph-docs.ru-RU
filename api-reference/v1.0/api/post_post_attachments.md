@@ -36,7 +36,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [Attachment](../resources/attachment.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [Attachment](../resources/attachment.md) в теле отклика.
 
 ## <a name="example-file-attachment"></a>Пример (вложенный файл)
 

@@ -26,7 +26,7 @@ POST /planner/tasks
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `201, Created` и объект [plannerTask](../resources/plannertask.md) в тексте ответа.
+В случае успеха этот метод возвращает код ответа `201 Created` и объект [plannerTask](../resources/plannertask.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](../../../concepts/errors.md). Приложения должны обрабатывать ошибки 400, 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner_overview.md#common-planner-error-conditions).
 

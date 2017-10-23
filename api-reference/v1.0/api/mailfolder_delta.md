@@ -43,7 +43,7 @@ GET /users/<id>/mailFolders/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа `200, OK` и объект коллекции [mailFolder](../resources/mailfolder.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект коллекции [mailFolder](../resources/mailfolder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

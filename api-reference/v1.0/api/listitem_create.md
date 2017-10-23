@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: "Создание записи в списке SharePoint"
-ms.openlocfilehash: 55a3c52d7afb2a276055cdddfb826ebbcb574ae7
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: f4b2aebcd2bdc78cd6b8920b0690763c3b5f8ec2
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/28/2017
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
 ## <a name="request-body"></a>Тело запроса
@@ -42,7 +42,7 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {
@@ -83,7 +83,7 @@ Content-type: application/json
 }
 ```
 
-**Примечание.** Для наглядности объект ответа усечен. При фактическом вызове будут возвращены свойства, используемые по умолчанию.
+**Примечание.** Ответ усечен для наглядности. При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
 [list]: ../resources/list.md
 [listItem]: ../resources/listItem.md

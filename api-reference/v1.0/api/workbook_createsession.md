@@ -36,7 +36,7 @@ POST /workbook/createSession
 
 ## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код ответа `201, Created` и объект [WorkbookSessionInfo](../resources/workbooksessioninfo.md) в теле ответа.
+При успешном выполнении этот метод возвращает код ответа `201 Created` и объект [WorkbookSessionInfo](../resources/workbooksessioninfo.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

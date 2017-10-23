@@ -27,7 +27,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

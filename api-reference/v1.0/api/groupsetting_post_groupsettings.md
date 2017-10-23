@@ -32,7 +32,7 @@ POST /groups/{id}/settings
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `201, Created` и объект [groupSetting](../resources/groupsetting.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [groupSetting](../resources/groupsetting.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

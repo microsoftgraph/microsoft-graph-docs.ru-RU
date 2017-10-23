@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: "Получение списка SharePoint"
-ms.openlocfilehash: a58a85ed752c00722d2381df10cd7bfb51fbcd3c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e0e0ccdc0836c40ac4f5a719cd64f02178030ccd
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 09/28/2017
 ## <a name="http-request"></a>HTTP-запрос
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
 ## <a name="request-body"></a>Тело запроса

@@ -36,7 +36,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200, OK` и объект коллекции [reminder](../resources/reminder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции [reminder](../resources/reminder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

@@ -34,7 +34,7 @@ POST /domains
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `201, Created` и объект [domain](../resources/domain.md) в теле отклика.
+При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [domain](../resources/domain.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

@@ -32,7 +32,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200, OK` и объект [TableRow](../resources/tablerow.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [TableRow](../resources/tablerow.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

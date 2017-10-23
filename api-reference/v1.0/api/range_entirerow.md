@@ -27,7 +27,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireRow
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200, OK` и объект [Range](../resources/range.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

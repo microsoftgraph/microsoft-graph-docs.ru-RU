@@ -30,7 +30,7 @@ POST /users/{id | userPrincipalName}/mailFolders
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код ответа `201, Created` и объект [MailFolder](../resources/mailfolder.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [MailFolder](../resources/mailfolder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

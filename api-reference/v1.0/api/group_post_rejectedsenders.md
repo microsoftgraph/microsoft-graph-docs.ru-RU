@@ -27,7 +27,7 @@ POST /groups/{id}/rejectedSenders/$ref
 
 ## <a name="response"></a>Отклик
 
-Этот метод возвращает код отклика `204, No Content`, но не возвращает текст отклика.
+Этот метод возвращает код отклика `204 No Content`, но не возвращает текст отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
