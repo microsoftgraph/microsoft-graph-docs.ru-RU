@@ -6,115 +6,27 @@
 
 Вы можете выполнить действия, указанные в статье, посвященной вашей платформе разработки, либо воспользоваться [кратким руководством](https://developer.microsoft.com/graph/quick-start), чтобы быстро подготовить решение к работе.
 
-Готовые примеры Connect вы найдете в репозитории [Microsoft Graph ](https://github.com/microsoftgraph) на сайте GitHub. Ниже представлены примеры для разных поставщиков проверки подлинности и платформ, а также указано, что они используют для подключения к Microsoft Graph: REST или клиентскую библиотеку Microsoft Graph.
+Готовые примеры подключения вы найдете в репозитории [Microsoft Graph](https://github.com/microsoftgraph) на сайте GitHub. В приведенной ниже таблице представлены примеры для разных поставщиков проверки подлинности и платформ, а также указано, что они используют для подключения к Microsoft Graph — REST или клиентскую библиотеку Microsoft Graph.
 
-<table>
-  <tr>
-    <th>Платформа</th>
-    <th>Конечная точка Azure AD</th> 
-    <th>Конечная точка Azure AD версии 2.0</th>
-  </tr>
-  <tr>
-    <td>Android</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">Пример с использованием пакета SDK</a>
-    </td> 
-        <td>
-                <a href="https://github.com/microsoftgraph/android-java-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>AngularJS</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
-    </td> 
-        <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>ASP.NET</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>iOS (Obj-C)</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">Пример с использованием REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">Пример с использованием пакета SDK</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>iOS (Swift)</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">Пример с использованием REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-swift-connect-sample">Пример с использованием пакета SDK</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>NodeJS</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
-    </td>     
-    <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Пример с использованием пакета SDK</a> или <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>PHP</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
-    </td>     
-    <td>
-            <a href="https://github.com/microsoftgraph/php-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>Python</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/python3-connect-rest-sample">Пример с использованием REST</a>
-    </td>     
-    <td>
-    </td> 
-  </tr>
-  <tr>
-    <td>Ruby</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">Пример с использованием REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>UWP</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">Пример с использованием пакета SDK</a> ¶или <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>Xamarin</td>
-    <td>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">Пример с использованием пакета SDK</a>
-    </td> 
-  </tr>
-</table>
+
+|Платформа |Конечная точка Azure AD |Конечная точка Azure AD версии 2.0 |
+|:--- |:--- |:---|
+|Android |<a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">Пример с использованием пакета SDK</a> |<a href="https://github.com/microsoftgraph/android-java-connect-sample">Пример с использованием пакета SDK</a> или <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST</a> |
+|AngularJS |<a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a> |<a href="https://github.com/microsoftgraph/angular-connect-sample">Пример с использованием пакета SDK</a> или <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST</a> |
+|ASP.NET |<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a> |<a href="https://github.com/microsoftgraph/aspnet-connect-sample">Пример с использованием пакета SDK</a> или <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST</a> |
+|iOS (Obj-C) |<a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">Пример с использованием REST</a> |<a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">Пример с использованием пакета SDK</a> |
+|iOS (Swift) |<a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">Пример с использованием REST</a> |<a href="https://github.com/microsoftgraph/ios-swift-connect-sample">Пример с использованием пакета SDK</a> |
+|NodeJS |<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a> |<a href="https://github.com/microsoftgraph/nodejs-connect-sample">Пример с использованием пакета SDK</a> или <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST</a> |
+|PHP |<a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a> |<a href="https://github.com/microsoftgraph/php-connect-sample">Пример с использованием пакета SDK</a> или <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST</a> |
+|Python |<a href="https://github.com/microsoftgraph/python3-connect-rest-sample">Пример с использованием REST</a> |
+|Ruby |<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a> |<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">Пример с использованием REST</a> |
+|UWP |<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">Пример с использованием REST</a> |<a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">Пример с использованием пакета SDK</a> или <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST</a> |
+|Xamarin | |<a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">Пример с использованием пакета SDK</a> |
+
+<br/>
 
 ## <a name="see-also"></a>См. также
 
-- Опробуйте примеры вызовов REST в [песочнице Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- [Опробуйте примеры вызовов REST в песочнице Graph](https://developer.microsoft.com/en-us/graph/graph-explorer)
 - [Документация по конечной точке Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
 - [Документация по конечной точке Azure AD версии 2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
