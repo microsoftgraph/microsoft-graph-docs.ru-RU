@@ -1,6 +1,6 @@
 # <a name="get-calendar"></a>Получение календаря
 
-Получение свойств и связей объекта calendar.
+Получение свойств и связей объекта [calendar](../resources/calendar.md). Это может быть календарь для ресурса [user](../resources/user.md) или стандартный календарь для ресурса [group](../resources/group.md), представляющего группу Office 365.
 
 
 ### <a name="get-another-users-calendar"></a>Получение календаря другого пользователя

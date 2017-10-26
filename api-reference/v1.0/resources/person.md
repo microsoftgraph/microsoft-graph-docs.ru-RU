@@ -19,7 +19,7 @@
 |scoredEmailAddresses|Коллекция [scoredEmailAddress](scoredemailaddress.md)|Электронные адреса человека.|
 |givenName|String|Имя человека.|
 |id|String|Уникальный идентификатор человека. Только для чтения.|
-|imAddress|Коллекция String|Адрес SIP VOIP для обмена мгновенными сообщениями для пользователя. Только для чтения.|
+|imAddress|String|Адрес SIP VOIP для обмена мгновенными сообщениями для пользователя. Только для чтения.|
 |isFavorite|Boolean|Имеет значение `true`, если пользователь добавил этого человека в список избранных.|
 |jobTitle|String|Должность человека.|
 |officeLocation|String|Расположение офиса человека.|
@@ -55,14 +55,15 @@
   "companyName": "string",
   "department": "string",
   "displayName": "string",
-  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredemailaddress"}],
+  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredEmailAddress"}],
   "givenName": "string",
   "id": "string (identifier)",
+  "imAddress": "string",
   "isFavorite": true,
   "jobTitle": "string",
   "officeLocation": "string",
   "personNotes": "string",
-  "personType": [{"@odata.type": "microsoft.graph.persontype"}],
+  "personType": [{"@odata.type": "microsoft.graph.personType"}],
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
   "profession": "string",

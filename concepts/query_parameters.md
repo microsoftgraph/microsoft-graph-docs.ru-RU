@@ -6,15 +6,16 @@
 
 |Имя|Описание|Пример|
 |:---------------|:--------|:-------|
-|[$count](#count)|Возвращает общее количество соответствующих ресурсов.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
-|[$expand](#expand)|Получает связанные ресурсы.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
-|[$filter](#filter)|Фильтрует результаты (строки).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-|[$orderby](#orderby)|Упорядочивает результаты.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)
-|[$search](#search)| Возвращает результаты на основании условий поиска. В настоящее время поддерживается в коллекциях `messages` и `person`.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)
-|[$select](#select)|Фильтрует свойства (столбцы).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
-|[$skip](#skip)|Применяется для индексации в результирующем наборе. Также используется некоторыми API для разбиения по страницам и может использоваться вместе с параметром `$top` для разбиения результатов по страницам вручную.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)
-|[$skipToken](#skiptoken)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. (Вместо этого параметра некоторые API используют `$skip`.) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
-|[$top](#top)|Задает размер страницы результатов. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
+|[$count](#count)|Возвращает общее количество соответствующих ресурсов.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
+|[$expand](#expand)|Получает связанные ресурсы.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)|
+|[$filter](#filter)|Фильтрует результаты (строки).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)|
+|[$format](#format)|Возвращает результаты в указанном формате мультимедиа.|[`/users?$format=json`](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)|
+|[$orderby](#orderby)|Упорядочивает результаты.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)|
+|[$search](#search)| Возвращает результаты на основании условий поиска. В настоящее время поддерживается в коллекциях `messages` и `person`.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)|
+|[$select](#select)|Фильтрует свойства (столбцы).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)|
+|[$skip](#skip)|Применяется для индексации в результирующем наборе. Также используется некоторыми API для разбиения по страницам и может использоваться вместе с параметром `$top` для разбиения результатов по страницам вручную.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)|
+|[$skipToken](#skiptoken)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. (Вместо этого параметра некоторые API используют `$skip`.) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`|
+|[$top](#top)|Задает размер страницы результатов. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)|
 
 Эти параметры совместимы с [языком запросов OData версии 4][odata-query]. Параметры, которые поддерживаются всеми API Microsoft Graph для конечной точки `v1.0`, могут значительно отличаться от таковых для конечной точки `beta`. 
 
@@ -116,6 +117,20 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | Получение списка всех групп Office 365 в организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 
 > **Примечание.** Ресурсы Azure AD не поддерживают следующие операторы `$filter`: `ne`, `gt`, `ge`, `lt`, `le` и `not`. В настоящее время строковый оператор `contains` не поддерживается ни одним ресурсом Microsoft Graph.
+
+## <a name="format"></a>format
+
+Параметр запроса `$format` позволяет указать формат мультимедиа для элементов, возвращаемых из Microsoft Graph.
+
+Например, указанный ниже запрос возвращает список пользователей организации в формате JSON.
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$format=json
+```
+
+[Опробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)
+
+> **Примечание.** Параметр запросов `$format` поддерживает ряд форматов (например, Atom, XML и JSON), но результаты могут не возвращаться во всех форматах.
 
 ## <a name="orderby"></a>orderby
 
