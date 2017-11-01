@@ -1,6 +1,6 @@
 # <a name="create-calendar"></a>Создание объекта Calendar
 
-С помощью этого API можно создать календарь в группе календарей.
+С помощью этого API можно для экземпляра [user](../resources/user.md) создать календарь в группе календарей. 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -29,11 +29,11 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [Calendar](../resources/calendar.md) в формате JSON.
+Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201, Created` и объект [Calendar](../resources/calendar.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [calendar](../resources/calendar.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

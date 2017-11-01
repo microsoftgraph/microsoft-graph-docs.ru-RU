@@ -15,7 +15,7 @@
 
 
 ## <a name="authorization-and-scopes"></a>Авторизация и области
-Для аутентификации вызовов REST API для Excel можно использовать [конечную точку Azure AD версии 2.0](https://graph.microsoft.io/en-us/docs/concepts/converged_auth). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
+Для аутентификации вызовов REST API для Excel можно использовать [конечную точку Azure AD 2.0](https://graph.microsoft.io/en-us/docs/concepts/converged_auth). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
   
 Для использования ресурса Excel требуется одна из следующих [областей разрешений](https://graph.microsoft.io/en-us/docs/concepts/permissions_reference):
 
@@ -81,7 +81,7 @@
     )
 ```
 
-### <a name="receive-an-authorization-code-in-your-reply-url-page"></a>Получение кода авторизации на странице URL-адреса отклика
+### <a name="receive-an-authorization-code-in-your-reply-url-page"></a>Получение кода авторизации на странице URL-адреса ответа
 
 После входа пользователя браузер перенаправляется на URL-адрес отклика. После успешной авторизации в теле отклика возвращается маркер доступа (он будет использоваться для авторизации дополнительных запросов). 
 
@@ -118,8 +118,8 @@
     headers = { 
         'User-Agent' : 'python_tutorial/1.0',
         'Authorization' : 'Bearer {0}'.format(access_token),
-         'Accept' : 'application/json',
-         'Content-Type' : 'application/json'
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json'
     }
 ```
 > **Примечание**. В запросе необходимо также отправлять заголовок **Content-Type** со значением, принимаемым API Graph, например `application/json`.
@@ -127,10 +127,10 @@
 ### <a name="getting-an-excel-session"></a>Получение сеанса Excel
 #### <a name="request"></a>Запрос 
 
-Передайте объект JSON, задав `persistChanges` значение `true` или `false`. Если `persistChanges` задано значение `false`, возвращается идентификатор временного сеанса. В этом примере используется библиотека HTTP [Requests](http://docs.python-requests.org/en/latest/user/quickstart). 
+Передайте объект JSON, задав `persistChanges` значение `true` или `false`. Если для параметра `persistChanges` установлено значение `false`, возвращается идентификатор непостоянного сеанса. В этом примере используется библиотека HTTP [Requests](http://docs.python-requests.org/en/latest/user/quickstart). 
 
 ```python
-     # Replace the id with your Excel workbook's drive id
+    # Replace the id with your Excel workbook's drive id
     url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
     # Set request headers
     headers = { 
@@ -151,7 +151,7 @@
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -183,7 +183,7 @@ content-type: application/json;odata.metadata
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

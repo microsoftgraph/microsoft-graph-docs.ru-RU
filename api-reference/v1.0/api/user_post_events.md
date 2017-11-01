@@ -41,11 +41,11 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 ## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код ответа `201, Created` и объект [event](../resources/event.md) в тексте ответа.
+В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса. В нем используется заголовок запроса `Prefer: outlook.timezone`, чтобы указать, что для параметров времени **start** и **end** в ответе следует использовать этот часовой пояс.
+##### <a name="request-1"></a>Запрос 1
+Ниже приведен пример запроса. Использует заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени **start** и **end** в отклике.
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -84,9 +84,9 @@ Content-length: 600
   ]
 }
 ```
-Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+В теле запроса представьте объект [event](../resources/event.md) в формате JSON.
+##### <a name="response-1"></a>Отклик 1
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -167,6 +167,161 @@ Content-length: 2197
     }
 }
 ```
+
+##### <a name="request-2"></a>Запрос 2
+Во втором примере показано, как создать повторяющееся событие. Событие происходит с 10:00 до 11:00 каждый понедельник с 4 сентября 2017 г. до конца года.
+<!-- {
+  "blockType": "request",
+  "name": "create_event_recurring"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/events
+Content-type: application/json
+
+{
+  "subject": "Let's go for coffee",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does late morning work for you?"
+  },
+  "start": {
+      "dateTime": "2017-09-04T10:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2017-09-04T11:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "recurrence": {
+    "pattern": {
+      "type": "weekly",
+      "interval": 1,
+      "daysOfWeek": [ "Monday" ]
+    },
+    "range": {
+      "type": "endDate",
+      "startDate": "2017-09-04",
+      "endDate": "2017-12-31"
+    }
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"AdeleV@contoso.onmicrosoft.com",
+        "name": "Adele Vance"
+      },
+      "type": "required"
+    }
+  ]
+}
+```
+В теле запроса представьте объект [event](../resources/event.md) в формате JSON.
+##### <a name="response-2"></a>Отклик 2
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "name": "create_event_recurring",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
+    "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA7WsvGQ==\"",
+    "id":"AAMkADQwMDI5YT",
+    "createdDateTime":"2017-10-14T07:37:39.0083072Z",
+    "lastModifiedDateTime":"2017-10-14T07:37:40.0239406Z",
+    "changeKey":"+T8RDneHMkKe2BGYEaQZ4wAA7WsvGQ==",
+    "categories":[
+
+    ],
+    "originalStartTimeZone":"Pacific Standard Time",
+    "originalEndTimeZone":"Pacific Standard Time",
+    "iCalUId":"040000008200E00074C5B7101A82E008000000000068AD4FBF44D301000000000000000010000000CA802EEBDE19CB4AB552714F48C7EEFB",
+    "reminderMinutesBeforeStart":15,
+    "isReminderOn":true,
+    "hasAttachments":false,
+    "subject":"Let's go for coffee",
+    "bodyPreview":"Does late morning work for you?",
+    "importance":"normal",
+    "sensitivity":"normal",
+    "isAllDay":false,
+    "isCancelled":false,
+    "isOrganizer":true,
+    "responseRequested":true,
+    "seriesMasterId":null,
+    "showAs":"busy",
+    "type":"seriesMaster",
+    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMDI5YT&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl":null,
+    "responseStatus":{
+        "response":"organizer",
+        "time":"0001-01-01T00:00:00Z"
+    },
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes late morning work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start":{
+        "dateTime":"2017-09-04T10:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "end":{
+        "dateTime":"2017-09-04T11:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "location":{
+        "displayName":"Harry's Bar"
+    },
+    "recurrence":{
+        "pattern":{
+            "type":"weekly",
+            "interval":1,
+            "month":0,
+            "dayOfMonth":0,
+            "daysOfWeek":[
+                "monday"
+            ],
+            "firstDayOfWeek":"sunday",
+            "index":"first"
+        },
+        "range":{
+            "type":"endDate",
+            "startDate":"2017-09-04",
+            "endDate":"2017-12-31",
+            "recurrenceTimeZone":"Pacific Standard Time",
+            "numberOfOccurrences":0
+        }
+    },
+    "attendees":[
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Adele Vance",
+                "address":"AdeleV@contoso.onmicrosoft.com"
+            }
+        }
+    ],
+    "organizer":{
+        "emailAddress":{
+            "name":"Alex Wilber",
+            "address":"AlexW@contoso.onmicrosoft.com"
+        }
+    }
+}
+```
+
+
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
