@@ -62,6 +62,13 @@ Content-length: 82
   ]
 }
 ```
+> **Примечание.** Используйте параметры запросов [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top), чтобы просматривать постранично большое количество строк.
+
+Пример. 
+
+`https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5`
+`https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5`
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

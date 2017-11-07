@@ -28,7 +28,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 |:---------------|:--------|:----------|
 |height|number|Необязательный. Нужная высота создаваемого изображения.|
 |width|number|Необязательный. Нужная ширина создаваемого изображения.|
-|fittingMode|string|Необязательный. Метод, используемый для масштабирования диаграммы до указанного размера (если указаны и высота, и ширина).  Возможные значения: `Fit`, `FitAndCenter`, `Fill`.|
+|fittingMode|string|Необязательный параметр. Метод, используемый для масштабирования диаграммы до указанного размера (если указаны и высота, и ширина).  Возможные значения: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Отклик
 
@@ -41,16 +41,6 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-Content-type: application/json
-Content-length: 77
-
-{
-  "height": {
-  },
-  "width": {
-  },
-  "fittingMode": "fittingMode-value"
-}
 ```
 
 ##### <a name="response"></a>Ответ
@@ -58,13 +48,24 @@ Content-length: 77
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
+Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 
 {
 "value" : "base-64 chart image string"
 }
 ```
+
+## <a name="usage"></a>Применение
+
+Вы можете обеспечить отображение строки Base64 в теге изображения HTML: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
+
+В случае поведения по умолчанию используйте `Image(width=0,height=0,fittingMode='fit')`. Ниже приведен пример изображения диаграммы, возвращаемого с параметрами по умолчанию.
+
+![Изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+
+Если вы хотите настроить отображение этого изображения, укажите высоту, ширину и режим подгонки. Ниже показано то же изображение диаграммы, но с такими параметрами: `Image(width=500,height=500,fittingMode='Fill')`.
+
+![Изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

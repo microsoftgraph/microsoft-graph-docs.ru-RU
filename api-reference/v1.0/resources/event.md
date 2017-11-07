@@ -12,7 +12,7 @@
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список событий](../api/user_list_events.md)|Коллекция объектов [event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
+|[Список событий](../api/user_list_events.md)|Коллекция [event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
 |[Создание события](../api/user_post_events.md) |[event](event.md)| Создание события путем записи в коллекцию экземпляров.|
 |[Получение события](../api/event_get.md) | [event](event.md) |Считывание свойств и отношений объекта event.|
 |[Обновление](../api/event_update.md) | [event](event.md) |Обновление объекта event. |
@@ -67,23 +67,23 @@
 |responseStatus|[responseStatus](responsestatus.md)|Указывает тип отклика, отправленного в ответ на сообщение о событии.|
 |sensitivity|String| Возможные значения: `Normal`, `Personal`, `Private`, `Confidential`.|
 |seriesMasterId|String|Категории, назначенные элементу.|
-|showAs|String|Отображаемое состояние. Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Возможные значения: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|showAs|String|Отображаемое состояние. Возможные значения: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события.|
 |subject|String|Текст в строке темы сообщения о событии.|
-|type|String|Тип события: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Возможные значения: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
+|type|String|Тип события. Возможные значения: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Только для чтения.|
 |webLink|String|URL-адрес для открытия события в Outlook Web App.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция объектов [attachment](attachment.md)|Коллекция вложений [fileAttachment](fileAttachment.md) и [itemAttachment](itemAttachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
-|calendar|[calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|
+|attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileAttachment.md) и [itemAttachment](itemAttachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
+|календарь|[calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для события. Только для чтения. Допускается значение null.|
-|instances|Коллекция объектов [event](event.md)|Экземпляры события. Свойство навигации. Только для чтения. Допускается значение null.|
+|instances|Коллекция [event](event.md)|Экземпляры события. Свойство навигации. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для события. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для события. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже этот ресурс представлен в формате JSON.
 

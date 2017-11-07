@@ -3,11 +3,10 @@
 Описывает дату, время и часовой пояс для определенного момента.
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |DateTime|String|Один момент времени в объединенном представлении даты и времени (`<date>T<time>`).|
 |TimeZone|String|Один из указанных ниже часовых поясов.|
-
 
 Свойство _TimeZone_ можно задать для каждого из часовых поясов, которые поддерживаются в Windows, а также для указанных ниже часовых поясов.
 
@@ -103,11 +102,11 @@ Africa/Cairo
 
 Asia/Damascus
 
-Africa/Johannesburg
+Африка, Йоханнесбург
 
-Europe/Kiev
+Европа, Киев
 
-Europe/Istanbul
+Европа, Стамбул
 
 Asia/Jerusalem
 
@@ -137,25 +136,25 @@ Asia/Yerevan
 
 Asia/Kabul
 
-Asia/Karachi
+Азия, Карачи
 
-Asia/Tashkent
+Азия, Ташкент
 
-Asia/Kolkata
+Азия, Колката
 
 Asia/Colombo
 
-Asia/Kathmandu
+Азия, Катманду
 
-Asia/Almaty
+Азия, Астана (Алматы)
 
-Asia/Dhaka
+Азия, Дакка
 
-Asia/Yekaterinburg
+Азия, Екатеринбург
 
-Asia/Rangoon
+Азия, Янгон (Рангун)
 
-Asia/Bangkok
+Азия, Бангкок
 
 Asia/Novosibirsk
 
