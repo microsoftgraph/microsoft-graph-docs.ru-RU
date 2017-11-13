@@ -3,11 +3,10 @@
 Расписание и диапазон повторения.
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |pattern|[RecurrencePattern](recurrencepattern.md)|Частота события.|
 |range|[RecurrenceRange](recurrencerange.md)|Продолжительность события.|
-
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -18,7 +17,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.patternedrecurrence"
+  "@odata.type": "microsoft.graph.patternedRecurrence"
 }-->
 
 ```json
