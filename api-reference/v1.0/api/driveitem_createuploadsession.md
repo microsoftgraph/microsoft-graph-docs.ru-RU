@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: "Возобновляемая отправка файлов"
-ms.openlocfilehash: 11418e4f2dcb761faddbb8d8ed045e87278b8699
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 39aee7121483e423c4adbd910c80e1ca059c685a
+ms.sourcegitcommit: e9b5d370a1d9a03d908dc430994d6a196b1345b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -50,6 +50,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 Например, вы можете задать необходимые действия для случая, когда имя файла уже используется, указав в теле запроса свойство поведения при конфликтах.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
     "item": {
@@ -62,9 +63,9 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | Имя       | Значение | Описание                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадает с текущим значением eTag элемента, то возвращается отклик `412 Precondition Failed`. |
+| *if-match* | etag  | Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадает с текущим значением eTag элемента, то возвращается ошибка `412 Precondition Failed`. |
 
-### <a name="response"></a>Отклик
+### <a name="request"></a>Запрос
 
 В отклике на этот запрос будут представлены подробные сведения о новом экземпляре [uploadSession](../resources/uploadsession.md) (в том числе URL-адрес для отправки фрагментов файла). 
 
@@ -310,7 +311,7 @@ If-Match: {etag or ctag}
 
 Если файл можно зафиксировать с помощью новых метаданных, возвращается ответ `HTTP 201 Created` или `HTTP 200 OK` с метаданными ресурса Item для отправленного файла.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 201 Created
