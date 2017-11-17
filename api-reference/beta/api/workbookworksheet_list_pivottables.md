@@ -1,0 +1,57 @@
+# <a name="list-pivottables"></a>Получение списка pivotTables
+
+Получение списка объектов workbookpivottable.
+
+### <a name="prerequisites"></a>Необходимые условия
+Для применения этого API требуются такие **области**: _Files.Read, Files.ReadWrite_.
+
+### <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/drive/root/workbook/worksheets/{id}/pivotTables
+```
+### <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
+
+### <a name="request-headers"></a>Заголовки запросов
+| Имя      |Описание|
+|:----------|:----------|
+| Авторизация  | Bearer {code}|
+| Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
+
+### <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
+### <a name="response"></a>Отклик
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [workbookPivotTable](../resources/workbookpivottable.md) в теле отклика.
+### <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "get_pivottables"
+}-->
+```http
+GET https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/pivotTables
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookPivotTable",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 83
+
+{
+  "value": [
+    {
+      "id": "id-value",
+      "name": "name-value"
+    }
+  ]
+}
+```

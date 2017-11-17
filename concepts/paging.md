@@ -1,0 +1,33 @@
+# <a name="paging-microsoft-graph-data-in-your-app"></a><span data-ttu-id="d1a65-101">Разбиение данных Microsoft Graph по страницам в приложении</span><span class="sxs-lookup"><span data-stu-id="d1a65-101">Paging Microsoft Graph data in your app</span></span> 
+
+<span data-ttu-id="d1a65-p101">Некоторые запросы к Microsoft Graph возвращают несколько страниц данных. Это происходит из-за разбиения по страницам на стороне сервера или из-за использования параметра `$top`, который ограничивает размер страниц в запросе. Когда результирующий набор занимает несколько страниц, Microsoft Graph в ответ возвращает свойство `@odata.nextLink`, содержащее URL-адрес следующей страницы результатов.</span><span class="sxs-lookup"><span data-stu-id="d1a65-p101">Some queries against Microsoft Graph return multiple pages of data either due to server-side paging or due to the use of the `$top` query parameter to specifically limit the page size in a request. When a result set spans multiple pages, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results.</span></span> 
+
+<span data-ttu-id="d1a65-104">Например, в приведенном ниже URL-адресе запрашивается список всех пользователей в организации, при этом с помощью параметра запроса `$top` указан размер страницы — 5:</span><span class="sxs-lookup"><span data-stu-id="d1a65-104">For example, the following URL requests all the users in an organization with a page size of 5 specified with the `$top` query parameter:</span></span>
+
+```html
+https://graph.microsoft.com/v1.0/users?$top=5
+```
+
+<span data-ttu-id="d1a65-105">Если результат содержит более пяти пользователей, Microsoft Graph возвращает свойство `odata:nextLink` (как показанный ниже пример) вместе с первой страницей пользователей.</span><span class="sxs-lookup"><span data-stu-id="d1a65-105">If the result contains more than five users, Microsoft Graph will return an `odata:nextLink` property similar to the following along with the first page of users.</span></span>
+
+```json
+"@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
+```
+
+<span data-ttu-id="d1a65-106">Следующую страницу результатов можно получить, отправив значение URL-адреса свойства `@odata:nextLink` в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="d1a65-106">You can retrieve the next page of results by sending the URL value of the `@odata:nextLink` property to Microsoft Graph.</span></span> 
+
+```html
+https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27
+```
+
+<span data-ttu-id="d1a65-107">В каждом ответе Microsoft Graph будет возвращать ссылку на следующую страницу данных в свойстве `@odata:nextLink`, пока не будут прочитаны все страницы результатов.</span><span class="sxs-lookup"><span data-stu-id="d1a65-107">Microsoft Graph will continue to return a reference to the next page of data in the `@odata:nextLink` property with each response until all pages of the result have been read.</span></span>
+
+><span data-ttu-id="d1a65-108">**Важно!** При запросе следующей страницы результатов в свойство `@odata:nextLink` следует включить полный URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="d1a65-108">**Important:** You should include the entire URL in the `@odata:nextLink` property in your request for the next page of results.</span></span> <span data-ttu-id="d1a65-109">В зависимости от API, к которому выполняется запрос, значение URL-адреса `@odata:nextLink` будет содержать один из двух параметров запроса: `$skiptoken` или `$skip`.</span><span class="sxs-lookup"><span data-stu-id="d1a65-109">Depending on the API that the query is being performed against, the `@odata:nextLink` URL value will contain either a `$skiptoken` or a `$skip` query parameter.</span></span> <span data-ttu-id="d1a65-110">URL-адрес также содержит все остальные параметры, имеющиеся в исходном запросе.</span><span class="sxs-lookup"><span data-stu-id="d1a65-110">The URL also contains all the other query parameters present in the original request.</span></span> <span data-ttu-id="d1a65-111">Не пытайтесь извлечь значение `$skiptoken` или `$skip` и использовать его в другом запросе.</span><span class="sxs-lookup"><span data-stu-id="d1a65-111">Do not try to extract the `$skiptoken` or `$skip` value and use it in a different request.</span></span> 
+
+<span data-ttu-id="d1a65-112">Для различных API Microsoft Graph характерны свои особенности разбиения по страницам.</span><span class="sxs-lookup"><span data-stu-id="d1a65-112">Paging behavior varies across different Microsoft Graph APIs.</span></span> <span data-ttu-id="d1a65-113">При работе со страницами данных необходимо учитывать следующее:</span><span class="sxs-lookup"><span data-stu-id="d1a65-113">Consider the following when working with paged data:</span></span>
+
+- <span data-ttu-id="d1a65-114">Разные API могут иметь различные максимальные размеры страницы и размеры страницы по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="d1a65-114">Different APIs might have different default and maximum page sizes.</span></span>
+- <span data-ttu-id="d1a65-115">Различные API могут работать по-разному, если указанный (с помощью параметра запроса `$top`) размер страницы превышает максимальное значение для соответствующего API.</span><span class="sxs-lookup"><span data-stu-id="d1a65-115">Different APIs might behave differently if you specify a page size (via the `$top` query parameter) that exceeds the maximum page size for that API.</span></span> <span data-ttu-id="d1a65-116">В зависимости от API запрошенный размер страницы может быть проигнорирован, может быть возвращен максимальный размер страницы для соответствующего API или же Microsoft Graph может вернуть ошибку.
+</span><span class="sxs-lookup"><span data-stu-id="d1a65-116">Depending on the API, the requested page size might be ignored, it might default to the maximum page size for that API, or Microsoft Graph might return an error.</span></span> 
+- <span data-ttu-id="d1a65-p105">Некоторые ресурсы и отношения не поддерживают разбиение по страницам, например запросы к [directoryRoles](../api-reference/v1.0/resources/directoryrole.md).
+Сюда относится считывание самих объектов ролей, а также участников ролей.</span><span class="sxs-lookup"><span data-stu-id="d1a65-p105">Not all resources or relationships support paging. For example, queries against [directoryRoles](../api-reference/v1.0/resources/directoryrole.md) do not support paging. This includes reading role objects themselves as well as role members.</span></span>

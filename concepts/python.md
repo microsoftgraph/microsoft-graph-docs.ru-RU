@@ -1,0 +1,3 @@
+<span data-ttu-id="07630-p110">API Microsoft Graph — это мощный единый API, с помощью которого можно взаимодействовать со всеми типами данных корпорации Майкрософт. Сведения о других возможностях API Microsoft Graph см. в справочнике по API.</span><span class="sxs-lookup"><span data-stu-id="07630-p110">The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the API reference to explore what else you can accomplish with Microsoft Graph.</span></span>
+
+API Microsoft Graph — это мощный единый API, с помощью которого можно взаимодействовать со всеми типами данных корпорации Майкрософт. Сведения о других возможностях API Microsoft Graph см. в справочнике по API.
