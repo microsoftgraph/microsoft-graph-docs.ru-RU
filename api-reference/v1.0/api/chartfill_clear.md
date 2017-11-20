@@ -1,16 +1,16 @@
-# <a name="chartfill-clear"></a><span data-ttu-id="4553d-101">ChartFill: clear</span><span class="sxs-lookup"><span data-stu-id="4553d-101">ChartFill: clear</span></span>
+# <a name="chartfill-clear"></a><span data-ttu-id="e637a-101">ChartFill: clear</span><span class="sxs-lookup"><span data-stu-id="e637a-101">ChartFill: clear</span></span>
 
-<span data-ttu-id="4553d-102">Очищает цвет заливки элемента диаграммы.</span><span class="sxs-lookup"><span data-stu-id="4553d-102">Clear the fill color of a chart element.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4553d-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4553d-103">Permissions</span></span>
-<span data-ttu-id="4553d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="4553d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="e637a-102">Очищает цвет заливки элемента диаграммы.</span><span class="sxs-lookup"><span data-stu-id="e637a-102">Clear the fill color of a chart element.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e637a-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e637a-103">Permissions</span></span>
+<span data-ttu-id="e637a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="e637a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="4553d-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4553d-106">Permission type</span></span>      | <span data-ttu-id="4553d-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4553d-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e637a-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e637a-106">Permission type</span></span>      | <span data-ttu-id="e637a-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e637a-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4553d-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4553d-108">Delegated (work or school account)</span></span> | <span data-ttu-id="4553d-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4553d-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4553d-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4553d-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4553d-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4553d-111">Not supported.</span></span>    |
-|<span data-ttu-id="4553d-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4553d-112">Application</span></span> | <span data-ttu-id="4553d-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4553d-113">Not supported.</span></span> |
+|<span data-ttu-id="e637a-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e637a-108">Delegated (work or school account)</span></span> | <span data-ttu-id="e637a-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e637a-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e637a-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e637a-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e637a-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e637a-111">Not supported.</span></span>    |
+|<span data-ttu-id="e637a-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e637a-112">Application</span></span> | <span data-ttu-id="e637a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e637a-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4553d-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4553d-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e637a-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e637a-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
@@ -18,22 +18,23 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
 POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="4553d-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4553d-115">Request headers</span></span>
-| <span data-ttu-id="4553d-116">Имя</span><span class="sxs-lookup"><span data-stu-id="4553d-116">Name</span></span>       | <span data-ttu-id="4553d-117">Описание</span><span class="sxs-lookup"><span data-stu-id="4553d-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e637a-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e637a-115">Request headers</span></span>
+| <span data-ttu-id="e637a-116">Имя</span><span class="sxs-lookup"><span data-stu-id="e637a-116">Name</span></span>       | <span data-ttu-id="e637a-117">Описание</span><span class="sxs-lookup"><span data-stu-id="e637a-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="4553d-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4553d-118">Authorization</span></span>  | <span data-ttu-id="4553d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4553d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e637a-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e637a-118">Authorization</span></span>  | <span data-ttu-id="e637a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e637a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e637a-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e637a-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="e637a-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="e637a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4553d-121">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4553d-121">Request body</span></span>
-<span data-ttu-id="4553d-122">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4553d-122">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e637a-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e637a-124">Request body</span></span>
+<span data-ttu-id="e637a-125">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e637a-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4553d-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="4553d-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e637a-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="e637a-126">Response</span></span>
 
-<span data-ttu-id="4553d-p103">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="4553d-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="e637a-p104">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e637a-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4553d-126">Пример</span><span class="sxs-lookup"><span data-stu-id="4553d-126">Example</span></span>
-<span data-ttu-id="4553d-127">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="4553d-127">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="4553d-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="4553d-128">Request</span></span>
-<span data-ttu-id="4553d-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4553d-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e637a-129">Пример</span><span class="sxs-lookup"><span data-stu-id="e637a-129">Example</span></span>
+<span data-ttu-id="e637a-130">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="e637a-130">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e637a-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="e637a-131">Request</span></span>
+<span data-ttu-id="e637a-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e637a-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartfill_clear"
@@ -42,8 +43,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="4553d-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="4553d-130">Response</span></span>
-<span data-ttu-id="4553d-131">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4553d-131">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e637a-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="e637a-133">Response</span></span>
+<span data-ttu-id="e637a-134">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e637a-134">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

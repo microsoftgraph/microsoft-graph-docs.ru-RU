@@ -1,42 +1,43 @@
-# <a name="tablerowcollection-itemat"></a><span data-ttu-id="60b56-101">TableRowCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="60b56-101">TableRowCollection: ItemAt</span></span>
+# <a name="tablerowcollection-itemat"></a><span data-ttu-id="82168-101">TableRowCollection: ItemAt</span><span class="sxs-lookup"><span data-stu-id="82168-101">TableRowCollection: ItemAt</span></span>
 
-<span data-ttu-id="60b56-102">Получает строку на основании сведений о ее позиции в коллекции.</span><span class="sxs-lookup"><span data-stu-id="60b56-102">Gets a row based on its position in the collection.</span></span>
-## <a name="permissions"></a><span data-ttu-id="60b56-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="60b56-103">Permissions</span></span>
-<span data-ttu-id="60b56-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="60b56-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="82168-102">Получает строку на основании сведений о ее позиции в коллекции.</span><span class="sxs-lookup"><span data-stu-id="82168-102">Gets a row based on its position in the collection.</span></span>
+## <a name="permissions"></a><span data-ttu-id="82168-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="82168-103">Permissions</span></span>
+<span data-ttu-id="82168-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="82168-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="60b56-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="60b56-106">Permission type</span></span>      | <span data-ttu-id="60b56-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="60b56-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="82168-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="82168-106">Permission type</span></span>      | <span data-ttu-id="82168-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="82168-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="60b56-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="60b56-108">Delegated (work or school account)</span></span> | <span data-ttu-id="60b56-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="60b56-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="60b56-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="60b56-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60b56-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="60b56-111">Not supported.</span></span>    |
-|<span data-ttu-id="60b56-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="60b56-112">Application</span></span> | <span data-ttu-id="60b56-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="60b56-113">Not supported.</span></span> |
+|<span data-ttu-id="82168-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="82168-108">Delegated (work or school account)</span></span> | <span data-ttu-id="82168-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="82168-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="82168-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="82168-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82168-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="82168-111">Not supported.</span></span>    |
+|<span data-ttu-id="82168-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="82168-112">Application</span></span> | <span data-ttu-id="82168-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="82168-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="60b56-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="60b56-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="82168-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="82168-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/rows/ItemAt
 POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="60b56-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="60b56-115">Request headers</span></span>
-| <span data-ttu-id="60b56-116">Имя</span><span class="sxs-lookup"><span data-stu-id="60b56-116">Name</span></span>       | <span data-ttu-id="60b56-117">Описание</span><span class="sxs-lookup"><span data-stu-id="60b56-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="82168-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="82168-115">Request headers</span></span>
+| <span data-ttu-id="82168-116">Имя</span><span class="sxs-lookup"><span data-stu-id="82168-116">Name</span></span>       | <span data-ttu-id="82168-117">Описание</span><span class="sxs-lookup"><span data-stu-id="82168-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="60b56-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="60b56-118">Authorization</span></span>  | <span data-ttu-id="60b56-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="60b56-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="82168-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="82168-118">Authorization</span></span>  | <span data-ttu-id="82168-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="82168-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="82168-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="82168-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="82168-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="82168-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="60b56-121">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="60b56-121">Request body</span></span>
-<span data-ttu-id="60b56-122">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="60b56-122">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="82168-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="82168-124">Request body</span></span>
+<span data-ttu-id="82168-125">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="82168-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="60b56-123">Параметр</span><span class="sxs-lookup"><span data-stu-id="60b56-123">Parameter</span></span>    | <span data-ttu-id="60b56-124">Тип</span><span class="sxs-lookup"><span data-stu-id="60b56-124">Type</span></span>   |<span data-ttu-id="60b56-125">Описание</span><span class="sxs-lookup"><span data-stu-id="60b56-125">Description</span></span>|
+| <span data-ttu-id="82168-126">Параметр</span><span class="sxs-lookup"><span data-stu-id="82168-126">Parameter</span></span>    | <span data-ttu-id="82168-127">Тип</span><span class="sxs-lookup"><span data-stu-id="82168-127">Type</span></span>   |<span data-ttu-id="82168-128">Описание</span><span class="sxs-lookup"><span data-stu-id="82168-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="60b56-126">index</span><span class="sxs-lookup"><span data-stu-id="60b56-126">index</span></span>|<span data-ttu-id="60b56-127">number</span><span class="sxs-lookup"><span data-stu-id="60b56-127">number</span></span>|<span data-ttu-id="60b56-p103">Значение индекса получаемого объекта. Используется нулевой индекс.</span><span class="sxs-lookup"><span data-stu-id="60b56-p103">Index value of the object to be retrieved. Zero-indexed.</span></span>|
+|<span data-ttu-id="82168-129">index</span><span class="sxs-lookup"><span data-stu-id="82168-129">index</span></span>|<span data-ttu-id="82168-130">number</span><span class="sxs-lookup"><span data-stu-id="82168-130">number</span></span>|<span data-ttu-id="82168-p104">Значение индекса получаемого объекта. Используется нулевой индекс.</span><span class="sxs-lookup"><span data-stu-id="82168-p104">Index value of the object to be retrieved. Zero-indexed.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="60b56-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="60b56-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="82168-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="82168-133">Response</span></span>
 
-<span data-ttu-id="60b56-131">В случае успеха этот метод возвращает код отклика `200 OK` и объект [TableRow](../resources/tablerow.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="60b56-131">If successful, this method returns `200 OK` response code and [TableRow](../resources/tablerow.md) object in the response body.</span></span>
+<span data-ttu-id="82168-134">В случае успеха этот метод возвращает код отклика `200 OK` и объект [TableRow](../resources/tablerow.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="82168-134">If successful, this method returns `200 OK` response code and [TableRow](../resources/tablerow.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="60b56-132">Пример</span><span class="sxs-lookup"><span data-stu-id="60b56-132">Example</span></span>
-<span data-ttu-id="60b56-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="60b56-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="60b56-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="60b56-134">Request</span></span>
-<span data-ttu-id="60b56-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="60b56-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="82168-135">Пример</span><span class="sxs-lookup"><span data-stu-id="82168-135">Example</span></span>
+<span data-ttu-id="82168-136">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="82168-136">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="82168-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="82168-137">Request</span></span>
+<span data-ttu-id="82168-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="82168-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_itemat"
@@ -52,8 +53,8 @@ Content-length: 20
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="60b56-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="60b56-136">Response</span></span>
-<span data-ttu-id="60b56-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="60b56-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="82168-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="82168-139">Response</span></span>
+<span data-ttu-id="82168-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="82168-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
