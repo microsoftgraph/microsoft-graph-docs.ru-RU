@@ -20,6 +20,7 @@ POST /workbook/names(<name>)/Range
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
+| Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -39,7 +40,7 @@ POST /workbook/names(<name>)/Range
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/Range
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
