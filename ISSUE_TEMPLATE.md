@@ -1,12 +1,12 @@
-Благодарим вас за помощь в улучшении документации по Microsoft Graph.
+<!---
+Thank you for helping us to improve the Microsoft Graph documentation.
 
-Чтобы вам было удобнее работать, ознакомьтесь с приведенной ниже информацией.
-- Если у вас есть вопросы, возникли проблемы при написании кода или вам нужна помощь, рекомендуем размещать сообщения на сайте **Stack Overflow**. Помечайте свои вопросы тегом [microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph) или [Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph).
-- Предложения, касающиеся работы различных функций и компонентов, размещайте на странице [**User Voice**](https://officespdev.uservoice.com/). Здесь же можно проголосовать за понравившиеся предложения.
-- Если у вас возникла проблема с документацией, сообщите нам об этом или отправьте запрос на включение внесенных вами изменений. Мы рассмотрим ваше предложение и сделаем соответствующие изменения в документации.
+So that we can better assist you, please note the following:
+- If you have a question, need help, or are experiencing an issue with your code, we encourage you to post your question or issue on **Stack Overflow**. Tag your question with [microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph) or [Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph).
+- If you have a feature suggestion, please post your idea on our [**User Voice**](https://officespdev.uservoice.com/) page, and vote for your suggestions there.
+- If you have an issue with the documentation, please provide the information here, or feel free to submit a pull request with your suggested changes. We will review your contributions and update our documentation accordingly.
+-->
 
-------------
- 
-Проблема: 
+<span data-ttu-id="9f82e-101">Проблема:</span><span class="sxs-lookup"><span data-stu-id="9f82e-101">Issue:</span></span> 
 
-Статья:
+<span data-ttu-id="9f82e-102">Статья:</span><span class="sxs-lookup"><span data-stu-id="9f82e-102">Article:</span></span>
