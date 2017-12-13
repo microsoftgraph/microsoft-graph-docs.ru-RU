@@ -35,6 +35,17 @@ Content-Type: application/json
       "id": "3",
       "method": "GET",
       "url": "/groups/{id}/events"
+    },
+    {
+      "id": "4",
+      "url": "/me",
+      "method": "PATCH",
+      "body": {
+        "city" : "Redmond"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
     }
   ]
 }
@@ -74,6 +85,11 @@ Content-Type: application/json
         "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
+    },
+    {
+      "id": "4",
+      "status": 204,
+      "body": null
     }
   ]
 }
@@ -89,7 +105,7 @@ Content-Type: application/json
 
 Свойства `method` и `url` отображаются в начале любого HTTP-запроса. method — это метод HTTP, а URL — это URL-адрес ресурса, на который обычно отправляется отдельный запрос.
 
-Отдельные запросы также могут содержать свойства `headers` и `body`. Обычно это объекты JSON. В некоторых случаях `body` может быть значением в кодировке URL base64, а не объектом JSON — например, если body представляет собой изображение. Когда в запрос включено свойство `body`, объект `headers` должен содержать значение для свойства `content-type`.
+Отдельные запросы также могут содержать свойства `headers` и `body`. Обычно это объекты JSON, как показано в предыдущем примере. В некоторых случаях `body` может быть значением в кодировке URL Base64, а не объектом JSON (например, если body представляет собой изображение). Когда в запрос включено свойство `body`, объект `headers` должен содержать значение для свойства `Content-Type`.
 
 ## <a name="response-format"></a>Формат ответа
 
