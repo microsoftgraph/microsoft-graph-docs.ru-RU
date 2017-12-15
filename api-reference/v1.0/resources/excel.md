@@ -13,9 +13,9 @@
 
 ## <a name="authorization-and-scopes"></a>Авторизация и области
 
-Для проверки подлинности API Excel вы можете использовать [конечную точку Azure AD версии 2](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
+Для проверки подлинности API Excel вы можете использовать [конечную точку Azure AD версии 2](https://developer.microsoft.com/ru-RU/graph/docs/authorization/converged_auth). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
   
-Чтобы использовать ресурс Excel, требуется одно из следующих [разрешений](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes):
+Чтобы использовать ресурс Excel, требуется одно из следующих [разрешений](https://developer.microsoft.com/ru-RU/graph/docs/authorization/permission_scopes):
 
 * Files.Read (для чтения)
 * Files.ReadWrite (для чтения и записи)
@@ -390,6 +390,36 @@ workbook-session-id: {session-id}
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
+```
+
+#### <a name="create-table"></a>Создание таблицы
+
+Запрос 
+<!-- { "blockType": "ignored" } -->
+```http 
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{ "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
+```
+
+Отклик 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 201 Created
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%272%27)",
+  "id": "2",
+  "name": "NewTableName",
+  "showHeaders": true,
+  "showTotals": false,
+  "style": "TableStyleMedium4"
+}
 ```
 
 #### <a name="update-table"></a>Обновление таблицы

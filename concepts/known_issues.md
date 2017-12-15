@@ -36,7 +36,7 @@
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Разрешения для групп и Microsoft Teams
 
-Microsoft Graph предоставляет два разрешения (*Group.Read.All* и *Group.ReadWrite.All*) для доступа к API для групп и Microsoft Teams. Эти разрешения должен предоставить администратор (в предварительной версии было иначе).  В будущем мы планируем добавить новые разрешения для групп и команд, которые смогут предоставлять пользователи.
+В Microsoft Graph доступны два разрешения (*Group.Read.All* и *Group.ReadWrite.All*) для доступа к API для групп и Microsoft Teams. На предоставление этих разрешений должен согласиться администратор (в предварительной версии было иначе). В будущем мы планируем добавить новые разрешения для групп и команд, на предоставление которых смогут соглашаться пользователи.
 
 Кроме того, только API для базового администрирования групп и управления ими поддерживает доступ с помощью разрешений только для приложений или делегированных разрешений. Все остальные функции API групп поддерживают только делегированные разрешения.
 
@@ -44,16 +44,15 @@ Microsoft Graph предоставляет два разрешения (*Group.R
 
 * создание и удаление групп;
 * получение и обновление свойств групп, связанных с администрированием групп и управлением ими;
-* [параметры каталогов](../api-reference/v1.0/resources/directoryobject.md), типы и синхронизация групп;
+* синхронизация, типы и [параметры каталогов](../api-reference/v1.0/resources/directoryobject.md) групп;
 * владельцы и члены групп.
-
 
 Примеры функций групп, поддерживающих только делегированные разрешения:
 
 * групповые беседы, события, фотографии;
 * внешние отправители, разрешенные или запрещенные отправители, подписка на группы;
 * избранное пользователей и счетчик непросмотренных элементов;
-* чаты и каналы Microsoft Teams.
+* Чаты и каналы Microsoft Teams
 
 ### <a name="teams-in-microsoft-teams-preview"></a>Рабочие группы в Microsoft Teams (предварительная версия)
 
@@ -73,7 +72,7 @@ Microsoft Graph предоставляет два разрешения (*Group.R
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>Добавление и получение вложений в записях групп
 
-В настоящее время при [добавлении](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) вложений в записи группы, [отображении](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) и получении вложений возвращается сообщение об ошибке "Запрос OData не поддерживается". Для версий `/v1.0` и `/beta` подготовлено исправление. Оно станет доступно всем пользователям в конце января 2016 года.
+В настоящее время при [добавлении](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/post_post_attachments) вложений в записи группы, [отображении](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/post_list_attachments) и получении вложений возвращается сообщение об ошибке "Запрос OData не поддерживается". Для версий `/v1.0` и `/beta` подготовлено исправление. Оно станет доступно всем пользователям в конце января 2016 года.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Установка свойства allowExternalSenders
 
@@ -91,8 +90,8 @@ Microsoft Graph предоставляет два разрешения (*Group.R
 В настоящее время календари ICS поддерживаются частично:
 
 * Вы можете добавить календарь ICS в почтовый ящик пользователя через интерфейс пользователя, но не через API Microsoft Graph.
-* [Перечисление календарей пользователя](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) позволяет получить свойства **name**, **color** и **id** всех [календарей](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
-* Вы также можете [отобразить события](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) календаря ICS.
+* [Перечисление календарей пользователя](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/user_list_calendars) позволяет получить свойства **name**, **color** и **id** всех [календарей](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/calendar) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
+* Вы также можете [отобразить события](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/calendar_list_events) календаря ICS.
 
 ### <a name="accessing-a-shared-calendar"></a>Доступ к общему календарю
 
@@ -135,7 +134,7 @@ GET \me\calendars('{id}')\events
 
 В версии `/v1.0` запрос `GET /me/contactFolders` не включает папку контактов пользователя по умолчанию. 
 
-Эта ошибка будет исправлена. Чтобы получить идентификатор папки контактов по умолчанию, вы можете использовать следующий запрос на [отображение контактов](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts) и свойство **parentFolderId**:
+Эта ошибка будет исправлена. Чтобы получить идентификатор папки контактов по умолчанию, вы можете использовать следующий запрос на [отображение контактов](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/user_list_contacts) и свойство **parentFolderId**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -143,7 +142,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 В указанном выше запросе:
 
-1. `/me/contacts?$top=1` возвращает свойства [контакта](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) в папке контактов по умолчанию.
+1. `/me/contacts?$top=1` возвращает свойства [контакта](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/contact) в папке контактов по умолчанию.
 2. При добавлении `&$select=parentFolderId` возвращается только свойство контакта **parentFolderId** — идентификатор папки контактов по умолчанию.
 
 
@@ -307,7 +306,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Функции, доступные только в REST API Office 365 или API Graph Azure AD
 
-Некоторые функции еще не доступны в Microsoft Graph. Если вы не нашли нужную функцию, можете использовать специальные [REST API Office 365](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog). Сведения о функциях, доступных только через API Azure AD Graph, читайте в записи [Microsoft Graph или Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) в блоге.
+Некоторые функции еще не доступны в Microsoft Graph. Если вы не нашли нужную функцию, можете использовать специальные [REST API Office 365](https://msdn.microsoft.com/ru-RU/office/office365/api/api-catalog). Сведения о функциях, доступных только через API Azure AD Graph, читайте в записи [Microsoft Graph или Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) в блоге.
 
 ## <a name="feedback"></a>Отзывы
 
