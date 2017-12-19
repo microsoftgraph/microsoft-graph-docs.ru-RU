@@ -14,12 +14,20 @@
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+Для определенного пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+
+Для вошедшего пользователя:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/ru-RU/graph/docs/overview/query_parameters) для настройки ответа.
 
 По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
@@ -42,7 +50,42 @@ GET /users/{id | userPrincipalName}
 
 ### <a name="example-1-standard-users-request"></a>Пример 1. Обычный запрос пользователей
 
-По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). В этом примере показаны запрос и ответ, используемые по умолчанию. 
+По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). В этом примере показаны запрос и ответ по умолчанию. 
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
+```
+
+##### <a name="response"></a>Ответ
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+  "businessPhones": [
+       "businessPhones-value"
+   ],
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "jobTitle": "jobTitle-value",
+   "mail": "mail-value",
+   "mobilePhone": "mobilePhone-value",
+   "officeLocation": "officeLocation-value",
+   "preferredLanguage": "preferredLanguage-value",
+   "surname": "surname-value",
+   "userPrincipalName": "userPrincipalName-value",
+   "id": "id-value"
+}
+```
+
+
+### <a name="example-2-signed-in-user-request"></a>Пример 2. Запрос для вошедшего пользователя
+
+Вы можете получить информацию о вошедшем пользователе, заменив `/users/{id | userPrincipalName}` на `/me`.
 
 ##### <a name="request"></a>Запрос
 
@@ -82,24 +125,17 @@ Content-length: 491
 }
 ```
 
-### <a name="example-2-users-request-using-select"></a>Пример 2. Запрос пользователей с помощью оператора $select
+### <a name="example-3-users-request-using-select"></a>Пример 3. Запрос пользователей с помощью оператора $select
 
-Если вам необходим другой набор свойств, вы можете использовать параметр запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
+Если вам нужен другой набор свойств, можете использовать параметр запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
 
 ##### <a name="request"></a>Запрос
-<!-- {
-  "blockType": "request",
-  "name": "get_user"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me?$select=displayName,givenName,postalCode
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
 ##### <a name="response"></a>Отклик
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
