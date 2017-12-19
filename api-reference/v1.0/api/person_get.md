@@ -1,170 +1,146 @@
-# <a name="get-person"></a><span data-ttu-id="951af-101">Вывод сведений о человеке</span><span class="sxs-lookup"><span data-stu-id="951af-101">Get person</span></span>
+# <a name="get-person"></a><span data-ttu-id="a0126-101">Вывод сведений о человеке</span><span class="sxs-lookup"><span data-stu-id="a0126-101">Get person</span></span>
 
-<span data-ttu-id="951af-102">Получение свойств и связей объекта [person](../resources/person.md).</span><span class="sxs-lookup"><span data-stu-id="951af-102">Retrieve the properties and relationships of a [person](../resources/person.md) object.</span></span>
+<span data-ttu-id="a0126-102">Получение свойств и связей объекта [person](../resources/person.md).</span><span class="sxs-lookup"><span data-stu-id="a0126-102">Retrieve the properties and relationships of a [person](../resources/person.md) object.</span></span>
 
-<span data-ttu-id="951af-p101">Для получения этих сведений используйте API службы "Люди". Примеры см. в разделе [Примеры](#examples) и статье о том, как [получить релевантную информацию о людях](../../../concepts/people_example.md).</span><span class="sxs-lookup"><span data-stu-id="951af-p101">You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).</span></span>
+<span data-ttu-id="a0126-p101">Для получения этих сведений используйте API службы "Люди". Примеры см. в разделе [Примеры](#examples) и статье о том, как [получить релевантную информацию о людях](../../../concepts/people_example.md).</span><span class="sxs-lookup"><span data-stu-id="a0126-p101">You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="951af-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="951af-105">Permissions</span></span>
-<span data-ttu-id="951af-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="951af-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a0126-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a0126-105">Permissions</span></span>
+<span data-ttu-id="a0126-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="a0126-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
  
 
-|<span data-ttu-id="951af-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="951af-108">Permission type</span></span>      | <span data-ttu-id="951af-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="951af-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a0126-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a0126-108">Permission type</span></span>      | <span data-ttu-id="a0126-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a0126-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="951af-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="951af-110">Delegated (work or school account)</span></span> | <span data-ttu-id="951af-111">People.Read, People.Read.All</span><span class="sxs-lookup"><span data-stu-id="951af-111">People.Read, People.Read.All</span></span>    |
-|<span data-ttu-id="951af-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="951af-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="951af-113">People.Read</span><span class="sxs-lookup"><span data-stu-id="951af-113">People.Read</span></span>    |
-|<span data-ttu-id="951af-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="951af-114">Application</span></span> | <span data-ttu-id="951af-115">People.Read.All</span><span class="sxs-lookup"><span data-stu-id="951af-115">People.Read.All</span></span> |
+|<span data-ttu-id="a0126-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a0126-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a0126-111">People.Read, People.Read.All</span><span class="sxs-lookup"><span data-stu-id="a0126-111">People.Read, People.Read.All</span></span>    |
+|<span data-ttu-id="a0126-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a0126-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0126-113">People.Read</span><span class="sxs-lookup"><span data-stu-id="a0126-113">People.Read</span></span>    |
+|<span data-ttu-id="a0126-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a0126-114">Application</span></span> | <span data-ttu-id="a0126-115">People.Read.All</span><span class="sxs-lookup"><span data-stu-id="a0126-115">People.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="951af-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="951af-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0126-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a0126-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/people/?$search='{property_value}'
-GET /me/people/?$filter={person_property} eq '{property_value}'
+GET /me/people/{id}
+GET /users/{id | userPrincipalName}/people/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="951af-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="951af-117">Optional query parameters</span></span>
-|<span data-ttu-id="951af-118">Имя</span><span class="sxs-lookup"><span data-stu-id="951af-118">Name</span></span>|<span data-ttu-id="951af-119">Значение</span><span class="sxs-lookup"><span data-stu-id="951af-119">Value</span></span>|<span data-ttu-id="951af-120">Описание</span><span class="sxs-lookup"><span data-stu-id="951af-120">Description</span></span>|
-|:---------------|:--------|:-------|
-|<span data-ttu-id="951af-121">$filter</span><span class="sxs-lookup"><span data-stu-id="951af-121">$filter</span></span>|<span data-ttu-id="951af-122">string</span><span class="sxs-lookup"><span data-stu-id="951af-122">string</span></span>|<span data-ttu-id="951af-123">Позволяет возвращать в отклике только тех людей, чьи записи содержат указанные критерии.</span><span class="sxs-lookup"><span data-stu-id="951af-123">Limits the response to only those people whose record contains the specified criteria.</span></span>|
-|<span data-ttu-id="951af-124">$orderby</span><span class="sxs-lookup"><span data-stu-id="951af-124">$orderby</span></span>|<span data-ttu-id="951af-125">string</span><span class="sxs-lookup"><span data-stu-id="951af-125">string</span></span>|<span data-ttu-id="951af-p103">По умолчанию данные о людях в отклике сортируются по степени соответствия запросу. Этот порядок можно изменить с помощью параметра *$orderby*.</span><span class="sxs-lookup"><span data-stu-id="951af-p103">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.</span></span>|
-|<span data-ttu-id="951af-128">$search</span><span class="sxs-lookup"><span data-stu-id="951af-128">$search</span></span>|<span data-ttu-id="951af-129">string</span><span class="sxs-lookup"><span data-stu-id="951af-129">string</span></span>|<span data-ttu-id="951af-p104">Поиск пользователей по имени или псевдониму. Поддерживается функция нечеткого соответствия.</span><span class="sxs-lookup"><span data-stu-id="951af-p104">Search for people by name or alias. Supports fuzzy matching.</span></span>|
-|<span data-ttu-id="951af-132">$select</span><span class="sxs-lookup"><span data-stu-id="951af-132">$select</span></span>|<span data-ttu-id="951af-133">string</span><span class="sxs-lookup"><span data-stu-id="951af-133">string</span></span>|<span data-ttu-id="951af-p105">Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="951af-p105">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>|
-|<span data-ttu-id="951af-136">$skip</span><span class="sxs-lookup"><span data-stu-id="951af-136">$skip</span></span>|<span data-ttu-id="951af-137">int</span><span class="sxs-lookup"><span data-stu-id="951af-137">int</span></span>|<span data-ttu-id="951af-p106">Пропуск первых n результатов; эту функцию удобно использовать при разбиении результатов на страницы. Эта возможность не поддерживается при использовании параметра *$search*.</span><span class="sxs-lookup"><span data-stu-id="951af-p106">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>|
-|<span data-ttu-id="951af-140">$top</span><span class="sxs-lookup"><span data-stu-id="951af-140">$top</span></span>|<span data-ttu-id="951af-141">int</span><span class="sxs-lookup"><span data-stu-id="951af-141">int</span></span>|<span data-ttu-id="951af-142">Число возвращаемых результатов.</span><span class="sxs-lookup"><span data-stu-id="951af-142">Number of results to be returned.</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="a0126-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="a0126-117">Optional query parameters</span></span>
+<span data-ttu-id="a0126-118">Этот метод поддерживает следующие [параметры запроса OData](../../../concepts/people_example.md) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="a0126-118">This method supports the [OData Query Parameters](../../../concepts/people_example.md) to help customize the response.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="951af-143">Параметры</span><span class="sxs-lookup"><span data-stu-id="951af-143">Parameters</span></span>
-| <span data-ttu-id="951af-144">Параметр</span><span class="sxs-lookup"><span data-stu-id="951af-144">Parameter</span></span> |<span data-ttu-id="951af-145">Тип</span><span class="sxs-lookup"><span data-stu-id="951af-145">Type</span></span>       |<span data-ttu-id="951af-146">Описание</span><span class="sxs-lookup"><span data-stu-id="951af-146">Description</span></span>|
-|:----------|:----------|:----------|
-|<span data-ttu-id="951af-147">property_value</span><span class="sxs-lookup"><span data-stu-id="951af-147">property_value</span></span>|<span data-ttu-id="951af-148">String</span><span class="sxs-lookup"><span data-stu-id="951af-148">String</span></span>     |<span data-ttu-id="951af-p107">Значение сопоставляемого расширенного свойства. Его необходимо указывать, если этот параметр указан для соответствующего сценария в разделе **HTTP-запрос**.</span><span class="sxs-lookup"><span data-stu-id="951af-p107">The value of the extended property to match. Required where listed in the **HTTP request** section.</span></span>|
-|<span data-ttu-id="951af-151">person_property</span><span class="sxs-lookup"><span data-stu-id="951af-151">person_property</span></span>|<span data-ttu-id="951af-152">String</span><span class="sxs-lookup"><span data-stu-id="951af-152">String</span></span>    |<span data-ttu-id="951af-p108">Соответствие свойству person. Его необходимо указывать, если этот параметр указан для соответствующего сценария в разделе **HTTP-запрос**.</span><span class="sxs-lookup"><span data-stu-id="951af-p108">The person property to match. Required where listed in the **HTTP request** section.</span></span>|
+|<span data-ttu-id="a0126-119">Имя</span><span class="sxs-lookup"><span data-stu-id="a0126-119">Name</span></span>|<span data-ttu-id="a0126-120">Значение</span><span class="sxs-lookup"><span data-stu-id="a0126-120">Value</span></span>|<span data-ttu-id="a0126-121">Описание</span><span class="sxs-lookup"><span data-stu-id="a0126-121">Description</span></span>| 
+|:---------------|:--------|:-------| 
+|<span data-ttu-id="a0126-122">$filter</span><span class="sxs-lookup"><span data-stu-id="a0126-122">$filter</span></span>|<span data-ttu-id="a0126-123">string</span><span class="sxs-lookup"><span data-stu-id="a0126-123">string</span></span>|<span data-ttu-id="a0126-124">Позволяет возвращать в отклике только тех людей, чьи записи содержат указанные критерии.</span><span class="sxs-lookup"><span data-stu-id="a0126-124">Limits the response to only those people whose record contains the specified criteria.</span></span>| 
+|<span data-ttu-id="a0126-125">$orderby</span><span class="sxs-lookup"><span data-stu-id="a0126-125">$orderby</span></span>|<span data-ttu-id="a0126-126">строка</span><span class="sxs-lookup"><span data-stu-id="a0126-126">string</span></span>|<span data-ttu-id="a0126-127">По умолчанию люди в ответе сортируются по степени соответствия запросу.</span><span class="sxs-lookup"><span data-stu-id="a0126-127">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the $orderby parameter.</span></span> <span data-ttu-id="a0126-128">Этот порядок можно изменить с помощью параметра *$orderby*.</span><span class="sxs-lookup"><span data-stu-id="a0126-128">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.</span></span>| 
+|<span data-ttu-id="a0126-129">$search</span><span class="sxs-lookup"><span data-stu-id="a0126-129">$search</span></span>|<span data-ttu-id="a0126-130">string</span><span class="sxs-lookup"><span data-stu-id="a0126-130">string</span></span>|<span data-ttu-id="a0126-131">Поиск пользователей по имени или псевдониму.</span><span class="sxs-lookup"><span data-stu-id="a0126-131">Search for people by name or alias. Supports fuzzy matching.</span></span> <span data-ttu-id="a0126-132">Поддерживается нечеткое соответствие.</span><span class="sxs-lookup"><span data-stu-id="a0126-132">Supports Fuzzy matching</span></span>| 
+|<span data-ttu-id="a0126-133">$select</span><span class="sxs-lookup"><span data-stu-id="a0126-133">$select</span></span>|<span data-ttu-id="a0126-134">string</span><span class="sxs-lookup"><span data-stu-id="a0126-134">string</span></span>|<span data-ttu-id="a0126-p105">Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="a0126-p105">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>| 
+|<span data-ttu-id="a0126-137">$skip</span><span class="sxs-lookup"><span data-stu-id="a0126-137">$skip</span></span>|<span data-ttu-id="a0126-138">int</span><span class="sxs-lookup"><span data-stu-id="a0126-138">int</span></span>|<span data-ttu-id="a0126-p106">Пропуск первых n результатов; эту функцию удобно использовать при разбиении результатов на страницы. Эта возможность не поддерживается при использовании параметра *$search*.</span><span class="sxs-lookup"><span data-stu-id="a0126-p106">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>| 
+|<span data-ttu-id="a0126-141">$top</span><span class="sxs-lookup"><span data-stu-id="a0126-141">$top</span></span>|<span data-ttu-id="a0126-142">int</span><span class="sxs-lookup"><span data-stu-id="a0126-142">int</span></span>|<span data-ttu-id="a0126-143">Количество возвращаемых результатов.</span><span class="sxs-lookup"><span data-stu-id="a0126-143">Number of results to be returned.</span></span>| 
 
-## <a name="request-headers"></a><span data-ttu-id="951af-155">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="951af-155">Request headers</span></span>
-| <span data-ttu-id="951af-156">Имя</span><span class="sxs-lookup"><span data-stu-id="951af-156">Name</span></span>      |<span data-ttu-id="951af-157">Описание</span><span class="sxs-lookup"><span data-stu-id="951af-157">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a0126-144">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="a0126-144">Request headers</span></span>
+| <span data-ttu-id="a0126-145">Имя</span><span class="sxs-lookup"><span data-stu-id="a0126-145">Name</span></span>      |<span data-ttu-id="a0126-146">Описание</span><span class="sxs-lookup"><span data-stu-id="a0126-146">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="951af-158">Авторизация</span><span class="sxs-lookup"><span data-stu-id="951af-158">Authorization</span></span>  | <span data-ttu-id="951af-p109">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="951af-p109">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a0126-147">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a0126-147">Authorization</span></span>  | <span data-ttu-id="a0126-p107">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a0126-p107">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="951af-161">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="951af-161">Request body</span></span>
-<span data-ttu-id="951af-162">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="951af-162">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="951af-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="951af-163">Response</span></span>
-<span data-ttu-id="951af-p110">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [person](../resources/person.md) в тексте отклика. Отклик может содержать как один, так и коллекцию экземпляров person.</span><span class="sxs-lookup"><span data-stu-id="951af-p110">If successful, this method returns a `200 OK` response code and a [person](../resources/person.md) object in the response body. The response can contain one person instance or a collection of person instances.</span></span> 
-## <a name="examples"></a><span data-ttu-id="951af-166">Примеры</span><span class="sxs-lookup"><span data-stu-id="951af-166">Examples</span></span>
-### <a name="perform-a-search"></a><span data-ttu-id="951af-167">Выполнение поиска</span><span class="sxs-lookup"><span data-stu-id="951af-167">Perform a search</span></span> 
-<span data-ttu-id="951af-168">В приведенном ниже запросе выполняется поиск пользователя по имени Irene McGowan.</span><span class="sxs-lookup"><span data-stu-id="951af-168">The following request does a search for a person named Irene McGowan.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="a0126-150">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a0126-150">Request body</span></span>
+<span data-ttu-id="a0126-151">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a0126-151">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="a0126-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="a0126-152">Response</span></span>
+<span data-ttu-id="a0126-153">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [person](../resources/person.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="a0126-153">If successful, this method returns a `200 OK` response code and a [ListItemVersion](../resources/person.md) object in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="a0126-154">Примеры</span><span class="sxs-lookup"><span data-stu-id="a0126-154">Examples</span></span>
+#### <a name="request-1"></a><span data-ttu-id="a0126-155">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="a0126-155">Request 1</span></span>
+<span data-ttu-id="a0126-156">Ниже приведен пример запроса, который возвращает пользователя с этим идентификатором в организации.</span><span class="sxs-lookup"><span data-stu-id="a0126-156">The following is an example of the request that gets the person who has this ID in the user's organization.</span></span> 
 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_person_by_id"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowan"
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85
 ```
 
-<span data-ttu-id="951af-169">Ниже приводится пример отклика.</span><span class="sxs-lookup"><span data-stu-id="951af-169">The following example shows the response.</span></span> 
+#### <a name="response-1"></a><span data-ttu-id="a0126-157">Ответ 1</span><span class="sxs-lookup"><span data-stu-id="a0126-157">Response 1</span></span>
+<span data-ttu-id="a0126-158">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a0126-158">Here is an example of the response.</span></span>
+
+><span data-ttu-id="a0126-159">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="a0126-159">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a0126-160">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a0126-160">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
-  "name": "get_person",
+  "name": "get_person_by_id",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 629
 
 {
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": [
-               {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-       }
-   ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer",
+  "givenName": "Isaiah",
+  "surname": "Langer",
+  "birthday": "",
+  "personNotes": "",
+  "isFavorite": false,
+  "jobTitle": "Web Marketing Manager",
+  "companyName": null,
+  "yomiCompany": "",
+  "department": "Sales & Marketing",
+  "officeLocation": "20/1101",
+  "profession": "",
+  "userPrincipalName": "IsaiahL@contoso.com",
+  "imAddress": "sip:isaiahl@contoso.com",
+  "scoredEmailAddresses": [
+      {
+          "address": "IsaiahL@contoso.com",
+          "relevanceScore": 20.0
+      }
+  ],
+  "phones": [
+      {
+          "type": "business",
+          "number": "+1 918 555 0101"
+      }
+  ],
+  "postalAddresses": [],
+  "websites": [],
+  "personType": {
+      "class": "Person",
+      "subclass": "OrganizationUser"
+  }
 }
 ```
-### <a name="select-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="951af-170">Выбор полей, которые возвращаются в отфильтрованном отклике</span><span class="sxs-lookup"><span data-stu-id="951af-170">Select the fields to return in a filtered response</span></span> 
-<span data-ttu-id="951af-171">Сочетая параметры *$select* и *$filter*, вы можете создать настраиваемый список людей, релевантных для пользователя, и получать только те поля, которые необходимы вашему приложению.</span><span class="sxs-lookup"><span data-stu-id="951af-171">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span> 
 
-<span data-ttu-id="951af-p111">В примере ниже показано, как получить значения полей **displayName** и **scoredEmailAddresses** для людей, чьи отображаемые имена совпадают с заданными. В этом примере показано, как возвратить людей c отображаемыми именами Lorrie Frye.</span><span class="sxs-lookup"><span data-stu-id="951af-p111">The following example gets the **displayName** and **scoredEmailAddresses** of people whose display name equals the specified name. In this example, only people whose display name equals "Lorrie Frye" are returned.</span></span>
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
-```
-
-<span data-ttu-id="951af-174">Ниже представлен правильно зашифрованный URL-адрес для примера запроса.</span><span class="sxs-lookup"><span data-stu-id="951af-174">The following is the properly encoded URL for the example request.</span></span>
+#### <a name="request-2"></a><span data-ttu-id="a0126-161">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="a0126-161">Request 2</span></span>
+<span data-ttu-id="a0126-162">Ниже приведен пример запроса, который возвращает пользователя с этим идентификатором в организации и ограничивает ответ выбранными свойствами.</span><span class="sxs-lookup"><span data-stu-id="a0126-162">The following is an example of the request that gets the person who has this ID in the user's organization and restricts the response to the selected properties.</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "get_person_select_and_filter"
+  "name": "get_person_by_id_with_select"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName%20eq%20'Lorrie Frye'
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85?$select=displayName
 ```
+#### <a name="response-2"></a><span data-ttu-id="a0126-163">Ответ 2</span><span class="sxs-lookup"><span data-stu-id="a0126-163">Response 2</span></span>
+<span data-ttu-id="a0126-164">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a0126-164">Here is an example of the response.</span></span>
 
-<span data-ttu-id="951af-175">Ниже приводится пример отклика.</span><span class="sxs-lookup"><span data-stu-id="951af-175">The following example shows the response.</span></span> 
+><span data-ttu-id="a0126-165">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="a0126-165">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a0126-166">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a0126-166">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
-  "name": "get_person_select_and_filter",
+  "name": "get_person_by_id_with_select",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 305
 
 {
-    "value": [
-        {
-            "id": "8CE6E1DE-CB84-4BF5-971D-D3ECF452E2B5",
-            "displayName": "Lorrie Frye",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8.0
-                }
-            ]
-        }
-    ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer"
 }
 ```
 
