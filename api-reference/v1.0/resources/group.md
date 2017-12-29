@@ -16,7 +16,7 @@
 |[Создание группы](../api/group_post_groups.md) | [group](group.md) |Создание группы. Это может быть группа Office 365, группа безопасности или динамическая группа.|
 |[Получение группы](../api/group_get.md) | [group](group.md) |Считывание свойств объекта group.|
 |[Список групп](../api/group_list.md) |Коллекция [group](group.md) |Список объектов group и их свойств.|
-|[Обновление группы](../api/group_update.md) | [group](group.md) |Обновление свойств объекта group. |
+|[Обновление группы](../api/group_update.md) | Нет |Обновление свойств объекта group. |
 |[Удаление группы](../api/group_delete.md) | Нет |Удаление объекта group. |
 |[Добавление владельца](../api/group_post_owners.md) |Нет| Добавление владельца группы путем помещения в свойство навигации **owners** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты).|
 |[Список владельцев](../api/group_list_owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение владельцев группы из свойства навигации **owners**.|
@@ -29,14 +29,22 @@
 |[getMemberObjects](../api/group_getmemberobjects.md)|Коллекция строк|Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
 |[delta](../api/group_delta.md)|Коллекция групп| Получение добавочных изменений для групп. |
 |**Calendar**| | |
-|[Создание события](../api/group_post_events.md) |[Event](event.md)| Создание экземпляра Event путем помещения в коллекцию событий.|
-|[Список событий](../api/group_list_events.md) |Коллекция [Event](event.md)| Получение коллекции объектов Event.|
-|[Список calendarView](../api/group_list_calendarview.md) |Коллекция [Event](event.md)| Получение коллекции событий за указанный интервал времени.|
+|[Создание события](../api/group_post_events.md) |[event](event.md)| Создание объекта event путем публикации в коллекции объектов event.|
+|[Получение события](../api/group_get_event.md) |[event](event.md)|Считывание свойств объекта event.|
+|[Перечисление событий](../api/group_list_events.md) |Коллекция [event](event.md)| Получение коллекции объектов event.|
+|[Обновление события](../api/group_update_event.md) |Нет|Обновление свойств объекта event.|
+|[Удаление события](../api/group_delete_event.md) |Нет|Удаление объекта event.|
+|[Список calendarView](../api/group_list_calendarview.md) |Коллекция [event](event.md)| Получение коллекции событий за указанный интервал времени.|
 |**Беседы**| | |
-|[Создание беседы](../api/group_post_conversations.md) |[Conversation](conversation.md)| Создание экземпляра Conversation путем помещения в коллекцию бесед.|
-|[Список бесед](../api/group_list_conversations.md) |Коллекция [Conversation](conversation.md)| Получение коллекции объектов Conversation.|
-|[Список цепочек бесед](../api/group_list_threads.md) |Коллекция [ConversationThread](conversationthread.md)| Получение всех цепочек группы.|
-|[Список acceptedSenders](../api/group_list_acceptedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка acceptedSenders для данной группы.|
+|[Создание беседы](../api/group_post_conversations.md) |[conversation](conversation.md)| Создание экземпляра Conversation путем публикации в коллекции объектов conversation.|
+|[Получение беседы](../api/group_get_conversation.md) |[conversation](conversation.md)| Считывание свойств объекта conversation.|
+|[Перечисление бесед](../api/group_list_conversations.md) |Коллекция [conversation](conversation.md)| Получение коллекции объектов conversation.|
+|[Удаление беседы](../api/group_delete_conversation.md) |Нет|Удаление объекта conversation.|
+|[Получение цепочки](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Считывание свойств объекта thread.|
+|[Перечисление цепочек](../api/group_list_threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек группы.|
+|[Обновление цепочки](../api/group_update_thread.md) |Нет| Обновление свойств объекта thread.|
+|[Удаление цепочки](../api/group_delete_thread.md) |Нет| Удаление объекта thread.|
+|[Вывод acceptedSenders](../api/group_list_acceptedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка acceptedSenders для данной группы.|
 |[Добавление acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Добавление User или Group в коллекцию acceptedSenders.|
 |[Удаление acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Удаление User или Group из коллекции acceptedSenders.|
 |[Список rejectedSenders](../api/group_list_rejectedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка rejectedSenders для данной группы.|
@@ -45,7 +53,7 @@
 |[Создание параметра](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Создание параметра объекта на базе groupSettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. В случае этой операции могут использоваться только шаблоны специально для групп.|
 |[Получение параметра](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта параметра. |
 |[Перечисление параметров](../api/groupsetting_list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов параметра. |
-|[Обновление параметра](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Обновление объекта параметра. |
+|[Обновление параметра](../api/groupsetting_update.md) | Нет | Обновление объекта параметра. |
 |[Удаление параметра](../api/groupsetting_delete.md) | Нет | Удаление объекта параметра. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
@@ -103,15 +111,15 @@
 |owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Максимальное количество владельцев: 10. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп Office 365 и групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается для групп Office 365 и групп безопасности). Допускается значение null.|
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
 |photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
-|planner|[Planner](planner.md)| Точка входа в ресурс Planner, который может существовать для единой группы.|
+|planner|[planner](planner.md)| Точка входа в ресурс Planner, который может существовать для единой группы.|
 |rejectedSenders|Коллекция [directoryObject](directoryobject.md)|Список пользователей или групп, которым запрещено создавать записи или события календаря в этой группе. Допускается значение null.|
 |settings|Коллекция объектов [groupSetting](groupsetting.md)| Только для чтения. Допускается значение null.|
-|sites|Коллекция объектов [site](site.md)|Список сайтов SharePoint в этой группе. Для доступа к сайту по умолчанию используйте путь /sites/root.
+|sites|Коллекция объектов [site](site.md)|Список сайтов SharePoint в этой группе. Для доступа к сайту по умолчанию используйте путь /sites/root.|
 |threads|Коллекция [conversationThread](conversationthread.md)| Цепочки бесед группы. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

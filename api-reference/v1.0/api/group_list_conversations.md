@@ -1,5 +1,5 @@
 # <a name="list-conversations"></a>Список бесед
-Получение списка бесед в этой группе.
+Получение списка объектов [conversation](../resources/conversation.md) в этой группе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
@@ -17,7 +17,7 @@ GET /groups/{id}/conversations
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/ru-RU/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -28,7 +28,7 @@ GET /groups/{id}/conversations
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Conversation](../resources/conversation.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [conversation](../resources/conversation.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос

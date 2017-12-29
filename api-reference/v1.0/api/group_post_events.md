@@ -1,4 +1,4 @@
-# <a name="create-event"></a>Создание объекта Event
+# <a name="create-event"></a>Создание объекта event
 С помощью этого API можно создать [событие](../resources/event.md).
 
 ## <a name="permissions"></a>Разрешения
@@ -23,10 +23,10 @@ POST /groups/{id}/calendar/events
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [Event](../resources/event.md) в формате JSON.
+Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [Event](../resources/event.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос

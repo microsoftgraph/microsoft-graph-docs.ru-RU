@@ -1,16 +1,14 @@
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
-
 Удаление пользователя или группы из списка rejectedSenders.
 
 ## <a name="permissions"></a>Разрешения
-
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)  |
 |:---------------------------------------|:-------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All    
-| Делегированные разрешения (личная учетная запись Майкрософт) | Не поддерживается
-| Приложение                            | Group.ReadWrite.All
+| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -25,17 +23,13 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 | Авторизация  | Bearer {токен}. Обязательный. 
 
 ## <a name="request-body"></a>Текст запроса
-
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-
-##### <a name="request"></a>Запрос
-
+#### <a name="request"></a>Запрос
 Ниже представлено несколько примеров запроса.
 <!-- {
   "blockType": "request",
@@ -47,9 +41,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=htt
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
-##### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа. 
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true
