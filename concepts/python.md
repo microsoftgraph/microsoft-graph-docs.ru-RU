@@ -14,7 +14,7 @@
 
 Чтобы установить и настроить пример приложения, выполните действия, описанные в статье [Установка примеров Python REST](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md). Чтобы использовать рассматриваемый ниже пример, клонируйте репозиторий с помощью следующей команды:
 
-    ```git clone https://github.com/microsoftgraph/python-sample-send-mail.git```
+```git clone https://github.com/microsoftgraph/python-sample-send-mail.git```
 
 Регистрируя приложение, как описано в [инструкциях по установке](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md), обязательно включите разрешения **User.Read** и **Mail.Send**, которые необходимы для этого примера.
 
@@ -24,41 +24,50 @@
 
 Ниже приведен обзор [исходного кода](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py) примера приложения.
 
-Первые несколько строк кода предназначены для [импорта](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L4-L11) модулей и пакетов Python, используемых в примере.
+Первые несколько строк кода предназначены для [импорта](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L4-L32) модулей и пакетов Python, используемых в примере:
 
 * Модуль **base64** из стандартной библиотеки используется для кодирования вложений электронной почты.
+* Модуль **mimetypes** позволяет определить тип MIME для вложенных файлов.
+* Модуль **os** обеспечивает общую функциональность файловой системы.
 * Модуль **pprint** из стандартной библиотеки используется для структурированного вывода сообщений об ошибках, которые возвращает Graph, например при попытке отправить сообщение на недействительный электронный адрес.
 * Модуль **uuid** из стандартной библиотеки используется для создания случайной строки длиной 36 символов, однозначно определяющей каждый запрос Graph. Это может быть полезно для отладки.
 * Пакет **flask** — это веб-платформа для примера.
 * Класс **OAuth** в файле **flask_oauthlib.client** — это оболочка для приложения Flask, в котором реализуется рабочий процесс аутентификации OAuth 2.0.
 * Модуль **config** содержит параметры регистрации приложения, настроенные в описанном выше процессе установки.
 
-После этого мы [создаем приложение Flask](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L13-L15) и [объект клиента Graph](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L17-L26) под названием **MSGRAPH**.
+После этого мы [создаем приложение Flask](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L15-L17) и [клиентский объект Graph](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L19-L28) под названием **MSGRAPH**.
 
-За этими операциями для первоначальной настройки следуют три функции обработчика маршрута Flask, реализующие рабочий процесс аутентификации: [homepage()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L28-L31), [login()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L33-L37) и [authorized()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L39-L46). Дополнительные сведения о рабочем процессе аутентификации см. в разделе [Пример архитектуры](https://github.com/microsoftgraph/python-sample-auth#sample-architecture) репозитория примеров аутентификации на Python.
+За этими начальными этапами настройки следуют три функции обработчика маршрута Flask, реализующие рабочий процесс аутентификации: [homepage()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L30-L33), [login()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L35-L39) и [authorized()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L41-L48). Дополнительные сведения о рабочем процессе аутентификации см. в разделе [Пример архитектуры](https://github.com/microsoftgraph/python-sample-auth#sample-architecture) репозитория примеров аутентификации на Python.
 
-Следующий обработчик маршрута, [mailform()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L48-L54), — это форма для указания получателей, темы и текста сообщения. Обратите внимание, что эта функция также включает наш первый вызов Graph: [получение профиля пользователя](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L51-L51) для получения отображаемого имени и электронного адреса текущего пользователя, которые [передаются в шаблон mailform.html](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L52-L54).
+Следующий обработчик маршрута, [mailform()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L50-L83), — это форма для указания получателей, темы и текста сообщения. Обратите внимание на то, что эта функция также включает наши первые вызовы Graph (в том числе получает профиль пользователя и фотографию профиля, отправляет ее в OneDrive и создает ссылку для доступа). Данные [передаются в шаблон mailform.html](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L77-L83), в котором получателя, тему и текст сообщения можно изменить перед отправкой. 
 
-За ним следует функция [send_mail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L56-L73), которая отправляет сообщение и показывает ответ от API Graph. Она использует вспомогательную функцию sendmail(), передавая в нее параметры строки запроса, опубликованные из формы:
+За ним следует функция [send_mail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L85-L107), которая отправляет сообщение и показывает ответ API Graph. Она использует вспомогательную функцию sendmail(), передавая в нее параметры строки запроса, опубликованные из формы:
 
 ```python
-response = sendmail(MSGRAPH,
+response = sendmail(client=MSGRAPH,
                     subject=flask.request.args['subject'],
                     recipients=flask.request.args['email'].split(';'),
-                    html=flask.request.args['body'])
+                    body=flask.request.args['body'],
+                    attachments=[profile_pic])
 ```
 
-Функция [get_token()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L75-L78) используется экземпляром клиента Flask-OAuthlib (```MSGRAPH```) для получения маркера доступа при каждом вызове Graph. Маркер доступа передается в заголовке HTTP **Authorization**, но в данном случае нам не нужно его использовать. Вы можете просто вызывать Graph с помощью методов HTTP, например get() или post(), а экземпляр клиента будет вызывать метод ```get_token()``` для получения маркера, так как функция [содержит](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L75-L75) атрибут ```tokengetter```.
+Функция [get_token()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L109-L123) используется экземпляром клиента Flask-OAuthlib (```MSGRAPH```) для получения маркера доступа при каждом вызове Graph. Маркер доступа передается в заголовке HTTP **Authorization**, но в данном случае нам не нужно его использовать. Вы можете просто вызывать Graph с помощью методов HTTP клиента, например get() или post(), а экземпляр клиента будет вызывать ```get_token()``` для получения маркера, так как функция [содержит](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L109-L109) ```tokengetter```.
 
-За ним следует метод [request_headers()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L80-L85), возвращающий словарь заголовков HTTP, отправляемых с каждым вызовом Graph.
+Остальная часть примера состоит из вспомогательных функций, упрощающих основные действия Graph:
 
-Наконец, у нас есть [sendmail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L87-L129) — вспомогательная функция для отправки сообщения. Она отправляет сообщение с помощью конечной точки ```me/microsoft.graph.sendMail``` в API Microsoft Graph. Вы можете использовать эту функцию в своем коде, чтобы отправить сообщение с помощью Microsoft Graph. Сведения о том, как вызывать эту функцию, см. [здесь](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L88-L97).
+* [request_headers()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L114-L123) возвращает словарь HTTP-заголовков, отправляемых с каждым вызовом Graph.
+* [profile_photo()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L125-L154) возвращает фотографию профиля пользователя и при необходимости сохраняет копию в локальном файле.
+* [sendmail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L156-L202) отправляет сообщение, используя конечную точку ```me/microsoft.graph.sendMail```.
+* [sharing_link()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L204-L221) создает ссылку для доступа к указанному элементу OneDrive.
+* [upload_file()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L223-L255) отправляет файл в OneDrive.
 
-## <a name="other-python-rest-samples"></a>Другие примеры Python REST
+Эти вспомогательные функции могут пригодиться вам в других приложениях.
 
-Приведенные ниже примеры демонстрируют, как работать с другими функциями Microsoft Graph из Python:
+## <a name="other-python-rest-samples"></a>Другие примеры кода на Python REST
 
-* [Примеры аутентификации на Python для Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth)
+Вот некоторые примеры кода на Python, демонстрирующие работу с различными аспектами Microsoft Graph:
+
+* [Примеры кода аутентификации на Python для Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth)
 * [Работа с разбитыми на страницы ответами Microsoft Graph в Python](https://github.com/microsoftgraph/python-sample-pagination)
 * [Работа с открытыми расширениями Graph в Python](https://github.com/microsoftgraph/python-sample-open-extensions)
 
