@@ -33,7 +33,7 @@ POST /groups/{id}/acceptedSenders/$ref
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "create_acceptedsender"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref
@@ -46,7 +46,7 @@ Content-length: 30
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true
