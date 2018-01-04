@@ -1,4 +1,4 @@
-# <a name="create-conversation"></a>Создание объекта Conversation
+# <a name="create-conversation"></a>Создание беседы
 Создание объекта [conversation](../resources/conversation.md) путем включения цепочки и записи. 
 
 Размещать в беседе дальнейшие записи можно с помощью [ответов на цепочки](conversationthread_reply.md) и [ответов на записи](post_reply.md).

@@ -36,7 +36,7 @@
 |[Удаление события](../api/group_delete_event.md) |Нет|Удаление объекта event.|
 |[Список calendarView](../api/group_list_calendarview.md) |Коллекция [event](event.md)| Получение коллекции событий за указанный интервал времени.|
 |**Беседы**| | |
-|[Создание беседы](../api/group_post_conversations.md) |[conversation](conversation.md)| Создание экземпляра Conversation путем публикации в коллекции объектов conversation.|
+|[Создание беседы](../api/group_post_conversations.md) |[conversation](conversation.md)| Создание беседы путем публикации в коллекции объектов conversation.|
 |[Получение беседы](../api/group_get_conversation.md) |[conversation](conversation.md)| Считывание свойств объекта conversation.|
 |[Перечисление бесед](../api/group_list_conversations.md) |Коллекция [conversation](conversation.md)| Получение коллекции объектов conversation.|
 |[Удаление беседы](../api/group_delete_conversation.md) |Нет|Удаление объекта conversation.|

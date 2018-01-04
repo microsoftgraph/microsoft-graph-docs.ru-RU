@@ -11,7 +11,7 @@
 | [$filter](#filter-parameter)       | Фильтрует результаты (строки).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
 | [$format](#format-parameter)       | Возвращает результаты в указанном формате мультимедиа.|[`/users?$format=json`][format-example]
 | [$orderby](#orderby-parameter)     | Упорядочивает результаты.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | Возвращает результаты на основании условий поиска. В настоящее время поддерживается в коллекциях `messages` и `person`.|[`/me/messages?$search=pizza`][search-example]
+| [$search](#search-parameter)       | Возвращает результаты на основании условий поиска. В настоящее время поддерживается в коллекциях **messages** и **person**.|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Фильтрует свойства (столбцы).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Применяется для индексации в результирующем наборе. Также используется некоторыми API для разбиения по страницам и может использоваться вместе с параметром `$top` для разбиения результатов по страницам вручную. | [`/me/messages?$skip=11`][skip-example]
 | [$skipToken](#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. (Вместо этого параметра некоторые API используют `$skip`.) | `/users?$skiptoken=X%274453707402000100000017...`|
@@ -21,7 +21,7 @@
 
 Эти параметры совместимы с [языком запросов OData версии 4][odata-query]. Параметры, которые поддерживаются всеми API Microsoft Graph для конечной точки `v1.0`, могут значительно отличаться от таковых для конечной точки `beta`. 
 
-> **Примечание.** В конечной точке `beta` префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`. Дополнительные сведения и примеры см. в статье [Поддержка параметров запросов без префиксов $ в Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
+> **Примечание.** В конечной точке `beta` префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`. Дополнительные сведения и примеры см. в статье [Поддержка параметров запросов без префиксов $ в Microsoft Graph]((http://dev.office.com/queryparametersinMicrosoftGraph)).
 
 ## <a name="encoding-query-parameters"></a>Кодирование параметров запроса
 
@@ -43,7 +43,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 
 Параметр запроса `$count` позволяет включить общее количество элементов коллекции вместе со страницей значений, возвращенных из Microsoft Graph. 
 
-Например, следующий запрос возвращает коллекцию `contacts` текущего пользователя, а также ряд элементов коллекции `contacts` в свойстве `@odata.count`.
+Например, приведенный ниже запрос возвращает коллекцию **contact** текущего пользователя, а также ряд элементов коллекции **contact** в свойстве `@odata.count`.
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
@@ -52,7 +52,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
->**Примечание.** Параметр `$count` не поддерживается коллекциями ресурсов, производных от [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md), такими как коллекции [user](../api-reference/v1.0/resources/user.md) или [group](../api-reference/v1.0/resources/group.md).
+>**Примечание.** Параметр `$count` не поддерживается коллекциями ресурсов, производных от [directoryObject](../api-reference/v1.0/resources/directoryobject.md), такими как коллекции [users](../api-reference/v1.0/resources/user.md) или [groups](../api-reference/v1.0/resources/group.md).
 
 ## <a name="expand-parameter"></a>Параметр expand
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-Кроме того, некоторые коллекции ресурсов позволяют указывать свойства, которые должны быть возвращены в расширенных ресурсах, с помощью параметра `$select`. В следующем примере выполняется то же запрос, что и в предыдущем, но используется оператор [`$select`](#select-parameter), с помощью которого для расширенных дочерних элементов возвращаются только свойства `id` и `name`.
+Кроме того, некоторые коллекции ресурсов позволяют указывать свойства, которые должны быть возвращены в расширенных ресурсах, благодаря параметру `$select`. В следующем примере выполняется тот же запрос, что и в предыдущем, но используется оператор [`$select`](#select-parameter), с помощью которого для расширенных дочерних элементов возвращаются только свойства **id** и **name**.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [Попробовать в песочнице Graph][expand-example]
 
-> **Примечание.** Не все отношения и ресурсы поддерживают параметр запроса `$expand`. Например, можно расширить отношения пользователя `directReports`, `manager` и `memberOf`, но не отношения `events`, `messages` или `photo`. Не все ресурсы и отношения поддерживают использование параметра `$select` для расширенных элементов. 
+> **Примечание.** Не все связи и ресурсы поддерживают параметр запроса `$expand`. Например, можно расширить связи пользователя **directReports**, **manager** и **memberOf**, но не связи **events**, **messages** или **photo**. Не все ресурсы и связи поддерживают использование параметра `$select` для расширенных элементов. 
 > 
 > Ресурсы Azure AD, производные от [directoryObject](../api-reference/v1.0/resources/directoryobject.md), такие как [user](../api-reference/v1.0/resources/user.md) и [group](../api-reference/v1.0/resources/group.md), поддерживают параметр `$expand` только в `beta`, и обычно он возвращает не более 20 элементов расширенных отношений.
 
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
 [Попробовать в песочнице Graph][orderby-example]
 
-Вы также можете сортировать данные по объектам сложного типа. В следующем запросе сообщения сортируются по полю `address` свойства `from` сложного типа `emailAddress`:
+Вы также можете сортировать данные по объектам сложного типа. Приведенный ниже запрос позволяет получить сообщения и отсортировать их по полю **address** свойства **from**, принадлежащего к сложному типу **emailAddress**.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
@@ -171,29 +171,31 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 > **Примечание.** Сейчас можно выполнять поиск **только** в коллекциях [message](../api-reference/v1.0/resources/message.md) и [person](../api-reference/v1.0/resources/person.md). Запрос `$search` возвращает до 250 результатов. В поисковых запросах невозможно указать [`$filter`](#filter-parameter) или [`$orderby`](#orderby-parameter).
 
-### <a name="using-search-on-message-collections"></a>Использование параметра $search в коллекциях `message`
+### <a name="using-search-on-message-collections"></a>Использование параметра $search в коллекциях message
 
-Условия поиска сообщений указываются с использованием [расширенного синтаксиса запросов (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). Результаты сортируются по дате и времени отправки сообщения.
+Приложения Office 365, такие как Outlook и SharePoint, поддерживают синтаксис KQL (Keyword Query Language) для поиска. Благодаря этому возможно использование общего домена обнаружения для соответствующих хранилищ данных. 
 
-Вы можете указать следующие свойства для объекта `message` в условии `$search`:
+При поиске в коллекциях message результаты сортируются по дате и времени отправки сообщения. 
 
-- `attachments`
-- `bccRecipients`
-- `body`
-- `category`
-- `ccRecipients`
-- `content`
-- `from`
-- `hasAttachments`
-- `participants`
-- `receivedDateTime`
-- `sender`
-- `subject`
-- `toRecipients`
+Вы можете указать следующие свойства для объекта **message** в условии `$search`:
 
-Если для поиска в сообщениях указано только значение, используются такие свойства поиска по умолчанию: `from`, `subject` и `body`.
+- **attachments**;
+- **bccRecipients**;
+- **body**;
+- **category**;
+- **ccRecipients**;
+- **content**;
+- **from**;
+- **hasAttachments**;
+- **participants**;
+- **receivedDateTime**;
+- **sender**;
+- **subject**;
+- **toRecipients**.
 
-Следующий пример кода возвращает все сообщения из папки "Входящие" вошедшего пользователя, содержащие слово pizza в любом из трех свойств поиска по умолчанию:
+Если при поиске сообщений указано только значение, поиск выполняется по свойствам поиска по умолчанию: **from**, **subject** и **body**.
+
+Следующий пример кода возвращает все сообщения из папки "Входящие" вошедшего пользователя, содержащие слово "pizza" в любом из трех свойств поиска по умолчанию:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
@@ -206,12 +208,18 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
+Дополнительные сведения о KQL (например, касательно синтаксиса, поддерживаемых операторов, подсказок для поиска) вы найдете в таких статьях:
 
-### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях `person`
+- [Руководство по синтаксису языка запросов по ключевым словам (KQL)]((https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference));
+
+- 
+  [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
+
+### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 
 API People Microsoft Graph можно использовать для получения сведений о наиболее релевантных для пользователя людях. Релевантность определяется шаблонами общения и совместной работы пользователя, а также его бизнес-отношениями. API People поддерживает параметр запроса `$search`.
 
-Поиск людей выполняется по свойствам `displayName` и `emailAddress` ресурса [person](../api-reference/v1.0/resources/person.md). В поиске применяется алгоритм нечетких соответствий. Возвращаются результаты, основанные на точном совпадении, а также на выводы, связанные с целью поиска. Предположим, в коллекции `people` вошедшего в систему пользователя есть пользователь с отображаемым именем Tyler Lee и электронным адресом tylerle@example.com. Во всех приведенных ниже примерах поиск возвращает результаты, содержащие имя Tyler.
+Поиск людей выполняется по свойствам **displayName** и **emailAddress** ресурса [person](../api-reference/v1.0/resources/person.md). В поиске применяется алгоритм нечетких соответствий. Возвращаются результаты, основанные на точном совпадении, а также на выводы, связанные с целью поиска. Предположим, в коллекции **people** вошедшего пользователя есть пользователь с отображаемым именем Tyler Lee и электронным адресом tylerle@example.com. Все приведенные ниже примеры запросов поиска возвращают результаты, содержащие имя Tyler.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
@@ -233,7 +241,7 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
 
-В этом запросе фактически выполняется два поиска: нечеткий поиск по свойствам `displayName` и `emailAddress` людей, релевантных для вошедшего пользователя, и поиск по теме "pizza" в отношении этих людей. Результаты ранжируются, упорядочиваются и возвращаются. Обратите внимание, что поиск не имеет ограничений, поэтому результаты могут содержать список пользователей с нечетким соответствием имени "tyl" или пользователей, интересующихся темой "pizza", или и тех, и других.
+В этом запросе фактически выполняется два поиска: поиск нечетких соответствий по свойствам **displayName** и **emailAddress** в отношении людей, релевантных для вошедшего пользователя, и поиск по теме "pizza" в отношении этих людей. Результаты ранжируются, упорядочиваются и возвращаются. Обратите внимание, что поиск не имеет ограничений, поэтому результаты могут содержать список пользователей с нечетким соответствием имени "tyl" или пользователей, интересующихся темой "pizza", или и тех, и других.
 
 Дополнительные сведения об API поиска людей см. в статье [Получение сведений о релевантных людях](./people_example.md).  
 
@@ -241,7 +249,7 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"
 
 Параметр запроса `$select` позволяет возвратить набор свойств, отличный от набора по умолчанию, для отдельного ресурса или коллекции ресурсов. С помощью параметра $select можно указать подмножество или супермножество свойств по умолчанию.
 
-Например, при получении сообщений вошедшего пользователя можно указать, что необходимо вернуть только свойства `from` и `subject`:
+Например, при получении сообщений вошедшего пользователя можно указать, что необходимо вернуть только свойства **from** и **subject**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
@@ -262,7 +270,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Попробовать в песочнице Graph][skip-example]
 
-> **Примечание.** Некоторые API Microsoft Graph, например для почты и календарей Outlook (`message`, `event`, `calendar`), используют `$skip` для разбиения по страницам. Если результаты запроса занимают несколько страниц, эти API возвращают свойство `@odata:nextLink` с URL-адресом, содержащим параметр `$skip`. Этот URL-адрес можно использовать для возврата следующей страницы результатов. [Подробнее…](./paging.md)
+> **Примечание.** Некоторые API Microsoft Graph, например для почты и календарей Outlook (**message**, **event** и **calendar**), используют `$skip` для разбиения по страницам. Если результаты запроса занимают несколько страниц, эти API возвращают свойство `@odata:nextLink` с URL-адресом, содержащим параметр `$skip`. Этот URL-адрес можно использовать для возврата следующей страницы результатов. [Подробнее…](./paging.md)
 
 ## <a name="skiptoken-parameter"></a>Параметр skipToken
 
