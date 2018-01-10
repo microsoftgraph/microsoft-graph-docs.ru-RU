@@ -1,9 +1,14 @@
 # <a name="eventmessage-resource-type"></a>Тип ресурса eventMessage
 
-Сообщение, которое представляет собой приглашение на собрание, оповещение о принятии (в том числе предварительном) или отклонении такого приглашения, оповещение об отмене собрания.
+Сообщение, которое представляет собой приглашение на собрание, уведомление об отмене или ответ (принятие, предварительное принятие или отклонение).
 
-Сообщение о событии EventMessage обычно находится в папке "Входящие". Туда оно попадает, если организатор события создает собрание, или если участник отвечает на приглашение на собрание. В случае сообщений о событии вы действуете так же, как в случае объекта Message, но с некоторыми незначительными отличиями, описанными в приведенной ниже таблице.
+Объект **eventMessage** является производным от объекта [message](message.md). Свойство **meetingMessageType** определяет тип сообщения о событии.
 
+Когда организатор или приложение отправляет приглашение на собрание, оно попадает во входящие участника в виде экземпляра **eventMessage** со свойством **meetingMessageType** **meetingRequest**. Кроме того, Outlook автоматически создает в календаре участника экземпляр **event** со свойством **showAs** **tentative**. 
+
+Чтобы получить свойства связанного события в почтовом ящике участника, приложение может использовать свойство навигации объекта **eventMessage** **event**, как показано в [этом примере](../api/eventmessage_get.md#request-2). Приложение также может программно ответить на событие от имени участника, [приняв](../api/event_accept.md), [предварительно приняв](../api/event_tentativelyaccept.md) или [отклонив](../api/event_decline.md) его.
+
+Экземпляр **eventMessage** также может оказаться в папке "Входящие" участника в результате отмены собрания организатором или в папке "Входящие" организатора в результате ответа участника на приглашение. Приложение может предпринимать с сообщениями о событиях те же действия, что и с обычными сообщения (с небольшими отличиями).
 
 ## <a name="methods"></a>Методы
 
@@ -12,18 +17,18 @@
 |[Получение объекта eventMessage](../api/eventmessage_get.md) | [eventMessage](eventmessage.md) |Считывание свойств и отношений объекта eventMessage.|
 |[Обновление](../api/eventmessage_update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage. |
 |[Удаление](../api/message_delete.md) | Нет |Удаление объекта eventMessage. |
-|[copy](../api/message_copy.md)|[Message](message.md)|Копирование сообщения в папку.|
-|[createForward](../api/message_createforward.md)|[Message](message.md)|Создание черновика пересылаемого сообщения. После этого вы сможете [обновить](../api/message_update.md) или [отправить](../api/message_send.md) черновик.|
-|[createReply](../api/message_createreply.md)|[Message](message.md)|Создание черновика ответного сообщения. После этого вы сможете [обновить](../api/message_update.md) или [отправить](../api/message_send.md) черновик.|
-|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Создание черновика сообщения для ответа всем пользователям. После этого вы сможете [обновить](../api/message_update.md) или [отправить](../api/message_send.md) черновик.|
+|[copy](../api/message_copy.md)|[message](message.md)|Копирование сообщения в папку.|
+|[createForward](../api/message_createforward.md)|[message](message.md)|Создание черновика сообщения для пересылки. После этого вы сможете [обновить](../api/message_update.md) или [отправить](../api/message_send.md) черновик.|
+|[createReply](../api/message_createreply.md)|[message](message.md)|Создание черновика для ответа. После этого вы сможете [обновить](../api/message_update.md) или [отправить](../api/message_send.md) черновик.|
+|[createReplyAll](../api/message_createreplyall.md)|[message](message.md)|Создание черновика сообщения для ответа всем пользователям. После этого вы сможете [обновить](../api/message_update.md) или [отправить](../api/message_send.md) черновик.|
 |[forward](../api/message_forward.md)|Нет|Пересылка сообщения. После этого сообщение сохраняется в папке "Отправленные".|
-|[move](../api/message_move.md)|[Message](message.md)|Перемещение сообщения в папку. При этом в целевой папке создается новая копия сообщения.|
+|[move](../api/message_move.md)|[message](message.md)|Перемещение сообщения в папку. При этом в целевой папке создается новая копия сообщения.|
 |[reply](../api/message_reply.md)|Нет|Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[replyAll](../api/message_replyall.md)|Нет|Ответ всем получателям сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[send](../api/message_send.md)|Нет|Отправка ранее созданного черновика сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |**Вложения**| | |
-|[Список вложений](../api/eventmessage_list_attachments.md) |Коллекция [Attachment](attachment.md)| Получение всех вложений для eventMessage.|
-|[Добавление вложения](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| Добавление нового вложения для eventMessage путем публикации в коллекции вложений.|
+|[Список вложений](../api/eventmessage_list_attachments.md) |Коллекция [attachment](attachment.md)| Получение всех файлов, вложенных в сообщение о событии.|
+|[Добавление вложения](../api/eventmessage_post_attachments.md) |[attachment](attachment.md)| Вложение в сообщение о событии нового файла путем публикации в коллекции вложений.|
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.|
 |[Получение открытого расширения](../api/opentypeextension_get.md) |Коллекция [openTypeExtension](opentypeextension.md)| Получение объекта или объектов открытого расширения, которые определяются по имени или полному имени.|
@@ -47,14 +52,15 @@
 |from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
 |id|String||
-|importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
-|internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
+|importance|String| Важность сообщения: `low`, `normal`, `high`.|
+|inferenceClassification|String| Возможные значения: `focused`, `other`.|
+|internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822]((http://www.ietf.org/rfc/rfc2822.txt)). |
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
 |isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
-|meetingMessageType|String| Тип сообщения о событии: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
+|meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
@@ -68,13 +74,13 @@
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция объектов [attachment](attachment.md)| Только для чтения. Допускается значение null.|
-|event|[Event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
-|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для eventMessage. Только для чтения. Допускается значение null.|
+|attachments|Коллекция [attachment](attachment.md)| Только для чтения. Допускается значение null.|
+|event|[event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для сообщения о событии. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для eventMessage. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для eventMessage. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.  
 
@@ -87,7 +93,7 @@
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 }-->
 
 ```json
@@ -99,23 +105,24 @@
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "createdDateTime": "String (timestamp)",
+  "createdDateTime": "DateTimeOffset",
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
+  "inferenceClassification": "String",
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,
   "isReadReceiptRequested": true,
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "DateTimeOffset",
   "meetingMessageType": "String",
   "parentFolderId": "string",
-  "receivedDateTime": "String (timestamp)",
+  "receivedDateTime": "DateTimeOffset",
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
-  "sentDateTime": "String (timestamp)",
+  "sentDateTime": "DateTimeOffset",
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
