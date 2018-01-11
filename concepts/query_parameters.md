@@ -21,7 +21,7 @@
 
 Эти параметры совместимы с [языком запросов OData версии 4][odata-query]. Параметры, которые поддерживаются всеми API Microsoft Graph для конечной точки `v1.0`, могут значительно отличаться от таковых для конечной точки `beta`. 
 
-> **Примечание.** В конечной точке `beta` префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`. Дополнительные сведения и примеры см. в статье [Поддержка параметров запросов без префиксов $ в Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
+> **Примечание.** В конечной точке `beta` префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`. Дополнительные сведения и примеры см. в статье [Поддержка параметров запросов без префиксов $ в Microsoft Graph]((http://dev.office.com/queryparametersinMicrosoftGraph)).
 
 ## <a name="encoding-query-parameters"></a>Кодирование параметров запроса
 
@@ -162,6 +162,15 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
+Когда вы указываете $filter, сервер определит порядок сортировки результатов. Если вы используете и `$orderby`, и `$filter`, свойства `$filter` должны быть указаны сначала в `$orderby` до любых других свойств в том порядке, в котором они перечислены в параметре `$filter`. Это связано с тем, что сервер всегда определяет порядок сортировки результатов для `$filter`. 
+
+В приведенном ниже примере показан запрос, отфильтрованный по свойствам **subject** и **importance**, а затем отсортированный по свойствам **subject**, **importance** и **receivedDateTime** в порядке убывания.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to exchange unified messaging' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
+```
+
+[Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome to exchange unified messaging%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **Примечание.** Ресурсы Azure AD, производные от [directoryObject](../api-reference/v1.0/resources/directoryobject.md), такие как [user](../api-reference/v1.0/resources/user.md) и [group](../api-reference/v1.0/resources/group.md), не позволяют объединять параметр `$orderby` с выражениями `$filter`. 
 
@@ -210,7 +219,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
 Дополнительные сведения о KQL (например, касательно синтаксиса, поддерживаемых операторов, подсказок для поиска) вы найдете в таких статьях:
 
-- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference);
+- [Руководство по синтаксису языка запросов по ключевым словам (KQL)]((https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference));
 
 - 
   [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).

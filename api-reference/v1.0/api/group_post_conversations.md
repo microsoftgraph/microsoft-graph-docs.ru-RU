@@ -30,6 +30,8 @@ POST /groups/{id}/conversations
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [conversation](../resources/conversation.md) в тексте отклика.
 
+Отклик включает идентификаторы для новой беседы и цепочки. Вы можете их использовать в операции [перечисления записей](conversationthread_list_posts.md) для получения новой записи.
+
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -38,31 +40,37 @@ POST /groups/{id}/conversations
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/conversations
+POST https://graph.microsoft.com/v1.0/groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations
 Content-type: application/json
 
 {
-  "topic": "New Conversation Topic",
-  "threads": [{
-    "posts": [{
-      "body": {
-        "contentType": "html",
-        "content": "this is body content"
-      },
-      "newParticipants": [{
-        "emailAddress": {
-          "name": "Alex Darrow",
-          "address": "alexd@contoso.com"
+    "topic":"New locations for this quarter",
+    "threads":[
+        {
+            "posts":[
+                {
+                    "body":{
+                        "contentType":"html",
+                        "content":"What do we know so far?"
+                    },
+                    "newParticipants":[
+                        {
+                            "emailAddress":{
+                                "name":"Adele Vance",
+                                "address":"AdeleV@contoso.onmicrosoft.com"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      }]
-    }]
-  }]
+    ]
 }
 ```
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -72,17 +80,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "preview": "preview-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+    "id":"AAQkADDVKtMlRp4Txc6k=",
+    "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
+    "threads":[
+        {
+            "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
+        }
+    ]
 }
 ```
 

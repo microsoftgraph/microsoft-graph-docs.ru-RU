@@ -1,6 +1,6 @@
-# <a name="update-eventmessage"></a>Обновление объекта eventmessage
+# <a name="update-eventmessage"></a>Обновление объекта eventMessage
 
-Обновление свойств объекта eventmessage.
+Обновление свойств объекта [eventMessage](../resources/eventmessage.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -59,7 +59,7 @@ Content-length: 248
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 } -->
 ```http
 HTTP/1.1 200 OK
