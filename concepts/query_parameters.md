@@ -21,7 +21,7 @@
 
 Эти параметры совместимы с [языком запросов OData версии 4][odata-query]. Параметры, которые поддерживаются всеми API Microsoft Graph для конечной точки `v1.0`, могут значительно отличаться от таковых для конечной точки `beta`. 
 
-> **Примечание.** В конечной точке `beta` префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`. Дополнительные сведения и примеры см. в статье [Поддержка параметров запросов без префиксов $ в Microsoft Graph]((http://dev.office.com/queryparametersinMicrosoftGraph)).
+> **Примечание.** В конечной точке `beta` префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`. Дополнительные сведения и примеры см. в статье [Поддержка параметров запросов без префиксов $ в Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
 
 ## <a name="encoding-query-parameters"></a>Кодирование параметров запроса
 
@@ -210,7 +210,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
 Дополнительные сведения о KQL (например, касательно синтаксиса, поддерживаемых операторов, подсказок для поиска) вы найдете в таких статьях:
 
-- [Руководство по синтаксису языка запросов по ключевым словам (KQL)]((https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference));
+- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference);
 
 - 
   [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
