@@ -42,7 +42,7 @@ GET /devices/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/devices/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -55,14 +55,6 @@ Content-type: application/json
 
 {
   "accountEnabled":false,
-  "alternativeSecurityIds":
-  [
-    {
-      "type": 2,
-      "key":"Y3YxN2E1MWFlYw==",
-      "identityProvider": null
-    }
-  ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
   "displayName":"Test device",
   "id": "id-value",
