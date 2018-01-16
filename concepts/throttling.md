@@ -41,4 +41,4 @@
 - [люди и социальные медиа](../api-reference/beta/resources/social_overview.md);
 - [хранилище (OneDrive)](../api-reference/v1.0/resources/drive.md).
 
-Развернутое описание регулирования в Microsoft Cloud см. в [этой статье]((https://msdn.microsoft.com/ru-RU/library/office/dn589798.aspx)).
+Развернутое описание регулирования в Microsoft Cloud см. в [этой статье](https://msdn.microsoft.com/ru-RU/library/office/dn589798.aspx).

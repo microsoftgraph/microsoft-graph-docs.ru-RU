@@ -2,11 +2,11 @@
 
 > **Создаете приложения для корпоративных клиентов?** Ваше приложение может не работать, если корпоративный клиент включит функции корпоративной безопасности для мобильных устройств, например <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">условный доступ с устройств</a>. В этом случае у пользователей могут возникать ошибки, а вы не будете об этом знать. 
 
-> Для поддержки **всех корпоративных клиентов** в **любых корпоративных сценариях** необходимо использовать конечную точку Azure AD и управлять приложениями с помощью [портала управления Azure]((https://aka.ms/aadapplist)). Дополнительные сведения см. в разделе [Выбор между конечными точками Azure AD и Azure AD версии 2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+> Для поддержки **всех корпоративных клиентов** в **любых корпоративных сценариях** необходимо использовать конечную точку Azure AD и управлять приложениями с помощью [портала управления Azure](https://aka.ms/aadapplist). Дополнительные сведения см. в разделе [Выбор между конечными точками Azure AD и Azure AD версии 2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-В этой статье описаны задачи, которые необходимо выполнить, чтобы получить маркер доступа из [конечной точки Azure AD 2.0]((https://developer.microsoft.com/ru-RU/graph/docs/concepts/converged_auth)) и вызвать Microsoft Graph. Она содержит разбор кода [примера решения для UWP, позволяющего выполнить подключение и использующего библиотеку Microsoft Graph]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)). В этой статье также рассмотрены основные понятия, которые необходимо реализовать в приложении, использующем Microsoft Graph.
+В этой статье описаны задачи, которые необходимо выполнить, чтобы получить маркер доступа из [конечной точки Azure AD 2.0](https://developer.microsoft.com/ru-RU/graph/docs/concepts/converged_auth) и вызвать Microsoft Graph. Она содержит разбор кода [примера решения для UWP, позволяющего выполнить подключение и использующего библиотеку Microsoft Graph](https://github.com/microsoftgraph/uwp-csharp-connect-sample). В этой статье также рассмотрены основные понятия, которые необходимо реализовать в приложении, использующем Microsoft Graph.
 
-**Не хотите создавать приложение?** Воспользуйтесь [краткой инструкцией по Microsoft Graph]((https://developer.microsoft.com/graph/quick-start)) для быстрого начала работы или скачайте [пример решения для UWP, позволяющего выполнить подключение и использующего библиотеку Microsoft Graph]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)), который рассмотрен в этой статье. Обратите внимание на то, что у нас также есть [REST-версия этого решения]((https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)).
+**Не хотите создавать приложение?** Воспользуйтесь [краткой инструкцией по Microsoft Graph](https://developer.microsoft.com/graph/quick-start) для быстрого начала работы или скачайте [пример решения для UWP, позволяющего выполнить подключение и использующего библиотеку Microsoft Graph](https://github.com/microsoftgraph/uwp-csharp-connect-sample), который рассмотрен в этой статье. Обратите внимание на то, что у нас также есть [REST-версия этого решения](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample).
 
 ## <a name="sample-user-interface"></a>Пользовательский интерфейс решения
 
@@ -26,14 +26,14 @@
 
 Чтобы приступить к работе, вам понадобится следующее: 
 
-- [Учетная запись Майкрософт]((https://www.outlook.com/)) либо [рабочая или учебная учетная запись]((http://dev.office.com/devprogram)).
+- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](http://dev.office.com/devprogram).
 - Visual Studio 2017 
-- [Начальный проект Microsoft Graph для UWP (MSAL)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)/tree/master/starter). Оба шаблона содержат пустые классы, в которые вы можете добавить код. Они также содержат строки ресурсов. Чтобы получить этот проект, клонируйте или скачайте [пример решения для UWP, позволяющего выполнить подключение и использующего библиотеку Microsoft Graph]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)). Затем откройте его в папке **starter**.
+- [Начальный проект Microsoft Graph для UWP (MSAL)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter). Оба шаблона содержат пустые классы, в которые вы можете добавить код. Они также содержат строки ресурсов. Чтобы получить этот проект, клонируйте или скачайте [пример решения для UWP, позволяющего выполнить подключение и использующего библиотеку Microsoft Graph](https://github.com/microsoftgraph/uwp-csharp-connect-sample). Затем откройте его в папке **starter**.
 
 
 ## <a name="register-the-app"></a>Регистрация приложения
  
-1. Войдите на [портал регистрации приложений]((https://apps.dev.microsoft.com/)) с помощью личной, рабочей или учебной учетной записи.
+1. Войдите на [портал регистрации приложений](https://apps.dev.microsoft.com/) с помощью личной, рабочей или учебной учетной записи.
 2. Выберите пункт **Добавить приложение**.
 3. Введите имя приложения и выберите пункт **Создать приложение**.
     
@@ -414,11 +414,11 @@
 3. Нажмите кнопку **Send mail** (Отправить сообщение). Под кнопкой появится сообщение о том, что письмо отправлено. Это письмо включает вложенную фотографию и ссылку для предоставления доступа к отправленному в OneDrive файлу.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Попробуйте REST API, используя [песочницу Graph]((https://developer.microsoft.com/ru-RU/graph/graph-explorer)).
-- Найдите примеры распространенных операций как для REST, так и для пакета SDK, во [фрагментах кода Microsoft Graph для UWP (пакет SDK)]((https://github.com/microsoftgraph/uwp-csharp-snippets-sample)) и [фрагментах кода Microsoft Graph для UWP (REST)]((https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample)) или изучите другие [примеры UWP](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp) на сайте GitHub.
+- Попробуйте REST API, используя [песочницу Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer).
+- Найдите примеры распространенных операций как для REST, так и для пакета SDK, во [фрагментах кода Microsoft Graph для UWP (пакет SDK)](https://github.com/microsoftgraph/uwp-csharp-snippets-sample) и [фрагментах кода Microsoft Graph для UWP (REST)](https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample) или изучите другие [примеры UWP](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp) на сайте GitHub.
 
 ## <a name="see-also"></a>См. также
-- [Клиентская библиотека .NET Microsoft Graph]((https://github.com/microsoftgraph/msgraph-sdk-dotnet))
-- [Протоколы Azure AD версии 2.0]((https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-protocols/))
-- [Маркеры Azure AD версии 2.0]((https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-tokens/))
+- [Клиентская библиотека .NET Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-tokens/)
 
