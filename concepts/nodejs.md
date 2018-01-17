@@ -1,13 +1,13 @@
 # <a name="get-started-with-microsoft-graph-in-a-nodejs-app"></a>Начало работы с Microsoft Graph в приложении Node.js
 
-В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из конечной точки Azure AD версии 2.0 и вызвать Microsoft Graph. В ней рассматривается создание [приложения Microsoft Connect для Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) и объясняются основные понятия, которые необходимо реализовать для использования Microsoft Graph. В этой статье рассказывается, как получить доступ к API Microsoft Graph с помощью необработанных вызовов REST.
+В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из конечной точки Azure AD версии 2.0 и вызвать Microsoft Graph. В ней рассмотрен [пример кода для подключения приложения Node.js от корпорации Майкрософт](https://github.com/microsoftgraph/nodejs-connect-rest-sample) и объясняются основные понятия, которые необходимо реализовать для использования Microsoft Graph. В этой статье рассказывается, как получить доступ к API Microsoft Graph с помощью необработанных вызовов REST. Если вы хотите создать приложение Node.js, которое подключается к Microsoft Graph с помощью пакета SDK для JavaScript, ознакомьтесь с [примером кода подключения на базе пакета SDK Microsoft Graph для Node.js](https://github.com/microsoftgraph/nodejs-connect-sample).
 
-На приведенном ниже рисунке показано создаваемое приложение. 
+На приведенном ниже изображении показано создаваемое приложение. 
 
 ![Веб-приложение после входа с кнопкой "Отправить сообщение"](./images/web-screenshot.png)
 
 
-**Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) вы сможете быстро приступить к работе.
+**Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/ru-RU/getting-started) вы сможете быстро приступить к работе.
 
 Скачать вариант этого примера, использующий конечную точку Azure AD, можно на странице [приложения Microsoft Graph Connect для Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample/releases/tag/last_v1_auth).
 
@@ -17,8 +17,8 @@
 Чтобы приступить к работе, вам понадобится следующее: 
 
 - [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](http://dev.office.com/devprogram).
-- [Node.js с npm](https://nodejs.org/en/download/). 
-- [Приложение Microsoft Connect для Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample). Вы будете использовать папку **starter-project** в примерах файлов для этого пошагового руководства.
+- [Node.js с npm](https://nodejs.org/en/download/) 
+- [Пример подключения для Node.js от корпорации Майкрософт](https://github.com/microsoftgraph/nodejs-connect-rest-sample). Вы будете использовать папку **starter-project** в примерах файлов для этого пошагового руководства.
 
 ## <a name="register-the-application"></a>Регистрация приложения
 Зарегистрируйте приложение на портале регистрации приложений (Майкрософт). При этом будут созданы идентификатор и пароль приложения, которые понадобятся при его настройке в Visual Studio.
@@ -201,9 +201,11 @@
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - Попробуйте REST API, используя [песочницу Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Просмотрите другие [примеры Node.js](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) на сайте GitHub.
-
+- Просмотрите другие [примеры для Node.js](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) на сайте GitHub.
+- Использование [типов TypeScript для Microsoft Graph](https://github.com/microsoftgraph/msgraph-typescript-typings)
+- Использование [пакета SDK JavaScript для Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-javascript)
 
 ## <a name="see-also"></a>См. также
-- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-tokens/)
+- [Пример подключения для Node.js с использованием SDK JavaScript для Microsoft Graph](https://github.com/microsoftgraph/nodejs-connect-sample)

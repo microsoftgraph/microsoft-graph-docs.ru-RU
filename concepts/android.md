@@ -2,7 +2,7 @@
 
 > **Создаете приложения для корпоративных клиентов?** Ваше приложение может не работать, если корпоративный клиент включит функции корпоративной безопасности для мобильных устройств, например <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">условный доступ с устройств</a>. В этом случае у пользователей могут возникать ошибки, а вы не будете об этом знать. 
 
-> Для поддержки **всех корпоративных клиентов** в **любых корпоративных сценариях** необходимо использовать конечную точку Azure AD и управлять приложениями с помощью [портала управления Azure](https://aka.ms/aadapplist). Дополнительные сведения см. в разделе [Выбор между конечными точками Azure AD и Azure AD версии 2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+> Для поддержки **всех корпоративных клиентов** в **любых корпоративных сценариях** необходимо использовать конечную точку Azure AD и управлять приложениями с помощью [портала Azure](https://aka.ms/aadapplist). Дополнительные сведения см. в разделе [Выбор между конечными точками Azure AD и Azure AD версии 2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
 В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из конечной точки Azure AD версии 2.0 и вызвать Microsoft Graph. В ней рассматривается создание [примера приложения Connect для Android](https://github.com/microsoftgraph/android-java-connect-sample) и объясняются основные понятия, которые необходимо реализовать для использования Microsoft Graph в приложении для Android. В этой статье также описывается, как получить доступ к Microsoft Graph с помощью [пакета SDK Microsoft Graph для Android](https://github.com/microsoftgraph/msgraph-sdk-android) или необработанных вызовов REST.
 
@@ -44,7 +44,7 @@
 
 1. Войдите на [портал регистрации приложений Майкрософт](https://apps.dev.microsoft.com/) с помощью личной, рабочей или учебной учетной записи.
 
-2. Нажмите кнопку **Добавить приложение**.
+2. Выберите пункт **Добавить приложение**.
 
     > **Совет.** Если вы скачали [пример приложения подключения для Android](https://github.com/microsoftgraph/android-java-connect-sample) и просто регистрируете его, снимите флажок **Инструкции по настройке** перед нажатием кнопки **Создать**.
 
@@ -58,11 +58,11 @@
 
     В. Просмотрите общие сведения и, когда закончите, нажмите кнопку **Настроить** в нижней части страницы.
 
-    Г. Следуйте инструкциям на странице **Установка**, чтобы добавить библиотеку MSAL в build.gradle вашего приложения.
+    d. Следуйте инструкциям на странице **Установка**, чтобы добавить библиотеку MSAL в build.gradle вашего приложения.
 
     Д. Следуйте инструкциям на странице **Использование**, чтобы добавить логику MSAL в новый проект.
 
-    Е. На странице **Настройка** портал создаст для вас уникальный идентификатор приложения. Используйте его для настройки приложения.
+    f. На странице **Настройка** портал создаст для вас уникальный идентификатор приложения. Используйте его для настройки приложения.
 
     <br/>
     
@@ -74,7 +74,7 @@
 
     Б. Нажмите кнопку **Добавление платформы** и выберите **Собственное приложение**.
 
-      > **Примечание.** На портале регистрации приложений предоставляется URI перенаправления со значением `msalENTER_YOUR_CLIENT_ID://auth`. Не используйте встроенные URI перенаправления. [Пример приложения подключения для Android](https://github.com/microsoftgraph/android-java-connect-sample) использует библиотеку аутентификации MSAL, для которой требуется этот URI перенаправления. При использовании [поддерживаемой сторонней библиотеки](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) или библиотеки **ADAL** необходимо использовать встроенные URI перенаправления.
+      > **Примечание.** На портале регистрации приложений предоставляется URI перенаправления со значением `msalENTER_YOUR_CLIENT_ID://auth`. Не используйте встроенные URI перенаправления. [Пример приложения подключения для Android](https://github.com/microsoftgraph/android-java-connect-sample) использует библиотеку аутентификации MSAL, для которой требуется этот URI перенаправления. При использовании [поддерживаемой сторонней библиотеки](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) или библиотеки **ADAL** необходимо использовать встроенные URI перенаправления.
       
       В. Добавьте делегированные разрешения. Вам потребуются разрешения **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** и **User.ReadBasic.All**. 
 
@@ -498,7 +498,7 @@
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Вызов Microsoft Graph с помощью REST API для Microsoft Graph
 
-[Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) предоставляет несколько API-интерфейсов из облачных служб Майкрософт через одну конечную точку REST API. Чтобы использовать REST API, выполните указанные ниже действия.
+[Microsoft Graph REST API](http://developer.microsoft.com/ru-RU/graph/docs) предоставляет несколько API-интерфейсов из облачных служб Майкрософт через одну конечную точку REST API. Чтобы использовать REST API, выполните указанные ниже действия.
 
 1. Предоставьте приложению разрешения на доступ к Интернету. Откройте файл **AndroidManifest** и добавьте к элементу манифеста представленный ниже дочерний элемент.
     
@@ -598,6 +598,6 @@
 ## <a name="see-also"></a>См. также
 
 - [Пакет SDK Microsoft Graph для Android](https://github.com/microsoftgraph/msgraph-sdk-android) 
-- [Получение токенов доступа для вызова Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Получение доступа от имени пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Получение доступа без пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Получение токенов доступа для вызова Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/concepts/auth_overview)
+- [Получение доступа от имени пользователя](https://developer.microsoft.com/ru-RU/graph/docs/concepts/auth_v2_user)
+- [Получение доступа без пользователя](https://developer.microsoft.com/ru-RU/graph/docs/concepts/auth_v2_service)

@@ -2,9 +2,9 @@
 
 > **Создаете приложения для корпоративных клиентов?** Ваше приложение может не работать, если корпоративный клиент включит функции корпоративной безопасности для мобильных устройств, например <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">условный доступ с устройств</a>. В этом случае у пользователей могут возникать ошибки, а вы не будете об этом знать. 
 
-> Для поддержки **всех корпоративных клиентов** в **любых корпоративных сценариях** необходимо использовать конечную точку Azure AD и управлять приложениями с помощью [портала управления Azure](https://aka.ms/aadapplist). Дополнительные сведения см. в разделе [Выбор между конечными точками Azure AD и Azure AD версии 2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+> Для поддержки **всех корпоративных клиентов** в **любых корпоративных сценариях** необходимо использовать конечную точку Azure AD и управлять приложениями с помощью [портала Azure](https://aka.ms/aadapplist). Дополнительные сведения см. в разделе [Выбор между конечными точками Azure AD и Azure AD версии 2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из [конечной точки Azure AD версии 2.0](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) и вызвать Microsoft Graph. В ней представлен разбор кода [приложения Office 365 Connect для iOS (пакет SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) и рассматриваются основные понятия, которые необходимо реализовать в приложении, использующем Microsoft Graph. Кроме того, в ней описывается доступ к Microsoft Graph с помощью [пакета SDK Microsoft Graph для iOS](https://github.com/microsoftgraph/msgraph-sdk-ios).
+В этой статье описываются задачи, которые необходимо выполнить, чтобы получить маркер доступа из [конечной точки Azure AD версии 2.0](https://developer.microsoft.com/ru-RU/graph/docs/concepts/converged_auth) и вызвать Microsoft Graph. В ней представлен разбор кода [приложения Office 365 Connect для iOS (пакет SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) и рассматриваются основные понятия, которые необходимо реализовать в приложении, использующем Microsoft Graph. Кроме того, в ней описывается доступ к Microsoft Graph с помощью [пакета SDK Microsoft Graph для iOS](https://github.com/microsoftgraph/msgraph-sdk-ios).
 
 Вы можете скачать подходящую вам версию приложения из следующего репозитория GitHub:
 
@@ -17,7 +17,7 @@
 
 Рабочий процесс состоит из подключения к Microsoft Graph, проверки подлинности, входа с помощью рабочей или личной учетной записи и отправки сообщения получателю.
 
-**Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) вы сможете быстро приступить к работе.
+**Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/ru-RU/getting-started) вы сможете быстро приступить к работе.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
@@ -208,7 +208,7 @@
     }
 ```
 3. Откройте файл **SendMailViewController.m.** Добавьте в класс приведенный ниже метод.
-Метод **uploadPictureToOneDrive** отправляет аватар [пользователя](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) из данных ресурса [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) и возвращает URL-адрес совместного доступа, внедренный в текст электронного сообщения, отправленного приложением.
+Метод **uploadPictureToOneDrive** отправляет аватар [пользователя](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/user) из данных ресурса [user](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/user) и возвращает URL-адрес совместного доступа, внедренный в текст электронного сообщения, отправленного приложением.
 
   ```objectivec
   -(void) uploadPictureToOneDrive: (UIImage *) image completion:(void(^) (NSString*, NSError*))completionBlock{
@@ -235,7 +235,7 @@
     }
   ```
 4. Откройте файл **SendMailViewController.m** и добавьте в класс приведенный ниже метод. 
-Метод **getUserPicture** возвращает аватар [пользователя](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user), если он доступен.
+Метод **getUserPicture** возвращает аватар [пользователя](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/user), если он доступен.
    ```objectivec
    -(void) getUserPicture: (NSString *)url completion:(void(^) (UIImage*, NSError*))completionBlock {
     
@@ -254,7 +254,7 @@
 
    ```
 3. Откройте файл **SendMailViewcontroller.m** и добавьте в класс приведенный ниже метод.
-Этот метод получает ресурс [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user), который представляет пользователя, прошедшего проверку подлинности, и кэширует поля, необходимые для получения аватара пользователя и отправки электронного сообщения.
+Этот метод получает ресурс [user](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/user), который представляет пользователя, прошедшего проверку подлинности, и кэширует поля, необходимые для получения аватара пользователя и отправки электронного сообщения.
    ```objectivec
    //Retrieve the logged in user's display name and email address
    -(void) getUserInfo: (NSString *)url completion:(void(^) ( NSError*))completionBlock{
@@ -333,5 +333,5 @@
 
 ## <a name="see-also"></a>См. также
 - [Microsoft Graph SDK для iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-tokens/)

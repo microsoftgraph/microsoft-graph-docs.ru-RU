@@ -6,10 +6,10 @@
 
 ![Страница входа в учетную запись Майкрософт](images/MicrosoftSignIn.png)
 
-**Не хотите создавать приложение?** Скачайте [приложение Connect для PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample), на котором основана эта статья, и вы будете готовы к работе. Или попробуйте [приложение Connect для PHP (SDK)](https://github.com/microsoftgraph/php-connect-sample), использующее [библиотеку Microsoft Graph для PHP](https://github.com/microsoftgraph/msgraph-sdk-php) (предварительная версия).
+**Не хотите создавать приложение?** Скачайте [пример кода подключения для PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample), который упоминается в этой статье, и вы будете готовы к работе. Или попробуйте [пример кода подключения для PHP (SDK)](https://github.com/microsoftgraph/php-connect-sample), использующий [библиотеку Microsoft Graph для PHP](https://github.com/microsoftgraph/msgraph-sdk-php).
 
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы приступить к работе, вам понадобится следующее: 
 
@@ -173,9 +173,9 @@ if($response.getStatusCode() === 201) {
 Проверьте папку "Входящие" в почтовом ящике, выбранном в разделе [Вызов Microsoft Graph с помощью REST](#call-microsoft-graph-using-rest). Вы должны получить сообщение от учетной записи, которая использовалась для входа в приложение.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Попробуйте [песочницу Microsoft Graph](https://graph.microsoft.io/graph-explorer).
+- Опробуйте [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 
 ## <a name="see-also"></a>См. также
-* [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-* [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+* [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-protocols/)
+* [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-tokens/)
