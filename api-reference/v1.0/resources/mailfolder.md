@@ -1,8 +1,10 @@
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 
-Элемент mailFolder в почтовом ящике пользователя, например папка "Входящие", "Черновики" или "Отправленные". Элементы mailFolder могут содержать сообщения и дочерние элементы mailFolder.
+Почтовая папка в почтовом ящике пользователя, например "Входящие" или "Черновики". Почтовые папки могут содержать сообщения, другие элементы Outlook и дочерние почтовые папки.
 
-В этом ресурсе возможно использование [запроса изменений](../../../concepts/delta_query_overview.md) для отслеживания добавочных дополнений, удалений и обновлений благодаря функции [delta](../api/mailfolder_delta.md).
+Outlook создает определенные папки для пользователей по умолчанию. Для удобства вместо значения **id** для доступа к папкам в коллекции **mailFolder** можно использовать следующие известные имена: `ArchiveRoot`, `ConversationHistory`, `DeletedItems`, `Drafts`, `Inbox`, `JunkEmail`, `Outbox` и `SentItems`.
+
+Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](../../../concepts/delta_query_overview.md) с функцией [delta](../api/mailfolder_delta.md).
 
 ## <a name="methods"></a>Методы
 
@@ -47,10 +49,10 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 |:---------------|:--------|:----------|
 |childFolders|Коллекция объектов [MailFolder](mailfolder.md)|Коллекция дочерних папок в элементе mailFolder.|
 |messages|Коллекция объектов [Message](message.md)|Коллекция сообщений в элементе mailFolder.|
-|multiValueExtendedProperties|Коллекция объектов [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция объектов [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже этот ресурс представлен в формате JSON.
 

@@ -3,6 +3,13 @@
 Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.  
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known_issues.md).
+## <a name="january-2018"></a>Январь 2018 г.
+
+### <a name="education-apis"></a>API для образования
+
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета|Добавлены свойства навигации и улучшена поддержка фильтрации для [API списков](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/education-overview).|
 
 ## <a name="december-2017"></a>Декабрь 2017 г.
 

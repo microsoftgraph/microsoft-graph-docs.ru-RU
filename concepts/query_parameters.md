@@ -228,31 +228,62 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 
 API People Microsoft Graph можно использовать для получения сведений о наиболее релевантных для пользователя людях. Релевантность определяется шаблонами общения и совместной работы пользователя, а также его бизнес-отношениями. API People поддерживает параметр запроса `$search`.
 
-Поиск людей выполняется по свойствам **displayName** и **emailAddress** ресурса [person](../api-reference/v1.0/resources/person.md). В поиске применяется алгоритм нечетких соответствий. Возвращаются результаты, основанные на точном совпадении, а также на выводы, связанные с целью поиска. Предположим, в коллекции **people** вошедшего пользователя есть пользователь с отображаемым именем Tyler Lee и электронным адресом tylerle@example.com. Все приведенные ниже примеры запросов поиска возвращают результаты, содержащие имя Tyler.
+Поиск людей выполняется по свойствам **displayName** и **emailAddress** ресурса [person](../api-reference/v1.0/resources/person.md).
+
+По приведенному ниже запросу выполняется поиск человека с именем Irene McGowen в свойствах **displayName** и **emailAddress** всех людей из коллекции **people** вошедшего пользователя. Так как человек с именем Irene McGowan является релевантным для вошедшего пользователя, возвращается информация о нем.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
-GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
-GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
-GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
-GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 ```
 
-Можно также выполнить поиск людей, которым интересна определенная тема. Поиск выполняется на основе заключений, выведенных из переписки пользователя по электронной почте. Например, приведенный ниже поиск возвращает список людей, релевантных для вошедшего в систему пользователя, которые в беседах с ним интересовались пиццей. Обратите внимание, что фраза для поиска заключена в кавычки.
+Ниже показан пример ответа. 
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+       {
+           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
+           "displayName": "Irene McGowan",
+           "givenName": "Irene",
+           "surname": "McGowan",
+           "birthday": "",
+           "personNotes": "",
+           "isFavorite": false,
+           "jobTitle": "Auditor",
+           "companyName": null,
+           "yomiCompany": "",
+           "department": "Finance",
+           "officeLocation": "12/1110",
+           "profession": "",
+           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
+           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
+           "scoredEmailAddresses": [
+               {
+                   "address": "irenem@contoso.onmicrosoft.com",
+                   "relevanceScore": -16.446060612802224
+               }
+           ],
+           "phones": [
+               {
+                   "type": "Business",
+                   "number": "+1 412 555 0109"
+               }
+           ],
+           "postalAddresses": [],
+           "websites": [],
+           "personType": {
+               "class": "Person",
+               "subclass": "OrganizationUser"
+           }
+       }
+   ]
+}
 ```
 
-И, наконец, в одном запросе можно объединить поиск людей и тем, используя вместе два вида выражений поиска.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
-```
-
-В этом запросе фактически выполняется два поиска: поиск нечетких соответствий по свойствам **displayName** и **emailAddress** в отношении людей, релевантных для вошедшего пользователя, и поиск по теме "pizza" в отношении этих людей. Результаты ранжируются, упорядочиваются и возвращаются. Обратите внимание, что поиск не имеет ограничений, поэтому результаты могут содержать список пользователей с нечетким соответствием имени "tyl" или пользователей, интересующихся темой "pizza", или и тех, и других.
-
-Дополнительные сведения об API поиска людей см. в статье [Получение сведений о релевантных людях](./people_example.md).  
+Дополнительные сведения об API поиска людей см. в [этой статье](./people_example.md#search-people).  
 
 ## <a name="select-parameter"></a>Параметр select
 

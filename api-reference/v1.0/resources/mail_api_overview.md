@@ -15,6 +15,7 @@ Microsoft Graph позволяет вашему приложению получ�
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="common-use-cases"></a>Основные варианты использования 
 
@@ -43,8 +44,8 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 API почты открывает новые способы взаимодействия с пользователями: 
 
 - Узнайте больше о [методах](../resources/message.md#methods), [свойствах](../resources/message.md#properties) и [отношениях](../resources/message.md#relationships) ресурсов [message](../resources/message.md) и [mailFolder](../resources/mailfolder.md).
-- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer).
 
-Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
+Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/graph/examples#partners).
 
 

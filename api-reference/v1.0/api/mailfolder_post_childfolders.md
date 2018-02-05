@@ -18,7 +18,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Укажите родительскую папку в URL-адресе запроса как идентификатор папки либо имя известной папки `Inbox`, `Drafts`, `SentItems` или `DeletedItems`.
+Укажите родительскую папку в URL-адресе запроса, используя идентификатор или известное имя, такое как *Inbox*, *Drafts*, *SentItems* или *DeletedItems*. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |

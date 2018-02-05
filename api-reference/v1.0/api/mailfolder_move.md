@@ -28,9 +28,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|destinationId|String|Идентификатор папки либо имя известной папки *Inbox*, *Drafts*, *SentItems* или *DeletedItems*.|
+|destinationId|String|Идентификатор или известное имя папки, такое как *Inbox*, *Drafts*, *SentItems* или *DeletedItems*. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [MailFolder](../resources/mailfolder.md) в тексте отклика.
 
