@@ -26,12 +26,12 @@ OneNote можно использовать как холст, где польз
 
 |Операция|URL-адрес|
 |:--------|:--|
-|GET мои записные книжки|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
-|GET мои разделы|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
-|GET мои страницы|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
+|GET мои записные книжки|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/ru-RU/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
+|GET мои разделы|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/ru-RU/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
+|GET мои страницы|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/ru-RU/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
 
 ## <a name="explore-the-onenote-apis"></a>Изучение API OneNote
-Используйте [песочницу Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph-explorer), чтобы опробовать API OneNote с собственными записными книжками OneNote.
+Используйте [песочницу Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer), чтобы опробовать API OneNote с собственными записными книжками OneNote.
 
 Чтобы отправлять вызовы API OneNote из песочницы Graph, нажмите **Показать другие примеры** в столбце слева. **Включите** OneNote с помощью меню. Вам также потребуется включить соответствующие разрешения. В меню слева под именем учетной записи выберите **Изменить разрешения**. Дополнительные сведения о разрешениях OneNote см. в разделе [Разрешения для заметок](permissions_reference.md#notes-permissions).
 
@@ -39,10 +39,10 @@ OneNote можно использовать как холст, где польз
 
 ## <a name="see-also"></a>См. также
 
-* [Правила размещения фирменной символики](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
-* [Получение содержимого и структуры OneNote](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-* [Добавление изображений, видео и файлов](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)
-* [Создание элементов с абсолютным положением](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)
-* [Извлечение данных](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)
-* [Использование тегов заметок](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
+* [Правила размещения фирменной символики](https://msdn.microsoft.com/ru-RU/office/office365/howto/onenote-branding)
+* [Получение содержимого и структуры OneNote](https://msdn.microsoft.com/ru-RU/office/office365/howto/onenote-get-content)
+* [Добавление изображений, видео и файлов](https://msdn.microsoft.com/ru-RU/office/office365/howto/onenote-images-files)
+* [Создание элементов с абсолютным положением](https://msdn.microsoft.com/ru-RU/office/office365/howto/onenote-abs-pos)
+* [Извлечение данных](https://msdn.microsoft.com/ru-RU/office/office365/howto/onenote-extract-data)
+* [Использование тегов заметок](https://msdn.microsoft.com/ru-RU/office/office365/howto/onenote-note-tags)
 
