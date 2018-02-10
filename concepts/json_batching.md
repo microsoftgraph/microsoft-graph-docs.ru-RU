@@ -1,4 +1,4 @@
-# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a>Объединение нескольких запросов в один вызов HTTP с помощью пакетной обработки JSON (предварительная версия)
+# <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Объединение нескольких запросов в один вызов HTTP с помощью пакетной обработки JSON
 
 Пакетная обработка JSON позволяет оптимизировать приложение, объединив несколько запросов в один объект JSON. Например, клиент может создать представление из таких несвязанных данных:
 
@@ -13,7 +13,7 @@
 Сначала нужно создать пакетный запрос JSON для предыдущего примера. В этом сценарии отдельные запросы никак не зависят друг от друга, поэтому их можно поместить в пакетный запрос в любом порядке.
 
 ```http
-POST https://graph.microsoft.com/beta/$batch
+POST https://graph.microsoft.com/v1.0/$batch
 Accept: application/json
 Content-Type: application/json
 ```
@@ -82,7 +82,7 @@ Content-Type: application/json
       "id": "2",
       "status": 200,
       "body": {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
     },
