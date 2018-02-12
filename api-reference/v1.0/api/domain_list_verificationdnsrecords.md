@@ -27,7 +27,7 @@ GET /domains/{id}/verificationDnsRecords
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -52,7 +52,7 @@ GET /domains/{id}/verificationDnsRecords
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/contoso.com/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>Отклик

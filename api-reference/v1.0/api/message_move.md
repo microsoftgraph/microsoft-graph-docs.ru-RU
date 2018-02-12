@@ -30,9 +30,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|DestinationId|String|Идентификатор или известное имя целевой папки, такое как *Inbox*, *Drafts*, *SentItems* или *DeletedItems*. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
+|destinationId|String|Идентификатор целевой папки либо имя известной папки `Inbox`, `Drafts`, `SentItems` или `DeletedItems`.|
 
-## <a name="response"></a>Ответ
+
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [Message](../resources/message.md) в тексте отклика.
 
@@ -50,7 +51,7 @@ Content-type: application/json
 Content-length: 44
 
 {
-  "DestinationId": "destinationId-value"
+  "destinationId": "destinationId-value"
 }
 ```
 

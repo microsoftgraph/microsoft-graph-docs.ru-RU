@@ -23,7 +23,7 @@ GET /domains/{id}/domainNameReferences
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -47,7 +47,7 @@ GET /domains/{id}/domainNameReferences
   "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com/domainNameReferences
+GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
 ```
 
 ##### <a name="response"></a>Отклик

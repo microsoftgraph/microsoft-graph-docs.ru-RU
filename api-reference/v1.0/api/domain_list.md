@@ -17,7 +17,7 @@
 GET /domains
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -39,7 +39,7 @@ GET /domains
   "name": "get_domains"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains
+GET https://graph.microsoft.com/v1.0/domains
 ```
 ##### <a name="response"></a>Отклик
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.

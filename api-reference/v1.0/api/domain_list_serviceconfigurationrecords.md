@@ -23,7 +23,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,7 +48,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
   "name": "get_serviceconfigurationrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com/serviceConfigurationRecords
+GET https://graph.microsoft.com/v1.0/domains/contoso.com/serviceConfigurationRecords
 ```
 ##### <a name="response"></a>Отклик
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
