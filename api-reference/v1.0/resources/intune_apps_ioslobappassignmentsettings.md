@@ -1,13 +1,15 @@
-# <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
+# <a name="ioslobappassignmentsettings-resource-type"></a>Тип ресурса iosLobAppAssignmentSettings
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Содержит свойства обычного содержимого MIME.
+Содержит свойства, используемые при назначении бизнес-приложения для iOS группе.
+
+Наследуется от [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|String|Указывает MIME-тип содержимого.|
-|value|Двоичный|Массив байтов содержимого.|
+|vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -16,14 +18,13 @@
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mimeContent"
+  "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mimeContent",
-  "type": "String",
-  "value": "binary"
+  "@odata.type": "#microsoft.graph.iosLobAppAssignmentSettings",
+  "vpnConfigurationId": "String"
 }
 ```
 

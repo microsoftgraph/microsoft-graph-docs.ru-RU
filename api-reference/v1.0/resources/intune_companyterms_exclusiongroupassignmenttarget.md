@@ -1,13 +1,15 @@
-# <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
+# <a name="exclusiongroupassignmenttarget-resource-type"></a>Тип ресурса exclusionGroupAssignmentTarget
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Содержит свойства обычного содержимого MIME.
+Представляет группу, которую следует исключить из назначения.
+
+Наследуется от [groupAssignmentTarget](../resources/intune_companyterms_groupassignmenttarget.md)
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|String|Указывает MIME-тип содержимого.|
-|value|Двоичный|Массив байтов содержимого.|
+|groupId|String|ИД группы, являющейся объектом назначения. Наследуется от [groupAssignmentTarget](../resources/intune_companyterms_groupassignmenttarget.md)|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -16,14 +18,13 @@
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mimeContent"
+  "@odata.type": "microsoft.graph.exclusionGroupAssignmentTarget"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mimeContent",
-  "type": "String",
-  "value": "binary"
+  "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+  "groupId": "String"
 }
 ```
 

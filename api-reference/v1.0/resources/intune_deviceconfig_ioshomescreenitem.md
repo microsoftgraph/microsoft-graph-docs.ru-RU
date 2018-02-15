@@ -1,13 +1,12 @@
-# <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
+# <a name="ioshomescreenitem-resource-type"></a>Тип ресурса iosHomeScreenItem
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Содержит свойства обычного содержимого MIME.
+Представляет элемент на начальном экране iOS
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|String|Указывает MIME-тип содержимого.|
-|value|Двоичный|Массив байтов содержимого.|
+|displayName|String|Имя приложения|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -16,14 +15,13 @@
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mimeContent"
+  "@odata.type": "microsoft.graph.iosHomeScreenItem"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mimeContent",
-  "type": "String",
-  "value": "binary"
+  "@odata.type": "#microsoft.graph.iosHomeScreenItem",
+  "displayName": "String"
 }
 ```
 

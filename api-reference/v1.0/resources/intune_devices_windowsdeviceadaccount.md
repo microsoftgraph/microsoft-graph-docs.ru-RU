@@ -1,13 +1,17 @@
-# <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
+# <a name="windowsdeviceadaccount-resource-type"></a>Тип ресурса windowsDeviceADAccount
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Содержит свойства обычного содержимого MIME.
+Н/Д
+
+Наследуется от [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|String|Указывает MIME-тип содержимого.|
-|value|Двоичный|Массив байтов содержимого.|
+|password|String|Н/Д. Наследуется от [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|
+|domainName|String|Н/Д|
+|userName|String|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -16,14 +20,15 @@
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mimeContent"
+  "@odata.type": "microsoft.graph.windowsDeviceADAccount"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mimeContent",
-  "type": "String",
-  "value": "binary"
+  "@odata.type": "#microsoft.graph.windowsDeviceADAccount",
+  "password": "String",
+  "domainName": "String",
+  "userName": "String"
 }
 ```
 

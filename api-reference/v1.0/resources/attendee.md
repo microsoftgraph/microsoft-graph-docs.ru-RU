@@ -1,6 +1,6 @@
 # <a name="attendee-resource-type"></a>Тип ресурса attendee
 
-Участник события.
+Участник события. Это может быть человек или ресурс (например конференц-зал или оборудование), настроенный в качестве ресурса на сервере Exchange Server клиента.
 
 Тип, производный от [attendeeBase](attendeebase.md).
 
@@ -8,7 +8,7 @@
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Ответ участника (нет, принято, отклонено и т. д.) на событие, а также дата и время отправки ответа.|
-|type|String|Тип участника: `Required`, `Optional`, `Resource`.|
+|type|String|Тип участника: `required`, `optional`, `resource`.|
 |emailAddress|[emailAddress](emailAddress.md)|Включает имя и SMTP-адрес участника.|
 
 ## <a name="json-representation"></a>Представление в формате JSON

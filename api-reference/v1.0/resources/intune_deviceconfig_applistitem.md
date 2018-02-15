@@ -1,13 +1,15 @@
-# <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
+# <a name="applistitem-resource-type"></a>Тип ресурса appListItem
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Содержит свойства обычного содержимого MIME.
+Представляет приложение в списке управляемых приложений
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|String|Указывает MIME-тип содержимого.|
-|value|Двоичный|Массив байтов содержимого.|
+|name|String|Имя приложения|
+|publisher|String|Издатель приложения|
+|appStoreUrl|String|URL-адрес приложения в Магазине|
+|appId|String|Идентификатор приложения или его пакета|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -16,14 +18,16 @@
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mimeContent"
+  "@odata.type": "microsoft.graph.appListItem"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mimeContent",
-  "type": "String",
-  "value": "binary"
+  "@odata.type": "#microsoft.graph.appListItem",
+  "name": "String",
+  "publisher": "String",
+  "appStoreUrl": "String",
+  "appId": "String"
 }
 ```
 

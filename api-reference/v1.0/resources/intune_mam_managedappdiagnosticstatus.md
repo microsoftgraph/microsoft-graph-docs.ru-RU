@@ -1,13 +1,14 @@
-# <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
+# <a name="managedappdiagnosticstatus-resource-type"></a>Тип ресурса managedAppDiagnosticStatus
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Содержит свойства обычного содержимого MIME.
+Представляет состояние диагностики.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|String|Указывает MIME-тип содержимого.|
-|value|Двоичный|Массив байтов содержимого.|
+|validationName|String|Понятное имя проверки|
+|state|String|Состояние операции|
+|mitigationInstruction|String|Инструкции по исправлению неудачной проверки|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -16,14 +17,15 @@
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mimeContent"
+  "@odata.type": "microsoft.graph.managedAppDiagnosticStatus"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mimeContent",
-  "type": "String",
-  "value": "binary"
+  "@odata.type": "#microsoft.graph.managedAppDiagnosticStatus",
+  "validationName": "String",
+  "state": "String",
+  "mitigationInstruction": "String"
 }
 ```
 
