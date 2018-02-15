@@ -1,0 +1,47 @@
+# <a name="iosvppebookassignment-resource-type"></a><span data-ttu-id="dbe9e-101">Тип ресурса iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="dbe9e-101">iosVppEBookAssignment resource type</span></span>
+
+> <span data-ttu-id="dbe9e-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="dbe9e-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="dbe9e-103">Содержит свойства, используемые при назначении электронной книги в формате VPP для iOS группе.</span><span class="sxs-lookup"><span data-stu-id="dbe9e-103">Contains properties used to assign an iOS VPP EBook to a group.</span></span>
+
+<span data-ttu-id="dbe9e-104">Наследуется от [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)</span><span class="sxs-lookup"><span data-stu-id="dbe9e-104">Inherits from [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)</span></span>
+
+## <a name="methods"></a><span data-ttu-id="dbe9e-105">Методы</span><span class="sxs-lookup"><span data-stu-id="dbe9e-105">Methods</span></span>
+|<span data-ttu-id="dbe9e-106">Метод</span><span class="sxs-lookup"><span data-stu-id="dbe9e-106">Method</span></span>|<span data-ttu-id="dbe9e-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="dbe9e-107">Return Type</span></span>|<span data-ttu-id="dbe9e-108">Описание</span><span class="sxs-lookup"><span data-stu-id="dbe9e-108">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="dbe9e-109">Список объектов iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="dbe9e-109">List iosVppEBookAssignments</span></span>](../api/intune_books_iosvppebookassignment_list.md)|<span data-ttu-id="dbe9e-110">Коллекция [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)</span><span class="sxs-lookup"><span data-stu-id="dbe9e-110">[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) collection</span></span>|<span data-ttu-id="dbe9e-111">Список свойств и связей объектов [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="dbe9e-111">List properties and relationships of the [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) objects.</span></span>|
+|[<span data-ttu-id="dbe9e-112">Получение объекта iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="dbe9e-112">Get iosVppEBookAssignment</span></span>](../api/intune_books_iosvppebookassignment_get.md)|[<span data-ttu-id="dbe9e-113">iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="dbe9e-113">iosVppEBookAssignment</span></span>](../resources/intune_books_iosvppebookassignment.md)|<span data-ttu-id="dbe9e-114">Чтение свойств и связей объекта [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="dbe9e-114">Read properties and relationships of [plannerPlanDetails](../resources/intune_books_iosvppebookassignment.md) object.</span></span>|
+|[<span data-ttu-id="dbe9e-115">Создание объекта iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="dbe9e-115">Create iosVppEBookAssignment</span></span>](../api/intune_books_iosvppebookassignment_create.md)|[<span data-ttu-id="dbe9e-116">iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="dbe9e-116">iosVppEBookAssignment</span></span>](../resources/intune_books_iosvppebookassignment.md)|<span data-ttu-id="dbe9e-117">Создание объекта [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="dbe9e-117">Create a new [plannerBucket](../resources/intune_books_iosvppebookassignment.md) object.</span></span>|
+|[<span data-ttu-id="dbe9e-118">Удаление объекта iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="dbe9e-118">Delete iosVppEBookAssignment</span></span>](../api/intune_books_iosvppebookassignment_delete.md)|<span data-ttu-id="dbe9e-119">Нет</span><span class="sxs-lookup"><span data-stu-id="dbe9e-119">None</span></span>|<span data-ttu-id="dbe9e-120">Удаляет объект [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="dbe9e-120">Deletes a [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md).</span></span>|
+|[<span data-ttu-id="dbe9e-121">Обновление объекта iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="dbe9e-121">Update iosVppEBookAssignment</span></span>](../api/intune_books_iosvppebookassignment_update.md)|[<span data-ttu-id="dbe9e-122">iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="dbe9e-122">iosVppEBookAssignment</span></span>](../resources/intune_books_iosvppebookassignment.md)|<span data-ttu-id="dbe9e-123">Обновление свойств объекта [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="dbe9e-123">Update the properties of a [calendar](../resources/intune_books_iosvppebookassignment.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="dbe9e-124">Свойства</span><span class="sxs-lookup"><span data-stu-id="dbe9e-124">Properties</span></span>
+|<span data-ttu-id="dbe9e-125">Свойство</span><span class="sxs-lookup"><span data-stu-id="dbe9e-125">Property</span></span>|<span data-ttu-id="dbe9e-126">Тип</span><span class="sxs-lookup"><span data-stu-id="dbe9e-126">Type</span></span>|<span data-ttu-id="dbe9e-127">Описание</span><span class="sxs-lookup"><span data-stu-id="dbe9e-127">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="dbe9e-128">id</span><span class="sxs-lookup"><span data-stu-id="dbe9e-128">id</span></span>|<span data-ttu-id="dbe9e-129">String</span><span class="sxs-lookup"><span data-stu-id="dbe9e-129">String</span></span>|<span data-ttu-id="dbe9e-130">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="dbe9e-130">Key of the setting.</span></span> <span data-ttu-id="dbe9e-131">Наследуется от [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)</span><span class="sxs-lookup"><span data-stu-id="dbe9e-131">Inherited from [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)</span></span>|
+|<span data-ttu-id="dbe9e-132">target</span><span class="sxs-lookup"><span data-stu-id="dbe9e-132">target</span></span>|[<span data-ttu-id="dbe9e-133">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="dbe9e-133">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune_books_deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="dbe9e-134">Цель назначения электронной книги.</span><span class="sxs-lookup"><span data-stu-id="dbe9e-134">The assignment target for eBook.</span></span> <span data-ttu-id="dbe9e-135">Наследуется от [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)</span><span class="sxs-lookup"><span data-stu-id="dbe9e-135">Inherited from [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)</span></span>|
+|<span data-ttu-id="dbe9e-136">installIntent</span><span class="sxs-lookup"><span data-stu-id="dbe9e-136">installIntent</span></span>|<span data-ttu-id="dbe9e-137">String</span><span class="sxs-lookup"><span data-stu-id="dbe9e-137">String</span></span>|<span data-ttu-id="dbe9e-138">Цель установки электронной книги.</span><span class="sxs-lookup"><span data-stu-id="dbe9e-138">The install intent for eBook.</span></span> <span data-ttu-id="dbe9e-139">Наследуется от [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span><span class="sxs-lookup"><span data-stu-id="dbe9e-139">Inherited from [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="dbe9e-140">Связи</span><span class="sxs-lookup"><span data-stu-id="dbe9e-140">Relationships</span></span>
+<span data-ttu-id="dbe9e-141">Нет</span><span class="sxs-lookup"><span data-stu-id="dbe9e-141">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dbe9e-142">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dbe9e-142">JSON Representation</span></span>
+<span data-ttu-id="dbe9e-143">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dbe9e-143">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.iosVppEBookAssignment"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
+  "id": "String (identifier)",
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+  },
+  "installIntent": "String"
+}
+```
+
+
+
