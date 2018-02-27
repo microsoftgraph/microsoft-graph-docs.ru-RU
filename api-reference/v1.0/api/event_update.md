@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |body|[ItemBody](../resources/itembody.md)|Текст сообщения, связанного с событием.|
 |categories|String|Категории, связанные с событием.|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время завершения события.<br/><br/>По умолчанию время завершения указано в формате UTC. Можно дополнительно указать часовой пояс в элементе EndTimeZone, задать время завершения согласно этому часовому поясу и UTC-смещение. Обратите внимание, что если вы используете EndTimeZone, следует также указать значение StartTimeZone.<br/><br/>Пример указания даты (25 февраля 2015 г., 21:34 по тихоокеанскому поясному времени): "2015-02-25T21:34:00-08:00". |
-|importance|String|Важность события. Low = 0, Normal = 1, High = 2. Возможные значения: `Low`, `Normal`, `High`.|
+|importance|String|Важность события. Возможные значения: `Low`, `Normal`, `High`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
 |location|[Location](../resources/location.md)|Место проведения события.|
