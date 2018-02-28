@@ -1,14 +1,6 @@
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
-Учебное заведение. Ресурс **EducationSchool** в настоящее время соответствует ресурсу [administrativeUnit](../../beta/resources/administrativeunit.md), и у них общий идентификатор.  
-
->**Примечание.** Ресурсы **administrativeUnit** и **educationOrganization** представлены в бета-версии. Если вы используете эти ресурсы, не забывайте периодически просматривать [журнал изменений](../../../concepts/changelog.md). Когда ресурсы API Microsoft Graph будут выпущены для версии конечной точки 1.0, мы сообщим об этом в журнале изменений. Если приложение потребляет ресурсы **administrativeUnit** или **educationOrganization**, необходимо будет объявить URL-адреса базового запроса, как показано в блоке кода ниже.  
-  ```JavaScript
-  var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-  var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
-  ```
-
-Этот ресурс — подтип [educationOrganization](../../beta/resources/educationorganization.md).
+Ресурс представляет учебное заведение и используется для управления классами, преподавателями и учащимися данного учебного заведения.  
 
 
 ## <a name="methods"></a>Методы
@@ -22,7 +14,6 @@
 |[Добавление пользователя](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации **users**.|
 |[Перечисление пользователей](../api/educationschool_list_users.md) |Коллекция [educationUser](educationuser.md)| Получение коллекции объектов **educationUser**.|
 |[Удаление пользователя](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Удаление **educationUser** из учебного заведения через свойство навигации **users**.|
-|[Получение administrativeUnit](../api/educationschool_get_administrativeunit.md) |[administrativeUnit](../../beta/resources/administrativeunit.md)| Получение элемента **administrativeUnit**, соответствующего учебному заведению **educationSchool**.|
 |[Обновление](../api/educationschool_update.md) | [educationSchool](educationschool.md) |Обновление объекта **educationSchool**. |
 |[Удаление](../api/educationschool_delete.md) | None |Удаление объекта **educationSchool**. |
 
