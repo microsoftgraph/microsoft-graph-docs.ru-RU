@@ -13,7 +13,13 @@
 |Дополнение|Бета-версия|Добавлены свойства `favoritePlanReferences` и `recentPlanReferences` для объекта [plannerUser](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/plannerUser). |
 |Дополнение|Бета-версия|Добавлены свойства навигации `favoritePlans` и `recentPlans` для объекта [plannerUser](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/plannerUser). |
 |Дополнение|Бета-версия|Добавлено свойство `contexts` для объекта [plannerPlan](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/plannerPlan). |
-|Дополнение|Бета-версия|Добавлено свойство `contextDetails` для объекта [plannerPlanDetails](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/plannerPlanDetails). |## Январь 2018 г.
+|Дополнение|Бета-версия|Добавлено свойство `contextDetails` для объекта [plannerPlanDetails](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/plannerPlanDetails). |
+
+### <a name="reports-apis"></a>API отчетов
+| Тип изменения | Версия | Описание                              |
+|:------------|:--------|:-----------------------------------------|
+| Дополнение    | Бета-версия    | Добавлено свойство **activatedOnSharedComputer** для объекта [userActivationCounts](../api-reference/beta/resources/useractivationcounts.md).|
+| Дополнение    | Бета    | Добавлено свойство **sharedComputerActivation** для объекта [office365ActivationsUserCounts](../api-reference/beta/resources/office365activationsusercounts.md).|
 
 ## <a name="january-2018"></a>Январь 2018 г.
 
@@ -163,15 +169,18 @@
 |Изменение|Бета-версия|Добавлены свойства **supportsUserLicensing** и **supportsDeviceLicensing** для сложного типа [vppLicensingType](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_apps_vpplicensingtype).|
 |Изменение|Бета-версия|Удалено свойство **actionMessage** для сложного типа [vppTokenActionResult](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult).|
 
-## <a name="january-2018"></a>Январь 2018 г.
-
 ### <a name="reports-apis"></a>API отчетов
 | Тип изменения | Версия | Описание                              |
 |:------------|:--------|:-----------------------------------------|
 | Дополнение    | 1.0    | Добавлены следующие API:<br>[getTeamsUserActivityUserDetail](../api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail.md);<br>[getTeamsUserActivityCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivitycounts.md);<br>[getTeamsUserActivityUserCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts.md);<br>[getTeamsDeviceUsageUserDetail](../api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail.md);<br>[getTeamsDeviceUsageUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts.md);<br>[getTeamsDeviceUsageDistributionUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts.md). |
 
-
 ## <a name="december-2017"></a>Декабрь 2017 г.
+
+### <a name="delta-query"></a>Разностный запрос
+
+| Тип изменения | Версия | Описание                              |
+|:------------|:--------|:-----------------------------------------|
+| Изменение      | 1.0    | Добавлена возможность фильтрации [пользователей](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/user_delta) и [групп](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/group_delta). |
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
 
@@ -821,7 +830,7 @@
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | 1.0        | Добавлена поддержка функции delta в версии 1.0. Она позволяет выполнять [запрос изменений](https://developer.microsoft.com/ru-RU/graph/docs/concepts/delta_query_overview) для следующих объектов:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Примеры см. в следующих статьях:<br/>[Получение добавочных изменений для групп](https://developer.microsoft.com/ru-RU/graph/docs/concepts/delta_query_groups)<br/>[Получение добавочных изменений для сообщений в папке](https://developer.microsoft.com/ru-RU/graph/docs/concepts/delta_query_messages)<br/>[Получение добавочных изменений для пользователей](https://developer.microsoft.com/ru-RU/graph/docs/concepts/delta_query_users) |
+| Дополнение        | 1.0        | Добавлена поддержка функции delta в версии 1.0. Она позволяет выполнять [разностный запрос](https://developer.microsoft.com/ru-RU/graph/docs/concepts/delta_query_overview) для следующих объектов:<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Примеры см. в следующих статьях:<br/>[Получение добавочных изменений для групп](https://developer.microsoft.com/ru-RU/graph/docs/concepts/delta_query_groups)<br/>[Получение добавочных изменений для сообщений в папке](https://developer.microsoft.com/ru-RU/graph/docs/concepts/delta_query_messages)<br/>[Получение добавочных изменений для пользователей](https://developer.microsoft.com/ru-RU/graph/docs/concepts/delta_query_users) |
 | Изменение          | Бета        | Добавлена возможность дополнительной фильтрации запросов (по идентификатору) для [пользователей](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/user_delta) и [групп](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/group_delta). |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>Добавлена поддержка работы с удаленными элементами для ресурса user
@@ -1701,7 +1710,7 @@
 
 | **Тип изменения** | **Конечная точка** | **Описание**                          |
 | :-------------- | :----------- | :--------------------------------------- |
-| Дополнение        | 1.0         | Теперь веб-перехватчики общедоступны в конечной точке версии 1.0 благодаря ресурсу _/Subscriptions_. Вы можете создавать, считывать, продлевать и удалять подписки на уведомления о данных из чатов в Outlook и группах Office 365. |
+| Дополнение        | 1.0         | Веб-перехватчики теперь доступны для ресурса _/Subscriptions_ в конечной точке версии 1.0. Создавайте, просматривайте, продлевайте и удаляйте подписки на уведомления о данных из чатов в Outlook и группах Office 365. |
 
 ### <a name="user"></a>Пользователь
 
