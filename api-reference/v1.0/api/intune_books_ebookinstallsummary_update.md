@@ -1,0 +1,88 @@
+# <a name="update-ebookinstallsummary"></a>Update eBookInstallSummary
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Обновление свойств объекта [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md).
+## <a name="prerequisites"></a>Необходимые разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
+```
+
+## <a name="request-headers"></a>Заголовки запроса
+|Заголовок|Значение|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
+
+## <a name="request-body"></a>Тело запроса
+В теле запроса добавьте представление объекта [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) в формате JSON.
+
+Ниже показаны свойства, которые необходимо указывать при создании объекта [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md).
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|String|Ключ объекта.|
+|installedDeviceCount|Int32|Количество устройств, на которых была успешно установлена эта книга.|
+|failedDeviceCount|Int32|Количество устройств, на которых не удалось установить эту книгу.|
+|notInstalledDeviceCount|Int32|Количество устройств, на которых не установлена эта книга.|
+|installedUserCount|Int32|Количество пользователей, которым удалось установить эту книгу на всех своих устройствах.|
+|failedUserCount|Int32|Количество пользователей, у которых есть одно или несколько устройств, где не удалось установить эту книгу.|
+|notInstalledUserCount|Int32|Количество пользователей, не установивших эту книгу.|
+
+
+
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) в теле ответа.
+
+## <a name="example"></a>Пример
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
+Content-type: application/json
+Content-length: 178
+
+{
+  "installedDeviceCount": 4,
+  "failedDeviceCount": 1,
+  "notInstalledDeviceCount": 7,
+  "installedUserCount": 2,
+  "failedUserCount": 15,
+  "notInstalledUserCount": 5
+}
+```
+
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 285
+
+{
+  "@odata.type": "#microsoft.graph.eBookInstallSummary",
+  "id": "9708ad78-ad78-9708-78ad-089778ad0897",
+  "installedDeviceCount": 4,
+  "failedDeviceCount": 1,
+  "notInstalledDeviceCount": 7,
+  "installedUserCount": 2,
+  "failedUserCount": 15,
+  "notInstalledUserCount": 5
+}
+```
+
+
+
