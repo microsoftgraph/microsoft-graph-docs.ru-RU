@@ -1,12 +1,21 @@
 # <a name="getting-started-building-microsoft-graph-apps"></a>Начало создания приложений Microsoft Graph
 
-Статьи, перечисленные в этом разделе, содержат подробные указания по созданию приложений для подключения к Microsoft Graph на различных языках и платформах разработки. Каждая статья начинается с простого начального проекта для соответствующей платформы и содержит указания по добавлению функций проверки подлинности пользователя и отправки в службу Microsoft Graph простого запроса на отправку электронного сообщения со своей учетной записи. Готовый проект идентичен [примеру Connect в репозитории Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) для соответствующей платформы.
+Статьи, перечисленные в этом разделе, содержат подробные указания по созданию приложений для подключения к Microsoft Graph на различных языках и платформах разработки. В каждой статье используется начальный проект и описываются основные действия для подключения к Microsoft Graph:
 
-Выберите статью, посвященную выбранным вами поставщику проверки подлинности и платформе разработки, и приступайте к подключению к Microsoft Graph. Дополнительные сведения см. в статье [Чем отличается конечная точка версии 2.0?](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare)
+ 1. Регистрация приложения
+ 2. Проверка подлинности пользователя и получение маркера доступа в приложении
+ 3. Вызов Microsoft Graph из приложения
+ 4. Запуск приложения
 
-Вы можете выполнить действия, указанные в статье, посвященной вашей платформе разработки, либо воспользоваться [кратким руководством](https://developer.microsoft.com/graph/quick-start), чтобы быстро подготовить решение к работе.
+Чтобы быстрее получить работоспособное решение, попробуйте наше [средство быстрого создания](https://developer.microsoft.com/graph/quick-start).
 
-Готовые примеры подключения вы найдете в репозитории [Microsoft Graph](https://github.com/microsoftgraph) на сайте GitHub. В приведенной ниже таблице представлены примеры для разных поставщиков проверки подлинности и платформ, а также указано, что они используют для подключения к Microsoft Graph — REST или клиентскую библиотеку Microsoft Graph.
+Каждый готовый проект идентичен [примеру подключения в репозитории Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) для соответствующей платформы.
+
+Хотите увидеть еще больше кода?
+
+Ознакомьтесь с [примерами Microsoft Graph](https://github.com/microsoftgraph) на сайте GitHub. В приведенной ниже таблице перечислены дополнительные версии примеров, рассматриваемых в этом разделе. В них показано, как выполнить аутентификацию пользователя с помощью обеих конечных точек ADAL (версий 1.0 и 2.0), и используются либо необработанные вызовы REST, либо клиентская библиотека Microsoft Graph (SDK) для подключения к Microsoft Graph.
+
+Выберите статью, посвященную вашему поставщику проверки подлинности и платформе разработки, и приступайте к подключению к Microsoft Graph. Дополнительные сведения см. в статье [Чем отличается конечная точка версии 2.0?](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-v2-compare)
 
 
 |Платформа |Конечная точка Azure AD |Конечная точка Azure AD версии 2.0 |
@@ -27,6 +36,6 @@
 
 ## <a name="see-also"></a>См. также
 
-- [Опробуйте примеры вызовов REST в песочнице Graph](https://developer.microsoft.com/en-us/graph/graph-explorer)
-- [Документация по конечной точке Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
-- [Документация по конечной точке Azure AD версии 2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- [Опробуйте примеры вызовов REST в песочнице Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer)
+- [Документация по конечной точке Azure AD](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-developers-guide)
+- [Документация по конечной точке Azure AD версии 2.0](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-appmodel-v2-overview)
