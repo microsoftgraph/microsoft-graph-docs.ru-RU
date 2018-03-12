@@ -6,7 +6,7 @@
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип   | Описание                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
-| address | [physicalAddress](physicalAddress.md) |Почтовый адрес расположения. |
+| address | [physicalAddress](physicaladdress.md) |Почтовый адрес расположения. |
 | displayName  | String | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный адрес электронной почты для расположения.              |
 
