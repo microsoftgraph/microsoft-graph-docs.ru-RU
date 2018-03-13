@@ -3,6 +3,18 @@
 Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.  
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known_issues.md).
+
+## <a name="march-2018"></a>Март 2018 г.
+
+### <a name="group-lifecycle-policy"></a>Политика жизненного цикла группы
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | 1.0        | Добавлен объект [groupLifecyclePolicy](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy) |
+| Добавление        | 1.0        | Для политики жизненного цикла группы добавлены API [создания](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [перечисления](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list), [получения](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get), [обновления](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update), [удаления](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete), [добавления группы](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup), [удаления группы](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup) |
+| Добавление        | 1.0        | Добавлена функция [перечисления groupLifecyclePolicies](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) для [group](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/group) |
+| Изменение | 1.0 | Добавлено свойство renewedDateTime и [renew](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/group_renew) для [group](../api-reference/v1.0/resources/group.md) | 
+
 ## <a name="february-2018"></a>Февраль 2018 г.
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
@@ -250,7 +262,6 @@
 |Изменение|Бета-версия|Добавлены свойства **tpmSpecificationVersion**, **operatingSystemEdition**, **deviceFullQualifiedDomainName**, **deviceGuardVirtualizationBasedSecurityHardwareRequirementState**, **deviceGuardVirtualizationBasedSecurityState** и **deviceGuardLocalSystemAuthorityCredentialGuardState** для сложного типа [hardwareInformation](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_devices_hardwareinformation).|
 |Изменение|Бета-версия|Добавлено свойство **vpnConfigurationId** для сложного типа [iosVppAppAssignmentSettings](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings).|
 |Изменение|Бета-версия|Добавлено свойство **resourceActions** для сложного типа [rolePermission](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_rbac_rolepermission).|
-
 
 ### <a name="reports-apis"></a>API отчетов
 | Тип изменения | Версия | Описание                              |

@@ -60,7 +60,7 @@ var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for admi
 ```
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
