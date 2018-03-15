@@ -1,10 +1,14 @@
 # <a name="get-singlevaluelegacyextendedproperty"></a>Получение объекта singleValueLegacyExtendedProperty
 
-Получение экземпляров ресурса, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`.
+Вы можете получить отдельный экземпляр ресурса, дополненный определенным расширенным свойством, или коллекцию экземпляров ресурсов, включающую расширенные свойства, которые соответствуют фильтру.
 
-С помощью параметра запроса `$expand` вы можете получить указанный экземпляр, дополненный указанным расширенным свойством. На данный момент это единственный способ получить объект [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md), представляющий расширенное свойство.
+Параметр запроса `$expand` позволяет получить указанный экземпляр ресурса, дополненный определенным расширенным свойством. Используйте операторы `$filter` и `eq` в свойстве **id**, чтобы указать расширенное свойство. На данный момент это единственный способ получить объект [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md), представляющий расширенное свойство. 
 
-С помощью параметра запроса `$filter` вы можете получить все экземпляры указанного ресурса, которые содержат расширенное свойство, соответствующее фильтру для свойств **id** и **value**. Фильтр применяется ко всем экземплярам ресурса в почтовом ящике вошедшего пользователя.
+Чтобы получить экземпляры ресурсов, которые содержат определенные расширенные свойства, используйте параметр запроса `$filter` и примените оператор `eq` к свойству **id**. Кроме того, для числовых расширенных свойств примените один из следующих операторов к свойству **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`. Для расширенных свойств строкового типа примените оператор `contains`, `startswith`, `eq` или `ne` к свойству **value**.
+
+Фильтр применяется ко всем экземплярам ресурса в почтовом ящике вошедшего пользователя. 
+
+При фильтрации имени строки (`Name`) в свойстве **id** расширенного свойства учитывается регистр. При фильтрации свойства **value** расширенного свойства регистр не учитывается.
 
 Поддерживаются следующие ресурсы пользователей:
 
@@ -33,8 +37,8 @@
 
 ## <a name="http-request"></a>HTTP-запрос
 
-#### <a name="get-a-resource-instance-using-expand"></a>Запрос GET на получение экземпляра ресурса с помощью параметра `$expand`
-Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое соответствует фильтру по свойству **id**. Убедитесь, что вы применяете [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
+#### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a>Получение экземпляра ресурса, дополненного расширенным свойством, которое соответствует фильтру
+Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
 
 Получение экземпляра объекта **message**:
 <!-- { "blockType": "ignored" } -->
@@ -89,10 +93,11 @@ GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-#### <a name="get-resource-instances-using-filter"></a>Запрос GET на получение экземпляров ресурсов с помощью параметра `$filter`
+#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>Получение экземпляров ресурсов с числовыми расширенными свойствами, которые соответствуют фильтру
 
-Получение экземпляров поддерживаемого ресурса с расширенным свойством, соответствующим фильтру для свойств **id** и **value**. Применяйте [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.
+Получите экземпляры поддерживаемого ресурса с расширенным свойством, соответствующим фильтру. В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`. Применяйте [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.
 
+В приведенных ниже строках синтаксиса показан фильтр, в случае которого один оператор `eq` используется для свойства id, а другой оператор `eq` — для свойства value. Вы можете заменить оператор `eq` для свойства **value** любым из других операторов (`ne`, `ge`, `gt`, `le` или `lt`), которые применяются к числовым значениям.
 
 Получение экземпляров объекта **message**:
 <!-- { "blockType": "ignored" } -->
@@ -147,12 +152,63 @@ GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
+#### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a>Получение экземпляров ресурсов с расширенными свойствами строкового типа, которые соответствуют фильтру
+
+Получите экземпляры ресурса **message** или **event**, которые включают расширенное свойство строкового типа, соответствующее фильтру. В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `contains`, `startswith`, `eq` или `ne`. Применяйте [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.
+
+
+Получение экземпляров объекта **message**:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+
+GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+```
+
+Получение экземпляров объекта **event**:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+
+GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+```
+
+Получение экземпляров объекта **event** для группы:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+```
+
+
 ## <a name="parameters"></a>Параметры
 |**Параметр**|**Тип**|**Описание**|
 |:-----|:-----|:-----|
 |_Параметры URL-адреса_|
 |id_value|String|Идентификатор сопоставляемого расширенного свойства. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный.|
-|property_value |String|Значение сопоставляемого расширенного свойства. Его необходимо указывать, если этот параметр указан для соответствующего сценария в разделе **HTTP-запрос** выше. Если параметр {property_value} не является строкой, явно приведите `ep/value` к правильному типу данных Edm при сравнении с параметром {property_value}. Примеры см. ниже, в [запросе 3](#request-3). |
+|property_value |String|Значение сопоставляемого расширенного свойства. Его необходимо указывать, если этот параметр указан для соответствующего сценария в разделе **HTTP-запрос** выше. Если параметр {property_value} не является строкой, явно приведите `ep/value` к правильному типу данных Edm при сравнении с параметром {property_value}. Примеры см. в разделе [Запрос 4](#request-4). |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -166,11 +222,11 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 При успешном выполнении этот метод возвращает код отклика `200 OK`.
 
-#### <a name="get-resource-instance-using-expand"></a>Запрос GET на получение экземпляра ресурса с помощью `$expand`
-Текст отклика содержит объект, который представляет запрашиваемый экземпляр ресурса, дополненный соответствующим объектом [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md).
+#### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a>Получение экземпляра ресурса с соответствующим расширенным свойством
+Тело отклика содержит объект, который представляет запрашиваемый экземпляр ресурса, дополненный соответствующим объектом [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md).
   
-#### <a name="get-resource-instances-using-filter"></a>Запрос GET на получение экземпляров ресурсов с помощью параметра `$filter`
-Текст отклика содержит один или несколько объектов, представляющих экземпляры ресурсов, которые содержат соответствующее расширенное свойство. Текст отклика не включает расширенное свойство.
+#### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a>Получение экземпляров ресурсов с расширенным свойством, которое соответствует фильтру
+Тело отклика содержит один или несколько объектов, представляющих экземпляры ресурсов, которые содержат соответствующее расширенное свойство. Тело отклика не включает расширенное свойство.
 
 ## <a name="example"></a>Пример
 #### <a name="request-1"></a>Запрос 1
@@ -232,23 +288,43 @@ Content-type: application/json
 
 Во втором примере показано, как получить сообщения с указанным в фильтре однозначным расширенным свойством типа string. Фильтр ищет расширенное свойство со следующими параметрами:
 
-- Свойство **id** соответствует строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (для наглядности здесь убрана кодировка URL).
+- его свойство **id** соответствует строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (для наглядности здесь убрана кодировка URL-адреса);
 
-- Свойство **value** равно строке `Green`.
+- его свойство **value** равно строке `Green`.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
-#### <a name="response-2"></a>Ответ 2
+#### <a name="response-2"></a>Отклик 2
 
 В случае успешного выполнения возвращается код отклика `HTTP 200 OK`, а текст отклика включает все свойства сообщений, у которых есть расширенное свойство, соответствующее фильтру. Текст отклика аналогичен отклику при [получении коллекции сообщений](../api/user_list_messages.md). Отклик не включает соответствующее расширенное свойство.
 
 
 #### <a name="request-3"></a>Запрос 3
 
-В следующих двух примерах показано, как получить сообщения с однозначными расширенными свойствами типа, отличного от string. Необходимая кодировка URL не указана для удобства чтения.
+В третьем примере показано, как получить сообщения с указанным в фильтре однозначным расширенным свойством строкового типа. Фильтр ищет расширенное свойство со следующими параметрами:
+
+- его свойство **id** соответствует строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (для наглядности здесь убрана кодировка URL-адреса);
+
+- его свойство **value** включает строку `green`. 
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
+```
+
+#### <a name="response-3"></a>Отклик 3
+
+В случае успешного выполнения возвращается код отклика `HTTP 200 OK`, а тело отклика включает все свойства сообщений, у которых есть расширенное свойство, соответствующее фильтру. Например, сообщение, которое содержит однозначное расширенное свойство со свойством **id**, равным строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, и свойством **value**, равным строке `Light green`, будет соответствовать фильтру и включено в отклик.
+
+Тело отклика такое же, как при [получении коллекции сообщений](../api/user_list_messages.md). Отклик не включает соответствующее расширенное свойство.
+
+
+#### <a name="request-4"></a>Запрос 4
+
+В следующих двух примерах показано, как получить сообщения с однозначными расширенными свойствами типа, отличного от строкового. Необходимая кодировка URL не указана для удобства чтения.
 
 В следующем примере показан фильтр, который ищет расширенное свойство со следующими параметрами:
 
@@ -275,7 +351,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 ```
 
 
-#### <a name="response-3"></a>Ответ 3
+#### <a name="response-4"></a>Отклик 4
 
 В предыдущих двух примерах в случае успешного выполнения возвращается код ответа `HTTP 200 OK`, а текст ответа включает все свойства сообщений с расширенным свойством, соответствующим фильтру. Текст ответа аналогичен ответу при [получении коллекции сообщений](../api/user_list_messages.md). Ответ не включает соответствующее расширенное свойство.
 
