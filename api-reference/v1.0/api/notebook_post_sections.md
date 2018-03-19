@@ -27,7 +27,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 ## <a name="request-body"></a><span data-ttu-id="4695e-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4695e-125">Request body</span></span>
 <span data-ttu-id="4695e-126">В тексте запроса укажите имя раздела.</span><span class="sxs-lookup"><span data-stu-id="4695e-126">In the request body, supply a name for the section.</span></span>
 
-<span data-ttu-id="4695e-p103">В рамках одного и того же уровня иерархии имена разделов должны быть уникальными. Имя должно содержать не более 50 символов, в нем не должно быть следующих знаков:  ?*\/:<>|&#''%~</span><span class="sxs-lookup"><span data-stu-id="4695e-p103">Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?*\/:<>|&#''%~</span></span>
+<span data-ttu-id="4695e-p103">В рамках одного и того же уровня иерархии имена разделов должны быть уникальными. Имя должно содержать не более 50 символов, в нем не должно быть следующих знаков:  ?\*\/:<>|&#''%~</span><span class="sxs-lookup"><span data-stu-id="4695e-p103">Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?\*\/:<>|&#''%~</span></span>
 
 ## <a name="response"></a><span data-ttu-id="4695e-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="4695e-129">Response</span></span>
 

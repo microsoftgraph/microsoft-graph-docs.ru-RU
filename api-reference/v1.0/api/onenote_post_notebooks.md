@@ -27,7 +27,7 @@ POST /sites/{id}/onenote/notebooks
 ## <a name="request-body"></a><span data-ttu-id="7e7b1-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="7e7b1-125">Request body</span></span>
 <span data-ttu-id="7e7b1-126">В теле запроса укажите имя записной книжки.</span><span class="sxs-lookup"><span data-stu-id="7e7b1-126">In the request body, supply a name for the notebook.</span></span> 
 
-<span data-ttu-id="7e7b1-p103">Имена записных книжек должны быть уникальными. Имя должно содержать не более 128 символов, в нем не должно быть следующих знаков:  ?*\/:<>|'"</span><span class="sxs-lookup"><span data-stu-id="7e7b1-p103">Notebook names must be unique. The name cannot contain more than 128 characters or contain the following characters:  ?*\/:<>|'"</span></span>
+<span data-ttu-id="7e7b1-p103">Имена записных книжек должны быть уникальными. Имя должно содержать не более 128 символов, в нем не должно быть следующих знаков:  ?\*\/:<>|'"</span><span class="sxs-lookup"><span data-stu-id="7e7b1-p103">Notebook names must be unique. The name cannot contain more than 128 characters or contain the following characters:  ?\*\/:<>|'"</span></span>
 
 ## <a name="response"></a><span data-ttu-id="7e7b1-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e7b1-129">Response</span></span>
 
