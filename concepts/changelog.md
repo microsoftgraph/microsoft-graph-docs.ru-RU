@@ -6,6 +6,11 @@
 
 ## <a name="march-2018"></a>Март 2018 г.
 
+### <a name="reports-apis"></a>API отчетов
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета-версия|Добавлено свойство **siteId** для объекта [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md).|
+
 ### <a name="group-lifecycle-policy"></a>Политика жизненного цикла группы
 
 | **Тип изменения** | **Версия** | **Описание**                          |
@@ -679,7 +684,7 @@
 | Дополнение        | Бета        | Добавлена функция [List groupLifecylePolicies](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) для объекта [group](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/group). |
 
 ### <a name="intune-apis"></a>API Intune
-| Тип изменения | Версия | Описание                              |
+| Тип изменения | Version | Описание                              |
 | :---------- | :------ | :--------------------------------------- |
 | Дополнение    | Бета-версия    | Добавлен новый объект:<br/>[windowsPrivacyDataAccessControlItem](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem)<br/> |
 | Дополнение    | Бета    | Добавлены новые сложные типы:<br/>[configurationManagerClientEnabledFeatures](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_devices_configurationmanagerclientenabledfeatures)<br/>[windowsDefenderScanActionResult](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult)<br/> |
@@ -1639,10 +1644,10 @@
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета-версия | Теперь _Accept-Encoding:gzip_ может учитываться. |
-| Дополнение        | 1.0          | Добавлена поддержка сегмента приведения в пути expand. Например: "https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event" |
+| Дополнение        | v1.0          | Добавлена поддержка сегмента приведения для пути с указанием expand. Пример: "https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event". |
 | Дополнение        | Бета          | Добавлена поддержка запроса PATCH для структурных свойств. Например: "PATCH /me/mailboxSettings" |
 | Дополнение        | Бета          | Теперь Azure Active Directory используется в качестве резервного ресурса для запросов /beta/users/id/photo, когда приложению Outlook не удается обслужить запрос (например, когда у пользователя нет лицензии на почтовый ящик или у клиента нет подписки на Exchange Online). ПРИМЕЧАНИЕ. Этот резервный ресурс доступен и для запросов GET, и для запросов PATCH. |
-| Дополнение        | Бета          | Добавлена поддержка сегмента приведения в пути expand. Например: "https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event" |
+| Дополнение        | Бета          | Добавлена поддержка сегмента приведения для пути с указанием expand. Пример: "https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event". |
 
 ### <a name="onedrive"></a>OneDrive
 
@@ -1707,7 +1712,7 @@
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета-версия | Улучшено сообщение об ошибке при сопоставлении псевдонима клиента и отклоненных токенов JWT (AAD). |
 | Дополнение        | 1.0 и бета-версия | Сведения о расположении конечной точки службы авторизации теперь возвращаются в заголовке _www-authenticate_ при получении запроса с пустым токеном носителя. |
-| Дополнение        | 1.0 и бета-версия | Исправлена возможность фильтрации по свойству id объекта. Пример: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Ранее в запросах POST требовалось добавлять microsoft.graph перед именем функции или действия. Например: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>Теперь не требуется указывать префикс (хотя его по-прежнему можно указывать). Таким образом, указанный ниже запрос также будет работать. POST https://graph.microsoft.com/v1.0/me/getMemberGroups |
+| Дополнение        | 1.0 и бета-версия | Исправлена возможность фильтрации по свойству id объекта. Пример: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Ранее в запросах POST требовалось добавлять microsoft.graph перед именем функции или действия. Пример: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>Теперь не требуется указывать префикс (хотя его по-прежнему можно указывать). Такой запрос тоже возможен: POST https://graph.microsoft.com/v1.0/me/getMemberGroups. |
 | Изменение          | Бета          | Удалены имена свойств подписок.  |
 | Дополнение        | Бета          | Мы добавили возможность находить (с помощью _directorySettingTemplates_) и переопределять поведение по умолчанию (путем создания _setting_ на основе шаблона) для объектов и связанных с ними функций. Изначально для управления поведением групп Office использовался только этот шаблон. |
 
@@ -1783,7 +1788,7 @@
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Проверка notificationUrl на создание подписок. Дополнительные сведения см. в статье [Обновление веб-перехватчиков Microsoft Graph — январь 2016 г.](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016) |
-| Дополнение        | Бета        | Теперь можно удалять объекты подписки: DELETE https://graph.microsoft.com/beta/subscriptions/ |
+| Дополнение        | Бета-версия        | Теперь можно удалять объекты подписки. Соответствующий запрос: DELETE https://graph.microsoft.com/beta/subscriptions/. |
 
 ### <a name="users"></a>Пользователи
 
@@ -1840,6 +1845,6 @@
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Исправление             | 1.0 и бета-версия | Устранена возможность выбирать определенные свойства других пользователей, когда на них ссылаются по их основному имени участника-пользователя. Например: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| Исправление             | 1.0 и бета | Исправлена возможность выбирать определенные свойства другого пользователя, когда на него ссылаются по имени участника-пользователя. Пример: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Исправление             | 1.0 и бета-версия | Исправлен вызов функции _microsoft.graph.reminderView_, привязанной к пользователю, при котором возникал сбой и отображалось следующее сообщение об ошибке: "Не удалось найти свойство с именем businessPhones в типе Microsoft.OutlookServices.Reminder". |
 | Исправление             | 1.0 и бета-версия | Устранена проблема, из-за которой при создании и обновлении пользователей (POST/PATCH /v1.0/users) возникала ошибка 400. |
