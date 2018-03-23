@@ -1,8 +1,8 @@
-# <a name="assign-action"></a>Действие assign
+# <a name="update-deviceappmanagement"></a>Обновление объекта deviceAppManagement
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Пока не задокументировано.
+Обновление свойств объекта [deviceAppManagement](../resources/intune_mam_deviceappmanagement.md).
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -18,9 +18,7 @@
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+PATCH /deviceAppManagement
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -30,45 +28,41 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тело запроса добавьте параметры в формате JSON.
+В теле запроса добавьте представление объекта [deviceAppManagement](../resources/intune_mam_deviceappmanagement.md) в формате JSON.
 
-В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceAppManagement](../resources/intune_mam_deviceappmanagement.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Пока не задокументировано.|
+|id|String|Ключ объекта.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceAppManagement](../resources/intune_mam_deviceappmanagement.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement
 Content-type: application/json
-Content-length: 282
+Content-length: 2
 
-{
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
-}
+{}
 ```
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 110
+
+{
+  "@odata.type": "#microsoft.graph.deviceAppManagement",
+  "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
+}
 ```
 
 
