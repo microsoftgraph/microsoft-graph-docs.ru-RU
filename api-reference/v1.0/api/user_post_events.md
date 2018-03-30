@@ -1,22 +1,40 @@
-# <a name="create-event"></a><span data-ttu-id="4c33a-101">Создание события</span><span class="sxs-lookup"><span data-stu-id="4c33a-101">Create Event</span></span>
+# <a name="create-event"></a><span data-ttu-id="d54bd-101">Создание события</span><span class="sxs-lookup"><span data-stu-id="d54bd-101">Create Event</span></span>
 
-<span data-ttu-id="4c33a-102">Создайте [событие](../resources/event.md) в календаре пользователя по умолчанию или указанном календаре.</span><span class="sxs-lookup"><span data-stu-id="4c33a-102">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
+<span data-ttu-id="d54bd-102">Создайте [событие](../resources/event.md) в календаре пользователя по умолчанию или указанном календаре.</span><span class="sxs-lookup"><span data-stu-id="d54bd-102">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
 
-<span data-ttu-id="4c33a-103">В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md).</span><span class="sxs-lookup"><span data-stu-id="4c33a-103">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
+<span data-ttu-id="d54bd-103">В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md).</span><span class="sxs-lookup"><span data-stu-id="d54bd-103">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
 
-<span data-ttu-id="4c33a-104">При создании события сервер отправляет приглашения всем участникам.</span><span class="sxs-lookup"><span data-stu-id="4c33a-104">When the event is created, the server send invitations to all attendees.</span></span>
+<span data-ttu-id="d54bd-104">При отправке события сервер отправляет приглашения всем участникам.</span><span class="sxs-lookup"><span data-stu-id="d54bd-104">When an event is sent, the server sends invitations to all the attendees.</span></span>
+
+<span data-ttu-id="d54bd-105">**Установка места проведения события**</span><span class="sxs-lookup"><span data-stu-id="d54bd-105">**Setting the location in an event**</span></span>
+
+<span data-ttu-id="d54bd-106">Администратор Exchange может настроить почтовый ящик и адрес электронной почты для ресурса, например конференц-зала, или оборудования, например проектора.</span><span class="sxs-lookup"><span data-stu-id="d54bd-106">An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment like a projector.</span></span> <span data-ttu-id="d54bd-107">Затем пользователи могут пригласить ресурс в качестве участников собрания.</span><span class="sxs-lookup"><span data-stu-id="d54bd-107">Users can then invite the resource as an attendee to a meeting.</span></span> <span data-ttu-id="d54bd-108">Сервер принимает или отклоняет приглашение на собрание от имени ресурса, руководствуясь расписанием его занятости.</span><span class="sxs-lookup"><span data-stu-id="d54bd-108">On behalf of the resource, the server accepts or rejects the meeting request based on the free/busy schedule of the resource.</span></span> <span data-ttu-id="d54bd-109">Если сервер принимает приглашение от имени ресурса, он создает соответствующее событие в календаре ресурса.</span><span class="sxs-lookup"><span data-stu-id="d54bd-109">If the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.</span></span> <span data-ttu-id="d54bd-110">В случае переноса собрания сервер автоматически обновляет событие в календаре ресурса.</span><span class="sxs-lookup"><span data-stu-id="d54bd-110">If the meeting is rescheduled, the server automatically updates the event in the resource's calendar.</span></span>
+
+<span data-ttu-id="d54bd-111">Еще одно преимущество настройки почтового ящика для ресурса — возможность управления расписанием для ресурса. Например, вы можете разрешить бронирование частного конференц-зала только руководителям и их представителям.</span><span class="sxs-lookup"><span data-stu-id="d54bd-111">Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives or their delegates can book a private meeting room.</span></span>
+
+<span data-ttu-id="d54bd-112">Если вы организуете событие, у которого есть место проведения:</span><span class="sxs-lookup"><span data-stu-id="d54bd-112">If you're organizing an event that involves a meeting location:</span></span>
+
+1. <span data-ttu-id="d54bd-113">Задайте соответствующее значение для свойства **location** объекта **event**.</span><span class="sxs-lookup"><span data-stu-id="d54bd-113">Set the **location** property of the **event** accordingly.</span></span> 
+2. <span data-ttu-id="d54bd-114">Задайте необязательное свойство **locationEmailAddress**, если у места проведения собрания есть адрес электронной почты.</span><span class="sxs-lookup"><span data-stu-id="d54bd-114">Set the optional **locationEmailAddress** property if the meeting location has an email address.</span></span>
+
+<span data-ttu-id="d54bd-115">Кроме того, если место проведения собрания было настроено как ресурс или для мероприятия требуется какое-либо оборудование, настроенное как ресурс:</span><span class="sxs-lookup"><span data-stu-id="d54bd-115">Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:</span></span>
+
+3. <span data-ttu-id="d54bd-116">Пригласите ресурс как объект [attendee](../resources/attendee.md).</span><span class="sxs-lookup"><span data-stu-id="d54bd-116">Invite the resource as an [attendee](../resources/attendee.md).</span></span>
+4. <span data-ttu-id="d54bd-117">Задайте для свойства **type** участника значение `resource`.</span><span class="sxs-lookup"><span data-stu-id="d54bd-117">Set the attendee **type** property as `resource`.</span></span>
+5. <span data-ttu-id="d54bd-118">Укажите свойство **emailAddress** участника в качестве электронного адреса ресурса.</span><span class="sxs-lookup"><span data-stu-id="d54bd-118">Set the attendee **emailAddress** as the resource email address.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="4c33a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4c33a-105">Permissions</span></span>
-<span data-ttu-id="4c33a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="4c33a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="4c33a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4c33a-108">Permission type</span></span>      | <span data-ttu-id="4c33a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4c33a-109">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="d54bd-119">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d54bd-119">Permissions</span></span>
+<span data-ttu-id="d54bd-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d54bd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="d54bd-122">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d54bd-122">Permission type</span></span>      | <span data-ttu-id="d54bd-123">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d54bd-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4c33a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4c33a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4c33a-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4c33a-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="4c33a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4c33a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4c33a-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4c33a-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="4c33a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4c33a-114">Application</span></span> | <span data-ttu-id="4c33a-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4c33a-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="d54bd-124">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d54bd-124">Delegated (work or school account)</span></span> | <span data-ttu-id="d54bd-125">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d54bd-125">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="d54bd-126">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d54bd-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d54bd-127">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d54bd-127">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="d54bd-128">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d54bd-128">Application</span></span> | <span data-ttu-id="d54bd-129">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d54bd-129">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4c33a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4c33a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d54bd-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d54bd-130">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events
@@ -28,24 +46,24 @@ POST /users/{id | userPrincipalName}/calendar/events
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
 ```
-## <a name="request-headers"></a><span data-ttu-id="4c33a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4c33a-117">Request headers</span></span>
-| <span data-ttu-id="4c33a-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="4c33a-118">Header</span></span>       | <span data-ttu-id="4c33a-119">Значение</span><span class="sxs-lookup"><span data-stu-id="4c33a-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="d54bd-131">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d54bd-131">Request headers</span></span>
+| <span data-ttu-id="d54bd-132">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d54bd-132">Header</span></span>       | <span data-ttu-id="d54bd-133">Значение</span><span class="sxs-lookup"><span data-stu-id="d54bd-133">Value</span></span> |
 |:-----------|:------|
-| <span data-ttu-id="4c33a-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4c33a-120">Authorization</span></span>  | <span data-ttu-id="4c33a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4c33a-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="4c33a-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4c33a-123">Content-Type</span></span>  | <span data-ttu-id="4c33a-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4c33a-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="d54bd-134">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d54bd-134">Authorization</span></span>  | <span data-ttu-id="d54bd-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d54bd-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="d54bd-137">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d54bd-137">Content-Type</span></span>  | <span data-ttu-id="d54bd-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d54bd-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4c33a-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4c33a-126">Request body</span></span>
-<span data-ttu-id="4c33a-127">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4c33a-127">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d54bd-140">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d54bd-140">Request body</span></span>
+<span data-ttu-id="d54bd-141">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d54bd-141">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-<span data-ttu-id="4c33a-128">Так как ресурс **event** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к событию при его создании.</span><span class="sxs-lookup"><span data-stu-id="4c33a-128">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
+<span data-ttu-id="d54bd-142">Так как ресурс **event** поддерживает [расширения](../../../concepts/extensibility_overview.md), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к событию при его создании.</span><span class="sxs-lookup"><span data-stu-id="d54bd-142">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4c33a-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="4c33a-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d54bd-143">Ответ</span><span class="sxs-lookup"><span data-stu-id="d54bd-143">Response</span></span>
 
-<span data-ttu-id="4c33a-130">В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="4c33a-130">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+<span data-ttu-id="d54bd-144">В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="d54bd-144">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4c33a-131">Пример</span><span class="sxs-lookup"><span data-stu-id="4c33a-131">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="4c33a-132">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="4c33a-132">Request 1</span></span>
-<span data-ttu-id="4c33a-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4c33a-133">Here is an example of the request.</span></span> <span data-ttu-id="4c33a-134">Использует заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени **start** и **end** в отклике.</span><span class="sxs-lookup"><span data-stu-id="4c33a-134">Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response should use that time zone.</span></span>
+## <a name="example"></a><span data-ttu-id="d54bd-145">Пример</span><span class="sxs-lookup"><span data-stu-id="d54bd-145">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="d54bd-146">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="d54bd-146">Request 1</span></span>
+<span data-ttu-id="d54bd-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d54bd-147">Here is an example of the request.</span></span> <span data-ttu-id="d54bd-148">Использует заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени **start** и **end** в отклике.</span><span class="sxs-lookup"><span data-stu-id="d54bd-148">It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** times in the response.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -84,9 +102,9 @@ Content-length: 600
   ]
 }
 ```
-<span data-ttu-id="4c33a-135">В теле запроса представьте объект [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4c33a-135">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
-##### <a name="response-1"></a><span data-ttu-id="4c33a-136">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="4c33a-136">Response 1</span></span>
-<span data-ttu-id="4c33a-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="4c33a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="d54bd-149">В теле запроса представьте объект [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d54bd-149">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="d54bd-150">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="d54bd-150">Response 1</span></span>
+<span data-ttu-id="d54bd-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="d54bd-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -168,8 +186,8 @@ Content-length: 2197
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="4c33a-140">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="4c33a-140">Request 2</span></span>
-<span data-ttu-id="4c33a-141">Во втором примере показано, как создать повторяющееся событие.</span><span class="sxs-lookup"><span data-stu-id="4c33a-141">The second example shows how to create a recurring event.</span></span> <span data-ttu-id="4c33a-142">Событие происходит с 10:00 до 11:00 каждый понедельник с 4 сентября 2017 г. до конца года.</span><span class="sxs-lookup"><span data-stu-id="4c33a-142">The event occurs from 10:00am to 11:00am, every Monday starting September 4, 2017, through the end of the year.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="d54bd-154">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="d54bd-154">Request 2</span></span>
+<span data-ttu-id="d54bd-155">Во втором примере показано, как создать повторяющееся событие.</span><span class="sxs-lookup"><span data-stu-id="d54bd-155">The second example shows how to create a recurring event.</span></span> <span data-ttu-id="d54bd-156">Событие происходит с 10:00 до 11:00 каждый понедельник с 4 сентября 2017 г. до конца года.</span><span class="sxs-lookup"><span data-stu-id="d54bd-156">The event occurs from 10:00am to 11:00am, every Monday starting September 4, 2017, through the end of the year.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring"
@@ -218,9 +236,9 @@ Content-type: application/json
   ]
 }
 ```
-<span data-ttu-id="4c33a-143">В теле запроса представьте объект [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4c33a-143">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
-##### <a name="response-2"></a><span data-ttu-id="4c33a-144">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="4c33a-144">Response 2</span></span>
-<span data-ttu-id="4c33a-p107">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="4c33a-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="d54bd-157">В теле запроса представьте объект [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d54bd-157">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="d54bd-158">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="d54bd-158">Response 2</span></span>
+<span data-ttu-id="d54bd-p108">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="d54bd-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -322,10 +340,10 @@ Content-type: application/json
 ```
 
 
-## <a name="see-also"></a><span data-ttu-id="4c33a-148">См. также</span><span class="sxs-lookup"><span data-stu-id="4c33a-148">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d54bd-162">См. также</span><span class="sxs-lookup"><span data-stu-id="d54bd-162">See also</span></span>
 
-- [<span data-ttu-id="4c33a-149">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="4c33a-149">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="4c33a-150">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="4c33a-150">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="d54bd-163">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="d54bd-163">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="d54bd-164">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="d54bd-164">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

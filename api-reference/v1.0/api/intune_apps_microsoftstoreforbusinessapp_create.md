@@ -1,0 +1,132 @@
+# <a name="create-microsoftstoreforbusinessapp"></a><span data-ttu-id="96072-101">Create microsoftStoreForBusinessApp</span><span class="sxs-lookup"><span data-stu-id="96072-101">Create microsoftStoreForBusinessApp</span></span>
+
+> <span data-ttu-id="96072-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="96072-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="96072-103">Создание объекта [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-103">Create a new [plannerBucket](../resources/intune_apps_microsoftstoreforbusinessapp.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="96072-104">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="96072-104">Prerequisites</span></span>
+<span data-ttu-id="96072-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="96072-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="96072-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="96072-107">Permission type</span></span>|<span data-ttu-id="96072-108">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="96072-108">Permissions (from least to most privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="96072-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="96072-109">Delegated (work or school account)</span></span>|<span data-ttu-id="96072-110">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="96072-110">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="96072-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="96072-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="96072-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="96072-112">Not supported.</span></span>|
+|<span data-ttu-id="96072-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="96072-113">Application</span></span>|<span data-ttu-id="96072-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="96072-114">Not supported.</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="96072-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="96072-115">HTTP Request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceAppManagement/mobileApps
+```
+
+## <a name="request-headers"></a><span data-ttu-id="96072-116">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="96072-116">Request headers</span></span>
+|<span data-ttu-id="96072-117">Заголовок</span><span class="sxs-lookup"><span data-stu-id="96072-117">Header</span></span>|<span data-ttu-id="96072-118">Значение</span><span class="sxs-lookup"><span data-stu-id="96072-118">Value</span></span>|
+|:---|:---|
+|<span data-ttu-id="96072-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="96072-119">Authorization</span></span>|<span data-ttu-id="96072-120">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="96072-120">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="96072-121">Accept</span><span class="sxs-lookup"><span data-stu-id="96072-121">Accept</span></span>|<span data-ttu-id="96072-122">application/json</span><span class="sxs-lookup"><span data-stu-id="96072-122">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="96072-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="96072-123">Request body</span></span>
+<span data-ttu-id="96072-124">В тексте запроса добавьте представление объекта microsoftStoreForBusinessApp в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="96072-124">In the request body, supply a JSON representation of the schemaExtension object.</span></span>
+
+<span data-ttu-id="96072-125">В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта microsoftStoreForBusinessApp.</span><span class="sxs-lookup"><span data-stu-id="96072-125">The following table shows the properties that are required when you create a user.</span></span>
+
+|<span data-ttu-id="96072-126">Свойство</span><span class="sxs-lookup"><span data-stu-id="96072-126">Property</span></span>|<span data-ttu-id="96072-127">Тип</span><span class="sxs-lookup"><span data-stu-id="96072-127">Type</span></span>|<span data-ttu-id="96072-128">Описание</span><span class="sxs-lookup"><span data-stu-id="96072-128">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="96072-129">id</span><span class="sxs-lookup"><span data-stu-id="96072-129">id</span></span>|<span data-ttu-id="96072-130">String</span><span class="sxs-lookup"><span data-stu-id="96072-130">String</span></span>|<span data-ttu-id="96072-131">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="96072-131">Key of the setting.</span></span> <span data-ttu-id="96072-132">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-132">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-133">displayName</span><span class="sxs-lookup"><span data-stu-id="96072-133">displayName</span></span>|<span data-ttu-id="96072-134">String</span><span class="sxs-lookup"><span data-stu-id="96072-134">String</span></span>|<span data-ttu-id="96072-135">Название приложения, которое предоставил или импортировал администратор.</span><span class="sxs-lookup"><span data-stu-id="96072-135">The admin provided or imported title of the app.</span></span> <span data-ttu-id="96072-136">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-136">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-137">description</span><span class="sxs-lookup"><span data-stu-id="96072-137">description</span></span>|<span data-ttu-id="96072-138">String</span><span class="sxs-lookup"><span data-stu-id="96072-138">String</span></span>|<span data-ttu-id="96072-139">Описание приложения.</span><span class="sxs-lookup"><span data-stu-id="96072-139">The description of the app.</span></span> <span data-ttu-id="96072-140">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-140">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-141">publisher</span><span class="sxs-lookup"><span data-stu-id="96072-141">Publisher</span></span>|<span data-ttu-id="96072-142">String</span><span class="sxs-lookup"><span data-stu-id="96072-142">String</span></span>|<span data-ttu-id="96072-143">Издатель приложения.</span><span class="sxs-lookup"><span data-stu-id="96072-143">The name of the app.</span></span> <span data-ttu-id="96072-144">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-144">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-145">largeIcon</span><span class="sxs-lookup"><span data-stu-id="96072-145">largeIcon</span></span>|[<span data-ttu-id="96072-146">mimeContent</span><span class="sxs-lookup"><span data-stu-id="96072-146">mimeContent</span></span>](../resources/intune_apps_mimecontent.md)|<span data-ttu-id="96072-147">Большой значок, который отображается в сведениях о приложении и используется для отправки значка.</span><span class="sxs-lookup"><span data-stu-id="96072-147">The large icon, to be displayed in the app details and used for upload of the icon.</span></span> <span data-ttu-id="96072-148">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-148">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-149">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="96072-149">createdDateTime</span></span>|<span data-ttu-id="96072-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="96072-150">DateTimeOffset</span></span>|<span data-ttu-id="96072-151">Дата и время создания приложения.</span><span class="sxs-lookup"><span data-stu-id="96072-151">The date and time the group was created.</span></span> <span data-ttu-id="96072-152">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-152">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-153">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="96072-153">lastModifiedDateTime</span></span>|<span data-ttu-id="96072-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="96072-154">DateTimeOffset</span></span>|<span data-ttu-id="96072-155">Дата и время последнего изменения приложения.</span><span class="sxs-lookup"><span data-stu-id="96072-155">The date and time when the attachment was last modified.</span></span> <span data-ttu-id="96072-156">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-156">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-157">isFeatured</span><span class="sxs-lookup"><span data-stu-id="96072-157">isFeatured</span></span>|<span data-ttu-id="96072-158">Boolean</span><span class="sxs-lookup"><span data-stu-id="96072-158">Boolean</span></span>|<span data-ttu-id="96072-159">Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-159">The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-160">privacyInformationUrl</span><span class="sxs-lookup"><span data-stu-id="96072-160">privacyInformationUrl</span></span>|<span data-ttu-id="96072-161">String</span><span class="sxs-lookup"><span data-stu-id="96072-161">String</span></span>|<span data-ttu-id="96072-162">URL-адрес заявления о конфиденциальности.</span><span class="sxs-lookup"><span data-stu-id="96072-162">The privacy statement Url.</span></span> <span data-ttu-id="96072-163">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-163">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-164">informationUrl</span><span class="sxs-lookup"><span data-stu-id="96072-164">informationUrl</span></span>|<span data-ttu-id="96072-165">String</span><span class="sxs-lookup"><span data-stu-id="96072-165">String</span></span>|<span data-ttu-id="96072-166">URL-адрес страницы с дополнительными сведениями.</span><span class="sxs-lookup"><span data-stu-id="96072-166">The more information Url.</span></span> <span data-ttu-id="96072-167">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-167">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-168">owner</span><span class="sxs-lookup"><span data-stu-id="96072-168">owner</span></span>|<span data-ttu-id="96072-169">String</span><span class="sxs-lookup"><span data-stu-id="96072-169">String</span></span>|<span data-ttu-id="96072-170">Владелец приложения.</span><span class="sxs-lookup"><span data-stu-id="96072-170">The owner of the app.</span></span> <span data-ttu-id="96072-171">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-171">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-172">developer</span><span class="sxs-lookup"><span data-stu-id="96072-172">developer</span></span>|<span data-ttu-id="96072-173">String</span><span class="sxs-lookup"><span data-stu-id="96072-173">String</span></span>|<span data-ttu-id="96072-174">Разработчик приложения.</span><span class="sxs-lookup"><span data-stu-id="96072-174">The name of the app.</span></span> <span data-ttu-id="96072-175">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-175">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-176">notes</span><span class="sxs-lookup"><span data-stu-id="96072-176">Notes</span></span>|<span data-ttu-id="96072-177">String</span><span class="sxs-lookup"><span data-stu-id="96072-177">String</span></span>|<span data-ttu-id="96072-178">Примечания к приложению.</span><span class="sxs-lookup"><span data-stu-id="96072-178">Notes for the app.</span></span> <span data-ttu-id="96072-179">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).</span><span class="sxs-lookup"><span data-stu-id="96072-179">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)</span></span>|
+|<span data-ttu-id="96072-180">publishingState</span><span class="sxs-lookup"><span data-stu-id="96072-180">publishingState</span></span>|<span data-ttu-id="96072-181">String</span><span class="sxs-lookup"><span data-stu-id="96072-181">String</span></span>|<span data-ttu-id="96072-182">Состояние публикации приложения.</span><span class="sxs-lookup"><span data-stu-id="96072-182">The publishing state for the app.</span></span> <span data-ttu-id="96072-183">Приложение невозможно назначить, если оно не опубликовано.</span><span class="sxs-lookup"><span data-stu-id="96072-183">The app cannot be assigned unless the app is published.</span></span> <span data-ttu-id="96072-184">Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md). Допустимые значения: `notPublished`, `processing`, `published`.</span><span class="sxs-lookup"><span data-stu-id="96072-184">Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.</span></span>|
+|<span data-ttu-id="96072-185">usedLicenseCount</span><span class="sxs-lookup"><span data-stu-id="96072-185">usedLicenseCount</span></span>|<span data-ttu-id="96072-186">Int32</span><span class="sxs-lookup"><span data-stu-id="96072-186">Int32</span></span>|<span data-ttu-id="96072-187">Количество используемых лицензий Microsoft Store для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="96072-187">The number of Microsoft Store for Business licenses in use.</span></span>|
+|<span data-ttu-id="96072-188">totalLicenseCount</span><span class="sxs-lookup"><span data-stu-id="96072-188">totalLicenseCount</span></span>|<span data-ttu-id="96072-189">Int32</span><span class="sxs-lookup"><span data-stu-id="96072-189">Int32</span></span>|<span data-ttu-id="96072-190">Общее количество лицензий Microsoft Store для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="96072-190">The total number of Microsoft Store for Business licenses.</span></span>|
+|<span data-ttu-id="96072-191">productKey</span><span class="sxs-lookup"><span data-stu-id="96072-191">productKey</span></span>|<span data-ttu-id="96072-192">String</span><span class="sxs-lookup"><span data-stu-id="96072-192">String</span></span>|<span data-ttu-id="96072-193">Ключ продукта для приложения.</span><span class="sxs-lookup"><span data-stu-id="96072-193">The app product key</span></span>|
+|<span data-ttu-id="96072-194">licenseType</span><span class="sxs-lookup"><span data-stu-id="96072-194">licenseType</span></span>|<span data-ttu-id="96072-195">String</span><span class="sxs-lookup"><span data-stu-id="96072-195">String</span></span>|<span data-ttu-id="96072-196">Тип лицензии на приложение. Возможные значения: `offline`, `online`.</span><span class="sxs-lookup"><span data-stu-id="96072-196">The app license type Possible values are: `offline`, `online`.</span></span>|
+|<span data-ttu-id="96072-197">packageIdentityName</span><span class="sxs-lookup"><span data-stu-id="96072-197">packageIdentityName</span></span>|<span data-ttu-id="96072-198">String</span><span class="sxs-lookup"><span data-stu-id="96072-198">String</span></span>|<span data-ttu-id="96072-199">Идентификатор пакета приложения.</span><span class="sxs-lookup"><span data-stu-id="96072-199">The app package identifier</span></span>|
+
+
+
+## <a name="response"></a><span data-ttu-id="96072-200">Ответ</span><span class="sxs-lookup"><span data-stu-id="96072-200">Response</span></span>
+<span data-ttu-id="96072-201">В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [microsoftStoreForBusinessApp](../resources/intune_apps_microsoftstoreforbusinessapp.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="96072-201">If successful, this method returns a `201 Created` response code and a [section](../resources/intune_apps_microsoftstoreforbusinessapp.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="96072-202">Пример</span><span class="sxs-lookup"><span data-stu-id="96072-202">Example</span></span>
+### <a name="request"></a><span data-ttu-id="96072-203">Запрос</span><span class="sxs-lookup"><span data-stu-id="96072-203">Request</span></span>
+<span data-ttu-id="96072-204">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="96072-204">Here is an example of the request.</span></span>
+``` http
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
+Content-type: application/json
+Content-length: 833
+
+{
+  "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "publisher": "Publisher value",
+  "largeIcon": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "Type value",
+    "value": "dmFsdWU="
+  },
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "isFeatured": true,
+  "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
+  "informationUrl": "https://example.com/informationUrl/",
+  "owner": "Owner value",
+  "developer": "Developer value",
+  "notes": "Notes value",
+  "publishingState": "processing",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1,
+  "productKey": "Product Key value",
+  "licenseType": "online",
+  "packageIdentityName": "Package Identity Name value"
+}
+```
+
+### <a name="response"></a><span data-ttu-id="96072-205">Ответ</span><span class="sxs-lookup"><span data-stu-id="96072-205">Response</span></span>
+<span data-ttu-id="96072-p115">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="96072-p115">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 941
+
+{
+  "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
+  "id": "f33358bc-58bc-f333-bc58-33f3bc5833f3",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "publisher": "Publisher value",
+  "largeIcon": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "Type value",
+    "value": "dmFsdWU="
+  },
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "isFeatured": true,
+  "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
+  "informationUrl": "https://example.com/informationUrl/",
+  "owner": "Owner value",
+  "developer": "Developer value",
+  "notes": "Notes value",
+  "publishingState": "processing",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1,
+  "productKey": "Product Key value",
+  "licenseType": "online",
+  "packageIdentityName": "Package Identity Name value"
+}
+```
+
+
+
