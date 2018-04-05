@@ -1,16 +1,14 @@
-# <a name="list-enrollmenttroubleshootingevents"></a>Список объектов enrollmentTroubleshootingEvent
-
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+# <a name="list-iosmobileappconfigurations"></a>Список iosMobileAppConfigurations
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Список свойств и связей объектов [enrollmentTroubleshootingEvent](../resources/intune_troubleshooting_enrollmenttroubleshootingevent.md).
-## <a name="prerequisites"></a>Предварительные условия
+Список свойств и связей объектов [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md).
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -20,7 +18,7 @@
 }
 -->
 ``` http
-GET /deviceManagement/troubleshootingEvents
+GET /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -32,14 +30,14 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [enrollmentTroubleshootingEvent](../resources/intune_troubleshooting_enrollmenttroubleshootingevent.md) в теле отклика.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations
 ```
 
 ### <a name="response"></a>Ответ
@@ -47,23 +45,30 @@ GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 639
+Content-Length: 815
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
-      "id": "c4a623f5-23f5-c4a6-f523-a6c4f523a6c4",
-      "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-      "correlationId": "Correlation Id value",
-      "managedDeviceIdentifier": "Managed Device Identifier value",
-      "operatingSystem": "Operating System value",
-      "osVersion": "Os Version value",
-      "userId": "User Id value",
-      "deviceId": "Device Id value",
-      "enrollmentType": "userEnrollment",
-      "failureCategory": "authentication",
-      "failureReason": "Failure Reason value"
+      "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+      "id": "b2c33191-3191-b2c3-9131-c3b29131c3b2",
+      "targetedMobileApps": [
+        "Targeted Mobile Apps value"
+      ],
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "description": "Description value",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "displayName": "Display Name value",
+      "version": 7,
+      "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
+      "settings": [
+        {
+          "@odata.type": "microsoft.graph.appConfigurationSettingItem",
+          "appConfigKey": "App Config Key value",
+          "appConfigKeyType": "integerType",
+          "appConfigKeyValue": "App Config Key Value value"
+        }
+      ]
     }
   ]
 }

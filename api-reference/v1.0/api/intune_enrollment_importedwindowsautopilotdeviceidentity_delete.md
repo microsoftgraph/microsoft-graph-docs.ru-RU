@@ -1,16 +1,14 @@
-# <a name="update-user"></a>Обновление пользователя
-
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в рабочих приложениях не поддерживается.
+# <a name="delete-importedwindowsautopilotdeviceidentity"></a>Удаление importedWindowsAutopilotDeviceIdentity
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Обновление свойств объекта [user](../resources/intune_troubleshooting_user.md).
-## <a name="prerequisites"></a>Предварительные условия
+Удаляет [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md).
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -20,7 +18,7 @@
 }
 -->
 ``` http
-PATCH /users/{usersId}
+DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -29,42 +27,23 @@ PATCH /users/{usersId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса добавьте представление объекта [user](../resources/intune_troubleshooting_user.md) в формате JSON.
-
-В приведенной ниже таблице указаны свойства, необходимые при создании объекта [user](../resources/intune_troubleshooting_user.md).
-
-|Свойство|Тип|Описание|
-|:---|:---|:---|
-|id|String|Уникальный идентификатор для пользователя.|
-
-
+## <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [user](../resources/intune_troubleshooting_user.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/beta/users/{usersId}
-Content-type: application/json
-Content-length: 2
-
-{}
+DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 95
-
-{
-  "@odata.type": "#microsoft.graph.user",
-  "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
-}
+HTTP/1.1 204 No Content
 ```
 
 
