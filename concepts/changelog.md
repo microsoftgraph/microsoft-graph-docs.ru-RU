@@ -6,6 +6,12 @@
 
 ## <a name="march-2018"></a>Март 2018 г.
 
+### <a name="excel-apis"></a>API Excel
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Изменение|1.0|Добавлено свойство **legacyId** для объекта [Excel Table](../api-reference/v1.0/resources/table.md). Оно будет содержать числовой идентификатор (строковый тип данных), который будет оставаться постоянным для определенной таблицы Excel. Это свойство входит в состав дополнительных метаданных, если приложение использует устаревший идентификатор из старых клиентских приложений Excel. Примечание. Свойства `id` и `legacyId` должны интерпретироваться как непрозрачные строковые значения и не должны преобразовываться в другой тип в приложении. |
+
+
 ### <a name="reports-apis"></a>API отчетов
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
@@ -679,12 +685,12 @@
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета        | Добавлена сущность [groupLifecyclePolicy](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/grouplifecyclepolicy). |
+| Дополнение        | Бета-версия        | Добавлена сущность [groupLifecyclePolicy](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/grouplifecyclepolicy). |
 | Дополнение        | Бета        | Добавлены следующие API для политики жизненного цикла группы, а именно для: [создания](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [перечисления](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [получения](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [обновления](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [удаления](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [добавления группы](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [удаления группы](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) и [возобновления группы](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
 | Дополнение        | Бета        | Добавлена функция [List groupLifecylePolicies](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) для объекта [group](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/group). |
 
 ### <a name="intune-apis"></a>API Intune
-| Тип изменения | Version | Описание                              |
+| Тип изменения | Версия | Описание                              |
 | :---------- | :------ | :--------------------------------------- |
 | Дополнение    | Бета-версия    | Добавлен новый объект:<br/>[windowsPrivacyDataAccessControlItem](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem)<br/> |
 | Дополнение    | Бета    | Добавлены новые сложные типы:<br/>[configurationManagerClientEnabledFeatures](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_devices_configurationmanagerclientenabledfeatures)<br/>[windowsDefenderScanActionResult](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult)<br/> |
