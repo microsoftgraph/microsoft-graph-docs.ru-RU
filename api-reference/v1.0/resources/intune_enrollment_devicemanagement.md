@@ -12,12 +12,15 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта.|
+|id|String|GUID объекта.|
 
 ## <a name="relationships"></a>Связи
-Нет
+|Связь|Тип|Описание|
+|:---|:---|:---|
+|importedWindowsAutopilotDeviceIdentities|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)|Коллекция импортированных устройств Windows AutoPilot.|
+
 ## <a name="json-representation"></a>Представление JSON
-Ниже этот ресурс представлен в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
