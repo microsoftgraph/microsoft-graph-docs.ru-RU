@@ -1,16 +1,14 @@
-# <a name="delete-enrollmenttroubleshootingevent"></a>Удаление объекта enrollmentTroubleshootingEvent
-
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+# <a name="synclicenses-action"></a>Действие syncLicenses
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Удаляет объект [enrollmentTroubleshootingEvent](../resources/intune_troubleshooting_enrollmenttroubleshootingevent.md).
-## <a name="prerequisites"></a>Необходимые компоненты
+Синхронизирует лицензии, связанные с конкретным appleVolumePurchaseProgramToken
+## <a name="prerequisites"></a>Обязательные требования
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -20,7 +18,7 @@
 }
 -->
 ``` http
-DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -33,19 +31,39 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении данное действие возвращает `200 OK`код отклика и [vppToken](../resources/intune_onboarding_vpptoken.md)в форме для обратной связи.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ```
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 619
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.vppToken",
+    "id": "9ceb2f92-2f92-9ceb-922f-eb9c922feb9c",
+    "organizationName": "Organization Name value",
+    "vppTokenAccountType": "education",
+    "appleId": "Apple Id value",
+    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+    "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+    "token": "Token value",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "state": "valid",
+    "lastSyncStatus": "inProgress",
+    "automaticallyUpdateApps": true,
+    "countryOrRegion": "Country Or Region value"
+  }
+}
 ```
 
 
