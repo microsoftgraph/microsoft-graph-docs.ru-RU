@@ -18,16 +18,16 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|displayName|String|Имя электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|description|String|Описание. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|publisher|String|Издатель. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|displayName|String|Имя электронной книги. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|description|String|Описание. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|publisher|String|Издатель. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Обложка книги. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания электронной книги. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги. Унаследован от объекта [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
 |vppTokenId|Guid|Идентификатор токена VPP.|
 |appleId|String|Идентификатор Apple ID, связанный с токеном VPP.|
 |vppOrganizationName|String|Название организации для токена VPP.|
