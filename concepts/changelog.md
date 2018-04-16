@@ -4,6 +4,60 @@
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known_issues.md).
 
+## <a name="april-2018"></a>Апрель 2018 г.
+
+### <a name="reports-apis"></a>API отчетов
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета| Добавлена поддержка делегированного доступа. |
+|Добавление|1.0| Добавлена поддержка делегированного доступа. |
+
+### <a name="directory-apis"></a>API каталогов
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | 1.0        | Добавлен сложный тип **privacyProfile** для объекта [organization](../api-reference/v1.0/resources/organization.md). |
+
+### <a name="outlook-calendar"></a>Календарь Outlook
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение        | 1.0          | Добавлено свойство **locations** для объекта [event](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/event), позволяющее организовать событие, в котором могут участвовать пользователи из нескольких мест. |
+| Дополнение        | 1.0          | Добавлено свойство **locationType** для сложного типа [location](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/location). |
+| Дополнение        | 1.0          | Добавлены свойства **uniqueId** и **uniqueIdType** для сложного типа [location](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/location). В настоящее время эти свойства предназначены только для внутреннего использования. |
+
+
+### <a name="outlook-contacts"></a>Контакты Outlook
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | 1.0          | Добавлено свойство **flag** для объекта [contact](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/contact). Добавлен общий сложный тип [followupFlag](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/followupflag).|
+
+
+### <a name="outlook-mail"></a>Почта Outlook
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | 1.0          | Добавлено свойство **flag** для объекта [message](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/message). Добавлен общий сложный тип [followupFlag](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/followupflag).|
+| Добавление        | 1.0        | Добавлено свойство **internetMessageHeaders** для объекта [message](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/message). |
+| Дополнение        | 1.0        | Добавлен сложный тип [internetMessageHeader](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/internetmessageheader). |
+| Дополнение        | 1.0        | Добавлено свойство навигации **messageRules** для объекта [mailFolder](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/mailfolder). **messageRules** — это набор экземпляров [messageRule](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/messagerule). |
+| Дополнение        | 1.0        | Добавлены объект [messageRule](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/messagerule) и сложные типы [messageRuleActions](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/messagerulepredicates) и [sizeRange](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/sizerange). |
+| Дополнение        | 1.0        | Добавлены следующие операции CRUD для правил обработки сообщений: [create](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/messagerule_get), [update](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/messagerule_update) и [delete](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/messagerule_delete). |
+
+
+### <a name="outlook-user-choices"></a>Настройки пользователей Outlook
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | 1.0        | Добавлено новое свойство навигации **masterCategories** для объекта [outlookUser](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/outlookuser). **masterCategories** — это коллекция объектов [outlookCategory](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/outlookCategory). |
+| Дополнение        | 1.0        | Добавлен объект [outlookCategory](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/outlookCategory). |
+| Дополнение        | 1.0        | Добавлены следующие операции CRUD для объекта [outlookCategory](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/outlookCategory): [create](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/outlookuser_post_mastercategories), [get](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/outlookcategory_get), [update](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/outlookcategory_update) и [delete](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/outlookcategory_delete). |
+| Дополнение        | 1.0        | Добавлена новая функция [supportedLanguages](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/outlookuser_supportedlanguages) для объекта [outlookUser](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/outlookuser). |
+| Дополнение        | 1.0        | Добавлена новая функция [supportedTimeZones](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/outlookuser_supportedtimezones) для объекта [outlookUser](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/outlookuser). |
+|Добавление | 1.0 | Добавлено новое свойство **workingHours** для объекта [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md). Сведения о поддерживаемых вариантах использования см. в описании [типа ресурса workingHours](../api-reference/v1.0/resources/workinghours.md).|
+|Дополнение | 1.0 | Добавлены следующие сложные типы: <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
+
 ## <a name="march-2018"></a>Март 2018 г.
 
 ### <a name="activityfeedservice-apis"></a>Интерфейсы API ActivityFeedService
@@ -24,16 +78,20 @@
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета-версия        | К объекту [user](../api-reference/beta/resources/user.md) добавлен сложный тип **onPremisesExtensionAttributes**. Он включает локальные атрибуты расширений 1–15. |
+| Дополнение        | Бета-версия        | Добавлен сложный тип **onPremisesExtensionAttributes** для объекта [user](../api-reference/beta/resources/user.md). Он содержит локальные атрибуты расширения AD 1–15. |
+| Добавление        | Бета        | Добавлен сложный тип **privacyProfile** для объекта [organization](../api-reference/beta/resources/organization.md). |
+| Добавление        | 1.0        | Добавлена поддержка [восстановления и окончательного удаления пользователей и групп](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/directory). |
 
 ### <a name="excel-apis"></a>API Excel
-|Тип изменения|Версия|Описание|
-|:---|:---|:---|
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |Изменение|1.0|Добавлено свойство **legacyId** для объекта [Excel Table](../api-reference/v1.0/resources/table.md). Оно будет содержать числовой идентификатор (строковый тип данных), который будет оставаться постоянным для определенной таблицы Excel. Это свойство входит в состав дополнительных метаданных, если приложение использует устаревший идентификатор из старых клиентских приложений Excel. Примечание. Свойства `id` и `legacyId` должны интерпретироваться как непрозрачные строковые значения и не должны преобразовываться в другой тип в приложении. |
 
 ### <a name="reports-apis"></a>API отчетов
-|Тип изменения|Версия|Описание|
-|:---|:---|:---|
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |Дополнение|Бета-версия|Добавлено свойство **siteId** для объекта [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md).|
 
 ### <a name="group-lifecycle-policy"></a>Политика жизненного цикла группы
