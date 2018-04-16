@@ -49,11 +49,13 @@
 |changeKey|String|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
+|flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
 |from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
 |id|String||
 |importance|String| Важность сообщения: `low`, `normal`, `high`.|
 |inferenceClassification|String| Возможные значения: `focused`, `other`.|
+|internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, установленных по [RFC 5322](https://www.ietf.org/rfc/rfc5322.txt), которые содержат информацию о маршруте прохождения сообщения. Только для чтения.|
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
@@ -106,11 +108,13 @@
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "DateTimeOffset",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,

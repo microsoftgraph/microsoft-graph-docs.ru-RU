@@ -44,16 +44,17 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |body|[ItemBody](../resources/itembody.md)|Текст сообщения, связанного с событием.|
 |categories|String|Категории, связанные с событием.|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время завершения события.<br/><br/>По умолчанию время завершения указано в формате UTC. Можно дополнительно указать часовой пояс в элементе EndTimeZone, задать время завершения согласно этому часовому поясу и UTC-смещение. Обратите внимание, что если вы используете EndTimeZone, следует также указать значение StartTimeZone.<br/><br/>Пример указания даты (25 февраля 2015 г., 21:34 по тихоокеанскому поясному времени): "2015-02-25T21:34:00-08:00". |
-|importance|String|Важность события. Возможные значения: `Low`, `Normal`, `High`.|
+|importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
 |location|[Location](../resources/location.md)|Место проведения события.|
+|locations|Коллекция [location](../resources/location.md)|Места проведения мероприятия или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
 |onlineMeetingUrl|String|URL-адрес для собрания по сети.|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения события.|
 |reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
 |responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
-|sensitivity|String| Возможные значения: `Normal`, `Personal`, `Private`, `Confidential`.|
-|showAs|String|Отображаемое состояние. Возможные значения: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
+|showAs|String|Отображаемое состояние. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[DateTimeTimeZone](../resources/datetimetimezone.md)|Время начала события. <br/><br/>По умолчанию время начала указано в формате UTC. Можно дополнительно указать часовой пояс в элементе StartTimeZone, задать время завершения согласно этому часовому поясу и UTC-смещение. Обратите внимание, что если вы используете StartTimeZone, следует также указать значение EndTimeZone.<br/><br/>Пример указания даты (25 февраля 2015 г., 19:34 по тихоокеанскому поясному времени): "2015-02-25T19:34:00-08:00".  |
 |subject|String|Текст в строке темы сообщения о событии.|
 
@@ -121,10 +122,9 @@ Content-length: 285
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
-- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](../../../concepts/extensibility_open_users.md)
-<!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
--->
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](../../../concepts/extensibility_open_users.md)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](../../../concepts/extensibility_schema_groups.md)
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

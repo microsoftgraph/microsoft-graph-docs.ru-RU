@@ -85,8 +85,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {токен}. Обязательный.  |
-| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
-| Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательный параметр. |
+| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательное свойство. |
+| Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
@@ -95,7 +95,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 
 В случае успеха этот метод возвратит код отклика `200 OK` и объект [event](../resources/event.md) в теле отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+##### <a name="request-1"></a>Запрос 1
 Первый пример возвращает указанное событие. Он указывает следующее:
 
 - Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени. 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=su
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response-1"></a>Ответ 1
 
 Ниже приведен пример отклика. Свойство **body** возвращается в формате HTML по умолчанию.
 
@@ -145,9 +145,19 @@ Content-length: 1928
         "dateTime":"2017-04-21T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
-    "location":{
-        "displayName":"Assembly Hall"
+    "location": {
+        "displayName": "Assembly Hall",
+        "locationType": "default",
+        "uniqueId": "Assembly Hall",
+        "uniqueIdType": "private"
     },
+    "locations": [
+        {
+            "displayName": "Assembly Hall",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
     "attendees":[
         {
             "type":"required",
@@ -181,13 +191,130 @@ Content-length: 1928
 }
 ```
 
+
+##### <a name="request-2"></a>Запрос 2
+
+Во втором примере показано получение события с указанием нескольких мест. В запросе указан параметр `$select` для возврата отдельных свойств. 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_event_multiple_locations"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+```
+##### <a name="response-2"></a>Ответ 2
+Ниже приведен пример ответа. Свойство **locations** включает информацию о трех местах, для которых организовано событие. 
+
+Так как в запросе не указан заголовок `Prefer: outlook.timezone`, свойства **start** и **end** отображаются в стандартном часовом поясе UTC. 
+
+Тело события возвращается в стандартном формате HTML.  
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_multiple_locations",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject":"Plan summer company picnic",
+  "bodyPreview":"Let's kick-start this event planning!",
+  "body":{
+    "contentType":"html",
+    "content":"<html>\r\n<head>\r\n</head>\r\n<body>\r\nLet's kick-start this event planning!\r\n</body>\r\n</html>\r\n"
+  },
+  "start":{
+    "dateTime":"2017-08-30T11:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "end":{
+    "dateTime":"2017-08-30T12:00:00.0000000",
+    "timeZone":"UTC"
+  },
+  "location":{
+    "displayName":"Conf Room 3; Fourth Coffee; Home Office",
+    "locationType":"default",
+    "uniqueId":"Conf Room 3; Fourth Coffee; Home Office",
+    "uniqueIdType":"private"
+  },
+  "locations":[
+    {
+      "displayName":"Conf Room 3",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    },
+    {
+      "displayName":"Fourth Coffee",
+      "locationType":"default",
+      "uniqueId":"Fourth Coffee",
+      "uniqueIdType":"private",
+      "address":{
+        "type":"unknown",
+        "street":"4567 Main St",
+        "city":"Redmond",
+        "state":"WA",
+        "countryOrRegion":"US",
+        "postalCode":"32008"
+      },
+      "coordinates":{
+        "latitude":47.672,
+        "longitude":-102.103
+      }
+    },
+    {
+      "displayName":"Home Office",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    }
+  ],
+  "attendees":[
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Dana Swope",
+        "address":"DanaS@contoso.onmicrosoft.com"
+      }
+    },
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Alex Wilber",
+        "address":"AlexW@contoso.onmicrosoft.com"
+      }
+    }
+  ],
+  "organizer":{
+    "emailAddress":{
+      "name":"Adele Vance",
+      "address":"AdeleV@contoso.onmicrosoft.com"
+    }
+  }
+}
+```
+
+
+
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](../../../concepts/extensibility_overview.md)
-- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](../../../concepts/extensibility_open_users.md)
-<!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
--->
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](../../../concepts/extensibility_open_users.md)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

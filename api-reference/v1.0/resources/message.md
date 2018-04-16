@@ -51,11 +51,13 @@
 |changeKey|String|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
+|flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
 |from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении. Это свойство не включает встроенные вложения, поэтому, если сообщение содержит только встроенные вложения, это свойство имеет значение false. Чтобы проверить наличие встроенных вложений, проанализируйте свойство **body** на наличие атрибута `src`, например `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Уникальный идентификатор сообщения (обратите внимание, что это значение может меняться при перемещении и изменении сообщения).|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | Классификация сообщения для пользователя на основании подразумеваемой релевантности или важности либо явного переопределения. Возможные значения: `focused` или `other`. |
+|inferenceClassification | String | Классификация сообщения для пользователя на основе подразумеваемой релевантности или важности либо явного переопределения. Возможные значения: `focused` или `other`. |
+|internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, установленных по [RFC 5322](https://www.ietf.org/rfc/rfc5322.txt), которые содержат информацию о маршруте прохождения сообщения. Только для чтения.|
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
@@ -120,11 +122,13 @@ Prefer: outlook.allow-unsafe-html
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "String (timestamp)",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
