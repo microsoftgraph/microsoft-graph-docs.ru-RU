@@ -6,10 +6,10 @@
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается.    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -32,31 +32,15 @@ PATCH /organization
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedPlans|AssignedPlan|Коллекция планов обслуживания, сопоставленных с клиентом. **Примечание.** Значение null не допускается.            |
-|city|String|            |
-|companyLastDirSyncTime|DateTimeOffset|Время и дата последней синхронизации клиента с локальным каталогом.|
-|country|String|            |
-|countryLetterCode|String|            |
-|deletionTimestamp|DateTimeOffset||
-|dirSyncEnabled|Boolean|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию).|
-|displayName|String|Отображаемое имя для клиента.|
-|marketingNotificationEmails|String|                                        **Примечание.** Значение null не допускается.            |
-|objectType|String|Строка, которая определяет тип объекта. Для клиентов всегда задается значение Company. Наследуется от [directoryObject](../resources/directoryobject.md).|
-|postalCode|String|            |
-|preferredLanguage|String|            |
-|provisionedPlans|ProvisionedPlan|                                        **Примечание.** Значение null не допускается.            |
-|provisioningErrors|ProvisioningError|                                        **Примечание.** Значение null не допускается.            |
-|securityComplianceNotificationMails|String||
-|securityComplianceNotificationPhones|String||
-|state|String|            |
-|street|String|            |
-|technicalNotificationMails|String|                                        **Примечание.** Значение null не допускается.            |
-|telephoneNumber|String|            |
-|verifiedDomains|VerifiedDomain|Коллекция доменов, сопоставленных с этим клиентом. **Примечание.** Значение null не допускается.            |
+|marketingNotificationEmails|Коллекция String|                                        **Примечание.** Значение NULL не допускается.            |
+|privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).            |
+|securityComplianceNotificationMails|Коллекция String||
+|securityComplianceNotificationPhones|Коллекция String||
+|technicalNotificationMails|Коллекция String| 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвратит код отклика `200 OK` и обновленный объект [organization](../resources/organization.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 
@@ -75,21 +59,15 @@ Content-type: application/json
 Content-length: 411
 
 {
-  "assignedPlans": [
+  "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "privacyProfile" :
     {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
+      "contactEmail":"alice@contoso.com",
+      "statementUrl":"https://contoso.com/privacyStatement"
+    },
+  "securityComplianceNotificationMails" : ["security@contoso.com"],
+  "securityComplianceNotificationPhones" : ["(123) 456-7890"],
+  "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
 
@@ -106,27 +84,7 @@ Content-length: 411
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 411
-
-{
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <br/>

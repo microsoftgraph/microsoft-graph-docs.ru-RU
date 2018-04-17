@@ -1,72 +1,65 @@
-# <a name="get-organization"></a>Получение организации
+# <a name="get-outlook-category"></a>Получение категории Outlook
 
-Получение свойств и связей объекта organization, для которого выполнена проверка подлинности.
+
+Получение свойств и отношений указанного объекта [outlookCategory](../resources/outlookCategory.md).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, Directory.Read.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | MailboxSettings.Read    |
+|Делегированные (личная учетная запись Майкрософт) | MailboxSettings.Read    |
+|Для приложений | MailboxSettings.Read |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /organization
-
+GET /me/outlook/masterCategories/{id}
+GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/ru-RU/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
+
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя      |Описание|
+|:----------|:----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [organization](../resources/organization.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [outlookCategory](../resources/outlookCategory.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "get_organization"
+  "name": "get_outlookcategory"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/organization
+GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories('de912e4d-c790-4da9-949c-ccd933aaa0f7')
 ```
 ##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.organization"
+  "@odata.type": "microsoft.graph.outlookCategory",
+  "isCollection": false
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 411
+Content-length: 249
 
 {
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+  "id":"de912e4d-c790-4da9-949c-ccd933aaa0f7",
+  "displayName":"Yellow category",
+  "color":"preset3"
 }
 ```
 
@@ -74,7 +67,7 @@ Content-length: 411
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get organization",
+  "description": "Get outlookCategory",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

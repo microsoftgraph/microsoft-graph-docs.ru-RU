@@ -1,6 +1,6 @@
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
-Получение объекта [mailboxSettings](../resources/mailboxsettings.md) пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при получении их почты), языкового стандарта (сведения о языке и стране или регионе) и часового пояса.
+Получение объекта [mailboxSettings](../resources/mailboxsettings.md) пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при получении электронных сообщений от них), языкового стандарта (язык и страна или регион), часового пояса и рабочего времени.
 
 Вы можете просмотреть все параметры почтового ящика или получить определенные параметры.
 
@@ -18,14 +18,14 @@
 |Для приложений | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-Чтобы получить все параметры почтового ящика, включающие параметры автоматических ответов, используйте указанные ниже команды.
+Получение всех параметров почтового ящика пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Чтобы получить определенные параметры, например только параметры автоматических ответов, сведения о языковом стандарте и часовом поясе, выполните указанные ниже команды.
+Получение определенных параметров, например только параметров автоматических ответов, языкового стандарта, часового пояса или рабочего времени:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -36,6 +36,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/language
 
 GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
+
+GET /me/mailboxSettings/workingHours
+GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/ru-RU/graph/docs/overview/query_parameters) для настройки ответа.
@@ -55,10 +58,11 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 - Объект [automaticRepliesSetting](../resources/automaticRepliesSetting.md).
 - Объект [localeInfo](../resources/localeinfo.md).
 - Строка (для параметра **timeZone**).
+- [workingHours](../resources/workinghours.md)
 
 ## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
-В первом примере показано, как получить все параметры почтового ящика пользователя, вошедшего в систему, в том числе параметры автоматических ответов, сведения о часовом поясе и параметры языка.
+##### <a name="request-1"></a>Запрос 1
+В первом примере считываются все параметры часового пояса для почтового ящика вошедшего пользователя, в том числе параметры часового пояса, автоматических ответов, языкового стандарта (язык и страна или регион) и рабочего времени.
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
@@ -66,7 +70,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
-##### <a name="response-1"></a>Отклик 1
+##### <a name="response-1"></a>Ответ 1
 Отклик включает все параметры почтового ящика. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -98,6 +102,20 @@ Content-type: application/json
     "language":{
       "locale":"en-US",
       "displayName":"English (United States)"
+    },
+    "workingHours":{
+        "daysOfWeek":[
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+        ],
+        "startTime":"08:00:00.0000000",
+        "endTime":"17:00:00.0000000",
+        "timeZone":{
+            "name":"Pacific Standard Time"
+        }
     }
 }
 ```
@@ -137,6 +155,64 @@ Content-type: application/json
     },
     "internalReplyMessage": "<html>\n<body>\n<p>I'm at our company's worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n",
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
+}
+```
+
+
+##### <a name="request-3"></a>Запрос 3
+В третьем примере показано, как получить только параметры рабочего времени для почтового ящика пользователя, выполнившего вход в систему.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_mailboxsettings_3"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
+```
+##### <a name="response-3"></a>Ответ 3
+Ответ включает только параметры рабочего времени. Обратите внимание, что рабочее время пользователя относится к [пользовательскому часовому поясу](../resources/customtimezone.md). Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_mailboxsettings_3",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workingHours"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings/workingHours",
+    "daysOfWeek":[
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+    ],
+    "startTime":"09:00:00.0000000",
+    "endTime":"18:30:00.0000000",
+    "timeZone":{
+        "@odata.type":"#microsoft.graph.customTimeZone",
+        "bias":-200,
+        "name":"Customized Time Zone",
+        "standardOffset":{
+            "time":"02:00:00.0000000",
+            "dayOccurrence":4,
+            "dayOfWeek":"sunday",
+            "month":5,
+            "year":0
+        },
+        "daylightOffset":{
+            "daylightBias":-100,
+            "time":"02:00:00.0000000",
+            "dayOccurrence":2,
+            "dayOfWeek":"sunday",
+            "month":10,
+            "year":0
+        }
+    }
 }
 ```
 

@@ -44,6 +44,7 @@
 |отделу;|String|Отдел контакта.|
 |displayName|String|Отображаемое имя контакта.|
 |emailAddresses|Коллекция [EmailAddress](emailaddress.md)|Электронные адреса контакта.|
+|flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения для сообщения.|
 |fileAs|String|Имя, под которым хранится контакт.|
 |generation|String|Поколение контакта.|
 |givenName|String|Имя контакта.|
@@ -110,6 +111,7 @@
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",
