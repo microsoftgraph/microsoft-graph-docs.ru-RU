@@ -26,10 +26,12 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
+
 В теле запроса добавьте представление объекта [managedDevice](../resources/intune_devices_manageddevice.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта [managedDevice](../resources/intune_devices_manageddevice.md).
@@ -37,9 +39,11 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор устройства.|
-|userId|String|Уникальный идентификатор пользователя, связанного с устройством|
+|userId|String|Уникальный идентификатор пользователя, связанного с устройством.
+|
 |deviceName|String|Название устройства|
-|deviceActionResults|Коллекция [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|Перечисление объектов deviceActionResult сложного типа.|
+|deviceActionResults|Коллекция [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|Список объектов deviceActionResult сложного типа.
+|
 |enrolledDateTime|DateTimeOffset|Время регистрации устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней успешной синхронизации устройства с Intune.|
 |operatingSystem|String|Операционная система устройства. Windows, iOS и т. д.|
@@ -79,9 +83,11 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |subscriberCarrier|String|Оператор сотовой связи, используемый абонентом|
 |meid|String|MEID|
 |totalStorageSpaceInBytes|Int64|Общий объем хранилища в байтах|
-|freeStorageSpaceInBytes|Int64|Бесплатный объем хранилища в байтах|
+|freeStorageSpaceInBytes|Int64|Свободный объем хранилища в байтах
+|
 |managedDeviceName|String|Автоматически созданный идентификатор устройства. Может быть заменен понятным именем.|
-|partnerReportedThreatState|String|Указывает состояние угрозы со стороны устройства при использовании решения Mobile Threat Defense (в учетной записи и на устройстве). Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
+|partnerReportedThreatState|String|Указывает состояние подверженности устройства угрозам при использовании решения Mobile Threat Defense (в учетной записи и на устройстве).
+ Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
 
 
 
@@ -196,7 +202,8 @@ Content-length: 4564
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -49,28 +49,29 @@
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
 |iCalUId|String|Уникальный идентификатор, совместно используемый всеми экземплярами события в разных календарях.|
 |id|String| Только для чтения.|
-|importance|String|Важность события. Возможные значения: `Low`, `Normal`, `High`.|
+|importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
 |isOrganizer|Boolean|Задайте значение true, если отправитель сообщения также является его организатором.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |location|[location](location.md)|Место проведения события.|
+|locations|Коллекция [location](location.md)|Места проведения мероприятия или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
 |onlineMeetingUrl|String|URL-адрес для собрания по сети.|
 |organizer|[recipient](recipient.md)|Организатор события.|
-|originalEndTimeZone|String|Часовой пояс завершения события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс.|
+|originalEndTimeZone|String|Часовой пояс завершения, указанный при создании события. Значение `tzone://Microsoft/Custom` указывает, что традиционный часовой пояс был задан в классическом приложении Outlook.|
 |originalStart|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |originalStartTimeZone|Строка|Часовой пояс начала события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Расписание повторения события.|
 |reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
 |responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
 |responseStatus|[responseStatus](responsestatus.md)|Указывает тип отклика, отправленного в ответ на сообщение о событии.|
-|sensitivity|String| Возможные значения: `Normal`, `Personal`, `Private`, `Confidential`.|
+|sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|Категории, назначенные элементу.|
-|showAs|String|Отображаемое состояние. Возможные значения: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|showAs|String|Отображаемое состояние. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события.|
 |subject|String|Текст в строке темы сообщения о событии.|
-|type|String|Тип события. Возможные значения: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Только для чтения.|
+|type|String|Тип события. Возможные значения: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Только для чтения.|
 |webLink|String|URL-адрес для открытия события в Outlook Web App.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 ## <a name="relationships"></a>Отношения
@@ -120,6 +121,7 @@
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",

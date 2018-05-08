@@ -16,7 +16,7 @@
 |[Получение диска](../api/drive_get.md) | [drive](drive.md)  |Получение свойств объекта drive. |
 |[Создание группы](../api/group_post_groups.md) |[group](group.md)| Создание группы путем добавления в коллекцию групп.|
 |[Список групп](../api/group_list.md) | Коллекция объектов [group](group.md) |Получение коллекции объектов group. |
-|[Список организаций](../api/organization_list.md) | Коллекция объектов [organization](organization.md) |Получение коллекции объектов organization. |
+|[Список организаций](../api/organization_get.md) | Коллекция объектов [organization](organization.md) |Получение коллекции объектов organization. |
 |[Список объектов subscribedSku](../api/subscribedsku_list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение коллекции объектов subscribedSku. |
 |[Создание пользователя](../api/user_post_users.md) |[user](user.md)| Создание пользователя путем добавления в коллекцию пользователей.|
 |[Список пользователей](../api/user_list.md) | Коллекция объектов [user](user.md) |Получение коллекции объектов user. |

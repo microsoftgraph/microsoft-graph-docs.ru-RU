@@ -1,14 +1,18 @@
 # <a name="list-organization"></a>Список организаций
 
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
 Получение списка объектов организаций.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+
+> Примечание. Приложения с разрешением User.Read могут читать только такие свойства организации, как *id*, *displayName* и *verifiedDomains*.  Для всех остальных свойств возвращается значение `null`. Читать все свойства можно с помощью Directory.Read.All.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -16,7 +20,7 @@
 GET /organization
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/ru-RU/graph/docs/overview/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -36,10 +40,11 @@ GET /organization
   "name": "get_organization"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/organization
+GET https://graph.microsoft.com/beta/organization
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -56,7 +61,7 @@ Content-length: 500
     {
       "assignedPlans": [
         {
-          "assignedDateTime": "datetime-value",
+          "assignedDateTime": "2016-10-19T10:37:00Z",
           "capabilityStatus": "capabilityStatus-value",
           "service": "service-value",
           "servicePlanId": "servicePlanId-value"

@@ -1,4 +1,5 @@
-# <a name="update-androidmanagedappprotection"></a>Update androidManagedAppProtection
+# <a name="update-androidmanagedappprotection"></a>Обновление androidManagedAppProtection
+
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -24,10 +25,12 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
+
 В тексте запроса добавьте представление объекта [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md).
@@ -40,8 +43,10 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|periodOfflineBeforeAccessCheck|Продолжительность|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
-|periodOnlineBeforeAccessCheck|Продолжительность|Время до проверки доступа, когда устройство подключено к Интернету. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
+|periodOfflineBeforeAccessCheck|Duration
+|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
+|periodOnlineBeforeAccessCheck|Duration
+|Время до проверки доступа, когда устройство подключено к Интернету. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |allowedInboundDataTransferSources|String|Источники, из которых разрешена передача данных. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `none`.|
 |allowedOutboundDataTransferDestinations|String|Расположения, в которые разрешено передавать данные. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `none`.|
 |organizationalCredentialsRequired|Boolean|Указывает, необходимы ли для использования приложения учетные данные организации. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
@@ -50,13 +55,15 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 |deviceComplianceRequired|Boolean|Указывает, обязательно ли соответствие устройства требованиям. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |managedBrowserToOpenLinksRequired|Boolean|Указывает, следует ли открывать интернет-ссылки в управляемом браузере. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |saveAsBlocked|Boolean|Указывает, могут ли пользователи сохранять копии защищенных файлов, используя пункт меню "Сохранить как". Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
-|periodOfflineBeforeWipeIsEnforced|Продолжительность|Время до удаления всех управляемых данных после отключения приложения от Интернета. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
+|periodOfflineBeforeWipeIsEnforced|Duration
+|Время до удаления всех управляемых данных после отключения приложения от Интернета. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |pinRequired|Boolean|Указывает, обязательно ли использовать ПИН-код на уровне приложения. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |maximumPinRetries|Int32|Максимальное количество неудачных попыток ввода ПИН-кода до стирания управляемого приложения. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |simplePinBlocked|Boolean|Указывает, заблокирован ли простой ПИН-код. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |minimumPinLength|Int32|Минимальная длина ПИН-кода на уровне приложения, если для параметра PinRequired задано значение True. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |pinCharacterSet|String|Разрешенный набор символов ПИН-кода на уровне приложения, если для параметра PinRequired задано значение True. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md). Возможные значения: `numeric`, `alphanumericAndSymbol`.|
-|periodBeforePinReset|Продолжительность|Время до сброса универсального ПИН-кода, если для параметра PinRequired задано значение True. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
+|periodBeforePinReset|Duration
+|Время до сброса универсального ПИН-кода, если для параметра PinRequired задано значение True. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |allowedDataStorageLocations|Коллекция строк|Места хранения управляемых данных, доступные пользователю. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md). Возможные значения: `oneDriveForBusiness`, `sharePoint`, `localStorage`.|
 |contactSyncBlocked|Boolean|Указывает, можно ли синхронизировать контакты с устройством пользователя. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |printBlocked|Boolean|Указывает, разрешена ли печать из управляемых приложений. Наследуется от объекта [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
@@ -76,7 +83,8 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -130,8 +138,10 @@ Content-length: 1690
 }
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

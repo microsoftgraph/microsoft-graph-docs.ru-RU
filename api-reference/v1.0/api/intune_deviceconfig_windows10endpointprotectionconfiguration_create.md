@@ -24,10 +24,12 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
+
 В теле запроса добавьте представление объекта windows10EndpointProtectionConfiguration в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта windows10EndpointProtectionConfiguration.
@@ -188,8 +190,10 @@ Content-length: 4309
 }
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

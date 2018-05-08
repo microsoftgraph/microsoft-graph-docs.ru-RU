@@ -26,16 +26,16 @@
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|customSettings|Коллекция объектов [keyValuePair](../resources/intune_mam_keyvaluepair.md)|Набор, состоящий из пар ключа и значения строки, которые отправляются в приложения для пользователей с заданной конфигурацией и не меняются этой службой. Наследуется от объекта [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md).|
-|deployedAppCount|Int32|Количество приложений, к которым применена текущая политика.|
+|customSettings|Коллекция [keyValuePair](../resources/intune_mam_keyvaluepair.md)|Набор строковых пар "ключ-значение", которые отправляются в приложения для пользователей с заданной конфигурацией и не меняются этой службой. Наследуется от объекта [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md).|
+|deployedAppCount|Int32|Количество приложений, для которых развернута текущая политика.|
 |isAssigned|Boolean|Указывает, применена ли политика к группам включения.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|apps|Коллекция объектов [managedMobileApp](../resources/intune_mam_managedmobileapp.md)|Список приложений, к которым применена политика.|
+|apps|Коллекция [managedMobileApp](../resources/intune_mam_managedmobileapp.md)|Список приложений, к которым применена политика.|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Свойства навигации к сводке по развертыванию конфигурации.|
-|assignments|Коллекция объектов [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Свойство навигации для перечисления групп включения и исключения, к которым применяется политика.|
+|assignments|Коллекция targetedManagedAppPolicyAssignment|Список групп включения и исключения, к которым применяется политика.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

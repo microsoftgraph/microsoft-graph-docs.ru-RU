@@ -11,20 +11,17 @@
 |:---|:---|:---|
 |[Перечисление managedAppStatusRaws](../api/intune_mam_managedappstatusraw_list.md)|Коллекция [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Перечисление свойств и связей объектов [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
 |[Получение managedAppStatusRaw](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Считывание свойств и связей объекта [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Создание managedAppStatusRaw](../api/intune_mam_managedappstatusraw_create.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Создание нового объекта [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Удаление managedAppStatusRaw](../api/intune_mam_managedappstatusraw_delete.md)|Отсутствует|Удаление объекта [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Обновление managedAppStatusRaw](../api/intune_mam_managedappstatusraw_update.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Обновление свойств объекта [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Понятное имя отчета о состоянии. Наследуется от [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
-|id|String|Ключ объекта. Наследуется от [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
-|version|String|Версия объекта. Наследуется от [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|displayName|String|Понятное имя отчета о состоянии. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|version|String|Версия объекта. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
 |content|[Json](../resources/intune_mam_json.md)|Содержимое отчета о состоянии.|
 
 ## <a name="relationships"></a>Связи
-Отсутствуют
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

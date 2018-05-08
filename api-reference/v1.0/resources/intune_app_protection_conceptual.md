@@ -42,7 +42,6 @@
 - [Идентификатор мобильных приложений](intune_mam_mobileappidentifier.md)
 - [Проксируемый домен](intune_mam_proxieddomain.md)
 - [Целевая конфигурация управляемых приложений](intune_mam_targetedmanagedappconfiguration.md)
-- [Назначение целевой политики для управляемых приложений](intune_mam_targetedmanagedapppolicyassignment.md)
 - [Целевая защита управляемых приложений](intune_mam_targetedmanagedappprotection.md)
 - [Пользователь](intune_mam_user.md)
 - [Сводка по обучению приложения Windows Information Protection](intune_wip_windowsinformationprotectionapplearningsummary.md)

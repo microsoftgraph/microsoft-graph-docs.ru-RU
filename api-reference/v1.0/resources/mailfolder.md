@@ -48,6 +48,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |childFolders|Коллекция объектов [MailFolder](mailfolder.md)|Коллекция дочерних папок в элементе mailFolder.|
+|messageRules | Коллекция [messageRule](messagerule.md) | Коллекция правил, которые применяются к папке пользователя "Входящие". | 
 |messages|Коллекция объектов [Message](message.md)|Коллекция сообщений в элементе mailFolder.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
@@ -60,6 +61,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
+    "messageRules", 
     "messages",
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
@@ -78,6 +80,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
   "unreadItemCount": 1024,
 
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]

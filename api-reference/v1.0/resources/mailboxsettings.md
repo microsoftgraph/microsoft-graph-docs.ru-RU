@@ -4,11 +4,13 @@
 
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
+|archiveFolder|string|Идентификатор архивной папки пользователя.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|timeZone|string|Часовой пояс по умолчанию для почтового ящика пользователя.|
+|timeZone|string|Часовой пояс почтового ящика пользователя по умолчанию.|
+|workingHours|[workingHours](workinghours.md)|Дни недели и часы работы пользователя в определенном часовом поясе.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -17,16 +19,18 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "archiveFolder"
   ],
   "@odata.type": "microsoft.graph.mailboxSettings"
 }-->
 
 ```json
 {
+  "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
-  "timeZone": "string"
+  "timeZone": "string",
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
 
 ```
