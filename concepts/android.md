@@ -19,7 +19,7 @@
 
 Чтобы приступить к работе, вам понадобится следующее: 
 
-- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](http://dev.office.com/devprogram).
+- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types).
 - Android Studio 2.0 или более новой версии
 
 
@@ -74,7 +74,7 @@
 
     Б. Нажмите кнопку **Добавление платформы** и выберите **Собственное приложение**.
 
-      > **Примечание.** На портале регистрации приложений предоставляется URI перенаправления со значением `msalENTER_YOUR_CLIENT_ID://auth`. Не используйте встроенные URI перенаправления. [Пример приложения подключения для Android](https://github.com/microsoftgraph/android-java-connect-sample) использует библиотеку аутентификации MSAL, для которой требуется этот URI перенаправления. При использовании [поддерживаемой сторонней библиотеки](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) или библиотеки **ADAL** необходимо использовать встроенные URI перенаправления.
+      > **Примечание.** На портале регистрации приложений предоставляется URI перенаправления со значением `msalENTER_YOUR_CLIENT_ID://auth`. Не используйте встроенные URI перенаправления. [Пример приложения подключения для Android](https://github.com/microsoftgraph/android-java-connect-sample) использует библиотеку аутентификации MSAL, для которой требуется этот URI перенаправления. При использовании [поддерживаемой сторонней библиотеки](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) или библиотеки **ADAL** необходимо использовать встроенные URI перенаправления.
       
       В. Добавьте делегированные разрешения. Вам потребуются разрешения **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** и **User.ReadBasic.All**. 
 
@@ -498,7 +498,7 @@
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Вызов Microsoft Graph с помощью REST API для Microsoft Graph
 
-[Microsoft Graph REST API](http://developer.microsoft.com/ru-RU/graph/docs) предоставляет несколько API-интерфейсов из облачных служб Майкрософт через одну конечную точку REST API. Чтобы использовать REST API, выполните указанные ниже действия.
+[Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) предоставляет несколько API-интерфейсов из облачных служб Майкрософт через одну конечную точку REST API. Чтобы использовать REST API, выполните указанные ниже действия.
 
 1. Предоставьте приложению разрешения на доступ к Интернету. Откройте файл **AndroidManifest** и добавьте к элементу манифеста представленный ниже дочерний элемент.
     
@@ -598,6 +598,6 @@
 ## <a name="see-also"></a>См. также
 
 - [Пакет SDK Microsoft Graph для Android](https://github.com/microsoftgraph/msgraph-sdk-android) 
-- [Получение токенов доступа для вызова Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/concepts/auth_overview)
-- [Получение доступа от имени пользователя](https://developer.microsoft.com/ru-RU/graph/docs/concepts/auth_v2_user)
-- [Получение доступа без пользователя](https://developer.microsoft.com/ru-RU/graph/docs/concepts/auth_v2_service)
+- [Получение токенов доступа для вызова Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Получение доступа от имени пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Получение доступа без пользователя](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

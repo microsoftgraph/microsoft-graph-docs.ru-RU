@@ -16,7 +16,7 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Н/Д|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)|Н/Д|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет

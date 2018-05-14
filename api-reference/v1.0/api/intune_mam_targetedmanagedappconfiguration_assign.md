@@ -35,7 +35,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция targetedManagedAppPolicyAssignment|Н/Д|
+|assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Н/Д|
 
 
 

@@ -22,7 +22,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/ru-RU/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1598
+Content-Length: 1535
 
 {
   "value": {
@@ -58,9 +58,6 @@ Content-Length: 1598
     "actor": {
       "@odata.type": "microsoft.graph.auditActor",
       "type": "Type value",
-      "permissions": [
-        "Permissions value"
-      ],
       "userPermissions": [
         "User Permissions value"
       ],

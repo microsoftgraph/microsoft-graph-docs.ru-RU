@@ -16,7 +16,7 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ назначения.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет

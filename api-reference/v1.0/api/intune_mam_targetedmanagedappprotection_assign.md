@@ -37,7 +37,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция targetedManagedAppPolicyAssignment|Н/Д|
+|assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Н/Д|
 
 
 

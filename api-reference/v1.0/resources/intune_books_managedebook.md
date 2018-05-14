@@ -18,7 +18,7 @@
 |description|String|Описание.|
 |publisher|String|Издатель.|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги.|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Обложка книги.|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Обложка книги.|
 |createdDateTime|DateTimeOffset|Дата и время создания электронной книги.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги.|
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
