@@ -1,7 +1,7 @@
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
 
-Облачные службы Майкрософт доступны в трех отдельных национальных облаках. Эти национальные версии представляют собой изолированные в логических сетях физические экземпляры корпоративных облачных служб Майкрософт, которые находятся в географических границах определенных стран и обслуживаются местным персоналом. Дополнительные сведения см. в статье [Национальный облака Майкрософт](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud).
+В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти национальные версии представляют собой изолированные в логических сетях физические экземпляры корпоративных облачных служб Майкрософт, которые находятся в географических границах определенных стран и обслуживаются местным персоналом. Дополнительные сведения см. в статье [Национальные облака Майкрософт](https://www.microsoft.com/ru-RU/TrustCenter/CloudServices/NationalCloud).
 
 Существующие национальные облака:
 
@@ -9,40 +9,40 @@
 - Microsoft Cloud для Германии
 - Службы Azure и Office 365 под управлением компании 21Vianet в Китае
 
-В этой статье приведены сведения о различных национальных облачных развертываниях Microsoft Graph, а также о возможностях, доступных разработчикам в каждом развертывании. 
+В этой статье приведены сведения о различных национальных облачных развертываниях Microsoft Graph, а также о возможностях, доступных разработчикам в каждом развертывании.
 
 ## <a name="microsoft-graph-and-microsoft-graph-explorer-service-root-endpoints"></a>Корневые конечные точки служб Microsoft Graph и Microsoft Graph Explorer
 
-В таблице ниже показаны конечные корневые точки службы Microsoft Graph и песочницы Microsoft Graph в каждом национальном облаке. 
+В таблице ниже показаны конечные корневые точки службы Microsoft Graph и песочницы Microsoft Graph в каждом национальном облаке.
 
 | Национальное облако | Microsoft Graph | Песочница Microsoft Graph
 |---------------------------|----------------|----------------|
-| Microsoft Graph под управлением 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
+| Microsoft Graph для Китая под управлением 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Microsoft Graph для Германии | https://graph.microsoft.de | Не поддерживается. |
-| Microsoft Graph for US Government | https://graph.microsoft.com | Не поддерживается. |
+| Microsoft Graph для государственных организаций США | https://graph.microsoft.com | Не поддерживается. |
 | Глобальная служба Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
 > **Примечание.** Приложения могут получать доступ к данным организации только через конечные точки национальных облачных служб. Это означает, что доступны только данные клиентов, зарегистрированных в определенном национальном облаке. Приложения, которые с помощью Microsoft Graph пытаются получить доступ к данным потребителей, связанным с личными учетными записями Майкрософт, должны использовать глобальную службу (https://graph.microsoft.com). Маркеры доступа, приобретенные для национального облачного развертывания, не могут быть заменены маркерами, приобретенными для глобальный службы.
 
 ## <a name="azure-ad-openid-connect-and-oauth20-endpoints"></a>Конечные точки Azure AD OpenID Connect и OAuth2.0
 
-В таблице ниже указаны базовые URL-адреса конечных точек Azure Active Directory (Azure AD), которые позволяют получить маркеры для вызова Microsoft Graph в каждом национальном облаке. 
+В таблице ниже указаны базовые URL-адреса конечных точек Azure Active Directory (Azure AD), которые позволяют получить маркеры для вызова Microsoft Graph в каждом национальном облаке.
 
 | Национальное облако | Корневая конечная точка Azure AD |
 |---------------------------|----------------|
-| Microsoft Graph под управлением 21Vianet |https://login.chinacloudapi.cn | 
-| Microsoft Graph для Германии | https://login.microsoftonline.de | 
-| Microsoft Graph for US Government | https://login-us.microsoftonline.com | 
-| Microsoft Graph (глобальная служба) | https://login.microsoftonline.com | 
+| Azure AD для Китая под управлением 21Vianet |https://login.chinacloudapi.cn |
+| Azure AD для Германии | https://login.microsoftonline.de |
+| Azure AD для государственных организаций США | https://login.microsoftonline.us |
+| Azure AD (глобальная служба) | https://login.microsoftonline.com |
 
-Запросы к конечным точкам авторизации или маркеров Azure AD могут быть созданы с помощью соответствующего базового URL-адреса для определенной страны или региона. Например, для Германии:
+Запросы к конечным точкам авторизации или маркеров Azure AD могут быть созданы с помощью соответствующего базового URL-адреса для определенной страны или региона. Пример для Германии:
 
 - Общая конечная точка авторизации: https://login.microsoftonline.de/common/oauth2/authorize.
 - Общая конечная точка маркера: https://login.microsoftonline.de/common/oauth2/token.
 
 Конечные точки для определенного клиента создаются путем замены элемента "common" в указанных выше URL-адресах идентификатором или проверенным доменом клиента. Выбор между общими конечными точками и точками для определенного клиента зависит от требований вашего приложения и процедуры проверки подлинности, используемой для получения маркеров. Дополнительные сведения о маркерах доступа Azure AD и Microsoft Graph см. в статье [Получение маркеров проверки подлинности](./auth_overview.md).
 
-> **Примечание.** [Конечные точки авторизации и маркеров Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) доступны только в глобальной службе и не могут использоваться с национальными облачными развертываниями. 
+> **Примечание.** [Конечные точки авторизации и маркеров Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-appmodel-v2-overview/) доступны только в глобальной службе и не могут использоваться с национальными облачными развертываниями.
 
 ## <a name="supported-features"></a>Поддерживаемые функции
 
