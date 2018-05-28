@@ -4,7 +4,7 @@
 
 ## <a name="support-policy-and-deprecation-information"></a>Политика поддержки и объявление о прекращении поддержки
 
-Microsoft Graph придерживается политики [Microsoft Lifecycle](https://support.microsoft.com/ru-RU/lifecycle). 
+Microsoft Graph придерживается политики [Microsoft Lifecycle](https://support.microsoft.com/en-us/lifecycle). 
 
 Новые версии REST API Microsoft Graph и пакетов SDK Microsoft Graph будут заменять собой более ранние версии. Корпорация Майкрософт будет объявлять о прекращении поддержки версии по крайней мере за 24 месяца до прекращения использования API или SDK. 
 
@@ -34,7 +34,7 @@ Microsoft Graph придерживается политики [Microsoft Lifecyc
  - изменения порядка свойств;
  - Изменения длины или формата закрытых строк, таких как идентификаторы ресурсов.
 
->**Примечание:** со временем мы будем обновлять список обратно совместимых изменений. Если вы создаете собственные прокси-серверы клиента (например, клиенты WCF), ваши клиентские приложения должны быть готовы принимать свойства и производные типы, ранее не определенные в службе API Microsoft Graph. API Microsoft Graph соответствует принципам, описанным в разделе [Управление версиями](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) в руководстве по[Microsoft REST API ](https://github.com/microsoft/api-guidelines/). 
+>**Примечание:** со временем мы будем обновлять список обратно совместимых изменений. Если вы создаете собственные прокси-серверы клиента (например, клиенты WCF), ваши клиентские приложения должны быть готовы принимать свойства и производные типы, ранее не определенные в службе API Microsoft Graph. API Microsoft Graph соответствует принципам, описанным в разделе [Управление версиями](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) в руководстве по[Microsoft REST API ](https://github.com/microsoft/api-guidelines/). 
 
 ## <a name="versions"></a>Версии
 
