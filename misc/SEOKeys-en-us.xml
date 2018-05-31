@@ -49,18 +49,19 @@
 	  <Item text="Предоставление доступа к папкам сообщений" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
   <Item text="Примечания" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Используйте Microsoft Graph для интеграции приложений с OneNote.">
-    <Item text="Рекомендации" url="/en-us/concepts/onenote_best_practices" SEODescription="Следуйте рекомендациям при работе с API OneNote в Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
-	<Item text="Правила размещения фирменной символики" url="/en-us/concepts/onenote-branding" />
+    <Item text="Материалы по OneNote" url="/en-us/concepts/onenote-get-content" />
 	<Item text="Открытие клиента OneNote" url="/en-us/concepts/open_onenote_client" SEODescription="Открытие приложения OneNote на определенной странице или в определенной записной книжке." />
-	<Item text="Использование тегов заметок" url="/en-us/concepts/onenote-note-tags" />
-	<Item text="Коды ошибок" url="/en-us/concepts/onenote_error_codes" SEODescription="Коды ошибок, возвращаемые API OneNote в Microsoft Graph." />
-  <Item text="Материалы по OneNote" url="/en-us/concepts/onenote-get-content" />
 	<Item text="Создание страниц" url="/en-us/concepts/onenote-create-page" />
 	<Item text="Обновление содержимого страницы" url="/en-us/concepts/onenote_update_page" />
-	<Item text="Создание элементов с абсолютным положением" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="Добавление изображений, видео и файлов" url="/en-us/concepts/onenote_images_files" />
+	<Item text="Создание элементов с абсолютным положением" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="Извлечение данных" url="/en-us/concepts/onenote-extract-data" />
+	<Item text="Использование тегов заметок" url="/en-us/concepts/onenote-note-tags" />
+	<Item Label="РЕСУРСЫ" url="" />
 	<Item text="Входной и выходной HTML-код" url="/en-us/concepts/onenote_input_output_html" SEODescription="Распознавание входного и выходного HTML при создании, обновлении или анализе возвращаемого содержимого страницы OneNote." />
+	<Item text="Рекомендации" url="/en-us/concepts/onenote_best_practices" SEODescription="Следуйте рекомендациям при работе с API OneNote в Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
+	<Item text="Правила размещения фирменной символики" url="/en-us/concepts/onenote-branding" />
+	<Item text="Коды ошибок" url="/en-us/concepts/onenote_error_codes" SEODescription="Коды ошибок, возвращаемые API OneNote в Microsoft Graph." />
   </Item>
   <Item text="Личные контакты" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Отчеты" url="/en-us/concepts/reportroot-concept-overview" />
@@ -1760,7 +1761,7 @@
       <Item text="Вывод сообщения" url="/en-us/api-reference/v1.0/api/message_get" SEOKeyword="Вывод сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Получение свойств и связей объекта сообщений." />
       <Item text="Обновление сообщения" url="/en-us/api-reference/v1.0/api/message_update" SEOKeyword="Обновление сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Обновление свойств, принадлежащих объекту сообщений." />
       <Item text="Удаление сообщения" url="/en-us/api-reference/v1.0/api/message_delete" SEOKeyword="Удаление сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Удаление сообщения." />
-      <Item text="Отправка сообщений" url="/en-us/api-reference/v1.0/api/message_send" SEOKeyword="Отправка сообщений, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Отправка сообщения" />
+      <Item text="Отправка сообщений" url="/en-us/api-reference/v1.0/api/message_send" SEOKeyword="Отправка сообщений, API Microsoft Graph, API для приложения &quot;Почта Outlook&quot;" SEODescription="Отправка сообщения" />
       <Item text="Копирование сообщений" url="/en-us/api-reference/v1.0/api/message_copy" SEOKeyword="Копирование сообщений, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Копирование сообщения" />
       <Item text="Перемещение сообщений" url="/en-us/api-reference/v1.0/api/message_move" SEOKeyword="Перемещение сообщений, API Microsoft Graph, API для приложения &quot;Почта Outlook&quot;" SEODescription="Перемещение сообщения" />
       <Item text="Создание ответов на сообщения" url="/en-us/api-reference/v1.0/api/message_createreply" SEOKeyword="Создание ответов на сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="" />
@@ -2167,8 +2168,9 @@
       <Item text="Удаление расширения схемы" url="/en-us/api-reference/v1.0/api/schemaextension_delete" SEOKeyword="Удаление расширения схемы, API Microsoft Graph" SEODescription="Удаление определения расширения схемы." />
   </Item>
    <Item text="Уведомления об изменениях" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="аналитика, API Microsoft Graph, API для управления пользователями" SEODescription="">
-    <Item text="Подписка" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="аналитика, API Microsoft Graph, API для управления пользователями" SEODescription="">
-      <Item text="Вывод подписки" url="/en-us/api-reference/v1.0/api/subscription_get" SEOKeyword="Список подписок, API Microsoft Graph, API для управления веб-перехватчиками" SEODescription="Получение списка подписок." />
+    <Item text="Подписка" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="аналитика, API Microsoft Graph, API управления пользователями" SEODescription="">
+	  <Item text="Перечисление подписок" url="/en-us/api-reference/v1.0/api/subscription_list" />
+      <Item text="Получение подписки" url="/en-us/api-reference/v1.0/api/subscription_get" SEOKeyword="Список подписок, API Microsoft Graph, API для управления веб-перехватчиками" SEODescription="Получение списка подписок." />
       <Item text="Создание подписки" url="/en-us/api-reference/v1.0/api/subscription_post_subscriptions" />
       <Item text="Обновление подписки" url="/en-us/api-reference/v1.0/api/subscription_update" />
       <Item text="Удаление подписки" url="/en-us/api-reference/v1.0/api/subscription_delete" />
