@@ -1,0 +1,19 @@
+# <a name="display-a-chart-image-in-excel-with-microsoft-graph"></a><span data-ttu-id="f4a43-101">Показ изображения диаграммы в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f4a43-101">Display a chart image in Excel with Microsoft Graph</span></span>
+
+<span data-ttu-id="f4a43-102">Когда вы выполняете [операцию GET, чтобы получить изображение диаграммы](/api-reference/v1.0/api/chart_image.md), API Excel возвращает изображение в виде строки в кодировке Base 64.</span><span class="sxs-lookup"><span data-stu-id="f4a43-102">When you perform a [GET operation to retrieve a chart image](/api-reference/v1.0/api/chart_image.md), the Excel API returns the image as a base-64 string.</span></span>
+
+<span data-ttu-id="f4a43-103">Вы можете отображать строку в кодировке Base 64 в HTML-теге изображения: `<img src="data:image/png;base64,{base-64 chart image string}/>`.</span><span class="sxs-lookup"><span data-stu-id="f4a43-103">You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.</span></span>
+
+<span data-ttu-id="f4a43-104">В случае поведения по умолчанию используйте `Image(width=0,height=0,fittingMode='fit')`.</span><span class="sxs-lookup"><span data-stu-id="f4a43-104">For default behavior, use `Image(width=0,height=0,fittingMode='fit')`.</span></span> <span data-ttu-id="f4a43-105">Ниже приведен пример изображения диаграммы, возвращаемого с параметрами по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="f4a43-105">Here is an example of a chart image returned with the default parameters.</span></span>
+
+![Изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+
+<span data-ttu-id="f4a43-107">Если вы хотите настроить отображение этого изображения, укажите высоту, ширину и режим подгонки.</span><span class="sxs-lookup"><span data-stu-id="f4a43-107">If you want to customize the display of the image, specify a height, width, and a fitting mode.</span></span> <span data-ttu-id="f4a43-108">А вот как выглядит то же самое изображение диаграммы, если получить его с этими параметрами: `Image(width=500,height=500,fittingMode='Fill')`.</span><span class="sxs-lookup"><span data-stu-id="f4a43-108">Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="f4a43-109">См. также</span><span class="sxs-lookup"><span data-stu-id="f4a43-109">See also</span></span>
+
+* [<span data-ttu-id="f4a43-110">Управление сеансами в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f4a43-110">Manage sessions in Excel with Microsoft Graph</span></span>](excel-manage-sessions.md)
+* [<span data-ttu-id="f4a43-111">Запись в книгу Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f4a43-111">Write to an Excel workbook using Microsoft Graph</span></span>](excel-write-to-workbook.md)
+* [<span data-ttu-id="f4a43-112">Использование функций книг в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f4a43-112">Use workbook functions in Excel with Microsoft Graph</span></span>](excel-use-functions.md)
+* [<span data-ttu-id="f4a43-113">Обновление формата диапазона в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f4a43-113">Update a range’s format in Excel with Microsoft Graph</span></span>](excel-update-range-format.md)
+* [<span data-ttu-id="f4a43-114">Использование REST API для Excel</span><span class="sxs-lookup"><span data-stu-id="f4a43-114">Use the Excel REST API</span></span>](../api-reference/v1.0/resources/excel.md)
