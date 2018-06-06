@@ -8,7 +8,7 @@
 
 ![Снимок экрана с приложением Microsoft Ruby on Rails Connect](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**Не хотите создавать приложение?** Вы можете быстро приступить к работе с помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) или скачать [пример Ruby REST Connect](https://github.com/microsoftgraph/ruby-connect-rest-sample), который рассматривается в этой статье.
+**Не хотите создавать приложение?** Вы можете быстро приступить к работе с помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/ru-RU/getting-started) или скачать [пример Ruby REST Connect](https://github.com/microsoftgraph/ruby-connect-rest-sample), который рассматривается в этой статье.
 
 
 ## <a name="prerequisites"></a>Необходимые компоненты
@@ -19,7 +19,7 @@
 - платформа Rails (пример протестирован на платформе Rails 4.2);
 - диспетчер зависимостей Bundler;
 - Интерфейс веб-сервера для Ruby (Rack).
-- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](http://dev.office.com/devprogram).
+- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](https://docs.microsoft.com/ru-RU/office/developer-program/office-365-developer-program-faq#account-types).
 - Начальный проект приложения Ruby on Rails, подключающегося с использованием Microsoft Graph. Скачайте [приложение Microsoft Graph Ruby on Rails Connect](https://github.com/microsoftgraph/ruby-connect-rest-sample). Начальный проект находится в папке _starter_.
 
 
@@ -41,15 +41,15 @@
 
     Идентификатор и секрет приложения используются для его настройки.
 
-6. В разделе **Платформы** нажмите **Добавление платформы** > **Интернет**.
+6. В разделе **Платформы** выберите **Добавление платформы** > **Веб**.
 
-7. Установите флажок **Разрешить неявный поток** и введите URI перенаправления *http://localhost:3000/auth/microsoft_v2_auth/callback*.
+7. Убедитесь, что установлен флажок **Разрешить неявный поток**, и введите *http://localhost:3000/auth/microsoft_v2_auth/callback* в качестве URI перенаправления.
 
     Параметр "Разрешить неявный поток" включает гибридный поток OpenID Connect. Благодаря этому при проверке подлинности приложение может получить данные для входа (id_token) и артефакты (в данном случае — код авторизации), с помощью которых оно может получить маркер доступа.
 
-    URI перенаправления *http://localhost:3000/auth/microsoft_v2_auth/callback* — это значение, которое ПО промежуточного слоя OmniAuth использует после обработки запроса на проверку подлинности.
+    URI перенаправления *http://localhost:3000/auth/microsoft_v2_auth/callback* — это значение, которое ПО промежуточного слоя OmniAuth использует после обработки запроса аутентификации.
 
-8. Нажмите кнопку **Сохранить**.
+8. Нажмите **Сохранить**.
 
 ## <a name="configure-the-project"></a>Настройка проекта
 
@@ -79,7 +79,7 @@
 2. Получение кода авторизации
 3. Обмен кода авторизации на маркер доступа
 
->Дополнительные сведения об этом потоке проверки подлинности см. в разделе [Из веб-приложения в веб-интерфейс API](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) и примере [Интеграция удостоверения Майкрософт и Microsoft Graph в веб-приложения с помощью OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) в документации по Azure AD.
+>Дополнительные сведения об этом потоке проверки подлинности см. в разделе [Из веб-приложения в веб-интерфейс API](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) и примере [Интеграция удостоверения Майкрософт и Microsoft Graph в веб-приложения с помощью OpenID Connect](https://azure.microsoft.com/ru-RU/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) в документации по Azure AD.
 
 Мы будем использовать три элемента ПО промежуточного слоя [Rack](http://rack.github.io/), чтобы приложение поддерживало проверку подлинности с помощью Microsoft Graph:
 
@@ -127,13 +127,13 @@
         redirect_to '/auth/microsoft_v2_auth'
     end
 
-Затем необходимо указать, на какую страницу приложения будет переходить OmniAuth после проверки подлинности. Раскомментируйте приведенный ниже маршрут.
+Затем необходимо указать, на какую страницу приложения будет перенаправлять OmniAuth после аутентификации. Раскомментируйте приведенный ниже маршрут.
 
     match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
 
-Завершив проверку подлинности пользователя, OmniAuth вызывает URL-адрес перенаправления, указанный при регистрации приложения (в данном случае — *http://localhost:3000/auth/microsoft_v2_auth/callback*). Приведенный выше шаблон маршрута соответствует этому URL-адресу, поэтому запрос направляется методу `callback` контроллера страниц.
+Завершив аутентификацию пользователя, OmniAuth вызывает URL-адрес перенаправления, указанный при регистрации приложения (в данном случае — *http://localhost:3000/auth/microsoft_v2_auth/callback*). Приведенный выше шаблон маршрута соответствует этому URL-адресу, поэтому запрос направляется методу `callback` контроллера страниц.
 
-### <a name="get-an-access-token"></a>Получение маркера доступа
+### <a name="get-an-access-token"></a>Получение токена доступа
 
 Теперь мы добавим код, который запускает проверку подлинности и получает маркер доступа, когда пользователь выполнит вход.
 

@@ -68,11 +68,13 @@
 | Личные контакты в папке | Функция [delta](../api-reference/v1.0/api/contact_delta.md) ресурса [contact](../api-reference/v1.0/resources/contact.md) |
 | Пользователи | Функция [delta](../api-reference/v1.0/api/user_delta.md) ресурса [user](../api-reference/v1.0/resources/user.md) | 
 | Элементы на диске\* | Функция [delta](../api-reference/v1.0/api/driveitem_delta.md) ресурса [driveItem](../api-reference/v1.0/resources/driveitem.md) |
-
+| Элементы Planner\*\* | Функция [delta](../api-reference/beta/api/planneruser_list_delta.md) всего сегмента ресурса [plannerUser](../api-reference/beta/resources/planneruser.md) (предварительный просмотр) |
 
 > \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для ресурсов drive будет обновлен в соответствии с запросами для других типов ресурсов.  Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений для Drive](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/item_delta).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+> \*\* Шаблон использования ресурсов Planner незначительно отличается от шаблонов использования других поддерживаемых ресурсов.  Дополнительные сведения см. в [этой статье](../api-reference/beta/api/planneruser_list_delta.md).
+
+## <a name="prerequisites"></a>Необходимые разрешения
 
 Выполнение разностных запросов для определенного ресурса требует тех же [разрешений](./permissions_reference.md), что и его чтение.
 
