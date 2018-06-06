@@ -70,7 +70,8 @@ response = sendmail(client=MSGRAPH,
 * [Примеры кода аутентификации на Python для Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth)
 * [Работа с разбитыми на страницы ответами Microsoft Graph в Python](https://github.com/microsoftgraph/python-sample-pagination)
 * [Работа с открытыми расширениями Graph в Python](https://github.com/microsoftgraph/python-sample-open-extensions)
+* [Подключение веб-приложения Python к API безопасности](https://github.com/microsoftgraph/python-security-rest-sample)
 
-Разместить заявку на пример можно [здесь](https://github.com/microsoftgraph/python-sample-auth/issues). Мы будем рады узнать, какие сценарии Microsoft Graph вы хотели бы реализовать на Python!
+Если вы бы хотели увидеть конкретный пример, [отправьте нам заявку](https://github.com/microsoftgraph/python-sample-auth/issues). Мы будем рады узнать, какие сценарии Microsoft Graph вы хотели бы реализовать на Python!
 
 API Microsoft Graph — единый мощный API, с помощью которого можно взаимодействовать со всеми типами данных Майкрософт. Чтобы узнать больше о возможностях Microsoft Graph, ознакомьтесь с [документацией для разработчиков](https://developer.microsoft.com/ru-RU/graph/docs/concepts/overview) или опробуйте [песочницу Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer).
