@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item Label="ОБЗОР" url="" />
   <Item text="Общие сведения" url="/en-us/concepts/overview" SEOKeyword="Обзор, API Microsoft Graph, обзор" SEODescription="Microsoft Graph позволяет приложениям получать доступ к цифровым данным, связанным с работой и повседневной жизнью, в интеллектуальном облаке Майкрософт. Преимущества для разработчиков: Конечная точка единого API Майкрософт для доступа к данным и аналитике в облаке Майкрософт.">
@@ -243,8 +243,6 @@
       <Item text="Обновление события" url="/en-us/api-reference/v1.0/api/group_update_event" />
       <Item text="Удаление события" url="/en-us/api-reference/v1.0/api/group_delete_event" />
       <Item text="Перечисление представлений календаря" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="Список объектов calendarView, API Microsoft Graph, API для управления группами" SEODescription="Получение списка, включающего объекты событий." />
-      <Item text="Список вложений" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="Список вложений, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Получение списка объектов вложений." />
-      <Item text="Добавление вложения" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Создание объекта Attachment, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="С помощью этого API можно создать объект Attachment." />
       <Item text="Создание открытого расширения" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Получение модуля обработки данных, API Microsoft Graph, API для управления объектами openTypeExtension" SEODescription="Получение свойств и связей объекта openTypeExtension." />
       <Item text="Получение открытого расширения" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Получение модуля обработки данных, API Microsoft Graph, API для управления объектами openTypeExtension" SEODescription="Получение свойств и связей объекта openTypeExtension." />
     </Item>
@@ -1761,9 +1759,9 @@
       <Item text="Вывод сообщения" url="/en-us/api-reference/v1.0/api/message_get" SEOKeyword="Вывод сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Получение свойств и связей объекта сообщений." />
       <Item text="Обновление сообщения" url="/en-us/api-reference/v1.0/api/message_update" SEOKeyword="Обновление сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Обновление свойств, принадлежащих объекту сообщений." />
       <Item text="Удаление сообщения" url="/en-us/api-reference/v1.0/api/message_delete" SEOKeyword="Удаление сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Удаление сообщения." />
-      <Item text="Отправка сообщений" url="/en-us/api-reference/v1.0/api/message_send" SEOKeyword="Отправка сообщений, API Microsoft Graph, API для приложения &quot;Почта Outlook&quot;" SEODescription="Отправка сообщения" />
+      <Item text="Отправка сообщений" url="/en-us/api-reference/v1.0/api/message_send" SEOKeyword="Отправка сообщений, API Microsoft Graph, API Почты Outlook" SEODescription="Отправка сообщения" />
       <Item text="Копирование сообщений" url="/en-us/api-reference/v1.0/api/message_copy" SEOKeyword="Копирование сообщений, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Копирование сообщения" />
-      <Item text="Перемещение сообщений" url="/en-us/api-reference/v1.0/api/message_move" SEOKeyword="Перемещение сообщений, API Microsoft Graph, API для приложения &quot;Почта Outlook&quot;" SEODescription="Перемещение сообщения" />
+      <Item text="Перемещение сообщений" url="/en-us/api-reference/v1.0/api/message_move" SEOKeyword="Перемещение сообщений, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Перемещение сообщения" />
       <Item text="Создание ответов на сообщения" url="/en-us/api-reference/v1.0/api/message_createreply" SEOKeyword="Создание ответов на сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="" />
       <Item text="Ответы на сообщения" url="/en-us/api-reference/v1.0/api/message_reply" SEOKeyword="Ответы на сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Ответы на сообщения" />
       <Item text="Создание ответа на все сообщения" url="/en-us/api-reference/v1.0/api/message_createreplyall" SEOKeyword="Создание ответа на все сообщения, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Создание ответа на все сообщения" />
@@ -1812,7 +1810,7 @@
 	<Item text="Правила" url="/en-us/api-reference/v1.0/resources/messagerule">
 		<Item text="Перечисление правил" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
 		<Item text="Создание правила" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
-		<Item text="Получение правила" url="/en-us/api-reference/v1.0/messagerule_get" />
+		<Item text="Получение правила" url="/en-us/api-reference/v1.0/api/messagerule_get" />
 		<Item text="Обновление правила" url="/en-us/api-reference/v1.0/api/messagerule_update" />
 		<Item text="Удаление правила" url="/en-us/api-reference/v1.0/api/messagerule_delete" />
 	  </Item>
@@ -2200,8 +2198,8 @@
         <Item text="Список представлений календаря" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="Список объектов CalendarView, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты событий." />
         <Item text="Представление напоминаний" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, API Microsoft Graph, API для управления пользователями" SEODescription="" />
         <Item text="Поиск времени собраний" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="пользователь: время для собрания, API Microsoft Graph, API для управления пользователями" SEODescription="" />
-		<Item text="Поиск списков помещений" url="/en-us/api-reference/beta/api/user_findroomlists" />
-		<Item text="Поиск помещений" url="/en-us/api-reference/beta/api/user_findrooms" />
+        <Item text="Поиск списков помещений" url="/en-us/api-reference/beta/api/user_findroomlists" />
+        <Item text="Поиск помещений" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>
       <Item text="Контакты" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="контакты пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="">
         <Item text="Список контактов" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="Список контактов, API Microsoft Graph, API для управления объектами User" SEODescription="Получение списка, включающего объекты контактов." />
@@ -2243,8 +2241,8 @@
         <Item text="Создание папки почты" url="/en-us/api-reference/beta/api/user_post_mailfolders" SEOKeyword="Создание объекта MailFolder, API Microsoft Graph, API для управления объектами User" SEODescription="С помощью этого API можно создать объект MailFolder." />
         <Item text="Отправка почты" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail; API Microsoft Graph, API для управления пользователями" SEODescription="" />
         <Item text="Перечисление правил" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
-		<Item text="Создание правил" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
-		<Item text="Получение подсказок" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
+        <Item text="Создание правил" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
+        <Item text="Получение подсказок" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
       </Item>
       <Item text="Заметки" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="заметки пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="">
         <Item text="Список записных книжек" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Список записных книжек, API Microsoft Graph, API для управления заметками" SEODescription="Получение списка, включающего объекты записных книжек (…/resources/notebook.md)." />
@@ -2325,8 +2323,6 @@
         <Item text="Обновление события" url="/en-us/api-reference/beta/api/group_update_event" />
         <Item text="Удаление события" url="/en-us/api-reference/beta/api/group_delete_event" />
         <Item text="Перечисление представлений календаря" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="Список объектов calendarView, API Microsoft Graph, API для управления группами" SEODescription="Получение списка, включающего объекты событий." />
-        <Item text="Список вложений" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="Список вложений, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Получение списка объектов вложений." />
-        <Item text="Добавление вложения" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Создание объекта Attachment, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="С помощью этого API можно создать объект Attachment." />
         <Item text="Создание открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Создание открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно создать открытое расширение." />
         <Item text="Получение открытого расширения" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Получение открытого расширения, API Microsoft Graph, API для управления сообщениями" SEODescription="С помощью этого API можно получить открытое расширение." />
       </Item>
@@ -2408,7 +2404,7 @@
         <Item text="Обновление события" url="/en-us/api-reference/beta/api/event_update" SEOKeyword="Обновление события, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Обновление свойств, принадлежащих объекту событий." />
         <Item text="Пересылка события" url="/en-us/api-reference/beta/api/event_forward" SEODescription="" />
         <Item text="Удаление события" url="/en-us/api-reference/beta/api/event_delete" SEOKeyword="Удаление события, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Удаление события." />
-        <Item text="Отмена события" url="/en-us/api-reference/beta/api/event_cancel" SEOKeyword="Отмена события, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="Отмена события." />
+        <Item text="Отмена события" url="/en-us/api-reference/beta/api/event_cancel" SEOKeyword="Отмена события, API Microsoft Graph, API Календаря Outlook" SEODescription="Отмена события." />
         <Item text="Принятие приглашений на события" url="/en-us/api-reference/beta/api/event_accept" SEOKeyword="Принятие приглашений на события, API Microsoft Graph, API для приложения &quot;Календарь Outlook&quot;" SEODescription="" />
         <Item text="Предварительное принятие" url="/en-us/api-reference/beta/api/event_tentativelyaccept" SEOKeyword="event: tentativelyAccept, API Microsoft Graph, API для управления событиями" SEODescription="" />
         <Item text="Отклонение приглашений на события" url="/en-us/api-reference/beta/api/event_decline" SEOKeyword="event: decline, API Microsoft Graph, API для управления событиями" SEODescription="" />
@@ -2553,8 +2549,8 @@
 			<Item text="Удаление" url="/en-us/api-reference/beta/api/bookingstaffmember_delete" />
 		</Item>
 	</Item>
-	<Item text="Устройства и приложения" ProdTag="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
-      <Item text="Управление приложениями" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
+  <Item text="Устройства и приложения" ProdTag="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
+    <Item text="Управление приложениями" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
         <Item text="Профиль регистрации владельца устройства Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_get" />
@@ -2564,15 +2560,6 @@
           <Item text="Действие revokeToken" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_revoketoken" />
           <Item text="Действие createToken" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_createtoken" />
         </Item>
-        <Item text="Тип данных для элемента схемы конфигурации приложения Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschemaitemdatatype" />
-        <Item text="Элемент схемы конфигурации приложения Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschemaitem" />
-        <Item text="Схема конфигурации приложения Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschema">
-          <Item text="Список" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_update" />
-        </Item>
         <Item text="Приложение Android for Work" url="/en-us/api-reference/beta/resources/intune_apps_androidforworkapp">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_androidforworkapp_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_androidforworkapp_get" />
@@ -2580,6 +2567,15 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_androidforworkapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_androidforworkapp_update" />
         </Item>
+        <Item text="Схема конфигурации приложения Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschema">
+          <Item text="Список" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_update" />
+        </Item>
+        <Item text="Элемент схемы конфигурации приложения Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschemaitem" />
+        <Item text="Тип данных для элемента схемы конфигурации приложения Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschemaitemdatatype" />
         <Item text="Состояние привязки Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkbindstatus" />
         <Item text="Профиль регистрации Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_list" />
@@ -2625,19 +2621,19 @@
           <Item text="Действие syncApps" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_syncapps" />
           <Item text="Действие unbind" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_unbind" />
         </Item>
-        <Item text="Тип данных для элемента схемы конфигурации приложения управляемого магазина Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitemdatatype" />
-        <Item text="Элемент схемы конфигурации приложения управляемого магазина Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitem" />
-        <Item text="Схема конфигурации приложения управляемого магазина Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschema">
+        <Item text="Схема конфигурации управляемого приложения магазина Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschema">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreappconfigurationschema_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreappconfigurationschema_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreappconfigurationschema_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreappconfigurationschema_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreappconfigurationschema_update" />
         </Item>
+        <Item text="Элемент схемы конфигурации управляемого приложения магазина Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitem" />
+        <Item text="Тип данных для элемента схемы конфигурации управляемого приложения магазина Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitemdatatype" />
         <Item text="Минимальная версия операционной системы Android" url="/en-us/api-reference/beta/resources/intune_apps_androidminimumoperatingsystem" />
-        <Item text="Тип действия разрешения Android" url="/en-us/api-reference/beta/resources/intune_apps_androidpermissionactiontype" />
         <Item text="Действие разрешения Android" url="/en-us/api-reference/beta/resources/intune_apps_androidpermissionaction" />
-        <Item text="Приложение из магазина для Android" url="/en-us/api-reference/beta/resources/intune_apps_androidstoreapp">
+        <Item text="Тип действия разрешения Android" url="/en-us/api-reference/beta/resources/intune_apps_androidpermissionactiontype" />
+        <Item text="Приложение из магазина Android" url="/en-us/api-reference/beta/resources/intune_apps_androidstoreapp">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_apps_androidstoreapp_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_androidstoreapp_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_androidstoreapp_create" />
@@ -2646,7 +2642,6 @@
         </Item>
         <Item text="Элемент параметра конфигурации приложения" url="/en-us/api-reference/beta/resources/intune_apps_appconfigurationsettingitem" />
         <Item text="Состояние сертификата" url="/en-us/api-reference/beta/resources/intune_apps_certificatestatus" />
-        <Item text="Состояние соответствия требованиям" url="/en-us/api-reference/beta/resources/intune_apps_compliancestatus" />
         <Item text="Состояние установки устройства" url="/en-us/api-reference/beta/resources/intune_books_deviceinstallstate">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_get" />
@@ -2666,19 +2661,17 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_enterprisecodesigningcertificate_update" />
         </Item>
         <Item text="Исключенные приложения" url="/en-us/api-reference/beta/resources/intune_apps_excludedapps" />
-        <Item text="Сведения о шифровании файлов" url="/en-us/api-reference/beta/resources/intune_apps_fileencryptioninfo" />
-        <Item text="Цель установки" url="/en-us/api-reference/beta/resources/intune_apps_installintent" />
-        <Item text="Цель установки" url="/en-us/api-reference/beta/resources/intune_books_installintent" />
+        <Item text="Информация о шифровании файлов" url="/en-us/api-reference/beta/resources/intune_apps_fileencryptioninfo" />
         <Item text="Состояние установки" url="/en-us/api-reference/beta/resources/intune_books_installstate" />
         <Item text="Тип устройства iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosdevicetype" />
-        <Item text="Настройки назначения бизнес-приложения iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappassignmentsettings" />
-        <Item text="Назначение конфигурации подготовки бизнес-приложений для iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfigurationassignment">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_update" />
+        <Item text="Бизнес-приложение iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_update" />
         </Item>
+        <Item text="Настройки назначения бизнес-приложения iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="Конфигурация подготовки бизнес-приложений iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_get" />
@@ -2687,12 +2680,12 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_update" />
           <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_assign" />
         </Item>
-        <Item text="Бизнес-приложение iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_update" />
+        <Item text="Назначение конфигурации подготовки бизнес-приложений для iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfigurationassignment">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_update" />
         </Item>
         <Item text="Минимальная версия операционной системы iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosminimumoperatingsystem" />
         <Item text="Настройка мобильных приложений для iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosmobileappconfiguration">
@@ -2702,7 +2695,6 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_iosmobileappconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_iosmobileappconfiguration_update" />
         </Item>
-        <Item text="Настройки назначения приложения из магазина iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosstoreappassignmentsettings" />
         <Item text="Приложение из магазина iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosstoreapp">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_get" />
@@ -2710,7 +2702,7 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_update" />
         </Item>
-        <Item text="Настройки назначения приложения iOS, приобретенного по программе VPP" url="/en-us/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="Настройки назначения приложения из магазина iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosstoreappassignmentsettings" />
         <Item text="Приложение iOS, приобретенное по программе VPP" url="/en-us/api-reference/beta/resources/intune_apps_iosvppapp">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_get" />
@@ -2718,19 +2710,20 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_update" />
         </Item>
-        <Item text="Назначение электронной книги VPP для iOS" url="/en-us/api-reference/beta/resources/intune_books_iosvppebookassignment">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update" />
-        </Item>
+        <Item text="Настройки назначения приложения iOS, приобретенного по программе VPP" url="/en-us/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings" />
         <Item text="Электронная книга VPP для iOS" url="/en-us/api-reference/beta/resources/intune_books_iosvppebook">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_update" />
+        </Item>
+        <Item text="Назначение электронной книги VPP для iOS" url="/en-us/api-reference/beta/resources/intune_books_iosvppebookassignment">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update" />
         </Item>
         <Item text="Бизнес-приложение macOS" url="/en-us/api-reference/beta/resources/intune_apps_macoslobapp">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_list" />
@@ -2762,10 +2755,15 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_managedandroidstoreapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_managedandroidstoreapp_update" />
         </Item>
-        <Item text="Доступность управляемого приложения" url="/en-us/api-reference/beta/resources/intune_apps_managedappavailability" />
         <Item text="Управляемое приложение" url="/en-us/api-reference/beta/resources/intune_apps_managedapp">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_managedapp_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_managedapp_get" />
+        </Item>
+        <Item text="Доступность управляемого приложения" url="/en-us/api-reference/beta/resources/intune_apps_managedappavailability" />
+        <Item text="Конфигурация мобильного приложения на управляемом устройстве" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
         </Item>
         <Item text="Назначение конфигурации мобильных приложений для управляемых устройств" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationassignment">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_list" />
@@ -2796,10 +2794,10 @@
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationusersummary_get" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationusersummary_update" />
         </Item>
-        <Item text="Конфигурация мобильного приложения на управляемом устройстве" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
+        <Item text="Управление электронной книгой" url="/en-us/api-reference/beta/resources/intune_books_managedebook">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_books_managedebook_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_books_managedebook_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="Назначение управляемой электронной книги" url="/en-us/api-reference/beta/resources/intune_books_managedebookassignment">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_list" />
@@ -2814,11 +2812,6 @@
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_books_managedebookcategory_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_books_managedebookcategory_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_books_managedebookcategory_update" />
-        </Item>
-        <Item text="Управление электронной книгой" url="/en-us/api-reference/beta/resources/intune_books_managedebook">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_books_managedebook_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_books_managedebook_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="Управляемые бизнес-приложения для iOS" url="/en-us/api-reference/beta/resources/intune_apps_managedioslobapp">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_managedioslobapp_list" />
@@ -2839,7 +2832,6 @@
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_managedmobilelobapp_get" />
         </Item>
         <Item text="Тип ключа конфигурации приложения MDM" url="/en-us/api-reference/beta/resources/intune_apps_mdmappconfigkeytype" />
-        <Item text="Настройки назначения приложения из Microsoft Store для бизнеса" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
         <Item text="Приложение Microsoft Store для бизнеса" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_get" />
@@ -2847,6 +2839,7 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_update" />
         </Item>
+        <Item text="Настройки назначения приложения из Microsoft Store для бизнеса" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
         <Item text="Отдельное приложение из Microsoft Store для бизнеса" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesscontainedapp">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_get" />
@@ -2855,7 +2848,12 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_update" />
         </Item>
         <Item text="Тип лицензии Microsoft Store для бизнеса" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesslicensetype" />
-        <Item text="Настройки назначения мобильного приложения" url="/en-us/api-reference/beta/resources/intune_apps_mobileappassignmentsettings" />
+        <Item text="Мобильное приложение" url="/en-us/api-reference/beta/resources/intune_apps_mobileapp">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_assign" />
+          <Item text="getTopMobileApps" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_gettopmobileapps" />
+        </Item>
         <Item text="Назначение мобильного приложения" url="/en-us/api-reference/beta/resources/intune_apps_mobileappassignment">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_get" />
@@ -2863,6 +2861,7 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_update" />
         </Item>
+        <Item text="Настройки назначения мобильного приложения" url="/en-us/api-reference/beta/resources/intune_apps_mobileappassignmentsettings" />
         <Item text="Категория мобильных приложений" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcategory">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcategory_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_mobileappcategory_get" />
@@ -2870,7 +2869,13 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcategory_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcategory_update" />
         </Item>
-        <Item text="Состояние отправки файла содержимого мобильного приложения" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontentfileuploadstate" />
+        <Item text="Содержимое мобильных приложений" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontent">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_update" />
+        </Item>
         <Item text="Файл содержимого мобильного приложения" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontentfile">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_get" />
@@ -2880,13 +2885,7 @@
           <Item text="Действие commit" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_commit" />
           <Item text="Действие renewUpload" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_renewupload" />
         </Item>
-        <Item text="Содержимое мобильных приложений" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontent">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_update" />
-        </Item>
+        <Item text="Состояние отправки файла содержимого мобильного приложения" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontentfileuploadstate" />
         <Item text="Состояние установки мобильных приложений" url="/en-us/api-reference/beta/resources/intune_apps_mobileappinstallstatus">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_mobileappinstallstatus_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_mobileappinstallstatus_get" />
@@ -2906,12 +2905,6 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_mobileappprovisioningconfiggroupassignment_update" />
         </Item>
         <Item text="Состояние публикации мобильного приложения" url="/en-us/api-reference/beta/resources/intune_apps_mobileapppublishingstate" />
-        <Item text="Мобильное приложение" url="/en-us/api-reference/beta/resources/intune_apps_mobileapp">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_assign" />
-          <Item text="getTopMobileApps" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_gettopmobileapps" />
-        </Item>
         <Item text="Отдельное мобильное приложение" url="/en-us/api-reference/beta/resources/intune_apps_mobilecontainedapp">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_apps_mobilecontainedapp_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_mobilecontainedapp_get" />
@@ -2930,8 +2923,6 @@
         </Item>
         <Item text="Отображаемый уровень хода установки набора Office" url="/en-us/api-reference/beta/resources/intune_apps_officesuiteinstallprogressdisplaylevel" />
         <Item text="Канал обновления Office" url="/en-us/api-reference/beta/resources/intune_apps_officeupdatechannel" />
-        <Item text="Итоговое состояние приложения" url="/en-us/api-reference/beta/resources/intune_apps_resultantappstate" />
-        <Item text="Сохраненные параметры создания состояния пользовательского интерфейса" url="/en-us/api-reference/beta/resources/intune_apps_saveduistategenerationoptions" />
         <Item text="Сертификат подписывания кода Symantec" url="/en-us/api-reference/beta/resources/intune_apps_symanteccodesigningcertificate">
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_symanteccodesigningcertificate_get" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_symanteccodesigningcertificate_update" />
@@ -2951,7 +2942,6 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_update" />
         </Item>
         <Item text="Тип лицензирования VPP" url="/en-us/api-reference/beta/resources/intune_apps_vpplicensingtype" />
-        <Item text="Тип учетной записи токена VPP" url="/en-us/api-reference/beta/resources/intune_apps_vpptokenaccounttype" />
         <Item text="Веб-приложение" url="/en-us/api-reference/beta/resources/intune_apps_webapp">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_webapp_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_webapp_get" />
@@ -2959,7 +2949,6 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_webapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_webapp_update" />
         </Item>
-        <Item text="Настройки назначения приложения Windows AppX" url="/en-us/api-reference/beta/resources/intune_apps_windowsappxappassignmentsettings" />
         <Item text="Windows AppX" url="/en-us/api-reference/beta/resources/intune_apps_windowsappx">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_apps_windowsappx_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_windowsappx_get" />
@@ -2967,6 +2956,7 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_windowsappx_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_windowsappx_update" />
         </Item>
+        <Item text="Настройки назначения приложения Windows AppX" url="/en-us/api-reference/beta/resources/intune_apps_windowsappxappassignmentsettings" />
         <Item text="Архитектура Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsarchitecture" />
         <Item text="Тип устройства Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsdevicetype" />
         <Item text="Минимальная версия операционной системы Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsminimumoperatingsystem" />
@@ -2978,19 +2968,19 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_windowsmobilemsi_update" />
         </Item>
         <Item text="Информация о пакете Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowspackageinformation" />
-        <Item text="AppX-пакет Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_apps_windowsphone81appxbundle">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_update" />
-        </Item>
         <Item text="Windows Phone 8.1 AppX" url="/en-us/api-reference/beta/resources/intune_apps_windowsphone81appx">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_update" />
+        </Item>
+        <Item text="AppX-пакет Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_apps_windowsphone81appxbundle">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_update" />
         </Item>
         <Item text="Приложение из магазина Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_apps_windowsphone81storeapp">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81storeapp_list" />
@@ -3013,6 +3003,13 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_windowsstoreapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_windowsstoreapp_update" />
         </Item>
+        <Item text="Windows Universal AppX" url="/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappx">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_update" />
+        </Item>
         <Item text="Настройки назначения универсального приложения Windows AppX" url="/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappxappassignmentsettings" />
         <Item text="Отдельное универсальное приложение Windows AppX" url="/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappxcontainedapp">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappxcontainedapp_list" />
@@ -3021,15 +3018,15 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappxcontainedapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappxcontainedapp_update" />
         </Item>
-        <Item text="Windows Universal AppX" url="/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappx">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_update" />
-        </Item>
       </Item>
       <Item text="Условия компании" url="/en-us/api-reference/beta/resources/intune_company_conceptual">
+        <Item text="Условия" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditions">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_update" />
+        </Item>
         <Item text="Состояние принятия условий" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditionsacceptancestatus">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_get" />
@@ -3050,13 +3047,6 @@
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_update" />
-        </Item>
-        <Item text="Условия" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditions">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_update" />
         </Item>
       </Item>
       <Item text="Корпоративная регистрация" url="/en-us/api-reference/beta/resources/intune_corporate_enrollment_conceptual">
@@ -3081,7 +3071,6 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_update" />
         </Item>
-        <Item text="Тип токена DEP" url="/en-us/api-reference/beta/resources/intune_enrollment_deptokentype" />
         <Item text="Источник обнаружения" url="/en-us/api-reference/beta/resources/intune_corpenrollment_discoverysource" />
         <Item text="Профиль регистрации" url="/en-us/api-reference/beta/resources/intune_corpenrollment_enrollmentprofile">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_list" />
@@ -3091,16 +3080,6 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_update" />
           <Item text="Действие updateDeviceProfileAssignment" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment" />
         </Item>
-        <Item text="Состояние регистрации" url="/en-us/api-reference/beta/resources/intune_corpenrollment_enrollmentstate" />
-        <Item text="Состояние регистрации" url="/en-us/api-reference/beta/resources/intune_enrollment_enrollmentstate" />
-        <Item text="Режим связывания с iTunes" url="/en-us/api-reference/beta/resources/intune_corpenrollment_itunespairingmode" />
-        <Item text="Результат, касающийся импортированного удостоверения устройства Apple" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentityresult">
-          <Item text="Список" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_update" />
-        </Item>
         <Item text="Импортированное удостоверение устройства Apple" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentity">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_get" />
@@ -3109,14 +3088,13 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_update" />
           <Item text="Действие importAppleDeviceIdentityList" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_importappledeviceidentitylist" />
         </Item>
-        <Item text="Результат, связанный с импортированным удостоверением устройства" url="/en-us/api-reference/beta/resources/intune_enrollment_importeddeviceidentityresult">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_update" />
+        <Item text="Результат импорта удостоверения устройства Apple" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentityresult">
+          <Item text="Список" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_update" />
         </Item>
-        <Item text="Тип импортированного удостоверения устройства" url="/en-us/api-reference/beta/resources/intune_enrollment_importeddeviceidentitytype" />
         <Item text="Импортированное удостоверение устройства" url="/en-us/api-reference/beta/resources/intune_enrollment_importeddeviceidentity">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_get" />
@@ -3125,32 +3103,39 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_update" />
           <Item text="Действие importDeviceIdentityList" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_importdeviceidentitylist" />
         </Item>
-        <Item text="Состояние импорта идентификатора устройства с Windows AutoPilot" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus" />
-        <Item text="Состояние импортированного идентификатора устройства с Windows AutoPilot" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
-        <Item text="Импортированный идентификатор устройства с Windows AutoPilot" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
+        <Item text="Результат импорта удостоверения устройства" url="/en-us/api-reference/beta/resources/intune_enrollment_importeddeviceidentityresult">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_update" />
+        </Item>
+        <Item text="Тип импортированного удостоверения устройства" url="/en-us/api-reference/beta/resources/intune_enrollment_importeddeviceidentitytype" />
+        <Item text="Импортированное удостоверение устройства с Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_update" />
         </Item>
+        <Item text="Состояние импорта удостоверения устройства с Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus" />
+        <Item text="Состояние импортированного удостоверения устройства с Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
+        <Item text="Режим связывания с iTunes" url="/en-us/api-reference/beta/resources/intune_corpenrollment_itunespairingmode" />
         <Item text="Сертификат управления с отпечатком" url="/en-us/api-reference/beta/resources/intune_corpenrollment_managementcertificatewiththumbprint" />
         <Item text="Параметры запуска при первом включении компьютера" url="/en-us/api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings" />
-        <Item text="Платформа" url="/en-us/api-reference/beta/resources/intune_corpenrollment_platform" />
-        <Item text="Платформа" url="/en-us/api-reference/beta/resources/intune_enrollment_platform" />
-        <Item text="Сохраненные параметры создания состояния пользовательского интерфейса" url="/en-us/api-reference/beta/resources/intune_enrollment_saveduistategenerationoptions" />
-        <Item text="Назначение профиля Windows AutoPilot Deployment" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofileassignment">
+        <Item text="Параметры регистрации в Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotenrollmentsettings" />
+        <Item text="Профиль Windows Autopilot Deployment" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile">
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign" />
+        </Item>
+        <Item text="Назначение профиля Windows Autopilot Deployment" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofileassignment">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_update" />
         </Item>
-        <Item text="Профиль Windows AutoPilot Deployment" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile">
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign" />
-        </Item>
-        <Item text="Идентификатор устройства с Windows AutoPilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity">
+        <Item text="Удостоверение устройства с Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_create" />
@@ -3163,11 +3148,8 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_update" />
           <Item text="Действие sync" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync" />
         </Item>
-        <Item text="Состояние синхронизации Windows AutoPilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotsyncstatus" />
-        <Item text="Настройка объединения доменов Windows" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsdomainjoinconfiguration">
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_get" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_update" />
-        </Item>
+        <Item text="Состояние синхронизации Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotsyncstatus" />
+        <Item text="Тип использования устройства Windows" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsdeviceusagetype" />
         <Item text="Параметры экрана состояния регистрации Windows" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsenrollmentstatusscreensettings" />
         <Item text="Тип пользователя Windows" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsusertype" />
       </Item>
@@ -3190,24 +3172,6 @@
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_update" />
-        </Item>
-        <Item text="Локальное действие для обеспечения соответствия устройств Android требованиям: базовое" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionbase">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionbase_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionbase_get" />
-        </Item>
-        <Item text="Локальное действие для обеспечения соответствия устройств Android требованиям: блокировка устройства с помощью секретного кода" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_update" />
-        </Item>
-        <Item text="Локальное действие для обеспечения соответствия устройств Android требованиям: блокировка устройства" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice">
-          <Item text="Список" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_update" />
         </Item>
         <Item text="Режим подключения аккумулятора для владельца устройства с Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddeviceownerbatterypluggedmode" />
         <Item text="Тип политики разрешений приложения по умолчанию для владельца устройства с Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddeviceownerdefaultapppermissionpolicytype" />
@@ -3387,7 +3351,14 @@
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecertificateprofilebase_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecertificateprofilebase_get" />
         </Item>
-        <Item text="Тип доступа к данным между рабочими профилями Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype" />
+        <Item text="Политика соответствия требованиям рабочего профиля Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidworkprofilecompliancepolicy">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_update" />
+        </Item>
+        <Item text="Тип общего доступа к данным из рабочего профиля Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype" />
         <Item text="Пользовательская конфигурация рабочего профиля Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidworkprofilecustomconfiguration">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecustomconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecustomconfiguration_get" />
@@ -3497,7 +3468,6 @@
         <Item text="Целевое хранилище сертификатов" url="/en-us/api-reference/beta/resources/intune_deviceconfig_certificatedestinationstore" />
         <Item text="Хранилище сертификатов" url="/en-us/api-reference/beta/resources/intune_deviceconfig_certificatestore" />
         <Item text="Шкала срока действия сертификата" url="/en-us/api-reference/beta/resources/intune_deviceconfig_certificatevalidityperiodscale" />
-        <Item text="Состояние соответствия требованиям" url="/en-us/api-reference/beta/resources/intune_deviceconfig_compliancestatus" />
         <Item text="Использование конфигурации" url="/en-us/api-reference/beta/resources/intune_deviceconfig_configurationusage" />
         <Item text="День недели" url="/en-us/api-reference/beta/resources/intune_deviceconfig_dayofweek" />
         <Item text="Политика соответствия устройств требованиям по умолчанию" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defaultdevicecompliancepolicy">
@@ -3515,8 +3485,10 @@
         <Item text="Запрос Защитника на отправку образца" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderpromptforsamplesubmission" />
         <Item text="Тип защиты для Защитника" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderprotectiontype" />
         <Item text="Тип сканирования для Защитника" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderscantype" />
+        <Item text="День запланированного сканирования в Защитнике" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderschedulescanday" />
         <Item text="Тип отображения контактного лица из ИТ-отдела центра безопасности в Защитнике" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defendersecuritycenteritcontactdisplaytype" />
         <Item text="Тип уведомлений центра безопасности из приложения для Защитника" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defendersecuritycenternotificationsfromapptype" />
+        <Item text="Тип согласия на отправку образцов в Защитнике" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defendersubmitsamplesconsenttype" />
         <Item text="Действие Защитника при обнаружении угрозы" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderthreataction" />
         <Item text="Элемент действия, касающегося соответствия устройств требованиям" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceactionitem_list" />
@@ -3537,6 +3509,12 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancedevicestatus_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancedevicestatus_update" />
         </Item>
+        <Item text="Политика соответствия устройств требованиям" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy">
+          <Item text="Список" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
+          <Item text="Действие scheduleActionsForRules" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
+        </Item>
         <Item text="Назначение политик соответствия устройств требованиям" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicyassignment">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicyassignment_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicyassignment_get" />
@@ -3548,21 +3526,15 @@
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_get" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_update" />
         </Item>
-        <Item text="Общие сведения о состоянии параметра политики соответствия устройств требованиям" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary">
+        <Item text="Состояние соответствия устройства параметру политики" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
+        <Item text="Сводка по состоянию соответствия устройств параметру политики" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_update" />
         </Item>
-        <Item text="Состояние параметра политики соответствия устройств требованиям" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
-        <Item text="Политика соответствия устройств требованиям" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy">
-          <Item text="Список" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
-          <Item text="Действие scheduleActionsForRules" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
-        </Item>
-        <Item text="Запланированное действие для правила, касающееся соответствия устройств требованиям" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancescheduledactionforrule">
+        <Item text="Запланированное действие для правила соответствия требованиям" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancescheduledactionforrule">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancescheduledactionforrule_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancescheduledactionforrule_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancescheduledactionforrule_create" />
@@ -3587,7 +3559,14 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceuserstatus_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceuserstatus_update" />
         </Item>
-        <Item text="Назначение конфигураций устройств" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
+        <Item text="Настройка устройства" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
+          <Item text="Действие windowsPrivacyAccessControls" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
+          <Item text="Действие assignedAccessMultiModeProfiles" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
+        </Item>
+        <Item text="Назначение конфигурации устройств" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationassignment_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationassignment_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationassignment_create" />
@@ -3632,27 +3611,24 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuserstatus_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuserstatus_update" />
         </Item>
-        <Item text="Настройка устройства" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
-          <Item text="Действие windowsPrivacyAccessControls" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
-          <Item text="Действие assignedAccessMultiModeProfiles" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
-        </Item>
         <Item text="Тип защиты учетных данных для местного системного центра в Device Guard" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceguardlocalsystemauthoritycredentialguardtype" />
         <Item text="Параметры управления устройствами" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings" />
         <Item text="Тип платформы устройства" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceplatformtype" />
         <Item text="Уровень защиты устройства от угроз" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicethreatprotectionlevel" />
-        <Item text="Тип устройства" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicetype" />
         <Item text="Режим отправки диагностических данных" url="/en-us/api-reference/beta/resources/intune_deviceconfig_diagnosticdatasubmissionmode" />
+        <Item text="Источник доменных имен" url="/en-us/api-reference/beta/resources/intune_deviceconfig_domainnamesource" />
         <Item text="Быстрая настройка EAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_eapfastconfiguration" />
         <Item text="Тип EAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_eaptype" />
         <Item text="Метод проверки подлинности EAS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_easauthenticationmethod" />
+        <Item text="Базовая конфигурация профилей электронной почты EAS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_easemailprofileconfigurationbase">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_easemailprofileconfigurationbase_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_easemailprofileconfigurationbase_get" />
+        </Item>
         <Item text="Политика для файлов cookie в Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgecookiepolicy" />
-        <Item text="Поисковая система Edge, базовая" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchenginebase" />
+        <Item text="Поисковая система Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchengine" />
+        <Item text="Базовая поисковая система Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchenginebase" />
         <Item text="Поисковая система Edge, пользовательская" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchenginecustom" />
         <Item text="Тип поисковой системы Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchenginetype" />
-        <Item text="Поисковая система Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchengine" />
         <Item text="Конфигурация обновления выпуска" url="/en-us/api-reference/beta/resources/intune_deviceconfig_editionupgradeconfiguration">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_get" />
@@ -3673,13 +3649,13 @@
         <Item text="Первоначальная цель" url="/en-us/api-reference/beta/resources/intune_deviceconfig_intendedpurpose" />
         <Item text="Уровень безопасности сайта в Интернете" url="/en-us/api-reference/beta/resources/intune_deviceconfig_internetsitesecuritylevel" />
         <Item text="Закладка iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosbookmark" />
-        <Item text="База профилей сертификатов для iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_get" />
-        </Item>
-        <Item text="Профиль сертификата iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofile">
+        <Item text="Профиль сертификатов для iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofile">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofile_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofile_get" />
+        </Item>
+        <Item text="Базовый профиль сертификатов для iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_get" />
         </Item>
         <Item text="Политика соответствия для iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscompliancepolicy">
           <Item text="Список" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscompliancepolicy_list" />
@@ -3738,9 +3714,9 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosgeneraldeviceconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosgeneraldeviceconfiguration_update" />
         </Item>
-        <Item text="Начальный экран приложения iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenapp" />
-        <Item text="Страница папки начального экрана iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolderpage" />
+        <Item text="Приложение начального экрана iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenapp" />
         <Item text="Папка начального экрана iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolder" />
+        <Item text="Страница папки начального экрана iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="Элемент начального экрана iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenitem" />
         <Item text="Страница начального экрана iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenpage" />
         <Item text="Профиль импортированного сертификата PFX для iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosimportedpfxcertificateprofile">
@@ -3810,11 +3786,13 @@
         <Item text="Размер ключа" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keysize" />
         <Item text="Параметр поставщика хранилища ключей" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keystorageprovideroption" />
         <Item text="Использование ключей" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keyusages" />
-        <Item text="Локальные параметры безопасности: тип поведения при запросе на повышение прав администратора" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsadministratorelevationpromptbehaviortype" />
+        <Item text="Значение ключа" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keyvalue" />
+        <Item text="Локальные параметры безопасности: режим отображения запроса для повышения прав администратора" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsadministratorelevationpromptbehaviortype" />
         <Item text="Локальные параметры безопасности: разрешенный тип пользователя для форматирования и извлечения съемных носителей" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsformatandejectofremovablemediaallowedusertype" />
         <Item text="Локальные параметры безопасности: тип сведений, отображаемых на экране блокировки" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsinformationdisplayedonlockscreentype" />
-        <Item text="Локальные параметры безопасности: тип сведений, показываемых на экране блокировки" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsinformationshownonlockscreentype" />
-        <Item text="Локальные параметры безопасности: тип поведения при запросе на повышение прав стандартного пользователя" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsstandarduserelevationpromptbehaviortype" />
+        <Item text="Локальные параметры безопасности: тип информации, показываемой на экране блокировки" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsinformationshownonlockscreentype" />
+        <Item text="Локальные параметры безопасности: поведение при извлечении смарт-карты" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionssmartcardremovalbehaviortype" />
+        <Item text="Локальные параметры безопасности: режим отображения запроса для повышения прав стандартного пользователя" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsstandarduserelevationpromptbehaviortype" />
         <Item text="База профилей сертификатов для macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get" />
@@ -3916,7 +3894,6 @@
         <Item text="Оценка мультимедийного содержимого для Соединенного Королевства" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedkingdom" />
         <Item text="Рейтинг мультимедийного содержимого для Соединенных Штатов" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedstates" />
         <Item text="Канал Miracast" url="/en-us/api-reference/beta/resources/intune_deviceconfig_miracastchannel" />
-        <Item text="Состояние соединителя NDES" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ndesconnectorstate" />
         <Item text="Соединитель NDES" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ndesconnector">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_get" />
@@ -3924,17 +3901,18 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_update" />
         </Item>
-        <Item text="Метод проверки подлинности, отличный от EAP, для тип TTLS EAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_noneapauthenticationmethodforeapttlstype" />
+        <Item text="Состояние соединителя NDES" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ndesconnectorstate" />
+        <Item text="Метод проверки подлинности, отличный от EAP, для EAP-TLS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_noneapauthenticationmethodforeapttlstype" />
         <Item text="Метод проверки подлинности, отличный от EAP, для PEAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_noneapauthenticationmethodforpeap" />
         <Item text="Диапазон чисел" url="/en-us/api-reference/beta/resources/intune_deviceconfig_numberrange" />
+        <Item text="Параметр OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasetting" />
         <Item text="Параметр OMA, base64" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingbase64" />
         <Item text="Параметр OMA, логическое значение" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingboolean" />
         <Item text="Параметр OMA, дата и время" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingdatetime" />
         <Item text="Параметр OMA, число с плавающей точкой" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingfloatingpoint" />
         <Item text="Параметр OMA, целое число" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettinginteger" />
-        <Item text="Параметр OMA, строка, XML" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingstringxml" />
         <Item text="Параметр OMA, строка" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingstring" />
-        <Item text="Параметр OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasetting" />
+        <Item text="Параметр OMA, строка, XML" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingstringxml" />
         <Item text="Диапазон версий операционной системы" url="/en-us/api-reference/beta/resources/intune_deviceconfig_operatingsystemversionrange" />
         <Item text="Тип платформы политики" url="/en-us/api-reference/beta/resources/intune_deviceconfig_policyplatformtype" />
         <Item text="Предварительные версии функций" url="/en-us/api-reference/beta/resources/intune_deviceconfig_prereleasefeatures" />
@@ -3967,7 +3945,6 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_restrictedappsviolation_update" />
         </Item>
         <Item text="Тип фильтра для безопасного поиска" url="/en-us/api-reference/beta/resources/intune_deviceconfig_safesearchfiltertype" />
-        <Item text="Сохраненные параметры создания состояния пользовательского интерфейса" url="/en-us/api-reference/beta/resources/intune_deviceconfig_saveduistategenerationoptions" />
         <Item text="Тип учетной записи для безопасной оценки" url="/en-us/api-reference/beta/resources/intune_deviceconfig_secureassessmentaccounttype" />
         <Item text="Источник параметра" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingsource" />
         <Item text="Объект settingStateDeviceSummary" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
@@ -3996,20 +3973,29 @@
         <Item text="Параметры управления состоянием" url="/en-us/api-reference/beta/resources/intune_deviceconfig_statemanagementsetting" />
         <Item text="Тип альтернативного имени субъекта" url="/en-us/api-reference/beta/resources/intune_deviceconfig_subjectalternativenametype" />
         <Item text="Формат имени субъекта" url="/en-us/api-reference/beta/resources/intune_deviceconfig_subjectnameformat" />
+        <Item text="Неподдерживаемая конфигурация устройства" url="/en-us/api-reference/beta/resources/intune_deviceconfig_unsupporteddeviceconfiguration">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_update" />
+        </Item>
+        <Item text="Сведения о неподдерживаемой конфигурации устройства" url="/en-us/api-reference/beta/resources/intune_deviceconfig_unsupporteddeviceconfigurationdetail" />
         <Item text="Классификация обновления" url="/en-us/api-reference/beta/resources/intune_deviceconfig_updateclassification" />
         <Item text="Источник электронной почты пользователя" url="/en-us/api-reference/beta/resources/intune_deviceconfig_useremailsource" />
+        <Item text="Источник имени пользователя" url="/en-us/api-reference/beta/resources/intune_deviceconfig_usernamesource" />
         <Item text="Параметр видимости" url="/en-us/api-reference/beta/resources/intune_deviceconfig_visibilitysetting" />
         <Item text="Метод проверки подлинности VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnauthenticationmethod" />
         <Item text="Правило DNS VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpndnsrule" />
+        <Item text="Правило для VPN по запросу" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandrule" />
         <Item text="Действие при подключении правила для VPN по запросу" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandruleconnectionaction" />
         <Item text="Действие домена при подключении правила для VPN по запросу" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandruleconnectiondomainaction" />
-        <Item text="Правило для VPN по запросу" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandrule" />
         <Item text="Прокси-сервер VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnproxyserver" />
         <Item text="Маршрут VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnroute" />
         <Item text="VPN-сервер" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnserver" />
+        <Item text="Правило трафика VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpntrafficrule" />
         <Item text="Тип приложения для правила трафика VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpntrafficruleapptype" />
         <Item text="Тип политики маршрутизации для правила трафика VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpntrafficruleroutingpolicytype" />
-        <Item text="Правило трафика для VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpntrafficrule" />
         <Item text="Параметры файлов cookie для веб-браузера" url="/en-us/api-reference/beta/resources/intune_deviceconfig_webbrowsercookiesettings" />
         <Item text="Расписание на неделю" url="/en-us/api-reference/beta/resources/intune_deviceconfig_weeklyschedule" />
         <Item text="Сведения о собрании на экране приветствия" url="/en-us/api-reference/beta/resources/intune_deviceconfig_welcomescreenmeetinginformation" />
@@ -4192,14 +4178,29 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
         </Item>
         <Item text="Режим оптимизации доставки в Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdeliveryoptimizationmode" />
-        <Item text="Настройка объединения доменов Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdomainjoinconfiguration">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_update" />
-        </Item>
         <Item text="Сетевой профиль брандмауэра Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsfirewallnetworkprofile" />
+        <Item text="Группу Active Directory киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskactivedirectorygroup" />
+        <Item text="Базовое приложение киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskappbase" />
+        <Item text="Конфигурация приложения киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskappconfiguration" />
+        <Item text="Автоматический вход в киоск Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskautologon" />
+        <Item text="Группа Azure AD киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskazureadgroup" />
+        <Item text="Пользователь Azure AD киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskazureaduser" />
+        <Item text="Конфигурация киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskconfiguration">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_update" />
+        </Item>
+        <Item text="Классическое приложение киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskdesktopapp" />
+        <Item text="Локальная группа киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskiosklocalgroup" />
+        <Item text="Локальный пользователь киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskiosklocaluser" />
+        <Item text="Несколько приложений киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskmultipleapps" />
+        <Item text="Профиль киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskprofile" />
+        <Item text="Отдельное приложение UWP киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskiosksingleuwpapp" />
+        <Item text="Пользователь киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskuser" />
+        <Item text="Приложение UWP киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskuwpapp" />
+        <Item text="Посетитель киоска Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskvisitor" />
         <Item text="Политика сетевой изоляции Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy" />
         <Item text="База профилей сертификатов Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81certificateprofilebase">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81certificateprofilebase_list" />
@@ -4294,9 +4295,8 @@
         <Item text="Тип VPN-подключения для Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsvpnconnectiontype" />
       </Item>
       <Item text="Управление устройствами" url="/en-us/api-reference/beta/resources/intune_devices_conceptual">
-        <Item text="Состояние действия" url="/en-us/api-reference/beta/resources/intune_devices_actionstate" />
-        <Item text="Состояние разрешения администратора" url="/en-us/api-reference/beta/resources/intune_devices_adminconsentstate" />
-        <Item text="Разрешение администратора" url="/en-us/api-reference/beta/resources/intune_devices_adminconsent" />
+        <Item text="Согласие администратора" url="/en-us/api-reference/beta/resources/intune_devices_adminconsent" />
+        <Item text="Состояние согласия администратора" url="/en-us/api-reference/beta/resources/intune_devices_adminconsentstate" />
         <Item text="Сертификат push-уведомлений Apple" url="/en-us/api-reference/beta/resources/intune_devices_applepushnotificationcertificate">
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_get" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_update" />
@@ -4334,15 +4334,23 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_update" />
         </Item>
         <Item text="Результат действия с устройством" url="/en-us/api-reference/beta/resources/intune_devices_deviceactionresult" />
-        <Item text="Тип регистрации устройства" url="/en-us/api-reference/beta/resources/intune_devices_deviceenrollmenttype" />
+        <Item text="Причина сбоя регистрации устройства" url="/en-us/api-reference/beta/resources/intune_troubleshooting_deviceenrollmentfailurereason" />
         <Item text="Сводка по состоянию доступа к Exchange с устройств" url="/en-us/api-reference/beta/resources/intune_devices_deviceexchangeaccessstatesummary" />
         <Item text="Геолокация устройств" url="/en-us/api-reference/beta/resources/intune_devices_devicegeolocation" />
         <Item text="Состояние защиты учетных данных для местного системного центра в Device Guard" url="/en-us/api-reference/beta/resources/intune_devices_deviceguardlocalsystemauthoritycredentialguardstate" />
         <Item text="Состояние требований к защитному оборудованию на основе виртуализации Device Guard" url="/en-us/api-reference/beta/resources/intune_devices_deviceguardvirtualizationbasedsecurityhardwarerequirementstate" />
         <Item text="Состояние защиты на основе виртуализации Device Guard" url="/en-us/api-reference/beta/resources/intune_devices_deviceguardvirtualizationbasedsecuritystate" />
         <Item text="Состояние подтверждения работоспособности устройства" url="/en-us/api-reference/beta/resources/intune_devices_devicehealthattestationstate" />
-        <Item text="Причина состояния доступа к Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementexchangeaccessstatereason" />
         <Item text="Состояние доступа к Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementexchangeaccessstate" />
+        <Item text="Причина состояния доступа к Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementexchangeaccessstatereason" />
+        <Item text="Сценарий управления устройствами" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscript">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_update" />
+          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_assign" />
+        </Item>
         <Item text="Назначение сценария управления устройствами" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptassignment">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_get" />
@@ -4375,14 +4383,6 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_update" />
         </Item>
-        <Item text="Сценарий управления устройствами" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscript">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_update" />
-          <Item text="Действие assign" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_assign" />
-        </Item>
         <Item text="Состояние подписки на управление устройствами" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementsubscriptionstate" />
         <Item text="Подписки на управление устройствами" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementsubscriptions" />
         <Item text="Событие &quot;Устранение проблем с управлением устройствами&quot;" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
@@ -4395,7 +4395,6 @@
         <Item text="Общие сведения об операционной системе устройства" url="/en-us/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary" />
         <Item text="Обзор защиты устройств" url="/en-us/api-reference/beta/resources/intune_devices_deviceprotectionoverview" />
         <Item text="Состояние регистрации устройства" url="/en-us/api-reference/beta/resources/intune_devices_deviceregistrationstate" />
-        <Item text="Тип устройства" url="/en-us/api-reference/beta/resources/intune_devices_devicetype" />
         <Item text="Событие &quot;Устранение проблем с регистрацией&quot;" url="/en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
@@ -4416,20 +4415,13 @@
         <Item text="Результат действия &quot;Поиск устройства&quot;" url="/en-us/api-reference/beta/resources/intune_devices_locatedeviceactionresult" />
         <Item text="Вошедший пользователь" url="/en-us/api-reference/beta/resources/intune_devices_loggedonuser" />
         <Item text="Состояние режима пропажи" url="/en-us/api-reference/beta/resources/intune_devices_lostmodestate" />
-        <Item text="Модели и производители управляемых устройств" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicemodelsandmanufacturers" />
-        <Item text="Обзор управляемых устройств" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceoverview">
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_get" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_update" />
-        </Item>
-        <Item text="Тип владельца управляемого устройства" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceownertype" />
-        <Item text="Указанное состояние работоспособности партнера по управляемым устройствам" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicepartnerreportedhealthstate" />
-        <Item text="Удаленное действие с управляемым устройством" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceremoteaction" />
         <Item text="Управляемое устройство" url="/en-us/api-reference/beta/resources/intune_devices_manageddevice">
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_get" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_update" />
           <Item text="Действие executeAction" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_executeaction" />
           <Item text="Действие enableLostMode" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_enablelostmode" />
           <Item text="Действие playLostModeSound" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_playlostmodesound" />
+          <Item text="Действие setDeviceName" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_setdevicename" />
           <Item text="Действие retire" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_retire" />
           <Item text="Действие wipe" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_wipe" />
           <Item text="Действие resetPasscode" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_resetpasscode" />
@@ -4450,8 +4442,40 @@
           <Item text="Действие updateWindowsDeviceAccount" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
           <Item text="Действие revokeAppleVppLicenses" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses" />
         </Item>
+        <Item text="Настройки очистки управляемых устройств" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicecleanupsettings" />
+        <Item text="Модели и производители управляемых устройств" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicemodelsandmanufacturers" />
+        <Item text="Обзор управляемых устройств" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceoverview">
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_get" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_update" />
+        </Item>
+        <Item text="Тип владельца управляемого устройства" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceownertype" />
+        <Item text="Указанное состояние работоспособности партнера по управляемым устройствам" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicepartnerreportedhealthstate" />
+        <Item text="Удаленное действие с управляемым устройством" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceremoteaction" />
         <Item text="Тип агента управления" url="/en-us/api-reference/beta/resources/intune_devices_managementagenttype" />
         <Item text="Состояние управления" url="/en-us/api-reference/beta/resources/intune_devices_managementstate" />
+        <Item text="Тип действия в мобильном приложении" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileappactiontype" />
+        <Item text="Намерение мобильного приложения" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileappintent" />
+        <Item text="Намерение и состояние мобильного приложения" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileappintentandstate">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_update" />
+        </Item>
+        <Item text="Сведения о намерении и состоянии мобильного приложения" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileappintentandstatedetail" />
+        <Item text="Устранение неполадок с мобильным приложением: история создания политик приложения" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory" />
+        <Item text="Устранение неполадок с мобильным приложением: история состояний приложения" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingappstatehistory" />
+        <Item text="Устранение неполадок с мобильным приложением: история целевых объектов приложения" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingapptargethistory" />
+        <Item text="Устранение неполадок с мобильным приложением: история обновлений приложения" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingappupdatehistory" />
+        <Item text="Устранение неполадок с мобильным приложением: история отметок устройства" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory" />
+        <Item text="Устранение неполадок с мобильным приложением: событие" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingevent">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_update" />
+        </Item>
+        <Item text="Устранение неполадок с мобильным приложением: элемент истории" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem" />
         <Item text="Шаблон сообщения уведомления" url="/en-us/api-reference/beta/resources/intune_notification_notificationmessagetemplate">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_get" />
@@ -4462,6 +4486,7 @@
         </Item>
         <Item text="Параметры фирменной символики для шаблона уведомления" url="/en-us/api-reference/beta/resources/intune_notification_notificationtemplatebrandingoptions" />
         <Item text="Тип владельца" url="/en-us/api-reference/beta/resources/intune_devices_ownertype" />
+        <Item text="Удаленное действие" url="/en-us/api-reference/beta/resources/intune_devices_remoteaction" />
         <Item text="Аудит удаленных действий" url="/en-us/api-reference/beta/resources/intune_devices_remoteactionaudit">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_get" />
@@ -4469,8 +4494,7 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_update" />
         </Item>
-        <Item text="Удаленное действие" url="/en-us/api-reference/beta/resources/intune_devices_remoteaction" />
-        <Item text="Состояние адаптации удаленного помощника" url="/en-us/api-reference/beta/resources/intune_remoteassistance_remoteassistanceonboardingstatus" />
+        <Item text="Состояние подключения удаленного помощника" url="/en-us/api-reference/beta/resources/intune_remoteassistance_remoteassistanceonboardingstatus" />
         <Item text="Партнерская служба удаленного помощника" url="/en-us/api-reference/beta/resources/intune_remoteassistance_remoteassistancepartner">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_get" />
@@ -4485,7 +4509,6 @@
         <Item text="Результат действия &quot;Отзыв VPP-лицензий Apple &quot;" url="/en-us/api-reference/beta/resources/intune_devices_revokeapplevpplicensesactionresult" />
         <Item text="Тип учетной записи, от имени которой запускается приложение" url="/en-us/api-reference/beta/resources/intune_devices_runasaccounttype" />
         <Item text="Расписание запуска" url="/en-us/api-reference/beta/resources/intune_devices_runschedule" />
-        <Item text="Состояние выполнения" url="/en-us/api-reference/beta/resources/intune_devices_runstate" />
         <Item text="Пользователь общего устройства Apple" url="/en-us/api-reference/beta/resources/intune_devices_sharedappledeviceuser" />
         <Item text="Параметр действия &quot;Обновление учетной записи устройства с Windows&quot;" url="/en-us/api-reference/beta/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
         <Item text="Результат действия &quot;Проверка Защитника Windows&quot;" url="/en-us/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult" />
@@ -4518,6 +4541,10 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_update" />
         </Item>
+        <Item text="Тип ресурса windowsManagementApp" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapp">
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_get" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_update" />
+        </Item>
         <Item text="Тип ресурса windowsManagementAppHealthState" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthstate">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_get" />
@@ -4529,16 +4556,12 @@
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_get" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_update" />
         </Item>
-        <Item text="Тип ресурса windowsManagementApp" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapp">
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_get" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_update" />
-        </Item>
         <Item text="Состояние защиты Windows" url="/en-us/api-reference/beta/resources/intune_devices_windowsprotectionstate">
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_get" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_update" />
         </Item>
       </Item>
-      <Item text="Защита приложений" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
+      <Item text="Защита мобильных приложений" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
         <Item text="Защита управляемых приложений для Android" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_get" />
@@ -4584,24 +4607,24 @@
         <Item text="Уровень передачи данных управляемого приложения" url="/en-us/api-reference/beta/resources/intune_mam_managedappdatatransferlevel" />
         <Item text="Состояние диагностики управляемого приложения" url="/en-us/api-reference/beta/resources/intune_mam_managedappdiagnosticstatus" />
         <Item text="Причина пометки управляемого приложения" url="/en-us/api-reference/beta/resources/intune_mam_managedappflaggedreason" />
-        <Item text="Операция с управляемым приложением" url="/en-us/api-reference/beta/resources/intune_mam_managedappoperation">
+        <Item text="Работа управляемых приложений" url="/en-us/api-reference/beta/resources/intune_mam_managedappoperation">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_managedappoperation_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_managedappoperation_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_mam_managedappoperation_create" />
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_mam_managedappoperation_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_mam_managedappoperation_update" />
         </Item>
-        <Item text="Кодировка ПИН-кода управляемого приложения" url="/en-us/api-reference/beta/resources/intune_mam_managedapppincharacterset" />
-        <Item text="Сводка по развертыванию политик для управляемых приложений" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
-        <Item text="Сводка по развертыванию политик для управляемых приложений" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummary">
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_get" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_update" />
-        </Item>
+        <Item text="Набор символов ПИН-кода управляемого приложения" url="/en-us/api-reference/beta/resources/intune_mam_managedapppincharacterset" />
         <Item text="Политика управляемых приложений" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicy">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get" />
           <Item text="Действие targetApps" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
+        <Item text="Сводка по развертыванию политик для управляемых приложений" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummary">
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_get" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_update" />
+        </Item>
+        <Item text="Развертывание политик для управляемых приложений: сводка по каждому приложению" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
         <Item text="Защита управляемых приложений" url="/en-us/api-reference/beta/resources/intune_mam_managedappprotection">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_get" />
@@ -4611,14 +4634,14 @@
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_managedappregistration_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_managedappregistration_get" />
         </Item>
-        <Item text="Корректирующее действие для управляющего приложения" url="/en-us/api-reference/beta/resources/intune_mam_managedappremediationaction" />
-        <Item text="Состояние управляемого приложения, необработанное" url="/en-us/api-reference/beta/resources/intune_mam_managedappstatusraw">
-          <Item text="Список" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_get" />
-        </Item>
+        <Item text="Действие исправления для управляемого приложения" url="/en-us/api-reference/beta/resources/intune_mam_managedappremediationaction" />
         <Item text="Состояние управляемых приложений" url="/en-us/api-reference/beta/resources/intune_mam_managedappstatus">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_managedappstatus_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_managedappstatus_get" />
+        </Item>
+        <Item text="Состояние управляемого приложения, необработанное" url="/en-us/api-reference/beta/resources/intune_mam_managedappstatusraw">
+          <Item text="Список" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_get" />
         </Item>
         <Item text="Управляемое мобильное приложение" url="/en-us/api-reference/beta/resources/intune_mam_managedmobileapp">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_list" />
@@ -4653,8 +4676,14 @@
         <Item text="Целевая защита управляемых приложений" url="/en-us/api-reference/beta/resources/intune_mam_targetedmanagedappprotection">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_get" />
-          <Item text="Действие assign" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_assign" />
+          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_assign" />
         </Item>
+        <Item text="Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotection">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_assign" />
+        </Item>
+        <Item text="Приложение Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Сводка по обучению для приложения Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_wip_windowsinformationprotectionapplearningsummary">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_wip_windowsinformationprotectionapplearningsummary_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_wip_windowsinformationprotectionapplearningsummary_get" />
@@ -4669,7 +4698,6 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionapplockerfile_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionapplockerfile_update" />
         </Item>
-        <Item text="Приложение Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Сертификат восстановления данных Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectiondatarecoverycertificate" />
         <Item text="Классическое приложение Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectiondesktopapp" />
         <Item text="Уровень применения Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionenforcementlevel" />
@@ -4692,14 +4720,8 @@
         <Item text="Коллекция проксируемых доменов Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionproxieddomaincollection" />
         <Item text="Коллекция ресурсов Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionresourcecollection" />
         <Item text="Приложение из магазина Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionstoreapp" />
-        <Item text="Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotection">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_assign" />
-        </Item>
       </Item>
-      <Item text="Входящая миграция" url="/en-us/api-reference/beta/resources/intune_onboarding_conceptual">
-        <Item text="Состояние действия" url="/en-us/api-reference/beta/resources/intune_onboarding_actionstate" />
+      <Item text="Подключение" url="/en-us/api-reference/beta/resources/intune_onboarding_conceptual">
         <Item text="Параметр соединителя сертификатов" url="/en-us/api-reference/beta/resources/intune_onboarding_certificateconnectorsetting" />
         <Item text="Параметр подключения Программы регистрации устройств" url="/en-us/api-reference/beta/resources/intune_onboarding_deponboardingsetting">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_onboarding_deponboardingsetting_list" />
@@ -4740,11 +4762,8 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update" />
         </Item>
         <Item text="Уровень доступа к Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeaccesslevel" />
-        <Item text="Тип правила доступа к Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeaccessruletype" />
         <Item text="Правило доступа к Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeaccessrule" />
-        <Item text="Состояние соединителя Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectorstatus" />
-        <Item text="Тип синхронизации соединителя Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectorsynctype" />
-        <Item text="Тип соединителя Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectortype" />
+        <Item text="Тип правила доступа к Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeaccessruletype" />
         <Item text="Соединитель Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_get" />
@@ -4753,13 +4772,14 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_update" />
           <Item text="Действие синхронизации" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
         </Item>
+        <Item text="Состояние соединителя Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectorstatus" />
+        <Item text="Тип синхронизации соединителя Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectorsynctype" />
+        <Item text="Тип соединителя Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectortype" />
         <Item text="Класс устройства Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangedeviceclass" />
         <Item text="Локальная политика Exchange для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy">
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_update" />
         </Item>
-        <Item text="Тип партнерского приложения для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnerapptype" />
-        <Item text="Состояние клиента партнера по управлению устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnertenantstate" />
         <Item text="Партнер по управлению устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartner">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_get" />
@@ -4767,6 +4787,8 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_update" />
         </Item>
+        <Item text="Тип партнерского приложения для управления устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnerapptype" />
+        <Item text="Состояние клиента партнера по управлению устройствами" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnertenantstate" />
         <Item text="Включение" url="/en-us/api-reference/beta/resources/intune_onboarding_enablement" />
         <Item text="Назначение конфигураций регистрации" url="/en-us/api-reference/beta/resources/intune_onboarding_enrollmentconfigurationassignment">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_list" />
@@ -4803,13 +4825,7 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_update" />
         </Item>
-        <Item text="Тип учетной записи токена VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenaccounttype" />
-        <Item text="Причина сбоя действия с токеном VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenactionfailurereason" />
-        <Item text="Результат действия с токеном VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenactionresult" />
-        <Item text="Результат действия &quot;Отзыв лицензий с токеном VPP&quot;" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenrevokelicensesactionresult" />
-        <Item text="Состояние токена VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenstate" />
-        <Item text="Состояние синхронизации токена VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokensyncstatus" />
-        <Item text="Токен VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptoken">
+        <Item text="Маркер VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptoken">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_create" />
@@ -4819,6 +4835,11 @@
           <Item text="Действие syncLicenses" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_synclicenses" />
           <Item text="Действие revokeLicenses" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses" />
         </Item>
+        <Item text="Причина сбоя действия с токеном VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenactionfailurereason" />
+        <Item text="Результат действия с токеном VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenactionresult" />
+        <Item text="Результат действия &quot;Отзыв лицензий с токеном VPP&quot;" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenrevokelicensesactionresult" />
+        <Item text="Состояние токена VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenstate" />
+        <Item text="Состояние синхронизации токена VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokensyncstatus" />
         <Item text="Настройка страницы завершения регистрации в Windows 10" url="/en-us/api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_get" />
@@ -4858,6 +4879,7 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_rbac_roleassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_rbac_roleassignment_update" />
         </Item>
+        <Item text="Тип области назначения ролей" url="/en-us/api-reference/beta/resources/intune_rbac_roleassignmentscopetype" />
         <Item text="Определение ролей" url="/en-us/api-reference/beta/resources/intune_rbac_roledefinition">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_get" />
@@ -4866,6 +4888,68 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_update" />
         </Item>
         <Item text="Разрешение роли" url="/en-us/api-reference/beta/resources/intune_rbac_rolepermission" />
+      </Item>
+      <Item text="Общие ресурсы" url="/en-us/api-reference/beta/resources/intune_shared_conceptual">
+        <Item text="Состояние действия" url="/en-us/api-reference/beta/resources/intune_shared_actionstate" />
+        <Item text="Объект назначения для всех устройств" url="/en-us/api-reference/beta/resources/intune_shared_alldevicesassignmenttarget" />
+        <Item text="Объект назначения всех лицензированных пользователей" url="/en-us/api-reference/beta/resources/intune_shared_alllicensedusersassignmenttarget" />
+        <Item text="Состояние соответствия" url="/en-us/api-reference/beta/resources/intune_shared_compliancestatus" />
+        <Item text="Объект назначения для управления устройствами и приложениями" url="/en-us/api-reference/beta/resources/intune_shared_deviceandappmanagementassignmenttarget" />
+        <Item text="Управление приложениями для устройств" url="/en-us/api-reference/beta/resources/intune_shared_deviceappmanagement">
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_get" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_update" />
+          <Item text="Действие syncMicrosoftStoreForBusinessApps" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
+        </Item>
+        <Item text="Категория устройств" url="/en-us/api-reference/beta/resources/intune_shared_devicecategory">
+          <Item text="Список" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_update" />
+        </Item>
+        <Item text="Тип регистрации устройства" url="/en-us/api-reference/beta/resources/intune_shared_deviceenrollmenttype" />
+        <Item text="Управление устройствами" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_get" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_update" />
+        </Item>
+        <Item text="Тип устройства" url="/en-us/api-reference/beta/resources/intune_shared_devicetype" />
+        <Item text="Состояние регистрации" url="/en-us/api-reference/beta/resources/intune_shared_enrollmentstate" />
+        <Item text="Объект назначения группы исключения" url="/en-us/api-reference/beta/resources/intune_shared_exclusiongroupassignmenttarget" />
+        <Item text="Объект назначения группы" url="/en-us/api-reference/beta/resources/intune_shared_groupassignmenttarget" />
+        <Item text="Намерение установки" url="/en-us/api-reference/beta/resources/intune_shared_installintent" />
+        <Item text="Диапазон IP-адресов" url="/en-us/api-reference/beta/resources/intune_shared_iprange" />
+        <Item text="Диапазон IPv4" url="/en-us/api-reference/beta/resources/intune_shared_ipv4range" />
+        <Item text="Диапазон IPv6-адресов" url="/en-us/api-reference/beta/resources/intune_shared_ipv6range" />
+        <Item text="Пара &quot;ключ-значение&quot;" url="/en-us/api-reference/beta/resources/intune_shared_keyvaluepair" />
+        <Item text="Содержимое MIME" url="/en-us/api-reference/beta/resources/intune_shared_mimecontent" />
+        <Item text="Платформа" url="/en-us/api-reference/beta/resources/intune_shared_platform" />
+        <Item text="Проксируемый домен" url="/en-us/api-reference/beta/resources/intune_shared_proxieddomain" />
+        <Item text="Отчет" url="/en-us/api-reference/beta/resources/intune_shared_report" />
+        <Item text="Корневая папка отчета" url="/en-us/api-reference/beta/resources/intune_shared_reportroot">
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_reportroot_get" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_reportroot_update" />
+        </Item>
+        <Item text="Итоговое состояние приложения" url="/en-us/api-reference/beta/resources/intune_shared_resultantappstate" />
+        <Item text="Состояние выполнения" url="/en-us/api-reference/beta/resources/intune_shared_runstate" />
+        <Item text="Сохраненные параметры создания состояния пользовательского интерфейса" url="/en-us/api-reference/beta/resources/intune_shared_saveduistategenerationoptions" />
+        <Item text="Универсальный код ресурса (URI)" url="/en-us/api-reference/beta/resources/intune_shared_uri" />
+        <Item text="Пользователь" url="/en-us/api-reference/beta/resources/intune_shared_user">
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_user_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_shared_user_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_shared_user_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_user_update" />
+          <Item text="Действие removeAllDevicesFromManagement" url="/en-us/api-reference/beta/api/intune_shared_user_removealldevicesfrommanagement" />
+          <Item text="Действие wipeManagedAppRegistrationByDeviceTag" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationbydevicetag" />
+          <Item text="Действие wipeManagedAppRegistrationsByDeviceTag" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationsbydevicetag" />
+        </Item>
+        <Item text="Тип учетной записи токена VPP" url="/en-us/api-reference/beta/resources/intune_shared_vpptokenaccounttype" />
+        <Item text="Конфигурация присоединения к домену Windows" url="/en-us/api-reference/beta/resources/intune_shared_windowsdomainjoinconfiguration">
+          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_list" />
+          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_get" />
+          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_create" />
+          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_update" />
+        </Item>
       </Item>
       <Item text="Затраты на телекоммуникации" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
         <Item text="Партнер по управлению затратами на телекоммуникации" url="/en-us/api-reference/beta/resources/intune_tem_telecomexpensemanagementpartner">
@@ -4876,59 +4960,7 @@
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_tem_telecomexpensemanagementpartner_update" />
         </Item>
       </Item>
-      <Item text="Общий" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
-        <Item text="Цель назначения для всех устройств" url="/en-us/api-reference/beta/resources/intune_shared_alldevicesassignmenttarget" />
-        <Item text="Сколько лицензированных пользователей планируется назначить" url="/en-us/api-reference/beta/resources/intune_shared_alllicensedusersassignmenttarget" />
-        <Item text="Сколько ролей управления устройствами и приложениями планируется назначить" url="/en-us/api-reference/beta/resources/intune_shared_deviceandappmanagementassignmenttarget" />
-        <Item text="Управление приложениями для устройств" url="/en-us/api-reference/beta/resources/intune_shared_deviceappmanagement">
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_update" />
-          <Item text="Действие syncMicrosoftStoreForBusinessApps" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
-        </Item>
-        <Item text="Категория устройств" url="/en-us/api-reference/beta/resources/intune_shared_devicecategory">
-          <Item text="Список" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_update" />
-        </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_update" />
-        </Item>
-        <Item text="Сколько групп исключения планируется назначить" url="/en-us/api-reference/beta/resources/intune_shared_exclusiongroupassignmenttarget" />
-        <Item text="Сколько групп планируется назначить" url="/en-us/api-reference/beta/resources/intune_shared_groupassignmenttarget" />
-        <Item text="Диапазон IP-адресов" url="/en-us/api-reference/beta/resources/intune_shared_iprange" />
-        <Item text="Диапазон IPv4" url="/en-us/api-reference/beta/resources/intune_shared_ipv4range" />
-        <Item text="Диапазон IPv6-адресов" url="/en-us/api-reference/beta/resources/intune_shared_ipv6range" />
-        <Item text="Пара &quot;ключ-значение&quot;" url="/en-us/api-reference/beta/resources/intune_shared_keyvaluepair" />
-        <Item text="Содержимое MIME" url="/en-us/api-reference/beta/resources/intune_shared_mimecontent" />
-        <Item text="Проксируемый домен" url="/en-us/api-reference/beta/resources/intune_shared_proxieddomain" />
-        <Item text="Корневая папка отчета" url="/en-us/api-reference/beta/resources/intune_shared_reportroot">
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_reportroot_get" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_reportroot_update" />
-        </Item>
-        <Item text="Отчет" url="/en-us/api-reference/beta/resources/intune_shared_report" />
-        <Item text="Универсальный код ресурса (URI)" url="/en-us/api-reference/beta/resources/intune_shared_uri" />
-        <Item text="Пользователь" url="/en-us/api-reference/beta/resources/intune_shared_user">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_shared_user_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_shared_user_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_shared_user_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_shared_user_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_shared_user_update" />
-          <Item text="Действие removeAllDevicesFromManagement" url="/en-us/api-reference/beta/api/intune_shared_user_removealldevicesfrommanagement" />
-          <Item text="Действие wipeManagedAppRegistrationByDeviceTag" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationbydevicetag" />
-          <Item text="Действие wipeManagedAppRegistrationsByDeviceTag" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationsbydevicetag" />
-        </Item>
-        <Item text="Настройка объединения доменов Windows" url="/en-us/api-reference/beta/resources/intune_shared_windowsdomainjoinconfiguration">
-          <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_list" />
-          <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_get" />
-          <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_create" />
-          <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_update" />
-        </Item>
-      </Item>
-    </Item>
+  </Item>
 	<Item text="Образование" url="/en-us/api-reference/beta/resources/education-overview">
 		<Item text="Учебные заведения" url="/en-us/api-reference/beta/resources/educationschool">
 			<Item text="Перечисление учебных заведений" url="/en-us/api-reference/beta/api/educationroot_list_schools" />
@@ -4985,12 +5017,12 @@
 			<Item text="Получение ресурса сданной работы" url="/en-us/api-reference/beta/api/educationsubmissionresource_get" />
 			<Item text="Удаление ресурса сданной работы" url="/en-us/api-reference/beta/api/educationsubmissionresource_delete" />
 			<Item text="Получение сданной работы" url="/en-us/api-reference/beta/api/educationsubmission_get" />
-			<Item text="Отправка сданной работы" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
-			<Item text="Отзыв сданной работы" url="/en-us/api-reference/beta/api/educationsubmission_recall" />
+			<Item text="Отправка работы" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
+			<Item text="Отмена отправки работы" url="/en-us/api-reference/beta/api/educationsubmission_unsubmit" />
 			<Item text="Перечисление отправленных ресурсов" url="/en-us/api-reference/beta/api/educationsubmission_list_submittedresources" />
 			<Item text="Получение отправленного ресурса" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
-			<Item text="Оценка сданной работы" url="/en-us/api-reference/beta/api/educationsubmission_update" />
-			<Item text="Возврат сданной работы" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+			<Item text="Оценка работы" url="/en-us/api-reference/beta/api/educationsubmission_update" />
+			<Item text="Возврат работы" url="/en-us/api-reference/beta/api/educationsubmission_return" />
 		</Item>
 		<Item text="Профиль синхронизации" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile">
 			<Item text="Определение профиля" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
@@ -5065,7 +5097,7 @@
       </Item>
       <Item text="Назначение роли приложения" url="/en-us/api-reference/beta/resources/approleassignment" SEOKeyword="API для управления объектами appRoleAssignment, API Microsoft Graph, API для управления объектами appRoleAssignment" SEODescription="Используется для записи при назначении пользователя или группы приложению. В этом случае после назначения роли будет отображаться плитка приложения на панели доступа к приложениям пользователя. Кроме того, с помощью этого объекта можно предоставить другому приложению (моделируемому как субъект-служба) доступ к приложению ресурса в определенной роли. Вы можете создавать, просматривать, обновлять и удалять назначенные роли. Наследует от DirectoryObject.">
           <Item text="Получение объекта AppRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_get" SEOKeyword="Получение объекта appRoleAssignment, API Microsoft Graph, API для управления appRoleAssignment" SEODescription="Получение свойств и связей объекта appRoleAssignment." />
-          <Item text="Обновление объекта AppRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_update" SEOKeyword="Обновление объекта appRoleAssignment, API Microsoft Graph, API для управления appRoleAssignment" SEODescription="Обновление свойств объекта appRoleAssignment." />
+          <Item text="Обновление объекта AppRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_update" SEOKeyword="Обновление объекта appRoleAssignment, API Microsoft Graph, API для управления appRoleAssignment" SEODescription="Обновление свойств объекта approleassignment." />
           <Item text="Удаление объекта AppRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_delete" SEOKeyword="Удаление объекта appRoleAssignment, API Microsoft Graph, API для управления appRoleAssignment" SEODescription="Удаление объекта appRoleAssignment." />
         </Item>
       <Item text="Приложение" url="/en-us/api-reference/beta/resources/application" SEOKeyword="API для управления приложениями, API Microsoft Graph, API для управления приложениями" SEODescription="">
@@ -5202,8 +5234,8 @@
         <Item text="Обновление политики" url="/en-us/api-reference/beta/api/policy_update" SEODescription="Обновление свойств политики." />
         <Item text="Удаление политики" url="/en-us/api-reference/beta/api/policy_delete" SEODescription="Удаление существующей политики." />
         <Item text="Назначение политики" url="/en-us/api-reference/beta/api/policy_assign" SEODescription="Назначение политик таким объектам организации, как приложения и субъекты-службы." />
-        <Item text="Список назначенных политик" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="Список политик, назначенных сущности." />
-        <Item text="Список связанных приложений" url="/en-us/api-reference/beta/api/policy_list_appliesto" SEODescription="Перечисление приложений и субъектов-служб, к которым применена та или иная политика." />
+        <Item text="Перечисление назначенных политик" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="Перечисление политик, назначенных сущности." />
+        <Item text="Перечисление субъектов-служб и приложений" url="/en-us/api-reference/beta/api/policy_list_appliesto" SEODescription="Перечисление приложений и субъектов-служб, к которым применена та или иная политика." />
       </Item>
     <Item text="Управление привилегированными пользователями (PIM)" url="/en-us/api-reference/beta/resources/privilegedIdentityManagement_root" SEOKeyword="API управления привилегированными пользователями, Azure AD, AADPIM, PIM, API Microsoft Graph" SEODescription="Azure Active Directory Privileged Identity Management">
       <Item text="Привилегированная роль" url="/en-us/api-reference/beta/resources/privilegedrole" SEOKeyword="API PIM, Azure AD, AADPIM, PIM, API Microsoft Graph" SEODescription="Объект привилегированной роли AAD">
@@ -5876,3 +5908,4 @@
     </Item>
 	</Item>
 	</Menu>
+
