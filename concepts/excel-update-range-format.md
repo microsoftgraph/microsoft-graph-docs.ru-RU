@@ -1,0 +1,336 @@
+# <a name="update-a-range-format-in-excel-with-microsoft-graph"></a>Обновление формата диапазона в Excel с помощью Microsoft Graph
+
+В приведенных ниже примерах показано, как обновить свойства [RangeFormat](../api-reference/v1.0/resources/rangeformat.md), [RangeFill](../api-reference/v1.0/resources/rangefill.md) и [RangeFont](../api-reference/v1.0/resources/rangefont.md) указанного диапазона.
+
+В результате этого набора запросов создается таблица с тремя ячейками, отформатированными так же, как три ячейки на приведенном ниже рисунке.
+
+![Таблица-диаграмма Excel с тремя ячейками, свойства Format, Fill и Font которых были обновлены.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
+
+##### <a name="request"></a>Запрос
+Этот запрос обновляет выравнивание по вертикали, высоту строк и столбцов первой ячейки.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
+Content-type: application/json
+
+{
+  "columnWidth": 135,
+  "verticalAlignment": "Top",
+  "rowHeight": 49,
+  "wrapText": false
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFormat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "columnWidth": 135,
+    "horizontalAlignment": "General",
+    "rowHeight": 49,
+    "verticalAlignment": "Top",
+    "wrapText": false
+}
+```
+
+##### <a name="request"></a>Запрос
+Этот запрос обновляет начертание, размер и цвет шрифта в первой ячейке.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_font"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font
+Content-type: application/json
+
+{
+  "bold": true,
+  "color": "#4B180E",
+  "size": 26
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFont"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "bold": true,
+    "color": "#4B180E",
+    "italic": false,
+    "name": "Calibri",
+    "size": 26,
+    "underline": "None"
+}
+```
+
+##### <a name="request"></a>Запрос
+Этот запрос обновляет цвет заливки первой ячейки.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_fill"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/fill
+Content-type: application/json
+
+{
+  "color": "#FF0000"
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFill"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "color": "#FF0000"
+}
+```
+##### <a name="request"></a>Запрос
+Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов второй ячейки.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_two"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format
+Content-type: application/json
+
+{
+  "columnWidth": 135,
+  "horizontalAlignment": "Center",
+  "verticalAlignment": "Center",
+  "rowHeight": 49,
+  "wrapText": false
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFormat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "columnWidth": 135,
+    "horizontalAlignment": "Center",
+    "rowHeight": 49,
+    "verticalAlignment": "Center",
+    "wrapText": false
+}
+```
+
+##### <a name="request"></a>Запрос
+Этот запрос обновляет начертание и размер шрифта во второй ячейке.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_font_two"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font
+Content-type: application/json
+
+{
+  "italic": true,
+  "size": 26
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFont"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "bold": false,
+    "color": "#000000",
+    "italic": true,
+    "name": "Calibri",
+    "size": 26,
+    "underline": "None"
+}
+```
+
+##### <a name="request"></a>Запрос
+Этот запрос обновляет цвет заливки второй ячейки.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_fill_two"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/fill
+Content-type: application/json
+
+{
+  "color": "#00FF00"
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFill"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "color": "#00FF00"
+}
+```
+
+##### <a name="request"></a>Запрос
+Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов третьей ячейки.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_three"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format
+Content-type: application/json
+
+{
+  "columnWidth": 135,
+  "horizontalAlignment": "Right",
+  "verticalAlignment": "Top",
+  "rowHeight": 49,
+  "wrapText": false
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFormat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "columnWidth": 135,
+    "horizontalAlignment": "Right",
+    "rowHeight": 49,
+    "verticalAlignment": "Top",
+    "wrapText": false
+}
+```
+
+##### <a name="request"></a>Запрос
+Этот запрос обновляет начертание, размер и цвет шрифта в третьей ячейке. Обратите внимание: свойство подчеркивания (Underline) принимает значения **Single** или **Double**.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_font_three"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/font
+Content-type: application/json
+
+{
+  "underline": "Single",
+  "color": "#FFFFFF",
+  "size": 26
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFont"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "bold": false,
+    "color": "#FFFFFF",
+    "italic": false,
+    "name": "Calibri",
+    "size": 26,
+    "underline": "Single"
+}
+```
+
+##### <a name="request"></a>Запрос
+Этот запрос обновляет цвет заливки третьей ячейки.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_fill_three"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill
+Content-type: application/json
+
+{
+  "color": "#0000FF"
+}
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFill"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "color": "#0000FF"
+}
+```
+
+
+## <a name="see-also"></a>См. также
+* [Управление сеансами в Excel с помощью Microsoft Graph](excel-manage-sessions.md)
+* [Запись в книгу Excel с помощью Microsoft Graph](excel-write-to-workbook.md)
+* [Использование функций книг в Excel с помощью Microsoft Graph](excel-use-functions.md)
+* [Показ изображения диаграммы в Excel с помощью Microsoft Graph](excel-display-chart-image.md)
+* [Использование REST API для Excel](../api-reference/v1.0/resources/excel.md)
