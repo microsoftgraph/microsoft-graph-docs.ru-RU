@@ -16,7 +16,7 @@
 
 Чтобы приступить к работе, вам понадобится следующее: 
 
-- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](http://dev.office.com/devprogram).
+- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](https://docs.microsoft.com/ru-RU/office/developer-program/office-365-developer-program-faq#account-types).
 - Visual Studio 2015. 
 - [Xamarin для Visual Studio](https://www.xamarin.com/visual-studio).
 - Windows 10 ([с включенным режимом разработки](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx)).
@@ -73,7 +73,7 @@
 
 ## <a name="send-an-email-with-microsoft-graph"></a>Отправка электронного сообщения с помощью Microsoft Graph
 
-Откройте файл MailHelper.cs начального проекта. Этот файл содержит код для создания и отправки электронного сообщения. Он состоит из одного метода (``ComposeAndSendMailAsync``), который создает и отправляет запрос POST конечной точке **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
+Откройте файл MailHelper.cs начального проекта. Этот файл содержит код для создания и отправки электронного сообщения. Код состоит из одного метода (``ComposeAndSendMailAsync``), который создает и отправляет запрос POST в конечную точку **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
 
 Метод ``ComposeAndSendMailAsync`` принимает три строковых значения — ``subject``, ``bodyContent`` и ``recipients``, которые передаются ему посредством файла MainPage.xaml.cs. Строки ``subject`` и ``bodyContent`` хранятся в файле AppResources.resx вместе со всеми остальными строками пользовательского интерфейса. Строка ``recipients`` принимает значения из поля адреса в интерфейсе приложения. 
 
@@ -431,9 +431,9 @@ using Microsoft.Graph;
 ## <a name="run-the-app"></a>Запуск приложения
 1. Выберите проект, который нужно запустить. Если выбрать универсальную платформу Windows, пример можно запустить на локальном компьютере. Чтобы запустить проект iOS, вам потребуется подключиться к [компьютеру Mac, на котором установлены средства Xamarin](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/). (Вы также можете открыть это решение в Xamarin Studio на компьютере Mac и запустить пример прямо оттуда.) Чтобы запустить проект для Android, вы можете использовать [эмулятор Visual Studio для Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx). 
 
-    ![](images/SelectProject.png "Select project in Visual Studio")
+    ![](images/SelectProject.png "Выбор проекта в Visual Studio")
 
-2. Нажмите клавишу F5 для сборки и отладки. Запустите решение и войдите в систему с помощью личной, рабочей или учебной учетной записи.
+2. Нажмите клавишу F5 для сборки и отладки. Запустите решение и войдите, используя личную, рабочую или учебную учетную запись.
     > **Примечание.** Возможно, потребуется открыть диспетчер конфигурации сборки и убедиться, что для проекта UWP выбраны этапы сборки и развертывания. 
 
 3. Войдите с помощью личной, рабочей или учебной учетной записи и предоставьте необходимые разрешения.

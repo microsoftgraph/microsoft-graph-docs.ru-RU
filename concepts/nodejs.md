@@ -16,7 +16,7 @@
 
 Чтобы приступить к работе, вам понадобится следующее: 
 
-- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](http://dev.office.com/devprogram).
+- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](https://docs.microsoft.com/ru-RU/office/developer-program/office-365-developer-program-faq#account-types).
 - [Node.js с npm](https://nodejs.org/en/download/) 
 - [Пример подключения для Node.js от корпорации Майкрософт](https://github.com/microsoftgraph/nodejs-connect-rest-sample). Вы будете использовать папку **starter-project** в примерах файлов для этого пошагового руководства.
 
@@ -39,7 +39,7 @@
 
 6. В разделе **Платформы** выберите **Добавление платформы** > **Веб**.
 
-7. Введите URI перенаправления *http://localhost:3000/token*. 
+7. Введите *http://localhost:3000/token* в качестве URI перенаправления. 
 
 8. Нажмите **Сохранить**.
 
@@ -193,7 +193,7 @@
 
         npm start
 
-1. Введите в браузере адрес *http://localhost:3000* и нажмите кнопку **Подключиться к Office 365**.
+1. Введите в браузере адрес *http://localhost:3000* и нажмите кнопку **Подключиться к Office 365**.
 
 1. Выполните вход и предоставьте запрашиваемые разрешения. 
 

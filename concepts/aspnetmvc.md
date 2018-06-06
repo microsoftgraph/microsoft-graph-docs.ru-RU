@@ -4,17 +4,17 @@
 
 На приведенном ниже рисунке показано создаваемое приложение. 
 
-![Веб-приложение с кнопками "Получить адрес электронной почты" и "Отправить по электронной почте"](images/aspnet-connect-sample.png "Веб-приложение с кнопками "Получить адрес электронной почты" и "Отправить по электронной почте"")
+![Веб-приложение с кнопками "Получить адрес электронной почты" и "Отправить по электронной почте"](images/aspnet-connect-sample.png "Веб-приложение с кнопками \"Получить адрес электронной почты\" и \"Отправить по электронной почте\"")
 
-[Конечная точка Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview) позволяет пользователям входить с учетной записью Майкрософт (MSA), с рабочей или учебной учетной записью. Приложение использует [ПО промежуточного слоя OpenID Connect OWIN для ASP.Net](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) и [библиотеку проверки подлинности Майкрософт (MSAL) для .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) для входа в систему и управления маркером.
+[Конечная точка Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-appmodel-v2-overview) позволяет пользователям входить с учетной записью Майкрософт (MSA), с рабочей или учебной учетной записью. Приложение использует [ПО промежуточного слоя OpenID Connect OWIN для ASP.Net](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) и [библиотеку проверки подлинности Майкрософт (MSAL) для .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) для входа в систему и управления маркером.
 
-**Не хотите создавать приложение?** Воспользуйтесь [кратким руководством по Microsoft Graph](https://developer.microsoft.com/en-us/graph/quick-start) для быстрого начала работы. Обратите внимание, что у нас также есть [REST-версия этого приложения](https://github.com/microsoftgraph/aspnet-connect-rest-sample).
+**Не хотите создавать приложение?** Воспользуйтесь [кратким руководством по Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/quick-start) для быстрого начала работы. Обратите внимание, что у нас также есть [REST-версия этого приложения](https://github.com/microsoftgraph/aspnet-connect-rest-sample).
 
 ## <a name="prerequisites"></a>Необходимые условия
 
 Чтобы приступить к работе, вам понадобится следующее: 
 
-- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](http://dev.office.com/devprogram).
+- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](https://docs.microsoft.com/ru-RU/office/developer-program/office-365-developer-program-faq#account-types).
 - Visual Studio 2015 
 - [Пример приложения, подключающегося с использованием Microsoft Graph, для ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample). Используйте папку **starter-project** с файлами примера.
 
@@ -37,9 +37,9 @@
 
     Идентификатор и пароль приложения используются для его настройки. 
 
-6. В разделе **Платформы** нажмите **Добавление платформы** > **Интернет**.
+6. В разделе **Платформы** выберите **Добавление платформы** > **Веб**.
 
-7. Убедитесь, что установлен флажок **Разрешить неявный поток** и введите универсальный код ресурса (URI) перенаправления *http://localhost:55065/*. 
+7. Убедитесь, что установлен флажок **Разрешить неявный поток**, и введите *http://localhost:55065/* в качестве URI перенаправления. 
 
     Параметр **Разрешить неявный поток** включает гибридный поток OpenID Connect. Благодаря этому при проверке подлинности приложение может получить данные для входа (**id_token**) и артефакты (в данном случае — код авторизации), с помощью которых оно может получить маркер доступа.
 
@@ -53,7 +53,7 @@
 
 3. Найдите клавиши настройки приложения в элементе **appSettings**. Замените значения заполнителей ENTER_YOUR_CLIENT_ID и ENTER_YOUR_SECRET значениями, которые вы только что скопировали.
 
-URI перенаправления выступает в роли URL-адреса зарегистрированного проекта. Запрошенные [области разрешений](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes) позволяют приложению получить данные профилей пользователей и отправить сообщение электронной почты.
+URI перенаправления выступает в роли URL-адреса зарегистрированного проекта. Запрошенные [области разрешений](https://developer.microsoft.com/ru-RU/graph/docs/concepts/permission_scopes) позволяют приложению получить данные профилей пользователей и отправить сообщение электронной почты.
 
 ## <a name="call-microsoft-graph"></a>Вызов Microsoft Graph
 
@@ -338,7 +338,7 @@ URI перенаправления выступает в роли URL-адрес
 
 ## <a name="see-also"></a>См. также
 - [Клиентская библиотека .NET Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Сценарий проверки подлинности веб-приложения для веб-API](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
-- [Интеграция идентификатора Майкрософт и Microsoft Graph в веб-приложении с помощью OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
-- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Сценарий проверки подлинности веб-приложения для веб-API](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
+- [Интеграция идентификатора Майкрософт и Microsoft Graph в веб-приложении с помощью OpenID Connect](https://azure.microsoft.com/ru-RU/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-tokens/)

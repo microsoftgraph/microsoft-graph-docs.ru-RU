@@ -7,7 +7,7 @@
 ![Веб-приложение после входа с кнопкой "Отправить сообщение"](./images/angular-connect-sample.png)
 
 
-**Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) вы сможете быстро приступить к работе.
+**Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/ru-RU/getting-started) вы сможете быстро приступить к работе.
 
 Скачать вариант этого примера, использующий конечную точку Azure AD, можно на странице [приложения Microsoft Graph Connect для AngularJS](https://github.com/microsoftgraph/angular-connect-rest-sample/releases/tag/last_v1_auth).
 
@@ -16,7 +16,7 @@
 
 Чтобы приступить к работе, вам понадобится следующее: 
 
-- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](http://dev.office.com/devprogram).
+- [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](https://docs.microsoft.com/ru-RU/office/developer-program/office-365-developer-program-faq#account-types).
 - [Node.js с npm](https://nodejs.org/en/download/).
 - [Bower](https://bower.io).
 - [Приложение Microsoft Graph Connect для AngularJS](https://github.com/microsoftgraph/angular-connect-sample). Вы будете использовать папку **starter-project** в примерах файлов для этого пошагового руководства.
@@ -34,9 +34,9 @@
 
 4. Скопируйте идентификатор приложения. Это уникальный идентификатор приложения, который используется для его настройки.
 
-5. В разделе **Платформы** нажмите **Добавление платформы** > **Интернет**.
+5. В разделе **Платформы** выберите **Добавление платформы** > **Веб**.
 
-6. Убедитесь, что установлен флажок **Разрешить неявный поток** и введите универсальный код ресурса (URI) перенаправления *http://localhost:8080*. 
+6. Убедитесь, что установлен флажок **Разрешить неявный поток**, и введите *http://localhost:8080* в качестве URI перенаправления. 
 
 7. Нажмите кнопку **Сохранить**.
 
@@ -172,5 +172,5 @@
 
 
 ## <a name="see-also"></a>См. также
-- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-tokens/)

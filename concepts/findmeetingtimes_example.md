@@ -231,5 +231,7 @@ Content-Length: 714
 
 Получив предложения по времени проведения собрания, вы можете:
 
-1. [создать событие и отправить приглашение на собрание](../api-reference/v1.0/api/user_post_events.md); 
+1. [создать событие и отправить приглашение на собрание](../api-reference/v1.0/api/user_post_events.md);
 2. [добавить вложение](../api-reference/v1.0/api/event_post_attachments.md) в событие.
+
+Узнайте больше об [интеграции с Календарем Outlook](outlook-calendar-concept-overview.md).
