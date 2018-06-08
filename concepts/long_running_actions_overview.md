@@ -3,32 +3,33 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 ms.topic: conceptual
-ms.openlocfilehash: 963d2b71b879c285a43378d07c1bfd755f150b9f
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 30f98afa7b75784b0ee2b9ec446c6389cc876949
+ms.sourcegitcommit: af8fdd5ea762fb54b7fbebb9a70bd942a56c6b7a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 05/25/2018
+ms.locfileid: "19473155"
 ---
-# <a name="working-with-long-running-actions-beta"></a><span data-ttu-id="da852-101">Работа с действиями, выполняющимися длительное время (бета-версия)</span><span class="sxs-lookup"><span data-stu-id="da852-101">Working with long running actions (beta)</span></span>
+# <a name="working-with-long-running-actions-beta"></a><span data-ttu-id="1060b-101">Работа с действиями, выполняющимися длительное время (бета-версия)</span><span class="sxs-lookup"><span data-stu-id="1060b-101">Working with long running actions (beta)</span></span>
 
-> <span data-ttu-id="da852-102">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="da852-102">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="da852-103">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da852-103">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1060b-102">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="1060b-102">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1060b-103">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1060b-103">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="da852-104">Для выполнения некоторых запросов API требуется неопределенное время.</span><span class="sxs-lookup"><span data-stu-id="da852-104">Some API responses require indeterminate time to complete.</span></span>
-<span data-ttu-id="da852-105">Вместо того чтобы ожидать завершения действия перед возвращением ответа, Microsoft Graph может использовать шаблон действий, выполняющихся длительное время.</span><span class="sxs-lookup"><span data-stu-id="da852-105">Instead of waiting until the action is complete before returning a response, Microsoft Graph may use a long running actions pattern.</span></span>
-<span data-ttu-id="da852-106">При использовании этого шаблона вашему приложению предоставляется время для выполнения опроса об изменениях состояния для действия, выполняющегося длительное время, и запросу не нужно ожидать завершения действия.</span><span class="sxs-lookup"><span data-stu-id="da852-106">This pattern provides your app a wait to poll for status updates on a long running action, without any request waiting for the action to complete.</span></span>
+<span data-ttu-id="1060b-104">Для выполнения некоторых запросов API требуется неопределенное время.</span><span class="sxs-lookup"><span data-stu-id="1060b-104">Some API responses require indeterminate time to complete.</span></span>
+<span data-ttu-id="1060b-105">Вместо того чтобы ожидать завершения действия перед возвращением ответа, Microsoft Graph может использовать шаблон действий, выполняющихся длительное время.</span><span class="sxs-lookup"><span data-stu-id="1060b-105">Instead of waiting until the action is complete before returning a response, Microsoft Graph may use a long running actions pattern.</span></span>
+<span data-ttu-id="1060b-106">При использовании этого шаблона вашему приложению предоставляется время для выполнения опроса об изменениях состояния для действия, выполняющегося длительное время, и запросу не нужно ожидать завершения действия.</span><span class="sxs-lookup"><span data-stu-id="1060b-106">This pattern provides your app a wait to poll for status updates on a long running action, without any request waiting for the action to complete.</span></span>
 
-<span data-ttu-id="da852-107">В стандартном шаблоне выполняются следующие действия:</span><span class="sxs-lookup"><span data-stu-id="da852-107">The general pattern follows these steps:</span></span>
+<span data-ttu-id="1060b-107">В стандартном шаблоне выполняются следующие действия:</span><span class="sxs-lookup"><span data-stu-id="1060b-107">The general pattern follows these steps:</span></span>
 
-1. <span data-ttu-id="da852-108">Ваше приложение запрашивает действие, выполняющееся длительное время, через API.</span><span class="sxs-lookup"><span data-stu-id="da852-108">App requests a long running action via the API.</span></span> <span data-ttu-id="da852-109">API принимает действие и возвращает ответ `202 Accepted` вместе с заголовком Location для URL-адреса API, чтобы можно было получать отчеты о состоянии действия.</span><span class="sxs-lookup"><span data-stu-id="da852-109">The API accepts the action and returns a `202 Accepted` response along with a Location header for the API URL to retrieve action status reports.</span></span>
-2. <span data-ttu-id="da852-110">Ваше приложение запрашивает URL-адрес отчета о состоянии действия и получает ответ [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md) со сведениями о ходе выполнения действия, выполняющегося длительное время.</span><span class="sxs-lookup"><span data-stu-id="da852-110">App requests the action status report URL and receives an [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md) response with the progress of the long running action</span></span>
-3. <span data-ttu-id="da852-111">Действие, выполняющееся длительное время, завершается.</span><span class="sxs-lookup"><span data-stu-id="da852-111">The long running action completes.</span></span> 
-4. <span data-ttu-id="da852-112">Приложение еще раз запрашивает URL-адрес отчета о состоянии действия и получает ответ [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md), в котором сообщается о завершении действия.</span><span class="sxs-lookup"><span data-stu-id="da852-112">Next time the app requests the action status report URL and receives an [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md) response with the completion of the action.</span></span>
+1. <span data-ttu-id="1060b-108">Ваше приложение запрашивает действие, выполняющееся длительное время, через API.</span><span class="sxs-lookup"><span data-stu-id="1060b-108">Your app requests a long running action via the API.</span></span> <span data-ttu-id="1060b-109">API принимает действие и возвращает ответ `202 Accepted` вместе с заголовком Location для URL-адреса API, чтобы можно было получать отчеты о состоянии действия.</span><span class="sxs-lookup"><span data-stu-id="1060b-109">The API accepts the action and returns a `202 Accepted` response along with a Location header for the API URL to retrieve action status reports.</span></span>
+2. <span data-ttu-id="1060b-110">Ваше приложение запрашивает URL-адрес отчета о состоянии действия и получает ответ [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md) со сведениями о ходе выполнения действия, выполняющегося длительное время.</span><span class="sxs-lookup"><span data-stu-id="1060b-110">Your app requests the action status report URL and receives an [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md) response with the progress of the long running action.</span></span>
+3. <span data-ttu-id="1060b-111">Действие, выполняющееся длительное время, завершается.</span><span class="sxs-lookup"><span data-stu-id="1060b-111">The long running action completes.</span></span> 
+4. <span data-ttu-id="1060b-112">Приложение еще раз запрашивает URL-адрес отчета о состоянии действия и получает ответ [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md), в котором сообщается о завершении действия.</span><span class="sxs-lookup"><span data-stu-id="1060b-112">Your app requests the action status report URL again and receives an [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md) response showing the completion of the action.</span></span>
 
-## <a name="initial-action-request"></a><span data-ttu-id="da852-113">Начальный запрос действия</span><span class="sxs-lookup"><span data-stu-id="da852-113">1. Initial action request</span></span>
+## <a name="initial-action-request"></a><span data-ttu-id="1060b-113">Начальный запрос действия</span><span class="sxs-lookup"><span data-stu-id="1060b-113">Initial action request</span></span>
 
-<span data-ttu-id="da852-114">Давайте по шагам рассмотрим пример сценария [копирования ресурса DriveItem](../api-reference/beta/api/driveitem_copy.md).</span><span class="sxs-lookup"><span data-stu-id="da852-114">Let's walk through the steps for an example [copy](../api-reference/beta/api/driveitem_copy.md) scenario.</span></span>
-<span data-ttu-id="da852-115">В этом сценарии приложение запрашивает операцию копирования папки, в которой содержится большое количество данных.</span><span class="sxs-lookup"><span data-stu-id="da852-115">In this scenario, an app requests to copy a folder with a large amount of data contained within.</span></span>
-<span data-ttu-id="da852-116">На выполнение этого запроса, вероятно, потребуется несколько секунд, так как необходимо передать большой объем данных.</span><span class="sxs-lookup"><span data-stu-id="da852-116">This request will likely take several seconds to complete since the amount of data is large.</span></span>
+<span data-ttu-id="1060b-114">Давайте по шагам рассмотрим пример сценария [копирования ресурса DriveItem](../api-reference/beta/api/driveitem_copy.md).</span><span class="sxs-lookup"><span data-stu-id="1060b-114">Let's walk through the steps for an example [DriveItem Copy](../api-reference/beta/api/driveitem_copy.md) scenario.</span></span>
+<span data-ttu-id="1060b-115">В этом сценарии приложение запрашивает операцию копирования папки, в которой содержится большое количество данных.</span><span class="sxs-lookup"><span data-stu-id="1060b-115">In this scenario, your app requests to copy a folder that contains a large amount of data.</span></span>
+<span data-ttu-id="1060b-116">На выполнение этого запроса, вероятно, потребуется несколько секунд, так как необходимо передать большой объем данных.</span><span class="sxs-lookup"><span data-stu-id="1060b-116">This request will likely take several seconds to complete since the amount of data is large.</span></span>
 
 <!-- { "blockType": "request", "name": "lro-copy-item-example", "scopes": "files.readwrite" } -->
 
@@ -44,7 +45,7 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="da852-117">API отправляет ответ о том, что действие принято, и URL-адрес для получения сведений о состоянии действия, выполняющегося длительное время.</span><span class="sxs-lookup"><span data-stu-id="da852-117">The API responds that the action was accepted and the URL for retriving the status of the long running action.</span></span>
+<span data-ttu-id="1060b-117">API отправляет ответ о том, что действие принято, и URL-адрес для получения сведений о состоянии действия, выполняющегося длительное время.</span><span class="sxs-lookup"><span data-stu-id="1060b-117">The API responds that the action was accepted and the URL for retrieving the status of the long running action.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -53,15 +54,15 @@ HTTP/1.1 202 Accepted
 Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-<span data-ttu-id="da852-118">**Примечание.** Возвращаемый URL-адрес расположения, возможно, не будет соответствовать конечной точке API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="da852-118">**Note:** The location URL returned may not be on the Microsoft Graph API endpoint.</span></span>
+<span data-ttu-id="1060b-118">**Примечание.** Возвращаемый URL-адрес расположения, возможно, не будет соответствовать конечной точке API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="1060b-118">**Note:** The location URL returned may not be on the Microsoft Graph API endpoint.</span></span>
 
-<span data-ttu-id="da852-119">Во многих случаях это может быть завершением запроса, так как действие копирования будет выполняться без каких-либо дополнительных действий со стороны приложения.</span><span class="sxs-lookup"><span data-stu-id="da852-119">In many cases this many be the end of the request, since the copy action will complete without the app doing any additional work.</span></span>
-<span data-ttu-id="da852-120">Тем не менее если вашему приложению необходимо отображать состояние действия копирования или убедиться, что действие выполнено без ошибок, приложение может сделать это, используя URL-адрес для отслеживания.</span><span class="sxs-lookup"><span data-stu-id="da852-120">However, if the app wants to show the status of the copy action or ensure that it completes without error, it can do so using the monitor URL.</span></span>
+<span data-ttu-id="1060b-119">Во многих случаях это может быть завершением запроса, так как действие копирования будет выполняться без каких-либо дополнительных действий со стороны приложения.</span><span class="sxs-lookup"><span data-stu-id="1060b-119">In many cases this many be the end of the request, since the copy action will complete without the app doing any additional work.</span></span>
+<span data-ttu-id="1060b-120">Тем не менее если вашему приложению необходимо отображать состояние действия копирования или убедиться, что действие выполнено без ошибок, приложение может сделать это, используя URL-адрес для отслеживания.</span><span class="sxs-lookup"><span data-stu-id="1060b-120">However, if your app needs to show the status of the copy action or ensure that it completes without error, it can do so using the monitor URL.</span></span>
 
-## <a name="retrieve-a-status-report-from-the-monitor-url"></a><span data-ttu-id="da852-121">Получение отчета о состоянии с URL-адреса для отслеживания</span><span class="sxs-lookup"><span data-stu-id="da852-121">2. Retrieve a status report from the monitor URL</span></span>
+## <a name="retrieve-a-status-report-from-the-monitor-url"></a><span data-ttu-id="1060b-121">Получение отчета о состоянии с URL-адреса для отслеживания</span><span class="sxs-lookup"><span data-stu-id="1060b-121">Retrieve a status report from the monitor URL</span></span>
 
-<span data-ttu-id="da852-122">Чтобы проверить состояние действия копирования, приложение отправляет запрос на URL-адрес, указанный в предыдущем ответе.</span><span class="sxs-lookup"><span data-stu-id="da852-122">To check on the status of the copy action, the app makes a request to the URL provided in the previous response.</span></span>
-<span data-ttu-id="da852-123">*Примечание.* Для этого запроса не нужно выполнять аутентификацию, так как этот URL-адрес действует в течение небольшого времени и является уникальным для исходного вызывающего объекта.</span><span class="sxs-lookup"><span data-stu-id="da852-123">*Note:* This request does not require authentication, since the URL is short-lived and unique to the original caller.</span></span> 
+<span data-ttu-id="1060b-122">Чтобы проверить состояние действия копирования, приложение отправляет запрос на URL-адрес, указанный в предыдущем ответе.</span><span class="sxs-lookup"><span data-stu-id="1060b-122">To check on the status of the copy action, the app makes a request to the URL provided in the previous response.</span></span>
+<span data-ttu-id="1060b-123">*Примечание.* Для этого запроса не нужно выполнять аутентификацию, так как этот URL-адрес действует в течение небольшого времени и является уникальным для исходного вызывающего объекта.</span><span class="sxs-lookup"><span data-stu-id="1060b-123">*Note:* This request does not require authentication, since the URL is short-lived and unique to the original caller.</span></span> 
 
 <!-- { "blockType": "request", "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
@@ -69,7 +70,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-<span data-ttu-id="da852-124">Служба возвращает ответ со сведениями о том, что действие, выполняющееся длительное время, еще не завершено:</span><span class="sxs-lookup"><span data-stu-id="da852-124">The service responses with information that the long running action is still in progress:</span></span>
+<span data-ttu-id="1060b-124">Служба возвращает ответ со сведениями о том, что действие, выполняющееся длительное время, еще не завершено:</span><span class="sxs-lookup"><span data-stu-id="1060b-124">The service responses with information that the long running action is still in progress:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.asyncJobStatus" } -->
 
@@ -84,13 +85,13 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="da852-125">Эти сведения можно использовать для обновления информации о ходе копирования для пользователя.</span><span class="sxs-lookup"><span data-stu-id="da852-125">This information can be used to provide an update to the user about the progress of the copy action.</span></span>
-<span data-ttu-id="da852-126">Приложение может продолжить опрашивать URL-адрес для отслеживания, чтобы получать обновленные сведения о ходе выполнения действия.</span><span class="sxs-lookup"><span data-stu-id="da852-126">The app can continue to poll the monitor URL to request status updates and keep track of the progress of the action.</span></span>
+<span data-ttu-id="1060b-125">Эти сведения можно использовать для обновления информации о ходе копирования для пользователя.</span><span class="sxs-lookup"><span data-stu-id="1060b-125">This information can be used to provide an update to the user about the progress of the copy action.</span></span>
+<span data-ttu-id="1060b-126">Приложение может продолжить опрашивать URL-адрес для отслеживания, чтобы получать обновленные сведения о ходе выполнения действия.</span><span class="sxs-lookup"><span data-stu-id="1060b-126">The app can continue to poll the monitor URL to request status updates and keep track of the progress of the action.</span></span>
 
-## <a name="retrieve-a-completed-status-report-from-the-monitor-url"></a><span data-ttu-id="da852-127">Получение отчета о выполнении действия с URL-адреса для отслеживания</span><span class="sxs-lookup"><span data-stu-id="da852-127">3. Retrieve a completed status report from the monitor URL</span></span>
+## <a name="retrieve-a-completed-status-report-from-the-monitor-url"></a><span data-ttu-id="1060b-127">Получение отчета о выполнении действия с URL-адреса для отслеживания</span><span class="sxs-lookup"><span data-stu-id="1060b-127">Retrieve a completed status report from the monitor URL</span></span>
 
-<span data-ttu-id="da852-128">Через несколько секунд операция копирования завершается.</span><span class="sxs-lookup"><span data-stu-id="da852-128">After a few seconds the copy operation has completed.</span></span>
-<span data-ttu-id="da852-129">На этот раз, когда приложение отправляет запрос на URL-для отслеживания, ответом будет перенаправление на результат выполненного действия.</span><span class="sxs-lookup"><span data-stu-id="da852-129">This time when the app makes a request to the monitor URL the response is a redirection to the finished result of the action.</span></span>
+<span data-ttu-id="1060b-128">Через несколько секунд операция копирования завершается.</span><span class="sxs-lookup"><span data-stu-id="1060b-128">After a few seconds the copy operation has completed.</span></span>
+<span data-ttu-id="1060b-129">На этот раз, когда приложение отправляет запрос на URL-для отслеживания, ответом будет перенаправление на результат выполненного действия.</span><span class="sxs-lookup"><span data-stu-id="1060b-129">This time when the app makes a request to the monitor URL the response is a redirection to the finished result of the action.</span></span>
 
 <!-- { "blockType": "request", "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 
@@ -98,7 +99,7 @@ Content-type: application/json
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-<span data-ttu-id="da852-130">По завершении действия в ответе службы отслеживания будет возвращен идентификатор ресурса для результатов.</span><span class="sxs-lookup"><span data-stu-id="da852-130">When the action has completed, the response from the monitor service will return the resourceId for the results.</span></span>
+<span data-ttu-id="1060b-130">По завершении действия в ответе службы отслеживания будет возвращен идентификатор ресурса для результатов.</span><span class="sxs-lookup"><span data-stu-id="1060b-130">When the action has completed, the response from the monitor service will return the resourceId for the results.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.asyncJobStatus" } -->
 
@@ -113,10 +114,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="retrieve-the-results-of-the-completed-operation"></a><span data-ttu-id="da852-131">Получение результатов выполненной операции</span><span class="sxs-lookup"><span data-stu-id="da852-131">Retrieve the results of the completed operation</span></span>
+## <a name="retrieve-the-results-of-the-completed-operation"></a><span data-ttu-id="1060b-131">Получение результатов выполненной операции</span><span class="sxs-lookup"><span data-stu-id="1060b-131">Retrieve the results of the completed operation</span></span>
 
-<span data-ttu-id="da852-132">После завершения задания URL-адрес для отслеживания возвращает идентификатор ресурса результата (в данном случае новую копию исходного элемента).</span><span class="sxs-lookup"><span data-stu-id="da852-132">Once the job has completed, the monitor URL returns the resourceId of the result, in this case the new copy of the original item.</span></span>
-<span data-ttu-id="da852-133">Вы можете обратиться к этому новому элементу с использованием идентификатора ресурса, например:</span><span class="sxs-lookup"><span data-stu-id="da852-133">You can address this new item using the resourceId, for example:</span></span>
+<span data-ttu-id="1060b-132">После завершения задания URL-адрес для отслеживания возвращает идентификатор ресурса результата (в данном случае новую копию исходного элемента).</span><span class="sxs-lookup"><span data-stu-id="1060b-132">Once the job has completed, the monitor URL returns the resourceId of the result, in this case the new copy of the original item.</span></span>
+<span data-ttu-id="1060b-133">Вы можете обратиться к этому новому элементу с использованием идентификатора ресурса, например:</span><span class="sxs-lookup"><span data-stu-id="1060b-133">You can address this new item using the resourceId, for example:</span></span>
 
 <!-- { "blockType": "request", "name": "lro-copy-item-example-complete", "scopes": "files.readwrite" } -->
 
@@ -138,17 +139,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="supported-resources"></a><span data-ttu-id="da852-134">Поддерживаемые ресурсы</span><span class="sxs-lookup"><span data-stu-id="da852-134">Supported resources</span></span>
+## <a name="supported-resources"></a><span data-ttu-id="1060b-134">Поддерживаемые ресурсы</span><span class="sxs-lookup"><span data-stu-id="1060b-134">Supported resources</span></span>
 
-<span data-ttu-id="da852-135">Действия, выполняющиеся длительное время, поддерживаются в указанных ниже методах API</span><span class="sxs-lookup"><span data-stu-id="da852-135">Long running actions are supported on the following API methods</span></span>
+<span data-ttu-id="1060b-135">Действия, выполняющиеся длительное время, поддерживаются в указанных ниже методах API</span><span class="sxs-lookup"><span data-stu-id="1060b-135">Long running actions are supported on the following API methods</span></span>
 
-| <span data-ttu-id="da852-136">**Ресурс**</span><span class="sxs-lookup"><span data-stu-id="da852-136">**Resource**</span></span> | <span data-ttu-id="da852-137">**API**</span><span class="sxs-lookup"><span data-stu-id="da852-137">**API**</span></span> |
+| <span data-ttu-id="1060b-136">**Ресурс**</span><span class="sxs-lookup"><span data-stu-id="1060b-136">**Resource**</span></span> | <span data-ttu-id="1060b-137">**API**</span><span class="sxs-lookup"><span data-stu-id="1060b-137">**API**</span></span> |
 |:------ | :------ |
-| <span data-ttu-id="da852-138">DriveItem</span><span class="sxs-lookup"><span data-stu-id="da852-138">DriveItem</span></span> | [<span data-ttu-id="da852-139">Copy</span><span class="sxs-lookup"><span data-stu-id="da852-139">Copy</span></span>](../api-reference/beta/api/driveitem_copy.md) |
+| <span data-ttu-id="1060b-138">DriveItem</span><span class="sxs-lookup"><span data-stu-id="1060b-138">DriveItem</span></span> | [<span data-ttu-id="1060b-139">Copy</span><span class="sxs-lookup"><span data-stu-id="1060b-139">Copy</span></span>](../api-reference/beta/api/driveitem_copy.md) |
 
-## <a name="prerequisites"></a><span data-ttu-id="da852-140">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="da852-140">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1060b-140">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="1060b-140">Prerequisites</span></span>
 
-<span data-ttu-id="da852-141">Для запроса сведений о состоянии действия, выполняющегося длительное время, необходимы такие же [разрешения](./permissions_reference.md), что и для самого действия, выполняющегося длительное время.</span><span class="sxs-lookup"><span data-stu-id="da852-141">The same [permissions](./permissions_reference.md) that are required to perform a long running action are also required to query the status of a long running action.</span></span>
+<span data-ttu-id="1060b-141">Для запроса сведений о состоянии действия, выполняющегося длительное время, необходимы такие же [разрешения](./permissions_reference.md), что и для самого действия, выполняющегося длительное время.</span><span class="sxs-lookup"><span data-stu-id="1060b-141">The same [permissions](./permissions_reference.md) that are required to perform a long running action are also required to query the status of a long running action.</span></span>
 
 
 
