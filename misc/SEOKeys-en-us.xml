@@ -5110,7 +5110,7 @@
           <Item text="Назначение владельца" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Создание владельца, API Microsoft Graph, API для управления приложениями" SEODescription="С помощью этого API можно создать владельца." />
           <Item text="Список свойств расширения" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="Список объектов extensionProperty, API Microsoft Graph, API для управления приложениями" SEODescription="Получение списка объектов extensionProperty." />
         </Item>
-	  <Item text="Журналы аудита" url="/en-us/api-reference/beta/resources/directoryaudit">
+	  <Item text="Журналы аудита" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Аудит каталога" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="Объект directoryAudit, API Microsoft Graph, Azure AD, журналы аудита" SEODescription="">
 			<Item text="Перечисление аудитов каталога" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="API журнала аудита, API Microsoft Graph API, Azure AD, журналы аудита" SEODescription="API для получения списка объектов directoryAudit." />
 			<Item text="Получение аудита каталога" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="API журнала аудита, API Microsoft Graph API, Azure AD, журналы аудита" SEODescription="API для получения объекта directoryAudit." />
