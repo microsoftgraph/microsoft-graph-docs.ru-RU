@@ -56,6 +56,6 @@ Microsoft Graph придерживается политики [Microsoft Lifecyc
 
 ## <a name="terms-of-use"></a>Условия использования
 
-Используя API Microsoft Graph, вы принимаете [Условия использования](../misc/terms-of-use.md). 
+Используя API Microsoft Graph, вы принимаете [Условия использования](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use). 
 
 Ваш отзыв важен для нас. Для связи с нами используйте сайт [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Помечайте свои вопросы тегом {MicrosoftGraph}.
