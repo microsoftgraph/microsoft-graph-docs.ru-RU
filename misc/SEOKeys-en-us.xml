@@ -1689,6 +1689,7 @@
       <Item text="Перечисление удаленных элементов" url="/en-us/api-reference/v1.0/api/directory_deleteditems_list" />
       <Item text="Удаление элемента без возможности восстановления" url="/en-us/api-reference/v1.0/api/directory_deleteditems_delete" />
       <Item text="Восстановление удаленного элемента" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+      <Item text="Перечисление удаленных элементов, принадлежащих пользователю" url="/en-us/api-reference/v1.0/api/directory_deleteditems_user_owned" />
     </Item>
     <Item text="Устройство" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="API для управления устройствами, API Microsoft Graph, API для управления устройствами" SEODescription="Представляет устройство, зарегистрированное в каталоге. Наследует от DirectoryObject.">
       <Item text="Список устройств" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="Список устройств, API Microsoft Graph, API для управления объектами Device" SEODescription="Получение списка, включающего объекты device." />
@@ -5097,7 +5098,7 @@
       </Item>
       <Item text="Назначение роли приложения" url="/en-us/api-reference/beta/resources/approleassignment" SEOKeyword="API для управления объектами appRoleAssignment, API Microsoft Graph, API для управления объектами appRoleAssignment" SEODescription="Используется для записи при назначении пользователя или группы приложению. В этом случае после назначения роли будет отображаться плитка приложения на панели доступа к приложениям пользователя. Кроме того, с помощью этого объекта можно предоставить другому приложению (моделируемому как субъект-служба) доступ к приложению ресурса в определенной роли. Вы можете создавать, просматривать, обновлять и удалять назначенные роли. Наследует от DirectoryObject.">
           <Item text="Получение объекта AppRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_get" SEOKeyword="Получение объекта appRoleAssignment, API Microsoft Graph, API для управления appRoleAssignment" SEODescription="Получение свойств и связей объекта appRoleAssignment." />
-          <Item text="Обновление объекта AppRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_update" SEOKeyword="Обновление объекта appRoleAssignment, API Microsoft Graph, API для управления appRoleAssignment" SEODescription="Обновление свойств объекта approleassignment." />
+          <Item text="Обновление объекта AppRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_update" SEOKeyword="Обновление approleassignment, API Microsoft Graph, API approleassignment" SEODescription="Обновление свойств объекта approleassignment." />
           <Item text="Удаление объекта AppRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_delete" SEOKeyword="Удаление объекта appRoleAssignment, API Microsoft Graph, API для управления appRoleAssignment" SEODescription="Удаление объекта appRoleAssignment." />
         </Item>
       <Item text="Приложение" url="/en-us/api-reference/beta/resources/application" SEOKeyword="API для управления приложениями, API Microsoft Graph, API для управления приложениями" SEODescription="">
@@ -5129,7 +5130,7 @@
         <Item text="Перечисление удаленных элементов" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Удаление элемента без возможности восстановления" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Восстановление удаленного элемента" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
-		<Item text="Перечисление удаленных элементов, принадлежащих пользователю" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
+        <Item text="Перечисление удаленных элементов, принадлежащих пользователю" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
 
       <Item text="Устройство" url="/en-us/api-reference/beta/resources/device" SEOKeyword="API для управления устройствами, API Microsoft Graph, API для управления устройствами" SEODescription="Представляет устройство, зарегистрированное в каталоге. Наследует от DirectoryObject.">
@@ -5355,7 +5356,7 @@
         <Item text="Копирование папки с почтой" url="/en-us/api-reference/beta/api/mailfolder_copy" SEOKeyword="MailFolder: copy, API Microsoft Graph, API для управления MailFolder" SEODescription="" />
         <Item text="Перемещение папки с почтой" url="/en-us/api-reference/beta/api/mailfolder_move" SEOKeyword="MailFolder: move, API Microsoft Graph, API для управления MailFolder" SEODescription="" />
         <Item text="Список сообщений в папке" url="/en-us/api-reference/beta/api/mailfolder_list_messages" SEOKeyword="Список сообщений, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Получение списка, включающего объекты сообщений." />
-        <Item text="Создание сообщения в папке" url="/en-us/api-reference/beta/api/mailfolder_post_messages" SEOKeyword="Создание сообщения в папке, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="С помощью этого API можно создать объект Message." />
+        <Item text="Создание сообщения в папке" url="/en-us/api-reference/beta/api/mailfolder_post_messages" SEOKeyword="Создание сообщения в папке, API Microsoft Graph, API для приложения &quot;Почта Outlook&quot;" SEODescription="С помощью этого API можно создать объект Message." />
         <Item text="Список дочерних папок" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEOKeyword="Список объектов childFolder, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Получение списка объектов MailFolder." />
         <Item text="Создание дочерней папки почты" url="/en-us/api-reference/beta/api/mailfolder_post_childfolders" SEOKeyword="Создание объекта MailFolder, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="С помощью этого API можно создать объект MailFolder." />
       </Item>
