@@ -1797,7 +1797,7 @@
       <Item text="Копирование папки с почтой" url="/en-us/api-reference/v1.0/api/mailfolder_copy" SEOKeyword="MailFolder: copy, API Microsoft Graph, API для управления MailFolder" SEODescription="Копирование папки с почтой" />
       <Item text="Перемещение папки с почтой" url="/en-us/api-reference/v1.0/api/mailfolder_move" SEOKeyword="MailFolder: move, API Microsoft Graph, API для управления MailFolder" SEODescription="Перемещение папки с почтой" />
       <Item text="Список сообщений в папке" url="/en-us/api-reference/v1.0/api/mailfolder_list_messages" SEOKeyword="Список сообщений, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Получение списка, включающего объекты сообщений." />
-      <Item text="Создание сообщения в папке" url="/en-us/api-reference/v1.0/api/mailfolder_post_messages" SEOKeyword="Создание сообщения в папке, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="С помощью этого API можно создать объект Message." />
+      <Item text="Создание сообщения в папке" url="/en-us/api-reference/v1.0/api/mailfolder_post_messages" SEOKeyword="Создание сообщения в папке, API Microsoft Graph, API для приложения &quot;Почта Outlook&quot;" SEODescription="С помощью этого API можно создать объект Message." />
       <Item text="Список дочерних папок" url="/en-us/api-reference/v1.0/api/mailfolder_list_childfolders" SEOKeyword="Список объектов childFolder, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="Получение списка объектов MailFolder." />
       <Item text="Создание дочерней папки почты" url="/en-us/api-reference/v1.0/api/mailfolder_post_childfolders" SEOKeyword="Создание объекта MailFolder, API Microsoft Graph, API для приложения &quot;Почта&quot;" SEODescription="С помощью этого API можно создать объект MailFolder." />
     </Item>
@@ -4052,7 +4052,7 @@
           <Item text="Удаление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10generalconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10generalconfiguration_update" />
         </Item>
-        <Item text="Профиль импортированного сертификата PFX для Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10importedpfxcertificateprofile">
+        <Item text="Профиль импортированного сертификата PFX для Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10importedpfxcertificateprofile">
           <Item text="Перечисление" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_list" />
           <Item text="Получение" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_get" />
           <Item text="Создание" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_create" />
@@ -5132,7 +5132,6 @@
         <Item text="Восстановление удаленного элемента" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
         <Item text="Перечисление удаленных элементов, принадлежащих пользователю" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
-
       <Item text="Устройство" url="/en-us/api-reference/beta/resources/device" SEOKeyword="API для управления устройствами, API Microsoft Graph, API для управления устройствами" SEODescription="Представляет устройство, зарегистрированное в каталоге. Наследует от DirectoryObject.">
         <Item text="Список устройств" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="Список устройств, API Microsoft Graph, API для управления объектами Device" SEODescription="Получение списка, включающего объекты device." />
         <Item text="Создание объекта device" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Создание объекта device, API Microsoft Graph, API для управления объектами device" SEODescription="С помощью этого API можно создать объект Device." />
@@ -5260,6 +5259,31 @@
       <Item text="Событие аудита" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="API PIM, Azure AD, AADPIM, PIM, API Microsoft Graph, аудит" SEODescription="Событие аудита во время управления привилегированными пользователями (PIM)">
         <Item text="Список событий аудита" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="API управления привилегированными пользователями, Azure AD, AADPIM, PIM, API Microsoft Graph, аудит" SEODescription="Получение списка событий аудита." />
       </Item>
+	  <Item text="Управляемые ресурсы" url="/en-us/api-reference/beta/resources/governanceresource">
+		<Item text="Список" url="/en-us/api-reference/beta/api/governanceresource_list" />
+		<Item text="Получение" url="/en-us/api-reference/beta/api/governanceresource_get" />
+	  </Item>
+	  <Item text="Определения ролей" url="/en-us/api-reference/beta/resources/governanceroledefinition">
+		<Item text="Список" url="/en-us/api-reference/beta/api/governanceroledefinition_list" />
+		<Item text="Получение" url="/en-us/api-reference/beta/api/governanceroledefinition_get" />
+	  </Item>
+	  <Item text="Параметры роли" url="/en-us/api-reference/beta/resources/governancerolesetting">
+		<Item text="Список" url="/en-us/api-reference/beta/api/governancerolesetting_list" />
+		<Item text="Получение" url="/en-us/api-reference/beta/api/governancerolesetting_get" />
+		<Item text="Обновление" url="/en-us/api-reference/beta/api/governancerolesetting_update" />
+	  </Item>
+	  <Item text="Назначения ролей" url="/en-us/api-reference/beta/resources/governanceroleassignment">
+		<Item text="Список" url="/en-us/api-reference/beta/api/governanceroleassignment_list" />
+		<Item text="Получение" url="/en-us/api-reference/beta/api/governanceroleassignment_get" />
+		<Item text="Экспорт" url="/en-us/api-reference/beta/api/governanceroleassignment_export" />
+	  </Item>
+	  <Item text="Запросы назначения роли" url="/en-us/api-reference/beta/resources/governanceroleassignmentrequest">
+		<Item text="Список" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_list" />
+		<Item text="Создание" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_post" />
+		<Item text="Получение" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_get" />
+		<Item text="Обновление" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_update" />
+		<Item text="Отмена" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_cancel" />
+	  </Item>
     </Item>
       <Item text="Субъект-служба" url="/en-us/api-reference/beta/resources/serviceprincipal">
         <Item text="Перечисление субъектов-служб" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
