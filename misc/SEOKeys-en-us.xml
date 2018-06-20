@@ -5719,8 +5719,17 @@
       </Item>
     </Item>
     <Item text="Командная работа" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="API для управления командами, API Microsoft Graph, API Microsoft Teams" SEODescription="Представляет группу Azure Active Directory. Наследуется от DirectoryObject.">
-      <Item text="Группа (команда)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="API для управления группами, API Microsoft Graph, API для управления группами, API Microsoft Teams, API для управления командами" SEODescription="Представляет группу Azure Active Directory. Наследуется от DirectoryObject.">
-        <Item text="Вывод группы" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Вывод группы, API Microsoft Graph, API для управления группами" SEODescription="Получение свойств и связей объекта группы." />
+      <Item text="Команда" url="/en-us/api-reference/beta/resources/team">
+		<Item text="Создание команды" url="/en-us/api-reference/beta/api/team_put_teams" />
+		<Item text="Получение команды" url="/en-us/api-reference/beta/api/team_get" />
+		<Item text="Обновление объекта команды" url="/en-us/api-reference/beta/api/team_update" />
+		<Item text="Архивация объекта команды" url="/en-us/api-reference/beta/api/team_archive" />
+		<Item text="Распаковка объекта команды" url="/en-us/api-reference/beta/api/team_unarchive" />
+		<Item text="Клонирование объекта команды" url="/en-us/api-reference/beta/api/team_clone" />
+	  </Item>
+	  <Item text="Группа (команда)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="API для управления группами, API Microsoft Graph, API для управления группами, API Microsoft Teams, API для управления командами" SEODescription="Представляет группу Azure Active Directory. Наследуется от DirectoryObject.">
+        <Item text="Создание группы" url="/en-us/api-reference/beta/api/group_post_groups" />
+		<Item text="Вывод группы" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Вывод группы, API Microsoft Graph, API для управления группами" SEODescription="Получение свойств и связей объекта группы." />
         <Item text="Перечисление групп" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="Список групп, API Microsoft Graph, API для управления группами" SEODescription="Получение списка, включающего объекты групп." />
         <Item text="Обновление группы" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="Обновление группы, API Microsoft Graph, API для управления группами" SEODescription="Обновление свойств, принадлежащих объекту группы." />
         <Item text="Удаление группы" url="/en-us/api-reference/beta/api/group_delete" SEOKeyword="Удаление группы, API Microsoft Graph, API для управления группами" SEODescription="Удаление группы." />
@@ -5728,7 +5737,7 @@
         <Item text="Перечисление членов" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="Список элементов, API Microsoft Graph, API для управления группами" SEODescription="Получение списка объектов DirectoryObject." />
         <Item text="Добавление элемента" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="Создание элемента, API Microsoft Graph, API для управления группами" SEODescription="С помощью этого API можно создать элемент." />
         <Item text="Удаление элемента" url="/en-us/api-reference/beta/api/group_delete_members" SEOKeyword="Удаление элемента, API Microsoft Graph, API для управления группами" SEODescription="С помощью этого API можно удалить элемент." />
-        <Item text="Перечисление владельцев" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="Список владельцев, API Microsoft Graph, API для управления группами" SEODescription="Получение списка объектов DirectoryObject." />
+        <Item text="Перечисление владельцев" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="Список владельцев, API Microsoft Graph, API для управления группами" SEODescription="Получение списка объектов directoryobject." />
         <Item text="Добавление владельца" url="/en-us/api-reference/beta/api/group_post_owners" SEOKeyword="Создание владельца, API Microsoft Graph, API для управления группами" SEODescription="С помощью этого API можно создать владельца." />
         <Item text="Удаление владельца" url="/en-us/api-reference/beta/api/group_delete_owners" SEOKeyword="Удаление владельца, API Microsoft Graph, API для управления группами" SEODescription="С помощью этого API можно удалить владельца группы." />
         <Item text="Вывод групп пользователя" url="/en-us/api-reference/beta/api/group_getmembergroups" SEOKeyword="group: getMemberGroups, API Microsoft Graph, API для управления группами" SEODescription="" />
@@ -5740,24 +5749,20 @@
         <Item text="Удаление группы без возможности восстановления" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Восстановление удаленной группы" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
       </Item>
-      <Item text="Команда" url="/en-us/api-reference/beta/resources/team">
-		<Item text="Создание команды" url="/en-us/api-reference/beta/api/team_put_teams" />
-		<Item text="Получение команды" url="/en-us/api-reference/beta/api/team_get" />
-		<Item text="Обновление команды" url="/en-us/api-reference/beta/api/team_update" />
-	  </Item>
-	  <Item text="Фотография" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="взаимодействующие с пользователями люди, API Microsoft Graph, API для управления пользователями" SEODescription="">
-        <Item text="Вывод фотографии" url="/en-us/api-reference/beta/api/profilephoto_get" />
-        <Item text="Обновление фотографии" url="/en-us/api-reference/beta/api/profilephoto_update" />
-      </Item>
       <Item text="Канал" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="API для управления каналами, API Microsoft Graph, API для управления каналами" SEODescription="">
         <Item text="Перечисление каналов" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="Перечисление каналов, API Microsoft Graph, API для управления группами" SEODescription="Получение списка объектов Channel." />
         <Item text="Создание канала" url="/en-us/api-reference/beta/api/group_post_channels" SEOKeyword="Создание объекта Conversation, API Microsoft Graph, API для управления группами" SEODescription="С помощью этого API можно создавать каналы." />
         <Item text="Получение канала группы" url="/en-us/api-reference/beta/api/channel_get" SEOKeyword="Получение канала группы, API Microsoft Graph, API для управления каналом Microsoft Teams" SEODescription="Получение свойств и связей объекта Channel." />
       </Item>
       <Item text="Объект chatThread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="API для управления объектом chatthread, API Microsoft Graph, API для управления объектом chatThread" SEODescription="">
-        <Item text="Создание объекта chatThread" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Создание объекта chatThread, API Microsoft Graph, API для управления чатом Microsoft Teams" SEODescription="С помощью этого API можно создать объект chatThread." />
+        <Item text="Создание объекта chatThread" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Создание объекта chatThread, API Microsoft Graph, API для управления чатом Microsoft Teams" SEODescription="С помощью этого API можно создать беседу в чате." />
       </Item>
-      <Item text="Сообщение чата" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="API для управления сообщениями чата, API Microsoft Graph, API для управления сообщениями чата" SEODescription="">
+      <Item text="Приложения" url="/en-us/api-reference/beta/resources/teamsapp">
+		<Item text="Перечисление приложений" url="/en-us/api-reference/beta/api/teams_apps_list" />
+		<Item text="Добавление приложения" url="/en-us/api-reference/beta/api/teams_apps_add" />
+		<Item text="Удаление приложения" url="/en-us/api-reference/beta/api/teams_apps_delete" />
+	  </Item>
+	  <Item text="Сообщение чата" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="API для управления сообщениями чата, API Microsoft Graph, API для управления сообщениями чата" SEODescription="">
       </Item>
       <Item text="Календарь" url="/en-us/api-reference/beta/resources/event" SEOKeyword="календарь пользователя, API Microsoft Graph, API для управления пользователями" SEODescription="">
         <Item text="Список событий" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="Список событий, API Microsoft Graph, API для управления группами" SEODescription="Получение списка, включающего объекты событий." />
@@ -5782,15 +5787,9 @@
         <Item text="Список записных книжек" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Список записных книжек, API Microsoft Graph, API для управления заметками" SEODescription="Получение списка, включающего объекты записных книжек (…/resources/notebook.md)." />
         <Item text="Создание записной книжки" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Создание записной книжки, API Microsoft Graph, API для управления заметками" SEODescription="Создание записной книжки в OneNote (…/resources/notebook.md)." />
       </Item>
-      <Item text="Расширенные свойства" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
-        <Item text="Однозначное расширенное свойство" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
-          <Item text="Создание однозначного свойства" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
-          <Item text="Получение однозначного свойства" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
-        </Item>
-        <Item text="Многозначное расширенное свойство" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="">
-          <Item text="Создание многозначного свойства" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
-          <Item text="Получение многозначного свойства" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-        </Item>
+	   <Item text="Фотография" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="взаимодействующие с пользователями люди, API Microsoft Graph, API для управления пользователями" SEODescription="">
+        <Item text="Вывод фотографии" url="/en-us/api-reference/beta/api/profilephoto_get" />
+        <Item text="Обновление фотографии" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
     </Item>
     <Item text="Задачи из списка дел" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/outlooktask">
