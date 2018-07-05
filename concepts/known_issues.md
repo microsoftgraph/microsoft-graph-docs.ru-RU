@@ -178,6 +178,28 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 Параметр **comment** для создания ответа или черновика ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) не включается в текст полученного черновика сообщения.
 
+## <a name="bookings"></a>Bookings
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>Ошибка ErrorExceededFindCountLimit при запросе bookingBusinesses
+
+При получении списка по запросу `bookingBusinesses` возвращается ошибка с указанным ниже кодом, если у организации есть несколько компаний по бронированию, а учетная запись, с которой отправлен запрос, не принадлежит администратору.
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+Набор компаний, возвращаемых по запросу, можно ограничить, указав параметр запроса, например:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
 ## <a name="drives-files-and-content-streaming"></a>Диски, файлы и потоковая передача контента
 
 * При первом доступе к личному диску пользователя с помощью Microsoft Graph до открытия им своего личного сайта в браузере возвращается ответ 401.
@@ -246,6 +268,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Для каждого экземпляра ресурса разрешено не более 100 значений свойства расширения схемы
 
 В настоящее время для каждого экземпляра таких ресурсов каталога, как **device**, **group** и **user**, можно установить не более 100 значений свойства расширения схемы.
+
+### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Фильтрация по свойствам расширения схемы поддерживается не для всех типов объектов
+
+Фильтрация по свойствам расширения схемы (с помощью выражения `$filter`) не поддерживается для типов сущностей Outlook **contact**, **event**, **message** или **post**.
 
 ## <a name="json-batching"></a>Пакетная обработка JSON
 
