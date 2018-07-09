@@ -83,6 +83,29 @@
 Об известных проблемах, связанных с запросом изменений, можно узнать в [соответствующем разделе](#delta-query) этой статьи.
 
 
+## <a name="bookings"></a>Bookings
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>Ошибка ErrorExceededFindCountLimit при запросе bookingBusinesses
+
+При получении списка по запросу `bookingBusinesses` возвращается ошибка с указанным ниже кодом, если у организации есть несколько компаний в Bookings, а учетная запись, с использованием которой отправлен запрос, не принадлежит администратору.
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+В качестве обходного решения можно ограничить группу компаний, возвращаемых по запросу, указав параметр `query`. Пример:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
+
 ## <a name="calendars"></a>Календари
 
 ### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Добавление календарей ICS в почтовый ящик пользователя и доступ к ним
@@ -178,27 +201,6 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 Параметр **comment** для создания ответа или черновика ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) не включается в текст полученного черновика сообщения.
 
-## <a name="bookings"></a>Bookings
-
-### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>Ошибка ErrorExceededFindCountLimit при запросе bookingBusinesses
-
-При получении списка по запросу `bookingBusinesses` возвращается ошибка с указанным ниже кодом, если у организации есть несколько компаний по бронированию, а учетная запись, с которой отправлен запрос, не принадлежит администратору.
-
-```json
-{
-  "error": {
-    "code": "ErrorExceededFindCountLimit",
-    "message":
-      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
-  }
-}
-```
-
-Набор компаний, возвращаемых по запросу, можно ограничить, указав параметр запроса, например:
-
-```
-GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
-```
 
 ## <a name="drives-files-and-content-streaming"></a>Диски, файлы и потоковая передача контента
 

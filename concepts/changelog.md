@@ -12,6 +12,24 @@
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета-версия        | API [application](https://graph.microsoft.io/ru-RU/docs/api-reference/beta/resources/application) и [servicePrincipal](https://graph.microsoft.io/ru-RU/docs/api-reference/beta/resources/serviceprincipal) будут обновлены в предварительной (бета) версии. Первый набор изменений будет применен 16 мая 2018 г. Изменения включают в себя переименование и реструктуризацию свойств. Большинство существующих свойств будут доступны только после применения изменений. Будут добавлены новые свойства. Прежде чем выйдет версия 1.0 с изменениями, будет выпущена бета-версия. |
 
+### <a name="microsoft-teams-apis"></a>API Microsoft Teams
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Удаление|Бета-версия|Удален DELETE /groups/{id}/team/channels/{id}, используйте DELETE /teams/{id}/channels/{id}. |
+|Удаление|Бета-версия|Удален GET /groups/{id}/team/channels/{id}, используйте GET /teams/{id}/channels/{id}. |
+|Удаление|Бета-версия|Удален PATCH /groups/{id}/team/channels/{id}, используйте PATCH /teams/{id}/channels/{id}. |
+|Удаление|Бета-версия|Удален POST /groups/{id}/team/channels/{id}/chatthreads, используйте POST /teams/{id}/channels/{id}/chatthreads. |
+|Удаление|Бета-версия|Удален GET /groups/{id}/team/channels, используйте GET /teams/{id}/channels. |
+|Удаление|Бета-версия|Удален DELETE /groups/{id}/channels/{id}, используйте DELETE /teams/{id}/channels/{id}. |
+|Удаление|Бета|Удален GET /groups/{id}/channels/{id}, используйте GET /teams/{id}/channels/{id}. |
+|Удаление|Бета-версия|Удален PATCH /groups/{id}/channels/{id}, используйте PATCH /teams/{id}/channels/{id}. |
+|Удаление|Бета-версия|Удален POST /groups/{id}/channels/{id}/chatthreads, используйте POST /teams/{id}/channels/{id}/chatthreads. |
+|Удаление|Бета-версия|Удален GET /groups/{id}/channels, используйте GET /teams/{id}/channels. |
+|Удаление|Бета-версия|Удален POST /groups/{id}/team/channels, используйте POST /teams/{id}/channels. |
+|Удаление|Бета-версия|Удален GET /groups/{id}/team, используйте GET /teams/{id}. |
+|Удаление|Бета-версия|Удален PATCH /groups/{id}/team, используйте PATCH /teams/{id}. |
+
+
 ## <a name="june-2018"></a>Июнь 2018 г.
 
 ### <a name="directory-apis"></a>API каталогов
@@ -969,7 +987,7 @@
 | Изменение      | Бета    | Добавлены свойства **kioskModeApps** и **requireAppVerify** для объекта [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md). |
 | Изменение      | Бета    | Удалено свойство **kioskModeManagedApps** объекта [androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md). |
 | Изменение      | Бета-версия    | Удалены свойства **cloudPkiProvider**, **createdDateTime**, **description**, **lastModifiedDateTime**, **displayName**, **syncStatus**, **lastSyncError**, **lastSyncDateTime**, **credentials**, **trustedRootCertificate** и **version** объекта cloudPkiSubscription. |
-| Изменение      | Бета    | Удалены свойства **assignmentStatus**, **assignmentProgress** и **assignmentErrorMessage** объекта [deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md). |
+| Изменение      | Бета-версия    | Удалены свойства **assignmentStatus**, **assignmentProgress** и **assignmentErrorMessage** объекта [deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md). |
 | Изменение      | Бета-версия    | Добавлено свойство **adminConsent** для объекта [deviceManagement](../api-reference/beta/resources/intune_shared_devicemanagement.md). |
 | Изменение      | Бета    | Добавлены свойства **vppTokenOrganizationName**, **vppTokenAccountType** и **vppTokenAppleId** для объекта [iosVppApp](../api-reference/beta/resources/intune_apps_iosvppapp.md). |
 | Изменение      | Бета    | Добавлены свойства **deviceEnrollmentType**, **wiFiMacAddress** и **deviceHealthAttestationState** для объекта [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md). |
@@ -1829,7 +1847,7 @@
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | v1.0        | Новое действие [findMeetingTimes](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/user_findmeetingtimes) для ресурса [user](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/user). |
-| Дополнение        | v1.0        | Новый сложный тип [attendeeBase](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/attendeebase), который состоит из свойства типа участников. |
+| Дополнение        | 1.0        | Новый сложный тип [attendeeBase](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/attendeebase), который состоит из свойства типа участников. |
 | Дополнение        | 1.0        | Новые сложные типы:<br/>[attendeeAvailability](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/attendeeavailability)<br/>[locationConstraint](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/locationconstraint) <br/>[locationConstraintItem](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/locationconstraintitem)<br/>[meetingTimeSuggestion](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/meetingtimesuggestion)<br/>[meetingTimeSuggestionsResult](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/meetingtimesuggestionsresult)<br/>[timeConstraint](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/timeconstraint)<br/>[timeSlot](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/timeslot) |
 | Изменение          | 1.0        | Сложный тип [attendee](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/attendee) теперь является производным от attendeeBase, который, в свою очередь, является производным от [recipient](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/recipient). Он состоит из тех же свойств **status**, **type** и **emailAddress**, что и раньше, а также унаследованных свойств. |
 | Дополнение        | Бета        | В ресурс [calendar](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/beta/resources/calendar) добавлено свойство hexColor. |
