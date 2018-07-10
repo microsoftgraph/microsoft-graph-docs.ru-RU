@@ -404,36 +404,8 @@
 			</Item>
 		</Item>
 	</Item>
-   <Item text="Устройства и приложения" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
+    <Item text="Устройства и приложения" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
       <Item text="Управление приложениями" url="/en-us/api-reference/v1.0/resources/intune_apps_app_conceptual">
-        <Item text="Сколько устройств планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_apps_alldevicesassignmenttarget" />
-        <Item text="Сколько лицензированных пользователей планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_books_alllicensedusersassignmenttarget" />
-        <Item text="Сколько лицензированных пользователей планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_apps_alllicensedusersassignmenttarget" />
-        <Item text="Элемент схемы конфигурации приложения Android for Work" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschemaitem" />
-        <Item text="Схема конфигурации приложения Android for Work" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschema">
-          <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_update" />
-        </Item>
-        <Item text="Профиль регистрации Android for Work" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkenrollmentprofile">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_update" />
-          <Item text="Действие revokeToken" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_revoketoken" />
-          <Item text="Действие createToken" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken" />
-        </Item>
-        <Item text="Параметры Android for Work" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworksettings">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_update" />
-          <Item text="Действие requestSignupUrl" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_requestsignupurl" />
-          <Item text="Действие completeSignup" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_completesignup" />
-          <Item text="Действие syncApps" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_syncapps" />
-          <Item text="Действие unbind" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_unbind" />
-        </Item>
         <Item text="Бизнес-приложение для Android" url="/en-us/api-reference/v1.0/resources/intune_apps_androidlobapp">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_get" />
@@ -449,16 +421,7 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_update" />
         </Item>
-        <Item text="Сколько ролей управления устройствами и приложениями планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceandappmanagementassignmenttarget" />
-        <Item text="Сколько ролей управления устройствами и приложениями планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_books_deviceandappmanagementassignmenttarget" />
-        <Item text="Управление приложениями для устройств" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceappmanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_update" />
-        </Item>
-        <Item text="Управление приложениями для устройств" url="/en-us/api-reference/v1.0/resources/intune_books_deviceappmanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_update" />
-        </Item>
+        <Item text="Элемент параметра конфигурации приложения" url="/en-us/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem" />
         <Item text="Состояние установки устройства" url="/en-us/api-reference/v1.0/resources/intune_books_deviceinstallstate">
           <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_get" />
@@ -466,21 +429,13 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_update" />
         </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_androidforwork_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_androidforwork_devicemanagement_update" />
-        </Item>
         <Item text="Сводка по установке электронной книги" url="/en-us/api-reference/v1.0/resources/intune_books_ebookinstallsummary">
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_get" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_update" />
         </Item>
-        <Item text="Сколько групп исключения планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_apps_exclusiongroupassignmenttarget" />
-        <Item text="Сколько групп исключения планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_books_exclusiongroupassignmenttarget" />
-        <Item text="Сведения о шифровании файлов" url="/en-us/api-reference/v1.0/resources/intune_apps_fileencryptioninfo" />
-        <Item text="Сколько групп планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_apps_groupassignmenttarget" />
-        <Item text="Сколько групп планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_books_groupassignmenttarget" />
+        <Item text="Информация о шифровании файлов" url="/en-us/api-reference/v1.0/resources/intune_apps_fileencryptioninfo" />
+        <Item text="Состояние установки" url="/en-us/api-reference/v1.0/resources/intune_books_installstate" />
         <Item text="Тип устройства iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_iosdevicetype" />
-        <Item text="Настройки назначения бизнес-приложения iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="Бизнес-приложение iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobapp">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_get" />
@@ -488,8 +443,15 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_update" />
         </Item>
+        <Item text="Настройки назначения бизнес-приложения iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="Минимальная версия операционной системы iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_iosminimumoperatingsystem" />
-        <Item text="Настройки назначения приложения из магазина iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreappassignmentsettings" />
+        <Item text="Настройка мобильных приложений для iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_iosmobileappconfiguration">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_get" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_create" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_update" />
+        </Item>
         <Item text="Приложение из магазина iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreapp">
           <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_get" />
@@ -497,13 +459,21 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_update" />
         </Item>
-        <Item text="Настройки назначения приложения iOS, приобретенного по программе VPP" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="Настройки назначения приложения из магазина iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreappassignmentsettings" />
         <Item text="Приложение iOS, приобретенное по программе VPP" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppapp">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_create" />
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_update" />
+        </Item>
+        <Item text="Настройки назначения приложения iOS, приобретенного по программе VPP" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="Электронная книга VPP для iOS" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebook">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_get" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_create" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_update" />
         </Item>
         <Item text="Назначение электронной книги VPP для iOS" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebookassignment">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_list" />
@@ -512,14 +482,6 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_update" />
         </Item>
-        <Item text="Электронная книга VPP для iOS" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebook">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_update" />
-        </Item>
-        <Item text="Пара &quot;ключ-значение&quot;" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_keyvaluepair" />
         <Item text="Набор приложений Office для macOS" url="/en-us/api-reference/v1.0/resources/intune_apps_macosofficesuiteapp">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_macosofficesuiteapp_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_macosofficesuiteapp_get" />
@@ -545,12 +507,24 @@
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_managedapp_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_managedapp_get" />
         </Item>
+        <Item text="Доступность управляемого приложения" url="/en-us/api-reference/v1.0/resources/intune_apps_managedappavailability" />
+        <Item text="Конфигурация мобильного приложения на управляемом устройстве" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get" />
+        </Item>
         <Item text="Назначение конфигурации мобильных приложений для управляемых устройств" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationassignment">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_create" />
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_update" />
+        </Item>
+        <Item text="Состояние устройства, связанное с конфигурацией мобильного приложения на управляемом устройстве" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus">
+          <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_get" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_create" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_update" />
         </Item>
         <Item text="Общие сведения об устройствах, связанные с настройкой мобильных приложений для управляемых устройств" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get" />
@@ -567,9 +541,10 @@
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationusersummary_get" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationusersummary_update" />
         </Item>
-        <Item text="Конфигурация мобильного приложения на управляемом устройстве" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get" />
+        <Item text="Управление электронной книгой" url="/en-us/api-reference/v1.0/resources/intune_books_managedebook">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="Назначение управляемой электронной книги" url="/en-us/api-reference/v1.0/resources/intune_books_managedebookassignment">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_list" />
@@ -577,11 +552,6 @@
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_create" />
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_update" />
-        </Item>
-        <Item text="Управление электронной книгой" url="/en-us/api-reference/v1.0/resources/intune_books_managedebook">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="Управляемые бизнес-приложения для iOS" url="/en-us/api-reference/v1.0/resources/intune_apps_managedioslobapp">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_managedioslobapp_list" />
@@ -601,7 +571,7 @@
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_managedmobilelobapp_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_managedmobilelobapp_get" />
         </Item>
-        <Item text="Настройки назначения приложения из Microsoft Store для бизнеса" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
+        <Item text="Тип ключа конфигурации приложения MDM" url="/en-us/api-reference/v1.0/resources/intune_apps_mdmappconfigkeytype" />
         <Item text="Приложение Microsoft Store для бизнеса" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessapp">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_get" />
@@ -609,10 +579,13 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_update" />
         </Item>
-        <Item text="Содержимое MIME" url="/en-us/api-reference/v1.0/resources/intune_apps_mimecontent" />
-        <Item text="Содержимое MIME" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_mimecontent" />
-        <Item text="Содержимое MIME" url="/en-us/api-reference/v1.0/resources/intune_books_mimecontent" />
-        <Item text="Настройки назначения мобильного приложения" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignmentsettings" />
+        <Item text="Настройки назначения приложения из Microsoft Store для бизнеса" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
+        <Item text="Тип лицензии Microsoft Store для бизнеса" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinesslicensetype" />
+        <Item text="Мобильное приложение" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapp">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_assign" />
+        </Item>
         <Item text="Назначение мобильного приложения" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignment">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_get" />
@@ -620,12 +593,20 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_update" />
         </Item>
+        <Item text="Настройки назначения мобильного приложения" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignmentsettings" />
         <Item text="Категория мобильных приложений" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcategory">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_create" />
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_update" />
+        </Item>
+        <Item text="Содержимое мобильных приложений" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontent">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_get" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_create" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_update" />
         </Item>
         <Item text="Файл содержимого мобильного приложения" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontentfile">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_list" />
@@ -636,18 +617,8 @@
           <Item text="Действие commit" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_commit" />
           <Item text="Действие renewUpload" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_renewupload" />
         </Item>
-        <Item text="Содержимое мобильных приложений" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontent">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_update" />
-        </Item>
-        <Item text="Мобильное приложение" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapp">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_assign" />
-        </Item>
+        <Item text="Состояние отправки файла содержимого мобильного приложения" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontentfileuploadstate" />
+        <Item text="Состояние публикации мобильного приложения" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapppublishingstate" />
         <Item text="Мобильное бизнес-приложение" url="/en-us/api-reference/v1.0/resources/intune_apps_mobilelobapp">
           <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_apps_mobilelobapp_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_apps_mobilelobapp_get" />
@@ -667,6 +638,8 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_apps_webapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_apps_webapp_update" />
         </Item>
+        <Item text="Архитектура Windows" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsarchitecture" />
+        <Item text="Тип устройства Windows" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsdevicetype" />
         <Item text="Минимальная версия операционной системы Windows" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsminimumoperatingsystem" />
         <Item text="Windows Mobile MSI" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsmobilemsi">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_apps_windowsmobilemsi_list" />
@@ -684,15 +657,13 @@
         </Item>
       </Item>
       <Item text="Условия компании" url="/en-us/api-reference/v1.0/resources/intune_company_conceptual">
-        <Item text="Сколько устройств планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_companyterms_alldevicesassignmenttarget" />
-        <Item text="Сколько лицензированных пользователей планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_companyterms_alllicensedusersassignmenttarget" />
-        <Item text="Сколько ролей управления устройствами и приложениями планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_companyterms_deviceandappmanagementassignmenttarget" />
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_companyterms_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_companyterms_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_companyterms_devicemanagement_update" />
+        <Item text="Условия" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditions">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_get" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_create" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_update" />
         </Item>
-        <Item text="Сколько групп исключения планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_companyterms_exclusiongroupassignmenttarget" />
-        <Item text="Сколько групп планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_companyterms_groupassignmenttarget" />
         <Item text="Состояние принятия условий" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditionsacceptancestatus">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_get" />
@@ -707,27 +678,19 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_update" />
         </Item>
-        <Item text="Условия" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditions">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_update" />
-        </Item>
       </Item>
       <Item text="Корпоративная регистрация" url="/en-us/api-reference/v1.0/resources/intune_corporate_enrollment_conceptual">
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_update" />
+        <Item text="Импортированное удостоверение устройства с Windows Autopilot" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_create" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_update" />
         </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_enrollment_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_enrollment_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_enrollment_devicemanagement_update" />
-        </Item>
+        <Item text="Состояние импорта удостоверения устройства с Windows Autopilot" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus" />
+        <Item text="Состояние импортированного удостоверения устройства с Windows Autopilot" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
       </Item>
-      <Item text="Настройка устройства" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
-        <Item text="Сколько устройств планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alldevicesassignmenttarget" />
-        <Item text="Сколько лицензированных пользователей планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alllicensedusersassignmenttarget" />
+      <Item text="Конфигурация устройства" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
         <Item text="Политика соответствия требованиям Android" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_get" />
@@ -749,21 +712,34 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidgeneraldeviceconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidgeneraldeviceconfiguration_update" />
         </Item>
+        <Item text="Требуемый тип пароля для Android" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidrequiredpasswordtype" />
         <Item text="Элемент списка приложений" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applistitem" />
+        <Item text="Тип списка приложений" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applisttype" />
+        <Item text="Тип управления для приложения AppLocker" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applockerapplicationcontroltype" />
         <Item text="База конфигураций функций для устройств Apple" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_appledevicefeaturesconfigurationbase">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_get" />
         </Item>
+        <Item text="Тип общего доступа к буферу обмена в блоке Application Guard" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
+        <Item text="Тип передачи данных в блоке Application Guard" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockfiletransfertype" />
+        <Item text="Режим автоматического обновления" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_automaticupdatemode" />
+        <Item text="Метод шифрования BitLocker" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerencryptionmethod" />
         <Item text="Политика BitLocker в отношении съемных дисков" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerremovabledrivepolicy" />
+        <Item text="День недели" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_dayofweek" />
+        <Item text="Тип уровня облачного блока Защитника" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defendercloudblockleveltype" />
         <Item text="Действия Защитника в случае обнаружения вредоносных программ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderdetectedmalwareactions" />
-        <Item text="Сколько ролей управления устройствами и приложениями планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceandappmanagementassignmenttarget" />
-        <Item text="Тип ресурса deviceComplianceActionItem" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactionitem">
+        <Item text="Действия Защитника при отслеживании файлов" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defendermonitorfileactivity" />
+        <Item text="Запрос Защитника на отправку образца" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderpromptforsamplesubmission" />
+        <Item text="Тип сканирования для Защитника" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderscantype" />
+        <Item text="Действие Защитника при обнаружении угрозы" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderthreataction" />
+        <Item text="Элемент действия, касающегося соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_create" />
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_update" />
         </Item>
+        <Item text="Тип действия, касающегося соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactiontype" />
         <Item text="Обзор соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancedeviceoverview">
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedeviceoverview_get" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedeviceoverview_update" />
@@ -774,6 +750,12 @@
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_create" />
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_update" />
+        </Item>
+        <Item text="Политика соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicy">
+          <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_assign" />
+          <Item text="Действие scheduleActionsForRules" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
         </Item>
         <Item text="Назначение политик соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicyassignment">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicyassignment_list" />
@@ -786,28 +768,15 @@
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_get" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_update" />
         </Item>
-        <Item text="Общие сведения о состоянии параметра политики соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary">
+        <Item text="Состояние соответствия устройства параметру политики" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
+        <Item text="Сводка по состоянию соответствия устройств параметру политики" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_create" />
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_update" />
         </Item>
-        <Item text="Состояние параметра политики соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
-        <Item text="Состояние политики соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicystate">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_update" />
-        </Item>
-        <Item text="Политика соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicy">
-          <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_assign" />
-          <Item text="Действие scheduleActionsForRules" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
-        </Item>
-        <Item text="Запланированное действие для правила, касающееся соответствия устройств требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancescheduledactionforrule">
+        <Item text="Запланированное действие для правила соответствия требованиям" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancescheduledactionforrule">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancescheduledactionforrule_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancescheduledactionforrule_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancescheduledactionforrule_create" />
@@ -832,7 +801,12 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceuserstatus_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceuserstatus_update" />
         </Item>
-        <Item text="Назначение конфигураций устройств" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationassignment">
+        <Item text="Настройка устройства" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfiguration">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_assign" />
+        </Item>
+        <Item text="Назначение конфигурации устройств" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationassignment_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationassignment_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationassignment_create" />
@@ -855,13 +829,6 @@
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationdevicestatus_update" />
         </Item>
         <Item text="Состояние параметра конфигурации устройства" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationsettingstate" />
-        <Item text="Состояние конфигурации устройства" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationstate">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_update" />
-        </Item>
         <Item text="Обзор пользователей, касающийся конфигураций устройств" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationuseroverview">
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuseroverview_get" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuseroverview_update" />
@@ -873,19 +840,14 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuserstatus_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuserstatus_update" />
         </Item>
-        <Item text="Настройка устройства" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfiguration">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_assign" />
-        </Item>
         <Item text="Параметры управления устройствами" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagementsettings" />
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_update" />
-        </Item>
-        <Item text="Поисковая система Edge, базовая" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginebase" />
-        <Item text="Поисковая система Edge, пользовательская" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginecustom" />
+        <Item text="Уровень защиты устройства от угроз" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicethreatprotectionlevel" />
+        <Item text="Режим отправки диагностических данных" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_diagnosticdatasubmissionmode" />
+        <Item text="Политика для файлов cookie в Edge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgecookiepolicy" />
         <Item text="Поисковая система Edge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchengine" />
+        <Item text="Базовая поисковая система Edge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginebase" />
+        <Item text="Поисковая система Edge, пользовательская" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginecustom" />
+        <Item text="Тип поисковой системы Edge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginetype" />
         <Item text="Конфигурация обновления выпуска" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_editionupgradeconfiguration">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_get" />
@@ -893,9 +855,12 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_update" />
         </Item>
-        <Item text="Сколько групп исключения планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_exclusiongroupassignmenttarget" />
-        <Item text="Сколько групп планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_groupassignmenttarget" />
-        <Item text="Профиль сертификата iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioscertificateprofile">
+        <Item text="Тип лицензии для обновления выпуска" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_editionupgradelicensetype" />
+        <Item text="Тип метода проверки для списка отзыва сертификатов в брандмауэре" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype" />
+        <Item text="Тип метода для добавления пакетов брандмауэра в список" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallpacketqueueingmethodtype" />
+        <Item text="Тип метода кодировки общего ключа в брандмауэре" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype" />
+        <Item text="Уровень безопасности сайта в Интернете" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_internetsitesecuritylevel" />
+        <Item text="Профиль сертификатов для iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioscertificateprofile">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_get" />
         </Item>
@@ -927,13 +892,14 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosgeneraldeviceconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosgeneraldeviceconfiguration_update" />
         </Item>
-        <Item text="Начальный экран приложения iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenapp" />
-        <Item text="Страница папки начального экрана iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolderpage" />
+        <Item text="Приложение начального экрана iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenapp" />
         <Item text="Папка начального экрана iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolder" />
+        <Item text="Страница папки начального экрана iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="Элемент начального экрана iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenitem" />
         <Item text="Страница начального экрана iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenpage" />
-        <Item text="Правило использование сети iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnetworkusagerule" />
-        <Item text="Параметры уведомления iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationsettings" />
+        <Item text="Правило использования сети iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnetworkusagerule" />
+        <Item text="Тип оповещений об уведомлениях iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationalerttype" />
+        <Item text="Параметры уведомлений iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationsettings" />
         <Item text="Конфигурация обновления iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosupdateconfiguration">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdateconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdateconfiguration_get" />
@@ -948,6 +914,7 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdatedevicestatus_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdatedevicestatus_update" />
         </Item>
+        <Item text="Состояние установки обновлений iOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosupdatesinstallstatus" />
         <Item text="Политика соответствия macOS" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_macoscompliancepolicy">
           <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macoscompliancepolicy_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macoscompliancepolicy_get" />
@@ -976,10 +943,6 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_update" />
         </Item>
-        <Item text="Тип ресурса managedDevice" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_manageddevice">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_get" />
-        </Item>
         <Item text="Оценка мультимедийного содержимого для Австралии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="Оценка мультимедийного содержимого для Канады" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingcanada" />
         <Item text="Оценка мультимедийного содержимого для Франции" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingfrance" />
@@ -988,20 +951,44 @@
         <Item text="Оценка мультимедийного содержимого для Японии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingjapan" />
         <Item text="Оценка мультимедийного содержимого для Новой Зеландии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingnewzealand" />
         <Item text="Оценка мультимедийного содержимого для Соединенного Королевства" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedkingdom" />
-        <Item text="Оценка мультимедийного содержимого для Соединенных Штатов" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedstates" />
+        <Item text="Рейтинг мультимедийного содержимого для Соединенных Штатов" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedstates" />
+        <Item text="Канал Miracast" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_miracastchannel" />
+        <Item text="Параметр OMA" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasetting" />
         <Item text="Параметр OMA, base64" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingbase64" />
         <Item text="Параметр OMA, логическое значение" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingboolean" />
         <Item text="Параметр OMA, дата и время" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingdatetime" />
         <Item text="Параметр OMA, число с плавающей точкой" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingfloatingpoint" />
         <Item text="Параметр OMA, целое число" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettinginteger" />
-        <Item text="Параметр OMA, строка, XML" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstringxml" />
         <Item text="Параметр OMA, строка" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstring" />
-        <Item text="Параметр OMA" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasetting" />
+        <Item text="Параметр OMA, строка, XML" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstringxml" />
+        <Item text="Тип платформы политики" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_policyplatformtype" />
+        <Item text="Предварительные версии функций" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_prereleasefeatures" />
+        <Item text="Тип рейтинга приложений" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingappstype" />
+        <Item text="Тип рейтинга фильмов для Австралии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliamoviestype" />
+        <Item text="Тип рейтинга телевизионных передач для Австралии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliatelevisiontype" />
+        <Item text="Тип рейтинга фильмов для Канады" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingcanadamoviestype" />
+        <Item text="Тип рейтинга телевизионных передач для Канады" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingcanadatelevisiontype" />
+        <Item text="Тип рейтинга фильмов для Франции" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingfrancemoviestype" />
+        <Item text="Тип рейтинга телевизионных передач для Франции" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingfrancetelevisiontype" />
+        <Item text="Тип рейтинга фильмов для Германии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratinggermanymoviestype" />
+        <Item text="Тип рейтинга телевизионных передач для Германии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratinggermanytelevisiontype" />
+        <Item text="Тип рейтинга фильмов для Ирландии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingirelandmoviestype" />
+        <Item text="Тип рейтинга телевизионных передач для Ирландии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingirelandtelevisiontype" />
+        <Item text="Тип рейтинга фильмов для Японии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingjapanmoviestype" />
+        <Item text="Тип рейтинга телевизионных передач для Японии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingjapantelevisiontype" />
+        <Item text="Тип рейтинга фильмов для Новой Зеландии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandmoviestype" />
+        <Item text="Тип рейтинга телевизионных передач для Новой Зеландии" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandtelevisiontype" />
+        <Item text="Тип рейтинга фильмов для Соединенного Королевства" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdommoviestype" />
+        <Item text="Тип рейтинга телевизионных передач для Соединенного Королевства" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype" />
+        <Item text="Тип рейтинга фильмов для Соединенных Штатов Америки" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatesmoviestype" />
+        <Item text="Тип рейтинга телевизионных передач для Соединенных Штатов Америки" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatestelevisiontype" />
+        <Item text="Отчет" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report" />
         <Item text="Корневая папка отчета" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_reportroot">
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_get" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_update" />
         </Item>
-        <Item text="Отчет" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report" />
+        <Item text="Требуемый тип пароля" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_requiredpasswordtype" />
+        <Item text="Тип фильтра для безопасного поиска" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_safesearchfiltertype" />
         <Item text="Источник параметра" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingsource" />
         <Item text="Объект settingStateDeviceSummary" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_list" />
@@ -1010,7 +997,9 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_update" />
         </Item>
-        <Item text="Политика диспетчера учетных записей общего ПК" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcaccountmanagerpolicy" />
+        <Item text="Тип политики удаления учетных записей общего компьютера" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcaccountdeletionpolicytype" />
+        <Item text="Политика диспетчера учетных записей общего компьютера" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcaccountmanagerpolicy" />
+        <Item text="Разрешенный тип учетных записей для общего компьютера" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcallowedaccounttype" />
         <Item text="Конфигурация для общих компьютеров" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcconfiguration">
           <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_get" />
@@ -1018,11 +1007,16 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_update" />
         </Item>
+        <Item text="Уровень безопасности сайта" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sitesecuritylevel" />
         <Item text="Общие сведения о состоянии обновления программного обеспечения" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_softwareupdatestatussummary">
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_update" />
         </Item>
-        <Item text="Универсальный код ресурса (URI)" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_uri" />
+        <Item text="Параметры управления состоянием" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_statemanagementsetting" />
+        <Item text="Параметр видимости" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_visibilitysetting" />
+        <Item text="Параметры файлов cookie для веб-браузера" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_webbrowsercookiesettings" />
+        <Item text="Расписание на неделю" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_weeklyschedule" />
+        <Item text="Сведения о собрании на экране приветствия" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_welcomescreenmeetinginformation" />
         <Item text="Политика соответствия требованиям для Windows 10" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10compliancepolicy">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_get" />
@@ -1037,6 +1031,7 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10customconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10customconfiguration_update" />
         </Item>
+        <Item text="Тип выпуска Windows 10" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10editiontype" />
         <Item text="Конфигурация Windows 10 Endpoint Protection" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10endpointprotectionconfiguration">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10endpointprotectionconfiguration_get" />
@@ -1101,6 +1096,7 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
         </Item>
+        <Item text="Режим оптимизации доставки в Windows" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsdeliveryoptimizationmode" />
         <Item text="Сетевой профиль брандмауэра Windows" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsfirewallnetworkprofile" />
         <Item text="Политика соответствия для Windows Phone 8.1" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsphone81compliancepolicy">
           <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81compliancepolicy_list" />
@@ -1123,6 +1119,9 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81generalconfiguration_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81generalconfiguration_update" />
         </Item>
+        <Item text="Параметры включения экрана &quot;Windows: интересное&quot;" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsspotlightenablementsettings" />
+        <Item text="Тип видимости списка приложений в меню &quot;Пуск&quot; Windows" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype" />
+        <Item text="Тип режима меню &quot;Пуск&quot; Windows" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsstartmenumodetype" />
         <Item text="Установка обновления Windows в период активности" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateactivehoursinstall" />
         <Item text="Конфигурация Центра обновления Windows для бизнеса" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_list" />
@@ -1133,8 +1132,11 @@
         </Item>
         <Item text="Тип расписания установки с использованием Центра обновления Windows" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateinstallscheduletype" />
         <Item text="Запланированная установка с использованием Центра обновления Windows" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatescheduledinstall" />
+        <Item text="Тип обновления Windows" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatetype" />
+        <Item text="Настройки контроля учетных записей Windows" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsuseraccountcontrolsettings" />
       </Item>
-      <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
+      <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_devices_conceptual">
+        <Item text="Состояние действия" url="/en-us/api-reference/v1.0/resources/intune_devices_actionstate" />
         <Item text="Сертификат push-уведомлений Apple" url="/en-us/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate">
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_get" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_update" />
@@ -1149,7 +1151,8 @@
         </Item>
         <Item text="Свойство аудита" url="/en-us/api-reference/v1.0/resources/intune_auditing_auditproperty" />
         <Item text="Ресурс аудита" url="/en-us/api-reference/v1.0/resources/intune_auditing_auditresource" />
-        <Item text="Включенные клиентом функции диспетчера конфигураций" url="/en-us/api-reference/v1.0/resources/intune_devices_configurationmanagerclientenabledfeatures" />
+        <Item text="Состояние соответствия требованиям" url="/en-us/api-reference/v1.0/resources/intune_devices_compliancestate" />
+        <Item text="Включенные функции клиента диспетчера конфигураций" url="/en-us/api-reference/v1.0/resources/intune_devices_configurationmanagerclientenabledfeatures" />
         <Item text="Результат действия &quot;Удаление пользователя с общего устройства Apple&quot;" url="/en-us/api-reference/v1.0/resources/intune_devices_deleteuserfromsharedappledeviceactionresult" />
         <Item text="Обнаруженное приложение" url="/en-us/api-reference/v1.0/resources/intune_devices_detectedapp">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_devices_detectedapp_list" />
@@ -1158,14 +1161,14 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_devices_detectedapp_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_devices_detectedapp_update" />
         </Item>
-        <Item text="Результат действия, касающегося устройства" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceactionresult" />
-        <Item text="Категория устройств" url="/en-us/api-reference/v1.0/resources/intune_devices_devicecategory">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_update" />
-        </Item>
-        <Item text="Сводка по состоянию доступа к Exchange для устройств" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceexchangeaccessstatesummary" />
+        <Item text="Результат действия с устройством" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceactionresult" />
+        <Item text="Причина сбоя регистрации устройства" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_deviceenrollmentfailurereason" />
+        <Item text="Сводка по состоянию доступа к Exchange с устройств" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceexchangeaccessstatesummary" />
         <Item text="Геолокация устройств" url="/en-us/api-reference/v1.0/resources/intune_devices_devicegeolocation" />
         <Item text="Состояние подтверждения работоспособности устройства" url="/en-us/api-reference/v1.0/resources/intune_devices_devicehealthattestationstate" />
+        <Item text="Состояние доступа к Exchange для управления устройствами" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstate" />
+        <Item text="Причина состояния доступа к Exchange для управления устройствами" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstatereason" />
+        <Item text="Состояние подписки на управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementsubscriptionstate" />
         <Item text="Событие &quot;Устранение проблем с управлением устройствами&quot;" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
@@ -1173,31 +1176,8 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
         </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_update" />
-        </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_endpointprotection_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_update" />
-        </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_notification_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_update" />
-        </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_update" />
-        </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_update" />
-        </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_auditing_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_update" />
-        </Item>
-        <Item text="Общие сведения об операционной системе устройства" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceoperatingsystemsummary" />
+        <Item text="Сводка по операционной системе устройства" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceoperatingsystemsummary" />
+        <Item text="Состояние регистрации устройства" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceregistrationstate" />
         <Item text="Событие &quot;Устранение проблем с регистрацией&quot;" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
@@ -1213,11 +1193,7 @@
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_notification_localizednotificationmessage_update" />
         </Item>
         <Item text="Результат действия &quot;Поиск устройства&quot;" url="/en-us/api-reference/v1.0/resources/intune_devices_locatedeviceactionresult" />
-        <Item text="Обзор управляемых устройств" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceoverview">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_update" />
-        </Item>
-        <Item text="Тип ресурса managedDevice" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevice">
+        <Item text="Управляемое устройство" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevice">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_create" />
@@ -1242,6 +1218,22 @@
           <Item text="Действие windowsDefenderUpdateSignatures" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
           <Item text="Действие updateWindowsDeviceAccount" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
         </Item>
+        <Item text="Обзор управляемых устройств" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceoverview">
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_get" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_update" />
+        </Item>
+        <Item text="Тип владельца управляемого устройства" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceownertype" />
+        <Item text="Указанное состояние работоспособности партнера по управляемым устройствам" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevicepartnerreportedhealthstate" />
+        <Item text="Тип агента управления" url="/en-us/api-reference/v1.0/resources/intune_devices_managementagenttype" />
+        <Item text="Тип действия в мобильном приложении" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappactiontype" />
+        <Item text="Намерение мобильного приложения" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintent" />
+        <Item text="Сведения о намерении и состоянии мобильного приложения" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintentandstatedetail" />
+        <Item text="Устранение неполадок с мобильным приложением: история создания политик приложения" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory" />
+        <Item text="Устранение неполадок с мобильным приложением: история состояний приложения" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappstatehistory" />
+        <Item text="Устранение неполадок с мобильным приложением: история целевых объектов приложения" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapptargethistory" />
+        <Item text="Устранение неполадок с мобильным приложением: история обновлений приложения" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappupdatehistory" />
+        <Item text="Устранение неполадок с мобильным приложением: история отметок устройства" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory" />
+        <Item text="Устранение неполадок с мобильным приложением: элемент истории" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem" />
         <Item text="Шаблон сообщения уведомления" url="/en-us/api-reference/v1.0/resources/intune_notification_notificationmessagetemplate">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_get" />
@@ -1250,7 +1242,9 @@
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_update" />
           <Item text="Действие sendTestMessage" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_sendtestmessage" />
         </Item>
-        <Item text="Служба удаленного помощника" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_remoteassistancepartner">
+        <Item text="Параметры фирменной символики для шаблона уведомления" url="/en-us/api-reference/v1.0/resources/intune_notification_notificationtemplatebrandingoptions" />
+        <Item text="Состояние подключения удаленного помощника" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_remoteassistanceonboardingstatus" />
+        <Item text="Партнерская служба удаленного помощника" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_remoteassistancepartner">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_create" />
@@ -1261,30 +1255,15 @@
         </Item>
         <Item text="Результат действия &quot;Удаленная блокировка&quot;" url="/en-us/api-reference/v1.0/resources/intune_devices_remotelockactionresult" />
         <Item text="Результат действия &quot;Сброс секретного кода&quot;" url="/en-us/api-reference/v1.0/resources/intune_devices_resetpasscodeactionresult" />
+        <Item text="Итоговое состояние приложения" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_resultantappstate" />
+        <Item text="Состояние выполнения" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_runstate" />
         <Item text="Параметр действия &quot;Обновление учетной записи устройства с Windows&quot;" url="/en-us/api-reference/v1.0/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
-        <Item text="Пользователь" url="/en-us/api-reference/v1.0/resources/intune_devices_user">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_devices_user_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_devices_user_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_devices_user_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_devices_user_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_devices_user_update" />
-          <Item text="Действие removeAllDevicesFromManagement" url="/en-us/api-reference/v1.0/api/intune_devices_user_removealldevicesfrommanagement" />
-        </Item>
-        <Item text="Пользователь" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_user">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_update" />
-        </Item>
         <Item text="Результат действия &quot;Проверка Защитника Windows&quot;" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdefenderscanactionresult" />
         <Item text="Учетная запись устройства с Windows" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceaccount" />
         <Item text="Учетная запись AD устройства с Windows" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceadaccount" />
         <Item text="Учетная запись Azure AD устройства с Windows" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceazureadaccount" />
       </Item>
-      <Item text="Защита приложений" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
-        <Item text="Сколько устройств планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_mam_alldevicesassignmenttarget" />
-        <Item text="Сколько лицензированных пользователей планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_mam_alllicensedusersassignmenttarget" />
+      <Item text="Защита мобильных приложений" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
         <Item text="Защита управляемых приложений для Android" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_get" />
@@ -1295,8 +1274,10 @@
         <Item text="Регистрация управляемых приложений для Android" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappregistration">
           <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_get" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_create" />
         </Item>
         <Item text="Идентификатор мобильных приложений для Android" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmobileappidentifier" />
+        <Item text="Тип приложения" url="/en-us/api-reference/v1.0/resources/intune_wip_applicationtype" />
         <Item text="Защита управляемых приложений по умолчанию" url="/en-us/api-reference/v1.0/resources/intune_mam_defaultmanagedappprotection">
           <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_get" />
@@ -1304,17 +1285,6 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_update" />
         </Item>
-        <Item text="Сколько ролей управления устройствами и приложениями планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceandappmanagementassignmenttarget" />
-        <Item text="Управление приложениями для устройств" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceappmanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_update" />
-        </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_wip_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_update" />
-        </Item>
-        <Item text="Сколько групп исключения планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_mam_exclusiongroupassignmenttarget" />
-        <Item text="Сколько групп планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_mam_groupassignmenttarget" />
         <Item text="Защита управляемых приложений для iOS" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappprotection">
           <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_get" />
@@ -1332,28 +1302,34 @@
         <Item text="Диапазон IPv6-адресов" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range" />
         <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json" />
         <Item text="Пара &quot;ключ-значение&quot;" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair" />
+        <Item text="Уровень совместного доступа к буферу обмена управляемого приложения" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel" />
         <Item text="Конфигурация управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_get" />
         </Item>
-        <Item text="Состояние диагностики управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdiagnosticstatus" />
-        <Item text="Операция управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappoperation">
+        <Item text="Тип шифрования данных управляемого приложения" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdataencryptiontype" />
+        <Item text="Место хранения данных управляемого приложения" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdatastoragelocation" />
+        <Item text="Уровень передачи данных управляемого приложения" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdatatransferlevel" />
+        <Item text="Состояние диагностики управляемого приложения" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdiagnosticstatus" />
+        <Item text="Причина пометки управляемого приложения" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappflaggedreason" />
+        <Item text="Работа управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappoperation">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_create" />
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_update" />
         </Item>
-        <Item text="Сводка по развертыванию политик для управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
-        <Item text="Сводка по развертыванию политик для управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_update" />
-        </Item>
+        <Item text="Набор символов ПИН-кода управляемого приложения" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppincharacterset" />
         <Item text="Политика управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicy">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_get" />
           <Item text="Действие targetApps" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
+        <Item text="Сводка по развертыванию политик для управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary">
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_get" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_update" />
+        </Item>
+        <Item text="Развертывание политик для управляемых приложений: сводка по каждому приложению" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
         <Item text="Защита управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappprotection">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_managedappprotection_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedappprotection_get" />
@@ -1363,13 +1339,13 @@
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_managedappregistration_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedappregistration_get" />
         </Item>
-        <Item text="Состояние управляемого приложения, необработанное" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatusraw">
-          <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_get" />
-        </Item>
         <Item text="Состояние управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatus">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatus_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatus_get" />
+        </Item>
+        <Item text="Состояние управляемого приложения, необработанное" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatusraw">
+          <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_get" />
         </Item>
         <Item text="Управляемое мобильное приложение" url="/en-us/api-reference/v1.0/resources/intune_mam_managedmobileapp">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_managedmobileapp_list" />
@@ -1396,20 +1372,24 @@
           <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_assign" />
           <Item text="Действие targetApps" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_targetapps" />
         </Item>
+        <Item text="Назначение целевой политики для управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedapppolicyassignment">
+          <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_get" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_update" />
+        </Item>
         <Item text="Целевая защита управляемых приложений" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedappprotection">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_get" />
           <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_assign" />
         </Item>
-        <Item text="Пользователь" url="/en-us/api-reference/v1.0/resources/intune_mam_user">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_user_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_user_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_mam_user_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_mam_user_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_mam_user_update" />
-          <Item text="Действие wipeManagedAppRegistrationsByDeviceTag" url="/en-us/api-reference/v1.0/api/intune_mam_user_wipemanagedappregistrationsbydevicetag" />
+        <Item text="Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotection">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_get" />
+          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_assign" />
         </Item>
-        <Item text="Сводка по обучению приложения Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionapplearningsummary">
+        <Item text="Приложение Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp" />
+        <Item text="Сводка по обучению для приложения Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionapplearningsummary">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_get" />
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_create" />
@@ -1423,9 +1403,9 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionapplockerfile_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionapplockerfile_update" />
         </Item>
-        <Item text="Приложение Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Сертификат восстановления данных Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectiondatarecoverycertificate" />
         <Item text="Классическое приложение Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectiondesktopapp" />
+        <Item text="Уровень применения Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionenforcementlevel" />
         <Item text="Коллекция диапазонов IP-адресов Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectioniprangecollection" />
         <Item text="Сводка по обучению сети Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionnetworklearningsummary">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_list" />
@@ -1434,6 +1414,7 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_update" />
         </Item>
+        <Item text="Требования к символам ПИН-кода Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionpincharacterrequirements" />
         <Item text="Политика Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionpolicy">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionpolicy_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionpolicy_get" />
@@ -1444,29 +1425,9 @@
         <Item text="Коллекция проксируемых доменов Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionproxieddomaincollection" />
         <Item text="Коллекция ресурсов Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionresourcecollection" />
         <Item text="Приложение из магазина Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionstoreapp" />
-        <Item text="Windows Information Protection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotection">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_get" />
-          <Item text="Действие назначения" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_assign" />
-        </Item>
       </Item>
-      <Item text="Входящая миграция" url="/en-us/api-reference/v1.0/resources/intune_onboarding_conceptual">
-        <Item text="Сколько устройств планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alldevicesassignmenttarget" />
-        <Item text="Сколько лицензированных пользователей планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alllicensedusersassignmenttarget" />
-        <Item text="Сколько ролей управления устройствами и приложениями планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceandappmanagementassignmenttarget" />
-        <Item text="Управление приложениями для устройств" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceappmanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_update" />
-          <Item text="Действие syncMicrosoftStoreForBusinessApps" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
-        </Item>
-        <Item text="Категория устройств" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicecategory">
-          <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_update" />
-        </Item>
-        <Item text="Настройка регистрации устройств" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentconfiguration">
+      <Item text="Подключение" url="/en-us/api-reference/v1.0/resources/intune_onboarding_conceptual">
+        <Item text="Конфигурация регистрации устройств" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentconfiguration">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_get" />
           <Item text="Действие setPriority" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_setpriority" />
@@ -1502,6 +1463,9 @@
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_update" />
           <Item text="Действие синхронизации" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
         </Item>
+        <Item text="Состояние соединителя Exchange для управления устройствами" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectorstatus" />
+        <Item text="Тип синхронизации соединителя Exchange для управления устройствами" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectorsynctype" />
+        <Item text="Тип соединителя Exchange для управления устройствами" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectortype" />
         <Item text="Партнер по управлению устройствами" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartner">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_get" />
@@ -1509,10 +1473,9 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_update" />
         </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_update" />
-        </Item>
+        <Item text="Тип партнерского приложения для управления устройствами" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnerapptype" />
+        <Item text="Состояние клиента партнера по управлению устройствами" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnertenantstate" />
+        <Item text="Включение" url="/en-us/api-reference/v1.0/resources/intune_onboarding_enablement" />
         <Item text="Назначение конфигураций регистрации" url="/en-us/api-reference/v1.0/resources/intune_onboarding_enrollmentconfigurationassignment">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_get" />
@@ -1520,10 +1483,8 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_update" />
         </Item>
-        <Item text="Сколько групп исключения планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_onboarding_exclusiongroupassignmenttarget" />
-        <Item text="Сколько групп планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_onboarding_groupassignmenttarget" />
         <Item text="Бренд Intune" url="/en-us/api-reference/v1.0/resources/intune_onboarding_intunebrand" />
-        <Item text="Содержимое MIME" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mimecontent" />
+        <Item text="Центр MDM" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mdmauthority" />
         <Item text="Соединитель Mobile Threat Defense" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mobilethreatdefenseconnector">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_get" />
@@ -1531,7 +1492,8 @@
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_update" />
         </Item>
-        <Item text="Настройка локального условного доступа" url="/en-us/api-reference/v1.0/resources/intune_onboarding_onpremisesconditionalaccesssettings">
+        <Item text="Состояние клиента партнера Mobile Threat Defense" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mobilethreatpartnertenantstate" />
+        <Item text="Параметры локального условного доступа" url="/en-us/api-reference/v1.0/resources/intune_onboarding_onpremisesconditionalaccesssettings">
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_get" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_update" />
         </Item>
@@ -1542,13 +1504,18 @@
           <Item text="Действие setMobileDeviceManagementAuthority" url="/en-us/api-reference/v1.0/api/intune_onboarding_organization_setmobiledevicemanagementauthority" />
         </Item>
         <Item text="Цвет RGB" url="/en-us/api-reference/v1.0/resources/intune_onboarding_rgbcolor" />
-        <Item text="Пользователь" url="/en-us/api-reference/v1.0/resources/intune_onboarding_user">
-          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_list" />
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_get" />
-          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_create" />
-          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_delete" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_update" />
+        <Item text="Токен VPP" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptoken">
+          <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_list" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_get" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_create" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_update" />
+          <Item text="Действие syncLicenses" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses" />
+          <Item text="Действие syncLicenses" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses" />
         </Item>
+        <Item text="Состояние токена VPP" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokenstate" />
+        <Item text="Состояние синхронизации токена VPP" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokensyncstatus" />
+        <Item text="Использование ПИН-кода в Windows Hello для бизнеса" url="/en-us/api-reference/v1.0/resources/intune_onboarding_windowshelloforbusinesspinusage" />
       </Item>
       <Item text="Управление доступом на основе ролей" url="/en-us/api-reference/v1.0/resources/intune_rbac_conceptual">
         <Item text="Назначение роли управления устройствами и приложениями" url="/en-us/api-reference/v1.0/resources/intune_rbac_deviceandappmanagementroleassignment">
@@ -1564,10 +1531,6 @@
           <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_create" />
           <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_delete" />
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_update" />
-        </Item>
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_rbac_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_update" />
         </Item>
         <Item text="Действие ресурса" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceaction" />
         <Item text="Операция ресурса" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceoperation">
@@ -1592,13 +1555,46 @@
           <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_update" />
         </Item>
         <Item text="Разрешение роли" url="/en-us/api-reference/v1.0/resources/intune_rbac_rolepermission" />
-        <Item text="Универсальный код ресурса (URI)" url="/en-us/api-reference/v1.0/resources/intune_rbac_uri" />
+      </Item>
+      <Item text="Общие ресурсы" url="/en-us/api-reference/v1.0/resources/intune_shared_conceptual">
+        <Item text="Объект назначения для всех устройств" url="/en-us/api-reference/v1.0/resources/intune_shared_alldevicesassignmenttarget" />
+        <Item text="Объект назначения всех лицензированных пользователей" url="/en-us/api-reference/v1.0/resources/intune_shared_alllicensedusersassignmenttarget" />
+        <Item text="Состояние соответствия" url="/en-us/api-reference/v1.0/resources/intune_shared_compliancestatus" />
+        <Item text="Объект назначения для управления устройствами и приложениями" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceandappmanagementassignmenttarget" />
+        <Item text="Управление приложениями для устройств" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceappmanagement">
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement" />
+          <Item text="Действие syncMicrosoftStoreForBusinessApps" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
+        </Item>
+        <Item text="Категория устройств" url="/en-us/api-reference/v1.0/resources/intune_shared_devicecategory">
+          <Item text="Список" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+        </Item>
+        <Item text="Тип регистрации устройства" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceenrollmenttype" />
+        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update" />
+        </Item>
+        <Item text="Сколько групп исключения планируется назначить" url="/en-us/api-reference/v1.0/resources/intune_shared_exclusiongroupassignmenttarget" />
+        <Item text="Объект назначения группы" url="/en-us/api-reference/v1.0/resources/intune_shared_groupassignmenttarget" />
+        <Item text="Намерение установки" url="/en-us/api-reference/v1.0/resources/intune_shared_installintent" />
+        <Item text="Содержимое MIME" url="/en-us/api-reference/v1.0/resources/intune_shared_mimecontent" />
+        <Item text="Сохраненные параметры создания состояния пользовательского интерфейса" url="/en-us/api-reference/v1.0/resources/intune_shared_saveduistategenerationoptions" />
+        <Item text="Универсальный код ресурса (URI)" url="/en-us/api-reference/v1.0/resources/intune_shared_uri" />
+        <Item text="Пользователь" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
+          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="Создание" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="Удаление" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete" />
+          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="Действие removeAllDevicesFromManagement" url="/en-us/api-reference/v1.0/api/intune_shared_user_removealldevicesfrommanagement" />
+          <Item text="Действие wipeManagedAppRegistrationsByDeviceTag" url="/en-us/api-reference/v1.0/api/intune_shared_user_wipemanagedappregistrationsbydevicetag" />
+        </Item>
+        <Item text="Тип учетной записи токена VPP" url="/en-us/api-reference/v1.0/resources/intune_shared_vpptokenaccounttype" />
       </Item>
       <Item text="Затраты на телекоммуникации" url="/en-us/api-reference/v1.0/resources/intune_tem_conceptual">
-        <Item text="Управление устройствами" url="/en-us/api-reference/v1.0/resources/intune_tem_devicemanagement">
-          <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_get" />
-          <Item text="Обновление" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_update" />
-        </Item>
         <Item text="Партнер по управлению затратами на телекоммуникации" url="/en-us/api-reference/v1.0/resources/intune_tem_telecomexpensemanagementpartner">
           <Item text="Перечисление" url="/en-us/api-reference/v1.0/api/intune_tem_telecomexpensemanagementpartner_list" />
           <Item text="Получение" url="/en-us/api-reference/v1.0/api/intune_tem_telecomexpensemanagementpartner_get" />
@@ -5137,7 +5133,7 @@
         <Item text="Поиск элементов" url="/en-us/api-reference/beta/api/driveitem_search" SEOKeyword="Поиск элементов, API Microsoft Graph, API управления дисками для OneDrive" SEODescription="" />
         <Item text="Отслеживание изменений" url="/en-us/api-reference/beta/api/driveitem_delta" SEOKeyword="Отслеживание изменений, API Microsoft Graph" SEODescription="" />
 		<Item text="Получение ссылки для предварительного просмотра" url="/en-us/api-reference/beta/api/driveitem_preview" />
-		<Item text="Список версий" url="/en-us/api-reference/beta/api/driveitem_list_versions" />
+		<Item text="Перечисление версий" url="/en-us/api-reference/beta/api/driveitem_list_versions" />
       </Item>
       <Item text="Разрешения" url="/en-us/api-reference/beta/resources/permission" SEOKeyword="Создание элемента ссылки, API Microsoft Graph, API управления дисками для OneDrive" SEODescription="">
         <Item text="Создание ссылки совместного доступа" url="/en-us/api-reference/beta/api/driveitem_createlink" SEOKeyword="Создание элемента ссылки, API Microsoft Graph, API управления дисками для OneDrive" SEODescription="" />
