@@ -67,3 +67,10 @@ OneNote можно использовать как холст, где польз
 Чтобы отправлять вызовы API OneNote из песочницы Graph, нажмите **Показать другие примеры** в столбце слева. **Включите** OneNote с помощью меню. Вам также потребуется включить соответствующие разрешения. В меню слева под именем учетной записи выберите **Изменить разрешения**. Дополнительные сведения о разрешениях OneNote см. в разделе [Разрешения для заметок](permissions_reference.md#notes-permissions).
 
 Сведения о том, как приступить к работе с API OneNote в Microsoft Graph, см. в [справочных материалах по OneNote](../api-reference/v1.0/resources/onenote-api-overview.md).
+
+## <a name="see-also"></a>См. также
+
+- [Разработка для OneNote](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [Работа с записными книжками для занятий](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [Работа со служебными записными книжками](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [Подписка на веб-перехватчики](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-sync)
