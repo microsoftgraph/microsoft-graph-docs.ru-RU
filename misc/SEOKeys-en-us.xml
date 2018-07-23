@@ -2490,7 +2490,6 @@
 		<Item text="Веб-канал активности" url="/en-us/api-reference/beta/resources/activity-feed-api-overview">
 			<Item text="Действие" url="/en-us/api-reference/beta/resources/projectrome_activity">
 				<Item text="Создание или замена действия" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
-				<Item text="Создание или замена действия" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
 				<Item text="Удаление действия" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
 				<Item text="Получение действий" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
 				<Item text="Получение последних действий" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
@@ -2512,15 +2511,16 @@
 			<Item text="Публикация" url="/en-us/api-reference/beta/api/bookingbusiness_publish" />
 			<Item text="Отмена публикации" url="/en-us/api-reference/beta/api/bookingbusiness_unpublish" />
 		</Item>
-		<Item text="bookingAppointment" url="/en-us/api-reference/beta/resources/bookingappointment">
-			<Item text="Перечисление" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
-			<Item text="Создание" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
-			<Item text="Получение" url="/en-us/api-reference/beta/api/bookingappointment_get" />
-			<Item text="Обновление" url="/en-us/api-reference/beta/api/bookingappointment_update" />
-			<Item text="Удаление" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
-			<Item text="Отмена" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
+		<Item text="Резервирование" url="/en-us/api-reference/beta/resources/bookingappointment">
+			<Item text="Список представлений календаря" url="/en-us/api-reference/beta/api/bookingbusiness_list_calendarview" />
+			<Item text="Список встреч" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
+			<Item text="Создание встречи" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
+			<Item text="Получение встречи" url="/en-us/api-reference/beta/api/bookingappointment_get" />
+			<Item text="Обновление встречи" url="/en-us/api-reference/beta/api/bookingappointment_update" />
+			<Item text="Удаление встречи" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
+			<Item text="Отмена встречи" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
 		</Item>
-		<Item text="bookingCurrency" url="/en-us/api-reference/beta/resources/bookingcurrency">
+		<Item text="Валюта резервирования" url="/en-us/api-reference/beta/resources/bookingcurrency">
 			<Item text="Перечисление" url="/en-us/api-reference/beta/api/bookingcurrency_list" />
 			<Item text="Получение" url="/en-us/api-reference/beta/api/bookingcurrency_get" />
 		</Item>
@@ -5133,7 +5133,7 @@
         <Item text="Поиск элементов" url="/en-us/api-reference/beta/api/driveitem_search" SEOKeyword="Поиск элементов, API Microsoft Graph, API управления дисками для OneDrive" SEODescription="" />
         <Item text="Отслеживание изменений" url="/en-us/api-reference/beta/api/driveitem_delta" SEOKeyword="Отслеживание изменений, API Microsoft Graph" SEODescription="" />
 		<Item text="Получение ссылки для предварительного просмотра" url="/en-us/api-reference/beta/api/driveitem_preview" />
-		<Item text="Перечисление версий" url="/en-us/api-reference/beta/api/driveitem_list_versions" />
+		<Item text="Список версий" url="/en-us/api-reference/beta/api/driveitem_list_versions" />
       </Item>
       <Item text="Разрешения" url="/en-us/api-reference/beta/resources/permission" SEOKeyword="Создание элемента ссылки, API Microsoft Graph, API управления дисками для OneDrive" SEODescription="">
         <Item text="Создание ссылки совместного доступа" url="/en-us/api-reference/beta/api/driveitem_createlink" SEOKeyword="Создание элемента ссылки, API Microsoft Graph, API управления дисками для OneDrive" SEODescription="" />
@@ -5174,7 +5174,6 @@
           <Item text="Удаление приложения" url="/en-us/api-reference/beta/api/application_delete" SEOKeyword="Удаление приложения, API Microsoft Graph, API для управления приложениями" SEODescription="Удаление приложения." />
           <Item text="Список владельцев" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="Список владельцев, API Microsoft Graph, API для управления приложениями" SEODescription="Получение списка объектов DirectoryObject." />
           <Item text="Назначение владельца" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Создание владельца, API Microsoft Graph, API для управления приложениями" SEODescription="С помощью этого API можно создать владельца." />
-          <Item text="Список свойств расширения" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="Список объектов extensionProperty, API Microsoft Graph, API для управления приложениями" SEODescription="Получение списка объектов extensionProperty." />
         </Item>
 	  <Item text="Журналы аудита" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Аудит каталога" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="Объект directoryAudit, API Microsoft Graph, Azure AD, журналы аудита" SEODescription="">
@@ -5248,11 +5247,6 @@
         <Item text="Получение домена" url="/en-us/api-reference/beta/api/domain_get" />
         <Item text="Обновление домена" url="/en-us/api-reference/beta/api/domain_update" />
         <Item text="Проверка домена" url="/en-us/api-reference/beta/api/domain_verify" />
-      </Item>
-      <Item text="Свойство расширения" url="/en-us/api-reference/beta/resources/extensionproperty" SEOKeyword="API для управления объектами ExtensionProperty, API Microsoft Graph, API для управления объектами ExtensionProperty" SEODescription="Позволяет приложению задавать и использовать набор дополнительных свойств, которые можно добавить к объектам каталога (пользователям, группам, сведениям о клиенте, устройствам, приложениям и субъектам-службам) без необходимости во внешнем хранилище данных для приложения. Дополнительные сведения о свойствах расширений см. в статье &quot;Расширения схемы каталогов в API Graph для Azure AD (https://msdn.microsoft.com/ru-ru/library/azure/dn720459.aspx). Наследует от DirectoryObject.">
-        <Item text="Вывод объекта ExtensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_get" SEOKeyword="Вывод объекта ExtensionProperty, API Microsoft Graph, API для управления объектами ExtensionProperty" SEODescription="Получение свойств и связей объекта ExtensionProperty." />
-        <Item text="Обновление объекта ExtensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_update" SEOKeyword="Обновление объекта ExtensionProperty, API Microsoft Graph, API для управления объектом ExtensionProperty" SEODescription="Обновление свойств, принадлежащих объекту ExtensionProperty." />
-        <Item text="Удаление объекта ExtensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_delete" SEOKeyword="Удаление объекта ExtensionProperty, API Microsoft Graph, API для управления объектом ExtensionProperty" SEODescription="Удаление объекта ExtensionProperty." />
       </Item>
     <Item text="Защита идентификации" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="API защиты идентификации, Azure AD, AADIP, API Microsoft Graph, защита идентификации" SEODescription="API для запросов данных из службы защиты идентификации Azure Active Directory и использования этой службы">
       <Item text="События с риском для идентификации" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="API защиты идентификации, Azure AD, AADIP, API Microsoft Graph, защита идентификации, события с риском, риск для идентификации" SEODescription="Запрашивает данные о событиях риска из службы защиты идентификации Azure AD">
