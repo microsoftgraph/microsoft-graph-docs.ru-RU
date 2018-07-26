@@ -1,6 +1,6 @@
 # <a name="create-and-send-outlook-messages"></a>Создание и отправка сообщений Outlook
 
-В Microsoft Graph электронные письма представлены ресурсом [message](../api-reference/v1.0/resources/message.md). 
+В Microsoft Graph электронные письма представлены ресурсом [message](../api-reference/v1.0/resources/message.md).
 
 По умолчанию сообщения можно идентифицировать по уникальному идентификатору записи в свойстве **id**. При первом сохранении сообщения в качестве черновика или отправленного сообщения поставщик услуг хранилища назначает идентификатор записи этому сообщению. Этот идентификатор изменяется при копировании сообщения или его перемещении в другую папку, хранилище или PST-файл.
 
@@ -10,9 +10,9 @@
 
 Аналогично, при ответе на электронное письмо вы можете создавать и отправлять ответы в одном и том же действии ([ответить](../api-reference/v1.0/api/message_reply.md), [ответить всем](../api-reference/v1.0/api//message_replyall.md) или [переслать](../api-reference/v1.0/api/message_forward.md)). Кроме того, вы можете создать черновик для ответа ([ответить](../api-reference/v1.0/api/message_createreply.md), [ответить всем](../api-reference/v1.0/api//message_createreplyall.md) или [переслать](../api-reference/v1.0/api/message_createforward.md)), [добавить содержимое](../api-reference/v1.0/api/message_update.md), а затем [отправить ](../api-reference/v1.0/api/message_send.md) черновик позже.
 
-Чтобы программным способом отличать черновики от отправленных писем, проверяйте свойство **isDraft**. 
+Чтобы программным способом отличать черновики от отправленных писем, проверяйте свойство **isDraft**.
 
-По умолчанию черновики сообщений сохраняются в папке `Drafts`, а отправленные сообщения — в папке `Sent Items`. Для удобства вы можете определить папки "Черновики" и "Отправленные", используя их соответствующие хорошо известные имена папок. Например, вы можете выполнить указанные ниже действия, чтобы [получить сообщения](../api-reference/v1.0/api/user_list_messages.md) в папке "Черновики".
+По умолчанию черновики сообщений сохраняются в папке `Drafts`, а отправленные сообщения — в папке `Sent Items`. Для удобства вы можете определить папки "Черновики" и "Отправленные", используя их [соответствующие хорошо известные имена папок](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names). Например, вы можете выполнить указанные ниже действия, чтобы [получить сообщения](../api-reference/v1.0/api/user_list_messages.md) в папке "Черновики".
 
 ```http
 GET /me/mailfolders('Drafts')
@@ -20,18 +20,20 @@ GET /me/mailfolders('Drafts')
 
 ### <a name="body-format-and-malicious-script"></a>Формат текста и вредоносный скрипт
 
-<!-- Remove the following 2 sections from the message.md topics 
+<!-- Remove the following 2 sections from the message.md topics
 -->
 
 Сообщение может иметь либо формат HTML, либо текстовый формат. По умолчанию в отклике GET текст сообщения возвращается в формате HTML.
 
 При [получении сообщения](../api-reference/v1.0/api/message_get.md) вы можете задать указанный ниже заголовок запроса, чтобы система возвратила свойства **body** и **uniqueBody** в текстовом формате.
 
-```
+```http
 Prefer: outlook.body-content-type="text"
 ```
+
 Чтобы получить текст сообщения в формате HTML, задайте указанный ниже заголовок или просто пропустите его.
-```
+
+```http
 Prefer: outlook.body-content-type="html"
 ```
 
@@ -43,7 +45,8 @@ Prefer: outlook.body-content-type="html"
 Если текст сообщения имеет формат HTML, то по умолчанию прежде чем возвратить текст сообщения в отклике REST, Outlook удаляет весь потенциально небезопасный HTML-код (например, код JavaScript), внедренный в свойство **body**.
 
 Чтобы получить все исходное содержимое в формате HTML, добавьте следующий заголовок HTTP-запроса:
-```
+
+```http
 Prefer: outlook.allow-unsafe-html
 ```
 
@@ -56,7 +59,8 @@ Prefer: outlook.allow-unsafe-html
 
 ## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Проверка состояния получателя и экономия времени с помощью подсказок (ознакомительная версия)
 
-С помощью [подсказок](../api-reference/beta/resources/mailtips.md) вы можете принимать обоснованные решения перед отправкой электронных писем. Благодаря подсказкам можно получить ряд сведений, например о том, что почтовый ящик получателя доступен только для определенных отправителей, либо о том, что для отправки электронного письма получателю необходимо утверждение.
+С помощью [подсказок](../api-reference/beta/resources/mailtips.md) вы можете принимать обоснованные решения перед отправкой электронных писем.
+Благодаря подсказкам можно получить ряд сведений, например о том, что почтовый ящик получателя доступен только для определенных отправителей, либо о том, что для отправки электронного письма получателю необходимо утверждение.
 
 ## <a name="integrating-with--social-gesture-preview"></a>Интеграция с социальными жестами (ознакомительная версия)
 
@@ -65,8 +69,7 @@ Prefer: outlook.allow-unsafe-html
 
 - Создавать @упоминания при [составлении сообщений](../api-reference/beta/api/user_post_messages.md#request-2)
 - [Получать все сообщения в почтовом ящике пользователя, содержащие @упоминание пользователя](../api-reference/beta/api/user_list_messages.md#request-2)
-- [Получать все @упоминания в сообщении](../api-reference/beta/api/message_get.md#request-2) 
-
+- [Получать все @упоминания в сообщении](../api-reference/beta/api/message_get.md#request-2)
 
 ## <a name="other-shared-capabilities"></a>Другие общие возможности
 
@@ -79,7 +82,7 @@ Prefer: outlook.allow-unsafe-html
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Узнайте больше о следующих темах:
+Дополнительные сведения:
 
-- [Зачем выполнять интеграцию с Почтой Outlook?](outlook-mail-concept-overview.md)
+- [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
 - [Использование API почты](../api-reference/v1.0/resources/mail_api_overview.md) и [варианты использования](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) в Microsoft Graph 1.0.

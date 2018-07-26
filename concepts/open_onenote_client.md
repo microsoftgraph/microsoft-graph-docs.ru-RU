@@ -17,25 +17,34 @@
 }
 ```
 
-- **oneNoteClientUrl**: открывает клиент OneNote, если он установлен на устройстве. Этот URL-адрес включает префикс *onenote*.
-Открывает версию для конкретного языка, если она установлена на устройстве. В противном случае будет использован параметр языка платформы.
-- **oneNoteWebUrl**: открывает OneNote Online, если браузер, используемый по умолчанию на устройстве, поддерживает его. Использует параметр языка браузера.
+- **oneNoteClientUrl** 
+
+    - Открывает клиент OneNote, если он установлен на устройстве. Этот URL-адрес включает префикс *onenote*.
+    - Открывает версию для конкретного языка, если она установлена на устройстве. В противном случае будет использован параметр языка платформы.
+
+- **oneNoteWebUrl** 
+
+    - Открывает OneNote Online, если браузер, используемый по умолчанию на устройстве, поддерживает его. 
+    - Использует параметр языка браузера.
 
 
 API OneNote возвращает свойство **links** в HTTP-ответе для следующих операций:
 
 - Создание страницы путем отправки запроса [`POST pages`](../api-reference/v1.0/api/section_post_pages.md).
+
 - Создание записной книжки путем отправки запроса [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md).
+
 - Получение метаданных страницы путем отправки запроса [`GET pages`](../api-reference/v1.0/api/page_get.md) или [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md).
+
 - Получение метаданных записной книжки путем отправки запроса [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) или [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md).
 
 В примерах ниже показано, как проверить код состояния ответа, проанализировать объект JSON, чтобы извлечь из него URL-адреса, а затем открыть клиент OneNote.
 
 ## <a name="ios-example"></a>Пример для iOS
 
-В примере ниже показано, как получить URL-адреса клиента OneNote из ответа JSON. Для извлечения двух URL-адресов в примере используется библиотека AFNetworking (http://afnetworking.com/). В этом примере `created` представляет собой указатель на объект ONSCPSStandardResponse, используемый для хранения значений ответов, а в объекте `responseObject` содержится проанализированный объект JSON.
+В примере ниже показано, как получить URL-адреса клиента OneNote из ответа JSON. Для извлечения двух URL-адресов в примере используется библиотека AFNetworking (http://afnetworking.com/)). В этом примере `created` представляет собой указатель на объект **ONSCPSStandardResponse**, используемый для хранения значений ответов, а в объекте `responseObject` содержится проанализированный объект JSON.
 
-```objectivec
+```objc
     /* Import the JSON library */
     #import "AFURLRequestSerialization.h"
 
@@ -73,9 +82,11 @@ API OneNote возвращает свойство **links** в HTTP-ответе
       }
 ``` 
 
+<br/>
+
 После того как вы проанализируете URL-адреса, полученные в ответе, вы сможете открыть OneNote, используя указанный ниже код. Используйте `oneNoteClientUrl`, чтобы открыть установленный клиент OneNote, или `oneNoteWebURL`, чтобы открыть OneNote Online.
 
-```objectivec
+```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
 [[UIApplication sharedApplication] openURL:url];
 ```
@@ -139,6 +150,8 @@ public ApiResponse getResponse() throws Exception {
 }
 ```
 
+<br/>
+
 С помощью свойств ответа ваше приложение может открыть OneNote Online, как показано в примере ниже.
 
 ```java 
@@ -148,7 +161,9 @@ if (response.getResponseCode() == 201) {
     startActivity(launchBrowser);
 }
 ```
- 
+
+<br/>
+
 Кроме того, приложение может открыть клиент OneNote на устройстве с Android. При использовании свойства `oneNoteClientUrl` перед запуском намерения необходимо поместить строки GUID в фигурные скобки `{ }`. В примере ниже показано, как сделать это.
 
 ```java 
@@ -170,5 +185,5 @@ if (response.getResponseCode() == 201) {
 
 ## <a name="see-also"></a>См. также
 
-- [Получение содержимого и структуры OneNote](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-- [Создание страниц OneNote](../api-reference/v1.0/api/section_post_pages.md)
+- [Получение содержимого и структуры OneNote](onenote-get-content.md)
+- [Создание страниц OneNote](onenote-create-page.md)
