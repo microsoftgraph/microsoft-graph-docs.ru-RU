@@ -167,10 +167,10 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 В приведенном ниже примере показан запрос, отфильтрованный по свойствам **subject** и **importance**, а затем отсортированный по свойствам **subject**, **importance** и **receivedDateTime** в порядке убывания.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to exchange unified messaging' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome to exchange unified messaging%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **Примечание.** Ресурсы Azure AD, производные от [directoryObject](../api-reference/v1.0/resources/directoryobject.md), такие как [user](../api-reference/v1.0/resources/user.md) и [group](../api-reference/v1.0/resources/group.md), не позволяют объединять параметр `$orderby` с выражениями `$filter`. 
 
@@ -184,25 +184,26 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to 
 
 Приложения Office 365, такие как Outlook и SharePoint, поддерживают синтаксис KQL (Keyword Query Language) для поиска. Благодаря этому возможно использование общего домена обнаружения для соответствующих хранилищ данных. 
 
-При поиске в коллекциях message результаты сортируются по дате и времени отправки сообщения. 
+Вы можете указать приведенные ниже имена свойств, которые KQL распознает в строке запроса $search. Эти имена свойств не являются свойствами, определенными в сущности **message**, но внутренне сопоставлены с ними. Дополнительные сведения и примеры см. в разделе о [свойствах, доступных для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
-Вы можете указать следующие свойства для объекта **message** в условии `$search`:
-
-- **attachments**;
-- **bccRecipients**;
-- **body**;
-- **category**;
-- **ccRecipients**;
-- **content**;
-- **from**;
-- **hasAttachments**;
-- **participants**;
-- **receivedDateTime**;
-- **sender**;
-- **subject**;
-- **toRecipients**.
+- **attachment**
+- **bcc**
+- **body**
+- **category**
+- **cc**
+- **content**
+- **from**
+- **has**
+- **importance**
+- **participants**
+- **received**
+- **sender**
+- **subject**
+- **to**
 
 Если при поиске сообщений указано только значение, поиск выполняется по свойствам поиска по умолчанию: **from**, **subject** и **body**.
+
+Результаты поиска в коллекции message сортируются по дате и времени отправки сообщения.
 
 Следующий пример кода возвращает все сообщения из папки "Входящие" вошедшего пользователя, содержащие слово "pizza" в любом из трех свойств поиска по умолчанию:
 
