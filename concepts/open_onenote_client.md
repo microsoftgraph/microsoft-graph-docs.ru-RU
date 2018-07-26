@@ -1,8 +1,8 @@
-# <a name="open-the-onenote-client"></a><span data-ttu-id="fec83-101">Открытие клиента OneNote</span><span class="sxs-lookup"><span data-stu-id="fec83-101">Open the Postman client.</span></span>
+# <a name="open-the-onenote-client"></a><span data-ttu-id="9f313-101">Открытие клиента OneNote</span><span class="sxs-lookup"><span data-stu-id="9f313-101">Open the OneNote client</span></span>
 
-<span data-ttu-id="fec83-102">Вы можете использовать свойство **links** страницы или записной книжки, чтобы открыть приложение OneNote на определенной странице или в определенной записной книжке.</span><span class="sxs-lookup"><span data-stu-id="fec83-102">You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook.</span></span> 
+<span data-ttu-id="9f313-102">Вы можете использовать свойство **links** страницы или записной книжки, чтобы открыть приложение OneNote на определенной странице или в определенной записной книжке.</span><span class="sxs-lookup"><span data-stu-id="9f313-102">You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook.</span></span> 
 
-<span data-ttu-id="fec83-103">Свойство **links** представляет собой объект JSON, содержащий два URL-адреса.</span><span class="sxs-lookup"><span data-stu-id="fec83-103">The **links** property is a JSON object that contains two URLs.</span></span> <span data-ttu-id="fec83-104">Эти URL-адреса открывают страницу или записную книжку в клиентском приложении OneNote или в OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="fec83-104">The URLs will open the page or notebook in the OneNote client application or in OneNote Online.</span></span>
+<span data-ttu-id="9f313-103">Свойство **links** представляет собой объект JSON, содержащий два URL-адреса.</span><span class="sxs-lookup"><span data-stu-id="9f313-103">The **links** property is a JSON object that contains two URLs.</span></span> <span data-ttu-id="9f313-104">Эти URL-адреса открывают страницу или записную книжку в клиентском приложении OneNote или в OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="9f313-104">The URLs will open the page or notebook in the OneNote client application or in OneNote Online.</span></span>
 
 ```json
 { 
@@ -17,25 +17,34 @@
 }
 ```
 
-- <span data-ttu-id="fec83-105">**oneNoteClientUrl**: открывает клиент OneNote, если он установлен на устройстве.</span><span class="sxs-lookup"><span data-stu-id="fec83-105">**oneNoteClientUrl** - Opens the OneNote client if it is already installed on the device.</span></span> <span data-ttu-id="fec83-106">Этот URL-адрес включает префикс *onenote*.</span><span class="sxs-lookup"><span data-stu-id="fec83-106">This URL includes the *onenote* prefix.</span></span>
-<span data-ttu-id="fec83-107">Открывает версию для конкретного языка, если она установлена на устройстве.</span><span class="sxs-lookup"><span data-stu-id="fec83-107">Opens the language-specific version if one is installed on the device.</span></span> <span data-ttu-id="fec83-108">В противном случае будет использован параметр языка платформы.</span><span class="sxs-lookup"><span data-stu-id="fec83-108">Otherwise, uses the platform language setting.</span></span>
-- <span data-ttu-id="fec83-109">**oneNoteWebUrl**: открывает OneNote Online, если браузер, используемый по умолчанию на устройстве, поддерживает его.</span><span class="sxs-lookup"><span data-stu-id="fec83-109">**oneNoteWebUrl** - Opens OneNote Online if the default browser on the device supports it.</span></span> <span data-ttu-id="fec83-110">Использует параметр языка браузера.</span><span class="sxs-lookup"><span data-stu-id="fec83-110">Uses the browser language setting.</span></span>
+- <span data-ttu-id="9f313-105">**oneNoteClientUrl**</span><span class="sxs-lookup"><span data-stu-id="9f313-105">**oneNoteClientUrl**</span></span> 
+
+    - <span data-ttu-id="9f313-106">Открывает клиент OneNote, если он установлен на устройстве.</span><span class="sxs-lookup"><span data-stu-id="9f313-106">oneNoteClientUrl - Opens the OneNote client if it is already installed on the device.</span></span> <span data-ttu-id="9f313-107">Этот URL-адрес включает префикс *onenote*.</span><span class="sxs-lookup"><span data-stu-id="9f313-107">This URL includes the *onenote* prefix.</span></span>
+    - <span data-ttu-id="9f313-108">Открывает версию для конкретного языка, если она установлена на устройстве.</span><span class="sxs-lookup"><span data-stu-id="9f313-108">Opens the language-specific version if one is installed on the device.</span></span> <span data-ttu-id="9f313-109">В противном случае будет использован параметр языка платформы.</span><span class="sxs-lookup"><span data-stu-id="9f313-109">Otherwise, uses the platform language setting.</span></span>
+
+- <span data-ttu-id="9f313-110">**oneNoteWebUrl**</span><span class="sxs-lookup"><span data-stu-id="9f313-110">**oneNoteWebUrl**</span></span> 
+
+    - <span data-ttu-id="9f313-111">Открывает OneNote Online, если браузер, используемый по умолчанию на устройстве, поддерживает его.</span><span class="sxs-lookup"><span data-stu-id="9f313-111">oneNoteWebUrl - Opens OneNote Online if the default browser on the device supports it.</span></span> 
+    - <span data-ttu-id="9f313-112">Использует параметр языка браузера.</span><span class="sxs-lookup"><span data-stu-id="9f313-112">Uses the browser language setting.</span></span>
 
 
-<span data-ttu-id="fec83-111">API OneNote возвращает свойство **links** в HTTP-ответе для следующих операций:</span><span class="sxs-lookup"><span data-stu-id="fec83-111">The OneNote API returns the **links** property in the HTTP response for the following operations:</span></span>
+<span data-ttu-id="9f313-113">API OneNote возвращает свойство **links** в HTTP-ответе для следующих операций:</span><span class="sxs-lookup"><span data-stu-id="9f313-113">The OneNote API returns the **links** property in the HTTP response for the following operations:</span></span>
 
-- <span data-ttu-id="fec83-112">Создание страницы путем отправки запроса [`POST pages`](../api-reference/v1.0/api/section_post_pages.md).</span><span class="sxs-lookup"><span data-stu-id="fec83-112">Create a page by sending a [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) request</span></span>
-- <span data-ttu-id="fec83-113">Создание записной книжки путем отправки запроса [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md).</span><span class="sxs-lookup"><span data-stu-id="fec83-113">Create a notebook by sending a [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) request</span></span>
-- <span data-ttu-id="fec83-114">Получение метаданных страницы путем отправки запроса [`GET pages`](../api-reference/v1.0/api/page_get.md) или [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md).</span><span class="sxs-lookup"><span data-stu-id="fec83-114">Get page metadata by sending a [`GET pages`](../api-reference/v1.0/api/page_get.md) or [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) request</span></span>
-- <span data-ttu-id="fec83-115">Получение метаданных записной книжки путем отправки запроса [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) или [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md).</span><span class="sxs-lookup"><span data-stu-id="fec83-115">Get notebook metadata by sending a [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) or [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) request</span></span>
+- <span data-ttu-id="9f313-114">Создание страницы путем отправки запроса [`POST pages`](../api-reference/v1.0/api/section_post_pages.md).</span><span class="sxs-lookup"><span data-stu-id="9f313-114">Create a page by sending a [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) request</span></span>
 
-<span data-ttu-id="fec83-116">В примерах ниже показано, как проверить код состояния ответа, проанализировать объект JSON, чтобы извлечь из него URL-адреса, а затем открыть клиент OneNote.</span><span class="sxs-lookup"><span data-stu-id="fec83-116">The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.</span></span>
+- <span data-ttu-id="9f313-115">Создание записной книжки путем отправки запроса [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md).</span><span class="sxs-lookup"><span data-stu-id="9f313-115">Create a notebook by sending a [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) request</span></span>
 
-## <a name="ios-example"></a><span data-ttu-id="fec83-117">Пример для iOS</span><span class="sxs-lookup"><span data-stu-id="fec83-117">iOS example</span></span>
+- <span data-ttu-id="9f313-116">Получение метаданных страницы путем отправки запроса [`GET pages`](../api-reference/v1.0/api/page_get.md) или [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md).</span><span class="sxs-lookup"><span data-stu-id="9f313-116">Get page metadata by sending a [`GET pages`](../api-reference/v1.0/api/page_get.md) or [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) request</span></span>
 
-<span data-ttu-id="fec83-118">В примере ниже показано, как получить URL-адреса клиента OneNote из ответа JSON.</span><span class="sxs-lookup"><span data-stu-id="fec83-118">The following example gets the OneNote client URLs from the JSON response.</span></span> <span data-ttu-id="fec83-119">Для извлечения двух URL-адресов в примере используется библиотека AFNetworking (http://afnetworking.com/).</span><span class="sxs-lookup"><span data-stu-id="fec83-119">It uses the AFNetworking library (http://afnetworking.com/) to extract the two URLs.</span></span> <span data-ttu-id="fec83-120">В этом примере `created` представляет собой указатель на объект ONSCPSStandardResponse, используемый для хранения значений ответов, а в объекте `responseObject` содержится проанализированный объект JSON.</span><span class="sxs-lookup"><span data-stu-id="fec83-120">The following example gets the oncshort client URLs from the JSON response. It uses the AFNetworking library (http://afnetworking.com/http://afnetworking.com/) to extract the two URLs. In the example, created`created` is a pointer to the ONSCPSStandardResponse`responseObject` object used to store the response values, and responseObject holds the parsed JSON.</span></span>
+- <span data-ttu-id="9f313-117">Получение метаданных записной книжки путем отправки запроса [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) или [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md).</span><span class="sxs-lookup"><span data-stu-id="9f313-117">Get notebook metadata by sending a [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) or [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) request</span></span>
 
-```objectivec
+<span data-ttu-id="9f313-118">В примерах ниже показано, как проверить код состояния ответа, проанализировать объект JSON, чтобы извлечь из него URL-адреса, а затем открыть клиент OneNote.</span><span class="sxs-lookup"><span data-stu-id="9f313-118">The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.</span></span>
+
+## <a name="ios-example"></a><span data-ttu-id="9f313-119">Пример для iOS</span><span class="sxs-lookup"><span data-stu-id="9f313-119">iOS example</span></span>
+
+<span data-ttu-id="9f313-120">В примере ниже показано, как получить URL-адреса клиента OneNote из ответа JSON.</span><span class="sxs-lookup"><span data-stu-id="9f313-120">The following example gets the OneNote client URLs from the JSON response.</span></span> <span data-ttu-id="9f313-121">Для извлечения двух URL-адресов в примере используется библиотека AFNetworking (http://afnetworking.com/)).</span><span class="sxs-lookup"><span data-stu-id="9f313-121">It uses the AFNetworking library (http://afnetworking.com/) to extract the two URLs.</span></span> <span data-ttu-id="9f313-122">В этом примере `created` представляет собой указатель на объект **ONSCPSStandardResponse**, используемый для хранения значений ответов, а в объекте `responseObject` содержится проанализированный объект JSON.</span><span class="sxs-lookup"><span data-stu-id="9f313-122">In the example, `created` is a pointer to the ONSCPSStandardResponse object used to store the response values, and `responseObject` holds the parsed JSON.</span></span>
+
+```objc
     /* Import the JSON library */
     #import "AFURLRequestSerialization.h"
 
@@ -73,16 +82,18 @@
       }
 ``` 
 
-<span data-ttu-id="fec83-121">После того как вы проанализируете URL-адреса, полученные в ответе, вы сможете открыть OneNote, используя указанный ниже код.</span><span class="sxs-lookup"><span data-stu-id="fec83-121">After you parse the URLs from the response, you can open OneNote by using the following code.</span></span> <span data-ttu-id="fec83-122">Используйте `oneNoteClientUrl`, чтобы открыть установленный клиент OneNote, или `oneNoteWebURL`, чтобы открыть OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="fec83-122">Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.</span></span>
+<br/>
 
-```objectivec
+<span data-ttu-id="9f313-123">После того как вы проанализируете URL-адреса, полученные в ответе, вы сможете открыть OneNote, используя указанный ниже код.</span><span class="sxs-lookup"><span data-stu-id="9f313-123">After you parse the URLs from the response, you can open OneNote by using the following code.</span></span> <span data-ttu-id="9f313-124">Используйте `oneNoteClientUrl`, чтобы открыть установленный клиент OneNote, или `oneNoteWebURL`, чтобы открыть OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="9f313-124">Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.</span></span>
+
+```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
 [[UIApplication sharedApplication] openURL:url];
 ```
 
-## <a name="android-example"></a><span data-ttu-id="fec83-123">Пример для Android</span><span class="sxs-lookup"><span data-stu-id="fec83-123">Android example</span></span>
+## <a name="android-example"></a><span data-ttu-id="9f313-125">Пример для Android</span><span class="sxs-lookup"><span data-stu-id="9f313-125">Android example</span></span>
 
-<span data-ttu-id="fec83-124">Прежде всего, проверьте наличие кода состояния успеха, а затем проанализируйте объект JSON.</span><span class="sxs-lookup"><span data-stu-id="fec83-124">First, check for the success status code and then parse the JSON.</span></span> <span data-ttu-id="fec83-125">В примере предполагается, что был отправлен запрос POST, поэтому выполняется проверка наличия кода состояния `201 Created`.</span><span class="sxs-lookup"><span data-stu-id="fec83-125">The example assumes a POST request was sent, so it checks for a `201 Created` status code.</span></span> <span data-ttu-id="fec83-126">Если вы создали запрос `GET`, то вместо этого проверьте наличие кода состояния `200`.</span><span class="sxs-lookup"><span data-stu-id="fec83-126">If you made a `GET` request, check for a `200` status code instead.</span></span>
+<span data-ttu-id="9f313-126">Прежде всего, проверьте наличие кода состояния успеха, а затем проанализируйте объект JSON.</span><span class="sxs-lookup"><span data-stu-id="9f313-126">First, check for the success status code and then parse the JSON.</span></span> <span data-ttu-id="9f313-127">В примере предполагается, что был отправлен запрос POST, поэтому выполняется проверка наличия кода состояния `201 Created`.</span><span class="sxs-lookup"><span data-stu-id="9f313-127">The example assumes a POST request was sent, so it checks for a `201 Created` status code.</span></span> <span data-ttu-id="9f313-128">Если вы создали запрос `GET`, то вместо этого проверьте наличие кода состояния `200`.</span><span class="sxs-lookup"><span data-stu-id="9f313-128">If you made a `GET` request, check for a `200` status code instead.</span></span>
 
 ```java
 public ApiResponse getResponse() throws Exception {
@@ -139,7 +150,9 @@ public ApiResponse getResponse() throws Exception {
 }
 ```
 
-<span data-ttu-id="fec83-127">С помощью свойств ответа ваше приложение может открыть OneNote Online, как показано в примере ниже.</span><span class="sxs-lookup"><span data-stu-id="fec83-127">Using the response properties, your app can open OneNote Online, as shown in the following example.</span></span>
+<br/>
+
+<span data-ttu-id="9f313-129">С помощью свойств ответа ваше приложение может открыть OneNote Online, как показано в примере ниже.</span><span class="sxs-lookup"><span data-stu-id="9f313-129">Using the response properties, your app can open OneNote Online, as shown in the following example.</span></span>
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -148,8 +161,10 @@ if (response.getResponseCode() == 201) {
     startActivity(launchBrowser);
 }
 ```
- 
-<span data-ttu-id="fec83-128">Кроме того, приложение может открыть клиент OneNote на устройстве с Android.</span><span class="sxs-lookup"><span data-stu-id="fec83-128">Or your app can open the OneNote client on an Android device.</span></span> <span data-ttu-id="fec83-129">При использовании свойства `oneNoteClientUrl` перед запуском намерения необходимо поместить строки GUID в фигурные скобки `{ }`.</span><span class="sxs-lookup"><span data-stu-id="fec83-129">When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent.</span></span> <span data-ttu-id="fec83-130">В примере ниже показано, как сделать это.</span><span class="sxs-lookup"><span data-stu-id="fec83-130">The following example shows how to:</span></span>
+
+<br/>
+
+<span data-ttu-id="9f313-130">Кроме того, приложение может открыть клиент OneNote на устройстве с Android.</span><span class="sxs-lookup"><span data-stu-id="9f313-130">Or your app can open the OneNote client on an Android device.</span></span> <span data-ttu-id="9f313-131">При использовании свойства `oneNoteClientUrl` перед запуском намерения необходимо поместить строки GUID в фигурные скобки `{ }`.</span><span class="sxs-lookup"><span data-stu-id="9f313-131">When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent.</span></span> <span data-ttu-id="9f313-132">В примере ниже показано, как сделать это.</span><span class="sxs-lookup"><span data-stu-id="9f313-132">The following example shows how to do that.</span></span>
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -168,7 +183,7 @@ if (response.getResponseCode() == 201) {
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="fec83-131">См. также</span><span class="sxs-lookup"><span data-stu-id="fec83-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9f313-133">См. также</span><span class="sxs-lookup"><span data-stu-id="9f313-133">See also</span></span>
 
-- [<span data-ttu-id="fec83-132">Получение содержимого и структуры OneNote</span><span class="sxs-lookup"><span data-stu-id="fec83-132">Get OneNote content and structure</span></span>](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-- [<span data-ttu-id="fec83-133">Создание страниц OneNote</span><span class="sxs-lookup"><span data-stu-id="fec83-133">Create OneNote pages</span></span>](../api-reference/v1.0/api/section_post_pages.md)
+- [<span data-ttu-id="9f313-134">Получение содержимого и структуры OneNote</span><span class="sxs-lookup"><span data-stu-id="9f313-134">Get OneNote content and structure</span></span>](onenote-get-content.md)
+- [<span data-ttu-id="9f313-135">Создание страниц OneNote</span><span class="sxs-lookup"><span data-stu-id="9f313-135">Create OneNote pages</span></span>](onenote-create-page.md)

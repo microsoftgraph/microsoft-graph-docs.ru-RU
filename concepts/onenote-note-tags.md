@@ -1,57 +1,61 @@
-# <a name="use-note-tags-in-onenote-pages"></a><span data-ttu-id="23812-101">Использование тегов заметок на страницах OneNote</span><span class="sxs-lookup"><span data-stu-id="23812-101">Use note tags in OneNote pages</span></span>
+# <a name="use-note-tags-in-onenote-pages"></a><span data-ttu-id="d3819-101">Использование тегов заметок на страницах OneNote</span><span class="sxs-lookup"><span data-stu-id="d3819-101">Use note tags in OneNote pages</span></span>
 
-<span data-ttu-id="23812-102">*__Область применения:__ записные книжки клиентов в OneDrive и корпоративные записные книжки в Office 365*</span><span class="sxs-lookup"><span data-stu-id="23812-102">*__Applies to:__ Consumer notebooks on OneDrive | Enterprise notebooks on Office 365*</span></span>
+<span data-ttu-id="d3819-102">**Относится к:** обычные записные книжки в OneDrive | корпоративные записные книжки в Office 365</span><span class="sxs-lookup"><span data-stu-id="d3819-102">**Applies to:** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365</span></span>
 
-<span data-ttu-id="23812-103">С помощью атрибута `data-tag` вы можете добавлять и изменять флажки, звездочки и другие встроенные теги заметок на странице OneNote, как показано на рисунке ниже.</span><span class="sxs-lookup"><span data-stu-id="23812-103">Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.</span></span>
+<span data-ttu-id="d3819-103">С помощью атрибута `data-tag` вы можете добавлять и изменять флажки, звездочки и другие встроенные теги заметок на странице OneNote, как показано на рисунке ниже.</span><span class="sxs-lookup"><span data-stu-id="d3819-103">Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.</span></span>
 
 ![Три тега заметок, отображаемые на странице OneNote.](images/note-tags-example.PNG)
 
 
 <a name="attributes"></a>
-## <a name="note-tag-attributes"></a><span data-ttu-id="23812-105">Атрибуты тегов заметок</span><span class="sxs-lookup"><span data-stu-id="23812-105">Note tag attributes</span></span>
 
-<span data-ttu-id="23812-106">В HTML-коде страницы OneNote тег заметки представлен атрибутом `data-tag`.</span><span class="sxs-lookup"><span data-stu-id="23812-106">In the HTML of a onnvshort page, a note tag is represented by the data-tag attribute. For example:</span></span> <span data-ttu-id="23812-107">Пример:</span><span class="sxs-lookup"><span data-stu-id="23812-107">For example:</span></span>
+## <a name="note-tag-attributes"></a><span data-ttu-id="d3819-105">Атрибуты тегов заметок</span><span class="sxs-lookup"><span data-stu-id="d3819-105">Note tag attributes</span></span>
 
-- <span data-ttu-id="23812-108">Снятый флажок задачи: `<p data-tag="to-do">`</span><span class="sxs-lookup"><span data-stu-id="23812-108">An unchecked to-do box:  <p data-tag="to-do">`<p data-tag="to-do">`</span></span> 
-- <span data-ttu-id="23812-109">Установленный флажок задачи: `<p data-tag="to-do:completed">`</span><span class="sxs-lookup"><span data-stu-id="23812-109">A checked to-do box:  <p data-tag="to-do:completed">`<p data-tag="to-do:completed">`</span></span> 
-- <span data-ttu-id="23812-110">Звездочка: `<h2 data-tag="important">`</span><span class="sxs-lookup"><span data-stu-id="23812-110">A star:  <h2 data-tag="important">`<h2 data-tag="important">`</span></span> 
+<span data-ttu-id="d3819-106">В HTML-коде страницы OneNote тег заметки представлен атрибутом `data-tag`.</span><span class="sxs-lookup"><span data-stu-id="d3819-106">In the HTML of a OneNote page, a note tag is represented by the `data-tag` attribute.</span></span> <span data-ttu-id="d3819-107">Пример:</span><span class="sxs-lookup"><span data-stu-id="d3819-107">For example:</span></span>
 
-<span data-ttu-id="23812-111">Значение `data-tag` состоит из фигуры и (иногда) из состояния.</span><span class="sxs-lookup"><span data-stu-id="23812-111">A `data-tag` value is composed of a shape, and sometimes a status.</span></span> <span data-ttu-id="23812-112">(*См. все [поддерживаемые значения](#built-in-note-tags-for-onenote)*)</span><span class="sxs-lookup"><span data-stu-id="23812-112">(*see all [supported values](#built-in-note-tags-for-onenote)*)</span></span>
+- <span data-ttu-id="d3819-108">Снятый флажок задачи: `<p data-tag="to-do">`</span><span class="sxs-lookup"><span data-stu-id="d3819-108">An unchecked to-do box:  `<p data-tag="to-do">`</span></span> 
 
-| <span data-ttu-id="23812-113">Свойство</span><span class="sxs-lookup"><span data-stu-id="23812-113">Property</span></span> | <span data-ttu-id="23812-114">Описание</span><span class="sxs-lookup"><span data-stu-id="23812-114">Description</span></span> |  
+- <span data-ttu-id="d3819-109">Установленный флажок задачи: `<p data-tag="to-do:completed">`</span><span class="sxs-lookup"><span data-stu-id="d3819-109">A checked to-do box:  `<p data-tag="to-do:completed">`</span></span> 
+
+- <span data-ttu-id="d3819-110">Звездочка: `<h2 data-tag="important">`</span><span class="sxs-lookup"><span data-stu-id="d3819-110">A star:  `<h2 data-tag="important">`</span></span> 
+
+<span data-ttu-id="d3819-111">Значение `data-tag` состоит из фигуры и (иногда) из состояния (см. все [поддерживаемые значения](#built-in-note-tags-for-onenote)).</span><span class="sxs-lookup"><span data-stu-id="d3819-111">A `data-tag` value is composed of a shape, and sometimes a status.</span></span>
+
+| <span data-ttu-id="d3819-112">Свойство</span><span class="sxs-lookup"><span data-stu-id="d3819-112">Property</span></span> | <span data-ttu-id="d3819-113">Описание</span><span class="sxs-lookup"><span data-stu-id="d3819-113">Description</span></span> |  
 |:------|:------|  
-| <span data-ttu-id="23812-115">shape</span><span class="sxs-lookup"><span data-stu-id="23812-115">shape</span></span> | <span data-ttu-id="23812-116">Идентификатор тега заметки (пример: `to-do` или `important`).</span><span class="sxs-lookup"><span data-stu-id="23812-116">The identifier of the note tag (example: to-do`to-do` or important`important`).</span></span> |  
-| <span data-ttu-id="23812-117">status</span><span class="sxs-lookup"><span data-stu-id="23812-117">status</span></span> | <span data-ttu-id="23812-118">Состояние тегов заметок с флажками.</span><span class="sxs-lookup"><span data-stu-id="23812-118">The status of check-box note tags.</span></span> <span data-ttu-id="23812-119">Это свойство используется только для установки флажков выполненных задач.</span><span class="sxs-lookup"><span data-stu-id="23812-119">The status of check-box note tags. This is used only to set check boxes as  completed.</span></span> |  
+| <span data-ttu-id="d3819-114">shape</span><span class="sxs-lookup"><span data-stu-id="d3819-114">shape</span></span> | <span data-ttu-id="d3819-115">Идентификатор тега заметки (пример: `to-do` или `important`).</span><span class="sxs-lookup"><span data-stu-id="d3819-115">The identifier of the note tag (example: `to-do` or `important`).</span></span> |  
+| <span data-ttu-id="d3819-116">status</span><span class="sxs-lookup"><span data-stu-id="d3819-116">status</span></span> | <span data-ttu-id="d3819-117">Состояние тегов заметок с флажками.</span><span class="sxs-lookup"><span data-stu-id="d3819-117">The status of check-box note tags.</span></span> <span data-ttu-id="d3819-118">Это свойство используется только для установки флажков выполненных задач.</span><span class="sxs-lookup"><span data-stu-id="d3819-118">This is used only to set check boxes as completed.</span></span> |  
  
 
 <a name="note-tags"></a>
-## <a name="add-or-update-note-tags"></a><span data-ttu-id="23812-120">Добавление или изменение тегов заметок</span><span class="sxs-lookup"><span data-stu-id="23812-120">Add or update note tags on onnvshort pages</span></span>
 
-<span data-ttu-id="23812-121">Добавить или изменить тег заметки можно с помощью атрибута `data-tag` в поддерживаемом элементе.</span><span class="sxs-lookup"><span data-stu-id="23812-121">To add or update a built-in note tag, just use the `data-tag` attribute on a supported element.</span></span> <span data-ttu-id="23812-122">Например, вот абзац, помеченный как важный:</span><span class="sxs-lookup"><span data-stu-id="23812-122">For example, here's a paragraph marked as important:</span></span>
+## <a name="add-or-update-note-tags"></a><span data-ttu-id="d3819-119">Добавление или изменение тегов заметок</span><span class="sxs-lookup"><span data-stu-id="d3819-119">Add or update note tags</span></span>
+
+<span data-ttu-id="d3819-120">Добавить или изменить тег заметки можно с помощью атрибута `data-tag` в поддерживаемом элементе.</span><span class="sxs-lookup"><span data-stu-id="d3819-120">To add or update a built-in note tag, just use the `data-tag` attribute on a supported element.</span></span> <span data-ttu-id="d3819-121">Например, вот абзац, помеченный как важный:</span><span class="sxs-lookup"><span data-stu-id="d3819-121">For example, here's a paragraph marked as important:</span></span>
 
 ```html
 <p data-tag="important">...</p>
 ```
 
-<span data-ttu-id="23812-123">Разделение нескольких тегов заметок запятыми:</span><span class="sxs-lookup"><span data-stu-id="23812-123">Separate multiple note tags with commas:</span></span>
+<span data-ttu-id="d3819-122">Разделение нескольких тегов заметок запятыми:</span><span class="sxs-lookup"><span data-stu-id="d3819-122">Separate multiple note tags with commas:</span></span>
 
 ```html
 <p data-tag="important, critical">...</p>
 ```
 
-<span data-ttu-id="23812-124">Вы можете задать атрибут `data-tag` для указанных ниже элементов.</span><span class="sxs-lookup"><span data-stu-id="23812-124">You can define the data-tag attribute on  the following elements:</span></span>
+<span data-ttu-id="d3819-123">Вы можете задать атрибут `data-tag` для указанных ниже элементов.</span><span class="sxs-lookup"><span data-stu-id="d3819-123">You can define a `data-tag` on the following elements:</span></span>
 
-- <span data-ttu-id="23812-125">p</span><span class="sxs-lookup"><span data-stu-id="23812-125">p</span></span> 
-- <span data-ttu-id="23812-126">ul, ol, li (*см. дополнительные сведения о [тегах заметок в списках](#note-tags-on-lists)*)</span><span class="sxs-lookup"><span data-stu-id="23812-126">ul, ol, li (see more about lists)</span></span>
-- <span data-ttu-id="23812-127">img</span><span class="sxs-lookup"><span data-stu-id="23812-127">img</span></span> 
-- <span data-ttu-id="23812-128">h1–h6</span><span class="sxs-lookup"><span data-stu-id="23812-128">h1 - h6</span></span> 
-- <span data-ttu-id="23812-129">title</span><span class="sxs-lookup"><span data-stu-id="23812-129">title</span></span> 
+- <span data-ttu-id="d3819-124">p</span><span class="sxs-lookup"><span data-stu-id="d3819-124">p</span></span> 
+- <span data-ttu-id="d3819-125">ul, ol, li (см. дополнительные сведения о [тегах заметок в списках](#note-tags-on-lists))</span><span class="sxs-lookup"><span data-stu-id="d3819-125">ul, ol, li (see more about [note tags on lists](#note-tags-on-lists))</span></span>
+- <span data-ttu-id="d3819-126">img</span><span class="sxs-lookup"><span data-stu-id="d3819-126">img</span></span> 
+- <span data-ttu-id="d3819-127">h1–h6</span><span class="sxs-lookup"><span data-stu-id="d3819-127">h1 - h6</span></span> 
+- <span data-ttu-id="d3819-128">title</span><span class="sxs-lookup"><span data-stu-id="d3819-128">title</span></span> 
 
-<span data-ttu-id="23812-130">Список тегов заметок, которые можно использовать в Microsoft Graph, см. в разделе [Встроенные теги заметок](#built-in-note-tags-for-onenote).</span><span class="sxs-lookup"><span data-stu-id="23812-130">See Built-in note tags for OneNote for a list of note tags that you can use with the onnvshort API.</span></span> <span data-ttu-id="23812-131">Добавление и изменение пользовательских тегов с помощью Microsoft Graph не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="23812-131">Adding or updating custom tags using the onnvshort API is not supported.</span></span>
+<span data-ttu-id="d3819-129">Список тегов заметок, которые можно использовать в Microsoft Graph, см. в разделе [Встроенные теги заметок](#built-in-note-tags-for-onenote).</span><span class="sxs-lookup"><span data-stu-id="d3819-129">See [Built-in note tags](#built-in-note-tags-for-onenote) for a list of note tags that you can use with Microsoft Graph.</span></span> <span data-ttu-id="d3819-130">Добавление и изменение пользовательских тегов с помощью Microsoft Graph не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d3819-130">Adding or updating custom tags using Microsoft Graph is not supported.</span></span>
  
-<span data-ttu-id="23812-132">**Примеры**</span><span class="sxs-lookup"><span data-stu-id="23812-132">**Examples**</span></span>
+### <a name="examples"></a><span data-ttu-id="d3819-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="d3819-131">Examples</span></span>
 
-<span data-ttu-id="23812-133">Ниже показан простой список дел, в котором первый элемент помечен как завершенный.</span><span class="sxs-lookup"><span data-stu-id="23812-133">Here's a simple to-do list with the first item completed.</span></span>
+<span data-ttu-id="d3819-132">Ниже показан простой список дел, в котором первый элемент завершен.</span><span class="sxs-lookup"><span data-stu-id="d3819-132">Here's a simple to-do list with the first item completed.</span></span>
 
 ```html 
 <p data-tag="to-do:completed" data-id="prep">Till garden bed</p> 
@@ -59,9 +63,9 @@
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
 
-<span data-ttu-id="23812-134">Обратите внимание на то, что теги `<p>` над каждым пунктом включают атрибут `data-id`.</span><span class="sxs-lookup"><span data-stu-id="23812-134">Note that the `<p>` tags above each include a `data-id` attribute.</span></span> <span data-ttu-id="23812-135">Это упрощает изменение тегов заметок с флажками.</span><span class="sxs-lookup"><span data-stu-id="23812-135">This makes it easier to update the check-box note tags.</span></span> <span data-ttu-id="23812-136">Например, показанный ниже запрос помечает элемент списка дел (посвященный весенней высадке растений) как выполненный.</span><span class="sxs-lookup"><span data-stu-id="23812-136">For example, the following request marks the spring planting to-do item as completed.</span></span>
+<span data-ttu-id="d3819-133">Обратите внимание, что теги `<p>` над каждым пунктом включают атрибут `data-id`.</span><span class="sxs-lookup"><span data-stu-id="d3819-133">Note that the `<p>` tags above each include a `data-id` attribute.</span></span> <span data-ttu-id="d3819-134">Это упрощает изменение тегов заметок с флажками.</span><span class="sxs-lookup"><span data-stu-id="d3819-134">This makes it easier to update the check-box note tags.</span></span> <span data-ttu-id="d3819-135">Например, показанный ниже запрос помечает элемент списка дел (посвященный весенней высадке растений) как выполненный.</span><span class="sxs-lookup"><span data-stu-id="d3819-135">For example, the following request marks the spring planting to-do item as completed.</span></span>
 
-``` 
+```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -76,9 +80,9 @@ Authorization: Bearer {token}
 ]
 ```
 
-<span data-ttu-id="23812-137">Показанный ниже запрос создает страницу, которая содержит все [встроенные теги заметок](#built-in-note-tags-for-onenote).</span><span class="sxs-lookup"><span data-stu-id="23812-137">The following request creates a page that contains all built-in note tags.</span></span>
+<span data-ttu-id="d3819-136">Показанный ниже запрос создает страницу, которая содержит все [встроенные теги заметок](#built-in-note-tags-for-onenote).</span><span class="sxs-lookup"><span data-stu-id="d3819-136">The following request creates a page that contains all [built-in note tags](#built-in-note-tags-for-onenote).</span></span>
 
-``` 
+```html 
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
 
 Content-Type: text/html
@@ -147,48 +151,43 @@ Authorization: Bearer {token}
 </html>
 ``` 
 
-<span data-ttu-id="23812-138">Дополнительные сведения о создании страниц см. в статье [Создание страниц в OneNote](onenote-create-page.md).</span><span class="sxs-lookup"><span data-stu-id="23812-138">For more information about creating pages, see [Create OneNote pages](onenote-create-page.md).</span></span> <span data-ttu-id="23812-139">Дополнительные сведения об изменении страниц см. в статье [Обновление страниц в OneNote](onenote_update_page.md).</span><span class="sxs-lookup"><span data-stu-id="23812-139">For more about updating pages, see [Update OneNote pages](onenote_update_page.md).</span></span>
+<span data-ttu-id="d3819-137">Дополнительные сведения о создании страниц см. в статье [Создание страниц в OneNote](onenote-create-page.md).</span><span class="sxs-lookup"><span data-stu-id="d3819-137">For more information about creating pages, see [Create OneNote pages](onenote-create-page.md).</span></span> <span data-ttu-id="d3819-138">Дополнительные сведения об изменении страниц см. в статье [Обновление страниц в OneNote](onenote_update_page.md).</span><span class="sxs-lookup"><span data-stu-id="d3819-138">For more about updating pages, see [Update OneNote pages](onenote_update_page.md).</span></span>
 
 
 <a name="note-tags-lists"></a>
-### <a name="note-tags-on-lists"></a><span data-ttu-id="23812-140">Теги заметок в списках</span><span class="sxs-lookup"><span data-stu-id="23812-140">Note tags on lists</span></span>
 
-<span data-ttu-id="23812-141">Ниже приведены рекомендации по работе с тегами заметок в списках.</span><span class="sxs-lookup"><span data-stu-id="23812-141">Here are some guidelines for working with note tags on lists:</span></span>
+## <a name="note-tags-on-lists"></a><span data-ttu-id="d3819-139">Теги заметок в списках</span><span class="sxs-lookup"><span data-stu-id="d3819-139">Note tags on lists</span></span>
 
-- <span data-ttu-id="23812-142">Используйте элементы `p` для списков дел.</span><span class="sxs-lookup"><span data-stu-id="23812-142">Use `p` elements for to-do lists.</span></span> <span data-ttu-id="23812-143">Они не отображают маркеры или числа, и их проще изменять.</span><span class="sxs-lookup"><span data-stu-id="23812-143">Use p elements for to-do lists. They don't display a bullet or number, and they're easier to update.</span></span>
+<span data-ttu-id="d3819-140">Ниже приведены рекомендации по работе с тегами заметок в списках.</span><span class="sxs-lookup"><span data-stu-id="d3819-140">Here are some guidelines for working with note tags on lists:</span></span>
 
-- <span data-ttu-id="23812-144">Чтобы создать или изменить списки, в которых отображается **один и тот же** тег заметки для всех элементов списка, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="23812-144">To create or update ul or ol elements that display the **same**  note tag for all list items:</span></span>
-  
-   <p id="indent"><span data-ttu-id="23812-145">Определите атрибут `data-tag` в элементе `ul` или `ol`.</span><span class="sxs-lookup"><span data-stu-id="23812-145">Define `data-tag` on the `ul` or `ol`.</span></span> <span data-ttu-id="23812-146">Чтобы изменить весь список, вам потребуется повторно определить атрибут `data-tag` в элементе `ul` или `ol`.</span><span class="sxs-lookup"><span data-stu-id="23812-146">Define data-tag`data-tag` on the ul`ul` or ol`ol`. To update the entire list, you'll need to redefine  data-tag on the ul or ol.</span></span></p>
+- <span data-ttu-id="d3819-141">Используйте элементы `p` для списков дел.</span><span class="sxs-lookup"><span data-stu-id="d3819-141">Use `p` elements for to-do lists.</span></span> <span data-ttu-id="d3819-142">Они не отображают маркеры или числа, и их проще изменять.</span><span class="sxs-lookup"><span data-stu-id="d3819-142">They don't display a bullet or number, and they're easier to update.</span></span>
 
-- <span data-ttu-id="23812-147">Чтобы создать или изменить списки, в которых отображается **уникальный** тег заметки для некоторых или всех элементов списка, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="23812-147">To create or update ul or ol elements that display the **same**  note tag for all list items:</span></span>
-  
-   <p id="indent"><span data-ttu-id="23812-148">Определите атрибут `data-tag` в элементах `li`, но не вкладывайте элементы `li` в элемент `ul` или `ol`.</span><span class="sxs-lookup"><span data-stu-id="23812-148">Define `data-tag` on `li` elements, and don't nest the `li` elements in a `ul` or `ol`.</span></span> <span data-ttu-id="23812-149">Чтобы изменить весь список, вам потребуется удалить элемент `ul`, возвращенный в выходном HTML-коде, и предоставить только невложенные элементы `li`.</span><span class="sxs-lookup"><span data-stu-id="23812-149">To update the entire list, you'll need to remove the `ul` that's returned in the output HTML and provide only the unnested `li` elements.</span></span></p>
+- <span data-ttu-id="d3819-143">Для создания или обновления списков, в которых отображается **один и тот же** тег заметки для всех элементов списка, определите атрибут `data-tag` в элементе `ul` или `ol`.</span><span class="sxs-lookup"><span data-stu-id="d3819-143">To create or update lists that display the **same** note tag for all list items:</span></span> <span data-ttu-id="d3819-144">Чтобы изменить весь список, вам потребуется повторно определить атрибут `data-tag` в элементе `ul` или `ol`.</span><span class="sxs-lookup"><span data-stu-id="d3819-144">To update the entire list, you'll need to redefine `data-tag` on the `ul` or `ol`.</span></span>
 
-- <span data-ttu-id="23812-150">Чтобы изменить определенные элементы `li`, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="23812-150">To update specific li`li` elements:</span></span>
+- <span data-ttu-id="d3819-145">Для создания или обновления списков, в которых отображается **уникальный** тег заметки для некоторых или всех элементов списка, определите атрибут `data-tag` в элементах `li` и не вкладывайте элементы `li` в элемент `ul` или `ol`.</span><span class="sxs-lookup"><span data-stu-id="d3819-145">To create or update lists that display a **unique** note tag for some or all list items, define `data-tag` on `li` elements, and don't nest the `li` elements in a `ul` or `ol`.</span></span> <span data-ttu-id="d3819-146">Чтобы изменить весь список, вам потребуется удалить элемент `ul`, возвращенный в выходном HTML-коде, и предоставить только невложенные элементы `li`.</span><span class="sxs-lookup"><span data-stu-id="d3819-146">To update the entire list, you'll need to remove the `ul` that's returned in the output HTML and provide only the unnested `li` elements.</span></span>
 
-   <p id="indent"><span data-ttu-id="23812-151">Настройте элементы `li` индивидуально и определите атрибут `data-tag` в элементе `li`.</span><span class="sxs-lookup"><span data-stu-id="23812-151">Target the `li` elements individually and define the `data-tag` on the `li` element.</span></span> <span data-ttu-id="23812-152">Любой элемент `li` с индивидуальной адресацией можно изменить так, чтобы он отображал уникальный тег заметки независимо от того, как изначально был определен список.</span><span class="sxs-lookup"><span data-stu-id="23812-152">Any individually addressed `li` element can be updated to display a unique note tag, no matter how the list was originally defined.</span></span></p>
+- <span data-ttu-id="d3819-147">Чтобы обновить определенные элементы `li`, настройте элементы `li` индивидуально и определите атрибут `data-tag` в элементе `li`.</span><span class="sxs-lookup"><span data-stu-id="d3819-147">To update specific `li` elements, target the `li` elements individually and define the `data-tag` on the `li` element.</span></span> <span data-ttu-id="d3819-148">Любой элемент `li` с индивидуальной адресацией можно изменить так, чтобы он отображал уникальный тег заметки независимо от того, как изначально был определен список.</span><span class="sxs-lookup"><span data-stu-id="d3819-148">Any individually addressed `li` element can be updated to display a unique note tag, no matter how the list was originally defined.</span></span>
 
-<span data-ttu-id="23812-153">Рекомендации основаны на указанных ниже правилах, применяемых Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="23812-153">The guidelines are based on the following rules that are applied by Microsoft Graph:</span></span>
+  <span data-ttu-id="d3819-149">Рекомендации основаны на указанных ниже правилах, применяемых Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="d3819-149">The guidelines are based on the following rules that are applied by Microsoft Graph:</span></span>
 
-- <span data-ttu-id="23812-154">Параметр `data-tag` для элемента `ul` или `ol` переопределяет все параметры в дочерних элементах `li`.</span><span class="sxs-lookup"><span data-stu-id="23812-154">The `data-tag` setting for a `ul` or `ol` overrides all settings on child `li` elements.</span></span> <span data-ttu-id="23812-155">Это правило применяется, даже если в элементах `ul` или `ol` не указан атрибут `data-tag`, но он указан в дочерних элементах `li`.</span><span class="sxs-lookup"><span data-stu-id="23812-155">The data-tag`ul` setting for a ul`ol` or ol`data-tag` overrides all settings on child li`li` elements. This applies even when the ul or ol doesn't specify a data-tag but its child li elements do.</span></span>
+  - <span data-ttu-id="d3819-150">Параметр `data-tag` для элемента `ul` или `ol` переопределяет все параметры в дочерних элементах `li`.</span><span class="sxs-lookup"><span data-stu-id="d3819-150">The `data-tag` setting for a `ul` or `ol` overrides all settings on child `li` elements.</span></span> <span data-ttu-id="d3819-151">Это правило применяется, даже если в элементах `ul` или `ol` не указан атрибут `data-tag`, но он указан в дочерних элементах `li`.</span><span class="sxs-lookup"><span data-stu-id="d3819-151">This applies even when the `ul` or `ol` doesn't specify a `data-tag` but its child `li` elements do.</span></span>
 
-   <span data-ttu-id="23812-156">Например, если вы создаете элемент `ul` или `ol`, который определяет атрибут `data-tag="project-a"`, то все его элементы будут отображать тег заметки *Project A*.</span><span class="sxs-lookup"><span data-stu-id="23812-156">For example, if you create a `ul` or `ol` that defines `data-tag="project-a"`, all its list items will display the *Project A* note tag.</span></span> <span data-ttu-id="23812-157">Если элемент `ul` или `ol` не определяет атрибут `data-tag`, ни один из его элементов не будет отображать тег заметки.</span><span class="sxs-lookup"><span data-stu-id="23812-157">Or if the `ul` or `ol` doesn't define a `data-tag`, none of its items will display a note tag.</span></span> <span data-ttu-id="23812-158">Это переопределение происходит независимо от любых явных параметров в дочерних элементах `li`.</span><span class="sxs-lookup"><span data-stu-id="23812-158">This override happens regardless of any explicit settings on child `li` elements.</span></span>
+    <span data-ttu-id="d3819-152">Например, если вы создаете элемент `ul` или `ol`, который определяет атрибут `data-tag="project-a"`, то все его элементы будут отображать тег заметки *Project A*.</span><span class="sxs-lookup"><span data-stu-id="d3819-152">For example, if you create a `ul` or `ol` that defines `data-tag="project-a"`, all its list items will display the *Project A* note tag.</span></span> <span data-ttu-id="d3819-153">Если элемент `ul` или `ol` не определяет атрибут `data-tag`, ни один из его элементов не будет отображать тег заметки.</span><span class="sxs-lookup"><span data-stu-id="d3819-153">Or if the `ul` or `ol` doesn't define a `data-tag`, none of its items will display a note tag.</span></span> <span data-ttu-id="d3819-154">Это переопределение происходит независимо от любых явных параметров в дочерних элементах `li`.</span><span class="sxs-lookup"><span data-stu-id="d3819-154">This override happens regardless of any explicit settings on child `li` elements.</span></span>
 
-- <span data-ttu-id="23812-159">Уникальные параметры `data-tag` применяются к элементам списка в указанных ниже условиях.</span><span class="sxs-lookup"><span data-stu-id="23812-159">Unique data-tag`data-tag` settings are honored for list items under the following conditions:</span></span>
+- <span data-ttu-id="d3819-155">Уникальные параметры `data-tag` применяются к элементам списка в указанных ниже условиях.</span><span class="sxs-lookup"><span data-stu-id="d3819-155">Unique `data-tag` settings are honored for list items under the following conditions:</span></span>
 
-   - <span data-ttu-id="23812-160">Элементы `li` не вложены в элемент `ul` или `ol` в запросе на создание или изменение.</span><span class="sxs-lookup"><span data-stu-id="23812-160">The li`li` elements are not nested in a ul`ul` or ol`ol` in a create or update request (see example below).</span></span>
+  - <span data-ttu-id="d3819-156">Элементы `li` не вложены в элемент `ul` или `ol` в запросе на создание или изменение.</span><span class="sxs-lookup"><span data-stu-id="d3819-156">The `li` elements are not nested in a `ul` or `ol` in a create or update request.</span></span>
 
-   - <span data-ttu-id="23812-161">Элемент `li` имеет индивидуальную адресацию в запросе на изменение.</span><span class="sxs-lookup"><span data-stu-id="23812-161">An li`li` element is individually addressed in an update request.</span></span>
+  - <span data-ttu-id="d3819-157">Элемент `li` имеет индивидуальную адресацию в запросе на изменение.</span><span class="sxs-lookup"><span data-stu-id="d3819-157">An `li` element is individually addressed in an update request.</span></span>
 
-- <span data-ttu-id="23812-162">Невложенные элементы `li`, отправленные во входном HTML-коде, возвращаются в элементе `ul` в выходном HTML-коде.</span><span class="sxs-lookup"><span data-stu-id="23812-162">Unnested li`li` elements sent in input HTML are returned in a ul`ul` in the output HTML (see example below).</span></span>
+- <span data-ttu-id="d3819-158">Невложенные элементы `li`, отправленные во входном HTML-коде, возвращаются в элементе `ul` в выходном HTML-коде.</span><span class="sxs-lookup"><span data-stu-id="d3819-158">Unnested `li` elements sent in input HTML are returned in a `ul` in the output HTML.</span></span>
 
-- <span data-ttu-id="23812-163">В выходном HTML-коде все параметры списка `data-tag` определены в элементах `span` в элементах списка.</span><span class="sxs-lookup"><span data-stu-id="23812-163">In output HTML, all `data-tag` list settings are defined on `span` elements on the list items.</span></span>
+- <span data-ttu-id="d3819-159">В выходном HTML-коде все параметры списка `data-tag` определены в элементах `span` в элементах списка.</span><span class="sxs-lookup"><span data-stu-id="d3819-159">In output HTML, all `data-tag` list settings are defined on `span` elements on the list items.</span></span>
 
-<br />
-<span data-ttu-id="23812-164">В приведенном ниже коде показано, как применять некоторые из этих правил.</span><span class="sxs-lookup"><span data-stu-id="23812-164">The following code shows how some of these rules are applied.</span></span> <span data-ttu-id="23812-165">Входной HTML-код создает два списка с тегами заметок.</span><span class="sxs-lookup"><span data-stu-id="23812-165">The input HTML creates two lists with note tags.</span></span> <span data-ttu-id="23812-166">Выходной HTML-код — это то, что система возвращает для списков, когда вы получаете контент страницы.</span><span class="sxs-lookup"><span data-stu-id="23812-166">The output HTML is what's returned for the lists when you retrieve page content.</span></span>
 
-<span data-ttu-id="23812-167">**Входной HTML-код**</span><span class="sxs-lookup"><span data-stu-id="23812-167">**Input HTML**</span></span>
+<span data-ttu-id="d3819-160">В приведенном ниже коде показано, как применять некоторые из этих правил.</span><span class="sxs-lookup"><span data-stu-id="d3819-160">The following code shows how some of these rules are applied.</span></span> <span data-ttu-id="d3819-161">Входной HTML-код создает два списка с тегами заметок.</span><span class="sxs-lookup"><span data-stu-id="d3819-161">The input HTML creates two lists with note tags.</span></span> <span data-ttu-id="d3819-162">Выходной HTML-код — это то, что система возвращает для списков, когда вы получаете контент страницы.</span><span class="sxs-lookup"><span data-stu-id="d3819-162">The output HTML is what's returned for the lists when you retrieve page content.</span></span>
+
+#### <a name="input-html"></a><span data-ttu-id="d3819-163">Входной HTML-код</span><span class="sxs-lookup"><span data-stu-id="d3819-163">Input HTML</span></span>
 
 ```html 
 <!--To display the same note tag on all list items, define note tags on the ul or ol.--> 
@@ -202,7 +201,7 @@ Authorization: Bearer {token}
 <li data-tag="question" data-id="my-question">An item with a Question note tag</li>
 ```
  
-<span data-ttu-id="23812-168">**Выходной HTML-код**</span><span class="sxs-lookup"><span data-stu-id="23812-168">**Output HTML**</span></span>
+#### <a name="output-html"></a><span data-ttu-id="d3819-164">Выходной HTML-код</span><span class="sxs-lookup"><span data-stu-id="d3819-164">Output HTML</span></span>
 
 ```html 
 <ul>
@@ -217,15 +216,16 @@ Authorization: Bearer {token}
 ```
 
 <a name="output-html"></a>
-## <a name="retrieve-note-tags"></a><span data-ttu-id="23812-169">Получение тегов заметок</span><span class="sxs-lookup"><span data-stu-id="23812-169">Retrieve note tags</span></span>
 
-<span data-ttu-id="23812-170">Встроенные теги заметок включаются в выходной HTML, когда вы получаете контент страницы:</span><span class="sxs-lookup"><span data-stu-id="23812-170">Built-in note tags are included in the output HTML when you retrieve page content by sending a GET request to the content endpoint:</span></span>
+## <a name="retrieve-note-tags"></a><span data-ttu-id="d3819-165">Получение тегов заметок</span><span class="sxs-lookup"><span data-stu-id="d3819-165">Retrieve note tags</span></span>
+
+<span data-ttu-id="d3819-166">Встроенные теги заметок включаются в выходной HTML, когда вы получаете контент страницы:</span><span class="sxs-lookup"><span data-stu-id="d3819-166">Built-in note tags are included in the output HTML when you get page content:</span></span>
 
 `GET ../api/v1.0/pages/{page-id}/content` 
 
-<span data-ttu-id="23812-171">Атрибут `data-tag` в выходном HTML-коде всегда включает значение фигуры. Он включает состояние, только если он представляет тег заметки с установленным флажком (для выполненного элемента списка).</span><span class="sxs-lookup"><span data-stu-id="23812-171">The data-tag attribute in the output HTML always includes the shape value, and it only includes  status if it represents a check-box note tag that's  set to completed. The following examples show the input HTML used to create some note tags and the output HTML that's returned.</span></span> <span data-ttu-id="23812-172">В примерах ниже показан входной HTML-код, используемый для создания некоторых тегов заметок, и возвращаемый выходной HTML-код.</span><span class="sxs-lookup"><span data-stu-id="23812-172">The following examples show the input HTML used to create some note tags and the output HTML that's returned.</span></span>
+<span data-ttu-id="d3819-167">Атрибут `data-tag` в выходном HTML-коде всегда включает значение фигуры. Он включает состояние, только если он представляет тег заметки с установленным флажком (для выполненного элемента списка).</span><span class="sxs-lookup"><span data-stu-id="d3819-167">A `data-tag` attribute in the output HTML always includes a shape value, and it only includes a status if it represents a check-box note tag that's set to completed.</span></span> <span data-ttu-id="d3819-168">В примерах ниже показан входной HTML-код, используемый для создания некоторых тегов заметок, и возвращаемый выходной HTML-код.</span><span class="sxs-lookup"><span data-stu-id="d3819-168">The following examples show the input HTML used to create some note tags and the output HTML that's returned.</span></span>
 
-<span data-ttu-id="23812-173">**Входной HTML-код**</span><span class="sxs-lookup"><span data-stu-id="23812-173">**Input HTML**</span></span>
+#### <a name="input-html"></a><span data-ttu-id="d3819-169">Входной HTML-код</span><span class="sxs-lookup"><span data-stu-id="d3819-169">Input HTML</span></span>
 
 ```html 
 <h1>Status meeting</h1>
@@ -239,7 +239,7 @@ Authorization: Bearer {token}
 </ul>
 ```
 
-<span data-ttu-id="23812-174">**Выходной HTML-код**</span><span class="sxs-lookup"><span data-stu-id="23812-174">**Output HTML**</span></span>
+#### <a name="output-html"></a><span data-ttu-id="d3819-170">Выходной HTML-код</span><span class="sxs-lookup"><span data-stu-id="d3819-170">Output HTML</span></span>
 
 ```html 
 <h1 style="...">Status meeting</h1>
@@ -253,71 +253,79 @@ Authorization: Bearer {token}
 </ul>
 ```
 
-<span data-ttu-id="23812-175">Обратите внимание на то, что атрибут `data-tag`, определенный на уровне списка, передается в его элементы списка.</span><span class="sxs-lookup"><span data-stu-id="23812-175">Note that the data-tag`data-tag` attribute defined at the list level is pushed to its list items. For more information about using note tags with lists, see Note tags on lists.</span></span> <span data-ttu-id="23812-176">Дополнительные сведения об использовании тегов заметок со списками см. в статье [Теги заметок в списках](#note-tags-on-lists).</span><span class="sxs-lookup"><span data-stu-id="23812-176">Note that the data-tag attribute defined at the list level is pushed to its list items. For more information about using note tags with lists, see [Note tags on lists](#note-tags-on-lists).</span></span>
+<span data-ttu-id="d3819-171">Обратите внимание, что атрибут `data-tag`, определенный на уровне списка, передается в его элементы списка.</span><span class="sxs-lookup"><span data-stu-id="d3819-171">Note that the `data-tag` attribute defined at the list level is pushed to its list items.</span></span> <span data-ttu-id="d3819-172">Дополнительные сведения об использовании тегов заметок со списками см. в статье [Теги заметок в списках](#note-tags-on-lists).</span><span class="sxs-lookup"><span data-stu-id="d3819-172">For more information about using note tags with lists, see [Note tags on lists](#note-tags-on-lists).</span></span>
 
-> <span data-ttu-id="23812-177">**Примечание.** В выходном HTML-коде определение и теги заметок "Запомнить" возвращаются в виде атрибута `data-tag="remember-for-later"`.</span><span class="sxs-lookup"><span data-stu-id="23812-177">**Note:** In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`.</span></span> <span data-ttu-id="23812-178">Элемент `title` не возвращает никаких сведений о тегах заметок.</span><span class="sxs-lookup"><span data-stu-id="23812-178">element doesn't return any note tag information.</span></span>
+> <span data-ttu-id="d3819-173">**Примечание.** В выходном HTML-коде определение и теги заметок "Запомнить" возвращаются в виде атрибута `data-tag="remember-for-later"`.</span><span class="sxs-lookup"><span data-stu-id="d3819-173">**Note:** In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`.</span></span> <span data-ttu-id="d3819-174">Элемент `title` не возвращает никаких сведений о тегах заметок.</span><span class="sxs-lookup"><span data-stu-id="d3819-174">The `title` element doesn't return any note tag information.</span></span>
+
+
+
 
 <a name="built-in-tags"></a>
-## <a name="built-in-note-tags-for-onenote"></a><span data-ttu-id="23812-179">Встроенные теги заметок для OneNote</span><span class="sxs-lookup"><span data-stu-id="23812-179">Built-in note tags for onnvshort</span></span>
 
-<span data-ttu-id="23812-180">В OneNote имеются указанные ниже встроенные теги заметок.</span><span class="sxs-lookup"><span data-stu-id="23812-180">onnvshort  includes the following built-in  note tags:</span></span>
+## <a name="built-in-note-tags-for-onenote"></a><span data-ttu-id="d3819-175">Встроенные теги заметок для OneNote</span><span class="sxs-lookup"><span data-stu-id="d3819-175">Built-in note tags for OneNote</span></span>
+
+<span data-ttu-id="d3819-176">В OneNote имеются указанные ниже встроенные теги заметок.</span><span class="sxs-lookup"><span data-stu-id="d3819-176">OneNote includes the following built-in note tags:</span></span>
 
 ![Все встроенные теги заметок.](images/note-tags-all.png)
 
-<span data-ttu-id="23812-182">Ниже приведены значения, которые можно присвоить атрибуту `data-tag`.</span><span class="sxs-lookup"><span data-stu-id="23812-182">The values you can assign to the data-tag`data-tag` attribute are shown below.</span></span> <span data-ttu-id="23812-183">Пользовательские теги не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="23812-183">Custom tags are not supported.</span></span>
+<span data-ttu-id="d3819-178">Значения, которые можно присвоить атрибуту `data-tag`, показаны в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="d3819-178">The values you can assign to the `data-tag` attribute are shown below.</span></span> <span data-ttu-id="d3819-179">Пользовательские теги не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="d3819-179">Custom tags are not supported.</span></span>
 
-||<span data-ttu-id="23812-184">Теги</span><span class="sxs-lookup"><span data-stu-id="23812-184">Tags</span></span>||
+||<span data-ttu-id="d3819-180">Теги</span><span class="sxs-lookup"><span data-stu-id="d3819-180">Tags</span></span>||
 |:---|:---|:-----|
-| `shape[:status]` |`to-do`<br />`to-do:completed`|`important`|
+|`shape[:status]` |`to-do`<br/><br/>`to-do:completed`|`important`|
 |`question`|`definition`|`highlight`|
 |`contact`|`address`|`phone-number`|
 |`web-site-to-visit`|`idea`|`password`|
 |`critical`|`project-a`|`project-b`|
 |`remember-for-later`|`movie-to-see`|`book-to-read`|
 |`music-to-listen-to`|`source-for-article`|`remember-for-blog`|
-|`discuss-with-person-a`<br />`discuss-with-person-a:completed`|`discuss-with-person-b`<br />`discuss-with-person-b:completed`|`discuss-with-manager`<br />`discuss-with-manager:completed`|
-|`send-in-email`|`schedule-meeting`<br />`schedule-meeting:completed`|`call-back`<br />`call-back:completed`|
-|`to-do-priority-1`<br />`to-do-priority-1:completed`|`to-do-priority-2`<br />`to-do-priority-2:completed`|`client-request`<br />`client-request:completed`|
+|`discuss-with-person-a`<br/><br/>`discuss-with-person-a:completed`|`discuss-with-person-b`<br/><br/>`discuss-with-person-b:completed`|`discuss-with-manager`<br/><br/>`discuss-with-manager:completed`|
+|`send-in-email`|`schedule-meeting`<br/><br/>`schedule-meeting:completed`|`call-back`<br/><br/>`call-back:completed`|
+|`to-do-priority-1`<br/><br/>`to-do-priority-1:completed`|`to-do-priority-2`<br/><br/>`to-do-priority-2:completed`|`client-request`<br/><br/>`client-request:completed`|
 
 
 <a name="request-response-info"></a>
-## <a name="response-information"></a><span data-ttu-id="23812-185">Сведения в отклике</span><span class="sxs-lookup"><span data-stu-id="23812-185">Response information</span></span>
-<span data-ttu-id="23812-186">Microsoft Graph возвращает указанные ниже сведения в отклике.</span><span class="sxs-lookup"><span data-stu-id="23812-186">The onnvshort API returns the following information in the response.</span></span>
 
-| <span data-ttu-id="23812-187">Данные в отклике</span><span class="sxs-lookup"><span data-stu-id="23812-187">Response data</span></span> | <span data-ttu-id="23812-188">Описание</span><span class="sxs-lookup"><span data-stu-id="23812-188">Description</span></span> |  
+## <a name="response-information"></a><span data-ttu-id="d3819-181">Сведения в отклике</span><span class="sxs-lookup"><span data-stu-id="d3819-181">Response information</span></span>
+
+<span data-ttu-id="d3819-182">Microsoft Graph возвращает указанные ниже сведения в отклике.</span><span class="sxs-lookup"><span data-stu-id="d3819-182">Microsoft Graph returns the following information in the response.</span></span>
+
+| <span data-ttu-id="d3819-183">Данные в отклике</span><span class="sxs-lookup"><span data-stu-id="d3819-183">Response data</span></span> | <span data-ttu-id="d3819-184">Описание</span><span class="sxs-lookup"><span data-stu-id="d3819-184">Description</span></span> |  
 |------|------|  
-| <span data-ttu-id="23812-189">код успешного завершения действия;</span><span class="sxs-lookup"><span data-stu-id="23812-189">Success code</span></span> | <span data-ttu-id="23812-190">Код состояния HTTP 201 при успешном выполнении запроса POST и код состояния HTTP 204 при успешном выполнении запроса PATCH.</span><span class="sxs-lookup"><span data-stu-id="23812-190">A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request.</span></span> |  
-| <span data-ttu-id="23812-191">Ошибки</span><span class="sxs-lookup"><span data-stu-id="23812-191">Errors</span></span> | <span data-ttu-id="23812-192">Дополнительные сведения об ошибках OneNote, которые может возвращать Microsoft Graph, см. в статье [Коды ошибок для API OneNote в Microsoft Graph](onenote_error_codes.md).</span><span class="sxs-lookup"><span data-stu-id="23812-192">Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return.</span></span> |  
+| <span data-ttu-id="d3819-185">код успешного завершения действия;</span><span class="sxs-lookup"><span data-stu-id="d3819-185">Success code</span></span> | <span data-ttu-id="d3819-186">Код состояния HTTP 201 при успешном выполнении запроса POST и код состояния HTTP 204 при успешном выполнении запроса PATCH.</span><span class="sxs-lookup"><span data-stu-id="d3819-186">A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request.</span></span> |  
+| <span data-ttu-id="d3819-187">Ошибки</span><span class="sxs-lookup"><span data-stu-id="d3819-187">Errors</span></span> | <span data-ttu-id="d3819-188">Дополнительные сведения об ошибках OneNote, которые может возвращать Microsoft Graph, см. в статье [Коды ошибок для API OneNote в Microsoft Graph](onenote_error_codes.md).</span><span class="sxs-lookup"><span data-stu-id="d3819-188">Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return.</span></span> |  
 
 
 <a name="permissions"></a>
-## <a name="permissions"></a><span data-ttu-id="23812-193">Разрешения</span><span class="sxs-lookup"><span data-stu-id="23812-193">Permissions</span></span>
 
-<span data-ttu-id="23812-194">Чтобы можно было создавать или изменять страницы OneNote, вам придется запросить соответствующие разрешения.</span><span class="sxs-lookup"><span data-stu-id="23812-194">To create or update OneNote pages, you'll need to request appropriate permissions.</span></span> <span data-ttu-id="23812-195">Выберите минимальный уровень разрешений, необходимый для работы вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="23812-195">Choose the lowest level of permissions that your app needs to do its work.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d3819-189">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d3819-189">Permissions</span></span>
 
-<span data-ttu-id="23812-196">**Разрешения для _запросов POST со страницами_**</span><span class="sxs-lookup"><span data-stu-id="23812-196">**Permissions for _POST pages_**</span></span>
+<span data-ttu-id="d3819-190">Чтобы можно было создавать или изменять страницы OneNote, вам придется запросить соответствующие разрешения.</span><span class="sxs-lookup"><span data-stu-id="d3819-190">To create or update OneNote pages, you'll need to request appropriate permissions.</span></span> <span data-ttu-id="d3819-191">Выберите минимальный уровень разрешений, необходимый для работы вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="d3819-191">Choose the lowest level of permissions that your app needs to do its work.</span></span>
 
-- <span data-ttu-id="23812-197">Notes.Create</span><span class="sxs-lookup"><span data-stu-id="23812-197">Notes.Create</span></span>
-- <span data-ttu-id="23812-198">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="23812-198">Notes.ReadWrite</span></span>
-- <span data-ttu-id="23812-199">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23812-199">Notes.ReadWrite.All</span></span>  
+#### <a name="permissions-for-post-pages"></a><span data-ttu-id="d3819-192">Разрешения для запросов POST со страницами</span><span class="sxs-lookup"><span data-stu-id="d3819-192">Permissions for POST pages</span></span>
 
-<span data-ttu-id="23812-200">**Разрешения для _запросов PATCH со страницами_**</span><span class="sxs-lookup"><span data-stu-id="23812-200">**Permissions for _PATCH pages_**</span></span>
+- <span data-ttu-id="d3819-193">Notes.Create</span><span class="sxs-lookup"><span data-stu-id="d3819-193">Notes.Create</span></span>
+- <span data-ttu-id="d3819-194">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d3819-194">Notes.ReadWrite</span></span>
+- <span data-ttu-id="d3819-195">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d3819-195">Notes.ReadWrite.All</span></span>  
 
-- <span data-ttu-id="23812-201">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="23812-201">Notes.ReadWrite</span></span>
-- <span data-ttu-id="23812-202">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23812-202">Notes.ReadWrite.All</span></span>  
+#### <a name="permissions-for-patch-pages"></a><span data-ttu-id="d3819-196">Разрешения для запросов PATCH со страницами</span><span class="sxs-lookup"><span data-stu-id="d3819-196">Permissions for PATCH pages</span></span>
 
-<span data-ttu-id="23812-203">Дополнительные сведения об областях разрешений и принципе их работы см. в разделе [Области разрешений OneNote](permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="23812-203">For more information about how permission scopes work, see [OneNote permission scopes](permissions_reference.md).</span></span>
+- <span data-ttu-id="d3819-197">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d3819-197">Notes.ReadWrite</span></span>
+- <span data-ttu-id="d3819-198">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d3819-198">Notes.ReadWrite.All</span></span>  
+
+<span data-ttu-id="d3819-199">Дополнительные сведения об областях разрешений и принципе их работы см. в разделе [Области разрешений OneNote](permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d3819-199">For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md).</span></span>
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a><span data-ttu-id="23812-204">Дополнительные ресурсы</span><span class="sxs-lookup"><span data-stu-id="23812-204">Additional resources</span></span>
 
-- [<span data-ttu-id="23812-205">Создание страниц OneNote</span><span class="sxs-lookup"><span data-stu-id="23812-205">Create OneNote pages</span></span>](onenote-create-page.md)
-- [<span data-ttu-id="23812-206">Обновление содержимого страницы OneNote</span><span class="sxs-lookup"><span data-stu-id="23812-206">Update OneNote page content</span></span>](onenote_update_page.md)
-- [<span data-ttu-id="23812-207">Интеграция с OneNote</span><span class="sxs-lookup"><span data-stu-id="23812-207">Integrate with OneNote</span></span>](integrate_with_onenote.md)
-- [<span data-ttu-id="23812-208">Блог разработчиков OneNote</span><span class="sxs-lookup"><span data-stu-id="23812-208">OneNote Developer Blog</span></span>](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [<span data-ttu-id="23812-209">Вопросы разработки OneNote на сайте Stack Overflow</span><span class="sxs-lookup"><span data-stu-id="23812-209">OneNote development questions on Stack Overflow</span></span>](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [<span data-ttu-id="23812-210">Репозитории GitHub OneNote</span><span class="sxs-lookup"><span data-stu-id="23812-210">OneNote GitHub repos</span></span>](http://go.microsoft.com/fwlink/?LinkID=390178)  
+## <a name="see-also"></a><span data-ttu-id="d3819-200">См. также</span><span class="sxs-lookup"><span data-stu-id="d3819-200">See also</span></span>
+
+- [<span data-ttu-id="d3819-201">Создание страниц OneNote</span><span class="sxs-lookup"><span data-stu-id="d3819-201">Create OneNote pages</span></span>](onenote-create-page.md)
+- [<span data-ttu-id="d3819-202">Обновление содержимого страницы OneNote</span><span class="sxs-lookup"><span data-stu-id="d3819-202">Update OneNote page content</span></span>](onenote_update_page.md)
+- [<span data-ttu-id="d3819-203">Интеграция с OneNote</span><span class="sxs-lookup"><span data-stu-id="d3819-203">Integrate with OneNote</span></span>](integrate_with_onenote.md)
+- [<span data-ttu-id="d3819-204">Блог разработчиков OneNote</span><span class="sxs-lookup"><span data-stu-id="d3819-204">OneNote Developer Blog</span></span>](http://go.microsoft.com/fwlink/?LinkID=390183)
+- [<span data-ttu-id="d3819-205">Вопросы разработки OneNote на сайте Stack Overflow</span><span class="sxs-lookup"><span data-stu-id="d3819-205">OneNote development questions on Stack Overflow</span></span>](http://go.microsoft.com/fwlink/?LinkID=390182)
+- [<span data-ttu-id="d3819-206">Репозитории GitHub OneNote</span><span class="sxs-lookup"><span data-stu-id="d3819-206">OneNote GitHub repos</span></span>](http://go.microsoft.com/fwlink/?LinkID=390178)  
  
 
 
