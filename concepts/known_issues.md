@@ -197,6 +197,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 Параметр **comment** для создания ответа или черновика ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) не включается в текст полученного черновика сообщения.
 
+### <a name="get-messages-returns-chats-in-microsoft-teams"></a>При использовании запроса GET для сообщений возвращаются также чаты в Microsoft Teams
+
+В конечных точках версии 1 и бета-версии данные отклика для `GET /users/id/messages` включают чаты Microsoft Teams, не входящие в область группы или канала. Тема этих сообщений чата: "IM".
+
 
 ## <a name="drives-files-and-content-streaming"></a>Диски, файлы и потоковая передача контента
 

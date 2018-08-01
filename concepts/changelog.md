@@ -6,7 +6,26 @@
 
 ## <a name="july-2018"></a>Июль 2018 г.
 
-### <a name="application-and-serviceprincipal-api-changes"></a>Изменения в API application и servicePrincipal
+### <a name="directory-apis"></a>API каталогов
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета | Добавлено свойство isMultipleDataLocationsForServicesEnabled в ресурс [Organization](../api-reference/beta/resources/organization.md), позволяющее приложениям проверять, включена ли для клиента поддержка нескольких регионов. Добавлено свойство preferredDataLocation в ресурсы [user](../api-reference/beta/resources/user.md) и [group](../api-reference/beta/resources/group.md), позволяющее настраивать предпочтительное расположение данных для пользователя и группы.|
+
+### <a name="microsoft-teams-apis"></a>API Microsoft Teams
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Изменение|Бета-версия|Обновлен ресурс [chatmessage](../api-reference/beta/resources/chatmessage.md)|
+|Дополнение|Бета-версия|Добавлен тип ресурса [вложения для чата](../api-reference/beta/resources/chatattachment.md)|
+|Дополнение|Бета-версия|Добавлен тип ресурса [упоминания для чата](../api-reference/beta/resources/chatattachment.md)|
+|Дополнение|Бета-версия|Добавлен тип ресурса [реакции для чата](../api-reference/beta/resources/chatattachment.md)|
+|Дополнение|Бета-версия|Добавлена возможность [получения всех API сообщений в канале](../api-reference/beta/api/channel_list_messages.md) |
+|Дополнение|Бета-версия|Добавлена возможность [получения API сообщений в канале](../api-reference/beta/api/channel_get_message.md) |
+|Дополнение|Бета-версия|Добавлена возможность [получения всех API ответов на сообщения](../api-reference/beta/api/channel_list_messagereplies.md) |
+|Дополнение|Бета-версия|Добавлена возможность [получения ответа для API сообщений](../api-reference/beta/api/channel_get_messagereply.md) |
+
+
+### <a name="application-and-serviceprincipal-api-changes"></a>Изменения API servicePrincipal и приложений
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -15,6 +34,7 @@
 ### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Дополнение|Бета-версия| Добавлена поддержка разрешений приложений для [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
 |Удаление|Бета-версия|Удален DELETE /groups/{id}/team/channels/{id}, используйте DELETE /teams/{id}/channels/{id}. |
 |Удаление|Бета-версия|Удален GET /groups/{id}/team/channels/{id}, используйте GET /teams/{id}/channels/{id}. |
 |Удаление|Бета-версия|Удален PATCH /groups/{id}/team/channels/{id}, используйте PATCH /teams/{id}/channels/{id}. |
@@ -28,6 +48,7 @@
 |Удаление|Бета-версия|Удален POST /groups/{id}/team/channels, используйте POST /teams/{id}/channels. |
 |Удаление|Бета-версия|Удален GET /groups/{id}/team, используйте GET /teams/{id}. |
 |Удаление|Бета-версия|Удален PATCH /groups/{id}/team, используйте PATCH /teams/{id}. |
+|Дополнение|Бета-версия|Добавлен API для [перечисления всех групп в организации](../api-reference/beta/api/team_list_all_teams.md). |
 
 ### <a name="webhooks"></a>Веб-перехватчики
 | Тип изменения | Версия | Описание                              |
@@ -40,7 +61,7 @@
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Все | Новые разрешения приложений _Application.ReadWrite.All_ и _Application.ReadWrite.OwnedBy, позволяющие клиентскому приложению создавать, читать, обновлять и удалять приложения и субъект-службы, как описано в [теме разрешения](permissions_reference.md#application-resource-permissions). |
+| Дополнение | Все | Новые разрешения приложений _Application.ReadWrite.All_ и _Application.ReadWrite.OwnedBy_, позволяющие клиентскому приложению создавать, читать, обновлять и удалять приложения и субъекты-службы, как описано в [статье о разрешениях](permissions_reference.md#application-resource-permissions). |
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
 
@@ -85,7 +106,7 @@
 |Дополнение|Бета|Для типа перечисления [editionUpgradeLicenseType](../api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype.md) добавлен участник **notConfigured**|
 |Дополнение|Бета|Для типа перечисления [iosUpdatesInstallStatus](../api-reference/beta/resources/intune_deviceconfig_iosupdatesinstallstatus.md) добавлен участник **unknown**|
 |Дополнение|Бета|Для типа перечисления [mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md) добавлен участник **userRequestedInstall**|
-|Дополнение|Бета|Для типа перечисления [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) добавлен участник **notConfigured**|
+|Дополнение|Бета|Для типа перечисления [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) добавлен участник **notConfigured**
 
 ### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 | **Тип изменения** | **Версия**   | **Описание**                          |
