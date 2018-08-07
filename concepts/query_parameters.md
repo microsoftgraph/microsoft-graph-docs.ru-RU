@@ -182,28 +182,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 ### <a name="using-search-on-message-collections"></a>Использование параметра $search в коллекциях message
 
-Приложения Office 365, такие как Outlook и SharePoint, поддерживают синтаксис KQL (Keyword Query Language) для поиска. Благодаря этому возможно использование общего домена обнаружения для соответствующих хранилищ данных. 
+Можно искать сообщения, основываясь на их конкретных свойствах. Результаты поиска сортируются по дате и времени отправки сообщения.
 
-Вы можете указать приведенные ниже имена свойств, которые KQL распознает в строке запроса $search. Эти имена свойств не являются свойствами, определенными в сущности **message**, но внутренне сопоставлены с ними. Дополнительные сведения и примеры см. в разделе о [свойствах, доступных для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
-
-- **attachment**
-- **bcc**
-- **body**
-- **category**
-- **cc**
-- **content**
-- **from**
-- **has**
-- **importance**
-- **participants**
-- **received**
-- **sender**
-- **subject**
-- **to**
-
-Если при поиске сообщений указано только значение, поиск выполняется по свойствам поиска по умолчанию: **from**, **subject** и **body**.
-
-Результаты поиска в коллекции message сортируются по дате и времени отправки сообщения.
+Если при поиске сообщений указано только значение, а конкретные свойства не заданы, поиск выполняется по свойствам поиска по умолчанию: **from**, **subject** и **body**.
 
 Следующий пример кода возвращает все сообщения из папки "Входящие" вошедшего пользователя, содержащие слово "pizza" в любом из трех свойств поиска по умолчанию:
 
@@ -213,14 +194,33 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [Попробовать в песочнице Graph][search-example]
 
-Следующий пример кода выполняет поиск всех сообщений в папке "Входящие" пользователя, отправленных с определенного электронного адреса:
+Кроме того, для поиска сообщений можно указать в таблице ниже их имена свойств, распознаваемые синтаксисом языка запросов по ключевым словам (KQL). Эти имена свойств соответствуют свойствам, определенным в сущности **message** в Microsoft Graph. Синтаксис KQL поддерживается в Outlook и других приложениях Office 365, например SharePoint. Благодаря этому возможно использование общего домена обнаружения для соответствующих хранилищ данных.
 
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
-```
-Дополнительные сведения о KQL (например, касательно синтаксиса, поддерживаемых операторов, подсказок для поиска) вы найдете в таких статьях:
 
-- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference);
+| Свойство электронных писем, по которому можно выполнять поиск                | Описание | Пример 
+|:-------------------------|:------------|:---------|
+| **attachment**           | Имена файлов, вложенных в сообщение электронной почты.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
+| **bcc**           | Поле **Скрытая копия** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
+| **body**           | Текст сообщения электронной почты.|[`me/messages?$search="body:excitement"`][search-body-example]
+| **cc**           | Поле **Копия** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
+| **from**           | Отправитель сообщения электронной почты, на которого указывает SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
+| **hasAttachment** | Значение TRUE означает, что сообщение электронной почты содержит вложение, не являющееся встроенным. В противном случае задается значение FALSE. |[`me/messages?$search="hasAttachments=true"`][search-from-example]
+| **importance**           | Важность сообщения, которую отправитель может указать при отправке. Возможные значения — `low`, `medium` и `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
+| **kind**           | Тип сообщения. Допустимые значения — `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` и `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
+| **participants**           | Такие поля сообщения электронной почты, как **От**, **Кому**, **Копия** и **Скрытая копия**, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="participants:danas"`][search-part-example]
+| **received**           | Дата получения сообщения адресатом.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
+| **recipients**           | Такие поля сообщения электронной почты, как **Кому**, **Копия** и **Скрытая копия**, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
+| **sent**           | Дата отправки сообщения отправителем.|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
+| **size**           | Размер элемента в байтах.|[`me/messages?$search="size:1..500000"`][search-size-example]
+| **subject**           | Текст в строке темы сообщения электронной почты. .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
+| **to**           | Поле **Кому** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
+
+
+Дополнительные сведения о доступных для поиска свойствах, синтаксисе KQL, поддерживаемых операторах и подсказках для поиска вы найдете в таких статьях:
+
+- [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
+
+- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
   [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
@@ -369,4 +369,22 @@ https://graph.microsoft.com/beta/me?$expand=photo
 [skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
 [top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
+[search-att-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22attachment%3Aapi-catalog%2Emd%22&method=GET&version=v1.0
+[search-bcc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22bcc%3Asamanthab%40contoso%2Ecom%22%26$select=subject,bccRecipients&method=GET&version=v1.0
+[search-body-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22body%3Aexcitement%22&method=GET&version=v1.0
+[search-cc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22cc%3Adanas%22%26$select=subject,ccRecipients&method=GET&version=v1.0
+[search-from-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22from%3Arandiw%22%26$select=subject,from&method=GET&version=v1.0
+[search-hasatt-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22hasAttachments=true%22&method=GET&version=v1.0
+[search-imp-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22importance%3Ahigh%22%26$select=subject,importance&method=GET&version=v1.0
+[search-kind-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22kind%3Avoicemail%22&method=GET&version=v1.0
+[search-part-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22participants%3Adanas%22&method=GET&version=v1.0
+
+[search-rcvd-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22received%3A07/23/2018%22%26$select=subject,receivedDateTime&method=GET&version=v1.0
+
+[search-rcpts-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22recipients%3Arandiw%22%26$select=subject,toRecipients,ccRecipients,bccRecipients&method=GET&version=v1.0
+[search-sent-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22sent%3A07/23/2018%22%26$select=subject,sentDateTime&method=GET&version=v1.0
+[search-size-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22size%3A1%2E%2E500000%22&method=GET&version=v1.0
+
+[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.
+[search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 

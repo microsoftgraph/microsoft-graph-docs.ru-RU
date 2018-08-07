@@ -50,10 +50,17 @@
 |Удаление|Бета-версия|Удален PATCH /groups/{id}/team, используйте PATCH /teams/{id}. |
 |Дополнение|Бета-версия|Добавлен API для [перечисления всех групп в организации](../api-reference/beta/api/team_list_all_teams.md). |
 
+### <a name="outlook-contacts"></a>Контакты Outlook
+| **Тип изменения** | **Версия**   | **Описание**                          |
+|:--------------- |:------------- |:---------------------------------------- |
+|Дополнение |Бета-версия | Добавлен сложный тип [typedEmailAddress](../api-reference/beta/resources/typedemailaddress.md). |
+|Изменение | Бета-версия | Изменен тип свойства **emailAddresses** для ресурса [contact](../api-reference/beta/resources/contact.md). Теперь это коллекция экземпляров **typedEmailAddress**.|
+
 ### <a name="webhooks"></a>Веб-перехватчики
 | Тип изменения | Версия | Описание                              |
 |:------------|:--------|:-----------------------------------------|
 | Критическое изменение | Бета-версия и версия 1.0 | Сокращен до 3 дней [максимальный период действия подписки](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) с использованием [веб-перехватчиков](../api-reference/v1.0/resources/webhooks.md) для элементов в корне диска. | 
+
 
 ## <a name="june-2018"></a>Июнь 2018 г.
 

@@ -104,14 +104,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 
 ## <a name="calendars"></a>Календари
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Добавление календарей ICS в почтовый ящик пользователя и доступ к ним
-
-В настоящее время календари ICS поддерживаются частично:
-
-* Вы можете добавить календарь ICS в почтовый ящик пользователя через интерфейс пользователя, но не через API Microsoft Graph.
-* [Перечисление календарей пользователя](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/user_list_calendars) позволяет получить свойства **name**, **color** и **id** всех [календарей](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/calendar) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
-* Вы также можете [отобразить события](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/calendar_list_events) календаря ICS.
-
 ### <a name="accessing-a-shared-calendar"></a>Доступ к общему календарю
 
 При использовании следующей операции для доступа к событиям в календаре другого пользователя:
@@ -143,6 +135,17 @@ GET \users('{id}')\calendars('{id}')\events
 GET \me\calendars('{id}')\events
 ```
 
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Добавление календарей ICS в почтовый ящик пользователя и доступ к ним
+
+В настоящее время календари ICS поддерживаются частично:
+
+* Вы можете добавить календарь ICS в почтовый ящик пользователя через интерфейс пользователя, но не через API Microsoft Graph.
+* [Перечисление календарей пользователя](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/user_list_calendars) позволяет получить свойства **name**, **color** и **id** всех [календарей](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/calendar) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
+* Вы также можете [отобразить события](http://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/api/calendar_list_events) календаря ICS.
+
+### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Поддержка свойства onlineMeetingUrl для Microsoft Teams
+
+В настоящее время свойство **onlineMeetingUrl** ресурса [event](../api-reference/v1.0/resources/event.md) для собрания Skype означает URL-адрес для собрания по сети. Однако для ресурса event собрания в Microsoft Teams задано значение NULL.
 
 ## <a name="contacts"></a>Контакты
 
