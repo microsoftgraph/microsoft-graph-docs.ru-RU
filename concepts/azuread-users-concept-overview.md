@@ -1,4 +1,4 @@
-# <a name="overview-of-users-in-microsoft-graph"></a>Обзор пользователях в Microsoft Graph
+# <a name="overview-of-users-in-microsoft-graph"></a>Обзор пользователей в Microsoft Graph
 
 Пользователи — это представления рабочих или учебных учетных записей Azure Active Directory (Azure AD) либо учетных записей Майкрософт в Microsoft Graph. Ресурс **user** в Microsoft Graph — это центр, из которого вы можете получить доступ к связям и ресурсам, релевантным для ваших пользователей.
 
@@ -8,7 +8,7 @@
 
 С помощью Microsoft Graph вы можете получить доступ к связям, документам, контактам и настройкам, контекстно-релевантным для пользователя, вошедшего в систему. Ресурс **user** обеспечивает простой способ доступа к ресурсам пользователя и работы с ними без необходимости совершать дополнительные вызовы, искать информацию о проверке подлинности и отправлять запросы непосредственно к другим ресурсам Microsoft Graph.
 
-Чтобы получить доступ к информации и данным пользователя, вам потребуется [получить доступ к этим ресурсам от его имени](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Благодаря проверке подлинности приложения с помощью [согласия администратора](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) вы можете работать с широким спектром объектов, сопоставленных с пользователем, и изменять их.
+Чтобы получить доступ к информации и данным пользователя, вам потребуется [получить доступ к этим ресурсам от его имени](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Благодаря проверке подлинности приложения с помощью [согласия администратора](https://developer.microsoft.com/ru-RU/graph/docs/concepts/permissions_reference) вы можете работать с широким спектром объектов, сопоставленных с пользователем, и изменять их.
 
 ### <a name="manage-your-organization"></a>Управление организацией
 
@@ -52,5 +52,5 @@
 - Настройте управление доступом и политики доступа для пользователей с помощью [API Azure AD](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Просмотрите [разрешения](permissions_reference.md), которые потребуются вашему приложению для доступа к данным пользователей. 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
+- Stay up to date with the Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
 -->
