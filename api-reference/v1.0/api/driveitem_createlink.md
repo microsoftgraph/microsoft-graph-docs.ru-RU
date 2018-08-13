@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Предоставление доступа к файлу посредством ссылки"
-ms.openlocfilehash: 342e6ce403225a5d4b8b555a79355a721055e465
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Предоставление доступа к файлу посредством ссылки
+ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
+ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "22223478"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки совместного доступа для ресурса DriveItem
 
@@ -47,7 +48,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 |   Имя    |  Тип  |                                 Описание                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **type**  | string | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
-| **scope** | строка | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
+| **scope** | string | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
 
 
 ### <a name="link-types"></a>Типы ссылок
@@ -170,7 +171,7 @@ Content-Type: application/json
 
 **Примечание.** Внедрение ссылок поддерживается только в личных учетных записях OneDrive.
 
-### <a name="request"></a>Запрос
+### <a name="request"></a>Запросить
 
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
 
@@ -197,7 +198,7 @@ Content-Type: application/json
   "link": {
     "type": "embed",
     "webHtml": "<IFRAME src=\"https://onedrive.live.com/...\"></IFRAME>",
-    "webUrl": "https://onedive.live.com/...",
+    "webUrl": "https://onedrive.live.com/...",
     "application": {
       "id": "1234",
       "displayName": "Sample Application"

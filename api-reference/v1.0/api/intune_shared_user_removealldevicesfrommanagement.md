@@ -25,7 +25,8 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -35,14 +36,18 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/removeAllDevicesFromManagement
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+
 ``` http
 HTTP/1.1 204 No Content
 ```

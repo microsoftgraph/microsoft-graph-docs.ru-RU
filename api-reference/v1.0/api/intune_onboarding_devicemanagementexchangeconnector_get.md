@@ -26,7 +26,8 @@ GET /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -43,11 +44,12 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{device
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 521
+Content-Length: 580
 
 {
   "value": {
@@ -57,6 +59,7 @@ Content-Length: 521
     "status": "connectionPending",
     "primarySmtpAddress": "Primary Smtp Address value",
     "serverName": "Server Name value",
+    "connectorServerName": "Connector Server Name value",
     "exchangeConnectorType": "hosted",
     "version": "Version value",
     "exchangeAlias": "Exchange Alias value",

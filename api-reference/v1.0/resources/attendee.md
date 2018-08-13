@@ -9,7 +9,7 @@
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Ответ участника (нет, принято, отклонено и т. д.) на событие, а также дата и время отправки ответа.|
 |type|String|Тип участника: `required`, `optional`, `resource`.|
-|emailAddress|[emailAddress](emailAddress.md)|Включает имя и SMTP-адрес участника.|
+|emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

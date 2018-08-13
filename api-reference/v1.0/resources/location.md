@@ -15,13 +15,13 @@
 | Свойство  | Тип   | Описание                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Почтовый адрес расположения. |
-| coordinates | [outlookGeoCoordinates](outlookGeoCoordinates.md) | Географические координаты и высота расположения. |
+| coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Географические координаты и высота расположения. |
 | displayName  | String | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный электронный адрес для расположения.              |
-| locationUri | Строка | Необязательный URI, представляющий местоположение. |
-| locationType | Строка | Тип расположения. Возможные значения: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Только для чтения.|
-| uniqueId | Строка | Только для внутреннего использования.|
-| uniqueIdType | Строка | Только для внутреннего использования. |
+| locationUri | String | Необязательный URI, представляющий местоположение. |
+| locationType | String | Тип расположения. Возможные значения: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Только для чтения.|
+| uniqueId | String | Только для внутреннего использования.|
+| uniqueIdType | String | Только для внутреннего использования. |
 
 ## <a name="json-representation"></a>Представление JSON
 

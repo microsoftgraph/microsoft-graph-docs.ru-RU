@@ -22,7 +22,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите имя раздела.
@@ -57,7 +57,7 @@ Content-length: 27
   "@odata.type": "microsoft.graph.onenoteSection"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 272
 
