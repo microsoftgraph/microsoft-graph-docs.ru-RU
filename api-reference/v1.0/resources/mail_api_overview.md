@@ -1,30 +1,33 @@
-# <a name="use-the-microsoft-graph-api-to-integrate-with-outlook-mail"></a>Использование API Microsoft Graph для интеграции с почтой Outlook
+# <a name="use-the-outlook-mail-rest-api"></a>Использование REST API для почты Outlook
 
 Microsoft Graph позволяет вашему приложению получать авторизованный доступ к данным почты Outlook в личной или корпоративной учетной записи. Имея [соответствующие делегированные разрешения или разрешения приложения](../../../concepts/permissions_reference.md), приложение может получать доступ к данным почты вошедшего пользователя или любого пользователя в клиенте. Данные почты могут находиться в облаке на сервере Exchange Online (составной части Office 365) или на локальном сервере Exchange в [гибридном развертывании](../../../concepts/hybrid_rest_support.md).
 
 ## <a name="using-the-mail-rest-api"></a>Использование REST API почты
+
 Запросы API почты выполняются от имени [пользователя](../resources/user.md), который может определяться свойством пользователя **id** (уникальным GUID), адресом электронной почты или псевдонимом `me`, обозначающим вошедшего пользователя.
 
-Сообщения электронной почты представлены ресурсом [message](../resources/message.md) и упорядочены в почтовой папке [mailFolder](../resources/mailfolder.md). Сообщения и почтовые папки определяются свойством **id**, которое можно получить из операций `GET`. 
+Сообщения электронной почты представлены ресурсом [message](../resources/message.md) и упорядочены в почтовой папке [mailFolder](../resources/mailfolder.md). Сообщения и почтовые папки определяются свойством **id**, которое можно получить из операций `GET`.
 
->**Примечание.** Идентификаторы **message** и **mailfolder** не являются уникальными и неизменяемыми в почтовом ящике. Они могут изменяться после копирования, перемещения или отправки. 
+>**Примечание.** Идентификаторы **message** и **mailfolder** не являются уникальными и неизменяемыми в почтовом ящике. Они могут изменяться после копирования, перемещения или отправки.
 
 Сообщения могут быть в формате HTML или текстовом формате.
 
-Вы можете использовать такие известные имена папок, как `Inbox`, `Drafts`, `SentItems` или `DeletedItems`, чтобы указать почтовые папки, которые существуют по умолчанию для всех пользователей. Например, вы можете получить сообщения из папки Outlook **Отправленные** вошедшего пользователя, не получая идентификатор папки:
-```
+Для идентификации определенных почтовых папок, существующих по умолчанию для всех пользователей, можно использовать известные имена папок, такие как `Inbox`, `Drafts`, `SentItems` или `DeletedItems`. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
+
+Например, вы можете получать сообщения в папке Outlook **Отправленные** вошедшего в систему пользователя без предварительного получения идентификатора папки:
+
+```http
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
-Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
-## <a name="common-use-cases"></a>Основные варианты использования 
+## <a name="common-use-cases"></a>Основные варианты использования
 
-Ресурс **message** предоставляет такие свойства, как **categories**, **conversationId**, **flag** и **importance**, которые соответствуют функциям, доступным в пользовательском интерфейсе, позволяя приложениям автоматизировать работу или интегрироваться со встроенными возможностями Outlook. 
+Ресурс **message** предоставляет такие свойства, как **categories**, **conversationId**, **flag** и **importance**, которые соответствуют функциям, доступным в пользовательском интерфейсе, позволяя приложениям автоматизировать работу или интегрироваться со встроенными возможностями Outlook.
 
 В API Microsoft Graph также есть методы и действия, которые поддерживают основные варианты использования сообщений.
 
-| Варианты использования        | Ресурсы REST | См. также |
-|:---------------|:--------|:----------|
+| Варианты использования | Ресурсы REST | См. также |
+|:----------|:---------------|:---------|
 | **Действия, ориентированные на пользователя** | | |
 | Создание, чтение, ответ, пересылка, отправка, обновление или удаление сообщений | [message](../resources/message.md) | [Методы ресурса message](../resources/message.md#methods) |
 | Предоставление другому пользователю права отправлять сообщения от имени владельца почтового ящика | [message](../resources/message.md) | Задание свойств **from** и **sender** в ресурсе [message](../resources/message.md) |
@@ -41,11 +44,11 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 | Доступ к пользовательским данным для редко предоставляемых свойств Outlook MAPI | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Общие сведения о расширенных свойствах Outlook](../resources/extended-properties-overview.md) |
 
 ## <a name="next-steps"></a>Дальнейшие действия
-API почты открывает новые способы взаимодействия с пользователями: 
 
+API почты открывает новые способы взаимодействия с пользователями:
+
+- [Обзор API почты Outlook](../../../concepts/outlook-mail-concept-overview.md)
 - Узнайте больше о [методах](../resources/message.md#methods), [свойствах](../resources/message.md#properties) и [отношениях](../resources/message.md#relationships) ресурсов [message](../resources/message.md) и [mailFolder](../resources/mailfolder.md).
-- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer).
+- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
-Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/graph/examples#partners).
-
-
+Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).

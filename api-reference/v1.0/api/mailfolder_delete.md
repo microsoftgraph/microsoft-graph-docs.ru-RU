@@ -1,6 +1,11 @@
-# <a name="delete-mailfolder"></a>Удаление объекта MailFolder
+# <a name="delete-mailfolder"></a>Delete mailFolder
 
-Удаление объекта mailFolder.
+Удаление указанного объекта [mailFolder](../resources/mailfolder.md).
+
+Вы можете указать папку почты по ее идентификатору или по ее [имени известной папки](../resources/mailfolder.md), если оно существует. 
+
+>**Примечание** Возможно, вы не сможете удалить элементы в папке удаления восстанавливаемых элементов (представленной известным именем папки `recoverableitemsdeletions`). Подробнее см. статьи [Хранение удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) и [Очистка удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -38,8 +43,8 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true

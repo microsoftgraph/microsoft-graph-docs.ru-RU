@@ -1,6 +1,6 @@
 # <a name="event-decline"></a>event: decline
 
-Отклонение приглашения на указанное событие.
+Отклонение приглашения для указанного [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -19,11 +19,9 @@
 ```http
 POST /me/events/{id}/decline
 POST /users/{id | userPrincipalName}/events/{id}/decline
-POST /groups/{id}/events/{id}/decline
 
 POST /me/calendar/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
-POST /groups/{id}/calendar/events/{id}/decline
 
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
@@ -51,11 +49,11 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
-|sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
+|sendResponse|Boolean|`true` Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В теле отклика не возвращается никаких данных.
+В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 
@@ -83,9 +81,9 @@ Content-length: 56
 
 <br/>
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

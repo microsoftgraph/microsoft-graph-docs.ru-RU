@@ -8,50 +8,63 @@
 
 | Тип ресурса или элемент        | Разрешение          |
 |-----------------------------|---------------------|
-| Contacts                    | Contacts.Read       |
-| Conversations               | Group.Read.All      |
-| Events                      | Calendars.Read      |
-| Messages                    | Mail.Read           |
-| Drive (хранилище OneDrive пользователя)    | Files.ReadWrite.     |
-| Drives (контент и библиотеки документов в SharePoint, к которым предоставлен общий доступ) | Files.ReadWrite.All |
+| Контакты                    | Contacts.Read       |
+| Разговоры               | Group.Read.All      |
+| События                      | Calendars.Read      |
+| Сообщения                    | Mail.Read           |
+| Группы                      | Group.Read.All      |
+| Пользователи                       | User.Read.All       |
+| Диск (пользователя OneDrive)    | Files.ReadWrite.     |
+| Диски (содержимое и диски в SharePoint, к которым предоставлен общий доступ) | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-DELETE /subscriptions/{subscriptionId}
+DELETE /subscriptions/{id}
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "delete_subscription"
 }-->
+
 ```http
-DELETE https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
+DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+
+##### <a name="response"></a>Ответ
+
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "microsoft.graph.subscription"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
-
 
 <!-- {
   "type": "#page.annotation",
