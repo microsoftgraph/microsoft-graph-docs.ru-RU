@@ -1,0 +1,14 @@
+# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a><span data-ttu-id="0cfc3-101">тип перечисления sharedPCAccountDeletionPolicyType</span><span class="sxs-lookup"><span data-stu-id="0cfc3-101">sharedPCAccountDeletionPolicyType enum type</span></span>
+
+> <span data-ttu-id="0cfc3-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="0cfc3-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="0cfc3-103">Возможные значения при удалении учетных записей на общем ПК.</span><span class="sxs-lookup"><span data-stu-id="0cfc3-103">Possible values for when accounts are deleted on a shared PC.</span></span>
+## <a name="members"></a><span data-ttu-id="0cfc3-104">Элементы</span><span class="sxs-lookup"><span data-stu-id="0cfc3-104">Members</span></span>
+|<span data-ttu-id="0cfc3-105">Элемент</span><span class="sxs-lookup"><span data-stu-id="0cfc3-105">Member</span></span>|<span data-ttu-id="0cfc3-106">Значение</span><span class="sxs-lookup"><span data-stu-id="0cfc3-106">Value</span></span>|<span data-ttu-id="0cfc3-107">Описание</span><span class="sxs-lookup"><span data-stu-id="0cfc3-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="0cfc3-108">immediate</span><span class="sxs-lookup"><span data-stu-id="0cfc3-108">   [-immediate]</span></span>|<span data-ttu-id="0cfc3-109">0</span><span class="sxs-lookup"><span data-stu-id="0cfc3-109">0%</span></span>|<span data-ttu-id="0cfc3-110">Немедленное удаление.</span><span class="sxs-lookup"><span data-stu-id="0cfc3-110">Delete immediately.</span></span>|
+|<span data-ttu-id="0cfc3-111">diskSpaceThreshold</span><span class="sxs-lookup"><span data-stu-id="0cfc3-111">diskSpaceThreshold</span></span>|<span data-ttu-id="0cfc3-112">1</span><span class="sxs-lookup"><span data-stu-id="0cfc3-112">1</span></span>|<span data-ttu-id="0cfc3-113">Удаление у порога дискового пространства.</span><span class="sxs-lookup"><span data-stu-id="0cfc3-113">Delete at disk space threshold.</span></span>|
+|<span data-ttu-id="0cfc3-114">diskSpaceThresholdOrInactiveThreshold</span><span class="sxs-lookup"><span data-stu-id="0cfc3-114">diskSpaceThresholdOrInactiveThreshold</span></span>|<span data-ttu-id="0cfc3-115">2</span><span class="sxs-lookup"><span data-stu-id="0cfc3-115">2</span></span>|<span data-ttu-id="0cfc3-116">Удаление у порога дискового пространства или неактивного порога.</span><span class="sxs-lookup"><span data-stu-id="0cfc3-116">Delete at disk space threshold or inactive threshold.</span></span>|
+
+
+
