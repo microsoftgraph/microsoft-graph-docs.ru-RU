@@ -1,0 +1,15 @@
+# <a name="internetsitesecuritylevel-enum-type"></a><span data-ttu-id="85c2a-101">тип перечисления internetSiteSecurityLevel</span><span class="sxs-lookup"><span data-stu-id="85c2a-101">internetSiteSecurityLevel enum type</span></span>
+
+> <span data-ttu-id="85c2a-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="85c2a-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="85c2a-103">Возможные значения для уровня безопасности сайта.</span><span class="sxs-lookup"><span data-stu-id="85c2a-103">Possible values for internet site security level.</span></span>
+## <a name="members"></a><span data-ttu-id="85c2a-104">Элементы</span><span class="sxs-lookup"><span data-stu-id="85c2a-104">Members</span></span>
+|<span data-ttu-id="85c2a-105">Элемент</span><span class="sxs-lookup"><span data-stu-id="85c2a-105">Member</span></span>|<span data-ttu-id="85c2a-106">Значение</span><span class="sxs-lookup"><span data-stu-id="85c2a-106">Value</span></span>|<span data-ttu-id="85c2a-107">Описание</span><span class="sxs-lookup"><span data-stu-id="85c2a-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="85c2a-108">userDefined</span><span class="sxs-lookup"><span data-stu-id="85c2a-108">userDefined</span></span>|<span data-ttu-id="85c2a-109">0</span><span class="sxs-lookup"><span data-stu-id="85c2a-109">0%</span></span>|<span data-ttu-id="85c2a-110">Определено пользователем, значение по умолчанию, без назначения.</span><span class="sxs-lookup"><span data-stu-id="85c2a-110">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="85c2a-111">medium</span><span class="sxs-lookup"><span data-stu-id="85c2a-111">medium</span></span>|<span data-ttu-id="85c2a-112">1</span><span class="sxs-lookup"><span data-stu-id="85c2a-112">1</span></span>|<span data-ttu-id="85c2a-113">Средний.</span><span class="sxs-lookup"><span data-stu-id="85c2a-113">Medium.</span></span>|
+|<span data-ttu-id="85c2a-114">mediumHigh</span><span class="sxs-lookup"><span data-stu-id="85c2a-114">Medium/High</span></span>|<span data-ttu-id="85c2a-115">2</span><span class="sxs-lookup"><span data-stu-id="85c2a-115">2</span></span>|<span data-ttu-id="85c2a-116">2</span><span class="sxs-lookup"><span data-stu-id="85c2a-116">Medium/High</span></span>|
+|<span data-ttu-id="85c2a-117">high</span><span class="sxs-lookup"><span data-stu-id="85c2a-117">High</span></span>|<span data-ttu-id="85c2a-118">3</span><span class="sxs-lookup"><span data-stu-id="85c2a-118">3</span></span>|<span data-ttu-id="85c2a-119">Высокий.</span><span class="sxs-lookup"><span data-stu-id="85c2a-119">High</span></span>|
+
+
+
