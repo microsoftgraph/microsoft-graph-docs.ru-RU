@@ -1,6 +1,6 @@
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
-Предварительное принятие приглашения, связанного с указанным событием.
+Предварительно принять указанное событие [ ](../resources/event.md) в [календаре](../resources/calendar.md) пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
@@ -16,11 +16,9 @@
 ```http
 POST /me/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/events/{id}/tentativelyAccept
-POST /groups/{id}/events/{id}/tentativelyAccept
 
 POST /me/calendar/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
-POST /groups/{id}/calendar/events/{id}/tentativelyAccept
 
 POST /me/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
@@ -42,8 +40,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|comment|String|Текст, включенный в ответ. Необязательный.|
-|sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
+|comment|string|Текст, включенный в ответ. Необязательный.|
+|sendResponse|Boolean|`true` Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
 
 ## <a name="response"></a>Отклик
 
@@ -70,7 +68,7 @@ Content-length: 56
 
 ##### <a name="response"></a>Отклик
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,6 +1,6 @@
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
-Отклонение активированного напоминания.
+Отключить напоминание, которое было активировано для [события](../resources/event.md) в [календаре](../resources/calendar.md) пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
@@ -18,11 +18,9 @@
 ```http
 POST /me/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
-POST /groups/{id}/events/{id}/dismissReminder
 
 POST /me/calendar/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
-POST /groups/{id}/calendar/events/{id}/dismissReminder
 
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
@@ -65,8 +63,8 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 
 <br/>
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+### <a name="response"></a>Ответ
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
