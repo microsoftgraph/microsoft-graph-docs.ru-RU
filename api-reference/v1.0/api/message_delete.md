@@ -1,6 +1,9 @@
-# <a name="delete-message"></a>Удаление сообщения
+# <a name="delete-message"></a>Удалить сообщение
 
-Удаление сообщения.
+Удалите сообщение в почтовом ящике указанного пользователя либо связь сообщения.
+
+>**Примечание:** Возможно, вы не сможете удалить элементы в папке удаления восстанавливаемых элементов (представленной [хорошо известным названием папки](../resources/mailfolder.md) `recoverableitemsdeletions`). Подробнее см. статьи [Хранение удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) и [Очистка удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -21,7 +24,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -40,8 +43,8 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true
