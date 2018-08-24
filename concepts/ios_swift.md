@@ -4,7 +4,7 @@
 
 > Для поддержки **всех корпоративных клиентов** в **любых корпоративных сценариях** необходимо использовать конечную точку Azure AD и управлять приложениями с помощью [портала Azure](https://aka.ms/aadapplist). Дополнительные сведения см. в разделе [Выбор между конечными точками Azure AD и Azure AD версии 2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-В этой статье описывается, как получить маркер доступа из [конечной точки Azure AD версии 2.0](https://developer.microsoft.com/ru-RU/graph/docs/concepts/converged_auth) и вызвать Microsoft Graph. В ней на примере кода [Office 365 Connect Sample for iOS (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) рассматриваются основные понятия, которые необходимо реализовать в приложении, использующем Microsoft Graph. Кроме того, в ней описывается, как получить доступ к Microsoft Graph, используя операции REST в асинхронном шаблоне **Цепочка обещаний**. Обещания в примере внедряются с помощью CocoaPod [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md). 
+В этой статье описывается, как получить маркер доступа из [конечной точки Azure AD версии 2.0](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) и вызвать Microsoft Graph. В ней на примере кода [Office 365 Connect Sample for iOS (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) рассматриваются основные понятия, которые необходимо реализовать в приложении, использующем Microsoft Graph. Кроме того, в ней описывается, как получить доступ к Microsoft Graph, используя операции REST в асинхронном шаблоне **Цепочка обещаний**. Обещания в примере внедряются с помощью CocoaPod [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md). 
 
 Пример был создан с помощью **XCode 9.2** и **Swift 3.2**.
 
@@ -19,17 +19,17 @@
 
 Рабочий процесс выполняет аутентификацию и авторизацию для доступа к ресурсам Microsoft Graph, входит, используя рабочую или личную учетную запись, и отправляет почту получателю.
 
-**Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/quick-start) вы сможете быстро приступить к работе.
+**Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://developer.microsoft.com/en-us/graph/quick-start) вы сможете быстро приступить к работе.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 
-Чтобы приступить к работе, вам понадобится: 
+Чтобы приступить к работе, вам понадобится следующее: 
 
 * [Xcode](https://developer.apple.com/xcode/downloads/) от Apple;
 * установить [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) в качестве диспетчера зависимостей;
 * установить [Carthage](https://github.com/Carthage/Carthage) для импорта и создания библиотеки **MSAL**;
 * установить Cocoapod [PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/Documentation/Installation.md); 
-* [учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](https://docs.microsoft.com/ru-RU/office/developer-program/office-365-developer-program-faq#account-types).
+* [учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types).
 
 ## <a name="register-the-app"></a>Регистрация приложения
  
@@ -52,7 +52,7 @@
 1. Клонируйте [этот репозиторий](https://github.com/microsoftgraph/ios-swift-connect-rest-sample). 
 
 
-2. Используйте CocoaPods для импорта зависимостей PromiseKit. Этот пример приложения уже содержит podfile, который добавит компоненты pod в проект. Перейдите в корневую папку проекта в приложении **Терминал** и выполните следующую команду:
+2. Используйте CocoaPods для импорта зависимостей PromiseKit. Этот пример приложения уже содержит podfile, который добавит компоненты pod в проект. Перейдите в корневую папку проекта в приложении **Терминал** и выполните следующую команду:****
 
         pod install
 
@@ -432,7 +432,7 @@ private extension ConnectViewController {
 ## <a name="run-the-app"></a>Запуск приложения
 1. Прежде чем запускать пример, необходимо указать идентификатор клиента, полученный во время регистрации (раздел **Регистрация приложения**). Откройте **Info.plist** в виде исходного кода. 
 
-   - Замените `ENTER_CLIENT_ID_HERE` **идентификатором клиента**, полученным в процессе регистрации. Убедитесь, что значение `msal` не заменено. После замены строки значение строки массива будет выглядеть примерно так: `msal48d31887-5fad-4d73-a9f5-3c356e68a038`, где часть GUID — **ваш** идентификатор клиента:  
+   - Замените `ENTER_CLIENT_ID_HERE` **идентификатором клиента**, полученным в процессе регистрации. Убедитесь, что значение `msal` не заменено. После замены строки значение строки массива будет выглядеть примерно так: `msal48d31887-5fad-4d73-a9f5-3c356e68a038`, где часть GUID — **ваш** идентификатор клиента:  
 
    Например: 
 
@@ -483,5 +483,5 @@ private extension ConnectViewController {
 - Примеры распространенных операций SDK вы найдете во [фрагментах кода на языке Objective C с использованием Microsoft Graph для iOS](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## <a name="see-also"></a>См. также
-- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-protocols/)
-- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-v2-tokens/)
+- [Протоколы Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Маркеры Azure AD версии 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

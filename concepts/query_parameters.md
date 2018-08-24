@@ -94,14 +94,14 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 Поддержка операторов `$filter` зависит от того, какой API Microsoft Graph используется. В большинстве случаев поддерживаются следующие операторы: 
 
-- `eq` (равняется);
-- `ne` (не равняется);
-- `gt` (больше чем);
-- `ge` (не меньше чем);
-- `lt` (меньше чем), `le` (не больше чем);
-- `and` (и);
-- `or` (или);
-- `not` (не).
+- (равняется);`eq`
+- (не равняется);`ne`
+- (больше чем);`gt`
+- (не меньше чем);`ge`
+- (меньше чем), `le` (не больше чем);`lt`
+- (и);`and`
+- (или);`or`
+- (не).`not`
  
 Часто поддерживается строковый оператор `startswith`. Некоторые API поддерживают лямбда-оператор `any`. Примеры использования см. в приведенной ниже таблице. Дополнительные сведения о синтаксисе `$filter` см. в [статье о протоколе OData][odata-filter].  
 
@@ -112,9 +112,9 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | Описание | Пример
 |:------------|:--------|
 | Поиск пользователей с именем Mary по нескольким свойствам. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) 
-| Получение всех событий для вошедшего пользователя, которые начинаются после 01.07.2017 г. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) 
+| Получение всех событий для вошедшего пользователя, которые начинаются после 01.07.2017 г. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) 
 | Получение всех сообщений с определенного адреса, полученных вошедшим пользователем. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) 
-| Получение всех сообщений, полученных вошедшим пользователем в апреле 2017 г. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
+| Получение всех сообщений, полученных вошедшим пользователем в апреле 2017 г. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
 | Получение всех непрочитанных сообщений в папке "Входящие" вошедшего пользователя. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
 | Получение списка всех групп Office 365 в организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
 
@@ -205,8 +205,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 | **cc**           | Поле **Копия** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
 | **from**           | Отправитель сообщения электронной почты, на которого указывает SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
 | **hasAttachment** | Значение TRUE означает, что сообщение электронной почты содержит вложение, не являющееся встроенным. В противном случае задается значение FALSE. |[`me/messages?$search="hasAttachments=true"`][search-from-example]
-| **importance**           | Важность сообщения, которую отправитель может указать при отправке. Возможные значения — `low`, `medium` и `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **kind**           | Тип сообщения. Допустимые значения — `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` и `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
+| **importance**           | Важность сообщения, которую отправитель может указать при отправке. Возможные значения — `low`, `medium` и `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
+| **kind**           | Тип сообщения. Допустимые значения — `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` и `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
 | **participants**           | Такие поля сообщения электронной почты, как **От**, **Кому**, **Копия** и **Скрытая копия**, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="participants:danas"`][search-part-example]
 | **received**           | Дата получения сообщения адресатом.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
 | **recipients**           | Такие поля сообщения электронной почты, как **Кому**, **Копия** и **Скрытая копия**, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
@@ -218,16 +218,15 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 Дополнительные сведения о доступных для поиска свойствах, синтаксисе KQL, поддерживаемых операторах и подсказках для поиска вы найдете в таких статьях:
 
-- [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
+- [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
 
-- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- 
-  [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
+- [[Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 
-API People Microsoft Graph можно использовать для получения сведений о наиболее релевантных для пользователя людях. Релевантность определяется шаблонами общения и совместной работы пользователя, а также его бизнес-отношениями. API People поддерживает параметр запроса `$search`.
+API People Microsoft Graph можно использовать для получения сведений о наиболее релевантных для пользователя людях. Релевантность определяется шаблонами общения и совместной работы пользователя, а также его бизнес-отношениями. API People поддерживает параметр запроса `$search`.
 
 Поиск людей выполняется по свойствам **displayName** и **emailAddress** ресурса [person](../api-reference/v1.0/resources/person.md).
 
@@ -311,7 +310,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Попробовать в песочнице Graph][skip-example]
 
-> **Примечание.** Некоторые API Microsoft Graph, например для почты и календарей Outlook (**message**, **event** и **calendar**), используют `$skip` для разбиения по страницам. Если результаты запроса занимают несколько страниц, эти API возвращают свойство `@odata:nextLink` с URL-адресом, содержащим параметр `$skip`. Этот URL-адрес можно использовать для возврата следующей страницы результатов. [Подробнее…](./paging.md)
+> **Примечание.** Некоторые API Microsoft Graph, например для почты и календарей Outlook (**message**, **event** и **calendar**), используют `$skip` для разбиения по страницам. Если результаты запроса занимают несколько страниц, эти API возвращают свойство `@odata:nextLink` с URL-адресом, содержащим параметр `$skip`. Этот URL-адрес можно использовать для возврата следующей страницы результатов. Подробнее…[](./paging.md)
 
 ## <a name="skiptoken-parameter"></a>Параметр skipToken
 
@@ -335,7 +334,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 ## <a name="error-handling-for-query-parameters"></a>Обработка ошибок параметров запроса
 
-Некоторые запросы возвращают сообщение об ошибке, если указанный параметр запроса не поддерживается. Например, невозможно использовать `$expand` для связи `user/photo`. 
+Некоторые запросы возвращают сообщение об ошибке, если указанный параметр запроса не поддерживается. Например, невозможно использовать отношение`$expand` on the `user/photo`. 
 
 ```http
 https://graph.microsoft.com/beta/me?$expand=photo
