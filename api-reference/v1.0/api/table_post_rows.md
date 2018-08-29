@@ -1,6 +1,11 @@
 # <a name="create-tablerow"></a>Создание объекта TableRow
 
-С помощью этого API можно создать объект TableRow.
+Добавляет строки в конец таблицы. Обратите внимание, что API может принимать несколько строк данных, использующих его. Добавление одной строки за один раз может привести к замедлению. Рекомендуемым подходом было бы собрать строки вместе в один вызов, а не выполнять вставку единичных строк. Для достижения наилучших результатов соберите строки, которые требуется вставить, на стороне приложения и выполните одну операцию по добавлению строк. Поэкспериментируйте с количеством строк, чтобы определить идеальное их число для использования в одном вызове API. 
+
+## <a name="error-handling"></a>Обработка ошибок
+
+Иногда при выполнении этого запроса может отображаться сообщение об ошибке 504 HTTP. В этом случае нужно повторить запрос.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -13,8 +18,8 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
+POST /workbook/tables/{id|name}/rows/add
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -24,39 +29,47 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [TableRow](../resources/tablerow.md) в формате JSON.
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-## <a name="response"></a>Отклик
+| Параметр    | Тип   |Описание|
+|:---------------|:--------|:----------|
+|index|number|Необязательный параметр. Определяет относительную позицию новой строки. Если параметру присвоено значение null, строка добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.|
+|values|Json|Двумерный массив неформатированных значений строк таблицы (boolean (логический), string (строка) или number (число)).|
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [TableRow](../resources/tablerow.md) в тексте отклика.
+## <a name="response"></a>Ответ
+
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [TableRow](../resources/tablerow.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
+В этом примере в конец таблицы производится вставка двух строк данных. 
+
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "create_tablerow_from_table"
+  "name": "tablerowcollection_add"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/add
 Content-type: application/json
-Content-length: 45
+Content-length: 51
 
 {
-  "index": 99,
-  "values": "values-value"
+  "values": [
+    [1, 2, 3],
+    [4, 5, 6]
+  ]
 }
 ```
-Предоставьте в тексте запроса описание объекта [TableRow](../resources/tablerow.md) в формате JSON.
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 45
 
@@ -70,8 +83,14 @@ Content-length: 45
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create TableRow",
+  "description": "TableRowCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/table_post_rows.md/tablerowcollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
+    "Warning: /api-reference/v1.0/api/table_post_rows.md/tablerowcollection_add/values:
+      Inconsistent types between parameter (Collection) and table (None)"
+  ],
   "tocPath": ""
 }-->

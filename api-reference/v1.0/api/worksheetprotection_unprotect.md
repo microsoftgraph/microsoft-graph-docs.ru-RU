@@ -1,4 +1,4 @@
-# <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
+# <a name="worksheetprotection-unprotect"></a>WorksheetProtection: снять защиту
 
 Снятие защиты с листа
 ## <a name="permissions"></a>Разрешения
@@ -27,7 +27,7 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|password|string|Необязательный пароль защиты листа.|
+|password|строка|Необязательный пароль защиты листа.|
 
 ## <a name="response"></a>Отклик
 
@@ -51,12 +51,11 @@ Content-length: 34
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

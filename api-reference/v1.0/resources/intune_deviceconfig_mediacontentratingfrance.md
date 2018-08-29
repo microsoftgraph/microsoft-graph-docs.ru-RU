@@ -6,8 +6,8 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|movieRating|String|Рейтинг фильма для Франции. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
-|tvRating|String|Телевизионный рейтинг для Франции. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
+|оценка фильма|[оценка Тип фильма во Франции](../resources/intune_deviceconfig_ratingfrancemoviestype.md)|Оценка выбранных для Франции фильмов. Допустимые значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`,`agesAbove18`.|
+|тв оценка|[оценка типа телевидения во Франции](../resources/intune_deviceconfig_ratingfrancetelevisiontype.md)|ТВ-оценка, выбранная для Франции. Допустимые значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`,`agesAbove18`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -15,7 +15,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mediaContentRatingFrance"
 }
 -->

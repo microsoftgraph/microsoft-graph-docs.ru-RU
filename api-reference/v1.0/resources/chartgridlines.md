@@ -7,18 +7,18 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartGridlines](../api/chartgridlines_get.md) | [ChartGridlines](chartgridlines.md) |Чтение свойств и связей объекта chartGridlines.|
-|[Обновление](../api/chartgridlines_update.md) | [ChartGridlines](chartgridlines.md)    |Обновление объекта ChartGridlines. |
+|[Получение объекта ChartGridlines](../api/chartgridlines_get.md) | [WorkbookChartGridlines](chartgridlines.md) |Чтение свойств и связей объекта chartGridlines.|
+|[Update](../api/chartgridlines_update.md) | [WorkbookChartGridlines](chartgridlines.md)    |Обновление объекта ChartGridlines. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|visible|boolean|Логическое значение, определяющее, отображаются ли линии сетки оси.|
+|видимый|boolean|Логическое значение, определяющее, отображаются ли линии сетки оси.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[ChartGridlinesFormat](chartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|
+|формат|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -26,10 +26,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 }-->
 
 ```json

@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/Range
+GET /workbook/worksheets/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -22,12 +22,11 @@ POST /workbook/worksheets/{id|name}/Range
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
+## <a name="function-parameters"></a>Параметры функций
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|address|string|Необязательный параметр. Адрес или имя диапазона. Если аргумент не указан, возвращается весь диапазон листа.|
+|address|строка|Необязательный параметр. Адрес или имя диапазона. Если аргумент не указан, возвращается весь диапазон листа.|
 
 ## <a name="response"></a>Отклик
 
@@ -42,21 +41,15 @@ POST /workbook/worksheets/{id|name}/Range
   "name": "worksheet_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/Range
-Content-type: application/json
-Content-length: 32
-
-{
-  "address": "address-value"
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='A1:B2')
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -72,6 +65,41 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+
+Если необязательный параметр `address` не указан, эта функция возвращает диапазон всего листа.
+
+##### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "worksheet_range_noaddress"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
+```
+
+##### <a name="response"></a>Ответ
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 99,
+  "columnCount": 99,
+  "columnIndex": 99,
+  "valueTypes": "valueTypes-value"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

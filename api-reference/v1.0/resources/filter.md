@@ -7,16 +7,33 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Apply](../api/filter_apply.md)|Нет|Применяет заданные условия фильтра для определенного столбца.|
+|[Применить](../api/filter_apply.md)|Нет|Применяет заданные условия фильтра для определенного столбца.|
 |[Clear](../api/filter_clear.md)|Нет|Сбрасывает фильтр для определенного столбца.|
 
 ## <a name="properties"></a>Свойства
-Нет
 
-## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Имя | Тип   |Описание|
 |:---------------|:--------|:----------|
-|criteria|[FilterCriteria](filtercriteria.md)|Текущий фильтр, заданный для определенного столбца. Только для чтения.|
+|criteria|[WorkbookFilterCriteria](filtercriteria.md)|Текущий фильтр, заданный для определенного столбца. Только для чтения.|
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже представлено описание ресурса в формате JSON.
+
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.workbookFilter"
+}-->
+
+```json
+{
+  "criteria": {"@odata.type": "microsoft.graph.workbookFilterCriteria" }
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

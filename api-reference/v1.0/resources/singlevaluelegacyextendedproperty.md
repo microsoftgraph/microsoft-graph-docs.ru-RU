@@ -15,8 +15,8 @@
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|string|Идентификатор свойства. Только для чтения.|
-|значение|string|Значение свойства.|
+|id|строка|Идентификатор свойства. Только для чтения.|
+|значение|строка|Значение свойства.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -26,11 +26,10 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"
 }-->
 

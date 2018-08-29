@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)
+PATCH /workbook/worksheets/{id|name}/charts/{name}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -28,13 +28,13 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)
 |:---------------|:--------|:----------|
 |height|double|Обозначает высоту объекта диаграммы (в пунктах).|
 |left|double|Расстояние в пунктах от левого края диаграммы до начала листа.|
-|name|string|Обозначает имя объекта диаграммы.|
+|name|строка|Обозначает имя объекта диаграммы.|
 |top|double|Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).|
 |width|double|Представляет ширину объекта диаграммы (в пунктах).|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [Chart](../resources/chart.md) в тексте отклика.
+В случае успеха, этот метод возвращает `200 OK`код ответа и обновленный объект [WorkbookChart](../resources/chart.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -43,7 +43,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)
   "name": "update_chart"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}
 Content-type: application/json
 Content-length: 52
 
@@ -52,12 +52,12 @@ Content-length: 52
   "left": 99
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -12,25 +12,25 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|pendingCount|Int32|Количество ожидающих устройств|
-|notApplicableCount|Int32|Количество неприменимых устройств|
-|successCount|Int32|Количество успешных устройств|
-|errorCount|Int32|Количество устройств с ошибками|
-|failedCount|Int32|Количество устройств со сбоями|
-|lastUpdateDateTime|DateTimeOffset|Время последнего обновления|
+|id|Строка|Ключ объекта.|
+|pendingCount|Int32|Количество ожидающих устройств.|
+|notApplicableCount|Int32|Количество неприменимых устройств.|
+|successCount|Int32|Количество успешных устройств.|
+|errorCount|Int32|Количество устройств с ошибками.|
+|failedCount|Int32|Число устройств со сбоями.|
+|lastUpdateDateTime|DateTimeOffset|Время последнего обновления.|
 |configurationVersion|Int32|Версия политики для этого обзора|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary",

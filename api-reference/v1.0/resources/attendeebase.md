@@ -4,12 +4,13 @@
 
 Тип, производный от [recipient](recipient.md).
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.recipient",
   "optionalProperties": [
 
   ],
@@ -24,9 +25,9 @@
 
 ```
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|String| Тип участника. Возможные значения: `required`, `optional`, `resource`. Если участник является пользователем, то [findMeetingTimes](../api/user_findmeetingtimes.md) всегда определяет тип этого пользователя как `Required`.|
+|type|AttendeeType| Тип участника. Возможные значения: `required`, `optional`, `resource`. В настоящее время, если участник является человеком, действие [findMeetingTimes](../api/user_findmeetingtimes.md) всегда предполагает, что человек имеет тип `Required`.|
 |emailAddress|[emailAddress](emailAddress.md)|Включает имя и SMTP-адрес участника.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

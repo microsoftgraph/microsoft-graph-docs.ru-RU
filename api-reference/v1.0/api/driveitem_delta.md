@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Синхронизация содержимого ресурса drive
-ms.openlocfilehash: 47f3ebbc7936b6bd97b58a62db4805197c3bb3c1
-ms.sourcegitcommit: 126066a65b7c59f0d71667d722ee987b8ee97713
+ms.openlocfilehash: f87bfcd686ab98297c8b33aefc55705162438a35
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "20050833"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265017"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 
@@ -48,6 +48,12 @@ GET /users/{userId}/drive/root/delta
 
 Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$select`, `$expand` и `$top` для настройки ответа.
 
+## <a name="parameters"></a>Параметры
+
+| Имя   | Значение  | Описание                                                                                                                          |
+|:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| токен  | строка | Необязательный параметр. Если не указано, перечисляет текущее состояние иерархии. Если `latest`, возвращает пустой ответ с последней дельтой маркера. Если маркер предыдущей дельты, возвращает новое состояние с момента того маркера.
+
 ## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию ресурсов [DriveItem](../resources/driveitem.md) в теле отклика.
@@ -67,13 +73,13 @@ GET /users/{userId}/drive/root/delta
 
 Ниже приведен пример первоначального запроса.
 
-<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -115,13 +121,13 @@ Content-type: application/json
 
 Ниже приведен пример запроса, выполненного после первоначального.
 
-<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
+<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -171,15 +177,15 @@ Content-type: application/json
 
 ### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -191,7 +197,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 * В разностном канале показано последнее состояние каждого элемента, а не каждое изменение. Если элемент был переименован дважды, он будет указан только один раз, но с последним именем.
 * По ряду причин один и тот же элемент может отображаться в разностном канале несколько раз. Следует использовать последний представленный вариант.
@@ -200,9 +206,9 @@ Content-type: application/json
 
 * Функция delta не возвращает следующие свойства ресурса DriveItem:
 
-* **cTag**;
-* **lastModifiedBy**;
-* **size**.
+* ****cTag**;**
+* ****lastModifiedBy**;**
+* ****size**.**
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
