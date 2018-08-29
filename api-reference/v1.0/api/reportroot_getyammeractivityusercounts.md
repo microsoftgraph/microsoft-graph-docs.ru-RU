@@ -1,20 +1,20 @@
-# <a name="reportroot-getyammeractivityusercounts"></a><span data-ttu-id="3761d-101">reportRoot: getYammerActivityUserCounts</span><span class="sxs-lookup"><span data-stu-id="3761d-101">reportRoot: getYammerActivityUserCounts</span></span>
+# <a name="reportroot-getyammeractivityusercounts"></a><span data-ttu-id="4d569-101">reportRoot: getYammerActivityUserCounts</span><span class="sxs-lookup"><span data-stu-id="4d569-101">reportRoot: getYammerActivityUserCounts</span></span>
 
-<span data-ttu-id="3761d-102">Отслеживайте динамику по количеству уникальных пользователей, которые опубликовали, прочитали и оценили сообщения Yammer.</span><span class="sxs-lookup"><span data-stu-id="3761d-102">Get the trends on the number of unique users who posted, read, and liked Yammer messages.</span></span>
+<span data-ttu-id="4d569-102">Отслеживайте динамику по количеству уникальных пользователей, которые опубликовали, прочитали и оценили сообщения Yammer.</span><span class="sxs-lookup"><span data-stu-id="4d569-102">Get the trends on the number of unique users who posted, read, and liked Yammer messages.</span></span>
 
-> <span data-ttu-id="3761d-103">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).</span><span class="sxs-lookup"><span data-stu-id="3761d-103">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).</span></span>
+> <span data-ttu-id="4d569-103">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).</span><span class="sxs-lookup"><span data-stu-id="4d569-103">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3761d-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3761d-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4d569-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4d569-104">Permissions</span></span>
 
-<span data-ttu-id="3761d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="3761d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="4d569-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="4d569-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-| <span data-ttu-id="3761d-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3761d-107">Permission type</span></span>                        | <span data-ttu-id="3761d-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3761d-108">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4d569-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4d569-107">Permission type</span></span>                        | <span data-ttu-id="4d569-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4d569-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="3761d-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3761d-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="3761d-110">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="3761d-110">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="3761d-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3761d-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3761d-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3761d-112">Not supported.</span></span>                           |
-| <span data-ttu-id="3761d-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3761d-113">Application</span></span>                            | <span data-ttu-id="3761d-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="3761d-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="4d569-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4d569-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="4d569-110">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4d569-110">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="4d569-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4d569-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d569-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4d569-112">Not supported.</span></span>                           |
+| <span data-ttu-id="4d569-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4d569-113">Application</span></span>                            | <span data-ttu-id="4d569-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4d569-114">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="3761d-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3761d-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4d569-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4d569-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -22,44 +22,45 @@
 GET /reports/getYammerActivityUserCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a><span data-ttu-id="3761d-116">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="3761d-116">Request parameters</span></span>
+## <a name="request-parameters"></a><span data-ttu-id="4d569-116">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="4d569-116">Request parameters</span></span>
 
-<span data-ttu-id="3761d-117">В URL-адресе запроса укажите следующий параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="3761d-117">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="4d569-117">В URL-адресе запроса укажите следующий параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="4d569-117">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="3761d-118">Параметр</span><span class="sxs-lookup"><span data-stu-id="3761d-118">Parameter</span></span> | <span data-ttu-id="3761d-119">Тип</span><span class="sxs-lookup"><span data-stu-id="3761d-119">Type</span></span>   | <span data-ttu-id="3761d-120">Описание</span><span class="sxs-lookup"><span data-stu-id="3761d-120">Description</span></span>                              |
+| <span data-ttu-id="4d569-118">Параметр</span><span class="sxs-lookup"><span data-stu-id="4d569-118">Parameter</span></span> | <span data-ttu-id="4d569-119">Тип</span><span class="sxs-lookup"><span data-stu-id="4d569-119">Type</span></span>   | <span data-ttu-id="4d569-120">Описание</span><span class="sxs-lookup"><span data-stu-id="4d569-120">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="3761d-121">period</span><span class="sxs-lookup"><span data-stu-id="3761d-121">period</span></span>    | <span data-ttu-id="3761d-122">string</span><span class="sxs-lookup"><span data-stu-id="3761d-122">string</span></span> | <span data-ttu-id="3761d-123">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="3761d-123">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="3761d-124">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="3761d-124">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="3761d-125">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="3761d-125">These values follow the format D   where    represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="3761d-126">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3761d-126">Required.</span></span> |
+| <span data-ttu-id="4d569-121">period</span><span class="sxs-lookup"><span data-stu-id="4d569-121">period</span></span>    | <span data-ttu-id="4d569-122">строка</span><span class="sxs-lookup"><span data-stu-id="4d569-122">string</span></span> | <span data-ttu-id="4d569-123">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="4d569-123">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="4d569-124">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="4d569-124">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="4d569-125">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="4d569-125">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="4d569-126">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4d569-126">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="3761d-127">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3761d-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4d569-127">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4d569-127">Request headers</span></span>
 
-| <span data-ttu-id="3761d-128">Имя</span><span class="sxs-lookup"><span data-stu-id="3761d-128">Name</span></span>          | <span data-ttu-id="3761d-129">Описание</span><span class="sxs-lookup"><span data-stu-id="3761d-129">Description</span></span>                              |
+| <span data-ttu-id="4d569-128">Имя</span><span class="sxs-lookup"><span data-stu-id="4d569-128">Name</span></span>          | <span data-ttu-id="4d569-129">Описание</span><span class="sxs-lookup"><span data-stu-id="4d569-129">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="3761d-130">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3761d-130">Authorization</span></span> | <span data-ttu-id="3761d-p103">Bearer {token}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3761d-p103">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="3761d-133">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="3761d-133">If-None-Match</span></span> | <span data-ttu-id="3761d-134">Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="3761d-134">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="3761d-135">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="3761d-135">Optional.</span></span> |
+| <span data-ttu-id="4d569-130">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4d569-130">Authorization</span></span> | <span data-ttu-id="4d569-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4d569-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="4d569-133">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="4d569-133">If-None-Match</span></span> | <span data-ttu-id="4d569-134">Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="4d569-134">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="4d569-135">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="4d569-135">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="3761d-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="3761d-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4d569-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="4d569-136">Response</span></span>
 
-<span data-ttu-id="3761d-137">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="3761d-137">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="3761d-138">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="3761d-138">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="4d569-137">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="4d569-137">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="4d569-138">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="4d569-138">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="3761d-139">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="3761d-139">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="4d569-139">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="4d569-139">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="3761d-140">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="3761d-140">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="4d569-140">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="4d569-140">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="3761d-141">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="3761d-141">Report Refresh Date</span></span>
-- <span data-ttu-id="3761d-142">"Liked" (Понравилось);</span><span class="sxs-lookup"><span data-stu-id="3761d-142">Liked</span></span>
-- <span data-ttu-id="3761d-143">"Posted" (Опубликовано);</span><span class="sxs-lookup"><span data-stu-id="3761d-143">Posted</span></span>
-- <span data-ttu-id="3761d-144">"Read" (Чтение);</span><span class="sxs-lookup"><span data-stu-id="3761d-144">Read</span></span>
-- <span data-ttu-id="3761d-145">"Report Date" (Дата отчета);</span><span class="sxs-lookup"><span data-stu-id="3761d-145">Report Date</span></span>
-- <span data-ttu-id="3761d-146">"Report Period" (Отчетный период).</span><span class="sxs-lookup"><span data-stu-id="3761d-146">Report Period</span></span>
+- <span data-ttu-id="4d569-141">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="4d569-141">Report Refresh Date</span></span>
+- <span data-ttu-id="4d569-142">"Liked" (Понравилось);</span><span class="sxs-lookup"><span data-stu-id="4d569-142">Liked</span></span>
+- <span data-ttu-id="4d569-143">"Posted" (Опубликовано);</span><span class="sxs-lookup"><span data-stu-id="4d569-143">Posted</span></span>
+- <span data-ttu-id="4d569-144">"Read" (Чтение);</span><span class="sxs-lookup"><span data-stu-id="4d569-144">Read</span></span>
+- <span data-ttu-id="4d569-145">"Report Date" (Дата отчета);</span><span class="sxs-lookup"><span data-stu-id="4d569-145">Report Date</span></span>
+- <span data-ttu-id="4d569-146">"Report Period" (Отчетный период).</span><span class="sxs-lookup"><span data-stu-id="4d569-146">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="3761d-147">Пример</span><span class="sxs-lookup"><span data-stu-id="3761d-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4d569-147">Пример</span><span class="sxs-lookup"><span data-stu-id="4d569-147">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3761d-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="3761d-148">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4d569-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="4d569-148">Request</span></span>
 
-<span data-ttu-id="3761d-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3761d-149">The following is an example of the request.</span></span>
+<span data-ttu-id="4d569-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4d569-149">The following is an example of the request.</span></span>
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammeractivityusercounts"
 }-->
 
@@ -67,11 +68,15 @@ GET /reports/getYammerActivityUserCounts(period='{period_value}')
 GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="3761d-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="3761d-150">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4d569-150">Ответ</span><span class="sxs-lookup"><span data-stu-id="4d569-150">Response</span></span>
 
-<span data-ttu-id="3761d-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3761d-151">The following is an example of the response.</span></span>
+<span data-ttu-id="4d569-151">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4d569-151">The following is an example of the response.</span></span>
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -79,13 +84,9 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="3761d-152">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="3761d-152">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="4d569-152">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="4d569-152">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

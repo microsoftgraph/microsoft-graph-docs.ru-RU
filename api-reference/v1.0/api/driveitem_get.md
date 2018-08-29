@@ -2,28 +2,29 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Получение файла или папки"
-ms.openlocfilehash: 94f6981d817de638878f4876104f049ebfa383c7
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Получение файла или папки
+ms.openlocfilehash: 9d45cf345981eb3da638d2f25bb51428ec40b7f9
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267985"
 ---
-# <a name="get-a-driveitem-resource"></a><span data-ttu-id="cd11f-102">Получение ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="cd11f-102">Get a DriveItem resource</span></span>
+# <a name="get-a-driveitem-resource"></a><span data-ttu-id="56c12-102">Получение ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="56c12-102">Get a DriveItem resource</span></span>
 
-<span data-ttu-id="cd11f-103">Получение метаданных для [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) по пути в файловой системе или идентификатору.</span><span class="sxs-lookup"><span data-stu-id="cd11f-103">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
+<span data-ttu-id="56c12-103">Получение метаданных для [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) по пути в файловой системе или идентификатору.</span><span class="sxs-lookup"><span data-stu-id="56c12-103">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cd11f-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cd11f-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="56c12-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="56c12-104">Permissions</span></span>
 
-<span data-ttu-id="cd11f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="cd11f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="56c12-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="56c12-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="cd11f-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cd11f-107">Permission type</span></span>      | <span data-ttu-id="cd11f-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cd11f-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="56c12-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="56c12-107">Permission type</span></span>      | <span data-ttu-id="56c12-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="56c12-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cd11f-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cd11f-109">Delegated (work or school account)</span></span> | <span data-ttu-id="cd11f-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd11f-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="cd11f-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cd11f-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd11f-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd11f-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="cd11f-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cd11f-113">Application</span></span> | <span data-ttu-id="cd11f-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd11f-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="56c12-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="56c12-109">Delegated (work or school account)</span></span> | <span data-ttu-id="56c12-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="56c12-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="56c12-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="56c12-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="56c12-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="56c12-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="56c12-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="56c12-113">Application</span></span> | <span data-ttu-id="56c12-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="56c12-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cd11f-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cd11f-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="56c12-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="56c12-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,37 +41,37 @@ GET /users/{userId}/drive/items/{itemId}
 GET /users/{userId}/drive/root:/{item-path}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="cd11f-116">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cd11f-116">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="56c12-116">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="56c12-116">Optional query parameters</span></span>
 
-<span data-ttu-id="cd11f-117">Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand` и `$select` для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="cd11f-117">This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.</span></span>
+<span data-ttu-id="56c12-117">Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand` и `$select` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="56c12-117">This method supports the `$expand` and `$select` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.</span></span>
 
-<span data-ttu-id="cd11f-118">С помощью [`$expand`параметра строки запроса](../../../concepts/query_parameters.md) вы можете включить дочерние элементы запрос на получение метаданных элемента при наличии **дочерней** связи.</span><span class="sxs-lookup"><span data-stu-id="cd11f-118">You can use the [`$expand` query string parameter](../../../concepts/query_parameters.md) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
+<span data-ttu-id="56c12-118">С помощью [`$expand`параметра строки запроса](../../../concepts/query_parameters.md) вы можете включить дочерние элементы запрос на получение метаданных элемента при наличии **дочерней** связи.</span><span class="sxs-lookup"><span data-stu-id="56c12-118">You can use the [`$expand` query string parameter](../../../concepts/query_parameters.md) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="cd11f-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cd11f-119">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="56c12-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="56c12-119">Optional request headers</span></span>
 
-| <span data-ttu-id="cd11f-120">Имя</span><span class="sxs-lookup"><span data-stu-id="cd11f-120">Name</span></span>          | <span data-ttu-id="cd11f-121">Значение</span><span class="sxs-lookup"><span data-stu-id="cd11f-121">Value</span></span>  | <span data-ttu-id="cd11f-122">Описание</span><span class="sxs-lookup"><span data-stu-id="cd11f-122">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="56c12-120">Имя</span><span class="sxs-lookup"><span data-stu-id="56c12-120">Name</span></span>          | <span data-ttu-id="56c12-121">Значение</span><span class="sxs-lookup"><span data-stu-id="56c12-121">Value</span></span>  | <span data-ttu-id="56c12-122">Описание</span><span class="sxs-lookup"><span data-stu-id="56c12-122">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="cd11f-123">if-none-match</span><span class="sxs-lookup"><span data-stu-id="cd11f-123">if-none-match</span></span> | <span data-ttu-id="cd11f-124">String</span><span class="sxs-lookup"><span data-stu-id="cd11f-124">String</span></span> | <span data-ttu-id="cd11f-125">Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="cd11f-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="56c12-123">if-none-match</span><span class="sxs-lookup"><span data-stu-id="56c12-123">if-none-match</span></span> | <span data-ttu-id="56c12-124">String</span><span class="sxs-lookup"><span data-stu-id="56c12-124">String</span></span> | <span data-ttu-id="56c12-125">Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="56c12-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="cd11f-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="cd11f-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="56c12-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="56c12-126">Response</span></span>
 
-<span data-ttu-id="cd11f-127">В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cd11f-127">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="56c12-127">В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="56c12-127">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cd11f-128">Пример</span><span class="sxs-lookup"><span data-stu-id="cd11f-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="56c12-128">Пример</span><span class="sxs-lookup"><span data-stu-id="56c12-128">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="cd11f-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd11f-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="56c12-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="56c12-129">Request</span></span>
 
-<span data-ttu-id="cd11f-130">Ниже приведен пример запроса к корневой папке OneDrive пользователя.</span><span class="sxs-lookup"><span data-stu-id="cd11f-130">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
+<span data-ttu-id="56c12-130">Ниже приведен пример запроса к корневой папке OneDrive пользователя.</span><span class="sxs-lookup"><span data-stu-id="56c12-130">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
 
-<!-- { "blockType": "request", "name": "get-item-metadata" }-->
+<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root
 ```
 
-## <a name="response"></a><span data-ttu-id="cd11f-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd11f-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="56c12-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="56c12-131">Response</span></span>
 
-<span data-ttu-id="cd11f-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cd11f-132">Here is an example of the response.</span></span>
+<span data-ttu-id="56c12-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="56c12-132">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -104,9 +105,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="cd11f-133">Примечания</span><span class="sxs-lookup"><span data-stu-id="cd11f-133">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="56c12-133">Замечания</span><span class="sxs-lookup"><span data-stu-id="56c12-133">Remarks</span></span>
 
-<span data-ttu-id="cd11f-134">Дополнительные сведения о возвращении ошибок см. в статье об [ответах с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="cd11f-134">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="56c12-134">Дополнительные сведения о возвращении ошибок см. в статье об [откликах с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="56c12-134">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: ../../../concepts/errors.md
 [odata-parameters]: ../../../concepts/query_parameters.md

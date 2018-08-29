@@ -2,38 +2,39 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Создание списка дочерних сайтов для сайта SharePoint"
-ms.openlocfilehash: a2acf82fca78249e6ea8d05a4a95f88ed741c913
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Создание списка дочерних сайтов для сайта SharePoint
+ms.openlocfilehash: 873b3666352e7e90dc7ffeccdfe984b384f857f2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265423"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="67d64-102">Перечисление дочерних сайтов</span><span class="sxs-lookup"><span data-stu-id="67d64-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="e723f-102">Перечисление дочерних сайтов</span><span class="sxs-lookup"><span data-stu-id="e723f-102">Enumerate subsites</span></span>
 
-<span data-ttu-id="67d64-103">Вы можете получить коллекцию дочерних сайтов, определенных для [сайта][].</span><span class="sxs-lookup"><span data-stu-id="67d64-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="e723f-103">Вы можете получить коллекцию дочерних сайтов, определенных для [сайта][].</span><span class="sxs-lookup"><span data-stu-id="e723f-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="67d64-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="67d64-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e723f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e723f-105">Permissions</span></span>
 
-<span data-ttu-id="67d64-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="67d64-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="e723f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="e723f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="67d64-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="67d64-108">Permission type</span></span>      | <span data-ttu-id="67d64-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="67d64-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e723f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e723f-108">Permission type</span></span>      | <span data-ttu-id="e723f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e723f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="67d64-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="67d64-110">Delegated (work or school account)</span></span> | <span data-ttu-id="67d64-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67d64-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="67d64-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="67d64-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="67d64-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="67d64-113">Not supported.</span></span>    |
-|<span data-ttu-id="67d64-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="67d64-114">Application</span></span> | <span data-ttu-id="67d64-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67d64-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="e723f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e723f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e723f-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e723f-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e723f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e723f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e723f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e723f-113">Not supported.</span></span>    |
+|<span data-ttu-id="e723f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e723f-114">Application</span></span> | <span data-ttu-id="e723f-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e723f-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="67d64-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="67d64-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e723f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e723f-116">HTTP request</span></span>
 
-<!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
+<!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="67d64-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="67d64-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e723f-117">Ответ</span><span class="sxs-lookup"><span data-stu-id="e723f-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

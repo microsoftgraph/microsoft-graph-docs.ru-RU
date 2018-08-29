@@ -1,26 +1,24 @@
-# <a name="iosminimumoperatingsystem-resource-type"></a><span data-ttu-id="6095f-101">Тип ресурса iosMinimumOperatingSystem</span><span class="sxs-lookup"><span data-stu-id="6095f-101">iosMinimumOperatingSystem resource type</span></span>
+# <a name="iosminimumoperatingsystem-resource-type"></a><span data-ttu-id="4ad92-101">Тип ресурса iosMinimumOperatingSystem</span><span class="sxs-lookup"><span data-stu-id="4ad92-101">iosMinimumOperatingSystem resource type</span></span>
 
-> <span data-ttu-id="6095f-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="6095f-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="4ad92-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="4ad92-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6095f-103">Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения iOS.</span><span class="sxs-lookup"><span data-stu-id="6095f-103">Contains properties of the minimum operating system required for an iOS mobile app.</span></span>
-## <a name="properties"></a><span data-ttu-id="6095f-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="6095f-104">Properties</span></span>
-|<span data-ttu-id="6095f-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="6095f-105">Property</span></span>|<span data-ttu-id="6095f-106">Тип</span><span class="sxs-lookup"><span data-stu-id="6095f-106">Type</span></span>|<span data-ttu-id="6095f-107">Описание</span><span class="sxs-lookup"><span data-stu-id="6095f-107">Description</span></span>|
+<span data-ttu-id="4ad92-103">Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения iOS.</span><span class="sxs-lookup"><span data-stu-id="4ad92-103">Contains properties of the minimum operating system required for an iOS mobile app.</span></span>
+## <a name="properties"></a><span data-ttu-id="4ad92-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="4ad92-104">Properties</span></span>
+|<span data-ttu-id="4ad92-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="4ad92-105">Property</span></span>|<span data-ttu-id="4ad92-106">Тип</span><span class="sxs-lookup"><span data-stu-id="4ad92-106">Type</span></span>|<span data-ttu-id="4ad92-107">Описание</span><span class="sxs-lookup"><span data-stu-id="4ad92-107">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6095f-108">v8_0</span><span class="sxs-lookup"><span data-stu-id="6095f-108">v8_0</span></span>|<span data-ttu-id="6095f-109">Boolean</span><span class="sxs-lookup"><span data-stu-id="6095f-109">Boolean</span></span>|<span data-ttu-id="6095f-110">Версия 8.0 или выше.</span><span class="sxs-lookup"><span data-stu-id="6095f-110">Version 8.0 or later.</span></span>|
-|<span data-ttu-id="6095f-111">v9_0</span><span class="sxs-lookup"><span data-stu-id="6095f-111">v9_0</span></span>|<span data-ttu-id="6095f-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="6095f-112">Boolean</span></span>|<span data-ttu-id="6095f-113">Версия 9.0 или выше.</span><span class="sxs-lookup"><span data-stu-id="6095f-113">Version 9.0 or later.</span></span>|
-|<span data-ttu-id="6095f-114">v10_0</span><span class="sxs-lookup"><span data-stu-id="6095f-114">v10_0</span></span>|<span data-ttu-id="6095f-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="6095f-115">Boolean</span></span>|<span data-ttu-id="6095f-116">Версия 10.0 или выше.</span><span class="sxs-lookup"><span data-stu-id="6095f-116">Version 10.0 or later.</span></span>|
-|<span data-ttu-id="6095f-117">v11_0</span><span class="sxs-lookup"><span data-stu-id="6095f-117">v11_0</span></span>|<span data-ttu-id="6095f-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="6095f-118">Boolean</span></span>|<span data-ttu-id="6095f-119">Версия 11.0 или выше.</span><span class="sxs-lookup"><span data-stu-id="6095f-119">Version 11.0 or later.</span></span>|
+|<span data-ttu-id="4ad92-108">v8_0</span><span class="sxs-lookup"><span data-stu-id="4ad92-108">v8_0</span></span>|<span data-ttu-id="4ad92-109">Boolean</span><span class="sxs-lookup"><span data-stu-id="4ad92-109">Boolean</span></span>|<span data-ttu-id="4ad92-110">Версия 8.0 или выше.</span><span class="sxs-lookup"><span data-stu-id="4ad92-110">Version 8.0 or later.</span></span>|
+|<span data-ttu-id="4ad92-111">v9_0</span><span class="sxs-lookup"><span data-stu-id="4ad92-111">v9_0</span></span>|<span data-ttu-id="4ad92-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="4ad92-112">Boolean</span></span>|<span data-ttu-id="4ad92-113">Версия 9.0 или выше.</span><span class="sxs-lookup"><span data-stu-id="4ad92-113">Version 9.0 or later.</span></span>|
+|<span data-ttu-id="4ad92-114">v10_0</span><span class="sxs-lookup"><span data-stu-id="4ad92-114">v10_0</span></span>|<span data-ttu-id="4ad92-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="4ad92-115">Boolean</span></span>|<span data-ttu-id="4ad92-116">Версия 10.0 или выше.</span><span class="sxs-lookup"><span data-stu-id="4ad92-116">Version 10.0 or later.</span></span>|
+|<span data-ttu-id="4ad92-117">v11_0</span><span class="sxs-lookup"><span data-stu-id="4ad92-117">v11_0</span></span>|<span data-ttu-id="4ad92-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="4ad92-118">Boolean</span></span>|<span data-ttu-id="4ad92-119">Версия 11.0 или выше.</span><span class="sxs-lookup"><span data-stu-id="4ad92-119">Version 11.0 or later.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="6095f-120">Связи</span><span class="sxs-lookup"><span data-stu-id="6095f-120">Relationships</span></span>
-<span data-ttu-id="6095f-121">Нет</span><span class="sxs-lookup"><span data-stu-id="6095f-121">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="6095f-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6095f-122">JSON Representation</span></span>
-<span data-ttu-id="6095f-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6095f-123">Here is a JSON representation of the resource.</span></span>
-<!-- {
+## <a name="relationships"></a><span data-ttu-id="4ad92-120">Связи</span><span class="sxs-lookup"><span data-stu-id="4ad92-120">Relationships</span></span>
+<span data-ttu-id="4ad92-121">Нет</span><span class="sxs-lookup"><span data-stu-id="4ad92-121">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4ad92-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4ad92-122">JSON Representation</span></span>
+<span data-ttu-id="4ad92-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4ad92-123">Here is a JSON representation of the resource.</span></span>
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosMinimumOperatingSystem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosMinimumOperatingSystem",
