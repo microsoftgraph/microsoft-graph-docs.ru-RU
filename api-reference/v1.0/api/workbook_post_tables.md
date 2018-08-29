@@ -1,46 +1,46 @@
-# <a name="create-table"></a><span data-ttu-id="aa436-101">Создание объекта Table</span><span class="sxs-lookup"><span data-stu-id="aa436-101">Create Table</span></span>
+# <a name="create-table"></a><span data-ttu-id="d468d-101">Создание объекта Table</span><span class="sxs-lookup"><span data-stu-id="d468d-101">Create Table</span></span>
 
-<span data-ttu-id="aa436-102">С помощью этого API можно создать объект Table.</span><span class="sxs-lookup"><span data-stu-id="aa436-102">Use this API to create a new Table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="aa436-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="aa436-103">Permissions</span></span>
-<span data-ttu-id="aa436-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="aa436-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="d468d-102">С помощью этого API можно создать объект Table.</span><span class="sxs-lookup"><span data-stu-id="d468d-102">Use this API to create a new Table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d468d-103">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d468d-103">Permissions</span></span>
+<span data-ttu-id="d468d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d468d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="aa436-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="aa436-106">Permission type</span></span>      | <span data-ttu-id="aa436-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="aa436-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d468d-106">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d468d-106">Permission type</span></span>      | <span data-ttu-id="d468d-107">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d468d-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="aa436-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="aa436-108">Delegated (work or school account)</span></span> | <span data-ttu-id="aa436-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa436-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="aa436-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="aa436-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aa436-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aa436-111">Not supported.</span></span>    |
-|<span data-ttu-id="aa436-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="aa436-112">Application</span></span> | <span data-ttu-id="aa436-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aa436-113">Not supported.</span></span> |
+|<span data-ttu-id="d468d-108">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d468d-108">Delegated (work or school account)</span></span> | <span data-ttu-id="d468d-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d468d-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="d468d-110">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d468d-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d468d-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d468d-111">Not supported.</span></span>    |
+|<span data-ttu-id="d468d-112">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d468d-112">Application</span></span> | <span data-ttu-id="d468d-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d468d-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="aa436-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="aa436-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d468d-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d468d-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/$/add
+POST /workbook/tables/{table-id}/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="aa436-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="aa436-115">Request headers</span></span>
-| <span data-ttu-id="aa436-116">Имя</span><span class="sxs-lookup"><span data-stu-id="aa436-116">Name</span></span>       | <span data-ttu-id="aa436-117">Описание</span><span class="sxs-lookup"><span data-stu-id="aa436-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d468d-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d468d-115">Request headers</span></span>
+| <span data-ttu-id="d468d-116">Имя</span><span class="sxs-lookup"><span data-stu-id="d468d-116">Name</span></span>       | <span data-ttu-id="d468d-117">Описание</span><span class="sxs-lookup"><span data-stu-id="d468d-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="aa436-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="aa436-118">Authorization</span></span>  | <span data-ttu-id="aa436-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="aa436-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="aa436-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="aa436-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="aa436-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="aa436-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="d468d-118">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d468d-118">Authorization</span></span>  | <span data-ttu-id="d468d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d468d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d468d-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="d468d-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="d468d-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="d468d-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-### <a name="request-parameters"></a><span data-ttu-id="aa436-124">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="aa436-124">Request parameters</span></span>
-| <span data-ttu-id="aa436-125">Имя</span><span class="sxs-lookup"><span data-stu-id="aa436-125">Name</span></span>           | <span data-ttu-id="aa436-126">Тип</span><span class="sxs-lookup"><span data-stu-id="aa436-126">Type</span></span>      |<span data-ttu-id="aa436-127">Описание</span><span class="sxs-lookup"><span data-stu-id="aa436-127">Description</span></span>|
+### <a name="request-parameters"></a><span data-ttu-id="d468d-124">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="d468d-124">Request parameters</span></span>
+| <span data-ttu-id="d468d-125">Имя</span><span class="sxs-lookup"><span data-stu-id="d468d-125">Name</span></span>           | <span data-ttu-id="d468d-126">Тип</span><span class="sxs-lookup"><span data-stu-id="d468d-126">Type</span></span>      |<span data-ttu-id="d468d-127">Описание</span><span class="sxs-lookup"><span data-stu-id="d468d-127">Description</span></span>|
 |:---------------|:----------|:----------|
-| <span data-ttu-id="aa436-128">Адрес</span><span class="sxs-lookup"><span data-stu-id="aa436-128">Address</span></span>  | <span data-ttu-id="aa436-129">string</span><span class="sxs-lookup"><span data-stu-id="aa436-129">string</span></span>| <span data-ttu-id="aa436-p104">Адрес диапазона. При вызове этого API из пути `worksheets/{id or name}/tables/add` не нужно указывать префикс имя листа в адресе. Однако при вызове этого API из пути `workbook/tables/add` нужно указать имя листа, на котором требуется создать таблицу (например: `sheet1!A1:D4`)</span><span class="sxs-lookup"><span data-stu-id="aa436-p104">Range address. If you are calling this API off of `worksheets/{id or name}/tables/add` path, there is no need to for sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)</span></span>|
-| <span data-ttu-id="aa436-133">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="aa436-133">hasHeaders</span></span>  | <span data-ttu-id="aa436-134">boolean</span><span class="sxs-lookup"><span data-stu-id="aa436-134">boolean</span></span>|<span data-ttu-id="aa436-p105">Логическое значение, указывающее, имеет ли диапазон метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.</span><span class="sxs-lookup"><span data-stu-id="aa436-p105">Boolean value that indicates whether the range has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
+| <span data-ttu-id="d468d-128">Адрес</span><span class="sxs-lookup"><span data-stu-id="d468d-128">Address</span></span>  | <span data-ttu-id="d468d-129">string (строковый)</span><span class="sxs-lookup"><span data-stu-id="d468d-129">string</span></span>| <span data-ttu-id="d468d-p104">Адрес диапазона. При вызове этого API из пути `worksheets/{id or name}/tables/add` не нужно указывать префикс имя листа в адресе. Однако при вызове этого API из пути `workbook/tables/add` нужно указать имя листа, на котором требуется создать таблицу (например: `sheet1!A1:D4`)</span><span class="sxs-lookup"><span data-stu-id="d468d-p104">Range address. If you are calling this API off of `worksheets/{id or name}/tables/add` path, there is no need to for sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)</span></span>|
+| <span data-ttu-id="d468d-133">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="d468d-133">hasHeaders</span></span>  | <span data-ttu-id="d468d-134">boolean (логический)</span><span class="sxs-lookup"><span data-stu-id="d468d-134">boolean</span></span>|<span data-ttu-id="d468d-p105">Логическое значение, указывающее, имеет ли диапазон метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.</span><span class="sxs-lookup"><span data-stu-id="d468d-p105">Boolean value that indicates whether the range has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="aa436-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="aa436-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d468d-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="d468d-138">Response</span></span>
 
-<span data-ttu-id="aa436-139">В случае успеха этот метод возвращает код ответа `201 Created` и объект [Table](../resources/table.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="aa436-139">If successful, this method returns `201 Created` response code and [Table](../resources/table.md) object in the response body.</span></span>
+<span data-ttu-id="d468d-139">В случае успеха этот метод возвратит код отклика `201 Created` и объект [WorkbookTable](../resources/table.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="d468d-139">If successful, this method returns `201 Created` response code and [groupSetting](../resources/table.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aa436-140">Пример</span><span class="sxs-lookup"><span data-stu-id="aa436-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="aa436-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="aa436-141">Request</span></span>
-<span data-ttu-id="aa436-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="aa436-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d468d-140">Пример</span><span class="sxs-lookup"><span data-stu-id="d468d-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d468d-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="d468d-141">Request</span></span>
+<span data-ttu-id="d468d-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d468d-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_table_from_workbook"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/$/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{table-id}/add
 Content-type: application/json
 Content-length: 109
 
@@ -49,12 +49,12 @@ Content-length: 109
   "hasHeaders": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="aa436-143">Ответ</span><span class="sxs-lookup"><span data-stu-id="aa436-143">Response</span></span>
-<span data-ttu-id="aa436-p106">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="aa436-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d468d-143">Ответ</span><span class="sxs-lookup"><span data-stu-id="d468d-143">Response</span></span>
+<span data-ttu-id="d468d-p106">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d468d-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 201 Created
