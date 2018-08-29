@@ -279,7 +279,7 @@ content-length: 96
     ],
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
@@ -294,4 +294,4 @@ content-length: 96
 ## <a name="use-microsoft-graph-client-libraries"></a>Использование клиентских библиотек Microsoft Graph
 Вам нравятся возможности и удобство пакетов SDK? Вы всегда можете вызывать Microsoft Graph с помощью REST API, но мы также предоставляем пакеты SDK для многих популярных платформ.
 
-[Обзор пакетов SDK](https://graph.microsoft.io/ru-RU/code-samples-and-sdks)
+[Обзор пакетов SDK](https://graph.microsoft.io/en-us/code-samples-and-sdks)

@@ -46,7 +46,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 Поиск 2-часового интервала 18–20 апреля, в течение которого оба пользователя будут свободны.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "findmeetingtimes_example_first"
 }-->
 ```http
@@ -65,11 +65,11 @@ Content-type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -90,15 +90,15 @@ Content-type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100
 }
 ```
 
 ### <a name="first-response"></a>Первый ответ
 В рабочее время 18–20 апреля 2-часовый интервал, в течение которого оба пользователя будут свободны, отсутствует.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
@@ -121,7 +121,7 @@ Content-Length: 184
 ### <a name="second-request"></a>Второй запрос
 Поиск 2-часового интервала 21 апреля.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "findmeetingtimes_example_second"
 }-->
 ```http
@@ -140,11 +140,11 @@ Content-type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -165,15 +165,15 @@ Content-type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100
 }
 ```
 
 ### <a name="second-response"></a>Второй ответ
 Второй запрос **findMeetingTimes** предлагает пользователям провести собрание 21 апреля с 14:00 до 16:00.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false

@@ -1,10 +1,10 @@
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Вызов Microsoft Graph из приложения CSP
 
-> **Примечание.** Эта статья предназначена **только** для разработчиков приложений CSP. Программа [Поставщик облачных решений (Майкрософт) (CSP)](https://partner.microsoft.com/ru-RU/cloud-solution-provider) позволяет партнерам Майкрософт перепродавать веб-службы Майкрософт клиентам и управлять ими.
+> **Примечание.** Эта статья предназначена **только** для разработчиков приложений CSP. Программа [Поставщик облачных решений (Майкрософт) (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) позволяет партнерам Майкрософт перепродавать веб-службы Майкрософт клиентам и управлять ими.
 
-В этом разделе описано, как предоставить приложению доступ к данным клиентов, управляемым партнером, через Microsoft Graph, используя [поток предоставления кодов авторизации](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-protocols-oauth-code) или [поток клиентских учетных данных между службами](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
+В этом разделе описано, как предоставить приложению доступ к данным клиентов, управляемым партнером, через Microsoft Graph, используя [поток предоставления кодов авторизации](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) или [поток клиентских учетных данных между службами](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
-**Важно!** Вызов Microsoft Graph из приложения CSP поддерживается только для ресурсов каталога (таких как **user**, **group**, **device**, **organization**) и ресурсов [Intune](..\api-reference\beta\resources\intune_graph_overview.md).
+**Важно!** Вызов Microsoft Graph из приложения CSP поддерживается только для ресурсов каталога (таких как **user**, **group**, **device**, **organization**) и ресурсов [Intune](../api-reference/beta/resources/intune_graph_overview.md).
 
 ## <a name="what-is-a-partner-managed-application"></a>Что такое приложение, управляемое партнером
 
@@ -22,7 +22,7 @@
 
 Сначала вам нужно выполнить действия по регистрации и настройке мультитенантного приложения:
 
-1. [Зарегистрируйте приложение](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-app-registration) в домене Партнера на [портале Azure](https://portal.azure.com). Настройте приложение как [мультитенантное](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant), чтобы партнер мог им управлять. Если приложение развернуто и продается в нескольких географических регионах, его нужно зарегистрировать в каждом из них, как описано <a href="#region">здесь</a>.
+1. [Зарегистрируйте приложение](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration) в домене Партнера на [портале Azure](https://portal.azure.com). Настройте приложение как [мультитенантное](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant), чтобы партнер мог им управлять. Если приложение развернуто и продается в нескольких географических регионах, его нужно зарегистрировать в каждом из них, как описано <a href="#region">здесь</a>.
 2. На портале Azure предоставьте мультитенантному приложению *необходимые разрешения*, используя принцип минимальных привилегий.
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>Предоставление приложению доступа к данным всех клиентов
@@ -55,7 +55,7 @@
 
 ## <a name="token-acquisition-flows"></a>Потоки получения маркеров
 
-Потоки получения маркеров для приложений, управляемых партнерами, — [поток предоставления кодов авторизации](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-protocols-oauth-code) и [поток учетных данных клиентов между службами](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service) — такие же, как и для обычных мультитенантных приложений.
+Потоки получения маркеров для приложений, управляемых партнерами, — [поток предоставления кодов авторизации](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) и [поток учетных данных клиентов между службами](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service) — такие же, как и для обычных мультитенантных приложений.
 
 Помимо предварительного доступа ко всем доменам клиента, приложения, управляемые партнерами, имеют одну дополнительную возможность. С помощью таких приложений агенты могут получать доступ к данным доменов клиентов (используя делегированные права администратора). Принцип работы изложен ниже.
 
@@ -63,15 +63,15 @@
 2. Приложение запрашивает маркер доступа для нужного домена клиента, управляемого партнером.
 3. Приложение использует маркер доступа для вызова Microsoft Graph.
 
-Это стандартный [поток предоставления кодов авторизации](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-protocols-oauth-code), но агенты должны входить в свои учетные записи партнеров. Рассмотрим, как это выглядит на практике. Допустим, домен партнера — *partner.com* (домашний домен агентов), а домен клиента — *customer.com*:
+Это стандартный [поток предоставления кодов авторизации](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code), но агенты должны входить в свои учетные записи партнеров. Рассмотрим, как это выглядит на практике. Допустим, домен партнера — *partner.com* (домашний домен агентов), а домен клиента — *customer.com*:
 
-1. [Получите код авторизации.](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Приложение отправляет запрос в конечную точку ```/authorize``` и должно использовать **домен клиента** (в нашем примере — ```customer.com```) в качестве целевого. Ваши агенты по-прежнему смогут входить в учетную запись ```username@partner.com```.
+1. [Получите код авторизации.](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Приложение отправляет запрос в конечную точку ```/authorize``` и должно использовать **домен клиента** (в нашем примере — ```customer.com```) в качестве целевого. Ваши агенты по-прежнему смогут входить в учетную запись ```username@partner.com```.
 
     ```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. [Получите маркер доступа, используя код авторизации.](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Отправляя запрос в конечную точку ```token```, приложение должно использовать **домен клиента** в качестве целевого домена, в нашем примере это ```customer.com```:
+2. [Получите маркер доступа, используя код авторизации.](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Отправляя запрос в конечную точку ```token```, приложение должно использовать **домен клиента** в качестве целевого домена, в нашем примере это ```customer.com```:
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token
@@ -91,7 +91,7 @@
 
 ## <a name="calling-microsoft-graph-immediately-after-customer-creation"></a>Вызов Microsoft Graph сразу же после создания клиента
 
-При создании нового клиента с помощью [API Центра партнеров](https://partnercenter.microsoft.com/ru-RU/partner/developer) создается новый домен. Кроме того, создается отношение партнеров — вы становитесь партнером для этого нового домена клиента. Передача этого отношения в новый домен клиента может занять до 3 минут. Если приложение вызовет Microsoft Graph сразу после создания, ему, скорее всего, будет отказано в доступе. Аналогичная задержка может возникать после принятии вашего приглашения существующим клиентом. Это связано с тем, что предварительное предоставление доступа зависит от наличия отношения партнеров в домене клиента.
+При создании нового клиента с помощью [API Центра партнеров](https://partnercenter.microsoft.com/en-us/partner/developer) создается новый домен. Кроме того, создается отношение партнеров — вы становитесь партнером для этого нового домена клиента. Передача этого отношения в новый домен клиента может занять до 3 минут. Если приложение вызовет Microsoft Graph сразу после создания, ему, скорее всего, будет отказано в доступе. Аналогичная задержка может возникать после принятии вашего приглашения существующим клиентом. Это связано с тем, что предварительное предоставление доступа зависит от наличия отношения партнеров в домене клиента.
 
 Во избежание этой проблемы рекомендуется, чтобы приложение партнера вызывало Azure AD для получения маркера (для вызова Microsoft Graph) через **три минуты** после создания клиента. В большинстве случаев этого будет достаточно. Но если через три минуты снова появится ошибка авторизации, подождите еще 60 секунд и попробуйте еще раз.
 
