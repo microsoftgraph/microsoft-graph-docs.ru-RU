@@ -37,9 +37,9 @@ DELETE /education/classes/{id}
   "name": "delete_educationclass"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/11022
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 
 <!-- {

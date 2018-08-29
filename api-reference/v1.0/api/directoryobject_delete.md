@@ -21,7 +21,7 @@ DELETE /directoryObjects/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -38,9 +38,9 @@ DELETE /directoryObjects/{id}
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
+DELETE https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",

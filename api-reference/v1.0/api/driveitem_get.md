@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Получение файла или папки"
-ms.openlocfilehash: 94f6981d817de638878f4876104f049ebfa383c7
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Получение файла или папки
+ms.openlocfilehash: 9d45cf345981eb3da638d2f25bb51428ec40b7f9
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267985"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
@@ -42,7 +43,7 @@ GET /users/{userId}/drive/root:/{item-path}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand` и `$select` для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand` и `$select` для настройки отклика.
 
 С помощью [`$expand`параметра строки запроса](../../../concepts/query_parameters.md) вы можете включить дочерние элементы запрос на получение метаданных элемента при наличии **дочерней** связи.
 
@@ -62,7 +63,7 @@ GET /users/{userId}/drive/root:/{item-path}
 
 Ниже приведен пример запроса к корневой папке OneDrive пользователя.
 
-<!-- { "blockType": "request", "name": "get-item-metadata" }-->
+<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root
@@ -104,9 +105,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
-Дополнительные сведения о возвращении ошибок см. в статье об [ответах с ошибками][error-response].
+Дополнительные сведения о возвращении ошибок см. в статье об [откликах с ошибками][error-response].
 
 [error-response]: ../../../concepts/errors.md
 [odata-parameters]: ../../../concepts/query_parameters.md

@@ -13,19 +13,17 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosHomeScreenPage"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenPage",
   "displayName": "String",
   "icons": [
     {
-      "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+      "@odata.type": "microsoft.graph.iosHomeScreenItem",
       "displayName": "String",
       "pages": [
         {

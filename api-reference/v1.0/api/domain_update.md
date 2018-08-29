@@ -43,6 +43,7 @@ PATCH /domains/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http

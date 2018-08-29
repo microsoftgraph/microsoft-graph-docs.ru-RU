@@ -37,9 +37,9 @@ DELETE /education/users/{id}
   "name": "delete_educationuser"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/users/13019
+DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

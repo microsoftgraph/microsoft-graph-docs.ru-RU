@@ -17,7 +17,7 @@
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.iosStoreAppAssignmentSettings"
 }
 -->

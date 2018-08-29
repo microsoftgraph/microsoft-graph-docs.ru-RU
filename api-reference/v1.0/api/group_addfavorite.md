@@ -39,12 +39,11 @@ POST /groups/{id}/addFavorite
 POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 ```
 
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+#### <a name="response"></a>Ответ
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 200 OK

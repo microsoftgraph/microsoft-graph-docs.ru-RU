@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Создание списка дочерних сайтов для сайта SharePoint"
-ms.openlocfilehash: a2acf82fca78249e6ea8d05a4a95f88ed741c913
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Создание списка дочерних сайтов для сайта SharePoint
+ms.openlocfilehash: 873b3666352e7e90dc7ffeccdfe984b384f857f2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265423"
 ---
 # <a name="enumerate-subsites"></a>Перечисление дочерних сайтов
 
@@ -27,13 +28,13 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
+<!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 ```
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

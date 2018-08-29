@@ -17,7 +17,7 @@
 GET /education/classes/{id}/schools
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -37,9 +37,9 @@ GET /education/classes/{id}/schools
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/11014/schools
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

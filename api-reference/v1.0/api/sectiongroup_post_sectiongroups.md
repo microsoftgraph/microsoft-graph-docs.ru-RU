@@ -21,8 +21,8 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса укажите имя группы разделов.
@@ -54,7 +54,7 @@ Content-length: 30
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK

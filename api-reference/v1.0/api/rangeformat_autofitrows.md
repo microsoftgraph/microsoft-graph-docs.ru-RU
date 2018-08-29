@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/autofitRows
+POST /workbook/names/{name}/range/format/autofitRows
 POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 
@@ -39,15 +39,14 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
   "name": "rangeformat_autofitrows"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitRows
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/autofitRows
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

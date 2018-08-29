@@ -52,7 +52,7 @@ Content-length: 0
 
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response",
@@ -61,3 +61,11 @@ Content-length: 0
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: close_excel_session//api-reference/v1.0/api/workbook_closesession.md:
+      Request includes a non-standard header: workbook-session-id"
+  ]
+}-->

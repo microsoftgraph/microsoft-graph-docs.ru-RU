@@ -37,7 +37,7 @@ POST /education/schools/{id}/users/$ref
   "name": "create_educationuser_from_educationschool"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/schools/<id>/users/$ref
+POST https://graph.microsoft.com/v1.0/education/schools/{id}/users/$ref
 Content-type: application/json
 Content-length: 56
 
@@ -46,7 +46,7 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 
 <!-- Add the educationClass resource to the response. -->

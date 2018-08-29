@@ -19,23 +19,22 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceGeoLocation"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
   "lastCollectedDateTime": "String (timestamp)",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "altitude": "<Unknown Primitive Type Edm.Double>",
-  "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "heading": "<Unknown Primitive Type Edm.Double>",
-  "speed": "<Unknown Primitive Type Edm.Double>"
+  "altitude": 1024.13,
+  "latitude": 26.13246,
+  "longitude": 24.34616,
+  "horizontalAccuracy": 2.9,
+  "verticalAccuracy": 1.25,
+  "heading": 36.3,
+  "speed": 705.9
+
 }
 ```
 

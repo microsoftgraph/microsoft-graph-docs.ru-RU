@@ -19,7 +19,7 @@ GET /education/me/schools
 GET /education/users/schools
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -38,9 +38,9 @@ GET /education/users/schools
   "name": "get_educationschool"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/schools/10001
+GET https://graph.microsoft.com/v1.0/education/schools/{school-id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -56,9 +56,9 @@ Content-type: application/json
 Content-length: 292
 
 {
-  "schoolPrincipalEmail": "AmyRoebuck@contoso.com",
-  "schoolPrincipalName": "Amy Roebuck",
-  "externalSchoolPrincipalId": "14007",
+  "principalEmail": "AmyRoebuck@contoso.com",
+  "principalName": "Amy Roebuck",
+  "externalPrincipalId": "14007",
   "lowestGrade": "9",
   "highestGrade": "12"
 }

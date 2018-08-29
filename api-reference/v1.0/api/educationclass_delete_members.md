@@ -38,10 +38,10 @@ DELETE /education/classes/{id}/members/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/11003/members/14008
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{member-id}
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

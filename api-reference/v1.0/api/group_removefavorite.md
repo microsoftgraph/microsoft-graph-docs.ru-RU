@@ -38,12 +38,10 @@ POST /groups/{id}/removeFavorite
 POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

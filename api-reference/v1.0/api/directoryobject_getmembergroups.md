@@ -22,10 +22,10 @@ POST /directoryObjects/{id}/getMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json  |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type   | строка  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -45,7 +45,7 @@ POST /directoryObjects/{id}/getMemberGroups
   "name": "directoryobject_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberGroups
+POST https://graph.microsoft.com/v1.0/directoryObjects/{object-id}/getMemberGroups
 Content-type: application/json
 
 {

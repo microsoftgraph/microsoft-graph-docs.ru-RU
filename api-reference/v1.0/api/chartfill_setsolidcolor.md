@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidColor
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -29,7 +29,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidCo
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
+|color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
 
 ## <a name="response"></a>Отклик
 
@@ -44,7 +44,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidCo
   "name": "chartfill_setsolidcolor"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
 Content-type: application/json
 Content-length: 28
 
@@ -53,12 +53,11 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

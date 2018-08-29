@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Создание списка ресурсов Drive"
-ms.openlocfilehash: 84771e589a65d11fc06707eb01b6211cf90a8581
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Создание списка ресурсов Drive
+ms.openlocfilehash: f23226b5e3de7e46b02f3bf8e252d338fc77ec5b
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270407"
 ---
 # <a name="list-available-drives"></a>Создание списка доступных дисков
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 09/28/2017
 
 ### <a name="http-request"></a>HTTP-запрос
 
-<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
+<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drives
@@ -39,7 +40,7 @@ GET /groups/{groupId}/drives
 
 Чтобы создать список библиотек документов для сайта, ваше приложение должно запросить связь **drives** в объекте Site.
 
-<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
+<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /sites/{siteId}/drives
@@ -47,7 +48,7 @@ GET /sites/{siteId}/drives
 
 ## <a name="list-a-users-drives"></a>Создание списка дисков пользователя
 
-<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
+<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /users/{userId}/drives
@@ -55,7 +56,7 @@ GET /users/{userId}/drives
 
 ## <a name="list-the-current-users-drives"></a>Создание списка дисков текущего пользователя
 
-<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
+<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drives
@@ -63,7 +64,7 @@ GET /me/drives
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.
 
 
 ## <a name="response"></a>Ответ
@@ -107,7 +108,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 У большинства пользователей имеется только один ресурс Drive.
 

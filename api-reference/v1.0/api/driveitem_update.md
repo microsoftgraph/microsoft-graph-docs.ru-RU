@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Обновление файла или папки"
-ms.openlocfilehash: 1662007d030f51b0fd9242ba0f22b670e5e2bde2
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Обновление файла или папки
+ms.openlocfilehash: af936948371ada7f0a8cd52115eac31ea6388d10
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266893"
 ---
 # <a name="update-driveitem-properties"></a>Обновление свойств ресурса DriveItem
 
@@ -47,7 +48,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 Укажите в тексте запроса значения обновляемых свойств.
 
-Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств.
+Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.
 Для достижения максимальной оптимальной производительности в приложении не следует указывать свойства, которые не были изменены.
 
 ## <a name="response"></a>Отклик
@@ -58,7 +59,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 В этом примере показано, как переименовать ресурс DriveItem и присвоить ему имя new-file-name.docx.
 
-<!-- { "blockType": "request", "name": "update-item" } -->
+<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -71,7 +72,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] в теле ответа.
+При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] в теле отклика.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 

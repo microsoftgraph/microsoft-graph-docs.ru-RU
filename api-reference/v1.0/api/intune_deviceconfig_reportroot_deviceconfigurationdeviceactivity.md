@@ -4,7 +4,7 @@
 
 Метаданные для отчета о работе устройств
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -21,17 +21,17 @@
 GET /reports/deviceConfigurationDeviceActivity
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения эта функция возвращает код ответа `200 OK` и объект [report](../resources/intune_deviceconfig_report.md) в теле ответа.
+В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune_deviceconfig_report.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -41,7 +41,7 @@ GET https://graph.microsoft.com/v1.0/reports/deviceConfigurationDeviceActivity
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -50,7 +50,7 @@ Content-Length: 123
 {
   "value": {
     "@odata.type": "microsoft.graph.report",
-    "content": "<Unknown Primitive Type Edm.Stream>"
+    "content": {"@odata.type": "Edm.Stream"}
   }
 }
 ```

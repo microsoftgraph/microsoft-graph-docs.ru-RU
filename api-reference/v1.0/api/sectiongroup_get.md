@@ -26,7 +26,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -34,7 +34,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [sectionGroup](../resources/sectiongroup.md) в тексте ответа.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [sectionGroup](../resources/sectiongroup.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -50,7 +50,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK

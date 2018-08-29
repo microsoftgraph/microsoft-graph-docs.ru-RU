@@ -38,15 +38,14 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
   "name": "workbookpivottable_refresh"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

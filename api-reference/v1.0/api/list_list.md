@@ -2,18 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
-title: "Создание списка списков SharePoint на сайте"
-ms.openlocfilehash: 8c3d8da3e8dc4ab3aa2f399eb09d916ea602e1c5
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+title: Создание списка списков SharePoint на сайте
+ms.openlocfilehash: 5d88720ecf3d183f806526364130dd2812874f3c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267649"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Перечисление списков на сайте
 
 Получение коллекции [списков][] для [сайта][].
 
-[lists]: ../resources/list.md
+[списков]: ../resources/list.md
 [site]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
@@ -36,13 +37,13 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 #### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -75,6 +76,13 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="remarks"></a>Заметки
+
+По умолчанию ресурсы list с аспектом [system][] скрыты.
+Чтобы перечислить их, включите `system` в оператор `$select`.
+
+[system]: ../resources/systemFacet.md
 
 <!-- {
   "type": "#page.annotation",

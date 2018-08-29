@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
-title: "Удаление записи из списка SharePoint"
-ms.openlocfilehash: 197de37f9f4ae52b8485417ae4ee961fa3c56aec
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+title: Удаление записи из списка SharePoint
+ms.openlocfilehash: f091ba2806d0206ca840cb25d9f38a20f42dd2c7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269819"
 ---
 # <a name="delete-an-item-from-a-list"></a>Удаление элемента из списка
 
@@ -47,7 +48,7 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 ## <a name="example"></a>Пример
 
-<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "delete-item-site", "scopes": "files.readwrite sites.readwrite.all" } -->
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}

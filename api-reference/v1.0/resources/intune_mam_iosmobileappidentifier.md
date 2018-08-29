@@ -17,7 +17,7 @@
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.mobileAppIdentifier",
   "@odata.type": "microsoft.graph.iosMobileAppIdentifier"
 }
 -->

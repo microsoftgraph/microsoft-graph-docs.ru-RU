@@ -14,7 +14,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/<id>/users/{userId}/$ref
+DELETE /education/schools/{id}/users/{userId}/$ref
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -36,10 +36,10 @@ DELETE /education/schools/<id>/users/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/10001/users/13006
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

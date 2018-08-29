@@ -10,13 +10,12 @@
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
-Ниже этот ресурс представлен в формате JSON.
-<!-- {
+Ниже представлено описание ресурса в формате JSON.
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "abstract": true,
   "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdateInstallScheduleType"

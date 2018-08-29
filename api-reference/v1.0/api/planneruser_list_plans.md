@@ -15,7 +15,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/plans
-GET /users/<id>/planner/plans
+GET /users/{id}/planner/plans
 GET /drive/root/createdByUser/planner/plans
 ```
 
@@ -44,7 +44,7 @@ GET /drive/root/createdByUser/planner/plans
 GET https://graph.microsoft.com/v1.0/me/planner/plans
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

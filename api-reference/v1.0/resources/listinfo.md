@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: listInfo
-ms.openlocfilehash: eb4952c1a49c41dfae6683153753711158c70f01
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: da8398bbb87111648ea561e1799e062ed46b0ee6
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270778"
 ---
 # <a name="listinfo-resource"></a>Ресурс listInfo
 
@@ -38,13 +39,13 @@ ms.lasthandoff: 09/28/2017
 
 | Имя свойства           | Тип    | Описание
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | Если данное свойство имеет значение `true`, это указывает, что для этого списка разрешено использовать типы контента.
-| **hidden**              | Boolean | Если данное свойство имеет значение `true`, это указывает, что список обычно не отображается в пользовательском интерфейсе SharePoint.
+| **contentTypesEnabled** | Boolean | Если свойство имеет значение `true`, это указывает на то, что для этого списка разрешено использовать типы контента.
+| **hidden**              | Boolean | Если это свойство имеет значение `true`, это указывает на то, что список обычно не отображается в пользовательском интерфейсе SharePoint.
 | **template**            | String  | Перечислимое значение, которое представляет базовый шаблон списка, используемый при создании списка. Возможные значения: `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` и другие.
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Замечания
 
-Большинство списков, создаваемых пользователями, будут иметь одно из указанных выше значений, но можно использовать и другие значения.
+Большинство списков, создаваемых пользователями, будут иметь одно из указанных выше значений, но можно также использовать и другие значения.
 Ваше приложение должно быть способно обрабатывать любые значения, которые не указаны здесь.
 Для разработчиков, знакомых с API CSOM в SharePoint, значение `template` соответствует перечислению `SPListTemplateType`.
 
@@ -55,5 +56,9 @@ ms.lasthandoff: 09/28/2017
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/listinfo.md:
+      Found potential enums in resource example that weren't defined in a table:(documentLibrary,genericList,tasks,survey,links,announcements,contacts,...) are in resource, but () are in table"
+  ],
   "tocPath": ""
 }-->

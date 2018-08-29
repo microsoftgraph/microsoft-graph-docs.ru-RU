@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Создание списка последних файлов"
-ms.openlocfilehash: fd1b25a41369d354d18167f17b3c35e9d40bf3f4
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Создание списка последних файлов
+ms.openlocfilehash: 9713803cb639f3eb27e46d087b0e8fec41abb5a7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267656"
 ---
 # <a name="list-recent-files"></a>Создание списка последних файлов
 
@@ -28,6 +29,7 @@ ms.lasthandoff: 09/28/2017
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
+       "tags": "service.graph",
        "target": "action" } -->
 
 ```http
@@ -36,7 +38,7 @@ GET /me/drive/recent
 
 ## <a name="response"></a>Ответ
 
-Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец диска недавно получал доступ.
+Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец объекта drive недавно получал доступ.
 
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.driveItem)",
@@ -82,7 +84,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 Некоторые элементы driveItem, возвращенные **последним** действием, будут содержать аспект **remoteItem**, который указывает, что это элементы с другого диска. Чтобы получить доступ к исходному объекту driveItem, следует отправить запрос, используя данные, указанные в **remoteItem** в следующем формате:
 

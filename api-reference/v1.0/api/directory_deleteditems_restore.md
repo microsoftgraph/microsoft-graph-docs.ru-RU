@@ -28,7 +28,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directory/deleteditems/{id}/restore
+POST /directory/deletedItems/{id}/restore
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -52,7 +52,7 @@ POST /directory/deleteditems/{id}/restore
   "name": "create_directoryobject_from_directory"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
+POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 ```
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик

@@ -13,8 +13,8 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyRange
+POST /workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -33,20 +33,22 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyR
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "tablecolumn_databodyrange"
+  "isComposable": true,
+  "name": "tablecolumn_databodyrange",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

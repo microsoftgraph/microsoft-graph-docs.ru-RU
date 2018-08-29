@@ -24,7 +24,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -41,7 +41,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationPr
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -50,7 +50,7 @@ Content-Length: 4607
 {
   "value": [
     {
-      "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+      "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
       "displayName": "Display Name value",
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -77,7 +77,7 @@ Content-Length: 4607
         "certificate": "Y2VydGlmaWNhdGU="
       },
       "revokeOnUnenrollDisabled": true,
-      "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+      "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
       "azureRightsManagementServicesAllowed": true,
       "iconsVisible": true,
       "protectedApps": [

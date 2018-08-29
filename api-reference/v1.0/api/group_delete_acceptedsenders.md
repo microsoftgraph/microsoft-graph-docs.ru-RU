@@ -14,7 +14,8 @@
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -30,20 +31,18 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
-Ниже представлено несколько примеров запроса.
+Ниже приведен пример запроса.
 
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{id}
-
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+#### <a name="response"></a>Ответ
+Ниже приведен пример ответа. 
 
 <!-- {
   "blockType": "response",

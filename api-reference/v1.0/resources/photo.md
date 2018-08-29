@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Photo
-ms.openlocfilehash: a4284caa7c20e266d87e22e9b3d729e17bc88abf
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 391eafd84ab1abd4670c953720ff7097e060bfd3
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267068"
 ---
 # <a name="photo-resource-type"></a>Тип ресурса Photo
 
@@ -20,6 +21,7 @@ ms.lasthandoff: 09/28/2017
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.photo"
 }-->
+
 ```json
 {
   "cameraMake": "string",
@@ -38,15 +40,16 @@ ms.lasthandoff: 09/28/2017
 | Свойство                | Тип           | Описание
 |:------------------------|:---------------|:----------------------------------
 | **takenDateTime**       | DateTimeOffset | Представляет дату и время съемки. Только для чтения.
-| **cameraMake**          | Строка         | Изготовитель камеры. Только для чтения.
+| **cameraMake**          | String         | Изготовитель камеры. Только для чтения.
 | **cameraModel**         | String         | Модель камеры. Только для чтения.
 | **fNumber**             | Double         | Значение диафрагмы камеры. Только для чтения.
 | **exposureDenominator** | Double         | Знаменатель дробного значения выдержки камеры. Только для чтения.
 | **exposureNumerator**   | Double         | Числитель дробного значения выдержки камеры. Только для чтения.
 | **focalLength**         | Double         | Фокусное расстояние камеры. Только для чтения.
-| **iso**                 | Int64          | Значение ISO камеры. Только для чтения.
+| **iso**                 | Int32          | Значение ISO камеры. Только для чтения.
 
 ## <a name="remarks"></a>Заметки
+
 OneDrive для бизнеса и SharePoint возвращают только свойство **takenDateTime**.
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).

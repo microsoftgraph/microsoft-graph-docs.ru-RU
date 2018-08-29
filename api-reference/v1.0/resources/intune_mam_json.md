@@ -10,18 +10,21 @@
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
-Ниже этот ресурс представлен в формате JSON.
-<!-- {
+Ниже представлено описание ресурса в формате JSON.
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "openType": true,
   "@odata.type": "microsoft.graph.Json"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
 
-
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: Resource microsoft.graph.Json is defined in multiple files: /api-reference/v1.0/resources/intune_mam_json.md, /api-reference/v1.0/resources/json.md"
+  ]
+}-->

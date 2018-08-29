@@ -11,17 +11,15 @@
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
-Ниже этот ресурс представлен в формате JSON.
-<!-- {
+Ниже представлено описание ресурса в формате JSON.
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.report"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.report",
-  "content": "<Unknown Primitive Type Edm.Stream>"
+  "content": {"@odata.type": "Edm.Stream"}
 }
 ```
 

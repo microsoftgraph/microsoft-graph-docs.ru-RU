@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Копирование файла или папки"
-ms.openlocfilehash: 6740091f887e42a14b2a42c99ee586af4254c473
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Копирование файла или папки
+ms.openlocfilehash: 2b54f183daa716f1a872f373a499368fdfd558d9
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265255"
 ---
 # <a name="copy-a-driveitem"></a>Копирование ресурса DriveItem
 
@@ -43,16 +44,16 @@ POST /users/{userId}/drive/items/{itemId}/copy
 | Имя            | Значение                                          | Описание                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Необязательный. Отсылает к родительскому элементу, в котором будет создана копия.                                         |
-| name            | string                                         | Необязательный. Новое имя копии. Если оно не предоставлено, будет использовано такое же имя, как в оригинале.    |
+| name            | строка                                         | Необязательный. Новое имя копии. Если оно не предоставлено, будет использовано такое же имя, как в оригинале.    |
 
 **Примечание.** Элемент _parentReference_ должен включать параметры `driveId` и `id` для целевой папки.
 
 ## <a name="example"></a>Пример
 
-В этом примере показано, как скопировать файл с идентификатором `{item-id}` в папку с идентификатором `driveId` и значением `id`.
+В этом примере показано, как копировать файл с идентификатором `{item-id}` в папку с идентификатором `driveId` и значением `id`.
 У новой копии файла будет имя `contoso plan (copy).txt`.
 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/copy
@@ -81,7 +82,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования.
 Вы можете использовать эти сведения, чтобы [определить, когда копирование будет завершено](../../../concepts/long_running_actions_overview.md).
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Замечания
 
 Во многих случаях копирование выполняется асинхронно. Отклик API указывает, что операция копирования принята или отклонена, например из-за использования имени конечного файла.
 

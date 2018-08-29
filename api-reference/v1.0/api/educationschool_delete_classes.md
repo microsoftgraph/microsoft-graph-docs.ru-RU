@@ -36,10 +36,10 @@ DELETE /education/schools/{id}/classes/{classId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/10001/classes/11001
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes/{class-id}
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 
 <!-- {

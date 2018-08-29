@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: fieldValueSet
-ms.openlocfilehash: dfe11b4cdf095e8878da54760032d788f97756fb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: b0e3accc05ddf10328f8d27f8798f865e579e529
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266606"
 ---
 # <a name="fieldvalueset-resource"></a>Ресурс fieldValueSet
 
@@ -17,7 +18,8 @@ ms.lasthandoff: 09/28/2017
 
 Ниже показано представление ресурса **fieldValueSet** в формате JSON.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
+      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
+       "baseType": "microsoft.graph.entity", "openType": true } -->
 
 ```json
 {
@@ -46,7 +48,7 @@ ms.lasthandoff: 09/28/2017
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
 ```
 
-В одном запросе вы можете запросить до 12 полей подстановки, а также любое количество обычных полей.
+В одном запросе вы можете запросить до 12 полей подстановки, а также любое количество "обычных" полей.
 
 <!-- {
   "type": "#page.annotation",

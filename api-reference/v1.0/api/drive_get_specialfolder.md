@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Получение специальных папок"
-ms.openlocfilehash: 894c0dc2c41441ab8006f58dcf5ccbc9d0043b0a
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Получение специальных папок
+ms.openlocfilehash: 42deedff6dc5a0925412e95af806fee99d8be242
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265038"
 ---
 # <a name="get-a-special-folder-by-name"></a>Получение специальной папки по ее имени
 
@@ -52,11 +53,11 @@ GET /me/drive/special/{name}
 
 ### <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand` и `$select` для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand` и `$select` для настройки отклика.
 
-## <a name="http-response"></a>HTTP-ответ
+## <a name="http-response"></a>HTTP-отклик
 
-Этот метод возвращает код ответа `200 OK` и объект [driveItem](../resources/driveitem.md) в теле ответа.
+Этот метод возвращает код отклика `200 OK` и объект [driveItem](../resources/driveitem.md) в теле отклика.
 
 Вы можете использовать этот метод обращения к специальной папке наряду с дополнительными вызовами к свойствам или связям в ресурсе driveItem.
 
@@ -78,17 +79,17 @@ Content-type: application/json
 
 ## <a name="get-children-of-a-special-folder"></a>Получение дочернего элемента специальной папки
 
-Чтобы получить список дочерних элементов специальной папки, вы можете запросить коллекцию `children` либо с помощью параметра [expand](../../../concepts/query_parameters.md) расширить коллекцию дочерних элементов.
+Чтобы получить дочерний элемент специальной папки, вы можете запросить коллекцию `children` или использовать параметр [expand](../../../concepts/query_parameters.md) для расширения коллекции дочерних элементов.
 
 ### <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/special/{name}/children
+GET /me/drive/special/{special-folder-name}/children
 ```
 
-### <a name="http-response"></a>HTTP-ответ
+### <a name="http-response"></a>HTTP-отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 
@@ -106,7 +107,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 > **Примечание.** Элементы DriveItem с аспектом `specialFolder` указывают, что элемент представляет собой специальную папку, и доступ к нему можно получить через коллекцию `special`.
 

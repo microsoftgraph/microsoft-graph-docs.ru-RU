@@ -9,16 +9,16 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|lowerAddress|Строка|Нижней IP-адрес|
-|upperAddress|Строка|Верхний IP-адрес|
+|lowerAddress|String|Нижний IP-адрес|
+|upperAddress|String|Верхний IP-адрес|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
-Ниже этот ресурс представлен в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.ipRange",
   "@odata.type": "microsoft.graph.iPv6Range"
 }
 -->

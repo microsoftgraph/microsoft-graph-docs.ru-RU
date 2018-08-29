@@ -35,7 +35,7 @@ GET /schemaExtensions/{id}
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_schemaextension"
 }-->
 ```http
@@ -44,7 +44,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.schemaExtension"
 } -->

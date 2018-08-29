@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/plans/<id>
+DELETE /planner/plans/{id}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -39,11 +39,11 @@ DELETE /planner/plans/<id>
   "name": "delete_plannerplan"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/planner/plans/<id>
+DELETE https://graph.microsoft.com/v1.0/planner/plans/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true

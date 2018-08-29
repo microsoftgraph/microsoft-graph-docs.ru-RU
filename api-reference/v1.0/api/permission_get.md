@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Получение разрешений"
-ms.openlocfilehash: 34171ca2c862857069f904103681ecc9b1646fc7
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Получение разрешений
+ms.openlocfilehash: 48c0d7f07565c87e5f2b77ca7a3d5beec83540e7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268552"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 
@@ -43,7 +44,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметр запроса $select](../../../concepts/query_parameters.md) для формирования ответа.
+Этот метод поддерживает [параметр запроса $select](../../../concepts/query_parameters.md) для формирования отклика.
 
 ## <a name="response"></a>Ответ
 
@@ -55,7 +56,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 Ниже показан пример запроса на доступ к разрешению для папки.
 
-<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions/{perm-id}
@@ -83,7 +84,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 Ресурс [Permission](../resources/permission.md) использует _аспекты_ для предоставления сведений о типе разрешения, представленного ресурсом.
 

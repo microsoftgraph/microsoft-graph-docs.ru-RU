@@ -45,6 +45,7 @@ DELETE /domains/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "delete_domain"
 }-->
 ```http

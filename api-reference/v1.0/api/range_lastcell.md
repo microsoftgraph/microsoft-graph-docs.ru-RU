@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/LastCell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/LastCell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/LastCell
+GET /workbook/names/{name}/range/lastCell
+GET /workbook/worksheets/{id|name}/range(address='<address>')/lastCell
+GET /workbook/tables/{id|name}/columns/{id|name}/range/lastCell
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -34,20 +34,21 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastCell
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_lastcell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastCell
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastCell
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

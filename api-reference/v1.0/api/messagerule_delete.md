@@ -15,8 +15,8 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/mailFolders/inbox/messagerules/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+DELETE /me/mailFolders/inbox/messageRules/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -36,14 +36,15 @@ DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox", "AQAAAJ5dZp8="],
   "name": "delete_messagerule"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZp8=')
+DELETE https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZp8=
 
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "isEmpty": true

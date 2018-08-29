@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Создание списка содержимого папки"
-ms.openlocfilehash: e4c8f7b66333d739aeeaff9a8b92c0088d2fde0b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Создание списка содержимого папки
+ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265220"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -40,21 +41,21 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.
 
 ### <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
-| Имя заголовка     | Значение | Описание                                                                                                                                              |
+| Имя     | Значение | Описание                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | etag  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
 
 ## <a name="examples"></a>Примеры
 
-### <a name="list-children-in-the-root-of-the-current-users-drive"></a>Создание списка дочерних элементов в корневой папке диска текущего пользователя
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a>Создание списка дочерних элементов в корневой папке объекта drive текущего пользователя
 
-Чтобы получить файлы, расположенные в корневой папке диска, используйте связь `root` для диска, а затем получите доступ к связи дочернего элемента.
+Чтобы получить файлы, расположенные в корневой папке объекта drive, используйте связь `root` для drive, а затем получите доступ к связи дочернего элемента.
 
-<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/root/children
@@ -63,7 +64,7 @@ GET /me/drive/root/children
 
 ### <a name="list-children-of-a-driveitem-with-a-known-id"></a>Создание списка дочерних элементов ресурса driveItem с использованием известного идентификатора
 
-Чтобы получить файлы, расположенные в корневой папке диска, используйте связь `root` для диска, а затем получите доступ к связи дочернего элемента.
+Чтобы получить файлы, расположенные в корневой папке объекта drive, используйте связь `root` для drive, а затем получите доступ к связи дочернего элемента.
 
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 

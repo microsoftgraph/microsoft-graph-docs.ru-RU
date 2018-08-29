@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/buckets/<id>/tasks
+GET /planner/buckets/{id}/tasks
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,10 +38,10 @@ GET /planner/buckets/<id>/tasks
   "name": "get_tasks"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/buckets/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/tasks
+GET https://graph.microsoft.com/v1.0/planner/buckets/{task-id}/tasks
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

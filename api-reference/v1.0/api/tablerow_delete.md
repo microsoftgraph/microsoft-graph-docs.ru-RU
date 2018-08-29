@@ -13,8 +13,8 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows(<index>)/delete
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
+POST /workbook/tables/{id|name}/rows/{index}/delete
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,15 +38,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/delete
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/contracts
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract",
+  "@odata.type": "microsoft.graph.contract",
   "isCollection": true
 } -->
 ```http
