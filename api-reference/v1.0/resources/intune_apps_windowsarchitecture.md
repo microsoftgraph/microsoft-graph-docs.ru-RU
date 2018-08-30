@@ -1,0 +1,16 @@
+# <a name="windowsarchitecture-enum-type"></a>Тип перечисления windowsArchitecture
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Содержит свойства для архитектуры Windows.
+## <a name="windowsarchitecture-flags"></a>Флаги windowsArchitecture
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|отсутствует|0|Нет установленных флагов.|
+|X86|1|Указание на поддержку типа архитектуры Windows X86.|
+|x64|2|Указание на поддержку типа архитектуры Windows X64.|
+|arm|4|Указание на поддержку типа архитектуры Windows Arm.|
+|neutral|8|Указание на поддержку типа архитектуры Windows Neutral.|
+
+
+

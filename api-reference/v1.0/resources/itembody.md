@@ -5,8 +5,8 @@
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|content|String|Содержимое элемента.|
-|contentType|String|Тип контента. Возможные значения: `Text` и `HTML`.|
+|content|Строка|Содержимое элемента.|
+|contentType|bodyType|Тип содержимого. Возможные значения: `Text` и `HTML`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
