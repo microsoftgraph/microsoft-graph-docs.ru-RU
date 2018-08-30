@@ -1,18 +1,17 @@
-# <a name="locationconstraintitem-resource-type"></a>Тип ресурсов locationConstraintItem
+# <a name="locationconstraintitem-resource-type"></a><span data-ttu-id="dce53-101">Тип ресурсов locationConstraintItem</span><span class="sxs-lookup"><span data-stu-id="dce53-101">locationConstraintItem resource type</span></span>
 
-Условия, заданные клиентом в отношении расположения для проведения собрания.
+<span data-ttu-id="dce53-102">Условия, заданные клиентом в отношении расположения для проведения собрания.</span><span class="sxs-lookup"><span data-stu-id="dce53-102">The conditions stated by a client for the location of a meeting.</span></span>
 
-Тип, производный от [location](location.md).
+<span data-ttu-id="dce53-103">Тип, производный от [location](location.md).</span><span class="sxs-lookup"><span data-stu-id="dce53-103">Derived from [location](location.md).</span></span>
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a><span data-ttu-id="dce53-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dce53-104">JSON representation</span></span>
 
-Ниже показано представление JSON ресурса.
+<span data-ttu-id="dce53-105">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="dce53-105">Here is a JSON representation of the resource</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-  
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.location",
   "@odata.type": "microsoft.graph.locationConstraintItem"
 }-->
 
@@ -25,13 +24,13 @@
 }
 
 ```
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="dce53-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="dce53-106">Properties</span></span>
+| <span data-ttu-id="dce53-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="dce53-107">Property</span></span>     | <span data-ttu-id="dce53-108">Тип</span><span class="sxs-lookup"><span data-stu-id="dce53-108">Type</span></span>   |<span data-ttu-id="dce53-109">Описание</span><span class="sxs-lookup"><span data-stu-id="dce53-109">Description</span></span>|
 |:---------------|:--------|:----------|
-| address | [physicalAddress](physicalAddress.md) |Почтовый адрес расположения. |
-| displayName  | String | Имя, связанное с расположением.                       |
-| locationEmailAddress | String | Необязательный адрес электронной почты для расположения. |
-| resolveAvailability | Логическое | Если задано значение true и указанный ресурс занят, [findMeetingTimes](../api/user_findmeetingtimes.md) ищет свободный ресурс. Если задано значение false и указанный ресурс занят, **findMeetingTimes** возвращает ресурс с наиболее высоким приоритетом в кэше пользователя, не проверяя, свободен ли этот ресурс. Значение по умолчанию: true. |
+| <span data-ttu-id="dce53-110">address</span><span class="sxs-lookup"><span data-stu-id="dce53-110">address</span></span> | [<span data-ttu-id="dce53-111">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="dce53-111">physicalAddress</span></span>](physicalAddress.md) |<span data-ttu-id="dce53-112">Почтовый адрес расположения.</span><span class="sxs-lookup"><span data-stu-id="dce53-112">The street address of the location.</span></span> |
+| <span data-ttu-id="dce53-113">displayName</span><span class="sxs-lookup"><span data-stu-id="dce53-113">displayName</span></span>  | <span data-ttu-id="dce53-114">Cтрока</span><span class="sxs-lookup"><span data-stu-id="dce53-114">String</span></span> | <span data-ttu-id="dce53-115">Имя, связанное с расположением.</span><span class="sxs-lookup"><span data-stu-id="dce53-115">The name associated with the location.</span></span>                       |
+| <span data-ttu-id="dce53-116">locationEmailAddress</span><span class="sxs-lookup"><span data-stu-id="dce53-116">locationEmailAddress</span></span> | <span data-ttu-id="dce53-117">Cтрока</span><span class="sxs-lookup"><span data-stu-id="dce53-117">String</span></span> | <span data-ttu-id="dce53-118">Необязательный адрес электронной почты для расположения.</span><span class="sxs-lookup"><span data-stu-id="dce53-118">Optional email address of the location.</span></span> |
+| <span data-ttu-id="dce53-119">resolveAvailability</span><span class="sxs-lookup"><span data-stu-id="dce53-119">resolveAvailability</span></span> | <span data-ttu-id="dce53-120">Boolean (логический)</span><span class="sxs-lookup"><span data-stu-id="dce53-120">Boolean</span></span> | <span data-ttu-id="dce53-p101">Если задано значение true и указанный ресурс занят, [findMeetingTimes](../api/user_findmeetingtimes.md) ищет свободный ресурс. Если задано значение false и указанный ресурс занят, **findMeetingTimes** возвращает ресурс с наиболее высоким приоритетом в кэше пользователя, не проверяя, свободен ли этот ресурс. Значение по умолчанию: true.</span><span class="sxs-lookup"><span data-stu-id="dce53-p101">If set to true and the specified resource is busy, [findMeetingTimes](../api/user_findmeetingtimes.md) looks for another resource that is free. If set to false and the specified resource is busy, **findMeetingTimes** returns the resource best ranked in the user's cache without checking if it's free. Default is true.</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
