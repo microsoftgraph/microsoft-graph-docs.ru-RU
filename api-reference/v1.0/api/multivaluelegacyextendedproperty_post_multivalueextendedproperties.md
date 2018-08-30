@@ -4,12 +4,12 @@
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [message](../resources/message.md);
-- [mailFolder](../resources/mailfolder.md);
-- [event](../resources/event.md);
-- [calendar](../resources/calendar.md);
-- [contact](../resources/contact.md);
-- [contactFolder](../resources/contactfolder.md). 
+- [[message](../resources/message.md);](../resources/message.md)
+- [[mailFolder](../resources/mailfolder.md);](../resources/mailfolder.md)
+- [[event](../resources/event.md);](../resources/event.md)
+- [[calendar](../resources/calendar.md);](../resources/calendar.md)
+- [[contact](../resources/contact.md);](../resources/contact.md)
+- [[contactFolder](../resources/contactfolder.md).](../resources/contactfolder.md) 
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
@@ -67,7 +67,7 @@ POST /groups/{id}/conversations
 
 Чтобы создать одно или несколько расширенных свойств в существующем экземпляре ресурса, укажите экземпляр в запросе и включите расширенное свойство в тело запроса.
 
-**Примечание.** Расширенное свойство невозможно создать в существующем экземпляре post для групп.
+**Примечание.** Расширенное свойство невозможно создать в публикации существующей группы.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -93,17 +93,6 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## <a name="parameters"></a>Параметры
-|**Параметр**|**Тип**|**Описание**|
-|:-----|:-----|:-----|
-|_Параметры URL-адреса_|
-|id|string|Уникальный идентификатор объекта в соответствующей коллекции. Обязательный параметр.|
-|_Параметры тела_|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md)| Массив из одного или нескольких многозначных расширенных свойств. |
-|id|Строка|Чтобы идентифицировать свойства в коллекции **multiValueExtendedProperties**, укажите этот параметр для каждого из них. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
-|значение|string|Укажите значение для каждого свойства в коллекции **multiValueExtendedProperties**. Обязательный параметр.|
-
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
@@ -112,11 +101,18 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>Тело запроса
 
-Предоставьте тело в формате JSON для каждого объекта [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) в свойстве коллекции **multiValueExtendedProperties** для экземпляра ресурса.
+Укажите JSON-текст каждого объекта [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) в свойстве коллекции **multiValueExtendedProperties** для экземпляра ресурса.
 
-При создании расширенного свойства в _новом_ экземпляре ресурса, помимо новой коллекции **multiValueExtendedProperties**, нужно указать описание этого экземпляра ресурса (то есть [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.) в формате JSON.
+|Свойство|Тип|Описание|
+|:-----|:-----|:-----|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md)| Массив из одного или нескольких многозначных расширенных свойств. |
+|id|Строка|Чтобы идентифицировать свойства в коллекции **multiValueExtendedProperties**, укажите этот параметр для каждого из них. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
+|значение|строка|Укажите значение для каждого свойства в коллекции **multiValueExtendedProperties**. Обязательный параметр.|
 
-## <a name="response"></a>Отклик
+При создании расширенного свойства в _новом_ экземпляре ресурса помимо новой коллекции **multiValueExtendedProperties**, следует также указать JSON-представление этого экземпляра ресурса (то есть, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.).
+
+
+## <a name="response"></a>Ответ
 
 #### <a name="response-code"></a>Код отклика
 В результате успешной операции создания расширенного свойства в новом экземпляре ресурса возвращается код `201 Created` (в случае post для групп в зависимости от используемого метода операция может возвращать код `200 OK` или `202 Accepted`).
@@ -184,7 +180,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response-1"></a>Отклик 1
+##### <a name="response-1"></a>Отклик 1
 
 Отклик в результате успешного выполнения обозначен кодом `HTTP 201 Created` и включает в себя новое событие, подобно отклику при [создании просто события](../api/user_post_events.md). Отклик не включает только что созданные расширенные свойства.
 
@@ -193,7 +189,7 @@ Content-Type: application/json
 
 ****
 
-##### <a name="request-2"></a>Запрос 2
+##### <a name="request-2"></a>Запрос 2
 
 Во втором примере создается многозначное расширенное свойство для указанного сообщения. Это расширенное свойство — единственный элемент в коллекции **multiValueExtendedProperties**. Тело запроса включает следующие данные для расширенного свойства:
 
