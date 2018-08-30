@@ -7,7 +7,10 @@
 Ниже показано представление JSON ресурса.
 
 <!-- {
+  "abstract": "true",
+  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
 
   ],
@@ -21,17 +24,17 @@
 
 ```
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения.|
+|id|строка| Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
 ## <a name="methods"></a>Методы
 
-Фактически поддерживаемые методы указаны в описании производного типа [openTypeExtension](openTypeExtension.md).
+Фактически поддерживаемые методы указаны в описании методов производного типа [openTypeExtension](openTypeExtension.md).
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

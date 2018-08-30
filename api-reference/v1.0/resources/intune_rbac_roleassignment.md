@@ -15,10 +15,10 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|String|Отображаемое или понятное имя назначения роли.|
 |description|String|Описание назначения роли.|
-|resourceScopes|Коллекция строк|Список идентификаторов групп безопасности, относящихся к области ролей.  Эти идентификаторы берутся из Azure Active Directory.|
+|resourceScopes|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -27,12 +27,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.roleAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleAssignment",

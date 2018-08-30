@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
+PATCH /workbook/worksheets/{id|name}/charts/{name}/title
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -26,13 +26,13 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|overlay|boolean|Логическое значение, указывающее, отображается ли заголовок диаграммы поверх нее.|
-|text|string|Представляет текст заголовка диаграммы.|
-|visible|boolean|Логическое значение, представляющее видимость объекта заголовка диаграммы.|
+|overlay|логический|Логическое значение, указывающее, отображается ли заголовок диаграммы поверх нее.|
+|text|строка|Представляет текст заголовка диаграммы.|
+|visible|логический|Логическое значение, представляющее видимость объекта заголовка диаграммы.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartTitle](../resources/charttitle.md) в тексте отклика.
+В случае успеха этот метод возвращает `200 OK`код ответа и обновленный объект[WorkbookChartTitle](../resources/charttitle.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -41,7 +41,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
   "name": "update_charttitle"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/title
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title
 Content-type: application/json
 Content-length: 64
 
@@ -51,12 +51,12 @@ Content-length: 64
   "visible": true
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

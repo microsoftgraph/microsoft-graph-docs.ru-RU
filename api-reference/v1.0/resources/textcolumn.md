@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: textColumn
-ms.openlocfilehash: 80e41b379b9b4ce51a3ee6c910447a22f43356c3
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: b5c41091b9193aabc36ee04e9dcc310bfc110af1
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264289"
 ---
 # <a name="textcolumn-resource-type"></a>Тип ресурса textColumn
 
@@ -30,18 +31,22 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства                   | Тип   | Описание
-|:--------------------------------|:-------|:-----------------------------------------------
-| **allowMultipleLines**          | строка | Указывает, разрешено ли отображать несколько строк текста.
-| **appendChangesToExistingText** | строка | Указывает, что должно происходить при изменении столбца: новый текст должен заменять существующий либо дополнять его.
-| **linesForEditing**             | int    | Размер текстового поля.
-| **maxLength**                   | int    | Максимальное количество символов для значения.
-| **textType**                    | строка | Тип хранимого текста. Должно иметь тип `plain` или `richText`
+| Имя свойства                   | Тип    | Описание
+|:--------------------------------|:--------|:---------------------------------
+| **allowMultipleLines**          | логический | Указывает, разрешено ли отображать несколько строк текста.
+| **appendChangesToExistingText** | логический | Указывает, что должно происходить при обновлении данного столбца: новый текст должен заменять существующий либо дополнять его.
+| **linesForEditing**             | int32   | Размер текстового поля.
+| **maxLength**                   | int32   | Максимальное количество символов для значения.
+| **textType**                    | строка  | Тип хранимого текста. Должно иметь тип `plain` или `richText`
 
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/textcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(plain,richText) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/TextColumn"
 } -->

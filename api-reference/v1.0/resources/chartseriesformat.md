@@ -10,10 +10,30 @@
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Представляет формат заливки ряда диаграммы, включая сведения о форматировании фона. Только для чтения.|
-|line|[ChartLineFormat](chartlineformat.md)|Представляет форматирование линий. Только для чтения.|
+|fill|[WorkbookChartFill](chartfill.md)|Представляет формат заливки ряда диаграммы, включая сведения о форматировании фона. Только для чтения.|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|Представляет форматирование линий. Только для чтения.|
+
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже представлено описание ресурса в формате JSON.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartSeriesFormat"
+}-->
+
+```json
+{
+  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
+  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

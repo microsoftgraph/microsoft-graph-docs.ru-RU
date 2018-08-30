@@ -1,6 +1,6 @@
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
 
-Контакт, событие или сообщение, вложенное в другое событие, сообщение или запись.  
+Контакт, событие или сообщение, вложенное в другое событие, сообщение или публикацию.  
 
 Производный от типа [attachment](attachment.md).
 
@@ -8,21 +8,21 @@
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Чтение свойств и связей объекта itemAttachment.|
-|[Удаление](../api/attachment_delete.md) | Нет |Удаление объекта itemAttachment. |
+|[Get](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Чтение свойств и связей объекта itemAttachment.|
+|[Delete](../api/attachment_delete.md) | Нет |Удаление объекта itemAttachment. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contentType|String|Тип контента этого вложения.|
-|id|String| Идентификатор вложения.|
-|isInline|Boolean|Значение true указывает, что вложение является встроенным, например внедренным изображением в теле элемента.|
+|contentType|Строка|Тип контента этого вложения.|
+|id|Строка| Идентификатор вложения.|
+|isInline|Логический|Значение true указывает, что вложение является встроенным, например внедренным изображением в теле элемента.|
 |lastModifiedDateTime|DateTimeOffset|Время и дата последнего изменения вложения.|
-|name|String|Отображаемое имя вложения.|
+|name|Строка|Отображаемое имя вложения.|
 |size|Int32|Размер вложения в байтах.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |item|[OutlookItem](outlookitem.md)|Вложенное сообщение или событие. Свойство навигации.|
 
@@ -30,12 +30,25 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "item"
   ],
-  "@odata.type": "microsoft.graph.itemAttachment"
+  "baseType": "microsoft.graph.attachment",
+  "@odata.type": "microsoft.graph.itemAttachment",
+  "@odata.annotations": [
+    {
+      "property": "item",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -45,7 +58,8 @@
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": 1024,
+  "item": { "@odata.type": "microsoft.graph.outlookItem" }
 }
 
 ```

@@ -1,12 +1,8 @@
-<a id="licensedetails-resource-type" class="xliff"></a>
-
-# Тип ресурса licenseDetails
+# <a name="licensedetails-resource-type"></a>Тип ресурса licenseDetails
 
 Содержит сведения о лицензии, назначенной пользователю.
 
-<a id="methods" class="xliff"></a>
-
-## Методы
+## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
@@ -14,28 +10,23 @@
 
 <!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор объекта сведений о лицензии. Только для чтения, ключевое, не допускает значения null. |
+|id|Строка| Уникальный идентификатор объекта сведений о лицензии. Только для чтения, ключевое, не допускает значения null. |
 |servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, назначенных вместе с лицензией. Только для чтения, не допускает значения null. |
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. Имеет то же значение, что и свойство skuId в связанном объекте [SubscribedSku](subscribedsku.md). Только для чтения. |
-|skuPartNumber|String| Уникальное отображаемое имя SKU. Имеет то же значение, что и свойство skuPartNumber в связанном объекте [SubscribedSku](subscribedsku.md). Пример: AAD_Premium. Только для чтения. |
+|skuPartNumber|Строка| Уникальное отображаемое имя SKU. Имеет то же значение, что и свойство skuPartNumber в связанном объекте [SubscribedSku](subscribedsku.md). Пример: AAD_Premium. Только для чтения. |
 
-<a id="relationships" class="xliff"></a>
-
-## Связи
+## <a name="relationships"></a>Связи
 Нет
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
