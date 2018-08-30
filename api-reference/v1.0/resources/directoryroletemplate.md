@@ -11,11 +11,11 @@
 |[Список объектов directoryRoleTemplate](../api/directoryroletemplate_list.md) | Коллекция объектов [directoryRoleTemplate](directoryroletemplate.md) |Получение списка объектов directoryRoleTemplate.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|description|String|Описание, которое нужно задать для роли каталога. Только для чтения.|
-|displayName|Строка|Отображаемое имя, которое нужно назначить роли каталога. Только для чтения. |
-|id|String|Уникальный идентификатор шаблона. Наследуется из [directoryObject](directoryobject.md). Следует указать свойство **id** для шаблона роли каталога, чтобы свойство **roleTemplateId** в запросе POST активировало [directoryRole](directoryrole.md) на клиенте. Ключ, значение null не допускается. Только для чтения.|
+|description|Cтрока|Описание, которое нужно задать для роли каталога. Только для чтения.|
+|displayName|Cтрока|Отображаемое имя, которое нужно назначить роли каталога. Только для чтения. |
+|id|Cтрока|Уникальный идентификатор шаблона. Наследуется из [directoryObject](directoryobject.md). Следует указать свойство **id** для шаблона роли каталога, чтобы свойство **roleTemplateId** в запросе POST активировало [directoryRole](directoryrole.md) на клиенте. Ключ, значение null не допускается. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -26,13 +26,20 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json
