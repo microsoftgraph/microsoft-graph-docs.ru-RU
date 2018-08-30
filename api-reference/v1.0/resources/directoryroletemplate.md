@@ -1,38 +1,45 @@
-# <a name="directoryroletemplate-resource-type"></a>Тип ресурса directoryRoleTemplate
+# <a name="directoryroletemplate-resource-type"></a><span data-ttu-id="bcc2b-101">Тип ресурса directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="bcc2b-101">directoryRoleTemplate resource type</span></span>
 
-Представляет шаблон роли каталога. Шаблон роли каталога определяет значения свойств, принадлежащих роли каталога ([directoryRole](directoryrole.md)). С каждой ролью каталога, которую можно активировать на клиенте, связан объект соответствующего шаблона. Чтобы можно было считать роль каталога или обновить ее членов, сначала следует активировать ее на клиенте. По умолчанию активируется только роль каталога администраторов организации. Чтобы активировать другие доступные роли каталога, следует отправить запрос POST в конечную точку `/directoryRoles` с идентификатором шаблона роли каталога, на базе которого создана роль каталога и который указан в параметре **roleTemplateId** запроса. После успешного завершения этого запроса можно начинать считывание и назначение членов для роли каталога. **Примечание.** Шаблон роли каталога отображается вместо роли каталога пользователей. Роль каталога пользователей — неявная и невидимая для клиентов каталога. Каждый пользователь на клиенте назначается для этой роли инфраструктурой. Роль уже активирована. Не используйте этот шаблон.
+<span data-ttu-id="bcc2b-p101">Представляет шаблон роли каталога. Шаблон роли каталога определяет значения свойств, принадлежащих роли каталога ([directoryRole](directoryrole.md)). С каждой ролью каталога, которую можно активировать на клиенте, связан объект соответствующего шаблона. Чтобы можно было считать роль каталога или обновить ее членов, сначала следует активировать ее на клиенте. По умолчанию активируется только роль каталога администраторов организации. Чтобы активировать другие доступные роли каталога, следует отправить запрос POST в конечную точку `/directoryRoles` с идентификатором шаблона роли каталога, на базе которого создана роль каталога и который указан в параметре **roleTemplateId** запроса. После успешного завершения этого запроса можно начинать считывание и назначение членов для роли каталога. **Примечание.** Шаблон роли каталога отображается вместо роли каталога пользователей. Роль каталога пользователей — неявная и невидимая для клиентов каталога. Каждый пользователь на клиенте назначается для этой роли инфраструктурой. Роль уже активирована. Не используйте этот шаблон.</span><span class="sxs-lookup"><span data-stu-id="bcc2b-p101">Represents a directory role template. A directory role template specifies the property values of a directory role ([directoryRole](directoryrole.md)). There is an associated directory role template object for each of the directory roles that may be activated in a tenant. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators directory role is activated by default. To activate other available directory roles you send a POST request to the `/directoryRoles` endpoint with the ID of the directory role template on which the directory role is based specified in the **roleTemplateId** parameter of the request. Upon successful completion of this request, you can then start to read and assign members to the directory role. **Note**: A directory role template is exposed for the Users directory role. The Users directory role is implicit and is not visible to directory clients. Every User in the tenant is assigned to this role by the infrastructure. The role is already activated. Do not use this template.</span></span>
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a><span data-ttu-id="bcc2b-114">Методы</span><span class="sxs-lookup"><span data-stu-id="bcc2b-114">Methods</span></span>
 
-| Метод       | Возвращаемый тип  |Описание|
+| <span data-ttu-id="bcc2b-115">Метод</span><span class="sxs-lookup"><span data-stu-id="bcc2b-115">Method</span></span>       | <span data-ttu-id="bcc2b-116">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="bcc2b-116">Return Type</span></span>  |<span data-ttu-id="bcc2b-117">Описание</span><span class="sxs-lookup"><span data-stu-id="bcc2b-117">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Получение directoryRoleTemplate](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Считывание свойств и отношений объекта directoryRoleTemplate.|
-|[Список объектов directoryRoleTemplate](../api/directoryroletemplate_list.md) | Коллекция объектов [directoryRoleTemplate](directoryroletemplate.md) |Получение списка объектов directoryRoleTemplate.|
+|[<span data-ttu-id="bcc2b-118">Получение directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="bcc2b-118">Get directoryRoleTemplate</span></span>](../api/directoryroletemplate_get.md) | [<span data-ttu-id="bcc2b-119">directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="bcc2b-119">directoryRoleTemplate</span></span>](directoryroletemplate.md) |<span data-ttu-id="bcc2b-120">Считывание свойств и отношений объекта directoryRoleTemplate.</span><span class="sxs-lookup"><span data-stu-id="bcc2b-120">Read properties and relationships of directoryRoleTemplate object.</span></span>|
+|[<span data-ttu-id="bcc2b-121">Список объектов directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="bcc2b-121">List directoryRoleTemplate</span></span>](../api/directoryroletemplate_list.md) | <span data-ttu-id="bcc2b-122">Коллекция объектов [directoryRoleTemplate](directoryroletemplate.md)</span><span class="sxs-lookup"><span data-stu-id="bcc2b-122">[directoryRoleTemplate](directoryroletemplate.md) collection</span></span> |<span data-ttu-id="bcc2b-123">Получение списка объектов directoryRoleTemplate.</span><span class="sxs-lookup"><span data-stu-id="bcc2b-123">Retrieve a list of directoryRoleTemplate objects.</span></span>|
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="bcc2b-124">Свойства</span><span class="sxs-lookup"><span data-stu-id="bcc2b-124">Properties</span></span>
+| <span data-ttu-id="bcc2b-125">Свойство</span><span class="sxs-lookup"><span data-stu-id="bcc2b-125">Property</span></span>     | <span data-ttu-id="bcc2b-126">Тип</span><span class="sxs-lookup"><span data-stu-id="bcc2b-126">Type</span></span>   |<span data-ttu-id="bcc2b-127">Описание</span><span class="sxs-lookup"><span data-stu-id="bcc2b-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|description|String|Описание, которое нужно задать для роли каталога. Только для чтения.|
-|displayName|Строка|Отображаемое имя, которое нужно назначить роли каталога. Только для чтения. |
-|id|String|Уникальный идентификатор шаблона. Наследуется из [directoryObject](directoryobject.md). Следует указать свойство **id** для шаблона роли каталога, чтобы свойство **roleTemplateId** в запросе POST активировало [directoryRole](directoryrole.md) на клиенте. Ключ, значение null не допускается. Только для чтения.|
+|<span data-ttu-id="bcc2b-128">description</span><span class="sxs-lookup"><span data-stu-id="bcc2b-128">description</span></span>|<span data-ttu-id="bcc2b-129">Cтрока</span><span class="sxs-lookup"><span data-stu-id="bcc2b-129">String</span></span>|<span data-ttu-id="bcc2b-p102">Описание, которое нужно задать для роли каталога. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bcc2b-p102">The description to set for the directory role. Read-only.</span></span>|
+|<span data-ttu-id="bcc2b-132">displayName</span><span class="sxs-lookup"><span data-stu-id="bcc2b-132">displayName</span></span>|<span data-ttu-id="bcc2b-133">Cтрока</span><span class="sxs-lookup"><span data-stu-id="bcc2b-133">String</span></span>|<span data-ttu-id="bcc2b-p103">Отображаемое имя, которое нужно назначить роли каталога. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bcc2b-p103">The display name to set for the directory role. Read-only.</span></span> |
+|<span data-ttu-id="bcc2b-136">id</span><span class="sxs-lookup"><span data-stu-id="bcc2b-136">id</span></span>|<span data-ttu-id="bcc2b-137">Cтрока</span><span class="sxs-lookup"><span data-stu-id="bcc2b-137">String</span></span>|<span data-ttu-id="bcc2b-p104">Уникальный идентификатор шаблона. Наследуется из [directoryObject](directoryobject.md). Следует указать свойство **id** для шаблона роли каталога, чтобы свойство **roleTemplateId** в запросе POST активировало [directoryRole](directoryrole.md) на клиенте. Ключ, значение null не допускается. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bcc2b-p104">The unique identifier for the template. Inherited from [directoryObject](directoryobject.md). You specify the **id** of the directory role template for the **roleTemplateId** property in the POST request activate a [directoryRole](directoryrole.md) in a tenant. Key, Not nullable. Read-only.</span></span>|
 
-## <a name="relationships"></a>Связи
-Нет
+## <a name="relationships"></a><span data-ttu-id="bcc2b-143">Связи</span><span class="sxs-lookup"><span data-stu-id="bcc2b-143">Relationships</span></span>
+<span data-ttu-id="bcc2b-144">Нет</span><span class="sxs-lookup"><span data-stu-id="bcc2b-144">None</span></span>
 
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a><span data-ttu-id="bcc2b-145">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bcc2b-145">JSON representation</span></span>
 
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="bcc2b-146">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bcc2b-146">Here is a JSON representation of the resource</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json
