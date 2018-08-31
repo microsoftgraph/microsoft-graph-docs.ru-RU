@@ -20,19 +20,19 @@ POST /directoryRoles
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json  |
+| Авторизация  | string (строка)  | Bearer {токен}. Обязательный. |
+| Content-Type  | string (строка)  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при активации роли каталога.
 
-|Обязательный параметр | Тип | Описание|
+|Параметр | Тип | Описание|
 |:---------|:---------|:---------|
-|roleTemplateId | string | Идентификатор для объекта [directoryRoleTemplate](../resources/directoryroletemplate.md), который лежит в основе роли. Это единственное свойство, которое можно указать в запросе.|
+|roleTemplateId | string (строка) | Обязательный. Идентификатор [directoryRoleTemplate](../resources/directoryroletemplate.md), на котором основывается роль. Это единственное свойство, которое может быть указано в запросе.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвратит код отклика `201 Created` и объект [directoryRole](../resources/directoryrole.md) в теле отклика.
 

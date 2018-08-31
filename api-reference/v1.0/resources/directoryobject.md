@@ -1,12 +1,12 @@
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
-Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для многих других типов объектов каталогов.
+Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для многих других типов сущностей каталога.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта directoryObject](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |Чтение свойств объекта каталога.|
+|[Get directoryObject](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |Чтение свойств объекта каталога.|
 |[Удаление объекта directoryObject](../api/directoryobject_delete.md) | Нет |Удаление объекта каталога. |
 |[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
 |[getMemberGroups](../api/directoryobject_getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь, группа или объект каталога. Это транзитивная проверка.|
@@ -17,7 +17,7 @@
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|String|Уникальный идентификатор GUID объекта, например 12345678-9abc-def0-1234-56789abcde. Ключ. Значение null не допускается. Только для чтения.|
+|id|String (строка)|Уникальный идентификатор GUID объекта, например 12345678-9abc-def0-1234-56789abcde. Ключ. Значение null не допускается. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 
@@ -28,13 +28,25 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range
+PATCH /workbook/names/{name}/range
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
@@ -28,13 +28,13 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|columnHidden|boolean|Указывает, скрыты ли все столбцы текущего диапазона.|
-|formulas|json|Представляет формулу в формате A1.|
-|formulasLocal|json|Представляет формулу в нотации стиля A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке.|
-|formulasR1C1|json|Представляет формулу в формате R1C1.|
-|numberFormat|json|Представляет код числового формата Excel для данной ячейки.|
-|rowHidden|boolean|Указывает, скрыты ли все строки текущего диапазона.|
-|values|json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
+|columnHidden|boolean (логический)|Указывает, скрыты ли все столбцы текущего диапазона.|
+|formulas|Json|Представляет формулу в формате A1.|
+|formulasLocal|Json|Представляет формулу в нотации стиля A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке.|
+|formulasR1C1|Json|Представляет формулу в формате R1C1.|
+|numberFormat|Json|Представляет код числового формата Excel для данной ячейки.|
+|rowHidden|boolean (логический)|Указывает, скрыты ли все строки текущего диапазона.|
+|values|Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
 ## <a name="response"></a>Отклик
 
@@ -48,7 +48,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
   "name": "update_range"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets('sheet1')/range(address='A1:B2')
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='A1:B2')
 Content-type: application/json
 Content-length: 169
 
@@ -59,11 +59,11 @@ Content-length: 169
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +87,15 @@ Content-length: 169
   "description": "Update range",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Type mismatch between example and table. Parameter name: numberFormat; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->

@@ -17,7 +17,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
-GET /users/<id>/mailFolders/{id}/messages/delta
+GET /users/{id}/mailFolders/{id}/messages/delta
 ```
 
 ### <a name="query-parameters"></a>Параметры запроса
@@ -26,8 +26,8 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Этот [токен состояния](../../../concepts/delta_query_overview.md) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции сообщений и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | строка | Этот [токен состояния](../../../concepts/delta_query_overview.md) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции сообщений получены не все изменения. |
+| $deltatoken | string (строка) | Этот [токен состояния](../../../concepts/delta_query_overview.md) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции сообщений и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| $skiptoken | string (строка) | Этот [токен состояния](../../../concepts/delta_query_overview.md) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции сообщений получены не все изменения. |
 
 #### <a name="odata-query-parameters"></a>Параметры запросов OData
 
@@ -41,9 +41,9 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | string  | application/json. Обязательный. |
-| Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
+| Авторизация  | string (строка)  | Bearer {токен}. Обязательный. |
+| Content-Type  | string (строка)  | application/json. Обязательный. |
+| Prefer | string (строка)  | odata.maxpagesize={x}. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
 
@@ -61,12 +61,11 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
-
 Prefer: odata.maxpagesize=2
 ```
 
 ##### <a name="response"></a>Отклик
-В случае успешного выполнения запроса отклик будет содержать маркер состояния — _skipToken_  
+В случае успешного выполнения запроса отклик будет содержать маркер состояния — _skipToken_  
 или _deltaToken_. Первый включен в заголовок отклика _@odata.nextLink_, второй — в заголовок отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.

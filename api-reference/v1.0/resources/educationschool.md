@@ -15,28 +15,27 @@
 |[Перечисление пользователей](../api/educationschool_list_users.md) |Коллекция [educationUser](educationuser.md)| Получение коллекции объектов **educationUser**.|
 |[Удаление пользователя](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Удаление **educationUser** из учебного заведения через свойство навигации **users**.|
 |[Обновление](../api/educationschool_update.md) | [educationSchool](educationschool.md) |Обновление объекта **educationSchool**. |
-|[Удаление](../api/educationschool_delete.md) | None |Удаление объекта **educationSchool**. |
+|[Удаление](../api/educationschool_delete.md) | Нет |Удаление объекта **educationSchool**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String|GUID этого учебного заведения.|
-|displayName| String| Отображаемое имя учебного заведения.| 
-|description| String | Описание учебного заведения.| 
-|status| string| Только для чтения. Возможные значения: `inactive`, `active`, `expired`, `deleteable`.|
-|externalSource| string| Только для чтения.  Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
-|principalEmail| String| Адрес электронной почты директора.|
-|principalName| String | Имя директора.|
-|externalPrincipalId| String | Идентификатор директора в системе синхронизации. |
-|highestGrade|String| Самый старший класс. |
-|lowestGrade|String| Самый младший класс. |
-|schoolNumber|String| Номер школы.|
-|externalId|String| Идентификатор учебного заведения в системе синхронизации. |
-|phone|String| Номер телефона учебного заведения. |
-|fax|String| Номер факса учебного заведения. |
+|id|String (строка)|GUID этого учебного заведения.|
+|displayName| String (строка)| Отображаемое имя учебного заведения.| 
+|description| String (строка) | Описание учебного заведения.| 
+|status| string (строка)| Только для чтения. Возможные значения: `inactive`, `active`, `expired`, `deleteable`.|
+|externalSource| educationExternalSource| Только для чтения.  Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
+|principalEmail| String (строка)| Адрес электронной почты директора.|
+|principalName| String (строка) | Имя директора.|
+|externalPrincipalId| String (строка) | Идентификатор директора в системе синхронизации. |
+|highestGrade|String (строка)| Самый старший класс. |
+|lowestGrade|String (строка)| Самый младший класс. |
+|schoolNumber|String (строка)| Номер школы.|
+|externalId|String (строка)| Идентификатор учебного заведения в системе синхронизации. |
+|phone|String (строка)| Номер телефона учебного заведения. |
+|fax|String (строка)| Номер факса учебного заведения. |
 |address|[physicalAddress](physicaladdress.md)| Адрес учебного заведения.|
 |createdBy|[identitySet](identityset.md)|Объект, который создал учебное заведение.|
-
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
@@ -48,11 +47,10 @@
 
 Ниже указано представление ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.educationOrganization",
   "@odata.type": "microsoft.graph.educationSchool"
 }-->
 

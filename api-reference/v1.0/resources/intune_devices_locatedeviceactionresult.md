@@ -9,8 +9,8 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|String|Состояние действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionName|Строка|Название действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Состояние действия унаследованного от [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune_devices_devicegeolocation.md)|Местоположение устройства|
@@ -19,12 +19,11 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.locateDeviceActionResult"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.locateDeviceActionResult",
@@ -32,17 +31,7 @@
   "actionState": "String",
   "startDateTime": "String (timestamp)",
   "lastUpdatedDateTime": "String (timestamp)",
-  "deviceLocation": {
-    "@odata.type": "microsoft.graph.deviceGeoLocation",
-    "lastCollectedDateTime": "String (timestamp)",
-    "longitude": "<Unknown Primitive Type Edm.Double>",
-    "latitude": "<Unknown Primitive Type Edm.Double>",
-    "altitude": "<Unknown Primitive Type Edm.Double>",
-    "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
-    "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
-    "heading": "<Unknown Primitive Type Edm.Double>",
-    "speed": "<Unknown Primitive Type Edm.Double>"
-  }
+  "deviceLocation": {"@odata.type": "microsoft.graph.deviceGeoLocation"}
 }
 ```
 

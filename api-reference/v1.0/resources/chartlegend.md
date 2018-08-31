@@ -7,20 +7,20 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartLegend](../api/chartlegend_get.md) | [ChartLegend](chartlegend.md) |Чтение свойств и связей объекта chartLegend.|
-|[Обновление](../api/chartlegend_update.md) | [ChartLegend](chartlegend.md)    |Обновление объекта ChartLegend. |
+|[Получение объекта ChartLegend](../api/chartlegend_get.md) | [WorkbookChartLegend](chartlegend.md) |Чтение свойств и связей объекта chartLegend.|
+|[Update](../api/chartlegend_update.md) | [WorkbookChartLegend](chartlegend.md) |Обновление объекта ChartLegend. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|overlay|boolean|Логическое значение, определяющее, должна ли легенда диаграммы пересекаться с основной частью диаграммы.|
-|position|string|Представляет расположение легенды на диаграмме. Возможные значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
-|visible|boolean|Логическое значение, представляющее видимость объекта ChartLegend.|
+|overlay|boolean (логический)|Логическое значение, определяющее, должна ли легенда диаграммы пересекаться с основной частью диаграммы.|
+|position|string (строка)|Представляет положение условного обозначения диаграммы. Возможные значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`,`Custom`.|
+|visible|boolean (логический)|Логическое значение, представляющее видимость объекта ChartLegend.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[ChartLegendFormat](chartlegendformat.md)|Представляет форматирование легенды диаграммы, включая заливку и шрифт. Только для чтения.|
+|format|[WorkbookChartLegendFormat](chartlegendformat.md)|Представляет форматирование условного обозначения диаграммы, включая заливку и шрифт. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -28,17 +28,19 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 }-->
 
 ```json
 {
   "overlay": true,
   "position": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
 }
 
 ```

@@ -15,27 +15,27 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|settingName|String|Имя параметра|
-|instancePath|String|Имя пути к экземпляру для параметра|
-|unknownDeviceCount|Int32|Количество неизвестных устройств для параметра|
-|notApplicableDeviceCount|Int32|Количество неприменимых устройств для параметра|
-|compliantDeviceCount|Int32|Количество соответствующих устройств для параметра|
-|remediatedDeviceCount|Int32|Количество соответствующих устройств для параметра|
-|nonCompliantDeviceCount|Int32|Количество несоответствующих устройств для параметра|
-|errorDeviceCount|Int32|Количество ошибок устройств для параметра|
+|id|String (строка)|Ключ объекта.|
+|settingName|String (строка)|Имя параметра.|
+|instancePath|String (строка)|Имя пути к экземпляру для параметра.|
+|unknownDeviceCount|Int32|Количество неизвестных устройств для параметра.|
+|notApplicableDeviceCount|Int32|Количество неприменимых устройств для параметра.|
+|compliantDeviceCount|Int32|Количество соответствующих устройств для параметра.|
+|remediatedDeviceCount|Int32|Количество соответствующих устройств для параметра.|
+|nonCompliantDeviceCount|Int32|Количество несоответствующих устройств для параметра.|
+|errorDeviceCount|Int32|Количество ошибок устройств для параметра.|
 |conflictDeviceCount|Int32|Количество конфликтов устройств для параметра|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.settingStateDeviceSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.settingStateDeviceSummary",

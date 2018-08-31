@@ -1,16 +1,16 @@
 # <a name="educationstudent-resource-type"></a>Тип ресурса educationStudent
 
-Добавляются дополнительные сведения в файл [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `student`.
+Добавляются дополнительные сведения в файл [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `student`.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |birthDate|Date| Дата рождения учащегося.|
-|externalId|String| Идентификатор учащегося в исходной системе.|
-|gender|`educationGender enumeration`| Возможные значения: `female`, `male`, `other`, `unkownFutureValue`.|
-|оценка|String|Текущий уровень оценок учащегося.|
-|graduationYear|String| Год выпуска учащегося из школы.|
-|studentNumber|String| Student Number.|
+|externalId|String (строка)| Идентификатор учащегося в исходной системе.|
+|gender|educationGender| Возможные значения: `female`, `male`, `other`, `unknownFutureValue`.|
+|grade|String (строка)|Текущий уровень оценок учащегося.|
+|graduationYear|String (строка)| Год выпуска учащегося.|
+|studentNumber|String (строка)| Номер учащегося.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -24,8 +24,8 @@ POST /deviceManagement/exchangeConnectors
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|&lt;Токен&gt; носителя. Обязательный.|
-|Принять|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта deviceManagementExchangeConnector в формате JSON.
@@ -34,15 +34,16 @@ POST /deviceManagement/exchangeConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
+|id|String (строка)|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
-|status|String|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
-|serverName|String|Имя сервера, на котором размещается соединитель Exchange.|
-|exchangeConnectorType|String|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|version|String|Версия объекта ExchangeConnectorAgent|
-|exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
-|exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
+|primarySmtpAddress|String (строка)|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
+|serverName|String (строка)|Имя сервера Exchange.|
+|connectorServerName|String (строка)|Имя сервера, на котором размещается соединитель Exchange.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|version|String (строка)|Версия объекта ExchangeConnectorAgent|
+|exchangeAlias|String (строка)|Псевдоним, назначенный серверу Exchange Server|
+|exchangeOrganization|String (строка)|Организация Exchange, соответствующая серверу Exchange Server|
 
 
 
@@ -55,7 +56,7 @@ POST /deviceManagement/exchangeConnectors
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors
 Content-type: application/json
-Content-length: 433
+Content-length: 490
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -63,6 +64,7 @@ Content-length: 433
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",
@@ -71,11 +73,11 @@ Content-length: 433
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 482
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -84,6 +86,7 @@ Content-Length: 482
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",
