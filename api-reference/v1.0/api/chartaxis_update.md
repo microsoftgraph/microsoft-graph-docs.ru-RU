@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -28,14 +28,14 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|majorUnit|object|Обозначает интервал между двумя основными делениями. Можно указать в виде числового значения или пустой строки.  Возвращаемое значение всегда является числом.|
-|maximum|object|Представляет максимальное значение на оси значений.  Можно указать в виде числового значения или пустой строки (для автоматически заданных значений оси).  Возвращаемое значение всегда является числом.|
-|minimum|object|Представляет минимальное значение на оси значений. Ему можно присвоить числовое значение или пустую строку (для автоматически заданных значений оси). Всегда возвращает числовое значение.|
-|minorUnit|object|Представляет интервал между двумя промежуточными делениями. Можно указать в виде числового значения или пустой строки (для автоматически заданных значений оси). Возвращаемое значение всегда является числом.|
+|majorUnit|Json|Обозначает интервал между двумя основными делениями. Можно указать в виде числового значения или пустой строки.  Возвращаемое значение всегда является числом.|
+|maximum|Json|Представляет максимальное значение на оси значений.  Можно указать в виде числового значения или пустой строки (для автоматически заданных значений оси).  Возвращаемое значение всегда является числом.|
+|minimum|Json|Представляет минимальное значение на оси значений. Ему можно присвоить числовое значение или пустую строку (для автоматически заданных значений оси). Всегда возвращает числовое значение.|
+|minorUnit|Json|Представляет интервал между двумя промежуточными делениями. Можно указать в виде числового значения или пустой строки (для автоматически заданных значений оси). Возвращаемое значение всегда является числом.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartAxis](../resources/chartaxis.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [WorkbookChartAxis](../resources/chartaxis.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -44,7 +44,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
   "name": "update_chartaxis"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
 Content-type: application/json
 Content-length: 64
 
@@ -57,12 +57,12 @@ Content-length: 64
   }
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartaxis"
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 } -->
 ```http
 HTTP/1.1 200 OK

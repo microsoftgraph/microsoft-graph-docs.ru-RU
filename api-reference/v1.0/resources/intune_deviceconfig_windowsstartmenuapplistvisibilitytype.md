@@ -1,0 +1,15 @@
+# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>Тип перечисления windowsStartMenuAppListVisibilityType
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Тип видимости списка приложения меню "Пуск".
+## <a name="windowsstartmenuapplistvisibilitytype-flags"></a>Флаги windowsStartMenuAppListVisibilityType
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|userDefined|0|Определено пользователем. Значение по умолчанию.|
+|collapse|1|Сворачивание списка приложения в меню "Пуск".|
+|remove|2|Удаление списка приложения из меню "Пуск".|
+|disableSettingsApp|4|Отключение соответствующего переключателя ("свернуть" или "удалить") в приложении "Параметры".|
+
+
+

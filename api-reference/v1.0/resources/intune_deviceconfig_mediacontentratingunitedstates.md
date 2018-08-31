@@ -6,8 +6,8 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|movieRating|String|Рейтинг фильма для США. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `parentalGuidance13`, `restricted`, `adults`.|
-|tvRating|String|Телевизионный рейтинг для США. Возможные значения: `allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults`.|
+|оценка фильма|[оценка типа фильма в США](../resources/intune_deviceconfig_ratingunitedstatesmoviestype.md)|Оценка фильмов, выбранных для США. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `parentalGuidance13`, `restricted`, `adults`.|
+|тв-оценка|[оценка типа телевидения в США](../resources/intune_deviceconfig_ratingunitedstatestelevisiontype.md)|Оценка тв, выбранного для США. Допустимые значения: `allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -15,7 +15,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mediaContentRatingUnitedStates"
 }
 -->

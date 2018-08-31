@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/borders(<sideIndex>)
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/borders(<sideIndex>)
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
+PATCH /workbook/names/{name}/range/format/borders/{sideIndex}
+PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/{sideIndex}
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -28,13 +28,13 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideInd
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
-|style|string|Одна из констант типа линии, определяющая тип линии границы. Возможные значения: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
-|weight|string|Определяет толщину границы вокруг диапазона. Возможные значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
+|color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
+|style|string (строка)|Одна из констант типа линии, определяющая тип линии границы. Возможные значения: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
+|weight|string (строка)|Задает толщину границы в диапазоне. Возможные значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [RangeBorder](../resources/rangeborder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [WorkbookRangeBorder](../resources/rangeborder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -43,7 +43,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideInd
   "name": "update_rangeborder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders(<sideIndex>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders/{sideIndex}
 Content-type: application/json
 Content-length: 136
 
@@ -54,12 +54,12 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 } -->
 ```http
 HTTP/1.1 200 OK

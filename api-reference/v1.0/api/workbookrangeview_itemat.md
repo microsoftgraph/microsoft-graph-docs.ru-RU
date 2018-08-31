@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/itemAt(index={n})
+GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/itemAt(index={n})
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -22,7 +22,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="function-parameters"></a>Параметры функций
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 
 | Параметр    | Тип   |Описание|
@@ -37,17 +37,18 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "workbookrangeview_itemat"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/itemAt(index=0)
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/itemAt(index=0)
 
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

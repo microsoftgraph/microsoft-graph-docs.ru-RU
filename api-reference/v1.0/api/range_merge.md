@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/merge
+POST /workbook/names/{name}/range/merge
 POST /workbook/worksheets/{id|name}/range(address='<address>')/merge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
@@ -29,7 +29,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|across|boolean|Необязательный параметр. Установите значение true, чтобы объединить ячейки в каждой строке заданного диапазона как отдельные объединенные ячейки. Значение по умолчанию — false.|
+|across|boolean (логический)|Необязательный параметр. Установите значение true, чтобы объединить ячейки в каждой строке заданного диапазона как отдельные объединенные ячейки. Значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик
 
@@ -44,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
   "name": "range_merge"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/merge
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/merge
 Content-type: application/json
 Content-length: 20
 
@@ -53,12 +53,10 @@ Content-length: 20
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

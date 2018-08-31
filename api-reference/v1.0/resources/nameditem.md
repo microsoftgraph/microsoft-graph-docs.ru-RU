@@ -7,29 +7,29 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Add](../api/nameditem_add.md)|[NamedItem](nameditem.md)|Добавляет новое имя в определенную коллекцию.|
-|[AddFormulaLocal](../api/nameditem_addformulalocal.md)|[NamedItem](nameditem.md)|Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.|
-|[Get NamedItem](../api/nameditem_get.md) | [NamedItem](nameditem.md) |Чтение свойств и связей объекта namedItem.|
-|[Обновление](../api/nameditem_update.md) | [NamedItem](nameditem.md)   |Обновление объекта NamedItem. |
+|[Add](../api/nameditem_add.md)|[WorkbookNamedItem](nameditem.md)|Добавляет новое имя в коллекцию данной области.|
+|[AddFormulaLocal](../api/nameditem_addformulalocal.md)|[WorkbookNamedItem](nameditem.md)|Добавляет новое имя в коллекцию данной области, используя языковой стандарт пользователя для формулы.|
+|[Get NamedItem](../api/nameditem_get.md) | [WorkbookNamedItem](nameditem.md) |Чтение свойств и связей объекта namedItem.|
+|[Update](../api/nameditem_update.md) | [WorkbookNamedItem](nameditem.md)   |Обновление объекта NamedItem. |
 |[Range](../api/nameditem_range.md)|[Range](range.md)|Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.|
-|[Список](../api/nameditem_list.md) | Коллекция объектов [NamedItem](nameditem.md) |Получение коллекции объектов namedItem. |
+|[List](../api/nameditem_list.md) | Коллекция [WorkbookNamedItem](nameditem.md) |Получение коллекции объектов namedItem. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|string|Имя объекта. Только для чтения.|
-|comment|строка|Представляет примечание, связанное с этим именем.|
+|comment|string|Представляет примечание, связанное с этим именем.|
 |scope|string|Указывает, относится ли имя к книге или определенному листу. Только для чтения.|
-|type|string|Указывает тип ссылки, связанный с именем. Возможные значения: `String`, `Integer`, `Double`, `Boolean`, `Range`. Только для чтения.|
-|value|строка|Представляет формулу, на которую ссылается имя. Например, =Sheet14!$B$2:$H$12, =4.75 и т. д. Только для чтения.|
+|type|string|Указывает, какой тип ссылки связан с именем. Возможные значения: `String`, `Integer`, `Double`, `Boolean`, `Range`. Только для чтения.|
+|value|Json|Представляет формулу, на которую ссылается имя. Например, =Sheet14!$B$2:$H$12, =4.75 и т. д. Только для чтения.|
 |visible|boolean|Определяет, является ли объект видимым.|
 
 ## <a name="relationships"></a>Связи
 | Связь     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|
+|worksheet|[WorkbookWorksheet](worksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -38,7 +38,8 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.namedItem"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 }-->
 
 ```json
@@ -47,7 +48,7 @@
   "comment": "string",
   "scope": "string",
   "type": "string",
-  "value": "string",
+  "value": {"@odata.type": "microsoft.graph.Json"},
   "visible": true
   
 }

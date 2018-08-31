@@ -1,10 +1,10 @@
-# <a name="create-devicecompliancepolicysettingstatesummary"></a>Create deviceCompliancePolicySettingStateSummary
+# <a name="create-devicecompliancepolicysettingstatesummary"></a>Создание объекта deviceCompliancePolicySettingStateSummary
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Создание объекта [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md).
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -21,11 +21,11 @@
 POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Подтверждение|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта deviceCompliancePolicySettingStateSummary в формате JSON.
@@ -36,15 +36,15 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 |:---|:---|:---|
 |setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра.|
-|platformType|String|Выбор платформы. Возможные значения: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `all`.|
-|id|String|Ключ объекта.|
-|unknownDeviceCount|Int32|Количество неизвестных устройств|
-|notApplicableDeviceCount|Int32|Количество неприменимых устройств|
-|compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям|
-|remediatedDeviceCount|Int32|Количество исправленных устройств|
-|nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям|
-|errorDeviceCount|Int32|Количество устройств с ошибками|
-|conflictDeviceCount|Int32|Количество конфликтующих устройств|
+|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Платформа настройки. Возможные значения: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|id|Строка|Ключ объекта.|
+|unknownDeviceCount|Int32|Количество неизвестных устройств.|
+|notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
+|compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
+|remediatedDeviceCount|Int32|Количество исправленных устройств.|
+|nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
+|errorDeviceCount|Int32|Количество устройств с ошибками.|
+|conflictDeviceCount|Int32|Количество конфликтующих устройств.|
 
 
 
@@ -75,7 +75,7 @@ Content-length: 391
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

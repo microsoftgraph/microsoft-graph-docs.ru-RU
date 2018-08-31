@@ -1,6 +1,6 @@
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>Тип ресурса enrollmentTroubleshootingEvent
 
-> **Важно:**API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование данных API интерфейсов в рабочих приложениях не поддерживается.
+> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -20,28 +20,28 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|UUID объекта. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
+|id|Строка|UUID объекта. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
 |eventDateTime|DateTimeOffset|Время возникновения события. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
-|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
-|managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
-|operatingSystem|String|Операционная система.|
-|osVersion|String|Версия ОС.|
-|userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
-|deviceId|String|Идентификатор устройства Azure AD.|
-|enrollmentType|String|Тип регистрации. Возможные значения: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-|failureCategory|String|Категория сбоя высокого уровня. Возможные значения: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`.|
-|failureReason|String|Подробная причина ошибки.|
+|correlationId|Строка|Идентификатор, используемый для трассировки сбоя в службе. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
+|managedDeviceIdentifier|Строка|Идентификатор события, созданный или полученный службой Intune.|
+|operatingSystem|Строка|Операционная система.|
+|osVersion|Строка|Версия ОС.|
+|userId|Строка|Идентификатор пользователя, который пытался зарегистрировать устройство.|
+|deviceId|Строка|Идентификатор устройства Azure AD.|
+|enrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
+|failureCategory|[deviceEnrollmentFailureReason](../resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|Категория сбоя высокого уровня. Возможные значения: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`.|
+|failureReason|Строка|Подробная причина ошибки.|
 
 ## <a name="relationships"></a>Связи
-None
+Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceManagementTroubleshootingEvent",
   "@odata.type": "microsoft.graph.enrollmentTroubleshootingEvent"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",

@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/delete
+POST /workbook/names/{name}/range/delete
 POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
@@ -29,9 +29,9 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|shift|string|Указывает направление сдвига ячеек.  Возможные значения: `Up`, `Left`.|
+|shift|string (строка)|Указывает, как сдвигать ячейки.  Возможные значения: `Up`, `Left`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
 
@@ -44,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
   "name": "range_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/delete
 Content-type: application/json
 Content-length: 28
 
@@ -53,12 +53,11 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
