@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListItem
-ms.openlocfilehash: 0f5afaeff29da6f3a6330975adece44731e014bc
-ms.sourcegitcommit: 4bdff5fdaea824c7c1204ec7dd641abc282d32a1
+ms.openlocfilehash: 13ddb00d90880570361c7dcbe198c7c90e044957
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264401"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
 
@@ -37,17 +38,22 @@ ms.lasthandoff: 01/30/2018
 
 Ниже показано представление ресурса **listItem** в формате JSON.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.listItem",
-       "keyProperty": "id" } -->
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
 
 ```json
 {
-  "contentType": { "@odata.type": "microsoft.graph.contentType" },
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
   "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
 
   /* relationships */
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string",
@@ -58,6 +64,7 @@ ms.lasthandoff: 01/30/2018
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
   "webUrl": "url"
 }
 ```
@@ -68,36 +75,43 @@ ms.lasthandoff: 01/30/2018
 
 | Имя свойства | Тип                | Описание
 |:--------------|:--------------------|:-------------------------------
-| contentType   | [contentTypeInfo][] | Тип контента для данного элемента списка.
-| fields        | [fieldValueSet][]   | Значения столбцов, установленные для данного элемента списка.
+| contentType   | [contentTypeInfo][] | Тип содержимого для данного элемента списка.
 
-Ниже перечислены свойства, которые наследуются от ресурса **[baseItem][]**.
+Следующие свойства наследуются от **[baseItem][]**.
 
-| Имя свойства        | Тип             | Описание
-|:---------------------|:-----------------|:-----------------------------------
-| id                   | string           | Уникальный идентификатор элемента. Только для чтения.
-| name                 | string           | Имя или название элемента.
-| createdBy            | [identitySet][]  | Удостоверение создателя данного элемента. Только для чтения.
-| createdDateTime      | DateTimeOffset   | Дата и время создания элемента. Только для чтения.
-| description          | строка           | Текст с описанием элемента.
-| lastModifiedBy       | [identitySet][]  | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
-| lastModifiedDateTime | DateTimeOffset   | Дата и время последнего изменения элемента. Только для чтения.
-| webUrl               | строка (url-адрес)     | URL-адрес для отображения элемента в браузере. Только для чтения.
+| Имя свойства        | Тип              | Описание
+|:---------------------|:------------------|:----------------------------------
+| id                   | string (строка)            | Уникальный идентификатор элемента. Только для чтения.
+| name                 | string (строка)            | Имя или название элемента.
+| createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
+| createdDateTime      | DateTimeOffset    | Дата и время создания элемента. Только для чтения.
+| description          | string (строка)            | Текст с описанием элемента.
+| eTag                 | string (строка)            | ETag для элемента. Только для чтения.                                                          |
+| lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
+| lastModifiedDateTime | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
+| parentReference      | [itemReference][] | Сведения о родительском элементе, если у элемента таковой имеется. Чтение и запись.
+| sharepointIds        | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
+| webUrl               | строка (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.
 
 ## <a name="relationships"></a>Связи
 
  Ниже перечислены связи ресурса **listItem** с другими ресурсами.
 
-| Имя связи | Тип                        | Описание
-|:------------------|:----------------------------|:-------------------------------
-| driveItem         | [driveItem][]               | Для библиотек документов связь **driveItem** предоставляет ресурс listItem как объект **[driveItem][]**
+| Имя связи | Тип                           | Описание
+|:------------------|:-------------------------------|:-------------------------------
+| driveItem         | [driveItem][]                  | Для библиотек документов связь **driveItem** предоставляет listItem как **[driveItem][]**
+| fields            | [fieldValueSet][]              | Значения столбцов, установленные для данного элемента списка.
+| versions          | Коллекция [listItemVersion][] | Список предыдущих версий элемента списка.
 
 [baseItem]: baseItem.md
 [contentTypeInfo]: contentTypeInfo.md
 [driveItem]: driveItem.md
 [fieldValueSet]: fieldValueSet.md
 [identitySet]: identitySet.md
+[itemReference]: itemreference.md
 [list]: list.md
+[listItemVersion]: listItemVersion.md
+[sharepointIds]: sharepointIds.md
 
 <!-- {
   "type": "#page.annotation",

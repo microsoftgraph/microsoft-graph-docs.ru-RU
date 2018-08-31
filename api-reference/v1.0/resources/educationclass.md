@@ -30,9 +30,8 @@
 |classCode|String| Код курса, используемый учебным заведением для идентификации курса.|
 |externalId|String| Идентификатор курса из системы синхронизации. |
 |externalName|String|Название курса в системе синхронизации.|
-|externalSource|string| Способ создания этого курса. Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
+|externalSource|educationExternalSource| Способ создания этого класса. Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Срок для этого курса.|
-
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
@@ -40,16 +39,17 @@
 |members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение NULL.|
 |schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL.|
 |teachers|Коллекция [educationUser](../resources/educationuser.md)|  Все преподаватели для этого курса. Допускается значение NULL.|
+|group|[group](../resources/group.md)| Группа справочников, соответствующих этому классу.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationClass"
 }-->
 
@@ -64,7 +64,7 @@
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```

@@ -12,23 +12,23 @@ ManagedAppEntity — это базовый тип для всех остальн
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Н/Д|
+|displayName|String (строка)|Н/Д|
 |configurationDeployedUserCount|Int32|Н/Д|
 |lastRefreshTime|DateTimeOffset|Н/Д|
 |configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md)|Н/Д|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|id|String (строка)|Ключ объекта.|
+|version|String (строка)|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",

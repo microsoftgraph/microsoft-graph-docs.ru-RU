@@ -6,22 +6,21 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя приложения.|
-|description|String|Описание приложения.|
-|publisherName|String|Имя издателя|
-|productName|String|Название продукта.|
-|denied|Boolean|Если задано значение true, то приложению отказано в защите или исключении.|
+|displayName|String (строка)|Отображаемое имя приложения.|
+|description|String (строка)|Описание приложения.|
+|publisherName|String (строка)|Имя издателя|
+|productName|String (строка)|Название продукта.|
+|denied|Boolean (логический)|Если задано значение true, то приложению отказано в защите или исключении.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "abstract": true,
   "@odata.type": "microsoft.graph.windowsInformationProtectionApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionApp",

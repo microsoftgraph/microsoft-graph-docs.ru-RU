@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)
+PATCH /workbook/names/{name}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -26,12 +26,12 @@ PATCH /workbook/names(<name>)
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|visible|boolean|Определяет, является ли объект видимым.|
-|comment|   строка  |Представляет примечание, связанное с этим именем.|
+|видимый|логический|Определяет, является ли объект видимым.|
+|комментарий|   строка  |Представляет примечание, связанное с этим именем.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [NamedItem](../resources/nameditem.md) в тексте отклика.
+|||UNTRANSLATED_CONTENT_START|||If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.|||UNTRANSLATED_CONTENT_END|||
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -40,7 +40,7 @@ PATCH /workbook/names(<name>)
   "name": "update_nameditem"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}
 Content-type: application/json
 Content-length: 87
 
@@ -53,12 +53,12 @@ Content-length: 87
   "visible": true
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-ms.openlocfilehash: 715c6ca22957cbd951784e6cf32edf2bf47f1098
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 37c324ddb1863e3e589e7d17ea60bd879e50771f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267558"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Тип ресурса personOrGroupColumn
 
@@ -34,25 +35,25 @@ ms.lasthandoff: 09/28/2017
 | **displayAs**              | строка  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
 | **chooseFromType**         | строка  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`.
 
-## <a name="displayas-values"></a>Значения DisplayAs
+## <a name="displayas-options"></a>Параметры displayAs
 
 | Значение DisplayAs               | Описание
 |:------------------------------|:-----------------------
-| **account**                   | Необработанная закодированная строка утверждения SharePoint для человека или группы (например, i:0#.f|membership|olga@contoso.com).
-| **department**                | Отдел человека или группы.
+| **учетная запись**                   | Необработанная закодированная строка утверждения SharePoint для человека или группы (например, i:0#.f|членство|olga@contoso.com).
+| **отдел**                | Отдел человека или группы.
 | **firstName**                 | Имя человека.
-| **id**                        | Идентификатор человека или группы в каталоге.
+| **ИД**                        | Идентификатор человека или группы в каталоге.
 | **lastName**                  | Фамилия человека.
 | **mobilePhone**               | Номер мобильного телефона человека.
-| **name**                      | Имя человека.
+| **имя**                      | Имя человека.
 | **nameWithPictureAndDetails** | Имя человека, а также его изображение и дополнительные сведения о нем.
-| **nameWithPresence**          | Значение, используемое по умолчанию. Имя человека со значком индикатора присутствия (доступен, занят и т. д.)
-| **office**                    | Номер офиса человека.
-| **pictureOnly36x36**          | Изображение человека, ограниченное квадратом размером 36 x 36 пикселей.
-| **pictureOnly48x48**          | Изображение человека, ограниченное квадратом размером 48 x 48 пикселей.
-| **pictureOnly72x72**          | Изображение человека, ограниченное квадратом размером 72 x 72 пикселей.
+| **nameWithPresence**          | Значение, используемое по умолчанию. Имя человека со значком индикатора присутствия (доступен, занят и т. д.)
+| **офис**                    | Номер офиса человека.
+| **pictureOnly36x36**          | Изображение человека, ограниченное квадратом размером 36 x 36 пикселей.
+| **pictureOnly48x48**          | Изображение человека, ограниченное квадратом размером 48 x 48 пикселей.
+| **pictureOnly72x72**          | Изображение человека, ограниченное квадратом размером 72 x 72 пикселей.
 | **sipAddress**                | SIP-адрес человека.
-| **title**                     | Должность человека в организации.
+| **должность**                     | Должность человека в организации.
 | **userName**                  | Имя пользователя человека или группы.
 | **workEmail**                 | Электронный адрес человека или группы.
 | **workPhone**                 | Номер рабочего телефона человека.
@@ -64,5 +65,11 @@ ms.lasthandoff: 09/28/2017
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(peopleAndGroups,peopleOnly) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(account,contentType,created,department,...) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->

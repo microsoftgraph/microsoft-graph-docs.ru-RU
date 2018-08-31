@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Column
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Column
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
+GET /workbook/names/{name}/range/column
+GET /workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -24,12 +24,12 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
+## <a name="path-parameters"></a>Параметры пути
+В пути запроса укажите следующие параметры.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|column|number|Номер столбца диапазона, который требуется извлечь. Используется нулевой индекс.|
+|column|Int32|Номер столбца диапазона, который требуется извлечь. Используется нулевой индекс.|
 
 ## <a name="response"></a>Отклик
 
@@ -39,27 +39,21 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_column"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
-Content-type: application/json
-Content-length: 21
-
-{
-  "column": {
-  }
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/column(column=5)
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

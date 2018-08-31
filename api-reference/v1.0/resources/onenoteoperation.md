@@ -6,11 +6,10 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.operation",
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
@@ -31,13 +30,13 @@
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
-|error|[onenoteOperationError](onenoteoperationerror.md)|Ошибка при выполнении операции.|
-|id|string|Идентификатор операции. Только для чтения.|
+|ошибка|[onenoteOperationError](onenoteoperationerror.md)|Ошибка при выполнении операции.|
+|ИД|строковый|Идентификатор операции. Только для чтения.|
 |lastActionDateTime| DateTimeOffset |Время последнего действия операции.|
-|resourceId|string|Идентификатор ресурса.|
-|resourceLocation|string|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
-|status|string|Текущее состояние операции: `notstarted`, `running`, `completed`, `failed`. |
-|percentComplete|string|Процент завершения операции, если операция в состоянии `running`.
+|resourceId|строковый|Идентификатор ресурса.|
+|resourceLocation|строковый|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
+|состояние|строковый|Текущее состояние операции: `notstarted`, `running`, `completed`, `failed`. `failed` |
+|percentComplete|строковый|Процент завершения операции, если операция в состоянии `running`.
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -6,29 +6,27 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|setting|String|Параметр для отчета|
-|settingName|String|Локализованное или понятное имя параметра для отчета|
-|instanceDisplayName|String|Имя экземпляра параметра для отчета|
-|state|String|Состояние соответствия требованиям для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|setting|String (строка)|Параметр для отчета|
+|settingName|String (строка)|Локализованное или понятное имя параметра для отчета|
+|instanceDisplayName|String (строка)|Имя экземпляра параметра для отчета|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |errorCode|Int64|Код ошибки для параметра|
-|errorDescription|String|Описание ошибки|
-|userId|String|ИД пользователя|
-|userName|String|Имя пользователя|
-|userEmail|String|Электронный адрес пользователя|
-|userPrincipalName|String|Имя участника-пользователя.|
+|errorDescription|String (строка)|Описание ошибки|
+|userId|String (строка)|ИД пользователя|
+|userName|String (строка)|Имя пользователя|
+|userEmail|String (строка)|Электронный адрес пользователя|
+|userPrincipalName|String (строка)|Имя участника-пользователя.|
 |sources|Коллекция [settingSource](../resources/intune_deviceconfig_settingsource.md)|Соответствующие политики|
-|currentValue|String|Текущее значение параметра на устройстве|
+|currentValue|String (строка)|Текущее значение параметра на устройстве|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationSettingState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationSettingState",

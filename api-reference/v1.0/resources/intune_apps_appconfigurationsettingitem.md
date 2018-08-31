@@ -7,19 +7,17 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |appConfigKey|Строка|Ключ конфигурации приложения.|
-|appConfigKeyType|Строка|Тип ключа конфигурации приложения. Возможные значения: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
+|appConfigKeyType|mdmAppConfigKeyType|Тип ключа конфигурации приложения. Возможные значения: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|Строка|Значение ключа конфигурации приложения.|
 
 ## <a name="relationships"></a>Связи
-None
+Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appConfigurationSettingItem",

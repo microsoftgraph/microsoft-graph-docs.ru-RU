@@ -12,23 +12,24 @@
 |:---|:---|:---|
 |[Перечисление androidManagedAppRegistrations](../api/intune_mam_androidmanagedappregistration_list.md)|Коллекция [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Список свойств и связей объектов [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
 |[Получение androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_get.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Считывание свойств и связей объекта [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
+|[Создание androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_create.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Создание нового объекта [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации приложения со службой управления. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|applicationVersion|String|Версия приложения. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|managementSdkVersion|String|Версия пакета SDK для управления приложениями. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|platformVersion|String|Версия операционной системы. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|deviceType|String|Тип главного устройства. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|deviceTag|String|Тег, который создан с использованием пакета SDK для управления приложениями и помогает связывать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|deviceName|String|Имя устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|flaggedReasons|Коллекция строк|Причины, по которым помечается регистрация приложения (если они есть). Пример: приложение запускается на рутованном устройстве. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|userId|String|ИД пользователя, к которому относится эта регистрация приложения. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации приложения со службой управления. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|applicationVersion|String (строка)|Версия приложения. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|managementSdkVersion|String (строка)|Версия пакета SDK для управления приложениями. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|platformVersion|String (строка)|Версия операционной системы. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|deviceType|String (строка)|Тип главного устройства. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|deviceTag|String (строка)|Тег, который создан с использованием пакета SDK для управления приложениями и помогает связывать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|deviceName|String (строка)|Имя устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|flaggedReasons|Коллекция [перечисления managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Причины (при наличии таковых), по которым помечается регистрация приложения. Пример: приложение запускается на рутованном устройстве. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|userId|String (строка)|ИД пользователя, к которому относится эта регистрация приложения. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Идентификатор пакета приложения. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|id|String|Ключ объекта. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|version|String|Версия объекта. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|id|String (строка)|Ключ объекта. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|version|String (строка)|Версия объекта. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -42,6 +43,7 @@
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedAppRegistration",
   "@odata.type": "microsoft.graph.androidManagedAppRegistration"
 }
 -->
@@ -61,7 +63,7 @@
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "@odata.type": "microsoft.graph.mobileAppIdentifier",
     "packageId": "String"
   },
   "id": "String (identifier)",

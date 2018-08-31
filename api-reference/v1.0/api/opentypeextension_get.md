@@ -6,9 +6,9 @@
 
 |**Сценарий GET**|**Поддерживаемые ресурсы**|**Текст ответа**|
 |:-----|:-----|:-----|
-|Получение определенного расширения из экземпляра известного ресурса.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Только открытое расширение.|
-|Получение экземпляра известного ресурса, дополненного определенным расширением.|Device, event, group, group event, group post, message, organization, personal contact, user |Экземпляр известного ресурса, дополненный открытым расширением.|
-|Поиск экземпляров ресурсов и их дополнение определенным расширением. |Event, group event, group post, message, personal contact|Экземпляры ресурса, дополненные открытым расширением.|
+|Получение определенного расширения из экземпляра известного ресурса.| [Устройство](../resources/device.md), [событие](../resources/event.md), [группа](../resources/group.md), [событие группы](../resources/event.md), [публикация группы](../resources/post.md), [сообщение](../resources/message.md), [организация](../resources/organization.md), [личный контакт](../resources/contact.md), [пользователь](../resources/user.md) | Только открытое расширение.|
+|Получение экземпляра известного ресурса, дополненного определенным расширением.|Устройство, событие, группа, событие группы, публикация группы, сообщение, организация, личный контакт, пользователь |Экземпляр известного ресурса, дополненный открытым расширением.|
+|Поиск экземпляров ресурсов и их дополнение определенным расширением. | Событие, событие группы, публикация группы, сообщение, личный контакт|Экземпляры ресурса, дополненные открытым расширением.|
 
 ## <a name="permissions"></a>Разрешения
 
@@ -16,11 +16,11 @@
 
 |**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
 |:-----|:-----|:-----|:-----|
-| [Device](../resources/device.md) | Directory.Read.All | [Event](../resources/event.md) | Calendars.Read |
-| [Group](../resources/group.md) | Group.Read.All | [Event](../resources/event.md) для групп | Group.Read.All |
-| [Post](../resources/post.md) для групп | Group.Read.All | [Message](../resources/message.md) | Mail.Read |
-| [Organization](../resources/organization.md) | Directory.Read.All | [Contact](../resources/contact.md) (личный контакт) | Contacts.Read |
-| [User](../resources/user.md) | User.Read.All | | |
+| [Устройство](../resources/device.md) | Directory.Read.All | [Событие](../resources/event.md) | Calendars.Read |
+| [Группа](../resources/group.md) | Group.Read.All | [[Event](../resources/event.md) для групп](../resources/event.md) | Group.Read.All |
+| [[Post](../resources/post.md) для групп](../resources/post.md) | Group.Read.All | [Сообщение](../resources/message.md) | Mail.Read |
+| [Организация](../resources/organization.md) | Directory.Read.All | [[Contact](../resources/contact.md) (личный контакт)](../resources/contact.md) | Contacts.Read |
+| [Пользователь](../resources/user.md) | User.ReadBasic.All | | |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -83,22 +83,21 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 >**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения коллекции или экземпляров ресурсов, чье расширение нужно получить. Все другие варианты синтаксиса, позволяющие определить эти коллекции или экземпляры ресурсов, поддерживают получение открытых расширений этих экземпляров или коллекций подобным образом.
 
-## <a name="parameters"></a>Параметры
-|**Параметр**|**Тип**|**Описание**|
+## <a name="path-parameters"></a>Параметры пути
+|Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|_Параметры URL-адреса_|
-|Id|string|Заполнитель уникального идентификатора для объекта в соответствующей коллекции, например сообщения, события или контакта. Обязательный. Не следует путать его со свойством **id** объекта **openTypeExtension**.|
-|extensionId|string|Заполнитель имени расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полного имени, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве **id** при создании расширения. Обязательный.|
+|ИД|строковый|Заполнитель уникального идентификатора для объекта в соответствующей коллекции, например сообщения, события или контакта. Обязательный. Не следует путать его со свойством **id** объекта **openTypeExtension**.|
+|extensionId|строковый|Заполнитель имени расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полного имени, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве **id** при создании расширения. Обязательный.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Убедитесь, что вы применяете [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке `$filter`.
 
-|**Имя**|**Значение**|**Описание**|
+|Имя|Значение|Описание|
 |:---------------|:--------|:-------|
-|$filter|string|Возвращает расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
-|$filter с **любым** оператором|string|Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
-|$expand|string|Дополняет экземпляр ресурса расширением. |
+|$filter|строковый|Возвращает расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
+|$filter с **любым** оператором|строковый|Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
+|$expand|строковый|Дополняет экземпляр ресурса расширением. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
@@ -121,25 +120,26 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Com.Contoso.Referral", "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_1"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 По идентификатору (полному имени):
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
-#### <a name="response-1"></a>Отклик 1
+#### <a name="response-1"></a>Отклик 1
 Ниже представлен отклик для первого примера.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -147,7 +147,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -161,16 +161,17 @@ Content-type: application/json
 ****
 
 
-#### <a name="request-2"></a>Запрос 2
+#### <a name="request-2"></a>Запрос 2
 
 Во втором примере показано, как сослаться на расширение по его имени и получить расширение в указанном событии группы.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Com.Contoso.Deal", "f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA="],
   "name": "get_opentypeextension_2"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions('Com.Contoso.Deal') 
+GET https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal/
 ```
 
 #### <a name="response-2"></a>Отклик 2
@@ -180,7 +181,7 @@ GET https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -188,7 +189,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -205,10 +206,11 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_3"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 
 
@@ -282,7 +284,7 @@ Content-type: application/json
     "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.type": "#microsoft.graph.openTypeExtension",
         "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -301,11 +303,11 @@ Content-type: application/json
 В четвертом примере показано, как сослаться на расширение по его полному имени и получить расширение в указанной записи группы.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_opentypeextension_4"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate') 
+GET https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
 
 #### <a name="response-4"></a>Отклик 4
@@ -313,9 +315,9 @@ GET https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef
 Ниже представлен отклик из четвертого примера. 
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -365,6 +367,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages",
@@ -426,7 +429,7 @@ HTTP/1.1 200 OK
     "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.type": "#microsoft.graph.openTypeExtension",
         "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -450,5 +453,13 @@ HTTP/1.1 200 OK
   "description": "Get openTypeExtension",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/opentypeextension_get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get_opentypeextension_1, get_opentypeextension_2, get_opentypeextension_3, get_opentypeextension_5
+            Unmapped tables:
+        Get open extension - Unknown, Permissions - AuthScopes, Path parameters - PathParameters, Optional query parameters - PathParameters, Request headers - HttpHeaders"
+  ],
   "tocPath": ""
 }-->

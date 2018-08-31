@@ -1,6 +1,6 @@
 # <a name="get-section"></a>Получение раздела
 
-Получение свойств и связей объекта [section](../resources/section.md).
+Извлечение свойств и связи объекта [onenoteSection](../resources/section.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -26,15 +26,15 @@ GET /sites/{id}/onenote/sections/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [section](../resources/section.md) в тексте ответа.
+|||UNTRANSLATED_CONTENT_START|||If successful, this method returns a `200 OK` response code and a [onenoteSection](../resources/section.md) object in the response body.|||UNTRANSLATED_CONTENT_END|||
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

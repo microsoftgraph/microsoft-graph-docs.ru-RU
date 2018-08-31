@@ -7,35 +7,31 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта WorksheetProtection](../api/worksheetprotection_get.md) | [WorksheetProtection](worksheetprotection.md) |Чтение свойств и связей объекта worksheetProtection.|
-|[Protect](../api/worksheetprotection_protect.md)|Нет|Защита листа. Выдает исключение, если лист защищен.|
-|[Unprotect](../api/worksheetprotection_unprotect.md)|Нет|Снятие защиты с листа|
+|[Get WorksheetProtection](../api/worksheetprotection_get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Чтение свойств и связей объекта worksheetProtection.|
+|[Protect](../api/worksheetprotection_protect.md)|None|Защищает лист. Выдает исключение, если лист защищен.|
+|[Unprotect](../api/worksheetprotection_unprotect.md)|None|Снятие защиты с листа|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
+|options|[WorkbookWorksheetProtectionOptions](worksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
 |protected|boolean|Указывает, защищен ли лист.  Только для чтения.|
-
-## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
-|:---------------|:--------|:----------|
-|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true
+  "protected": true,
+  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
 }
 
 ```

@@ -13,8 +13,8 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/ItemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
+POST /workbook/tables/{id|name}/columns/itemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -28,37 +28,39 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|number|Значение индекса получаемого объекта. Используется нулевой индекс.|
+|index|Int32|Значение индекса получаемого объекта. Используется нулевой индекс.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа `200 OK`  и обновленный объект [ WorkbookTableColumn](../resources/tablecolumn.md)  в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "tablecolumncollection_itemat"
+  "isComposable": true,
+  "name": "tablecolumncollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.tablecolumncollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/itemAt
 Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 3
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 200 OK

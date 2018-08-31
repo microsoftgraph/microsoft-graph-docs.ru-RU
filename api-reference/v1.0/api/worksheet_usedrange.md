@@ -1,6 +1,6 @@
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
-Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если лист пустой, эта функция вернет верхнюю левую ячейку.
+Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если лист пустой, эта функция вернет верхнюю левую ячейку.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -13,16 +13,16 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/UsedRange
+GET /workbook/worksheets/{id|name}/usedRange
 
 ```
 
-## <a name="optional-request-parameter"></a>Необязательный параметр запросов
-В URL-адресе запроса предоставьте необязательный параметр запросов.
+## <a name="parameters"></a>Параметры
+В URL-адресе запроса можно указать дополнительные параметры.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|valuesOnly|Boolean|Необязательный параметр. Учитывает только ячейки со значениями (игнорирует форматирование).|
+|valuesOnly|Boolean (логический)|Необязательный параметр. Учитывает только ячейки со значениями (игнорирует форматирование).|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -36,22 +36,55 @@ GET /workbook/worksheets/{id|name}/UsedRange
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
+
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value"
+}
+```
+
+В ином варианте эта функция может быть вызвана с необязательным параметром `valuesOnly`.
+
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "worksheet_usedrange_valuesonly"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)
+```
+
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

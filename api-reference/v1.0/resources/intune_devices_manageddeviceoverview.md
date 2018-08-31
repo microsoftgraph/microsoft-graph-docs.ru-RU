@@ -12,10 +12,10 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сводки|
-|enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК|
-|mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM|
-|dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS|
+|id|String (строка)|Уникальный идентификатор сводки.|
+|enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК.|
+|mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM.|
+|dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devices_deviceoperatingsystemsummary.md)|Общие сведения об операционной системе устройства.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune_devices_deviceexchangeaccessstatesummary.md)|Распределение состояния доступа Exchange Access State в Intune|
 
@@ -23,12 +23,12 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedDeviceOverview"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: site
-ms.openlocfilehash: db465f93f336a51d862daf6e05b1d6bc422247ea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 20d31a9cdc0e540c2b2f2d93fedabdc254e9c03e
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265717"
 ---
 # <a name="site-resource"></a>Ресурс site
 
@@ -35,12 +36,22 @@ ms.lasthandoff: 09/28/2017
 
 Ниже показано представление ресурса **site** в формате JSON.
 
-Ресурс **driveItem** является производным от ресурса [**baseItem**](baseitem.md) и наследует его свойства.
+Ресурс **site** является производным от ресурса [**baseItem**](baseitem.md) и наследует его свойства.
 
-<!-- { "blockType": "resource",
-       "@odata.type": "microsoft.graph.site",
-       "keyProperty": "id",
-       "optionalProperties": [ "root", "sharepointIds", "siteCollection", "drive", "drives", "sites" ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "root",
+    "sharepointIds",
+    "siteCollection",
+    "drive",
+    "drives",
+    "sites"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.site"
+}-->
 
 ```json
 {
@@ -58,7 +69,7 @@ ms.lasthandoff: 09/28/2017
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
+  "onenote": { "@odata.type": "microsoft.graph.onenote"},
 
   /* inherited from baseItem */
   "name": "string",
@@ -78,9 +89,10 @@ ms.lasthandoff: 09/28/2017
 | **createdDateTime**      | DateTimeOffset                      | Дата и время создания элемента. Только для чтения.                                             |
 | **description**          | string                              | Текст с описанием сайта.                                                             |
 | **displayName**          | string                              | Полное название сайта. Только для чтения.                                                        |
+| **eTag**                 | string                              | ETag для элемента. Только для чтения.                                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | Дата и время последнего изменения элемента. Только для чтения.                                       |
 | **name**                 | string                              | Имя или название элемента.                                                                  |
-| **root**                 | [root](root.md)                     | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.            |
+| **root**                 | [root](root.md)                     | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения. |
 | **webUrl**               | строка (url-адрес)                        | URL-адрес для отображения элемента в браузере. Только для чтения.                                          |
@@ -89,13 +101,13 @@ ms.lasthandoff: 09/28/2017
 
 | Имя связи | Тип                             | Описание
 |:------------------|:---------------------------------|:----------------------
-| **columns**       | Collection([columnDefinition][]) | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.
-| **contentTypes**  | Collection([contentType][])      | Коллекция типов контента, определенных для этого сайта.
+| **columns**       | Коллекция ([columnDefinition][]) | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.
+| **contentTypes**  | Коллекция ([contentType][])      | Коллекция типов контента, определенных для этого сайта.
 | **drive**         | [drive][]                        | Диск по умолчанию (библиотека документов) для этого сайта.
-| **drives**        | Collection([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
+| **drives**        | Коллекция([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
 | **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
 | **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
-| **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
+| **sites**         | Коллекция([site][])             | Коллекция дочерних сайтов этого сайта.
 | **onenote**       | [onenote][]                      | Вызывает службу OneNote для выполнения операций, связанных с записными книжками.
 
 [columnDefinition]: columndefinition.md

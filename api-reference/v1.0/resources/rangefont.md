@@ -1,24 +1,24 @@
 # <a name="rangefont-resource-type"></a>Тип ресурса RangeFont
 
-Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта.
+Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeFont](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Чтение свойств и связей объекта rangeFont.|
-|[Обновление](../api/rangefont_update.md) | [RangeFont](rangefont.md)    |Обновление объекта RangeFont. |
+|[Получение объекта RangeFont](../api/rangefont_get.md) | [WorkbookRangeFont](rangefont.md) |Чтение свойств и связей объекта rangeFont.|
+|[Обновление](../api/rangefont_update.md) | [WorkbookRangeFont](rangefont.md)   |Обновление объекта RangeFont. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
 |color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
 |size|double|font-size|
-|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|underline|string|Тип подчеркивания, применяемый к шрифту. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -28,12 +28,11 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFont"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 }-->
 
 ```json

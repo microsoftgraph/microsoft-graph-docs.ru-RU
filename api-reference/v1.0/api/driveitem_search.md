@@ -2,17 +2,18 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Поиск файлов"
-ms.openlocfilehash: 1d4b4153f6c208390d928fc7833ecc5e1a9be094
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Поиск файлов
+ms.openlocfilehash: 35349150847c86d1fc7198309c13d910290b9019
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265234"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
 
 Поиск элементов, соответствующих запросу, в иерархии элементов.
-Вы можете выполнить поиск в иерархии папок, на всем диске или среди файлов, к которым предоставлен доступ текущему пользователю.
+Вы можете выполнить поиск в иерархии папок, в объекте drive или среди файлов, к которым предоставлен доступ текущему пользователю.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,13 +39,13 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.
 
-## <a name="function-parameters"></a>Параметры функции
+## <a name="function-parameters"></a>Параметры функций
 
 | Имя | Значение  | Описание                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | string | Текст запроса, используемый для поиска элементов. Для поиска можно использовать несколько полей, включая поля имени файла, метаданных и содержимого файла. |
+| `q`  | string (строка) | Текст запроса, используемый для поиска элементов. Для поиска можно использовать несколько полей, включая поля имени файла, метаданных и содержимого файла. |
 
 ## <a name="example"></a>Пример
 
@@ -52,7 +53,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 Вот пример запроса, выполняющего поиск в хранилище OneDrive текущего пользователя.
 
-<!-- { "blockType": "request", "name": "item_search" }-->
+<!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root/search(q='{search-query}')
@@ -95,7 +96,7 @@ Content-type: application/json
 
 ### <a name="example"></a>Пример
 
-<!-- { "blockType": "request", "name": "item_search_all" }-->
+<!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/search(q='{search-query}')
@@ -118,7 +119,7 @@ Content-type: application/json
         "name": "Contoso Project",
         "folder": {},
         "searchResult": { "onClickTelemetryUrl": "https://bing.com/0123456789abc!123" },
-        "remoteItem": { "id": "!23141901", "driveId": "s!1020101jlkjl12lx" }
+        "remoteItem": { "id": "!23141901", "parentReference": { "driveId": "s!1020101jlkjl12lx" } }
       },
       {
         "id": "0123456789abc!456",
