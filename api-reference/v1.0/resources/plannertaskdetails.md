@@ -15,8 +15,8 @@
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
 |description|Строка|Описание задачи.|
-|id|String| Только для чтения. Идентификатор сведений о задаче. Идентификатор состоит из 28 символов и чувствителен к регистру. [Проверка формата](planner_identifiers_disclaimer.md) выполняется для службы.|
-|previewType|string|Устанавливает тип эскиза задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.|
+|id|строка| Только для чтения. Идентификатор сведений о задаче. Длина — 28 знаков с учетом регистра. [Проверка формата](planner_identifiers_disclaimer.md) выполняется с помощью службы.|
+|previewType|string|Задает тип предварительной версии, которая отображается на задаче. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если параметр имеет значение `automatic`, отображаемая версия предварительного просмотра выбирается приложением просмотра задачи.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
 ## <a name="relationships"></a>Отношения
@@ -26,11 +26,10 @@
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerTaskDetails"
 }-->
 

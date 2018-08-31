@@ -1,6 +1,8 @@
 # <a name="create-open-extension"></a>Создание открытого расширения
 
-Создание открытого расширения (объекта [openTypeExtension](../resources/openTypeExtension.md)) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса. 
+Создание открытого расширения (объекта [openTypeExtension](../resources/openTypeExtension.md)) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.
+
+> **Примечание:** Для создания открытых расширений ресурсов Outlook, см.**Специфики, относящиеся к Outlook** в разделе [Тип ресурса openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -8,17 +10,17 @@
 
 |**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Device.ReadWrite.All | [event](../resources/event.md) | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | [event](../resources/event.md) для групп | Group.ReadWrite.All |
-| [post](../resources/post.md) для групп | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
-| [organization](../resources/organization.md) | Directory.AccessAsUser.All | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite |
-| [user](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [устройство](../resources/device.md) | Device.ReadWrite.All | [событие](../resources/event.md) | Calendars.ReadWrite |
+| [группа](../resources/group.md) | Group.ReadWrite.All | [[event](../resources/event.md) для групп](../resources/event.md) | Group.ReadWrite.All |
+| [[post](../resources/post.md) для групп](../resources/post.md) | Group.ReadWrite.All | [сообщение](../resources/message.md) | Mail.ReadWrite |
+| [организация](../resources/organization.md) | Directory.AccessAsUser.All | [[contact](../resources/contact.md) (личный контакт)](../resources/contact.md) | Contacts.ReadWrite |
+| [пользователь](../resources/user.md) | Directory.AccessAsUser.All | | |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>Создание расширения в новом экземпляре ресурса
 
-Используйте такой же запрос REST, что и при создании экземпляра. 
+Использование того же запроса REST, который используется для создания экземпляра.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -29,9 +31,9 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы создания поддерживаемых экземпляров ресурса. Все другие варианты синтаксиса POST, позволяющие создавать эти экземпляры ресурса, поддерживают создание открытых расширений этих экземпляров подобным образом.
+>**Примечание:** Этот синтаксис показывает наиболее распространенные способы создания экземпляров поддерживаемых ресурсов. Все синтаксисы POST, которые позволяют вам создавать экземпляры этих ресурсов, поддерживая создание в них открытых расширений аналогичным образом.
 
-В разделе [Тело запроса](#request-body) показано, как включить свойства нового экземпляра ресурса _и расширение_ в тело запроса.
+В разделе [Текст запроса](#request-body) показано, как включить свойства нового экземпляра ресурса _и расширения_ в тексте запроса.
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>Создание расширения в существующем экземпляре ресурса
 
@@ -50,17 +52,17 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно создать. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают создание открытых расширений этих экземпляров подобным образом.
+>**Примечание:** Этот синтаксис показывает наиболее распространенные способы идентификации экземпляра ресурсов, для того чтобы создать его расширение. Все другие синтаксисы, позволяют легко идентифицировать экземпляры этих ресурсов, поддерживая создание в них открытых расширений аналогичным образом.
 
 В разделе [Тело запроса](#request-body) показано, как включить _расширение_ в тело запроса.
 
-## <a name="parameters"></a>Параметры
-|**Параметр**|**Тип**|**Описание**|
+## <a name="path-parameters"></a>Параметры пути
+|Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|_Параметры URL-адреса_|
-|id|string|Уникальный идентификатор объекта в соответствующей коллекции. Обязательный.|
+|id|строка|Уникальный идентификатор объекта в соответствующей коллекции. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Значение |
 |:---------------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
@@ -72,39 +74,43 @@ POST /users/{id|userPrincipalName}/extensions
 
 | Имя       | Значение |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %уникальная_строка% |
 
 При создании расширения в _новом_ экземпляре ресурса предоставьте не только объект **openTypeExtension**, но и представление JSON соответствующих свойств для создания этого экземпляра ресурса.
 
 ## <a name="response"></a>Ответ
 
-#### <a name="response-code"></a>Код ответа
+### <a name="response-code"></a>Код ответа
+
 В зависимости от операции, можно использовать код ответа `201 Created` или `202 Accepted`.
 
-При создании расширения в той же операции, которая используется для создания экземпляра ресурса, успешно выполненная операция возвращает такой же код ответа, что и при создании экземпляра ресурса без расширения. Изучите соответствующие статьи о создании экземпляров, перечисленные [выше](#create-an-extension-in-a-new-resource-instance).
+При создании расширения с помощью той же операции, которая используется для создания экземпляра ресурсов, операция возвращает один и тот же код ответа, который в свою очередь возвращается при использовании операции для создания экземпляра ресурсов без расширения.
+Ссылки на соответствующие разделы для создания экземпляра, как перечисленно [выше](#create-an-extension-in-a-new-resource-instance).
 
-#### <a name="response-body"></a>Тело отклика
-| Сценарий       | Ресурс  | Тело отклика |
+### <a name="response-body"></a>Текст ответа
+
+| Сценарий       | Ресурс  | Текст ответа |
 |:---------------|:----------|:--------------|
 | Создание расширения с явным созданием _нового_ экземпляра ресурса | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Включает новый экземпляр, дополненный объектом [openTypeExtension](../resources/openTypeExtension.md). |
 | Создание расширения с неявным созданием экземпляра ресурса | [post](../resources/post.md) | Ответ содержит только код ответа без текста. |
 | Создание расширения в _существующем_ экземпляре ресурса | Все поддерживаемые ресурсы | Включает объект **openTypeExtension**. |
 
 ## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+
+### <a name="request-1"></a>Запрос 1
 
 В первом примере сообщение и расширение создаются в одном запросе. Текст запроса включает следующие данные:
 
-- Свойства **subject**, **body** и **toRecipients**, характерные для нового сообщения. 
+- Свойства **subject**, **body** и **toRecipients**, характерные для нового сообщения.
 - Данные для расширения:
 
-  - Тип `Microsoft.Graph.OpenTypeExtension`. 
-  - Имя расширения "Com.Contoso.Referral". 
-  - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate` и `dealValue`.  
+  - Тип `microsoft.graph.openTypeExtension`.
+  - Имя расширения "Com.Contoso.Referral".
+  - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств вполезной нагрузке JSON: `companyName`, `expirationDate` и `dealValue`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_1"
 }-->
 ```http
@@ -125,7 +131,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -135,11 +141,11 @@ POST https://graph.microsoft.com/v1.0/me/messages
 }
 ```
 
-##### <a name="response-1"></a>Отклик 1
+### <a name="response-1"></a>Отклик 1
 
 Ниже представлен отклик для первого примера. Текст отклика включает свойства нового сообщения и следующие данные для нового расширения:
 
-- Свойство **id** с полным именем `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`. 
+- Свойство **id** с полным именем `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
 - Стандартное свойство **extensionName**, указанное в запросе.
 - Пользовательские данные из запроса, сохраненные в виде 3 настраиваемых свойств.
 
@@ -201,7 +207,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
 ('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
       "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -214,45 +220,44 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 }
 ```
 
-
 ****
 
-##### <a name="request-2"></a>Запрос 2
+### <a name="request-2"></a>Запрос 2
 
 Во втором примере показано создание расширения в указанном сообщении. Текст запроса включает следующие данные для расширения:
 
-- Тип `Microsoft.Graph.OpenTypeExtension`. 
+- Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.Referral".
-- Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `dealValue` и `expirationDate`.  
+- Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `dealValue` и `expirationDate`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_2"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
 
-{ 
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension", 
-  "extensionName" : "Com.Contoso.Referral", 
-  "companyName" : "Wingtip Toys", 
-  "dealValue" : 500050, 
-  "expirationDate" : "2015-12-03T10:00:00.000Z" 
-} 
+{
+  "@odata.type" : "microsoft.graph.openTypeExtension",
+  "extensionName" : "Com.Contoso.Referral",
+  "companyName" : "Wingtip Toys",
+  "dealValue" : 500050,
+  "expirationDate" : "2015-12-03T10:00:00.000Z"
+}
 ```
 
-##### <a name="response-2"></a>Отклик 2
+### <a name="response-2"></a>Отклик 2
 
 Ниже представлен отклик для второго примера. Текст отклика включает следующие данные для нового расширения:
 
 - Свойство по умолчанию **extensionName**.
-- Свойство **id** с полным именем `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`. 
-- Сохраняемые пользовательские данные.  
+- Свойство **id** с полным именем `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
+- Сохраняемые пользовательские данные.
 
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -260,7 +265,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -273,23 +278,23 @@ Content-type: application/json
 
 ****
 
-##### <a name="request-3"></a>Запрос 3
+### <a name="request-3"></a>Запрос 3
 
 В третьем примере показано создание расширения в указанном событии группы. Текст запроса включает следующие данные для расширения:
 
-- Тип `Microsoft.Graph.OpenTypeExtension`. 
+- Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.Deal".
-- Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `dealValue` и `expirationDate`.  
+- Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `dealValue` и `expirationDate`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_3"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions 
+POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -297,14 +302,14 @@ POST https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc7
 }
 ```
 
-##### <a name="response-3"></a>Отклик 3
+### <a name="response-3"></a>Отклик 3
 
 Ниже представлен отклик из третьего примера.
 
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -312,7 +317,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -323,20 +328,20 @@ Content-type: application/json
 
 ****
 
-##### <a name="request-4"></a>Запрос 4
+### <a name="request-4"></a>Запрос 4
 
 В четвертом примере показано создание расширения в новой записи группы с помощью одного вызова действия **reply** для существующей записи группы. Действие **reply** создает запись и внедряет в нее новое расширение. Текст запроса включает свойство **post**, которое, в свою очередь, содержит свойство **body** новой записи и следующие данные для нового расширения:
 
-- Тип `Microsoft.Graph.OpenTypeExtension`. 
+- Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.HR".
 - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate` и массив строк `topPicks`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_4"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/microsoft.graph.reply 
+POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
 
 {
   "post": {
@@ -356,12 +361,12 @@ POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364ae
         "Add family"
       ]
     }
-  ]        
+  ]
   }
 }
 ```
 
-##### <a name="response-4"></a>Отклик 4
+### <a name="response-4"></a>Отклик 4
 
 Ниже представлен отклик из четвертого примера. При успешном создании расширения в новой записи группы возвращается только код отклика HTTP 202.
 
@@ -375,23 +380,22 @@ Content-type: text/plain
 Content-Length: 0
 ```
 
-
 ****
 
-##### <a name="request-5"></a>Запрос 5
+### <a name="request-5"></a>Запрос 5
 
 В пятом примере показано создание расширения в новой записи группы с помощью той же операции POST, которая создает беседу. Операция POST создает беседу, цепочку и запись, а также внедряет в эту запись новое расширение. Текст отклика включает свойства **Topic** и **Threads**, а также дочерний объект **post** для новой беседы. Объект **post**, в свою очередь, содержит свойство **body** новой записи и следующие данные расширения:
 
-- Тип `Microsoft.Graph.OpenTypeExtension`. 
+- Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.HR".
 - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate` и массив строк `topPicks`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_5"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
+POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
 
 {
   "Topic": "Does anyone have a second?",
@@ -413,19 +417,19 @@ POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364ae
                 "Employees only",
                 "Add spouse or guest",
                 "Add family"
-              ]  
-            }  
-          ] 
-        } 
-      ]  
-    } 
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
 ```
 
-##### <a name="response-5"></a>Отклик 5
+### <a name="response-5"></a>Отклик 5
 
-Ниже представлен отклик из пятого примера, содержащий новую беседу и идентификатор цепочки. Эта новая цепочка содержит автоматически созданную запись, включающую новое расширение. 
+Ниже представлен отклик из пятого примера, содержащий новую беседу и идентификатор цепочки. Эта новая цепочка содержит автоматически созданную запись, включающую новое расширение.
 
 Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
@@ -452,7 +456,6 @@ Content-type: application/json
 }
 
 ```
-
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

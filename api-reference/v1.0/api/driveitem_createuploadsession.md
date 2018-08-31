@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Возобновляемая отправка файлов"
-ms.openlocfilehash: 39aee7121483e423c4adbd910c80e1ca059c685a
-ms.sourcegitcommit: e9b5d370a1d9a03d908dc430994d6a196b1345b4
+title: Возобновляемая отправка файлов
+ms.openlocfilehash: d6a6066ea04d087efef556a1d5b5af888a34dad2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265514"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -15,8 +16,8 @@ ms.lasthandoff: 11/11/2017
 
 Процесс отправки файла с помощью сеанса отправки состоит из двух этапов:
 
-1. [Создание сеанса отправки](#create-an-upload-session).
-2. [Отправка байтов в сеанс отправки](#upload-bytes-to-the-upload-session).
+1. [Создание сеанса отправки](#create-an-upload-session)
+2. [Отправка байтов в сеанс отправки](#upload-bytes-to-the-upload-session)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,18 +45,29 @@ POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
 
-### <a name="request-body"></a>Текст запроса
+### <a name="request-body"></a>Тело запроса
 
-Тело запроса не требуется. Но вы можете указать тело запроса, чтобы предоставить дополнительные данные об отправляемом файле.
+Текст запроса не требуется.
+Однако можно указать свойство `item` в тексте запроса, предоставив дополнительные данные о загружаемом файле.
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+```json
+{
+  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "description": "description",
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "name": "filename.txt"
+}
+```
 
 Например, вы можете задать необходимые действия для случая, когда имя файла уже используется, указав в теле запроса свойство поведения при конфликтах.
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
-    "item": {
-        "@microsoft.graph.conflictBehavior": "rename"
-    }
+  "item": {
+    "@microsoft.graph.conflictBehavior": "rename"
+  }
 }
 ```
 
@@ -65,6 +77,14 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадает с текущим значением eTag элемента, то возвращается ошибка `412 Precondition Failed`. |
 
+## <a name="properties"></a>Свойства
+
+| Свойство             | Тип               | Описание
+|:---------------------|:-------------------|:---------------------------------
+| description          | String (строка)             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в личном хранилище OneDrive
+| fileSystemInfo       | [fileSystemInfo][] | Сведения о файловой системе на клиенте. Чтение и запись.
+| name                 | String (строка)             | Имя элемента (имя и расширение файла). Чтение и запись.
+
 ### <a name="request"></a>Запрос
 
 В отклике на этот запрос будут представлены подробные сведения о новом экземпляре [uploadSession](../resources/uploadsession.md) (в том числе URL-адрес для отправки фрагментов файла). 
@@ -72,11 +92,12 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drive/root:/{item-path}:/createUploadSession
+POST /me/drive/root:/{item-path}:/createUploadSession
 Content-Type: application/json
 
 {
   "item": {
+    "@odata.type": "microsoft.graph.driveItemUploadableProperties",
     "@microsoft.graph.conflictBehavior": "rename",
     "name": "largefile.dat"
   }
@@ -104,23 +125,23 @@ Content-Type: application/json
 
 ## <a name="upload-bytes-to-the-upload-session"></a>Отправка байтов в сеанс отправки
 
-Чтобы отправить файл или его часть, приложение отправляет запрос PUT на адрес **uploadUrl**, указанный в ответе для **createUploadSession**.
+Чтобы отправить файл или его часть, приложение выполняет запрос PUT на адрес **uploadUrl**, указанный в отклике для **createUploadSession**.
 Вы можете отправить файл целиком или разделить его на несколько диапазонов байтов. При этом каждый запрос должен содержать фрагмент размером не более 60 МБ.
 
-Фрагменты файла необходимо отправлять в правильном порядке.
+Фрагменты файла необходимо отправлять последовательно, в правильном порядке.
 В противном случае возникнет ошибка.
 
-**Примечание.** Если приложение делит файл на несколько диапазонов байтов, размер каждого из них **ДОЛЖЕН** быть кратным 320 КиБ (327 680 байтов). Если размер фрагментов не делится на 320 КБ без остатка, при отправке некоторых файлов возникнут ошибки.
+**Примечание.** Если приложение делит файл на несколько диапазонов байтов, размер каждого из них **ДОЛЖЕН** быть кратным 320 КБ (327 680 байтов). Если размер фрагментов не делится на 320 КБ без остатка, при отправке некоторых файлов возникнут ошибки.
 
 ### <a name="example"></a>Пример
 
 В этом примере приложение отправляет первые 26 из 128 байтов файла.
 
 * Заголовок **Content-Length** задает размер текущего запроса.
-* Заголовок **Content-Range** указывает диапазон байтов для всего файла, представленного в запросе.
+* Заголовок **Content-Range** указывает диапазон (в байтах) для всего файла, представленного в запросе.
 * Прежде чем отправлять первый фрагмент файла, необходимо знать общий размер этого файла.
 
-<!-- { "blockType": "request", "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
 
 ```http
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -170,19 +191,19 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
-* Свойство `nextExpectedRanges` не всегда указывает все отсутствующие диапазоны.
+* В свойстве `nextExpectedRanges` не всегда указываются все отсутствующие диапазоны.
 * При успешной записи фрагментов оно возвращает следующий диапазон (например, "523-").
 * При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. Вы можете [запросить состояние отправки](#resuming-an-in-progress-upload), чтобы получить более подробный список недостающих диапазонов.
 * Как отклик на добавление заголовка авторизации при совершении вызова `PUT` может появиться сообщение об ошибке `HTTP 401 Unauthorized`. Заголовок авторизации и токен носителя необходимо отправлять только при выполнении `POST` на начальном этапе. Не следует включать их, когда совершается вызов `PUT`.
 
 ## <a name="completing-a-file"></a>Завершение отправки файла
 
-После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created` или `HTTP 200 OK`.
-Текст ответа также включает набор свойств по умолчанию для ресурса **driveItem**, представляющего полностью отправленный файл.
+После получения последнего диапазона байтов файла сервер отправляет отклик `HTTP 201 Created` или `HTTP 200 OK`.
+Тело отклика также включает набор свойств по умолчанию для ресурса **driveItem**, представляющего полностью отправленный файл.
 
-<!-- { "blockType": "request", "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 
 ```
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -232,13 +253,13 @@ Content-Type: application/json
 
 ### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
 
 ```http
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приводится пример отклика.
 
@@ -258,7 +279,7 @@ HTTP/1.1 204 No Content
 
 Получить состояние отправки можно, отправив запрос GET на адрес `uploadUrl`.
 
-<!-- { "blockType": "request", "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
 ```
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
@@ -270,6 +291,7 @@ GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0m
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "expirationDateTime": "2015-01-29T09:21:55.523Z",
@@ -291,7 +313,7 @@ HTTP/1.1 200 OK
 
 Чтобы указать, что приложение применяет существующий сеанс отправки, запрос PUT должен включать свойство `@microsoft.graph.sourceUrl` со значением URL-адреса сеанса отправки.
 
-<!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PUT /me/drive/root:/{path_to_parent}
@@ -299,7 +321,7 @@ Content-Type: application/json
 If-Match: {etag or ctag}
 
 {
-  "name": "largefile_2.vhd",
+  "name": "largefile.vhd",
   "@microsoft.graph.conflictBehavior": "rename",
   "@microsoft.graph.sourceUrl": "{upload session URL}"
 }
@@ -307,7 +329,7 @@ If-Match: {etag or ctag}
 
 **Примечание.** В этом вызове можно использовать заголовки `@microsoft.graph.conflictBehavior` и `if-match` надлежащим образом.
 
-### <a name="http-response"></a>HTTP-ответ
+### <a name="http-response"></a>HTTP-отклик
 
 Если файл можно зафиксировать с помощью новых метаданных, возвращается ответ `HTTP 201 Created` или `HTTP 200 OK` с метаданными ресурса Item для отправленного файла.
 
@@ -336,8 +358,8 @@ Content-Type: application/json
 * При возникновении других ошибок не следует использовать эту стратегию. Вместо этого ограничьте количество повторных попыток.
 * Для устранения ошибок `404 Not Found` при возобновляемой отправке начинайте всю отправку заново. Это означает, что сеанс отправки больше не существует.
 * Используйте возобновляемую отправку для файлов размером более 10 МБ (10 485 760 байтов).
-* Размер 10 МБ для диапазона байтов оптимален при использовании стабильных высокоскоростных подключений. Если используется более медленное или менее надежное подключение, то вы можете достичь оптимальных результатов, используя фрагменты меньших размеров. Рекомендуем использовать фрагменты размером 5–10 МиБ.
-* Используйте размер фрагментов, кратный 320 КиБ (327 680 байтов). В противном случае после отправки последнего диапазона байтов большого файла может произойти сбой.
+* Размер 10 МБ для диапазона байтов оптимален в случае стабильных высокоскоростных подключений. Если используется более медленное или менее надежное подключение, то вы можете получить оптимальные результаты, используя фрагменты меньшего размера. Рекомендуем использовать фрагменты размером 5–10 МБ.
+* Используйте размер фрагментов, кратный 320 КБ (327 680 байтов). В противном случае после отправки последнего диапазона байтов большого файла может произойти сбой.
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
@@ -345,10 +367,15 @@ Content-Type: application/json
 
 [error-response]: ../../../concepts/errors.md
 [item-resource]: ../resources/driveitem.md
+[fileSystemInfo]: ../resources/filesysteminfo.md
 
 <!-- {
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+  ],
   "section": "documentation"
 } -->
