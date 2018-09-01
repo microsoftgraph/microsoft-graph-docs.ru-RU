@@ -1,4 +1,4 @@
-# <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
+# <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: функция getYammerDeviceUsageUserDetail
 
 Получение сведений об использовании устройства с Yammer с разбивкой по пользователям.
 
@@ -23,7 +23,7 @@ GET /reports/getYammerDeviceUsageUserDetail(period='{period_value}')
 GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>Параметры запроса
+## <a name="function-parameters"></a>Параметры функции
 
 В URL-адресе запроса укажите параметр запроса и действительное значение.
 
