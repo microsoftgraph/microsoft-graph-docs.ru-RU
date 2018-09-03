@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -35,15 +35,15 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|deviceName|String|Имя устройства.|
-|deviceId|String|Идентификатор устройства.|
+|id|Строка|Ключ объекта.|
+|deviceName|Строка​|Имя устройства.|
+|deviceId|Строка​|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
-|installState|String|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String|Код ошибки для сбоев при установке.|
-|osVersion|String|Версия ОС.|
-|osDescription|String|Описание ОС.|
-|userName|String|Имя пользователя устройства.|
+|installState|[installState](../resources/intune_books_installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
+|errorCode|Строка​|Код ошибки для сбоев при установке.|
+|osVersion|Строка​|Версия ОС.|
+|osDescription|Строка​|Описание ОС.|
+|userName|Строка​|Имя пользователя устройства.|
 
 
 
@@ -71,7 +71,7 @@ Content-length: 317
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

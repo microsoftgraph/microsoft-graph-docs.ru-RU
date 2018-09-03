@@ -9,24 +9,24 @@
 |[Перечисление deviceCompliancePolicies](../api/intune_deviceconfig_devicecompliancepolicy_list.md)|Коллекция [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|Список свойств и связей объектов [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |[Получение deviceCompliancePolicy](../api/intune_deviceconfig_devicecompliancepolicy_get.md)|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|Считывание свойств и связей объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |[Действие assign](../api/intune_deviceconfig_devicecompliancepolicy_assign.md)|Коллекция [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|Пока не задокументировано|
-|[Действие scheduleActionsForRules](../api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules.md)|None|Пока не задокументировано|
+|[Действие scheduleActionsForRules](../api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|description|String|Указанное администратором описание конфигурации устройства.|
+|description|String (строка)|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
+|displayName|String (строка)|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md)|Список запланированных действий для этого правила.|
-|deviceStatuses|Коллекция [deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md)|Список DeviceComplianceDeviceStatus.|
-|userStatuses|Коллекция [deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md)|Список DeviceComplianceUserStatus.|
+|deviceStatuses|Коллекция объектов [deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md)|Список DeviceComplianceDeviceStatus.|
+|userStatuses|Коллекция объектов [deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md)|Список DeviceComplianceUserStatus.|
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|Обзор состояния соответствия требованиям устройств.|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|Обзор состояния соответствия требованиям устройств для пользователей.|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Сводка по состоянию параметров обеспечения соответствия требованиям для устройств.|
@@ -36,7 +36,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "@odata.type": "microsoft.graph.deviceCompliancePolicy"
 }
 -->

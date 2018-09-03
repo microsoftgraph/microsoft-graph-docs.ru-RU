@@ -9,28 +9,27 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя. Наследуется от ресурса [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|Строка|Описание. Наследуется от ресурса [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|omaUri|Строка|OMA. Наследуется от ресурса [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|displayName|String (строка)|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|String (строка)|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|omaUri|String (строка)|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |value|Single|Значение.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
-Ниже этот ресурс представлен в формате JSON.
-<!-- {
+Ниже представлено описание ресурса в формате JSON.
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingFloatingPoint"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingFloatingPoint",
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": "<Unknown Primitive Type Edm.Single>"
+  "value": 1.5
 }
 ```
 

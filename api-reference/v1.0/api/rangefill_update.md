@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/fill
+PATCH /workbook/names/{name}/range/format/fill
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
@@ -28,11 +28,11 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова в HTML (например, orange).|
+|color|string (строка)|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова в HTML (например, orange).|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [RangeFill](../resources/rangefill.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [WorkbookRangeFill](../resources/rangefill.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -41,7 +41,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
   "name": "update_rangefill"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/fill
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/fill
 Content-type: application/json
 Content-length: 28
 
@@ -49,12 +49,12 @@ Content-length: 28
   "color": "color-value"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/title
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/title
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
@@ -29,9 +29,9 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartAxisTitle](../resources/chartaxistitle.md) в тексте отклика.
+В случае успеха, этот метод возвращает `200 OK` код ответа и объект [WorkbookChartAxisTitle](../resources/chartaxistitle.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -40,14 +40,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
   "name": "get_chartaxistitle"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

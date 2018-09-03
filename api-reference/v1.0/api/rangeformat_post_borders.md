@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/borders
+POST /workbook/names/{name}/range/format/borders
 POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
@@ -25,11 +25,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [RangeBorder](../resources/rangeborder.md) в формате JSON.
+Предоставьте в тексте запроса описание объекта [WorkbookRangeBorder](../resources/rangeborder.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [RangeBorder](../resources/rangeborder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и обновленный объект [WorkbookRangeBorder](../resources/rangeborder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -39,7 +39,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
   "name": "create_rangeborder_from_rangeformat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 Content-type: application/json
 Content-length: 136
 
@@ -51,13 +51,13 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-Предоставьте в тексте запроса описание объекта [RangeBorder](../resources/rangeborder.md) в формате JSON.
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Предоставьте в тексте запроса описание объекта [WorkbookRangeBorder](../resources/rangeborder.md) в формате JSON.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 } -->
 ```http
 HTTP/1.1 201 Created

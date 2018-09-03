@@ -8,13 +8,14 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "parentNotebook",
     "parentSectionGroup",
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -50,7 +51,7 @@
 |parentNotebook|[Notebook](notebook.md)|Записная книжка, содержащая группу разделов. Только для чтения.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|Группа разделов, содержащая группу разделов. Только для чтения.|
 |sectionGroups|Коллекция объектов [SectionGroup](sectiongroup.md)|Группы разделов в разделе. Только для чтения. Допускает значение null.|
-|sections|Коллекция объектов [Section](section.md)|Разделы в группе разделов. Только для чтения. Допускается значение null.|
+|sections|Коллекция [OnenoteSection](section.md)|Разделы в группе разделов. Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 
@@ -59,8 +60,8 @@
 |[Получение группы разделов](../api/sectiongroup_get.md) | [SectionGroup](sectiongroup.md) |Чтение свойств и отношений группы разделов.|
 |[Создание группы разделов](../api/sectiongroup_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Создайте группу разделов, отправив запрос POST в коллекцию sectionGroups в указанной группе разделов.|
 |[Перечисление групп разделов](../api/sectiongroup_list_sectiongroups.md) |Коллекция объектов [SectionGroup](sectiongroup.md)| Получение коллекции групп разделов в указанной группе разделов.|
-|[Создание раздела](../api/sectiongroup_post_sections.md) |[Section](section.md)| Создайте раздел, отправив запрос POST в коллекцию sections в указанной группе разделов.|
-|[Перечисление разделов](../api/sectiongroup_list_sections.md) |Коллекция объектов [Section](section.md)| Получение коллекции разделов в указанной группе разделов.|
+|[Создание раздела](../api/sectiongroup_post_sections.md) |[OnenoteSection](section.md)| Создайте раздел, отправив запрос POST в коллекцию sections в указанной группе разделов.|
+|[Перечисление разделов](../api/sectiongroup_list_sections.md) |Коллекция [OnenoteSection](section.md)| Получение коллекции разделов в указанной группе разделов.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/OffsetRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
+GET /workbook/names/{name}/range/offsetRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/offsetRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/offsetRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -29,8 +29,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|rowOffset|number|Количество строк (положительное, отрицательное или нулевое), на которое необходимо сместить диапазон. Положительные значения соответствуют смещению вниз, а отрицательные — вверх.|
-|columnOffset|number|Количество столбцов (положительное, отрицательное или 0), на который нужно сместить диапазон. Положительные значения соответствуют смещению вправо, а отрицательные — влево.|
+|rowOffset|Int32|Количество строк (положительное, отрицательное или нулевое), на которое необходимо сместить диапазон. Положительные значения соответствуют смещению вниз, а отрицательные — вверх.|
+|columnOffset|Int32|Количество столбцов (положительное, отрицательное или 0), на который нужно сместить диапазон. Положительные значения соответствуют смещению вправо, а отрицательные — влево.|
 
 ## <a name="response"></a>Отклик
 
@@ -42,27 +42,26 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_offsetrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/offsetRange
 Content-type: application/json
 Content-length: 49
 
 {
-  "rowOffset": {
-  },
-  "columnOffset": {
-  }
+  "rowOffset": 3,
+  "columnOffset": 5
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

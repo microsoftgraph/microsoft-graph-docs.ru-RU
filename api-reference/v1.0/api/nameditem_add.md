@@ -30,12 +30,12 @@ POST /workbook/worksheets({id|name})/names/add
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|строка|Имя именованного элемента.|
-|ссылка|string|Формула или диапазон, на которые будет ссылаться имя.|
-|примечание|string|Комментарий, связанный с именованным элементом|
+|ссылка|Json|Формула или диапазон, на которые будет ссылаться имя.|
+|примечание|строка|Комментарий, связанный с именованным элементом|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [NamedItem](../resources/NamedItem.md) в тексте отклика.
+В случае успеха, этот метод  возвращает `200 OK`код ответа и объект [WorkbookNamedItem](../resources/NamedItem.md) в теле ответа.
 
 
 ## <a name="example"></a>Пример
@@ -61,12 +61,12 @@ Content-length: 54
 
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -93,5 +93,9 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: NamedItemcollection_add/value:
+      Schemas type was 'Custom' which is not supported. Add a resource type to the definition of property: value"
+  ],
   "tocPath": ""
 }-->

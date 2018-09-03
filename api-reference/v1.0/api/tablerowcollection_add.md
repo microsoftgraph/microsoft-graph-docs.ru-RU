@@ -1,6 +1,6 @@
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
-Добавляет новую строку в таблицу.
+Добавляет строки в конец таблицы. Обратите внимание, что API может принимать несколько строк данных, использующих его. Добавление одной строки за один раз может привести к замедлению. Рекомендуемым подходом было бы собрать строки вместе в один вызов, а не выполнять вставку единичных строк. Для достижения наилучших результатов соберите строки, которые требуется вставить, на стороне приложения и выполните одну операцию по добавлению строк. Поэкспериментируйте с количеством строк, чтобы определить идеальное их число для использования в одном вызове API. 
 
 ## <a name="error-handling"></a>Обработка ошибок
 
@@ -33,15 +33,16 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|number|Необязательный параметр. Определяет относительную позицию новой строки. Если параметру присвоено значение null, строка добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.|
-|values|(boolean, string или number)|Необязательный параметр. Двухмерный массив неформатированных значений строки таблицы.|
+|index|Int32|Необязательный параметр. Определяет относительную позицию новой строки. Если параметру присвоено значение null, строка добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.|
+|values|Json|Необязательный параметр. Двумерный массив неформатированных значений строки таблицы.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [TableRow](../resources/tablerow.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [WorkbookTableRow](../resources/tablerow.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
+В этом примере в конец таблицы производится вставка двух строк данных. 
+
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
@@ -54,7 +55,7 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": null,
+  "index": 5,
   "values": [
     [1, 2, 3],
     [4, 5, 6]
@@ -63,11 +64,11 @@ Content-length: 51
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +88,11 @@ Content-length: 45
   "description": "TableRowCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->
