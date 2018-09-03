@@ -7,19 +7,19 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта TableRow](../api/tablerow_get.md) | [TableRow](tablerow.md) |Чтение свойств и связей объекта tableRow.|
-|[Обновление](../api/tablerow_update.md) | [TableRow](tablerow.md)    |Обновление объекта tableRow. |
-|[Range](../api/tablerow_range.md)|[Range](range.md)|Получает объект диапазона, связанный со всей строкой.|
-|[Delete](../api/tablerow_delete.md)|Нет|Удаляет строку из таблицы.|
-|[Список](../api/tablerow_list.md) | Коллекция объектов [TableRow](tablerow.md) |Получение коллекции объектов tableRow. |
-|[Itemat](../api/tablerowcollection_itemat.md)|[TableRow](tablerow.md)|Получает строку на основании ее позиции в коллекции.|
-|[Add](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|Добавляет новую строку в таблицу.|
+|[Получение TableRow](../api/tablerow_get.md) | [WorkbookTableRow](tablerow.md) |Чтение свойств и связей объекта tableRow.|
+|[Обновление](../api/tablerow_update.md) | [WorkbookTableRow](tablerow.md)  |Обновление объекта tableRow. |
+|[Range](../api/tablerow_range.md)|[Range](range.md)|Возвращает объект диапазона, связанный со всей строкой.|
+|[Удаление](../api/tablerow_delete.md)|Нет|Удаляет строку из таблицы.|
+|[Список](../api/tablerow_list.md) | Коллекция [WorkbookTableRow](tablerow.md) |Получение коллекции объектов tableRow. |
+|[Itemat](../api/tablerowcollection_itemat.md)|[WorkbookTableRow](tablerow.md)|Получение строки на основании сведений о ее позиции в коллекции.|
+|[Add](../api/tablerowcollection_add.md)|[WorkbookTableRow](tablerow.md)|Добавляет новую строку в таблицу.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|int|Возвращает номер индекса строки в коллекции строк таблицы. Используется нулевой индекс. Только для чтения.|
-|values|json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
+|values|Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -29,12 +29,11 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.tableRow"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableRow"
 }-->
 
 ```json

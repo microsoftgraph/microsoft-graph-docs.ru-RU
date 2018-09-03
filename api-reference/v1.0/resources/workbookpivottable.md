@@ -1,10 +1,8 @@
-<a id="pivottable-resource-type" class="xliff"></a>
-# Тип ресурсов pivotTable
+# <a name="pivottable-resource-type"></a>Тип ресурсов pivotTable
 
 Представляет сводную таблицу Excel.
 
-<a id="methods" class="xliff"></a>
-## Методы
+## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
@@ -12,25 +10,23 @@
 |[Refresh](../api/workbookpivottable_refresh.md)|Нет|Обновляет сводную таблицу. |
 |[Refreshall](../api/workbookpivottable_refreshall.md)|Нет|Обновляет все таблицы на заданном листе. Обратите внимание, что это действие доступно только в коллекции сводных таблиц.|
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Идентификатор сводной таблицы.   Только для чтения.|
-|name|String|Имя сводной таблицы.    |
+|id|Строка| Идентификатор сводной таблицы.   Только для чтения.|
+|name|Строка|Имя сводной таблицы.    |
 
-<a id="relationships" class="xliff"></a>
-## Связи
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
+|лист|[WorkbookWorksheet](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
 
-<a id="json-representation" class="xliff"></a>
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

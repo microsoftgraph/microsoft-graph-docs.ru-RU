@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
-ms.openlocfilehash: 7b7729899d134fa1d5de7debb1f209ec5aadd70d
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 7639dab9f63a948b3e9a849d8d320de60f5a0954
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270491"
 ---
 # <a name="sharinglink-resource-type"></a>Тип ресурса SharingLink
 
@@ -41,13 +42,13 @@ ms.lasthandoff: 09/28/2017
 |:------------|:--------------|:-------------------------------------
 | application | [identity][]  | Приложение, с которым сопоставлена ссылка.
 | type        | Строка        | Тип созданной ссылки.
-| scope       | String        | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент.
-| webHtml     | String        | Для ссылок `embed` это свойство содержит HTML-код элемента `<iframe>`, который внедряет элемент на веб-страницу.
+| scope       | Строка​        | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент.
+| webHtml     | Строка​        | Для ссылок `embed` это свойство содержит HTML-код элемента `<iframe>`, который внедряет элемент на веб-страницу.
 | webUrl      | Строка        | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.
 
-[Identity]: identity.md
+[Удостоверение]: identity.md
 
-## <a name="type-enumeration"></a>Перечисление type
+## <a name="type-options"></a>Параметры типа
 
 В таблице ниже определены возможные значения свойства **type**.
 
@@ -57,12 +58,12 @@ ms.lasthandoff: 09/28/2017
 | `edit`  | `write` | Ссылка для редактирования, разрешающая доступ для чтения и записи.
 | `embed` | `read`  | Ссылка только для просмотра, с помощью которой можно внедрять содержимое в ведущую веб-страницу. Внедряемые ссылки недоступны в OneDrive для бизнеса и SharePoint.
 
-## <a name="scope-enumeration"></a>Перечисление областей
+## <a name="scope-options"></a>Параметры области
 
-| Значение          | Описание                                                                                                                 |
-|:---------------|:----------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Ссылку для общего доступа могут использовать все пользователи.                                                                            |
-| `organization` | Ссылку для совместного доступа могут использовать все пользователи в одной и той же организации (клиенте). Эта функция недоступна в OneDrive персональный. |
+| Значение          | Описание
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | Любое лицо имеет доступ с ссылкой, без необходимости входа. Сюда могут входить пользователи за пределами вашей организации.
+| `organization` | Любой пользователь вошедший в вашу организацию (клиент) может использовать ссылку для доступа. Доступно только в OneDrive для бизнеса и SharePoint.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -71,5 +72,11 @@ ms.lasthandoff: 09/28/2017
   "description": "The sharing link facet provides information about how a file is shared.",
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(view,edit,embed) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/SharingLink"
 } -->

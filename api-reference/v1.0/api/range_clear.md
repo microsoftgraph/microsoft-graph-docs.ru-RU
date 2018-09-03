@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/clear
+POST /workbook/names/{name}/range/clear
 POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
@@ -29,7 +29,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|applyTo|string|Необязательный параметр. Определяет тип действия очистки.  Возможные значения: `All`, `Formats`, `Contents`.|
+|applyTo|string (строка)|Необязательный параметр. Определяет тип действия очистки.  Возможные значения: `All`, `Formats`, `Contents`.|
 
 ## <a name="response"></a>Отклик
 
@@ -44,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
   "name": "range_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/clear
 Content-type: application/json
 Content-length: 32
 
@@ -53,12 +53,10 @@ Content-length: 32
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

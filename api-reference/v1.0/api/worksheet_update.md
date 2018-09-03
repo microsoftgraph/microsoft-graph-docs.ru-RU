@@ -26,13 +26,13 @@ PATCH /workbook/worksheets/{id|name}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|string|Отображаемое имя листа.|
+|name|string (строка)|Отображаемое имя листа.|
 |position|int|Положение листа (начиная с нуля) в книге.|
-|visibility|string|Видимость листа. Возможные значения: `Visible`, `Hidden`, `VeryHidden`.|
+|visibility|string (строка)|Видимость листа. Возможные значения: `Visible`, `Hidden`, `VeryHidden`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [Worksheet](../resources/worksheet.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [WorkbookWorksheet](../resources/worksheet.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -51,12 +51,12 @@ Content-length: 100
   "visibility": "visibility-value"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

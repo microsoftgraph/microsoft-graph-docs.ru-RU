@@ -28,7 +28,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fields|SortField|Список условий для сортировки.|
+|fields|Коллекция WorkbookSortField|Список условий для сортировки.|
 |matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
 |method|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
 
@@ -68,12 +68,11 @@ Content-length: 298
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

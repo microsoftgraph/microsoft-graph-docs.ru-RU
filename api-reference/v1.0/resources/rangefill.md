@@ -7,14 +7,14 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeFill](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
-|[Обновление](../api/rangefill_update.md) | [RangeFill](rangefill.md)    |Обновление объекта RangeFill. |
-|[Clear](../api/rangefill_clear.md)|Нет|Сбрасывает фон диапазона.|
+|[Получение объекта RangeFill](../api/rangefill_get.md) | [WorkbookRangeFill](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
+|[Обновление](../api/rangefill_update.md) | [WorkbookRangeFill](rangefill.md)   |Обновление объекта RangeFill. |
+|[Очистить](../api/rangefill_clear.md)|Нет|Сбрасывает фон диапазона.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова в HTML (например, orange).|
+|color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова в HTML (например, orange).|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -24,12 +24,11 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFill"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 }-->
 
 ```json

@@ -3,27 +3,35 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
-ms.openlocfilehash: 9f73684d51ab4cee047219e142f72edf778cb171
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 4c39722653cd61f5d58a4de5b317cb3a1a9afb9d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269616"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса Permission
 
-Ресурс **Permission** содержит сведения о разрешении на совместный доступ, предоставленном для ресурса [DriveItem](driveitem.md).
+Ресурс **Permission** предоставляет сведения о разрешении на совместный доступ, предоставленном для ресурса [DriveItem](driveitem.md).
 
-Разрешения на совместный доступ могут иметь самые различные формы.
-Ресурс **Permission** представляет эти формы с помощью аспектов в ресурсе.
+Разрешения на совместный доступ могут принимать самые различные формы.
+Ресурс **Permission** представляет эти формы с помощью аспектов ресурса.
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom", "shareId" ],
+  "optionalProperties": [
+    "link",
+    "grantedTo",
+    "invitation",
+    "inheritedFrom",
+    "shareId"
+  ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
@@ -47,7 +55,7 @@ ms.lasthandoff: 09/28/2017
 | invitation    | [SharingInvitation][]                     | Сведения обо всех сопоставленных приглашениях к совместному использованию для данного разрешения. Только для чтения.
 | inheritedFrom | [ItemReference](itemreference.md)         | Предоставляет ссылку на предка текущего разрешения, если оно унаследовано от предка. Только для чтения.
 | ссылка          | [SharingLink][]                           | Предоставляет сведения о ссылке для текущего разрешения, если это разрешение типа link. Только для чтения.
-| role          | Коллекция строк.                      | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
+| roles         | Collection of String                      | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
 | shareId       | String                                    | Уникальный токен, с помощью которого можно получить доступ к общему элементу через [API **shares**](../api/shares_get.md). Только для чтения.
 
 Ресурс Permission предоставляет сведения о типе разрешения, представленного ресурсом, с помощью _аспектов_.

@@ -23,11 +23,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [Chart](../resources/chart.md) в формате JSON.
+В тексте запроса укажите представление JSON объекта [WorkbookChart](../resources/chart.md).
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [Chart](../resources/chart.md) в тексте отклика.
+В случае успеха этот метод возвращает`201 Created` код ответа и объект [WorkbookChart](../resources/chart.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -47,13 +47,13 @@ Content-length: 52
   "left": 99
 }
 ```
-Предоставьте в тексте запроса описание объекта [Chart](../resources/chart.md) в формате JSON.
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+В тексте запроса укажите представление JSON объекта [WorkbookChart](../resources/chart.md).
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 201 Created
