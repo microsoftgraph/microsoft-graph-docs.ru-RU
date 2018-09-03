@@ -18,12 +18,11 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingBoolean"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingBoolean",

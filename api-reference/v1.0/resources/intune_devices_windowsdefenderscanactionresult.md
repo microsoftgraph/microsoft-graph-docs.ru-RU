@@ -9,22 +9,21 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md).|
-|actionState|String|Состояние действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md).|
+|actionName|String (строка​)|Название действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Состояние действия унаследованного от [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md).|
-|scanType|String|Тип сканирования (полное или краткое).|
+|scanType|String (строка​)|Тип сканирования (полное или краткое).|
 
 ## <a name="relationships"></a>Связи
-Отсутствуют
+Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.windowsDefenderScanActionResult"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsDefenderScanActionResult",

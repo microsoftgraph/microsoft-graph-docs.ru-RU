@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Intersection
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Intersection
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
+GET /workbook/names/{name}/range/intersection
+GET /workbook/worksheets/{id|name}/range(address='<address>')/intersection
+GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -29,7 +29,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|anotherRange|string|Объект или адрес диапазона, который будет использоваться для определения пересечения диапазонов.|
+|anotherRange|строка|Объект или адрес диапазона, который будет использоваться для определения пересечения диапазонов.|
 
 ## <a name="response"></a>Отклик
 
@@ -41,10 +41,11 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_intersection"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Intersection
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/intersection
 Content-type: application/json
 Content-length: 42
 
@@ -53,12 +54,12 @@ Content-length: 42
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

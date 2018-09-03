@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Преобразование в другие форматы"
-ms.openlocfilehash: 3031500beaec2d765075abfd925a6333f50368f9
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Преобразование в другие форматы
+ms.openlocfilehash: 46e8ed178384a81f232a753fe683f8e11efe8585
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269182"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 
@@ -33,7 +34,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 | Имя            | Значение   | Описание                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | String  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
+| _if-none-match_ | Строка  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
 
 
 ### <a name="query-string-parameters"></a>Параметры строки запроса
@@ -43,18 +44,20 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | строка | Укажите формат, в котором следует скачать содержимое элемента. |
 
 
-Для параметра **convert** допустимы указанные ниже значения.
+#### <a name="format-options"></a>Опции форматирования
 
-| Значение   | Описание                        | Поддерживаемые расширения источника |
-|:--------|:-----------------------------------|-----------------------------|
-| **pdf** | Преобразует элемент в формат PDF. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx | 
+Для параметра **format** допустимы указанные ниже значения:
+
+| Значение формата | Описание                        | Поддерживаемые расширения источника
+|:-------------|:-----------------------------------|----------------------------
+| PDF          | Преобразует элемент в формат PDF. | CSV, DOC, DOCX, ODP, ODS, ODT, POT, POTM, POTX, PPS, PPSX, PPSXM, PPT, PPTM, PPTX, RTF, XLS, XLSX
 
 ### <a name="example"></a>Пример
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
 ```
 
 ## <a name="response"></a>Ответ

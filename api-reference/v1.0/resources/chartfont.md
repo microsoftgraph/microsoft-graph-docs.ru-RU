@@ -1,24 +1,24 @@
 # <a name="chartfont-resource-type"></a>Тип ресурса ChartFont
 
-Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта диаграммы.
+Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта диаграммы.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Чтение свойств и связей объекта chartFont.|
-|[Обновление](../api/chartfont_update.md) | [ChartFont](chartfont.md)    |Обновление объекта ChartFont. |
+|[Get ChartFont](../api/chartfont_get.md) | [WorkbookChartFont](chartfont.md) |Чтение свойств и связей объекта chartFont.|
+|[Update](../api/chartfont_update.md) | [WorkbookChartFont](chartfont.md)   |Обновление объекта ChartFont. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
 |color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
 |size|Double|Размер шрифта (например, 11)|
-|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
+|underline|string|Тип подчеркивания, применяемый к шрифту. Возможные значения: `None`, `Single`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -28,12 +28,11 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartFont"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartFont"
 }-->
 
 ```json
