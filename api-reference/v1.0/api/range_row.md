@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Row
-POST /workbook/worksheets/{id|name}/range(address='<address>')/Row
-POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
+POST /workbook/names/{name}/range/row
+POST /workbook/worksheets/{id|name}/range(address='<address>')/row
+POST /workbook/tables/{id|name}/columns/{id|name}/range/row
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -29,7 +29,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|row|number|Номер строки диапазона, который требуется извлечь. Используется нулевой индекс.|
+|row|Int32|Номер строки диапазона, который требуется извлечь. Используется нулевой индекс.|
 
 ## <a name="response"></a>Отклик
 
@@ -39,27 +39,29 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "range_row"
+  "isComposable": true,
+  "name": "range_row",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.range_row"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Row
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/row
 Content-type: application/json
 Content-length: 18
 
 {
-  "row": {
-  }
+  "row": 2
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

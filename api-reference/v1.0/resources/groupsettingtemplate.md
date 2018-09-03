@@ -13,9 +13,9 @@
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|String| Описание шаблона. |
-|displayName|String| Отображаемое имя шаблона. |
-|id|String| Уникальный идентификатор шаблона. Только для чтения.|
+|description|Строка| Описание шаблона. |
+|displayName|Строка| Отображаемое имя шаблона. |
+|id|Строка| Уникальный идентификатор шаблона. Только для чтения.|
 |values|Коллекция объектов [settingTemplateValue](settingtemplatevalue.md)| Коллекция объектов settingTemplateValue, перечисляющих набор доступных параметров, значений по умолчанию и типов, которые составляют шаблон. |
 
 ## <a name="relationships"></a>Отношения
@@ -27,11 +27,12 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 
