@@ -1,42 +1,42 @@
-# <a name="assignlicense"></a><span data-ttu-id="2289e-101">assignLicense</span><span class="sxs-lookup"><span data-stu-id="2289e-101">assignLicense</span></span>
-<span data-ttu-id="2289e-p101">Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.</span><span class="sxs-lookup"><span data-stu-id="2289e-p101">Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.</span></span>
+# <a name="assignlicense"></a><span data-ttu-id="96806-101">assignLicense</span><span class="sxs-lookup"><span data-stu-id="96806-101">assignLicense</span></span>
+<span data-ttu-id="96806-p101">Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.</span><span class="sxs-lookup"><span data-stu-id="96806-p101">Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2289e-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2289e-104">Permissions</span></span>
-<span data-ttu-id="2289e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="2289e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="96806-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="96806-104">Permissions</span></span>
+<span data-ttu-id="96806-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="96806-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="2289e-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2289e-107">Permission type</span></span>      | <span data-ttu-id="2289e-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2289e-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="96806-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="96806-107">Permission type</span></span>      | <span data-ttu-id="96806-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="96806-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2289e-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2289e-109">Delegated (work or school account)</span></span> | <span data-ttu-id="2289e-110">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2289e-110">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2289e-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2289e-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2289e-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2289e-112">Not supported.</span></span>    |
-|<span data-ttu-id="2289e-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2289e-113">Application</span></span> | <span data-ttu-id="2289e-114">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2289e-114">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="96806-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="96806-109">Delegated (work or school account)</span></span> | <span data-ttu-id="96806-110">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="96806-110">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="96806-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="96806-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96806-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="96806-112">Not supported.</span></span>    |
+|<span data-ttu-id="96806-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="96806-113">Application</span></span> | <span data-ttu-id="96806-114">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="96806-114">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2289e-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2289e-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96806-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="96806-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/assignLicense
 ```
-## <a name="request-headers"></a><span data-ttu-id="2289e-116">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2289e-116">Request headers</span></span>
-| <span data-ttu-id="2289e-117">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2289e-117">Header</span></span>       | <span data-ttu-id="2289e-118">Значение</span><span class="sxs-lookup"><span data-stu-id="2289e-118">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="96806-116">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="96806-116">Request headers</span></span>
+| <span data-ttu-id="96806-117">Заголовок</span><span class="sxs-lookup"><span data-stu-id="96806-117">Header</span></span>       | <span data-ttu-id="96806-118">Значение</span><span class="sxs-lookup"><span data-stu-id="96806-118">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2289e-119">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2289e-119">Authorization</span></span>  | <span data-ttu-id="2289e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2289e-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2289e-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2289e-122">Content-Type</span></span>  | <span data-ttu-id="2289e-123">application/json</span><span class="sxs-lookup"><span data-stu-id="2289e-123">application/json</span></span>  |
+| <span data-ttu-id="96806-119">Авторизация</span><span class="sxs-lookup"><span data-stu-id="96806-119">Authorization</span></span>  | <span data-ttu-id="96806-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="96806-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="96806-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="96806-122">Content-Type</span></span>  | <span data-ttu-id="96806-123">application/json</span><span class="sxs-lookup"><span data-stu-id="96806-123">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2289e-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2289e-124">Request body</span></span>
-<span data-ttu-id="2289e-125">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="2289e-125">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="96806-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="96806-124">Request body</span></span>
+<span data-ttu-id="96806-125">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="96806-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="2289e-126">Параметр</span><span class="sxs-lookup"><span data-stu-id="2289e-126">Parameter</span></span>    | <span data-ttu-id="2289e-127">Тип</span><span class="sxs-lookup"><span data-stu-id="2289e-127">Type</span></span>   |<span data-ttu-id="2289e-128">Описание</span><span class="sxs-lookup"><span data-stu-id="2289e-128">Description</span></span>|
+| <span data-ttu-id="96806-126">Параметр</span><span class="sxs-lookup"><span data-stu-id="96806-126">Parameter</span></span>    | <span data-ttu-id="96806-127">Тип</span><span class="sxs-lookup"><span data-stu-id="96806-127">Type</span></span>   |<span data-ttu-id="96806-128">Описание</span><span class="sxs-lookup"><span data-stu-id="96806-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2289e-129">addLicenses</span><span class="sxs-lookup"><span data-stu-id="2289e-129">addLicenses</span></span>|<span data-ttu-id="2289e-130">AssignedLicense</span><span class="sxs-lookup"><span data-stu-id="2289e-130">AssignedLicense</span></span>|<span data-ttu-id="2289e-p104">Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить планы, связанные с лицензией, задав свойство **disabledPlans** объекта [assignedLicense](../resources/assignedlicense.md).</span><span class="sxs-lookup"><span data-stu-id="2289e-p104">A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.</span></span>|
-|<span data-ttu-id="2289e-133">removeLicenses</span><span class="sxs-lookup"><span data-stu-id="2289e-133">removeLicenses</span></span>|<span data-ttu-id="2289e-134">Guid</span><span class="sxs-lookup"><span data-stu-id="2289e-134">Guid</span></span>|<span data-ttu-id="2289e-135">Коллекция идентификаторов GUID, указывающих удаляемые лицензии.</span><span class="sxs-lookup"><span data-stu-id="2289e-135">A collection of GUIDs that identify the licenses to remove.</span></span>|
+|<span data-ttu-id="96806-129">addLicenses</span><span class="sxs-lookup"><span data-stu-id="96806-129">addLicenses</span></span>|<span data-ttu-id="96806-130">Коллекция AssignedLicense</span><span class="sxs-lookup"><span data-stu-id="96806-130">assignedLicense collection</span></span>|<span data-ttu-id="96806-p104">Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить планы, связанные с лицензией, задав свойство **disabledPlans** объекта [assignedLicense](../resources/assignedlicense.md).</span><span class="sxs-lookup"><span data-stu-id="96806-p104">A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.</span></span>|
+|<span data-ttu-id="96806-133">removeLicenses</span><span class="sxs-lookup"><span data-stu-id="96806-133">removeLicenses</span></span>|<span data-ttu-id="96806-134">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="96806-134">Guid collection</span></span>|<span data-ttu-id="96806-135">Коллекция идентификаторов GUID, указывающих удаляемые лицензии.</span><span class="sxs-lookup"><span data-stu-id="96806-135">A collection of GUIDs that identify the licenses to remove.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2289e-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="2289e-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="96806-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="96806-136">Response</span></span>
 
-<span data-ttu-id="2289e-137">В случае успеха этот метод возвратит код отклика `200 OK` и объект [user](../resources/user.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="2289e-137">If successful, this method returns `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="96806-137">В случае успеха этот метод возвратит код отклика `200 OK` и объект [user](../resources/user.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="96806-137">If successful, this method returns `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2289e-138">Пример</span><span class="sxs-lookup"><span data-stu-id="2289e-138">Example</span></span>
-<span data-ttu-id="2289e-139">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="2289e-139">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="2289e-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="2289e-140">Request</span></span>
-<span data-ttu-id="2289e-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2289e-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="96806-138">Пример</span><span class="sxs-lookup"><span data-stu-id="96806-138">Example</span></span>
+<span data-ttu-id="96806-139">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="96806-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="96806-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="96806-140">Request</span></span>
+<span data-ttu-id="96806-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="96806-141">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_assignlicense"
@@ -50,15 +50,15 @@ Content-length: 185
   "addLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
+      "skuId": "guid"
     }
   ],
   "removeLicenses": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="2289e-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="2289e-142">Response</span></span>
-<span data-ttu-id="2289e-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="2289e-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="96806-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="96806-142">Response</span></span>
+<span data-ttu-id="96806-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="96806-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -74,12 +74,12 @@ Content-length: 491
   "assignedLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
+      "skuId": "0118A350-71FC-4EC3-8F0C-6A1CB8867561"
     }
   ],
   "assignedPlans": [
     {
-      "assignedDateTime": "datetime-value",
+      "assignedDateTime": "2016-10-02T12:13:14Z",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
