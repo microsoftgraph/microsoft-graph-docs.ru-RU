@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/sort/apply
+POST /workbook/names/{name}/range/sort/apply
 POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
 POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
@@ -29,11 +29,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fields|SortField|Список условий для сортировки.|
-|matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
-|hasHeaders|boolean|Необязательный параметр. Указывает, есть ли у диапазона заголовок.|
-|orientation|string|Необязательный параметр. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows`, `Columns`.|
-|метод|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
+|fields|Коллекция WorkbookSortField|Список условий для сортировки.|
+|matchCase|boolean (логический)|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
+|hasHeaders|boolean (логический)|Необязательный параметр. Указывает, есть ли у диапазона заголовок.|
+|orientation|string (строка)|Необязательный параметр. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows`, `Columns`.|
+|method|string (строка)|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Отклик
 
@@ -48,7 +48,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
   "name": "rangesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/sort/apply
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort/apply
 Content-type: application/json
 Content-length: 358
 
@@ -73,12 +73,10 @@ Content-length: 358
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -9,21 +9,20 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя. Наследуется от ресурса [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|Строка|Описание. Наследуется от ресурса [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|omaUri|Строка|OMA. Наследуется от ресурса [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|value|Строка|Значение.|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|Строка|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|value|Строка|Значение|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
-Ниже этот ресурс представлен в формате JSON.
-<!-- {
+Ниже представлено описание ресурса в формате JSON.
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingString"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingString",

@@ -1,0 +1,13 @@
+# <a name="sharedpcallowedaccounttype-enum-type"></a>Тип перечисления sharedPCAllowedAccountType
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Тип учетных записей, которые могут совместно использовать ПК.
+## <a name="sharedpcallowedaccounttype-flags"></a>Флаги sharedPCAllowedAccountType
+|Член|Значение|Описание|
+|:---|:---|:---|
+|guest|1|Только гостевые учетные записи. Значение по умолчанию.|
+|domain|2|Только присоединенные к домену учетные записи.|
+
+
+

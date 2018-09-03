@@ -15,21 +15,21 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Понятное имя отчета о состоянии. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
-|id|String|Ключ объекта. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
-|version|String|Версия объекта. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|displayName|Строка|Понятное имя отчета о состоянии. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
+|version|Строка|Версия объекта. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
 |content|[Json](../resources/intune_mam_json.md)|Содержимое отчета о состоянии.|
 
 ## <a name="relationships"></a>Связи
-None
+Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedAppStatus",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatusRaw",

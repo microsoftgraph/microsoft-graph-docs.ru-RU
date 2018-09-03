@@ -6,9 +6,9 @@
 
 Когда организатор или приложение отправляет приглашение на собрание, оно попадает во входящие участника в виде экземпляра **eventMessage** со свойством **meetingMessageType** **meetingRequest**. Кроме того, Outlook автоматически создает в календаре участника экземпляр **event** со свойством **showAs** **tentative**. 
 
-Чтобы получить свойства связанного события в почтовом ящике участника, приложение может использовать свойство навигации объекта **eventMessage** **event**, как показано в [этом примере](../api/eventmessage_get.md#request-2). Приложение также может программно ответить на событие от имени участника, [приняв](../api/event_accept.md), [предварительно приняв](../api/event_tentativelyaccept.md) или [отклонив](../api/event_decline.md) его.
+Чтобы получить свойства связанного события в почтовом ящике участника, приложение может использовать свойство навигации объекта **eventMessage** **event**, как показано в [этом примере](../api/eventmessage_get.md#request-2). Приложения также может программно ответить на событие от имени участника [принимая](../api/event_accept.md), [предварительно принимая](../api/event_tentativelyaccept.md)или [отклоняя](../api/event_decline.md)событие.
 
-Экземпляр **eventMessage** также может оказаться в папке "Входящие" участника в результате отмены собрания организатором или в папке "Входящие" организатора в результате ответа участника на приглашение. Приложение может предпринимать с сообщениями о событиях те же действия, что и с обычными сообщения (с небольшими отличиями).
+Помимо приглашения на собрание экземпляр  **eventMessage** также может оказаться в папке "Входящие" участника в результате отмены собрания организатором или в папке "Входящие" организатора в результате ответа участника на приглашение. Приложение может предпринимать с сообщениями о событиях те же действия, что и с обычными сообщения (с небольшими отличиями).
 
 ## <a name="methods"></a>Методы
 
@@ -43,35 +43,35 @@
 |:---------------|:--------|:----------|
 |bccRecipients|Коллекция [recipient](recipient.md)|Получатели скрытой копии сообщения.|
 |body|[itemBody](itembody.md)|Текст сообщения. В формате HTML или текстовом формате.|
-|bodyPreview|String|Первые 255 символов в тексте сообщения. В текстовом формате.|
+|bodyPreview|String (строка)|Первые 255 символов в тексте сообщения. В текстовом формате.|
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
-|changeKey|String|Версия сообщения.|
-|conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
+|changeKey|String (строка)|Версия сообщения.|
+|conversationId|String (строка)|Идентификатор беседы, к которой принадлежит электронное сообщение.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
-|flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
+|flag|[followupFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
 |from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения.|
-|hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
-|id|String||
-|importance|String| Важность сообщения: `low`, `normal`, `high`.|
-|inferenceClassification|String| Возможные значения: `focused`, `other`.|
+|hasAttachments|Логический|Указывает на наличие вложений в сообщении.|
+|id|Строка​|Уникальный идентификатор сообщения события (обратите внимание, что это значение может меняться при перемещении или изменении сообщения)|
+|importance|Строка​| Важность сообщения: `low`, `normal`, `high`.|
+|inferenceClassification|Строка​| Возможные значения: `focused`, `other`.|
 |internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, установленных по [RFC 5322](https://www.ietf.org/rfc/rfc5322.txt), которые содержат информацию о маршруте прохождения сообщения. Только для чтения.|
-|internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
-|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isRead|Boolean|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|internetMessageId |String (строка) |Идентификатор сообщения в формате, установленном документом [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
+|isDeliveryReceiptRequested|Boolean (логический)|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDraft|Boolean (логический)|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
+|isRead|Boolean (логический)|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Boolean (логический)|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
-|meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
-|parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
+|meetingMessageType|meetingMessageType| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|parentFolderId|String (строка)|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
 |sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения.|
 |sentDateTime|DateTimeOffset|Дата и время отправки сообщения.|
-|subject|String|Тема сообщения.|
+|subject|String (строка)|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая является уникальной для текущего сообщения.|
-|webLink|String|URL-адрес для открытия сообщения в Outlook Web App.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook Web App.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу можно получить из объекта iFrame.|
+|webLink|String (строка)|URL-адрес для открытия сообщения в Outlook Web App.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook Web App.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
@@ -95,7 +95,20 @@
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.eventMessage"
+  "baseType": "microsoft.graph.message",
+  "@odata.type": "microsoft.graph.eventMessage",
+  "@odata.annotations": [
+    {
+      "property": "event",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -108,6 +121,7 @@
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "DateTimeOffset",
+  "event": { "@odata.type": "microsoft.graph.event" },
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,

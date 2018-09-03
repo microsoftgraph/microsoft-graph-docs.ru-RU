@@ -27,9 +27,9 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|count|Int32|Количество строк, которые нужно включить в результирующий диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете указать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. По умолчанию используется значение 1.|
+|count|Int32|Необязательный параметр. Количество строк для включения в результирующий диапазон. В общем случае используйте положительное число для создания нового диапазона за пределами текущего. Отрицательное число можно использовать для создания нового диапазона в текущем. 1 — значение по умолчанию|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 ### <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.
@@ -38,20 +38,56 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "workbookrange_rowsAbove"
+  "isComposable": true,
+  "name": "workbookrange_rowsAbove",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=2)
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 157
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 99,
+  "columnCount": 99,
+  "columnHidden": true,
+  "columnIndex": 99
+}
+```
+
+При вызове без дополнительного `count` параметра, эта функция возвращает одну строку над диапазоном.
+
+##### <a name="request"></a>Запрос
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "workbookrange_rowsAbove_nocount",
+  "idempotent": true
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsAbove
+```
+
+##### <a name="response"></a>Ответ
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

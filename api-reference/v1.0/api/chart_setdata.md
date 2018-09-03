@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/setData
+POST /workbook/worksheets/{id|name}/charts/{name}/setData
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -27,10 +27,10 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setData
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|sourceData|string|Объект Range, соответствующий исходным данным.|
-|seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Может иметь одно из следующих значений: Auto (по умолчанию), Rows, Columns.  Возможные значения: `Auto`, `Columns`, `Rows`.|
+|sourceData|Json|Объект Range, соответствующий исходным данным.|
+|seriesBy|строка|Необязательный параметр. Указывает способ, с помощью которого столбцы или строки используются в качестве рядов данных на диаграмме. Может иметь ​место одно из следующих значений: Auto (по умолчанию), Rows, Columns.  Возможные значения: `Auto`, `Columns`, `Rows`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>​Ответ​
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
 
@@ -43,7 +43,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setData
   "name": "chart_setdata"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/setData
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setData
 Content-type: application/json
 Content-length: 70
 
@@ -53,12 +53,10 @@ Content-length: 70
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

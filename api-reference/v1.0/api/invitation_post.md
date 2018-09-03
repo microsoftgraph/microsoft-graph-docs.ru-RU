@@ -35,8 +35,8 @@ POST /invitations
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|invitedUserEmailAddress |string | Адрес электронной почты приглашаемого пользователя.|
-|inviteRedirectUrl |string |URL-адрес, на который пользователь перенаправляется после активации.|
+|invitedUserEmailAddress |строка | Адрес электронной почты приглашаемого пользователя.|
+|inviteRedirectUrl |строка |URL-адрес, на который пользователь перенаправляется после активации.|
 
 ## <a name="response"></a>Отклик
 
@@ -61,11 +61,11 @@ Content-length: 551
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.invitations"
+  "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
 HTTP/1.1 201 OK
@@ -95,3 +95,11 @@ Content-length: 551
   "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: create_user_from_users/invitedUser:
+      Property 'invitedUser' is of type Custom but has no custom members."
+  ]
+}-->

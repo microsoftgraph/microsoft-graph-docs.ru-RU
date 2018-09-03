@@ -25,16 +25,16 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones
 GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Авторизация  | строка  | Носитель {маркера}. Обязательно. |
-
 
 ## <a name="function-parameters"></a>Параметры функций
 | Параметр       | Тип | Описание|
 |:---------------|:--------|:----------|
 | TimeZoneStandard  | timeZoneStandard  | Формат часовых поясов. Поддерживаемые значение: `Windows` и `Iana`. Необязательный. |
+
+## <a name="request-headers"></a>Заголовки запросов
+| Имя       | Тип | Описание|
+|:---------------|:--------|:----------|
+| Авторизация  | string (строка)  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
