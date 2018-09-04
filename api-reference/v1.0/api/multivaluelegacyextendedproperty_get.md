@@ -6,12 +6,12 @@
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [message](../resources/message.md);
-- [mailFolder](../resources/mailfolder.md);
-- [event](../resources/event.md);
-- [calendar](../resources/calendar.md);
-- [contact](../resources/contact.md);
-- [contactFolder](../resources/contactfolder.md). 
+- [[message](../resources/message.md);](../resources/message.md)
+- [[mailFolder](../resources/mailfolder.md);](../resources/mailfolder.md)
+- [[event](../resources/event.md);](../resources/event.md)
+- [[calendar](../resources/calendar.md);](../resources/calendar.md)
+- [[contact](../resources/contact.md);](../resources/contact.md)
+- [[contactFolder](../resources/contactfolder.md).](../resources/contactfolder.md) 
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
@@ -33,64 +33,55 @@
 
 Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
 
-Получение экземпляра объекта **message**:
-<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта**message**: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **mailFolder**:
-<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **mailFolder**: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра объекта **event**:
-<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **event**: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **calendar**:
-<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **calendar**: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **contact**:
-<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **contact**: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **contactFolder**:
-<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **contactFolder**: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **event** для группы:
-<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **event** для группы: <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра группы **post**:
-<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **post** для группы: <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-## <a name="parameters"></a>Параметры
-|**Параметр**|**Тип**|**Описание**|
+## <a name="path-parameters"></a>Параметры пути
+|Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|_Параметры URL-адреса_|
-|id_value|String|Идентификатор расширенного свойства, для которого необходимо найти совпадение. Свойство должно иметь один из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный.|
+|id_value|Строка|Идентификатор расширенного свойства, для которого необходимо найти совпадение. Свойство должно иметь один из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -100,7 +91,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `200 OK`. 
 

@@ -1,14 +1,10 @@
-<a id="plannerbucket-resource-type" class="xliff"></a>
-
-# Тип ресурса plannerBucket
+# <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
 Ресурс **plannerBucket** представляет сегмент (или "специальный столбец") для задач плана в Office 365. Он содержится в объекте [plannerPlan](plannerPlan.md) и может содержать коллекцию объектов [plannerTasks](plannerTask.md).
 
 
 
-<a id="methods" class="xliff"></a>
-
-## Методы
+## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
@@ -18,30 +14,25 @@
 |[Обновление](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)   |Обновление объекта **plannerBucket**. |
 |[Удаление](../api/plannerbucket_delete.md) | Нет |Удаление объекта **plannerBucket**. |
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор сегмента. Идентификатор состоит из 28 символов и чувствителен к регистру. [Проверка формата](planner_identifiers_disclaimer.md) выполняется для службы.|
+|id|строка| Только для чтения. Идентификатор сегмента. Его длина — 28 символов с учетом регистра. [Проверка формата](planner_identifiers_disclaimer.md) выполняется на службе.|
 |name|Строка|Имя сегмента.|
-|orderHint|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Используемый формат описан [здесь](planner_order_hint_format.md).|
+|orderHint|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner_order_hint_format.md).|
 |planId|Строка|Идентификатор плана, к которому относится сегмент.|
 
-<a id="relationships" class="xliff"></a>
-
-## Связи
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускает значение null. Коллекция задач в сегменте.|
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
