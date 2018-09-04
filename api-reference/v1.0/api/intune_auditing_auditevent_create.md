@@ -24,7 +24,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -34,18 +34,18 @@ POST /deviceManagement/auditEvents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|displayName|String|Отображаемое имя события.|
-|componentName|String|Имя компонента.|
-|actor|[auditActor](../resources/intune_auditing_auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|String|Понятное имя действия.|
+|id|Строка|Ключ объекта.|
+|displayName|Строка|Отображаемое имя события.|
+|componentName|Строка|Имя компонента.|
+|субъект|[auditActor](../resources/intune_auditing_auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
+|действие|Строка|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|String|Тип выполненного действия.|
-|activityOperationType|String|Тип операции HTTP для действия.|
-|activityResult|String|Результат действия.|
+|activityType|Строка|Тип выполненного действия.|
+|activityOperationType|Строка|Тип операции HTTP для действия.|
+|activityResult|Строка|Результат действия.|
 |correlationId|Guid|Идентификатор клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune_auditing_auditresource.md)|Изменяемые ресурсы.|
-|category|String|Категория аудита.|
+|category|Строка|Категория аудита.|
 
 
 
@@ -82,7 +82,7 @@ Content-length: 1387
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -104,7 +104,7 @@ Content-length: 1387
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -133,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",

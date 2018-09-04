@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/UsedRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/UsedRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
+GET /workbook/names/{name}/range/usedRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -24,12 +24,10 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
+## <a name="path-parameters"></a>Параметры пути
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|valuesOnly|boolean|Необязательный. Учитывает только ячейки со значениями.|
+|valuesOnly|логический|Необязательный. Учитывает только ячейки со значениями.|
 
 ## <a name="response"></a>Отклик
 
@@ -39,26 +37,21 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
-Content-type: application/json
-Content-length: 24
-
-{
-  "valuesOnly": true
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -74,6 +67,42 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+
+Ниже приведен пример указания необязательного `valuesOnly` параметр.
+
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "range_usedrange_valuesonly"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange(valuesOnly=true)
+```
+
+##### <a name="response"></a>Ответ
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 90,
+  "columnCount": 90,
+  "columnIndex": 90,
+  "valueTypes": "valueTypes-value"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

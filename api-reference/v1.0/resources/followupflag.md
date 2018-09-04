@@ -8,7 +8,7 @@
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|Дата и время, когда выполнение было завершено.|
 |dueDateTime|**dateTimeTimeZone**|Дата и время, когда выполнение должно быть завершено.|
-|flagStatus|String|Состояние выполнения для элемента. Возможные значения: `notFlagged`, `complete` и `flagged`.|
+|flagStatus|FollowupFlagStatus|Состояние выполнения для элемента. Возможные значения: `notFlagged`, `complete` и `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Дата и время, когда следует начать выполнение.|
 
 ## <a name="json-representation"></a>Представление JSON

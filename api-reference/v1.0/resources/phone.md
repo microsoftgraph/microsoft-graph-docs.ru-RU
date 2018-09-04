@@ -6,10 +6,10 @@
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|number|string|Номер телефона.|
-|type|String|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|number|строка|Номер телефона.|
+|type|phoneType|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
