@@ -12,11 +12,10 @@
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| daysOfWeek | Коллекция строк | Дни недели, в которые работает пользователь. |
+| daysOfWeek | Коллекция dayOfWeek | Дни недели, в которые работает пользователь. |
 | startTime | Edm.TimeOfDay | Время дня, в которое пользователь начинает работать. |
 | endTime | Edm.TimeOfDay | Время дня, в которое пользователь заканчивает работать. |
 | timeZone | [timeZoneBase](timezonebase.md) | Часовой пояс, к которому относится рабочее время. |
-
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -47,5 +46,9 @@
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/workinghours.md/microsoft.graph.workingHours/daysOfWeek:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
   "tocPath": ""
 }-->

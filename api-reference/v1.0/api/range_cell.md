@@ -1,4 +1,4 @@
-# <a name="range-cell"></a>Range: Cell
+# <a name="range-cell"></a>Диапазон: ячейка
 
 Получает объект диапазона, содержащий одну ячейку, на основе номера строки и столбца. Ячейка может быть вне родительского диапазона, если она расположена в таблице листа. Возвращаемая ячейка располагается относительно верхней левой ячейки диапазона.
 ## <a name="permissions"></a>Разрешения
@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Cell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Cell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
+GET /workbook/names/{name}/range/cell
+GET /workbook/worksheets/{id|name}/range(address='<address>')/cell
+GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -24,13 +24,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
+## <a name="path-parameters"></a>Параметры пути
+В пути запроса укажите следующие параметры.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|row|number|Номер строки ячейки, которую требуется извлечь. Используется нулевой индекс.|
-|column|number|Номер столбца ячейки, которую требуется извлечь. Используется нулевой индекс.|
+|row|Int32|Номер строки ячейки, которую требуется извлечь. Используется нулевой индекс.|
+|столбец|Int32|Номер столбца ячейки, которую требуется извлечь. Используется нулевой индекс.|
 
 ## <a name="response"></a>Отклик
 
@@ -40,29 +40,21 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
-Content-type: application/json
-Content-length: 37
-
-{
-  "row": {
-  },
-  "column": {
-  }
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/cell(row=5,column=6)
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

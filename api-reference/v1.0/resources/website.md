@@ -1,4 +1,4 @@
-# <a name="website-resource-type"></a>тип ресурса website
+# <a name="website-resource-type"></a>Тип ресурса website
 
 Представляет веб-сайт.
 
@@ -6,13 +6,13 @@
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|String| Возможные значения: `other`, `home`, `work`, `blog`, `profile`.|
-|address|string|URL-адрес веб-сайта.|
-|displayName|string|Отображаемое имя веб-сайта.|
+|type|websiteType| Возможные значения: `other`, `home`, `work`, `blog`, `profile`.|
+|address|string (строка)|URL-адрес веб-сайта.|
+|displayName|string (строка)|Отображаемое имя веб-сайта.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

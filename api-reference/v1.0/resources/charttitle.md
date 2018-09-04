@@ -7,20 +7,20 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
-|[Обновление](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
+|[Get ChartTitle](../api/charttitle_get.md) | [WorkbookChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
+|[Update](../api/charttitle_update.md) | [WorkbookChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overlay|boolean|Логическое значение, указывающее, отображается ли заголовок диаграммы поверх нее.|
 |text|string|Представляет текст заголовка диаграммы.|
 |visible|boolean|Логическое значение, представляющее видимость объекта заголовка диаграммы.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -28,10 +28,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

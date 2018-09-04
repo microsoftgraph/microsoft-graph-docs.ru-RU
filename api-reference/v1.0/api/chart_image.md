@@ -11,10 +11,12 @@
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-
+GET /workbook/worksheets/{id|name}/charts/{name}/image
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -22,31 +24,33 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="path-parameters"></a>Параметры пути
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|height|number|Необязательный. Нужная высота создаваемого изображения.|
-|width|number|Необязательный. Нужная ширина создаваемого изображения.|
-|fittingMode|string|Необязательный параметр. Метод, используемый для масштабирования диаграммы до указанного размера (если указаны и высота, и ширина).  Возможные значения: `Fit`, `FitAndCenter`, `Fill`.|
+|height|Int32|Желаемая высота создаваемого изображения. Необязательный параметр.|
+|width|Int32|Желаемая ширина создаваемого изображения. Необязательный параметр.|
+|fittingMode|строка|Метод, используемый для масштабирования диаграммы для указанного измерения (если заданы и высота, и ширина).»  Возможные значения: `Fit`, `FitAndCenter`, `Fill`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и строку изображения с кодировкой base-64 в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
+
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- { "blockType": "ignored" } -->
+
+<!-- { "blockType": "request" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
-<!-- { "blockType": "ignored" } -->
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true
