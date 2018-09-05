@@ -1,0 +1,68 @@
+# <a name="onpremisesextensionattributes-resource-type"></a>Тип ресурса onPremisesExtensionAttributes
+
+Свойство **onPremisesExtensionAttributes** сущности[пользователя](user.md) содержит пятнадцать настраиваемых свойств атрибута расширения. Для пользователя с **onPremisesSyncEnabled** этот набор свойств создается в локальной службе Active Directory, синхронизируется с Azure AD и доступен только для чтения. Для пользователей только в облаке (где **onPremisesSyncEnabled** имеет значение false) эти свойства могут быть установлены во время создания или обновления.
+
+
+## <a name="properties"></a>Свойства
+| Свойство     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|extensionAttribute1|String| Первый настраиваемый атрибут расширения. |
+|extensionAttribute2|String| Второй настраиваемый атрибут расширения. |
+|extensionAttribute3|String| Третий настраиваемый атрибут расширения. |
+|extensionAttribute4|String| Четвертый настраиваемый атрибут расширения. |
+|extensionAttribute5|String| Пятый настраиваемый атрибут расширения. |
+|extensionAttribute6|String| Шестой настраиваемый атрибут расширения. |
+|extensionAttribute7|String| Седьмой настраиваемый атрибут расширения. |
+|extensionAttribute8|String| Восьмой настраиваемый атрибут расширения. |
+|extensionAttribute9|String| Девятый настраиваемый атрибут расширения. |
+|extensionAttribute10|String| Десятый настраиваемый атрибут расширения. |
+|extensionAttribute11|String| Одиннадцатый настраиваемый атрибут расширения. |
+|extensionAttribute12|String| Двенадцатый настраиваемый атрибут расширения. |
+|extensionAttribute13|String| Тринадцатый настраиваемый атрибут расширения. |
+|extensionAttribute14|String| Четырнадцатый настраиваемый атрибут расширения. |
+|extensionAttribute15|String| Пятнадцатый настраиваемый атрибут расширения. |
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже представлено описание ресурса в формате JSON.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.onPremisesExtensionAttributes"
+}-->
+
+
+```json
+{
+      "extensionAttribute1": "string",
+      "extensionAttribute2": "string",
+      "extensionAttribute3": "string",
+      "extensionAttribute4": "string",
+      "extensionAttribute5": "string",
+      "extensionAttribute6": "string",
+      "extensionAttribute7": "string",
+      "extensionAttribute8": "string",
+      "extensionAttribute9": "string",
+      "extensionAttribute10": "string",
+      "extensionAttribute11": "string",
+      "extensionAttribute12": "string",
+      "extensionAttribute13": "string",
+      "extensionAttribute14": "string",
+      "extensionAttribute15": "string"
+  }
+
+```
+
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "onPremisesExtensionAttributes resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
