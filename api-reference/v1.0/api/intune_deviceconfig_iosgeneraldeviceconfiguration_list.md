@@ -24,8 +24,8 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -41,11 +41,11 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8854
+Content-Length: 8922
 
 {
   "value": [
@@ -159,6 +159,7 @@ Content-Length: 8854
       "kioskModeAllowVolumeButtons": true,
       "kioskModeAllowZoomSettings": true,
       "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+      "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
       "kioskModeRequireAssistiveTouch": true,
       "kioskModeRequireColorInversion": true,
       "kioskModeRequireMonoAudio": true,
@@ -272,6 +273,11 @@ Content-Length: 8854
   ]
 }
 ```
+
+
+
+
+
 
 
 

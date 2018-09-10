@@ -10,7 +10,7 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |password|String|Н/Д Наследуется от ресурса [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|
-|userPrincipalName|String|Н/Д|
+|userPrincipalName|Строка|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -18,7 +18,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsDeviceAccount",
   "@odata.type": "microsoft.graph.windowsDeviceAzureADAccount"
 }-->
 ``` json
@@ -28,6 +27,11 @@
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

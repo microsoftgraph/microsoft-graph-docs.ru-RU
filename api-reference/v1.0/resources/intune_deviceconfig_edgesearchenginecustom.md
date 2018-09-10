@@ -17,7 +17,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.edgeSearchEngineBase",
   "@odata.type": "microsoft.graph.edgeSearchEngineCustom"
 }-->
 ``` json
@@ -26,6 +25,11 @@
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

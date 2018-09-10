@@ -2,8 +2,9 @@
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Н/Д
-## <a name="prerequisites"></a>Необходимые разрешения
+Получает действующие разрешения пользователя, прошедшего проверку подлинности
+
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -24,9 +25,8 @@ GET /deviceManagement/getEffectivePermissions
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
@@ -35,7 +35,6 @@ GET /deviceManagement/getEffectivePermissions
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |scope|String|Н/Д|
-
 
 
 ## <a name="response"></a>Отклик
@@ -50,7 +49,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(sc
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

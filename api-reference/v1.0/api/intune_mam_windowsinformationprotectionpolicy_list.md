@@ -25,7 +25,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -77,7 +77,7 @@ Content-Length: 5155
         "certificate": "Y2VydGlmaWNhdGU="
       },
       "revokeOnUnenrollDisabled": true,
-      "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+      "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
       "azureRightsManagementServicesAllowed": true,
       "iconsVisible": true,
       "protectedApps": [
@@ -191,6 +191,11 @@ Content-Length: 5155
   ]
 }
 ```
+
+
+
+
+
 
 
 

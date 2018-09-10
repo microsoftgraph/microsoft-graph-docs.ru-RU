@@ -13,7 +13,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.ipRange"
 }-->
 ``` json
@@ -21,6 +20,11 @@
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
+
+
+
+
 
 
 

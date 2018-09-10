@@ -25,11 +25,10 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.intuneBrand"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.intuneBrand",
@@ -62,6 +61,11 @@
   "showDisplayNameNextToLogo": true
 }
 ```
+
+
+
+
+
 
 
 

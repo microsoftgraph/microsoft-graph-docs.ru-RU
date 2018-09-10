@@ -17,7 +17,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings"
 }-->
 ``` json
@@ -26,6 +25,11 @@
   "useDeviceContext": true
 }
 ```
+
+
+
+
+
 
 
 

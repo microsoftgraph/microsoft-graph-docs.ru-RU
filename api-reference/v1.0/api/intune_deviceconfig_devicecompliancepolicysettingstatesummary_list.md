@@ -24,8 +24,8 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -41,7 +41,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySett
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -51,10 +51,10 @@ Content-Length: 521
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+      "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
       "setting": "Setting value",
       "settingName": "Setting Name value",
       "platformType": "iOS",
-      "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
       "unknownDeviceCount": 2,
       "notApplicableDeviceCount": 8,
       "compliantDeviceCount": 4,
@@ -66,6 +66,11 @@ Content-Length: 521
   ]
 }
 ```
+
+
+
+
+
 
 
 

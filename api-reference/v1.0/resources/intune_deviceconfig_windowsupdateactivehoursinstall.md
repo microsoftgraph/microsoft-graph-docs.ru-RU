@@ -18,7 +18,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsUpdateInstallScheduleType",
   "@odata.type": "microsoft.graph.windowsUpdateActiveHoursInstall"
 }-->
 ``` json
@@ -28,6 +27,11 @@
   "activeHoursEnd": "String (time of day)"
 }
 ```
+
+
+
+
+
 
 
 

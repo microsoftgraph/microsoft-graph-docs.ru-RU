@@ -16,12 +16,10 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.iosHomeScreenItem",
   "@odata.type": "microsoft.graph.iosHomeScreenApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenApp",
@@ -29,6 +27,11 @@
   "bundleID": "String"
 }
 ```
+
+
+
+
+
 
 
 

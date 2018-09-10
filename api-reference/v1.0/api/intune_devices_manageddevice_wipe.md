@@ -27,7 +27,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
@@ -48,11 +48,11 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-
-<!-- { "blockType": "request" } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/wipe
+
 Content-type: application/json
+Content-length: 109
 
 {
   "keepEnrollmentData": true,
@@ -63,11 +63,14 @@ Content-type: application/json
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
-<!-- { "blockType": "response" } -->
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

@@ -25,7 +25,7 @@ GET /deviceManagement/auditEvents
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -72,7 +72,7 @@ Content-Length: 1629
       "activityType": "Activity Type value",
       "activityOperationType": "Activity Operation Type value",
       "activityResult": "Activity Result value",
-      "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+      "correlationId": "<Unknown Primitive Type Edm.Guid>",
       "resources": [
         {
           "@odata.type": "microsoft.graph.auditResource",
@@ -94,6 +94,11 @@ Content-Length: 1629
   ]
 }
 ```
+
+
+
+
+
 
 
 

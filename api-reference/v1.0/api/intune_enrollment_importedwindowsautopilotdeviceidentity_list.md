@@ -19,6 +19,7 @@
 -->
 ``` http
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentities
+GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -67,6 +68,11 @@ Content-Length: 675
   ]
 }
 ```
+
+
+
+
+
 
 
 
