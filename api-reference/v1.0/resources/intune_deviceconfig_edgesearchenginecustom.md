@@ -1,23 +1,22 @@
-# <a name="edgesearchenginecustom-resource-type"></a><span data-ttu-id="c1e2e-101">Тип ресурса edgeSearchEngineCustom</span><span class="sxs-lookup"><span data-stu-id="c1e2e-101">edgeSearchEngineCustom resource type</span></span>
+# <a name="edgesearchenginecustom-resource-type"></a><span data-ttu-id="c1d04-101">Тип ресурса edgeSearchEngineCustom</span><span class="sxs-lookup"><span data-stu-id="c1d04-101">edgeSearchEngineCustom resource type</span></span>
 
-> <span data-ttu-id="c1e2e-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="c1e2e-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="c1d04-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="c1d04-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="c1e2e-103">Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для устройств под управлением MDM.</span><span class="sxs-lookup"><span data-stu-id="c1e2e-103">Allows IT admins to set a custom default search engine for MDM-Controlled devices.</span></span>
+<span data-ttu-id="c1d04-103">Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для устройств под управлением MDM.</span><span class="sxs-lookup"><span data-stu-id="c1d04-103">Allows IT admins to set a custom default search engine for MDM-Controlled devices.</span></span>
 
-<span data-ttu-id="c1e2e-104">Наследуется от [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)</span><span class="sxs-lookup"><span data-stu-id="c1e2e-104">Inherits from [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)</span></span>
+<span data-ttu-id="c1d04-104">Наследуется от [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)</span><span class="sxs-lookup"><span data-stu-id="c1d04-104">Inherits from [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c1e2e-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="c1e2e-105">Properties</span></span>
-|<span data-ttu-id="c1e2e-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="c1e2e-106">Property</span></span>|<span data-ttu-id="c1e2e-107">Тип</span><span class="sxs-lookup"><span data-stu-id="c1e2e-107">Type</span></span>|<span data-ttu-id="c1e2e-108">Описание</span><span class="sxs-lookup"><span data-stu-id="c1e2e-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c1d04-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="c1d04-105">Properties</span></span>
+|<span data-ttu-id="c1d04-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="c1d04-106">Property</span></span>|<span data-ttu-id="c1d04-107">Тип</span><span class="sxs-lookup"><span data-stu-id="c1d04-107">Type</span></span>|<span data-ttu-id="c1d04-108">Описание</span><span class="sxs-lookup"><span data-stu-id="c1d04-108">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c1e2e-109">edgeSearchEngineOpenSearchXmlUrl</span><span class="sxs-lookup"><span data-stu-id="c1e2e-109">edgeSearchEngineOpenSearchXmlUrl</span></span>|<span data-ttu-id="c1e2e-110">String</span><span class="sxs-lookup"><span data-stu-id="c1e2e-110">String</span></span>|<span data-ttu-id="c1e2e-111">Указывает на HTTPS-ссылку, содержащую XML-файл OpenSearch, в котором указаны по крайней мере краткое имя и URL-адрес поисковой системы.</span><span class="sxs-lookup"><span data-stu-id="c1e2e-111">Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the search Engine.</span></span>|
+|<span data-ttu-id="c1d04-109">edgeSearchEngineOpenSearchXmlUrl</span><span class="sxs-lookup"><span data-stu-id="c1d04-109">edgeSearchEngineOpenSearchXmlUrl</span></span>|<span data-ttu-id="c1d04-110">String</span><span class="sxs-lookup"><span data-stu-id="c1d04-110">String</span></span>|<span data-ttu-id="c1d04-111">Указывает на HTTPS-ссылку, содержащую XML-файл OpenSearch, в котором указаны по крайней мере краткое имя и URL-адрес поисковой системы.</span><span class="sxs-lookup"><span data-stu-id="c1d04-111">Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the search Engine.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c1e2e-112">Связи</span><span class="sxs-lookup"><span data-stu-id="c1e2e-112">Relationships</span></span>
-<span data-ttu-id="c1e2e-113">Нет</span><span class="sxs-lookup"><span data-stu-id="c1e2e-113">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="c1e2e-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c1e2e-114">JSON Representation</span></span>
-<span data-ttu-id="c1e2e-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c1e2e-115">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="c1d04-112">Связи</span><span class="sxs-lookup"><span data-stu-id="c1d04-112">Relationships</span></span>
+<span data-ttu-id="c1d04-113">Нет</span><span class="sxs-lookup"><span data-stu-id="c1d04-113">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c1d04-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c1d04-114">JSON Representation</span></span>
+<span data-ttu-id="c1d04-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c1d04-115">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.edgeSearchEngineBase",
   "@odata.type": "microsoft.graph.edgeSearchEngineCustom"
 }-->
 ``` json
@@ -26,6 +25,11 @@
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 
