@@ -16,12 +16,10 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.ipRange",
   "@odata.type": "microsoft.graph.iPv6Range"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iPv6Range",
@@ -29,6 +27,11 @@
   "upperAddress": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -15,18 +15,21 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppIdentifier",
   "@odata.type": "microsoft.graph.iosMobileAppIdentifier"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosMobileAppIdentifier",
   "bundleId": "String"
 }
 ```
+
+
+
+
+
 
 
 
