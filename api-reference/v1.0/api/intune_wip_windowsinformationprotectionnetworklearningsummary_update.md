@@ -24,8 +24,8 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune_wip_windowsinformationprotectionnetworklearningsummary.md) в формате JSON.
@@ -34,8 +34,8 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
-|url|String|URL-адрес веб-сайта|
+|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|url|Строка|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
 
@@ -58,7 +58,7 @@ Content-length: 48
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -71,6 +71,11 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 
