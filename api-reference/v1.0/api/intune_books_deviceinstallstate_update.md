@@ -36,14 +36,14 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|deviceName|Строка​|Имя устройства.|
-|deviceId|Строка​|Идентификатор устройства.|
+|deviceName|Строка|Имя устройства.|
+|deviceId|Строка|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune_books_installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Строка​|Код ошибки для сбоев при установке.|
-|osVersion|Строка​|Версия ОС.|
-|osDescription|Строка​|Описание ОС.|
-|userName|Строка​|Имя пользователя устройства.|
+|errorCode|Строка|Код ошибки для сбоев при установке.|
+|osVersion|Строка|Версия ОС.|
+|osDescription|Строка|Описание ОС.|
+|userName|Строка|Имя пользователя устройства.|
 
 
 
@@ -90,6 +90,11 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
+
+
+
 
 
 

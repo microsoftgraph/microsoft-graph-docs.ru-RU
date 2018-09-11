@@ -10,7 +10,7 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |actionName|Строка|Название действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Состояние действия унаследованного от [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Состояние действия наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |passcode|Строка|Новый секретный код для устройства |
@@ -21,7 +21,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.resetPasscodeActionResult"
 }-->
 ``` json
@@ -34,6 +33,11 @@
   "passcode": "String"
 }
 ```
+
+
+
+
+
 
 
 

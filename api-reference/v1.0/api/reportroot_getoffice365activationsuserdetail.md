@@ -44,9 +44,10 @@ CSV-файл содержит столбцы со следующими заго�
 - Last Activated Date (дата последней активации)
 - Windows
 - Mac
-- Windows 10 Mobile
+- Windows 10 Mobile
 - iOS
 - Android
+- Activated On Shared Computer (Активирован на совместно используемом компьютере)
 
 ## <a name="example"></a>Пример
 
@@ -88,5 +89,5 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android,Activated On Shared Computer
 ```
