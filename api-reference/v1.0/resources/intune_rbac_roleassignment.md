@@ -17,7 +17,7 @@
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|String|Отображаемое или понятное имя назначения роли.|
-|description|String|Описание назначения роли.|
+|описание|String|Описание назначения роли.|
 |resourceScopes|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 
 ## <a name="relationships"></a>Связи
@@ -29,8 +29,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleAssignment"
 }-->
 ``` json
@@ -44,6 +44,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 

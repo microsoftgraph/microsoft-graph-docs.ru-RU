@@ -20,7 +20,7 @@
 |id|String|Уникальный идентификатор партнера.|
 |displayName|String|Отображаемое имя партнера.|
 |onboardingUrl|String|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Подлежит уточнению. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Подлежит определению. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного службе Intune партнером TEM.|
 
 ## <a name="relationships"></a>Связи
@@ -29,8 +29,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.remoteAssistancePartner"
 }-->
 ``` json
@@ -43,6 +43,11 @@
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

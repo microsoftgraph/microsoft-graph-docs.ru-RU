@@ -19,8 +19,8 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
-|displayName|Строка​|Отображаемое имя определения роли. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
-|description|Строка​|Описание определения роли. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
+|displayName|Строка|Отображаемое имя определения роли. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
+|описание|Строка|Описание определения роли. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
 |rolePermissions|Коллекция [rolePermission](../resources/intune_rbac_rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
 |isBuiltIn|Логический|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False. Наследуется от [roleDefinition](../resources/intune_rbac_roledefinition.md).|
 
@@ -33,8 +33,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.roleDefinition",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleDefinition"
 }-->
 ``` json
@@ -62,6 +62,11 @@
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

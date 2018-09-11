@@ -24,8 +24,8 @@ POST /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта telecomExpenseManagementPartner в формате JSON.
@@ -34,12 +34,12 @@ POST /deviceManagement/telecomExpenseManagementPartners
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор партнера TEM.|
-|displayName|String|Отображаемое имя партнера TEM.|
-|url|String|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
-|appAuthorized|Boolean|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
-|enabled|Boolean|Определяет, включено или отключено подключение Intune к службе TEM в настоящее время.|
-|lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного службе Intune партнером TEM.|
+|id|Строка|Уникальный идентификатор партнера TEM.|
+|displayName|Строка|Отображаемое имя партнера TEM.|
+|url|Строка|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
+|appAuthorized|Логический|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
+|enabled|Логический|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
+|lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
 
 
 
@@ -65,7 +65,7 @@ Content-length: 248
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -81,6 +81,11 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+
+
+
 
 
 

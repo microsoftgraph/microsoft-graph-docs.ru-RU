@@ -25,8 +25,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppCategory"
 }-->
 ``` json
@@ -37,6 +37,11 @@
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

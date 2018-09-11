@@ -10,7 +10,7 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String (строка)|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|String (строка)|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|описание|String (строка)|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|String (строка)|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |value|Single|Значение.|
 
@@ -20,7 +20,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingFloatingPoint"
 }-->
 ``` json
@@ -29,9 +28,14 @@
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": 1.5
+  "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
+
+
+
+
 
 
 

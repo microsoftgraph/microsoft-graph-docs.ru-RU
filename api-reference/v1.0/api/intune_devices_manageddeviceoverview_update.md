@@ -24,8 +24,8 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) в формате JSON.
@@ -34,7 +34,7 @@ PATCH /deviceManagement/managedDeviceOverview
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сводки.|
+|id|String (строка)|Уникальный идентификатор сводки.|
 |enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК.|
 |mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM.|
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
@@ -79,7 +79,7 @@ Content-length: 625
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -110,6 +110,11 @@ Content-Length: 734
   }
 }
 ```
+
+
+
+
+
 
 
 

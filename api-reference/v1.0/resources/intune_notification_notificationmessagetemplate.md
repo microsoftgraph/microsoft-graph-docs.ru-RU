@@ -16,11 +16,11 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Отображаемое имя для шаблона сообщения уведомления.|
-|defaultLocale|String|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
-|brandingOptions|String|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
+|displayName|String (строка)|Отображаемое имя для шаблона сообщения уведомления.|
+|defaultLocale|String (строка)|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -29,12 +29,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.notificationMessageTemplate"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
@@ -45,6 +45,11 @@
   "brandingOptions": "String"
 }
 ```
+
+
+
+
+
 
 
 

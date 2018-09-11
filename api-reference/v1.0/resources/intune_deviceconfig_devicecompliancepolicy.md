@@ -16,7 +16,7 @@
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|description|String (строка)|Указанное администратором описание конфигурации устройства.|
+|описание|String (строка)|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|String (строка)|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
@@ -34,13 +34,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
-  "abstract": true,
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicy",
@@ -52,6 +51,11 @@
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 
