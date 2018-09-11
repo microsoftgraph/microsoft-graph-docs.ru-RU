@@ -21,7 +21,7 @@
 |displayName|String (строка)|Отображаемое имя события.|
 |componentName|String (строка)|Имя компонента.|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|String (строка)|Понятное имя действия.|
+|действие|String (строка)|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
 |activityType|String (строка)|Тип выполненного действия.|
 |activityOperationType|String (строка)|Тип операции HTTP для действия.|
@@ -64,7 +64,7 @@
   "activityType": "String",
   "activityOperationType": "String",
   "activityResult": "String",
-  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "correlationId": "Guid",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -84,6 +84,11 @@
   "category": "String"
 }
 ```
+
+
+
+
+
 
 
 

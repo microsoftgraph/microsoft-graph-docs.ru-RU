@@ -12,7 +12,7 @@
 |[Перечисление androidCustomConfigurations](../api/intune_deviceconfig_androidcustomconfiguration_list.md)|Коллекция [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Перечисление свойств и связей объектов [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
 |[Получение androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_get.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Считывание свойств и связей объекта [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
 |[Создание androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_create.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Создание объекта [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
-|[Удаление androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_delete.md)|None|Удаление экземпляра [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
+|[Удаление androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_delete.md)|Нет|Удаление экземпляра [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
 |[Обновление androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_update.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Обновление свойств объекта [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
 
 ## <a name="properties"></a>Свойства
@@ -40,8 +40,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidCustomConfiguration"
 }-->
 ``` json
@@ -64,6 +64,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 
