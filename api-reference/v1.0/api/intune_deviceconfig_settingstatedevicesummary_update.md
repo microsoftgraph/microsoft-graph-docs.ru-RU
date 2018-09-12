@@ -25,8 +25,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) в формате JSON.
@@ -35,9 +35,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|settingName|String|Имя параметра.|
-|instancePath|String|Имя пути к экземпляру для параметра.|
+|id|Строка|Ключ объекта.|
+|settingName|String (строка)|Имя параметра.|
+|instancePath|String (строка)|Имя пути к экземпляру для параметра.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств для параметра.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств для параметра.|
 |compliantDeviceCount|Int32|Количество соответствующих устройств для параметра.|
@@ -73,7 +73,7 @@ Content-length: 296
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -93,6 +93,11 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

@@ -40,8 +40,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration"
 }-->
 ``` json
@@ -56,6 +56,11 @@
   "uninstallBuiltInApps": true
 }
 ```
+
+
+
+
+
 
 
 
