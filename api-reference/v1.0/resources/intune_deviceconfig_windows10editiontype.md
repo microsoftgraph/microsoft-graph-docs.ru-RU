@@ -3,8 +3,8 @@
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Тип выпуска Windows 10.
-## <a name="members"></a>Члены
-|Член|Значение|Описание|
+## <a name="members"></a>Элементы
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |windows10Enterprise|0|Windows 10 Корпоративная|
 |windows10EnterpriseN|1|Windows 10 EnterpriseN|
@@ -18,6 +18,11 @@
 |windows10ProfessionalEducationN|9|Windows 10 Professional для образовательных учреждений N|
 |windows10ProfessionalWorkstation|10|Windows 10 Professional для рабочих станций|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional для рабочих станций N|
+
+
+
+
+
 
 
 

@@ -12,7 +12,7 @@
 |:---|:---|:---|
 |[Перечисление androidManagedAppRegistrations](../api/intune_mam_androidmanagedappregistration_list.md)|Коллекция [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Список свойств и связей объектов [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
 |[Получение androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_get.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Считывание свойств и связей объекта [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
-|[Создание androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_create.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Создание нового объекта [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
+|[Создание androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_create.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Создание объекта [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -25,7 +25,7 @@
 |deviceType|String (строка)|Тип главного устройства. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |deviceTag|String (строка)|Тег, который создан с использованием пакета SDK для управления приложениями и помогает связывать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |deviceName|String (строка)|Имя устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|flaggedReasons|Коллекция [перечисления managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Причины (при наличии таковых), по которым помечается регистрация приложения. Пример: приложение запускается на рутованном устройстве. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|flaggedReasons|Коллекция [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Причины, по которым помечается регистрация приложения (если они есть). Пример: приложение запускается на рутованном устройстве. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |userId|String (строка)|ИД пользователя, к которому относится эта регистрация приложения. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Идентификатор пакета приложения. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |id|String (строка)|Ключ объекта. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
@@ -40,13 +40,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppRegistration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidManagedAppRegistration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -63,13 +62,18 @@
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier",
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
     "packageId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

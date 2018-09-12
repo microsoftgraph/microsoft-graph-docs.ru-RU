@@ -1,14 +1,15 @@
-# <a name="update-organization"></a>Обновление организации
+# <a name="manageddeviceenrollmenttopfailures-function"></a>Функция managedDeviceEnrollmentTopFailures
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Обновление свойств объекта [organization](../resources/intune_onboarding_organization.md).
-## <a name="prerequisites"></a>Предварительные условия
+Н/Д
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)||
+| &nbsp; &nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -18,41 +19,33 @@
 }
 -->
 ``` http
-PATCH /organization/{organizationId}
+GET /reports/managedDeviceEnrollmentTopFailures
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|application/json|
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса добавьте представление объекта [organization](../resources/intune_onboarding_organization.md) в формате JSON.
-
-В приведенной ниже таблице указаны свойства, необходимые при создании объекта [organization](../resources/intune_onboarding_organization.md).
+## <a name="request-body"></a>Текст запроса
+В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
+В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|GUID объекта.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
+|period|String|Н/Д|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [organization](../resources/intune_onboarding_organization.md) в теле отклика.
+В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune_shared_report.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/v1.0/organization/{organizationId}
-Content-type: application/json
-Content-length: 51
-
-{
-  "mobileDeviceManagementAuthority": "intune"
-}
+GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentTopFailures(period='parameterValue')
 ```
 
 ### <a name="response"></a>Ответ
@@ -60,18 +53,15 @@ Content-length: 51
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 151
+Content-Length: 123
 
 {
-  "@odata.type": "#microsoft.graph.organization",
-  "id": "9efe224a-224a-9efe-4a22-fe9e4a22fe9e",
-  "mobileDeviceManagementAuthority": "intune"
+  "value": {
+    "@odata.type": "microsoft.graph.report",
+    "content": "<Unknown Primitive Type Edm.Stream>"
+  }
 }
 ```
-
-
-
-
 
 
 

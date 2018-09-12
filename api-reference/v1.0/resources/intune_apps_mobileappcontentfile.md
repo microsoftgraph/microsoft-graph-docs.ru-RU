@@ -9,35 +9,35 @@
 |[Перечисление mobileAppContentFiles](../api/intune_apps_mobileappcontentfile_list.md)|Коллекция [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Список свойств и связей объектов [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).|
 |[Получение mobileAppContentFile](../api/intune_apps_mobileappcontentfile_get.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Считывание свойств и связей объекта [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).|
 |[Создание mobileAppContentFile](../api/intune_apps_mobileappcontentfile_create.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Создание объекта [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).|
-|[Удаление mobileAppContentFile](../api/intune_apps_mobileappcontentfile_delete.md)|None|Удаление экземпляра [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).|
+|[Удаление mobileAppContentFile](../api/intune_apps_mobileappcontentfile_delete.md)|Нет|Удаление экземпляра [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).|
 |[Обновление mobileAppContentFile](../api/intune_apps_mobileappcontentfile_update.md)|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md)|Обновление свойств объекта [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md).|
-|[Действие commit](../api/intune_apps_mobileappcontentfile_commit.md)|None|Подтверждает файл заданного приложения.|
-|[Действие renewUpload](../api/intune_apps_mobileappcontentfile_renewupload.md)|None|Обновляет URI SAS для отправки файла приложения.|
+|[Действие commit](../api/intune_apps_mobileappcontentfile_commit.md)|Нет|Подтверждает файл заданного приложения.|
+|[Действие renewUpload](../api/intune_apps_mobileappcontentfile_renewupload.md)|Нет|Обновляет URI SAS для отправки файла приложения.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|azureStorageUri|String|URI службы хранилища Azure.|
+|azureStorageUri|Строка|URI службы хранилища Azure.|
 |isCommitted|Boolean|Значение, указывающее, является ли файл подтвержденным.|
-|id|String|Идентификатор файла.|
+|id|Строка|Идентификатор файла.|
 |createdDateTime|DateTimeOffset|Время создания файла.|
-|name|String|Имя файла.|
+|name|Строка|Имя файла.|
 |size|Int64|Размер файла до шифрования.|
 |sizeEncrypted|Int64|Размер файла после шифрования.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Время, когда заканчивается срок действия URI для службы хранилища Azure.|
 |manifest|Binary|Данные манифеста.|
-|uploadState|String|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
 
 ## <a name="relationships"></a>Связи
-None
+Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppContentFile"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
@@ -53,6 +53,11 @@ None
   "uploadState": "String"
 }
 ```
+
+
+
+
+
 
 
 

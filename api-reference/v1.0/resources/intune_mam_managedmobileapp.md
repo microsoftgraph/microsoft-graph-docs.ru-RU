@@ -17,7 +17,7 @@
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
 |id|Строка|Ключ объекта.|
-|version|Строка​|Версия объекта.|
+|version|Строка|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -25,8 +25,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedMobileApp"
 }-->
 ``` json
@@ -39,6 +39,11 @@
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

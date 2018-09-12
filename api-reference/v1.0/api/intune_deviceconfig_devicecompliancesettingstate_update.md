@@ -1,10 +1,10 @@
-# <a name="update-devicecompliancesettingstate"></a>Update deviceComplianceSettingState
+# <a name="update-devicecompliancesettingstate"></a>Обновление объекта deviceComplianceSettingState
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Обновление свойств объекта [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md).
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -21,11 +21,11 @@
 PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) в формате JSON.
@@ -34,18 +34,18 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта|
-|setting|String|Имя класса параметров и свойства.|
-|settingName|String|Имя параметра в отчете|
-|deviceId|String|ИД устройства в отчете|
-|deviceName|String|Имя устройства в отчете|
-|userId|String|ИД пользователя в отчете|
-|userEmail|String|Электронный адрес пользователя в отчете|
-|userName|String|Имя пользователя в отчете|
-|userPrincipalName|String|Имя участника-пользователя в отчете|
-|deviceModel|String|Модель устройства в отчете|
-|state|String|Состояние соответствия требованиям для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве|
+|id|Строка|Ключ объекта|
+|setting|Строка|Имя класса параметров и свойства.|
+|settingName|Строка|Имя параметра в отчете.|
+|deviceId|Строка|Идентификатор устройства в отчете.|
+|deviceName|Строка|Имя устройства в отчете.|
+|userId|Строка|Идентификатор пользователя в отчете.|
+|userEmail|Строка|Адрес электронной почты пользователя в отчете.|
+|userName|Строка|Имя пользователя в отчете.|
+|userPrincipalName|Строка|Имя участника-пользователя в отчете.|
+|deviceModel|Строка|Модель устройства в отчете.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
 
 
@@ -76,7 +76,7 @@ Content-length: 450
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -98,6 +98,11 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
+
+
+
 
 
 

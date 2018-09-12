@@ -9,9 +9,9 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка​|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|Строка​|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|omaUri|Строка​|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|Строка|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |value|DateTimeOffset|Значение.|
 
 ## <a name="relationships"></a>Связи
@@ -20,7 +20,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingDateTime"
 }-->
 ``` json
@@ -32,6 +31,11 @@
   "value": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 
