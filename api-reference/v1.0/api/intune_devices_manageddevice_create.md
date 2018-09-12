@@ -1,4 +1,4 @@
-# <a name="create-manageddevice"></a>Create managedDevice
+# <a name="create-manageddevice"></a>Создание managedDevice
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -36,53 +36,53 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка​|Уникальный идентификатор устройства.|
-|userId|Строка​|Уникальный идентификатор пользователя, связанного с устройством.|
-|deviceName|Строка​|Название устройства|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|Владение устройством. Может быть "company" (компании) или "personal" (личное). Возможные значения: `unknown`, `company`, `personal`.|
+|id|Строка|Уникальный идентификатор устройства.|
+|userId|Строка|Уникальный идентификатор пользователя, связанного с устройством.|
+|deviceName|Строка|Название устройства|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|Владение устройством. Может быть "компания" или "личное". Возможные значения: `unknown`, `company`, `personal`.|
 |deviceActionResults|Коллекция [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|Список объектов deviceActionResult сложного типа.|
 |enrolledDateTime|DateTimeOffset|Время регистрации устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней успешной синхронизации устройства с Intune.|
-|operatingSystem|Строка​|Операционная система устройства. Windows, iOS и т. д.|
+|operatingSystem|Строка|Операционная система устройства. Windows, iOS и т. д.|
 |complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|Состояние соответствия устройства требованиям. Возможные значения: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
-|jailBroken|Строка​|Указывает, является ли устройство взломанным или рутованным.|
-|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Канал управления устройством. Intune, EAS, и т. д. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
-|osVersion|Строка​|Версия операционной системы устройства.|
+|jailBroken|Строка|Указывает, является ли устройство взломанным или рутованным.|
+|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
+|osVersion|Строка|Версия операционной системы устройства.|
 |easActivated|Логический|Указывает, активировано ли устройство в Exchange ActiveSync.|
-|easDeviceId|Строка​|Идентификатор устройства в Exchange ActiveSync.|
+|easDeviceId|Строка|Идентификатор устройства в Exchange ActiveSync.|
 |easActivationDateTime|DateTimeOffset|Время активации устройства в Exchange ActivationSync.|
 |azureADRegistered|Логический|Указывает, зарегистрировано ли устройство в Azure Active Directory.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|Тип регистрации устройства. Возможные значения: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-|activationLockBypassCode|Строка​|Код, позволяющий обойти блокировку активации на устройстве.|
-|emailAddress|Строка​|Адреса электронной почты пользователя, связанного с устройством|
-|azureADDeviceId|Строка​|Уникальный идентификатор устройства Azure Active Directory. Только для чтения.|
+|activationLockBypassCode|Строка|Код, позволяющий обойти блокировку активации на устройстве.|
+|emailAddress|Строка|Адреса электронной почты пользователя, связанного с устройством|
+|azureADDeviceId|Строка|Уникальный идентификатор устройства Azure Active Directory. Только для чтения.|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune_devices_deviceregistrationstate.md)|Состояние регистрации устройства. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
-|deviceCategoryDisplayName|Строка​|Отображаемое имя категории устройства|
+|deviceCategoryDisplayName|Строка|Отображаемое имя категории устройства|
 |isSupervised|Логический|Состояние защиты устройства|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Время последнего подключения устройства к Exchange.|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Состояние доступа к устройству в Exchange. Возможные значения: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Состояние доступа устройств в Exchange. Возможные значения: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|Причина состояния доступа к устройству в Exchange. Возможные значения: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
-|remoteAssistanceSessionUrl|Строка​|URL-адрес, позволяющий установить сеанс удаленного помощника с устройством.|
-|remoteAssistanceSessionErrorDetails|Строка​|Проблемы, возникающие при создании сеансов удаленного помощника.|
+|remoteAssistanceSessionUrl|Строка|URL-адрес, позволяющий установить сеанс удаленного помощника с устройством.|
+|remoteAssistanceSessionErrorDetails|Строка|Проблемы, возникающие при создании сеансов удаленного помощника.|
 |isEncrypted|Логический|Состояние шифрования устройства|
-|userPrincipalName|Строка​|Имя участника-пользователя устройства|
-|model|Строка​|Модель устройства|
-|manufacturer|Строка​|Производитель устройства|
-|imei|Строка​|IMEI|
+|userPrincipalName|Строка|Имя участника-пользователя устройства|
+|model|Строка|Модель устройства|
+|manufacturer|Строка|Производитель устройства|
+|imei|Строка|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия устройства требованиям|
-|serialNumber|Строка​|SerialNumber|
-|phoneNumber|Строка​|Номер телефона устройства|
-|androidSecurityPatchLevel|Строка​|Уровень обновления для системы безопасности Android|
-|userDisplayName|Строка​|Отображаемое имя пользователя|
+|serialNumber|Строка|SerialNumber|
+|phoneNumber|Строка|Номер телефона устройства|
+|androidSecurityPatchLevel|Строка|Уровень обновления для системы безопасности Android|
+|userDisplayName|Строка|Отображаемое имя пользователя|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|Включенные функции клиента Configuration Manager|
-|wiFiMacAddress|Строка​|MAC-адрес сети Wi-Fi|
+|wiFiMacAddress|Строка|MAC-адрес сети Wi-Fi|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune_devices_devicehealthattestationstate.md)|Состояние подтверждения работоспособности устройства.|
-|subscriberCarrier|Строка​|Оператор сотовой связи, используемый абонентом|
-|meid|Строка​|MEID|
+|subscriberCarrier|Строка|Оператор сотовой связи, используемый абонентом|
+|meid|Строка|MEID|
 |totalStorageSpaceInBytes|Int64|Общий объем хранилища в байтах|
 |freeStorageSpaceInBytes|Int64|Свободный объем хранилища в байтах|
-|managedDeviceName|Строка​|Автоматически созданный идентификатор устройства. Может быть заменен понятным именем.|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Указывает состояние подверженности устройства угрозам при использовании решения Mobile Threat Defense (в учетной записи и на устройстве). Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
+|managedDeviceName|Строка|Автоматически созданный идентификатор устройства. Может быть заменен понятным именем.|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Указывает состояние подверженности устройства угрозам при использовании решения Mobile Threat Defense (в учетной записи и на устройстве). Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 
 
 
@@ -306,6 +306,11 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
+
+
+
+
+
 
 
 
