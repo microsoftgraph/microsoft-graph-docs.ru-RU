@@ -9,24 +9,27 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|edgeSearchEngineType|[edgeSearchEngineType](../resources/intune_deviceconfig_edgesearchenginetype.md)|Позволяет ИТ-администраторам предварительно задавать поисковую систему по умолчанию для MDM-управляемых устройств. Возможные значения: `default`, `bing`.|
+|edgeSearchEngineType|[edgeSearchEngineType](../resources/intune_deviceconfig_edgesearchenginetype.md)|Позволяет ИТ-администраторам задать механизм поиска по умолчанию для устройств под управлением MDM. Возможные значения: `default`, `bing`.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.edgeSearchEngineBase",
   "@odata.type": "microsoft.graph.edgeSearchEngine"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngine",
   "edgeSearchEngineType": "String"
 }
 ```
+
+
+
+
+
 
 
 

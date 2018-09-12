@@ -1,15 +1,14 @@
-# <a name="syncmicrosoftstoreforbusinessapps-action"></a>Действие syncMicrosoftStoreForBusinessApps
+# <a name="delete-importedwindowsautopilotdeviceidentityupload"></a>Удаление importedWindowsAutopilotDeviceIdentityUpload
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Синхронизирует учетную запись Intune с Microsoft Store для бизнеса
-## <a name="prerequisites"></a>Предварительные условия
+Удаляет [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md).
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| 
-| &nbsp; &nbsp; _Адаптация_ | DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -19,7 +18,7 @@
 }
 -->
 ``` http
-POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
+DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -32,21 +31,25 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-## <a name="example-request"></a>Пример запроса
-
+## <a name="example"></a>Пример
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForBusinessApps
+DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}
 ```
 
 ### <a name="response"></a>Ответ
-
-Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

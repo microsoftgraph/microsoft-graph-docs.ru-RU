@@ -1,4 +1,4 @@
-# <a name="update-windows81compliancepolicy"></a>Update windows81CompliancePolicy
+# <a name="update-windows81compliancepolicy"></a>Обновление объекта windows81CompliancePolicy
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -47,7 +47,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|счётчик блокировки пароля при вводе предыдущего пароля|Int32|Количество предыдущих паролей, повторное использование которых следует запретить. Допустимые значения: от 0 до 24.|
+|passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых следует запретить. Допустимые значения: от 0 до 24.|
 |osMinimumVersion|Строка|Минимальная версия Windows 8.1.|
 |osMaximumVersion|Строка|Максимальная версия Windows 8.1.|
 |storageRequireEncryption|Логический|Указывает, обязательно ли шифрование данных на устройстве с Windows 8.1.|
@@ -112,6 +112,11 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 
