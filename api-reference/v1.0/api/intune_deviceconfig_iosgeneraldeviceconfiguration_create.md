@@ -1,4 +1,4 @@
-# <a name="create-iosgeneraldeviceconfiguration"></a>Create iosGeneralDeviceConfiguration
+# <a name="create-iosgeneraldeviceconfiguration"></a>Создание iosGeneralDeviceConfiguration
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -67,7 +67,7 @@ POST /deviceManagement/deviceConfigurations
 |classroomAppBlockRemoteScreenObservation|Логический|Указывает, следует ли запретить удаленное наблюдение за экраном в приложении "Класс", когда устройство находится в защищенном режиме (iOS 9.3 и более поздних версий).|
 |classroomAppForceUnpromptedScreenObservation|Логический|Указывает, следует ли предоставлять учителю управляемого курса в приложении "Класс" разрешение на просмотр экрана учащегося автоматически, когда устройство находится в защищенном режиме.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune_deviceconfig_applistitem.md)|Список приложений (разрешенных или заблокированных в зависимости от значения свойства CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Список свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Список, определенный свойством AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Логический|Указывает, следует ли запретить интерактивную установку профилей и сертификатов конфигурации, когда устройство находится в защищенном режиме.|
 |definitionLookupBlocked|Логический|Указывает, следует ли заблокировать поиск определений, когда устройство находится в защищенном режиме (iOS 8.1.3 и более поздних версий).|
 |deviceBlockEnableRestrictions|Логический|Указывает, может ли пользователь включать ограничения в настройках устройства, когда оно находится в защищенном режиме.|
@@ -116,6 +116,7 @@ POST /deviceManagement/deviceConfigurations
 |kioskModeAllowVolumeButtons|Логический|Указывает, можно ли использовать кнопки громкости в режиме киоска.|
 |kioskModeAllowZoomSettings|Логический|Указывает, следует ли запретить доступ к настройкам масштабирования в режиме киоска.|
 |kioskModeAppStoreUrl|Строка|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
+|kioskModeBuiltInAppId|Строковый|Идентификатор управляемого приложения для использования в режиме киоска. Используется, когда свойства KioskModeManagedAppId и KioskModeAppStoreUrl не установлены.|
 |kioskModeRequireAssistiveTouch|Логический|Указывает, обязательно ли использовать сенсорное управление со специальными возможностями в режиме киоска.|
 |kioskModeRequireColorInversion|Логический|Указывает, обязательно ли использовать инверсию цвета в режиме киоска.|
 |kioskModeRequireMonoAudio|Логический|Указывает, обязательно ли использовать монозвук в режиме киоска.|
@@ -150,14 +151,14 @@ POST /deviceManagement/deviceConfigurations
 |passcodeMinimumCharacterSetCount|Int32|Количество наборов символов, которые должен содержать секретный код. Допустимые значения: от 0 до 4.|
 |passcodePreviousPasscodeBlockCount|Int32|Количество предыдущих секретных кодов, которые следует блокировать. Допустимые значения: от 1 до 24.|
 |passcodeSignInFailureCountBeforeWipe|Int32|Количество неудачных попыток входа до очистки устройства. Допустимые значения: от 4 до 11|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Необходимый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Требуемый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Логический|Указывает, обязательно ли использовать секретный код.|
 |podcastsBlocked|Логический|Указывает, следует ли запретить использовать подкасты на защищенном устройстве (iOS 8.0 и более поздних версий).|
 |safariBlockAutofill|Логический|Указывает, следует ли запретить использовать автозаполнение в Safari.|
 |safariBlockJavaScript|Логический|Указывает, следует ли заблокировать JavaScript в Safari.|
 |safariBlockPopups|Логический|Указывает, следует ли блокировать всплывающие окна в Safari.|
 |safariBlocked|Логический|Указывает, следует ли запретить использовать Safari.|
-|safariCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Параметры  файлов cookie для Safari. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
+|safariCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Настройки файлов cookie для Safari. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |safariManagedDomains|Коллекция String|URL-адреса, соответствующие приведенным здесь шаблонам, будут считаться управляемыми.|
 |safariPasswordAutoFillDomains|Коллекция String|Пользователи могут сохранять пароли в Safari только с URL-адресов, соответствующих приведенным здесь шаблонам. Применяется к устройствам в защищенном режиме (iOS 9.3 и более поздних версий).|
 |safariRequireFraudWarning|Логический|Указывает, обязательно ли предупреждение о мошенничестве в Safari.|
@@ -182,7 +183,7 @@ POST /deviceManagement/deviceConfigurations
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 7841
+Content-length: 7905
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -292,6 +293,7 @@ Content-length: 7841
   "kioskModeAllowVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+  "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,
@@ -409,7 +411,7 @@ Content-length: 7841
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7949
+Content-Length: 8013
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -521,6 +523,7 @@ Content-Length: 7949
   "kioskModeAllowVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+  "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,
@@ -632,6 +635,11 @@ Content-Length: 7949
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
+
+
+
+
+
 
 
 

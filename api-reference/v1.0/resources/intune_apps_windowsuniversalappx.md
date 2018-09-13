@@ -12,53 +12,53 @@
 |[Перечисление windowsUniversalAppXs](../api/intune_apps_windowsuniversalappx_list.md)|Коллекция [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|Список свойств и связей объектов [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md).|
 |[Получение windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_get.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|Считывание свойств и связей объекта [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md).|
 |[Создание windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_create.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|Создание нового объекта [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md).|
-|[Удаление windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_delete.md)|None|Удаление экземпляра [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md).|
+|[Удаление windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_delete.md)|Нет|Удаление экземпляра [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md).|
 |[Обновление windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_update.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|Обновление свойств объекта [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|displayName|String|Администратор предоставил или импортировал название приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|String|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Допустимые значения: `notPublished`, `processing`, `published`.|
-|committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
-|fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
-|size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
-|applicableArchitectures|String|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|applicableDeviceTypes|String|Типы устройств с Windows, которые поддерживаются этим приложением. Возможные значения: `none`, `desktop`, `mobile`, `holographic`, `team`.|
-|identityName|String|Имя удостоверения.|
-|identityPublisherHash|String|Хэш издателей удостоверений.|
-|identityResourceIdentifier|String|Идентификатор ресурса Identity.|
-|isBundle|Boolean|Указывает, является ли приложение пакетом.|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
-|identityVersion|String|Версия удостоверения.|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publisher|Строка|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|isFeatured|Логический|Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|informationUrl|Строка|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|owner|Строка|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|developer|Строка|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|notes|Строка|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|committedContentVersion|Строка|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
+|fileName|Строка|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
+|size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
+|applicableArchitectures|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableDeviceTypes|[windowsDeviceType](../resources/intune_apps_windowsdevicetype.md)|Типы устройств с Windows, которые поддерживаются этим приложением. Возможные значения: `none`, `desktop`, `mobile`, `holographic`, `team`.|
+|identityName|String (строка)|Имя удостоверения.|
+|identityPublisherHash|String (строка)|Хэш издателей удостоверений.|
+|identityResourceIdentifier|String (строка)|Идентификатор ресурса Identity.|
+|isBundle|Boolean (логический)|Указывает, является ли приложение пакетом.|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
+|identityVersion|String (строка)|Версия удостоверения.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|categories|Коллекция [mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|assignments|Коллекция [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md).|
-|contentVersions|Коллекция [mobileAppContent](../resources/intune_apps_mobileappcontent.md)|Список версий содержимого для этого приложения. Наследуется от [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
+|categories|Коллекция объектов [mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Список категорий для этого приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|assignments|Коллекция [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|contentVersions|Коллекция объектов [mobileAppContent](../resources/intune_apps_mobileappcontent.md)|Список версий содержимого для этого приложения. Наследуется от [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.mobileLobApp",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsUniversalAppX"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -98,6 +98,11 @@
   "identityVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 

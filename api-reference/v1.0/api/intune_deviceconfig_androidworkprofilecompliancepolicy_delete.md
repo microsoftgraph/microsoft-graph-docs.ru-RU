@@ -1,14 +1,14 @@
-# <a name="sync-action"></a>Действие sync
+# <a name="delete-androidworkprofilecompliancepolicy"></a>Удаление androidWorkProfileCompliancePolicy
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Н/Д
-## <a name="prerequisites"></a>Необходимые разрешения
+Удаляет [androidWorkProfileCompliancePolicy](../resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md).
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -18,41 +18,26 @@
 }
 -->
 ``` http
-POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
+DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тело запроса добавьте параметры в формате JSON.
+Не указывайте тело запроса для этого метода.
 
-В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
-
-|Свойство|Тип|Описание|
-|:---|:---|:---|
-|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|Тип выполняемой синхронизации (синхронизируется все или только изменения).|
-
-
-
-## <a name="response"></a>Отклик
-В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
-
-Content-type: application/json
-Content-length: 31
-
-{
-  "syncType": "deltaSync"
-}
+DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ### <a name="response"></a>Ответ
