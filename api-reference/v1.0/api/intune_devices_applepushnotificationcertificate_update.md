@@ -24,8 +24,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md) в формате JSON.
@@ -34,12 +34,12 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сертификата|
-|appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
-|topicIdentifier|String|Идентификатор темы.|
+|id|String (строка)|Уникальный идентификатор сертификата|
+|appleIdentifier|String (строка)|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
+|topicIdentifier|String (строка)|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificate|String|Пока не задокументировано.|
+|certificate|String (строка)|Н/Д|
 
 
 
@@ -64,7 +64,7 @@ Content-length: 264
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -80,6 +80,11 @@ Content-Length: 384
   "certificate": "Certificate value"
 }
 ```
+
+
+
+
+
 
 
 

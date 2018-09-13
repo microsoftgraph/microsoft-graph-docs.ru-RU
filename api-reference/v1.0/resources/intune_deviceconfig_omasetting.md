@@ -16,7 +16,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.omaSetting"
 }-->
 ``` json
@@ -27,6 +26,11 @@
   "omaUri": "String"
 }
 ```
+
+
+
+
+
 
 
 
