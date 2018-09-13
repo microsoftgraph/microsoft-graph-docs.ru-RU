@@ -31,7 +31,7 @@ POST /users/{id | userPrincipalName}/sendMail
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |message|[Message](../resources/message.md)|Отправляемое сообщение. Обязательный.|
-|saveToSentItems|Boolean|Указывает, нужно ли сохранять сообщение в папке "Отправленные". Указывайте этот параметр, если задано значение false (по умолчанию используется true).  Задавать не обязательно. |
+|saveToSentItems|Boolean (логический)|Указывает, нужно ли сохранять сообщение в папке "Отправленные". Указывайте этот параметр, если задано значение false (по умолчанию используется true).  Задавать не обязательно. |
 
 ## <a name="response"></a>Отклик
 
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/sendMail
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
+##### <a name="request-1"></a>Запрос 1
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
@@ -48,7 +48,6 @@ POST /users/{id | userPrincipalName}/sendMail
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
-Content-length: 512
 
 {
   "message": {
@@ -76,7 +75,55 @@ Content-length: 512
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response-1"></a>Ответ 1
+Ниже приведен пример отклика.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+
+##### <a name="request-2"></a>Запрос 2
+Следующий пример создает сообщение с настраиваемыми заголовками интернет-сообщений и отправляет его.
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_headers"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/sendMail
+Content-type: application/json
+
+{
+  "message": {
+    "subject": "9/9/2018: concert",
+    "body": {
+      "contentType": "HTML",
+      "content": "The group represents Nevada."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "AlexW@contoso.OnMicrosoft.com"
+        }
+      }
+    ],
+    "internetMessageHeaders":[
+      {
+        "name":"x-custom-header-group-name",
+        "value":"Nevada"
+      },
+      {
+        "name":"x-custom-header-group-id",
+        "value":"NV001"
+      }
+    ]
+  }
+}
+```
+
+##### <a name="response-2"></a>Ответ 2
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
