@@ -9,9 +9,9 @@
 
 ### <a name="freebusystatus-values"></a>значения freeBusyStatus
 
-| Член            |Значение
+| Элемент            |Значение
 |:------------------|:-------
-| free              | 0
+| свободен              | 0
 | tentative         | 1
 | busy              | 2
 | oof               | 3
@@ -23,34 +23,34 @@
 
 | Значение
 |:-------------------------
-| required
-| optional
-| resource
+| обязательный
+| необязательный
+| ресурс
 
 
-### <a name="externalaudiencescope-values"></a> значения externalAudienceScope
+### <a name="externalaudiencescope-values"></a>значения externalAudienceScope
 
 | Значение
 |:-------------------------
-| none
+| нет
 | contactsOnly
-| all
+| все
 
 
-### <a name="automaticrepliesstatus-values"></a> значения automaticRepliesStatus
+### <a name="automaticrepliesstatus-values"></a>значения automaticRepliesStatus
 
 | Значение
 |:-------------------------
-| disabled
+| отключено
 | alwaysEnabled
-| scheduled
+| запланировано
 
 
 ### <a name="calendarcolor-values"></a>значения calendarColor
 
-| Член     | Значение
+| Элемент     | Значение
 |:-----------|:----------
-| auto       | -1
+| авто       | -1
 | lightBlue  | 0
 | lightGreen | 1
 | lightOrange| 2
@@ -68,7 +68,7 @@
 | Значение
 |:-------------------------
 | sis
-| manual
+| ручной
 | unknownFutureValue
 
 
@@ -76,7 +76,7 @@
 
 | Значение
 |:-------------------------
-| female
+| женщина
 | male
 | other
 | unknownFutureValue
@@ -87,7 +87,7 @@
 | Значение
 |:-------------------------
 | singleInstance
-| occurrence
+| вхождение
 | исключение
 | seriesMaster
 
@@ -96,27 +96,27 @@
 
 | Значение
 |:-------------------------
-| normal
-| personal
+| обычный
+| личный
 | private
-| confidential
+| конфиденциально
 
 
-### <a name="importance-values"></a> значения важности
+### <a name="importance-values"></a>значения важности
 
 | Значение
 |:-------------------------
-| low
-| normal
-| high
+| низкий
+| обычный
+| высокий
 
 
 ### <a name="educationuserrole-values"></a>значения educationUserRole
 | Значение
 |:---------------------
-| student
-| teacher
-| none
+| учащийся
+| учитель
+| нет
 | unknownFutureValue
 
 
@@ -124,7 +124,7 @@
 
 | Значение
 |:-----------------
-| none
+| нет
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -138,15 +138,15 @@
 |:-------------------------
 | notFlagged
 | complete
-| flagged
+| помеченный
 
 
 ### <a name="inferenceclassificationtype-values"></a>значения inferenceClassificationType
 
 | Значение
 |:-----------------
-| focused
-| other
+| важное
+| другое
 
 
 ### <a name="iosnotificationalerttype-values"></a>значения iosNotificationAlertType
@@ -154,15 +154,15 @@
 | Значение
 |:-------------------------
 | deviceDefault
-| banner
-| modal
-| none
+| баннер
+| модальный
+| нет
 
 ### <a name="deviceenrollmentfailurereason-values"></a>значения deviceEnrollmentFailureReason
 
 | Значение
 |:-------------
-| unknown
+| неизвестный
 | проверка подлинности
 | авторизация
 | accountValidation
@@ -178,7 +178,7 @@
 ### <a name="bodytype-values"></a>значения bodyType
 | Значение
 |:---------
-| text
+| текст
 | html
 
 
@@ -201,7 +201,7 @@
 
 | Значение
 |:-------------------------
-| unknown
+| неизвестный
 | locationStore
 | directory
 | private
@@ -212,24 +212,24 @@
 
 | Значение
 |:-------------------------
-| any
-| call
+| любой
+| вызов
 | doNotForward
 | followUp
 | fyi
-| forward
+| переслать
 | noResponseNecessary
-| read
-| reply
+| читать
+| ответить
 | replyToAll
-| review
+| проверка
 
 
 ### <a name="onenoteuserrole-values"></a>значения onenoteUserRole
 
-| Член      | Значение
+| Элемент      | Значение
 |:------------|:------------
-| Owner       | 0
+| Ответственный       | 0
 | Участник | 1
 | Читатель      | 2
 | Нет        | -1
@@ -241,33 +241,33 @@
 |:-----------------
 | NotStarted
 | Запущено
-| Completed
-| Failed
+| Завершено
+| Не выполнено
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения onenotePatchActionType
 
 | Значение
 |:-------------------------
-| Замена
-| Append
-| Delete
-| Insert
-| Prepend
+| Заменить
+| Добавить
+| Удалить
+| Вставка
+| Добавить в начало
 
 ### <a name="onenotepatchinsertposition-values"></a>значения onenotePatchInsertPosition
 
 | Значение
 |:-------------------------
-| After
-| Before
+| После
+| До
 
 
 ### <a name="phonetype-values"></a>значения phoneType
 
 | Значение
 |:-------------------------
-| home
+| дом
 | business
 | mobile
 | other
@@ -276,25 +276,25 @@
 | businessFax
 | otherFax
 | pager
-| radio
+| радио
 
 
 ### <a name="plannerpreviewtype-values"></a>значения plannerPreviewType
 
 | Значение
 |:-------------------------
-| automatic
+| автонастройка
 | noPreview
-| checklist
-| description
-| reference
+| контрольный список
+| описание
+| ссылка
 
 
 ### <a name="status-values"></a>значения состояния
 
 | Значение
 |:-----------------
-| active
+| активный
 | updated
 | deleted
 | ignored
@@ -305,30 +305,30 @@
 
 | Значение
 |:-------------------------
-| first
+| первый
 | второй
 | третий
-| fourth
-| last
+| четвертый
+| последний
 
 
 ### <a name="dayofweek-values"></a>значения dayOfWeek
 
 | Значение
 |:-------------------------
-| sunday
+| воскресенье
 | monday
 | tuesday
 | wednesday
 | thursday
 | friday
-| saturday
+| суббота
 
 ### <a name="recurrencepatterntype-values"></a>значения recurrencePatternType
 
 | Значение
 |:-------------------------
-| daily
+| ежедневно
 | weekly
 | absoluteMonthly
 | relativeMonthly
@@ -342,7 +342,7 @@
 |:-------------------------
 | endDate
 | noEnd
-| numbered
+| нумерованный
 
 
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
@@ -358,8 +358,8 @@
 
 | Значение
 |:-------------------------
-| none
-| organizer
+| нет
+| организатор
 | tentativelyAccepted
 | accepted
 | declined
@@ -370,28 +370,28 @@
 
 | Значение
 |:-------------------------
-| unknown
-| трудозатраты
-| personal
-| unrestricted
+| неизвестный
+| рабочий
+| личный
+| без ограничений
 
 
 ### <a name="websitetype-values"></a>значения websiteType
 
 | Значение
 |:-------------------------
-| other
-| home
-| трудозатраты
+| другое
+| дом
+| рабочий
 | блог
-| profile
+| профиль
 
 
 ### <a name="categorycolor-values"></a>значения categoryColor
 
-| Член   |Значение    
+| Элемент   |Значение    
 |:---------|:--------
-| none     | -1      
+| нет     | -1      
 | preset0  | 0       
 | preset1  | 1       
 | preset2  | 2       
@@ -417,3 +417,194 @@
 | preset22 | 22      
 | preset23 | 23      
 | preset24 | 24      
+
+# <a name="security-api-enums"></a>Перечисления API безопасности
+
+# <a name="alertfeedback-enum-type"></a>Тип перечисления alertFeedback
+
+Возможные значения отчетов об ошибках по оповещению, предоставленному аналитиком.
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Неизвестно.|
+|truePositive|1|Оповещение об истинном срабатывании.|
+|falsePositive|2| Оповещение о ложном срабатывании.|
+|benignPositive|3| Оповещение о опасности срабатывания.|
+
+# <a name="filehashtype-enum-type"></a>Тип перечисления fileHashType
+
+Перечисление для типов файлов хэш-функции.
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Неизвестный тип.|
+|sha1|1|Тип хэша SHA1.|
+|Sha256|2| Тип хэша SHA256.|
+|md5|3| Тип хэша MD5.|
+|authenticodeHash256|4| Тип хэша AuthenticodeHash256.|
+|lsHash|5| Тип хэша LsHash.|
+|ctph|6| Тип хэша CTPH.|
+|peSha1|7| Тип хэша PESHA1.|
+|peSha256|8| Тип хэша PESHA256.|
+
+# <a name="connectiondirection-enum-type"></a>Тип перечисления connectionDirection
+
+Перечисление для направления сетевого подключения (входящего и исходящего).
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Неизвестное подключение.|
+|Входящие|1|Входящее подключение.|
+|исходящие|2| Исходящее подключение.|
+
+# <a name="connectionstatus-enum-type"></a>Тип перечисления connectionStatus
+
+Перечисление для состояния подключений.
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Состояние подключения неизвестно.|
+|выполнена попытка|1|Попытка подключения.|
+|успешно|2| Подключение выполнено успешно.|
+|заблокировано|3| Подключение заблокировано.|
+|ошибка|4| Ошибка подключения.|
+
+# <a name="processintegritylevel-enum-type"></a>Тип перечисления processIntegrityLevel
+
+Возможные значения уровня целостности процесса.
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Неизвестно.|
+|ненадежный|10|Уровень целостности ненадежный.|
+|низкий|20| Уровень целостности низкий.|
+|средний|30| Уровень целостности средний.|
+|высокий|40| Уровень целостности высокий.|
+|системный|50| Уровень целостности системный.|
+
+# <a name="registryhive-enum-type"></a>Тип перечисления registryHive
+
+Перечисление для ветвей реестра, как определено [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Неизвестная ветвь.|
+|currentConfig|1|Ветвь HKEY_CURRENT_CONFIG.|
+|currentUser|2| Ветвь HKEY_CURRENT_USER.|
+|localMachineSam|3| Ветвь HKEY_LOCAL_MACHINE\SAM.|
+|localMachineSamSoftware|4| Ветвь HKEY_LOCAL_MACHINE\Software.|
+|localMachineSystem|5| Ветвь HKEY_LOCAL_MACHINE\System.|
+|usersDefault|6| HKEY_USERS\\. Ветвь по умолчанию.|
+
+# <a name="registryoperation-enum-type"></a>Тип перечисления registryOperation
+
+Операция, которая изменила имя раздела реестра и/или значение.
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Неизвестный тип значения реестра.|
+|создать|1|Создание реестра.|
+|изменить|2|Изменение реестра.|
+|удалить|3|Удаление реестра.|
+
+# <a name="registryvaluetype-enum-type"></a>Тип перечисления registryValueType
+
+Перечисление для типов значения реестра, как определено [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Неизвестный тип значения реестра.|
+|двоичный|1|Тип значения реестра REG_BINARY.|
+|dword|2| Тип значения реестра REG_DWORD.|
+|dwordLittleEndian|3| Тип значения реестра REG_DWORD_LITTLE_ENDIAN.|
+|dwordBigEndian|4| Тип значения реестра REG_DWORD_BIG_ENDIAN.|
+|expandSz|5| Тип значения реестра REG_EXPAND_SZ.|
+|ссылка|6| Тип значения реестра REG_LINK.|
+|multiSz|7| Тип значения реестра REG_MULTI_SZ.|
+|нет|8| Тип значения реестра REG_NONE.|
+|qword|9| Тип значения реестра REG_QWORD.|
+|qwordlittleEndian|10| Тип значения реестра REG_QWORD_LITTLE_ENDIAN.|
+|sz|11| Тип значения реестра REG_SZ.|
+
+# <a name="alertseverity-enum-type"></a>Тип перечисления alertSeverity
+
+Перечисление серьезности оповещений.
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Уровень серьезности неизвестен.|
+|информационный|1|Уровень серьезности используется только для информации.|
+|низкий|2| Уровень серьезности низкий.|
+|средний|3| Уровень серьезности средний.|
+|высокий|4| Уровень серьезности высокий.|
+
+# <a name="alertstatus-enum-type"></a>Тип перечисления alertStatus
+
+Возможные значения статуса жизненного цикла оповещения (стадия).
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Неизвестное состояние.|
+|newAlert|10| Оповещение новое.|
+|inProgress|20|Оповещение действующее.|
+|решено|30|Оповещение решено.|
+
+# <a name="emailrole-enum-type"></a>Тип перечисления emailRole
+
+Возможные значения для ролей электронной почты.
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|0|Неизвестная роль.|
+|отправитель|1|Отправитель электронной почты.|
+|получатель|2|Получатель электронной почты.|
+
+# <a name="logontype-enum-type"></a>Тип перечисления logonType
+
+Возможные значения для метода вход пользователя.
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|-1|Неизвестно.|
+|интерактивный|0|Вход в систему интерактивный.|
+|remoteInteractive|1| Вход в систему удаленный интерактивный.|
+|сеть|2| Вход в систему сетевой.|
+|пакет|3| Вход в систему пакетный.|
+|служебный|4| Вход в систему служебный.|
+
+# <a name="useraccountsecuritytype-enum-type"></a>Тип перечисления userAccountSecurityType
+
+Возможные значения для типов учетных записей пользователей (членство в группе) по определению Windows.
+
+## <a name="members"></a>Элементы
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|неизвестный|-1|Неизвестно.|
+|обычный|0|Член группы обычных пользователей.|
+|опытный|1| Член группы опытных пользователей.|
+|администратор|2| Член группы администраторов.|
