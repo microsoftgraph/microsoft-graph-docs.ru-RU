@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта iosVppEBookAssignment в формате JSON.
@@ -34,9 +34,9 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_books_deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
-|installIntent|String|Цель установки электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|ИД|Строка|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
+|целевой|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Цель установки электронной книги. Унаследовано от [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
@@ -61,7 +61,7 @@ Content-length: 193
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -76,6 +76,11 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

@@ -9,7 +9,8 @@
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Делегированные (рабочая или учебная учетная запись)| _изменяется в зависимости от контекста_ |
+| &nbsp; &nbsp; Управление устройствами | DeviceManagementManagedDevices.PriviligedOperation.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -22,17 +23,16 @@
 POST /users/{usersId}/removeAllDevicesFromManagement
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -46,7 +46,6 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/removeAllDevicesFromManage
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
 
 ``` http
 HTTP/1.1 204 No Content

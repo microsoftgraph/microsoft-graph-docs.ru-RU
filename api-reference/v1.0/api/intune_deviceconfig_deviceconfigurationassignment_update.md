@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) в формате JSON.
@@ -34,8 +34,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|string|Ключ назначения.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
+|ИД|string|Ключ назначения.|
+|целевой|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 
 
 
@@ -72,6 +72,11 @@ Content-Length: 218
   }
 }
 ```
+
+
+
+
+
 
 
 

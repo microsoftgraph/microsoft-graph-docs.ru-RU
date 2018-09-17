@@ -1,4 +1,4 @@
-# <a name="update-androidgeneraldeviceconfiguration"></a>Update androidGeneralDeviceConfiguration
+# <a name="update-androidgeneraldeviceconfiguration"></a>Обновление androidGeneralDeviceConfiguration
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [androidGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) в формате JSON.
@@ -34,12 +34,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|ИД|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|версия|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |appsBlockClipboardSharing|Логический|Указывает, следует ли запретить совместное использование буфера обмена для копирования данных между приложениями.|
 |appsBlockCopyPaste|Логический|Указывает, следует ли запретить копирование данных между приложениями.|
 |appsBlockYouTube|Логический|Указывает, следует ли заблокировать приложение YouTube.|
@@ -50,7 +50,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |cellularBlockVoiceRoaming|Логический|Указывает, следует ли заблокировать голосовой роуминг.|
 |cellularBlockWiFiTethering|Логический|Указывает, следует ли блокировать синхронизацию модема Wi-Fi.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune_deviceconfig_applistitem.md)|Список приложений (разрешенных или заблокированных в зависимости от значения свойства CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Тип списка, определенного свойством CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Список, содержащийся в CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Логический|Указывает, следует ли блокировать отправку диагностических данных.|
 |locationServicesBlocked|Логический|Указывает, следует ли заблокировать службы определения местоположения.|
 |googleAccountBlockAutoSync|Логический|Указывает, следует ли блокировать автоматическую синхронизацию учетной записи Google.|
@@ -66,7 +66,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Время бездействия до отключения экрана (в минутах).|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 0 до 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения: от 4 до 11|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Тип обязательного пароля. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordRequired|Логический|Указывает, обязательно ли использовать пароль.|
 |powerOffBlocked|Логический|Указывает, следует ли блокировать отключение устройства.|
 |factoryResetBlocked|Логический|Указывает, следует ли запретить пользователю восстанавливать заводские настройки.|
@@ -82,7 +82,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |webBrowserBlockAutofill|Логический|Указывает, следует ли заблокировать функцию автозаполнения в веб-браузере.|
 |webBrowserBlockJavaScript|Логический|Указывает, следует ли заблокировать JavaScript в веб-браузере.|
 |webBrowserBlocked|Логический|Указывает, следует ли заблокировать веб-браузер.|
-|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Параметры файлов cookie в веб-браузере. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
+|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Параметры файлов cookie в веб-обозревателе. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |wiFiBlocked|Логический|Указывает, следует ли заблокировать синхронизацию Wi-Fi.|
 |appsInstallAllowList|Коллекция [appListItem](../resources/intune_deviceconfig_applistitem.md)|Список приложений, которые можно установить на устройстве KNOX. Эта коллекция может содержать не более 500 элементов.|
 |appsLaunchBlockList|Коллекция [appListItem](../resources/intune_deviceconfig_applistitem.md)|Список приложений, которые запрещено запускать на устройстве KNOX. Эта коллекция может содержать не более 500 элементов.|
@@ -303,6 +303,11 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
+
+
+
+
 
 
 

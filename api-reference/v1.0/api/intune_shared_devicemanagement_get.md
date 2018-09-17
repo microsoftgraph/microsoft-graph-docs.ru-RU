@@ -4,24 +4,22 @@
 
 Чтение свойств и связей объекта [deviceManagement](../resources/intune_shared_devicemanagement.md).
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Для получения дополнительных сведений, включая выбор разрешений, см. [Разрешения](../../../concepts/permissions_reference.md).
 
-| &nbsp;Тип&nbsp; разрешения (по &nbsp;рабочему процессу) | Разрешения (в порядке убывания привилегий) |
+| Тип&nbsp; разрешения (по &nbsp;рабочему процессу)&nbsp; | Разрешения (в порядке убывания привилегий) |
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) | |
 | &nbsp; &nbsp; Аудит | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; Условия организации | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; Корпоративная регистрация | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; Конфигурация устройств | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-| &nbsp; &nbsp; Защита конечной точки | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; Регистрация | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; Уведомление | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; Адаптация | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All |
 | &nbsp; &nbsp; Удаленная помощь | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; Управлению расходами на телекоммуникации | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp; &nbsp; Средство устранения неполадок | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 | &nbsp; &nbsp; Windows Information Protection | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений | Не поддерживается. |
@@ -42,8 +40,8 @@ GET /deviceManagement
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -59,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

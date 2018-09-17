@@ -6,7 +6,7 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|string|Н/Д|
+|ИД|string|Н/Д|
 |displayName|string|Н/Д|
 
 ## <a name="relationships"></a>Связи
@@ -15,6 +15,7 @@
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingSource"
 }
 -->
@@ -25,6 +26,11 @@
   "displayName": "String"
 }
 ```
+
+
+
+
+
 
 
 

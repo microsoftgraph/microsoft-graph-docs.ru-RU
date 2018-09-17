@@ -8,7 +8,8 @@
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)| _Изменяется в зависимости от контекста_|
+| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -21,12 +22,11 @@
 GET /users/{usersId}/getManagedAppPolicies
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -45,7 +45,6 @@ GET https://graph.microsoft.com/v1.0/users/{usersId}/getManagedAppPolicies
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
 
 ``` http
 HTTP/1.1 200 OK

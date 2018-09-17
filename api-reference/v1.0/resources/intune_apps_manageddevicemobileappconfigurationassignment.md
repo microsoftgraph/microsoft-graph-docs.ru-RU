@@ -15,8 +15,8 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|string|Уникальный идентификатор объекта.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
+|ИД|string|Уникальный идентификатор объекта.|
+|цель|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -24,8 +24,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationAssignment"
 }-->
 ``` json
@@ -37,6 +37,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

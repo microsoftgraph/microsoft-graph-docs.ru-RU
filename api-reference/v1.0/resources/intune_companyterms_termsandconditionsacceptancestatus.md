@@ -15,8 +15,8 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
-|userDisplayName|String|Отображает имя пользователя, чье принятие представлено объектом.|
+|ИД|Строка|Уникальный идентификатор объекта.|
+|userDisplayName|Строка|Отображает имя пользователя, чье принятие представлено объектом.|
 |acceptedVersion|Int32|Номер последней версии условий, принятых пользователем.|
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
 
@@ -27,12 +27,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditionsAcceptanceStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
@@ -42,6 +42,11 @@
   "acceptedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

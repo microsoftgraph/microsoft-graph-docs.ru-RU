@@ -15,19 +15,19 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
+|ИД|string|Ключ назначения.|
+|целевой|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -37,6 +37,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

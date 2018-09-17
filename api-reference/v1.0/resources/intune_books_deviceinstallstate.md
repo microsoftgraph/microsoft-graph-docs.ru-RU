@@ -15,15 +15,15 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|deviceName|String|Имя устройства.|
-|deviceId|String|Идентификатор устройства.|
+|ИД|Строка|Ключ объекта.|
+|deviceName|Строка|Имя устройства.|
+|deviceId|Строка|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune_books_installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String|Код ошибки для сбоев при установке.|
-|osVersion|String|Версия ОС.|
-|osDescription|String|Описание ОС.|
-|userName|String|Имя пользователя устройства.|
+|errorCode|Строка|Код ошибки для сбоев при установке.|
+|osVersion|Строка|Версия ОС.|
+|osDescription|Строка|Описание ОС.|
+|userName|Строка|Имя пользователя устройства.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -31,8 +31,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceInstallState"
 }-->
 ``` json
@@ -49,6 +49,11 @@
   "userName": "String"
 }
 ```
+
+
+
+
+
 
 
 

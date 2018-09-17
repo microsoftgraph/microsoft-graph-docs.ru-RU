@@ -12,16 +12,16 @@
 |[Перечисление iosVppEBooks](../api/intune_books_iosvppebook_list.md)|Коллекция [iosVppEBook](../resources/intune_books_iosvppebook.md)|Список свойств и связей объектов [iosVppEBook](../resources/intune_books_iosvppebook.md).|
 |[Получение iosVppEBook](../api/intune_books_iosvppebook_get.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Считывание свойств и связей объекта [iosVppEBook](../resources/intune_books_iosvppebook.md).|
 |[Создание iosVppEBook](../api/intune_books_iosvppebook_create.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Создание объекта [iosVppEBook](../resources/intune_books_iosvppebook.md).|
-|[Удаление iosVppEBook](../api/intune_books_iosvppebook_delete.md)|None|Удаление экземпляра [iosVppEBook](../resources/intune_books_iosvppebook.md).|
+|[Удаление iosVppEBook](../api/intune_books_iosvppebook_delete.md)|Нет|Удаление экземпляра [iosVppEBook](../resources/intune_books_iosvppebook.md).|
 |[Обновление iosVppEBook](../api/intune_books_iosvppebook_update.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Обновление свойств объекта [iosVppEBook](../resources/intune_books_iosvppebook.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Ключ объекта. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
+|ИД|String (строка)|Ключ объекта. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |displayName|String (строка)|Имя электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|description|String (строка)|Описание. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|publisher|String (строка)|Издатель. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
+|описание|String (строка)|Описание. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
+|издатель|String (строка)|Издатель. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
@@ -31,16 +31,16 @@
 |vppTokenId|Guid|Идентификатор токена VPP.|
 |appleId|String (строка)|Идентификатор Apple ID, связанный с токеном VPP.|
 |vppOrganizationName|String (строка)|Название организации для токена VPP.|
-|genres|Коллекция String|Жанры.|
-|language|String (строка)|Язык.|
-|seller|String (строка)|Продавец.|
+|жанры|Коллекция String|Жанры.|
+|язык|String (строка)|Язык.|
+|продавец|String (строка)|Продавец.|
 |totalLicenseCount|Int32|Общее число лицензий.|
 |usedLicenseCount|Int32|Число используемых лицензий.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|Список назначений для этой электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
+|задания|Коллекция [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|Список назначений для этой электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Сводка по установке мобильного приложения. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |deviceStates|Коллекция [deviceInstallState](../resources/intune_books_deviceinstallstate.md)|Список состояний установки для этой электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |userStateSummary|Коллекция [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|Список состояний установки для этой электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
@@ -49,8 +49,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedEBook",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppEBook"
 }-->
 ``` json
@@ -70,7 +70,7 @@
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "Guid",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [
@@ -82,6 +82,11 @@
   "usedLicenseCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

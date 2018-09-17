@@ -15,7 +15,7 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|ИД|Строка|Ключ объекта.|
 |userName|Строка|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
@@ -30,8 +30,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.userInstallStateSummary"
 }-->
 ``` json
@@ -44,6 +44,11 @@
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

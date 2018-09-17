@@ -15,18 +15,21 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.groupAssignmentTarget",
   "@odata.type": "microsoft.graph.exclusionGroupAssignmentTarget"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
   "groupId": "String"
 }
 ```
+
+
+
+
+
 
 
 

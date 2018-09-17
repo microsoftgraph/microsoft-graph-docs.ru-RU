@@ -17,9 +17,9 @@
 |:---|:---|:---|
 |displayName|String (строка)|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
-|state|String (строка)|Текущее состояние операции|
-|id|String (строка)|Ключ объекта.|
-|version|String (строка)|Версия объекта.|
+|состояние|String (строка)|Текущее состояние операции|
+|ИД|String (строка)|Ключ объекта.|
+|версия|String (строка)|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -27,8 +27,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppOperation"
 }-->
 ``` json
@@ -41,6 +41,11 @@
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

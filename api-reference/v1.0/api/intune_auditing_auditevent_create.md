@@ -25,7 +25,7 @@ POST /deviceManagement/auditEvents
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта auditEvent в формате JSON.
@@ -34,7 +34,7 @@ POST /deviceManagement/auditEvents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|ИД|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
 |componentName|Строка|Имя компонента.|
 |субъект|[auditActor](../resources/intune_auditing_auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
@@ -44,8 +44,8 @@ POST /deviceManagement/auditEvents
 |activityOperationType|Строка|Тип операции HTTP для действия.|
 |activityResult|Строка|Результат действия.|
 |correlationId|Guid|Идентификатор клиентского запроса, используемый для согласования действий в системе.|
-|resources|Коллекция [auditResource](../resources/intune_auditing_auditresource.md)|Изменяемые ресурсы.|
-|category|Строка|Категория аудита.|
+|ресурсы|Коллекция [auditResource](../resources/intune_auditing_auditresource.md)|Изменяемые ресурсы.|
+|категория|Строка|Категория аудита.|
 
 
 
@@ -82,7 +82,7 @@ Content-length: 1387
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "correlationId": "<Unknown Primitive Type Edm.Guid>",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -133,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "correlationId": "<Unknown Primitive Type Edm.Guid>",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -153,6 +153,11 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
+
+
+
+
+
 
 
 

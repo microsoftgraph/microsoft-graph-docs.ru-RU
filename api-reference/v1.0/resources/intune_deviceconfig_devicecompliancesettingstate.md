@@ -15,8 +15,8 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка​)|Ключ объекта|
-|setting|String (строка​)|Имя класса параметров и свойства.|
+|ИД|String (строка​)|Ключ объекта|
+|настройки|String (строка​)|Имя класса параметров и свойства.|
 |settingName|String (строка​)|Имя параметра в отчете.|
 |deviceId|String (строка​)|Идентификатор устройства в отчете.|
 |deviceName|String (строка​)|Имя устройства в отчете.|
@@ -25,7 +25,7 @@
 |userName|String (строка​)|Имя пользователя в отчете.|
 |userPrincipalName|String (строка​)|Имя участника-пользователя в отчете.|
 |deviceModel|String (строка​)|Модель устройства в отчете.|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|состояние|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Соответствие требованиям состояние параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
 
 ## <a name="relationships"></a>Связи
@@ -34,8 +34,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceSettingState"
 }-->
 ``` json
@@ -55,6 +55,11 @@
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

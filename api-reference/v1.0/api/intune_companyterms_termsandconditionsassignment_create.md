@@ -25,7 +25,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта termsAndConditionsAssignment в формате JSON.
@@ -34,8 +34,8 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
+|ИД|Строка|Уникальный идентификатор объекта.|
+|цель|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 
 
@@ -73,6 +73,11 @@ Content-Length: 217
   }
 }
 ```
+
+
+
+
+
 
 
 

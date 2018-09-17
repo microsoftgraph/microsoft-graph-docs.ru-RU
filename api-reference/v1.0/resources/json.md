@@ -6,15 +6,13 @@
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Связи
-None
+Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
-  "openType": true,
   "@odata.type": "microsoft.graph.Json"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "microsoft.graph.Json"
