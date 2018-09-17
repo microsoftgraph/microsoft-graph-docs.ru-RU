@@ -10,9 +10,9 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Cтрока|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|Cтрока|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|описание|Cтрока|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|Cтрока|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|value|Int32|Значение.|
+|значение|Int32|Значение.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -20,7 +20,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingInteger"
 }-->
 ``` json
@@ -32,6 +31,11 @@
   "value": 1024
 }
 ```
+
+
+
+
+
 
 
 
