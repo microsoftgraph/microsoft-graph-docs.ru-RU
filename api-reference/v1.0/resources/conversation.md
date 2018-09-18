@@ -2,6 +2,8 @@
 
 Беседа — коллекция [цепочек](conversationthread.md), содержащих записи. Все цепочки и записи в беседе имеют одинаковую тему.
 
+Этот ресурс поддерживает подписку на [уведомления об изменении](../../../concepts/webhooks.md).
+
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
@@ -17,10 +19,10 @@
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Указывает, содержит ли какая-либо запись в этой беседе хотя бы одно вложение.|
-|id|String|Уникальный идентификатор беседы. Только для чтения.|
-|lastDeliveredDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|preview|String|Краткая сводка из текста последней записи в этой беседе.|
-|topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.|
+|id|Строка|Уникальный идентификатор беседы. Только для чтения.|
+|lastDeliveredDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. `'2014-01-01T00:00:00Z'`|
+|предварительная версия|Строка|Краткая сводка из текста последней записи в этой беседе.|
+|topic|Строка|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.|
 |uniqueSenders|Коллекция String|Все пользователи, которые отправили сообщение в эту беседу.|
 
 ## <a name="relationships"></a>Отношения
@@ -28,17 +30,27 @@
 |:---------------|:--------|:----------|
 |threads|Коллекция [conversationThread](conversationthread.md)|Коллекция всех цепочек в беседе. Свойство навигации. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "threads"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversation"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversation",
+  "@odata.annotations": [
+    {
+      "property": "threads",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -48,7 +60,9 @@
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
   "topic": "string",
-  "uniqueSenders": ["string"]
+  "uniqueSenders": ["string"],
+
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}]
 }
 
 ```
