@@ -1,77 +1,78 @@
-# <a name="outlook-calendar-api-overview"></a>Outlook calendar API overview
+# <a name="outlook-calendar-api-overview"></a>Общие сведения об API Календаря Outlook
 
-Outlook calendar is part of the Outlook messaging hub in Office 365 that also lets you manage emails and contacts, find information about users in an organization, initiate online conversations, share files, and collaborate in groups.
+Календарь Outlook входит в состав центра обмена сообщениями Outlook в Office 365. С его помощью можно управлять электронными письмами и контактами, искать информацию о пользователях в организации, инициировать беседы через Интернет, делиться файлами и совместно работать в группах.
 
-## <a name="why-integrate-with-outlook-calendar"></a>Why integrate with Outlook calendar?
+## <a name="why-integrate-with-outlook-calendar"></a>Зачем выполнять интеграцию с Календарем Outlook?
 
-### <a name="reach-hundreds-of-millions-of-customers-and-build-rich-scenarios"></a>Reach hundreds of millions of customers and build rich scenarios
+### <a name="reach-hundreds-of-millions-of-customers-and-build-rich-scenarios"></a>Доступ к сотням миллионов клиентов и создание функциональных сценариев
 
-Many millions of customers use Outlook calendar as part of an integrated hub that lets them effectively communicate and get things done. They can set up meetings, manage emails, find information about contacts and other users, and initiate conversations or online meetings all in one place, be it on the web, mobile, or desktop. Microsoft Graph not only connects apps to the calendar, mail, and contacts data of these customers, it enables apps to [integrate with the best of Microsoft 365](overview-major-services.md) and support a wide range of scenarios that enhance productivity and collaboration.
+Многие миллионы клиентов используют Календарь Outlook в составе интегрированного центра, с помощью которого они эффективно общаются и работают. Они могут настраивать собрания, управлять электронными письмами, находить информацию о контактах и других пользователях, а также инициировать беседы или собрания в Интернете в одном месте независимо от используемых устройств: в Интернете, на мобильных или настольных устройствах. Microsoft Graph не только подключает приложения к данным Календаря, Почты и Контактов этих клиентов. Он дает возможность [интегрировать приложения с лучшими средствами Microsoft 365](overview-major-services.md) и поддерживает широкий спектр сценариев, повышающих производительность труда и расширяющих возможности совместной работы.
 
-### <a name="automate-appointment-organization-and-calendaring"></a>Automate appointment organization and calendaring
+### <a name="automate-appointment-organization-and-calendaring"></a>Автоматизация упорядочивания встреч и ведения календаря
 
-Customers like how Outlook lets them organize their time for work, family, and personal activities. Microsoft Graph REST API keeps close parity with the customer experience, letting apps create, manage, and respond to events just as naturally:
+Клиентам нравится то, как Outlook помогает упорядочить время, которое они тратят на работу, семью и личные дела. REST API для Microsoft Graph обеспечивает удобство для пользователей, позволяя естественным путем создавать мероприятия, управлять ими и реагировать на них в приложениях.
 
-- In Outlook, customers can create individual calendars for work, family, and other purposes, and organize them in calendar groups. They can turn on the free **Birthdays** and **Holiday** calendar to remind them of contacts' birthdays and local holidays. They can add calendars that match their interests, such as calendars for sport teams and TV programs. Customers can select and overlay calendars, and see their events in the same view. Through the calendar API, your app can similarly organize [calendars](../api-reference/v1.0/resources/calendar.md) in [calendar groups](../api-reference/v1.0/resources/calendargroup.md), and interact with  interesting calendars just like any other **calendar** in the user's mailbox. 
+- В Outlook клиенты могут создавать отдельные календари для работы, семьи и других целей, а также упорядочивать их в группах календарей. Они могут включать бесплатные календари **дней рождения** и **праздников**, которые напоминают о днях рождения контактов и местных праздниках. Они могут добавлять календари согласно своим интересам, например календари спортивных команд и телепередач. Клиенты могут выбирать календари, накладывать их друг на друга и отображать все мероприятия в одном представлении. С помощью API Календаря ваше приложение может аналогичным образом упорядочивать [календари](../api-reference/v1.0/resources/calendar.md) в [группах календарей](../api-reference/v1.0/resources/calendargroup.md) и взаимодействовать с интересующими календарями, как и с любыми другими **календарями** в почтовом ящике пользователя. 
 
-- Outlook customers can apply categories to events, messages, contacts, tasks, and group posts in a consistent way to enhance organization and disovery. The calendar API lets you access and [define a user's master list of categories](../api-reference/v1.0/api/outlookuser_post_mastercategories.md), which opens up additional creative scenarios. For example, an athletic club can organize a sports tournament and offer an app that differentiates emails and events for each sport with their own color category. For last-minute news such as unforeseen timetable changes, the app can also set the **importance** property of those events and emails to alert customers.
+- Клиенты Outlook могут единообразно применять категории к мероприятиям, сообщениям, контактам и публикациям в группах, чтобы еще больше упорядочивать эти элементы и упростить их обнаружение. С помощью API Календаря вы можете получать доступ к [основному списку категорий пользователя и задавать его](../api-reference/v1.0/api/outlookuser_post_mastercategories.md), и это позволяет использовать дополнительные творческие сценарии. Например, спортивный клуб может организовать спортивные соревнования и предложить приложение, которое помечает электронные письма и мероприятия для каждого вида спорта отдельной цветовой категорией. Кроме того, для последних новостей, например для непросмотренных изменений в расписании, приложение может задавать свойство **важности** для мероприятий и электронных писем, чтобы предупреждать клиентов о них.
 
-- In a calendar folder, you can [create](../api-reference/v1.0/api/user_post_events.md) and [update](../api-reference/v1.0/api/event_update.md) single instance [events](../api-reference/v1.0/resources/event.md), or [schedule and maintain recurring events](outlook-schedule-recurring-events.md). You can let your customers respond to [meeting requests](../api-reference/v1.0/resources/eventmessage.md), and [snooze](../api-reference/v1.0/api/event_snoozereminder.md) or [dismiss](../api-reference/v1.0/api/event_dismissreminder.md) [reminders](../api-reference/v1.0/resources/reminder.md) using the associated **event** navigation property.
+- В папке календаря вы можете [создавать](../api-reference/v1.0/api/user_post_events.md) и [изменять](../api-reference/v1.0/api/event_update.md) одиночные [мероприятия](../api-reference/v1.0/resources/event.md) или [планировать и поддерживать повторяющиеся мероприятия](outlook-schedule-recurring-events.md). Вы можете разрешить клиентам отвечать на [приглашения на собрания](../api-reference/v1.0/resources/eventmessage.md) и [откладывать](../api-reference/v1.0/api/event_snoozereminder.md) или [отклонять](../api-reference/v1.0/api/event_dismissreminder.md) [напоминания](../api-reference/v1.0/resources/reminder.md) с помощью связанных свойств навигации для **мероприятий**.
 
 
-### <a name="help-customers-stay-synchronized-and-navigate-their-day"></a>Help customers stay synchronized and navigate their day
+### <a name="help-customers-stay-synchronized-and-navigate-their-day"></a>Помогите клиентам поддерживать синхронизацию и ориентироваться в рабочем дне
 
-The calendar API helps customers navigate their day and enhance productivity:
+API Календаря помогает клиентам ориентироваться в их рабочем дне и повышать эффективность работы.
 
 <!-- change link to notifications to the concept topic once it's created. In general, try staying in the conceptual level in these overview topics, if conceptual topics are available for the link destination. 
 -->
 
-- You can keep the app local store synchronized by subscribing to [change notifications](../api-reference/v1.0/resources/webhooks.md) and [tracking changes to events](delta_query_events.md) in a user's calendar.
-- You can display the user's agenda based on a light-weight [reminder view](../api-reference/v1.0/api/user_reminderview.md). 
-- You can let the user conveniently [accept](../api-reference/v1.0/api/event_accept.md) and take a meeting online through its **webLink** property, which opens the meeting in Outlook on the web.
-- Users can also [tentatively accept](../api-reference/v1.0/api/event_tentativelyaccept.md) or [decline](../api-reference/v1.0/api/event_decline.md) a meeting while on the go.
+- Вы можете синхронизировать локальное хранилище приложения, подписавшись на [уведомления об изменении](../api-reference/v1.0/resources/webhooks.md) и [отслеживание изменений мероприятий](delta_query_events.md) в календаре пользователя.
+- Вы можете отображать повестку дня пользователя с использованием легковесного [представления напоминаний](../api-reference/v1.0/api/user_reminderview.md). 
+- Вы можете разрешить пользователю удобно [принимать](../api-reference/v1.0/api/event_accept.md) приглашения на собрания и участвовать в собраниях по сети с помощью свойства **webLink** собрания, которое открывает собрание в Outlook в Интернете.
+- Кроме того, пользователи могут [предварительно принять](../api-reference/v1.0/api/event_tentativelyaccept.md) или [отклонить](../api-reference/v1.0/api/event_decline.md) приглашение на собрание, находясь при этом в пути.
 
-### <a name="enhance-collaboration"></a>Enhance collaboration
+### <a name="enhance-collaboration"></a>Расширение возможностей совместной работы
 
-- In Outlook, customers can share calendars with one another and give permissions to read, write, or delete calendar contents. Or, they can delegate a calendar to let another customer respond to meeting requests on their behalf. Programmatically, while you cannot initiate a share or delegate action on behalf of a user, you can use a set of properties to verify the sharing status and enable scenarios around shared or delegated calendars: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, and **isSharedWithMe**.
-- The calendar API lets you get calendar items of the signed-in user, or users who have shared or delegated their calendars to the signed-in user. For example, if Garth has shared a calendar with John, or if Garth has delegated access to John, then [delegated permissions](permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions) from John would give you read access to Garth's shared calendar and contents as well.
-- ** Office 365 groups make it convenient for group members to collaborate and access group conversations and calendars right in Outlook. Aside from a few minor differences between group calendars and user calendars, the calendar API lets you interact with group calendars just like user calendars. See the [calendar](../api-reference/v1.0/resources/calendar.md) resource for more information.
+- В Outlook клиенты могут делиться друг с другом календарями и предоставлять разрешения на чтение, запись или удаление контента календарей. Кроме того, они могут делегировать календарь, чтобы разрешить другому клиенту отвечать на приглашения на собрания от их лица. В данный момент (пока нет возможности программным путем инициировать общий доступ или делегировать действие от имени пользователя) вы можете проверять состояние общего доступа и использовать различные сценарии, связанные с общими или делегированными календарями, с помощью следующего набора свойств: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared** и **isSharedWithMe**.
+- API Календаря позволяет получать элементы календаря пользователя, вошедшего в систему, или пользователей, которые поделились своими календарями либо делегировали их пользователю, вошедшему в систему. Например, если Григорий поделился календарем с Артемом или делегировал доступ к нему, то [делегированные разрешения](permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions) от Артема предоставят вам доступ на чтение календаря и контента, которыми поделился Григорий.
+- ** Группы Office 365 упрощают членам групп совместную работу и доступ к групповым чатам и календарям непосредственно в Outlook. Если не учитывать несколько незначительных отличий между календарями групп и календарями пользователей, API Календаря дает возможность взаимодействовать с календарями групп так же, как с календарями пользователей. Дополнительные сведения см. в описании ресурса [calendar](../api-reference/v1.0/resources/calendar.md).
 
-** Denotes features specifically applicable to Outlook calendars in work or school accounts.
-
-
-### <a name="schedule-smart"></a>Schedule smart
-
-Outlook and the calendar API offer many smart conveniences to schedule events:
-
-- Through Outlook calendar app settings, customers can enable automatic adding of events from emails, such as flight, hotel, or dining reservations, and billing invoices. Once added, you can interact with these events just like any other [event](../api-reference/v1.0/resources/event.md) objects in the user's mailbox, and build creative scenarios upon this Outlook capability.
-- ** In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](../api-reference/v1.0/resources/emailaddress.md) object. You can [get rooms](../api-reference/beta/api/user_findrooms.md) and [get room lists](../api-reference/beta/api/user_findroomlists.md) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.
-- ** You can further [use findMeetingTimes to identify possible times or locations to meet](findmeetingtimes_example.md). The [findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) function considers the free/busy status of the attendees, and any preferred rooms, time, and other constraints you provide. If the first try doesn't return a common meeting time, check the reason, adjust your criteria and call **findMeetingTimes** again.
+** Обозначает функции, применяемые к календарям Outlook в рабочих или учебных учетных записях.
 
 
-### <a name="teleconference-across-multiple-locations-and-time-zones"></a>Teleconference across multiple locations and time zones
+### <a name="schedule-smart"></a>Интеллектуальное планирование
 
-With globalization, today's business meetings often involve attendees participating from different locations and time zones. Here's how you can use the calendar API to manage such meetings:
+Outlook и API Календаря предоставляют множество интеллектуальных удобств при планировании мероприятий.
 
-- As an example in Outlook, customers can organize a meeting and include attendees joining from a conference room in Seattle, a coffee shop in Paris, and a home office in China. Programmatically, the event **locations** property, which is a collection of [location](../api-reference/v1.0/resources/location.md) objects, can reflect this level of details in **displayName** and **locationType** for each **location**. See an [example](../api-reference/v1.0/api/event_get.md#request-2).
-- Outlook gives customers the flexibility to organize events and specify a time zone for each of the start and end times of an event. To support this flexibility, by default, the calendar API returns the **start** and **end** times of an **event** in UTC, and provides the **originalStartTimeZone** and **originalEndTimeZone** properties to note the time zones used when the event was created. 
-- Alternatively, you can specify the `Prefer: outlook.timezone="{time zone name}"` header so that a GET event operation returns **start** and **end** in the time zone you specify. The time zone name can be any of those supported by Windows, as well as those on this [list](../api-reference/v1.0/resources/datetimetimezone.md). See an [example](../api-reference/v1.0/api/event_get.md#request-1) of the `Prefer` header in use.
+- В параметрах приложения Календаря Outlook клиенты могут включить функцию автоматического добавления мероприятий из электронных писем, например сведений о рейсах, гостиницах или резервировании столиков в кафе и выставления счетов. После добавления мероприятий вы можете взаимодействовать с ними как и с любыми другими объектами [event](../api-reference/v1.0/resources/event.md) в почтовом ящике пользователя, а также создавать творческие сценарии на основе этой возможности Outlook.
+- ** В Outlook зарезервировать комнату для собрания так же просто, как добавить участника в **мероприятие**. API календаря представляет комнату для собраний как объект [emailAddress](../api-reference/v1.0/resources/emailaddress.md). Можно [получить комнаты (предварительная версия)](../api-reference/beta/api/user_findrooms.md) и [получить список комнат (предварительная версия)](../api-reference/beta/api/user_findroomlists.md), которые доступны в клиенте. Чтобы организовать собрание в определенной комнате, назначьте ее свойству **location** объекта **event**.
+- ** Можно [выполнить поиск сведений о доступности для пользователей и ресурсов (предварительная версия)](outlook-get-free-busy-schedule.md) для конкретного периода времени. Затем можно использовать эти данные для применения в различных сценариях, включая планирование ресурсов и событий. 
+- ** Если ваш сценарий подразумевает планирование собраний в удобное время, можно использовать [findMeetingTimes для определения возможного времени или местоположения для проведения собрания](findmeetingtimes_example.md). Функция [findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) проверяет состояние "свободен" или "занят" участников собрания, а также предпочтительные помещения, время и другие указанные вами ограничения. Если с первой попытки не удается получить стандартное время собрания, выясните причину этого, скорректируйте критерии и вызовите функцию **findMeetingTimes** еще раз.
 
 
-### <a name="take-advantage-of-social-intelligence-and-other-developer-conveniences-in-microsoft-graph"></a>Take advantage of social intelligence and other developer conveniences in Microsoft Graph
+### <a name="teleconference-across-multiple-locations-and-time-zones"></a>Телеконференции в нескольких расположениях и часовых поясах
 
-Use the [people API](people_example.md) in Microsoft Graph to connect to [people data](../api-reference/v1.0/resources/person.md) which is based on a user's communication and collaboration patterns, and business relationships. You can implement controls such as a people picker, and suggest persons relevant to the user when organizing meetings on the user's behalf.
+С ростом глобализации в современных бизнес-собраниях часто задействованы участники из различных расположений и часовых поясов. Ниже рассказывается, как с помощью API Календаря управлять такими собраниями.
 
-Save overhead in storing and managing app data in external data stores. With Microsoft Graph, you can store custom app data as [open extensions](extensibility_overview.md#open-extensions) in individual resource instances. If you require the data to be typed, or would like to be able to share the typed schema, you can store custom app data in [schema extensions](extensibility_overview.md#schema-extensions).
+- Например, в Outlook клиенты могут организовать собрание и добавить в него участников, присоединяющихся к собранию в переговорной в Москве, кафе в Париже и в домашнем офисе в Китае. Программным путем свойство **locations** мероприятия, представляющее собой коллекцию объектов [location](../api-reference/v1.0/resources/location.md), может отражать этот уровень сведений в свойствах **displayName** и **locationType** для каждого объекта **location**. См. [пример](../api-reference/v1.0/api/event_get.md#request-2).
+- В Outlook имеются гибкие возможности, с помощью которых пользователи могут упорядочивать мероприятия и указывать часовые пояса для времени начала и окончания мероприятия. Для поддержки таких возможностей по умолчанию API Календаря возвращает время **начала** и **окончания** **мероприятия** в формате UTC и указывает часовые пояса, выбранные при создании мероприятия, в свойствах **originalStartTimeZone** и **originalEndTimeZone**. 
+- Кроме того, вы можете указать заголовок `Prefer: outlook.timezone="{time zone name}"`, чтобы операция GET для мероприятия возвратила время **начала** и **окончания** в указанном вами часовом поясе. Вы можете использовать любые названия часовых поясов, поддерживаемые в Windows, а также названия из [этого списка](../api-reference/v1.0/resources/datetimetimezone.md). См. [пример](../api-reference/v1.0/api/event_get.md#request-1) использования заголовка `Prefer`.
+
+
+### <a name="take-advantage-of-social-intelligence-and-other-developer-conveniences-in-microsoft-graph"></a>Использование социальной аналитики и других удобных для разработчика возможностей в Microsoft Graph
+
+С помощью [API людей](people_example.md) в Microsoft Graph вы можете подключаться к [данным людей](../api-reference/v1.0/resources/person.md), основанным на шаблонах общения и работы, а также на бизнес-связях. Вы можете реализовать различные элементы управления, например средство выбора людей, и предлагать людей, релевантных для пользователя, при организации собраний от имени пользователя.
+
+Уменьшите издержки на хранение данных приложений и управление ими во внешних хранилищах данных. С помощью Microsoft Graph вы можете хранить пользовательские данные приложений в качестве [открытых расширений](extensibility_overview.md#open-extensions) в отдельных экземплярах ресурсов. Если требуется вводить данные или необходима возможность делиться введенной схемой, вы можете сохранить пользовательские данные приложений в [расширениях схемы](extensibility_overview.md#schema-extensions).
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Select and try calendar sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0).
-- Learn about:
+- Выберите и опробуйте примеры запросов к Календарю в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0).
+- Узнайте, как выполнять указанные ниже действия.
   - [Поиск времени для проведения собрания в календаре Outlook](findmeetingtimes_example.md)
   - [Планирование повторных встреч, как повторяющихся событий в Outlook](outlook-schedule-recurring-events.md)
-- Take a look at the Outlook [calendar API](../api-reference/v1.0/resources/calendar.md) reference.
+- Ознакомьтесь со справочными материалами по [API Календаря](../api-reference/v1.0/resources/calendar.md) в Outlook.
 
 <!-- Replace the last item with the calendar API overview when it's published.
 -->

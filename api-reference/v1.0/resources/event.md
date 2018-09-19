@@ -4,7 +4,8 @@
 
 Этот ресурс поддерживает:
 
-- добавление собственных данных к настраиваемым свойствам с помощью [расширений](../../../concepts/extensibility_overview.md);
+- Добавление собственных данных к настраиваемым свойствам в качестве [расширений](../../../concepts/extensibility_overview.md).
+- Подписка на [уведомления об изменении](../../../concepts/webhooks.md).
 - отслеживание дополнений, удалений и обновлений с помощью [запроса изменений](../../../concepts/delta_query_overview.md) (функция [delta](../api/event_delta.md)).
 
 
@@ -25,7 +26,7 @@
 |[snoozeReminder](../api/event_snoozereminder.md)|Нет|Отложить напоминание для указанного события.|
 |[Список экземпляров](../api/event_list_instances.md) |Коллекция [event](event.md)| Получение экземпляров (повторов) события для заданного диапазона времени. Если событие относится к типу `SeriesMaster`, возвращаются экземпляры и исключения события для указанного диапазона времени.|
 |**Вложения**| | |
-|[Список вложений](../api/event_list_attachments.md) |Коллекция [attachment](attachment.md) | Получение всех вложений, добавленных к данным о событии.|
+|[Список вложений](../api/event_list_attachments.md) |Коллекция [attachment](attachment.md)| Получение всех вложений, добавленных к данным о событии.|
 |[Добавление вложения](../api/event_post_attachments.md) |[attachment](attachment.md)| Добавление нового вложения к данным о событии путем публикации в коллекции вложений.|
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.|
@@ -43,41 +44,41 @@
 |body|[itemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
 |bodyPreview|Строка|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
 |categories|Коллекция String|Категории, связанные с событием.|
-|changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|changeKey|Строка|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события.|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
-|iCalUId|String|Уникальный идентификатор, совместно используемый всеми экземплярами события в разных календарях.|
-|id|String| Только для чтения.|
-|importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
+|iCalUId|Строка|Уникальный идентификатор, совместно используемый всеми экземплярами события в разных календарях.|
+|id|Строка| Только для чтения.|
+|importance|importance|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
 |isOrganizer|Boolean|Задайте значение true, если отправитель сообщения также является его организатором.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
-|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|Место проведения события.|
-|locations|Коллекция [location](location.md)|Места проведения мероприятия или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
-|onlineMeetingUrl|String|URL-адрес для собрания по сети.|
+|местоположения|Коллекция [location](location.md)|Места проведения мероприятия или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
+|onlineMeetingUrl|Строка|URL-адрес для собрания по сети. Свойство имеет значение,  когда организатор определяет событие как онлайн-собрание, например Собрание Skype. Только для чтения.|
 |organizer|[recipient](recipient.md)|Организатор события.|
-|originalEndTimeZone|String|Часовой пояс завершения, указанный при создании события. Значение `tzone://Microsoft/Custom` указывает, что традиционный часовой пояс был задан в классическом приложении Outlook.|
-|originalStart|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|originalEndTimeZone|Строка|Часовой пояс завершения, указанный при создании события. Значение `tzone://Microsoft/Custom` указывает, что традиционный часовой пояс был задан в классическом приложении Outlook.|
+|originalStart|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. `'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|Строка|Часовой пояс начала события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Расписание повторения события.|
-|reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
-|responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
+|напоминаниеМинутыДоНачала|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
+|ответЗатребован|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
 |responseStatus|[responseStatus](responsestatus.md)|Указывает тип отклика, отправленного в ответ на сообщение о событии.|
-|sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
-|seriesMasterId|String|Категории, назначенные элементу.|
-|showAs|String|Отображаемое состояние. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|sensitivity|sensitivity| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
+|seriesMasterId|Строка|Идентификатор для главного элемента последовательности встреч, если это событие является частью последовательности.|
+|showAs|freeBusyStatus|Отображаемое состояние. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события.|
-|subject|String|Текст в строке темы сообщения о событии.|
-|type|String|Тип события. Возможные значения: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Только для чтения.|
-|webLink|String|URL-адрес для открытия события в Outlook Web App.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
+|subject|Строка|Текст в строке темы сообщения о событии.|
+|type|eventType|Тип события. Возможные значения: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Только для чтения.|
+|webLink|Строка|URL-адрес для открытия события в Outlook Web App.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileAttachment.md) и [itemAttachment](itemAttachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
+|attachments|Коллекция [attachment](attachment.md)|Коллекция вложений [fileAttachment](fileAttachment.md) и [itemAttachment](itemAttachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
 |календарь|[calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для события. Только для чтения. Допускается значение null.|
 |instances|Коллекция [event](event.md)|Экземпляры события. Свойство навигации. Только для чтения. Допускается значение null.|
@@ -88,8 +89,9 @@
 
 Ниже этот ресурс представлен в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "calendar",
@@ -99,7 +101,49 @@
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.event"
+  "baseType": "microsoft.graph.outlookItem",
+  "@odata.type": "microsoft.graph.event",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "calendar",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "instances",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
