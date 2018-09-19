@@ -1,0 +1,56 @@
+# <a name="registrykeystate-resource-type"></a><span data-ttu-id="a31cd-101">Тип ресурса registryKeyState</span><span class="sxs-lookup"><span data-stu-id="a31cd-101">registryKeyState resource type</span></span>
+
+<span data-ttu-id="a31cd-102">Содержит сведения об изменениях раздела реестра, связанные с оповещением, и процесс, изменивший разделы реестра.</span><span class="sxs-lookup"><span data-stu-id="a31cd-102">Contains information about registry key changes related to the alert, and the process that changed the registry keys.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="a31cd-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="a31cd-103">Properties</span></span>
+
+| <span data-ttu-id="a31cd-104">Свойство</span><span class="sxs-lookup"><span data-stu-id="a31cd-104">Property</span></span>     | <span data-ttu-id="a31cd-105">Тип</span><span class="sxs-lookup"><span data-stu-id="a31cd-105">Type</span></span>        | <span data-ttu-id="a31cd-106">Описание</span><span class="sxs-lookup"><span data-stu-id="a31cd-106">Description</span></span> |
+|:-------------|:------------|:------------|
+|<span data-ttu-id="a31cd-107">hive</span><span class="sxs-lookup"><span data-stu-id="a31cd-107">Hive</span></span>|<span data-ttu-id="a31cd-108">registryHive</span><span class="sxs-lookup"><span data-stu-id="a31cd-108">registryHive</span></span>|<span data-ttu-id="a31cd-109"> [Куст реестра Windows](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives):</span><span class="sxs-lookup"><span data-stu-id="a31cd-109">A [Windows registry hive](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives) :</span></span> <ul><li><span data-ttu-id="a31cd-110">HKEY_CURRENT_CONFIG</span><span class="sxs-lookup"><span data-stu-id="a31cd-110">HKEY_CURRENT_CONFIG</span></span></li> <li><span data-ttu-id="a31cd-111">HKEY_CURRENT_USER</span><span class="sxs-lookup"><span data-stu-id="a31cd-111">HKEY_CURRENT_USER</span></span></li> <li><span data-ttu-id="a31cd-112">HKEY_LOCAL_MACHINE\SAM</span><span class="sxs-lookup"><span data-stu-id="a31cd-112">HKEY_LOCAL_MACHINE\SAM</span></span></li> <li><span data-ttu-id="a31cd-113">HKEY_LOCAL_MACHINE\Security</span><span class="sxs-lookup"><span data-stu-id="a31cd-113">HKEY_LOCAL_MACHINE\Security</span></span></li> <li><span data-ttu-id="a31cd-114">HKEY_LOCAL_MACHINE\Software</span><span class="sxs-lookup"><span data-stu-id="a31cd-114">HKEY_LOCAL_MACHINE\Software</span></span></li> <li><span data-ttu-id="a31cd-115">HKEY_LOCAL_MACHINE\System</span><span class="sxs-lookup"><span data-stu-id="a31cd-115">HKEY_LOCAL_MACHINE\System</span></span></li> <li><span data-ttu-id="a31cd-116">HKEY_USERS\\. Ветвь по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="a31cd-116">HKEY_USERS\\.Default.</span></span></li></ul> <span data-ttu-id="a31cd-117">Возможные значения: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSamSoftware`, `localMachineSystem`, `usersDefault`.</span><span class="sxs-lookup"><span data-stu-id="a31cd-117">Possible values are: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSamSoftware`, `localMachineSystem`, `usersDefault`.</span></span>|
+|<span data-ttu-id="a31cd-118">key</span><span class="sxs-lookup"><span data-stu-id="a31cd-118">key</span></span>|<span data-ttu-id="a31cd-119">String</span><span class="sxs-lookup"><span data-stu-id="a31cd-119">String</span></span>|<span data-ttu-id="a31cd-120">Текущий (то есть измененный) раздел реестра (исключая HIVE).</span><span class="sxs-lookup"><span data-stu-id="a31cd-120">Current (i.e. changed) registry key (excludes HIVE).</span></span>|
+|<span data-ttu-id="a31cd-121">oldkey</span><span class="sxs-lookup"><span data-stu-id="a31cd-121">oldKey</span></span>|<span data-ttu-id="a31cd-122">String</span><span class="sxs-lookup"><span data-stu-id="a31cd-122">String</span></span>|<span data-ttu-id="a31cd-123">Предыдущий (т.е. до изменения) раздел реестра (исключая HIVE).</span><span class="sxs-lookup"><span data-stu-id="a31cd-123">Previous (i.e. before changed) registry key (excludes HIVE).</span></span>|
+|<span data-ttu-id="a31cd-124">oldValueData</span><span class="sxs-lookup"><span data-stu-id="a31cd-124">oldValueData</span></span>|<span data-ttu-id="a31cd-125">String</span><span class="sxs-lookup"><span data-stu-id="a31cd-125">String</span></span>|<span data-ttu-id="a31cd-126">Предыдущее (то есть до изменения) значение данных раздела реестра (содержимое).</span><span class="sxs-lookup"><span data-stu-id="a31cd-126">Previous (i.e. before changed) registry key value data (contents).</span></span>|
+|<span data-ttu-id="a31cd-127">oldValueName</span><span class="sxs-lookup"><span data-stu-id="a31cd-127">oldValueName</span></span>|<span data-ttu-id="a31cd-128">String</span><span class="sxs-lookup"><span data-stu-id="a31cd-128">String</span></span>|<span data-ttu-id="a31cd-129">Предыдущее (то есть перед изменением) имя значения раздела реестра.</span><span class="sxs-lookup"><span data-stu-id="a31cd-129">Previous (i.e. before changed) registry key value name.</span></span>|
+|<span data-ttu-id="a31cd-130">operation</span><span class="sxs-lookup"><span data-stu-id="a31cd-130">operation</span></span>|<span data-ttu-id="a31cd-131">registryOperation</span><span class="sxs-lookup"><span data-stu-id="a31cd-131">registryOperation</span></span>|<span data-ttu-id="a31cd-132">Операция, которая изменила имя и/или значение раздела реестра.</span><span class="sxs-lookup"><span data-stu-id="a31cd-132">Operation that changed the registry key name and/or value.</span></span> <span data-ttu-id="a31cd-133">Возможные значения: `unknown`, `create`, `modify`, `delete`.</span><span class="sxs-lookup"><span data-stu-id="a31cd-133">Possible values are: `unknown`, `create`, `modify`, `delete`.</span></span>|
+|<span data-ttu-id="a31cd-134">processId</span><span class="sxs-lookup"><span data-stu-id="a31cd-134">processId</span></span>|<span data-ttu-id="a31cd-135">Int32</span><span class="sxs-lookup"><span data-stu-id="a31cd-135">Int32</span></span>|<span data-ttu-id="a31cd-136">Идентификатор процесса (PID), изменивший раздел реестра (подробности процесса отобразятся в коллекции оповещения "процессы").</span><span class="sxs-lookup"><span data-stu-id="a31cd-136">Process ID (PID) of the process that modified the registry key (process details will appear in the alert 'processes' collection).</span></span>|
+|<span data-ttu-id="a31cd-137">valueData</span><span class="sxs-lookup"><span data-stu-id="a31cd-137">valueData</span></span>|<span data-ttu-id="a31cd-138">String</span><span class="sxs-lookup"><span data-stu-id="a31cd-138">String</span></span>|<span data-ttu-id="a31cd-139">Текущие (то есть измененные) данные значения раздела реестра (содержимое).</span><span class="sxs-lookup"><span data-stu-id="a31cd-139">Current (i.e. changed) registry key value data (contents).</span></span>|
+|<span data-ttu-id="a31cd-140">valueName</span><span class="sxs-lookup"><span data-stu-id="a31cd-140">valueName</span></span>|<span data-ttu-id="a31cd-141">String</span><span class="sxs-lookup"><span data-stu-id="a31cd-141">String</span></span>|<span data-ttu-id="a31cd-142">Текущее (то есть измененное) имя значения раздела регистра</span><span class="sxs-lookup"><span data-stu-id="a31cd-142">Current (i.e. changed) registry key value name</span></span>|
+|<span data-ttu-id="a31cd-143">valueType</span><span class="sxs-lookup"><span data-stu-id="a31cd-143">valueType</span></span>|<span data-ttu-id="a31cd-144">registryValueType</span><span class="sxs-lookup"><span data-stu-id="a31cd-144">registryValueType</span></span>|[<span data-ttu-id="a31cd-145">Тип значения ключа реестра</span><span class="sxs-lookup"><span data-stu-id="a31cd-145">Registry key value type</span></span>](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types) <ul><li><span data-ttu-id="a31cd-146">REG_BINARY</span><span class="sxs-lookup"><span data-stu-id="a31cd-146">REG_BINARY</span></span></li> <li><span data-ttu-id="a31cd-147">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="a31cd-147">REG_DWORD</span></span></li> <li><span data-ttu-id="a31cd-148">REG_DWORD_LITTLE_ENDIAN</span><span class="sxs-lookup"><span data-stu-id="a31cd-148">REG_DWORD_LITTLE_ENDIAN</span></span></li> <li><span data-ttu-id="a31cd-149">REG_DWORD_BIG_ENDIAN</span><span class="sxs-lookup"><span data-stu-id="a31cd-149">REG_DWORD_BIG_ENDIAN</span></span></li><li><span data-ttu-id="a31cd-150">REG_EXPAND_SZ</span><span class="sxs-lookup"><span data-stu-id="a31cd-150">REG_EXPAND_SZ</span></span></li> <li><span data-ttu-id="a31cd-151">REG_LINK</span><span class="sxs-lookup"><span data-stu-id="a31cd-151">REG_LINK</span></span></li> <li><span data-ttu-id="a31cd-152">REG_MULTI_SZ</span><span class="sxs-lookup"><span data-stu-id="a31cd-152">REG_MULTI_SZ</span></span></li> <li><span data-ttu-id="a31cd-153">REG_NONE</span><span class="sxs-lookup"><span data-stu-id="a31cd-153">REG_NONE</span></span></li> <li><span data-ttu-id="a31cd-154">REG_QWORD</span><span class="sxs-lookup"><span data-stu-id="a31cd-154">REG_QWORD</span></span></li> <li><span data-ttu-id="a31cd-155">REG_QWORD_LITTLE_ENDIAN</span><span class="sxs-lookup"><span data-stu-id="a31cd-155">REG_QWORD_LITTLE_ENDIAN</span></span></li> <li><span data-ttu-id="a31cd-156">REG_SZ</span><span class="sxs-lookup"><span data-stu-id="a31cd-156">REG_SZ</span></span></li></ul> <span data-ttu-id="a31cd-157">Возможные значения: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.</span><span class="sxs-lookup"><span data-stu-id="a31cd-157">Possible values are: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="a31cd-158">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a31cd-158">JSON representation</span></span>
+
+<span data-ttu-id="a31cd-159">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a31cd-159">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.registryKeyState"
+}-->
+
+```json
+{
+  "hive": "@odata.type: microsoft.graph.registryHive",
+  "key": "String",
+  "oldKey": "String",
+  "oldValueData": "String",
+  "oldValueName": "String",
+  "operation": "@odata.type: microsoft.graph.registryOperation",
+  "processId": 1024,
+  "valueData": "String",
+  "valueName": "String",
+  "valueType": "@odata.type: microsoft.graph.registryValueType"
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "registryKeyState resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
