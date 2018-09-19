@@ -1,4 +1,4 @@
-# <a name="microsoft-bookings-api-overview"></a>Обзор API Microsoft Bookings
+# <a name="microsoft-bookings-api-overview-preview"></a>Обзор API Microsoft Bookings (предварительная версия)
 
 В случае Microsoft Bookings доступны мобильные и интернет-приложения, обеспечивающие простое и эффективное планирование встреч для небольших компаний и их клиентов. Небольшие компании, которые предоставляют услуги, предусматривающие планирование встреч (например, автомастерские, парикмахерские, юридические фирмы), смогут освободить время, отведенное на управление резервированием, и потратить его на более важные задачи для развития бизнеса. Служба Microsoft Bookings доступна для компаний с подпиской на Office 365 бизнес премиум.
 
@@ -22,7 +22,6 @@
 
 Дополнительные сведения:
 
-- 
-  [Microsoft Bookings](https://support.office.com/ru-RU/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [приложения Office 365 бизнес](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+- [Microsoft Bookings](https://support.office.com/en-us/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [приложения Office 365 бизнес](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Использование API Bookings](../api-reference/beta/resources/booking-api-overview.md) в Microsoft Graph.
 
