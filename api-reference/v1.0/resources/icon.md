@@ -7,14 +7,14 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта Icon](../api/icon_get.md) | [Icon](icon.md) |Чтение свойств и связей объекта значка.|
-|[Обновление](../api/icon_update.md) | [Icon](icon.md)    |Обновление объекта значка. |
+|[Получение объекта Icon](../api/icon_get.md) | [Значок](icon.md) |Чтение свойств и связей объекта значка.|
+|[Обновление](../api/icon_update.md) | [Значок](icon.md)  |Обновление объекта значка. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|int|Представляет собой индекс значка данного набора.|
-|set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
+|set|string|Представляет множество, частью которого является этот значок. Возможные значения: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -29,7 +29,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 }-->
 
 ```json

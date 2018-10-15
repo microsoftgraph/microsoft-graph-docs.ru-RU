@@ -10,9 +10,9 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|Строка|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|описание|Строка|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|fileName|Строка|Имя файла, связанное со свойством Value (CER, | CRT).|
+|fileName|Строка|Имя файла, связанное со свойством Value (CER, | CRT | P7B | *.bin).|
 |value|Строка|Значение (строка в кодировке Base64).|
 
 ## <a name="relationships"></a>Связи
@@ -21,7 +21,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingBase64"
 }-->
 ``` json
@@ -34,6 +33,11 @@
   "value": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -18,10 +18,11 @@
 |:---|:---|:---|
 |id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
-|status|String|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
-|serverName|String|Имя сервера, на котором размещается соединитель Exchange.|
-|exchangeConnectorType|String|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|serverName|String|Имя сервера Exchange.|
+|connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|String|Версия объекта ExchangeConnectorAgent|
 |exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
 |exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
@@ -30,12 +31,12 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceManagementExchangeConnector"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -44,6 +45,7 @@
   "status": "String",
   "primarySmtpAddress": "String",
   "serverName": "String",
+  "connectorServerName": "String",
   "exchangeConnectorType": "String",
   "version": "String",
   "exchangeAlias": "String",

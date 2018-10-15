@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/majorGridlines
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridlines
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
@@ -29,9 +29,9 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartGridlines](../resources/chartgridlines.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [WorkbookChartGridlines](../resources/chartgridlines.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -40,14 +40,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
   "name": "get_chartgridlines"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 } -->
 ```http
 HTTP/1.1 200 OK

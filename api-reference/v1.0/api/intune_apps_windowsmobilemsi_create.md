@@ -47,7 +47,7 @@ POST /deviceAppManagement/mobileApps
 |owner|String (строка)|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |developer|String (строка)|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |notes|String (строка)|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследовано от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String (строка)|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
 |fileName|String (строка)|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
@@ -133,6 +133,11 @@ Content-Length: 1027
   "ignoreVersionDetection": true
 }
 ```
+
+
+
+
+
 
 
 

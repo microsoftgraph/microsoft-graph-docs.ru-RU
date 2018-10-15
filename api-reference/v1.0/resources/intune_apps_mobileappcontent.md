@@ -26,8 +26,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppContent"
 }-->
 ``` json
@@ -36,6 +36,11 @@
   "id": "String (identifier)"
 }
 ```
+
+
+
+
+
 
 
 

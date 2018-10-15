@@ -25,7 +25,7 @@ POST /deviceAppManagement/mobileApps
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта iosVppApp в формате JSON.
@@ -34,20 +34,20 @@ POST /deviceAppManagement/mobileApps
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|ИД|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |displayName|String (строка)|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|description|String (строка)|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publisher|String (строка)|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|описание|String (строка)|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|издатель|String (строка)|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |isFeatured|Boolean (логический)|Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |privacyInformationUrl|String (строка)|URL-адрес заявления о конфиденциальности. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |informationUrl|String (строка)|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|owner|String (строка)|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|developer|String (строка)|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|notes|String (строка)|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|владелец|String (строка)|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|разработчик|String (строка)|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|примечания|String (строка)|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение может быть назначено только после публикации приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |releaseDateTime|DateTimeOffset|Дата и время выпуска приложения, на которое распространяется программа VPP.|
@@ -55,7 +55,7 @@ POST /deviceAppManagement/mobileApps
 |licensingType|[vppLicensingType](../resources/intune_apps_vpplicensingtype.md)|Поддерживаемый тип лицензии.|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|Применимый тип устройства с iOS.|
 |vppTokenOrganizationName|String (строка)|Организация, связанная с токеном Apple Volume Purchase Program.|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный маркер Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|Тип программы оптовой покупки, с которой связан данный токен программы оптовой покупки Apple. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |vppTokenAppleId|String (строка)|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |bundleId|String (строка)|Имя удостоверения.|
 
@@ -158,6 +158,11 @@ Content-Length: 1394
   "bundleId": "Bundle Id value"
 }
 ```
+
+
+
+
+
 
 
 

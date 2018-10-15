@@ -31,8 +31,8 @@
 |owner|Строка|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |developer|Строка|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |notes|Строка|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследовано от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|Доступность приложения. Унаследовано от[managedApp](../resources/intune_apps_managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune_apps_managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|Строка|Версия приложения. Наследуется от объекта [managedApp](../resources/intune_apps_managedapp.md).|
 |committedContentVersion|Строка|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md).|
 |fileName|Строка|Имя основного файла бизнес-приложения. Наследуется от объекта [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md).|
@@ -53,8 +53,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedMobileLobApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAndroidLobApp"
 }-->
 ``` json
@@ -99,6 +99,11 @@
   "versionCode": "String"
 }
 ```
+
+
+
+
+
 
 
 

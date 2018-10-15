@@ -18,7 +18,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/delta
-GET /users/<id>/mailFolders/delta
+GET /users/{id}/mailFolders/delta
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -27,7 +27,7 @@ GET /users/<id>/mailFolders/delta
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Этот [токен состояния](../../../concepts/delta_query_overview.md) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции почтовых папок и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| $deltatoken | строка | Этот [токен состояния](../../../concepts/delta_query_overview.md) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции почтовых папок и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
 | $skiptoken | строка | Этот [токен состояния](../../../concepts/delta_query_overview.md) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции почтовых папок получены не все изменения. |
 
 #### <a name="odata-query-parameters"></a>Параметры запросов OData
@@ -37,9 +37,9 @@ GET /users/<id>/mailFolders/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | string  | application/json. Обязательный. |
-| Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type  | строка  | application/json. Обязательный. |
+| Prefer | строка  | odata.maxpagesize={x}. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
 
@@ -65,7 +65,7 @@ Prefer: odata.maxpagesize=2
 
 ##### <a name="response"></a>Отклик
 
-В случае успешного выполнения запроса отклик будет содержать маркер состояния — _skipToken_  
+В случае успешного выполнения запроса отклик будет содержать маркер состояния — _skipToken_  
 или _deltaToken_. Первый включен в заголовок отклика _@odata.nextLink_, второй — в заголовок отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.
@@ -90,8 +90,7 @@ Content-length: 254
       "parentFolderId": "parentFolderId-value",
       "childFolderCount": 99,
       "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "wellKnownName": "wellKnownName-value"
+      "totalItemCount": 99
     }
   ]
 }

@@ -3,9 +3,9 @@
 
 Хотя явно создать экземпляр post невозможно, он будет создан в результате выполнения любого из указанных ниже действий.
 
-- [Добавление ответа к существующей публикации](../api/post_reply.md). 
-- [Добавление ответа к существующей цепочке](../api/conversationthread_reply.md). 
-- [Создание цепочки в новой беседе](../api/group_post_threads.md).
+- [[Добавление ответа к существующей публикации](../api/post_reply.md).](../api/post_reply.md) 
+- [[Добавление ответа к существующей цепочке](../api/conversationthread_reply.md).](../api/conversationthread_reply.md) 
+- [[Создание цепочки в новой беседе](../api/group_post_threads.md).](../api/group_post_threads.md)
 - [Создание беседы](../api/group_post_conversations.md)
 
 С помощью этого ресурса можно добавлять собственные данные к настраиваемым свойствам, применяя [расширения](../../../concepts/extensibility_overview.md).
@@ -19,7 +19,7 @@
 |[Ответ](../api/post_reply.md)|Нет|Ответ на публикацию и добавление новой публикации в указанную цепочку беседы группы.|
 |[Переадресация](../api/post_forward.md)|Нет|Переадресация публикации получателю.|
 |**Вложения**| | |
-|[Вывод списка вложений](../api/post_list_attachments.md) |Коллекция [attachment](attachment.md) | Получает все вложения для экземпляра post.|
+|[Список вложений](../api/post_list_attachments.md) |Коллекция [attachment](attachment.md)| Получает все вложения для экземпляра post.|
 |[Добавление вложения](../api/post_post_attachments.md) |[attachment](attachment.md)| Добавление вложения в публикацию. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.|
@@ -37,16 +37,16 @@
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|Содержимое публикации. Это свойство используется по умолчанию. Это свойство может иметь значение null.|
 |categories|Коллекция строк|Категории, сопоставленные с публикацией.|
-|changeKey|String|Указывает версию публикации. При каждом изменении публикации также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
-|conversationId|String|Уникальный идентификатор беседы. Только для чтения.|
-|conversationThreadId|String|Уникальный идентификатор цепочки беседы. Только для чтения.|
-|createdDateTime|DateTimeOffset|Указывает, когда была создана публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|changeKey|String (строка)|Указывает версию публикации. При каждом изменении публикации также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
+|conversationId|String (строка)|Уникальный идентификатор беседы. Только для чтения.|
+|conversationThreadId|String (строка)|Уникальный идентификатор цепочки беседы. Только для чтения.|
+|createdDateTime|DateTimeOffset|Указывает, когда была создана публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. `'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|Используется в сценариях делегированного доступа. Указывает, кто опубликовал сообщение от имени другого пользователя. Это свойство используется по умолчанию.|
-|hasAttachments|Логическое|Указывает, есть ли в публикации хотя бы одно вложение. Это свойство используется по умолчанию.|
-|id|String| Только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Указывает дату и время последнего изменения публикации. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|hasAttachments|Логический|Указывает, есть ли в публикации хотя бы одно вложение. Это свойство используется по умолчанию.|
+|id|String (строка)| Только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Указывает дату и время последнего изменения публикации. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. `'2014-01-01T00:00:00Z'`|
 |newParticipants|Коллекция объектов [recipient](recipient.md)|Участники беседы, которые были добавлены в цепочку в рамках этой публикации.|
-|receivedDateTime|DateTimeOffset|Указывает, когда была получена публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|receivedDateTime|DateTimeOffset|Указывает, когда была получена публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. `'2014-01-01T00:00:00Z'`|
 |sender|[recipient](recipient.md)|Содержит электронный адрес отправителя. Если получатель не указан, то в качестве значения Sender используется адрес пользователя, прошедшего проверку подлинности. Это свойство используется по умолчанию.|
 
 ## <a name="relationships"></a>Связи
@@ -58,19 +58,49 @@
 |multiValueExtendedProperties|Коллекция объектов [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для публикации. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция объектов [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для публикации. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже этот ресурс представлен в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "inReplyTo",
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.post"
+  "baseType": "microsoft.graph.outlookItem",
+  "@odata.type": "microsoft.graph.post",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "inReplyTo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

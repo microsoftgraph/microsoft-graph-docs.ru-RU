@@ -14,11 +14,11 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String (строка)|Отображаемое имя политики.|
-|description|String (строка)|Описание политики.|
+|описание|String (строка)|Описание политики.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики.|
-|id|String (строка)|Ключ объекта.|
-|version|String (строка)|Версия объекта.|
+|ид|String (строка)|Ключ объекта.|
+|версия|String (строка)|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -26,9 +26,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicy"
 }-->
 ``` json
@@ -42,6 +41,11 @@
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

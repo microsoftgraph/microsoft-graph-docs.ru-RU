@@ -13,8 +13,8 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Понятное имя отчета о состоянии.|
-|id|Строка|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|ид|Строка|Ключ объекта.|
+|версия|Строка|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -22,9 +22,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatus"
 }-->
 ``` json
@@ -35,6 +34,11 @@
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

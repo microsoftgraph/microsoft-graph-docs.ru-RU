@@ -18,12 +18,12 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|ид|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|description|Строка​|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|Строка​|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|версия|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |accountsBlockAddingNonMicrosoftAccountEmail|Логический|Указывает, следует ли запретить пользователю добавлять учетные записи электронной почты на устройства, не связанные с учетной записью Майкрософт.|
 |applyOnlyToWindows81|Логический|Указывает, применяется ли эта политика только к Windows 8.1. Это свойство доступно только для чтения.|
 |browserBlockAutofill|Логический|Указывает, следует ли заблокировать автозаполнение.|
@@ -35,14 +35,14 @@
 |browserBlockSendingDoNotTrackHeader|Логический|Указывает, следует ли запретить пользователю отправлять заголовок DNT.|
 |browserBlockSingleWordEntryOnIntranetSites|Логический|Указывает, следует ли блокировать переход на сайты интрасети при вводе одного слова.|
 |browserRequireSmartScreen|Логический|Указывает, обязательно ли использовать фильтр Smart Screen.|
-|browserEnterpriseModeSiteListLocation|Строка​|Расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
-|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|Уровень интернет-безопасности. Возможные значения: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Уровень безопасности интрасети. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
-|browserLoggingReportLocation|Строка​|Расположение хранения отчетов.|
+|browserEnterpriseModeSiteListLocation|Строка|Расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|Уровень безопасности Интернета. Возможные значения: `userDefined`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Уровень безопасности Интрасети. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserLoggingReportLocation|Строка|Расположение хранения отчетов.|
 |browserRequireHighSecurityForRestrictedSites|Логический|Указывает, обязателен ли высокий уровень безопасности для опасных сайтов.|
 |browserRequireFirewall|Логический|Указывает, обязательно ли использовать брандмауэр.|
 |browserRequireFraudWarning|Логический|Указывает, обязательно ли предупреждение о мошенничестве.|
-|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Уровень безопасности надежных сайтов. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Уровень безопасности доверяемых сайтов. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |cellularBlockDataRoaming|Логический|Указывает, следует ли блокировать передачу данных в роуминге.|
 |diagnosticsBlockDataSubmission|Логический|Указывает, следует ли блокировать отправку диагностических данных.|
 |passwordBlockPicturePasswordAndPin|Логический|Указывает, следует ли запретить использование графического пароля и ПИН-кода.|
@@ -55,13 +55,13 @@
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек.|
 |storageRequireDeviceEncryption|Логический|Указывает, обязательно ли шифрование данных на мобильном устройстве.|
 |updatesRequireAutomaticUpdates|Логический|Указывает, обязательно ли автоматическое обновление.|
-|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|Настройки контроля учетных записей. Возможные значения: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
-|workFoldersUrl|Строка​|URL-адрес рабочей папки.|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|Параметры контроля учетных записей пользователей. Возможные значения: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
+|workFoldersUrl|Строка|URL-адрес рабочей папки.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|назначения|Коллекция [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации по устройствам. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -72,18 +72,9 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
-  "@odata.type": "microsoft.graph.windows81GeneralConfiguration",
-  "@odata.annotations": [
-    {
-      "property": "applyOnlyToWindows81",
-      "capabilities": {
-        "computed": true,
-        "permissions": "Read"
-      }
-    }
-  ]
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windows81GeneralConfiguration"
 }-->
 ``` json
 {
@@ -129,6 +120,11 @@
   "workFoldersUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -25,8 +25,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта mobileAppCategory в формате JSON.
@@ -35,8 +35,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|displayName|String|Имя категории приложений.|
+|ид|Строка|Ключ объекта.|
+|displayName|Строка|Имя категории приложений.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта mobileAppCategory.|
 
 
@@ -60,7 +60,7 @@ Content-length: 163
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -73,6 +73,11 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
+
+
 
 
 

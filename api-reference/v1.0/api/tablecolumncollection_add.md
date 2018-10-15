@@ -28,12 +28,12 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|number|Определяет относительную позицию нового столбца. Предыдущий столбец на этой позиции сдвигается вправо. Значение индекса должно быть равно или меньше значения индекса последнего столбца, чтобы его невозможно было использовать для добавления столбца в конце таблицы. Используется нулевой индекс.|
-|values|(boolean, string или number)|Необязательный параметр. Двухмерный массив неформатированных значений столбца таблицы.|
+|index|Int32|Определяет относительную позицию нового столбца. Предыдущий столбец на этой позиции сдвигается вправо. Значение индекса должно быть равно или меньше значения индекса последнего столбца, чтобы его невозможно было использовать для добавления столбца в конце таблицы. Используется нулевой индекс.|
+|values|Json|Необязательный параметр. Двумерный массив неформатированных значений столбца таблицы.|
+|имя|string (строка)|name
+## <a name="response"></a>Ответ
 
-## <a name="response"></a>Отклик
-
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа `200 OK` и объект [WorkbookTableColumn](../resources/tablecolumn.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -49,8 +49,7 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": {
-  },
+  "index": 3,
   "values": [
     {
     }
@@ -58,12 +57,12 @@ Content-length: 51
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -85,5 +84,11 @@ Content-length: 81
   "description": "TableColumnCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/tablecolumncollection_add.md/tablecolumncollection_add/values:
+      Inconsistent types between parameter (Object) and table (None)",
+    "Error: /api-reference/v1.0/api/tablecolumncollection_add.md/tablecolumncollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Object)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->

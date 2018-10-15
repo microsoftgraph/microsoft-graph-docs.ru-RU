@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: List
-ms.openlocfilehash: ba0c01ce1887a32bd8b671cf511104e9128b5efb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 9fa1de406a3c4064ccb410b4b5b2df91b54a1bac
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268461"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -20,7 +21,7 @@ ms.lasthandoff: 09/28/2017
 **Примечание.** В этой бета-версии разрешается только навигация по спискам. Их создание и обновление не поддерживаются.
 Однако вы можете создавать и менять [элементы списков][listItem].
 
-Все приведенные ниже примеры относятся к сайту, например `https://graph.microsoft.com/beta/sites/{site-id}`.
+Все приведенные ниже примеры относятся к сайту, например `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 
 | Стандартная задача               | Метод HTTP
 |:--------------------------|:------------------------------
@@ -40,10 +41,16 @@ ms.lasthandoff: 09/28/2017
 
 Ниже показано представление ресурса **list** в формате JSON.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", 
-       "optionalProperties": [ "items", "drive"] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "items",
+    "drive"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.list"
+}-->
 
 ```json
 {
@@ -55,7 +62,7 @@ ms.lasthandoff: 09/28/2017
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
+    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
 
@@ -68,6 +75,8 @@ ms.lasthandoff: 09/28/2017
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "webUrl": "url to visit the list in a browser"
 }
 ```
@@ -78,33 +87,36 @@ ms.lasthandoff: 09/28/2017
 
 | Имя свойства    | Тип                             | Описание
 |:-----------------|:---------------------------------|:---------------------------
-| **columns**      | Коллекция ([columnDefinition][]) | Коллекция определений полей для данного списка.
-| **contentTypes** | Коллекция ([contentType][])      | Коллекция типов контента в данном списке.
-| **displayName**  | строка                           | Отображаемый заголовок списка.
+| **displayName**  | string                           | Отображаемый заголовок списка.
 | **list**         | [listInfo][]                     | Предоставляет дополнительные сведения о списке.
 | **system**       | [systemFacet][]                  | Если это свойство задано, оно указывает, что данным списком управляет система. Только для чтения.
 
 Ниже перечислены свойства, которые наследуются от ресурса **[baseItem][]**.
 
-| Имя свойства            | Тип             | Описание
-|:-------------------------|:-----------------|:-------------------------------
-| **id**                   | string           | Уникальный идентификатор элемента. Только для чтения.
-| **name**                 | строка           | Имя элемента.
-| **createdBy**            | [identitySet][]  | Удостоверение создателя данного элемента. Только для чтения.
-| **createdDateTime**      | DateTimeOffset   | Дата и время создания элемента. Только для чтения.
-| **description**          | строка           | Текст с описанием элемента.
-| **lastModifiedBy**       | [identitySet][]  | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
-| **lastModifiedDateTime** | DateTimeOffset   | Дата и время последнего изменения элемента. Только для чтения.
-| **webUrl**               | строка (url-адрес)     | URL-адрес для отображения элемента в браузере. Только для чтения.
+| Имя свойства            | Тип              | Описание
+|:-------------------------|:------------------|:------------------------------
+| **id**                   | string            | Уникальный идентификатор элемента. Только для чтения.
+| **name**                 | string            | Имя элемента.
+| **createdBy**            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
+| **createdDateTime**      | DateTimeOffset    | Дата и время создания элемента. Только для чтения.
+| **description**          | string            | Текст с описанием элемента.
+| **|||UNTRANSLATED_CONTENT_START|||eTag|||UNTRANSLATED_CONTENT_END|||**                 | string            | ETag для элемента. Только для чтения.                                                          |
+| **lastModifiedBy;**       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
+| **lastModifiedDateTime** | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
+| **|||UNTRANSLATED_CONTENT_START|||parentReference|||UNTRANSLATED_CONTENT_END|||**      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
+| **sharepointIds**        | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
+| **webUrl**               | строка (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.
 
 ## <a name="relationships"></a>Связи
 
 Ниже перечислены связи ресурса **list** с другими ресурсами.
 
-| Имя связи | Тип                        | Описание
-|:------------------|:----------------------------|:------------------------------
-| **drive**         | [drive][]                   | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с ресурсами [driveItem][driveItem].
-| **items**         | Коллекция ([listItem][])    | Все элементы, содержащиеся в списке.
+| Имя связи | Тип                             | Описание
+|:------------------|:---------------------------------|:----------------------
+| **drive**         | [drive][]                        | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с ресурсами [driveItem][driveItem].
+| **items**         | Коллекция ([listItem][])         | Все элементы, содержащиеся в списке.
+| **столбцы**       | Коллекция ([columnDefinition][]) | Коллекция определений полей для данного списка.
+| **contentTypes**  | Коллекция ([contentType][])      | Коллекция типов контента в данном списке.
 
 [baseItem]: baseItem.md
 [contentType]: contentType.md
@@ -112,9 +124,11 @@ ms.lasthandoff: 09/28/2017
 [driveItem]: driveItem.md
 [columnDefinition]: columnDefinition.md
 [identitySet]: identitySet.md
+[itemReference]: itemreference.md
 [listInfo]: listInfo.md
 [listItem]: listItem.md
-[site]: site.md
+[sharepointIds]: sharepointIds.md
+[сайте]: site.md
 [systemFacet]: systemFacet.md
 
 <!-- {

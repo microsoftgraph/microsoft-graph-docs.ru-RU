@@ -17,10 +17,10 @@
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
-|userName|String|Имя пользователя в отчете|
-|deviceModel|String|Модель устройства в отчете|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
-|status|String|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|userName|String|Имя пользователя в отчете.|
+|deviceModel|String|Модель устройства в отчете.|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия требованиям отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|String|Имя участника-пользователя.|
 
@@ -28,12 +28,12 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceComplianceDeviceStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceDeviceStatus",

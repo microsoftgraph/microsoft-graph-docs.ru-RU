@@ -9,11 +9,11 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка​|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|Строка​|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|omaUri|Строка​|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|fileName|Строка​|Имя файла, связанное со свойством Value (XML).|
-|value|Двоичный|Значение (массив байтов в кодировке UTF8).|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|описание|Строка|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|fileName|Строка|Имя файла, связанное со свойством Value (XML).|
+|значение|Двоичный|Значение (массив байтов в кодировке UTF8).|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -21,7 +21,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingStringXml"
 }-->
 ``` json
@@ -34,6 +33,11 @@
   "value": "binary"
 }
 ```
+
+
+
+
+
 
 
 

@@ -11,7 +11,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeconstraint"
+  "@odata.type": "microsoft.graph.timeConstraint"
 }-->
 
 ```json
@@ -22,9 +22,9 @@
 
 ```
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|activityDomain|String|Описание действия (необязательно). Возможные значения: `work`, `personal`, `unrestricted` и `unknown`.|
+|activityDomain|activityDomain|Характер действия (необязательно). Возможные значения: `work`, `personal`, `unrestricted` или `unknown`.|
 |timeslots|Коллекция [timeSlot](timeslot.md)|Массив, содержащий значения периодов времени.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

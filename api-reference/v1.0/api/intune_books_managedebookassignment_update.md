@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) в формате JSON.
@@ -34,9 +34,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги.|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Цель установки электронной книги. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|ИД|Строка|Ключ объекта.|
+|целевой|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Попытка установки для электронной книги. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
@@ -75,6 +75,11 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedAppOperation](../resources/intune_mam_managedappoperation.md) в формате JSON.
@@ -34,11 +34,11 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя операции.|
+|displayName|String (строка)|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
-|state|String|Текущее состояние операции|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|state|String (строка)|Текущее состояние операции|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 
 
@@ -62,7 +62,7 @@ Content-length: 165
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -77,6 +77,11 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

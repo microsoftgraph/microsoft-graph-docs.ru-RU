@@ -25,7 +25,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) в формате JSON.
@@ -34,11 +34,11 @@ PATCH /deviceManagement/conditionalAccessSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|string|Н/Д|
-|enabled|Boolean|Указывает, включен ли в этой организации условный доступ к локальной среде|
+|ИД|string|Н/Д|
+|включено|Логическое|Указывает, включен ли в этой организации условный доступ к локальной среде|
 |includedGroups|Коллекция объектов Guid|Группы пользователей, для которых включается условный доступ к локальной среде. У всех пользователей в этих группах должны быть управляемые мобильные устройства, соответствующие требованиям для доступа к почте.|
 |excludedGroups|Коллекция объектов Guid|Группы пользователей, на которые не распространяется условный доступ к локальной среде. На всех пользователей из этих группах не будет распространяться политика условного доступа.|
-|overrideDefaultRule|Boolean|Указывает, следует ли переопределять правило доступа по умолчанию при разрешении устройства, чтобы обеспечить предоставление доступа.|
+|overrideDefaultRule|Логическое|Указывает, следует ли переопределять правило доступа по умолчанию при разрешении устройства, чтобы обеспечить предоставление доступа.|
 
 
 
@@ -56,10 +56,10 @@ Content-length: 195
 {
   "enabled": true,
   "includedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "<Unknown Primitive Type Edm.Guid>"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "<Unknown Primitive Type Edm.Guid>"
   ],
   "overrideDefaultRule": true
 }
@@ -77,14 +77,19 @@ Content-Length: 318
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "String"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "String"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

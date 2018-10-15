@@ -22,7 +22,7 @@ ManagedAppEntity — это базовый тип для всех остальн
 |deviceType|String (строка)|Тип главного устройства.|
 |deviceTag|String (строка)|Тег, который создан с использованием пакета SDK для управления приложениями и помогает связывать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях.|
 |deviceName|String (строка)|Имя главного устройства.|
-|flaggedReasons|Коллекция [перечисления managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Причины (при наличии таковых), по которым помечается регистрация приложения. например приложения, запущенного на устройстве с административным доступом.|
+|flaggedReasons|Коллекция [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Причины, по которым помечается регистрация приложения (если они есть). например приложения, запущенного на устройстве с административным доступом.|
 |userId|String (строка)|ИД пользователя, к которому относится эта регистрация приложения.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Идентификатор пакета приложения.|
 |id|Строка|Ключ объекта.|
@@ -31,7 +31,7 @@ ManagedAppEntity — это базовый тип для всех остальн
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|appliedPolicies|Коллекция [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Политики (при наличии таковых), примененные к зарегистрированному приложению, когда оно в последний раз синхронизировалось со службой управления.|
+|appliedPolicies|Коллекция объектов [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Нуль или более политик, примененных к зарегистрированному приложению, когда оно в последний раз синхронизировалось со службой управления.|
 |intendedPolicies|Коллекция объектов [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Нуль или более политик, которые на текущий момент администратор использует для приложения.|
 |operations|Коллекция объектов [managedAppOperation](../resources/intune_mam_managedappoperation.md)|Нуль или более долговременных операций, запускаемых для регистрации приложения.|
 
@@ -39,9 +39,8 @@ ManagedAppEntity — это базовый тип для всех остальн
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppRegistration"
 }-->
 ``` json
@@ -66,3 +65,11 @@ ManagedAppEntity — это базовый тип для всех остальн
   "version": "String"
 }
 ```
+
+
+
+
+
+
+
+

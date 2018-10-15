@@ -11,18 +11,29 @@
 |Для приложений | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP-запрос
+Вложения в событие ([event](../resources/event.md)) в пользовательском календаре ([calendar](../resources/calendar.md)), установленном по умолчанию.
+
+<!--
+Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+-->
+
 <!-- { "blockType": "ignored" } -->
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md) по умолчанию для пользователя или группы.
 ```http
 GET /me/events/{id}/attachments
 GET /users/{id | userPrincipalName}/events/{id}/attachments
-GET /groups/{id}/events/{id}/attachments
 
 GET /me/calendar/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-GET /groups/{id}/calendar/events/{id}/attachments
 ```
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) по умолчанию для пользователя.
+
+<!--
+GET /groups/{id}/events/{id}/attachments
+GET /groups/{id}/calendar/events/{id}/attachments
+-->
+
+Вложения в событие ([event](../resources/event.md)) в календаре ([calendar](../resources/calendar.md)), который принадлежит установленной по умолчанию группе календарей ([calendarGroup](../resources/calendargroup.md)) пользователя.
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
@@ -31,6 +42,8 @@ GET /me/calendargroup/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) пользователя.
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
@@ -40,7 +53,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -59,11 +72,11 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment",
+  "@odata.type": "collection(microsoft.graph.attachment)",
   "isCollection": true
 } -->
 ```http
@@ -74,15 +87,14 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "@odata.type": "microsoft.graph.fileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
+      "contentBytes": "base64-contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "id": "id-value",
       "isInline": false,
-      "isContactPhoto": false,
       "name": "name-value",
       "size": 99
     }

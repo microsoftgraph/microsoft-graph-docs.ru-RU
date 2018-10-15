@@ -24,8 +24,8 @@ POST /deviceAppManagement/targetedManagedAppConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта targetedManagedAppConfiguration в формате JSON.
@@ -34,15 +34,15 @@ POST /deviceAppManagement/targetedManagedAppConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|version|Строка|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |customSettings|Коллекция [keyValuePair](../resources/intune_mam_keyvaluepair.md)|Набор строковых пар "ключ-значение", которые отправляются в приложения для пользователей с заданной конфигурацией и не меняются этой службой. Наследуется от объекта [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md).|
 |deployedAppCount|Int32|Количество приложений, для которых развернута текущая политика.|
-|isAssigned|Boolean|Указывает, развернута ли политика для групп включения.|
+|isAssigned|Логический|Указывает, развернута ли политика для групп включения.|
 
 
 
@@ -76,7 +76,7 @@ Content-length: 452
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -101,6 +101,11 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -9,7 +9,7 @@
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All и Member.Read.Hidden | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ POST /education/classes/{id}/members/$ref
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/11011/members/$ref
+POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/$ref
 Content-type: application/json
 Content-length: 56
 
@@ -46,7 +46,7 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. 
 
 

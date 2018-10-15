@@ -1,16 +1,23 @@
-# <a name="resource-resource-type"></a>Тип ресурса resource
+# <a name="onenoteresource-resource-type"></a>Тип ресурса OneNoteResource
 
 Ресурс изображения или другого файла на странице OneNote. 
 
 Вы можете получить двоичные данные ресурса, но получение представления объекта resource или коллекции resource в формате JSON не поддерживается.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.onenoteEntityBaseModel",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "contentUrl": "string (url)"
+}
+```
 
 Чтобы получить двоичные данные определенного ресурса, отправьте запрос GET в конечную точку `content` ресурса:
 
@@ -43,9 +50,13 @@ GET ../onenote/pages/{id}/content
 ```
 
 ## <a name="properties"></a>Свойства
-Нет
 
-## <a name="relationships"></a>Связи
+| Свойство             | Тип            | Описание
+|:---------------------|:----------------|:---------------------------------
+| content              | Stream          | Поток содержимого.
+| contentUrl           | Строка (url-адрес)    | URL-адрес загрузки содержимого
+
+## <a name="relationships"></a>Отношения
 Нет.
 
 

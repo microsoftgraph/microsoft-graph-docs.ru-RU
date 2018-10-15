@@ -7,12 +7,12 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartLineFormat](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
-|[Обновление](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |Обновление объекта ChartLineFormat. |
+|[Get ChartLineFormat](../api/chartlineformat_get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
+|[Update](../api/chartlineformat_update.md) | [WorkbookChartLineFormat](chartlineformat.md) |Обновление объекта ChartLineFormat. |
 |[Clear](../api/chartlineformat_clear.md)|Нет|Очищает формат линий элемента диаграммы.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |color|string|HTML-код цвета, представляющий цвет линий в диаграмме.|
 
@@ -24,12 +24,11 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

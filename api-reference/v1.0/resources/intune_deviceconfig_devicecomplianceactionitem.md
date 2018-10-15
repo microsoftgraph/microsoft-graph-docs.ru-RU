@@ -15,22 +15,22 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|gracePeriodHours|Int32|Время ожидания (в часах) до применения действия. Допустимые значения: от 0 до 8760|
-|actionType|String|Выполняемое действие. Возможные значения: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
-|notificationTemplateId|String|Используемый шаблон сообщения уведомления|
-|notificationMessageCCList|Коллекция строк|Список идентификаторов групп, которым будет отправлена копия этого сообщения уведомления.|
+|id|Строка|Ключ объекта.|
+|gracePeriodHours|Int32|Время ожидания (в часах) до применения действия. Допустимые значения: от 0 до 8760.|
+|actionType|[deviceComplianceActionType](../resources/intune_deviceconfig_devicecomplianceactiontype.md)|Тип выполняемого действия Возможные значения: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`.|
+|notificationTemplateId|String (строка)|Используемый шаблон сообщения уведомления|
+|notificationMessageCCList|Коллекция String|Список идентификаторов групп, которым будет отправлена копия этого сообщения уведомления.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceComplianceActionItem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceActionItem",

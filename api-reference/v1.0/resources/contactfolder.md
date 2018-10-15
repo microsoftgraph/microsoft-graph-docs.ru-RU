@@ -25,9 +25,9 @@
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Отображаемое имя папки.|
-|id|String|Уникальный идентификатор папки с контактами. Только для чтения.|
-|parentFolderId|String|Идентификатор родительской папки для папки.|
+|displayName|Строка|Отображаемое имя папки.|
+|id|Строка|Уникальный идентификатор папки с контактами. Только для чтения.|
+|parentFolderId|Строка|Идентификатор родительской папки для папки.|
 
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
@@ -37,11 +37,11 @@
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для contactFolder. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для contactFolder. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже этот ресурс представлен в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
@@ -50,7 +50,26 @@
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contactFolder"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.contactFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "navigability": "single",
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "contacts",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

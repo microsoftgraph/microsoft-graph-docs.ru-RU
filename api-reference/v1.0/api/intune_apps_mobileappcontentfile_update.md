@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Accept|приложение/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) в формате JSON.
@@ -42,8 +42,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |size|Int64|Размер файла до шифрования.|
 |sizeEncrypted|Int64|Размер файла после шифрования.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Время, когда заканчивается срок действия URI для службы хранилища Azure.|
-|manifest|Binary|Данные манифеста.|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|manifest|Бинарное|Данные манифеста.|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|Состояние текущего запроса загрузки. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
 
 
 
@@ -91,6 +91,11 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
+
+
+
+
 
 
 

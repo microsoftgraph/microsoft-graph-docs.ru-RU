@@ -27,17 +27,17 @@ PATCH /education/users/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName| String| Отображаемое имя пользователя|
-|givenName| String | Имя |
-|middleName| String | Отчество пользователя|
-|surname| String | Фамилия пользователя|
-|mail| String| Электронный адрес|
-|mobilePhone| String | Номер мобильного телефона пользователя |
-|externalSource|string| Возможные значения: `sis`, `manual`, `enum_sentinel`.|
-|externalSource|string| Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.|
+|displayName| Строка| Отображаемое имя пользователя|
+|givenName| Строка | Имя |
+|middleName| Строка | Отчество пользователя|
+|surname| Строка | Фамилия пользователя|
+|mail| Строка| Электронный адрес|
+|mobilePhone| Строка | Номер мобильного телефона пользователя |
+|externalSource|Cтрока| Возможные значения: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|Cтрока| Источник создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Почтовый адрес пользователя.|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Адрес проживания пользователя.|
-|primaryRole|string| Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`.|
+|primaryRole|Cтрока| Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| Если основная роль — student, этот блок будет содержать данные, касающиеся учащегося.|
 |teacher|[educationTeacher](../resources/educationteacher.md)| Если основная роль — teacher, этот блок будет содержать данные, касающиеся преподавателя.|
 
@@ -52,7 +52,7 @@ PATCH /education/users/{id}
   "name": "update_educationuser"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/users/13020
+PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
 Content-type: application/json
 Content-length: 508
 
@@ -64,7 +64,7 @@ Content-length: 508
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +97,7 @@ Content-length: 508
         "state": "CA",
         "street": "12345 Main St."
       },
-  "primaryRole": "string",
+  "primaryRole": "student",
   "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -106,7 +106,6 @@ Content-length: 508
         "street": "12345 Main St."
       },
   "student": {
-      "primaryRole": "student",
       "externalId": "13005",
       "birthDate": "2001-01-01T00:00:00Z"
     }

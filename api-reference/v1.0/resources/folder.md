@@ -3,18 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Folder
-ms.openlocfilehash: 664597297700f7af096ef30cfbd5342a45a6c157
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: c0ab787f1c1f04ff77eeb69979dc6a825d4f3c33
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266564"
 ---
 # <a name="folder-resource-type"></a>Тип ресурса Folder
 
-Ресурс **Folder** группирует данные, связанные с папкой, в элементе в единую структуру. 
-Ресурсы [**DriveItem**](driveitem.md), у которых значение аспекта **folder** не равно null, представляют собой контейнеры для других ресурсов DriveItem.
+Ресурс **Folder** — это единая структура, объединяющая данные элемента, связанные с папками. Ресурсы [**DriveItem**](driveitem.md) с ненулевым аспектом **folder** являются контейнерами для других ресурсов DriveItem.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -37,10 +37,10 @@ ms.lasthandoff: 09/28/2017
 
 | Свойство       | Тип           | Описание
 |:---------------|:---------------|:-------------------------------------------
-| **childCount** | Int64          | Количество дочерних элементов, содержащихся непосредственно в этом контейнере.
+| **childCount** | Int32          | Количество дочерних элементов, содержащихся непосредственно в этом контейнере.
 | **view**       | [folderView][] | Коллекция свойств, определяющих рекомендуемое представление для папки.
 
-## <a name="remarks"></a>Примечания 
+## <a name="remarks"></a>Замечания 
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem][].
 

@@ -3,16 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Shared
-ms.openlocfilehash: 1d828310a226edd0443ff3b5f60156df1e7c98cb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 0a94a1d5ddf671151cf786d9ff93ae4f9e012a7b
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267901"
 ---
 # <a name="shared-resource-type"></a>Тип ресурса Shared
 
-Ресурс **Shared** указывает, что к элементу DriveItem был предоставлен доступ другим пользователям.
-Ресурс содержит сведения о способе предоставления совместного доступа к элементу.
+Ресурс **Shared** указывает, что к элементу DriveItem был предоставлен доступ другим пользователям. Ресурс содержит сведения о способе предоставления совместного доступа к элементу.
 
 Если у элемента [**Driveitem**](driveitem.md) есть аспект **shared**, имеющий значение, отличное от null, это значит, что к элементу предоставлен общий доступ.
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/28/2017
 | sharedBy       | [identitySet](identityset.md) | Удостоверение пользователя, предоставившего общий доступ к элементу. Только для чтения.
 | sharedDateTime | DateTimeOffset                | Дата и время предоставления общего доступа к элементу в формате UTC. Только для чтения.
 
-## <a name="scope-values"></a>Значения областей
+## <a name="scope-options"></a>Параметры области
 
 | Значение          | Описание                                                                           |
 |:---------------|:--------------------------------------------------------------------------------------|
@@ -59,5 +59,9 @@ ms.lasthandoff: 09/28/2017
   "description": "The shared facet provides info about shared items.",
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/shared.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization,users) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/Shared"
 } -->

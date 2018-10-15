@@ -3,14 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Предоставление доступа к файлу посредством ссылки
-ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
-ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
+ms.openlocfilehash: bbdf872216a5a9e266e04c95868e0179cf15e553
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "22223478"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266809"
 ---
-# <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки совместного доступа для ресурса DriveItem
+# <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки для доступа к ресурсу DriveItem
 
 Используя действие **createLink**, вы можете поделиться ресурсом [DriveItem](../resources/driveitem.md) с помощью ссылки для совместного доступа.
 
@@ -47,8 +47,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 |   Имя    |  Тип  |                                 Описание                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
-| **scope** | string | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
+| **type**  | строка | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
+| **scope** | строка | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
 
 
 ### <a name="link-types"></a>Типы ссылок
@@ -66,10 +66,11 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 Параметр **scope** может принимать указанные ниже значения.
 Если параметр **scope** не задан, создается ссылка того типа, который используется в организации по умолчанию.
 
-| Значение типа     | Описание                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Создает ссылку на объект DriveItem, доступный всем, кому она предоставлена. Администратор может отключить ссылки, не требующие проверки подлинности.                 |
-| `organization` | Создает ссылку на объект DriveItem, доступный всем в организации пользователя. Область организации для ссылок недоступна в личных учетных записях OneDrive. |
+| Значение          | Описание
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | Любое лицо имеет доступ с ссылкой, без необходимости входа. Сюда могут входить пользователи за пределами вашей организации. Поддержка анонимных ссылок может быть отключена администратором.
+| `organization` | Любой пользователь вошедший в вашу организацию (клиент) может использовать ссылку для доступа. Доступно только в OneDrive для бизнеса и SharePoint.
+
 
 ## <a name="response"></a>Ответ
 
@@ -86,11 +87,11 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "create-link"
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST /me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -130,7 +131,7 @@ OneDrive для бизнеса и SharePoint поддерживают ссылк
 
 ### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -171,9 +172,9 @@ Content-Type: application/json
 
 **Примечание.** Внедрение ссылок поддерживается только в личных учетных записях OneDrive.
 
-### <a name="request"></a>Запросить
+### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -184,7 +185,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -207,7 +208,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 * Срок действия ссылок, созданных с помощью этого действия, не истекает при условии, что в организации не включена политика срока действия.
 * Ссылки отображаются в разрешениях на совместное использование для элемента и могут быть удалены владельцем элемента.

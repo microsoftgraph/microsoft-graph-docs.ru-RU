@@ -4,12 +4,12 @@
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [message](../resources/message.md);
-- [mailFolder](../resources/mailfolder.md);
-- [event](../resources/event.md);
-- [calendar](../resources/calendar.md);
-- [contact](../resources/contact.md);
-- [contactFolder](../resources/contactfolder.md). 
+- [[message](../resources/message.md);](../resources/message.md)
+- [[mailFolder](../resources/mailfolder.md);](../resources/mailfolder.md)
+- [[event](../resources/event.md);](../resources/event.md)
+- [[calendar](../resources/calendar.md);](../resources/calendar.md)
+- [[contact](../resources/contact.md);](../resources/contact.md)
+- [[contactFolder](../resources/contactfolder.md).](../resources/contactfolder.md) 
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
@@ -93,17 +93,6 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## <a name="parameters"></a>Параметры
-|**Параметр**|**Тип**|**Описание**|
-|:-----|:-----|:-----|
-|_Параметры URL-адреса_|
-|id|string|Уникальный идентификатор объекта в соответствующей коллекции. Обязательный параметр.|
-|_Параметры тела_|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)| Массив из одного или нескольких расширенных свойств с одним значением. |
-|id|Строка|Чтобы идентифицировать свойства в коллекции **singleValueExtendedProperties**, для каждого из них укажите этот параметр. Свойство должно быть одного из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
-|значение|string|Для каждого свойства из коллекции **singleValueExtendedProperties** следует указать значение. Обязательный параметр.|
-
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
@@ -113,6 +102,12 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-body"></a>Тело запроса
 
 Предоставьте тело JSON каждого объекта [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) в свойстве коллекции **singleValueExtendedProperties** для экземпляра ресурса.
+
+|Свойство|Тип|Описание|
+|:-----|:-----|:-----|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)| Массив из одного или нескольких расширенных свойств с одним значением. |
+|id|Строка|Чтобы идентифицировать свойства в коллекции **singleValueExtendedProperties**, для каждого из них укажите этот параметр. Свойство должно быть одного из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
+|значение|строка|Для каждого свойства из коллекции **singleValueExtendedProperties** следует указать значение. Обязательный параметр.|
 
 При создании расширенного свойства в _новом_ экземпляре ресурса, помимо новой коллекции **singleValueExtendedProperties**, нужно указать описание этого экземпляра ресурса (то есть [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.) в формате JSON.
 
@@ -176,16 +171,16 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response-1"></a>Отклик 1
+##### <a name="response-1"></a>Отклик 1
 
 Отклик в результате успешного выполнения обозначен кодом `HTTP 201 Created` и включает в себя новое событие, подобно отклику при [создании просто события](../api/user_post_events.md). Отклик не включает только что созданные расширенные свойства.
 
-Чтобы отобразить только что созданное расширенное свойство, [примените к событию, к которому относится это свойство, параметр $expand](../api/singlevaluelegacyextendedproperty_get.md).
+Чтобы просмотреть новое расширенное свойство, [разверните event с этим свойством](../api/singlevaluelegacyextendedproperty_get.md).
 
 
 ****
 
-##### <a name="request-2"></a>Запрос 2
+##### <a name="request-2"></a>Запрос 2
 
 Второй пример показывает создание расширенного свойства с одним значением для указанного существующего сообщения. Это расширенное свойство — единственный элемент в массиве **singleValueExtendedProperties**. Тело запроса включает следующие данные для расширенного свойства:
 - **id** (указывает тип свойства как `String`), GUID и свойство `Color`.
@@ -193,7 +188,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')
+PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=
 
 Content-Type: application/json
 
@@ -211,7 +206,7 @@ Content-Type: application/json
 
 Отклик в результате успешного выполнения обозначен кодом `HTTP 200 OK` и включает в себя указанное сообщение подобно отклику при [обновлении сообщения](../api/message_update.md). Отклик не включает только что созданное расширенное свойство.
 
-Чтобы отобразить только что созданное расширенное свойство, [примените к сообщению, к которому относится это свойство, параметр $expand](../api/singlevaluelegacyextendedproperty_get.md).
+Чтобы просмотреть новое расширенное свойство, [разверните message с этим свойством](../api/singlevaluelegacyextendedproperty_get.md).
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

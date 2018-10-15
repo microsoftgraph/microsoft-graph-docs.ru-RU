@@ -14,13 +14,13 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|ид|Строка|Н/Д|
 |displayName|Строка|Н/Д|
-|description|Строка|Н/Д|
-|priority|Int32|Н/Д|
+|описание|Строка|Н/Д|
+|приоритет|Int32|Н/Д|
 |createdDateTime|DateTimeOffset|Н/Д|
 |lastModifiedDateTime|DateTimeOffset|Н/Д|
-|version|Int32|Н/Д|
+|версия|Int32|Н/Д|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -31,9 +31,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentConfiguration"
 }-->
 ``` json
@@ -48,6 +47,11 @@
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

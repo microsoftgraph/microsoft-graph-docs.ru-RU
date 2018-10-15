@@ -25,7 +25,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта androidCompliancePolicy в формате JSON.
@@ -34,12 +34,12 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|ИД|String (строка)|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|description|String (строка)|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|описание|String (строка)|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |displayName|String (строка)|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|версия|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |passwordRequired|Boolean (логический)|Указывает, что для разблокировки устройства требуется указывать пароль.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Тип символов в пароле. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |securityDisableUsbDebugging|Boolean (логический)|Запрещает USB-отладку на устройствах с Android.|
 |securityRequireVerifyApps|Boolean (логический)|Указывает, что требуется включить функцию проверки приложений для Android.|
 |deviceThreatProtectionEnabled|Boolean (логический)|Указывает, что защита от угроз для устройств должна быть включена.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Указывает, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Указывает минимальный уровень риска в мобильной защите от рисков, при котором сообщается о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean (логический)|Устройства запрещено взламывать и рутовать.|
 |osMinimumVersion|String (строка)|Минимальная версия Android.|
 |osMaximumVersion|String (строка)|Максимальная версия Android.|
@@ -143,6 +143,11 @@ Content-Length: 1331
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
+
+
+
 
 
 

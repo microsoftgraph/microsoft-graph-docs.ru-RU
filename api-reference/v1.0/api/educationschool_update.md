@@ -51,7 +51,7 @@ PATCH /education/schools/{id}
   "name": "update_educationschool"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/schools/10002
+PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
 Content-type: application/json
 Content-length: 292
 
@@ -60,7 +60,7 @@ Content-length: 292
   "description": "Magnate school for the arts. Los Angeles School District"
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

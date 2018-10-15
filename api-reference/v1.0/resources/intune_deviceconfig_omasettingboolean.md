@@ -9,10 +9,10 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|String|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|value|Boolean|Значение|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|описание|Строка|Описание. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|значение|Boolean (логический)|Значение|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -20,7 +20,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingBoolean"
 }-->
 ``` json
@@ -32,6 +31,11 @@
   "value": true
 }
 ```
+
+
+
+
+
 
 
 

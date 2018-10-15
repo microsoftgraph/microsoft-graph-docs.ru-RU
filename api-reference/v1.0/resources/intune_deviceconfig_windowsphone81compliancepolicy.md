@@ -18,9 +18,9 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ид|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |дата и время создания|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |дата и время последних изменений|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |отображаемое имя|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |версия|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
@@ -29,8 +29,8 @@
 |минимальная длина пароля|Int32|Минимальная длина паролей.|
 |минуты бездействия при вводе пароля перед блокировкой|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |настройка счётчика минимального количества символов пароля|Int32|Количество наборов символов, которые требуются для пароля.|
-|требуемый тип пароля|[требуемый тип пароля](../resources/intune_deviceconfig_requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|счётчик блокировки пароля при вводе предыдущего пароля|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 0 до 24.|
+|passwordRequiredType|[требуемый тип пароля](../resources/intune_deviceconfig_requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 0 до 24.|
 |требуемый пароль|Логический|Определяет, нужно ли запрашивать ввод пароля.|
 |минимальная версия оп|Строка|Минимальная версия Windows Phone.|
 |максимальная версия оп|Строка|Максимальная версия Windows Phone.|
@@ -51,8 +51,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsPhone81CompliancePolicy"
 }-->
 ``` json
@@ -77,6 +77,11 @@
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

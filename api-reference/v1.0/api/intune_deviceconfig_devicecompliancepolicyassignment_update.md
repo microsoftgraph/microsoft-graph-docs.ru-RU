@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) в формате JSON.
@@ -34,8 +34,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель для назначения политики соответствия.|
+|ИД|Строка|Ключ объекта.|
+|целевой|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель для назначения политики соответствия.|
 
 
 
@@ -72,6 +72,11 @@ Content-Length: 221
   }
 }
 ```
+
+
+
+
+
 
 
 

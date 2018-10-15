@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) в формате JSON.
@@ -37,12 +37,12 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Пока не задокументировано.|
-|configurationDeployedUserCount|Int32|Пока не задокументировано.|
-|lastRefreshTime|DateTimeOffset|Пока не задокументировано.|
-|configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md)|Пока не задокументировано.|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|displayName|Строка|Н/Д|
+|configurationDeployedUserCount|Int32|Н/Д|
+|lastRefreshTime|DateTimeOffset|Н/Д|
+|configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md)|Н/Д|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 
 
@@ -76,7 +76,7 @@ Content-length: 516
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -101,6 +101,11 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

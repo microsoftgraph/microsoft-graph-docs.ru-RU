@@ -25,7 +25,7 @@ POST /deviceAppManagement/mobileApps
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта managedAndroidLobApp в формате JSON.
@@ -34,25 +34,25 @@ POST /deviceAppManagement/mobileApps
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|ИД|String (строка)|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |displayName|String (строка)|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|description|String (строка)|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publisher|String (строка)|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|описание|String (строка)|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|издатель|String (строка)|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |isFeatured|Boolean (логический)|Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |privacyInformationUrl|String (строка)|URL-адрес заявления о конфиденциальности. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |informationUrl|String (строка)|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|owner|String (строка)|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|developer|String (строка)|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|notes|String (строка)|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|Доступность приложения. Наследуется от объекта [managedApp](../resources/intune_apps_managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
-|version|String (строка)|Версия приложения. Наследуется от объекта [managedApp](../resources/intune_apps_managedapp.md).|
+|владелец|String (строка)|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|разработчик|String (строка)|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|примечания|String (строка)|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение может быть назначено только в случае публикации приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune_apps_managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
+|версия|String (строка)|Версия приложения. Наследуется от объекта [managedApp](../resources/intune_apps_managedapp.md).|
 |committedContentVersion|String (строка)|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md).|
 |fileName|String (строка)|Имя основного файла бизнес-приложения. Наследуется от объекта [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md).|
-|size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md).|
+|изменить размер|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md).|
 |packageId|String (строка)|Идентификатор пакета.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
 |versionName|String (строка)|Имя версии управляемого бизнес-приложения для Android.|
@@ -159,6 +159,11 @@ Content-Length: 1325
   "versionCode": "Version Code value"
 }
 ```
+
+
+
+
+
 
 
 

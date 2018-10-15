@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/borders/ItemAt
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
+POST /workbook/names/{name}/range/format/borders/itemAt
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/itemAt
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -29,37 +29,39 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|number|Значение индекса получаемого объекта. Используется нулевой индекс.|
+|index|Int32|Значение индекса получаемого объекта. Отсчитывается от нуля.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [RangeBorder](../resources/rangeborder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [WorkbookRangeBorder](../resources/rangeborder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "rangebordercollection_itemat"
+  "isComposable": true,
+  "name": "rangebordercollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.rangebordercollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders/itemAt
 Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 1
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 } -->
 ```http
 HTTP/1.1 200 OK

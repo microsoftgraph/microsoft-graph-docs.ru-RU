@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md) в формате JSON.
@@ -34,8 +34,8 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
+|ИД|Строка|Уникальный идентификатор объекта.|
+|целевой|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 
 
@@ -72,6 +72,11 @@ Content-Length: 234
   }
 }
 ```
+
+
+
+
+
 
 
 

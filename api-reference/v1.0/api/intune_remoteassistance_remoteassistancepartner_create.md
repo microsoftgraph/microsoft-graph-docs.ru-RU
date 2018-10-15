@@ -24,7 +24,7 @@ POST /deviceManagement/remoteAssistancePartners
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -37,7 +37,7 @@ POST /deviceManagement/remoteAssistancePartners
 |id|String|Уникальный идентификатор партнера.|
 |displayName|String|Отображаемое имя партнера.|
 |onboardingUrl|String|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
-|onboardingStatus|String|Подлежит определению. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Подлежит уточнению. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
 
 
@@ -63,7 +63,7 @@ Content-length: 266
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

@@ -25,7 +25,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Accept|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceComplianceDeviceStatus в формате JSON.
@@ -39,9 +39,9 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 |userName|String (строка)|Имя пользователя в отчете.|
 |deviceModel|String (строка)|Модель устройства в отчете.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|Состояние|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия требованиям отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
-|userPrincipalName|String (строка)|UserPrincipalName.|
+|userPrincipalName|String (строка)|Имя пользователя-участника.|
 
 
 
@@ -87,6 +87,11 @@ Content-Length: 475
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 

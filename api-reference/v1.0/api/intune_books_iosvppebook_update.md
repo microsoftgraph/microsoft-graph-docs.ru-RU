@@ -34,9 +34,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|Ключ объекта. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
+|id|Строка|Ключ объекта. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |displayName|Строка|Имя электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|описание|Строка|Описание. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
+|description|Строка|Описание. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |publisher|Строка|Издатель. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
@@ -79,7 +79,7 @@ Content-length: 803
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -115,7 +115,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -127,6 +127,11 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
+
+
+
+
+
 
 
 

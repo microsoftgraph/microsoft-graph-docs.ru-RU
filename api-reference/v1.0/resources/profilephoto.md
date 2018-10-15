@@ -13,7 +13,7 @@
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|string|Только для чтения.|
+|id|строка|Только для чтения.|
 |height|int32|Высота фотографии. Только для чтения.|
 |width|int32|Ширина фотографии. Только для чтения.|
 
@@ -25,11 +25,11 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.profilePhoto"
 }-->

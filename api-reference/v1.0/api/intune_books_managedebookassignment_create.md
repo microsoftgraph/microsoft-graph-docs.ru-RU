@@ -36,7 +36,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги.|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Цель установки электронной книги. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Попытка установки для электронной книги. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
@@ -76,6 +76,11 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

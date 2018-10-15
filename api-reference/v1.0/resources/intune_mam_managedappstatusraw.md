@@ -18,7 +18,7 @@
 |displayName|Строка|Понятное имя отчета о состоянии. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
 |id|Строка|Ключ объекта. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
 |version|Строка|Версия объекта. Наследуется от объекта [managedAppStatus](../resources/intune_mam_managedappstatus.md).|
-|content|[Json](../resources/intune_mam_json.md)|Содержимое отчета о состоянии.|
+|content|[Json](../resources/json.md)|Содержимое отчета о состоянии.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -26,8 +26,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppStatus",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
 }-->
 ``` json
@@ -41,6 +41,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

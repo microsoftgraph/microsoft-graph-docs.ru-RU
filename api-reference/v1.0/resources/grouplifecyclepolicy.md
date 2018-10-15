@@ -9,9 +9,9 @@
 |[Get groupLifecyclePolicy](../api/grouplifecyclepolicy_get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) |Чтение свойств и связей объекта groupLifecyclePolicy.|
 |[List groupLifecyclePolicies](../api/grouplifecyclepolicy_list.md) | Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md) | Перечисление всех объектов groupLifecyclePolicy. |
 |[Update groupLifecyclePolicy](../api/grouplifecyclepolicy_update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | Обновление объекта groupLifecyclePolicy. |
-|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy_delete.md) | None | Удаление объекта groupLifecyclePolicy. |
-|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy_addgroup.md)|None| Добавление группы в политику жизненного цикла. |
-|[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy_removegroup.md)|None| Удаление группы из политики жизненного цикла. |
+|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy_delete.md) | Нет | Удаление объекта groupLifecyclePolicy. |
+|[Добавление группы в объект groupLifecyclePolicy](../api/grouplifecyclepolicy_addgroup.md)|Нет| Добавление группы в политику жизненного цикла. |
+|[Удаление группы из объекта groupLifecyclePolicy](../api/grouplifecyclepolicy_removegroup.md)|Нет| Удаление группы из политики жизненного цикла. |
 
 ## <a name="properties"></a>Свойства
 
@@ -30,11 +30,11 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.groupLifecyclePolicy"
 }-->
 

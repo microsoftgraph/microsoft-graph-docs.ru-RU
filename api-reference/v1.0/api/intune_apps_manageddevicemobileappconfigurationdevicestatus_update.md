@@ -1,9 +1,9 @@
-# <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>Update managedDeviceMobileAppConfigurationDeviceStatus
+# <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>Обновить managedDeviceMobileAppConfigurationDeviceStatus
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Обновление свойств объекта [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md).
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) в формате JSON.
@@ -34,19 +34,19 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
-|userName|String|Имя пользователя в отчете.|
-|deviceModel|String|Модель устройства в отчете.|
+|ид|Строка|Ключ объекта.|
+|deviceDisplayName|Строка|Имя устройства в объекте DevicePolicyStatus.|
+|userName|Строка|Имя пользователя в отчете.|
+|deviceModel|Строка|Модель устройства в отчете.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|статус|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия требованиям отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Строка|UserPrincipalName.|
 
 
 
-## <a name="response"></a>Отклик
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns a `200 OK` response code and an updated [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) object in the response body.|||UNTRANSLATED_CONTENT_END|||
+## <a name="response"></a>Ответ
+В случае успеха этот метод возвращает `200 OK` код отклика и обновленный [объект managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -86,6 +86,11 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 

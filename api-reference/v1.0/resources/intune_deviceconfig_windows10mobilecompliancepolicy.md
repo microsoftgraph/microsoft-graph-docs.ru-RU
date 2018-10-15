@@ -29,7 +29,7 @@
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|счётчик блокировки пароля при вводе предыдущего пароля|Int32|Количество предыдущих паролей, повторное использование которых следует запретить.|
+|passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых следует запретить.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 255.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordRequireToUnlockFromIdle|Boolean|Указывает, что для разблокировки неактивного устройства требуется указывать пароль.|
@@ -56,8 +56,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10MobileCompliancePolicy"
 }-->
 ``` json
@@ -87,6 +87,11 @@
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

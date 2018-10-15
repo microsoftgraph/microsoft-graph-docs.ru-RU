@@ -1,8 +1,8 @@
-# <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>Тип ресурса mdmWindowsInformationProtectionPolicy
+Тип ресурса dmWindowsInformationProtectionPolicy
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Политика для Windows Information Protection с MDM
+Политика защиты информации для Windows с MDM  
 
 Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).
 
@@ -19,12 +19,12 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String (строка)|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|description|String (строка)|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|описание|String (строка)|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|id|String (строка)|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|version|String (строка)|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Принудительное применение уровня WIP. См. определение перечисления для поддерживаемых значений, унаследованных от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|ИД|String (строка)|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|версия|String (строка)|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Уровень применения WIP. Поддерживаемые значения см. в определении Enum. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String (строка)|Основной домен предприятия. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |enterpriseProtectedDomainNames|Коллекция [windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md)|Список доменов предприятия, подлежащих защите. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |protectionUnderLockConfigRequired|Boolean (логический)|Указывает, следует ли настроить функцию защиты с блокировкой (другое название — шифрование с ПИН-кодом). Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
@@ -50,21 +50,21 @@
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|protectedAppLockerFiles|Коллекция [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Еще один способ указания защищенных приложений с помощью xml-файлов. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
-|exemptAppLockerFiles|Коллекция [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Еще один способ указания исключенных приложений с помощью xml-файлов. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
-|assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Список групп безопасности, к которым применяется политика. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
+|protectedAppLockerFiles|Коллекция [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Еще один способ ввести данные о защищенных приложениях с помощью XML-файлов. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
+|exemptAppLockerFiles|Коллекция [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Еще один способ ввести данные об исключаемых приложениях с помощью XML-файлов. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
+|задания|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Список групп безопасности, к которым применяется политика. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.windowsInformationProtection",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
-}
--->
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
@@ -91,7 +91,7 @@
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -191,6 +191,30 @@
   "isAssigned": true
 }
 ```
+
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+
+"Warning: /api-reference/v1.0/resources/intune_mam_managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
+      Inconsistent types between parameter (String) and table (Object)",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: dmWindowsInformation...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Policy for Windows i...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Inherits from [windo...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_managedappprotection.md/microsoft.graph.managedAppProtection/allowedDataStorageLocations:
+      Inconsistent types between parameter (String) and table (Object)"
+
+  ],
+}
+-->
 
 
 

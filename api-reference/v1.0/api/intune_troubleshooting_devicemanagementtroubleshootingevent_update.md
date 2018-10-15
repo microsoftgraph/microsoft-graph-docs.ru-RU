@@ -1,7 +1,5 @@
 # <a name="update-devicemanagementtroubleshootingevent"></a>Обновление объекта deviceManagementTroubleshootingEvent
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
-
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Обновление свойств объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).
@@ -27,7 +25,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) в формате JSON.
@@ -36,9 +34,9 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|UUID объекта.|
+|ИД|Строка|UUID объекта.|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
-|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе.|
+|correlationId|Строка|Идентификатор, используемый для трассировки сбоя в службе.|
 
 
 
@@ -49,7 +47,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+PATCH https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json
 Content-length: 104
 
@@ -73,6 +71,7 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
+
 
 
 

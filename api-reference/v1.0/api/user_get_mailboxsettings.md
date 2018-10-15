@@ -18,15 +18,13 @@
 |Для приложений | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-Получение всех параметров почтового ящика пользователя:
-<!-- { "blockType": "ignored" } -->
+Получение всех параметров почтового ящика пользователя: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Получение определенных параметров, например только параметров автоматических ответов, языкового стандарта, часового пояса или рабочего времени:
-<!-- { "blockType": "ignored" } -->
+Получение определенных параметров, например только параметров автоматических ответов, языкового стандарта, часового пояса или рабочего времени: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -41,11 +39,11 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/ru-RU/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -70,7 +68,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Ответ 1
 Отклик включает все параметры почтового ящика. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -111,8 +109,8 @@ Content-type: application/json
             "thursday",
             "friday"
         ],
-        "startTime":"08:00:00.0000000",
-        "endTime":"17:00:00.0000000",
+        "startTime":"08:00:00.000",
+        "endTime":"17:00:00.000",
         "timeZone":{
             "name":"Pacific Standard Time"
         }
@@ -120,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Запрос 2
+##### <a name="request-2"></a>Запрос 2
 Во втором примере показано, как получить только параметры автоматических ответов почтового ящика пользователя, выполнившего вход в систему.
 <!-- {
   "blockType": "request",
@@ -142,7 +140,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
     "status": "alwaysEnabled",
     "externalAudience": "None",
     "scheduledStartDateTime": {

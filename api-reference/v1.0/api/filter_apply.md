@@ -27,7 +27,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|criteria|FilterCriteria|Применяемые условия.|
+|criteria|WorkbookFilterCriteria|Применяемые условия.|
 
 ## <a name="response"></a>Отклик
 
@@ -65,12 +65,11 @@ Content-length: 321
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

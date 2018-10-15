@@ -15,13 +15,13 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|string|Н/Д|
+|id|Строка|Н/Д|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пульса после того, как администратор включил параметр "Подключиться к партнеру по управлению устройствами".|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|Тип партнерского приложения. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
-|singleTenantAppId|String|Идентификатор одноклиентского приложения партнера|
-|displayName|String|Отображаемое имя партнера|
-|isConfigured|Boolean|Указывает, настроен ли партнер по управлению устройствами|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|Тип приложения партнера. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
+|singleTenantAppId|Строка|Идентификатор одноклиентского приложения партнера|
+|displayName|Строка|Отображаемое имя партнера|
+|isConfigured|Логическое|Указывает, настроен ли партнер по управлению устройствами|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|Дата и время в формате UTC, указывающие, когда будут удалены партнерские устройства.|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|Дата и время в формате UTC, указывающие, когда партнерские устройства будут отмечены как несоответствующие требованиям|
 
@@ -31,8 +31,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementPartner"
 }-->
 ``` json
@@ -49,6 +49,11 @@
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

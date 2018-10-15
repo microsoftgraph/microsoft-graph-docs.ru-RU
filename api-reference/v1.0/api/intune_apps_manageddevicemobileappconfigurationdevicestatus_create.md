@@ -3,7 +3,7 @@
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Создание нового объекта [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md).
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -25,7 +25,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта managedDeviceMobileAppConfigurationDeviceStatus в формате JSON.
@@ -34,12 +34,12 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Ключ объекта.|
+|ид|String (строка)|Ключ объекта.|
 |deviceDisplayName|String (строка)|Имя устройства в объекте DevicePolicyStatus.|
 |userName|String (строка)|Имя пользователя в отчете.|
 |deviceModel|String (строка)|Модель устройства в отчете.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|статус|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия требованиям отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|String (строка)|UserPrincipalName.|
 
@@ -87,6 +87,11 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 

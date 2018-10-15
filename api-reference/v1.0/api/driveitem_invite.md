@@ -2,16 +2,18 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Отправка приглашения на доступ к элементу"
-ms.openlocfilehash: 5be2060c190434c4b9d587d20fe68d69786b3aa5
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Отправка приглашения на доступ к элементу
+ms.openlocfilehash: c68289049503e70e04b2e403ca09cfc1f67e4096
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268734"
 ---
-# <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
+# <a name="send-a-sharing-invitation"></a>Отправка приглашения к общему доступу
 
-Отправляет приглашение к совместному использованию ресурса **DriveItem**. Приглашение к совместному использованию предоставляет получателям разрешения и при необходимости отправляет им на электронную почту уведомления, что к элементу был предоставлен общий доступ.
+Отправка приглашения к общему доступу для **DriveItem**.
+Приглашение к общему доступу предоставляет получателям разрешения и при необходимости отправляет сообщения электронной почты со [ссылкой общего доступа][].
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,7 +41,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored", "scopes": "files.readwrite" } -->
 
 ```json
 {
@@ -54,33 +56,33 @@ POST /users/{userId}/drive/items/{itemId}/invite
 }
 ```
 
-| Параметр        | Тип                                            | Описание                                                                                                |
-|:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | Коллекция получателей, которые будут получать доступ и приглашение к совместному использованию.                                            |
-| message          | String                                          | Сообщение с обычным форматированным текстом, включенное в приглашение на доступ. Максимальная длина составляет 2000 символов. |
-| requireSignIn    | Boolean                                         | Указывает, куда должен зайти получатель приглашения, чтобы просмотреть элемент, к которому предоставлен общий доступ.            |
-| sendInvitation   | Boolean                                         | Указывает, создано ли электронное письмо или запись (false) или разрешение (true).            |
-| roles            | Collection(String)                              | Указывает роли, которые необходимо предоставить получателям приглашения к совместному использованию.                         |
+| Параметр        | Тип                           | Описание
+|:-----------------|:-------------------------------|:-------------------------
+| recipients       | Collection([DriveRecipient][]) | Коллекция получателей, которые будут получать доступ и приглашение к совместному использованию.
+| message          | String                         | Сообщение с обычным форматированным текстом, включенное в приглашение на доступ. Максимальная длина составляет 2000 символов.
+| requireSignIn    | Boolean                        | Указывает, должен ли получатель приглашения войти в систему, чтобы просмотреть элемент, к которому предоставлен общий доступ.
+| sendInvitation   | Boolean                        | Если значение true, [ссылка общего доступа][] отправляется получателю. В противном случае разрешение предоставляется напрямую без отправки уведомления.
+| roles            | Collection(String)             | Указывает роли, которые необходимо предоставить получателям приглашения к общему доступу.
 
 ## <a name="example"></a>Пример
 
-В этот примере показано, как отправить приглашение к совместному использованию пользователю с электронным адресом ryan@contoso.org и добавить сообщение о файле, над которым ведется совместная работа.
-Приглашение предоставляет пользователю Ryan доступ для чтения и записи к файлу.
+В этом примере показано, как отправить приглашение к общему доступу пользователю с электронным адресом "ryan@contoso.org" и добавить сообщение о файле, над которым ведется совместная работа.
+Приглашение предоставляет пользователю Райану доступ к файлу на чтение и запись.
 
 ### <a name="http-request"></a>HTTP-запрос
 
-При успешном выполнении этот метод возвращает код ответа `200 OK` и объект коллекции [permission](../resources/permission.md) в теле ответа.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект коллекции [permission](../resources/permission.md) в теле отклика.
 
-<!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
-```http
+```json
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
 {
   "recipients": [
     {
-      "email": "ryan@contoso.org"
+      "email": "ryan@contoso.com"
     }
   ],
   "message": "Here's the file that we're collaborating on.",
@@ -96,7 +98,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -120,17 +122,19 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 * [Дискам](../resources/drive.md), у которых параметр **driveType** имеет значение `personal` (OneDrive персональный), не удастся создать или изменить разрешения в корневой папке ресурса DriveItem.
-* Список доступных ролей см. в таблице [Перечисление ролей](../resources/permission.md#roles-enumeration).
+* Список доступных ролей см. в разделе [Перечисление ролей](../resources/permission.md#roles-enumeration).
 
-## <a name="error-responses"></a>Ответы с ошибками
+## <a name="error-responses"></a>Отклики с ошибками
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики с ошибками][error-response].
 
 
+[DriveRecipient]: ../resources/driverecipient.md
 [error-response]: ../../../concepts/errors.md
+[ссылка общего доступа]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",

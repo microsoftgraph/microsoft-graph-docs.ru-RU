@@ -16,11 +16,11 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messagerules/{id}
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+GET /me/mailFolders/inbox/messageRules/{id}
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -37,15 +37,16 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "get_messagerule"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
+GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. По умолчанию свойства даты и времени в ответе возвращаются в формате UTC. 
 
-Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

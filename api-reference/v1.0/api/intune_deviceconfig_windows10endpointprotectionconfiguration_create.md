@@ -42,14 +42,14 @@ POST /deviceManagement/deviceConfigurations
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |firewallBlockStatefulFTP|Boolean (логический)|Блокирует FTP-подключения к устройству с отслеживанием состояния.|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Настраивает время ожидания для сопоставлений безопасности в секундах от 300 до 3600 включительно. По истечении этого срока сопоставления безопасности перестают действовать и удаляются. Допустимые значения: от 300 до 3600|
-|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype.md)|Выберите предварительную кодировку ключа. Возможные значения: `deviceDefault`, `none`, `utF8`.|
+|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype.md)|Выберите кодировку с общим ключом, которую следует использовать. Возможные значения: `deviceDefault`, `none`, `utF8`.|
 |firewallIPSecExemptionsAllowNeighborDiscovery|Boolean (логический)|Настраивает исключения IPSec для разрешения обнаружения соседей. Коды типов ICMP IPv6.|
 |firewallIPSecExemptionsAllowICMP|Boolean (логический)|Настраивает исключения IPSec для разрешения ICMP|
 |firewallIPSecExemptionsAllowRouterDiscovery|Boolean (логический)|Настраивает исключения IPSec для разрешения обнаружения маршрутизаторов. Коды типов ICMP IPv6.|
 |firewallIPSecExemptionsAllowDHCP|Boolean (логический)|Настраивает исключения IPSec для разрешения DHCP-трафика IPv4 и IPv6|
-|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype.md)|Укажите способ принудительного отзыва списка сертификатов. Возможные значения: `deviceDefault`, `none`, `attempt`, `require`.|
+|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype.md)|Укажите, как будет применяться список отзыва сертификатов. Возможные значения: `deviceDefault`, `none`, `attempt`, `require`.|
 |firewallMergeKeyingModuleSettings|Boolean (логический)|Если модуль ключей поддерживает не весь набор проверки подлинности, дайте ему указание игнорировать только неподдерживаемые пакеты, а не весь набор|
-|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune_deviceconfig_firewallpacketqueueingmethodtype.md)|Настраивает организацию очереди пакетов в сценарии туннельного шлюза. Возможные значения: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
+|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune_deviceconfig_firewallpacketqueueingmethodtype.md)|Настраивает, как будет применяться пакетная очередность в сценарии туннельного шлюза. Возможные значения: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Настраивает параметры профиля брандмауэра для доменных сетей|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Настраивает параметры профиля брандмауэра для общедоступных сетей|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Настраивает параметры профиля брандмауэра для частных сетей|
@@ -59,7 +59,7 @@ POST /deviceManagement/deviceConfigurations
 |defenderExploitProtectionXml|Binary|XML-файл с информацией о защите от эксплойтов.|
 |defenderExploitProtectionXmlFileName|String (строка)|Имя файла, из которого получено свойство DefenderExploitProtectionXml.|
 |defenderSecurityCenterBlockExploitProtectionOverride|Boolean (логический)|Указывает, следует ли запретить пользователю переопределять настройки защиты от эксплойтов.|
-|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune_deviceconfig_applockerapplicationcontroltype.md)|Позволяет администратору выбирать разрешенные типы приложений для устройств. Возможные значения: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
+|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune_deviceconfig_applockerapplicationcontroltype.md)|Позволяет администратору выбрать, какие типы приложений разрешены на устройствах. Возможные значения: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
 |smartScreenEnableInShell|Boolean (логический)|Позволяет ИТ-администраторам настраивать SmartScreen для Windows.|
 |smartScreenBlockOverrideForFiles|Boolean (логический)|Позволяет ИТ-администраторам указывать, могут ли пользователи игнорировать предупреждения SmartScreen и запускать вредоносные файлы.|
 |applicationGuardEnabled|Boolean (логический)|Включение Application Guard в Защитнике Windows|
@@ -67,7 +67,7 @@ POST /deviceManagement/deviceConfigurations
 |applicationGuardBlockNonEnterpriseContent|Boolean (логический)|Указывает, следует ли блокировать загрузку некорпоративного контента, например сторонних подключаемых модулей, на корпоративных сайтах.|
 |applicationGuardAllowPersistence|Boolean (логический)|Позволяет разрешить сохранение пользовательских данных в контейнере App Guard (избранное, файлы cookie, веб-пароли и т. д.).|
 |applicationGuardForceAuditing|Boolean (логический)|Эта политика позволяет сохранять журналы и события Windows (попытки входа и выхода, использование привилегий, установка программного обеспечения, системные изменения и т. д.) для обеспечения безопасности и соответствия требованиям.|
-|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune_deviceconfig_applicationguardblockclipboardsharingtype.md)|Позволяет заблокировать передачу данных с узла в контейнер или с контейнера в узел через буфер обмена. Возможные значения: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
+|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune_deviceconfig_applicationguardblockclipboardsharingtype.md)|Позволяет заблокировать обмен данными от основного приложения к контейнеру или в обратном направлении через буфер обмена. Возможные значения: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
 |applicationGuardAllowPrintToPDF|Boolean (логический)|Позволяет разрешить печать в PDF из контейнера.|
 |applicationGuardAllowPrintToXPS|Boolean (логический)|Позволяет разрешить печать в XPS из контейнера.|
 |applicationGuardAllowPrintToLocalPrinters|Boolean (логический)|Позволяет разрешить печать на локальных принтерах из контейнера.|
@@ -294,6 +294,11 @@ Content-Length: 4417
   }
 }
 ```
+
+
+
+
+
 
 
 

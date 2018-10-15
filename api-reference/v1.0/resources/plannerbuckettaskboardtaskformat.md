@@ -1,43 +1,32 @@
-<a id="plannerbuckettaskboardtaskformat-resource-type" class="xliff"></a>
-
-# Тип ресурса plannerBucketTaskBoardTaskFormat
+# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Тип ресурса plannerBucketTaskBoardTaskFormat
 
 Ресурс **plannerBucketTaskBoardTaskFormat** представляет информацию, используемую для правильного отображения задачи в представлении Buckets на доске задач (представление, предусматривающее упорядочивание по задачам в сегментах, которым назначены). С каждым объектом [task](plannertask.md) связан один объект **plannerBucketTaskBoardTaskFormat**.
 
 
-<a id="methods" class="xliff"></a>
-
-## Методы
+## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Считывание свойств и связей объекта **plannerBucketTaskBoardTaskFormat**.|
 |[Обновление](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Обновление объекта **plannerBucketTaskBoardTaskFormat**. |
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner_identifiers_disclaimer.md) проводится для службы.|
-|orderHint|String|Указание, используемое для расположения задач в представлении сегментов на доске задач. Используемый формат описан [здесь](planner_order_hint_format.md).|
+|id|Строка| Только для чтения. Идентификатор ресурса. Длина — 28 знаков с учетом регистра. [Проверка формата](planner_identifiers_disclaimer.md) выполняется на службе.|
+|orderHint|Строка|Указание, используемое для расположения задач в представлении сегментов на доске задач. Используемый формат описан [здесь](planner_order_hint_format.md).|
 
-<a id="relationships" class="xliff"></a>
-
-## Связи
+## <a name="relationships"></a>Связи
 Нет
 
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerBucketTaskBoardTaskFormat"
 }-->
 

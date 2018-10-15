@@ -25,7 +25,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта mobileThreatDefenseConnector в формате JSON.
@@ -34,9 +34,9 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|string|Н/Д|
+|ИД|string|Н/Д|
 |lastHeartbeatDateTime|DateTimeOffset|Дата и время последнего подтверждения соединения, полученные от партнера по синхронизации данных|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|Состояние синхронизации данных партнера для этой учетной записи. Возможные значения: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|Состояние партнера по синхронизации данных для этой учетной записи. Возможные значения: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|Логическое|Для ОС Android следует указать, необходимо ли использовать данные партнера по синхронизации данных в ходе оценки соответствия требованиям|
 |iosEnabled|Логическое|Для ОС IOS следует указать, использовать ли данные партнера по синхронизации данных в ходе оценок соответствия требованиям|
 |androidDeviceBlockedOnMissingPartnerData|Логическое|Для ОС Android следует указать, получать ли Intune данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
@@ -90,6 +90,11 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
+
+
+
+
+
 
 
 

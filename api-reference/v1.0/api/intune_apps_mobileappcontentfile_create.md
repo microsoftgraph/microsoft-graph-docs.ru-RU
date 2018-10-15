@@ -25,7 +25,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Accept|приложение/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта mobileAppContentFile в формате JSON.
@@ -35,15 +35,15 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |azureStorageUri|Строка|URI службы хранилища Azure.|
-|isCommitted|Boolean|Значение, указывающее, является ли файл подтвержденным.|
+|isCommitted|Логическое|Значение, указывающее, является ли файл подтвержденным.|
 |id|Строка|Идентификатор файла.|
 |createdDateTime|DateTimeOffset|Время создания файла.|
 |name|Строка|Имя файла.|
 |size|Int64|Размер файла до шифрования.|
 |sizeEncrypted|Int64|Размер файла после шифрования.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Время, когда заканчивается срок действия URI для службы хранилища Azure.|
-|manifest|Binary|Данные манифеста.|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|manifest|Бинарное|Данные манифеста.|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|Состояние текущего запроса загрузки. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
 
 
 
@@ -92,6 +92,11 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
+
+
+
+
 
 
 

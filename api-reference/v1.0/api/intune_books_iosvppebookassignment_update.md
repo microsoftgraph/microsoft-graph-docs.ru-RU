@@ -34,13 +34,13 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
 |целевой объект|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Цель установки электронной книги. Унаследовано от [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Намерение установки для электронной книги. Наследуется от [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -75,6 +75,11 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

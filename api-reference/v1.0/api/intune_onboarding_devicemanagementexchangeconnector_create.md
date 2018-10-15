@@ -38,9 +38,9 @@ POST /deviceManagement/exchangeConnectors
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String (строка)|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
-|serverName|String (строка)|Имя сервера Exchange.|
-|connectorServerName|String (строка)|Имя сервера, на котором размещается соединитель Exchange.|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|serverName|String|Имя сервера Exchange.|
+|connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Тип настройки соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|String (строка)|Версия объекта ExchangeConnectorAgent|
 |exchangeAlias|String (строка)|Псевдоним, назначенный серверу Exchange Server|
 |exchangeOrganization|String (строка)|Организация Exchange, соответствующая серверу Exchange Server|
@@ -93,6 +93,11 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
+
+
+
+
 
 
 

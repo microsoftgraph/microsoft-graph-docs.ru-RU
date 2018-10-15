@@ -28,12 +28,12 @@ POST /workbook/worksheets/{id|name}/charts/add
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |type|string|Представляет тип диаграммы.  Возможные значения: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
-|sourceData|string|Объект Range, соответствующий исходным данным.|
-|seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Возможные значения: `Auto`, `Columns`, `Rows`.|
+|sourceData|Json|Объект Range, соответствующий исходным данным.|
+|seriesBy|string|Необязательный параметр. Указывает способ, с помощью которого столбцы или строки используются в качестве рядов данных на диаграмме.  Возможные значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [Chart](../resources/chart.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [WorkbookChart](../resources/chart.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -55,12 +55,12 @@ Content-length: 94
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

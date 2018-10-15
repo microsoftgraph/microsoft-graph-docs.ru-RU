@@ -19,12 +19,12 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String (строка)|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|description|String (строка)|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|описание|String (строка)|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|id|String (строка)|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|version|String (строка)|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Принудительное применение уровня WIP. См. определение перечисления для поддерживаемых значений, унаследованных от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|ид|String (строка)|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|версия|String (строка)|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Уровень применения WIP. Поддерживаемые значения см. в определении Enum. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String (строка)|Основной домен предприятия. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |enterpriseProtectedDomainNames|Коллекция [windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md)|Список доменов предприятия, подлежащих защите. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |protectionUnderLockConfigRequired|Boolean (логический)|Указывает, следует ли настроить функцию защиты с блокировкой (другое название — шифрование с ПИН-кодом). Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
@@ -50,9 +50,9 @@
 |mdmEnrollmentUrl|String (строка)|URL-адрес регистрации в системе MDM.|
 |windowsHelloForBusinessBlocked|Boolean (логический)|Логическое значение, которое определяет Windows Hello для бизнеса как способ входа в Windows.|
 |pinMinimumLength|Int32|Целое число, которое определяет минимальное количество символов в ПИН-коде. Значение по умолчанию — 4. Для этого параметра политики можно установить значение в диапазоне от 4 до 127 (или числа, заданного в параметре политики "Максимальная длина ПИН-кода", если оно меньше).|
-|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Целое число, которое настраивает использование прописных букв в ПИН-коде Windows Hello для бизнеса. Значение по умолчанию — NotAllow. Возможные значения: `notAllow`, `requireAtLeastOne`, `allow`.|
-|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Целое число, которое настраивает использование строчных букв в ПИН-коде Windows Hello для бизнеса. Значение по умолчанию — NotAllow. Возможные значения: `notAllow`, `requireAtLeastOne`, `allow`.|
-|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Целое число, которое настраивает использование специальных знаков в ПИН-коде Windows Hello для бизнеса. Действительные специальные знаки для ПИН-жестов Windows Hello для бизнеса: " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~. Значение по умолчанию — NotAllow. Возможные значения: `notAllow`, `requireAtLeastOne`, `allow`.|
+|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Целочисленное значение, которое настраивает использование прописных букв в PIN-коде Windows Hello for Business. По умолчанию используется NotAllow. Возможные значения:: `notAllow`, `requireAtLeastOne`, `allow`.|
+|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Целочисленное значение, которое настраивает использование строчных букв в PIN-коде Windows Hello for Business. По умолчанию используется NotAllow. Возможные значения: `notAllow`, `requireAtLeastOne`, `allow`.|
+|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Целое число, которое настраивает использование специальных знаков в ПИН-коде Windows Hello для бизнеса. Действительные специальные знаки для ПИН-жестов Windows Hello для бизнеса: " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~. По умолчанию NotAllow. Возможные значения: `notAllow`, `requireAtLeastOne`, `allow`.|
 |pinExpirationDays|Int32|Целое число указывает срок действия ПИН-кода (в днях), по истечении которого система требует его изменения. Для этого параметра политики можно установить значение в диапазоне от 730 до 0. Если для этой политики установлено значение 0, срок действия ПИН-кода пользователя никогда не истекает. Этот узел добавлен в Windows 10 версии 1511. Значение по умолчанию — 0.|
 |numberOfPastPinsRemembered|Int32|Целое число, указывающее количество предыдущих ПИН-кодов, связанных с учетной записью пользователя, повторное использование которых необходимо запретить. Для этого параметра политики можно установить значение в диапазоне от 50 до 0. Если для этой политики установлено значение 0, хранение предыдущих ПИН-кодов не требуется. Этот узел добавлен в Windows 10 версии 1511. Значение по умолчанию — 0.|
 |passwordMaximumAttemptCount|Int32|Количество неудачных попыток аутентификации до очистки устройства. Значение 0 отключает функцию очистки устройства. Значение — целое число, которое лежит в диапазоне X, где 4 <= X <= 16 для компьютеров и 0 <= X <= 999 для мобильных устройств.|
@@ -64,14 +64,14 @@
 |:---|:---|:---|
 |protectedAppLockerFiles|Коллекция [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Еще один способ указания защищенных приложений с помощью xml-файлов. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |exemptAppLockerFiles|Коллекция [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Еще один способ указания исключенных приложений с помощью xml-файлов. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
-|assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Список групп безопасности, к которым применяется политика. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
+|задания|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Список групп безопасности, к которым применяется политика. Наследуется от [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.windowsInformationProtection",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionPolicy"
 }-->
 ``` json
@@ -103,7 +103,7 @@
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -215,6 +215,11 @@
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
+
+
+
+
+
 
 
 

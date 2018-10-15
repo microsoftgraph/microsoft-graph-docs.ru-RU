@@ -7,7 +7,7 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |appConfigKey|Строка|Ключ конфигурации приложения.|
-|appConfigKeyType|mdmAppConfigKeyType|Тип ключа конфигурации приложения. Возможные значения: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
+|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|Тип ключа конфигурации приложения. Возможные значения: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|Строка|Значение ключа конфигурации приложения.|
 
 ## <a name="relationships"></a>Связи
@@ -26,6 +26,11 @@
   "appConfigKeyValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

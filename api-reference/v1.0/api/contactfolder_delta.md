@@ -18,12 +18,12 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/delta
-GET /users/<id>/contactFolders/delta
+GET /users/{id}/contactFolders/delta
 ```
 
 ### <a name="query-parameters"></a>Параметры запроса
 
-Отслеживание изменений в папках контактов представляет собой цикл из одного или нескольких вызовов функции **delta**. Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в токене (`skiptoken` или `$deltatoken`), входящем в состав URL-адреса `nextLink` или `deltaLink`, который включен в отклик. Параметры запроса нужно указать только один раз в первом запросе. Копируйте URL-адрес `nextLink` или `deltaLink` из предыдущего отклика и применяйте его в последующих запросах, так как он уже содержит необходимые закодированные параметры.
+Отслеживание изменений в папках контактов представляет собой цикл из одного или нескольких вызовов функции **delta**. Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в токене (`skiptoken` или `$deltatoken`), входящем в состав URL-адреса `nextLink` или `deltaLink`, который включен в отклик. Параметры запроса нужно указать только один раз в первом запросе. Копируйте URL-адрес `nextLink` или `deltaLink` из предыдущего отклика и применяйте его в последующих запросах, так как он уже содержит необходимые закодированные параметры.
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -37,9 +37,9 @@ GET /users/<id>/contactFolders/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | string  | application/json. Обязательный. |
-| Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type  | строка  | application/json. Обязательный. |
+| Prefer | строка  | odata.maxpagesize={x}. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
 
@@ -59,13 +59,12 @@ GET /users/<id>/contactFolders/delta
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
-
 Prefer: odata.maxpagesize=2
 ```
 
 ##### <a name="response"></a>Отклик
 
-В случае успешного выполнения запроса отклик будет содержать маркер состояния — _skipToken_  
+В случае успешного выполнения запроса отклик будет содержать маркер состояния — _skipToken_  
 или _deltaToken_. Первый включен в заголовок отклика _@odata.nextLink_, второй — в заголовок отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.
@@ -88,7 +87,6 @@ Content-length: 254
     {
      "parentFolderId": "parentFolderId-value",
       "displayName": "displayName-value",
-      "wellKnownName": "wellKnownName-value",
       "id": "id-value"
     }
   ]

@@ -13,8 +13,8 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows/ItemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
+POST /workbook/tables/{id|name}/rows/itemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -28,37 +28,39 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|number|Значение индекса получаемого объекта. Используется нулевой индекс.|
+|index|Int32|Значение индекса получаемого объекта. Используется нулевой индекс.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [TableRow](../resources/tablerow.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [WorkbookTableRow](../resources/tablerow.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "tablerowcollection_itemat"
+  "isComposable": true,
+  "name": "tablerowcollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.tablerowcollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt
 Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 4
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK

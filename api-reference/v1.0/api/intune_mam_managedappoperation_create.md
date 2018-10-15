@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта managedAppOperation в формате JSON.
@@ -34,11 +34,11 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя операции.|
+|displayName|String (строка)|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
-|state|String|Текущее состояние операции|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|состояние|String (строка)|Текущее состояние операции|
+|ид|Строка|Ключ объекта.|
+|версия|Строка|Версия объекта.|
 
 
 
@@ -63,7 +63,7 @@ Content-length: 223
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -78,6 +78,11 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

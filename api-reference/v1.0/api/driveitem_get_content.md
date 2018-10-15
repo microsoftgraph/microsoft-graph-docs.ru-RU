@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Скачивание файла
-ms.openlocfilehash: b5456acc6661fdc7a9682bf2b0ff70a2e5e38a3e
-ms.sourcegitcommit: 9f5a17e9978197ab47b460c53f7fe2cec180d4a2
+ms.openlocfilehash: efed0b12484c3656e5b2b4b9cbe8fb84cdc27006
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "19492735"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268090"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Скачивание содержимого элемента DriveItem
 
@@ -41,7 +41,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 | Имя          | Значение  | Описание                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
+| if-none-match | String (строка) | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
 
 ## <a name="example"></a>Пример
 
@@ -58,7 +58,8 @@ GET /me/drive/items/{item-id}/content
 
 Возвращает отклик `302 Found`, перенаправляя к URL-адресу загрузки файла, прошедшему предварительную проверку подлинности. Это такой же URL-адрес, доступный с помощью свойства `@microsoft.graph.downloadUrl` в ресурсе DriveItem.
 
-Чтобы загрузить содержимое файла, приложению необходимо будет следовать заголовку `Location` в отклике. Многие библиотеки клиентов HTTP будут автоматически следовать перенаправлению 302 и немедленно начинать загрузку файла.
+Чтобы загрузить содержимое файла, приложению необходимо будет следовать заголовку `Location` в отклике.
+Многие библиотеки клиентов HTTP будут автоматически следовать перенаправлению 302 и немедленно начинать загрузку файла.
 
 URL-адреса загрузки, прошедшие предварительную проверку подлинности, действительны только на протяжении короткого периода времени (несколько минут) и не требуют заголовка `Authorization` для загрузки.
 
@@ -73,7 +74,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 Чтобы загрузить из файла часть заданного диапазона байтов, приложение может использовать заголовок `Range`, как указано в документе [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Обратите внимание, что заголовок `Range` необходимо добавлять в фактический URL-адрес `@microsoft.graph.downloadUrl`, а не в запрос для `/content`.
 
-<!-- { "blockType": "request", "name": "download-item-partial", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
 
 ```http
 GET https://b0mpua-by3301.files.1drv.com/y23vmag
@@ -87,6 +88,7 @@ Range: bytes=0-1023
 ```http
 HTTP/1.1 206 Partial Content
 Content-Range: bytes 0-1023/2048
+Content-Type: application/octet-stream
 
 <first 1024 bytes of file>
 ```

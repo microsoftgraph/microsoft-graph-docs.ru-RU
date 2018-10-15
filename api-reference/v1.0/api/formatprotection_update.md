@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/protection
+PATCH /workbook/names/{name}/range/format/protection
 PATCH /workbook/worksheets/{id|name}/range(<address>)/format/protection
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
@@ -28,8 +28,8 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.|
-|locked|boolean|Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.|
+|formulaHidden|boolean (логический)|Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.|
+|locked|boolean (логический)|Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.|
 
 ## <a name="response"></a>Отклик
 
@@ -42,7 +42,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
   "name": "update_formatprotection"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/protection
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 Content-type: application/json
 Content-length: 45
 
@@ -52,11 +52,11 @@ Content-length: 45
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 } -->
 ```http
 HTTP/1.1 200 OK

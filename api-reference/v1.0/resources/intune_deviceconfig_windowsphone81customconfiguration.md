@@ -12,7 +12,7 @@
 |[Перечисление windowsPhone81CustomConfigurations](../api/intune_deviceconfig_windowsphone81customconfiguration_list.md)|Коллекция [windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md)|Перечисление свойств и связей объектов [windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md).|
 |[Получение windowsPhone81CustomConfiguration](../api/intune_deviceconfig_windowsphone81customconfiguration_get.md)|[windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md)|Считывание свойств и связей объекта [windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md).|
 |[Создание windowsPhone81CustomConfiguration](../api/intune_deviceconfig_windowsphone81customconfiguration_create.md)|[windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md)|Создание нового объекта [windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md).|
-|[Удаление windowsPhone81CustomConfiguration](../api/intune_deviceconfig_windowsphone81customconfiguration_delete.md)|None|Удаление экземпляра [windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md).|
+|[Удаление windowsPhone81CustomConfiguration](../api/intune_deviceconfig_windowsphone81customconfiguration_delete.md)|Нет|Удаление экземпляра [windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md).|
 |[Обновление windowsPhone81CustomConfiguration](../api/intune_deviceconfig_windowsphone81customconfiguration_update.md)|[windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md)|Обновление свойств объекта [windowsPhone81CustomConfiguration](../resources/intune_deviceconfig_windowsphone81customconfiguration.md).|
 
 ## <a name="properties"></a>Свойства
@@ -21,8 +21,8 @@
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|description|Строка​|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|Строка​|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |omaSettings|Коллекция [omaSetting](../resources/intune_deviceconfig_omasetting.md)|Параметры OMA. Эта коллекция может содержать не более 1000 элементов.|
 
@@ -40,8 +40,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsPhone81CustomConfiguration"
 }-->
 ``` json
@@ -64,6 +64,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 

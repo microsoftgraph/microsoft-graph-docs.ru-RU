@@ -18,7 +18,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.windowsInformationProtectionApp"
 }-->
 ``` json
@@ -31,6 +30,11 @@
   "denied": true
 }
 ```
+
+
+
+
+
 
 
 

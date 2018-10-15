@@ -2,16 +2,17 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Отмена доступа к элементу"
-ms.openlocfilehash: cf573b49edc326ca221545657b29b1f2e86ba417
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Отмена доступа к элементу
+ms.openlocfilehash: 011345afb9789b0ff2927704a1e678f39656a719
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268622"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Удаление разрешения на общий доступ для файла или папки
 
-Отмена доступа к ресурсу [DriveItem](../resources/driveitem.md).
+В этой статье рассказывается, как отменить доступ к ресурсу [DriveItem](../resources/driveitem.md).
 
 Вы можете удалить только те разрешения на общий доступ, которые **не** были унаследованы.
 Свойство **inheritedFrom** должно иметь значение `null`.
@@ -42,7 +43,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Имя          | Тип   | Описание                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется. |
+| if-match      | string (строка) | Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется. |
 
 ## <a name="response"></a>Ответ
 
@@ -50,12 +51,12 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="example"></a>Пример
 
-В этом примере показано, как удалить разрешение, идентифицированное как {perm-id}, из элемента {item-id} в хранилище OneDrive текущего пользователя.
+В этом примере показано, как удалить разрешение, идентифицированное как {perm-id} из элемента {item-id} в хранилище OneDrive текущего пользователя.
 
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
-DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 ### <a name="response"></a>Ответ
@@ -66,7 +67,7 @@ DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 * [Диски](../resources/drive.md), у которых для свойства **driveType** задано значение `personal` (личное хранилище OneDrive), не могут создавать и изменять разрешения в корневом ресурсе DriveItem. 
 

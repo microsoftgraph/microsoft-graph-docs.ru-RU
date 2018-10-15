@@ -15,7 +15,7 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|ИД|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
 |url|Строка|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
@@ -25,8 +25,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionNetworkLearningSummary"
 }-->
 ``` json
@@ -37,6 +37,11 @@
   "deviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

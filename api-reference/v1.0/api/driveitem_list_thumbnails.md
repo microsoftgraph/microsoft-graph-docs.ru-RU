@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Получение эскизов файла или папки"
-ms.openlocfilehash: 864765898955d0a690ab85dc0be9761a7a9d1856
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Получение эскизов файла или папки
+ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266837"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
@@ -49,7 +50,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметр запросов OData](../../../concepts/query_parameters.md) `$select` для настройки ответа.
+Этот метод поддерживает [параметр запросов OData](../../../concepts/query_parameters.md) `$select` для настройки отклика.
 
 ## <a name="response"></a>Ответ
 
@@ -59,7 +60,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Ниже представлен пример запроса на получение доступных эскизов элемента в хранилище OneDrive текущего пользователя.
 
-<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails
@@ -97,7 +98,7 @@ Content-type: application/json
 
 ### <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
@@ -130,7 +131,7 @@ Content-Type: application/json
 
 ### <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
@@ -157,7 +158,7 @@ URL-адреса эскизов не кэшируются. Если в резу�
 
 ### <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
@@ -203,7 +204,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="size-values"></a>Значения размера
+## <a name="size-options"></a>Возможные размеры
 
 В этой таблице определены возможные размеры эскизов. Хотя вы можете указать в запросе произвольный размер эскиза, определенные значения встречаются намного чаще и позволяют быстрее получить результат.
 
@@ -218,10 +219,10 @@ Content-type: application/json
 
 ## <a name="requesting-custom-thumbnail-sizes"></a>Запрос эскизов настраиваемых размеров
 
-Помимо определенных размеров, приложение может запрашивать эскизы пользовательских размеров, указав ширину и высоту с префиксом `c`.
+Помимо определенных размеров, приложение может запрашивать эскизы настраиваемых размеров, указав ширину и высоту с префиксом `c`.
 Например, если вашему приложению нужны эскизы размером 300x400, оно может запросить размер следующим образом:
 
-<!-- { "name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
@@ -257,7 +258,7 @@ Content-Type: application/json
 **Примечание.** Размер возвращаемого эскиза в пикселях может не полностью совпадать с запрашиваемым, но его пропорции будут соответствовать запросу.
 В некоторых случаях возвращаются эскизы большего размера, если эскиз уже существует и легко масштабируется до запрашиваемого разрешения.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 **Примечание.** В OneDrive для бизнеса и SharePoint:
 
@@ -279,5 +280,17 @@ Content-Type: application/json
   "description": "Get metadata and content for thumbnails of multiple sizes for OneDrive items.",
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/driveitem_list_thumbnails.md:
+      Unable to map some markdown elements into schema.
+         Unmapped methods:
+      enum-item-thumbnails, get-one-thumbnail, get-thumbnail-content, get-thumbnail-while-listing, get-thumbnail-custom-size
+         Unmapped tables:
+      Permissions - AuthScopes, Path parameters - PathParameters, Size options - Unknown, Examples of custom identifiers - Unknown",
+    "Warning: Couldn't serialize request for path /me/drive/items/{var}/thumbnails/{var}/{var}/content into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property '{var}' on 'thumbnailSet'. Possible issues:
+         1) Doc bug where '{var}' isn't defined on the resource.         2) Doc bug where '{var}' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'thumbnailSet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 1145
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 821"
+  ],
   "tocPath": "Items/Thumbnails"
 } -->

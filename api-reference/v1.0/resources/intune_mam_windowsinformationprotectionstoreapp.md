@@ -10,10 +10,10 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строковый|Отображаемое имя приложения. Наследуется от [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
-|description|Строковый|Описание приложения. Наследуется от [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|описание|Строковый|Описание приложения. Наследуется от [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
 |publisherName|Строковый|Имя издателя. Наследуется от [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
 |productName|Строковый|Название продукта. Наследуется от [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
-|denied|Логический|Если задано значение true, то приложению отказано в защите или исключении. Наследуется от [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
+|отказано|Логический|Если задано значение true, то приложению отказано в защите или исключении. Наследуется от [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md)|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -21,7 +21,6 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsInformationProtectionApp",
   "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp"
 }-->
 ``` json
@@ -34,6 +33,11 @@
   "denied": true
 }
 ```
+
+
+
+
+
 
 
 

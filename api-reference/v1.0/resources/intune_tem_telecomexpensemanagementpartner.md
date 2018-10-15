@@ -19,7 +19,7 @@
 |displayName|Строка|Отображаемое имя партнера TEM.|
 |url|Строка|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
 |appAuthorized|Логический|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
-|enabled|Логический|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
+|enabled|Логическое|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного службе Intune партнером TEM.|
 
 ## <a name="relationships"></a>Связи
@@ -28,8 +28,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.telecomExpenseManagementPartner"
 }-->
 ``` json
@@ -43,6 +43,11 @@
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

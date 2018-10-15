@@ -27,13 +27,12 @@ PATCH /education/classes/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|description|String| Описание курса.|
-|displayName|String| Название курса.|
-|mailNickname|String| Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно. |
-<!-- Please verify the revised description here. -->
-Свойство classCode типа String представляет собой код курса, используемый учебным заведением. Свойство externalId типа String представляет собой идентификатор курса из системы синхронизации. Свойство externalName типа String представляет собой название курса в системе синхронизации. Свойство externalSource типа String представляет собой способ создания курса. Возможные значения: `sis`, `manual`, `enum_sentinel`.
+|description|String (строка)| Описание курса.|
+|displayName|String (строка)| Название курса.|
+|mailNickname|String (строка)| Почтовый псевдоним для отправки электронных сообщений всем пользователям, если такая функция включена. |
+<!-- Please verify the revised description here. --> |classCode|String (строка)| Код курса, используемый учебным заведением.| |externalId|String (строка)| Идентификатор курса из системы синхронизации. | |externalName|String (строка)|Название курса в системе синхронизации.| |externalSource|string (строка)|Способ создания курса. Возможные значения: `sis`, `manual`, `enum_sentinel`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationClass](../resources/educationclass.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -43,7 +42,7 @@ PATCH /education/classes/{id}
   "name": "update_educationclass"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/classes/11014
+PATCH https://graph.microsoft.com/v1.0/education/classes/{class-id}
 Content-type: application/json
 Content-length: 224
 
@@ -52,7 +51,7 @@ Content-length: 224
   "displayName": "World History Level 1",
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

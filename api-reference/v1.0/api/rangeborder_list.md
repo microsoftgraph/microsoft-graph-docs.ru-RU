@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/format/borders
+GET /workbook/names/{name}/range/format/borders
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ```
@@ -31,7 +31,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [RangeBorder](../resources/rangeborder.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика  и коллекцию объектов WorkbookRangeBorder в тексте отклика.`200 OK` [ ](../resources/rangeborder.md)
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -40,14 +40,14 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
   "name": "get_rangebordercollection"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder",
+  "@odata.type": "microsoft.graph.workbookRangeBorder",
   "isCollection": true
 } -->
 ```http

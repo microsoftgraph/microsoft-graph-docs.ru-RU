@@ -13,9 +13,9 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -28,11 +28,11 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlin
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|string|HTML-код цвета, представляющий цвет линий в диаграмме.|
+|color|строка|HTML-код цвета, представляющий цвет линий в диаграмме.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartLineFormat](../resources/chartlineformat.md) в тексте отклика.
+В случае успеха этот метод возвратит код отклика `200 OK` и обновленный объект [WorkbookChartLineFormat](../resources/chartlineformat.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -41,7 +41,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlin
   "name": "update_chartlineformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
 Content-type: application/json
 Content-length: 28
 
@@ -49,12 +49,12 @@ Content-length: 28
   "color": "color-value"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 } -->
 ```http
 HTTP/1.1 200 OK

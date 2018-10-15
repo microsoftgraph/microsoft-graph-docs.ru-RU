@@ -22,15 +22,15 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json  |
+| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Тип содеримого  | строка | приложение/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|String|Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
+|groupIds|Коллекция строк|Коллекция, содержащая идентификатор объектов групп, в которых нужно проверить членство. Можно указать до 20 групп.|
 
 ## <a name="response"></a>Отклик
 
@@ -45,13 +45,13 @@ POST /directoryObjects/{id}/checkMemberGroups
   "name": "directoryobject_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/v1.0/directoryObjects/{id}/checkMemberGroups
 Content-type: application/json
 
 {
   "groupIds": [
-        "fee2c45b-915a-4a64-b130-f4eb9e75525e",
-        "4fe90ae7-065a-478b-9400-e0a0e1cbd540"
+        "fee2c45b-915a-4a64b130f4eb9e75525e",
+        "4fe90ae065a-478b9400e0a0e1cbd540"
   ]
 }
 ```

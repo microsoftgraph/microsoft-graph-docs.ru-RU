@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: sharedDriveItem
-ms.openlocfilehash: 3b4497c1a15704388dbb4bb4ba181d3985d65a69
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: abcf686be46e15a523a1a88170981cb318e71b00
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268202"
 ---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса sharedDriveItem
 
@@ -21,6 +22,7 @@ ms.lasthandoff: 09/28/2017
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
@@ -31,7 +33,7 @@ ms.lasthandoff: 09/28/2017
   "name": "string",
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "list": { "@odata.type": "microsoft.graph.list" },
   "listItem": { "@odata.type": "microsoft.graph.listItem" },
@@ -57,13 +59,12 @@ ms.lasthandoff: 09/28/2017
 | **listItem**      | [**listItem**][listItem]    | Используется для доступа к базовому объекту **listItem**
 | **site**          | [**site**][site]        | Используется для доступа к базовому объекту **site**
 
-
 Кроме того, для объектов **driveItem**, к которым предоставлен доступ в личных учетных записях OneDrive, можно использовать указанные ниже связи.
 
 | Имя связи | Тип                         | Описание
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | Коллекция объектов [**driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Вам не удастся выполнить перечисление этой коллекции.
-| **driveItem**     | [**driveItem**][driveItem]            | Используется для доступа к базовому объекту **driveItem**
+| **items**         | Коллекция объектов [**driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Перечисление этой коллекции не поддерживается.
+| **корень**          | [**driveItem**][driveItem]   | Используется для доступа к базовому объекту **driveItem**. Устаревший объект, используйте `driveItem` вместо этого.
 
 [driveItem]: driveItem.md
 [list]: list.md

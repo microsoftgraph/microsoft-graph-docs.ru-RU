@@ -24,8 +24,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [termsAndConditionsAssignment](../resources/intune_companyterms_termsandconditionsassignment.md) в формате JSON.
@@ -34,8 +34,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|string|Уникальный идентификатор объекта.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
+|ид|string|Уникальный идентификатор объекта.|
+|цель|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 
 
@@ -72,6 +72,11 @@ Content-Length: 217
   }
 }
 ```
+
+
+
+
+
 
 
 

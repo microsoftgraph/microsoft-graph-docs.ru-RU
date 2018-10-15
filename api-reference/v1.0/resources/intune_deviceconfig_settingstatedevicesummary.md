@@ -32,8 +32,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingStateDeviceSummary"
 }-->
 ``` json
@@ -51,6 +51,11 @@
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

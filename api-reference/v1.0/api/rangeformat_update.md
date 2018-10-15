@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format
+PATCH /workbook/names/{name}/range/format
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
@@ -29,19 +29,19 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columnWidth|double|Возвращает или задает ширину всех столбцов в пределах диапазона. Если столбцы разной ширины, будет возвращено значение NULL.|
-|horizontalAlignment|string|Представляет горизонтальное выравнивание для указанного объекта. Возможные значения: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
+|horizontalAlignment|string (строка)|Представляет горизонтальное выравнивание для указанного объекта. Возможные значения: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
 |rowHeight|double|Возвращает или задает высоту всех строк в диапазоне. Если строки разной высоты, будет возвращено значение NULL.|
-|verticalAlignment|string|Представляет вертикальное выравнивание для указанного объекта. Возможные значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
-|wrapText|boolean|Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.|
+|verticalAlignment|string (строка)|Представляет вертикальное выравнивание для указанного объекта. Возможные значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
+|wrapText|boolean (логический)|Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [RangeFormat](../resources/rangeformat.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [WorkbookRangeFormat](../resources/rangeformat.md) в тексте отклика.
 ## <a name="example"></a>Пример
 
-### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>Обновляет свойства Format, Fill и Font в трех ячейках таблицы
+### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>Обновление свойств формата (Format), заливки (Fill) и шрифта (Font) в трех ячейках таблицы
 
-В приведенных ниже примерах показано, как обновить свойства [RangeFormat](../resources/rangeformat.md), [RangeFill](../resources/rangefill.md) и [RangeFont](../resources/rangefont.md) указанного диапазона.
+Следующие примеры демонстрируют обновление свойств [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md) и [WorkbookRangeFont](../resources/rangefont.md) указанного диапазона.
 
 В результате этого набора запросов создается таблица с тремя ячейками, отформатированными так же, как три ячейки на приведенном ниже рисунке.
 
@@ -55,7 +55,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
   "name": "update_rangeformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format
 Content-type: application/json
 
 {
@@ -65,12 +65,12 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -93,7 +93,7 @@ Content-type: application/json
   "name": "update_rangeformat_font"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format/font
 Content-type: application/json
 
 {
@@ -102,12 +102,12 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -131,19 +131,19 @@ Content-type: application/json
   "name": "update_rangeformat_fill"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/fill
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format/fill
 Content-type: application/json
 
 {
   "color": "#FF0000"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -161,7 +161,7 @@ Content-type: application/json
   "name": "update_rangeformat_two"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format
 Content-type: application/json
 
 {
@@ -172,12 +172,12 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -200,7 +200,7 @@ Content-type: application/json
   "name": "update_rangeformat_font_two"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/font
 Content-type: application/json
 
 {
@@ -208,12 +208,12 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -237,19 +237,19 @@ Content-type: application/json
   "name": "update_rangeformat_fill_two"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/fill
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/fill
 Content-type: application/json
 
 {
   "color": "#00FF00"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -268,7 +268,7 @@ Content-type: application/json
   "name": "update_rangeformat_three"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format
 Content-type: application/json
 
 {
@@ -279,12 +279,12 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -307,7 +307,7 @@ Content-type: application/json
   "name": "update_rangeformat_font_three"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/font
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/font
 Content-type: application/json
 
 {
@@ -316,12 +316,12 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -345,19 +345,19 @@ Content-type: application/json
   "name": "update_rangeformat_fill_three"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$C$1')/format/fill
 Content-type: application/json
 
 {
   "color": "#0000FF"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -375,5 +375,9 @@ Content-type: application/json
   "description": "Update rangeformat",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: update_rangeformat_font_three/underline:
+      Expected type String but actual was Single. Property: underline, actual value: 'Single'"
+  ],
   "tocPath": ""
 }-->

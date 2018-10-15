@@ -27,7 +27,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Принять|приложение/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedDevice](../resources/intune_devices_manageddevice.md) в формате JSON.
@@ -36,17 +36,17 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Уникальный идентификатор устройства.|
+|ИД|String (строка)|Уникальный идентификатор устройства.|
 |userId|String (строка)|Уникальный идентификатор пользователя, связанного с устройством.|
 |deviceName|String (строка)|Название устройства|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|Владение устройством. Может быть "company" (компании) или "personal" (личное). Возможные значения: `unknown`, `company`, `personal`.|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|Владение устройством. Может быть "компания" или "личное". Возможные значения: `unknown`, `company`, `personal`.|
 |deviceActionResults|Коллекция [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|Список объектов deviceActionResult сложного типа.|
 |enrolledDateTime|DateTimeOffset|Время регистрации устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней успешной синхронизации устройства с Intune.|
 |operatingSystem|String (строка)|Операционная система устройства. Windows, iOS и т. д.|
 |complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|Состояние соответствия устройства требованиям. Возможные значения: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String (строка)|Указывает, является ли устройство взломанным или рутованным.|
-|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Канал управления устройством. Intune, EAS, и т. д. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
+|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |osVersion|String (строка)|Версия операционной системы устройства.|
 |easActivated|Boolean (логический)|Указывает, активировано ли устройство в Exchange ActiveSync.|
 |easDeviceId|String (строка)|Идентификатор устройства в Exchange ActiveSync.|
@@ -56,18 +56,18 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |activationLockBypassCode|String (строка)|Код, позволяющий обойти блокировку активации на устройстве.|
 |emailAddress|String (строка)|Адреса электронной почты пользователя, связанного с устройством|
 |azureADDeviceId|String (строка)|Уникальный идентификатор устройства Azure Active Directory. Только для чтения.|
-|deviceRegistrationState|[deviceRegistrationState](../resources/intune_devices_deviceregistrationstate.md)|Состояние регистрации устройства. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
+|deviceRegistrationState|[deviceRegistrationState](../resources/intune_devices_deviceregistrationstate.md)|Состояние совмещения устройства. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String (строка)|Отображаемое имя категории устройства|
 |isSupervised|Boolean (логический)|Состояние защиты устройства|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Время последнего подключения устройства к Exchange.|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Состояние доступа к устройству в Exchange. Возможные значения: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Состояние доступа устройства в Exchange. Возможные значения: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|Причина состояния доступа к устройству в Exchange. Возможные значения: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String (строка)|URL-адрес, позволяющий установить сеанс удаленного помощника с устройством.|
 |remoteAssistanceSessionErrorDetails|String (строка)|Проблемы, возникающие при создании сеансов удаленного помощника.|
 |isEncrypted|Boolean (логический)|Состояние шифрования устройства|
 |userPrincipalName|String (строка)|Имя участника-пользователя устройства|
-|model|String (строка)|Модель устройства|
-|manufacturer|String (строка)|Производитель устройства|
+|модель|String (строка)|Модель устройства|
+|производитель|String (строка)|Производитель устройства|
 |imei|String (строка)|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия устройства требованиям|
 |serialNumber|String (строка)|SerialNumber|
@@ -82,7 +82,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |totalStorageSpaceInBytes|Int64|Общий объем хранилища в байтах|
 |freeStorageSpaceInBytes|Int64|Свободный объем хранилища в байтах|
 |managedDeviceName|String (строка)|Автоматически созданный идентификатор устройства. Может быть заменен понятным именем.|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Указывает состояние подверженности устройства угрозам при использовании решения Mobile Threat Defense (в учетной записи и на устройстве). Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Указывает состояние угроз для устройства, когда учетная запись и устройство использует партнер мобильной защиты от угроз. Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 
 
 
@@ -305,6 +305,11 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
+
+
+
+
+
 
 
 

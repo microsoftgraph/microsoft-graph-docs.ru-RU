@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 526001ad9a6c52c5b031c1734466772861f1c67e
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 60f2d58331f349f9990f78f36f04df055ce90b9e
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269840"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса DriveItem
 
@@ -15,15 +16,15 @@ ms.lasthandoff: 09/28/2017
 
 Обратиться к ресурсу **driveItem** можно двумя основными способами:
 
-* по уникальному идентификатору **driveItem** с помощью `drive/items/{item-id}`;
-* по пути файловой системы с помощью `/drive/root:/path/to/file`.
+* по уникальному идентификатору **driveItem** с помощью `drive/items/{item-id}`; `drive/items/{item-id}`
+* по пути файловой системы с помощью `/drive/root:/path/to/file`. `/drive/root:/path/to/file`
 
-У ресурсов **DriveItem** есть аспекты, смоделированные как свойства, которые предоставляют данные об идентификаторах и возможностях объекта driveItem. Например:
+У ресурсов **DriveItem** есть аспекты, смоделированные как свойства, которые предоставляют данные об идентификаторах и возможностях объекта driveItem. Пример:
 
-* У папок есть [**аспект folder**][folder].
-* У файлов есть [**аспект file**][file].
-* У изображений помимо аспекта file есть [**аспект image**][image].
-* У изображений, полученных с помощью камеры (фотографий), есть [**аспект photo**][photo], который определяет элемент как фотографию со свойствами времени съемки и устройства.
+* у папок есть [**аспект folder**][folder];
+* у файлов есть [**аспект file**][file];
+* у изображений, помимо аспекта file, есть [**аспект image**][image];
+* у изображений, полученных с помощью камеры (фотографий), есть [**аспект photo**][photo], который определяет элемент как фотографию со свойствами времени съемки и устройства;
 
 элементы с аспектом **folder** выполняют роль контейнеров элементов, поэтому у них есть ссылка `children`, указывающая на коллекцию объектов **driveItem** в папке.
 
@@ -34,6 +35,7 @@ ms.lasthandoff: 09/28/2017
 Ресурс **driveItem** является производным от ресурса [**baseItem**][baseItem] и наследует его свойства.
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+       "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
@@ -43,6 +45,7 @@ ms.lasthandoff: 09/28/2017
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
@@ -53,6 +56,7 @@ ms.lasthandoff: 09/28/2017
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
   "root": { "@odata.type": "microsoft.graph.root" },
   "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
@@ -64,12 +68,12 @@ ms.lasthandoff: 09/28/2017
   "webDavUrl": "string",
 
   /* relationships */
-  "content": { "@odata.type": "Edm.Stream" },
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
-  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string (identifier)",
@@ -94,6 +98,7 @@ ms.lasthandoff: 09/28/2017
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения.
+| content              | Поток             | Поток содержимого, если элемент представляет файл.
 | createdBy            | [identitySet][]    | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.
 | createdDateTime      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
 | cTag                 | String             | ETag для содержимого элемента. Такой тег сущности не изменяется, если изменяются только метаданные. **Примечание.** Это свойство не возвращается, если в роли элемента выступает папка. Только для чтения.
@@ -104,24 +109,24 @@ ms.lasthandoff: 09/28/2017
 | fileSystemInfo       | [fileSystemInfo][] | Сведения о файловой системе на клиенте. Чтение и запись.
 | folder               | [folder][]         | Метаданные папки, если в роли элемента выступает папка. Только для чтения.
 | id                   | String             | Уникальный идентификатор элемента на диске. Только для чтения.
-| изображение                | [image][]          | Метаданные изображения, если в роли элемента выступает изображение. Только для чтения.
+| image                | [image][]          | Метаданные изображения, если в роли элемента выступает изображение. Только для чтения.
 | lastModifiedBy       | [identitySet][]    | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.
 | lastModifiedDateTime | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
 | location             | [geoCoordinates][] | Метаданные местоположения, если в роли элемента выступают данные о местоположении. Только для чтения.
 | name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
-| package              | [package][]        | В случае наличия указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
+| package              | [package][]        | При наличии этого свойства оно указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
 | parentReference      | [itemReference][]  | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
-| Фотография
-                | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
+| photo                | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
+| publication          | [publicationFacet][] | Предоставляет сведения о состоянии элемента (опубликован или получен для изменения) в расположениях, поддерживающих такие действия. Это свойство не возвращается по умолчанию. Только для чтения. |
 | remoteItem           | [remoteItem][]     | Данные удаленного элемента, если элемент используется совместно на диске, но не на том, к которому получен доступ в данный момент. Только для чтения.
 | root                 | [root][]           | Ненулевое значение этого свойства указывает, что ресурс driveItem является самым верхним на диске.
 | searchResult         | [searchResult][]   | Поиск метаданных, если элемент получен из результата поиска. Только для чтения.
-| общие               | [shared][]         | Указывает, что к элементу был предоставлен общий доступ для других пользователей, и предоставляет сведения о состоянии совместного использования элемента. Только для чтения.
+| shared               | [shared][]         | Указывает, что к элементу был предоставлен общий доступ для других пользователей, и предоставляет сведения о состоянии совместного использования элемента. Только для чтения.
 | sharepointIds        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | size                 | Int64              | Размер элемента (в байтах). Только для чтения.
 | specialFolder        | [specialFolder][]  | Если текущий элемент также доступен как специальная папка, возвращается этот аспект. Только для чтения.
 | video                | [video][]          | Метаданные видео, если в роли элемента выступает видео. Только для чтения.
-| webDavUrl            | Строка             | URL-адрес элемента, совместимый с WebDAV.
+| webDavUrl            | String             | URL-адрес элемента, совместимый с WebDAV.
 | webUrl               | String             | URL-адрес для отображения ресурса в браузере. Только для чтения.
 
 **Примечание.** Свойства тегов eTag и cTag по-разному действуют на контейнеры (папки). Значение cTag изменяется при изменении содержимого или метаданных любого потомка папки. Значение eTag изменяется только при изменении свойств папки, за исключением свойств, которые являются производными от потомков (например, свойство **childCount** или **lastModifiedDateTime**).
@@ -130,12 +135,14 @@ ms.lasthandoff: 09/28/2017
 
 | Связь       | Тип                        | Описание
 |:-------------------|:----------------------------|:--------------------------
-| content            | Поток                      | Поток содержимого, если элемент представляет файл.
-| children           | Коллекция объектов driveItem        | Коллекция, содержащая объекты Item для непосредственных дочерних элементов Item. Дочерние элементы есть только у элементов, представляющих папки. Только для чтения. Допускается значение null.
+| Дочерние элементы (children)           | Коллекция объектов driveItem        | Коллекция, содержащая объекты Item для непосредственных дочерних элементов данного ресурса Item. Дочерние элементы есть только у элементов, представляющих папки. Только для чтения. Допускается значение null.
 | createdByUser      | [user][]                    | Удостоверение пользователя, создавшего элемент. Только для чтения.
 | lastModifiedByUser | [user][]                    | Удостоверение пользователя, который последним изменил элемент. Только для чтения.
+| listItem           | [listItem][]                | Для дисков в SharePoint – сопоставленный элемент списка библиотеки документов. Только для чтения. Допускается значение null.
 | permissions        | Коллекция объектов [permission][]   | Набор разрешений для элемента. Только для чтения. Допускается значение null.
 | thumbnails         | Коллекция объектов [thumbnailSet][] | Коллекция, содержащая объекты [ThumbnailSet][], связанные с элементом. Дополнительные сведения см. в статье о [получении эскизов][]. Только для чтения. Допускается значение null.
+| versions           | Коллекция [driveItemVersion][] | Список предыдущих версий элемента. Дополнительные сведения см. в статье о [получении предыдущих версий][]. Только для чтения. Допускается значение null.
+| workbook           | [workbook][]                | Предоставляет файлам, которые являются электронными таблицами Excel, доступ к API книги для работы с содержимым электронной таблицы Допускается значение null.
 
 ## <a name="instance-attributes"></a>Атрибуты экземпляра
 
@@ -155,6 +162,7 @@ ms.lasthandoff: 09/28/2017
 |:---------------------------------------------------------|:------------------
 | [Получение элемента](../api/driveitem_get.md)                      | `GET /drive/items/{item-id}`
 | [Список дочерних элементов](../api/driveitem_list_children.md)       | `GET /drive/items/{item-id}/children`
+| [Список версий](../api/driveitem_list_versions.md)       | `GET /drive/items/{item-id}/versions`
 | [Создание элемента](../api/driveitem_post_children.md)         | `POST /drive/items/{item-id}/children`
 | [Обновление элемента](../api/driveitem_update.md)                | `PATCH /drive/items/{item-id}`
 | [Отправка содержимого](../api/driveitem_put_content.md)        | `PUT /drive/items/{item-id}/content`
@@ -180,14 +188,17 @@ ms.lasthandoff: 09/28/2017
 [baseItem]: baseItem.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem_get_content_format.md
+[driveItemVersion]: driveItemVersion.md
 [file]: file.md
 [fileSystemInfo]: fileSystemInfo.md
 [folder]: folder.md
+[getting previous versions]: ../api/driveitem_list_versions.md
 [getting thumbnails]: ../api/driveitem_list_thumbnails.md
 [identitySet]: identitySet.md
 [image]: image.md
 [itemReference]: itemReference.md
 [geoCoordinates]: geoCoordinates.md
+[listItem]: listItem.md
 [package]: package.md
 [permission]: permission.md
 [photo]: photo.md
@@ -199,7 +210,9 @@ ms.lasthandoff: 09/28/2017
 [specialFolder]: specialFolder.md
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
+[workbook]: workbook.md
 [user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
+[publicationFacet]: publicationfacet.md
 
 <!-- {
   "type": "#page.annotation",

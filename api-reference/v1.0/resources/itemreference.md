@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ItemReference
-ms.openlocfilehash: abd8b438e6c4e364a7a4b010d0808255425fa4df
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e83b0a18725d587094a00e9cc84a51b030d83340
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268468"
 ---
 # <a name="itemreference-resource-type"></a>Тип ресурса ItemReference
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 09/28/2017
 | Свойство      | Тип              | Описание
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | Уникальный идентификатор экземпляра диска, содержащего элемент. Только для чтения.
-| driveType     | String            | Служит для идентификации типа диска. Сведения о возможных значениях см. в статье, посвященной ресурсу [drive][].
+| driveType     | String            | Служит для идентификации типа для объекта drive. Сведения о возможных значениях см. в статье, посвященной ресурсу [drive][].
 | id            | String            | Уникальный идентификатор элемента на диске. Только для чтения.
-| name          | Строка            | Имя элемента, на который направлена ссылка. Только для чтения.
+| name          | String            | Имя элемента, на который направлена ссылка. Только для чтения.
 | path          | String            | Путь, по которому можно перейти к элементу. Только для чтения.
 | shareId       | String            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
 | sharepointIds | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
@@ -51,7 +52,7 @@ ms.lasthandoff: 09/28/2017
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares_get.md
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 Чтобы обратиться к элементу **driveItem** из ресурса **itemReference**, составьте URL-адрес в следующем формате:
 
@@ -69,5 +70,9 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

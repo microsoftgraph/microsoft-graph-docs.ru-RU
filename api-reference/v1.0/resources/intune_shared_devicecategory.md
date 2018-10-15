@@ -7,19 +7,19 @@
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|Коллекция [Список deviceCategories](../api/intune_shared_devicecategory_list.md)|Список свойств и связей объектов [deviceCategory](../resources/intune_shared_devicecategory.md).|
-|[Получение объекта deviceCategory](../api/intune_shared_devicecategory_get.md)|Чтение свойств и связей объекта [deviceCategory](../resources/intune_shared_devicecategory.md).|
-|[Создание объекта deviceCategory](../api/intune_shared_devicecategory_create.md)|Создание объекта [deviceCategory](../resources/intune_shared_devicecategory.md).|
-|[Удаление deviceCategory](../api/intune_shared_devicecategory_delete.md).|
-|[Обновление объекта deviceCategory](../api/intune_shared_devicecategory_update.md)|Обновление свойств объекта [deviceCategory](../resources/intune_shared_devicecategory.md).|
+|[Список объектов deviceCategories](../api/intune_shared_devicecategory_list.md)|
+|[Получение объекта deviceCategory](../api/intune_shared_devicecategory_get.md)|
+|[Создание объекта deviceCategory](../api/intune_shared_devicecategory_create.md)|
+|[Удаление объекта deviceCategory](../api/intune_shared_devicecategory_delete.md)|
+|[Обновление объекта deviceCategory](../api/intune_shared_devicecategory_update.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация**|
-|displayName|String (строка)|Отображаемое имя категории устройств.|
-|description|String (строка)|Необязательное описание категории устройств.|
+|displayName|String|Отображаемое имя категории устройств.|
+|description|String|Необязательное описание категории устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет

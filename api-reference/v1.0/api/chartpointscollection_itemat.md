@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/ItemAt
+POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/itemAt
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -27,37 +27,39 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/It
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|number|Значение индекса получаемого объекта. Используется нулевой индекс.|
+|index|Int32|Значение индекса получаемого объекта. Отсчитывается от нуля.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartPoint](../resources/chartpoint.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [WorkbookChartPoint](../resources/chartpoint.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "chartpointscollection_itemat"
+  "isComposable": true,
+  "name": "chartpointscollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.chartpointscollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/itemAt
 Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 8
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartPoint"
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 } -->
 ```http
 HTTP/1.1 200 OK

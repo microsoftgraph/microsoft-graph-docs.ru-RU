@@ -47,12 +47,12 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |owner|String (строка)|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |developer|String (строка)|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |notes|String (строка)|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследовано от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение может быть назначено только в случае публикации приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String (строка)|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
 |fileName|String (строка)|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
-|applicableArchitectures|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|applicableDeviceTypes|[windowsDeviceType](../resources/intune_apps_windowsdevicetype.md)|Типы устройств с Windows, которые поддерживаются этим приложением. Возможные значения: `none`, `desktop`, `mobile`, `holographic`, `team`.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|Архитектуры Windows, на которых это приложение можно запустить. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableDeviceTypes|[windowsDeviceType](../resources/intune_apps_windowsdevicetype.md)|Типы устройств Windows, на которых это приложение можно запустить. Возможные значения: `none`, `desktop`, `mobile`, `holographic`, `team`.|
 |identityName|String (строка)|Имя удостоверения.|
 |identityPublisherHash|String (строка)|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String (строка)|Идентификатор ресурса Identity.|
@@ -154,6 +154,11 @@ Content-Length: 1361
   "identityVersion": "Identity Version value"
 }
 ```
+
+
+
+
+
 
 
 
