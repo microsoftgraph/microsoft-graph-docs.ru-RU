@@ -16,16 +16,16 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
+|id|Строка|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
+|primarySmtpAddress|String (строка)|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
 |serverName|String|Имя сервера Exchange.|
 |connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|version|String|Версия объекта ExchangeConnectorAgent|
-|exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
-|exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
+|version|String (строка)|Версия объекта ExchangeConnectorAgent|
+|exchangeAlias|String (строка)|Псевдоним, назначенный серверу Exchange Server|
+|exchangeOrganization|String (строка)|Организация Exchange, соответствующая серверу Exchange Server|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -33,8 +33,8 @@
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementExchangeConnector"
 }-->
 ``` json
@@ -52,6 +52,11 @@
   "exchangeOrganization": "String"
 }
 ```
+
+
+
+
+
 
 
 
