@@ -1,55 +1,55 @@
-# <a name="chart-resource-type"></a>Тип ресурса Chart
+# <a name="chart-resource-type"></a><span data-ttu-id="63179-101">Тип ресурса Chart</span><span class="sxs-lookup"><span data-stu-id="63179-101">Chart resource type</span></span>
 
-Представляет объект диаграммы в книге.
+<span data-ttu-id="63179-102">Представляет объект диаграммы в книге.</span><span class="sxs-lookup"><span data-stu-id="63179-102">Represents a chart object in a workbook.</span></span>
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a><span data-ttu-id="63179-103">Методы</span><span class="sxs-lookup"><span data-stu-id="63179-103">Methods</span></span>
 
-| Метод           | Возвращаемый тип    |Описание|
+| <span data-ttu-id="63179-104">Метод</span><span class="sxs-lookup"><span data-stu-id="63179-104">Method</span></span>           | <span data-ttu-id="63179-105">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="63179-105">Return Type</span></span>    |<span data-ttu-id="63179-106">Описание</span><span class="sxs-lookup"><span data-stu-id="63179-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Получение объекта Chart](../api/chart_get.md) | [Chart](chart.md) |Чтение свойств и связей объекта диаграммы.|
-|[Создание объекта ChartSeries](../api/chart_post_series.md) |[ChartSeries](chartseries.md)| Создание объекта ChartSeries путем добавления в коллекцию рядов.|
-|[Список рядов](../api/chart_list_series.md) |Коллекция объектов [ChartSeries](chartseries.md)| Получение коллекции объектов ChartSeries.|
-|[Обновление](../api/chart_update.md) | [Chart](chart.md)    |Обновление объекта Chart. |
-|[Image](../api/chart_image.md)|Строка изображения с кодировкой base64|Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.|
-|[Delete](../api/chart_delete.md)|Нет|Удаляет объект диаграммы.|
-|[Setdata](../api/chart_setdata.md)|Нет|Сбрасывает исходные данные для диаграммы.|
-|[Setposition](../api/chart_setposition.md)|Нет|Располагает диаграмму относительно ячеек на листе.|
-|[Список](../api/chart_list.md) | Коллекция объектов [Chart](chart.md) |Получение коллекции объектов диаграмм. |
-|[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Возвращает диаграмму с учетом ее положения в коллекции.|
-|[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Создает диаграмму.|
+|[<span data-ttu-id="63179-107">Получение объекта Chart</span><span class="sxs-lookup"><span data-stu-id="63179-107">Get Chart</span></span>](../api/chart_get.md) | [<span data-ttu-id="63179-108">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="63179-108">WorkbookChart</span></span>](chart.md) |<span data-ttu-id="63179-109">Чтение свойств и связей объекта диаграммы.</span><span class="sxs-lookup"><span data-stu-id="63179-109">Read properties and relationships of chart object.</span></span>|
+|[<span data-ttu-id="63179-110">Создание объекта ChartSeries</span><span class="sxs-lookup"><span data-stu-id="63179-110">Create ChartSeries</span></span>](../api/chart_post_series.md) |[<span data-ttu-id="63179-111">WorkbookChartSeries</span><span class="sxs-lookup"><span data-stu-id="63179-111">WorkbookChartSeries</span></span>](chartseries.md)| <span data-ttu-id="63179-112">Создание объекта ChartSeries путем добавления в коллекцию рядов.</span><span class="sxs-lookup"><span data-stu-id="63179-112">Create a new ChartSeries by posting to the series collection.</span></span>|
+|[<span data-ttu-id="63179-113">Получение списка рядов</span><span class="sxs-lookup"><span data-stu-id="63179-113">List series</span></span>](../api/chart_list_series.md) |<span data-ttu-id="63179-114">Коллекция [WorkbookChartSeries](chartseries.md)</span><span class="sxs-lookup"><span data-stu-id="63179-114">[WorkbookChartSeries](chartseries.md) collection</span></span>| <span data-ttu-id="63179-115">Получение коллекции объектов ChartSeries.</span><span class="sxs-lookup"><span data-stu-id="63179-115">Get a ChartSeries object collection.</span></span>|
+|[<span data-ttu-id="63179-116">Обновление</span><span class="sxs-lookup"><span data-stu-id="63179-116">Update</span></span>](../api/chart_update.md) | [<span data-ttu-id="63179-117">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="63179-117">WorkbookChart</span></span>](chart.md)   |<span data-ttu-id="63179-118">Обновление объекта Chart.</span><span class="sxs-lookup"><span data-stu-id="63179-118">Update Chart object.</span></span> |
+|[<span data-ttu-id="63179-119">Изображение</span><span class="sxs-lookup"><span data-stu-id="63179-119">Image</span></span>](../api/chart_image.md)|<span data-ttu-id="63179-120">Строка изображения с кодировкой base64</span><span class="sxs-lookup"><span data-stu-id="63179-120">Image base64 encoded string</span></span>|<span data-ttu-id="63179-121">Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанными размерами.</span><span class="sxs-lookup"><span data-stu-id="63179-121">Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.</span></span>|
+|[<span data-ttu-id="63179-122">Удаление</span><span class="sxs-lookup"><span data-stu-id="63179-122">Delete</span></span>](../api/chart_delete.md)|<span data-ttu-id="63179-123">Нет</span><span class="sxs-lookup"><span data-stu-id="63179-123">None</span></span>|<span data-ttu-id="63179-124">Удаляет объект диаграммы.</span><span class="sxs-lookup"><span data-stu-id="63179-124">Deletes the chart object.</span></span>|
+|[<span data-ttu-id="63179-125">Setdata</span><span class="sxs-lookup"><span data-stu-id="63179-125">Setdata</span></span>](../api/chart_setdata.md)|<span data-ttu-id="63179-126">Нет</span><span class="sxs-lookup"><span data-stu-id="63179-126">None</span></span>|<span data-ttu-id="63179-127">Сбрасывает исходные данные для диаграммы.</span><span class="sxs-lookup"><span data-stu-id="63179-127">Resets the source data for the chart.</span></span>|
+|[<span data-ttu-id="63179-128">Setposition</span><span class="sxs-lookup"><span data-stu-id="63179-128">Setposition</span></span>](../api/chart_setposition.md)|<span data-ttu-id="63179-129">Нет</span><span class="sxs-lookup"><span data-stu-id="63179-129">None</span></span>|<span data-ttu-id="63179-130">Располагает диаграмму относительно ячеек на листе.</span><span class="sxs-lookup"><span data-stu-id="63179-130">Positions the chart relative to cells on the worksheet.</span></span>|
+|[<span data-ttu-id="63179-131">List</span><span class="sxs-lookup"><span data-stu-id="63179-131">List</span></span>](../api/chart_list.md) | <span data-ttu-id="63179-132">Коллекция [WorkbookChart](chart.md)</span><span class="sxs-lookup"><span data-stu-id="63179-132">[WorkbookChart](chart.md) collection</span></span> |<span data-ttu-id="63179-133">Получение коллекции объектов диаграмм.</span><span class="sxs-lookup"><span data-stu-id="63179-133">Get chart object collection.</span></span> |
+|[<span data-ttu-id="63179-134">Itemat</span><span class="sxs-lookup"><span data-stu-id="63179-134">Itemat</span></span>](../api/chartcollection_itemat.md)|[<span data-ttu-id="63179-135">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="63179-135">WorkbookChart</span></span>](chart.md)|<span data-ttu-id="63179-136">Возвращает диаграмму на основании сведений о ее позиции в коллекции.</span><span class="sxs-lookup"><span data-stu-id="63179-136">Gets a chart based on its position in the collection.</span></span>|
+|[<span data-ttu-id="63179-137">Add</span><span class="sxs-lookup"><span data-stu-id="63179-137">Add</span></span>](../api/chartcollection_add.md)|[<span data-ttu-id="63179-138">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="63179-138">WorkbookChart</span></span>](chart.md)|<span data-ttu-id="63179-139">Создает диаграмму.</span><span class="sxs-lookup"><span data-stu-id="63179-139">Creates a new chart.</span></span>|
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="63179-140">Свойства</span><span class="sxs-lookup"><span data-stu-id="63179-140">Properties</span></span>
+| <span data-ttu-id="63179-141">Свойство</span><span class="sxs-lookup"><span data-stu-id="63179-141">Property</span></span>     | <span data-ttu-id="63179-142">Тип</span><span class="sxs-lookup"><span data-stu-id="63179-142">Type</span></span>   |<span data-ttu-id="63179-143">Описание</span><span class="sxs-lookup"><span data-stu-id="63179-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|height|double|Обозначает высоту объекта диаграммы (в пунктах).|
-|id|string|Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.|
-|left|double|Расстояние в пунктах от левого края диаграммы до начала листа.|
-|name|string|Обозначает имя объекта диаграммы.|
-|top|double|Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).|
-|width|double|Представляет ширину объекта диаграммы (в пунктах).|
+|<span data-ttu-id="63179-144">height</span><span class="sxs-lookup"><span data-stu-id="63179-144">height</span></span>|<span data-ttu-id="63179-145">double</span><span class="sxs-lookup"><span data-stu-id="63179-145">double</span></span>|<span data-ttu-id="63179-146">Обозначает высоту объекта диаграммы (в пунктах).</span><span class="sxs-lookup"><span data-stu-id="63179-146">Represents the height, in points, of the chart object.</span></span>|
+|<span data-ttu-id="63179-147">id</span><span class="sxs-lookup"><span data-stu-id="63179-147">id</span></span>|<span data-ttu-id="63179-148">string</span><span class="sxs-lookup"><span data-stu-id="63179-148">string</span></span>|<span data-ttu-id="63179-p101">Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="63179-p101">Gets a chart based on its position in the collection. Read-only.</span></span>|
+|<span data-ttu-id="63179-151">left</span><span class="sxs-lookup"><span data-stu-id="63179-151">left</span></span>|<span data-ttu-id="63179-152">double</span><span class="sxs-lookup"><span data-stu-id="63179-152">double</span></span>|<span data-ttu-id="63179-153">Расстояние в пунктах от левого края диаграммы до начала листа.</span><span class="sxs-lookup"><span data-stu-id="63179-153">The distance, in points, from the left side of the chart to the worksheet origin.</span></span>|
+|<span data-ttu-id="63179-154">name</span><span class="sxs-lookup"><span data-stu-id="63179-154">name</span></span>|<span data-ttu-id="63179-155">string</span><span class="sxs-lookup"><span data-stu-id="63179-155">string</span></span>|<span data-ttu-id="63179-156">Обозначает имя объекта диаграммы.</span><span class="sxs-lookup"><span data-stu-id="63179-156">Represents the name of a chart object.</span></span>|
+|<span data-ttu-id="63179-157">top</span><span class="sxs-lookup"><span data-stu-id="63179-157">top</span></span>|<span data-ttu-id="63179-158">double</span><span class="sxs-lookup"><span data-stu-id="63179-158">double</span></span>|<span data-ttu-id="63179-159">Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).</span><span class="sxs-lookup"><span data-stu-id="63179-159">Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span>|
+|<span data-ttu-id="63179-160">width</span><span class="sxs-lookup"><span data-stu-id="63179-160">width</span></span>|<span data-ttu-id="63179-161">double</span><span class="sxs-lookup"><span data-stu-id="63179-161">double</span></span>|<span data-ttu-id="63179-162">Представляет ширину объекта диаграммы (в пунктах).</span><span class="sxs-lookup"><span data-stu-id="63179-162">Represents the width, in points, of the chart object.</span></span>|
 
-## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+## <a name="relationships"></a><span data-ttu-id="63179-163">Связи</span><span class="sxs-lookup"><span data-stu-id="63179-163">Relationships</span></span>
+| <span data-ttu-id="63179-164">Связь</span><span class="sxs-lookup"><span data-stu-id="63179-164">Relationship</span></span> | <span data-ttu-id="63179-165">Тип</span><span class="sxs-lookup"><span data-stu-id="63179-165">Type</span></span>   |<span data-ttu-id="63179-166">Описание</span><span class="sxs-lookup"><span data-stu-id="63179-166">Description</span></span>|
 |:---------------|:--------|:----------|
-|axes|[ChartAxes](chartaxes.md)|Представляет оси диаграммы. Только для чтения.|
-|dataLabels|[ChartDataLabels](chartdatalabels.md)|Представляет метки данных на диаграмме. Только для чтения.|
-|format|[ChartAreaFormat](chartareaformat.md)|Инкапсулирует свойства формата для области диаграммы. Только для чтения.|
-|legend|[ChartLegend](chartlegend.md)|Представляет условные обозначения для диаграммы. Только для чтения.|
-|series|Коллекция объектов [ChartSeries](chartseries.md)|Представляет один ряд данных или коллекцию рядов данных в диаграмме. Только для чтения.|
-|title|[ChartTitle](charttitle.md)|Представляет заголовок указанной диаграммы, включая его текст, видимость, положение и форматирование. Только для чтения.|
-|лист|[Worksheet](worksheet.md)|Лист, содержащий текущую диаграмму. Только для чтения.|
+|<span data-ttu-id="63179-167">axes</span><span class="sxs-lookup"><span data-stu-id="63179-167">axes</span></span>|[<span data-ttu-id="63179-168">WorkbookChartAxes</span><span class="sxs-lookup"><span data-stu-id="63179-168">WorkbookChartAxes</span></span>](chartaxes.md)|<span data-ttu-id="63179-p102">Представляет оси диаграммы. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="63179-p102">Represents chart axes. Read-only.</span></span>|
+|<span data-ttu-id="63179-171">dataLabels</span><span class="sxs-lookup"><span data-stu-id="63179-171">dataLabels</span></span>|[<span data-ttu-id="63179-172">WorkbookChartDataLabels</span><span class="sxs-lookup"><span data-stu-id="63179-172">WorkbookChartDataLabels</span></span>](chartdatalabels.md)|<span data-ttu-id="63179-p103">Представляет метки данных на диаграмме. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="63179-p103">Represents the datalabels on the chart. Read-only.</span></span>|
+|<span data-ttu-id="63179-175">format</span><span class="sxs-lookup"><span data-stu-id="63179-175">format</span></span>|[<span data-ttu-id="63179-176">WorkbookChartAreaFormat</span><span class="sxs-lookup"><span data-stu-id="63179-176">WorkbookChartAreaFormat</span></span>](chartareaformat.md)|<span data-ttu-id="63179-p104">Инкапсулирует свойства формата для области диаграммы. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="63179-p104">Encapsulates the format properties for the chart area. Read-only.</span></span>|
+|<span data-ttu-id="63179-179">legend</span><span class="sxs-lookup"><span data-stu-id="63179-179">legend</span></span>|[<span data-ttu-id="63179-180">WorkbookChartLegend</span><span class="sxs-lookup"><span data-stu-id="63179-180">WorkbookChartLegend</span></span>](chartlegend.md)|<span data-ttu-id="63179-p105">Представляет условные обозначения для диаграммы. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="63179-p105">Represents the legend for the chart. Read-only.</span></span>|
+|<span data-ttu-id="63179-183">series</span><span class="sxs-lookup"><span data-stu-id="63179-183">series</span></span>|<span data-ttu-id="63179-184">Коллекция [WorkbookChartSeries](chartseries.md)</span><span class="sxs-lookup"><span data-stu-id="63179-184">[WorkbookChartSeries](chartseries.md) collection</span></span>|<span data-ttu-id="63179-p106">Представляет один ряд данных или коллекцию рядов данных в диаграмме. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="63179-p106">Represents either a single series or collection of series in the chart. Read-only.</span></span>|
+|<span data-ttu-id="63179-187">title</span><span class="sxs-lookup"><span data-stu-id="63179-187">title</span></span>|[<span data-ttu-id="63179-188">WorkbookChartTitle</span><span class="sxs-lookup"><span data-stu-id="63179-188">WorkbookChartTitle</span></span>](charttitle.md)|<span data-ttu-id="63179-p107">Представляет заголовок указанной диаграммы, включая его текст, видимость, положение и форматирование. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="63179-p107">Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.</span></span>|
+|<span data-ttu-id="63179-191">worksheet</span><span class="sxs-lookup"><span data-stu-id="63179-191">worksheet</span></span>|[<span data-ttu-id="63179-192">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="63179-192">WorkbookWorksheet</span></span>](worksheet.md)|<span data-ttu-id="63179-p108">Лист, содержащий текущую диаграмму. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="63179-p108">The worksheet containing the current chart. Read-only.</span></span>|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a><span data-ttu-id="63179-195">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="63179-195">JSON representation</span></span>
 
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="63179-196">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="63179-196">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chart"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChart"
 }-->
 
 ```json
