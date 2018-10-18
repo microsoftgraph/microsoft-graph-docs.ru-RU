@@ -19,11 +19,11 @@
 
 **Не хотите создавать приложение?** С помощью [краткого руководства по Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) вы сможете быстро приступить к работе.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 
 Чтобы приступить к работе, вам понадобится следующее: 
 
-* [Xcode](https://developer.apple.com/xcode/downloads/) от Apple.
+* [Xcode](https://developer.apple.com/xcode/downloads/) от Apple;
 * Установка [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) в качестве диспетчера зависимостей.
 * [Учетная запись Майкрософт](https://www.outlook.com/) либо [рабочая или учебная учетная запись](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types).
 * [Начальный проект Microsoft Graph для iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). Этот шаблон содержит классы, в которые вы можете добавлять код. Чтобы получить этот проект, клонируйте или скачайте пример проекта из этого расположения и используйте рабочую область в папке **starter-project** (**ios-objectivec-connect-sample.xcworkspace**).
@@ -134,7 +134,7 @@
 
 Когда в приложении будет настроена проверка подлинности, необходимо отправить пользователю сообщение с помощью API Microsoft Graph. По умолчанию получателем будет вошедший пользователь, но вы можете указать любой адрес. Соответствующий код находится в папке **Controllers**, в классе **SendMailViewController.m.** Вы заметите, что здесь имеется другой код для пользовательского интерфейса, а также вспомогательный метод для получения данных профиля пользователя из службы Microsoft Graph. Мы сосредоточимся на методах для создания и отправки электронного сообщения.
 
-1. Откройте файл **SendMailViewController.m.** из папки Controllers и добавьте следующий код в метод **viewDidLoad** после строки `self.graphClient = [MSGraphClient client]`:
+1. Откройте файл **SendMailViewController.m.** из папки Controllers и добавьте следующий код в метод **viewDidLoad** после строки `self.graphClient = [MSGraphClient client]`: `self.graphClient = [MSGraphClient client]`
    ```objectivec
        [self getUserInfo:(self.emailAddress) completion:^( NSError *error) {
         if (!error) {

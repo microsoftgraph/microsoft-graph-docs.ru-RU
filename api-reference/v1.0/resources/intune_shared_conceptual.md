@@ -18,8 +18,9 @@
 - [Объект назначения группы](intune_shared_groupassignmenttarget.md)
 - [Цель установки](intune_shared_installintent.md)
 - [Содержимое MIME](intune_shared_mimecontent.md)
+- [Отчет](intune_shared_report.md)
+- [Корневой отчет](intune_shared_reportroot.md)
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune_shared_saveduistategenerationoptions.md)
 - [Универсальный код ресурса (URI)](intune_shared_uri.md)
-- [Пользователь
-](intune_shared_user.md)
+- [Пользователь](intune_shared_user.md)
 - [Тип учетной записи маркеров VPP](intune_shared_vpptokenaccounttype.md)
