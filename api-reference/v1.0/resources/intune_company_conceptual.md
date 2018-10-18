@@ -8,6 +8,6 @@
 
 Для управления корпоративными условиями в Intune используются перечисленные ниже ресурсы Graph.
 
+- [Условия](intune_companyterms_termsandconditions.md)
 - [Состояние принятия условий](intune_companyterms_termsandconditionsacceptancestatus.md)
 - [Назначение условий](intune_companyterms_termsandconditionsassignment.md)
-- [Условия](intune_companyterms_termsandconditions.md)
