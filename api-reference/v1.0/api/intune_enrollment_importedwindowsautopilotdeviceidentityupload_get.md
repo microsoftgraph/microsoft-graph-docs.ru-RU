@@ -33,7 +33,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns a `200 OK` response code and [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) object in the response body.|||UNTRANSLATED_CONTENT_END|||
+В случае успеха этот метод возвращает код отклика  и объект importedWindowsAutopilotDeviceIdentityUpload в тексте отклика.`200 OK` [ ](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

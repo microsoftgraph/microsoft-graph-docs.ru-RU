@@ -31,7 +31,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 
 ## <a name="response"></a>Отклик
 
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns a `200 OK` response code and [WorkbookRangeFormat](../resources/rangeformat.md) object in the response body.|||UNTRANSLATED_CONTENT_END|||
+В случае успеха этот метод возвратит код отклика  и объект WorkbookRangeFormat в теле отклика.`200 OK` [ ](../resources/rangeformat.md)
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -42,7 +42,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

@@ -35,7 +35,7 @@ PUT /me/activities/{id}/historyItems/{id}
 
 ## <a name="response"></a>Отклик
 
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.|||UNTRANSLATED_CONTENT_END|||
+При успешном выполнении этот метод возвращает код отклика , если объект historyItem был создан, или  если объект historyItem был заменен.`201 Created` `200 OK`
 
 ## <a name="example"></a>Пример
 

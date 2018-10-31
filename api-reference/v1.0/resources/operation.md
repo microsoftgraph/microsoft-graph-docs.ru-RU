@@ -26,7 +26,7 @@
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
 |lastActionDateTime| DateTimeOffset |Время последнего действия операции.|
-|статус|operationStatus||||UNTRANSLATED_CONTENT_START|||The current status of the operation: `notStarted`, `running`, `completed`,|||UNTRANSLATED_CONTENT_END||| `failed` |
+|статус|operationStatus|Текущее состояние операции: `notStarted`, `running`, `completed`, `failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

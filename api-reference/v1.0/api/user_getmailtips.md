@@ -1,6 +1,6 @@
 # <a name="user-getmailtips"></a>user: getMailTips
 
-|||UNTRANSLATED_CONTENT_START|||Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).|||UNTRANSLATED_CONTENT_END|||
+Получение подсказки (MailTips) для одного или нескольких получателей, доступных для вошедшего в систему [пользователя](../resources/user.md) .
 
 Обратите внимание, что при помощи вызова `POST` действия `getMailTips` можно запросить возврат определенного типа подсказок (MailTips) для нескольких получателей за один раз. Запрошенные подсказки (MailTips) возвращаются в коллекцию [mailTips](../resources/mailtips.md).
 

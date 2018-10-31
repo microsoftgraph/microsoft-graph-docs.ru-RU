@@ -34,7 +34,7 @@ GET /sites/{id}/onenote/sections/{id}
 
 ## <a name="response"></a>Отклик
 
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns a `200 OK` response code and a [onenoteSection](../resources/section.md) object in the response body.|||UNTRANSLATED_CONTENT_END|||
+В случае успеха этот метод возвращает код отклика  и объект onenoteSection в теле отклика.`200 OK` [ ](../resources/section.md)
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

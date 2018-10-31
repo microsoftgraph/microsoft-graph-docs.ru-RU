@@ -31,7 +31,7 @@ PATCH /workbook/names/{name}
 
 ## <a name="response"></a>Отклик
 
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.|||UNTRANSLATED_CONTENT_END|||
+В случае`200 OK`   успеха этот метод возвращает код отклика  и обновленный объект WorkbookNamedItem в тексте отклика.[](../resources/nameditem.md)
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

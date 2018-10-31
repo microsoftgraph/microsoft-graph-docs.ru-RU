@@ -20,7 +20,7 @@
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)||||UNTRANSLATED_CONTENT_START|||The install intent for eBook. Inherited from [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|||UNTRANSLATED_CONTENT_END||||
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Цель установки для электронной книги. Наследуется от managedEBookAssignment. Возможные значения:  .[](../resources/intune_books_managedebookassignment.md) `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Связи
 Нет

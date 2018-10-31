@@ -33,7 +33,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 ## <a name="response"></a>Отклик
 
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns the `204 No Content` response code if the history item was deleted.|||UNTRANSLATED_CONTENT_END|||
+В случае успешного выполнения этот метод возвращает код отклика , если элемент журнала был удален.`204 No Content`
 
 ## <a name="example"></a>Пример
 
@@ -50,7 +50,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
