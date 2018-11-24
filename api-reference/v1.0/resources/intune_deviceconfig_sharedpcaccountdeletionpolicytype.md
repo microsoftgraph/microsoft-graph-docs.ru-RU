@@ -1,19 +1,14 @@
-# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>тип перечисления sharedPCAccountDeletionPolicyType
+# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>Тип перечисления sharedPCAccountDeletionPolicyType
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Возможные значения при удалении учетных записей на общем ПК.
+Возможные значения для при удалении учетных записей на общую ПК.
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|immediate|0|Немедленное удаление.|
-|diskSpaceThreshold|1|Удаление у порога дискового пространства.|
-|diskSpaceThresholdOrInactiveThreshold|2|Удаление у порога дискового пространства или неактивного порога.|
-
-
-
-
-
+|Интерпретация|0|Удаление немедленно.|
+|diskSpaceThreshold|1|Удалите в порога места на диске.|
+|diskSpaceThresholdOrInactiveThreshold|2|Удалите порога места на диске, так и неактивных пороговое значение.|
 
 
 

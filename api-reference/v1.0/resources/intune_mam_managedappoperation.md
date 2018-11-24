@@ -15,22 +15,22 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String (строка)|Имя операции.|
+|displayName|String|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
-|состояние|String (строка)|Текущее состояние операции|
-|ИД|String (строка)|Ключ объекта.|
-|версия|String (строка)|Версия объекта.|
+|state|String|Текущее состояние операции|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppOperation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppOperation",
@@ -41,11 +41,6 @@
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

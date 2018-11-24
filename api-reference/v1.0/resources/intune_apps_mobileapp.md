@@ -13,35 +13,35 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Администратор предоставил или импортировал название приложения.|
-|description|Строка|Описание приложения.|
-|publisher|Строка|Издатель приложения.|
+|id|String|Ключ объекта.|
+|displayName|String|Администратор предоставил или импортировал название приложения.|
+|description|String|Описание приложения.|
+|publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения.|
-|isFeatured|Логический|Значение, которое показывает, отмечено ли приложение как подобранное администратором.|
-|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности.|
-|informationUrl|Строка|URL-адрес с дополнительными сведениями.|
-|owner|Строка|Владелец приложения.|
-|developer|Строка|Разработчик приложения.|
-|notes|Строка|Заметки для приложения.|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
+|isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором.|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
+|informationUrl|String|URL-адрес с дополнительными сведениями.|
+|owner|String|Владелец приложения.|
+|developer|String|Разработчик приложения.|
+|notes|String|Заметки для приложения.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|categories|Коллекция объектов [mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Список категорий для этого приложения.|
+|categories|Коллекция [mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Список категорий для этого приложения.|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md)|Список назначений группы для этого мобильного приложения.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileApp",
@@ -65,11 +65,6 @@
   "publishingState": "String"
 }
 ```
-
-
-
-
-
 
 
 

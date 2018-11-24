@@ -24,8 +24,8 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта localizedNotificationMessage в формате JSON.
@@ -34,12 +34,12 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|языковой стандарт|Строка|Языковой стандарт, для которого предназначено сообщение.|
-|тема|Строка|Тема шаблона сообщения.|
-|messageTemplate|Строка|Содержимое шаблона сообщения.|
-|isDefault|Логическое|Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка. Можно устанавливать только этот флаг. Чтобы снять его, задайте этому свойству значение true для другого локализованного сообщения уведомления.|
+|locale|String|Языковой стандарт, для которого предназначено сообщение.|
+|subject|String|Тема шаблона сообщения.|
+|messageTemplate|String|Содержимое шаблона сообщения.|
+|isDefault|Boolean|Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка. Можно устанавливать только этот флаг. Чтобы снять его, задайте этому свойству значение true для другого локализованного сообщения уведомления.|
 
 
 
@@ -52,11 +52,10 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages
 Content-type: application/json
-Content-length: 264
+Content-length: 200
 
 {
   "@odata.type": "#microsoft.graph.localizedNotificationMessage",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "locale": "Locale value",
   "subject": "Subject value",
   "messageTemplate": "Message Template value",
@@ -65,7 +64,7 @@ Content-length: 264
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -81,11 +80,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
-
-
-
-
 
 
 

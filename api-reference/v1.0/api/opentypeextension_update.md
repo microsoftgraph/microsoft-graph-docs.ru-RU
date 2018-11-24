@@ -9,15 +9,19 @@
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, в котором создано расширение). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+В зависимости от разрешений и ресурсов, данное расширение имени файла, созданного на тип (делегированные или приложение) запрошенный, разрешение, указанное в следующей таблице минимальными правами требуется для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-|**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Device.ReadWrite.All | [event](../resources/event.md) | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | [[event](../resources/event.md) для групп](../resources/event.md) | Group.ReadWrite.All |
-| [[post](../resources/post.md) для групп](../resources/post.md) | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
-| [organization](../resources/organization.md) | Directory.AccessAsUser.All | [[contact](../resources/contact.md) (личный контакт)](../resources/contact.md) | Contacts.ReadWrite |
-| [user](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Не поддерживается | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | Не поддерживается | Group.ReadWrite.All |
+| [event](../resources/event.md) для групп | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [post](../resources/post.md) для групп | Group.ReadWrite.All | Не поддерживается | Group.ReadWrite.All |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | Не поддерживается | Не поддерживается |
+| [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `PATCH` для этого экземпляра расширения.
@@ -43,7 +47,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>Параметры пути
 |Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|id|string|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
+|id|строка|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
 |extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -101,9 +105,9 @@ PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 ```
 
 Для обновления указанного выше расширения используйте любой пример запроса и приведенный ниже тело запроса следующими способами:
-- изменив значение параметра `companyName` с `Wingtip Toys` на `Wingtip Toys (USA)`; `Wingtip Toys (USA)`
+- изменив значение параметра `companyName` с `Wingtip Toys` на `Wingtip Toys (USA)`;
 - изменив значение параметра `dealValue` с `500050` на `500100`; `500100`
-- добавив новые данные в качестве пользовательского свойства `updated`. `updated`
+- добавив новые данные в качестве пользовательского свойства `updated`.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -118,7 +122,7 @@ PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 ```
 
 
-#### <a name="response-1"></a>Отклик 1
+#### <a name="response-1"></a>Отклик 1
 
 Вот отклик, который не зависит от способа, которым вы ссылаетесь на расширение.
 
@@ -143,7 +147,7 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-2"></a>Запрос 2
+#### <a name="request-2"></a>Запрос 2
 
 Во втором примере показано, как обновить расширение в публикации группы. Изначально расширение представлено указанными ниже полезными данными JSON, в котором параметр `expirationDate` имеет значение `2015-07-03T13:04:00Z`:
 
@@ -191,7 +195,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response-2"></a>Отклик 2
+#### <a name="response-2"></a>Отклик 2
 
 Вот отклик для второго примера, в котором отображается обновленный параметр `expirationDate` в расширении.
 

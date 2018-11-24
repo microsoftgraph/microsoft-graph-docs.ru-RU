@@ -4,15 +4,19 @@
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, из которого удаляется расширение). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+В зависимости от разрешений и ресурсов, который необходимо удалить данное расширение имени файла из типа (делегированные или приложение) запрошенный, разрешение, указанное в следующей таблице минимальными правами требуется для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-|**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
 |:-----|:-----|:-----|:-----|
-| [устройство](../resources/device.md) | Device.ReadWrite.All | [событие](../resources/event.md) | Calendars.ReadWrite |
-| [группа](../resources/group.md) | Group.ReadWrite.All | [[event](../resources/event.md) для групп](../resources/event.md) | Group.ReadWrite.All |
-| [[post](../resources/post.md) для групп](../resources/post.md) | Group.ReadWrite.All | [сообщение](../resources/message.md) | Mail.ReadWrite |
-| [организация](../resources/organization.md) | Directory.AccessAsUser.All | [[contact](../resources/contact.md) (личный контакт)](../resources/contact.md) | Contacts.ReadWrite |
-| [пользователь](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Не поддерживается | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | Не поддерживается | Group.ReadWrite.All |
+| [event](../resources/event.md) для групп | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [post](../resources/post.md) для групп | Group.ReadWrite.All | Не поддерживается | Group.ReadWrite.All |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | Не поддерживается | Не поддерживается |
+| [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `DELETE` для этого экземпляра расширения.
@@ -36,7 +40,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 |Параметр|Тип|Описание|
 |:-----|:-----|:-----|
 |id|строка|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
-|extensionId|строка|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
+|extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |

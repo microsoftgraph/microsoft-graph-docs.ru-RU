@@ -17,10 +17,11 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.updateWindowsDeviceAccountActionParameter"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.updateWindowsDeviceAccountActionParameter",
@@ -35,11 +36,6 @@
   "sessionInitiationProtocalAddress": "String"
 }
 ```
-
-
-
-
-
 
 
 

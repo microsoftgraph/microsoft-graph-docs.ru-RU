@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) в формате JSON.
@@ -34,8 +34,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|string|Ключ назначения.|
-|целевой|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
+|id|String|Ключ назначения.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 
 
 
@@ -48,9 +48,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 101
+Content-length: 169
 
 {
+  "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   }
@@ -58,7 +59,7 @@ Content-length: 101
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -72,11 +73,6 @@ Content-Length: 218
   }
 }
 ```
-
-
-
-
-
 
 
 

@@ -4,11 +4,12 @@
 
 Обновление свойств объекта [deviceCategory](../resources/intune_shared_devicecategory.md).
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)||
+| &nbsp;&nbsp; **Адаптация новых сотрудников** и <br> &nbsp;&nbsp; **Управление устройствами**| DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -22,11 +23,12 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/deviceCategory
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
-|Accept|приложение/json|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceCategory](../resources/intune_shared_devicecategory.md) в формате JSON.
@@ -35,10 +37,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Уникальный идентификатор категории устройства. Только для чтения.|
-|**Адаптация**|
-|displayName|String (строка)|Отображаемое имя категории устройств.|
-|description|String (строка)|Необязательное описание категории устройств.|
+|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
+|**Адаптация новых сотрудников**|
+|displayName|String|Отображаемое имя категории устройств.|
+|описание|String|Необязательное описание категории устройств.|
 
 
 
@@ -47,7 +49,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
-Ниже приведены примеры запросов.
+Ниже приведены примеры запроса.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCategoryId}
 Content-type: application/json
@@ -62,7 +64,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание: представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будут отличаться в зависимости от контекста.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будет отличаться в зависимости от контекста.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

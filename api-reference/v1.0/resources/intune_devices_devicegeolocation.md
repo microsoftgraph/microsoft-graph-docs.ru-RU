@@ -19,10 +19,11 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceGeoLocation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
@@ -36,11 +37,6 @@
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
-
-
-
-
-
 
 
 

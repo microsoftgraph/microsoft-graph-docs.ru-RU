@@ -15,11 +15,11 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|String (строка)|Отображаемое имя определения роли.|
-|описание|String (строка)|Описание определения роли.|
-|rolePermissions|Коллекция [rolePermission](../resources/intune_rbac_rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
-|isBuiltIn|Boolean (логический)|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|String|Отображаемое имя определения роли.|
+|description|String|Описание определения роли.|
+|rolePermissions|Коллекция объектов [rolePermission](../resources/intune_rbac_rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
+|isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -28,12 +28,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleDefinition"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleDefinition",
@@ -59,11 +59,6 @@
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

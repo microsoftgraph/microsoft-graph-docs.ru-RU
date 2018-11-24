@@ -1,6 +1,6 @@
-# <a name="get-recent-user-activities"></a>Получение последних действий пользователя
+# <a name="get-recent-user-activities"></a>Получите последние действия пользователя
 
-Получение действий для определенного пользователя. Эта функция OData обладает некоторым поведением по умолчанию для работы как API "Недавно использованные". Служба будет запрашивать наиболее свежие [historyItems](../resources/projectrome_historyitem.md) (элементы истории), а затем извлекать соответствующие действия. Действия будут упорядочены по самым последним **lastModified** в **historyItem**. Это означает, что действия без **historyItems** не будут включены в ответ. Разрешение UserActivity.ReadWrite.CreatedByApp применит дополнительные фильтры к ответу, чтобы возвращались только действия, созданные вашим приложением. Такая фильтрация на стороне сервера может привести к возникновению пустых страниц, если пользователь особенно активен и другие приложения зафиксировали более свежие факты активности. Для получения действий в вашем приложении используйте свойство **nextLink** для разбиения на страницы.
+Получите последние действия для данного пользователя. Эта функция OData имеет некоторые поведения по умолчанию для работы как API «использовался последним». Служба запросов для последних [historyItems](../resources/projectrome_historyitem.md)и затем по запросу этих связанных действий. Действия будут упорядочены в соответствии с самыми последними **lastModified** на **historyItem**. Это означает, что действия без **historyItems** не будут включены в ответе. Разрешение UserActivity.ReadWrite.CreatedByApp будут также применены дополнительные фильтрации в ответ, чтобы возвращаются только действий, созданных приложением. В этом фильтрации на сервере может привести к пустой страницы Если пользователь является особенно active и другие приложения были созданы более последние действия. Для получения действия этого приложения, используйте свойство **nextLink** для разбиения по страницам.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -22,13 +22,13 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа. Поддерживаются следующие параметры:
+Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Поддерживаются следующие параметры запроса:
 
-- $expand — для свойства навигации **historyItems**.
-- $top — для ограничения максимального числа элементов на страницах.
-- $filter для свойства ** lastModifiedDateTime** — для ** activities** (действий) или **  historyItems** (элементов истории), если они были развернуты.
+- для свойства **historyItems** навигации разверните $.
+- Чтобы ограничить максимальное число элементов на страницах $top.
+- $filter свойства **lastModifiedDateTime** для **действия** или **historyItems**, если были развернуты.
 
-Ниже приведены некоторые примеры поддерживаемых запросов с кодировкой URL-адреса.
+Ниже приведены некоторые примеры поддерживаемых запросов с кодировкой URL-адрес.
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -42,7 +42,7 @@ GET /me/activities/recent
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Авторизация | строка | Bearer {токен}. Обязательный.|
+|Authorization | string | Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -50,7 +50,7 @@ GET /me/activities/recent
 
 ## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` с последними действиями пользователя в приложении.
+Успешно завершена, этот метод возвращает `200 OK` код ответа с помощью последние действия пользователя для приложения.
 
 ## <a name="example"></a>Пример
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
               "addImageQuery": false,
               },
@@ -101,7 +101,7 @@ Content-Type: application/json
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"

@@ -4,7 +4,7 @@
 
 Вы можете просмотреть все параметры почтового ящика или получить определенные параметры.
 
-Часовой пояс относится к предпочтительным параметрам, настраиваемым пользователями. Допустимые форматы часовых поясов включают в себя форматы Windows и [IANA, или Internet Assigned Numbers Authority](http://www.iana.org/time-zones) (последний еще зовется форматом часового пояса Олсона). Формат Windows используется по умолчанию. 
+Часовой пояс относится к предпочтительным параметрам, настраиваемым пользователями. Допустимые форматы часовых поясов включают в себя форматы Windows и [IANA, или Internet Assigned Numbers Authority](https://www.iana.org/time-zones) (последний еще зовется форматом часового пояса Олсона). Формат Windows используется по умолчанию. 
 
 Когда вы получаете предпочтительный часовой пояс пользователя, часовой пояс возвращается в том формате, который был настроен. Чтобы задать определенный формат часового пояса (Windows или IANA), сначала [обновите предпочтительный часовой пояс в этом формате как параметр почтового ящика](user_update_mailboxsettings.md). Затем вы сможете получить часовой пояс в этом формате. Кроме того, вы можете управлять преобразованием форматов в своем приложении.
 
@@ -18,13 +18,13 @@
 |Для приложений | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-Получение всех параметров почтового ящика пользователя: <!-- { "blockType": "ignored" } -->
+Для получения всех параметров почтового ящика для пользователя:<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Получение определенных параметров, например только параметров автоматических ответов, языкового стандарта, часового пояса или рабочего времени: <!-- { "blockType": "ignored" } -->
+Получение определенных параметров -, например только автоматический отвечает параметры, язык, часовой пояс или рабочее время:<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -39,11 +39,11 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -68,7 +68,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Ответ 1
 Отклик включает все параметры почтового ящика. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Запрос 2
+##### <a name="request-2"></a>Запрос 2
 Во втором примере показано, как получить только параметры автоматических ответов почтового ящика пользователя, выполнившего вход в систему.
 <!-- {
   "blockType": "request",

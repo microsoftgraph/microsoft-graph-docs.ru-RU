@@ -1,6 +1,4 @@
-# <a name="deviceenrollmenttype-enum-type"></a>тип перечисления deviceEnrollmentType
-
-> **Важно:** API бета-версии в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+# <a name="deviceenrollmenttype-enum-type"></a>Тип перечисления deviceEnrollmentType
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -9,16 +7,16 @@
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|неизвестный|0|Значение по умолчанию, тип регистрации не собираются.|
-|userEnrollment|1|Регистрация управляемаяпользователем по каналу BYOD.|
-|deviceEnrollmentManager|2|Регистрация пользователя с учетной записью диспетчера устройства.|
-|appleBulkWithUser|3|Массовое включение Apple с вызовом пользователя (DEP, Apple Configurator).|
-|appleBulkWithoutUser|4|Массовое включение Apple без вызова пользователя (DEP, Apple Configurator, Mobile Config).|
-|windowsAzureADJoin|5|Windows 10 Azure AD Join.|
-|windowsBulkUserless|6|Массовая регистрация Windows 10 через ICD с сертификатом.|
-|windowsAutoEnrollment|7|Windows 10 автоматическая регистрация. (Добавление рабочей учетной записи)|
-|windowsBulkAzureDomainJoin|8|Windows 10 bulk Azure AD Join.|
-|windowsCoManagement|9|Совместное управление Windows 10, инициированное AutoPilot или групповой политикой.|
+|unknown|0|Тип регистрации значения по умолчанию не собираются.|
+|userEnrollment|1|Регистрация управляемых пользователя по каналу BYOD.|
+|deviceEnrollmentManager|2|Регистрация пользователя с учетной записью диспетчера устройств заявок через Интернет.|
+|appleBulkWithUser|3|Регистрация массового Apple с задачей пользователя (DEP, Apple Configurator).|
+|appleBulkWithoutUser|4|Apple массового заявок через Интернет без запроса пользователя (Config Mobile DEP конфигуратора Apple).|
+|windowsAzureADJoin|5|Присоединение к Windows Azure AD 10.|
+|windowsBulkUserless|6|Массовое 10 Windows подачи заявок через ICD с сертификатом.|
+|windowsAutoEnrollment|7|Windows 10 автоматической подачи заявок. (Добавление учетной записи работы)|
+|windowsBulkAzureDomainJoin|8|Windows 10 в пакетном режиме присоединиться к Azure AD.|
+|windowsCoManagement|9|Windows 10 совместного управления, вызванные автопилот или групповой политики.|
 
 
 

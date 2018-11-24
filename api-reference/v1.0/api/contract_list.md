@@ -22,7 +22,7 @@ GET /contracts
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки отклика. 
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика. 
 
 > Для свойств customerId, defaultDomainName и displayName поддерживается фильтрация.
 

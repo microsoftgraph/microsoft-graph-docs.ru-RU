@@ -1,6 +1,6 @@
-# <a name="list-sections"></a>Список разделов
+# <a name="list-sections"></a>Перечисление разделов
 
-Получение списка объектов [onenoteSection](../resources/section.md).
+Получение списка объектов [onenoteSection](../resources/section.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/sections
 GET /sites/{id}/onenote/sections
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
 По умолчанию используется порядок сортировки `name asc`.
 
@@ -28,7 +28,7 @@ GET /sites/{id}/onenote/sections
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -36,7 +36,7 @@ GET /sites/{id}/onenote/sections
 
 ## <a name="response"></a>Ответ
 
-В случае успеха, этот метод возвращает `200 OK` код ответа и коллекцию объектов [onenoteSection](../resources/section.md) в теле ответа.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [onenoteSection](../resources/section.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

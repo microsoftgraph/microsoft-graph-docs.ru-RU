@@ -1,11 +1,11 @@
 # <a name="get-calendar"></a>Получение календаря
 
-Получение свойств и связей объекта [calendar](../resources/calendar.md). Это может быть календарь для ресурса [user](../resources/user.md) или календарь по умолчанию для ресурса [group](../resources/group.md), представляющего группу Office 365.
+Получение свойств и связей объекта [calendar](../resources/calendar.md). Это может быть календарь для ресурса [user](../resources/user.md) или стандартный календарь для ресурса [group](../resources/group.md), представляющего группу Office 365.
 
-Существует два сценария, в которых программа может получить календарь другого пользователя.
+Существует два сценария, где приложения можно получить календаря другого пользователя.
 
-* Если программа имеет разрешения для приложения, или
-* Если у программы есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился календарем с этим пользователем или предоставил этому пользователю делегированный доступ. См. [подробности и пример](../../../concepts/outlook-get-shared-events-calendars.md).
+* Если приложение имеет разрешения приложения, или,
+* Если приложение имеет соответствующей делегированных [разрешений](#permissions) от одного пользователя и другой пользователь общий календарь с этим пользователем или, получает делегированный доступ для пользователя, который. В разделе [сведения и примеры](../../../concepts/outlook-get-shared-events-calendars.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
@@ -17,13 +17,13 @@
 |Для приложений | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } --> [Календарь](../resources/calendar.md) пользователя или группы по умолчанию.
+<!-- { "blockType": "ignored" } -->Пользователя или группы по умолчанию [календаря](../resources/calendar.md).
 ```http
 GET /me/calendar
 GET /users/{id | userPrincipalName}/calendar
 GET /groups/{id}/calendar
 ```
-[Календарь](../resources/calendar.md) пользователя в группе по умолчанию [calendarGroup](../resources/calendargroup.md).
+Экземпляр [calendar](../resources/calendar.md) пользователя в экземпляре по умолчанию [calendarGroup](../resources/calendargroup.md).
 ```http
 GET /me/calendars/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}
@@ -37,11 +37,11 @@ GET /me/calendarGroups/{id}/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -61,6 +61,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 ```
 ##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

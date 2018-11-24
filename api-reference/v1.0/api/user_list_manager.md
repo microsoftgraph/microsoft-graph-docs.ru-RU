@@ -16,7 +16,7 @@
 GET /users/{id | userPrincipalName}/manager
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
@@ -39,8 +39,8 @@ GET /users/{id | userPrincipalName}/manager
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": false,

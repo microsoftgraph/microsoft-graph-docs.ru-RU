@@ -16,7 +16,7 @@
 GET /planner/tasks
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод требует указания [фильтра](http://graph.microsoft.io/docs/overview/query_parameters) по идентификатору плана.
+Этот метод требует указания [фильтра](https://developer.microsoft.com/graph/docs/concepts/query_parameters) по идентификатору плана.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

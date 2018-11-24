@@ -24,7 +24,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Авторизация|&lt;Токен&gt; носителя. Обязательный.|
 |Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -34,10 +34,10 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resourceName|Строка|Имя ресурса, с которым выполняется эта операция.|
-|actionName|Строка|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально кратким (только несколько слов).|
-|description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над обозначением операции при наведении указателя мыши на портале Azure.|
+|id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
+|resourceName|String|Имя ресурса, с которым выполняется эта операция.|
+|actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально кратким (только несколько слов).|
+|description|String|Описание операции с ресурсом. Используется в тексте, который отображается над обозначением операции при наведении указателя мыши на портале Azure.|
 
 
 
@@ -50,9 +50,10 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations/{resourceOperationId}
 Content-type: application/json
-Content-length: 122
+Content-length: 178
 
 {
+  "@odata.type": "#microsoft.graph.resourceOperation",
   "resourceName": "Resource Name value",
   "actionName": "Action Name value",
   "description": "Description value"
@@ -60,7 +61,7 @@ Content-length: 122
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -74,11 +75,6 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
-
-
-
-
-
 
 
 

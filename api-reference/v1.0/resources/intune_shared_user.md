@@ -7,11 +7,11 @@
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|Объекты [List users](../api/intune_shared_user_list.md).|Коллекция объектов [user](../resources/intune_shared_user.md)|Список свойств и связей объектов [user](../resources/intune_shared_user.md).|
-|Объект[Get user](../api/intune_shared_user_get.md).|Коллекция объектов [user](../resources/intune_shared_user.md)|Чтение свойств и связей объекта [user](../resources/intune_shared_user.md).|
-|Объект [Create user](../api/intune_shared_user_create.md).|Коллекция объектов [user](../resources/intune_shared_user.md)|Создание объекта [user](../resources/intune_shared_user.md).|
-|Объект [Delete user](../api/intune_shared_user_delete.md).|Нет|Удаляет объект [user](../resources/intune_shared_user.md).|
-|Объект [Update user](../api/intune_shared_user_update.md).|[пользователь](../resources/intune_shared_user.md)|Обновление свойств объекта [user](../resources/intune_shared_user.md).|
+|Объекты [список пользователей](../api/intune_shared_user_list.md) .|Коллекция объектов [user](../resources/intune_shared_user.md)|Список свойств и связей объектов [user](../resources/intune_shared_user.md).|
+|[Получение пользовательского](../api/intune_shared_user_get.md) объекта.|Коллекция объектов [user](../resources/intune_shared_user.md)|Чтение свойств и связей объекта [user](../resources/intune_shared_user.md).|
+|Объект [Создать пользователя](../api/intune_shared_user_create.md) .|Коллекция объектов [user](../resources/intune_shared_user.md)|Создание объекта [user](../resources/intune_shared_user.md).|
+|[Удаление пользователя](../api/intune_shared_user_delete.md).|Нет|Удаляет объект [user](../resources/intune_shared_user.md).|
+|Объект [пользователя обновления](../api/intune_shared_user_update.md) .|[user](../resources/intune_shared_user.md)|Обновление свойств объекта [user](../resources/intune_shared_user.md).|
 |**Управление устройствами**|
 |[Действие removeAllDevicesFromManagement](../api/intune_shared_user_removealldevicesfrommanagement.md)|Нет|Прекращение управления всеми устройствами для этого пользователя|
 |**Мобильное приложение управления (MAM)**|
@@ -22,8 +22,8 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ид|Строка|Уникальный идентификатор пользователя.|
-|**Адаптация**|
+|id|String|Уникальный идентификатор пользователя.|
+|**Адаптация новых сотрудников**|
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 
 
@@ -45,7 +45,7 @@
   "openType": true,
   "@odata.type": "microsoft.graph.user"
 }
--->
+--> 
 ``` json
 {
   "@odata.type": "#microsoft.graph.user",

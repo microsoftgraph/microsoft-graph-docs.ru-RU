@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки отклика.  Для получения надежных результатов применяйте параметры запросов [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) на странице. Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.  Для получения надежных результатов применяйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) на странице. Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -30,7 +30,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика  и коллекцию объектов WorkbookTableRow в тексте отклика.`200 OK` [ ](../resources/tablerow.md)
+Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [WorkbookTableRow](../resources/tablerow.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -42,7 +42,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -63,7 +63,8 @@ Content-length: 82
   ]
 }
 ```
-> **Примечание.** Используйте параметры запросов [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter), чтобы просматривать постранично большое количество строк.
+> 
+  **Примечание.** Используйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter), чтобы просматривать постранично большое количество строк.
 
 Пример. 
 

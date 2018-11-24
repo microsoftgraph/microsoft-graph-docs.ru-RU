@@ -4,7 +4,7 @@
 
 Обновление свойств объекта [iosVppEBook](../resources/intune_books_iosvppebook.md).
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -21,11 +21,11 @@
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [iosVppEBook](../resources/intune_books_iosvppebook.md) в формате JSON.
@@ -34,22 +34,22 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|displayName|Строка|Имя электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|description|Строка|Описание. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|publisher|Строка|Издатель. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания электронной книги. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги. Унаследован от объекта [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|Строка|URL-адрес страницы с дополнительными сведениями. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
-|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности. Наследуется от [managedEBook](../resources/intune_books_managedebook.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|displayName|String|Имя электронной книги. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|description|String|Описание. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|publisher|String|Издатель. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Обложка книги. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания электронной книги. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от объекта [managedEBook](../resources/intune_books_managedebook.md).|
 |vppTokenId|Guid|Идентификатор токена VPP.|
-|appleId|Строка|Идентификатор Apple ID, связанный с токеном VPP.|
-|vppOrganizationName|Строка|Название организации для токена VPP.|
-|жанры|Коллекция String|Жанры.|
-|язык|Строка|Язык.|
-|продавец|Строка|Продавец.|
+|appleId|String|Идентификатор Apple ID, связанный с токеном VPP.|
+|vppOrganizationName|String|Название организации для токена VPP.|
+|genres|Коллекция String|Жанры.|
+|language|String|Язык.|
+|seller|String|Продавец.|
 |totalLicenseCount|Int32|Общее число лицензий.|
 |usedLicenseCount|Int32|Число используемых лицензий.|
 
@@ -64,9 +64,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}
 Content-type: application/json
-Content-length: 803
+Content-length: 792
 
 {
+  "@odata.type": "#microsoft.graph.iosVppEBook",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -76,10 +77,9 @@ Content-length: 803
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -93,11 +93,11 @@ Content-length: 803
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 961
+Content-Length: 964
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -115,7 +115,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -127,11 +127,6 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
-
-
-
-
-
 
 
 

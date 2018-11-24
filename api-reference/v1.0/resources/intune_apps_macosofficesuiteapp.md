@@ -12,7 +12,7 @@
 |[Список macOSOfficeSuiteApps](../api/intune_apps_macosofficesuiteapp_list.md)|Коллекция [macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md)|Список свойств и связей объектов [macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md).|
 |[Получение macOSOfficeSuiteApp](../api/intune_apps_macosofficesuiteapp_get.md)|[macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md)|Считывание свойств и связей объекта [macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md).|
 |[Создание macOSOfficeSuiteApp](../api/intune_apps_macosofficesuiteapp_create.md)|[macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md)|Создание объекта [macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md).|
-|[Удаление macOSOfficeSuiteApp](../api/intune_apps_macosofficesuiteapp_delete.md)|Нет|Удаление экземпляра [macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md).|
+|[Удаление macOSOfficeSuiteApp](../api/intune_apps_macosofficesuiteapp_delete.md)|None|Удаление экземпляра [macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md).|
 |[Обновление macOSOfficeSuiteApp](../api/intune_apps_macosofficesuiteapp_update.md)|[macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md)|Обновление свойств объекта [macOSOfficeSuiteApp](../resources/intune_apps_macosofficesuiteapp.md).|
 
 ## <a name="properties"></a>Свойства
@@ -31,7 +31,7 @@
 |owner|String|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение может быть назначено только в случае публикации приложения. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune_apps_mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -41,12 +41,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileApp",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.macOSOfficeSuiteApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOSOfficeSuiteApp",
@@ -70,11 +70,6 @@
   "publishingState": "String"
 }
 ```
-
-
-
-
-
 
 
 

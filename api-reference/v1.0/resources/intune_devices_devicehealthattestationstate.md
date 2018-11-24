@@ -43,10 +43,11 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceHealthAttestationState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceHealthAttestationState",
@@ -84,11 +85,6 @@
   "healthAttestationSupportedStatus": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -9,13 +9,14 @@
 |segments|Коллекция строк|Н/Д|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.uri"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.uri",
@@ -24,11 +25,6 @@
   ]
 }
 ```
-
-
-
-
-
 
 
 

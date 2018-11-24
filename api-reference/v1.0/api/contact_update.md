@@ -11,8 +11,7 @@
 |Для приложений | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-Объект [contact](../resources/contact.md) из стандартной пользовательской папки [contactFolder](../resources/contactfolder.md).
+<!-- { "blockType": "ignored" } -->[Обратитесь](../resources/contact.md) в пользователя по умолчанию [contactFolder](../resources/contactfolder.md).
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -47,7 +46,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String|Имена детей контакта.|
 |companyName|String|Название компании контакта.|
 |department|String|Отдел контакта.|
-|displayName|String|Отображаемое имя контакта.|
+|displayName|String|Отображаемое имя контакта. Обратите внимание, что более поздние обновления для других свойств может стать причиной автоматически подставленное значение для перезаписи значение displayName, заданные. Чтобы сохранить существующие значения, всегда включите его в качестве displayName в операции обновления.|
 |emailAddresses|Коллекция [EmailAddress](../resources/emailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
 |generation|String|Поколение контакта.|
@@ -71,7 +70,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |title|String|Звание контакта.|
 |yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
-|yomiSurname|Строка|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
+|yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
 
 ## <a name="response"></a>Отклик
 
@@ -99,7 +98,8 @@ Content-length: 1977
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,7 +144,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

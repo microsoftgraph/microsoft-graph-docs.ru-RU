@@ -12,20 +12,20 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Понятное имя отчета о состоянии.|
-|ид|Строка|Ключ объекта.|
-|версия|Строка|Версия объекта.|
+|displayName|String|Понятное имя отчета о состоянии.|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatus",
@@ -34,11 +34,6 @@
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

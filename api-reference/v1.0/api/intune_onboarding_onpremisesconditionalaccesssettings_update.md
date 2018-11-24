@@ -24,8 +24,8 @@ PATCH /deviceManagement/conditionalAccessSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Авторизация|&lt;Токен&gt; носителя. Обязательный.|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) в формате JSON.
@@ -34,11 +34,11 @@ PATCH /deviceManagement/conditionalAccessSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|string|Н/Д|
-|включено|Логическое|Указывает, включен ли в этой организации условный доступ к локальной среде|
+|id|String|Н/Д|
+|enabled|Boolean|Указывает, включен ли в этой организации условный доступ к локальной среде|
 |includedGroups|Коллекция объектов Guid|Группы пользователей, для которых включается условный доступ к локальной среде. У всех пользователей в этих группах должны быть управляемые мобильные устройства, соответствующие требованиям для доступа к почте.|
 |excludedGroups|Коллекция объектов Guid|Группы пользователей, на которые не распространяется условный доступ к локальной среде. На всех пользователей из этих группах не будет распространяться политика условного доступа.|
-|overrideDefaultRule|Логическое|Указывает, следует ли переопределять правило доступа по умолчанию при разрешении устройства, чтобы обеспечить предоставление доступа.|
+|overrideDefaultRule|Boolean|Указывает, следует ли переопределять правило доступа по умолчанию при разрешении устройства, чтобы обеспечить предоставление доступа.|
 
 
 
@@ -51,45 +51,41 @@ PATCH /deviceManagement/conditionalAccessSettings
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 Content-type: application/json
-Content-length: 195
+Content-length: 275
 
 {
+  "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 318
+Content-Length: 324
 
 {
   "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "String"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "String"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [detectedApp](../resources/intune_devices_detectedapp.md) в формате JSON.
@@ -34,9 +34,9 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|String (строка)|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
-|displayName|String (строка)|Имя обнаруженного приложения. Только для чтения|
-|версия|String (строка)|Версия обнаруженного приложения. Только для чтения|
+|id|String|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
+|displayName|String|Имя обнаруженного приложения. Только для чтения|
+|version|String|Версия обнаруженного приложения. Только для чтения|
 |sizeInByte|Int64|Размер обнаруженного приложения в байтах. Только для чтения|
 |deviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
 
@@ -51,9 +51,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json
-Content-length: 117
+Content-length: 167
 
 {
+  "@odata.type": "#microsoft.graph.detectedApp",
   "displayName": "Display Name value",
   "version": "Version value",
   "sizeInByte": 10,
@@ -62,7 +63,7 @@ Content-length: 117
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -77,11 +78,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

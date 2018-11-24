@@ -6,21 +6,26 @@
 
 |**Сценарий GET**|**Поддерживаемые ресурсы**|**Текст ответа**|
 |:-----|:-----|:-----|
-|Получение определенного расширения из экземпляра известного ресурса.| [Устройство](../resources/device.md), [событие](../resources/event.md), [группа](../resources/group.md), [событие группы](../resources/event.md), [публикация группы](../resources/post.md), [сообщение](../resources/message.md), [организация](../resources/organization.md), [личный контакт](../resources/contact.md), [пользователь](../resources/user.md) | Только открытое расширение.|
-|Получение экземпляра известного ресурса, дополненного определенным расширением.|Устройство, событие, группа, событие группы, публикация группы, сообщение, организация, личный контакт, пользователь |Экземпляр известного ресурса, дополненный открытым расширением.|
-|Поиск экземпляров ресурсов и их дополнение определенным расширением. | Событие, событие группы, публикация группы, сообщение, личный контакт|Экземпляры ресурса, дополненные открытым расширением.|
+|Получение определенного расширения из экземпляра известного ресурса.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Только открытое расширение.|
+|Получение экземпляра известного ресурса, дополненного определенным расширением.|Device, event, group, group event, group post, message, organization, personal contact, user |Экземпляр известного ресурса, дополненный открытым расширением.|
+|Поиск экземпляров ресурсов и их дополнение определенным расширением. |Event, group event, group post, message, personal contact|Экземпляры ресурса, дополненные открытым расширением.|
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, содержащего расширение). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+В зависимости от ресурсов, содержащий данное расширение имени файла и разрешение типа (делегированные или приложение) запрошенный, разрешение, указанное в следующей таблице минимальными правами требуется для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-|**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
 |:-----|:-----|:-----|:-----|
-| [Устройство](../resources/device.md) | Directory.Read.All | [Событие](../resources/event.md) | Calendars.Read |
-| [Группа](../resources/group.md) | Group.Read.All | [[Event](../resources/event.md) для групп](../resources/event.md) | Group.Read.All |
-| [[Post](../resources/post.md) для групп](../resources/post.md) | Group.Read.All | [Сообщение](../resources/message.md) | Mail.Read |
-| [Организация](../resources/organization.md) | Directory.Read.All | [[Contact](../resources/contact.md) (личный контакт)](../resources/contact.md) | Contacts.Read |
-| [Пользователь](../resources/user.md) | User.ReadBasic.All | | |
+| [device](../resources/device.md) | Directory.Read.All | Не поддерживается | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
+| [event](../resources/event.md) для групп | Group.Read.All | Не поддерживается | Не поддерживается |
+| [post](../resources/post.md) для групп | Group.Read.All | Не поддерживается | Group.Read.All |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [organization](../resources/organization.md) | User.Read | Не поддерживается | Не поддерживается |
+| [contact](../resources/contact.md) (личный контакт) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -86,18 +91,18 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ## <a name="path-parameters"></a>Параметры пути
 |Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|ИД|строковый|Заполнитель уникального идентификатора для объекта в соответствующей коллекции, например сообщения, события или контакта. Обязательный. Не следует путать его со свойством **id** объекта **openTypeExtension**.|
-|extensionId|строковый|Заполнитель имени расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полного имени, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве **id** при создании расширения. Обязательный.|
+|Id|string|Заполнитель уникального идентификатора для объекта в соответствующей коллекции, например сообщения, события или контакта. Обязательный. Не следует путать его со свойством **id** объекта **openTypeExtension**.|
+|extensionId|string|Заполнитель имени расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полного имени, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве **id** при создании расширения. Обязательный.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Убедитесь, что вы применяете [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке `$filter`.
+Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке `$filter`.
 
 |Имя|Значение|Описание|
 |:---------------|:--------|:-------|
-|$filter|строковый|Возвращает расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
-|$filter с **любым** оператором|строковый|Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
-|$expand|строковый|Дополняет экземпляр ресурса расширением. |
+|$filter|string|Возвращает расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
+|$filter с **любым** оператором|string|Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
+|$expand|string|Дополняет экземпляр ресурса расширением. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
@@ -134,7 +139,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
-#### <a name="response-1"></a>Отклик 1
+#### <a name="response-1"></a>Отклик 1
 Ниже представлен отклик для первого примера.
 <!-- {
   "blockType": "response",
@@ -161,7 +166,7 @@ Content-type: application/json
 ****
 
 
-#### <a name="request-2"></a>Запрос 2
+#### <a name="request-2"></a>Запрос 2
 
 Во втором примере показано, как сослаться на расширение по его имени и получить расширение в указанном событии группы.
 

@@ -1,10 +1,10 @@
-# <a name="update-softwareupdatestatussummary"></a>Обновить softwareUpdateStatusSummary
+# <a name="update-softwareupdatestatussummary"></a>Update softwareUpdateStatusSummary
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Обновление свойств объекта [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md).
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -21,11 +21,11 @@
 PATCH /deviceManagement/softwareUpdateStatusSummary
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) в формате JSON.
@@ -34,7 +34,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |displayName|String|Имя политики.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
@@ -62,9 +62,10 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/softwareUpdateStatusSummary
 Content-type: application/json
-Content-length: 452
+Content-length: 518
 
 {
+  "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
   "displayName": "Display Name value",
   "compliantDeviceCount": 4,
   "nonCompliantDeviceCount": 7,
@@ -84,7 +85,7 @@ Content-length: 452
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -110,11 +111,6 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
-
-
-
-
-
 
 
 

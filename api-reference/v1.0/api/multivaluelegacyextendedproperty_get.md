@@ -6,73 +6,80 @@
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [[message](../resources/message.md);](../resources/message.md)
-- [[mailFolder](../resources/mailfolder.md);](../resources/mailfolder.md)
-- [[event](../resources/event.md);](../resources/event.md)
-- [[calendar](../resources/calendar.md);](../resources/calendar.md)
-- [[contact](../resources/contact.md);](../resources/contact.md)
-- [[contactFolder](../resources/contactfolder.md).](../resources/contactfolder.md) 
+- [calendar](../resources/calendar.md);
+- [contact](../resources/contact.md);
+- [contactFolder](../resources/contactfolder.md). 
+- [событие](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md) 
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
-- [event](../resources/event.md) для групп;
 - [calendar](../resources/calendar.md) для групп;
-- [post](../resources/post.md) для групп. 
+- [event](../resources/event.md) для групп;
+- [post](../resources/post.md) для групп.
 
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, который вы получаете). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+В зависимости от ресурса они будут расширенные свойства из и разрешение введите (делегированные или приложения) вы запроса, разрешение, указанное в следующей таблице является минимальным необходимым условием для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-- Mail.Read
-- Calendars.Read
-- Contacts.Read
-- Group.Read.All 
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [контакт](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [contactFolder](../resources/contactfolder.md). | Contacts.Read | Contacts.Read | Contacts.Read |
+| [событие](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [calendar](../resources/calendar.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
+| [event](../resources/event.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
+| [post](../resources/post.md) для групп. | Group.Read.All | Не поддерживается | Group.Read.All |
+| [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
  
 ## <a name="http-request"></a>HTTP-запрос
 
-Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
+Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
 
-Получение экземпляра объекта**message**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **сообщения** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **mailFolder**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **mailFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра объекта **event**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **событий** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **calendar**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **календаря** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **contact**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **контактов** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **contactFolder**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **contactFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **event** для группы: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **события** группы:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра объекта **post** для группы: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **публиковать** группы:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -81,7 +88,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ## <a name="path-parameters"></a>Параметры пути
 |Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|id_value|Строка|Идентификатор расширенного свойства, для которого необходимо найти совпадение. Свойство должно иметь один из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный.|
+|id_value|String|Идентификатор расширенного свойства, для которого необходимо найти совпадение. Свойство должно иметь один из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

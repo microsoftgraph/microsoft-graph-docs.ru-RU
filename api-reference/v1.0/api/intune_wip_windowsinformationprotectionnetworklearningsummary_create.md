@@ -24,8 +24,8 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта windowsInformationProtectionNetworkLearningSummary в формате JSON.
@@ -34,8 +34,8 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
-|url|Строка|URL-адрес веб-сайта|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
 
@@ -59,7 +59,7 @@ Content-length: 137
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -72,11 +72,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 
