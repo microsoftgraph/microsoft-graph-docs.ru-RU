@@ -23,7 +23,7 @@
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -49,11 +49,6 @@
   }
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,6 +1,6 @@
 # <a name="list-plans"></a>Перечисление планов
 
-Получение списка объектов **plannerplan**, принадлежащих объекту [group](../resources/group.md).
+Получение списка объектов **plannerPlan** , принадлежащие объекта [групповой](../resources/group.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -40,7 +40,7 @@ GET /groups/{id}/planner/plans
 GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

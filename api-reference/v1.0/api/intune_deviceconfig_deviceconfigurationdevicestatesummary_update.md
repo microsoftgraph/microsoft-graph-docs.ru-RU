@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md) в формате JSON.
@@ -34,7 +34,7 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -54,9 +54,10 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurationDeviceStateSummaries
 Content-type: application/json
-Content-length: 214
+Content-length: 290
 
 {
+  "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStateSummary",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -68,7 +69,7 @@ Content-length: 214
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -86,11 +87,6 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

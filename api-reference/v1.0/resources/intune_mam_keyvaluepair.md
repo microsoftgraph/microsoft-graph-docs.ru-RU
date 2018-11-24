@@ -6,17 +6,18 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|String|Имя для этой пары "ключ-значение"|
-|value|String|Значение для этой пары "ключ-значение"|
+|name|Строка|Имя для этой пары "ключ-значение"|
+|value|Строка|Значение для этой пары "ключ-значение"|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
-<!--{
+Ниже этот ресурс представлен в формате JSON.
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.keyValuePair"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.keyValuePair",
@@ -24,11 +25,6 @@
   "value": "String"
 }
 ```
-
-
-
-
-
 
 
 

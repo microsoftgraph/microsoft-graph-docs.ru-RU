@@ -1,8 +1,8 @@
-# <a name="autopilotdevicestream-function"></a>Функция autopilotDeviceStream
+# <a name="autopilotdevicestream-function"></a>функция autopilotDeviceStream
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Создание запроса отправки с автоматической потоковой передачей для устройств в ней.
+Создание запроса загрузки с потоком автопилот устройство в нем.
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
@@ -24,8 +24,9 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -42,6 +43,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDe
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -51,11 +53,6 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
-
-
-
-
-
 
 
 

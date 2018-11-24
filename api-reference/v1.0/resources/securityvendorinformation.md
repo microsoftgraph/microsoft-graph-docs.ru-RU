@@ -1,20 +1,20 @@
 # <a name="securityvendorinformation-resource-type"></a>Тип ресурса securityVendorInformation
 
-Содержит сведения о безопасности продуктов и услуг производителя, поставщика и субпоставщика (например, производитель=Майкрософт; поставщик=ATP Защитник Windows; субпоставщик=AppLocker).
+Содержит сведения о безопасности продуктов и услуг поставщика, поставщик и subprovider (например, поставщика = корпорации Майкрософт; поставщика = ATP Защитник Windows; subProvider = AppLocker).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|provider *|String|Определенный поставщик (продуктов/услуг - не организация-производитель); например, WindowsDefenderATP.|
-|providerVersion|String|Версия поставщика или субпоставщика (при наличии), которая создала оповещение.|
-|subProvider|String|Определенный субпоставщик (в разделе статистической обработки поставщика); например, WindowsDefenderATP.SmartScreen.|
-|vendor *|String|Имя оповещения производителя (например, Microsoft, Dell, FireEye).|
-(\* указывает на обязательный характер.)
+|Поставщик |String|Определенного поставщика (продуктов и услуг - не поставщика организации); Например WindowsDefenderATP.|
+|providerVersion|String|Версия поставщика или subprovider, если он существует, создавшее оповещение. *Required*|
+|subProvider|String|Определенные subprovider (в разделе статистической обработки поставщика); Например WindowsDefenderATP.SmartScreen.|
+|поставщика |String|Имя оповещения поставщика (например, Microsoft, Dell, FireEye). *Required*|
+
 
 ## <a name="json-representation"></a>Представление JSON
 
-Далее отображено представление ресурса JSON.
+Соответствовать является представлением JSON ресурса.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

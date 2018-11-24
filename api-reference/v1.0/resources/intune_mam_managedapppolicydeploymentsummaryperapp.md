@@ -13,10 +13,11 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
@@ -26,11 +27,6 @@
   "configurationAppliedUserCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

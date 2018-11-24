@@ -6,23 +6,22 @@
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-| Тип&nbsp; разрешения (по &nbsp;рабочему процессу)&nbsp; | Разрешения (в порядке убывания привилегий) |
+| Разрешение&nbsp;тип&nbsp;(с&nbsp;рабочего процесса) | Разрешения (в порядке убывания привилегий) |
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) |
-| &nbsp; &nbsp; Аудит | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; Условия организации | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Корпоративная регистрация | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; Конфигурация устройства | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Защита конечной точки | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Регистрация | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Уведомления | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Адаптация | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; Удаленная помощь | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Управление расходами на телекоммуникации | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Windows Information Protection | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Аудита | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Компании термины | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Корпоративной подачи заявок | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp; Конфигурация устройств | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Защиты конечной точки | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Уведомлений | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Адаптация новых сотрудников | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Управления доступом на основе ролей | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp; Удаленный помощник | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Управления расходами телекоммуникации | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Защита информации Windows | DeviceManagementApps.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений | Не поддерживается. |
 
@@ -38,7 +37,8 @@ PATCH /deviceManagement
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -48,12 +48,12 @@ PATCH /deviceManagement
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства|
-|**Конфигурация устройства**|
+|id|String|Уникальный идентификатор устройства.|
+|**Конфигурация устройств**|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|**Адаптация**|
+|**Адаптация новых сотрудников**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.|
 
 Поддержка свойств текст запроса изменяется в зависимости от рабочего процесса.
@@ -96,7 +96,7 @@ Content-length: 751
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. Возвращаемые свойства различаются в зависимости от рабочего процесса и контекста.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Возвращаемых свойств различаться в зависимости от рабочего процесса и контекста.
 
 ``` http
 HTTP/1.1 200 OK

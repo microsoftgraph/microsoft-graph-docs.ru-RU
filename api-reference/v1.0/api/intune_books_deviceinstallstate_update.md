@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -35,15 +35,15 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|deviceName|Строка|Имя устройства.|
-|deviceId|Строка|Идентификатор устройства.|
+|id|String|Ключ объекта.|
+|deviceName|String|Имя устройства.|
+|deviceId|String|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune_books_installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Строка|Код ошибки для сбоев при установке.|
-|osVersion|Строка|Версия ОС.|
-|osDescription|Строка|Описание ОС.|
-|userName|Строка|Имя пользователя устройства.|
+|errorCode|String|Код ошибки для сбоев при установке.|
+|osVersion|String|Версия ОС.|
+|osDescription|String|Описание ОС.|
+|userName|String|Имя пользователя устройства.|
 
 
 
@@ -56,9 +56,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}
 Content-type: application/json
-Content-length: 317
+Content-length: 374
 
 {
+  "@odata.type": "#microsoft.graph.deviceInstallState",
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
@@ -71,7 +72,7 @@ Content-length: 317
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -90,11 +91,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
-
-
-
 
 
 

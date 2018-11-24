@@ -24,8 +24,8 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта auditEvent в формате JSON.
@@ -34,18 +34,18 @@ POST /deviceManagement/auditEvents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|Ключ объекта.|
-|displayName|Строка|Отображаемое имя события.|
-|componentName|Строка|Имя компонента.|
-|субъект|[auditActor](../resources/intune_auditing_auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|действие|Строка|Понятное имя действия.|
+|id|String|Ключ объекта.|
+|displayName|String|Отображаемое имя события.|
+|componentName|String|Имя компонента.|
+|actor|[auditActor](../resources/intune_auditing_auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
+|activity|String|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|Строка|Тип выполненного действия.|
-|activityOperationType|Строка|Тип операции HTTP для действия.|
-|activityResult|Строка|Результат действия.|
+|activityType|String|Тип выполненного действия.|
+|activityOperationType|String|Тип операции HTTP для действия.|
+|activityResult|String|Результат действия.|
 |correlationId|Guid|Идентификатор клиентского запроса, используемый для согласования действий в системе.|
-|ресурсы|Коллекция [auditResource](../resources/intune_auditing_auditresource.md)|Изменяемые ресурсы.|
-|категория|Строка|Категория аудита.|
+|resources|Коллекция [auditResource](../resources/intune_auditing_auditresource.md)|Изменяемые ресурсы.|
+|category|String|Категория аудита.|
 
 
 
@@ -58,7 +58,7 @@ POST /deviceManagement/auditEvents
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1387
+Content-length: 1390
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -82,7 +82,7 @@ Content-length: 1387
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -104,11 +104,11 @@ Content-length: 1387
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1436
+Content-Length: 1439
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -133,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -153,11 +153,6 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
-
-
-
-
-
 
 
 

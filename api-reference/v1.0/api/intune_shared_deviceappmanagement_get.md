@@ -1,12 +1,12 @@
-# <a name="get-deviceappmanagement"></a>Получение deviceAppManagement
+# <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Чтение свойств и связей объекта [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md).
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Необходимые разрешения
 
-Чтобы вызвать этот API, необходимо одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).  Обратите внимание на то, что соответствующее разрешение изменяется в зависимости от рабочего процесса.
+Чтобы вызвать этот интерфейс API необходимо одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).  Обратите внимание на то, что соответствующим разрешением изменяется в зависимости от рабочего процесса.
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -24,12 +24,13 @@ GET /deviceAppManagement
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -44,8 +45,8 @@ GET /deviceAppManagement
 GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
-## <a name="example-response"></a>Пример отклика
-Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+## <a name="example-response"></a>Пример ответа
+Для краткости может усекаться объект ответа, показано ниже. Будут возвращены все свойства из фактический вызов.
 
 ``` http
 HTTP/1.1 200 OK

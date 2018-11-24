@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) в формате JSON.
@@ -37,12 +37,12 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Н/Д|
-|configurationDeployedUserCount|Int32|Н/Д|
-|lastRefreshTime|DateTimeOffset|Н/Д|
-|configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md)|Н/Д|
-|id|Строка|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|displayName|String|Пока не задокументировано.|
+|configurationDeployedUserCount|Int32|Пока не задокументировано.|
+|lastRefreshTime|DateTimeOffset|Пока не задокументировано.|
+|configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md)|Пока не задокументировано.|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 
 
@@ -55,9 +55,10 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 Content-type: application/json
-Content-length: 516
+Content-length: 588
 
 {
+  "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
   "displayName": "Display Name value",
   "configurationDeployedUserCount": 14,
   "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
@@ -76,7 +77,7 @@ Content-length: 516
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -101,11 +102,6 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

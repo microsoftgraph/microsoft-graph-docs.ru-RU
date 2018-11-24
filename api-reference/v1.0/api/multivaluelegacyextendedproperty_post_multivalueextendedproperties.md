@@ -4,29 +4,36 @@
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [[message](../resources/message.md);](../resources/message.md)
-- [[mailFolder](../resources/mailfolder.md);](../resources/mailfolder.md)
-- [[event](../resources/event.md);](../resources/event.md)
-- [[calendar](../resources/calendar.md);](../resources/calendar.md)
-- [[contact](../resources/contact.md);](../resources/contact.md)
-- [[contactFolder](../resources/contactfolder.md).](../resources/contactfolder.md) 
+- [calendar](../resources/calendar.md);
+- [contact](../resources/contact.md);
+- [contactFolder](../resources/contactfolder.md). 
+- [событие](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
-- [event](../resources/event.md) для групп;
 - [calendar](../resources/calendar.md) для групп;
+- [event](../resources/event.md) для групп;
 - [post](../resources/post.md) для групп. 
 
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, в котором создается расширенное свойство). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+В зависимости от ресурса при создании расширенные свойства в и введите (делегированные или приложения) вы запроса на разрешение, разрешение, указанное в следующей таблице является минимальным необходимым условием для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-- Mail.ReadWrite
-- Calendars.ReadWrite
-- Contacts.ReadWrite
-- Group.ReadWrite.All
- 
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [контакт](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md). | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
+| [calendar](../resources/calendar.md) для групп; | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [event](../resources/event.md) для групп; | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [post](../resources/post.md) для групп. | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+
 ## <a name="http-request"></a>HTTP-запрос
 Вы можете создавать расширенные свойства в новом или существующем экземпляре ресурса.
 
@@ -67,7 +74,7 @@ POST /groups/{id}/conversations
 
 Чтобы создать одно или несколько расширенных свойств в существующем экземпляре ресурса, укажите экземпляр в запросе и включите расширенное свойство в тело запроса.
 
-**Примечание.** Расширенное свойство невозможно создать в публикации существующей группы.
+**Примечание.** Расширенное свойство невозможно создать в существующем экземпляре post для групп.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -101,7 +108,7 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>Тело запроса
 
-Укажите JSON-текст каждого объекта [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) в свойстве коллекции **multiValueExtendedProperties** для экземпляра ресурса.
+Предоставьте тело в формате JSON для каждого объекта [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) в свойстве коллекции **multiValueExtendedProperties** для экземпляра ресурса.
 
 |Свойство|Тип|Описание|
 |:-----|:-----|:-----|
@@ -109,7 +116,7 @@ PATCH /groups/{id}/events/{id}
 |id|Строка|Чтобы идентифицировать свойства в коллекции **multiValueExtendedProperties**, укажите этот параметр для каждого из них. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
 |значение|строка|Укажите значение для каждого свойства в коллекции **multiValueExtendedProperties**. Обязательный параметр.|
 
-При создании расширенного свойства в _новом_ экземпляре ресурса помимо новой коллекции **multiValueExtendedProperties**, следует также указать JSON-представление этого экземпляра ресурса (то есть, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.).
+При создании расширенных свойств в _новый_ экземпляр ресурсов, в дополнение к новой коллекции **multiValueExtendedProperties** , для представления JSON этого ресурса экземпляра также (то есть, [сообщение](../resources/message.md), [mailFolder ](../resources/mailfolder.md), [событие](../resources/event.md), и т.д.).
 
 
 ## <a name="response"></a>Ответ
@@ -180,7 +187,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response-1"></a>Отклик 1
+##### <a name="response-1"></a>Отклик 1
 
 Отклик в результате успешного выполнения обозначен кодом `HTTP 201 Created` и включает в себя новое событие, подобно отклику при [создании просто события](../api/user_post_events.md). Отклик не включает только что созданные расширенные свойства.
 
@@ -189,7 +196,7 @@ Content-Type: application/json
 
 ****
 
-##### <a name="request-2"></a>Запрос 2
+##### <a name="request-2"></a>Запрос 2
 
 Во втором примере создается многозначное расширенное свойство для указанного сообщения. Это расширенное свойство — единственный элемент в коллекции **multiValueExtendedProperties**. Тело запроса включает следующие данные для расширенного свойства:
 

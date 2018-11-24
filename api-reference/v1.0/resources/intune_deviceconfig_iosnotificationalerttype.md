@@ -1,20 +1,15 @@
-# <a name="iosnotificationalerttype-enum-type"></a>тип перечисления iosNotificationAlertType
+# <a name="iosnotificationalerttype-enum-type"></a>Тип перечисления iosNotificationAlertType
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Тип оповещения параметров уведомления.
+Тип предупреждения параметров уведомления.
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение устройства по умолчанию, без назначения.|
-|banner|1|Баннер.|
-|modal|2|Модальное.|
-|none|3|Нет|
-
-
-
-
-
+|deviceDefault|0|Значение по умолчанию устройства, без цели.|
+|баннер|1|Заголовок.|
+|модальный|2|Модальные окна.|
+|Нет|3|Нет.|
 
 
 

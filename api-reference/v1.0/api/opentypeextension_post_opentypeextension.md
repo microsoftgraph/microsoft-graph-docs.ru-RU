@@ -2,25 +2,29 @@
 
 Создание открытого расширения (объекта [openTypeExtension](../resources/openTypeExtension.md)) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.
 
-> **Примечание:** Для создания открытых расширений ресурсов Outlook, см.**Специфики, относящиеся к Outlook** в разделе [Тип ресурса openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
+> **Примечание:** При создании open расширения Outlook ресурсов, содержатся в разделе **относящиеся к Outlook** в разделе [Тип ресурса openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, в котором создается расширение). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+В зависимости от разрешений и ресурсов, которое вы создаете расширения в тип (делегированные или приложение) запрошенный, разрешение, указанное в следующей таблице минимальными правами требуется для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-|**Поддерживаемый ресурс**|**Разрешение**|**Поддерживаемый ресурс**|**Разрешение** |
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
 |:-----|:-----|:-----|:-----|
-| [устройство](../resources/device.md) | Device.ReadWrite.All | [событие](../resources/event.md) | Calendars.ReadWrite |
-| [группа](../resources/group.md) | Group.ReadWrite.All | [[event](../resources/event.md) для групп](../resources/event.md) | Group.ReadWrite.All |
-| [[post](../resources/post.md) для групп](../resources/post.md) | Group.ReadWrite.All | [сообщение](../resources/message.md) | Mail.ReadWrite |
-| [организация](../resources/organization.md) | Directory.AccessAsUser.All | [[contact](../resources/contact.md) (личный контакт)](../resources/contact.md) | Contacts.ReadWrite |
-| [пользователь](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Не поддерживается | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | Не поддерживается | Group.ReadWrite.All |
+| [event](../resources/event.md) для групп | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [post](../resources/post.md) для групп | Group.ReadWrite.All | Не поддерживается | Group.ReadWrite.All |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | Не поддерживается | Не поддерживается |
+| [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>Создание расширения в новом экземпляре ресурса
 
-Использование того же запроса REST, который используется для создания экземпляра.
+Использование того же запроса REST, которая используется для создания экземпляра.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,9 +35,9 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Примечание:** Этот синтаксис показывает наиболее распространенные способы создания экземпляров поддерживаемых ресурсов. Все синтаксисы POST, которые позволяют вам создавать экземпляры этих ресурсов, поддерживая создание в них открытых расширений аналогичным образом.
+>**Примечание:** Этот синтаксис показаны наиболее распространенные способы создания экземпляров поддерживаемые ресурсов. Все синтаксис POST, которые можно создавать экземпляры этих ресурсов поддерживает создание open расширения в их аналогичным образом.
 
-В разделе [Текст запроса](#request-body) показано, как включить свойства нового экземпляра ресурса _и расширения_ в тексте запроса.
+В разделе [Тело запроса](#request-body) показано, как включить свойства нового экземпляра ресурса _и расширение_ в тело запроса.
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>Создание расширения в существующем экземпляре ресурса
 
@@ -52,7 +56,7 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Примечание:** Этот синтаксис показывает наиболее распространенные способы идентификации экземпляра ресурсов, для того чтобы создать его расширение. Все другие синтаксисы, позволяют легко идентифицировать экземпляры этих ресурсов, поддерживая создание в них открытых расширений аналогичным образом.
+>**Примечание:** Этот синтаксис показаны наиболее распространенные способы идентификации экземпляра ресурсов, чтобы создать расширение в его. Все другие синтаксисы, позволяет легко идентифицировать экземпляры этих ресурсов поддерживает создание open расширений в их аналогичным образом.
 
 В разделе [Тело запроса](#request-body) показано, как включить _расширение_ в тело запроса.
 
@@ -85,12 +89,12 @@ POST /users/{id|userPrincipalName}/extensions
 
 В зависимости от операции, можно использовать код ответа `201 Created` или `202 Accepted`.
 
-При создании расширения с помощью той же операции, которая используется для создания экземпляра ресурсов, операция возвращает один и тот же код ответа, который в свою очередь возвращается при использовании операции для создания экземпляра ресурсов без расширения.
-Ссылки на соответствующие разделы для создания экземпляра, как перечисленно [выше](#create-an-extension-in-a-new-resource-instance).
+При создании расширения с помощью той же операции, которая используется для создания экземпляра ресурсов, операция возвращает один и тот же код ответа, который возвращается при использовании операции для создания экземпляра ресурсов без расширения.
+Ссылки на соответствующие разделы для создания экземпляра как перечисленных [выше](#create-an-extension-in-a-new-resource-instance).
 
 ### <a name="response-body"></a>Текст ответа
 
-| Сценарий       | Ресурс  | Текст ответа |
+| Сценарий       | Ресурс  | Тело отклика |
 |:---------------|:----------|:--------------|
 | Создание расширения с явным созданием _нового_ экземпляра ресурса | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Включает новый экземпляр, дополненный объектом [openTypeExtension](../resources/openTypeExtension.md). |
 | Создание расширения с неявным созданием экземпляра ресурса | [post](../resources/post.md) | Ответ содержит только код ответа без текста. |
@@ -107,7 +111,7 @@ POST /users/{id|userPrincipalName}/extensions
 
   - Тип `microsoft.graph.openTypeExtension`.
   - Имя расширения "Com.Contoso.Referral".
-  - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств вполезной нагрузке JSON: `companyName`, `expirationDate` и `dealValue`.
+  - Дополнительные данные, хранимых в три настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate`, и `dealValue`.
 
 <!-- {
   "blockType": "ignored",
@@ -141,7 +145,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
 }
 ```
 
-### <a name="response-1"></a>Отклик 1
+### <a name="response-1"></a>Отклик 1
 
 Ниже представлен отклик для первого примера. Текст отклика включает свойства нового сообщения и следующие данные для нового расширения:
 
@@ -222,7 +226,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 ****
 
-### <a name="request-2"></a>Запрос 2
+### <a name="request-2"></a>Запрос 2
 
 Во втором примере показано создание расширения в указанном сообщении. Текст запроса включает следующие данные для расширения:
 

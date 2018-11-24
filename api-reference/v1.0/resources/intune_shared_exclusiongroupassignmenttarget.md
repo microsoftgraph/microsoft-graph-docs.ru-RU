@@ -9,27 +9,23 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupId|Строка|ИД группы, являющейся объектом назначения. Наследуется от [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)|
+|groupId|String|ИД группы, являющейся объектом назначения. Наследуется от [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.exclusionGroupAssignmentTarget"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
   "groupId": "String"
 }
 ```
-
-
-
-
-
 
 
 

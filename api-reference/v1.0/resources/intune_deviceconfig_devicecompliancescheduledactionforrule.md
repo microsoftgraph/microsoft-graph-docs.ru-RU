@@ -15,8 +15,8 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|ruleName|Cтрока|Имя правила, к которому применяется это запланированное действие.|
+|id|String|Ключ объекта.|
+|ruleName|String|Имя правила, к которому применяется это запланированное действие.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -25,12 +25,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceScheduledActionForRule"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceScheduledActionForRule",
@@ -38,11 +38,6 @@
   "ruleName": "String"
 }
 ```
-
-
-
-
-
 
 
 

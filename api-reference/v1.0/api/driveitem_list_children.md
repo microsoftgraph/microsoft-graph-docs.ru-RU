@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Создание списка содержимого папки
-ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 2bf094f424ed0a1fda1c790c435619bf65f25e36
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265220"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26596688"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -47,7 +47,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 | Имя     | Значение | Описание                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | etag  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
+| _if-none-match_ | etag  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом в файле, то будет возвращен отклик `HTTP 304 Not Modified`. |
 
 ## <a name="examples"></a>Примеры
 
@@ -80,7 +80,7 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента.
 Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].
@@ -107,9 +107,9 @@ Content-type: application/json
 
 **Примечание.** Если коллекция превышает размер страницы по умолчанию (200 элементов), свойство **@odata.nextLink** возвращается в отклике, чтобы указать доступность дополнительных элементов и предоставить запрашиваемый URL-адрес для следующей страницы элементов.
 
-Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
+Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 
-### <a name="error-responses"></a>Ответы с ошибками
+### <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

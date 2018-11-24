@@ -10,29 +10,27 @@
 |v9_0|Boolean|Версия 9.0 или выше.|
 |v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
+|v12_0|Логический|12.0 или более поздняя версия.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosMinimumOperatingSystem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosMinimumOperatingSystem",
   "v8_0": true,
   "v9_0": true,
   "v10_0": true,
-  "v11_0": true
+  "v11_0": true,
+  "v12_0": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -4,29 +4,36 @@
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [[message](../resources/message.md);](../resources/message.md)
-- [[mailFolder](../resources/mailfolder.md);](../resources/mailfolder.md)
-- [[event](../resources/event.md);](../resources/event.md)
-- [[calendar](../resources/calendar.md);](../resources/calendar.md)
-- [[contact](../resources/contact.md);](../resources/contact.md)
-- [[contactFolder](../resources/contactfolder.md).](../resources/contactfolder.md) 
+- [calendar](../resources/calendar.md);
+- [contact](../resources/contact.md);
+- [contactFolder](../resources/contactfolder.md). 
+- [событие](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
-- [event](../resources/event.md) для групп;
 - [calendar](../resources/calendar.md) для групп;
+- [event](../resources/event.md) для групп;
 - [post](../resources/post.md) для групп. 
 
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, в котором создается расширенное свойство). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+В зависимости от ресурса при создании расширенные свойства в и введите (делегированные или приложения) вы запроса на разрешение, разрешение, указанное в следующей таблице является минимальным необходимым условием для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-- Mail.ReadWrite
-- Calendars.ReadWrite
-- Contacts.ReadWrite
-- Group.ReadWrite.All
- 
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [контакт](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md). | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
+| [calendar](../resources/calendar.md) для групп; | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [event](../resources/event.md) для групп; | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [post](../resources/post.md) для групп. | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+
 ## <a name="http-request"></a>HTTP-запрос
 Вы можете создавать расширенные свойства в новом или существующем экземпляре ресурса.
 
@@ -171,7 +178,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response-1"></a>Отклик 1
+##### <a name="response-1"></a>Отклик 1
 
 Отклик в результате успешного выполнения обозначен кодом `HTTP 201 Created` и включает в себя новое событие, подобно отклику при [создании просто события](../api/user_post_events.md). Отклик не включает только что созданные расширенные свойства.
 
@@ -180,7 +187,7 @@ Content-Type: application/json
 
 ****
 
-##### <a name="request-2"></a>Запрос 2
+##### <a name="request-2"></a>Запрос 2
 
 Второй пример показывает создание расширенного свойства с одним значением для указанного существующего сообщения. Это расширенное свойство — единственный элемент в массиве **singleValueExtendedProperties**. Тело запроса включает следующие данные для расширенного свойства:
 - **id** (указывает тип свойства как `String`), GUID и свойство `Color`.

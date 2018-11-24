@@ -24,7 +24,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -34,7 +34,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|string|Ключ назначения.|
+|id|String|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 
 
@@ -59,7 +59,7 @@ Content-length: 169
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -73,11 +73,6 @@ Content-Length: 218
   }
 }
 ```
-
-
-
-
-
 
 
 

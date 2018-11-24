@@ -39,7 +39,7 @@ GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) `select` и `expand` для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `select` и `expand` для настройки ответа.
 
 Отклик, возвращаемый по умолчанию, разворачивает `parentSection` и выбирает свойства `id`, `name` и `self` раздела. Допустимые значения `expand` для страниц: `parentNotebook` и `parentSection`.
 
@@ -62,8 +62,8 @@ GET /sites/{id}/onenote/pages/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. Примечание: Для краткости усекается объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

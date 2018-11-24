@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedMobileApp](../resources/intune_mam_managedmobileapp.md) в формате JSON.
@@ -38,8 +38,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|ид|Строка|Ключ объекта.|
-|версия|Строка|Версия объекта.|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 
 
@@ -52,9 +52,10 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 Content-type: application/json
-Content-length: 126
+Content-length: 181
 
 {
+  "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
     "@odata.type": "microsoft.graph.mobileAppIdentifier"
   },
@@ -63,7 +64,7 @@ Content-length: 126
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -78,11 +79,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

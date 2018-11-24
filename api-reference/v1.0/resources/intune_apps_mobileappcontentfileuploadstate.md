@@ -2,31 +2,26 @@
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Содержит свойства для состояний запроса на отправку.
+Содержит свойства для отправки запроса состояний.
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|success|0|Еще не задокументировано|
-|transientError|1|Еще не задокументировано|
-|error|2|Еще не задокументировано|
-|unknown|3|Еще не задокументировано|
-|azureStorageUriRequestSuccess|100|Еще не задокументировано|
-|azureStorageUriRequestPending|101|Еще не задокументировано|
-|azureStorageUriRequestFailed|102|Еще не задокументировано|
-|azureStorageUriRequestTimedOut|103|Еще не задокументировано|
-|azureStorageUriRenewalSuccess|200|Еще не задокументировано|
-|azureStorageUriRenewalPending|201|Еще не задокументировано|
-|azureStorageUriRenewalFailed|202|Еще не задокументировано|
-|azureStorageUriRenewalTimedOut|203|Еще не задокументировано|
-|commitFileSuccess|300|Еще не задокументировано|
-|commitFilePending|301|Еще не задокументировано|
-|commitFileFailed|302|Еще не задокументировано|
-|commitFileTimedOut|303|Еще не задокументировано|
-
-
-
-
-
+|success|0|Н/Д|
+|transientError|1|Н/Д|
+|error|2|Н/Д|
+|unknown|3|Н/Д|
+|azureStorageUriRequestSuccess|100|Н/Д|
+|azureStorageUriRequestPending|101|Н/Д|
+|azureStorageUriRequestFailed|102|Н/Д|
+|azureStorageUriRequestTimedOut|103|Н/Д|
+|azureStorageUriRenewalSuccess|200|Н/Д|
+|azureStorageUriRenewalPending|201|Н/Д|
+|azureStorageUriRenewalFailed|202|Н/Д|
+|azureStorageUriRenewalTimedOut|203|Н/Д|
+|commitFileSuccess|300|Н/Д|
+|commitFilePending|301|Н/Д|
+|commitFileFailed|302|Н/Д|
+|commitFileTimedOut|303|Н/Д|
 
 
 

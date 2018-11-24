@@ -24,8 +24,8 @@ GET /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -41,11 +41,11 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1629
+Content-Length: 1632
 
 {
   "value": [
@@ -72,7 +72,7 @@ Content-Length: 1629
       "activityType": "Activity Type value",
       "activityOperationType": "Activity Operation Type value",
       "activityResult": "Activity Result value",
-      "correlationId": "<Unknown Primitive Type Edm.Guid>",
+      "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
       "resources": [
         {
           "@odata.type": "microsoft.graph.auditResource",
@@ -94,11 +94,6 @@ Content-Length: 1629
   ]
 }
 ```
-
-
-
-
-
 
 
 

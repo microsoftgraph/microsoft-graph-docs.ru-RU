@@ -18,28 +18,28 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|UUID объекта. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
+|id|String|UUID объекта. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
 |eventDateTime|DateTimeOffset|Время возникновения события. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
-|correlationId|Строка|Идентификатор, используемый для трассировки сбоя в службе. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
-|managedDeviceIdentifier|Строка|Идентификатор события, созданный или полученный службой Intune.|
-|operatingSystem|Строка|Операционная система.|
-|osVersion|Строка|Версия ОС.|
-|userId|Строка|Идентификатор пользователя, который пытался зарегистрировать устройство.|
-|deviceId|Строка|Идентификатор устройства Azure AD.|
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).|
+|managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
+|operatingSystem|String|Операционная система.|
+|osVersion|String|Версия ОС.|
+|userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
+|deviceId|String|Идентификатор устройства Azure AD.|
 |enrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|Категория сбоя высокого уровня. Возможные значения: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected`, `userAbandonment`.|
-|failureReason|Строка|Подробная причина ошибки.|
+|failureReason|String|Подробная причина ошибки.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceManagementTroubleshootingEvent",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.enrollmentTroubleshootingEvent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
@@ -57,6 +57,13 @@
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+     "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
+  ],
+}
+-->
 
 
 

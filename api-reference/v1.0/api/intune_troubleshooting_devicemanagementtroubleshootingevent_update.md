@@ -24,8 +24,9 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) в формате JSON.
@@ -34,9 +35,9 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
-|correlationId|Строка|Идентификатор, используемый для трассировки сбоя в службе.|
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе.|
 
 
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+PATCH https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json
 Content-length: 104
 
@@ -59,6 +60,7 @@ Content-length: 104
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -71,7 +73,6 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
-
 
 
 

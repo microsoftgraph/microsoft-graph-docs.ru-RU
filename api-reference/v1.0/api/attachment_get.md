@@ -1,11 +1,11 @@
 # <a name="get-attachment"></a>Вывод вложения
 
-Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к событию ([event](../resources/event.md)), сообщению [message](../resources/message.md)) или публикации ([post](../resources/post.md)). 
+Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к [данным о событии](../resources/event.md), [сообщению](../resources/message.md) или [записи](../resources/post.md). 
 
 Допустимые типы вложений:
 
 * файл (ресурс [fileAttachment](../resources/fileattachment.md));
-* элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md)); вы можете использовать `$expand` для получения других свойств этого элемента; см. [пример](#request-2) ниже.
+* элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md)); Вы можете использовать `$expand` для получения других свойств этого элемента. См. [пример](#request-2) ниже.
 * ссылка на файл (ресурс [referenceAttachment](../resources/referenceAttachment.md)).
 
 Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md). 
@@ -15,15 +15,15 @@
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 * При доступе к вложениям в сообщениях: Mail.Read.
-* При доступе к вложениям в событиях: Calendars.Read.
-* При доступе к вложениям в публикациях групп: Group.Read.All.
+* При доступе к вложениям в данных о событиях: Calendars.Read.
+* Если доступ к вложениям в группу публикации: Group.Read.All.
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All.
 -->
 
 ## <a name="http-request"></a>HTTP-запрос
-Вложения в событие ([event](../resources/event.md)) (события) в пользовательском календаре ([calendar](../resources/calendar.md)) по умолчанию.
+Вложения для [событий](../resources/event.md) в списке пользователя по умолчанию [календаря](../resources/calendar.md).
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -42,7 +42,7 @@ GET /groups/{id}/events/{id}/attachments/{id}
 GET /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-Вложения в событие ([event](../resources/event.md)) в календаре ([calendar](../resources/calendar.md)), принадлежащем группе календарей ([calendarGroup](../resources/calendargroup.md)) пользователя по умолчанию.
+Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) по умолчанию для пользователя.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/events/{id}/attachments/{id}
@@ -51,42 +51,42 @@ GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
 GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
-Вложения в событие ([event](../resources/event.md)) в календаре ([calendar](../resources/calendar.md)), принадлежащем к группе календарей ([calendarGroup](../resources/calendargroup.md)) пользователя.
+Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) пользователя.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
-Вложения в сообщение ([message](../resources/message.md)) в почтовом ящике пользователя.
+Вложения [сообщения](../resources/message.md) в почтовом ящике пользователя.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
-Вложения в сообщение ([message](../resources/message.md)) в папке [mailFolder](../resources/mailfolder.md) верхнего уровня в почтовом ящике пользователя.
+Вложения [сообщения](../resources/message.md) в папке [mailFolder](../resources/mailfolder.md) верхнего уровня в почтовом ящике пользователя.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Вложения в сообщение ([message](../resources/message.md)) в дочерней папке [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, однако сообщение может находиться в дочернем элементе дочернего элемента и т.д.
+Вложения для [сообщений](../resources/message.md) , содержащихся в дочерней папкой [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показана один уровень вложения, но сообщение может быть найдена в дочерних дочернего и т. д.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-Вложения для публикации ([post](../resources/post.md)) в цепочке ([thread](../resources/conversationthread.md)) беседы ([thread](../resources/conversation.md)) в группе.
+Вложения для [записи](../resources/post.md) в [цепочке](../resources/conversationthread.md) [беседы](../resources/conversation.md) в группе.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -145,7 +145,7 @@ Content-length: 199
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=
 ```
 
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Ответ 1
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -167,7 +167,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Запрос 2
+##### <a name="request-2"></a>Запрос 2
 В следующем примере показано, как использовать `$expand` для получения свойств элемента, вложенного в сообщение. В этом примере вложением является сообщением. Свойства вложенного сообщения также возвращаются.
 <!-- {
   "blockType": "request",
@@ -265,6 +265,7 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

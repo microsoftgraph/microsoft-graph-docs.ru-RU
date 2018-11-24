@@ -2,10 +2,10 @@
 
 Получение свойств и связей объекта contact.
 
-Существует два сценария, в которых приложение может получать контакт из папки контактов другого пользователя:
+Существует два сценария, где приложения можно получить контакт в папке контактов другого пользователя.
 
-* Если программа имеет разрешения для приложения, или,
-* Если приложение имеет соответствующие делегированные [разрешения](#permissions) от одного пользователя и другой пользователь  поделился календарем с этим пользователем или предоставил делегированный доступ к этому пользователю. См. [сведения и примеры](../../../concepts/outlook-get-shared-contacts-folders.md).
+* Если приложение имеет разрешения приложения, или,
+* Если приложение имеет соответствующей делегированных [разрешений](#permissions) от одного пользователя, и другой пользователь общей папке контактов с этим пользователем или, предоставленное делегированный доступ для пользователя, который. В разделе [сведения и примеры](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -18,7 +18,7 @@
 |Для приложений | Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } --> Объект [contact](../resources/contact.md) из пользовательской папки по умолчанию [contactFolder](../resources/contactfolder.md).
+<!-- { "blockType": "ignored" } -->[Обратитесь](../resources/contact.md) в пользователя по умолчанию [contactFolder](../resources/contactfolder.md).
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
@@ -28,7 +28,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-[Контакт](../resources/contact.md), содержащийся в дочерней папке объекта [contactFolder](../resources/mailfolder.md). В приведенном ниже примере показан один уровень вложенности, но контакт может храниться в папке, вложенной в дочернюю папку и т. д.
+[Контакт](../resources/contact.md), содержащийся в дочерней папке объекта [contactFolder](../resources/mailfolder.md). В приведенном ниже примере показан один уровень вложенности, но контакт может храниться в папке, вложенной в дочернюю папку и т. д.
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
@@ -36,8 +36,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 |Имя|Значение|Описание|
 |:---------------|:--------|:-------|
-|$expand|строка|Разделенный запятыми список связей, развертываемых и включаемых в ответ. Поддерживаемые имена представлены в таблице связей объекта [contact](../resources/contact.md). |
-|$select|строка|Разделенный запятыми список свойств, включаемых в ответ.|
+|$expand|string|Разделенный запятыми список связей, развертываемых и включаемых в ответ. Поддерживаемые имена представлены в таблице связей объекта [contact](../resources/contact.md). |
+|$select|string|Разделенный запятыми список свойств, включаемых в ответ.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -62,6 +62,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```
 ##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,7 +107,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

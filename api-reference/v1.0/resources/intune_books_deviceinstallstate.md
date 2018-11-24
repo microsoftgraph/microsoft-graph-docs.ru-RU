@@ -15,26 +15,26 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|Ключ объекта.|
-|deviceName|Строка|Имя устройства.|
-|deviceId|Строка|Идентификатор устройства.|
+|id|String|Ключ объекта.|
+|deviceName|String|Имя устройства.|
+|deviceId|String|ИД устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune_books_installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Строка|Код ошибки для сбоев при установке.|
-|osVersion|Строка|Версия ОС.|
-|osDescription|Строка|Описание ОС.|
-|userName|Строка|Имя пользователя устройства.|
+|errorCode|String|Код ошибки для сбоев при установке.|
+|osVersion|String|Версия ОС.|
+|osDescription|String|Описание ОС.|
+|userName|String|Имя пользователя устройства.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceInstallState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceInstallState",
@@ -49,11 +49,6 @@
   "userName": "String"
 }
 ```
-
-
-
-
-
 
 
 

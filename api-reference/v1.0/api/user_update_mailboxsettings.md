@@ -6,7 +6,7 @@
 
 **Примечание.** Невозможно создать или удалить какие-либо параметры почтового ящика.
 
-Обновляя предпочтительный часовой пояс для пользователя, можете указать его в формате Windows или [часового пояса IANA](http://www.iana.org/time-zones) (также известен как часовой пояс Олсона).
+Обновляя предпочтительный часовой пояс для пользователя, можете указать его в формате Windows или [часового пояса IANA](https://www.iana.org/time-zones) (также известен как часовой пояс Олсона).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
@@ -24,19 +24,19 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Авторизация  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих свойств, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом изменений других значений свойств. Чтобы обеспечить максимальную производительность, не включайте существующие значения, которые не изменились, в запрос. Ниже перечислены свойства, значения которых можно записать или обновить.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Вы можете настроить такие уведомления только для диапазона дат в будущем.|
-|язык|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Можно настроить такие уведомления для диапазон дат в будущем.|
+|language|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
 |timeZone|string|Часовой пояс почтового ящика пользователя по умолчанию.|
 |workingHours|[workingHours](../resources/workinghours.md)|Часы, дни недели и часовой пояс работы пользователя.|
 
@@ -115,7 +115,7 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-2"></a>Запрос 2
+##### <a name="request-2"></a>Запрос 2
 Во втором примере настраивается часовой пояс для рабочего времени вошедшего пользователя. Для этого в свойстве **timeZone** указывается [пользовательский часовой пояс](../resources/customtimezone.md).
 
 <!-- {
@@ -128,37 +128,37 @@ Content-Type: application/json
 
 {
   "workingHours": {
-      "endTime" : "18:30:00.0000000", 
-      "daysOfWeek": [ 
-          "Monday", 
-          "Tuesday", 
-          "Wednesday", 
-          "Thursday", 
-          "Friday", 
-          "Saturday" 
-      ], 
-      "timeZone" : { 
-         "@odata.type": "#microsoft.graph.customTimeZone", 
-         "bias":-300, 
+      "endTime" : "18:30:00.0000000", 
+      "daysOfWeek": [ 
+          "Monday", 
+          "Tuesday", 
+          "Wednesday", 
+          "Thursday", 
+          "Friday", 
+          "Saturday" 
+      ], 
+      "timeZone" : { 
+         "@odata.type": "#microsoft.graph.customTimeZone", 
+         "bias":-300, 
          "name": "Customized Time Zone",
-         "standardOffset":{   
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":2, 
-           "dayOfWeek":"Sunday", 
-           "month":10, 
-           "year":0 
-         }, 
-         "daylightOffset":{   
-           "daylightBias":100, 
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":4, 
-           "dayOfWeek":"Sunday", 
-           "month":5, 
-           "year":0 
-         } 
-      } 
+         "standardOffset":{   
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":2, 
+           "dayOfWeek":"Sunday", 
+           "month":10, 
+           "year":0 
+         }, 
+         "daylightOffset":{   
+           "daylightBias":100, 
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":4, 
+           "dayOfWeek":"Sunday", 
+           "month":5, 
+           "year":0 
+         } 
+      } 
   }
-} 
+} 
 ```
 ##### <a name="response-2"></a>Ответ 2
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.

@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) в формате JSON.
@@ -39,9 +39,9 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |:---|:---|:---|
 |displayName|String|Понятное имя|
 |fileHash|String|Хэш SHA256 для файла|
-|file|Двоичный|Файл в виде массива байтов|
-|id|Строка|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|file|Binary|Файл в виде массива байтов|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 
 
@@ -54,9 +54,10 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 Content-type: application/json
-Content-length: 131
+Content-length: 211
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",
   "displayName": "Display Name value",
   "fileHash": "File Hash value",
   "file": "ZmlsZQ==",
@@ -65,7 +66,7 @@ Content-length: 131
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -80,11 +81,6 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

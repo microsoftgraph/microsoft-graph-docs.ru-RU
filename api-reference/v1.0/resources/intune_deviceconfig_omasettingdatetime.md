@@ -17,11 +17,12 @@
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
-<!--{
+Ниже этот ресурс представлен в формате JSON.
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingDateTime"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingDateTime",
@@ -31,11 +32,6 @@
   "value": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

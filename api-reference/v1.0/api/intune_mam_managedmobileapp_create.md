@@ -27,8 +27,8 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта managedMobileApp в формате JSON.
@@ -38,8 +38,8 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|id|Строка|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 
 
@@ -64,7 +64,7 @@ Content-length: 181
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -79,11 +79,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

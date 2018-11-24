@@ -26,8 +26,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobile
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта mobileAppContent в формате JSON.
@@ -36,7 +36,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobile
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|Строка|Версия контента приложения.|
+|id|String|Версия контента приложения.|
 
 
 
@@ -57,7 +57,7 @@ Content-length: 58
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -68,11 +68,6 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
-
-
-
-
-
 
 
 

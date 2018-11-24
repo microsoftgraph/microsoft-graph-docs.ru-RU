@@ -1,4 +1,4 @@
-# <a name="visibilitysetting-enum-type"></a>тип перечисления visibilitySetting
+# <a name="visibilitysetting-enum-type"></a>Тип перечисления visibilitySetting
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -7,13 +7,8 @@
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроено.|
-|hide|1|Hide.|
-|show|2|Отображены.|
-
-
-
-
-
+|скрытие|1|Скрытие.|
+|Показать|2|Показать.|
 
 
 

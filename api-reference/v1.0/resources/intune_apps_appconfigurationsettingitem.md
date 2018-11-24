@@ -11,13 +11,14 @@
 |appConfigKeyValue|Строка|Значение ключа конфигурации приложения.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appConfigurationSettingItem",
@@ -26,11 +27,6 @@
   "appConfigKeyValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

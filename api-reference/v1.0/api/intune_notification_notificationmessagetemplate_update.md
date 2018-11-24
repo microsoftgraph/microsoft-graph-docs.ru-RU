@@ -24,8 +24,8 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) в формате JSON.
@@ -34,10 +34,10 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String (строка)|Отображаемое имя для шаблона сообщения уведомления.|
-|defaultLocale|String (строка)|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
+|displayName|String|Отображаемое имя для шаблона сообщения уведомления.|
+|defaultLocale|String|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
 
@@ -51,10 +51,10 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 Content-type: application/json
-Content-length: 195
+Content-length: 197
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.notificationMessageTemplate",
   "displayName": "Display Name value",
   "defaultLocale": "Default Locale value",
   "brandingOptions": "includeCompanyLogo"
@@ -62,7 +62,7 @@ Content-length: 195
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -77,11 +77,6 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
-
-
-
-
-
 
 
 

@@ -12,74 +12,81 @@
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [[message](../resources/message.md);](../resources/message.md)
-- [[mailFolder](../resources/mailfolder.md);](../resources/mailfolder.md)
-- [[event](../resources/event.md);](../resources/event.md)
-- [[calendar](../resources/calendar.md);](../resources/calendar.md)
-- [[contact](../resources/contact.md);](../resources/contact.md)
-- [[contactFolder](../resources/contactfolder.md).](../resources/contactfolder.md) 
+- [calendar](../resources/calendar.md);
+- [contact](../resources/contact.md);
+- [contactFolder](../resources/contactfolder.md). 
+- [событие](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md) 
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
-- [event](../resources/event.md) для групп;
 - [calendar](../resources/calendar.md) для групп;
+- [event](../resources/event.md) для групп;
 - [post](../resources/post.md) для групп. 
 
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений (в зависимости от ресурса, который вы получаете). Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+В зависимости от ресурса они будут расширенные свойства из и разрешение введите (делегированные или приложения) вы запроса, разрешение, указанное в следующей таблице является минимальным необходимым условием для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
-- Mail.Read
-- Calendars.Read
-- Contacts.Read
-- Group.Read.All 
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [контакт](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [contactFolder](../resources/contactfolder.md). | Contacts.Read | Contacts.Read | Contacts.Read |
+| [событие](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [calendar](../resources/calendar.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
+| [event](../resources/event.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
+| [post](../resources/post.md) для групп. | Group.Read.All | Не поддерживается | Group.Read.All |
+| [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 #### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a>Получение экземпляра ресурса, дополненного расширенным свойством, которое соответствует фильтру
-Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
+Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
 
-Получение экземпляра объекта**message**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **сообщения** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **mailFolder**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **mailFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра объекта **event**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **событий** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **calendar**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **календаря** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **contact**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **контактов** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **contactFolder**: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **contactFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра объекта **event** для группы: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **события** группы:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра объекта **post** для группы: <!-- { "blockType": "ignored" } -->
+Получение экземпляра **публиковать** группы:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -87,50 +94,50 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>Получение экземпляров ресурсов с числовыми расширенными свойствами, которые соответствуют фильтру
 
-Получите экземпляры поддерживаемого ресурса с расширенным свойством, соответствующим фильтру. В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`. Применяйте [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.
+Получите экземпляры поддерживаемого ресурса с расширенным свойством, соответствующим фильтру. В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`. Применяйте [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.
 
 В приведенных ниже строках синтаксиса показан фильтр, в случае которого один оператор `eq` используется для свойства id, а другой оператор `eq` — для свойства value. Вы можете заменить оператор `eq` для свойства **value** любым из других операторов (`ne`, `ge`, `gt`, `le` или `lt`), которые применяются к числовым значениям.
 
-Получение экземпляров объекта **message**: <!-- { "blockType": "ignored" } -->
+Получение экземпляров **сообщения** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляров объекта **mailFolder**: <!-- { "blockType": "ignored" } -->
+Получение экземпляров **mailFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-Получение экземпляров объекта **event**: <!-- { "blockType": "ignored" } -->
+Получение экземпляров **события** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляров объекта **calendar**: <!-- { "blockType": "ignored" } -->
+Получение экземпляров **календаря** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляров объекта **contact**: <!-- { "blockType": "ignored" } -->
+Получение экземпляров **контактов** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляров объекта **contactFolder**: <!-- { "blockType": "ignored" } -->
+Получение экземпляров **contactFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получение экземпляров объекта **event** для группы: <!-- { "blockType": "ignored" } -->
+Получение экземпляров группы **событий** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-Получение экземпляров объекта **post** для группы: <!-- { "blockType": "ignored" } -->
+Получение экземпляров **публикации** группы:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -138,10 +145,10 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 #### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a>Получение экземпляров ресурсов с расширенными свойствами строкового типа, которые соответствуют фильтру
 
-Получите экземпляры ресурса **message** или **event**, которые включают расширенное свойство строкового типа, соответствующее фильтру. В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `contains`, `startswith`, `eq` или `ne`. Применяйте [кодировку URL](http://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.
+Получите экземпляры ресурса **message** или **event**, которые включают расширенное свойство строкового типа, соответствующее фильтру. В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `contains`, `startswith`, `eq` или `ne`. Применяйте [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.
 
 
-Получение экземпляров объекта **message**: <!-- { "blockType": "ignored" } -->
+Получение экземпляров **сообщения** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -160,7 +167,7 @@ GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-Получение экземпляров объекта **event**: <!-- { "blockType": "ignored" } -->
+Получение экземпляров **события** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -175,7 +182,7 @@ GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-Получение экземпляров объекта **event** для группы: <!-- { "blockType": "ignored" } -->
+Получение экземпляров группы **событий** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
@@ -220,7 +227,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-#### <a name="response-1"></a>Отклик 1
+#### <a name="response-1"></a>Отклик 1
 Текст отклика включает все свойства указанного сообщения и расширенное свойство, возвращенное из фильтра.
 
 Примечание. Показанный здесь объект **message** усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -264,7 +271,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="request-2"></a>Запрос 2
+#### <a name="request-2"></a>Запрос 2
 
 Во втором примере показано, как получить сообщения с указанным в фильтре однозначным расширенным свойством типа string. Фильтр ищет расширенное свойство со следующими параметрами:
 

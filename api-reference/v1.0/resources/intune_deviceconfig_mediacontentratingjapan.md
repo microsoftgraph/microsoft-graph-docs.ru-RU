@@ -6,17 +6,18 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|movieRating|[ratingJapanMoviesType](../resources/intune_deviceconfig_ratingjapanmoviestype.md)|Рейтинг фильмов, выбранный для Японии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
-|tvRating|[ratingJapanTelevisionType](../resources/intune_deviceconfig_ratingjapantelevisiontype.md)|Рейтинг телепрограмм, выбранный для Японии. Возможные значения: `allAllowed`, `allBlocked`, `explicitAllowed`.|
+|movieRating|[ratingJapanMoviesType](../resources/intune_deviceconfig_ratingjapanmoviestype.md)|Оценка выбранных для Японии фильмы. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
+|tvRating|[ratingJapanTelevisionType](../resources/intune_deviceconfig_ratingjapantelevisiontype.md)|Оценка TV, выбранной для Японии. Возможные значения: `allAllowed`, `allBlocked`, `explicitAllowed`.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingJapan"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingJapan",
@@ -24,11 +25,6 @@
   "tvRating": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -13,16 +13,16 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Ключ объекта.|
-|displayName|String (строка)|Имя электронной книги.|
-|description|String (строка)|Описание.|
-|publisher|String (строка)|Издатель.|
+|id|String|Ключ объекта.|
+|displayName|String|Имя электронной книги.|
+|description|String|Описание.|
+|publisher|String|Издатель.|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги.|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Обложка книги.|
 |createdDateTime|DateTimeOffset|Дата и время создания электронной книги.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги.|
-|informationUrl|String (строка)|URL-адрес с дополнительными сведениями.|
-|privacyInformationUrl|String (строка)|URL-адрес заявления о конфиденциальности.|
+|informationUrl|String|URL-адрес с дополнительными сведениями.|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -34,12 +34,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedEBook",
@@ -59,11 +59,6 @@
   "privacyInformationUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

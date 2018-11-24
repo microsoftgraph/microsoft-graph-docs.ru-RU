@@ -24,8 +24,8 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -41,11 +41,11 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10832
+Content-Length: 10901
 
 {
   "value": [
@@ -280,16 +280,12 @@ Content-Length: 10832
       "experienceBlockDeviceDiscovery": true,
       "experienceBlockErrorDialogWhenNoSIM": true,
       "experienceBlockTaskSwitcher": true,
-      "logonBlockFastUserSwitching": true
+      "logonBlockFastUserSwitching": true,
+      "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

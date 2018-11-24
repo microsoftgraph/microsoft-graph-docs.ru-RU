@@ -6,17 +6,18 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|movieRating|[оценка Тип фильма во Франции](../resources/intune_deviceconfig_ratingfrancemoviestype.md)|Рейтинг фильма для Франции. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
-|tvRating|[оценка типа телевидения во Франции](../resources/intune_deviceconfig_ratingfrancetelevisiontype.md)|Рейтинг ТВ для Франции. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
+|movieRating|[ratingFranceMoviesType](../resources/intune_deviceconfig_ratingfrancemoviestype.md)|Оценка выбранных для Франции фильмы. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
+|tvRating|[ratingFranceTelevisionType](../resources/intune_deviceconfig_ratingfrancetelevisiontype.md)|Оценка TV, выбранной для Франции. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingFrance"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingFrance",
@@ -24,11 +25,6 @@
   "tvRating": "String"
 }
 ```
-
-
-
-
-
 
 
 

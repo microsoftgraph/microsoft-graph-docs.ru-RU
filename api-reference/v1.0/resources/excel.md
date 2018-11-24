@@ -9,15 +9,15 @@
 возвращает коллекцию объектов листа, включенных в книгу.    
 
 
-API REST Excel поддерживает только книги в формате Office Open XML. Книги с расширением `.xls` не поддерживаются. 
+REST API Excel поддерживает только книги в формате Office Open XML. Книги с расширением `.xls` не поддерживаются. 
 
 **Примечание.** Поддержка книг, хранящихся в обычном OneDrive, по-прежнему недоступна. В настоящее время REST API Excel поддерживаются только файлы, хранящиеся в OneDrive для бизнеса. 
 
 ## <a name="authorization-and-scopes"></a>Авторизация и области
 
-Для проверки подлинности API Excel вы можете использовать [конечную точку Azure AD версии 2](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
+Для проверки подлинности API Excel вы можете использовать [конечную точку Azure AD версии 2](https://developer.microsoft.com/graph/docs/authorization/converged_auth). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
   
-Чтобы использовать ресурс Excel, требуется одно из следующих [разрешений](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes):
+Чтобы использовать ресурс Excel, требуется одно из следующих [разрешений](https://developer.microsoft.com/graph/docs/authorization/permission_scopes):
 
 * Files.Read (для чтения)
 * Files.ReadWrite (для чтения и записи)
@@ -53,7 +53,7 @@ authorization: Bearer {access-token}
 Если для параметра `persistChanges` установлено значение `false`, возвращается идентификатор непостоянного сеанса.  
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -70,7 +70,7 @@ content-type: application/json;odata.metadata
 #### <a name="usage"></a>Применение 
 
 Идентификатор сеанса, возвращенный из предыдущего вызова, передается в качестве заголовка при последующих запросах API в  
-`workbook-session-id` заголовке HTTP `workbook-session-id`. 
+заголовке HTTP `workbook-session-id`. 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -79,7 +79,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->Примечание. Если срок действия идентификатора сеанса истек, для сеанса будет возвращен код ошибки HTTP `404`. В таком случае вы можете создать другой сеанс и продолжить работу. Можно использовать другой подход — периодически обновлять сеанс, чтобы он не был завершен. Обычно срок действия сохраняемого сеанса истекает через 7 минут бездействия. Срок действия несохраняемого сеанса истекает через 5 минут бездействия. 
+>Примечание. Если срок действия идентификатора сеанса истек, для сеанса будет возвращен код ошибки HTTP `404`. В таком случае вы можете создать другой сеанс и продолжить работу. Можно использовать другой подход — периодически обновлять сеанс, чтобы он не был завершен. Обычно срок действия сохраняемого сеанса истекает через 7 минут бездействия. Срок действия несохраняемого сеанса истекает через 5 минут бездействия. 
 
 ## <a name="common-excel-scenarios"></a>Стандартные сценарии Excel
 
@@ -98,7 +98,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -137,7 +137,7 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -164,7 +164,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -191,7 +191,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -211,7 +211,7 @@ workbook-session-id: {session-id}
 { "name": "SheetA", "position": 3 }
 ```
 
-Ответ
+Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -232,7 +232,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>Список диаграмм, являющихся частью листа 
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
@@ -240,7 +240,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -265,14 +265,14 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>Получение изображения диаграммы
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -297,7 +297,7 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -327,7 +327,7 @@ workbook-session-id: {session-id}
 { "height": 216.0, "left": 0, "name": "NewName", "top": 0, "width": 360.0 }
 
 ```
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -348,7 +348,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>Обновление исходных данных диаграммы 
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -359,7 +359,7 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -368,7 +368,7 @@ HTTP code: 204 No Content
 
 #### <a name="get-list-of-tables"></a>Получение списка таблиц 
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
@@ -376,7 +376,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -384,7 +384,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="create-table"></a>Создание таблицы
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/{table-id}/add
 content-type: Application/Json 
@@ -394,7 +394,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -412,7 +412,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-table"></a>Обновление таблицы
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
@@ -422,7 +422,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -448,7 +448,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -530,14 +530,14 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-list-of-table-columns"></a>Получение списка столбцов таблицы
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -641,7 +641,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-row"></a>Добавление строки таблицы
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows
 content-type: Application/Json 
@@ -651,7 +651,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -672,7 +672,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-column"></a>Добавление столбца таблицы 
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/columns
 content-type: Application/Json 
@@ -682,7 +682,7 @@ accept: application/Json
 { "values": [ [ "Status" ], [ "Open" ], [ "Closed" ] ], "index": 2 }
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -711,47 +711,47 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-table-row"></a>Удаление строки таблицы
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows/$/itemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="delete-table-column"></a>Удаление столбца таблицы 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="convert-table-to-range"></a>Преобразование таблицы в диапазон 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
 #### <a name="table-sort"></a>Сортировка таблицы
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
@@ -767,13 +767,13 @@ workbook-session-id: {session-id}
 ```
 
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>Фильтрация таблицы
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
@@ -790,21 +790,21 @@ workbook-session-id: {session-id}
 }
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
 #### <a name="clear-filter"></a>Очистка фильтра
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -813,14 +813,14 @@ HTTP code: 204 No Content
 
 #### <a name="get-range"></a>Получение диапазона 
 
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/{item-id}/workbook/worksheets/{worksheet-id}/range(address='A1:B2')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1018,7 +1018,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="range-sort"></a>Сортировка диапазона
-Запрос <!-- { "blockType": "ignored" } -->
+Запрос<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
@@ -1033,7 +1033,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-Ответ <!-- { "blockType": "ignored" } -->
+Ответа<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -1049,7 +1049,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1088,7 +1088,7 @@ content-type: application/json
 
 #### <a name="null-input-in-2-d-array"></a>Входное значение null в двумерном массиве
 
-`null` Входное значение `null` в двумерном массиве (для значений, числового формата, формулы) игнорируется в ресурсах Range и Table. Предполагаемый целевой объект (ячейка) не будет обновлен, если входное значение `null` отправлено в виде значений, числового формата или сетки значений формулы.
+Входное значение `null` в двумерном массиве (для значений, числового формата, формулы) игнорируется в ресурсах Range и Table. Предполагаемый целевой объект (ячейка) не будет обновлен, если входное значение `null` отправлено в виде значений, числового формата или сетки значений формулы.
 
 Например, чтобы обновить только определенные части Range, такие как числовой формат ячейки, и сохранить существующий числовой формат в других частях Range, установите числовой формат там, где это необходимо, и отправьте `null` для других ячеек.
 
@@ -1175,7 +1175,7 @@ content-type: application/json
 
 #### <a name="write"></a>Запись
 
-Задание свойств уровня ячеек (например, значений, numberFormat и т. д.) для Range без ограничений **не допускается**, так как запрос на ввод может оказаться слишком большим для обработки.
+Задание свойств уровня ячеек (например, значений, numberFormat и т. д.) для Range без ограничений **не допускается**, так как запрос на ввод может оказаться слишком большим для обработки.
 
 Например, приведенный ниже запрос на обновление значений недопустим, так как запрашиваемый диапазон не ограничен.
 
@@ -1193,7 +1193,7 @@ PATCH /workbook/worksheets/{id}/range(address="A:B")
 
 ### <a name="large-range"></a>Большой диапазон
 
-Большой диапазон — это объект Range, размер которого слишком велик для одного вызова API. Множество факторов, например количество ячеек, значений, объектов numberFormat и формул, могут сделать запрос настолько большим, что он станет неподходящим для взаимодействия с API. Интерфейс API делает все возможное для возврата запрашиваемых данных или записи в них. Но обработка крупного запроса может привести к ошибке API из-за чрезмерного использования ресурсов.
+Большой диапазон — это объект Range, размер которого слишком велик для одного вызова API. Множество факторов, например количество ячеек, значений, объектов numberFormat и формул, могут сделать запрос настолько большим, что он станет неподходящим для взаимодействия с API. Интерфейс API делает все возможное для возврата запрашиваемых данных или записи в них. Но обработка крупного запроса может привести к ошибке API из-за чрезмерного использования ресурсов.
 
 Чтобы избежать этого, рекомендуем выполнять операции чтения и записи для нескольких объектов Range меньшего размера.
 
@@ -1206,7 +1206,7 @@ API ищет *значение одной ячейки* и, если разме�
 
 #### <a name="examples"></a>Примеры
 
-Следующий запрос добавляет в выбранный диапазон текст "Sample text". Обратите внимание, что Range содержит 200 ячеек, в то время как входные данные — значение лишь для одной ячейки.
+Следующий запрос добавляет в выбранный диапазон текст "Sample text". Обратите внимание, что Range содержит 200 ячеек, в то время как входные данные — значение лишь для одной ячейки.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1238,7 +1238,7 @@ workbook-session-id: {session-id}
 ```
 
 
-##### <a name="response"></a>Ответ 
+##### <a name="response"></a>Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1258,7 +1258,7 @@ content-type: application/json
 
 Ошибки возвращаются с HTTP-кодом и объектом ошибки. Ошибки `code` и `message` объясняют причины возникновения ошибки.
  
-Пример.
+Ниже приведен пример.
 
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -16,7 +16,7 @@
 GET /workbook/worksheets({id|name})/names
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -29,7 +29,7 @@ GET /workbook/worksheets({id|name})/names
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика  и коллекцию объектов WorkbookNamedItem в тексте отклика.`200 OK` [ ](../resources/nameditem.md)
+Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [WorkbookNamedItem](../resources/nameditem.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -40,8 +40,8 @@ GET /workbook/worksheets({id|name})/names
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/names
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

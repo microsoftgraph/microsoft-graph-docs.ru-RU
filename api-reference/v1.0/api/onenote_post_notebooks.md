@@ -22,7 +22,7 @@ POST /sites/{id}/onenote/notebooks
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса укажите имя записной книжки. 
@@ -58,7 +58,7 @@ Content-length: 30
   "@odata.type": "microsoft.graph.notebook"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 284
 

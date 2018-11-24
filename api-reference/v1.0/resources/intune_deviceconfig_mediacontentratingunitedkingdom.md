@@ -6,17 +6,18 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|movieRating|[ratingUnitedKingdomMoviesType](../resources/intune_deviceconfig_ratingunitedkingdommoviestype.md)|Тип оценки фильмов, выбранный для Великобритании. Возможные значения: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.|
-|tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype.md)|Тип оценки фильмов, выбранный для Великобритании. Возможные значения: `allAllowed`, `allBlocked`, `caution`.|
+|movieRating|[ratingUnitedKingdomMoviesType](../resources/intune_deviceconfig_ratingunitedkingdommoviestype.md)|Оценка выбранных для Великобритании фильмы. Возможные значения: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.|
+|tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype.md)|Оценка TV, выбранные для Великобритании. Возможные значения: `allAllowed`, `allBlocked`, `caution`.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingUnitedKingdom"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingUnitedKingdom",
@@ -24,11 +25,6 @@
   "tvRating": "String"
 }
 ```
-
-
-
-
-
 
 
 

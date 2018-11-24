@@ -4,22 +4,23 @@
 
 Н/Д
 
-Наследуется от [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)
+Наследуется от ресурса [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|password|String|Н/Д Наследуется от ресурса [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|
+|password|Строка|Н/Д Наследуется от ресурса [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|
 |userPrincipalName|Строка|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
-<!--{
+Ниже этот ресурс представлен в формате JSON.
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsDeviceAzureADAccount"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsDeviceAzureADAccount",
@@ -27,11 +28,6 @@
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -25,7 +25,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -35,15 +35,15 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Ключ объекта.|
-|deviceName|String (строка)|Имя устройства.|
-|deviceId|String (строка)|Идентификатор устройства.|
+|id|String|Ключ объекта.|
+|deviceName|String|Имя устройства.|
+|deviceId|String|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune_books_installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String (строка)|Код ошибки для сбоев при установке.|
-|osVersion|String (строка)|Версия ОС.|
-|osDescription|String (строка)|Описание ОС.|
-|userName|String (строка)|Имя пользователя устройства.|
+|errorCode|String|Код ошибки для сбоев при установке.|
+|osVersion|String|Версия ОС.|
+|osDescription|String|Описание ОС.|
+|userName|String|Имя пользователя устройства.|
 
 
 
@@ -72,7 +72,7 @@ Content-length: 374
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -91,11 +91,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
-
-
-
 
 
 

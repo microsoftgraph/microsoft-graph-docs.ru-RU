@@ -4,7 +4,7 @@
 
 Обновление свойств объекта [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md).
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -21,10 +21,10 @@
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusOverview
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -34,9 +34,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
-|notApplicableCount|Int32|Количество неприменимых пользователей|
+|notApplicableCount|Int32|Число пользователей не применим|
 |successCount|Int32|Количество успешных пользователей.|
 |errorCount|Int32|Количество пользователей с ошибками.|
 |failedCount|Int32|Количество пользователей со сбоями.|
@@ -54,9 +54,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusOverview
 Content-type: application/json
-Content-length: 212
+Content-length: 282
 
 {
+  "@odata.type": "#microsoft.graph.deviceConfigurationUserOverview",
   "pendingCount": 12,
   "notApplicableCount": 2,
   "successCount": 12,
@@ -86,11 +87,6 @@ Content-Length: 331
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
 
 
 

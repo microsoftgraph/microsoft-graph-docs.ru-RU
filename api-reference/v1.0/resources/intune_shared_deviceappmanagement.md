@@ -10,27 +10,27 @@
 |:---|:---|:---|
 |[Получение объекта deviceAppManagement](../api/intune_shared_deviceappmanagement_get.md)|Чтение свойств и связей объекта [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md).|
 |[Обновление объекта deviceAppManagement](../api/intune_shared_deviceappmanagement_update.md)|Обновление свойств объекта [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md).|
-|**Адаптация**|
+|**Адаптация новых сотрудников**|
 |[Действие syncMicrosoftStoreForBusinessApps](../api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps.md)|Нет|Синхронизирует учетную запись Intune с Microsoft Store для бизнеса|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|**Адаптация**|
-|isEnabledForMicrosoftStoreForBusiness|Boolean (логический)|Указывает, включена ли для учетной запись синхронизация приложений из Microsoft Store для бизнеса.|
-|microsoftStoreForBusinessLanguage|string|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат <languagecode2>-<страна/код_региона2>, где <languagecode2> — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|
+|id|String|Ключ объекта.|
+|**Адаптация новых сотрудников**|
+|isEnabledForMicrosoftStoreForBusiness|Boolean|Указывает, включена ли для учетной запись синхронизация приложений из Microsoft Store для бизнеса.|
+|microsoftStoreForBusinessLanguage|String|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат <languagecode2>-<страна/код_региона2>, где <languagecode2> — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|Время последней завершенной синхронизации приложений из Microsoft Store для бизнеса.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Время последней успешной синхронизации приложений из Microsoft Store для бизнеса с учетной записью.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|**Apps**|
+|**Приложения**|
 |mobileAppCategories|Коллекция [mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Категории мобильных приложений|
 |mobileAppConfigurations|Коллекция [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|Конфигурации мобильных приложений для управляемых устройств.|
 |mobileApps|Коллекция [mobileApp](../resources/intune_apps_mobileapp.md)|Мобильные приложения.|
-|**Books**|
+|**Книги**|
 |managedEBooks|Коллекция [managedEBook](../resources/intune_books_managedebook.md)|Управляемая электронная книга.|
 |**Мобильное приложение управления (MAM)**|
 |androidManagedAppProtections|Коллекция [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md)|Политики управляемых приложений для Android.|
@@ -42,11 +42,11 @@
 |mdmWindowsInformationProtectionPolicies|Коллекция [mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md)|Windows Information Protection для приложений на устройствах, зарегистрированных с использованием MDM.|
 |targetedManagedAppConfigurations|Коллекция [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|Целевые конфигурации управляемых приложений.|
 |windowsInformationProtectionPolicies|Коллекция [windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md)|Windows Information Protection для приложений на устройствах, не зарегистрированных с использованием MDM.|
-|**Адаптация**|
-|vppTokens|[vpp Токен](../resources/intune_onboarding_vpptoken.md) коллекция|Список Vpp маркеров для данной организации.|
+|**Адаптация новых сотрудников**|
+|VPP токены|[vpp Токен](../resources/intune_onboarding_vpptoken.md) коллекция|Список Vpp маркеров для данной организации.|
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.  Обратите внимание, что это — пример. Ответы на фактические запросы будут содержать свойства, соответствующие контексту.  
+Ниже представлено описание ресурса в формате JSON.  Обратите внимание на то, что это — пример; ответы на запросы на фактический запросы будет содержать свойства, подходящую для контекста.  
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

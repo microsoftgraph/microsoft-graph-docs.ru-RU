@@ -24,8 +24,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md) в формате JSON.
@@ -34,12 +34,12 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Уникальный идентификатор сертификата|
-|appleIdentifier|String (строка)|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
-|topicIdentifier|String (строка)|Идентификатор темы.|
+|id|String|Уникальный идентификатор сертификата|
+|appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
+|topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificate|String (строка)|Н/Д|
+|certificate|String|Пока не задокументировано.|
 
 
 
@@ -52,19 +52,19 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 264
+Content-length: 271
 
 {
+  "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
   "appleIdentifier": "Apple Identifier value",
   "topicIdentifier": "Topic Identifier value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificate": "Certificate value"
 }
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -80,11 +80,6 @@ Content-Length: 384
   "certificate": "Certificate value"
 }
 ```
-
-
-
-
-
 
 
 

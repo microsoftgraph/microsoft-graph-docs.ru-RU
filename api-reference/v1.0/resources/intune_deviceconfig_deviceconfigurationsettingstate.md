@@ -6,27 +6,28 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Параметр|String (строка)|Параметр для отчета|
-|settingName|String (строка)|Локализованное или понятное имя параметра для отчета|
-|instanceDisplayName|String (строка)|Имя экземпляра параметра для отчета|
-|Состояние|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия настроек требованиям. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|setting|String|Параметр для отчета|
+|settingName|String|Локализованное или понятное имя параметра для отчета|
+|instanceDisplayName|String|Имя экземпляра параметра для отчета|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Соответствие требованиям состояние параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Код ошибки для параметра|
-|errorDescription|String (строка)|Описание ошибки|
-|userId|String (строка)|ИД пользователя|
-|userName|String (строка)|Имя пользователя|
-|userEmail|String (строка)|Электронный адрес пользователя|
-|Имя пользователя-участника|String (строка)|UserPrincipalName.|
-|Источники|Коллекция [settingSource](../resources/intune_deviceconfig_settingsource.md)|Соответствующие политики|
-|currentValue|String (строка)|Текущее значение параметра на устройстве|
+|errorDescription|String|Описание ошибки|
+|userId|String|ИД пользователя|
+|userName|String|Имя пользователя|
+|userEmail|String|Электронный адрес пользователя|
+|userPrincipalName|String|Имя участника-пользователя.|
+|sources|Коллекция [settingSource](../resources/intune_deviceconfig_settingsource.md)|Соответствующие политики|
+|currentValue|String|Текущее значение параметра на устройстве|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceConfigurationSettingState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationSettingState",
@@ -50,11 +51,6 @@
   "currentValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -12,13 +12,13 @@
 |[Перечисление androidCustomConfigurations](../api/intune_deviceconfig_androidcustomconfiguration_list.md)|Коллекция [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Перечисление свойств и связей объектов [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
 |[Получение androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_get.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Считывание свойств и связей объекта [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
 |[Создание androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_create.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Создание объекта [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
-|[Удаление androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_delete.md)|Нет|Удаление экземпляра [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
+|[Удаление androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_delete.md)|None|Удаление экземпляра [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
 |[Обновление androidCustomConfiguration](../api/intune_deviceconfig_androidcustomconfiguration_update.md)|[androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md)|Обновление свойств объекта [androidCustomConfiguration](../resources/intune_deviceconfig_androidcustomconfiguration.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
@@ -31,19 +31,19 @@
 |:---|:---|:---|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации по устройствам. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств по пользователям. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Обзор состояния параметров конфигурации устройств по пользователям. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Обзор состояния параметров конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceConfiguration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidCustomConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidCustomConfiguration",
@@ -64,11 +64,6 @@
   ]
 }
 ```
-
-
-
-
-
 
 
 

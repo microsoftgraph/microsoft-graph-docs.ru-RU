@@ -15,22 +15,22 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Понятное имя|
-|fileHash|Строка|Хэш SHA256 для файла|
-|файл|Двоичный|Файл в виде массива байтов|
-|ИД|Строка|Ключ объекта.|
-|версия|Строка|Версия объекта.|
+|displayName|String|Понятное имя|
+|fileHash|String|Хэш SHA256 для файла|
+|file|Двоичный|Файл в виде массива байтов|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLockerFile"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",
@@ -41,11 +41,6 @@
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

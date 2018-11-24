@@ -15,21 +15,21 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |intent|[installIntent](../resources/intune_shared_installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
-|параметры|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
+|settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -43,11 +43,6 @@
   }
 }
 ```
-
-
-
-
-
 
 
 

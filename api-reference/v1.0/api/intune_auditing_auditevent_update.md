@@ -1,10 +1,10 @@
-# <a name="update-auditevent"></a>Обновление объекта auditEvent
+# <a name="update-auditevent"></a>Update auditEvent
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Обновление свойств объекта [auditEvent](../resources/intune_auditing_auditevent.md).
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -21,10 +21,10 @@
 PATCH /deviceManagement/auditEvents/{auditEventId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -34,18 +34,18 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Ключ объекта.|
-|displayName|String (строка)|Отображаемое имя события.|
-|componentName|String (строка)|Имя компонента.|
+|id|String|Ключ объекта.|
+|displayName|String|Отображаемое имя события.|
+|componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|String (строка)|Понятное имя действия.|
+|activity|String|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|String (строка)|Тип выполненного действия.|
-|activityOperationType|String (строка)|Тип операции HTTP для действия.|
-|activityResult|String (строка)|Результат действия.|
-|correlationId|Guid|Идентификатор клиентского запроса, используемый для согласования действий в системе.|
+|activityType|String|Тип выполненного действия.|
+|activityOperationType|String|Тип операции HTTP для действия.|
+|activityResult|String|Результат действия.|
+|correlationId|Guid|ИД клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune_auditing_auditresource.md)|Изменяемые ресурсы.|
-|category|String (строка)|Категория аудита.|
+|category|String|Категория аудита.|
 
 
 
@@ -58,9 +58,10 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1338
+Content-length: 1390
 
 {
+  "@odata.type": "#microsoft.graph.auditEvent",
   "displayName": "Display Name value",
   "componentName": "Component Name value",
   "actor": {
@@ -81,7 +82,7 @@ Content-length: 1338
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -103,11 +104,11 @@ Content-length: 1338
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1436
+Content-Length: 1439
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -132,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -152,11 +153,6 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
-
-
-
-
-
 
 
 

@@ -14,27 +14,27 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ид|Строка|Н/Д|
-|displayName|Строка|Н/Д|
-|описание|Строка|Н/Д|
-|приоритет|Int32|Н/Д|
+|id|String|Н/Д|
+|displayName|String|Н/Д|
+|description|String|Н/Д|
+|priority|Int32|Н/Д|
 |createdDateTime|DateTimeOffset|Н/Д|
 |lastModifiedDateTime|DateTimeOffset|Н/Д|
-|версия|Int32|Н/Д|
+|version|Int32|Н/Д|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|задания|Коллекция [enrollmentConfigurationAssignment](../resources/intune_onboarding_enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства.|
+|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune_onboarding_enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentConfiguration",
@@ -47,11 +47,6 @@
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

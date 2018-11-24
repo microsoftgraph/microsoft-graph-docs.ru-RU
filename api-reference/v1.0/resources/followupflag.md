@@ -1,14 +1,14 @@
 # <a name="followupflag-resource-type"></a>Тип ресурса followupFlag
 
 
-Позволяет установить отметку для пользователя, что к этому элементу необходимо вернуться позже. К поддерживаемым элементам относятся [message](message.md) и [contact](contact.md).
+Позволяет флаг в элементе для пользователя к исполнению более поздней версии. 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|Дата и время, когда выполнение было завершено.|
 |dueDateTime|**dateTimeTimeZone**|Дата и время, когда выполнение должно быть завершено.|
-|flagStatus|FollowupFlagStatus|Состояние выполнения для элемента. Возможные значения: `notFlagged`, `complete` и `flagged`.|
+|flagStatus|followupFlagStatus|Состояние выполнения для элемента. Возможные значения: `notFlagged`, `complete` и `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Дата и время, когда следует начать выполнение.|
 
 ## <a name="json-representation"></a>Представление JSON

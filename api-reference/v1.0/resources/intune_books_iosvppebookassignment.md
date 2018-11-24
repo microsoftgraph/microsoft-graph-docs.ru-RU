@@ -18,20 +18,20 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Цель установки для электронной книги. Наследуется от managedEBookAssignment. Возможные значения:  .[](../resources/intune_books_managedebookassignment.md) `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|Цель установки электронной книги. Наследуется от [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedEBookAssignment",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppEBookAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
@@ -42,11 +42,6 @@
   "installIntent": "String"
 }
 ```
-
-
-
-
-
 
 
 

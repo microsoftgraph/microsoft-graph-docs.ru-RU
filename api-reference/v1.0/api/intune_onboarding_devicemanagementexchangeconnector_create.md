@@ -24,8 +24,8 @@ POST /deviceManagement/exchangeConnectors
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Accept|application/json|
+|Авторизация|&lt;Токен&gt; носителя. Обязательный.|
+|Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта deviceManagementExchangeConnector в формате JSON.
@@ -34,16 +34,16 @@ POST /deviceManagement/exchangeConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Н/Д|
+|id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|String (строка)|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
+|primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
 |serverName|String|Имя сервера Exchange.|
 |connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Тип настройки соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|version|String (строка)|Версия объекта ExchangeConnectorAgent|
-|exchangeAlias|String (строка)|Псевдоним, назначенный серверу Exchange Server|
-|exchangeOrganization|String (строка)|Организация Exchange, соответствующая серверу Exchange Server|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|version|String|Версия объекта ExchangeConnectorAgent|
+|exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
+|exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
 
 
 
@@ -74,6 +74,7 @@ Content-length: 490
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -93,11 +94,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
-
-
-
 
 
 

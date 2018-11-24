@@ -12,25 +12,25 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|unknownDeviceCount|Int32|Количество неизвестных устройств.|
-|notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
-|compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
-|remediatedDeviceCount|Int32|Количество исправленных устройств.|
-|nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
-|errorDeviceCount|Int32|Количество устройств с ошибками.|
+|id|String|Ключ объекта.|
+|unknownDeviceCount|Int32|Количество неизвестных устройств|
+|notApplicableDeviceCount|Int32|Количество неприменимых устройств|
+|compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям|
+|remediatedDeviceCount|Int32|Количество исправленных устройств|
+|nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям|
+|errorDeviceCount|Int32|Количество устройств с ошибками|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationDeviceStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStateSummary",
@@ -44,11 +44,6 @@
   "conflictDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

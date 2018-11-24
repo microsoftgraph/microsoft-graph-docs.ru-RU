@@ -24,8 +24,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceConfigurationUserStatus в формате JSON.
@@ -34,12 +34,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|userDisplayName|Строка|Имя пользователя в объекте DevicePolicyStatus.|
+|id|String|Ключ объекта.|
+|userDisplayName|String|Имя пользователя в объекте DevicePolicyStatus.|
 |devicesCount|Int32|Количество устройств для этого пользователя.|
 |status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
-|userPrincipalName|Строка|UserPrincipalName.|
+|userPrincipalName|String|Имя участника-пользователя.|
 
 
 
@@ -65,7 +65,7 @@ Content-length: 290
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -81,11 +81,6 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 

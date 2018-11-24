@@ -15,23 +15,23 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор партнера TEM.|
-|displayName|Строка|Отображаемое имя партнера TEM.|
-|url|Строка|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
-|appAuthorized|Логический|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
-|enabled|Логическое|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
+|id|String|Уникальный идентификатор партнера TEM.|
+|displayName|String|Отображаемое имя партнера TEM.|
+|url|String|URL-адрес административной панели управления партнера TEM, где можно настроить службу TEM.|
+|appAuthorized|Boolean|Определяет, авторизозвано ли партнерское приложение AAD на доступ к Intune.|
+|enabled|Boolean|Определяет, включено или отключено подключение Intune к службе TEM в настоящее время.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного службе Intune партнером TEM.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.telecomExpenseManagementPartner"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",
@@ -43,11 +43,6 @@
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

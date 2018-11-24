@@ -1,6 +1,6 @@
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>Действие wipeManagedAppRegistrationsByDeviceTag
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -10,8 +10,8 @@
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| _Изменяется в зависимости от контекста_ |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| _изменяется в соответствии с контекста_ |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -27,8 +27,9 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
@@ -37,7 +38,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|deviceTag|Строка|Тег устройства|
+|deviceTag|String|Тег устройства|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
@@ -60,6 +61,7 @@ Content-length: 39
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 
 ``` http
 HTTP/1.1 204 No Content

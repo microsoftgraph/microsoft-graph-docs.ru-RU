@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|приложение/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта androidManagedAppRegistration в формате JSON.
@@ -35,18 +35,18 @@ POST /deviceAppManagement/managedAppRegistrations
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации приложения со службой управления. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|applicationVersion|Строка|Версия приложения. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|managementSdkVersion|Строка|Версия пакета SDK для управления приложениями. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|platformVersion|Строка|Версия операционной системы. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|deviceType|Строка|Тип главного устройства. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|deviceTag|Строка|Тег, который создан с использованием пакета SDK для управления приложениями и помогает связывать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|deviceName|Строка|Имя устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|flaggedReasons|Коллекция [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Ноль или более причин, отмеченных при регистрации приложения. Например, приложения, запущенном на корневом устройстве, унаследованном от [managedAppRegistration](../resources/intune_mam_managedappregistration.md). Возможные значения: `none`, `rootedDevice`.|
-|userId|Строка|ИД пользователя, к которому относится эта регистрация приложения. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации приложения со службой управления. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|applicationVersion|String|Версия приложения. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|managementSdkVersion|String|Версия пакета SDK для управления приложениями. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|platformVersion|String|Версия операционной системы. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|deviceType|String|Тип устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|deviceTag|String|Тег, который создан с использованием пакета SDK для управления приложениями и позволяет связать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|deviceName|String|Имя устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) коллекции|Нуль или более причин, по которым помечается регистрация приложения (например, приложения, работающего на устройстве корневые унаследованные от [managedAppRegistration](../resources/intune_mam_managedappregistration.md). Возможные значения: `none`, `rootedDevice`.|
+|userId|String|ИД пользователя, к которому относится эта регистрация приложения. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Идентификатор пакета приложения. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|ИД|Строка|Ключ объекта. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
-|версия|Строка|Версия объекта. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|id|String|Ключ объекта. Наследуется от [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
+|version|String|Версия объекта. Наследуется от объекта [managedAppRegistration](../resources/intune_mam_managedappregistration.md).|
 
 
 
@@ -84,6 +84,7 @@ Content-length: 645
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -111,11 +112,6 @@ Content-Length: 753
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

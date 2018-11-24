@@ -8,14 +8,15 @@
 
 | Тип ресурса или элемент        | Разрешение          |
 |-----------------------------|---------------------|
-| Контакты                    | Contacts.Read       |
-| Разговоры               | Group.Read.All      |
+| Contacts                    | Contacts.Read       |
+| Беседы               | Group.Read.All      |
 | События                      | Calendars.Read      |
 | Сообщения                    | Mail.Read           |
-| Группы                      | Group.Read.All      |
-| Пользователи                       | User.Read.All       |
-| Диск (пользователя OneDrive)    | Files.ReadWrite.     |
-| Диски (содержимое и диски в SharePoint, к которым предоставлен общий доступ) | Files.ReadWrite.All |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
+| Диск (хранилище OneDrive пользователя)    | Files.ReadWrite.     |
+| На дисках (содержимое общих SharePoint и диски) | Files.ReadWrite.All |
+|Предупреждение системы безопасности| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -27,13 +28,13 @@ GET /subscriptions/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Авторизация  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

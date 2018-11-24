@@ -13,11 +13,11 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|description|Строка|Указанное администратором описание конфигурации устройства.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|description|String|Указанное администратором описание конфигурации устройства.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи
@@ -32,12 +32,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfiguration",
@@ -49,11 +49,6 @@
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

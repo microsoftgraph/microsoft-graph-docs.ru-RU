@@ -4,15 +4,15 @@
 
 Удаляет объект [user](../resources/intune_shared_user.md).
 ## <a name="prerequisites"></a>Необходимые компоненты
-Чтобы вызвать этот API необходимо одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).  Конкретное обязательное   разрешение зависит от контекста.
+Чтобы вызвать этот интерфейс API необходимо одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).  Необходимые разрешения определенного зависит от контекста.
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| _Изменяется в зависимости от контекста_|
-| &nbsp; &nbsp; Устройства | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; Адаптация | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| _изменяется в соответствии с контекста_|
+| &nbsp;&nbsp; Устройств | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Адаптация новых сотрудников | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -25,16 +25,17 @@
 DELETE /users/{usersId}
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -47,7 +48,8 @@ DELETE https://graph.microsoft.com/v1.0/users/{usersId}
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 
 ``` http
 HTTP/1.1 204 No Content
