@@ -24,7 +24,7 @@ PATCH /organization/{organizationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -34,12 +34,12 @@ PATCH /organization/{organizationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|GUID объекта.|
+|id|String|GUID объекта.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [organization](../resources/intune_onboarding_organization.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -48,15 +48,16 @@ PATCH /organization/{organizationId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/organization/{organizationId}
 Content-type: application/json
-Content-length: 51
+Content-length: 102
 
 {
+  "@odata.type": "#microsoft.graph.organization",
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -68,11 +69,6 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
-
-
-
-
-
 
 
 

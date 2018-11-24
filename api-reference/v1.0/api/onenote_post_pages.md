@@ -28,7 +28,7 @@ POST /sites/{id}/onenote/pages
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
+| Content-Type | строка | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажите содержимое HTML для страницы.
@@ -63,7 +63,7 @@ Content-Type:text/html
   </head>
   <body>
     <p>Here's an image from an online source:</p>
-    <img src="http://..." alt="an image on the page" width="500" />
+    <img src="https://..." alt="an image on the page" width="500" />
     <p>Here's an image uploaded as binary data:</p>
     <img src="name:imageBlock1" alt="an image on the page" width="300" />
     <p>Here's a file attachment:</p>
@@ -86,7 +86,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание: Для краткости усекается объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

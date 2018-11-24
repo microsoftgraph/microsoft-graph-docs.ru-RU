@@ -15,29 +15,29 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ИД|String (строка​)|Ключ объекта|
-|настройки|String (строка​)|Имя класса параметров и свойства.|
-|settingName|String (строка​)|Имя параметра в отчете.|
-|deviceId|String (строка​)|Идентификатор устройства в отчете.|
-|deviceName|String (строка​)|Имя устройства в отчете.|
-|userId|String (строка​)|Идентификатор пользователя в отчете.|
-|userEmail|String (строка​)|Адрес электронной почты пользователя в отчете.|
-|userName|String (строка​)|Имя пользователя в отчете.|
-|userPrincipalName|String (строка​)|Имя участника-пользователя в отчете.|
-|deviceModel|String (строка​)|Модель устройства в отчете.|
-|состояние|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Соответствие требованиям состояние параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|id|String|Ключ объекта|
+|setting|String|Имя класса параметров и свойства.|
+|settingName|String|Имя параметра в отчете|
+|deviceId|String|ИД устройства в отчете|
+|deviceName|String|Имя устройства в отчете|
+|userId|String|ИД пользователя в отчете|
+|userEmail|String|Электронный адрес пользователя в отчете|
+|userName|String|Имя пользователя в отчете|
+|userPrincipalName|String|Имя участника-пользователя в отчете|
+|deviceModel|String|Модель устройства в отчете|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Соответствие требованиям состояние параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceSettingState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
@@ -55,11 +55,6 @@
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

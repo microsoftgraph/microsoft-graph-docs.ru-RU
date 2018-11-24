@@ -14,10 +14,11 @@
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows10NetworkProxyServer"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10NetworkProxyServer",
@@ -28,11 +29,6 @@
   "useForLocalAddresses": true
 }
 ```
-
-
-
-
-
 
 
 

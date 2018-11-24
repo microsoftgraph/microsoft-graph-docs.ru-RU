@@ -24,8 +24,8 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) в формате JSON.
@@ -34,10 +34,10 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Уникальный идентификатор партнера.|
-|displayName|String (строка)|Отображаемое имя партнера.|
-|onboardingUrl|String (строка)|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Подлежит уточнению. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
+|id|String|Уникальный идентификатор партнера.|
+|displayName|String|Отображаемое имя партнера.|
+|onboardingUrl|String|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|БУДЕТ ОПРЕДЕЛЕНО ПОЗЖЕ. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
 
 
@@ -51,9 +51,10 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 Content-type: application/json
-Content-length: 204
+Content-length: 266
 
 {
+  "@odata.type": "#microsoft.graph.remoteAssistancePartner",
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
@@ -63,6 +64,7 @@ Content-length: 204
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -77,11 +79,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
-
-
-
-
 
 
 

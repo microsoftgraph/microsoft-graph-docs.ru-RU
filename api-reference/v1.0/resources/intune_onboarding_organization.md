@@ -7,14 +7,14 @@
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список организаций](../api/intune_onboarding_organization_list.md)|Коллекция объектов [organization](../resources/intune_onboarding_organization.md)|Список свойств и связей объектов [organization](../resources/intune_onboarding_organization.md).|
-|[Получение организации](../api/intune_onboarding_organization_get.md)|[организация](../resources/intune_onboarding_organization.md)|Чтение свойств и связей объекта [organization](../resources/intune_onboarding_organization.md).|
-|[Обновление организации](../api/intune_onboarding_organization_update.md)|[организация](../resources/intune_onboarding_organization.md)|Обновление свойств объекта [organization](../resources/intune_onboarding_organization.md).|
+|[Получение организации](../api/intune_onboarding_organization_get.md)|[organization](../resources/intune_onboarding_organization.md)|Чтение свойств и связей объекта [organization](../resources/intune_onboarding_organization.md).|
+|[Обновление организации](../api/intune_onboarding_organization_update.md)|[organization](../resources/intune_onboarding_organization.md)|Обновление свойств объекта [organization](../resources/intune_onboarding_organization.md).|
 |[Действие setMobileDeviceManagementAuthority](../api/intune_onboarding_organization_setmobiledevicemanagementauthority.md)|Int32|Задание центра управления мобильными устройствами|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ид|Строка|GUID объекта.|
+|id|String|GUID объекта.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 
 ## <a name="relationships"></a>Связи
@@ -35,6 +35,7 @@
 }
 ```
 
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
@@ -51,9 +52,4 @@
 
 }
 -->
-
-
-
-
-
 

@@ -24,7 +24,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -34,8 +34,8 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
-|applicationName|Строка|Имя приложения|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
+|applicationName|String|Имя приложения|
 |applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
 
@@ -50,9 +50,10 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 Content-type: application/json
-Content-length: 106
+Content-length: 191
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
   "applicationName": "Application Name value",
   "applicationType": "desktop",
   "deviceCount": 11
@@ -61,6 +62,7 @@ Content-length: 106
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -74,11 +76,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

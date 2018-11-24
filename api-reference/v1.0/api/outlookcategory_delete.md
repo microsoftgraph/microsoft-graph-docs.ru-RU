@@ -19,7 +19,7 @@ DELETE /me/outlook/masterCategories/{id}
 DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -44,8 +44,8 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример отклика.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "name": "delete_outlookcategory",

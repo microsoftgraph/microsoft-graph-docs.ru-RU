@@ -24,7 +24,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -34,16 +34,16 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта|
-|setting|Строка|Имя класса параметров и свойства.|
-|settingName|Строка|Имя параметра в отчете.|
-|deviceId|Строка|Идентификатор устройства в отчете.|
-|deviceName|Строка|Имя устройства в отчете.|
-|userId|Строка|Идентификатор пользователя в отчете.|
-|userEmail|Строка|Адрес электронной почты пользователя в отчете.|
-|userName|Строка|Имя пользователя в отчете.|
-|userPrincipalName|Строка|Имя участника-пользователя в отчете.|
-|deviceModel|Строка|Модель устройства в отчете.|
+|id|String|Ключ объекта|
+|setting|String|Имя класса параметров и свойства.|
+|settingName|String|Имя параметра в отчете.|
+|deviceId|String|Идентификатор устройства в отчете.|
+|deviceName|String|Имя устройства в отчете.|
+|userId|String|Идентификатор пользователя в отчете.|
+|userEmail|String|Адрес электронной почты пользователя в отчете.|
+|userName|String|Имя пользователя в отчете.|
+|userPrincipalName|String|Имя участника-пользователя в отчете.|
+|deviceModel|String|Модель устройства в отчете.|
 |state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Соответствие требованиям состояние параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
@@ -78,6 +78,7 @@ Content-length: 517
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -99,11 +100,6 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
-
-
-
-
 
 
 

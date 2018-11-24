@@ -18,7 +18,7 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/{si
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -29,9 +29,9 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [WorkbookRangeBorder](../resources/rangeborder.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [WorkbookRangeBorder](../resources/rangeborder.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -42,8 +42,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders/{sideIndex}
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

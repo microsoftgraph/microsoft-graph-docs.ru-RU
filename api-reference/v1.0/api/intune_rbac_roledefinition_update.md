@@ -25,8 +25,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [roleDefinition](../resources/intune_rbac_roledefinition.md) в формате JSON.
@@ -35,11 +35,11 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображаемое имя определения роли.|
-|description|Строка|Описание определения роли.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|String|Отображаемое имя определения роли.|
+|description|String|Описание определения роли.|
 |rolePermissions|Коллекция [rolePermission](../resources/intune_rbac_rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
-|isBuiltIn|Логический|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
+|isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
 
 
 
@@ -52,9 +52,10 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
-Content-length: 527
+Content-length: 580
 
 {
+  "@odata.type": "#microsoft.graph.roleDefinition",
   "displayName": "Display Name value",
   "description": "Description value",
   "rolePermissions": [
@@ -78,7 +79,7 @@ Content-length: 527
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -108,11 +109,6 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

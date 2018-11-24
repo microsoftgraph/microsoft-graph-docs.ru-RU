@@ -9,7 +9,7 @@
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| 
-| &nbsp; &nbsp; _Адаптация_ | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; _Адаптация новых сотрудников_ | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -25,8 +25,9 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -42,7 +43,7 @@ POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForB
 
 ### <a name="response"></a>Ответ
 
-Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Для краткости может усекаться объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
 
 ``` http
 HTTP/1.1 204 No Content

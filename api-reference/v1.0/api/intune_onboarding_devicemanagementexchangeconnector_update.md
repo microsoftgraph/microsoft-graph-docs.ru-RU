@@ -24,7 +24,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Авторизация|&lt;Токен&gt; носителя. Обязательный.|
 |Принять|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -34,16 +34,16 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ид|string|Н/Д|
+|id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
-|статус|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|String (строка)|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
-|serverName|Строка|Имя сервера Exchange.|
-|connectorServerName|Строка|Имя сервера, на котором размещается соединитель Exchange.|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Тип настройки соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|версия|String (строка)|Версия объекта ExchangeConnectorAgent|
-|exchangeAlias|String (строка)|Псевдоним, назначенный серверу Exchange Server|
-|exchangeOrganization|String (строка)|Организация Exchange, соответствующая серверу Exchange Server|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
+|primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
+|serverName|String|Имя сервера Exchange.|
+|connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|version|String|Версия объекта ExchangeConnectorAgent|
+|exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
+|exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
 
 
 
@@ -56,9 +56,10 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 Content-type: application/json
-Content-length: 418
+Content-length: 490
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
@@ -73,6 +74,7 @@ Content-length: 418
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -92,11 +94,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
-
-
-
 
 
 

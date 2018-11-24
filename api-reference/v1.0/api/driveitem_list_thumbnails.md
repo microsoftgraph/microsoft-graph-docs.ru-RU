@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Получение эскизов файла или папки
-ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: b7b842a5aac4b8505db3b4fc1c77dcb7c983f521
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23266837"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564846"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
@@ -52,7 +52,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Этот метод поддерживает [параметр запросов OData](../../../concepts/query_parameters.md) `$select` для настройки отклика.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ThumbnailSet](../resources/thumbnailset.md) в теле отклика.
 
@@ -72,7 +72,7 @@ GET /me/drive/items/{item-id}/thumbnails
 Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 {
   "width": 100,
   "height": 100,
-  "url": "http://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
+  "url": "https://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
 }
 ```
 
@@ -164,7 +164,7 @@ URL-адреса эскизов не кэшируются. Если в резу�
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Служба возвращает список ресурсов DriveItem и их эскизов.
 
@@ -204,7 +204,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="size-options"></a>Возможные размеры
+## <a name="size-options"></a>Параметры размера
 
 В этой таблице определены возможные размеры эскизов. Хотя вы можете указать в запросе произвольный размер эскиза, определенные значения встречаются намного чаще и позволяют быстрее получить результат.
 
@@ -269,7 +269,7 @@ Content-Type: application/json
 
 Эскизы не поддерживаются в SharePoint Server 2016.
 
-### <a name="error-responses"></a>Ответы с ошибками
+### <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

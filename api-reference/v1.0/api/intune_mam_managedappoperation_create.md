@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта managedAppOperation в формате JSON.
@@ -34,11 +34,11 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String (строка)|Имя операции.|
+|displayName|String|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
-|состояние|String (строка)|Текущее состояние операции|
-|ид|Строка|Ключ объекта.|
-|версия|Строка|Версия объекта.|
+|state|String|Текущее состояние операции|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 
 
@@ -51,19 +51,18 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 Content-type: application/json
-Content-length: 223
+Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.managedAppOperation",
   "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "State value",
   "version": "Version value"
 }
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -78,11 +77,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

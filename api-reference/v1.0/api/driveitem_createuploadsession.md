@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Возобновляемая отправка файлов
-ms.openlocfilehash: d6a6066ea04d087efef556a1d5b5af888a34dad2
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 14b9047f84b5390aea2f5285660e6c04a6bc3149
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265514"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564760"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -16,8 +16,8 @@ ms.locfileid: "23265514"
 
 Процесс отправки файла с помощью сеанса отправки состоит из двух этапов:
 
-1. [Создание сеанса отправки](#create-an-upload-session)
-2. [Отправка байтов в сеанс отправки](#upload-bytes-to-the-upload-session)
+1. [Создание сеанса отправки](#create-an-upload-session).
+2. [Отправка байтов в сеанс отправки](#upload-bytes-to-the-upload-session).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,15 +45,15 @@ POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
-Текст запроса не требуется.
-Однако можно указать свойство `item` в тексте запроса, предоставив дополнительные данные о загружаемом файле.
+Тело запроса не требуется.
+Тем не менее, можно указать `item` свойство в тексте запроса, предоставляя дополнительные данные о выгружаемого файла.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
   "description": "description",
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "name": "filename.txt"
@@ -81,9 +81,9 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:---------------------------------
-| description          | String (строка)             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в личном хранилище OneDrive
+| описание          | String             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в личном хранилище OneDrive
 | fileSystemInfo       | [fileSystemInfo][] | Сведения о файловой системе на клиенте. Чтение и запись.
-| name                 | String (строка)             | Имя элемента (имя и расширение файла). Чтение и запись.
+| name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 
 ### <a name="request"></a>Запрос
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 Чтобы отправить файл или его часть, приложение выполняет запрос PUT на адрес **uploadUrl**, указанный в отклике для **createUploadSession**.
 Вы можете отправить файл целиком или разделить его на несколько диапазонов байтов. При этом каждый запрос должен содержать фрагмент размером не более 60 МБ.
 
-Фрагменты файла необходимо отправлять последовательно, в правильном порядке.
+Фрагменты файл должен загружаться последовательно в порядке.
 В противном случае возникнет ошибка.
 
 **Примечание.** Если приложение делит файл на несколько диапазонов байтов, размер каждого из них **ДОЛЖЕН** быть кратным 320 КБ (327 680 байтов). Если размер фрагментов не делится на 320 КБ без остатка, при отправке некоторых файлов возникнут ошибки.
@@ -191,7 +191,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Замечания
+## <a name="remarks"></a>Примечания
 
 * В свойстве `nextExpectedRanges` не всегда указываются все отсутствующие диапазоны.
 * При успешной записи фрагментов оно возвращает следующий диапазон (например, "523-").
@@ -367,7 +367,7 @@ Content-Type: application/json
 
 [error-response]: ../../../concepts/errors.md
 [item-resource]: ../resources/driveitem.md
-[fileSystemInfo]: ../resources/filesysteminfo.md
+[fileSystemInfo]: ../resources/filesysteminfo.md;
 
 <!-- {
   "type": "#page.annotation",
@@ -375,7 +375,7 @@ Content-Type: application/json
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
     "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

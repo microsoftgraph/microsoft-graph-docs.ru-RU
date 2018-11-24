@@ -6,19 +6,20 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|Строка|Название действия|
+|actionName|String|Название действия|
 |actionState|[actionState](../resources/intune_devices_actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceActionResult"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceActionResult",
@@ -28,11 +29,6 @@
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

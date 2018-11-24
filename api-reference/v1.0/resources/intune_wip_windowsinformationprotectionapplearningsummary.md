@@ -15,21 +15,21 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
-|applicationName|Строка|Имя приложения|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
+|applicationName|String|Имя приложения|
 |applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLearningSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
@@ -39,11 +39,6 @@
   "deviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

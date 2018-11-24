@@ -6,27 +6,28 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Настройка главного устройства, чтобы разрешить или заблокировать брандмауэр, и принудительное применение повышенной безопасности для сетевого профиля. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
-|stealthModeBlocked|Логический|Предотвращение работы сервера в скрытом режиме. Когда оба свойства StealthModeRequired и StealthModeBlocked имеют значение true, приоритет имеет StealthModeBlocked.|
-|incomingTrafficBlocked|Логический|Настройка брандмауэра на блокировку всего входящего трафика независимо от параметров политики. Когда оба свойства IncomingTrafficRequired и IncomingTrafficBlocked имеют значение true, приоритет имеет IncomingTrafficBlocked.|
-|unicastResponsesToMulticastBroadcastsBlocked|Логический|Настраивает брандмауэр на блокировку одноадресных откликов на многоадресный широковещательный трафик. Когда оба свойства UnicastResponsesToMulticastBroadcastsRequired и UnicastResponsesToMulticastBroadcastsBlocked имеют значение true, приоритет имеет UnicastResponsesToMulticastBroadcastsBlocked.|
-|inboundNotificationsBlocked|Логический|Предотвращает отображение в брандмауэре уведомлений о том, что для приложения заблокирована возможность прослушивания порта. Когда оба свойства InboundNotificationsRequired и InboundNotificationsBlocked имеют значение true, приоритет имеет InboundNotificationsBlocked.|
-|authorizedApplicationRulesFromGroupPolicyMerged|Логический|Настройка брандмауэра таким образом, чтобы он объединял правила для авторизованных приложений из групповой политики с правилами из локального хранилища, а не игнорировал правила локального хранилища. Когда оба свойства AuthorizedApplicationRulesFromGroupPolicyNotMerged и AuthorizedApplicationRulesFromGroupPolicyMerged имеют значение true, приоритет имеет AuthorizedApplicationRulesFromGroupPolicyMerged.|
-|globalPortRulesFromGroupPolicyMerged|Логический|Настраивает брандмауэр таким образом, чтобы он объединял глобальные правила для портов из групповой политики с правилами из локального хранилища, а не игнорировал правила локального хранилища. Когда оба свойства GlobalPortRulesFromGroupPolicyNotMerged и GlobalPortRulesFromGroupPolicyMerged имеют значение true, приоритет имеет GlobalPortRulesFromGroupPolicyMerged.|
-|connectionSecurityRulesFromGroupPolicyMerged|Логический|Настраивает брандмауэр таким образом, чтобы он объединял правила безопасности подключений из групповой политики с правилами из локального хранилища, а не игнорировал правила локального хранилища. Когда оба свойства ConnectionSecurityRulesFromGroupPolicyNotMerged и ConnectionSecurityRulesFromGroupPolicyMerged имеют значение true, приоритет имеет ConnectionSecurityRulesFromGroupPolicyMerged.|
-|outboundConnectionsBlocked|Логический|Настраивает брандмауэр на блокировку всех исходящих подключений по умолчанию. Когда оба свойства OutboundConnectionsRequired и OutboundConnectionsBlocked имеют значение true, приоритет имеет OutboundConnectionsBlocked.|
-|inboundConnectionsBlocked|Логический|Настраивает брандмауэр на блокировку всех входящих подключений по умолчанию. Когда оба свойства InboundConnectionsRequired и InboundConnectionsBlocked имеют значение true, приоритет имеет InboundConnectionsBlocked.|
-|securedPacketExemptionAllowed|Логический|Настраивает брандмауэр таким образом, чтобы он разрешал главному компьютеру реагировать на незапрошенный сетевой трафик, защищенный с помощью IPsec, даже если для свойства stealthModeBlocked установлено значение True. Когда оба свойства SecuredPacketExemptionBlocked и SecuredPacketExemptionAllowed имеют значение true, приоритет имеет SecuredPacketExemptionAllowed.|
-|policyRulesFromGroupPolicyMerged|Логический|Настраивает брандмауэр таким образом, чтобы он объединял политики правил брандмауэра из групповой политики с политиками из локального хранилища, а не игнорировал правила локального хранилища. Когда оба свойства PolicyRulesFromGroupPolicyNotMerged и PolicyRulesFromGroupPolicyMerged имеют значение true, приоритет имеет PolicyRulesFromGroupPolicyMerged.|
+|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Настройка устройства узла разрешить или заблокировать брандмауэра и принудительное применение повышенной безопасности для сетевого профиля. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
+|stealthModeBlocked|Boolean|Запретить сервера на работе в скрытом режиме. Когда StealthModeRequired и StealthModeBlocked являются оба имеет значение true, StealthModeBlocked приоритет.|
+|incomingTrafficBlocked|Boolean|Настраивает брандмауэр блокирует весь входящий трафик вне зависимости от других параметров политики. Когда IncomingTrafficRequired и IncomingTrafficBlocked являются оба имеет значение true, IncomingTrafficBlocked приоритет.|
+|unicastResponsesToMulticastBroadcastsBlocked|Boolean|Настройка брандмауэра для блокировки одноадресные ответы на многоадресной рассылки широковещательного трафика. Когда UnicastResponsesToMulticastBroadcastsRequired и UnicastResponsesToMulticastBroadcastsBlocked являются оба имеет значение true, UnicastResponsesToMulticastBroadcastsBlocked приоритет.|
+|inboundNotificationsBlocked|Boolean|Запрещает отображение уведомлений о блокировании приложения прослушивает порт брандмауэра. Когда InboundNotificationsRequired и InboundNotificationsBlocked являются оба имеет значение true, InboundNotificationsBlocked приоритет.|
+|authorizedApplicationRulesFromGroupPolicyMerged|Boolean|Настройка брандмауэра для объединения правил авторизованного приложения из групповой политики с учетными записями из локального хранилища вместо без учета правил локального хранилища. Когда AuthorizedApplicationRulesFromGroupPolicyNotMerged и AuthorizedApplicationRulesFromGroupPolicyMerged являются оба имеет значение true, AuthorizedApplicationRulesFromGroupPolicyMerged приоритет.|
+|globalPortRulesFromGroupPolicyMerged|Boolean|Настройка брандмауэра для объединения глобальным правила групповой политики с учетными записями из локального хранилища вместо без учета правил локального хранилища. Когда GlobalPortRulesFromGroupPolicyNotMerged и GlobalPortRulesFromGroupPolicyMerged являются оба имеет значение true, GlobalPortRulesFromGroupPolicyMerged приоритет.|
+|connectionSecurityRulesFromGroupPolicyMerged|Boolean|Настройка брандмауэра для объединения правил безопасности подключения из групповой политики с учетными записями из локального хранилища вместо без учета правил локального хранилища. Когда ConnectionSecurityRulesFromGroupPolicyNotMerged и ConnectionSecurityRulesFromGroupPolicyMerged являются оба имеет значение true, ConnectionSecurityRulesFromGroupPolicyMerged приоритет.|
+|outboundConnectionsBlocked|Boolean|Настройка брандмауэра для блокирования всех исходящих подключений по умолчанию. Когда OutboundConnectionsRequired и OutboundConnectionsBlocked являются оба имеет значение true, OutboundConnectionsBlocked приоритет.|
+|inboundConnectionsBlocked|Boolean|Настраивает брандмауэр блокирует все входящие подключения по умолчанию. Когда InboundConnectionsRequired и InboundConnectionsBlocked являются оба имеет значение true, InboundConnectionsBlocked приоритет.|
+|securedPacketExemptionAllowed|Boolean|Настраивает брандмауэр, чтобы разрешить главном компьютере реагировать на нежелательных сетевого трафика из защитой трафика по протоколу IPSec даже в том случае, если stealthModeBlocked установлено значение true. Когда SecuredPacketExemptionBlocked и SecuredPacketExemptionAllowed являются оба имеет значение true, SecuredPacketExemptionAllowed приоритет.|
+|policyRulesFromGroupPolicyMerged|Boolean|Настройка брандмауэра для объединения правило брандмауэра политик из групповой политики с учетными записями из локального хранилища вместо без учета правил локального хранилища. Когда PolicyRulesFromGroupPolicyNotMerged и PolicyRulesFromGroupPolicyMerged являются оба имеет значение true, PolicyRulesFromGroupPolicyMerged приоритет.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsFirewallNetworkProfile",
@@ -44,11 +45,6 @@
   "policyRulesFromGroupPolicyMerged": true
 }
 ```
-
-
-
-
-
 
 
 

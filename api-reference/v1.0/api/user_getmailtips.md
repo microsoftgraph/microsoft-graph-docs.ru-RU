@@ -1,8 +1,8 @@
-# <a name="user-getmailtips"></a>user: getMailTips
+# <a name="user-getmailtips"></a>пользователь: getMailTips
 
-Получение подсказки (MailTips) для одного или нескольких получателей, доступных для вошедшего в систему [пользователя](../resources/user.md) .
+Получите подсказки одного или нескольких получателей как доступные выполнившего вход [пользователя](../resources/user.md).
 
-Обратите внимание, что при помощи вызова `POST` действия `getMailTips` можно запросить возврат определенного типа подсказок (MailTips) для нескольких получателей за один раз. Запрошенные подсказки (MailTips) возвращаются в коллекцию [mailTips](../resources/mailtips.md).
+Обратите внимание, что благодаря `POST` звонок, чтобы `getMailTips` действие, можно запросить определенных типов подсказки должно быть возвращено для нескольких получателей за один раз. Запрошенный подсказок возвращаются в коллекцию [подсказок](../resources/mailtips.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).
@@ -20,7 +20,7 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------  |:------|
@@ -28,19 +28,19 @@ POST /users/{id|userPrincipalName}/getMailTips
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите JSON-объект с указанными ниже параметрами.
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|EmailAddresses|Коллекция String|Коллекция SMTP-адресов получателей для получения подсказок (MailTips).|
-|MailTipsOptions|String (строка)|Перечисление флагов, которое представляет запрошенные подсказки. Возможные значения: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions` и `totalMemberCount`.|
+|EmailAddresses|Коллекция String|Коллекция SMTP-адреса для получения подсказок для получателей.|
+|MailTipsOptions|String|Перечисление флаги, который представляет запрошенный подсказок. Возможные значения: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, и `totalMemberCount`.|
 
 ## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [mailTips](../resources/mailtips.md) в теле отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [подсказок](../resources/mailtips.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Следующий пример демонстрирует получение подсказок (MailTips) для указанных получателей, для любых параметров автоматического ответа и состояния переполненности почтового ящика.
+В следующем примере получается подсказки для заданных получателей для все параметры автоматического ответа, а также состояние полный почтовый ящик.
 
 <!-- {
   "blockType": "request",
@@ -61,6 +61,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

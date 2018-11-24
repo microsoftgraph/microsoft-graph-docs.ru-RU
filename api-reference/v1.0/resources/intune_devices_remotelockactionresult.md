@@ -9,21 +9,21 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|String (строка)|Название действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Состояние действия, унаследованного от deviceActionResult.[ ](../resources/intune_devices_deviceactionresult.md) Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Состояние действие унаследованные от [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|unlockPin|String (строка)|ПИН-код для разблокировки клиента|
+|unlockPin|String|ПИН-код для разблокировки клиента|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.remoteLockActionResult"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.remoteLockActionResult",

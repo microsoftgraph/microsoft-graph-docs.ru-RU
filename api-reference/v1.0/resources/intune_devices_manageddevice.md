@@ -34,22 +34,23 @@
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор устройства.|
-|userId|String|Уникальный идентификатор пользователя, связанного с устройством.|
+|userId|String|Уникальный идентификатор пользователя, связанного с устройством|
 |deviceName|String|Название устройства|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|Владение устройством. Может быть "компания" или "личное". Возможные значения: `unknown`, `company`, `personal`.|
-|deviceActionResults|Коллекция [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|Список объектов deviceActionResult сложного типа.|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|Владельцем устройства. Может быть «компания» или «личные». Возможные значения: `unknown`, `company`, `personal`.|
+|deviceActionResults|Коллекция [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|Список объектов deviceActionResult сложного типа.
+|
 |enrolledDateTime|DateTimeOffset|Время регистрации устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней успешной синхронизации устройства с Intune.|
-|operatingSystem|String|Операционная система устройства. Windows, iOS и т. д.|
+|operatingSystem|String|Операционная система устройства. Windows, iOS и т. д.|
 |complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|Состояние соответствия устройства требованиям. Возможные значения: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|Указывает, является ли устройство взломанным или рутованным.|
-|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
+|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |osVersion|String|Версия операционной системы устройства.|
 |easActivated|Boolean|Указывает, активировано ли устройство в Exchange ActiveSync.|
 |easDeviceId|String|Идентификатор устройства в Exchange ActiveSync.|
 |easActivationDateTime|DateTimeOffset|Время активации устройства в Exchange ActivationSync.|
 |azureADRegistered|Boolean|Указывает, зарегистрировано ли устройство в Azure Active Directory.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|Тип регистрации устройства. Возможные значения: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune_devices_deviceenrollmenttype.md)|Тип регистрации устройства. Возможные значения: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |activationLockBypassCode|String|Код, позволяющий обойти блокировку активации на устройстве.|
 |emailAddress|String|Адреса электронной почты пользователя, связанного с устройством|
 |azureADDeviceId|String|Уникальный идентификатор устройства Azure Active Directory. Только для чтения.|
@@ -57,7 +58,7 @@
 |deviceCategoryDisplayName|String|Отображаемое имя категории устройства|
 |isSupervised|Boolean|Состояние защиты устройства|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Время последнего подключения устройства к Exchange.|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Состояние доступа устройств в Exchange. Возможные значения: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Состояние доступа к устройству в Exchange. Возможные значения: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|Причина состояния доступа к устройству в Exchange. Возможные значения: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|URL-адрес, позволяющий установить сеанс удаленного помощника с устройством.|
 |remoteAssistanceSessionErrorDetails|String|Проблемы, возникающие при создании сеансов удаленного помощника.|
@@ -77,9 +78,11 @@
 |subscriberCarrier|String|Оператор сотовой связи, используемый абонентом|
 |meid|String|MEID|
 |totalStorageSpaceInBytes|Int64|Общий объем хранилища в байтах|
-|freeStorageSpaceInBytes|Int64|Свободный объем хранилища в байтах|
+|freeStorageSpaceInBytes|Int64|Свободный объем хранилища в байтах
+|
 |managedDeviceName|String|Автоматически созданный идентификатор устройства. Может быть заменен понятным именем.|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Указывает состояние подверженности устройства угрозам при использовании решения Mobile Threat Defense (в учетной записи и на устройстве). Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Указывает состояние подверженности устройства угрозам при использовании решения Mobile Threat Defense (в учетной записи и на устройстве).
+ Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -88,12 +91,12 @@
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDevice"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -196,11 +199,6 @@
   "partnerReportedThreatState": "String"
 }
 ```
-
-
-
-
-
 
 
 

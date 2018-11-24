@@ -13,23 +13,23 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String (строка)|Отображаемое имя политики.|
-|описание|String (строка)|Описание политики.|
+|displayName|String|Отображаемое имя политики.|
+|description|String|Описание политики.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики.|
-|ид|String (строка)|Ключ объекта.|
-|версия|String (строка)|Версия объекта.|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicy"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicy",
@@ -41,11 +41,6 @@
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

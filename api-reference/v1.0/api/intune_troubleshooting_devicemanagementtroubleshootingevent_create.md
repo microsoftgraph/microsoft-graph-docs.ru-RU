@@ -24,8 +24,9 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта deviceManagementTroubleshootingEvent в формате JSON.
@@ -34,9 +35,9 @@ POST /deviceManagement/troubleshootingEvents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
-|correlationId|Строка|Идентификатор, используемый для трассировки сбоя в службе.|
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе.|
 
 
 
@@ -47,7 +48,7 @@ POST /deviceManagement/troubleshootingEvents
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 179
 
@@ -60,6 +61,7 @@ Content-length: 179
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -72,7 +74,6 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
-
 
 
 

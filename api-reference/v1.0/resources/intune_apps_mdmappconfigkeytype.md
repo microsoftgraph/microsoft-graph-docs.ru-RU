@@ -1,21 +1,16 @@
-# <a name="mdmappconfigkeytype-enum-type"></a>тип перечисления mdmAppConfigKeyType
+# <a name="mdmappconfigkeytype-enum-type"></a>Тип перечисления mdmAppConfigKeyType
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
-Основные типы ключей конфигурации приложения.
+Основные типы конфигурации приложения.
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|stringType|0|Еще не задокументировано|
-|integerType|1|Еще не задокументировано|
-|realType|2|Еще не задокументировано|
-|booleanType|3|Еще не задокументировано|
-|tokenType|4|Еще не задокументировано|
-
-
-
-
-
+|stringType|0|Н/Д|
+|integerType|1|Н/Д|
+|realType|2|Н/Д|
+|booleanType|3|Н/Д|
+|tokenType|4|Н/Д|
 
 
 

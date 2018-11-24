@@ -17,18 +17,18 @@
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String (строка)|Ключ объекта.|
-|displayName|String (строка)|Отображаемое имя события.|
-|componentName|String (строка)|Имя компонента.|
+|id|String|Ключ объекта.|
+|displayName|String|Отображаемое имя события.|
+|componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|действие|String (строка)|Понятное имя действия.|
+|activity|String|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|String (строка)|Тип выполненного действия.|
-|activityOperationType|String (строка)|Тип операции HTTP для действия.|
-|activityResult|String (строка)|Результат действия.|
-|correlationId|Guid|Идентификатор клиентского запроса, используемый для согласования действий в системе.|
+|activityType|String|Тип выполненного действия.|
+|activityOperationType|String|Тип операции HTTP для действия.|
+|activityResult|String|Результат действия.|
+|correlationId|Guid|ИД клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune_auditing_auditresource.md)|Изменяемые ресурсы.|
-|category|String (строка)|Категория аудита.|
+|category|String|Категория аудита.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -84,11 +84,6 @@
   "category": "String"
 }
 ```
-
-
-
-
-
 
 
 

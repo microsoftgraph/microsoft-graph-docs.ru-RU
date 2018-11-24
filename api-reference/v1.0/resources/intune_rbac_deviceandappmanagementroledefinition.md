@@ -12,31 +12,31 @@
 |[Перечисление deviceAndAppManagementRoleDefinitions](../api/intune_rbac_deviceandappmanagementroledefinition_list.md)|Коллекция [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md)|Список свойств и связей объектов [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md).|
 |[Получение deviceAndAppManagementRoleDefinition](../api/intune_rbac_deviceandappmanagementroledefinition_get.md)|[deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md)|Считывание свойств и связей объекта [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md).|
 |[Создание deviceAndAppManagementRoleDefinition](../api/intune_rbac_deviceandappmanagementroledefinition_create.md)|[deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md)|Создание объекта [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md).|
-|[Удаление deviceAndAppManagementRoleDefinition](../api/intune_rbac_deviceandappmanagementroledefinition_delete.md)|Нет|Удаление экземпляра [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md).|
+|[Удаление deviceAndAppManagementRoleDefinition](../api/intune_rbac_deviceandappmanagementroledefinition_delete.md)|None|Удаление экземпляра [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md).|
 |[Обновление deviceAndAppManagementRoleDefinition](../api/intune_rbac_deviceandappmanagementroledefinition_update.md)|[deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md)|Обновление свойств объекта [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
-|displayName|Строка|Отображаемое имя определения роли. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
-|описание|Строка|Описание определения роли. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
+|displayName|String|Отображаемое имя определения роли. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
+|description|String|Описание определения роли. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
 |rolePermissions|Коллекция [rolePermission](../resources/intune_rbac_rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission. Наследуется от объекта [roleDefinition](../resources/intune_rbac_roledefinition.md).|
-|isBuiltIn|Логический|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False. Наследуется от [roleDefinition](../resources/intune_rbac_roledefinition.md).|
+|isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False. Наследуется от [roleDefinition](../resources/intune_rbac_roledefinition.md).|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|roleAssignments|Коллекция объектов [roleAssignment](../resources/intune_rbac_roleassignment.md)|Список назначений ролей для определения роли. Наследуется от [roleDefinition](../resources/intune_rbac_roledefinition.md).|
+|roleAssignments|Коллекция [roleAssignment](../resources/intune_rbac_roleassignment.md)|Список назначений ролей для определения роли. Наследуется от [roleDefinition](../resources/intune_rbac_roledefinition.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.roleDefinition",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleDefinition"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
@@ -62,11 +62,6 @@
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

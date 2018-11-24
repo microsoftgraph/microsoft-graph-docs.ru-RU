@@ -24,7 +24,7 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -34,8 +34,8 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строковый|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
-|applicationName|Строковый|Имя приложения|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
+|applicationName|String|Имя приложения|
 |applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
 
@@ -62,6 +62,7 @@ Content-length: 191
 
 ### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -75,11 +76,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

@@ -25,8 +25,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;|
-|Принять|application/json|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта mobileAppCategory в формате JSON.
@@ -35,8 +35,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ид|Строка|Ключ объекта.|
-|displayName|Строка|Имя категории приложений.|
+|id|String|Ключ объекта.|
+|displayName|String|Имя категории приложений.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта mobileAppCategory.|
 
 
@@ -50,17 +50,16 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories
 Content-type: application/json
-Content-length: 163
+Content-length: 99
 
 {
   "@odata.type": "#microsoft.graph.mobileAppCategory",
-  "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+  "displayName": "Display Name value"
 }
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -73,11 +72,6 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
-
-
-
 
 
 
