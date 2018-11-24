@@ -1,0 +1,15 @@
+# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="7291d-101">Тип перечисления teamsAsyncOperationStatus</span><span class="sxs-lookup"><span data-stu-id="7291d-101">teamsAsyncOperationStatus enum type</span></span>
+
+
+
+<span data-ttu-id="7291d-102">Описывает текущее состояние [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="7291d-102">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+
+## <a name="members"></a><span data-ttu-id="7291d-103">Элементы</span><span class="sxs-lookup"><span data-stu-id="7291d-103">Members</span></span>
+
+| <span data-ttu-id="7291d-104">Элемент</span><span class="sxs-lookup"><span data-stu-id="7291d-104">Member</span></span> | <span data-ttu-id="7291d-105">Значение</span><span class="sxs-lookup"><span data-stu-id="7291d-105">Value</span></span>| <span data-ttu-id="7291d-106">Описание</span><span class="sxs-lookup"><span data-stu-id="7291d-106">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="7291d-107">Недопустимый</span><span class="sxs-lookup"><span data-stu-id="7291d-107">invalid</span></span>|<span data-ttu-id="7291d-108">0</span><span class="sxs-lookup"><span data-stu-id="7291d-108">0</span></span>|<span data-ttu-id="7291d-109">Недопустимое значение.</span><span class="sxs-lookup"><span data-stu-id="7291d-109">Invalid value.</span></span>|
+|<span data-ttu-id="7291d-110">notStarted</span><span class="sxs-lookup"><span data-stu-id="7291d-110">notStarted</span></span>|<span data-ttu-id="7291d-111">1</span><span class="sxs-lookup"><span data-stu-id="7291d-111">1</span></span>|<span data-ttu-id="7291d-112">Эта операция не запущена.</span><span class="sxs-lookup"><span data-stu-id="7291d-112">The operation has not started.</span></span>|
+|<span data-ttu-id="7291d-113">inProgress</span><span class="sxs-lookup"><span data-stu-id="7291d-113">inProgress</span></span>|<span data-ttu-id="7291d-114">2</span><span class="sxs-lookup"><span data-stu-id="7291d-114">2</span></span>|<span data-ttu-id="7291d-115">Выполнение операции.</span><span class="sxs-lookup"><span data-stu-id="7291d-115">The operation is running.</span></span>|
+|<span data-ttu-id="7291d-116">succeeded</span><span class="sxs-lookup"><span data-stu-id="7291d-116">succeeded</span></span>|<span data-ttu-id="7291d-117">3</span><span class="sxs-lookup"><span data-stu-id="7291d-117">3</span></span>|<span data-ttu-id="7291d-118">Операция успешно завершена.</span><span class="sxs-lookup"><span data-stu-id="7291d-118">The operation succeeded.</span></span>|
+|<span data-ttu-id="7291d-119">failed</span><span class="sxs-lookup"><span data-stu-id="7291d-119">failed</span></span>|<span data-ttu-id="7291d-120">4</span><span class="sxs-lookup"><span data-stu-id="7291d-120">4</span></span>|<span data-ttu-id="7291d-121">Сбой операции.</span><span class="sxs-lookup"><span data-stu-id="7291d-121">The operation failed.</span></span>|

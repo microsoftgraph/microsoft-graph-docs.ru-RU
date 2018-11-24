@@ -1,0 +1,16 @@
+# <a name="teamsasyncoperationtype-enum-type"></a><span data-ttu-id="378c2-101">Тип перечисления teamsAsyncOperationType</span><span class="sxs-lookup"><span data-stu-id="378c2-101">teamsAsyncOperationType enum type</span></span>
+
+
+
+<span data-ttu-id="378c2-102">Типы [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="378c2-102">Types of [teamsAsyncOperation](teamsasyncoperation.md).</span></span> <span data-ttu-id="378c2-103">Участники будут добавляться здесь дополнительных async поддерживают операции.</span><span class="sxs-lookup"><span data-stu-id="378c2-103">Members will be added here as more async operations are supported.</span></span>
+
+## <a name="members"></a><span data-ttu-id="378c2-104">Элементы</span><span class="sxs-lookup"><span data-stu-id="378c2-104">Members</span></span>
+
+| <span data-ttu-id="378c2-105">Элемент</span><span class="sxs-lookup"><span data-stu-id="378c2-105">Member</span></span> | <span data-ttu-id="378c2-106">Значение</span><span class="sxs-lookup"><span data-stu-id="378c2-106">Value</span></span>| <span data-ttu-id="378c2-107">Описание</span><span class="sxs-lookup"><span data-stu-id="378c2-107">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="378c2-108">Недопустимый</span><span class="sxs-lookup"><span data-stu-id="378c2-108">invalid</span></span>|<span data-ttu-id="378c2-109">0</span><span class="sxs-lookup"><span data-stu-id="378c2-109">0</span></span>|<span data-ttu-id="378c2-110">Недопустимое значение.</span><span class="sxs-lookup"><span data-stu-id="378c2-110">Invalid value.</span></span>|
+|<span data-ttu-id="378c2-111">cloneTeam</span><span class="sxs-lookup"><span data-stu-id="378c2-111">cloneTeam</span></span>|<span data-ttu-id="378c2-112">1</span><span class="sxs-lookup"><span data-stu-id="378c2-112">1</span></span>|<span data-ttu-id="378c2-113">Операция следует скопировать группы.</span><span class="sxs-lookup"><span data-stu-id="378c2-113">Operation to clone a team.</span></span>|
+|<span data-ttu-id="378c2-114">archiveTeam</span><span class="sxs-lookup"><span data-stu-id="378c2-114">archiveTeam</span></span>|<span data-ttu-id="378c2-115">2</span><span class="sxs-lookup"><span data-stu-id="378c2-115">2</span></span>|<span data-ttu-id="378c2-116">Операции в архив группы.</span><span class="sxs-lookup"><span data-stu-id="378c2-116">Operation to archive a team.</span></span>|
+|<span data-ttu-id="378c2-117">unarchiveTeam</span><span class="sxs-lookup"><span data-stu-id="378c2-117">unarchiveTeam</span></span>|<span data-ttu-id="378c2-118">3</span><span class="sxs-lookup"><span data-stu-id="378c2-118">3</span></span>|<span data-ttu-id="378c2-119">Операция восстановление архивированных группы.</span><span class="sxs-lookup"><span data-stu-id="378c2-119">Operation to restore an archived team.</span></span>|
+|<span data-ttu-id="378c2-120">createTeam</span><span class="sxs-lookup"><span data-stu-id="378c2-120">createTeam</span></span>|<span data-ttu-id="378c2-121">3</span><span class="sxs-lookup"><span data-stu-id="378c2-121">3</span></span>|<span data-ttu-id="378c2-122">Операция создать группу «с нуля».</span><span class="sxs-lookup"><span data-stu-id="378c2-122">Operation to create a team from scratch.</span></span>|
+
