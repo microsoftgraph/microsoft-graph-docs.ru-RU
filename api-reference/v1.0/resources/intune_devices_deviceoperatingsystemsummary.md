@@ -1,26 +1,27 @@
-# <a name="deviceoperatingsystemsummary-resource-type"></a><span data-ttu-id="08582-101">Тип ресурса deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="08582-101">deviceOperatingSystemSummary resource type</span></span>
+# <a name="deviceoperatingsystemsummary-resource-type"></a><span data-ttu-id="a6a03-101">Тип ресурса deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="a6a03-101">deviceOperatingSystemSummary resource type</span></span>
 
-> <span data-ttu-id="08582-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="08582-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="a6a03-102">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="a6a03-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="08582-103">Общие сведения об операционной системе устройства.</span><span class="sxs-lookup"><span data-stu-id="08582-103">Device operating system summary.</span></span>
-## <a name="properties"></a><span data-ttu-id="08582-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="08582-104">Properties</span></span>
-|<span data-ttu-id="08582-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="08582-105">Property</span></span>|<span data-ttu-id="08582-106">Тип</span><span class="sxs-lookup"><span data-stu-id="08582-106">Type</span></span>|<span data-ttu-id="08582-107">Описание</span><span class="sxs-lookup"><span data-stu-id="08582-107">Description</span></span>|
+<span data-ttu-id="a6a03-103">Общие сведения об операционной системе устройства.</span><span class="sxs-lookup"><span data-stu-id="a6a03-103">Device operating system summary.</span></span>
+## <a name="properties"></a><span data-ttu-id="a6a03-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="a6a03-104">Properties</span></span>
+|<span data-ttu-id="a6a03-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="a6a03-105">Property</span></span>|<span data-ttu-id="a6a03-106">Тип</span><span class="sxs-lookup"><span data-stu-id="a6a03-106">Type</span></span>|<span data-ttu-id="a6a03-107">Описание</span><span class="sxs-lookup"><span data-stu-id="a6a03-107">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="08582-108">androidCount</span><span class="sxs-lookup"><span data-stu-id="08582-108">androidCount</span></span>|<span data-ttu-id="08582-109">Int32</span><span class="sxs-lookup"><span data-stu-id="08582-109">Int32</span></span>|<span data-ttu-id="08582-110">Количество устройств с Android.</span><span class="sxs-lookup"><span data-stu-id="08582-110">Number of android device count.</span></span>|
-|<span data-ttu-id="08582-111">iosCount</span><span class="sxs-lookup"><span data-stu-id="08582-111">iosCount</span></span>|<span data-ttu-id="08582-112">Int32</span><span class="sxs-lookup"><span data-stu-id="08582-112">Int32</span></span>|<span data-ttu-id="08582-113">Количество устройств с iOS.</span><span class="sxs-lookup"><span data-stu-id="08582-113">Number of iOS device count.</span></span>|
-|<span data-ttu-id="08582-114">macOSCount</span><span class="sxs-lookup"><span data-stu-id="08582-114">macOSCount</span></span>|<span data-ttu-id="08582-115">Int32</span><span class="sxs-lookup"><span data-stu-id="08582-115">Int32</span></span>|<span data-ttu-id="08582-116">Количество устройств с Mac OS X.</span><span class="sxs-lookup"><span data-stu-id="08582-116">Number of Mac OS X device count.</span></span>|
-|<span data-ttu-id="08582-117">windowsMobileCount</span><span class="sxs-lookup"><span data-stu-id="08582-117">windowsMobileCount</span></span>|<span data-ttu-id="08582-118">Int32</span><span class="sxs-lookup"><span data-stu-id="08582-118">Int32</span></span>|<span data-ttu-id="08582-119">Количество мобильных устройств с Windows.</span><span class="sxs-lookup"><span data-stu-id="08582-119">Number of Windows mobile device count.</span></span>|
-|<span data-ttu-id="08582-120">windowsCount</span><span class="sxs-lookup"><span data-stu-id="08582-120">windowsCount</span></span>|<span data-ttu-id="08582-121">Int32</span><span class="sxs-lookup"><span data-stu-id="08582-121">Int32</span></span>|<span data-ttu-id="08582-122">Количество устройств с Windows.</span><span class="sxs-lookup"><span data-stu-id="08582-122">Number of Windows device count.</span></span>|
-|<span data-ttu-id="08582-123">unknownCount</span><span class="sxs-lookup"><span data-stu-id="08582-123">unknownCount</span></span>|<span data-ttu-id="08582-124">Int32</span><span class="sxs-lookup"><span data-stu-id="08582-124">Int32</span></span>|<span data-ttu-id="08582-125">Количество неизвестных устройств.</span><span class="sxs-lookup"><span data-stu-id="08582-125">Number of unknown device count.</span></span>|
+|<span data-ttu-id="a6a03-108">androidCount</span><span class="sxs-lookup"><span data-stu-id="a6a03-108">androidCount</span></span>|<span data-ttu-id="a6a03-109">Int32</span><span class="sxs-lookup"><span data-stu-id="a6a03-109">Int32</span></span>|<span data-ttu-id="a6a03-110">Количество устройств с Android.</span><span class="sxs-lookup"><span data-stu-id="a6a03-110">Number of android device count.</span></span>|
+|<span data-ttu-id="a6a03-111">iosCount</span><span class="sxs-lookup"><span data-stu-id="a6a03-111">iosCount</span></span>|<span data-ttu-id="a6a03-112">Int32</span><span class="sxs-lookup"><span data-stu-id="a6a03-112">Int32</span></span>|<span data-ttu-id="a6a03-113">Количество устройств с iOS.</span><span class="sxs-lookup"><span data-stu-id="a6a03-113">Number of iOS device count.</span></span>|
+|<span data-ttu-id="a6a03-114">macOSCount</span><span class="sxs-lookup"><span data-stu-id="a6a03-114">macOSCount</span></span>|<span data-ttu-id="a6a03-115">Int32</span><span class="sxs-lookup"><span data-stu-id="a6a03-115">Int32</span></span>|<span data-ttu-id="a6a03-116">Количество устройств с Mac OS X.</span><span class="sxs-lookup"><span data-stu-id="a6a03-116">Number of Mac OS X device count.</span></span>|
+|<span data-ttu-id="a6a03-117">windowsMobileCount</span><span class="sxs-lookup"><span data-stu-id="a6a03-117">windowsMobileCount</span></span>|<span data-ttu-id="a6a03-118">Int32</span><span class="sxs-lookup"><span data-stu-id="a6a03-118">Int32</span></span>|<span data-ttu-id="a6a03-119">Количество мобильных устройств с Windows.</span><span class="sxs-lookup"><span data-stu-id="a6a03-119">Number of Windows mobile device count.</span></span>|
+|<span data-ttu-id="a6a03-120">windowsCount</span><span class="sxs-lookup"><span data-stu-id="a6a03-120">windowsCount</span></span>|<span data-ttu-id="a6a03-121">Int32</span><span class="sxs-lookup"><span data-stu-id="a6a03-121">Int32</span></span>|<span data-ttu-id="a6a03-122">Количество устройств с Windows.</span><span class="sxs-lookup"><span data-stu-id="a6a03-122">Number of Windows device count.</span></span>|
+|<span data-ttu-id="a6a03-123">unknownCount</span><span class="sxs-lookup"><span data-stu-id="a6a03-123">unknownCount</span></span>|<span data-ttu-id="a6a03-124">Int32</span><span class="sxs-lookup"><span data-stu-id="a6a03-124">Int32</span></span>|<span data-ttu-id="a6a03-125">Количество неизвестных устройств.</span><span class="sxs-lookup"><span data-stu-id="a6a03-125">Number of unknown device count.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="08582-126">Связи</span><span class="sxs-lookup"><span data-stu-id="08582-126">Relationships</span></span>
-<span data-ttu-id="08582-127">Нет</span><span class="sxs-lookup"><span data-stu-id="08582-127">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="08582-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="08582-128">JSON Representation</span></span>
-<span data-ttu-id="08582-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="08582-129">Here is a JSON representation of the resource.</span></span>
-<!--{
+## <a name="relationships"></a><span data-ttu-id="a6a03-126">Связи</span><span class="sxs-lookup"><span data-stu-id="a6a03-126">Relationships</span></span>
+<span data-ttu-id="a6a03-127">Нет</span><span class="sxs-lookup"><span data-stu-id="a6a03-127">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a6a03-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a6a03-128">JSON Representation</span></span>
+<span data-ttu-id="a6a03-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a6a03-129">Here is a JSON representation of the resource.</span></span>
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceOperatingSystemSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceOperatingSystemSummary",
@@ -32,11 +33,6 @@
   "unknownCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

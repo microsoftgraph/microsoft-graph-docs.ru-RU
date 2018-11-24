@@ -1,18 +1,18 @@
-# <a name="get-user-activities"></a><span data-ttu-id="c081c-101">Получение действий пользователя</span><span class="sxs-lookup"><span data-stu-id="c081c-101">Get user activities</span></span>
+# <a name="get-user-activities"></a><span data-ttu-id="442f4-101">Получение действия пользователя</span><span class="sxs-lookup"><span data-stu-id="442f4-101">Get user activities</span></span>
 
-<span data-ttu-id="c081c-102">Получение действий для определенного пользователя.</span><span class="sxs-lookup"><span data-stu-id="c081c-102">Get activities for a given user.</span></span> <span data-ttu-id="c081c-103">В отличие от функции OData **recent** (последние), действия без истории будут возвращены.</span><span class="sxs-lookup"><span data-stu-id="c081c-103">Unlike the **recent** OData function, activities without histories will be returned.</span></span> <span data-ttu-id="c081c-104">Разрешение UserActivity.ReadWrite.CreatedByApp применит дополнительные фильтры к ответу, чтобы возвращались только действия, созданные вашим приложением.</span><span class="sxs-lookup"><span data-stu-id="c081c-104">The permission UserActivity.ReadWrite.CreatedByApp will apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="c081c-105">Такая фильтрация на стороне сервера может привести к возникновению пустых страниц, если пользователь особенно активен, и другие приложения зафиксировали более свежие факты активности.</span><span class="sxs-lookup"><span data-stu-id="c081c-105">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="c081c-106">Для получения действий в вашем приложении, используйте свойство **nextLink** для разбиения на страницы.</span><span class="sxs-lookup"><span data-stu-id="c081c-106">To get your application's activities, use the **nextLink** property to paginate.</span></span>
+<span data-ttu-id="442f4-102">Получение действий для определенного пользователя.</span><span class="sxs-lookup"><span data-stu-id="442f4-102">Get activities for a given user.</span></span> <span data-ttu-id="442f4-103">В отличие от **последние** функции OData будут возвращены действия без личных дел.</span><span class="sxs-lookup"><span data-stu-id="442f4-103">Unlike the **recent** OData function, activities without histories will be returned.</span></span> <span data-ttu-id="442f4-104">Разрешение UserActivity.ReadWrite.CreatedByApp будут применяться дополнительных фильтрации в ответ, чтобы возвращаются только действий, созданных приложением.</span><span class="sxs-lookup"><span data-stu-id="442f4-104">The permission UserActivity.ReadWrite.CreatedByApp will apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="442f4-105">В этом фильтрации на сервере может привести к пустой страницы Если пользователь является особенно active и другие приложения были созданы более последние действия.</span><span class="sxs-lookup"><span data-stu-id="442f4-105">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="442f4-106">Для получения действия этого приложения, используйте свойство **nextLink** для разбиения по страницам.</span><span class="sxs-lookup"><span data-stu-id="442f4-106">To get your application's activities, use the **nextLink** property to paginate.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c081c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c081c-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="442f4-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="442f4-107">Permissions</span></span>
 
-<span data-ttu-id="c081c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c081c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="442f4-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="442f4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="c081c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c081c-110">Permission type</span></span>      | <span data-ttu-id="c081c-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c081c-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="442f4-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="442f4-110">Permission type</span></span>      | <span data-ttu-id="442f4-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="442f4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c081c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c081c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c081c-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="c081c-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="c081c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c081c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c081c-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="c081c-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="c081c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c081c-116">Application</span></span> | <span data-ttu-id="c081c-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c081c-117">Not supported.</span></span> |
+|<span data-ttu-id="442f4-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="442f4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="442f4-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="442f4-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="442f4-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="442f4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="442f4-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="442f4-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="442f4-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="442f4-116">Application</span></span> | <span data-ttu-id="442f4-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="442f4-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c081c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c081c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="442f4-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="442f4-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -20,15 +20,15 @@
 GET /me/activities
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c081c-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c081c-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="442f4-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="442f4-119">Optional query parameters</span></span>
 
-<span data-ttu-id="c081c-120">Этот метод поддерживает [параметры запросов OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c081c-120">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span> <span data-ttu-id="c081c-121">Поддерживаются следующие параметры:</span><span class="sxs-lookup"><span data-stu-id="c081c-121">The following query parameters are supported:</span></span>
+<span data-ttu-id="442f4-120">Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="442f4-120">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="442f4-121">Поддерживаются следующие параметры запроса:</span><span class="sxs-lookup"><span data-stu-id="442f4-121">The following query parameters are supported:</span></span>
 
-- <span data-ttu-id="c081c-122">$expand — для свойства навигации **historyItems**.</span><span class="sxs-lookup"><span data-stu-id="c081c-122">$expand for the **historyItems** navigation property.</span></span>
-- <span data-ttu-id="c081c-123">$top — для ограничения максимального числа элементов на страницах.</span><span class="sxs-lookup"><span data-stu-id="c081c-123">$top to limit the maximum number of items across pages.</span></span>
-- <span data-ttu-id="c081c-124">$filter для свойства **lastModifiedDateTime** — для действий или элементов истории (**historyItems**), если они были развернуты.</span><span class="sxs-lookup"><span data-stu-id="c081c-124">$filter on the **lastModifiedDateTime** property for either activities or **historyItems**, if expanded.</span></span>
+- <span data-ttu-id="442f4-122">для свойства **historyItems** навигации разверните $.</span><span class="sxs-lookup"><span data-stu-id="442f4-122">$expand for the **historyItems** navigation property.</span></span>
+- <span data-ttu-id="442f4-123">Чтобы ограничить максимальное число элементов на страницах $top.</span><span class="sxs-lookup"><span data-stu-id="442f4-123">$top to limit the maximum number of items across pages.</span></span>
+- <span data-ttu-id="442f4-124">$filter свойства **lastModifiedDateTime** для действия или **historyItems**, если были развернуты.</span><span class="sxs-lookup"><span data-stu-id="442f4-124">$filter on the **lastModifiedDateTime** property for either activities or **historyItems**, if expanded.</span></span>
 
-<span data-ttu-id="c081c-125">Ниже приведены некоторые примеры поддерживаемых запросов с кодировкой URL-адреса:</span><span class="sxs-lookup"><span data-stu-id="c081c-125">The following are some examples of supported queries with URL encoding:</span></span>
+<span data-ttu-id="442f4-125">Ниже приведены некоторые примеры поддерживаемых запросов с кодировкой URL-адрес:</span><span class="sxs-lookup"><span data-stu-id="442f4-125">The following are some examples of supported queries with URL encoding:</span></span>
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -38,25 +38,25 @@ GET /me/activities
 /me/activities?$top=5
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c081c-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c081c-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="442f4-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="442f4-126">Request headers</span></span>
 
-|<span data-ttu-id="c081c-127">Имя</span><span class="sxs-lookup"><span data-stu-id="c081c-127">Name</span></span> | <span data-ttu-id="c081c-128">Тип</span><span class="sxs-lookup"><span data-stu-id="c081c-128">Type</span></span> | <span data-ttu-id="c081c-129">Описание</span><span class="sxs-lookup"><span data-stu-id="c081c-129">Description</span></span>|
+|<span data-ttu-id="442f4-127">Имя</span><span class="sxs-lookup"><span data-stu-id="442f4-127">Name</span></span> | <span data-ttu-id="442f4-128">Тип</span><span class="sxs-lookup"><span data-stu-id="442f4-128">Type</span></span> | <span data-ttu-id="442f4-129">Описание</span><span class="sxs-lookup"><span data-stu-id="442f4-129">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="c081c-130">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c081c-130">Authorization</span></span> | <span data-ttu-id="c081c-131">строка</span><span class="sxs-lookup"><span data-stu-id="c081c-131">string</span></span> | <span data-ttu-id="c081c-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c081c-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="442f4-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="442f4-130">Authorization</span></span> | <span data-ttu-id="442f4-131">string</span><span class="sxs-lookup"><span data-stu-id="442f4-131">string</span></span> | <span data-ttu-id="442f4-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="442f4-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c081c-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c081c-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="442f4-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="442f4-134">Request body</span></span>
 
-<span data-ttu-id="c081c-135">Нет текста запроса.</span><span class="sxs-lookup"><span data-stu-id="c081c-135">No request body is required.</span></span>
+<span data-ttu-id="442f4-135">Нет текста запроса.</span><span class="sxs-lookup"><span data-stu-id="442f4-135">No request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c081c-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="c081c-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="442f4-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="442f4-136">Response</span></span>
 
-<span data-ttu-id="c081c-137">При успешном выполнении этот метод возвращает код отклика `200 OK` с действиями пользователя в приложении.</span><span class="sxs-lookup"><span data-stu-id="c081c-137">If successful, this method returns the `200 OK` response code with the user's activities for your application.</span></span>
+<span data-ttu-id="442f4-137">Успешно завершена, этот метод возвращает `200 OK` код ответа с помощью действий пользователя для приложения.</span><span class="sxs-lookup"><span data-stu-id="442f4-137">If successful, this method returns the `200 OK` response code with the user's activities for your application.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c081c-138">Пример</span><span class="sxs-lookup"><span data-stu-id="c081c-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="442f4-138">Пример</span><span class="sxs-lookup"><span data-stu-id="442f4-138">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="c081c-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="c081c-139">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="442f4-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="442f4-139">Request</span></span>
 
-<span data-ttu-id="c081c-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c081c-140">The following is an example of the request.</span></span>
+<span data-ttu-id="442f4-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="442f4-140">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -67,9 +67,9 @@ GET /me/activities
 GET https://graph.microsoft.com/v1.0/me/activities
 ```
 
-##### <a name="response"></a><span data-ttu-id="c081c-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="c081c-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="442f4-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="442f4-141">Response</span></span>
 
-<span data-ttu-id="c081c-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c081c-142">The following is an example of the response.</span></span>
+<span data-ttu-id="442f4-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="442f4-142">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -93,7 +93,7 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
               "addImageQuery": false,
               },
@@ -101,7 +101,7 @@ Content-Type: application/json
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"
