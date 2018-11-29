@@ -1,3 +1,0 @@
-<span data-ttu-id="a0fa8-p108">Ваш отзыв важен для нас. Для связи с нами используйте сайт [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Помечайте свои вопросы тегом {MicrosoftGraph}.</span><span class="sxs-lookup"><span data-stu-id="a0fa8-p108">Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your questions with {MicrosoftGraph} and {office365}.</span></span> 
-
-Ваш отзыв важен для нас. Для связи с нами используйте сайт [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Помечайте свои вопросы тегом {MicrosoftGraph}.
