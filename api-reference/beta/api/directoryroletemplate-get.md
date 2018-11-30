@@ -1,0 +1,82 @@
+---
+title: Получение объекта directoryRoleTemplate
+description: Получение свойств и связей объекта directoryroletemplate.
+ms.openlocfilehash: 007b290d1bf0b33f47977d3c53a5a2ae66700136
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27075311"
+---
+# <a name="get-directoryroletemplate"></a><span data-ttu-id="f7981-103">Получение объекта directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="f7981-103">Get directoryRoleTemplate</span></span>
+
+> <span data-ttu-id="f7981-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f7981-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f7981-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f7981-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="f7981-106">Получение свойств и связей объекта directoryroletemplate.</span><span class="sxs-lookup"><span data-stu-id="f7981-106">Retrieve the properties and relationships of a directoryroletemplate object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7981-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f7981-107">Permissions</span></span>
+<span data-ttu-id="f7981-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7981-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="f7981-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f7981-110">Permission type</span></span>      | <span data-ttu-id="f7981-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f7981-111">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="f7981-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f7981-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f7981-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f7981-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f7981-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f7981-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7981-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f7981-115">Not supported.</span></span>    |
+|<span data-ttu-id="f7981-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f7981-116">Application</span></span> | <span data-ttu-id="f7981-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7981-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="f7981-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f7981-118">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /directoryRoleTemplates/{id}
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="f7981-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f7981-119">Optional query parameters</span></span>
+<span data-ttu-id="f7981-120">Этот метод **не** поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика (например, $filter не поддерживается).</span><span class="sxs-lookup"><span data-stu-id="f7981-120">This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="f7981-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f7981-121">Request headers</span></span>
+| <span data-ttu-id="f7981-122">Имя</span><span class="sxs-lookup"><span data-stu-id="f7981-122">Name</span></span>       | <span data-ttu-id="f7981-123">Тип</span><span class="sxs-lookup"><span data-stu-id="f7981-123">Type</span></span> | <span data-ttu-id="f7981-124">Описание</span><span class="sxs-lookup"><span data-stu-id="f7981-124">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="f7981-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f7981-125">Authorization</span></span>  | <span data-ttu-id="f7981-126">string</span><span class="sxs-lookup"><span data-stu-id="f7981-126">string</span></span>  | <span data-ttu-id="f7981-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f7981-p103">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="f7981-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f7981-129">Request body</span></span>
+<span data-ttu-id="f7981-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f7981-130">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="f7981-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7981-131">Response</span></span>
+
+<span data-ttu-id="f7981-132">В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryRoleTemplate](../resources/directoryroletemplate.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f7981-132">If successful, this method returns a `200 OK` response code and [directoryRoleTemplate](../resources/directoryroletemplate.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f7981-133">Пример</span><span class="sxs-lookup"><span data-stu-id="f7981-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f7981-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="f7981-134">Request</span></span>
+<span data-ttu-id="f7981-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f7981-135">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryroletemplate"
+}-->
+```http
+GET https://graph.microsoft.com/beta/directoryRoleTemplates/{id}
+```
+##### <a name="response"></a><span data-ttu-id="f7981-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="f7981-136">Response</span></span>
+<span data-ttu-id="f7981-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+</span><span class="sxs-lookup"><span data-stu-id="f7981-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 98
+
+{
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "id": "id-value"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get directoryRoleTemplate",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

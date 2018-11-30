@@ -1,0 +1,234 @@
+---
+title: функция getLoggedOnManagedDevices
+description: Н/Д
+ms.openlocfilehash: 4d8d6505cb4715cbda45e53e7b866644c2ab1d07
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27075821"
+---
+# <a name="getloggedonmanageddevices-function"></a><span data-ttu-id="0f716-103">функция getLoggedOnManagedDevices</span><span class="sxs-lookup"><span data-stu-id="0f716-103">getLoggedOnManagedDevices function</span></span>
+
+> <span data-ttu-id="0f716-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0f716-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0f716-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0f716-105">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="0f716-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="0f716-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="0f716-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="0f716-107">Not yet documented</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="0f716-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="0f716-108">Prerequisites</span></span>
+
+<span data-ttu-id="0f716-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0f716-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="0f716-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0f716-111">Permission type</span></span>|<span data-ttu-id="0f716-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="0f716-112">Permissions (from most to least privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="0f716-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0f716-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="0f716-114">&nbsp; &nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="0f716-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="0f716-115">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="0f716-115">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
+|<span data-ttu-id="0f716-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0f716-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0f716-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0f716-117">Not supported.</span></span>|
+|<span data-ttu-id="0f716-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0f716-118">Application</span></span>|<span data-ttu-id="0f716-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0f716-119">Not supported.</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="0f716-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0f716-120">HTTP Request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /users/{usersId}/getLoggedOnManagedDevices
+```
+
+## <a name="request-headers"></a><span data-ttu-id="0f716-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0f716-121">Request headers</span></span>
+
+|<span data-ttu-id="0f716-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0f716-122">Header</span></span>|<span data-ttu-id="0f716-123">Значение</span><span class="sxs-lookup"><span data-stu-id="0f716-123">Value</span></span>|
+|:---|:---|
+|<span data-ttu-id="0f716-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0f716-124">Authorization</span></span>|<span data-ttu-id="0f716-125">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="0f716-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0f716-126">Accept</span><span class="sxs-lookup"><span data-stu-id="0f716-126">Accept</span></span>|<span data-ttu-id="0f716-127">application/json</span><span class="sxs-lookup"><span data-stu-id="0f716-127">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="0f716-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0f716-128">Request body</span></span>
+
+<span data-ttu-id="0f716-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0f716-129">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="0f716-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="0f716-130">Response</span></span>
+
+<span data-ttu-id="0f716-131">Если успешно завершена, эта функция возвращает `200 OK` код ответа и семейства [managedDevice](../resources/intune-devices-manageddevice.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="0f716-131">If successful, this function returns a `200 OK` response code and a [managedDevice](../resources/intune-devices-manageddevice.md) collection in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="0f716-132">Пример</span><span class="sxs-lookup"><span data-stu-id="0f716-132">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="0f716-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="0f716-133">Request</span></span>
+
+<span data-ttu-id="0f716-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0f716-134">Here is an example of the request.</span></span>
+
+``` http
+GET https://graph.microsoft.com/beta/users/{usersId}/getLoggedOnManagedDevices
+```
+
+### <a name="response"></a><span data-ttu-id="0f716-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="0f716-135">Response</span></span>
+
+<span data-ttu-id="0f716-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+</span><span class="sxs-lookup"><span data-stu-id="0f716-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 7485
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.managedDevice",
+      "id": "705c034c-034c-705c-4c03-5c704c035c70",
+      "userId": "User Id value",
+      "deviceName": "Device Name value",
+      "hardwareInformation": {
+        "@odata.type": "microsoft.graph.hardwareInformation",
+        "serialNumber": "Serial Number value",
+        "totalStorageSpace": 1,
+        "freeStorageSpace": 0,
+        "imei": "Imei value",
+        "meid": "Meid value",
+        "manufacturer": "Manufacturer value",
+        "model": "Model value",
+        "phoneNumber": "Phone Number value",
+        "subscriberCarrier": "Subscriber Carrier value",
+        "cellularTechnology": "Cellular Technology value",
+        "wifiMac": "Wifi Mac value",
+        "operatingSystemLanguage": "Operating System Language value",
+        "isSupervised": true,
+        "isEncrypted": true,
+        "isSharedDevice": true,
+        "sharedDeviceCachedUsers": [
+          {
+            "@odata.type": "microsoft.graph.sharedAppleDeviceUser",
+            "userPrincipalName": "User Principal Name value",
+            "dataToSync": true,
+            "dataQuota": 9,
+            "dataUsed": 8
+          }
+        ],
+        "tpmSpecificationVersion": "Tpm Specification Version value",
+        "operatingSystemEdition": "Operating System Edition value",
+        "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
+        "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
+        "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
+        "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+      },
+      "ownerType": "company",
+      "managedDeviceOwnerType": "company",
+      "deviceActionResults": [
+        {
+          "@odata.type": "microsoft.graph.deviceActionResult",
+          "actionName": "Action Name value",
+          "actionState": "pending",
+          "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+          "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
+        }
+      ],
+      "managementState": "retirePending",
+      "enrolledDateTime": "2016-12-31T23:59:43.797191-08:00",
+      "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+      "chassisType": "desktop",
+      "operatingSystem": "Operating System value",
+      "deviceType": "windowsRT",
+      "complianceState": "compliant",
+      "jailBroken": "Jail Broken value",
+      "managementAgent": "mdm",
+      "osVersion": "Os Version value",
+      "easActivated": true,
+      "easDeviceId": "Eas Device Id value",
+      "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
+      "aadRegistered": true,
+      "azureADRegistered": true,
+      "deviceEnrollmentType": "userEnrollment",
+      "lostModeState": "enabled",
+      "activationLockBypassCode": "Activation Lock Bypass Code value",
+      "emailAddress": "Email Address value",
+      "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+      "azureADDeviceId": "Azure ADDevice Id value",
+      "deviceRegistrationState": "registered",
+      "deviceCategoryDisplayName": "Device Category Display Name value",
+      "isSupervised": true,
+      "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
+      "exchangeAccessState": "unknown",
+      "exchangeAccessStateReason": "unknown",
+      "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
+      "remoteAssistanceSessionErrorString": "Remote Assistance Session Error String value",
+      "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
+      "isEncrypted": true,
+      "userPrincipalName": "User Principal Name value",
+      "model": "Model value",
+      "manufacturer": "Manufacturer value",
+      "imei": "Imei value",
+      "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
+      "serialNumber": "Serial Number value",
+      "phoneNumber": "Phone Number value",
+      "androidSecurityPatchLevel": "Android Security Patch Level value",
+      "userDisplayName": "User Display Name value",
+      "configurationManagerClientEnabledFeatures": {
+        "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures",
+        "inventory": true,
+        "modernApps": true,
+        "resourceAccess": true,
+        "deviceConfiguration": true,
+        "compliancePolicy": true,
+        "windowsUpdateForBusiness": true
+      },
+      "wiFiMacAddress": "Wi Fi Mac Address value",
+      "deviceHealthAttestationState": {
+        "@odata.type": "microsoft.graph.deviceHealthAttestationState",
+        "lastUpdateDateTime": "Last Update Date Time value",
+        "contentNamespaceUrl": "https://example.com/contentNamespaceUrl/",
+        "deviceHealthAttestationStatus": "Device Health Attestation Status value",
+        "contentVersion": "Content Version value",
+        "issuedDateTime": "2016-12-31T23:58:22.1231038-08:00",
+        "attestationIdentityKey": "Attestation Identity Key value",
+        "resetCount": 10,
+        "restartCount": 12,
+        "dataExcutionPolicy": "Data Excution Policy value",
+        "bitLockerStatus": "Bit Locker Status value",
+        "bootManagerVersion": "Boot Manager Version value",
+        "codeIntegrityCheckVersion": "Code Integrity Check Version value",
+        "secureBoot": "Secure Boot value",
+        "bootDebugging": "Boot Debugging value",
+        "operatingSystemKernelDebugging": "Operating System Kernel Debugging value",
+        "codeIntegrity": "Code Integrity value",
+        "testSigning": "Test Signing value",
+        "safeMode": "Safe Mode value",
+        "windowsPE": "Windows PE value",
+        "earlyLaunchAntiMalwareDriverProtection": "Early Launch Anti Malware Driver Protection value",
+        "virtualSecureMode": "Virtual Secure Mode value",
+        "pcrHashAlgorithm": "Pcr Hash Algorithm value",
+        "bootAppSecurityVersion": "Boot App Security Version value",
+        "bootManagerSecurityVersion": "Boot Manager Security Version value",
+        "tpmVersion": "Tpm Version value",
+        "pcr0": "Pcr0 value",
+        "secureBootConfigurationPolicyFingerPrint": "Secure Boot Configuration Policy Finger Print value",
+        "codeIntegrityPolicy": "Code Integrity Policy value",
+        "bootRevisionListInfo": "Boot Revision List Info value",
+        "operatingSystemRevListInfo": "Operating System Rev List Info value",
+        "healthStatusMismatchInfo": "Health Status Mismatch Info value",
+        "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
+      },
+      "subscriberCarrier": "Subscriber Carrier value",
+      "meid": "Meid value",
+      "totalStorageSpaceInBytes": 8,
+      "freeStorageSpaceInBytes": 7,
+      "managedDeviceName": "Managed Device Name value",
+      "partnerReportedThreatState": "activated",
+      "usersLoggedOn": [
+        {
+          "@odata.type": "microsoft.graph.loggedOnUser",
+          "userId": "User Id value",
+          "lastLogOnDateTime": "2016-12-31T23:58:37.4262708-08:00"
+        }
+      ],
+      "preferMdmOverGroupPolicyAppliedDateTime": "2016-12-31T23:57:34.4649887-08:00",
+      "isAutopilotEnrolled": true,
+      "requestUserEnrollmentApproval": true,
+      "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00"
+    }
+  ]
+}
+```
+
+
+
