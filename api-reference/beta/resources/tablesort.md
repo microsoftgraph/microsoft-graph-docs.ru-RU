@@ -1,31 +1,43 @@
-# <a name="tablesort-resource-type"></a>Тип ресурса TableSort
+---
+title: Тип ресурса TableSort
+description: Управляет операциями сортировки для объектов Table.
+ms.openlocfilehash: 02ee1f72bc53a3097c76cf9bab62a165fe3c56f8
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27082730"
+---
+# <a name="tablesort-resource-type"></a><span data-ttu-id="a3eee-103">Тип ресурса TableSort</span><span class="sxs-lookup"><span data-stu-id="a3eee-103">TableSort resource type</span></span>
 
-Управляет операциями сортировки для объектов Table.
+> <span data-ttu-id="a3eee-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a3eee-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a3eee-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a3eee-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="a3eee-106">Управляет операциями сортировки для объектов Table.</span><span class="sxs-lookup"><span data-stu-id="a3eee-106">Manages sorting operations on Table objects.</span></span>
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a><span data-ttu-id="a3eee-107">Методы</span><span class="sxs-lookup"><span data-stu-id="a3eee-107">Methods</span></span>
 
-| Метод           | Возвращаемый тип    |Описание|
+| <span data-ttu-id="a3eee-108">Метод</span><span class="sxs-lookup"><span data-stu-id="a3eee-108">Method</span></span>           | <span data-ttu-id="a3eee-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="a3eee-109">Return Type</span></span>    |<span data-ttu-id="a3eee-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a3eee-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Получение объекта TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |Чтение свойств и связей объекта tableSort.|
-|[Apply](../api/tablesort_apply.md)|Нет|Выполняет сортировку.|
-|[Clear](../api/tablesort_clear.md)|Нет|Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.|
-|[Reapply](../api/tablesort_reapply.md)|Нет|Повторно применяет текущие параметры сортировки к таблице.|
+|[<span data-ttu-id="a3eee-111">Получение объекта TableSort</span><span class="sxs-lookup"><span data-stu-id="a3eee-111">Get TableSort</span></span>](../api/tablesort-get.md) | [<span data-ttu-id="a3eee-112">TableSort</span><span class="sxs-lookup"><span data-stu-id="a3eee-112">TableSort</span></span>](tablesort.md) |<span data-ttu-id="a3eee-113">Чтение свойств и связей объекта tableSort.</span><span class="sxs-lookup"><span data-stu-id="a3eee-113">Read properties and relationships of tableSort object.</span></span>|
+|[<span data-ttu-id="a3eee-114">Apply</span><span class="sxs-lookup"><span data-stu-id="a3eee-114">Apply</span></span>](../api/tablesort-apply.md)|<span data-ttu-id="a3eee-115">Нет</span><span class="sxs-lookup"><span data-stu-id="a3eee-115">None</span></span>|<span data-ttu-id="a3eee-116">Выполняет сортировку.</span><span class="sxs-lookup"><span data-stu-id="a3eee-116">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="a3eee-117">Clear</span><span class="sxs-lookup"><span data-stu-id="a3eee-117">Clear</span></span>](../api/tablesort-clear.md)|<span data-ttu-id="a3eee-118">Нет</span><span class="sxs-lookup"><span data-stu-id="a3eee-118">None</span></span>|<span data-ttu-id="a3eee-p102">Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.</span><span class="sxs-lookup"><span data-stu-id="a3eee-p102">Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.</span></span>|
+|[<span data-ttu-id="a3eee-121">Reapply</span><span class="sxs-lookup"><span data-stu-id="a3eee-121">Reapply</span></span>](../api/tablesort-reapply.md)|<span data-ttu-id="a3eee-122">Нет</span><span class="sxs-lookup"><span data-stu-id="a3eee-122">None</span></span>|<span data-ttu-id="a3eee-123">Повторно применяет текущие параметры сортировки к таблице.</span><span class="sxs-lookup"><span data-stu-id="a3eee-123">Reapplies the current sorting parameters to the table.</span></span>|
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="a3eee-124">Свойства</span><span class="sxs-lookup"><span data-stu-id="a3eee-124">Properties</span></span>
+| <span data-ttu-id="a3eee-125">Свойство</span><span class="sxs-lookup"><span data-stu-id="a3eee-125">Property</span></span>     | <span data-ttu-id="a3eee-126">Тип</span><span class="sxs-lookup"><span data-stu-id="a3eee-126">Type</span></span>   |<span data-ttu-id="a3eee-127">Описание</span><span class="sxs-lookup"><span data-stu-id="a3eee-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|matchCase|boolean|Указывает, учитывался ли регистр при последней сортировке таблице. Только для чтения.|
-|method|string|Указывает метод сортировки китайских символов, который использовался при последней сортировке таблицы. Возможные значения: `PinYin`, `StrokeCount`. Только для чтения.|
+|<span data-ttu-id="a3eee-128">matchCase</span><span class="sxs-lookup"><span data-stu-id="a3eee-128">matchCase</span></span>|<span data-ttu-id="a3eee-129">boolean</span><span class="sxs-lookup"><span data-stu-id="a3eee-129">boolean</span></span>|<span data-ttu-id="a3eee-p103">Указывает, учитывался ли регистр при последней сортировке таблице. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a3eee-p103">Represents whether the casing impacted the last sort of the table. Read-only.</span></span>|
+|<span data-ttu-id="a3eee-132">method</span><span class="sxs-lookup"><span data-stu-id="a3eee-132">method</span></span>|<span data-ttu-id="a3eee-133">string</span><span class="sxs-lookup"><span data-stu-id="a3eee-133">string</span></span>|<span data-ttu-id="a3eee-p104">Указывает метод сортировки китайских символов, который использовался при последней сортировке таблицы. Возможные значения: `PinYin`, `StrokeCount`. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a3eee-p104">Represents Chinese character ordering method last used to sort the table. Possible values are: `PinYin`, `StrokeCount`. Read-only.</span></span>|
 
-## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+## <a name="relationships"></a><span data-ttu-id="a3eee-137">Связи</span><span class="sxs-lookup"><span data-stu-id="a3eee-137">Relationships</span></span>
+| <span data-ttu-id="a3eee-138">Связь</span><span class="sxs-lookup"><span data-stu-id="a3eee-138">Relationship</span></span> | <span data-ttu-id="a3eee-139">Тип</span><span class="sxs-lookup"><span data-stu-id="a3eee-139">Type</span></span>   |<span data-ttu-id="a3eee-140">Описание</span><span class="sxs-lookup"><span data-stu-id="a3eee-140">Description</span></span>|
 |:---------------|:--------|:----------|
-|fields|[SortField](sortfield.md)|Указывает текущие условия, которые использовались при последней сортировке таблицы. Только для чтения.|
+|<span data-ttu-id="a3eee-141">fields</span><span class="sxs-lookup"><span data-stu-id="a3eee-141">fields</span></span>|[<span data-ttu-id="a3eee-142">SortField</span><span class="sxs-lookup"><span data-stu-id="a3eee-142">SortField</span></span>](sortfield.md)|<span data-ttu-id="a3eee-p105">Указывает текущие условия, которые использовались при последней сортировке таблицы. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a3eee-p105">Represents the current conditions used to last sort the table. Read-only.</span></span>|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a><span data-ttu-id="a3eee-145">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a3eee-145">JSON representation</span></span>
 
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="a3eee-146">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a3eee-146">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

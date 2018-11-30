@@ -1,16 +1,39 @@
-# <a name="location-resource-type"></a><span data-ttu-id="670a0-101">Тип ресурса Location</span><span class="sxs-lookup"><span data-stu-id="670a0-101">Location resource type</span></span>
+---
+title: Тип ресурса Location
+description: Представляет сведения о месте проведения события.
+ms.openlocfilehash: 149af193864c2a0ecab67ab2c722c9c3b46e9293
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025941"
+---
+# <a name="location-resource-type"></a><span data-ttu-id="561d4-103">Тип ресурса Location</span><span class="sxs-lookup"><span data-stu-id="561d4-103">Location resource type</span></span>
 
-<span data-ttu-id="670a0-102">Представляет сведения о месте проведения события.</span><span class="sxs-lookup"><span data-stu-id="670a0-102">Represents location information of an event.</span></span>
+<span data-ttu-id="561d4-104">Представляет сведения о месте проведения [мероприятия](event.md).</span><span class="sxs-lookup"><span data-stu-id="561d4-104">Represents location information of an [event](event.md).</span></span>
 
+<span data-ttu-id="561d4-105">Создавать события в календаре можно несколькими способами, например с помощью REST API [создания события](../api/user-post-events.md) в приложении либо вручную с помощью пользовательского интерфейса Outlook.</span><span class="sxs-lookup"><span data-stu-id="561d4-105">There are multiple ways to create events in a calendar, for example, through an app using the [create event](../api/user-post-events.md) REST API, or manually using the Outlook user interface.</span></span> <span data-ttu-id="561d4-106">Создавая событие через пользовательский интерфейс, вы можете указать место проведения обычным текстом (например, "Бар «Окунь»") или выбрать его из списка помещений, предоставленного приложением Outlook, [Автозаполнением Bing](https://blogs.bing.com/search/2013/02/20/a-look-at-autosuggest/) или [локальным поиском Bing](https://blogs.bing.com/search/2010/08/17/local-search-on-m-bing-com/).</span><span class="sxs-lookup"><span data-stu-id="561d4-106">When you create an event using the user interface, you can specify the location as plain text (for example, "Harry's Bar"), or from the rooms list provided by Outlook, [Bing Autosuggest](https://blogs.bing.com/search/2013/02/20/a-look-at-autosuggest/), or [Bing local search](https://blogs.bing.com/search/2010/08/17/local-search-on-m-bing-com/).</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="670a0-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="670a0-103">Properties</span></span>
-| <span data-ttu-id="670a0-104">Свойство</span><span class="sxs-lookup"><span data-stu-id="670a0-104">Property</span></span>  | <span data-ttu-id="670a0-105">Тип</span><span class="sxs-lookup"><span data-stu-id="670a0-105">Type</span></span>   | <span data-ttu-id="670a0-106">Описание</span><span class="sxs-lookup"><span data-stu-id="670a0-106">Description</span></span>                                                     |
+<span data-ttu-id="561d4-107">В зависимости от того, как создано событие, Outlook может по-разному задавать доступное только для чтения свойство **locationType**.</span><span class="sxs-lookup"><span data-stu-id="561d4-107">Depending on how an event is created, expect Outlook to set the read-only **locationType** property differently.</span></span> 
+
+| <span data-ttu-id="561d4-108">Способ создания события</span><span class="sxs-lookup"><span data-stu-id="561d4-108">How event was created</span></span>  | <span data-ttu-id="561d4-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="561d4-109">Property</span></span>   | <span data-ttu-id="561d4-110">Ожидаемое значение</span><span class="sxs-lookup"><span data-stu-id="561d4-110">Expected value</span></span> |
+|:----------|:-------|:--------------------------------|
+| <span data-ttu-id="561d4-111">REST API [создания события](../api/user-post-events.md)</span><span class="sxs-lookup"><span data-stu-id="561d4-111">[create event](../api/user-post-events.md) REST API</span></span> | <span data-ttu-id="561d4-112">**locationType**</span><span class="sxs-lookup"><span data-stu-id="561d4-112">**locationType**</span></span> | `default` |
+| <span data-ttu-id="561d4-113">Пользовательский интерфейс Outlook</span><span class="sxs-lookup"><span data-stu-id="561d4-113">User interface in Outlook</span></span> | <span data-ttu-id="561d4-114">**locationType**</span><span class="sxs-lookup"><span data-stu-id="561d4-114">**locationType**</span></span> | <span data-ttu-id="561d4-115">Одно из следующих значений:</span><span class="sxs-lookup"><span data-stu-id="561d4-115">One of the following:</span></span> <ul><li><span data-ttu-id="561d4-116">`default` для расположения, указанного обычным текстом;</span><span class="sxs-lookup"><span data-stu-id="561d4-116">`default` for a location entered as plain text.</span></span></li><li><span data-ttu-id="561d4-117">`conferenceRoom` для помещения из списка в Outlook;</span><span class="sxs-lookup"><span data-stu-id="561d4-117">`conferenceRoom` for a room provided by the Outlook rooms list.</span></span></li><li><span data-ttu-id="561d4-118">любое из значений `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness` и `postalAddress` для расположения из Автозаполнения Bing или локального поиска Bing.</span><span class="sxs-lookup"><span data-stu-id="561d4-118">Or, any of this list - `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress` - for a location from Bing Autosuggest or Bing local search.</span></span></li></ul> |
+
+## <a name="properties"></a><span data-ttu-id="561d4-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="561d4-119">Properties</span></span>
+| <span data-ttu-id="561d4-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="561d4-120">Property</span></span>  | <span data-ttu-id="561d4-121">Тип</span><span class="sxs-lookup"><span data-stu-id="561d4-121">Type</span></span>   | <span data-ttu-id="561d4-122">Описание</span><span class="sxs-lookup"><span data-stu-id="561d4-122">Description</span></span>                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
-| <span data-ttu-id="670a0-107">address</span><span class="sxs-lookup"><span data-stu-id="670a0-107">address</span></span> | [<span data-ttu-id="670a0-108">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="670a0-108">physicalAddress</span></span>](physicalAddress.md) |<span data-ttu-id="670a0-109">Почтовый адрес расположения.</span><span class="sxs-lookup"><span data-stu-id="670a0-109">The street address of the location.</span></span> |
-| <span data-ttu-id="670a0-110">displayName</span><span class="sxs-lookup"><span data-stu-id="670a0-110">displayName</span></span>  | <span data-ttu-id="670a0-111">String</span><span class="sxs-lookup"><span data-stu-id="670a0-111">String</span></span> | <span data-ttu-id="670a0-112">Имя, связанное с расположением.</span><span class="sxs-lookup"><span data-stu-id="670a0-112">The name associated with the location.</span></span>                       |
-| <span data-ttu-id="670a0-113">locationEmailAddress</span><span class="sxs-lookup"><span data-stu-id="670a0-113">locationEmailAddress</span></span> | <span data-ttu-id="670a0-114">String</span><span class="sxs-lookup"><span data-stu-id="670a0-114">String</span></span> | <span data-ttu-id="670a0-115">Необязательный адрес электронной почты для расположения.</span><span class="sxs-lookup"><span data-stu-id="670a0-115">Optional email address of the location.</span></span>              |
+| <span data-ttu-id="561d4-123">address</span><span class="sxs-lookup"><span data-stu-id="561d4-123">address</span></span> | [<span data-ttu-id="561d4-124">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="561d4-124">physicalAddress</span></span>](physicaladdress.md) |<span data-ttu-id="561d4-125">Почтовый адрес расположения.</span><span class="sxs-lookup"><span data-stu-id="561d4-125">The street address of the location.</span></span> |
+| <span data-ttu-id="561d4-126">coordinates</span><span class="sxs-lookup"><span data-stu-id="561d4-126">coordinates</span></span> | [<span data-ttu-id="561d4-127">outlookGeoCoordinates</span><span class="sxs-lookup"><span data-stu-id="561d4-127">outlookGeoCoordinates</span></span>](outlookgeocoordinates.md) | <span data-ttu-id="561d4-128">Географические координаты и высота расположения.</span><span class="sxs-lookup"><span data-stu-id="561d4-128">The geographic coordinates and elevation of the location.</span></span> |
+| <span data-ttu-id="561d4-129">displayName</span><span class="sxs-lookup"><span data-stu-id="561d4-129">displayName</span></span>  | <span data-ttu-id="561d4-130">String</span><span class="sxs-lookup"><span data-stu-id="561d4-130">String</span></span> | <span data-ttu-id="561d4-131">Имя, связанное с расположением.</span><span class="sxs-lookup"><span data-stu-id="561d4-131">The name associated with the location.</span></span>                       |
+| <span data-ttu-id="561d4-132">locationEmailAddress</span><span class="sxs-lookup"><span data-stu-id="561d4-132">locationEmailAddress</span></span> | <span data-ttu-id="561d4-133">String</span><span class="sxs-lookup"><span data-stu-id="561d4-133">String</span></span> | <span data-ttu-id="561d4-134">Необязательный электронный адрес для расположения.</span><span class="sxs-lookup"><span data-stu-id="561d4-134">Optional email address of the location.</span></span>              |
+| <span data-ttu-id="561d4-135">locationUri</span><span class="sxs-lookup"><span data-stu-id="561d4-135">locationUri</span></span> | <span data-ttu-id="561d4-136">String</span><span class="sxs-lookup"><span data-stu-id="561d4-136">String</span></span> | <span data-ttu-id="561d4-137">Необязательный URI, представляющий местоположение.</span><span class="sxs-lookup"><span data-stu-id="561d4-137">Optional URI representing the location.</span></span> |
+| <span data-ttu-id="561d4-138">locationType</span><span class="sxs-lookup"><span data-stu-id="561d4-138">locationType</span></span> | <span data-ttu-id="561d4-139">locationType</span><span class="sxs-lookup"><span data-stu-id="561d4-139">locationType</span></span> | <span data-ttu-id="561d4-140">Тип расположения.</span><span class="sxs-lookup"><span data-stu-id="561d4-140">The type of location.</span></span> <span data-ttu-id="561d4-141">Возможные значения: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`.</span><span class="sxs-lookup"><span data-stu-id="561d4-141">The possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`.</span></span> <span data-ttu-id="561d4-142">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="561d4-142">Read-only.</span></span>|
+| <span data-ttu-id="561d4-143">uniqueId</span><span class="sxs-lookup"><span data-stu-id="561d4-143">uniqueId</span></span> | <span data-ttu-id="561d4-144">String</span><span class="sxs-lookup"><span data-stu-id="561d4-144">String</span></span> | <span data-ttu-id="561d4-145">Только для внутреннего использования.</span><span class="sxs-lookup"><span data-stu-id="561d4-145">For internal use only.</span></span>|
+| <span data-ttu-id="561d4-146">uniqueIdType</span><span class="sxs-lookup"><span data-stu-id="561d4-146">uniqueIdType</span></span> | <span data-ttu-id="561d4-147">locationUniqueIdType</span><span class="sxs-lookup"><span data-stu-id="561d4-147">locationUniqueIdType</span></span> | <span data-ttu-id="561d4-148">Только для внутреннего использования.</span><span class="sxs-lookup"><span data-stu-id="561d4-148">For internal use only.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="670a0-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="670a0-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="561d4-149">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="561d4-149">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -22,15 +45,17 @@
 ```json
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
-  "locationEmailAddress": "string"
+  "locationEmailAddress": "string",
+  "locationUri": "string",
+  "locationType": "string",
+  "uniqueId": "string",
+  "uniqueIdType": "string"
 }
 
 ```
 
-## <a name="remarks"></a><span data-ttu-id="670a0-117">Заметки</span><span class="sxs-lookup"><span data-stu-id="670a0-117">Remarks</span></span>
-
-<span data-ttu-id="670a0-118">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="670a0-118">For more information about the facets on a [driveItem](driveitem.md), see driveItem.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
