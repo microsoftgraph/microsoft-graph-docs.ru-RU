@@ -1,24 +1,22 @@
+---
+title: Тип ресурса entity
+description: Нет
+ms.openlocfilehash: 381e1df86d96f416a36eca58c1b3f6a7f3e58f01
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026042"
+---
 # <a name="entity-resource-type"></a>Тип ресурса entity
 
-
-## <a name="methods"></a>Методы
-
-| Метод       | Возвращаемый тип  |Описание|
-|:---------------|:--------|:----------|
-|[Получение сущности](../api/entity_get.md) | [entity](entity.md) |Чтение свойств и связей объекта сущности.|
-|[Удаление](../api/entity_delete.md) | Нет |Удаление объекта сущности. |
-
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
-
-
-
-
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -26,6 +24,8 @@
 
 <!-- {
   "blockType": "resource",
+  "abstract": "true",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

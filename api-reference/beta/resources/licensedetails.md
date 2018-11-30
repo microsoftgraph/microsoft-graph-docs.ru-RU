@@ -1,22 +1,28 @@
-<a id="licensedetails-resource-type" class="xliff"></a>
+---
+title: Тип ресурса licenseDetails
+description: Содержит сведения о лицензии, назначенной пользователю.
+ms.openlocfilehash: dd56026d2c1d230fe6bb25b78ff8ababa01f577b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27082395"
+---
+# <a name="licensedetails-resource-type"></a>Тип ресурса licenseDetails
 
-# Тип ресурса licenseDetails
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Содержит сведения о лицензии, назначенной пользователю.
 
-<a id="methods" class="xliff"></a>
-
-## Методы
+## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление licenseDetails](../api/user_list_licensedetails.md) | Коллекция licenseDetails |Получение списка объектов licenseDetails для пользователя.|
+|[Перечисление licenseDetails](../api/user-list-licensedetails.md) | Коллекция licenseDetails |Получение списка объектов licenseDetails для пользователя.|
 
-<!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
+<!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Уникальный идентификатор объекта сведений о лицензии. Только для чтения, ключевое, не допускает значения null. |
@@ -24,14 +30,10 @@
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. Имеет то же значение, что и свойство skuId в связанном объекте [SubscribedSku](subscribedsku.md). Только для чтения. |
 |skuPartNumber|String| Уникальное отображаемое имя SKU. Имеет то же значение, что и свойство skuPartNumber в связанном объекте [SubscribedSku](subscribedsku.md). Пример: AAD_Premium. Только для чтения. |
 
-<a id="relationships" class="xliff"></a>
-
-## Связи
+## <a name="relationships"></a>Связи
 Нет
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
