@@ -1,17 +1,30 @@
-<span data-ttu-id="36cdb-p102">Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить идентификаторы пользователей в качестве свойств, причем они должны иметь значение `true` (логическое). Если больше не нужно предоставлять доступ для идентификаторов пользователей, задайте для свойств значение `false` (логическое), и свойства будут автоматически удалены.</span><span class="sxs-lookup"><span data-stu-id="36cdb-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
-Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить идентификаторы пользователей в качестве свойств, причем они должны иметь значение `true` (логическое). Если больше не нужно предоставлять доступ для идентификаторов пользователей, задайте для свойств значение `false` (логическое), и свойства будут автоматически удалены.
+---
+title: Тип ресурса plannerUserIds
+description: Ресурс **plannerUserIds** представляет список идентификаторов пользователей, которым предоставлен доступ к плану. Это открытый тип. Если вы используете функцию "Группы Office 365", то для предоставления доступа к плану группы применяйте API для групп (чтобы управлять членством в группах). Вы также можете добавить существующих участников группы в эту коллекцию, хотя им необязательно иметь доступ к плану, принадлежащему группе.
+ms.openlocfilehash: f2115cb31825f30190701bc2ab6b0d29669c4665
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028382"
+---
+# <a name="planneruserids-resource-type"></a><span data-ttu-id="0909a-106">Тип ресурса plannerUserIds</span><span class="sxs-lookup"><span data-stu-id="0909a-106">plannerUserIds resource type</span></span>
+
+<span data-ttu-id="0909a-p102">Ресурс **plannerUserIds** представляет список идентификаторов пользователей, которым предоставлен доступ к [плану](plannerplan.md). Это открытый тип. Если вы используете функцию "Группы Office 365", то для предоставления доступа к плану [группы](group.md) применяйте API для групп (чтобы управлять членством в группах). Вы также можете добавить существующих участников группы в эту коллекцию, хотя им необязательно иметь доступ к плану, принадлежащему группе.</span><span class="sxs-lookup"><span data-stu-id="0909a-p102">The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with. This is an Open Type. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>
 
 
-## <span data-ttu-id="36cdb-110">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="36cdb-110">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
+## <a name="properties"></a><span data-ttu-id="0909a-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="0909a-111">Properties</span></span>
+<span data-ttu-id="0909a-p103">Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить идентификаторы пользователей в качестве свойств, причем они должны иметь значение `true` (логическое). Если больше не нужно предоставлять доступ для идентификаторов пользователей, задайте для свойств значение `false` (логическое), и свойства будут автоматически удалены.</span><span class="sxs-lookup"><span data-stu-id="0909a-p103">Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 
-<span data-ttu-id="36cdb-111">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="36cdb-111">Here is a JSON representation of the resource</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="0909a-115">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="0909a-115">JSON representation</span></span>
+
+<span data-ttu-id="0909a-116">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0909a-116">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerUserIds"
 }-->
 
@@ -21,7 +34,7 @@
 }
 ```
 
-<span data-ttu-id="36cdb-112">Пример:</span><span class="sxs-lookup"><span data-stu-id="36cdb-112">// Example</span></span>
+<span data-ttu-id="0909a-117">Пример:</span><span class="sxs-lookup"><span data-stu-id="0909a-117">// Example</span></span>
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id
