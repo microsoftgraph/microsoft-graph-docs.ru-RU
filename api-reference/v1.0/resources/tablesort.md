@@ -1,44 +1,52 @@
-# <a name="tablesort-resource-type"></a>Тип ресурса TableSort
+---
+title: Тип ресурса TableSort
+description: Управляет операциями сортировки для объектов Table.
+ms.openlocfilehash: 3696608f13e4a56b71a84bc2d287300e9e54cfb2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028484"
+---
+# <a name="tablesort-resource-type"></a><span data-ttu-id="d5052-103">Тип ресурса TableSort</span><span class="sxs-lookup"><span data-stu-id="d5052-103">TableSort resource type</span></span>
 
-Управляет операциями сортировки для объектов Table.
+<span data-ttu-id="d5052-104">Управляет операциями сортировки для объектов Table.</span><span class="sxs-lookup"><span data-stu-id="d5052-104">Manages sorting operations on Table objects.</span></span>
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a><span data-ttu-id="d5052-105">Методы</span><span class="sxs-lookup"><span data-stu-id="d5052-105">Methods</span></span>
 
-| Метод           | Возвращаемый тип    |Описание|
+| <span data-ttu-id="d5052-106">Метод</span><span class="sxs-lookup"><span data-stu-id="d5052-106">Method</span></span>           | <span data-ttu-id="d5052-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="d5052-107">Return Type</span></span>    |<span data-ttu-id="d5052-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d5052-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Получение объекта TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |Чтение свойств и связей объекта tableSort.|
-|[Apply](../api/tablesort_apply.md)|Нет|Выполняет сортировку.|
-|[Clear](../api/tablesort_clear.md)|Нет|Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.|
-|[Reapply](../api/tablesort_reapply.md)|Нет|Повторно применяет текущие параметры сортировки к таблице.|
+|[<span data-ttu-id="d5052-109">Получение объекта TableSort</span><span class="sxs-lookup"><span data-stu-id="d5052-109">Get TableSort</span></span>](../api/tablesort-get.md) | [<span data-ttu-id="d5052-110">WorkbookTableSort</span><span class="sxs-lookup"><span data-stu-id="d5052-110">WorkbookTableSort</span></span>](tablesort.md) |<span data-ttu-id="d5052-111">Чтение свойств и связей объекта tableSort.</span><span class="sxs-lookup"><span data-stu-id="d5052-111">Read properties and relationships of tableSort object.</span></span>|
+|[<span data-ttu-id="d5052-112">Apply</span><span class="sxs-lookup"><span data-stu-id="d5052-112">Apply</span></span>](../api/tablesort-apply.md)|<span data-ttu-id="d5052-113">Нет</span><span class="sxs-lookup"><span data-stu-id="d5052-113">None</span></span>|<span data-ttu-id="d5052-114">Выполняет сортировку.</span><span class="sxs-lookup"><span data-stu-id="d5052-114">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="d5052-115">Clear</span><span class="sxs-lookup"><span data-stu-id="d5052-115">Clear</span></span>](../api/tablesort-clear.md)|<span data-ttu-id="d5052-116">Нет</span><span class="sxs-lookup"><span data-stu-id="d5052-116">None</span></span>|<span data-ttu-id="d5052-p101">Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.</span><span class="sxs-lookup"><span data-stu-id="d5052-p101">Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.</span></span>|
+|[<span data-ttu-id="d5052-119">Reapply</span><span class="sxs-lookup"><span data-stu-id="d5052-119">Reapply</span></span>](../api/tablesort-reapply.md)|<span data-ttu-id="d5052-120">Нет</span><span class="sxs-lookup"><span data-stu-id="d5052-120">None</span></span>|<span data-ttu-id="d5052-121">Повторно применяет текущие параметры сортировки к таблице.</span><span class="sxs-lookup"><span data-stu-id="d5052-121">Reapplies the current sorting parameters to the table.</span></span>|
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="d5052-122">Свойства</span><span class="sxs-lookup"><span data-stu-id="d5052-122">Properties</span></span>
+| <span data-ttu-id="d5052-123">Свойство</span><span class="sxs-lookup"><span data-stu-id="d5052-123">Property</span></span>     | <span data-ttu-id="d5052-124">Тип</span><span class="sxs-lookup"><span data-stu-id="d5052-124">Type</span></span>   |<span data-ttu-id="d5052-125">Описание</span><span class="sxs-lookup"><span data-stu-id="d5052-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|matchCase|boolean|Указывает, учитывался ли регистр при последней сортировке таблице. Только для чтения.|
-|method|string|Указывает метод сортировки китайских символов, который использовался при последней сортировке таблицы. Возможные значения: `PinYin`, `StrokeCount`. Только для чтения.|
+|<span data-ttu-id="d5052-126">fields</span><span class="sxs-lookup"><span data-stu-id="d5052-126">fields</span></span>|<span data-ttu-id="d5052-127">[WorkbookSortField](sortfield.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="d5052-127">[WorkbookSortField](sortfield.md) collection</span></span>|<span data-ttu-id="d5052-p102">Указывает текущие условия, которые использовались при последней сортировке таблицы. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="d5052-p102">Represents the current conditions used to last sort the table. Read-only.</span></span>|
+|<span data-ttu-id="d5052-130">matchCase</span><span class="sxs-lookup"><span data-stu-id="d5052-130">matchCase</span></span>|<span data-ttu-id="d5052-131">boolean</span><span class="sxs-lookup"><span data-stu-id="d5052-131">boolean</span></span>|<span data-ttu-id="d5052-p103">Указывает, учитывался ли регистр при последней сортировке таблице. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="d5052-p103">Represents whether the casing impacted the last sort of the table. Read-only.</span></span>|
+|<span data-ttu-id="d5052-134">method</span><span class="sxs-lookup"><span data-stu-id="d5052-134">method</span></span>|<span data-ttu-id="d5052-135">string</span><span class="sxs-lookup"><span data-stu-id="d5052-135">string</span></span>|<span data-ttu-id="d5052-136">Представляет порядка способ, используемый для сортировки в таблице последнего китайских знаков.</span><span class="sxs-lookup"><span data-stu-id="d5052-136">Represents Chinese character ordering method last used to sort the table.</span></span> <span data-ttu-id="d5052-137">Возможные значения: `PinYin`, `StrokeCount`.</span><span class="sxs-lookup"><span data-stu-id="d5052-137">The possible values are: `PinYin`, `StrokeCount`.</span></span> <span data-ttu-id="d5052-138">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="d5052-138">Read-only.</span></span>|
 
-## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
-|:---------------|:--------|:----------|
-|fields|[SortField](sortfield.md)|Указывает текущие условия, которые использовались при последней сортировке таблицы. Только для чтения.|
+## <a name="json-representation"></a><span data-ttu-id="d5052-139">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d5052-139">JSON representation</span></span>
 
-## <a name="json-representation"></a>Представление JSON
-
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="d5052-140">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d5052-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.tableSort"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableSort"
 }-->
 
 ```json
 {
   "matchCase": true,
-  "method": "string"
+  "method": "string",
+  "fields": [{ "@odata.type": "microsoft.graph.workbookSortField" }]
 }
 
 ```

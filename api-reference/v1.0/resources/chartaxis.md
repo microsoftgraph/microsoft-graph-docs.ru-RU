@@ -1,49 +1,65 @@
-# <a name="chartaxis-resource-type"></a>Тип ресурса ChartAxis
+---
+title: Тип ресурса ChartAxis
+description: Представляет одну ось на диаграмме.
+ms.openlocfilehash: fe29c6820f810158ca4accc864c852b0f00d2dda
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025559"
+---
+# <a name="chartaxis-resource-type"></a><span data-ttu-id="14351-103">Тип ресурса ChartAxis</span><span class="sxs-lookup"><span data-stu-id="14351-103">ChartAxis resource type</span></span>
 
-Представляет одну ось на диаграмме.
+<span data-ttu-id="14351-104">Представляет одну ось на диаграмме.</span><span class="sxs-lookup"><span data-stu-id="14351-104">Represents a single axis in a chart.</span></span>
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a><span data-ttu-id="14351-105">Методы</span><span class="sxs-lookup"><span data-stu-id="14351-105">Methods</span></span>
 
-| Метод           | Возвращаемый тип    |Описание|
+| <span data-ttu-id="14351-106">Метод</span><span class="sxs-lookup"><span data-stu-id="14351-106">Method</span></span>           | <span data-ttu-id="14351-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="14351-107">Return Type</span></span>    |<span data-ttu-id="14351-108">Описание</span><span class="sxs-lookup"><span data-stu-id="14351-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Чтение свойств и связей объекта chartAxis.|
-|[Обновление](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)    |Обновление объекта ChartAxis. |
+|[<span data-ttu-id="14351-109">Получение объекта ChartAxis</span><span class="sxs-lookup"><span data-stu-id="14351-109">Get ChartAxis</span></span>](../api/chartaxis-get.md) | [<span data-ttu-id="14351-110">WorkbookChartAxis</span><span class="sxs-lookup"><span data-stu-id="14351-110">WorkbookChartAxis</span></span>](chartaxis.md) |<span data-ttu-id="14351-111">Чтение свойств и связей объекта chartAxis.</span><span class="sxs-lookup"><span data-stu-id="14351-111">Read properties and relationships of chartAxis object.</span></span>|
+|[<span data-ttu-id="14351-112">Update</span><span class="sxs-lookup"><span data-stu-id="14351-112">Update</span></span>](../api/chartaxis-update.md) | [<span data-ttu-id="14351-113">WorkbookChartAxis</span><span class="sxs-lookup"><span data-stu-id="14351-113">WorkbookChartAxis</span></span>](chartaxis.md)   |<span data-ttu-id="14351-114">Обновление объекта ChartAxis.</span><span class="sxs-lookup"><span data-stu-id="14351-114">Update ChartAxis object.</span></span> |
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="14351-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="14351-115">Properties</span></span>
+| <span data-ttu-id="14351-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="14351-116">Property</span></span>     | <span data-ttu-id="14351-117">Тип</span><span class="sxs-lookup"><span data-stu-id="14351-117">Type</span></span>   |<span data-ttu-id="14351-118">Описание</span><span class="sxs-lookup"><span data-stu-id="14351-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|majorUnit|object|Обозначает интервал между двумя основными делениями. Можно указать в виде числового значения или пустой строки.  Возвращаемое значение всегда является числом.|
-|maximum|object|Представляет максимальное значение на оси значений.  Можно указать в виде числового значения или пустой строки (для автоматически заданных значений оси).  Возвращаемое значение всегда является числом.|
-|minimum|object|Представляет минимальное значение на оси значений. Ему можно присвоить числовое значение или пустую строку (для автоматически заданных значений оси). Всегда возвращает числовое значение.|
-|minorUnit|object|Представляет интервал между двумя промежуточными делениями. Можно указать в виде числового значения или пустой строки (для автоматически заданных значений оси). Возвращаемое значение всегда является числом.|
+| <span data-ttu-id="14351-119">id</span><span class="sxs-lookup"><span data-stu-id="14351-119">id</span></span>       |<span data-ttu-id="14351-120">строка</span><span class="sxs-lookup"><span data-stu-id="14351-120">string</span></span>   | <span data-ttu-id="14351-121">Уникальный идентификатор.</span><span class="sxs-lookup"><span data-stu-id="14351-121">Unique identifier.</span></span> <span data-ttu-id="14351-122">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="14351-122">Read-only.</span></span>|
+|<span data-ttu-id="14351-123">majorUnit</span><span class="sxs-lookup"><span data-stu-id="14351-123">majorUnit</span></span>|<span data-ttu-id="14351-124">Json</span><span class="sxs-lookup"><span data-stu-id="14351-124">Json</span></span>|<span data-ttu-id="14351-p102">Обозначает интервал между двумя основными делениями. Можно указать в виде числового значения или пустой строки.  Возвращаемое значение всегда является числом.</span><span class="sxs-lookup"><span data-stu-id="14351-p102">Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.</span></span>|
+|<span data-ttu-id="14351-128">maximum</span><span class="sxs-lookup"><span data-stu-id="14351-128">maximum</span></span>|<span data-ttu-id="14351-129">Json</span><span class="sxs-lookup"><span data-stu-id="14351-129">Json</span></span>|<span data-ttu-id="14351-p103">Представляет максимальное значение на оси значений.  Можно указать в виде числового значения или пустой строки (для автоматически заданных значений оси).  Возвращаемое значение всегда является числом.</span><span class="sxs-lookup"><span data-stu-id="14351-p103">Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="14351-133">minimum</span><span class="sxs-lookup"><span data-stu-id="14351-133">minimum</span></span>|<span data-ttu-id="14351-134">Json</span><span class="sxs-lookup"><span data-stu-id="14351-134">Json</span></span>|<span data-ttu-id="14351-p104">Представляет минимальное значение на оси значений. Ему можно присвоить числовое значение или пустую строку (для автоматически заданных значений оси). Всегда возвращает числовое значение.</span><span class="sxs-lookup"><span data-stu-id="14351-p104">Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="14351-138">minorUnit</span><span class="sxs-lookup"><span data-stu-id="14351-138">minorUnit</span></span>|<span data-ttu-id="14351-139">Json</span><span class="sxs-lookup"><span data-stu-id="14351-139">Json</span></span>|<span data-ttu-id="14351-p105">Представляет интервал между двумя промежуточными делениями. Можно указать в виде числового значения или пустой строки (для автоматически заданных значений оси). Возвращаемое значение всегда является числом.</span><span class="sxs-lookup"><span data-stu-id="14351-p105">Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.</span></span>|
 
-## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+## <a name="relationships"></a><span data-ttu-id="14351-143">Связи</span><span class="sxs-lookup"><span data-stu-id="14351-143">Relationships</span></span>
+| <span data-ttu-id="14351-144">Связь</span><span class="sxs-lookup"><span data-stu-id="14351-144">Relationship</span></span> | <span data-ttu-id="14351-145">Тип</span><span class="sxs-lookup"><span data-stu-id="14351-145">Type</span></span>   |<span data-ttu-id="14351-146">Описание</span><span class="sxs-lookup"><span data-stu-id="14351-146">Description</span></span>|
 |:---------------|:--------|:----------|
-|format|[ChartAxisFormat](chartaxisformat.md)|Представляет форматирование объекта диаграммы, в том числе форматирование линий и шрифта. Только для чтения.|
-|majorGridlines|[ChartGridlines](chartgridlines.md)|Возвращает объект Gridlines, который представляет основные линии сетки для указанной оси. Только для чтения.|
-|minorGridlines|[ChartGridlines](chartgridlines.md)|Возвращает объект Gridlines, который представляет вспомогательные линии сетки для указанной оси. Только для чтения.|
-|title|[ChartAxisTitle](chartaxistitle.md)|Представляет название оси. Только для чтения.|
+|<span data-ttu-id="14351-147">format</span><span class="sxs-lookup"><span data-stu-id="14351-147">format</span></span>|[<span data-ttu-id="14351-148">WorkbookChartAxisFormat</span><span class="sxs-lookup"><span data-stu-id="14351-148">WorkbookChartAxisFormat</span></span>](chartaxisformat.md)|<span data-ttu-id="14351-p106">Представляет форматирование объекта диаграммы, в том числе форматирование линий и шрифта. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="14351-p106">Represents the formatting of a chart object, which includes line and font formatting. Read-only.</span></span>|
+|<span data-ttu-id="14351-151">majorGridlines</span><span class="sxs-lookup"><span data-stu-id="14351-151">majorGridlines</span></span>|[<span data-ttu-id="14351-152">WorkbookChartGridlines</span><span class="sxs-lookup"><span data-stu-id="14351-152">WorkbookChartGridlines</span></span>](chartgridlines.md)|<span data-ttu-id="14351-p107">Возвращает объект Gridlines, который представляет основные линии сетки для указанной оси. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="14351-p107">Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.</span></span>|
+|<span data-ttu-id="14351-155">minorGridlines</span><span class="sxs-lookup"><span data-stu-id="14351-155">minorGridlines</span></span>|[<span data-ttu-id="14351-156">WorkbookChartGridlines</span><span class="sxs-lookup"><span data-stu-id="14351-156">WorkbookChartGridlines</span></span>](chartgridlines.md)|<span data-ttu-id="14351-p108">Возвращает объект Gridlines, который представляет вспомогательные линии сетки для указанной оси. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="14351-p108">Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.</span></span>|
+|<span data-ttu-id="14351-159">должности.</span><span class="sxs-lookup"><span data-stu-id="14351-159">title</span></span>|[<span data-ttu-id="14351-160">WorkbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="14351-160">WorkbookChartAxisTitle</span></span>](chartaxistitle.md)|<span data-ttu-id="14351-p109">Представляет название оси. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="14351-p109">Represents the axis title. Read-only.</span></span>|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a><span data-ttu-id="14351-163">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="14351-163">JSON representation</span></span>
 
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="14351-164">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="14351-164">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartaxis"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 }-->
 
 ```json
 {
+  "id": "string",
   "majorUnit": "string",
   "maximum": "string",
   "minimum": "string",
-  "minorUnit": "string"
+  "minorUnit": "string",
+   "format": {"@odata.type": "microsoft.graph.workbookChartAxisFormat"},
+  "majorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "minorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "title": {"@odata.type": "microsoft.graph.workbookChartAxisTitle"}
 }
 
 ```

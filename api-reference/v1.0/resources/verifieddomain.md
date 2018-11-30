@@ -1,27 +1,37 @@
-# <a name="verifieddomain-resource-type"></a><span data-ttu-id="857c4-101">Тип ресурса verifiedDomain</span><span class="sxs-lookup"><span data-stu-id="857c4-101">verifiedDomain resource type</span></span>
+---
+title: Тип ресурса verifiedDomain
+description: Задает домен клиента. Свойство **verifiedDomains** объекта organization представляет собой коллекцию объектов **VerifiedDomain**.
+ms.openlocfilehash: 21b6dd89dcc8b990046952d9ae7abcfe8ce02bca
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025757"
+---
+# <a name="verifieddomain-resource-type"></a><span data-ttu-id="84528-104">Тип ресурса verifiedDomain</span><span class="sxs-lookup"><span data-stu-id="84528-104">verifiedDomain resource type</span></span>
 
-<span data-ttu-id="857c4-p101">Задает домен клиента. Свойство **verifiedDomains** объекта [organization](organization.md) представляет собой коллекцию объектов **VerifiedDomain**.</span><span class="sxs-lookup"><span data-stu-id="857c4-p101">Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.</span></span>
+<span data-ttu-id="84528-p102">Задает домен клиента. Свойство **verifiedDomains** объекта [organization](organization.md) представляет собой коллекцию объектов **VerifiedDomain**.</span><span class="sxs-lookup"><span data-stu-id="84528-p102">Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="857c4-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="857c4-104">Properties</span></span>
-| <span data-ttu-id="857c4-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="857c4-105">Property</span></span>     | <span data-ttu-id="857c4-106">Тип</span><span class="sxs-lookup"><span data-stu-id="857c4-106">Type</span></span>   |<span data-ttu-id="857c4-107">Описание</span><span class="sxs-lookup"><span data-stu-id="857c4-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="84528-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="84528-107">Properties</span></span>
+| <span data-ttu-id="84528-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="84528-108">Property</span></span>     | <span data-ttu-id="84528-109">Тип</span><span class="sxs-lookup"><span data-stu-id="84528-109">Type</span></span>   |<span data-ttu-id="84528-110">Описание</span><span class="sxs-lookup"><span data-stu-id="84528-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="857c4-108">capabilities</span><span class="sxs-lookup"><span data-stu-id="857c4-108">capabilities</span></span>|<span data-ttu-id="857c4-109">String</span><span class="sxs-lookup"><span data-stu-id="857c4-109">String</span></span>|<span data-ttu-id="857c4-110">Примеры: “Email”, “OfficeCommunicationsOnline”.</span><span class="sxs-lookup"><span data-stu-id="857c4-110">For example, “Email”, “OfficeCommunicationsOnline”.</span></span>|
-|<span data-ttu-id="857c4-111">isDefault</span><span class="sxs-lookup"><span data-stu-id="857c4-111">isDefault</span></span>|<span data-ttu-id="857c4-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="857c4-112">Boolean</span></span>|                <span data-ttu-id="857c4-113">Значение **true** указывает, что это связанный с клиентом домен по умолчанию. В противном случае используется значение **false**.</span><span class="sxs-lookup"><span data-stu-id="857c4-113">**true** if this is the default domain associated with the tenant; otherwise, **false**.</span></span>            |
-|<span data-ttu-id="857c4-114">isInitial</span><span class="sxs-lookup"><span data-stu-id="857c4-114">isInitial</span></span>|<span data-ttu-id="857c4-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="857c4-115">Boolean</span></span>|<span data-ttu-id="857c4-116">Значение **true** указывает, что это первоначальный домен, связанный с клиентом. В противном случае используется значение **false**.</span><span class="sxs-lookup"><span data-stu-id="857c4-116">**true** if this is the initial domain associated with the tenant; otherwise, **false**</span></span>|
-|<span data-ttu-id="857c4-117">name</span><span class="sxs-lookup"><span data-stu-id="857c4-117">name</span></span>|<span data-ttu-id="857c4-118">String</span><span class="sxs-lookup"><span data-stu-id="857c4-118">String</span></span>|<span data-ttu-id="857c4-119">Доменное имя, например "contoso.onmicrosoft.com"</span><span class="sxs-lookup"><span data-stu-id="857c4-119">The domain name; for example, “contoso.onmicrosoft.com”</span></span>|
-|<span data-ttu-id="857c4-120">type</span><span class="sxs-lookup"><span data-stu-id="857c4-120">type</span></span>|<span data-ttu-id="857c4-121">String</span><span class="sxs-lookup"><span data-stu-id="857c4-121">String</span></span>|<span data-ttu-id="857c4-122">Пример: "Managed".</span><span class="sxs-lookup"><span data-stu-id="857c4-122">For example, “Managed”.</span></span>|
+|<span data-ttu-id="84528-111">capabilities</span><span class="sxs-lookup"><span data-stu-id="84528-111">capabilities</span></span>|<span data-ttu-id="84528-112">String</span><span class="sxs-lookup"><span data-stu-id="84528-112">String</span></span>|<span data-ttu-id="84528-113">Примеры: “Email”, “OfficeCommunicationsOnline”.</span><span class="sxs-lookup"><span data-stu-id="84528-113">For example, “Email”, “OfficeCommunicationsOnline”.</span></span>|
+|<span data-ttu-id="84528-114">isDefault</span><span class="sxs-lookup"><span data-stu-id="84528-114">isDefault</span></span>|<span data-ttu-id="84528-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="84528-115">Boolean</span></span>|                <span data-ttu-id="84528-116">Значение **true** указывает, что это связанный с клиентом домен по умолчанию. В противном случае используется значение **false**.</span><span class="sxs-lookup"><span data-stu-id="84528-116">**true** if this is the default domain associated with the tenant; otherwise, **false**.</span></span>            |
+|<span data-ttu-id="84528-117">isInitial</span><span class="sxs-lookup"><span data-stu-id="84528-117">isInitial</span></span>|<span data-ttu-id="84528-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="84528-118">Boolean</span></span>|<span data-ttu-id="84528-119">Значение **true** указывает, что это первоначальный домен, связанный с клиентом. В противном случае используется значение **false**.</span><span class="sxs-lookup"><span data-stu-id="84528-119">**true** if this is the initial domain associated with the tenant; otherwise, **false**</span></span>|
+|<span data-ttu-id="84528-120">name</span><span class="sxs-lookup"><span data-stu-id="84528-120">name</span></span>|<span data-ttu-id="84528-121">String</span><span class="sxs-lookup"><span data-stu-id="84528-121">String</span></span>|<span data-ttu-id="84528-122">Доменное имя, например "contoso.onmicrosoft.com"</span><span class="sxs-lookup"><span data-stu-id="84528-122">The domain name; for example, “contoso.onmicrosoft.com”</span></span>|
+|<span data-ttu-id="84528-123">type</span><span class="sxs-lookup"><span data-stu-id="84528-123">type</span></span>|<span data-ttu-id="84528-124">String</span><span class="sxs-lookup"><span data-stu-id="84528-124">String</span></span>|<span data-ttu-id="84528-125">Пример: "Managed".</span><span class="sxs-lookup"><span data-stu-id="84528-125">For example, “Managed”.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="857c4-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="857c4-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="84528-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="84528-126">JSON representation</span></span>
 
-<span data-ttu-id="857c4-124">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="857c4-124">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="84528-127">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="84528-127">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifieddomain"
+  "@odata.type": "microsoft.graph.verifiedDomain"
 }-->
 
 ```json

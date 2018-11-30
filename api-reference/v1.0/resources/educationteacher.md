@@ -1,0 +1,50 @@
+---
+title: Тип ресурса educationTeacher
+description: Дополнительные сведения, добавляемые в объект educationUser, который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.
+ms.openlocfilehash: 59d3334b7a01b0dd39c357f6598085cd78d1e3ac
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025257"
+---
+# <a name="educationteacher-resource-type"></a><span data-ttu-id="2af19-103">Тип ресурса educationTeacher</span><span class="sxs-lookup"><span data-stu-id="2af19-103">educationTeacher resource type</span></span>
+
+<span data-ttu-id="2af19-104">Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.</span><span class="sxs-lookup"><span data-stu-id="2af19-104">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
+
+
+## <a name="properties"></a><span data-ttu-id="2af19-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="2af19-105">Properties</span></span>
+| <span data-ttu-id="2af19-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="2af19-106">Property</span></span>     | <span data-ttu-id="2af19-107">Тип</span><span class="sxs-lookup"><span data-stu-id="2af19-107">Type</span></span>   |<span data-ttu-id="2af19-108">Описание</span><span class="sxs-lookup"><span data-stu-id="2af19-108">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="2af19-109">externalId</span><span class="sxs-lookup"><span data-stu-id="2af19-109">externalId</span></span>|<span data-ttu-id="2af19-110">String</span><span class="sxs-lookup"><span data-stu-id="2af19-110">String</span></span>| <span data-ttu-id="2af19-111">Идентификатор преподавателя в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="2af19-111">ID of the teacher in the source system.</span></span>|
+|<span data-ttu-id="2af19-112">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="2af19-112">teacherNumber</span></span>|<span data-ttu-id="2af19-113">String</span><span class="sxs-lookup"><span data-stu-id="2af19-113">String</span></span>|<span data-ttu-id="2af19-114">Номер преподавателя.</span><span class="sxs-lookup"><span data-stu-id="2af19-114">Teacher number.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="2af19-115">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="2af19-115">JSON representation</span></span>
+
+<span data-ttu-id="2af19-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2af19-116">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationTeacher"
+}-->
+
+```json
+{
+  "externalId": "String",
+  "teacherNumber": "String"
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "educationTeacher resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
