@@ -1,4 +1,16 @@
+---
+title: Тип ресурса ChartLegendFormat
+description: Инкапсулирует свойства формата для легенды диаграммы.
+ms.openlocfilehash: 5712c4434bf3875efc120c4881feba8f7a26763f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27077318"
+---
 # <a name="chartlegendformat-resource-type"></a>Тип ресурса ChartLegendFormat
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Инкапсулирует свойства формата для легенды диаграммы.
 
@@ -10,7 +22,7 @@
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
 |шрифт|[ChartFont](chartfont.md)|Представляет атрибуты шрифта (название, размер, цвет и т. д.) легенды диаграммы. Только для чтения.|

@@ -1,9 +1,21 @@
+---
+title: Тип ресурса reminder
+description: Напоминание для события в календаре пользователя.
+ms.openlocfilehash: e7b7e2266b5959c6aa4927ecad52e24342d607e4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27078124"
+---
 # <a name="reminder-resource-type"></a>Тип ресурса reminder
 
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
+Напоминание для [события](event.md) в [Календарь](calendar.md)пользователя.
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |changeKey|String|Указывает версию напоминания. При каждом изменении напоминания также меняется значение **changeKey**. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события.|
@@ -13,7 +25,6 @@
 |eventSubject|String|Текст в строке темы события.|
 |eventWebLink|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook в Интернете. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, заданные для упоминания.|
-
 
 ## <a name="json-representation"></a>Представление JSON
 

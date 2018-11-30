@@ -1,0 +1,103 @@
+---
+title: Тип ресурса programControl
+description: В Azure AD access дается обзор компонента, объект элемента управления программа представляет элемент управления, связывание проверки доступа к программе.
+ms.openlocfilehash: 03e70ffdf0607eeb11abaf1b12065b4092294d23
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27077816"
+---
+# <a name="programcontrol-resource-type"></a>Тип ресурса programControl
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+В компоненте [дается обзор доступа](accessreviews-root.md) Azure AD объект элемента управления программа представляет элемент управления, связывание проверки доступа к программе.
+
+
+## <a name="methods"></a>Методы
+
+| Метод           | Возвращаемый тип    |Описание|
+|:---------------|:--------|:----------|
+|[Создание programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Добавьте programControl программы.|
+|[Удаление programControl](../api/programcontrol-delete.md) |     Отсутствуют.   |   Удалите programControl из программы.|
+|[Список programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) коллекции| Список элементов управления для всех программ в клиентов.|
+
+## <a name="permissions"></a>Permissions
+
+|Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
+|:--------------------------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)     | ProgramControl.Read.All ProgramControl.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Для приложений                            | Не поддерживается. |
+
+## <a name="properties"></a>Свойства
+| Свойство     | Тип   |Description|
+|:---------------|:--------|:----------|
+| `id`                     |`String`                | Идентификатор компонента назначенных связи между программы и элемента управления                                      |
+| `programId`              |`String`                | ProgramId программа этот элемент управления является частью. Требуется при создании.                            |
+| `controlId`              |`String`                | ControlId элемента управления, в частности идентификатор доступа просмотрите. Требуется при создании.                                                |
+| `controlTypeId`          |`String`                | ProgramControlType определяет тип элемента управления, программа -, например дается обзор элемента управления, создание ссылок на доступ в качестве гостя. Требуется при создании. |
+| `displayName`            |`String`                | Имя элемента управления.                                                             |
+| `status`                 |`String`                | Состояние жизненного цикла элемента управления.                                                 |
+| `createdDateTime`        |`DateTimeOffset`        | Дату и время создания элемента управления программы.                                        |
+| `owner`                  |[удостоверению пользователя](useridentity.md)   | Пользователь, создавший элемент управления программы.                                               |
+| `resource`               |`programResource`       | Ресурс, группы или приложения, входят в целевую этот элемент управления программы проверки доступа.                   |
+
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Description|
+|:---------------|:--------|:----------|
+| `program`                |[Программа](program.md)               | Программа этот элемент управления является частью.                                                |
+
+## <a name="see-also"></a>См. также
+
+| Метод           | Возвращаемый тип    |Описание|
+|:---------------|:--------|:----------|
+|[Список programControls программы](../api/program-listcontrols.md) |      [programControl](programcontrol.md) коллекции| Получите коллекцию элементов управления из программы.|
+|[Список programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) коллекции| Список типов элементов управления программы. |
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже представлено описание ресурса в формате JSON.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.programControl"
+}-->
+
+```json
+{
+ "id": "string (identifier)",
+ "programId": "string (identifier)",
+ "controlId": "string (identifier)",
+ "controlTypeId": "string (identifier)",
+ "displayName": "string",
+ "status": "string",
+ "createdDateTime": "string (timestamp)",
+ "owner": "microsoft.graph.userIdentity",
+ "resource":"microsoft.graph.programResource"
+}
+
+```
+
+## <a name="the-programresource-complex-type"></a>Сложный тип programResource
+
+Программа ресурсов, содержащихся в объект элемента управления программа представляет ссылку на объект, который является целевым для проверки доступа.
+
+Этот тип наследует от `microsoft.graph.identity` и имеет один дополнительные свойства:
+
+| Свойство     | Тип   |Description|
+|:---------------|:--------|:----------|
+| `type`               |`String`  | Тип ресурса, которое показывает, является ли группы или приложения. |     
+
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "programControl resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
