@@ -1,5 +1,14 @@
-<a id="invitation-manager" class="xliff"></a>
-# Диспетчер приглашений
+---
+title: Диспетчер приглашений
+description: 'С помощью диспетчера приглашений можно создать приглашение для добавления внешнего пользователя в организацию. '
+ms.openlocfilehash: c8b8bacaf85c36f24ec89b05594ff0880fa8c14e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024668"
+---
+# <a name="invitation-manager"></a>Диспетчер приглашений
 
 С помощью диспетчера приглашений можно создать приглашение для добавления внешнего пользователя в организацию. 
 
@@ -13,14 +22,12 @@
 При создании приглашения возвращается URL-адрес активации (*inviteRedeemUrl*). API создания приглашений может автоматически отправлять приглашенному пользователю письмо с URL-адресом активации, если параметру *sendInvitationMessage* задано значение true. Вы также можете настроить сообщение, которое будет отправлено приглашенному пользователю. Если вы хотите отправить URL-адрес активации другим способом, задайте параметру *sendInvitationMessage* значение false и используйте URL-адрес активации из отклика для создания собственного сообщения. В настоящее время нет API для выполнения процесса активации. Приглашенный пользователь должен щелкнуть ссылку *inviteRedeemUrl* в сообщении, отправка которого описана выше, и пройти интерактивную процедуру активации в браузере. После этого приглашенный пользователь становится внешним пользователем в организации.
 
 
-<a id="methods" class="xliff"></a>
-## Методы
+## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Создание приглашений](../api/invitation_post.md) | invitation | Запись свойств и отношений объекта приглашения.|
+|[Создание приглашений](../api/invitation-post.md) | invitation | Запись свойств и отношений объекта приглашения.|
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|Отображаемое имя приглашаемого пользователя.|
@@ -32,17 +39,15 @@
 |invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. Значение по умолчанию: Guest. Администратор компании может заменить его на Member. |
 |status|String|Состояние приглашения. Возможные значения: PendingAcceptance, Completed, InProgress и Error|
 
-<a id="relationships" class="xliff"></a>
-## Связи
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|Пользователь, создаваемый при создании приглашения. Только для чтения.|
 
-<a id="json-representation" class="xliff"></a>
-## Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
+<!-- { "blockType": "resource", "baseType": "microsoft.graph.entity", "@odata.type": "microsoft.graph.invitation" } -->
 ```json
 {
   "invitedUserDisplayName": "string",
@@ -52,8 +57,8 @@
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
-
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": {"@odata.type": "microsoft.graph.user"},
+  "invitedUserType": "string"
 }
 ```
 

@@ -1,3 +1,13 @@
+---
+title: Тип ресурса ChartFont
+description: Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта диаграммы.
+ms.openlocfilehash: dc4b1f8cd0653d89c3486a61604dd09c0e23cb2c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025556"
+---
 # <a name="chartfont-resource-type"></a>Тип ресурса ChartFont
 
 Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта диаграммы.
@@ -7,18 +17,18 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Чтение свойств и связей объекта chartFont.|
-|[Обновление](../api/chartfont_update.md) | [ChartFont](chartfont.md)    |Обновление объекта ChartFont. |
+|[Получение объекта ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Чтение свойств и связей объекта chartFont.|
+|[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)   |Обновление объекта ChartFont. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
-|color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
-|name|string|Имя шрифта (например, Calibri)|
+|name|строка|Имя шрифта (например, Calibri)|
 |size|Double|Размер шрифта (например, 11)|
-|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
+|underline|строка|Тип подчеркивание шрифта. Возможные значения: `None`, `Single`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -28,12 +38,11 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartFont"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartFont"
 }-->
 
 ```json

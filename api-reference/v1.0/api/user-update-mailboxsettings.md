@@ -1,0 +1,231 @@
+---
+title: Обновление параметров почтового ящика пользователя
+description: Обновление одного или нескольких параметров почтового ящика пользователя. Это относится к параметрам автоматических ответов (автоматического уведомления пользователей после получения электронных сообщений от них), языковых стандартов (языка и страны или региона), часового пояса и рабочего времени.
+ms.openlocfilehash: b5d52771e67bb79abb7c325c908e0c5f155fff15
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024539"
+---
+# <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
+
+Обновление одного или нескольких параметров почтового ящика пользователя. Это относится к параметрам [автоматических ответов](../resources/automaticrepliessetting.md) (автоматического уведомления пользователей после получения электронных сообщений от них), [языковых стандартов](../resources/localeinfo.md) (языка и страны или региона), часового пояса и [рабочего времени](../resources/workinghours.md).
+
+Вы можете включить, настроить или отключить один или несколько этих параметров в составе объекта [mailboxSettings](../resources/mailboxsettings.md).
+
+**Примечание.** Невозможно создать или удалить какие-либо параметры почтового ящика.
+
+Обновляя предпочтительный часовой пояс для пользователя, можете указать его в формате Windows или [часового пояса IANA](https://www.iana.org/time-zones) (также известен как часовой пояс Олсона).
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | MailboxSettings.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | MailboxSettings.ReadWrite    |
+|Для приложений | MailboxSettings.ReadWrite |
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /me/mailboxSettings
+PATCH /users/{id|userPrincipalName}/mailboxSettings
+```
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+## <a name="request-headers"></a>Заголовки запросов
+| Имя       | Тип | Описание|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+В тексте запроса укажите значения для соответствующих свойств, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом изменений других значений свойств. Чтобы обеспечить максимальную производительность, не включайте существующие значения, которые не изменились, в запрос. Ниже перечислены свойства, значения которых можно записать или обновить.
+
+| Свойство     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Можно настроить такие уведомления для диапазон дат в будущем.|
+|language|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
+|timeZone|string|Часовой пояс почтового ящика пользователя по умолчанию.|
+|workingHours|[workingHours](../resources/workinghours.md)|Часы, дни недели и часовой пояс работы пользователя.|
+
+## <a name="response"></a>Ответ
+
+В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [mailboxSettings](../resources/mailboxsettings.md) в тексте ответа.
+
+
+## <a name="errors"></a>Ошибки
+
+Если заданы недопустимые значения рабочего времени, могут возникать указанные ниже ошибки.
+
+| Сценарий   | Код состояния HTTP | Код ошибки | Сообщение об ошибке |
+|:-----------|:------|:----------|:----------|
+| Недопустимое значение **startTime** или **endTime** | 400 | RequestBodyRead | Не удается преобразовать литерал "08" в ожидаемый тип Edm.TimeOfDay.|
+| Время начала больше времени окончания | 400 | ErrorInvalidTimeSettings | Время начало должно быть раньше, чем время окончания. |
+| Недопустимый день в свойстве **daysOfWeek** | 400 | InvalidArguments | Запрашиваемое значение RandomDay не найдено.|
+| Недопустимое значение **timeZone** | 400 | InvalidTimeZone | Указаны недопустимые параметры часового пояса.|
+
+
+## <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+В первом примере показано, как включить автоматические ответы для диапазона дат, настроив для свойства **automaticRepliesSetting** следующие свойства: **status**, **scheduledStartDateTime** и **scheduledEndDateTime**.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_mailboxsettings"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
+    "automaticRepliesSetting": {
+        "status": "Scheduled",
+        "scheduledStartDateTime": {
+          "dateTime": "2016-03-20T18:00:00.0000000",
+          "timeZone": "UTC"
+        },
+        "scheduledEndDateTime": {
+          "dateTime": "2016-03-28T18:00:00.0000000",
+          "timeZone": "UTC"
+        }
+    }
+}
+```
+##### <a name="response"></a>Ответ
+Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailboxSettings"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
+    "automaticRepliesSetting": {
+        "status": "scheduled",
+        "externalAudience": "all",
+        "scheduledStartDateTime": {
+            "dateTime": "2016-03-20T02:00:00.0000000",
+            "timeZone": "UTC"
+        },
+        "scheduledEndDateTime": {
+            "dateTime": "2016-03-28T02:00:00.0000000",
+            "timeZone": "UTC"
+        },
+    "internalReplyMessage": "<html>\n<body>\n<p>I'm at our company's worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n",
+    "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
+    }
+}
+```
+
+
+##### <a name="request-2"></a>Запрос 2
+Во втором примере настраивается часовой пояс для рабочего времени вошедшего пользователя. Для этого в свойстве **timeZone** указывается [пользовательский часовой пояс](../resources/customtimezone.md).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "update_mailboxsettings_2"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
+Content-Type: application/json
+
+{
+  "workingHours": {
+      "endTime" : "18:30:00.0000000", 
+      "daysOfWeek": [ 
+          "Monday", 
+          "Tuesday", 
+          "Wednesday", 
+          "Thursday", 
+          "Friday", 
+          "Saturday" 
+      ], 
+      "timeZone" : { 
+         "@odata.type": "#microsoft.graph.customTimeZone", 
+         "bias":-300, 
+         "name": "Customized Time Zone",
+         "standardOffset":{   
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":2, 
+           "dayOfWeek":"Sunday", 
+           "month":10, 
+           "year":0 
+         }, 
+         "daylightOffset":{   
+           "daylightBias":100, 
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":4, 
+           "dayOfWeek":"Sunday", 
+           "month":5, 
+           "year":0 
+         } 
+      } 
+  }
+} 
+```
+##### <a name="response-2"></a>Ответ 2
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+<!-- {
+  "blockType": "ignored",
+  "name": "update_mailboxsettings_2",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailboxSettings"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings",
+    "workingHours":{
+        "daysOfWeek":[
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday"
+        ],
+        "startTime":"09:00:00.0000000",
+        "endTime":"18:30:00.0000000",
+        "timeZone":{
+            "@odata.type":"#microsoft.graph.customTimeZone",
+            "bias":-200,
+            "name":"Customized Time Zone",
+            "standardOffset":{
+                "time":"02:00:00.0000000",
+                "dayOccurrence":4,
+                "dayOfWeek":"sunday",
+                "month":5,
+                "year":0
+            },
+            "daylightOffset":{
+                "daylightBias":-100,
+                "time":"02:00:00.0000000",
+                "dayOccurrence":2,
+                "dayOfWeek":"sunday",
+                "month":10,
+                "year":0
+            }
+        }
+    }
+}
+```
+
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update mailbox settings",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

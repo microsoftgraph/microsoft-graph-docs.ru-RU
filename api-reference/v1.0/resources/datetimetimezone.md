@@ -1,13 +1,22 @@
+---
+title: Тип ресурса dateTimeTimeZone
+description: Описывает дату, время и часовой пояс для определенного момента.
+ms.openlocfilehash: 3ce02fbf82dabbbe354b2672cfd950812ea0bd32
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024827"
+---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
 
 Описывает дату, время и часовой пояс для определенного момента.
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Description|
 |:---------------|:--------|:----------|
-|DateTime|String|Один момент времени в объединенном представлении даты и времени (`<date>T<time>`).|
-|TimeZone|String|Один из указанных ниже часовых поясов.|
-
+|dateTime|String|Один момент времени в объединенном представлении даты и времени (`<date>T<time>`).|
+|timeZone|String|Один из указанных ниже часовых поясов.|
 
 Свойство _TimeZone_ можно задать для каждого из часовых поясов, которые поддерживаются в Windows, а также для указанных ниже часовых поясов.
 
@@ -103,11 +112,11 @@ Africa/Cairo
 
 Asia/Damascus
 
-Africa/Johannesburg
+Африка, Йоханнесбург
 
-Europe/Kiev
+Европа, Киев
 
-Europe/Istanbul
+Европа, Стамбул
 
 Asia/Jerusalem
 
@@ -137,25 +146,25 @@ Asia/Yerevan
 
 Asia/Kabul
 
-Asia/Karachi
+Азия, Карачи
 
-Asia/Tashkent
+Азия, Ташкент
 
-Asia/Kolkata
+Азия, Колката
 
 Asia/Colombo
 
-Asia/Kathmandu
+Азия, Катманду
 
-Asia/Almaty
+Азия, Астана
 
-Asia/Dhaka
+Азия, Дакка
 
-Asia/Yekaterinburg
+Азия, Екатеринбург
 
-Asia/Rangoon
+Азия, Янгон (Рангун)
 
-Asia/Bangkok
+Азия, Бангкок
 
 Asia/Novosibirsk
 

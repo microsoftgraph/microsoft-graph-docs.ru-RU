@@ -1,17 +1,21 @@
-<a id="domaindnsrecord-resource-type" class="xliff"></a>
-
-# Тип ресурса domainDnsRecord
+---
+title: Тип ресурса domainDnsRecord
+description: Для каждого домена в клиентов может потребоваться добавление записи DNS для файла зоны DNS домена этого домена, которые могут использоваться с Microsoft Online Services. Сущность **DomainDnsRecord** используется для представления таких записей DNS. Базовая сущность для DomainDnsCnameRecord, DomainDnsMxRecord, DomainDnsSrvRecord и DomainDnsSrvRecord сущностей.
+ms.openlocfilehash: d2cc25f459aebf4a410c152e5f5128436a8c8f61
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027668"
+---
+# <a name="domaindnsrecord-resource-type"></a>Тип ресурса domainDnsRecord
 
 Для работы служб Microsoft Online Services с доменом необходимо добавить записи DNS в файл зоны DNS домена. Объект **DomainDnsRecord** представляет такие записи DNS. Базовый объект для объектов [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md) и [DomainDnsSrvRecord](domaindnssrvrecord.md).
 
-<a id="methods" class="xliff"></a>
-
-## Методы
+## <a name="methods"></a>Методы
 Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
@@ -21,18 +25,15 @@
 |supportedService|Строка| Веб-служба или функция Майкрософт, зависящая от этой записи DNS.</br></br>Возможные значения: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |ttl|Int32| Значение, используемое при настройке свойства срока жизни (ttl) записи DNS на узле DNS. Не допускает значение null. |
 
-<a id="relationships" class="xliff"></a>
-
-## Связи
+## <a name="relationships"></a>Связи
 Нет
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

@@ -1,3 +1,13 @@
+---
+title: Тип ресурса inferenceClassificationOverride
+description: Представляет пользовательское переопределение для классификации входящих сообщений от определенного отправителя.
+ms.openlocfilehash: 3f3f07e870a4ba549062197a380633ab591c54fe
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026215"
+---
 # <a name="inferenceclassificationoverride-resource-type"></a>Тип ресурса inferenceClassificationOverride
 
 Представляет пользовательское переопределение для классификации входящих сообщений от определенного отправителя.
@@ -7,14 +17,14 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Обновление](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |Изменение поля **ClassifyAs** переопределения указанным образом. |
-|[Удаление](../api/inferenceclassificationoverride_delete.md) | Нет |Удаление переопределения по идентификатору. |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **ClassifyAs** переопределения, указанный. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classifyAs|string| Указывает, как должны классифицироваться все входящие сообщения от определенного отправителя. Возможные значения: `focused`, `other`.|
-|id|string| Уникальный идентификатор переопределения. Только для чтения.|
+|classifyAs|inferenceClassificationType| Указывает, как входящие сообщения из определенной отправитель всегда должен следует рассматривать как. Возможные значения: `focused`, `other`.|
+|id|строка| Уникальный идентификатор переопределения. Только для чтения.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|Сведения об электронном адресе отправителя, для которого создано переопределение.|
 
 ## <a name="relationships"></a>Связи
@@ -27,6 +37,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

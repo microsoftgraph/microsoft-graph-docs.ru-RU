@@ -1,3 +1,13 @@
+---
+title: Тип ресурса servicePlanInfo
+description: Содержит сведения о плане обслуживания, связанном с подписанным SKU. Свойство **servicePlans** объекта subscribedSku представляет собой коллекцию объектов **servicePlanInfo**.
+ms.openlocfilehash: 70d49eb22542e9bc22ee28df5bc77b3bf6146b6d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026284"
+---
 # <a name="serviceplaninfo-resource-type"></a>Тип ресурса servicePlanInfo
 
 Содержит сведения о плане обслуживания, связанном с подписанным SKU. Свойство **servicePlans** объекта [subscribedSku](subscribedsku.md) представляет собой коллекцию объектов **servicePlanInfo**.
@@ -10,7 +20,6 @@
 |servicePlanName|String|Имя плана обслуживания.|
 |provisioningStatus|String|Состояние подготовки плана обслуживания. Возможные значения:<br/>"Success" — служба полностью подготовлена.<br/>"Disabled" — служба отключена.<br/>"PendingInput" — служба еще не подготовлена, ожидается подтверждение.<br/>"PendingActivation" — служба подготовлена, но требует явной активации администратором (например, план обслуживания Intune_O365)<br/>"PendingProvisioning" — Майкрософт добавила в продукт новую службу, но она пока не активирована в клиенте.|
 |appliesTo|String|Объект, которому может быть назначен план обслуживания. Возможные значения:<br/>"User" — план обслуживания можно назначить отдельным пользователям.<br/>"Company" — план обслуживания можно назначить всему клиенту.|
-
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

@@ -1,14 +1,26 @@
+---
+title: Тип ресурса mailboxSettings
+description: Параметры основного параметра вошедшего пользователя.
+ms.openlocfilehash: b8fb2c1f11f849a4633d6be4f4519b85b33923ea
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027606"
+---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 
 Параметры основного параметра вошедшего пользователя.
 
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
+|archiveFolder|string|Идентификатор архивной папки пользователя.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|timeZone|string|Часовой пояс по умолчанию для почтового ящика пользователя.|
+|timeZone|string|Часовой пояс почтового ящика пользователя по умолчанию.|
+|workingHours|[workingHours](workinghours.md)|Дни недели и часы работы пользователя в определенном часовом поясе.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -17,16 +29,18 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "archiveFolder"
   ],
   "@odata.type": "microsoft.graph.mailboxSettings"
 }-->
 
 ```json
 {
+  "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
-  "timeZone": "string"
+  "timeZone": "string",
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
 
 ```

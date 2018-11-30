@@ -1,10 +1,22 @@
-# <a name="file-resource-type"></a>Тип ресурса File
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: File
+ms.openlocfilehash: 2201533457863c3cac6b7a9463f80e37bd5a569a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026208"
+---
+# <a name="file-resource-type"></a>Тип ресурса file
 
 Ресурс **File** — это единая структура, объединяющая элементы данных, связанные с файлами.
 
 Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **file**, то этот ресурс представляет файл. Помимо других свойств, у файлов есть связь **content**, которая содержит байтовый поток файла.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -25,21 +37,17 @@
 
 | Свойство | Тип                    | Описание                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [HashesType](hashes.md) | Хэши двоичного содержимого файла (если они доступны). Только для чтения.                                                                                    |
+| hashes   | [Hashes](hashes.md) | Хэши двоичного содержимого файла (если они доступны). Только для чтения.                                                                                    |
 | mimeType | string                  | Тип MIME файла. Он определяется логикой на сервере и может не совпадать со значением, предоставленным при отправке файла. Только для чтения. |
 
 ## <a name="remarks"></a>Заметки 
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->

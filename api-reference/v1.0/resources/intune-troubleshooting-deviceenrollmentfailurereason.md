@@ -1,0 +1,39 @@
+---
+title: Тип перечисления deviceEnrollmentFailureReason
+description: Категории верхнего уровня failure для регистрации.
+ms.openlocfilehash: 5bcf6887ca66f440bd2658d15704286f8b62f733
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027675"
+---
+# <a name="deviceenrollmentfailurereason-enum-type"></a>Тип перечисления deviceEnrollmentFailureReason
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Категории верхнего уровня failure для регистрации.
+## <a name="members"></a>Элементы
+|Элемент|Значение|Description|
+|:---|:---|:---|
+|unknown|0|Значение по умолчанию причина сбоя не известен.|
+|проверка подлинности|1|Ошибка проверки подлинности|
+|авторизация|2|Звонок был прошедшим проверку подлинности, но не разрешена для регистрации.|
+|accountValidation|3|Не удается проверить учетную запись для регистрации. (Учетная запись заблокирована, регистрации не включена)|
+|userValidation|4|Пользователь не может быть проверен. (Пользователь не существует, отсутствует лицензия)|
+|deviceNotSupported|5|Устройство не поддерживается для мобильных устройств management.|
+|inMaintenance|6|Учетная запись является в режим обслуживания.|
+|badRequest|7|Клиент отправил запрос, который не является поняты/поддерживается службой.|
+|featureNotSupported|8|Компоненты, используемые в этом регистрации не поддерживается для этой учетной записи.|
+|enrollmentRestrictionsEnforced|9|Ограничения для регистрации настроены администратором заблокированные этой регистрации.|
+|clientDisconnected|10|Истекло время ожидания клиента или регистрации был прерван пользователем enduser.|
+|userAbandonment|11|Регистрация отменена с enduser. (Enduser работы адаптация новых сотрудников, но не удалось завершить своевременно)|
+
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
+  ],
+}
+-->

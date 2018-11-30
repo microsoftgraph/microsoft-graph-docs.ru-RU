@@ -1,23 +1,29 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Identity
+ms.openlocfilehash: 2ee5a17b8673a92dd66ceda2b18660b9692e1cae
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026413"
+---
 # <a name="identity-resource-type"></a>Тип ресурса Identity
 
 Ресурс **Identity** представляет удостоверение _субъекта_. В роли субъекта может выступать пользователь, устройство или приложение.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
-Ниже представлено описание ресурса в формате JSON.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.identity"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity",
+  "openType": true,
+ "optionalProperties": ["displayName", "thumbnails"] } -->
 ```json
 {
   "displayName": "string",
-  "id": "string"
+  "id": "string",
+  "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
 }
 ```
 
@@ -25,7 +31,7 @@
 
 | Свойство    | Тип   | Описание                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | Отображаемое имя удостоверения. Обратите внимание, что оно может не всегда быть доступно или актуально. Например, если пользователь меняет свое отображаемое имя, API может показывать новое значение в последующем отклике, но элементы, связанные с пользователем, не будут отображаться как измененные при использовании [изменения](../api/item_delta.md).        |
+| displayName | String | Отображаемое имя удостоверения. Обратите внимание, что оно может не всегда быть доступно или актуально. Например, если пользователь изменит свое отображаемое имя, API может отображать новое значение в последующем ответе, но элементы, сопоставленные с пользователем, будут отображаться без изменения при использовании [разности](../api/driveitem-delta.md).     |
 | id          | String | Уникальный идентификатор удостоверения.                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>Заметки
@@ -36,8 +42,9 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identity resource",
-  "keywords": "",
+  "description": "Identity contains information about an app, user, or group.",
+  "keywords": "identity,owner,modifier,app,user,group",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Identity"
+
+} -->

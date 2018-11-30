@@ -1,26 +1,29 @@
-<a id="plannerappliedcategories-resource-type" class="xliff"></a>
-
-# Тип ресурса plannerAppliedCategories
+---
+title: Тип ресурса plannerAppliedCategories
+description: Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или метки), которые были применены к задаче. Он является частью объекта plannerTask.
+ms.openlocfilehash: 77a322ea3c7cd694e8ca42368cac82a639a42440
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028203"
+---
+# <a name="plannerappliedcategories-resource-type"></a>Тип ресурса plannerAppliedCategories
 
 
 Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или меток), примененных к задаче. Он является частью объекта [plannerTask](plannertask.md). К задаче можно применить до 6 категорий. Описания категорий, например `category1` и `category2`, являются частью объекта [сведений о плане](plannerplandetails.md). Это открытый тип.
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 Клиент может определять свойства открытого типа. В этом случае клиент должен указать значения для свойств `category1`, `category2`, `category3`, `category4`, `category5` или `category6`, а также использовать логическое значение `true` при применении соответствующих категорий к задаче. Ниже показан пример. Если не применить свойства, они будут автоматически удалены. Для этого им будет присвоено логическое значение `false`. 
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление ресурса в формате JSON
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerAppliedCategories"
 }-->
 

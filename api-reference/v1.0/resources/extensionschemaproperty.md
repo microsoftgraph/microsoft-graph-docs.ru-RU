@@ -1,34 +1,36 @@
-<a id="extensionschemaproperty-resource-type" class="xliff"></a>
-
-# Тип ресурса extensionSchemaProperty
+---
+title: Тип ресурса extensionSchemaProperty
+description: Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения schemaExtension.
+ms.openlocfilehash: 1ea2fca1812765aab49d548dd3cd3ed0575e30aa
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025052"
+---
+# <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
 Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения [schemaExtension](schemaextension.md).
 
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|String| Имя строго типизированного свойства, определенного в качестве части расширения схемы.|
 |type|Строка| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
 
-<a id="supported-property-data-types" class="xliff"></a>
-
-#### Поддерживаемые типы данных свойств 
+#### <a name="supported-property-data-types"></a>Поддерживаемые типы данных свойств 
 При определении свойства в расширении схемы поддерживаются следующие типы данных:
 
 | Тип свойства | Примечания |
 |-------------|------------|
 | Binary | Не более 256 байт. |
-| Boolean | Не поддерживается для ресурсов message, event и post. |
+| Boolean | Не поддерживается для ресурсов contact, message, event и post. |
 | DateTime | Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC. |
-| Целое число | 32-разрядное значение. Не поддерживается для ресурсов message, event и post. |
+| Integer | 32-разрядное значение. Не поддерживается для ресурсов contact, message, event и post. |
 | String | Не более 256 символов. |
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

@@ -1,14 +1,21 @@
-<a id="domaindnssrvrecord-resource-type" class="xliff"></a>
-# Тип ресурса domainDnsSrvRecord
+---
+title: Тип ресурса domainDnsSrvRecord
+description: Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
+ms.openlocfilehash: 1fd1123866d1674aec167de8bec8ef9a45be8d99
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026214"
+---
+# <a name="domaindnssrvrecord-resource-type"></a>Тип ресурса domainDnsSrvRecord
 
 Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md).
 
-<a id="methods" class="xliff"></a>
-## Методы
+## <a name="methods"></a>Методы
 Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
@@ -24,17 +31,16 @@
 |ttl|Int32| Значение, используемое при настройке свойства *ttl* (срока жизни) для записи SRV на узле DNS. Не допускает значения null. |
 |weight|Int32| Значение, используемое при настройке свойства *weight* записи SRV на узле DNS. |
 
-<a id="relationships" class="xliff"></a>
-## Связи
+## <a name="relationships"></a>Связи
 Нет
 
 
-<a id="json-representation" class="xliff"></a>
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -43,7 +49,6 @@
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

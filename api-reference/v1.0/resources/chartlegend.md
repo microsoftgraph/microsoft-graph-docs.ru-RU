@@ -1,3 +1,13 @@
+---
+title: Тип ресурса ChartLegend
+description: Представляет легенду в диаграмме.
+ms.openlocfilehash: 9066e69da4100c711f9b0b19165a58d94a8bb142
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025554"
+---
 # <a name="chartlegend-resource-type"></a>Тип ресурса ChartLegend
 
 Представляет легенду в диаграмме.
@@ -7,20 +17,20 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartLegend](../api/chartlegend_get.md) | [ChartLegend](chartlegend.md) |Чтение свойств и связей объекта chartLegend.|
-|[Обновление](../api/chartlegend_update.md) | [ChartLegend](chartlegend.md)    |Обновление объекта ChartLegend. |
+|[Получение объекта ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](chartlegend.md) |Чтение свойств и связей объекта chartLegend.|
+|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md) |Обновление объекта ChartLegend. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overlay|boolean|Логическое значение, определяющее, должна ли легенда диаграммы пересекаться с основной частью диаграммы.|
-|position|string|Представляет расположение легенды на диаграмме. Возможные значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
+|position|string|Представляет положение легенды диаграммы. Возможные значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|boolean|Логическое значение, представляющее видимость объекта ChartLegend.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[ChartLegendFormat](chartlegendformat.md)|Представляет форматирование легенды диаграммы, включая заливку и шрифт. Только для чтения.|
+|format|[WorkbookChartLegendFormat](chartlegendformat.md)|Представляет форматирование легенды диаграммы, включая заливку и шрифт. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -28,17 +38,19 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 }-->
 
 ```json
 {
   "overlay": true,
   "position": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
 }
 
 ```

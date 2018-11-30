@@ -1,12 +1,22 @@
+---
+title: Тип ресурса FilterDatetime
+description: Представляет способ фильтрации даты при фильтрации по значениям.
+ms.openlocfilehash: 8156b9f5779dd8d70ff3a839d8a6ef4f5753bacd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024543"
+---
 # <a name="filterdatetime-resource-type"></a>Тип ресурса FilterDatetime
 
 Представляет способ фильтрации даты при фильтрации по значениям.
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|дата|string|Дата в формате ISO8601, используемая для фильтрации данных.|
-|specificity|string|Точность, с которой производится фильтрация данных на основе даты. Например, если указана дата 2005-04-02, а для свойства specificity задано значение month, после фильтрации останутся все строки, датированные апрелем 2009 г. Возможные значения: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
+|дата|строка|Дата в формате ISO8601, используемая для фильтрации данных.|
+|specificity|string|Каким образом определенные даты можно использовать для хранения данных. Например если дата 2005-04-02 и specifity задано значение «месяц», операцию фильтра будет сохранено все строки с датой в месяц апреля 2009 г.. Возможные значения: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -21,7 +31,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterDateTime"
+  "@odata.type": "microsoft.graph.workbookFilterDateTime"
 }-->
 
 ```json

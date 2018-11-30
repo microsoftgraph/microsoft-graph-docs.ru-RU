@@ -1,3 +1,13 @@
+---
+title: Определение /me как одноэлементного класса
+description: Это то, что необходимо добавить в документах, чтобы убедиться, что наценки-сканера
+ms.openlocfilehash: 76e8cc2ed8cb481d732e1b0727107eee8d520e77
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025542"
+---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>Вспомогательный код (примеры, не включенные в документы)
 
 Ниже представлены фрагменты, которые пришлось добавить в документы, чтобы средство Markdown-Scanner могло правильно обработать документы по Graph.
@@ -13,6 +23,7 @@ GET https://graph.microsoft.com/v1.0/me
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }
@@ -28,6 +39,7 @@ GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.drive", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }
@@ -44,6 +56,7 @@ GET https://graph.microsoft.com/v1.0/users/{user-id}
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }

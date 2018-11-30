@@ -1,3 +1,13 @@
+---
+title: Тип ресурса referenceAttachment
+description: Ссылка на файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или в других поддерживаемых местах хранения, вложенный в событие, сообщение или запись.
+ms.openlocfilehash: b3604791c7e06d4f765a81263e1f6afe51743390
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028207"
+---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
 
 Ссылка на файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или в других поддерживаемых местах хранения, вложенный в событие, сообщение или запись.
@@ -8,8 +18,8 @@
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
-|[Delete](../api/attachment_delete.md) | Нет |Удаление объекта referenceAttachment. |
+|[Get](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
+|[Delete](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -19,7 +29,7 @@
 |isInline|Boolean|Значение true указывает, что вложение встроено в содержимое объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |имя|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла.|
-|size|Int32|Размер вложения в байтах.|
+|size|Int32|Объем метаданных, которые хранятся в сообщении с вложением (в байтах). Это значение не отображает фактический размер файла.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -30,11 +40,10 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.attachment",
   "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 

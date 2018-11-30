@@ -1,3 +1,13 @@
+---
+title: Тип ресурса WorksheetProtectionOptions
+description: Представляет параметры защиты листа.
+ms.openlocfilehash: ef086b911a154df2eddf92ee57b89d570ef12247
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028081"
+---
 # <a name="worksheetprotectionoptions-resource-type"></a>Тип ресурса WorksheetProtectionOptions
 
 Представляет параметры защиты листа.
@@ -26,7 +36,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json

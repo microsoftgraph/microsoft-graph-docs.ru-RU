@@ -1,3 +1,13 @@
+---
+title: Тип ресурса fileAttachment
+description: 'Файл (например, текстовый файл или документ Word) подключенного к события, сообщение или post. **ContentBytes** '
+ms.openlocfilehash: 97c9b22c379b00fa76a9dee45389e57269e6fc20
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027840"
+---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
 Файл (например, текстовый файл или документ Word), вложенный в сведения о событии, сообщение или запись. Свойство **contentBytes** включает содержимое файла в кодировке Base 64.  
@@ -13,13 +23,13 @@
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Чтение свойств и связей объекта fileAttachment.|
-|[Удаление](../api/attachment_delete.md) | Нет |Удаление объекта fileAttachment. |
+|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств и связей объекта fileAttachment.|
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contentBytes|Двоичный доступ|Двоичное содержимое файла.|
+|contentBytes|Двоичный|Содержимое файла в кодировке base64.|
 |contentId|String|Идентификатор вложения в хранилище Exchange.|
 |contentLocation|String|Универсальный код ресурса (URI), который соответствует расположению содержимого вложения.|
 |contentType|String|Тип контента этого вложения.|
@@ -39,6 +49,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
   "optionalProperties": [
 
   ],
