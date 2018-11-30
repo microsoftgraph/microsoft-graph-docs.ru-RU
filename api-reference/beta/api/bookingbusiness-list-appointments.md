@@ -1,0 +1,249 @@
+---
+title: Список встреч
+description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+ms.openlocfilehash: 5e0846a1671a7a566e5175a331dc7c03e02af537
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27076346"
+---
+# <a name="list-appointments"></a>Список встреч
+
+ > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+ 
+Получите список объектов [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingbusiness](../resources/bookingbusiness.md).
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Для приложений | Не поддерживается.  | 
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+GET /bookingBusinesses/{id}/appointments
+```
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+
+Чтобы задать встреч business резервирования в интервал дат, а не `$filter`, [Получение представления календаря](bookingbusiness-list-calendarview.md) для этого диапазона дат. 
+
+## <a name="request-headers"></a>Заголовки запросов
+| Имя      |Описание|
+|:----------|:----------|
+| Authorization  | Bearer {code}|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
+## <a name="response"></a>Ответ
+Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [bookingAppointment](../resources/bookingappointment.md) в теле ответа.
+## <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "get_appointments"
+}-->
+```http
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
+```
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.bookingAppointment",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments",
+    "value": [
+        {
+            "id": "AAMkADKoAAA=",
+            "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
+            "customerName": "Bob Kelly",
+            "customerEmailAddress": "bobk@tailspintoys.com",
+            "customerPhone": "213-555-0108",
+            "customerNotes": null,
+            "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
+            "serviceName": "Catered bento",
+            "duration": "PT30M",
+            "preBuffer": "PT5M",
+            "postBuffer": "PT10M",
+            "priceType": "fixedPrice",
+            "price": 10,
+            "serviceNotes": null,
+            "optOutOfCustomerEmail": false,
+            "staffMemberIds": [],
+            "invoiceAmount": 10,
+            "invoiceId": "1002",
+            "invoiceStatus": "open",
+            "invoiceUrl": "theInvoiceUrl",
+            "customerLocation": {
+                "displayName": "Customer",
+                "locationEmailAddress": null,
+                "locationUri": "",
+                "locationType": null,
+                "uniqueId": null,
+                "uniqueIdType": null,
+                "address": {
+                    "type": "home",
+                    "postOfficeBox": "",
+                    "street": "",
+                    "city": "",
+                    "state": "",
+                    "countryOrRegion": "",
+                    "postalCode": ""
+                },
+                "coordinates": {
+                    "altitude": null,
+                    "latitude": null,
+                    "longitude": null,
+                    "accuracy": null,
+                    "altitudeAccuracy": null
+                }
+            },
+            "start": {
+                "dateTime": "2018-04-30T13:00:00.0000000Z",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2018-04-30T13:30:00.0000000Z",
+                "timeZone": "UTC"
+            },
+            "serviceLocation": {
+                "displayName": "Customer location (987 Third Avenue, Buffalo, NY 98052, USA)",
+                "locationEmailAddress": null,
+                "locationUri": "",
+                "locationType": null,
+                "uniqueId": null,
+                "uniqueIdType": null,
+                "address": {
+                    "type": "home",
+                    "postOfficeBox": "",
+                    "street": "",
+                    "city": "",
+                    "state": "",
+                    "countryOrRegion": "",
+                    "postalCode": ""
+                },
+                "coordinates": {
+                    "altitude": null,
+                    "latitude": null,
+                    "longitude": null,
+                    "accuracy": null,
+                    "altitudeAccuracy": null
+                }
+            },
+            "reminders": [],
+            "invoiceDate": {
+                "dateTime": "2018-04-30T13:30:00.0000000Z",
+                "timeZone": "UTC"
+            }
+        },
+        {
+            "id": "AAMkADKnAAA=",
+            "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+            "customerName": "Jordan Miller",
+            "customerEmailAddress": "jordanm@contoso.com",
+            "customerPhone": "213-555-0199",
+            "customerNotes": null,
+            "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
+            "serviceName": "Catered bento",
+            "duration": "PT30M",
+            "preBuffer": "PT5M",
+            "postBuffer": "PT10M",
+            "priceType": "fixedPrice",
+            "price": 10,
+            "serviceNotes": null,
+            "optOutOfCustomerEmail": false,
+            "staffMemberIds": [],
+            "invoiceAmount": 10,
+            "invoiceId": "1001",
+            "invoiceStatus": "open",
+            "invoiceUrl": "theInvoiceUrl",
+            "customerLocation": {
+                "displayName": "Customer",
+                "locationEmailAddress": null,
+                "locationUri": "",
+                "locationType": null,
+                "uniqueId": null,
+                "uniqueIdType": null,
+                "address": {
+                    "type": "home",
+                    "postOfficeBox": "",
+                    "street": "",
+                    "city": "",
+                    "state": "",
+                    "countryOrRegion": "",
+                    "postalCode": ""
+                },
+                "coordinates": {
+                    "altitude": null,
+                    "latitude": null,
+                    "longitude": null,
+                    "accuracy": null,
+                    "altitudeAccuracy": null
+                }
+            },
+            "start": {
+                "dateTime": "2018-05-01T12:00:00.0000000Z",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2018-05-01T12:30:00.0000000Z",
+                "timeZone": "UTC"
+            },
+            "serviceLocation": {
+                "displayName": "Customer location (123 First Avenue, Buffalo, NY 98052, USA)",
+                "locationEmailAddress": null,
+                "locationUri": "",
+                "locationType": null,
+                "uniqueId": null,
+                "uniqueIdType": null,
+                "address": {
+                    "type": "home",
+                    "postOfficeBox": "",
+                    "street": "",
+                    "city": "",
+                    "state": "",
+                    "countryOrRegion": "",
+                    "postalCode": ""
+                },
+                "coordinates": {
+                    "altitude": null,
+                    "latitude": null,
+                    "longitude": null,
+                    "accuracy": null,
+                    "altitudeAccuracy": null
+                }
+            },
+            "reminders": [],
+            "invoiceDate": {
+                "dateTime": "2018-05-01T12:30:00.0000000Z",
+                "timeZone": "UTC"
+            }
+        }
+    ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List appointments",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

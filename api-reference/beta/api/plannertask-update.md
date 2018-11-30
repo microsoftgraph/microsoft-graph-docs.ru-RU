@@ -1,0 +1,159 @@
+---
+title: Обновление объекта plannertask
+description: Обновление свойств объекта **plannertask**.
+ms.openlocfilehash: aea85ef7a5e463153c84149c815f8e6dbd74075f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27075366"
+---
+# <a name="update-plannertask"></a>Обновление объекта plannertask
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Обновление свойств объекта **plannertask**.
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /planner/tasks/<id>
+```
+## <a name="optional-request-headers"></a>Необязательные заголовки запросов
+| Имя       | Описание|
+|:-----------|:-----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
+| If-Match  | Последнее известное значение ETag обновляемого объекта **plannerTask**. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
+
+| Свойство     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Категории, к которым применена задача. Возможные значения см. [здесь](../resources/plannerappliedcategories.md).|
+|assigneePriority|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
+|assignments|[plannerAssignments](../resources/plannerassignments.md)|Список пользователей, которым назначена задача.|
+|bucketId|String|Код сегмента, к которой принадлежит задачи. Должен быть в плане, задача находится в сегменте. Это 28 знаков без учета регистра. [Формат](../resources/tasks-identifiers-disclaimer.md) проверяются на службу. |
+|conversationThreadId|Строка|Идентификатор беседы в задаче. Это идентификатор объекта беседы, созданной в группе.|
+|dueDateTime|DateTimeOffset|Срок выполнения задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
+|percentComplete|Int32|Процент выполнения задачи. Если установлено значение `100`, задача считается выполненной. |
+|planId|Строка|Идентификатор плана, к которому относится задача.|
+|startDateTime|DateTimeOffset|Дата и время начала задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|title|Строка|Название задачи.|
+
+## <a name="response"></a>Ответ
+
+В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerTask](../resources/plannertask.md) в тексте ответа.
+
+Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
+
+## <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "update_plannertask"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
+Content-type: application/json
+Content-length: 247
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+
+{
+  "assignments": {
+    "fbab97d0-4932-4511-b675-204639209557": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "orderHint": "N9917 U2883!"
+    }
+  },
+  "appliedCategories": {
+    "category3": true,
+    "category4": false
+  }
+}
+```
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.plannerTask"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1423
+
+{
+  "createdBy": {
+    "user": {
+      "id": "6463a5ce-2119-4198-9f2a-628761df4a62"
+    }
+  },
+  "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
+  "bucketId": "gcrYAaAkgU2EQUvpkNNXLGQAGTtu",
+  "title": "title-value",
+  "orderHint": "9223370609546166567W",
+  "assigneePriority": "90057581\"",
+  "createdDateTime": "2015-03-24T18:36:49.2407981Z",
+  "assignments": {
+    "6463a5ce-2119-4198-9f2a-628761df4a62": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "assignedBy": {
+        "user": {
+          "id": "6463a5ce-2119-4198-9f2a-628761df4a62"
+        }
+      },
+      "assignedDateTime": "2015-03-25T18:38:21.956Z",
+      "orderHint": "N9917"
+    },
+    "fbab97d0-4932-4511-b675-204639209557": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "assignedBy": {
+        "user": {
+          "id": "1e9955d2-6acd-45bf-86d3-b546fdc795eb"
+        }
+      },
+      "assignedDateTime": "2017-04-24T22:40:44.5665917",
+      "orderHint": "RWk1"
+    },
+    "aaa27244-1db4-476a-a5cb-004607466324": {
+      "@odata.type": "#microsoft.graph.plannerAssignment",
+      "assignedBy": {
+        "user": {
+          "id": "6463a5ce-2119-4198-9f2a-628761df4a62"
+        }
+      },
+      "assignedDateTime": "2015-03-25T18:38:21.956Z",
+      "orderHint": "U2883"
+    }
+  },
+  "appliedCategories": {
+    "category3": true,
+    "category5": true,
+    "category6": true,
+  },
+  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update plannertask",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

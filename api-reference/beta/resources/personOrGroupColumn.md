@@ -1,0 +1,71 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+title: PersonOrGroupColumn
+ms.openlocfilehash: 116e3a61938926ab75534bb2dc88363cc7d15196
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27075751"
+---
+# <a name="personorgroupcolumn-resource-type"></a>Тип ресурса personOrGroupColumn
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Ресурс **personOrGroupColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца представляют человека или группу, выбранные в каталоге.
+
+## <a name="json-representation"></a>Представление в формате JSON
+
+Ниже показано представление ресурса **personOrGroupColumn** в формате JSON.
+<!-- { "blockType": "resource", "@type": "microsoft.graph.personOrGroupColumn", "@property.aka": "chooseFromType=format" } -->
+
+```json
+{
+  "allowMultipleSelection": true,
+  "displayAs": "account | contentType | created | department | ...",
+  "chooseFromType": "peopleAndGroups | peopleOnly"
+}
+```
+
+## <a name="properties"></a>Свойства
+
+| Имя свойства              | Тип    | Описание
+|:---------------------------|:--------|:--------------------------------------
+| **allowMultipleSelection** | логический | Указывает, можно ли выбрать несколько значений в источнике.
+| **displayAs**              | строка  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
+| **chooseFromType**         | строка  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`.
+
+## <a name="displayas-values"></a>Значения DisplayAs
+
+| Значение DisplayAs               | Описание
+|:------------------------------|:-----------------------
+| **account**                   | Необработанная закодированная строка утверждения SharePoint для человека или группы (например, i:0#.f|membership|olga@contoso.com).
+| **department**                | Отдел человека или группы.
+| **firstName**                 | Имя человека.
+| **id**                        | Идентификатор человека или группы в каталоге.
+| **lastName**                  | Фамилия человека.
+| **mobilePhone**               | Номер мобильного телефона человека.
+| **name**                      | Имя человека.
+| **nameWithPictureAndDetails** | Имя человека, а также его изображение и дополнительные сведения о нем.
+| **nameWithPresence**          | Значение, используемое по умолчанию. Имя человека со значком индикатора присутствия (доступен, занят и т. д.)
+| **office**                    | Номер офиса человека.
+| **pictureOnly36x36**          | Изображение человека, ограниченное квадратом размером 36 x 36 пикселей.
+| **pictureOnly48x48**          | Изображение человека, ограниченное квадратом размером 48 x 48 пикселей.
+| **pictureOnly72x72**          | Изображение человека, ограниченное квадратом размером 72 x 72 пикселей.
+| **sipAddress**                | SIP-адрес человека.
+| **title**                     | Должность человека в организации.
+| **userName**                  | Имя пользователя человека или группы.
+| **workEmail**                 | Электронный адрес человека или группы.
+| **workPhone**                 | Номер рабочего телефона человека.
+
+Примечание. Система может возвращать дополнительные типы DisplayAs.
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "Resources/PersonOrGroupColumn"
+} -->

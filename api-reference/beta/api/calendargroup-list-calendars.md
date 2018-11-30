@@ -1,0 +1,117 @@
+---
+title: Список календарей
+description: Получение списка календарей из группы календарей.
+ms.openlocfilehash: 40792ef7a7af1c9cd9155650315c3c5964df6733
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27076319"
+---
+# <a name="list-calendars"></a>Список календарей
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Получение списка календарей из группы календарей.
+
+## <a name="permissions"></a>Разрешения
+
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Calendars.Read                              |
+| Делегированные (личная учетная запись Майкрософт) | Calendars.Read                              |
+| Для приложений                            | Calendars.Read                              |
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- { "blockType": "ignored" } -->
+
+Объект [calendarGroup](../resources/calendargroup.md) по умолчанию для пользователя.
+
+```http
+GET /me/calendarGroup/calendars
+GET /users/{id | userPrincipalName}/calendarGroup/calendars
+```
+
+Любой объект [calendarGroup](../resources/calendargroup.md) пользователя.
+
+```http
+GET /me/calendarGroups/{id}/calendars
+GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+
+## <a name="request-headers"></a>Заголовки запросов
+
+| Имя          | Тип   | Описание               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {токен}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте тело запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Calendar](../resources/calendar.md) в тексте отклика.
+
+## <a name="example"></a>Пример
+
+##### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_calendars"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
+```
+
+##### <a name="response"></a>Ответ
+
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.calendar",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 147
+
+{
+  "value": [
+    {
+      "name": "name-value",
+      "color": {
+      },
+      "changeKey": "changeKey-value",
+      "id": "id-value"
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "List calendars",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
