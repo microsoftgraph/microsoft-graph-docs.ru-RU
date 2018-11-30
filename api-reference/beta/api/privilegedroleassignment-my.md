@@ -1,0 +1,91 @@
+---
+title: 'privilegedRoleAssignment: Мой'
+description: Получение назначения ролей привилегированной инициатора.
+ms.openlocfilehash: 7291d7ae27804c633f98a24ed7c36170e77c61e7
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27077603"
+---
+# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: Мой
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Получение назначения ролей привилегированной инициатора.
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+GET /privilegedRoleAssignments/my
+```
+## <a name="request-headers"></a>Заголовки запросов
+| Имя       | Описание|
+|:---------------|:----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
+
+## <a name="response"></a>Ответ
+
+Успешно завершена, этот метод возвращает `200 OK` кода и [privilegedRoleAssignment](../resources/privilegedroleassignment.md) коллекции объект ответа в теле ответа.
+
+## <a name="example"></a>Пример
+Ниже приведен пример вызова этого API.
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "privilegedroleassignment_my"
+}-->
+```http
+GET https://graph.microsoft.com/beta/privilegedRoleAssignments/my
+```
+
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.privilegedRoleAssignment",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 237
+
+{
+  "value": [
+    {
+      "id": "id-value",
+      "userId": "userId-value",
+      "roleId": "roleId-value",
+      "isElevated": true,
+      "expirationDateTime": "2016-10-19T10:37:00Z",
+      "resultMessage": "resultMessage-value"
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "privilegedRoleAssignment: my",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

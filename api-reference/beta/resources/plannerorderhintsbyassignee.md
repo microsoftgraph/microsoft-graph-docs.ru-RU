@@ -1,13 +1,21 @@
-<a id="plannerorderhintsbyassignee-resource-type" class="xliff"></a>
+---
+title: Тип ресурса plannerOrderHintsByAssignee
+description: '**PlannerOrderHintsByAssignee** — это ресурс, который содержит упорядочения ссылки assignees в plannerTask ресурсов, чтобы указать порядок задач в представлении назначено панели задач.'
+ms.openlocfilehash: a15a1f81b348958e5c38189db10743b83d72050f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27076536"
+---
+# <a name="plannerorderhintsbyassignee-resource-type"></a>Тип ресурса plannerOrderHintsByAssignee
 
-# Тип ресурса plannerOrderHintsByAssignee
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-**plannerOrderHintsByAssignee** — это ресурс, который содержит [указания в отношении порядка](planner_order_hint_format.md) расположения исполнителей задачи [plannerTask](plannerTask.md) в представлении "Кому назначено" на доске задач. Это открытый тип. Свойства — это идентификаторы исполнителей, а значения — указания в отношении порядка расположения.
+**plannerOrderHintsByAssignee** — это ресурс, который содержит [указания в отношении порядка](planner-order-hint-format.md) расположения исполнителей задачи [plannerTask](plannertask.md) в представлении "Кому назначено" на доске задач. Это открытый тип. Свойства — это идентификаторы исполнителей, а значения — указания в отношении порядка расположения.
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
-Свойства открытого типа может задавать клиент. Он должен указать идентификаторы исполнителей как имена свойств, а допустимое [указание в отношении порядка расположения](planner_order_hint_format.md) как значение. Свойства этого типа невозможно удалить. Служба будет автоматически удалять значения после обновления заданий в содержащем их объекте [plannerTask](plannerTask.md).
+## <a name="properties"></a>Свойства
+Свойства открытого типа может задавать клиент. Он должен указать идентификаторы исполнителей как имена свойств, а допустимое [указание в отношении порядка расположения](planner-order-hint-format.md) как значение. Свойства этого типа невозможно удалить. Служба будет автоматически удалять значения после обновления заданий в содержащем их объекте [plannerTask](plannertask.md).
 
 Пример:
 

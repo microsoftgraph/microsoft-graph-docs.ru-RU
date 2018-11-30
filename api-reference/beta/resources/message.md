@@ -1,0 +1,198 @@
+---
+title: Тип ресурса message
+description: Сообщение в папке почтового ящика.
+ms.openlocfilehash: 02c315bce639d2ee951d8f1aedca2e13231b0edf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27077253"
+---
+# <a name="message-resource-type"></a>Тип ресурса message
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Сообщение в папке почтового ящика.
+
+Этот ресурс поддерживает:
+
+- Добавление собственных данных в качестве настраиваемых заголовков сообщений Интернета. Добавление пользовательских заголовков только при создании сообщения и назвать их начинающиеся с «x-». После отправки сообщения не может изменить заголовки. Чтобы получить заголовки сообщений, применение `$select` параметр в [сообщение](../api/message-get.md) операции запроса.
+- Добавление данные как настраиваемые свойства в качестве [расширения](/graph/extensibility-overview).
+- Подписка на [уведомления об изменении](/graph/webhooks).
+- отслеживание дополнений, удалений и обновлений с помощью [запроса изменений](/graph/delta-query-overview) (функция [delta](../api/message-delta.md)).
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже показано представление JSON ресурса.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "attachments",
+    "extensions",
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties",
+    "mentions"
+  ],
+  "@odata.type": "microsoft.graph.message"
+}-->
+
+```json
+{
+  "bccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
+  "bodyPreview": "string",
+  "categories": ["string"],
+  "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "changeKey": "string",
+  "conversationId": "string",
+  "conversationIndex": "binary",
+  "createdDateTime": "String (timestamp)",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
+  "from": {"@odata.type": "microsoft.graph.recipient"},
+  "hasAttachments": true,
+  "id": "string (identifier)",
+  "importance": "String",
+  "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
+  "internetMessageId": "String",
+  "isDeliveryReceiptRequested": true,
+  "isDraft": true,
+  "isRead": true,
+  "isReadReceiptRequested": true,
+  "lastModifiedDateTime": "String (timestamp)",
+  "mentionsPreview": {"@odata.type": "microsoft.graph.mentionsPreview"},
+  "parentFolderId": "string",
+  "receivedDateTime": "String (timestamp)",
+  "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
+  "sender": {"@odata.type": "microsoft.graph.recipient"},
+  "sentDateTime": "String (timestamp)",
+  "subject": "string",
+  "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
+  "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
+  "unsubscribeData": "string",
+  "unsubscribeEnabled": true,
+  "webLink": "string",
+
+  "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "mentions": [{"@odata.type": "microsoft.graph.mention"}],
+  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
+}
+
+```
+## <a name="properties"></a>Свойства
+| Свойство     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|bccRecipients|Коллекция [recipient](recipient.md)|Получатели скрытой копии сообщения.|
+|body|[itemBody](itembody.md)|Текст сообщения. В формате HTML или текстовом формате.|
+|bodyPreview|String|Первые 255 символов в тексте сообщения. Это в текстовом формате. Если сообщение содержит экземпляры [упомянуть](mention.md), это свойство будет содержать объединения этих упоминания о. |
+|categories|Коллекция String|Категории, сопоставленные с сообщением. Каждой категории соответствует свойству **displayName** [outlookCategory](outlookcategory.md) , определенные для этого пользователя. |
+|ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
+|changeKey|String|Версия сообщения.|
+|conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
+|conversationIndex|Двоичный|Индекс беседы, к которому принадлежит сообщение электронной почты.|
+|createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
+|flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
+|from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения. Значение должно соответствовать фактический почтового ящика, используемого.|
+|hasAttachments|Boolean|Указывает на наличие вложений в сообщении. Это свойство не включает встроенные вложения, поэтому, если сообщение содержит только встроенные вложения, это свойство имеет значение false. Чтобы проверить наличие встроенных вложений, проанализируйте свойство **body** на наличие атрибута `src`, например `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
+|id|String|Уникальный идентификатор сообщения (обратите внимание, что это значение может меняться при перемещении и изменении сообщения).|
+|importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
+|inferenceClassification|String| Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused`, `other`.|
+|internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовки сообщений, определенные в [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Набор включает заголовки сообщений, указывая сетевой путь, по сообщение от отправителя получателю. Он также может содержать заголовки настраиваемого сообщения, в которых содержатся данные приложения для сообщения. |
+|internetMessageId | String | Идентификатор сообщения в формате, указанном [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Обновляемые только в том случае, если **isDraft** имеет значение true.|
+|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDraft|Boolean|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
+|isRead|Логический|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
+|mentionsPreview|[mentionsPreview](mentionspreview.md)|Сведения о упоминания в сообщении. При обработке `GET` /messages запрос, сервер задает для этого свойства и включает в себя ее в ответ по умолчанию. Сервер возвращает значение null, если нет упоминания в сообщении. Необязательный атрибут. |
+|parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
+|receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
+|replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
+|sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение — то же, что свойство **из** . Это свойство можно задать значение при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактический почтового ящика, используемого. |
+|sentDateTime|DateTimeOffset|Дата и время отправки сообщения.|
+|subject|String|Тема сообщения.|
+|toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
+|uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая уникальна для текущего сообщения. Экземпляр **uniqueBody** не возвращается по умолчанию, но может быть получен для заданного сообщения с помощью запроса `?$select=uniqueBody`. В формате HTML или текстовом формате.|
+|unsubscribeData|String|Синтаксический анализ вводимых из заголовка отписаться списка.  Это данных для команды почты в заголовке отписаться списка, если свойство UnsubscribeEnabled имеет значение true.|
+|unsubscribeEnabled|Логический|Указывает, включена ли сообщение для отказа от подписки.  Его valueTrue Если отписаться списка заголовок соответствует rfc 2369.|
+|webLink|String|URL-адрес для открытия сообщения в Outlook Web App.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook Web App.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу можно получить из объекта iFrame.|
+
+**Удаление сценария из свойства body**
+
+Текст сообщения может быть представлен в формате HTML или в виде обычного текста. По умолчанию любой потенциально небезопасный код HTML (например, JavaScript), внедренный в свойство **body**, удаляется перед возвращением содержимого сообщения в ответе REST. Чтобы получить все исходное содержимое в формате HTML, добавьте следующий заголовок HTTP-запроса:
+```
+Prefer: outlook.allow-unsafe-html
+```
+
+**Задание свойств from и sender**
+
+В большинстве случаев при создании сообщения свойства From и Sender представляют одного вошедшего пользователя, если ни одно из них не было обновлено, как описано ниже.
+
+- Свойство **from** можно изменить, если администратор Exchange назначил другим пользователям права **sendAs** для почтового ящика. Для этого администратор может назначить его владельца, выбрав элемент **Разрешения для почтового ящика** на портале Azure, либо использовать Центр администрирования Exchange или командлет Add-ADPermission в Windows PowerShell. Затем программным способом можно задать свойство **from** одному из этих пользователей, обладающих правами **sendAs** для этого почтового ящика.
+- Свойство **sender** можно изменить, если владелец почтового ящика предоставил одному или нескольким пользователям права на отправку сообщений из этого почтового ящика. Владелец почтового ящика может делегировать разрешения в Outlook. Когда представитель отправляет сообщение от имени владельца почтового ящика, в качестве свойства **sender** используется учетная запись представителя, а в качестве свойства **from** — владелец почтового ящика. Программным способом можно сделать так, чтобы в качестве свойства **sender** использовался пользователь, обладающий правами представителя для этого почтового ящика.
+
+## <a name="relationships"></a>Отношения
+| Связь | Тип   |Описание|
+|:---------------|:--------|:----------|
+|attachments|Коллекция объектов [attachment](attachment.md)|Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
+|extensions|Коллекция [extension](extension.md)| Коллекция open расширения, определенные для сообщения. Допускается значение null.|
+|упоминания|[отметить](mention.md) семейства сайтов | Коллекцию упоминания в сообщении, упорядоченные по **createdDateTime** от новых к старым. По умолчанию `GET` /сообщения не возвращает это свойство, если не применяется `$expand` свойство.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Только для чтения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Только для чтения. Допускается значение null.|
+
+## <a name="methods"></a>Методы
+
+| Метод           | Возвращаемый тип    |Описание|
+|:---------------|:--------|:----------|
+|[Список сообщений](../api/user-list-messages.md) |Коллекция [message](message.md) | Получение всех сообщений в почтовом ящике пользователя, выполнившего вход (в том числе сообщений в папках "Удаленные" и "Несрочные"). |
+|[Создание сообщения](../api/user-post-messages.md) | [message](message.md) | Создание черновика нового сообщения. |
+|[Получение сообщения](../api/message-get.md) | [message](message.md) |Считывание свойств и отношений объекта message.|
+|[Обновление](../api/message-update.md) | [message](message.md) |Обновление объекта message. |
+|[Удаление](../api/message-delete.md) | Нет |Удаление объекта message. |
+|[copy](../api/message-copy.md)|[Message](message.md)|Копирование сообщения в папку.|
+|[createForward](../api/message-createforward.md)|[Message](message.md)|Создайте черновик прямого сообщения добавить примечание или обновить все свойства сообщения в одном вызове **createForward** . После этого можно [Обновить](../api/message-update.md) или [Отправить](../api/message-send.md) черновик.|
+|[createReply](../api/message-createreply.md)|[Message](message.md)|Создание черновика сообщения ответа, чтобы добавить примечание или обновить все свойства сообщения в одном вызове **createReply** . После этого можно [Обновить](../api/message-update.md) или [Отправить](../api/message-send.md) черновик.|
+|[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)|Создание черновика сообщения ответить всем добавить примечание или обновить все свойства сообщения в одном вызове **createReplyAll** . После этого можно [Обновить](../api/message-update.md) или [Отправить](../api/message-send.md) черновик.|
+|[delta](../api/message-delta.md)|Коллекция объектов [message](message.md)| Получение списка сообщений, которые были добавлены в указанную папку, обновлены в ней или удалены из нее.|
+|[forward](../api/message-forward.md)|Нет|Переслать сообщение, добавьте комментарий или изменения любых обновляемых свойств в одном вызове **вперед** . Затем сообщение сохраняется в папке «Отправленные».|
+|[move](../api/message-move.md)|[Message](message.md)|Перемещение сообщения в папку. При этом в целевой папке создается новая копия сообщения.|
+|[reply](../api/message-reply.md)|Нет|Отправителю сообщения, добавьте комментарий или изменить любые обновляемые свойства в вызове один **ответ** . Затем сообщение сохраняется в папке «Отправленные».|
+|[replyAll](../api/message-replyall.md)|Нет|Ответить всем получателям сообщения, указав комментария и изменение любого обновляемых свойств для ответа с помощью метода **replyAll** . Затем сообщение сохраняется в папке «Отправленные».|
+|[send](../api/message-send.md)|Нет|Отправка ранее созданного черновика сообщения. После этого сообщение сохраняется в папке "Отправленные".|
+|[отписаться](../api/message-unsubscribe.md)|Нет|Отправка сообщений с помощью данных и адрес, указанный в первой команде mailto в заголовке отписаться списка.|
+|**Вложения**| | |
+|[Список вложений](../api/message-list-attachments.md) |Коллекция [Attachment](attachment.md)| Получите все вложения в сообщение.|
+|[Добавление вложения](../api/message-post-attachments.md) |[Attachment](attachment.md)| Добавление нового вложения к сообщению путем публикации в коллекции вложений.|
+|**Открытые расширения**| | |
+|[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
+|[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
+|**Расширения схемы**| | |
+|[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
+|**Расширенные свойства**| | |
+|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[message](message.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем сообщении.   |
+|[Получение сообщения с однозначным расширенным свойством](../api/singlevaluelegacyextendedproperty-get.md)  | [message](message.md) | Получение сообщений, которые содержат однозначное расширенное свойство, с помощью `$expand` или `$filter`. |
+|[Создание многозначного расширенного свойства](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [message](message.md) | Создание одного или нескольких многозначных расширенных свойств в новом или существующем сообщении.  |
+|[Получение сообщения с многозначным расширенным свойством](../api/multivaluelegacyextendedproperty-get.md)  | [message](message.md) | Получение сообщения, которое содержит многозначное расширенное свойство, с помощью `$expand`. |
+
+## <a name="see-also"></a>См. также
+
+- [Получение параметров почтового ящика](../api/user-get-mailboxsettings.md) 
+- [Обновление параметров почтового ящика](../api/user-update-mailboxsettings.md)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
+- [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
+- [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](/graph/extensibility-open-users)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](/graph/extensibility-schema-groups)
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "message resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
