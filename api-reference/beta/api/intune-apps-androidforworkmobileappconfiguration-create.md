@@ -1,0 +1,136 @@
+---
+title: Создание androidForWorkMobileAppConfiguration
+description: Создание нового объекта androidForWorkMobileAppConfiguration.
+ms.openlocfilehash: 18ff1d2a7031fbee452f0cef56281a6a1ba6599f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27081684"
+---
+# <a name="create-androidforworkmobileappconfiguration"></a>Создание androidForWorkMobileAppConfiguration
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Создание нового объекта [androidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) .
+## <a name="prerequisites"></a>Необходимые компоненты
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceAppManagement/mobileAppConfigurations
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Заголовок|Значение|
+|:---|:---|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
+
+## <a name="request-body"></a>Текст запроса
+В тексте запроса укажите представление JSON для объекта androidForWorkMobileAppConfiguration.
+
+В следующей таблице показаны свойства, которые необходимы для создания androidForWorkMobileAppConfiguration.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|String|Ключ объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|targetedMobileApps|Коллекция String|приложение-обработчик Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|roleScopeTagIds|Коллекция String|Список областей теги для данного объекта конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|описание|String|Администратор предоставил описание конфигурация устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|displayName|String|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|packageId|String|Идентификатор пакета конфигурации Android для работы приложения.|
+|payloadJson|String|Полезной нагрузки JSON конфигурации приложения Android для работы.|
+|permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) коллекции|Список разрешений для Android и соответствующие действия разрешений.|
+
+
+
+## <a name="response"></a>Ответ
+Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [androidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md) в теле ответа.
+
+## <a name="example"></a>Пример
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
+Content-type: application/json
+Content-length: 624
+
+{
+  "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
+  "targetedMobileApps": [
+    "Targeted Mobile Apps value"
+  ],
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
+  "packageId": "Package Id value",
+  "payloadJson": "Payload Json value",
+  "permissionActions": [
+    {
+      "@odata.type": "microsoft.graph.androidPermissionAction",
+      "permission": "Permission value",
+      "action": "autoGrant"
+    }
+  ]
+}
+```
+
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 732
+
+{
+  "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
+  "id": "6204ae6d-ae6d-6204-6dae-04626dae0462",
+  "targetedMobileApps": [
+    "Targeted Mobile Apps value"
+  ],
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
+  "packageId": "Package Id value",
+  "payloadJson": "Payload Json value",
+  "permissionActions": [
+    {
+      "@odata.type": "microsoft.graph.androidPermissionAction",
+      "permission": "Permission value",
+      "action": "autoGrant"
+    }
+  ]
+}
+```
+
+
+
+
+

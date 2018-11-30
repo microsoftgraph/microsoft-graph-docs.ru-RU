@@ -1,4 +1,16 @@
+---
+title: Тип ресурса ChartGridlinesFormat
+description: Инкапсулирует свойства формата для линий сетки диаграммы.
+ms.openlocfilehash: b2516b3290c384d47528ba9f582e8abfee3280ff
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27080381"
+---
 # <a name="chartgridlinesformat-resource-type"></a>Тип ресурса ChartGridlinesFormat
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Инкапсулирует свойства формата для линий сетки диаграммы.
 
@@ -10,7 +22,7 @@
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |line|[ChartLineFormat](chartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
 

@@ -1,17 +1,26 @@
-<a id="domaindnstxtrecord-resource-type" class="xliff"></a>
-# Тип ресурса domainDnsTxtRecord
+---
+title: Тип ресурса domainDnsTxtRecord
+description: Представляет запись типа TXT, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
+ms.openlocfilehash: 2c49f42c2044d58855d293d39c0e5110091e4495
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27081838"
+---
+# <a name="domaindnstxtrecord-resource-type"></a>Тип ресурса domainDnsTxtRecord
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Представляет запись типа TXT, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md).
 
-<a id="methods" class="xliff"></a>
-## Методы
+## <a name="methods"></a>Методы
 Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения. |
+|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения. |
 |isOptional|Boolean| Если имеет значение false, пользователю необходимо настроить запись типа TXT на узле DNS, чтобы службы Microsoft Online Services правильно работали с доменом. |
 |label|String| Значение, используемое при настройке свойства *name* для записи типа TXT на узле DNS.|
 |recordType|String| Тип записи DNS. Это свойство всегда имеет значение *Txt*. Ключ. |
@@ -19,13 +28,11 @@
 |text|String| Значение, используемое при настройке свойства *text* на узле DNS. |
 |ttl|Int32| Значение, используемое при настройке свойства *ttl* (срока жизни) для записи MX на узле DNS. Не допускает значения null. |
 
-<a id="relationships" class="xliff"></a>
-## Связи
+## <a name="relationships"></a>Связи
 Нет
 
 
-<a id="json-representation" class="xliff"></a>
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

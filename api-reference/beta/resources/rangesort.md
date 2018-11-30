@@ -1,4 +1,16 @@
+---
+title: Тип ресурса RangeSort
+description: Управляет операциями сортировки для объектов Range.
+ms.openlocfilehash: 33a8213a8d5ded067f3edf9e1caf7e0fc592b635
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27080546"
+---
 # <a name="rangesort-resource-type"></a>Тип ресурса RangeSort
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Управляет операциями сортировки для объектов Range.
 
@@ -7,7 +19,7 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Apply](../api/rangesort_apply.md)|Нет|Выполняет сортировку.|
+|[Apply](../api/rangesort-apply.md)|Нет|Выполняет сортировку.|
 
 ## <a name="properties"></a>Свойства
 Нет
