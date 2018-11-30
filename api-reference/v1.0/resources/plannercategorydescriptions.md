@@ -1,13 +1,19 @@
-<a id="plannercategorydescriptions-resource-type" class="xliff"></a>
-
-# Тип ресурса plannerCategoryDescriptions
+---
+title: Тип ресурса plannerCategoryDescriptions
+description: 'Ресурс **plannerCategoryDescriptions** представляет описательные метки категорий, заданных для плана. Он принадлежит объекту сведений о плане. Можно задать до 6 категорий. '
+ms.openlocfilehash: e71cbd1f41d23747691b3738b5a46ff302a72168
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025413"
+---
+# <a name="plannercategorydescriptions-resource-type"></a>Тип ресурса plannerCategoryDescriptions
 
 Ресурс **plannerCategoryDescriptions** представляет описательные метки категорий, заданных для плана. Он принадлежит объекту [сведений о плане](plannerplandetails.md). Можно задать до 6 категорий. 
 
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |category1|String|Метка, сопоставленная с категорией 1.|
@@ -17,9 +23,7 @@
 |category5|String|Метка, сопоставленная с категорией 5.|
 |category6|String|Метка, сопоставленная с категорией 6.|
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

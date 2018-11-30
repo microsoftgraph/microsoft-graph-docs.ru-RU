@@ -1,16 +1,26 @@
+---
+title: Тип ресурса person
+description: Агрегирование сведений о человеке из почты, контактов и социальных сетей. В качестве людей могут выступать локальные контакты, контакты из социальных сетей или каталога вашей организации, а также лица, с которыми пользователь недавно общался (например, по почте или в Skype).
+ms.openlocfilehash: 098e1bd67e151b8c08607ad358935ba45065c8d2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025445"
+---
 # <a name="person-resource-type"></a>Тип ресурса person
 
 Агрегирование сведений о человеке из почты, контактов и социальных сетей. В качестве людей могут выступать локальные контакты, контакты из социальных сетей или каталога вашей организации, а также лица, с которыми пользователь недавно общался (например, по почте или в Skype).
 
 ## <a name="methods"></a>Методы
 
-| Метод           | Возвращаемый тип    |Описание|
+| Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[List people](../api/user_list_people.md) | **person** |Получение коллекции объектов person, упорядоченных по их релевантности для [пользователя](../resources/user.md).|
-|[Get person](../api/person_get.md) | **person** |Получение свойств и связей объекта person.|
+|[List people](../api/user-list-people.md) | **person** |Получение коллекции объектов person, упорядоченных по их релевантности для [пользователя](../resources/user.md).|
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
+
+| Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |birthday|String|День рождения человека.|
 |companyName|String|Название компании человека.|
@@ -19,33 +29,32 @@
 |scoredEmailAddresses|Коллекция [scoredEmailAddress](scoredemailaddress.md)|Электронные адреса человека.|
 |givenName|String|Имя человека.|
 |id|String|Уникальный идентификатор человека. Только для чтения.|
-|imAddress|Коллекция String|Адрес SIP VOIP для обмена мгновенными сообщениями для пользователя. Только для чтения.|
+|imAddress|String|Адрес SIP VOIP для обмена мгновенными сообщениями для пользователя. Только для чтения.|
 |isFavorite|Boolean|Имеет значение `true`, если пользователь добавил этого человека в список избранных.|
 |jobTitle|String|Должность человека.|
 |officeLocation|String|Расположение офиса человека.|
 |personNotes|String|Заметки в произвольной форме о человеке, созданные пользователем.|
-|personType|Коллекция [personType](persontype.md)|Тип человека.|
+|personType|[personType](persontype.md) |Тип человека.|
 |phones|Коллекция [phone](phone.md)|Номера телефонов человека.|
 |postalAddresses|Коллекция [location](location.md)|Адреса человека.|
 |profession|String|Профессия человека.|
 |surname|String|Фамилия человека.|
-|userPrincipalName|String|Имя участника-пользователя человека. Имя участника-пользователя — это имя для входа, используемое в Интернете и закрепленное за человеком. Оно основано на интернет-стандарте [RFC 822](http://www.ietf.org/rfc/rfc0822.txt). В соответствии с соглашением оно должно быть сопоставлено с именем пользователя для электронной почты. В общем случае оно должно иметь следующий формат: псевдоним@домен.|
+|userPrincipalName|String|Имя участника-пользователя человека. Имя участника-пользователя — это имя для входа, используемое в Интернете и закрепленное за человеком. Оно основано на интернет-стандарте [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). В соответствии с соглашением оно должно быть сопоставлено с именем пользователя для электронной почты. В общем случае оно должно иметь следующий формат: псевдоним@домен.|
 |websites|Коллекция [website](website.md)|Веб-сайты человека.|
 |yomiCompany|String|Название компании человека, записанное так, как оно звучит по-японски.|
 
 ## <a name="relationships"></a>Связи
-Отсутствуют.
 
+Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.person"
 }-->
 
@@ -55,14 +64,15 @@
   "companyName": "string",
   "department": "string",
   "displayName": "string",
-  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredemailaddress"}],
+  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredEmailAddress"}],
   "givenName": "string",
   "id": "string (identifier)",
+  "imAddress": "string",
   "isFavorite": true,
   "jobTitle": "string",
   "officeLocation": "string",
   "personNotes": "string",
-  "personType": [{"@odata.type": "microsoft.graph.persontype"}],
+  "personType": {"@odata.type": "microsoft.graph.personType"},
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
   "profession": "string",

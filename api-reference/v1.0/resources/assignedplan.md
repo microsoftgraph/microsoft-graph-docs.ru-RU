@@ -1,3 +1,13 @@
+---
+title: Тип ресурса assignedPlan
+description: Свойство **assignedPlans** объектов user и organization представляет собой коллекцию объектов **assignedPlan**.
+ms.openlocfilehash: 306c485b31189e7693075735ceda0812d3259251
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025400"
+---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
 Свойство **assignedPlans** объектов [user](user.md) и [organization](organization.md) представляет собой коллекцию объектов **assignedPlan**.

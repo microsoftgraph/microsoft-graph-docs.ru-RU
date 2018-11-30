@@ -1,17 +1,27 @@
+---
+title: Тип ресурса automaticRepliesSetting
+description: 'Параметры конфигурации для автоматического уведомления отправителя о входящей электронной почты с сообщением '
+ms.openlocfilehash: 983f5062c5a7bacaccfdca4687705aed5aa7a604
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024411"
+---
 # <a name="automaticrepliessetting-resource-type"></a>Тип ресурса automaticRepliesSetting
 
 Параметры для настройки автоматического уведомления отправителя письма с помощью сообщения от пользователя, выполнившего вход. Например, для отправки автоматического ответа с уведомлением о том, что пользователь, выполнивший вход, не может отвечать на электронные сообщения. 
 
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|externalAudience|String| Внешняя аудитория по отношению к организации пользователя, выполнившего вход, которая получит сообщение **ExternalReplyMessage**, если для параметра **Status** задано значение `AlwaysEnabled` или `Scheduled`. Возможные значения: `none`, `contactsOnly`, `all`.|
+|externalAudience|externalAudienceScope| Набор аудитории, внешними по отношению к организации пользователь выполнил вход пользователей, которые будут иметь **ExternalReplyMessage**, если **состояние** `AlwaysEnabled` или `Scheduled`. Возможные значения: `none`, `contactsOnly`, `all`.|
 |externalReplyMessage|string|Автоматический ответ, который нужно отправить указанной внешней аудитории, если для параметра **Status** задано значение `AlwaysEnabled` или `Scheduled`.|
 |internalReplyMessage|string|Автоматический ответ, который нужно отправить сотрудникам организации пользователя, выполнившего вход, если для параметра **Status** задано значение `AlwaysEnabled` или `Scheduled`. |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время завершения отправки автоматических ответов, если для параметра **Status** установлено значение `Scheduled`. |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время начала отправки автоматических ответов, если для параметра **Status** установлено значение `Scheduled`.|
-|status|Строка|Состояние настройки автоматических ответов. Возможные значения: `disabled`, `alwaysEnabled`, `scheduled`.|
+|status|automaticRepliesStatus|Состояние конфигурации для автоматических ответов. Возможные значения: `disabled`, `alwaysEnabled`, `scheduled`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

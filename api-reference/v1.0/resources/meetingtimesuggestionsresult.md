@@ -1,12 +1,22 @@
+---
+title: Тип ресурса meetingTimeSuggestionsResult
+description: Коллекция предложений (если они есть) или причина их отсутствия.
+ms.openlocfilehash: 5504971618e6b8f6fdb82b203142e84c23c595f4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025422"
+---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Тип ресурса meetingTimeSuggestionsResult
 
 Коллекция предложений (если они есть) или причина их отсутствия.
 
-Ниже представлены возможные причины, по которым метод [findMeetingTimes](../api/user_findmeetingtimes.md) может не возвращать предложения.
+Ниже представлены возможные причины, по которым метод [findMeetingTimes](../api/user-findmeetingtimes.md) может не возвращать предложения.
 
 |**Значение emptySuggestionsReason**|**Причины**|
 |:-----|:-----|
-| attendeesUnavailable | Имеются сведения о доступности всех участников, но ни для одного периода времени не достигнут порог [достоверности собрания](../api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) (значение по умолчанию — 50 %).|
+| attendeesUnavailable | Имеются сведения о доступности всех участников, но ни для одного периода времени не достигнут порог [достоверности собрания](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) (значение по умолчанию — 50 %).|
 | attendeesUnavailableOrUnknown | Отсутствуют сведения о доступности некоторых или всех участников, из-за чего значение достоверности собрания становится ниже заданного порога (значение по умолчанию — 50 %). Доступность участника может стать неизвестной, если он находится за пределами организации или произошла ошибка при получении сведений о доступности.|
 | locationsUnavailable | Свойство **isRequired** параметра [locationConstraint](locationconstraint.md) указано как обязательное, но для рассчитанных периодов времени нет доступных площадок. |
 | organizerUnavailable | Для параметра **isOrganizerOptional** задано значение false, но организатор недоступен в запрашиваемый период времени. |
@@ -32,10 +42,10 @@
 
 ```
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|Причина отсутствия предложений в результатах. Возможные значения: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` и `unknown`. Строка для этого свойства остается пустой, если свойство **meetingTimeSuggestions** включает предложения о собрании.|
-|meetingTimeSuggestions|Коллекция объектов [meetingTimeSuggestion](meetingTimeSuggestion.md)|Массив предложений.|
+|emptySuggestionsReason|String|Причина не возвращает все предложения о собраниях. Возможные значения: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, или `unknown`. Это свойство соответствует пустая строка, если свойство **meetingTimeSuggestions** включают все предложения о собраниях.|
+|meetingTimeSuggestions|Коллекция объектов [meetingTimeSuggestion](meetingtimesuggestion.md)|Массив предложений.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

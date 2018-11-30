@@ -1,11 +1,72 @@
+---
+title: Работа с сайтами SharePoint в Microsoft Graph
+description: 'API SharePoint в Microsoft Graph поддерживает следующие основные сценарии:'
+ms.openlocfilehash: d86872ac714ad4675232cd76508310f3f265e4f0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025451"
+---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Работа с сайтами SharePoint в Microsoft Graph
 
 API SharePoint в Microsoft Graph поддерживает следующие основные сценарии:
 
-* доступ к ресурсам **drive** (библиотекам документов) и **site** для SharePoint;
-* поддержка доступа к ресурсам **site** только для чтения (без возможности создавать сайты);
-* поддержка доступа к ресурсам **driveItem** для чтения и записи;
-* обращение к ресурсам с использованием идентификатора SharePoint, URL-адреса или относительного пути.
+* доступ к ресурсам **site**, **list** и **drive** (библиотекам документов) в SharePoint;
+* доступ к ресурсам **site** только для чтения (без возможности создавать сайты);
+* доступ на чтение и запись к ресурсам **list**, **listItem** и **driveItem**;
+* обращение к ресурсам по идентификатору SharePoint, URL-адресу или относительному пути.
+
+API SharePoint предоставляет три основных типа ресурсов:
+
+* [Site](site.md) _(объект верхнего уровня)_
+* [List](list.md);
+* [ListItem](listitem.md).
+
+Ниже показан пример ресурса listItem.
+
+```json
+{
+  "fields": {
+    "Title": "Access card",
+    "Employee": "Ryan Gregg",
+    "EmployeeId": "10",
+    "CardSerial": "01235492",
+    "Alias": "RGregg",
+    "ID": 1,
+    "ContentType": "Item",
+    "Modified": "2016-09-19T23:15:25-07:00",
+    "Created": "2016-09-19T23:15:25-07:00"
+  },
+  "createdBy": {
+    "user": {
+      "id": "b757fdcb-0271-4807-b243-504139e4ba04",
+      "displayName": "Ryan Gregg"
+    }
+  },
+  "createdDateTime": "2016-09-20T06:15:25Z",
+  "eTag": "48e941c3-9515-4c48-9760-c07c90c79d48,1",
+  "id": "4",
+  "lastModifiedBy": {
+    "user": {
+      "id": "b757fdcb-0271-4807-b243-504139e4ba04",
+      "displayName": "Ryan Gregg"
+    }
+  },
+  "lastModifiedDateTime": "2016-09-20T06:15:25Z",
+}
+```
+
+Ресурсы предоставляют данные тремя разными способами:
+
+* _Свойства_ (например, **id** и **name**) предоставляют простые значения.
+* _Аспекты_ (например, **fields** и **createdBy**) предоставляют сложные значения.
+* _Ссылки_ (например, **items**) указывают на коллекции других ресурсов.
+
+Вы можете расширить ссылки в URL-адресе с помощью параметра запроса _expand_, например `?expand=fields`.
+Вы можете запросить определенные свойства и аспекты с помощью параметра запроса _select_, например `?select=id,name`.
+По умолчанию возвращается большая часть свойств и аспектов, при этом все ссылки скрыты.
+Для повышения эффективности мы рекомендуем указывать операторы _select_ и _expand_, чтобы возвращать только важные для вас данные.
 
 ## <a name="sharepoint-api-root-resources"></a>Корневые ресурсы API SharePoint
 
@@ -18,13 +79,15 @@ API SharePoint в Microsoft Graph поддерживает следующие о
 | /sites/{site-id}/drive                 | Доступ к ресурсу [drive](drive.md) (библиотеке документов) для указанного ресурса [site][], заданному по умолчанию.
 | /sites/{site-id}/drives                | Перечисление ресурсов [drive](drive.md) (библиотек документов) для [site][].
 | /sites/{site-id}/sites                 | Перечисление дочерних сайтов для ресурса [site][].
-| /groups/{group-id}/sites/root          | Доступ к ресурсу [site][] для ресурсов group (сайту группы).
+| /sites/{site-id}/lists                 | Перечисление ресурсов [lists](list.md) для ресурса [site](site.md).
+| /sites/{site-id}/lists/{list-id}/items | Перечисление ресурсов [listItem](listitem.md) для ресурса [list](list.md).
+| /groups/{group-id}/sites/root          | Доступ к [сайту][] группы для группы.
 
 К сайту также можно обратиться с помощью соответствующего пути. Для этого укажите имя узла SharePoint, за ним — двоеточие и относительный путь к сайту. При необходимости вы можете менять способ адресации (возвращаться к ресурсной модели), добавляя в конец двоеточие.
 
 | Путь                                           | Описание
 |:-----------------------------------------------|:-----------------------------------
-| /sites/contoso.sharepoint.com:/teams/hr        | Сайт, связанный с https://contoso.sharepoint.com/teams/hr
+| /sites/contoso.sharepoint.com:/teams/hr        | Сайт, связанный сhttps://contoso.sharepoint.com/teams/hr
 | /sites/contoso.sharepoint.com:/teams/hr:/drive | Доступ к ресурсу [drive](drive.md), заданному по умолчанию.
 
 ## <a name="note-for-existing-sharepoint-developers"></a>Примечание, касающееся разработки решений для SharePoint
@@ -47,8 +110,9 @@ GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id}
 ```
 
 [site]: site.md
+[list]: list.md
 [drive]: drive.md
-[siteCollection]: siteCollection.md
+[siteCollection]: sitecollection.md
 
 <!-- {
   "type": "#page.annotation",

@@ -1,3 +1,13 @@
+---
+title: Тип ресурса ChartTitle
+description: Представляет объект заголовка диаграммы.
+ms.openlocfilehash: 44777d939e67d2e8b5563cf3edb0b5bfddeeef9a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025401"
+---
 # <a name="charttitle-resource-type"></a>Тип ресурса ChartTitle
 
 Представляет объект заголовка диаграммы.
@@ -7,20 +17,20 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
-|[Обновление](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
+|[Получение объекта ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
+|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overlay|boolean|Логическое значение, указывающее, отображается ли заголовок диаграммы поверх нее.|
-|text|string|Представляет текст заголовка диаграммы.|
+|text|строка|Представляет текст заголовка диаграммы.|
 |visible|boolean|Логическое значение, представляющее видимость объекта заголовка диаграммы.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -28,10 +38,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

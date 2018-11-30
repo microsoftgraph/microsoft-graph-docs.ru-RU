@@ -1,14 +1,20 @@
-<a id="plannerexternalreference-resource-type" class="xliff"></a>
-
-# Тип ресурса plannerExternalReference
+---
+title: Тип ресурса plannerExternalReference
+description: Ресурс **plannerExternalReference** представляет метаданные ссылки (вложениях, например файл, URL-адрес). Это значение пары значение свойства в объекте externalReferences.
+ms.openlocfilehash: a9d53b487fd2ca6584af934c55388ee66b2071d2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024800"
+---
+# <a name="plannerexternalreference-resource-type"></a>Тип ресурса plannerExternalReference
 
 Ресурс **plannerExternalReference** представляет метаданные справочных материалов (такие вложения, как файл, URL-адрес). Это значение пар "свойство-значение" в объекте [externalReferences](plannerexternalreferences.md).
 
 
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |alias|String|Псевдоним имени для описания справочных материалов.|
@@ -17,9 +23,7 @@
 |previewPriority|String|Позволяет задать порядок относительного приоритета, согласно которому справочные материалы будут отображаться при предварительном просмотре для задачи.|
 |type|String|Используется для описания типа справочных материалов. Типы: `PowerPoint`, `Word`, `Excel`, `Other`.|
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

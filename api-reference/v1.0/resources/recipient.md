@@ -1,3 +1,13 @@
+---
+title: Тип ресурса recipient
+description: 'Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе. '
+ms.openlocfilehash: 7ae272d239f44c3d2f709a03438facb2f0247e49
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024971"
+---
 # <a name="recipient-resource-type"></a>Тип ресурса recipient
 
 Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе. 

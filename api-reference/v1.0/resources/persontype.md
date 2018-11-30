@@ -1,3 +1,13 @@
+---
+title: тип ресурса personType
+description: Представляет тип пользователя.
+ms.openlocfilehash: 3938be8d1dd0bf4a4934de4bbcd7862185971128
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025194"
+---
 # <a name="persontype-resource-type"></a>тип ресурса personType
 
 Представляет тип пользователя.
@@ -12,7 +22,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.persontype
+  "@odata.type": "microsoft.graph.personType"
 }-->
 
 ```json
@@ -32,7 +42,7 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "persontype resource",
+  "description": "personType resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

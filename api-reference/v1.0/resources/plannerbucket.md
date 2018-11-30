@@ -1,47 +1,48 @@
-<a id="plannerbucket-resource-type" class="xliff"></a>
+---
+title: Тип ресурса plannerBucket
+description: ) для выполнения задач в плане в Office 365. Она содержится в plannerPlan и можно создать свою коллекцию plannerTasks.
+ms.openlocfilehash: 44bce1606fa7561bc52098fe0e6ba8f70d737a58
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025443"
+---
+# <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
-# Тип ресурса plannerBucket
-
-Ресурс **plannerBucket** представляет сегмент (или "специальный столбец") для задач плана в Office 365. Он содержится в объекте [plannerPlan](plannerPlan.md) и может содержать коллекцию объектов [plannerTasks](plannerTask.md).
+Ресурс **plannerBucket** представляет сегмент (или "специальный столбец") для задач плана в Office 365. Он содержится в объекте [plannerPlan](plannerplan.md) и может содержать коллекцию объектов [plannerTasks](plannertask.md).
 
 
 
-<a id="methods" class="xliff"></a>
-
-## Методы
+## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerBucket](../api/plannerbucket_get.md) | [plannerBucket](plannerbucket.md) |Чтение свойств и отношений объекта **plannerBucket**.|
-|[Перечисление объектов plannerTasks](../api/plannerbucket_list_tasks.md) |Коллекция объектов [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[Создание](../api/planner_post_buckets.md) | [plannerBucket](plannerbucket.md)   | Создание объекта **plannerBucket**. |
-|[Обновление](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)   |Обновление объекта **plannerBucket**. |
-|[Удаление](../api/plannerbucket_delete.md) | Нет |Удаление объекта **plannerBucket**. |
+|[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Чтение свойств и отношений объекта **plannerBucket**.|
+|[Перечисление объектов plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция объектов [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
+|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Создание объекта **plannerBucket**. |
+|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Обновление объекта **plannerBucket**. |
+|[Удаление](../api/plannerbucket-delete.md) | Нет |Удаление объекта **plannerBucket**. |
 
-<a id="properties" class="xliff"></a>
-
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор сегмента. Идентификатор состоит из 28 символов и чувствителен к регистру. [Проверка формата](planner_identifiers_disclaimer.md) выполняется для службы.|
+|id|String| Только для чтения. Идентификатор сегмента. Это 28 знаков без учета регистра. [Формат](planner-identifiers-disclaimer.md) проверяются на службу.|
 |name|Строка|Имя сегмента.|
-|orderHint|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Используемый формат описан [здесь](planner_order_hint_format.md).|
+|orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |planId|Строка|Идентификатор плана, к которому относится сегмент.|
 
-<a id="relationships" class="xliff"></a>
-
-## Связи
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускает значение null. Коллекция задач в сегменте.|
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

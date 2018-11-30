@@ -1,8 +1,21 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SpecialFolder
+ms.openlocfilehash: bbf12aa0bf127116fd5f1250717c19f3f053f751
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024359"
+---
 # <a name="specialfolder-resource-type"></a>Тип ресурса SpecialFolder
 
 Ресурс **SpecialFolder** группирует элементы данных, связанные со специальной папкой, в единую структуру.
 
-Если у элемента **DriveItem** имеется аспект **specialFolder**, значение которого отлично от null, то элемент представляет специальную (именованную) папку. Доступ к специальным папкам можно получить через [коллекцию специальных папок](../api/drive_special.md).
+Если у элемента **DriveItem** есть аспект **specialFolder**, значение которого не равно null, то элемент представляет специальную (именованную) папку.
+Прямой доступ к специальным папкам можно получить с помощью [коллекции специальных папок](../api/drive-get-specialfolder.md).
 
 Специальные папки предоставляют простые псевдонимы для доступа к известным папкам, чтобы не нужно было искать папку по пути (что требует локализации) или ссылаться на папку по идентификатору. При переименовании специальной папки или ее перемещении в другое расположение на диске команда с таким синтаксисом будет по-прежнему возвращать эту папку.
 
@@ -47,13 +60,10 @@
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "specialFolder resource",
-  "keywords": "",
+  "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
+  "keywords": "special folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SpecialFolder"
+} -->
