@@ -1,16 +1,33 @@
-# <a name="resource-resource-type"></a>Тип ресурса resource
+---
+title: Тип ресурса OneNoteResource
+description: 'Ресурс изображения или другого файла на странице OneNote. '
+ms.openlocfilehash: a5be2602e2a015b278ed7c3e01c573a543c7c6a1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026004"
+---
+# <a name="onenoteresource-resource-type"></a>Тип ресурса OneNoteResource
 
 Ресурс изображения или другого файла на странице OneNote. 
 
 Вы можете получить двоичные данные ресурса, но получение представления объекта resource или коллекции resource в формате JSON не поддерживается.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.onenoteEntityBaseModel",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "contentUrl": "string (url)"
+}
+```
 
 Чтобы получить двоичные данные определенного ресурса, отправьте запрос GET в конечную точку `content` ресурса:
 
@@ -43,7 +60,11 @@ GET ../onenote/pages/{id}/content
 ```
 
 ## <a name="properties"></a>Свойства
-Нет
+
+| Свойство             | Тип            | Описание
+|:---------------------|:----------------|:---------------------------------
+| content              | Stream          | Поток содержимого
+| contentUrl           | String (URL-адрес)    | URL-адрес загрузки содержимого
 
 ## <a name="relationships"></a>Связи
 Нет.
@@ -52,8 +73,7 @@ GET ../onenote/pages/{id}/content
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получения двоичных данных ресурса](../api/resource_get.md) | Stream |Получение двоичных данных ресурса файла или изображения.|
-
+|[Получения двоичных данных ресурса](../api/resource-get.md) | Stream |Получение двоичных данных ресурса файла или изображения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

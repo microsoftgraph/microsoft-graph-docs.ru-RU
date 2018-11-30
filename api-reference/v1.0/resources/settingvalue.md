@@ -1,3 +1,13 @@
+---
+title: Тип ресурса settingValue
+description: Параметр, представленный парой "имя-значение".
+ms.openlocfilehash: b47c5c746117390cfd59db71d832928e482403b9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028479"
+---
 # <a name="settingvalue-resource-type"></a>Тип ресурса settingValue
 
 Параметр, представленный парой "имя-значение".

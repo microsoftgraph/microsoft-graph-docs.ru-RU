@@ -1,3 +1,13 @@
+---
+title: Тип ресурса attachment
+description: Связанное содержимое можно добавить на событие
+ms.openlocfilehash: 418d8d4e60d12fed5a54f994e14e996c65731926
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026397"
+---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
 Вы можете добавить связанное содержимое в экземпляр [event](../resources/event.md), [message](../resources/message.md) или [post](../resources/post.md) в форме вложения.
@@ -6,7 +16,7 @@
 
 * файл (ресурс [fileAttachment](../resources/fileattachment.md));
 * элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));
-* ссылка на файл (ресурс [referenceAttachment](../resources/referenceAttachment.md)).
+* ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).
 
 
 ## <a name="methods"></a>Методы
@@ -15,18 +25,18 @@
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение вложения](../api/attachment_get.md) | [attachment](attachment.md) |Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к сообщению, записи или данным о событии.|
-|[Добавление вложения к данным о событии](../api/event_post_attachments.md) | [attachment](attachment.md) |Добавление для события файла, элемента или ссылки в качестве вложения.|
-|[Добавление вложения в сообщение](../api/message_post_attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения.|
-|[Добавление вложения в запись](../api/post_post_attachments.md) | [attachment](attachment.md) |Добавление в запись файла, элемента или ссылки в качестве вложения.|
-|[Список вложений для события](../api/event_list_attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для события. |
-|[Список вложений для сообщения](../api/message_list_attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для сообщения. |
-|[Список вложений для записи](../api/post_list_attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для записи. |
-|[Удаление](../api/attachment_delete.md) | Нет |Удаление объекта, представляющего вложение, которое было добавлено к сообщению, записи или данным о событии. |
+|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к сообщению, записи или данным о событии.|
+|[Добавление вложения к данным о событии](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление для события файла, элемента или ссылки в качестве вложения.|
+|[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения.|
+|[Добавление вложения в запись](../api/post-post-attachments.md) | [attachment](attachment.md) |Добавление в запись файла, элемента или ссылки в качестве вложения.|
+|[Список вложений для события](../api/event-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для события. |
+|[Список вложений для сообщения](../api/message-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для сообщения. |
+|[Список вложений для записи](../api/post-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для записи. |
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта, представляющего вложение, которое было добавлено к сообщению, записи или данным о событии. |
 
 ## <a name="properties"></a>Свойства
 
-Ниже перечислены базовые свойства любого ресурса attachment. Чтобы просмотреть дополнительные свойства, откройте статью о конкретном типе вложения ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) или [referenceAttachment](../resources/referenceAttachment.md)).
+Ниже перечислены базовые свойства любого ресурса attachment. Чтобы просмотреть дополнительные свойства, откройте статью о конкретном типе вложения ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) или [referenceAttachment](../resources/referenceattachment.md)).
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -46,6 +56,8 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

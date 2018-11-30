@@ -1,12 +1,22 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Shared
+ms.openlocfilehash: 0a94a1d5ddf671151cf786d9ff93ae4f9e012a7b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026501"
+---
 # <a name="shared-resource-type"></a>Тип ресурса Shared
 
 Ресурс **Shared** указывает, что к элементу DriveItem был предоставлен доступ другим пользователям. Ресурс содержит сведения о способе предоставления совместного доступа к элементу.
 
 Если у элемента [**Driveitem**](driveitem.md) есть аспект **shared**, имеющий значение, отличное от null, это значит, что к элементу предоставлен общий доступ.
 
-## <a name="json-representation"></a>Представление JSON
-
-Ниже показано представление JSON ресурса.
+## <a name="json-representation"></a>Представление в формате JSON
 
 <!-- {
   "blockType": "resource",
@@ -16,8 +26,8 @@
 
 ```json
 {
-  "owner": {"@odata.type": "microsoft.graph.identitySet"},
-  "scope": "public | organization | users",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "scope": "anonymous | organization | users",
   "sharedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "sharedDateTime": "datetime"
 }
@@ -25,31 +35,33 @@
 
 ## <a name="properties"></a>Свойства
 
-| Свойство       | Тип                          | Описание                                                                                        |
-| :------------- | :---------------------------- | :------------------------------------------------------------------------------------------------- |
-| owner          | [IdentitySet](identityset.md) | Удостоверение владельца общего элемента. Только для чтения.                                           |
-| область          | Строка                        | Указывает область, в рамках которой предоставлен доступ к общему элементу: `anonymous`, `organization` или `users`. Только для чтения. |
-| sharedBy       | [identitySet](identityset.md) | Удостоверение пользователя, предоставившего общий доступ к элементу. Только для чтения.                                           |
-| sharedDateTime | DateTimeOffset                | Дата и время предоставления общего доступа к элементу в формате UTC. Только для чтения.                                         |
+| Свойство       | Тип                          | Описание
+| :------------- |:------------------------------|:----------------------------
+| owner          | [IdentitySet](identityset.md) | Удостоверение владельца общего элемента. Только для чтения.
+| scope          | Строка                        | Указывает область, в рамках которой предоставлен доступ к общему элементу: `anonymous`, `organization` или `users`. Только для чтения.
+| sharedBy       | [identitySet](identityset.md) | Удостоверение пользователя, предоставившего общий доступ к элементу. Только для чтения.
+| sharedDateTime | DateTimeOffset                | Дата и время предоставления общего доступа к элементу в формате UTC. Только для чтения.
 
-## <a name="scope-values"></a>Значения scope
+## <a name="scope-options"></a>Параметры области
 
-| Значение        | Описание                                                                           |
-|:-------------|:--------------------------------------------------------------------------------------|
-| public       | Доступ к элементу предоставляется с помощью ссылки. Любой пользователь, у которого есть такая ссылка, может получить доступ к элементу.               |
-| organization | Доступ к элементу предоставляется с помощью ссылки. Любой пользователь в организации владельца элемента, имеющий такую ссылку, может получить доступ к элементу. |
-| users        | Доступ к элементу предоставлен только определенным пользователям.                                          |
+| Значение          | Описание                                                                           |
+|:---------------|:--------------------------------------------------------------------------------------|
+| `anonymous`    | Доступ к элементу предоставляется с помощью ссылки. Любой пользователь, у которого есть такая ссылка, может получить доступ к элементу.               |
+| `organization` | Доступ к элементу предоставляется с помощью ссылки. Любой пользователь в организации владельца элемента, располагающий такой ссылкой, может получить доступ к элементу. |
+| `users`        | Доступ к элементу предоставляется только определенным пользователям.                                          |
 
 ## <a name="remarks"></a>Заметки
 
 Дополнительные сведения об аспектах ресурса **driveItem** см. в описании типа [**driveItem**](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "shared resource",
-  "keywords": "",
+  "description": "The shared facet provides info about shared items.",
+  "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/shared.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization,users) are in resource, but () are in table"
+  ],
+  "tocPath": "Facets/Shared"
+} -->

@@ -1,10 +1,20 @@
+---
+title: Тип ресурса physicalAddress
+description: Представляет почтовый адрес ресурса, например контакта или события.
+ms.openlocfilehash: eb2c1ea6a73d7f6eb5d3d43b877f50dc39a2b17e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026279"
+---
 # <a name="physicaladdress-resource-type"></a>Тип ресурса physicalAddress
 
 Представляет почтовый адрес ресурса, например контакта или события.
 
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |city|String|Город.|
 |countryOrRegion|String|Страна или регион. Это строковое значение в произвольном формате, например "США".|

@@ -1,3 +1,13 @@
+---
+title: Тип ресурса sectionGroup
+description: Группа разделов в записной книжке OneNote. Группы разделов могут содержать разделы и группы разделов.
+ms.openlocfilehash: 4714d0d163e9ddd01373f50bf38fa0971da0609b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026856"
+---
 # <a name="sectiongroup-resource-type"></a>Тип ресурса sectionGroup
 
 Группа разделов в записной книжке OneNote. Группы разделов могут содержать разделы и группы разделов.
@@ -8,13 +18,14 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "parentNotebook",
     "parentSectionGroup",
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -50,17 +61,17 @@
 |parentNotebook|[Notebook](notebook.md)|Записная книжка, содержащая группу разделов. Только для чтения.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|Группа разделов, содержащая группу разделов. Только для чтения.|
 |sectionGroups|Коллекция объектов [SectionGroup](sectiongroup.md)|Группы разделов в разделе. Только для чтения. Допускает значение null.|
-|sections|Коллекция объектов [Section](section.md)|Разделы в группе разделов. Только для чтения. Допускается значение null.|
+|sections|[OnenoteSection](section.md) коллекции|Разделы в группе разделов. Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение группы разделов](../api/sectiongroup_get.md) | [SectionGroup](sectiongroup.md) |Чтение свойств и отношений группы разделов.|
-|[Создание группы разделов](../api/sectiongroup_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Создайте группу разделов, отправив запрос POST в коллекцию sectionGroups в указанной группе разделов.|
-|[Перечисление групп разделов](../api/sectiongroup_list_sectiongroups.md) |Коллекция объектов [SectionGroup](sectiongroup.md)| Получение коллекции групп разделов в указанной группе разделов.|
-|[Создание раздела](../api/sectiongroup_post_sections.md) |[Section](section.md)| Создайте раздел, отправив запрос POST в коллекцию sections в указанной группе разделов.|
-|[Перечисление разделов](../api/sectiongroup_list_sections.md) |Коллекция объектов [Section](section.md)| Получение коллекции разделов в указанной группе разделов.|
+|[Получение группы разделов](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |Чтение свойств и отношений группы разделов.|
+|[Создание группы разделов](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Создайте группу разделов, отправив запрос POST в коллекцию sectionGroups в указанной группе разделов.|
+|[Перечисление групп разделов](../api/sectiongroup-list-sectiongroups.md) |Коллекция объектов [SectionGroup](sectiongroup.md)| Получение коллекции групп разделов в указанной группе разделов.|
+|[Создание раздела](../api/sectiongroup-post-sections.md) |[OnenoteSection](section.md)| Создайте раздел, отправив запрос POST в коллекцию sections в указанной группе разделов.|
+|[Перечисление разделов](../api/sectiongroup-list-sections.md) |[OnenoteSection](section.md) коллекции| Получение коллекции разделов в указанной группе разделов.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
