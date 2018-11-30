@@ -1,0 +1,83 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Отмена доступа к элементу
+ms.openlocfilehash: 726818b14a694380e46bfd38280e4cba9effb67d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27079975"
+---
+# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a><span data-ttu-id="adbbd-102">Удаление разрешения на общий доступ для файла или папки</span><span class="sxs-lookup"><span data-stu-id="adbbd-102">Delete a sharing permission from a file or folder</span></span>
+
+> <span data-ttu-id="adbbd-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="adbbd-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="adbbd-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="adbbd-104">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="adbbd-105">В этой статье рассказывается, как отменить доступ к ресурсу [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="adbbd-105">Remove access to a [DriveItem](../resources/driveitem.md).</span></span>
+
+<span data-ttu-id="adbbd-106">Вы можете удалить только те разрешения на общий доступ, которые **не** были унаследованы.</span><span class="sxs-lookup"><span data-stu-id="adbbd-106">Only sharing permissions that are **not** inherited can be deleted.</span></span>
+<span data-ttu-id="adbbd-107">Свойство **inheritedFrom** должно иметь значение `null`.</span><span class="sxs-lookup"><span data-stu-id="adbbd-107">The **inheritedFrom** property must be `null`.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="adbbd-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="adbbd-108">Permissions</span></span>
+<span data-ttu-id="adbbd-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="adbbd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="adbbd-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="adbbd-111">Permission type</span></span>      | <span data-ttu-id="adbbd-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="adbbd-112">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="adbbd-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="adbbd-113">Delegated (work or school account)</span></span> | <span data-ttu-id="adbbd-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="adbbd-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="adbbd-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="adbbd-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="adbbd-116">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="adbbd-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="adbbd-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="adbbd-117">Application</span></span> | <span data-ttu-id="adbbd-118">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="adbbd-118">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="adbbd-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="adbbd-119">HTTP request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
+DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
+DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
+```
+
+## <a name="optional-request-headers"></a><span data-ttu-id="adbbd-120">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="adbbd-120">Optional request headers</span></span>
+
+| <span data-ttu-id="adbbd-121">Имя</span><span class="sxs-lookup"><span data-stu-id="adbbd-121">Name</span></span>          | <span data-ttu-id="adbbd-122">Тип</span><span class="sxs-lookup"><span data-stu-id="adbbd-122">Type</span></span>   | <span data-ttu-id="adbbd-123">Описание</span><span class="sxs-lookup"><span data-stu-id="adbbd-123">Description</span></span>                                                                                                                                                                                       |
+|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="adbbd-124">if-match</span><span class="sxs-lookup"><span data-stu-id="adbbd-124">if-match</span></span>      | <span data-ttu-id="adbbd-125">string</span><span class="sxs-lookup"><span data-stu-id="adbbd-125">string</span></span> | <span data-ttu-id="adbbd-126">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.</span><span class="sxs-lookup"><span data-stu-id="adbbd-126">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+
+
+## <a name="response"></a><span data-ttu-id="adbbd-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="adbbd-127">Response</span></span>
+
+<span data-ttu-id="adbbd-128">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="adbbd-128">If successful, this method returns `204 No Content` response code.</span></span>
+
+## <a name="example"></a><span data-ttu-id="adbbd-129">Пример</span><span class="sxs-lookup"><span data-stu-id="adbbd-129">Example</span></span>
+
+<span data-ttu-id="adbbd-130">В этом примере показано, как удалить разрешение, идентифицированное как {perm-id} из элемента {item-id} в хранилище OneDrive текущего пользователя.</span><span class="sxs-lookup"><span data-stu-id="adbbd-130">This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.</span></span>
+
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
+
+```http
+DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permissions/{perm-id}
+```
+
+### <a name="response"></a><span data-ttu-id="adbbd-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="adbbd-131">Response</span></span>
+
+<!-- { "blockType": "response", "truncated": false } -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+## <a name="remarks"></a><span data-ttu-id="adbbd-132">Примечания</span><span class="sxs-lookup"><span data-stu-id="adbbd-132">Remarks</span></span>
+
+* <span data-ttu-id="adbbd-133">[Диски](../resources/drive.md), у которых для свойства **driveType** задано значение `personal` (личное хранилище OneDrive), не могут создавать и изменять разрешения в корневом ресурсе DriveItem.</span><span class="sxs-lookup"><span data-stu-id="adbbd-133">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Remove an item's sharing permissions",
+  "keywords": "permission, permissions, sharing, remove permissions, delete permissions",
+  "section": "documentation",
+  "tocPath": "OneDrive/Item/Delete permission"
+}-->

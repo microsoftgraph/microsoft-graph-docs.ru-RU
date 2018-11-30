@@ -1,20 +1,26 @@
-<a id="plannerexternalreferences-resource-type" class="xliff"></a>
+---
+title: Тип ресурса plannerExternalReferences
+description: Ресурс **plannerExternalReferences** представляет коллекцию справочных материалов для задачи. Это открытый тип. Он является частью объекта сведений о задаче. Значение в паре "свойство-значение" представляет собой объект externalReference.
+ms.openlocfilehash: cfd50c11956e421bd54bf29ad68a9c258f69cf20
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27078095"
+---
+# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="46d7a-106">Тип ресурса plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="46d7a-106">plannerExternalReferences resource type</span></span>
 
-# Тип ресурса plannerExternalReferences
+> <span data-ttu-id="46d7a-107">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="46d7a-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="46d7a-108">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="46d7a-108">Use of these APIs in production applications is not supported.</span></span>
 
-Ресурс **plannerExternalReferences** представляет коллекцию справочных материалов для задачи. Это открытый тип. Он является частью объекта [сведений о задаче](plannertaskdetails.md). Значение в паре "свойство-значение" представляет собой объект [externalReference](plannerexternalreference.md).
+<span data-ttu-id="46d7a-p103">Ресурс **plannerExternalReferences** представляет коллекцию справочных материалов для задачи. Это открытый тип. Он является частью объекта [сведений о задаче](plannertaskdetails.md). Значение в паре "свойство-значение" представляет собой объект [externalReference](plannerexternalreference.md).</span><span class="sxs-lookup"><span data-stu-id="46d7a-p103">The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
 
 
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a><span data-ttu-id="46d7a-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="46d7a-113">Properties</span></span>
+<span data-ttu-id="46d7a-p104">Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить **допустимые URL-адреса** на базе протоколов **HTTP/HTTPS** в качестве свойств с объектами [externalReference](plannerexternalreference.md) в качестве значений. Согласно OData имена свойств в открытых типах не могут содержать символы `.`, `:` и `%`, поэтому их нужно зашифровать. Ниже показан пример. Чтобы удалить определенные справочные материалы, задайте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="46d7a-p104">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
 
-## Свойства
-Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить **допустимые URL-адреса** на базе протоколов **HTTP/HTTPS** в качестве свойств с объектами [externalReference](plannerexternalreference.md) в качестве значений. Согласно OData имена свойств в открытых типах не могут содержать символы `.`, `:` и `%`, поэтому их нужно зашифровать. Ниже показан пример. Чтобы удалить определенные справочные материалы, задайте свойству значение `null`.
+## <a name="json-representation"></a><span data-ttu-id="46d7a-119">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="46d7a-119">JSON representation</span></span>
 
-<a id="json-representation" class="xliff"></a>
-
-## Представление в формате JSON
-
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="46d7a-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="46d7a-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,7 +44,7 @@
 }
 ```
 
-Пример:
+<span data-ttu-id="46d7a-121">Пример:</span><span class="sxs-lookup"><span data-stu-id="46d7a-121">// Example</span></span>
 
 ```json
 {
