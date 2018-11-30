@@ -1,0 +1,40 @@
+---
+title: Тип ресурса mobileAppAssignmentSettings
+description: Абстрактный класс, содержащий свойства, которые используются при назначении мобильного приложения группе.
+ms.openlocfilehash: 8514b57055b266f6ba76e43d5229e0a843eb8b1d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27075103"
+---
+# <a name="mobileappassignmentsettings-resource-type"></a>Тип ресурса mobileAppAssignmentSettings
+
+> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Абстрактный класс, содержащий свойства, которые используются при назначении мобильного приложения группе.
+## <a name="properties"></a>Свойства
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+
+## <a name="relationships"></a>Связи
+Нет
+## <a name="json-representation"></a>Представление JSON
+Ниже представлено описание ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
+}
+```
+
+
+
+
+

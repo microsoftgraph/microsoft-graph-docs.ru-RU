@@ -1,8 +1,22 @@
-# <a name="deleted-resource-type"></a>Тип ресурса Deleted
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Deleted
+ms.openlocfilehash: 5a0dd4132f39574f0af04282bd3f39bfd303eef1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27076462"
+---
+# <a name="deleted-facet"></a>Аспект Deleted
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Тип ресурса **Deleted** указывает, что элемент был удален. В этой версии API наличие ненулевого значения ресурса указывает, что файл был удален. Нулевое (или отсутствующее) значение указывает, что файл не удален.
 
-Дополнительные сведения о записи исправлений и поиске удаленных элементов см. в статье [Просмотр изменений элемента](../api/item_delta.md).
+Дополнительные сведения об отслеживании изменений и поиске удаленных элементов см. в статье о том, как [просматривать изменения в элементах](../api/driveitem-delta.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -20,7 +34,6 @@
   "state": "string"
 }
 ```
-
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип   | Описание                               |
@@ -36,8 +49,8 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deleted resource",
-  "keywords": "",
+  "description": "The deleted facet providers properties about deleted items",
+  "keywords": "deleted,delete,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Deleted"
+} -->

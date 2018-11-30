@@ -1,6 +1,20 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: sharedDriveItem
+ms.openlocfilehash: 44d8a7c2bab9f19ff7b7680aea2e2a88fc2ef245
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27074870"
+---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
 
-Ресурс **sharedDriveItem** возвращается, если для доступа к общему элементу [driveItem](driveitem.md) используется API [Shares](../api/shares_get.md).
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Ресурс **sharedDriveItem** возвращается, если для доступа к общему элементу [driveItem](driveitem.md) используется API [Shares](../api/shares-get.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -10,21 +24,24 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
 
 ```json
 {
-    "id": "string",
-    "name": "string",
-    "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "id": "string",
+  "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-    /* relationships*/
-    "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-    "root": { "@odata.type": "microsoft.graph.driveItem" },
-    "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-    "site": { "@odata.type": "microsoft.graph.site" }
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "list": { "@odata.type": "microsoft.graph.list" },
+  "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "permission": { "@odata.type": "microsoft.graph.permission" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
 
@@ -38,29 +55,41 @@
 
 ## <a name="relationships"></a>Связи
 
-| Связь | Тип                                  | Описание                                                                                                                                                                                                |
-| :----------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| элементы        | Коллекция ([DriveItem](driveitem.md)) | Коллекция общих ресурсов **driveItem**. Эту коллекцию невозможно перечислить, но вы можете получить доступ к элементам по их уникальным идентификаторам.                                                                        |
-| root         | [DriveItem](driveitem.md)             | Общий элемент **driveItem** верхнего уровня. Если предоставлен общий доступ к одному файлу, этот элемент будет файлом. Если предоставлен общий доступ к папке, этот элемент будет папкой. Определить, какой вариант используется, можно с помощью аспектов элемента. |
-| driveItem    | [driveItem](driveitem.md)             | Элемент **driveItem** для ресурса, к которому предоставлен общий доступ.  Совпадает со свойством **root**.                                                                                                             |
-| site         | [site](site.md)                       | Ресурс **site** с элементом, к которому предоставлен общий доступ.                                                                                                                                                |
+| Имя связи | Тип                | Описание
+| ------------------|:--------------------|:-----------------------------------
+| **driveItem**     | [**driveItem**][driveItem] | Используется для доступа к базовому объекту **driveItem**
+| **list**          | [**list**][list]           | Используется для доступа к базовому объекту **list**
+| **listItem**      | [**listItem**][listItem]   | Используется для доступа к базовому объекту **listItem**
+| **permission**    | [**разрешение**][permission] | Используется для доступа к **разрешений** , представляющий базовый ссылку, общего доступа
+| **site**          | [**site**][site]           | Используется для доступа к базовому объекту **site**
+
+Кроме того, для объектов **driveItem**, к которым предоставлен доступ в личных учетных записях OneDrive, можно использовать указанные ниже связи.
+
+| Имя связи | Тип                         | Описание
+| ------------------|:-----------------------------|:-----------------------------------
+| **items**         | Коллекция объектов [**driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Перечисление этой коллекции не поддерживается.
+| **driveItem**     | [**driveItem**][driveItem]            | Используется для доступа к базовому объекту **driveItem**
+
+[driveItem]: driveitem.md
+[list]: list.md
+[listItem]: listitem.md
+[permission]: permission.md
+[site]: site.md
 
 ## <a name="methods"></a>Методы
 
 | Метод                                  | Путь REST                |
 | :-------------------------------------- | :----------------------- |
-| [Получение общего элемента](../api/shares_get.md) | `GET /shares/{share-id}` |
+| [Получение общего элемента](../api/shares-get.md) | `GET /shares/{share-id}` |
 
 ## <a name="remarks"></a>Заметки
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "Share resource returns information about a shared item or collection of items.",
+  "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Share"
+} -->

@@ -1,21 +1,34 @@
+---
+title: Тип ресурса conversation
+description: Беседа — коллекция цепочек, содержащих записи. Все цепочки и записи в беседе имеют одинаковую тему.
+ms.openlocfilehash: 8a4a83fdc109eb047a22afbd3b15ad2d575f0795
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27075113"
+---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
 Беседа — коллекция [цепочек](conversationthread.md), содержащих записи. Все цепочки и записи в беседе имеют одинаковую тему.
+
+Этот ресурс поддерживает подписки на [уведомления об изменении](/graph/webhooks).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список бесед](../api/group_list_conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
-|[Создание](../api/group_post_conversations.md) |[conversation](conversation.md)| Создание беседы путем включения цепочки и записи.|
-|[Получение беседы](../api/conversation_get.md) | [conversation](conversation.md) |Считывание свойств и отношений объекта conversation.|
-|[Удаление](../api/conversation_delete.md) | Нет |Удаление объекта conversation. |
-|[Список цепочек беседы](../api/conversation_list_threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек в групповой беседе.|
-|[Создание цепочки беседы](../api/conversation_post_threads.md) |Коллекция [conversationThread](conversationthread.md)| Создание цепочки в указанной беседе.|
-
+|[Список бесед](../api/group-list-conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
+|[Создание](../api/group-post-conversations.md) |[conversation](conversation.md)| Создание беседы путем включения цепочки и записи.|
+|[Получение беседы](../api/conversation-get.md) | [conversation](conversation.md) |Считывание свойств и отношений объекта conversation.|
+|[Удаление](../api/conversation-delete.md) | Нет |Удаление объекта conversation. |
+|[Список цепочек беседы](../api/conversation-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек в групповой беседе.|
+|[Создание цепочки беседы](../api/conversation-post-threads.md) |Коллекция [conversationThread](conversationthread.md)| Создание цепочки в указанной беседе.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Указывает, содержит ли какая-либо запись в этой беседе хотя бы одно вложение.|
 |id|String|Уникальный идентификатор беседы. Только для чтения.|
@@ -25,10 +38,9 @@
 |uniqueSenders|Коллекция String|Все пользователи, которые отправили сообщение в эту беседу.|
 
 ## <a name="relationships"></a>Отношения
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |threads|Коллекция [conversationThread](conversationthread.md)|Коллекция всех цепочек в беседе. Свойство навигации. Только для чтения. Допускается значение null.|
-
 
 ## <a name="json-representation"></a>Представление JSON
 

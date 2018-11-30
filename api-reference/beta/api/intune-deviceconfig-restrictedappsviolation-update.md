@@ -1,0 +1,123 @@
+---
+title: Обновление restrictedAppsViolation
+description: Обновление свойства объекта restrictedAppsViolation.
+ms.openlocfilehash: ad6fcfd8571890a06877f503520533f2907fd3cb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27074863"
+---
+# <a name="update-restrictedappsviolation"></a>Обновление restrictedAppsViolation
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Обновление свойства объекта [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) .
+## <a name="prerequisites"></a>Необходимые компоненты
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedAppsViolationId}
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Заголовок|Значение|
+|:---|:---|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
+
+## <a name="request-body"></a>Текст запроса
+В тексте запроса укажите представление JSON для объекта [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) .
+
+В следующей таблице показаны свойства, которые необходимы для создания [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md).
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|String|Уникальный идентификатор для объекта. Состоит из accountId, deviceId, policyId и идентификатор пользователя|
+|userId|String|Уникальный идентификатор пользователя, должен быть идентификатор Guid|
+|userName|String|Имя пользователя|
+|managedDeviceId|String|Уникальный идентификатор управляемого устройства, должен быть идентификатор Guid|
+|deviceName|String|Имя устройства|
+|deviceConfigurationId|String|Конфигурация профиля уникальный идентификатор устройства, должен быть идентификатор Guid|
+|deviceConfigurationName|String|Имя профиля конфигурации устройства|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
+|restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) коллекции|Список нарушенных ограниченных приложений|
+
+
+
+## <a name="response"></a>Ответ
+Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) объекта в теле ответа.
+
+## <a name="example"></a>Пример
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedAppsViolationId}
+Content-type: application/json
+Content-length: 502
+
+{
+  "userId": "User Id value",
+  "userName": "User Name value",
+  "managedDeviceId": "Managed Device Id value",
+  "deviceName": "Device Name value",
+  "deviceConfigurationId": "Device Configuration Id value",
+  "deviceConfigurationName": "Device Configuration Name value",
+  "platformType": "androidForWork",
+  "restrictedAppsState": "notApprovedApps",
+  "restrictedApps": [
+    {
+      "@odata.type": "microsoft.graph.managedDeviceReportedApp",
+      "appId": "App Id value"
+    }
+  ]
+}
+```
+
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 613
+
+{
+  "@odata.type": "#microsoft.graph.restrictedAppsViolation",
+  "id": "53f99903-9903-53f9-0399-f9530399f953",
+  "userId": "User Id value",
+  "userName": "User Name value",
+  "managedDeviceId": "Managed Device Id value",
+  "deviceName": "Device Name value",
+  "deviceConfigurationId": "Device Configuration Id value",
+  "deviceConfigurationName": "Device Configuration Name value",
+  "platformType": "androidForWork",
+  "restrictedAppsState": "notApprovedApps",
+  "restrictedApps": [
+    {
+      "@odata.type": "microsoft.graph.managedDeviceReportedApp",
+      "appId": "App Id value"
+    }
+  ]
+}
+```
+
+
+
+
+
