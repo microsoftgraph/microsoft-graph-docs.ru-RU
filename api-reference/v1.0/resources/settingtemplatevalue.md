@@ -1,19 +1,29 @@
-# <a name="settingtemplatevalue-resource-type"></a><span data-ttu-id="af0c9-101">Тип ресурса settingTemplateValue</span><span class="sxs-lookup"><span data-stu-id="af0c9-101">settingTemplateValue resource type</span></span>
+---
+title: Тип ресурса settingTemplateValue
+description: Представляет определение отдельного параметра шаблона, включая значение по умолчанию для этого параметра, если экземпляр этого параметра не создан.
+ms.openlocfilehash: 00e424e36338855d8ef603d06c7a9ee52a99c621
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027886"
+---
+# <a name="settingtemplatevalue-resource-type"></a><span data-ttu-id="78fce-103">Тип ресурса settingTemplateValue</span><span class="sxs-lookup"><span data-stu-id="78fce-103">settingTemplateValue resource type</span></span>
 
-<span data-ttu-id="af0c9-102">Представляет определение отдельного параметра шаблона, включая значение по умолчанию для этого параметра, если экземпляр этого параметра не создан.</span><span class="sxs-lookup"><span data-stu-id="af0c9-102">Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.</span></span>
+<span data-ttu-id="78fce-104">Представляет определение отдельного параметра шаблона, включая значение по умолчанию для этого параметра, если экземпляр этого параметра не создан.</span><span class="sxs-lookup"><span data-stu-id="78fce-104">Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.</span></span>
 
-### <a name="properties"></a><span data-ttu-id="af0c9-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="af0c9-103">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="78fce-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="78fce-105">Properties</span></span>
 
-| <span data-ttu-id="af0c9-104">Свойство</span><span class="sxs-lookup"><span data-stu-id="af0c9-104">Property</span></span> | <span data-ttu-id="af0c9-105">Тип</span><span class="sxs-lookup"><span data-stu-id="af0c9-105">Type</span></span> | <span data-ttu-id="af0c9-106">Описание</span><span class="sxs-lookup"><span data-stu-id="af0c9-106">Description</span></span> |
+| <span data-ttu-id="78fce-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="78fce-106">Property</span></span> | <span data-ttu-id="78fce-107">Тип</span><span class="sxs-lookup"><span data-stu-id="78fce-107">Type</span></span> | <span data-ttu-id="78fce-108">Описание</span><span class="sxs-lookup"><span data-stu-id="78fce-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="af0c9-107">defaultValue</span><span class="sxs-lookup"><span data-stu-id="af0c9-107">DefaultValue</span></span>|<span data-ttu-id="af0c9-108">String</span><span class="sxs-lookup"><span data-stu-id="af0c9-108">String</span></span>| <span data-ttu-id="af0c9-109">Значение по умолчанию для параметра.</span><span class="sxs-lookup"><span data-stu-id="af0c9-109">Default value for the setting.</span></span> |
-|<span data-ttu-id="af0c9-110">description</span><span class="sxs-lookup"><span data-stu-id="af0c9-110">description</span></span>|<span data-ttu-id="af0c9-111">String</span><span class="sxs-lookup"><span data-stu-id="af0c9-111">String</span></span>| <span data-ttu-id="af0c9-112">Описание параметра.</span><span class="sxs-lookup"><span data-stu-id="af0c9-112">Description of the component.</span></span> |
-|<span data-ttu-id="af0c9-113">name</span><span class="sxs-lookup"><span data-stu-id="af0c9-113">name</span></span>|<span data-ttu-id="af0c9-114">String</span><span class="sxs-lookup"><span data-stu-id="af0c9-114">String</span></span>| <span data-ttu-id="af0c9-115">Имя параметра.</span><span class="sxs-lookup"><span data-stu-id="af0c9-115">Name of the setting.</span></span> |
-|<span data-ttu-id="af0c9-116">type</span><span class="sxs-lookup"><span data-stu-id="af0c9-116">type</span></span>|<span data-ttu-id="af0c9-117">String</span><span class="sxs-lookup"><span data-stu-id="af0c9-117">String</span></span>| <span data-ttu-id="af0c9-118">Тип параметра.</span><span class="sxs-lookup"><span data-stu-id="af0c9-118">Key of the setting.</span></span> |
+|<span data-ttu-id="78fce-109">defaultValue</span><span class="sxs-lookup"><span data-stu-id="78fce-109">defaultValue</span></span>|<span data-ttu-id="78fce-110">String</span><span class="sxs-lookup"><span data-stu-id="78fce-110">String</span></span>| <span data-ttu-id="78fce-111">Значение по умолчанию для параметра.</span><span class="sxs-lookup"><span data-stu-id="78fce-111">Default value for the setting.</span></span> |
+|<span data-ttu-id="78fce-112">описание</span><span class="sxs-lookup"><span data-stu-id="78fce-112">description</span></span>|<span data-ttu-id="78fce-113">String</span><span class="sxs-lookup"><span data-stu-id="78fce-113">String</span></span>| <span data-ttu-id="78fce-114">Описание параметра.</span><span class="sxs-lookup"><span data-stu-id="78fce-114">Description of the setting.</span></span> |
+|<span data-ttu-id="78fce-115">name</span><span class="sxs-lookup"><span data-stu-id="78fce-115">name</span></span>|<span data-ttu-id="78fce-116">String</span><span class="sxs-lookup"><span data-stu-id="78fce-116">String</span></span>| <span data-ttu-id="78fce-117">Имя параметра.</span><span class="sxs-lookup"><span data-stu-id="78fce-117">Name of the setting.</span></span> |
+|<span data-ttu-id="78fce-118">type</span><span class="sxs-lookup"><span data-stu-id="78fce-118">type</span></span>|<span data-ttu-id="78fce-119">String</span><span class="sxs-lookup"><span data-stu-id="78fce-119">String</span></span>| <span data-ttu-id="78fce-120">Тип параметра.</span><span class="sxs-lookup"><span data-stu-id="78fce-120">Type of the setting.</span></span> |
 
-### <a name="json-representation"></a><span data-ttu-id="af0c9-119">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="af0c9-119">JSON representation</span></span>
+### <a name="json-representation"></a><span data-ttu-id="78fce-121">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="78fce-121">JSON representation</span></span>
 
-<span data-ttu-id="af0c9-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="af0c9-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="78fce-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="78fce-122">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
