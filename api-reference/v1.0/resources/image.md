@@ -1,23 +1,28 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Image
+ms.openlocfilehash: 3652eeb71f6a73fe0089dafc9908cc8b3451aa34
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027844"
+---
 # <a name="image-resource-type"></a>Тип ресурса Image
 
 Ресурс **Image** — это единая структура, объединяющая свойства, связанные с изображением. Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **image**, то этот ресурс представляет точечный рисунок.
 
 **Примечание.** Если службе не удается определить ширину и высоту изображения, ресурс **Image** может быть пустым.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
-Ниже представлено описание ресурса в формате JSON.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.image"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
 ```json
 {
-  "height": 1024,
-  "width": 1024
+  "width": 100,
+  "height": 200
 }
 ```
 
@@ -30,17 +35,15 @@
 
 ## <a name="remarks"></a>Заметки
 
-В OneDrive для бизнеса этот ресурс возвращается для элементов, которые должны быть изображениями в соответствии с расширением файла. В OneDrive для бизнеса этот ресурс не возвращает свойств.
+В OneDrive для бизнеса этот ресурс возвращается для элементов, которые должны быть изображениями в соответствии с расширением файла.
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "image resource",
-  "keywords": "",
+  "description": "The image facet describes properties of an image like width and height",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Image"
+} -->

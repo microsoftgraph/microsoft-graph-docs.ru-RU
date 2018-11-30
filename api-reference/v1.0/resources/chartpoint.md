@@ -1,3 +1,13 @@
+---
+title: Тип ресурса ChartPoint
+description: Представляет точку из ряда в диаграмме.
+ms.openlocfilehash: 93c89bca61f27924621df0376bdf50e925e25c86
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027739"
+---
 # <a name="chartpoint-resource-type"></a>Тип ресурса ChartPoint
 
 Представляет точку из ряда в диаграмме.
@@ -7,35 +17,37 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartPoint](../api/chartpoint_get.md) | [ChartPoint](chartpoint.md) |Чтение свойств и связей объекта chartPoint.|
-|[Список](../api/chartpoint_list.md) | Коллекция объектов [ChartPoint](chartpoint.md) |Получение коллекции объектов chartPoint. |
-|[Itemat](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|Получение точки на основании ее положения в ряду.|
+|[Получение объекта ChartPoint](../api/chartpoint-get.md) | [WorkbookChartPoint](chartpoint.md) |Чтение свойств и связей объекта chartPoint.|
+|[List](../api/chartpoint-list.md) | [WorkbookChartPoint](chartpoint.md) коллекции |Получение коллекции объектов chartPoint. |
+|[ItemAt](../api/chartpointscollection-itemat.md)|[WorkbookChartPoint](chartpoint.md)|Получение точки на основании ее положения в ряду.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|value|object|Возвращает значение точки диаграммы. Только для чтения.|
+|value|Json|Возвращает значение точки диаграммы. Только для чтения.|
+|id|строка|Уникальный идентификатор|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[ChartPointFormat](chartpointformat.md)|Инкапсулирует свойства формата точки диаграммы. Только для чтения.|
+|format|[WorkbookChartPointFormat](chartpointformat.md)|Инкапсулирует свойства формата точки диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartPoint"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 }-->
 
 ```json
 {
-  "value": "string"
+  "value": "string",
+  "id": "string"
 }
 
 ```

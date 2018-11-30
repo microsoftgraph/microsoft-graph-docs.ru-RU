@@ -1,3 +1,13 @@
+---
+title: Тип ресурса page
+description: Страница в записной книжке OneNote.
+ms.openlocfilehash: 19380f06ad4706f623397681a020054e65eba029
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027723"
+---
 # <a name="page-resource-type"></a>Тип ресурса page
 
 Страница в записной книжке OneNote.
@@ -6,12 +16,14 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntitySchemaObjectModel",
   "optionalProperties": [
     "parentNotebook",
     "parentSection"
   ],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 
@@ -50,16 +62,16 @@
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|Записная книжка, содержащая страницу.  Только для чтения.|
-|parentSection|[Section](section.md)|Раздел, содержащий страницу. Только для чтения.|
+|parentSection|[OnenoteSection](section.md)|Раздел, содержащий страницу. Только для чтения.|
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение страницы](../api/page_get.md) | [Page](page.md) |Чтение свойств и отношений страницы.|
-|[Обновление содержимого страницы](../api/page_update.md) | Нет |Обновление HTML-содержимого страницы. |
-|[Удаление страницы](../api/page_delete.md) | Нет |Удаление страницы. |
-|[copyToSection](../api/page_copytosection.md)| Нет |Копирование страницы в определенный раздел.|
+|[Получение страницы](../api/page-get.md) | [Page](page.md) |Чтение свойств и отношений страницы.|
+|[Обновление содержимого страницы](../api/page-update.md) | Нет |Обновление HTML-содержимого страницы. |
+|[Удаление страницы](../api/page-delete.md) | Нет |Удаление страницы. |
+|[copyToSection](../api/page-copytosection.md)| Нет |Копирование страницы в определенный раздел.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

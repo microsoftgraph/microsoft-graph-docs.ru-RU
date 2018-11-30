@@ -1,17 +1,29 @@
+---
+title: Тип ресурса conversation
+description: Беседа — коллекция цепочек, содержащих записи. Все цепочки и записи в беседе имеют одинаковую тему.
+ms.openlocfilehash: 7ba9cfbd04f25d2005bc3390fe10f6aac76f9eea
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27026221"
+---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 
 Беседа — коллекция [цепочек](conversationthread.md), содержащих записи. Все цепочки и записи в беседе имеют одинаковую тему.
+
+Этот ресурс поддерживает подписки на [уведомления об изменении](/graph/webhooks).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список бесед](../api/group_list_conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
-|[Создание](../api/group_post_conversations.md) |[conversation](conversation.md)| Создание беседы путем включения цепочки и записи.|
-|[Получение беседы](../api/conversation_get.md) | [conversation](conversation.md) |Считывание свойств и отношений объекта conversation.|
-|[Удаление](../api/conversation_delete.md) | Нет |Удаление объекта conversation. |
-|[Список цепочек беседы](../api/conversation_list_threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек в групповой беседе.|
-|[Создание цепочки беседы](../api/conversation_post_threads.md) |Коллекция [conversationThread](conversationthread.md)| Создание цепочки в указанной беседе.|
+|[Список бесед](../api/group-list-conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
+|[Создание](../api/group-post-conversations.md) |[conversation](conversation.md)| Создание беседы путем включения цепочки и записи.|
+|[Получение беседы](../api/conversation-get.md) | [conversation](conversation.md) |Считывание свойств и отношений объекта conversation.|
+|[Удаление](../api/conversation-delete.md) | Нет |Удаление объекта conversation. |
+|[Список цепочек беседы](../api/conversation-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек в групповой беседе.|
+|[Создание цепочки беседы](../api/conversation-post-threads.md) |Коллекция [conversationThread](conversationthread.md)| Создание цепочки в указанной беседе.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -28,17 +40,27 @@
 |:---------------|:--------|:----------|
 |threads|Коллекция [conversationThread](conversationthread.md)|Коллекция всех цепочек в беседе. Свойство навигации. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "threads"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversation"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversation",
+  "@odata.annotations": [
+    {
+      "property": "threads",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -48,7 +70,9 @@
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
   "topic": "string",
-  "uniqueSenders": ["string"]
+  "uniqueSenders": ["string"],
+
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}]
 }
 
 ```

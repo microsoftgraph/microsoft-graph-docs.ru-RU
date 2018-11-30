@@ -1,0 +1,85 @@
+---
+title: Список объектов directoryRoleTemplate
+description: Получение списка объектов directoryRoleTemplate.
+ms.openlocfilehash: ae3d65c1c59d58534dacdd24a182fd3155954d34
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028434"
+---
+# <a name="list-directoryroletemplates"></a>Список объектов directoryRoleTemplate
+
+Получение списка объектов directoryRoleTemplate.
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+GET /directoryRoleTemplates
+```
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод **не** поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика (например, $filter не поддерживается).
+
+## <a name="request-headers"></a>Заголовки запросов
+| Имя       | Тип | Описание|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryRoleTemplate](../resources/directoryroletemplate.md) в теле отклика.
+## <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryroletemplates"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
+```
+##### <a name="response"></a>Отклик
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "description": "description-value",
+      "displayName": "displayName-value",
+      "id": "id-value"
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List directoryRoleTemplates",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

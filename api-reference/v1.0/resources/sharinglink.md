@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharingLink
+ms.openlocfilehash: 7639dab9f63a948b3e9a849d8d320de60f5a0954
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025134"
+---
 # <a name="sharinglink-resource-type"></a>Тип ресурса SharingLink
 
 Ресурс **SharingLink** группирует связанные со ссылками элементы данных в единую структуру.
@@ -16,44 +28,55 @@
 
 ```json
 {
-  "application": {"@odata.type": "microsoft.graph.identity"},
-  "type": "view | edit",
+  "application": { "@odata.type": "microsoft.graph.identity" },
+  "type": "view | edit | embed",
   "scope": "anonymous | organization",
+  "webHtml": "string",
   "webUrl": "url"
 }
 ```
 
 ## <a name="properties"></a>Свойства
 
-| Свойство    | Тип                    | Описание                                                                                                                                                                                             |
-|:------------|:------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| application | [identity](identity.md) | Приложение, с которым сопоставлена ссылка.                                                                                                                                                                    |
-| type        | Строка                  | Тип созданной ссылки.                                                                                                                                                                           |
-| scope       | String                  | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент. |
-| webUrl      | Строка                  | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.                                                                                                                                       |
+| Свойство    | Тип          | Описание
+|:------------|:--------------|:-------------------------------------
+| application | [identity][]  | Приложение, с которым сопоставлена ссылка.
+| type        | Строка        | Тип созданной ссылки.
+| scope       | String        | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент.
+| webHtml     | String        | Для ссылок `embed` это свойство содержит HTML-код элемента `<iframe>`, который внедряет элемент на веб-страницу.
+| webUrl      | Строка        | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.
 
-## <a name="type-enumeration"></a>Перечисление type
+[Identity]: identity.md
+
+## <a name="type-options"></a>Параметры типа
 
 В таблице ниже определены возможные значения свойства **type**.
 
-| Значение   | Роль    | Описание                                                                     |
-|:--------|:--------|:--------------------------------------------------------------------------------|
-| `view`  | `read`  | Ссылка только для просмотра, разрешающая доступ только для чтения.                            |
-| `edit`  | `write` | Ссылка для совместного доступа на редактирование, разрешающая доступ на чтение и запись.                               |
+| Значение   | Роль    | Описание
+|:--------|:--------|:---------------------------------------------------------
+| `view`  | `read`  | Ссылка только для просмотра, разрешающая доступ только для чтения.
+| `edit`  | `write` | Ссылка для редактирования, разрешающая доступ для чтения и записи.
+| `embed` | `read`  | Ссылка только для просмотра, с помощью которой можно внедрять содержимое в ведущую веб-страницу. Внедряемые ссылки недоступны в OneDrive для бизнеса и SharePoint.
 
-## <a name="scope-enumeration"></a>Перечисление scope
+## <a name="scope-options"></a>Параметры области
 
-| Значение          | Описание                                                                                                                 |
-|:---------------|:----------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Ссылку для общего доступа могут использовать все пользователи.                                                                            |
-| `organization` | Ссылку для совместного доступа могут использовать все пользователи в одной и той же организации (клиенте). Эта функция недоступна в OneDrive персональный. |
+| Значение          | Описание
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | Лица, имеющие ссылку имеет доступ, без необходимости входа. Сюда может входить пользователям за пределами вашей организации.
+| `organization` | Любой пользователь вошел в вашей организации (клиента) используйте ссылку для доступа. Доступно только в OneDrive для бизнеса и SharePoint.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingLink resource",
-  "keywords": "",
+  "description": "The sharing link facet provides information about how a file is shared.",
+  "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(view,edit,embed) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization) are in resource, but () are in table"
+  ],
+  "tocPath": "Facets/SharingLink"
+} -->
