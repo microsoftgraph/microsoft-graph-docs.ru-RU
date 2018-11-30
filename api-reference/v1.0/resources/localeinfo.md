@@ -1,17 +1,27 @@
-# <a name="localeinfo-resource-type"></a>Тип ресурса localeInfo
+---
+title: Тип ресурса localeInfo
+description: Сведения о языковом стандарте, в частности предпочитаемом языке и стране или регионе, вошедшего пользователя.
+ms.openlocfilehash: f61f1af1d4ad49b1083403576ac4069d97d694cb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028381"
+---
+# <a name="localeinfo-resource-type"></a><span data-ttu-id="71ccf-103">Тип ресурса localeInfo</span><span class="sxs-lookup"><span data-stu-id="71ccf-103">localeInfo resource type</span></span>
 
-Сведения о языковом стандарте, в частности предпочитаемом языке и стране или регионе, вошедшего пользователя.
+<span data-ttu-id="71ccf-104">Сведения о языковом стандарте, в частности предпочитаемом языке и стране или регионе, вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="71ccf-104">Information about the locale, including the preferred language and country/region, of the signed-in user.</span></span>
 
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="71ccf-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="71ccf-105">Properties</span></span>
+| <span data-ttu-id="71ccf-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="71ccf-106">Property</span></span>     | <span data-ttu-id="71ccf-107">Тип</span><span class="sxs-lookup"><span data-stu-id="71ccf-107">Type</span></span>   |<span data-ttu-id="71ccf-108">Описание</span><span class="sxs-lookup"><span data-stu-id="71ccf-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|языковые стандарты|string|Представления языкового стандарта для пользователя, которое включает предпочитаемый язык и страну или регион. Пример: "en-us". В языковом компоненте используются коды из двух букв, определенные в стандарте [ISO 639-1](http://www.iso.org/iso/home/standards/language_codes.htm), а в компоненте страны — коды из стандарта [ISO 3166-1 alpha-2](http://www.iso.org/iso/country_codes.htm).|
-|displayName|string|Имя, представляющее языковой стандарт пользователя на естественном языке, например "Английский (США)".|
+|<span data-ttu-id="71ccf-109">locale</span><span class="sxs-lookup"><span data-stu-id="71ccf-109">locale</span></span>|<span data-ttu-id="71ccf-110">string</span><span class="sxs-lookup"><span data-stu-id="71ccf-110">string</span></span>|<span data-ttu-id="71ccf-p101">Представления языкового стандарта для пользователя, которое включает предпочитаемый язык и страну или регион. Пример: "en-us". В языковом компоненте используются коды из двух букв, определенные в стандарте [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), а в компоненте страны — коды из стандарта [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span><span class="sxs-lookup"><span data-stu-id="71ccf-p101">A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span></span>|
+|<span data-ttu-id="71ccf-114">displayName</span><span class="sxs-lookup"><span data-stu-id="71ccf-114">displayName</span></span>|<span data-ttu-id="71ccf-115">строка</span><span class="sxs-lookup"><span data-stu-id="71ccf-115">string</span></span>|<span data-ttu-id="71ccf-116">Имя, представляющее языковой стандарт пользователя на естественном языке, например "Английский (США)".</span><span class="sxs-lookup"><span data-stu-id="71ccf-116">A name representing the user's locale in natural language, for example, "English (United States)".</span></span>|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a><span data-ttu-id="71ccf-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="71ccf-117">JSON representation</span></span>
 
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="71ccf-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="71ccf-118">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
