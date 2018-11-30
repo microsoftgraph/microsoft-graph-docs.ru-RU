@@ -1,33 +1,45 @@
-# <a name="rangeborder-resource-type"></a>Тип ресурса RangeBorder
+---
+title: Тип ресурса RangeBorder
+description: Представляет границу объекта.
+ms.openlocfilehash: ace494607d7e5803bf0ab0be5d5b3c86be875dcb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27082363"
+---
+# <a name="rangeborder-resource-type"></a><span data-ttu-id="f645e-103">Тип ресурса RangeBorder</span><span class="sxs-lookup"><span data-stu-id="f645e-103">RangeBorder resource type</span></span>
 
-Представляет границу объекта.
+> <span data-ttu-id="f645e-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f645e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f645e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f645e-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="f645e-106">Представляет границу объекта.</span><span class="sxs-lookup"><span data-stu-id="f645e-106">Represents the border of an object.</span></span>
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a><span data-ttu-id="f645e-107">Методы</span><span class="sxs-lookup"><span data-stu-id="f645e-107">Methods</span></span>
 
-| Метод           | Возвращаемый тип    |Описание|
+| <span data-ttu-id="f645e-108">Метод</span><span class="sxs-lookup"><span data-stu-id="f645e-108">Method</span></span>           | <span data-ttu-id="f645e-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="f645e-109">Return Type</span></span>    |<span data-ttu-id="f645e-110">Описание</span><span class="sxs-lookup"><span data-stu-id="f645e-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeBorder](../api/rangeborder_get.md) | [RangeBorder](rangeborder.md) |Чтение свойств и связей объекта rangeBorder.|
-|[Обновление](../api/rangeborder_update.md) | [RangeBorder](rangeborder.md)    |Обновление объекта RangeBorder. |
-|[Список](../api/rangeborder_list.md) | Коллекция объектов [RangeBorder](rangeborder.md) |Получение коллекции объектов rangeBorder. |
-|[Itemat](../api/rangebordercollection_itemat.md)|[RangeBorder](rangeborder.md)|Возвращает объект границы по его индексу.|
+|[<span data-ttu-id="f645e-111">Получение объекта RangeBorder</span><span class="sxs-lookup"><span data-stu-id="f645e-111">Get RangeBorder</span></span>](../api/rangeborder-get.md) | [<span data-ttu-id="f645e-112">RangeBorder</span><span class="sxs-lookup"><span data-stu-id="f645e-112">RangeBorder</span></span>](rangeborder.md) |<span data-ttu-id="f645e-113">Чтение свойств и связей объекта rangeBorder.</span><span class="sxs-lookup"><span data-stu-id="f645e-113">Read properties and relationships of rangeBorder object.</span></span>|
+|[<span data-ttu-id="f645e-114">Update</span><span class="sxs-lookup"><span data-stu-id="f645e-114">Update</span></span>](../api/rangeborder-update.md) | [<span data-ttu-id="f645e-115">RangeBorder</span><span class="sxs-lookup"><span data-stu-id="f645e-115">RangeBorder</span></span>](rangeborder.md) |<span data-ttu-id="f645e-116">Обновление объекта RangeBorder.</span><span class="sxs-lookup"><span data-stu-id="f645e-116">Update RangeBorder object.</span></span> |
+|[<span data-ttu-id="f645e-117">List</span><span class="sxs-lookup"><span data-stu-id="f645e-117">List</span></span>](../api/rangeborder-list.md) | <span data-ttu-id="f645e-118">Коллекция объектов [RangeBorder](rangeborder.md)</span><span class="sxs-lookup"><span data-stu-id="f645e-118">[RangeBorder](rangeborder.md) collection</span></span> |<span data-ttu-id="f645e-119">Получение коллекции объектов rangeBorder.</span><span class="sxs-lookup"><span data-stu-id="f645e-119">Get rangeBorder object collection.</span></span> |
+|[<span data-ttu-id="f645e-120">Itemat</span><span class="sxs-lookup"><span data-stu-id="f645e-120">Itemat</span></span>](../api/rangebordercollection-itemat.md)|[<span data-ttu-id="f645e-121">RangeBorder</span><span class="sxs-lookup"><span data-stu-id="f645e-121">RangeBorder</span></span>](rangeborder.md)|<span data-ttu-id="f645e-122">Возвращает объект границы по его индексу.</span><span class="sxs-lookup"><span data-stu-id="f645e-122">Gets a border object using its index</span></span>|
 
-## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+## <a name="properties"></a><span data-ttu-id="f645e-123">Свойства</span><span class="sxs-lookup"><span data-stu-id="f645e-123">Properties</span></span>
+| <span data-ttu-id="f645e-124">Свойство</span><span class="sxs-lookup"><span data-stu-id="f645e-124">Property</span></span>     | <span data-ttu-id="f645e-125">Тип</span><span class="sxs-lookup"><span data-stu-id="f645e-125">Type</span></span>   |<span data-ttu-id="f645e-126">Описание</span><span class="sxs-lookup"><span data-stu-id="f645e-126">Description</span></span>|
 |:---------------|:--------|:----------|
-|color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
-|id|string|Представляет идентификатор границы. Возможные значения: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Только для чтения.|
-|sideIndex|string|Постоянное значение, указывающее определенную сторону границы. Возможные значения: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Только для чтения.|
-|стиль|string|Одна из констант типа линии, определяющая тип линии границы. Возможные значения: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
-|weight|string|Определяет толщину границы вокруг диапазона. Возможные значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
+|<span data-ttu-id="f645e-127">color</span><span class="sxs-lookup"><span data-stu-id="f645e-127">color</span></span>|<span data-ttu-id="f645e-128">строка</span><span class="sxs-lookup"><span data-stu-id="f645e-128">string</span></span>|<span data-ttu-id="f645e-129">HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).</span><span class="sxs-lookup"><span data-stu-id="f645e-129">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
+|<span data-ttu-id="f645e-130">id</span><span class="sxs-lookup"><span data-stu-id="f645e-130">id</span></span>|<span data-ttu-id="f645e-131">строка</span><span class="sxs-lookup"><span data-stu-id="f645e-131">string</span></span>|<span data-ttu-id="f645e-p102">Представляет идентификатор границы. Возможные значения: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="f645e-p102">Represents border identifier. Possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.</span></span>|
+|<span data-ttu-id="f645e-135">sideIndex</span><span class="sxs-lookup"><span data-stu-id="f645e-135">sideIndex</span></span>|<span data-ttu-id="f645e-136">string</span><span class="sxs-lookup"><span data-stu-id="f645e-136">string</span></span>|<span data-ttu-id="f645e-p103">Постоянное значение, указывающее определенную сторону границы. Возможные значения: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="f645e-p103">Constant value that indicates the specific side of the border. Possible values are: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Read-only.</span></span>|
+|<span data-ttu-id="f645e-140">style</span><span class="sxs-lookup"><span data-stu-id="f645e-140">style</span></span>|<span data-ttu-id="f645e-141">строка</span><span class="sxs-lookup"><span data-stu-id="f645e-141">string</span></span>|<span data-ttu-id="f645e-p104">Одна из констант типа линии, определяющая тип линии границы. Возможные значения: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.</span><span class="sxs-lookup"><span data-stu-id="f645e-p104">One of the constants of line style specifying the line style for the border. Possible values are: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.</span></span>|
+|<span data-ttu-id="f645e-144">weight</span><span class="sxs-lookup"><span data-stu-id="f645e-144">weight</span></span>|<span data-ttu-id="f645e-145">string</span><span class="sxs-lookup"><span data-stu-id="f645e-145">string</span></span>|<span data-ttu-id="f645e-p105">Определяет толщину границы вокруг диапазона. Возможные значения: `Hairline`, `Thin`, `Medium`, `Thick`.</span><span class="sxs-lookup"><span data-stu-id="f645e-p105">Specifies the weight of the border around a range. Possible values are: `Hairline`, `Thin`, `Medium`, `Thick`.</span></span>|
 
-## <a name="relationships"></a>Связи
-Нет
+## <a name="relationships"></a><span data-ttu-id="f645e-148">Связи</span><span class="sxs-lookup"><span data-stu-id="f645e-148">Relationships</span></span>
+<span data-ttu-id="f645e-149">Нет</span><span class="sxs-lookup"><span data-stu-id="f645e-149">None</span></span>
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a><span data-ttu-id="f645e-150">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f645e-150">JSON representation</span></span>
 
-Ниже представлено описание ресурса в формате JSON.
+<span data-ttu-id="f645e-151">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f645e-151">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
