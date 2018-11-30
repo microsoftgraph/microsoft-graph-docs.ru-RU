@@ -1,3 +1,13 @@
+---
+title: Тип ресурса subscribedSku
+description: Содержит сведения о SKU службы, на которую компания подписана.
+ms.openlocfilehash: 5a3c3515d4d902810db32acf10b4cee6a889bfc9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027228"
+---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
 Содержит сведения о SKU службы, на которую компания подписана.
@@ -7,11 +17,11 @@
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Чтение свойств и связей объекта subscribedSku.|
-|[Список объектов subscribedSku](../api/subscribedsku_list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение списка коммерческих подписок, приобретенных организацией.|
+|[Получение объекта subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Чтение свойств и связей объекта subscribedSku.|
+|[Список subscribedsku](../api/subscribedsku-list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение списка коммерческих подписок, приобретенных организацией.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appliesTo|String| Например, User или Company. |
 |capabilityStatus|Строка| Например, Enabled. |
@@ -29,13 +39,25 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

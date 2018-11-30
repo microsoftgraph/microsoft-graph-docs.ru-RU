@@ -1,3 +1,13 @@
+---
+title: Тип ресурса ChartGridlines
+description: Представляет основные или вспомогательные линии сетки на оси диаграммы.
+ms.openlocfilehash: 352f2ff93b899a5321787a0f44b75188e671de27
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025260"
+---
 # <a name="chartgridlines-resource-type"></a>Тип ресурса ChartGridlines
 
 Представляет основные или вспомогательные линии сетки на оси диаграммы.
@@ -7,18 +17,18 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartGridlines](../api/chartgridlines_get.md) | [ChartGridlines](chartgridlines.md) |Чтение свойств и связей объекта chartGridlines.|
-|[Обновление](../api/chartgridlines_update.md) | [ChartGridlines](chartgridlines.md)    |Обновление объекта ChartGridlines. |
+|[Получение объекта ChartGridlines](../api/chartgridlines-get.md) | [WorkbookChartGridlines](chartgridlines.md) |Чтение свойств и связей объекта chartGridlines.|
+|[Update](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)    |Обновление объекта ChartGridlines. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |visible|boolean|Логическое значение, определяющее, отображаются ли линии сетки оси.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[ChartGridlinesFormat](chartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|
+|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -26,10 +36,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 }-->
 
 ```json

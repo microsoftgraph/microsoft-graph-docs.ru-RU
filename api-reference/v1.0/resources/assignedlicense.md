@@ -1,3 +1,13 @@
+---
+title: Тип ресурса assignedLicense
+description: Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта user представляет собой коллекцию объектов **assignedLicense**.
+ms.openlocfilehash: 48863a9acdcfa173a3f0c1a2a008516360ffdf9b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025544"
+---
 # <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
 
 Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта [user](user.md) представляет собой коллекцию объектов **assignedLicense**.

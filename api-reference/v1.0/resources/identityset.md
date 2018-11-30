@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: IdentitySet
+ms.openlocfilehash: ea49f904197b2f4a661b781576f06240e41cf808
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027958"
+---
 # <a name="identityset-resource-type"></a>Тип ресурса IdentitySet
 
 Ресурс **IdentitySet** представляет собой коллекцию ресурсов [identity](identity.md) с ключами. Он представляет набор удостоверений, связанных с различными событиями для элемента, например _созданием_ или _последним изменением_.
@@ -6,12 +18,9 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ "user", "device", "application" ],
-  "@odata.type": "microsoft.graph.identitySet"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
+       "optionalProperties": ["user", "application", "device"],
+       "openType": true } -->
 ```json
 {
   "application": {"@odata.type": "microsoft.graph.identity"},
@@ -38,8 +47,7 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identitySet resource",
-  "keywords": "",
+  "description": "Identity set is a collection of identities",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/IdentitySet"
+} -->

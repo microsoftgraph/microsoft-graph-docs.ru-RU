@@ -1,3 +1,13 @@
+---
+title: Тип ресурса externalLink
+description: URL-адрес, который открывает страницу или записную книжку OneNote.
+ms.openlocfilehash: ae25c6220545ff55259a18b6180225cc602e129b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27025258"
+---
 # <a name="externallink-resource-type"></a>Тип ресурса externalLink
 
 URL-адрес, который открывает страницу или записную книжку OneNote.
@@ -21,7 +31,7 @@ URL-адрес, который открывает страницу или зап
 
 ```
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |href|Строка|URL-адрес ссылки.|
 

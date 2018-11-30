@@ -1,3 +1,13 @@
+---
+title: Тип ресурса groupSettingTemplate
+description: Шаблоны параметров группы представляют определенные системой параметры для клиента. Можно на базе доступных объектов groupSettingTemplate создавать **параметры группы**, а также менять предопределенные значения по умолчанию этих параметров. Шаблоны параметров группы невозможно создать, обновить или удалить. Эти параметры могут представлять параметры на уровне клиента или отдельной группы. На данный момент доступны только шаблоны, применимые к группам Office 365 и включающие параметры, которые, например, разрешают или запрещают пользователям создавать группы либо приглашать внешних гостей в группу.
+ms.openlocfilehash: 3c4111b2727e79e048778063b259611795733de4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27027962"
+---
 # <a name="groupsettingtemplate-resource-type"></a>Тип ресурса groupSettingTemplate
 
 Шаблоны параметров группы представляют определенные системой параметры для клиента. Можно на базе доступных объектов **groupSettingTemplate** создавать [параметры группы](groupsetting.md), а также менять предопределенные значения по умолчанию этих параметров. Шаблоны параметров группы невозможно создать, обновить или удалить. Эти параметры могут представлять параметры на уровне клиента или отдельной группы. На данный момент доступны только шаблоны, применимые к группам Office 365 и включающие параметры, которые, например, разрешают или запрещают пользователям создавать группы либо приглашать внешних гостей в группу.
@@ -6,14 +16,14 @@
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Получение groupSettingTemplate](../api/groupsettingtemplate_get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Считывание конкретных свойств одного из определенных системой объектов groupSettingTemplate. |
-|[Перечисление groupSettingTemplate](../api/groupsettingtemplate_list.md) | [Коллекция объектов groupSettingTemplate](groupsettingtemplate.md) |Перечисление всех определенных системой объектов groupSettingTemplate.|
+|[Получение groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Считывание конкретных свойств одного из определенных системой объектов groupSettingTemplate. |
+|[Перечисление groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Коллекция объектов groupSettingTemplate](groupsettingtemplate.md) |Перечисление всех определенных системой объектов groupSettingTemplate.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|String| Описание шаблона. |
+|описание|String| Описание шаблона. |
 |displayName|String| Отображаемое имя шаблона. |
 |id|String| Уникальный идентификатор шаблона. Только для чтения.|
 |values|Коллекция объектов [settingTemplateValue](settingtemplatevalue.md)| Коллекция объектов settingTemplateValue, перечисляющих набор доступных параметров, значений по умолчанию и типов, которые составляют шаблон. |
@@ -27,11 +37,12 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 

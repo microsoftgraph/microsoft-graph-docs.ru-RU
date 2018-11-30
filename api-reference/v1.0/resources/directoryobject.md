@@ -1,3 +1,13 @@
+---
+title: Тип ресурса directoryObject
+description: Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для многих других типов объектов каталогов.
+ms.openlocfilehash: 0981584bb86b71d06e29de4efc379c84bacac51d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028110"
+---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
 Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для многих других типов объектов каталогов.
@@ -6,12 +16,12 @@
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта directoryObject](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |Чтение свойств объекта каталога.|
-|[Удаление объекта directoryObject](../api/directoryobject_delete.md) | Нет |Удаление объекта каталога. |
-|[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
-|[getMemberGroups](../api/directoryobject_getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь, группа или объект каталога. Это транзитивная проверка.|
-|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|Коллекция строк| Возвращает все группы и роли каталога, участником которых является пользователь, группа или объект каталога. Это транзитивная проверка. |
-|[getByIds](../api/directoryobject_getbyids.md) | Коллекция [directoryObject](directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |
+|[Получение объекта directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Чтение свойств объекта каталога.|
+|[Удаление объекта directoryObject](../api/directoryobject-delete.md) | Нет |Удаление объекта каталога. |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь, группа или объект каталога. Это транзитивная проверка.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция строк| Возвращает все группы и роли каталога, участником которых является пользователь, группа или объект каталога. Это транзитивная проверка. |
+|[getByIds](../api/directoryobject-getbyids.md) | Коллекция [directoryObject](directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |
 
 ## <a name="properties"></a>Свойства
 
@@ -28,13 +38,25 @@
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

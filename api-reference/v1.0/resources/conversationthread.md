@@ -1,3 +1,13 @@
+---
+title: Тип ресурса conversationThread
+description: conversationThread — это коллекция экземпляров post.
+ms.openlocfilehash: 7fc248957ed81a9d02d6f2d404110690b350ca1a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028022"
+---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 conversationThread — это коллекция экземпляров [post](post.md).
 
@@ -7,13 +17,13 @@ conversationThread — это коллекция экземпляров [post](p
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список цепочек бесед](../api/group_list_threads.md) | Коллекция [conversationThread](conversationthread.md) |Получение всех цепочек группы.|
-|[Создание цепочки](../api/group_post_threads.md) | [conversationThread](conversationthread.md) |Создание беседы путем создания цепочки. В группе создаются беседа, цепочка беседы и запись.|
-|[Получение conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Получение определенной цепочки, принадлежащей группе. |
-|[Обновление](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |Обновление объекта conversationThread. |
-|[Удаление](../api/conversationthread_delete.md) | Нет |Удаление объекта conversationThread. |
-|[Ответ](../api/conversationthread_reply.md)|Нет|Создание ответа для этой цепочки с помощью создания сущности Post.|
-|[Список сущностей Post](../api/conversationthread_list_posts.md) |Коллекция [post](post.md)| Получение записей для указанной цепочки. |
+|[Список цепочек бесед](../api/group-list-threads.md) | Коллекция [conversationThread](conversationthread.md) |Получение всех цепочек группы.|
+|[Создание цепочки](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Создание беседы путем создания цепочки. В группе создаются беседа, цепочка беседы и запись.|
+|[Получение conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Получение определенной цепочки, принадлежащей группе. |
+|[Обновление](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Обновление объекта conversationThread. |
+|[Удаление](../api/conversationthread-delete.md) | Нет |Удаление объекта conversationThread. |
+|[Ответ](../api/conversationthread-reply.md)|Нет|Создание ответа для этой цепочки с помощью создания сущности Post.|
+|[Список сущностей Post](../api/conversationthread-list-posts.md) |Коллекция [post](post.md)| Получение записей для указанной цепочки. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -33,17 +43,30 @@ conversationThread — это коллекция экземпляров [post](p
 |:---------------|:--------|:----------|
 |posts|Коллекция [post](post.md)| Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "posts"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversationThread"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversationThread",
+  "@odata.annotations": [
+    {
+      "property": "posts",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
