@@ -1,6 +1,20 @@
-# <a name="quota-resource-type"></a>Тип ресурса quota
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: quota
+ms.openlocfilehash: f4518021da8ad180b91472feb52199678c2edc83
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27080860"
+---
+# <a name="quota-resource-type"></a>Тип ресурса квот
 
-Ресурс **quota** предоставляет сведения об ограничениях дискового пространства в ресурсе [Drive](drive.md).
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+**Квота** ресурсов предоставляет подробные сведения о пространстве ограничивает от ресурса [диска](drive.md) .
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -17,6 +31,9 @@
   "deleted": 1024,
   "remaining": 1024,
   "state": "normal | nearing | critical | exceeded",
+  "storagePlanInformation": {
+    "upgradeAvailable": true
+  },
   "total": 1024,
   "used": 1024
 }
@@ -30,9 +47,10 @@
 | used          | Int64  | Общий объем использованного дискового пространства в байтах. Только для чтения.                                      |
 | remaining     | Int64  | Общий объем дискового пространства, оставшегося до достижения максимальной квоты, в байтах. Только для чтения. |
 | deleted       | Int64  | Общий объем дискового пространства, занятого файлами в корзине, в байтах. Только для чтения.      |
-| состояние         | string | Значение перечисления, указывающее состояние дискового пространства. Только для чтения. |
+| state         | string | Значение перечисления, указывающее состояние дискового пространства. Только для чтения. |
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квоты хранилища диска. Только в личных OneDrive.|
 
-## <a name="state-enumeration"></a>Перечисление state
+### <a name="state-enumeration-values"></a>Значения состояний перечисления
 
 | Значение      | Описание                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -41,14 +59,10 @@
 | `critical` | Объем свободного дискового пространства менее 1 % общего объема дискового пространства.                                                                                                                       |
 | `exceeded` | Объем использованного дискового пространства превышает максимально допустимый объем дискового пространства. Вам не удастся добавлять новые файлы или папки на диск, пока объем использованного дискового пространства не станет меньше общего объема дискового пространства или пока вы не приобретете дополнительное дисковое пространство. |
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "quota resource",
-  "keywords": "",
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Quota"
+} -->

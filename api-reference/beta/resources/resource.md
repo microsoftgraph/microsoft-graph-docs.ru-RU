@@ -1,4 +1,16 @@
+---
+title: Тип ресурса resource
+description: 'Ресурс изображения или другого файла на странице OneNote. '
+ms.openlocfilehash: 8e0e049cab613c7c1a72c8c96e21bac77c507ae1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27080558"
+---
 # <a name="resource-resource-type"></a>Тип ресурса resource
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Ресурс изображения или другого файла на странице OneNote. 
 
@@ -52,8 +64,7 @@ GET ../onenote/pages/{id}/content
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получения двоичных данных ресурса](../api/resource_get.md) | Stream |Получение двоичных данных ресурса файла или изображения.|
-
+|[Получения двоичных данных ресурса](../api/resource-get.md) | Stream |Получение двоичных данных ресурса файла или изображения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

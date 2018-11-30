@@ -1,6 +1,18 @@
+---
+title: Тип ресурса itemAttachment
+description: Контакт, события или сообщения, подключенный к другой событий
+ms.openlocfilehash: fd8638a7d263c2ebbe09c77f717af989e1dd5a0e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27080236"
+---
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
 
-Контакт, событие или сообщение, вложенное в другое событие, сообщение или запись.  
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Контакт, события или сообщения, подключенный к другого [события](../resources/event.md), [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md).  
 
 Производный от типа [attachment](attachment.md).
 
@@ -8,11 +20,11 @@
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Чтение свойств и связей объекта itemAttachment.|
-|[Удаление](../api/attachment_delete.md) | Нет |Удаление объекта itemAttachment. |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Чтение свойств и связей объекта itemAttachment.|
+|[Delete](../api/attachment-delete.md) | Нет |Удаление объекта itemAttachment. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип контента этого вложения.|
 |id|String| Идентификатор вложения.|
@@ -22,9 +34,9 @@
 |size|Int32|Размер вложения в байтах.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|Вложенное сообщение или событие. Свойство навигации.|
+|item|[OutlookItem](outlookitem.md)|Вложенные контакта, сообщение или события. Свойство навигации.|
 
 ## <a name="json-representation"></a>Представление JSON
 

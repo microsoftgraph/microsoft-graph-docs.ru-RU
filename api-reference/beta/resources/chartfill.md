@@ -1,4 +1,16 @@
+---
+title: Тип ресурса ChartFill
+description: Представляет форматирование заливки для элемента диаграммы.
+ms.openlocfilehash: f24caa0f06d147ad1ab1f0c8d45cae71d5e619c2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27081622"
+---
 # <a name="chartfill-resource-type"></a>Тип ресурса ChartFill
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Представляет форматирование заливки для элемента диаграммы.
 
@@ -7,8 +19,8 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Clear](../api/chartfill_clear.md)|Нет|Очищает цвет заливки элемента диаграммы.|
-|[Setsolidcolor](../api/chartfill_setsolidcolor.md)|Нет|Задает заливку одним цветом для элемента диаграммы.|
+|[Clear](../api/chartfill-clear.md)|Нет|Очищает цвет заливки элемента диаграммы.|
+|[Setsolidcolor](../api/chartfill-setsolidcolor.md)|Нет|Задает заливку одним цветом для элемента диаграммы.|
 
 ## <a name="properties"></a>Свойства
 Нет

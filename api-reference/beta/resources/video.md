@@ -1,4 +1,18 @@
-# <a name="video-resource-type"></a>Тип ресурса Video
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Video
+ms.openlocfilehash: a9bf228d814526d089fb102444e6952558b07e1c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27081609"
+---
+# <a name="video-resource-type"></a>Тип ресурса video
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Ресурс **Video** — это единая структура, объединяющая элементы данных, связанные с видео.
 
@@ -16,23 +30,37 @@
 
 ```json
 {
-  "bitrate": 1024,
-  "duration": 1024,
-  "height": 1024,
-  "width": 1024
+  "audioBitsPerSample": 16,
+  "audioChannels": 1,
+  "audioFormat": "AAC",
+  "audioSamplesPerSecond": 44100,
+  "bitrate": 39101896,
+  "duration": 8053,
+  "fourCC": "H264",
+  "frameRate": 239.877,
+  "height": 1280,
+  "width": 720
 }
 ```
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип  | Описание                               |
-|:---------|:------|:------------------------------------------|
-| bitrate  | Int32 | Скорость видео в битах в секунду. |
-| duration | Int64 | Продолжительность файла в миллисекундах.     |
-| height   | Int32 | Высота видео в пикселях.           |
-| width    | Int32 | Ширина видео в пикселях.            |
+| Имя свойства             | Тип   | Описание
+|:--------------------------|:-------|:----------------------------------------
+| **audioBitsPerSample**    | Int32  | Количество разрядов звука на выборку.
+| **audioChannels**         | Int32  | Количество звуковых каналов.
+| **audioFormat**           | строка | Название формата аудио (AAC, MP3, и т. д.).
+| **audioSamplesPerSecond** | Int32  | Количество выборок звука в секунду.
+| **bitrate**               | Int32  | Скорость видео в битах в секунду.
+| **duration**              | Int64  | Длительность файла в миллисекундах.
+| **fourCC**                | строка | Название формата видео в виде четырехзначного кода.
+| **framerate**             | double | Частота кадров видео.
+| **height**                | Int32  | Высота видео в пикселях.
+| **width**                 | Int32  | Ширина видео в пикселях.
 
-## <a name="remarks"></a>Заметки 
+[item-resource]: ../resources/driveitem.md
+
+## <a name="remarks"></a>Замечания
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
@@ -44,8 +72,8 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "video resource",
-  "keywords": "",
+  "description": "The video facet provides information about the properties of a video file.",
+  "keywords": "bitrate,duration,size,video",
   "section": "documentation",
   "tocPath": ""
 }-->

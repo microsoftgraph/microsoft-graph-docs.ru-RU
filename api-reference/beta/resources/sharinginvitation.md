@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharingInvitation
+ms.openlocfilehash: ba909158ce0ba28b6af20b8dbff858c65f07cbe9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27080858"
+---
 # <a name="sharinginvitation-resource-type"></a>Тип ресурса SharingInvitation
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Ресурс **SharingInvitation** — это единая структура, объединяющая элементы данных, связанные с приглашениями.
 
@@ -29,7 +43,7 @@
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | email          | String                        | Электронный адрес получателя приглашения к совместному использованию. Только для чтения.                                          |
 | invitedBy      | [identitySet](identityset.md) | Предоставляет сведения об отправителе приглашения, создавшего данное разрешение (если такие сведения доступны). Только для чтения. |
-| signInRequired | Логическое                       | Значение `true` указывает, что получатель приглашения должен выполнить вход для доступа к предоставленному элементу. Только для чтения.                     |
+| signInRequired | Boolean                       | Значение `true` указывает, что получатель приглашения должен выполнить вход для доступа к предоставленному элементу. Только для чтения.                     |
 
 ## <a name="remarks"></a>Заметки 
 
@@ -40,8 +54,8 @@
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingInvitation resource",
-  "keywords": "",
+  "description": "The sharing invitation facet describes details of a sharing invitation associated with a permission.",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
   "tocPath": ""
 }-->

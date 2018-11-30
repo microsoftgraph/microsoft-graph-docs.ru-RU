@@ -1,4 +1,16 @@
+---
+title: Тип ресурса RangeFill
+description: Представляет фон объекта диапазона.
+ms.openlocfilehash: 11806d95900c6e4ea1d4bf6ce4f4800bf5f6f66b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27081646"
+---
 # <a name="rangefill-resource-type"></a>Тип ресурса RangeFill
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Представляет фон объекта диапазона.
 
@@ -7,14 +19,14 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeFill](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
-|[Обновление](../api/rangefill_update.md) | [RangeFill](rangefill.md)    |Обновление объекта RangeFill. |
-|[Clear](../api/rangefill_clear.md)|Нет|Сбрасывает фон диапазона.|
+|[Получение объекта RangeFill](../api/rangefill-get.md) | [RangeFill](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
+|[Update](../api/rangefill-update.md) | [RangeFill](rangefill.md)   |Обновление объекта RangeFill. |
+|[Clear](../api/rangefill-clear.md)|Нет|Сбрасывает фон диапазона.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова в HTML (например, orange).|
+|color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова в HTML (например, orange).|
 
 ## <a name="relationships"></a>Связи
 Нет

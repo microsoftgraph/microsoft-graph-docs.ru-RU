@@ -1,12 +1,23 @@
+---
+title: Тип ресурса recipient
+description: 'Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе. '
+ms.openlocfilehash: 2ecf92f314c8b29da529b8dc07cada71dd8571f2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27080551"
+---
 # <a name="recipient-resource-type"></a>Тип ресурса recipient
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе. 
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|Электронный адрес получателя.|
-
 
 ## <a name="json-representation"></a>Представление JSON
 

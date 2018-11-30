@@ -1,32 +1,39 @@
-<a id="domaindnscnamerecord-resource-type" class="xliff"></a>
-# Тип ресурса domainDnsCnameRecord
+---
+title: Тип ресурса domainDnsCnameRecord
+description: Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
+ms.openlocfilehash: 9eaa48bb492572d4e5cac57ee07420ed492aac73
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27081837"
+---
+# <a name="domaindnscnamerecord-resource-type"></a>Тип ресурса domainDnsCnameRecord
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md).
 
 
-<a id="methods" class="xliff"></a>
-## Методы
+## <a name="methods"></a>Методы
 Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |canonicalName|String| Каноническое имя записи CNAME. Используется для настройки записи CNAME в узле DNS. |
 |id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
 |isOptional|Boolean| Если имеет значение false, пользователю необходимо настроить запись CNAME на узле DNS, чтобы службы Microsoft Online Services правильно работали с доменом. Не допускает значения null. |
-|подпись|String| Значение, используемое при настройке *псевдонима, узла и имени* для записи CNAME на узле DNS. |
+|label|String| Значение, используемое при настройке *псевдонима, узла и имени* для записи CNAME на узле DNS. |
 |recordType|String| Тип записи DNS. Это свойство всегда имеет значение *CName*. Ключевое.|
 |supportedService|String| Служба или функция Microsoft Online, имеющая зависимость от этой записи CNAME.</br></br>Может иметь одно из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* или *Intune*.|
 |ttl|Int32| Значение, используемое при настройке свойства срока жизни (ttl) записи CNAME на узле DNS. Не допускает значения null. |
 
-<a id="relationships" class="xliff"></a>
-## Связи
+## <a name="relationships"></a>Связи
 Нет
 
 
-<a id="json-representation" class="xliff"></a>
-## Представление JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
