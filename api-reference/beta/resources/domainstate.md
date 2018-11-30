@@ -1,10 +1,20 @@
-<a id="domainstate-resource-type" class="xliff"></a>
-# Тип ресурса domainState
+---
+title: Тип ресурса domainState
+description: Представляет состояние асинхронных операций, запланированных для домена.
+ms.openlocfilehash: 84c2e418a14de8aa05abfac7a2f04d6637d410b4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27075525"
+---
+# <a name="domainstate-resource-type"></a>Тип ресурса domainState
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Представляет состояние асинхронных операций, запланированных для домена.
 
-<a id="properties" class="xliff"></a>
-## Свойства
+## <a name="properties"></a>Свойства
 
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
@@ -12,8 +22,7 @@
 | операция | String | Тип асинхронной операции. Возможные значения: *ForceDelete* или *Verification*. |
 | status | String | Текущее состояние операции. <br> *Scheduled* — операция запланирована, но еще не запущена. <br> *InProgress* — операция запущена и в настоящее время выполняется. <br> *Failed* — не удалось выполнить операцию. |
 
-<a id="json-representation" class="xliff"></a>
-## Представление в формате JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
