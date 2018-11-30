@@ -1,0 +1,126 @@
+---
+title: Список windowsKioskConfigurations
+description: Свойства списка и связей объектов windowsKioskConfiguration.
+ms.openlocfilehash: bb178bca4c1ce11958e28ed8c5ad4fa23ad4d668
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27082143"
+---
+# <a name="list-windowskioskconfigurations"></a>Список windowsKioskConfigurations
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Свойства списка и связей объектов [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) .
+## <a name="prerequisites"></a>Необходимые компоненты
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Заголовок|Значение|
+|:---|:---|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
+
+## <a name="response"></a>Ответ
+Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) в теле ответа.
+
+## <a name="example"></a>Пример
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+```
+
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 2003
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
+      "id": "146a990b-990b-146a-0b99-6a140b996a14",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "description": "Description value",
+      "displayName": "Display Name value",
+      "version": 7,
+      "kioskProfiles": [
+        {
+          "@odata.type": "microsoft.graph.windowsKioskProfile",
+          "profileId": "Profile Id value",
+          "profileName": "Profile Name value",
+          "appConfiguration": {
+            "@odata.type": "microsoft.graph.windowsKioskMultipleApps",
+            "apps": [
+              {
+                "@odata.type": "microsoft.graph.windowsKioskUWPApp",
+                "startLayoutTileSize": "small",
+                "name": "Name value",
+                "appUserModelId": "App User Model Id value",
+                "appId": "App Id value",
+                "containedAppId": "Contained App Id value"
+              }
+            ],
+            "showTaskBar": true,
+            "disallowDesktopApps": true,
+            "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
+          },
+          "userAccountsConfiguration": [
+            {
+              "@odata.type": "microsoft.graph.windowsKioskVisitor"
+            }
+          ]
+        }
+      ],
+      "kioskBrowserDefaultUrl": "https://example.com/kioskBrowserDefaultUrl/",
+      "kioskBrowserEnableHomeButton": true,
+      "kioskBrowserEnableNavigationButtons": true,
+      "kioskBrowserEnableEndSessionButton": true,
+      "kioskBrowserRestartOnIdleTimeInMinutes": 6,
+      "kioskBrowserBlockedURLs": [
+        "Kiosk Browser Blocked URLs value"
+      ],
+      "kioskBrowserBlockedUrlExceptions": [
+        "Kiosk Browser Blocked Url Exceptions value"
+      ]
+    }
+  ]
+}
+```
+
+
+
+
+

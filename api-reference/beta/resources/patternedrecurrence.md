@@ -1,13 +1,24 @@
+---
+title: Тип ресурса patternedRecurrence
+description: Расписание и диапазон повторения.
+ms.openlocfilehash: 205c563d8b4cecc0a817dd1893a6c4f002eb4e06
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27082657"
+---
 # <a name="patternedrecurrence-resource-type"></a>Тип ресурса patternedRecurrence
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Расписание и диапазон повторения.
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |pattern|[RecurrencePattern](recurrencepattern.md)|Частота события.|
 |range|[RecurrenceRange](recurrencerange.md)|Продолжительность события.|
-
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -18,7 +29,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.patternedrecurrence"
+  "@odata.type": "microsoft.graph.patternedRecurrence"
 }-->
 
 ```json

@@ -1,0 +1,93 @@
+---
+title: Обновление deviceManagementScriptAssignment
+description: Обновление свойства объекта deviceManagementScriptAssignment.
+ms.openlocfilehash: c69cc71181eb1a46a3505e474991079e5e196590
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27082133"
+---
+# <a name="update-devicemanagementscriptassignment"></a>Обновление deviceManagementScriptAssignment
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Обновление свойства объекта [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) .
+## <a name="prerequisites"></a>Необходимые компоненты
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments/{deviceManagementScriptAssignmentId}
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Заголовок|Значение|
+|:---|:---|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
+
+## <a name="request-body"></a>Текст запроса
+В тексте запроса укажите представление JSON для объекта [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) .
+
+В следующей таблице показаны свойства, которые необходимы для создания [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md).
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|String|Ключ объекта назначения группы, сценарий управления устройства.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Идентификатор группы Azure Active Directory мы ориентация сценария.|
+
+
+
+## <a name="response"></a>Ответ
+Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) объекта в теле ответа.
+
+## <a name="example"></a>Пример
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments/{deviceManagementScriptAssignmentId}
+Content-type: application/json
+Content-length: 101
+
+{
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+  }
+}
+```
+
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 221
+
+{
+  "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
+  "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+  }
+}
+```
+
+
+
+
+
