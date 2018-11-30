@@ -1,16 +1,27 @@
+---
+title: Тип ресурса attendee
+description: Участник события. Это может быть человек или ресурс (например конференц-зал или оборудование), настроенный в качестве ресурса на сервере Exchange Server клиента.
+ms.openlocfilehash: 7c1a4d5fb483dc722768c9b95885837bdaf6087e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27079540"
+---
 # <a name="attendee-resource-type"></a>Тип ресурса attendee
 
-Участник события.
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Участник события. Это может быть человек или ресурс (например конференц-зал или оборудование), настроенный в качестве ресурса на сервере Exchange Server клиента.
 
 Тип, производный от [attendeeBase](attendeebase.md).
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Ответ участника (нет, принято, отклонено и т. д.) на событие, а также дата и время отправки ответа.|
-|type|String|Тип участника: `Required`, `Optional`, `Resource`.|
-|emailAddress|[emailAddress](emailAddress.md)|Включает имя и SMTP-адрес участника.|
-
+|type|String|Тип участника: `required`, `optional`, `resource`.|
+|emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
