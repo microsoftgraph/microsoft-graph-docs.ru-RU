@@ -1,4 +1,16 @@
+---
+title: Тип ресурса RangeFormat
+description: Объект формата, в который включены шрифт, заливка, границы, выравнивание и другие свойства диапазона.
+ms.openlocfilehash: dc1eb1fd06370dff554e1245245ec24cdf5a6658
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27078131"
+---
 # <a name="rangeformat-resource-type"></a>Тип ресурса RangeFormat
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Объект формата, в который включены шрифт, заливка, границы, выравнивание и другие свойства диапазона.
 
@@ -7,15 +19,15 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeFormat](../api/rangeformat_get.md) | [RangeFormat](rangeformat.md) |Чтение свойств и связей объекта rangeFormat.|
-|[Создание объекта RangeBorder](../api/rangeformat_post_borders.md) |[RangeBorder](rangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
-|[Список границ](../api/rangeformat_list_borders.md) |Коллекция объектов [RangeBorder](rangeborder.md)| Получение коллекции объектов RangeBorder.|
-|[Обновление](../api/rangeformat_update.md) | [RangeFormat](rangeformat.md)    |Обновление объекта RangeFormat. |
-|[Autofitcolumns](../api/rangeformat_autofitcolumns.md)|Нет|Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
-|[Autofitrows](../api/rangeformat_autofitrows.md)|Нет|Изменяет высоту строк текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
+|[Получение объекта RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |Чтение свойств и связей объекта rangeFormat.|
+|[Создание объекта RangeBorder](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
+|[Список границ](../api/rangeformat-list-borders.md) |Коллекция объектов [RangeBorder](rangeborder.md)| Получение коллекции объектов RangeBorder.|
+|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |Обновление объекта RangeFormat. |
+|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Нет|Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
+|[Autofitrows](../api/rangeformat-autofitrows.md)|Нет|Изменяет высоту строк текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columnWidth|double|Возвращает или задает ширину всех столбцов в пределах диапазона. Если столбцы разной ширины, будет возвращено значение NULL.|
 |horizontalAlignment|string|Представляет горизонтальное выравнивание для указанного объекта. Возможные значения: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
@@ -24,7 +36,7 @@
 |wrapText|boolean|Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |borders|Коллекция объектов [RangeBorder](rangeborder.md)|Коллекция объектов границ, которые применяются к общему выделенному диапазону. Только для чтения.|
 |fill|[RangeFill](rangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
