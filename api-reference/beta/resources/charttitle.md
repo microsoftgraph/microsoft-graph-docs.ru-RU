@@ -1,4 +1,16 @@
+---
+title: Тип ресурса ChartTitle
+description: Представляет объект заголовка диаграммы.
+ms.openlocfilehash: ce2091c0cbd2435d96a1a931f7e46d6e2b8fb920
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27082370"
+---
 # <a name="charttitle-resource-type"></a>Тип ресурса ChartTitle
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Представляет объект заголовка диаграммы.
 
@@ -7,18 +19,18 @@
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
-|[Обновление](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
+|[Получение объекта ChartTitle](../api/charttitle-get.md) | [ChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
+|[Update](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
 
 ## <a name="properties"></a>Свойства
-| Свойство       | Тип    |Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overlay|boolean|Логическое значение, указывающее, отображается ли заголовок диаграммы поверх нее.|
-|text|string|Представляет текст заголовка диаграммы.|
+|text|строка|Представляет текст заголовка диаграммы.|
 |visible|boolean|Логическое значение, представляющее видимость объекта заголовка диаграммы.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип    |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[ChartTitleFormat](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
 
