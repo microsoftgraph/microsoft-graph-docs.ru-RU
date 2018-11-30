@@ -1,16 +1,26 @@
-# <a name="emailaddress-resource-type"></a><span data-ttu-id="e4259-101">Тип ресурса emailAddress</span><span class="sxs-lookup"><span data-stu-id="e4259-101">emailAddress resource type</span></span>
+---
+title: Тип ресурса emailAddress
+description: Имя и электронный адрес контакта или получателя сообщения.
+ms.openlocfilehash: 962b2f36af9e292125edc3da8606cd532b8c2ec0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024733"
+---
+# <a name="emailaddress-resource-type"></a><span data-ttu-id="e6c99-103">Тип ресурса emailAddress</span><span class="sxs-lookup"><span data-stu-id="e6c99-103">emailAddress resource type</span></span>
 
-<span data-ttu-id="e4259-102">Имя и электронный адрес контакта или получателя сообщения.</span><span class="sxs-lookup"><span data-stu-id="e4259-102">The name and email address of a contact or message recipient.</span></span>
+<span data-ttu-id="e6c99-104">Имя и электронный адрес контакта или получателя сообщения.</span><span class="sxs-lookup"><span data-stu-id="e6c99-104">The name and email address of a contact or message recipient.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e4259-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="e4259-103">Properties</span></span>
-| <span data-ttu-id="e4259-104">Свойство</span><span class="sxs-lookup"><span data-stu-id="e4259-104">Property</span></span>     | <span data-ttu-id="e4259-105">Тип</span><span class="sxs-lookup"><span data-stu-id="e4259-105">Type</span></span>   |<span data-ttu-id="e4259-106">Описание</span><span class="sxs-lookup"><span data-stu-id="e4259-106">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e6c99-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="e6c99-105">Properties</span></span>
+| <span data-ttu-id="e6c99-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="e6c99-106">Property</span></span>     | <span data-ttu-id="e6c99-107">Тип</span><span class="sxs-lookup"><span data-stu-id="e6c99-107">Type</span></span>   |<span data-ttu-id="e6c99-108">Описание</span><span class="sxs-lookup"><span data-stu-id="e6c99-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e4259-107">address</span><span class="sxs-lookup"><span data-stu-id="e4259-107">address</span></span>|<span data-ttu-id="e4259-108">String</span><span class="sxs-lookup"><span data-stu-id="e4259-108">String</span></span>|<span data-ttu-id="e4259-109">Электронный адрес человека или объекта.</span><span class="sxs-lookup"><span data-stu-id="e4259-109">The email address of the person or entity.</span></span>|
-|<span data-ttu-id="e4259-110">name</span><span class="sxs-lookup"><span data-stu-id="e4259-110">name</span></span>|<span data-ttu-id="e4259-111">String</span><span class="sxs-lookup"><span data-stu-id="e4259-111">String</span></span>|<span data-ttu-id="e4259-112">Отображаемое имя человека или объекта.</span><span class="sxs-lookup"><span data-stu-id="e4259-112">The display name of the person or entity.</span></span>|
+|<span data-ttu-id="e6c99-109">address</span><span class="sxs-lookup"><span data-stu-id="e6c99-109">address</span></span>|<span data-ttu-id="e6c99-110">String</span><span class="sxs-lookup"><span data-stu-id="e6c99-110">String</span></span>|<span data-ttu-id="e6c99-111">Электронный адрес человека или объекта.</span><span class="sxs-lookup"><span data-stu-id="e6c99-111">The email address of the person or entity.</span></span>|
+|<span data-ttu-id="e6c99-112">name</span><span class="sxs-lookup"><span data-stu-id="e6c99-112">name</span></span>|<span data-ttu-id="e6c99-113">String</span><span class="sxs-lookup"><span data-stu-id="e6c99-113">String</span></span>|<span data-ttu-id="e6c99-114">Отображаемое имя человека или объекта.</span><span class="sxs-lookup"><span data-stu-id="e6c99-114">The display name of the person or entity.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e4259-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e4259-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e6c99-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e6c99-115">JSON representation</span></span>
 
-<span data-ttu-id="e4259-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e4259-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="e6c99-116">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e6c99-116">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
