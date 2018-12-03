@@ -1,0 +1,172 @@
+---
+title: Создание объекта windows10TeamGeneralConfiguration
+description: Создание объекта windows10TeamGeneralConfiguration.
+ms.openlocfilehash: 14c188164244bc092f800053749adb1194125ac4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27082050"
+---
+# <a name="create-windows10teamgeneralconfiguration"></a>Создание объекта windows10TeamGeneralConfiguration
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Создает объект [windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md).
+## <a name="prerequisites"></a>Необходимые компоненты
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/deviceConfigurations
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Заголовок|Значение|
+|:---|:---|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
+
+## <a name="request-body"></a>Текст запроса
+В теле запроса добавьте представление объекта windows10TeamGeneralConfiguration в формате JSON.
+
+Ниже показаны свойства, которые необходимо указывать при создании объекта windows10TeamGeneralConfiguration.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|azureOperationalInsightsBlockTelemetry|Boolean|Указывает, следует ли заблокировать оперативную аналитику Azure.|
+|azureOperationalInsightsWorkspaceId|String|Идентификатор рабочей области оперативной аналитики Azure.|
+|azureOperationalInsightsWorkspaceKey|String|Ключ рабочей области оперативной аналитики Azure.|
+|connectAppBlockAutoLaunch|Boolean|Указывает, следует ли автоматически запускать приложение Connect, когда начинается проекция.|
+|maintenanceWindowBlocked|Boolean|Указывает, следует ли запретить устанавливать период обслуживания для обновлений устройства.|
+|maintenanceWindowDurationInHours|Int32|Длительность периода обслуживания для обновлений устройства. Допустимые значения: от 0 до 5|
+|maintenanceWindowStartTime|TimeOfDay|Начало периода обслуживания для обновлений устройства.|
+|miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|Канал. Возможные значения: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
+|miracastBlocked|Boolean|Указывает, следует ли заблокировать беспроводное проецирование.|
+|miracastRequirePin|Boolean|Указывает, обязательно ли использовать ПИН-код для беспроводного проецирования.|
+|settingsBlockMyMeetingsAndFiles|Boolean|Указывает, следует ли отключить функцию "Мои встречи и файлы" в меню "Пуск", которая показывает собрания и файлы вошедшего пользователя из Office 365.|
+|settingsBlockSessionResume|Boolean|Указывает, следует ли разрешить возобновление сеанса после истечения времени.|
+|settingsBlockSigninSuggestions|Boolean|Указывает, следует ли отключить автоматическое добавление в диалоговое окно входа приглашенных из запланированных собраний.|
+|settingsDefaultVolume|Int32|Задает объем нового сеанса по умолчанию. Допустимые значения: от 0 до 100. Значение по умолчанию — 45. Допустимые значения: от 0 до 100|
+|settingsScreenTimeoutInMinutes|Int32|Определяет время до отключения экрана Центра (в минутах).|
+|settingsSessionTimeoutInMinutes|Int32|Определяет время до истечения времени сеанса (в минутах).|
+|settingsSleepTimeoutInMinutes|Int32|Определяет время до перехода Центра в спящий режим (в минутах).|
+|welcomeScreenBlockAutomaticWakeUp|Boolean|Указывает, следует ли заблокировать автоматический вывод экрана приветствия из спящего режима, когда кто-то входит в комнату.|
+|welcomeScreenBackgroundImageUrl|String|URL-адрес фонового изображения экрана приветствия. URL-адрес должен начинаться с протокола HTTPS и возвращать PNG-изображение.|
+|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune-deviceconfig-welcomescreenmeetinginformation.md)|Информация о собраниях, показываемая на экране приветствия. Возможные значения: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
+
+
+
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md) в теле ответа.
+
+## <a name="example"></a>Пример
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+Content-type: application/json
+Content-length: 1306
+
+{
+  "@odata.type": "#microsoft.graph.windows10TeamGeneralConfiguration",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "azureOperationalInsightsBlockTelemetry": true,
+  "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
+  "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
+  "connectAppBlockAutoLaunch": true,
+  "maintenanceWindowBlocked": true,
+  "maintenanceWindowDurationInHours": 0,
+  "maintenanceWindowStartTime": "11:59:09.3130000",
+  "miracastChannel": "one",
+  "miracastBlocked": true,
+  "miracastRequirePin": true,
+  "settingsBlockMyMeetingsAndFiles": true,
+  "settingsBlockSessionResume": true,
+  "settingsBlockSigninSuggestions": true,
+  "settingsDefaultVolume": 5,
+  "settingsScreenTimeoutInMinutes": 14,
+  "settingsSessionTimeoutInMinutes": 15,
+  "settingsSleepTimeoutInMinutes": 13,
+  "welcomeScreenBlockAutomaticWakeUp": true,
+  "welcomeScreenBackgroundImageUrl": "https://example.com/welcomeScreenBackgroundImageUrl/",
+  "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
+}
+```
+
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 1414
+
+{
+  "@odata.type": "#microsoft.graph.windows10TeamGeneralConfiguration",
+  "id": "0c94aa20-aa20-0c94-20aa-940c20aa940c",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "azureOperationalInsightsBlockTelemetry": true,
+  "azureOperationalInsightsWorkspaceId": "Azure Operational Insights Workspace Id value",
+  "azureOperationalInsightsWorkspaceKey": "Azure Operational Insights Workspace Key value",
+  "connectAppBlockAutoLaunch": true,
+  "maintenanceWindowBlocked": true,
+  "maintenanceWindowDurationInHours": 0,
+  "maintenanceWindowStartTime": "11:59:09.3130000",
+  "miracastChannel": "one",
+  "miracastBlocked": true,
+  "miracastRequirePin": true,
+  "settingsBlockMyMeetingsAndFiles": true,
+  "settingsBlockSessionResume": true,
+  "settingsBlockSigninSuggestions": true,
+  "settingsDefaultVolume": 5,
+  "settingsScreenTimeoutInMinutes": 14,
+  "settingsSessionTimeoutInMinutes": 15,
+  "settingsSleepTimeoutInMinutes": 13,
+  "welcomeScreenBlockAutomaticWakeUp": true,
+  "welcomeScreenBackgroundImageUrl": "https://example.com/welcomeScreenBackgroundImageUrl/",
+  "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
+}
+```
+
+
+
+
+

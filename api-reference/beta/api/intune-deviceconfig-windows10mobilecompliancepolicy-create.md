@@ -1,0 +1,176 @@
+---
+title: Create windows10MobileCompliancePolicy
+description: Создание объекта windows10MobileCompliancePolicy.
+ms.openlocfilehash: 692c8d5188e59223648d3bacbf01286502c70e82
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27079185"
+---
+# <a name="create-windows10mobilecompliancepolicy"></a>Create windows10MobileCompliancePolicy
+
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+
+Создание объекта [windows10MobileCompliancePolicy](../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md).
+## <a name="prerequisites"></a>Необходимые разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/deviceCompliancePolicies
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Заголовок|Значение|
+|:---|:---|
+|Authorization|Требуется Bearer &lt;маркер&gt;
+|
+|Accept|application/json|
+
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта windows10MobileCompliancePolicy в формате JSON.
+
+В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта windows10MobileCompliancePolicy.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|passwordRequired|Boolean|Указывает, что для разблокировки устройства с Windows Phone требуется пароль.|
+|passwordBlockSimple|Boolean|Указывает, нужно ли блокировать синхронизацию календаря.|
+|passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
+|passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых следует запретить.|
+|passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 255.|
+|passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
+|passwordRequireToUnlockFromIdle|Boolean|Указывает, что для разблокировки неактивного устройства требуется указывать пароль.|
+|osMinimumVersion|String|Минимальная версия Windows Phone.|
+|osMaximumVersion|String|Максимальная версия Windows Phone.|
+|earlyLaunchAntiMalwareDriverEnabled|Boolean|Указывает, что служба подтверждения работоспособности устройства с Windows должна сообщать о работоспособности (драйвер раннего запуска антивредоносной программы включен).|
+|bitLockerEnabled|Boolean|Указывает, что служба подтверждения работоспособности устройства с Windows должна сообщать о работоспособности (средство BitLocker включено).|
+|secureBootEnabled|Boolean|Указывает, что служба подтверждения работоспособности устройства с Windows должна сообщать о работоспособности (безопасная загрузка включена).|
+|codeIntegrityEnabled|Boolean|Указывает, что служба подтверждения работоспособности устройства с Windows должна сообщать о работоспособности.|
+|storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
+|activeFirewallRequired|Логический|Требуется active брандмауэра на устройствах Windows.|
+|validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) коллекции|Допустимый операционной системы выполните построение диапазонов на устройствах Windows. Эта коллекция может содержать не более 10 000 элементов.|
+
+
+
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [windows10MobileCompliancePolicy](../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md) в тексте ответа.
+
+## <a name="example"></a>Пример
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
+Content-type: application/json
+Content-length: 1222
+
+{
+  "@odata.type": "#microsoft.graph.windows10MobileCompliancePolicy",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordMinimumLength": 5,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordRequiredType": "alphanumeric",
+  "passwordPreviousPasswordBlockCount": 2,
+  "passwordExpirationDays": 6,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordRequireToUnlockFromIdle": true,
+  "osMinimumVersion": "Os Minimum Version value",
+  "osMaximumVersion": "Os Maximum Version value",
+  "earlyLaunchAntiMalwareDriverEnabled": true,
+  "bitLockerEnabled": true,
+  "secureBootEnabled": true,
+  "codeIntegrityEnabled": true,
+  "storageRequireEncryption": true,
+  "activeFirewallRequired": true,
+  "validOperatingSystemBuildRanges": [
+    {
+      "@odata.type": "microsoft.graph.operatingSystemVersionRange",
+      "description": "Description value",
+      "lowestVersion": "Lowest Version value",
+      "highestVersion": "Highest Version value"
+    }
+  ]
+}
+```
+
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 1330
+
+{
+  "@odata.type": "#microsoft.graph.windows10MobileCompliancePolicy",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "id": "3d4237b0-37b0-3d42-b037-423db037423d",
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
+  "passwordRequired": true,
+  "passwordBlockSimple": true,
+  "passwordMinimumLength": 5,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordRequiredType": "alphanumeric",
+  "passwordPreviousPasswordBlockCount": 2,
+  "passwordExpirationDays": 6,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordRequireToUnlockFromIdle": true,
+  "osMinimumVersion": "Os Minimum Version value",
+  "osMaximumVersion": "Os Maximum Version value",
+  "earlyLaunchAntiMalwareDriverEnabled": true,
+  "bitLockerEnabled": true,
+  "secureBootEnabled": true,
+  "codeIntegrityEnabled": true,
+  "storageRequireEncryption": true,
+  "activeFirewallRequired": true,
+  "validOperatingSystemBuildRanges": [
+    {
+      "@odata.type": "microsoft.graph.operatingSystemVersionRange",
+      "description": "Description value",
+      "lowestVersion": "Lowest Version value",
+      "highestVersion": "Highest Version value"
+    }
+  ]
+}
+```
+
+
+
+
+
