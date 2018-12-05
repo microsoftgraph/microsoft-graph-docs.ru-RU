@@ -1,12 +1,12 @@
 ---
 title: Получение звукового группы маршрутизации
 description: Извлечение свойств и связи объекта audioRoutingGroup.
-ms.openlocfilehash: ce1c8afea4932427a700970a16d3ec22a7f14d8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 4da3ceb829cf1a2e59fa34c7073fe7f54126a199
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076344"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156014"
 ---
 # <a name="get-audio-routing-group"></a>Получение звукового группы маршрутизации
 
@@ -21,7 +21,7 @@ ms.locfileid: "27076344"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложения     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Для приложения     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [audioRoutingGroup](../resources/audioroutinggroup.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -57,7 +57,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

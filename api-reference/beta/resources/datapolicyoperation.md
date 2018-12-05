@@ -1,12 +1,12 @@
 ---
 title: Тип ресурса dataPolicyOperation
 description: Представляет операцию политики отправленных данных. Он содержит сведения, необходимые для отслеживания состояния операции. Например администратор компании запрос данных политики операции экспорта данных сотрудника компании и затем отслеживать этот запрос.
-ms.openlocfilehash: e6763f4050157658ea0a7f4d1e6f52668ed6e4b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6e896fdfa60b733dd91e9da573d998c1949f0d9c
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080291"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156035"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Тип ресурса dataPolicyOperation
 
@@ -30,6 +30,7 @@ ms.locfileid: "27080291"
 |storageLocation|String|URL-адрес расположения, в котором выполняется экспорт данных для запросы на экспорт.|
 |userId|String|Идентификатор пользователя, для которого выполняется операция.|
 |submittedDateTime|DateTimeOffset|Представляет, когда для этой операции с данными был отправлен запрос, в формате UTC, в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Ход выполнения|Double|Указывает ход выполнения операции.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -54,7 +55,8 @@ ms.locfileid: "27080291"
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)"
+  "submittedDateTime": "String (timestamp)",
+  "progress": "Double"
 }
 
 ```

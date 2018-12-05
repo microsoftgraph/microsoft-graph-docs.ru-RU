@@ -1,12 +1,12 @@
 ---
 title: 'Участник: configureMixer'
 description: Настройка как смешанное аудио для различных участников в многосторонней беседе.
-ms.openlocfilehash: 32d50d165ed7beb69b99e5d0940b49acbce8f45c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 58ccdcb345d55ae28b30dd5ded6b95ef5b30fe81
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075986"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156003"
 ---
 # <a name="participant-configuremixer"></a>Участник: configureMixer
 
@@ -21,7 +21,7 @@ ms.locfileid: "27075986"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложения     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Для приложения     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,12 +38,12 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр      | Тип    |Description|
+| Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) коллекции| Конфигурация микшер уровни для заданного звука участников.|
 |clientContext|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
 
 ## <a name="example"></a>Пример
@@ -85,7 +85,7 @@ Content-Length: 501
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

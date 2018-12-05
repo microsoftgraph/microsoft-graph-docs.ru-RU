@@ -1,12 +1,12 @@
 ---
 title: Обновление звука группы маршрутизации
 description: Изменение источники и приемники audioRoutingGroup.
-ms.openlocfilehash: a6b5d2ed3c11733f7a8e46ed4db61def05395c5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6edbe0512b13de75645c3094b258de46c21956e9
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077297"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156028"
 ---
 # <a name="update-audio-routing-group"></a>Обновление звука группы маршрутизации
 
@@ -21,7 +21,7 @@ ms.locfileid: "27077297"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложения     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Для приложения     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,13 +38,13 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство       | Тип    |Description|
+| Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
 | Приемники | Коллекция String | Участники целевой в audioRoutingGroup. |
 | routingMode | String | Возможные значения: `oneToOne`, `multicast`. |
 | sources | Коллекция String | Участник источника в audioRoutingGroup. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [audioRoutingGroup](../resources/audioroutinggroup.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -73,7 +73,7 @@ Content-Length: 233
   ]
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
