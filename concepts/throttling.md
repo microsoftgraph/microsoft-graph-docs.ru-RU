@@ -1,3 +1,13 @@
+---
+title: Руководство по регулированию Microsoft Graph
+description: Регулирование позволяет ограничить количество одновременных вызовов службы, чтобы предотвратить перегрузку ресурсов. Служба Microsoft Graph предназначена для обработки большого количества запросов. Регулирование помогает поддерживать оптимальную производительность и надежность службы Microsoft Graph, если выполняется слишком много запросов.
+ms.openlocfilehash: dfe7fed3efc01932137df00d6d62ad069faf64cd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27092620"
+---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
 
@@ -30,4 +40,15 @@
 2. Повторите запрос.
 3. Если запрос снова не удастся и будет получен код ошибки 429, регулирование продолжается. Используйте рекомендуемую задержку Retry-After, затем повторите запрос. Выполняйте эти действия, пока запрос не будет удачно выполнен.
 
-Развернутое описание регулирования в Microsoft Cloud см. в [этой статье](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx).
+Заголовок Retry-After сейчас доступен для ресурсов, представляющих следующее:
+- [пользователь](/graph/api/resources/user?view=graph-rest-1.0);
+- [фотография](/graph/api/resources/profilephoto?view=graph-rest-1.0);
+- [почта](/graph/api/resources/message?view=graph-rest-1.0);
+- [календарь (пользователи и группы)](/graph/api/resources/event?view=graph-rest-1.0);
+- [контакт](/graph/api/resources/contact?view=graph-rest-1.0);
+- [вложение](/graph/api/resources/attachment?view=graph-rest-1.0);
+- [групповые чаты](/graph/api/resources/conversation?view=graph-rest-1.0);
+- [люди и социальные медиа](/graph/api/resources/social-overview?view=graph-rest-beta);
+- [хранилище (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0).
+
+Развернутое описание регулирования в Microsoft Cloud см. в [этой статье](https://msdn.microsoft.com/library/office/dn589798.aspx).

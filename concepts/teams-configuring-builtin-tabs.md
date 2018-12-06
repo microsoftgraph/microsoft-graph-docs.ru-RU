@@ -1,0 +1,112 @@
+---
+title: Настройка встроенных типов вкладок в Microsoft Teams
+description: 'Чтобы создать или настроить вкладку Microsoft Teams с помощью API Microsoft Graph, '
+ms.openlocfilehash: 2485e65ebac0c7201fe8b8210f8e4af9b9c8f164
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27092613"
+---
+# <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
+
+Чтобы [создать](/graph/api/teamstab-add?view=graph-rest-beta) или [настроить](/graph/api/teamstab-update?view=graph-rest-beta) вкладку Microsoft Teams с помощью API Microsoft Graph, нужно знать значение `teamsAppId` приложения, и предоставить для этого типа приложения значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`.
+В этой статье объясняется, как получить эти значения для встроенных типов вкладок.
+
+## <a name="custom-tabs"></a>Настраиваемые вкладки
+
+Чтобы использовать Microsoft Graph для настройки вкладки, связанной с [поставщиком вкладок](https://docs.microsoft.com/ru-RU/microsoftteams/platform/concepts/tabs/tabs-overview), которого вы записали, определите значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`, предоставляемые [интерфейсом конфигурации приложения для Microsoft Teams](https://docs.microsoft.com/ru-RU/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), и передайте эти же значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl` в Microsoft Graph.
+
+Объект `teamsAppId` аналогичен `id` в [схеме манифеста приложения для Microsoft Teams](https://docs.microsoft.com/ru-RU/microsoftteams/platform/resources/schema/manifest-schema).
+
+## <a name="website-tabs"></a>Вкладки веб-сайтов
+
+Для вкладок веб-сайтов объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.web`. Ниже приведена конфигурация.
+
+| Свойство   | Тип        | Описание                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | строка      | NULL                                                     |
+| contentUrl | строка      | URL-адрес веб-сайта                                       |
+| removeUrl  | строка      | NULL                                                     |
+| websiteUrl | строка      | URL-адрес веб-сайта                                       |
+
+## <a name="planner-tabs"></a>Вкладки планировщика
+
+Для вкладок планировщика объекту teamsAppId соответствует `com.microsoft.teamspace.tab.planner`. Ниже приведена конфигурация.
+
+| Свойство   | Тип        | Описание                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | строка      | Идентификатор плана (идентификатор для применения с действием GET /planner/plans/{id}).                                              |
+| contentUrl | строка      | `https://tasks.office.com/{tenantName}/Home/PlannerFrame?page=7&planId={planId}`, где {tenantName} — это имя клиента (например, example.onmicrosoft.com), а {planId} совпадает с идентификатором сущности.  |
+| removeUrl  | строка      | Совпадает со значением contentUrl.    |
+| websiteUrl | строка      | Совпадает со значением contentUrl.   |
+
+Чтобы создать новый план для отображения на вкладке планировщика, см. статью [Создание объекта plannerPlan](/graph/api/planner-post-plans?view=graph-rest-beta).
+
+## <a name="microsoft-stream-tabs"></a>Вкладки Microsoft Stream
+
+Для вкладок Microsoft Stream объекту `teamsAppId` соответствует `com.microsoftstream.embed.skypeteamstab`. Ниже приведена конфигурация.
+
+| Свойство   | Тип        | Описание                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | строка      | NULL                                                     |
+| contentUrl | строка      | `https://web.microsoftstream.com/embed/video/{id}?autoplay=false&showinfo=true&app=microsoftteams&l={locale}`, где {id} — это идентификатор видеопотока. Чтобы найти {id} потока, откройте его в браузере и взгляните на URL-адрес — он будет представлен в форме `https://{domain}.microsoftstream.com/video/{id}`.  |
+| removeUrl  | строка      | NULL                                                     |
+| websiteUrl | строка      | `https://web.microsoftstream.com/video/{id}`, где {id} — это идентификатор видеопотока.    |
+
+## <a name="microsoft-forms-tabs"></a>Вкладки Microsoft Forms
+
+Для вкладок Microsoft Forms объекту `teamsAppId` соответствует `81fef3a6-72aa-4648-a763-de824aeafb7d`.
+Конфигурация:
+
+| Свойство   | Тип        | Описание                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | строка      | Идентификатор формы.  Определите это значение, перейдите к форме на веб-сайте Forms и найдите URL-адрес формы `https://forms.office.com/Pages/DesignPage.aspx#FormId={formId}`.      |
+| contentUrl | строка      | `https://forms.office.com/Pages/TeamsDesignPage.aspx?Host=Teams&lang={locale}&groupId={groupId}&tid={tid}&teamsTheme={theme}&upn={upn}&fragment=FormId%3D{formId}`, где {formId} совпадает с идентификатором сущности, а {locale}, {groupId}, {tid}, {upn} являются литералами.   |
+| removeUrl  | строка      | NULL                                                     |
+| websiteUrl | строка      |  `https://forms.office.com`    |
+
+## <a name="word-excel-powerpoint-and-pdf-tabs"></a>Вкладки Word, Excel, PowerPoint и PDF
+
+В таблице ниже указаны `teamsAppId` для каждого приложения.
+
+| Приложение   | teamsAppId | Тип (расширение)                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| Word | `com.microsoft.teamspace.tab.file.staticviewer.word` | `docx` |
+| Excel | `com.microsoft.teamspace.tab.file.staticviewer.excel` | `xlsx` |
+| PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
+| PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
+
+Конфигурация не поддерживается.
+
+## <a name="wiki-tabs"></a>Вкладки вики-сайта
+
+Для вкладок вики-сайта объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.wiki`.
+Вкладки вики-сайта не поддерживают конфигурацию через Graph.
+Однако обратите внимание, что практически отсутствуют параметры для конфигурации — в ненастроенной вкладке вики-сайта первому пользователю просто нужно щелкнуть пункт **Настройка вкладки**, чтобы выполнить ее настройку.
+
+## <a name="document-library-tabs"></a>Вкладки библиотеки документов
+
+Для вкладок библиотеки документов объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.files.sharepoint`. Конфигурация не поддерживается.
+
+## <a name="onenote-tabs"></a>Вкладки OneNote
+
+Для вкладок OneNote объекту `teamsAppId` соответствует `0d820ecd-def2-4297-adad-78056cde7c78`. Ниже приведена конфигурация.
+
+| Свойство   | Тип        | Описание                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | строка      | `{randomGuid}_{notebookId}`, где {randomGuid} — это созданный вами идентификатор GUID.                                      |
+| contentUrl | строка      | URL-адрес формы `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
+| removeUrl  | строка      | URL-адрес формы `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
+| websiteUrl | строка      | URL-адрес формы `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, где `oneNoteWebUrl` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) |
+
+## <a name="power-bi-tabs"></a>Вкладки Power BI
+
+Для вкладок Power BI объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.powerbi`.
+Конфигурация не поддерживается.
+
+## <a name="sharepoint-page-and-list-tabs"></a>Вкладки страниц и списков SharePoint
+
+Для вкладок страниц и списков SharePoint объекту `teamsAppId` соответствует `2a527703-1f6f-4559-a332-d8a7d288cd88`.
+Конфигурация не поддерживается.
+Если нужна конфигурация, рекомендуется использовать вкладку веб-сайта.
