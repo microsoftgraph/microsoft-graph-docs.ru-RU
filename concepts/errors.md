@@ -1,10 +1,20 @@
+---
+title: Сообщения об ошибках и типы ресурсов Microsoft Graph
+description: "  "
+ms.openlocfilehash: a4641b4e4de5adcb3ce6b935aaabe504d76e6676
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27092591"
+---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Сообщения об ошибках и типы ресурсов Microsoft Graph
 
 <!--In this article:
   
--    [Status code](#msg_status_code)
--    [Error resource type](#msg_error_resource_type)
--    [Code property](#msg_code_property)
+-   [Status code](#msg-status-code)
+-   [Error resource type](#msg-error-resource-type)
+-   [Code property](#msg-code-property)
 
 <a name="msg_error_response"> </a> -->
 
@@ -18,7 +28,7 @@
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Неправильный запрос (Bad Request)                     | Не удается обработать запрос, так как он имеет неправильный формат или содержит ошибку.                                                                       |
 | 401         | Не авторизован (Unauthorized)                    | Требуемые сведения о проверке подлинности отсутствуют или недопустимы для ресурса.                                                   |
-| 403         | Запрещено (Forbidden)                       | Доступ к запрошенному ресурсу запрещен. Возможно, у пользователя недостаточно разрешений.                                                 |
+| 403         | Запрещено                       | Доступ к запрошенному ресурсу запрещен. Возможно, у пользователя недостаточно разрешений. <br /><br /> **Важно!** Если к ресурсу применены политики условного доступа, то, возможно, будет возвращена ошибка HTTP 403; Forbidden error=insufficent_claims. Дополнительные сведения о Microsoft Graph и условном доступе см. в статье [Руководство для разработчиков по условному доступу в Azure Active Directory](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Не найдено (Not Found)                       | Запрашиваемый ресурс не существует.                                                                                                  |
 | 405         | Недопустимый метод (Method Not Allowed)              | Метод HTTP в запросе недопустим для ресурса.                                                                         |
 | 406         | Неприемлемо (Not Acceptable)                  | Эта служба не поддерживает формат, запрошенный в заголовке Accept.                                                                |
@@ -29,7 +39,8 @@
 | 413         | Слишком большой объект запроса (Request Entity Too Large)        | Размер запроса превышает максимальное значение.                                                                                            |
 | 415         | Неподдерживаемый тип носителя (Unsupported Media Type)          | Тип содержимого запроса имеет формат, который не поддерживает служба.                                                      |
 | 416         | Запрошенный диапазон невыполним (Requested Range Not Satisfiable) | Указан недопустимый или недоступный диапазон байтов.                                                                                    |
-| 422         | Необрабатываемый объект (Unprocessable Entity)            | Не удается обработать запрос из-за неправильной семантики.                                                                       |
+| 422         | Необрабатываемый объект (Unprocessable Entity)            | Не удается обработать запрос из-за неправильной семантики.                                                                        |
+| 423         | Заблокирован                          | Ресурс заблокирован.                                                                                          |
 | 429         | Слишком много запросов (Too Many Requests)               | Количество запросов клиентского приложения отрегулировано, оно сможет повторить запрос по истечении некоторого времени.                |
 | 500         | Внутренняя ошибка сервера (Internal Server Error)           | При обработке запроса возникла внутренняя ошибка сервера.                                                                       |
 | 501         | Не реализовано (Not Implemented)                 | Запрашиваемая функция не реализована.                                                                                               |
@@ -40,7 +51,7 @@
 
 Сообщение об ошибке — это один объект JSON, содержащий одно свойство **error**. Этот объект включает все сведения об ошибке. Вы можете использовать возвращенные сведения вместо кода состояния HTTP или вместе с ним. Ниже представлен пример полного текста ошибки JSON.
 
-<!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
+<!-- { "blockType": "ignored", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response" } -->
 ```json
 {
   "error": {
@@ -60,13 +71,13 @@
 
 Ресурс ошибки возвращается, если при обработке запроса происходит ошибка.
 
-Сообщения об ошибках соответствуют определению в спецификации [OData версии 4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091).
+Сообщения об ошибках соответствуют определению в спецификации [OData версии 4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091).
 
 ### <a name="json-representation"></a>Представление JSON
 
 Ресурс ошибки состоит из указанных ниже ресурсов.
 
-<!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+<!-- { "blockType": "resource", "@odata.type": "odata.error" } -->
 ```json
 {
   "error": { "@odata.type": "odata.error" }  
@@ -91,13 +102,6 @@
 | **code**       | string                 | Строка с кодом возникшей ошибки.                                                            |
 | **message**    | string                 | Сообщение для разработчика о возникшей ошибке. Оно не предназначено для пользователя. |
 | **innererror** | error object           | Необязательное. Дополнительные объекты ошибки, которые могут быть более информативны, чем сообщение об ошибке верхнего уровня.                     |
-<!-- {
-  "type": "#page.annotation",
-  "description": "Understand the error format for the API and error codes.",
-  "keywords": "error response, error, error codes, innererror, message, code",
-  "section": "documentation",
-  "tocPath": "Misc/Error Responses"
-} -->
 
 <!--<a name="msg_code_property"> </a> -->
 
@@ -197,4 +201,16 @@ public bool IsError(string expectedErrorCode)
 <!-- ##Additional Resources##
 
 - [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
+- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Understand the error format for the API and error codes.",
+  "keywords": "error response, error, error codes, innererror, message, code",
+  "section": "documentation",
+  "suppressions": [
+    " Warning: /concepts/errors.md:
+      Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
+  ],
+  "tocPath": "Misc/Error Responses"
+} -->
