@@ -1,0 +1,488 @@
+---
+title: Обновление содержимого страниц OneNote
+description: " Корпоративная записная книжка в Office 365"
+ms.openlocfilehash: 746520c5071dba0cf11d2fde02daa502522c56f6
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27092635"
+---
+# <a name="update-onenote-page-content"></a><span data-ttu-id="8ccf3-103">Обновление содержимого страниц OneNote</span><span class="sxs-lookup"><span data-stu-id="8ccf3-103">Update OneNote page content</span></span>
+
+<span data-ttu-id="8ccf3-104">**Относится к:** обычные записные книжки в OneDrive | корпоративные записные книжки в Office 365</span><span class="sxs-lookup"><span data-stu-id="8ccf3-104">**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365</span></span>
+
+
+<span data-ttu-id="8ccf3-105">Чтобы обновить содержимое страницы OneNote, необходимо отправить запрос PATCH в конечную точку *content* страницы:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-105">To update the content of a OneNote page, you send a PATCH request to the page's *content* endpoint:</span></span>
+
+`PATCH ../notes/pages/{id}/content`</p>
+
+<span data-ttu-id="8ccf3-p101">Отправьте объект изменений JSON в тексте сообщения. Если запрос будет выполнен успешно, Microsoft Graph вернет код состояния HTTP 204.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p101">Send a JSON change object in the message body. If the request is successful, the OneNote API returns a 204 HTTP status code.</span></span>
+
+
+<a name="request-uri"></a>
+
+## <a name="construct-the-request-uri"></a><span data-ttu-id="8ccf3-108">Создание URI запроса</span><span class="sxs-lookup"><span data-stu-id="8ccf3-108">Construct the request URI</span></span>
+
+<span data-ttu-id="8ccf3-109">Чтобы создать URI запроса, начните с корневого URL-адреса службы:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-109">To construct the request URI, start with the service root URL:</span></span>
+
+`https://graph.microsoft.com/v1.0/me/onenote`
+
+<br/>
+
+<span data-ttu-id="8ccf3-110">Затем добавьте конечную точку *content* страницы:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-110">Then append the page's *content* endpoint:</span></span>
+
+- <span data-ttu-id="8ccf3-111">**Получение HTML-кода страницы и всех определенных значений *data-id***</span><span class="sxs-lookup"><span data-stu-id="8ccf3-111">**Get the page HTML and all defined *data-id* values**</span></span><br/><br/>`../pages/{id}/content`   
+
+- <span data-ttu-id="8ccf3-112">**Получение HTML-кода страницы, всех определенных значений *data-id* и всех созданных значений *id***</span><span class="sxs-lookup"><span data-stu-id="8ccf3-112">**Get the page HTML, all defined *data-id* values, and all generated *id* values**</span></span><br/><br/>`../pages/{page-id}/content?includeIDs=true` 
+
+<span data-ttu-id="8ccf3-113">Значения **data-id** и **id** используются в качестве идентификаторов **target** для элементов, которые требуется изменить.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-113">The **data-id** and **id** values are used as **target** identifiers for the elements you want to update.</span></span>
+
+ 
+<span data-ttu-id="8ccf3-114">Полный URI запроса будет выглядеть так:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-114">Your full request URI will look like this:</span></span><br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
+
+
+<span data-ttu-id="8ccf3-115">Узнайте больше о [корневом URL-адресе службы](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-115">Learn more about the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).</span></span>
+
+
+<a name="message-body"></a>
+
+## <a name="construct-the-message-body"></a><span data-ttu-id="8ccf3-116">Составление текста сообщения</span><span class="sxs-lookup"><span data-stu-id="8ccf3-116">Construct the message body</span></span>
+
+<span data-ttu-id="8ccf3-117">HTML-код страницы OneNote содержит текст, изображения и другое содержимое, структурированные с помощью таких элементов, как **div**, **img** и **ol**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-117">The HTML of a OneNote page contains text, images, and other content organized into structures such as **div**, **img**, and **ol** elements.</span></span> <span data-ttu-id="8ccf3-118">Для обновления содержимого страницы OneNote необходимо добавлять и заменять элементы HTML на странице.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-118">To update OneNote page content, you add and replace HTML elements on the page.</span></span>
+
+<span data-ttu-id="8ccf3-119">Изменения отправляются в тексте сообщения в виде массива объектов JSON.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-119">Your changes are sent in the message body as an array of JSON change objects.</span></span> <span data-ttu-id="8ccf3-120">В каждом объекте указываются целевой элемент, новое содержимое HTML и действия, которые нужно выполнить с содержимым.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-120">Each object specifies the target element, new HTML content, and what to do with the content.</span></span>
+
+<span data-ttu-id="8ccf3-p104">Следующий массив определяет два изменения. Первое вставляет изображение над абзацем в качестве элемента того же уровня, а второе добавляет элемент в список в качестве последнего дочернего элемента.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p104">The following array defines two changes. The first inserts an image above a paragraph as a sibling, and the second appends an item to a list as a last child.</span></span>
+
+```json
+[
+   {
+    'target':'#para-id',
+    'action':'insert',
+    'position':'before',
+    'content':'<img src="image-url-or-part-name" alt="Image above the target paragraph" />'
+  }, 
+  {
+    'target':'#list-id',
+    'action':'append',
+    'content':'<li>Item at the end of the list</li>'
+  }
+]
+```
+
+<span data-ttu-id="8ccf3-123">См. [другие примеры](#example-requests).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-123">See [more examples](#example-requests).</span></span>
+
+
+### <a name="attributes-for-json-change-objects"></a><span data-ttu-id="8ccf3-124">Атрибуты объектов JSON</span><span class="sxs-lookup"><span data-stu-id="8ccf3-124">Attributes for JSON change objects</span></span>
+
+<span data-ttu-id="8ccf3-125">Для определения объектов JSON в запросах PATCH используются атрибуты **target**, **action**, **position** и **content**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-125">Use the **target**, **action**, **position**, and **content** attributes to define JSON objects for PATCH requests.</span></span>
+
+#### <a name="target"></a><span data-ttu-id="8ccf3-126">target</span><span class="sxs-lookup"><span data-stu-id="8ccf3-126">target</span></span>
+
+<span data-ttu-id="8ccf3-p105">Обновляемый элемент. Значением должен быть один из следующих идентификаторов:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p105">The element to update. The value must be one of the following identifiers:</span></span>
+
+| <span data-ttu-id="8ccf3-129">Идентификатор</span><span class="sxs-lookup"><span data-stu-id="8ccf3-129">Identifier</span></span> | <span data-ttu-id="8ccf3-130">Описание</span><span class="sxs-lookup"><span data-stu-id="8ccf3-130">Description</span></span> |  
+|------|------|  
+| <span data-ttu-id="8ccf3-131">#{data-id}</span><span class="sxs-lookup"><span data-stu-id="8ccf3-131">#{data-id}</span></span> | <p><span data-ttu-id="8ccf3-132">Этот идентификатор при желании определяется для элементов входного HTML-кода при [создании](onenote-create-page.md) или [обновлении страницы](onenote-update-page.md).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-132">This ID is optionally defined on elements in the input HTML when [creating a page](onenote-create-page.md) or [updating a page](onenote-update-page.md).</span></span> <span data-ttu-id="8ccf3-133">Добавьте перед этим значением префикс #.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-133">Prefix the value with a #.</span></span></p><p> <span data-ttu-id="8ccf3-134">Пример:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-134">Example:</span></span><br/><span data-ttu-id="8ccf3-135">`'target':'#intro'` задает в качестве целевого элемент `<div data-id="intro" ...>`</span><span class="sxs-lookup"><span data-stu-id="8ccf3-135">`'target':'#intro'` targets the element `<div data-id="intro" ...>`</span></span></p> |  
+| <span data-ttu-id="8ccf3-136">id</span><span class="sxs-lookup"><span data-stu-id="8ccf3-136">id</span></span> | <p><span data-ttu-id="8ccf3-137">Это [сгенерированный идентификатор](#generated-ids) из Microsoft Graph, необходимый для большинства операций замены.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-137">This is the [generated ID](#generated-ids) from Microsoft Graph, and is required for most replace operations.</span></span> <span data-ttu-id="8ccf3-138">Не добавляйте перед ним префикс #.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-138">Do not prefix with a #.</span></span></p><p> <span data-ttu-id="8ccf3-139">Пример:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-139">Example:</span></span><br/><span data-ttu-id="8ccf3-140">`'target':'div:{33f8a2...}{37}'` задает в качестве целевого элемент `<div id="div:{33f8a2...}{37}" ...>`</span><span class="sxs-lookup"><span data-stu-id="8ccf3-140">`'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</span></span></p><p><span data-ttu-id="8ccf3-141">Не путайте эти идентификаторы со значениями **id**, определенными во [входном HTML-коде](onenote-input-output-html.md).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-141">Don't confuse these with any **id** values defined in the [input HTML](onenote-input-output-html.md).</span></span> <span data-ttu-id="8ccf3-142">Все значения **id**, отправляемые во входном HTML-коде, отклоняются.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-142">All **id** values sent in the input HTML are discarded.</span></span></p> |  
+| <span data-ttu-id="8ccf3-143">body</span><span class="sxs-lookup"><span data-stu-id="8ccf3-143">body</span></span> | <span data-ttu-id="8ccf3-144">Ключевое слово, указывающее на первый разделитель на странице.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-144">The keyword that targets the first div on the page.</span></span> <span data-ttu-id="8ccf3-145">Не добавляйте перед ним префикс #.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-145">Do not prefix with a #.</span></span> |  
+| <span data-ttu-id="8ccf3-146">title</span><span class="sxs-lookup"><span data-stu-id="8ccf3-146">title</span></span> | <span data-ttu-id="8ccf3-147">Ключевое слово, указывающее на заголовок страницы.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-147">The keyword that targets the page title.</span></span> <span data-ttu-id="8ccf3-148">Не добавляйте перед ним префикс #.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-148">Do not prefix with a #.</span></span> |  
+ 
+#### <a name="action"></a><span data-ttu-id="8ccf3-149">action</span><span class="sxs-lookup"><span data-stu-id="8ccf3-149">action</span></span>
+
+<span data-ttu-id="8ccf3-p111">Действие, которое нужно выполнить с целевым элементом. См. [поддерживаемые действия для элементов](#supported-elements-and-actions).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p111">The action to perform on the target element. See [supported actions for elements](#supported-elements-and-actions).</span></span>
+
+| <span data-ttu-id="8ccf3-152">Действие</span><span class="sxs-lookup"><span data-stu-id="8ccf3-152">Action</span></span> | <span data-ttu-id="8ccf3-153">Описание</span><span class="sxs-lookup"><span data-stu-id="8ccf3-153">Description</span></span> |  
+|------|------|  
+| <span data-ttu-id="8ccf3-154">append</span><span class="sxs-lookup"><span data-stu-id="8ccf3-154">append</span></span> | <p><span data-ttu-id="8ccf3-155">Добавляет указанное содержимое к целевому элементу в качестве первого или последнего дочернего элемента, в зависимости от значения атрибута **position**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-155">Adds the supplied content to the target as a first or last child, as determined by the **position** attribute.</span></span></p><p><span data-ttu-id="8ccf3-156">Применяется только к элементам **body**, **div**, **ol** и **ul**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-156">Applies only to **body**, **div**, **ol**, and **ul** elements.</span></span></p> |  
+| <span data-ttu-id="8ccf3-157">insert</span><span class="sxs-lookup"><span data-stu-id="8ccf3-157">insert</span></span> | <span data-ttu-id="8ccf3-158">Добавляет указанное содержимое в качестве элемента того же уровня перед целевым элементом или после него, в зависимости от значения атрибута **position**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-158">Adds the supplied content as a sibling before or after the target, as determined by the **position** attribute.</span></span> |  
+| <span data-ttu-id="8ccf3-159">prepend</span><span class="sxs-lookup"><span data-stu-id="8ccf3-159">prepend</span></span> | <p><span data-ttu-id="8ccf3-160">Добавляет указанное содержимое к целевому элементу в качестве первого дочернего элемента.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-160">Adds the supplied content to the target as a first child.</span></span> <span data-ttu-id="8ccf3-161">Сокращение от действия **append** + **before**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-161">Shortcut for **append** + **before**.</span></span></p><p><span data-ttu-id="8ccf3-162">Применяется только к элементам **body**, **div**, **ol** и **ul**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-162">Applies only to **body**, **div**, **ol**, and **ul** elements.</span></span></p> |  
+| <span data-ttu-id="8ccf3-163">replace</span><span class="sxs-lookup"><span data-stu-id="8ccf3-163">replace</span></span> | <p><span data-ttu-id="8ccf3-164">Заменяет целевой элемент указанным содержимым.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-164">Replaces the target with the supplied content.</span></span></p><p><span data-ttu-id="8ccf3-165">Для большинства действий **replace** необходимо использовать [сгенерированный идентификатор](#generated-ids) целевого элемента (кроме элементов **img** и **object** внутри разделителя, которые также поддерживают использование **data-id**).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-165">Most **replace** actions require using the [generated ID](#generated-ids) for the target (except **img** and **object** elements within a div, which also support using **data-id**).</span></span></p> |  
+ 
+#### <a name="position"></a><span data-ttu-id="8ccf3-166">position</span><span class="sxs-lookup"><span data-stu-id="8ccf3-166">position</span></span>
+
+<span data-ttu-id="8ccf3-p113">Место для добавления предоставленного контента относительно целевого элемента. Если атрибут опущен, по умолчанию он принимает значение **after**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p113">The location to add the supplied content, relative to the target element. Defaults to **after** if omitted.</span></span>
+
+| <span data-ttu-id="8ccf3-169">Position</span><span class="sxs-lookup"><span data-stu-id="8ccf3-169">Position</span></span> | <span data-ttu-id="8ccf3-170">Описание</span><span class="sxs-lookup"><span data-stu-id="8ccf3-170">Description</span></span> |  
+|------|------|  
+| <span data-ttu-id="8ccf3-171">after (по умолчанию)</span><span class="sxs-lookup"><span data-stu-id="8ccf3-171">after (default)</span></span> |<p><span data-ttu-id="8ccf3-172">С действием **append**: последний дочерний элемент целевого элемента.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-172">With **append**: The last child of the target element.</span></span></p><p><span data-ttu-id="8ccf3-173">С действием **insert**: следующий элемент того же уровня, что и целевой элемент.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-173">With **insert**: The subsequent sibling of the target element.</span></span></p> |
+| <span data-ttu-id="8ccf3-174">before</span><span class="sxs-lookup"><span data-stu-id="8ccf3-174">before</span></span> | <p><span data-ttu-id="8ccf3-175">С действием **append**: первый дочерний элемент целевого элемента.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-175">With **append**: The first child of the target element.</span></span></p><p><span data-ttu-id="8ccf3-176">С действием **insert**: предыдущий элемент того же уровня, что и целевой элемент.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-176">With **insert**: The preceding sibling of the target element.</span></span></p> |
+
+#### <a name="content"></a><span data-ttu-id="8ccf3-177">content</span><span class="sxs-lookup"><span data-stu-id="8ccf3-177">content</span></span>
+
+<span data-ttu-id="8ccf3-178">Строка правильно оформленного HTML-кода, который нужно добавить на страницу, а также двоичные данные изображения или файла.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-178">A string of well-formed HTML to add to the page, and any image or file binary data.</span></span> <span data-ttu-id="8ccf3-179">Если в содержимом есть двоичные данные, необходимо отправить запрос с использованием типа контента `multipart/form-data` с частью Commands (см. [пример](#multipart-request-with-binary-content)).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-179">If the content contains binary data, the request must be sent using the `multipart/form-data` content type with a "Commands" part (see an [example](#multipart-request-with-binary-content)).</span></span> 
+ 
+
+<a name="generated-ids"></a>
+
+### <a name="generated-ids"></a><span data-ttu-id="8ccf3-180">Сгенерированные идентификаторы</span><span class="sxs-lookup"><span data-stu-id="8ccf3-180">Generated IDs</span></span>
+<span data-ttu-id="8ccf3-181">Microsoft Graph создает значения **id** для тех элементов на странице, которые можно обновить.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-181">Microsoft Graph generates **id** values for the elements on the page that can be updated.</span></span> <span data-ttu-id="8ccf3-182">Чтобы получить сгенерированные идентификаторы, используйте выражение строки `includeIDs=true` в запросе GET:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-182">To get generated IDs, use the `includeIDs=true` query string expression in your GET request:</span></span>
+
+`GET ../notes/pages/{page-id}/content?includeIDs=true` 
+
+> <span data-ttu-id="8ccf3-183">**Примечание.** API отклоняет все значения **id**, определенные во [входном HTML-коде](onenote-input-output-html.md) запросов create-page и update-page.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-183">**Note:** The API discards all **id** values that are defined in the [input HTML](onenote-input-output-html.md) of create-page and update-page requests.</span></span>
+
+<span data-ttu-id="8ccf3-184">Ниже показаны сгенерированные идентификаторы для абзаца и изображения в [выходном HTML-коде](onenote-input-output-html.md) страницы.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-184">The following example shows generated IDs for a paragraph and an image in the [output HTML](onenote-input-output-html.md) of a page.</span></span>
+
+```html
+<p id="p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}">Some text on the page</p>
+<img id="img:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{45}" ... />
+```
+
+<span data-ttu-id="8ccf3-185">Сгенерированные значения **id** могут изменяться после обновления страницы, поэтому вам следует получить текущие значения до создания использующего их PATCH-запроса.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-185">Generated **id** values might change after a page update, so you should get the current values before building a PATCH request that uses them.</span></span>
+ 
+<span data-ttu-id="8ccf3-186">Вы можете указать целевые элементы, используя значение **data-id** или **id**, как указано ниже.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-186">You can specify target elements by using the **data-id** or **id** value, as follows:</span></span>
+
+- <span data-ttu-id="8ccf3-187">Для действий **append** и **insert** в качестве целевого значения можно использовать любой идентификатор.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-187">For **append** and **insert** actions, you can use either ID as the target value.</span></span>
+- <span data-ttu-id="8ccf3-188">Для действий **replace** необходимо использовать сгенерированный идентификатор для всех элементов, кроме заголовка, а также изображений и объектов, находящихся внутри разделителя.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-188">For **replace** actions, you must use the generated ID for all elements except for the page title and images and objects that are within a div.</span></span> 
+    - <span data-ttu-id="8ccf3-189">Чтобы заменить заголовок, используйте ключевое слово **title**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-189">To replace a title, use the **title** keyword.</span></span> 
+    - <span data-ttu-id="8ccf3-190">Чтобы заменить изображения и объекты, находящиеся внутри разделителя, используйте атрибут **data-id** или **id**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-190">To replace images and objects that are within a div, use either **data-id** or **id**.</span></span>
+
+<span data-ttu-id="8ccf3-191">В приведенном ниже примере используется значение **id** целевого элемента.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-191">The following example uses the **id** value for the target.</span></span> <span data-ttu-id="8ccf3-192">Не используйте префикс # со сгенерированным идентификатором.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-192">Don't use the # prefix with a generated ID.</span></span>
+
+```json
+[
+   {
+    'target':'p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}',
+    'action':'insert',
+    'position':'before',
+    'content':'<p>This paragraph goes above the target paragraph.</p>'
+  }
+]
+```
+
+<a name="support-matrix"></a>
+
+## <a name="supported-elements-and-actions"></a><span data-ttu-id="8ccf3-193">Поддерживаемые элементы и действия</span><span class="sxs-lookup"><span data-stu-id="8ccf3-193">Supported elements and actions</span></span>
+
+<span data-ttu-id="8ccf3-194">Многие элементы на странице можно обновлять, но каждый тип элемента поддерживает определенные действия.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-194">Many elements on the page can be updated, but each element type supports specific actions.</span></span> <span data-ttu-id="8ccf3-195">Ниже показаны поддерживаемые целевые элементы и поддерживаемые ими действия по обновлению.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-195">The following table shows supported target elements and the update actions that they support.</span></span>
+
+| <span data-ttu-id="8ccf3-196">Элемент</span><span class="sxs-lookup"><span data-stu-id="8ccf3-196">Element</span></span> | <span data-ttu-id="8ccf3-197">Заменить</span><span class="sxs-lookup"><span data-stu-id="8ccf3-197">Replace</span></span> | <span data-ttu-id="8ccf3-198">Добавление дочернего элемента</span><span class="sxs-lookup"><span data-stu-id="8ccf3-198">Append child</span></span> | <span data-ttu-id="8ccf3-199">Вставка элемента того же уровня</span><span class="sxs-lookup"><span data-stu-id="8ccf3-199">Insert sibling</span></span> |  
+|------|:------:|:------:|:------:|  
+| <span data-ttu-id="8ccf3-200">body</span><span class="sxs-lookup"><span data-stu-id="8ccf3-200">body</span></span><br /> <span data-ttu-id="8ccf3-201">(делает целевым первый разделитель на странице)</span><span class="sxs-lookup"><span data-stu-id="8ccf3-201">(targets first div on the page)</span></span> | <span data-ttu-id="8ccf3-202">нет</span><span class="sxs-lookup"><span data-stu-id="8ccf3-202">no</span></span> | <span data-ttu-id="8ccf3-203">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-203">**yes**</span></span> | <span data-ttu-id="8ccf3-204">нет</span><span class="sxs-lookup"><span data-stu-id="8ccf3-204">no</span></span> |  
+| <span data-ttu-id="8ccf3-205">div</span><span class="sxs-lookup"><span data-stu-id="8ccf3-205">div</span></span><br /> <span data-ttu-id="8ccf3-206">([абсолютное расположение](onenote-abs-pos.md))</span><span class="sxs-lookup"><span data-stu-id="8ccf3-206">([absolute positioned](onenote-abs-pos.md))</span></span> | <span data-ttu-id="8ccf3-207">нет</span><span class="sxs-lookup"><span data-stu-id="8ccf3-207">no</span></span> | <span data-ttu-id="8ccf3-208">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-208">**yes**</span></span> | <span data-ttu-id="8ccf3-209">нет</span><span class="sxs-lookup"><span data-stu-id="8ccf3-209">no</span></span> |  
+| <span data-ttu-id="8ccf3-210">div</span><span class="sxs-lookup"><span data-stu-id="8ccf3-210">div</span></span><br /> <span data-ttu-id="8ccf3-211">(внутри разделителя)</span><span class="sxs-lookup"><span data-stu-id="8ccf3-211">(within a div)</span></span> | <span data-ttu-id="8ccf3-212">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-212">**yes**</span></span><br/><span data-ttu-id="8ccf3-213">(только идентификатор)</span><span class="sxs-lookup"><span data-stu-id="8ccf3-213">(id only)</span></span> | <span data-ttu-id="8ccf3-214">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-214">**yes**</span></span> | <span data-ttu-id="8ccf3-215">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-215">**yes**</span></span> |   
+| <span data-ttu-id="8ccf3-216">img, object</span><span class="sxs-lookup"><span data-stu-id="8ccf3-216">img, object</span></span><br /> <span data-ttu-id="8ccf3-217">(внутри разделителя)</span><span class="sxs-lookup"><span data-stu-id="8ccf3-217">(within a div)</span></span> | <span data-ttu-id="8ccf3-218">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-218">**yes**</span></span> | <span data-ttu-id="8ccf3-219">нет</span><span class="sxs-lookup"><span data-stu-id="8ccf3-219">no</span></span> | <span data-ttu-id="8ccf3-220">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-220">**yes**</span></span> |   
+| <span data-ttu-id="8ccf3-221">ol, ul</span><span class="sxs-lookup"><span data-stu-id="8ccf3-221">ol, ul</span></span> | <span data-ttu-id="8ccf3-222">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-222">**yes**</span></span><br/><span data-ttu-id="8ccf3-223">(только идентификатор)</span><span class="sxs-lookup"><span data-stu-id="8ccf3-223">(id only)</span></span> | <span data-ttu-id="8ccf3-224">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-224">**yes**</span></span> | <span data-ttu-id="8ccf3-225">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-225">**yes**</span></span> |   
+| <span data-ttu-id="8ccf3-226">table</span><span class="sxs-lookup"><span data-stu-id="8ccf3-226">table</span></span> | <span data-ttu-id="8ccf3-227">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-227">**yes**</span></span><br/><span data-ttu-id="8ccf3-228">(только идентификатор)</span><span class="sxs-lookup"><span data-stu-id="8ccf3-228">(id only)</span></span> | <span data-ttu-id="8ccf3-229">нет</span><span class="sxs-lookup"><span data-stu-id="8ccf3-229">no</span></span> | <span data-ttu-id="8ccf3-230">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-230">**yes**</span></span> |   
+| <span data-ttu-id="8ccf3-231">p, li, h1-h6</span><span class="sxs-lookup"><span data-stu-id="8ccf3-231">p, li, h1-h6</span></span> | <span data-ttu-id="8ccf3-232">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-232">**yes**</span></span><br/><span data-ttu-id="8ccf3-233">(только идентификатор)</span><span class="sxs-lookup"><span data-stu-id="8ccf3-233">(id only)</span></span> | <span data-ttu-id="8ccf3-234">нет</span><span class="sxs-lookup"><span data-stu-id="8ccf3-234">no</span></span> | <span data-ttu-id="8ccf3-235">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-235">**yes**</span></span> |   
+| <span data-ttu-id="8ccf3-236">title</span><span class="sxs-lookup"><span data-stu-id="8ccf3-236">title</span></span> | <span data-ttu-id="8ccf3-237">**да**</span><span class="sxs-lookup"><span data-stu-id="8ccf3-237">**yes**</span></span> | <span data-ttu-id="8ccf3-238">нет</span><span class="sxs-lookup"><span data-stu-id="8ccf3-238">no</span></span> | <span data-ttu-id="8ccf3-239">Нет</span><span class="sxs-lookup"><span data-stu-id="8ccf3-239">no</span></span> |  
+ 
+<br/>
+
+<span data-ttu-id="8ccf3-240">Указанные ниже элементы не поддерживают никаких действий обновления.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-240">The following elements do not support any update actions.</span></span>
+
+- <span data-ttu-id="8ccf3-241">img ([абсолютное расположение](onenote-abs-pos.md))</span><span class="sxs-lookup"><span data-stu-id="8ccf3-241">img ([absolute positioned](onenote-abs-pos.md))</span></span>
+- <span data-ttu-id="8ccf3-242">object ([абсолютное расположение](onenote-abs-pos.md))</span><span class="sxs-lookup"><span data-stu-id="8ccf3-242">object ([absolute positioned](onenote-abs-pos.md))</span></span>
+- <span data-ttu-id="8ccf3-243">tr, td</span><span class="sxs-lookup"><span data-stu-id="8ccf3-243">tr, td</span></span>
+- <span data-ttu-id="8ccf3-244">meta</span><span class="sxs-lookup"><span data-stu-id="8ccf3-244">meta</span></span>
+- <span data-ttu-id="8ccf3-245">head</span><span class="sxs-lookup"><span data-stu-id="8ccf3-245">head</span></span>
+- <span data-ttu-id="8ccf3-246">span</span><span class="sxs-lookup"><span data-stu-id="8ccf3-246">span</span></span>
+- <span data-ttu-id="8ccf3-247">a</span><span class="sxs-lookup"><span data-stu-id="8ccf3-247">a</span></span>
+- <span data-ttu-id="8ccf3-248">Теги style</span><span class="sxs-lookup"><span data-stu-id="8ccf3-248">style tags</span></span>
+
+
+<a name="examples"></a>
+
+## <a name="example-requests"></a><span data-ttu-id="8ccf3-249">Примеры запросов</span><span class="sxs-lookup"><span data-stu-id="8ccf3-249">Example requests</span></span>
+
+<span data-ttu-id="8ccf3-250">Запрос на обновление содержит одно или несколько изменений, представленных в виде объектов JSON.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-250">An update request contains one or more changes represented as JSON change objects.</span></span> <span data-ttu-id="8ccf3-251">Эти объекты могут определять различные целевые элементы на странице, а также различные действия и содержимое для целевых элементов.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-251">These objects can define different targets on the page and different actions and content for the targets.</span></span>
+
+<span data-ttu-id="8ccf3-252">Следующие примеры включают объекты JSON, используемые в запросах PATCH, а также готовые запросы PATCH:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-252">The following examples include JSON objects used in PATCH requests and complete PATCH requests:</span></span>
+
+- [<span data-ttu-id="8ccf3-253">Добавление дочерних элементов</span><span class="sxs-lookup"><span data-stu-id="8ccf3-253">Append child elements</span></span>](#append-child-elements)
+- [<span data-ttu-id="8ccf3-254">Вставка элементов того же уровня</span><span class="sxs-lookup"><span data-stu-id="8ccf3-254">Insert sibling elements</span></span>](#insert-sibling-elements)
+- [<span data-ttu-id="8ccf3-255">Замена элементов</span><span class="sxs-lookup"><span data-stu-id="8ccf3-255">Replace elements</span></span>](#replace-elements)
+- [<span data-ttu-id="8ccf3-256">Выполнение запросов PATCH</span><span class="sxs-lookup"><span data-stu-id="8ccf3-256">Complete PATCH requests</span></span>](#complete-patch-request-examples)
+
+
+<a name="append-examples"></a>
+
+### <a name="append-child-elements"></a><span data-ttu-id="8ccf3-257">Добавление дочерних элементов</span><span class="sxs-lookup"><span data-stu-id="8ccf3-257">Append child elements</span></span>
+
+<span data-ttu-id="8ccf3-p119">Действие **append** добавляет дочерний элемент в элемент **body**, **div** (в составе разделителя), **ol** или **ul**. Атрибут **position** определяет, следует ли добавить дочерний элемент перед целевым элементом или после него. Расположение по умолчанию — **after**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p119">The **append** action adds a child to a **body**, **div** (within a div), **ol**, or **ul** element. The **position** attribute determines whether to append the child before or after the target. The default position is **after**.</span></span>
+
+#### <a name="append-to-a-div"></a><span data-ttu-id="8ccf3-261">Добавление в разделитель</span><span class="sxs-lookup"><span data-stu-id="8ccf3-261">Append to a div</span></span>
+
+<span data-ttu-id="8ccf3-262">В приведенном ниже примере в элемент **div1** добавляется два дочерних узла.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-262">The following example adds two child nodes to the **div1** element.</span></span> <span data-ttu-id="8ccf3-263">Изображение добавляется в качестве первого дочернего элемента, а абзац — в качестве последнего.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-263">It adds an image as the first child and a paragraph as the last child.</span></span> 
+
+```json
+[
+ {
+    'target':'#div1',
+    'action':'append',
+    'position':'before',
+    'content':'<img data-id="first-child" src="image-url-or-part-name" />'
+  },
+  {
+    'target':'#div1',
+    'action':'append',
+    'content':'<p data-id="last-child">New paragraph appended to the div</p>'
+  }
+]
+```
+ 
+
+#### <a name="append-to-the-body-element"></a><span data-ttu-id="8ccf3-264">Добавление к элементу *body*</span><span class="sxs-lookup"><span data-stu-id="8ccf3-264">Append to the *body* element</span></span>
+
+<span data-ttu-id="8ccf3-265">Вы можете использовать сокращение **body** для добавления дочернего элемента внутри первого разделителя на любой странице.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-265">You can use the **body** shortcut to append a child element inside the first div on any page.</span></span>
+
+<span data-ttu-id="8ccf3-266">В приведенном ниже примере в первый разделитель на странице добавляется два абзаца: один в качестве первого дочернего элемента, а другой — в качестве последнего.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-266">The following example adds two paragraphs as the first child and the last child to the first div on the page.</span></span> <span data-ttu-id="8ccf3-267">Не используйте префикс # с целевым элементом **body**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-267">Don't use a # with the **body** target.</span></span> <span data-ttu-id="8ccf3-268">В этом примере действие **prepend** используется в качестве сокращения от действия **append** + **before**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-268">This example uses the **prepend** action as a shortcut for **append** + **before**.</span></span>
+
+```json
+[
+  {
+    'target':'body',
+    'action':'prepend',
+    'content':'<p data-id="first-child">New paragraph as first child in the first div</p>'
+  },
+  {
+    'target':'body',
+    'action':'append',
+    'content':'<p data-id="last-child">New paragraph as last child in the first div</p>'
+  }
+]
+```
+ 
+
+#### <a name="append-to-a-list"></a><span data-ttu-id="8ccf3-269">Добавление в список</span><span class="sxs-lookup"><span data-stu-id="8ccf3-269">Append to a list</span></span>
+
+<span data-ttu-id="8ccf3-p122">В следующем примере элемент списка добавляется в качестве последнего дочернего элемента к целевому списку. Свойство **list-style-type** определено, так как элемент использует стиль списка не по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p122">The following example adds a list item as a last child to the target list. The **list-style-type** property is defined because the item uses a non-default list style.</span></span>
+
+```json
+[
+  {
+    'target':'#circle-ul',
+    'action':'append',
+    'content':'<li style="list-style-type:circle">Item at the end of the list</li>'
+  }
+]
+```
+ 
+
+<a name="insert-examples"></a>
+
+### <a name="insert-sibling-elements"></a><span data-ttu-id="8ccf3-272">Вставка элементов того же уровня</span><span class="sxs-lookup"><span data-stu-id="8ccf3-272">Insert sibling elements</span></span>
+
+<span data-ttu-id="8ccf3-273">Действие **insert** добавляет элемент того же уровня в целевой элемент.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-273">The **insert** action adds a sibling to the target element.</span></span> <span data-ttu-id="8ccf3-274">Атрибут **position** определяет, где следует вставлять элемент: до или после целевого элемента.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-274">The **position** attribute determines whether to insert the sibling before or after the target.</span></span> <span data-ttu-id="8ccf3-275">По умолчанию задано положение **after**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-275">The default position is **after**.</span></span> <span data-ttu-id="8ccf3-276">См. [элементы, поддерживающие действие **insert**](#supported-elements-and-actions).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-276">See [elements that support **insert**](#supported-elements-and-actions).</span></span>
+
+#### <a name="insert-siblings"></a><span data-ttu-id="8ccf3-277">Вставка элементов того же уровня</span><span class="sxs-lookup"><span data-stu-id="8ccf3-277">Insert siblings</span></span>
+
+<span data-ttu-id="8ccf3-p124">В следующем примере два узла того же уровня добавляются на страницу. Над элементом **para1** добавляется изображение, а под элементом **para2** — абзац.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p124">The following example adds two sibling nodes to the page. It adds an image above the **para1** element and a paragraph below the **para2** element.</span></span>
+
+```json
+[
+  {
+     'target':'#para1',
+     'action':'insert',
+     'position':'before',
+     'content':'<img src="image-url-or-part-name" alt="Image inserted above the target" />'
+  },
+  {
+    'target':'#para2',
+     'action':'insert',
+     'content':'<p data-id="next-sibling">Paragraph inserted below the target</p>'
+  }
+]
+```
+ 
+
+<a name="replace-examples"></a>
+
+### <a name="replace-elements"></a><span data-ttu-id="8ccf3-280">Замена элементов</span><span class="sxs-lookup"><span data-stu-id="8ccf3-280">Replace elements</span></span>
+
+<span data-ttu-id="8ccf3-281">Вы можете использовать **data-id** или сгенерированный **id** в качестве целевого значения для замены элементов **img** и **object** внутри разделителя.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-281">You can use either the **data-id** or generated **id** as the target value to replace **img** and **object** elements that are within a div.</span></span> <span data-ttu-id="8ccf3-282">Чтобы заменить заголовок, используйте ключевое слово **title**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-282">To replace the page title, use the **title** keyword.</span></span> <span data-ttu-id="8ccf3-283">Для всех остальных [элементов, поддерживающих действие **replace**](#supported-elements-and-actions), необходимо использовать сгенерированный идентификатор.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-283">For all other [elements that support **replace**](#supported-elements-and-actions), you must use the generated ID.</span></span>
+
+#### <a name="replace-an-image"></a><span data-ttu-id="8ccf3-284">Замена изображения</span><span class="sxs-lookup"><span data-stu-id="8ccf3-284">Replace an image</span></span>
+
+<span data-ttu-id="8ccf3-285">В приведенном ниже примере изображение заменяется разделителем; в качестве целевого элемента используется **data-id** изображения.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-285">The following example replaces an image with a div by using the image's **data-id** as the target.</span></span> 
+
+```json
+[
+  {
+    'target':'#img1',
+    'action':'replace',
+    'content':'<div data-id="new-div"><p>This div replaces the image</p></div>'
+  }
+]
+```
+ 
+
+#### <a name="update-a-table"></a><span data-ttu-id="8ccf3-286">Обновление таблицы</span><span class="sxs-lookup"><span data-stu-id="8ccf3-286">Update a table</span></span> 
+
+<span data-ttu-id="8ccf3-p126">Этот пример демонстрирует, как обновить таблицу при помощи ее сгенерированного ИД. Замена элементов **tr** и **td** не поддерживается, но вы можете заменить таблицу целиком.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p126">This example shows how to update a table by using its generated ID. Replacing **tr** and **td** elements is not supported, but you can replace the entire table.</span></span>
+
+```json
+[
+  {
+    'target':'table:{de3e0977-94e4-4bb0-8fee-0379eaf47486}{11}',
+    'action':'replace',
+    'content':'<table data-id="football">
+      <tr><td><p><b>Brazil</b></p></td><td><p>Germany</p></td></tr>
+      <tr><td><p>France</p></td><td><p><b>Italy</b></p></td></tr>
+      <tr><td><p>Netherlands</p></td><td><p><b>Spain</b></p></td></tr>
+      <tr><td><p>Argentina</p></td><td><p><b>Germany</b></p></td></tr></table>'
+  }
+]
+```
+ 
+
+#### <a name="change-the-title"></a><span data-ttu-id="8ccf3-289">Изменение заголовка</span><span class="sxs-lookup"><span data-stu-id="8ccf3-289">Change the title</span></span> 
+
+<span data-ttu-id="8ccf3-290">В этом примере показано, как изменить заголовок страницы.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-290">This example shows how to change the title of a page.</span></span> <span data-ttu-id="8ccf3-291">Чтобы изменить заголовок, используйте ключевое слово **title** в качестве целевого значения.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-291">To change the title, use the **title** keyword as the target value.</span></span> <span data-ttu-id="8ccf3-292">Не используйте префикс # в целевом заголовке.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-292">Don't use a # with the title target.</span></span>
+
+```json
+[
+  {
+    'target':'title',
+    'action':'replace',
+    'content':'New title'
+  }
+]
+```
+ 
+
+#### <a name="update-a-to-do-item"></a><span data-ttu-id="8ccf3-293">Обновление элемента списка дел</span><span class="sxs-lookup"><span data-stu-id="8ccf3-293">Update a to-do item</span></span>
+
+<span data-ttu-id="8ccf3-294">В приведенном ниже примере используется действие replace, чтобы перевести флажок в списке дел в состояние "Выполнено".</span><span class="sxs-lookup"><span data-stu-id="8ccf3-294">The following example uses the replace action to change a to-do check box item to a completed state.</span></span>
+
+```json
+[
+  {
+    'target':'#task1',
+    'action':'replace',
+    'content':'<p data-tag="to-do:completed" data-id="task1">First task</p>'
+  }
+]
+```
+
+<span data-ttu-id="8ccf3-295">Дополнительные сведения об использовании атрибута [data-tag](onenote-note-tags.md) см. в **этой статье**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-295">See [Use note tags](onenote-note-tags.md) for more about using the **data-tag** attribute.</span></span>
+
+
+<a name="complete-requests"></a>
+
+### <a name="complete-patch-request-examples"></a><span data-ttu-id="8ccf3-296">Примеры выполнения запросов PATCH</span><span class="sxs-lookup"><span data-stu-id="8ccf3-296">Complete PATCH request examples</span></span>
+
+<span data-ttu-id="8ccf3-297">В следующих примерах показаны готовые запросы PATCH.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-297">The following examples show complete PATCH requests.</span></span>
+
+#### <a name="request-with-text-content-only"></a><span data-ttu-id="8ccf3-298">Запрос с текстовым содержимым</span><span class="sxs-lookup"><span data-stu-id="8ccf3-298">Request with text content only</span></span>
+
+<span data-ttu-id="8ccf3-299">В приведенном ниже примере показан запрос PATCH, в котором используется тип контента **application/json**.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-299">The following example shows a PATCH request that uses the **application/json** content type.</span></span> <span data-ttu-id="8ccf3-300">Этот формат можно использовать, если контент не содержит двоичных данных.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-300">You can use this format when your content doesn't contain binary data.</span></span>
+
+```json
+PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
+
+Content-Type: application/json
+Authorization: Bearer {token}
+
+[
+   {
+    'target':'#para-id',
+    'action':'insert',
+    'position':'before',
+    'content':'<img src="image-url" alt="New image from a URL" />'
+  }, 
+  {
+    'target':'#list-id',
+    'action':'append',
+    'content':'<li>Item at the bottom of the list</li>'
+  }
+]
+```
+ 
+<a name="multipart"></a>
+
+#### <a name="multipart-request-with-binary-content"></a><span data-ttu-id="8ccf3-301">Составной запрос с двоичным содержимым</span><span class="sxs-lookup"><span data-stu-id="8ccf3-301">Multipart request with binary content</span></span> 
+
+<span data-ttu-id="8ccf3-302">В приведенном ниже примере показан составной запрос PATCH, включающий двоичные данные.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-302">The following example shows a multipart PATCH request that includes binary data.</span></span> <span data-ttu-id="8ccf3-303">Составные запросы включают часть Commands, в которой указывается тип контента **application/json** и предоставляется массив объектов изменений JSON.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-303">Multipart requests require a "Commands" part that specifies the **application/json** content type and contains the array of JSON change objects.</span></span> <span data-ttu-id="8ccf3-304">Другие части данных могут содержать двоичные данные.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-304">Other data parts can contain binary data.</span></span> <span data-ttu-id="8ccf3-305">Как правило, имена частей представляют собой строки, к которым добавлено текущее время в миллисекундах или случайный GUID.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-305">Part names typically are strings appended with the current time in milliseconds or a random GUID.</span></span>
+
+```json
+PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
+
+Content-Type: multipart/form-data; boundary=PartBoundary123
+Authorization: Bearer {token}
+
+--PartBoundary123
+Content-Disposition: form-data; name="Commands"
+Content-Type: application/json
+
+[
+  {
+    'target':'img:{2998967e-69b3-413f-a221-c1a3b5cbe0fc}{42}',
+    'action':'replace',
+    'content':'<img src="name:image-part-name" alt="New binary image" />'
+  }, 
+  {
+    'target':'#list-id',
+    'action':'append',
+    'content':'<li>Item at the bottom of the list</li>'
+  }
+]
+
+--PartBoundary123
+Content-Disposition: form-data; name="image-part-name"
+Content-Type: image/png
+
+... binary image data ...
+
+--PartBoundary123--
+```
+
+<a name="request-response-info"></a>
+
+## <a name="request-and-response-information-for-patch-requests"></a><span data-ttu-id="8ccf3-306">Информация о запросах PATCH и соответствующих ответах</span><span class="sxs-lookup"><span data-stu-id="8ccf3-306">Request and response information for PATCH requests</span></span>
+
+| <span data-ttu-id="8ccf3-307">Данные запроса</span><span class="sxs-lookup"><span data-stu-id="8ccf3-307">Request data</span></span> | <span data-ttu-id="8ccf3-308">Описание</span><span class="sxs-lookup"><span data-stu-id="8ccf3-308">Description</span></span> |  
+|------|------|  
+| <span data-ttu-id="8ccf3-309">Протокол</span><span class="sxs-lookup"><span data-stu-id="8ccf3-309">Protocol</span></span> | <span data-ttu-id="8ccf3-310">Все запросы используют протокол SSL/TLS для HTTPS.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-310">All requests use the SSL/TLS HTTPS protocol.</span></span> |  
+| <span data-ttu-id="8ccf3-311">Заголовок Authorization</span><span class="sxs-lookup"><span data-stu-id="8ccf3-311">Authorization header</span></span> | <p><span data-ttu-id="8ccf3-312">`Bearer {token}`, где `{token}` — действительный маркер доступа OAuth 2.0 для зарегистрированного приложения.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-312">`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</span></span></p><p><span data-ttu-id="8ccf3-313">Если он отсутствует или является недействительным, запрос завершится ошибкой с кодом состояния 401.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-313">If missing or invalid, the request fails with a 401 status code.</span></span> <span data-ttu-id="8ccf3-314">См. статью [Проверка подлинности и разрешения](permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-314">See [Authentication and permissions](permissions-reference.md).</span></span></p> |  
+| <span data-ttu-id="8ccf3-315">Заголовок Content-Type</span><span class="sxs-lookup"><span data-stu-id="8ccf3-315">Content-Type header</span></span> | <p><span data-ttu-id="8ccf3-316">`application/json` для массива объектов изменений JSON, отправленного либо непосредственно в тексте сообщения, либо в обязательной части Commands [составных запросов](#multipart-request-with-binary-content).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-316">`application/json` for the array of JSON change objects, whether sent directly in the message body or in the required "Commands" part of [multipart requests](#multipart-request-with-binary-content).</span></span></p><p><span data-ttu-id="8ccf3-317">При отправке двоичных данных необходимы составные запросы и использование типа содержимого `multipart/form-data; boundary=part-boundary`, где `{part-boundary}` представляет собой строку, которая сигнализирует начало и конец каждой части данных.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-317">Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where `{part-boundary}` is a string that signals the start and end of each data part.</span></span></p> |  
+
+<br/> 
+
+| <span data-ttu-id="8ccf3-318">Данные в ответе</span><span class="sxs-lookup"><span data-stu-id="8ccf3-318">Response data</span></span> | <span data-ttu-id="8ccf3-319">Описание</span><span class="sxs-lookup"><span data-stu-id="8ccf3-319">Description</span></span> |  
+|------|------|  
+| <span data-ttu-id="8ccf3-320">Код успешного завершения</span><span class="sxs-lookup"><span data-stu-id="8ccf3-320">Success code</span></span> | <span data-ttu-id="8ccf3-p131">Код состояния HTTP 204. Данные JSON не возвращаются по PATCH-запросу.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-p131">A 204 HTTP status code. No JSON data is returned for a PATCH request.</span></span> |  
+| <span data-ttu-id="8ccf3-323">Ошибки</span><span class="sxs-lookup"><span data-stu-id="8ccf3-323">Errors</span></span> | <span data-ttu-id="8ccf3-324">В статье [Коды ошибок для API OneNote в Microsoft Graph](onenote-error-codes.md) описываются ошибки OneNote, которые может возвращать Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-324">Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return.</span></span> |  
+ 
+ 
+
+<a name="root-url"></a>
+
+### <a name="constructing-the-microsoft-graph-service-root-url"></a><span data-ttu-id="8ccf3-325">Составление корневого URL-адреса службы Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8ccf3-325">Constructing the Microsoft Graph service root URL</span></span>
+
+<span data-ttu-id="8ccf3-326">Для всех вызовов API OneNote используется следующий формат корневого URL-адреса службы OneNote:</span><span class="sxs-lookup"><span data-stu-id="8ccf3-326">The OneNote service root URL uses the following format for all calls to the OneNote API:</span></span>
+
+`https://graph.microsoft.com/{version}/me/onenote/`
+
+<span data-ttu-id="8ccf3-327">Сегмент `version` URL-адреса представляет нужную версию Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-327">The `version` segment in the URL represents the version of Microsoft Graph that you want to use.</span></span> <span data-ttu-id="8ccf3-328">Значение `v1.0` предназначено для стабильного производственного кода.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-328">`v1.0` is for stable production code.</span></span> <span data-ttu-id="8ccf3-329">Используйте значение `beta`, чтобы опробовать функцию, находящуюся на стадии разработки.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-329">`beta` is to try out a feature that's in development.</span></span> <span data-ttu-id="8ccf3-330">Функции бета-версии могут меняться, поэтому не следует использовать их в производственном коде.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-330">Features and functionality in beta may change, so you shouldn't use it in your production code.</span></span>
+
+<span data-ttu-id="8ccf3-331">Значение `me` предназначено для содержимого OneNote, доступного текущему пользователю (если он является владельцем или с ним поделились этим содержимым).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-331">`me` is for OneNote content that the current user can access (owned and shared).</span></span> <span data-ttu-id="8ccf3-332">Значение `users/{id}` предназначено для содержимого OneNote, которым указанный (в URL-адресе) пользователь поделился с текущим пользователем.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-332">`users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user.</span></span> <span data-ttu-id="8ccf3-333">Использование [API Graph для Azure AD](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog)</span><span class="sxs-lookup"><span data-stu-id="8ccf3-333">Use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog).</span></span>
+
+
+> <span data-ttu-id="8ccf3-334">**Примечание.** Вы можете получить идентификаторы пользователей, отправив запрос GET к конечной точке `https://graph.microsoft.com/v1.0/users`.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-334">**Note:** You can get user ids by making a GET request on `https://graph.microsoft.com/v1.0/users`.</span></span>
+
+
+
+<a name="permissions"></a>
+
+## <a name="permissions"></a><span data-ttu-id="8ccf3-335">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8ccf3-335">Permissions</span></span>
+
+<span data-ttu-id="8ccf3-336">Для обновления страниц OneNote необходимо запрашивать соответствующие разрешения.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-336">To update OneNote pages, you'll need to request appropriate permissions.</span></span> <span data-ttu-id="8ccf3-337">Выберите минимальный уровень разрешений, необходимый для работы вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="8ccf3-337">Choose the lowest level of permissions that your app needs to do its work.</span></span>
+
+- <span data-ttu-id="8ccf3-338">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8ccf3-338">Notes.ReadWrite</span></span>
+- <span data-ttu-id="8ccf3-339">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8ccf3-339">Notes.ReadWrite.All</span></span>
+
+<span data-ttu-id="8ccf3-340">Дополнительные сведения об областях разрешений и принципе их работы см. в разделе [Области разрешений OneNote](permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="8ccf3-340">For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).</span></span>
+   
+
+<a name="see-also"></a>
+
+## <a name="see-also"></a><span data-ttu-id="8ccf3-341">См. также</span><span class="sxs-lookup"><span data-stu-id="8ccf3-341">See also</span></span>
+
+- [<span data-ttu-id="8ccf3-342">Добавление изображений и файлов</span><span class="sxs-lookup"><span data-stu-id="8ccf3-342">Add images and files</span></span>](onenote-images-files.md)
+- [<span data-ttu-id="8ccf3-343">Интеграция с OneNote</span><span class="sxs-lookup"><span data-stu-id="8ccf3-343">Integrate with OneNote</span></span>](integrate-with-onenote.md)
+- [<span data-ttu-id="8ccf3-344">Блог разработчиков OneNote</span><span class="sxs-lookup"><span data-stu-id="8ccf3-344">OneNote Developer Blog</span></span>](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [<span data-ttu-id="8ccf3-345">Вопросы разработки OneNote на сайте Stack Overflow</span><span class="sxs-lookup"><span data-stu-id="8ccf3-345">OneNote development questions on Stack Overflow</span></span>](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [<span data-ttu-id="8ccf3-346">Репозитории GitHub OneNote</span><span class="sxs-lookup"><span data-stu-id="8ccf3-346">OneNote GitHub repos</span></span>](https://go.microsoft.com/fwlink/?LinkID=390178)  
