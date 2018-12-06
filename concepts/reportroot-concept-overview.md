@@ -3,7 +3,7 @@ title: Обзор API отчетов Microsoft Graph
 description: Отчеты об использовании в Центре администрирования Microsoft 365 помогают администраторам понимать, как используются службы Office 365 в организации. С помощью API отчетов в Microsoft Graph вы можете выполнить интеграцию с отчетами об использовании Office 365.
 ms.openlocfilehash: d923d0003a276be15620998c53693a9bab7116d5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092693"

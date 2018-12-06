@@ -3,7 +3,7 @@ title: Использование функций книг в Excel с помощ
 description: 'Вы можете вызвать любую функцию книги, используя следующий синтаксис: `POST /workbook/functions/{function-name}`. Укажите аргументы функции в теле запроса с помощью объекта JSON. Система возвращает `value`, полученное в результате выполнения функции, и все строки `error` в объекте результата выполнения функции. Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции.'
 ms.openlocfilehash: 36b07277123ccb04de5607a513cee6f576be5550
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092744"

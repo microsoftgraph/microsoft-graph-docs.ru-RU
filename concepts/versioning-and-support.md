@@ -3,7 +3,7 @@ title: 'Политики поддержки и внесения критичес
 description: В этой статье описаны политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии API Microsoft Graph.
 ms.openlocfilehash: 2a2c7f338e4bc26dc61d9cf88855b9760ff22d6f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092739"

@@ -3,7 +3,7 @@ title: Получение событий Outlook из общего или дел
 description: В Outlook клиенты могут поделиться календарем с другими пользователями и позволить им просматривать или изменять события в этом календаре. Клиенты также могут предоставить делегату право выполнять действия от их имени, получать приглашения на собрания или отвечать на них, а также создавать или изменять элементы в календаре.
 ms.openlocfilehash: e05352e164b127adca1305dded5cbb00840eed52
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092637"

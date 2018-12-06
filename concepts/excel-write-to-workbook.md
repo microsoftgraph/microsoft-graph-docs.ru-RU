@@ -3,7 +3,7 @@ title: Запись данных в книгу Excel с помощью Microsoft
 description: q=excelstarter).
 ms.openlocfilehash: a36e44ce390f0947fbc2d5615551f17becf11b33
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092572"

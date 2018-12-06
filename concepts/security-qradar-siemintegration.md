@@ -3,7 +3,7 @@ title: Интеграция оповещений API безопасности Mi
 description: Поставщиками безопасности Microsoft Graph можно управлять через одну конечную точку REST. Эту конечную точку можно настроить для службы Azure Monitor, поддерживающей соединители для нескольких продуктов SIEM. Инструкции, приведенные в этапах 1 и 2 этой статьи, относятся ко всем соединителям Azure Monitor, поддерживающим получение данных через концентраторы событий. В этой статье описана сквозная интеграция соединителя QRadar SIEM.
 ms.openlocfilehash: 107435c463116c002c86955559209d2dffd4d688
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092629"

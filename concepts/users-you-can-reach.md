@@ -3,7 +3,7 @@ title: Пользователи, с которыми можно связатьс
 description: 'Корпорация Майкрософт предлагает службы и решения, расширяющие возможности современной работы и современной жизни. '
 ms.openlocfilehash: c50ce779b0f6e990a360463da64b3b0e1a9aef34
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092711"

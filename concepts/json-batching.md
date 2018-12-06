@@ -3,7 +3,7 @@ title: Объединение нескольких запросов в один 
 description: 'Пакетная обработка JSON позволяет оптимизировать приложение, объединив несколько запросов в один объект JSON. Например, клиент может создать представление из таких несвязанных данных:'
 ms.openlocfilehash: 875f5f8758d37e84498446876eb863f474e00f21
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092568"

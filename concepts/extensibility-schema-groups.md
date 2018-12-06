@@ -3,7 +3,7 @@ title: 'Добавление пользовательских данных в г
 description: 'В этой статье мы рассмотрим подробный пример использования *расширений схемы*. '
 ms.openlocfilehash: 098853ffaa5292313c71259e97fb8f1a8063fec4
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092633"

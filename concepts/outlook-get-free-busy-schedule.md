@@ -3,7 +3,7 @@ title: Получение расписания доступности польз
 description: Общим сценарием на рабочем месте или в учебном заведении является просмотр доступности пользователя для собрания или доступности команды, помещения или оборудования в некоторый период времени.
 ms.openlocfilehash: 8a2dd9318bdd806c99d525ee41f46d78d1963b47
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092712"

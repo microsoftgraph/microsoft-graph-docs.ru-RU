@@ -3,7 +3,7 @@ title: Поиск времени для проведения собрания в
 description: 'В организации или учебном заведении поиск времени и места для проведения собрания часто влечет за собой дополнительные расходы. Приложения Microsoft Graph могут использовать '
 ms.openlocfilehash: 92390509f68d469cf9912e9e903a2576b8fa7506
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092749"

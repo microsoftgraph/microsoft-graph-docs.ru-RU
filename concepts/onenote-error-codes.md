@@ -3,7 +3,7 @@ title: Коды ошибок для API OneNote в Microsoft Graph
 description: В этой статье описываются коды ошибок, возвращаемые API OneNote в Microsoft Graph при сбоях запросов, отправляемых через API.
 ms.openlocfilehash: 265929be081ee61a88b8baf4f600e2c154797ec7
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092673"

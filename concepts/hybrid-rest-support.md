@@ -3,7 +3,7 @@ title: Использование интерфейсов REST API для дос�
 description: Служба Microsoft Graph предоставляет доступ к почтовым ящикам пользователей в облаке в Exchange Online в составе Office 365.
 ms.openlocfilehash: 78b324765c580e76f080e2e8023e52617b3851f3
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092576"
@@ -44,6 +44,6 @@ Microsoft Graph обеспечивает открытость (поддержк�
 Дополнительные сведения для ИТ-администраторов см. в указанных ниже источниках.
 
 - 
-  [Гибридные развертывания Exchange Server](https://technet.microsoft.com/ru-RU/library/jj200581(v=exchg.150).aspx)
+  [Гибридные развертывания Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
 - [Выпуск накопительного пакета обновления за сентябрь 2016 г.](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [Требования к локальной архитектуре для REST API](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)

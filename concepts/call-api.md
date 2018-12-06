@@ -3,7 +3,7 @@ title: Вызов API Microsoft Graph
 description: 'Для доступа к ресурсу Microsoft Graph и работы с ним необходимо вызвать и указать URL-адреса ресурса, используя одну из указанных ниже операций.   '
 ms.openlocfilehash: c8b678ce41488d6854e436e7dc5fc97989b54aee
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092642"

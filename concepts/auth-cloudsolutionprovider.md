@@ -3,7 +3,7 @@ title: Вызов Microsoft Graph из приложения CSP
 description: В этом разделе описано, как предоставить приложению доступ к данным клиентов, управляемым партнером, через Microsoft Graph, используя поток предоставления кодов авторизации или поток клиентских учетных данных между службами.
 ms.openlocfilehash: a14c610090a1232c72ec2fde4469dd1cd1d6f694
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092654"

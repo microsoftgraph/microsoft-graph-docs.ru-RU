@@ -3,7 +3,7 @@ title: Обзор API для хранилища файлов OneDrive
 description: OneDrive является центром файлов в Office 365.
 ms.openlocfilehash: dcd16969a2f1b1f6898696fe0be9539d50800252
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092567"

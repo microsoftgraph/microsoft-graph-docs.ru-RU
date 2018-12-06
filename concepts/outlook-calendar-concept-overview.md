@@ -3,7 +3,7 @@ title: Общие сведения об API календарей Outlook
 description: Календарь Outlook входит в состав центра обмена сообщениями Outlook в Office 365. С его помощью можно управлять электронными письмами и контактами, искать информацию о пользователях в организации.
 ms.openlocfilehash: fe62ca40af348cdfaf559ea3e137733a4d25d8e5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092639"

@@ -3,7 +3,7 @@ title: Настройка встроенных типов вкладок в Micr
 description: 'Чтобы создать или настроить вкладку Microsoft Teams с помощью API Microsoft Graph, '
 ms.openlocfilehash: 2485e65ebac0c7201fe8b8210f8e4af9b9c8f164
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092613"
@@ -15,7 +15,7 @@ ms.locfileid: "27092613"
 
 ## <a name="custom-tabs"></a>Настраиваемые вкладки
 
-Чтобы использовать Microsoft Graph для настройки вкладки, связанной с [поставщиком вкладок](https://docs.microsoft.com/ru-RU/microsoftteams/platform/concepts/tabs/tabs-overview), которого вы записали, определите значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`, предоставляемые [интерфейсом конфигурации приложения для Microsoft Teams](https://docs.microsoft.com/ru-RU/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), и передайте эти же значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl` в Microsoft Graph.
+Чтобы использовать Microsoft Graph для настройки вкладки, связанной с [поставщиком вкладок](https://docs.microsoft.com/ru-RU/microsoftteams/platform/concepts/tabs/tabs-overview), которого вы записали, определите значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`, предоставляемые [интерфейсом конфигурации приложения для Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), и передайте эти же значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl` в Microsoft Graph.
 
 Объект `teamsAppId` аналогичен `id` в [схеме манифеста приложения для Microsoft Teams](https://docs.microsoft.com/ru-RU/microsoftteams/platform/resources/schema/manifest-schema).
 

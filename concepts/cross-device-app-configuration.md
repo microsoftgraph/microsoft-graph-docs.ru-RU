@@ -3,7 +3,7 @@ title: 'Создание приложений для нескольких уст
 description: 'С помощью Project Rome вы можете создавать решения, которые одинаково легко использовать на различных устройствах и платформах, избавляя пользователей от лишних сложностей и повышая взаимодействие с приложением. Чтобы приложения могли обмениваться данными между устройствами и платформами с помощью API Project Rome, необходимо настроить приложение для нескольких устройств, включающее сведения о приложениях для определенных платформ. '
 ms.openlocfilehash: b555356fd523605837cd339630f64757fa8106bf
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092683"
@@ -68,8 +68,8 @@ ms.locfileid: "27092683"
 
 Чтобы найти идентификаторы:
 
-* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/ru-RU/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/ru-RU/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/ru-RU/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/ru-RU/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** — дополнительные сведения см. в разделе [Изменение имени пакета](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** — дополнительные сведения см. в статьях [Bundle](https://developer.apple.com/documentation/foundation/bundle) и [Обязательные, локализуемые и редактируемые свойства](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** — войдите на [портал регистрации приложений](https://apps.dev.microsoft.com). Вы можете просмотреть идентификатор приложения или клиента для любого приложения. Поддерживаются как идентификаторы Live SDK (шестнадцатеричные значения), так и конвергированные идентификаторы приложений (GUID).   
@@ -94,7 +94,7 @@ ms.locfileid: "27092683"
 Чтобы найти идентификаторы:
 
 * 
-  **Windows Notification Service** — см. раздел [Регистрация приложения и получение учетных данных для облачной службы](https://docs.microsoft.com/ru-RU/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) и посетите [портал регистрации приложений](https://apps.dev.microsoft.com).
+  **Windows Notification Service** — см. раздел [Регистрация приложения и получение учетных данных для облачной службы](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) и посетите [портал регистрации приложений](https://apps.dev.microsoft.com).
 * **Служба push-уведомлений Apple** — см. [обзор APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** — см. статью [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -141,8 +141,8 @@ ms.locfileid: "27092683"
 
 Чтобы найти идентификаторы:
 
-* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/ru-RU/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/ru-RU/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/ru-RU/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/ru-RU/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** — дополнительные сведения см. в разделе [Изменение имени пакета](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** — дополнительные сведения см. в статьях [Bundle](https://developer.apple.com/documentation/foundation/bundle) и [Обязательные, локализуемые и редактируемые свойства](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** — войдите на [портал регистрации приложений](https://apps.dev.microsoft.com). Вы можете просмотреть идентификатор приложения или клиента для любого приложения. Поддерживаются как идентификаторы Live SDK (шестнадцатеричные значения), так и конвергированные идентификаторы приложений (GUID).   

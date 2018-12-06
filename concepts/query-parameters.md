@@ -3,7 +3,7 @@ title: Настройка ответов с помощью параметров 
 description: В Microsoft Graph предусмотрены необязательные параметры запросов, с помощью которых можно указывать и регулировать объем возвращаемых данных. Поддерживаются указанные ниже параметры запросов.
 ms.openlocfilehash: e41a6e8d9cc42506985bd82f00bcdc4efaec8add
 ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/30/2018
 ms.locfileid: "27092755"
@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 - [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
-  [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/ru-RU/library/dn774955(v=exchg.160).aspx).
+  [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
 
 ### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 

@@ -3,7 +3,7 @@ title: 'Разбиение данных Microsoft Graph по страницам 
 description: 'свойство odata.nextLink в ответе, содержащем URL-адрес следующей страницы результатов. '
 ms.openlocfilehash: 9a9224a6dc710fa70ebec2448bf2eef2238968ca
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092707"

@@ -3,7 +3,7 @@ title: Обзор API Microsoft Teams
 description: 'Microsoft Teams — это единый центр для работы в группах и интеллектуального обмена данными. '
 ms.openlocfilehash: 1f210bf529769c96f22c2c7180d3736cdc9ed776
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092660"
@@ -21,7 +21,7 @@ ms.locfileid: "27092660"
 
 ![Автоматизируйте жизненные циклы команды путем создания команды, добавления участников и владельцев, настройки параметров команды, добавления каналов, установки приложений, добавления вкладок и архивирования или удаления команды в нужное время.](images/teams-lifecycle.png)
 
-После того как бизнес-проблема решена, и вам больше не нужна команда, вы можете [выполнить архивацию](/graph/api/team-archive?view=graph-rest-1.0) или [удаление](/graph/api/group-delete?view=graph-rest-1.0) команды с помощью API Microsoft Teams. Если при создании команды вы заранее знаете максимальный срок ее работы, настройте для нее [политику завершения срока действия групп в Office 365](https://support.office.com/ru-RU/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US), благодаря которой команда будет автоматически удалена согласно параметрам политики.
+После того как бизнес-проблема решена, и вам больше не нужна команда, вы можете [выполнить архивацию](/graph/api/team-archive?view=graph-rest-1.0) или [удаление](/graph/api/group-delete?view=graph-rest-1.0) команды с помощью API Microsoft Teams. Если при создании команды вы заранее знаете максимальный срок ее работы, настройте для нее [политику завершения срока действия групп в Office 365](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US), благодаря которой команда будет автоматически удалена согласно параметрам политики.
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>Выполнение работы в отсутствие пользователей
 

@@ -3,7 +3,7 @@ title: Начало работы с подключением данных Micros
 description: 'Прежде чем использовать подключение данных Microsoft Graph, администратору Office 365 необходимо выполнить два действия, которые включают возможность управления перемещением данных для администраторов через Privileged Access Management (PAM). '
 ms.openlocfilehash: eb21f0d850f64694514c0ecd82f03de687606a56
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092585"

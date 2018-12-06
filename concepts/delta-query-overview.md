@@ -3,7 +3,7 @@ title: Отслеживание изменений в данных Microsoft Gra
 description: Запросы изменений позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Приложения Microsoft Graph могут использовать запросы изменений, чтобы эффективно синхронизировать изменения с локальным хранилищем данных.
 ms.openlocfilehash: 4732cabed3595738b70c54a7a029f19400edbe6f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092735"

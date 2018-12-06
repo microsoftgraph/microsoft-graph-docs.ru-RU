@@ -3,7 +3,7 @@ title: 'Использование тегов div API OneNote для извле�
 description: " Корпоративная записная книжка в Office 365"
 ms.openlocfilehash: 201c20261d47e66df877e0138670b96ee377b7cb
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092645"

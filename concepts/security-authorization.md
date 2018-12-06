@@ -3,7 +3,7 @@ title: Авторизация и API безопасности Microsoft Graph
 description: Данные безопасности, доступные через API безопасности Microsoft Graph, являются конфиденциальными и защищаются как разрешениями, так и ролями Azure Active Directory (Azure AD).
 ms.openlocfilehash: c69621fa7059a96381bed76b58c4a77e80d984dd
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092557"

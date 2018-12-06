@@ -3,7 +3,7 @@ title: Рекомендации по работе с Microsoft Graph
 description: Эта статья содержит рекомендации по эффективному использованию Microsoft Graph в приложениях, независимо от текущей задачи — знакомство с Microsoft Graph, увеличение производительности или повышение надежности приложения.
 ms.openlocfilehash: 0693999712c33e74bb3ad4d691cd835d239254be
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092582"
