@@ -1,12 +1,12 @@
 ---
 title: Список групп устройств
 description: Получите группы, это устройство является непосредственным членом. Эта операция не транзитивное.
-ms.openlocfilehash: 8674bed8f00c6cbe9c55dd218a3611ecde9e548d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fae373a896a2fc048257a5dc6cd9eb07a85ec677
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077251"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184471"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
@@ -27,10 +27,10 @@ ms.locfileid: "27077251"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices/{id | userPrincipalName}/memberOf
+GET /devices/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -57,9 +57,8 @@ GET /devices/{id | userPrincipalName}/memberOf
 GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

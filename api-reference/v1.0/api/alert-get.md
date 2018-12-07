@@ -1,12 +1,12 @@
 ---
 title: получение оповещения;
 description: " Извлечение свойств и связи оповещения объекта."
-ms.openlocfilehash: b5e85fe33f4896714c4100c22a26417091d154ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b2c823257ffcb398639a89627b3a0e1cb407e085
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027486"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184478"
 ---
 # <a name="get-alert"></a>получение оповещения;
 
@@ -20,7 +20,7 @@ ms.locfileid: "27027486"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложения | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
+|Для приложений | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,9 +40,9 @@ GET /security/alerts/{alert_id}
 
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **оповещения** в теле ответа. Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответом поставщиков в заголовке предупреждения. Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
+Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **оповещения** в теле ответа. Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения. Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Пример
 
@@ -58,7 +58,7 @@ GET /security/alerts/{alert_id}
 GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 <!-- {

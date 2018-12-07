@@ -1,14 +1,14 @@
 ---
-title: Использование безопасности Microsoft Graph API
+title: Использование API безопасности Microsoft Graph
 description: 'API-Интерфейс безопасности Microsoft Graph предоставляет единый интерфейс и схемы можно интегрировать с решения по обеспечению безопасности корпорации Майкрософт и экосистема партнеров. Это позволяет предоставить клиентам для оптимизации операции по безопасности и более надежную защиту от увеличение угрозы, связанные с через Интернет. API Microsoft Graph безопасности можно использовать как службы объединение федеративных безопасности для отправки запросов для всех поставщиков безопасности onboarded для получения групп ответов. Использовать Microsoft Graph безопасности API для создания приложений, который:'
-ms.openlocfilehash: 511abbc6221ee9efb58cbfb36082514d98f9b918
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b675ecd66081aec29f2727a394a91d9e2ee5fd5b
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028504"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184520"
 ---
-# <a name="use-the-microsoft-graph-security-api"></a>Использование безопасности Microsoft Graph API
+# <a name="use-the-microsoft-graph-security-api"></a>Использование API безопасности Microsoft Graph
 
 API-Интерфейс безопасности Microsoft Graph предоставляет единый интерфейс и схемы можно интегрировать с решения по обеспечению безопасности корпорации Майкрософт и экосистема партнеров. Это позволяет предоставить клиентам для оптимизации операции по безопасности и более надежную защиту от увеличение угрозы, связанные с через Интернет. API Microsoft Graph безопасности можно использовать как службы объединение федеративных безопасности для отправки запросов для всех поставщиков безопасности onboarded для получения групп ответов. Использовать Microsoft Graph безопасности API для создания приложений, который:
 
@@ -25,14 +25,14 @@ API-Интерфейс Microsoft Graph безопасности включает
 
 Интегрированное графическое представление безопасности решения Майкрософт будет получать оповещения от следующих поставщиков безопасности:
 
-- Центр безопасности для Azure
-- Защита идентификации Azure Active Directory
-- Защита информации Azure
-- Безопасность приложений Microsoft Cloud
-- Защитник Windows Advanced защиту от угроз
-- Microsoft Intune (закрытый Предварительная версия)
-- Office 365 (ожидается в ближайшее время)
-- Azure расширенного защиту от угроз (ожидается в ближайшее время)
+- [Центр безопасности для Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
+- [Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
+- [Безопасность приложений Microsoft Cloud](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
+- [Защитник Windows Advanced защиту от угроз](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
+- [Защита информации Azure](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(Предварительная версия)**
+- Microsoft Intune **(закрытый Предварительная версия)**
+- Office 365 **(ожидается в ближайшее время)**
+- Azure расширенного защиту от угроз **(ожидается в ближайшее время)**
 - Решений партнеров, такими как компьютер Пало сетей приложения Framework
 
 > **Примечание:** Новые поставщики постоянно, входящая экосистемы Microsoft Graph безопасности.

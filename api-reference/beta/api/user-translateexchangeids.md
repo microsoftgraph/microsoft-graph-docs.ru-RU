@@ -1,12 +1,12 @@
 ---
 title: 'пользователь: translateExchangeIds'
 description: Переведите идентификаторы, связанные с Outlook ресурсов форматов.
-ms.openlocfilehash: 0c6e74ad0bb9676f261ed0202757b1e036b09c85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079252"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184492"
 ---
 # <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
@@ -22,7 +22,7 @@ ms.locfileid: "27079252"
 |:----------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | User.ReadBasic, User.Read, User.ReadWrite |
-| Для приложения | User.Read.All, User.ReadWrite.All |
+| Для приложений | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>Текст запроса
 
-| Параметр | Тип | Description |
+| Параметр | Тип | Описание |
 |:----------|:-----|:------------|
 | inputIds | Edm.String коллекции | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одного идентификатор типа и значения для элементов в тот же почтовый ящик. Максимальный размер семейства сайтов составляет 1 000 строк. |
 | sourceIdType | exchangeIdFormat | Тип идентификатора идентификаторов в `InputIds` параметр. |
@@ -57,9 +57,9 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | restId | По умолчанию идентификатор формата Microsoft Graph. |
 | restImmutableEntryId | Постоянные идентификатор формата, используемого в Microsoft Graph. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и семейства [convertIdResult](../resources/meetingtimesuggestionsresult.md) в теле ответа.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и семейства [convertIdResult](../resources/convertidresult.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 
@@ -87,7 +87,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа
 <!-- {

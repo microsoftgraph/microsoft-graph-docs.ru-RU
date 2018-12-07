@@ -1,12 +1,12 @@
 ---
 title: перечисление оповещений;
 description: Получение списка объектов оповещения.
-ms.openlocfilehash: c25784f62d37722fc997e57b9f15c9857133b964
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 07dcdd4279ef0f258396bbfa6ecc0fc15cbd7ef0
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027171"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184527"
 ---
 # <a name="list-alerts"></a>перечисление оповещений;
 
@@ -20,7 +20,7 @@ ms.locfileid: "27027171"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложения | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
+|Для приложений | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,6 +47,8 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 Чтобы вернуть набор альтернативных свойства, используйте OData `$select` параметр для определения набора свойств **оповещения** , которые будут запроса.  Например, для возврата **assignedTo**, **категории**и свойства **уровень серьезности** , добавьте следующий запрос: `$select=assignedTo,category,severity`.
 
+> **Примечание:** `$top` имеет более 1000 оповещения и сочетание `$top`  +  `$skip` не может превышать 6000 оповещения. Например `/security/alerts?$top=10&$skip=5990` возвращает `200 OK` код ответа, но `/security/alerts?$top=10&$skip=5991` возвращает `400 Bad Request` код ответа.  Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
@@ -57,9 +59,9 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 Не указывайте тело запроса для этого метода. Текст запроса будет игнорироваться.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов **оповещения** в теле ответа. Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответом поставщиков в заголовке предупреждения. Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
+Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов **оповещения** в теле ответа. Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения. Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Пример
 
@@ -75,7 +77,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
