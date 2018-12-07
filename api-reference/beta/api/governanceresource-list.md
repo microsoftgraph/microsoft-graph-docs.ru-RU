@@ -1,49 +1,49 @@
 ---
 title: Список governanceResources
 description: Получите коллекцию governanceResource с доступом к инициатора запроса.
-ms.openlocfilehash: 0c50fa03cc8294650fa592e3ff7a1692d89cfbb9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a8f0fc03dbd880c82bca7c9d8f6e84a2940511d9
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077910"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191091"
 ---
-# <a name="list-governanceresources"></a><span data-ttu-id="c432c-103">Список governanceResources</span><span class="sxs-lookup"><span data-stu-id="c432c-103">List governanceResources</span></span>
+# <a name="list-governanceresources"></a><span data-ttu-id="52e25-103">Список governanceResources</span><span class="sxs-lookup"><span data-stu-id="52e25-103">List governanceResources</span></span>
 
-> <span data-ttu-id="c432c-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="c432c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c432c-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c432c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="52e25-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="52e25-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="52e25-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="52e25-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="c432c-106">Получите коллекцию [governanceResource](../resources/governanceresource.md) с доступом к инициатора запроса.</span><span class="sxs-lookup"><span data-stu-id="c432c-106">Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.</span></span>
+<span data-ttu-id="52e25-106">Получите коллекцию [governanceResource](../resources/governanceresource.md) с доступом к инициатора запроса.</span><span class="sxs-lookup"><span data-stu-id="52e25-106">Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c432c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c432c-107">Permissions</span></span>
-<span data-ttu-id="c432c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c432c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="52e25-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="52e25-107">Permissions</span></span>
+<span data-ttu-id="52e25-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="52e25-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c432c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c432c-110">Permission type</span></span>      | <span data-ttu-id="c432c-111">Permissions</span><span class="sxs-lookup"><span data-stu-id="c432c-111">Permissions</span></span>              |
+|<span data-ttu-id="52e25-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="52e25-110">Permission type</span></span>      | <span data-ttu-id="52e25-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="52e25-111">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c432c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c432c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c432c-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="c432c-113">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="c432c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c432c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c432c-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c432c-115">Not supported.</span></span>    |
-|<span data-ttu-id="c432c-116">Для приложения</span><span class="sxs-lookup"><span data-stu-id="c432c-116">Application</span></span> | <span data-ttu-id="c432c-117">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="c432c-117">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+|<span data-ttu-id="52e25-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="52e25-112">Delegated (work or school account)</span></span> | <span data-ttu-id="52e25-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="52e25-113">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="52e25-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="52e25-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="52e25-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="52e25-115">Not supported.</span></span>    |
+|<span data-ttu-id="52e25-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="52e25-116">Application</span></span> | <span data-ttu-id="52e25-117">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="52e25-117">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c432c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c432c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="52e25-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="52e25-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c432c-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c432c-119">Optional query parameters</span></span>
-<span data-ttu-id="c432c-120">Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.</span><span class="sxs-lookup"><span data-stu-id="c432c-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="52e25-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="52e25-119">Optional query parameters</span></span>
+<span data-ttu-id="52e25-120">Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.</span><span class="sxs-lookup"><span data-stu-id="52e25-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c432c-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c432c-121">Request headers</span></span>
-| <span data-ttu-id="c432c-122">Имя</span><span class="sxs-lookup"><span data-stu-id="c432c-122">Name</span></span>      |<span data-ttu-id="c432c-123">Описание</span><span class="sxs-lookup"><span data-stu-id="c432c-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="52e25-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="52e25-121">Request headers</span></span>
+| <span data-ttu-id="52e25-122">Имя</span><span class="sxs-lookup"><span data-stu-id="52e25-122">Name</span></span>      |<span data-ttu-id="52e25-123">Описание</span><span class="sxs-lookup"><span data-stu-id="52e25-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c432c-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c432c-124">Authorization</span></span>  | <span data-ttu-id="c432c-125">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="c432c-125">Bearer {code}</span></span>|
+| <span data-ttu-id="52e25-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="52e25-124">Authorization</span></span>  | <span data-ttu-id="52e25-125">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="52e25-125">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c432c-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c432c-126">Request body</span></span>
-<span data-ttu-id="c432c-127">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c432c-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="c432c-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="c432c-128">Response</span></span>
-<span data-ttu-id="c432c-129">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceResource](../resources/governanceresource.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="c432c-129">If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.</span></span>
-## <a name="examples"></a><span data-ttu-id="c432c-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="c432c-130">Examples</span></span>
+## <a name="request-body"></a><span data-ttu-id="52e25-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="52e25-126">Request body</span></span>
+<span data-ttu-id="52e25-127">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="52e25-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="52e25-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="52e25-128">Response</span></span>
+<span data-ttu-id="52e25-129">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceResource](../resources/governanceresource.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="52e25-129">If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="52e25-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="52e25-130">Examples</span></span>
 
-<span data-ttu-id="c432c-131">В этом примере выводятся все ресурсы, которые в настоящее время доступна.</span><span class="sxs-lookup"><span data-stu-id="c432c-131">This example lists all resources I can currently access.</span></span>
-##### <a name="request"></a><span data-ttu-id="c432c-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="c432c-132">Request</span></span>
+<span data-ttu-id="52e25-131">В этом примере выводятся все ресурсы, которые в настоящее время доступна.</span><span class="sxs-lookup"><span data-stu-id="52e25-131">This example lists all resources I can currently access.</span></span>
+##### <a name="request"></a><span data-ttu-id="52e25-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="52e25-132">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governanceresources"
@@ -51,10 +51,10 @@ GET /privilegedAccess/azureResources/resources
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
-##### <a name="response"></a><span data-ttu-id="c432c-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="c432c-133">Response</span></span>
-<span data-ttu-id="c432c-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c432c-134">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="52e25-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="52e25-133">Response</span></span>
+<span data-ttu-id="52e25-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="52e25-134">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="c432c-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c432c-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="52e25-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="52e25-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,7 +75,8 @@ Content-Length: 1289
             "type": "Microsoft.Storage/storageAccounts",
             "displayName": "anujstoragefimdev",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         },
         {
             "id": "0e0e4461-0c46-4d13-bf69-7cacbec75471",
@@ -83,7 +84,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines",
             "displayName": "APRJ-VM-01-T",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         },
         {
             "id": "c072eb85-e47b-4627-81cb-5af82a8fc9fb",
@@ -91,7 +93,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines/extensions",
             "displayName": "APRJ-VM-01-T/IaaSAntimalware",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         }
     ]
 }
