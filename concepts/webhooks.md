@@ -1,12 +1,12 @@
 ---
 title: Настройка уведомлений об изменениях в пользовательских данных
 description: API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений клиентам. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений. С помощью уведомлений клиентские приложения обновляют свое состояние в случае изменений.
-ms.openlocfilehash: faaa1be8330118f1cbebf5362903f0e114816b67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e9c0c33aa18735d183d88836d33a99c8f12da560
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092724"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184548"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -97,6 +97,8 @@ Content-Type: application/json
 ```
 
 Необходимы свойства `changeType`, `notificationUrl`, `resource` и `expirationDateTime`. Определения и значения свойств представлены в [описании типа ресурса подписки](/graph/api/resources/subscription?view=graph-rest-1.0).
+
+Свойство `resource` указывает ресурс, для которого будут отслеживаться изменения. Например, вы можете создать подписку на определенную почтовую папку: `me/mailFolders('inbox')/messages` или сделать это от имени пользователя с согласия администратора: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
 Хотя свойство `clientState` необязательное, рекомендуем указать его в нашем процессе обработки уведомлений. Задание этого свойства позволит подтверждать, что полученные уведомления поступают от службы Microsoft Graph. По этой причине значение свойства должно оставаться секретным и быть известно только приложению и службе Microsoft Graph.
 

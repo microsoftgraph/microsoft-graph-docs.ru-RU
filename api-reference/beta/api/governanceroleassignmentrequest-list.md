@@ -1,12 +1,12 @@
 ---
 title: Список governanceRoleAssignmentRequests
 description: 'Получите коллекцию governanceRoleAssignmentRequests. '
-ms.openlocfilehash: 2d3cb7e668e6da4016106843f2e80ed4be784aef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 89cb6130b586a44723ec636cbdbe311e0bf8d510
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076947"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191160"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>Список governanceRoleAssignmentRequests
 
@@ -17,11 +17,11 @@ ms.locfileid: "27076947"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Permissions              |
+|Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->Список коллекцию [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) для ресурса.
@@ -57,7 +57,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -71,7 +71,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -98,8 +98,6 @@ Content-length: 279
             "type": "UserRemove",
             "assignmentState": "Active",
             "requestedDateTime": "2018-01-09T23:41:34.367Z",
-            "roleAssignmentStartDateTime": null,
-            "roleAssignmentEndDateTime": null,
             "reason": "Deactivation request",
             "schedule": null,
             "status": {
@@ -117,8 +115,6 @@ Content-length: 279
             "type": "UserAdd",
             "assignmentState": "Active",
             "requestedDateTime": "2018-01-10T20:58:09.163Z",
-            "roleAssignmentStartDateTime": "2018-01-10T20:58:11.363Z",
-            "roleAssignmentEndDateTime": "2018-01-11T01:58:11.363914Z",
             "reason": "test activations",
             "status": {
                 "status": "Closed",

@@ -1,12 +1,12 @@
 ---
 title: Создание governanceRoleAssignmentRequest
 description: Создание роли назначения запроса для представления операции, требуется на назначения ролей. В следующей таблице перечислены операции.
-ms.openlocfilehash: b0d9edab1182d4a6fa620cfb953df1cb8af20c66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077684"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191174"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -34,7 +34,7 @@ ms.locfileid: "27077684"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,33 +42,30 @@ ms.locfileid: "27077684"
 POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Метод не **поддерживает [Параметры запроса OData](/graph/query-parameters)** .
-
-### <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 | Content-Type  | application/json|
 
-### <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
 | Свойство     | Тип    |Обязательный|  Описание|
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|Идентификатор ресурса.|
+|resourceId|Строка|Да|Идентификатор ресурса.|
 |roleDefinitionId|Строка|Да|Идентификатор определения роли.|
 |subjectId|Строка|Да|Идентификатор субъекта.|
 |assignmentState|Строка|Да|Состояние назначения. Значение может быть ``Eligible`` и ``Active``.|
 |type|Строка|Да|Тип запроса. Значение может быть `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`и `AdminExtend`.|
-|Причина|String| |Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
+|Причина|Строка| |Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
 |расписание|[governanceSchedule](../resources/governanceschedule.md)| | Расписание для запроса назначений ролей. Для запроса типа `UserAdd`, `AdminAdd`, `AdminUpdate`, и `AdminExtend`, это необходимо.|
 
-### <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `201, Created` код ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
+## <a name="response"></a>Отклик
+Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
 
-## <a name="error-codes"></a>Коды ошибок
-Этот интерфейс API стандарту кодов HTTP, кроме кодов ошибок, перечисленных в следующей таблице.
+### <a name="error-codes"></a>Коды ошибок
+Этот интерфейс API возвращает стандартные коды ошибок HTTP. Кроме того он возвращает коды ошибок, перечисленных в следующей таблице.
 
 |Код ошибки     | Сообщение об ошибке              | Сведения |
 |:--------------------| :---------------------|:--------------------|
@@ -80,19 +77,22 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | 400 BadRequest | RoleAssignmentDoesNotExist    | [GovernanceRoleAssignment](../resources/governanceroleassignment.md) запрос на обновление/расширить не существует в системе.
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) не соответствует внутренней политик и не может быть создан.
 
-## <a name="example-1"></a>Пример 1
+## <a name="examples"></a>Примеры
+В приведенных ниже примерах показано, как использовать этот интерфейс API.
+
+### <a name="example-1"></a>Пример 1
 В этом примере администраторам назначение роли выставления счетов читатель nawu@fimdev.net пользователя.
 
- >**Примечание:** Помимо разрешение, в этом примере требуется инициатор запроса может иметь по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса. 
+ >**Примечание:** В дополнение к разрешение, в этом примере требуется, что источник запроса имеют по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса. 
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<Ид_ресурса\>|
+|resourceId|Строка|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Допустимость / Active|
 |type|Строка|Да| AdminAdd|
-|Причина|String| зависит от роли параметров||
+|Причина|Строка| зависит от роли параметров||
 |расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
@@ -116,7 +116,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -137,8 +137,6 @@ Content-length: 226
     "type": "AdminAdd",
     "assignmentState": "Eligible",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:38:34.6007266Z",
-    "roleAssignmentEndDateTime": "2018-11-08T23:37:43.356Z",
     "reason": "Evaluate Only",
     "status": {
         "status": "InProgress",
@@ -167,17 +165,17 @@ Content-length: 226
 }
 ```
 
-## <a name="example-2"></a>Пример 2
+### <a name="example-2"></a>Пример 2
 В этом примере nawu@fimdev.net пользователь активирует право чтения выставления счетов роли.
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<Ид_ресурса\>|
+|resourceId|Строка|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Active (активные)|
 |type|Строка|Да| UserAdd|
-|Причина|String| зависит от роли параметров||
+|Причина|Строка| зависит от роли параметров||
 |расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
@@ -202,7 +200,7 @@ Content-type: application/json
 "linkedEligibleRoleAssignmentId":"e327f4be-42a0-47a2-8579-0a39b025b394"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -222,8 +220,6 @@ Content-type: application/json
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:29:29.5123911Z",
-    "roleAssignmentEndDateTime": "2018-05-13T08:28:43.537Z",
     "reason": "Activate the owner role",
     "status": {
         "status": "InProgress",
@@ -264,12 +260,12 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3"></a>Пример 3
+### <a name="example-3"></a>Пример 3
 В этом примере пользователь nawu@fimdev.net деактивирует активная роль чтения выставления счетов.
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<Ид_ресурса\>|
+|resourceId|Строка|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Active (активные)|
@@ -294,7 +290,7 @@ Content-type: application/json
 "linkedEligibleRoleAssignmentId":"cb8a533e-02d5-42ad-8499-916b1e4822ec"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -315,8 +311,6 @@ Content-length: 226
     "type": "UserRemove",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": null,
-    "roleAssignmentEndDateTime": null,
     "reason": "Evaluate only",
     "schedule": null,
     "status": {
@@ -330,11 +324,11 @@ Content-length: 226
 ### <a name="example-4"></a>Пример 4
 В этом примере администраторам удалить nawu@fimdev.net пользователя из роли выставления счетов чтения.
 
- >**Примечание:** Помимо области разрешений в этом примере требуется инициатор запроса может иметь по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
+ >**Примечание:** В дополнение к разрешение, в этом примере требуется, что источник запроса имеют по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
  
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<Ид_ресурса\>|
+|resourceId|Строка|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Допустимость / Active|
@@ -358,7 +352,7 @@ Content-type: application/json
   "type":"AdminRemove"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -379,8 +373,6 @@ Content-length: 226
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",
@@ -394,15 +386,16 @@ Content-length: 226
 ### <a name="example-5"></a>Пример 5
 В этом примере Администраторы обновление назначения ролей для пользователя nawu@fimdev.net владельцу.
 
- >**Примечание:** Помимо области разрешений в этом примере требуется инициатор запроса может иметь по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса. 
+ >**Примечание:** В дополнение к разрешение, в этом примере требуется, что источник запроса имеют по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса. 
+
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<Ид_ресурса\>|
+|resourceId|Строка|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Допустимость / Active|
 |type|Строка|Да| AdminUpdate|
-|Причина|String| зависит от roleSettings||
+|Причина|Строка| зависит от roleSettings||
 |расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
@@ -426,7 +419,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -447,8 +440,6 @@ Content-length: 226
   "type":"AdminUpdate",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:50:03.4755896Z",
-  "roleAssignmentEndDateTime":"2018-06-05T05:42:31Z",
   "reason":null,
   "status":{
     "status":"InProgress",
@@ -475,16 +466,16 @@ Content-length: 226
 ### <a name="example-6"></a>В примере 6
 В этом примере расширяет истекающим сроком действия назначения ролей для пользователя ANUJCUSER для участника службы управления API.
 
- >**Примечание:** Помимо области разрешений в этом примере требуется инициатор запроса может иметь по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
+ >**Примечание:** В additon разрешение, в этом примере требуется, что источник запроса имеют по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
  
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<Ид_ресурса\>|
+|resourceId|Строка|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Допустимость / Active |
 |type|Строка|Да| AdminExtend|
-|Причина|String| зависит от roleSettings||
+|Причина|Строка| зависит от roleSettings||
 |расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
@@ -509,7 +500,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -530,8 +521,6 @@ Content-length: 226
   "type":"AdminExtend",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:54:09.7221332Z",
-  "roleAssignmentEndDateTime":"2018-08-10T23:53:55.327Z",
   "reason":"extend role assignment",
   "status":{
     "status":"InProgress",

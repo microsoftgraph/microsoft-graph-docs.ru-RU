@@ -1,12 +1,12 @@
 ---
 title: Тип ресурса governanceResource
 description: Представляет ресурсы, которые может осуществляться по управления правами Identity (PIM). Azure ресурсах может быть подписки, группы ресурсов и ресурсов, таких как виртуальную машину, базы данных SQL, и т.д.
-ms.openlocfilehash: 9e47f1295f9498796d51414a0a97acbe51fe1aae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6a048680c3b9bb614287e764d547a20bd09b5d25
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079089"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191132"
 ---
 # <a name="governanceresource-resource-type"></a>Тип ресурса governanceResource
 
@@ -20,19 +20,21 @@ ms.locfileid: "27079089"
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md) коллекции|Список коллекцию ресурсов, которыми запрашивающего доступ к.|
-|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Чтение свойства и связи с указанным идентификатором сущности ресурсов.|
+|[получение](../api/governanceresource-get.md); | [governanceResource](../resources/governanceresource.md) |Чтение свойства и связи с указанным идентификатором сущности ресурсов.|
+|[Регистрация](../api/governanceresource-register.md) | |Зарегистрируйте неуправляемые Azure подписки или управление группу для службы управления персональными данными. |
 
 Не `POST`, `PUT`, `PATCH`, `DELETE` поддерживаются в `roleDefinitions` набора сущностей в данный момент.
 
 ## <a name="properties"></a>Свойства
 | Свойство          |Тип         |Описание|
 |:------------------|:----------|:----------|
-|id                 |String     |Идентификатор ресурса. Это в формате GUID.|
-|externalId           |String   |Внешний идентификатор ресурса, представляющее его исходный идентификатор внешней базы данных. Например ресурсов подписки внешний идентификатор может быть «/ подписок/c14ae696-5e0c-4e5d-88cc-bef6637737ac». |
-|type               |Строка     |Обязательно. Тип ресурса. Например для Azure ресурсы тип может быть «Подписки», «Группа ресурсов», «Microsoft.Sql/server», и т.д.|
-|displayName        |String     |Отображаемое имя ресурса.|
-|status             |String     |Состояние указанного ресурса. Например, он может представлять ли ресурс заблокирован или нет (значения: `Active` / `Locked`). Примечание: Это свойство может быть расширен в будущем для поддержки дополнительных сценариев.|
-|onboardDateTime|DateTimeOffset      |Представляет даты и времени начала управляться PIM ресурса.|
+|id                 |Строка     |Идентификатор ресурса. Это в формате GUID.|
+|externalId           |String   |Внешний идентификатор ресурса, представляющее его исходный идентификатор во внешней системе. Например ресурсов подписки внешний идентификатор может быть «/ подписок/c14ae696-5e0c-4e5d-88cc-bef6637737ac». |
+|type               |Строка     |Обязательный. Тип ресурса. Например для Azure ресурсы тип может быть «Подписки», «Группа ресурсов», «Microsoft.Sql/server», и т.д.|
+|displayName        |Строка     |Отображаемое имя ресурса.|
+|status             |Строка     |Состояние указанного ресурса. Например, он может представлять ли ресурс заблокирован или нет (значения: `Active` / `Locked`). Примечание: Это свойство может быть расширен в будущем для поддержки дополнительных сценариев.|
+|registeredDateTime|DateTimeOffset      |Представляет при регистрации ресурса в PIM даты и времени.|
+|registeredRoot|Строка      |ExternalId область корневой ресурсов, зарегистрированные в PIM. Область корневой может быть родительский элемент или выше ресурсы предков.|
 |roleAssignmentCount|Int32      |Необязательный атрибут. Число назначений ролей для указанного ресурса. Чтобы получить свойство, рекомендуется использовать явным образом `$select=roleAssignmentCount` в запросе.|
 |roleDefinitionCount|Int32      |Необязательный атрибут. Количество определений ролей для указанного ресурса. Чтобы получить свойство, рекомендуется использовать явным образом `$select=roleDefinitionCount` в запросе.|
 |permissions|[governancePermission](../resources/governancepermission.md)      |Необязательный атрибут. Он представляет состояние запрашивающего доступ к ресурсу. Чтобы получить свойство, рекомендуется использовать явным образом `$select=permissions` в запросе.|
@@ -48,7 +50,7 @@ ms.locfileid: "27079089"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -63,7 +65,9 @@ ms.locfileid: "27079089"
   "externalId": "String",
   "type": "String",
   "displayName": "String",
-  "status": "String"
+  "status": "String",
+  "registeredDateTime": "String (timestamp)",
+  "registeredRoot": "String"
 }
 
 ```

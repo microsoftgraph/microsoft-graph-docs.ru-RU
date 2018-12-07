@@ -1,12 +1,12 @@
 ---
 title: Список governanceResources
 description: Получите коллекцию governanceResource с доступом к инициатора запроса.
-ms.openlocfilehash: 0c50fa03cc8294650fa592e3ff7a1692d89cfbb9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a8f0fc03dbd880c82bca7c9d8f6e84a2940511d9
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077910"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191091"
 ---
 # <a name="list-governanceresources"></a>Список governanceResources
 
@@ -17,11 +17,11 @@ ms.locfileid: "27077910"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Permissions              |
+|Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /privilegedAccess/azureResources/resources
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceResource](../resources/governanceresource.md) в теле ответа.
 ## <a name="examples"></a>Примеры
 
@@ -51,7 +51,7 @@ GET /privilegedAccess/azureResources/resources
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -75,7 +75,8 @@ Content-Length: 1289
             "type": "Microsoft.Storage/storageAccounts",
             "displayName": "anujstoragefimdev",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         },
         {
             "id": "0e0e4461-0c46-4d13-bf69-7cacbec75471",
@@ -83,7 +84,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines",
             "displayName": "APRJ-VM-01-T",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         },
         {
             "id": "c072eb85-e47b-4627-81cb-5af82a8fc9fb",
@@ -91,7 +93,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines/extensions",
             "displayName": "APRJ-VM-01-T/IaaSAntimalware",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         }
     ]
 }

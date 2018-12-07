@@ -1,12 +1,12 @@
 ---
 title: Список governanceRoleAssignments
 description: Получите коллекцию governanceRoleAssignments.
-ms.openlocfilehash: 4b47756f75c7da1b0e9293eda449c5a244d015b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0f4680c8998191fa07af993e8ee3712557b7010d
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075262"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191069"
 ---
 # <a name="list-governanceroleassignments"></a>Список governanceRoleAssignments
 
@@ -17,11 +17,11 @@ ms.locfileid: "27075262"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Permissions              |
+|Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,7 +49,7 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceRoleAssignment](../resources/governanceroleassignment.md) в теле ответа.
 ## <a name="example"></a>Пример
 
@@ -63,7 +63,7 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'918e54be-12c4-4f4c-a6d3-2ee0e3661c51'
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,7 +85,6 @@ Content-Length: 2062
             "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
             "linkedEligibleRoleAssignmentId": null,
             "externalId": null,
-            "isPermanent": false,
             "startDateTime": "2018-03-13T01:19:08.59Z",
             "endDateTime": "2018-06-11T01:18:37.08Z",
             "memberType": "Direct",
@@ -99,7 +98,6 @@ Content-Length: 2062
             "subjectId": "918e54be-12c4-4f4c-a6d3-2ee0e3661c51",
             "linkedEligibleRoleAssignmentId": null,
             "externalId": null,
-            "isPermanent": false,
             "startDateTime": "2018-03-28T16:56:48.243Z",
             "endDateTime": "2018-09-24T16:56:30.547Z",
             "memberType": "Direct",

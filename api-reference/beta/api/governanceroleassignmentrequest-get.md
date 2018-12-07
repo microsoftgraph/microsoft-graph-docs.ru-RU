@@ -1,12 +1,12 @@
 ---
 title: Получение governanceRoleAssignmentRequest
 description: 'Получите governanceRoleAssignmentRequest. '
-ms.openlocfilehash: 4dca14c081edc9cd3609bd4eab1c79a10953e433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: aac41bd8443d6066a7866462624a072db57b35da
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079387"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191097"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Получение governanceRoleAssignmentRequest
 
@@ -17,11 +17,11 @@ ms.locfileid: "27079387"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Permissions              |
+|Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
 Помимо области разрешений требуемыми инициатора запроса 
 *   Чтобы иметь по крайней мере одна роль назначения для ресурса; или
@@ -43,7 +43,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -57,7 +57,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/e68ff888-4af5-4ccb-8b74-39156090344b
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,8 +78,6 @@ Content-length: 279
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"2018-05-09T21:26:15.73-07:00",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",

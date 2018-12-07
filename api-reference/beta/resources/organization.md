@@ -1,12 +1,12 @@
 ---
 title: Тип ресурса organization
 description: 'Представляет клиента Azure Active Directory. '
-ms.openlocfilehash: 0dc7b55053ba70272c4e639dba4b62160f58f435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 053656eb042ca04f2d487d47ee62624875fa4e17
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077478"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191146"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -38,11 +38,12 @@ ms.locfileid: "27077478"
 |companyLastDirSyncTime|DateTimeOffset|Дата и время последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |country|String| Название страны или региона в адресе организации. |
 |countryLetterCode|String| Сокращенное название страны или региона для организации. |
+|createdDateTime|DateTimeOffset| Метка времени создания организации. Значение не могут быть изменены и заполняется автоматически при создании организации. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 |deletionTimestamp|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |dirSyncEnabled|Boolean|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию).|
 |displayName|String|Отображаемое имя для клиента.|
 |id|String|Уникальный идентификатор клиента. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
-|isMultipleDataLocationsForServicesEnabled|Логический|**значение true,** Если организация — ферма с несколькими-географически включено; **значение false,** Если организация не включена несколькими географически; **значение NULL** (по умолчанию). Только для чтения. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|isMultipleDataLocationsForServicesEnabled|Boolean|**значение true,** Если организация — ферма с несколькими-географически включено; **значение false,** Если организация не включена несколькими географически; **значение NULL** (по умолчанию). Только для чтения. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|Коллекция String| Значение null не допускается.            |
 |objectType|String|Строка, которая определяет тип объекта. Для клиентов всегда задается значение Company. |
 |postalCode|String| Почтовый индекс в адресе организации |

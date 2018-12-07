@@ -1,12 +1,12 @@
 ---
 title: Обновление governanceRoleSetting
 description: Обновление свойств governanceRoleSetting.
-ms.openlocfilehash: ca5752d51e5d59578594a12c80ae1cac316b48bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 2d9417c99e63b1b4c7302c2afdda4c272b2fce82
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075053"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191118"
 ---
 # <a name="update-governancerolesetting"></a>Обновление governanceRoleSetting
 
@@ -17,19 +17,20 @@ ms.locfileid: "27075053"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Permissions              |
+>**Примечание:** Этот интерфейс API также требуется, что источник запроса имеют по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
+
+|Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
-Помимо области разрешений этот интерфейс API требует инициатор запроса может иметь по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="optional-request-headers"></a>Необязательные заголовки запросов
+## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
@@ -39,7 +40,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса задаете значения параметра [governanceRuleSettings](../resources/governancerulesetting.md) , который требуется обновить. 
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые вычисляются, когда администратор пытается добавить назначение подходящими роли.|
 |adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые вычисляются, когда администратор пытается добавить членами назначения ролей.|
@@ -47,10 +48,11 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 |userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые вычисляются при попытке активировать его назначения ролей.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 NoContent`. В тексте отклика не возвращается никаких данных. 
+При успешном выполнении этот метод возвращает код отклика `204 NoContent`. Метод не возвращает данные в теле отклика. 
 
-## <a name="error-codes"></a>Коды ошибок
-Этот интерфейс API стандарту кодов HTTP. Кроме того ниже перечислены коды пользовательских ошибок.
+### <a name="error-codes"></a>Коды ошибок
+Этот интерфейс API возвращает стандартные коды ошибок HTTP. Кроме того он возвращает следующие коды ошибок.
+
 |Код ошибки     | Сообщение об ошибке         | Сведения             |
 |:--------------| :---------------------|:--------------------|
 | 400 BadRequest| RoleSettingNotFound   | [GovernanceRoleSetting](../resources/governancerolesetting.md) не существует в системе.
@@ -72,7 +74,7 @@ Content-length: 350
   "adminEligibleSettings":[{"ruleIdentifier":"ExpirationRule","setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"}]
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.None"

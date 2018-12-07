@@ -1,12 +1,12 @@
 ---
 title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
-ms.openlocfilehash: f7930e73cbfb1a8bf924e72ea790167bb263ba6a
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+ms.openlocfilehash: b98389d40e6a64e31efed755558c25dbfc542002
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156070"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184562"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "27156070"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | бета        | Добавлено новое свойство **progress** для [dataPolicyOperation](../api-reference/beta/resources/dataPolicyOperation). Оно указывает ход выполнения операции.
+| Дополнение        | бета        | Добавлено новое свойство **progress** для [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta). Оно указывает ход выполнения операции.
 
 ### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 
@@ -118,10 +118,10 @@ ms.locfileid: "27156070"
 
 ### <a name="directory-apis"></a>API каталогов
 
-| **Тип изменения** | **Версия**   | **Описание**                          | 
-| :-------------- | :------------ | :--------------------------------------- | 
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | бета | Добавлено свойство **licenseAssignmentStates** в объект [User](/graph/api/resources/user?view=graph-rest-beta) для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
-| Дополнение | бета | Добавлен ресурс **licenseAssignmentState** для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Дополнение | бета | Добавлен ресурс **licenseAssignmentState** для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Дополнение | бета | Добавлены свойства **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** и **membersWithLicenseErrors** в объект [Group](/graph/api/resources/group?view=graph-rest-beta) для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
