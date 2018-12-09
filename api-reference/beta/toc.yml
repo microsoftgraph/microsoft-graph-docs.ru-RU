@@ -60,7 +60,7 @@ items:
     href: overview.md
     expanded: true
     items:
-      - name: Пользователи
+      - name: пользователи;
         href: resources/users.md
         items:
           - name: Пользователь
@@ -5935,7 +5935,7 @@ items:
                 href: api/educationclass-list-assignments.md
               - name: Создание назначения
                 href: api/educationclass-post-assignments.md
-          - name: Пользователи
+          - name: пользователи;
             href: resources/educationuser.md
             items:
               - name: Перечисление учебных заведений
@@ -6289,6 +6289,8 @@ items:
                 href: api/device-post-registeredowners.md
               - name: Создание зарегистрированных пользователей
                 href: api/device-post-registeredusers.md
+              - name: Список групп устройств
+                href: api/device-list-memberof.md
           - name: Объект службы каталогов
             href: resources/directoryobject.md
             items:
@@ -7411,6 +7413,8 @@ items:
             href: resources/team.md
             items:
               - name: Создание группы
+                href: api/team-post.md
+              - name: Создание группы из группы
                 href: api/team-put-teams.md
               - name: Получение группы
                 href: api/team-get.md
