@@ -1,18 +1,18 @@
 ---
-title: Создание группы
-description: Создание новой группы в разделе группы.
-ms.openlocfilehash: 2e0331724006d18a0c02227427e7251b1d7e096d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: Создание группы из группы
+description: Создание новой группы из группы.
+ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081686"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209672"
 ---
-# <a name="create-team"></a>Создание группы
+# <a name="create-team-from-group"></a>Создание группы из группы
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-Создание новой [группы](../resources/team.md) в разделе [группы](../resources/group.md).
+Создание новой [группы](../resources/team.md) из [группы](../resources/group.md).
 
 Чтобы создать группу, группа должна иметь как минимум одной владелец.
 
@@ -47,7 +47,7 @@ PUT /groups/{id}/team
 
 В тексте запроса укажите представление JSON объекта [группы](../resources/team.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Если успешно завершена, этот метод должен возвращать `201 Created` код ответа и объекта [группы](../resources/team.md) в теле ответа.
 
@@ -79,11 +79,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",
   "truncated": true,

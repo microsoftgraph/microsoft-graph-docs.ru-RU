@@ -3,19 +3,19 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Преобразование в другие форматы
-ms.openlocfilehash: f3dfe3b01cac66754b9a8151a2bb46adee157741
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d5fbeeb28e2c0d2bf23652f451f87d12b1a06435
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025673"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209707"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 
 С помощью этого API вы можете получить содержимое элемента в определенном формате.
 Не все файлы можно преобразовать в любые форматы.
 
-Сведения о том, как скачать элемент в его исходном формате, см. в статье о [скачивании содержимого элемента](driveitem-get-content.md).
+Чтобы загрузить элемента в исходном формате, обратитесь к разделу [загрузить содержимое элемента](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 

@@ -1,12 +1,12 @@
 ---
 title: Получение riskyUsers
 description: Извлечение свойств и связи объекта **riskyUsers** .
-ms.openlocfilehash: f0a6ac24bf66184d0547e9284f5a35b84b9358b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7212e99e53d990df9cd9fea7dae754a693edc745
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075800"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209686"
 ---
 # <a name="get-riskyusers"></a>Получение riskyUsers
 
@@ -18,9 +18,9 @@ ms.locfileid: "27075800"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | IdentityrRskyUser.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskyUser.Read.All |
+|Для приложений | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /riskyUsers/{query}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [riskyUser](../resources/riskyuser.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -51,7 +51,7 @@ GET /riskyUsers/{query}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

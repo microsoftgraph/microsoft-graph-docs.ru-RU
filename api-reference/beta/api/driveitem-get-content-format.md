@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Преобразование в другие форматы
-ms.openlocfilehash: fef327291310b8355c28478185e285217fe99886
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 70558e7c0497c71f620481ff67b7d07cc255cd95
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075938"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209721"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 
@@ -17,7 +17,7 @@ ms.locfileid: "27075938"
 С помощью этого API вы можете получить содержимое элемента в определенном формате.
 Не все файлы можно преобразовать в любые форматы.
 
-Сведения о том, как скачать элемент в его исходном формате, см. в статье о [скачивании содержимого элемента](driveitem-get-content.md).
+Чтобы загрузить элемента в исходном формате, обратитесь к разделу [загрузить содержимое элемента](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
@@ -46,7 +46,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | командной   | Преобразует элемент в формате Командной  | здорово, fbx, obj, лист, stl, 3mf
 | html  | Преобразует элемент в формате HTML | EML, md, сообщение
 | JPG   | Преобразует элемент в формат JPG  | 3g 2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, правда, cpp, cr2, crw, cs, css, csv, по, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, документа, eml, epi, eps, epsf, epsi, epub, erf, fbx, fppx, gif, командной, h, hcp , heic, heif, htm, html, ico, значок, java, jfif, jpeg, jpg, js, json, ключ, журнала, m2ts, m4a, m4v, наценки, md, mef, mov, фильмов, mp3, MP4 (en), mp4v, mrw, msg, mts, nef, nrw, номера, obj, odp, odt, ogg, orf, страницы, pano, pdf, pef, php, pict, pl, лист, png, pot , potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, низкое, psd, корректировка необработанные, rb, rtf, rw1, rw2, показывать, эскиз, sql, sr2, stl, временных файлов Интернета, tiff, служб терминалов, txt, vb, webm, wma, wmv, xaml, xbm, xcf, xd, xml, xpm, yaml, yml
-| pdf   | Преобразует элемент в формате PDF  | doc, docx, epub, eml, htm, html, md, сообщение, odp, программ ods odt, pps, ppsx, ppt, pptx, rtf, временных файлов Интернета, tiff, xls, xlsm, xlsx
+| PDF   | Преобразует элемент в формате PDF  | doc, docx, epub, eml, htm, html, md, сообщение, odp, программ ods odt, pps, ppsx, ppt, pptx, rtf, временных файлов Интернета, tiff, xls, xlsm, xlsx
 
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 

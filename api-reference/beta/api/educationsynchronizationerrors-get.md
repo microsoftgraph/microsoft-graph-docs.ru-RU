@@ -1,12 +1,12 @@
 ---
 title: Получение educationSynchronizationErrors
 description: 'Получите ошибки, возникающие во время проверки и/или во время синхронизации профиля синхронизации данных конкретного school в клиентов. '
-ms.openlocfilehash: 5853834187dcf470dff093a21589b3eba798e793
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 8d4341eafa515f79de6dda2f40f22c990ed5926c
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078217"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209665"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Получение educationSynchronizationErrors
 
@@ -19,7 +19,7 @@ ms.locfileid: "27078217"
 |:-----------|:------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read EduAdministration.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
-|Для приложения| EduAdministration.Read.All EduAdministration.ReadWrite.All |
+|Для приложений| EduAdministration.Read.All EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -32,11 +32,11 @@ GET /synchronizationProfiles/{id}/errors
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.  |
+| Authorization  | строка  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [Ошибка синхронизации](../resources/educationsynchronizationerror.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -47,10 +47,10 @@ GET /synchronizationProfiles/{id}/errors
   "name": "get_educationSynchronizationProfile_error"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/error
+GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/errors
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
