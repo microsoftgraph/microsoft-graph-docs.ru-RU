@@ -1,18 +1,39 @@
 ---
 title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
-ms.openlocfilehash: b98389d40e6a64e31efed755558c25dbfc542002
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: 6f42282844fd0dbed5c5df2ffdda86fd7eb559b5
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184562"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191216"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
+
+## <a name="december-2018"></a>Декабрь 2018 года
+
+### <a name="directory-apis"></a>API каталогов
+
+| Тип изменения | Версия                                    | Описание                              |
+| :---------- | :----------------------------------------- | :--------------------------------------- |
+| Дополнение    | Бета-версия | Добавлено свойство `createdDateTime` для ресурса [organization](/graph/api/resources/organization?view=graph-rest-beta).|
+| Дополнение | версия 1.0 | Добавлен метод `memberOf` для получения сведений о непосредственном [участии](/graph/api/device-list-memberOf?view=graph-rest-1.0) для [устройств](/graph/api/resources/device?view=graph-rest-1.0). Этот метод добавлен для получения списка участий, включая вложенные участия.|
+
+### <a name="privileged-identity-management-apis"></a>API управления привилегированными пользователями
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета-версия | Добавлено свойство `registeredRoot` для объекта [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta).|
+| Изменение | Бета-версия | Переименовано свойство `onboardDateTime` объекта [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta) для `registeredDateTime`.|
+| Дополнение | Бета-версия | Добавлено новое действие [регистрация ресурсов](/graph/api/governanceresource-register?view=graph-rest-beta).|
+| Удаление | Бета-версия | Удалено свойство`isPermanent` для объекта [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta).|
+| Удаление | Бета-версия | Удалено свойство `roleAssignmentStartDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
+| Удаление | Бета-версия | Удалено свойство `roleAssignmentEndDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
+
 
 ## <a name="november-2018"></a>Ноябрь 2018 г.
 
@@ -765,7 +786,7 @@ ms.locfileid: "27184562"
 |Добавление|Бета|Добавлены новые типы перечисления:<br/>[androidWorkProfileCrossProfileDataSharingType](/graph/api/resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype?view=graph-rest-beta)<br/>[androidWorkProfileDefaultAppPermissionPolicyType](/graph/api/resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype?view=graph-rest-beta)<br/>[androidWorkProfileRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype?view=graph-rest-beta)<br/>[androidWorkProfileVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconnectiontype?view=graph-rest-beta)<br/>[bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta)<br/>[localSecurityOptionsInformationShownOnLockScreenType](/graph/api/resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype?view=graph-rest-beta)<br/>[managedAppRemediationAction](/graph/api/resources/intune-mam-managedappremediationaction?view=graph-rest-beta)<br/>[managedDeviceOwnerType](/graph/api/resources/intune-devices-manageddeviceownertype?view=graph-rest-beta)<br/>[restrictedAppsState](/graph/api/resources/intune-deviceconfig-restrictedappsstate?view=graph-rest-beta)<br/>[windows10VpnProfileTarget](/graph/api/resources/intune-deviceconfig-windows10vpnprofiletarget?view=graph-rest-beta)<br/>|
 |Добавление|Бета|Добавлено действие [playLostModeSound](/graph/api/intune-devices-manageddevice-playlostmodesound?view=graph-rest-beta) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 |Удаление|Бета|Удалены следующие типы перечисления:<br/>**bitLockerRecoveryinformationType**<br/>**windowsUpdateRestartMode**<br/>|
-|Добавление|Бета|Добавлены свойства **workProfileBlockScreenCapture** и **workProfileBlockCrossProfileCallerId** для объекта [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta).|
+|Добавление|бета|Добавлены свойства **workProfileBlockScreenCapture** и **workProfileBlockCrossProfileCallerId** для объекта [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta).|
 |Добавление|Бета|Добавлены свойства **minimumWipePatchVersion**, **allowedAndroidDeviceManufacturers** и **appActionIfAndroidDeviceManufacturerNotAllowed** для объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta).|
 |Добавление|Бета|Добавлены свойства **minimumWipeSdkVersion**, **minimumWipePatchVersion**, **allowedIosDeviceModels**, **appActionIfIosDeviceModelNotAllowed**, **allowedAndroidDeviceManufacturers** и **appActionIfAndroidDeviceManufacturerNotAllowed** для объекта [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta).|
 |Добавление|Бета|Добавлены свойства **notApplicablePlatformCount** и **conflictCount** для объекта [deviceComplianceDeviceOverview](/graph/api/resources/intune-deviceconfig-devicecompliancedeviceoverview?view=graph-rest-beta).|
@@ -1397,7 +1418,7 @@ ms.locfileid: "27184562"
 |Изменение|Бета-версия|Добавлены свойства **versionNumber** и **buildNumber** для объекта [iosLobApp](/graph/api/resources/intune-apps-ioslobapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **bundleId** для объекта [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **preSharedKey** для объекта [iosWiFiConfiguration](/graph/api/resources/intune-deviceconfig-ioswificonfiguration?view=graph-rest-beta).|
-|Изменение|Бета-версия|Добавлены свойства **versionName** и **versionCode** для объекта [managedAndroidLobApp](/graph/api/resources/intune-apps-managedandroidlobapp?view=graph-rest-beta).|
+|Изменение|бета|Добавлены свойства **versionName** и **versionCode** для объекта [managedAndroidLobApp](/graph/api/resources/intune-apps-managedandroidlobapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **periodBeforePinReset** для объекта [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **subscriberCarrier**, **meid**, **totalStorageSpaceInBytes** и **freeStorageSpaceInBytes** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство **enrollmentType** объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta).|
