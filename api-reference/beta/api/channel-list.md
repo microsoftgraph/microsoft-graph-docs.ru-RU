@@ -1,12 +1,12 @@
 ---
 title: Список каналов
 description: Получить список каналов в данной группы.
-ms.openlocfilehash: a37ca4e6012dd287b1b637fe3ddb3cfc2aaf5518
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 024751f0d77889249d2f2dcf6b2bb1f709128db1
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075674"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222543"
 ---
 # <a name="list-channels"></a>Список каналов
 
@@ -23,6 +23,8 @@ ms.locfileid: "27075674"
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.Read.All, Group.ReadWrite.All    |
+
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +43,7 @@ GET /teams/{id}/channels
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [канала](../resources/channel.md) в теле ответа.
 
@@ -55,9 +57,8 @@ GET /teams/{id}/channels
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

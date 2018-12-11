@@ -1,12 +1,12 @@
 ---
 title: Группа архива
 description: 'Архивируйте указанной группы. '
-ms.openlocfilehash: 414b45a3dd2f03aba29b3393db3ef547472a8950
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 80c8d372c0b70548cdd887270d387f258bb92ff6
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026597"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222403"
 ---
 # <a name="archive-team"></a>Группа архива
 
@@ -30,6 +30,8 @@ ms.locfileid: "27026597"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All    |
 
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,7 +51,7 @@ POST /teams/{id}/archive
 ```
 Этот дополнительный параметр определяет, требуется ли задавать разрешения для членов группы только для чтения на сайте Sharepoint Online, связанный с группой. Задать значение false или пропуск текста полностью приведет к этот шаг пропущен.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Если архивация запускается успешно, этот метод возвращает `202 Accepted` код ответа. Ответ также будет содержать `Location` заголовок, который содержит расположение [teamsAsyncOperation](../resources/teamsasyncoperation.md) , который был создан для обработки архивации рабочей группы. Проверьте состояние архивации операции, внесение запрос GET в этом расположении.
 
@@ -63,7 +65,7 @@ POST /teams/{id}/archive
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/archive
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 ```http
 HTTP/1.1 202 Accepted

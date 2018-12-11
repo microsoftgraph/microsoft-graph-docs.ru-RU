@@ -1,12 +1,12 @@
 ---
 title: Группа обновления
 description: Обновление свойств указанной группы.
-ms.openlocfilehash: 27cbf8f571752a27fb68727fe2695a0250f5dc75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 23f65ef1cd1948941bd814a521bdaa0984553dff
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024727"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222606"
 ---
 # <a name="update-team"></a>Группа обновления
 
@@ -24,11 +24,14 @@ ms.locfileid: "27024727"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.Read.All, Group.ReadWrite.All    |
 
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -38,7 +41,7 @@ PATCH /teams/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [группы](../resources/team.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -68,7 +71,7 @@ Content-length: 211
   }
 }
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,

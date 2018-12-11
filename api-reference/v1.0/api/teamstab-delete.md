@@ -1,12 +1,12 @@
 ---
 title: Удалить вкладку с канала
 description: 'Удаляет (отключит) вкладки с указанными в группе. '
-ms.openlocfilehash: b3f35d2cc8280d440b8c834ad9443bd5bbfd6bcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 2b132d2d127ff665b1cf408f38221e8bda09c166
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026596"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222340"
 ---
 # <a name="delete-tab-from-channel"></a>Удалить вкладку с канала
 
@@ -22,6 +22,8 @@ ms.locfileid: "27026596"
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All |
+
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +53,7 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ```http
 HTTP/1.1 204 No Content

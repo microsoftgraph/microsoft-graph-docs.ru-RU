@@ -1,12 +1,12 @@
 ---
 title: Исправление канала
 description: Обновляет свойства указанного канала.
-ms.openlocfilehash: 833b5cf4999f43e9de799691a9f6d7a98318d4fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: c7cc2db83fbab0e04f1620d71c4c7cf7a69b526f
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074985"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222382"
 ---
 # <a name="patch-channel"></a>Исправление канала
 
@@ -25,6 +25,8 @@ ms.locfileid: "27074985"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All |
 
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +41,7 @@ PATCH /teams/{id}/channels/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [канала](../resources/channel.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -53,9 +55,8 @@ PATCH /teams/{id}/channels/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

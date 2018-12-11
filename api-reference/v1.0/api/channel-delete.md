@@ -1,12 +1,12 @@
 ---
 title: Удаление канала
 description: Удаление канала.
-ms.openlocfilehash: b2756de636f38a14063a345ba2094c1cb628517c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f24471a4f93c50d722290feb9093514c34f4cc2f
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024361"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222349"
 ---
 # <a name="delete-channel"></a>Удаление канала
 
@@ -26,6 +26,8 @@ ms.locfileid: "27024361"
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All    |
+
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +57,7 @@ DELETE /teams/{id}/channels/{id}
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 <!-- {

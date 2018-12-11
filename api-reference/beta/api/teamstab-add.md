@@ -1,12 +1,12 @@
 ---
 title: Добавление вкладки канала
 description: 'Добавляет (PIN) вкладку для указанного канала в группе. '
-ms.openlocfilehash: be246b0308be83e0b411fa89fe16034018756829
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f4e57839436b6c40669125114b82fe67d58efc2d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076391"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222641"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки канала
 
@@ -23,6 +23,8 @@ ms.locfileid: "27076391"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 | Для приложений                            | Group.ReadWrite.All                         |
 
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -38,7 +40,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 [TeamsTab](../resources/teamstab.md).
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `201 OK`.
 
@@ -65,7 +67,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

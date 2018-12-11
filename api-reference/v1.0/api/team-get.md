@@ -1,12 +1,12 @@
 ---
 title: Получение группы
 description: Извлечение свойств и связи из указанной группы.
-ms.openlocfilehash: 790d550024742875b0fb3a5b4383f0ec9ba793bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e1f3b08134377492fc00f9bc0b43c190d1d8a81d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026968"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222648"
 ---
 # <a name="get-team"></a>Получение группы
 
@@ -23,7 +23,10 @@ ms.locfileid: "27026968"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.Read.All, Group.ReadWrite.All    |
 
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}
@@ -40,7 +43,7 @@ GET /teams/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объекта [группы](../resources/team.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -53,7 +56,7 @@ GET /teams/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

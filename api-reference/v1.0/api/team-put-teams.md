@@ -1,12 +1,12 @@
 ---
 title: Создание группы
 description: Создание новой группы в разделе группы.
-ms.openlocfilehash: 7a51a9fd0d6252b6e29ab426d0b983e4cdeecefe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d7afffb331bf4a1714083ebb5f95147ec48a65d0
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027671"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222550"
 ---
 # <a name="create-team"></a>Создание группы
 
@@ -28,6 +28,8 @@ ms.locfileid: "27027671"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All |
 
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к групп, которые они не должна быть членом.
+
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +49,7 @@ PUT /groups/{id}/team
 
 В тексте запроса укажите представление JSON объекта [группы](../resources/team.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Если успешно завершена, этот метод должен возвращать `201 Created` код ответа и объекта [группы](../resources/team.md) в теле ответа.
 
@@ -79,11 +81,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",
   "truncated": true,

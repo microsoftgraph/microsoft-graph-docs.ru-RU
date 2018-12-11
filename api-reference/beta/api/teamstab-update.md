@@ -1,12 +1,12 @@
 ---
 title: Вкладка "обновления"
 description: Обновляет свойства указанной вкладки.
-ms.openlocfilehash: 6943e9ea4ff602b3fcd4dc8ac899d55cee120ecc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: bc25830411f93ed1644b86c1228f987c091db32a
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076395"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222564"
 ---
 # <a name="update-tab"></a>Вкладка "обновления"
 
@@ -24,10 +24,13 @@ ms.locfileid: "27076395"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений                            | Group.ReadWrite.All                         |
 
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+
 ## <a name="http-request"></a>HTTP-запрос
 ```http
 PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -37,7 +40,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [вкладки](../resources/teamstab.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -53,7 +56,7 @@ Content-length: 211
   "name": "My Contoso Tab - updated"
 }
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json

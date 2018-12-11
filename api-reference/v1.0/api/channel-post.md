@@ -1,12 +1,12 @@
 ---
 title: Создание канала
 description: Создайте новый канал в группы разработчиков Microsoft, как указано в тексте запроса.
-ms.openlocfilehash: 8cb6beed2758ac225bbef2b028abff68547b3eda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9fb327e947585732e9a17151d4cc06e8d50c4bf1
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026150"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222585"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -26,6 +26,8 @@ ms.locfileid: "27026150"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All    |
 
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -40,7 +42,7 @@ POST /teams/{id}/channels
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [канала](../resources/channel.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `201 Created` объект [канала](../resources/channel.md) и кода ответа в теле ответа.
 
@@ -60,9 +62,8 @@ Content-type: application/json
   "description": "This channel is where we debate all future architecture plans"
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

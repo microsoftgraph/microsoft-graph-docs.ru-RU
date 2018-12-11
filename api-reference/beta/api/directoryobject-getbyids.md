@@ -1,12 +1,12 @@
 ---
 title: Получение объектов каталога из списка идентификаторов
 description: Выберите "параметр запроса не поддерживается для этой операции.
-ms.openlocfilehash: 87fa774910c1ea6795b6df65ee0f5538d12296bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e6f987a3269b209c5df71b4961cf73081286a76d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075736"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222451"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 
@@ -16,7 +16,7 @@ ms.locfileid: "27075736"
 
 Ниже перечислены некоторые распространенные случаи использования этой функции.
 
-* Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](directoryobject-getmemberobjects.md) или [getMemberGroups](directoryobject-getmembergroups.md), в базовые объекты каталогов.
+* Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) или [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta), в базовые объекты каталогов.
 * Разрешение идентификаторов, которые приложение хранит во внешнем хранилище, в базовые объекты каталогов.
 
 ## <a name="permissions"></a>Разрешения
@@ -35,14 +35,14 @@ ms.locfileid: "27075736"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /directoryObjects/getById
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
 |ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов. |
-|types|Коллекция String| Коллекция типов ресурсов, определяющий набор ресурсов семейств сайтов для поиска. Если не указан, по умолчанию — [directoryObject](../resources/directoryobject.md), которая содержит все типы ресурсов, определенные в каталоге. Любого объекта, производного от `directoryObject` может быть указано в коллекции; Например: [пользователей](../resources/user.md), [группы](../resources/group.md), [устройства](../resources/device.md)и т. д. Значения не учитывают регистр.|
+|types|Коллекция String| Коллекция типов ресурсов, определяющий набор ресурсов семейств сайтов для поиска. Если не указан, по умолчанию — [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), которая содержит все типы ресурсов, определенные в каталоге. Любого объекта, производного от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) может быть указано в коллекции; Например: [пользователей](/graph/api/resources/user?view=graph-rest-beta), [группы](/graph/api/resources/group?view=graph-rest-beta), [устройства](/graph/api/resources/device?view=graph-rest-beta)и т. д. Для поиска справочных материалов, которые [Поставщик облаке решения](https://partner.microsoft.com/en-us/cloud-solution-provider) партнеров организации задается [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Если не указан, по умолчанию — [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), которая содержит все типы ресурсов, определенные в каталоге, за исключением справочные материалы, которые [Поставщик решения облачных](https://partner.microsoft.com/en-us/cloud-solution-provider) партнерской организации. Значения не учитывают регистр.|
 
 ## <a name="response"></a>Отклик
 
@@ -64,7 +64,7 @@ POST /directoryObjects/getById
 
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_getById"
+  "name": "directoryobject_getByIds"
 }-->
 
 ```http

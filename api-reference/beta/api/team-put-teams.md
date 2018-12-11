@@ -1,12 +1,12 @@
 ---
 title: Создание группы из группы
 description: Создание новой группы из группы.
-ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: d43c9032811c2ddc1733117642f9e2ae4f343a7e
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209672"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222634"
 ---
 # <a name="create-team-from-group"></a>Создание группы из группы
 
@@ -27,6 +27,8 @@ ms.locfileid: "27209672"
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All |
+
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к групп, которые они не должна быть членом.
 
 ## <a name="http-request"></a>HTTP-запрос
 

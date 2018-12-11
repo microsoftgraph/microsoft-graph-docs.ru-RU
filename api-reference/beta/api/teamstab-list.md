@@ -1,12 +1,12 @@
 ---
 title: Список вкладок в канале
 description: 'Получить список вкладок в указанный канал в группе. '
-ms.openlocfilehash: 6c72bae20542911c7ab1563e994ca9ebdb79b37a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0628874876093447802583db70e160ad17e21f87
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081689"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222508"
 ---
 # <a name="list-tabs-in-channel"></a>Список вкладок в канале
 
@@ -22,6 +22,8 @@ ms.locfileid: "27081689"
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Group.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 | Для приложений                            | Group.Read.All, Group.ReadWrite.All         |
+
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +43,7 @@ GET /teams/{id}/channels/{id}/tabs
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [вкладок](../resources/teamstab.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -51,7 +53,7 @@ GET /teams/{id}/channels/{id}/tabs
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 ```http

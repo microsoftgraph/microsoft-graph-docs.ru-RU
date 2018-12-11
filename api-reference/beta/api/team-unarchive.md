@@ -1,12 +1,12 @@
 ---
 title: Unarchive группы
 description: Восстановление архивированных группы. Это восстанавливает возможность отправлять сообщения и изменение группы, сотрудничает с параметры клиента и группы. Команды архивируются использования API архива.
-ms.openlocfilehash: 6016529f20781a66aa8c36771a56942cb471ee7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7ea400e93efceed7b8a35de24339739bcaa9d74f
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079977"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222459"
 ---
 # <a name="unarchive-team"></a>Unarchive группы
 
@@ -25,6 +25,8 @@ Unarchiving является асинхронной операции. Групп
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All    |
 
+> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +41,7 @@ POST /teams/{id}/unarchive
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Если unarchiving запускается успешно, этот метод возвращает `202 Accepted` код ответа. Ответ также будет содержать `Location` заголовок, который содержит расположение [teamsAsyncOperation](../resources/teamsasyncoperation.md) , который был создан для обработки unarchiving рабочей группы. Проверьте состояние unarchiving операции, внесение запрос GET в этом расположении.
 
@@ -54,7 +56,7 @@ POST /teams/{id}/unarchive
 POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 ```http
 HTTP/1.1 202 Accepted
