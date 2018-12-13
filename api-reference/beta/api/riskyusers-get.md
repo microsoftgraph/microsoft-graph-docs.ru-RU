@@ -1,18 +1,21 @@
 ---
 title: Получение riskyUsers
 description: Извлечение свойств и связи объекта **riskyUsers** .
-ms.openlocfilehash: 7212e99e53d990df9cd9fea7dae754a693edc745
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: 14a944012a8015ecf3c60f761edba680c2c7a68b
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209686"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241029"
 ---
 # <a name="get-riskyusers"></a>Получение riskyUsers
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Извлечение свойств и связи объекта **riskyUsers** .
+
+> **Примечание:** Этот интерфейс API требуется лицензия на P2 Azure AD Premium.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -38,7 +41,7 @@ GET /riskyUsers/{query}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [riskyUser](../resources/riskyuser.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -51,7 +54,7 @@ GET /riskyUsers/{query}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers/{id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

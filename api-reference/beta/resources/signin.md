@@ -1,12 +1,12 @@
 ---
 title: Тип ресурса вход
 description: 'Этот ресурс подробно описывает активность пользователя или приложения входа в каталоге. '
-ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184541"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241078"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса вход
 Этот ресурс подробно описывает активность пользователя или приложения входа в каталоге. 
@@ -37,9 +37,9 @@ ms.locfileid: "27184541"
 |ipAddress|String|Предоставляет IP-адрес клиента, с которой входа в произошла.|
 |location|[signInLocation](signinlocation.md)|Предоставляет Город, состояний и код страны 2 букв от входа в возникновения.|
 |processingTimeInMilliseconds|Int|Содержит время в миллисекундах, в AD STS обработки запросов|
-|riskDetail|`riskDetail`|Предоставляет «причина» за с определенным состоянием рискованный пользователя, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что никакие действия не выполнены на пользователя или входа в данный момент.|
-|riskLevelAggregated|`riskLevel`|Предоставляет сводные риском. Возможные значения: `none`, `low`, `medium`, `high`, `hidden`, и `unknownFutureValue`. Значение `hidden` означает, что пользователь или входа в не был включен для защиты удостоверения Azure AD.|
-|riskLevelDuringSignIn|`riskLevel`|Предоставляет уровень риска при входе в систему. Возможные значения: `none`, `low`, `medium`, `high`, `hidden`, и `unknownFutureValue`. Значение `hidden` означает, что пользователь или входа в не был включен для защиты удостоверения Azure AD.|
+|riskDetail|`riskDetail`|Предоставляет «причина» за с определенным состоянием рискованный пользователя, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что никакие действия не выполнены на пользователя или входа в данный момент. **Примечание:** Подробные сведения для данного свойства доступны только для клиентов P2 Azure AD Premium. Будут возвращены все клиенты `hidden`.|
+|riskLevelAggregated|`riskLevel`|Предоставляет сводные риском. Возможные значения: `none`, `low`, `medium`, `high`, `hidden`, и `unknownFutureValue`. Значение `hidden` означает, что пользователь или входа в не был включен для защиты удостоверения Azure AD. **Примечание:** Подробные сведения для данного свойства доступны только для клиентов P2 Azure AD Premium. Будут возвращены все клиенты `hidden`.|
+|riskLevelDuringSignIn|`riskLevel`|Предоставляет уровень риска при входе в систему. Возможные значения: `none`, `low`, `medium`, `high`, `hidden`, и `unknownFutureValue`. Значение `hidden` означает, что пользователь или входа в не был включен для защиты удостоверения Azure AD. **Примечание:** Подробные сведения для данного свойства доступны только для клиентов P2 Azure AD Premium. Будут возвращены все клиенты `hidden`.|
 |riskEventTypes|`riskEventTypes`|Содержит список типов событий рисков, связанных с входа в. Возможные значения: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`, и `unknownFutureValue`.|
 |riskState|`riskState`|Предоставляет «состояние риска» рискованный пользователя, входа или события риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Предоставляет многофакторной проверкой Подлинности связанные сведения, как требуется многофакторной проверкой Подлинности, состояние многофакторной проверкой Подлинности для соответствующих входа в.|

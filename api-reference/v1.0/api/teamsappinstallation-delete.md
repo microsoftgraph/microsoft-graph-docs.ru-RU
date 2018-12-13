@@ -1,12 +1,12 @@
 ---
 title: Удаление приложения из группы
 description: Удаление приложения из указанной группы.
-ms.openlocfilehash: a1ba2ce7234796e3a2df508d40432a15690b1a63
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f9e04ad9d6672c3b9cfaaee9109b1bba0f7ab4c6
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025377"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241057"
 ---
 # <a name="delete-app-from-team"></a>Удаление приложения из группы
 
@@ -49,7 +49,7 @@ DELETE /teams/{id}/installedApps/{id}
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
+DELETE /teams/{id}/installedApps/{id}
 ```
 #### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.

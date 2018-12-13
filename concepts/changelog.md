@@ -1,12 +1,12 @@
 ---
 title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
-ms.openlocfilehash: 6f42282844fd0dbed5c5df2ffdda86fd7eb559b5
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+ms.openlocfilehash: 03dc6e993ff219ca38b16c6db7bbbb5ebc0ccb48
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191216"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209770"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -21,7 +21,29 @@ ms.locfileid: "27191216"
 | Тип изменения | Версия                                    | Описание                              |
 | :---------- | :----------------------------------------- | :--------------------------------------- |
 | Дополнение    | Бета-версия | Добавлено свойство `createdDateTime` для ресурса [organization](/graph/api/resources/organization?view=graph-rest-beta).|
-| Дополнение | версия 1.0 | Добавлен метод `memberOf` для получения сведений о непосредственном [участии](/graph/api/device-list-memberOf?view=graph-rest-1.0) для [устройств](/graph/api/resources/device?view=graph-rest-1.0). Этот метод добавлен для получения списка участий, включая вложенные участия.|
+| Дополнение | версия 1.0 | Добавлен метод `memberOf` для получения сведений о непосредственном [участии](/graph/api/device-list-memberOf?view=graph-rest-1.0) для [устройств](/graph/api/resources/device?view=graph-rest-1.0). Этот метод был добавлен для получения списка участий, включая вложенные участия.|
+
+### <a name="microsoft-teams-apis"></a>API Microsoft Teams
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Дополнение |Бета-версия| Представлен новый тип ресурса [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+|Дополнение |Бета-версия| Представлен новый тип ресурса [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
+|Дополнение |Бета-версия| Добавлены свойства isFavoriteByDefault, mail и webUrl для [канала](/graph/api/resources/channel?view=graph-rest-beta).|
+|Дополнение |Бета-версия| Добавлено свойство displayName для [команды](/graph/api/resources/team?view=graph-rest-beta)|
+|Дополнение |Бета-версия| Добавлены свойство описание для [команды](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |Бета-версия| Добавлены свойство классификация для [команды](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |Бета-версия| Добавлены свойство [специализация](/graph/api/resources/teamspecialization?view=graph-rest-beta) для [команды](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |Бета-версия| Добавлено свойство [видимость](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) для [группы](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |Бета-версия| Добавлено свойство [шаблон](/graph/api/resources/teamstemplate?view=graph-rest-beta) для [группы](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |Бета-версия| Добавлено семейство владельцы для [группы](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта teamVisibilityType.|
+|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта giphyRatingType.|
+|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAsyncOperationType.|
+|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAsyncOperationStatus.|
+|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAppDistributionMethod.|
+|Дополнение |Бета-версия| Представлен новый тип ресурса [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+
 
 ### <a name="privileged-identity-management-apis"></a>API управления привилегированными пользователями
 
@@ -33,7 +55,6 @@ ms.locfileid: "27191216"
 | Удаление | Бета-версия | Удалено свойство`isPermanent` для объекта [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta).|
 | Удаление | Бета-версия | Удалено свойство `roleAssignmentStartDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
 | Удаление | Бета-версия | Удалено свойство `roleAssignmentEndDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
-
 
 ## <a name="november-2018"></a>Ноябрь 2018 г.
 
@@ -1270,7 +1291,7 @@ ms.locfileid: "27191216"
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
-|Дополнение|Бета|Добавлены новые объекты:<br/>[androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta);<br/>[deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta);<br/>[deviceAndAppManagementRoleDefinition](/graph/api/resources/intune-rbac-deviceandappmanagementroledefinition?view=graph-rest-beta);<br/>[macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta).<br/>|
+|Дополнение|бета|Добавлены новые объекты:<br/>[androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta);<br/>[deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta);<br/>[deviceAndAppManagementRoleDefinition](/graph/api/resources/intune-rbac-deviceandappmanagementroledefinition?view=graph-rest-beta);<br/>[macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta).<br/>|
 |Добавление|Бета|Добавлены новые сложные типы:<br/>[resourceAction](/graph/api/resources/intune-rbac-resourceaction?view=graph-rest-beta);<br/>[updateWindowsDeviceAccountActionParameter](/graph/api/resources/intune-devices-updatewindowsdeviceaccountactionparameter?view=graph-rest-beta);<br/>[vppTokenActionResult](/graph/api/resources/intune-onboarding-vpptokenactionresult?view=graph-rest-beta);<br/>[windowsDeviceAADAccount](/graph/api/resources/intune-devices-windowsdeviceaadaccount?view=graph-rest-beta);<br/>[windowsDeviceAccount](/graph/api/resources/intune-devices-windowsdeviceaccount?view=graph-rest-beta);<br/>[windowsDeviceADAccount](/graph/api/resources/intune-devices-windowsdeviceadaccount?view=graph-rest-beta).<br/>|
 |Добавление|Бета-версия|Добавлено действие [revokeTokens](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-revoketokens?view=graph-rest-beta) для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta). |
 |Добавление|Бета-версия|Добавлено действие [createToken](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-createtoken?view=graph-rest-beta) для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta). |
@@ -2764,7 +2785,7 @@ ms.locfileid: "27191216"
 | Дополнение        | 1.0          | Добавлено свойство _mobilePhone_.            |
 | Дополнение        | 1.0 и бета-версия | Добавлено свойство _internetMessageId_. Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 | Изменение          | Бета-версия          | Свойство _mobilePhone1_ теперь называется _mobilePhone_. |
-| Изменение          | Бета-версия          | У методов _createReply_ и _createReplyAll_ появились новые параметры — _Message_ и _comment_. |
+| Изменение          | бета          | У методов _createReply_ и _createReplyAll_ появились новые параметры — _Message_ и _comment_. |
 | Изменение          | Бета-версия          | У метода _createForward_ появились новые параметры — _Message_, _ToRecipients_ и _comment_. |
 | Изменение          | Бета-версия          | У методов _reply_, _replyAll_ и _forward_ появился новый параметр — _Message_. |
 

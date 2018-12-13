@@ -1,12 +1,12 @@
 ---
 title: Добавление приложения в группу
 description: Пакет приложения для указанной группы.
-ms.openlocfilehash: de5817f243b02462817d23d0e2b3864d5644b1d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: ec03c0f8744bd2f1dd5cf5e2a7e84c9b59a7c6ce
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025907"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241036"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в группу
 
@@ -53,9 +53,9 @@ POST /teams/{id}/installedApps
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/installedApps
+POST /teams/{id}/installedApps
 {
-   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 #### <a name="response"></a>Ответ

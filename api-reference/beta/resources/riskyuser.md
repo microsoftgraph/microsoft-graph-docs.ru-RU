@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса riskyUsers
 description: Представляет пользователей Azure AD, в группу риска. Постоянно Azure AD выполнена оценка риска пользователя на основе различных сигналы и машинного обучения. Этот интерфейс API позволяет получать доступ ко всем пользователям под риском в Azure AD.
-ms.openlocfilehash: 5d51c303d25a781f8e432badb42acb48cf135217
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 47856ab28a52046f19087e0f59745efb9855e81a
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076634"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241064"
 ---
 # <a name="riskyusers-resource-type"></a>Тип ресурса riskyUsers
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Представляет пользователей Azure AD, в группу риска. Постоянно Azure AD выполнена оценка риска пользователя на основе различных сигналы и машинного обучения. Этот интерфейс API позволяет получать доступ ко всем пользователям под риском в Azure AD.
+
+> **Примечание:** Этот интерфейс API требуется лицензия на P2 Azure AD Premium.
 
 Дополнительные сведения о событиях риска можно [Azure Active Directory защиту](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
 
@@ -25,7 +27,7 @@ ms.locfileid: "27076634"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство   | Тип|Description|
+| Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |`id`|`string`|Уникальный идентификатор пользователя, под угрозой|
 |`isDeleted`|`bool`|Указывает, является ли пользователь удаляется. Возможные значения: `true`,`false`|
