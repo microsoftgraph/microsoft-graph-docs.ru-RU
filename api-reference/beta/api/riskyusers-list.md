@@ -1,50 +1,53 @@
 ---
 title: Список riskyUsers
 description: Извлечение свойств и связи объекта **riskyUsers** .
-ms.openlocfilehash: 152171ff098bb58e8cbb247ca687841e77594ead
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d800f37c1e7e2d03edc0273d30e2be37c799d0d4
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082798"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241043"
 ---
-# <a name="list-riskyusers"></a><span data-ttu-id="7b630-103">Список riskyUsers</span><span class="sxs-lookup"><span data-stu-id="7b630-103">List riskyUsers</span></span>
+# <a name="list-riskyusers"></a><span data-ttu-id="f4505-103">Список riskyUsers</span><span class="sxs-lookup"><span data-stu-id="f4505-103">List riskyUsers</span></span>
 
-> <span data-ttu-id="7b630-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="7b630-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7b630-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7b630-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f4505-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f4505-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f4505-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f4505-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="7b630-106">Извлечение свойств и связи объекта **riskyUsers** .</span><span class="sxs-lookup"><span data-stu-id="7b630-106">Retrieve the properties and relationships of a **riskyUsers** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="7b630-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7b630-107">Permissions</span></span>
-<span data-ttu-id="7b630-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7b630-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f4505-106">Извлечение свойств и связи объекта **riskyUsers** .</span><span class="sxs-lookup"><span data-stu-id="f4505-106">Retrieve the properties and relationships of a **riskyUsers** object.</span></span>
 
-|<span data-ttu-id="7b630-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7b630-110">Permission type</span></span>      | <span data-ttu-id="7b630-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7b630-111">Permissions (from least to most privileged)</span></span>              |
+> <span data-ttu-id="f4505-107">**Примечание:** Этот интерфейс API требуется лицензия на P2 Azure AD Premium.</span><span class="sxs-lookup"><span data-stu-id="f4505-107">**Note:** This API requires an Azure AD Premium P2 license.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="f4505-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f4505-108">Permissions</span></span>
+<span data-ttu-id="f4505-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f4505-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="f4505-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f4505-111">Permission type</span></span>      | <span data-ttu-id="f4505-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f4505-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7b630-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7b630-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7b630-113">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="7b630-113">IdentityriskyUser.Read.All</span></span>    |
-|<span data-ttu-id="7b630-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7b630-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b630-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7b630-115">Not supported.</span></span>    |
-|<span data-ttu-id="7b630-116">Для приложения</span><span class="sxs-lookup"><span data-stu-id="7b630-116">Application</span></span> | <span data-ttu-id="7b630-117">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="7b630-117">IdentityriskyUser.Read.All</span></span> |
+|<span data-ttu-id="f4505-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f4505-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f4505-114">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="f4505-114">IdentityriskyUser.Read.All</span></span>    |
+|<span data-ttu-id="f4505-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f4505-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4505-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f4505-116">Not supported.</span></span>    |
+|<span data-ttu-id="f4505-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f4505-117">Application</span></span> | <span data-ttu-id="f4505-118">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="f4505-118">IdentityriskyUser.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7b630-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7b630-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f4505-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f4505-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{query}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="7b630-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="7b630-119">Optional query parameters</span></span>
-<span data-ttu-id="7b630-120">Этот метод поддерживает `$filter` для настройки ответа на запрос.</span><span class="sxs-lookup"><span data-stu-id="7b630-120">This method supports `$filter` to customize the query response.</span></span> <span data-ttu-id="7b630-121">Пример далее в этом разделе, см.</span><span class="sxs-lookup"><span data-stu-id="7b630-121">See the example later in this topic.</span></span> 
+## <a name="optional-query-parameters"></a><span data-ttu-id="f4505-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f4505-120">Optional query parameters</span></span>
+<span data-ttu-id="f4505-121">Этот метод поддерживает `$filter` для настройки ответа на запрос.</span><span class="sxs-lookup"><span data-stu-id="f4505-121">This method supports `$filter` to customize the query response.</span></span> <span data-ttu-id="f4505-122">Пример далее в этом разделе, см.</span><span class="sxs-lookup"><span data-stu-id="f4505-122">See the example later in this topic.</span></span> 
 
-## <a name="request-headers"></a><span data-ttu-id="7b630-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7b630-122">Request headers</span></span>
-| <span data-ttu-id="7b630-123">Имя</span><span class="sxs-lookup"><span data-stu-id="7b630-123">Name</span></span>      |<span data-ttu-id="7b630-124">Описание</span><span class="sxs-lookup"><span data-stu-id="7b630-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f4505-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f4505-123">Request headers</span></span>
+| <span data-ttu-id="f4505-124">Имя</span><span class="sxs-lookup"><span data-stu-id="f4505-124">Name</span></span>      |<span data-ttu-id="f4505-125">Описание</span><span class="sxs-lookup"><span data-stu-id="f4505-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7b630-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7b630-125">Authorization</span></span>  | <span data-ttu-id="7b630-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7b630-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7b630-128">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="7b630-128">Workbook-Session-Id</span></span>  | <span data-ttu-id="7b630-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="7b630-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="f4505-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f4505-126">Authorization</span></span>  | <span data-ttu-id="f4505-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f4505-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f4505-129">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f4505-129">Workbook-Session-Id</span></span>  | <span data-ttu-id="f4505-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="f4505-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7b630-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7b630-131">Request body</span></span>
-<span data-ttu-id="7b630-132">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7b630-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f4505-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f4505-132">Request body</span></span>
+<span data-ttu-id="f4505-133">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f4505-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7b630-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="7b630-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f4505-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="f4505-134">Response</span></span>
 
-<span data-ttu-id="7b630-134">Успешно завершена, этот метод возвращает `200 OK` объект [identityRiskEvent](../resources/identityriskevent.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="7b630-134">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7b630-135">Пример</span><span class="sxs-lookup"><span data-stu-id="7b630-135">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="7b630-136">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="7b630-136">Request 1</span></span>
-<span data-ttu-id="7b630-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7b630-137">Here is an example of the request.</span></span>
+<span data-ttu-id="f4505-135">Успешно завершена, этот метод возвращает `200 OK` объект [identityRiskEvent](../resources/identityriskevent.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="f4505-135">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f4505-136">Пример</span><span class="sxs-lookup"><span data-stu-id="f4505-136">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="f4505-137">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="f4505-137">Request 1</span></span>
+<span data-ttu-id="f4505-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f4505-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_identityriskevent"
@@ -52,8 +55,8 @@ GET /riskyUsers/{query}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-##### <a name="response-1"></a><span data-ttu-id="7b630-138">Ответ 1</span><span class="sxs-lookup"><span data-stu-id="7b630-138">Response 1</span></span>
-<span data-ttu-id="7b630-139">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="7b630-139">Here is an example of the response.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="f4505-139">Ответ 1</span><span class="sxs-lookup"><span data-stu-id="f4505-139">Response 1</span></span>
+<span data-ttu-id="f4505-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f4505-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,8 +86,8 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-##### <a name="request-2"></a><span data-ttu-id="7b630-140">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="7b630-140">Request 2</span></span>
-<span data-ttu-id="7b630-141">Следующий пример демонстрирует использование `$filter` для получения коллекции riskyUser которого статистические риска установлен средний уровень.</span><span class="sxs-lookup"><span data-stu-id="7b630-141">The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="f4505-141">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="f4505-141">Request 2</span></span>
+<span data-ttu-id="f4505-142">Следующий пример демонстрирует использование `$filter` для получения коллекции riskyUser которого статистические риска установлен средний уровень.</span><span class="sxs-lookup"><span data-stu-id="f4505-142">The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.</span></span>
 <!-- {
   "blockType": "request",
   "name": "list_riskyusers"
@@ -92,7 +95,7 @@ HTTP/1.1 200 OK
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
-##### <a name="response-2"></a><span data-ttu-id="7b630-142">Ответ 2</span><span class="sxs-lookup"><span data-stu-id="7b630-142">Response 2</span></span>
+##### <a name="response-2"></a><span data-ttu-id="f4505-143">Ответ 2</span><span class="sxs-lookup"><span data-stu-id="f4505-143">Response 2</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
