@@ -1,12 +1,12 @@
 ---
 title: Список orgContacts
 description: Получить список организационных контакты для данной организации.
-ms.openlocfilehash: 3860a4a4235bca9ea1aefe7ef420da5dfdd16c22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 01be5350898bed181f2e1d304bf58f8ec1e4e47f
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080154"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283628"
 ---
 # <a name="list-orgcontacts"></a>Список orgContacts
 
@@ -34,7 +34,7 @@ GET /contacts
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -53,8 +53,7 @@ GET /contacts
 GET https://graph.microsoft.com/beta/contacts
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,14 +68,25 @@ Content-length: 222
 {
   "value": [
     {
-      "businessPhones": [
-        "businessPhones-value"
+      "addresses":[
+          {
+            "city": "string",
+            "countryOrRegion": "string",
+            "officeLocation": "string",
+            "postalCode": "string",
+            "state": "string",
+            "street": "string"
+          }
       ],
-      "city": "city-value",
       "companyName": "companyName-value",
-      "country": "country-value",
       "department": "department-value",
-      "displayName": "displayName-value"
+      "displayName": "displayName-value",
+      "phones":[
+          {
+            "type": "string",
+            "number": "string"
+          }
+      ]
     }
   ]
 }

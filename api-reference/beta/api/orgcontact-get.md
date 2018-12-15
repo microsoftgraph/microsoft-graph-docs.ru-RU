@@ -1,12 +1,12 @@
 ---
 title: Получение orgContact
 description: Извлечение свойств и связи объекта orgcontact.
-ms.openlocfilehash: 178d670c55cdd904c604e1be1f6fb0aef3a4b953
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9297297bf341d622070c6ca200d99087588a8ce6
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076085"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283614"
 ---
 # <a name="get-orgcontact"></a>Получение orgContact
 
@@ -33,7 +33,7 @@ GET /contacts/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -52,8 +52,7 @@ GET /contacts/{id}
 GET https://graph.microsoft.com/beta/contacts/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -65,14 +64,25 @@ Content-type: application/json
 Content-length: 222
 
 {
-  "businessPhones": [
-    "businessPhones-value"
+  "addresses":[
+      {
+        "city": "string",
+        "countryOrRegion": "string",
+        "officeLocation": "string",
+        "postalCode": "string",
+        "state": "string",
+        "street": "string"
+      }
   ],
-  "city": "city-value",
   "companyName": "companyName-value",
-  "country": "country-value",
   "department": "department-value",
-  "displayName": "displayName-value"
+  "displayName": "displayName-value",
+  "phones":[
+      {
+        "type": "string",
+        "number": "string"
+      }
+  ]
 }
 ```
 
