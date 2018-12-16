@@ -94,7 +94,7 @@ items:
           - name: Почта
             href: outlook-mail-concept-overview.md
             items:
-              - name: Создание и отправка сообщений
+              - name: Автоматизация обмена сообщениями
                 href: outlook-create-send-messages.md
               - name: Упорядочение сообщений
                 href: outlook-organize-messages.md
