@@ -1,12 +1,13 @@
 ---
 title: Функция getEffectivePermissions
 description: Получает действующие разрешения пользователя, прошедшего проверку подлинности
-ms.openlocfilehash: 0d07045c4db64f6bb9418907cea618480d959522
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d4b277b0a5a3d5cc0584b602ad28c2e2e96e2b5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026882"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317005"
 ---
 # <a name="geteffectivepermissions-function"></a>Функция getEffectivePermissions
 
@@ -36,7 +37,7 @@ GET /deviceManagement/getEffectivePermissions
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -46,7 +47,7 @@ GET /deviceManagement/getEffectivePermissions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|scope|String|Н/Д|
+|scope|Строка|Н/Д|
 
 
 ## <a name="response"></a>Отклик
@@ -60,8 +61,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(sc
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

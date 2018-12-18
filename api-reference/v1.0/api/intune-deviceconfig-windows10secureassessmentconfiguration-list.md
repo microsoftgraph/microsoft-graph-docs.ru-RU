@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов windows10SecureAssessmentConfiguration
 description: Список свойств и связей объектов windows10SecureAssessmentConfiguration.
-ms.openlocfilehash: d9bd3e3491fc5f46c0b8a98c909cd0d6343e801b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 520434de48da37d30d0945c429dfb7767096420c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025778"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320855"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Перечисление объектов windows10SecureAssessmentConfiguration
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

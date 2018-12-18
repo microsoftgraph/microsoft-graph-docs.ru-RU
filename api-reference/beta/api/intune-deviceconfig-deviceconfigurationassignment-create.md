@@ -1,12 +1,13 @@
 ---
 title: Создание объекта deviceConfigurationAssignment
 description: Создание объекта deviceConfigurationAssignment.
-ms.openlocfilehash: 366c4b68b6518999e696adf0363f93c7d29faec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87d5ba51fce59340b869e6b78b7227546ab67df1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079304"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321450"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Создание объекта deviceConfigurationAssignment
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -80,8 +81,7 @@ Content-length: 169
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Create iosUpdateConfiguration
 description: Создание объекта iosUpdateConfiguration.
-ms.openlocfilehash: 65acd8334cc53e637563cae45d4a6d5721405843
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5eccada804cccaa4df4b9be29d5550a66a35e990
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027559"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320570"
 ---
 # <a name="create-iosupdateconfiguration"></a>Create iosUpdateConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,11 +46,11 @@ POST /deviceManagement/deviceConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |activeHoursStart|TimeOfDay|Начало периода активности (период активности — временной промежуток, в течение которого не должны устанавливаться обновления).|
 |activeHoursEnd|TimeOfDay|Завершение периода активности (период активности — временной промежуток, в течение которого не должны устанавливаться обновления).|
@@ -84,8 +85,7 @@ Content-length: 325
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

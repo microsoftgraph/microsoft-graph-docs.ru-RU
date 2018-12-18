@@ -1,12 +1,13 @@
 ---
 title: Create iosVppApp
 description: Создание объекта iosVppApp.
-ms.openlocfilehash: df16640ea92296e793a6ebd965530e00112afac1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c99d790b35622acca63ce3cd360fc19f1dbdd041
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079745"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322640"
 ---
 # <a name="create-iosvppapp"></a>Create iosVppApp
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ POST /deviceAppManagement/mobileApps
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -72,7 +73,7 @@ POST /deviceAppManagement/mobileApps
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |vppTokenAppleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |bundleId|String|Имя удостоверения.|
-|vppTokenId|String|Идентификатор VPP маркер, связанный с этого приложения.|
+|vppTokenId|String.|Идентификатор VPP маркер, связанный с этого приложения.|
 |revokeLicenseActionResults|[iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md) коллекции|Результаты отозвать действия лицензии на это приложение.|
 
 
@@ -146,8 +147,7 @@ Content-length: 1951
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

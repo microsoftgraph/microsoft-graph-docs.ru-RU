@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта deviceManagementExchangeConnector
 description: Обновление свойств объекта deviceManagementExchangeConnector.
-ms.openlocfilehash: 602833b0ad956df635523bdd1732c25f84093d83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 37fe0adbb2fb80e2a792b1a75a6b35235ab30f16
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077436"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317180"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Обновление объекта deviceManagementExchangeConnector
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
+|id|Строка|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
@@ -85,8 +86,7 @@ Content-length: 418
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

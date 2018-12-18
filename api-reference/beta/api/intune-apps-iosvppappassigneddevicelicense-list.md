@@ -1,12 +1,13 @@
 ---
 title: Список iosVppAppAssignedDeviceLicenses
 description: Свойства списка и связей объектов iosVppAppAssignedDeviceLicense.
-ms.openlocfilehash: 95c679989c6ba693b0e86ebd4fd51c1bd47f2b50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a47028c3f19e7b152e38ff9b2488a81da0d98220
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082646"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316270"
 ---
 # <a name="list-iosvppappassigneddevicelicenses"></a>Список iosVppAppAssignedDeviceLicenses
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

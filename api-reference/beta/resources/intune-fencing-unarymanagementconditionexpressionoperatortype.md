@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления unaryManagementConditionExpressionOperatorType
 description: Поддерживаемые операторы для выражений условие унарный управления
-ms.openlocfilehash: ba324c8d9b3cc2470c3f05d94bce6d289f740621
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8444718cc93efd191727a4462338b4617ad4ed1e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080749"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320582"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>Тип перечисления unaryManagementConditionExpressionOperatorType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080749"
 
 Поддерживаемые операторы для выражений условие унарный управления
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |
 not|0|Инвертирует значения.|

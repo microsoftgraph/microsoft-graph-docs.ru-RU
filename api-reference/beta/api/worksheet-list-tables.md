@@ -1,12 +1,13 @@
 ---
 title: Список таблиц
 description: Получение списка объектов таблиц.
-ms.openlocfilehash: f60a4336ae387a5d48e815b1076ab95daa4a034f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d84c8ac2c17021eb930074e733c56e1aa3bb25dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074698"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319000"
 ---
 # <a name="list-tables"></a>Список таблиц
 
@@ -53,8 +54,7 @@ GET /workbook/worksheets/{id|name}/tables
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/tables
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

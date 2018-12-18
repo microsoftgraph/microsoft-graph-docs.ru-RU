@@ -1,12 +1,13 @@
 ---
 title: Добавление вложения
 description: С помощью этого API можно создать объект Attachment.
-ms.openlocfilehash: 8759c26c781d574aedede190d31db410e0b2eafa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 4e0b2cb19737071b20269e4fab602dc10395a6b2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028446"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317964"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -103,8 +104,7 @@ Content-length: 100
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

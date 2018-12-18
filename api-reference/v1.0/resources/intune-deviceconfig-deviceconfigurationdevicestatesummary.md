@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceConfigurationDeviceStateSummary
 description: Н/Д
-ms.openlocfilehash: 2ad4e530bfa00be82255c39e25dd15b75405890e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f298f2c93bcf886fc209184386951328395bfcbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026204"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316928"
 ---
 # <a name="deviceconfigurationdevicestatesummary-resource-type"></a>Тип ресурса deviceConfigurationDeviceStateSummary
 
@@ -22,7 +23,7 @@ ms.locfileid: "27026204"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|

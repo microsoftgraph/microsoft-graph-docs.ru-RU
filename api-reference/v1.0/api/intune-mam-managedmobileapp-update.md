@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта managedMobileApp
 description: Обновление свойств объекта managedMobileApp.
-ms.openlocfilehash: af27f6aef199e896c251259cad7c22ae39566ffc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7dc10fa3d7272c2042712d385425504885020f1e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321100"
 ---
 # <a name="update-managedmobileapp"></a>Обновление объекта managedMobileApp
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -49,8 +50,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 
 
@@ -75,8 +76,7 @@ Content-length: 181
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Получение androidWorkProfileCertificateProfileBase
 description: Чтение свойства и связи объекта androidWorkProfileCertificateProfileBase.
-ms.openlocfilehash: bc0fc7270cd86b9aa466b2c95d56243eae55c710
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0f98a64ddec8d95ca634c4a4690e4ef27d680063
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082620"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317530"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>Получение androidWorkProfileCertificateProfileBase
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -59,8 +60,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

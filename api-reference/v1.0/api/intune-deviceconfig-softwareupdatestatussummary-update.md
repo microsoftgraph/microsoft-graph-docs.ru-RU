@@ -1,12 +1,13 @@
 ---
 title: Update softwareUpdateStatusSummary
 description: Обновление свойств объекта softwareUpdateStatusSummary.
-ms.openlocfilehash: 2c3c9688b7f2b7e24188ee6bdaff99dcfbb6605f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a08efea3a4552e97b638336eb70165c16e58055a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026732"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317754"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Update softwareUpdateStatusSummary
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,7 +46,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |displayName|String|Имя политики.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
@@ -96,8 +97,7 @@ Content-length: 518
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

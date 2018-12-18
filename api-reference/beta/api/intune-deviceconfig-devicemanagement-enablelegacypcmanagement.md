@@ -1,12 +1,13 @@
 ---
 title: Действие enableLegacyPcManagement
 description: Н/Д
-ms.openlocfilehash: aac634c2e39ad02b3812b1c45df636c5bedc52dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f911be27dee293a1e968809eff1bf1646d3e69de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079293"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317810"
 ---
 # <a name="enablelegacypcmanagement-action"></a>Действие enableLegacyPcManagement
 
@@ -15,7 +16,7 @@ ms.locfileid: "27079293"
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Н/Д
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -36,7 +37,7 @@ POST /deviceManagement/enableLegacyPcManagement
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableLegacyPcManagement
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

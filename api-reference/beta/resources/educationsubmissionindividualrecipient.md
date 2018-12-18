@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationSubmissionIndividualRecipient
 description: 'Подкласс educationSubmissionRecipient, которое указывает, что отправка назначен одному пользователю в классе.  '
-ms.openlocfilehash: 4b74defc1a21427b6169e399262d827561178e5f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 3447c91fe4f387508a3afdf80a7337786d46f860
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075523"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318804"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>Тип ресурса educationSubmissionIndividualRecipient
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075523"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |userId|String|Идентификатор пользователя, которому назначена подачи.|
 

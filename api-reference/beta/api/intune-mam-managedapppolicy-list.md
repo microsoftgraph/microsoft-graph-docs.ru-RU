@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов managedAppPolicy
 description: Список свойств и связей объектов managedAppPolicy.
-ms.openlocfilehash: e5aebca04c3368ed168fa16b6f3c9b8d19aacd71
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1883e49cb761861a00be27ed075c841e7a0ee177
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081306"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315955"
 ---
 # <a name="list-managedapppolicies"></a>Перечисление объектов managedAppPolicy
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

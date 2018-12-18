@@ -1,12 +1,13 @@
 ---
 title: Получение networkIPv4ConfigurationManagementCondition
 description: Чтение свойства и связи объекта networkIPv4ConfigurationManagementCondition.
-ms.openlocfilehash: ab6b216b031b457206440f3b01ffffdf7e325248
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a13e202d1347705edd4d26e01a65668dba971f73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319497"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>Получение networkIPv4ConfigurationManagementCondition
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -57,8 +58,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managementConditions/{mana
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

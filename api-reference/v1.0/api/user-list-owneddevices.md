@@ -1,12 +1,13 @@
 ---
 title: Список ownedDevices
 description: Получение списка устройств, принадлежащих пользователю.
-ms.openlocfilehash: 2346c40fa8d74c71decc16170506a7ad6dc7bdb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: bae014e3916547cdd2782a7ec267df14eeda822d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320078"
 ---
 # <a name="list-owneddevices"></a>Список ownedDevices
 
@@ -50,8 +51,7 @@ GET /users/{id | userPrincipalName}/ownedDevices
 GET https://graph.microsoft.com/v1.0/me/ownedDevices
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

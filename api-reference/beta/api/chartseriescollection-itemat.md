@@ -1,12 +1,13 @@
 ---
 title: 'ChartSeriesCollection: ItemAt'
 description: Возвращает ряд на основании сведений о его позиции в коллекции.
-ms.openlocfilehash: 7699a1048efcd81531d646f14d11443db8fc67d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e1027919034688fd90380497a42b77707fa1de72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316438"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 
@@ -65,8 +66,7 @@ Content-length: 20
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

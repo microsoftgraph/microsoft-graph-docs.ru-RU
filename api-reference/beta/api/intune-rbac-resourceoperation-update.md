@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта resourceOperation
 description: Обновляет свойства объекта resourceOperation.
-ms.openlocfilehash: b89cfb962c6c7f573b4f7f7c6862edd9a66fa833
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8050b91aee679f9dd29e78cbbad62f9f6352343e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082163"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317824"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,11 +49,11 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|String|Категория ресурсов, к которому относится данная операция.|
+|resource|String.|Категория ресурсов, к которому относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально кратким (только несколько слов).|
 |описание|String|Описание операции с ресурсом. Используется в тексте, который отображается над обозначением операции при наведении указателя мыши на портале Azure.|
-|enabledForScopeValidation|Логический|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
+|enabledForScopeValidation|Boolean.|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
 
 
 
@@ -77,8 +78,7 @@ Content-length: 193
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

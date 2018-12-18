@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceAppManagement
 description: Одноэлементный объект, служащий контейнером для всех функций управления приложениями на устройствах.
-ms.openlocfilehash: 6c62729079b4ff1811618ab7a9a4b347ce527e87
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c77a7c08f50f765d45d22fc95e2e086ac904c6e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082251"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317222"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 
@@ -26,7 +27,7 @@ ms.locfileid: "27082251"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |**Адаптация новых сотрудников**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Указывает, включена ли для учетной запись синхронизация приложений из Microsoft Store для бизнеса.|
 |microsoftStoreForBusinessLanguage|String|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат <languagecode2>-<страна/код_региона2>, где <languagecode2> — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|
@@ -35,7 +36,7 @@ ms.locfileid: "27082251"
 |microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|Сведения о портале конечного пользователя используется для синхронизации приложения из магазина корпорации Майкрософт для бизнеса портал Intune компании. Доступны три варианта, чтобы выбрать нужное \[«Компании только портала», «Компании портала и частных хранилища», «Только для частного хранилища»\]. Возможные значения: `none`, `companyPortal`, `privateStore`.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |**Приложения**|
 |enterpriseCodeSigningCertificates|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) коллекции|Windows Enterprise сертификат подписи кода.|

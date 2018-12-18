@@ -1,12 +1,13 @@
 ---
 title: onenoteEntitySchemaObjectModel ресурсов
 description: Это базовый тип для сущностей OneNote.
-ms.openlocfilehash: 04333a19aa1f42398040b064b462144a3636e3da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: a44d05a512b8e4ed2615296faae3f35bd7bd554f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028037"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319448"
 ---
 # <a name="onenoteentityschemaobjectmodel-resource"></a>onenoteEntitySchemaObjectModel ресурсов
 

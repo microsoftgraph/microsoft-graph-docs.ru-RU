@@ -1,12 +1,13 @@
 ---
 title: Обновление symantecCodeSigningCertificate
 description: Обновление свойства объекта symantecCodeSigningCertificate.
-ms.openlocfilehash: a6122997a4bc0c76521612b5b17a9c42cd944664
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe3580f0160c50c2580580ff3515a7842ccf610d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080722"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318062"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Обновление symantecCodeSigningCertificate
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,13 +49,13 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|content|Двоичный|Сертификат подписи кода Symantec Windows в формате необработанные данные.|
+|content|Binary|Сертификат подписи кода Symantec Windows в формате необработанные данные.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние Cert подготовить к работе или не подготовлен. Возможные значения: `notProvisioned`, `provisioned`.|
-|password|String|Пароль, необходимый для PFX-файл.|
+|password|Строка|Пароль, необходимый для PFX-файл.|
 |subjectName|String|Имя субъекта для сертификата.|
-|subject|String|Значения субъектов для сертификата.|
-|Имя поставщика|String|Имя поставщика для сертификата.|
-|издателя|String|Значение издателя сертификата.|
+|subject|Строка|Значения субъектов для сертификата.|
+|Имя поставщика|String.|Имя поставщика для сертификата.|
+|издателя|String.|Значение издателя сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Тип сертификата подписывания кода как Symantec Cert.|
 
@@ -85,8 +86,7 @@ Content-length: 352
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

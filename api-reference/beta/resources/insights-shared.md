@@ -1,12 +1,13 @@
 ---
 title: тип общего ресурса
 description: 'Возможность получения, представляющих файлы совместно с помощью или отдельного пользователя. Поддерживаются следующие общие файлы:'
-ms.openlocfilehash: 786e3cc94a3c108b30cca880491dab5725014570
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: fc48fe3c591d981bd6229c26aaccb85552f4836f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079781"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315808"
 ---
 # <a name="shared-resource-type"></a>тип общего ресурса
 
@@ -29,7 +30,7 @@ ms.locfileid: "27079781"
 
 | Свойство              | Тип                      | Описание  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Уникальный идентификатор связи. Только для чтения.        |
+| id                    | Строка                    | Уникальный идентификатор связи. Только для чтения.        |
 | lastShared            | [sharingDetail](insights-sharingdetail.md)                | Сведения об общих элементов. Только для чтения.        |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Свойства, которые можно использовать для визуализации документа в работу. Только для чтения      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Свойства ссылки общих документов, таких как URL-адрес и тип документа. Только для чтения       |
@@ -38,7 +39,7 @@ ms.locfileid: "27079781"
 
 | Свойство      | Тип          | Описание  |
 | ------------- |---------------| -------------|
-| resource      | Объект        | Используется для перехода к элементу, предоставлен общий доступ. Для файлов вложений тип — *fileAttachment*. Для связанного вложения тип — *driveItem*. |
+| resource      | Entity        | Используется для перехода к элементу, предоставлен общий доступ. Для файлов вложений тип — *fileAttachment*. Для связанного вложения тип — *driveItem*. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления webBrowserCookieSettings
 description: Параметры файлов Cookie веб-браузера.
-ms.openlocfilehash: cfa691d0a63679a824fe0e693ac7bb91c2276319
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3904bc02d1bccdbe6c2da2c30bbf3872f3c6cb49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076962"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317061"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>Тип перечисления webBrowserCookieSettings
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076962"
 
 Параметры файлов Cookie веб-браузера.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |browserDefault|0|Значение по умолчанию браузера, без цели.|
 |blockAlways|1|Всегда блокировать файлы cookie.|

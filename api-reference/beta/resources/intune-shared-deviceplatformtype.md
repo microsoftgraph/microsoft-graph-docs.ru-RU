@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления devicePlatformType
 description: Поддерживаемые типы платформы.
-ms.openlocfilehash: a5698a00b712606632e9b44783b5b9d1ffc3caab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6609ea65eb7469155f4e1bf3f8d6e5ccc424d338
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079651"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316221"
 ---
 # <a name="deviceplatformtype-enum-type"></a>Тип перечисления devicePlatformType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079651"
 
 Поддерживаемые типы платформы.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |Android (en)|0|Android (en).|
 |androidForWork|1|AndroidForWork.|

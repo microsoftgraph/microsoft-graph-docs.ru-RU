@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceProtectionOverview
 description: Сведения об оборудовании данного устройства.
-ms.openlocfilehash: 81252fdf60c1de129a615b075968e0e6f1eca943
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e705324bfc611117657ec629f8770e76c69be28d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080150"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317054"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>Тип ресурса deviceProtectionOverview
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080150"
 
 Сведения об оборудовании данного устройства.
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |totalReportedDeviceCount|Int32|Счетчик общее устройства.|
 |inactiveThreatAgentDeviceCount|Int32|Устройства со счетчиком агента неактивных угроз|

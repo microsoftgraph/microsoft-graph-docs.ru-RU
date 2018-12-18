@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления deviceManagementSubscriptionState
 description: Состояние подписки на управление мобильными устройствами для клиента.
-ms.openlocfilehash: db3787b327608d4ffabdf40189f64bcf63269ec7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 840614cad992fb057f8bd4a803a1fe9479a26be3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078842"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323613"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>Тип перечисления deviceManagementSubscriptionState
 
@@ -16,14 +17,14 @@ ms.locfileid: "27078842"
 
 Состояние подписки на управление мобильными устройствами для клиента.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Ожидание|0|Ожидание|
+|Ожидание|0|Pending|
 |активных|1|Active|
 |warning|2|Предупреждающая|
 |Этот параметр отключен|3|Отключена|
 |deleted|4|Deleted|
-|заблокировано|5|Заблокировано|
+|заблокировано|5|Blocked|
 |lockedOut|8|LockedOut|
 
 

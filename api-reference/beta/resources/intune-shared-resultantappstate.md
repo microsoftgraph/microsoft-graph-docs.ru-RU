@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления resultantAppState
 description: Н/Д
-ms.openlocfilehash: 7c3dd96aca4ed94a45a36b9a48a2908f805bb1f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b45353867abe77143fb97755aff457e0c81deb8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081573"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319427"
 ---
 # <a name="resultantappstate-enum-type"></a>Тип перечисления resultantAppState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081573"
 
 Н/Д
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |установлен|1|Приложение устанавливается без ошибок|
 |failed|2|Сбой при установке приложения.|
@@ -24,7 +25,7 @@ ms.locfileid: "27081573"
 |uninstallFailed|4|Не удалось удалить приложение.|
 |pendingInstall|5|Установка приложения находится в стадии разработки.|
 |unknown|99|Состояние приложения не известен.|
-|notApplicable|-1|Приложение не применяется.|
+|notApplicable|–1|Приложение не применяется.|
 
 
 

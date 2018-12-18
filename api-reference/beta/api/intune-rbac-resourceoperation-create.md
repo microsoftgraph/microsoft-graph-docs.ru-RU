@@ -1,12 +1,13 @@
 ---
 title: Создание объекта resourceOperation
 description: Создание объекта resourceOperation.
-ms.openlocfilehash: a7d2bff86c0430b48d0c757df404ad7cad4cfe74
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bc3b0c8193d77177b83f139827fad1a3a9686fb4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317838"
 ---
 # <a name="create-resourceoperation"></a>Создание объекта resourceOperation
 
@@ -36,7 +37,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,11 +49,11 @@ POST /deviceManagement/resourceOperations
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|String|Категория ресурсов, к которому относится данная операция.|
+|resource|String.|Категория ресурсов, к которому относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально кратким (только несколько слов).|
 |описание|String|Описание операции с ресурсом. Используется в тексте, который отображается над обозначением операции при наведении указателя мыши на портале Azure.|
-|enabledForScopeValidation|Логический|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
+|enabledForScopeValidation|Boolean.|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
 
 
 
@@ -78,8 +79,7 @@ Content-length: 249
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

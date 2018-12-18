@@ -1,12 +1,13 @@
 ---
 title: Обновление windowsPhone81AppX
 description: Обновление свойства объекта windowsPhone81AppX.
-ms.openlocfilehash: 3f3f17be9ba4df2b214b6167f7d54972c2f3994d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ebd110bd76797682ebd9a53b72e661e9e71d583
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081101"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321618"
 ---
 # <a name="update-windowsphone81appx"></a>Обновление windowsPhone81AppX
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -49,7 +50,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -72,8 +73,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |identityPublisherHash|String|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|phoneProductIdentifier|String|Идентификатор продукта телефона.|
-|phonePublisherId|String|Publisher с идентификатором телефона.|
+|phoneProductIdentifier|String.|Идентификатор продукта телефона.|
+|phonePublisherId|String.|Publisher с идентификатором телефона.|
 |identityVersion|String|Версия удостоверения.|
 
 
@@ -131,8 +132,7 @@ Content-length: 1362
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

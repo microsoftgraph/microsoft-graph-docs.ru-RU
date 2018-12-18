@@ -1,12 +1,13 @@
 ---
 title: Удаление контакта
 description: Удаление контакта.
-ms.openlocfilehash: fec4ec30430114f023577043b0351683fc25189e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a8f1ea8c1ee0f202e60d4efb05f65022a9269c01
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319273"
 ---
 # <a name="delete-contact"></a>Удаление контакта
 
@@ -61,8 +62,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/con
 DELETE https://graph.microsoft.com/beta/me/contacts/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true

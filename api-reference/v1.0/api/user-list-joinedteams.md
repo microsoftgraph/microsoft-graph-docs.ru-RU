@@ -1,14 +1,15 @@
 ---
-title: Список joinedTeams
+title: Перечисление объектов joinedTeams
 description: Загрузите группами Майкрософт, который пользователь является непосредственным членом группы.
-ms.openlocfilehash: fc5e7f01775e352c61802c457bfa9c41a218463a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1e29b21adbf37128ccf8fe7ff9d70596c7b72499
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026196"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317747"
 ---
-# <a name="list-joinedteams"></a>Список joinedTeams
+# <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
 
 
@@ -21,7 +22,7 @@ ms.locfileid: "27026196"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | User.Read.All, User.ReadWrite.All |
+|Для приложений | User.Read.All, User.ReadWrite.All |
 
 > С разрешения пользователя делегированной эта операция работает только для «me» пользователя. 
 > Имея разрешения приложения это работает для всех пользователей, указав идентификатор определенного пользователя. («обо мне» псевдоним не поддерживается с разрешениями приложения)

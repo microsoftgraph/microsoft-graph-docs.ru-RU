@@ -1,12 +1,13 @@
 ---
 title: Список ChartCollection
 description: Получение списка объектов диаграмм.
-ms.openlocfilehash: f29891c195c3aa7c2a0d980bd5dd55feafb56847
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 677e76deb00726c725f25ad7ac1ec9b5f0c77af3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027954"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318167"
 ---
 # <a name="list-chartcollection"></a>Список ChartCollection
 
@@ -51,8 +52,7 @@ GET /workbook/worksheets/{id|name}/charts
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления embeddedSIMDeviceStateValue
 description: Описание различных состояний для внедренного код активации диспетчера установки.
-ms.openlocfilehash: c0b1cffedcae18dab4c1d23a2691cafa8709c0ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51e550669d9cd29d7d5bb246fe2cba017b02187c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320596"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>Тип перечисления embeddedSIMDeviceStateValue
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075923"
 
 Описание различных состояний для внедренного код активации диспетчера установки.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notEvaluated|0|Определяет, что встроенный код активации диспетчера установки, бесплатное и доступно для назначения устройства.|
 |failed|1|Указывает, что служба Intune не удалось доставить этот профиль с устройством.|

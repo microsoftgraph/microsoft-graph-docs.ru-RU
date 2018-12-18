@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationCsvDataProvider
 description: 'Используется для настройки синхронизации профилей данных school после ввода источника файлов CSV.  '
-ms.openlocfilehash: a3079b4f18c74c95fb0f8646116f2c7901d17b3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 1a816d4e176147d549381465154e35cf0a821b98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075198"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317901"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>Тип ресурса educationCsvDataProvider
 
@@ -18,7 +19,7 @@ ms.locfileid: "27075198"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:-|:-|:-|
 | **пользовательских настроек** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Необязательный настроек применяется для синхронизации профилей.|
 

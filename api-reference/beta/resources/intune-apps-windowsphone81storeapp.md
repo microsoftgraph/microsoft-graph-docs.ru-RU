@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsPhone81StoreApp
 description: Содержит свойства и наследуемые свойства для приложения в магазине 8.1 Windows Phone.
-ms.openlocfilehash: c48edd3ebc7948161fe604fa659f294c1d82b8b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ce242fd2337a9db602d361f8fceb05c126478fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079324"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321219"
 ---
 # <a name="windowsphone81storeapp-resource-type"></a>Тип ресурса windowsPhone81StoreApp
 
@@ -30,7 +31,7 @@ ms.locfileid: "27079324"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

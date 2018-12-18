@@ -1,12 +1,13 @@
 ---
 title: Обновление сообщения
 description: Обновление свойств объекта сообщения.
-ms.openlocfilehash: 0411decc2758505f6116b0a7c619887f3d8e239e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9c717e913c641b6dffd582252538965961369a7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082758"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321478"
 ---
 # <a name="update-message"></a>Обновление сообщения
 
@@ -47,13 +48,13 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |importance|String|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | Классификация сообщения для пользователя на основании подразумеваемой релевантности или важности либо явного переопределения. Возможные значения: `focused` или `other`. |
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Обновляемые только если isDraft = true.|
-|isRead|Логический|Указывает, прочитано ли сообщение.|
+|isRead|Boolean|Указывает, прочитано ли сообщение.|
 |replyTo|Коллекция объектов Recipient|Электронные адреса, которые необходимо использовать при ответе. Обновляемые только если isDraft = true.|
 |sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Обновляемые только если isDraft = true, а также время отправки сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактический почтового ящика, используемого.|
 |toRecipients|Коллекция объектов Recipient|Кому получателей сообщения. Обновляемые только если isDraft = true.|
 |Основной текст|ItemBody|Текст сообщения. Обновляемые только если isDraft = true.|
-|isDeliveryReceiptRequested|Логический|Указывает, необходимо ли запрашивать уведомление о прочтении сообщения.|
-|isReadReceiptRequested|Логический|Указывает, необходимо ли запрашивать уведомление о прочтении сообщения.|
+|isDeliveryReceiptRequested|Boolean|Указывает, необходимо ли запрашивать уведомление о прочтении сообщения.|
+|isReadReceiptRequested|Boolean|Указывает, необходимо ли запрашивать уведомление о прочтении сообщения.|
 |subject|String|Тема сообщения. Обновляемые только если isDraft = true.|
 
 Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `PATCH` можно добавлять, обновлять или удалять собственные данные, касающиеся определенных приложений, в настраиваемых свойствах расширения в существующем экземпляре **message**.

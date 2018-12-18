@@ -1,12 +1,13 @@
 ---
 title: Создание объекта windowsInformationProtectionAppLockerFile
 description: Создание объекта windowsInformationProtectionAppLockerFile.
-ms.openlocfilehash: 380b4b9358c3bc30337272ced4b92563978d7ffe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f2cbed922d6f2ac130169e5d9c85e3a5231184a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079467"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317124"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>Создание объекта windowsInformationProtectionAppLockerFile
 
@@ -39,7 +40,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,9 +53,9 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 |:---|:---|:---|
 |displayName|String|Понятное имя|
 |fileHash|String|Хэш SHA256 для файла|
-|file|Двоичный|Файл в виде массива байтов|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|file|Binary|Файл в виде массива байтов|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 
 
@@ -79,8 +80,7 @@ Content-length: 211
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

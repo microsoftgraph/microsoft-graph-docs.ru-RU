@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления managedDevicePartnerReportedHealthState
 description: Состояния работоспособности недоступны для API состояния устройства
-ms.openlocfilehash: 3d944eacc2fe94d00fd1b5dd657ba9e936ab78c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41dcc927e85664acf28c7cc654fa01d00d1e4b52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321030"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>Тип перечисления managedDevicePartnerReportedHealthState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081108"
 
 Состояния работоспособности недоступны для API состояния устройства
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние работоспособности устройства еще не отображается|
 |активирован|1|Устройство активированного с партнером защиты мобильных угроз, но не еще отчет о работоспособности.|

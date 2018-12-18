@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта telecomExpenseManagementPartner
 description: Удаляет объект telecomExpenseManagementPartner.
-ms.openlocfilehash: 6546abe170bbb3625ded6c667384f0f456369082
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d79296283b57097d2aa46ae062f4391e93e3ba46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318979"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Удаление объекта telecomExpenseManagementPartner
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagem
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagemen
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

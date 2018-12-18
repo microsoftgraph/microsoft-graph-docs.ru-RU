@@ -1,12 +1,13 @@
 ---
 title: Действие resetPasscode
 description: Сброс секретного кода
-ms.openlocfilehash: 1bd86bd2d4eb136e64c814018ccb763fa5f072d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f000a8c3e7c78f8fefabbaabff0727ff6f3385e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026025"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316739"
 ---
 # <a name="resetpasscode-action"></a>Действие resetPasscode
 
@@ -36,7 +37,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

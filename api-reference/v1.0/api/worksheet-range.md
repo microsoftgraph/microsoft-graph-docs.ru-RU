@@ -1,12 +1,13 @@
 ---
 title: 'Worksheet: Range'
 description: Возвращает объект диапазона, указанный по адресу или имени.
-ms.openlocfilehash: ad829b9b18919e1ec5c560f521603826a42a2912
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: fec1ea97be1ca2c094af7e32deac0b6a37f4f086
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319868"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -55,8 +56,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

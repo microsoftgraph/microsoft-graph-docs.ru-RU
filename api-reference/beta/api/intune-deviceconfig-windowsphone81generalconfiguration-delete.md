@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта windowsPhone81GeneralConfiguration
 description: Удаляет объект windowsPhone81GeneralConfiguration.
-ms.openlocfilehash: 5cfabeeb9242dfd1ca618ab38b8f352c55d69322
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3624be30b79a5a8a146c9b97983235234aa37414
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082362"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317460"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>Удаление объекта windowsPhone81GeneralConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -1,12 +1,13 @@
 ---
 title: Удаление mobileAppTroubleshootingEvent
 description: Удаляет mobileAppTroubleshootingEvent.
-ms.openlocfilehash: 0bcf3de441044cbce0ebbb51e7697604d0449e16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 93f6d39f585eee694af5d390da7dc8490695c092
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077747"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318965"
 ---
 # <a name="delete-mobileapptroubleshootingevent"></a>Удаление mobileAppTroubleshootingEvent
 
@@ -36,7 +37,7 @@ DELETE /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}/mobileAppTroubleshooting
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -1,12 +1,13 @@
 ---
 title: Получение объекта deviceEnrollmentConfiguration
 description: Чтение свойств и связей объекта deviceEnrollmentConfiguration.
-ms.openlocfilehash: 80d965195988efb24eeb5642094ec222753c0eb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87b8afbac5e6e59b31bfa60ebf791529c9764f32
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074635"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323627"
 ---
 # <a name="get-deviceenrollmentconfiguration"></a>Получение объекта deviceEnrollmentConfiguration
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

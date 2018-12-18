@@ -1,12 +1,13 @@
 ---
 title: Список acceptedSenders
 description: Получение пользователей или групп из списка acceptedSenders для данной группы.
-ms.openlocfilehash: d06919f67a4d4afe917e87571f403970825f66ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 15b2387ce726b83d8e7b8b10034061d454b42e39
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028312"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319581"
 ---
 # <a name="list-acceptedsenders"></a>Список acceptedSenders
 Получение пользователей или групп из списка acceptedSenders для данной группы.

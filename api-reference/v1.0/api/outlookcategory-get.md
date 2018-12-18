@@ -1,12 +1,13 @@
 ---
 title: Получение категории Outlook
 description: Получение свойств и отношений указанного объекта outlookCategory.
-ms.openlocfilehash: 51bed62b1dffe648f62caecdc8d038a21c0d1c6f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: f701a4447eb69b8ceb7dad1b861c5ea6b2103681
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024370"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323214"
 ---
 # <a name="get-outlook-category"></a>Получение категории Outlook
 
@@ -54,8 +55,7 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

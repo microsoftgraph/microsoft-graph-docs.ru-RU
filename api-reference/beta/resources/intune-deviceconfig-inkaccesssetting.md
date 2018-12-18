@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления inkAccessSetting
 description: Значения для параметра InkWorkspaceAccess.
-ms.openlocfilehash: 3014aee9bcd205483cb9c7889fcc2f7a53085093
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c906edecb11b1c2eeac0b714fb20c7e7403832f6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078351"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317012"
 ---
 # <a name="inkaccesssetting-enum-type"></a>Тип перечисления inkAccessSetting
 
@@ -16,7 +17,7 @@ ms.locfileid: "27078351"
 
 Значения для параметра InkWorkspaceAccess.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроено.|
 |enabled|1|Включено.|

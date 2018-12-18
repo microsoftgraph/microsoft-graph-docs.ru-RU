@@ -1,12 +1,13 @@
 ---
 title: Список depEnrollmentProfiles
 description: Свойства списка и связей объектов depEnrollmentProfile.
-ms.openlocfilehash: 65ff1b7cfd915b7813ffdfaa3dae4d401270c845
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 13347a0b662f9a8f662ce45f08f11ffbf27788e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077608"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321821"
 ---
 # <a name="list-depenrollmentprofiles"></a>Список depEnrollmentProfiles
 
@@ -36,7 +37,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

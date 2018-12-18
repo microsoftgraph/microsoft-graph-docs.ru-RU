@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления vppTokenSyncStatus
 description: Возможности синхронизации статусов связанный с маркером покупки программы корпоративного Apple.
-ms.openlocfilehash: e038f15a3c58928ebb066c0fbf5aac320bf574a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c6612c86911fd3d43128a8a7a441db8093ad3656
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027023"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316655"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>Тип перечисления vppTokenSyncStatus
 
@@ -16,7 +17,7 @@ ms.locfileid: "27027023"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Состояние по умолчанию.|
+|none|0|Состояние по умолчанию.|
 |inProgress|1|Последняя синхронизация в стадии разработки.|
 |завершена|2|Последняя синхронизация успешно завершена.|
 |failed|3|Не удалось последней синхронизации.|

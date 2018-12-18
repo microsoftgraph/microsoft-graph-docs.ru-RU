@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта deviceComplianceDeviceStatus
 description: Удаляет объект deviceComplianceDeviceStatus.
-ms.openlocfilehash: 0b95b8fe880b96bd26ab1d2c87f8b1fd47572db7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94f596050852334bd6a7ab35b85ea2954f55e268
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080537"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318573"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>Удаление объекта deviceComplianceDeviceStatus
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/dev
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

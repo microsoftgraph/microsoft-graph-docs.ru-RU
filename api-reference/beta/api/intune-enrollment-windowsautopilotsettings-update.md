@@ -1,12 +1,13 @@
 ---
 title: Обновление windowsAutopilotSettings
 description: Обновление свойства объекта windowsAutopilotSettings.
-ms.openlocfilehash: 6c02d73a08e18906de6e2959f69c3377c20ce911
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 281a0ff6412151e284c566444886092e2566b491
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077743"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316088"
 ---
 # <a name="update-windowsautopilotsettings"></a>Обновление windowsAutopilotSettings
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/windowsAutopilotSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -73,8 +74,7 @@ Content-length: 167
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

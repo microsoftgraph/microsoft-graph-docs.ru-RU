@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса officeClientConfigurationAssignment
 description: Назначение конфигурации клиента Office.
-ms.openlocfilehash: 7a2aeaace5fb929cddee16b4b43de8165509c7e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2b8dc231fb390cbb2bd5dbb93b5226540b84f5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078635"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315997"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>Тип ресурса officeClientConfigurationAssignment
 
@@ -27,7 +28,7 @@ ms.locfileid: "27078635"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор OfficeConfigurationAssignment.|
+|id|Строка|Идентификатор OfficeConfigurationAssignment.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Назначение целевой, определенные администратором.|
 
 ## <a name="relationships"></a>Связи

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedDeviceOverview
 description: Сводные данные для управляемых устройств
-ms.openlocfilehash: 11f1012329d0217499d813b94f72474da8c683a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 223f11b49ee3cbc9b114047f25b301d9b0c08b24
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078853"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317537"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 

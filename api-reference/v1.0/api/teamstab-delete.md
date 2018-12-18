@@ -1,12 +1,13 @@
 ---
 title: Удалить вкладку с канала
 description: 'Удаляет (отключит) вкладки с указанными в группе. '
-ms.openlocfilehash: 2b132d2d127ff665b1cf408f38221e8bda09c166
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: eef80488fe1a14d8c7021dd25625aac0716665de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222340"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320764"
 ---
 # <a name="delete-tab-from-channel"></a>Удалить вкладку с канала
 
@@ -53,7 +54,7 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ```http
 HTTP/1.1 204 No Content

@@ -1,12 +1,13 @@
 ---
 title: Получение объекта ChartTitle
 description: Получение свойств и связей объекта charttitle.
-ms.openlocfilehash: 3283bcbf2712351abdd3549c0701343225f4eefc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 435878fe20d2a9e1c73837169904bf113bf925a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079021"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316424"
 ---
 # <a name="get-charttitle"></a>Получение объекта ChartTitle
 
@@ -53,8 +54,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/title
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/title
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

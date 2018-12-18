@@ -1,12 +1,13 @@
 ---
 title: Список устройств
 description: 'Получение списка устройств, зарегистрированных в каталоге. '
-ms.openlocfilehash: 3e8d6b61dd9eb59e3475fa8c5d095ea649f0b9f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04275c3d6356fbf28434b7bbe6ebfbd54f6bba8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079785"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320288"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -53,8 +54,7 @@ GET /devices
 GET https://graph.microsoft.com/beta/devices
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

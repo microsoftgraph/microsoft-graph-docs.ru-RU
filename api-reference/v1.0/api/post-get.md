@@ -1,12 +1,13 @@
 ---
 title: Вывод записи
 description: 'Получение свойств и связей публикации в указанной цепочке. Можно указать как родительской '
-ms.openlocfilehash: d9f697ac45bf0a817334bdcfd46febc74f10e107
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f21f2a55e3bf456030131a2b14a6d9db5739a43f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024488"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320309"
 ---
 # <a name="get-post"></a>Вывод записи
 

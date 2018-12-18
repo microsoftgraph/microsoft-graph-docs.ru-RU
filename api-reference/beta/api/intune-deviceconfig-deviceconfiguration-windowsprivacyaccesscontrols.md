@@ -1,12 +1,13 @@
 ---
 title: Действие windowsPrivacyAccessControls
 description: Н/Д
-ms.openlocfilehash: b9b8a3e9d5042d4bb896ac4a0f310f78d7bd78a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 301091be00f31ee0b4d86f6ec78f32c0adf34016
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080046"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321044"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>Действие windowsPrivacyAccessControls
 
@@ -15,7 +16,7 @@ ms.locfileid: "27080046"
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Н/Д
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |windowsPrivacyAccessControls|[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md) коллекции|Н/Д|
 
@@ -80,8 +81,7 @@ Content-length: 379
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

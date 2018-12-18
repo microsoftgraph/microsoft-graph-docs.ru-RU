@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта onPremisesConditionalAccessSettings
 description: Обновляет свойства объекта onPremisesConditionalAccessSettings.
-ms.openlocfilehash: 31679b6c698903083675e926fa77e0c56be49a38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 614625dd6783f279dfea9a55d81200184c005844
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082870"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317110"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>Обновление объекта onPremisesConditionalAccessSettings
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,7 +49,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
+|id|Строка|Н/Д|
 |enabled|Boolean|Указывает, включен ли в этой организации условный доступ к локальной среде|
 |includedGroups|Коллекция объектов Guid|Группы пользователей, для которых включается условный доступ к локальной среде. У всех пользователей в этих группах должны быть управляемые мобильные устройства, соответствующие требованиям для доступа к почте.|
 |excludedGroups|Коллекция объектов Guid|Группы пользователей, на которые не распространяется условный доступ к локальной среде. На всех пользователей из этих группах не будет распространяться политика условного доступа.|
@@ -80,8 +81,7 @@ Content-length: 201
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

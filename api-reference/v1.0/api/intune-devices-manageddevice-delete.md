@@ -1,12 +1,13 @@
 ---
 title: Delete managedDevice
 description: Удаляет объект managedDevice.
-ms.openlocfilehash: 6e8a843cae9ea93362952c85afe199caccd6d6aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 24273ab5e6a930609b9a830ffc18b6ab0b456121
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025200"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323235"
 ---
 # <a name="delete-manageddevice"></a>Delete managedDevice
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDev
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedD
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

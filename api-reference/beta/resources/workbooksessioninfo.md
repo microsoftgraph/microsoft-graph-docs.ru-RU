@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса workbookSessionInfo
 description: Предоставляет сведения о сеансе книги.
-ms.openlocfilehash: c04afe17c10edd8b136465d6d7ae3dbedb6307ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 5a86fd4dfd653f16445eeccad8478db56db0ac5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316844"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>Тип ресурса workbookSessionInfo
 

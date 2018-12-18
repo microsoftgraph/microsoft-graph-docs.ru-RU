@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileAppInstallStatus
 description: Содержит свойства для установки состояния мобильного приложения для устройства.
-ms.openlocfilehash: efd5969e2c00d0230d8efeddff3c41bac90fe9c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba2c0026d54235683a2f5d5b26c19b88ea11a9d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076850"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320890"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>Тип ресурса mobileAppInstallStatus
 
@@ -27,7 +28,7 @@ ms.locfileid: "27076850"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |deviceName|String|Имя устройства|
 |deviceId|String|Идентификатор устройства|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации|
@@ -38,11 +39,11 @@ ms.locfileid: "27076850"
 |osVersion|String|Версия операционной системы|
 |osDescription|String|Описание операционная система|
 |userName|String|Имя пользователя устройства|
-|userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|displayVersion|String|Человеческого для чтения версию приложения|
+|userPrincipalName|Строка|"User Principal Name" (Имя участника-пользователя);|
+|displayVersion|String.|Человеческого для чтения версию приложения|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |приложение|[mobileApp](../resources/intune-apps-mobileapp.md);|Навигационная ссылка для мобильного приложения.|
 

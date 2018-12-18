@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса settingStateDeviceSummary
 description: Сводка по состоянию параметра конфигурации и политики соответствия требованиям для устройств
-ms.openlocfilehash: 9f2cca6be1773a7698dcc56fab00f9979e4ee071
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dff6f8966d321aa706fceabceb14a418ae8433f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076182"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318538"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>Тип ресурса settingStateDeviceSummary
 
@@ -27,7 +28,7 @@ ms.locfileid: "27076182"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |settingName|String|Имя параметра.|
 |instancePath|String|Имя пути к экземпляру для параметра.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств для параметра.|

@@ -1,12 +1,13 @@
 ---
 title: Перечисление задач
 description: Получите все задачи Outlook в указанной папке.
-ms.openlocfilehash: 51e69fe61a15acd9ae290706ccdfb1e84afac9e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 4dc2e48e12cc03a0e7c95cb9e03e100b5f9922d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079523"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320505"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -59,8 +60,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 GET https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPWAAA=/tasks
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

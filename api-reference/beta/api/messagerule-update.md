@@ -1,12 +1,13 @@
 ---
 title: Обновление правила
 description: Изменение записываемых свойств объекта messageRule и сохранение изменений.
-ms.openlocfilehash: ab59d0687f80ade06416ab5c4926fbde52754449
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9ecef5c23502065d0d9e6fc32850b1ce89a1508c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079464"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321786"
 ---
 # <a name="update-rule"></a>Обновление правила
 
@@ -42,10 +43,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | Действия, которые нужно применить к сообщению при выполнении определенных условий. |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия, при соблюдении которых с указанным правилом выполняются соответствующие действия. |
-| displayName | String | Отображаемое имя правила. |
+| displayName | Строка | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия исключения для правила. |
-| isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. |
-| isReadOnly | Логический | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
+| isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
+| isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
 | sequence | Int32 | Определяет последовательность выполнения правила среди прочих правил. |
 
 
@@ -71,8 +72,7 @@ Content-type: application/json
 } 
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

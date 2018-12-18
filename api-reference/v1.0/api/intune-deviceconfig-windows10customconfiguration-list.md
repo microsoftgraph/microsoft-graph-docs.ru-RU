@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов windows10CustomConfiguration
 description: Список свойств и связей объектов windows10CustomConfiguration.
-ms.openlocfilehash: 34a59b3fb2f0c83568ea79b16c5c913ef5e9a742
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f73fc2628b2bc64a0042484fd732f2fbb61de484
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027763"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318174"
 ---
 # <a name="list-windows10customconfigurations"></a>Перечисление объектов windows10CustomConfiguration
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
