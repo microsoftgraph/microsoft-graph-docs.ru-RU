@@ -1,49 +1,50 @@
 ---
 title: Обновление события
 description: Обновление объекта event.
-ms.openlocfilehash: 94dfa35e4b37e4e38746223604d3d3b3c7311a6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: dc55ea69ff67a813eeeec853889f19c30d975068
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078972"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345537"
 ---
-# <a name="update-event"></a><span data-ttu-id="440da-103">Обновление события</span><span class="sxs-lookup"><span data-stu-id="440da-103">Update event</span></span>
+# <a name="update-event"></a><span data-ttu-id="eea5e-103">Обновление события</span><span class="sxs-lookup"><span data-stu-id="eea5e-103">Update event</span></span>
 
-> <span data-ttu-id="440da-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="440da-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="440da-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="440da-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="eea5e-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="eea5e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="eea5e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="eea5e-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="440da-106">Обновление объекта [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="440da-106">Update an [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="eea5e-106">Обновление объекта [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="eea5e-106">Update an [event](../resources/event.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="440da-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="440da-107">Permissions</span></span>
-<span data-ttu-id="440da-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="440da-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="eea5e-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="eea5e-107">Permissions</span></span>
+<span data-ttu-id="eea5e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eea5e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="440da-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="440da-110">Permission type</span></span>      | <span data-ttu-id="440da-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="440da-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="eea5e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="eea5e-110">Permission type</span></span>      | <span data-ttu-id="eea5e-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="eea5e-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="440da-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="440da-112">Delegated (work or school account)</span></span> | <span data-ttu-id="440da-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="440da-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="440da-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="440da-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="440da-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="440da-115">Not supported.</span></span>    |
-|<span data-ttu-id="440da-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="440da-116">Application</span></span> | <span data-ttu-id="440da-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="440da-117">Not supported.</span></span> |
+|<span data-ttu-id="eea5e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="eea5e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="eea5e-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eea5e-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="eea5e-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="eea5e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eea5e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="eea5e-115">Not supported.</span></span>    |
+|<span data-ttu-id="eea5e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="eea5e-116">Application</span></span> | <span data-ttu-id="eea5e-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="eea5e-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="440da-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="440da-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eea5e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="eea5e-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/events/{id}
 PATCH /groups/{id}/calendar/events/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="440da-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="440da-119">Request headers</span></span>
-| <span data-ttu-id="440da-120">Имя</span><span class="sxs-lookup"><span data-stu-id="440da-120">Name</span></span>       | <span data-ttu-id="440da-121">Тип</span><span class="sxs-lookup"><span data-stu-id="440da-121">Type</span></span> | <span data-ttu-id="440da-122">Описание</span><span class="sxs-lookup"><span data-stu-id="440da-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="eea5e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="eea5e-119">Request headers</span></span>
+| <span data-ttu-id="eea5e-120">Имя</span><span class="sxs-lookup"><span data-stu-id="eea5e-120">Name</span></span>       | <span data-ttu-id="eea5e-121">Тип</span><span class="sxs-lookup"><span data-stu-id="eea5e-121">Type</span></span> | <span data-ttu-id="eea5e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="eea5e-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="440da-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="440da-123">Authorization</span></span>  | <span data-ttu-id="440da-124">string</span><span class="sxs-lookup"><span data-stu-id="440da-124">string</span></span>  | <span data-ttu-id="440da-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="440da-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="eea5e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="eea5e-123">Authorization</span></span>  | <span data-ttu-id="eea5e-124">string</span><span class="sxs-lookup"><span data-stu-id="eea5e-124">string</span></span>  | <span data-ttu-id="eea5e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="eea5e-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="440da-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="440da-127">Request body</span></span>
-<span data-ttu-id="440da-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="440da-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="eea5e-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="eea5e-127">Request body</span></span>
+<span data-ttu-id="eea5e-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="eea5e-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="440da-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="440da-131">Response</span></span>
-<span data-ttu-id="440da-132">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="440da-132">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="eea5e-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="eea5e-131">Response</span></span>
+<span data-ttu-id="eea5e-132">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="eea5e-132">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="440da-133">Пример</span><span class="sxs-lookup"><span data-stu-id="440da-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="440da-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="440da-134">Request</span></span>
-<span data-ttu-id="440da-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="440da-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="eea5e-133">Пример</span><span class="sxs-lookup"><span data-stu-id="eea5e-133">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="eea5e-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="eea5e-134">Request</span></span>
+<span data-ttu-id="eea5e-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="eea5e-135">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -67,8 +68,8 @@ Content-length: 211
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="440da-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="440da-136">Response</span></span>
-<span data-ttu-id="440da-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="440da-137">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="eea5e-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="eea5e-136">Response</span></span>
+<span data-ttu-id="eea5e-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="eea5e-137">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

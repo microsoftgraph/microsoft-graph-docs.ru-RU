@@ -1,51 +1,52 @@
 ---
 title: Получение правила
 description: Получение свойств и связей объекта messageRule.
-ms.openlocfilehash: 0151a83f54c67e6daf5c78766f6d4a532108bfda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 425b5043e1ef173ef05033862ae5e705960987f6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082111"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342331"
 ---
-# <a name="get-rule"></a><span data-ttu-id="e2806-103">Получение правила</span><span class="sxs-lookup"><span data-stu-id="e2806-103">Get rule</span></span>
+# <a name="get-rule"></a><span data-ttu-id="ba299-103">Получение правила</span><span class="sxs-lookup"><span data-stu-id="ba299-103">Get rule</span></span>
 
-> <span data-ttu-id="e2806-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="e2806-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e2806-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e2806-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ba299-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ba299-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ba299-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ba299-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e2806-106">Получение свойств и связей объекта [messageRule](../resources/messagerule.md).</span><span class="sxs-lookup"><span data-stu-id="e2806-106">Get the properties and relationships of a [messageRule](../resources/messagerule.md) object.</span></span>
+<span data-ttu-id="ba299-106">Получение свойств и связей объекта [messageRule](../resources/messagerule.md).</span><span class="sxs-lookup"><span data-stu-id="ba299-106">Get the properties and relationships of a [messageRule](../resources/messagerule.md) object.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="e2806-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e2806-107">Permissions</span></span>
-<span data-ttu-id="e2806-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e2806-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ba299-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ba299-107">Permissions</span></span>
+<span data-ttu-id="ba299-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ba299-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e2806-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e2806-110">Permission type</span></span>      | <span data-ttu-id="e2806-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e2806-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ba299-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ba299-110">Permission type</span></span>      | <span data-ttu-id="ba299-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ba299-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e2806-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e2806-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e2806-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="e2806-113">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="e2806-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e2806-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e2806-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="e2806-115">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="e2806-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e2806-116">Application</span></span> | <span data-ttu-id="e2806-117">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="e2806-117">MailboxSettings.Read</span></span> |
+|<span data-ttu-id="ba299-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ba299-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ba299-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="ba299-113">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="ba299-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ba299-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba299-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="ba299-115">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="ba299-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ba299-116">Application</span></span> | <span data-ttu-id="ba299-117">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="ba299-117">MailboxSettings.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e2806-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e2806-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ba299-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ba299-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/inbox/messagerules/{id}
 GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="e2806-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e2806-119">Optional query parameters</span></span>
-<span data-ttu-id="e2806-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="e2806-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ba299-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ba299-119">Optional query parameters</span></span>
+<span data-ttu-id="ba299-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="ba299-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e2806-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e2806-121">Request headers</span></span>
-| <span data-ttu-id="e2806-122">Имя</span><span class="sxs-lookup"><span data-stu-id="e2806-122">Name</span></span>      |<span data-ttu-id="e2806-123">Описание</span><span class="sxs-lookup"><span data-stu-id="e2806-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ba299-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ba299-121">Request headers</span></span>
+| <span data-ttu-id="ba299-122">Имя</span><span class="sxs-lookup"><span data-stu-id="ba299-122">Name</span></span>      |<span data-ttu-id="ba299-123">Описание</span><span class="sxs-lookup"><span data-stu-id="ba299-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e2806-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e2806-124">Authorization</span></span>  | <span data-ttu-id="e2806-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e2806-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ba299-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ba299-124">Authorization</span></span>  | <span data-ttu-id="ba299-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ba299-p103">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="e2806-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e2806-127">Request body</span></span>
-<span data-ttu-id="e2806-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e2806-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="e2806-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="e2806-129">Response</span></span>
-<span data-ttu-id="e2806-130">При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [messageRule](../resources/messagerule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="e2806-130">If successful, this method returns a `200 OK` response code and [messageRule](../resources/messagerule.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e2806-131">Пример</span><span class="sxs-lookup"><span data-stu-id="e2806-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e2806-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="e2806-132">Request</span></span>
-<span data-ttu-id="e2806-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e2806-133">Here is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ba299-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ba299-127">Request body</span></span>
+<span data-ttu-id="ba299-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ba299-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="ba299-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="ba299-129">Response</span></span>
+<span data-ttu-id="ba299-130">При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [messageRule](../resources/messagerule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="ba299-130">If successful, this method returns a `200 OK` response code and [messageRule](../resources/messagerule.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="ba299-131">Пример</span><span class="sxs-lookup"><span data-stu-id="ba299-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ba299-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="ba299-132">Request</span></span>
+<span data-ttu-id="ba299-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ba299-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_messagerule"
@@ -53,10 +54,10 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
 ```
-##### <a name="response"></a><span data-ttu-id="e2806-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="e2806-134">Response</span></span>
-<span data-ttu-id="e2806-135">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e2806-135">Here is an example of the response.</span></span> <span data-ttu-id="e2806-136">По умолчанию свойства даты и времени в ответе возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="e2806-136">By default, the date-time properties in the response are in UTC.</span></span> 
+##### <a name="response"></a><span data-ttu-id="ba299-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="ba299-134">Response</span></span>
+<span data-ttu-id="ba299-135">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ba299-135">Here is an example of the response.</span></span> <span data-ttu-id="ba299-136">По умолчанию свойства даты и времени в ответе возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="ba299-136">By default, the date-time properties in the response are in UTC.</span></span> 
 
-<span data-ttu-id="e2806-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e2806-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ba299-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ba299-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
