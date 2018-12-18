@@ -1,30 +1,31 @@
 ---
 title: Получение androidForWorkEnterpriseWiFiConfiguration
 description: Чтение свойства и связи объекта androidForWorkEnterpriseWiFiConfiguration.
-ms.openlocfilehash: 6022e8bccbeb2f126ab3e4a80b86ec9b50fcbc6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68862f02843a50e3673d0fbbb3d293664c1c3d7d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074935"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319896"
 ---
-# <a name="get-androidforworkenterprisewificonfiguration"></a><span data-ttu-id="58125-103">Получение androidForWorkEnterpriseWiFiConfiguration</span><span class="sxs-lookup"><span data-stu-id="58125-103">Get androidForWorkEnterpriseWiFiConfiguration</span></span>
+# <a name="get-androidforworkenterprisewificonfiguration"></a><span data-ttu-id="6e3bc-103">Получение androidForWorkEnterpriseWiFiConfiguration</span><span class="sxs-lookup"><span data-stu-id="6e3bc-103">Get androidForWorkEnterpriseWiFiConfiguration</span></span>
 
-> <span data-ttu-id="58125-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="58125-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="58125-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="58125-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6e3bc-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6e3bc-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="58125-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="58125-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="6e3bc-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="58125-107">Чтение свойства и связи объекта [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="58125-107">Read properties and relationships of the [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="58125-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="58125-108">Prerequisites</span></span>
-<span data-ttu-id="58125-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="58125-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6e3bc-107">Чтение свойства и связи объекта [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="6e3bc-107">Read properties and relationships of the [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6e3bc-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="6e3bc-108">Prerequisites</span></span>
+<span data-ttu-id="6e3bc-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6e3bc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="58125-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="58125-111">Permission type</span></span>|<span data-ttu-id="58125-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="58125-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6e3bc-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6e3bc-111">Permission type</span></span>|<span data-ttu-id="6e3bc-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="6e3bc-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="58125-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="58125-113">Delegated (work or school account)</span></span>|<span data-ttu-id="58125-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="58125-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="58125-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="58125-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="58125-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="58125-116">Not supported.</span></span>|
-|<span data-ttu-id="58125-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="58125-117">Application</span></span>|<span data-ttu-id="58125-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="58125-118">Not supported.</span></span>|
+|<span data-ttu-id="6e3bc-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6e3bc-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6e3bc-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="6e3bc-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="6e3bc-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6e3bc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6e3bc-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-116">Not supported.</span></span>|
+|<span data-ttu-id="6e3bc-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6e3bc-117">Application</span></span>|<span data-ttu-id="6e3bc-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="58125-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="58125-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6e3bc-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6e3bc-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,31 +36,30 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="58125-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="58125-120">Optional query parameters</span></span>
-<span data-ttu-id="58125-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="58125-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="58125-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="58125-122">Request headers</span></span>
-|<span data-ttu-id="58125-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="58125-123">Header</span></span>|<span data-ttu-id="58125-124">Значение</span><span class="sxs-lookup"><span data-stu-id="58125-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="6e3bc-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="6e3bc-120">Optional query parameters</span></span>
+<span data-ttu-id="6e3bc-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6e3bc-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6e3bc-122">Request headers</span></span>
+|<span data-ttu-id="6e3bc-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="6e3bc-123">Header</span></span>|<span data-ttu-id="6e3bc-124">Значение</span><span class="sxs-lookup"><span data-stu-id="6e3bc-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="58125-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="58125-125">Authorization</span></span>|<span data-ttu-id="58125-126">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="58125-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="58125-127">Accept</span><span class="sxs-lookup"><span data-stu-id="58125-127">Accept</span></span>|<span data-ttu-id="58125-128">application/json</span><span class="sxs-lookup"><span data-stu-id="58125-128">application/json</span></span>|
+|<span data-ttu-id="6e3bc-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6e3bc-125">Authorization</span></span>|<span data-ttu-id="6e3bc-126">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="6e3bc-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6e3bc-127">Accept</span><span class="sxs-lookup"><span data-stu-id="6e3bc-127">Accept</span></span>|<span data-ttu-id="6e3bc-128">application/json</span><span class="sxs-lookup"><span data-stu-id="6e3bc-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="58125-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="58125-129">Request body</span></span>
-<span data-ttu-id="58125-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="58125-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6e3bc-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6e3bc-129">Request body</span></span>
+<span data-ttu-id="6e3bc-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="58125-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="58125-131">Response</span></span>
-<span data-ttu-id="58125-132">Успешно завершена, этот метод возвращает `200 OK` объект [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="58125-132">If successful, this method returns a `200 OK` response code and [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6e3bc-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="6e3bc-131">Response</span></span>
+<span data-ttu-id="6e3bc-132">Успешно завершена, этот метод возвращает `200 OK` объект [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-132">If successful, this method returns a `200 OK` response code and [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="58125-133">Пример</span><span class="sxs-lookup"><span data-stu-id="58125-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="58125-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="58125-134">Request</span></span>
-<span data-ttu-id="58125-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="58125-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6e3bc-133">Пример</span><span class="sxs-lookup"><span data-stu-id="6e3bc-133">Example</span></span>
+### <a name="request"></a><span data-ttu-id="6e3bc-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="6e3bc-134">Request</span></span>
+<span data-ttu-id="6e3bc-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="58125-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="58125-136">Response</span></span>
-<span data-ttu-id="58125-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="58125-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6e3bc-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="6e3bc-136">Response</span></span>
+<span data-ttu-id="6e3bc-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="6e3bc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

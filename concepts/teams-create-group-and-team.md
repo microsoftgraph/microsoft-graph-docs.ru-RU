@@ -1,27 +1,28 @@
 ---
 title: Создание группы с помощью команды Microsoft Teams
 description: 'Создание группы, которая включает команду, состоит из двух этапов: '
-ms.openlocfilehash: 530b3625a1aa1d020bff841196e3b83a2eb99a4e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: ea11d0ee7ee4e6e1d0bf6dc10ab8c9d064aa3610
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092619"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313890"
 ---
-# <a name="creating-a-group-with-a-microsoft-teams-team"></a><span data-ttu-id="66bf6-103">Создание группы с помощью команды Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="66bf6-103">Creating a group with a Microsoft Teams team</span></span>
+# <a name="creating-a-group-with-a-microsoft-teams-team"></a><span data-ttu-id="124b1-103">Создание группы с помощью команды Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="124b1-103">Creating a group with a Microsoft Teams team</span></span>
 
-<span data-ttu-id="66bf6-104">Создание [группы](/graph/api/resources/group?view=graph-rest-beta), которая включает [команду](/graph/api/resources/team?view=graph-rest-beta), состоит из двух этапов:</span><span class="sxs-lookup"><span data-stu-id="66bf6-104">Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps:</span></span> 
+<span data-ttu-id="124b1-104">Создание [группы](/graph/api/resources/group?view=graph-rest-beta), которая включает [команду](/graph/api/resources/team?view=graph-rest-beta), состоит из двух этапов:</span><span class="sxs-lookup"><span data-stu-id="124b1-104">Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps:</span></span> 
 
-- <span data-ttu-id="66bf6-105">[Создание группы](/graph/api/group-post-groups?view=graph-rest-beta) с правильными свойствами.</span><span class="sxs-lookup"><span data-stu-id="66bf6-105">[Create a group](/graph/api/group-post-groups?view=graph-rest-beta) with the right properties.</span></span>
-- <span data-ttu-id="66bf6-106">[Добавление команды](/graph/api/team-put-teams?view=graph-rest-beta) в группу.</span><span class="sxs-lookup"><span data-stu-id="66bf6-106">[Add a folder to the Favorite folders group](/graph/api/team-put-teams?view=graph-rest-beta)</span></span>
+- <span data-ttu-id="124b1-105">[Создание группы](/graph/api/group-post-groups?view=graph-rest-beta) с правильными свойствами.</span><span class="sxs-lookup"><span data-stu-id="124b1-105">[Create a group](/graph/api/group-post-groups?view=graph-rest-beta) with the right properties.</span></span>
+- <span data-ttu-id="124b1-106">[Добавление команды](/graph/api/team-put-teams?view=graph-rest-beta) в группу.</span><span class="sxs-lookup"><span data-stu-id="124b1-106">[Add a team](/graph/api/team-put-teams?view=graph-rest-beta) to the group.</span></span>
 
-## <a name="create-a-group"></a><span data-ttu-id="66bf6-107">Создание группы</span><span class="sxs-lookup"><span data-stu-id="66bf6-107">Create a Group</span></span>
+## <a name="create-a-group"></a><span data-ttu-id="124b1-107">Создание группы</span><span class="sxs-lookup"><span data-stu-id="124b1-107">Create a group</span></span>
 
-<span data-ttu-id="66bf6-108">Чтобы добавить группу, вам необходимо настроить указанные ниже значения свойств, как показано в приведенном ниже примере:</span><span class="sxs-lookup"><span data-stu-id="66bf6-108">In order to include a team, you need to set the following property values, as shown in the following example:</span></span>
+<span data-ttu-id="124b1-108">Чтобы добавить группу, вам необходимо настроить указанные ниже значения свойств, как показано в приведенном ниже примере:</span><span class="sxs-lookup"><span data-stu-id="124b1-108">In order to include a team, you need to set the following property values, as shown in the following example:</span></span>
 
-- <span data-ttu-id="66bf6-109">**groupTypes** = { "Unified" }</span><span class="sxs-lookup"><span data-stu-id="66bf6-109">**groupTypes** = { "Unified" }</span></span> 
-- <span data-ttu-id="66bf6-110">**mailEnabled** = true</span><span class="sxs-lookup"><span data-stu-id="66bf6-110">**mailEnabled** = true</span></span>
-- <span data-ttu-id="66bf6-111">**securityEnabled** = false</span><span class="sxs-lookup"><span data-stu-id="66bf6-111">**securityEnabled** = false</span></span>
+- <span data-ttu-id="124b1-109">**groupTypes** = { "Unified" }</span><span class="sxs-lookup"><span data-stu-id="124b1-109">**groupTypes** = { "Unified" }</span></span> 
+- <span data-ttu-id="124b1-110">**mailEnabled** = true</span><span class="sxs-lookup"><span data-stu-id="124b1-110">**mailEnabled** = true</span></span>
+- <span data-ttu-id="124b1-111">**securityEnabled** = false</span><span class="sxs-lookup"><span data-stu-id="124b1-111">**securityEnabled** = false</span></span>
 
 ```http
 POST /groups
@@ -46,9 +47,9 @@ POST /groups
 }
 ```
 
-<span data-ttu-id="66bf6-112">Ниже показан пример ответа.</span><span class="sxs-lookup"><span data-stu-id="66bf6-112">The following example shows the response.</span></span> 
+<span data-ttu-id="124b1-112">Ниже показан пример ответа.</span><span class="sxs-lookup"><span data-stu-id="124b1-112">The following example shows response.</span></span> 
 
-><span data-ttu-id="66bf6-113">**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="66bf6-113">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="66bf6-114">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="66bf6-114">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="124b1-113">**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="124b1-113">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="124b1-114">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="124b1-114">All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -60,18 +61,18 @@ Content-length: xxx
 }
 ```
 
-## <a name="add-a-team-to-the-group"></a><span data-ttu-id="66bf6-115">Добавление команды в группу</span><span class="sxs-lookup"><span data-stu-id="66bf6-115">Add a team to the group</span></span>
+## <a name="add-a-team-to-the-group"></a><span data-ttu-id="124b1-115">Добавление команды в группу</span><span class="sxs-lookup"><span data-stu-id="124b1-115">Add a team to the group</span></span>
 
-<span data-ttu-id="66bf6-116">Добавьте команду в группу, как показано.</span><span class="sxs-lookup"><span data-stu-id="66bf6-116">Add a team to the group, as shown.</span></span>
+<span data-ttu-id="124b1-116">Добавьте команду в группу, как показано.</span><span class="sxs-lookup"><span data-stu-id="124b1-116">Add a team to the group, as shown.</span></span>
 
 ```http
 PUT /groups/{id}/team
 { }
 ```
 
-<span data-ttu-id="66bf6-117">Ниже показан пример ответа.</span><span class="sxs-lookup"><span data-stu-id="66bf6-117">The following example shows the response.</span></span> 
+<span data-ttu-id="124b1-117">Ниже показан пример ответа.</span><span class="sxs-lookup"><span data-stu-id="124b1-117">The following example shows the response.</span></span> 
 
-><span data-ttu-id="66bf6-118">**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="66bf6-118">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="66bf6-119">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="66bf6-119">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="124b1-118">**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="124b1-118">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="124b1-119">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="124b1-119">All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -89,4 +90,4 @@ Content-length: xxx
 }
 ```
 
-<span data-ttu-id="66bf6-120">Идентификатор созданной команды такой же, как и идентификатор группы.</span><span class="sxs-lookup"><span data-stu-id="66bf6-120">The created team has the same ID as the group.</span></span>
+<span data-ttu-id="124b1-120">Идентификатор созданной команды такой же, как и идентификатор группы.</span><span class="sxs-lookup"><span data-stu-id="124b1-120">The created team has the same ID as the group.</span></span>
