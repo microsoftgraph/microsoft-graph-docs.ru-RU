@@ -1,28 +1,29 @@
 ---
 title: Получение deviceEnrollmentLimitConfiguration
 description: Чтение свойств и связей объекта deviceEnrollmentLimitConfiguration.
-ms.openlocfilehash: a06a5af5443aecfee9b021584aefcf59020c5b9a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c92740fc369eb8ef7bc7ca881187d50dd476087
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028453"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359908"
 ---
-# <a name="get-deviceenrollmentlimitconfiguration"></a><span data-ttu-id="4aef7-103">Получение deviceEnrollmentLimitConfiguration</span><span class="sxs-lookup"><span data-stu-id="4aef7-103">Get deviceEnrollmentLimitConfiguration</span></span>
+# <a name="get-deviceenrollmentlimitconfiguration"></a><span data-ttu-id="70af6-103">Получение deviceEnrollmentLimitConfiguration</span><span class="sxs-lookup"><span data-stu-id="70af6-103">Get deviceEnrollmentLimitConfiguration</span></span>
 
-> <span data-ttu-id="4aef7-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="4aef7-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="70af6-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="70af6-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="4aef7-105">Чтение свойств и связей объекта [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="4aef7-105">Read properties and relationships of the [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="4aef7-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="4aef7-106">Prerequisites</span></span>
-<span data-ttu-id="4aef7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4aef7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="70af6-105">Чтение свойств и связей объекта [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="70af6-105">Read properties and relationships of the [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="70af6-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="70af6-106">Prerequisites</span></span>
+<span data-ttu-id="70af6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="70af6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4aef7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4aef7-109">Permission type</span></span>|<span data-ttu-id="4aef7-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="4aef7-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="70af6-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="70af6-109">Permission type</span></span>|<span data-ttu-id="70af6-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="70af6-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4aef7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4aef7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="4aef7-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="4aef7-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="4aef7-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4aef7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4aef7-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4aef7-114">Not supported.</span></span>|
-|<span data-ttu-id="4aef7-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4aef7-115">Application</span></span>|<span data-ttu-id="4aef7-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4aef7-116">Not supported.</span></span>|
+|<span data-ttu-id="70af6-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="70af6-111">Delegated (work or school account)</span></span>|<span data-ttu-id="70af6-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="70af6-112">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="70af6-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="70af6-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="70af6-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="70af6-114">Not supported.</span></span>|
+|<span data-ttu-id="70af6-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="70af6-115">Application</span></span>|<span data-ttu-id="70af6-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="70af6-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4aef7-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4aef7-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70af6-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="70af6-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -31,31 +32,30 @@ ms.locfileid: "27028453"
 GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4aef7-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="4aef7-118">Optional query parameters</span></span>
-<span data-ttu-id="4aef7-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="4aef7-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="4aef7-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4aef7-120">Request headers</span></span>
-|<span data-ttu-id="4aef7-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="4aef7-121">Header</span></span>|<span data-ttu-id="4aef7-122">Значение</span><span class="sxs-lookup"><span data-stu-id="4aef7-122">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="70af6-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="70af6-118">Optional query parameters</span></span>
+<span data-ttu-id="70af6-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="70af6-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="70af6-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="70af6-120">Request headers</span></span>
+|<span data-ttu-id="70af6-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="70af6-121">Header</span></span>|<span data-ttu-id="70af6-122">Значение</span><span class="sxs-lookup"><span data-stu-id="70af6-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4aef7-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4aef7-123">Authorization</span></span>|<span data-ttu-id="4aef7-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="4aef7-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4aef7-125">Accept</span><span class="sxs-lookup"><span data-stu-id="4aef7-125">Accept</span></span>|<span data-ttu-id="4aef7-126">application/json</span><span class="sxs-lookup"><span data-stu-id="4aef7-126">application/json</span></span>|
+|<span data-ttu-id="70af6-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="70af6-123">Authorization</span></span>|<span data-ttu-id="70af6-124">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="70af6-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="70af6-125">Accept</span><span class="sxs-lookup"><span data-stu-id="70af6-125">Accept</span></span>|<span data-ttu-id="70af6-126">application/json</span><span class="sxs-lookup"><span data-stu-id="70af6-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4aef7-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4aef7-127">Request body</span></span>
-<span data-ttu-id="4aef7-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4aef7-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="70af6-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="70af6-127">Request body</span></span>
+<span data-ttu-id="70af6-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="70af6-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4aef7-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="4aef7-129">Response</span></span>
-<span data-ttu-id="4aef7-130">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="4aef7-130">If successful, this method returns a `200 OK` response code and [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="70af6-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="70af6-129">Response</span></span>
+<span data-ttu-id="70af6-130">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="70af6-130">If successful, this method returns a `200 OK` response code and [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4aef7-131">Пример</span><span class="sxs-lookup"><span data-stu-id="4aef7-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="4aef7-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="4aef7-132">Request</span></span>
-<span data-ttu-id="4aef7-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4aef7-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="70af6-131">Пример</span><span class="sxs-lookup"><span data-stu-id="70af6-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="70af6-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="70af6-132">Request</span></span>
+<span data-ttu-id="70af6-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="70af6-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="4aef7-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="4aef7-134">Response</span></span>
-<span data-ttu-id="4aef7-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="4aef7-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="70af6-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="70af6-134">Response</span></span>
+<span data-ttu-id="70af6-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="70af6-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

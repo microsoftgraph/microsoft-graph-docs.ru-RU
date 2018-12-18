@@ -1,49 +1,50 @@
 ---
 title: Обновление educationSynchronizationProfile
 description: Обновляет свойства существующего профиля синхронизации данных school в клиентов.
-ms.openlocfilehash: 9f670a04dfb3c5465683883eeaf4eeed543e830a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 17bf46eb4ebd6783f7bafba828ff1bcb7ad5ac48
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077868"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361469"
 ---
-# <a name="update-an-educationsynchronizationprofile"></a><span data-ttu-id="75f3e-103">Обновление educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="75f3e-103">Update an educationSynchronizationProfile</span></span>
+# <a name="update-an-educationsynchronizationprofile"></a><span data-ttu-id="dcffd-103">Обновление educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="dcffd-103">Update an educationSynchronizationProfile</span></span>
 
-> <span data-ttu-id="75f3e-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="75f3e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="75f3e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="75f3e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="dcffd-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="dcffd-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="dcffd-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dcffd-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="75f3e-106">Обновление свойств существующих данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов.</span><span class="sxs-lookup"><span data-stu-id="75f3e-106">Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
+<span data-ttu-id="dcffd-106">Обновление свойств существующих данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов.</span><span class="sxs-lookup"><span data-stu-id="dcffd-106">Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="75f3e-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="75f3e-107">Permissions</span></span>
-<span data-ttu-id="75f3e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="75f3e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dcffd-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dcffd-107">Permissions</span></span>
+<span data-ttu-id="dcffd-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dcffd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="75f3e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="75f3e-110">Permission type</span></span> | <span data-ttu-id="75f3e-111">Permissions</span><span class="sxs-lookup"><span data-stu-id="75f3e-111">Permissions</span></span> |
+| <span data-ttu-id="dcffd-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dcffd-110">Permission type</span></span> | <span data-ttu-id="dcffd-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dcffd-111">Permissions</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="75f3e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="75f3e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="75f3e-113">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="75f3e-113">EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="75f3e-114">Делегированные (личная учетная запись Майкрософт</span><span class="sxs-lookup"><span data-stu-id="75f3e-114">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="75f3e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="75f3e-115">Not supported.</span></span>|
-|<span data-ttu-id="75f3e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="75f3e-116">Application</span></span>|<span data-ttu-id="75f3e-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="75f3e-117">Not supported.</span></span>|
+| <span data-ttu-id="dcffd-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dcffd-112">Delegated (work or school account)</span></span> | <span data-ttu-id="dcffd-113">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dcffd-113">EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="dcffd-114">Делегированные (личная учетная запись Майкрософт</span><span class="sxs-lookup"><span data-stu-id="dcffd-114">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="dcffd-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dcffd-115">Not supported.</span></span>|
+|<span data-ttu-id="dcffd-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="dcffd-116">Application</span></span>|<span data-ttu-id="dcffd-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dcffd-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="75f3e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="75f3e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dcffd-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dcffd-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /synchronizationProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="75f3e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="75f3e-119">Request headers</span></span>
-| <span data-ttu-id="75f3e-120">Имя</span><span class="sxs-lookup"><span data-stu-id="75f3e-120">Name</span></span>       | <span data-ttu-id="75f3e-121">Тип</span><span class="sxs-lookup"><span data-stu-id="75f3e-121">Type</span></span> | <span data-ttu-id="75f3e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="75f3e-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dcffd-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dcffd-119">Request headers</span></span>
+| <span data-ttu-id="dcffd-120">Имя</span><span class="sxs-lookup"><span data-stu-id="dcffd-120">Name</span></span>       | <span data-ttu-id="dcffd-121">Тип</span><span class="sxs-lookup"><span data-stu-id="dcffd-121">Type</span></span> | <span data-ttu-id="dcffd-122">Описание</span><span class="sxs-lookup"><span data-stu-id="dcffd-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="75f3e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="75f3e-123">Authorization</span></span>  | <span data-ttu-id="75f3e-124">string</span><span class="sxs-lookup"><span data-stu-id="75f3e-124">string</span></span>  | <span data-ttu-id="75f3e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="75f3e-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="75f3e-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="75f3e-127">Content-Type</span></span> | <span data-ttu-id="75f3e-128">строка</span><span class="sxs-lookup"><span data-stu-id="75f3e-128">string</span></span> | <span data-ttu-id="75f3e-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="75f3e-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="dcffd-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="dcffd-123">Authorization</span></span>  | <span data-ttu-id="dcffd-124">string</span><span class="sxs-lookup"><span data-stu-id="dcffd-124">string</span></span>  | <span data-ttu-id="dcffd-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="dcffd-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="dcffd-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dcffd-127">Content-Type</span></span> | <span data-ttu-id="dcffd-128">строка</span><span class="sxs-lookup"><span data-stu-id="dcffd-128">string</span></span> | <span data-ttu-id="dcffd-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="dcffd-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="75f3e-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="75f3e-131">Request body</span></span>
-<span data-ttu-id="75f3e-132">В тексте запроса укажите представление объекта [synchronizationProfile](../resources/educationsynchronizationprofile.md) с JSON.</span><span class="sxs-lookup"><span data-stu-id="75f3e-132">In the request body, supply a JSON representation of the [synchronizationProfile](../resources/educationsynchronizationprofile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dcffd-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="dcffd-131">Request body</span></span>
+<span data-ttu-id="dcffd-132">В тексте запроса укажите представление объекта [synchronizationProfile](../resources/educationsynchronizationprofile.md) с JSON.</span><span class="sxs-lookup"><span data-stu-id="dcffd-132">In the request body, supply a JSON representation of the [synchronizationProfile](../resources/educationsynchronizationprofile.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="75f3e-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="75f3e-133">Response</span></span>
-<span data-ttu-id="75f3e-134">Успешно завершена, этот метод возвращает `202, Accepted` код ответа и объект [synchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="75f3e-134">If successful, this method returns a `202, Accepted` response code and a [synchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dcffd-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="dcffd-133">Response</span></span>
+<span data-ttu-id="dcffd-134">Успешно завершена, этот метод возвращает `202, Accepted` код ответа и объект [synchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="dcffd-134">If successful, this method returns a `202, Accepted` response code and a [synchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="75f3e-135">Пример</span><span class="sxs-lookup"><span data-stu-id="75f3e-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="75f3e-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="75f3e-136">Request</span></span>
-<span data-ttu-id="75f3e-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="75f3e-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="dcffd-135">Пример</span><span class="sxs-lookup"><span data-stu-id="dcffd-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dcffd-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="dcffd-136">Request</span></span>
+<span data-ttu-id="dcffd-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="dcffd-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "update_synchronizationProfile"
@@ -95,10 +96,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="75f3e-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="75f3e-138">Response</span></span>
-<span data-ttu-id="75f3e-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="75f3e-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="dcffd-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="dcffd-138">Response</span></span>
+<span data-ttu-id="dcffd-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="dcffd-139">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="75f3e-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="75f3e-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="dcffd-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="dcffd-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
