@@ -1,12 +1,13 @@
 ---
 title: Получение educationSubmissionResource
-description: " Список ресурсов и должны считаться студент рабочего процесса. Этот ресурс оболочку с возможные указатель обратно в назначения ресурсов, если он был скопирован из назначения."
-ms.openlocfilehash: 1bba0b8b4e89b0f3bc564f48187cfe46fc49cf46
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Получает свойства определенного ресурса, связанного с подачи. Этот ресурс находится в списке ресурсов «рабочий» и должны считаться рабочего процесса студента. Этот ресурс оболочку с возможные указатель обратно в назначения ресурсов, если он был скопирован из назначения.
+author: dipakboyed
+ms.openlocfilehash: d7c1e6fcbe97a9a0a4c1735e37798097f2605b30
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074974"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361917"
 ---
 # <a name="get-educationsubmissionresource"></a>Получение educationSubmissionResource
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationSubmissionResource
 description: 'Оболочку ресурсов для использования на отправку. Программа-оболочка добавляет указатель назначения ресурсов в том случае, если это скопированный из назначения.  '
-ms.openlocfilehash: 243d0d8683683df19f7787f7cf6298770950455f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: bfbf2f522106f5a1e2033898cbb2702223d3e241
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361560"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>Тип ресурса educationSubmissionResource
 
@@ -23,10 +24,10 @@ ms.locfileid: "27080922"
 |[Delete](../api/educationsubmissionresource-delete.md) | Нет |Удаление объекта **educationSubmissionResource** . |
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String|Указатель на назначения, с которого был скопирован этот ресурс. Если это значение null, студент загружаться ресурса.|
-|id|String| Только для чтения.|
+|assignmentResourceUrl|String.|Указатель на назначения, с которого был скопирован этот ресурс. Если это значение null, студент загружаться ресурса.|
+|id|Строка| Только для чтения.|
 |resource|[educationResource](educationresource.md)|Объект ресурса.|
 
 ## <a name="relationships"></a>Связи

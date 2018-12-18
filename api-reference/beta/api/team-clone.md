@@ -1,12 +1,13 @@
 ---
 title: Клонирование группы
 description: Создайте копию группы. Эта операция также создает копию соответствующей группе.
-ms.openlocfilehash: b49fa4262fe65be03b99f2107e9ef1b2799bfeb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 79ae6f770e009f262adbda4872ddc51af626688f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082738"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361931"
 ---
 # <a name="clone-a-team"></a>Клонирование группы
 
@@ -50,7 +51,7 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>Текст запроса
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |classification|String (необязательно)|Описание классификации для группы (например, низкий, средний или высокий для бизнеса). Допустимые значения для этого свойства определены, создав значение [параметра](../resources/directorysetting.md) ClassificationList на основе [определения шаблона](../resources/directorysettingtemplate.md). Если классификация не указан, классификации копируются из исходной группы или группы.|
 |description|String (необязательно)|Необязательное описание для группы. Если это свойство не указан, он остается пустым.|
