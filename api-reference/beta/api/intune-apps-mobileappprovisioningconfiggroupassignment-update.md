@@ -1,12 +1,13 @@
 ---
 title: Обновление mobileAppProvisioningConfigGroupAssignment
 description: Обновление свойства объекта mobileAppProvisioningConfigGroupAssignment.
-ms.openlocfilehash: 81e9efc268130cbdc2baf44e098d6f11a949e90f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c113c16234cb51146aa2e627d39405f740d6aab3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080071"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359145"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Обновление mobileAppProvisioningConfigGroupAssignment
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,10 +46,10 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 В следующей таблице показаны свойства, которые необходимы для создания [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md).
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|targetGroupId|String|Идентификатор группы AAD целевого приложения подготовки конфигурации.|
-|id|String|Ключ объекта.|
+|targetGroupId|String.|Идентификатор группы AAD целевого приложения подготовки конфигурации.|
+|id|Строка|Ключ объекта.|
 
 
 
@@ -69,8 +70,7 @@ Content-length: 48
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

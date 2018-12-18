@@ -1,12 +1,13 @@
 ---
 title: Список importedAppleDeviceIdentityResults
 description: Свойства списка и связей объектов importedAppleDeviceIdentityResult.
-ms.openlocfilehash: 83371cbc4dd16be4f3e38d680ae4fad7ba3b2f83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a87b4174c74e198da2ef1e6c0e42a5c4973530ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081308"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357402"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>Список importedAppleDeviceIdentityResults
 
@@ -36,7 +37,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedApp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

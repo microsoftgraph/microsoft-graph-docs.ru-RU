@@ -1,12 +1,13 @@
 ---
 title: Delete termsAndConditionsAcceptanceStatus
 description: Удаляет объект termsAndConditionsAcceptanceStatus.
-ms.openlocfilehash: d0ca800fbf9e131cd53a855d45bd2b571b35dd15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f43a59630d476e8333777a287f738b7f900cdbe4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082624"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359922"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>Delete termsAndConditionsAcceptanceStatus
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceSta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{ter
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

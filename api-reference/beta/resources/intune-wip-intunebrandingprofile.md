@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса intuneBrandingProfile
 description: Этот объект содержит данные, используемые в настройке уровня внешнего клиента приложения портала компании, а также веб-портала конечного пользователя.
-ms.openlocfilehash: b85f33731f91a5b239a00a2a537f5e0fdbef56a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e37105653f441da6aeb8d549b7690b8044de3186
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075160"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357157"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>Тип ресурса intuneBrandingProfile
 
@@ -27,10 +28,10 @@ ms.locfileid: "27075160"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша профилей|
-|Имя_профиля|String|Имя профиля|
-|profileDescription|String|Описание профиля|
-|isDefaultProfile|Логический|Представляет при использовании профиля по умолчанию.|
+|id|Строка|Клавиша профилей|
+|Имя_профиля|String.|Имя профиля|
+|profileDescription|String.|Описание профиля|
+|isDefaultProfile|Boolean.|Представляет при использовании профиля по умолчанию.|
 |createdDateTime|DateTimeOffset|При создании BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile.|
 |displayName|String|Название компании или организации, которое отображается пользователям.|

@@ -1,12 +1,13 @@
 ---
 title: 'Range: EntireColumn'
 description: Возвращает объект, представляющий весь столбец диапазона.
-ms.openlocfilehash: d7a11ff6c177ec90f26a85ad0a323b6a01cc7872
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b2aa75e6739c535e1af040186ab0d2b9f0420b2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082115"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357353"
 ---
 # <a name="range-entirecolumn"></a>Range: EntireColumn
 
@@ -55,8 +56,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

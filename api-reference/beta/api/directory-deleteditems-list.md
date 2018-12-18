@@ -1,12 +1,13 @@
 ---
 title: Перечисление удаленных элементов
 description: Получение списка недавно удаленных элементов.
-ms.openlocfilehash: 297c43093e785bbdfb2665932164bc70fd458232
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 205052402f4402b9895cca6cc46b6ab656a51ed8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074716"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358725"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса edgeSearchEngineCustom
 description: Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для устройств под управлением MDM.
-ms.openlocfilehash: 54617b01fc3082fc8c80b653e7df36e48c1de0d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f648f41bafcbaa37c972500139ecc8d3e70113ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026220"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357976"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>Тип ресурса edgeSearchEngineCustom
 

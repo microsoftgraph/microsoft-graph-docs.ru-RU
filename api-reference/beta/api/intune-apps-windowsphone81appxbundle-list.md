@@ -1,12 +1,13 @@
 ---
 title: Список windowsPhone81AppXBundles
 description: Свойства списка и связей объектов windowsPhone81AppXBundle.
-ms.openlocfilehash: 074aab47ee3a2cf35f34230201af984d9803491a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 76420bbac71b8a308e894408a1958f6a510250f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079776"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360188"
 ---
 # <a name="list-windowsphone81appxbundles"></a>Список windowsPhone81AppXBundles
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

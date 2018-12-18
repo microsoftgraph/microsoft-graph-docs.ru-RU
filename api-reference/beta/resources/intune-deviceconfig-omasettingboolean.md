@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса omaSettingBoolean
 description: Логическое определение параметров OMA.
-ms.openlocfilehash: 2f2f156dba23fdba0f11667bf6d0c107e3cf74b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3a643f642784b586a2528cb3396383466043d8b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076177"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357339"
 ---
 # <a name="omasettingboolean-resource-type"></a>Тип ресурса omaSettingBoolean
 
@@ -21,9 +22,9 @@ ms.locfileid: "27076177"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|описание|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|описание|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Boolean|Значение|
 
 ## <a name="relationships"></a>Связи

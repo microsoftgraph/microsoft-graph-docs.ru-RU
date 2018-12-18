@@ -1,12 +1,13 @@
 ---
 title: Функция deviceConfigurationUserActivity
 description: Метаданные для отчета о действиях пользователей с конфигурацией устройств
-ms.openlocfilehash: 92a82fc79cbf7e19fa408a51e6c38adc9b32734b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f19f067212ee6162e2ede9afd325cd80e00af977
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025747"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357045"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>Функция deviceConfigurationUserActivity
 
@@ -35,7 +36,7 @@ GET /reports/deviceConfigurationUserActivity
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -53,8 +54,7 @@ GET https://graph.microsoft.com/v1.0/reports/deviceConfigurationUserActivity
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Восстановление удаленного элемента
 description: 'Восстановление недавно удаленного элемента из контейнера для удаленных элементов. '
-ms.openlocfilehash: 325d4fb3f94d27259f26bc48c8b43f37f7e38d49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 0088daf7f84217ca921a1e3e80243d7002b5f6b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077221"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356541"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 

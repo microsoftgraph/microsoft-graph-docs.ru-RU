@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления ratingIrelandTelevisionType
 description: Метки TV оценки содержимого в Ирландия
-ms.openlocfilehash: b81a48a5f9ea74861eb0b6ed71c7cee52c3df5be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 40bff39bc943257267a03fdc0ddf1b99fa06dd18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081679"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360769"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>Тип перечисления ratingIrelandTelevisionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081679"
 
 Метки TV оценки содержимого в Ирландия
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить всем TV показывает контента|
 |allBlocked|1|Не допускайте использование Любого показывает контента|

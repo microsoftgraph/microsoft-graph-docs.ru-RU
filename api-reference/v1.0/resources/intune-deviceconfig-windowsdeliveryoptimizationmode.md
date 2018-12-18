@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsDeliveryOptimizationMode
 description: Режим оптимизации доставки для распространения peer
-ms.openlocfilehash: 2d393a82f855f3e3a0226c8ccb450fa2dae1a95c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ae61d7dde5fc02ff329eaf9cc970ee7078c3a254
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025793"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360160"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>Тип перечисления windowsDeliveryOptimizationMode
 
@@ -14,7 +15,7 @@ ms.locfileid: "27025793"
 
 Режим оптимизации доставки для распространения peer
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Пользователь может задать.|
 |httpOnly|1|HTTP, не авторами|

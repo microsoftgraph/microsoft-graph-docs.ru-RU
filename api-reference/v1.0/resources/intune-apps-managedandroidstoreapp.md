@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedAndroidStoreApp
 description: Содержит свойства, в том числе унаследованные, для приложений из магазина Android, которыми вы можете управлять с помощью политики защиты приложений Intune.
-ms.openlocfilehash: 8762b18b57af778302ecd2582e4e0b3d6b0d71b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f8dca27c795b30330bccbf81f71ee59bf300655
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027484"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356800"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>Тип ресурса managedAndroidStoreApp
 
@@ -28,7 +29,7 @@ ms.locfileid: "27027484"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

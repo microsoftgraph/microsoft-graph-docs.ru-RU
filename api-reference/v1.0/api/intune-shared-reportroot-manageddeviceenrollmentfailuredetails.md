@@ -1,19 +1,20 @@
 ---
 title: функция managedDeviceEnrollmentFailureDetails
 description: Н/Д
-ms.openlocfilehash: c5e68453cb1655e4018156ac207b60e4145e571a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e95a0590ee08fb29d2ae95cb68f0bded658ecf18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027448"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357059"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>функция managedDeviceEnrollmentFailureDetails
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Н/Д
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -35,7 +36,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -43,12 +44,12 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |skip|Int32|Н/Д|
 |top|Int32|Н/Д|
-|filter|String|Н/Д|
-|skipToken|String|Н/Д|
+|filter|Строка|Н/Д|
+|skipToken|Строка|Н/Д|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: Обновление windows10EnrollmentCompletionPageConfiguration
 description: Обновление свойства объекта windows10EnrollmentCompletionPageConfiguration.
-ms.openlocfilehash: b3566d7b476c17557bdfc15f8ff9d86763123ab2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bcc62cc4bea069a6a29ce2d321578a86145a0446
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360048"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Обновление windows10EnrollmentCompletionPageConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,13 +55,13 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |createdDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |version|Int32|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
-|showInstallationProgress|Логический|Показать или скрыть выполнения установки для пользователей|
-|blockDeviceSetupRetryByUser|Логический|Пользователь может повторно запустите программу установки на сбой установки|
-|allowDeviceResetOnInstallFailure|Логический|Разрешить или заблокировать устройство Сброс на сбой установки|
-|allowLogCollectionOnInstallFailure|Логический|Разрешить или заблокировать семейства журнала на сбой установки|
-|customErrorMessage|String|Задать пользовательское сообщение об ошибке для отображения после сбоя установки|
+|showInstallationProgress|Boolean.|Показать или скрыть выполнения установки для пользователей|
+|blockDeviceSetupRetryByUser|Boolean.|Пользователь может повторно запустите программу установки на сбой установки|
+|allowDeviceResetOnInstallFailure|Boolean.|Разрешить или заблокировать устройство Сброс на сбой установки|
+|allowLogCollectionOnInstallFailure|Boolean.|Разрешить или заблокировать семейства журнала на сбой установки|
+|customErrorMessage|String.|Задать пользовательское сообщение об ошибке для отображения после сбоя установки|
 |installProgressTimeoutInMinutes|Int32|Задать время ожидания ход выполнения установки в минутах|
-|allowDeviceUseOnInstallFailure|Логический|Разрешает пользователю продолжить использование устройства на сбой установки|
+|allowDeviceUseOnInstallFailure|Boolean.|Разрешает пользователю продолжить использование устройства на сбой установки|
 |selectedMobileAppIds|Коллекция String|Для отслеживания состояния установки выбранных приложений|
 
 
@@ -96,8 +97,7 @@ Content-length: 562
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

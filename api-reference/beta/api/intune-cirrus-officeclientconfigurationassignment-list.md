@@ -1,12 +1,13 @@
 ---
 title: Список officeClientConfigurationAssignments
 description: Свойства списка и связей объектов officeClientConfigurationAssignment.
-ms.openlocfilehash: 8c8447a7e6339b40e958e019ddd0b9eed17b8c9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34f926b0e02a963c1ab16ec7a0dd3eefcc06852c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074969"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360384"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Список officeClientConfigurationAssignments
 
@@ -36,7 +37,7 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{o
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

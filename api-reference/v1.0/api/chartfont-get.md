@@ -1,12 +1,13 @@
 ---
 title: Получение объекта ChartFont
 description: Получение свойств и связей объекта chartfont.
-ms.openlocfilehash: 46fc2d0ef5cb6f1c76620b9d3acefad346d97182
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4cb305da907b210be8a48efe66c0253074e07068
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025730"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360258"
 ---
 # <a name="get-chartfont"></a>Получение объекта ChartFont
 
@@ -53,8 +54,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

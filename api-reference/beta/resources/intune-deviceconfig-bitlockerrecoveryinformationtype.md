@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления bitLockerRecoveryInformationType
 description: Типы BitLockerRecoveryInformationType
-ms.openlocfilehash: b8f020af2ef5e4d777bc9284e558e91343ac7485
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4844168823c4f6da1e8444c4cffde6affc47eaad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357563"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>Тип перечисления bitLockerRecoveryInformationType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077855"
 
 Типы BitLockerRecoveryInformationType
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |passwordAndKey|1|Хранить пароли восстановления и пакеты ключей.|
 |passwordOnly|2|Хранить пароли восстановления только.|

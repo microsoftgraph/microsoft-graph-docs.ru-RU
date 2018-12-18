@@ -1,12 +1,13 @@
 ---
 title: Создайте параметр каталога на группы
 description: Используйте этот интерфейс API для создания нового параметра каталог для группы.
-ms.openlocfilehash: d8bb0750085a23df05100ec0072024d42247b3cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2e400babc809bdc8d9277cad1bd41b8b714e4e92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080580"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358998"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Создайте параметр каталога на группы
 
@@ -30,7 +31,7 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя <token>. Обязательный|
+| Авторизация  | Носителя <token>. Обязательное|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [directorySetting](../resources/directorysetting.md) .
@@ -66,8 +67,7 @@ Content-length: 222
 ```
 В тексте запроса укажите представление JSON объекта [directorySetting](../resources/directorysetting.md) .
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

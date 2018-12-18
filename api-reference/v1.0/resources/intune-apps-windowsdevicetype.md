@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsDeviceType
 description: Содержит свойства для типа устройства Windows.
-ms.openlocfilehash: 9a2ca8d67254c3ea8f64e20f954b84d07060fbc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 74f169f66ab2fe1bf29fbd4a08c07c540367947f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027425"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360692"
 ---
 # <a name="windowsdevicetype-enum-type"></a>Тип перечисления windowsDeviceType
 
@@ -14,11 +15,11 @@ ms.locfileid: "27027425"
 
 Содержит свойства для типа устройства Windows.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Нет установленных флагов.|
+|none|0|Нет установленных флагов.|
 |рабочий стол|1|Поддерживается ли тип устройства рабочий стол Windows.|
-|mobile|2|Поддерживается ли тип устройства Mobile Windows.|
+|мобильных устройств|2|Поддерживается ли тип устройства Mobile Windows.|
 |Голографическая|4|Поддерживается ли тип устройства голографическая Windows.|
 |Группа|8|Поддерживается ли тип устройства группы Windows.|
 

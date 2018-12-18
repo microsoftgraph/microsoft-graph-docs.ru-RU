@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса iosLobAppProvisioningConfigurationAssignment
 description: Класс, содержащий свойства, используемые для назначения группы для iOS, бизнес-приложения подготовки и настройки.
-ms.openlocfilehash: 6a540914057ed4a2d785566719f95ffcd4bbc50e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 795fe7e07fdd5a79e4d3d99f7d081bd458452473
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080659"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358221"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>Тип ресурса iosLobAppProvisioningConfigurationAssignment
 
@@ -27,7 +28,7 @@ ms.locfileid: "27080659"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 
 ## <a name="relationships"></a>Связи

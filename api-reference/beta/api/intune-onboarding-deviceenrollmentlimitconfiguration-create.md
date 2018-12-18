@@ -1,12 +1,13 @@
 ---
 title: Создание объекта deviceEnrollmentLimitConfiguration
 description: Создание объекта deviceEnrollmentLimitConfiguration.
-ms.openlocfilehash: 6a8cb46b022f68082bd3d291c87e612bde06ab4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdb9fee09f43890280ef0beb79d6d57d9def67f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079564"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359670"
 ---
 # <a name="create-deviceenrollmentlimitconfiguration"></a>Создание объекта deviceEnrollmentLimitConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -81,8 +82,7 @@ Content-length: 269
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

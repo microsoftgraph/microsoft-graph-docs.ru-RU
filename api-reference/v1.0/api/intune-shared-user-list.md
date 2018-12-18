@@ -1,19 +1,20 @@
 ---
 title: Перечисление пользователей
 description: Список свойств и связей объектов user.
-ms.openlocfilehash: 06044d50bf21e52f61a66a7e54b11c69c9e5f700
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d68b6855a80262daf359950967517a4ec8faa8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027490"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357143"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Список свойств и связей объектов [user](../resources/intune-shared-user.md).
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 Чтобы вызвать этот интерфейс API необходимо одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).  Конкретные разрешения зависит от контекста.
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -38,7 +39,7 @@ GET /users
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -58,8 +59,7 @@ GET https://graph.microsoft.com/v1.0/users
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ``` http
 HTTP/1.1 200 OK

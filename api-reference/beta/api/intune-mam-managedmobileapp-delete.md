@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта managedMobileApp
 description: Удаляет объект managedMobileApp.
-ms.openlocfilehash: 95c8bcf5704cce00ed5b256dd5ab4993d4af76d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea2efb72282ad60e09e3f33370ea6edf0036961a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075344"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358949"
 ---
 # <a name="delete-managedmobileapp"></a>Удаление объекта managedMobileApp
 
@@ -39,7 +40,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -57,8 +58,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtect
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

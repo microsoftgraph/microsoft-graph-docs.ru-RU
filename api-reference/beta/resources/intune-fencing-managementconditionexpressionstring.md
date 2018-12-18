@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managementConditionExpressionString
 description: Строковое выражение условия управления является представлением строковое выражение условия управления.
-ms.openlocfilehash: 456df27900aa10ead7e2bc090e5e06e0bcd7754f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eabcc730e86f74e2afc7c93874d47e787579c899
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081783"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361042"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>Тип ресурса managementConditionExpressionString
 
@@ -21,7 +22,7 @@ ms.locfileid: "27081783"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|value|String|Управление условие оператора выражения строковое значение.|
+|value|Строка|Управление условие оператора выражения строковое значение.|
 
 ## <a name="relationships"></a>Связи
 Нет

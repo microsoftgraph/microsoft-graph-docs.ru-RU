@@ -1,12 +1,13 @@
 ---
 title: Обновление домена
 description: Обновление свойств объекта домена.
-ms.openlocfilehash: cdd64f58ad25841d98f9a42deda1de339c955af5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d1ba59d345f172f1485dda628585fe8de549ee1d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025455"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356429"
 ---
 # <a name="update-domain"></a>Обновление домена
 

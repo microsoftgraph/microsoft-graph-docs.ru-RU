@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта macOSDeviceFeaturesConfiguration
 description: Удаляет объект macOSDeviceFeaturesConfiguration.
-ms.openlocfilehash: 31f1cbbefa46c5d4ad6d10ea0c2ba061f2393584
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d73784755b859233803f6c5c9a6061a192402503
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027361"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361350"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>Удаление объекта macOSDeviceFeaturesConfiguration
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

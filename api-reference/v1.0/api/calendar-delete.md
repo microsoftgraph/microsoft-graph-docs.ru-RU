@@ -1,12 +1,13 @@
 ---
 title: Удаление календаря
 description: Удаление календаря, отличного от календаря по умолчанию.
-ms.openlocfilehash: ea020f5e8d10414fffceb0e44fd6e6f39ada294e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2285287911fcca961304c8b46d3508db554f95a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025152"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359243"
 ---
 # <a name="delete-calendar"></a>Удаление календаря
 

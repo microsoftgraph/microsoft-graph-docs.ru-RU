@@ -1,12 +1,13 @@
 ---
 title: Список элементов
 description: Получение списка пользователей, которым назначена роль каталога.  Роли каталогов можно назначать только пользователям.
-ms.openlocfilehash: 52ba5ccf1bc7bbd502c53a659978b12faf129f9c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 4fdbb5fd940e9fa20adb9f2a3d3dd1c7c035dbf7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024947"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359887"
 ---
 # <a name="list-members"></a>Список элементов
 

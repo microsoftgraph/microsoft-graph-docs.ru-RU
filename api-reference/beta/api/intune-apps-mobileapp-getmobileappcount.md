@@ -1,12 +1,13 @@
 ---
 title: функция getMobileAppCount
 description: Н/Д
-ms.openlocfilehash: 6dc6d290c25968fce6f8486fb6a3a28c39ea34c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 35ff8211fee31938551cc8eb2fce72c79ce39bc9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081874"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358865"
 ---
 # <a name="getmobileappcount-function"></a>функция getMobileAppCount
 
@@ -15,7 +16,7 @@ ms.locfileid: "27081874"
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Н/Д
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -46,7 +47,7 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|status|String|Н/Д|
+|status|Строка|Н/Д|
 
 
 
@@ -61,8 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/getMobileApp
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedAppOperation
 description: Представляет операцию, примененную к регистрации приложения.
-ms.openlocfilehash: 267adafc5a74ad447dfb3468cf9238e1c4642e5f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ab12d7e8d7014b1f7c1ea4d6e6dc8e8a81d804d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074883"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356912"
 ---
 # <a name="managedappoperation-resource-type"></a>Тип ресурса managedAppOperation
 
@@ -30,8 +31,8 @@ ms.locfileid: "27074883"
 |displayName|String|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
 |state|String|Текущее состояние операции|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет

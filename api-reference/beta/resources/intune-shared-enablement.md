@@ -1,12 +1,13 @@
 ---
 title: Включение тип перечисления
 description: 'Значения, используемые для указания состояния устройства. '
-ms.openlocfilehash: 5e72df98d33a7d3502dae4bc369781b69bc6aeb0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5b1d494fd116eab437b4654d396b029e1384a817
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356891"
 ---
 # <a name="enablement-enum-type"></a>Включение тип перечисления
 
@@ -19,7 +20,7 @@ ms.locfileid: "27078437"
 Обратите внимание, что существует разница между отключена и не настроена.
 
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Значение по умолчанию устройства, без цели.|
 |enabled|1|Включение параметра на устройстве.|

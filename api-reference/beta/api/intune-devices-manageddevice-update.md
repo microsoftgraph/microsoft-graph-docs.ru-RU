@@ -1,12 +1,13 @@
 ---
 title: Обновление managedDevice
 description: Обновление свойств объекта managedDevice.
-ms.openlocfilehash: fa831967b7c091e8f698de4acef70cfec7119435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f608f13f7580e76d1e1934d5aea788a2ce6738f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077484"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357829"
 ---
 # <a name="update-manageddevice"></a>Обновление managedDevice
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -111,11 +112,11 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
  Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) коллекции|Указывает последний вход в систему пользователей устройства|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Отчеты о DateTime параметр preferMdmOverGroupPolicy имеет значение.  Если задано, параметры Intune MDM переопределяет параметры групповой политики в случае конфликта. Только для чтения.|
-|autopilotEnrolled|Логический|Отчеты при регистрации управляемой устройство через автопилот.|
-|requireUserEnrollmentApproval|Логический|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя.|
+|autopilotEnrolled|Boolean.|Отчеты при регистрации управляемой устройство через автопилот.|
+|requireUserEnrollmentApproval|Boolean.|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя.|
 |managementCertificateExpirationDate|DateTimeOffset|Дата окончания срока действия сертификата управления устройства отчетов|
-|iccid|String|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки.|
-|UDID|String|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств.|
+|iccid|String.|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки.|
+|UDID|String.|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств.|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тег области для этого устройства.|
 |windowsActiveMalwareCount|Int32|Число активных вредоносных программ для этого устройства windows|
 |windowsRemediatedMalwareCount|Int32|Число проверка вредоносных программ для этого устройства windows|
@@ -301,8 +302,7 @@ Content-length: 7114
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

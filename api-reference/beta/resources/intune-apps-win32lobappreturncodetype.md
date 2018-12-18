@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления win32LobAppReturnCodeType
 description: Указывает тип кода возврата.
-ms.openlocfilehash: 37b7fdff0b2801fa440e8a95e2b31f5376c484d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31023cb2d8f5a0f645f31890e56ab9a55641bbf6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077441"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357955"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>Тип перечисления win32LobAppReturnCodeType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077441"
 
 Указывает тип кода возврата.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |failed|0|Не удалось.|
 |success|1|Success.|

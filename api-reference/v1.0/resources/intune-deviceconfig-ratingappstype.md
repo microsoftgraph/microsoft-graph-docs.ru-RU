@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления ratingAppsType
 description: Оценка как и мультимедийного контента приложения
-ms.openlocfilehash: 3a880e1d871f76c4cc92e9ca81863f51d9540cde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0340b9e1a188df6fd7fea0972ba4db8da2060e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025387"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360741"
 ---
 # <a name="ratingappstype-enum-type"></a>Тип перечисления ratingAppsType
 
@@ -14,7 +15,7 @@ ms.locfileid: "27025387"
 
 Оценка как и мультимедийного контента приложения
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешать все содержимое приложения|
 |allBlocked|1|Не разрешать контента приложения|

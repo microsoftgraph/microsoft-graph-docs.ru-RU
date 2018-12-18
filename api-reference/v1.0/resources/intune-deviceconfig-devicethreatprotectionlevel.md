@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления deviceThreatProtectionLevel
 description: Уровни защиты threat устройства для API защиты от угроз устройства.
-ms.openlocfilehash: 9b6a5066c26dcfe5ee2922bc736cf0292b1d3055
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 755fd861196839ec261dd18f458b88aa97cf0191
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027875"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356009"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>Тип перечисления deviceThreatProtectionLevel
 
@@ -14,7 +15,7 @@ ms.locfileid: "27027875"
 
 Уровни защиты threat устройства для API защиты от угроз устройства.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |недоступен|0|Значение по умолчанию. Не используйте.|
 |защищенная|1|Требование уровень угрозы устройств: защищены. Это самый безопасный уровень и представляет на устройстве не найдены угроз.|

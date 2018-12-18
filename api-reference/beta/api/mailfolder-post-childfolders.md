@@ -1,12 +1,13 @@
 ---
 title: Создание mailFolder
 description: Используйте этот интерфейс API для создания нового дочернего mailFolder.
-ms.openlocfilehash: 44d9e9ebfd721a68734376342500ad1e2a182cda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e893f28878b14fa76d8cda16a5b37f795ed235f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079199"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357276"
 ---
 # <a name="create-mailfolder"></a>Создание mailFolder
 
@@ -39,8 +40,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Заголовок | Значение |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Обязательный атрибут. |
-| Content-Type | `application/json`. Обязательный атрибут. |
+| Авторизация | `Bearer {token}`. Обязательный. |
+| Content-Type | `application/json`. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

@@ -1,12 +1,13 @@
 ---
 title: Обновление educationSynchronizationProfile
 description: Обновляет свойства существующего профиля синхронизации данных school в клиентов.
-ms.openlocfilehash: 9f670a04dfb3c5465683883eeaf4eeed543e830a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 17bf46eb4ebd6783f7bafba828ff1bcb7ad5ac48
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077868"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361469"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Обновление educationSynchronizationProfile
 
@@ -17,7 +18,7 @@ ms.locfileid: "27077868"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Permissions |
+| Тип разрешения | Разрешения |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт|Не поддерживается.|

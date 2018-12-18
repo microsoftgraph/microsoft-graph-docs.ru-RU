@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidForWorkCrossProfileDataSharingType
 description: Android работы для кросс-совместное использование типа данных профилей.
-ms.openlocfilehash: 3fed0b50f77758292cbc7d6dd3d4e465b70f2c00
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2ed9206a59b03cf6391d81d236135fc878a93f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082414"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360734"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>Тип перечисления androidForWorkCrossProfileDataSharingType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082414"
 
 Android работы для кросс-совместное использование типа данных профилей.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение по умолчанию устройства, без цели.|
 |preventAny|1|Запретить все общего доступа.|

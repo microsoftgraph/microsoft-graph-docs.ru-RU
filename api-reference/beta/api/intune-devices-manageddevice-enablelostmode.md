@@ -1,12 +1,13 @@
 ---
 title: Действие enableLostMode
 description: Включение режима потеряны
-ms.openlocfilehash: de49cffccf3f87e91644a33128dfdfaa74b3f233
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b75df200a57f5861515f1e5d3c867df8b3f08276
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078679"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359481"
 ---
 # <a name="enablelostmode-action"></a>Действие enableLostMode
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,7 +53,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |:---|:---|:---|
 |message|String|Н/Д|
 |phoneNumber|String|Н/Д|
-|нижний колонтитул|String|Н/Д|
+|нижний колонтитул|Строка|Н/Д|
 
 
 
@@ -76,8 +77,7 @@ Content-length: 103
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

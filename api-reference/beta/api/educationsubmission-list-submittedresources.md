@@ -1,12 +1,13 @@
 ---
 title: Список submittedResources
 description: Список ресурсов, поданных официально для ранжирования. Учебы, ответственных за подачи не может изменить отправляемого списка без повторной отправки назначения. Это является оболочкой реальных ресурсов и может содержать указатель фактический назначения ресурса, если этот ресурс, скопированный из назначения.
-ms.openlocfilehash: dba648d8a73ad2f2f91da7d7414214a62580cc99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 9689d9687127006f38884107d0b015e571fd6ab0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079769"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356142"
 ---
 # <a name="list-submittedresources"></a>Список submittedResources
 

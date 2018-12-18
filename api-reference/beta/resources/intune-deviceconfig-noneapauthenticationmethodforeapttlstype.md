@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления nonEapAuthenticationMethodForEapTtlsType
 description: Методы EAP без проверки подлинности.
-ms.openlocfilehash: a8321f433be88ea96a258012f0ae1eb9b3da319b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 57d24189da1a6bc5f552ad32d2be9c4557539dab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357269"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>Тип перечисления nonEapAuthenticationMethodForEapTtlsType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077992"
 
 Методы EAP без проверки подлинности.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |незашифрованными|0|Незашифрованный пароль (РАР).|
 |challengeHandshakeAuthenticationProtocol|1|Проверка подлинности протокола пароля (CHAP).|

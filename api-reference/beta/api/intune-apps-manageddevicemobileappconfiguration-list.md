@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов managedDeviceMobileAppConfiguration
 description: Перечисление свойств и связей объектов managedDeviceMobileAppConfiguration.
-ms.openlocfilehash: 47d6645719d76597f77628e16bfb11300c44c0fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e82c250fb0fb3406d5bb97be4a6cb1711a789adf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075218"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358991"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>Перечисление объектов managedDeviceMobileAppConfiguration
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

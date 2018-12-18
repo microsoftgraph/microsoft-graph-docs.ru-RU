@@ -1,12 +1,13 @@
 ---
 title: 'пользователь: translateExchangeIds'
 description: Переведите идентификаторы, связанные с Outlook ресурсов форматов.
-ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: dkershaw10
+ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184492"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360580"
 ---
 # <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
@@ -22,7 +23,7 @@ ms.locfileid: "27184492"
 |:----------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | User.ReadBasic, User.Read, User.ReadWrite |
-| Для приложений | User.Read.All, User.ReadWrite.All |
+| Application | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +58,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | restId | По умолчанию идентификатор формата Microsoft Graph. |
 | restImmutableEntryId | Постоянные идентификатор формата, используемого в Microsoft Graph. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и семейства [convertIdResult](../resources/convertidresult.md) в теле ответа.
 
@@ -87,7 +88,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа
 <!-- {

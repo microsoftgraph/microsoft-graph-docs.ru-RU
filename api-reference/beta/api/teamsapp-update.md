@@ -1,12 +1,13 @@
 ---
-title: Permissions
+title: Разрешения
 description: 'Обновление приложения ранее опубликованы в каталоге приложений группами Майкрософт. '
-ms.openlocfilehash: f63b75fe3373ad89148b2901b828dcc0ae1f95a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 60fb80ff6400e7c1d78898b28e3b9f591c01290e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081687"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359502"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Обновление приложений, опубликованной в каталоге приложений организации
 

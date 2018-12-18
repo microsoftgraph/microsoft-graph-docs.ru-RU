@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsMinimumOperatingSystem
 description: Минимальная версия операционной системы, необходимая мобильному приложению для Windows.
-ms.openlocfilehash: 33c02e04f3f34361ce6d2fbbb17bf23e14b9d9d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2ed80e724c5f53510db5366e82d2e9dea2d90707
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080826"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358438"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Тип ресурса windowsMinimumOperatingSystem
 
@@ -21,10 +22,10 @@ ms.locfileid: "27080826"
 |v8_0|Boolean|Windows 8.0 или более поздней версии.|
 |v8_1|Boolean|Windows 8.1 или более поздней версии.|
 |v10_0|Boolean|Windows 10.0 или более поздней версии.|
-|v10_1607|Логический|Windows 10 1607 или более поздней версии.|
-|v10_1703|Логический|Windows 10 1703 или более поздней версии.|
-|v10_1709|Логический|Windows 10 1709 или более поздней версии.|
-|v10_1803|Логический|Windows 10 1803 или более поздней версии.|
+|v10_1607|Boolean.|Windows 10 1607 или более поздней версии.|
+|v10_1703|Boolean.|Windows 10 1703 или более поздней версии.|
+|v10_1709|Boolean.|Windows 10 1709 или более поздней версии.|
+|v10_1803|Boolean.|Windows 10 1803 или более поздней версии.|
 
 ## <a name="relationships"></a>Связи
 Нет

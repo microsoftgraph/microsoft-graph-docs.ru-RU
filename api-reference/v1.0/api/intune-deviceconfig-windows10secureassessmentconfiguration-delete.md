@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта windows10SecureAssessmentConfiguration
 description: Удаляет экземпляр windows10SecureAssessmentConfiguration.
-ms.openlocfilehash: 9de2b46e5a89025fbd45aa0a91ae7487b885a9f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 69517aba33e89b97532e4b3683b129cbdb1cab72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025775"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357766"
 ---
 # <a name="delete-windows10secureassessmentconfiguration"></a>Удаление объекта windows10SecureAssessmentConfiguration
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

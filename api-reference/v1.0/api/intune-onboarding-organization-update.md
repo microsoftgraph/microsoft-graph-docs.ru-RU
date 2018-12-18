@@ -1,12 +1,13 @@
 ---
 title: Обновление организации
 description: Обновление свойств объекта organization.
-ms.openlocfilehash: 50167db2c2078421894fa86d7b24c0b93351616c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d26d11bb2f67b933ba5d78e444ae8e52d32339ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027553"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358900"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -34,7 +35,7 @@ PATCH /organization/{organizationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,7 +46,7 @@ PATCH /organization/{organizationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта.|
+|id|Строка|GUID объекта.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 
 
@@ -68,8 +69,7 @@ Content-length: 102
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

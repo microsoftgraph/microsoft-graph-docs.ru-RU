@@ -1,12 +1,13 @@
 ---
 title: Get deviceCompliancePolicyAssignment
 description: Чтение свойств и связей объекта deviceCompliancePolicyAssignment.
-ms.openlocfilehash: 901e3b1fb41e95f9a19322eb05d7e277a3a2a58a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51b85a2d9f25b22da47f3caf7aae6b55042f29e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024356"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356996"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>Get deviceCompliancePolicyAssignment
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

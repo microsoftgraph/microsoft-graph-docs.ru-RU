@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса teamsApp
 description: Приложение в каталоге приложений группами Майкрософт.
-ms.openlocfilehash: f8a96355c572287fc8bacc48f9a72e5da8d0f380
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 207974800e44e0db29b8c42f260a1ac16a18902f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359586"
 ---
 # <a name="teamsapp-resource-type"></a>Тип ресурса teamsApp
 
@@ -36,7 +37,7 @@ ms.locfileid: "27026929"
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod значения
 
-|Элемент|Значение|Description|
+|Member|Значение|Описание|
 |:---|:---|:---|
 |хранилище|0| Приложение доступно для всех клиентов через хранилище приложений группами Майкрософт.|
 |organization;|1|Приложение доступно только при этом клиента.|
@@ -44,7 +45,7 @@ ms.locfileid: "27026929"
 
 ## <a name="relationships"></a>Связи
 
-| Связь | Тип   | Description |
+| Связь | Тип   | Описание |
 |:---------------|:--------|:----------|
 |appDefinitions|[teamsAppDefinition](teamsappdefinition.md) коллекции| Подробные сведения для каждой версии приложения. |
 

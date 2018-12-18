@@ -1,12 +1,13 @@
 ---
 title: Обзор API Microsoft Teams
 description: 'Microsoft Teams — это единый центр для работы в группах и интеллектуального обмена данными. '
-ms.openlocfilehash: 1f210bf529769c96f22c2c7180d3736cdc9ed776
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 2297f92cb44c8a12512e4e06ffc2392d75626952
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358858"
 ---
 # <a name="microsoft-teams-api-overview"></a>Обзор API Microsoft Teams
 

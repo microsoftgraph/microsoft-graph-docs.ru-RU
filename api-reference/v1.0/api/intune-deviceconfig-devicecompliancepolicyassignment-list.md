@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов deviceCompliancePolicyAssignment
 description: Список свойств и связей объектов deviceCompliancePolicyAssignment.
-ms.openlocfilehash: daa23abeef6d55f59c9bc8b51cd44554b221e67f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e1979293e28eb71f142f4631b636ae2f44994e80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027768"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359096"
 ---
 # <a name="list-devicecompliancepolicyassignments"></a>Перечисление объектов deviceCompliancePolicyAssignment
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта androidForWorkEnrollmentProfile
 description: Обновление свойств объекта androidForWorkEnrollmentProfile.
-ms.openlocfilehash: f0af5db7115de09657d08d093836527e3198cad0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ffbcfa51d94816b9a65a90e59cfc4c3a654006d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080769"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356016"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>Обновление объекта androidForWorkEnrollmentProfile
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -90,8 +91,7 @@ Content-length: 490
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

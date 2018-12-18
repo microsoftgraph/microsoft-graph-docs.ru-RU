@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса binaryManagementConditionExpression
 description: Выражение условия управления, который вычисляется с помощью операции двоичного файла.
-ms.openlocfilehash: e675a5696d545ba48fc676d1716ed49c7c0b7c65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f271be2527427daaa04436899552abb4d21475e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081782"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357521"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>Тип ресурса binaryManagementConditionExpression
 
@@ -19,7 +20,7 @@ ms.locfileid: "27081782"
 Наследуется от [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |operator|[binaryManagementConditionExpressionOperatorType](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|Оператор, используемый в оценке двоичной операции. Возможные значения: `or`, `and`.|
 |firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Первый операнд двоичной операции.|

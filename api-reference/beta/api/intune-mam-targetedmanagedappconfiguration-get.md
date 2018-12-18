@@ -1,12 +1,13 @@
 ---
 title: Получение targetedManagedAppConfiguration
 description: Чтение свойств и связей объекта targetedManagedAppConfiguration.
-ms.openlocfilehash: c61a80b1775d6fd01854e4b931432781618151d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2bc977dc2f586e7b727a6ab4885bb62eaec36fdb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077163"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358634"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>Получение targetedManagedAppConfiguration
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/targetedManagedAppConfi
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

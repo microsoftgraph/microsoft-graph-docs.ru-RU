@@ -1,12 +1,13 @@
 ---
 title: Тип ресурсов rangeView
 description: Объект rangeView представляет набор видимых ячеек в родительском диапазоне.
-ms.openlocfilehash: 84ff9d315a6bfa8c4b03fad1b8f05670cb2b155c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: a5157d3917f9f4ed51437d9ae9854194b85ae4d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081615"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359488"
 ---
 # <a name="rangeview-resource-type"></a>Тип ресурсов rangeView
 

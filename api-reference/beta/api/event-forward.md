@@ -1,12 +1,13 @@
 ---
 title: 'события: вперед'
 description: 'Это действие позволяет Организатор или участник собрания события для пересылки '
-ms.openlocfilehash: 09a98f82e72eef7b223dfccb1f4433c3206f0f7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 77f2c99b1adc7fcece353120e4692b37fd65a78f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074687"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355995"
 ---
 # <a name="event-forward"></a>события: вперед
 
@@ -55,7 +56,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Comment|String|Добавляемый комментарий. Может быть пустой строкой.|
 |ToRecipients|Коллекция [recipient](../resources/recipient.md)|Список получателей пересылать события.|

@@ -1,12 +1,13 @@
 ---
 title: Список androidManagedStoreAppConfigurationSchemas
 description: Свойства списка и связей объектов androidManagedStoreAppConfigurationSchema.
-ms.openlocfilehash: 6e83dbc951410fcb9142b069c6c8d9ee0c20c0a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b13d49d1fa350d21001d9075f28eedc19191086
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076564"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358676"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>Список androidManagedStoreAppConfigurationSchemas
 
@@ -36,7 +37,7 @@ GET /deviceManagement/androidManagedStoreAppConfigurationSchemas
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConf
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

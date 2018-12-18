@@ -1,12 +1,13 @@
 ---
 title: Создание приложения
 description: Используйте этот интерфейс API для создания нового приложения.
-ms.openlocfilehash: d192f543d123c29cf2686c203ffc8c7c69b1bcc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 9530c94598eeb2413af67782b50bbf70f415e2a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076323"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361532"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -22,7 +23,7 @@ ms.locfileid: "27076323"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Application.ReadWrite.OwnedBy Application.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -61,8 +62,7 @@ Content-length: 67
 ```
 В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

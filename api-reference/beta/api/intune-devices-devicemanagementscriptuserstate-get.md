@@ -1,12 +1,13 @@
 ---
 title: Получение deviceManagementScriptUserState
 description: Чтение свойства и связи объекта deviceManagementScriptUserState.
-ms.openlocfilehash: d5175a6dc2b5562ac142d505a9a9025c94143bc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a1dbe0bf839c52dc8b1d8c4834188154a0bd1095
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081758"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356779"
 ---
 # <a name="get-devicemanagementscriptuserstate"></a>Получение deviceManagementScriptUserState
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{d
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса webApp
 description: Содержит свойства, в том числе унаследованные, для веб-приложений.
-ms.openlocfilehash: 0fe8ee4a904b14da14f13c85d6027b64b4fd45e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dfdf64f8fd6e6efa64c1ad6b5baa727c518461df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078792"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360356"
 ---
 # <a name="webapp-resource-type"></a>Тип ресурса webApp
 
@@ -30,7 +31,7 @@ ms.locfileid: "27078792"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

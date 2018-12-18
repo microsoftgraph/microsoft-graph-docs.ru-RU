@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Н/Д
-ms.openlocfilehash: 6d3732652a161c145147d0f7d297e65a01f36dfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 268d05b8bf20fddc28e331d5bde73286bb13fc6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079680"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356877"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentWindowsHelloForBusinessConfiguration
 

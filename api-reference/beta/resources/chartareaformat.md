@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса ChartAreaFormat
 description: Инкапсулирует свойства формата для всей области диаграммы.
-ms.openlocfilehash: 1629faa007fa239e93c2e942af13570d4b46c488
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 36e303685713dd103d24ec6949eb8a2816d9ef8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077044"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356968"
 ---
 # <a name="chartareaformat-resource-type"></a>Тип ресурса ChartAreaFormat
 

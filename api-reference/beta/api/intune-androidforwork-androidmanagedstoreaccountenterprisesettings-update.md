@@ -1,12 +1,13 @@
 ---
 title: Обновление androidManagedStoreAccountEnterpriseSettings
 description: Обновление свойства объекта androidManagedStoreAccountEnterpriseSettings.
-ms.openlocfilehash: 383c9225076e9e68e9b34d89b7fe904ccf747224
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee5fda9e9c6ce92cdf44ec878c2c5835ceed2c49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077921"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356030"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>Обновление androidManagedStoreAccountEnterpriseSettings
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Android хранения идентификатора параметров учетной записи предприятия|
+|id|Строка|Android хранения идентификатора параметров учетной записи предприятия|
 |bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Привязка состояния клиента с помощью API EMM Google. Возможные значения: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Время завершения последней синхронизации приложения|
 |lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Результат последней синхронизации приложения. Возможные значения: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
@@ -56,7 +57,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения для Android Корпоративные параметры|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Указывает пользователей, которые можно зарегистрировать устройств в управление устройствами Android предприятия. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|deviceOwnerManagementEnabled|Логический|Указывает, если эта учетная запись flighting для Android владелец управление устройствами с CloudDPC.|
+|deviceOwnerManagementEnabled|Boolean.|Указывает, если эта учетная запись flighting для Android владелец управление устройствами с CloudDPC.|
 
 
 
@@ -87,8 +88,7 @@ Content-length: 458
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidForWorkRequiredPasswordType
 description: Android для работы требуется тип пароль.
-ms.openlocfilehash: 8866ac49126f39204e0323082bf80e27f5f59962
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cefb41dea7a92f1b1a640d8c9bf701a321ad9ead
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077432"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357283"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>Тип перечисления androidForWorkRequiredPasswordType
 
@@ -16,11 +17,11 @@ ms.locfileid: "27077432"
 
 Android для работы требуется тип пароль.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение по умолчанию устройства, без цели.|
 |lowSecurityBiometric|1|Биометрия низкой безопасности на основе пароль.|
-|Обязательный|2|Обязательный атрибут.|
+|Обязательный|2|Обязательный.|
 |atLeastNumeric|3|Требуется по крайней мере цифровой пароль.|
 |numericComplex|4|Числовой сложный пароль.|
 |atLeastAlphabetic|5|Требуется по крайней мере к буквам и цифрам пароль.|

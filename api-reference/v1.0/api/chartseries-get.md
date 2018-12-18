@@ -1,12 +1,13 @@
 ---
 title: Получение объекта ChartSeries
 description: Получение свойств и связей объекта chartseries.
-ms.openlocfilehash: 718d48638a4a89075075e836b90339d92af76756
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ea89b115b2f812d4f0aaeb786096e766d97a5b1d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027373"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358179"
 ---
 # <a name="get-chartseries"></a>Получение объекта ChartSeries
 
@@ -51,8 +52,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

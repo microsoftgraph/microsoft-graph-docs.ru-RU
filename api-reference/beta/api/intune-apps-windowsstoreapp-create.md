@@ -1,12 +1,13 @@
 ---
 title: Создание windowsStoreApp
 description: Создание нового объекта windowsStoreApp.
-ms.openlocfilehash: 97b791e89752cc059f1adf77691b0a50edee4dc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0640975c41aa8ad12abf481ae37c6770976f321a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080093"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356639"
 ---
 # <a name="create-windowsstoreapp"></a>Создание windowsStoreApp
 
@@ -15,7 +16,7 @@ ms.locfileid: "27080093"
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Создание нового объекта [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -101,8 +102,7 @@ Content-length: 720
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

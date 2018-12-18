@@ -1,12 +1,13 @@
 ---
 title: Удаление importedWindowsAutopilotDeviceIdentity
 description: Удаляет importedWindowsAutopilotDeviceIdentity.
-ms.openlocfilehash: 40b50cdd48e05e57114de9308db07cd8f48a084a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 33f69977f8cf3f78fb23a4ca287c0dd053ac320e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361378"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>Удаление importedWindowsAutopilotDeviceIdentity
 
@@ -35,7 +36,7 @@ DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{imported
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -53,8 +54,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilo
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

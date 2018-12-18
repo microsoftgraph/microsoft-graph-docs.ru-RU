@@ -1,12 +1,13 @@
 ---
 title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
-ms.openlocfilehash: 4317439af246701f9a1de214198e74933ef55632
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+author: jthake-msft
+ms.openlocfilehash: 4e8b70d5af01992e566c2d777db8f8a3c359f838
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283733"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358564"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -506,7 +507,7 @@ ms.locfileid: "27283733"
 | Дополнение        | бета       | Добавлены следующие типы ресурсов: <br/> [cloudAppSecurityState](/graph/api/resources/cloudappsecuritystate?view=graph-rest-beta) <br/> [fileHash](/graph/api/resources/filehash?view=graph-rest-beta) <br/> [registryKeyState](/graph/api/resources/registrykeystate?view=graph-rest-beta) |
 |Удаление|бета| Удалены следующие типы ресурсов: <br/> **activityGroupState**  <br/> **applicationSecurityState** |
 | Дополнение        | бета       | Добавлены следующие перечисления: <br/> [alertSeverity](/graph/api/resources/alertseverityenumtype?view=graph-rest-beta) <br/> [connectionDirection](/graph/api/resources/connectiondirectionenumtype?view=graph-rest-beta) <br/> [connectionStatus](/graph/api/resources/connectionstatusenumtype?view=graph-rest-beta) <br/> [emailRole](/graph/api/resources/emailroleenumtype?view=graph-rest-beta) <br/> [fileHashType](/graph/api/resources/filehashtypeenumtype?view=graph-rest-beta) <br/> [registryHive](/graph/api/resources/registryhiveenumtype?view=graph-rest-beta)  <br/> [registryOperation](/graph/api/resources/registryoperationenumtype?view=graph-rest-beta) <br/> [registryValueType](/graph/api/resources/registryvaluetypeenumtype?view=graph-rest-beta)|
-|Удаление|Бета| Удалены следующие типы перечисления: <br/> **alertType** <br/> **applicationPermissionsRequired** |
+|Удаление|бета| Удалены следующие типы перечисления: <br/> **alertType** <br/> **applicationPermissionsRequired** |
 | Дополнение        | бета       | Добавлено свойство **fileHash** для объекта [fileSecurityState](/graph/api/resources/filesecuritystate?view=graph-rest-beta ).|
 |Удаление|бета| Удалены свойства **authenticodeHash256** и **sha256** из объекта [fileSecurityState](/graph/api/resources/filesecuritystate?view=graph-rest-beta). |
 | Дополнение | бета | Добавлено свойство **os** для объекта [hostSecurityState](/graph/api/resources/hostsecuritystate?view=graph-rest-beta).|
@@ -724,7 +725,7 @@ ms.locfileid: "27283733"
 |Дополнение|Бета-версия|Добавлено действие [setDeviceName](/graph/api/intune-devices-manageddevice-setdevicename?view=graph-rest-beta)<br/>для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 |Удаление|Бета|Удалены следующие объекты:<br/>**depEnrollmentProfile**;<br/>**enrollmentProfile**;<br/>**importedAppleDeviceIdentity**<br/>**importedAppleDeviceIdentityResult**.<br/>|
 |Удаление|Бета-версия|Удалены следующие сложные типы:<br/>**managementCertificateWithThumbprint**.<br/>|
-|Удаление|Бета|Удалены следующие типы перечисления:<br/>**depTokenType**;<br/>**discoverySource**;<br/>**iTunesPairingMode**.<br/>|
+|Удаление|бета|Удалены следующие типы перечисления:<br/>**depTokenType**;<br/>**discoverySource**;<br/>**iTunesPairingMode**.<br/>|
 |Удаление|Бета-версия|Удалено действие importAppleDeviceIdentityList для коллекции [importedAppleDeviceIdentity](/graph/api/resources/intune-corpenrollment-importedappledeviceidentity?view=graph-rest-beta). |
 |Удаление|Бета-версия|Удалено действие [updateDeviceProfileAssignment](/graph/api/intune-corpenrollment-enrollmentprofile-updatedeviceprofileassignment?view=graph-rest-beta) для объекта [enrollmentProfile](/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta). |
 |Удаление|Бета-версия|Удалено действие setDefaultProfile для объекта [enrollmentProfile](/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta). |
@@ -816,7 +817,7 @@ ms.locfileid: "27283733"
 |Добавление|Бета|Добавлены новые сложные типы:<br/>[managedDeviceModelsAndManufacturers](/graph/api/resources/intune-devices-manageddevicemodelsandmanufacturers?view=graph-rest-beta)<br/>[managedDeviceReportedApp](/graph/api/resources/intune-devices-manageddevicereportedapp?view=graph-rest-beta)<br/>[windowsEnrollmentStatusScreenSettings](/graph/api/resources/intune-enrollment-windowsenrollmentstatusscreensettings?view=graph-rest-beta)<br/>|
 |Добавление|Бета|Добавлены новые типы перечисления:<br/>[androidWorkProfileCrossProfileDataSharingType](/graph/api/resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype?view=graph-rest-beta)<br/>[androidWorkProfileDefaultAppPermissionPolicyType](/graph/api/resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype?view=graph-rest-beta)<br/>[androidWorkProfileRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype?view=graph-rest-beta)<br/>[androidWorkProfileVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconnectiontype?view=graph-rest-beta)<br/>[bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta)<br/>[localSecurityOptionsInformationShownOnLockScreenType](/graph/api/resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype?view=graph-rest-beta)<br/>[managedAppRemediationAction](/graph/api/resources/intune-mam-managedappremediationaction?view=graph-rest-beta)<br/>[managedDeviceOwnerType](/graph/api/resources/intune-devices-manageddeviceownertype?view=graph-rest-beta)<br/>[restrictedAppsState](/graph/api/resources/intune-deviceconfig-restrictedappsstate?view=graph-rest-beta)<br/>[windows10VpnProfileTarget](/graph/api/resources/intune-deviceconfig-windows10vpnprofiletarget?view=graph-rest-beta)<br/>|
 |Добавление|Бета|Добавлено действие [playLostModeSound](/graph/api/intune-devices-manageddevice-playlostmodesound?view=graph-rest-beta) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
-|Удаление|Бета|Удалены следующие типы перечисления:<br/>**bitLockerRecoveryinformationType**<br/>**windowsUpdateRestartMode**<br/>|
+|Удаление|бета|Удалены следующие типы перечисления:<br/>**bitLockerRecoveryinformationType**<br/>**windowsUpdateRestartMode**<br/>|
 |Добавление|бета|Добавлены свойства **workProfileBlockScreenCapture** и **workProfileBlockCrossProfileCallerId** для объекта [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta).|
 |Добавление|Бета|Добавлены свойства **minimumWipePatchVersion**, **allowedAndroidDeviceManufacturers** и **appActionIfAndroidDeviceManufacturerNotAllowed** для объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta).|
 |Добавление|Бета|Добавлены свойства **minimumWipeSdkVersion**, **minimumWipePatchVersion**, **allowedIosDeviceModels**, **appActionIfIosDeviceModelNotAllowed**, **allowedAndroidDeviceManufacturers** и **appActionIfAndroidDeviceManufacturerNotAllowed** для объекта [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta).|

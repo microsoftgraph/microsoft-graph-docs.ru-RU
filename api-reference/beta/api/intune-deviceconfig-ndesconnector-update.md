@@ -1,12 +1,13 @@
 ---
 title: Обновление ndesConnector
 description: Обновление свойства объекта ndesConnector.
-ms.openlocfilehash: 963d27b89cb8c8731eb466475f65b36257f56b45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 80a518a403ce2354ec2f0a633520baf98ae2c7c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076770"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358305"
 ---
 # <a name="update-ndesconnector"></a>Обновление ndesConnector
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,10 +48,10 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ NDES соединителя.|
+|id|Строка|Ключ NDES соединителя.|
 |lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя Ndes|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние NDES соединителя. Возможные значения: `none`, `active`, `inactive`.|
-|displayName|String|Понятное имя соединителя Ndes.|
+|displayName|Строка|Понятное имя соединителя Ndes.|
 
 
 
@@ -73,8 +74,7 @@ Content-length: 131
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

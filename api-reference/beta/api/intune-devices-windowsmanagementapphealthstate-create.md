@@ -1,12 +1,13 @@
 ---
 title: Создание windowsManagementAppHealthState
 description: Создание нового объекта windowsManagementAppHealthState.
-ms.openlocfilehash: e815a86001e75e2350e0ea1b5bb73a8dfd87f58a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5fec23dec7510c0b7b1a53b0be7d2dfe507959f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077295"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359082"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Создание windowsManagementAppHealthState
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,12 +48,12 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
+|id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояния работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Управление приложения установленной версии Windows.|
+|installedVersion|String.|Управление приложения установленной версии Windows.|
 |lastCheckInDateTime|DateTimeOffset|Приложение управления Windows последний раз.|
 |deviceName|String|Имя устройства, на какие Windows установлено приложение управления.|
-|deviceOSVersion|String|10 версии Windows устройства, на какие Windows установлено приложение управления.|
+|deviceOSVersion|String.|10 версии Windows устройства, на какие Windows установлено приложение управления.|
 
 
 
@@ -78,8 +79,7 @@ Content-length: 300
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

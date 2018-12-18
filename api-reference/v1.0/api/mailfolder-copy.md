@@ -1,12 +1,13 @@
 ---
 title: 'mailFolder: copy'
 description: Копирование папки почты со всем ее содержимым в другую папку почты.
-ms.openlocfilehash: 8cee2ad91fe40a9e9ef40c3a4662b76e71be1ccd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 44df53219e00479cdc48d057286f1af410e13c77
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024928"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356928"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -34,8 +35,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок | Значение |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Обязательный атрибут. |
-| Content-Type | `application/json`. Обязательный атрибут. |
+| Авторизация | `Bearer {token}`. Обязательный. |
+| Content-Type | `application/json`. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

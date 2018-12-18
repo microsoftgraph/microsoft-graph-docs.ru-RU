@@ -1,12 +1,13 @@
 ---
 title: 'user: reminderView'
 description: 'Возвращает список напоминаний календаря за указанный период времени. '
-ms.openlocfilehash: d1e84620102400bebb9da7b7d14f77ae9e560dc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2e0b0e8bb76ee50a9af7246739e4ab8da973d3a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025317"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356793"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 Возвращает список напоминаний календаря за указанный период времени. 
@@ -61,8 +62,7 @@ GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T1
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

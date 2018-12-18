@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidForWorkBindStatus
 description: Привязка состояния клиента с помощью API EMM Google
-ms.openlocfilehash: 4e2764dcab584104de64c360b5502a8f31e92a78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 56ec9c1d501d54a10f1fc8880086a56061fa865b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075427"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360888"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>Тип перечисления androidForWorkBindStatus
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075427"
 
 Привязка состояния клиента с помощью API EMM Google
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notBound|0|Н/Д|
 |bound (привязка)|1|Н/Д|

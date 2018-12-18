@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mediaContentRatingIreland
 description: Н/Д
-ms.openlocfilehash: b4348e6f73730d59e6e67b3e102b9ad9caa98add
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68d5e0e9454fadde550988f46c1104733a9de013
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024726"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359474"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>Тип ресурса mediaContentRatingIreland
 

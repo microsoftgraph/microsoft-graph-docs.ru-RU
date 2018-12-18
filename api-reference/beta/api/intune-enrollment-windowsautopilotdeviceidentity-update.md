@@ -1,12 +1,13 @@
 ---
 title: Обновление windowsAutopilotDeviceIdentity
 description: Обновление свойства объекта windowsAutopilotDeviceIdentity.
-ms.openlocfilehash: 1cf603f9d970379fb55eac416ffab092ae94587c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b1ec7e17602becbf70d825711f2e2ea55b278fb5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080485"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356352"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>Обновление windowsAutopilotDeviceIdentity
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -53,15 +54,15 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное описание состояния устройства автопилот Windows. Возможные значения: `none`, `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Профиль задания времени автопилот устройства Windows.|
 |orderIdentifier|Строка|Порядок идентификатор устройства автопилот Windows.|
-|purchaseOrderIdentifier|String|Идентификатор заказа на покупку автопилот устройства Windows.|
+|purchaseOrderIdentifier|String.|Идентификатор заказа на покупку автопилот устройства Windows.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |manufacturer|String|Изготовителей автопилот устройства Windows.|
 |model|String|Имя модели устройства автопилот Windows.|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние регистрации автопилот устройства Windows Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune связаться с даты последнего устройства автопилот Windows.|
-|addressableUserName|String|Имя адресации пользователя.|
-|userPrincipalName|String|Имя участника-пользователя.|
+|addressableUserName|String.|Имя адресации пользователя.|
+|userPrincipalName|Строка|Имя участника-пользователя.|
 
 
 
@@ -94,8 +95,7 @@ Content-length: 686
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
