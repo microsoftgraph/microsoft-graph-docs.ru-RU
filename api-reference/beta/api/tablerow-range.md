@@ -1,12 +1,13 @@
 ---
 title: 'TableRow: Range'
 description: Возвращает объект диапазона, связанный со всей строкой.
-ms.openlocfilehash: 635ec3b29d35be33328481fd48713953f3da8743
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 1fc6b8e97e94c1642873419e0f50ee5ddb4a2a1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354154"
 ---
 # <a name="tablerow-range"></a>TableRow: Range
 
@@ -54,8 +55,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

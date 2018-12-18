@@ -1,12 +1,13 @@
 ---
 title: 'вызов: changeScreenSharingRole'
 description: Запуск и остановка совместного использования экрана в вызове. Этот интерфейс API используется для разрешения приложений для совместного использования экрана содержимое с участниками звонок или собрания.
-ms.openlocfilehash: f0aa69b43813bd248048ad1bd965dfbc4afc012b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 4b4c7e0afa452bef414dd466086463aa16c9d9cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078215"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328366"
 ---
 # <a name="call-changescreensharingrole"></a>вызов: changeScreenSharingRole
 
@@ -21,7 +22,7 @@ ms.locfileid: "27078215"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложения                            | Calls.AccessMedia.All                       |
+| Application                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,9 +39,9 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр      | Тип    |Description|
+| Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|role|String|Возможные значения: «Средство просмотра», «Активного проекта»|
+|role|String.|Возможные значения: «Средство просмотра», «Активного проекта»|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа.

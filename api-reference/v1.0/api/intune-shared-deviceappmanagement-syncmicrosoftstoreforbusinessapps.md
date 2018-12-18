@@ -1,12 +1,13 @@
 ---
 title: Действие syncMicrosoftStoreForBusinessApps
 description: Синхронизирует учетную запись Intune с Microsoft Store для бизнеса
-ms.openlocfilehash: a293c170dea23469b12a8862b8510fe8ce67be41
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b26b379631cf5b28594e3cf247b735d6118e9b40
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026419"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354336"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>Действие syncMicrosoftStoreForBusinessApps
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

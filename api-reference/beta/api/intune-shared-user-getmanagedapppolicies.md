@@ -1,12 +1,13 @@
 ---
 title: Функция getManagedAppPolicies
 description: Получает ограничения для определенного пользователя.
-ms.openlocfilehash: b7942fa0b16c3d10571bbef8013480213a3d9cf6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9b0729e986a7ab3434d2682d157e45f543d558a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077361"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354798"
 ---
 # <a name="getmanagedapppolicies-function"></a>Функция getManagedAppPolicies
 
@@ -41,7 +42,7 @@ GET /users/{usersId}/getManagedAppPolicies
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -65,8 +66,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/getManagedAppPolicies
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ``` http
 HTTP/1.1 200 OK

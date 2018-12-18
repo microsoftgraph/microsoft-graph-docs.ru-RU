@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса contact
 description: Контакт — элемент в Outlook, в котором вы можете упорядочить и хранить сведения о людях и организациях, с которыми поддерживаете связь. Контакты содержатся в папках контактов.
-ms.openlocfilehash: 1f18118855417727a441b25c008cee9a0e826aff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 761fdd3ed6f9c4c9982c1bb7c23bfbff28409ce9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077379"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354189"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 
@@ -83,7 +84,7 @@ ms.locfileid: "27077379"
 |assistantName|String|Имя помощника контакта.|
 |birthday|DateTimeOffset|Дата рождения контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |categories|Коллекция String|Категории, связанные с контактом. Каждой категории соответствует свойству **displayName** [outlookCategory](outlookcategory.md) , определенные для этого пользователя.|
-|changeKey|String|Указывает версию контакта. При каждом изменении контакта также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
+|changeKey|Строка|Указывает версию контакта. При каждом изменении контакта также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |children|Коллекция String|Имена детей контакта.|
 |companyName|String|Название компании контакта.|
 |createdDateTime|DateTimeOffset|Время создания контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -92,7 +93,7 @@ ms.locfileid: "27077379"
 |emailAddresses|[typedEmailAddress](typedemailaddress.md) коллекции|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
 |flag|[followupFlag](followupflag.md)|Значение флага, указывающее состояние, Дата начала, Дата завершения или Дата завершения для этого контакта. |
-|gender |String |Пол контакта. |
+|gender |String. |Пол контакта. |
 |generation|String|Поколение контакта.|
 |givenName|String|Имя контакта.|
 |id|String|Уникальный идентификатор контакта. Только для чтения.|

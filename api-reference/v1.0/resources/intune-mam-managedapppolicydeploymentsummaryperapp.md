@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedAppPolicyDeploymentSummaryPerApp
 description: Представляет сводку по развертыванию политик для приложений.
-ms.openlocfilehash: 56b7952049c6ad41ee46f6b77c821aa32b1c4de8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 95c05696f6c080f90b9de61c309a577924e599b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027364"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354343"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>Тип ресурса managedAppPolicyDeploymentSummaryPerApp
 

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления configurationManagerClientState
 description: Состояние клиента диспетчер конфигурации
-ms.openlocfilehash: c76fc33fee0fd5f6f5782f77d988535ec851cc86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc67a5fb1c517e65da937996ed65adaa621fa3c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080500"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354049"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>Тип перечисления configurationManagerClientState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080500"
 
 Состояние клиента диспетчер конфигурации
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Диспетчер конфигурации агента старше 1806 или не установлена или это устройство не возвращенных в Intune старше 30 дней.|
 |установлен|1|Агент диспетчера конфигурации установлен, но может быть отображаются в консоли диспетчера конфигурации еще. Подождите несколько часов для ее обновление.|

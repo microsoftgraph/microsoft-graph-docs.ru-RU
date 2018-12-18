@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса roleScopeTag
 description: Тег области роли
-ms.openlocfilehash: 9be1f1307243c18e10f8e6dfc3f302502cdb54a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 49059ceddcd043f39f51c563c85ba8986b6fc61b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078094"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354770"
 ---
 # <a name="rolescopetag-resource-type"></a>Тип ресурса roleScopeTag
 
@@ -27,9 +28,9 @@ ms.locfileid: "27078094"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|String|Отображение или понятное имя тега область роли.|
-|описание|String|Описание тег область роли.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|Строка|Отображение или понятное имя тега область роли.|
+|описание|Строка|Описание тег область роли.|
 
 ## <a name="relationships"></a>Связи
 Нет

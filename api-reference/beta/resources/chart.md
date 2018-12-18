@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса Chart
 description: Представляет объект диаграммы в книге.
-ms.openlocfilehash: 3305c674bf299fa68ce139ba16b3174965b694ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: cf03a768422fca50e68b88a64b9991aad878466f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080933"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325720"
 ---
 # <a name="chart-resource-type"></a>Тип ресурса Chart
 
@@ -22,7 +23,7 @@ ms.locfileid: "27080933"
 |[Получение объекта Chart](../api/chart-get.md) | [Chart](chart.md) |Чтение свойств и связей объекта диаграммы.|
 |[Создание объекта ChartSeries](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| Создание объекта ChartSeries путем добавления в коллекцию рядов.|
 |[Список рядов](../api/chart-list-series.md) |Коллекция объектов [ChartSeries](chartseries.md)| Получение коллекции объектов ChartSeries.|
-|[Update](../api/chart-update.md) | [Chart](chart.md)   |Обновление объекта Chart. |
+|[обновление](../api/chart-update.md). | [Chart](chart.md)   |Обновление объекта Chart. |
 |[Image](../api/chart-image.md)|Строка изображения с кодировкой base64|Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.|
 |[Delete](../api/chart-delete.md)|Нет|Удаляет объект диаграммы.|
 |[Setdata](../api/chart-setdata.md)|Нет|Сбрасывает исходные данные для диаграммы.|
@@ -50,7 +51,7 @@ ms.locfileid: "27080933"
 |legend|[ChartLegend](chartlegend.md)|Представляет условные обозначения для диаграммы. Только для чтения.|
 |series|Коллекция объектов [ChartSeries](chartseries.md)|Представляет один ряд данных или коллекцию рядов данных в диаграмме. Только для чтения.|
 |title|[ChartTitle](charttitle.md)|Представляет заголовок указанной диаграммы, включая его текст, видимость, положение и форматирование. Только для чтения.|
-|лист|[Worksheet](worksheet.md)|Лист, содержащий текущую диаграмму. Только для чтения.|
+|worksheet|[Worksheet](worksheet.md)|Лист, содержащий текущую диаграмму. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

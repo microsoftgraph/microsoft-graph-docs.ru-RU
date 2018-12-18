@@ -1,12 +1,13 @@
 ---
 title: Создать VPP токен
 description: Создайте новый объект vppToken.
-ms.openlocfilehash: f0213227e6bdcc33089bc224215b6722d02073dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ab4c4c061f7a527583768382f309ef8c9adcb709
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080505"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353006"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -60,10 +61,10 @@ POST /deviceAppManagement/vppTokens
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Логический|Согласны полномочия для данных, общий доступ для покупки программа корпоративного Apple.|
-|displayName|String|Администратор указанного маркера понятное имя.|
-|locationName|String|Маркер расположение, возвращенные Apple VPP.|
-|claimTokenManagementFromExternalMdm|Логический|Admin разрешаете разрешить информация по получению маркеров управления из внешнего MDM.|
+|dataSharingConsentGranted|Boolean.|Согласны полномочия для данных, общий доступ для покупки программа корпоративного Apple.|
+|displayName|Строка|Администратор указанного маркера понятное имя.|
+|locationName|String.|Маркер расположение, возвращенные Apple VPP.|
+|claimTokenManagementFromExternalMdm|Boolean.|Admin разрешаете разрешить информация по получению маркеров управления из внешнего MDM.|
 
 
 
@@ -108,8 +109,7 @@ Content-length: 1004
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

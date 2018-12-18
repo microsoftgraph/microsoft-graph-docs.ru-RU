@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceEnrollmentConfiguration
 description: Н/Д
-ms.openlocfilehash: a748419edcecaeeafae96828048cf74929cb3f94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d3c8b1114a19429f89d5f5b6b466a1dec12eb26
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028247"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326581"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -24,9 +25,9 @@ ms.locfileid: "27028247"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
-|displayName|String|Н/Д|
-|описание|String|Н/Д|
+|id|Строка|Н/Д|
+|displayName|Строка|Н/Д|
+|описание|Строка|Н/Д|
 |priority|Int32|Н/Д|
 |createdDateTime|DateTimeOffset|Н/Д|
 |lastModifiedDateTime|DateTimeOffset|Н/Д|
