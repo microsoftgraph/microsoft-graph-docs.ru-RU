@@ -1,56 +1,57 @@
 ---
 title: 'domain: verify'
 description: Проверка права собственности на домен.
-ms.openlocfilehash: 02b5d823198b29114cd38c879a479b4b042289c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 246d037d7f87ec463c6d68a9d9e22b4cff7cb695
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079714"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336647"
 ---
-# <a name="domain-verify"></a><span data-ttu-id="2ed46-103">domain: verify</span><span class="sxs-lookup"><span data-stu-id="2ed46-103">domain: verify</span></span>
+# <a name="domain-verify"></a><span data-ttu-id="0bd03-103">domain: verify</span><span class="sxs-lookup"><span data-stu-id="0bd03-103">domain: verify</span></span>
 
-> <span data-ttu-id="2ed46-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="2ed46-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2ed46-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2ed46-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0bd03-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0bd03-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0bd03-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0bd03-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="2ed46-106">Проверка права собственности на домен.</span><span class="sxs-lookup"><span data-stu-id="2ed46-106">Validates the ownership of the domain.</span></span>
+<span data-ttu-id="0bd03-106">Проверка права собственности на домен.</span><span class="sxs-lookup"><span data-stu-id="0bd03-106">Validates the ownership of the domain.</span></span>
 
-> <span data-ttu-id="2ed46-p102">**Важно!** Применяется только к непроверенному домену. Для непроверенного домена свойство isVerified объекта [domain](../resources/domain.md) будет иметь значение false.</span><span class="sxs-lookup"><span data-stu-id="2ed46-p102">**Important:** Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.</span></span>
+> <span data-ttu-id="0bd03-p102">**Важно!** Применяется только к непроверенному домену. Для непроверенного домена свойство isVerified объекта [domain](../resources/domain.md) будет иметь значение false.</span><span class="sxs-lookup"><span data-stu-id="0bd03-p102">**Important:** Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2ed46-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2ed46-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0bd03-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0bd03-109">Permissions</span></span>
 
-<span data-ttu-id="2ed46-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2ed46-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0bd03-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0bd03-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="2ed46-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2ed46-112">Permission type</span></span>      | <span data-ttu-id="2ed46-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2ed46-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0bd03-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0bd03-112">Permission type</span></span>      | <span data-ttu-id="0bd03-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0bd03-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2ed46-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2ed46-114">Delegated (work or school account)</span></span> | <span data-ttu-id="2ed46-115">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="2ed46-115">Directory.Read.All</span></span>    |
-|<span data-ttu-id="2ed46-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2ed46-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2ed46-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2ed46-117">Not supported.</span></span>    |
-|<span data-ttu-id="2ed46-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2ed46-118">Application</span></span> | <span data-ttu-id="2ed46-119">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2ed46-119">Directory.Read.All, Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="0bd03-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0bd03-114">Delegated (work or school account)</span></span> | <span data-ttu-id="0bd03-115">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="0bd03-115">Directory.Read.All</span></span>    |
+|<span data-ttu-id="0bd03-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0bd03-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0bd03-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0bd03-117">Not supported.</span></span>    |
+|<span data-ttu-id="0bd03-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0bd03-118">Application</span></span> | <span data-ttu-id="0bd03-119">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0bd03-119">Directory.Read.All, Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2ed46-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2ed46-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0bd03-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0bd03-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains/{id}/verify
 ```
 
-> <span data-ttu-id="2ed46-121">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="2ed46-121">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="0bd03-121">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="0bd03-121">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2ed46-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2ed46-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0bd03-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0bd03-122">Request headers</span></span>
 
-| <span data-ttu-id="2ed46-123">Имя</span><span class="sxs-lookup"><span data-stu-id="2ed46-123">Name</span></span>       | <span data-ttu-id="2ed46-124">Описание</span><span class="sxs-lookup"><span data-stu-id="2ed46-124">Description</span></span>|
+| <span data-ttu-id="0bd03-123">Имя</span><span class="sxs-lookup"><span data-stu-id="0bd03-123">Name</span></span>       | <span data-ttu-id="0bd03-124">Описание</span><span class="sxs-lookup"><span data-stu-id="0bd03-124">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="2ed46-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2ed46-125">Authorization</span></span>  | <span data-ttu-id="2ed46-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2ed46-p104">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="2ed46-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2ed46-128">Content-Type</span></span>  | <span data-ttu-id="2ed46-129">application/json</span><span class="sxs-lookup"><span data-stu-id="2ed46-129">application/json</span></span> |
+| <span data-ttu-id="0bd03-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0bd03-125">Authorization</span></span>  | <span data-ttu-id="0bd03-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0bd03-p104">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="0bd03-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0bd03-128">Content-Type</span></span>  | <span data-ttu-id="0bd03-129">application/json</span><span class="sxs-lookup"><span data-stu-id="0bd03-129">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2ed46-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2ed46-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0bd03-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0bd03-130">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="2ed46-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="2ed46-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0bd03-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="0bd03-131">Response</span></span>
 
-<span data-ttu-id="2ed46-132">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [domain](../resources/domain.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="2ed46-132">If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
+<span data-ttu-id="0bd03-132">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [domain](../resources/domain.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="0bd03-132">If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2ed46-133">Пример</span><span class="sxs-lookup"><span data-stu-id="2ed46-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2ed46-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="2ed46-134">Request</span></span>
+## <a name="example"></a><span data-ttu-id="0bd03-133">Пример</span><span class="sxs-lookup"><span data-stu-id="0bd03-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0bd03-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="0bd03-134">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "domain_verify"
@@ -59,8 +60,8 @@ POST /domains/{id}/verify
 POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 ```
 
-##### <a name="response"></a><span data-ttu-id="2ed46-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="2ed46-135">Response</span></span>
-<span data-ttu-id="2ed46-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2ed46-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0bd03-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="0bd03-135">Response</span></span>
+<span data-ttu-id="0bd03-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0bd03-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
