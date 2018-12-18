@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления siteSecurityLevel
 description: Возможные значения для уровня безопасности сайта.
-ms.openlocfilehash: 3750cb841c1ea8df470863e12c7ab5c25cb295e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bfb429ec1b409e2ccc79d2b0cd029cd06d517b5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027192"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335590"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>Тип перечисления siteSecurityLevel
 
@@ -14,7 +15,7 @@ ms.locfileid: "27027192"
 
 Возможные значения для уровня безопасности сайта.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|User Defined, значение по умолчанию, без цели.|
 |Низкая|1|Low.|

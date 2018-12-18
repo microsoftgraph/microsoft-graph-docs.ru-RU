@@ -1,12 +1,13 @@
 ---
 title: Руководства по Microsoft Graph
 description: Руководства по Microsoft Graph — это пошаговые обучающие упражнения по основным понятиям Microsoft Graph, включающие сведения о том, как создать базовое приложение, которое использует проверку подлинности Azure Active Directory и получает доступ к данным через Microsoft Graph.
-ms.openlocfilehash: 988e734e790533b13b670516d9304fed92b543c9
-ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
+author: jasonjoh
+ms.openlocfilehash: a040f3b805b62de9245fc53a4e6e2abb3f805877
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27247748"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339671"
 ---
 # <a name="microsoft-graph-tutorials"></a>Руководства по Microsoft Graph
 

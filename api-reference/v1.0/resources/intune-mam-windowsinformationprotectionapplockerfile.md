@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsInformationProtectionAppLockerFile
 description: Файл AppLocker для Windows Information Protection
-ms.openlocfilehash: ab6dc6e0cada610f21a09a90193e286f5b555838
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6bc4a9dde44199ce8552772a47f2f68df0c50810
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345103"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>Тип ресурса windowsInformationProtectionAppLockerFile
 
@@ -27,9 +28,9 @@ ms.locfileid: "27026549"
 |:---|:---|:---|
 |displayName|String|Понятное имя|
 |fileHash|String|Хэш SHA256 для файла|
-|file|Двоичный|Файл в виде массива байтов|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|file|Binary|Файл в виде массива байтов|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет

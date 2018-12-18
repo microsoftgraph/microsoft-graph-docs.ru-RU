@@ -1,12 +1,13 @@
 ---
 title: Удаление ndesConnector
 description: Удаляет ndesConnector.
-ms.openlocfilehash: 4f9429b0f5d2632aad2aa4a6f848c2d1756a86d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea890f4ca2a4951f670473def343a58ebe4a0a9b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081538"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338404"
 ---
 # <a name="delete-ndesconnector"></a>Удаление ndesConnector
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesCon
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

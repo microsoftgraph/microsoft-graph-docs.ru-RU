@@ -1,12 +1,13 @@
 ---
 title: Настройка уведомлений об изменениях в пользовательских данных
 description: API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений клиентам. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений. С помощью уведомлений клиентские приложения обновляют свое состояние в случае изменений.
-ms.openlocfilehash: e9c0c33aa18735d183d88836d33a99c8f12da560
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: piotrci
+ms.openlocfilehash: 6af6f3c54a7956d6a505c88bfc82fc8233dccdad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184548"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337046"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileAppContentFile
 description: Содержит свойства для одного файла установщика, связанного с заданной версией mobileAppContent.
-ms.openlocfilehash: 9f2a90c7c8e576441b1acb20f3a088a2bd50157e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ab62a5aa49062209fb18add293344fe68730c66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027682"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337186"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Тип ресурса mobileAppContentFile
 

@@ -1,12 +1,13 @@
 ---
 title: Получение roleDefinition
 description: Чтение свойств и связей объекта roleDefinition.
-ms.openlocfilehash: 9e06a8c61519e56c3bced8964c4bd5fde13ef138
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60d7ea55079969bc07f17af305cc38a2f4711777
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079831"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337837"
 ---
 # <a name="get-roledefinition"></a>Получение roleDefinition
 
@@ -39,7 +40,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -57,8 +58,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefin
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

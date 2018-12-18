@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта managedDeviceMobileAppConfigurationUserSummary
 description: Обновление свойств объекта managedDeviceMobileAppConfigurationUserSummary.
-ms.openlocfilehash: ad51c36198a8bc2d227d92bcf595e1ab9934ee9a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b5b639bf517867ca23634c9af788ccbf91396b67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081841"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333910"
 ---
 # <a name="update-manageddevicemobileappconfigurationusersummary"></a>Обновление объекта managedDeviceMobileAppConfigurationUserSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
 |notApplicableCount|Int32|Число пользователей не применим|
 |successCount|Int32|Количество успешных пользователей.|
@@ -83,8 +84,7 @@ Content-length: 236
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

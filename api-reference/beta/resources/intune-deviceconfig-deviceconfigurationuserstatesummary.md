@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceConfigurationUserStateSummary
 description: Н/Д
-ms.openlocfilehash: 4ef482b2d2afc3320ec5af0fcdc3a9e57300787b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6a17e6cfae7c0af987a9d7333614817622322dc7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076263"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342184"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>Тип ресурса deviceConfigurationUserStateSummary
 
@@ -24,7 +25,7 @@ ms.locfileid: "27076263"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |unknownUserCount|Int32|Число неизвестным пользователям|
 |notApplicableUserCount|Int32|Число пользователей не применим|
 |compliantUserCount|Int32|Количество требованиям пользователей|

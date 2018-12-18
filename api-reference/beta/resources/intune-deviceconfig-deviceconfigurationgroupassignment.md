@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceConfigurationGroupAssignment
 description: Назначение группы конфигурации устройства.
-ms.openlocfilehash: 8e4f5b5d2e90b646e7b3c085b33a9a8c0f2a90c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 648edd8122c4e14ad06a6e8b19e5fb83a042affa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080030"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334638"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>Тип ресурса deviceConfigurationGroupAssignment
 
@@ -27,9 +28,9 @@ ms.locfileid: "27080030"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|targetGroupId|String|Идентификатор группы AAD мы ориентация для настройки устройств.|
-|excludeGroup|Логический|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
+|id|Строка|Ключ объекта.|
+|targetGroupId|String.|Идентификатор группы AAD мы ориентация для настройки устройств.|
+|excludeGroup|Boolean.|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

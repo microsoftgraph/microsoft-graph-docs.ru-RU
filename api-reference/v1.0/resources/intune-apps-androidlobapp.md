@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса androidLobApp
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений Android.
-ms.openlocfilehash: 1aabe7c2a328f9a433ef13bb08660954d632eb85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6ded3a19ee34310f07c1f41eca07707798bbf768
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025601"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363734"
 ---
 # <a name="androidlobapp-resource-type"></a>Тип ресурса androidLobApp
 
@@ -28,7 +29,7 @@ ms.locfileid: "27025601"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

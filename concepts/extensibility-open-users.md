@@ -1,12 +1,13 @@
 ---
 title: Добавление пользовательских данных в ресурсы user с помощью открытых расширений
 description: 'Мы рассмотрим пример использования *открытых расширений*. '
-ms.openlocfilehash: b2ff767e9eb0762ec3600166328d2bb0c5218936
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 37df1bd03e68b00be41496ee9f66a076d8758149
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092743"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337172"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>Добавление пользовательских данных в ресурсы user с помощью открытых расширений
 Мы рассмотрим пример использования *открытых расширений*. 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsPackageInformation
 description: Содержит свойства для сведения о пакете для строки Windows бизнес-приложения.
-ms.openlocfilehash: a7676320d5aa2eeab1140e6cc631c4061d2c5d14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dcc277c610e6ceb27a94ab41993e599a258dd55e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342828"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Тип ресурса windowsPackageInformation
 
@@ -16,12 +17,12 @@ ms.locfileid: "27079224"
 
 Содержит свойства для сведения о пакете для строки Windows бизнес-приложения.
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, для которого это приложение можно запустить на. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|displayName|String|Отображаемое имя.|
+|displayName|Строка|Отображаемое имя.|
 |identityName|String|Имя удостоверения.|
-|identityPublisher|String|Издатель удостоверений.|
+|identityPublisher|String.|Издатель удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |identityVersion|String|Версия удостоверения.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|

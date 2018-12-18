@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса embeddedSIMActivationCodePoolAssignment
 description: Сущности пул назначений внедренных диспетчера установки активации кода назначает определенных embeddedSIMActivationCodePool к группе AAD устройства.
-ms.openlocfilehash: 27a7ed5a524d7033225ec8dfbafdf2f3f74b5ec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 67d563a630fb1c1092416f1081c4decda0d9eaf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074957"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337438"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>Тип ресурса embeddedSIMActivationCodePoolAssignment
 
@@ -27,7 +28,7 @@ ms.locfileid: "27074957"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для диспетчера установки активации кода пул назначений. Значение, назначенное при создании создаваемый системой.|
+|id|Строка|Уникальный идентификатор для диспетчера установки активации кода пул назначений. Значение, назначенное при создании создаваемый системой.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Тип группы, входят в целевую внедренных пула кода активации диспетчера установки.|
 
 ## <a name="relationships"></a>Связи

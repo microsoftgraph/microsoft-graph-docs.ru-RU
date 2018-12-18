@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса канала
 description: 'Канал представляет коллекцию сообщений в группе. '
-ms.openlocfilehash: 17a2e2edb86bfe7e107e69414a70dbe92fe4d3bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: f9ab71213180732a0c8c626d5b32b9074bd135d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025808"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337088"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса канала
 
@@ -28,9 +29,9 @@ ms.locfileid: "27025808"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|описание|String|Необязательное текстовое описание для канала.|
-|displayName|String|Имя канала, как оно будет отображаться для пользователей в группах Майкрософт.|
-|id|String|Уникальный идентификатор, каналов. Только для чтения.|
+|описание|Строка|Необязательное текстовое описание для канала.|
+|displayName|Строка|Имя канала, как оно будет отображаться для пользователей в группах Майкрософт.|
+|id|Строка|Уникальный идентификатор, каналов. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

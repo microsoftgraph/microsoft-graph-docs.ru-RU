@@ -1,12 +1,13 @@
 ---
 title: Создание правила
 description: 'Создает объект messageRule, определяя набор условий и действий. '
-ms.openlocfilehash: f725aa0a078938cf111782aedf1feb041a5a0e19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 4b127c4634650648062e9c41789d5fc076b3ea67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082567"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355498"
 ---
 # <a name="create-rule"></a>Создание правила
 
@@ -45,9 +46,9 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются). Обязательный.|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Условия, выполнение которых активирует соответствующие действия для указанного правила. Необязательное свойство.|
-|displayName| String  | Отображаемое имя правила. Обязательный.|
+|displayName| Строка  | Отображаемое имя правила. Обязательный.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Представляет условия исключения для правила. Необязательное свойство. |
-|isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
+|isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
 |sequence| Int32 | Определяет последовательность выполнения правила среди прочих правил. Обязательный.|
 
 ## <a name="response"></a>Отклик
@@ -88,8 +89,7 @@ Content-type: application/json
 
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

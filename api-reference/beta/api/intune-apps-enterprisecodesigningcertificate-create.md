@@ -1,12 +1,13 @@
 ---
 title: Создание enterpriseCodeSigningCertificate
 description: Создание нового объекта enterpriseCodeSigningCertificate.
-ms.openlocfilehash: aa5d92c22a1cd4eb91a41b26ed92f76937ce9dcd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 337513242ae653a1d18f3ed9460cf26210534ab8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074665"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341099"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Создание enterpriseCodeSigningCertificate
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,12 +49,12 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|content|Двоичный|Сертификат подписи кода Enterprise Windows в формате необработанные данные.|
+|content|Binary|Сертификат подписи кода Enterprise Windows в формате необработанные данные.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовить к работе или не подготовлен. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
-|subject|String|Значения субъектов для сертификата.|
-|Имя поставщика|String|Имя поставщика для сертификата.|
-|издателя|String|Значение издателя сертификата.|
+|subject|Строка|Значения субъектов для сертификата.|
+|Имя поставщика|String.|Имя поставщика для сертификата.|
+|издателя|String.|Значение издателя сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Дата время подписывания кода сертификата при его загрузке.|
 
@@ -84,8 +85,7 @@ Content-length: 390
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

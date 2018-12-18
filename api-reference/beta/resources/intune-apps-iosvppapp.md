@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса iosVppApp
 description: Содержит свойства, в том числе унаследованные, для приложений iOS, на которые распространяется программа VPP (Volume Purchase Program).
-ms.openlocfilehash: 164803a6307dcab76776fd60c6620ba8aaa309b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 565bcf04bb7a5b903060c6492000377fdefeb495
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079130"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333168"
 ---
 # <a name="iosvppapp-resource-type"></a>Тип ресурса iosVppApp
 
@@ -33,7 +34,7 @@ ms.locfileid: "27079130"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -58,7 +59,7 @@ ms.locfileid: "27079130"
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |vppTokenAppleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |bundleId|String|Имя удостоверения.|
-|vppTokenId|String|Идентификатор VPP маркер, связанный с этого приложения.|
+|vppTokenId|String.|Идентификатор VPP маркер, связанный с этого приложения.|
 |revokeLicenseActionResults|[iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md) коллекции|Результаты отозвать действия лицензии на это приложение.|
 
 ## <a name="relationships"></a>Связи

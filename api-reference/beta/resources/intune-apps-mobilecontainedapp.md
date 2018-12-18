@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileContainedApp
 description: Абстрактный класс, представляющий автономные приложения в mobileApp, работающие в качестве пакета.
-ms.openlocfilehash: abd47e8e9449a111c212d20b4f867a9064f612e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 314225c46247bd122c825f0f883378513445ce0a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079094"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340798"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>Тип ресурса mobileContainedApp
 
@@ -24,7 +25,7 @@ ms.locfileid: "27079094"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет

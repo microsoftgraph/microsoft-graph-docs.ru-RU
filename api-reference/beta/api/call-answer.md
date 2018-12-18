@@ -1,12 +1,13 @@
 ---
 title: 'Вызовите: ответ'
 description: Ответ на входящий звонок.
-ms.openlocfilehash: d2cf1030179d8822fd4620224addbabb95c5482f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075360"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343206"
 ---
 # <a name="call-answer"></a>Вызовите: ответ
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075360"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Для приложения     | Нет                                                        |
+| Application     | Нет                                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,9 +39,9 @@ POST /applications/{id}/calls/{id}/answer
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр        | Тип                                     |Description                                                                                                                                    |
+| Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Идентификатор обратного вызова или подписки, на котором будет доставлено обратных вызовов. (Обязательно)                                                               |
+|callbackUri       |String.                                    |Идентификатор обратного вызова или подписки, на котором будет доставлено обратных вызовов. (Обязательно)                                                               |
 |acceptedModalities|Коллекция String                         |Список принимать модальности. Приведены возможные значения: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Обязательно) |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Конфигурация мультимедиа. (Обязательно)                                                                                                            |
 

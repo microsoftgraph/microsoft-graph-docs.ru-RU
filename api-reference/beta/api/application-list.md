@@ -1,12 +1,13 @@
 ---
 title: Список приложений
 description: Извлечь список приложений в данной организации.
-ms.openlocfilehash: 073a7f91596afcf87cbd99969b570bf1bea68bcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 138a9e6d238fde44d5b5c47781bbd93cb2b73f98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075746"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336696"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -22,7 +23,7 @@ ms.locfileid: "27075746"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Application.ReadWrite.All Directory.Read.All |
+|Для приложений | Application.ReadWrite.All Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -54,8 +55,7 @@ GET /applications
 GET https://graph.microsoft.com/beta/applications
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

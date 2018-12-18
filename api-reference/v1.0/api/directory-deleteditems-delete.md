@@ -1,12 +1,13 @@
 ---
 title: Удаление элемента без возможности восстановления
 description: Окончательное удаление элемента из контейнера для удаленных элементов.
-ms.openlocfilehash: 0f26fbe027623feac916b6af78903cdc219f167b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: ef0755f757bdc2e3588acd07d86620a187002e77
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026088"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339454"
 ---
 # <a name="permanently-delete-item"></a>Удаление элемента без возможности восстановления
 

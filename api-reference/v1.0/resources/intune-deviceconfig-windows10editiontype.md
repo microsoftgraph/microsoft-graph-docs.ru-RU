@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windows10EditionType
 description: Тип 10 версии Windows.
-ms.openlocfilehash: 1551bd6c84452ae9aed66341748e12a473810856
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d1d57e9a7e75d854bc28cada04cc2a42a1d15fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024725"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337109"
 ---
 # <a name="windows10editiontype-enum-type"></a>Тип перечисления windows10EditionType
 

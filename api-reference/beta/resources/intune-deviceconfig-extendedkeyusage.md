@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса extendedKeyUsage
 description: Настраиваемые определения расширенное использование ключа
-ms.openlocfilehash: bbf869dd32c384a12aa8e80e8a3b5984e699de48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2b6155a0fbb234cb0b2081a8a4a226a8d218dbc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074864"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337291"
 ---
 # <a name="extendedkeyusage-resource-type"></a>Тип ресурса extendedKeyUsage
 
@@ -18,8 +19,8 @@ ms.locfileid: "27074864"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|String|Имя расширенного использования ключа|
-|objectIdentifier|String|Расширенного использования ключа идентификатор объекта|
+|name|Строка|Имя расширенного использования ключа|
+|objectIdentifier|String.|Расширенного использования ключа идентификатор объекта|
 
 ## <a name="relationships"></a>Связи
 Нет

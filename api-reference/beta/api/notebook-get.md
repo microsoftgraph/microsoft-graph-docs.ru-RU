@@ -1,12 +1,13 @@
 ---
 title: Получение записной книжки
 description: Получение свойств и связей объекта notebook.
-ms.openlocfilehash: 9dd264dd2498e0c775629b9e178b7660426a8d69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 1c4ef1db34f115e3904ff48b871e52f969b08d5a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081694"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334085"
 ---
 # <a name="get-notebook"></a>Получение записной книжки
 

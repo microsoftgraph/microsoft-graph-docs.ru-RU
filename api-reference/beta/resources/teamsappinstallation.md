@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса teamsAppInstallation
 description: 'TeamsApp, установленные в группе. '
-ms.openlocfilehash: 64573e163c0ec5ce9f3282e747dffd4ccc6718de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: cab42c3bc2bde2e20dff3478d432d70e1563d248
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077813"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341799"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса teamsAppInstallation
 
@@ -31,7 +32,7 @@ ms.locfileid: "27077813"
 
 ## <a name="relationships"></a>Связи
 
-| Связь   | Тип    | Description |
+| Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| Приложения, которая устанавливается. |
 |teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| Подробные сведения о данной версии приложения. |

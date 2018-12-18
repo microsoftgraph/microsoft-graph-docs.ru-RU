@@ -1,12 +1,13 @@
 ---
 title: Обновление контакта
 description: Обновляет свойства объекта контакта.
-ms.openlocfilehash: 2fbf597ebc8a6c65141c64ae42ae42266f14cbde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: d25efb55a090c4c0b5fa750b64a0b2a905327a76
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077306"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334106"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -58,7 +59,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |displayName|String|Отображаемое имя контакта. Обратите внимание, что более поздние обновления для других свойств может стать причиной автоматически подставленное значение для перезаписи значение displayName, заданные. Чтобы сохранить существующие значения, всегда включите его в качестве displayName в операции обновления.|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md) коллекции|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
-|gender |String |Пол контакта. |
+|gender |String. |Пол контакта. |
 |generation|String|Поколение контакта.|
 |givenName|String|Имя контакта.|
 |imAddresses|String|Адреса контакта для обмена мгновенными сообщениями.|
@@ -80,7 +81,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |weddingAnniversary |Date |Годовщина свадьбы контакта. |
 |yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
-|yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
+|yomiSurname|Строка|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
 
 Поскольку ресурсов **контактов** поддерживает [расширения](/graph/extensibility-overview), можно использовать `PATCH` операции для добавления, обновления или удаления данных конкретного приложения в настраиваемых свойств расширения в существующий экземпляр **контактов** .
 

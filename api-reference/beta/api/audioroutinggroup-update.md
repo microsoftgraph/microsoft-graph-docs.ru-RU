@@ -1,12 +1,13 @@
 ---
 title: Обновление звука группы маршрутизации
 description: Изменение источники и приемники audioRoutingGroup.
-ms.openlocfilehash: 6edbe0512b13de75645c3094b258de46c21956e9
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: ae9e67a9f116a9c1e9dec2b5d742f13917374718
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156028"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336689"
 ---
 # <a name="update-audio-routing-group"></a>Обновление звука группы маршрутизации
 
@@ -21,7 +22,7 @@ ms.locfileid: "27156028"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложения     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +45,7 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 | routingMode | String | Возможные значения: `oneToOne`, `multicast`. |
 | sources | Коллекция String | Участник источника в audioRoutingGroup. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [audioRoutingGroup](../resources/audioroutinggroup.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -73,7 +74,7 @@ Content-Length: 233
   ]
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

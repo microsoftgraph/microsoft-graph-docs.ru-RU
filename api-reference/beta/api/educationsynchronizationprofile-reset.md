@@ -1,12 +1,13 @@
 ---
 title: Сброс синхронизации на educationSynchronizationProfile
 description: Сброс синхронизации в конкретных школа профиль синхронизации данных клиента.
-ms.openlocfilehash: 4be91b7d6229148c51dc8fb1279a9078fb5cad7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 29d21318737ceba3bd380eaf20a9500a6a711857
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079383"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362442"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Сброс синхронизации на educationSynchronizationProfile
 
@@ -19,7 +20,7 @@ ms.locfileid: "27079383"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Permissions |
+| Тип разрешения | Разрешения |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт|Не поддерживается.|

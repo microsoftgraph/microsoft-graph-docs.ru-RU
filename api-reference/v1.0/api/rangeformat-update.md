@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта RangeFormat
 description: Обновление свойств объекта rangeformat.
-ms.openlocfilehash: 208e20e650e069c87ff177564b6a0400ba5e94ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 0aea5712db6eb149356e1c3c9db85e5aebcebf17
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024762"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344620"
 ---
 # <a name="update-rangeformat"></a>Обновление объекта RangeFormat
 
@@ -363,8 +364,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

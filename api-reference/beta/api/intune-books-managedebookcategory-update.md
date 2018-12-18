@@ -1,12 +1,13 @@
 ---
 title: Обновление managedEBookCategory
 description: Обновление свойства объекта managedEBookCategory.
-ms.openlocfilehash: 166d274d4d4eed8d6dff8efc8583af8c7ae9778e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5dea4bce1750617367f972f64a734ac151d2676f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074574"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333658"
 ---
 # <a name="update-managedebookcategory"></a>Обновление managedEBookCategory
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -49,7 +50,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Имя категории электронная книга.|
+|displayName|Строка|Имя категории электронная книга.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ManagedEBookCategory.|
 
 
@@ -72,8 +73,7 @@ Content-length: 107
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

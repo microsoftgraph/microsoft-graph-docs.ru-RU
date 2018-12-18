@@ -1,12 +1,13 @@
 ---
 title: Список групп устройств
 description: Получите группы, это устройство является непосредственным членом. Эта операция не транзитивное.
-ms.openlocfilehash: fae373a896a2fc048257a5dc6cd9eb07a85ec677
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: tfitzmac
+ms.openlocfilehash: da0001ab6a609e6f262aa6880306977b9c655b01
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184471"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336493"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
@@ -57,7 +58,7 @@ GET /devices/{id}/memberOf
 GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

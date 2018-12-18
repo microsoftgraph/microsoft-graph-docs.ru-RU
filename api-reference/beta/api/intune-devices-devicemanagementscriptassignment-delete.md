@@ -1,12 +1,13 @@
 ---
 title: Удаление deviceManagementScriptAssignment
 description: Удаляет deviceManagementScriptAssignment.
-ms.openlocfilehash: 8ec60e28bb9150076dc2c71b6ec6d754a146c427
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e579ae4a4463f6d600cd019e098f32e5d2a995ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343409"
 ---
 # <a name="delete-devicemanagementscriptassignment"></a>Удаление deviceManagementScriptAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

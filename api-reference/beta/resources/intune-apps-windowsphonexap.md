@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsPhoneXAP
 description: Содержит свойства и наследуемые свойства для Windows Phone XAP бизнес-приложений.
-ms.openlocfilehash: 0bb0df9f509cc7b7e1068dfd06a54bb4b4a90c7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 58b6b9106a81c51b64c8d62d1990a2ae4498d0e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077980"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337018"
 ---
 # <a name="windowsphonexap-resource-type"></a>Тип ресурса windowsPhoneXAP
 
@@ -30,7 +31,7 @@ ms.locfileid: "27077980"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -49,7 +50,7 @@ ms.locfileid: "27077980"
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|productIdentifier|String|Идентификатор продукта.|
+|productIdentifier|String.|Идентификатор продукта.|
 |identityVersion|String|Версия удостоверения.|
 
 ## <a name="relationships"></a>Связи

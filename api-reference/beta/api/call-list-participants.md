@@ -1,12 +1,13 @@
 ---
 title: Список участников
 description: Получение списка участников объектов в вызове.
-ms.openlocfilehash: a18dc609204712f1b7c7b31150975543277ffa67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 0ffb48a862f7c0ba547521eb9e0e96f3c1d38dff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076630"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339121"
 ---
 # <a name="list-participants"></a>Список участников
 
@@ -21,7 +22,7 @@ ms.locfileid: "27076630"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложения     | Нет                                        |
+| Application     | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

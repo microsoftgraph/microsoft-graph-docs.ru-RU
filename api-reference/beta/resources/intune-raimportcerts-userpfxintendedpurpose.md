@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления userPfxIntendedPurpose
 description: Поддерживаемые значения по назначению сертификата PFX пользователя.
-ms.openlocfilehash: 4b1271046dee46b54632fc08169c3b951217b1f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 285bf4b9d8cdca2ef477a7dde591ab373c600821
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341330"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>Тип перечисления userPfxIntendedPurpose
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082224"
 
 Поддерживаемые значения по назначению сертификата PFX пользователя.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |неназначенных|0|Н/Д|
 |smimeEncryption|1|Н/Д|

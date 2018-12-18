@@ -1,12 +1,13 @@
 ---
 title: Список windowsManagementAppHealthStates
 description: Свойства списка и связей объектов windowsManagementAppHealthState.
-ms.openlocfilehash: 30fc4913dac2c4d233787364942457829557197a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68f1c1b1c59d1a70590356b791fcbf1dc25fd6c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076309"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362792"
 ---
 # <a name="list-windowsmanagementapphealthstates"></a>Список windowsManagementAppHealthStates
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/windowsManagementApp/healthStates
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/he
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

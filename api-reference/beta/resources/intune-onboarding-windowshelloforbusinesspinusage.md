@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsHelloForBusinessPinUsage
 description: Windows Hello для бизнеса варианты использования ПИН-кода
-ms.openlocfilehash: f9363fbb8e68cc8bf13347a80aeecbd7cb0e0798
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5b1c2e2e607997d0e6d2676462cb9a2268486493
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343822"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>Тип перечисления windowsHelloForBusinessPinUsage
 
@@ -16,7 +17,7 @@ ms.locfileid: "27078055"
 
 Windows Hello для бизнеса варианты использования ПИН-кода
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |разрешено|0|Н/Д|
 |Обязательный|1|Н/Д|

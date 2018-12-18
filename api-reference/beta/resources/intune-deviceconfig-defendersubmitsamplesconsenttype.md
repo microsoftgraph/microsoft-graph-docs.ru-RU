@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления defenderSubmitSamplesConsentType
 description: Возможные значения для DefenderSubmitSamplesConsentType
-ms.openlocfilehash: 34acecc1a18d271e02e6b75152a09a781e52f6fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b9d9e02e384c4042d45b7850593559e86c1fe68d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079939"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337025"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>Тип перечисления defenderSubmitSamplesConsentType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079939"
 
 Возможные значения для DefenderSubmitSamplesConsentType
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |sendSafeSamplesAutomatically|0|Автоматическая отправка безопасных примеры|
 |alwaysPrompt|1|Всегда запрашивать|

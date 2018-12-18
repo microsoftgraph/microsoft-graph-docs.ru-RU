@@ -1,12 +1,13 @@
 ---
 title: Обновление windowsUniversalAppXContainedApp
 description: Обновление свойства объекта windowsUniversalAppXContainedApp.
-ms.openlocfilehash: 54ce98544de57e5f5ec296c73e8daed746969b76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f39046e10917a45ba880777992247748e89a24e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082635"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339111"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>Обновление windowsUniversalAppXContainedApp
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -49,8 +50,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|Идентификатор модели пользователя приложения автономные приложения WindowsUniversalAppX приложения.|
+|id|Строка|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|String.|Идентификатор модели пользователя приложения автономные приложения WindowsUniversalAppX приложения.|
 
 
 
@@ -71,8 +72,7 @@ Content-length: 51
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

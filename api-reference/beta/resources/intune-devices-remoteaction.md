@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления remoteAction
 description: Поддерживает Intune удаленного действия.
-ms.openlocfilehash: 8ab503538edd1005106be9d30e67b35b6bb59583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b301757ec5bb8c9c9a0336cbc83d6a458579916
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080906"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362561"
 ---
 # <a name="remoteaction-enum-type"></a>Тип перечисления remoteAction
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080906"
 
 Поддерживает Intune удаленного действия.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Пользователь предпринимает Неизвестный действия.|
 |factoryReset|1|Пользователь инициирует действие фабрики сброс устройства. |

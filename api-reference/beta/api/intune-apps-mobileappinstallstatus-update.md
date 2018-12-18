@@ -1,12 +1,13 @@
 ---
 title: Обновление mobileAppInstallStatus
 description: Обновление свойства объекта mobileAppInstallStatus.
-ms.openlocfilehash: bb3df95caeed90a883e2323898080a23c742f5eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dbf65aa07258b48a8ce64cf01db0a5ef00097f3a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081904"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336325"
 ---
 # <a name="update-mobileappinstallstatus"></a>Обновление mobileAppInstallStatus
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,7 +49,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |deviceName|String|Имя устройства|
 |deviceId|String|Идентификатор устройства|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации|
@@ -59,8 +60,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |osVersion|String|Версия операционной системы|
 |osDescription|String|Описание операционная система|
 |userName|String|Имя пользователя устройства|
-|userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|displayVersion|String|Человеческого для чтения версию приложения|
+|userPrincipalName|Строка|"User Principal Name" (Имя участника-пользователя);|
+|displayVersion|String.|Человеческого для чтения версию приложения|
 
 
 
@@ -92,8 +93,7 @@ Content-length: 488
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

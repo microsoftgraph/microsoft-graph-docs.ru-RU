@@ -1,12 +1,13 @@
 ---
 title: Обзор пользователей в Microsoft Graph
 description: Пользователи — это представления рабочих или учебных учетных записей Azure Active Directory (Azure AD) либо учетных записей Майкрософт в Microsoft Graph. Ресурс **user** в Microsoft Graph — это центр, из которого вы можете получить доступ к связям и ресурсам, релевантным для ваших пользователей.
-ms.openlocfilehash: 2f07cdea940a7fe09b034f8fb21f443447ec67d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f9e64ecd3f3a46a74b7a6bcd65955419fd102296
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092691"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337305"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Обзор пользователей в Microsoft Graph
 

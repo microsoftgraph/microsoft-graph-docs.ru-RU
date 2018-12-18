@@ -1,12 +1,13 @@
 ---
 title: Отправка почты
 description: Отправка сообщения, указанного в теле запроса. Сообщение сохраняется в папке "Отправленные" по умолчанию.
-ms.openlocfilehash: 6d8150f7292747e7c1d182395f9a98b1a199389f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a818ec5cc455b6ca78c920be57ad34155a03a1bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025048"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333294"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |message|[Message](../resources/message.md)|Отправляемое сообщение. Обязательный.|
 |saveToSentItems|Boolean|Указывает, нужно ли сохранять сообщение в папке "Отправленные". Указывайте этот параметр, если задано значение false (по умолчанию используется true).  Задавать не обязательно. |

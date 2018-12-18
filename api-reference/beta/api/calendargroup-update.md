@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта calendarGroup.
 description: Обновление свойств объекта calendargroup.
-ms.openlocfilehash: a201981d53b581085bd765dbe5a280adeb747fcf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e0e2cbc9ef2f86298d320285163e2e7378a8f3ec
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074730"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336706"
 ---
 # <a name="update-calendargroup"></a>Обновление объекта calendarGroup.
 
@@ -77,8 +78,7 @@ Content-length: 30
 
 ##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",

@@ -1,12 +1,13 @@
 ---
 title: Получение маркеров доступа для вызова Microsoft Graph
 description: 'Чтобы приложение могло вызывать Microsoft Graph, оно должно получить маркер доступа из Azure Active Directory (Azure AD) — облачной службы идентификации от корпорации Майкрософт. Маркер доступа содержит сведения (или утверждения) о приложении и его разрешениях на доступ к ресурсам и API, доступным через Microsoft Graph. Чтобы получить маркер доступа, приложение должно иметь возможность пройти проверку подлинности в Azure AD, а также получить от пользователя или администратора разрешение на доступ к необходимым ему ресурсам Microsoft Graph. '
-ms.openlocfilehash: 2dc05d2edf1e5096b525d880b7d363f2e98721b0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jackson-woods
+ms.openlocfilehash: 2352802393d3e36c611dfab1d767e6bd76d69d8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092563"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334303"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>Получение маркеров доступа для вызова Microsoft Graph
 

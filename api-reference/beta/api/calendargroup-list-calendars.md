@@ -1,12 +1,13 @@
 ---
 title: Список календарей
 description: Получение списка календарей из группы календарей.
-ms.openlocfilehash: 40792ef7a7af1c9cd9155650315c3c5964df6733
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a6cf89b6c5670659d5864496118d125d3c60a903
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076319"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336682"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -77,8 +78,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 
 ##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",

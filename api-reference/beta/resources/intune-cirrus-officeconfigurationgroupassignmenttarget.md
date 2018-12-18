@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса officeConfigurationGroupAssignmentTarget
 description: Настройка клиента Office AAD группы конечного назначения.
-ms.openlocfilehash: 263e48bfc5800231a9f36159e802f65294e6ac02
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 82008de6e5cb64885e9e2d5804a00956da2ff434
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335870"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>Тип ресурса officeConfigurationGroupAssignmentTarget
 
@@ -21,7 +22,7 @@ ms.locfileid: "27080660"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupId|String|Идентификатор группы AAD мы ориентация для настройки устройств.|
+|groupId|Строка|Идентификатор группы AAD мы ориентация для настройки устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет

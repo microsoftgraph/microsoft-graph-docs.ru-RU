@@ -1,12 +1,13 @@
 ---
 title: Список VPP токенов
 description: Список свойств и связей объектов VPP токен.
-ms.openlocfilehash: abd0f194ab05778ce02c8b2c236d5f1506f84306
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7a3e1d52c91d28b1714b1111f3207942355c5156
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080861"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344333"
 ---
 # <a name="list-vpptokens"></a>Список VPP токенов
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/vppTokens
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
