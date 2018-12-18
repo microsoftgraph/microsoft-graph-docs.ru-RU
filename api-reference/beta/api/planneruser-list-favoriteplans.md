@@ -1,12 +1,13 @@
 ---
 title: Список favoritePlans
 description: Получение списка plannerPlans, помеченные как избранные пользователем. План в Избранное можно пометить, изменив plannerUser ресурсов.
-ms.openlocfilehash: e9e3cf3cd348430a3512d15ac2e0cdc68d24d258
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: c0f82522c41977df1aa034dbd14a86749b10b803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077034"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324586"
 ---
 # <a name="list-favoriteplans"></a>Список favoritePlans
 
@@ -35,7 +36,7 @@ GET /users/<id>/planner/favoritePlans
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.

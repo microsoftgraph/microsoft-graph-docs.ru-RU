@@ -1,12 +1,13 @@
 ---
 title: Получение deviceManagementScriptGroupAssignment
 description: Чтение свойства и связи объекта deviceManagementScriptGroupAssignment.
-ms.openlocfilehash: ca37bb26c46cf7a5195b393395fe8fee96fd405b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6068a46a86d71794b58bc69ac7aedb1f9e13f56d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081074"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324930"
 ---
 # <a name="get-devicemanagementscriptgroupassignment"></a>Получение deviceManagementScriptGroupAssignment
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{d
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

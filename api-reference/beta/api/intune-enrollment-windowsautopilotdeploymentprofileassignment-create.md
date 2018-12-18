@@ -1,12 +1,13 @@
 ---
 title: Создание windowsAutopilotDeploymentProfileAssignment
 description: Создание нового объекта windowsAutopilotDeploymentProfileAssignment.
-ms.openlocfilehash: 7c6e6e41711a89f5e9690f16a569b5a4afbe91c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c73cd0c8f32ea5b5e84afb5873700a6523186059
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338852"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>Создание windowsAutopilotDeploymentProfileAssignment
 
@@ -36,7 +37,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -72,8 +73,7 @@ Content-length: 183
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

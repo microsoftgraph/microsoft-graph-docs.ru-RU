@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса user
 description: Представляет объект пользователя Azure Active Directory.
-ms.openlocfilehash: ec28b7ec44eddfa1e1e8b372956d1a29dc78553d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 88db96c374321f428f40971da530ab8ba82965c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079315"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329220"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -47,7 +48,7 @@ ms.locfileid: "27079315"
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |**Управление устройствами**|
 |managedDevices|Коллекция [managedDevice](../resources/intune-devices-manageddevice.md)|Управляемые устройства, связанные с пользователем.|

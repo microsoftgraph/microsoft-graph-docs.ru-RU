@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления updateClassification
 description: Возможные значения для классификации автоматического обновления.
-ms.openlocfilehash: 5ea4bf39489b1fc27a84de1db8f5ad3ac0cec717
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cf52ac76cb625d38af4737c0ca87bb47beffd6c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076286"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337956"
 ---
 # <a name="updateclassification-enum-type"></a>Тип перечисления updateClassification
 
@@ -16,12 +17,12 @@ ms.locfileid: "27076286"
 
 Возможные значения для классификации автоматического обновления.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|User Defined, значение по умолчанию, без цели.|
 |recommendedAndImportant|1|Рекомендуемые и важные.|
 |important|2|Важные.|
-|Нет|3|Нет.|
+|none|3|Нет.|
 
 
 

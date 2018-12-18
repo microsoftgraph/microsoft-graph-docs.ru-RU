@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса iPv6Range
 description: Диапазон IPv6-адресов
-ms.openlocfilehash: ac2834ea68e1ce4aa7e28f7b421ff4e3d031f8fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a821e149768132e0172358268d3ede9f91393dbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082546"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327813"
 ---
 # <a name="ipv6range-resource-type"></a>Тип ресурса iPv6Range
 
@@ -21,8 +22,8 @@ ms.locfileid: "27082546"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|lowerAddress|String|Нижний IP-адрес|
-|upperAddress|String|Верхний IP-адрес|
+|lowerAddress|Строка|Нижний IP-адрес|
+|upperAddress|Строка|Верхний IP-адрес|
 
 ## <a name="relationships"></a>Связи
 Нет

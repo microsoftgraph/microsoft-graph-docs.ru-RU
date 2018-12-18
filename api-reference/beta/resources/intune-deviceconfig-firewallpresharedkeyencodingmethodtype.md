@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления firewallPreSharedKeyEncodingMethodType
 description: Возможные значения для firewallPreSharedKeyEncodingMethod
-ms.openlocfilehash: 3f6d4a88ec4f0296bfd0d35f30695ddae14d4c95
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ed2456f54bd27a3efa04d959edba48f7c100692
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074869"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324936"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>Тип перечисления firewallPreSharedKeyEncodingMethodType
 
@@ -16,10 +17,10 @@ ms.locfileid: "27074869"
 
 Возможные значения для firewallPreSharedKeyEncodingMethod
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение не настраивается с Intune, не переопределяют настраиваемых пользователем устройства по умолчанию|
-|Нет|1|Предварительный ключ не кодируются. Вместо этого он будет храниться в формате Юникода|
+|none|1|Предварительный ключ не кодируются. Вместо этого он будет храниться в формате Юникода|
 |utF8|2|Кодирование предварительный ключ, используя UTF-8|
 
 

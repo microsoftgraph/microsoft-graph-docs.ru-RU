@@ -1,12 +1,13 @@
 ---
 title: Получить vppToken
 description: Чтение свойств и связей объекта vppToken.
-ms.openlocfilehash: f30ea1d98b3627d00c62e7ded92b7ccce385e1ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 331bfc9c91b980a06436cd5f02ab67219d8009ef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026040"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338768"
 ---
 # <a name="get-vpptoken"></a>Получить vppToken
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/vppTokens/{vppTokenId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

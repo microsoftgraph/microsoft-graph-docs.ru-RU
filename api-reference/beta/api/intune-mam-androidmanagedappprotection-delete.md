@@ -1,12 +1,13 @@
 ---
 title: Удаление androidManagedAppProtection
 description: Удаление объекта androidManagedAppProtection.
-ms.openlocfilehash: e7eba5000960c8a8e9ef906fa08454e2adc51dbe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a1031d1e6d05f5101ece05e8374ab0e3c0ff87d8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078372"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338159"
 ---
 # <a name="delete-androidmanagedappprotection"></a>Удаление androidManagedAppProtection
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProte
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppPro
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления userPfxPaddingScheme
 description: Поддерживаемые значения для заполнения схемы, используемый поставщиком шифрования.
-ms.openlocfilehash: 4b77519b361c4b86f5c8bea5d5afebe6d5328744
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa2c2e67419b92c17a6fdb62df108847964f49a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082386"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337165"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>Тип перечисления userPfxPaddingScheme
 
@@ -16,9 +17,9 @@ ms.locfileid: "27082386"
 
 Поддерживаемые значения для заполнения схемы, используемый поставщиком шифрования.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Н/Д|
+|none|0|Н/Д|
 |PKCS1|1|Н/Д|
 |oaepSha1|2|Н/Д|
 |oaepSha256|3|Н/Д|

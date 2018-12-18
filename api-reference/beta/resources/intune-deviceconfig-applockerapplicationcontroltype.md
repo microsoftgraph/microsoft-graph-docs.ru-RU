@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления appLockerApplicationControlType
 description: Возможные значения элемента управления типов AppLocker приложений
-ms.openlocfilehash: 150e3daa6b8deb2d1e17c3ea7caf345ba39446f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0d6190170d6f6695a3303047f9ccb193afd248f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077227"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330207"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>Тип перечисления appLockerApplicationControlType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077227"
 
 Возможные значения элемента управления типов AppLocker приложений
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Значение по умолчанию устройства, тип элемента управления приложениями, не выбран.|
 |enforceComponentsAndStoreApps|1|Принудительное применение компонента и хранилища приложений Windows.|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса WorksheetProtection
 description: Представляет защиту объекта листа.
-ms.openlocfilehash: 8886117df669201a0c8a6f9fda1df18bb47cc4a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 91415b067fbe54333e32d1a2ed84bce5025b7d3a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082102"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339209"
 ---
 # <a name="worksheetprotection-resource-type"></a>Тип ресурса WorksheetProtection
 

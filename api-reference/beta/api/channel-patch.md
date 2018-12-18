@@ -1,12 +1,13 @@
 ---
 title: Исправление канала
 description: Обновляет свойства указанного канала.
-ms.openlocfilehash: c7cc2db83fbab0e04f1620d71c4c7cf7a69b526f
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 267cc6bc148259bc573625fdb2775ac8b581a988
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222382"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328352"
 ---
 # <a name="patch-channel"></a>Исправление канала
 
@@ -41,7 +42,7 @@ PATCH /teams/{id}/channels/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [канала](../resources/channel.md) .
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -55,7 +56,7 @@ PATCH /teams/{id}/channels/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

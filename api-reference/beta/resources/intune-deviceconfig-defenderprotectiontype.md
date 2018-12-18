@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления defenderProtectionType
 description: Возможные значения Защитник
-ms.openlocfilehash: 2623f28e61f38d37656da65bfa475ccd1063b57c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b71e7c1b9212e38a0f208121a7153b1512326a98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339706"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>Тип перечисления defenderProtectionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080410"
 
 Возможные значения Защитник
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение по умолчанию устройства, без цели.|
 |Включение|1|Функциональные возможности блока.|

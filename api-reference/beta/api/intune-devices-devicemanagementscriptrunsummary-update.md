@@ -1,12 +1,13 @@
 ---
 title: Обновление deviceManagementScriptRunSummary
 description: Обновление свойства объекта deviceManagementScriptRunSummary.
-ms.openlocfilehash: 83e45ce7cf01f0fe95b2a4240ebafc1dd88507c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7acb5406d6806f9c28498f2766b8a92970893af0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077395"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338376"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Обновление deviceManagementScriptRunSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша сценарий управления устройства выполните сводки сущности.|
+|id|Строка|Клавиша сценарий управления устройства выполните сводки сущности.|
 |successDeviceCount|Int32|Число допустимых устройства.|
 |errorDeviceCount|Int32|Число ошибок устройства.|
 |successUserCount|Int32|Число пользователей успеха.|
@@ -75,8 +76,7 @@ Content-length: 108
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

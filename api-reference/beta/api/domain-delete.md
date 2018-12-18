@@ -1,12 +1,13 @@
 ---
 title: Удаление домена
 description: Удаление домена из клиента.
-ms.openlocfilehash: 2ed3772d767099e8ccd7fd5453c7a8231c9ea96c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: bf5e509b36491ab6eb05aec2b7207d9bbed01bc3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078220"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338985"
 ---
 # <a name="delete-domain"></a>Удаление домена
 

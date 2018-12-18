@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления deviceEnrollmentType
 description: Возможные способы добавления мобильного устройства для управления.
-ms.openlocfilehash: 5c921e30f642e1d44d675f8bee7a5b79c53ce428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: db66ca30758c11230282f7f3a1f6966089d6883b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024466"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339328"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>Тип перечисления deviceEnrollmentType
 
@@ -14,7 +15,7 @@ ms.locfileid: "27024466"
 
 Возможные способы добавления мобильного устройства для управления.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Тип регистрации значения по умолчанию не собираются.|
 |userEnrollment|1|Регистрация управляемых пользователя по каналу BYOD.|

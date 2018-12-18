@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления deviceEnrollmentFailureReason
 description: Категории верхнего уровня failure для регистрации.
-ms.openlocfilehash: c0062a829811d9fb25453adb260d4d2be0295dd7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7747008f00348a4671713a28c0d1e48e156e9b38
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081135"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325083"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>Тип перечисления deviceEnrollmentFailureReason
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081135"
 
 Категории верхнего уровня failure для регистрации.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Значение по умолчанию причина сбоя не известен.|
 |проверка подлинности|1|Ошибка проверки подлинности|

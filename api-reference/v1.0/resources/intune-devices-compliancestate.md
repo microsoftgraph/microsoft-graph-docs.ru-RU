@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления complianceState
 description: Состояние соответствия требованиям.
-ms.openlocfilehash: 041a2267b952d37e0aeef29e1325e5cb7b561ed7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3045685518f1c7718f9a5f46cd10e0add6fe05b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027853"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330277"
 ---
 # <a name="compliancestate-enum-type"></a>Тип перечисления complianceState
 
@@ -14,7 +15,7 @@ ms.locfileid: "27027853"
 
 Состояние соответствия требованиям.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестно.|
 |спецификации|1|Спецификации.|

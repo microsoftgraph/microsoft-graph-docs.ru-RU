@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта managedAppPolicyDeploymentSummary
 description: Обновление свойств объекта managedAppPolicyDeploymentSummary.
-ms.openlocfilehash: 2c0bf77e3dbd3720bcb0cfea28d69155174fb776
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f3d8445ac8b937b1a4b5ce10c0b89987103967dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082809"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325188"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Обновление объекта managedAppPolicyDeploymentSummary
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -50,12 +51,12 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Н/Д|
+|displayName|Строка|Н/Д|
 |configurationDeployedUserCount|Int32|Н/Д|
 |lastRefreshTime|DateTimeOffset|Н/Д|
 |configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Н/Д|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 
 
@@ -89,8 +90,7 @@ Content-length: 516
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

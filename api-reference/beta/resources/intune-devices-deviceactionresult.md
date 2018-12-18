@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceActionResult
 description: Результат действия, касающегося устройства
-ms.openlocfilehash: ac37cdff8ec323dfb8a2019b383d506c1b7e1076
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd2160c501820ec04a94b618b3456a3f8fafa6cd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076075"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324950"
 ---
 # <a name="deviceactionresult-resource-type"></a>Тип ресурса deviceActionResult
 

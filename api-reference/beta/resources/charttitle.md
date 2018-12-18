@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса ChartTitle
 description: Представляет объект заголовка диаграммы.
-ms.openlocfilehash: ce2091c0cbd2435d96a1a931f7e46d6e2b8fb920
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b3d685c68b14ebe3f49eb3dd9186838c977c1cac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082370"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338103"
 ---
 # <a name="charttitle-resource-type"></a>Тип ресурса ChartTitle
 
@@ -20,7 +21,7 @@ ms.locfileid: "27082370"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartTitle](../api/charttitle-get.md) | [ChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
-|[Update](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
+|[обновление](../api/charttitle-update.md). | [ChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

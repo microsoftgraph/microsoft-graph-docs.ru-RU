@@ -1,12 +1,13 @@
 ---
 title: 'message: createReply'
 description: 'Создание черновика сообщения ответа, чтобы добавить примечание или обновить все свойства сообщения '
-ms.openlocfilehash: 40bdd5792e9d7a018fc8c7b1aca2d5955a8ef807
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: cf7bfb3ce584a17a3e4105d04c7e781b69c4901c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338943"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -88,8 +89,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

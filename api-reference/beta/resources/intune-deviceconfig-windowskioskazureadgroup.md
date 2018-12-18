@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsKioskAzureADGroup
 description: Класс, используемый для идентификации группу AzureAD для базовой конфигурации
-ms.openlocfilehash: 4853013c9c1e9d4c276ee5e2ba83cb8b36afd06c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c4cdd8388c71b5f051ea8338e82123c241ec429
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075284"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339524"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>Тип ресурса windowsKioskAzureADGroup
 
@@ -21,8 +22,8 @@ ms.locfileid: "27075284"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя группы AzureAD, будет заблокирована этой базовой конфигурации|
-|groupId|String|Идентификатор группы AzureAD, который будет заблокирована этой базовой конфигурации|
+|displayName|Строка|Отображаемое имя группы AzureAD, будет заблокирована этой базовой конфигурации|
+|groupId|Строка|Идентификатор группы AzureAD, который будет заблокирована этой базовой конфигурации|
 
 ## <a name="relationships"></a>Связи
 Нет

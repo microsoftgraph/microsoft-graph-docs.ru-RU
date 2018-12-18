@@ -1,12 +1,13 @@
 ---
 title: Обновление сообщения
 description: Обновление свойств объекта сообщения.
-ms.openlocfilehash: 7d78f3827618378299043c601fcf490556b5d5b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: b8f39dc9648203f86749ba06b88bf2f74b79d88a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024948"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337543"
 ---
 # <a name="update-message"></a>Обновление сообщения
 
@@ -42,16 +43,16 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
 |ccRecipients|Коллекция объектов Recipient|Получателей копии сообщения. Обновляемые только если isDraft = true.|
 |from|Recipient|Владелец почтового ящика и отправитель сообщения. Обновляемые только если isDraft = true. Должно соответствовать фактический почтового ящика, используемого.|
-|importance|String|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused` или `other`. |
+|importance|Строка|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
+|inferenceClassification | Строка | Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused` или `other`. |
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Обновляемые только если isDraft = true.|
-|isRead|Логический|Указывает, прочитано ли сообщение.|
+|isRead|Boolean|Указывает, прочитано ли сообщение.|
 |replyTo|Коллекция объектов Recipient|Электронные адреса, которые необходимо использовать при ответе. Обновляемые только если isDraft = true.|
 |sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Обновляемые только если isDraft = true, а также время отправки сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактический почтового ящика, используемого.|
 |toRecipients|Коллекция объектов Recipient|Кому получателей сообщения. Обновляемые только если isDraft = true.|
 |Основной текст|ItemBody|Текст сообщения. Обновляемые только если isDraft = true.|
-|isDeliveryReceiptRequested|Логический|Указывает, необходимо ли запрашивать уведомление о прочтении сообщения.|
-|isReadReceiptRequested|Логический|Указывает, необходимо ли запрашивать уведомление о прочтении сообщения.|
+|isDeliveryReceiptRequested|Boolean|Указывает, необходимо ли запрашивать уведомление о прочтении сообщения.|
+|isReadReceiptRequested|Boolean|Указывает, необходимо ли запрашивать уведомление о прочтении сообщения.|
 |subject|String|Тема сообщения. Обновляемые только если isDraft = true.|
 
 Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `PATCH` можно добавлять, обновлять или удалять собственные данные, касающиеся определенных приложений, в настраиваемых свойствах расширения в существующем экземпляре **message**.

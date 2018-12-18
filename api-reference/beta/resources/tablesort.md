@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса TableSort
 description: Управляет операциями сортировки для объектов Table.
-ms.openlocfilehash: 02ee1f72bc53a3097c76cf9bab62a165fe3c56f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 52ee5288698b236f7ee4d29eb75fdac5ad14fa0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082730"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339825"
 ---
 # <a name="tablesort-resource-type"></a>Тип ресурса TableSort
 

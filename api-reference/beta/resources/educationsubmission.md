@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationSubmission
 description: Отправка сообщений о принадлежат назначения. Отправка представляет ресурсы, отдельных пользователей (или групп) включить в для назначения и марки/отзыв, который возвращается.
-ms.openlocfilehash: f0b1cc9ccd169d29c31eb96bb6305f6d7cdcd6b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 5535aef4db988e0f4c4417128b5b53bbed884cc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075481"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328023"
 ---
 # <a name="educationsubmission-resource-type"></a>Тип ресурса educationSubmission
 
@@ -24,23 +25,23 @@ ms.locfileid: "27075481"
 |[Получение educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Чтение свойства и связи объекта **educationSubmission** .|
 |[Список ресурсов](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md) коллекции| Получение коллекции объектов **educationSubmissionResource** .|
 |[Список submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) коллекции| Получение коллекции объектов **educationSubmissionResource** .|
-|[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Обновление объекта **educationSubmission** . |
+|[обновление](../api/educationsubmission-update.md). | [educationSubmission](educationsubmission.md) |Обновление объекта **educationSubmission** . |
 |[Возврат](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Преподаватель использует return для указания, что оценки и отзывы будут показаны студента.|
 |[Отправить](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Отправка используется для включения в назначении студента. Это будет копировать ресурсы в папке **submittedResources** для ранжирования и обновляет сведения о состоянии.|
 |[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Студента использует unsubmit для перемещения state подачи из добавленных назад в рабочее. Это будет копировать ресурсы в папке **workingResources** для ранжирования и обновляет сведения о состоянии.|
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |свои отзывы и предложения|[educationFeedback](educationfeedback.md)|Содержит свойство свои отзывы и предложения, которое хранит учителя примечания к студентов.|
 |оценка|[educationAssignmentGrade](educationassignmentgrade.md)|Содержит сведения о марки назначает преподавателей для этой отправки.|
-|id|String| Только для чтения.|
+|id|Строка| Только для чтения.|
 |Получатель|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Назначенный этой отправки.|
 |Выпустил|[identitySet](identityset.md)|Пользователь, который перемещены состояние в этом отправки освободить.|
 |releasedDateTime|DateTimeOffset|Момент времени, когда была выпущена подачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |returnedBy|[identitySet](identityset.md)|Пользователь, который перемещены состояние в этом отправки возвращено.|
 |returnedDateTime|DateTimeOffset|Момент времени, когда был возвращен подачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|resourcesFolderUrl|String|Папка, где должны храниться все файловые ресурсы в этом отправки.|
+|resourcesFolderUrl|String.|Папка, где должны храниться все файловые ресурсы в этом отправки.|
 |status|string| Только для чтения. Возможные значения: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|Пользователь, который перемещены в отправленных состояние ресурса.|
 |submittedDateTime|DateTimeOffset|Момент времени, когда подачи был перемещен в отправленных состояние. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -48,7 +49,7 @@ ms.locfileid: "27075481"
 |unsubmittedDateTime|DateTimeOffset|Момент времени, когда подачи был перемещен из отправленных в рабочее состояние. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resources|[educationSubmissionResource](educationsubmissionresource.md) коллекции| Допускается значение null.|
 |submittedResources|[educationSubmissionResource](educationsubmissionresource.md) коллекции| Только для чтения. Допускается значение null.|

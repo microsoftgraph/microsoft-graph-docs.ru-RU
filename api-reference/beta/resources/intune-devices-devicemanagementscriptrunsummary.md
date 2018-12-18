@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceManagementScriptRunSummary
 description: Содержит свойства для выполнения Сводка сценарий управления устройства.
-ms.openlocfilehash: 9269ae5f3f6fc889cb02ad90e2897c9a3e979241
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 347a4e5cd3c4201949841054b69c217ad4f9fa8e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080613"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338999"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>Тип ресурса deviceManagementScriptRunSummary
 
@@ -24,7 +25,7 @@ ms.locfileid: "27080613"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша сценарий управления устройства выполните сводки сущности.|
+|id|Строка|Клавиша сценарий управления устройства выполните сводки сущности.|
 |successDeviceCount|Int32|Число допустимых устройства.|
 |errorDeviceCount|Int32|Число ошибок устройства.|
 |successUserCount|Int32|Число пользователей успеха.|

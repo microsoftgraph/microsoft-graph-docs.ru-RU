@@ -1,12 +1,13 @@
 ---
 title: Создание объекта RangeBorder
 description: С помощью этого API можно создать объект RangeBorder.
-ms.openlocfilehash: 0c0d17efd41b3414275639152bc91d8785814524
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d5908c149b91aa81e30482fdc995cca0126ada2b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077033"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337417"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -65,8 +66,7 @@ Content-length: 136
 ```
 Предоставьте в тексте запроса описание объекта [RangeBorder](../resources/rangeborder.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

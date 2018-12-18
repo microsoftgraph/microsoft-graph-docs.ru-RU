@@ -1,12 +1,13 @@
 ---
 title: Удаление activeDirectoryWindowsAutopilotDeploymentProfile
 description: Удаляет activeDirectoryWindowsAutopilotDeploymentProfile.
-ms.openlocfilehash: a68a79ec3b360cb64033fee5a17526a061fa94ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ae86497a437b2064994d82a8e0c04e54ec3d245
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078384"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338859"
 ---
 # <a name="delete-activedirectorywindowsautopilotdeploymentprofile"></a>Удаление activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploym
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

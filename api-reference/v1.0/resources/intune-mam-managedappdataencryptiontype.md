@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления managedAppDataEncryptionType
 description: Представляет уровень, на который приложение шифрование для управляемых приложений
-ms.openlocfilehash: 7efda037bc2b4d5794c575823845c0955be46477
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3cbb733eb578ca839e32851d8a6d217f69d6799d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027237"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330326"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>Тип перечисления managedAppDataEncryptionType
 
@@ -14,7 +15,7 @@ ms.locfileid: "27027237"
 
 Представляет уровень, на который приложение шифрование для управляемых приложений
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |useDeviceSettings|0|Приложение шифрование на основе параметров по умолчанию на устройстве.|
 |afterDeviceRestart|1|Приложение шифрование при перезапуске устройства.|

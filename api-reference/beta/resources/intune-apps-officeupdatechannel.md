@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления officeUpdateChannel
 description: Перечисление для указания канала обновлений Office 365.
-ms.openlocfilehash: 8e63f557dd6c245486ae10547722b96125b3d1cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 71a9d8f8722dd2ef151dcb7aad1bd6b825930ba6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079135"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338068"
 ---
 # <a name="officeupdatechannel-enum-type"></a>Тип перечисления officeUpdateChannel
 
@@ -16,9 +17,9 @@ ms.locfileid: "27079135"
 
 Перечисление для указания канала обновлений Office 365.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Н/Д|
+|none|0|Н/Д|
 |текущий|1|Н/Д|
 |отложенное|2|Н/Д|
 |firstReleaseCurrent|3|Н/Д|
