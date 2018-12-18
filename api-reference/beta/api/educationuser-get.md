@@ -1,12 +1,13 @@
 ---
 title: Получение educationUser
 description: Получение свойств и связей пользователя.
-ms.openlocfilehash: e40b4bfea7daa1d6df1b5d06b9a8e67407647b28
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 9a4a5eaa4e9b751b063281a6d9cb7ec9e9281c12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074683"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313582"
 ---
 # <a name="get-educationuser"></a>Получение educationUser
 

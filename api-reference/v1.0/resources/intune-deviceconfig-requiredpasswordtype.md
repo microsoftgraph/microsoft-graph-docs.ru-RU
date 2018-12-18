@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления requiredPasswordType
 description: Возможные значения необходимые пароли.
-ms.openlocfilehash: e0fcbfb00ff1aafd11dee866d501ba25e21c7a05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46ccd54a5a34b0fa3ce9e4eceec65d3cecf717b2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026080"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314478"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>Тип перечисления requiredPasswordType
 
@@ -14,7 +15,7 @@ ms.locfileid: "27026080"
 
 Возможные значения необходимые пароли.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение по умолчанию устройства, без цели.|
 |буквенно-цифровые;|1|Буквенно-цифровой пароль.|

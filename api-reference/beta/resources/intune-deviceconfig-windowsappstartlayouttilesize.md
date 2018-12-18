@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsAppStartLayoutTileSize
 description: Размер плитку приложение Windows в макет Пуск.
-ms.openlocfilehash: e652cc8eb04254a83ad95a6dd0ba51bd2b937af9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef00ebd06528fdd8f5d832d11ef34ee9f0093a3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313498"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>Тип перечисления windowsAppStartLayoutTileSize
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080121"
 
 Размер плитку приложение Windows в макет Пуск.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |hidden|0|Скрытый.|
 |small|1|Небольшой 1 x 1.|

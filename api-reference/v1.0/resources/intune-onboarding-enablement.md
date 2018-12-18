@@ -1,12 +1,13 @@
 ---
 title: Включение тип перечисления
 description: Н/Д
-ms.openlocfilehash: a18ee03a5eefa96bb0e592dea349e2ca11592004
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 196372e0b28b4c189fc6d8629ea74ece0df7a6ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024656"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311727"
 ---
 # <a name="enablement-enum-type"></a>Включение тип перечисления
 
@@ -14,7 +15,7 @@ ms.locfileid: "27024656"
 
 Н/Д
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Н/Д|
 |enabled|1|Н/Д|

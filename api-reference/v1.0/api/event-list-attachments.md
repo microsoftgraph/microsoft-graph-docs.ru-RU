@@ -1,12 +1,13 @@
 ---
 title: Список вложений
 description: Получение списка объектов attachment, вложенных в данные о событии.
-ms.openlocfilehash: 4ba864aad8e36429354bd7aa71bca061bba9f7d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: ca179e935279fce80f4364c0412f2c038ce4bcde
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027520"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315472"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -82,8 +83,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

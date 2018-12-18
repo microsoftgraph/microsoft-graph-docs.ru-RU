@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса auditProperty
 description: Класс, содержащий свойства для свойства аудита.
-ms.openlocfilehash: eaffa5552d611ac2ef8bb236009b9520d1134586
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2d7cd7f1fbbf9f813cf447ca53e0d4652eb0feda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027849"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312903"
 ---
 # <a name="auditproperty-resource-type"></a>Тип ресурса auditProperty
 

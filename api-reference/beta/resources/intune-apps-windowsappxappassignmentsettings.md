@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsAppXAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения Windows AppX в группу.
-ms.openlocfilehash: ce65e3fbc841e2df6dc378b7f440fd588c7bf1d5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84103a91c3c670ef3da8a0ea2a2e38a95cff79a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076742"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311622"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>Тип ресурса windowsAppXAppAssignmentSettings
 

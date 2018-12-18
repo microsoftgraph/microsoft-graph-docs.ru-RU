@@ -1,12 +1,13 @@
 ---
 title: educationPowerSchoolDataProvider ресурсов
 description: Используется для настройки синхронизации профилей данных school при PowerSchool используется в качестве источника ввода.
-ms.openlocfilehash: 4c58d3b8baf1569aaeff68375b2dd3643db8b063
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 714866d03c70aae8ea03a27b63fb3efbb4fa5ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080204"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312805"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider ресурсов
 
@@ -18,14 +19,14 @@ ms.locfileid: "27080204"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:-|:-|:-|
-| **connectionUrl** | String | URL-адрес подключения к экземпляру PowerSchool. |
-| **clientId** | String |  Идентификатор клиента, используемого для подключения к PowerSchool. |
-| **clientSecret** | String |  Секрет клиента для проверки подлинности подключения к экземпляру PowerSchool. |
+| **connectionUrl** | String. | URL-адрес подключения к экземпляру PowerSchool. |
+| **clientId** | String. |  Идентификатор клиента, используемого для подключения к PowerSchool. |
+| **clientSecret** | String. |  Секрет клиента для проверки подлинности подключения к экземпляру PowerSchool. |
 | **schoolsIds** | Коллекция String |  Список школы для синхронизации. |
-| **schoolYear** | String |  Учебный год для синхронизации. |
-| **allowTeachersInMultipleSchools** | Логический |  Указывает, имеет ли источник несколько идентификаторов для одного студент и преподаватель. |
+| **schoolYear** | String. |  Учебный год для синхронизации. |
+| **allowTeachersInMultipleSchools** | Boolean. |  Указывает, имеет ли источник несколько идентификаторов для одного студент и преподаватель. |
 | **пользовательских настроек** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Дополнительные настройки применяется для синхронизации профилей.|
 
 ## <a name="json-representation"></a>Представление JSON

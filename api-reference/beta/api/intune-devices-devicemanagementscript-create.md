@@ -1,12 +1,13 @@
 ---
 title: Создание deviceManagementScript
 description: Создание нового объекта deviceManagementScript.
-ms.openlocfilehash: feb3463e679e77a1702a38f8cc7fd0edb28170d5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 862b9c3ba50f879e92e47b50e6efaf0bcf41927a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082344"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315437"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,15 +48,15 @@ POST /deviceManagement/deviceManagementScripts
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сценарий управления устройства.|
-|displayName|String|Имя скрипта управления устройства.|
-|описание|String|Необязательное описание сценарий управления устройства.|
+|id|Строка|Уникальный идентификатор для сценарий управления устройства.|
+|displayName|Строка|Имя скрипта управления устройства.|
+|описание|Строка|Необязательное описание сценарий управления устройства.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска сценария. Если не определена сценарий будет выполняться один раз|
-|scriptContent|Двоичный|Содержимое сценария.|
+|scriptContent|Binary|Содержимое сценария.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценарий управления устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценарий управления устройства.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения скрипта управления устройства выполняется в. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Логический|Указывает, должно быть извлеченных подписи скрипта.|
+|enforceSignatureCheck|Boolean.|Указывает, должно быть извлеченных подписи скрипта.|
 |fileName|String|Имя файла сценария.|
 
 
@@ -87,8 +88,7 @@ Content-length: 422
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

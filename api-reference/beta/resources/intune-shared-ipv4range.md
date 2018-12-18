@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса iPv4Range
 description: Диапазон IPv4-адресов
-ms.openlocfilehash: 9147bb45380ec8d207bf8b4f332efe5a370f3c07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eae240d185a6cf0dc2fc7d0d83194dc9f3f6f00d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075891"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314772"
 ---
 # <a name="ipv4range-resource-type"></a>Тип ресурса iPv4Range
 
@@ -21,8 +22,8 @@ ms.locfileid: "27075891"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|lowerAddress|String|Нижний IP-адрес|
-|upperAddress|String|Верхний IP-адрес|
+|lowerAddress|Строка|Нижний IP-адрес|
+|upperAddress|Строка|Верхний IP-адрес|
 
 ## <a name="relationships"></a>Связи
 Нет

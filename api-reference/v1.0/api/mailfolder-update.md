@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта mailfolder
 description: Обновление свойств объекта mailfolder.
-ms.openlocfilehash: cc28678ed6caaa8b6dff50e0cc24ae4a89d6aa22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2c740d72557204d01abea4e2582467c740295197
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026321"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315052"
 ---
 # <a name="update-mailfolder"></a>Обновление объекта mailfolder
 
@@ -37,7 +38,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Отображаемое имя объекта mailFolder.|
+|displayName|Строка|Отображаемое имя объекта mailFolder.|
 
 ## <a name="response"></a>Отклик
 
@@ -59,8 +60,7 @@ Content-length: 159
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

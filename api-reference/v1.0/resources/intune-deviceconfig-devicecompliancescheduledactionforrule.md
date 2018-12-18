@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceComplianceScheduledActionForRule
 description: Запланированное действие для правила
-ms.openlocfilehash: 8beb0926064beca3bee9da33a9396839a2101b7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 36907817adea4a457f13fce57345d68b866be116
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028173"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315619"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Тип ресурса deviceComplianceScheduledActionForRule
 
@@ -25,7 +26,7 @@ ms.locfileid: "27028173"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |ruleName|String|Имя правила, к которому применяется это запланированное действие.|
 
 ## <a name="relationships"></a>Связи

@@ -1,12 +1,13 @@
 ---
 title: 'Table: delete'
 description: Удаляет таблицу.
-ms.openlocfilehash: 849840a2c89007a0ab19e21fedcadb418c6cee40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f6b37823daab0b6f4bb2ec34d65f5d24d4c00710
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080819"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310614"
 ---
 # <a name="table-delete"></a>Table: delete
 

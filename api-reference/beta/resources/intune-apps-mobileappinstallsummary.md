@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileAppInstallSummary
 description: Содержит свойства для установки сведениям о мобильных приложений.
-ms.openlocfilehash: bda3f798a86b38ca0d1224ce509c355a8aec998a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d998e0fe5b136afe7aa18741c5c91fcde9adcc37
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075290"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314786"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>Тип ресурса mobileAppInstallSummary
 
@@ -24,7 +25,7 @@ ms.locfileid: "27075290"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, которые были успешно установлены этого приложения.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
 |notApplicableDeviceCount|Int32|Количество устройств, которые не применимы для этого приложения.|

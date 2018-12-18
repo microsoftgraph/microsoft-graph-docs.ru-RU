@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileAppTroubleshootingAppTargetHistory
 description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
-ms.openlocfilehash: c7397e182c1af4c01753623a655579f5f8c6ee08
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cdb901d4c532b57025837a2fb0cc0975ceba3f8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078058"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312735"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>Тип ресурса mobileAppTroubleshootingAppTargetHistory
 
@@ -19,10 +20,10 @@ ms.locfileid: "27078058"
 Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Время возникновения элемент журнала. Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|securityGroupId|String|К которому нацелено AAD идентификатор группы безопасности.|
+|securityGroupId|String.|К которому нацелено AAD идентификатор группы безопасности.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
 |errorCode|String|Код ошибки сбоя, пустой, если нет сбоев.|
 

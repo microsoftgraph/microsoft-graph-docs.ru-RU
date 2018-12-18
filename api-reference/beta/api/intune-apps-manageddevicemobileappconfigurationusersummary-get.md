@@ -1,12 +1,13 @@
 ---
 title: Get managedDeviceMobileAppConfigurationUserSummary
 description: Чтение свойств и связей объекта managedDeviceMobileAppConfigurationUserSummary.
-ms.openlocfilehash: c3b768a514f33d3bc6b24453473d2d0b79a5d2de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 06b4972b129c18f8ddda6c1cd9335923517db37e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080307"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311433"
 ---
 # <a name="get-manageddevicemobileappconfigurationusersummary"></a>Get managedDeviceMobileAppConfigurationUserSummary
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

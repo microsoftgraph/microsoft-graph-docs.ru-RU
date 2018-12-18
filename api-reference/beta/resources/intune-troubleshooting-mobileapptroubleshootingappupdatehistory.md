@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileAppTroubleshootingAppUpdateHistory
 description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
-ms.openlocfilehash: d546475f568c279137e411d546765fe828c43975
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5f5775ac25c6bfce283bc67a195393f0cbe9ab75
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312105"
 ---
 # <a name="mobileapptroubleshootingappupdatehistory-resource-type"></a>Тип ресурса mobileAppTroubleshootingAppUpdateHistory
 
@@ -19,7 +20,7 @@ ms.locfileid: "27079239"
 Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Время возникновения элемент журнала. Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 

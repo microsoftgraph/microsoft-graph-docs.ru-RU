@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса directoryAudit
 description: Этот ресурс представляет элементы аудита каталогов и ее коллекцию
-ms.openlocfilehash: 8656bd910cd5b84d7760f973b160d91efe08abe1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 5cbfc1320f721afd71ed3f196bb94a5c716d2c5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074598"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312791"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 Этот ресурс представляет элементы аудита каталогов и ее коллекцию
@@ -21,18 +22,18 @@ ms.locfileid: "27074598"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Указывает дату и время выполнения операции. Тип метки времени — всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|activityDisplayName|String|Указывает имя действия или имя операции (например: «Создание пользователя», «Добавить члена в группу»). Список действий вход можно получить [список активности Azure Ad](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
+|activityDisplayName|String.|Указывает имя действия или имя операции (например: «Создание пользователя», «Добавить члена в группу»). Список действий вход можно получить [список активности Azure Ad](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
 |additionalDetails|Коллекция [keyValue](keyvalue.md)|Указывает Дополнительные сведения для действия.|
 |category|String|Показывает, какая категория ресурсов, целевым с помощью этого действия. (Например: управление пользователей, группы управления и т.д..)|
 |correlationId|GUID|Указывает уникальный идентификатор, и приводятся рекомендации по их действия, охватывающих различных служб. Можно использовать для журналов трассировки в службах.|
-|id|String| Указывает уникальный идентификатор для действия. Это идентификатор GUID.|
+|id|Строка| Указывает уникальный идентификатор для действия. Это идентификатор GUID.|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Указывает, что сведения о пользователе или приложение инициировал действие.|
-|loggedByService|String|Указывает сведения, на котором служба инициировал действие (например: управление средствами самостоятельного создания пароля, основная служба каталогов, B2C, приглашение пользователей, Microsoft Identity Manager, привилегированной управления удостоверениями.|
+|loggedByService|String.|Указывает сведения, на котором служба инициировал действие (например: управление средствами самостоятельного создания пароля, основная служба каталогов, B2C, приглашение пользователей, Microsoft Identity Manager, привилегированной управления удостоверениями.|
 |result|string| Указывает результат операции. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.||
-|resultReason|String|Указывает причину сбоя, если результат является «Ошибка» или «время ожидания».|
+|resultReason|String.|Указывает причину сбоя, если результат является «Ошибка» или «время ожидания».|
 |targetResources|[targetResource](targetresource.md) коллекции|Указывает на данные, на котором был изменен ресурсов из-за загрузки. Тип ресурса конечного может быть пользователя, устройства, каталог, приложение, роли, группы, политики или другое.
 
 ## <a name="relationships"></a>Связи

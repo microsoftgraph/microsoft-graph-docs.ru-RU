@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления applicationGuardBlockClipboardSharingType
 description: Возможные значения для applicationGuardBlockClipboardSharingType
-ms.openlocfilehash: e0e05001e4f3cedc2893fc6b2006f5b5b5d74db6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d55945c0e229801bab9a338a475e6ef6fd5e8b02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079228"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311510"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>Тип перечисления applicationGuardBlockClipboardSharingType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079228"
 
 Возможные значения для applicationGuardBlockClipboardSharingType
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен|
 |blockBoth|1|Буфер обмена блока совместный доступ к данным из узла в контейнер и из контейнера для размещения|

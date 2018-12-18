@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса omaSettingString
 description: Определение строки параметра OMA.
-ms.openlocfilehash: 543b993ee557c47e415a2f19f9791b0685c818e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a62f6dee2bf0f5a9ca96488625a84ceef5f7c785
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025384"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311202"
 ---
 # <a name="omasettingstring-resource-type"></a>Тип ресурса omaSettingString
 
@@ -19,10 +20,10 @@ ms.locfileid: "27025384"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|описание|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|value|String|Значение|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|описание|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|value|Строка|Значение|
 
 ## <a name="relationships"></a>Связи
 Нет

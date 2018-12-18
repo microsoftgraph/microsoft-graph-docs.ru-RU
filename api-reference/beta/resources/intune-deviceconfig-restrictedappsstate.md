@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления restrictedAppsState
 description: Состояние ограниченных приложений
-ms.openlocfilehash: 953e669e2a5c02b6c6eb92318c3fb7f8a0a166a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9210a7c2dca1238a86d774297261045e7fd672f7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076863"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312441"
 ---
 # <a name="restrictedappsstate-enum-type"></a>Тип перечисления restrictedAppsState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076863"
 
 Состояние ограниченных приложений
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |prohibitedApps|0|Prohibited приложений|
 |notApprovedApps|1|Не утверждено приложений|

@@ -1,12 +1,13 @@
 ---
 title: Создание intuneBrandingProfile
 description: Создание нового объекта intuneBrandingProfile.
-ms.openlocfilehash: 42a90e6a5488e8f9e37fa5c3a5fda18a9d4f424f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4058e30fe858c261a59b105652d198946b630222
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078103"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314877"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание intuneBrandingProfile
 
@@ -36,7 +37,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,10 +48,10 @@ POST /deviceManagement/intuneBrandingProfiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша профилей|
-|Имя_профиля|String|Имя профиля|
-|profileDescription|String|Описание профиля|
-|isDefaultProfile|Логический|Представляет при использовании профиля по умолчанию.|
+|id|Строка|Клавиша профилей|
+|Имя_профиля|String.|Имя профиля|
+|profileDescription|String.|Описание профиля|
+|isDefaultProfile|Boolean.|Представляет при использовании профиля по умолчанию.|
 |createdDateTime|DateTimeOffset|При создании BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile.|
 |displayName|String|Название компании или организации, которое отображается пользователям.|
@@ -122,8 +123,7 @@ Content-length: 1269
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsKioskSingleUWPApp
 description: Класс, используемый для идентификации информация приложения UWP для базовой конфигурации
-ms.openlocfilehash: 009d53d1439894b59a89a1f269df34c4dbb09ce1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd1dffd5a01b89db27132770d4c8ffe0094eed8f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079777"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312182"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>Тип ресурса windowsKioskSingleUWPApp
 
@@ -19,7 +20,7 @@ ms.locfileid: "27079777"
 Наследуется от [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md);|Это единственный идентификатор модели приложения пользователя (AUMID), чтобы оно было доступно для использования в полноэкранном режиме запуска|
 

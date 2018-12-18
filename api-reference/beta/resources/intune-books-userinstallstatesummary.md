@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса userInstallStateSummary
 description: Содержит свойства сводки по состоянию установки для пользователя.
-ms.openlocfilehash: 87d3dfbf5132c495c3d2507e94534972b30fd56f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d8976cd7db7baabaec60bdf3fe2ed18094156c1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079842"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314387"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>Тип ресурса userInstallStateSummary
 
@@ -27,7 +28,7 @@ ms.locfileid: "27079842"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|

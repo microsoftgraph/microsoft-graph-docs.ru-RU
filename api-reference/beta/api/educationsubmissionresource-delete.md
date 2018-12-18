@@ -1,12 +1,13 @@
 ---
 title: Удаление educationSubmissionResource
-description: " ресурсов в исходное состояние. Если ресурс не был скопирован из назначения, но был добавлен из студента, ресурса просто удален."
-ms.openlocfilehash: 9eb5b08e2e5481e707cc6c1e0b0f8339e3d22ad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Удаляет ресурс из подачи. Это может быть выполнено только с учащегося. Если ресурс был скопирован из назначения, новую копию ресурса создается после удаления текущей копии.
+author: dipakboyed
+ms.openlocfilehash: d56df6cee3884556186554d9c24ae09ed802c4f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079765"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313274"
 ---
 # <a name="delete-educationsubmissionresource"></a>Удаление educationSubmissionResource
 

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления prereleaseFeatures
 description: Возможные значения для функции предварительного выпуска.
-ms.openlocfilehash: 089ec3159c39da0412beb0eda9a50cbba7885f03
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bcdf72123a9a523aa6aca678d004a8e820b3f5d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025617"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311853"
 ---
 # <a name="prereleasefeatures-enum-type"></a>Тип перечисления prereleaseFeatures
 
@@ -14,7 +15,7 @@ ms.locfileid: "27025617"
 
 Возможные значения для функции предварительного выпуска.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|User Defined, значение по умолчанию, без цели.|
 |settingsOnly|1|Параметры только возможности.|

@@ -1,12 +1,13 @@
 ---
 title: Получение windowsProtectionState
 description: Чтение свойства и связи объекта windowsProtectionState.
-ms.openlocfilehash: 064b47a9595838d0e77a5378b6238e9f6fd227b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6baa42445c1f117b1f86ccc5fa726f4d6f939378
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077612"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315171"
 ---
 # <a name="get-windowsprotectionstate"></a>Получение windowsProtectionState
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -57,8 +58,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

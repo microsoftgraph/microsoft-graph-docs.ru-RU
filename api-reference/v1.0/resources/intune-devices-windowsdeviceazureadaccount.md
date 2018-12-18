@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsDeviceAzureADAccount
 description: Н/Д
-ms.openlocfilehash: 360c5e4a0723e1dea5a81c28884fd46d80cf2b56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a6abae06e16d33f92c7f275890ec62ce294367da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028234"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313743"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>Тип ресурса windowsDeviceAzureADAccount
 
@@ -19,8 +20,8 @@ ms.locfileid: "27028234"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|password|String|Н/Д Наследуется от ресурса [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|userPrincipalName|String|Н/Д|
+|password|Строка|Н/Д Наследуется от ресурса [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
+|userPrincipalName|Строка|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет

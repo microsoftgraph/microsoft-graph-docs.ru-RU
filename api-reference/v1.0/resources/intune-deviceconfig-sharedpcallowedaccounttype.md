@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления sharedPCAllowedAccountType
 description: Тип учетных записей, которые могут совместно использовать ПК.
-ms.openlocfilehash: a17adaa52b35b2ca2c165b4ecf6a4e64975572f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c85940d71c60a909ff0eda6cef4b1dd2c0942c3f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027637"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314569"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>Тип перечисления sharedPCAllowedAccountType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27027637"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Гостевая|1|Только гостевых учетных записей. Значение по умолчанию.|
-|домен|2|Только присоединенный к домену учетных записей.|
+|domain;|2|Только присоединенный к домену учетных записей.|
 
 
 

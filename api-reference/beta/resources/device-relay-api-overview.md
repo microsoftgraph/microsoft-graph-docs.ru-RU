@@ -1,12 +1,13 @@
 ---
 title: См. также
 description: '{Это Обзор API уровня модуля ретрансляции устройства}.'
-ms.openlocfilehash: e870ad655e022bca6206d132ce2c144bcc332cae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a398fb25499c838788ae43905d1a7b0d0519167d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075809"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312203"
 ---
 # <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>Используйте устройство реле API для передачи взаимодействие с пользователем через устройства (Предварительная версия)
 

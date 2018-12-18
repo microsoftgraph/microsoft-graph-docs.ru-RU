@@ -1,12 +1,13 @@
 ---
 title: Добавление вложения
 description: 'С помощью этого API можно добавить вложение к сообщению. '
-ms.openlocfilehash: 2e1a3eae50dc506500d10331bdf3a6d4450b37fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 868ce046a37d027c675b005cef013892deffe2a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024849"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314618"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -147,8 +148,7 @@ Content-length: 200
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

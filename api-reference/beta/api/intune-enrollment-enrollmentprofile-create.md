@@ -1,12 +1,13 @@
 ---
 title: Создание enrollmentProfile
 description: Создание нового объекта enrollmentProfile.
-ms.openlocfilehash: 8b24964413250e9a0f9d8d98577e930e1ef99b84
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: becfc040bb7fa500a5378f16f50f6bcb2e4f106d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079118"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313652"
 ---
 # <a name="create-enrollmentprofile"></a>Создание enrollmentProfile
 
@@ -36,7 +37,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,11 +49,11 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|GUID объекта|
-|displayName|String|Имя профиля|
-|описание|String|Описание профиля|
-|requiresUserAuthentication|Логический|Указывает необходимость проверки подлинности пользователей в профиле|
-|configurationEndpointUrl|String|URL-адрес конечной точки конфигурации для подачи заявок|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании.|
+|displayName|Строка|Имя профиля|
+|описание|Строка|Описание профиля|
+|requiresUserAuthentication|Boolean.|Указывает необходимость проверки подлинности пользователей в профиле|
+|configurationEndpointUrl|String.|URL-адрес конечной точки конфигурации для подачи заявок|
+|enableAuthenticationViaCompanyPortal|Boolean.|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании.|
 
 
 
@@ -78,8 +79,7 @@ Content-length: 306
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

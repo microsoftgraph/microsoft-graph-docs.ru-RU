@@ -1,12 +1,13 @@
 ---
 title: Список цепочек
 description: Получение всех цепочек группы.
-ms.openlocfilehash: 659d80793f2ad4ededaabca7087f470c0cc6c081
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 8052ec02a2f9bfbcec0a12681463f3e33cb0f12d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028255"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311804"
 ---
 # <a name="list-threads"></a>Список цепочек
 Получение всех цепочек группы.

@@ -1,12 +1,13 @@
 ---
 title: Приостановка синхронизации на educationSynchronizationProfile
 description: Приостановка синхронизации в конкретных школа профиль синхронизации данных клиента.
-ms.openlocfilehash: ee2ed2133619bbcded7a31afece55191a0cfd4e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 14e94cf4a083e8f37b03f96b287a75aa40b7afed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075274"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313288"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Приостановка синхронизации на educationSynchronizationProfile
 

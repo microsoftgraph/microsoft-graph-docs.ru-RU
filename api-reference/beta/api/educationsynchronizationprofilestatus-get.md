@@ -1,12 +1,13 @@
 ---
 title: Получить сведения о состоянии educationSynchronizationProfile
 description: Получите сведения о состоянии определенного школа данных синхронизации профиля в клиентов. Ответ будет указывают состояние синхронизации.
-ms.openlocfilehash: 87ced84dc0960eb6d5808fb8d21bc40d9d9e64e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 8c48565e22df54e81f17110bb0b13654e0e69cd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313575"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Получить сведения о состоянии educationSynchronizationProfile
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075672"
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read EduAdministration.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
-|Для приложения| EduAdministration.Read.All EduAdministration.ReadWrite.All |
+|Для приложений| EduAdministration.Read.All EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления ownerType
 description: Тип владельца устройства.
-ms.openlocfilehash: 0ead319b34a6bcee48f53621879bfbcf6bef87be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c73227a9dd85a8b26ea9d3bc3a2494effe429f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075150"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311006"
 ---
 # <a name="ownertype-enum-type"></a>Тип перечисления ownerType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075150"
 
 Тип владельца устройства.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестно.|
 |company|1|Принадлежащие компании.|

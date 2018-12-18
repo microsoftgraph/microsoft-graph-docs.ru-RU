@@ -1,12 +1,13 @@
 ---
 title: checkMemberGroups
 description: Проверьте наличие членства в указанный список групп. Возвращает из списка из которых эти группы
-ms.openlocfilehash: c6e232a6c34c0bbffdb41695a51694a688fecc7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 613faacdbd2651700f264cdf89ec396b54752b76
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075203"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310600"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -82,8 +83,7 @@ Content-length: 44
 
 ##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса bitLockerRecoveryOptions
 description: Варианты восстановления BitLocker.
-ms.openlocfilehash: 46af5b52d8305932d0d67ef57d6a1f356182a469
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c85ce3111ed88ce8e8bf54c98d5fd3122571a0be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076870"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310607"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>Тип ресурса bitLockerRecoveryOptions
 
@@ -16,15 +17,15 @@ ms.locfileid: "27076870"
 
 Варианты восстановления BitLocker.
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|blockDataRecoveryAgent|Логический|Указывает, следует ли блокировать агентом восстановления данных на основе сертификатов.|
+|blockDataRecoveryAgent|Boolean.|Указывает, следует ли блокировать агентом восстановления данных на основе сертификатов.|
 |recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает ли пользователи могут или должны создавать пароль восстановления из 48 цифр основных или системный диск. Возможные значения: `blocked`, `required`, `allowed`.|
 |recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает ли пользователям разрешено или необходимо создание ключа восстановления 256-разрядный основных или системный диск. Возможные значения: `blocked`, `required`, `allowed`.|
-|hideRecoveryOptions|Логический|Указывает ли разрешать отображение параметры восстановления в мастер установки BitLocker основных или системный диск.|
-|enableRecoveryInformationSaveToStore|Логический|Указывает, следует ли разрешить сведения о восстановлении BitLocker для хранения в Доменных службах Active Directory.|
+|hideRecoveryOptions|Boolean.|Указывает ли разрешать отображение параметры восстановления в мастер установки BitLocker основных или системный диск.|
+|enableRecoveryInformationSaveToStore|Boolean.|Указывает, следует ли разрешить сведения о восстановлении BitLocker для хранения в Доменных службах Active Directory.|
 |recoveryInformationToStore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|Настройте, какие части сведения о восстановлении BitLocker хранятся в Доменных службах Active Directory. Возможные значения: `passwordAndKey`, `passwordOnly`.|
-|enableBitLockerAfterRecoveryInformationToStore|Логический|Указывает, следует ли включить BitLocker до восстановления данные хранятся в Доменных службах Active Directory.|
+|enableBitLockerAfterRecoveryInformationToStore|Boolean.|Указывает, следует ли включить BitLocker до восстановления данные хранятся в Доменных службах Active Directory.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления состояние действия
 description: Состояние действие на устройстве
-ms.openlocfilehash: e0169bd690cdc8a26cc771948ebcf311f6fd6aa5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f36c3a6709ade5860ff24cc8d10c2cb0294a471
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078056"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315108"
 ---
 # <a name="actionstate-enum-type"></a>Тип перечисления состояние действия
 
@@ -16,9 +17,9 @@ ms.locfileid: "27078056"
 
 Состояние действие на устройстве
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Не имеет состояние допустимое действие|
+|none|0|Не имеет состояние допустимое действие|
 |Ожидание|1|Действие находится в состоянии ожидания|
 |отменено|2|Действие было отменено.|
 |активных|3|Действие — active.|

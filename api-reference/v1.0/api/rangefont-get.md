@@ -1,12 +1,13 @@
 ---
 title: Получение объекта RangeFont
 description: Получение свойств и связей объекта rangefont.
-ms.openlocfilehash: 32cb5b290da6170a955f6f29d6396e496315fbb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6e087bcaa8592d50ac33979e08e0f6b5764c6a80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027153"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315374"
 ---
 # <a name="get-rangefont"></a>Получение объекта RangeFont
 
@@ -53,8 +54,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/font
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

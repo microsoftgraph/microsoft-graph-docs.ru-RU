@@ -1,12 +1,13 @@
 ---
 title: Список scopedMembers для роли каталога
 description: Получение списка объектов scopedRoleMembership для роли каталога.
-ms.openlocfilehash: 02d139ddee53c9ee7176fd736e79b3ce34de8860
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: b3d0e8bc67b6ab670b7dc8a149bad0f031b03762
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077902"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311720"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>Список scopedMembers для роли каталога
 
@@ -52,8 +53,7 @@ GET /directoryroles/{id}/scopedMembers
 GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedMembers
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

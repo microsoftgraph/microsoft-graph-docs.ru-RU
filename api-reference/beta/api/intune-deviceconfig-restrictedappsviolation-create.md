@@ -1,12 +1,13 @@
 ---
 title: Создание restrictedAppsViolation
 description: Создание нового объекта restrictedAppsViolation.
-ms.openlocfilehash: 2d43ddf5ae6c5965f67fdb32c4b242fd0a3f82e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3f20463363c37e8ab9ed47bebb3b2323ca308656
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078052"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313330"
 ---
 # <a name="create-restrictedappsviolation"></a>Создание restrictedAppsViolation
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,13 +48,13 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для объекта. Состоит из accountId, deviceId, policyId и идентификатор пользователя|
+|id|Строка|Уникальный идентификатор для объекта. Состоит из accountId, deviceId, policyId и идентификатор пользователя|
 |userId|String|Уникальный идентификатор пользователя, должен быть идентификатор Guid|
 |userName|String|Имя пользователя|
-|managedDeviceId|String|Уникальный идентификатор управляемого устройства, должен быть идентификатор Guid|
+|managedDeviceId|String.|Уникальный идентификатор управляемого устройства, должен быть идентификатор Guid|
 |deviceName|String|Имя устройства|
-|deviceConfigurationId|String|Конфигурация профиля уникальный идентификатор устройства, должен быть идентификатор Guid|
-|deviceConfigurationName|String|Имя профиля конфигурации устройства|
+|deviceConfigurationId|String.|Конфигурация профиля уникальный идентификатор устройства, должен быть идентификатор Guid|
+|deviceConfigurationName|String.|Имя профиля конфигурации устройства|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) коллекции|Список нарушенных ограниченных приложений|
@@ -91,8 +92,7 @@ Content-length: 564
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

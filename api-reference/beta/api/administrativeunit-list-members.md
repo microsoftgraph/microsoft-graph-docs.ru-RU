@@ -1,12 +1,13 @@
 ---
 title: Перечисление участников
 description: Используйте этот интерфейс API для получения элементов списка (пользователей и групп) в административное подразделение.
-ms.openlocfilehash: c2d86992ccffd9d0ec4df90f5209ed5d6881ed16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d373c8353928d8e8d5d8b398aa09e62d457ba665
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077630"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311664"
 ---
 # <a name="list-members"></a>Перечисление участников
 
@@ -52,8 +53,7 @@ GET /administrativeUnits/{id}/members/$ref
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 ```
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
  
 ```http
 HTTP/1.1 200 OK
@@ -85,8 +85,7 @@ Content-length: 100
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
  
 ```http
 HTTP/1.1 200 OK

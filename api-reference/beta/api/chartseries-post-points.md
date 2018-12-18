@@ -1,12 +1,13 @@
 ---
 title: Создание объекта ChartPoints
 description: С помощью этого API можно создать объект ChartPoints.
-ms.openlocfilehash: be10973510b053b30178a3c5b35a866f828bf927
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: bc6d386b7508e98797fbaa79f9b79d066918518a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075026"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311580"
 ---
 # <a name="create-chartpoints"></a>Создание объекта ChartPoints
 
@@ -58,8 +59,7 @@ Content-length: 3
 ```
 Предоставьте в тексте запроса описание объекта [ChartPoints](../resources/chartpoint.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

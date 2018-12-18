@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса domainDnsTxtRecord
 description: Представляет запись типа TXT, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
-ms.openlocfilehash: ed60c15463bd4182049fe3ae8fa32963f8574456
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: b7714555a9d88a6af201d81083efea3eb20c660c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313526"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>Тип ресурса domainDnsTxtRecord
 
@@ -18,7 +19,7 @@ ms.locfileid: "27024614"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения. |
+|id|Строка| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения. |
 |isOptional|Boolean| Если имеет значение false, пользователю необходимо настроить запись типа TXT на узле DNS, чтобы службы Microsoft Online Services правильно работали с доменом. |
 |label|String| Значение, используемое при настройке свойства *name* для записи типа TXT на узле DNS.|
 |recordType|String| Тип записи DNS. Это свойство всегда имеет значение *Txt*. Ключ. |

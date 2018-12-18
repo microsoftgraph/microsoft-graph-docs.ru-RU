@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileAppSupportedDeviceType
 description: Свойства устройства
-ms.openlocfilehash: 7bea84a009d8940608c82bbb551c2d3c8be750ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ec7d2b1e8340b73ea184dda15d842973f0fab2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314422"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>Тип ресурса mobileAppSupportedDeviceType
 
@@ -19,8 +20,8 @@ ms.locfileid: "27077178"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |type|[deviceType](../resources/intune-shared-devicetype.md)|Тип устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` , `blackberry`, `palm`, `unknown`.|
-|minimumOperatingSystemVersion|String|Минимальная версия операционной системы|
-|maximumOperatingSystemVersion|String|Максимальная версия ОС|
+|minimumOperatingSystemVersion|String.|Минимальная версия операционной системы|
+|maximumOperatingSystemVersion|String.|Максимальная версия ОС|
 
 ## <a name="relationships"></a>Связи
 Нет

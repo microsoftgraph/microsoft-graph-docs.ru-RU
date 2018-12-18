@@ -1,12 +1,13 @@
 ---
 title: Обновление deviceConfigurationGroupAssignment
 description: Обновление свойства объекта deviceConfigurationGroupAssignment.
-ms.openlocfilehash: 303ecefdccafc133c4680bc0fd7eb866b682fded
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ea879c7d267337a247455235f069206b7b3b2a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079907"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313883"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Обновление deviceConfigurationGroupAssignment
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -55,9 +56,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|targetGroupId|String|Идентификатор группы AAD мы ориентация для настройки устройств.|
-|excludeGroup|Логический|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
+|id|Строка|Ключ объекта.|
+|targetGroupId|String.|Идентификатор группы AAD мы ориентация для настройки устройств.|
+|excludeGroup|Boolean.|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
 
 
 
@@ -79,8 +80,7 @@ Content-length: 73
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
