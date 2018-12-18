@@ -1,30 +1,31 @@
 ---
 title: Действие assign
 description: Замените все целевые группы для политики.
-ms.openlocfilehash: dd892444d60338b73df4209eef00069667e15d48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 00ecb5d5e34fb067bbca36eee5ff190344319d7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080984"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307828"
 ---
-# <a name="assign-action"></a><span data-ttu-id="46b95-103">Действие assign</span><span class="sxs-lookup"><span data-stu-id="46b95-103">assign action</span></span>
+# <a name="assign-action"></a><span data-ttu-id="9d648-103">Действие assign</span><span class="sxs-lookup"><span data-stu-id="9d648-103">assign action</span></span>
 
-> <span data-ttu-id="46b95-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="46b95-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="46b95-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="46b95-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9d648-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="9d648-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9d648-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9d648-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="46b95-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="46b95-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="9d648-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="9d648-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="46b95-107">Замените все целевые группы для политики.</span><span class="sxs-lookup"><span data-stu-id="46b95-107">Replace all targeted groups for a policy.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="46b95-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="46b95-108">Prerequisites</span></span>
-<span data-ttu-id="46b95-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46b95-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9d648-107">Замените все целевые группы для политики.</span><span class="sxs-lookup"><span data-stu-id="9d648-107">Replace all targeted groups for a policy.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9d648-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="9d648-108">Prerequisites</span></span>
+<span data-ttu-id="9d648-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9d648-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="46b95-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="46b95-111">Permission type</span></span>|<span data-ttu-id="46b95-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="46b95-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="9d648-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9d648-111">Permission type</span></span>|<span data-ttu-id="9d648-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="9d648-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="46b95-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="46b95-113">Delegated (work or school account)</span></span>|<span data-ttu-id="46b95-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="46b95-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="46b95-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="46b95-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="46b95-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="46b95-116">Not supported.</span></span>|
-|<span data-ttu-id="46b95-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="46b95-117">Application</span></span>|<span data-ttu-id="46b95-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="46b95-118">Not supported.</span></span>|
+|<span data-ttu-id="9d648-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9d648-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9d648-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9d648-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="9d648-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9d648-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9d648-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9d648-116">Not supported.</span></span>|
+|<span data-ttu-id="9d648-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9d648-117">Application</span></span>|<span data-ttu-id="9d648-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9d648-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="46b95-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="46b95-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9d648-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9d648-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,30 +34,30 @@ ms.locfileid: "27080984"
 POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assign
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="46b95-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="46b95-120">Request headers</span></span>
-|<span data-ttu-id="46b95-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="46b95-121">Header</span></span>|<span data-ttu-id="46b95-122">Значение</span><span class="sxs-lookup"><span data-stu-id="46b95-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9d648-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9d648-120">Request headers</span></span>
+|<span data-ttu-id="9d648-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9d648-121">Header</span></span>|<span data-ttu-id="9d648-122">Значение</span><span class="sxs-lookup"><span data-stu-id="9d648-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="46b95-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="46b95-123">Authorization</span></span>|<span data-ttu-id="46b95-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="46b95-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="46b95-125">Accept</span><span class="sxs-lookup"><span data-stu-id="46b95-125">Accept</span></span>|<span data-ttu-id="46b95-126">application/json</span><span class="sxs-lookup"><span data-stu-id="46b95-126">application/json</span></span>|
+|<span data-ttu-id="9d648-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9d648-123">Authorization</span></span>|<span data-ttu-id="9d648-124">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="9d648-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="9d648-125">Accept</span><span class="sxs-lookup"><span data-stu-id="9d648-125">Accept</span></span>|<span data-ttu-id="9d648-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9d648-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="46b95-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="46b95-127">Request body</span></span>
-<span data-ttu-id="46b95-128">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="46b95-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9d648-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9d648-127">Request body</span></span>
+<span data-ttu-id="9d648-128">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9d648-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="46b95-129">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="46b95-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="9d648-129">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="9d648-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="46b95-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="46b95-130">Property</span></span>|<span data-ttu-id="46b95-131">Тип</span><span class="sxs-lookup"><span data-stu-id="46b95-131">Type</span></span>|<span data-ttu-id="46b95-132">Description</span><span class="sxs-lookup"><span data-stu-id="46b95-132">Description</span></span>|
+|<span data-ttu-id="9d648-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="9d648-130">Property</span></span>|<span data-ttu-id="9d648-131">Тип</span><span class="sxs-lookup"><span data-stu-id="9d648-131">Type</span></span>|<span data-ttu-id="9d648-132">Описание</span><span class="sxs-lookup"><span data-stu-id="9d648-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="46b95-133">officeConfigurationAssignments</span><span class="sxs-lookup"><span data-stu-id="46b95-133">officeConfigurationAssignments</span></span>|<span data-ttu-id="46b95-134">[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="46b95-134">[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection</span></span>|<span data-ttu-id="46b95-135">Список назначений настройки office</span><span class="sxs-lookup"><span data-stu-id="46b95-135">List of office configuration assignments</span></span>|
+|<span data-ttu-id="9d648-133">officeConfigurationAssignments</span><span class="sxs-lookup"><span data-stu-id="9d648-133">officeConfigurationAssignments</span></span>|<span data-ttu-id="9d648-134">[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="9d648-134">[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection</span></span>|<span data-ttu-id="9d648-135">Список назначений настройки office</span><span class="sxs-lookup"><span data-stu-id="9d648-135">List of office configuration assignments</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="46b95-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="46b95-136">Response</span></span>
-<span data-ttu-id="46b95-137">Если успешно завершена, это действие возвращает `200 OK` код ответа и семейства [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="46b95-137">If successful, this action returns a `200 OK` response code and a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9d648-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="9d648-136">Response</span></span>
+<span data-ttu-id="9d648-137">Если успешно завершена, это действие возвращает `200 OK` код ответа и семейства [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="9d648-137">If successful, this action returns a `200 OK` response code and a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="46b95-138">Пример</span><span class="sxs-lookup"><span data-stu-id="46b95-138">Example</span></span>
-### <a name="request"></a><span data-ttu-id="46b95-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="46b95-139">Request</span></span>
-<span data-ttu-id="46b95-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="46b95-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9d648-138">Пример</span><span class="sxs-lookup"><span data-stu-id="9d648-138">Example</span></span>
+### <a name="request"></a><span data-ttu-id="9d648-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="9d648-139">Request</span></span>
+<span data-ttu-id="9d648-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9d648-140">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assign
 
@@ -76,9 +77,8 @@ Content-length: 299
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="46b95-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="46b95-141">Response</span></span>
-<span data-ttu-id="46b95-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="46b95-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="9d648-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="9d648-141">Response</span></span>
+<span data-ttu-id="9d648-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="9d648-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

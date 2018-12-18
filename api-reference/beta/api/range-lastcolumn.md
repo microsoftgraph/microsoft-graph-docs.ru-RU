@@ -1,28 +1,29 @@
 ---
 title: 'Range: LastColumn'
 description: .
-ms.openlocfilehash: 535d8de6fbda99fbe175b3d918cab670958e8b20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 1bdebd4ab90cd0c975424700b30f865dde474b28
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080366"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305693"
 ---
-# <a name="range-lastcolumn"></a><span data-ttu-id="ca663-103">Range: LastColumn</span><span class="sxs-lookup"><span data-stu-id="ca663-103">Range: LastColumn</span></span>
+# <a name="range-lastcolumn"></a><span data-ttu-id="64a7c-103">Range: LastColumn</span><span class="sxs-lookup"><span data-stu-id="64a7c-103">Range: LastColumn</span></span>
 
-> <span data-ttu-id="ca663-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ca663-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ca663-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ca663-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="64a7c-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="64a7c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="64a7c-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64a7c-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="ca663-p102">Возвращает последний столбец в диапазоне. Например, последний столбец диапазона B2:D5 — D2:D5.</span><span class="sxs-lookup"><span data-stu-id="ca663-p102">Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".</span></span>
-## <a name="permissions"></a><span data-ttu-id="ca663-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ca663-108">Permissions</span></span>
-<span data-ttu-id="ca663-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ca663-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="64a7c-p102">Возвращает последний столбец в диапазоне. Например, последний столбец диапазона B2:D5 — D2:D5.</span><span class="sxs-lookup"><span data-stu-id="64a7c-p102">Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".</span></span>
+## <a name="permissions"></a><span data-ttu-id="64a7c-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="64a7c-108">Permissions</span></span>
+<span data-ttu-id="64a7c-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="64a7c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ca663-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ca663-111">Permission type</span></span>      | <span data-ttu-id="ca663-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ca663-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="64a7c-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="64a7c-111">Permission type</span></span>      | <span data-ttu-id="64a7c-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="64a7c-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ca663-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ca663-113">Delegated (work or school account)</span></span> | <span data-ttu-id="ca663-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ca663-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ca663-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ca663-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ca663-116">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ca663-116">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ca663-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ca663-117">Application</span></span> | <span data-ttu-id="ca663-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ca663-118">Not supported.</span></span> |
+|<span data-ttu-id="64a7c-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="64a7c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="64a7c-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64a7c-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="64a7c-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="64a7c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64a7c-116">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64a7c-116">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="64a7c-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="64a7c-117">Application</span></span> | <span data-ttu-id="64a7c-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64a7c-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ca663-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ca663-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="64a7c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="64a7c-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/LastColumn
@@ -30,22 +31,22 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/LastColumn
 GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ca663-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ca663-120">Request headers</span></span>
-| <span data-ttu-id="ca663-121">Имя</span><span class="sxs-lookup"><span data-stu-id="ca663-121">Name</span></span>       | <span data-ttu-id="ca663-122">Описание</span><span class="sxs-lookup"><span data-stu-id="ca663-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="64a7c-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="64a7c-120">Request headers</span></span>
+| <span data-ttu-id="64a7c-121">Имя</span><span class="sxs-lookup"><span data-stu-id="64a7c-121">Name</span></span>       | <span data-ttu-id="64a7c-122">Описание</span><span class="sxs-lookup"><span data-stu-id="64a7c-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ca663-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ca663-123">Authorization</span></span>  | <span data-ttu-id="ca663-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ca663-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ca663-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ca663-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="ca663-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="ca663-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="64a7c-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="64a7c-123">Authorization</span></span>  | <span data-ttu-id="64a7c-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="64a7c-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="64a7c-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="64a7c-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="64a7c-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="64a7c-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ca663-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ca663-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="64a7c-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="64a7c-129">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="ca663-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="ca663-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="64a7c-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="64a7c-130">Response</span></span>
 
-<span data-ttu-id="ca663-131">В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="ca663-131">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="64a7c-131">В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="64a7c-131">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ca663-132">Пример</span><span class="sxs-lookup"><span data-stu-id="ca663-132">Example</span></span>
-<span data-ttu-id="ca663-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="ca663-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="ca663-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="ca663-134">Request</span></span>
-<span data-ttu-id="ca663-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ca663-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="64a7c-132">Пример</span><span class="sxs-lookup"><span data-stu-id="64a7c-132">Example</span></span>
+<span data-ttu-id="64a7c-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="64a7c-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="64a7c-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="64a7c-134">Request</span></span>
+<span data-ttu-id="64a7c-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="64a7c-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_lastcolumn"
@@ -54,9 +55,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/LastColumn
 ```
 
-##### <a name="response"></a><span data-ttu-id="ca663-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="ca663-136">Response</span></span>
-<span data-ttu-id="ca663-p106">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="ca663-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="64a7c-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="64a7c-136">Response</span></span>
+<span data-ttu-id="64a7c-p106">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="64a7c-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
