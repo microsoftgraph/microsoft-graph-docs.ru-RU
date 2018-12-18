@@ -1,12 +1,13 @@
 ---
 title: Список людей
 description: Получение списка объектов person, упорядоченные по их важности для пользователя, который определяет, какие связи и совместной работы шаблоны и устанавливать деловые контакты пользователя.
-ms.openlocfilehash: fc39f983251f668b4e1aa43ccb8be9cee5d23791
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 64d24111f295fd076024a889d050c8c48c104295
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077078"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347658"
 ---
 # <a name="list-people"></a>Список людей
 

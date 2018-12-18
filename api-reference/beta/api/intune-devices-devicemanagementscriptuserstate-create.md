@@ -1,12 +1,13 @@
 ---
 title: Создание deviceManagementScriptUserState
 description: Создание нового объекта deviceManagementScriptUserState.
-ms.openlocfilehash: 4d6aba6ae11f2d6250d20524a1e6f47e55bbda2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbe9c964296854a92e62a86743d06d8577b675f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078686"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347581"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>Создание deviceManagementScriptUserState
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,10 +48,10 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности состояние пользователя устройства управления скрипта.|
+|id|Строка|Ключ сущности состояние пользователя устройства управления скрипта.|
 |successDeviceCount|Int32|Число допустимых устройства для определенного пользователя.|
 |errorDeviceCount|Int32|Число ошибок устройства для определенного пользователя.|
-|userPrincipalName|String|Имени участника-пользователя для определенного пользователя.|
+|userPrincipalName|Строка|Имени участника-пользователя для определенного пользователя.|
 
 
 
@@ -74,8 +75,7 @@ Content-length: 180
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

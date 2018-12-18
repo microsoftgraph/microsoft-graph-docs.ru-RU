@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления платформы
 description: Н/Д
-ms.openlocfilehash: c438d21158d116d7024d2a264c4acc9e39e3d8f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cb36f18d4d98208d230a89d5a9407dcf31785fb6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075920"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347469"
 ---
 # <a name="platform-enum-type"></a>Тип перечисления платформы
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075920"
 
 Н/Д
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Платформа неизвестное устройство|
 |операций ввода-вывода|1|Платформа устройства IOS|

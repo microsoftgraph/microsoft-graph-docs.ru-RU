@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов WindowsInformationProtectionPolicy
 description: Перечисление свойств и связей объектов windowsInformationProtectionPolicy.
-ms.openlocfilehash: 98d6817bd53a695bdac1cf1902063e4c3c1252d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: df9404efbb2dd9200312dc1db217866e3dba53f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082789"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349744"
 ---
 # <a name="list-windowsinformationprotectionpolicies"></a>Перечисление объектов WindowsInformationProtectionPolicy
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProte
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

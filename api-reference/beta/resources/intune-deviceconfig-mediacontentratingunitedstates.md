@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mediaContentRatingUnitedStates
 description: Н/Д
-ms.openlocfilehash: d62d656c4fbd8744560ab191786d71b732fe6c21
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee10df5dd5e3f915e166cb77e747f8b3f7cc2d37
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074979"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341323"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>Тип ресурса mediaContentRatingUnitedStates
 

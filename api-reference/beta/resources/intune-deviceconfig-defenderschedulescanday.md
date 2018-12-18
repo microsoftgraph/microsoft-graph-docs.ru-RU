@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления defenderScheduleScanDay
 description: 'Возможные значения DefenderScheduleScanDay '
-ms.openlocfilehash: de33e2e1954d0d45faaebbc97b265ca90d40bdf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9c028e24aae3421a8f7aef23161443c8cf796e1f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075640"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346510"
 ---
 # <a name="defenderschedulescanday-enum-type"></a>Тип перечисления defenderScheduleScanDay
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075640"
 
 Возможные значения DefenderScheduleScanDay 
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |повседневных|0|Каждый день|
 |Понедельник|1|Понедельник|

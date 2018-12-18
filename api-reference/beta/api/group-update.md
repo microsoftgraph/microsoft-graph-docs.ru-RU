@@ -1,12 +1,13 @@
 ---
 title: Обновление группы
 description: Обновление свойств, принадлежащих объекту группы.
-ms.openlocfilehash: 1a87bc3e6599d37cab25e3e98c9dcf63d7d078e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 801143f0bb0a0e5012cf946e52cf4fd4cff34556
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077324"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348435"
 ---
 # <a name="update-group"></a>Обновление группы
 

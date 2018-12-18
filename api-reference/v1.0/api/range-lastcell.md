@@ -1,12 +1,13 @@
 ---
 title: 'Range: LastCell'
 description: .
-ms.openlocfilehash: 6b5f8727a6ecbe3f4346654609dbbfcfce388b55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4ae70424c252dab716ec0fe2a83ea434411238c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347035"
 ---
 # <a name="range-lastcell"></a>Range: LastCell
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

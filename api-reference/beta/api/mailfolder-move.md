@@ -1,12 +1,13 @@
 ---
 title: 'mailFolder: move'
 description: Перемещение папки почты со всем ее содержимым в другую папку почты.
-ms.openlocfilehash: 8aeef43068bcd2f23df5d726e559d0c8268ae1ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 50c982a9c2277530c884ee2807543f858fd3b696
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082196"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348757"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -37,8 +38,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | Заголовок | Значение |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Обязательный атрибут. |
-| Content-Type | `application/json`. Обязательный атрибут. |
+| Авторизация | `Bearer {token}`. Обязательный. |
+| Content-Type | `application/json`. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

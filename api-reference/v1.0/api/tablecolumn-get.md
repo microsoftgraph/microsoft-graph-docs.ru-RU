@@ -1,12 +1,13 @@
 ---
 title: Получение объекта TableColumn
 description: Получение свойств и связей объекта tablecolumn.
-ms.openlocfilehash: 3839c1cab4083000801885080e530d7981b73a46
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 7c43afbc7d1e90883ce26657d3b74b0bb53eb768
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348659"
 ---
 # <a name="get-tablecolumn"></a>Получение объекта TableColumn
 
@@ -52,8 +53,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

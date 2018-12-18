@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windows10VpnConnectionType
 description: Типы подключений VPN.
-ms.openlocfilehash: f2c9d6aed6145fd4c1fadae77f5d82004d894193
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0452eff174cf12fdd7508e5000ed3fcbd9a01eeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076957"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346433"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>Тип перечисления windows10VpnConnectionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076957"
 
 Типы подключений VPN.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |pulseSecure|0|Обеспечение безопасной Pulse.|
 |f5EdgeClient|1|F5 Клиент пограничного сервера.|

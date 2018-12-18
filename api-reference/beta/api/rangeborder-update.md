@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта RangeBorder
 description: Обновление свойств объекта rangeborder.
-ms.openlocfilehash: ab026d857c7fac591993469f87da662cb4bec064
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 560848adf8e2ff663c3b3a223786c24ba3b53c42
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082783"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349303"
 ---
 # <a name="update-rangeborder"></a>Обновление объекта RangeBorder
 
@@ -67,8 +68,7 @@ Content-length: 136
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

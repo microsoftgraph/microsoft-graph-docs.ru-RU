@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта deviceAndAppManagementRoleAssignment
 description: Удаление объекта deviceAndAppManagementRoleAssignment.
-ms.openlocfilehash: 9eca158f8ac6adc79e70ed7969e3b59db2d5cb7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cccc4f95d21b4db8e9275ae5b6c2225bdbdce53d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027879"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346083"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>Удаление объекта deviceAndAppManagementRoleAssignment
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/roleAssignments/{device
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

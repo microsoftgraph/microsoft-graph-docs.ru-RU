@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта ChartTitle
 description: Обновление свойств объекта charttitle.
-ms.openlocfilehash: 4b6e4093c5abda12d7d4cd29bace743c7ec63b31
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c18fcd3f17c0925d2fddc9a69e723ab0cfacb45d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343738"
 ---
 # <a name="update-charttitle"></a>Обновление объекта ChartTitle
 
@@ -62,8 +63,7 @@ Content-length: 64
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

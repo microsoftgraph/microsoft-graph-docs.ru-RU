@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов androidForWorkEnrollmentProfile
 description: Список свойств и связей объектов androidForWorkEnrollmentProfile.
-ms.openlocfilehash: b12e93a6895ff9b7245082f3b2c3cfbe3f940461
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f01037e67a87ee38d6458dd8f2612473970e6680
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078175"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340791"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Перечисление объектов androidForWorkEnrollmentProfile
 
@@ -36,7 +37,7 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentPr
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

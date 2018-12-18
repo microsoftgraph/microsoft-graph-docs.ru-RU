@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления ratingGermanyTelevisionType
 description: Метки TV оценки содержимого в Германии
-ms.openlocfilehash: 615ccc0fbd0d155a4db9c1dc25e6478d916448a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e619682d37dce6612624213de232893aa986694
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075283"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345362"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>Тип перечисления ratingGermanyTelevisionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075283"
 
 Метки TV оценки содержимого в Германии
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить всем TV показывает контента|
 |allBlocked|1|Не допускайте использование Любого показывает контента|

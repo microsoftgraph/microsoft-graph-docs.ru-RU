@@ -1,14 +1,15 @@
 ---
-title: Список joinedTeams
+title: Перечисление объектов joinedTeams
 description: Загрузите группами Майкрософт, который пользователь является непосредственным членом группы.
-ms.openlocfilehash: 8eabc9a27de2deb80153c9cbec5e8266dd38ed7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1fdc3ac9f2f09e31af71cdb4707dd84adf2c74a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077045"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343843"
 ---
-# <a name="list-joinedteams"></a>Список joinedTeams
+# <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -21,7 +22,7 @@ ms.locfileid: "27077045"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | User.Read.All, User.ReadWrite.All |
+|Для приложений | User.Read.All, User.ReadWrite.All |
 
 > На данный момент с разрешениями пользователя делегированной эта операция работает только для «me» пользователя. 
 > Имея разрешения приложения это работает для всех пользователей, указав идентификатор определенного пользователя. («обо мне» псевдоним не поддерживается с разрешениями приложения) Дополнительные сведения см [Известные проблемы](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).

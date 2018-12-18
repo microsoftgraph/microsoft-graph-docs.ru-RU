@@ -1,12 +1,13 @@
 ---
 title: Список объектов enrollmentTroubleshootingEvent
 description: Список свойств и связей объектов enrollmentTroubleshootingEvent.
-ms.openlocfilehash: 63ba4591e2eb77d85143462bc84f532f25f8b0b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3bbf54f875356dc8e475ee114c42e79d87cbf0bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027444"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346076"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>Список объектов enrollmentTroubleshootingEvent
 
@@ -34,7 +35,7 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

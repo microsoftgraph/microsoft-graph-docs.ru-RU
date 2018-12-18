@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managementConditionStatement
 description: Условная инструкция управления — это группа управления условий, включения или отключения конфигурации устройства или приложение при все содержащиеся управления условий.
-ms.openlocfilehash: 98b76ce96550d894f8b32f6f6174d5c565e322ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca0966edd64166479361f42816e36fd278dbc6b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347679"
 ---
 # <a name="managementconditionstatement-resource-type"></a>Тип ресурса managementConditionStatement
 
@@ -29,9 +30,9 @@ ms.locfileid: "27079178"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для управления условная инструкция. Значение, назначенное при создании создаваемый системой.|
-|displayName|String|Имя оператора условия управления определенные администратором.|
-|описание|String|Описание управления условная инструкция определенные администратором.|
+|id|Строка|Уникальный идентификатор для управления условная инструкция. Значение, назначенное при создании создаваемый системой.|
+|displayName|Строка|Имя оператора условия управления определенные администратором.|
+|описание|Строка|Описание управления условная инструкция определенные администратором.|
 |createdDateTime|DateTimeOffset|Время создания условная инструкция управления. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условная инструкция управления. Обновление со стороны службы.|
 |выражение|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используется для оценки Если инструкции с условием управления был активирован деактивирован.|

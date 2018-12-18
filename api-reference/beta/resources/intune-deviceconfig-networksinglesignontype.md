@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления networkSingleSignOnType
 description: Единый вход Wi-Fi сети на параметры типа.
-ms.openlocfilehash: f880da2485fbf8825441d5891a3d664a63067e30
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d88f9a4c4d0bde58c3093a736a767acc0d2abe33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080671"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345264"
 ---
 # <a name="networksinglesignontype-enum-type"></a>Тип перечисления networkSingleSignOnType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080671"
 
 Единый вход Wi-Fi сети на параметры типа.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |Этот параметр отключен|0|Отключена|
 |Предварительное подключение|1|Предварительное|

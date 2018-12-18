@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления binaryManagementConditionExpressionOperatorType
 description: Поддерживаемые двоичные операторы для управления условным выражением.
-ms.openlocfilehash: e1f58715f4e900c30a52bbe7a9db01e45a081d09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4b8fb4f1434f222c15bde5fd74261f021d282535
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082366"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346958"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>Тип перечисления binaryManagementConditionExpressionOperatorType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082366"
 
 Поддерживаемые двоичные операторы для управления условным выражением.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |или|0|Вычисляется набора операндов true только в том случае, если один или несколько операндов имеет значение true.|
 |и|1|Вычисляется набора операндов true только в том случае, если выполняются все операндов.|

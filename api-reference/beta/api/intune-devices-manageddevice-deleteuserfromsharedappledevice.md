@@ -1,12 +1,13 @@
 ---
 title: Действие deleteUserFromSharedAppleDevice
 description: Удаление пользователя на общем устройстве Apple
-ms.openlocfilehash: ad776fb984aeabad7830f47079719200ab16220b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68b3e9b700e70c9c5d16c97d20edf6471f7d1fbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077400"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347987"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Действие deleteUserFromSharedAppleDevice
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -50,7 +51,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|userPrincipalName|String|Н/Д|
+|userPrincipalName|Строка|Н/Д|
 
 
 
@@ -72,8 +73,7 @@ Content-length: 56
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

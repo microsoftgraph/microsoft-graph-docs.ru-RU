@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов deviceAndAppManagementRoleAssignment
 description: Список свойств и связей объектов deviceAndAppManagementRoleAssignment.
-ms.openlocfilehash: b4c5ef4fb932ace0f04b035701dd64580e5a64dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9aad45985a79cb4f1533b82e8c0f78d1ac44fddc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027493"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345698"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Перечисление объектов deviceAndAppManagementRoleAssignment
 
@@ -34,7 +35,7 @@ GET /deviceManagement/roleAssignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/roleAssignments
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

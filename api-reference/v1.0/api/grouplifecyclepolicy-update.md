@@ -1,12 +1,13 @@
 ---
 title: Update groupLifecyclePolicy
 description: Обновляет свойства объекта groupLifecyclePolicyтип ресурса groupLifecyclePolicy.
-ms.openlocfilehash: 24c0540178d4cbedbfe125405bc34b58439cb5b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 315e9b1688ca645c96ff477f0efb8d2f3642121c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025364"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348589"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Update groupLifecyclePolicy
 

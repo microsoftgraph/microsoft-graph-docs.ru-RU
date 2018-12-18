@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedAppRegistration
 description: ManagedAppEntity — это базовый тип для всех остальных типов объектов в рабочем процессе управления приложениями.
-ms.openlocfilehash: efccea80c953ee4eac07588a21944d10810f8532
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 218a36a283febe646afcc6f9c9bcbd0ed5abf46a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025150"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347791"
 ---
 # <a name="managedappregistration-resource-type"></a>Тип ресурса managedAppRegistration
 
@@ -35,8 +36,8 @@ ManagedAppEntity — это базовый тип для всех осталь�
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) коллекции|Причины, по которым помечается регистрация приложения (если они есть). например приложения, запущенного на устройстве с административным доступом.|
 |userId|String|ИД пользователя, к которому относится эта регистрация приложения.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор пакета приложения.|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -1,12 +1,13 @@
 ---
 title: Добавление приложения пароль
 description: Добавляет в приложение надежный пароль.
-ms.openlocfilehash: 78ccb6cced055ca7f2d2ab201e844a9f50f36939
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 88aa499cd478511aacba94c0d28c96592c79a5d5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075361"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348743"
 ---
 # <a name="add-application-password"></a>Добавление приложения пароль
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075361"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

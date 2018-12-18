@@ -1,12 +1,13 @@
 ---
 title: 'WorksheetCollection: add'
 description: .Activate() над ним.
-ms.openlocfilehash: 992524aae6dfca0619c043eb0ddb7a4100f50206
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: fc22e4b45732c9ef197ad9b1172ec87c8becbfc5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025997"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346601"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -62,8 +63,7 @@ Content-length: 26
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления mobileAppIntent
 description: Указывает состояние мобильного приложения на устройстве.
-ms.openlocfilehash: 52d704f19379e2ac6232a37926185fd5d78c2e72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0a230279a947ab60314a53872670fff871eff745
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080629"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347231"
 ---
 # <a name="mobileappintent-enum-type"></a>Тип перечисления mobileAppIntent
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080629"
 
 Указывает состояние мобильного приложения на устройстве.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |доступен|0|Available|
 |notAvailable|1|Недоступно|

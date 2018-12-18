@@ -1,12 +1,13 @@
 ---
 title: Использование интерфейса API REST планировщик работы
 description: В Microsoft Graph можно использовать планировщик работы API для создания задачи и назначения их для пользователей в группу в Office 365.
-ms.openlocfilehash: b6161218e5d65c96972a8fd5dd929b124d84c949
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+author: TarkanSevilmis
+ms.openlocfilehash: a57bdce9c61046d05bc969ff69d31971a85cf537
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346741"
 ---
 # <a name="use-the-planner-rest-api"></a>Использование интерфейса API REST планировщик работы
 
@@ -83,7 +84,7 @@ GET /planner/plans/{id}/tasks
 
 * [plannerTask](plannertask.md);
 * [plannerTaskDetails](plannertaskdetails.md);
-* [plannerPlan](plannerplan.md);
+* [plannerPlan](plannerplan.md)
 * [plannerPlanDetails](plannerplandetails.md);
 * [plannerBucket](plannerbucket.md);
 * [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md);

@@ -1,12 +1,13 @@
 ---
 title: Получение windowsAutopilotDeploymentProfileAssignment
 description: Чтение свойства и связи объекта windowsAutopilotDeploymentProfileAssignment.
-ms.openlocfilehash: 7229ea44798b7efd21cd2ef7a7d01e3771173a15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eaeb8668c0ce4cc9fbf7c8353a999afccb6a3f14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081962"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345341"
 ---
 # <a name="get-windowsautopilotdeploymentprofileassignment"></a>Получение windowsAutopilotDeploymentProfileAssignment
 
@@ -38,7 +39,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIden
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

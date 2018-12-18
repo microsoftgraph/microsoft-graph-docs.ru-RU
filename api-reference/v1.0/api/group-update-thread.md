@@ -1,12 +1,13 @@
 ---
 title: Обновление цепочки беседы
 description: Обновление объекта thread.
-ms.openlocfilehash: e66a65c42a3616968f528ba3c2a1dda0d160e7f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: db4b30d50bd616680f88949906cb96480668c612
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348596"
 ---
 # <a name="update-conversation-thread"></a>Обновление цепочки беседы
 Обновление объекта [thread](../resources/conversationthread.md).

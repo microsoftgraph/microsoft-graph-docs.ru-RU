@@ -1,12 +1,13 @@
 ---
 title: Обновление диапазона
 description: Обновление свойств объекта диапазона.
-ms.openlocfilehash: 462649816075a31c51e89b5fb54320fb9d86830b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: de084bd15ad448d6723b62fde4ea7761e2b5607a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079544"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347434"
 ---
 # <a name="update-range"></a>Обновление диапазона
 
@@ -71,8 +72,7 @@ Content-length: 169
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

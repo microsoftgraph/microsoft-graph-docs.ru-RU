@@ -1,12 +1,13 @@
 ---
 title: функция managedDeviceEnrollmentAbandonmentSummary
 description: Метаданные для регистрации abandonment сводного отчета
-ms.openlocfilehash: a9197ec93829f1270f2cd19956632cf09c00f7b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 133f04da7256ec8f1bbec93c9614ce1dfcd477a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080488"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349513"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>функция managedDeviceEnrollmentAbandonmentSummary
 
@@ -37,7 +38,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,12 +46,12 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |skip|Int32|Н/Д|
 |top|Int32|Н/Д|
-|filter|String|Н/Д|
-|skipToken|String|Н/Д|
+|filter|Строка|Н/Д|
+|skipToken|Строка|Н/Д|
 
 
 
@@ -65,8 +66,7 @@ GET https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentAbandonmentS
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

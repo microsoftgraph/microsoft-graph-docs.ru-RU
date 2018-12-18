@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidWiFiSecurityType
 description: Типы безопасности Wi-Fi для Android.
-ms.openlocfilehash: bcabde13253cc829f80078c69cc1ed159d052a87
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3f74f044b907e2bcbf398e7940188e0b26522a5a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081524"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348043"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>Тип перечисления androidWiFiSecurityType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081524"
 
 Типы безопасности Wi-Fi для Android.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |Откройте|0|Откройте (без проверки подлинности).|
 |wpaEnterprise|1|WPA-Enterprise/WPA2-предприятие. Необходимо использовать тип AndroidEnterpriseWifiConfiguration позволяет настроить параметры enterprise.|

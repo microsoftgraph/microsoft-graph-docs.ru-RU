@@ -1,12 +1,13 @@
 ---
 title: Удаление targetedManagedAppPolicyAssignment
 description: Удаляет объект targetedManagedAppPolicyAssignment.
-ms.openlocfilehash: d064b5948448a7e6c7e1a783530d738b5e20e2c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a00f77bb25d43339d0291c2ba95607c85dd8b5cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027298"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347021"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>Удаление targetedManagedAppPolicyAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtect
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

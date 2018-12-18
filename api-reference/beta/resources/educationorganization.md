@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationOrganization
 description: 'Использовать для моделирования обеих другой организации типов в образовательных сектора абстрактной сущности.  '
-ms.openlocfilehash: 86da4e19f9cc36de7a61ca2c76565a17ec3acac0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 54f281de29033418b6acb2f9821c5ebd1eaf4db0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077673"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349891"
 ---
 # <a name="educationorganization-resource-type"></a>Тип ресурса educationOrganization
 
@@ -17,8 +18,8 @@ ms.locfileid: "27077673"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|описание|String| Описание организации.|
-|displayName|String| Отображаемое имя организации.|
+|описание|Строка| Описание организации.|
+|displayName|Строка| Отображаемое имя организации.|
 |externalSource|string| Источник, где был создан данной организации. Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи

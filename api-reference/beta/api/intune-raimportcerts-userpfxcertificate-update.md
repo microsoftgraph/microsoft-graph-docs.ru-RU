@@ -1,12 +1,13 @@
 ---
 title: Обновление userPFXCertificate
 description: Обновление свойства объекта userPFXCertificate.
-ms.openlocfilehash: 9fde1e8ff073df7acf76119ace0848616424951a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48f60d9a11942fee657eebb5c8bbf33e50d24fe9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074595"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347609"
 ---
 # <a name="update-userpfxcertificate"></a>Обновление userPFXCertificate
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,17 +48,17 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сертификата PFX.|
-|отпечаток|String|Отпечаток сертификата, PFX SHA-1.|
+|id|Строка|Уникальный идентификатор для сертификата PFX.|
+|отпечаток|String.|Отпечаток сертификата, PFX SHA-1.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификата своей целью с точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
+|userPrincipalName|Строка|Имя участника-пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата и время начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Его допустимость Дата и время окончания.|
-|providerName|String|Поставщик криптографии для шифрования в этом больших двоичных объектов.|
-|keyName|String|Имя ключа (в рамках поставщика) используется для шифрования больших двоичных объектов.|
+|providerName|String.|Поставщик криптографии для шифрования в этом больших двоичных объектов.|
+|keyName|String.|Имя ключа (в рамках поставщика) используется для шифрования больших двоичных объектов.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Заполнение схемы, используемый поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|encryptedPfxBlob|Двоичный|Зашифрованные больших двоичных объектов PFX.|
-|encryptedPfxPassword|String|Зашифрованный пароль PFX.|
+|encryptedPfxBlob|Binary|Зашифрованные больших двоичных объектов PFX.|
+|encryptedPfxPassword|String.|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время при импорте сертификата PFX.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения этого сертификата PFX.|
 
@@ -90,8 +91,7 @@ Content-length: 530
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileLobApp
 description: Абстрактный базовый класс, содержащий свойства для всех мобильных бизнес-приложений.
-ms.openlocfilehash: cbfa3d69431f0113e263981053dbeeb176126204
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d807f0f49c9a15ef4532391f7db3be66605a5358
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026246"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346335"
 ---
 # <a name="mobilelobapp-resource-type"></a>Тип ресурса mobileLobApp
 
@@ -25,7 +26,7 @@ ms.locfileid: "27026246"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

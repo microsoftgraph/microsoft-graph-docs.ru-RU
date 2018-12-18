@@ -1,12 +1,13 @@
 ---
 title: Удаление depIOSEnrollmentProfile
 description: Удаляет depIOSEnrollmentProfile.
-ms.openlocfilehash: 0ac2e431be73a7d5eb3298cded559bff53cc7571
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4580016f8340986149984b9bde2c63a1acc5b2a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081760"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348036"
 ---
 # <a name="delete-depiosenrollmentprofile"></a>Удаление depIOSEnrollmentProfile
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

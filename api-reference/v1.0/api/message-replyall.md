@@ -1,12 +1,13 @@
 ---
 title: 'message: replyAll'
 description: Ответ всем получателям сообщения. После этого сообщение сохраняется в папке "Отправленные".
-ms.openlocfilehash: ce6ee75912834b14b4a3b5e1d3b03b929f209dfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: cefe4d92d23cb9531f6fa66f74d1c9af87ef429e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348988"
 ---
 # <a name="message-replyall"></a>message: replyAll
 

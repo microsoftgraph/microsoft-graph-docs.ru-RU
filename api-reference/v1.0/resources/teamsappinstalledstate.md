@@ -1,12 +1,13 @@
 ---
-title: Элементы
+title: Members
 description: Описывает текущее состояние установки teamsApp.
-ms.openlocfilehash: 5413d0b8dd631dd3f35a55e802b0c0bde3740748
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 52da05b61d1ef94f1dbc9b799c53b39049205fb7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025978"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346356"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>Тип перечисления teamsAppInstalledState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27025978"
 
 ## <a name="members"></a>Элементы
 
-| Элемент | Значение| Description |
+| Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
 |notInstalled|0|Приложение не установлено в группу.|
 |установлен|1|Приложение устанавливается в обычном режиме.|

@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта androidForWorkAppConfigurationSchema
 description: Удаляет объект androidForWorkAppConfigurationSchema.
-ms.openlocfilehash: 83d41173dc4e6d34cc482ae224816c937fb014dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e88f137fc3b3893337d6b20f65ef07c887e0c0b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077492"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346678"
 ---
 # <a name="delete-androidforworkappconfigurationschema"></a>Удаление объекта androidForWorkAppConfigurationSchema
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkAp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidForWorkAppConfig
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

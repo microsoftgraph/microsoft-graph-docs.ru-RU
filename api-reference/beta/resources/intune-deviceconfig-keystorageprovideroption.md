@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления keyStorageProviderOption
 description: Параметры импорта хранилища ключей поставщика (поставщика хранилища КЛЮЧЕЙ).
-ms.openlocfilehash: 236489d288ec0be70a818e1c51b8c634ad3933a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7923dd5c4b8a09d834d29b65928430828f3dafac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342219"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>Тип перечисления keyStorageProviderOption
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075710"
 
 Параметры импорта хранилища ключей поставщика (поставщика хранилища КЛЮЧЕЙ).
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |useTpmKspOtherwiseUseSoftwareKsp|0|Импорта для доверенного платформы модуля (TPM) поставщика хранилища КЛЮЧЕЙ, если этот параметр указан, в противном случае — импорт поставщика хранилища КЛЮЧЕЙ программного обеспечения.|
 |useTpmKspOtherwiseFail|1|Импорт для доверенного платформы модуля (TPM) поставщика хранилища КЛЮЧЕЙ, если этот параметр указан, в противном случае — не удается.|

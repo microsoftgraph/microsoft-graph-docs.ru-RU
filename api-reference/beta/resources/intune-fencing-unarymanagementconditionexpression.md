@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса unaryManagementConditionExpression
 description: Выражение условия управления, который вычисляется с использованием унарного.
-ms.openlocfilehash: 958c180e52a268f849eca1fe0d2a2b75ff81333b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43711e68d88bdf0854e8501377fbf3e30b25b3ec
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078859"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344347"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>Тип ресурса unaryManagementConditionExpression
 
@@ -19,7 +20,7 @@ ms.locfileid: "27078859"
 Наследуется от [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|Оператор, используемый в оценке унарного. Возможные значения: `not`.|
 |операнд|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Операнд унарного.|

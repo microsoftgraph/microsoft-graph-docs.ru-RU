@@ -1,12 +1,13 @@
 ---
 title: Удаление mobileAppProvisioningConfigGroupAssignment
 description: Удаляет mobileAppProvisioningConfigGroupAssignment.
-ms.openlocfilehash: a54e79c0272219dd2ccd7823f20a558225af7b38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: afe133c5f2500878a3fa632fe13b1f065e84d8ea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081889"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347707"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>Удаление mobileAppProvisioningConfigGroupAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

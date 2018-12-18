@@ -1,12 +1,13 @@
 ---
 title: Обновление windowsManagedDevice
 description: Обновление свойства объекта windowsManagedDevice.
-ms.openlocfilehash: 3ff5569399cf541de93a5093f1060c5aeb77ff56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d1aa637a513d45ad33a1a5990399cf35f4cb21ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081670"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347637"
 ---
 # <a name="update-windowsmanageddevice"></a>Обновление windowsManagedDevice
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -50,7 +51,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для устройства унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|id|Строка|Уникальный идентификатор для устройства унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userId|String|Уникальный идентификатор для пользователя, связанного с устройством унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceName|String|Имя устройства, унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Сведения о объектами для устройства.  Содержит сведения, такие как дисковое пространство, производителя, серийный номер, и т.д. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -88,12 +89,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |remoteAssistanceSessionUrl|String|URL-адрес, позволяющий установить сеанс удаленного помощника с устройством. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|String|Проблемы, возникающие при создании сеансов удаленного помощника. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |isEncrypted|Boolean|Состояние шифрование устройства унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|userPrincipalName|String|Устройство имя участника-пользователя унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|userPrincipalName|Строка|Устройство имя участника-пользователя унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |model|String|Модели устройства, унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |manufacturer|String|Производителя устройства унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |imei|String|IMEI наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время по истечении устройства соответствия льготный период унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|serialNumber|String|SerialNumber наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|serialNumber|Строка|SerialNumber наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |phoneNumber|String|Номер телефона устройства, унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |androidSecurityPatchLevel|String|Уровень исправлений безопасности Android унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userDisplayName|String|Отображаемое имя пользователя унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -109,11 +110,11 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
  Только для чтения. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) коллекции|Указывает последний вход в систему пользователи устройства унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Отчеты о DateTime параметр preferMdmOverGroupPolicy имеет значение.  Если задано, параметры Intune MDM переопределяет параметры групповой политики в случае конфликта. Только для чтения. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Логический|Отчеты при регистрации управляемой устройство через автопилот. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Логический|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Boolean.|Отчеты при регистрации управляемой устройство через автопилот. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Boolean.|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Отчеты устройства управления срок действия сертификата унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|iccid|String|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|UDID|String|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|iccid|String.|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|UDID|String.|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тег области для этого устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|Число активных вредоносных программ для этого устройства windows унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|Число проверка вредоносных программ для этого устройства windows унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -299,8 +300,7 @@ Content-length: 7114
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса excludedApps
 description: Содержит свойства для исключенных приложений Office 365.
-ms.openlocfilehash: 05c1ed7f4789e1a27ddacf92dbd773b2f5a21847
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b8c9eff985783c953ff099dbf4d5ba00826652c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077234"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344627"
 ---
 # <a name="excludedapps-resource-type"></a>Тип ресурса excludedApps
 
@@ -16,21 +17,21 @@ ms.locfileid: "27077234"
 
 Содержит свойства для исключенных приложений Office 365.
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|Access|Логический|Значение для Если MS Office Access следует исключить или нет.|
-|в приложении Excel|Логический|Значение для Если MS Office Excel следует исключить или нет.|
-|Groove|Логический|Значение для Если MS Office OneDrive для бизнеса - Groove следует исключить или нет.|
-|infoPath|Логический|Значение для Если MS Office InfoPath следует исключить или нет.|
-|Lync|Логический|Значение для Если Скайп MS Office для бизнес - Lync следует исключить или нет.|
-|oneDrive|Логический|Значение для Если MS Office OneDrive следует исключить или нет.|
-|oneNote|Логический|Значение для Если MS Office OneNote следует исключить или нет.|
-|Outlook|Логический|Значение для Если MS Office Outlook следует исключить или нет.|
-|powerPoint|Логический|Значение для Если MS Office PowerPoint следует исключить или нет.|
-|publisher|Логический|Значение для Если MS Office Publisher следует исключить или нет.|
-|sharePointDesigner|Логический|Значение для Если MS Office SharePointDesigner следует исключить или нет.|
-|visio|Логический|Значение для Если MS Office Visio следует исключить или нет.|
-|Word|Логический|Значение для Если MS Office Word следует исключить или нет.|
+|Access|Boolean.|Значение для Если MS Office Access следует исключить или нет.|
+|в приложении Excel|Boolean.|Значение для Если MS Office Excel следует исключить или нет.|
+|Groove|Boolean.|Значение для Если MS Office OneDrive для бизнеса - Groove следует исключить или нет.|
+|infoPath|Boolean.|Значение для Если MS Office InfoPath следует исключить или нет.|
+|Lync|Boolean.|Значение для Если Скайп MS Office для бизнес - Lync следует исключить или нет.|
+|oneDrive|Boolean.|Значение для Если MS Office OneDrive следует исключить или нет.|
+|oneNote|Boolean.|Значение для Если MS Office OneNote следует исключить или нет.|
+|Outlook|Boolean.|Значение для Если MS Office Outlook следует исключить или нет.|
+|powerPoint|Boolean.|Значение для Если MS Office PowerPoint следует исключить или нет.|
+|publisher|Boolean.|Значение для Если MS Office Publisher следует исключить или нет.|
+|sharePointDesigner|Boolean.|Значение для Если MS Office SharePointDesigner следует исключить или нет.|
+|visio|Boolean.|Значение для Если MS Office Visio следует исключить или нет.|
+|Word|Boolean.|Значение для Если MS Office Word следует исключить или нет.|
 
 ## <a name="relationships"></a>Связи
 Нет

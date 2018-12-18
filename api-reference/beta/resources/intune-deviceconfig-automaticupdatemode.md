@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления automaticUpdateMode
 description: Возможные значения для режима автоматического обновления.
-ms.openlocfilehash: b7eac8337d6c8286e538bbe98b5ecbc13a448628
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d1bf3903b71dbd06be9151d67a925f374eb1f803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080587"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344046"
 ---
 # <a name="automaticupdatemode-enum-type"></a>Тип перечисления automaticUpdateMode
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080587"
 
 Возможные значения для режима автоматического обновления.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|User Defined, значение по умолчанию, без цели.|
 |notifyDownload|1|Уведомите при загрузке.|

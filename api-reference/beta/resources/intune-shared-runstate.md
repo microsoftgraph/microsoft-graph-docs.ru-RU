@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления runState
 description: Указывает тип состояния выполнения скрипта управления устройства.
-ms.openlocfilehash: 74802b347d83db0785c5c132315071024d944ddc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87c845c02bd5a1571ab2f6382acbcc92cf81170d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074592"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349275"
 ---
 # <a name="runstate-enum-type"></a>Тип перечисления runState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27074592"
 
 Указывает тип состояния выполнения скрипта управления устройства.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестный результат.|
 |success|1|Сценарий выполняется успешно.|

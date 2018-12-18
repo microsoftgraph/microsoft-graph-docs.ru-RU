@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления vpnTrafficRuleAppType
 description: Указывает тип приложения, с которым связана правило трафика через VPN.
-ms.openlocfilehash: 05318911f5fea18b4d6351fd434fb8f6f75b2e11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ab20bf62029e57c93c80d5f49d964abb58a883d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347357"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>Тип перечисления vpnTrafficRuleAppType
 
@@ -16,9 +17,9 @@ ms.locfileid: "27077577"
 
 Указывает тип приложения, с которым связана правило трафика через VPN.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Правила трафика не связан с приложения.|
+|none|0|Правила трафика не связан с приложения.|
 |рабочий стол|1|Трафик правило связано с помощью классического приложения.|
 |Универсальные|2|Трафик правило связано с помощью универсального приложения.|
 

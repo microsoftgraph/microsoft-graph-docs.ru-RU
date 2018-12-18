@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsDeviceAccount
 description: Н/Д
-ms.openlocfilehash: 01341129f03121162cf430be4cc27a7004e9501e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 212443034126e7dba322fe435897244fdc0fdfcc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026315"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346034"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>Тип ресурса windowsDeviceAccount
 
@@ -16,7 +17,7 @@ ms.locfileid: "27026315"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|password|String|Н/Д|
+|password|Строка|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет

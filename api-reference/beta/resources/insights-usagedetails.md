@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса usageDetails
 description: Сложный тип, содержащий свойства использовавшихся элементов. Сведения о время последнего обращения к ресурса (Просмотр) и изменить (изменить) для пользователя.
-ms.openlocfilehash: c74b1436abcfa4993728371a79d2371a667a16d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: ef5efcfce439e9d08784637cb02657d7cd37adf7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074701"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349352"
 ---
 # <a name="usagedetails-resource-type"></a>Тип ресурса usageDetails
 
@@ -27,7 +28,7 @@ ms.locfileid: "27074701"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство              | Тип          | Description  |
+| Свойство              | Тип          | Описание  |
 | -------------         |---------------| -------------|
 | lastAccessedDateTime                  | DateTimeOffset        | Дата и время последнего обращения к пользователю ресурса. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.                      |
 | lastModifiedDateTime              | DateTimeOffset        | Дата и время последнего изменения ресурса пользователем. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.       |

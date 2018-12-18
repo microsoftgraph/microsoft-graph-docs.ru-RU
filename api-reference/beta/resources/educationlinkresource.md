@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationLinkResource
 description: Подкласс educationResource. Этот ресурс является ссылкой и не имеют дополнительные данные, связанные с ним.
-ms.openlocfilehash: 314bd87998ada178484401b2122f0936f87e51a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 02a55eeea25ab2c27d6c5848fbc178ff535d5e33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080200"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349807"
 ---
 # <a name="educationlinkresource-resource-type"></a>Тип ресурса educationLinkResource
 
@@ -16,9 +17,9 @@ ms.locfileid: "27080200"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ссылка|String|URL-адрес для ресурса.|
+|ссылка|String.|URL-адрес для ресурса.|
 
 ## <a name="json-representation"></a>Представление JSON
 

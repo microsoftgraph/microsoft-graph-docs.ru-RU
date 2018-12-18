@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления defenderScanType
 description: Возможные значения для системы проверки типа.
-ms.openlocfilehash: 570ed3601990ac466499868532d18e46694536e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c209ac69f56fb48282e9febd3c1be8e80d3ba9f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076864"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344886"
 ---
 # <a name="defenderscantype-enum-type"></a>Тип перечисления defenderScanType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076864"
 
 Возможные значения для системы проверки типа.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|User Defined, значение по умолчанию, без цели.|
 |Этот параметр отключен|1|Этот параметр отключен сканирование системы.|

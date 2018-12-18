@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsManagementApp
 description: Сущность приложения управления Windows.
-ms.openlocfilehash: b1c5c673e755f87328574113c4a0b0088c033d0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 641538644dc313234e27b0f518a26d8a38c612b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081565"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346426"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Тип ресурса windowsManagementApp
 
@@ -24,11 +25,11 @@ ms.locfileid: "27081565"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|String|Управление приложения доступные версии Windows.|
+|id|Строка|Уникальный идентификатор для приложения управления Windows|
+|availableVersion|String.|Управление приложения доступные версии Windows.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).|Работоспособности для приложения управления Windows.|
 |healthStates|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) коллекции|Список состояния работоспособности для установленного приложения управления Windows.|

@@ -1,12 +1,13 @@
 ---
 title: Удаление приложения из группы
 description: Удаление приложения из указанной группы.
-ms.openlocfilehash: e126dca3812e6b6323820eaf1d230243aebc93e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 5896d71e0b6b20d8aeed3020c3d8dc9251797ccd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349128"
 ---
 # <a name="delete-app-from-team"></a>Удаление приложения из группы
 

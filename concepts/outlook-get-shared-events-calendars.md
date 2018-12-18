@@ -1,12 +1,13 @@
 ---
 title: Получение событий Outlook из общего или делегированного календаря
 description: В Outlook клиенты могут поделиться календарем с другими пользователями и позволить им просматривать или изменять события в этом календаре. Клиенты также могут предоставить делегату право выполнять действия от их имени, получать приглашения на собрания или отвечать на них, а также создавать или изменять элементы в календаре.
-ms.openlocfilehash: e05352e164b127adca1305dded5cbb00840eed52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 8ceb6a49b971c5ad01f27b53c0f3cd3cf047865d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092637"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346566"
 ---
 # <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>Получение событий Outlook из общего или делегированного календаря
 

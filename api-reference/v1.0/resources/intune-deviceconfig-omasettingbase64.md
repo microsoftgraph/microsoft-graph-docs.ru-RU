@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса omaSettingBase64
 description: Определение параметров OMA в кодировке Base64.
-ms.openlocfilehash: 891c13a4cfcc8c0cf378cb5c7f9c6449bd876b7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b0835864d3ec8f8364a15ff293a75dfeded3a0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027016"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343724"
 ---
 # <a name="omasettingbase64-resource-type"></a>Тип ресурса omaSettingBase64
 
@@ -19,11 +20,11 @@ ms.locfileid: "27027016"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|описание|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|описание|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|String|Имя файла, связанное со свойством Value (CER,  | *.CRT | *.p7b | * .bin).|
-|value|String|Значение (строка в кодировке Base64).|
+|value|Строка|Значение (строка в кодировке Base64).|
 
 ## <a name="relationships"></a>Связи
 Нет

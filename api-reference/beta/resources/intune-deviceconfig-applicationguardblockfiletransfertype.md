@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления applicationGuardBlockFileTransferType
 description: Возможные значения для applicationGuardBlockFileTransfer
-ms.openlocfilehash: d7991992c887273b99bc88114b81c8e355d6f357
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe1be9b0ceaee5651302b041b6612515557d899e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079580"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347392"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>Тип перечисления applicationGuardBlockFileTransferType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079580"
 
 Возможные значения для applicationGuardBlockFileTransfer
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен|
 |blockImageAndTextFile|1|Буфер обмена блокировки для передачи файла изображения и текст|

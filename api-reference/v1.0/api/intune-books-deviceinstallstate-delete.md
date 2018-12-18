@@ -1,12 +1,13 @@
 ---
 title: Delete deviceInstallState
 description: Удаляет объект deviceInstallState.
-ms.openlocfilehash: 6bc1ca1db279604c1e50dc56b545ff9b81d91408
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 75088da181233ad764250fe9bfb6a4bd54bf0cc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027659"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350010"
 ---
 # <a name="delete-deviceinstallstate"></a>Delete deviceInstallState
 
@@ -35,7 +36,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{use
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -53,8 +54,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{manag
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

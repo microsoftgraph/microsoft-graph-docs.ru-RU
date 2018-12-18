@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsInformationProtectionStoreApp
 description: Защита данных приложений для Windows из Microsoft Store
-ms.openlocfilehash: 3e175e1e3c01ddfe22341319e44005841d1619b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b5f13b77a5fbd9464ac968034fb19ae4e6327b9e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025148"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344669"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>Тип ресурса windowsInformationProtectionStoreApp
 

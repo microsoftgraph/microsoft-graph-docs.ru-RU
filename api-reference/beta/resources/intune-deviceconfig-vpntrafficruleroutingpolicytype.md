@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления vpnTrafficRuleRoutingPolicyType
 description: Указывает политику маршрутизации для правила трафика через VPN.
-ms.openlocfilehash: df51851ef0820f5982a6689421503364e9064c78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5aa3f44f0e4ccf177154f97e9849093c52728b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077572"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343423"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>Тип перечисления vpnTrafficRuleRoutingPolicyType
 
@@ -16,9 +17,9 @@ ms.locfileid: "27077572"
 
 Указывает политику маршрутизации для правила трафика через VPN.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Маршрутизация политика не указан.|
+|none|0|Маршрутизация политика не указан.|
 |splitTunnel|1|Сетевой трафик для указанного приложения будут направляться через VPN-Подключение.|
 |forceTunnel|2|Сетевой трафик будут направляться через VPN-Подключение.|
 

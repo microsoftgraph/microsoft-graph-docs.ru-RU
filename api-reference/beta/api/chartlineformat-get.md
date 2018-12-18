@@ -1,12 +1,13 @@
 ---
 title: Получение объекта ChartLineFormat
 description: Получение свойств и связей объекта chartlineformat.
-ms.openlocfilehash: 28ad117d4929a38bf290da2abca73d87eb460021
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4ceef0712eabeec616ec0ac03ac4b07579ff798b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341827"
 ---
 # <a name="get-chartlineformat"></a>Получение объекта ChartLineFormat
 
@@ -55,8 +56,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

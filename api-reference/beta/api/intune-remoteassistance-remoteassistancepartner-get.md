@@ -1,12 +1,13 @@
 ---
 title: Получение remoteAssistancePartner
 description: Чтение свойств и связей объекта remoteAssistancePartner.
-ms.openlocfilehash: d5bd42290f787ce4a4e6168498d25fc84407c279
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 35b9a02919d656aa0b56617ee37d9d8c0675ee09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077387"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347189"
 ---
 # <a name="get-remoteassistancepartner"></a>Получение remoteAssistancePartner
 
@@ -38,7 +39,7 @@ GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

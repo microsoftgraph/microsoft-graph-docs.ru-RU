@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsArchitecture
 description: Содержит свойства для архитектуры Windows.
-ms.openlocfilehash: 14e5c573b703839ea0c85781ea2eb82d233f7e94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4b62c31083ac2952507faad6836f8d5c8a484d50
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078623"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346671"
 ---
 # <a name="windowsarchitecture-enum-type"></a>Тип перечисления windowsArchitecture
 
@@ -16,9 +17,9 @@ ms.locfileid: "27078623"
 
 Содержит свойства для архитектуры Windows.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Нет установленных флагов.|
+|none|0|Нет установленных флагов.|
 |x86|1|Ли X86 поддерживаемый тип архитектуры Windows.|
 |x64|2|Ли X64 поддерживаемый тип архитектуры Windows.|
 |ARM|4|Поддерживается ли тип архитектуры Arm Windows.|

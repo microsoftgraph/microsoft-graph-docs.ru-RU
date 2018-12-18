@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса customSubjectAlternativeName
 description: Настраиваемые определения имени субъекта
-ms.openlocfilehash: 14d6c24cd5e8c087b81fa51194301da522d169b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ed3f62cef38340ae7204b98e1fc984ba9bcb9cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078637"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349317"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>Тип ресурса customSubjectAlternativeName
 
@@ -16,10 +17,10 @@ ms.locfileid: "27078637"
 
 Настраиваемые определения имени субъекта
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Тип настраиваемого SAN. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
-|name|String|Имя настраиваемого SAN|
+|name|Строка|Имя настраиваемого SAN|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsStoreApp
 description: Содержит свойства и наследуемые свойства для приложений для магазина Windows.
-ms.openlocfilehash: 17b596a9874243f78c245e80df7a47791fe6472c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c02681dcc8538116967a4b45e01485f9b69b75c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078891"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346496"
 ---
 # <a name="windowsstoreapp-resource-type"></a>Тип ресурса windowsStoreApp
 
@@ -24,7 +25,7 @@ ms.locfileid: "27078891"
 |[Список windowsStoreApps](../api/intune-apps-windowsstoreapp-list.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) коллекции|Свойства списка и связей объектов [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .|
 |[Получение windowsStoreApp](../api/intune-apps-windowsstoreapp-get.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Чтение свойства и связи объекта [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .|
 |[Создание windowsStoreApp](../api/intune-apps-windowsstoreapp-create.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Создание нового объекта [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .|
-|[Удаление windowsStoreApp](../api/intune-apps-windowsstoreapp-delete.md)|Нет|Удаляет [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md).|
+|[Удаление windowsStoreApp](../api/intune-apps-windowsstoreapp-delete.md)|Нет (None)|Удаляет [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md).|
 |[Обновление windowsStoreApp](../api/intune-apps-windowsstoreapp-update.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Обновление свойства объекта [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .|
 
 ## <a name="properties"></a>Свойства

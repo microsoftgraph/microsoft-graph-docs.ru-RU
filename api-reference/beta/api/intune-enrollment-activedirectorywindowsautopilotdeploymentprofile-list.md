@@ -1,12 +1,13 @@
 ---
 title: Список activeDirectoryWindowsAutopilotDeploymentProfiles
 description: Свойства списка и связей объектов activeDirectoryWindowsAutopilotDeploymentProfile.
-ms.openlocfilehash: 052c2ae0eb35076f2dd6bb19024015bd9ccc2a5e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3175a0bf9ec26d3ecb7cc1bd92eb356dd2c5f00c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348386"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>Список activeDirectoryWindowsAutopilotDeploymentProfiles
 
@@ -36,7 +37,7 @@ GET /deviceManagement/windowsAutopilotDeploymentProfiles
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeployment
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

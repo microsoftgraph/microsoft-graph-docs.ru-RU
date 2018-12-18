@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса domainDnsMxRecord
 description: Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
-ms.openlocfilehash: 54a72f8e420d0313303b0787e803933888fb1e57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: e06b3c405f4ad5e2e561e57876ef010bddb1068d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025945"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345838"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>Тип ресурса domainDnsMxRecord
 
@@ -18,7 +19,7 @@ ms.locfileid: "27025945"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
+|id|Строка| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
 |isOptional|Boolean| Если указано значение false, для правильной работы Microsoft Online Services с доменом пользователь должен настроить запись MX на узле DNS. |
 |label|String| Значение, используемое при настройке свойства *псевдонима, узла или имени* для записи MX на узле DNS. |
 |mailExchange|String| Значение, используемое при настройке *значения, ответа или целевого объекта* для записи MX на узле DNS.|

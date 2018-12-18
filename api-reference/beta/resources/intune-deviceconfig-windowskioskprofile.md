@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsKioskProfile
 description: Н/Д
-ms.openlocfilehash: 074c6caa9b632016f092f67192064ae18e9dcce3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ce57b18e86f40a46053a5e0a0f41652763a6d055
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076600"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345355"
 ---
 # <a name="windowskioskprofile-resource-type"></a>Тип ресурса windowsKioskProfile
 
@@ -16,10 +17,10 @@ ms.locfileid: "27076600"
 
 Н/Д
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|profileId|String|Ключ объекта.|
-|Имя_профиля|String|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
+|profileId|Строка|Ключ объекта.|
+|Имя_профиля|String.|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
 |appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md);|Настройка приложения, который будет использоваться для этой базовой конфигурации.|
 |userAccountsConfiguration|[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) коллекции|Учетные записи пользователей, которые будут заблокированы для этой базовой конфигурации. Эта коллекция может содержать не более 500 элементов.|
 

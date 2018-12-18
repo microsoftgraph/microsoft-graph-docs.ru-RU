@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления ndesConnectorState
 description: Текущее состояние Ndes соединителя.
-ms.openlocfilehash: 30d0f4a6244bcf6d0365f81e00dd55a71acaa8bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e52f1651ab5e829e1ebe3dca77fc5056d17bf13f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078981"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347476"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>Тип перечисления ndesConnectorState
 
@@ -16,9 +17,9 @@ ms.locfileid: "27078981"
 
 Текущее состояние Ndes соединителя.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Состояние недоступно еще для этого соединителя.|
+|none|0|Состояние недоступно еще для этого соединителя.|
 |активных|1|Соединитель NDES подключился недавно|
 |Неактивные|2|Нет последнее действие для соединителя Ndes|
 

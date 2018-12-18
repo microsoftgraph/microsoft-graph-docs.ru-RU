@@ -1,12 +1,13 @@
 ---
 title: тенденции тип ресурса
 description: Расширенный отношения подключения пользователя к документам, которые прибора вокруг пользователя (являются предназначенных для пользователя). Файлы OneDrive и файлов, хранящихся на сайтах группы SharePoint могут тенденций вокруг пользователя.
-ms.openlocfilehash: 7d240c4358047ca9ba3d6b8340fbfb7d893a6a1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: ae3c3a876dba6c22a629cce5db8e5b4baa5fb5bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078829"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348001"
 ---
 # <a name="trending-resource-type"></a>тенденции тип ресурса
 
@@ -24,7 +25,7 @@ ms.locfileid: "27078829"
 
 | Свойство      | Тип                              | Описание  |
 | ------------- |---------------                    | -------------|
-| id                    | String                    | Уникальный идентификатор связи. Только для чтения.        |
+| id                    | Строка                    | Уникальный идентификатор связи. Только для чтения.        |
 | weight                | Double                    | Значение, указывающее, какой объем документ в настоящее время прибора. Чем больше число, тем больше документ — это в настоящее время прибора вокруг пользователя (более качественных это). Возвращенный документы сортируются по это значение.  |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | Свойства, которые можно использовать для визуализации документа в работу. |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | Справочник по свойства тенденции документа, например URL-адрес и тип документа. |
@@ -33,7 +34,7 @@ ms.locfileid: "27078829"
 
 | Свойство      | Тип          | Описание  |
 | ------------- |---------------| -------------|
-| resource      | Объект        | Используется для перемещения по тенденции документа. |
+| resource      | Entity        | Используется для перемещения по тенденции документа. |
 
 ## <a name="json-representation"></a>Представление JSON
 

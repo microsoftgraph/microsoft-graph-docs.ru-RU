@@ -1,12 +1,13 @@
 ---
 title: Получение объекта Range
 description: Получение свойств и связей объекта диапазона.
-ms.openlocfilehash: 58766240d62ade6905aef19f6e0f038674ef9d40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3914f018da434536dca280fac2536e93e5496ea9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025690"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347252"
 ---
 # <a name="get-range"></a>Получение объекта Range
 
@@ -52,8 +53,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
