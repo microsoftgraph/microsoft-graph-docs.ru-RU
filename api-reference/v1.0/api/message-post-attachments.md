@@ -1,70 +1,71 @@
 ---
 title: Добавление вложения
 description: 'С помощью этого API можно добавить вложение к сообщению. '
-ms.openlocfilehash: 2e1a3eae50dc506500d10331bdf3a6d4450b37fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 868ce046a37d027c675b005cef013892deffe2a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024849"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314618"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="8109c-103">Добавление вложения</span><span class="sxs-lookup"><span data-stu-id="8109c-103">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="fd247-103">Добавление вложения</span><span class="sxs-lookup"><span data-stu-id="fd247-103">Add attachment</span></span>
 
-<span data-ttu-id="8109c-104">С помощью этого API можно добавить [вложение](../resources/attachment.md) к сообщению.</span><span class="sxs-lookup"><span data-stu-id="8109c-104">Use this API to add an [attachment](../resources/attachment.md) to a message.</span></span> 
+<span data-ttu-id="fd247-104">С помощью этого API можно добавить [вложение](../resources/attachment.md) к сообщению.</span><span class="sxs-lookup"><span data-stu-id="fd247-104">Use this API to add an [attachment](../resources/attachment.md) to a message.</span></span> 
 
-<span data-ttu-id="8109c-105">Допустимые типы вложений:</span><span class="sxs-lookup"><span data-stu-id="8109c-105">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="fd247-105">Допустимые типы вложений:</span><span class="sxs-lookup"><span data-stu-id="fd247-105">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="8109c-106">файл (ресурс [fileAttachment](../resources/fileattachment.md));</span><span class="sxs-lookup"><span data-stu-id="8109c-106">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="8109c-107">элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));</span><span class="sxs-lookup"><span data-stu-id="8109c-107">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
-* <span data-ttu-id="8109c-108">ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="8109c-108">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="fd247-106">файл (ресурс [fileAttachment](../resources/fileattachment.md));</span><span class="sxs-lookup"><span data-stu-id="fd247-106">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="fd247-107">элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));</span><span class="sxs-lookup"><span data-stu-id="fd247-107">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
+* <span data-ttu-id="fd247-108">ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="fd247-108">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="8109c-109">Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="8109c-109">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
+<span data-ttu-id="fd247-109">Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="fd247-109">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
 
-<span data-ttu-id="8109c-110">Вы можете добавить вложение к существующему сообщению, добавив его в коллекцию вложений, или к сообщению, [создаваемому и отправляемому на ходу](../api/user-sendmail.md).</span><span class="sxs-lookup"><span data-stu-id="8109c-110">You can add an attachment to an existing message by posting to its attachments collection, or you can add an attachment to a message that is being [created and sent on the fly](../api/user-sendmail.md).</span></span>
+<span data-ttu-id="fd247-110">Вы можете добавить вложение к существующему сообщению, добавив его в коллекцию вложений, или к сообщению, [создаваемому и отправляемому на ходу](../api/user-sendmail.md).</span><span class="sxs-lookup"><span data-stu-id="fd247-110">You can add an attachment to an existing message by posting to its attachments collection, or you can add an attachment to a message that is being [created and sent on the fly](../api/user-sendmail.md).</span></span>
 
-<span data-ttu-id="8109c-111">Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.</span><span class="sxs-lookup"><span data-stu-id="8109c-111">Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8109c-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8109c-112">Permissions</span></span>
-<span data-ttu-id="8109c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8109c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fd247-111">Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.</span><span class="sxs-lookup"><span data-stu-id="fd247-111">Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fd247-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fd247-112">Permissions</span></span>
+<span data-ttu-id="fd247-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fd247-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8109c-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8109c-115">Permission type</span></span>      | <span data-ttu-id="8109c-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8109c-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fd247-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fd247-115">Permission type</span></span>      | <span data-ttu-id="fd247-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fd247-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8109c-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8109c-117">Delegated (work or school account)</span></span> | <span data-ttu-id="8109c-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8109c-118">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="8109c-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8109c-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8109c-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8109c-120">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="8109c-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8109c-121">Application</span></span> | <span data-ttu-id="8109c-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8109c-122">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="fd247-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fd247-117">Delegated (work or school account)</span></span> | <span data-ttu-id="fd247-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fd247-118">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="fd247-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fd247-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd247-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fd247-120">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="fd247-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fd247-121">Application</span></span> | <span data-ttu-id="fd247-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fd247-122">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8109c-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8109c-123">HTTP request</span></span>
-<span data-ttu-id="8109c-124"><!-- { "blockType": "ignored" } -->Вложения [сообщения](../resources/message.md) в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="8109c-124"><!-- { "blockType": "ignored" } --> Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+## <a name="http-request"></a><span data-ttu-id="fd247-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fd247-123">HTTP request</span></span>
+<span data-ttu-id="fd247-124"><!-- { "blockType": "ignored" } -->Вложения [сообщения](../resources/message.md) в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="fd247-124"><!-- { "blockType": "ignored" } --> Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
-<span data-ttu-id="8109c-125">Вложения [сообщения](../resources/message.md) в папке [mailFolder](../resources/mailfolder.md) верхнего уровня в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="8109c-125">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+<span data-ttu-id="fd247-125">Вложения [сообщения](../resources/message.md) в папке [mailFolder](../resources/mailfolder.md) верхнего уровня в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="fd247-125">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
 ```http
 POST /me/mailFolders/{id}/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-<span data-ttu-id="8109c-p102">Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.</span><span class="sxs-lookup"><span data-stu-id="8109c-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="fd247-p102">Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.</span><span class="sxs-lookup"><span data-stu-id="fd247-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
 ```http
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="8109c-128">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8109c-128">Request headers</span></span>
-| <span data-ttu-id="8109c-129">Имя</span><span class="sxs-lookup"><span data-stu-id="8109c-129">Name</span></span>       | <span data-ttu-id="8109c-130">Тип</span><span class="sxs-lookup"><span data-stu-id="8109c-130">Type</span></span> | <span data-ttu-id="8109c-131">Описание</span><span class="sxs-lookup"><span data-stu-id="8109c-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fd247-128">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fd247-128">Request headers</span></span>
+| <span data-ttu-id="fd247-129">Имя</span><span class="sxs-lookup"><span data-stu-id="fd247-129">Name</span></span>       | <span data-ttu-id="fd247-130">Тип</span><span class="sxs-lookup"><span data-stu-id="fd247-130">Type</span></span> | <span data-ttu-id="fd247-131">Описание</span><span class="sxs-lookup"><span data-stu-id="fd247-131">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="8109c-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="8109c-132">Authorization</span></span>  | <span data-ttu-id="8109c-133">string</span><span class="sxs-lookup"><span data-stu-id="8109c-133">string</span></span>  | <span data-ttu-id="8109c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8109c-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8109c-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8109c-136">Content-Type</span></span> | <span data-ttu-id="8109c-137">string</span><span class="sxs-lookup"><span data-stu-id="8109c-137">string</span></span>  | <span data-ttu-id="8109c-p104">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8109c-p104">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="fd247-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="fd247-132">Authorization</span></span>  | <span data-ttu-id="fd247-133">string</span><span class="sxs-lookup"><span data-stu-id="fd247-133">string</span></span>  | <span data-ttu-id="fd247-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fd247-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fd247-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fd247-136">Content-Type</span></span> | <span data-ttu-id="fd247-137">string</span><span class="sxs-lookup"><span data-stu-id="fd247-137">string</span></span>  | <span data-ttu-id="fd247-p104">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fd247-p104">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8109c-140">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8109c-140">Request body</span></span>
-<span data-ttu-id="8109c-141">Предоставьте в тексте запроса описание объекта [Attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8109c-141">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fd247-140">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fd247-140">Request body</span></span>
+<span data-ttu-id="fd247-141">Предоставьте в тексте запроса описание объекта [Attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fd247-141">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8109c-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="8109c-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fd247-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="fd247-142">Response</span></span>
 
-<span data-ttu-id="8109c-143">В случае успеха этот метод возвращает код отклика `201 Created` и объект [Attachment](../resources/attachment.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="8109c-143">If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="fd247-143">В случае успеха этот метод возвращает код отклика `201 Created` и объект [Attachment](../resources/attachment.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="fd247-143">If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a><span data-ttu-id="8109c-144">Пример (вложенный файл)</span><span class="sxs-lookup"><span data-stu-id="8109c-144">Example (file attachment)</span></span>
+## <a name="example-file-attachment"></a><span data-ttu-id="fd247-144">Пример (вложенный файл)</span><span class="sxs-lookup"><span data-stu-id="fd247-144">Example (file attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="8109c-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="8109c-145">Request</span></span>
-<span data-ttu-id="8109c-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8109c-146">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="fd247-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="fd247-145">Request</span></span>
+<span data-ttu-id="fd247-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fd247-146">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkpsDRVK"],
@@ -82,9 +83,9 @@ Content-length: 142
 }
 ```
 
-<span data-ttu-id="8109c-147">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8109c-147">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="8109c-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="8109c-148">Response</span></span>
-<span data-ttu-id="8109c-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8109c-149">Here is an example of the response.</span></span>
+<span data-ttu-id="fd247-147">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fd247-147">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="fd247-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="fd247-148">Response</span></span>
+<span data-ttu-id="fd247-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fd247-149">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,10 +110,10 @@ Content-length: 202
 
 ```
 
-## <a name="example-item-attachment"></a><span data-ttu-id="8109c-150">Пример (вложенный элемент)</span><span class="sxs-lookup"><span data-stu-id="8109c-150">Example (item attachment)</span></span>
+## <a name="example-item-attachment"></a><span data-ttu-id="fd247-150">Пример (вложенный элемент)</span><span class="sxs-lookup"><span data-stu-id="fd247-150">Example (item attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="8109c-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="8109c-151">Request</span></span>
-<span data-ttu-id="8109c-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8109c-152">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="fd247-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="fd247-151">Request</span></span>
+<span data-ttu-id="fd247-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fd247-152">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkpsDRVK"],
@@ -146,9 +147,8 @@ Content-length: 200
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="8109c-153">Ответ</span><span class="sxs-lookup"><span data-stu-id="8109c-153">Response</span></span>
-<span data-ttu-id="8109c-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="8109c-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fd247-153">Ответ</span><span class="sxs-lookup"><span data-stu-id="fd247-153">Response</span></span>
+<span data-ttu-id="fd247-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="fd247-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
