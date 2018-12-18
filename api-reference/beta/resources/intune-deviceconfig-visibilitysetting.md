@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления visibilitySetting
 description: Состояние универсальный видимости.
-ms.openlocfilehash: 1bfaf112111f837270f5f088c78822bf4b98e45a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a3a765a2c3404875d047bd81774c204b280b90ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074700"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333455"
 ---
 # <a name="visibilitysetting-enum-type"></a>Тип перечисления visibilitySetting
 
@@ -16,7 +17,7 @@ ms.locfileid: "27074700"
 
 Состояние универсальный видимости.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроено.|
 |скрытие|1|Скрытие.|

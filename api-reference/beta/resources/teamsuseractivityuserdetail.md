@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса teamsUserActivityUserDetail
 description: Ниже приведен representaion JSON ресурса.
-ms.openlocfilehash: 4e40ea4adf07450e6b51555df47579955a2a0286
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: a1f47bc52c2a0a613598ce663f16023dce208c51
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081479"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331943"
 ---
 # <a name="teamsuseractivityuserdetail-resource-type"></a>Тип ресурса teamsUserActivityUserDetail
 
@@ -15,16 +16,16 @@ ms.locfileid: "27081479"
 | Свойство                | Тип              |
 | :---------------------- | :---------------- |
 | reportRefreshDate       | Date              |
-| userPrincipalName       | String            |
+| userPrincipalName       | Строка            |
 | lastActivityDate        | Date              |
-| isDeleted               | Логический           |
+| isDeleted               | Boolean.           |
 | deletedDate             | Date              |
 | assignedProducts        | Коллекция String |
 | teamChatMessageCount    | Int64             |
 | privateChatMessageCount | Int64             |
 | callCount               | Int64             |
 | meetingCount            | Int64             |
-| hasOtherAction          | Логический           |
+| hasOtherAction          | Boolean.           |
 | reportPeriod            | String            |
 
 ## <a name="json-representation"></a>Представление JSON

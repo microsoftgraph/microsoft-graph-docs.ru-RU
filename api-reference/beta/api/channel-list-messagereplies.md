@@ -1,12 +1,13 @@
 ---
 title: Ответы на сообщение канала списка
 description: Список всех ответов на сообщение в канал группы.
-ms.openlocfilehash: 7133f48233f2b164aa6643ba896dd0612645e7e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: ac0447e8c0e29e21b60b52c78362c22b0acbd5de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074726"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336633"
 ---
 # <a name="list-channel-message-replies"></a>Ответы на сообщение канала списка
 

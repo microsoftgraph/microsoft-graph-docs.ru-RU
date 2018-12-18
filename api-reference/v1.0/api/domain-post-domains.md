@@ -1,12 +1,13 @@
 ---
 title: Создание домена
 description: Добавление домена в клиент.
-ms.openlocfilehash: 40f49f954799af987287b7ce47044fe5e81fa54c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: c7b64f2d6df2279f248fe41ad23e3bfc0d9636de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028311"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324831"
 ---
 # <a name="create-domain"></a>Создание домена
 

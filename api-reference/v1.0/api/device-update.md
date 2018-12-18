@@ -1,12 +1,13 @@
 ---
 title: Обновление устройства
 description: Обновление свойств зарегистрированного устройства.
-ms.openlocfilehash: cb2f23a5c36b22b65503ea0e8ac93af443c13e08
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e7a4987c11fdd9f67077944a2458f4bb68131ee3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025463"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336829"
 ---
 # <a name="update-device"></a>Обновление устройства
 

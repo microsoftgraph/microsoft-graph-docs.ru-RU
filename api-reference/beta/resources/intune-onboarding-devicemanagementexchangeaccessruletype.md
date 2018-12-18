@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления deviceManagementExchangeAccessRuleType
 description: Критерии, которые определяет тип устройства применения правила доступа к
-ms.openlocfilehash: 575f31cb8ba5bd31a9e5699580dc0624371e4d0b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e0bc166de6396e1b56dd89a4545c9b12b2a71cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081111"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328535"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>Тип перечисления deviceManagementExchangeAccessRuleType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081111"
 
 Критерии, которые определяет тип устройства применения правила доступа к
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |семейства|0|Семейства устройств|
 |model|1|Модели устройства|

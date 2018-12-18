@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса organization
 description: Ресурс organization представляет экземпляр глобальных параметров и ресурсов, которые действуют и готовятся в работе на уровне клиента.
-ms.openlocfilehash: ddc3b47777ea586a0f31c0d1d18aaa5727c828e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: da2d127dc5ba44187d8a3a066f5fe261d3dee859
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026471"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322850"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -24,7 +25,7 @@ ms.locfileid: "27026471"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта.|
+|id|Строка|GUID объекта.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 
 ## <a name="relationships"></a>Связи

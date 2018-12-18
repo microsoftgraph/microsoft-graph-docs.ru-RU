@@ -1,12 +1,13 @@
 ---
 title: Перечисление разделов
 description: Получение списка объектов section из указанной записной книжки.
-ms.openlocfilehash: 0eff056bc3c3a8c99e0defdd0c5bb0af1c64e121
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: ab1f531e687f3b17c18b2b61067eee5e9283acb7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332398"
 ---
 # <a name="list-sections"></a>Перечисление разделов
 

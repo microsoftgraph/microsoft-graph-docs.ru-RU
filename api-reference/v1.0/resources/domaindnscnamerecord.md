@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса domainDnsCnameRecord
 description: Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
-ms.openlocfilehash: 1c8df7148a4d843d5cd6278f5cbcc03358159424
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: bd1701e0757dc2facecb066beb7fe9108345a7f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026891"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330837"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>Тип ресурса domainDnsCnameRecord
 

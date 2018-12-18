@@ -1,12 +1,13 @@
 ---
 title: Получение цепочки беседы
 description: Получение объекта thread.
-ms.openlocfilehash: ba7bc4e008e714f8a5b10681f3f21665b92c701b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: ecfb1443c1210271d2fbce330a8237a57bdd07d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026532"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327001"
 ---
 # <a name="get-conversation-thread"></a>Получение цепочки беседы
 Получение объекта [thread](../resources/conversationthread.md).

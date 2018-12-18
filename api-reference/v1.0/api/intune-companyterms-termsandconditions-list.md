@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов termsAndConditions
 description: Список свойств и связей объектов termsAndConditions.
-ms.openlocfilehash: eb67d5e3704ac18f5d6b9343b459a2ba6e910115
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a4d80f0f660a44c1b50d44c7ccebf8f49c891cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026180"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330494"
 ---
 # <a name="list-termsandconditionses"></a>Перечисление объектов termsAndConditions
 
@@ -34,7 +35,7 @@ GET /deviceManagement/termsAndConditions
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

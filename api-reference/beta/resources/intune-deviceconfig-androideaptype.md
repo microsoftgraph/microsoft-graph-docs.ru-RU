@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidEapType
 description: Типы конфигурации расширенной проверки подлинности протокол (EAP).
-ms.openlocfilehash: 6d2f65ff4b2f61b17080869888bd6ef430349a70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6a1133fa83c2daba414530eb46191f7263953bcd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077226"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333231"
 ---
 # <a name="androideaptype-enum-type"></a>Тип перечисления androidEapType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077226"
 
 Типы конфигурации расширенной проверки подлинности протокол (EAP).
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |eapTls|13|Уровень безопасности транспортный протокол расширенной проверки подлинности (EAP-TLS).|
 |eapTtls|21|Расширяемые проверки подлинности туннель протокол Transport Layer Security (EAP-TTLS).|

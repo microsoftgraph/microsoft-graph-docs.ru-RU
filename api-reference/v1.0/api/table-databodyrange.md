@@ -1,12 +1,13 @@
 ---
 title: 'Table: DataBodyRange'
 description: Получает объект диапазона, связанный с основными данными таблицы.
-ms.openlocfilehash: b43458707d2cb7063b2ad81a89ac39aea7e94c29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f36ec6ca005e529ac06e410bbbeb425db3096261
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026756"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326749"
 ---
 # <a name="table-databodyrange"></a>Table: DataBodyRange
 
@@ -54,8 +55,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

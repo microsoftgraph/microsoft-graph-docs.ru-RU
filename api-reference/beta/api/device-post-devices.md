@@ -1,12 +1,13 @@
 ---
 title: Создание устройства
 description: Создание нового устройства.
-ms.openlocfilehash: 33dc1f8da40e29e8c135cf24f35ec3ce52af9b06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e2b52c67ee34df9a609fbb53972ee8b859e6889f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079458"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336143"
 ---
 # <a name="create-device"></a>Создание устройства
 

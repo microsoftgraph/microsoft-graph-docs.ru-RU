@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса contact
 description: Контакт — элемент в Outlook, в котором вы можете упорядочить и хранить сведения о людях и организациях, с которыми поддерживаете связь. Контакты содержатся в папках контактов.
-ms.openlocfilehash: 28278a6d41fb294d2be9b9f475462b8a32409eb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 13eb3b1e3f88c5018031176cffbcc89a038073ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026248"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334974"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 
@@ -48,7 +49,7 @@ ms.locfileid: "27026248"
 |businessHomePage|String|Домашняя страница контакта (рабочая).|
 |businessPhones|Коллекция String|Рабочие номера телефонов контакта.|
 |categories|Коллекция String|Категории, связанные с контактом.|
-|changeKey|String|Указывает версию контакта. При каждом изменении контакта также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
+|changeKey|Строка|Указывает версию контакта. При каждом изменении контакта также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |children|Коллекция String|Имена детей контакта.|
 |companyName|String|Название компании контакта.|
 |createdDateTime|DateTimeOffset|Время создания контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsPrivacyDataAccessLevel
 description: Определите уровень доступа к определенной категории конфиденциальности данных Windows.
-ms.openlocfilehash: 09db03706795cc2aba4cc0c93dce87dc7069cd3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6eb1c1ea6eff28d90979da3ff998fd8442df353a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082575"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332412"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>Тип перечисления windowsPrivacyDataAccessLevel
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082575"
 
 Определите уровень доступа к определенной категории конфиденциальности данных Windows.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Уровень доступа не указан, не целей. Устройство может работать либо как и UserInControl или ForceAllow. Он может зависеть от конфиденциальности данных были обращении к ним версий Windows и других факторов.|
 |forceAllow|1|Приложения смогут получить доступ к данным указанного конфиденциальности.|

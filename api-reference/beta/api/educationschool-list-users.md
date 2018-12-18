@@ -1,12 +1,13 @@
 ---
 title: Перечисление EducationUsers
 description: Получение списка пользователей в учебном заведении.
-ms.openlocfilehash: 24bcf5b680cdb29684f9647bd3e9632b896594a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 6e642792b8cb3d7463b13288b0ed95838590ec52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076982"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336416"
 ---
 # <a name="list-educationusers"></a>Перечисление EducationUsers
 

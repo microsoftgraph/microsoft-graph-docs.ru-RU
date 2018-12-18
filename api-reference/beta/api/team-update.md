@@ -1,12 +1,13 @@
 ---
 title: Группа обновления
 description: Обновление свойств указанной группы.
-ms.openlocfilehash: e5148b21fa832c45e1f89c1296fd0df64aaf71e0
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 19a3c55295bc54fcd7f1c9e24f88e386fc4dc2bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222480"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331922"
 ---
 # <a name="update-team"></a>Группа обновления
 
@@ -40,7 +41,7 @@ PATCH /teams/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [группы](../resources/team.md) .
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -70,7 +71,7 @@ Content-length: 211
   }
 }
 ```
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": true,

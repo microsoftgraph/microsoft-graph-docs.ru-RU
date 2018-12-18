@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileAppTroubleshootingAppStateHistory
 description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
-ms.openlocfilehash: 415d018d3650819bce8defe651af8df77e3c6032
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ebe38b852c6c6926b69e75379bc1a029ade0bb98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077180"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332160"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>Тип ресурса mobileAppTroubleshootingAppStateHistory
 
@@ -19,7 +20,7 @@ ms.locfileid: "27077180"
 Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Время возникновения элемент журнала. Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md);|К которому нацелено AAD идентификатор группы безопасности. Возможные значения: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|

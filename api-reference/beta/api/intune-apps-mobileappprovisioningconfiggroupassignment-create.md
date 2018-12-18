@@ -1,12 +1,13 @@
 ---
 title: Создание mobileAppProvisioningConfigGroupAssignment
 description: Создание нового объекта mobileAppProvisioningConfigGroupAssignment.
-ms.openlocfilehash: 7ff1377079ea47d7bb809b9b71d1033a4681d19d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d97b8cd59a0ad170b93fb5127ab276ef2dd29003
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082650"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331005"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Создание mobileAppProvisioningConfigGroupAssignment
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,10 +46,10 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 В следующей таблице показаны свойства, которые необходимы для создания mobileAppProvisioningConfigGroupAssignment.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|targetGroupId|String|Идентификатор группы AAD целевого приложения подготовки конфигурации.|
-|id|String|Ключ объекта.|
+|targetGroupId|String.|Идентификатор группы AAD целевого приложения подготовки конфигурации.|
+|id|Строка|Ключ объекта.|
 
 
 
@@ -70,8 +71,7 @@ Content-length: 129
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

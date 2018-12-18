@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса microsoftStoreForBusinessContainedApp
 description: Класс, представляющий автономные приложения из MicrosoftStoreForBusinessApp.
-ms.openlocfilehash: e0d934f8f4220556fcc5c65c1c5547abf4cc415b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4ba31870ab98c509a16814bd52179e1f2deab63
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076639"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328289"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>Тип ресурса microsoftStoreForBusinessContainedApp
 
@@ -30,8 +31,8 @@ ms.locfileid: "27076639"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|Автономные приложения MicrosoftStoreForBusinessApp модели пользователя приложения.|
+|id|Строка|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|String.|Автономные приложения MicrosoftStoreForBusinessApp модели пользователя приложения.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,12 +1,13 @@
 ---
 title: Создание deviceManagementScriptGroupAssignment
 description: Создание нового объекта deviceManagementScriptGroupAssignment.
-ms.openlocfilehash: 3a92632ad1ab900ddff8371ce37bedb4f16f6d55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f084fb933d4694d9c1dfa43f018fb3ce2d8dd95b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075449"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324782"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Создание deviceManagementScriptGroupAssignment
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,8 +48,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения группы, сценарий управления устройства.|
-|targetGroupId|String|Идентификатор группы Azure Active Directory мы ориентация сценария.|
+|id|Строка|Ключ объекта назначения группы, сценарий управления устройства.|
+|targetGroupId|String.|Идентификатор группы Azure Active Directory мы ориентация сценария.|
 
 
 
@@ -70,8 +71,7 @@ Content-length: 124
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

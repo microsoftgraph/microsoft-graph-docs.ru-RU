@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления wiFiAuthenticationMethod
 description: Метод проверки подлинности Wi-Fi.
-ms.openlocfilehash: 0813ab5a535a76d4544d2de092a69fea6e58f1e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f0e7dc7e5ef19d79035bec59d9f7a1824881923e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081021"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336899"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>Тип перечисления wiFiAuthenticationMethod
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081021"
 
 Метод проверки подлинности Wi-Fi.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |certificate|0|Используйте сертификат удостоверения для проверки подлинности.|
 |usernameAndPassword|1|Использовать имя пользователя и пароль для проверки подлинности.|

@@ -1,12 +1,13 @@
 ---
 title: Список intuneBrandingProfiles
 description: Свойства списка и связей объектов intuneBrandingProfile.
-ms.openlocfilehash: 0c7fa1a191de73ea5042e319489633388b1f95df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 864cdd86eac9f0b22eb66ecc930a1f900e9e83e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080812"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336262"
 ---
 # <a name="list-intunebrandingprofiles"></a>Список intuneBrandingProfiles
 
@@ -36,7 +37,7 @@ GET /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

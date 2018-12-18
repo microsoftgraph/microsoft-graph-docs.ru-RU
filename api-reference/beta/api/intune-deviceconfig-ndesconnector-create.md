@@ -1,12 +1,13 @@
 ---
 title: Создание ndesConnector
 description: Создание нового объекта ndesConnector.
-ms.openlocfilehash: 0dd1ee403a03d72e5bd9c0dd8febcfb28a01a36e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 16580e9d69850139edd8f268bbaf3688b29d06e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078041"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333602"
 ---
 # <a name="create-ndesconnector"></a>Создание ndesConnector
 
@@ -36,7 +37,7 @@ POST /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,10 +48,10 @@ POST /deviceManagement/ndesConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ NDES соединителя.|
+|id|Строка|Ключ NDES соединителя.|
 |lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя Ndes|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние NDES соединителя. Возможные значения: `none`, `active`, `inactive`.|
-|displayName|String|Понятное имя соединителя Ndes.|
+|displayName|Строка|Понятное имя соединителя Ndes.|
 
 
 
@@ -74,8 +75,7 @@ Content-length: 183
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления defenderAttackSurfaceType
 description: Возможные значения правил сокращение поверхности атаки Защитник
-ms.openlocfilehash: 224ff03ce41d459a2bb33dae082bf945beddbfd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 40970d9070065c6481e4ed8dfbf99b794878db6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075431"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328975"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>Тип перечисления defenderAttackSurfaceType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075431"
 
 Возможные значения правил сокращение поверхности атаки Защитник
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение по умолчанию устройства, без цели.|
 |блок|1|Функциональные возможности блока.|

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления managedAppDataTransferLevel
 description: Данные могут быть перенесены из/эти классы приложений
-ms.openlocfilehash: 92ea576aa1fe0746b3a98a8ef01dc147b475b504
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41e813e9ea3450a349966ec8a212fa45dd419625
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078961"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331915"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>Тип перечисления managedAppDataTransferLevel
 
@@ -16,11 +17,11 @@ ms.locfileid: "27078961"
 
 Данные могут быть перенесены из/эти классы приложений
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |allApps|0|Все приложения.|
 |managedApps|1|Управляемые приложения.|
-|Нет|2|Нет приложения.|
+|none|2|Нет приложения.|
 
 
 

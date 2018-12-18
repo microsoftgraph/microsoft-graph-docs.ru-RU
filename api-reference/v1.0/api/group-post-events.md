@@ -1,12 +1,13 @@
 ---
 title: Создание объекта event
 description: С помощью этого API можно создать событие.
-ms.openlocfilehash: 79d5b4289c3326a02c279ea8e48fc5fef19a7797
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c4ae4dba933b8c3a607e3c773d89756d59e06fd9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028313"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322948"
 ---
 # <a name="create-event"></a>Создание объекта event
 С помощью этого API можно создать [событие](../resources/event.md).

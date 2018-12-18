@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления mobileAppPublishingState
 description: Указывает состояние публикации приложения.
-ms.openlocfilehash: 458c38f6e53bc5590d4414d8c288cdd88739bcc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c1c89bc67a6f5c9732089b5f85ded77986b16689
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027287"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329556"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>Тип перечисления mobileAppPublishingState
 
@@ -14,7 +15,7 @@ ms.locfileid: "27027287"
 
 Указывает состояние публикации приложения.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notPublished|0|Приложение не публикуется.|
 |обработка|1|Приложение ожидает обработки на стороне службы.|

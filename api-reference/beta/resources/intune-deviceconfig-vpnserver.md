@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса vpnServer
 description: Определение VPN-сервер.
-ms.openlocfilehash: e89cc562c3fe0f6b353199ca7de639053177ab1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a8f0e6bd38f243d0066da231ef07d1723961987b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078268"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328779"
 ---
 # <a name="vpnserver-resource-type"></a>Тип ресурса vpnServer
 
@@ -18,9 +19,9 @@ ms.locfileid: "27078268"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|описание|String|Описание.|
+|описание|Строка|Описание.|
 |address|String|Адрес (IP-адрес, URL-адрес или полное доменное имя)|
-|isDefaultServer|Логический|Сервер по умолчанию.|
+|isDefaultServer|Boolean.|Сервер по умолчанию.|
 
 ## <a name="relationships"></a>Связи
 Нет

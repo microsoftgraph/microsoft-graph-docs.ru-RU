@@ -1,12 +1,13 @@
 ---
 title: Создание раздела
 description: Создание нового onenoteSection в указанном записной книжки.
-ms.openlocfilehash: eb612b4ceea14d2c443dff3c31bf79e95e4bff58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 764102e845329f8ce4f6eb8cfe8732e6d5e54c9a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027583"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336976"
 ---
 # <a name="create-section"></a>Создание раздела
 

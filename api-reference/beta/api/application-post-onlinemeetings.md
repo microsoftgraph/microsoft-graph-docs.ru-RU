@@ -1,12 +1,13 @@
 ---
 title: Создание собрания по сети
 description: Создает собрания от имени пользователя, указанного в тексте запроса.
-ms.openlocfilehash: c2e62ee3e705f93a97af5682679790b7747cdeef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 4a68e25156353b41c3ff43685d7b021a2454a927
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077633"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331432"
 ---
 # <a name="create-online-meeting"></a>Создание собрания по сети
 
@@ -23,7 +24,7 @@ ms.locfileid: "27077633"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложения                            | OnlineMeetings.ReadWrite.All                |
+| Application                            | OnlineMeetings.ReadWrite.All                |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

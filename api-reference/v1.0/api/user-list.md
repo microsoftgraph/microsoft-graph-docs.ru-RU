@@ -1,12 +1,13 @@
 ---
 title: Список пользователей
 description: Получение списка объектов user.
-ms.openlocfilehash: 3ab6d2a663233bcb26b31abee33b430039ac8d25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: ad7feaa1d694f3ae44b125f67e5e72b78b3089f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025560"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335170"
 ---
 # <a name="list-users"></a>Список пользователей
 

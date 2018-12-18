@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsAppX
 description: Содержит свойства и наследуемые свойства для приложений Windows AppX бизнес-систем.
-ms.openlocfilehash: ca36c3d1519efccfcdb08c4af3b1ccf1a94f2e09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 372c1c2827e3d873d0266715502a837dca27d76b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081159"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336031"
 ---
 # <a name="windowsappx-resource-type"></a>Тип ресурса windowsAppX
 
@@ -30,7 +31,7 @@ ms.locfileid: "27081159"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

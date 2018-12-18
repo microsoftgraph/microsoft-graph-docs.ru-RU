@@ -1,12 +1,13 @@
 ---
 title: 'TableRow: delete'
 description: Удаляет строку из таблицы.
-ms.openlocfilehash: ca70e0d7822f881e2be024eb0de2966684ef8b47
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ade0918ba9ad6fc23ff3becc33ba38024ee9894a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027899"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336920"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
 

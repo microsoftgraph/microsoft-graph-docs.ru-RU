@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsUpdateActiveHoursInstall
 description: Н/Д
-ms.openlocfilehash: c9647cda65d680629fda57e3dfdcbffb3d5d8625
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5ebe214a79e880adc408f3c55c2b9d39f00668d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327694"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>Тип ресурса windowsUpdateActiveHoursInstall
 

@@ -1,12 +1,13 @@
 ---
 title: Перечисление разделов
 description: Получение списка объектов onenoteSection.
-ms.openlocfilehash: ab6ee09acba2c6c0d30c02925e199af4484914ad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: ea81becff41f6560e7674b209d72b50666588c74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028287"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331635"
 ---
 # <a name="list-sections"></a>Перечисление разделов
 

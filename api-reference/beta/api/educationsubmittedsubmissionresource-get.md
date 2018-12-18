@@ -1,12 +1,13 @@
 ---
 title: Получение educationSubmittedSubmissionResource
 description: Возвращает отправленные ресурсов. Это будет доступно для преподавателей после отправки студента и будет доступен для студента после преподаватель выпуска подачи.  Обратите внимание, что учителя можно оставить заметки в некоторые ресурсы.
-ms.openlocfilehash: 89235ad1d33e86da13ec5f4637af7cda949a940a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: a956f7b18125f01798f804ab577450030a626b3a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075665"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336535"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>Получение educationSubmittedSubmissionResource
 

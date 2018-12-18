@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления importedDeviceIdentityType
 description: Н/Д
-ms.openlocfilehash: 2ae34aa05397e8d7917b59eeb1bc74d7545f63e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46c4e7d8ce2c06a4e806329753920892c0cc46ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080764"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328653"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>Тип перечисления importedDeviceIdentityType
 

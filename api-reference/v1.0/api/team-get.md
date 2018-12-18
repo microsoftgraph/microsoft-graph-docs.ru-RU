@@ -1,12 +1,13 @@
 ---
 title: Получение группы
 description: Извлечение свойств и связи из указанной группы.
-ms.openlocfilehash: e1f3b08134377492fc00f9bc0b43c190d1d8a81d
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: e91140b50a1120667a3df579d0e20144de776e59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222648"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329038"
 ---
 # <a name="get-team"></a>Получение группы
 
@@ -43,7 +44,7 @@ GET /teams/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объекта [группы](../resources/team.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -56,7 +57,7 @@ GET /teams/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}
 ```
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

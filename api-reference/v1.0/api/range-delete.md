@@ -1,12 +1,13 @@
 ---
 title: 'Range: delete'
 description: Удаляет ячейки, связанные с диапазоном.
-ms.openlocfilehash: fef8caad6099e37698db0c501c7fb8e2c7ef452e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 8abcc24161aef5dbb8fa40e028b21b9e54c0ff39
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335618"
 ---
 # <a name="range-delete"></a>Range: delete
 

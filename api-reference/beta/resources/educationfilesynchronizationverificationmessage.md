@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationFileSynchronizationVerificationMessage
 description: Представляет ошибки, возвращенной клиенту в ответ на запрос на запуск синхронизации профилей на основе CSV школа данных. Этот ресурс будет содержать ошибки, которые возникают из проверки. Пользователям необходимо исправить источника данных, перед перезапуском запроса для синхронизации с Azure Active Directory (Azure AD).
-ms.openlocfilehash: cf685e0619c5600340df68ba86ecaef11a8a435d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: f2826f779aac3ba41146b6677f3d1e0364be92a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075195"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336066"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>Тип ресурса educationFileSynchronizationVerificationMessage
 

@@ -1,12 +1,13 @@
 ---
 title: Действие revokeUserLicense
 description: Назначенные REVOKE iOS VPP пользовательской лицензии для заданного приложения.
-ms.openlocfilehash: 0222623ba5e1f3de0122a632a3ea9554bbd2c0ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94d8dff027421d5b3b1c763439dbcf4ec3d2391f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075618"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332811"
 ---
 # <a name="revokeuserlicense-action"></a>Действие revokeUserLicense
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,10 +48,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор пользователя, для которого является отозвать лицензии назначенные приложения|
-|notifyManagedDevices|Логический|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
+|notifyManagedDevices|Boolean.|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
 
 
 
@@ -73,8 +74,7 @@ Content-length: 66
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

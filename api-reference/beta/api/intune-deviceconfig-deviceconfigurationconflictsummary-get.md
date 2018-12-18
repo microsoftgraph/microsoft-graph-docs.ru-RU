@@ -1,12 +1,13 @@
 ---
 title: Получение deviceConfigurationConflictSummary
 description: Чтение свойства и связи объекта deviceConfigurationConflictSummary.
-ms.openlocfilehash: 85af2e1ffcacc5d3944680afdc6a80b4e72b1213
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b5f38a613d10ebfd610bc8bf71bfaa30243d0d5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080043"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333973"
 ---
 # <a name="get-deviceconfigurationconflictsummary"></a>Получение deviceConfigurationConflictSummary
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConflic
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

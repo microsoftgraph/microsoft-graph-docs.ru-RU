@@ -1,12 +1,13 @@
 ---
 title: Удаление беседы
 description: Удаление беседы.
-ms.openlocfilehash: a6fee14c0debde4ac09d6c7c7814370ecdb06c08
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2d35472f611b6f49ba1683ba127444d91753fac7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025971"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335751"
 ---
 # <a name="delete-conversation"></a>Удаление беседы
 

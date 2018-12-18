@@ -1,12 +1,13 @@
 ---
 title: Close Session
 description: 'Используйте этот API для закрытия существующего сеанса книги. '
-ms.openlocfilehash: f38529de8af2289421c577dd074a182da5782d5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c48e6e8b075f1cad0629dae0325f7de44d9cfc11
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026198"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335604"
 ---
 # <a name="close-session"></a>Close Session
 
