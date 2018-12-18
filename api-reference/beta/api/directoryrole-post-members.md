@@ -1,12 +1,13 @@
 ---
 title: Добавление участника роли каталога
 description: С помощью этого API можно создать участника роли каталога.
-ms.openlocfilehash: f3a778e501c7eefddd206282c3e79c96b262220c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 790a2b71f05e19edb01c371d1a54283b5037e4f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074694"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303957"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -59,8 +60,7 @@ Content-length: 30
 ```
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

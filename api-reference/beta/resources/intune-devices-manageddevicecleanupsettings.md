@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedDeviceCleanupSettings
 description: Определение правила, когда администратор хочет устройств, чтобы очистить.
-ms.openlocfilehash: f7782ac9d6571b58c8ed1e7964637736fcb5f3d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84650c4d2d182fe0da30ced56786a2c0216a6358
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078839"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304090"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>Тип ресурса managedDeviceCleanupSettings
 
@@ -16,9 +17,9 @@ ms.locfileid: "27078839"
 
 Определение правила, когда администратор хочет устройств, чтобы очистить.
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|deviceInactivityBeforeRetirementInDays|String|Количество дней, когда устройство имеет не связаться с Intune.|
+|deviceInactivityBeforeRetirementInDays|String.|Количество дней, когда устройство имеет не связаться с Intune.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,12 +1,13 @@
 ---
 title: Обновление deviceManagementScriptDeviceState
 description: Обновление свойства объекта deviceManagementScriptDeviceState.
-ms.openlocfilehash: 790b13615d9f00d1e8441f444aeb0340454de098
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a5dee56ac260642d1a0c105d62ee26499d7276df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078294"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305315"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Обновление deviceManagementScriptDeviceState
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,9 +49,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности состояния устройства устройства управления скрипта.|
+|id|Строка|Ключ сущности состояния устройства устройства управления скрипта.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего выполнения сценарий управления устройства. Возможные значения: `unknown`, `success`, `fail`.|
-|resultMessage|String|Подробные сведения о результатов выполнения.|
+|resultMessage|String.|Подробные сведения о результатов выполнения.|
 |lastStateUpdateDateTime|DateTimeOffset|Время последнего выполняет сценарий управления устройства.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочный выполнение сценария управления устройства.|
 |errorDescription|String|Описание ошибки, соответствующий ошибочный выполнение сценария управления устройства.|
@@ -78,8 +79,7 @@ Content-length: 209
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

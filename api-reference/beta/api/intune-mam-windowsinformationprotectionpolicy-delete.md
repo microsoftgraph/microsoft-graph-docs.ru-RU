@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта windowsInformationProtectionPolicy
 description: Удаление объекта windowsInformationProtectionPolicy.
-ms.openlocfilehash: cba88a6b5b876e7827df8a6647cf8ae93fdbb3e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17d0a626331e4ec06b0a9c13c0bb3f0e7963c019
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081082"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304587"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>Удаление объекта windowsInformationProtectionPolicy
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInforma
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationPr
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

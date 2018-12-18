@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления deviceManagementExchangeConnectorStatus
 description: Текущее состояние соединителя Exchange.
-ms.openlocfilehash: cd8b845f4902788029be8661b47161997203fc73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b2576d75eef285fe64e8ebf4d89dd004130fa78
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303796"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>Тип перечисления deviceManagementExchangeConnectorStatus
 
@@ -16,9 +17,9 @@ ms.locfileid: "27077108"
 
 Текущее состояние соединителя Exchange.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Не соединитель отсутствует.|
+|none|0|Не соединитель отсутствует.|
 |connectionPending|1|Ожидание подключения в среду Exchange.|
 |подключение|2|Подключения к среде Exchange|
 |отключен|3|Отключение от среды Exchange|

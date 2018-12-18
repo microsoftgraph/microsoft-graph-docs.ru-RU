@@ -1,12 +1,13 @@
 ---
 title: Список importedWindowsAutopilotDeviceIdentities
 description: Список свойств и связей между объектамиimportedWindowsAutopilotDeviceIdentity.
-ms.openlocfilehash: 1ebaabefaa6fb49a9d1f12c6d6b1f7cb73818324
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c7a2de8f51f7a2c9cf08d1a3ed2618e9f7081cf9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080467"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303964"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>Список importedWindowsAutopilotDeviceIdentities
 
@@ -37,7 +38,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -55,8 +56,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDe
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

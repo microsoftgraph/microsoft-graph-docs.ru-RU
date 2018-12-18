@@ -1,12 +1,13 @@
 ---
 title: Список identityRiskEvents
 description: Получение списка объектов identityriskevent.
-ms.openlocfilehash: 8581aefcdcfb479c607c83d3478d7d4f5af4e269
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: cloudhandler
+ms.openlocfilehash: ee730b2da90cd1d458bd3e3ad4c432db93fa4cea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075591"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302781"
 ---
 # <a name="list-identityriskevents"></a>Список identityRiskEvents
 
@@ -20,7 +21,7 @@ ms.locfileid: "27075591"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskEvent.Read.All |
+|Для приложений | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,8 +51,7 @@ GET /identityRiskEvents
 GET https://graph.microsoft.com/v1.0/identityRiskEvents
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

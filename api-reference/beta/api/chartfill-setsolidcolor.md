@@ -1,12 +1,13 @@
 ---
 title: 'ChartFill: setSolidColor'
 description: Задает заливку одним цветом для элемента диаграммы.
-ms.openlocfilehash: 320e0e4ef116e2130fd99fab7e254c2fa987cb60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e33c7a4740b332a8827a4d64a54f2b816c8a1b16
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077907"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302809"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 

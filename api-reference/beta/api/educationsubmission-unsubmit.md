@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: unsubmit'
-description: . Во время процесса отправки все ресурсы копируются из submittedResources интервалов workingResources. Преподаватель выполнит поиск в списке ресурсы рабочее для ранжирования.
-ms.openlocfilehash: 610b5a69a06c29d2e2b9b1fa6eb501a56d59b076
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 'Действие, которое указывает, что студента работает на отправки назначения после включения. Это действие может быть занято только учащегося. '
+author: dipakboyed
+ms.openlocfilehash: a61f2e9c05691266ae9248ca95700f173e0ee0b0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075671"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304230"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 

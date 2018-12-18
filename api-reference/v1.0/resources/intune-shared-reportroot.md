@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса reportRoot
 description: Ресурс, представляющий экземпляр отчетов журнала.
-ms.openlocfilehash: 6f944351c0099270d1d16ca15a9ae1f41629174b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46b4844487a1cb714dde791e6867c277c1693f66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303971"
 ---
 # <a name="reportroot-resource-type"></a>Тип ресурса reportRoot
 

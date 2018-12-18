@@ -1,12 +1,13 @@
 ---
 title: Список educationSynchronizationProfiles
 description: Получение коллекции школа данных синхронизации профилей в клиента.
-ms.openlocfilehash: a303178a930f207aa92e7a49c769afbc06a7e1e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d7ee2b643259eec6c9106ab6ff89245ab79a3044
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075670"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303103"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Список educationSynchronizationProfiles
 

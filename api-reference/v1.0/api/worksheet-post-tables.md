@@ -1,12 +1,13 @@
 ---
 title: Создание таблицы
 description: С помощью этого API можно создать объект Table.
-ms.openlocfilehash: 49c0beac13fc40f10eb5c2b44f405d23885bcb38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6bc55e68b615598863482859ed554e5d27a9d18c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025546"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304622"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -62,8 +63,7 @@ Content-length: 109
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

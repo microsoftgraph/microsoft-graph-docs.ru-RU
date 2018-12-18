@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса exclusionGroupAssignmentTarget
 description: Представляет группу, которую следует исключить из назначения.
-ms.openlocfilehash: fdbb463687d75791965db2ef05abfea1a269d1a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8193ac714f7f68dc371454c809c3eaa3176f8453
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027033"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304517"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Тип ресурса exclusionGroupAssignmentTarget
 
@@ -19,7 +20,7 @@ ms.locfileid: "27027033"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupId|String|ИД группы, являющейся объектом назначения. Наследуется от [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
+|groupId|Строка|ИД группы, являющейся объектом назначения. Наследуется от [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
 ## <a name="relationships"></a>Связи
 Нет

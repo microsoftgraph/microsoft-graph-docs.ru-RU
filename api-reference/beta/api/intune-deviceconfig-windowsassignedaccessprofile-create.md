@@ -1,12 +1,13 @@
 ---
 title: Создание windowsAssignedAccessProfile
 description: Создание нового объекта windowsAssignedAccessProfile.
-ms.openlocfilehash: 6ef13530dcd3d0064d829c3341710c5a32f02a2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 626b0815234153f585d74edcdad65f7ad2dfd3a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082544"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304545"
 ---
 # <a name="create-windowsassignedaccessprofile"></a>Создание windowsAssignedAccessProfile
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,9 +48,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|Имя_профиля|String|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
-|showTaskBar|Логический|Этот параметр позволяет администратору задать, отображается ли панель задач.|
+|id|Строка|Ключ объекта.|
+|Имя_профиля|String.|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
+|showTaskBar|Boolean.|Этот параметр позволяет администратору задать, отображается ли панель задач.|
 |appUserModelIds|Коллекция String|Это единственный приложений для магазина Windows, чтобы оно было доступно для запуска в меню Пуск.|
 |desktopAppPaths|Коллекция String|Ниже приведены пути в настольных приложений, которые будут доступны в меню Пуск и только приложения пользователь будет иметь возможность запуска.|
 |userAccounts|Коллекция String|Учетные записи пользователей, которые будут заблокированы для этой базовой конфигурации.|
@@ -86,8 +87,7 @@ Content-length: 364
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

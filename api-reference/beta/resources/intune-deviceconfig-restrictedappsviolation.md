@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса restrictedAppsViolation
 description: Нарушение профиля конфигурации ограниченных приложений каждого устройства на одного пользователя
-ms.openlocfilehash: 6d7f6cb8b52671c311c39c3306a329ad37194b85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cb614bc56f27281198fcecb73bae2b7beddfa266
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081015"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304937"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>Тип ресурса restrictedAppsViolation
 
@@ -27,13 +28,13 @@ ms.locfileid: "27081015"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для объекта. Состоит из accountId, deviceId, policyId и идентификатор пользователя|
+|id|Строка|Уникальный идентификатор для объекта. Состоит из accountId, deviceId, policyId и идентификатор пользователя|
 |userId|String|Уникальный идентификатор пользователя, должен быть идентификатор Guid|
 |userName|String|Имя пользователя|
-|managedDeviceId|String|Уникальный идентификатор управляемого устройства, должен быть идентификатор Guid|
+|managedDeviceId|String.|Уникальный идентификатор управляемого устройства, должен быть идентификатор Guid|
 |deviceName|String|Имя устройства|
-|deviceConfigurationId|String|Конфигурация профиля уникальный идентификатор устройства, должен быть идентификатор Guid|
-|deviceConfigurationName|String|Имя профиля конфигурации устройства|
+|deviceConfigurationId|String.|Конфигурация профиля уникальный идентификатор устройства, должен быть идентификатор Guid|
+|deviceConfigurationName|String.|Имя профиля конфигурации устройства|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) коллекции|Список нарушенных ограниченных приложений|

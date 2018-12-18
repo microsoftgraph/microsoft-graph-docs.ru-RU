@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceConfigurationUserOverview
 description: Н/Д
-ms.openlocfilehash: ba2ac821aa63d3a008e95a5f36b3c75285c2b6cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 74f56723702b50e855cc99f108950c708545fa5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025383"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303782"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>Тип ресурса deviceConfigurationUserOverview
 
@@ -22,7 +23,7 @@ ms.locfileid: "27025383"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
 |notApplicableCount|Int32|Число пользователей не применим|
 |successCount|Int32|Количество успешных пользователей.|

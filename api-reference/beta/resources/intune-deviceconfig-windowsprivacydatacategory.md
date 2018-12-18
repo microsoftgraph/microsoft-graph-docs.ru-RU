@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsPrivacyDataCategory
 description: Windows конфиденциальности данных описателя категории для доступа к данным о конфиденциальности.
-ms.openlocfilehash: 3174ce8d5aa95219bfe9e544a87da33139bb1cc8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f5a9f0fc23e7fa5f3036b8653609db694f6932dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304951"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>Тип перечисления windowsPrivacyDataCategory
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082692"
 
 Windows конфиденциальности данных описателя категории для доступа к данным о конфиденциальности.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Уровень доступа не указан, не целей. Устройство может работать либо как и UserInControl или ForceAllow. Он может зависеть от конфиденциальности данных были обращении к ним версий Windows и других факторов.|
 |данные учетной записи|1|Сообщите имя пользователя в приложения access, рисунков и других сведений об учетной записи, созданные в учетную запись Майкрософт. Добавлено в Windows 10 версии 1607.|

@@ -1,12 +1,13 @@
 ---
 title: Получение scopedRoleMember
 description: Получение определенных scopedRoleMembership ресурсов.
-ms.openlocfilehash: ecae5729ce37ee0a6d5019f336382a080a2fcb4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: a0a947895c7c172ae4e3f3a44566e5ea19e9dc8d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077626"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304461"
 ---
 # <a name="get-a-scopedrolemember"></a>Получение scopedRoleMember
 
@@ -53,8 +54,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers/{id}
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

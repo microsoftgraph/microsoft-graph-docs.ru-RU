@@ -1,12 +1,13 @@
 ---
 title: Получение объекта RangeFormat
 description: Получение свойств и связей объекта rangeformat.
-ms.openlocfilehash: a60c2b7c61f07e70ed9a858069647a60a90b42b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 180f9a0088e0c6f724e4983acdb51f87458962ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024500"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304790"
 ---
 # <a name="get-rangeformat"></a>Получение объекта RangeFormat
 
@@ -53,8 +54,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

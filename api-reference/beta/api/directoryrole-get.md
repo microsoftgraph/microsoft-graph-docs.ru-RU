@@ -1,12 +1,13 @@
 ---
 title: Получение объекта directoryRole
 description: Получение свойств объекта directoryRole.
-ms.openlocfilehash: 70894d736ee8d7e1f2fda0edf2bb60b9d3654da7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: efb3de57c8cc0a36a11c5af873ee1507927e2e38
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076237"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302949"
 ---
 # <a name="get-directoryrole"></a>Получение объекта directoryRole
 
@@ -52,8 +53,7 @@ GET /directoryRoles/{id}
 GET https://graph.microsoft.com/beta/directoryRoles/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

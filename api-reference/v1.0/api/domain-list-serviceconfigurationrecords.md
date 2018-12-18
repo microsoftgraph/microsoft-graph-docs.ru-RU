@@ -1,12 +1,13 @@
 ---
 title: Перечисление serviceConfigurationRecords
 description: Получение списка объектов domainDnsRecord, которые требуются, чтобы включить службы для домена.
-ms.openlocfilehash: 92cc0695fa4128fcd32a59aee210fc63a35ac412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 067315499b1557f667578f17f687ad21bb166dc5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024884"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302942"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Перечисление serviceConfigurationRecords
 

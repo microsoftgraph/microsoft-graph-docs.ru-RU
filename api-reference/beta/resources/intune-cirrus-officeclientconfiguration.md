@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса officeClientConfiguration
 description: Конфигурация клиента Office.
-ms.openlocfilehash: de510d7a57c10d1f74a3e58856afb9233243ec17
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 67a7845a2e0327e2e5de37d424274f6e2ee35604
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077775"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303838"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>Тип ресурса officeClientConfiguration
 
@@ -26,12 +27,12 @@ ms.locfileid: "27077775"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор политики конфигурации клиента office.|
+|id|Строка|Идентификатор политики конфигурации клиента office.|
 |userPreferencePayload|Stream|Строка настройки JSON в двоичном формате, эти значения можно переопределить пользователем.|
 |policyPayload|Stream|Параметры политики JSON string в двоичном формате, пользователь не может изменить эти значения.|
-|описание|String|Н/Д|
-|displayName|String|Admin предоставляются описание клиента office конфигурации политики.|
-|lastModifiedDateTime|DateTime|Отметка измененные даты и времени последнего политики.|
+|описание|Строка|Н/Д|
+|displayName|Строка|Admin предоставляются описание клиента office конфигурации политики.|
+|lastModifiedDateTime|DateTime.|Отметка измененные даты и времени последнего политики.|
 |priority|Int32|Значение приоритета должно быть уникальное значение для каждой политики в области клиента и будет использоваться для разрешения конфликтов, меньшее значение означает, что высокого приоритета.|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Возврат Сводка пользователей для политики.|
 |checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) коллекции|Список office состояние возврата клиента.|

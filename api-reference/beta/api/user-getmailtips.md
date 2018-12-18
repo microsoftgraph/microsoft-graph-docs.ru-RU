@@ -1,12 +1,13 @@
 ---
 title: 'пользователь: getMailTips'
 description: Получите подсказки одного или нескольких получателей как доступные для пользователя, выполнившего вход.
-ms.openlocfilehash: 2c439e5a2da2c5208157f11b2623107d511cdf44
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 039d86c728c2394153ebe1a5aebba1243d40d726
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304048"
 ---
 # <a name="user-getmailtips"></a>пользователь: getMailTips
 
@@ -42,10 +43,10 @@ POST /users/{id|userPrincipalName}/getMailTips
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |EmailAddresses|Коллекция String|Коллекция SMTP-адреса для получения подсказок для получателей.|
-|MailTipsOptions|String|Перечисление флаги, который представляет запрошенный подсказок. Возможные значения: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, и `totalMemberCount`.|
+|MailTipsOptions|String.|Перечисление флаги, который представляет запрошенный подсказок. Возможные значения: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, и `totalMemberCount`.|
 
 ## <a name="response"></a>Ответ
 
@@ -72,8 +73,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

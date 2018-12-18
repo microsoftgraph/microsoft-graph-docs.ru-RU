@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления localSecurityOptionsStandardUserElevationPromptBehaviorType
 description: Возможные значения для LocalSecurityOptionsStandardUserElevationPromptBehavior
-ms.openlocfilehash: 96be8f96bf78c9af8d7a71b511a69df64270115b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcd5e4794fd1b8ea2887c744201f4804a003f3e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078645"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303593"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>Тип перечисления localSecurityOptionsStandardUserElevationPromptBehaviorType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27078645"
 
 Возможные значения для LocalSecurityOptionsStandardUserElevationPromptBehavior
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен|
 |automaticallyDenyElevationRequests|1|Автоматически отклонять запросы на повышение прав|

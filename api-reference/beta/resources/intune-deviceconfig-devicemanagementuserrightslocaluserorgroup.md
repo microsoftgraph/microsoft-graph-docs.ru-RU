@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceManagementUserRightsLocalUserOrGroup
 description: Представляет сведения для локального пользователя или группы, используемые для настройки прав пользователя.
-ms.openlocfilehash: bf81a36a8e102bea4c3e8fb56e45bf7822cf31a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: baabd2f3bb9e3bce44d172cd83f61f57c5c2c98d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078975"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303733"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>Тип ресурса deviceManagementUserRightsLocalUserOrGroup
 
@@ -18,9 +19,9 @@ ms.locfileid: "27078975"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|String|Имя этого локального пользователя или группы.|
-|описание|String|Описание администратора локального пользователя или группы.|
-|Класс securityIdentifier|String|Идентификатор безопасности этого локального пользователя или группы (например * S-1-5-32-544).|
+|name|Строка|Имя этого локального пользователя или группы.|
+|описание|Строка|Описание администратора локального пользователя или группы.|
+|Класс securityIdentifier|String.|Идентификатор безопасности этого локального пользователя или группы (например * S-1-5-32-544).|
 
 ## <a name="relationships"></a>Связи
 Нет

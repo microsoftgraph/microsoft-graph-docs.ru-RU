@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsInformationProtectionPinCharacterRequirements
 description: Требования к ПИН-код знака
-ms.openlocfilehash: 36da39cb344815fc04016a87f0638c572e75a676
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7a89916f53d252ee72fab52d52c1c40f295f7b6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077107"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303677"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>Тип перечисления windowsInformationProtectionPinCharacterRequirements
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077107"
 
 Требования к ПИН-код знака
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notAllow|0|Не разрешать|
 |requireAtLeastOne|1|Требуется хотя бы один|

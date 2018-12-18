@@ -1,12 +1,13 @@
 ---
 title: Список TableCollection
 description: Получение списка объектов таблиц.
-ms.openlocfilehash: 56864105d199b461b14e66543f683e1815b28021
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c83ab4f5ac87ea86ba514336313f8cce01f1824a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025043"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303460"
 ---
 # <a name="list-tablecollection"></a>Список TableCollection
 

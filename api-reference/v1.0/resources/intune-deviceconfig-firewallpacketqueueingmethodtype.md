@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления firewallPacketQueueingMethodType
 description: Возможные значения для firewallPacketQueueingMethod
-ms.openlocfilehash: 70643e300f1a6cc151edeae849e5ae7c5f977750
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f3d63b7e58b6f9c5ba369c3ceb12d06704c4725
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026608"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304559"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>Тип перечисления firewallPacketQueueingMethodType
 

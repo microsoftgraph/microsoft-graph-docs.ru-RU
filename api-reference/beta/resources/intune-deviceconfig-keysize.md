@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления keySize
 description: Параметры размер ключа.
-ms.openlocfilehash: 36d5ccf31c89b46b071db11f9960f80eb56397b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03ba06cf8d2059536e46ca629ed6cbbd4ce5a9cb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079095"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302501"
 ---
 # <a name="keysize-enum-type"></a>Тип перечисления keySize
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079095"
 
 Параметры размер ключа.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |size1024|0|1024 бит.|
 |size2048|1|2048 бит.|

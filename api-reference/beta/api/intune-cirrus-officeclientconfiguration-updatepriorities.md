@@ -1,12 +1,13 @@
 ---
 title: Действие updatePriorities
 description: Обновление политики приоритетов.
-ms.openlocfilehash: 23f41214b0dbbbdbf5949edea8857f8623ef0208
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8c493200d5ed1c0e6eb2228a1e74337237e73e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082048"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302592"
 ---
 # <a name="updatepriorities-action"></a>Действие updatePriorities
 
@@ -36,7 +37,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,7 +46,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |officeConfigurationPolicyIds|Коллекция String|Список идентификаторов политики настройки office|
 |officeConfigurationPriorities|Коллекция Int32|Список приоритетов настройки office|
@@ -75,8 +76,7 @@ Content-length: 143
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 ```

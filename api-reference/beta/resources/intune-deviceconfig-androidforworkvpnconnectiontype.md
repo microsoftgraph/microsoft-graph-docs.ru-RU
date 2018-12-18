@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidForWorkVpnConnectionType
 description: Тип подключения Android для работы через VPN.
-ms.openlocfilehash: fde3e8dffb4ec14fc493ebd2e1e733569bac1a78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc6ccd0b178dd5170c5a8ccfc8cd273c09c5891a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077084"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303600"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>Тип перечисления androidForWorkVpnConnectionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077084"
 
 Тип подключения Android для работы через VPN.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
 |pulseSecure|1|Обеспечение безопасной Pulse.|

@@ -1,12 +1,13 @@
 ---
 title: Создание embeddedSIMActivationCodePool
 description: Создание нового объекта embeddedSIMActivationCodePool.
-ms.openlocfilehash: ede66f9c1221a32ea500e7ac26626b5e1bf89660
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 88b495437859e6e7552763581886e0bf6786374c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081066"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302599"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>Создание embeddedSIMActivationCodePool
 
@@ -36,7 +37,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,8 +48,8 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для внедренных пула кода активации диспетчера установки. Значение, назначенное при создании создаваемый системой.|
-|displayName|String|Имя группы внедренных диспетчера установки активации кода определенные администратором.|
+|id|Строка|Уникальный идентификатор для внедренных пула кода активации диспетчера установки. Значение, назначенное при создании создаваемый системой.|
+|displayName|Строка|Имя группы внедренных диспетчера установки активации кода определенные администратором.|
 |createdDateTime|DateTimeOffset|Время создания внедренных пула кода активации диспетчера установки. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения внедренного пула кода активации диспетчера установки. Обновление со стороны службы.|
 |activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) коллекции|Коды активации, которые относятся к этот пул. Это свойство навигации использовать для активации кодов Intune, но не может использоваться для чтения из Intune коды активации.|
@@ -83,8 +84,7 @@ Content-length: 460
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

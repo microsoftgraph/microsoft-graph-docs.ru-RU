@@ -1,12 +1,13 @@
 ---
 title: 'ChartCollection: ItemAt'
 description: Возвращает диаграмму на основании сведений о ее позиции в коллекции.
-ms.openlocfilehash: 088a3a9b8ef7c7d4ceb99eaf47a94f35184d3327
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6490958908e7f6093e2d307764dd422026205f46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075675"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303740"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -65,8 +66,7 @@ Content-length: 20
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
