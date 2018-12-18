@@ -1,12 +1,13 @@
 ---
-title: Permissions
+title: Разрешения
 description: 'Извлекает список недавно удаленных элементов, принадлежащие указанному пользователю.  '
-ms.openlocfilehash: affdd67d48056c4459e651fd5c64168d8356abe8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 9ce487d957f4bdaa2684d00865aeac7ea293ad67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024966"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351172"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Список удаленных элементов, принадлежащие пользователю**
 
@@ -49,10 +50,10 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 Текст запроса необходимо задать следующие параметры:
 
-| Параметр    | Тип |Description|
+| Параметр    | Тип |Описание|
 |:---------------|:--------|:----------|
 |userId|String|Идентификатор владельца.|
-|type|String|Тип собственные объекты для возвращения; `Group` в данный момент поддерживается только значение.|
+|type|Строка|Тип собственные объекты для возвращения; `Group` в данный момент поддерживается только значение.|
 
 
 ## <a name="response"></a>Ответ

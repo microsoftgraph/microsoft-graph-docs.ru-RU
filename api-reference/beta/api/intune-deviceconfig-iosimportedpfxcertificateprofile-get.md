@@ -1,12 +1,13 @@
 ---
 title: Получение iosImportedPFXCertificateProfile
 description: Чтение свойства и связи объекта iosImportedPFXCertificateProfile.
-ms.openlocfilehash: d9be44dd4ff9099212fc0c9729272cb7e034bdd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d12dfdad92a672d4515ae6190d6ce5de73845b3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082445"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350870"
 ---
 # <a name="get-iosimportedpfxcertificateprofile"></a>Получение iosImportedPFXCertificateProfile
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -58,8 +59,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

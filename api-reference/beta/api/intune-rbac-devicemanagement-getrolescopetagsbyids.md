@@ -1,12 +1,13 @@
 ---
 title: функция getRoleScopeTagsByIds
 description: Н/Д
-ms.openlocfilehash: 464a2f8780051a3a778e8f1963b27402b6f39f1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b2efeff02b7404aefce1e6acbfbc3a0aca663f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077293"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351802"
 ---
 # <a name="getrolescopetagsbyids-function"></a>функция getRoleScopeTagsByIds
 
@@ -15,7 +16,7 @@ ms.locfileid: "27077293"
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Н/Д
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -36,7 +37,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -63,8 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/getRoleScopeTagsByIds(ids=
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

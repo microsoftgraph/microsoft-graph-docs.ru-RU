@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: возврата'
-description: " и указывает на то, что обратной связи или оценка успеваемости выполняется. Это действие можно выполнить только с преподаватель."
-ms.openlocfilehash: de81f5429119556753462781f701fb7c936826b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Это действие делает марки и отзыв, связанный с этой отправки доступные студента.
+author: dipakboyed
+ms.openlocfilehash: d73300328168baf9481b329b36f056aa27044b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074707"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350879"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: возврата
 

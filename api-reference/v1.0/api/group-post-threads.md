@@ -1,12 +1,13 @@
 ---
 title: Создание цепочки беседы
 description: 'Начните групповой чат, создав цепочку. '
-ms.openlocfilehash: 4618a33cb22c327d9fe2b8400b99fa50959a6669
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: e3517c3a933d428a8ba5b719ba72d0967ce1ae71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026551"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352005"
 ---
 # <a name="create-conversation-thread"></a>Создание цепочки беседы
 Начните групповой чат, создав цепочку. 

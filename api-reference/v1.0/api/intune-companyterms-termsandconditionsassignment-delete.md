@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта termsAndConditionsAssignment
 description: Удаляет объект termsAndConditionsAssignment.
-ms.openlocfilehash: c0d51e399d710df4f4c4fb75259c1ada0501f82b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 33512787976a0c1dad8dd9f79cfa7c1a30ca0d36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350794"
 ---
 # <a name="delete-termsandconditionsassignment"></a>Удаление объекта termsAndConditionsAssignment
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{ter
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -1,12 +1,13 @@
 ---
 title: Удалить вызов
 description: Удалите или прервите активного вызова.
-ms.openlocfilehash: ed0fb6928806511f92771237acb8ba08c8a162de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 07183b4837e6107f347947b901d4efea76b7da98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077600"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350969"
 ---
 # <a name="delete-call"></a>Удалить вызов
 
@@ -22,7 +23,7 @@ ms.locfileid: "27077600"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Для приложения                            | Отсутствуют.                                  |
+| Приложение                            | Отсутствуют.                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

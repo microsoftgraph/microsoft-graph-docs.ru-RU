@@ -1,12 +1,13 @@
 ---
 title: 'group: checkMemberGroups'
 description: Проверьте наличие членства в указанный список групп. Возвращает из списка из которых эти группы
-ms.openlocfilehash: d0dc617300e29950e820dd94701173829fa6bb7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 6f31e4f53e99272c456f6bb4263054e9cb5a208f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026354"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352495"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -22,7 +23,7 @@ ms.locfileid: "27026354"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированное (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложения                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
+| Для приложений                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
 
 > **Примечание:** Этот интерфейс API в настоящее время требует `Directory.Read.All` разрешений или выше. С помощью `Group.Read.All` разрешение возвращает ошибку. Мы знаем об этой проблеме.
 
@@ -79,8 +80,7 @@ Content-length: 44
 
 ##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",

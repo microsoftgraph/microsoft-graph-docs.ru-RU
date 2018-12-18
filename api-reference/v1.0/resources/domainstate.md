@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса domainState
 description: Представляет состояние асинхронных операций, запланированных для домена.
-ms.openlocfilehash: 73a83eddb46b9305a6d74e283bae1c009361195d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 08484f29202ab348e2eca443a95f63ffbe645220
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026918"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351676"
 ---
 # <a name="domainstate-resource-type"></a>Тип ресурса domainState
 

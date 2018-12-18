@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса vppLicensingType
 description: Содержит свойства для корпоративного лицензирования приложений iOS (VPP).
-ms.openlocfilehash: 5608fc8c621f28aef5ed3220404cf51118db0b29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 83e68cc018b3e3f5948b105118bffbeb93010c2f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076631"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351305"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Тип ресурса vppLicensingType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076631"
 
 Содержит свойства для корпоративного лицензирования приложений iOS (VPP).
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |supportUserLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования пользователя.|
 |supportDeviceLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования устройства.|

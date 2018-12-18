@@ -1,12 +1,13 @@
 ---
 title: Создание объекта userInstallStateSummary
 description: Создание объекта userInstallStateSummary.
-ms.openlocfilehash: a4f942695588bdc821278578b9d3669a5d806f70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f90c76382379f1e448c02d5b83a415c9a97fc82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081374"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350290"
 ---
 # <a name="create-userinstallstatesummary"></a>Создание объекта userInstallStateSummary
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
@@ -76,8 +77,7 @@ Content-length: 189
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления microsoftStoreForBusinessLicenseType
 description: Н/Д
-ms.openlocfilehash: ca6f5b8ce4467795cd1504f9a9d137efadad1bb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e16269ae439cfd46c05f462f1ced76cb2dd3d98b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079131"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352516"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>Тип перечисления microsoftStoreForBusinessLicenseType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079131"
 
 Н/Д
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |автономные|0|Н/Д|
 |Онлайн|1|Н/Д|

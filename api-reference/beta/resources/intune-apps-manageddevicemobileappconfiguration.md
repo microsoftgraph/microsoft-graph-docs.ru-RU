@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedDeviceMobileAppConfiguration
 description: Абстрактный класс для настройки мобильного приложения для зарегистрированных устройств.
-ms.openlocfilehash: c829e720e8d998428e778e5b7bf20e5fe465dfd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a533d5d7c15a32d811a7fd23f9ab39b89db9b7da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074702"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352040"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Тип ресурса managedDeviceMobileAppConfiguration
 
@@ -25,13 +26,13 @@ ms.locfileid: "27074702"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |targetedMobileApps|Коллекция String|приложение-обработчик|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного объекта конфигурации приложения.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|описание|String|Указанное администратором описание конфигурации устройства.|
+|описание|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи

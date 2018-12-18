@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта mobileThreatDefenseConnector
 description: Удаляет объект mobileThreatDefenseConnector.
-ms.openlocfilehash: 85b483fc7f2e62424720cdbabaae42a7af3ff1a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 96760843ad0544c0538121b4b7ef2a7cf24e8340
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351753"
 ---
 # <a name="delete-mobilethreatdefenseconnector"></a>Удаление объекта mobileThreatDefenseConnector
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConne
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConn
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

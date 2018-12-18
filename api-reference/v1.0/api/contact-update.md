@@ -1,12 +1,13 @@
 ---
 title: Обновление контакта
 description: Обновление свойств объекта contact.
-ms.openlocfilehash: baf563530dc174418169efdd7f7bb48d81048a6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 386f0d3f7673733de805893e16ab049d85d120a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026816"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351235"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -80,7 +81,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |title|String|Звание контакта.|
 |yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
-|yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
+|yomiSurname|Строка|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
 
 ## <a name="response"></a>Отклик
 
@@ -108,8 +109,7 @@ Content-length: 1977
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

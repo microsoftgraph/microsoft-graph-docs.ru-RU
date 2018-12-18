@@ -1,12 +1,13 @@
 ---
 title: Получение deviceManagementPartner
 description: Чтение свойств и связей объекта deviceManagementPartner.
-ms.openlocfilehash: f00ebc9e7452ecb12a2ec0512b07cba23d559bb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cb37c12f2624ff31d3346aaa525202a6919b50c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351865"
 ---
 # <a name="get-devicemanagementpartner"></a>Получение deviceManagementPartner
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartners/{
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

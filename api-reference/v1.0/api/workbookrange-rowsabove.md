@@ -1,12 +1,13 @@
 ---
 title: 'workbookRange: rowsAbove'
 description: Возвращает определенное количество строк над заданным диапазоном.
-ms.openlocfilehash: 9534a69f9afbc41c6d6803951d35b132f1685e54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d90d46cad9fa68b1270c8877fdad69fea3cedccf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026109"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351312"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -61,8 +62,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/ran
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

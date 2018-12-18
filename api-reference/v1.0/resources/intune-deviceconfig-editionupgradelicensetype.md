@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления editionUpgradeLicenseType
 description: Тип лицензии обновления версии
-ms.openlocfilehash: 075c31e1f0b7f42d3c4ae1f4cbe0aff86602a415
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: caa00a8ab144e6524eb327fa6b7fab3134a9915f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027140"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352460"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>Тип перечисления editionUpgradeLicenseType
 
@@ -14,7 +15,7 @@ ms.locfileid: "27027140"
 
 Тип лицензии обновления версии
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |productKey|0|Тип ключа продукта|
 |licenseFile|1|Тип файла лицензии|

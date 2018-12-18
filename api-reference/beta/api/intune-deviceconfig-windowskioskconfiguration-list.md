@@ -1,12 +1,13 @@
 ---
 title: Список windowsKioskConfigurations
 description: Свойства списка и связей объектов windowsKioskConfiguration.
-ms.openlocfilehash: bb178bca4c1ce11958e28ed8c5ad4fa23ad4d668
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 59e4510f85bb47c53c00c679b0c8ea021aba2797
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082143"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350584"
 ---
 # <a name="list-windowskioskconfigurations"></a>Список windowsKioskConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -55,8 +56,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

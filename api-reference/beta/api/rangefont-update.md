@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта rangefont
 description: Обновление свойств объекта rangefont.
-ms.openlocfilehash: 199fb62bdc50ab3826cdbd02914412e461022287
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 29cda6e2902f20c040ecc307755eed8fc58d25a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080356"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350052"
 ---
 # <a name="update-rangefont"></a>Обновление объекта rangefont
 
@@ -72,8 +73,7 @@ Content-length: 134
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

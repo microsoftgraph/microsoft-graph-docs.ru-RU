@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceManagementScriptAssignment
 description: Содержит свойства, используемые для назначения сценарий управления устройства в группу.
-ms.openlocfilehash: fb4be06fe36153cd9a015808823cf1e90d86a707
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d0b08363de392a337338bb2cd892359b8b9a9345
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082319"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351242"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>Тип ресурса deviceManagementScriptAssignment
 
@@ -27,7 +28,7 @@ ms.locfileid: "27082319"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения группы, сценарий управления устройства.|
+|id|Строка|Ключ объекта назначения группы, сценарий управления устройства.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Идентификатор группы Azure Active Directory мы ориентация сценария.|
 
 ## <a name="relationships"></a>Связи

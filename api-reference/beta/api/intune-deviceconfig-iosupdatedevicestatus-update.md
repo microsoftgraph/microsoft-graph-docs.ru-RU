@@ -1,12 +1,13 @@
 ---
 title: Update iosUpdateDeviceStatus
 description: Обновление свойств объекта iosUpdateDeviceStatus.
-ms.openlocfilehash: 2b652dd6208dee20f164d57c92a8f0d322a58d8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d2fab69e918d92e07ed28f3e12aa59db9d50c53b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079787"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350213"
 ---
 # <a name="update-iosupdatedevicestatus"></a>Update iosUpdateDeviceStatus
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Состояние установки в отчете о политике. Возможные значения: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.|
 |osVersion|String|Версия устройства в отчете.|
 |deviceId|String|Идентификатор устройства в отчете.|
@@ -91,8 +92,7 @@ Content-length: 510
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

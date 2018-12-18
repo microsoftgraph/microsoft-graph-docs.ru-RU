@@ -1,12 +1,13 @@
 ---
 title: Создание объекта deviceInstallState
 description: Создание объекта deviceInstallState.
-ms.openlocfilehash: 3451645e2178c6a041b354fa0109a883b9e19ecc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c9fd02e51f9b78473762d99763ea37cdaeffb197
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026677"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350402"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -46,7 +47,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |deviceName|String|Имя устройства.|
 |deviceId|String|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
@@ -83,8 +84,7 @@ Content-length: 374
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

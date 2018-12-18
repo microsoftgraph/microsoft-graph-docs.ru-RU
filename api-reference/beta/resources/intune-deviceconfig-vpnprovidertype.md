@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления vpnProviderType
 description: Тип поставщика для VPN-app.
-ms.openlocfilehash: 133b1663ce3c72ba520dd5c1eeadf963154e9cc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8f002582879302bcbe0fb965110eaa5e674a689
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080994"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351599"
 ---
 # <a name="vpnprovidertype-enum-type"></a>Тип перечисления vpnProviderType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080994"
 
 Тип поставщика для VPN-app.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Туннель трафика явно не настроен.|
 |appProxy|1|Туннель трафика на уровне приложения.|

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления importedWindowsAutopilotDeviceIdentityUploadStatus
 description: Н/Д
-ms.openlocfilehash: 5f520df75207141a0b43cbe468f73684963031fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9c25a51d8219277f009776c866ffcf4bb9ea63cd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028516"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350843"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>Тип перечисления importedWindowsAutopilotDeviceIdentityUploadStatus
 
@@ -14,7 +15,7 @@ ms.locfileid: "27028516"
 
 Н/Д
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |noUpload|0|Статус без отправки.|
 |Ожидание|1|В состоянии ожидания.|

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления resultantAppStateDetail
 description: Перечисление, указывающее дополнительные детали почему приложение имеет определенный установить состояние.
-ms.openlocfilehash: 6557047249483273abff93bbbd352cba72256755
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e06e8afb6ebb5e22abf11d9cd53150bed5288052
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079102"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352530"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>Тип перечисления resultantAppStateDetail
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079102"
 
 Перечисление, указывающее дополнительные детали почему приложение имеет определенный установить состояние.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |noAdditionalDetails|0|Нет дополнительных сведений о доступны.|
 |seeInstallErrorCode|2000|Сбой при установке приложения. Свойству код ошибки для получения дополнительных сведений см.|

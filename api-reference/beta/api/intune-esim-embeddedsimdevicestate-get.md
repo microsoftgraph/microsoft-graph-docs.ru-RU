@@ -1,12 +1,13 @@
 ---
 title: Получение embeddedSIMDeviceState
 description: Чтение свойства и связи объекта embeddedSIMDeviceState.
-ms.openlocfilehash: fef28c065e7c5ab4350145e736d05ac546a2908f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d9ffb9c915d29a096a39b4cc9499eb712def5892
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077691"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352012"
 ---
 # <a name="get-embeddedsimdevicestate"></a>Получение embeddedSIMDeviceState
 
@@ -38,7 +39,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodeP
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

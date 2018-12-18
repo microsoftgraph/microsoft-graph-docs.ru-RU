@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceCompliancePolicySettingStateSummary
 description: Сводка по состоянию параметров политики соответствия для устройств в учетной записи.
-ms.openlocfilehash: ce9dfe0f80a15325706471c97068893bdb4bfad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d059574e1286bdcc1cc7199e0e1cbea1c7f9e9ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024412"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352320"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Тип ресурса deviceCompliancePolicySettingStateSummary
 
@@ -25,7 +26,7 @@ ms.locfileid: "27024412"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра.|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Параметр платформы. Возможные значения: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|

@@ -1,12 +1,13 @@
 ---
 title: 'Участник: configureMixer'
 description: Настройка как смешанное аудио для различных участников в многосторонней беседе.
-ms.openlocfilehash: 58ccdcb345d55ae28b30dd5ded6b95ef5b30fe81
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: e300d842ce0bad870160d2f3788b059de6d41784
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156003"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351991"
 ---
 # <a name="participant-configuremixer"></a>Участник: configureMixer
 
@@ -21,7 +22,7 @@ ms.locfileid: "27156003"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложения     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,9 +42,9 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) коллекции| Конфигурация микшер уровни для заданного звука участников.|
-|clientContext|String|Контекст клиента.|
+|clientContext|String.|Контекст клиента.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
 
 ## <a name="example"></a>Пример
@@ -85,7 +86,7 @@ Content-Length: 501
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

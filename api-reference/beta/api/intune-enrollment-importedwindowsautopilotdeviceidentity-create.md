@@ -1,12 +1,13 @@
 ---
 title: Создать importedWindowsAutopilotDeviceIdentity
 description: Создание нового объекта importedWindowsAutopilotDeviceIdentity.
-ms.openlocfilehash: 3fe1661aa4281753aa79584bfa08c28024d01297
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f4c6519746690290af6ec243d6b309dfeb6782d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079172"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350066"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Создать importedWindowsAutopilotDeviceIdentity
 
@@ -37,7 +38,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -85,8 +86,7 @@ Content-length: 541
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

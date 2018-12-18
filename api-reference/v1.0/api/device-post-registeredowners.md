@@ -1,12 +1,13 @@
 ---
 title: Создание объекта registeredOwner
 description: Добавление пользователя в качестве зарегистрированного владельца устройства.
-ms.openlocfilehash: 976f4f788716ad1e739ceeaaa1db61963b002f45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f261ed82990f482b804617d66a02dc03244500f6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024951"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351067"
 ---
 # <a name="create-registeredowner"></a>Создание объекта registeredOwner
 
@@ -58,8 +59,7 @@ Content-length: 30
 ```
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

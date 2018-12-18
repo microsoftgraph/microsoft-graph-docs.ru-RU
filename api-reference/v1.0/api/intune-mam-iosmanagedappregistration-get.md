@@ -1,12 +1,13 @@
 ---
 title: Get iosManagedAppRegistration
 description: Чтение свойств и связей объекта iosManagedAppRegistration.
-ms.openlocfilehash: 04220d7b707eedc877b66a7ad5652185d1efd464
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0199362bdc92db6ed45f44a28b135327b1cb9a94
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025487"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351634"
 ---
 # <a name="get-iosmanagedappregistration"></a>Get iosManagedAppRegistration
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

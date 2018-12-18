@@ -1,12 +1,13 @@
 ---
 title: Get androidStoreApp
 description: Чтение свойств и связей объекта androidStoreApp.
-ms.openlocfilehash: 6dac1708444de2f4e53570649837b3926ad1c292
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ab705f2b8c009ecc7ab6f27257b6bf4572188fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026484"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351466"
 ---
 # <a name="get-androidstoreapp"></a>Get androidStoreApp
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

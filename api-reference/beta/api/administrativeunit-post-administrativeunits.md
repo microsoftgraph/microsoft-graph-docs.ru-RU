@@ -1,12 +1,13 @@
 ---
 title: Создание administrativeUnit
 description: Используйте этот интерфейс API для создания нового administrativeUnit.
-ms.openlocfilehash: ef69276f15cd8b8ec9d066ff707233ff1e219150
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 320fe1b2269213d8fc4a0a8295f7ae84e0714cb1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076021"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351158"
 ---
 # <a name="create-administrativeunit"></a>Создание administrativeUnit
 

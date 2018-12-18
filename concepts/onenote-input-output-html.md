@@ -1,12 +1,13 @@
 ---
 title: Входной и выходной HTML-код на страницах OneNote
 description: 'HTML-код, определяющий содержимое и структуру страницы при создании или обновлении страницы OneNote, называется *входным HTML-кодом*. '
-ms.openlocfilehash: f75601771437e359626ef9ffbb474b9a29f07033
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: e169cf17804794d5120b2e968328b06d29a0a5a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092717"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351256"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>Входной и выходной HTML-код на страницах OneNote
 

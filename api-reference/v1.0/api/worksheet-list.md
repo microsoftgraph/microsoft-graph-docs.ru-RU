@@ -1,12 +1,13 @@
 ---
 title: Список WorksheetCollection
 description: Получение списка объектов листов.
-ms.openlocfilehash: fe8fd2b52f0b54ce0f04dfb084a523539afc3d3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 1680a7abce783d4b1954c9bb05e03627d57a3783
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024390"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351137"
 ---
 # <a name="list-worksheetcollection"></a>Список WorksheetCollection
 
@@ -51,8 +52,7 @@ GET /workbook/worksheets
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

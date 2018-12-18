@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса dailySchedule
 description: График ежедневного выполнения повторяющихся сценарий управления устройства.
-ms.openlocfilehash: 5d517b0bcd15f041b934a0ca936075bc6d3d3741
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 86a3dda75c0aecef6ba0672bc114092bd301a582
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080479"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351130"
 ---
 # <a name="dailyschedule-resource-type"></a>Тип ресурса dailySchedule
 
@@ -19,7 +20,7 @@ ms.locfileid: "27080479"
 Наследуется от [runSchedule](../resources/intune-devices-runschedule.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |interval|Int32|Интервал в днях|
 

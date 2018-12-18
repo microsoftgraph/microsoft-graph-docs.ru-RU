@@ -1,12 +1,13 @@
 ---
 title: Обновление remoteActionAudit
 description: Обновление свойства объекта remoteActionAudit.
-ms.openlocfilehash: f7b72ce26617b3ba370e5135c31b98c7c33cbd97
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a27cd54246aaa1badc9bdbf54379c5d9d2a5a218
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080213"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352131"
 ---
 # <a name="update-remoteactionaudit"></a>Обновление remoteActionAudit
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,14 +48,14 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор отчета.|
+|id|Строка|Идентификатор отчета.|
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[устаревшие\] вместо этого используйте InitiatedByUserPrincipalName.|
-|initiatedByUserPrincipalName|String|Пользователя, который инициировал действие устройства имеет формат имени участника-пользователя.|
+|initiatedByUserPrincipalName|String.|Пользователя, который инициировал действие устройства имеет формат имени участника-пользователя.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
 |requestDateTime|DateTimeOffset|Время, когда действие был отправлен, в формате UTC.|
-|deviceOwnerUserPrincipalName|String|Имя участника-пользователя владельца устройства.|
-|deviceIMEI|String|IMEI устройства.|
+|deviceOwnerUserPrincipalName|String.|Имя участника-пользователя владельца устройства.|
+|deviceIMEI|String.|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 
@@ -83,8 +84,7 @@ Content-length: 399
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

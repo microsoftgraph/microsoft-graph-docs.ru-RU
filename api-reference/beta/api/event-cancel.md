@@ -1,12 +1,13 @@
 ---
 title: 'событие: Отмена'
 description: 'Это действие позволяет организатора собрания отправить сообщение об отмене и отмены события. '
-ms.openlocfilehash: bf118b0ead0688967b6275c55fd9b665ffdc1057
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 5e32219be129d1b16e05badd1fb778f86d95849b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076325"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350311"
 ---
 # <a name="event-cancel"></a>событие: Отмена
 
@@ -60,7 +61,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|comment|String|Примечание об отмене, отправленных всем участникам. Необязательный параметр.|
+|comment|Строка|Примечание об отмене, отправленных всем участникам. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 

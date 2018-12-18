@@ -1,12 +1,13 @@
 ---
 title: 'group: resetUnseenCount'
 description: Сброс unseenCount все сообщения, которые текущий пользователь не с момента их последнего посетить. Поддерживается только в Office 365 группы.
-ms.openlocfilehash: b6218176f097759870aad4a3a2908759862002e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f63a3668bc9059819c09bdc43dd78a138196a241
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082090"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350157"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 

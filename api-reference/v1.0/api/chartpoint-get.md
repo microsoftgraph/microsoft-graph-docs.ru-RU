@@ -1,12 +1,13 @@
 ---
 title: Получение объекта ChartPoint
 description: Получение свойств и связей объекта chartpoint.
-ms.openlocfilehash: 82ad6ddc9785652dcbe05b33797304589fb77a37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: da8e920a63507288f392a0cba72881b8e5b52b24
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026914"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350920"
 ---
 # <a name="get-chartpoint"></a>Получение объекта ChartPoint
 
@@ -51,8 +52,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/{poin
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/{point-id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

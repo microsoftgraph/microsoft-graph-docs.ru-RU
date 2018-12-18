@@ -1,12 +1,13 @@
 ---
 title: Обновление таблицы
 description: Обновление свойств объекта таблицы.
-ms.openlocfilehash: a929329ed9a88b7dda6206193292f1ca1e63ced1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 020d0fcf4f162fbb800d54fbf703fb3af59e8385
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077987"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350206"
 ---
 # <a name="update-table"></a>Обновление таблицы
 
@@ -67,8 +68,7 @@ Content-length: 109
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

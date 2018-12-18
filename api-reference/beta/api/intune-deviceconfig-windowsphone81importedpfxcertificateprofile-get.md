@@ -1,12 +1,13 @@
 ---
 title: Получение windowsPhone81ImportedPFXCertificateProfile
 description: Чтение свойства и связи объекта windowsPhone81ImportedPFXCertificateProfile.
-ms.openlocfilehash: 22634d9e15e31a77add3a4d0c694a53478655712
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7395d699f8d9b28f1a87997a5272d46d7fdca1e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078820"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352026"
 ---
 # <a name="get-windowsphone81importedpfxcertificateprofile"></a>Получение windowsPhone81ImportedPFXCertificateProfile
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -58,8 +59,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

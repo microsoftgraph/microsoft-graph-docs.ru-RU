@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceManagementScript
 description: Intune будет предоставлять возможности выполнения их скриптов Powershell на устройствах 10 зарегистрированных windows Azure Active Directory в состав клиента. Скрипт может выполняться периодически или один раз.
-ms.openlocfilehash: c9d1a20eeaeb9b825fbdb553c702bf85ae272f25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f35a0b4159c84535c4696f7b57c8486b866504b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077468"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351424"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Тип ресурса deviceManagementScript
 
@@ -28,19 +29,19 @@ Intune будет предоставлять возможности выполн
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сценарий управления устройства.|
-|displayName|String|Имя скрипта управления устройства.|
-|описание|String|Необязательное описание сценарий управления устройства.|
+|id|Строка|Уникальный идентификатор для сценарий управления устройства.|
+|displayName|Строка|Имя скрипта управления устройства.|
+|описание|Строка|Необязательное описание сценарий управления устройства.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска сценария. Если не определена сценарий будет выполняться один раз|
-|scriptContent|Двоичный|Содержимое сценария.|
+|scriptContent|Binary|Содержимое сценария.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценарий управления устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценарий управления устройства.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения скрипта управления устройства выполняется в. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Логический|Указывает, должно быть извлеченных подписи скрипта.|
+|enforceSignatureCheck|Boolean.|Указывает, должно быть извлеченных подписи скрипта.|
 |fileName|String|Имя файла сценария.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) коллекции|Список назначений группы для скрипта управления устройства.|
 |assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) коллекции|Список назначений группы для скрипта управления устройства.|
