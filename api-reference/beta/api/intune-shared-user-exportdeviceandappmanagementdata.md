@@ -1,12 +1,13 @@
 ---
 title: функция exportDeviceAndAppManagementData
 description: Н/Д
-ms.openlocfilehash: fdcf75817d3fae157480b4e232bf4052ac84f64b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ec79080a2e4f6f5da3622dedfedc486231703ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075811"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352222"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>функция exportDeviceAndAppManagementData
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075811"
 
 Н/Д
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -41,7 +42,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -49,7 +50,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |skip|Int32|Н/Д|
 |top|Int32|Н/Д|
@@ -70,8 +71,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/exportDeviceAndAppManagemen
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ``` http
 HTTP/1.1 200 OK

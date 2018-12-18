@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса ChartDataLabels
 description: Представляет коллекцию всех меток данных в точке диаграммы.
-ms.openlocfilehash: d226c5edb3fecc3a2e27fae32060f786f790d7e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ef1880fcbf1f74f99f6b323c06b8fd35812f340a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352180"
 ---
 # <a name="chartdatalabels-resource-type"></a>Тип ресурса ChartDataLabels
 
@@ -20,7 +21,7 @@ ms.locfileid: "27080019"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartDataLabels](../api/chartdatalabels-get.md) | [ChartDataLabels](chartdatalabels.md) |Чтение свойств и связей объекта chartDataLabels.|
-|[Update](../api/chartdatalabels-update.md) | [ChartDataLabels](chartdatalabels.md) |Обновление объекта chartDataLabels. |
+|[обновление](../api/chartdatalabels-update.md). | [ChartDataLabels](chartdatalabels.md) |Обновление объекта chartDataLabels. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

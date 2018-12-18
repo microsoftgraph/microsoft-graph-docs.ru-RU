@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceEnrollmentPlatformRestrictionsConfiguration
 description: Н/Д
-ms.openlocfilehash: 6b1f0e8e12ce8e1e9537fa201d624fe3ecd45d6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2898eaf6f2136662362cd0cf0fc24eade5c8a32e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081804"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342247"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestrictionsConfiguration
 

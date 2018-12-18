@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsSpotlightEnablementSettings
 description: Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
-ms.openlocfilehash: a885dc5f3c9e7b78f755b9761a7a99ea937c76b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 704a02310e6d52beb29a401104fdbca80d0898eb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082016"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339951"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>Тип перечисления windowsSpotlightEnablementSettings
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082016"
 
 Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|В центре внимания на экран блокировки не настроен|
 |Этот параметр отключен|1|Отключение Windows в центре внимания на экран блокировки|

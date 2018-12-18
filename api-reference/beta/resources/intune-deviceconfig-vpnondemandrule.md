@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса vpnOnDemandRule
 description: Определение правила по запросу VPN.
-ms.openlocfilehash: 366dd373d31b04d4f245c2394a7a6e476710cf84
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 72b85971dc9c613026bb9e720ca55165845e0c9e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076871"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352194"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Тип ресурса vpnOnDemandRule
 
@@ -16,15 +17,15 @@ ms.locfileid: "27076871"
 
 Определение правила по запросу VPN.
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |идентификаторов SSID|Коллекция String|Сетевая служба задайте идентификаторов SSID.|
 |dnsSearchDomains|Коллекция String|Домены поиска DNS.|
-|probeUrl|String|URL-адрес для поиска. Если этот URL-адрес был успешно извлечь (возврат 200 код состояния HTTP) без в режиме одобрения администратором, соответствует данное правило.|
+|probeUrl|String.|URL-адрес для поиска. Если этот URL-адрес был успешно извлечь (возврат 200 код состояния HTTP) без в режиме одобрения администратором, соответствует данное правило.|
 |action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Действие. Возможные значения: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
 |domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Действие домена (возможно, только когда действие оценка подключения). Возможные значения: `connectIfNeeded`, `neverConnect`.|
 |домены|Коллекция String|Домены (возможно, только когда действие оценка подключения).|
-|probeRequiredUrl|String|Поиск необходимых URL-адреса (возможно, только если действие оценка подключения и DomainAction — это подключение при необходимости).|
+|probeRequiredUrl|String.|Поиск необходимых URL-адреса (возможно, только если действие оценка подключения и DomainAction — это подключение при необходимости).|
 
 ## <a name="relationships"></a>Связи
 Нет

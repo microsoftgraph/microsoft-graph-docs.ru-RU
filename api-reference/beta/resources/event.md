@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса event
 description: Событие в календаре.
-ms.openlocfilehash: aa7d667ac35c4e76dab40dca1cce264b9bd7ec96
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 45b5131b14e9bf50c8dc0bc3db869b706a3068ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079153"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340651"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -88,13 +89,13 @@ ms.locfileid: "27079153"
 |:---------------|:--------|:----------|
 |attendees|Коллекция [ATTENDEE](attendee.md)|Коллекция участников события.|
 |body|[ItemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
-|bodyPreview|String|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
+|bodyPreview|Строка|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
 |categories|Коллекция String|Категории, связанные с событием. Каждой категории соответствует свойству **displayName** [outlookCategory](outlookcategory.md) , определенные для этого пользователя.|
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |end|[DateTimeTimeZone](datetimetimezone.md)|Дата и время завершения события.|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
-|id|String| Только для чтения.|
+|id|Строка| Только для чтения.|
 |importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|

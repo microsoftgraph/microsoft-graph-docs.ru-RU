@@ -1,12 +1,13 @@
 ---
 title: Обновление educationAssignmentResource
 description: 'Обновление свойств ресурса, связанного с назначением. Учителя только в классе можно изменить объекты назначения ресурсов.  '
-ms.openlocfilehash: 761dc4f656a41d8d984443b17d87b1b0961a2a8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 68c8f471462c489e9e655a1642731be3a8700ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075696"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343220"
 ---
 # <a name="update-educationassignmentresource"></a>Обновление educationAssignmentResource
 
@@ -37,9 +38,9 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Логический| Указывает, следует ли скопировать этот ресурс объект ресурсов каждого студента при публикации назначения.|
+|distributeForStudentWork|Boolean.| Указывает, следует ли скопировать этот ресурс объект ресурсов каждого студента при публикации назначения.|
 |resource|educationResource| Объект ресурса. |
 
 ## <a name="response"></a>Ответ

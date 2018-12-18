@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса win32LobAppInstallExperience
 description: Содержит свойства интерфейса установки для приложения Win32
-ms.openlocfilehash: 04fed453125155073d75de417d13cfd81a5bcdd1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c24ed0536416bd330fc2928a85cb0d5fce558256
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075950"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342163"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>Тип ресурса win32LobAppInstallExperience
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075950"
 
 Содержит свойства интерфейса установки для приложения Win32
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения, в котором работает приложение в. Возможные значения: `system`, `user`.|
 

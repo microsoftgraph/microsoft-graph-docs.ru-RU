@@ -1,12 +1,13 @@
 ---
 title: Список windowsOfficeClientSecurityConfigurations
 description: Свойства списка и связей объектов windowsOfficeClientSecurityConfiguration.
-ms.openlocfilehash: 281a910658100b990b988b462b46984534cb2cbe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ce78be2f06e8e80b3707fa7b04f2bcd1b16fb114
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082463"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340588"
 ---
 # <a name="list-windowsofficeclientsecurityconfigurations"></a>Список windowsOfficeClientSecurityConfigurations
 
@@ -36,7 +37,7 @@ GET /officeConfiguration/clientConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

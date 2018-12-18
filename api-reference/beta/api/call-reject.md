@@ -1,12 +1,13 @@
 ---
 title: 'Вызовите: отклонить'
 description: Отклонение входящего звонка.
-ms.openlocfilehash: 4731d377021871569fcec895af832aeea66b3431
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 2516ead8d9fa158192a0d9c7c02ac8adb44f764a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078593"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343458"
 ---
 # <a name="call-reject"></a>Вызовите: отклонить
 
@@ -21,7 +22,7 @@ ms.locfileid: "27078593"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложения     | Нет                                                       |
+| Application     | Нет                                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,9 +39,9 @@ POST /applications/{id}/calls/{id}/reject
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр      | Тип    |Description|
+| Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Причина|String|Причину отклонения.|
+|Причина|String.|Причину отклонения.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.

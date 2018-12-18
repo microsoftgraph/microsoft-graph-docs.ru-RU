@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationSynchronizationDataProvider
 description: 'Представляет схему SIS источника. Это позволяет системы, чтобы знать, как сопоставление входящих данных схемы Azure Active Directory (Azure AD). '
-ms.openlocfilehash: 621df58f19e1b266825b8e12edfbd9c09493efd1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 04cbd38a158475c3a039a755ff885a6796ae3bf1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079665"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339888"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>Тип ресурса educationSynchronizationDataProvider
 

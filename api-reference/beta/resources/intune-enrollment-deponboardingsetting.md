@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса depOnboardingSetting
 description: DepOnboardingSetting представляет экземпляр службы Apple DEP, onboarded для Intune. Экземпляр службы onboarded управляет Apple маркеров используется для синхронизации данных между Apple и Intune.
-ms.openlocfilehash: 7991b03b8307db10d3a300b1b85be3fc1b825819
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac38b1716dd156c95fda9cee8fb76a9f75921b0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082240"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341162"
 ---
 # <a name="deponboardingsetting-resource-type"></a>Тип ресурса depOnboardingSetting
 
@@ -23,7 +24,7 @@ DepOnboardingSetting представляет экземпляр службы Ap
 |[Создание depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Создание нового объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
 |[Удаление depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|Нет|Удаляет [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
 |[Обновление depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Обновление свойства объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
-|[функция getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Получение маркера открытого ключа, используемого для шифрования программы регистрации устройства Apple|
+|[функция getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String.|Получение маркера открытого ключа, используемого для шифрования программы регистрации устройства Apple|
 |[Действие uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Нет|Загружает новый маркер программы регистрации устройства|
 |[Действие syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Нет|Выполняет синхронизацию между программой регистрации устройства Apple и Intune|
 |[Действие shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Нет|Н/Д|
@@ -38,16 +39,16 @@ DepOnboardingSetting представляет экземпляр службы Ap
 |lastModifiedDateTime|DateTimeOffset|Когда служба была onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|При последней syned службы с помощью Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Когда Intune запрашивает последней синхронизации.|
-|shareTokenWithSchoolDataSyncService|Логический|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
+|shareTokenWithSchoolDataSyncService|Boolean.|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
 |lastSyncErrorCode|Int32|Код ошибки Apple во время последней синхронизации dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена Dep. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|String|Понятное имя для маркера Dep|
+|tokenName|String.|Понятное имя для маркера Dep|
 |syncedDeviceCount|Int32|Получает количество синхронизированных устройства|
-|defaultProfileDisplayName|String|Получает количество синхронизированных устройства|
-|dataSharingConsentGranted|Логический|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
+|defaultProfileDisplayName|String.|Получает количество синхронизированных устройства|
+|dataSharingConsentGranted|Boolean.|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|Операций ввода-вывода по умолчанию профиля подачи заявок|
 |defaultMacOsEnrollmentProfile|[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)|Профиль по умолчанию MacOs подачи заявок|

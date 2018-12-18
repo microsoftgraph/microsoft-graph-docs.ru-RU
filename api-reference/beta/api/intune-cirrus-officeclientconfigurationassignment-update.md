@@ -1,12 +1,13 @@
 ---
 title: Обновление officeClientConfigurationAssignment
 description: Обновление свойства объекта officeClientConfigurationAssignment.
-ms.openlocfilehash: d97f5378918949786342c8e69b53e7dd4ef08e64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 78b0ae28bc61bc0d8d8c083502c6f6ef2cf7d0fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077865"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343038"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Обновление officeClientConfigurationAssignment
 
@@ -36,7 +37,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
+|id|Строка|Н/Д|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Н/Д|
 
 
@@ -71,8 +72,7 @@ Content-length: 98
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

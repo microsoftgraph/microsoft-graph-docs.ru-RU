@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса teamMessagingSettings
 description: Параметры для настройки системы обмена сообщениями и упоминания рабочих групп.
-ms.openlocfilehash: 51a0fb53079e8fd79f469f022efb2f293e9a6cba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 94a102e6d0937651c990e61f4895c715b3c4bd95
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076872"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344249"
 ---
 # <a name="teammessagingsettings-resource-type"></a>Тип ресурса teamMessagingSettings
 
@@ -15,13 +16,13 @@ ms.locfileid: "27076872"
 Параметры для настройки системы обмена сообщениями и упоминания в [группы](team.md).
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Логический|Если параметр имеет значение true, пользователи могут изменять свои сообщения;|
-|allowUserDeleteMessages|Логический|Если параметр имеет значение true, пользователи могут удалять свои сообщения.|
-|allowOwnerDeleteMessages|Логический|Если параметр имеет значение true, владельцы могут удалять все сообщения.|
-|allowTeamMentions|Логический|Если задано значение true, допускаются упоминания @team.|
-|allowChannelMentions|Логический|Если задано значение true, допускаются упоминания @channel.|
+|allowUserEditMessages|Boolean.|Если параметр имеет значение true, пользователи могут изменять свои сообщения;|
+|allowUserDeleteMessages|Boolean.|Если параметр имеет значение true, пользователи могут удалять свои сообщения.|
+|allowOwnerDeleteMessages|Boolean.|Если параметр имеет значение true, владельцы могут удалять все сообщения.|
+|allowTeamMentions|Boolean.|Если задано значение true, допускаются упоминания @team.|
+|allowChannelMentions|Boolean.|Если задано значение true, допускаются упоминания @channel.|
 
 ## <a name="json-representation"></a>Представление JSON
 

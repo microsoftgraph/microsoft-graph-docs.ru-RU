@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления deviceManagementPartnerTenantState
 description: Состояние партнера клиента.
-ms.openlocfilehash: 97f6a7cc3c8355f861d9694a55d7bf83b30d3192
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a597e038fc73ccaa730511ab3f27b0351600f6f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024657"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340035"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>Тип перечисления deviceManagementPartnerTenantState
 
@@ -14,7 +15,7 @@ ms.locfileid: "27024657"
 
 Состояние партнера клиента.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние партнера неизвестно.|
 |недоступен|1|Участник недоступен.|

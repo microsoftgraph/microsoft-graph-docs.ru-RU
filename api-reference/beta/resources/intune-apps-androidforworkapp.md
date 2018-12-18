@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса androidForWorkApp
 description: Содержит свойства и свойства, наследуемые для Android для работы (AFW) приложения.
-ms.openlocfilehash: 26af8696c113a236217999e01acf9498d2124737
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1e754d6f893d536fbc52e492c87e163766afaffb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340630"
 ---
 # <a name="androidforworkapp-resource-type"></a>Тип ресурса androidForWorkApp
 
@@ -30,7 +31,7 @@ ms.locfileid: "27075497"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

@@ -1,12 +1,13 @@
 ---
 title: Список, используемый
 description: Вычисляемые представление, которое возвращает список файлов, используемых с пользователем.
-ms.openlocfilehash: a9e5390e38e4e697f55676304edb4544e4c2ded5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 17f47e4e82d5cb038438b5d164c76371221de11a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079280"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342499"
 ---
 # <a name="list-used"></a>Список, используемый
 
@@ -69,8 +70,7 @@ GET https://graph.microsoft.com/beta/me/insights/used
 
 ##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
- 
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове. 
 ```http
 {
     "value": [

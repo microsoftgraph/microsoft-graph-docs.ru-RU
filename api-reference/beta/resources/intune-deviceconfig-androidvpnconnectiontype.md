@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidVpnConnectionType
 description: Android тип подключения через VPN.
-ms.openlocfilehash: d44599ddd5ec772dc79416d0ca95b2a855b524fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bd323c80bb77653705bb526f0fdb11bf96e6f0c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078748"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340833"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>Тип перечисления androidVpnConnectionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27078748"
 
 Android тип подключения через VPN.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
 |pulseSecure|1|Обеспечение безопасной Pulse.|

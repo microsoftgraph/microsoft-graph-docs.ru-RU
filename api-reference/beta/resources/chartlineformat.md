@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса ChartLineFormat
 description: Инкапсулирует параметры форматирования для элементов линий.
-ms.openlocfilehash: 6646f985fd106ed738432852fec5a3bad187ab61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: be9d0d3f30deb608aee9873866442e0478c0056a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078817"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352187"
 ---
 # <a name="chartlineformat-resource-type"></a>Тип ресурса ChartLineFormat
 
@@ -20,7 +21,7 @@ ms.locfileid: "27078817"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
-|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |Обновление объекта ChartLineFormat. |
+|[обновление](../api/chartlineformat-update.md). | [ChartLineFormat](chartlineformat.md) |Обновление объекта ChartLineFormat. |
 |[Clear](../api/chartlineformat-clear.md)|Нет|Очищает формат линий элемента диаграммы.|
 
 ## <a name="properties"></a>Свойства

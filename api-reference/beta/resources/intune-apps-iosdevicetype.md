@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса iosDeviceType
 description: Содержит свойства возможных типов устройств iOS, на которых может работать мобильное приложение.
-ms.openlocfilehash: 4d85d8801934e6f240bacd6fafe63c7bd1ee946f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c9f691c2fdeb25bad54c105450c71dd7c65f30b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078818"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342758"
 ---
 # <a name="iosdevicetype-resource-type"></a>Тип ресурса iosDeviceType
 

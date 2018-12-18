@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsUpdateType
 description: Какие устройства филиала будет получать обновления из
-ms.openlocfilehash: b489f17da5dc02dd7f7e72350eef282e56643dd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 415dde619529ffa9bb40ab2cea36665558bb0ee9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028068"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340840"
 ---
 # <a name="windowsupdatetype-enum-type"></a>Тип перечисления windowsUpdateType
 
@@ -14,7 +15,7 @@ ms.locfileid: "27028068"
 
 Какие устройства филиала будет получать обновления из
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Пользователь может задать.|
 |all|1|Разделитель годовая канала (целевой). Устройства получает все обновления компонента, которые применяются с точками годовая канала (требуемой).|

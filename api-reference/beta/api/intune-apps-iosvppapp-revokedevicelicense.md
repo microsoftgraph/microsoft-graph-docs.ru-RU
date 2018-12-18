@@ -1,12 +1,13 @@
 ---
 title: Действие revokeDeviceLicense
 description: Лицензии устройства VPP REVOKE назначенных операций ввода-вывода для заданного приложения.
-ms.openlocfilehash: 4accb28bdc8bc7bcd81631f46eba7d78049c8f4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17ae2ed812d5c5b5a35926934d748fb730aafacf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082644"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353132"
 ---
 # <a name="revokedevicelicense-action"></a>Действие revokeDeviceLicense
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,10 +48,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|managedDeviceId|String|DeviceId, для которого является отозвать лицензии назначенные приложения|
-|notifyManagedDevices|Логический|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
+|managedDeviceId|String.|DeviceId, для которого является отозвать лицензии назначенные приложения|
+|notifyManagedDevices|Boolean.|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
 
 
 
@@ -73,8 +74,7 @@ Content-length: 85
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

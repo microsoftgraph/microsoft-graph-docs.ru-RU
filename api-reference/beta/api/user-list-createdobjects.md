@@ -1,12 +1,13 @@
 ---
 title: Список createdObjects
 description: Получение списка созданных пользователем объектов каталога.
-ms.openlocfilehash: 030de28bdd402720f2b5c62e9b276a080583f687
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a7067926e5104c08d65a1753fc716787bed52fd5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078816"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342107"
 ---
 # <a name="list-createdobjects"></a>Список createdObjects
 
@@ -52,8 +53,7 @@ GET /users/{id | userPrincipalName}/createdObjects
 GET https://graph.microsoft.com/beta/me/createdObjects
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

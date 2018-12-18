@@ -1,12 +1,13 @@
 ---
 title: Получение объекта ChartLegend
 description: Получение свойств и связей объекта chartlegend.
-ms.openlocfilehash: c4899700c3889779a4adfcb3f5e03652741a9672
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 861675ad4f341861fff1e5792d8813eaa77f3cf5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350948"
 ---
 # <a name="get-chartlegend"></a>Получение объекта ChartLegend
 
@@ -53,8 +54,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/legend
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/legend
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

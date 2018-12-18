@@ -1,12 +1,13 @@
 ---
 title: 'message: copy'
 description: Копирование сообщения в папку.
-ms.openlocfilehash: c0c5428ff2f661d865a6cb2cd17bc0a48e177a52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e9d0661c01103fbfcf8991e0b28126b2f92e6ea4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077054"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353251"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -39,8 +40,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 | Заголовок | Значение |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Обязательный атрибут. |
-| Content-Type | `application/json`. Обязательный атрибут. |
+| Авторизация | `Bearer {token}`. Обязательный. |
+| Content-Type | `application/json`. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

@@ -1,12 +1,13 @@
 ---
 title: Список объектов directoryRole
 description: Список ролей каталога, активированных в клиенте.
-ms.openlocfilehash: b7753fc62a7d3412e4f017eb644644561d1faf05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 102360728e31e7fbec10c165ab026432a5b71585
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079440"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350745"
 ---
 # <a name="list-directoryroles"></a>Список объектов directoryRole
 
@@ -52,8 +53,7 @@ GET /directoryRoles
 GET https://graph.microsoft.com/beta/directoryRoles
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

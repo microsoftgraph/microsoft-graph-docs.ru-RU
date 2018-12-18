@@ -1,12 +1,13 @@
 ---
 title: Получение windowsAutopilotSettings
 description: Чтение свойства и связи объекта windowsAutopilotSettings.
-ms.openlocfilehash: 12419f49e214ff347e2189fd4c8d22ddbf6efbd7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4ca7e3c1462949e7a20c1990f30c106b2949837a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075510"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342464"
 ---
 # <a name="get-windowsautopilotsettings"></a>Получение windowsAutopilotSettings
 
@@ -38,7 +39,7 @@ GET /deviceManagement/windowsAutopilotSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotSettings
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

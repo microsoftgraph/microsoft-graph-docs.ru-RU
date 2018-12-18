@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса dataSharingConsent
 description: Совместное использование данных соглашаетесь сведения.
-ms.openlocfilehash: 152b367161dc9a734a20e007ac1b2c0d02d0c99f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 250ad388a5c619a6fd2753d172734145ea720776
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082588"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342939"
 ---
 # <a name="datasharingconsent-resource-type"></a>Тип ресурса dataSharingConsent
 
@@ -28,13 +29,13 @@ ms.locfileid: "27082588"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Разрешения общего доступа данных идентификатор|
-|Отображаемое_имя_службы|String|Отображаемое имя службы рабочих процессов|
-|termsUrl|String|TermsUrl для данных, общий доступ к согласия|
-|предоставлено|Логический|Предоставленные состояний для данных, общий доступ к согласия|
+|id|Строка|Разрешения общего доступа данных идентификатор|
+|Отображаемое_имя_службы|String.|Отображаемое имя службы рабочих процессов|
+|termsUrl|String.|TermsUrl для данных, общий доступ к согласия|
+|предоставлено|Boolean.|Предоставленные состояний для данных, общий доступ к согласия|
 |grantDateTime|DateTimeOffset|Были предоставлены разрешения времени для этой учетной записи|
-|grantedByUpn|String|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
-|grantedByUserId|String|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
+|grantedByUpn|String.|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
+|grantedByUserId|String.|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
 
 ## <a name="relationships"></a>Связи
 Нет

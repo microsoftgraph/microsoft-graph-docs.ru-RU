@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса importedDeviceIdentity
 description: Ресурс importedDeviceIdentity представляет identity уникальный оборудования устройства, заранее подготовленных для конфигурации предварительной регистрации.
-ms.openlocfilehash: a327840ce38dfd0d075ef37c7e92ef0e83b2054c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f7b6b054eab3815203a208382a19fbd9974cfb37
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082289"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350514"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>Тип ресурса importedDeviceIdentity
 
@@ -28,13 +29,13 @@ ms.locfileid: "27082289"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор идентификатор импортированных устройства|
-|importedDeviceIdentifier|String|Идентификатор импортированных устройства|
+|id|Строка|Идентификатор идентификатор импортированных устройства|
+|importedDeviceIdentifier|String.|Идентификатор импортированных устройства|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип удостоверения импортированных устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Последние изменения даты и времени описания|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|
 |lastContactedDateTime|DateTimeOffset|Связаться с даты последнего устройства|
-|описание|String|Описание устройства|
+|описание|Строка|Описание устройства|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[Платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 

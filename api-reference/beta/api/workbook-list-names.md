@@ -1,12 +1,13 @@
 ---
 title: Список имен
 description: Получение списка объектов nameditem.
-ms.openlocfilehash: c2683c8f678d66019a4bb143aa993460687bbf2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3f629e1a4073c63e5a6828588432472225b03f4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078821"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340847"
 ---
 # <a name="list-names"></a>Перечисление имен
 
@@ -53,8 +54,7 @@ GET /workbook/names
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

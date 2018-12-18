@@ -1,12 +1,13 @@
 ---
 title: Список событий
 description: Получение списка событий в календаре.  Этот список содержит собрания с одним экземпляром и образцы рядов.
-ms.openlocfilehash: 4052f75abf4340d4acddbb79c1d318c7d1ca0f29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 3cf431d600f36350d8654e9624b596222fcbff8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075760"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341883"
 ---
 # <a name="list-events"></a>Список событий
 
@@ -70,8 +71,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 GET https://graph.microsoft.com/beta/me/calendar/events
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Создание depEnrollmentProfile
 description: Создание нового объекта depEnrollmentProfile.
-ms.openlocfilehash: 52a099afe1322aa07f893190ebf7cc50ecde7a06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5038013701692611272ffc922c81b37b16a55122
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077428"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350738"
 ---
 # <a name="create-depenrollmentprofile"></a>Создание depEnrollmentProfile
 
@@ -36,7 +37,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,36 +48,36 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор GUID для объекта унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|String|Имя профиля, унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|описание|String|Описание профиля унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requiresUserAuthentication|Логический|Указывает, если профиль требует проверки подлинности пользователя унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|String|Конфигурация конечную точку URL-адрес для регистрации наследуется от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании. Наследуется от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|isDefault|Логический|Указывает, является ли профиля по умолчанию|
-|supervisedModeEnabled|Логический|Режим контролируемом значение True для включения значение false в противном случае. Просмотреть https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune для получения дополнительных сведений.|
-|supportDepartment|String|Сведения о поддержке отдела|
-|passCodeDisabled|Логический|Указывает, если область настройки секретный код отключен|
-|isMandatory|Логический|Указывает, является ли обязательных профилей|
-|locationDisabled|Логический|Указывает, если область настройки расположения службы отключен|
-|supportPhoneNumber|String|Номер телефона службы поддержки|
+|id|Строка|Идентификатор GUID для объекта унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|Строка|Имя профиля, унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|описание|Строка|Описание профиля унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Boolean.|Указывает, если профиль требует проверки подлинности пользователя унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String.|Конфигурация конечную точку URL-адрес для регистрации наследуется от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean.|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании. Наследуется от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|isDefault|Boolean|Указывает, является ли профиля по умолчанию|
+|supervisedModeEnabled|Boolean.|Режим контролируемом значение True для включения значение false в противном случае. Просмотреть https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune для получения дополнительных сведений.|
+|supportDepartment|String.|Сведения о поддержке отдела|
+|passCodeDisabled|Boolean.|Указывает, если область настройки секретный код отключен|
+|isMandatory|Boolean.|Указывает, является ли обязательных профилей|
+|locationDisabled|Boolean.|Указывает, если область настройки расположения службы отключен|
+|supportPhoneNumber|String.|Номер телефона службы поддержки|
 |iTunesPairingMode.|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md).|Указывает iTunes, режим связывания. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
-|profileRemovalDisabled|Логический|Указывает, если параметр удаления профиль отключен|
+|profileRemovalDisabled|Boolean.|Указывает, если параметр удаления профиль отключен|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) коллекции|Управление сертификатами для конфигуратора Apple|
-|restoreBlocked|Логический|Указывает, если область настройки восстановления блокируется|
-|restoreFromAndroidDisabled|Логический|Указывает, если отключено восстановление из Android (en)|
-|appleIdDisabled|Логический|Указывает, если область настройки идентификатор Apple отключен|
-|termsAndConditionsDisabled|Логический|Указывает, если отключено «Сроками и условиями» область настройки|
-|touchIdDisabled|Логический|Указывает, если область настройки идентификатор сенсорного ввода отключен|
-|applePayDisabled|Логический|Указывает, если область настройки оплаты Apple отключен|
-|zoomDisabled|Логический|Указывает, если область настройки масштаба отключен|
-|siriDisabled|Логический|Указывает, если область настроек siri отключен|
-|diagnosticsDisabled|Логический|Указывает, если область настройки диагностики отключен|
-|macOSRegistrationDisabled|Логический|Указывает, отключена при регистрации Mac OS|
-|macOSFileVaultDisabled|Логический|Указывает, если отключено хранилище файлов Mac OS|
-|awaitDeviceConfiguredConfirmation|Логический|Указывает, если устройство необходимо подождать настроенного подтверждения|
+|restoreBlocked|Boolean.|Указывает, если область настройки восстановления блокируется|
+|restoreFromAndroidDisabled|Boolean.|Указывает, если отключено восстановление из Android (en)|
+|appleIdDisabled|Boolean.|Указывает, если область настройки идентификатор Apple отключен|
+|termsAndConditionsDisabled|Boolean.|Указывает, если отключено «Сроками и условиями» область настройки|
+|touchIdDisabled|Boolean.|Указывает, если область настройки идентификатор сенсорного ввода отключен|
+|applePayDisabled|Boolean.|Указывает, если область настройки оплаты Apple отключен|
+|zoomDisabled|Boolean.|Указывает, если область настройки масштаба отключен|
+|siriDisabled|Boolean.|Указывает, если область настроек siri отключен|
+|diagnosticsDisabled|Boolean.|Указывает, если область настройки диагностики отключен|
+|macOSRegistrationDisabled|Boolean.|Указывает, отключена при регистрации Mac OS|
+|macOSFileVaultDisabled|Boolean.|Указывает, если отключено хранилище файлов Mac OS|
+|awaitDeviceConfiguredConfirmation|Boolean.|Указывает, если устройство необходимо подождать настроенного подтверждения|
 |sharedIPadMaximumUserCount|Int32|Это указывает максимальное количество пользователей, которые могут использовать общие iPad. Применим только в режиме общего iPad.|
-|enableSharedIPad|Логический|Это указывает, является ли устройство для участвуют в режиме, которое позволяет несколькими пользовательские сценарии. Применим только в общих iPads.|
+|enableSharedIPad|Boolean.|Это указывает, является ли устройство для участвуют в режиме, которое позволяет несколькими пользовательские сценарии. Применим только в общих iPads.|
 
 
 
@@ -132,8 +133,7 @@ Content-length: 1290
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

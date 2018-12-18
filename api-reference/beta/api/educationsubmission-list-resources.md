@@ -1,12 +1,13 @@
 ---
 title: Список ресурсов
 description: Список ресурсов, связанных с этой отправки. Объект **submissionResource** — оболочкой вокруг объекта фактический ресурсов студент работает в. Если это скопированный из назначения во время процесса назначить программы-оболочки для также указатель ресурсов для назначения. Эти ресурсы, рабочую копию назначения. **SubmittedResources** представлены ресурсы, чтобы быть выражаемым числом отправленных официально.
-ms.openlocfilehash: 0035f34b734cb4335fd1fd9ec3eece9183eed67b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: d63c731798003a2312ee5fbff534cde88d4b9ecf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076316"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341071"
 ---
 # <a name="list-resources"></a>Список ресурсов
 

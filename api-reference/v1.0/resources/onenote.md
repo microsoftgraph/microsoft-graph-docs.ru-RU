@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса onenote
 description: Точка входа для ресурсов OneNote.
-ms.openlocfilehash: f244fdf1770cbe34110097d8885b05e6407ee45f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 9570b99aad96196af6d21f41352dada9f4b869b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027686"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343654"
 ---
 # <a name="onenote-resource-type"></a>Тип ресурса onenote
 

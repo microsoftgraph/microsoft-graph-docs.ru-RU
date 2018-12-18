@@ -1,12 +1,13 @@
 ---
 title: 'Вызовите: Включение звука'
 description: Позволяет приложениям включить сам.
-ms.openlocfilehash: de2029a2fa5abeb777f83e8651c8b6c5a2c15991
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 7ac86b12363e692930597e3394ca0f78b30b0dee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078219"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343472"
 ---
 # <a name="call-unmute"></a>Вызовите: Включение звука
 
@@ -21,7 +22,7 @@ ms.locfileid: "27078219"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложения                            | Отсутствуют.                                        |
+| Для приложений                            | Отсутствуют.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,9 +39,9 @@ POST /applications/{id}/calls/{id}/unmute
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр      | Тип    |Description|
+| Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|String|Контекст клиента.|
+|clientContext|String.|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.

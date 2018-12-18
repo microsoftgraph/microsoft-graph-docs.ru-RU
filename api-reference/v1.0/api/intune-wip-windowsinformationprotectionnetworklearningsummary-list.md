@@ -1,12 +1,13 @@
 ---
 title: Список объектов windowsInformationProtectionNetworkLearningSummary
 description: Список свойств и связей объектов windowsInformationProtectionNetworkLearningSummary.
-ms.openlocfilehash: ff9c84e90cb9aeb8fd69647840f269f312e31245
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bdb702881b7994d30cdcc02b0f583b6cb0fc5d69
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024925"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351025"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>Список объектов windowsInformationProtectionNetworkLearningSummary
 
@@ -34,7 +35,7 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtecti
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

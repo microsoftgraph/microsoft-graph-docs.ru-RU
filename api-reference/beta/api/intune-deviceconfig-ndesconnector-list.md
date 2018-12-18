@@ -1,12 +1,13 @@
 ---
 title: Список ndesConnectors
 description: Свойства списка и связей объектов ndesConnector.
-ms.openlocfilehash: eb3737cea78ad7fa97bb40d05b5ac836e444b7a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd91f4aad8a3e4969594e34a7f8124411687c9be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082358"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340924"
 ---
 # <a name="list-ndesconnectors"></a>Список ndesConnectors
 
@@ -36,7 +37,7 @@ GET /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/ndesConnectors
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

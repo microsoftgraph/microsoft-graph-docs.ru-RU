@@ -1,12 +1,13 @@
 ---
 title: Создание записной книжки
 description: Создание записной книжки OneNote.
-ms.openlocfilehash: b1f32bc8aadb5e5ec42e751453535b3ef116e907
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: e9290ed51f2ebf30cccaa8ecc82ab95767c9ed5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082839"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341603"
 ---
 # <a name="create-notebook"></a>Создание записной книжки
 

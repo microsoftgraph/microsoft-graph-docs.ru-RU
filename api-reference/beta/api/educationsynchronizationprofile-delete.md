@@ -1,12 +1,13 @@
 ---
 title: Удаление educationSynchronizationProfile
 description: Удаление профиля синхронизации данных school в клиентов на основе идентификатора.
-ms.openlocfilehash: 829b723b48eb9a15750bc9d0e00ba50d432e8ab6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: b0287133d579915279e0f9a02bf49dd981ccf419
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079442"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343304"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Удаление educationSynchronizationProfile
 
@@ -17,7 +18,7 @@ ms.locfileid: "27079442"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Permissions |
+| Тип разрешения | Разрешения |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 

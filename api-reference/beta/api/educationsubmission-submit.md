@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: Отправка'
-description: . Во время процесса отправки интервалов submittedResources будут скопированы все ресурсы. Преподаватель выполнит поиск в списке добавленных ресурсы для ранжирования.
-ms.openlocfilehash: 566948278ffacb1169842c49aa11c78cba0a5f3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Действие, которое указывает, что студента выполняется с работой и готов к передаче в назначении. Это действие может быть занято только учащегося.
+author: dipakboyed
+ms.openlocfilehash: 25fc24823081c6f148617ad31d0f7b797b0e2a80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076568"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343332"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: Отправка
 
