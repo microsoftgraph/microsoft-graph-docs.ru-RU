@@ -1,12 +1,13 @@
 ---
 title: 'Chart: Image'
-description: Отрисовывает диаграмму в виде изображения с кодировкой Base64, масштабируя ее в соответствии с указанным размером.
-ms.openlocfilehash: 33a28f5b5033f9e123fede12eacfbaa78215f313
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.
+author: lumine2008
+ms.openlocfilehash: ccf2ba82dad05508b0857122f0316be8afcd03bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028143"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318195"
 ---
 # <a name="chart-image"></a>Chart: Image
 

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления subjectAlternativeNameType
 description: Параметры альтернативного имени субъекта.
-ms.openlocfilehash: 385ee36111907dd2e48bc18a2efda9552eb61924
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c1249c90998a24eca63da7d80e580ac497aa9b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076287"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326658"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>Тип перечисления subjectAlternativeNameType
 
@@ -16,9 +17,9 @@ ms.locfileid: "27076287"
 
 Параметры альтернативного имени субъекта.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Не альтернативное имя субъекта.|
+|none|0|Не альтернативное имя субъекта.|
 |emailAddress|1|Адрес электронной почты.|
 |userPrincipalName|2|Имя участника-пользователя (UPN).|
 |customAzureADAttribute|4|Настраиваемый атрибут Azure AD.|

@@ -1,12 +1,13 @@
 ---
 title: 'groupLifecyclePolicy: removeGroup'
 description: Удаляет группу из политики жизненного цикла.
-ms.openlocfilehash: 9f0d60cbf82b60e021623d2096af14cb0b6a0e8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a22dae0a8065653972667c7de410330d6c91a454
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025519"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321730"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 

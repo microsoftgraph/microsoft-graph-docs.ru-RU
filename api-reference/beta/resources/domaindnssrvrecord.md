@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса domainDnsSrvRecord
 description: Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
-ms.openlocfilehash: 9eba2c74dd26d1c9431b1cabe3d5b283ee7a406d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 73eec36406844ef26b0f0349711258ddcd13f200
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082137"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322052"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>Тип ресурса domainDnsSrvRecord
 
@@ -20,7 +21,7 @@ ms.locfileid: "27082137"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
+|id|Строка| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
 |isOptional|Boolean| Если указано значение false, для правильной работы Microsoft Online Services с доменом пользователь должен настроить запись SRV на узле DNS. |
 |label|String| Значение, используемое при настройке свойства *name* записи SRV на узле DNS. |
 |nameTarget|String| Значение, используемое при настройке свойства *Target* записи SRV на узле DNS. |

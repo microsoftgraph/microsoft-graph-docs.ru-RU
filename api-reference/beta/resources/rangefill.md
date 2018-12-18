@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса RangeFill
 description: Представляет фон объекта диапазона.
-ms.openlocfilehash: 11806d95900c6e4ea1d4bf6ce4f4800bf5f6f66b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 21d40b1ec65ad49241af30912c3c05e114c7008d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081646"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323711"
 ---
 # <a name="rangefill-resource-type"></a>Тип ресурса RangeFill
 
@@ -20,7 +21,7 @@ ms.locfileid: "27081646"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта RangeFill](../api/rangefill-get.md) | [RangeFill](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
-|[Update](../api/rangefill-update.md) | [RangeFill](rangefill.md)   |Обновление объекта RangeFill. |
+|[обновление](../api/rangefill-update.md). | [RangeFill](rangefill.md)   |Обновление объекта RangeFill. |
 |[Clear](../api/rangefill-clear.md)|Нет|Сбрасывает фон диапазона.|
 
 ## <a name="properties"></a>Свойства

@@ -1,12 +1,13 @@
 ---
 title: Действие revokeLicenses
 description: Отзыв лицензии, связанные с определенным appleVolumePurchaseProgramToken
-ms.openlocfilehash: 9c8d3142a28845390ef7261c408d2d4bc77643c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b5551f29da23aeaf6a024e5ea41588211a69bd0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076676"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330788"
 ---
 # <a name="revokelicenses-action"></a>Действие revokeLicenses
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -69,8 +70,7 @@ Content-length: 36
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

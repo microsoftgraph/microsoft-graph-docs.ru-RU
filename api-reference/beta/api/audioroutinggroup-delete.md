@@ -1,12 +1,13 @@
 ---
 title: Удаление звука группы маршрутизации
 description: Удаление указанного audioRoutingGroup.
-ms.openlocfilehash: cb4b4c2cf3f7023332acd443c63463d5251963ad
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: 025498e1ceb6178ede4c7ca938c7b0d3d05a80ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27155993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323942"
 ---
 # <a name="delete-audio-routing-group"></a>Удаление звука группы маршрутизации
 
@@ -21,7 +22,7 @@ ms.locfileid: "27155993"
 | :-------------- | :------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложения     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +55,7 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

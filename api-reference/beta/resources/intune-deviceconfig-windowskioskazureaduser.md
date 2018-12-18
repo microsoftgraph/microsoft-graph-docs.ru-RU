@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsKioskAzureADUser
 description: Класс, используемый для идентификации учетной записи пользователя в AzureAD для базовой конфигурации
-ms.openlocfilehash: 22e71ab10ac7fb755050e8d6e5d19568bef2fae8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4048b4cbea592af350af20bf433ca00ac6d4980
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330074"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>Тип ресурса windowsKioskAzureADUser
 
@@ -22,7 +23,7 @@ ms.locfileid: "27077993"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор пользователя AzureAD, который будет заблокирована этой базовой конфигурации|
-|userPrincipalName|String|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
+|userPrincipalName|Строка|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,12 +1,13 @@
 ---
 title: Обновление outlooktask
 description: Изменения для записи свойств задачи Outlook.
-ms.openlocfilehash: 1e2afb7fb69b4f305ffc69d0f40960edf9b6ca2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 0a162c81ef32cb35e930b000678234ede20e4874
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075127"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325706"
 ---
 # <a name="update-outlooktask"></a>Обновление outlooktask
 
@@ -43,27 +44,27 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tas
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|String|Имя пользователя, которому назначена задача.|
+|assignedTo|String.|Имя пользователя, которому назначена задача.|
 |body|[itemBody](../resources/itembody.md)|Основная задача, который обычно содержит сведения о задаче. Обратите внимание на то, что поддерживается только тип HTML-код.|
 |categories|Коллекция String|Категории, связанные с задачей.|
-|changeKey|String|Версия задачи.|
+|changeKey|Строка|Версия задачи.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанный часовой пояс, окончания задачи.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства используется формат ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанный часовой пояс, которую требуется завершения задачи.|
-|hasAttachments|Логический|Значение true, если у задачи вложения.|
+|hasAttachments|Boolean|Значение true, если у задачи вложения.|
 |importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Значение true, если оповещение установлено значение Напоминать пользователю задачи.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|owner|String|Имя человека, создавшего задачу.|
-|parentFolderId|String|Уникальный идентификатор родительской папки задач.|
+|owner|Строка|Имя человека, создавшего задачу.|
+|parentFolderId|Строка|Уникальный идентификатор родительской папки задач.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Шаблон повторения для задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время оповещения напоминание задачи, будет выполнена.|
 |sensitivity|string|Указывает уровень конфиденциальности для задачи. Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе после начала задачи.|
 |status|string|Указывает состояние или хода выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|subject|String|Краткое описание или название задачи.|
+|subject|Строка|Краткое описание или название задачи.|
 
 ## <a name="response"></a>Ответ
 
@@ -90,8 +91,7 @@ Content-length: 76
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

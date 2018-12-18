@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса termsAndConditionsGroupAssignment
 description: C) политики к определенной группе. Чтобы зарегистрировать устройства в Intune, пользователям в группе необходимо принять условия.
-ms.openlocfilehash: 071cd73ba36aaab74c7f5c36522c03014711286e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 044d82e00e2da81c59de5cdb26b9441da351db8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080417"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327617"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>Тип ресурса termsAndConditionsGroupAssignment
 
@@ -28,7 +29,7 @@ ms.locfileid: "27080417"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта.|
-|targetGroupId|String|Уникальный идентификатор группы, которая назначена политика T & C.|
+|targetGroupId|String.|Уникальный идентификатор группы, которая назначена политика T & C.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

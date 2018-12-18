@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса Table
 description: Представляет таблицу Excel.
-ms.openlocfilehash: 0a078965febef44f1fc27f21c7c29cc184ea526a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 06c87f4d4f50985f7c9e3420d481c564dbfa317b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082453"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327421"
 ---
 # <a name="table-resource-type"></a>Тип ресурса Table
 
@@ -56,7 +57,7 @@ ms.locfileid: "27082453"
 |columns|Коллекция объектов [TableColumn](tablecolumn.md)|Представляет коллекцию всех столбцов в таблице. Только для чтения.|
 |rows|Коллекция объектов [TableRow](tablerow.md)|Представляет коллекцию всех строк в таблице. Только для чтения.|
 |sort|[TableSort](tablesort.md)|Представляет сортировку для таблицы. Только для чтения.|
-|лист|[Worksheet](worksheet.md)|Лист, содержащий текущую таблицу. Только для чтения.|
+|worksheet|[Worksheet](worksheet.md)|Лист, содержащий текущую таблицу. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

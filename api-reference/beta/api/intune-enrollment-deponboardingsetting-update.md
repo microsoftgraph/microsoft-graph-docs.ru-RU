@@ -1,12 +1,13 @@
 ---
 title: Обновление depOnboardingSetting
 description: Обновление свойства объекта depOnboardingSetting.
-ms.openlocfilehash: 931df96b837610044a8c9337fa1fbd5de2a3d52d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d4a50c485da98a182562ca5bd353d71dd854b4f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074876"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326784"
 ---
 # <a name="update-deponboardingsetting"></a>Обновление depOnboardingSetting
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -53,13 +54,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |lastModifiedDateTime|DateTimeOffset|Когда служба была onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|При последней syned службы с помощью Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Когда Intune запрашивает последней синхронизации.|
-|shareTokenWithSchoolDataSyncService|Логический|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
+|shareTokenWithSchoolDataSyncService|Boolean.|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
 |lastSyncErrorCode|Int32|Код ошибки Apple во время последней синхронизации dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена Dep. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|String|Понятное имя для маркера Dep|
+|tokenName|String.|Понятное имя для маркера Dep|
 |syncedDeviceCount|Int32|Получает количество синхронизированных устройства|
-|defaultProfileDisplayName|String|Получает количество синхронизированных устройства|
-|dataSharingConsentGranted|Логический|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
+|defaultProfileDisplayName|String.|Получает количество синхронизированных устройства|
+|dataSharingConsentGranted|Boolean.|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
 
 
 
@@ -91,8 +92,7 @@ Content-length: 589
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

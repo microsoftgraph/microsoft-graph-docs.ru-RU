@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления managementAgentType
 description: Тип агента управления.
-ms.openlocfilehash: 334a89c3c8a5934f491626b0956a4532cdf76de0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 702f71f3984bda34e31d0a614e45e387f45b587e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081110"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321590"
 ---
 # <a name="managementagenttype-enum-type"></a>Тип перечисления managementAgentType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081110"
 
 Тип агента управления.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |EAS|1|Устройство управляется сервером Exchange server.|
 |MDM|2|Устройство является управляемым путем MDM. Intune|

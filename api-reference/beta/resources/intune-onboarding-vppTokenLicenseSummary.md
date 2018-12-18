@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса vppTokenLicenseSummary
 description: Сводка данного приложения в маркер лицензии.
-ms.openlocfilehash: fba888c706b21a796615bf9bc2ea79968d5ad6d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7847c6265ed526d50215567918698c7732adf947
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076466"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319980"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>Тип ресурса vppTokenLicenseSummary
 
@@ -16,9 +17,9 @@ ms.locfileid: "27076466"
 
 Сводка данного приложения в маркер лицензии.
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|vppTokenId|String|Идентификатор маркера VPP.|
+|vppTokenId|String.|Идентификатор маркера VPP.|
 |appleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |organizationName|Строка|Организации, связанной с Apple тома покупки программа маркеров.|
 |availableLicenseCount|Int32|Число доступных лицензий VPP.|

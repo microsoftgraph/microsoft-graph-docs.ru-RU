@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса operatingSystemVersionRange
 description: Диапазон версии операционной системы.
-ms.openlocfilehash: af140bf2a5d889b66d45460465e47c466bb2160b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b853e71b2d8f66d24122afb51cea97fc6a8f8d7e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076867"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331166"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>Тип ресурса operatingSystemVersionRange
 
@@ -18,9 +19,9 @@ ms.locfileid: "27076867"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|описание|String|Описание этого диапазона (например действительно 1702 сборок)|
-|lowestVersion|String|Низший включительно версия, которая содержит этот диапазон.|
-|highestVersion|String|Наибольший включительно версию, которая содержит этот диапазон.|
+|описание|Строка|Описание этого диапазона (например действительно 1702 сборок)|
+|lowestVersion|String.|Низший включительно версия, которая содержит этот диапазон.|
+|highestVersion|String.|Наибольший включительно версию, которая содержит этот диапазон.|
 
 ## <a name="relationships"></a>Связи
 Нет

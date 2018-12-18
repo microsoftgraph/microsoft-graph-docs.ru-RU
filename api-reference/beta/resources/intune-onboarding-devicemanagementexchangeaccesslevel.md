@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления deviceManagementExchangeAccessLevel
 description: Уровень доступа в Exchange.
-ms.openlocfilehash: 2d45dab4cecc65fa7514eef178b134da05e466d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f163c5186c1fc8dac13a22d730870c52df66a06
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320799"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>Тип перечисления deviceManagementExchangeAccessLevel
 
@@ -16,9 +17,9 @@ ms.locfileid: "27078855"
 
 Уровень доступа в Exchange.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Не правила доступа к устройству не настроена в Exchange.|
+|none|0|Не правила доступа к устройству не настроена в Exchange.|
 |Разрешить|1|Разрешение доступа к Exchange устройств.|
 |блок|2|Блокировка устройств доступ к Exchange.|
 |карантин|3|Устройства на карантин в Exchange.|

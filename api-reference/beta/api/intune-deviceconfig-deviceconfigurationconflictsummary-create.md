@@ -1,12 +1,13 @@
 ---
 title: Создание deviceConfigurationConflictSummary
 description: Создание нового объекта deviceConfigurationConflictSummary.
-ms.openlocfilehash: 05532150c01c49e832e28ac811f68afcc00da651
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f39d272d817ca2244f5b0d932fc9c955a1253b27
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074589"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323109"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Создание deviceConfigurationConflictSummary
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,10 +46,10 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 
 В следующей таблице показаны свойства, которые необходимы для создания deviceConfigurationConflictSummary.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик конфликтует с данного параметра|
-|id|String|Идентификатор для этого набора конфликтующие политики. Этот идентификатор — идентификаторы всех политик в ConflictingDeviceConfigurations в лексикографических порядке, разделенных точкой с подчеркивания.|
+|id|Строка|Идентификатор для этого набора конфликтующие политики. Этот идентификатор — идентификаторы всех политик в ConflictingDeviceConfigurations в лексикографических порядке, разделенных точкой с подчеркивания.|
 |contributingSettings|Коллекция String|Набор параметров конфликтует с указанной политики|
 |deviceCheckinsImpacted|Int32|Count возвраты, на которые оказывает влияние конфликтующие политики и параметры|
 
@@ -82,8 +83,7 @@ Content-length: 361
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

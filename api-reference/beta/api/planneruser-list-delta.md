@@ -1,12 +1,13 @@
 ---
 title: 'Планировщик работы: дельты'
 description: Извлекает изменения объектов, на которые подписан пользователь.
-ms.openlocfilehash: 7c866946f0c9a873b99ee4efd6d9e2c7ce646be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: dcc60ad9c1bc5ea9e56099d4bc79fb57d4e95374
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080160"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323368"
 ---
 # <a name="planner-delta"></a>Планировщик работы: дельты
 
@@ -79,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 
->**Примечание:** Объект ответа может сокращение для удобства чтения. Будут возвращены все измененные свойства из фактический вызов.
+>**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости. Будут возвращены все измененные свойства из фактический вызов.
 
 <!-- {
   "blockType": "response",

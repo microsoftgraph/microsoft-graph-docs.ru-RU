@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта deviceManagement
 description: Обновление свойств объекта deviceManagement.
-ms.openlocfilehash: 7f73d3fc944dcbc36709cd7f1b46e61bca271152
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1808c18fd5e305871e0be2e47def97938384488c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077384"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323767"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -57,7 +58,7 @@ PATCH /deviceManagement
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -69,10 +70,10 @@ PATCH /deviceManagement
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для устройства.|
+|id|Строка|Уникальный идентификатор для устройства.|
 |**Конфигурация устройств**|
 |intuneAccountId|GUID|Идентификатор учетной записи Intune для заданного клиента|
-|legacyPcManangementEnabled|Логический|Свойство для включения не MDM управляемых прежних версий управления ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|legacyPcManangementEnabled|Boolean.|Свойство для включения не MDM управляемых прежних версий управления ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |maximumDepTokens|Int32|Максимальное число DEP маркеры могут каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|

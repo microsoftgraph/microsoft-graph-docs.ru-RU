@@ -1,12 +1,13 @@
 ---
 title: Получение расписания доступности пользователей и ресурсов (предварительная версия)
 description: Общим сценарием на рабочем месте или в учебном заведении является просмотр доступности пользователя для собрания или доступности команды, помещения или оборудования в некоторый период времени.
-ms.openlocfilehash: 8a2dd9318bdd806c99d525ee41f46d78d1963b47
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2f201ed552200f7c8dd55b368a504b4eca1e3ba5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092712"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317761"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Получение расписания доступности пользователей и ресурсов (предварительная версия)
 

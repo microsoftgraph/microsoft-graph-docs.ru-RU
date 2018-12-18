@@ -1,12 +1,13 @@
 ---
 title: Обновление события
 description: Обновление объекта event.
-ms.openlocfilehash: e06f08b0c1f0703904c2418ac490be2100e39619
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c8aacc7df62bf336c355801e89e1b6bea5c2b1f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026550"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321163"
 ---
 # <a name="update-event"></a>Обновление события
 Обновление объекта [event](../resources/event.md).

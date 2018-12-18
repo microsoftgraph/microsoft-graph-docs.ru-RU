@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления appleSubjectNameFormat
 description: Параметры формата имени субъекта для устройств Apple.
-ms.openlocfilehash: fd4c024f6243d79c69a812d8dc996bc728d72673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6aa3616050e3d908fd093310de5bbed065766fc0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079844"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323676"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>Тип перечисления appleSubjectNameFormat
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079844"
 
 Параметры формата имени субъекта для устройств Apple.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |_ общего _ имени|0|Общее имя.|
 |commonNameAsEmail|1|Общее имя по электронной почте.|

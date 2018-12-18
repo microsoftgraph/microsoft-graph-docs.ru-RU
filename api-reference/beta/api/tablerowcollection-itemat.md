@@ -1,12 +1,13 @@
 ---
 title: 'TableRowCollection: ItemAt'
 description: Получает строку на основании сведений о ее позиции в коллекции.
-ms.openlocfilehash: 57eccf8f1e21f615759ab5c6b482c73196eab268
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3a093dd9ee56d4377cdad1c9ba37c02790ffa1d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075806"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323424"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -66,8 +67,7 @@ Content-length: 20
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта deviceCategory
 description: Обновление свойств объекта deviceCategory.
-ms.openlocfilehash: bd01264d6e7e07a71c683c948fe6b01fd3822f5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8676067ff4ce34358bcfd8400d28e1d73bd11f68
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082846"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321520"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -54,7 +55,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -66,7 +67,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация новых сотрудников**|
 |описание|String|Необязательное описание категории устройств.|
 |displayName|String|Отображаемое имя категории устройств.|

@@ -1,12 +1,13 @@
 ---
 title: Список пользователей
 description: Получение списка объектов user. Эти объекты user будут содержать специальные свойства, связанные с образованием.
-ms.openlocfilehash: 8b0c0fb88323700fe2fdb0d7236f0a6e1183ce15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 54cabab078fb3564f26f8d150c9931ece5fe6b6c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025458"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322780"
 ---
 # <a name="list-users"></a>Список пользователей
 

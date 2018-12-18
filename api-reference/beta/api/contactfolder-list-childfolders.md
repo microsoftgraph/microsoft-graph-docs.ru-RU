@@ -1,12 +1,13 @@
 ---
 title: Список childFolders
 description: Получение коллекции дочерних папок в указанной папке контактов.
-ms.openlocfilehash: 7d379e81229ee8efd4c12718147a99ed13ebdb93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: f5a6d351ad6832f7eea4067574d830d1bde80a23
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325454"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
@@ -52,8 +53,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 GET https://graph.microsoft.com/beta/me/contactFolders/{id}/childFolders
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

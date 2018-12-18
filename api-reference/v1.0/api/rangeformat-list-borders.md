@@ -1,12 +1,13 @@
 ---
 title: Список границ
 description: Получение списка объектов rangeborder.
-ms.openlocfilehash: 11e571e3f4f7c39b25f638d666672c630b5d0e28
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 606dc6d3be61ca13d103cef496a2f34154de9b2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028473"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323893"
 ---
 # <a name="list-borders"></a>Список границ
 
@@ -53,8 +54,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

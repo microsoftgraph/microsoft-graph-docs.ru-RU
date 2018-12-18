@@ -1,12 +1,13 @@
 ---
 title: Создание mobileAppInstallStatus
 description: Создание нового объекта mobileAppInstallStatus.
-ms.openlocfilehash: 5aba88a33b5072f1426878eeaf32a0771ee250b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 12dfa8e7f827ef2d2933249a6089d000ef868769
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079018"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318111"
 ---
 # <a name="create-mobileappinstallstatus"></a>Создание mobileAppInstallStatus
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,7 +49,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |deviceName|String|Имя устройства|
 |deviceId|String|Идентификатор устройства|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации|
@@ -59,8 +60,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 |osVersion|String|Версия операционной системы|
 |osDescription|String|Описание операционная система|
 |userName|String|Имя пользователя устройства|
-|userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|displayVersion|String|Человеческого для чтения версию приложения|
+|userPrincipalName|Строка|"User Principal Name" (Имя участника-пользователя);|
+|displayVersion|String.|Человеческого для чтения версию приложения|
 
 
 
@@ -93,8 +94,7 @@ Content-length: 549
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

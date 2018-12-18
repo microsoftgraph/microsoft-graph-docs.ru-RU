@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса teamsAsyncOperation
 description: 'Операцию асинхронного группами Майкрософт — это операция, выходит за рамки жизненным циклом одним запросом API. '
-ms.openlocfilehash: 4ec60a5f0137c45a9bc0488b31b76f80799e0545
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: fd64f99c20505a8e670c865faa039e9db3174ed6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027165"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320610"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>Тип ресурса teamsAsyncOperation
 

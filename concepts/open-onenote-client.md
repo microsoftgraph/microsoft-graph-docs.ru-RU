@@ -1,12 +1,13 @@
 ---
 title: Открытие клиента OneNote
 description: 'Вы можете использовать свойство **links** страницы или записной книжки, чтобы открыть приложение OneNote на определенной странице или в определенной записной книжке. '
-ms.openlocfilehash: c82507243488777e557b18e599edb86b2ac15622
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: df1aa569eb4f097bc4ca7ea6da191b72d40296cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092676"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324607"
 ---
 # <a name="open-the-onenote-client"></a>Открытие клиента OneNote
 

@@ -1,12 +1,13 @@
 ---
 title: Список recentPlans
 description: Получение списка plannerPlans недавно просмотре пользователем. Недавно просматриваемые планы можно обновить, изменив plannerUser ресурсов.
-ms.openlocfilehash: 58c4d786dfdf596df8786db93c32e88b0cf93dfd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 68ed0cf626207e0cf02b6d32187598c3cf68d9d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081502"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322510"
 ---
 # <a name="list-recentplans"></a>Список recentPlans
 
@@ -32,7 +33,7 @@ GET /users/<id>/planner/recentPlans
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.

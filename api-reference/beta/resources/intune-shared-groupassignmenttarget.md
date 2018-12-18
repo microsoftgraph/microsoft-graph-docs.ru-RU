@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса groupAssignmentTarget
 description: Представляет назначение группе.
-ms.openlocfilehash: 76ea8c56b8022dc832335c575ad52632894f1d60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5371554d069237dc6bc017c29574423b415f4f33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075512"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323137"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Тип ресурса groupAssignmentTarget
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075512"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupId|String|ИД группы, являющейся объектом назначения.|
+|groupId|Строка|ИД группы, являющейся объектом назначения.|
 
 ## <a name="relationships"></a>Связи
 Нет

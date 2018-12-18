@@ -1,12 +1,13 @@
 ---
 title: 'event: accept'
 description: Примите события, указанного в календаре пользователя.
-ms.openlocfilehash: ad56fea689da9d4311000bba8bbbda0a2ff11c5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 62ca800a118331ce36ca22cc26c26391d9f186c6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079751"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320963"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -52,7 +53,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|comment|String|Текст, включенный в ответ. Необязательный.|
+|comment|Строка|Текст, включенный в ответ. Необязательный.|
 |sendResponse|Boolean|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
 
 ## <a name="response"></a>Отклик

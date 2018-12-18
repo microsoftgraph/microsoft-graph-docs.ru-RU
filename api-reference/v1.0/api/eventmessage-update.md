@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта eventMessage
 description: Обновление свойств объекта eventMessage.
-ms.openlocfilehash: 2bad679d4e460705c1716bd682c9e1afb0acc22b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 20c910ae2d6562a4bb9a593a0fac32269dbd413f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025374"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320427"
 ---
 # <a name="update-eventmessage"></a>Обновление объекта eventMessage
 
@@ -40,10 +41,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |categories|String|Категории, связанные с сообщением.|
-|importance|String|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
-|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isRead|Логический|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|importance|Строка|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
+|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isRead|Boolean|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 
 ## <a name="response"></a>Отклик
 
@@ -65,8 +66,7 @@ Content-length: 248
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

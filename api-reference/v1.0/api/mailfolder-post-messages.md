@@ -1,12 +1,13 @@
 ---
 title: Создание объекта Message
 description: С помощью этого API можно создать экземпляр Message в mailfolder.
-ms.openlocfilehash: 4d901385559ed89b6215069b97ae2f323cc66cf6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: bb88a061a8e867f4cc15470073925c51fe6a3cf6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025266"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332545"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -65,8 +66,7 @@ Content-length: 248
 ```
 Предоставьте в тексте запроса описание объекта [message](../resources/message.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

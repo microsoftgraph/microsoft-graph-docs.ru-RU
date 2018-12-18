@@ -1,12 +1,13 @@
 ---
 title: Получение объекта deviceManagement
 description: Чтение свойств и связей объекта deviceManagement.
-ms.openlocfilehash: adc45ed789e3e636282fee851997c3fbcc8d8318
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ebe44a865b76e2375b5c8df999d89697d6e94351
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078098"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323935"
 ---
 # <a name="get-devicemanagement"></a>Получение объекта deviceManagement
 
@@ -16,7 +17,7 @@ ms.locfileid: "27078098"
 
 Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -60,7 +61,7 @@ GET /deviceManagement
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

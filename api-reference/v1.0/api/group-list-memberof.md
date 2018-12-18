@@ -1,12 +1,13 @@
 ---
 title: Список memberOf
 description: 'Получение групп, непосредственным членом которых является данная группа. '
-ms.openlocfilehash: 9733fd1bc2def3642913887a228275744e17b61c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5cd563c8697a0d93ca2d11c42b3b8c19b0ce7ec9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026000"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323585"
 ---
 # <a name="list-memberof"></a>Список memberOf
 Получение групп, непосредственным членом которых является данная группа. 
@@ -20,7 +21,7 @@ ms.locfileid: "27026000"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Group.Read.All Directory.Read.All |
+|Для приложений | Group.Read.All Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

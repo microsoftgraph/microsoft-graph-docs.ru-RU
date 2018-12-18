@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса win32LobAppPowerShellScriptDetection
 description: Содержит свойства сценария PowerShell для обнаружения приложений Win32
-ms.openlocfilehash: e5d87d3d2a90c0ac7f8ce6db7e14b105583a76f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7f69b2c066ae90cfcd805b3d3cfe57193046d440
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078625"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327575"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptDetection
 
@@ -19,11 +20,11 @@ ms.locfileid: "27078625"
 Наследуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|enforceSignatureCheck|Логический|Значение, указывающее, применяется ли проверка подписи|
-|runAs32Bit|Логический|Значение, указывающее, будет ли этот скрипт должна запускаться в 32-разрядная версия|
-|scriptContent|String|Содержимое сценария для обнаружения Win32 строки из бизнес-приложения в кодировке base64|
+|enforceSignatureCheck|Boolean.|Значение, указывающее, применяется ли проверка подписи|
+|runAs32Bit|Boolean.|Значение, указывающее, будет ли этот скрипт должна запускаться в 32-разрядная версия|
+|scriptContent|String.|Содержимое сценария для обнаружения Win32 строки из бизнес-приложения в кодировке base64|
 
 ## <a name="relationships"></a>Связи
 Нет

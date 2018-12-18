@@ -1,12 +1,13 @@
 ---
 title: Получение контактов Outlook из общей папки
 description: " это также "
-ms.openlocfilehash: c8c5b3a2eac49153826113af036146cc4475d9e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a3dd8cff5cac88d3ef273b63f40bc8af87910aa1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092608"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315178"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>Получение контактов Outlook из общей папки
 

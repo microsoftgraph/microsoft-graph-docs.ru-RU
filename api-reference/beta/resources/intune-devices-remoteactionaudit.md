@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса remoteActionAudit
 description: Отчет о удаленного действия, которые запускаются на устройствах, относящегося к определенной клиента.
-ms.openlocfilehash: 9183330971e5c624d1e88532e4ea2c16691875da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48d74cb088a2e16e244898834e3d717302713e6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080903"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323480"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Тип ресурса remoteActionAudit
 
@@ -27,14 +28,14 @@ ms.locfileid: "27080903"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор отчета.|
+|id|Строка|Идентификатор отчета.|
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[устаревшие\] вместо этого используйте InitiatedByUserPrincipalName.|
-|initiatedByUserPrincipalName|String|Пользователя, который инициировал действие устройства имеет формат имени участника-пользователя.|
+|initiatedByUserPrincipalName|String.|Пользователя, который инициировал действие устройства имеет формат имени участника-пользователя.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
 |requestDateTime|DateTimeOffset|Время, когда действие был отправлен, в формате UTC.|
-|deviceOwnerUserPrincipalName|String|Имя участника-пользователя владельца устройства.|
-|deviceIMEI|String|IMEI устройства.|
+|deviceOwnerUserPrincipalName|String.|Имя участника-пользователя владельца устройства.|
+|deviceIMEI|String.|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 ## <a name="relationships"></a>Связи

@@ -1,12 +1,13 @@
 ---
 title: Создание объекта CalendarGroup
 description: С помощью этого API можно создать экземпляр CalendarGroup.
-ms.openlocfilehash: 2eb1f87a168a071822c90c778806bfc7e3569c03
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a68be3470489b20667112b67d15f4472a3817d4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082712"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319050"
 ---
 # <a name="create-calendargroup"></a>Создание объекта CalendarGroup
 
@@ -60,8 +61,7 @@ Content-length: 90
 ```
 Предоставьте в тексте запроса описание объекта [calendarGroup](../resources/calendargroup.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

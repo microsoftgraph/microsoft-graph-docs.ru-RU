@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта chartAxis
 description: Обновление свойств объекта chartaxis.
-ms.openlocfilehash: aebb499bd6aaa601fc63eb15c7cd7ab9fc3fe7ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: bc6bea839751641530a3c3945307db2a206b7725
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077940"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325489"
 ---
 # <a name="update-chartaxis"></a>Обновление объекта chartAxis
 
@@ -70,8 +71,7 @@ Content-length: 64
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса resourceOperation
 description: " операция используется для назначения ресурса MobileApp к группе безопасности AAD.  Операции с ресурсами невозможно изменить для встроенных ролей."
-ms.openlocfilehash: 2aed25c7558d674abb39fdb4147b722afe69c0f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9108181fe4d1c3cf241d879d5c1e4315d84d4eeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075896"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323298"
 ---
 # <a name="resourceoperation-resource-type"></a>Тип ресурса resourceOperation
 
@@ -29,11 +30,11 @@ ms.locfileid: "27075896"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|String|Категория ресурсов, к которому относится данная операция.|
+|resource|String.|Категория ресурсов, к которому относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально кратким (только несколько слов).|
 |описание|String|Описание операции с ресурсом. Используется в тексте, который отображается над обозначением операции при наведении указателя мыши на портале Azure.|
-|enabledForScopeValidation|Логический|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
+|enabledForScopeValidation|Boolean.|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
 
 ## <a name="relationships"></a>Связи
 Нет

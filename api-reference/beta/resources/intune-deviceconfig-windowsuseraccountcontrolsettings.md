@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsUserAccountControlSettings
 description: Возможные значения для параметров контроля учетных записей пользователей Windows.
-ms.openlocfilehash: 74d3bcce7e12b3b07ea15e479acb2392bac65a27
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dcec2ca6e5b6401b5277e513867c0646bff79c21
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076184"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320302"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>Тип перечисления windowsUserAccountControlSettings
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076184"
 
 Возможные значения для параметров контроля учетных записей пользователей Windows.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|User Defined, значение по умолчанию, без цели.|
 |alwaysNotify|1|Всегда уведомите.|

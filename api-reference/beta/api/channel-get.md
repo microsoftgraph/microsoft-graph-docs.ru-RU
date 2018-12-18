@@ -1,12 +1,13 @@
 ---
 title: Получение канала
 description: Извлечение свойств и связи канала.
-ms.openlocfilehash: a25f97c456ec92bfa1d15974d42698f6968b6338
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: e1c5a46b43fcb3245877fba9d8529e9396e62ba8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222417"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322724"
 ---
 # <a name="get-channel"></a>Получение канала
 
@@ -44,7 +45,7 @@ GET /teams/{id}/channels/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [канала](../resources/channel.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -57,7 +58,7 @@ GET /teams/{id}/channels/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

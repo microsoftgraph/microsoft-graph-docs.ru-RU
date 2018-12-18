@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса ChartSeries
 description: Представляет ряд в диаграмме.
-ms.openlocfilehash: 301fd3ba3c299108836bbd92497f4d6f6af94b0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 443b6b3dfea54b59ff92babc2776d9624bd28b20
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082718"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325286"
 ---
 # <a name="chartseries-resource-type"></a>Тип ресурса ChartSeries
 
@@ -22,7 +23,7 @@ ms.locfileid: "27082718"
 |[Получение объекта ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |Чтение свойств и связей объекта chartSeries.|
 |[Создание объекта ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Создание объекта ChartPoints путем добавления в коллекцию точек.|
 |[Список точек](../api/chartseries-list-points.md) |Коллекция объектов [ChartPoints](chartpoint.md)| Получение коллекции объектов ChartPoints.|
-|[Update](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |Обновление объекта ChartSeries. |
+|[обновление](../api/chartseries-update.md). | [ChartSeries](chartseries.md) |Обновление объекта ChartSeries. |
 |[List](../api/chartseries-list.md) | Коллекция объектов [ChartSeries](chartseries.md) |Получение коллекции объектов chartSeries. |
 |[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|Возвращает ряд на основании сведений о его позиции в коллекции.|
 
