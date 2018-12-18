@@ -1,12 +1,13 @@
 ---
 title: Добавление вкладки канала
 description: 'Добавляет (PIN) вкладку для указанного канала в группе. '
-ms.openlocfilehash: f4e57839436b6c40669125114b82fe67d58efc2d
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: e16cd81735f765ce175e66a76e7ac0a84d41ef8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222641"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333329"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки канала
 
@@ -40,7 +41,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 [TeamsTab](../resources/teamstab.md).
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `201 OK`.
 
@@ -67,7 +68,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

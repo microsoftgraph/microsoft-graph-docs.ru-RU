@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationSynchronizationProfile
 description: Представляет набор, использовавшееся для синхронизации education объектов и данных участников из исходного каталога в Azure Active Directory (Azure AD). Этот ресурс содержит программного представления, используемые в синхронизации данных School.
-ms.openlocfilehash: 89b605a7044526975f8caa6d7a1b6a716f012921
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 43cf3ebd882c1e2dd86ada5621abbcd28b0e84c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082125"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363741"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>Тип ресурса educationSynchronizationProfile
 
@@ -32,7 +33,7 @@ ms.locfileid: "27082125"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:-|:-|:-|
 | **displayName** | строка |  Имя профиля конфигурации синхронизации удостоверения.         |
 | **dataProvider** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  Поставщик данных, используемый для профиля.         |
@@ -42,7 +43,7 @@ ms.locfileid: "27082125"
 
 ## <a name="relationships"></a>Связи
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:-|:-|:-|
 | **errors** | [educationSynchronizationError](educationsynchronizationerror.md) коллекции| Все ошибки, связанные с этой синхронизации профилей. |
 | **profileStatus** | [educationSynchronizationProfileStatus](educationsynchronizationprofilestatus.md) | Состояние синхронизации. |

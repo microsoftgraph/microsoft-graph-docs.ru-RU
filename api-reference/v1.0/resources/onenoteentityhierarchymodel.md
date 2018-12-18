@@ -1,12 +1,13 @@
 ---
 title: onenoteEntityHierarchyModel ресурсов
 description: Это базовый тип для сущностей OneNote.
-ms.openlocfilehash: 78c651e6d480d3c809c6ca432cd37cb7f9f97926
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: a142e9206aefbb118f21b2f1a85d00cbc4a3a315
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028249"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362022"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>onenoteEntityHierarchyModel ресурсов
 
@@ -39,7 +40,7 @@ ms.locfileid: "27028249"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя записной книжки.|
+|displayName|Строка|Имя записной книжки.|
 |createdBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|

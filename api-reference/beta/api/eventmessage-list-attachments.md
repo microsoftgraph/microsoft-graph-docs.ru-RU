@@ -1,12 +1,13 @@
 ---
 title: Список вложений
 description: Получение списка объектов вложений.
-ms.openlocfilehash: 85bf08f00d123ed79242de48fc851d68c74cdf18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 49467c8b7576dfda8f47587acc1dc8d83f6ce445
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363658"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -53,8 +54,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
 GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Добавление учащегося
 description: Добавление участника курса.
-ms.openlocfilehash: 0b748a924de1f882372c0117f94d0de06f64dbc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: f38edbfdf3abbb66e3de839485b2c4fdbfaa48df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333378"
 ---
 # <a name="add-a-student"></a>Добавление учащегося
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075685"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложения | EduRoster.ReadWrite.All, а также Member.Read.Hidden | 
+|Для приложений | EduRoster.ReadWrite.All, а также Member.Read.Hidden | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

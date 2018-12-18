@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта chartdatalabels
 description: Обновление свойств объекта chartdatalabels.
-ms.openlocfilehash: e98569645048aced34566c4ca077d9e0ca921118
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ce120b5f00867b337191a8ba0c55e71b93f56a12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079472"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362505"
 ---
 # <a name="update-chartdatalabels"></a>Обновление объекта chartdatalabels
 
@@ -71,8 +72,7 @@ Content-length: 134
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

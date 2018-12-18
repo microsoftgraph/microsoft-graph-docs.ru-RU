@@ -1,12 +1,12 @@
 ---
 title: Получение dataPolicyOperation
 description: Извлечение свойств объекта dataPolicyOperation.
-ms.openlocfilehash: fbc94719f9944adb25f7dd744cf0b15b179f3a5d
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+ms.openlocfilehash: bee3261526914848eea423a30f8f59b0d072a791
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156021"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362085"
 ---
 # <a name="get-datapolicyoperation"></a>Получение dataPolicyOperation
 
@@ -17,9 +17,9 @@ ms.locfileid: "27156021"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-|Делегированные (личная учетная запись Майкрософт) |  Не применимо  |
-|Для приложений | Directory.Read.All, Directory.ReadWrite.All | 
+|Делегированные (рабочая или учебная учетная запись) |  User.Export.All и User.Read.All  |
+|Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
+|Application | User.Export.All и User.Read.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ GET /dataPolicyOperations/{id}
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [dataPolicyOperation](../resources/datapolicyoperation.md) и кода ответа в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

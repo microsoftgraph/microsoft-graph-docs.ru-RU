@@ -1,12 +1,13 @@
 ---
 title: 'Вызовите: передача'
 description: Переключение активного вызова.
-ms.openlocfilehash: d02e028c4d7e3b51f3aee371e22d00b95841d9a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1dc80e342b873c8ebcdb2051107836201e13fda4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079448"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362484"
 ---
 # <a name="call-transfer"></a>Вызовите: передача
 
@@ -21,7 +22,7 @@ ms.locfileid: "27079448"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Для приложения     | Calls.Initiate.All                                  |
+| Application     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,12 +39,12 @@ POST /applications/{id}/calls/{id}/transfer
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр      | Тип    |Description|
+| Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является целевым для переключения.|
 |target|[identitySet](../resources/identityset.md)||
-|replacesCallId|String|Исходный идентификатор вызова участника, куда следует переключить.|
-|clientContext|String|Контекст клиента.|
+|replacesCallId|String.|Исходный идентификатор вызова участника, куда следует переключить.|
+|clientContext|String.|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа.

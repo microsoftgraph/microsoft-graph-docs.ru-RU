@@ -1,12 +1,13 @@
 ---
 title: Получение объекта deviceManagement
 description: Чтение свойств и связей объекта deviceManagement.
-ms.openlocfilehash: a268a44d37f405bc5ee31c8d2f9a02df9085e5ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 65b13da27c16d6b4d9976eb2f7d0d326dfd872c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026464"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334343"
 ---
 # <a name="get-devicemanagement"></a>Получение объекта deviceManagement
 
@@ -14,7 +15,7 @@ ms.locfileid: "27026464"
 
 Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Разрешение&nbsp;тип&nbsp;(с&nbsp;рабочего процесса) | Разрешения (в порядке убывания привилегий) |
@@ -51,7 +52,7 @@ GET /deviceManagement
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -69,8 +70,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

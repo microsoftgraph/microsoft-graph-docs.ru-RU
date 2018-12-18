@@ -1,12 +1,13 @@
 ---
 title: Получение беседы
 description: Получение свойств и связей объекта беседы.
-ms.openlocfilehash: 33e38e321ff948f55213646cb9349db85176e989
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 7f5beb49140c898a4afeb059402c06fdade5f7ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079362"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333952"
 ---
 # <a name="get-conversation"></a>Получение беседы
 
@@ -52,8 +53,7 @@ GET /groups/{id}/conversations/{id}
 GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса resourceReference
 description: Сложный тип, содержащий свойства средствами.
-ms.openlocfilehash: d171151a1c3547aa6863a7f70cc3a42ddec13e5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 2f1a44412eebbb7a74895c12db9a07696d6ee409
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079616"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363622"
 ---
 # <a name="resourcereference-resource-type"></a>Тип ресурса resourceReference
 
@@ -28,8 +29,8 @@ ms.locfileid: "27079616"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство      | Тип      | Description  |
+| Свойство      | Тип      | Описание  |
 | ------------- |-----------| -------------|
-| webUrl        | String    | URL-адрес, приводя к указанного элемента. |
-| id            | String    | Уникальный идентификатор элемента.           |
-| type          | String    | Строковое значение, которое можно использовать для классификации элемента, например, «microsoft.graph.driveItem» |
+| webUrl        | Строка    | URL-адрес, приводя к указанного элемента. |
+| id            | Строка    | Уникальный идентификатор элемента.           |
+| type          | Строка    | Строковое значение, которое можно использовать для классификации элемента, например, «microsoft.graph.driveItem» |

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления secureAssessmentAccountType
 description: Тип учетных записей, которые разрешены для Windows10SecureAssessment ConfigurationAccount.
-ms.openlocfilehash: 97dc60d8d15e90c43923d939cf957e1092b2cc45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: faf504410336bdc491c29b676aaa1b57cd0a5ee2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080883"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362225"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>Тип перечисления secureAssessmentAccountType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080883"
 
 Тип учетных записей, которые разрешены для Windows10SecureAssessment ConfigurationAccount.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |azureADAccount|0|Указывает учетную запись Azure AD в формате AzureAD\ username@tenant.com.|
 |domainAccount|1|Указывает учетную запись домена в формате "домен\пользователь" или user@domain.com.|

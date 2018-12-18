@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationFeedback
 description: Отзывы учитель студента. Это свойство представляет часть текста обратной связи, а также who.
-ms.openlocfilehash: 4d9a08744ac818b4aadfac965a53655d498923ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 934d1ec104133257bb1b767e8922c2379e3fd11a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074809"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363594"
 ---
 # <a name="educationfeedback-resource-type"></a>Тип ресурса educationFeedback
 
@@ -16,7 +17,7 @@ ms.locfileid: "27074809"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |feedbackBy|[identitySet](identityset.md)|Пользователь, создавший свои отзывы и предложения.|
 |feedbackDateTime|DateTimeOffset|Момент времени, когда был задан свои отзывы и предложения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|

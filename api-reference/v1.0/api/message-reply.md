@@ -1,12 +1,13 @@
 ---
 title: 'message: reply'
 description: Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".
-ms.openlocfilehash: cf996372630d9e559dca00b48e35f4cef50cd2c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e52dc393edf92f4fecfda93166392be0249ca4c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027881"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363629"
 ---
 # <a name="message-reply"></a>message: reply
 
