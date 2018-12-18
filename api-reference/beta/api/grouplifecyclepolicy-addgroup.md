@@ -1,12 +1,13 @@
 ---
 title: 'groupLifecyclePolicy: addGroup'
 description: Добавляет группу к политике жизненного цикла.
-ms.openlocfilehash: 59f49429f65112488f42727cdbb46fc0a4b87800
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 57af4383c471832acbffb4136a057c91a1d061d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079948"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327911"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 

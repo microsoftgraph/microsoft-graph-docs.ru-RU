@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления ratingAustraliaTelevisionType
 description: Метки TV оценки содержимого в Австралии
-ms.openlocfilehash: add9febca378dc2be766c0013ace5ed0987578fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff2f6292638f8a7be451329ae24c3b479d1a772b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074705"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326693"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>Тип перечисления ratingAustraliaTelevisionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27074705"
 
 Метки TV оценки содержимого в Австралии
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить всем TV показывает контента|
 |allBlocked|1|Не допускайте использование Любого показывает контента|

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления weeklySchedule
 description: Возможные значения для задание каждую неделю.
-ms.openlocfilehash: 67534cbe21782b64e995d9bf48d9abbde778f142
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c42a0e596fd30c23ebaf962d3648c8d80d77e0a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077988"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358375"
 ---
 # <a name="weeklyschedule-enum-type"></a>Тип перечисления weeklySchedule
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077988"
 
 Возможные значения для задание каждую неделю.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|User Defined, значение по умолчанию, без цели.|
 |повседневных|1|Каждый день.|

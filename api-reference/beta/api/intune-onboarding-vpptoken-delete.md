@@ -1,12 +1,13 @@
 ---
 title: Удалить vppToken
 description: Удаляет vppToken.
-ms.openlocfilehash: 7ff527010292ba42618d523b32b8b30133f7fdc0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f81bc4ab923e2a7a105fa9ee598e0ef7d6f8acaf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077616"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333560"
 ---
 # <a name="delete-vpptoken"></a>Удалить vppToken
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/vppTokens/{vppTokenId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenI
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

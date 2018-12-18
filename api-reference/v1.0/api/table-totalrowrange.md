@@ -1,12 +1,13 @@
 ---
 title: 'Table: TotalRowRange'
 description: Получает объект диапазона, связанный со строкой итогов таблицы.
-ms.openlocfilehash: aa0eda8306dbe996419862be0fe9431355f9df5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2e71abde4073888b80d3ef8f3603e8d5ed8b9da1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024611"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339580"
 ---
 # <a name="table-totalrowrange"></a>Table: TotalRowRange
 
@@ -54,8 +55,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

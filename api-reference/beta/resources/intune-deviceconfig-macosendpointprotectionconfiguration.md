@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса macOSEndpointProtectionConfiguration
 description: Профиль конфигурации защиты MacOS конечной точки.
-ms.openlocfilehash: 046841fe7c5eb694ae64d6907fc945d220c8509f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3cf6e9fd4c46eaef61e6f539be145a145981f3e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081264"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326273"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>Тип ресурса macOSEndpointProtectionConfiguration
 
@@ -30,19 +31,19 @@ ms.locfileid: "27081264"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Система и режим конфиденциальности, который определяет, какие приложения расположений загрузки может выполняться на устройстве macOS. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|gatekeeperBlockOverride|Логический|Если параметр имеет значение true, пользователь переопределяют для Привратник будут отключены.|
-|firewallEnabled|Логический|Является ли брандмауэра должна быть включена или нет.|
-|firewallBlockAllIncoming|Логический|Соответствующий параметр «Блокировать все входящие подключения».|
-|firewallEnableStealthMode|Логический|Соответствует «Включить режим скрытое».|
+|gatekeeperBlockOverride|Boolean.|Если параметр имеет значение true, пользователь переопределяют для Привратник будут отключены.|
+|firewallEnabled|Boolean.|Является ли брандмауэра должна быть включена или нет.|
+|firewallBlockAllIncoming|Boolean.|Соответствующий параметр «Блокировать все входящие подключения».|
+|firewallEnableStealthMode|Boolean.|Соответствует «Включить режим скрытое».|
 |firewallApplications|[macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md) коллекции|Список приложений с помощью параметров брандмауэра. Параметры брандмауэра для приложений не в этом списке определяются пользователем. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи

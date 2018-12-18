@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceCompliancePolicy
 description: 'Это базовый класс для политик обеспечения соответствия требованиям. Такие политики предназначаются для определенной платформы. Отдельные политики обеспечения соответствия требованиям наследуются от этого класса. '
-ms.openlocfilehash: 4ab90446fea85389c74b05847bb5d4d6a21a3428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e412a11331d2ae79ee4e1885150cbb1de006452b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027300"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328695"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Тип ресурса deviceCompliancePolicy
 
@@ -24,11 +25,11 @@ ms.locfileid: "27027300"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|описание|String|Указанное администратором описание конфигурации устройства.|
+|описание|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи

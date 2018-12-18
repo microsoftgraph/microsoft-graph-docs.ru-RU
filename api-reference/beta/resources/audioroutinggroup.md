@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса audioRoutingGroup
 description: Аудио группы маршрутизации хранит закрытый звука маршрута между участниками в многосторонней беседе. Источник — это участник самого и приемники являются подмножеством других участников в многосторонней беседе.
-ms.openlocfilehash: 98c58e39773567f13a2723e94c0413efd2841cd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 0e1db47963576e728a07a6b99ecff09a0f4640d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075166"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344473"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Тип ресурса audioRoutingGroup
 
@@ -21,16 +22,16 @@ ms.locfileid: "27075166"
 | Метод                                                  | Возвращаемый тип                               | Описание                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Получение audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Чтение свойства и связи объекта audioRoutingGroup.|
-| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Обновление списка получателей.                       |
+| [обновление](../api/audioroutinggroup-update.md).            | [audioRoutingGroup](audioroutinggroup.md) | Обновление списка получателей.                       |
 | [Delete](../api/audioroutinggroup-delete.md)            | Нет                                      | Удаление звука группы маршрутизации.              |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип              | Описание                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Только для чтения. Сервер, созданный.                                         |
+| id            | Строка            | Только для чтения. Сервер, созданный.                                         |
 | Приемники     | Коллекция строк | Список получения участников идентификаторы.                                   |
-| routingMode   | String            | Режим группы маршрутизации.  Возможные значения: `oneToOne`, `multicast`.   |
+| routingMode   | String.            | Режим группы маршрутизации.  Возможные значения: `oneToOne`, `multicast`.   |
 | sources       | Коллекция строк | Список идентификаторов участников источника.                                      |
 
 > **Примечание:** Режим маршрутизации определяет ограничения на доступ к источникам и приемников. Поддерживаются только следующие группы маршрутизации.

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления officeSuiteInstallProgressDisplayLevel
 description: Перечисление для определения уровня отображения для пользовательского интерфейса программы установки ход выполнения установки на устройстве.
-ms.openlocfilehash: 7f3e847ef8e2b0bddcde907283d81cb8549c199e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e8e8d697df8791fda9734f7c6ffef4ba9d8156f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079081"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328919"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>Тип перечисления officeSuiteInstallProgressDisplayLevel
 
@@ -16,9 +17,9 @@ ms.locfileid: "27079081"
 
 Перечисление для определения уровня отображения для пользовательского интерфейса программы установки ход выполнения установки на устройстве.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Н/Д|
+|none|0|Н/Д|
 |Полный|1|Н/Д|
 
 

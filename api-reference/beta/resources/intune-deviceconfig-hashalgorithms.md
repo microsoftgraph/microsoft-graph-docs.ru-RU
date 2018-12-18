@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления hashAlgorithms
 description: Параметры алгоритм хэширования.
-ms.openlocfilehash: cfdd043c2171b61ad6337e09eebab9bb22dea19d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eb02601cb1c0aa0782c05d42be37ec7c527f7c62
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076735"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328121"
 ---
 # <a name="hashalgorithms-enum-type"></a>Тип перечисления hashAlgorithms
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076735"
 
 Параметры алгоритм хэширования.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |SHA1|1|Алгоритм хэширования SHA-1.|
 |SHA2|2|Алгоритм хэширования SHA-2.|

@@ -1,12 +1,13 @@
 ---
 title: Сообщения об ошибках API безопасности Microsoft Graph
 description: Ошибки в API-Интерфейс безопасности Microsoft Graph возвращаются с помощью стандартных код состояния HTTP 206 Частичное контента и являются через заголовок предупреждения.
-ms.openlocfilehash: 9ac124f763e7668471f89beffb968cb883217e80
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: Preetikr
+ms.openlocfilehash: 6685d69f202696e33422d9bd3a877cba02fd10dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184499"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329654"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Сообщения об ошибках API безопасности Microsoft Graph
 

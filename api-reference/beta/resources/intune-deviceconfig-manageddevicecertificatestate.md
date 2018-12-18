@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedDeviceCertificateState
 description: Н/Д
-ms.openlocfilehash: 17128f812eca82f01d6d2fa632f11c6640d18fc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f26eb40d371c59a65f58bc87ac5a24d38f47a959
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081488"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358389"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>Тип ресурса managedDeviceCertificateState
 
@@ -27,7 +28,7 @@ ms.locfileid: "27081488"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Использование ключей. Возможные значения: `keyEncipherment`, `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Действия подразделений. Возможные значения: `days`, `months`, `years`.|
@@ -36,20 +37,20 @@ ms.locfileid: "27081488"
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имени субъекта. Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Формат альтернативное имя субъекта. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отмените состояние. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|String|Отображаемое имя сертификата профилей|
+|certificateProfileDisplayName|String.|Отображаемое имя сертификата профилей|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userDisplayName|String|Отображаемое имя пользователя|
 |certificateExpirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Последнее изменение состояния выдачи сертификатов|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Последнее изменение состояния выдачи сертификатов|
-|certificateIssuer|String|Издателя|
-|certificateThumbprint|String|Отпечаток|
-|серийный номер сертификата|String|Серийный номер|
+|certificateIssuer|String.|Издателя|
+|certificateThumbprint|String.|Отпечаток|
+|серийный номер сертификата|String.|Серийный номер|
 |certificateKeyLength|Int32|Длина ключа|
-|certificateEnhancedKeyUsage|String|Расширенного использования ключа|
+|certificateEnhancedKeyUsage|String.|Расширенного использования ключа|
 |certificateValidityPeriod|Int32|Срок действия|
-|certificateSubjectNameFormatString|String|Строку формата имени субъекта для форматов имя настраиваемой темы|
-|certificateSubjectAlternativeNameFormatString|String|Строку формата альтернативное имя субъекта для настраиваемых форматов|
+|certificateSubjectNameFormatString|String.|Строку формата имени субъекта для форматов имя настраиваемой темы|
+|certificateSubjectAlternativeNameFormatString|String.|Строку формата альтернативное имя субъекта для настраиваемых форматов|
 |certificateIssuanceDateTime|DateTimeOffset|Дата выдачи|
 |certificateErrorCode|Int32|Код ошибки|
 

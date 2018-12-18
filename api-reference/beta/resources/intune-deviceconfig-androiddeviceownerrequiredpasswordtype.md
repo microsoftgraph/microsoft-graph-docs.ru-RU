@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidDeviceOwnerRequiredPasswordType
 description: Android политики устройства владельцем требуется тип пароль.
-ms.openlocfilehash: 16f4bc59f2b4fa9f37989d1bc1978cdfacb2892c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0903bbf5720350b35bf7e5fe5c9a5f9584810c1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079221"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330228"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>Тип перечисления androidDeviceOwnerRequiredPasswordType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079221"
 
 Android политики устройства владельцем требуется тип пароль.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение по умолчанию устройства, без цели.|
 |Обязательный|1|Необходимо задать пароль, но не существует ограничений на тип.|

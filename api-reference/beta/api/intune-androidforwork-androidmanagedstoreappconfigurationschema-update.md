@@ -1,12 +1,13 @@
 ---
 title: Обновление androidManagedStoreAppConfigurationSchema
 description: Обновление свойства объекта androidManagedStoreAppConfigurationSchema.
-ms.openlocfilehash: e762a909db958b62d1128ff1dae178181124990c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcdacb235de85392ab39fb410b6b936fd7ce0195
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075951"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362631"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>Обновление androidManagedStoreAppConfigurationSchema
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManag
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,7 +49,7 @@ PATCH /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManag
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
-|exampleJson|Двоичный|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
+|exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
 |schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) коллекции|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме.|
 
 
@@ -92,8 +93,7 @@ Content-length: 725
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

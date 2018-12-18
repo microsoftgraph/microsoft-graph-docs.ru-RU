@@ -1,12 +1,13 @@
 ---
 title: Создание объекта enrollmentTroubleshootingEvent
 description: Создание объекта enrollmentTroubleshootingEvent.
-ms.openlocfilehash: 1c9e36f1cabdbe059bca467f8e1099b2c01c487c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ff50de23b6fd39e8e27202fd9b72c690e02aee4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025760"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331796"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>Создание объекта enrollmentTroubleshootingEvent
 
@@ -34,7 +35,7 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -86,8 +87,7 @@ Content-length: 509
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

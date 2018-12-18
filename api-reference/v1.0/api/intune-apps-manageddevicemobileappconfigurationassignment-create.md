@@ -1,12 +1,13 @@
 ---
 title: Создание объекта managedDeviceMobileAppConfigurationAssignment
 description: Создание объекта managedDeviceMobileAppConfigurationAssignment.
-ms.openlocfilehash: 4b479f7c0f93e41aa8691749925203652d2dcc9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 998ba77acbd34a9aed605502ad833b708a79977d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025530"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330123"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>Создание объекта managedDeviceMobileAppConfigurationAssignment
 
@@ -34,7 +35,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -70,8 +71,7 @@ Content-length: 185
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

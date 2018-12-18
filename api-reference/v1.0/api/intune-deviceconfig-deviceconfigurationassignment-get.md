@@ -1,12 +1,13 @@
 ---
 title: Get deviceConfigurationAssignment
 description: Чтение свойств и связей объекта deviceConfigurationAssignment.
-ms.openlocfilehash: 231d58fc4988e37ae02cc6efa599481aa490c4e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d52361f20f315fa8486d5b4f2baf4f2b9d2d3d15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329871"
 ---
 # <a name="get-deviceconfigurationassignment"></a>Get deviceConfigurationAssignment
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{devi
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса unsupportedDeviceConfigurationDetail
 description: Описание причины сущности не поддерживается.
-ms.openlocfilehash: d64d6aedf5da0f3cd79e2582d84fa4f19ea7ccfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4cccf49366a803e5f964605a4dc4ba7f56707823
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076388"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344053"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>Тип ресурса unsupportedDeviceConfigurationDetail
 
@@ -16,10 +17,10 @@ ms.locfileid: "27076388"
 
 Описание причины сущности не поддерживается.
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |message|String|Сообщение о том, почему сущности не поддерживается.|
-|propertyName|String|Если сообщение относится к определенное свойство в исходной сущности, а затем имя этого свойства.|
+|propertyName|String.|Если сообщение относится к определенное свойство в исходной сущности, а затем имя этого свойства.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,12 +1,13 @@
 ---
 title: 'workbookRangeView: range'
 description: Возвращение диапазона, связанного с ресурсом rangeView.
-ms.openlocfilehash: 7210501eaad8b99eb57f002292fcbef6a2f4c73c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 22758e61f22a4275a80bf66089beaac427b2c12c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082555"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333826"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 
@@ -55,8 +56,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Получение объекта ChartGridlines
 description: Получение свойств и связей объекта chartgridlines.
-ms.openlocfilehash: 8214d209e439f8a6d4d6a866b51c04d9a06e8ff6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: aae489ec766f7a3f03407915ad2a01f60ca13f8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076622"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343514"
 ---
 # <a name="get-chartgridlines"></a>Получение объекта ChartGridlines
 
@@ -55,8 +56,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

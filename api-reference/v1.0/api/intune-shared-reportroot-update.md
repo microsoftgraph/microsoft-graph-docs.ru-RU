@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта reportRoot
 description: Обновление свойств объекта reportRoot.
-ms.openlocfilehash: a376cd399fbcb36b369839dc214b3e792bc8d104
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a8beb97dc236ec9a4db4584619184613268ce071
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026317"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326343"
 ---
 # <a name="update-reportroot"></a>Обновление объекта reportRoot
 
@@ -36,7 +37,7 @@ PATCH /reports
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -66,8 +67,7 @@ Content-length: 2
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

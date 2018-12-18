@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления vpnOnDemandRuleConnectionDomainAction
 description: VPN по запросу подключения домена действие правила.
-ms.openlocfilehash: 2674ba942b4740f546fb585dbacad6c577222c75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 676204205b241214bcda3bdf89444a23d06c88ab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082303"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359740"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>Тип перечисления vpnOnDemandRuleConnectionDomainAction
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082303"
 
 VPN по запросу подключения домена действие правила.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |connectIfNeeded|0|Подключение, если это необходимо.|
 |neverConnect|1|Никогда не подключаются.|

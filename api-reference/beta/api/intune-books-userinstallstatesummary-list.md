@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов userInstallStateSummary
 description: Список свойств и связей объектов userInstallStateSummary.
-ms.openlocfilehash: 19f827fb576273e18f9bce49471d5ffdb23e7963
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe0c423ef85f2b9492ffd22fae1340773ccaf627
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078155"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362680"
 ---
 # <a name="list-userinstallstatesummaries"></a>Перечисление объектов userInstallStateSummary
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedE
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса ChartLegend
 description: Представляет легенду в диаграмме.
-ms.openlocfilehash: d01eee45245d17fb142ddb75b70a6cde6a89213c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 67a55f0286bcf57157cd9912bb03ba0bd6506517
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081548"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326406"
 ---
 # <a name="chartlegend-resource-type"></a>Тип ресурса ChartLegend
 
@@ -20,7 +21,7 @@ ms.locfileid: "27081548"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartLegend](../api/chartlegend-get.md) | [ChartLegend](chartlegend.md) |Чтение свойств и связей объекта chartLegend.|
-|[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md) |Обновление объекта ChartLegend. |
+|[обновление](../api/chartlegend-update.md). | [ChartLegend](chartlegend.md) |Обновление объекта ChartLegend. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

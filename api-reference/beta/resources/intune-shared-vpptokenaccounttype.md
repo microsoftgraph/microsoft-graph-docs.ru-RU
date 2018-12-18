@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления vppTokenAccountType
 description: Возможные типы маркер покупки программы корпоративного Apple.
-ms.openlocfilehash: 511b0f510593ab9aa00cafd73bf9fbea6d435ac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f4f7caa3deaf11aaa9fe02935b32bbe3e1a0e9e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325048"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>Тип перечисления vppTokenAccountType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080238"
 
 Возможные типы маркер покупки программы корпоративного Apple.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |Business|0|Программа покупки корпоративного Apple маркер, связанный с приложения business.|
 |образование|1|Программа покупки корпоративного Apple маркер, связанный с помощью программы обучения.|

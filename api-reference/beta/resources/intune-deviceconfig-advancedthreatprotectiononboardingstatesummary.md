@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса advancedThreatProtectionOnboardingStateSummary
 description: Windows Защитник расширенной угроз защиты входящая состояние Сводка по учетной записи.
-ms.openlocfilehash: 8d870d51a7bb39bcc06472febd7d85f63b993a0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3a31d489374b87469d2ed6fb87bb70f8d89d710c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080663"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359173"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Тип ресурса advancedThreatProtectionOnboardingStateSummary
 
@@ -24,7 +25,7 @@ Windows Защитник расширенной угроз защиты вход
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор.|
+|id|Строка|Уникальный идентификатор.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -35,7 +36,7 @@ Windows Защитник расширенной угроз защиты вход
 |notAssignedDeviceCount|Int32|Число не назначенный устройств|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |advancedThreatProtectionOnboardingDeviceSettingStates|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) коллекции|Н/Д|
 

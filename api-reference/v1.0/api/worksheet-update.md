@@ -1,12 +1,13 @@
 ---
 title: Обновление листа
 description: Обновление свойств объекта листа.
-ms.openlocfilehash: 893bfb8ea9f5f6852550f072ea43421709705e2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 249fb16fea3c7086411bfa9f11a2ea23926b4b5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024457"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344081"
 ---
 # <a name="update-worksheet"></a>Обновление листа
 
@@ -62,8 +63,7 @@ Content-length: 100
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

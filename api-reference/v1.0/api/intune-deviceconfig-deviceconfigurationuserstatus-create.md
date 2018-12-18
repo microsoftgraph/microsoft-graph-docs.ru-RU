@@ -1,12 +1,13 @@
 ---
 title: Создание объекта deviceConfigurationUserStatus
 description: Создание объекта deviceConfigurationUserStatus.
-ms.openlocfilehash: 27b46c94a34417c3c4deb09bc45982dc92c99ee7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c36b571719abfe434d7b0569f363ebc0cdb09a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024684"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332097"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>Создание объекта deviceConfigurationUserStatus
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,7 +46,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userDisplayName|String|Имя пользователя в объекте DevicePolicyStatus.|
 |devicesCount|Int32|Количество устройств для этого пользователя.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
@@ -76,8 +77,7 @@ Content-length: 290
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

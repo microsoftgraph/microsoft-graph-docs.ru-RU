@@ -1,12 +1,13 @@
 ---
 title: 'Chart: setData'
 description: Сбрасывает исходные данные для диаграммы.
-ms.openlocfilehash: 9996951ba24e8a473a1e23359c76506595f04c58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e20d7c8f66d89ba07e5c0c04d7ca927bad9470eb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324698"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 

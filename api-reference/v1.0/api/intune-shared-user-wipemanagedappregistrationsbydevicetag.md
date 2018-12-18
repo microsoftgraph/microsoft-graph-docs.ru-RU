@@ -1,12 +1,13 @@
 ---
 title: Действие wipeManagedAppRegistrationsByDeviceTag
 description: Стирает данные о регистрации приложений с указанным тегом приложения.
-ms.openlocfilehash: d6f56fa50b3162ecaebc0bb1adb02af3b4b0e9f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 227d702d217669215894c6e6c0cfd3fa67075277
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326385"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>Действие wipeManagedAppRegistrationsByDeviceTag
 
@@ -37,7 +38,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -70,8 +71,7 @@ Content-length: 39
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ``` http
 HTTP/1.1 204 No Content

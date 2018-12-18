@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса RangeBorder
 description: Представляет границу объекта.
-ms.openlocfilehash: 30d5548ba867dc652c700985d65a6db01ce8bc99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c6166e1cfebc0759ad25fda5c0e8ec471af07b11
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025440"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359152"
 ---
 # <a name="rangeborder-resource-type"></a>Тип ресурса RangeBorder
 
@@ -18,7 +19,7 @@ ms.locfileid: "27025440"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта RangeBorder](../api/rangeborder-get.md) | [WorkbookRangeBorder](rangeborder.md) |Чтение свойств и связей объекта rangeBorder.|
-|[Update](../api/rangeborder-update.md) | [WorkbookRangeBorder](rangeborder.md) |Обновление объекта RangeBorder. |
+|[обновление](../api/rangeborder-update.md). | [WorkbookRangeBorder](rangeborder.md) |Обновление объекта RangeBorder. |
 |[List](../api/rangeborder-list.md) | [WorkbookRangeBorder](rangeborder.md) коллекции |Получение коллекции объектов rangeBorder. |
 |[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](rangeborder.md)|Возвращает объект границы по его индексу.|
 

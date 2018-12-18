@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceComplianceUserOverview
 description: Н/Д
-ms.openlocfilehash: ab4048bc8287c3ec225954c80009e69806480e4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6505cf0d563f129d4a683026f5dc828310c32792
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080834"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359390"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>Тип ресурса deviceComplianceUserOverview
 
@@ -24,7 +25,7 @@ ms.locfileid: "27080834"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
 |notApplicableCount|Int32|Число пользователей не применим|
 |successCount|Int32|Количество успешных пользователей.|

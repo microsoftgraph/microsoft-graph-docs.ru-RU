@@ -1,12 +1,13 @@
 ---
 title: Вкладка "обновления"
 description: Обновляет свойства указанной вкладки.
-ms.openlocfilehash: 4accb02de6ae4bc7a30a69ca64ab536c7f68bf77
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 6594585721ddbe57ea56229ae37ebb85f9dfff66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222501"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359166"
 ---
 # <a name="update-tab"></a>Вкладка "обновления"
 
@@ -41,7 +42,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [вкладки](../resources/teamstab.md) .
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -57,7 +58,7 @@ Content-length: 211
   "name": "My Contoso Tab - updated"
 }
 ```
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json

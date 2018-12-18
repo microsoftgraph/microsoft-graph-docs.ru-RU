@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsManagementAppHealthSummary
 description: Содержит свойства для Сводка работоспособности приложения управления Windows.
-ms.openlocfilehash: dddcb40a0a66446ab6e87a2e684c1dbf0df547fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5717f96cbac534f2726ccf7bcfcbdb54d4c17b28
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078446"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326231"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>Тип ресурса windowsManagementAppHealthSummary
 
@@ -24,7 +25,7 @@ ms.locfileid: "27078446"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности сводки работоспособности приложения управления, Windows.|
+|id|Строка|Ключ сущности сводки работоспособности приложения управления, Windows.|
 |healthyDeviceCount|Int32|Счетчик работоспособном устройства.|
 |unhealthyDeviceCount|Int32|Счетчик неработоспособные устройства.|
 |unknownDeviceCount|Int32|Счетчик неизвестные устройства.|

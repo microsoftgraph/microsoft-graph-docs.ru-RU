@@ -1,12 +1,13 @@
 ---
 title: 'вызов: cancelMediaProcessing'
 description: Отменяет с мультимедиа для всех выполняемых любых операций PlayPrompt или записи.
-ms.openlocfilehash: 27a978a28c94cc161e2d62137c5afc0e9ff085df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 9d7432670030ed1505c9be95a801e6c453087df3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075314"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328275"
 ---
 # <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075314"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложения                            | Отсутствуют.                                       |
+| Приложение                            | Отсутствуют.                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,10 +39,10 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр      | Тип    | Description                                                    |
+| Параметр      | Тип    | Описание                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | Логический | Флаг, указывающий, следует ли остановить все операции или текущий. |
-| clientContext  | String  | Контекст клиента.                                            |
+| all            | Boolean. | Флаг, указывающий, следует ли остановить все операции или текущий. |
+| clientContext  | String.  | Контекст клиента.                                            |
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.

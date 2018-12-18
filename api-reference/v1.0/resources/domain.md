@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса domain
 description: Представляет домен, связанный с клиентом.
-ms.openlocfilehash: c3a130f00afd3c9136b8ae8238f37cf99d5a6fc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: f548e54bd1aaf53d2850ffdb30f18d38644e257c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024901"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326203"
 ---
 # <a name="domain-resource-type"></a>Тип ресурса domain
 
@@ -46,12 +47,12 @@ ms.locfileid: "27024901"
 |:---------------|:--------|:----------|
 |authenticationType|Строка| Указывает тип аутентификации, настроенный для домена. Возможные значения: *Managed* и *Federated*.<br> *Managed* означает управляемый домен, аутентификацию пользователей в котором выполняет Azure AD.<br>*Federated* означает, что аутентификацию выполняет поставщик удостоверений, например локальная служба Active Directory клиента, через службы федерации Active Directory (AD FS). Не допускает значение null. |
 |availabilityStatus|Строка| Это свойство всегда имеет значение null, когда не используется действие [verify](../api/domain-verify.md). Когда используется действие [verify](../api/domain-verify.md), в ответе возвращается объект **domain**. Свойство **availabilityStatus** объекта **domain** в ответе — либо *AvailableImmediately*, либо *EmailVerifiedDomainTakeoverScheduled*.|
-|id|String| Полное имя домена. Ключ, неизменяемое, не допускает значение null, уникальное. |
-|isAdminManaged|Логический| Свойство имеет значение false, если управление записью DNS домена делегировано в Office 365. В противном случае возвращается значение true. Не допускает значение null. |
+|id|Строка| Полное имя домена. Ключ, неизменяемое, не допускает значение null, уникальное. |
+|isAdminManaged|Boolean| Свойство имеет значение false, если управление записью DNS домена делегировано в Office 365. В противном случае возвращается значение true. Не допускает значение null. |
 |isDefault|Логический| Значение true, если это домен по умолчанию, который используется для создания пользователя. У компании может быть только один домен по умолчанию. Не допускает значение null. |
 |isInitial|Логический| Значение true, если это исходный домен, созданный веб-службами Майкрософт (companyname.onmicrosoft.com). У компании может быть только один исходный домен. Не допускает значение null. |
-|isRoot|Логический| Значение true, если это проверенный корневой домен. Значение false, если домен является поддоменом или не проверен. Не допускает значение null. |
-|isVerified|Логический| Значение true, если право собственности на домен подтверждено. Не допускает значение null. |
+|isRoot|Boolean| Значение true, если это проверенный корневой домен. Значение false, если домен является поддоменом или не проверен. Не допускает значение null. |
+|isVerified|Boolean| Значение true, если право собственности на домен подтверждено. Не допускает значение null. |
 |supportedServices|Коллекция String| Возможности, назначенные домену.<br><br>Могут включать ноль, одно или несколько из следующих значений: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*.<br><br> Значения, которые можно добавлять и удалять с помощью API Graph: *Email*, *OfficeCommunicationsOnline*, *Yammer*.<br>Не допускает значение null.|
 |state|[domainState](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
 

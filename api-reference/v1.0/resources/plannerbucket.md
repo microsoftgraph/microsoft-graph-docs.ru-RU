@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerBucket
 description: ) для выполнения задач в плане в Office 365. Она содержится в plannerPlan и можно создать свою коллекцию plannerTasks.
-ms.openlocfilehash: 44bce1606fa7561bc52098fe0e6ba8f70d737a58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 09c9fab569a819f0545e5c851da12be98b45b150
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025443"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331446"
 ---
 # <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
@@ -27,9 +28,9 @@ ms.locfileid: "27025443"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор сегмента. Это 28 знаков без учета регистра. [Формат](planner-identifiers-disclaimer.md) проверяются на службу.|
+|id|Строка| Только для чтения. Идентификатор сегмента. Это 28 знаков без учета регистра. [Формат](planner-identifiers-disclaimer.md) проверяются на службу.|
 |name|Строка|Имя сегмента.|
-|orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
+|orderHint|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |planId|Строка|Идентификатор плана, к которому относится сегмент.|
 
 ## <a name="relationships"></a>Связи

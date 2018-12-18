@@ -1,12 +1,13 @@
 ---
 title: 'вызов: subscribeToTone'
 description: " Телефон."
-ms.openlocfilehash: c3793931c2f06e54cdac278f0f0539b42d7e622c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 41c72cdeeb1017313f9f64c4bd268a2184229984
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079355"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328303"
 ---
 # <a name="call-subscribetotone"></a>вызов: subscribeToTone
 
@@ -21,7 +22,7 @@ ms.locfileid: "27079355"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложения     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,9 +39,9 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр      | Тип    | Description |
+| Параметр      | Тип    | Описание |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Контекст клиента. |
+| clientContext  | String.  | Контекст клиента. |
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.

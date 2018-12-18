@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса outlookTask
 description: 'Элемент Outlook, можно отслеживать рабочего элемента. '
-ms.openlocfilehash: c197591d40b4c65e9a7ab5e047e9a93c522e6400
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075793"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335233"
 ---
 # <a name="outlooktask-resource-type"></a>Тип ресурса outlookTask
 
@@ -36,7 +37,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Получите свойства и связи задачи Outlook в почтовом ящике пользователя.|
-|[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Измените записываемые свойства задачи Outlook. |
+|[обновление](../api/outlooktask-update.md). | [outlookTask](outlooktask.md) |Измените записываемые свойства задачи Outlook. |
 |[Delete](../api/outlooktask-delete.md) | Нет |Удаление указанной задачи в почтовом ящике пользователя. |
 |[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md) коллекции|Завершить задачу Outlook, которая устанавливает для свойства **completedDateTime** значение текущей датой и свойство **состояние** для `completed`.|
 |**Вложения**| | |
@@ -51,26 +52,26 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|String|Имя пользователя, которому назначена задача.|
+|assignedTo|String.|Имя пользователя, которому назначена задача.|
 |body|[itemBody](itembody.md)|Основная задача, который обычно содержит сведения о задаче. Обратите внимание на то, что поддерживается только тип HTML-код.|
 |categories|Коллекция String|Категории, связанные с задачей. Свойство **displayName** [outlookCategory](outlookcategory.md) , определяемые соответствует каждой категории.|
-|changeKey|String|Версия задачи.|
+|changeKey|Строка|Версия задачи.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанный часовой пояс, окончания задачи.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства используется формат ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанный часовой пояс, которую требуется завершения задачи.|
-|hasAttachments|Логический|Значение true, если у задачи вложения.|
-|id|String|Уникальный идентификатор задачи. Только для чтения.|
+|hasAttachments|Boolean|Значение true, если у задачи вложения.|
+|id|Строка|Уникальный идентификатор задачи. Только для чтения.|
 |importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Значение true, если оповещение установлено значение Напоминать пользователю задачи.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|owner|String|Имя человека, создавшего задачу.|
-|parentFolderId|String|Уникальный идентификатор родительской папки задач.|
+|owner|Строка|Имя человека, создавшего задачу.|
+|parentFolderId|Строка|Уникальный идентификатор родительской папки задач.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Шаблон повторения для задачи.|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время оповещения напоминание задачи, будет выполнена.|
 |sensitivity|string|Указывает уровень конфиденциальности для задачи. Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе после начала задачи.|
 |status|string|Указывает состояние или хода выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|subject|String|Краткое описание или название задачи.|
+|subject|Строка|Краткое описание или название задачи.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

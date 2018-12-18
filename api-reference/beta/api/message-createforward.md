@@ -1,12 +1,13 @@
 ---
 title: 'message: createForward'
 description: 'Создание прямого черновик сообщения добавить примечание или обновить все свойства сообщения  '
-ms.openlocfilehash: 8e7710871000222d1281a274ee270885097351f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 6630bf8486f3fdbc53106ef334aeb23aa36f93dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078752"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329780"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -85,8 +86,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

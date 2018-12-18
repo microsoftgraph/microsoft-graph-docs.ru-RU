@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта applePushNotificationCertificate
 description: Обновление свойств объекта applePushNotificationCertificate.
-ms.openlocfilehash: 7fbb7db93290fb6f455bdcca3053c6f3affb1375
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fb89ee3eb12e33dc2f1d7fc968aee8688d7aff99
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077101"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329717"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Обновление объекта applePushNotificationCertificate
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificateUploadStatus|String|Состояние загрузки сертификата.|
-|certificateUploadFailureReason|String|Не удалось причине отправки сертификата.|
+|certificateUploadStatus|String.|Состояние загрузки сертификата.|
+|certificateUploadFailureReason|String.|Не удалось причине отправки сертификата.|
 |certificate|String|Н/Д|
 
 
@@ -81,8 +82,7 @@ Content-length: 409
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Получение объекта onPremisesConditionalAccessSettings
 description: Чтение свойств и связей объекта onPremisesConditionalAccessSettings.
-ms.openlocfilehash: 3cc90209a55fc051266f29decfd21a25ce43aa44
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 630c7edc640932f2c1cd651e5c54e8fc15c1b1dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325804"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>Получение объекта onPremisesConditionalAccessSettings
 
@@ -39,7 +40,7 @@ GET /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -57,8 +58,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/conditionalAccessSettings
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

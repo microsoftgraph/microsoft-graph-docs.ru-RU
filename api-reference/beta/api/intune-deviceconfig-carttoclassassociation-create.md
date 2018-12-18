@@ -1,12 +1,13 @@
 ---
 title: Создание cartToClassAssociation
 description: Создание нового объекта cartToClassAssociation.
-ms.openlocfilehash: 87e4a21a998e4226d429bfd92fca5560b9d716e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ed7ef088acca7908ece1e0b5e61797bb54a2e9b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081819"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330655"
 ---
 # <a name="create-carttoclassassociation"></a>Создание cartToClassAssociation
 
@@ -36,7 +37,7 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,12 +48,12 @@ POST /deviceManagement/cartToClassAssociations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |version|Int32|Версия CartToClassAssociation.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
-|описание|String|Admin, предоставляемые описание CartToClassAssociation.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|описание|Строка|Admin, предоставляемые описание CartToClassAssociation.|
 |deviceCartIds|Коллекция String|Идентификаторы корзины устройства необходимо сопоставить с классы.|
 |classroomIds|Коллекция String|Идентификаторы аудиторий необходимо сопоставить с устройства корзины.|
 
@@ -85,8 +86,7 @@ Content-length: 335
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

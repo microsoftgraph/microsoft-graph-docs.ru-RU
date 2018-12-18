@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidWorkProfileDefaultAppPermissionPolicyType
 description: Android рабочих профилей по умолчанию приложения политики тип разрешения.
-ms.openlocfilehash: f0d57bd8f21d09aef2e3f12fda5a9e05696393bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c038adc67a83b98885af1b46c4c29c45aaaf0ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079632"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327183"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>Тип перечисления androidWorkProfileDefaultAppPermissionPolicyType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079632"
 
 Android рабочих профилей по умолчанию приложения политики тип разрешения.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение по умолчанию устройства, без цели.|
 |строки|1|Запрос.|

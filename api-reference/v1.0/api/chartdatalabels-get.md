@@ -1,12 +1,13 @@
 ---
 title: Получение объекта ChartDataLabels
 description: Получение свойств и связей объекта chartdatalabels.
-ms.openlocfilehash: 0a0b90d6424b85dd0013a9e9da8b697363f7e4f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ff56c61534c2f1a599c2b7d66fc46b57c489be1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026076"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329052"
 ---
 # <a name="get-chartdatalabels"></a>Получение объекта ChartDataLabels
 
@@ -51,8 +52,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления ratingUnitedKingdomMoviesType
 description: Фильмы рейтинг метки в Соединенное Королевство
-ms.openlocfilehash: 6d41c5c7ae8da1f1f27e4d9df4bfe9eb3a850597
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ec8d134cc1ca3425c7503f6b072d37d88990191c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081499"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332391"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>Тип перечисления ratingUnitedKingdomMoviesType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081499"
 
 Фильмы рейтинг метки в Соединенное Королевство
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешать все содержимое кино|
 |allBlocked|1|Не разрешать любое содержимое кино|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceComplianceUserStatus
 description: Н/Д
-ms.openlocfilehash: e2bb0b8de58a9da4126da9e8c67d102a74a65444
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f17e9fec4e1b0956f8d3280e2b64d51784320f58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078772"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361133"
 ---
 # <a name="devicecomplianceuserstatus-resource-type"></a>Тип ресурса deviceComplianceUserStatus
 
@@ -27,7 +28,7 @@ ms.locfileid: "27078772"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userDisplayName|String|Имя пользователя в объекте DevicePolicyStatus.|
 |devicesCount|Int32|Количество устройств для этого пользователя.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|

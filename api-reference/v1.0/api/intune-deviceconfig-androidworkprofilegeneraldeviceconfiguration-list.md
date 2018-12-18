@@ -1,12 +1,13 @@
 ---
 title: Список androidWorkProfileGeneralDeviceConfigurations
 description: Свойства списка и связей объектов androidWorkProfileGeneralDeviceConfiguration.
-ms.openlocfilehash: a38db4f5fa714968f9a66ffd244db254d774f0db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa1ee9daf168cc9c74e736e38705a957c09ef49b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027975"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334141"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Список androidWorkProfileGeneralDeviceConfigurations
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,8 +53,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

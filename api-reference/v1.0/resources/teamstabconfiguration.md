@@ -1,12 +1,13 @@
 ---
 title: teamsTabConfiguration ресурсов (тип Open)
 description: Параметры, определяющие содержимое вкладки.
-ms.openlocfilehash: 4d04ca9128760ee6fed9c0fa704fa991384ac17a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 281d27dfec1efa83859fad262e1b25fd06b5f4cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024647"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344963"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration ресурсов (тип Open)
 
@@ -17,12 +18,12 @@ ms.locfileid: "27024647"
 
 ## <a name="properties"></a>Свойства
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |-|-|-|
-|  entityId   |   string |  Идентификатор для сущности, размещенного поставщиком вкладки.     |
-|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в группах. Обязательный атрибут.    |
-|  removeUrl  |   string |  URL-адрес, вызванный клиентом команды при удалении вкладки с помощью команды клиента.     |
-|  websiteUrl |   string |  URL-адрес для отображения содержимого вкладки вне группы.     |
+|  entityId   |   строка |  Идентификатор для сущности, размещенного поставщиком вкладки.     |
+|  contentUrl |   строка |  URL-адрес, используемый для отображения содержимого вкладки в группах. Обязательный.    |
+|  removeUrl  |   строка |  URL-адрес, вызванный клиентом команды при удалении вкладки с помощью команды клиента.     |
+|  websiteUrl |   строка |  URL-адрес для отображения содержимого вкладки вне группы.     |
 
 ## <a name="json-representation"></a>Представление JSON
 

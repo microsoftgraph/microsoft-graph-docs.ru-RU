@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationSynchronizationLicenseAssignment
 description: Представляет информацию о лицензии для назначения учетных записей пользователей. Ресурс будет использоваться для настройки назначения лицензий при создании новых учетных записей пользователей.
-ms.openlocfilehash: a324007dc4d6b5557db407c39d27a640f56ceb55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 478d939c8f4c6a0bc1971d66afc4ecc7ae640e39
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080689"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344396"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>Тип ресурса educationSynchronizationLicenseAssignment
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080689"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:-|:-|:-|
 | **appliesTo** | string | Тип роли пользователя для назначения лицензий. Возможные значения: `student`, `teacher`.         |
 | **skuIds** | набор строк |  Представляет идентификаторы SKU лицензий для назначения.        |

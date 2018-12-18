@@ -1,12 +1,13 @@
 ---
 title: Создание officeClientConfigurationAssignment
 description: Добавьте целевой группе существующую политику.
-ms.openlocfilehash: 60416fe200214864c063a9fae739d5f7bd436a69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 850f82f005f46e15a598dd0e08043cca66ffe6bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077863"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324838"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Создание officeClientConfigurationAssignment
 
@@ -36,7 +37,7 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор OfficeConfigurationAssignment.|
+|id|Строка|Идентификатор OfficeConfigurationAssignment.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Назначение целевой, определенные администратором.|
 
 
@@ -72,8 +73,7 @@ Content-length: 172
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

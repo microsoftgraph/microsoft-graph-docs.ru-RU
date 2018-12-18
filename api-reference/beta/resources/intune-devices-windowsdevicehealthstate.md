@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления windowsDeviceHealthState
 description: Состояние защиты компьютера конечной точки
-ms.openlocfilehash: 601531dd71ee0d44e9f5ebc89eb018ba5e0f2675
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b794f8121132e396459f9198c644084690fe95b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074676"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326329"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>Тип перечисления windowsDeviceHealthState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27074676"
 
 Состояние защиты компьютера конечной точки
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |clean|0|Компьютер чистой и никаких действий не требуется|
 |fullScanPending|1|Компьютер находится в состоянии полную проверку ожидания|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса omaSettingStringXml
 description: Определение строки параметра OMA в формате XML.
-ms.openlocfilehash: bb95041a10a71591c06a55dca39a4377d32376b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5582ca84a9d6c918ce7b8dea5a21f616804da4ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075962"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323788"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Тип ресурса omaSettingStringXml
 
@@ -21,9 +22,9 @@ ms.locfileid: "27075962"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|описание|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|описание|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|String|Имя файла, связанное со свойством Value (XML).|
 |value|Двоичный|Значение (массив байтов в кодировке UTF8).|
 

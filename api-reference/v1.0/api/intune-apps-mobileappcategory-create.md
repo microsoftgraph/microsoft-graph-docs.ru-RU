@@ -1,12 +1,13 @@
 ---
 title: Создание объекта mobileAppCategory
 description: Создание объекта mobileAppCategory.
-ms.openlocfilehash: a26f9f66e045a45abae57a744a1fd91293df72e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17084b8c02421b94b733a9ecb1011d647dab02d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024703"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326336"
 ---
 # <a name="create-mobileappcategory"></a>Создание объекта mobileAppCategory
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -70,8 +71,7 @@ Content-length: 99
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

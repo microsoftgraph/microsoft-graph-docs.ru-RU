@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления eapFastConfiguration
 description: Доступные параметры для конфигурации EAP-FAST.
-ms.openlocfilehash: b1771668ea627d2e873d54334e388989652736d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba84adb86e9910df47bd236fd2bd348cbc9c8e6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077235"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326364"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>Тип перечисления eapFastConfiguration
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077235"
 
 Доступные параметры для конфигурации EAP-FAST.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |noProtectedAccessCredential|0|Используйте EAP-FAST без безопасного доступа (PAC).|
 |useProtectedAccessCredential|1|Использование защиты безопасного доступа (PAC).|

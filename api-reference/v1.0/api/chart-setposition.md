@@ -1,12 +1,13 @@
 ---
 title: 'Chart: setPosition'
 description: Располагает диаграмму относительно ячеек на листе.
-ms.openlocfilehash: 83b79e446f1398bd4ec5b04f6a31486f3a42a41d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: a83657a4654099dc1b52e55e2e627d14ef8c7aff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026782"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324593"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 

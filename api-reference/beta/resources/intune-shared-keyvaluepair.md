@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса keyValuePair
 description: Пара "ключ-значение" для хранения пользовательских настроек
-ms.openlocfilehash: ac43ddbd18e99983bf4d06e9ceb97445b9d4bf57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f6438d97376d46f66e02026acc87c948ab2a91bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081570"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329318"
 ---
 # <a name="keyvaluepair-resource-type"></a>Тип ресурса keyValuePair
 
@@ -18,8 +19,8 @@ ms.locfileid: "27081570"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|String|Имя для этой пары "ключ-значение"|
-|value|String|Значение для этой пары "ключ-значение"|
+|name|Строка|Имя для этой пары "ключ-значение"|
+|value|Строка|Значение для этой пары "ключ-значение"|
 
 ## <a name="relationships"></a>Связи
 Нет

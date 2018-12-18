@@ -1,12 +1,13 @@
 ---
 title: Получение объекта termsAndConditionsAssignment
 description: Чтение свойств и связей объекта termsAndConditionsAssignment.
-ms.openlocfilehash: 6796ad975e02cfbb290dd234e494307ace7b6f65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e2fc025eca77abb3951c4453adf8644a5a0ffc9a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075258"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335779"
 ---
 # <a name="get-termsandconditionsassignment"></a>Получение объекта termsAndConditionsAssignment
 
@@ -38,7 +39,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{ter
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsA
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса iosHomeScreenPage
 description: Страница, содержащая приложения и папки с начального экрана
-ms.openlocfilehash: 4f89d32d68b1caef782fa9a023145ad8ea896155
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd7a2ee863c02aa6484889aa20003a94e525514d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325559"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>Тип ресурса iosHomeScreenPage
 

@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта iosVppEBook
 description: Обновление свойств объекта iosVppEBook.
-ms.openlocfilehash: c0b0b067eea640fe47367e7cbe1ff897e0ac8ef3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 275b8fa6f1c60b0381df09716da8ccf5985611df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358382"
 ---
 # <a name="update-iosvppebook"></a>Обновление объекта iosVppEBook
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,9 +48,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|id|Строка|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|String|Имя электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
-|описание|String|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|описание|Строка|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
@@ -106,8 +107,7 @@ Content-length: 806
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

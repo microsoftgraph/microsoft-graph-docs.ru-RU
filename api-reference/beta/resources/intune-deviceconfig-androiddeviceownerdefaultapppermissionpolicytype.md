@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidDeviceOwnerDefaultAppPermissionPolicyType
 description: Android устройства владельцем тип по умолчанию приложения разрешения политики.
-ms.openlocfilehash: 35279cee80dbcdc97f654d08cef848ee72e921d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 28b374d9d39bc1b7f8b744bd63759d56f9ebdaf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327904"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>Тип перечисления androidDeviceOwnerDefaultAppPermissionPolicyType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076855"
 
 Android устройства владельцем тип по умолчанию приложения разрешения политики.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение по умолчанию устройства, без цели.|
 |строки|1|Запрос.|

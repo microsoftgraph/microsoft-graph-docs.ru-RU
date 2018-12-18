@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов groupSettingTemplate
 description: Шаблоны параметров группы представляют набор шаблонов, на базе которых можно создавать параметры группы для использования в клиенте.  Эта операция позволяет получить список доступных объектов groupSettingTemplate.
-ms.openlocfilehash: e3a92b174b4d1d95cbbf22385b56484441a6e3eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b47613093d8efa7fac99a313fff45d846d7a5073
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359362"
 ---
 # <a name="list-groupsettingtemplates"></a>Перечисление объектов groupSettingTemplate
 

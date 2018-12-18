@@ -1,12 +1,13 @@
 ---
 title: 'domain: verify'
 description: Проверка права собственности на домен.
-ms.openlocfilehash: a84b29a1bd4dc996a4e582f0c5cf14f0433e543e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: f6a8019d9530691e32ca8a8347d6fe8ff2ac15d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028308"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328926"
 ---
 # <a name="domain-verify"></a>domain: verify
 

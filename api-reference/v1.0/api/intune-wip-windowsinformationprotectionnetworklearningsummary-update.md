@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта windowsInformationProtectionNetworkLearningSummary
 description: Обновление свойств объекта windowsInformationProtectionNetworkLearningSummary.
-ms.openlocfilehash: a40cd274b03cd9efeddf053f2e6ed4d81b836752
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30f5585149a1130a92c203394950c581655cc78b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028456"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329424"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>Обновление объекта windowsInformationProtectionNetworkLearningSummary
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -70,8 +71,7 @@ Content-length: 137
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

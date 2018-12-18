@@ -1,12 +1,13 @@
 ---
 title: получение оповещения;
 description: " Извлечение свойств и связи оповещения объекта."
-ms.openlocfilehash: b2c823257ffcb398639a89627b3a0e1cb407e085
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: Preetikr
+ms.openlocfilehash: fe265f82e6013081a33abeaa25baa78e0e87fdcb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184478"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326126"
 ---
 # <a name="get-alert"></a>получение оповещения;
 
@@ -34,13 +35,13 @@ GET /security/alerts/{alert_id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **оповещения** в теле ответа. Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения. Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
 
@@ -58,7 +59,7 @@ GET /security/alerts/{alert_id}
 GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 <!-- {

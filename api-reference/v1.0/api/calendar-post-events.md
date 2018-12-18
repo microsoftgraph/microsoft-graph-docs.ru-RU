@@ -1,12 +1,13 @@
 ---
 title: Создание объекта Event
 description: С помощью этого API можно создать объект Event в календаре по умолчанию или указанном календаре.
-ms.openlocfilehash: da06df89ab4a62a1b767635e3daa928f84f29d9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 706914499f79e6aa72d3efdf2c37cd20984b9b05
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026751"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336052"
 ---
 # <a name="create-event"></a>Создание объекта Event
 
@@ -78,8 +79,7 @@ Content-length: 285
 ```
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

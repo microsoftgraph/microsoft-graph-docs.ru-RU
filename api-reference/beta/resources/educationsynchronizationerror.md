@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationSynchronizationError
 description: Представляет ошибку во время проверки данных профиля school и/или синхронизации. Уникальный ошибка создается для каждой записи, не удается проверить и/или синхронизация с Azure Active Directory (Azure AD).
-ms.openlocfilehash: 91a633ab4056e8e86854a0e2d45ae13e22da19a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d950e906a506c3cf1ee5bc5b627200dc79c1d0fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336003"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>Тип ресурса educationSynchronizationError
 
@@ -22,7 +23,7 @@ ms.locfileid: "27075435"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:-|:-|:-|
 | **entryType** | string |  Представляет сущности синхронизации (школа, раздел, учебы, преподаватель).       |
 | **errorCode** | string |  Представляет код ошибки для этой ошибки.         |

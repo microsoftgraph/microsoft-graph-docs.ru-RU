@@ -1,12 +1,13 @@
 ---
 title: Создание managementConditionStatement
 description: Создание нового объекта managementConditionStatement.
-ms.openlocfilehash: a01d0233eff9d22b3174a8aa7bd382b9a1266ac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5402faee0c7ace84957f3ff6a2ef65844f5a527e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075873"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327351"
 ---
 # <a name="create-managementconditionstatement"></a>Создание managementConditionStatement
 
@@ -37,7 +38,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,9 +49,9 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для управления условная инструкция. Значение, назначенное при создании создаваемый системой.|
-|displayName|String|Имя оператора условия управления определенные администратором.|
-|описание|String|Описание управления условная инструкция определенные администратором.|
+|id|Строка|Уникальный идентификатор для управления условная инструкция. Значение, назначенное при создании создаваемый системой.|
+|displayName|Строка|Имя оператора условия управления определенные администратором.|
+|описание|Строка|Описание управления условная инструкция определенные администратором.|
 |createdDateTime|DateTimeOffset|Время создания условная инструкция управления. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условная инструкция управления. Обновление со стороны службы.|
 |выражение|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используется для оценки Если инструкции с условием управления был активирован деактивирован.|
@@ -86,8 +87,7 @@ Content-length: 323
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

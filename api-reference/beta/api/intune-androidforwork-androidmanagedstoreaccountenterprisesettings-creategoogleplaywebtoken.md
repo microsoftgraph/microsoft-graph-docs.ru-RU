@@ -1,12 +1,13 @@
 ---
 title: Действие createGooglePlayWebToken
 description: Создает веб-маркера, который используется в встраиваемые компонента.
-ms.openlocfilehash: 26b58e5973063a74cac69d0bb70aa02adde7093f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 206113b445d8b190e02b292dd661bc3c207de288
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338544"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>Действие createGooglePlayWebToken
 
@@ -36,7 +37,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,9 +46,9 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|parentUri|String|Https путь к странице, размещающего компонент.|
+|parentUri|String.|Https путь к странице, размещающего компонент.|
 
 
 
@@ -69,8 +70,7 @@ Content-length: 39
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

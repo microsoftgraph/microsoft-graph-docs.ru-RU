@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления managedAppDataStorageLocation
 description: Места хранения, где управляемых приложений могут потенциально хранят свои данные
-ms.openlocfilehash: a41cb63625f6ce892dadd7565fc16d3ee0e60469
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 64c2f7234271516ea642bb7c584b49643bd26a1a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082281"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325209"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>Тип перечисления managedAppDataStorageLocation
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082281"
 
 Места хранения, где управляемых приложений могут потенциально хранят свои данные
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |oneDriveForBusiness|1|OneDrive для бизнеса|
 |sharePoint|2|SharePoint|

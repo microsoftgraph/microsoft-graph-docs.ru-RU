@@ -1,12 +1,13 @@
 ---
 title: перечисление оповещений;
 description: Получение списка объектов оповещения.
-ms.openlocfilehash: 07dcdd4279ef0f258396bbfa6ecc0fc15cbd7ef0
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: Preetikr
+ms.openlocfilehash: 64589fa04d4b6b11fb2ec435f6531df2e2f58a8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184527"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324033"
 ---
 # <a name="list-alerts"></a>перечисление оповещений;
 
@@ -53,13 +54,13 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
 Не указывайте тело запроса для этого метода. Текст запроса будет игнорироваться.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов **оповещения** в теле ответа. Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения. Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
 
@@ -77,7 +78,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

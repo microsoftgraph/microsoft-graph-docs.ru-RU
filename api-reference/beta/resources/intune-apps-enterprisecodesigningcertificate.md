@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса enterpriseCodeSigningCertificate
 description: Н/Д
-ms.openlocfilehash: 39a33ba019bd5d7e393f38dbb4701374ac7c5304
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f16dbbf59af238e631e282d7e4d92dad46a7083b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076845"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328702"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>Тип ресурса enterpriseCodeSigningCertificate
 
@@ -28,12 +29,12 @@ ms.locfileid: "27076845"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|content|Двоичный|Сертификат подписи кода Enterprise Windows в формате необработанные данные.|
+|content|Binary|Сертификат подписи кода Enterprise Windows в формате необработанные данные.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовить к работе или не подготовлен. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
-|subject|String|Значения субъектов для сертификата.|
-|Имя поставщика|String|Имя поставщика для сертификата.|
-|издателя|String|Значение издателя сертификата.|
+|subject|Строка|Значения субъектов для сертификата.|
+|Имя поставщика|String.|Имя поставщика для сертификата.|
+|издателя|String.|Значение издателя сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Дата время подписывания кода сертификата при его загрузке.|
 

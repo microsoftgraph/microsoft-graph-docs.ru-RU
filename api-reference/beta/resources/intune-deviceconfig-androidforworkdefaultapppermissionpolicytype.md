@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidForWorkDefaultAppPermissionPolicyType
 description: Тип политики разрешений приложения по умолчанию Android для работы.
-ms.openlocfilehash: dd444a948591070e0695d5218daab1e1781c2ec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 75e04b762a1c573bf47a14ed5b850fe909818bfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077073"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328912"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>Тип перечисления androidForWorkDefaultAppPermissionPolicyType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077073"
 
 Тип политики разрешений приложения по умолчанию Android для работы.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение по умолчанию устройства, без цели.|
 |строки|1|Запрос.|
