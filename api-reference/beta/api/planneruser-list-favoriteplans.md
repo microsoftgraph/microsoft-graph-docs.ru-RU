@@ -1,49 +1,50 @@
 ---
 title: Список favoritePlans
 description: Получение списка plannerPlans, помеченные как избранные пользователем. План в Избранное можно пометить, изменив plannerUser ресурсов.
-ms.openlocfilehash: e9e3cf3cd348430a3512d15ac2e0cdc68d24d258
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: c0f82522c41977df1aa034dbd14a86749b10b803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077034"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324586"
 ---
-# <a name="list-favoriteplans"></a><span data-ttu-id="d9e31-104">Список favoritePlans</span><span class="sxs-lookup"><span data-stu-id="d9e31-104">List favoritePlans</span></span>
+# <a name="list-favoriteplans"></a><span data-ttu-id="805a4-104">Список favoritePlans</span><span class="sxs-lookup"><span data-stu-id="805a4-104">List favoritePlans</span></span>
 
-> <span data-ttu-id="d9e31-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="d9e31-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d9e31-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9e31-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="805a4-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="805a4-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="805a4-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="805a4-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="d9e31-107">Получение списка [plannerPlans](../resources/plannerplan.md) , помеченные как избранные пользователем.</span><span class="sxs-lookup"><span data-stu-id="d9e31-107">Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user.</span></span> <span data-ttu-id="d9e31-108">План в Избранное можно пометить, [изменив plannerUser ресурсов](planneruser-update.md).</span><span class="sxs-lookup"><span data-stu-id="d9e31-108">You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).</span></span>
+<span data-ttu-id="805a4-107">Получение списка [plannerPlans](../resources/plannerplan.md) , помеченные как избранные пользователем.</span><span class="sxs-lookup"><span data-stu-id="805a4-107">Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user.</span></span> <span data-ttu-id="805a4-108">План в Избранное можно пометить, [изменив plannerUser ресурсов](planneruser-update.md).</span><span class="sxs-lookup"><span data-stu-id="805a4-108">You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d9e31-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d9e31-109">Permissions</span></span>
-<span data-ttu-id="d9e31-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9e31-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="805a4-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="805a4-109">Permissions</span></span>
+<span data-ttu-id="805a4-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="805a4-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d9e31-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d9e31-112">Permission type</span></span>      | <span data-ttu-id="d9e31-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d9e31-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="805a4-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="805a4-112">Permission type</span></span>      | <span data-ttu-id="805a4-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="805a4-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d9e31-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d9e31-114">Delegated (work or school account)</span></span> | <span data-ttu-id="d9e31-115">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="d9e31-115">Group.Read.All</span></span>    |
-|<span data-ttu-id="d9e31-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d9e31-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9e31-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9e31-117">Not supported.</span></span>    |
-|<span data-ttu-id="d9e31-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d9e31-118">Application</span></span> | <span data-ttu-id="d9e31-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9e31-119">Not supported.</span></span> |
+|<span data-ttu-id="805a4-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="805a4-114">Delegated (work or school account)</span></span> | <span data-ttu-id="805a4-115">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="805a4-115">Group.Read.All</span></span>    |
+|<span data-ttu-id="805a4-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="805a4-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="805a4-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="805a4-117">Not supported.</span></span>    |
+|<span data-ttu-id="805a4-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="805a4-118">Application</span></span> | <span data-ttu-id="805a4-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="805a4-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d9e31-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d9e31-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="805a4-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="805a4-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/favoritePlans
 GET /users/<id>/planner/favoritePlans
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d9e31-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d9e31-121">Optional query parameters</span></span>
-<span data-ttu-id="d9e31-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d9e31-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="805a4-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="805a4-121">Optional query parameters</span></span>
+<span data-ttu-id="805a4-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="805a4-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d9e31-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d9e31-123">Request headers</span></span>
-| <span data-ttu-id="d9e31-124">Имя</span><span class="sxs-lookup"><span data-stu-id="d9e31-124">Name</span></span>      |<span data-ttu-id="d9e31-125">Описание</span><span class="sxs-lookup"><span data-stu-id="d9e31-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="805a4-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="805a4-123">Request headers</span></span>
+| <span data-ttu-id="805a4-124">Имя</span><span class="sxs-lookup"><span data-stu-id="805a4-124">Name</span></span>      |<span data-ttu-id="805a4-125">Описание</span><span class="sxs-lookup"><span data-stu-id="805a4-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d9e31-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="d9e31-126">Authorization</span></span>  | <span data-ttu-id="d9e31-p105">В заголовке указывается "Bearer {код}". Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d9e31-p105">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="805a4-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="805a4-126">Authorization</span></span>  | <span data-ttu-id="805a4-p105">В заголовке указывается "Bearer {код}". Обязательный.</span><span class="sxs-lookup"><span data-stu-id="805a4-p105">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d9e31-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d9e31-129">Request body</span></span>
-<span data-ttu-id="d9e31-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d9e31-130">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="d9e31-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="d9e31-131">Response</span></span>
-<span data-ttu-id="d9e31-132">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [plannerPlan](../resources/plannerplan.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="d9e31-132">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d9e31-133">Пример</span><span class="sxs-lookup"><span data-stu-id="d9e31-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d9e31-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="d9e31-134">Request</span></span>
-<span data-ttu-id="d9e31-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d9e31-135">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="805a4-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="805a4-129">Request body</span></span>
+<span data-ttu-id="805a4-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="805a4-130">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="805a4-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="805a4-131">Response</span></span>
+<span data-ttu-id="805a4-132">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [plannerPlan](../resources/plannerplan.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="805a4-132">If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="805a4-133">Пример</span><span class="sxs-lookup"><span data-stu-id="805a4-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="805a4-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="805a4-134">Request</span></span>
+<span data-ttu-id="805a4-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="805a4-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_favoriteplans"
@@ -51,10 +52,10 @@ GET /users/<id>/planner/favoritePlans
 ```http
 GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ```
-##### <a name="response"></a><span data-ttu-id="d9e31-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="d9e31-136">Response</span></span>
-<span data-ttu-id="d9e31-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d9e31-137">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="805a4-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="805a4-136">Response</span></span>
+<span data-ttu-id="805a4-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="805a4-137">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="d9e31-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d9e31-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="805a4-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="805a4-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
