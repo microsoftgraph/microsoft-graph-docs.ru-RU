@@ -1,12 +1,13 @@
 ---
 title: Перечисление записных книжек
 description: Получение списка объектов notebook.
-ms.openlocfilehash: 0f9bf502973be0d178db70e42f25a0716263e323
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 7e6e45f84c3574815741f1f50394582fc692ccb0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355582"
 ---
 # <a name="list-notebooks"></a>Перечисление записных книжек
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceCategory
 description: Эти категории затем можно применить к устройству в консоли Azure Intune или выбрать во время регистрации устройства пользователем. На основе категорий устройств вы можете фильтровать отчеты и создавать динамические группы устройств Azure Active Directory.
-ms.openlocfilehash: c970cd7d7a95d7a888194a15b37873f5c6a44052
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e40f656a7ce4d511cdb4c597c2419e8cf886c12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353615"
 ---
 # <a name="devicecategory-resource-type"></a>Тип ресурса deviceCategory
 
@@ -26,7 +27,7 @@ ms.locfileid: "27027685"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация новых сотрудников**|
 |displayName|String|Отображаемое имя категории устройств.|
 |описание|String|Необязательное описание категории устройств.|

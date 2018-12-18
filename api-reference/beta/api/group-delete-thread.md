@@ -1,12 +1,13 @@
 ---
 title: Удаление цепочки беседы
 description: Удаление объекта thread.
-ms.openlocfilehash: 31a3386c8ff3da0ff1e81ddc2770adae0004b5c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: eec28f92fcdee1755b1e000225ea9458241f01c6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077268"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352950"
 ---
 # <a name="delete-conversation-thread"></a>Удаление цепочки беседы
 

@@ -1,12 +1,13 @@
 ---
 title: Перечисление фотографий
 description: Получение списка объектов profilePhoto.
-ms.openlocfilehash: deb4c6fd414a8408d1287baeeb1e4c227f567665
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: fda70cc81e0a98f8527e8bd00e980a5092804f6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027194"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353706"
 ---
 # <a name="list-photos"></a>Перечисление фотографий
 Получение списка объектов [profilePhoto](../resources/profilephoto.md).

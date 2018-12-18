@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса win32LobAppProductCodeDetection
 description: Содержит свойства кода и версия продукта для обнаружения приложений Win32
-ms.openlocfilehash: fcb9d5927ce1518a7bba2086a8578867d4fdf01a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d66dab5a43a11c480e0e30f70eb8aecbe47e1fa7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082597"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353986"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>Тип ресурса win32LobAppProductCodeDetection
 
@@ -19,7 +20,7 @@ ms.locfileid: "27082597"
 Наследуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |productCode|String|Код продукта Win32 строки из бизнес-приложения.|
 |productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения версии данного продукта. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|

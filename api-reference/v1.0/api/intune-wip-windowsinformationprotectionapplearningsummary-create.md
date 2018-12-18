@@ -1,12 +1,13 @@
 ---
 title: Создание объекта windowsInformationProtectionAppLearningSummary
 description: Создание объекта windowsInformationProtectionAppLearningSummary.
-ms.openlocfilehash: 03a03e0e32115cd0f5b2f56e652c608073db7d94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdcf4be10f26036c06f4cfd0a67f98601c296ec7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026326"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354301"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>Создание объекта windowsInformationProtectionAppLearningSummary
 
@@ -34,7 +35,7 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -72,8 +73,7 @@ Content-length: 191
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

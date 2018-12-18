@@ -1,12 +1,13 @@
 ---
 title: 'Правила использования фирменной символики для разработчиков API OneNote '
 description: " "
-ms.openlocfilehash: 3fe08bd6904d3b4f80354d9a73db24e419fc8549
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: efb1496111224371afee372c0b5952dc13888a0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092565"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353587"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>Правила использования фирменной символики для разработчиков API OneNote 
  

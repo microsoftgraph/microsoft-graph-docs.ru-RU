@@ -1,12 +1,13 @@
 ---
 title: Создание объекта registeredUser
 description: Добавление зарегистрированного пользователя устройства.
-ms.openlocfilehash: 986c0c4e4c89d2ac724f3c19bde381d4d1624f2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 765e82106fdfd23a6805a0bbda176635b279557d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025013"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353748"
 ---
 # <a name="create-registereduser"></a>Создание объекта registeredUser
 
@@ -59,8 +60,7 @@ Content-length: 30
 ```
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

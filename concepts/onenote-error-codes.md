@@ -1,12 +1,13 @@
 ---
 title: Коды ошибок для API OneNote в Microsoft Graph
 description: В этой статье описываются коды ошибок, возвращаемые API OneNote в Microsoft Graph при сбоях запросов, отправляемых через API.
-ms.openlocfilehash: 265929be081ee61a88b8baf4f600e2c154797ec7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 9c715b25e9b3114d6db21a3b935a266123ca0601
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092673"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352468"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Коды ошибок для API OneNote в Microsoft Graph
 

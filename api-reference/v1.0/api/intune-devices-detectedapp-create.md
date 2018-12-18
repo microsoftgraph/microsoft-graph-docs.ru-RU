@@ -1,12 +1,13 @@
 ---
 title: Создание объекта detectedApp
 description: Создание объекта detectedApp.
-ms.openlocfilehash: c0875d2872ff40a1b19654b5aeb4dfc48483114e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60c47746e49429e37a5a40a5c86714d209ff6c3d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027099"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355484"
 ---
 # <a name="create-detectedapp"></a>Создание объекта detectedApp
 
@@ -34,7 +35,7 @@ POST /deviceManagement/detectedApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -74,8 +75,7 @@ Content-length: 167
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

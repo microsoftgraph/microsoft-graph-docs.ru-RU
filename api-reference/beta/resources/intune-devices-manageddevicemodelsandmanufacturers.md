@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedDeviceModelsAndManufacturers
 description: Модели и производители meatadata для управляемых устройств в учетной записи
-ms.openlocfilehash: c61026a6caa097e01e09a4343dd54f769c743460
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 42611b0c14aa583d2871d97b66ce116a0b835268
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082611"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352936"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>Тип ресурса managedDeviceModelsAndManufacturers
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082611"
 
 Модели и производители meatadata для управляемых устройств в учетной записи
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |deviceModels|Коллекция String|Список моделей для управляемых устройств в учетной записи|
 |deviceManufacturers|Коллекция String|Список производители управляемых устройств в учетной записи|

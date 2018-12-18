@@ -1,12 +1,13 @@
 ---
 title: Удаление dataSharingConsent
 description: Удаляет dataSharingConsent.
-ms.openlocfilehash: 6c7bc3528a9d6c8ff4e9df07aa2c360572050091
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aef28ba2eaeccfe31404ee7bda166a2aa299abfd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080631"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355099"
 ---
 # <a name="delete-datasharingconsent"></a>Удаление dataSharingConsent
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents/{da
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -1,12 +1,13 @@
 ---
 title: Список importedDeviceIdentityResults
 description: Свойства списка и связей объектов importedDeviceIdentityResult.
-ms.openlocfilehash: 26940ca683843370dafd1d3966b49133e0ebe483
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e7d876c649d3f088d238e2fc804e61fbcddbf8b0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080842"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355603"
 ---
 # <a name="list-importeddeviceidentityresults"></a>Список importedDeviceIdentityResults
 
@@ -36,7 +37,7 @@ GET /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

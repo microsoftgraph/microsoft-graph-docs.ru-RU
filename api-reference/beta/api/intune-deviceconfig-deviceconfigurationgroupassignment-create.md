@@ -1,12 +1,13 @@
 ---
 title: Создание deviceConfigurationGroupAssignment
 description: Создание нового объекта deviceConfigurationGroupAssignment.
-ms.openlocfilehash: 3e349664a1458b13be357dbabf7e9a1a8e14025e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c07356d3cf63699fda95e2be6fe361841e0b0d95
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075890"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355106"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Создание deviceConfigurationGroupAssignment
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -55,9 +56,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|targetGroupId|String|Идентификатор группы AAD мы ориентация для настройки устройств.|
-|excludeGroup|Логический|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
+|id|Строка|Ключ объекта.|
+|targetGroupId|String.|Идентификатор группы AAD мы ориентация для настройки устройств.|
+|excludeGroup|Boolean.|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
 
 
 
@@ -80,8 +81,7 @@ Content-length: 146
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

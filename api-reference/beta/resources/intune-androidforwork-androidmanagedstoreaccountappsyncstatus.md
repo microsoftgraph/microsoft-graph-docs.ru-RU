@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidManagedStoreAccountAppSyncStatus
 description: Состояние синхронизации клиента с помощью API EMM Google
-ms.openlocfilehash: 42362df4576fe7c5f2559e603da74d53118cd0d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38131e49734cc76809729dcedf7c133d4f624af5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079078"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355491"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>Тип перечисления androidManagedStoreAccountAppSyncStatus
 
@@ -23,7 +24,7 @@ ms.locfileid: "27079078"
 |androidForWorkApiError|2|Н/Д|
 |managementServiceError|3|Н/Д|
 |unknownError|4|Н/Д|
-|Нет|5|Н/Д|
+|none|5|Н/Д|
 
 
 

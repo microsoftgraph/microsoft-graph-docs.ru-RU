@@ -1,12 +1,13 @@
 ---
 title: Удаление educationAssignment
 description: Удаление существующего назначения. Назначения можно удалить только учителя внутри класса.
-ms.openlocfilehash: e9965efa458459cff0c3914dbc12b37153a6ab51
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 94d99f65f491d641b74313a3ac9b06841b049731
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079733"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352915"
 ---
 # <a name="delete-educationassignment"></a>Удаление educationAssignment
 
@@ -21,7 +22,7 @@ ms.locfileid: "27079733"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| EduAssignments.ReadWriteBasic EduAssignments.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) |   Не поддерживается. |
-|Для приложения | Не поддерживается.  | 
+|Application | Не поддерживается.  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 

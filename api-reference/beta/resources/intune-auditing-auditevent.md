@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса auditEvent
 description: Класс, содержащий свойства события аудита.
-ms.openlocfilehash: 1846677ea72dda836f92e0d45d76ea0df0ae74f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 99fbcfb07f08d10b20d8d57d0b16bc6d020f9e09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081360"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354007"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
@@ -29,7 +30,7 @@ ms.locfileid: "27081360"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |displayName|String|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
