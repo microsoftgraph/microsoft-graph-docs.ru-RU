@@ -1,12 +1,13 @@
 ---
 title: Группа архива
 description: 'Архивируйте указанной группы. '
-ms.openlocfilehash: 80c8d372c0b70548cdd887270d387f258bb92ff6
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: bd673db676bebad2213710b8005abd28d074f1ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222403"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301248"
 ---
 # <a name="archive-team"></a>Группа архива
 
@@ -51,7 +52,7 @@ POST /teams/{id}/archive
 ```
 Этот дополнительный параметр определяет, требуется ли задавать разрешения для членов группы только для чтения на сайте Sharepoint Online, связанный с группой. Задать значение false или пропуск текста полностью приведет к этот шаг пропущен.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Если архивация запускается успешно, этот метод возвращает `202 Accepted` код ответа. Ответ также будет содержать `Location` заголовок, который содержит расположение [teamsAsyncOperation](../resources/teamsasyncoperation.md) , который был создан для обработки архивации рабочей группы. Проверьте состояние архивации операции, внесение запрос GET в этом расположении.
 
@@ -65,7 +66,7 @@ POST /teams/{id}/archive
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/archive
 ```
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример ответа.
 ```http
 HTTP/1.1 202 Accepted

@@ -1,12 +1,13 @@
 ---
 title: Создание объекта ContactFolder
 description: 'Создание дочернего объекта contactFolder указанной папки. '
-ms.openlocfilehash: b6a4779b52a554e3a4050009e68b4124c17ca935
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9d13c398ca66b7b320637baf4d92557be63bf80b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025084"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301325"
 ---
 # <a name="create-contactfolder"></a>Создание объекта ContactFolder
 
@@ -59,8 +60,7 @@ Content-length: 84
 ```
 Предоставьте в тексте запроса описание объекта [contactFolder](../resources/contactfolder.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

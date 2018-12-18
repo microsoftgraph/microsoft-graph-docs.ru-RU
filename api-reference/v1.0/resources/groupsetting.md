@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса groupSetting
 description: Параметры группы контролируют такое поведение, как обработка списков заблокированных слов для отображаемых имен группы, а также разрешение или запрещение пользователям-гостям быть владельцами групп.
-ms.openlocfilehash: 16eb67e717fb151a627961176b1409e8426e3178
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c4e3f92b96aa1be5088cace4adeef3ae33d968b9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025269"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301150"
 ---
 # <a name="groupsetting-resource-type"></a>Тип ресурса groupSetting
 

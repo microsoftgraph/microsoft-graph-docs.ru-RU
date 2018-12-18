@@ -1,12 +1,13 @@
 ---
 title: функция getLoggedOnManagedDevices
 description: Н/Д
-ms.openlocfilehash: 4d8d6505cb4715cbda45e53e7b866644c2ab1d07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e56ff33ce0413e1ccaa8ee4d16245f314e56839
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075821"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301864"
 ---
 # <a name="getloggedonmanageddevices-function"></a>функция getLoggedOnManagedDevices
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075821"
 
 Н/Д
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -40,7 +41,7 @@ GET /users/{usersId}/getLoggedOnManagedDevices
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -64,8 +65,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/getLoggedOnManagedDevices
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ``` http
 HTTP/1.1 200 OK

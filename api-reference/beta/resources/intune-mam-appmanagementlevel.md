@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления appManagementLevel
 description: Управление уровнями для приложений
-ms.openlocfilehash: 35fc83f601964d415a1a4c8598f21493d06624de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e552055d7abd7f61c71243aa696acbbd263008e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078051"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301339"
 ---
 # <a name="appmanagementlevel-enum-type"></a>Тип перечисления appManagementLevel
 
@@ -16,7 +17,7 @@ ms.locfileid: "27078051"
 
 Управление уровнями для приложений
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |Этот атрибут не задан|0|Не определено.|
 |неуправляемые|1|Неуправляемые|

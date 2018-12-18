@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsAutopilotDeploymentProfile
 description: Windows автопилот развертывания профилей
-ms.openlocfilehash: ed109af370d73d22d46198b206ba42dc4ebab2da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9534a9c252c3ab678bf2dea83d497c9541f30c47
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076179"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301444"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
 
@@ -24,19 +25,19 @@ Windows автопилот развертывания профилей
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша профилей|
-|displayName|String|Имя профиля|
-|описание|String|Описание профиля|
+|id|Строка|Клавиша профилей|
+|displayName|Строка|Имя профиля|
+|описание|Строка|Описание профиля|
 |language|String|Язык, настроенных на устройстве|
 |createdDateTime|DateTimeOffset|Время создания профилей|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|В соответствующем взаимодействия параметр|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Параметр экрана состояния подачи заявок|
-|extractHardwareHash|Логический|Извлечение HardwareHash для профиля|
-|deviceNameTemplate|String|Шаблон, используемый для имя устройства автопилот. Это может быть настраиваемого текста, а также может содержать серийный номер устройства или случайное число. Общая длина текста, созданной с помощью шаблона может быть не более 15 символов.|
+|extractHardwareHash|Boolean.|Извлечение HardwareHash для профиля|
+|deviceNameTemplate|String.|Шаблон, используемый для имя устройства автопилот. Это может быть настраиваемого текста, а также может содержать серийный номер устройства или случайное число. Общая длина текста, созданной с помощью шаблона может быть не более 15 символов.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) коллекции|Список устройств, назначенных для профиля.|
 |assignments|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) коллекции|Список назначений группы для профиля.|

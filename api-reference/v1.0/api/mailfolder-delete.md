@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта MailFolder
 description: Удаление указанного mailFolder.
-ms.openlocfilehash: e01f631141147373d1c2010d4313ad833c057df2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: ea2edfe07554ef0a5e1144dd1aeed00b7dd46155
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028285"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301101"
 ---
 # <a name="delete-mailfolder"></a>Удаление объекта MailFolder
 

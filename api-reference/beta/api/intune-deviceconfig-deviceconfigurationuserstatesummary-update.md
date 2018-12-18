@@ -1,12 +1,13 @@
 ---
 title: Обновление deviceConfigurationUserStateSummary
 description: Обновление свойства объекта deviceConfigurationUserStateSummary.
-ms.openlocfilehash: fd22d51f9d52f97c080cace5c6cf434ccaff2416
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a11c4447fee84116b68416ba78f610e8067a6104
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079905"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301570"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Обновление deviceConfigurationUserStateSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |unknownUserCount|Int32|Число неизвестным пользователям|
 |notApplicableUserCount|Int32|Число пользователей не применим|
 |compliantUserCount|Int32|Количество требованиям пользователей|
@@ -81,8 +82,7 @@ Content-length: 201
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

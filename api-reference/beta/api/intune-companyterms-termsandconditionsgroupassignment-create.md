@@ -1,12 +1,13 @@
 ---
 title: Создание termsAndConditionsGroupAssignment
 description: Создание нового объекта termsAndConditionsGroupAssignment.
-ms.openlocfilehash: 571b01fec640f7efa24122117c82052b5937bce8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 54bcf9591cbfc9cd9369e434b11440a8247ea813
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077871"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301388"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Создание termsAndConditionsGroupAssignment
 
@@ -36,7 +37,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,7 +49,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта.|
-|targetGroupId|String|Уникальный идентификатор группы, которая назначена политика T & C.|
+|targetGroupId|String.|Уникальный идентификатор группы, которая назначена политика T & C.|
 
 
 
@@ -70,8 +71,7 @@ Content-length: 120
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

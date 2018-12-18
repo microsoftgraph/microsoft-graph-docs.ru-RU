@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления sharedPCAccountDeletionPolicyType
 description: Возможные значения для при удалении учетных записей на общую ПК.
-ms.openlocfilehash: 48d36881646bce344d99bc3d1a15a2679ddeb11d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8789faeeec7772cd6115cae82691c62894446f59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026067"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301003"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>Тип перечисления sharedPCAccountDeletionPolicyType
 
@@ -14,7 +15,7 @@ ms.locfileid: "27026067"
 
 Возможные значения для при удалении учетных записей на общую ПК.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |Интерпретация|0|Удаление немедленно.|
 |diskSpaceThreshold|1|Удалите в порога места на диске.|

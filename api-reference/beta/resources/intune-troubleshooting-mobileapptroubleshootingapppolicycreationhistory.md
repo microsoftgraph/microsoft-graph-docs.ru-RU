@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mobileAppTroubleshootingAppPolicyCreationHistory
 description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
-ms.openlocfilehash: 7ca80443351e5c1b1232dc050cdf721ab7389351
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d0192e8dde3cfc858629f7ae79e4b7de786740a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081131"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301458"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>Тип ресурса mobileAppTroubleshootingAppPolicyCreationHistory
 
@@ -19,7 +20,7 @@ ms.locfileid: "27081131"
 Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Время возникновения элемент журнала. Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |runState|[runState](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|

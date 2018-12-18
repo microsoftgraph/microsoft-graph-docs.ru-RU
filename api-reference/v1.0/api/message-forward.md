@@ -1,12 +1,13 @@
 ---
 title: 'message: forward'
 description: Пересылка сообщения. Сообщение сохраняется в папке "Отправленные".
-ms.openlocfilehash: 862ce3c40d6e83595373c5530df94cfa18c14b67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: fe1b5f9498d8be417818168b83abc56da8986bd1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024887"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301584"
 ---
 # <a name="message-forward"></a>message: forward
 

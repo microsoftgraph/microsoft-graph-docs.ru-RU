@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsUpdateScheduledInstall
 description: Н/Д
-ms.openlocfilehash: 9f39a9716efed39529c54eaddc62cde075b51954
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 55a53c169f60361af1f695aa07452c4e4a60bedf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076874"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301647"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>Тип ресурса windowsUpdateScheduledInstall
 

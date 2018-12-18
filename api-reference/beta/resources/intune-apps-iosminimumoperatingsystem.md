@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса iosMinimumOperatingSystem
 description: Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения iOS.
-ms.openlocfilehash: 686128d3412b63e5441adfd1ccf62d5fc7c23ab6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 867679282db71df4f50c119e4734796790ddc210
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075272"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301850"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
@@ -22,7 +23,7 @@ ms.locfileid: "27075272"
 |v9_0|Boolean|Версия 9.0 или выше.|
 |v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
-|v12_0|Логический|12.0 или более поздняя версия.|
+|v12_0|Boolean.|12.0 или более поздняя версия.|
 
 ## <a name="relationships"></a>Связи
 Нет

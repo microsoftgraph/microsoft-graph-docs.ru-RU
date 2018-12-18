@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления officeProductId
 description: Перечисление, чтобы указать ProductIds Office 365, представляющих номера SKU набора приложений Office 365.
-ms.openlocfilehash: 6b69a2477bb0f8779303f8d9f741f100501a3fe5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 228478b6814bed360cbba77539e5ee39343e2bfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302795"
 ---
 # <a name="officeproductid-enum-type"></a>Тип перечисления officeProductId
 
@@ -16,7 +17,7 @@ ms.locfileid: "27079083"
 
 Перечисление, чтобы указать ProductIds Office 365, представляющих номера SKU набора приложений Office 365.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |o365ProPlusRetail|0|Н/Д|
 |o365BusinessRetail|1|Н/Д|
