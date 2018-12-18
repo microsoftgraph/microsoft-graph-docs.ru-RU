@@ -1,12 +1,13 @@
 ---
 title: Обновление intuneBrandingProfile
 description: Обновление свойства объекта intuneBrandingProfile.
-ms.openlocfilehash: 094de592e0e8d80472f1b0c6ed3d751ac79ba863
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4321b0197e30126c4d83371a31425af1d8e73bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082127"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309949"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление intuneBrandingProfile
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,10 +48,10 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша профилей|
-|Имя_профиля|String|Имя профиля|
-|profileDescription|String|Описание профиля|
-|isDefaultProfile|Логический|Представляет при использовании профиля по умолчанию.|
+|id|Строка|Клавиша профилей|
+|Имя_профиля|String.|Имя профиля|
+|profileDescription|String.|Описание профиля|
+|isDefaultProfile|Boolean.|Представляет при использовании профиля по умолчанию.|
 |createdDateTime|DateTimeOffset|При создании BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile.|
 |displayName|String|Название компании или организации, которое отображается пользователям.|
@@ -121,8 +122,7 @@ Content-length: 1209
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

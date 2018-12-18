@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления localSecurityOptionsSmartCardRemovalBehaviorType
 description: Возможные значения для LocalSecurityOptionsSmartCardRemovalBehaviorType
-ms.openlocfilehash: 4a4fdd6934805a688c95cd41f65149b4a727a60e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91b55d4ba3b1fc8b27a5ab85e6f5ff7df74e9a59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076584"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308738"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>Тип перечисления localSecurityOptionsSmartCardRemovalBehaviorType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076584"
 
 Возможные значения для LocalSecurityOptionsSmartCardRemovalBehaviorType
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |lockWorkstation|0|Никаких действий|
 |noAction|1|Блокировка рабочей станции|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса officeConfiguration
 description: Одноэлементный объект, служащий контейнером для всех функций управления устройствами.
-ms.openlocfilehash: 4a3657153ead53a5367c23cdc51b0e40a8efe535
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bf74789d4debda00b21173ff2974db8224cd15f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077088"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305546"
 ---
 # <a name="officeconfiguration-resource-type"></a>Тип ресурса officeConfiguration
 
@@ -24,12 +25,12 @@ ms.locfileid: "27077088"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор конфигурации office.|
+|id|Строка|Идентификатор конфигурации office.|
 |tenantCheckinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) коллекции|Список office состояние возврата клиента.|
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Сущности, которая описывает клиента возврат statues|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |clientConfigurations|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) коллекции|Список настройки клиента office.|
 

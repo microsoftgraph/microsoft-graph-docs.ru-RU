@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsPhone81AppX
 description: Содержит свойства и наследуемые свойства для приложений Windows Phone 8.1 AppX бизнес-систем.
-ms.openlocfilehash: 415595c4a527c76dc3c35b77b966762fbb7afa94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 10882e8620cc22ab2397147b3fd01cacd451281e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081391"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307660"
 ---
 # <a name="windowsphone81appx-resource-type"></a>Тип ресурса windowsPhone81AppX
 
@@ -30,7 +31,7 @@ ms.locfileid: "27081391"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -53,8 +54,8 @@ ms.locfileid: "27081391"
 |identityPublisherHash|String|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|phoneProductIdentifier|String|Идентификатор продукта телефона.|
-|phonePublisherId|String|Publisher с идентификатором телефона.|
+|phoneProductIdentifier|String.|Идентификатор продукта телефона.|
+|phonePublisherId|String.|Publisher с идентификатором телефона.|
 |identityVersion|String|Версия удостоверения.|
 
 ## <a name="relationships"></a>Связи

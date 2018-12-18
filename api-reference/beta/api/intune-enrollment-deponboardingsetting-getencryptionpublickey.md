@@ -1,12 +1,13 @@
 ---
 title: функция getEncryptionPublicKey
 description: Получение маркера открытого ключа, используемого для шифрования программы регистрации устройства Apple
-ms.openlocfilehash: 3d15d1eb6655c97032100b131174b2ea356538e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 206d5fa297a89537c8e94e72fbc6f69fb00ce056
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075727"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305567"
 ---
 # <a name="getencryptionpublickey-function"></a>функция getEncryptionPublicKey
 
@@ -36,7 +37,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

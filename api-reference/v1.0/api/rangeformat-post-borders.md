@@ -1,12 +1,13 @@
 ---
 title: Создание объекта RangeBorder
 description: С помощью этого API можно создать объект RangeBorder.
-ms.openlocfilehash: 22a0e85a0e4e2ca6ad0a4fb2bdf503a01c892452
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: cf2db73c85b587288265a04dadb2b5b765029d3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025272"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306015"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -63,8 +64,7 @@ Content-length: 136
 ```
 В тексте запроса укажите представление JSON объекта [WorkbookRangeBorder](../resources/rangeborder.md) .
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

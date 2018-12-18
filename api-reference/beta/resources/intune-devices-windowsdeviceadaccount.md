@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsDeviceADAccount
 description: Н/Д
-ms.openlocfilehash: f1318f22c9bbb4b89779ddbdf130efbc6b01a7cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 58f0e86f6bddb11ffcd9462e1298456ad60f9c7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078648"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310103"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>Тип ресурса windowsDeviceADAccount
 
@@ -21,7 +22,7 @@ ms.locfileid: "27078648"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|password|String|Н/Д. Наследуется от [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
+|password|Строка|Н/Д. Наследуется от [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |domainName|String|Н/Д|
 |userName|String|Н/Д|
 

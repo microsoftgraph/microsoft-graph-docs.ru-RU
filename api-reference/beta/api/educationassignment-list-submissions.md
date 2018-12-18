@@ -1,12 +1,13 @@
 ---
 title: Отправка сообщений о списка
 description: Список всех отправленных данных, связанных с данного назначения. Преподаватель можно получить всех отправляемых во время студента можно получить только отправленные данные, связанные с ними.
-ms.openlocfilehash: b4b351fb96e7524fef8c17bba0ad6aeacd2b14db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: ac7bd47b4cbc4549f38239c4a68504bd20b3a2e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075662"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308430"
 ---
 # <a name="list-submissions"></a>Отправка сообщений о списка
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075662"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложения | Не поддерживается. | 
+|Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

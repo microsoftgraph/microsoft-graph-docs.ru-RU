@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsKioskAppBase
 description: Базовый класс для типов приложений
-ms.openlocfilehash: bbd2a961e86e698ff0b9a98401927c518beafe49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2afccff07d15fa1f2dfeff6a4ae9029494faa521
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077144"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307450"
 ---
 # <a name="windowskioskappbase-resource-type"></a>Тип ресурса windowsKioskAppBase
 
@@ -16,10 +17,10 @@ ms.locfileid: "27077144"
 
 Базовый класс для типов приложений
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитку приложение для макета Пуск. Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Представляет понятное имя приложения|
+|name|Строка|Представляет понятное имя приложения|
 
 ## <a name="relationships"></a>Связи
 Нет

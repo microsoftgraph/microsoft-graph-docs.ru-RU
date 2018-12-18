@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidPermissionActionType
 description: В случае, если приложение запрашивает разрешение опасных Android действие.
-ms.openlocfilehash: b70327d1238c5af2cf5a415d478d853a0ce55817
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2a8dcb29907e58d7dd421f170a6f054328774260
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081554"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305595"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>Тип перечисления androidPermissionActionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081554"
 
 В случае, если приложение запрашивает разрешение опасных Android действие.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |prompt|0|Н/Д|
 |autoGrant|1|Н/Д|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса teamsDeviceUsageUserCounts
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 9640af67efc18f0a70c636673169e884ce82d971
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 1255a8e1e92bb461d5c100c72e9030f57db5f8fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082099"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306512"
 ---
 # <a name="teamsdeviceusageusercounts-resource-type"></a>Тип ресурса teamsDeviceUsageUserCounts
 

@@ -1,12 +1,13 @@
 ---
 title: Получение объекта deviceCategory
 description: Чтение свойств и связей объекта deviceCategory.
-ms.openlocfilehash: 89b8f46aae22c87ea1462cc70eeb3e28e9bfa230
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c69e3ecf97889636dd00deab213caf116233f6b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027712"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309702"
 ---
 # <a name="get-devicecategory"></a>Получение объекта deviceCategory
 
@@ -16,7 +17,7 @@ ms.locfileid: "27027712"
 
 Чтение свойств и связей объекта [deviceCategory](../resources/intune-shared-devicecategory.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -43,7 +44,7 @@ GET /deviceManagement/deviceCategories/{deviceCategoryId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса variableManagementConditionExpression
 description: Оценивает условие состояние управления как логическое выражение.
-ms.openlocfilehash: 220cb54680755461edb9dab6edf076f8ae0c6a68
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a6ee46bd42139d519e845c7fe53ab3ae964833f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079144"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305924"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>Тип ресурса variableManagementConditionExpression
 
@@ -19,9 +20,9 @@ ms.locfileid: "27079144"
 Наследуется от [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|managementConditionId|String|Идентификатор условия управления, которая используется для оценки выражения.|
+|managementConditionId|String.|Идентификатор условия управления, которая используется для оценки выражения.|
 
 ## <a name="relationships"></a>Связи
 Нет

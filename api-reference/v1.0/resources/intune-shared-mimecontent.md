@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mimeContent
 description: Содержит свойства обычного содержимого MIME.
-ms.openlocfilehash: 7f25a1c16b86a45886cd763c1a8a3aa6142c47e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53776793fdd057ef057118decf2d72bb0b61a042
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026008"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307065"
 ---
 # <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
 
@@ -16,8 +17,8 @@ ms.locfileid: "27026008"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|String|Указывает MIME-тип содержимого.|
-|value|Двоичный|Массив байтов содержимого.|
+|type|Строка|Указывает MIME-тип содержимого.|
+|value|Binary|Массив байтов содержимого.|
 
 ## <a name="relationships"></a>Связи
 Нет

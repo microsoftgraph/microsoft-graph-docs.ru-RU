@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceConfigurationDeviceStatus
 description: Н/Д
-ms.openlocfilehash: c3e4df1b83c92ea5817bdfd8013015eb4dd29ce2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1ea36f7c936220148f751e155ede9ec7bb731cd8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025114"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306435"
 ---
 # <a name="deviceconfigurationdevicestatus-resource-type"></a>Тип ресурса deviceConfigurationDeviceStatus
 
@@ -25,7 +26,7 @@ ms.locfileid: "27025114"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
 |userName|String|Имя пользователя в отчете.|
 |deviceModel|String|Модель устройства в отчете.|

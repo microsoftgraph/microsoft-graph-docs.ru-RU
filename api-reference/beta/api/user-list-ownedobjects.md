@@ -1,12 +1,13 @@
 ---
 title: Список ownedObjects
 description: Получение списка объектов каталога, принадлежащих пользователю.
-ms.openlocfilehash: 3ab971a92a7e645b2b78874395e509deed2237ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1d6b3ba9ef27b11dc9be6b42de19e4ed09880d0d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081547"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307247"
 ---
 # <a name="list-ownedobjects"></a>Список ownedObjects
 
@@ -52,8 +53,7 @@ GET /users/{id | userPrincipalName}/ownedObjects
 GET https://graph.microsoft.com/beta/me/ownedObjects
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса outlookTaskFolder
 description: 'Папка, содержащая задачи Outlook (коллекцию объектов outlookTask). '
-ms.openlocfilehash: e3fb9d73dbd9458048749331d14f933d838d4243
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 505b6bf0fe172d701d85230b907727663595d9d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080321"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306211"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>Тип ресурса outlookTaskFolder
 
@@ -24,7 +25,7 @@ ms.locfileid: "27080321"
 |[Получение outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Получите свойства и связи указанной папки задач Outlook.|
 |[Создание outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Создание задачи Outlook в папке указанной задачи.|
 |[Перечисление задач](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) коллекции| Получите все задачи Outlook в указанной папке.|
-|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Обновление для записи свойств папки задач Outlook. |
+|[обновление](../api/outlooktaskfolder-update.md). | [outlookTaskFolder](outlooktaskfolder.md)   |Обновление для записи свойств папки задач Outlook. |
 |[Delete](../api/outlooktaskfolder-delete.md) | Нет |Удаление указанной папки задач Outlook.|
 |**Расширенные свойства**| | |
 |[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Создайте один или несколько расширенных свойств одно значение в новую или существующую папку задач Outlook.   |
@@ -35,14 +36,14 @@ ms.locfileid: "27080321"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|changeKey|String|Версия папки задач.|
-|id|String|Идентификатор папки задач, уникальные в почтовом ящике пользователя. Только для чтения.|
-|isDefaultFolder|Логический|Значение true, если папка является папки задач по умолчанию.|
-|name|String|Имя папки задач.|
+|changeKey|Строка|Версия папки задач.|
+|id|Строка|Идентификатор папки задач, уникальные в почтовом ящике пользователя. Только для чтения.|
+|isDefaultFolder|Boolean.|Значение true, если папка является папки задач по умолчанию.|
+|name|Строка|Имя папки задач.|
 |parentGroupKey|Guid|Уникальный идентификатор GUID для родительской папки задач группы.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция Многозначный расширенные свойства для папки задач. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенные свойства одно значение, определенное для папки задач. Только для чтения. Допускается значение null.|

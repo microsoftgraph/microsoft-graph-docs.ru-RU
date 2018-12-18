@@ -1,12 +1,13 @@
 ---
 title: Обновление windowsManagementAppHealthSummary
 description: Обновление свойства объекта windowsManagementAppHealthSummary.
-ms.openlocfilehash: e0f02a49b6585398d95d096aeb0b592438dbe68a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 274ffcc65706f7d730815d4a8350af2dee68f763
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078381"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307072"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>Обновление windowsManagementAppHealthSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,7 +48,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности сводки работоспособности приложения управления, Windows.|
+|id|Строка|Ключ сущности сводки работоспособности приложения управления, Windows.|
 |healthyDeviceCount|Int32|Счетчик работоспособном устройства.|
 |unhealthyDeviceCount|Int32|Счетчик неработоспособные устройства.|
 |unknownDeviceCount|Int32|Счетчик неизвестные устройства.|
@@ -73,8 +74,7 @@ Content-length: 89
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

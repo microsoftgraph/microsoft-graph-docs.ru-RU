@@ -1,12 +1,13 @@
 ---
 title: Действие assign
 description: Замените все целевые группы для политики.
-ms.openlocfilehash: dd892444d60338b73df4209eef00069667e15d48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 00ecb5d5e34fb067bbca36eee5ff190344319d7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080984"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307828"
 ---
 # <a name="assign-action"></a>Действие assign
 
@@ -36,7 +37,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -45,7 +46,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) коллекции|Список назначений настройки office|
 
@@ -77,8 +78,7 @@ Content-length: 299
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

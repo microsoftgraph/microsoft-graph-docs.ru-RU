@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления ratingAustraliaMoviesType
 description: Фильмы рейтинг метки в Австралии
-ms.openlocfilehash: 68eef0de18ad74c8fed76c4218bad0ae18a070f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d282b4c0e58fb0fb5141068d3d59a10052c83490
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081025"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307100"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>Тип перечисления ratingAustraliaMoviesType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081025"
 
 Фильмы рейтинг метки в Австралии
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешать все содержимое кино|
 |allBlocked|1|Не разрешать любое содержимое кино|

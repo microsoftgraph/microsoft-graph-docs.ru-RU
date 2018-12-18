@@ -1,12 +1,13 @@
 ---
 title: 'message: replyAll'
 description: 'Ответить всем получателям сообщения, указав комментария и изменение любые обновляемые свойства '
-ms.openlocfilehash: c79320229aad67a406a6519762c7cdd99af2ad50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 035212224bca5cb6d173be9ea447cf16406ebf36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081291"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307191"
 ---
 # <a name="message-replyall"></a>message: replyAll
 

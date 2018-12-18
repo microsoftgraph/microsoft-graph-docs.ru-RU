@@ -1,12 +1,13 @@
 ---
 title: Сообщение канала
 description: Получение единственного сообщения (без его ответы) в канале команды.
-ms.openlocfilehash: dcafeeddf80f5a2313136291bf528b2cf9683036
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 2da10f4151cc1ddaaa1bddfe376f4035a6baa180
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075293"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309228"
 ---
 # <a name="get-channel-message"></a>Сообщение канала
 

@@ -1,12 +1,13 @@
 ---
 title: 'Table: convertToRange'
 description: Преобразовывает таблицу в обычный диапазон ячеек. Все данные сохраняются.
-ms.openlocfilehash: fa91a62bebe3d59a2408999a42d06efd480a0fdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 7f05f21427e75ef3e86981f0ca52d1364ec86bf0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080339"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306813"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 
@@ -54,8 +55,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

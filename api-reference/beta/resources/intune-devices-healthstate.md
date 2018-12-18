@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления healthState
 description: Указывает состояние работоспособности приложения управления Windows.
-ms.openlocfilehash: d52b894983795c9cb46d92dce6985e4aab3dd94d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 831caf85b5beb4c90721aea44054b85d64817c84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082609"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308724"
 ---
 # <a name="healthstate-enum-type"></a>Тип перечисления healthState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082609"
 
 Указывает состояние работоспособности приложения управления Windows.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестное состояние.|
 |работоспособны|1|Работоспособном состоянии.|

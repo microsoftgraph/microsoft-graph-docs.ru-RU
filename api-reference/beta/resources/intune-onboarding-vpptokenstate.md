@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления vppTokenState
 description: Возможные состояния, связанный с маркером покупки программы корпоративного Apple.
-ms.openlocfilehash: 7180364063a48e1b0eeb2778ed4def7c0d3930a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 70ff74a888e351d7f55c64a68771e221f9a644b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078047"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306582"
 ---
 # <a name="vpptokenstate-enum-type"></a>Тип перечисления vppTokenState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27078047"
 
 Возможные состояния, связанный с маркером покупки программы корпоративного Apple.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние по умолчанию.|
 |допустимый|1|Маркер действителен.|

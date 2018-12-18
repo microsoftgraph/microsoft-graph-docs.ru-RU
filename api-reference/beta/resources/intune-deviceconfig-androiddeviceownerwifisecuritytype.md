@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidDeviceOwnerWiFiSecurityType
 description: Типы безопасности Wi-Fi Android устройства владельцем.
-ms.openlocfilehash: 09654e6863677bc7eb0a88452487bef183c649cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02f3830d82e08a10f6726cf1ebd2e7f04a2e8f2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081328"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306687"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>Тип перечисления androidDeviceOwnerWiFiSecurityType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081328"
 
 Типы безопасности Wi-Fi Android устройства владельцем.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |Откройте|0|Откройте (без проверки подлинности).|
 |WEP|1|Шифрования WEP.|

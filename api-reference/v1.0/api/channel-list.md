@@ -1,12 +1,13 @@
 ---
 title: Список каналов
 description: Получить список каналов в данной группы.
-ms.openlocfilehash: af97bbcd127c413ac11fcc0a8e40784a6c58b593
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: a09a4a25fb2324726bd7d8a8ac62290cfc3c5f92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222627"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307401"
 ---
 # <a name="list-channels"></a>Список каналов
 
@@ -43,7 +44,7 @@ GET /teams/{id}/channels
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [канала](../resources/channel.md) в теле ответа.
 
@@ -57,7 +58,7 @@ GET /teams/{id}/channels
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

@@ -1,12 +1,13 @@
 ---
 title: Перечисление объектов windowsInformationProtectionAppLockerFile
 description: Список свойств и связей объектов windowsInformationProtectionAppLockerFile.
-ms.openlocfilehash: 6d383ba2073b245e405871ba3cd39e480970c3d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d0c33fc5b529e4ab1028e811f6f0024c5ea8f63b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028100"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309557"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>Перечисление объектов windowsInformationProtectionAppLockerFile
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -55,8 +56,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProte
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

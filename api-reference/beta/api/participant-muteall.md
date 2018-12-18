@@ -1,12 +1,13 @@
 ---
 title: 'Участник: muteAll'
 description: Отключение всех участников в вызове.
-ms.openlocfilehash: f0da6f44801559fe7258d61fff9d5c87cc606702
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 26369f3dc0c6502950c46ed1f9befe80ea1a320a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075813"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310180"
 ---
 # <a name="participant-muteall"></a>Участник: muteAll
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075813"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложения                            | Нет                                        |
+| Application                            | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,10 +39,10 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр      | Тип    |Description|
+| Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция String|Участники, выключен.|
-|clientContext|String|Контекст клиента.|
+|clientContext|String.|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.

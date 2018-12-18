@@ -1,12 +1,13 @@
 ---
 title: Создание windows10VpnConfiguration
 description: Создание нового объекта windows10VpnConfiguration.
-ms.openlocfilehash: 18b11fd56a76a89d2432e3c07756dbf318876488
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02cbb520f32e26a3f4303521491031b0d3aeb090
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082405"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308843"
 ---
 # <a name="create-windows10vpnconfiguration"></a>Создание windows10VpnConfiguration
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,35 +49,35 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|connectionName|String|Имя подключения отображается для пользователя. Наследуется от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|connectionName|String.|Имя подключения отображается для пользователя. Наследуется от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |серверы|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) коллекции|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получить доступ к эти расположения в сети. Эта коллекция может содержать не более 500 элементов. Наследуется от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
-|customXml|Двоичный|Настраиваемые команды XML, которые настраиваются VPN-подключение. (UTF8 закодированный массив байтов) Наследуется от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|customXml|Binary|Настраиваемые команды XML, которые настраиваются VPN-подключение. (UTF8 закодированный массив байтов) Наследуется от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Тип конечного профиля. Возможные значения: `user`, `device`, `autoPilotDevice`.|
 |Тип подключения|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Тип подключения. Возможные значения: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`.|
-|enableSplitTunneling|Логический|Включение разделенное туннелирование.|
-|enableAlwaysOn|Логический|Включение режима всегда на.|
-|enableDeviceTunnel|Логический|Включение туннель устройства.|
-|enableDnsRegistration|Логический|Включение регистрации IP-адреса с внутренней DNS.|
+|enableSplitTunneling|Boolean.|Включение разделенное туннелирование.|
+|enableAlwaysOn|Boolean.|Включение режима всегда на.|
+|enableDeviceTunnel|Boolean.|Включение туннель устройства.|
+|enableDnsRegistration|Boolean.|Включение регистрации IP-адреса с внутренней DNS.|
 |dnsSuffixes|Коллекция String|Укажите DNS-суффиксы для добавления в список поиска DNS маршрутизацию короткие имена.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `customEapXml`.|
-|rememberUserCredentials|Логический|Не забудьте учетные данные пользователя.|
-|enableConditionalAccess|Логический|Включение условного доступа.|
-|enableSingleSignOnWithAlternateCertificate|Логический|Включение единого входа (SSO) с помощью альтернативного сертификата.|
+|rememberUserCredentials|Boolean.|Не забудьте учетные данные пользователя.|
+|enableConditionalAccess|Boolean.|Включение условного доступа.|
+|enableSingleSignOnWithAlternateCertificate|Boolean.|Включение единого входа (SSO) с помощью альтернативного сертификата.|
 |singleSignOnEku|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Единого входа расширенного использования ключа (EKU).|
-|singleSignOnIssuerHash|String|Хэш-функции поставщика единого входа.|
-|eapXml|Двоичный|Протокол расширенной проверки подлинности (EAP) XML. (массив байтов в кодировке UTF8).|
+|singleSignOnIssuerHash|String.|Хэш-функции поставщика единого входа.|
+|eapXml|Binary|Протокол расширенной проверки подлинности (EAP) XML. (массив байтов в кодировке UTF8).|
 |прокси-серверу|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Прокси-сервер.|
 |associatedApps|[windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md) коллекции|Связанные приложения. Эта коллекция может содержать не более 10 000 элементов.|
-|onlyAssociatedAppsCanUseConnection|Логический|Только связанного приложения могут использовать подключения (VPN-app).|
-|windowsInformationProtectionDomain|String|Сведения о защите Windows (НЗП) домена, связанного с этим подключением.|
+|onlyAssociatedAppsCanUseConnection|Boolean.|Только связанного приложения могут использовать подключения (VPN-app).|
+|windowsInformationProtectionDomain|String.|Сведения о защите Windows (НЗП) домена, связанного с этим подключением.|
 |trafficRules|[vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md) коллекции|Правила трафика. Эта коллекция может содержать не более 1000 элементов.|
 |маршруты|[vpnRoute](../resources/intune-deviceconfig-vpnroute.md) коллекции|Маршрутизация (не обязательно для сторонних поставщиков). Эта коллекция может содержать не более 1000 элементов.|
 |dnsRules|[vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md) коллекции|Правила DNS. Эта коллекция может содержать не более 1000 элементов.|
@@ -210,8 +211,7 @@ Content-length: 3323
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

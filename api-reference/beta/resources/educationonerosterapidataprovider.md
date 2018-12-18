@@ -1,12 +1,13 @@
 ---
 title: educationOneRosterApiDataProvider ресурсов
 description: Используется для настройки синхронизации профилей данных school при использовании OneRoster API в качестве источника ввода.
-ms.openlocfilehash: 0fd9c87c9934fc86d4e6788a5db42eb036fdb04f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 66c79c5e5d5ced4efcd635d2976e83887e545a9f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309571"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>educationOneRosterApiDataProvider ресурсов
 
@@ -18,11 +19,11 @@ ms.locfileid: "27078423"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:-|:-|:-|
-| **connectionUrl** | String | URL-адрес подключения к экземпляру OneRoster. |
+| **connectionUrl** | String. | URL-адрес подключения к экземпляру OneRoster. |
 | **schoolsIds** | Коллекция String |  Список sourcedIds school для синхронизации. |
-| **providerName** | String | Имя поставщика услуг OneRoster, определенный в [спецификации OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
+| **providerName** | String. | Имя поставщика услуг OneRoster, определенный в [спецификации OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
 | **connectionsettings используется для определения** | [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md) | Параметры подключения для экземпляра OneRoster. Должен иметь тип [educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) или [educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md). |
 | **пользовательских настроек** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Дополнительные настройки применяется для синхронизации профилей.|
 

@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления emailSyncSchedule
 description: Возможные значения для расписание синхронизации электронной почты.
-ms.openlocfilehash: 48c5d433815d5f27d018d97ac479641146754669
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f0e6673064f7e483756dfcfec8ce074e809dfcf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308682"
 ---
 # <a name="emailsyncschedule-enum-type"></a>Тип перечисления emailSyncSchedule
 
@@ -16,7 +17,7 @@ ms.locfileid: "27074968"
 
 Возможные значения для расписание синхронизации электронной почты.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|User Defined, значение по умолчанию, без цели.|
 |asMessagesArrive|1|Синхронизация по мере поступления сообщений.|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса outOfBoxExperienceSettings
 description: В соответствующем взаимодействия параметр
-ms.openlocfilehash: 7d685c7e229828309e2ee759396215c3cd8dfac9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 545fbe5c27063397a4d08c40729227804ebfc56d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082200"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308409"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>Тип ресурса outOfBoxExperienceSettings
 
@@ -16,14 +17,14 @@ ms.locfileid: "27082200"
 
 В соответствующем взаимодействия параметр
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|hidePrivacySettings|Логический|Показать или скрыть параметры конфиденциальности для пользователя|
-|hideEULA|Логический|Показать или скрыть лицензионное соглашение для пользователя|
+|hidePrivacySettings|Boolean.|Показать или скрыть параметры конфиденциальности для пользователя|
+|hideEULA|Boolean.|Показать или скрыть лицензионное соглашение для пользователя|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md).|Тип проверки подлинности соединения AAD. Возможные значения: `singleUser`, `shared`.|
-|skipKeyboardSelectionPage|Логический|Если набор, а затем пропустить раскладка клавиатуры страницы Если значение языка и региона|
-|hideEscapeLink|Логический|Если параметр имеет значение true, затем пользователь не может запуститься через с другой учетной записи для входа в компании|
+|skipKeyboardSelectionPage|Boolean.|Если набор, а затем пропустить раскладка клавиатуры страницы Если значение языка и региона|
+|hideEscapeLink|Boolean.|Если параметр имеет значение true, затем пользователь не может запуститься через с другой учетной записи для входа в компании|
 
 ## <a name="relationships"></a>Связи
 Нет

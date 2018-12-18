@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления deviceManagementPartnerAppType
 description: Тип приложения партнера.
-ms.openlocfilehash: da2b37debb4a2c3c9a8b6ebbe0170305a9ca5a70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a2958c30c06dffe193793e0a4bc2c314c89853a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024490"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306078"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>Тип перечисления deviceManagementPartnerAppType
 
@@ -14,7 +15,7 @@ ms.locfileid: "27024490"
 
 Тип приложения партнера.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Тип приложения партнера неизвестен.|
 |singleTenantApp|1|Партнерского приложения является одним клиентом в AAD.|

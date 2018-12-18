@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedDevice
 description: Устройства, которые управляются или предварительно регистрируются с помощью Intune
-ms.openlocfilehash: eaca9444df77c2f95f6a6f9845c9383cd53cd99f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac55f444eb4c87f65befbc1ba33c2e9bc65dced2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080192"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309613"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -108,11 +109,11 @@ ms.locfileid: "27080192"
  Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) коллекции|Указывает последний вход в систему пользователей устройства|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Отчеты о DateTime параметр preferMdmOverGroupPolicy имеет значение.  Если задано, параметры Intune MDM переопределяет параметры групповой политики в случае конфликта. Только для чтения.|
-|autopilotEnrolled|Логический|Отчеты при регистрации управляемой устройство через автопилот.|
-|requireUserEnrollmentApproval|Логический|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя.|
+|autopilotEnrolled|Boolean.|Отчеты при регистрации управляемой устройство через автопилот.|
+|requireUserEnrollmentApproval|Boolean.|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя.|
 |managementCertificateExpirationDate|DateTimeOffset|Дата окончания срока действия сертификата управления устройства отчетов|
-|iccid|String|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки.|
-|UDID|String|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств.|
+|iccid|String.|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки.|
+|UDID|String.|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств.|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тег области для этого устройства.|
 |windowsActiveMalwareCount|Int32|Число активных вредоносных программ для этого устройства windows|
 |windowsRemediatedMalwareCount|Int32|Число проверка вредоносных программ для этого устройства windows|
@@ -120,7 +121,7 @@ ms.locfileid: "27080192"
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Конфигурация диспетчера состоянием работоспособности клиента, только для устройств, управляемых MDM/ConfigMgr агента|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |detectedApps|Коллекция [detectedApp](../resources/intune-devices-detectedapp.md)|Все приложения, установленные на устройстве|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Категория устройства|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса person
 description: Объединенные данные о сотруднике из всех почты, контакты и социальными сетями. Пользователи могут быть локального контактов, контакты из социальных сетей, вашей организации каталогов и людей из последних коммуникаций (например, электронной почты и Скайп).
-ms.openlocfilehash: d9533c3550ec870c887b1e447fd0daf114bcfc83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: eccd5da56806b6608f5610579c61a171713990b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074926"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308556"
 ---
 # <a name="person-resource-type"></a>Тип ресурса person
 
@@ -33,7 +34,7 @@ ms.locfileid: "27074926"
 |id|строка|Уникальный идентификатор человека. Только для чтения.|
 |isFavorite|boolean|Имеет значение `true`, если пользователь добавил этого человека в список избранных.|
 |mailboxType|string|Тип почтового ящика, представленного адрес электронной почты пользователя.|
-|officeLocation|string|Расположение офиса человека.|
+|officeLocation;|string|Расположение офиса человека.|
 |personNotes|string|Заметки в произвольной форме о человеке, созданные пользователем.|
 |personType|string|Тип лица, например списка рассылки.|
 |phones|Коллекция [phone](phone.md)|Номера телефонов человека.|

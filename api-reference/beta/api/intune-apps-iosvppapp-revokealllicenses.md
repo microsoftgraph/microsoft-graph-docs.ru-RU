@@ -1,12 +1,13 @@
 ---
 title: Действие revokeAllLicenses
 description: Операций ввода-вывода REVOKE назначенных VPP лицензируемые для заданного приложения.
-ms.openlocfilehash: 576cbf5b63f9eb1f00a409483a36a483bf0c9892
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 970882bd4195ef0b478790d21f6addc937f9fd50
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082053"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309235"
 ---
 # <a name="revokealllicenses-action"></a>Действие revokeAllLicenses
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,9 +48,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
-|notifyManagedDevices|Логический|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
+|notifyManagedDevices|Boolean.|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
 
 
 
@@ -71,8 +72,7 @@ Content-length: 36
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

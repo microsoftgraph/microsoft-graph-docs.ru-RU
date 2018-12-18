@@ -1,12 +1,13 @@
 ---
 title: Список networkIPv6ConfigurationManagementConditions
 description: Свойства списка и связей объектов networkIPv6ConfigurationManagementCondition.
-ms.openlocfilehash: eb71bd64369a0cf02fff8e0390ba779a106d9684
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad138f098413cc09c06bc25e48d603d43f3d45a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077127"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305616"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>Список networkIPv6ConfigurationManagementConditions
 
@@ -37,7 +38,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -55,8 +56,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managementConditions
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

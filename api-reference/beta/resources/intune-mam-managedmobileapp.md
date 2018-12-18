@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedMobileApp
 description: Идентификатор для развертывания приложения.
-ms.openlocfilehash: 9bab1e53ff5fdc6065b1031349823e6ae4fee36c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f6cb1c74ef46bd08de695d1447c2b88cfeaee187
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077764"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308794"
 ---
 # <a name="managedmobileapp-resource-type"></a>Тип ресурса managedMobileApp
 
@@ -28,8 +29,8 @@ ms.locfileid: "27077764"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет

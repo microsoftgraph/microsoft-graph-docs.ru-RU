@@ -1,12 +1,13 @@
 ---
 title: onenoteEntityBaseModel ресурсов
 description: Это базовый тип для сущности OneNote.
-ms.openlocfilehash: 68a864437cec59d9b5f0d3e69161b49bca80231c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 25e2da6732fd831c6bbec5ae86bddeae7b702aa5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025938"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310467"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>onenoteEntityBaseModel ресурсов
 
@@ -33,9 +34,9 @@ ms.locfileid: "27025938"
 
 ```
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|self|String|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
+|self|Строка|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

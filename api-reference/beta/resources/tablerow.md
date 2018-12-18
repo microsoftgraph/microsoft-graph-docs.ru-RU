@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса TableRow
 description: Представляет строку в таблице.
-ms.openlocfilehash: ca363f8202d61364c609144eaa2fc136ab8b2928
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: de83ec8cae87f159c6f1f9687bd093873558c150
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078886"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309886"
 ---
 # <a name="tablerow-resource-type"></a>Тип ресурса TableRow
 
@@ -20,7 +21,7 @@ ms.locfileid: "27078886"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта TableRow](../api/tablerow-get.md) | [TableRow](tablerow.md) |Чтение свойств и связей объекта tableRow.|
-|[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)  |Обновление объекта tableRow. |
+|[обновление](../api/tablerow-update.md). | [TableRow](tablerow.md)  |Обновление объекта tableRow. |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Возвращает объект диапазона, связанный со всей строкой.|
 |[Delete](../api/tablerow-delete.md)|Нет|Удаляет строку из таблицы.|
 |[List](../api/tablerow-list.md) | Коллекция объектов [TableRow](tablerow.md) |Получение коллекции объектов tableRow. |

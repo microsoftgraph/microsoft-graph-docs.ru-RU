@@ -1,12 +1,13 @@
 ---
 title: Принудительно удалить домен
 description: Удаление домена, с помощью асинхронной операции длительным.
-ms.openlocfilehash: 20f00679998070b95af65292cadf83d76aa2add1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 85839d8bf7d36925661d0202c053574288763dc6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028328"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309116"
 ---
 # <a name="force-domain-deletion"></a>Принудительно удалить домен
 
@@ -57,7 +58,7 @@ POST /domains/{id}/forceDelete
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр | Тип | Description |
+| Параметр | Тип | Описание |
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| Параметр, чтобы отключить учетные записи пользователей, которые были изменены при переносе. Если учетная запись пользователя отключена, пользователь не разрешено вход. Если задано значение **true** `users` обновлена как часть этой операции будут отключены.  Значение по умолчанию — **true**. |
 

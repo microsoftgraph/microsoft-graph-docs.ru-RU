@@ -1,12 +1,13 @@
 ---
 title: Получение объекта RangeBorder
 description: Получение свойств и связей объекта rangeborder.
-ms.openlocfilehash: a1ace9b1712d29ad8bd18872949caf1a1cd1485d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 117610360ea6b01fe0ece873d6e0019ba03429d8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080360"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310152"
 ---
 # <a name="get-rangeborder"></a>Получение объекта RangeBorder
 
@@ -55,8 +56,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/borders(<sideIndex>)
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: 'TableSort: apply'
-description: Выполнение сортировки.
-ms.openlocfilehash: 766321aaf0d193e33f544b1d98bb9ccaefeb97d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Выполняет сортировку.
+author: lumine2008
+ms.openlocfilehash: d3e19dbd1ed77f32a215dfa165ebc796706b09a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024409"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309683"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 

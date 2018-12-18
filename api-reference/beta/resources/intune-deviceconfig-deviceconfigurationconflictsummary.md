@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceConfigurationConflictSummary
 description: Конфликт сводки для набора политик конфигурации устройства.
-ms.openlocfilehash: b292dd40bfb0502aa55109072ee9e9f59a8eb45a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c0caefc497c18fe7a8504324e048cec0e53bd3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078658"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308990"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>Тип ресурса deviceConfigurationConflictSummary
 
@@ -25,10 +26,10 @@ ms.locfileid: "27078658"
 |[Обновление deviceConfigurationConflictSummary](../api/intune-deviceconfig-deviceconfigurationconflictsummary-update.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|Обновление свойства объекта [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) .|
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик конфликтует с данного параметра|
-|id|String|Идентификатор для этого набора конфликтующие политики. Этот идентификатор — идентификаторы всех политик в ConflictingDeviceConfigurations в лексикографических порядке, разделенных точкой с подчеркивания.|
+|id|Строка|Идентификатор для этого набора конфликтующие политики. Этот идентификатор — идентификаторы всех политик в ConflictingDeviceConfigurations в лексикографических порядке, разделенных точкой с подчеркивания.|
 |contributingSettings|Коллекция String|Набор параметров конфликтует с указанной политики|
 |deviceCheckinsImpacted|Int32|Count возвраты, на которые оказывает влияние конфликтующие политики и параметры|
 

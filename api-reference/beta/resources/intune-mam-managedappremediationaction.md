@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления managedAppRemediationAction
 description: Администратор инициировал действие, которое необходимо применить в управляемых приложений.
-ms.openlocfilehash: 573ae79099f6158736ddad5454dd2239bb111bf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c464520051edcd5c3904f3b4b5bd5343dc043891
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077757"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306659"
 ---
 # <a name="managedappremediationaction-enum-type"></a>Тип перечисления managedAppRemediationAction
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077757"
 
 Администратор инициировал действие, которое необходимо применить в управляемых приложений.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |блок|0|приложения и соответствующих данных организации будет заблокирована|
 |Очистка|1|приложения и соответствующие данные компании очистить|

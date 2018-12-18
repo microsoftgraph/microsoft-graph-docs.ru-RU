@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса depEnrollmentBaseProfile
 description: Ресурс DepEnrollmentBaseProfile представляет профиля регистрации программы регистрации устройства Apple (DEP). Этот тип профиля должен быть назначен Apple DEP представленные числами, прежде чем соответствующих устройств можно зарегистрировать с помощью функции.
-ms.openlocfilehash: 172e0f0d4ed9b23f8c5a3d5226e24e4ac63b0527
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 26335fd3d35494b815dd43531ad54b4796dc861c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081594"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308374"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>Тип ресурса depEnrollmentBaseProfile
 
@@ -27,28 +28,28 @@ ms.locfileid: "27081594"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор GUID для объекта унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|String|Имя профиля, унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|описание|String|Описание профиля унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requiresUserAuthentication|Логический|Указывает, если профиль требует проверки подлинности пользователя унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|String|Конфигурация конечную точку URL-адрес для регистрации наследуется от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании. Наследуется от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|isDefault|Логический|Указывает, является ли профиля по умолчанию|
-|supervisedModeEnabled|Логический|Режим контролируемом значение True для включения значение false в противном случае. Просмотреть https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune для получения дополнительных сведений.|
-|supportDepartment|String|Сведения о поддержке отдела|
-|passCodeDisabled|Логический|Указывает, если область настройки секретный код отключен|
-|isMandatory|Логический|Указывает, является ли обязательных профилей|
-|locationDisabled|Логический|Указывает, если область настройки расположения службы отключен|
-|supportPhoneNumber|String|Номер телефона службы поддержки|
-|profileRemovalDisabled|Логический|Указывает, если параметр удаления профиль отключен|
-|restoreBlocked|Логический|Указывает, если область настройки восстановления блокируется|
-|appleIdDisabled|Логический|Указывает, если область настройки идентификатор Apple отключен|
-|termsAndConditionsDisabled|Логический|Указывает, если отключено «Сроками и условиями» область настройки|
-|touchIdDisabled|Логический|Указывает, если область настройки идентификатор сенсорного ввода отключен|
-|applePayDisabled|Логический|Указывает, если область настройки оплаты Apple отключен|
-|zoomDisabled|Логический|Указывает, если область настройки масштаба отключен|
-|siriDisabled|Логический|Указывает, если область настроек siri отключен|
-|diagnosticsDisabled|Логический|Указывает, если область настройки диагностики отключен|
+|id|Строка|Идентификатор GUID для объекта унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|Строка|Имя профиля, унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|описание|Строка|Описание профиля унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Boolean.|Указывает, если профиль требует проверки подлинности пользователя унаследованные от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String.|Конфигурация конечную точку URL-адрес для регистрации наследуется от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean.|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании. Наследуется от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|isDefault|Boolean|Указывает, является ли профиля по умолчанию|
+|supervisedModeEnabled|Boolean.|Режим контролируемом значение True для включения значение false в противном случае. Просмотреть https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune для получения дополнительных сведений.|
+|supportDepartment|String.|Сведения о поддержке отдела|
+|passCodeDisabled|Boolean.|Указывает, если область настройки секретный код отключен|
+|isMandatory|Boolean.|Указывает, является ли обязательных профилей|
+|locationDisabled|Boolean.|Указывает, если область настройки расположения службы отключен|
+|supportPhoneNumber|String.|Номер телефона службы поддержки|
+|profileRemovalDisabled|Boolean.|Указывает, если параметр удаления профиль отключен|
+|restoreBlocked|Boolean.|Указывает, если область настройки восстановления блокируется|
+|appleIdDisabled|Boolean.|Указывает, если область настройки идентификатор Apple отключен|
+|termsAndConditionsDisabled|Boolean.|Указывает, если отключено «Сроками и условиями» область настройки|
+|touchIdDisabled|Boolean.|Указывает, если область настройки идентификатор сенсорного ввода отключен|
+|applePayDisabled|Boolean.|Указывает, если область настройки оплаты Apple отключен|
+|zoomDisabled|Boolean.|Указывает, если область настройки масштаба отключен|
+|siriDisabled|Boolean.|Указывает, если область настроек siri отключен|
+|diagnosticsDisabled|Boolean.|Указывает, если область настройки диагностики отключен|
 
 ## <a name="relationships"></a>Связи
 Нет

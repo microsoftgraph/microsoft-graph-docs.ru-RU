@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса omaSettingDateTime
 description: Определение даты и времени параметра OMA.
-ms.openlocfilehash: c81e4aa257bf2ddf61bbb27613a44dab92af5a82
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2bf55308c230ec848f7ee58f66e710f1b31c1692
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082702"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307989"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Тип ресурса omaSettingDateTime
 
@@ -21,9 +22,9 @@ ms.locfileid: "27082702"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|описание|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|описание|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|DateTimeOffset|Значение.|
 
 ## <a name="relationships"></a>Связи

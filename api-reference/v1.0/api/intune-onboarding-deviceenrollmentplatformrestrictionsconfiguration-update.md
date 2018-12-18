@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта deviceEnrollmentPlatformRestrictionsConfiguration
 description: Обновление свойств объекта deviceEnrollmentPlatformRestrictionsConfiguration.
-ms.openlocfilehash: 2f78952d3eeae8f88e66ca1b5441141b7172153f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc7ac904df5ae18b0476cfeeb2d1c98a6533a7c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024585"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308206"
 ---
 # <a name="update-deviceenrollmentplatformrestrictionsconfiguration"></a>Обновление объекта deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -116,8 +117,7 @@ Content-length: 1650
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

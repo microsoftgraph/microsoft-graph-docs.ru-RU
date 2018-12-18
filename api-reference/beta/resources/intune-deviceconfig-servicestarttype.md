@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления serviceStartType
 description: Возможные значения xbox службы тип запуска
-ms.openlocfilehash: b99861955967c675859d53d420090d8ba63bdc5e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f859e0620abe9953f974778d3a816d7814572476
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081024"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308066"
 ---
 # <a name="servicestarttype-enum-type"></a>Тип перечисления serviceStartType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081024"
 
 Возможные значения xbox службы тип запуска
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |Вручную|0|Type(default) запустить вручную службы|
 |Автоматически|1|Тип запуска автоматической службы|

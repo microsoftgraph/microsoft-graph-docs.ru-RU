@@ -1,12 +1,13 @@
 ---
 title: Создание объекта Chart
 description: С помощью этого API можно создать объект Chart.
-ms.openlocfilehash: ca9c386a88c91ef149de9a27b97bf4bff4b8ed6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: abc58613e87c6765a83db62178e54ef58ce425d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082559"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306771"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
@@ -61,8 +62,7 @@ Content-length: 52
 ```
 Предоставьте в тексте запроса описание объекта [Chart](../resources/chart.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

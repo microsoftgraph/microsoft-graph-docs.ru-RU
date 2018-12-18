@@ -1,12 +1,13 @@
 ---
 title: Получение androidManagedStoreAccountEnterpriseSettings
 description: Чтение свойства и связи объекта androidManagedStoreAccountEnterpriseSettings.
-ms.openlocfilehash: 69e6d4c6fc35b0aed7abff0b02d001fe5e378c5e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e47c9c1456d35932fb040561c8d54cdfd78932e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078921"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306645"
 ---
 # <a name="get-androidmanagedstoreaccountenterprisesettings"></a>Получение androidManagedStoreAccountEnterpriseSettings
 
@@ -38,7 +39,7 @@ GET /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -56,8 +57,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccount
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

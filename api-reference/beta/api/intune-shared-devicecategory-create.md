@@ -1,12 +1,13 @@
 ---
 title: Создание объекта deviceCategory
 description: Создание объекта deviceCategory.
-ms.openlocfilehash: 18b52a9355abac794288b7dba2351776a4278ffc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a6481784721396bc6d7011fb91ea18e8119390bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075728"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307303"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceCategories
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,7 +53,7 @@ POST /deviceManagement/deviceCategories
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Obboarding**|
 |описание|String|Необязательное описание категории устройств.|
 |displayName|String|Отображаемое имя категории устройств.|
@@ -81,8 +82,7 @@ Content-length: 135
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ``` http
 HTTP/1.1 201 Created

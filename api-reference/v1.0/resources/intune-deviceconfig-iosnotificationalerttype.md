@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления iosNotificationAlertType
 description: Тип предупреждения параметров уведомления.
-ms.openlocfilehash: 30364baab8c270146f507c662c5b9106f2271cb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 26da4afdec3adeadaf4dd1f8513243d411f430c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026583"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309529"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>Тип перечисления iosNotificationAlertType
 
@@ -19,7 +20,7 @@ ms.locfileid: "27026583"
 |deviceDefault|0|Значение по умолчанию устройства, без цели.|
 |баннер|1|Заголовок.|
 |модальный|2|Модальные окна.|
-|Нет|3|Нет.|
+|none|3|Нет.|
 
 
 

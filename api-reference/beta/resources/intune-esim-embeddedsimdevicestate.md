@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса embeddedSIMDeviceState
 description: Описывает состояние развертывания кода активации внедренных диспетчера установки при использовании устройства.
-ms.openlocfilehash: 03d5d5d5dea85b3ecccf98fe57bc0611e2986063
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef7611e96b1b6f3bba0a3c59dead85ede41b2eda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081134"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308458"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Тип ресурса embeddedSIMDeviceState
 
@@ -27,15 +28,15 @@ ms.locfileid: "27081134"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для внедренных состояние устройства диспетчера установки. Значение, назначенное при создании создаваемый системой.|
+|id|Строка|Уникальный идентификатор для внедренных состояние устройства диспетчера установки. Значение, назначенное при создании создаваемый системой.|
 |createdDateTime|DateTimeOffset|Время создания внедренных состояние устройства диспетчера установки. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения внедренного состояние устройства диспетчера установки. Обновление со стороны службы.|
 |lastSyncDateTime|DateTimeOffset|Время, внедренные устройства диспетчера установки последнего возврата. Обновление со стороны службы.|
-|universalIntegratedCircuitCardIdentifier|String|Универсальные интегральной карточки идентификатор (UICCID) Идентификация оборудования, на котором профиль — для развертывания.|
+|universalIntegratedCircuitCardIdentifier|String.|Универсальные интегральной карточки идентификатор (UICCID) Идентификация оборудования, на котором профиль — для развертывания.|
 |deviceName|String|Имя устройства, к которому был подписки например рабочего СТОЛА ДЖО подготовить к работе|
 |userName|String|Имя пользователя, который был подписки подготовлен к например joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профилей, применяемые к устройства. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|stateDetails|String|Строка Описание подготовки состояния.|
+|stateDetails|String.|Строка Описание подготовки состояния.|
 
 ## <a name="relationships"></a>Связи
 Нет

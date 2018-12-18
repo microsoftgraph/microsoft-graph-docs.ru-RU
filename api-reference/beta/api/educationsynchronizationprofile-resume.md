@@ -1,12 +1,13 @@
 ---
 title: Возобновление синхронизации на educationSynchronizationProfile
 description: Возобновление синхронизации в конкретных школа профиль синхронизации данных клиента.
-ms.openlocfilehash: a184c6d7903da891d93275f87501ab38f83c3e88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: fd148db59d34f6455ba01e721453972f9cf65be4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079750"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305651"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Возобновление синхронизации на educationSynchronizationProfile
 
@@ -17,7 +18,7 @@ ms.locfileid: "27079750"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Permissions |
+| Тип разрешения | Разрешения |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт|Не поддерживается.|

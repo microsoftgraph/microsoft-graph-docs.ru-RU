@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления installIntent
 description: Возможные значения для цель установки выбран пункт Администрирование.
-ms.openlocfilehash: 27b3a48f91e9593ca0e4ebbf6d41ed2c289d20db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c32bafd0e9cc2b4325b9674a17ac8d14272bce9d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305840"
 ---
 # <a name="installintent-enum-type"></a>Тип перечисления installIntent
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077710"
 
 Возможные значения для цель установки выбран пункт Администрирование.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |доступен|0|Цель доступные установки.|
 |Обязательный|1|Цель требуется установить.|

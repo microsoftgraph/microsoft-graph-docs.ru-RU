@@ -1,12 +1,13 @@
 ---
 title: Обновление deviceManagementExchangeOnPremisesPolicy
 description: Обновление свойства объекта deviceManagementExchangeOnPremisesPolicy.
-ms.openlocfilehash: afc3df27d79b2cefab434126da8971f0fff5c8e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 260f20fd73320da901eedd1b95ff9b670f78e001
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076008"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305749"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>Обновление deviceManagementExchangeOnPremisesPolicy
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,8 +49,8 @@ PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
-|notificationContent|Двоичный|Текст уведомления, которое будет отправляться пользователям в карантин для этой политики. Это массив байтов кодировке UTF8 HTML.|
+|id|Строка|Н/Д|
+|notificationContent|Binary|Текст уведомления, которое будет отправляться пользователям в карантин для этой политики. Это массив байтов кодировке UTF8 HTML.|
 |defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Состояние доступа по умолчанию в Exchange. Это правило применяется глобально во всей организации Exchange. Возможные значения: `none`, `allow`, `block`, `quarantine`.|
 |accessRules|[deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md) коллекции|Список доступа устройств правила в Exchange. Правила доступа к применяются глобально во всей организации Exchange|
 |knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md) коллекции|Список классов устройств в Exchange|
@@ -92,8 +93,7 @@ Content-length: 586
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Обновление windowsManagementAppHealthState
 description: Обновление свойства объекта windowsManagementAppHealthState.
-ms.openlocfilehash: e333e974e4c6ec52da3044359db5464ce9fa47bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 72beed52f76531aacd3ba0c48e350954bd4ac525
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082342"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309088"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Обновление windowsManagementAppHealthState
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,12 +48,12 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
+|id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояния работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Управление приложения установленной версии Windows.|
+|installedVersion|String.|Управление приложения установленной версии Windows.|
 |lastCheckInDateTime|DateTimeOffset|Приложение управления Windows последний раз.|
 |deviceName|String|Имя устройства, на какие Windows установлено приложение управления.|
-|deviceOSVersion|String|10 версии Windows устройства, на какие Windows установлено приложение управления.|
+|deviceOSVersion|String.|10 версии Windows устройства, на какие Windows установлено приложение управления.|
 
 
 
@@ -77,8 +78,7 @@ Content-length: 230
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windows10CompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Windows 10.
-ms.openlocfilehash: b153ef661104a4160cb57af312d88e1069842bd7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a2a88ee828204ff1ee5bdd8bfb22431b3e3de0f1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076282"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308535"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Тип ресурса windows10CompliancePolicy
 
@@ -28,14 +29,14 @@ ms.locfileid: "27076282"
 |[Обновление windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-update.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|Обновление свойств объекта [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---|:---|:---|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |passwordRequired|Boolean|Указывает, что для разблокировки устройства с Windows требуется пароль.|
 |passwordBlockSimple|Boolean|Указывает, требуется ли блокировать простой пароль.|
@@ -56,17 +57,17 @@ ms.locfileid: "27076282"
 |secureBootEnabled|Boolean|Указывает, что служба подтверждения работоспособности устройства с Windows должна сообщать о работоспособности (безопасная загрузка включена).|
 |codeIntegrityEnabled|Boolean|Указывает, что служба подтверждения работоспособности устройства с Windows должна сообщать о работоспособности.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
-|activeFirewallRequired|Логический|Требуется active брандмауэра на устройствах Windows.|
-|defenderEnabled|Логический|Требуется Защитник Windows защиты от вредоносных программ на устройствах Windows.|
-|defenderVersion|String|Требуется Минимальная версия Защитника Windows защиты от вредоносных программ на устройствах Windows.|
-|signatureOutOfDate|Логический|Требование подписи защиты от вредоносных программ Защитника Windows быть в курсе устройств Windows.|
-|rtpEnabled|Логический|Требовать защиту в реальном времени защиты от вредоносных программ Защитника Windows на устройствах Windows.|
-|antivirusRequired|Логический|Требуется антивирусное решение, зарегистрированных в центр Decurity Windows должна находиться на и мониторинг (например Symantec, Защитник Windows).|
-|antiSpywareRequired|Логический|Требуется любой антишпионское решение, зарегистрированные с центром Decurity Windows должна находиться на и мониторинг (например, Symantec, Защитник Windows).|
+|activeFirewallRequired|Boolean.|Требуется active брандмауэра на устройствах Windows.|
+|defenderEnabled|Boolean.|Требуется Защитник Windows защиты от вредоносных программ на устройствах Windows.|
+|defenderVersion|String.|Требуется Минимальная версия Защитника Windows защиты от вредоносных программ на устройствах Windows.|
+|signatureOutOfDate|Boolean.|Требование подписи защиты от вредоносных программ Защитника Windows быть в курсе устройств Windows.|
+|rtpEnabled|Boolean.|Требовать защиту в реальном времени защиты от вредоносных программ Защитника Windows на устройствах Windows.|
+|antivirusRequired|Boolean.|Требуется антивирусное решение, зарегистрированных в центр Decurity Windows должна находиться на и мониторинг (например Symantec, Защитник Windows).|
+|antiSpywareRequired|Boolean.|Требуется любой антишпионское решение, зарегистрированные с центром Decurity Windows должна находиться на и мониторинг (например, Symantec, Защитник Windows).|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) коллекции|Допустимый операционной системы выполните построение диапазонов на устройствах Windows. Эта коллекция может содержать не более 10 000 элементов.|
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Требовать защиту от угроз устройства минимальным риском и сообщение о несовместимости. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Логический|Требовать необходимо рассмотреть состояние соответствия SCCM во внимание для состояния Intune соответствия требованиям.|
+|configurationManagerComplianceRequired|Boolean.|Требовать необходимо рассмотреть состояние соответствия SCCM во внимание для состояния Intune соответствия требованиям.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

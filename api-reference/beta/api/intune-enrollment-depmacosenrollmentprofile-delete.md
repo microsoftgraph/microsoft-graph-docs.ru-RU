@@ -1,12 +1,13 @@
 ---
 title: Удаление depMacOSEnrollmentProfile
 description: Удаляет depMacOSEnrollmentProfile.
-ms.openlocfilehash: 61b7ad694e5e8470ea2f66506d6b00de345b05fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bad8bc7869ccd4bf367038e53faba7c366a5846b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308542"
 ---
 # <a name="delete-depmacosenrollmentprofile"></a>Удаление depMacOSEnrollmentProfile
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultM
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,8 +55,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
 ```

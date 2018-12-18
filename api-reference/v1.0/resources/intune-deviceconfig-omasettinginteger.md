@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса omaSettingInteger
 description: Определение целого числа параметра OMA.
-ms.openlocfilehash: 36c22b423161d9f3c58c3085fb7b040c663d460b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6a2e6fe6e6782159afa99d91785ae9e854a2e99c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027897"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306554"
 ---
 # <a name="omasettinginteger-resource-type"></a>Тип ресурса omaSettingInteger
 
@@ -19,9 +20,9 @@ ms.locfileid: "27027897"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|описание|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|описание|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Строка|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Int32|Значение.|
 
 ## <a name="relationships"></a>Связи

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса embeddedSIMActivationCodePool
 description: Пул представляет группу внедренных коды активации диспетчера установки.
-ms.openlocfilehash: f6c80d82d4be6a794547e3ec0b93d4206d7edbe8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f756488d4e00e3d69bebf0e484f01aeec5650a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081136"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307142"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>Тип ресурса embeddedSIMActivationCodePool
 
@@ -28,8 +29,8 @@ ms.locfileid: "27081136"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для внедренных пула кода активации диспетчера установки. Значение, назначенное при создании создаваемый системой.|
-|displayName|String|Имя группы внедренных диспетчера установки активации кода определенные администратором.|
+|id|Строка|Уникальный идентификатор для внедренных пула кода активации диспетчера установки. Значение, назначенное при создании создаваемый системой.|
+|displayName|Строка|Имя группы внедренных диспетчера установки активации кода определенные администратором.|
 |createdDateTime|DateTimeOffset|Время создания внедренных пула кода активации диспетчера установки. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения внедренного пула кода активации диспетчера установки. Обновление со стороны службы.|
 |activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) коллекции|Коды активации, которые относятся к этот пул. Это свойство навигации использовать для активации кодов Intune, но не может использоваться для чтения из Intune коды активации.|

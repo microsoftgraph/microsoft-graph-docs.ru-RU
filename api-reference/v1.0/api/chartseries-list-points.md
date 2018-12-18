@@ -1,12 +1,13 @@
 ---
 title: Список точек
 description: Получение списка объектов chartpoints.
-ms.openlocfilehash: f1a2e180a66545174acfb69a3105f4cb6a9704ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 7385c589f87604e454c8cd7e5a9cda260feb9440
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027150"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309305"
 ---
 # <a name="list-points"></a>Список точек
 
@@ -51,8 +52,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

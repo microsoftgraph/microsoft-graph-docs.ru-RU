@@ -1,12 +1,13 @@
 ---
 title: Управление устройствами в Microsoft Intune
 description: ''
-ms.openlocfilehash: ba6f7d86b86718f7121b2c4f075b65f13b5e2176
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ed7dde45199ae411b84f29e31d00a9ca936f9d04
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079675"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310033"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -14,7 +15,7 @@ ms.locfileid: "27079675"
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
 
-- [Разрешения администратора](intune-devices-adminconsent.md)
+- [Согласие администратора](intune-devices-adminconsent.md)
 - [Состояние разрешения администратора](intune-devices-adminconsentstate.md)
 - [Сертификат push-уведомлений Apple](intune-devices-applepushnotificationcertificate.md)
 - [Субъект аудита](intune-auditing-auditactor.md)

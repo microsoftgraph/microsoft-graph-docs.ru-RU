@@ -1,12 +1,13 @@
 ---
 title: 'WorksheetProtection: protect'
 description: Защита листа. Выдает исключение, если лист защищен.
-ms.openlocfilehash: 6030a8ed75270356883c791a8597209e597edb1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ac438fd76587f33aaa26928b34423bd2980e3560
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308045"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
 

@@ -1,12 +1,13 @@
 ---
 title: Обновление roleScopeTag
 description: Обновление свойства объекта roleScopeTag.
-ms.openlocfilehash: d18f4f47be9aab01b1221e9ce7736878bb059bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3e1cdc0997e0c2f7ebb8d70c730785e40b4143d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081329"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306946"
 ---
 # <a name="update-rolescopetag"></a>Обновление roleScopeTag
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -48,9 +49,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|String|Отображение или понятное имя тега область роли.|
-|описание|String|Описание тег область роли.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|Строка|Отображение или понятное имя тега область роли.|
+|описание|Строка|Описание тег область роли.|
 
 
 
@@ -72,8 +73,7 @@ Content-length: 82
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

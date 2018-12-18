@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта windowsInformationProtectionAppLockerFile
 description: Обновление свойств объекта windowsInformationProtectionAppLockerFile.
-ms.openlocfilehash: c54a29650dc47c5cc6e5e9535ee55846a8e3439b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdf14722d82da5afa2d51cb87b8e8c6ea69b9bf5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027352"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309837"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>Обновление объекта windowsInformationProtectionAppLockerFile
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -50,9 +51,9 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |:---|:---|:---|
 |displayName|String|Понятное имя|
 |fileHash|String|Хэш SHA256 для файла|
-|file|Двоичный|Файл в виде массива байтов|
-|id|String|Ключ объекта.|
-|version|String|Версия объекта.|
+|file|Binary|Файл в виде массива байтов|
+|id|Строка|Ключ объекта.|
+|version|Строка|Версия объекта.|
 
 
 
@@ -77,8 +78,7 @@ Content-length: 211
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

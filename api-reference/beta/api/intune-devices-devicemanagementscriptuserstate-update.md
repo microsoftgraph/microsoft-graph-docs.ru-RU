@@ -1,12 +1,13 @@
 ---
 title: Обновление deviceManagementScriptUserState
 description: Обновление свойства объекта deviceManagementScriptUserState.
-ms.openlocfilehash: f6428579bc19a005a1bf10b769916ac302304485
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a2601df84b022d13fd45ef3c506a4ee229fe6ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307835"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Обновление deviceManagementScriptUserState
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -47,10 +48,10 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности состояние пользователя устройства управления скрипта.|
+|id|Строка|Ключ сущности состояние пользователя устройства управления скрипта.|
 |successDeviceCount|Int32|Число допустимых устройства для определенного пользователя.|
 |errorDeviceCount|Int32|Число ошибок устройства для определенного пользователя.|
-|userPrincipalName|String|Имени участника-пользователя для определенного пользователя.|
+|userPrincipalName|Строка|Имени участника-пользователя для определенного пользователя.|
 
 
 
@@ -73,8 +74,7 @@ Content-length: 110
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

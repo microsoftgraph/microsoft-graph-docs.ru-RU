@@ -1,12 +1,13 @@
 ---
 title: Список TableColumnCollection
 description: Получение списка объектов tablecolumn.
-ms.openlocfilehash: a4949aed2b90fe2a614974de2460b98168f41dd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b050d9e322df9aa6f6a07d509ccf7a17637e77e6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025908"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309543"
 ---
 # <a name="list-tablecolumncollection"></a>Список TableColumnCollection
 
@@ -52,8 +53,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
