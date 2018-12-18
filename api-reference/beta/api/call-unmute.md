@@ -1,55 +1,56 @@
 ---
 title: 'Вызовите: Включение звука'
 description: Позволяет приложениям включить сам.
-ms.openlocfilehash: de2029a2fa5abeb777f83e8651c8b6c5a2c15991
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 7ac86b12363e692930597e3394ca0f78b30b0dee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078219"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343472"
 ---
-# <a name="call-unmute"></a><span data-ttu-id="889bf-103">Вызовите: Включение звука</span><span class="sxs-lookup"><span data-stu-id="889bf-103">call: unmute</span></span>
+# <a name="call-unmute"></a><span data-ttu-id="a77df-103">Вызовите: Включение звука</span><span class="sxs-lookup"><span data-stu-id="a77df-103">call: unmute</span></span>
 
-> <span data-ttu-id="889bf-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="889bf-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="889bf-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="889bf-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a77df-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a77df-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a77df-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a77df-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="889bf-106">Позволяет приложениям включить сам.</span><span class="sxs-lookup"><span data-stu-id="889bf-106">Allows the application to unmute itself.</span></span>
+<span data-ttu-id="a77df-106">Позволяет приложениям включить сам.</span><span class="sxs-lookup"><span data-stu-id="a77df-106">Allows the application to unmute itself.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="889bf-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="889bf-107">Permissions</span></span>
-<span data-ttu-id="889bf-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="889bf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a77df-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a77df-107">Permissions</span></span>
+<span data-ttu-id="a77df-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a77df-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="889bf-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="889bf-110">Permission type</span></span>                        | <span data-ttu-id="889bf-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="889bf-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a77df-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a77df-110">Permission type</span></span>                        | <span data-ttu-id="a77df-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a77df-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="889bf-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="889bf-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="889bf-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="889bf-113">Not supported.</span></span>                               |
-| <span data-ttu-id="889bf-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="889bf-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="889bf-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="889bf-115">Not supported.</span></span>                               |
-| <span data-ttu-id="889bf-116">Для приложения</span><span class="sxs-lookup"><span data-stu-id="889bf-116">Application</span></span>                            | <span data-ttu-id="889bf-117">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="889bf-117">None.</span></span>                                        |
+| <span data-ttu-id="a77df-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a77df-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="a77df-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a77df-113">Not supported.</span></span>                               |
+| <span data-ttu-id="a77df-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a77df-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a77df-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a77df-115">Not supported.</span></span>                               |
+| <span data-ttu-id="a77df-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a77df-116">Application</span></span>                            | <span data-ttu-id="a77df-117">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="a77df-117">None.</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="889bf-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="889bf-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a77df-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a77df-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/unmute
 POST /applications/{id}/calls/{id}/unmute
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="889bf-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="889bf-119">Request headers</span></span>
-| <span data-ttu-id="889bf-120">Имя</span><span class="sxs-lookup"><span data-stu-id="889bf-120">Name</span></span>          | <span data-ttu-id="889bf-121">Описание</span><span class="sxs-lookup"><span data-stu-id="889bf-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="a77df-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a77df-119">Request headers</span></span>
+| <span data-ttu-id="a77df-120">Имя</span><span class="sxs-lookup"><span data-stu-id="a77df-120">Name</span></span>          | <span data-ttu-id="a77df-121">Описание</span><span class="sxs-lookup"><span data-stu-id="a77df-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="889bf-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="889bf-122">Authorization</span></span> | <span data-ttu-id="889bf-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="889bf-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a77df-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a77df-122">Authorization</span></span> | <span data-ttu-id="a77df-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a77df-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="889bf-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="889bf-125">Request body</span></span>
-<span data-ttu-id="889bf-126">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="889bf-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a77df-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a77df-125">Request body</span></span>
+<span data-ttu-id="a77df-126">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="a77df-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="889bf-127">Параметр</span><span class="sxs-lookup"><span data-stu-id="889bf-127">Parameter</span></span>      | <span data-ttu-id="889bf-128">Тип</span><span class="sxs-lookup"><span data-stu-id="889bf-128">Type</span></span>    |<span data-ttu-id="889bf-129">Description</span><span class="sxs-lookup"><span data-stu-id="889bf-129">Description</span></span>|
+| <span data-ttu-id="a77df-127">Параметр</span><span class="sxs-lookup"><span data-stu-id="a77df-127">Parameter</span></span>      | <span data-ttu-id="a77df-128">Тип</span><span class="sxs-lookup"><span data-stu-id="a77df-128">Type</span></span>    |<span data-ttu-id="a77df-129">Описание</span><span class="sxs-lookup"><span data-stu-id="a77df-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="889bf-130">clientContext</span><span class="sxs-lookup"><span data-stu-id="889bf-130">clientContext</span></span>|<span data-ttu-id="889bf-131">String</span><span class="sxs-lookup"><span data-stu-id="889bf-131">String</span></span>|<span data-ttu-id="889bf-132">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="889bf-132">The client context.</span></span>|
+|<span data-ttu-id="a77df-130">clientContext</span><span class="sxs-lookup"><span data-stu-id="a77df-130">clientContext</span></span>|<span data-ttu-id="a77df-131">String.</span><span class="sxs-lookup"><span data-stu-id="a77df-131">String</span></span>|<span data-ttu-id="a77df-132">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="a77df-132">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="889bf-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="889bf-133">Response</span></span>
-<span data-ttu-id="889bf-134">Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="889bf-134">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a77df-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="a77df-133">Response</span></span>
+<span data-ttu-id="a77df-134">Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="a77df-134">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="889bf-135">Пример</span><span class="sxs-lookup"><span data-stu-id="889bf-135">Example</span></span>
-<span data-ttu-id="889bf-136">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="889bf-136">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="a77df-135">Пример</span><span class="sxs-lookup"><span data-stu-id="a77df-135">Example</span></span>
+<span data-ttu-id="a77df-136">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="a77df-136">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="889bf-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="889bf-137">Request</span></span>
-<span data-ttu-id="889bf-138">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="889bf-138">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="a77df-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="a77df-137">Request</span></span>
+<span data-ttu-id="a77df-138">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a77df-138">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -65,9 +66,9 @@ Content-Length: 46
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="889bf-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="889bf-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a77df-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="a77df-139">Response</span></span>
 
-> <span data-ttu-id="889bf-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="889bf-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a77df-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a77df-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

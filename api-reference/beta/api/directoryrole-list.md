@@ -1,49 +1,50 @@
 ---
 title: Список объектов directoryRole
 description: Список ролей каталога, активированных в клиенте.
-ms.openlocfilehash: b7753fc62a7d3412e4f017eb644644561d1faf05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 102360728e31e7fbec10c165ab026432a5b71585
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079440"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350745"
 ---
-# <a name="list-directoryroles"></a><span data-ttu-id="8edb2-103">Список объектов directoryRole</span><span class="sxs-lookup"><span data-stu-id="8edb2-103">List directoryRoles</span></span>
+# <a name="list-directoryroles"></a><span data-ttu-id="1525b-103">Список объектов directoryRole</span><span class="sxs-lookup"><span data-stu-id="1525b-103">List directoryRoles</span></span>
 
-> <span data-ttu-id="8edb2-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="8edb2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8edb2-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8edb2-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1525b-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="1525b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1525b-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1525b-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="8edb2-106">Список ролей каталога, активированных в клиенте.</span><span class="sxs-lookup"><span data-stu-id="8edb2-106">List the directory roles that are activated in the tenant.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8edb2-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8edb2-107">Permissions</span></span>
-<span data-ttu-id="8edb2-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8edb2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1525b-106">Список ролей каталога, активированных в клиенте.</span><span class="sxs-lookup"><span data-stu-id="1525b-106">List the directory roles that are activated in the tenant.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1525b-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1525b-107">Permissions</span></span>
+<span data-ttu-id="1525b-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1525b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8edb2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8edb2-110">Permission type</span></span>      | <span data-ttu-id="8edb2-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8edb2-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1525b-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1525b-110">Permission type</span></span>      | <span data-ttu-id="1525b-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1525b-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8edb2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8edb2-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8edb2-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="8edb2-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="8edb2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8edb2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8edb2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8edb2-115">Not supported.</span></span>    |
-|<span data-ttu-id="8edb2-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8edb2-116">Application</span></span> | <span data-ttu-id="8edb2-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8edb2-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="1525b-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1525b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1525b-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1525b-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="1525b-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1525b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1525b-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1525b-115">Not supported.</span></span>    |
+|<span data-ttu-id="1525b-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1525b-116">Application</span></span> | <span data-ttu-id="1525b-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1525b-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8edb2-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8edb2-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1525b-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1525b-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="8edb2-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="8edb2-119">Optional query parameters</span></span>
-<span data-ttu-id="8edb2-120">Этот метод **не** поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика (например, $filter не поддерживается).</span><span class="sxs-lookup"><span data-stu-id="8edb2-120">This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1525b-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1525b-119">Optional query parameters</span></span>
+<span data-ttu-id="1525b-120">Этот метод **не** поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика (например, $filter не поддерживается).</span><span class="sxs-lookup"><span data-stu-id="1525b-120">This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8edb2-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8edb2-121">Request headers</span></span>
-| <span data-ttu-id="8edb2-122">Имя</span><span class="sxs-lookup"><span data-stu-id="8edb2-122">Name</span></span>       | <span data-ttu-id="8edb2-123">Тип</span><span class="sxs-lookup"><span data-stu-id="8edb2-123">Type</span></span> | <span data-ttu-id="8edb2-124">Описание</span><span class="sxs-lookup"><span data-stu-id="8edb2-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1525b-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1525b-121">Request headers</span></span>
+| <span data-ttu-id="1525b-122">Имя</span><span class="sxs-lookup"><span data-stu-id="1525b-122">Name</span></span>       | <span data-ttu-id="1525b-123">Тип</span><span class="sxs-lookup"><span data-stu-id="1525b-123">Type</span></span> | <span data-ttu-id="1525b-124">Описание</span><span class="sxs-lookup"><span data-stu-id="1525b-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="8edb2-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="8edb2-125">Authorization</span></span>  | <span data-ttu-id="8edb2-126">string</span><span class="sxs-lookup"><span data-stu-id="8edb2-126">string</span></span>  | <span data-ttu-id="8edb2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8edb2-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1525b-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="1525b-125">Authorization</span></span>  | <span data-ttu-id="1525b-126">string</span><span class="sxs-lookup"><span data-stu-id="1525b-126">string</span></span>  | <span data-ttu-id="1525b-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1525b-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8edb2-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8edb2-129">Request body</span></span>
-<span data-ttu-id="8edb2-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8edb2-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1525b-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1525b-129">Request body</span></span>
+<span data-ttu-id="1525b-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1525b-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8edb2-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="8edb2-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1525b-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="1525b-131">Response</span></span>
 
-<span data-ttu-id="8edb2-132">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryRole](../resources/directoryrole.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8edb2-132">If successful, this method returns a `200 OK` response code and collection of [directoryRole](../resources/directoryrole.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="8edb2-133">Пример</span><span class="sxs-lookup"><span data-stu-id="8edb2-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8edb2-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="8edb2-134">Request</span></span>
-<span data-ttu-id="8edb2-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8edb2-135">Here is an example of the request.</span></span>
+<span data-ttu-id="1525b-132">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryRole](../resources/directoryrole.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1525b-132">If successful, this method returns a `200 OK` response code and collection of [directoryRole](../resources/directoryrole.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1525b-133">Пример</span><span class="sxs-lookup"><span data-stu-id="1525b-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1525b-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="1525b-134">Request</span></span>
+<span data-ttu-id="1525b-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1525b-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directoryroles"
@@ -51,9 +52,8 @@ GET /directoryRoles
 ```http
 GET https://graph.microsoft.com/beta/directoryRoles
 ```
-##### <a name="response"></a><span data-ttu-id="8edb2-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="8edb2-136">Response</span></span>
-<span data-ttu-id="8edb2-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="8edb2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1525b-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="1525b-136">Response</span></span>
+<span data-ttu-id="1525b-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="1525b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
