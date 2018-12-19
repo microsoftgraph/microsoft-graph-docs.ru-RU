@@ -1,12 +1,13 @@
 ---
 title: Обзор Microsoft Graph
-description: " Security и Windows 10. "
-ms.openlocfilehash: 7d8ed0d16ed24e20d1b48a1e44f573dce24d838f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Microsoft Graph открывает доступ к данным и средствам искусственного интеллекта в Microsoft 365. С помощью единой модели программируемости Microsoft Graph можно работать с колоссальным объемом данных в Office 365, Enterprise Mobility + Security и Windows 10.
+author: jthake-msft
+ms.openlocfilehash: 754580e0f5a6af628a2bf18c11a0a20d3c2d1329
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092622"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349044"
 ---
 # <a name="overview-of-microsoft-graph"></a>Обзор Microsoft Graph
 
