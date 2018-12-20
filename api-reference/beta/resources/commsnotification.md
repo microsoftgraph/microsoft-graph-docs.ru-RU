@@ -1,28 +1,31 @@
 ---
-title: Тип ресурса уведомлений
-description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: c09927cbe133c945b83a3bfc1b0eb74ef00bce2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: Тип ресурса commsNotification
+description: Связь уведомлений базовый тип, который был опубликован серверами коммуникаций для уведомление об изменениях.
+author: VinodRavichandran
+ms.openlocfilehash: 65cb2884b98d25008779fcb80968a7b4d0481033
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081265"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380270"
 ---
-# <a name="notification-resource-type"></a><span data-ttu-id="c5af6-103">Тип ресурса уведомлений</span><span class="sxs-lookup"><span data-stu-id="c5af6-103">notification resource type</span></span>
+# <a name="commsnotification-resource-type"></a><span data-ttu-id="4d1f3-103">Тип ресурса commsNotification</span><span class="sxs-lookup"><span data-stu-id="4d1f3-103">commsNotification resource type</span></span>
 
-> <span data-ttu-id="c5af6-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="c5af6-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c5af6-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c5af6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4d1f3-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="4d1f3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4d1f3-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4d1f3-105">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c5af6-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="c5af6-106">Properties</span></span>
-| <span data-ttu-id="c5af6-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="c5af6-107">Property</span></span>       | <span data-ttu-id="c5af6-108">Тип</span><span class="sxs-lookup"><span data-stu-id="c5af6-108">Type</span></span>    | <span data-ttu-id="c5af6-109">Описание</span><span class="sxs-lookup"><span data-stu-id="c5af6-109">Description</span></span>                                                |
+<span data-ttu-id="4d1f3-106">Связь уведомлений базовый тип, который был опубликован серверами коммуникаций для уведомление об изменениях.</span><span class="sxs-lookup"><span data-stu-id="4d1f3-106">Communications notification base type that is published by Communications servers to notify changes.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="4d1f3-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="4d1f3-107">Properties</span></span>
+| <span data-ttu-id="4d1f3-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="4d1f3-108">Property</span></span>       | <span data-ttu-id="4d1f3-109">Тип</span><span class="sxs-lookup"><span data-stu-id="4d1f3-109">Type</span></span>    | <span data-ttu-id="4d1f3-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4d1f3-110">Description</span></span>                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| <span data-ttu-id="c5af6-110">changeType</span><span class="sxs-lookup"><span data-stu-id="c5af6-110">changeType</span></span>     | <span data-ttu-id="c5af6-111">String</span><span class="sxs-lookup"><span data-stu-id="c5af6-111">String</span></span>  | <span data-ttu-id="c5af6-112">Возможные значения: `created`, `updated`, `deleted`.</span><span class="sxs-lookup"><span data-stu-id="c5af6-112">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
-| <span data-ttu-id="c5af6-113">resource</span><span class="sxs-lookup"><span data-stu-id="c5af6-113">resource</span></span>       | <span data-ttu-id="c5af6-114">String</span><span class="sxs-lookup"><span data-stu-id="c5af6-114">String</span></span>  | <span data-ttu-id="c5af6-115">URI-идентификатор ресурса, который был изменен.</span><span class="sxs-lookup"><span data-stu-id="c5af6-115">URI of the resource that was changed.</span></span>                      |
+| <span data-ttu-id="4d1f3-111">changeType</span><span class="sxs-lookup"><span data-stu-id="4d1f3-111">changeType</span></span>     | <span data-ttu-id="4d1f3-112">String</span><span class="sxs-lookup"><span data-stu-id="4d1f3-112">String</span></span>  | <span data-ttu-id="4d1f3-113">Возможные значения: `created`, `updated`, `deleted`.</span><span class="sxs-lookup"><span data-stu-id="4d1f3-113">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
+| <span data-ttu-id="4d1f3-114">resource</span><span class="sxs-lookup"><span data-stu-id="4d1f3-114">resource</span></span>       | <span data-ttu-id="4d1f3-115">String</span><span class="sxs-lookup"><span data-stu-id="4d1f3-115">String</span></span>  | <span data-ttu-id="4d1f3-116">URI-идентификатор ресурса, который был изменен.</span><span class="sxs-lookup"><span data-stu-id="4d1f3-116">URI of the resource that was changed.</span></span>                      |
 
-> <span data-ttu-id="c5af6-116">**Примечание:** `resourceData` доступен в качестве дополнительных данных.</span><span class="sxs-lookup"><span data-stu-id="c5af6-116">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="c5af6-117">Это объект или Collection(entity) в зависимости от изменений, упакованный в уведомления.</span><span class="sxs-lookup"><span data-stu-id="c5af6-117">It is an entity or Collection(entity) depending on the number of changes packaged in the notification.</span></span>
+> <span data-ttu-id="4d1f3-117">**Примечание:** `resourceData` доступен в качестве дополнительных данных.</span><span class="sxs-lookup"><span data-stu-id="4d1f3-117">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="4d1f3-118">Это объект или Collection(entity) в зависимости от изменений, упакованный в уведомления.</span><span class="sxs-lookup"><span data-stu-id="4d1f3-118">It is an entity or Collection(entity) depending on the number of changes packaged in the notification.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c5af6-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c5af6-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4d1f3-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4d1f3-119">JSON representation</span></span>
 
-<span data-ttu-id="c5af6-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c5af6-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4d1f3-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4d1f3-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -90,7 +93,7 @@ ms.locfileid: "27081265"
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notification resource",
+  "description": "commsNotification resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

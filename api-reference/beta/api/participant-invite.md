@@ -2,59 +2,59 @@
 title: 'Участник: приглашение'
 description: Приглашение участников активного вызова.
 author: VinodRavichandran
-ms.openlocfilehash: 8c09f3981c6af90680cd9e42d00184e28bc65d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335282"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380529"
 ---
-# <a name="participant-invite"></a><span data-ttu-id="135ba-103">Участник: приглашение</span><span class="sxs-lookup"><span data-stu-id="135ba-103">participant: invite</span></span>
+# <a name="participant-invite"></a><span data-ttu-id="91ca2-103">Участник: приглашение</span><span class="sxs-lookup"><span data-stu-id="91ca2-103">participant: invite</span></span>
 
-> <span data-ttu-id="135ba-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="135ba-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="135ba-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="135ba-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="91ca2-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="91ca2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="91ca2-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="91ca2-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="135ba-106">Приглашение участников активного вызова.</span><span class="sxs-lookup"><span data-stu-id="135ba-106">Invite participants to the active call.</span></span>
+<span data-ttu-id="91ca2-106">Приглашение участников активного вызова.</span><span class="sxs-lookup"><span data-stu-id="91ca2-106">Invite participants to the active call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="135ba-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="135ba-107">Permissions</span></span>
-<span data-ttu-id="135ba-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="135ba-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="91ca2-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="91ca2-107">Permissions</span></span>
+<span data-ttu-id="91ca2-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="91ca2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="135ba-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="135ba-110">Permission type</span></span> | <span data-ttu-id="135ba-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="135ba-111">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="91ca2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="91ca2-110">Permission type</span></span> | <span data-ttu-id="91ca2-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="91ca2-111">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="135ba-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="135ba-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="135ba-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="135ba-113">Not Supported</span></span>                       |
-| <span data-ttu-id="135ba-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="135ba-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="135ba-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="135ba-115">Not Supported</span></span>                       |
-| <span data-ttu-id="135ba-116">Application</span><span class="sxs-lookup"><span data-stu-id="135ba-116">Application</span></span>     | <span data-ttu-id="135ba-117">Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="135ba-117">Calls.InitiateGroupCalls.All</span></span>                               |
+| <span data-ttu-id="91ca2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="91ca2-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="91ca2-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="91ca2-113">Not Supported</span></span>                       |
+| <span data-ttu-id="91ca2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="91ca2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="91ca2-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="91ca2-115">Not Supported</span></span>                       |
+| <span data-ttu-id="91ca2-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="91ca2-116">Application</span></span>     | <span data-ttu-id="91ca2-117">Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="91ca2-117">Calls.InitiateGroupCalls.All</span></span>                               |
 
-## <a name="http-request"></a><span data-ttu-id="135ba-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="135ba-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="91ca2-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="91ca2-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/invite
 POST /applications/{id}/calls/{id}/participants/invite
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="135ba-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="135ba-119">Request headers</span></span>
-| <span data-ttu-id="135ba-120">Имя</span><span class="sxs-lookup"><span data-stu-id="135ba-120">Name</span></span>          | <span data-ttu-id="135ba-121">Описание</span><span class="sxs-lookup"><span data-stu-id="135ba-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="91ca2-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="91ca2-119">Request headers</span></span>
+| <span data-ttu-id="91ca2-120">Имя</span><span class="sxs-lookup"><span data-stu-id="91ca2-120">Name</span></span>          | <span data-ttu-id="91ca2-121">Описание</span><span class="sxs-lookup"><span data-stu-id="91ca2-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="135ba-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="135ba-122">Authorization</span></span> | <span data-ttu-id="135ba-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="135ba-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="91ca2-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="91ca2-122">Authorization</span></span> | <span data-ttu-id="91ca2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="91ca2-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="135ba-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="135ba-125">Request body</span></span>
-<span data-ttu-id="135ba-126">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="135ba-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="91ca2-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="91ca2-125">Request body</span></span>
+<span data-ttu-id="91ca2-126">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="91ca2-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="135ba-127">Параметр</span><span class="sxs-lookup"><span data-stu-id="135ba-127">Parameter</span></span>      | <span data-ttu-id="135ba-128">Тип</span><span class="sxs-lookup"><span data-stu-id="135ba-128">Type</span></span>    |<span data-ttu-id="135ba-129">Описание</span><span class="sxs-lookup"><span data-stu-id="135ba-129">Description</span></span>|
+| <span data-ttu-id="91ca2-127">Параметр</span><span class="sxs-lookup"><span data-stu-id="91ca2-127">Parameter</span></span>      | <span data-ttu-id="91ca2-128">Тип</span><span class="sxs-lookup"><span data-stu-id="91ca2-128">Type</span></span>    |<span data-ttu-id="91ca2-129">Описание</span><span class="sxs-lookup"><span data-stu-id="91ca2-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="135ba-130">participants</span><span class="sxs-lookup"><span data-stu-id="135ba-130">participants</span></span>|<span data-ttu-id="135ba-131">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="135ba-131">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>| <span data-ttu-id="135ba-132">Чтобы пригласить участников.</span><span class="sxs-lookup"><span data-stu-id="135ba-132">The participants to invite.</span></span>|
-|<span data-ttu-id="135ba-133">clientContext</span><span class="sxs-lookup"><span data-stu-id="135ba-133">clientContext</span></span>|<span data-ttu-id="135ba-134">String.</span><span class="sxs-lookup"><span data-stu-id="135ba-134">String</span></span>|<span data-ttu-id="135ba-135">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="135ba-135">The client context.</span></span>|
+|<span data-ttu-id="91ca2-130">participants</span><span class="sxs-lookup"><span data-stu-id="91ca2-130">participants</span></span>|<span data-ttu-id="91ca2-131">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="91ca2-131">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>| <span data-ttu-id="91ca2-132">Чтобы пригласить участников.</span><span class="sxs-lookup"><span data-stu-id="91ca2-132">The participants to invite.</span></span>|
+|<span data-ttu-id="91ca2-133">clientContext</span><span class="sxs-lookup"><span data-stu-id="91ca2-133">clientContext</span></span>|<span data-ttu-id="91ca2-134">String</span><span class="sxs-lookup"><span data-stu-id="91ca2-134">String</span></span>|<span data-ttu-id="91ca2-135">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="91ca2-135">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="135ba-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="135ba-136">Response</span></span>
-<span data-ttu-id="135ba-137">Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.</span><span class="sxs-lookup"><span data-stu-id="135ba-137">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="91ca2-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="91ca2-136">Response</span></span>
+<span data-ttu-id="91ca2-137">Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.</span><span class="sxs-lookup"><span data-stu-id="91ca2-137">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="135ba-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="135ba-138">Examples</span></span>
-<span data-ttu-id="135ba-139">В приведенных ниже примерах показано, как вызывать этот интерфейс API.</span><span class="sxs-lookup"><span data-stu-id="135ba-139">The following examples shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="91ca2-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="91ca2-138">Examples</span></span>
+<span data-ttu-id="91ca2-139">В приведенных ниже примерах показано, как вызывать этот интерфейс API.</span><span class="sxs-lookup"><span data-stu-id="91ca2-139">The following examples shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="135ba-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="135ba-140">Request</span></span>
-<span data-ttu-id="135ba-141">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="135ba-141">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="91ca2-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="91ca2-140">Request</span></span>
+<span data-ttu-id="91ca2-141">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="91ca2-141">The following example shows the request.</span></span>
 <!-- {
   "blockType": "request",
-  "name": "participant_invite"
+  "name": "participant-invite"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/invite
@@ -81,9 +81,9 @@ Content-Length: 464
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="135ba-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="135ba-142">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="91ca2-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="91ca2-142">Response</span></span>
 
-> <span data-ttu-id="135ba-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="135ba-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="91ca2-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="91ca2-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -97,9 +97,9 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 ```
 <br/>
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="135ba-145">Приглашение участников в существующие P2P собрания</span><span class="sxs-lookup"><span data-stu-id="135ba-145">Invite Participants in Existing P2P meeting</span></span>
+### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="91ca2-145">Приглашение участников в существующие P2P собрания</span><span class="sxs-lookup"><span data-stu-id="91ca2-145">Invite Participants in Existing P2P meeting</span></span>
 
-##### <a name="request"></a><span data-ttu-id="135ba-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="135ba-146">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="91ca2-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="91ca2-146">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/invite
@@ -124,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="135ba-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="135ba-147">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="91ca2-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="91ca2-147">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -140,7 +140,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="135ba-148">Уведомления - операция завершена</span><span class="sxs-lookup"><span data-stu-id="135ba-148">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="91ca2-148">Уведомления - операция завершена</span><span class="sxs-lookup"><span data-stu-id="91ca2-148">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -170,7 +170,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="135ba-149">Уведомления - участников, добавлены добавлена участника</span><span class="sxs-lookup"><span data-stu-id="135ba-149">Notification - roster updated with participant added</span></span>
+##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="91ca2-149">Уведомления - участников, добавлены добавлена участника</span><span class="sxs-lookup"><span data-stu-id="91ca2-149">Notification - roster updated with participant added</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -243,13 +243,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="135ba-150">Приглашение участников в существующие P2P собрания</span><span class="sxs-lookup"><span data-stu-id="135ba-150">Invite Participants in Existing P2P meeting</span></span>
+### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="91ca2-150">Приглашение участников в существующие P2P собрания</span><span class="sxs-lookup"><span data-stu-id="91ca2-150">Invite Participants in Existing P2P meeting</span></span>
 
-<span data-ttu-id="135ba-151">В этом примере показан полный поток E2E для [Пригласить участников](../api/participant-invite.md) в существующего собрания P2P.</span><span class="sxs-lookup"><span data-stu-id="135ba-151">This example shows a complete E2E flow for [Invite Participants](../api/participant-invite.md) in an existing P2P meeting.</span></span>
+<span data-ttu-id="91ca2-151">В этом примере показан полный поток E2E для [Пригласить участников](../api/participant-invite.md) в существующего собрания P2P.</span><span class="sxs-lookup"><span data-stu-id="91ca2-151">This example shows a complete E2E flow for [Invite Participants](../api/participant-invite.md) in an existing P2P meeting.</span></span>
 
-##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a><span data-ttu-id="135ba-152">Входящие VOIP ответить на звонок с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="135ba-152">Answer Incoming VOIP call with service hosted media</span></span>
+##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a><span data-ttu-id="91ca2-152">Входящие VOIP ответить на звонок с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="91ca2-152">Answer Incoming VOIP call with service hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="135ba-153">Уведомления - входящие</span><span class="sxs-lookup"><span data-stu-id="135ba-153">Notification - Incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="91ca2-153">Уведомления - входящие</span><span class="sxs-lookup"><span data-stu-id="91ca2-153">Notification - Incoming</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -302,7 +302,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="135ba-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="135ba-154">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="91ca2-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="91ca2-154">Request</span></span>
 
 ``` http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -328,7 +328,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="135ba-155">Ответ</span><span class="sxs-lookup"><span data-stu-id="135ba-155">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="91ca2-155">Ответ</span><span class="sxs-lookup"><span data-stu-id="91ca2-155">Response</span></span>
 
 ``` http
 HTTP/1.1 200 OK
@@ -344,7 +344,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="135ba-156">Уведомления - Установка</span><span class="sxs-lookup"><span data-stu-id="135ba-156">Notification - Establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="91ca2-156">Уведомления - Установка</span><span class="sxs-lookup"><span data-stu-id="91ca2-156">Notification - Establishing</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -373,7 +373,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="135ba-157">Уведомления - соединения</span><span class="sxs-lookup"><span data-stu-id="135ba-157">Notification - Established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="91ca2-157">Уведомления - соединения</span><span class="sxs-lookup"><span data-stu-id="91ca2-157">Notification - Established</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -404,11 +404,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-without-media"></a><span data-ttu-id="135ba-158">Присоединение к собранию канала без мультимедиа</span><span class="sxs-lookup"><span data-stu-id="135ba-158">Join channel meeting without media</span></span>
+### <a name="join-channel-meeting-without-media"></a><span data-ttu-id="91ca2-158">Присоединение к собранию канала без мультимедиа</span><span class="sxs-lookup"><span data-stu-id="91ca2-158">Join channel meeting without media</span></span>
 
-> <span data-ttu-id="135ba-159">**Важно**: Если экземпляр программы-робота присоединения к собранию — только в качестве Упрощение передачи, его следует избегать согласования мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="135ba-159">**IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.</span></span>  <span data-ttu-id="135ba-160">Таким образом, она лучше всего подходит для добавления без каких-либо `requestedModalities` или `mediaConfig`.</span><span class="sxs-lookup"><span data-stu-id="135ba-160">Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.</span></span>
+> <span data-ttu-id="91ca2-159">**Важно**: Если экземпляр программы-робота присоединения к собранию — только в качестве Упрощение передачи, его следует избегать согласования мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="91ca2-159">**IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.</span></span>  <span data-ttu-id="91ca2-160">Таким образом, она лучше всего подходит для добавления без каких-либо `requestedModalities` или `mediaConfig`.</span><span class="sxs-lookup"><span data-stu-id="91ca2-160">Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="135ba-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="135ba-161">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="91ca2-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="91ca2-161">Request</span></span>
 
 ``` http
 POST /app/calls
@@ -444,14 +444,14 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="135ba-162">Ответ</span><span class="sxs-lookup"><span data-stu-id="135ba-162">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="91ca2-162">Ответ</span><span class="sxs-lookup"><span data-stu-id="91ca2-162">Response</span></span>
 
 ``` http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="135ba-163">Уведомления - Установка</span><span class="sxs-lookup"><span data-stu-id="135ba-163">Notification - Establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="91ca2-163">Уведомления - Установка</span><span class="sxs-lookup"><span data-stu-id="91ca2-163">Notification - Establishing</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -481,7 +481,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="135ba-164">Уведомления - соединения</span><span class="sxs-lookup"><span data-stu-id="135ba-164">Notification - Established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="91ca2-164">Уведомления - соединения</span><span class="sxs-lookup"><span data-stu-id="91ca2-164">Notification - Established</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -511,7 +511,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participant-from-initial-incoming-call"></a><span data-ttu-id="135ba-165">Приглашение участников из начального входящего звонка</span><span class="sxs-lookup"><span data-stu-id="135ba-165">Invite participant from initial incoming call</span></span>
+### <a name="invite-participant-from-initial-incoming-call"></a><span data-ttu-id="91ca2-165">Приглашение участников из начального входящего звонка</span><span class="sxs-lookup"><span data-stu-id="91ca2-165">Invite participant from initial incoming call</span></span>
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -533,7 +533,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="135ba-166">Ответ</span><span class="sxs-lookup"><span data-stu-id="135ba-166">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="91ca2-166">Ответ</span><span class="sxs-lookup"><span data-stu-id="91ca2-166">Response</span></span>
 
 ``` http
 HTTP/1.1 200 OK
@@ -550,7 +550,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="135ba-167">Уведомления - операция завершена</span><span class="sxs-lookup"><span data-stu-id="135ba-167">Notification - Operation Completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="91ca2-167">Уведомления - операция завершена</span><span class="sxs-lookup"><span data-stu-id="91ca2-167">Notification - Operation Completed</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -580,7 +580,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="135ba-168">Уведомления - участников, добавлены добавлена участника</span><span class="sxs-lookup"><span data-stu-id="135ba-168">Notification - Roster Updated With Participant Added</span></span>
+##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="91ca2-168">Уведомления - участников, добавлены добавлена участника</span><span class="sxs-lookup"><span data-stu-id="91ca2-168">Notification - Roster Updated With Participant Added</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -653,7 +653,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated-the-original-p2p-call"></a><span data-ttu-id="135ba-169">Уведомления - завершен к первоначальному звонку P2P</span><span class="sxs-lookup"><span data-stu-id="135ba-169">Notification - terminated the original P2P call</span></span>
+##### <a name="notification---terminated-the-original-p2p-call"></a><span data-ttu-id="91ca2-169">Уведомления - завершен к первоначальному звонку P2P</span><span class="sxs-lookup"><span data-stu-id="91ca2-169">Notification - terminated the original P2P call</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -683,7 +683,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---deleted-the-original-p2p-call"></a><span data-ttu-id="135ba-170">Уведомления - удалена к первоначальному звонку P2P</span><span class="sxs-lookup"><span data-stu-id="135ba-170">Notification - Deleted the original P2P call</span></span>
+##### <a name="notification---deleted-the-original-p2p-call"></a><span data-ttu-id="91ca2-170">Уведомления - удалена к первоначальному звонку P2P</span><span class="sxs-lookup"><span data-stu-id="91ca2-170">Notification - Deleted the original P2P call</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls

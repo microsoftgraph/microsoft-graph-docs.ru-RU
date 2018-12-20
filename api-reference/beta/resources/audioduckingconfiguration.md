@@ -1,33 +1,34 @@
 ---
 title: Тип ресурса audioDuckingConfiguration
 description: Параметры для Уклонение от других источников, (синхронизацию и выходить из нее других источников).
-ms.openlocfilehash: 16003933bc2436c333a80754eb9c4d5d9049172c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: e595e2a46f3e8bcbee2bb7ad0e3421216244db71
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082837"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380182"
 ---
-# <a name="audioduckingconfiguration-resource-type"></a><span data-ttu-id="b433e-103">Тип ресурса audioDuckingConfiguration</span><span class="sxs-lookup"><span data-stu-id="b433e-103">audioDuckingConfiguration resource type</span></span>
+# <a name="audioduckingconfiguration-resource-type"></a><span data-ttu-id="025ff-103">Тип ресурса audioDuckingConfiguration</span><span class="sxs-lookup"><span data-stu-id="025ff-103">audioDuckingConfiguration resource type</span></span>
 
-> <span data-ttu-id="b433e-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b433e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b433e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b433e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="025ff-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="025ff-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="025ff-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="025ff-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="b433e-106">Параметры для Уклонение от других источников, (синхронизацию и выходить из нее других источников).</span><span class="sxs-lookup"><span data-stu-id="b433e-106">Parameters for ducking of other sources (phasing in and out of other sources.)</span></span>
+<span data-ttu-id="025ff-106">Параметры для Уклонение от других источников, (синхронизацию и выходить из нее других источников).</span><span class="sxs-lookup"><span data-stu-id="025ff-106">Parameters for ducking of other sources (phasing in and out of other sources.)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b433e-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="b433e-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="025ff-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="025ff-107">Properties</span></span>
 
-| <span data-ttu-id="b433e-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="b433e-108">Property</span></span>      | <span data-ttu-id="b433e-109">Тип</span><span class="sxs-lookup"><span data-stu-id="b433e-109">Type</span></span>     | <span data-ttu-id="b433e-110">Description</span><span class="sxs-lookup"><span data-stu-id="b433e-110">Description</span></span>                                                                     |
+| <span data-ttu-id="025ff-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="025ff-108">Property</span></span>      | <span data-ttu-id="025ff-109">Тип</span><span class="sxs-lookup"><span data-stu-id="025ff-109">Type</span></span>     | <span data-ttu-id="025ff-110">Описание</span><span class="sxs-lookup"><span data-stu-id="025ff-110">Description</span></span>                                                                     |
 | :------------ | :------- | :-------------------------------------------------------------------------------|
-| <span data-ttu-id="b433e-111">lowerLevel</span><span class="sxs-lookup"><span data-stu-id="b433e-111">lowerLevel</span></span>    | <span data-ttu-id="b433e-112">Int64</span><span class="sxs-lookup"><span data-stu-id="b433e-112">Int64</span></span>    | <span data-ttu-id="b433e-113">Объем источников в процентах, когда источники которые ducked.</span><span class="sxs-lookup"><span data-stu-id="b433e-113">The volume of sources in percent when the sources are being ducked.</span></span>             |
-| <span data-ttu-id="b433e-114">rampActive</span><span class="sxs-lookup"><span data-stu-id="b433e-114">rampActive</span></span>    | <span data-ttu-id="b433e-115">Int64</span><span class="sxs-lookup"><span data-stu-id="b433e-115">Int64</span></span>    | <span data-ttu-id="b433e-116">Количество времени (в миллисекундах), необходимое для ducked источников, чтобы «сделать».</span><span class="sxs-lookup"><span data-stu-id="b433e-116">The amount of time (in milliseconds) it takes for ducked sources to "fade out".</span></span> |
-| <span data-ttu-id="b433e-117">rampInactive</span><span class="sxs-lookup"><span data-stu-id="b433e-117">rampInactive</span></span>  | <span data-ttu-id="b433e-118">Int64</span><span class="sxs-lookup"><span data-stu-id="b433e-118">Int64</span></span>    | <span data-ttu-id="b433e-119">Количество времени (в миллисекундах), необходимое для ducked источников «увеличение».</span><span class="sxs-lookup"><span data-stu-id="b433e-119">The amount of time (in milliseconds) it takes for ducked sources to "fade in".</span></span>  |
-| <span data-ttu-id="b433e-120">upperLevel</span><span class="sxs-lookup"><span data-stu-id="b433e-120">upperLevel</span></span>    | <span data-ttu-id="b433e-121">Int64</span><span class="sxs-lookup"><span data-stu-id="b433e-121">Int64</span></span>    | <span data-ttu-id="b433e-122">Объем источников в процентах, когда ducked источников не выполняется.</span><span class="sxs-lookup"><span data-stu-id="b433e-122">The volume of sources in percent when the sources are not being ducked.</span></span>         |
+| <span data-ttu-id="025ff-111">lowerLevel</span><span class="sxs-lookup"><span data-stu-id="025ff-111">lowerLevel</span></span>    | <span data-ttu-id="025ff-112">Int64</span><span class="sxs-lookup"><span data-stu-id="025ff-112">Int64</span></span>    | <span data-ttu-id="025ff-113">Объем источников в процентах, когда источники которые ducked.</span><span class="sxs-lookup"><span data-stu-id="025ff-113">The volume of sources in percent when the sources are being ducked.</span></span>             |
+| <span data-ttu-id="025ff-114">rampActive</span><span class="sxs-lookup"><span data-stu-id="025ff-114">rampActive</span></span>    | <span data-ttu-id="025ff-115">Int64</span><span class="sxs-lookup"><span data-stu-id="025ff-115">Int64</span></span>    | <span data-ttu-id="025ff-116">Количество времени (в миллисекундах), необходимое для ducked источников, чтобы «сделать».</span><span class="sxs-lookup"><span data-stu-id="025ff-116">The amount of time (in milliseconds) it takes for ducked sources to "fade out".</span></span> |
+| <span data-ttu-id="025ff-117">rampInactive</span><span class="sxs-lookup"><span data-stu-id="025ff-117">rampInactive</span></span>  | <span data-ttu-id="025ff-118">Int64</span><span class="sxs-lookup"><span data-stu-id="025ff-118">Int64</span></span>    | <span data-ttu-id="025ff-119">Количество времени (в миллисекундах), необходимое для ducked источников «увеличение».</span><span class="sxs-lookup"><span data-stu-id="025ff-119">The amount of time (in milliseconds) it takes for ducked sources to "fade in".</span></span>  |
+| <span data-ttu-id="025ff-120">upperLevel</span><span class="sxs-lookup"><span data-stu-id="025ff-120">upperLevel</span></span>    | <span data-ttu-id="025ff-121">Int64</span><span class="sxs-lookup"><span data-stu-id="025ff-121">Int64</span></span>    | <span data-ttu-id="025ff-122">Объем источников в процентах, когда ducked источников не выполняется.</span><span class="sxs-lookup"><span data-stu-id="025ff-122">The volume of sources in percent when the sources are not being ducked.</span></span>         |
 
-> <span data-ttu-id="b433e-123">**Примечание:** Продолжительность расширение путь не может быть более 5000 миллисекунд.</span><span class="sxs-lookup"><span data-stu-id="b433e-123">**Note:** Ramp duration cannot be more than 5,000 milliseconds.</span></span>
+> <span data-ttu-id="025ff-123">**Примечание:** Продолжительность расширение путь не может быть более 5000 миллисекунд.</span><span class="sxs-lookup"><span data-stu-id="025ff-123">**Note:** Ramp duration cannot be more than 5,000 milliseconds.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b433e-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b433e-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="025ff-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="025ff-124">JSON representation</span></span>
 
-<span data-ttu-id="b433e-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b433e-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="025ff-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="025ff-125">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
