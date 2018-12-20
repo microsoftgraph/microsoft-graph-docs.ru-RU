@@ -2,12 +2,12 @@
 title: 'Участник: configureMixer'
 description: Настройка как смешанное аудио для различных участников в многосторонней беседе.
 author: VinodRavichandran
-ms.openlocfilehash: e300d842ce0bad870160d2f3788b059de6d41784
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c15cbc8a8de5a9ba7d7f3c20d20f99bf61006dbf
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351991"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380469"
 ---
 # <a name="participant-configuremixer"></a>Участник: configureMixer
 
@@ -22,7 +22,7 @@ ms.locfileid: "27351991"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) коллекции| Конфигурация микшер уровни для заданного звука участников.|
-|clientContext|String.|Контекст клиента.|
+|clientContext|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
@@ -55,7 +55,7 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 
 <!-- {
   "blockType": "request",
-  "name": "participant_configureMixer"
+  "name": "participant-configureMixer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/configureMixer

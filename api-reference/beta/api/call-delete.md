@@ -2,12 +2,12 @@
 title: Удалить вызов
 description: Удалите или прервите активного вызова.
 author: VinodRavichandran
-ms.openlocfilehash: 07183b4837e6107f347947b901d4efea76b7da98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ae12a6ee937075745957cfccbd4adcbd4dc2f5f8
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350969"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380256"
 ---
 # <a name="delete-call"></a>Удалить вызов
 
@@ -50,7 +50,7 @@ DELETE /applications/{id}/calls/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "delete_call"
+  "name": "delete-call"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/app/calls/{id}

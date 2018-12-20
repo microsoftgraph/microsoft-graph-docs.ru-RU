@@ -2,12 +2,12 @@
 title: 'Вызовите: ответ'
 description: Ответ на входящий звонок.
 author: VinodRavichandran
-ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c7de038e2323ab844590c884e15a639a3839dd86
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343206"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380515"
 ---
 # <a name="call-answer"></a>Вызовите: ответ
 
@@ -22,7 +22,7 @@ ms.locfileid: "27343206"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Application     | Нет                                                        |
+| Для приложений     | Нет                                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /applications/{id}/calls/{id}/answer
 
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String.                                    |Идентификатор обратного вызова или подписки, на котором будет доставлено обратных вызовов. (Обязательно)                                                               |
+|callbackUri       |String                                    |Идентификатор обратного вызова или подписки, на котором будет доставлено обратных вызовов. (Обязательно)                                                               |
 |acceptedModalities|Коллекция String                         |Список принимать модальности. Приведены возможные значения: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Обязательно) |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Конфигурация мультимедиа. (Обязательно)                                                                                                            |
 
@@ -56,7 +56,7 @@ POST /applications/{id}/calls/{id}/answer
 
 <!-- {
   "blockType": "request",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/answer
@@ -167,7 +167,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {
@@ -320,7 +320,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {

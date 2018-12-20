@@ -2,12 +2,12 @@
 title: 'Участник: приглашение'
 description: Приглашение участников активного вызова.
 author: VinodRavichandran
-ms.openlocfilehash: 8c09f3981c6af90680cd9e42d00184e28bc65d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335282"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380529"
 ---
 # <a name="participant-invite"></a>Участник: приглашение
 
@@ -22,7 +22,7 @@ ms.locfileid: "27335282"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Application     | Calls.InitiateGroupCalls.All                               |
+| Для приложений     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) коллекции| Чтобы пригласить участников.|
-|clientContext|String.|Контекст клиента.|
+|clientContext|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 Ниже показан пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "participant_invite"
+  "name": "participant-invite"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/invite

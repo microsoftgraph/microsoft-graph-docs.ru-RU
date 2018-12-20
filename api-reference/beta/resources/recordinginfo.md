@@ -1,20 +1,23 @@
 ---
 title: Тип ресурса recordingInfo
-description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 92af3fcb52ab08f3f25a2c16cc720a4053a9bdfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Сведения о регистрации для участника.
+author: VinodRavichandran
+ms.openlocfilehash: 709edcc6d473ce610cbba7f628e4ebc5057b779c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078132"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380305"
 ---
 # <a name="recordinginfo-resource-type"></a>Тип ресурса recordingInfo
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
+Сведения о регистрации для участника.
+
 ## <a name="properties"></a>Свойства
 
-| Свойство       | Тип    | Description|
+| Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
 | initiatedBy | [participantInfo](participantinfo.md) | Участник, который инициировал записи. |
 | status | String | Возможные значения: `recordingCapable`, `notRecording`, `startedRecording`. |

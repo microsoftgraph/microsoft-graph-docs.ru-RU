@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса recordOperation
 description: Тип recordOperation
-ms.openlocfilehash: 5863e5ef84b00c65cd0806af8a3364fe3d1ab73f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 54b39f30df1dd53a95260b549ae9fab2eedddfd8
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076162"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380424"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса recordOperation
 
@@ -16,15 +17,15 @@ ms.locfileid: "27076162"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство                       | Тип                        | Description                                                                                                                                       |
+| Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | Контекст клиента.                                                                                                                               |
-| completionReason               | String                      | Возможные значения: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`. |
+| completionReason               | String                      | Возможные значения: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
 | createdDateTime                | DateTimeOffset              | Время создания записи.                                                                                                          |
 | id                             | String                      | Идентификатор операции сервера. Только для чтения. Сервер, созданный.                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | Время последнего действия операции.                                                                                                     |
-| recordResourceLocation         | String                      | Расположение, где расположена записи.                                                                                                      |
 | recordResourceAccessToken      | String                      | Маркер доступа, необходимые для извлечения записи.                                                                                              |
+| recordResourceLocation         | String                      | Расположение, где расположена записи.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результатов.  Только для чтения. Сервер, созданный.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. Сервер, созданный.                                                 |
 
@@ -45,12 +46,12 @@ ms.locfileid: "27076162"
 ```json
 {
   "clientContext": "String",
-  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError",
+  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "recordResourceLocation": "String",
   "recordResourceAccessToken": "String",
+  "recordResourceLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -67,8 +68,8 @@ ms.locfileid: "27076162"
 {
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "recordResourceAccessToken": "<access-token>",
+  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "status": "completed"
 }
 ```

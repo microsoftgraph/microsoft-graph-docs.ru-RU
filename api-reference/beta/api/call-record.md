@@ -2,12 +2,12 @@
 title: 'Вызовите: записи'
 description: Запишите вызова.
 author: VinodRavichandran
-ms.openlocfilehash: 5de56ca417f5a6d06e8116802eeba2dd3d39e399
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 44b204a1185881cc9e1c96867e906c658c0d5ed9
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303551"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380522"
 ---
 # <a name="call-record"></a>Вызовите: записи
 
@@ -22,7 +22,7 @@ ms.locfileid: "27303551"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Application     | Calls.AccessMedia.All                       |
+| Для приложений     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,14 +42,14 @@ POST /applications/{id}/calls/{id}/record
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |запросы|[mediaprompt](../resources/mediaprompt.md) коллекции | Коллекция запросы на воспроизведение (если они имеются) перед записи запускается. Клиенты могут вести указывает действие «playPrompt» отдельно или как часть «запись» - большей части все записи, перед с помощью строки |
-|bargeInAllowed|Boolean.| Разрешить пользователям вариант до завершения строки.                                                                 |
+|bargeInAllowed|Boolean| Разрешить пользователям вариант до завершения строки.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Допускается с момента времени ожидания и происходит сбой операции начинаем операцию записи, прежде чем мы максимальное начальной бездействия. Если воспроизводится запрос этот таймер запускается после завершения строки. |
 |maxSilenceTimeoutInSeconds|Int32| Бездействия максимальное время ожидания в секундах.|
 |maxRecordDurationInSeconds|Int32| Запись Максимальная длительность в секундах.|
-|playBeep|Boolean.| Воспроизводит звуковой сигнал после воспроизведения в строке.|
-|streamWhileRecording|Boolean.|Если значение равно true, расположение ресурсов будет предоставляются как только начнется регистрация. |
+|playBeep|Boolean| Воспроизводит звуковой сигнал после воспроизведения в строке.|
+|streamWhileRecording|Boolean|Если значение равно true, расположение ресурсов будет предоставляются как только начнется регистрация. |
 |stopTones|Коллекция String|Остановите мелодии, для которого требуется завершить запись.|
-|clientContext|String.|Контекст клиента.|
+|clientContext|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
@@ -62,7 +62,7 @@ POST /applications/{id}/calls/{id}/record
 
 <!-- {
   "blockType": "request",
-  "name": "call_record"
+  "name": "call-record"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/record

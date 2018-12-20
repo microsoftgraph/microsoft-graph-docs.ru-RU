@@ -2,12 +2,12 @@
 title: 'Вызовите: отклонить'
 description: Отклонение входящего звонка.
 author: VinodRavichandran
-ms.openlocfilehash: 2516ead8d9fa158192a0d9c7c02ac8adb44f764a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 8354593d32dce9a2b8d917db2dd6702d692a2b3f
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343458"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380361"
 ---
 # <a name="call-reject"></a>Вызовите: отклонить
 
@@ -22,7 +22,7 @@ ms.locfileid: "27343458"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Application     | Нет                                                       |
+| Для приложений     | Нет                                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /applications/{id}/calls/{id}/reject
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Причина|String.|Причину отклонения.|
+|Причина|String|Причину отклонения.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "call_reject"
+  "name": "call-reject"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/reject

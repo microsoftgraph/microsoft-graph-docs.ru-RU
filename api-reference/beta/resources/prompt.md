@@ -1,16 +1,19 @@
 ---
 title: запрашивать тип ресурса
-description: Нет
-ms.openlocfilehash: 74991deb977d04fb92b9f4e1fedc05dacefafeb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Запрос, базовый тип действия.
+author: VinodRavichandran
+ms.openlocfilehash: 27018cf841641ac3f7fc2eba6f6304d911c3a7cd
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082343"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380169"
 ---
 # <a name="prompt-resource-type"></a>запрашивать тип ресурса
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Запрос, базовый тип действия.
 
 ## <a name="properties"></a>Свойства
 

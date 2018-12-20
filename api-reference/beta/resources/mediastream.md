@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mediaStream
 description: Тип mediaStream.
-ms.openlocfilehash: 28eb98a3ab1be67c60c6ebd35deb7618f1618be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: f870611700289f0254272b78e18e344d02dd123e
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082392"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380298"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса mediaStream
 
@@ -16,12 +17,12 @@ ms.locfileid: "27082392"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство    | Тип    | Description                                                                                                   |
+| Свойство    | Тип    | Описание                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
 | Направление   | String  | Направление. Возможные значения: `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
-| label       | String  | Метка потока мультимедиа.                                                                                       |
+| label       | Строка  | Метка потока мультимедиа.                                                                                       |
 | Тип носителя   | String  | Тип носителя. Возможное значение — `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Логический | Если мультимедиа отключен на сервере.                                                                          |
+| serverMuted | Boolean | Если мультимедиа отключен на сервере.                                                                          |
 | sourceId    | String  | Исходный код.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON

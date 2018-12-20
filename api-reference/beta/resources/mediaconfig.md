@@ -1,22 +1,25 @@
 ---
 title: Тип ресурса mediaConfig
-description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: a04670d4c13299bde00c3812b9ecb996885330d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Конфигурация мультимедиа, используемый для подключения к звонку.
+author: VinodRavichandran
+ms.openlocfilehash: 1b68d9236ba78ae1a83228b3382c96fc81516d1f
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075116"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380263"
 ---
 # <a name="mediaconfig-resource-type"></a>Тип ресурса mediaConfig
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
+Конфигурация мультимедиа, используемый для подключения к звонку.
+
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Логический |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

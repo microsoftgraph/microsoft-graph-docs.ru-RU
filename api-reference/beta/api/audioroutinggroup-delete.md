@@ -1,13 +1,13 @@
 ---
 title: Удаление звука группы маршрутизации
-description: Удаление указанного audioRoutingGroup.
+description: Удаление указанного звука группы маршрутизации.
 author: VinodRavichandran
-ms.openlocfilehash: 025498e1ceb6178ede4c7ca938c7b0d3d05a80ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: a21c90722b63d582f3c76ff518bcc68837135593
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323942"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380375"
 ---
 # <a name="delete-audio-routing-group"></a>Удаление звука группы маршрутизации
 
@@ -22,7 +22,7 @@ ms.locfileid: "27323942"
 | :-------------- | :------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "delete_audioRoutingGroup"
+  "name": "delete-audioRoutingGroup"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

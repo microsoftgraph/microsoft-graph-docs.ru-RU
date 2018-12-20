@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса звонка
 description: При наличии входящего звонка для приложения или приложение создает новый исходящих вызовов с помощью создается ресурс **вызова** `POST` на `app/calls`.
-ms.openlocfilehash: 8819f03b844f1d67a56f8bbd9e6eca0608de92ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3acc0b04a5cb4357857c948a4b28feef22863a02
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079906"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380571"
 ---
 # <a name="call-resource-type"></a>Тип ресурса звонка
 
@@ -37,7 +38,7 @@ ms.locfileid: "27079906"
 | [Создание audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Создайте новый audioRoutingGroup, отправку сообщений в коллекцию audioRoutingGroups. |
 | [Список audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) коллекции|Получите коллекцию объектов audioRoutingGroup.  |
 | **Интерактивного речевого взаимодействия**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [commsOperation](commsoperation.md)               | Воспроизведение приглашения в вызове.                     |
+| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Воспроизведение приглашения в вызове.                     |
 | [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Запишите вызова.                             |
 | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Отмена обработки мультимедиа.                     |
 | [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Подпишитесь на тоновых сигналов DTMF.                     |
@@ -49,7 +50,7 @@ ms.locfileid: "27079906"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство            | Тип                                                                                                   | Description                                                                                                                                                                                         |
+| Свойство            | Тип                                                                                                   | Описание                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | activeModalities    | Коллекция строк                                                                                      | Список активных модальности. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Только для чтения. Сервер, созданный.                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | Участник, ответить на звонок. Только для чтения. Сервер, созданный.                                                                                                                                |
@@ -78,7 +79,7 @@ ms.locfileid: "27079906"
 
 ## <a name="relationships"></a>Связи
 
-| Связь        | Тип                                                 | Description                                                         |
+| Связь        | Тип                                                 | Описание                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 | audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) коллекции | Только для чтения. Допускается значение null.                                                |
 | operations          | [commsOperation](commsoperation.md) коллекции       | Только для чтения. Допускается значение null.                                                |

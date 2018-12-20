@@ -1,22 +1,25 @@
 ---
 title: Тип ресурса organizerMeetingInfo
-description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 00a7978c44c82ddd6b34802f29188a554e7e0b4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Сведения о собрании, содержащий организатора собрания.
+author: VinodRavichandran
+ms.openlocfilehash: 296b20125908caf73221c2a8380e91931deb7e61
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078680"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380214"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>Тип ресурса organizerMeetingInfo
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
+Сведения о собрании, содержащий организатора собрания.
+
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип                          | Описание                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Логический                       | Указывает, если беседы можно продолжить после покидает узла беседы. |
+| allowConversationWithoutHost | Boolean                       | Указывает, если беседы можно продолжить после покидает узла беседы. |
 | organizer                    | [identitySet](identityset.md) | Организатор identity Azure Active Directory.  |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,16 +1,19 @@
 ---
 title: Тип ресурса meetingParticipants
-description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 4f91c9198018e903eccff7e8fe07d6668d9fd2c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Участники собрания.
+author: VinodRavichandran
+ms.openlocfilehash: 7e44863004dab5405251e2effaf2af8c2ae31f67
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082382"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380284"
 ---
 # <a name="meetingparticipants-resource-type"></a>Тип ресурса meetingParticipants
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+
+Участники собрания.
 
 ## <a name="properties"></a>Свойства
 

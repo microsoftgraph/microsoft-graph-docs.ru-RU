@@ -1,13 +1,13 @@
 ---
 title: 'вызов: subscribeToTone'
-description: " Телефон."
+description: Подпишитесь на DTMF (двухтональный несколькими частота сигналы). Это позволяет получать уведомления при нажатии клавиш на телефоне «тонального сигнала».
 author: VinodRavichandran
-ms.openlocfilehash: 41c72cdeeb1017313f9f64c4bd268a2184229984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 82f7632736dc187fae1313224a6cb6f4807e0dd1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328303"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380438"
 ---
 # <a name="call-subscribetotone"></a>вызов: subscribeToTone
 
@@ -22,7 +22,7 @@ ms.locfileid: "27328303"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Application     | Calls.AccessMedia.All                       |
+| Для приложений     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 
 | Параметр      | Тип    | Описание |
 |:---------------|:--------|:------------|
-| clientContext  | String.  | Контекст клиента. |
+| clientContext  | String  | Контекст клиента. |
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 
 <!-- {
   "blockType": "request",
-  "name": "call_subscribeToTone"
+  "name": "call-subscribeToTone"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса onlineMeeting
 description: Сбор сведений о собрании, включая присоединения к URL-адрес, в список участников и описание.
-ms.openlocfilehash: 73e45f7f2c04df469f2c2fb0faf1c8a0f8680a64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3a2b26ac212bd7a77428dab9f5618db8165de65b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075753"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380480"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -22,7 +23,7 @@ ms.locfileid: "27075753"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство                  | Тип                                                   | Description                                                                                                                |
+| Свойство                  | Тип                                                   | Описание                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | accessLevel               | String                                                 | Уровень доступа, который управляет допуска на собрание по сети. Возможные значения: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | Представляет телефона данные для доступа к onlineMeeting. |
@@ -30,7 +31,7 @@ ms.locfileid: "27075753"
 | chatInfo                  | [chatInfo](chatinfo.md)                                | Chat, связанного с этого собрания. |
 | creationDateTime          | DateTime                                               | Время создания собрания. Только для чтения.
 | endDateTime               | DateTime                                               | Время окончания собрания. |
-| entryExitAnnouncement     | Логический                                                | Состояние присутствия объявлений для собрания по сети. При включении извещения присутствия собрание по сети объявлять имена participantswho join в собрании по аудио. |
+| entryExitAnnouncement     | Boolean                                                | Состояние присутствия объявлений для собрания по сети. При включении извещения присутствия собрание по сети объявлять имена participantswho join в собрании по аудио. |
 | expirationDateTime        | DateTime                                               | Абсолютный по Гринвичу (UTC) даты и времени, после которого можно удалить собрание по сети. Даты и времени должны быть от одного года до до десять лет после текущей датой и временем на сервере. |
 | id                        | String                                                 | Идентификатор, связанный с собрания по сети. Используется в начало HTTP-запросов в качестве идентификатора. Только для чтения. Сервер, созданный. |
 | isCancelled               | Boolean                                                | Приглашение на собрание была ли отменена. |

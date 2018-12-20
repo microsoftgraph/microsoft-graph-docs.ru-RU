@@ -1,22 +1,25 @@
 ---
 title: Тип ресурса mediaInfo
-description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 961ce2375b742b2a657db28ec11d5439985583d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Запрашивает сведения о мультимедиа, используемые в действиях для.
+author: VinodRavichandran
+ms.openlocfilehash: ea2eaa9e8e85da737df4c0c0170457fb3350820b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081351"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380277"
 ---
 # <a name="mediainfo-resource-type"></a>Тип ресурса mediaInfo
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
+Запрашивает сведения о мультимедиа, используемые в действиях для.
+
 ## <a name="properties"></a>Свойства
-| Свойство   | Тип    |Description|
-|:---------------|:--------|:----------|
-| resourceId     | String  |           |
-| URI            | String  |           |
+| Свойство       | Тип    | Описание                      |
+|:---------------|:--------|:---------------------------------|
+| resourceId     | String  | Уникальный идентификатор ресурса. |
+| URI            | String  | Путь к ресурсу.            |
 
 ## <a name="json-representation"></a>Представление JSON
 

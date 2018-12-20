@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса resultInfo
 description: Тип resultInfo.
-ms.openlocfilehash: 93dc08407608a87cbc1cfa027f5c8f20483834e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: db208ed214213ec906dac18b65140f010014fc6c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076899"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380410"
 ---
 # <a name="resultinfo-resource-type"></a>Тип ресурса resultInfo
 

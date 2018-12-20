@@ -1,22 +1,25 @@
 ---
 title: Тип ресурса meetingInfo
-description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: c89b96be24211c9f9cce84c905a0b2857a92cd5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Информация, указанная для создания или присоединиться к собранию на собрания.
+author: VinodRavichandran
+ms.openlocfilehash: f8039f05a2f25e254f7aefd740055babc1598dc1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078868"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380312"
 ---
 # <a name="meetinginfo-resource-type"></a>Тип ресурса meetingInfo
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
+Информация, указанная для создания или присоединиться к собранию на собрания.
+
 ## <a name="properties"></a>Свойства
 
-| Свойство       | Тип    | Description|
+| Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| allowConversationWithoutHost | Логический |  |
+| allowConversationWithoutHost | Boolean |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

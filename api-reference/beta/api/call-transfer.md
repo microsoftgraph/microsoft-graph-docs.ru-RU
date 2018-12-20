@@ -2,12 +2,12 @@
 title: 'Вызовите: передача'
 description: Переключение активного вызова.
 author: VinodRavichandran
-ms.openlocfilehash: 1dc80e342b873c8ebcdb2051107836201e13fda4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 71d250453051c705dcc0646a8e4ad298253d0ee6
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362484"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380508"
 ---
 # <a name="call-transfer"></a>Вызовите: передача
 
@@ -22,7 +22,7 @@ ms.locfileid: "27362484"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Application     | Calls.Initiate.All                                  |
+| Для приложений     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,9 +42,7 @@ POST /applications/{id}/calls/{id}/transfer
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является целевым для переключения.|
-|target|[identitySet](../resources/identityset.md)||
-|replacesCallId|String.|Исходный идентификатор вызова участника, куда следует переключить.|
-|clientContext|String.|Контекст клиента.|
+|clientContext|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа.
@@ -60,7 +58,7 @@ POST /applications/{id}/calls/{id}/transfer
 
 <!-- {
   "blockType": "request",
-  "name": "call_transfer"
+  "name": "call-transfer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/transfer
@@ -207,7 +205,7 @@ Content-Type: application/json
 ```
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "call_transfer"
+  "@odata.type": "call-transfer"
 }-->
 ```json
 {

@@ -1,12 +1,13 @@
 ---
 title: Get собрания по сети
 description: Извлечение свойств и связи объекта **onlineMeeting** .
-ms.openlocfilehash: 117b1f76212be0ece00d0e1c82f2106faf1fd275
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: bfae4273aba0583e6c10a7e10f9c67865326bacf
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078727"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380382"
 ---
 # <a name="get-online-meeting"></a>Get собрания по сети
 
@@ -25,7 +26,7 @@ ms.locfileid: "27078727"
 |:---------------------------------------|:------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложения                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
+| Для приложений                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +36,7 @@ GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -55,7 +56,7 @@ GET /applications/{id}/onlineMeetings/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "get_onlineMeeting"
+  "name": "get-onlineMeeting"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}

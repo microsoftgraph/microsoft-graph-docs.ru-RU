@@ -2,12 +2,12 @@
 title: 'вызов: cancelMediaProcessing'
 description: Отменяет с мультимедиа для всех выполняемых любых операций PlayPrompt или записи.
 author: VinodRavichandran
-ms.openlocfilehash: 9d7432670030ed1505c9be95a801e6c453087df3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 5e95e4a1b56d7cea806e1a3d588403d81c200923
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328275"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380557"
 ---
 # <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
 
@@ -41,8 +41,8 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 
 | Параметр      | Тип    | Описание                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | Boolean. | Флаг, указывающий, следует ли остановить все операции или текущий. |
-| clientContext  | String.  | Контекст клиента.                                            |
+| all            | Boolean | Флаг, указывающий, следует ли остановить все операции или текущий. |
+| clientContext  | String  | Контекст клиента.                                            |
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
@@ -55,7 +55,7 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 
 <!-- {
   "blockType": "request",
-  "name": "call_cancelMediaProcessing"
+  "name": "call-cancelMediaProcessing"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/cancelMediaProcessing

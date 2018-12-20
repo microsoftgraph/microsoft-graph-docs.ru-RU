@@ -2,12 +2,12 @@
 title: 'Участник: muteAll'
 description: Отключение всех участников в вызове.
 author: VinodRavichandran
-ms.openlocfilehash: 26369f3dc0c6502950c46ed1f9befe80ea1a320a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310180"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380501"
 ---
 # <a name="participant-muteall"></a>Участник: muteAll
 
@@ -22,7 +22,7 @@ ms.locfileid: "27310180"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Application                            | Нет                                        |
+| Для приложений                            | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция String|Участники, выключен.|
-|clientContext|String.|Контекст клиента.|
+|clientContext|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 Ниже показан пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "participant_muteAll"
+  "name": "participant-muteAll"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll

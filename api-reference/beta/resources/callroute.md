@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса callRoute
 description: Тип callRoute.
-ms.openlocfilehash: d2a85d34fe755c6e725abc9a1308a3837f0acf3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 9538fb8f27f60e869c19edc7bd19d7f6b29e8fff
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077041"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380158"
 ---
 # <a name="callroute-resource-type"></a>Тип ресурса callRoute
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077041"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство            | Тип                          | Description                                                  |
+| Свойство            | Тип                          | Описание                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | Окончательный               | [identitySet](identityset.md) | Идентификатор, который был разрешен к в вызове.               |
 | Исходный текст            | [identitySet](identityset.md) | Идентификатор, который изначально использовался в вызове.           |

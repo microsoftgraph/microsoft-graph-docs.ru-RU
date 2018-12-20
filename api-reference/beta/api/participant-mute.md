@@ -2,12 +2,12 @@
 title: 'Участник: Выкл.'
 description: Отключение микрофона определенного участника в вызове.
 author: VinodRavichandran
-ms.openlocfilehash: ea84b2944b9a9dd75a72f05f6fa5c4327068e271
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 99a993ae67bb7b3cf49d1a4a9a50fd7cb9aee894
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350073"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380235"
 ---
 # <a name="participant-mute"></a>Участник: Выкл.
 
@@ -22,7 +22,7 @@ ms.locfileid: "27350073"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Application     | Нет                                        |
+| Для приложений     | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|String.|Контекст клиента.|
+|clientContext|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.
@@ -53,7 +53,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 Ниже показан пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "participant_mute"
+  "name": "participant-mute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}/mute

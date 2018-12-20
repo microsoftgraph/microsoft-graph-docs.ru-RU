@@ -1,12 +1,13 @@
 ---
 title: 'вызов: updateMetadata'
 description: Обновление приложений метаданные, связанные с помощью вызова.
-ms.openlocfilehash: fbd43db654294c92d05a8c4c6f12d2118298ff5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: b81b41b827aee17fbc2ebed2dee56c15c5376a88
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076625"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380543"
 ---
 # <a name="call-updatemetadata"></a>вызов: updateMetadata
 
@@ -21,7 +22,7 @@ ms.locfileid: "27076625"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложения     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/updateMetadata
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр      | Тип    |Description|
+| Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |metadata|String|Большой двоичный объект данных, предоставленных участника в списке.|
 |clientContext|String|Контекст клиента.|
@@ -54,7 +55,7 @@ POST /applications/{id}/calls/{id}/updateMetadata
 
 <!-- {
   "blockType": "request",
-  "name": "call_updateMetadata"
+  "name": "call-updateMetadata"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/updateMetadata

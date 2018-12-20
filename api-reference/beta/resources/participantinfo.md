@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса participantInfo
 description: Содержит дополнительные свойства сведения об удостоверениях, участников
-ms.openlocfilehash: c6f429e353d80ea53c5f5c00ca084ae7a8a4a7c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 335626d1c34e2c54a86b0494e931c2da3fe283e7
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074891"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380494"
 ---
 # <a name="participantinfo-resource-type"></a>Тип ресурса participantInfo
 
@@ -16,7 +17,7 @@ ms.locfileid: "27074891"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство       | Тип                          | Description  |
+| Свойство       | Тип                          | Описание  |
 |:---------------|:------------------------------|:-------------|
 | identity       | [identitySet](identityset.md) | [IdentitySet](identityset.md) , связанный с данным участником. |
 | languageId     | String                        | Строка языка и региональных параметров языка. |

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса audioSourceLevel
 description: Конфигурации уровня для других источников.
-ms.openlocfilehash: 527cb7e104817dc19287195d625bfc5f88c14e1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 5d5abe7eba03891427b30ba1c8f63b15b3707e46
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082117"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380242"
 ---
 # <a name="audiosourcelevel-resource-type"></a>Тип ресурса audioSourceLevel
 
@@ -16,9 +17,9 @@ ms.locfileid: "27082117"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство               | Тип    | Description                                                                                         |
+| Свойство               | Тип    | Описание                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| duckOthers             | Логический | Включение этого источника для duck другие источники при активный. Если значение равно true, Уклонение от уровня должно быть задано.|
+| duckOthers             | Boolean | Включение этого источника для duck другие источники при активный. Если значение равно true, Уклонение от уровня должно быть задано.|
 | level                  | Int64   | Уклонение от уровня источника, если `duckOthers` задано значение `true`.                                     |
 | Участник            | String  | Источник участников аудиопотока.                                                                |
 

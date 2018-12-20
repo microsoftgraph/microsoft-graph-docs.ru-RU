@@ -2,12 +2,12 @@
 title: 'Вызовите: перенаправление'
 description: Перенаправление входящего звонка.
 author: VinodRavichandran
-ms.openlocfilehash: dd24c1b3841152f8bd088f89c95ff8786cefb47c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309102"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380221"
 ---
 # <a name="call-redirect"></a>Вызовите: перенаправление
 
@@ -22,7 +22,7 @@ ms.locfileid: "27309102"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Application     | Calls.Initiate.All                                  |
+| Для приложений     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,10 +42,10 @@ POST /applications/{id}/calls/{id}/redirect
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |целевые значения|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) коллекции|Участники целевой операции перенаправления.|
-|targetDisposition|String.|Возможное значение — это:`default`|
+|targetDisposition|String|Возможное значение — это:`default`|
 |timeout|Int32|Время ожидания в секундах для операции перенаправления.|
-|maskCallee|Boolean.|Указывает, следует ли скрытие вызываемого абонента.|
-|maskCaller|Boolean.|Указывает, следует ли скрытие вызывающего абонента.|
+|maskCallee|Boolean|Указывает, следует ли скрытие вызываемого абонента.|
+|maskCaller|Boolean|Указывает, следует ли скрытие вызывающего абонента.|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа
@@ -59,7 +59,7 @@ POST /applications/{id}/calls/{id}/redirect
 
 <!-- {
   "blockType": "request",
-  "name": "call_redirect"
+  "name": "call-redirect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/redirect
