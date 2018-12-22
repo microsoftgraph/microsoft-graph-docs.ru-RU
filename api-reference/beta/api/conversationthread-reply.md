@@ -2,12 +2,12 @@
 title: 'conversationThread: reply'
 description: 'Ответ на поток во время групповой беседы и добавьте новую запись. Можно указать родительский беседы '
 author: dkershaw10
-ms.openlocfilehash: 9e439901fd2fa9c37ab30c746628e7fcd771edc2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 196a28c5b8a5ae2bfa98a2cbfd4aa0d120cbceef
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314100"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413185"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -22,7 +22,7 @@ ms.locfileid: "27314100"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All |
+|Для приложений | Не поддерживается.    |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
