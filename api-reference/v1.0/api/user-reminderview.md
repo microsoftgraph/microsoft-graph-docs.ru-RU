@@ -2,15 +2,15 @@
 title: 'user: reminderView'
 description: 'Возвращает список напоминаний календаря за указанный период времени. '
 author: dkershaw10
-ms.openlocfilehash: 2e0b0e8bb76ee50a9af7246739e4ab8da973d3a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 4437e3972c56f8b85f8fe38d3c23a2e3461106f9
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356793"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748327"
 ---
 # <a name="user-reminderview"></a>user: reminderView
-Возвращает список напоминаний календаря за указанный период времени. 
+Возвращает список событий напоминания в календаре пользователя в рамках указанного время начала и окончания. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "27356793"
 GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 
-## <a name="function-parameters"></a>Параметры функции
+## <a name="function-parameters"></a>Параметры функций
 В URL-адресе запроса укажите перечисленные ниже параметры функции и их значения.
 
 | Параметр    | Тип   |Описание|

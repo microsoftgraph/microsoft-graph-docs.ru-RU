@@ -1,22 +1,20 @@
 ---
 title: Тип ресурса organization
 description: 'Представляет клиента Azure Active Directory. '
-ms.openlocfilehash: 053656eb042ca04f2d487d47ee62624875fa4e17
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+ms.openlocfilehash: 1d13d10c79d2dfc39ec187265533cb6ea17a683b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191146"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748572"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-Представляет клиента Azure Active Directory. 
+Представляет клиент Azure Active Directory, пользователь или приложение входит в систему. Поддерживается только операций чтения и обновление ресурса; Создание и удаление не поддерживаются. Наследуется от [directoryObject](directoryobject.md).
 
 С помощью этого ресурса можно добавлять собственные данные к настраиваемым свойствам, применяя [расширения](/graph/extensibility-overview).
-
-Поддерживается только операций чтения и обновления клиентов; Создание и удаление не поддерживаются. Наследуется от [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Методы
 
@@ -34,12 +32,13 @@ ms.locfileid: "27191146"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assignedPlans|Коллекция [assignedPlan](assignedplan.md)|Коллекция планов обслуживания, сопоставленных с клиентом. Значение NULL не допускается.            |
+| businessPhones                      | Коллекция String                                         | Номер телефона для организации. **Примечание.** Несмотря на то что это коллекция строк, для этого свойства можно задать только один номер.                                                                                            |
 |city|String| Название города в адресе организации |
 |companyLastDirSyncTime|DateTimeOffset|Дата и время последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |country|String| Название страны или региона в адресе организации. |
 |countryLetterCode|String| Сокращенное название страны или региона для организации. |
 |createdDateTime|DateTimeOffset| Метка времени создания организации. Значение не могут быть изменены и заполняется автоматически при создании организации. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
-|deletionTimestamp|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+| deletedDateTime                    | DateTimeOffset                                                    | Представляет дату и время, когда в Azure AD клиент был удален с использованием формата ISO 8601 и — это всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.                                                                                     |
 |dirSyncEnabled|Boolean|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию).|
 |displayName|String|Отображаемое имя для клиента.|
 |id|String|Уникальный идентификатор клиента. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
@@ -56,11 +55,13 @@ ms.locfileid: "27191146"
 |state|String| Название республики, области или края в адресе организации |
 |street|String| Название улицы в адресе организации |
 |technicalNotificationMails|Коллекция String| Значение null не допускается. |
-|telephoneNumber|String| Номер телефона организации |
 |verifiedDomains|Коллекция [VerifiedDomain](verifieddomain.md)|Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается.            |
 
 ## <a name="relationships"></a>Связи
-| расширения | набор [расширений](extension.md) | Коллекция open расширения, определенных для ресурсов организации. Допускает значение NULL. |
+
+| Связь     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|extensions|Коллекция [extension](extension.md)|Коллекция open расширения, определенных для ресурсов организации. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -82,10 +83,13 @@ ms.locfileid: "27191146"
   "city": "string",
   "country": "string",
   "countryLetterCode": "string",
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",
   "marketingNotificationEmails": ["string"],
+  "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -99,7 +103,6 @@ ms.locfileid: "27191146"
   "technicalNotificationMails": ["string"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
-
 ```
 
 ## <a name="see-also"></a>См. также

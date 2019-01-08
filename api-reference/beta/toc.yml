@@ -63,7 +63,7 @@ items:
       - name: Пользователи
         href: resources/users.md
         items:
-          - name: User
+          - name: Пользователь
             href: resources/user.md
             items:
               - name: Перечисление пользователей
@@ -94,7 +94,7 @@ items:
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
               - name: Представление списка календаря
-                href: api/calendar-list-calendarview.md
+                href: api/user-list-calendarview.md
               - name: Просмотр напоминание
                 href: api/user-reminderview.md
               - name: Получение сведений о доступности
@@ -609,10 +609,10 @@ items:
               - name: Создание календаря в группу календаря
                 href: api/calendargroup-post-calendars.md
           - name: Представление "Календарь"
-            href: api/user-list-calendarview.md
+            href: api/calendar-list-calendarview.md
             items:
               - name: Представление списка календаря
-                href: api/user-list-calendarview.md
+                href: api/calendar-list-calendarview.md
               - name: Получение дельты
                 href: api/event-delta.md
               - name: Просмотр напоминание
@@ -717,7 +717,7 @@ items:
                 href: api/application-post-onlinemeetings.md
               - name: Начало собрания по сети
                 href: api/onlinemeeting-get.md
-      - name: Взаимодействие с разными устройствами
+      - name: Интерфейсы на различных устройствах
         href: resources/project-rome-overview.md
         items:
           - name: Список пользователей устройств
@@ -767,7 +767,7 @@ items:
                 href: api/bookingbusiness-list.md
               - name: Create
                 href: api/bookingbusiness-post-bookingbusinesses.md
-              - name: Get
+              - name: получение;
                 href: api/bookingbusiness-get.md
               - name: обновление;
                 href: api/bookingbusiness-update.md
@@ -799,7 +799,7 @@ items:
             items:
               - name: Список
                 href: api/bookingcurrency-list.md
-              - name: Get
+              - name: получение;
                 href: api/bookingcurrency-get.md
           - name: Резервирование клиента
             href: resources/bookingcustomer.md
@@ -808,7 +808,7 @@ items:
                 href: api/bookingbusiness-list-customers.md
               - name: Create
                 href: api/bookingbusiness-post-customers.md
-              - name: Get
+              - name: получение;
                 href: api/bookingcustomer-get.md
               - name: обновление;
                 href: api/bookingcustomer-update.md
@@ -821,7 +821,7 @@ items:
                 href: api/bookingbusiness-list-services.md
               - name: Create
                 href: api/bookingbusiness-post-services.md
-              - name: Get
+              - name: получение;
                 href: api/bookingservice-get.md
               - name: обновление;
                 href: api/bookingservice-update.md
@@ -834,7 +834,7 @@ items:
                 href: api/bookingbusiness-list-staffmembers.md
               - name: Create
                 href: api/bookingbusiness-post-staffmembers.md
-              - name: Get
+              - name: получение;
                 href: api/bookingstaffmember-get.md
               - name: обновление;
                 href: api/bookingstaffmember-update.md
@@ -851,7 +851,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-get.md
                   - name: Create
                     href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-create.md
@@ -868,7 +868,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-androidforworkapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-androidforworkapp-get.md
                   - name: Create
                     href: api/intune-apps-androidforworkapp-create.md
@@ -881,7 +881,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-androidforwork-androidforworkappconfigurationschema-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-androidforwork-androidforworkappconfigurationschema-get.md
                   - name: Create
                     href: api/intune-androidforwork-androidforworkappconfigurationschema-create.md
@@ -900,7 +900,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-androidforwork-androidforworkenrollmentprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-androidforwork-androidforworkenrollmentprofile-get.md
                   - name: Create
                     href: api/intune-androidforwork-androidforworkenrollmentprofile-create.md
@@ -919,7 +919,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-androidforworkmobileappconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-androidforworkmobileappconfiguration-get.md
                   - name: Create
                     href: api/intune-apps-androidforworkmobileappconfiguration-create.md
@@ -930,7 +930,7 @@ items:
               - name: Параметры Android for Work
                 href: resources/intune-androidforwork-androidforworksettings.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-androidforwork-androidforworksettings-get.md
                   - name: Update
                     href: api/intune-androidforwork-androidforworksettings-update.md
@@ -949,7 +949,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-androidlobapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-androidlobapp-get.md
                   - name: Create
                     href: api/intune-apps-androidlobapp-create.md
@@ -966,7 +966,7 @@ items:
               - name: Настройка enterprise Android управляемое хранилище учетных записей
                 href: resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-get.md
                   - name: Update
                     href: api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-update.md
@@ -985,7 +985,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-androidmanagedstoreapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-androidmanagedstoreapp-get.md
                   - name: Create
                     href: api/intune-apps-androidmanagedstoreapp-create.md
@@ -998,7 +998,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-androidmanagedstoreappconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-androidmanagedstoreappconfiguration-get.md
                   - name: Create
                     href: api/intune-apps-androidmanagedstoreappconfiguration-create.md
@@ -1011,7 +1011,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-get.md
                   - name: Create
                     href: api/intune-androidforwork-androidmanagedstoreappconfigurationschema-create.md
@@ -1034,7 +1034,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-androidstoreapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-androidstoreapp-get.md
                   - name: Create
                     href: api/intune-apps-androidstoreapp-create.md
@@ -1051,7 +1051,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-books-deviceinstallstate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-books-deviceinstallstate-get.md
                   - name: Create
                     href: api/intune-books-deviceinstallstate-create.md
@@ -1062,7 +1062,7 @@ items:
               - name: Сводка по установке электронной книги
                 href: resources/intune-books-ebookinstallsummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-books-ebookinstallsummary-get.md
                   - name: Update
                     href: api/intune-books-ebookinstallsummary-update.md
@@ -1071,7 +1071,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-enterprisecodesigningcertificate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-enterprisecodesigningcertificate-get.md
                   - name: Create
                     href: api/intune-apps-enterprisecodesigningcertificate-create.md
@@ -1092,7 +1092,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-ioslobapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-ioslobapp-get.md
                   - name: Create
                     href: api/intune-apps-ioslobapp-create.md
@@ -1107,7 +1107,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-ioslobappprovisioningconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-ioslobappprovisioningconfiguration-get.md
                   - name: Create
                     href: api/intune-apps-ioslobappprovisioningconfiguration-create.md
@@ -1122,7 +1122,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-ioslobappprovisioningconfigurationassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-ioslobappprovisioningconfigurationassignment-get.md
                   - name: Create
                     href: api/intune-apps-ioslobappprovisioningconfigurationassignment-create.md
@@ -1137,7 +1137,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-iosmobileappconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-iosmobileappconfiguration-get.md
                   - name: Create
                     href: api/intune-apps-iosmobileappconfiguration-create.md
@@ -1150,7 +1150,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-iosstoreapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-iosstoreapp-get.md
                   - name: Create
                     href: api/intune-apps-iosstoreapp-create.md
@@ -1165,7 +1165,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-iosvppapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-iosvppapp-get.md
                   - name: Create
                     href: api/intune-apps-iosvppapp-create.md
@@ -1184,7 +1184,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-iosvppappassigneddevicelicense-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-iosvppappassigneddevicelicense-get.md
                   - name: Create
                     href: api/intune-apps-iosvppappassigneddevicelicense-create.md
@@ -1197,7 +1197,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-iosvppappassignedlicense-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-iosvppappassignedlicense-get.md
                   - name: Create
                     href: api/intune-apps-iosvppappassignedlicense-create.md
@@ -1210,7 +1210,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-iosvppappassigneduserlicense-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-iosvppappassigneduserlicense-get.md
                   - name: Create
                     href: api/intune-apps-iosvppappassigneduserlicense-create.md
@@ -1227,7 +1227,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-books-iosvppebook-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-books-iosvppebook-get.md
                   - name: Create
                     href: api/intune-books-iosvppebook-create.md
@@ -1240,7 +1240,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-books-iosvppebookassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-books-iosvppebookassignment-get.md
                   - name: Create
                     href: api/intune-books-iosvppebookassignment-create.md
@@ -1253,7 +1253,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-macoslobapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-macoslobapp-get.md
                   - name: Create
                     href: api/intune-apps-macoslobapp-create.md
@@ -1270,7 +1270,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-macosofficesuiteapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-macosofficesuiteapp-get.md
                   - name: Create
                     href: api/intune-apps-macosofficesuiteapp-create.md
@@ -1283,7 +1283,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-managedandroidlobapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-managedandroidlobapp-get.md
                   - name: Create
                     href: api/intune-apps-managedandroidlobapp-create.md
@@ -1296,7 +1296,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-managedandroidstoreapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-managedandroidstoreapp-get.md
                   - name: Create
                     href: api/intune-apps-managedandroidstoreapp-create.md
@@ -1309,7 +1309,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-managedapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-managedapp-get.md
               - name: Доступность управляемых приложений
                 href: resources/intune-apps-managedappavailability.md
@@ -1318,7 +1318,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-manageddevicemobileappconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-manageddevicemobileappconfiguration-get.md
                   - name: Действие assign
                     href: api/intune-apps-manageddevicemobileappconfiguration-assign.md
@@ -1327,7 +1327,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-manageddevicemobileappconfigurationassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-manageddevicemobileappconfigurationassignment-get.md
                   - name: Create
                     href: api/intune-apps-manageddevicemobileappconfigurationassignment-create.md
@@ -1340,7 +1340,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-get.md
                   - name: Create
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-create.md
@@ -1351,7 +1351,7 @@ items:
               - name: 'Общие сведения об устройствах, связанные с настройкой мобильных приложений для управляемых устройств'
                 href: resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicesummary-get.md
                   - name: Update
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicesummary-update.md
@@ -1360,7 +1360,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-get.md
                   - name: Create
                     href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-create.md
@@ -1371,7 +1371,7 @@ items:
               - name: 'Сводка по пользователям, связанным с конфигурацией мобильного приложения на управляемом устройстве'
                 href: resources/intune-apps-manageddevicemobileappconfigurationusersummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-manageddevicemobileappconfigurationusersummary-get.md
                   - name: Update
                     href: api/intune-apps-manageddevicemobileappconfigurationusersummary-update.md
@@ -1380,7 +1380,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-books-managedebook-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-books-managedebook-get.md
                   - name: Действие assign
                     href: api/intune-books-managedebook-assign.md
@@ -1389,7 +1389,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-books-managedebookassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-books-managedebookassignment-get.md
                   - name: Create
                     href: api/intune-books-managedebookassignment-create.md
@@ -1402,7 +1402,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-books-managedebookcategory-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-books-managedebookcategory-get.md
                   - name: Create
                     href: api/intune-books-managedebookcategory-create.md
@@ -1415,7 +1415,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-managedioslobapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-managedioslobapp-get.md
                   - name: Create
                     href: api/intune-apps-managedioslobapp-create.md
@@ -1428,7 +1428,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-managediosstoreapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-managediosstoreapp-get.md
                   - name: Create
                     href: api/intune-apps-managediosstoreapp-create.md
@@ -1441,7 +1441,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-managedmobilelobapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-managedmobilelobapp-get.md
               - name: Тип ключа конфигурации приложения MDM
                 href: resources/intune-apps-mdmappconfigkeytype.md
@@ -1450,7 +1450,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-microsoftstoreforbusinessapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-microsoftstoreforbusinessapp-get.md
                   - name: Create
                     href: api/intune-apps-microsoftstoreforbusinessapp-create.md
@@ -1465,7 +1465,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-microsoftstoreforbusinesscontainedapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-microsoftstoreforbusinesscontainedapp-get.md
                   - name: Create
                     href: api/intune-apps-microsoftstoreforbusinesscontainedapp-create.md
@@ -1480,7 +1480,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-mobileapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobileapp-get.md
                   - name: Действие assign
                     href: api/intune-apps-mobileapp-assign.md
@@ -1491,7 +1491,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-mobileappassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobileappassignment-get.md
                   - name: Create
                     href: api/intune-apps-mobileappassignment-create.md
@@ -1506,7 +1506,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-mobileappcategory-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobileappcategory-get.md
                   - name: Create
                     href: api/intune-apps-mobileappcategory-create.md
@@ -1519,7 +1519,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-mobileappcontent-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobileappcontent-get.md
                   - name: Create
                     href: api/intune-apps-mobileappcontent-create.md
@@ -1532,7 +1532,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-mobileappcontentfile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobileappcontentfile-get.md
                   - name: Create
                     href: api/intune-apps-mobileappcontentfile-create.md
@@ -1551,7 +1551,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-mobileappinstallstatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobileappinstallstatus-get.md
                   - name: Create
                     href: api/intune-apps-mobileappinstallstatus-create.md
@@ -1562,7 +1562,7 @@ items:
               - name: Сводка по установке мобильного приложения
                 href: resources/intune-apps-mobileappinstallsummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobileappinstallsummary-get.md
                   - name: Update
                     href: api/intune-apps-mobileappinstallsummary-update.md
@@ -1571,7 +1571,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-mobileappprovisioningconfiggroupassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobileappprovisioningconfiggroupassignment-get.md
                   - name: Create
                     href: api/intune-apps-mobileappprovisioningconfiggroupassignment-create.md
@@ -1586,14 +1586,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-mobilecontainedapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobilecontainedapp-get.md
               - name: Мобильное бизнес-приложение
                 href: resources/intune-apps-mobilelobapp.md
                 items:
                   - name: Список
                     href: api/intune-apps-mobilelobapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-mobilelobapp-get.md
               - name: Код продукта Office
                 href: resources/intune-apps-officeproductid.md
@@ -1602,7 +1602,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-officesuiteapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-officesuiteapp-get.md
                   - name: Create
                     href: api/intune-apps-officesuiteapp-create.md
@@ -1619,7 +1619,7 @@ items:
               - name: Сертификат подписи кода Symantec
                 href: resources/intune-apps-symanteccodesigningcertificate.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-symanteccodesigningcertificate-get.md
                   - name: Update
                     href: api/intune-apps-symanteccodesigningcertificate-update.md
@@ -1628,7 +1628,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-userappinstallstatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-userappinstallstatus-get.md
                   - name: Create
                     href: api/intune-apps-userappinstallstatus-create.md
@@ -1641,7 +1641,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-books-userinstallstatesummary-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-books-userinstallstatesummary-get.md
                   - name: Create
                     href: api/intune-books-userinstallstatesummary-create.md
@@ -1656,7 +1656,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-webapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-webapp-get.md
                   - name: Create
                     href: api/intune-apps-webapp-create.md
@@ -1669,7 +1669,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-win32lobapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-win32lobapp-get.md
                   - name: Create
                     href: api/intune-apps-win32lobapp-create.md
@@ -1708,7 +1708,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-windowsappx-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-windowsappx-get.md
                   - name: Create
                     href: api/intune-apps-windowsappx-create.md
@@ -1729,7 +1729,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-windowsmobilemsi-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-windowsmobilemsi-get.md
                   - name: Create
                     href: api/intune-apps-windowsmobilemsi-create.md
@@ -1744,7 +1744,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-windowsphone81appx-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-windowsphone81appx-get.md
                   - name: Create
                     href: api/intune-apps-windowsphone81appx-create.md
@@ -1757,7 +1757,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-windowsphone81appxbundle-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-windowsphone81appxbundle-get.md
                   - name: Create
                     href: api/intune-apps-windowsphone81appxbundle-create.md
@@ -1770,7 +1770,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-windowsphone81storeapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-windowsphone81storeapp-get.md
                   - name: Create
                     href: api/intune-apps-windowsphone81storeapp-create.md
@@ -1783,7 +1783,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-windowsphonexap-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-windowsphonexap-get.md
                   - name: Create
                     href: api/intune-apps-windowsphonexap-create.md
@@ -1796,7 +1796,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-windowsstoreapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-windowsstoreapp-get.md
                   - name: Create
                     href: api/intune-apps-windowsstoreapp-create.md
@@ -1809,7 +1809,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-windowsuniversalappx-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-windowsuniversalappx-get.md
                   - name: Create
                     href: api/intune-apps-windowsuniversalappx-create.md
@@ -1824,7 +1824,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-apps-windowsuniversalappxcontainedapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-apps-windowsuniversalappxcontainedapp-get.md
                   - name: Create
                     href: api/intune-apps-windowsuniversalappxcontainedapp-create.md
@@ -1840,7 +1840,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-companyterms-termsandconditions-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-companyterms-termsandconditions-get.md
                   - name: Create
                     href: api/intune-companyterms-termsandconditions-create.md
@@ -1853,7 +1853,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-companyterms-termsandconditionsacceptancestatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-companyterms-termsandconditionsacceptancestatus-get.md
                   - name: Create
                     href: api/intune-companyterms-termsandconditionsacceptancestatus-create.md
@@ -1866,7 +1866,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-companyterms-termsandconditionsassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-companyterms-termsandconditionsassignment-get.md
                   - name: Create
                     href: api/intune-companyterms-termsandconditionsassignment-create.md
@@ -1879,7 +1879,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-companyterms-termsandconditionsgroupassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-companyterms-termsandconditionsgroupassignment-get.md
                   - name: Create
                     href: api/intune-companyterms-termsandconditionsgroupassignment-create.md
@@ -1895,7 +1895,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-get.md
                   - name: Create
                     href: api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-create.md
@@ -1908,7 +1908,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-get.md
                   - name: Create
                     href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-create.md
@@ -1921,14 +1921,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-depenrollmentbaseprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-depenrollmentbaseprofile-get.md
               - name: Предотвращение выполнения данных регистрации профилей
                 href: resources/intune-enrollment-depenrollmentprofile.md
                 items:
                   - name: Список
                     href: api/intune-enrollment-depenrollmentprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-depenrollmentprofile-get.md
                   - name: Create
                     href: api/intune-enrollment-depenrollmentprofile-create.md
@@ -1941,7 +1941,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-depiosenrollmentprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-depiosenrollmentprofile-get.md
                   - name: Create
                     href: api/intune-enrollment-depiosenrollmentprofile-create.md
@@ -1954,7 +1954,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-depmacosenrollmentprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-depmacosenrollmentprofile-get.md
                   - name: Create
                     href: api/intune-enrollment-depmacosenrollmentprofile-create.md
@@ -1967,7 +1967,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-deponboardingsetting-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-deponboardingsetting-get.md
                   - name: Create
                     href: api/intune-enrollment-deponboardingsetting-create.md
@@ -1992,7 +1992,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-enrollmentprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-enrollmentprofile-get.md
                   - name: Create
                     href: api/intune-enrollment-enrollmentprofile-create.md
@@ -2011,7 +2011,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-importedappledeviceidentity-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-importedappledeviceidentity-get.md
                   - name: Create
                     href: api/intune-enrollment-importedappledeviceidentity-create.md
@@ -2026,7 +2026,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-importedappledeviceidentityresult-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-importedappledeviceidentityresult-get.md
                   - name: Create
                     href: api/intune-enrollment-importedappledeviceidentityresult-create.md
@@ -2039,7 +2039,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-importeddeviceidentity-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-importeddeviceidentity-get.md
                   - name: Create
                     href: api/intune-enrollment-importeddeviceidentity-create.md
@@ -2054,7 +2054,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-importeddeviceidentityresult-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-importeddeviceidentityresult-get.md
                   - name: Create
                     href: api/intune-enrollment-importeddeviceidentityresult-create.md
@@ -2069,7 +2069,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
                   - name: Create
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md
@@ -2086,7 +2086,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-get.md
                   - name: Create
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md
@@ -2107,7 +2107,7 @@ items:
               - name: Windows автопилот развертывания профилей
                 href: resources/intune-enrollment-windowsautopilotdeploymentprofile.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-windowsautopilotdeploymentprofile-get.md
                   - name: Действие assign
                     href: api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md
@@ -2116,7 +2116,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-get.md
                   - name: Create
                     href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-create.md
@@ -2129,7 +2129,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-enrollment-windowsautopilotdeviceidentity-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-windowsautopilotdeviceidentity-get.md
                   - name: Create
                     href: api/intune-enrollment-windowsautopilotdeviceidentity-create.md
@@ -2148,7 +2148,7 @@ items:
               - name: Параметры автопилот Windows
                 href: resources/intune-enrollment-windowsautopilotsettings.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-enrollment-windowsautopilotsettings-get.md
                   - name: Update
                     href: api/intune-enrollment-windowsautopilotsettings-update.md
@@ -2172,7 +2172,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-create.md
@@ -2183,7 +2183,7 @@ items:
               - name: Дополнительные угроз защиты ввод состояния сводки
                 href: resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-get.md
                   - name: Update
                     href: api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-update.md
@@ -2194,14 +2194,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidcertificateprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidcertificateprofilebase-get.md
               - name: Политики соответствия Android
                 href: resources/intune-deviceconfig-androidcompliancepolicy.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidcompliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidcompliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidcompliancepolicy-create.md
@@ -2214,7 +2214,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidcustomconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidcustomconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidcustomconfiguration-create.md
@@ -2233,7 +2233,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-create.md
@@ -2250,7 +2250,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androiddeviceownerwificonfiguration-create.md
@@ -2267,7 +2267,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androideasemailprofileconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androideasemailprofileconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androideasemailprofileconfiguration-create.md
@@ -2280,7 +2280,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidenterprisewificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidenterprisewificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidenterprisewificonfiguration-create.md
@@ -2293,14 +2293,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkcertificateprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkcertificateprofilebase-get.md
               - name: Android (en) для политики соответствия работы
                 href: resources/intune-deviceconfig-androidforworkcompliancepolicy.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkcompliancepolicy-create.md
@@ -2315,7 +2315,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkcustomconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkcustomconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkcustomconfiguration-create.md
@@ -2330,14 +2330,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkeasemailprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkeasemailprofilebase-get.md
               - name: 'Android (en), для работы предприятия Wi-Fi конфигурации'
                 href: resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkenterprisewificonfiguration-create.md
@@ -2350,7 +2350,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-create.md
@@ -2363,7 +2363,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-create.md
@@ -2376,7 +2376,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkimportedpfxcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkimportedpfxcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkimportedpfxcertificateprofile-create.md
@@ -2389,7 +2389,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworknineworkeasconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworknineworkeasconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworknineworkeasconfiguration-create.md
@@ -2402,7 +2402,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkpkcscertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkpkcscertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkpkcscertificateprofile-create.md
@@ -2417,7 +2417,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkscepcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkscepcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkscepcertificateprofile-create.md
@@ -2430,7 +2430,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworktrustedrootcertificate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworktrustedrootcertificate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworktrustedrootcertificate-create.md
@@ -2443,7 +2443,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkvpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkvpnconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkvpnconfiguration-create.md
@@ -2458,7 +2458,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidforworkwificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidforworkwificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidforworkwificonfiguration-create.md
@@ -2471,7 +2471,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-create.md
@@ -2484,7 +2484,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-create.md
@@ -2497,7 +2497,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidpkcscertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidpkcscertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidpkcscertificateprofile-create.md
@@ -2512,7 +2512,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidscepcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidscepcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidscepcertificateprofile-create.md
@@ -2525,7 +2525,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidtrustedrootcertificate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidtrustedrootcertificate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidtrustedrootcertificate-create.md
@@ -2540,7 +2540,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidvpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidvpnconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidvpnconfiguration-create.md
@@ -2555,7 +2555,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidwificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidwificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidwificonfiguration-create.md
@@ -2570,14 +2570,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilecertificateprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilecertificateprofilebase-get.md
               - name: Политики соответствия Android рабочих профилей
                 href: resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-create.md
@@ -2592,7 +2592,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md
@@ -2607,14 +2607,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofileeasemailprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofileeasemailprofilebase-get.md
               - name: Конфигурация корпоративной Wi-Fi Android рабочих профилей
                 href: resources/intune-deviceconfig-androidworkprofileenterprisewificonfiguration.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofileenterprisewificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofileenterprisewificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofileenterprisewificonfiguration-create.md
@@ -2627,7 +2627,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-create.md
@@ -2640,7 +2640,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilegmaileasconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilegmaileasconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofilegmaileasconfiguration-create.md
@@ -2653,7 +2653,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilenineworkeasconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilenineworkeasconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofilenineworkeasconfiguration-create.md
@@ -2666,7 +2666,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilepkcscertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilepkcscertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofilepkcscertificateprofile-create.md
@@ -2681,7 +2681,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilescepcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilescepcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofilescepcertificateprofile-create.md
@@ -2694,7 +2694,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-create.md
@@ -2707,7 +2707,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofilevpnconfiguration-create.md
@@ -2722,7 +2722,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-androidworkprofilewificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-androidworkprofilewificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-androidworkprofilewificonfiguration-create.md
@@ -2741,7 +2741,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
               - name: Формат имени субъекта Apple
                 href: resources/intune-deviceconfig-applesubjectnameformat.md
@@ -2750,7 +2750,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-applevpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-applevpnconfiguration-get.md
               - name: Тип подключения Apple VPN
                 href: resources/intune-deviceconfig-applevpnconnectiontype.md
@@ -2781,7 +2781,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-carttoclassassociation-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-carttoclassassociation-get.md
                   - name: Create
                     href: api/intune-deviceconfig-carttoclassassociation-create.md
@@ -2810,7 +2810,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-defaultdevicecompliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-defaultdevicecompliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-defaultdevicecompliancepolicy-create.md
@@ -2849,7 +2849,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-devicecomplianceactionitem-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecomplianceactionitem-get.md
                   - name: Create
                     href: api/intune-deviceconfig-devicecomplianceactionitem-create.md
@@ -2862,7 +2862,7 @@ items:
               - name: Общие сведения о совместимости устройства устройства
                 href: resources/intune-deviceconfig-devicecompliancedeviceoverview.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecompliancedeviceoverview-get.md
                   - name: Update
                     href: api/intune-deviceconfig-devicecompliancedeviceoverview-update.md
@@ -2871,7 +2871,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-devicecompliancedevicestatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecompliancedevicestatus-get.md
                   - name: Create
                     href: api/intune-deviceconfig-devicecompliancedevicestatus-create.md
@@ -2884,7 +2884,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-devicecompliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecompliancepolicy-get.md
                   - name: Действие assign
                     href: api/intune-deviceconfig-devicecompliancepolicy-assign.md
@@ -2895,7 +2895,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
                   - name: Create
                     href: api/intune-deviceconfig-devicecompliancepolicyassignment-create.md
@@ -2906,7 +2906,7 @@ items:
               - name: Обзор состояния устройства соответствия политики устройства
                 href: resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md
                   - name: Update
                     href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md
@@ -2917,7 +2917,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-get.md
                   - name: Create
                     href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-create.md
@@ -2930,7 +2930,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
                   - name: Create
                     href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-create.md
@@ -2943,7 +2943,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-devicecompliancesettingstate-create.md
@@ -2954,7 +2954,7 @@ items:
               - name: Общие сведения о совместимости пользователя устройства
                 href: resources/intune-deviceconfig-devicecomplianceuseroverview.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecomplianceuseroverview-get.md
                   - name: Update
                     href: api/intune-deviceconfig-devicecomplianceuseroverview-update.md
@@ -2963,7 +2963,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
                   - name: Create
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-create.md
@@ -2976,7 +2976,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-deviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfiguration-get.md
                   - name: Действие assign
                     href: api/intune-deviceconfig-deviceconfiguration-assign.md
@@ -2991,7 +2991,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
                   - name: Create
                     href: api/intune-deviceconfig-deviceconfigurationassignment-create.md
@@ -3004,7 +3004,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-deviceconfigurationconflictsummary-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfigurationconflictsummary-get.md
                   - name: Create
                     href: api/intune-deviceconfig-deviceconfigurationconflictsummary-create.md
@@ -3015,14 +3015,14 @@ items:
               - name: Общие сведения о конфигурации устройств устройства
                 href: resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md
                   - name: Update
                     href: api/intune-deviceconfig-deviceconfigurationdeviceoverview-update.md
               - name: Сводка состояния устройства конфигурации устройства
                 href: resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatesummary-get.md
                   - name: Update
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update.md
@@ -3031,7 +3031,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatus-get.md
                   - name: Create
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatus-create.md
@@ -3044,7 +3044,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-deviceconfigurationgroupassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfigurationgroupassignment-get.md
                   - name: Create
                     href: api/intune-deviceconfig-deviceconfigurationgroupassignment-create.md
@@ -3059,14 +3059,14 @@ items:
               - name: Общие сведения о конфигурации пользователей устройств
                 href: resources/intune-deviceconfig-deviceconfigurationuseroverview.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfigurationuseroverview-get.md
                   - name: Update
                     href: api/intune-deviceconfig-deviceconfigurationuseroverview-update.md
               - name: Сводка состояния пользователя конфигурации устройства
                 href: resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md
                   - name: Update
                     href: api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md
@@ -3075,7 +3075,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
                   - name: Create
                     href: api/intune-deviceconfig-deviceconfigurationuserstatus-create.md
@@ -3108,7 +3108,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-easemailprofileconfigurationbase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-easemailprofileconfigurationbase-get.md
               - name: Политики файл cookie для пограничного сервера
                 href: resources/intune-deviceconfig-edgecookiepolicy.md
@@ -3125,7 +3125,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-editionupgradeconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-editionupgradeconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-editionupgradeconfiguration-create.md
@@ -3164,21 +3164,21 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-ioscertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-ioscertificateprofile-get.md
               - name: Базовый профиль сертификатов операций ввода-вывода
                 href: resources/intune-deviceconfig-ioscertificateprofilebase.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-ioscertificateprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-ioscertificateprofilebase-get.md
               - name: политики соответствия операций ввода-вывода
                 href: resources/intune-deviceconfig-ioscompliancepolicy.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-ioscompliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-ioscompliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-ioscompliancepolicy-create.md
@@ -3191,7 +3191,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-ioscustomconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-ioscustomconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-ioscustomconfiguration-create.md
@@ -3204,7 +3204,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-create.md
@@ -3217,7 +3217,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-ioseasemailprofileconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-ioseasemailprofileconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-ioseasemailprofileconfiguration-create.md
@@ -3232,7 +3232,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iosedudeviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iosedudeviceconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iosedudeviceconfiguration-create.md
@@ -3245,7 +3245,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-ioseducationdeviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-ioseducationdeviceconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-ioseducationdeviceconfiguration-create.md
@@ -3258,7 +3258,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iosenterprisewificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iosenterprisewificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iosenterprisewificonfiguration-create.md
@@ -3271,7 +3271,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-create.md
@@ -3294,7 +3294,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-create.md
@@ -3313,7 +3313,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iospkcscertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iospkcscertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iospkcscertificateprofile-create.md
@@ -3326,7 +3326,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iosscepcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iosscepcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iosscepcertificateprofile-create.md
@@ -3341,7 +3341,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iostrustedrootcertificate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iostrustedrootcertificate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iostrustedrootcertificate-create.md
@@ -3354,7 +3354,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iosupdateconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iosupdateconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iosupdateconfiguration-create.md
@@ -3367,7 +3367,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iosupdatedevicestatus-create.md
@@ -3382,7 +3382,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-iosvpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-iosvpnconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-iosvpnconfiguration-create.md
@@ -3401,7 +3401,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-ioswificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-ioswificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-ioswificonfiguration-create.md
@@ -3438,14 +3438,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macoscertificateprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macoscertificateprofilebase-get.md
               - name: политики соответствия macOS
                 href: resources/intune-deviceconfig-macoscompliancepolicy.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macoscompliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macoscompliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macoscompliancepolicy-create.md
@@ -3458,7 +3458,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macoscustomconfiguration-create.md
@@ -3471,7 +3471,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-create.md
@@ -3484,7 +3484,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macosendpointprotectionconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macosendpointprotectionconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macosendpointprotectionconfiguration-create.md
@@ -3497,7 +3497,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macosenterprisewificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macosenterprisewificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macosenterprisewificonfiguration-create.md
@@ -3514,7 +3514,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-create.md
@@ -3527,7 +3527,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-create.md
@@ -3540,7 +3540,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macosscepcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macosscepcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macosscepcertificateprofile-create.md
@@ -3553,7 +3553,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macostrustedrootcertificate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macostrustedrootcertificate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macostrustedrootcertificate-create.md
@@ -3566,7 +3566,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macosvpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macosvpnconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macosvpnconfiguration-create.md
@@ -3579,7 +3579,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-macoswificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-macoswificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-macoswificonfiguration-create.md
@@ -3592,7 +3592,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-manageddevicecertificatestate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-manageddevicecertificatestate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-manageddevicecertificatestate-create.md
@@ -3629,7 +3629,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-ndesconnector-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-ndesconnector-get.md
                   - name: Create
                     href: api/intune-deviceconfig-ndesconnector-create.md
@@ -3716,7 +3716,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-restrictedappsviolation-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-restrictedappsviolation-get.md
                   - name: Create
                     href: api/intune-deviceconfig-restrictedappsviolation-create.md
@@ -3737,7 +3737,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-settingstatedevicesummary-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-settingstatedevicesummary-get.md
                   - name: Create
                     href: api/intune-deviceconfig-settingstatedevicesummary-create.md
@@ -3756,7 +3756,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-sharedpcconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-sharedpcconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-sharedpcconfiguration-create.md
@@ -3771,7 +3771,7 @@ items:
               - name: Общие данные о состоянии обновления программного обеспечения
                 href: resources/intune-deviceconfig-softwareupdatestatussummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-softwareupdatestatussummary-get.md
                   - name: Update
                     href: api/intune-deviceconfig-softwareupdatestatussummary-update.md
@@ -3786,7 +3786,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-unsupporteddeviceconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-unsupporteddeviceconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-unsupporteddeviceconfiguration-create.md
@@ -3805,7 +3805,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-raimportcerts-userpfxcertificate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-raimportcerts-userpfxcertificate-get.md
                   - name: Create
                     href: api/intune-raimportcerts-userpfxcertificate-create.md
@@ -3870,14 +3870,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10certificateprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10certificateprofilebase-get.md
               - name: Политики соответствия Windows 10
                 href: resources/intune-deviceconfig-windows10compliancepolicy.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10compliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10compliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10compliancepolicy-create.md
@@ -3890,7 +3890,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10customconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10customconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10customconfiguration-create.md
@@ -3903,7 +3903,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10easemailprofileconfiguration-create.md
@@ -3918,7 +3918,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-create.md
@@ -3931,7 +3931,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-create.md
@@ -3944,7 +3944,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10generalconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10generalconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10generalconfiguration-create.md
@@ -3957,7 +3957,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10importedpfxcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10importedpfxcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10importedpfxcertificateprofile-create.md
@@ -3970,7 +3970,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-create.md
@@ -3983,7 +3983,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10networkboundaryconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10networkboundaryconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10networkboundaryconfiguration-create.md
@@ -3998,7 +3998,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10pfximportcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10pfximportcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10pfximportcertificateprofile-create.md
@@ -4011,7 +4011,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10pkcscertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10pkcscertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10pkcscertificateprofile-create.md
@@ -4024,7 +4024,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10secureassessmentconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10secureassessmentconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10secureassessmentconfiguration-create.md
@@ -4037,7 +4037,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10teamgeneralconfiguration-create.md
@@ -4052,7 +4052,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows10vpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows10vpnconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows10vpnconfiguration-create.md
@@ -4071,14 +4071,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows81certificateprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows81certificateprofilebase-get.md
               - name: Политики соответствия Windows 8.1
                 href: resources/intune-deviceconfig-windows81compliancepolicy.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows81compliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows81compliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows81compliancepolicy-create.md
@@ -4091,7 +4091,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows81generalconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows81generalconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows81generalconfiguration-create.md
@@ -4104,7 +4104,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows81scepcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows81scepcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows81scepcertificateprofile-create.md
@@ -4117,7 +4117,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows81trustedrootcertificate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows81trustedrootcertificate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows81trustedrootcertificate-create.md
@@ -4130,7 +4130,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows81vpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows81vpnconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows81vpnconfiguration-create.md
@@ -4145,7 +4145,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windows81wifiimportconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windows81wifiimportconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windows81wifiimportconfiguration-create.md
@@ -4160,7 +4160,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsassignedaccessprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsassignedaccessprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsassignedaccessprofile-create.md
@@ -4173,14 +4173,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowscertificateprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowscertificateprofilebase-get.md
               - name: Конфигурации защиты расширенной threat Защитника Windows
                 href: resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create.md
@@ -4197,7 +4197,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsidentityprotectionconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsidentityprotectionconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsidentityprotectionconfiguration-create.md
@@ -4222,7 +4222,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowskioskconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowskioskconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowskioskconfiguration-create.md
@@ -4255,14 +4255,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsphone81certificateprofilebase-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsphone81certificateprofilebase-get.md
               - name: Политики соответствия 8.1 Windows Phone
                 href: resources/intune-deviceconfig-windowsphone81compliancepolicy.md
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsphone81compliancepolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsphone81compliancepolicy-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsphone81compliancepolicy-create.md
@@ -4275,7 +4275,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-create.md
@@ -4288,7 +4288,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-create.md
@@ -4301,7 +4301,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-create.md
@@ -4314,7 +4314,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsphone81scepcertificateprofile-create.md
@@ -4327,7 +4327,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsphone81trustedrootcertificate-create.md
@@ -4340,7 +4340,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsphone81vpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsphone81vpnconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsphone81vpnconfiguration-create.md
@@ -4353,7 +4353,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsphoneeasemailprofileconfiguration-create.md
@@ -4366,7 +4366,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-create.md
@@ -4393,7 +4393,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create.md
@@ -4420,7 +4420,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowsvpnconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowsvpnconfiguration-get.md
               - name: Тип подключения к виртуальной частной сети Windows
                 href: resources/intune-deviceconfig-windowsvpnconnectiontype.md
@@ -4429,7 +4429,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowswificonfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowswificonfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowswificonfiguration-create.md
@@ -4442,7 +4442,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md
                   - name: Create
                     href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-create.md
@@ -4460,7 +4460,7 @@ items:
               - name: Сертификат push-уведомлений Apple
                 href: resources/intune-devices-applepushnotificationcertificate.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-applepushnotificationcertificate-get.md
                   - name: Update
                     href: api/intune-devices-applepushnotificationcertificate-update.md
@@ -4471,7 +4471,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-auditing-auditevent-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-auditing-auditevent-get.md
                   - name: Create
                     href: api/intune-auditing-auditevent-create.md
@@ -4496,7 +4496,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-fencing-circulargeofencemanagementcondition-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-fencing-circulargeofencemanagementcondition-get.md
                   - name: Create
                     href: api/intune-fencing-circulargeofencemanagementcondition-create.md
@@ -4519,7 +4519,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-datasharingconsent-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-datasharingconsent-get.md
                   - name: Create
                     href: api/intune-devices-datasharingconsent-create.md
@@ -4538,7 +4538,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-detectedapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-detectedapp-get.md
                   - name: Create
                     href: api/intune-devices-detectedapp-create.md
@@ -4571,7 +4571,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-devicemanagementscript-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-devicemanagementscript-get.md
                   - name: Create
                     href: api/intune-devices-devicemanagementscript-create.md
@@ -4586,7 +4586,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-devicemanagementscriptassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-devicemanagementscriptassignment-get.md
                   - name: Create
                     href: api/intune-devices-devicemanagementscriptassignment-create.md
@@ -4599,7 +4599,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-devicemanagementscriptdevicestate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-devicemanagementscriptdevicestate-get.md
                   - name: Create
                     href: api/intune-devices-devicemanagementscriptdevicestate-create.md
@@ -4612,7 +4612,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-devicemanagementscriptgroupassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-devicemanagementscriptgroupassignment-get.md
                   - name: Create
                     href: api/intune-devices-devicemanagementscriptgroupassignment-create.md
@@ -4623,7 +4623,7 @@ items:
               - name: Сводка выполнения скрипта управления устройства
                 href: resources/intune-devices-devicemanagementscriptrunsummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-devicemanagementscriptrunsummary-get.md
                   - name: Update
                     href: api/intune-devices-devicemanagementscriptrunsummary-update.md
@@ -4632,7 +4632,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-devicemanagementscriptuserstate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-devicemanagementscriptuserstate-get.md
                   - name: Create
                     href: api/intune-devices-devicemanagementscriptuserstate-create.md
@@ -4649,7 +4649,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
                   - name: Create
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-create.md
@@ -4670,7 +4670,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-esim-embeddedsimactivationcodepool-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-esim-embeddedsimactivationcodepool-get.md
                   - name: Create
                     href: api/intune-esim-embeddedsimactivationcodepool-create.md
@@ -4685,7 +4685,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-esim-embeddedsimactivationcodepoolassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-esim-embeddedsimactivationcodepoolassignment-get.md
                   - name: Create
                     href: api/intune-esim-embeddedsimactivationcodepoolassignment-create.md
@@ -4698,7 +4698,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-esim-embeddedsimdevicestate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-esim-embeddedsimdevicestate-get.md
                   - name: Create
                     href: api/intune-esim-embeddedsimdevicestate-create.md
@@ -4713,7 +4713,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
                   - name: Create
                     href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
@@ -4732,7 +4732,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-notification-localizednotificationmessage-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-notification-localizednotificationmessage-get.md
                   - name: Create
                     href: api/intune-notification-localizednotificationmessage-create.md
@@ -4747,7 +4747,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-fencing-locationmanagementcondition-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-fencing-locationmanagementcondition-get.md
               - name: Вход в систему пользователя
                 href: resources/intune-devices-loggedonuser.md
@@ -4756,7 +4756,7 @@ items:
               - name: Управляемое устройство
                 href: resources/intune-devices-manageddevice.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-manageddevice-get.md
                   - name: Update
                     href: api/intune-devices-manageddevice-update.md
@@ -4813,7 +4813,7 @@ items:
               - name: Обзор управляемых устройств
                 href: resources/intune-devices-manageddeviceoverview.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-manageddeviceoverview-get.md
                   - name: Update
                     href: api/intune-devices-manageddeviceoverview-update.md
@@ -4830,7 +4830,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-fencing-managementcondition-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-fencing-managementcondition-get.md
                   - name: getManagementConditionsForPlatform
                     href: api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md
@@ -4845,7 +4845,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-fencing-managementconditionstatement-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-fencing-managementconditionstatement-get.md
                   - name: Create
                     href: api/intune-fencing-managementconditionstatement-create.md
@@ -4866,7 +4866,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-troubleshooting-mobileappintentandstate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-troubleshooting-mobileappintentandstate-get.md
                   - name: Create
                     href: api/intune-troubleshooting-mobileappintentandstate-create.md
@@ -4893,7 +4893,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-troubleshooting-mobileapptroubleshootingevent-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-troubleshooting-mobileapptroubleshootingevent-get.md
                   - name: Create
                     href: api/intune-troubleshooting-mobileapptroubleshootingevent-create.md
@@ -4908,7 +4908,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-fencing-networkipv4configurationmanagementcondition-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-fencing-networkipv4configurationmanagementcondition-get.md
                   - name: Create
                     href: api/intune-fencing-networkipv4configurationmanagementcondition-create.md
@@ -4921,7 +4921,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-fencing-networkipv6configurationmanagementcondition-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-fencing-networkipv6configurationmanagementcondition-get.md
                   - name: Create
                     href: api/intune-fencing-networkipv6configurationmanagementcondition-create.md
@@ -4934,14 +4934,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-fencing-networkmanagementcondition-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-fencing-networkmanagementcondition-get.md
               - name: Шаблон сообщения уведомления
                 href: resources/intune-notification-notificationmessagetemplate.md
                 items:
                   - name: Список
                     href: api/intune-notification-notificationmessagetemplate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-notification-notificationmessagetemplate-get.md
                   - name: Create
                     href: api/intune-notification-notificationmessagetemplate-create.md
@@ -4964,7 +4964,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-remoteactionaudit-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-remoteactionaudit-get.md
                   - name: Create
                     href: api/intune-devices-remoteactionaudit-create.md
@@ -4979,7 +4979,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-remoteassistance-remoteassistancepartner-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-remoteassistance-remoteassistancepartner-get.md
                   - name: Create
                     href: api/intune-remoteassistance-remoteassistancepartner-create.md
@@ -5024,7 +5024,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-windowsdevicemalwarestate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-windowsdevicemalwarestate-get.md
                   - name: Create
                     href: api/intune-devices-windowsdevicemalwarestate-create.md
@@ -5045,7 +5045,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-windowsmalwareinformation-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-windowsmalwareinformation-get.md
                   - name: Create
                     href: api/intune-devices-windowsmalwareinformation-create.md
@@ -5070,7 +5070,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-windowsmanageddevice-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-windowsmanageddevice-get.md
                   - name: Create
                     href: api/intune-devices-windowsmanageddevice-create.md
@@ -5081,7 +5081,7 @@ items:
               - name: Приложение управления Windows
                 href: resources/intune-devices-windowsmanagementapp.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-windowsmanagementapp-get.md
                   - name: Update
                     href: api/intune-devices-windowsmanagementapp-update.md
@@ -5090,7 +5090,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-devices-windowsmanagementapphealthstate-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-windowsmanagementapphealthstate-get.md
                   - name: Create
                     href: api/intune-devices-windowsmanagementapphealthstate-create.md
@@ -5101,14 +5101,14 @@ items:
               - name: Windows management приложения работоспособности
                 href: resources/intune-devices-windowsmanagementapphealthsummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-windowsmanagementapphealthsummary-get.md
                   - name: Update
                     href: api/intune-devices-windowsmanagementapphealthsummary-update.md
               - name: Состояние защиты Windows
                 href: resources/intune-devices-windowsprotectionstate.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-devices-windowsprotectionstate-get.md
                   - name: Update
                     href: api/intune-devices-windowsprotectionstate-update.md
@@ -5120,7 +5120,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-androidmanagedappprotection-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-androidmanagedappprotection-get.md
                   - name: Create
                     href: api/intune-mam-androidmanagedappprotection-create.md
@@ -5133,7 +5133,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-androidmanagedappregistration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-androidmanagedappregistration-get.md
                   - name: Create
                     href: api/intune-mam-androidmanagedappregistration-create.md
@@ -5148,7 +5148,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-defaultmanagedappprotection-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-defaultmanagedappprotection-get.md
                   - name: Create
                     href: api/intune-mam-defaultmanagedappprotection-create.md
@@ -5161,7 +5161,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-wip-intunebrandingprofile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-wip-intunebrandingprofile-get.md
                   - name: Create
                     href: api/intune-wip-intunebrandingprofile-create.md
@@ -5174,7 +5174,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-iosmanagedappprotection-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-iosmanagedappprotection-get.md
                   - name: Create
                     href: api/intune-mam-iosmanagedappprotection-create.md
@@ -5187,7 +5187,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-iosmanagedappregistration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-iosmanagedappregistration-get.md
               - name: Идентификатор мобильных приложений для iOS
                 href: resources/intune-mam-iosmobileappidentifier.md
@@ -5200,7 +5200,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-managedappconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-managedappconfiguration-get.md
               - name: Управляемый тип шифрования данных приложения
                 href: resources/intune-mam-managedappdataencryptiontype.md
@@ -5217,7 +5217,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-managedappoperation-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-managedappoperation-get.md
                   - name: Create
                     href: api/intune-mam-managedappoperation-create.md
@@ -5232,14 +5232,14 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-managedapppolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-managedapppolicy-get.md
                   - name: Действие targetApps
                     href: api/intune-mam-managedapppolicy-targetapps.md
               - name: Сводка по развертыванию политик для управляемых приложений
                 href: resources/intune-mam-managedapppolicydeploymentsummary.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-managedapppolicydeploymentsummary-get.md
                   - name: Update
                     href: api/intune-mam-managedapppolicydeploymentsummary-update.md
@@ -5250,7 +5250,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-managedappprotection-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-managedappprotection-get.md
                   - name: Действие targetApps
                     href: api/intune-mam-managedappprotection-targetapps.md
@@ -5259,7 +5259,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-managedappregistration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-managedappregistration-get.md
               - name: Действие исправлению управляемых приложений
                 href: resources/intune-mam-managedappremediationaction.md
@@ -5268,21 +5268,21 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-managedappstatus-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-managedappstatus-get.md
               - name: Необработанные данные о состоянии управляемых приложений
                 href: resources/intune-mam-managedappstatusraw.md
                 items:
                   - name: Список
                     href: api/intune-mam-managedappstatusraw-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-managedappstatusraw-get.md
               - name: Управляемое мобильное приложение
                 href: resources/intune-mam-managedmobileapp.md
                 items:
                   - name: Список
                     href: api/intune-mam-managedmobileapp-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-managedmobileapp-get.md
                   - name: Create
                     href: api/intune-mam-managedmobileapp-create.md
@@ -5295,7 +5295,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
                   - name: Create
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-create.md
@@ -5310,7 +5310,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-targetedmanagedappconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-targetedmanagedappconfiguration-get.md
                   - name: Create
                     href: api/intune-mam-targetedmanagedappconfiguration-create.md
@@ -5327,7 +5327,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-targetedmanagedapppolicyassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-targetedmanagedapppolicyassignment-get.md
                   - name: Delete
                     href: api/intune-mam-targetedmanagedapppolicyassignment-delete.md
@@ -5338,7 +5338,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-targetedmanagedappprotection-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-targetedmanagedappprotection-get.md
                   - name: Действие assign
                     href: api/intune-mam-targetedmanagedappprotection-assign.md
@@ -5347,7 +5347,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-windowsinformationprotection-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-windowsinformationprotection-get.md
                   - name: Действие assign
                     href: api/intune-mam-windowsinformationprotection-assign.md
@@ -5358,7 +5358,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
                   - name: Create
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-create.md
@@ -5371,7 +5371,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
                   - name: Create
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
@@ -5392,7 +5392,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
                   - name: Create
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-create.md
@@ -5407,7 +5407,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-mam-windowsinformationprotectionpolicy-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-mam-windowsinformationprotectionpolicy-get.md
                   - name: Create
                     href: api/intune-mam-windowsinformationprotectionpolicy-create.md
@@ -5433,7 +5433,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-deviceenrollmentconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-deviceenrollmentconfiguration-get.md
                   - name: Действие setPriority
                     href: api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md
@@ -5444,7 +5444,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
                   - name: Create
                     href: api/intune-onboarding-deviceenrollmentlimitconfiguration-create.md
@@ -5459,7 +5459,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
                   - name: Create
                     href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create.md
@@ -5472,7 +5472,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get.md
                   - name: Create
                     href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create.md
@@ -5491,7 +5491,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-devicemanagementexchangeconnector-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-devicemanagementexchangeconnector-get.md
                   - name: Create
                     href: api/intune-onboarding-devicemanagementexchangeconnector-create.md
@@ -5512,7 +5512,7 @@ items:
               - name: Устройство управления exchange в локальной политике
                 href: resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-devicemanagementexchangeonpremisespolicy-get.md
                   - name: Update
                     href: api/intune-onboarding-devicemanagementexchangeonpremisespolicy-update.md
@@ -5521,7 +5521,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-devicemanagementpartner-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-devicemanagementpartner-get.md
                   - name: Create
                     href: api/intune-onboarding-devicemanagementpartner-create.md
@@ -5538,7 +5538,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
                   - name: Create
                     href: api/intune-onboarding-enrollmentconfigurationassignment-create.md
@@ -5557,7 +5557,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
                   - name: Create
                     href: api/intune-onboarding-mobilethreatdefenseconnector-create.md
@@ -5570,7 +5570,7 @@ items:
               - name: Настройка локального условного доступа
                 href: resources/intune-onboarding-onpremisesconditionalaccesssettings.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-onpremisesconditionalaccesssettings-get.md
                   - name: Update
                     href: api/intune-onboarding-onpremisesconditionalaccesssettings-update.md
@@ -5579,7 +5579,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-organization-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-organization-get.md
                   - name: Update
                     href: api/intune-onboarding-organization-update.md
@@ -5590,7 +5590,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-sideloadingkey-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-sideloadingkey-get.md
                   - name: Create
                     href: api/intune-onboarding-sideloadingkey-create.md
@@ -5603,7 +5603,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-vpptoken-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-vpptoken-get.md
                   - name: Create
                     href: api/intune-onboarding-vpptoken-create.md
@@ -5632,7 +5632,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-get.md
                   - name: Create
                     href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-create.md
@@ -5652,7 +5652,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-rbac-deviceandappmanagementroleassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-rbac-deviceandappmanagementroleassignment-get.md
                   - name: Create
                     href: api/intune-rbac-deviceandappmanagementroleassignment-create.md
@@ -5665,7 +5665,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-rbac-deviceandappmanagementroledefinition-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-rbac-deviceandappmanagementroledefinition-get.md
                   - name: Create
                     href: api/intune-rbac-deviceandappmanagementroledefinition-create.md
@@ -5680,7 +5680,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-rbac-resourceoperation-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-rbac-resourceoperation-get.md
                   - name: Create
                     href: api/intune-rbac-resourceoperation-create.md
@@ -5693,7 +5693,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-rbac-roleassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-rbac-roleassignment-get.md
                   - name: Create
                     href: api/intune-rbac-roleassignment-create.md
@@ -5708,7 +5708,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-rbac-roledefinition-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-rbac-roledefinition-get.md
                   - name: Create
                     href: api/intune-rbac-roledefinition-create.md
@@ -5723,7 +5723,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-rbac-rolescopetag-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-rbac-rolescopetag-get.md
                   - name: Create
                     href: api/intune-rbac-rolescopetag-create.md
@@ -5747,7 +5747,7 @@ items:
               - name: Управление приложениями для устройств
                 href: resources/intune-shared-deviceappmanagement.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-shared-deviceappmanagement-get.md
                   - name: Update
                     href: api/intune-shared-deviceappmanagement-update.md
@@ -5758,7 +5758,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-shared-devicecategory-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-shared-devicecategory-get.md
                   - name: Create
                     href: api/intune-shared-devicecategory-create.md
@@ -5771,7 +5771,7 @@ items:
               - name: Управление устройствами
                 href: resources/intune-shared-devicemanagement.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-shared-devicemanagement-get.md
                   - name: Update
                     href: api/intune-shared-devicemanagement-update.md
@@ -5808,7 +5808,7 @@ items:
               - name: Корневой отчета
                 href: resources/intune-shared-reportroot.md
                 items:
-                  - name: Get
+                  - name: получение;
                     href: api/intune-shared-reportroot-get.md
                   - name: Update
                     href: api/intune-shared-reportroot-update.md
@@ -5824,12 +5824,12 @@ items:
                 href: resources/intune-shared-saveduistategenerationoptions.md
               - name: Универсальный код ресурса
                 href: resources/intune-shared-uri.md
-              - name: User
+              - name: Пользователь
                 href: resources/intune-shared-user.md
                 items:
                   - name: Список
                     href: api/intune-shared-user-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-shared-user-get.md
                   - name: Create
                     href: api/intune-shared-user-create.md
@@ -5852,7 +5852,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-shared-windowsdomainjoinconfiguration-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-shared-windowsdomainjoinconfiguration-get.md
                   - name: Create
                     href: api/intune-shared-windowsdomainjoinconfiguration-create.md
@@ -5868,7 +5868,7 @@ items:
                 items:
                   - name: Список
                     href: api/intune-tem-telecomexpensemanagementpartner-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/intune-tem-telecomexpensemanagementpartner-get.md
                   - name: Create
                     href: api/intune-tem-telecomexpensemanagementpartner-create.md
@@ -6409,7 +6409,7 @@ items:
                 items:
                   - name: Список
                     href: api/riskyusers-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/riskyusers-get.md
           - name: Поставщик удостоверений
             href: resources/identityprovider.md
@@ -6547,6 +6547,15 @@ items:
                     href: api/privilegedroleassignmentrequest-cancel.md
                   - name: Получение Мои назначения ролей
                     href: api/privilegedroleassignmentrequest-my.md
+              - name: Привилегированной утверждения
+                href: resources/privilegedapproval.md
+                items:
+                  - name: Список привилегированной утверждения
+                    href: api/privilegedapproval-list.md
+                  - name: Получение привилегированной утверждения
+                    href: api/privilegedapproval-get.md
+                  - name: Обновление назначения ролей
+                    href: api/privilegedapproval-update.md
               - name: Событие аудита
                 href: resources/privilegedoperationevent.md
                 items:
@@ -6557,7 +6566,7 @@ items:
                 items:
                   - name: Список
                     href: api/governanceresource-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/governanceresource-get.md
                   - name: Регистрация
                     href: api/governanceresource-register.md
@@ -6566,14 +6575,14 @@ items:
                 items:
                   - name: Список
                     href: api/governanceroledefinition-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/governanceroledefinition-get.md
               - name: Параметры ролей
                 href: resources/governancerolesetting.md
                 items:
                   - name: Список
                     href: api/governancerolesetting-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/governancerolesetting-get.md
                   - name: Update
                     href: api/governancerolesetting-update.md
@@ -6582,7 +6591,7 @@ items:
                 items:
                   - name: Список
                     href: api/governanceroleassignment-list.md
-                  - name: Get
+                  - name: получение;
                     href: api/governanceroleassignment-get.md
                   - name: Экспорт
                     href: api/governanceroleassignment-export.md
@@ -6593,7 +6602,7 @@ items:
                     href: api/governanceroleassignmentrequest-list.md
                   - name: Create
                     href: api/governanceroleassignmentrequest-post.md
-                  - name: Get
+                  - name: получение;
                     href: api/governanceroleassignmentrequest-get.md
                   - name: Update
                     href: api/governanceroleassignmentrequest-update.md
@@ -6928,7 +6937,7 @@ items:
             items:
               - name: Получение ресурса
                 href: api/resource-get.md
-      - name: Личные контакты.
+      - name: Личные контакты
         href: resources/contact.md
         items:
           - name: Контакт
@@ -7581,7 +7590,7 @@ items:
                 href: api/outlookuser-list-tasks.md
               - name: Create
                 href: api/outlookuser-post-tasks.md
-              - name: Get
+              - name: получение;
                 href: api/outlooktask-get.md
               - name: обновление;
                 href: api/outlooktask-update.md
@@ -7600,7 +7609,7 @@ items:
                 href: api/outlookuser-list-taskfolders.md
               - name: Create
                 href: api/outlookuser-post-taskfolders.md
-              - name: Get
+              - name: получение;
                 href: api/outlooktaskfolder-get.md
               - name: обновление;
                 href: api/outlooktaskfolder-update.md
@@ -7617,7 +7626,7 @@ items:
                 href: api/outlookuser-list-taskgroups.md
               - name: Create
                 href: api/outlookuser-post-taskgroups.md
-              - name: Get
+              - name: получение;
                 href: api/outlooktaskgroup-get.md
               - name: обновление;
                 href: api/outlooktaskgroup-update.md
@@ -7673,7 +7682,7 @@ items:
       - name: Книги и диаграммы
         href: resources/excel.md
         items:
-          - name: Книга
+          - name: Workbook
             href: resources/workbook.md
             items:
               - name: Создание сеанса

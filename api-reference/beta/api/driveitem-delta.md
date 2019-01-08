@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Синхронизация содержимого ресурса drive
-ms.openlocfilehash: 4ccaec230d5801f563f81e6a30584db9f7ed5714
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b16787a3939d514e3c84ea0f06b562cd3c689e76
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076291"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748432"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 
@@ -48,7 +48,7 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>Параметры функций
 
-| Имя   | Значение  | Описание                                                                                                                          |
+| Параметр   | Тип  | Описание                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | токен  | string | Необязательный параметр. Если не указано, перечисляет текущее состояние иерархии. Если `latest`, возвращается пустая ответа с последнего разностного маркер. Если маркер предыдущей дельты возвращает новое состояние с момента маркер.
 

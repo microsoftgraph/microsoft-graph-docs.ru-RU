@@ -2,12 +2,12 @@
 title: Тип ресурса message
 description: Сообщение в папке почтового ящика.
 author: angelgolfer-ms
-ms.openlocfilehash: e0c1b539baa16c60904c5c9a726bac6cb5c7d557
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: d6bef72e1ac7634bee7f78a645828f0f73f9d09e
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353671"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748481"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -100,9 +100,9 @@ ms.locfileid: "27353671"
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении. Это свойство не включает встроенные вложения, поэтому, если сообщение содержит только встроенные вложения, это свойство имеет значение false. Чтобы проверить наличие встроенных вложений, проанализируйте свойство **body** на наличие атрибута `src`, например `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
 |id|String|Уникальный идентификатор сообщения (обратите внимание, что это значение может меняться при перемещении и изменении сообщения).|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
-|inferenceClassification|Строка| Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused`, `other`.|
+|inferenceClassification|String| Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused`, `other`.|
 |internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовки сообщений, определенные в [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Набор включает заголовки сообщений, указывая сетевой путь, по сообщение от отправителя получателю. Он также может содержать заголовки настраиваемого сообщения, в которых содержатся данные приложения для сообщения. |
-|internetMessageId | Строка | Идентификатор сообщения в формате, указанном [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Обновляемые только в том случае, если **isDraft** имеет значение true.|
+|internetMessageId | String | Идентификатор сообщения в формате, указанном [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Обновляемые только в том случае, если **isDraft** имеет значение true.|
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Boolean|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
@@ -117,8 +117,8 @@ ms.locfileid: "27353671"
 |subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая уникальна для текущего сообщения. Экземпляр **uniqueBody** не возвращается по умолчанию, но может быть получен для заданного сообщения с помощью запроса `?$select=uniqueBody`. В формате HTML или текстовом формате.|
-|unsubscribeData|String.|Синтаксический анализ вводимых из заголовка отписаться списка.  Это данных для команды почты в заголовке отписаться списка, если свойство UnsubscribeEnabled имеет значение true.|
-|unsubscribeEnabled|Boolean.|Указывает, включена ли сообщение для отказа от подписки.  Его valueTrue Если отписаться списка заголовок соответствует rfc 2369.|
+|unsubscribeData|String|Синтаксический анализ вводимых из заголовка отписаться списка.  Это данных для команды почты в заголовке отписаться списка, если свойство UnsubscribeEnabled имеет значение true.|
+|unsubscribeEnabled|Boolean|Указывает, включена ли сообщение для отказа от подписки.  Его valueTrue Если отписаться списка заголовок соответствует rfc 2369.|
 |webLink|String|URL-адрес для открытия сообщения в Outlook Web App.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook Web App.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 
@@ -128,8 +128,8 @@ ms.locfileid: "27353671"
 |attachments|Коллекция объектов [attachment](attachment.md)|Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
 |extensions|Коллекция [extension](extension.md)| Коллекция open расширения, определенные для сообщения. Допускается значение null.|
 |упоминания|[отметить](mention.md) семейства сайтов | Коллекцию упоминания в сообщении, упорядоченные по **createdDateTime** от новых к старым. По умолчанию `GET` /сообщения не возвращает это свойство, если не применяется `$expand` свойство.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Только для чтения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция Многозначный расширенных свойств, определенных для сообщения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенные свойства одно значение, определенное для сообщения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 

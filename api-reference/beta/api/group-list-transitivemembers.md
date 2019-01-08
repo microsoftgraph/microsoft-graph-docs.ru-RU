@@ -1,12 +1,12 @@
 ---
 title: Доверия транзитивных членов группы списка
 description: Получите список членов группы. Группы могут быть пользователи, контакты, устройства, субъектов-служб и других групп участников. Эта операция доверия транзитивных и возвратит списка всех вложенных элементов.
-ms.openlocfilehash: a3cdc0048db3b3d1aa90b5d3426d22439a18b298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 703515f4549e409d3711699c79671ed0b1a93cb3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078198"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748558"
 ---
 # <a name="list-group-transitive-members"></a>Доверия транзитивных членов группы списка
 
@@ -22,7 +22,7 @@ ms.locfileid: "27078198"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Directory.Read.All User.Read.All |
+|Для приложений | Directory.Read.All User.Read.All |
 
 > Примечание: Чтобы просмотреть список членов группы скрытое членство, Member.Read.Hidden разрешение является обязательным.
 
@@ -44,7 +44,7 @@ GET /groups/{id}/transitiveMembers
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 
@@ -63,7 +63,7 @@ GET /groups/{id}/transitiveMembers
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/tranisitiveMembers
+GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 
 ### <a name="response"></a>Ответ

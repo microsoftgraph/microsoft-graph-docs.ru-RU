@@ -2,12 +2,12 @@
 title: Тип ресурса message
 description: Сообщение в mailFolder.
 author: angelgolfer-ms
-ms.openlocfilehash: a77a50835dcba41555fa646c94c66d05b15e3e48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 57183290f872f56684e8b629b83bb31151bff134
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310292"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748579"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -92,9 +92,9 @@ ms.locfileid: "27310292"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [attachment](attachment.md) |Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
-|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для сообщения. Только для чтения. Допускается значение null.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Только для чтения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция open расширения, определенные для сообщения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция Многозначный расширенных свойств, определенных для сообщения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенные свойства одно значение, определенное для сообщения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

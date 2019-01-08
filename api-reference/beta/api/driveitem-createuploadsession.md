@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Возобновляемая отправка файлов
-ms.openlocfilehash: 09f76b4427df446b2f063827029473a11dba6341
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b4519de2a4fb417ce8a0b4524fff6d60547be7ec
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075414"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748439"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -82,12 +82,12 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадает с текущим значением eTag элемента, то возвращается ошибка `412 Precondition Failed`. |
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Параметры
 
 | Параметр            | Тип                          | Описание
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | driveItemUploadableProperties | Данные о выгружаемого файла
-| deferCommit          | Логический                       | Если параметр имеет значение true, окончательный Создание файла в месте назначения будут требуют явного запроса. Только на OneDrive для бизнеса.
+| deferCommit          | Boolean                       | Если параметр имеет значение true, окончательный Создание файла в месте назначения будут требуют явного запроса. Только на OneDrive для бизнеса.
 
 ## <a name="item-properties"></a>Свойства элемента
 
@@ -365,7 +365,7 @@ If-Match: {etag or ctag}
 
 **Примечание.** В этом вызове можно использовать заголовки `@microsoft.graph.conflictBehavior` и `if-match` надлежащим образом.
 
-### <a name="http-response"></a>HTTP-отклик
+### <a name="response"></a>Ответ
 
 Если файл можно зафиксировать с помощью новых метаданных, возвращается ответ `HTTP 201 Created` или `HTTP 200 OK` с метаданными ресурса Item для отправленного файла.
 

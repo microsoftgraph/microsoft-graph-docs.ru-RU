@@ -3,12 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
 title: Получение элементов активности Статистика по интервал
-ms.openlocfilehash: 0b5a9782528e75d4d50734dedc49460d30252410
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 3b3c7139678715a11365f2551c318dcf66e68e7a
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077748"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748194"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Получение элементов активности Статистика по интервал
 
@@ -44,7 +44,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="function-parameters"></a>Параметры функций
 
-| Имя           | Значение              | Описание
+| Параметр      | Тип               | Описание
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | String (метка времени) | Время начала развертываемыми статистической обработки действий.
 | endDateTime    | String (метка времени) | Время окончания развертываемыми статистические действиям.

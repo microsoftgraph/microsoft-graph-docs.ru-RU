@@ -1,12 +1,12 @@
 ---
 title: 'outlookUser: supportedTimeZones'
 description: Получение списка поддерживаемых часовых поясов, которые настроены на сервере почтовых ящиков пользователя.
-ms.openlocfilehash: c5886cc435b482a0acfcd99c65f356efe3a99d59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9feb5e883b1516cdefe9e1b439bf59a0f3b9dd8f
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075436"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748474"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -39,7 +39,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ```
 
 ## <a name="function-parameters"></a>Параметры функций
-| Параметр функции       | Тип | Описание|
+| Параметр      | Тип    | Описание|
 |:---------------|:--------|:----------|
 | TimeZoneStandard  | Строка  | Формат часовых поясов. Поддерживаемые значение: `Windows` и `Iana`. Необязательный. |
 
@@ -48,7 +48,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

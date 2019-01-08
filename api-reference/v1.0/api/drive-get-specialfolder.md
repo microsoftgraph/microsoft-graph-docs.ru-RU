@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Получение специальных папок
-ms.openlocfilehash: 31d8abe09e89f4a040df473682217f2f4fc0b596
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 758d46b8237ecd2ce94d4e3a270a188300817fcf
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026643"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748257"
 ---
 # <a name="get-a-special-folder-by-name"></a>Получение специальной папки по ее имени
 
@@ -55,7 +55,7 @@ GET /me/drive/special/{name}
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand` и `$select` для настройки отклика.
 
-## <a name="http-response"></a>HTTP-отклик
+## <a name="response"></a>Ответ
 
 Этот метод возвращает код отклика `200 OK` и объект [driveItem](../resources/driveitem.md) в теле отклика.
 
@@ -89,7 +89,7 @@ Content-type: application/json
 GET /me/drive/special/{special-folder-name}/children
 ```
 
-### <a name="http-response"></a>HTTP-отклик
+### <a name="response"></a>Ответ
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 

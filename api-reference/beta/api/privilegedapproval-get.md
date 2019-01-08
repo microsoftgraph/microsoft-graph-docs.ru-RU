@@ -1,12 +1,12 @@
 ---
 title: Получение privilegedApproval
 description: Извлечение свойств и связи объекта privilegedapproval.
-ms.openlocfilehash: 77db18f46bbdfec6a5a9a62e4e481facaab6cb8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9fb7aee3184413aa51dc553e5a2bcd694076d579
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080811"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748201"
 ---
 # <a name="get-privilegedapproval"></a>Получение privilegedApproval
 
@@ -19,7 +19,7 @@ ms.locfileid: "27080811"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -36,7 +36,7 @@ GET /privilegedApproval/<id>
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -56,8 +56,7 @@ GET /privilegedApproval/<id>
 GET https://graph.microsoft.com/beta/privilegedApproval/<id>
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

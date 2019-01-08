@@ -1,16 +1,17 @@
 ---
 title: Обновление организации
 description: Обновление свойств объекта organization, для которого выполнена проверка подлинности.
-ms.openlocfilehash: ac07f3ded31f8d6c7169d24208ed7e8cf967e07a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b9601b9b6fa7e961a807c009e6fd4acb00fd8b47
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027581"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748530"
 ---
 # <a name="update-organization"></a>Обновление организации
 
-Обновление свойств объекта organization, для которого выполнена проверка подлинности.
+Обновление свойств объекта organization, для которого выполнена проверка подлинности. В этом случае `organization` представляет собой коллекцию только одну запись, поэтому его **идентификатор** должен быть указан в запросе.  **Идентификатор** также называется **tenantId** организации.
+
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +28,7 @@ ms.locfileid: "27027581"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization
+PATCH /organization/{id}
 
 ```
 
@@ -38,6 +39,7 @@ PATCH /organization
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -62,7 +64,7 @@ PATCH /organization
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization
+PATCH https://graph.microsoft.com/v1.0/organization/{id}
 Content-type: application/json
 Content-length: 411
 

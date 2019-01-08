@@ -2,12 +2,12 @@
 title: Удаление категории Outlook
 description: Удаление указанного объекта outlookCategory.
 author: angelgolfer-ms
-ms.openlocfilehash: ded640425c30352cc83d4adaa02c76ed2bcfa170
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: b82125c33c7b11274bfee80d9d1949ea776745c4
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301038"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748495"
 ---
 # <a name="delete-outlook-category"></a>Удаление категории Outlook
 
@@ -29,15 +29,13 @@ ms.locfileid: "27301038"
 DELETE /me/outlook/masterCategories/{id}
 DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

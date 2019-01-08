@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Поиск файлов
-ms.openlocfilehash: 73ddc65e45be2c0abafdcca24a63c6cdbb4bb6ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 591aa271a9e5a1d9ae69af2e5d8f6ea9ba7fe74b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027313"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748222"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
 
@@ -43,9 +43,9 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ## <a name="function-parameters"></a>Параметры функций
 
-| Имя | Значение  | Описание                                                                                                                          |
+| Параметр | Тип  | Описание                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | string | Текст запроса, используемый для поиска элементов. Для поиска можно использовать несколько полей, включая поля имени файла, метаданных и содержимого файла. |
+| q  | string | Текст запроса, используемый для поиска элементов. Для поиска можно использовать несколько полей, включая поля имени файла, метаданных и содержимого файла. |
 
 ## <a name="example"></a>Пример
 

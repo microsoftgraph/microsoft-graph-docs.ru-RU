@@ -1,12 +1,12 @@
 ---
 title: Обновление privilegedapproval
 description: Обновление свойства объекта privilegedapproval.
-ms.openlocfilehash: 566351ba89d0173718320640e6fa45b0650aaf0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b50f5fb5e50bc47c94b759ea1253c9c9117bfe5d
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075997"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748355"
 ---
 # <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
@@ -19,7 +19,7 @@ ms.locfileid: "27075997"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -33,10 +33,10 @@ PATCH /privilegedApproval/<id>
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |approvalDuration|Продолжительность||
 |approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
@@ -50,7 +50,7 @@ PATCH /privilegedApproval/<id>
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [privilegedApproval](../resources/privilegedapproval.md) объект в теле ответа.
+Успешно завершена, этот метод возвращает `204 No Content` код ответа
 
 Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
 
@@ -62,39 +62,24 @@ PATCH /privilegedApproval/<id>
   "name": "update_privilegedapproval"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedApproval/<id>
+PATCH https://graph.microsoft.com/beta/privilegedApproval{request-id}
 Content-type: application/json
 Content-length: 180
 
 {
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
   "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
+  "approverReason": "approverReason-value"
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.privilegedApproval"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 200
-
-{
-  "id": "id-value",
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
-  "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
