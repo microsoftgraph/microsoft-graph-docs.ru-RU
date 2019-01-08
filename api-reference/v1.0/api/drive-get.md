@@ -3,36 +3,36 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Получение доступа к ресурсу Drive
-ms.openlocfilehash: 6ff71104c18a5a9354d18689c62a96be72b7fe12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 67d5dd612073db96ebcc5bf9c19aa004a034243c
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025683"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748425"
 ---
-# <a name="get-drive"></a><span data-ttu-id="8a4ca-102">Получение ресурса Drive</span><span class="sxs-lookup"><span data-stu-id="8a4ca-102">Get Drive</span></span>
+# <a name="get-drive"></a><span data-ttu-id="e2a2e-102">Получение ресурса Drive</span><span class="sxs-lookup"><span data-stu-id="e2a2e-102">Get Drive</span></span>
 
-<span data-ttu-id="8a4ca-103">В этой статье рассказывается, как получить свойства и связи ресурса [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="8a4ca-103">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.</span></span>
+<span data-ttu-id="e2a2e-103">В этой статье рассказывается, как получить свойства и связи ресурса [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="e2a2e-103">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.</span></span>
 
-<span data-ttu-id="8a4ca-104">Drive — это контейнер верхнего уровня для файловой системы, например OneDrive или библиотеки документов SharePoint.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-104">A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.</span></span>
+<span data-ttu-id="e2a2e-104">Drive — это контейнер верхнего уровня для файловой системы, например OneDrive или библиотеки документов SharePoint.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-104">A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8a4ca-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8a4ca-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e2a2e-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e2a2e-105">Permissions</span></span>
 
-<span data-ttu-id="8a4ca-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a4ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e2a2e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e2a2e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8a4ca-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8a4ca-108">Permission type</span></span>      | <span data-ttu-id="8a4ca-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8a4ca-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e2a2e-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e2a2e-108">Permission type</span></span>      | <span data-ttu-id="e2a2e-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e2a2e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8a4ca-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8a4ca-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8a4ca-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a4ca-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8a4ca-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8a4ca-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8a4ca-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a4ca-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8a4ca-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8a4ca-114">Application</span></span> | <span data-ttu-id="8a4ca-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a4ca-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="e2a2e-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e2a2e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e2a2e-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2a2e-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e2a2e-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e2a2e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e2a2e-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2a2e-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e2a2e-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e2a2e-114">Application</span></span> | <span data-ttu-id="e2a2e-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2a2e-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-current-users-onedrive"></a><span data-ttu-id="8a4ca-116">Получение хранилища OneDrive текущего пользователя</span><span class="sxs-lookup"><span data-stu-id="8a4ca-116">Get current user's OneDrive</span></span>
+## <a name="get-current-users-onedrive"></a><span data-ttu-id="e2a2e-116">Получение хранилища OneDrive текущего пользователя</span><span class="sxs-lookup"><span data-stu-id="e2a2e-116">Get current user's OneDrive</span></span>
 
-<span data-ttu-id="8a4ca-117">Доступ к объекту drive пользователя, вошедшего в систему (при использовании делегированной проверки подлинности), можно получить из одноэлементного множества `me`.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-117">The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.</span></span>
+<span data-ttu-id="e2a2e-117">Доступ к объекту drive пользователя, вошедшего в систему (при использовании делегированной проверки подлинности), можно получить из одноэлементного множества `me`.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-117">The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.</span></span>
 
-<span data-ttu-id="8a4ca-118">Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен объект drive пользователя (при использовании делегированной проверки подлинности).</span><span class="sxs-lookup"><span data-stu-id="8a4ca-118">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
+<span data-ttu-id="e2a2e-118">Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен объект drive пользователя (при использовании делегированной проверки подлинности).</span><span class="sxs-lookup"><span data-stu-id="e2a2e-118">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="8a4ca-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8a4ca-119">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e2a2e-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e2a2e-119">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -40,13 +40,13 @@ ms.locfileid: "27025683"
 GET /me/drive
 ```
 
-## <a name="get-a-users-onedrive"></a><span data-ttu-id="8a4ca-120">Получение хранилища OneDrive пользователя</span><span class="sxs-lookup"><span data-stu-id="8a4ca-120">Get a user's OneDrive</span></span>
+## <a name="get-a-users-onedrive"></a><span data-ttu-id="e2a2e-120">Получение хранилища OneDrive пользователя</span><span class="sxs-lookup"><span data-stu-id="e2a2e-120">Get a user's OneDrive</span></span>
 
-<span data-ttu-id="8a4ca-121">Чтобы получить доступ к хранилищу OneDrive или OneDrive для бизнеса пользователя, ваше приложение должно запросить связь **drive** в ресурсе User.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-121">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.</span></span>
+<span data-ttu-id="e2a2e-121">Чтобы получить доступ к хранилищу OneDrive или OneDrive для бизнеса пользователя, ваше приложение должно запросить связь **drive** в ресурсе User.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-121">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.</span></span>
 
-<span data-ttu-id="8a4ca-122">Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен объект drive пользователя (при использовании делегированной проверки подлинности).</span><span class="sxs-lookup"><span data-stu-id="8a4ca-122">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
+<span data-ttu-id="e2a2e-122">Если хранилище OneDrive пользователя не подготовлено к работе, но у пользователя есть лицензия на использование OneDrive, то в результате выполнения этого запроса будет автоматически подготовлен объект drive пользователя (при использовании делегированной проверки подлинности).</span><span class="sxs-lookup"><span data-stu-id="e2a2e-122">If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="8a4ca-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8a4ca-123">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e2a2e-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e2a2e-123">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
@@ -54,17 +54,17 @@ GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-### <a name="path-parameters"></a><span data-ttu-id="8a4ca-124">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="8a4ca-124">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="e2a2e-124">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="e2a2e-124">Path parameters</span></span>
 
-| <span data-ttu-id="8a4ca-125">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="8a4ca-125">Parameter name</span></span> | <span data-ttu-id="8a4ca-126">Значение</span><span class="sxs-lookup"><span data-stu-id="8a4ca-126">Value</span></span>  | <span data-ttu-id="8a4ca-127">Описание</span><span class="sxs-lookup"><span data-stu-id="8a4ca-127">Description</span></span>                                       |
+| <span data-ttu-id="e2a2e-125">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="e2a2e-125">Parameter name</span></span> | <span data-ttu-id="e2a2e-126">Значение</span><span class="sxs-lookup"><span data-stu-id="e2a2e-126">Value</span></span>  | <span data-ttu-id="e2a2e-127">Описание</span><span class="sxs-lookup"><span data-stu-id="e2a2e-127">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="8a4ca-128">_idOrUserPrincipalName_</span><span class="sxs-lookup"><span data-stu-id="8a4ca-128">_idOrUserPrincipalName_</span></span>     | <span data-ttu-id="8a4ca-129">строка</span><span class="sxs-lookup"><span data-stu-id="8a4ca-129">string</span></span> | <span data-ttu-id="8a4ca-130">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-130">Required.</span></span> <span data-ttu-id="8a4ca-131">Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-131">The identifier for the user object who owns the OneDrive.</span></span> |
+| <span data-ttu-id="e2a2e-128">_idOrUserPrincipalName_</span><span class="sxs-lookup"><span data-stu-id="e2a2e-128">_idOrUserPrincipalName_</span></span>     | <span data-ttu-id="e2a2e-129">строка</span><span class="sxs-lookup"><span data-stu-id="e2a2e-129">string</span></span> | <span data-ttu-id="e2a2e-130">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-130">Required.</span></span> <span data-ttu-id="e2a2e-131">Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-131">The identifier for the user object who owns the OneDrive.</span></span> |
 
-## <a name="get-the-document-library-associated-with-a-group"></a><span data-ttu-id="8a4ca-132">Получение библиотеки документов, сопоставленной с группой</span><span class="sxs-lookup"><span data-stu-id="8a4ca-132">Get the document library associated with a group</span></span>
+## <a name="get-the-document-library-associated-with-a-group"></a><span data-ttu-id="e2a2e-132">Получение библиотеки документов, сопоставленной с группой</span><span class="sxs-lookup"><span data-stu-id="e2a2e-132">Get the document library associated with a group</span></span>
 
-<span data-ttu-id="8a4ca-133">Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для группы, ваше приложение должно запросить связь **drive** в объекте Group.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-133">To access a Group's default document library, your app requests the **drive** relationship on the Group.</span></span>
+<span data-ttu-id="e2a2e-133">Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для группы, ваше приложение должно запросить связь **drive** в объекте Group.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-133">To access a Group's default document library, your app requests the **drive** relationship on the Group.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="8a4ca-134">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8a4ca-134">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e2a2e-134">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e2a2e-134">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
@@ -72,33 +72,33 @@ GET /users/{idOrUserPrincipalName}/drive
 GET /groups/{groupId}/drive
 ```
 
-### <a name="path-parameters"></a><span data-ttu-id="8a4ca-135">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="8a4ca-135">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="e2a2e-135">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="e2a2e-135">Path parameters</span></span>
 
-| <span data-ttu-id="8a4ca-136">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="8a4ca-136">Parameter name</span></span> | <span data-ttu-id="8a4ca-137">Значение</span><span class="sxs-lookup"><span data-stu-id="8a4ca-137">Value</span></span>  | <span data-ttu-id="8a4ca-138">Описание</span><span class="sxs-lookup"><span data-stu-id="8a4ca-138">Description</span></span>                                       |
+| <span data-ttu-id="e2a2e-136">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="e2a2e-136">Parameter name</span></span> | <span data-ttu-id="e2a2e-137">Значение</span><span class="sxs-lookup"><span data-stu-id="e2a2e-137">Value</span></span>  | <span data-ttu-id="e2a2e-138">Описание</span><span class="sxs-lookup"><span data-stu-id="e2a2e-138">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="8a4ca-139">_groupId_</span><span class="sxs-lookup"><span data-stu-id="8a4ca-139">_groupId_</span></span>      | <span data-ttu-id="8a4ca-140">строка</span><span class="sxs-lookup"><span data-stu-id="8a4ca-140">string</span></span> | <span data-ttu-id="8a4ca-141">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-141">Required.</span></span> <span data-ttu-id="8a4ca-142">Идентификатор группы, которой принадлежит библиотека документов.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-142">The identifier for the group which owns the document library.</span></span> |
+| <span data-ttu-id="e2a2e-139">_groupId_</span><span class="sxs-lookup"><span data-stu-id="e2a2e-139">_groupId_</span></span>      | <span data-ttu-id="e2a2e-140">строка</span><span class="sxs-lookup"><span data-stu-id="e2a2e-140">string</span></span> | <span data-ttu-id="e2a2e-141">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-141">Required.</span></span> <span data-ttu-id="e2a2e-142">Идентификатор группы, которой принадлежит библиотека документов.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-142">The identifier for the group which owns the document library.</span></span> |
 
-## <a name="get-the-document-library-for-a-site"></a><span data-ttu-id="8a4ca-143">Получение библиотеки документов для сайта</span><span class="sxs-lookup"><span data-stu-id="8a4ca-143">Get the document library for a site</span></span>
+## <a name="get-the-document-library-for-a-site"></a><span data-ttu-id="e2a2e-143">Получение библиотеки документов для сайта</span><span class="sxs-lookup"><span data-stu-id="e2a2e-143">Get the document library for a site</span></span>
 
-<span data-ttu-id="8a4ca-144">Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для [сайта](../resources/site.md), ваше приложение должно запросить связь **drive** в объекте Site.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-144">To access a [Site's](../resources/site.md) default document library, your app requests the **drive** relationship on the Site.</span></span>
+<span data-ttu-id="e2a2e-144">Чтобы получить доступ к библиотеке документов, используемой по умолчанию, для [сайта](../resources/site.md), ваше приложение должно запросить связь **drive** в объекте Site.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-144">To access a [Site's](../resources/site.md) default document library, your app requests the **drive** relationship on the Site.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="8a4ca-145">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8a4ca-145">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e2a2e-145">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e2a2e-145">HTTP request</span></span>
 
 ```http
 GET /sites/{siteId}/drive
 ```
 
-### <a name="path-parameters"></a><span data-ttu-id="8a4ca-146">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="8a4ca-146">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="e2a2e-146">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="e2a2e-146">Path parameters</span></span>
 
-| <span data-ttu-id="8a4ca-147">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="8a4ca-147">Parameter name</span></span> | <span data-ttu-id="8a4ca-148">Значение</span><span class="sxs-lookup"><span data-stu-id="8a4ca-148">Value</span></span>  | <span data-ttu-id="8a4ca-149">Описание</span><span class="sxs-lookup"><span data-stu-id="8a4ca-149">Description</span></span>                                       |
+| <span data-ttu-id="e2a2e-147">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="e2a2e-147">Parameter name</span></span> | <span data-ttu-id="e2a2e-148">Значение</span><span class="sxs-lookup"><span data-stu-id="e2a2e-148">Value</span></span>  | <span data-ttu-id="e2a2e-149">Описание</span><span class="sxs-lookup"><span data-stu-id="e2a2e-149">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="8a4ca-150">_siteId_</span><span class="sxs-lookup"><span data-stu-id="8a4ca-150">_siteId_</span></span>       | <span data-ttu-id="8a4ca-151">строка</span><span class="sxs-lookup"><span data-stu-id="8a4ca-151">string</span></span> | <span data-ttu-id="8a4ca-152">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-152">Required.</span></span> <span data-ttu-id="8a4ca-153">Идентификатор для сайта, который содержит библиотеку документов.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-153">The identifier for the site that contains the document library.</span></span> |
+| <span data-ttu-id="e2a2e-150">_siteId_</span><span class="sxs-lookup"><span data-stu-id="e2a2e-150">_siteId_</span></span>       | <span data-ttu-id="e2a2e-151">строка</span><span class="sxs-lookup"><span data-stu-id="e2a2e-151">string</span></span> | <span data-ttu-id="e2a2e-152">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-152">Required.</span></span> <span data-ttu-id="e2a2e-153">Идентификатор для сайта, который содержит библиотеку документов.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-153">The identifier for the site that contains the document library.</span></span> |
 
-## <a name="get-a-drive-by-id"></a><span data-ttu-id="8a4ca-154">Получение объекта drive с использованием его идентификатора</span><span class="sxs-lookup"><span data-stu-id="8a4ca-154">Get a drive by ID</span></span>
+## <a name="get-a-drive-by-id"></a><span data-ttu-id="e2a2e-154">Получение объекта drive с использованием его идентификатора</span><span class="sxs-lookup"><span data-stu-id="e2a2e-154">Get a drive by ID</span></span>
 
-<span data-ttu-id="8a4ca-155">Если у вас есть уникальный идентификатор drive, вы можете получить доступ к этому объекту непосредственно из коллекции объектов drive верхнего уровня.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-155">If you have the unique identifier for a drive, you can access it directly from the top-level drives collection.</span></span>
+<span data-ttu-id="e2a2e-155">Если у вас есть уникальный идентификатор drive, вы можете получить доступ к этому объекту непосредственно из коллекции объектов drive верхнего уровня.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-155">If you have the unique identifier for a drive, you can access it directly from the top-level drives collection.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="8a4ca-156">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8a4ca-156">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="e2a2e-156">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e2a2e-156">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
@@ -106,19 +106,19 @@ GET /sites/{siteId}/drive
 GET /drives/{drive-id}
 ```
 
-### <a name="path-parameters"></a><span data-ttu-id="8a4ca-157">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="8a4ca-157">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="e2a2e-157">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="e2a2e-157">Path parameters</span></span>
 
-| <span data-ttu-id="8a4ca-158">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="8a4ca-158">Parameter name</span></span> | <span data-ttu-id="8a4ca-159">Значение</span><span class="sxs-lookup"><span data-stu-id="8a4ca-159">Value</span></span>  | <span data-ttu-id="8a4ca-160">Описание</span><span class="sxs-lookup"><span data-stu-id="8a4ca-160">Description</span></span>                                       |
+| <span data-ttu-id="e2a2e-158">Имя параметра</span><span class="sxs-lookup"><span data-stu-id="e2a2e-158">Parameter name</span></span> | <span data-ttu-id="e2a2e-159">Значение</span><span class="sxs-lookup"><span data-stu-id="e2a2e-159">Value</span></span>  | <span data-ttu-id="e2a2e-160">Описание</span><span class="sxs-lookup"><span data-stu-id="e2a2e-160">Description</span></span>                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| <span data-ttu-id="8a4ca-161">_driveId_</span><span class="sxs-lookup"><span data-stu-id="8a4ca-161">_driveId_</span></span>      | <span data-ttu-id="8a4ca-162">строка</span><span class="sxs-lookup"><span data-stu-id="8a4ca-162">string</span></span> | <span data-ttu-id="8a4ca-163">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-163">Required.</span></span> <span data-ttu-id="8a4ca-164">Идентификатор запрошенного диска.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-164">The identifier for the drive requested.</span></span> |
+| <span data-ttu-id="e2a2e-161">_driveId_</span><span class="sxs-lookup"><span data-stu-id="e2a2e-161">_driveId_</span></span>      | <span data-ttu-id="e2a2e-162">строка</span><span class="sxs-lookup"><span data-stu-id="e2a2e-162">string</span></span> | <span data-ttu-id="e2a2e-163">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-163">Required.</span></span> <span data-ttu-id="e2a2e-164">Идентификатор запрошенного диска.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-164">The identifier for the drive requested.</span></span> |
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8a4ca-165">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="8a4ca-165">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e2a2e-165">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e2a2e-165">Optional query parameters</span></span>
 
-<span data-ttu-id="8a4ca-166">Эти методы поддерживают [параметр запроса $select][odata-query-parameters] для формирования отклика.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-166">These method support the [$select query parameter][odata-query-parameters] to shape the response.</span></span>
+<span data-ttu-id="e2a2e-166">Эти методы поддерживают [параметр запроса $select][odata-query-parameters] для формирования отклика.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-166">These method support the [$select query parameter][odata-query-parameters] to shape the response.</span></span>
 
-## <a name="http-response"></a><span data-ttu-id="8a4ca-167">HTTP-отклик</span><span class="sxs-lookup"><span data-stu-id="8a4ca-167">HTTP response</span></span>
+## <a name="response"></a><span data-ttu-id="e2a2e-167">Ответ</span><span class="sxs-lookup"><span data-stu-id="e2a2e-167">Response</span></span>
 
-<span data-ttu-id="8a4ca-168">Каждый из этих методов возвращает [ресурс Drive][drive-resource] для соответствующего объекта drive в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-168">Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.</span></span>
+<span data-ttu-id="e2a2e-168">Каждый из этих методов возвращает [ресурс Drive][drive-resource] для соответствующего объекта drive в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-168">Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
 
@@ -144,9 +144,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="error-response-codes"></a><span data-ttu-id="8a4ca-169">Коды откликов с ошибками</span><span class="sxs-lookup"><span data-stu-id="8a4ca-169">Error response codes</span></span>
+### <a name="error-response-codes"></a><span data-ttu-id="e2a2e-169">Коды откликов с ошибками</span><span class="sxs-lookup"><span data-stu-id="e2a2e-169">Error response codes</span></span>
 
-<span data-ttu-id="8a4ca-170">Если объект drive не существует и не удается подготовить его к работе автоматически (при использовании делегированной проверки подлинности), будет возвращен отклик `HTTP 404`.</span><span class="sxs-lookup"><span data-stu-id="8a4ca-170">If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.</span></span>
+<span data-ttu-id="e2a2e-170">Если объект drive не существует и не удается подготовить его к работе автоматически (при использовании делегированной проверки подлинности), будет возвращен отклик `HTTP 404`.</span><span class="sxs-lookup"><span data-stu-id="e2a2e-170">If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.</span></span>
 
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
