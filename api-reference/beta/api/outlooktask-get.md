@@ -1,12 +1,12 @@
 ---
 title: Получение outlookTask
 description: Получите свойства и связи задачи Outlook в почтовом ящике пользователя.
-ms.openlocfilehash: d7d985614a37f0a4a70a074f63f4182130948495
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f528ccbf3fa27b6c4cd6226e63f1feedab1954e4
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075349"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771683"
 ---
 # <a name="get-outlooktask"></a>Получение outlookTask
 
@@ -17,6 +17,7 @@ ms.locfileid: "27075349"
 По умолчанию эта операция (и POST, ИСПРАВЛЕНИЙ и [выполнения](../api/outlooktask-complete.md) операции задачи) возвращает свойства, связанные с даты в формате UTC. Можно использовать `Prefer: outlook.timezone` заголовок, чтобы все свойства, связанный с данными в ответ, представленного в часовом поясе, отличного от UTC.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -26,46 +27,58 @@ ms.locfileid: "27075349"
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+GET /me/outlook/tasks/{id}
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответ, который может быть в формате UTC, если не указан этот заголовок. Необязательный параметр.|
 
 ## <a name="request-body"></a>Тело запроса
+
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` объект [outlookTask](../resources/outlooktask.md) и кода ответа в теле ответа.
+
 ## <a name="example-1"></a>Пример 1
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. По умолчанию свойства даты и времени в ответе возвращаются в формате UTC. 
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+### <a name="response"></a>Ответ
+
+Ниже приведен пример ответа. По умолчанию свойства даты и времени в ответе возвращаются в формате UTC.
+
+> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -104,28 +117,32 @@ Content-length: 376
 }
 ```
 
-
 ## <a name="example-2"></a>Пример 2
-##### <a name="request"></a>Запрос
-В этом примере используется `Prefer: outlook.timezone` заголовка для указания отображение свойства даты и времени в запросе  
-в Тихоокеанское время.
+
+### <a name="request"></a>Запрос
+
+В этом примере используется `Prefer: outlook.timezone` заголовка для указания отображение свойства даты и времени в ответ в Тихоокеанское время.
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. В указанном Тихоокеанское время отображения свойств даты и времени в ответе. 
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+### <a name="response"></a>Ответ
+
+Ниже приведен пример отклика. В указанном Тихоокеанское время отображения свойств даты и времени в ответе.
+
+> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

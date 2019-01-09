@@ -1,19 +1,21 @@
 ---
 title: Удаление outlookTask
 description: Удаление указанной задачи Outlook в почтовом ящике пользователя.
-ms.openlocfilehash: 00c2c4d1e5b706b34b531380e32083be55c98776
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: cab78b8fea63c5044cc6faa6a1e4f09dd960bfd6
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082314"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771781"
 ---
 # <a name="delete-outlooktask"></a>Удаление outlookTask
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Удаление указанной задачи Outlook в почтовом ящике пользователя.
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -23,19 +25,22 @@ ms.locfileid: "27082314"
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id|userPrincipalName}/outlook/tasks/{id}
-DELETE /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
-DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /me/outlook/tasks/{id}
+DELETE /users/{id|userPrincipalName}/outlook/tasks/{id}
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
+
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -43,21 +48,27 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/ta
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "delete_outlooktask"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADIyAAAhrb_QAAA=')
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. 
+
+### <a name="response"></a>Ответ
+
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

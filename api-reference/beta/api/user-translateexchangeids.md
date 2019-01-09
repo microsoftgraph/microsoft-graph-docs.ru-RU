@@ -2,12 +2,12 @@
 title: 'пользователь: translateExchangeIds'
 description: Переведите идентификаторы, связанные с Outlook ресурсов форматов.
 author: dkershaw10
-ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ca8b8b1f587e545c3ebfb46efecd9c1c093a942a
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360580"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771823"
 ---
 # <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-----|:------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
@@ -54,9 +54,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-------|:------------|
 | Идентификатор записи | Формат идентификатора двоичные запись, используемого клиентами MAPI. |
 | ewsId | Идентификатор формата, используемого клиентами веб-служб Exchange. |
-| immutableEntryId | MAPI-совместимое постоянные идентификатор формата. |
+| immutableEntryId | Двоичные MAPI-совместимое постоянные идентификатор формата. |
 | restId | По умолчанию идентификатор формата Microsoft Graph. |
 | restImmutableEntryId | Постоянные идентификатор формата, используемого в Microsoft Graph. |
+
+Двоичные форматы (`entryId` и `immutableEntryId`) являются кодировке base64 safe URL-адрес. URL-адрес safeness осуществляется путем изменения Кодировка base64 двоичных данных следующим образом:
+
+- Замените `+` с`-`
+- Замените `/` с`_`
+- Удалите все конечные знаки внутренние поля (`=`)
+- Добавление целое число в конец строки, показывающее, сколько символов заполнения были в исходной (`0`, `1`, или `2`)
 
 ## <a name="response"></a>Ответ
 
@@ -66,7 +73,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 Следующем примере показано, как преобразовать несколько идентификаторов из обычного формата API-Интерфейс REST (`restId`) в формат постоянные REST (`restImmutableEntryId`).
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже представлен пример запроса.
 <!-- {
@@ -88,7 +95,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа
 <!-- {

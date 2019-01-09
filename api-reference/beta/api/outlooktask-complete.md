@@ -1,12 +1,12 @@
 ---
 title: 'outlookTask: завершена'
 description: 'Завершить задачу Outlook, в котором задается свойство **completedDateTime** текущей дате '
-ms.openlocfilehash: 732da0f3eb03f6a4674e1254586ae21b5f3334bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 2a92fa0f95737581275f1b5516d68a7feab9578f
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081040"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771809"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: завершена
 
@@ -16,11 +16,12 @@ ms.locfileid: "27081040"
 
 При завершении задачи в ряде повторяющихся в ответ, коллекция задач будет содержать выполненной задачи в серии и следующую задачу из серии.
 
-Свойство **completedDateTime** представляет дату окончания задачи. Часть времени **completedDateTime** по умолчанию имеет значение полуночи в формате UTC. 
+Свойство **completedDateTime** представляет дату окончания задачи. Часть времени **completedDateTime** по умолчанию имеет значение полуночи в формате UTC.
 
 По умолчанию эта операция (и операции задачи POST, GET и ИСПРАВЛЕНИЯ) возвращает свойства, связанные с даты в формате UTC. Можно использовать `Prefer: outlook.timezone` заголовок, чтобы все свойства, связанный с данными в ответ, представленного в часовом поясе, отличного от UTC.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -30,14 +31,16 @@ ms.locfileid: "27081040"
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
-POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/complete
-POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/complete
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/outlook/tasks/{id}/complete
+POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
@@ -45,33 +48,41 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 
 ## <a name="request-body"></a>Тело запроса
 
-## <a name="response"></a>Отклик
+Не указывайте тело запроса для этого метода.
 
-Успешно завершена, этот метод возвращает `200 OK` кода и [outlookTask](../resources/outlooktask.md) коллекции объект ответа в теле ответа.
+## <a name="response"></a>Ответ
+
+Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [outlookTask](../resources/outlooktask.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 В следующем примере указывается указанной задачи как завершенные. Указывает Тихоокеанское время (PST) в `Prefer: outlook.timezone` заголовка.
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "outlooktask_complete"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/tasks('AAMkADA1MT15rfAAA=')/complete
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. **CompletedDateTime** и другие свойства, связанные с даты в ответе выражаются в PST-файлов. 
+### <a name="response"></a>Ответ
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. **CompletedDateTime** и другие свойства, связанные с даты в ответе выражаются в PST-файлов.
+
+> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

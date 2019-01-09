@@ -2,19 +2,21 @@
 title: Список вложений
 description: Получите список объектов вложения, подключенного к задачи Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: db27cfa94e90607e64bed0bf71f55dfbea14b7e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: b998f6f7d3356728400cc7c609dd1014467ae4d6
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309935"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771795"
 ---
 # <a name="list-attachments"></a>Список вложений
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 Получите список объектов [вложения](../resources/attachment.md) , подключенного к задачи Outlook.
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -24,37 +26,48 @@ ms.locfileid: "27309935"
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+GET /me/outlook/tasks/{id}/attachments
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/attachments
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/attachments
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
+
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [вложения](../resources/attachment.md) в теле ответа.
+
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```
-##### <a name="response"></a>Ответ
+
+### <a name="response"></a>Ответ
+
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -62,6 +75,7 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
   "@odata.type": "microsoft.graph.attachment",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

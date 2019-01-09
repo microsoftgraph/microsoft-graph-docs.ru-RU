@@ -2,12 +2,12 @@
 title: Список вложений
 description: Получение списка объектов attachment, вложенных в данные о событии.
 author: angelgolfer-ms
-ms.openlocfilehash: 051ab6fa9b2064ea62606f5d01de540600ed66c2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 57545b89adc5cbb3c20ab782de04438b7b5ba9bf
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333875"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771802"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -16,6 +16,7 @@ ms.locfileid: "27333875"
 Получение списка объектов [attachment](../resources/attachment.md), вложенных в данные о событии.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -25,72 +26,58 @@ ms.locfileid: "27333875"
 |Для приложений | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP-запрос
-Вложения для [событий](../resources/event.md) в списке пользователя по умолчанию [календаря](../resources/calendar.md).
 
-<!--
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
--->
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/events/{id}/attachments
-GET /users/{id | userPrincipalName}/events/{id}/attachments
-
-GET /me/calendar/events/{id}/attachments
-GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments
+GET /users/{id|userPrincipalName}/events/{id}/attachments
 ```
 
 <!--
 GET /groups/{id}/events/{id}/attachments
-GET /groups/{id}/calendar/events/{id}/attachments
 -->
 
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) по умолчанию для пользователя.
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendars/{id}/events/{id}/attachments
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) пользователя.
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-В частности, можно использовать $разверните параметр запроса для включения всех встроенных вложений событий с помощью rest свойства событий. Пример:
+В частности, можно использовать `$expand` параметр для включения всех встроенных вложений событий с помощью rest свойства событий запроса. Пример:
 
-```
+```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 ```
 
-
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
+
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ```
-##### <a name="response"></a>Ответ
+
+### <a name="response"></a>Ответ
+
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -98,6 +85,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
   "@odata.type": "microsoft.graph.attachment",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

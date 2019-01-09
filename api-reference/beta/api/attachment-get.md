@@ -1,18 +1,18 @@
 ---
 title: Вывод вложения
-description: 'Чтение свойства и связи вложения, присоединенные к событию '
-ms.openlocfilehash: a432e4f3fb98062a701e4c6e7b177145faa65e1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Чтение свойства и связи вложения, подключенного к события, сообщения, задачи Outlook или post.
+ms.openlocfilehash: 040e6995a24fcff62e8e7f476afdc602a6c9617c
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076367"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771816"
 ---
 # <a name="get-attachment"></a>Вывод вложения
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-Чтение свойства и связи вложения, подключенного к [события](../resources/event.md), [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md). 
+Чтение свойства и связи вложения, подключенного к [события](../resources/event.md), [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md).
 
 Допустимые типы вложений:
 
@@ -20,100 +20,88 @@ ms.locfileid: "27076367"
 * элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md)); Вы можете использовать `$expand` для получения других свойств этого элемента. См. [пример](#request-2) ниже.
 * ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).
 
-Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md). 
+Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 * Если доступ к вложений в сообщениях: Mail.Read
 * Если доступ к вложениям в события: Calendars.Read
 * Если доступ к вложениям с задачами Outlook: Tasks.Read
 * Если доступ к вложениям в группу публикации: Group.Read.All
+
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
 -->
 
 ## <a name="http-request"></a>HTTP-запрос
-Вложения для [событий](../resources/event.md) в списке пользователя по умолчанию [календаря](../resources/calendar.md).
 
-<!--
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
--->
+Вложения для [события](../resources/event.md).
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-
-GET /me/calendar/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
 <!--
 GET /groups/{id}/events/{id}/attachments/{id}
-GET /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) по умолчанию для пользователя.
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-```
-Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md), принадлежащем к группе [calendarGroup](../resources/calendargroup.md) пользователя.
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-```
 Вложения [сообщения](../resources/message.md) в почтовом ящике пользователя.
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
+
 Вложения [сообщения](../resources/message.md) в папке [mailFolder](../resources/mailfolder.md) верхнего уровня в почтовом ящике пользователя.
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
+
 Вложения для [сообщений](../resources/message.md) , содержащихся в дочерней папкой [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показана один уровень вложения, но сообщение может быть найдена в дочерних дочернего и т. д.
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Вложения для [задачи Outlook](../resources/outlooktask.md) в почтовом ящике пользователя или в папку указанной задачи или группа задач.
+Вложения для [задач Outlook](../resources/outlooktask.md).
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/outlook/tasks/<id>/attachments/{id}
 GET /users/<id>/outlook/tasks/<id>/attachments/{id}
-
-GET /me/outlook/taskFolders/<id>/tasks/<id>/attachments/{id}
-GET /users/<id>/outlook/taskFolders/<id>/tasks/<id>/attachments/{id}
-
-GET /me/outlook/taskGroups/<id>/taskFolders/<id>/tasks/<id>/attachments/{id}
-GET /users/<id>/outlook/taskGroups/<id>/taskFolders/<id>/tasks/<id>/attachments/{id}
 ```
 
 Вложения для [записи](../resources/post.md) в [цепочке](../resources/conversationthread.md) [беседы](../resources/conversation.md) в группе.
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
+
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -122,23 +110,27 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="example-file-attachment"></a>Пример (вложенный файл)
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса на получение вложенного файла из данных, касающихся события.
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -157,24 +149,29 @@ Content-length: 199
   "size": 99
 }
 ```
+
 ## <a name="example-item-attachment"></a>Пример (вложенный элемент)
 
-##### <a name="request-1"></a>Запрос 1
+### <a name="request-1"></a>Запрос 1
+
 В первом примере показано, как получить вложенный элемент в сообщении. Возвращаются свойства **itemAttachment**.
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-##### <a name="response-1"></a>Ответ 1
+### <a name="response-1"></a>Ответ 1
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -191,23 +188,26 @@ Content-type: application/json
 }
 ```
 
+### <a name="request-2"></a>Запрос 2
 
-##### <a name="request-2"></a>Запрос 2
 В следующем примере показано, как использовать `$expand` для получения свойств элемента, вложенного в сообщение. В этом примере вложением является сообщением. Свойства вложенного сообщения также возвращаются.
 <!-- {
   "blockType": "request",
   "name": "get_and_expand_item_attachment"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 
-##### <a name="response-2"></a>Ответ 2
+### <a name="response-2"></a>Ответ 2
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -279,25 +279,28 @@ Content-type: application/json
 }
 ```
 
-
 ## <a name="example-reference-attachment"></a>Пример (вложенная ссылка)
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса на получение вложенной ссылки из данных, касающихся события.
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
