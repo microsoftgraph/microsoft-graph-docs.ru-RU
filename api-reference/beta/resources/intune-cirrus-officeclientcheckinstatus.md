@@ -2,12 +2,13 @@
 title: Тип ресурса officeClientCheckinStatus
 description: Сущности, которая описывает клиента возврат stats.
 author: tfitzmac
-ms.openlocfilehash: 0c6359d3cb6c776d0f26fdaf88ce7f2f03e5f8c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ff75c5d73db35c5c2ff70ad3a3dc3e4509745188
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825235"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>Тип ресурса officeClientCheckinStatus
 
@@ -21,12 +22,12 @@ ms.locfileid: "27331719"
 |:---|:---|:---|
 |userPrincipalName|Строка|Имя участника-пользователя с помощью устройства.|
 |deviceName|String|Имя устройства для возврата.|
-|devicePlatform|String.|Устройство платформы для возврата.|
-|devicePlatformVersion|String.|Для возврата версии платформы устройства.|
-|wasSuccessful|Boolean.|Если последний checkin прошла успешно.|
+|devicePlatform|Строка|Устройство платформы для возврата.|
+|devicePlatformVersion|Строка|Для возврата версии платформы устройства.|
+|wasSuccessful|Логический|Если последний checkin прошла успешно.|
 |userId|String|Идентификатор пользователя, с помощью устройства.|
 |checkinDateTime|DateTimeOffset|Последний устройства возврат времени в формате UTC.|
-|сообщение об ошибке|String.|Сообщение об ошибке, если какие-либо связанные для последнего checkin.|
+|сообщение об ошибке|Строка|Сообщение об ошибке, если какие-либо связанные для последнего checkin.|
 |appliedPolicies|Коллекция String|Список политик доставки на устройство как последний checkin.|
 
 ## <a name="relationships"></a>Связи

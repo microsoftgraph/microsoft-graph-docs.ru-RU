@@ -2,12 +2,13 @@
 title: Тип ресурса fileEncryptionInfo
 description: Содержит свойства сведений о шифровании файлов для версии содержимого бизнес-приложения.
 author: tfitzmac
-ms.openlocfilehash: a13c451193d248d09e020cc6b308b9f03d991295
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03d8adbbf43b38bfc7d13bec2db09c2be8c3b2ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307856"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868973"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Тип ресурса fileEncryptionInfo
 

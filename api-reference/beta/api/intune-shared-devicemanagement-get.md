@@ -2,12 +2,13 @@
 title: Получение объекта deviceManagement
 description: Чтение свойств и связей объекта deviceManagement.
 author: tfitzmac
-ms.openlocfilehash: ebe44a865b76e2375b5c8df999d89697d6e94351
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c00b60793209904ce184de25f12f1f4ad14fad1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323935"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862638"
 ---
 # <a name="get-devicemanagement"></a>Получение объекта deviceManagement
 
@@ -61,11 +62,11 @@ GET /deviceManagement
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

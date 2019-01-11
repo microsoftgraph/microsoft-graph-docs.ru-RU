@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: дельты'
 description: Get вновь созданных, обновлении или удалении субъектов-служб без необходимости выполнения полного чтения коллекции всей ресурсов. Для получения дополнительных сведений в разделе с помощью запроса дельты.
-ms.openlocfilehash: 27653df1444ca83ef819d51813a813b169f3ad7e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f1801f98950f132e8fdc94770d616fc2e523a2de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868294"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: дельты
 
@@ -23,7 +24,7 @@ Get вновь созданных, обновлении или удалении 
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Application.ReadWrite.All Directory.Read.All |
+|Для приложений | Application.ReadWrite.All Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +60,7 @@ GET /servicePrincipals/delta
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ### <a name="response"></a>Ответ

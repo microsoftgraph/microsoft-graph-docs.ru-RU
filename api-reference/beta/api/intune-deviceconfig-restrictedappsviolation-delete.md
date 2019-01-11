@@ -2,12 +2,13 @@
 title: Удаление restrictedAppsViolation
 description: Удаляет restrictedAppsViolation.
 author: tfitzmac
-ms.openlocfilehash: 0a5a746074f743d583f6512e12bd85419786146f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18f57161d6ac299aa16a1cdfc12b46a9358de259
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312959"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863170"
 ---
 # <a name="delete-restrictedappsviolation"></a>Удаление restrictedAppsViolation
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restricted
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

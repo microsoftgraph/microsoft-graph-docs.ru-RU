@@ -2,12 +2,13 @@
 title: Создание объекта mobileThreatDefenseConnector
 description: Создание объекта mobileThreatDefenseConnector.
 author: tfitzmac
-ms.openlocfilehash: e77b4684f2f330441b8d9ec1f7b14e8e788835a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1ead3e352723e8dc345c94eee513c8fb0c1aaa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854896"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Создание объекта mobileThreatDefenseConnector
 
@@ -37,7 +38,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -53,15 +54,15 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Состояние партнера синхронизации данных для этой учетной записи. Возможные значения: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|Логическое|Для ОС Android следует указать, необходимо ли использовать данные партнера по синхронизации данных в ходе оценки соответствия требованиям|
 |iosEnabled|Логическое|Для ОС IOS следует указать, использовать ли данные партнера по синхронизации данных в ходе оценок соответствия требованиям|
-|windowsEnabled|Boolean.|Для Windows получить или задать ли данные из партнер синхронизации данных можно использовать во время оценки соответствия требованиям|
-|macEnabled|Boolean.|Для Mac получить или задать ли данные из партнер синхронизации данных можно использовать во время оценки соответствия требованиям|
+|windowsEnabled|Логический|Для Windows получить или задать ли данные из партнер синхронизации данных можно использовать во время оценки соответствия требованиям|
+|macEnabled|Логический|Для Mac получить или задать ли данные из партнер синхронизации данных можно использовать во время оценки соответствия требованиям|
 |androidDeviceBlockedOnMissingPartnerData|Логическое|Для ОС Android следует указать, получать ли Intune данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
 |iosDeviceBlockedOnMissingPartnerData|Логическое|Для ОС IOS следует указать, получать ли Intune данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
-|windowsDeviceBlockedOnMissingPartnerData|Boolean.|Для Windows установите ли Intune необходимо получать данные из партнер синхронизации данных до пометки совместимые устройства|
-|macDeviceBlockedOnMissingPartnerData|Boolean.|Для Mac получить или задать ли Intune необходимо получать данные из партнер синхронизации данных до пометки совместимые устройства|
+|windowsDeviceBlockedOnMissingPartnerData|Логический|Для Windows установите ли Intune необходимо получать данные из партнер синхронизации данных до пометки совместимые устройства|
+|macDeviceBlockedOnMissingPartnerData|Логический|Для Mac получить или задать ли Intune необходимо получать данные из партнер синхронизации данных до пометки совместимые устройства|
 |partnerUnsupportedOsVersionBlocked|Логическое|Получение или задание настроек, следует ли на включенных платформах блокировать устройства, которые не соответствуют минимальным требованиям партнера по синхронизации данных к версии|
 |partnerUnresponsivenessThresholdInDays|Int32|Получает или задает количество дней устойчивости к отсутствию отклика для клиента при этой интеграции партнера.|
-|allowPartnerToCollectIOSApplicationMetadata|Boolean.|Для операций ввода-ВЫВОДА устройств позволяет администратору настроить ли партнер синхронизации данных также может собирать метаданные об установленных приложениях из Intune|
+|allowPartnerToCollectIOSApplicationMetadata|Логический|Для операций ввода-ВЫВОДА устройств позволяет администратору настроить ли партнер синхронизации данных также может собирать метаданные об установленных приложениях из Intune|
 
 
 

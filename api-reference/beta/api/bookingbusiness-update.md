@@ -1,12 +1,13 @@
 ---
 title: Обновление bookingbusiness
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: c0d92e0ddf792e28cb488cf466a1462272086c8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 53115469821bc39c05c4e7a262e5f9fc15b376ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824999"
 ---
 # <a name="update-bookingbusiness"></a>Обновление bookingbusiness
 
@@ -32,20 +33,20 @@ PATCH /bookingBusinesses/<id>
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|Почтовый адрес организации.|
 |businessHours|[bookingWorkHours](../resources/bookingworkhours.md) коллекции|Часы работы для предприятий.|
-|businessType|String|Тип бизнеса.|
-|defaultCurrencyIso|String|Код для валюты, предприятию работает в Microsoft резервирования.|
-|displayName|String|Имя для бизнеса, связанный с клиентами.|
+|businessType|Строка|Тип бизнеса.|
+|defaultCurrencyIso|Строка|Код для валюты, предприятию работает в Microsoft резервирования.|
+|displayName|Строка|Имя для бизнеса, связанный с клиентами.|
 |email|String|Адрес электронной почты для бизнеса.|
 |phone|String|Номер телефона для бизнеса.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создать резервирования для бизнеса.|
-|webSiteUrl|String|URL-адрес веб-сайта бизнеса.|
+|webSiteUrl|Строка|URL-адрес веб-сайта бизнеса.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.

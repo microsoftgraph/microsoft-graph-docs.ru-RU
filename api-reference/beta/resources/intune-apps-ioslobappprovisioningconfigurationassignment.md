@@ -2,12 +2,13 @@
 title: Тип ресурса iosLobAppProvisioningConfigurationAssignment
 description: Класс, содержащий свойства, используемые для назначения группы для iOS, бизнес-приложения подготовки и настройки.
 author: tfitzmac
-ms.openlocfilehash: 795fe7e07fdd5a79e4d3d99f7d081bd458452473
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c136689f0b99423445eecb1b9309bf1794f389c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868847"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>Тип ресурса iosLobAppProvisioningConfigurationAssignment
 

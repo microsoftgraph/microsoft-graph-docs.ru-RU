@@ -2,12 +2,13 @@
 title: Удаление macOSEndpointProtectionConfiguration
 description: Удаляет macOSEndpointProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: c32a21a6db55a290d0a1af68e6c464bf9033c2c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5b8fc960e2ff9dd1db88f735b746eeaba07d309
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868644"
 ---
 # <a name="delete-macosendpointprotectionconfiguration"></a>Удаление macOSEndpointProtectionConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

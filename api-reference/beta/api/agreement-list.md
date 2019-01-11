@@ -1,12 +1,13 @@
 ---
 title: Соглашения по списку
 description: Получение списка объектов соглашения.
-ms.openlocfilehash: c49a23be801168f552b9db8f1911e03e65d521ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3ae255a386986b5627aed99f29dca5bfb9934e30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077625"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859922"
 ---
 # <a name="list-agreements"></a>Соглашения по списку
 
@@ -35,9 +36,9 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [соглашения](../resources/agreement.md) в теле ответа.

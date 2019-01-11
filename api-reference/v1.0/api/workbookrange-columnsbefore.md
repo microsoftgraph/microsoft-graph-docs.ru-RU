@@ -2,12 +2,13 @@
 title: 'workbookRange: columnsBefore'
 description: Возвращает определенное количество столбцов слева от заданного диапазона.
 author: lumine2008
-ms.openlocfilehash: f1c97de44daceb4243d3320451b0b3c558b82163
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d8316ff9a13dbe4770aef10139c1075aca01241
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867853"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -41,7 +42,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

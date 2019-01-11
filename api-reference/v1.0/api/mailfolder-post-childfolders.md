@@ -2,12 +2,13 @@
 title: Создание объекта MailFolder
 description: С помощью этого API можно создать дочернюю папку почты.
 author: angelgolfer-ms
-ms.openlocfilehash: 717baa63f3bb15355eaf59387b8fc701ab1288b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 44a61fda9120faaac0d8d69590c677896796765e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331524"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860034"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -38,10 +39,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательный. |
+| Authorization | `Bearer {token}`. Обязательный. |
 | Content-Type | `application/json`. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **отображаемое имя** является свойством только для записи для объекта [mailFolder](../resources/mailfolder.md) .
 

@@ -2,12 +2,13 @@
 title: Получение windowsPhone81CertificateProfileBase
 description: Чтение свойства и связи объекта windowsPhone81CertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 426e918269cb1f58a665f90fd1b5a427a5b26dbc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed64d4abd3c52b6a86c33e9cf6e8ccc1e3bc7ea3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324572"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860027"
 ---
 # <a name="get-windowsphone81certificateprofilebase"></a>Получение windowsPhone81CertificateProfileBase
 
@@ -39,11 +40,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

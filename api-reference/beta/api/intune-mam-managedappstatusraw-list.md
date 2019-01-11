@@ -2,12 +2,13 @@
 title: Перечисление объектов managedAppStatusRaw
 description: Перечисление свойств и связей объектов managedAppStatusRaw.
 author: tfitzmac
-ms.openlocfilehash: 5f87e8056699a5f7b428a44bb36f4674864af223
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eb7d20e07a0c439c64ac9a083bbf302051d324d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867748"
 ---
 # <a name="list-managedappstatusraws"></a>Перечисление объектов managedAppStatusRaw
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/managedAppStatuses
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
