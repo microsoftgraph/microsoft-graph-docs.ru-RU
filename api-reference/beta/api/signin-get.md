@@ -1,48 +1,49 @@
 ---
 title: Получение вход
 description: Извлекает Azure AD входы для клиента. Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.
-ms.openlocfilehash: 1934af9b918dc976ef7f3fc6cdd21c04f6fcc705
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894497"
 ---
-# <a name="get-signin"></a><span data-ttu-id="d6346-104">Получение вход</span><span class="sxs-lookup"><span data-stu-id="d6346-104">Get signIn</span></span>
-<span data-ttu-id="d6346-105">Извлекает Azure AD входы для клиента.</span><span class="sxs-lookup"><span data-stu-id="d6346-105">Retrieves the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="d6346-106">Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.</span><span class="sxs-lookup"><span data-stu-id="d6346-106">Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
+# <a name="get-signin"></a><span data-ttu-id="fb7ba-104">Получение вход</span><span class="sxs-lookup"><span data-stu-id="fb7ba-104">Get signIn</span></span>
+<span data-ttu-id="fb7ba-105">Извлекает Azure AD входы для клиента.</span><span class="sxs-lookup"><span data-stu-id="fb7ba-105">Retrieves the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="fb7ba-106">Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.</span><span class="sxs-lookup"><span data-stu-id="fb7ba-106">Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="d6346-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d6346-107">Permissions</span></span>
-<span data-ttu-id="d6346-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d6346-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fb7ba-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fb7ba-107">Permissions</span></span>
+<span data-ttu-id="fb7ba-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fb7ba-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d6346-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d6346-110">Permission type</span></span>      | <span data-ttu-id="d6346-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d6346-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fb7ba-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fb7ba-110">Permission type</span></span>      | <span data-ttu-id="fb7ba-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fb7ba-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d6346-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d6346-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d6346-113">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="d6346-113">AuditLog.Read.All</span></span> |
-|<span data-ttu-id="d6346-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d6346-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d6346-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="d6346-115">Not supported</span></span>   |
-|<span data-ttu-id="d6346-116">Для приложения</span><span class="sxs-lookup"><span data-stu-id="d6346-116">Application</span></span> | <span data-ttu-id="d6346-117">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="d6346-117">AuditLog.Read.All</span></span> | 
+|<span data-ttu-id="fb7ba-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fb7ba-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fb7ba-113">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="fb7ba-113">AuditLog.Read.All</span></span> |
+|<span data-ttu-id="fb7ba-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fb7ba-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fb7ba-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="fb7ba-115">Not supported</span></span>   |
+|<span data-ttu-id="fb7ba-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fb7ba-116">Application</span></span> | <span data-ttu-id="fb7ba-117">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="fb7ba-117">AuditLog.Read.All</span></span> | 
 
-<span data-ttu-id="d6346-118">Кроме того приложения должны быть [правильно зарегистрирован](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) для Azure AD.</span><span class="sxs-lookup"><span data-stu-id="d6346-118">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
+<span data-ttu-id="fb7ba-118">Кроме того приложения должны быть [правильно зарегистрирован](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) для Azure AD.</span><span class="sxs-lookup"><span data-stu-id="fb7ba-118">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d6346-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d6346-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fb7ba-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fb7ba-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d6346-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d6346-120">Optional query parameters</span></span>
-<span data-ttu-id="d6346-121">Этот метод поддерживает следующие параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d6346-121">This method supports the following OData Query Parameters to help customize the response.</span></span> <span data-ttu-id="d6346-122">Проверьте [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для порядок использования этих параметров.</span><span class="sxs-lookup"><span data-stu-id="d6346-122">Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fb7ba-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fb7ba-120">Optional query parameters</span></span>
+<span data-ttu-id="fb7ba-121">Этот метод поддерживает следующие параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="fb7ba-121">This method supports the following OData Query Parameters to help customize the response.</span></span> <span data-ttu-id="fb7ba-122">Проверьте [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для порядок использования этих параметров.</span><span class="sxs-lookup"><span data-stu-id="fb7ba-122">Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d6346-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d6346-123">Request headers</span></span>
-| <span data-ttu-id="d6346-124">Имя</span><span class="sxs-lookup"><span data-stu-id="d6346-124">Name</span></span>      |<span data-ttu-id="d6346-125">Описание</span><span class="sxs-lookup"><span data-stu-id="d6346-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fb7ba-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fb7ba-123">Request headers</span></span>
+| <span data-ttu-id="fb7ba-124">Имя</span><span class="sxs-lookup"><span data-stu-id="fb7ba-124">Name</span></span>      |<span data-ttu-id="fb7ba-125">Описание</span><span class="sxs-lookup"><span data-stu-id="fb7ba-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d6346-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="d6346-126">Authorization</span></span>  | <span data-ttu-id="d6346-127">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="d6346-127">Bearer {code}</span></span>|
+| <span data-ttu-id="fb7ba-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="fb7ba-126">Authorization</span></span>  | <span data-ttu-id="fb7ba-127">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="fb7ba-127">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d6346-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d6346-128">Request body</span></span>
-<span data-ttu-id="d6346-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d6346-129">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="d6346-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="d6346-130">Response</span></span>
-<span data-ttu-id="d6346-131">Успешно завершена, этот метод возвращает `200 OK` объект [входить](../resources/signin.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="d6346-131">If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d6346-132">Пример</span><span class="sxs-lookup"><span data-stu-id="d6346-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d6346-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="d6346-133">Request</span></span>
-<span data-ttu-id="d6346-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d6346-134">Here is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fb7ba-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fb7ba-128">Request body</span></span>
+<span data-ttu-id="fb7ba-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fb7ba-129">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="fb7ba-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="fb7ba-130">Response</span></span>
+<span data-ttu-id="fb7ba-131">Успешно завершена, этот метод возвращает `200 OK` объект [входить](../resources/signin.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="fb7ba-131">If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="fb7ba-132">Пример</span><span class="sxs-lookup"><span data-stu-id="fb7ba-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fb7ba-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="fb7ba-133">Request</span></span>
+<span data-ttu-id="fb7ba-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fb7ba-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "reque|location/city| eq, startswith|
 st",
@@ -51,8 +52,8 @@ st",
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="d6346-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="d6346-135">Response</span></span>
-<span data-ttu-id="d6346-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d6346-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="fb7ba-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="fb7ba-135">Response</span></span>
+<span data-ttu-id="fb7ba-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fb7ba-136">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
