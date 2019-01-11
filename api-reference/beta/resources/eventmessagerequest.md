@@ -2,12 +2,13 @@
 title: Тип ресурса eventMessageRequest
 description: Сообщение, которое представляет приглашения на собрание.
 author: angelgolfer-ms
-ms.openlocfilehash: f32393e0811543e7630c16e6889b31ce3dbc5920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a4af3bef767213c977dde1195c89d1de02a0cf8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844025"
 ---
 # <a name="eventmessagerequest-resource-type"></a>Тип ресурса eventMessageRequest
 
@@ -91,11 +92,11 @@ ms.locfileid: "27335646"
 |id|Строка|Только для чтения.|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Возможные значения: `Focused`, `Other`.|
-|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Boolean|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isOutOfDate|Boolean.|Указывает ли этот запрос на собрание было выполнено устаревших последних запроса.|
-|isRead|Boolean|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isOutOfDate|Логический|Указывает ли этот запрос на собрание было выполнено устаревших последних запроса.|
+|isRead|Логический|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |location|[Location](location.md)|Место собрания запрошенного.|
 |meetingMessageType|String| Тип сообщения о событии: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|

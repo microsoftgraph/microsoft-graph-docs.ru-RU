@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса calendar
 description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для ресурса user или стандартный календарь для ресурса group, представляющего группу Office 365.
-ms.openlocfilehash: 1c1797897c0efcd7d7196977f93b6a8c611f83f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c567a37be651987f2ca5af08cf9837ba6f41076f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843248"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
@@ -44,7 +45,7 @@ ms.locfileid: "27027779"
 |canViewPrivateItems |Boolean |Значение true, если пользователь может читать элементы календаря, которые были помечены как частные, в противном случае — значение false. |
 |changeKey|String|Указывает версию объекта calendar. При каждом изменении календаря также меняется значение changeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
 |color|calendarColor|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue = 0, LightGreen = 1, LightOrange = 2, LightGray = 3, LightYellow = 4, LightTeal = 5, LightPink = 6, LightBrown = 7, LightRed = 8, MaxColor = 9, Auto = -1.|
-|id|String|Уникальный идентификатор группы. Только для чтения.|
+|id|Строка|Уникальный идентификатор группы. Только для чтения.|
 |name|String|Имя календаря.|
 |owner |[emailAddress](emailaddress.md) | Если это свойство задано, оно указывает на пользователя, создавшего или добавившего календарь. В календаре, созданном или добавленном пользователем, свойство **owner** установлено для этого пользователя. В календаре, который используется совместно с пользователем, свойство **owner** установлено для лица, предоставившего пользователю общий доступ к этому календарю. |
 

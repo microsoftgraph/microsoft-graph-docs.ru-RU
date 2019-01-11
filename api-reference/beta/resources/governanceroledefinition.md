@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса governanceRoleDefinition
 description: Представляет определения ролей. Для Azure ресурсов может представлять роли Azure RBAC, такие как владелец, чтения, участник, и т.д.
-ms.openlocfilehash: 057d74276b41abad47eb60ce48a99f1160c401ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f94dd1a741545760951875fbc064307823a65dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076447"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842453"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Тип ресурса governanceRoleDefinition
 
@@ -21,18 +22,18 @@ ms.locfileid: "27076447"
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|:----------|
 |[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) коллекции |Список коллекцию определений ролей для ресурса.|
-|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Чтение свойства и связи с указанным идентификатором сущности определения роли.|
+|[получение](../api/governanceroledefinition-get.md); | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Чтение свойства и связи с указанным идентификатором сущности определения роли.|
 Не `POST`, `PUT`, `PATCH`, `DELETE` поддерживается на `roleDefinitions` набора сущностей в данный момент.
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип      |Описание|
 |:----|:----------|:----------|:----------|
-|id         |String     |Идентификатор определения роли. |
-|resourceId |String     |Обязательно. Идентификатор ресурса, связанного с определением роли. |
+|id         |Строка     |Идентификатор определения роли. |
+|resourceId |Строка     |Обязательный. Идентификатор ресурса, связанного с определением роли. |
 |externalId   |String     |Внешний идентификатор определения роли.|
-|displayName|String     |Отображаемое имя определения роли.|
-|subjectCount|Int32     |Необязательный атрибут. Число субъектов, которые были им назначены роли. Он представляет состояние запрашивающего доступ к ресурсу. Чтобы получить свойство, рекомендуется использовать явным образом `$select=subjectCount` в запросе.|
-|eligibleAssignmentCount|Int32|Необязательный атрибут. Число назначений подходящими ролей, связанных с определением роли. Чтобы получить свойство, рекомендуется использовать явным образом `$select=eligibleAssignmentCount` в запросе.|
-|activeAssignmentCount|Int32    |Необязательный атрибут. Число назначений active ролей, связанных с определением роли.  Чтобы получить свойство, рекомендуется использовать явным образом `$select=activeAssignmentCount` в запросе.|
+|displayName|Строка     |Отображаемое имя определения роли.|
+|subjectCount|Int32     |Необязательное. Число субъектов, которые были им назначены роли. Он представляет состояние запрашивающего доступ к ресурсу. Чтобы получить свойство, рекомендуется использовать явным образом `$select=subjectCount` в запросе.|
+|eligibleAssignmentCount|Int32|Необязательное. Число назначений подходящими ролей, связанных с определением роли. Чтобы получить свойство, рекомендуется использовать явным образом `$select=eligibleAssignmentCount` в запросе.|
+|activeAssignmentCount|Int32    |Необязательное. Число назначений active ролей, связанных с определением роли.  Чтобы получить свойство, рекомендуется использовать явным образом `$select=activeAssignmentCount` в запросе.|
 
 
 ## <a name="relationships"></a>Связи

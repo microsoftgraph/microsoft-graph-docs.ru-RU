@@ -1,12 +1,13 @@
 ---
 title: Создание synchronizationJob
 description: Создание нового задания синхронизации со схемой по умолчанию синхронизации. Задание будет создан в отключенном состоянии. Вызов запуска задания, чтобы запустить синхронизацию.
-ms.openlocfilehash: 3c7e3c3a9c89f95b031cd45d38848e0f2f451de7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 04b8e383c923968b150067c9d2c3a65ce32bd9c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842226"
 ---
 # <a name="create-synchronizationjob"></a>Создание synchronizationJob
 
@@ -35,7 +36,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите представление объекта [synchronizationJob](../resources/synchronization-synchronizationjob.md) будет создан с JSON. Является единственным обязательным свойством `templateId`. `templateId` Свойство должно соответствовать одному из шаблонов, которые созданы для участника-службы и приложения. Чтобы найти доступные шаблоны, используйте [Шаблоны списков](synchronization-synchronizationtemplate-list.md).
 

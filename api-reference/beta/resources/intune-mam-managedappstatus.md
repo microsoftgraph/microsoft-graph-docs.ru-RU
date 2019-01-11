@@ -2,12 +2,13 @@
 title: Тип ресурса managedAppStatus
 description: Представляет состояние защиты и конфигурации приложений для организации.
 author: tfitzmac
-ms.openlocfilehash: 9a685b8eca9e276bd88bc9643a4ee07029ed4778
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 05b2117f441fd60f92970cc506245d177a618fce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840749"
 ---
 # <a name="managedappstatus-resource-type"></a>Тип ресурса managedAppStatus
 

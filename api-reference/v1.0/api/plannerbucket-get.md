@@ -1,12 +1,13 @@
 ---
 title: Получение объекта plannerBucket
 description: Получение свойств и связей объекта **plannerBucket**.
-ms.openlocfilehash: c07a5c0049c29592eade0b643e1f2b22af024c66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78b0034d7e75f56c8d553cf9122d442d480432d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027809"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839860"
 ---
 # <a name="get-plannerbucket"></a>Получение объекта plannerBucket
 
@@ -31,7 +32,7 @@ GET /planner/buckets/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -51,8 +52,7 @@ GET /planner/buckets/{id}
 GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

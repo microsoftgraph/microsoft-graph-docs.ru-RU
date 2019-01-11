@@ -2,12 +2,13 @@
 title: Получение locationManagementCondition
 description: Чтение свойства и связи объекта locationManagementCondition.
 author: tfitzmac
-ms.openlocfilehash: 86f64b039e99611d0bd0da913d68c9a897fbc4d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1bf6476fb1dad5db06f239df5594205f859b34df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841239"
 ---
 # <a name="get-locationmanagementcondition"></a>Получение locationManagementCondition
 
@@ -40,11 +41,11 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Список ресурсов
 description: Список ресурсов, связанных с этой отправки. Объект **submissionResource** — оболочкой вокруг объекта фактический ресурсов студент работает в. Если это скопированный из назначения во время процесса назначить программы-оболочки для также указатель ресурсов для назначения. Эти ресурсы, рабочую копию назначения. **SubmittedResources** представлены ресурсы, чтобы быть выражаемым числом отправленных официально.
 author: dipakboyed
-ms.openlocfilehash: d63c731798003a2312ee5fbff534cde88d4b9ecf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7476144159a8f2bd6c4600fe5a2eb80076bc7f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341071"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843983"
 ---
 # <a name="list-resources"></a>Список ресурсов
 
@@ -37,7 +38,7 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationSubmissionResource](../resources/educationsubmissionresource.md) в теле ответа.

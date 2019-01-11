@@ -2,12 +2,13 @@
 title: Создание enrollmentProfile
 description: Создание нового объекта enrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: becfc040bb7fa500a5378f16f50f6bcb2e4f106d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f10c8b04a19f541305dd63ec2f063a4fff1d8226
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843990"
 ---
 # <a name="create-enrollmentprofile"></a>Создание enrollmentProfile
 
@@ -37,11 +38,11 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта enrollmentProfile.
 
 В следующей таблице показаны свойства, которые необходимы для создания enrollmentProfile.
@@ -51,9 +52,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |id|Строка|GUID объекта|
 |displayName|Строка|Имя профиля|
 |описание|Строка|Описание профиля|
-|requiresUserAuthentication|Boolean.|Указывает необходимость проверки подлинности пользователей в профиле|
-|configurationEndpointUrl|String.|URL-адрес конечной точки конфигурации для подачи заявок|
-|enableAuthenticationViaCompanyPortal|Boolean.|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании.|
+|requiresUserAuthentication|Логический|Указывает необходимость проверки подлинности пользователей в профиле|
+|configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для подачи заявок|
+|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании.|
 
 
 

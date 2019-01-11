@@ -2,12 +2,13 @@
 title: Тип ресурса ChartSeries
 description: Представляет ряд в диаграмме.
 author: lumine2008
-ms.openlocfilehash: 443b6b3dfea54b59ff92babc2776d9624bd28b20
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6742c30eca55426e54290ae689bfabd8e14ce70f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842632"
 ---
 # <a name="chartseries-resource-type"></a>Тип ресурса ChartSeries
 

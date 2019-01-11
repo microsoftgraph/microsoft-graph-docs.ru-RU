@@ -2,12 +2,13 @@
 title: Тип ресурса remoteActionAudit
 description: Отчет о удаленного действия, которые запускаются на устройствах, относящегося к определенной клиента.
 author: tfitzmac
-ms.openlocfilehash: 48d74cb088a2e16e244898834e3d717302713e6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7624610ed35a583e0ec11582caa1dccda5ce4ce7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840812"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Тип ресурса remoteActionAudit
 
@@ -31,11 +32,11 @@ ms.locfileid: "27323480"
 |id|Строка|Идентификатор отчета.|
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[устаревшие\] вместо этого используйте InitiatedByUserPrincipalName.|
-|initiatedByUserPrincipalName|String.|Пользователя, который инициировал действие устройства имеет формат имени участника-пользователя.|
+|initiatedByUserPrincipalName|Строка|Пользователя, который инициировал действие устройства имеет формат имени участника-пользователя.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
 |requestDateTime|DateTimeOffset|Время, когда действие был отправлен, в формате UTC.|
-|deviceOwnerUserPrincipalName|String.|Имя участника-пользователя владельца устройства.|
-|deviceIMEI|String.|IMEI устройства.|
+|deviceOwnerUserPrincipalName|Строка|Имя участника-пользователя владельца устройства.|
+|deviceIMEI|Строка|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 ## <a name="relationships"></a>Связи

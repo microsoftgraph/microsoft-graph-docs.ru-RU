@@ -2,12 +2,13 @@
 title: Update microsoftStoreForBusinessApp
 description: Обновление свойств объекта microsoftStoreForBusinessApp.
 author: tfitzmac
-ms.openlocfilehash: bfcb051c93afd5dc0af2076a27f619e9719a7b33
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4e54e3d7b38471b4c9d86cc50cb6b7536205008
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843136"
 ---
 # <a name="update-microsoftstoreforbusinessapp"></a>Update microsoftStoreForBusinessApp
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

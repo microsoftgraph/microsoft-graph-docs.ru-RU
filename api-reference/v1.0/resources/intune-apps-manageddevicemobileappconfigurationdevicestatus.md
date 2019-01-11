@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedDeviceMobileAppConfigurationDeviceStatus
 description: Содержит свойства, наследуемые свойства и действия для MDM состояние конфигурации мобильного приложения для устройства.
-ms.openlocfilehash: 439be36b7658c7975f3e458520098e8cbd4e849b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9698c249d8075a7567c3f54defa3d20a475174ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025208"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841442"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>Тип ресурса managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -25,7 +26,7 @@ ms.locfileid: "27025208"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
 |userName|String|Имя пользователя в отчете.|
 |deviceModel|String|Модель устройства в отчете.|

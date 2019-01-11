@@ -1,12 +1,13 @@
 ---
 title: Использование интерфейса API REST канале активности
 description: 'Веб-канал API в Microsoft Graph активности можно использовать для возобновления активности пользователя между устройствами и платформами. Запросы API веб-канала активности выполняются от имени пользователя с помощью делегированы разрешения и разрешение активности пользователей, которую можно использовать с учетными записями личных или рабочих и школы. '
-ms.openlocfilehash: 8f66f7b991df361c96404d4fe1a3c9d19faf2436
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 677d98d8658c282c5db822c46a78fc664a34fbc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842856"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Использование интерфейса API REST канале активности
 

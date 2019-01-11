@@ -2,12 +2,13 @@
 title: Получение androidVpnConfiguration
 description: Чтение свойства и связи объекта androidVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 2f2040cf04c272d75c82c692975464407b2a7a38
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a37ce4efd9dc01bed5444311ff8c3a922ec8e98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841813"
 ---
 # <a name="get-androidvpnconfiguration"></a>Получение androidVpnConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

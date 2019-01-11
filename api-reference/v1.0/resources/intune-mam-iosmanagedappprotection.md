@@ -2,12 +2,13 @@
 title: Тип ресурса iosManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве iOS
 author: tfitzmac
-ms.openlocfilehash: b0323564851548b31533f9ee0c4c6cd38ae25984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e4cc50cc1f06609139b99b30688a9a88fafd9c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359957"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841106"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>Тип ресурса iosManagedAppProtection
 
@@ -61,7 +62,7 @@ ms.locfileid: "27359957"
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о доступе к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|isAssigned|Boolean|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
+|isAssigned|Логический|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Необходимый тип шифрования данных в управляемом приложении. Возможные значения: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
 |deployedAppCount|Int32|Количество приложений, к которым применена текущая политика.|

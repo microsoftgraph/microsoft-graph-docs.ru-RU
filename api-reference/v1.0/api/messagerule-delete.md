@@ -2,12 +2,13 @@
 title: Удаление messageRule
 description: Удаление указанного объекта messageRule.
 author: angelgolfer-ms
-ms.openlocfilehash: 5fe208b72ddc28ca3d2ee5d2b0f1c48113e49c64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c303ffda5f9f43273178a6b23c72ee465b569dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842310"
 ---
 # <a name="delete-messagerule"></a>Удаление messageRule
 
@@ -35,7 +36,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

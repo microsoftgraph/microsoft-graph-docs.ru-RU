@@ -2,12 +2,13 @@
 title: Список androidForWorkApps
 description: Свойства списка и связей объектов androidForWorkApp.
 author: tfitzmac
-ms.openlocfilehash: 82a1d40e12595c7aec61fbc920aea656547c8d76
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 29d9f78cca896ba53b08c647a489caf21e6a9d96
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843437"
 ---
 # <a name="list-androidforworkapps"></a>Список androidForWorkApps
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Тип перечисления appListType
 description: Возможные значения список соответствия требованиям приложения.
 author: tfitzmac
-ms.openlocfilehash: 3f0fa162131fc1f59beba1f057fa888e0f2260c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17452d09976d84f19ed56bbaeb4e558a727b1c7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841022"
 ---
 # <a name="applisttype-enum-type"></a>Тип перечисления appListType
 
@@ -19,7 +20,7 @@ ms.locfileid: "27331194"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Значение по умолчанию, без цели.|
+|Нет|0|Значение по умолчанию, без цели.|
 |appsInListCompliant|1|Список представляет приложений, которые будут считаться спецификации (только для приложений в списке совместимых).|
 |appsNotInListCompliant|2|Представляет список приложений, которые будут считаться несовместимой (все приложения совместимых за исключением приложений в списке).|
 

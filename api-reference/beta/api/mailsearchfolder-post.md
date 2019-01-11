@@ -1,12 +1,13 @@
 ---
 title: Создание mailSearchFolder
 description: Используйте этот интерфейс API для создания нового mailSearchFolder в почтовом ящике указанного пользователя.
-ms.openlocfilehash: a35827a6b9164c8d4c1c0fe54a1897b2271fc5d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 07c6b96bc2dec35d06b5563673012ca0eafb3885
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080816"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840189"
 ---
 # <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
 
@@ -39,20 +40,20 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Заголовок | Значение |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Обязательный атрибут. |
-| Content-Type | `application/json`. Обязательный атрибут. |
+| Authorization | `Bearer {token}`. Обязательный. |
+| Content-Type | `application/json`. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| @odata.type | String | Тип создать папку. Задайте значение «microsoft.graph.mailSearchFolder». |
+| @odata.type | Строка | Тип создать папку. Задайте значение «microsoft.graph.mailSearchFolder». |
 | displayName | String | Отображаемое имя новой папки.|
 | includeNestedFolders | Логический | Как следует обход иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
 | sourceFolderIDs | Коллекция String | Папки почтовых ящиков, которые должны быть получены. |
-| filterQuery | String | Запросов OData для фильтрации сообщений. |
+| filterQuery | Строка | Запросов OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Ответ
 

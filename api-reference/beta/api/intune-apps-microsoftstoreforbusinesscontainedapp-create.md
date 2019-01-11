@@ -2,12 +2,13 @@
 title: Создание microsoftStoreForBusinessContainedApp
 description: Создание нового объекта microsoftStoreForBusinessContainedApp.
 author: tfitzmac
-ms.openlocfilehash: 7fb904075510dd381ab66346a773af2a960bc67b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac782261c00008bf9b4ab552932f8f841a9965bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328107"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843297"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>Создание microsoftStoreForBusinessContainedApp
 
@@ -39,11 +40,11 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта microsoftStoreForBusinessContainedApp.
 
 В следующей таблице показаны свойства, которые необходимы для создания microsoftStoreForBusinessContainedApp.
@@ -51,7 +52,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String.|Автономные приложения MicrosoftStoreForBusinessApp модели пользователя приложения.|
+|appUserModelId|Строка|Автономные приложения MicrosoftStoreForBusinessApp модели пользователя приложения.|
 
 
 

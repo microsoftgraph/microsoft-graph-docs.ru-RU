@@ -2,12 +2,13 @@
 title: Список macOSWiFiConfigurations
 description: Свойства списка и связей объектов macOSWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 10b5611aa09423d670598d012760bc99f4b49cc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6fa386562ac9ccb6d39744de8baba4a7816e0752
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841582"
 ---
 # <a name="list-macoswificonfigurations"></a>Список macOSWiFiConfigurations
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

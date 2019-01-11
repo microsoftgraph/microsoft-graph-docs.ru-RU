@@ -2,12 +2,13 @@
 title: Get mobileAppCategory
 description: Чтение свойств и связей объекта mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: 3e290f1fdeb308975523c504aaa197315890b642
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c50562e44b13455254024f5ceaebeeaf0cf46f39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362603"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839944"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 
@@ -38,11 +39,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

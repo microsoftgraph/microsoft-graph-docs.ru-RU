@@ -2,12 +2,13 @@
 title: Создание androidGeneralDeviceConfiguration
 description: Создание объекта androidGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8ee12d81dc3728a6bf3d21529222a0e7a8d389a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 779b93ce25eb9fe5044a166a78ac7d02ab77201c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340217"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842443"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>Создание androidGeneralDeviceConfiguration
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -62,19 +63,19 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |appsBlockYouTube|Boolean|Указывает, следует ли заблокировать приложение YouTube.|
 |bluetoothBlocked|Boolean|Указывает, следует ли заблокировать Bluetooth.|
 |cameraBlocked|Boolean|Указывает, следует ли запретить использовать камеру.|
-|cellularBlockDataRoaming|Boolean|Указывает, следует ли блокировать передачу данных в роуминге.|
+|cellularBlockDataRoaming|Логический|Указывает, следует ли блокировать передачу данных в роуминге.|
 |cellularBlockMessaging|Boolean|Указывает, следует ли запретить обмениваться SMS и MMS.|
-|cellularBlockVoiceRoaming|Boolean|Указывает, следует ли заблокировать голосовой роуминг.|
+|cellularBlockVoiceRoaming|Логический|Указывает, следует ли заблокировать голосовой роуминг.|
 |cellularBlockWiFiTethering|Boolean|Указывает, следует ли блокировать синхронизацию модема Wi-Fi.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений (разрешенных или заблокированных в зависимости от значения свойства CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Тип списка, определенного свойством CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Boolean|Указывает, следует ли блокировать отправку диагностических данных.|
+|diagnosticDataBlockSubmission|Логический|Указывает, следует ли блокировать отправку диагностических данных.|
 |locationServicesBlocked|Boolean|Указывает, следует ли заблокировать службы определения местоположения.|
 |googleAccountBlockAutoSync|Boolean|Указывает, следует ли блокировать автоматическую синхронизацию учетной записи Google.|
 |googlePlayStoreBlocked|Boolean|Указывает, следует ли блокировать Google Play Маркет.|
 |kioskModeBlockSleepButton|Boolean|Указывает, следует ли блокировать кнопку спящего режима экрана в режиме терминала.|
 |kioskModeBlockVolumeButtons|Boolean|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
-|dateAndTimeBlockChanges|Boolean.|Указывает, следует ли блокировать изменение даты и времени в режиме НОКСА.|
+|dateAndTimeBlockChanges|Логический|Указывает, следует ли блокировать изменение даты и времени в режиме НОКСА.|
 |kioskModeApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список разрешенных приложений в режиме терминала. Эта коллекция может содержать не более 500 элементов.|
 |nfcBlocked|Boolean|Указывает, следует ли блокировать NFC.|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
@@ -95,7 +96,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |storageRequireDeviceEncryption|Boolean|Указывает, обязательно ли шифрование устройства.|
 |storageRequireRemovableStorageEncryption|Boolean|Указывает, обязательно ли шифрование съемных носителей.|
 |voiceAssistantBlocked|Boolean|Указывает, следует ли блокировать использование голосового помощника.|
-|voiceDialingBlocked|Boolean|Указывает, следует ли блокировать голосовой набор.|
+|voiceDialingBlocked|Логический|Указывает, следует ли блокировать голосовой набор.|
 |webBrowserBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна в веб-браузере.|
 |webBrowserBlockAutofill|Boolean|Указывает, следует ли заблокировать функцию автозаполнения в веб-браузере.|
 |webBrowserBlockJavaScript|Boolean|Указывает, следует ли заблокировать JavaScript в веб-браузере.|

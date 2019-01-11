@@ -2,12 +2,13 @@
 title: Тип ресурса iosStoreApp
 description: Содержит свойства, в том числе унаследованные, для приложений из магазина iOS.
 author: tfitzmac
-ms.openlocfilehash: 0abc06f6bcae7f31ad60308423e8156b6e27a84d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cfac525db5d74d7257d09c2ebca210bb81e974a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346447"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840455"
 ---
 # <a name="iosstoreapp-resource-type"></a>Тип ресурса iosStoreApp
 

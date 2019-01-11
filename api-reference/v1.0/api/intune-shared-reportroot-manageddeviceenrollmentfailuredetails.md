@@ -2,12 +2,13 @@
 title: функция managedDeviceEnrollmentFailureDetails
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: e95a0590ee08fb29d2ae95cb68f0bded658ecf18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7e3ad342ad19314e10ae5e2987143646e5796c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357059"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840371"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>функция managedDeviceEnrollmentFailureDetails
 
@@ -36,11 +37,11 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 

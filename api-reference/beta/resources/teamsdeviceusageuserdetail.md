@@ -2,12 +2,13 @@
 title: Тип ресурса teamsDeviceUsageUserDetail
 description: Ниже указано представление ресурса в формате JSON.
 author: nkramer
-ms.openlocfilehash: 1947b66a59190945e5a6b823b47ef8df7d02683a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06e2cea1154c608b61642b07adbd96aae1710903
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329003"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807107"
 ---
 # <a name="teamsdeviceusageuserdetail-resource-type"></a>Тип ресурса teamsDeviceUsageUserDetail
 
@@ -18,14 +19,14 @@ ms.locfileid: "27329003"
 | reportRefreshDate | Date    |
 | userPrincipalName | Строка  |
 | lastActivityDate  | Date    |
-| isDeleted         | Boolean. |
+| isDeleted         | Логический |
 | deletedDate       | Date    |
-| usedWeb           | Boolean. |
-| usedWindowsPhone  | Boolean. |
-| usediOS           | Boolean. |
-| usedMac           | Boolean. |
-| usedAndroidPhone  | Boolean. |
-| usedWindows       | Boolean. |
+| usedWeb           | Логический |
+| usedWindowsPhone  | Логический |
+| usediOS           | Логический |
+| usedMac           | Логический |
+| usedAndroidPhone  | Логический |
+| usedWindows       | Логический |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>Представление JSON

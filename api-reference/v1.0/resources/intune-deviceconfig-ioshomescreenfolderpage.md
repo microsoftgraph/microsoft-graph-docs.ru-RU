@@ -2,12 +2,13 @@
 title: Тип ресурса iosHomeScreenFolderPage
 description: Папка, содержащая приложения с начального экрана
 author: tfitzmac
-ms.openlocfilehash: 147504fc356f3a4092b2ffd1c7d03275ff7dea31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a2019b114d785867fedca2f054f7280b37fae934
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353643"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841162"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Тип ресурса iosHomeScreenFolderPage
 

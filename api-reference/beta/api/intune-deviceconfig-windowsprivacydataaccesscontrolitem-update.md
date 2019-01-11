@@ -2,12 +2,13 @@
 title: Обновление windowsPrivacyDataAccessControlItem
 description: Обновление свойства объекта windowsPrivacyDataAccessControlItem.
 author: tfitzmac
-ms.openlocfilehash: 38389049c03d822feb4c3791dfee65e327e1afea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a989f4c05bff61f86c93873ad817013b6fab2bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324159"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807128"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>Обновление windowsPrivacyDataAccessControlItem
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md).
@@ -51,8 +52,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|Строка|Ключ WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Указывает уровень доступа для категории конфиденциальности данных, к которому будет предоставлен указанного приложения к. Возможные значения: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Указывает категорию конфиденциальности данных, к которому будет применяться контроля доступа к определенным. Возможные значения: `notConfigured`, `accountInfo`, `appsRunInBackground`, `calendar`, `callHistory`, `camera`, `contacts`, `diagnosticsInfo`, `email`, `location`, `messaging`, `microphone`, `motion`, `notifications`, `phone`, `radios`, `tasks`, `syncWithDevices`, `trustedDevices` .|
-|appPackageFamilyName|String.|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
-|appDisplayName|String.|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
+|appPackageFamilyName|Строка|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
+|appDisplayName|Строка|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
 
 
 

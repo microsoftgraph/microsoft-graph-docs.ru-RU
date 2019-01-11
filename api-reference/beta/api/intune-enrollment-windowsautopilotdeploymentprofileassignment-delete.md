@@ -2,12 +2,13 @@
 title: Удаление windowsAutopilotDeploymentProfileAssignment
 description: Удаляет windowsAutopilotDeploymentProfileAssignment.
 author: tfitzmac
-ms.openlocfilehash: 5d6aa06e98be733994d2f24e5183b3a2ea790f62
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 298742713de340292d783782e5f5bdba33ce66af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324292"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841694"
 ---
 # <a name="delete-windowsautopilotdeploymentprofileassignment"></a>Удаление windowsAutopilotDeploymentProfileAssignment
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

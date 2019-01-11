@@ -2,12 +2,13 @@
 title: Тип ресурса ChartFill
 description: Представляет форматирование заливки для элемента диаграммы.
 author: lumine2008
-ms.openlocfilehash: 6e34c06825f52d9cfec271e8bd62a0a5ae3ae451
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a2ce5a3b9ea776d71fc3c6805f2bb66c93391894
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301577"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840042"
 ---
 # <a name="chartfill-resource-type"></a>Тип ресурса ChartFill
 

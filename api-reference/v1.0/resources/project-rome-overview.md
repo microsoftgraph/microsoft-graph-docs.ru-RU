@@ -1,12 +1,13 @@
 ---
 title: Использование Microsoft Graph API для работы с Project рим
 description: Проект рим — корпорации Майкрософт для построения между устройствами среды взаимодействия с пользователем платформы. При входе пользователя с помощью ту же учетную запись Майкрософт, которой они выполняют вход на клиентском устройстве рим Project позволяет приложения на локальном клиента или службы для взаимодействия с приложениями и службы на удаленном компьютере. Это позволяет взаимодействия между устройствами и кроссплатформенный программы, центральным задач пользователя, а не устройств.
-ms.openlocfilehash: ab703ff76d3da4ec1c6a8cd1189f3d85e57bac65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d103bb68560a39cc4491460969a36bb81bb6da44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026502"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840966"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Использование Microsoft Graph API для работы с Project рим
 

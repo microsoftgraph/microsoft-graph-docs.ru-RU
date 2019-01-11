@@ -2,12 +2,13 @@
 title: Тип перечисления deviceEnrollmentType
 description: Возможные способы добавления мобильного устройства для управления.
 author: tfitzmac
-ms.openlocfilehash: 88135947f882433a35fa518b750274f38f48dcc1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d27e57538927966ea741ae1da57f0a02f9de862d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807203"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>Тип перечисления deviceEnrollmentType
 

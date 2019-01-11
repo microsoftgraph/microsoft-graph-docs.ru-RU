@@ -2,12 +2,13 @@
 title: Тип ресурса vpnTrafficRule
 description: Определение правила трафика через VPN.
 author: tfitzmac
-ms.openlocfilehash: 39303510fdfef39cbcb99df3f824ce29bcbfd65c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b7a4a1841850c0276e50068b9e9c7d1ce69e765
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324649"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840224"
 ---
 # <a name="vpntrafficrule-resource-type"></a>Тип ресурса vpnTrafficRule
 
@@ -28,7 +29,7 @@ ms.locfileid: "27324649"
 |appId|String|Идентификатор приложения, если правило трафика используется приложением.|
 |Тип|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Тип приложения, если правило трафика используется приложением. Возможные значения: `none`, `desktop`, `universal`.|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|При запуске приложения указывает, следует ли включить разделенное туннелирование по этому маршруту. Возможные значения: `none`, `splitTunnel`, `forceTunnel`.|
-|утверждения|String.|Утверждений, связанный с этим правилом трафика.|
+|утверждения|Строка|Утверждений, связанный с этим правилом трафика.|
 
 ## <a name="relationships"></a>Связи
 Нет

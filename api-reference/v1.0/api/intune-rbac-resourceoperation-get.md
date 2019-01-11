@@ -2,12 +2,13 @@
 title: Получение объекта resourceOperation
 description: Чтение свойств и связей объекта resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: f71ea2824b7e9475a95b1d449f7bb0117faadb1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97090b8a93a26d6e28689586602bb065bc7eaba6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840623"
 ---
 # <a name="get-resourceoperation"></a>Получение объекта resourceOperation
 
@@ -37,11 +38,11 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

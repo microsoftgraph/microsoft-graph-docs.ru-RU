@@ -2,12 +2,13 @@
 title: Обновление объекта chartlegend
 description: Обновление свойств объекта chartlegend.
 author: lumine2008
-ms.openlocfilehash: 0d47d674bd96fc92b84b7dbbc064145b20a8827d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e4408f5a65059fe2b5c79299b712bf465e0bbd7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335744"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843108"
 ---
 # <a name="update-chartlegend"></a>Обновление объекта chartlegend
 
@@ -32,7 +33,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

@@ -2,12 +2,13 @@
 title: Get mobileApp
 description: Чтение свойств и связей объекта mobileApp.
 author: tfitzmac
-ms.openlocfilehash: 07829b1e73ee00e2caa2f128b5e21241ae308a9e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 196d8496e66d9b8a4a75db42a1dcfe62781f9274
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843584"
 ---
 # <a name="get-mobileapp"></a>Get mobileApp
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

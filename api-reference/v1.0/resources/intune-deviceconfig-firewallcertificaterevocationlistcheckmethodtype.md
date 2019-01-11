@@ -2,12 +2,13 @@
 title: Тип перечисления firewallCertificateRevocationListCheckMethodType
 description: Возможные значения для firewallCertificateRevocationListCheckMethod
 author: tfitzmac
-ms.openlocfilehash: ab496b5deb8f096bdc48a2b50a1af994c8ec8d5b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2beee8f7c4f049aa1918b7e1516c3ce586a8cad0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839951"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>Тип перечисления firewallCertificateRevocationListCheckMethodType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27353664"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение не настраивается с Intune, не переопределяют настраиваемых пользователем устройства по умолчанию|
-|none|1|Не проверять списка отзыва сертификатов|
+|Нет|1|Не проверять списка отзыва сертификатов|
 |Попытка|2|Попытайтесь проверки списка отзыва Сертификатов и разрешить сертификат только в том случае, если сертификат подтверждается при проверке|
 |Требовать|3|Требовать успешной проверки списка отзыва Сертификатов, перед тем как разрешить сертификата|
 

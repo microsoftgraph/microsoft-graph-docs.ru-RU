@@ -2,12 +2,13 @@
 title: Тип ресурса symantecCodeSigningCertificate
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 979502f51674b32f10627762d08d8216a466dff9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a2e4f53e0ca7329f163b507677e2b91a4c02fe12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357241"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845012"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>Тип ресурса symantecCodeSigningCertificate
 
@@ -31,8 +32,8 @@ ms.locfileid: "27357241"
 |password|Строка|Пароль, необходимый для PFX-файл.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|Строка|Значения субъектов для сертификата.|
-|Имя поставщика|String.|Имя поставщика для сертификата.|
-|издателя|String.|Значение издателя сертификата.|
+|Имя поставщика|Строка|Имя поставщика для сертификата.|
+|издателя|Строка|Значение издателя сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Тип сертификата подписывания кода как Symantec Cert.|
 

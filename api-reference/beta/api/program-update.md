@@ -1,12 +1,13 @@
 ---
 title: Обновите программу
 description: Доступ к функции проверки в Azure AD "," Обновление существующий объект программы.
-ms.openlocfilehash: e3d8ca75683a076f156e359431204517b60e7c6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a9abe10a2a672984d14f1da821b7ae6244cbdf39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080167"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840336"
 ---
 # <a name="update-program"></a>Обновите программу
 
@@ -30,14 +31,14 @@ PATCH /programs('{programId}')
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [программы](../resources/program.md) .
 
 В следующей таблице показаны свойства, которые могут быть предоставлены при обновлении программы.
 
-| Свойство     | Тип        | Description |
+| Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | `displayName`               |`String`                              |  Имя программы.                   |
 | `description`               |`String`                              |  Описание программы.           |
@@ -64,7 +65,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

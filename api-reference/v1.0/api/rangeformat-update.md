@@ -2,12 +2,13 @@
 title: Обновление объекта RangeFormat
 description: Обновление свойств объекта rangeformat.
 author: lumine2008
-ms.openlocfilehash: 0aea5712db6eb149356e1c3c9db85e5aebcebf17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 410c9fd705f0f91a48a0e0c6f542f4d539bcf914
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344620"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843094"
 ---
 # <a name="update-rangeformat"></a>Обновление объекта RangeFormat
 
@@ -34,7 +35,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

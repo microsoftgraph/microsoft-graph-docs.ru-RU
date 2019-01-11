@@ -2,12 +2,13 @@
 title: Тип ресурса iosDeviceFeaturesConfiguration
 description: Профиль конфигурации функций устройства с iOS.
 author: tfitzmac
-ms.openlocfilehash: a53caaaaa7f24db5dfdb672200a1780b4d1c1467
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ffb4604e0902deb2d1a7f8f3630426aab39a3ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348842"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841456"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>Тип ресурса iosDeviceFeaturesConfiguration
 

@@ -2,12 +2,13 @@
 title: Создание androidManagedAppProtection
 description: Создание объекта androidManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: 6ff8c649e2c45ad19c8411c91c312bb8814cdc46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78aa350210ec6401c5688375bb7d3b09427ddca0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322682"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841596"
 ---
 # <a name="create-androidmanagedappprotection"></a>Создание androidManagedAppProtection
 
@@ -48,12 +49,12 @@ POST /deviceAppManagement/androidManagedAppProtections
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|описание|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|описание|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|version|Строка|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Продолжительность|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |periodOnlineBeforeAccessCheck|Продолжительность|Время до проверки доступа, когда устройство подключено к Интернету. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|Источники, из которых разрешена передача данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `none`.|
@@ -80,12 +81,12 @@ POST /deviceAppManagement/androidManagedAppProtections
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о доступе к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeOsVersion|String|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeAppVersion|String|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeOsVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeAppVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировки или очистки, когда устройства либо корневого или jailbroken, если DeviceComplianceRequired задано значение true. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, либо блок или стирание, на основании максимальное количество повторных попыток неправильный ПИН-код. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
 |pinRequiredInsteadOfBiometricTimeout|Продолжительность|Время ожидания в минутах для закрепления приложения вместо секретный код не биометрия унаследованные от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|isAssigned|Boolean|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
+|isAssigned|Логический|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Уровни управления требуемого приложения для данной политики унаследованные от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Возможные значения: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |screenCaptureBlocked|Boolean|Указывает, может ли управляемый пользователь делать снимки экрана управляемых приложений.|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Если этот параметр включен, шифрование на уровне приложения отключается, если включено шифрование на уровне устройства.|
@@ -94,8 +95,8 @@ POST /deviceAppManagement/androidManagedAppProtections
 |minimumRequiredPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, необходимый для безопасного доступа к приложению.|
 |minimumWarningPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, рекомендуемый для безопасного доступа к приложению.|
 |exemptedAppPackages|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Пакет приложения в этом списке будут исключены из политики и будет иметь возможность получать данные из управляемых приложений.|
-|minimumWipePatchVersion|String|Android обновления для системы безопасности равен заданному значению или уровень будет удаления управляемых приложений и данных связанные компании.|
-|allowedAndroidDeviceManufacturers|String|Список разделенных точкой с запятой производителей устройств могут в виде строки, управляемых приложений для работы.|
+|minimumWipePatchVersion|Строка|Android обновления для системы безопасности равен заданному значению или уровень будет удаления управляемых приложений и данных связанные компании.|
+|allowedAndroidDeviceManufacturers|Строка|Список разделенных точкой с запятой производителей устройств могут в виде строки, управляемых приложений для работы.|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировать или очистки, если указанный производителя не допускается. Возможные значения: `block`, `wipe`.|
 
 

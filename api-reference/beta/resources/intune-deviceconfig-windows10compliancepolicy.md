@@ -2,12 +2,13 @@
 title: Тип ресурса windows10CompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Windows 10.
 author: tfitzmac
-ms.openlocfilehash: a2a88ee828204ff1ee5bdd8bfb22431b3e3de0f1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 786898d47cc574ce07d59d267293496b226f846d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841169"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Тип ресурса windows10CompliancePolicy
 
@@ -57,17 +58,17 @@ ms.locfileid: "27308535"
 |secureBootEnabled|Boolean|Указывает, что служба подтверждения работоспособности устройства с Windows должна сообщать о работоспособности (безопасная загрузка включена).|
 |codeIntegrityEnabled|Boolean|Указывает, что служба подтверждения работоспособности устройства с Windows должна сообщать о работоспособности.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
-|activeFirewallRequired|Boolean.|Требуется active брандмауэра на устройствах Windows.|
-|defenderEnabled|Boolean.|Требуется Защитник Windows защиты от вредоносных программ на устройствах Windows.|
-|defenderVersion|String.|Требуется Минимальная версия Защитника Windows защиты от вредоносных программ на устройствах Windows.|
-|signatureOutOfDate|Boolean.|Требование подписи защиты от вредоносных программ Защитника Windows быть в курсе устройств Windows.|
-|rtpEnabled|Boolean.|Требовать защиту в реальном времени защиты от вредоносных программ Защитника Windows на устройствах Windows.|
-|antivirusRequired|Boolean.|Требуется антивирусное решение, зарегистрированных в центр Decurity Windows должна находиться на и мониторинг (например Symantec, Защитник Windows).|
-|antiSpywareRequired|Boolean.|Требуется любой антишпионское решение, зарегистрированные с центром Decurity Windows должна находиться на и мониторинг (например, Symantec, Защитник Windows).|
+|activeFirewallRequired|Логический|Требуется active брандмауэра на устройствах Windows.|
+|defenderEnabled|Логический|Требуется Защитник Windows защиты от вредоносных программ на устройствах Windows.|
+|defenderVersion|Строка|Требуется Минимальная версия Защитника Windows защиты от вредоносных программ на устройствах Windows.|
+|signatureOutOfDate|Логический|Требование подписи защиты от вредоносных программ Защитника Windows быть в курсе устройств Windows.|
+|rtpEnabled|Логический|Требовать защиту в реальном времени защиты от вредоносных программ Защитника Windows на устройствах Windows.|
+|antivirusRequired|Логический|Требуется антивирусное решение, зарегистрированных в центр Decurity Windows должна находиться на и мониторинг (например Symantec, Защитник Windows).|
+|antiSpywareRequired|Логический|Требуется любой антишпионское решение, зарегистрированные с центром Decurity Windows должна находиться на и мониторинг (например, Symantec, Защитник Windows).|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md) коллекции|Допустимый операционной системы выполните построение диапазонов на устройствах Windows. Эта коллекция может содержать не более 10 000 элементов.|
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Требовать защиту от угроз устройства минимальным риском и сообщение о несовместимости. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Boolean.|Требовать необходимо рассмотреть состояние соответствия SCCM во внимание для состояния Intune соответствия требованиям.|
+|configurationManagerComplianceRequired|Логический|Требовать необходимо рассмотреть состояние соответствия SCCM во внимание для состояния Intune соответствия требованиям.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -2,12 +2,13 @@
 title: Тип ресурса appConfigurationSettingItem
 description: Содержит свойства для элемента параметра конфигурации приложения.
 author: tfitzmac
-ms.openlocfilehash: 9a9020acc63c445d919564865c44d9c57a5ff57a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0590a22178935e9e8a6b4eb0e279b55d4f984222
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842156"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Тип ресурса appConfigurationSettingItem
 

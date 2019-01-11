@@ -2,12 +2,13 @@
 title: Удаление androidForWorkScepCertificateProfile
 description: Удаляет androidForWorkScepCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: cd6983c34ec0756977f1db08fd73f46ff0ef70cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5705e543bf32237823cae3abd72a27d2680538f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842289"
 ---
 # <a name="delete-androidforworkscepcertificateprofile"></a>Удаление androidForWorkScepCertificateProfile
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

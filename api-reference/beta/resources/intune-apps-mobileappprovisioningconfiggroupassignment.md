@@ -2,12 +2,13 @@
 title: Тип ресурса mobileAppProvisioningConfigGroupAssignment
 description: Содержит свойства, используемые для назначения к конфигурации подготовки приложения в группу.
 author: tfitzmac
-ms.openlocfilehash: c38faf3f8de9aea79667664051bba6e45c83c238
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 32c5bb83fc3991d36c4e52a4350b0e05496b32fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356485"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840784"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>Тип ресурса mobileAppProvisioningConfigGroupAssignment
 
@@ -28,7 +29,7 @@ ms.locfileid: "27356485"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|targetGroupId|String.|Идентификатор группы AAD целевого приложения подготовки конфигурации.|
+|targetGroupId|Строка|Идентификатор группы AAD целевого приложения подготовки конфигурации.|
 |id|Строка|Ключ объекта.|
 
 ## <a name="relationships"></a>Связи

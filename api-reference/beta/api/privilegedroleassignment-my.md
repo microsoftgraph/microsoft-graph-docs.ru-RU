@@ -1,12 +1,13 @@
 ---
 title: 'privilegedRoleAssignment: Мой'
 description: Получение назначения ролей привилегированной инициатора.
-ms.openlocfilehash: 7291d7ae27804c633f98a24ed7c36170e77c61e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fca950413d2f0a50b6ea9e09b859d2ecf926261b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077603"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840259"
 ---
 # <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: Мой
 
@@ -33,7 +34,7 @@ GET /privilegedRoleAssignments/my
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -53,8 +54,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments/my
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

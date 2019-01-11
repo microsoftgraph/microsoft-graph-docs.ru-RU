@@ -2,12 +2,13 @@
 title: Create microsoftStoreForBusinessApp
 description: Создание объекта microsoftStoreForBusinessApp.
 author: tfitzmac
-ms.openlocfilehash: d27c5eed5d541d762e77b4eb45e2fe468b4529f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eff4f4e03c69d866c879aec746c9b4e47d3dbe93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356065"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840483"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>Create microsoftStoreForBusinessApp
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

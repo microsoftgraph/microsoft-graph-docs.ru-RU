@@ -2,12 +2,13 @@
 title: Тип перечисления complianceStatus
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: e3c30e4751a642e8a772f1a7936f155c277cc2a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7389c5d63973accb141a22701e7d57dc331a16a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840273"
 ---
 # <a name="compliancestatus-enum-type"></a>Тип перечисления complianceStatus
 

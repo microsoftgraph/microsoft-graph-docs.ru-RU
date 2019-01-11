@@ -2,12 +2,13 @@
 title: 'TableColumnCollection: add'
 description: Добавляет новый столбец в таблицу.
 author: lumine2008
-ms.openlocfilehash: c63b4007631aae5d53290a487c8252c32b1532c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b736f5bb6bcfac78701fbfd0aae75c0d84e34416
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840147"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -34,7 +35,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

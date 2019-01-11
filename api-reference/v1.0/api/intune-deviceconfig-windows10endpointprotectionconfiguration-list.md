@@ -2,12 +2,13 @@
 title: Перечисление объектов windows10EndpointProtectionConfiguration
 description: Перечисление свойств и связей объектов windows10EndpointProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 0435cbb3edb3a0f4ce94a71fa019fd3f982c25c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b59e4a5275d270016946e79cdf00e862a67f1e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840938"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Перечисление объектов windows10EndpointProtectionConfiguration
 
@@ -35,11 +36,11 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

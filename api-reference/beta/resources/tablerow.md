@@ -2,12 +2,13 @@
 title: Тип ресурса TableRow
 description: Представляет строку в таблице.
 author: lumine2008
-ms.openlocfilehash: de83ec8cae87f159c6f1f9687bd093873558c150
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe95b62236322451893e3859f9d6599cc637848c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807177"
 ---
 # <a name="tablerow-resource-type"></a>Тип ресурса TableRow
 
@@ -31,7 +32,7 @@ ms.locfileid: "27309886"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|целое|Возвращает номер индекса строки в коллекции строк таблицы. Используется нулевой индекс. Только для чтения.|
+|index|int|Возвращает номер индекса строки в коллекции строк таблицы. Используется нулевой индекс. Только для чтения.|
 |values|json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
 ## <a name="relationships"></a>Связи

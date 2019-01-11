@@ -2,12 +2,13 @@
 title: 'TableColumn: HeaderRowRange'
 description: Получает объект диапазона, связанный со строкой заголовков столбца.
 author: lumine2008
-ms.openlocfilehash: 360acee66bdc1023707760c0230ce309251095c8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 85d61fa2bfe8d5b4a625e4e2c53bfb9321ed4b98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334729"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841302"
 ---
 # <a name="tablecolumn-headerrowrange"></a>TableColumn: HeaderRowRange
 
@@ -36,7 +37,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/HeaderRow
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

@@ -2,12 +2,13 @@
 title: Тип ресурса targetedManagedAppConfiguration
 description: Конфигурация, используемая для предоставления набора настраиваемых параметров в исходном виде для всех пользователей в целевой группе безопасности.
 author: tfitzmac
-ms.openlocfilehash: 7ab50d04c6c04ff616019ce5ca42f4452fe11494
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9683dffe81e5eac5bc3360999eaf84ced18d0aec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841393"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>Тип ресурса targetedManagedAppConfiguration
 
@@ -39,7 +40,7 @@ ms.locfileid: "27339650"
 |version|Строка|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |customSettings|Коллекция [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Набор строковых пар "ключ-значение", которые отправляются в приложения для пользователей с заданной конфигурацией и не меняются этой службой. Наследуется от объекта [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md).|
 |deployedAppCount|Int32|Количество приложений, для которых развернута текущая политика.|
-|isAssigned|Boolean|Указывает, применена ли политика к группам включения.|
+|isAssigned|Логический|Указывает, применена ли политика к группам включения.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -2,12 +2,13 @@
 title: 'message: move'
 description: Переместите сообщение в папку. Это создает новую копию сообщения в папке назначения и удаляет исходное сообщение.
 author: angelgolfer-ms
-ms.openlocfilehash: 46f62d8793a20db41d19c1677b3d6f48aa7dbd14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ad9ac2b8f64d75950c9b2cac17a4c5dc5a9b3eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843290"
 ---
 # <a name="message-move"></a>message: move
 
@@ -40,10 +41,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательный. |
+| Authorization | `Bearer {token}`. Обязательный. |
 | Content-Type | `application/json`. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

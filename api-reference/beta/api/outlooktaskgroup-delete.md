@@ -2,12 +2,13 @@
 title: Удаление outlookTaskGroup
 description: Удаление указанного outlookTaskGroup.
 author: angelgolfer-ms
-ms.openlocfilehash: e2494823db2415afda2d6b5060c1a34e2d78d131
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9cf370e04da89cf5f561ebb9aa720f507ca87a55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843185"
 ---
 # <a name="delete-outlooktaskgroup"></a>Удаление outlookTaskGroup
 
@@ -34,7 +35,7 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,12 +2,13 @@
 title: Get deviceComplianceActionItem
 description: Чтение свойств и связей объекта deviceComplianceActionItem.
 author: tfitzmac
-ms.openlocfilehash: 2fd6762ca3f0d7128721eb240d7d00bcf1291da4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5499b64a98fd14467ab01f925928f5bf0b62ceb3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841666"
 ---
 # <a name="get-devicecomplianceactionitem"></a>Get deviceComplianceActionItem
 
@@ -39,11 +40,11 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

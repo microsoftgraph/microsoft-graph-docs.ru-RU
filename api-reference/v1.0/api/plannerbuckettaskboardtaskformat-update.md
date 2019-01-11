@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта plannerBucketTaskBoardTaskFormat
 description: Обновление свойств объекта **plannerBucketTaskBoardTaskFormat**.
-ms.openlocfilehash: 3931492f1bafafaa269fb926afbc2cc431ba3b3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c021c6bf3191f99c27ed16e504b2e87c416dced3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026324"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844501"
 ---
 # <a name="update-plannerbuckettaskboardtaskformat"></a>Обновление объекта plannerBucketTaskBoardTaskFormat
 
@@ -36,7 +37,7 @@ PATCH /planner/tasks/{id}/bucketTaskBoardFormat
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|orderHint|String|Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
+|orderHint|Строка|Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Ответ
 
@@ -62,8 +63,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

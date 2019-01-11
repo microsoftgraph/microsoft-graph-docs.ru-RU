@@ -2,12 +2,13 @@
 title: Тип ресурса deviceCompliancePolicyAssignment
 description: Назначение политики соответствия устройств требованиям.
 author: tfitzmac
-ms.openlocfilehash: 7acea29d7eea1066f0105cdda479eed5f7c30e20
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b1a22e2b78719083279dca09a37207b2a1caa57f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347196"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839979"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>Тип ресурса deviceCompliancePolicyAssignment
 

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: remoteItem
-ms.openlocfilehash: 0eb418d5a3f1fb65f6f59bd7babf87bed1d440dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 122e13513db1a59e23a41cadd16e61996e6a6c04
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843192"
 ---
 # <a name="remoteitem-resource-type"></a>Тип ресурса RemoteItem
 
@@ -56,10 +57,10 @@ ms.locfileid: "27075501"
 | file                 | [File](file.md)                     | Указывает, что удаленный элемент является файлом. Только для чтения.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Сведения об удаленном элементе из локальной файловой системы. Только для чтения.                                                                                          |
 | folder               | [Folder](folder.md)                 | Указывает, что удаленный элемент является папкой. Только для чтения.                                                                                                            |
-| id                   | String                              | Уникальный идентификатор для удаленного элемента на его диске. Только для чтения.                                                                                                    |
+| id                   | Строка                              | Уникальный идентификатор для удаленного элемента на его диске. Только для чтения.                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Дата и время последнего изменения элемента. Только для чтения.                                                                                                              |
-| name                 | String                              | Необязательное свойство. Имя файла удаленного элемента. Только для чтения.                                                                                                                 |
+| name                 | Строка                              | Необязательное свойство. Имя файла удаленного элемента. Только для чтения.                                                                                                                 |
 | пакет              | [Package](package.md)               | При наличии этого свойства оно указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения. |
 | parentReference      | [ItemReference](itemreference.md)   | Свойства родительского элемента удаленного элемента. Только для чтения.                                                                                                           |
 | shared               | [shared](shared.md)                 | Указывает, что к элементу был предоставлен общий доступ для других пользователей, и предоставляет сведения о состоянии совместного использования элемента. Только для чтения.                                       |
