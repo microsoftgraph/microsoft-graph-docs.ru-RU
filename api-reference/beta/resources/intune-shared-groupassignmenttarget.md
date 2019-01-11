@@ -2,32 +2,33 @@
 title: Тип ресурса groupAssignmentTarget
 description: Представляет назначение группе.
 author: tfitzmac
-ms.openlocfilehash: 5371554d069237dc6bc017c29574423b415f4f33
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f344c0ed718f32352901af63da32c11ca02e2db6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849814"
 ---
-# <a name="groupassignmenttarget-resource-type"></a><span data-ttu-id="a275d-103">Тип ресурса groupAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="a275d-103">groupAssignmentTarget resource type</span></span>
+# <a name="groupassignmenttarget-resource-type"></a><span data-ttu-id="f98c8-103">Тип ресурса groupAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="f98c8-103">groupAssignmentTarget resource type</span></span>
 
-> <span data-ttu-id="a275d-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a275d-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a275d-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a275d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f98c8-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f98c8-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f98c8-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f98c8-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="a275d-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="a275d-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f98c8-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="f98c8-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="a275d-107">Представляет назначение группе.</span><span class="sxs-lookup"><span data-stu-id="a275d-107">Represents an assignment to a group.</span></span>
+<span data-ttu-id="f98c8-107">Представляет назначение группе.</span><span class="sxs-lookup"><span data-stu-id="f98c8-107">Represents an assignment to a group.</span></span>
 
-<span data-ttu-id="a275d-108">Наследуется от типа [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="a275d-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
+<span data-ttu-id="f98c8-108">Наследуется от типа [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="f98c8-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a275d-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="a275d-109">Properties</span></span>
-|<span data-ttu-id="a275d-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="a275d-110">Property</span></span>|<span data-ttu-id="a275d-111">Тип</span><span class="sxs-lookup"><span data-stu-id="a275d-111">Type</span></span>|<span data-ttu-id="a275d-112">Описание</span><span class="sxs-lookup"><span data-stu-id="a275d-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f98c8-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="f98c8-109">Properties</span></span>
+|<span data-ttu-id="f98c8-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="f98c8-110">Property</span></span>|<span data-ttu-id="f98c8-111">Тип</span><span class="sxs-lookup"><span data-stu-id="f98c8-111">Type</span></span>|<span data-ttu-id="f98c8-112">Описание</span><span class="sxs-lookup"><span data-stu-id="f98c8-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a275d-113">groupId</span><span class="sxs-lookup"><span data-stu-id="a275d-113">groupId</span></span>|<span data-ttu-id="a275d-114">Строка</span><span class="sxs-lookup"><span data-stu-id="a275d-114">String</span></span>|<span data-ttu-id="a275d-115">ИД группы, являющейся объектом назначения.</span><span class="sxs-lookup"><span data-stu-id="a275d-115">The group Id that is the target of the assignment.</span></span>|
+|<span data-ttu-id="f98c8-113">groupId</span><span class="sxs-lookup"><span data-stu-id="f98c8-113">groupId</span></span>|<span data-ttu-id="f98c8-114">Строка</span><span class="sxs-lookup"><span data-stu-id="f98c8-114">String</span></span>|<span data-ttu-id="f98c8-115">ИД группы, являющейся объектом назначения.</span><span class="sxs-lookup"><span data-stu-id="f98c8-115">The group Id that is the target of the assignment.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a275d-116">Связи</span><span class="sxs-lookup"><span data-stu-id="a275d-116">Relationships</span></span>
-<span data-ttu-id="a275d-117">Нет</span><span class="sxs-lookup"><span data-stu-id="a275d-117">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="a275d-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a275d-118">JSON Representation</span></span>
-<span data-ttu-id="a275d-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a275d-119">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="f98c8-116">Связи</span><span class="sxs-lookup"><span data-stu-id="f98c8-116">Relationships</span></span>
+<span data-ttu-id="f98c8-117">Нет</span><span class="sxs-lookup"><span data-stu-id="f98c8-117">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f98c8-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f98c8-118">JSON Representation</span></span>
+<span data-ttu-id="f98c8-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f98c8-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.groupAssignmentTarget"
