@@ -3,43 +3,44 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Получение сайта SharePoint
-ms.openlocfilehash: 03edd76f6d6855d8b8d2271d2d99f8b39071710d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 67da055677bf566229e4b1a2cca5ae327c7b6fe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027987"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806316"
 ---
-# <a name="get-a-site-resource"></a><span data-ttu-id="2273c-102">Получение ресурса site</span><span class="sxs-lookup"><span data-stu-id="2273c-102">Get a site resource</span></span>
+# <a name="get-a-site-resource"></a><span data-ttu-id="09c4e-102">Получение ресурса site</span><span class="sxs-lookup"><span data-stu-id="09c4e-102">Get a site resource</span></span>
 
-<span data-ttu-id="2273c-p101">Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="2273c-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
+<span data-ttu-id="09c4e-p101">Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="09c4e-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
 
 [site]: ../resources/site.md
 
-<span data-ttu-id="2273c-106">При обращении ресурс **site** рассматривается как уникальный идентификатор, состоящий из следующих значений:</span><span class="sxs-lookup"><span data-stu-id="2273c-106">A **site** is addressed be a unique identifier which is a composite ID of the following values:</span></span>
+<span data-ttu-id="09c4e-106">При обращении ресурс **site** рассматривается как уникальный идентификатор, состоящий из следующих значений:</span><span class="sxs-lookup"><span data-stu-id="09c4e-106">A **site** is addressed be a unique identifier which is a composite ID of the following values:</span></span>
 
-* <span data-ttu-id="2273c-107">имя узла семейства веб-сайтов (contoso.sharepoint.com);</span><span class="sxs-lookup"><span data-stu-id="2273c-107">Site collection hostname (contoso.sharepoint.com)</span></span>
-* <span data-ttu-id="2273c-108">уникальный идентификатор семейства веб-сайтов (GUID);</span><span class="sxs-lookup"><span data-stu-id="2273c-108">Site collection unique ID (GUID)</span></span>
-* <span data-ttu-id="2273c-109">уникальный идентификатор сайта (GUID).</span><span class="sxs-lookup"><span data-stu-id="2273c-109">Site unique ID (GUID)</span></span>
+* <span data-ttu-id="09c4e-107">имя узла семейства веб-сайтов (contoso.sharepoint.com);</span><span class="sxs-lookup"><span data-stu-id="09c4e-107">Site collection hostname (contoso.sharepoint.com)</span></span>
+* <span data-ttu-id="09c4e-108">уникальный идентификатор семейства веб-сайтов (GUID);</span><span class="sxs-lookup"><span data-stu-id="09c4e-108">Site collection unique ID (GUID)</span></span>
+* <span data-ttu-id="09c4e-109">уникальный идентификатор сайта (GUID).</span><span class="sxs-lookup"><span data-stu-id="09c4e-109">Site unique ID (GUID)</span></span>
 
-<span data-ttu-id="2273c-110">Кроме того, существует зарезервированный идентификатор сайта `root`, который всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="2273c-110">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
+<span data-ttu-id="09c4e-110">Кроме того, существует зарезервированный идентификатор сайта `root`, который всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="09c4e-110">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
 
-* <span data-ttu-id="2273c-111">`/sites/root`. Корневой сайт клиента.</span><span class="sxs-lookup"><span data-stu-id="2273c-111">`/sites/root`: The tenant root site.</span></span>
-* <span data-ttu-id="2273c-112">`/groups/{group-id}/sites/root`. Сайт группы для ресурса group.</span><span class="sxs-lookup"><span data-stu-id="2273c-112">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
+* <span data-ttu-id="09c4e-111">`/sites/root`. Корневой сайт клиента.</span><span class="sxs-lookup"><span data-stu-id="09c4e-111">`/sites/root`: The tenant root site.</span></span>
+* <span data-ttu-id="09c4e-112">`/groups/{group-id}/sites/root`. Сайт группы для ресурса group.</span><span class="sxs-lookup"><span data-stu-id="09c4e-112">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2273c-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2273c-113">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="09c4e-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="09c4e-113">Permissions</span></span>
 
-<span data-ttu-id="2273c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2273c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="09c4e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="09c4e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2273c-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2273c-116">Permission type</span></span>      | <span data-ttu-id="2273c-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2273c-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="09c4e-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="09c4e-116">Permission type</span></span>      | <span data-ttu-id="09c4e-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="09c4e-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2273c-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2273c-118">Delegated (work or school account)</span></span> | <span data-ttu-id="2273c-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2273c-119">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2273c-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2273c-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2273c-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2273c-121">Not supported.</span></span>    |
-|<span data-ttu-id="2273c-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2273c-122">Application</span></span> | <span data-ttu-id="2273c-123">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2273c-123">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="09c4e-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="09c4e-118">Delegated (work or school account)</span></span> | <span data-ttu-id="09c4e-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="09c4e-119">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="09c4e-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="09c4e-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="09c4e-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="09c4e-121">Not supported.</span></span>    |
+|<span data-ttu-id="09c4e-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="09c4e-122">Application</span></span> | <span data-ttu-id="09c4e-123">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="09c4e-123">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-the-tenants-root-site"></a><span data-ttu-id="2273c-124">Получение корневого сайта клиента</span><span class="sxs-lookup"><span data-stu-id="2273c-124">Get the tenant's root site</span></span>
+## <a name="get-the-tenants-root-site"></a><span data-ttu-id="09c4e-124">Получение корневого сайта клиента</span><span class="sxs-lookup"><span data-stu-id="09c4e-124">Get the tenant's root site</span></span>
 
-<span data-ttu-id="2273c-125">Чтобы получить доступ к корневому сайту SharePoint внутри клиента, создайте следующие запросы:</span><span class="sxs-lookup"><span data-stu-id="2273c-125">To access the root SharePoint site within a tenant:</span></span>
+<span data-ttu-id="09c4e-125">Чтобы получить доступ к корневому сайту SharePoint внутри клиента, создайте следующие запросы:</span><span class="sxs-lookup"><span data-stu-id="09c4e-125">To access the root SharePoint site within a tenant:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -48,25 +49,25 @@ GET /sites/root
 GET /sites/contoso.sharepoint.com
 ```
 
-## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="2273c-126">Использование относительного URL-адреса сервера для доступа к сайту</span><span class="sxs-lookup"><span data-stu-id="2273c-126">Access a site by server-relative URL</span></span>
+## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="09c4e-126">Использование относительного URL-адреса сервера для доступа к сайту</span><span class="sxs-lookup"><span data-stu-id="09c4e-126">Access a site by server-relative URL</span></span>
 
-<span data-ttu-id="2273c-127">Если у вас есть относительный URL-адрес сервера для ресурса **site**, можно создать следующий запрос:</span><span class="sxs-lookup"><span data-stu-id="2273c-127">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
+<span data-ttu-id="09c4e-127">Если у вас есть относительный URL-адрес сервера для ресурса **site**, можно создать следующий запрос:</span><span class="sxs-lookup"><span data-stu-id="09c4e-127">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
 
 ```http
 GET /sites/{hostname}:/{server-relative-path}
 ```
 
-## <a name="access-a-group-team-site"></a><span data-ttu-id="2273c-128">Доступ к сайту группы для ресурса group</span><span class="sxs-lookup"><span data-stu-id="2273c-128">Access a group team site</span></span>
+## <a name="access-a-group-team-site"></a><span data-ttu-id="09c4e-128">Доступ к сайту группы для ресурса group</span><span class="sxs-lookup"><span data-stu-id="09c4e-128">Access a group team site</span></span>
 
-<span data-ttu-id="2273c-129">Чтобы получить доступ к сайту группы для ресурса group, создайте следующий запрос:</span><span class="sxs-lookup"><span data-stu-id="2273c-129">To access the team site for a group:</span></span>
+<span data-ttu-id="09c4e-129">Чтобы получить доступ к сайту группы для ресурса group, создайте следующий запрос:</span><span class="sxs-lookup"><span data-stu-id="09c4e-129">To access the team site for a group:</span></span>
 
 ```http
 GET /groups/{group-id}/sites/root
 ```
 
-## <a name="example"></a><span data-ttu-id="2273c-130">Пример</span><span class="sxs-lookup"><span data-stu-id="2273c-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="09c4e-130">Пример</span><span class="sxs-lookup"><span data-stu-id="09c4e-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2273c-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="2273c-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="09c4e-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="09c4e-131">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
 
@@ -74,7 +75,7 @@ GET /groups/{group-id}/sites/root
 GET /sites/{site-id}
 ```
 
-### <a name="response"></a><span data-ttu-id="2273c-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="2273c-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="09c4e-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="09c4e-132">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

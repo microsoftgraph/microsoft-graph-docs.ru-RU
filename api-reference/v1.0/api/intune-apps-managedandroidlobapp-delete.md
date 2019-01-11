@@ -2,28 +2,29 @@
 title: Delete managedAndroidLobApp
 description: Удаляет объект managedAndroidLobApp.
 author: tfitzmac
-ms.openlocfilehash: a5483ef54f86a9627ecad777ca34e15ffe1dd447
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1a995c5f006e7946f517f128f41feb9fab202c93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808283"
 ---
-# <a name="delete-managedandroidlobapp"></a><span data-ttu-id="a1056-103">Delete managedAndroidLobApp</span><span class="sxs-lookup"><span data-stu-id="a1056-103">Delete managedAndroidLobApp</span></span>
+# <a name="delete-managedandroidlobapp"></a><span data-ttu-id="fcc28-103">Delete managedAndroidLobApp</span><span class="sxs-lookup"><span data-stu-id="fcc28-103">Delete managedAndroidLobApp</span></span>
 
-> <span data-ttu-id="a1056-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="a1056-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="fcc28-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="fcc28-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="a1056-105">Удаляет объект [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).</span><span class="sxs-lookup"><span data-stu-id="a1056-105">Deletes a [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="a1056-106">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="a1056-106">Prerequisites</span></span>
-<span data-ttu-id="a1056-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a1056-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fcc28-105">Удаляет объект [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).</span><span class="sxs-lookup"><span data-stu-id="fcc28-105">Deletes a [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="fcc28-106">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="fcc28-106">Prerequisites</span></span>
+<span data-ttu-id="fcc28-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fcc28-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a1056-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a1056-109">Permission type</span></span>|<span data-ttu-id="a1056-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="a1056-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="fcc28-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fcc28-109">Permission type</span></span>|<span data-ttu-id="fcc28-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="fcc28-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a1056-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a1056-111">Delegated (work or school account)</span></span>|<span data-ttu-id="a1056-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1056-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="a1056-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a1056-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a1056-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a1056-114">Not supported.</span></span>|
-|<span data-ttu-id="a1056-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a1056-115">Application</span></span>|<span data-ttu-id="a1056-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a1056-116">Not supported.</span></span>|
+|<span data-ttu-id="fcc28-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fcc28-111">Delegated (work or school account)</span></span>|<span data-ttu-id="fcc28-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fcc28-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="fcc28-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fcc28-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fcc28-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fcc28-114">Not supported.</span></span>|
+|<span data-ttu-id="fcc28-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fcc28-115">Application</span></span>|<span data-ttu-id="fcc28-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fcc28-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a1056-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a1056-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fcc28-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fcc28-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -32,28 +33,28 @@ ms.locfileid: "27349975"
 DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a1056-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a1056-118">Request headers</span></span>
-|<span data-ttu-id="a1056-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a1056-119">Header</span></span>|<span data-ttu-id="a1056-120">Значение</span><span class="sxs-lookup"><span data-stu-id="a1056-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fcc28-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fcc28-118">Request headers</span></span>
+|<span data-ttu-id="fcc28-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="fcc28-119">Header</span></span>|<span data-ttu-id="fcc28-120">Значение</span><span class="sxs-lookup"><span data-stu-id="fcc28-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a1056-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a1056-121">Authorization</span></span>|<span data-ttu-id="a1056-122">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="a1056-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a1056-123">Accept</span><span class="sxs-lookup"><span data-stu-id="a1056-123">Accept</span></span>|<span data-ttu-id="a1056-124">application/json</span><span class="sxs-lookup"><span data-stu-id="a1056-124">application/json</span></span>|
+|<span data-ttu-id="fcc28-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="fcc28-121">Authorization</span></span>|<span data-ttu-id="fcc28-122">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="fcc28-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="fcc28-123">Accept</span><span class="sxs-lookup"><span data-stu-id="fcc28-123">Accept</span></span>|<span data-ttu-id="fcc28-124">application/json</span><span class="sxs-lookup"><span data-stu-id="fcc28-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a1056-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a1056-125">Request body</span></span>
-<span data-ttu-id="a1056-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a1056-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fcc28-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fcc28-125">Request body</span></span>
+<span data-ttu-id="fcc28-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fcc28-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a1056-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="a1056-127">Response</span></span>
-<span data-ttu-id="a1056-128">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="a1056-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="fcc28-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="fcc28-127">Response</span></span>
+<span data-ttu-id="fcc28-128">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="fcc28-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a1056-129">Пример</span><span class="sxs-lookup"><span data-stu-id="a1056-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="a1056-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="a1056-130">Request</span></span>
-<span data-ttu-id="a1056-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a1056-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fcc28-129">Пример</span><span class="sxs-lookup"><span data-stu-id="fcc28-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="fcc28-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="fcc28-130">Request</span></span>
+<span data-ttu-id="fcc28-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fcc28-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a><span data-ttu-id="a1056-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="a1056-132">Response</span></span>
-<span data-ttu-id="a1056-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="a1056-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="fcc28-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="fcc28-132">Response</span></span>
+<span data-ttu-id="fcc28-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="fcc28-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
