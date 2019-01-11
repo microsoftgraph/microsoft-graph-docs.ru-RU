@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса ChartFont
 description: Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта диаграммы.
-ms.openlocfilehash: dc4b1f8cd0653d89c3486a61604dd09c0e23cb2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b2d6e07f5049449d71be45b41585ed3bd300b7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850788"
 ---
 # <a name="chartfont-resource-type"></a>Тип ресурса ChartFont
 
@@ -18,7 +19,7 @@ ms.locfileid: "27025556"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Чтение свойств и связей объекта chartFont.|
-|[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)   |Обновление объекта ChartFont. |
+|[обновление](../api/chartfont-update.md). | [WorkbookChartFont](chartfont.md)   |Обновление объекта ChartFont. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

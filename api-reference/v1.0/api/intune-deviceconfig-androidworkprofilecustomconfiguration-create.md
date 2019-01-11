@@ -2,12 +2,13 @@
 title: Создание androidWorkProfileCustomConfiguration
 description: Создание нового объекта androidWorkProfileCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4b33b75e66845652315b91ae70e393e8c76c7ce0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d05aee835dfe98d78b3afc31e0ec2af0e7775be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850815"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>Создание androidWorkProfileCustomConfiguration
 
@@ -35,11 +36,11 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта androidWorkProfileCustomConfiguration.
 
 В следующей таблице показаны свойства, которые необходимы для создания androidWorkProfileCustomConfiguration.

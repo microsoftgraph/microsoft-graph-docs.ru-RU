@@ -1,12 +1,13 @@
 ---
 title: Получение bookingAppointment
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: c3dedab3cbd5fc3848e222317d27527b19671b06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b9b04a8104bfe6f4569a31d0e88616af4e97fdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850801"
 ---
 # <a name="get-bookingappointment"></a>Получение bookingAppointment
 
@@ -37,7 +38,7 @@ GET /bookingBusinesses/{id}/appointments/{id}
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [bookingAppointment](../resources/bookingappointment.md) и кода ответа в теле ответа.
