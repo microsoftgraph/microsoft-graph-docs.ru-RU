@@ -2,12 +2,13 @@
 title: Получение managedDevice
 description: Чтение свойств и связей объекта managedDevice.
 author: tfitzmac
-ms.openlocfilehash: 827688dfc8b928e4d88073868c5eab9af72dfc3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4df99831f2c3ee53580d033be81bc1a4dbe914d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821946"
 ---
 # <a name="get-manageddevice"></a>Получение managedDevice
 
@@ -39,11 +40,11 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevice
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Update androidGeneralDeviceConfiguration
 description: Обновление свойств объекта androidGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: bce3fa318ed7ff0e818c19a6907a34c26b804b35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 328a719e9791706bbe89d2d68d2e5d4a82472110
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820029"
 ---
 # <a name="update-androidgeneraldeviceconfiguration"></a>Update androidGeneralDeviceConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -57,13 +58,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |appsBlockYouTube|Boolean|Указывает, следует ли заблокировать приложение YouTube.|
 |bluetoothBlocked|Boolean|Указывает, следует ли заблокировать Bluetooth.|
 |cameraBlocked|Boolean|Указывает, следует ли запретить использовать камеру.|
-|cellularBlockDataRoaming|Boolean|Указывает, следует ли блокировать передачу данных в роуминге.|
+|cellularBlockDataRoaming|Логический|Указывает, следует ли блокировать передачу данных в роуминге.|
 |cellularBlockMessaging|Boolean|Указывает, следует ли запретить обмениваться SMS и MMS.|
-|cellularBlockVoiceRoaming|Boolean|Указывает, следует ли заблокировать голосовой роуминг.|
+|cellularBlockVoiceRoaming|Логический|Указывает, следует ли заблокировать голосовой роуминг.|
 |cellularBlockWiFiTethering|Boolean|Указывает, следует ли блокировать синхронизацию модема Wi-Fi.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений (разрешенных или заблокированных в зависимости от значения свойства CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Тип списка, определенного свойством CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Boolean|Указывает, следует ли блокировать отправку диагностических данных.|
+|diagnosticDataBlockSubmission|Логический|Указывает, следует ли блокировать отправку диагностических данных.|
 |locationServicesBlocked|Boolean|Указывает, следует ли заблокировать службы определения местоположения.|
 |googleAccountBlockAutoSync|Boolean|Указывает, следует ли блокировать автоматическую синхронизацию учетной записи Google.|
 |googlePlayStoreBlocked|Boolean|Указывает, следует ли блокировать Google Play Маркет.|
@@ -89,7 +90,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |storageRequireDeviceEncryption|Boolean|Указывает, обязательно ли шифрование устройства.|
 |storageRequireRemovableStorageEncryption|Boolean|Указывает, обязательно ли шифрование съемных носителей.|
 |voiceAssistantBlocked|Boolean|Указывает, следует ли блокировать использование голосового помощника.|
-|voiceDialingBlocked|Boolean|Указывает, следует ли блокировать голосовой набор.|
+|voiceDialingBlocked|Логический|Указывает, следует ли блокировать голосовой набор.|
 |webBrowserBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна в веб-браузере.|
 |webBrowserBlockAutofill|Boolean|Указывает, следует ли заблокировать функцию автозаполнения в веб-браузере.|
 |webBrowserBlockJavaScript|Boolean|Указывает, следует ли заблокировать JavaScript в веб-браузере.|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса convertIdResult
 description: Результат преобразования формата код выполняется с помощью функции translateExchangeIds.
-ms.openlocfilehash: 3a17399ffe44c43c78f7b50933b2e847a3e64f32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7e1878de3d3b7ddee36d799c928d6a130b578200
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821457"
 ---
 # <a name="convertidresult-resource-type"></a>Тип ресурса convertIdResult
 
@@ -16,10 +17,10 @@ ms.locfileid: "27076140"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| sourceId | String | Идентификатор, который был преобразован. Это значение является идентификатором исходного, без преобразованные. |
-| targetId | String | Преобразованные идентификатор. Это значение не задано, если не удалось выполнить преобразование. |
+| sourceId | Строка | Идентификатор, который был преобразован. Это значение является идентификатором исходного, без преобразованные. |
+| targetId | Строка | Преобразованные идентификатор. Это значение не задано, если не удалось выполнить преобразование. |
 | errorDetails | [Общая ошибка](genericerror.md) | Объект error, которое указывает причину сбоя преобразования. Это значение не задано, если преобразование выполнено успешно. |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,12 +1,13 @@
 ---
 title: Обновление synchronizationTemplate
 description: Обновление (переопределение) шаблон синхронизации, связанный с заданным приложением.
-ms.openlocfilehash: 9862b0a31294448e1b43e8438b76a16d471cb2d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea4dfdc418d04467a6060a8c3d7d83423ba16e38
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081926"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816739"
 ---
 # <a name="update-synchronizationtemplate"></a>Обновление synchronizationTemplate
 
@@ -35,7 +36,7 @@ PUT application/{id}/synchronization/templates/{templateId}
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставить к объекту [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) , чтобы заменить существующий шаблон. Убедитесь, что все свойства. Отсутствующие свойства будут удалены.
 

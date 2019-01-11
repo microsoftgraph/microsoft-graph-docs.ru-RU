@@ -2,12 +2,13 @@
 title: Создание windowsPhone81AppXBundle
 description: Создание нового объекта windowsPhone81AppXBundle.
 author: tfitzmac
-ms.openlocfilehash: d1b4c6f92edc6b6b123667ff44f337081550405b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: efb1dd0b3aa28d9a75bafa4629b00411f9e11e08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819539"
 ---
 # <a name="create-windowsphone81appxbundle"></a>Создание windowsPhone81AppXBundle
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта windowsPhone81AppXBundle.
 
 В следующей таблице показаны свойства, которые необходимы для создания windowsPhone81AppXBundle.
@@ -71,8 +72,8 @@ POST /deviceAppManagement/mobileApps
 |identityPublisherHash|String|Хэш издателей удостоверений. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phoneProductIdentifier|String.|Идентификатор продукта телефона. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phonePublisherId|String.|Идентификатор издателя телефона наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phoneProductIdentifier|Строка|Идентификатор продукта телефона. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phonePublisherId|Строка|Идентификатор издателя телефона наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityVersion|String|Версия удостоверения. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |appXPackageInformationList|[windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md) коллекции|Список AppX сведения о пакете.|
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса reminder
 description: Напоминание для события в календаре пользователя.
-ms.openlocfilehash: e7b7e2266b5959c6aa4927ecad52e24342d607e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a78c7f82ea0a7db9da45a60de98bb3b1311aaeeb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078124"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819966"
 ---
 # <a name="reminder-resource-type"></a>Тип ресурса reminder
 

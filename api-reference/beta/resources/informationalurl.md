@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса informationalUrl
 description: Сведения о базовой профиля приложения.
-ms.openlocfilehash: c8a13f4f686fe3b6ffd460ab05342b7da9b4a808
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78fd03a2673b342d1a0c904f521fe5a0f8cba205
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079866"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816984"
 ---
 # <a name="informationalurl-resource-type"></a>Тип ресурса informationalUrl
 
@@ -16,12 +17,12 @@ ms.locfileid: "27079866"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|маркетинг|String| Ссылка на приложение маркетинговых страницы. Например, https://www.contoso.com/app/marketing |
-|конфиденциальность|String| Ссылка на заявление о конфиденциальности приложения. Например, https://www.contoso.com/app/privacy |
-|Поддержка|String| Ссылка на страницу поддержки приложения. Например, https://www.contoso.com/app/support |
-|termsOfService|String| Ссылка на условия приложения службы оператора. Например, https://www.contoso.com/app/termsofservice |
+|маркетинг|Строка| Ссылка на приложение маркетинговых страницы. Например, https://www.contoso.com/app/marketing |
+|конфиденциальность|Строка| Ссылка на заявление о конфиденциальности приложения. Например, https://www.contoso.com/app/privacy |
+|Поддержка|Строка| Ссылка на страницу поддержки приложения. Например, https://www.contoso.com/app/support |
+|termsOfService|Строка| Ссылка на условия приложения службы оператора. Например, https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

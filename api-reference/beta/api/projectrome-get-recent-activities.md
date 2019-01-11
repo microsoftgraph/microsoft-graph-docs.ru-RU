@@ -1,12 +1,13 @@
 ---
 title: Получите последние действия пользователя
 description: " API-ИНТЕРФЕЙС. Служба запросов для последних historyItems и затем по запросу этих связанных действий. Действия будут упорядочены в соответствии с самыми последними **lastModified** на **historyItem**. Это означает, что действия без **historyItems** не будут включены в ответе. Разрешение UserActivity.ReadWrite.CreatedByApp будут также применены дополнительные фильтрации в ответ, чтобы возвращаются только действий, созданных приложением. В этом фильтрации на сервере может привести к пустой страницы Если пользователь является особенно active и другие приложения были созданы более последние действия. Для получения действия этого приложения, используйте свойство **nextLink** для разбиения по страницам."
-ms.openlocfilehash: 7dbd51e416d62016add020b784b0f7d0ace473cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 36df29d2000934da417b473235575f5741078dc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819791"
 ---
 # <a name="get-recent-user-activities"></a>Получите последние действия пользователя
 
@@ -56,7 +57,7 @@ GET /me/activities/recent
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текста запроса.
 

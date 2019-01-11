@@ -1,12 +1,13 @@
 ---
 title: Обновление secureScoreControlProfiles
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: afbfcd1889c55dd53241ff8d796bb3ab492b2acf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b89a5e147d4882dbe25456cd2acc42b56924d12b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074804"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817656"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление secureScoreControlProfiles
 
@@ -22,7 +23,7 @@ ms.locfileid: "27074804"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложения | SecurityEvents.ReadWrite.All. |
+|Для приложений | SecurityEvents.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,15 +40,15 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
 |Prefer | Возвращает = представление. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите представление JSON значений для соответствующие поля, которые должны обновляться. В следующей таблице приведены поля, которые могут быть обновлены для secureScoreControlProfile. Значения для существующих свойств, которые не включены в тексте запроса остаются без изменений. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство   | Тип |Description|
+| Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|String|Имя элемента управления аналитик назначается для рассмотрения, реализации или исправления.|
-|tenantNote|String|Комментарии аналитик на элементе управления (для управления клиента).|
-|controlStateUpdates| String|Аналитик, управляемых с помощью параметра на элементе управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
+|assignedTo|Строка|Имя элемента управления аналитик назначается для рассмотрения, реализации или исправления.|
+|tenantNote|Строка|Комментарии аналитик на элементе управления (для управления клиента).|
+|controlStateUpdates| Строка|Аналитик, управляемых с помощью параметра на элементе управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Отклик

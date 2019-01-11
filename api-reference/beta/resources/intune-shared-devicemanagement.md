@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceManagement
 description: 'Ресурс deviceManagement представляет контейнер, содержимое которого различаться в зависимости от рабочего процесса, включая:  '
-ms.openlocfilehash: 14303da517e26158d1432a67076e64424a40253c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 72c8cde688e95d3ffda07e6e698e8fd5f0f08fc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078549"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823249"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -22,7 +23,7 @@ ms.locfileid: "27078549"
 - Управление устройствами
 - Электронные диспетчер установки (ESIM)
 - Разграничения
-- Notifications
+- Уведомления
 - Адаптация новых сотрудников политики, параметры и подробные сведения
 - Удаленный доступ
 - Партнеры удаленный помощник
@@ -51,7 +52,7 @@ ms.locfileid: "27078549"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор, связанный с устройством.|
+|id|Строка|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройств**|
 |intuneAccountId|Guid|Идентификатор учетной записи Intune для заданного клиента|
 |legacyPcManangementEnabled|Логический|Свойство для включения не MDM управляемых прежних версий управления ПК для этой учетной записи. Это свойство доступно только для чтения.|
@@ -122,7 +123,7 @@ ms.locfileid: "27078549"
 |**Разграничения**|
 |managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md) коллекции|Управление условия, связанные с управление устройствами компании.|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) коллекции|Операторы условие управления, связанные с управление устройствами компании.|
-|**Notifications**|
+|**Уведомления**|
 |notificationMessageTemplates|Коллекция [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Шаблоны сообщений уведомления.|
 |**Адаптация новых сотрудников**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|Параметры локального условного доступа в Exchange. Для локального условного доступа устройства должны быть зарегистрированы для доступа к почте и поддерживать его.|

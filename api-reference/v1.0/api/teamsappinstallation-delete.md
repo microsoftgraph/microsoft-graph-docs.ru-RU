@@ -2,12 +2,13 @@
 title: Удаление приложения из группы
 description: Удаление приложения из указанной группы.
 author: nkramer
-ms.openlocfilehash: 99cb144f039849e88d3247e2635a6d362ee490f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2545ae8c0c6d0485fe4ed57f94137936fda538d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304208"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821170"
 ---
 # <a name="delete-app-from-team"></a>Удаление приложения из группы
 
@@ -35,7 +36,7 @@ DELETE /teams/{id}/installedApps/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

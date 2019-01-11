@@ -2,12 +2,13 @@
 title: Создать подключение
 description: Используйте этот интерфейс API для добавления вложения в outlookTask.
 author: angelgolfer-ms
-ms.openlocfilehash: 3b3cc5d6d4357e74c0b63166a492eafe97813b06
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 55d9615e138d6eb87bd4a7b12a72c0d915825fdf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771676"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816907"
 ---
 # <a name="create-attachment"></a>Создание вложения
 

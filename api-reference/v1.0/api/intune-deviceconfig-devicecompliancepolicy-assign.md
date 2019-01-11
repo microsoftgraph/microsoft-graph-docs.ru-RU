@@ -2,12 +2,13 @@
 title: Действие assign
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 664265fc65ccf294e7406f23c557a635fad1d384
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 29da35a7ea8f3da144543b6064a3252ab58daf95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358893"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819959"
 ---
 # <a name="assign-action"></a>Действие assign
 
@@ -35,11 +36,11 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

@@ -2,12 +2,13 @@
 title: Тип перечисления subjectNameFormat
 description: Параметры формата имени субъекта.
 author: tfitzmac
-ms.openlocfilehash: 61aeddb1e751885c3a0ba39fd5628b71830dded5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 85a11e8690c360e405df2453229a039ea9f9b1dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821338"
 ---
 # <a name="subjectnameformat-enum-type"></a>Тип перечисления subjectNameFormat
 

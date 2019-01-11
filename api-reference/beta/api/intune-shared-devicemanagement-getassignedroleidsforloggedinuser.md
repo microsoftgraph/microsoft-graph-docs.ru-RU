@@ -2,12 +2,13 @@
 title: функция getAssignedRoleIdsForLoggedInUser
 description: Извлекает назначенной роли определения и назначения ролей текущего прошедшего проверку пользователя.
 author: tfitzmac
-ms.openlocfilehash: 0e9cf6e45c0f7ce7e321d746d12648a598109df5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 532438aa67afff2a0f215ec951e9d3eaa933b80b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331096"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806694"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>функция getAssignedRoleIdsForLoggedInUser
 
@@ -38,11 +39,11 @@ GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

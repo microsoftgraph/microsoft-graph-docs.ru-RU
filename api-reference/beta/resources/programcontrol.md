@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса programControl
 description: В Azure AD access дается обзор компонента, объект элемента управления программа представляет элемент управления, связывание проверки доступа к программе.
-ms.openlocfilehash: 03e70ffdf0607eeb11abaf1b12065b4092294d23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077816"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817824"
 ---
 # <a name="programcontrol-resource-type"></a>Тип ресурса programControl
 
@@ -20,7 +21,7 @@ ms.locfileid: "27077816"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Создание programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Добавьте programControl программы.|
-|[Удаление programControl](../api/programcontrol-delete.md) |     Отсутствуют.   |   Удалите programControl из программы.|
+|[Удаление programControl](../api/programcontrol-delete.md) |     Нет.   |   Удалите programControl из программы.|
 |[Список programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) коллекции| Список элементов управления для всех программ в клиентов.|
 
 ## <a name="permissions"></a>Permissions
@@ -32,7 +33,7 @@ ms.locfileid: "27077816"
 |Для приложений                            | Не поддерживается. |
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | Идентификатор компонента назначенных связи между программы и элемента управления                                      |
 | `programId`              |`String`                | ProgramId программа этот элемент управления является частью. Требуется при создании.                            |
@@ -45,7 +46,7 @@ ms.locfileid: "27077816"
 | `resource`               |`programResource`       | Ресурс, группы или приложения, входят в целевую этот элемент управления программы проверки доступа.                   |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `program`                |[Программа](program.md)               | Программа этот элемент управления является частью.                                                |
 
@@ -89,7 +90,7 @@ ms.locfileid: "27077816"
 
 Этот тип наследует от `microsoft.graph.identity` и имеет один дополнительные свойства:
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `type`               |`String`  | Тип ресурса, которое показывает, является ли группы или приложения. |     
 

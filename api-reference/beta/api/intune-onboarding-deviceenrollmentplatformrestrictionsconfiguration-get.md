@@ -2,12 +2,13 @@
 title: Get deviceEnrollmentPlatformRestrictionsConfiguration
 description: Чтение свойств и связей объекта deviceEnrollmentPlatformRestrictionsConfiguration.
 author: tfitzmac
-ms.openlocfilehash: da7f93e75c81034057cae2cdffda64b2ce9c1f85
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1e808938328cace1add367faa163e57f5a083cc5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301241"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821945"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Get deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -39,11 +40,11 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

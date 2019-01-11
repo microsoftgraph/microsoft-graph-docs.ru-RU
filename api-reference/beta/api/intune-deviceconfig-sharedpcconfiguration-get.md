@@ -2,12 +2,13 @@
 title: Get sharedPCConfiguration
 description: Чтение свойств и связей объекта sharedPCConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8e370d81aca64fb7fe82e173603cf9dbdd270f3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd5188c06d979fb9c81d382ae075b6e3b0fc10aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307849"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823018"
 ---
 # <a name="get-sharedpcconfiguration"></a>Get sharedPCConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

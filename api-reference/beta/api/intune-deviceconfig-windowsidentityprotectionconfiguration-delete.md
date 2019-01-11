@@ -2,12 +2,13 @@
 title: Удаление windowsIdentityProtectionConfiguration
 description: Удаляет windowsIdentityProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 1ca56434a5d851509f5c99adf57b67922f4cfeb0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b26f654519f4d715ad16aa75eb7155254fc87fda
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328359"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816746"
 ---
 # <a name="delete-windowsidentityprotectionconfiguration"></a>Удаление windowsIdentityProtectionConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

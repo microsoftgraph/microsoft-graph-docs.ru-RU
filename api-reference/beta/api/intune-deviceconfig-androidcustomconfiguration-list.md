@@ -2,12 +2,13 @@
 title: Перечисление объектов androidCustomConfiguration
 description: Перечисление свойств и связей объектов androidCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: e7673b7cef5291d629e0ed3dadf5aa5f707aaaf2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f51ceca470681444aaa00ca2cafffebea955540
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817467"
 ---
 # <a name="list-androidcustomconfigurations"></a>Перечисление объектов androidCustomConfiguration
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

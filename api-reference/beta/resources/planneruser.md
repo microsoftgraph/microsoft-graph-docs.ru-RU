@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerUser
 description: 'Ресурс **plannerUser** предоставляет доступ к ресурсам, планировщик работы для пользователя. '
-ms.openlocfilehash: 592a26daacd1bd6d0a780ca0180d3ec5a57b6eb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 709b259c88d8fe0f02defaa57e77727a7b967cfd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078902"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820806"
 ---
 # <a name="planneruser-resource-type"></a>Тип ресурса plannerUser
 
@@ -22,13 +23,13 @@ ms.locfileid: "27078902"
 |[Перечисление задач](../api/planneruser-list-tasks.md) |Коллекция объектов [plannerTask](plannertask.md)| Получите [plannerTasks](plannertask.md) , назначенные пользователю.|
 |[Список favoritePlans](../api/planneruser-list-favoriteplans.md) |Коллекция объектов [plannerPlan](plannerplan.md)| Получите [plannerPlans](plannerplan.md) , помеченные как избранные пользователем.|
 |[Список recentPlans](../api/planneruser-list-recentplans.md) |Коллекция объектов [plannerPlan](plannerplan.md)| Получите [plannerPlans](plannerplan.md) недавно отображаемое для пользователя.|
-|[Update](../api/planneruser-update.md) | [plannerUser](planneruser.md)| Обновление объекта **plannerUser** . |
+|[обновление](../api/planneruser-update.md). | [plannerUser](planneruser.md)| Обновление объекта **plannerUser** . |
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор plannerUser|
+|id|Строка| Только для чтения. Идентификатор plannerUser|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md);| Коллекция, содержащая ссылки на планы, которые пользователь помеченные как "Избранное".|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md).| Коллекция, содержащая ссылки на планы, которые были просмотрены недавно пользователя в приложениях, которые поддерживают последние планов.|
 

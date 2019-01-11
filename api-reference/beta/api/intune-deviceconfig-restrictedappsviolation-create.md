@@ -2,12 +2,13 @@
 title: Создание restrictedAppsViolation
 description: Создание нового объекта restrictedAppsViolation.
 author: tfitzmac
-ms.openlocfilehash: 3f20463363c37e8ab9ed47bebb3b2323ca308656
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b608a831427169215da9df4631f4562989105a2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313330"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818125"
 ---
 # <a name="create-restrictedappsviolation"></a>Создание restrictedAppsViolation
 
@@ -37,11 +38,11 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта restrictedAppsViolation.
 
 В следующей таблице показаны свойства, которые необходимы для создания restrictedAppsViolation.
@@ -51,10 +52,10 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 |id|Строка|Уникальный идентификатор для объекта. Состоит из accountId, deviceId, policyId и идентификатор пользователя|
 |userId|String|Уникальный идентификатор пользователя, должен быть идентификатор Guid|
 |userName|String|Имя пользователя|
-|managedDeviceId|String.|Уникальный идентификатор управляемого устройства, должен быть идентификатор Guid|
+|managedDeviceId|Строка|Уникальный идентификатор управляемого устройства, должен быть идентификатор Guid|
 |deviceName|String|Имя устройства|
-|deviceConfigurationId|String.|Конфигурация профиля уникальный идентификатор устройства, должен быть идентификатор Guid|
-|deviceConfigurationName|String.|Имя профиля конфигурации устройства|
+|deviceConfigurationId|Строка|Конфигурация профиля уникальный идентификатор устройства, должен быть идентификатор Guid|
+|deviceConfigurationName|Строка|Имя профиля конфигурации устройства|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) коллекции|Список нарушенных ограниченных приложений|

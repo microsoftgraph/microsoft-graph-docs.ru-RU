@@ -2,12 +2,13 @@
 title: Обновление диапазона
 description: Обновление свойств объекта диапазона.
 author: lumine2008
-ms.openlocfilehash: 3af876a73a8e7c401512c9aafc38e677769f868e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 086dd7271ade9d3ab3e853692b3f1d084a53bbed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821989"
 ---
 # <a name="update-range"></a>Обновление диапазона
 
@@ -34,7 +35,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

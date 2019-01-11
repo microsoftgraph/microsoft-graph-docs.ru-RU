@@ -2,12 +2,13 @@
 title: Тип перечисления mdmAuthority
 description: Центр управления мобильными устройствами.
 author: tfitzmac
-ms.openlocfilehash: d4efb5f0debb5c18fac78e4ce0381d91848bc08f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb5eb293783910b79809c48c970bb1547b25dd4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816795"
 ---
 # <a name="mdmauthority-enum-type"></a>Тип перечисления mdmAuthority
 

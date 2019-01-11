@@ -1,12 +1,13 @@
 ---
 title: Идентификаторы в Планировщике
 description: 'Идентификаторы объектов в планировщике, созданные службы строковых значений. Значения 28 символов в длину и зависят от регистра символов. При передаче в качестве службы будет выполнять проверку простой формат идентификатора, если возникает ошибка проверки формата, вызывающих будет получен ответ неверный запрос (400) об ошибке, указывающее, эта проблема. Это сообщение указывает на ошибку в вызывающему приложению, таких как:'
-ms.openlocfilehash: a4b2eed7dafbd289da877ed64a74093cbf64781d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6efb1192de87082cae99fbcc058607a2239a618c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816592"
 ---
 # <a name="identifiers-in-planner"></a>Идентификаторы в Планировщике
 

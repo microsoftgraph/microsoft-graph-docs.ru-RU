@@ -1,12 +1,13 @@
 ---
 title: Отчеты об активации Office 365
 description: Эти отчеты позволяют узнать, кто из пользователей активировал подписку на Office 365 по крайней мере на одном устройстве. Они содержат разбивку по активациям подписок на Office 365 профессиональный плюс, Project и Visio Pro для Office 365, а также разбивку по активациям на компьютерах и мобильных устройствах. Эти отчеты помогут вам выявить пользователей, которым, возможно, нужна помощь с активацией подписки на Office.
-ms.openlocfilehash: 33fcb8841a4af51377029a4446a040370aa68217
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6e91025c43a9dd6d7196fef3b4496883057ee0df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025937"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818277"
 ---
 # <a name="office-365-activations-reports"></a>Отчеты об активации Office 365
 

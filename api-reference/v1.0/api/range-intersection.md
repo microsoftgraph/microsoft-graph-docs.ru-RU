@@ -2,12 +2,13 @@
 title: 'Range: Intersection'
 description: Возвращает объект диапазона, представляющий собой прямоугольное пересечение заданных диапазонов.
 author: lumine2008
-ms.openlocfilehash: e35bf93a07930b34e984df4a84d5ed30b907ea15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f954e377ff051f9063fc210d795b5b6d87981bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309690"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820351"
 ---
 # <a name="range-intersection"></a>Range: Intersection
 
@@ -35,7 +36,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

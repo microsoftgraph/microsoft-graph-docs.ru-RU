@@ -2,12 +2,13 @@
 title: Получение networkIPv4ConfigurationManagementCondition
 description: Чтение свойства и связи объекта networkIPv4ConfigurationManagementCondition.
 author: tfitzmac
-ms.openlocfilehash: a13e202d1347705edd4d26e01a65668dba971f73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eb628aa17138bad6f03d96c9c9671df8339af9be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319497"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821898"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>Получение networkIPv4ConfigurationManagementCondition
 
@@ -40,11 +41,11 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

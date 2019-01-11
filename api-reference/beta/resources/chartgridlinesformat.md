@@ -2,12 +2,13 @@
 title: Тип ресурса ChartGridlinesFormat
 description: Инкапсулирует свойства формата для линий сетки диаграммы.
 author: lumine2008
-ms.openlocfilehash: 8fb5dbf93b46009759922fd9e7617309ef3fff15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25b7ed31b462a24fc5b6587e7de8ef5f405ae084
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311104"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820624"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>Тип ресурса ChartGridlinesFormat
 

@@ -1,12 +1,13 @@
 ---
 title: Получение открытого расширения
 description: Получение открытого расширения (объекта openTypeExtension), определенного по имени или полному имени.
-ms.openlocfilehash: 1de9921bb9b2275d852de6fa92c1b6230a671555
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 19b59bcbcbbe829f6a1a9a323676c07f26f97f09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024373"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819518"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
@@ -24,7 +25,7 @@ ms.locfileid: "27024373"
 
 В зависимости от ресурсов, содержащий данное расширение имени файла и разрешение типа (делегированные или приложение) запрошенный, разрешение, указанное в следующей таблице минимальными правами требуется для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | Directory.Read.All | Не поддерживается | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
@@ -119,7 +120,7 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |:---------------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

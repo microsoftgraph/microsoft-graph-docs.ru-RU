@@ -2,12 +2,13 @@
 title: Удаление officeSuiteApp
 description: Удаляет officeSuiteApp.
 author: tfitzmac
-ms.openlocfilehash: 5abcaa73055109247e0b2a9c8cf1611971bc3f68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 28d57a6263ec225568cbdc21d5572693a0ab842b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819581"
 ---
 # <a name="delete-officesuiteapp"></a>Удаление officeSuiteApp
 
@@ -39,11 +40,11 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

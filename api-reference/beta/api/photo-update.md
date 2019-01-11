@@ -1,12 +1,13 @@
 ---
 title: Обновление фотографии
 description: Обновление свойств объекта фотографии.
-ms.openlocfilehash: 8071c9e331f9af72c9a288239206f396d9ad3fcb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 56a8d892ae92f92f5103dc3d88a2f95a5bbb262b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818384"
 ---
 # <a name="update-photo"></a>Обновление фотографии
 
@@ -35,7 +36,7 @@ PATCH /drive/root/createdByUser/photo
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

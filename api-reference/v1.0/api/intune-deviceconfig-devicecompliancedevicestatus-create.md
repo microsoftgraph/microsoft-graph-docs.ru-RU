@@ -2,12 +2,13 @@
 title: Создание объекта deviceComplianceDeviceStatus
 description: Создание объекта deviceComplianceDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: 5fe754290e8fbc218bb0011034ae471f0e5fe84a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 060cfccf7de96d05a548c49a7e9df8c7560fe223
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821226"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>Создание объекта deviceComplianceDeviceStatus
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

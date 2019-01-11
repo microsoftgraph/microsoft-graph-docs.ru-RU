@@ -2,12 +2,13 @@
 title: Тип ресурса managedAppOperation
 description: Представляет операцию, примененную к регистрации приложения.
 author: tfitzmac
-ms.openlocfilehash: d92c467f1ff5eae403f348deac2cb6c17a3a950d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c91290891ee28a9cd811c6326794a33316676d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820239"
 ---
 # <a name="managedappoperation-resource-type"></a>Тип ресурса managedAppOperation
 

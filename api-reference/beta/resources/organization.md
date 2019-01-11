@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса organization
 description: 'Представляет клиента Azure Active Directory. '
-ms.openlocfilehash: 2e9a9a32411164e270e2eb3a8830fa811ba5f9cb
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: a3912039a5cd51cbe0b170a866d1a2b35a57e924
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771830"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823144"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -41,8 +42,8 @@ ms.locfileid: "27771830"
 | deletedDateTime                    | DateTimeOffset                                                    | Представляет дату и время, когда в Azure AD клиент был удален с использованием формата ISO 8601 и — это всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.                                                                                     |
 |dirSyncEnabled|Boolean|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию).|
 |displayName|String|Отображаемое имя для клиента.|
-|id|String|Идентификатор клиента, уникальный идентификатор, представляющий организации (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
-|isMultipleDataLocationsForServicesEnabled|Boolean|**значение true,** Если организация — ферма с несколькими-географически включено; **значение false,** Если организация не включена несколькими географически; **значение NULL** (по умолчанию). Только для чтения. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|id|Строка|Идентификатор клиента, уникальный идентификатор, представляющий организации (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
+|isMultipleDataLocationsForServicesEnabled|Логический|**значение true,** Если организация — ферма с несколькими-географически включено; **значение false,** Если организация не включена несколькими географически; **значение NULL** (по умолчанию). Только для чтения. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|Коллекция String| Значение null не допускается.            |
 |objectType|String|Строка, которая определяет тип объекта. Для клиентов всегда задается значение Company. |
 |postalCode|String| Почтовый индекс в адресе организации |

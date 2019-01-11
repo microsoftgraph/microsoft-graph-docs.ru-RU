@@ -2,12 +2,13 @@
 title: Get userInstallStateSummary
 description: Чтение свойств и связей объекта userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 152160f99220f95c9f743ee637da35c693400d41
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f8b34d1f4ee170e36d9e47fddfeb6fc53429778
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823228"
 ---
 # <a name="get-userinstallstatesummary"></a>Get userInstallStateSummary
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

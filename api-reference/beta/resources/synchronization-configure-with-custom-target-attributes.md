@@ -1,12 +1,13 @@
 ---
 title: Настройка синхронизации с помощью настраиваемого конечного атрибутов
 description: Можно настроить параметры синхронизации схемы для включения настраиваемые атрибуты, которые определены в целевой каталог. В этой статье описывается настройка Salesforce подписки, добавив новое поле под названием `officeCode`. Вы настроили синхронизацию с Azure Active Directory (Azure AD) для Salesforce, и для каждого пользователя будет заполнения `officeCode` поля в Salesforce со значением из `extensionAttribute10` в Azure AD.
-ms.openlocfilehash: e043fa5e458a56312871567bb14598f9232e97eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3a7612682794109a5f94318304c8a8898764ccb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806757"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Настройка синхронизации с помощью настраиваемого конечного атрибутов
 

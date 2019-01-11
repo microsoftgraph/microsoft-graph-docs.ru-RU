@@ -1,12 +1,13 @@
 ---
 title: Создание расширенного свойства с одним значением
 description: 'Создайте одно или несколько свойств с одним значением в новом или существующем экземпляре ресурса. '
-ms.openlocfilehash: c55ab01ecde214feb38857e8d77f83eb3bfbabc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4a647b2872899e3756d95483b91525a2843122b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821611"
 ---
 # <a name="create-single-value-extended-property"></a>Создание расширенного свойства с одним значением
 
@@ -36,7 +37,7 @@ ms.locfileid: "27076775"
 ## <a name="permissions"></a>Разрешения
 В зависимости от ресурса при создании расширенные свойства в и введите (делегированные или приложения) вы запроса на разрешение, разрешение, указанное в следующей таблице является минимальным необходимым условием для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [контакт](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |

@@ -2,12 +2,13 @@
 title: Get deviceComplianceUserStatus
 description: Чтение свойств и связей объекта deviceComplianceUserStatus.
 author: tfitzmac
-ms.openlocfilehash: b27c5cbe1e5e350cb082ea3fe01a01a86cf45668
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5b1e091b61e467575035669bd87670927688f437
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335373"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804846"
 ---
 # <a name="get-devicecomplianceuserstatus"></a>Get deviceComplianceUserStatus
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userSt
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

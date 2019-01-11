@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerPlanContext
 description: Ресурс **plannerPlanContext** представляет отношение plannerPlan взаимодействия с пользователем вне планировщик работы. Планы в планировщике можно отображаются в других каждый раз, такие как группами Майкрософт, для отслеживания работ в контексте этот опыт.
-ms.openlocfilehash: 84512c03081a3e1fd2b15456c64cecf3f9c39435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb86dc2e6fb16fe4e8c2a77d52b3a03f94a1d08a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078967"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820981"
 ---
 # <a name="plannerplancontext-resource-type"></a>Тип ресурса plannerPlanContext
 
@@ -18,12 +19,12 @@ ms.locfileid: "27078967"
  - 00000003-0000-0ff1-ce00-000000000000: запись контекста относится к SharePoint.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|associationType|String|Допускается значение null. Тип связи между [plannerPlan](plannerplan.md) и приложения в определенных приложений. Приложения могут использовать эти сведения для отслеживания различных типов отношений же [plannerPlan](plannerplan.md).|
+|associationType|Строка|Допускается значение null. Тип связи между [plannerPlan](plannerplan.md) и приложения в определенных приложений. Приложения могут использовать эти сведения для отслеживания различных типов отношений же [plannerPlan](plannerplan.md).|
 |createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания **plannerPlanContext** . Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |displayNameSegments|Коллекция String|Сегменты имя внешнего интерфейса. Сегменты представления иерархической структуры, обеспечивающий другие приложения отобразить отношение.|
-|ownerAppId|String|Только для чтения. Идентификатор приложения, которые созданы **plannerPlanContext**.|
+|ownerAppId|Строка|Только для чтения. Идентификатор приложения, которые созданы **plannerPlanContext**.|
 
 ## <a name="json-representation"></a>Представление JSON
 

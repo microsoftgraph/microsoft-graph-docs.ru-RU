@@ -2,12 +2,13 @@
 title: Действие sendTestMessage
 description: Отправляет проверочное сообщение, используя указанный объект notificationMessageTemplate в языковом стандарте по умолчанию.
 author: tfitzmac
-ms.openlocfilehash: d6c39c74b570d78acc0d08bca20f90bae9b089b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e84e73780dd331e291ae0fead438d42fdcd4c886
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342373"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821821"
 ---
 # <a name="sendtestmessage-action"></a>Действие sendTestMessage
 
@@ -37,11 +38,11 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

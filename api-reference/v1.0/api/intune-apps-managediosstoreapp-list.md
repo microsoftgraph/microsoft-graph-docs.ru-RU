@@ -2,12 +2,13 @@
 title: Перечисление объектов managedIOSStoreApp
 description: Список свойств и связей объектов managedIOSStoreApp.
 author: tfitzmac
-ms.openlocfilehash: c5d8f0153f7c28f92578b92fbd0f4b0aac0ff885
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a337136683aefe59a56f816c3627d0bc49eea1e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821702"
 ---
 # <a name="list-managediosstoreapps"></a>Перечисление объектов managedIOSStoreApp
 
@@ -35,11 +36,11 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

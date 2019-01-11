@@ -1,12 +1,13 @@
 ---
 title: Удаление действия
 description: Удаление существующего действия пользователя для вашего приложения.
-ms.openlocfilehash: 9cdd52a2d3f417828e63107465dc28a4791a02e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92b927dbb568221003fdaff108640cf24520d182
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819553"
 ---
 # <a name="delete-an-activity"></a>Удаление действия
 
@@ -39,7 +40,7 @@ DELETE /me/activities/{id}
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Нет текста запроса.
 

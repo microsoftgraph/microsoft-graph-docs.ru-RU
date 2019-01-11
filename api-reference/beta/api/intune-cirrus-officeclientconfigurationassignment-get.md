@@ -2,12 +2,13 @@
 title: Получение officeClientConfigurationAssignment
 description: Чтение свойства и связи объекта officeClientConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 4aec74e0df54d86ccffd5fb216ebfc1781412f5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d74d2982c06a11a71825882d4b3c652ed983ccce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817810"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>Получение officeClientConfigurationAssignment
 
@@ -39,11 +40,11 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

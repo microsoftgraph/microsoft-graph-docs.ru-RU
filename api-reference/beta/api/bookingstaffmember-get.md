@@ -1,12 +1,13 @@
 ---
 title: Получение bookingStaffMember
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 6709329d7a9246b499971fdfd7e59d55ea835d31
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1bb00a0df9a8497f99a04a1d293505302400832f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076695"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819644"
 ---
 # <a name="get-bookingstaffmember"></a>Получение bookingStaffMember
 
@@ -35,7 +36,7 @@ GET /bookingBusinesses/{id}/staffMembers/{id}
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [bookingStaffMember](../resources/bookingstaffmember.md) и кода ответа в теле ответа.

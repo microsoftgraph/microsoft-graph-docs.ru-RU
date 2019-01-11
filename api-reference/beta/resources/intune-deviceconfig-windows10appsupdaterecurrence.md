@@ -2,12 +2,13 @@
 title: Тип перечисления windows10AppsUpdateRecurrence
 description: Возможные значения для приложения обновлению Windows10 повторения.
 author: tfitzmac
-ms.openlocfilehash: 940c5ad7affc6b46288942b5d307c0f0dbfece7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 447b8334b9db65d37a61278d7ada8b241fbcb576
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324306"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821548"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>Тип перечисления windows10AppsUpdateRecurrence
 
@@ -19,7 +20,7 @@ ms.locfileid: "27324306"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Значение по умолчанию, указывает одно вхождение.|
+|Нет|0|Значение по умолчанию, указывает одно вхождение.|
 |ежедневно|1|Ежедневно.|
 |Еженедельно|2|Еженедельно.|
 |ежемесячно|3|Ежемесячно.|

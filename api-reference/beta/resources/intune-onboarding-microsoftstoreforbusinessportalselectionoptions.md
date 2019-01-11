@@ -2,12 +2,13 @@
 title: Тип перечисления microsoftStoreForBusinessPortalSelectionOptions
 description: Портала, к которому admin синхронизирует доступные хранилища Майкрософт для бизнес-приложений. Этот параметр доступен в консоли администрирования Intune.
 author: tfitzmac
-ms.openlocfilehash: cc1e95b4dea6bf1de6439c4c0a12ad4888ff6bb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b1178780145c9d446052b3e047114f731a15f93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359383"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819098"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>Тип перечисления microsoftStoreForBusinessPortalSelectionOptions
 
@@ -19,7 +20,7 @@ ms.locfileid: "27359383"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Этот параметр недоступен для учетной записи|
+|Нет|0|Этот параметр недоступен для учетной записи|
 |companyPortal|1|Компания Intune портала.|
 |privateStore|2|Частный MSFB хранилище.|
 

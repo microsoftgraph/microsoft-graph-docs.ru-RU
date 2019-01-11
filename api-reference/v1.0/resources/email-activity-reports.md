@@ -1,12 +1,13 @@
 ---
 title: Отчеты о работе с электронной почтой
 description: Эти отчеты позволяют получить общее представление о трафике электронной почты в организации. Вы также можете посмотреть развернутые отчеты, чтобы понять динамику и особенности работы с электронной почтой каждого пользователя в организации.
-ms.openlocfilehash: 94ec22ce024485f33f6ba47f90a4023845795b33
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 7ba0a381006a0eba3c0aec8adc864f8c15c5a5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028167"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821429"
 ---
 # <a name="email-activity-reports"></a>Отчеты о работе с электронной почтой
 

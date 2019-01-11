@@ -2,12 +2,13 @@
 title: Получение androidWorkProfileGmailEasConfiguration
 description: Чтение свойства и связи объекта androidWorkProfileGmailEasConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 74f2313ea6092732445c65543a1be2c145201111
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8785fd27a3c56a38cbbfa88295fc91f89e999f7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338327"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818003"
 ---
 # <a name="get-androidworkprofilegmaileasconfiguration"></a>Получение androidWorkProfileGmailEasConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

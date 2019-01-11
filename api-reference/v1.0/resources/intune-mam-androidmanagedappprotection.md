@@ -2,12 +2,13 @@
 title: Тип ресурса androidManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве Android
 author: tfitzmac
-ms.openlocfilehash: 13db6d2185d30feeec8362b83f96b34ed83ffe0c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7020f69fde4d76a791b59cb8c006f6e22100a14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309291"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806085"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Тип ресурса androidManagedAppProtection
 
@@ -61,7 +62,7 @@ ms.locfileid: "27309291"
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о доступе к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|isAssigned|Boolean|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
+|isAssigned|Логический|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
 |screenCaptureBlocked|Boolean|Указывает, может ли управляемый пользователь делать снимки экрана управляемых приложений.|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Если этот параметр включен, шифрование на уровне приложения отключается, если включено шифрование на уровне устройства.|
 |encryptAppData|Boolean|Указывает, следует ли шифровать данные управляемых приложений.|

@@ -2,12 +2,13 @@
 title: Перечисление объектов detectedApp
 description: Список свойств и связей объектов detectedApp.
 author: tfitzmac
-ms.openlocfilehash: a307336773ff5b39f7335709f7d62ea8770d364a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b710cc87f4f862b0d720d1320fde3a457a592fc3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335387"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817908"
 ---
 # <a name="list-detectedapps"></a>Перечисление объектов detectedApp
 
@@ -35,11 +36,11 @@ GET /deviceManagement/detectedApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

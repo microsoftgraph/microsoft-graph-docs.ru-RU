@@ -2,12 +2,13 @@
 title: Get managedEBookAssignment
 description: Чтение свойств и связей объекта managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: ea88a296849d109ac6a38fa39774d5be7be18133
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac7dc8a9caf9e346a0b71933fa0ffe17add6597a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821184"
 ---
 # <a name="get-managedebookassignment"></a>Get managedEBookAssignment
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBoo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

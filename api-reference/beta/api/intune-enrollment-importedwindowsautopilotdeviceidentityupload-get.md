@@ -2,12 +2,13 @@
 title: Получение importedWindowsAutopilotDeviceIdentityUpload
 description: Чтение свойства и связи объекта importedWindowsAutopilotDeviceIdentityUpload.
 author: tfitzmac
-ms.openlocfilehash: e38f24d9526d4da6e39507df68bae5143d20278e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db39df4c3e20cb222ee4ae48036616c30dd10097
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323907"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819889"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentityupload"></a>Получение importedWindowsAutopilotDeviceIdentityUpload
 
@@ -39,11 +40,11 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

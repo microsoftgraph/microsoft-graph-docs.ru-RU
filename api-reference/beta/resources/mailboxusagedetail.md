@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mailboxUsageDetail
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: af49fac7c6286c7e9f9ce1e6d7ffdede225b4072
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 25cb41e38138a677bfc6636b035003bb8fc5858c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076463"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818013"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>Тип ресурса mailboxUsageDetail
 
@@ -15,8 +16,8 @@ ms.locfileid: "27076463"
 | Свойство                        | Тип    |
 | :------------------------------ | :------ |
 | reportRefreshDate               | Date    |
-| userPrincipalName               | String  |
-| displayName                     | String  |
+| userPrincipalName               | Строка  |
+| displayName                     | Строка  |
 | isDeleted                       | Логический |
 | deletedDate                     | Date    |
 | Дата создания                     | Date    |

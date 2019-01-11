@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса metadataEntry
 description: Метаданные для данного объекта.
-ms.openlocfilehash: 8fed980c5310b0a9f13a6f3269dde90fad083751
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffdb2dd3b6729320b5991b1158e10d145e339968
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819483"
 ---
 # <a name="metadataentry-resource-type"></a>Тип ресурса metadataEntry
 
@@ -17,8 +18,8 @@ ms.locfileid: "27075595"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|String|Имя свойства метаданных.|
-|value|String|Значение свойства метаданных.|
+|key|Строка|Имя свойства метаданных.|
+|value|Строка|Значение свойства метаданных.|
 
 ## <a name="json-representation"></a>Представление JSON
 

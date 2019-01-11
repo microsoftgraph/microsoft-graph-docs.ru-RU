@@ -1,12 +1,13 @@
 ---
-title: Разрешения
+title: Permissions
 description: 'Удаление приложения из каталога приложений организации (каталог приложений клиента). '
-ms.openlocfilehash: eb58c66b768efc653a0da479dc01bb3fec4901cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e19826407a5f809787beffc8211f77ddce21d043
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026107"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804930"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Удаление приложения из каталога приложений организации
 
@@ -38,9 +39,9 @@ DELETE /appCatalogs/teamsApps/{id}
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-Отсутствуют.
+Нет.
 
 >**Примечание:** Используйте код, возвращенный вызова [списка публикации приложений](./teamsapp-list.md) для ссылок на приложением, которое вы хотите обновить. Не используйте код из манифеста приложения ZIP-архив.
 

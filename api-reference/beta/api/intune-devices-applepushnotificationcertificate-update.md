@@ -2,12 +2,13 @@
 title: Обновление объекта applePushNotificationCertificate
 description: Обновление свойств объекта applePushNotificationCertificate.
 author: tfitzmac
-ms.openlocfilehash: fb89ee3eb12e33dc2f1d7fc968aee8688d7aff99
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9eaca912e32c8575c692746040fc23535906466
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329717"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821751"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Обновление объекта applePushNotificationCertificate
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -53,8 +54,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificateUploadStatus|String.|Состояние загрузки сертификата.|
-|certificateUploadFailureReason|String.|Не удалось причине отправки сертификата.|
+|certificateUploadStatus|Строка|Состояние загрузки сертификата.|
+|certificateUploadFailureReason|Строка|Не удалось причине отправки сертификата.|
 |certificate|String|Н/Д|
 
 

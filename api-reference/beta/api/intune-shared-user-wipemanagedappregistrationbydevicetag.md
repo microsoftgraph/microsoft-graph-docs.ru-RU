@@ -2,12 +2,13 @@
 title: Действие wipeManagedAppRegistrationByDeviceTag
 description: Стирает данные о регистрации приложений с указанным тегом приложения.
 author: tfitzmac
-ms.openlocfilehash: 54b5e969d66bff44d0ed19561546ebdc1bdb2c4c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 68d3e2d2a356e23c4b83509c827aee4e18f72aac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821842"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>Действие wipeManagedAppRegistrationByDeviceTag
 
@@ -41,11 +42,11 @@ POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тело запроса добавьте параметры в формате JSON.
 

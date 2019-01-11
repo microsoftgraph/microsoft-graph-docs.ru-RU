@@ -2,12 +2,13 @@
 title: Получение managementConditionStatement
 description: Чтение свойства и связи объекта managementConditionStatement.
 author: tfitzmac
-ms.openlocfilehash: 1a5800fdeedd755240fae9c8691341f0fc20214a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f8791cd65f2344350168f6192bdaad6230349b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817005"
 ---
 # <a name="get-managementconditionstatement"></a>Получение managementConditionStatement
 
@@ -40,11 +41,11 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

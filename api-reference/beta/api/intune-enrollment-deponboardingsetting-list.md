@@ -2,12 +2,13 @@
 title: Список depOnboardingSettings
 description: Свойства списка и связей объектов depOnboardingSetting.
 author: tfitzmac
-ms.openlocfilehash: 6e3a84246f20b6939e156172f77c76a9baac18b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 65c4dbfb50539e40404dc103817360c8fc259533
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812112"
 ---
 # <a name="list-deponboardingsettings"></a>Список depOnboardingSettings
 
@@ -37,11 +38,11 @@ GET /deviceManagement/depOnboardingSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

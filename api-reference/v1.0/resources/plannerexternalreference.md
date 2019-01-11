@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerExternalReference
 description: Ресурс **plannerExternalReference** представляет метаданные ссылки (вложениях, например файл, URL-адрес). Это значение пары значение свойства в объекте externalReferences.
-ms.openlocfilehash: a9d53b487fd2ca6584af934c55388ee66b2071d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 696cc61b17776382aa0963d2d6d92f558f033bf1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821310"
 ---
 # <a name="plannerexternalreference-resource-type"></a>Тип ресурса plannerExternalReference
 

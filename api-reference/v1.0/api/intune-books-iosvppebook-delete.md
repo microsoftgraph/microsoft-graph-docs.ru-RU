@@ -2,12 +2,13 @@
 title: Delete iosVppEBook
 description: Удаление экземпляра iosVppEBook.
 author: tfitzmac
-ms.openlocfilehash: 33fd091df734ae6c6d176a4df8413efba859e795
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e7f03469a11da9253901c7283118068e14c4acb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311356"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817026"
 ---
 # <a name="delete-iosvppebook"></a>Delete iosVppEBook
 
@@ -35,11 +36,11 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Получение объекта DirectoryObject
 description: Получение свойств и связей объекта directoryObject.
 author: lleonard-msft
-ms.openlocfilehash: 452d88e5443a4fdf0f9c48cad127b3882a82217b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 03dd201bf769ef32e8f8a43c03679d169b93ad6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316858"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806113"
 ---
 # <a name="get-directoryobject"></a>Получение объекта DirectoryObject
 
@@ -33,7 +34,7 @@ GET /directoryObjects/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,12 +2,13 @@
 title: Список childFolders
 description: 'Получите коллекцию папок в указанной папке. Можно использовать `.../me/MailFolders` ярлык для получения верхнего уровня '
 author: angelgolfer-ms
-ms.openlocfilehash: e02e8ab7bf8ad4dd6a3028d72df7829f69277258
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 1d1a002bef6d1e16c48cc484211abe752e4adbe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351893"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819917"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
@@ -34,7 +35,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

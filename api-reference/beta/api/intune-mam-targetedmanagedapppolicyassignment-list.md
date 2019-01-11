@@ -2,12 +2,13 @@
 title: Перечисление объектов targetedManagedAppPolicyAssignment
 description: Список свойств и связей объектов targetedManagedAppPolicyAssignment.
 author: tfitzmac
-ms.openlocfilehash: fc2279c4344a86867679e37ba6fa96cf9e457f07
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a9ed6fd48467408ba940157530d8b9925515f3d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822003"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>Перечисление объектов targetedManagedAppPolicyAssignment
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

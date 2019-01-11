@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса sharePointActivityUserCounts
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 271ea6a70d56c55cf5a9561c2a1485c674a365f1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffbbb8c4d33c94678e8d57d1d9e69da91b22fb39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078110"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819934"
 ---
 # <a name="sharepointactivityusercounts-resource-type"></a>Тип ресурса sharePointActivityUserCounts
 

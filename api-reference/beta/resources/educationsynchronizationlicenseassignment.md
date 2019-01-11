@@ -2,12 +2,13 @@
 title: Тип ресурса educationSynchronizationLicenseAssignment
 description: Представляет информацию о лицензии для назначения учетных записей пользователей. Ресурс будет использоваться для настройки назначения лицензий при создании новых учетных записей пользователей.
 author: mmast-msft
-ms.openlocfilehash: 478d939c8f4c6a0bc1971d66afc4ecc7ae640e39
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9100ba799c8981d5defdd74d6346a66859b2d53e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344396"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804909"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>Тип ресурса educationSynchronizationLicenseAssignment
 

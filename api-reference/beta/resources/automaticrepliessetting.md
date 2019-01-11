@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса automaticRepliesSetting
 description: 'Параметры конфигурации для автоматического уведомления отправителя о входящей электронной почты с сообщением '
-ms.openlocfilehash: 040180da2b58481b96e1e249763c61f03355afec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0160197a4fafe10b7f78be9124da3b6260bfcee6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820659"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>Тип ресурса automaticRepliesSetting
 
@@ -23,7 +24,7 @@ ms.locfileid: "27082523"
 |internalReplyMessage|string|Автоматический ответ, который нужно отправить сотрудникам организации пользователя, выполнившего вход, если для параметра **Status** задано значение `AlwaysEnabled` или `Scheduled`. |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время завершения отправки автоматических ответов, если для параметра **Status** установлено значение `Scheduled`. |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время начала отправки автоматических ответов, если для параметра **Status** установлено значение `Scheduled`.|
-|status|String|Состояние настройки автоматических ответов. Возможные значения: `disabled`, `alwaysEnabled`, `scheduled`.|
+|status|Строка|Состояние настройки автоматических ответов. Возможные значения: `disabled`, `alwaysEnabled`, `scheduled`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

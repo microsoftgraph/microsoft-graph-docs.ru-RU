@@ -1,12 +1,13 @@
 ---
 title: Получение конечной точки
 description: Извлечение свойств и связи объекта определенной конечной точки.
-ms.openlocfilehash: fe5e820f18a22762436d8558d501d0250a090aa5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 77ad5716e8e30a16f95bf62593a6530d5e759861
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820449"
 ---
 # <a name="get-endpoint"></a>Получение конечной точки
 
@@ -38,7 +39,7 @@ GET /groups/{id}/endpoints/{id}
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type   | Application/Json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

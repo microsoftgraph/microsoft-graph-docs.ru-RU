@@ -2,12 +2,13 @@
 title: Тип ресурса commsOperation
 description: Состояние определенных длительных операций.
 author: VinodRavichandran
-ms.openlocfilehash: 09d3f81e8f6307850d94cfab43f98426dae47a5f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d70ad6535d5ae829de4b9bac3c5b9fea9b53188b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821450"
 ---
 # <a name="commsoperation-resource-type"></a>Тип ресурса commsOperation
 
@@ -22,12 +23,12 @@ ms.locfileid: "27380354"
 
 | Свойство           | Тип                        | Описание                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | Контекст клиента.                                                             |
+| clientContext      | Строка                      | Контекст клиента.                                                             |
 | createdDateTime    | DateTimeOffset              | Время начала операции.                                                |
-| id                 | String                      | Идентификатор операции. Только для чтения. Сервер, созданный.                                  |
+| id                 | Строка                      | Идентификатор операции. Только для чтения. Сервер, созданный.                                  |
 | lastActionDateTime | DateTimeOffset              | Время последнего действия операции.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | Сведения о результатов. Только для чтения. Сервер, созданный.                            |
-| status             | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
+| status             | Строка                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
 ## <a name="relationships"></a>Связи
 Нет

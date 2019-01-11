@@ -2,12 +2,13 @@
 title: Создание объекта ChartSeries
 description: С помощью этого API можно создать объект ChartSeries.
 author: lumine2008
-ms.openlocfilehash: 727be89be598ff86d852a161f9888b286517f538
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f2d6fbeb78f1b173de2c7bd329ae9d6051401fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816865"
 ---
 # <a name="create-chartseries"></a>Создание объекта ChartSeries
 
@@ -33,7 +34,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [WorkbookChartSeries](../resources/chartseries.md) .
 
 ## <a name="response"></a>Ответ

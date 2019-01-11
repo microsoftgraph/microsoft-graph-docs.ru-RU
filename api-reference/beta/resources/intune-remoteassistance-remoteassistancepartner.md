@@ -2,12 +2,13 @@
 title: Тип ресурса remoteAssistancePartner
 description: Ресурсы remoteAssistPartner представляются метаданные и состояние определенной партнерской службы удаленного помощника.
 author: tfitzmac
-ms.openlocfilehash: d3027ced433112b275d74d8c910553d5001d93ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 52badd2ad146f23fba70ab545a459b124e7fae2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344592"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821716"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Тип ресурса remoteAssistancePartner
 

@@ -2,12 +2,13 @@
 title: Тип ресурса windowsInformationProtectionProxiedDomainCollection
 description: Коллекция проксируемых доменов Windows Information Protection
 author: tfitzmac
-ms.openlocfilehash: c95c54c5bbfcc1b5202a0c56a6e3932b35ffac88
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dfc07b47115e4e5ce4be959ac7867a2963021abf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309473"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822101"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>Тип ресурса windowsInformationProtectionProxiedDomainCollection
 

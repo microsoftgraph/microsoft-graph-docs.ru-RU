@@ -2,12 +2,13 @@
 title: Create windowsPhone81CompliancePolicy
 description: Создание объекта windowsPhone81CompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 031e9cb9fcd27b3ece1c6fc97a4a56f5f09ed767
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6ba95411610b8cc71917e344ad9d1d41b402be16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812035"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>Create windowsPhone81CompliancePolicy
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

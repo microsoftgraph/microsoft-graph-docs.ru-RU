@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса securityVendorInformation
 description: " subProvider = AppLocker)."
-ms.openlocfilehash: 0eef5b1d53f4b7b61af0ccede6e02ffc7bdf76ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e9d8551c085c05007388bf0c6e33143994c6969b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820148"
 ---
 # <a name="securityvendorinformation-resource-type"></a>Тип ресурса securityVendorInformation
 
@@ -16,10 +17,10 @@ ms.locfileid: "27027329"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|Поставщик |String|Определенного поставщика (продуктов и услуг - не поставщика организации); Например WindowsDefenderATP.|
-|providerVersion|String|Версия поставщика или subprovider, если он существует, создавшее оповещение. *Required*|
-|subProvider|String|Определенные subprovider (в разделе статистической обработки поставщика); Например WindowsDefenderATP.SmartScreen.|
-|поставщика |String|Имя оповещения поставщика (например, Microsoft, Dell, FireEye). *Required*|
+|Поставщик |Строка|Определенного поставщика (продуктов и услуг - не поставщика организации); Например WindowsDefenderATP.|
+|providerVersion|Строка|Версия поставщика или subprovider, если он существует, создавшее оповещение. *Required*|
+|subProvider|Строка|Определенные subprovider (в разделе статистической обработки поставщика); Например WindowsDefenderATP.SmartScreen.|
+|поставщика |Строка|Имя оповещения поставщика (например, Microsoft, Dell, FireEye). *Required*|
 
 
 ## <a name="json-representation"></a>Представление JSON

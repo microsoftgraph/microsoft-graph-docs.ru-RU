@@ -2,12 +2,13 @@
 title: Получение outlookTaskGroup
 description: Получите свойства и связи в указанную группу задач Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: c464a6ac9b219ca84538e6d369009e0f5f515c51
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00abd783f8fa9ff726f5ada8f286529beddc9073
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306750"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816774"
 ---
 # <a name="get-outlooktaskgroup"></a>Получение outlookTaskGroup
 
@@ -36,7 +37,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

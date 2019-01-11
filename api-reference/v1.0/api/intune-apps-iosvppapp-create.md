@@ -2,12 +2,13 @@
 title: Create iosVppApp
 description: Создание объекта iosVppApp.
 author: tfitzmac
-ms.openlocfilehash: 0fa2f1c74586fd865e649c4f997c957f118d36fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f14419789a0c7cee2ae583bd163ac677c9368bc2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820463"
 ---
 # <a name="create-iosvppapp"></a>Create iosVppApp
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

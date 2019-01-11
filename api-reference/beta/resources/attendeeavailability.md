@@ -1,12 +1,13 @@
 ---
 title: Тип ресурсов attendeeAvailability
 description: Тип и занятость участника.
-ms.openlocfilehash: ddea2be21f2dd9290637536e2a428e25fc03fcca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a00fe38e678c6a51cd252b823a7d2651e531d20a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075136"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820470"
 ---
 # <a name="attendeeavailability-resource-type"></a>Тип ресурсов attendeeAvailability
 
@@ -37,7 +38,7 @@ ms.locfileid: "27075136"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attendee|[AttendeeBase](attendeebase.md)|Тип участника (сведения о том, является ли участник пользователем или ресурсом, а также о том, обязательный ли он, если объект представляет пользователя).|
-|availability|String| Состояние занятости участника. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|availability|Строка| Состояние занятости участника. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

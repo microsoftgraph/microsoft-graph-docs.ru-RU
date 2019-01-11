@@ -2,12 +2,13 @@
 title: Тип ресурса targetedManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности
 author: tfitzmac
-ms.openlocfilehash: 823f2bea754c6e8a38bb6047505d15d4b453a67a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8441cc569ddbf1c47ebf00979ed0c7e19c5d1947
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821877"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>Тип ресурса targetedManagedAppProtection
 
@@ -61,12 +62,12 @@ ms.locfileid: "27322654"
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о доступе к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeOsVersion|String.|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeAppVersion|String.|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeOsVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeAppVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировки или очистки, когда устройства либо корневого или jailbroken, если DeviceComplianceRequired задано значение true. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, либо блок или стирание, на основании максимальное количество повторных попыток неправильный ПИН-код. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
 |pinRequiredInsteadOfBiometricTimeout|Продолжительность|Время ожидания в минутах для закрепления приложения вместо секретный код не биометрия унаследованные от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|isAssigned|Boolean|Указывает, применена ли политика к группам включения.|
+|isAssigned|Логический|Указывает, применена ли политика к группам включения.|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Уровни управления требуемого приложения для этой политики. Возможные значения: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 
 ## <a name="relationships"></a>Связи

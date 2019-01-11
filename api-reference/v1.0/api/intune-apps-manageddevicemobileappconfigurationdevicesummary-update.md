@@ -2,12 +2,13 @@
 title: Обновление объекта managedDeviceMobileAppConfigurationDeviceSummary
 description: Обновление свойств объекта managedDeviceMobileAppConfigurationDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: 35a75cba4d67c23f5c011bfe7e75e23452d4c954
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad4845445e59105c1f304e8e90d67d97f153ed5e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330186"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818244"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>Обновление объекта managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

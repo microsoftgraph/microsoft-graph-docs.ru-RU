@@ -2,12 +2,13 @@
 title: Обновление officeClientConfigurationAssignment
 description: Обновление свойства объекта officeClientConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 78b0ae28bc61bc0d8d8c083502c6f6ef2cf7d0fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3d2fab5dc8793f566973e2d3e2d9bf968cbf30a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817530"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Обновление officeClientConfigurationAssignment
 
@@ -37,11 +38,11 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md).

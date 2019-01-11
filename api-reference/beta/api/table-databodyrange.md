@@ -2,12 +2,13 @@
 title: 'Table: DataBodyRange'
 description: Получает объект диапазона, связанный с основными данными таблицы.
 author: lumine2008
-ms.openlocfilehash: a61690aef261725ca87053a01428b153c5a05c7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8b9c6464c3e4878466a097c3d0e2399fb92e39d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311174"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820785"
 ---
 # <a name="table-databodyrange"></a>Table: DataBodyRange
 
@@ -36,7 +37,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/DataBodyRange
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

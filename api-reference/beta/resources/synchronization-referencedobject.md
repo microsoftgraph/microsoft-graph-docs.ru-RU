@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса referencedObject
 description: Описывает ссылку на другой объект, определенных в одно и то же определение каталога.
-ms.openlocfilehash: 63645048fd8ba6ad949da43baa261b2842ea4016
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5a2aa2dcc358c856c18ea2ce9871ec634194ce54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082039"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821037"
 ---
 # <a name="referencedobject-resource-type"></a>Тип ресурса referencedObject
 
@@ -16,10 +17,10 @@ ms.locfileid: "27082039"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство                   | Тип                      | Description    |
+| Свойство                   | Тип                      | Описание    |
 |:---------------------------|:--------------------------|:---------------|
-|referencedObjectName        |String                     |Имя объекта, на который указывает ссылка. Должно соответствовать одному из объектов в [каталоге определения](synchronization-directorydefinition.md).|
-|referencedProperty          |String                     |**В настоящее время не поддерживается**. Имя свойства в этом объекте, значение которой используется в качестве ссылки.|
+|referencedObjectName        |Строка                     |Имя объекта, на который указывает ссылка. Должно соответствовать одному из объектов в [каталоге определения](synchronization-directorydefinition.md).|
+|referencedProperty          |Строка                     |**В настоящее время не поддерживается**. Имя свойства в этом объекте, значение которой используется в качестве ссылки.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса yammerGroupsActivityCounts
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: a308b6180eaf91614247b0b5f47064ae7e7de2b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f8a205c2ecd74e8543a220508e7d4110a90317cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081477"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806792"
 ---
 # <a name="yammergroupsactivitycounts-resource-type"></a>Тип ресурса yammerGroupsActivityCounts
 

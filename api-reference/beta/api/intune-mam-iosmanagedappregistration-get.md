@@ -2,12 +2,13 @@
 title: Get iosManagedAppRegistration
 description: Чтение свойств и связей объекта iosManagedAppRegistration.
 author: tfitzmac
-ms.openlocfilehash: 8d0a93b9cddce5c21d923758b783ab7e40d5b27b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5365d6d653ce35fd1ffedc857abcd098a0c8b5b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821954"
 ---
 # <a name="get-iosmanagedappregistration"></a>Get iosManagedAppRegistration
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

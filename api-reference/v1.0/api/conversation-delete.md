@@ -2,12 +2,13 @@
 title: Удаление беседы
 description: Удаление беседы.
 author: dkershaw10
-ms.openlocfilehash: 2d35472f611b6f49ba1683ba127444d91753fac7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a8cd0f470a47c6b2f6c75bf2f057b60af8138867
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335751"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821667"
 ---
 # <a name="delete-conversation"></a>Удаление беседы
 
@@ -31,7 +32,7 @@ DELETE /groups/{id}/conversations/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,12 +2,13 @@
 title: Тип перечисления complianceState
 description: Состояние соответствия требованиям.
 author: tfitzmac
-ms.openlocfilehash: 3045685518f1c7718f9a5f46cd10e0add6fe05b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53b17f258f577e0842dbfc81c6341303f6b43799
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820344"
 ---
 # <a name="compliancestate-enum-type"></a>Тип перечисления complianceState
 

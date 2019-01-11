@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса oneDriveActivityUserDetail
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 679ec9b8452d388fe311e67d88bcfffd6fe73d93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2f498c7c9507c4210f12f76d57f62729f84da578
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820792"
 ---
 # <a name="onedriveactivityuserdetail-resource-type"></a>Тип ресурса oneDriveActivityUserDetail
 
@@ -15,7 +16,7 @@ ms.locfileid: "27077522"
 | Свойство                  | Тип              |
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Date              |
-| userPrincipalName         | String            |
+| userPrincipalName         | Строка            |
 | isDeleted                 | Логический           |
 | deletedDate               | Date              |
 | lastActivityDate          | Date              |

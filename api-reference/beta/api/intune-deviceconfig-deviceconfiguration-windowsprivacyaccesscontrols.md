@@ -2,12 +2,13 @@
 title: Действие windowsPrivacyAccessControls
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 301091be00f31ee0b4d86f6ec78f32c0adf34016
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a9f91a84809b7b1f853360728704905cdde6457
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817117"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>Действие windowsPrivacyAccessControls
 
@@ -39,11 +40,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

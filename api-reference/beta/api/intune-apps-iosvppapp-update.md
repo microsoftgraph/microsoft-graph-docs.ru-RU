@@ -2,12 +2,13 @@
 title: Update iosVppApp
 description: Обновление свойств объекта iosVppApp.
 author: tfitzmac
-ms.openlocfilehash: 0f95b23bcde4d48e8e17724e6fd5b4b26992df1a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0ac3ad93fa6847ce62b6710286fc6eec977c66d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341526"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819511"
 ---
 # <a name="update-iosvppapp"></a>Update iosVppApp
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -75,7 +76,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |vppTokenAppleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |bundleId|String|Имя удостоверения.|
-|vppTokenId|String.|Идентификатор VPP маркер, связанный с этого приложения.|
+|vppTokenId|Строка|Идентификатор VPP маркер, связанный с этого приложения.|
 |revokeLicenseActionResults|[iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md) коллекции|Результаты отозвать действия лицензии на это приложение.|
 
 
