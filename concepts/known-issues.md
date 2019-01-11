@@ -2,12 +2,12 @@
 title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: jthake-msft
-ms.openlocfilehash: e39cdb13a93c19a4a4829c69dc4b1090fd67d206
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 314b1cf1adab9f7454b6b7e3a3c3acf492d0648c
+ms.sourcegitcommit: 6e34c6995e4217a471950d76fdcf0731e6a17d0e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329164"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27791661"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -38,19 +38,9 @@ ms.locfileid: "27329164"
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="application-permissions"></a>Разрешения приложений
-
-Если изменения в командах и каналах вносятся с помощью разрешений приложений, Microsoft Teams создает управляющее сообщение, публикуемое в канале "Общий" с пустым именем вместо имени приложения. Это будет исправлено в будущих обновлениях. Исправление задним числом обновит уже опубликованные управляющие сообщения.
-
 ### <a name="create-chat-thread-api"></a>API создания беседы в чате
 
 Текущий интерфейс API для [создания беседы в чате](/graph/api/channel-post-chatthreads?view=graph-rest-beta) будет заменен более функциональным API, соответствующим схеме для [перечисления сообщений в канале](/graph/api/channel-list-messages?view=graph-rest-beta).
-
-### <a name="graph-explorer-and-v10"></a>Песочница Graph и версия 1.0
-
-Примеры запросов песочницы Graph пока еще не обновлены для версии 1.0.
-Запросы версии 1.0 можно вводить в текстовом поле вверху.
-Убедитесь, что вы настроили песочницу Graph с соответствующими разрешениями, такими как Group.ReadWrite.All и User.Read.All.
 
 ### <a name="graph-explorer-and-global-admins"></a>Песочница Graph и глобальные администраторы
 
