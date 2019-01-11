@@ -2,12 +2,13 @@
 title: Получение importedDeviceIdentity
 description: Чтение свойства и связи объекта importedDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: efa2ee66cd06b536d86f4abba894bf5349ed4ed5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b6ba6070673fa9ad6d220a45cf16855d43d6d333
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304034"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822185"
 ---
 # <a name="get-importeddeviceidentity"></a>Получение importedDeviceIdentity
 
@@ -39,11 +40,11 @@ GET /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

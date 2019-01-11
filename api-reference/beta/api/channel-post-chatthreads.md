@@ -2,12 +2,13 @@
 title: Создать поток разговора
 description: Создайте новый поток чата в указанном канала, передав корневой сообщения.
 author: nkramer
-ms.openlocfilehash: fcd1c08c05b29d2150f4c436eac7765f40900920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: edd3c99376a93b2c4405d97b6435cfd9a128ae8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325615"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809074"
 ---
 # <a name="create-chat-thread"></a>Создать поток разговора
 
@@ -36,7 +37,7 @@ POST /teams/{id}/channels/{id}/chatThreads
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [chatThread](../resources/chatthread.md) , который содержит свойство rootMessage.
 
 ## <a name="response"></a>Ответ

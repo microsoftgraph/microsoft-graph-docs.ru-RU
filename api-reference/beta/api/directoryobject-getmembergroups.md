@@ -1,12 +1,13 @@
 ---
 title: Вывод групп элементов
 description: Возвращает все группы, что указанный пользователь, группа, участника службы или объект каталога, является участником из. Эта функция транзитивное.
-ms.openlocfilehash: 9dc6af54ba364e1c5c82dc7e14a5d2571e29ef12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1e9cc785bccd9b5bc6d1c7e3da8d38874a440cf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079377"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808801"
 ---
 # <a name="get-member-groups"></a>Вывод групп элементов
 
@@ -39,7 +40,7 @@ POST /directoryObjects/{id}/getMemberGroups
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

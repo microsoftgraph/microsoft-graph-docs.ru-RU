@@ -2,12 +2,13 @@
 title: Get iosStoreApp
 description: Чтение свойств и связей объекта iosStoreApp.
 author: tfitzmac
-ms.openlocfilehash: dfe25e6b5f57ea8e862d9a9c86d40aa35ec0ca05
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94b4764d3cae854a21dd52a60fdc8724940d929a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340371"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822395"
 ---
 # <a name="get-iosstoreapp"></a>Get iosStoreApp
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

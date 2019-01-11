@@ -1,12 +1,13 @@
 ---
 title: Отчеты о действиях в Yammer
 description: Вы понимаете обязательства вашей организации с помощью Yammer с активности создается в организации и число уникальных пользователей, публиковать, такие как и читать сообщения в Yammer.
-ms.openlocfilehash: 3d70af700a55359044b4c24896a0118de5280fee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9895e37812b037b33f13682c3c56dacba5928d5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823711"
 ---
 # <a name="yammer-activity-reports"></a>Отчеты о действиях в Yammer
 

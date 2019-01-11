@@ -1,12 +1,13 @@
 ---
 title: Создание synchronizationTemplate
 description: Создание нового шаблона синхронизации для указанного приложения.
-ms.openlocfilehash: 1c7bc08eee4088796123d3c7fa2cac5c83becac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b52c2ef180781faf8c93ce335d5f22ca8ae57cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076758"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822703"
 ---
 # <a name="create-synchronizationtemplate"></a>Создание synchronizationTemplate
 
@@ -35,7 +36,7 @@ POST /applications/{id}/synchronization/templates/
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите создать объект [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) . `id`, `applicationId` И `factoryTag` свойства являются обязательными. Если нет `schema` предоставляется с помощью шаблона по умолчанию схема, связанная с `factoryTag` свойство будет использоваться.
 

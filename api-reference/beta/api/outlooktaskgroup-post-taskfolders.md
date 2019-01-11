@@ -2,12 +2,13 @@
 title: Создание outlookTaskFolder
 description: Создайте папку задачи Outlook в указанном outlookTaskGroup.
 author: angelgolfer-ms
-ms.openlocfilehash: e1e45cce9d047086d9aee025d38ca883fcda6fad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d6d6f103c1dd002f4c01e0dbdd71d1ebd7ddd10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339195"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823837"
 ---
 # <a name="create-outlooktaskfolder"></a>Создание outlookTaskFolder
 
@@ -34,7 +35,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [outlookTaskFolder](../resources/outlooktaskfolder.md) .
 
 ## <a name="response"></a>Ответ

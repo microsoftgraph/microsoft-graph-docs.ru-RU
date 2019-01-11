@@ -1,12 +1,13 @@
 ---
 title: 'directoryRole: дельты'
 description: Get вновь созданные, обновлении или удалении роли каталога без выполнения полного чтения коллекции всей ресурсов. Для получения дополнительных сведений в разделе с помощью запроса дельты.
-ms.openlocfilehash: b426dd10ead2d1fc34c1d64aa235c343e8e71c3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9eb847f390b4f05f56945a6496325bbeaccdf410
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809123"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: дельты
 
@@ -59,7 +60,7 @@ GET /directoryRoles/delta
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ### <a name="response"></a>Ответ

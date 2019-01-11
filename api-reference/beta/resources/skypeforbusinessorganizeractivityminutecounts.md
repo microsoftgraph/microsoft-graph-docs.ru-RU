@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса skypeForBusinessOrganizerActivityMinuteCounts
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: f11d303bd8737d9fb2870042ee93557343d44a2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6b3b38c61ebb7b294de9ea5fc2641a7527bf04f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080840"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823207"
 ---
 # <a name="skypeforbusinessorganizeractivityminutecounts-resource-type"></a>Тип ресурса skypeForBusinessOrganizerActivityMinuteCounts
 

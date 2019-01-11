@@ -2,12 +2,13 @@
 title: 'educationSubmission: Отправка'
 description: Действие, которое указывает, что студента выполняется с работой и готов к передаче в назначении. Это действие может быть занято только учащегося.
 author: dipakboyed
-ms.openlocfilehash: 25fc24823081c6f148617ad31d0f7b797b0e2a80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef2ef84819a6bfbeeb83a012b4c26fe7cb56662c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808577"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: Отправка
 
@@ -35,7 +36,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

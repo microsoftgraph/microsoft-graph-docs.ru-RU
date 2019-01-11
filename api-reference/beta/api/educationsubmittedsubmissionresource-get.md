@@ -2,12 +2,13 @@
 title: Получение educationSubmittedSubmissionResource
 description: Возвращает отправленные ресурсов. Это будет доступно для преподавателей после отправки студента и будет доступен для студента после преподаватель выпуска подачи.  Обратите внимание, что учителя можно оставить заметки в некоторые ресурсы.
 author: dipakboyed
-ms.openlocfilehash: a956f7b18125f01798f804ab577450030a626b3a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74458ca4ce8d462b3e59cab2bf531937cf4f973e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808675"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>Получение educationSubmittedSubmissionResource
 
@@ -37,7 +38,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [educationSubmissionResource](../resources/educationsubmissionresource.md) в теле ответа.

@@ -2,12 +2,13 @@
 title: Тип ресурса toneInfo
 description: Одно событие DTMF.
 author: VinodRavichandran
-ms.openlocfilehash: 0ae78a9a4721c88767ebc460a99c7cdea30f44c5
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: b9be7e0e69be8d127df92f717ab462021f9684b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817110"
 ---
 # <a name="toneinfo-resource-type"></a>Тип ресурса toneInfo
 
@@ -20,7 +21,7 @@ ms.locfileid: "27380340"
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
 | sequenceId | Int64 | Добавочный идентификатор, используемый для сортировки событий DTMF. |
-| сигнал | String | Возможные значения: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`. |
+| сигнал | Строка | Возможные значения: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`. |
 
 ## <a name="json-representation"></a>Представление JSON
 

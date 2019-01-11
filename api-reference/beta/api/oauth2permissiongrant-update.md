@@ -1,12 +1,13 @@
 ---
 title: Обновление oAuth2PermissionGrant
 description: Обновление свойства объекта oAuth2PermissionGrant.
-ms.openlocfilehash: fdf196e672b19a2775644dada4a33b036df83bf8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3c01d62dfb7c0c6906ff860656ee87b5f6d40aed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075820"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822353"
 ---
 # <a name="update-oauth2permissiongrant"></a>Обновление oAuth2PermissionGrant
 
@@ -37,12 +38,12 @@ PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|scope|String| Задает значение утверждения область, должно привести к приложению ресурсов в маркер доступа OAuth 2.0. |
+|scope|Строка| Задает значение утверждения область, должно привести к приложению ресурсов в маркер доступа OAuth 2.0. |
 
 ## <a name="response"></a>Отклик
 

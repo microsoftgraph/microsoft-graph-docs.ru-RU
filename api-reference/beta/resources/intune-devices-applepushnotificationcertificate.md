@@ -2,12 +2,13 @@
 title: Тип ресурса applePushNotificationCertificate
 description: Сертификат push-уведомлений Apple
 author: tfitzmac
-ms.openlocfilehash: 11c03712cc482a882452a9b64867090260863075
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3cc0b4a3e35027f79dd79ab065de9632e9585873
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810866"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
@@ -31,8 +32,8 @@ ms.locfileid: "27306652"
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificateUploadStatus|String.|Состояние загрузки сертификата.|
-|certificateUploadFailureReason|String.|Не удалось причине отправки сертификата.|
+|certificateUploadStatus|Строка|Состояние загрузки сертификата.|
+|certificateUploadFailureReason|Строка|Не удалось причине отправки сертификата.|
 |certificate|String|Н/Д|
 
 ## <a name="relationships"></a>Связи

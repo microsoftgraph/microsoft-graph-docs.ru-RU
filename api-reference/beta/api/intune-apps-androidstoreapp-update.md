@@ -2,12 +2,13 @@
 title: Update androidStoreApp
 description: Обновление свойств объекта androidStoreApp.
 author: tfitzmac
-ms.openlocfilehash: 3bb27d6ae14dfdde671ddc799e32b8d2ae66982e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8cd9efebe6d7a68c2b0e023e17e881850e01843f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330942"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818839"
 ---
 # <a name="update-androidstoreapp"></a>Update androidStoreApp
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

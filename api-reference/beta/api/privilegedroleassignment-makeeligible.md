@@ -1,12 +1,13 @@
 ---
 title: 'privilegedRoleAssignment: makeEligible'
 description: Сделайте назначения ролей как подходящими. Если назначения ролей подходящими перед выполнением звонка, не выполняет никаких действий. Если постоянное назначение ролей и инициатора запроса отличается от конечного пользователя, становится доступным назначения роли и роли будут отключены для конечного пользователя. Если инициатора запроса конечного пользователя и роль имеет права администратора безопасности или привилегированной роль администратора, роль будет активировать истечение срока действия по умолчанию.
-ms.openlocfilehash: f39f508c7aeae4d85db92b43f406cd3497533e38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 90f606ed1550f6341251e5185e620c29838a9ac9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822591"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
@@ -35,7 +36,7 @@ POST /privilegedRoleAssignments/{id}/makeEligible
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -56,8 +57,7 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makeEligibl
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

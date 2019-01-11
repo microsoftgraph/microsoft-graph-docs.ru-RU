@@ -2,12 +2,13 @@
 title: Тип ресурса educationUser
 description: Пользователь в системе. Используемый для сферы образования вариант указания пользователя с тем же параметром `id`, который Microsoft Graph возвратит из конечной точки `/users`, не ограниченной сферой образования.
 author: mmast-msft
-ms.openlocfilehash: 10f11c8d621fc2558fa6a82ca1f5d2a0e2e3dc4a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a577fae0896ca4f32b0266f5353e963ce0c7d35a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822752"
 ---
 # <a name="educationuser-resource-type"></a>Тип ресурса educationUser
 

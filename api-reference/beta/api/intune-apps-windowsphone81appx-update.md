@@ -2,12 +2,13 @@
 title: Обновление windowsPhone81AppX
 description: Обновление свойства объекта windowsPhone81AppX.
 author: tfitzmac
-ms.openlocfilehash: 7ebd110bd76797682ebd9a53b72e661e9e71d583
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d7f295c5d2e6441c550b74c316f598d7c1ffed1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321618"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823263"
 ---
 # <a name="update-windowsphone81appx"></a>Обновление windowsPhone81AppX
 
@@ -39,11 +40,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md).
@@ -73,8 +74,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |identityPublisherHash|String|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|phoneProductIdentifier|String.|Идентификатор продукта телефона.|
-|phonePublisherId|String.|Publisher с идентификатором телефона.|
+|phoneProductIdentifier|Строка|Идентификатор продукта телефона.|
+|phonePublisherId|Строка|Publisher с идентификатором телефона.|
 |identityVersion|String|Версия удостоверения.|
 
 

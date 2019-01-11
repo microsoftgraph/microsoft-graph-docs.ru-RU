@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса attributeMappingFunctionSchema
 description: Описываются функции, которая может использоваться в Отображение атрибута для преобразования значения во время синхронизации.
-ms.openlocfilehash: 9760669bb29700bfa79c1cd375857b4fd673879b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7273534d281d8ea5eaf3709b530776295cd9c767
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822164"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>Тип ресурса attributeMappingFunctionSchema
 
@@ -24,7 +25,7 @@ ms.locfileid: "27078710"
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:-------------------------|:---------------|
-|name                        |String                    |Имя оператора. |
+|name                        |Строка                    |Имя оператора. |
 |parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) коллекции  |Коллекция параметров функции.|
 
 ## <a name="json-representation"></a>Представление JSON

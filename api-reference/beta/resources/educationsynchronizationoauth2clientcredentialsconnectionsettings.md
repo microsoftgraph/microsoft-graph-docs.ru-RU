@@ -1,12 +1,13 @@
 ---
 title: educationSynchronizationOAuth2ClientCredentialsConnectionSettings ресурсов
 description: При OAuth2 предоставить учетные данные клиента будет использоваться для подключения к поставщику данных, этот тип параметры подключения можно использовать для настройки профиля.
-ms.openlocfilehash: 901fabb802d4ed5fa0c99538e52b9a07199eb298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49a0a267ddb3a8f3a954888679806ea7913e24f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822584"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings ресурсов
 
@@ -18,10 +19,10 @@ ms.locfileid: "27080541"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:-|:-|:-|
-| **tokenUrl** | String | URL-адрес для получения маркера доступа для поставщика данных. |
-| **scope** | String | [Область запроса доступа](https://tools.ietf.org/html/rfc6749#section-3.3). |
+| **tokenUrl** | Строка | URL-адрес для получения маркера доступа для поставщика данных. |
+| **scope** | Строка | [Область запроса доступа](https://tools.ietf.org/html/rfc6749#section-3.3). |
 
 ## <a name="json-representation"></a>Представление JSON
 <!-- {

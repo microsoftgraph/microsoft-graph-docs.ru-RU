@@ -2,12 +2,13 @@
 title: Удаление объекта acceptedSender
 description: 'Удаление пользователя или группы из списка acceptedSenders. '
 author: dkershaw10
-ms.openlocfilehash: 7028f2f63e340c9f5c3f300f6e3724a05f87d288
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f728e3075d64de3b1241079c57512b8699e2262
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313911"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819140"
 ---
 # <a name="remove-acceptedsender"></a>Удаление объекта acceptedSender
 
@@ -35,7 +36,7 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

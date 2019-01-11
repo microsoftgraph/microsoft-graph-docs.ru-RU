@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса connectorGroup
 description: Ниже представлено описание ресурса в формате JSON.
-ms.openlocfilehash: a3131b887216f1f400f70ed8d607477f65793cc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 211efe5d8caae57457a6a5cc4fa95d145cd176f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823193"
 ---
 # <a name="connectorgroup-resource-type"></a>Тип ресурса connectorGroup
 
@@ -21,19 +22,19 @@ ms.locfileid: "27079875"
 |[Список приложений](../api/connectorgroup-list-applications.md) |коллекции [приложения](application.md)| Получение коллекции объектов связанного приложения.|
 |[Создание соединителя](../api/connectorgroup-post-members.md) |[Соединитель](connector.md)| Добавьте соединитель для соединителя группы, отправку сообщений в коллекцию элементов.|
 |[Список членов](../api/connectorgroup-list-members.md) |Коллекция [соединителей](connector.md)| Получите соединитель коллекции объектов.|
-|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Обновление объекта connectorGroup. |
+|[обновление](../api/connectorgroup-update.md). | [connectorGroup](connectorgroup.md)    |Обновление объекта connectorGroup. |
 |[Delete](../api/connectorgroup-delete.md) | Нет |Удалите объект connectorGroup. Все соединители должны быть Удаление соединителя группы могут быть удалены. |
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Тип соединителей, которые будут использоваться с этой группой. Возможные значения: `applicationProxy`.|
-|id|String| Идентификатор объекта connectorGroup|
+|id|Строка| Идентификатор объекта connectorGroup|
 |isDefault|Логический| Указывает, является ли connectorGroup соединителя группы по умолчанию. Только один соединитель группы могут быть connectorGroup по умолчанию и устанавливается системой.|
-|name|String| Имя, связанное с connectorGroup.|
+|name|Строка| Имя, связанное с connectorGroup.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |приложения|коллекции [приложения](application.md)| Только для чтения. Допускается значение null.|
 |members|Коллекция [соединителей](connector.md)| Только для чтения. Допускается значение null.|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса риска
 description: Объединяет уровень риска, состоянии риска и сведений о риска для рискованный пользователя вход или риска события.
-ms.openlocfilehash: bc8ea5c30f78560ae8750e7750596f282feb4825
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: da198ba27ca6cd0b762f322863f8c9bfd56a5cb7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810670"
 ---
 # <a name="risk-resource-type"></a>Тип ресурса риска
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077416"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство   | Тип|Description|
+| Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |`stateDetail`|riskDetail|Предоставляет «причина» за с определенным состоянием рискованный пользователя, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что никакие действия не выполнены на пользователя или входа в данный момент. |
 |`riskLevelAggregated`|riskLevel|Предоставляет общий уровень риска рискованный пользователя, входа или события риска. Возможные значения: `none`, `low`, `medium`, `high`, `hidden`, и `unknownFutureValue`. Значение `hidden` означает, что пользователь или входа в не был включен для защиты удостоверения Azure AD.|

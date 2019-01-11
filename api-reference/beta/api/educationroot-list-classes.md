@@ -2,12 +2,13 @@
 title: Перечисление классов
 description: 'Получение списка всех объектов class. '
 author: mmast-msft
-ms.openlocfilehash: 73496c478525f0068438070afc3dcc836b8382ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74639acd39ee6b11a7338692b23e5e14a7020eda
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823928"
 ---
 # <a name="list-classes"></a>Перечисление курсов
 
@@ -38,7 +39,7 @@ GET /education/classes
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationClass](../resources/educationclass.md) в теле отклика.

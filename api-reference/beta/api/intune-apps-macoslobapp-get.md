@@ -2,12 +2,13 @@
 title: Получение macOSLobApp
 description: Чтение свойства и связи объекта macOSLobApp.
 author: tfitzmac
-ms.openlocfilehash: 539f11276c2e2899dba5e594050c4d126b59d8db
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdb3517e19f779e2e9149fc90938244ab20f8151
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302620"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809088"
 ---
 # <a name="get-macoslobapp"></a>Получение macOSLobApp
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

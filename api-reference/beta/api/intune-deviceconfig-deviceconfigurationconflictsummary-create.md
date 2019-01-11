@@ -2,12 +2,13 @@
 title: Создание deviceConfigurationConflictSummary
 description: Создание нового объекта deviceConfigurationConflictSummary.
 author: tfitzmac
-ms.openlocfilehash: f39d272d817ca2244f5b0d932fc9c955a1253b27
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e120e6ce3070012eb1dffcfb06cf77040c0f44cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812420"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Создание deviceConfigurationConflictSummary
 
@@ -37,11 +38,11 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта deviceConfigurationConflictSummary.
 
 В следующей таблице показаны свойства, которые необходимы для создания deviceConfigurationConflictSummary.

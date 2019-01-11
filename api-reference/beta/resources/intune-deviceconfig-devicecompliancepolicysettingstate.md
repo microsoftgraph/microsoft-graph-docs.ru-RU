@@ -2,12 +2,13 @@
 title: Тип ресурса deviceCompliancePolicySettingState
 description: Состояние параметров политики соответствия требованиям для определенного устройства.
 author: tfitzmac
-ms.openlocfilehash: fbad84edffaeb3abdff0c00fdd55c1451d23a721
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8c508f7b936f4a04d929fe429b46ec679d7110eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327960"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822787"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Тип ресурса deviceCompliancePolicySettingState
 

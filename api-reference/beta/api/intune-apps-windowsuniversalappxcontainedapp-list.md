@@ -2,12 +2,13 @@
 title: Список windowsUniversalAppXContainedApps
 description: Свойства списка и связей объектов windowsUniversalAppXContainedApp.
 author: tfitzmac
-ms.openlocfilehash: f28efa8a32c45d297670789a7726319fd96cc0b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f5c7afb65c3628629d5349bca76c1b46467dfc9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808689"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Список windowsUniversalAppXContainedApps
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

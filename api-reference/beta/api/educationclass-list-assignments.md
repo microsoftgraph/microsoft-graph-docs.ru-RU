@@ -2,12 +2,13 @@
 title: Список назначений
 description: Получение списка объектов назначений. Преподаватель может видеть все объекты назначения для класса. Студентов можно видеть только назначения, которые были им назначены.
 author: mmast-msft
-ms.openlocfilehash: c7fbab429b238a0ae7f1814066eedfe793096f02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a58406f26b45ccf3b16b6ff6bfa17e38b52590e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823921"
 ---
 # <a name="list-assignments"></a>Список назначений
 
@@ -37,7 +38,7 @@ GET /education/classes/{id}/assignments
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в теле ответа.

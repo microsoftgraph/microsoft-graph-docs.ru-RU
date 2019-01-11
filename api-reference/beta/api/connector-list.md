@@ -1,12 +1,13 @@
 ---
 title: Список соединителей
 description: Получение списка объектов соединителя.
-ms.openlocfilehash: 663105bc3f2ac7ae8826a22dc6c849d1095551d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a66a6c11c6001c327648da5cd53fb781f507673d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074981"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808913"
 ---
 # <a name="list-connectors"></a>Список соединителей
 
@@ -33,9 +34,9 @@ GET /connectors
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -52,8 +53,7 @@ GET /connectors
 GET https://graph.microsoft.com/{ver}/connectors
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

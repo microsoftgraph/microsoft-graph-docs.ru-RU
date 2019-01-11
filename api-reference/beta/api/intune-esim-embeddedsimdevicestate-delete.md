@@ -2,12 +2,13 @@
 title: Удаление embeddedSIMDeviceState
 description: Удаляет embeddedSIMDeviceState.
 author: tfitzmac
-ms.openlocfilehash: a99ee168896971e4051f93aaea527aa4c24a1f07
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a7acebbf76e0719967582fa5a4922a8d409af2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819105"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>Удаление embeddedSIMDeviceState
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

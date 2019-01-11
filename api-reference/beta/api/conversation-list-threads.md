@@ -2,12 +2,13 @@
 title: Список цепочек
 description: Получение всех цепочек в групповой беседе.
 author: dkershaw10
-ms.openlocfilehash: 1f19692f9c5a1510a901fa4c0cc5c60862625179
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1aacab39dfeae4dd9271ce5f3664c55eb80a583
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334057"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813309"
 ---
 # <a name="list-threads"></a>Список цепочек
 
@@ -37,7 +38,7 @@ GET /groups/{id}/conversations/{id}/threads
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

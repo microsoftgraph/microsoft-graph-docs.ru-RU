@@ -2,12 +2,13 @@
 title: Удаление iosEduDeviceConfiguration
 description: Удаляет iosEduDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 31fc2326fa1dbecbc60c79a0dd3ea012e67726bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 976553dc72d4892dcb2fc311a7e3e2c6d9fb601f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340336"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823347"
 ---
 # <a name="delete-iosedudeviceconfiguration"></a>Удаление iosEduDeviceConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

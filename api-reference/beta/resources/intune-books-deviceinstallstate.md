@@ -2,12 +2,13 @@
 title: Тип ресурса deviceInstallState
 description: Содержит свойства состояния установки для устройства.
 author: tfitzmac
-ms.openlocfilehash: fb11f93682093655a38ac554b2816348f9b0c6bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a407d35189d1b61e870fbdff282a429be165c0c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360371"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819679"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Тип ресурса deviceInstallState
 

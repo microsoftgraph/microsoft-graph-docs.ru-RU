@@ -2,12 +2,13 @@
 title: Удаление календаря
 description: Удаление календаря, отличного от календаря по умолчанию.
 author: angelgolfer-ms
-ms.openlocfilehash: 2285287911fcca961304c8b46d3508db554f95a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e489a0807f9069f3198f11955daba828b9c929e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359243"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823704"
 ---
 # <a name="delete-calendar"></a>Удаление календаря
 
@@ -40,7 +41,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 |:---------------|:---------|:----------|
 | Authorization  |  string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,12 +1,13 @@
 ---
 title: Получение соглашения
 description: Извлечение свойств и связи объекта соглашения.
-ms.openlocfilehash: 9887ed39bcb2a63980388e5265bb56d6500625d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0ca4e941705fe716c3aa11a73c934c40deb279d4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076318"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818657"
 ---
 # <a name="get-agreement"></a>Получение соглашения
 
@@ -35,9 +36,9 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [соглашение](../resources/agreement.md) и кода ответа в теле ответа.

@@ -2,12 +2,13 @@
 title: Получение androidForWorkGeneralDeviceConfiguration
 description: Чтение свойства и связи объекта androidForWorkGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 88478f99c69a197e6648c27fa90a3793b4620cb3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a926ffdd3954d5a3d56626103b22a319f54e7c61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817334"
 ---
 # <a name="get-androidforworkgeneraldeviceconfiguration"></a>Получение androidForWorkGeneralDeviceConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

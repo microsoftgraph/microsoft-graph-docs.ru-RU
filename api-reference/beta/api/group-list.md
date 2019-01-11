@@ -1,12 +1,13 @@
 ---
 title: Список групп
 description: Список всех групп, доступных в организации, в том числе из функции "Группы Office 365".
-ms.openlocfilehash: 2b46891a7570a831cd1b38ae29915e59475e8540
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: dd243d1f07b98564bb5aa4751664337c0f0654cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075034"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813274"
 ---
 # <a name="list-groups"></a>Список групп
 
@@ -52,7 +53,7 @@ GET /groups
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

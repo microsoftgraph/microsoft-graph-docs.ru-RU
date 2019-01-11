@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса targetResourcePolicy
 description: 'Указывает политику, которая была влияют активности аудита. На основе targetResource ресурсов.   '
-ms.openlocfilehash: 20486c535d0df4b3745f5cfc3414b320a9374075
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 355e6ac11741a2aa7aeb780bdac4b7be373092af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813141"
 ---
 # <a name="targetresourcepolicy-resource-type"></a>Тип ресурса targetResourcePolicy
 Указывает политику, которая была влияют активности аудита. На основе [targetResource](targetresource.md) ресурсов.   
@@ -14,9 +15,9 @@ ms.locfileid: "27080090"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|policyType|String|Указывает имя политики, измененные или был targetted для изменения|
+|policyType|Строка|Указывает имя политики, измененные или был targetted для изменения|
 
 ## <a name="json-representation"></a>Представление JSON
 

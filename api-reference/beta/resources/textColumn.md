@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: textColumn
-ms.openlocfilehash: 5ff280b6c969d9832e2f81f77dc32237f9905aad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87a5e27544a49613d1d1e44cd6f3e0e3b7fcf8c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822570"
 ---
 # <a name="textcolumn-resource-type"></a>Тип ресурса textColumn
 
@@ -37,8 +38,8 @@ ms.locfileid: "27078304"
 |:--------------------------------|:-------|:-----------------------------------------------
 | **allowMultipleLines**          | строка | Указывает, разрешено ли отображать несколько строк текста.
 | **appendChangesToExistingText** | строка | Указывает, что должно происходить при обновлении данного столбца: новый текст должен заменять существующий либо дополнять его.
-| **linesForEditing**             | целое    | Размер текстового поля.
-| **maxLength**                   | целое    | Максимальное количество символов для значения.
+| **linesForEditing**             | int    | Размер текстового поля.
+| **maxLength**                   | int    | Максимальное количество символов для значения.
 | **textType**                    | строка | Тип хранимого текста. Должно иметь тип `plain` или `richText`
 
 <!-- {

@@ -2,12 +2,13 @@
 title: Получение звукового группы маршрутизации
 description: Извлечение свойств и связи объекта audioRoutingGroup.
 author: VinodRavichandran
-ms.openlocfilehash: 5f9a7771f31350dc30ed96e9eb81b40cc855b380
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ebb0887f071fe24056903af9eae1e3f55ab6ede3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380431"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814184"
 ---
 # <a name="get-audio-routing-group"></a>Получение звукового группы маршрутизации
 
@@ -22,7 +23,7 @@ ms.locfileid: "27380431"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +40,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

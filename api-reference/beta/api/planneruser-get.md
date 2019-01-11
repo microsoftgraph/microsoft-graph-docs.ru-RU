@@ -1,12 +1,13 @@
 ---
 title: Получение plannerUser
 description: 'Извлечение свойств и связи объекта plannerUser. Возвращаемых свойств включают пользователя избранные планы и планы, которые были открыты. '
-ms.openlocfilehash: fca4b37560ad0c6cd7e05aee56ebdeb1e6509101
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1abffddb2ddbefdcd0aaeddedffe94ae8ad605d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810642"
 ---
 # <a name="get-planneruser"></a>Получение plannerUser
 
@@ -34,7 +35,7 @@ GET /users/<id>/planner
 |:----------|:----------|
 | Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [plannerUser](../resources/planneruser.md) в теле ответа.

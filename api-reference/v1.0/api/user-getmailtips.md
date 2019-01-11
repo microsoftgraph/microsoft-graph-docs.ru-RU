@@ -2,12 +2,13 @@
 title: 'пользователь: getMailTips'
 description: Получите подсказки одного или нескольких получателей как доступные для пользователя, выполнившего вход.
 author: dkershaw10
-ms.openlocfilehash: 198e45647ce51997a8d92da63a5f63f03d05a675
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49c1614a2e53563039d22b9c2823a7bb35379f3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808654"
 ---
 # <a name="user-getmailtips"></a>пользователь: getMailTips
 
@@ -38,13 +39,13 @@ POST /users/{id|userPrincipalName}/getMailTips
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |EmailAddresses|Коллекция String|Коллекция SMTP-адреса для получения подсказок для получателей.|
-|MailTipsOptions|String.|Перечисление флаги, который представляет запрошенный подсказок. Возможные значения: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, и `totalMemberCount`.|
+|MailTipsOptions|Строка|Перечисление флаги, который представляет запрошенный подсказок. Возможные значения: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, и `totalMemberCount`.|
 
 ## <a name="response"></a>Ответ
 

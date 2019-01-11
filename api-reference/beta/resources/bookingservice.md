@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса bookingService
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: bb42768cb913abca7c17e6d617670a3a035ec16a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63eae84249501426c43ad73326cbf005009753be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815444"
 ---
 # <a name="bookingservice-resource-type"></a>Тип ресурса bookingService
 
@@ -21,21 +22,21 @@ ms.locfileid: "27076156"
 |[Список служб](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) коллекции | Получите список объектов **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
 |[Создание bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Создание **bookingService** для указанного [bookingbusiness](../resources/bookingbusiness.md). |
 |[Получение bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получите свойства и связи объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
-|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Обновление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
+|[обновление](../api/bookingservice-update.md). | [bookingService](bookingservice.md)    |Обновление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 |[Delete](../api/bookingservice-delete.md) | Нет |Удаление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |defaultDuration|Продолжительность|Длина по умолчанию службы, представленный в числа дней, часов, минут и секунд. Например P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|Физическое расположение по умолчанию для службы.|
 |defaultPrice|Double|Денежные Цена по умолчанию для службы.|
 |defaultPriceType|string|По умолчанию способ службу оценивается. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultReminders|[bookingReminder](bookingreminder.md) коллекции|Значение по умолчанию набора оповещения о встрече этой службы. Значение этого свойства доступна только при чтении этой **bookingService** по идентификатору.|
-|описание|String|Текстовое описание для службы.|
-|displayName|String|Имя службы.|
+|описание|Строка|Текстовое описание для службы.|
+|displayName|Строка|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
-|id|String|Идентификатор службы, в формате GUID. Только для чтения.|
+|id|Строка|Идентификатор службы, в формате GUID. Только для чтения.|
 |isHiddenFromCustomers|Логический|Значение true означает, что эта служба недоступна для клиентов для резервирования.|
 |notes|String|Дополнительные сведения об этой службы.|
 |postBuffer|Продолжительность|Заканчивается время буфер после встречи для этой службы и перед следующим встречи клиента можно заранее.|

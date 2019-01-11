@@ -1,12 +1,13 @@
 ---
 title: Создание governanceRoleAssignmentRequest
 description: Создание роли назначения запроса для представления операции, требуется на назначения ролей. В следующей таблице перечислены операции.
-ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 09adb824147dba745649efc7589ca763f815278d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191174"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823774"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -30,7 +31,7 @@ ms.locfileid: "27191174"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -48,7 +49,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | Authorization  | Bearer {code}|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
 | Свойство     | Тип    |Обязательный|  Описание|
@@ -61,7 +62,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 |Причина|Строка| |Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
 |расписание|[governanceSchedule](../resources/governanceschedule.md)| | Расписание для запроса назначений ролей. Для запроса типа `UserAdd`, `AdminAdd`, `AdminUpdate`, и `AdminExtend`, это необходимо.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
 
 ### <a name="error-codes"></a>Коды ошибок
@@ -116,7 +117,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -173,7 +174,7 @@ Content-length: 226
 |resourceId|Строка|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
-|assignmentState|Строка|Да| Active (активные)|
+|assignmentState|Строка|Да| Активное|
 |type|Строка|Да| UserAdd|
 |Причина|Строка| зависит от роли параметров||
 |расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
@@ -200,7 +201,7 @@ Content-type: application/json
 "linkedEligibleRoleAssignmentId":"e327f4be-42a0-47a2-8579-0a39b025b394"
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -268,7 +269,7 @@ Content-type: application/json
 |resourceId|Строка|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
-|assignmentState|Строка|Да| Active (активные)|
+|assignmentState|Строка|Да| Активное|
 |type|Строка|Да| UserRemove|
 |Причина|Строка| Нет||
 |расписание|[governanceSchedule](../resources/governanceschedule.md)|Нет|        |
@@ -290,7 +291,7 @@ Content-type: application/json
 "linkedEligibleRoleAssignmentId":"cb8a533e-02d5-42ad-8499-916b1e4822ec"
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -352,7 +353,7 @@ Content-type: application/json
   "type":"AdminRemove"
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -419,7 +420,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -500,7 +501,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": false,

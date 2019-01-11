@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса fileHash
 description: Содержит информацию о состояниях о хэши файлов (криптографии и расположение конфиденциальные).
-ms.openlocfilehash: 8f283046efc9b4af181cb33fb4e9ca63e4892b67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f5d865a7ded230ca611b8628c3648ec1e331c67d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815647"
 ---
 # <a name="filehash-resource-type"></a>Тип ресурса fileHash
 
@@ -14,10 +15,10 @@ ms.locfileid: "27079064"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство     | Тип        | Description |
+| Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |hashType|Перечисление [fileHashType](filehashtypeenumtype.md)|Тип файла хэш-функции. Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
-|hashValue|String|Значение хэш файла.|
+|hashValue|Строка|Значение хэш файла.|
 
 ## <a name="json-representation"></a>Представление JSON
 

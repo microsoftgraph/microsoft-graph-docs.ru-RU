@@ -1,12 +1,13 @@
 ---
 title: 'group: subscribeByMail'
 description: При вызове этого метода будет включен текущего пользователя, чтобы получать уведомления по электронной почте для данной группы о новых сообщений, события и файлы в эту группу. Поддерживается только в Office 365 группы.
-ms.openlocfilehash: 3e43f3805974fa518bf006682e8dd1f211e20417
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5cbb5d461f5e3cc71790f6546c6ebf638ffa31d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081434"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813169"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 
