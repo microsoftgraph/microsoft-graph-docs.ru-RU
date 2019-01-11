@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса FormatProtection
 description: Представляет защиту формата объекта Range.
-ms.openlocfilehash: 5f2a4968b018a952b24bb18a75a4f6d5aff55b00
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0b4add2e30a1e475adcb162903f771ce760f9285
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805623"
 ---
 # <a name="formatprotection-resource-type"></a>Тип ресурса FormatProtection
 
@@ -20,7 +21,7 @@ ms.locfileid: "27079411"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта FormatProtection](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |Чтение свойств и связей объекта formatProtection.|
-|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |Обновление объекта FormatProtection. |
+|[обновление](../api/formatprotection-update.md). | [FormatProtection](formatprotection.md)  |Обновление объекта FormatProtection. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

@@ -2,12 +2,13 @@
 title: Обновление mobileAppInstallSummary
 description: Обновление свойства объекта mobileAppInstallSummary.
 author: tfitzmac
-ms.openlocfilehash: 94dc7fa5023d26de91b4d64efda27332dd51de63
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19bd1e61359c5d2bdaff6ee87e807bae7dba0f05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864801"
 ---
 # <a name="update-mobileappinstallsummary"></a>Обновление mobileAppInstallSummary
 
@@ -37,11 +38,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md).

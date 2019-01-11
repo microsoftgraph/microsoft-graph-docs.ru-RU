@@ -2,12 +2,13 @@
 title: Тип ресурса windowsKioskActiveDirectoryGroup
 description: Класс, используемый для идентификации группу Azure Directory для базовой конфигурации
 author: tfitzmac
-ms.openlocfilehash: 618b93182d17d485a35d2567f45c218c6117658f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc9db9aa120411c423492efa162973e33cc4c303
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850528"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>Тип ресурса windowsKioskActiveDirectoryGroup
 
@@ -22,7 +23,7 @@ ms.locfileid: "27331776"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupName|String.|Имя группы AD, которая будет заблокирована этой базовой конфигурации|
+|groupName|Строка|Имя группы AD, которая будет заблокирована этой базовой конфигурации|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,12 +2,13 @@
 title: Список приложений
 description: Извлечь список приложений в данной организации.
 author: lleonard-msft
-ms.openlocfilehash: 138a9e6d238fde44d5b5c47781bbd93cb2b73f98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5443010f613f1978c3b88a9cc57237ca7b844805
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336696"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854980"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -38,7 +39,7 @@ GET /applications
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

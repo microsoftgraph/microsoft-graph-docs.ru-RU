@@ -2,12 +2,13 @@
 title: Тип ресурса certificateConnectorSetting
 description: Параметры соединителя сертификата.
 author: tfitzmac
-ms.openlocfilehash: 8c993634eb4f41e16643ae3f40be74ecc3eb392f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 56f12600b6aa78982dc51732d685dcd7c962d0b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888601"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>Тип ресурса certificateConnectorSetting
 
@@ -21,9 +22,9 @@ ms.locfileid: "27326308"
 |:---|:---|:---|
 |status|Int32|Состояние соединителя сертификата|
 |certExpiryTime|DateTimeOffset|Срок действия сертификата времени|
-|enrollmentError|String.|Ошибка регистрации сертификата соединителя|
+|enrollmentError|Строка|Ошибка регистрации сертификата соединителя|
 |lastConnectorConnectionTime|DateTimeOffset|Время последнего сертификата подключенных соединителя|
-|connectorVersion|String.|Версия сертификата соединителя|
+|connectorVersion|Строка|Версия сертификата соединителя|
 |lastUploadVersion|Int64|Версия последнего загруженного сертификата соединителя|
 
 ## <a name="relationships"></a>Связи

@@ -2,12 +2,13 @@
 title: Создание windowsPhone81StoreApp
 description: Создание нового объекта windowsPhone81StoreApp.
 author: tfitzmac
-ms.openlocfilehash: 2fe6f1bc2ee2884b5e9ab6251d63a30d2972ef2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e17b119bd29cb59080c05b3b1c8bc6547a2694c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345922"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864570"
 ---
 # <a name="create-windowsphone81storeapp"></a>Создание windowsPhone81StoreApp
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта windowsPhone81StoreApp.
 
 В следующей таблице показаны свойства, которые необходимы для создания windowsPhone81StoreApp.

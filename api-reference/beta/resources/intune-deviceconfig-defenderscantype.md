@@ -2,12 +2,13 @@
 title: Тип перечисления defenderScanType
 description: Возможные значения для системы проверки типа.
 author: tfitzmac
-ms.openlocfilehash: c209ac69f56fb48282e9febd3c1be8e80d3ba9f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e22cfbe6b175360978b3c1e51e4c062aacb01f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864577"
 ---
 # <a name="defenderscantype-enum-type"></a>Тип перечисления defenderScanType
 

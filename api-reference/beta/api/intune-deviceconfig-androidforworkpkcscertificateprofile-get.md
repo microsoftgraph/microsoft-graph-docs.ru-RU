@@ -2,12 +2,13 @@
 title: Получение androidForWorkPkcsCertificateProfile
 description: Чтение свойства и связи объекта androidForWorkPkcsCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 8f81b1843121909e8faf86e23789622739fd6404
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1e73729bdcf0487c845d0e109a640fe606810448
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854840"
 ---
 # <a name="get-androidforworkpkcscertificateprofile"></a>Получение androidForWorkPkcsCertificateProfile
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

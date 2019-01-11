@@ -1,12 +1,13 @@
 ---
 title: Список governanceRoleAssignmentRequests
 description: 'Получите коллекцию governanceRoleAssignmentRequests. '
-ms.openlocfilehash: 89cb6130b586a44723ec636cbdbe311e0bf8d510
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 24391cf851ddb7de698a0798a85bf6e7a8aa9770
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191160"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878995"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>Список governanceRoleAssignmentRequests
 
@@ -17,7 +18,7 @@ ms.locfileid: "27191160"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -54,10 +55,10 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -71,7 +72,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

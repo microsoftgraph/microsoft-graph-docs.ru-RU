@@ -2,12 +2,13 @@
 title: Тип ресурса deviceConfigurationDeviceStateSummary
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 97fee3d615ef710ebc07ae6d0090695b533f8752
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c8dce438885c85a294b9737ebcf99f4957a2929
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878276"
 ---
 # <a name="deviceconfigurationdevicestatesummary-resource-type"></a>Тип ресурса deviceConfigurationDeviceStateSummary
 

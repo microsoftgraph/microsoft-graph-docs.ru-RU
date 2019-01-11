@@ -2,12 +2,13 @@
 title: Тип ресурса advancedThreatProtectionOnboardingDeviceSettingState
 description: Состояние анализа адаптация новых сотрудников для данного устройства.
 author: tfitzmac
-ms.openlocfilehash: eecdcc1cbaf9c783da6dcf902281aa6394a842a2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a83581faa921fc4216cd81f1fbabb026210db34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863849"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>Тип ресурса advancedThreatProtectionOnboardingDeviceSettingState
 

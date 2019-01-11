@@ -2,12 +2,13 @@
 title: Тип перечисления wiFiProxySetting
 description: Параметры прокси-сервера Wi-Fi.
 author: tfitzmac
-ms.openlocfilehash: 27355dbd26fd889c334843d831ef3f00c38c6591
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cbd4ff0eefb8ada0d71b78c51836638fdfccd59f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855358"
 ---
 # <a name="wifiproxysetting-enum-type"></a>Тип перечисления wiFiProxySetting
 
@@ -19,7 +20,7 @@ ms.locfileid: "27332342"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Не прокси-сервер.|
+|Нет|0|Не прокси-сервер.|
 |Вручную|1|Параметры прокси-сервера вручную с помощью адрес и порт.|
 |Автоматически|2|Параметры прокси с помощью URL-адреса.|
 

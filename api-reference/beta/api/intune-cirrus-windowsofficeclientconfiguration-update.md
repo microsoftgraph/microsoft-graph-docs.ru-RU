@@ -2,12 +2,13 @@
 title: Обновление windowsOfficeClientConfiguration
 description: Исправление полезных определенной политики не связанные с безопасностью.
 author: tfitzmac
-ms.openlocfilehash: 728fe7b6ffdb4b964488317551fdbaef139d2803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e13228c6fc467fa49b740c02b4b7068efb1ec42e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863877"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>Обновление windowsOfficeClientConfiguration
 
@@ -37,11 +38,11 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md).

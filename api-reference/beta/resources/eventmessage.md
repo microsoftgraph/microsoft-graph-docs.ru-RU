@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса eventMessage
 description: 'Сообщение, которое представляет собой приглашение на собрание, уведомление об отмене или ответ (принятие, предварительное принятие или отклонение). '
-ms.openlocfilehash: ab63a2d216b5ff12e88e887cb054ca3cb562620e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2a6b1768a97d07ed534699f6bbef7f4f1337a2b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872683"
 ---
 # <a name="eventmessage-resource-type"></a>Тип ресурса eventMessage
 
@@ -95,7 +96,7 @@ ms.locfileid: "27076539"
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|String|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
-|conversationIndex|Двоичный|Индекс беседы, к которому принадлежит сообщение электронной почты.|
+|conversationIndex|Binary|Индекс беседы, к которому принадлежит сообщение электронной почты.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|Время окончания собрания запрошенного.|
 |flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
@@ -105,7 +106,7 @@ ms.locfileid: "27076539"
 |importance|String| Важность сообщения: `low`, `normal`, `high`.|
 |inferenceClassification|String| Возможные значения: `focused`, `other`.|
 |internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, установленных по [RFC 5322](https://www.ietf.org/rfc/rfc5322.txt), которые содержат информацию о маршруте прохождения сообщения. Только для чтения.|
-|internetMessageId |String |Идентификатор сообщения в формате, указанном [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
+|internetMessageId |Строка |Идентификатор сообщения в формате, указанном [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
 |isAllDay |Boolean|Указывает, является ли событие длится весь день. Изменяет значения этого свойства требует настройки свойств **startDateTime** и **endDateTime** , а также события.|
 |isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Boolean|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
@@ -124,9 +125,9 @@ ms.locfileid: "27076539"
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Время начала запрошенные собрания.|
 |subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
-|type|String|Тип запрошенного собрания: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
+|type|Строка|Тип запрошенного собрания: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая является уникальной для текущего сообщения.|
-|UnsubscribeData|String|Синтаксический анализ вводимых из заголовка отписаться списка.  Это данных для команды почты в заголовке отписаться списка, если свойство UnsubscribeEnabled имеет значение true.|
+|UnsubscribeData|Строка|Синтаксический анализ вводимых из заголовка отписаться списка.  Это данных для команды почты в заголовке отписаться списка, если свойство UnsubscribeEnabled имеет значение true.|
 |UnsubscribeEnabled|Логический|Указывает, включена ли сообщение для отказа от подписки.  Его valueTrue Если отписаться списка заголовок соответствует rfc 2369.|
 |webLink|String|URL-адрес для открытия сообщения в Outlook Web App.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook Web App.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 

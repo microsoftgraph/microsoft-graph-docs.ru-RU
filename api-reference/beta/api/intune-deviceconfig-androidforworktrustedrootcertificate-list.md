@@ -2,12 +2,13 @@
 title: Список androidForWorkTrustedRootCertificates
 description: Свойства списка и связей объектов androidForWorkTrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 03575c91b9b86bac77363537a6987b7221ccc13e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b6e5a20f91930ca1a57e32631f0867e2e4713851
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878283"
 ---
 # <a name="list-androidforworktrustedrootcertificates"></a>Список androidForWorkTrustedRootCertificates
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

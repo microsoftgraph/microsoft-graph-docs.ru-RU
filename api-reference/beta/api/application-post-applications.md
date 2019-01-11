@@ -2,12 +2,13 @@
 title: Создание приложения
 description: Используйте этот интерфейс API для создания нового приложения.
 author: lleonard-msft
-ms.openlocfilehash: 9530c94598eeb2413af67782b50bbf70f415e2a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9a4ca06bfd19dbe6319bb276cd5c33fc13f6d81d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855008"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -36,7 +37,7 @@ POST /applications
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Обновление managedDeviceCertificateState
 description: Обновление свойства объекта managedDeviceCertificateState.
 author: tfitzmac
-ms.openlocfilehash: 14c73bf219d8a568f8df0c4c55e3a1e3d0516abd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73f3424c416b36695dfae18dc4db6dbf085db685
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350171"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878178"
 ---
 # <a name="update-manageddevicecertificatestate"></a>Обновление managedDeviceCertificateState
 
@@ -53,11 +54,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md).
@@ -73,20 +74,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имени субъекта. Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Формат альтернативное имя субъекта. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отмените состояние. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|String.|Отображаемое имя сертификата профилей|
+|certificateProfileDisplayName|Строка|Отображаемое имя сертификата профилей|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userDisplayName|String|Отображаемое имя пользователя|
 |certificateExpirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Последнее изменение состояния выдачи сертификатов|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Последнее изменение состояния выдачи сертификатов|
-|certificateIssuer|String.|Издателя|
-|certificateThumbprint|String.|Отпечаток|
-|серийный номер сертификата|String.|Серийный номер|
+|certificateIssuer|Строка|Издателя|
+|certificateThumbprint|Строка|Отпечаток|
+|серийный номер сертификата|Строка|Серийный номер|
 |certificateKeyLength|Int32|Длина ключа|
-|certificateEnhancedKeyUsage|String.|Расширенного использования ключа|
+|certificateEnhancedKeyUsage|Строка|Расширенного использования ключа|
 |certificateValidityPeriod|Int32|Срок действия|
-|certificateSubjectNameFormatString|String.|Строку формата имени субъекта для форматов имя настраиваемой темы|
-|certificateSubjectAlternativeNameFormatString|String.|Строку формата альтернативное имя субъекта для настраиваемых форматов|
+|certificateSubjectNameFormatString|Строка|Строку формата имени субъекта для форматов имя настраиваемой темы|
+|certificateSubjectAlternativeNameFormatString|Строка|Строку формата альтернативное имя субъекта для настраиваемых форматов|
 |certificateIssuanceDateTime|DateTimeOffset|Дата выдачи|
 |certificateErrorCode|Int32|Код ошибки|
 

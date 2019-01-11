@@ -1,12 +1,13 @@
 ---
 title: Удаление educationClass
 description: Удаление класса. Так как класс также является универсальной группой, удаление класса приводит к удалению группы.
-ms.openlocfilehash: e63903f1a6db2c223071f04db26f31e3cfbc2168
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f042d7290b99f54efc6809162647ecbb6395f006
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864640"
 ---
 # <a name="delete-educationclass"></a>Удаление educationClass
 
@@ -34,7 +35,7 @@ DELETE /education/classes/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

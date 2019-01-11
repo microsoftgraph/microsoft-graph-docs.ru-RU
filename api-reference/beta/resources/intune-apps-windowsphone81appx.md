@@ -2,12 +2,13 @@
 title: Тип ресурса windowsPhone81AppX
 description: Содержит свойства и наследуемые свойства для приложений Windows Phone 8.1 AppX бизнес-систем.
 author: tfitzmac
-ms.openlocfilehash: 10882e8620cc22ab2397147b3fd01cacd451281e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 535eb9e82241870418826711b76421c6c6b2d0ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878213"
 ---
 # <a name="windowsphone81appx-resource-type"></a>Тип ресурса windowsPhone81AppX
 
@@ -54,8 +55,8 @@ ms.locfileid: "27307660"
 |identityPublisherHash|String|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|phoneProductIdentifier|String.|Идентификатор продукта телефона.|
-|phonePublisherId|String.|Publisher с идентификатором телефона.|
+|phoneProductIdentifier|Строка|Идентификатор продукта телефона.|
+|phonePublisherId|Строка|Publisher с идентификатором телефона.|
 |identityVersion|String|Версия удостоверения.|
 
 ## <a name="relationships"></a>Связи

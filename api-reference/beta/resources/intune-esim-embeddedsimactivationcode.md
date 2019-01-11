@@ -2,12 +2,13 @@
 title: Тип ресурса embeddedSIMActivationCode
 description: Встроенный код активации диспетчера установки как предоставленный оператором мобильной.
 author: tfitzmac
-ms.openlocfilehash: 4e768a4047b8ddc785b545d3b850128a8e44f256
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41976b92cfe6b6f695631dbd6c0d928c6ae99271
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878066"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>Тип ресурса embeddedSIMActivationCode
 
@@ -19,11 +20,11 @@ ms.locfileid: "27311790"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|integratedCircuitCardIdentifier|String.|Идентификатор карточки интегральной (ICCID) для данного встроенного кода активации диспетчера установки, предоставленный оператор мобильной связи.
+|integratedCircuitCardIdentifier|Строка|Идентификатор карточки интегральной (ICCID) для данного встроенного кода активации диспетчера установки, предоставленный оператор мобильной связи.
 Входные данные должно соответствовать следующим регулярным выражением: "^\[0-9\]{19}\[0-9\]?$".|
-|matchingIdentifier|String.|MatchingIdentifier (MatchingID), указанный в GSMA связь SGP.22 Отклика технические спецификации раздел 4.1.
+|matchingIdentifier|Строка|MatchingIdentifier (MatchingID), указанный в GSMA связь SGP.22 Отклика технические спецификации раздел 4.1.
 Входные данные должно соответствовать следующим регулярным выражением: "^\[a-zA-Z0-9\-\]* $".|
-|smdpPlusServerAddress|String.|Полное доменное имя SM-DP + server технические спецификации Отклика SPG связи GSM.22.
+|smdpPlusServerAddress|Строка|Полное доменное имя SM-DP + server технические спецификации Отклика SPG связи GSM.22.
 Входные данные должно соответствовать следующим регулярным выражением: "^ (\[a-zA-Z0-9\]+(-\[a-zA-Z0-9\]+) *\.) +\[a-zA-Z\]{2,}$".|
 
 ## <a name="relationships"></a>Связи

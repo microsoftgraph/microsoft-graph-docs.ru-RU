@@ -2,12 +2,13 @@
 title: Тип ресурса androidWorkProfileCompliancePolicy
 description: Этот класс содержит параметры соответствия требованиям для Android рабочих профилей.
 author: tfitzmac
-ms.openlocfilehash: 09276ead1588fcbb623d927b859d9f9b012bf88f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f3180c9f8a12aad8c17717265f37b81c44b0288
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850605"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>Тип ресурса androidWorkProfileCompliancePolicy
 

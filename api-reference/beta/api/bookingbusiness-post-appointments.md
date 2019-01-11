@@ -1,12 +1,13 @@
 ---
 title: Создание bookingAppointment
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 436e0121a36fbc0dd0bf0d7cd3302d7999776d9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: df8d1ab3d4eeb93de37e51085935b121609dd023
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855078"
 ---
 # <a name="create-bookingappointment"></a>Создание bookingAppointment
 
@@ -33,7 +34,7 @@ POST /bookingBusinesses/{id}/appointments
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [bookingAppointment](../resources/bookingappointment.md) .
 
 

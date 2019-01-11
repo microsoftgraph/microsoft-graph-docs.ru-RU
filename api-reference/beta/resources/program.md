@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса программы
 description: 'В Azure AD access дается обзор компонента, программа является контейнером, удерживая программы элементов управления. Клиент может иметь одну или несколько программ.  Все элементы управления, привязывающего проверки доступа к программе, чтобы упростить поиск связанных с ними доступа дается обзор.  '
-ms.openlocfilehash: cb08d0edb7487be95e159ed5e2a2546a92e7bce7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a342fd159bba3f7e31c55ffab9a64a72353bc7ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863905"
 ---
 # <a name="program-resource-type"></a>Тип ресурса программы
 
@@ -22,7 +23,7 @@ ms.locfileid: "27081999"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Создание программы](../api/program-create.md) |   [Программа](program.md)   |   Создание программы.|
-|[Удаление программы](../api/program-delete.md) |   Отсутствуют.   |   Удаление программы.|
+|[Удаление программы](../api/program-delete.md) |   Нет.   |   Удаление программы.|
 |[Список программ](../api/program-list.md) |  [программа](program.md) семейства сайтов|   Получите коллекцию всех программ.|
 |[Список programControls программы](../api/program-listcontrols.md) |      [programControl](programcontrol.md) коллекции| Получите коллекцию элементов управления из программы.|
 |[Обновите программу](../api/program-update.md) |   [Программа](program.md)|  Обновите программу.|
@@ -37,14 +38,14 @@ ms.locfileid: "27081999"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `id`                        |`String`                              |  Функция назначенный идентификатор программы.                    |
 | `displayName`               |`String`                              |  Имя программы.  Требуется при создании.                  |
 | `description`               |`String`                              |  Описание программы.           |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `controls`                  |[programControl](programcontrol.md) | Элементы управления, связанные с программой. |
 

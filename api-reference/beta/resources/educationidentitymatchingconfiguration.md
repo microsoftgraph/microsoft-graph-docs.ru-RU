@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationIdentityMatchingConfiguration
 description: Задает параметры для сопоставления школа данных профиля удостоверения. Эти удостоверения включают студентов и преподавателей. На основе этих параметров, пользователи будут обновлены в каталоге.
-ms.openlocfilehash: b189735340c121a56c48ae21518989cf8e1634f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 807029f45875bdcf7691a112d515831f2f2283dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877940"
 ---
 ## <a name="educationidentitymatchingconfiguration-resource-type"></a>Тип ресурса educationIdentityMatchingConfiguration
 
@@ -18,7 +19,7 @@ ms.locfileid: "27081952"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:-|:-|:-|
 | **matchingOptions** | [educationIdentityMatchingOptions](educationidentitymatchingoptions.md) коллекции | Сопоставление учетной записи пользователя и параметры, используемые для уникальной идентификации пользователя для обновления. |
 

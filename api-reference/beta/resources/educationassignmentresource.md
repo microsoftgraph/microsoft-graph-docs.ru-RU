@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationAssignmentResource
 description: Объект оболочки, в которой хранятся ресурсы, связанные с назначением. Добавляет свойство **distributeForStudentWork** и указывает, что ресурс будет программы-оболочки
-ms.openlocfilehash: 6907af5e4408248487b118c390bb2ec209700124
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 55d978ceb2a3df613ded09682bbdc42009f4e204
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868840"
 ---
 # <a name="educationassignmentresource-resource-type"></a>Тип ресурса educationAssignmentResource
 
@@ -20,14 +21,14 @@ ms.locfileid: "27078892"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Чтение свойства и связи объекта **educationAssignmentResource** .|
-|[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |Обновление объекта **educationAssignmentResource** . |
+|[обновление](../api/educationassignmentresource-update.md). | [educationAssignmentResource](educationassignmentresource.md) |Обновление объекта **educationAssignmentResource** . |
 |[Delete](../api/educationassignmentresource-delete.md) | Нет |Удаление объекта **educationAssignmentResource** . |
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|Логический|Указывает, будет ли этот ресурс необходимо копировать в каждой учебы отправки для изменения и отправки.|
-|id|String| Идентификатор ресурса. Только для чтения.|
+|id|Строка| Идентификатор ресурса. Только для чтения.|
 |resource|[educationResource](educationresource.md)|Объект ресурса, связанный с этим назначением.|
 
 ## <a name="relationships"></a>Связи

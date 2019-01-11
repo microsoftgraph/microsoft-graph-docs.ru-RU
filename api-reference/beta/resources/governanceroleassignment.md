@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса governanceRoleAssignment
 description: Представляет назначения пользователя или группы на роль.
-ms.openlocfilehash: 3b0520f4641c961358b2db990914fbdf8de254f8
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: d873b122f319ca82882727f065818b33f7f9d44d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882693"
 ---
 # <a name="governanceroleassignment-resource-type"></a>Тип ресурса governanceRoleAssignment
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.

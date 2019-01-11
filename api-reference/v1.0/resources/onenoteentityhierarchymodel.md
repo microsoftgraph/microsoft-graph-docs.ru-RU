@@ -2,12 +2,13 @@
 title: onenoteEntityHierarchyModel ресурсов
 description: Это базовый тип для сущностей OneNote.
 author: Jewan-microsoft
-ms.openlocfilehash: a142e9206aefbb118f21b2f1a85d00cbc4a3a315
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9dbab25bb3afa69c434545fceaa6cbc869fb7dcc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362022"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858879"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>onenoteEntityHierarchyModel ресурсов
 

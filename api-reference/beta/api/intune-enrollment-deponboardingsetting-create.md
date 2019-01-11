@@ -2,12 +2,13 @@
 title: Создание depOnboardingSetting
 description: Создание нового объекта depOnboardingSetting.
 author: tfitzmac
-ms.openlocfilehash: 11f2e5217e4040a7d4345c9271b459e608075498
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89e46c715b5f888ae3c9f1fb02a0566da8485944
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330662"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854903"
 ---
 # <a name="create-deponboardingsetting"></a>Создание depOnboardingSetting
 
@@ -37,11 +38,11 @@ POST /deviceManagement/depOnboardingSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта depOnboardingSetting.
 
 В следующей таблице показаны свойства, которые необходимы для создания depOnboardingSetting.
@@ -54,13 +55,13 @@ POST /deviceManagement/depOnboardingSettings
 |lastModifiedDateTime|DateTimeOffset|Когда служба была onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|При последней syned службы с помощью Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Когда Intune запрашивает последней синхронизации.|
-|shareTokenWithSchoolDataSyncService|Boolean.|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
+|shareTokenWithSchoolDataSyncService|Логический|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
 |lastSyncErrorCode|Int32|Код ошибки Apple во время последней синхронизации dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена Dep. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|String.|Понятное имя для маркера Dep|
+|tokenName|Строка|Понятное имя для маркера Dep|
 |syncedDeviceCount|Int32|Получает количество синхронизированных устройства|
-|defaultProfileDisplayName|String.|Получает количество синхронизированных устройства|
-|dataSharingConsentGranted|Boolean.|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
+|defaultProfileDisplayName|Строка|Получает количество синхронизированных устройства|
+|dataSharingConsentGranted|Логический|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
 
 
 

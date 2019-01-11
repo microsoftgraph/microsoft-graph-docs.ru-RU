@@ -2,12 +2,13 @@
 title: Создание объекта ChartPoints
 description: С помощью этого API можно создать объект ChartPoints.
 author: lumine2008
-ms.openlocfilehash: 19cc1e45cb11205b5247638aebc147f91c056d0b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0aac79353a53032e4e16b05a81b4c05d2a2835fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877807"
 ---
 # <a name="create-chartpoints"></a>Создание объекта ChartPoints
 

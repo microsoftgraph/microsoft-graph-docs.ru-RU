@@ -2,12 +2,13 @@
 title: Тип ресурса teamMessagingSettings
 description: Параметры для настройки системы обмена сообщениями и упоминания рабочих групп.
 author: nkramer
-ms.openlocfilehash: 387c2e3ccedc6f11f17d4868b1b0d3eaf67624fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df80fbb828a400e736b2e8c3b73f949fe6bfd1ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304552"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878381"
 ---
 # <a name="teammessagingsettings-resource-type"></a>Тип ресурса teamMessagingSettings
 
@@ -18,11 +19,11 @@ ms.locfileid: "27304552"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Boolean.|Если параметр имеет значение true, пользователи могут изменять свои сообщения;|
-|allowUserDeleteMessages|Boolean.|Если параметр имеет значение true, пользователи могут удалять свои сообщения.|
-|allowOwnerDeleteMessages|Boolean.|Если параметр имеет значение true, владельцы могут удалять все сообщения.|
-|allowTeamMentions|Boolean.|Если задано значение true, допускаются упоминания @team.|
-|allowChannelMentions|Boolean.|Если задано значение true, допускаются упоминания @channel.|
+|allowUserEditMessages|Логический|Если параметр имеет значение true, пользователи могут изменять свои сообщения;|
+|allowUserDeleteMessages|Логический|Если параметр имеет значение true, пользователи могут удалять свои сообщения.|
+|allowOwnerDeleteMessages|Логический|Если параметр имеет значение true, владельцы могут удалять все сообщения.|
+|allowTeamMentions|Логический|Если задано значение true, допускаются упоминания @team.|
+|allowChannelMentions|Логический|Если задано значение true, допускаются упоминания @channel.|
 
 ## <a name="json-representation"></a>Представление JSON
 

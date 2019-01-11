@@ -2,12 +2,13 @@
 title: Получение члена
 description: Используйте этот интерфейс API для получения определенного члена (пользователя или группы) административное подразделение.
 author: lleonard-msft
-ms.openlocfilehash: 9e0e8bedc349511c59e304cacfc713d54a0f8335
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33bbb0a34ba44102c34573059da2efa8824286ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854868"
 ---
 # <a name="get-a-member"></a>Получение члена
 
@@ -35,7 +36,7 @@ GET /administrativeUnits/{id}/members/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

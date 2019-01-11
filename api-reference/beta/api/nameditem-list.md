@@ -1,12 +1,13 @@
 ---
 title: Список NamedItemCollection
 description: Получение списка объектов nameditem.
-ms.openlocfilehash: dca9252110e1a77a4c65e6e342b8456fb3b669a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ba8fcb684431790a6b31c12beaebd8669e32a81b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082848"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886403"
 ---
 # <a name="list-nameditemcollection"></a>Список NamedItemCollection
 
@@ -36,7 +37,7 @@ GET /workbook/names
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -53,8 +54,7 @@ GET /workbook/names
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

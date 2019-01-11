@@ -2,12 +2,13 @@
 title: Удаление androidDeviceOwnerEnrollmentProfile
 description: Удаляет androidDeviceOwnerEnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 7ccd34f7d4afc1254c1665e881c28fa3ef04119e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11dd6edfeb052cd0cc8901c01b271be7c3359284
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342927"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866719"
 ---
 # <a name="delete-androiddeviceownerenrollmentprofile"></a>Удаление androidDeviceOwnerEnrollmentProfile
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwne
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

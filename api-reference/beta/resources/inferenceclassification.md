@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса inferenceClassification
 description: 'Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях. '
-ms.openlocfilehash: c1536ff2b88b1830c2f2a2bc5a7bed519782df4e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 82d16e24e21231b8ec168eda793257ef780c2219
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877793"
 ---
 # <a name="inferenceclassification-resource-type"></a>Тип ресурса inferenceClassification
 

@@ -2,12 +2,13 @@
 title: Get webApp
 description: Чтение свойств и связей объекта webApp.
 author: tfitzmac
-ms.openlocfilehash: faf9c956d26fb9732c75da94f36b616fd2c2b112
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11a016c2a956618f4a6d52f7388c5e83fa16914d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322290"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877695"
 ---
 # <a name="get-webapp"></a>Get webApp
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
