@@ -1,24 +1,25 @@
 ---
 title: Тип ресурса plannerExternalReferences
 description: Ресурс **plannerExternalReferences** представляет коллекцию справочных материалов для задачи. Это открытый тип. Он является частью объекта сведений о задаче. Значение в паре "свойство-значение" представляет собой объект externalReference.
-ms.openlocfilehash: 6c1141ebdfd95fef5706c36ecf38d6c1ca0b8783
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aedfd0321843c4a906defe22f184bac7d293a6e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862078"
 ---
-# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="150d0-106">Тип ресурса plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="150d0-106">plannerExternalReferences resource type</span></span>
+# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="fb7d5-106">Тип ресурса plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="fb7d5-106">plannerExternalReferences resource type</span></span>
 
-<span data-ttu-id="150d0-p102">Ресурс **plannerExternalReferences** представляет коллекцию справочных материалов для задачи. Это открытый тип. Он является частью объекта [сведений о задаче](plannertaskdetails.md). Значение в паре "свойство-значение" представляет собой объект [externalReference](plannerexternalreference.md).</span><span class="sxs-lookup"><span data-stu-id="150d0-p102">The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
+<span data-ttu-id="fb7d5-p102">Ресурс **plannerExternalReferences** представляет коллекцию справочных материалов для задачи. Это открытый тип. Он является частью объекта [сведений о задаче](plannertaskdetails.md). Значение в паре "свойство-значение" представляет собой объект [externalReference](plannerexternalreference.md).</span><span class="sxs-lookup"><span data-stu-id="fb7d5-p102">The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="150d0-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="150d0-111">Properties</span></span>
-<span data-ttu-id="150d0-p103">Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить **допустимые URL-адреса** на базе протоколов **HTTP/HTTPS** в качестве свойств с объектами [externalReference](plannerexternalreference.md) в качестве значений. Согласно OData имена свойств в открытых типах не могут содержать символы `.`, `:` и `%`, поэтому их нужно зашифровать. Ниже показан пример. Чтобы удалить определенные справочные материалы, задайте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="150d0-p103">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="fb7d5-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="fb7d5-111">Properties</span></span>
+<span data-ttu-id="fb7d5-p103">Клиент может определять свойства открытого типа. В этом случае клиент должен предоставить **допустимые URL-адреса** на базе протоколов **HTTP/HTTPS** в качестве свойств с объектами [externalReference](plannerexternalreference.md) в качестве значений. Согласно OData имена свойств в открытых типах не могут содержать символы `.`, `:` и `%`, поэтому их нужно зашифровать. Ниже показан пример. Чтобы удалить определенные справочные материалы, задайте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="fb7d5-p103">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="150d0-117">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="150d0-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fb7d5-117">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="fb7d5-117">JSON representation</span></span>
 
-<span data-ttu-id="150d0-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="150d0-118">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="fb7d5-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fb7d5-118">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -41,7 +42,7 @@ ms.locfileid: "27025754"
 }
 ```
 
-<span data-ttu-id="150d0-119">Пример:</span><span class="sxs-lookup"><span data-stu-id="150d0-119">// Example</span></span>
+<span data-ttu-id="fb7d5-119">Пример:</span><span class="sxs-lookup"><span data-stu-id="fb7d5-119">// Example</span></span>
 
 ```json
 {

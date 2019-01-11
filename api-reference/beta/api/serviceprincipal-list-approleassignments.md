@@ -1,50 +1,51 @@
 ---
 title: 'servicePrincipal: список appRoleAssignments'
 description: Получение списка объектов approleassignment.
-ms.openlocfilehash: 55a2a90981236afadabafdd8dc24e21aa874dbbe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 072060fe1cb7c7286632216c619bb064004baf7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864157"
 ---
-# <a name="serviceprincipal-list-approleassignments"></a><span data-ttu-id="2426a-103">servicePrincipal: список appRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="2426a-103">servicePrincipal: List appRoleAssignments</span></span>
+# <a name="serviceprincipal-list-approleassignments"></a><span data-ttu-id="a1f7f-103">servicePrincipal: список appRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="a1f7f-103">servicePrincipal: List appRoleAssignments</span></span>
 
-> <span data-ttu-id="2426a-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="2426a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2426a-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2426a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a1f7f-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a1f7f-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="2426a-106">Получение списка объектов approleassignment.</span><span class="sxs-lookup"><span data-stu-id="2426a-106">Retrieve a list of approleassignment objects.</span></span>
+<span data-ttu-id="a1f7f-106">Получение списка объектов approleassignment.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-106">Retrieve a list of approleassignment objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2426a-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2426a-107">Permissions</span></span>
-<span data-ttu-id="2426a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2426a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a1f7f-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a1f7f-107">Permissions</span></span>
+<span data-ttu-id="a1f7f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a1f7f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2426a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2426a-110">Permission type</span></span>      | <span data-ttu-id="2426a-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2426a-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a1f7f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a1f7f-110">Permission type</span></span>      | <span data-ttu-id="a1f7f-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a1f7f-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2426a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2426a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2426a-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2426a-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="2426a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2426a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2426a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2426a-115">Not supported.</span></span>    |
-|<span data-ttu-id="2426a-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2426a-116">Application</span></span> | <span data-ttu-id="2426a-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2426a-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="a1f7f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a1f7f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a1f7f-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a1f7f-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a1f7f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a1f7f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a1f7f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-115">Not supported.</span></span>    |
+|<span data-ttu-id="a1f7f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a1f7f-116">Application</span></span> | <span data-ttu-id="a1f7f-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1f7f-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2426a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2426a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a1f7f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a1f7f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/appRoleAssignments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="2426a-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2426a-119">Optional query parameters</span></span>
-<span data-ttu-id="2426a-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="2426a-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a1f7f-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="a1f7f-119">Optional query parameters</span></span>
+<span data-ttu-id="a1f7f-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2426a-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2426a-121">Request headers</span></span>
-| <span data-ttu-id="2426a-122">Имя</span><span class="sxs-lookup"><span data-stu-id="2426a-122">Name</span></span>       | <span data-ttu-id="2426a-123">Тип</span><span class="sxs-lookup"><span data-stu-id="2426a-123">Type</span></span> | <span data-ttu-id="2426a-124">Описание</span><span class="sxs-lookup"><span data-stu-id="2426a-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a1f7f-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a1f7f-121">Request headers</span></span>
+| <span data-ttu-id="a1f7f-122">Имя</span><span class="sxs-lookup"><span data-stu-id="a1f7f-122">Name</span></span>       | <span data-ttu-id="a1f7f-123">Тип</span><span class="sxs-lookup"><span data-stu-id="a1f7f-123">Type</span></span> | <span data-ttu-id="a1f7f-124">Описание</span><span class="sxs-lookup"><span data-stu-id="a1f7f-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="2426a-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="2426a-125">Authorization</span></span>  | <span data-ttu-id="2426a-126">string</span><span class="sxs-lookup"><span data-stu-id="2426a-126">string</span></span>  | <span data-ttu-id="2426a-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2426a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a1f7f-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="a1f7f-125">Authorization</span></span>  | <span data-ttu-id="a1f7f-126">string</span><span class="sxs-lookup"><span data-stu-id="a1f7f-126">string</span></span>  | <span data-ttu-id="a1f7f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2426a-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2426a-129">Request body</span></span>
-<span data-ttu-id="2426a-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2426a-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a1f7f-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a1f7f-129">Request body</span></span>
+<span data-ttu-id="a1f7f-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2426a-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="2426a-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a1f7f-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="a1f7f-131">Response</span></span>
 
-<span data-ttu-id="2426a-132">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [appRoleAssignment](../resources/approleassignment.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="2426a-132">If successful, this method returns a `200 OK` response code and collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="2426a-133">Пример</span><span class="sxs-lookup"><span data-stu-id="2426a-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2426a-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="2426a-134">Request</span></span>
-<span data-ttu-id="2426a-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2426a-135">Here is an example of the request.</span></span>
+<span data-ttu-id="a1f7f-132">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [appRoleAssignment](../resources/approleassignment.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-132">If successful, this method returns a `200 OK` response code and collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a1f7f-133">Пример</span><span class="sxs-lookup"><span data-stu-id="a1f7f-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a1f7f-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="a1f7f-134">Request</span></span>
+<span data-ttu-id="a1f7f-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_approleassignments"
@@ -52,9 +53,8 @@ GET /servicePrincipals/{id}/appRoleAssignments
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
 ```
-##### <a name="response"></a><span data-ttu-id="2426a-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="2426a-136">Response</span></span>
-<span data-ttu-id="2426a-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="2426a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a1f7f-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="a1f7f-136">Response</span></span>
+<span data-ttu-id="a1f7f-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="a1f7f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

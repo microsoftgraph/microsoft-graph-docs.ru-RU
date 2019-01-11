@@ -2,26 +2,27 @@
 title: Удаление объекта acceptedSender
 description: 'Удаление пользователя или группы из списка acceptedSenders. '
 author: dkershaw10
-ms.openlocfilehash: 7f175be4e7f3acc470170d863a43c36db42299b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5eaa89c895c0b3e46f63754f7943f22e52cb1566
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329773"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867615"
 ---
-# <a name="remove-acceptedsender"></a><span data-ttu-id="43fc6-103">Удаление объекта acceptedSender</span><span class="sxs-lookup"><span data-stu-id="43fc6-103">Remove acceptedSender</span></span>
-<span data-ttu-id="43fc6-104">Удаление пользователя или группы из списка acceptedSenders.</span><span class="sxs-lookup"><span data-stu-id="43fc6-104">Remove a user or group from the acceptedSenders list.</span></span> 
+# <a name="remove-acceptedsender"></a><span data-ttu-id="9dd60-103">Удаление объекта acceptedSender</span><span class="sxs-lookup"><span data-stu-id="9dd60-103">Remove acceptedSender</span></span>
+<span data-ttu-id="9dd60-104">Удаление пользователя или группы из списка acceptedSenders.</span><span class="sxs-lookup"><span data-stu-id="9dd60-104">Remove a user or group from the acceptedSenders list.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="43fc6-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="43fc6-105">Permissions</span></span>
-<span data-ttu-id="43fc6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43fc6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9dd60-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9dd60-105">Permissions</span></span>
+<span data-ttu-id="9dd60-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9dd60-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="43fc6-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43fc6-108">Permission type</span></span>                        | <span data-ttu-id="43fc6-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="43fc6-109">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="9dd60-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9dd60-108">Permission type</span></span>                        | <span data-ttu-id="9dd60-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9dd60-109">Permissions (from least to most privileged)</span></span>  |
 |:---------------------------------------|:-------------------------------------------- |
-| <span data-ttu-id="43fc6-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43fc6-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="43fc6-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43fc6-111">Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="43fc6-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43fc6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43fc6-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43fc6-113">Not supported.</span></span> |
-| <span data-ttu-id="43fc6-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="43fc6-114">Application</span></span>                            | <span data-ttu-id="43fc6-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43fc6-115">Not supported.</span></span> |
+| <span data-ttu-id="9dd60-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9dd60-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="9dd60-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9dd60-111">Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="9dd60-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9dd60-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9dd60-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9dd60-113">Not supported.</span></span> |
+| <span data-ttu-id="9dd60-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9dd60-114">Application</span></span>                            | <span data-ttu-id="9dd60-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9dd60-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="43fc6-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="43fc6-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9dd60-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9dd60-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -29,20 +30,20 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/us
 DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="43fc6-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="43fc6-117">Request headers</span></span>
-| <span data-ttu-id="43fc6-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="43fc6-118">Header</span></span>         | <span data-ttu-id="43fc6-119">Значение</span><span class="sxs-lookup"><span data-stu-id="43fc6-119">Value</span></span>                      |
+## <a name="request-headers"></a><span data-ttu-id="9dd60-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9dd60-117">Request headers</span></span>
+| <span data-ttu-id="9dd60-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9dd60-118">Header</span></span>         | <span data-ttu-id="9dd60-119">Значение</span><span class="sxs-lookup"><span data-stu-id="9dd60-119">Value</span></span>                      |
 |:---------------|:---------------------------|
-| <span data-ttu-id="43fc6-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="43fc6-120">Authorization</span></span>  | <span data-ttu-id="43fc6-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="43fc6-p102">Bearer {token}. Required.</span></span>  
+| <span data-ttu-id="9dd60-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9dd60-120">Authorization</span></span>  | <span data-ttu-id="9dd60-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9dd60-p102">Bearer {token}. Required.</span></span>  
 
-## <a name="request-body"></a><span data-ttu-id="43fc6-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="43fc6-123">Request body</span></span>
-<span data-ttu-id="43fc6-124">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="43fc6-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9dd60-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9dd60-123">Request body</span></span>
+<span data-ttu-id="9dd60-124">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9dd60-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="43fc6-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="43fc6-125">Response</span></span>
-<span data-ttu-id="43fc6-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="43fc6-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9dd60-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="9dd60-125">Response</span></span>
+<span data-ttu-id="9dd60-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="9dd60-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="43fc6-128">Пример</span><span class="sxs-lookup"><span data-stu-id="43fc6-128">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="43fc6-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="43fc6-129">Request</span></span>
-<span data-ttu-id="43fc6-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="43fc6-130">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9dd60-128">Пример</span><span class="sxs-lookup"><span data-stu-id="9dd60-128">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="9dd60-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="9dd60-129">Request</span></span>
+<span data-ttu-id="9dd60-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9dd60-130">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -52,8 +53,8 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="43fc6-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="43fc6-131">Response</span></span>
-<span data-ttu-id="43fc6-132">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="43fc6-132">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="9dd60-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="9dd60-131">Response</span></span>
+<span data-ttu-id="9dd60-132">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="9dd60-132">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

@@ -1,47 +1,48 @@
 ---
 title: Список impossibleTravelRiskEvents
 description: Получение списка объектов impossibletravelriskevent.
-ms.openlocfilehash: 39eb9ebc231b7da87dca2fa022b0702e1c1e6c16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 358aa31305a36a67b84850128af6f6a94e3e5e9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864633"
 ---
-# <a name="list-impossibletravelriskevents"></a><span data-ttu-id="6d021-103">Список impossibleTravelRiskEvents</span><span class="sxs-lookup"><span data-stu-id="6d021-103">List impossibleTravelRiskEvents</span></span>
+# <a name="list-impossibletravelriskevents"></a><span data-ttu-id="67d6d-103">Список impossibleTravelRiskEvents</span><span class="sxs-lookup"><span data-stu-id="67d6d-103">List impossibleTravelRiskEvents</span></span>
 
-> <span data-ttu-id="6d021-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6d021-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6d021-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6d021-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="67d6d-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="67d6d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="67d6d-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="67d6d-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="6d021-106">Получение списка объектов impossibletravelriskevent.</span><span class="sxs-lookup"><span data-stu-id="6d021-106">Retrieve a list of impossibletravelriskevent objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6d021-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6d021-107">Permissions</span></span>
-<span data-ttu-id="6d021-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6d021-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="67d6d-106">Получение списка объектов impossibletravelriskevent.</span><span class="sxs-lookup"><span data-stu-id="67d6d-106">Retrieve a list of impossibletravelriskevent objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="67d6d-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="67d6d-107">Permissions</span></span>
+<span data-ttu-id="67d6d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67d6d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6d021-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6d021-110">Permission type</span></span>      | <span data-ttu-id="6d021-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6d021-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="67d6d-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="67d6d-110">Permission type</span></span>      | <span data-ttu-id="67d6d-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="67d6d-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6d021-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6d021-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6d021-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="6d021-113">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="6d021-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6d021-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d021-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6d021-115">Not supported.</span></span>    |
-|<span data-ttu-id="6d021-116">Для приложения</span><span class="sxs-lookup"><span data-stu-id="6d021-116">Application</span></span> | <span data-ttu-id="6d021-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="6d021-117">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="67d6d-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="67d6d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="67d6d-113">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="67d6d-113">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="67d6d-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="67d6d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="67d6d-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="67d6d-115">Not supported.</span></span>    |
+|<span data-ttu-id="67d6d-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="67d6d-116">Application</span></span> | <span data-ttu-id="67d6d-117">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="67d6d-117">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6d021-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6d021-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="67d6d-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="67d6d-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /impossibleTravelRiskEvents
 ```
-## <a name="request-headers"></a><span data-ttu-id="6d021-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6d021-119">Request headers</span></span>
-| <span data-ttu-id="6d021-120">Имя</span><span class="sxs-lookup"><span data-stu-id="6d021-120">Name</span></span>      |<span data-ttu-id="6d021-121">Описание</span><span class="sxs-lookup"><span data-stu-id="6d021-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="67d6d-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="67d6d-119">Request headers</span></span>
+| <span data-ttu-id="67d6d-120">Имя</span><span class="sxs-lookup"><span data-stu-id="67d6d-120">Name</span></span>      |<span data-ttu-id="67d6d-121">Описание</span><span class="sxs-lookup"><span data-stu-id="67d6d-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="6d021-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6d021-122">Authorization</span></span>  | <span data-ttu-id="6d021-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6d021-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6d021-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6d021-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="6d021-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="6d021-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="67d6d-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="67d6d-122">Authorization</span></span>  | <span data-ttu-id="67d6d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="67d6d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="67d6d-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="67d6d-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="67d6d-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="67d6d-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6d021-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6d021-128">Request body</span></span>
-<span data-ttu-id="6d021-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6d021-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="67d6d-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="67d6d-128">Request body</span></span>
+<span data-ttu-id="67d6d-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="67d6d-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6d021-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="6d021-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="67d6d-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="67d6d-130">Response</span></span>
 
-<span data-ttu-id="6d021-131">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="6d021-131">If successful, this method returns a `200 OK` response code and collection of [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6d021-132">Пример</span><span class="sxs-lookup"><span data-stu-id="6d021-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6d021-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="6d021-133">Request</span></span>
-<span data-ttu-id="6d021-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6d021-134">Here is an example of the request.</span></span>
+<span data-ttu-id="67d6d-131">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="67d6d-131">If successful, this method returns a `200 OK` response code and collection of [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="67d6d-132">Пример</span><span class="sxs-lookup"><span data-stu-id="67d6d-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="67d6d-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="67d6d-133">Request</span></span>
+<span data-ttu-id="67d6d-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="67d6d-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_impossibletravelriskevents"
@@ -49,9 +50,8 @@ GET /impossibleTravelRiskEvents
 ```http
 GET https://graph.microsoft.com/v1.0/impossibleTravelRiskEvents
 ```
-##### <a name="response"></a><span data-ttu-id="6d021-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="6d021-135">Response</span></span>
-<span data-ttu-id="6d021-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="6d021-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="67d6d-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="67d6d-135">Response</span></span>
+<span data-ttu-id="67d6d-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="67d6d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,24 +1,25 @@
 ---
 title: Тип ресурса Json
 description: Представляет данные, возвращаемые в формате JSON.
-ms.openlocfilehash: b6288313aa94cfee5f788f3431f622efbf9abc8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5e41417fadfccdc5e0c0f08675496d50222d3ecb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867545"
 ---
-# <a name="json-resource-type"></a><span data-ttu-id="4b96f-103">Тип ресурса Json</span><span class="sxs-lookup"><span data-stu-id="4b96f-103">Json resource type</span></span>
+# <a name="json-resource-type"></a><span data-ttu-id="1f6ce-103">Тип ресурса Json</span><span class="sxs-lookup"><span data-stu-id="1f6ce-103">Json resource type</span></span>
 
-<span data-ttu-id="4b96f-104">Представляет данные, возвращаемые в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4b96f-104">Represents data returned in JSON format</span></span>
-## <a name="properties"></a><span data-ttu-id="4b96f-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="4b96f-105">Properties</span></span>
-|<span data-ttu-id="4b96f-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="4b96f-106">Property</span></span>|<span data-ttu-id="4b96f-107">Тип</span><span class="sxs-lookup"><span data-stu-id="4b96f-107">Type</span></span>|<span data-ttu-id="4b96f-108">Описание</span><span class="sxs-lookup"><span data-stu-id="4b96f-108">Description</span></span>|
+<span data-ttu-id="1f6ce-104">Представляет данные, возвращаемые в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1f6ce-104">Represents data returned in JSON format</span></span>
+## <a name="properties"></a><span data-ttu-id="1f6ce-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="1f6ce-105">Properties</span></span>
+|<span data-ttu-id="1f6ce-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="1f6ce-106">Property</span></span>|<span data-ttu-id="1f6ce-107">Тип</span><span class="sxs-lookup"><span data-stu-id="1f6ce-107">Type</span></span>|<span data-ttu-id="1f6ce-108">Описание</span><span class="sxs-lookup"><span data-stu-id="1f6ce-108">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="4b96f-109">Связи</span><span class="sxs-lookup"><span data-stu-id="4b96f-109">Relationships</span></span>
-<span data-ttu-id="4b96f-110">Нет</span><span class="sxs-lookup"><span data-stu-id="4b96f-110">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="4b96f-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4b96f-111">JSON Representation</span></span>
-<span data-ttu-id="4b96f-112">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4b96f-112">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="1f6ce-109">Связи</span><span class="sxs-lookup"><span data-stu-id="1f6ce-109">Relationships</span></span>
+<span data-ttu-id="1f6ce-110">Нет</span><span class="sxs-lookup"><span data-stu-id="1f6ce-110">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1f6ce-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1f6ce-111">JSON Representation</span></span>
+<span data-ttu-id="1f6ce-112">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1f6ce-112">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.Json"

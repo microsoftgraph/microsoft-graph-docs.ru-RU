@@ -2,28 +2,29 @@
 title: Создание объекта notificationMessageTemplate
 description: Создание объекта notificationMessageTemplate.
 author: tfitzmac
-ms.openlocfilehash: ac5a91d6a53719eac38f91e402a6f36f63ebdc36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f97f16298c48b787977330781e3aa95e68e4d28a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861773"
 ---
-# <a name="create-notificationmessagetemplate"></a><span data-ttu-id="1367a-103">Создание объекта notificationMessageTemplate</span><span class="sxs-lookup"><span data-stu-id="1367a-103">Create notificationMessageTemplate</span></span>
+# <a name="create-notificationmessagetemplate"></a><span data-ttu-id="caf36-103">Создание объекта notificationMessageTemplate</span><span class="sxs-lookup"><span data-stu-id="caf36-103">Create notificationMessageTemplate</span></span>
 
-> <span data-ttu-id="1367a-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="1367a-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="caf36-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="caf36-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="1367a-105">Создание объекта [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).</span><span class="sxs-lookup"><span data-stu-id="1367a-105">Create a new [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="1367a-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="1367a-106">Prerequisites</span></span>
-<span data-ttu-id="1367a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1367a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="caf36-105">Создание объекта [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).</span><span class="sxs-lookup"><span data-stu-id="caf36-105">Create a new [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="caf36-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="caf36-106">Prerequisites</span></span>
+<span data-ttu-id="caf36-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="caf36-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1367a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1367a-109">Permission type</span></span>|<span data-ttu-id="1367a-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1367a-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="caf36-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="caf36-109">Permission type</span></span>|<span data-ttu-id="caf36-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="caf36-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1367a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1367a-111">Delegated (work or school account)</span></span>|<span data-ttu-id="1367a-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1367a-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="1367a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1367a-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1367a-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1367a-114">Not supported.</span></span>|
-|<span data-ttu-id="1367a-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1367a-115">Application</span></span>|<span data-ttu-id="1367a-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1367a-116">Not supported.</span></span>|
+|<span data-ttu-id="caf36-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="caf36-111">Delegated (work or school account)</span></span>|<span data-ttu-id="caf36-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="caf36-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="caf36-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="caf36-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="caf36-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="caf36-114">Not supported.</span></span>|
+|<span data-ttu-id="caf36-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="caf36-115">Application</span></span>|<span data-ttu-id="caf36-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="caf36-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1367a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1367a-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="caf36-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="caf36-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -32,34 +33,34 @@ ms.locfileid: "27315598"
 POST /deviceManagement/notificationMessageTemplates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1367a-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1367a-118">Request headers</span></span>
-|<span data-ttu-id="1367a-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1367a-119">Header</span></span>|<span data-ttu-id="1367a-120">Значение</span><span class="sxs-lookup"><span data-stu-id="1367a-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="caf36-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="caf36-118">Request headers</span></span>
+|<span data-ttu-id="caf36-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="caf36-119">Header</span></span>|<span data-ttu-id="caf36-120">Значение</span><span class="sxs-lookup"><span data-stu-id="caf36-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1367a-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1367a-121">Authorization</span></span>|<span data-ttu-id="1367a-122">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="1367a-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1367a-123">Accept</span><span class="sxs-lookup"><span data-stu-id="1367a-123">Accept</span></span>|<span data-ttu-id="1367a-124">application/json</span><span class="sxs-lookup"><span data-stu-id="1367a-124">application/json</span></span>|
+|<span data-ttu-id="caf36-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="caf36-121">Authorization</span></span>|<span data-ttu-id="caf36-122">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="caf36-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="caf36-123">Accept</span><span class="sxs-lookup"><span data-stu-id="caf36-123">Accept</span></span>|<span data-ttu-id="caf36-124">application/json</span><span class="sxs-lookup"><span data-stu-id="caf36-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1367a-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1367a-125">Request body</span></span>
-<span data-ttu-id="1367a-126">В теле запроса добавьте представление объекта notificationMessageTemplate в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1367a-126">In the request body, supply a JSON representation for the notificationMessageTemplate object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="caf36-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="caf36-125">Request body</span></span>
+<span data-ttu-id="caf36-126">В теле запроса добавьте представление объекта notificationMessageTemplate в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="caf36-126">In the request body, supply a JSON representation for the notificationMessageTemplate object.</span></span>
 
-<span data-ttu-id="1367a-127">В приведенной ниже таблице указаны свойства, необходимые при создании объекта notificationMessageTemplate.</span><span class="sxs-lookup"><span data-stu-id="1367a-127">The following table shows the properties that are required when you create the notificationMessageTemplate.</span></span>
+<span data-ttu-id="caf36-127">В приведенной ниже таблице указаны свойства, необходимые при создании объекта notificationMessageTemplate.</span><span class="sxs-lookup"><span data-stu-id="caf36-127">The following table shows the properties that are required when you create the notificationMessageTemplate.</span></span>
 
-|<span data-ttu-id="1367a-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="1367a-128">Property</span></span>|<span data-ttu-id="1367a-129">Тип</span><span class="sxs-lookup"><span data-stu-id="1367a-129">Type</span></span>|<span data-ttu-id="1367a-130">Описание</span><span class="sxs-lookup"><span data-stu-id="1367a-130">Description</span></span>|
+|<span data-ttu-id="caf36-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="caf36-128">Property</span></span>|<span data-ttu-id="caf36-129">Тип</span><span class="sxs-lookup"><span data-stu-id="caf36-129">Type</span></span>|<span data-ttu-id="caf36-130">Описание</span><span class="sxs-lookup"><span data-stu-id="caf36-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1367a-131">id</span><span class="sxs-lookup"><span data-stu-id="1367a-131">id</span></span>|<span data-ttu-id="1367a-132">Строка</span><span class="sxs-lookup"><span data-stu-id="1367a-132">String</span></span>|<span data-ttu-id="1367a-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="1367a-133">Key of the entity.</span></span>|
-|<span data-ttu-id="1367a-134">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="1367a-134">lastModifiedDateTime</span></span>|<span data-ttu-id="1367a-135">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1367a-135">DateTimeOffset</span></span>|<span data-ttu-id="1367a-136">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="1367a-136">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="1367a-137">displayName</span><span class="sxs-lookup"><span data-stu-id="1367a-137">displayName</span></span>|<span data-ttu-id="1367a-138">String</span><span class="sxs-lookup"><span data-stu-id="1367a-138">String</span></span>|<span data-ttu-id="1367a-139">Отображаемое имя для шаблона сообщения уведомления.</span><span class="sxs-lookup"><span data-stu-id="1367a-139">Display name for the Notification Message Template.</span></span>|
-|<span data-ttu-id="1367a-140">defaultLocale</span><span class="sxs-lookup"><span data-stu-id="1367a-140">defaultLocale</span></span>|<span data-ttu-id="1367a-141">String</span><span class="sxs-lookup"><span data-stu-id="1367a-141">String</span></span>|<span data-ttu-id="1367a-142">Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.</span><span class="sxs-lookup"><span data-stu-id="1367a-142">The default locale to fallback onto when the requested locale is not available.</span></span>|
-|<span data-ttu-id="1367a-143">brandingOptions</span><span class="sxs-lookup"><span data-stu-id="1367a-143">brandingOptions</span></span>|[<span data-ttu-id="1367a-144">notificationTemplateBrandingOptions</span><span class="sxs-lookup"><span data-stu-id="1367a-144">notificationTemplateBrandingOptions</span></span>](../resources/intune-notification-notificationtemplatebrandingoptions.md)|<span data-ttu-id="1367a-145">Параметры фирменной символики шаблона сообщения.</span><span class="sxs-lookup"><span data-stu-id="1367a-145">The Message Template Branding Options.</span></span> <span data-ttu-id="1367a-146">Фирменная символика определяется в консоли администрирования Intune.</span><span class="sxs-lookup"><span data-stu-id="1367a-146">Branding is defined in the Intune Admin Console.</span></span> <span data-ttu-id="1367a-147">Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span><span class="sxs-lookup"><span data-stu-id="1367a-147">Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span></span>|
+|<span data-ttu-id="caf36-131">id</span><span class="sxs-lookup"><span data-stu-id="caf36-131">id</span></span>|<span data-ttu-id="caf36-132">Строка</span><span class="sxs-lookup"><span data-stu-id="caf36-132">String</span></span>|<span data-ttu-id="caf36-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="caf36-133">Key of the entity.</span></span>|
+|<span data-ttu-id="caf36-134">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="caf36-134">lastModifiedDateTime</span></span>|<span data-ttu-id="caf36-135">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="caf36-135">DateTimeOffset</span></span>|<span data-ttu-id="caf36-136">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="caf36-136">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="caf36-137">displayName</span><span class="sxs-lookup"><span data-stu-id="caf36-137">displayName</span></span>|<span data-ttu-id="caf36-138">String</span><span class="sxs-lookup"><span data-stu-id="caf36-138">String</span></span>|<span data-ttu-id="caf36-139">Отображаемое имя для шаблона сообщения уведомления.</span><span class="sxs-lookup"><span data-stu-id="caf36-139">Display name for the Notification Message Template.</span></span>|
+|<span data-ttu-id="caf36-140">defaultLocale</span><span class="sxs-lookup"><span data-stu-id="caf36-140">defaultLocale</span></span>|<span data-ttu-id="caf36-141">String</span><span class="sxs-lookup"><span data-stu-id="caf36-141">String</span></span>|<span data-ttu-id="caf36-142">Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.</span><span class="sxs-lookup"><span data-stu-id="caf36-142">The default locale to fallback onto when the requested locale is not available.</span></span>|
+|<span data-ttu-id="caf36-143">brandingOptions</span><span class="sxs-lookup"><span data-stu-id="caf36-143">brandingOptions</span></span>|[<span data-ttu-id="caf36-144">notificationTemplateBrandingOptions</span><span class="sxs-lookup"><span data-stu-id="caf36-144">notificationTemplateBrandingOptions</span></span>](../resources/intune-notification-notificationtemplatebrandingoptions.md)|<span data-ttu-id="caf36-145">Параметры фирменной символики шаблона сообщения.</span><span class="sxs-lookup"><span data-stu-id="caf36-145">The Message Template Branding Options.</span></span> <span data-ttu-id="caf36-146">Фирменная символика определяется в консоли администрирования Intune.</span><span class="sxs-lookup"><span data-stu-id="caf36-146">Branding is defined in the Intune Admin Console.</span></span> <span data-ttu-id="caf36-147">Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span><span class="sxs-lookup"><span data-stu-id="caf36-147">Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1367a-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="1367a-148">Response</span></span>
-<span data-ttu-id="1367a-149">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="1367a-149">If successful, this method returns a `201 Created` response code and a [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="caf36-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="caf36-148">Response</span></span>
+<span data-ttu-id="caf36-149">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="caf36-149">If successful, this method returns a `201 Created` response code and a [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1367a-150">Пример</span><span class="sxs-lookup"><span data-stu-id="1367a-150">Example</span></span>
-### <a name="request"></a><span data-ttu-id="1367a-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="1367a-151">Request</span></span>
-<span data-ttu-id="1367a-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1367a-152">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="caf36-150">Пример</span><span class="sxs-lookup"><span data-stu-id="caf36-150">Example</span></span>
+### <a name="request"></a><span data-ttu-id="caf36-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="caf36-151">Request</span></span>
+<span data-ttu-id="caf36-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="caf36-152">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates
 Content-type: application/json
@@ -73,8 +74,8 @@ Content-length: 197
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1367a-153">Ответ</span><span class="sxs-lookup"><span data-stu-id="1367a-153">Response</span></span>
-<span data-ttu-id="1367a-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="1367a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="caf36-153">Ответ</span><span class="sxs-lookup"><span data-stu-id="caf36-153">Response</span></span>
+<span data-ttu-id="caf36-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="caf36-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
