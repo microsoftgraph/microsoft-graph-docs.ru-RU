@@ -2,58 +2,59 @@
 title: Создание вызова
 description: Создайте новый звонок.
 author: VinodRavichandran
-ms.openlocfilehash: a2d34ccf3d77d165b8a92114353d5f6cb8bed674
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 1a2c6e85579e82787abf0bb7bb8b541c81aaf12e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380389"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818741"
 ---
-# <a name="create-call"></a><span data-ttu-id="acb17-103">Создание вызова</span><span class="sxs-lookup"><span data-stu-id="acb17-103">Create call</span></span>
+# <a name="create-call"></a><span data-ttu-id="468a2-103">Создание вызова</span><span class="sxs-lookup"><span data-stu-id="468a2-103">Create call</span></span>
 
-> <span data-ttu-id="acb17-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="acb17-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="acb17-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="acb17-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="468a2-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="468a2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="468a2-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="468a2-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="acb17-106">Создайте новый звонок.</span><span class="sxs-lookup"><span data-stu-id="acb17-106">Create a new call.</span></span>
+<span data-ttu-id="468a2-106">Создайте новый звонок.</span><span class="sxs-lookup"><span data-stu-id="468a2-106">Create a new call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="acb17-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="acb17-107">Permissions</span></span>
-<span data-ttu-id="acb17-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="acb17-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="468a2-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="468a2-107">Permissions</span></span>
+<span data-ttu-id="468a2-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="468a2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="acb17-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="acb17-110">Permission type</span></span>                        | <span data-ttu-id="acb17-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="acb17-111">Permissions (from least to most privileged)</span></span>                                             |
+| <span data-ttu-id="468a2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="468a2-110">Permission type</span></span>                        | <span data-ttu-id="468a2-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="468a2-111">Permissions (from least to most privileged)</span></span>                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| <span data-ttu-id="acb17-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="acb17-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="acb17-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="acb17-113">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="acb17-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="acb17-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acb17-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="acb17-115">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="acb17-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="acb17-116">Application</span></span>                            | <span data-ttu-id="acb17-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="acb17-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="468a2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="468a2-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="468a2-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="468a2-113">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="468a2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="468a2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="468a2-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="468a2-115">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="468a2-116">Application</span><span class="sxs-lookup"><span data-stu-id="468a2-116">Application</span></span>                            | <span data-ttu-id="468a2-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="468a2-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
 
-> <span data-ttu-id="acb17-118">**Примечание:** Для вызова с приложение, размещенное мультимедиа необходимо иметь разрешение Calls.AccessMedia.All с одним из разрешения, перечисленные в предыдущей таблице.</span><span class="sxs-lookup"><span data-stu-id="acb17-118">**Note:** For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
+> <span data-ttu-id="468a2-118">**Примечание:** Для вызова с приложение, размещенное мультимедиа необходимо иметь разрешение Calls.AccessMedia.All с одним из разрешения, перечисленные в предыдущей таблице.</span><span class="sxs-lookup"><span data-stu-id="468a2-118">**Note:** For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="acb17-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="acb17-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="468a2-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="468a2-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
 POST /applications/{id}/calls
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="acb17-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="acb17-120">Request headers</span></span>
-| <span data-ttu-id="acb17-121">Имя</span><span class="sxs-lookup"><span data-stu-id="acb17-121">Name</span></span>          | <span data-ttu-id="acb17-122">Описание</span><span class="sxs-lookup"><span data-stu-id="acb17-122">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="468a2-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="468a2-120">Request headers</span></span>
+| <span data-ttu-id="468a2-121">Имя</span><span class="sxs-lookup"><span data-stu-id="468a2-121">Name</span></span>          | <span data-ttu-id="468a2-122">Описание</span><span class="sxs-lookup"><span data-stu-id="468a2-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="acb17-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="acb17-123">Authorization</span></span> | <span data-ttu-id="acb17-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="acb17-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="468a2-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="468a2-123">Authorization</span></span> | <span data-ttu-id="468a2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="468a2-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="acb17-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="acb17-126">Request body</span></span>
-<span data-ttu-id="acb17-127">В тексте запроса укажите представление JSON объекта [вызова](../resources/call.md) .</span><span class="sxs-lookup"><span data-stu-id="acb17-127">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="468a2-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="468a2-126">Request body</span></span>
+<span data-ttu-id="468a2-127">В тексте запроса укажите представление JSON объекта [вызова](../resources/call.md) .</span><span class="sxs-lookup"><span data-stu-id="468a2-127">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
 
-> <span data-ttu-id="acb17-128">**Примечание:** Свойства помечены как `Server generated` игнорируются при обработке `POST` на `app/calls`.</span><span class="sxs-lookup"><span data-stu-id="acb17-128">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
+> <span data-ttu-id="468a2-128">**Примечание:** Свойства помечены как `Server generated` игнорируются при обработке `POST` на `app/calls`.</span><span class="sxs-lookup"><span data-stu-id="468a2-128">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="acb17-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="acb17-129">Response</span></span>
-<span data-ttu-id="acb17-130">Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [call](../resources/call.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="acb17-130">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="468a2-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="468a2-129">Response</span></span>
+<span data-ttu-id="468a2-130">Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [call](../resources/call.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="468a2-130">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="acb17-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="acb17-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="468a2-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="468a2-131">Examples</span></span>
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="acb17-132">Создание одноранговые звонок по протоколу VOIP с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="acb17-132">Create peer to peer VOIP call with service hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="468a2-132">Создание одноранговые звонок по протоколу VOIP с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="468a2-132">Create peer to peer VOIP call with service hosted media</span></span>
 
-> <span data-ttu-id="acb17-133">**Примечание:** Этот вызов необходимо иметь права Calls.Initiate.All.</span><span class="sxs-lookup"><span data-stu-id="acb17-133">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
+> <span data-ttu-id="468a2-133">**Примечание:** Этот вызов необходимо иметь права Calls.Initiate.All.</span><span class="sxs-lookup"><span data-stu-id="468a2-133">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="acb17-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="acb17-134">Request</span></span>
-<span data-ttu-id="acb17-135">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="acb17-135">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="468a2-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="468a2-134">Request</span></span>
+<span data-ttu-id="468a2-135">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="468a2-135">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -103,9 +104,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="acb17-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="acb17-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="468a2-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="468a2-136">Response</span></span>
 
-> <span data-ttu-id="acb17-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="acb17-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="468a2-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="468a2-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -158,7 +159,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="acb17-139">Уведомления - Установка</span><span class="sxs-lookup"><span data-stu-id="acb17-139">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="468a2-139">Уведомления - Установка</span><span class="sxs-lookup"><span data-stu-id="468a2-139">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -186,7 +187,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a><span data-ttu-id="acb17-140">Уведомления - соединения</span><span class="sxs-lookup"><span data-stu-id="acb17-140">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="468a2-140">Уведомления - соединения</span><span class="sxs-lookup"><span data-stu-id="468a2-140">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -215,12 +216,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="acb17-141">Создание одноранговые звонок по протоколу VOIP с приложение, размещенное мультимедиа</span><span class="sxs-lookup"><span data-stu-id="acb17-141">Create peer to peer VOIP call with application hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="468a2-141">Создание одноранговые звонок по протоколу VOIP с приложение, размещенное мультимедиа</span><span class="sxs-lookup"><span data-stu-id="468a2-141">Create peer to peer VOIP call with application hosted media</span></span>
 
-> <span data-ttu-id="acb17-142">Примечание: Требуется разрешение Calls.Initiate.All и Calls.AccessMedia.All.</span><span class="sxs-lookup"><span data-stu-id="acb17-142">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
+> <span data-ttu-id="468a2-142">Примечание: Требуется разрешение Calls.Initiate.All и Calls.AccessMedia.All.</span><span class="sxs-lookup"><span data-stu-id="468a2-142">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="acb17-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="acb17-143">Request</span></span>
-<span data-ttu-id="acb17-144">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="acb17-144">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="468a2-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="468a2-143">Request</span></span>
+<span data-ttu-id="468a2-144">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="468a2-144">The following example shows the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -266,11 +267,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-group-call-with-service-hosted-media"></a><span data-ttu-id="acb17-145">Создание группы вызова с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="acb17-145">Create group call with service hosted media</span></span>
+### <a name="create-group-call-with-service-hosted-media"></a><span data-ttu-id="468a2-145">Создание группы вызова с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="468a2-145">Create group call with service hosted media</span></span>
 
-> <span data-ttu-id="acb17-146">**Примечание:** В этом примере должно разрешения Calls.InitiateGroupCalls.All и Calls.AccessMedia.All.</span><span class="sxs-lookup"><span data-stu-id="acb17-146">**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.</span></span>
+> <span data-ttu-id="468a2-146">**Примечание:** В этом примере должно разрешения Calls.InitiateGroupCalls.All и Calls.AccessMedia.All.</span><span class="sxs-lookup"><span data-stu-id="468a2-146">**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="acb17-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="acb17-147">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="468a2-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="468a2-147">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -332,11 +333,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-private-meeting-with-service-hosted-media"></a><span data-ttu-id="acb17-148">Закрытый присоединиться к собранию с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="acb17-148">Join private meeting with service hosted media</span></span>
+### <a name="join-private-meeting-with-service-hosted-media"></a><span data-ttu-id="468a2-148">Закрытый присоединиться к собранию с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="468a2-148">Join private meeting with service hosted media</span></span>
 
-> <span data-ttu-id="acb17-149">**Примечание:** В этом примере требуется разрешение Calls.JoinGroupCalls.All.</span><span class="sxs-lookup"><span data-stu-id="acb17-149">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
+> <span data-ttu-id="468a2-149">**Примечание:** В этом примере требуется разрешение Calls.JoinGroupCalls.All.</span><span class="sxs-lookup"><span data-stu-id="468a2-149">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="acb17-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="acb17-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="468a2-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="468a2-150">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -388,11 +389,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="acb17-151">Присоединение к собранию канала с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="acb17-151">Join channel meeting with service hosted media</span></span>
+### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="468a2-151">Присоединение к собранию канала с помощью службы, размещенной мультимедиа</span><span class="sxs-lookup"><span data-stu-id="468a2-151">Join channel meeting with service hosted media</span></span>
 
-> <span data-ttu-id="acb17-152">**Примечание:** В этом примере требуется разрешение Calls.JoinGroupCalls.All.</span><span class="sxs-lookup"><span data-stu-id="acb17-152">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
+> <span data-ttu-id="468a2-152">**Примечание:** В этом примере требуется разрешение Calls.JoinGroupCalls.All.</span><span class="sxs-lookup"><span data-stu-id="468a2-152">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="acb17-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="acb17-153">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="468a2-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="468a2-153">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -445,11 +446,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="acb17-154">Присоединение к собранию канала в качестве гостя с мультимедиа службы, размещенной</span><span class="sxs-lookup"><span data-stu-id="acb17-154">Join channel meeting as a guest with service hosted media</span></span>
+### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="468a2-154">Присоединение к собранию канала в качестве гостя с мультимедиа службы, размещенной</span><span class="sxs-lookup"><span data-stu-id="468a2-154">Join channel meeting as a guest with service hosted media</span></span>
 
-> <span data-ttu-id="acb17-155">**Примечание:** В этом примере требуется разрешение Calls.JoinGroupCallsAsGuest.All.</span><span class="sxs-lookup"><span data-stu-id="acb17-155">**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.</span></span>
+> <span data-ttu-id="468a2-155">**Примечание:** В этом примере требуется разрешение Calls.JoinGroupCallsAsGuest.All.</span><span class="sxs-lookup"><span data-stu-id="468a2-155">**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="acb17-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="acb17-156">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="468a2-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="468a2-156">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls

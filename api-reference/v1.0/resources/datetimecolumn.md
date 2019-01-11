@@ -3,20 +3,21 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: dateTimeColumn
-ms.openlocfilehash: 3e61cae016a8ebccae1af59d18c559d6adf63b0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea6298428062aa537ec25945aed339738f432762
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820848"
 ---
-# <a name="datetimecolumn-resource-type"></a><span data-ttu-id="510a1-102">Тип ресурса dateTimeColumn</span><span class="sxs-lookup"><span data-stu-id="510a1-102">DateTimeColumn resource type</span></span>
+# <a name="datetimecolumn-resource-type"></a><span data-ttu-id="b80cc-102">Тип ресурса dateTimeColumn</span><span class="sxs-lookup"><span data-stu-id="b80cc-102">DateTimeColumn resource type</span></span>
 
-<span data-ttu-id="510a1-103">Ресурс **dateTimeColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца представляют собой даты или время.</span><span class="sxs-lookup"><span data-stu-id="510a1-103">The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.</span></span>
+<span data-ttu-id="b80cc-103">Ресурс **dateTimeColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца представляют собой даты или время.</span><span class="sxs-lookup"><span data-stu-id="b80cc-103">The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="510a1-104">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="510a1-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b80cc-104">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="b80cc-104">JSON representation</span></span>
 
-<span data-ttu-id="510a1-105">Ниже показано представление ресурса **dateTimeColumn** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="510a1-105">Here is a JSON representation of a **dateTimeColumn** resource.</span></span>
+<span data-ttu-id="b80cc-105">Ниже показано представление ресурса **dateTimeColumn** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b80cc-105">Here is a JSON representation of a **dateTimeColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.dateTimeColumn" } -->
 
 ```json
@@ -26,20 +27,20 @@ ms.locfileid: "27027460"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="510a1-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="510a1-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b80cc-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="b80cc-106">Properties</span></span>
 
-| <span data-ttu-id="510a1-107">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="510a1-107">Property name</span></span>      | <span data-ttu-id="510a1-108">Тип</span><span class="sxs-lookup"><span data-stu-id="510a1-108">Type</span></span>               | <span data-ttu-id="510a1-109">Описание</span><span class="sxs-lookup"><span data-stu-id="510a1-109">Description</span></span>
+| <span data-ttu-id="b80cc-107">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="b80cc-107">Property name</span></span>      | <span data-ttu-id="b80cc-108">Тип</span><span class="sxs-lookup"><span data-stu-id="b80cc-108">Type</span></span>               | <span data-ttu-id="b80cc-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b80cc-109">Description</span></span>
 |:-------------------|:-------------------|:----------------------------------------------
-| <span data-ttu-id="510a1-110">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="510a1-110">**displayAs**</span></span>      | <span data-ttu-id="510a1-111">string</span><span class="sxs-lookup"><span data-stu-id="510a1-111">string</span></span>             | <span data-ttu-id="510a1-112">Способ отображения значения в пользовательском интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="510a1-112">How the value should be presented in the UX.</span></span> <span data-ttu-id="510a1-113">Должно иметь один из типов `default`, `friendly` или `standard`.</span><span class="sxs-lookup"><span data-stu-id="510a1-113">Must be one of `default`, `friendly`, or `standard`.</span></span> <span data-ttu-id="510a1-114">Дополнительные сведения см. ниже.</span><span class="sxs-lookup"><span data-stu-id="510a1-114">See below for more details.</span></span> <span data-ttu-id="510a1-115">Если тип не указан, считается, что значение имеет тип `default`.</span><span class="sxs-lookup"><span data-stu-id="510a1-115">If unspecified, treated as `default`.</span></span>
-| <span data-ttu-id="510a1-116">**format**</span><span class="sxs-lookup"><span data-stu-id="510a1-116">**format**</span></span>         | <span data-ttu-id="510a1-117">string</span><span class="sxs-lookup"><span data-stu-id="510a1-117">string</span></span>             | <span data-ttu-id="510a1-118">Указывает способ представления значения: только в виде даты либо в виде даты и времени.</span><span class="sxs-lookup"><span data-stu-id="510a1-118">Indicates whether the value should be presented as a date only or a date and time.</span></span> <span data-ttu-id="510a1-119">Должно иметь тип `dateOnly` или `dateTime`</span><span class="sxs-lookup"><span data-stu-id="510a1-119">Must be one of `dateOnly` or `dateTime`</span></span>
+| <span data-ttu-id="b80cc-110">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="b80cc-110">**displayAs**</span></span>      | <span data-ttu-id="b80cc-111">string</span><span class="sxs-lookup"><span data-stu-id="b80cc-111">string</span></span>             | <span data-ttu-id="b80cc-112">Способ отображения значения в пользовательском интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="b80cc-112">How the value should be presented in the UX.</span></span> <span data-ttu-id="b80cc-113">Должно иметь один из типов `default`, `friendly` или `standard`.</span><span class="sxs-lookup"><span data-stu-id="b80cc-113">Must be one of `default`, `friendly`, or `standard`.</span></span> <span data-ttu-id="b80cc-114">Дополнительные сведения см. ниже.</span><span class="sxs-lookup"><span data-stu-id="b80cc-114">See below for more details.</span></span> <span data-ttu-id="b80cc-115">Если тип не указан, считается, что значение имеет тип `default`.</span><span class="sxs-lookup"><span data-stu-id="b80cc-115">If unspecified, treated as `default`.</span></span>
+| <span data-ttu-id="b80cc-116">**format**</span><span class="sxs-lookup"><span data-stu-id="b80cc-116">**format**</span></span>         | <span data-ttu-id="b80cc-117">string</span><span class="sxs-lookup"><span data-stu-id="b80cc-117">string</span></span>             | <span data-ttu-id="b80cc-118">Указывает способ представления значения: только в виде даты либо в виде даты и времени.</span><span class="sxs-lookup"><span data-stu-id="b80cc-118">Indicates whether the value should be presented as a date only or a date and time.</span></span> <span data-ttu-id="b80cc-119">Должно иметь тип `dateOnly` или `dateTime`</span><span class="sxs-lookup"><span data-stu-id="b80cc-119">Must be one of `dateOnly` or `dateTime`</span></span>
 
-## <a name="displayas-options"></a><span data-ttu-id="510a1-120">Параметры displayAs</span><span class="sxs-lookup"><span data-stu-id="510a1-120">DisplayAs options</span></span>
+## <a name="displayas-options"></a><span data-ttu-id="b80cc-120">Параметры displayAs</span><span class="sxs-lookup"><span data-stu-id="b80cc-120">DisplayAs options</span></span>
 
-| <span data-ttu-id="510a1-121">Значение</span><span class="sxs-lookup"><span data-stu-id="510a1-121">Value</span></span>        | <span data-ttu-id="510a1-122">Описание</span><span class="sxs-lookup"><span data-stu-id="510a1-122">Description</span></span>
+| <span data-ttu-id="b80cc-121">Значение</span><span class="sxs-lookup"><span data-stu-id="b80cc-121">Value</span></span>        | <span data-ttu-id="b80cc-122">Описание</span><span class="sxs-lookup"><span data-stu-id="b80cc-122">Description</span></span>
 |:-------------|:--------------------------------------------------------------
-| <span data-ttu-id="510a1-123">**default**</span><span class="sxs-lookup"><span data-stu-id="510a1-123">**default**</span></span>  | <span data-ttu-id="510a1-124">Применение способа отображения, используемого по умолчанию, в пользовательском интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="510a1-124">Uses the default rendering in the UX.</span></span>
-| <span data-ttu-id="510a1-125">**friendly**</span><span class="sxs-lookup"><span data-stu-id="510a1-125">**friendly**</span></span> | <span data-ttu-id="510a1-126">Использование понятного относительного представления (например,</span><span class="sxs-lookup"><span data-stu-id="510a1-126">Uses a friendly relative representation (eg.</span></span> <span data-ttu-id="510a1-127">"сегодня в 15:00")</span><span class="sxs-lookup"><span data-stu-id="510a1-127">"today at 3:00 PM")</span></span>
-| <span data-ttu-id="510a1-128">**standard**</span><span class="sxs-lookup"><span data-stu-id="510a1-128">**standard**</span></span> | <span data-ttu-id="510a1-129">Использование стандартного абсолютного представления (например,</span><span class="sxs-lookup"><span data-stu-id="510a1-129">Uses the standard absolute representation (eg.</span></span> <span data-ttu-id="510a1-130">"10.05.2017 15:20")</span><span class="sxs-lookup"><span data-stu-id="510a1-130">"5/10/2017 3:20 PM")</span></span>
+| <span data-ttu-id="b80cc-123">**default**</span><span class="sxs-lookup"><span data-stu-id="b80cc-123">**default**</span></span>  | <span data-ttu-id="b80cc-124">Применение способа отображения, используемого по умолчанию, в пользовательском интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="b80cc-124">Uses the default rendering in the UX.</span></span>
+| <span data-ttu-id="b80cc-125">**friendly**</span><span class="sxs-lookup"><span data-stu-id="b80cc-125">**friendly**</span></span> | <span data-ttu-id="b80cc-126">Использование понятного относительного представления (например,</span><span class="sxs-lookup"><span data-stu-id="b80cc-126">Uses a friendly relative representation (eg.</span></span> <span data-ttu-id="b80cc-127">"сегодня в 15:00")</span><span class="sxs-lookup"><span data-stu-id="b80cc-127">"today at 3:00 PM")</span></span>
+| <span data-ttu-id="b80cc-128">**standard**</span><span class="sxs-lookup"><span data-stu-id="b80cc-128">**standard**</span></span> | <span data-ttu-id="b80cc-129">Использование стандартного абсолютного представления (например,</span><span class="sxs-lookup"><span data-stu-id="b80cc-129">Uses the standard absolute representation (eg.</span></span> <span data-ttu-id="b80cc-130">"10.05.2017 15:20")</span><span class="sxs-lookup"><span data-stu-id="b80cc-130">"5/10/2017 3:20 PM")</span></span>
 
 
 <!-- {

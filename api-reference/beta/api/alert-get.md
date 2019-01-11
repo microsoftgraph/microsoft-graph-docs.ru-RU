@@ -1,30 +1,31 @@
 ---
 title: получение оповещения;
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 5f5a7330476de71308680b41e87e51d5d228b2e0
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+localization_priority: Normal
+ms.openlocfilehash: b8e3acbabab70c04f2dfa479b39f458950dfb6b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184485"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820246"
 ---
-# <a name="get-alert"></a><span data-ttu-id="ddf3b-104">получение оповещения;</span><span class="sxs-lookup"><span data-stu-id="ddf3b-104">Get alert</span></span>
+# <a name="get-alert"></a><span data-ttu-id="2f355-104">получение оповещения;</span><span class="sxs-lookup"><span data-stu-id="2f355-104">Get alert</span></span>
 
- > <span data-ttu-id="ddf3b-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ddf3b-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ddf3b-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ddf3b-106">Use of these APIs in production applications is not supported.</span></span>
+ > <span data-ttu-id="2f355-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="2f355-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2f355-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f355-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="ddf3b-107">Извлечение свойств и связи объекта [оповещение](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="ddf3b-107">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
+<span data-ttu-id="2f355-107">Извлечение свойств и связи объекта [оповещение](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="2f355-107">Retrieve the properties and relationships of an [alert](../resources/alert.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ddf3b-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ddf3b-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2f355-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2f355-108">Permissions</span></span>
 
-<span data-ttu-id="ddf3b-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ddf3b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2f355-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f355-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ddf3b-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ddf3b-111">Permission type</span></span>      | <span data-ttu-id="ddf3b-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ddf3b-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2f355-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2f355-111">Permission type</span></span>      | <span data-ttu-id="2f355-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2f355-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ddf3b-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ddf3b-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="ddf3b-114">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ddf3b-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="ddf3b-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ddf3b-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="ddf3b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ddf3b-116">Not supported.</span></span>  |
-|<span data-ttu-id="ddf3b-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ddf3b-117">Application</span></span> | <span data-ttu-id="ddf3b-118">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ddf3b-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="2f355-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2f355-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="2f355-114">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f355-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="2f355-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2f355-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="2f355-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f355-116">Not supported.</span></span>  |
+|<span data-ttu-id="2f355-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2f355-117">Application</span></span> | <span data-ttu-id="2f355-118">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f355-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ddf3b-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ddf3b-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2f355-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2f355-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -32,25 +33,25 @@ ms.locfileid: "27184485"
 GET /security/alerts/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ddf3b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ddf3b-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2f355-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2f355-120">Request headers</span></span>
 
-| <span data-ttu-id="ddf3b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="ddf3b-121">Name</span></span>      |<span data-ttu-id="ddf3b-122">Описание</span><span class="sxs-lookup"><span data-stu-id="ddf3b-122">Description</span></span>|
+| <span data-ttu-id="2f355-121">Имя</span><span class="sxs-lookup"><span data-stu-id="2f355-121">Name</span></span>      |<span data-ttu-id="2f355-122">Описание</span><span class="sxs-lookup"><span data-stu-id="2f355-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="ddf3b-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ddf3b-123">Authorization</span></span>  | <span data-ttu-id="ddf3b-p104">В заголовке указывается "Bearer {код}". Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ddf3b-p104">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="2f355-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f355-123">Authorization</span></span>  | <span data-ttu-id="2f355-p104">В заголовке указывается "Bearer {код}". Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2f355-p104">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ddf3b-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ddf3b-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2f355-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2f355-126">Request body</span></span>
 
-<span data-ttu-id="ddf3b-127">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ddf3b-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="2f355-127">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2f355-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ddf3b-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="ddf3b-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2f355-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="2f355-128">Response</span></span>
 
-<span data-ttu-id="ddf3b-129">Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **оповещения** в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ddf3b-129">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="ddf3b-130">Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="ddf3b-130">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="ddf3b-131">Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="ddf3b-131">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="2f355-129">Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **оповещения** в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="2f355-129">If successful, this method returns a `200 OK` response code and an **alert** object in the response body.</span></span> <span data-ttu-id="2f355-130">Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="2f355-130">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="2f355-131">Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="2f355-131">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="ddf3b-132">Пример</span><span class="sxs-lookup"><span data-stu-id="ddf3b-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2f355-132">Пример</span><span class="sxs-lookup"><span data-stu-id="2f355-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ddf3b-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="ddf3b-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="2f355-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="2f355-133">Request</span></span>
 
-<span data-ttu-id="ddf3b-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ddf3b-134">The following is an example of the request.</span></span>
+<span data-ttu-id="2f355-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2f355-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_alert"
@@ -60,9 +61,9 @@ GET /security/alerts/{id}
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
 
-### <a name="response"></a><span data-ttu-id="ddf3b-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="ddf3b-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="2f355-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="2f355-135">Response</span></span>
 
-<span data-ttu-id="ddf3b-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ddf3b-136">The following is an example of the response.</span></span>
+<span data-ttu-id="2f355-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="2f355-136">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

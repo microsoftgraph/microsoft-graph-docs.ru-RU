@@ -2,30 +2,31 @@
 title: Удаление managedDeviceMobileAppConfigurationDeviceStatus
 description: Удаляет managedDeviceMobileAppConfigurationDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: 3c40ec7d98ce8c64258a6b453edd429343527be7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 849869bd3748175b86e78db37bbc6e7809faa724
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326847"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818209"
 ---
-# <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a><span data-ttu-id="df9ef-103">Удаление managedDeviceMobileAppConfigurationDeviceStatus</span><span class="sxs-lookup"><span data-stu-id="df9ef-103">Delete managedDeviceMobileAppConfigurationDeviceStatus</span></span>
+# <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a><span data-ttu-id="413af-103">Удаление managedDeviceMobileAppConfigurationDeviceStatus</span><span class="sxs-lookup"><span data-stu-id="413af-103">Delete managedDeviceMobileAppConfigurationDeviceStatus</span></span>
 
-> <span data-ttu-id="df9ef-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="df9ef-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="df9ef-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="df9ef-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="413af-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="413af-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="413af-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="413af-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="df9ef-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="df9ef-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="413af-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="413af-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="df9ef-107">Удаляет [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md).</span><span class="sxs-lookup"><span data-stu-id="df9ef-107">Deletes a [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="df9ef-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="df9ef-108">Prerequisites</span></span>
-<span data-ttu-id="df9ef-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="df9ef-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="413af-107">Удаляет [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md).</span><span class="sxs-lookup"><span data-stu-id="413af-107">Deletes a [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="413af-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="413af-108">Prerequisites</span></span>
+<span data-ttu-id="413af-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="413af-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="df9ef-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="df9ef-111">Permission type</span></span>|<span data-ttu-id="df9ef-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="df9ef-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="413af-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="413af-111">Permission type</span></span>|<span data-ttu-id="413af-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="413af-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="df9ef-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="df9ef-113">Delegated (work or school account)</span></span>|<span data-ttu-id="df9ef-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df9ef-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="df9ef-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="df9ef-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="df9ef-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="df9ef-116">Not supported.</span></span>|
-|<span data-ttu-id="df9ef-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="df9ef-117">Application</span></span>|<span data-ttu-id="df9ef-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="df9ef-118">Not supported.</span></span>|
+|<span data-ttu-id="413af-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="413af-113">Delegated (work or school account)</span></span>|<span data-ttu-id="413af-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="413af-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="413af-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="413af-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="413af-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="413af-116">Not supported.</span></span>|
+|<span data-ttu-id="413af-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="413af-117">Application</span></span>|<span data-ttu-id="413af-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="413af-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="df9ef-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="df9ef-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="413af-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="413af-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,28 +36,28 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="df9ef-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="df9ef-120">Request headers</span></span>
-|<span data-ttu-id="df9ef-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="df9ef-121">Header</span></span>|<span data-ttu-id="df9ef-122">Значение</span><span class="sxs-lookup"><span data-stu-id="df9ef-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="413af-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="413af-120">Request headers</span></span>
+|<span data-ttu-id="413af-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="413af-121">Header</span></span>|<span data-ttu-id="413af-122">Значение</span><span class="sxs-lookup"><span data-stu-id="413af-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="df9ef-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="df9ef-123">Authorization</span></span>|<span data-ttu-id="df9ef-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="df9ef-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="df9ef-125">Accept</span><span class="sxs-lookup"><span data-stu-id="df9ef-125">Accept</span></span>|<span data-ttu-id="df9ef-126">application/json</span><span class="sxs-lookup"><span data-stu-id="df9ef-126">application/json</span></span>|
+|<span data-ttu-id="413af-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="413af-123">Authorization</span></span>|<span data-ttu-id="413af-124">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="413af-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="413af-125">Accept</span><span class="sxs-lookup"><span data-stu-id="413af-125">Accept</span></span>|<span data-ttu-id="413af-126">application/json</span><span class="sxs-lookup"><span data-stu-id="413af-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="df9ef-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="df9ef-127">Request body</span></span>
-<span data-ttu-id="df9ef-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="df9ef-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="413af-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="413af-127">Request body</span></span>
+<span data-ttu-id="413af-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="413af-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="df9ef-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="df9ef-129">Response</span></span>
-<span data-ttu-id="df9ef-130">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="df9ef-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="413af-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="413af-129">Response</span></span>
+<span data-ttu-id="413af-130">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="413af-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="df9ef-131">Пример</span><span class="sxs-lookup"><span data-stu-id="df9ef-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="df9ef-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="df9ef-132">Request</span></span>
-<span data-ttu-id="df9ef-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="df9ef-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="413af-131">Пример</span><span class="sxs-lookup"><span data-stu-id="413af-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="413af-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="413af-132">Request</span></span>
+<span data-ttu-id="413af-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="413af-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 ```
 
-### <a name="response"></a><span data-ttu-id="df9ef-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="df9ef-134">Response</span></span>
-<span data-ttu-id="df9ef-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="df9ef-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="413af-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="413af-134">Response</span></span>
+<span data-ttu-id="413af-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="413af-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
