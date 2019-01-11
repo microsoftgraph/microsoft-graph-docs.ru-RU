@@ -1,46 +1,47 @@
 ---
 title: Добавление владельца группы
 description: Добавление пользователя в качестве владельца группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы.
-ms.openlocfilehash: ac3790ac3a61beb9b5d92916e8dac82f1849cc8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 435d4a2c89abbeb49fc6dbe914cc378d832a8235
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825307"
 ---
-# <a name="add-group-owner"></a><span data-ttu-id="6779d-104">Добавление владельца группы</span><span class="sxs-lookup"><span data-stu-id="6779d-104">Add group owner</span></span>
-<span data-ttu-id="6779d-p102">Добавление пользователя в качестве владельца группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы.</span><span class="sxs-lookup"><span data-stu-id="6779d-p102">Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.</span></span>
+# <a name="add-group-owner"></a><span data-ttu-id="f1f19-104">Добавление владельца группы</span><span class="sxs-lookup"><span data-stu-id="f1f19-104">Add group owner</span></span>
+<span data-ttu-id="f1f19-p102">Добавление пользователя в качестве владельца группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы.</span><span class="sxs-lookup"><span data-stu-id="f1f19-p102">Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.</span></span>
 
-><span data-ttu-id="6779d-107">**Важные:** При изменении группы владельцев и созданных групп для группы, может потребоваться до 2 часа для владельцев для синхронизации с группами Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="6779d-107">**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams.</span></span> <span data-ttu-id="6779d-108">Кроме того Если владелец могут вносить изменения в группе — например, путем создания плана планировщик работы - владелец также необходимо добавить как участник группы/группы.</span><span class="sxs-lookup"><span data-stu-id="6779d-108">Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member.</span></span> 
+><span data-ttu-id="f1f19-107">**Важные:** При изменении группы владельцев и созданных групп для группы, может потребоваться до 2 часа для владельцев для синхронизации с группами Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="f1f19-107">**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams.</span></span> <span data-ttu-id="f1f19-108">Кроме того Если владелец могут вносить изменения в группе — например, путем создания плана планировщик работы - владелец также необходимо добавить как участник группы/группы.</span><span class="sxs-lookup"><span data-stu-id="f1f19-108">Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="6779d-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6779d-109">Permissions</span></span>
-<span data-ttu-id="6779d-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6779d-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f1f19-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f1f19-109">Permissions</span></span>
+<span data-ttu-id="f1f19-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f1f19-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6779d-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6779d-112">Permission type</span></span>      | <span data-ttu-id="6779d-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6779d-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f1f19-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f1f19-112">Permission type</span></span>      | <span data-ttu-id="f1f19-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f1f19-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6779d-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6779d-114">Delegated (work or school account)</span></span> | <span data-ttu-id="6779d-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6779d-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="6779d-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6779d-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6779d-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6779d-117">Not supported.</span></span>    |
-|<span data-ttu-id="6779d-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6779d-118">Application</span></span> | <span data-ttu-id="6779d-119">Group.ReadWrite.All и User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6779d-119">Group.ReadWrite.All and User.ReadWrite.All</span></span> |
+|<span data-ttu-id="f1f19-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f1f19-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f1f19-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f1f19-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f1f19-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f1f19-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f1f19-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f1f19-117">Not supported.</span></span>    |
+|<span data-ttu-id="f1f19-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f1f19-118">Application</span></span> | <span data-ttu-id="f1f19-119">Group.ReadWrite.All и User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1f19-119">Group.ReadWrite.All and User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6779d-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6779d-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f1f19-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f1f19-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/owners/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="6779d-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6779d-121">Request headers</span></span>
-| <span data-ttu-id="6779d-122">Имя</span><span class="sxs-lookup"><span data-stu-id="6779d-122">Name</span></span>       | <span data-ttu-id="6779d-123">Тип</span><span class="sxs-lookup"><span data-stu-id="6779d-123">Type</span></span> | <span data-ttu-id="6779d-124">Описание</span><span class="sxs-lookup"><span data-stu-id="6779d-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f1f19-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f1f19-121">Request headers</span></span>
+| <span data-ttu-id="f1f19-122">Имя</span><span class="sxs-lookup"><span data-stu-id="f1f19-122">Name</span></span>       | <span data-ttu-id="f1f19-123">Тип</span><span class="sxs-lookup"><span data-stu-id="f1f19-123">Type</span></span> | <span data-ttu-id="f1f19-124">Описание</span><span class="sxs-lookup"><span data-stu-id="f1f19-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="6779d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="6779d-125">Authorization</span></span>  | <span data-ttu-id="6779d-126">string</span><span class="sxs-lookup"><span data-stu-id="6779d-126">string</span></span>  | <span data-ttu-id="6779d-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6779d-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f1f19-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f1f19-125">Authorization</span></span>  | <span data-ttu-id="f1f19-126">string</span><span class="sxs-lookup"><span data-stu-id="f1f19-126">string</span></span>  | <span data-ttu-id="f1f19-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f1f19-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6779d-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6779d-129">Request body</span></span>
-<span data-ttu-id="6779d-130">Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6779d-130">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f1f19-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f1f19-129">Request body</span></span>
+<span data-ttu-id="f1f19-130">Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f1f19-130">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6779d-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="6779d-131">Response</span></span>
-<span data-ttu-id="6779d-p106">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="6779d-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f1f19-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="f1f19-131">Response</span></span>
+<span data-ttu-id="f1f19-p106">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="f1f19-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6779d-134">Пример</span><span class="sxs-lookup"><span data-stu-id="6779d-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="6779d-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="6779d-135">Request</span></span>
-<span data-ttu-id="6779d-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6779d-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f1f19-134">Пример</span><span class="sxs-lookup"><span data-stu-id="f1f19-134">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="f1f19-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="f1f19-135">Request</span></span>
+<span data-ttu-id="f1f19-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f1f19-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -54,11 +55,11 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
-<span data-ttu-id="6779d-137">Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6779d-137">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
+<span data-ttu-id="f1f19-137">Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f1f19-137">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="6779d-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="6779d-138">Response</span></span>
-<span data-ttu-id="6779d-139">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6779d-139">The following is an example of the response.</span></span>
-><span data-ttu-id="6779d-140">**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="6779d-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="6779d-141">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6779d-141">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="f1f19-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="f1f19-138">Response</span></span>
+<span data-ttu-id="f1f19-139">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f1f19-139">The following is an example of the response.</span></span>
+><span data-ttu-id="f1f19-140">**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="f1f19-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f1f19-141">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f1f19-141">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
