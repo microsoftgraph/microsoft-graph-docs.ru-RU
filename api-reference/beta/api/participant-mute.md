@@ -2,12 +2,13 @@
 title: 'Участник: Выкл.'
 description: Отключение микрофона определенного участника в вызове.
 author: VinodRavichandran
-ms.openlocfilehash: 99a993ae67bb7b3cf49d1a4a9a50fd7cb9aee894
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ab8c0ee24b1175a77ad157f51437a29b99404392
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380235"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808227"
 ---
 # <a name="participant-mute"></a>Участник: Выкл.
 
@@ -22,7 +23,7 @@ ms.locfileid: "27380235"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Нет                                        |
+| Application     | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,12 +37,12 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|String|Контекст клиента.|
+|clientContext|Строка|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.

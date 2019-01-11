@@ -2,12 +2,13 @@
 title: Тип перечисления managedAppFlaggedReason
 description: Причины, для которого отмеченные пользователя
 author: tfitzmac
-ms.openlocfilehash: b22f6a1ddec78e147fc44c786144864813bde491
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eab844c3a9d3ad35192938cf1f784bb7eaf7874e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805266"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>Тип перечисления managedAppFlaggedReason
 
@@ -17,7 +18,7 @@ ms.locfileid: "27353027"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Отсутствие ошибок.|
+|Нет|0|Отсутствие ошибок.|
 |rootedDevice|1|Регистрация приложения работает на устройстве в качестве корневого блокируется.|
 
 

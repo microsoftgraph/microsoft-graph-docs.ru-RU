@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceAndAppManagementRoleDefinition
 description: 'Ресурс "Определение роли". Определение роли лежит в основе доступа на основе ролей в Intune. Роль сочетает в себе ресурс Intune, например мобильное приложение, и связанные разрешения роли для ресурса, такие как создание или чтение. Есть роли двух типов: встроенные и настраиваемые. Встроенные роли невозможно изменить. Как встроенные, так и настраиваемые роли должны включать применяемые назначения. Создайте настраиваемые роли, чтобы определить роль, которая позволяет объединить любые доступные ресурсы и разрешения роли.'
-ms.openlocfilehash: 90c701afc33a16cfb2747c40d53d47e74c3cedde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7bdf06be22c2efb11e7fbccf2bd76e5bb9459a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805259"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>Тип ресурса deviceAndAppManagementRoleDefinition
 
@@ -30,7 +31,7 @@ ms.locfileid: "27078080"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |displayName|String|Отображаемое имя определения роли. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |описание|String|Описание определения роли. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |permissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|

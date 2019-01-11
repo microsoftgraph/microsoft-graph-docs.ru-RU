@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerTaskDetails
 description: Ресурс **plannerTaskDetails** представляет дополнительные сведения о задаче. С каждым объектом task связан объект details.
-ms.openlocfilehash: 74ba1c5b7c607f30253463e6cfc256fd3119bf45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a183ba0f9b19ea2de700913d29e9586442ba2c03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028206"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806576"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Тип ресурса plannerTaskDetails
 
@@ -25,7 +26,7 @@ ms.locfileid: "27028206"
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
 |описание|Строка|Описание задачи.|
-|id|String| Только для чтения. Идентификатор сведения о задаче. Это 28 знаков без учета регистра. [Формат](planner-identifiers-disclaimer.md) проверяются на службу.|
+|id|Строка| Только для чтения. Идентификатор сведения о задаче. Это 28 знаков без учета регистра. [Формат](planner-identifiers-disclaimer.md) проверяются на службу.|
 |previewType|строка|Задается тип предварительного просмотра, который появляется на задачу. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если параметр имеет значение `automatic` отображаемой предварительного просмотра выбирается по приложению, просмотр задачи.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 

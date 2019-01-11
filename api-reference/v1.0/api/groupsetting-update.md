@@ -2,12 +2,13 @@
 title: Обновление параметра группы
 description: Обновление свойств для указанных объектов параметров группы.
 author: dkershaw10
-ms.openlocfilehash: 07ab3114ce4ed5d8d932ff9183c62823ddfcf632
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1b677e9d1a00dc01aaf2455ac075fe20cbe4d1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804958"
 ---
 # <a name="update-a-group-setting"></a>Обновление параметра группы
 

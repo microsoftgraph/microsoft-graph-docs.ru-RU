@@ -2,12 +2,13 @@
 title: Обновление androidPkcsCertificateProfile
 description: Обновление свойства объекта androidPkcsCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 6600f2a98fa73cfd86d0c728edbd96c36bb876e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4be9510a78bf5147455b434efd98b3804823e4ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308249"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807847"
 ---
 # <a name="update-androidpkcscertificateprofile"></a>Обновление androidPkcsCertificateProfile
 
@@ -39,11 +40,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md).
@@ -53,7 +54,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -64,10 +65,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |certificateValidityPeriodValue|Int32|Значение срок действия сертификата. Наследуется от [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Масштаб срок действия сертификата. Наследуется от [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md). Возможные значения: `days`, `months`, `years`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md) коллекции|Параметры расширенного использования ключа (EKU). Эта коллекция может содержать не более 500 элементов. Наследуется от [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
-|certificationAuthority|String.|Центр сертификации PKCS|
-|certificationAuthorityName|String.|Имя центра сертификации PKCS|
-|certificateTemplateName|String.|Имя шаблона сертификата PKCS|
-|subjectAlternativeNameFormatString|String.|Пользовательская строка, которая определяет атрибут AAD.|
+|certificationAuthority|Строка|Центр сертификации PKCS|
+|certificationAuthorityName|Строка|Имя центра сертификации PKCS|
+|certificateTemplateName|Строка|Имя шаблона сертификата PKCS|
+|subjectAlternativeNameFormatString|Строка|Пользовательская строка, которая определяет атрибут AAD.|
 
 
 

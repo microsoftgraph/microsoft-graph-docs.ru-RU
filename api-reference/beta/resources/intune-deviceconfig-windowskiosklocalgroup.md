@@ -2,12 +2,13 @@
 title: Тип ресурса windowsKioskLocalGroup
 description: Класс, используемый для идентификации в локальную группу для базовой конфигурации
 author: tfitzmac
-ms.openlocfilehash: bb2e0cddd1c9b2530e1f146e966d707466c737d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dcc4f6ae47abf07ae259562b2aee72d187abd476
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306848"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807716"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>Тип ресурса windowsKioskLocalGroup
 
@@ -22,7 +23,7 @@ ms.locfileid: "27306848"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupName|String.|Имя локальной группы, которая будет заблокирована этой базовой конфигурации|
+|groupName|Строка|Имя локальной группы, которая будет заблокирована этой базовой конфигурации|
 
 ## <a name="relationships"></a>Связи
 Нет

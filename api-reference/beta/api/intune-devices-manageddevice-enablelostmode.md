@@ -2,12 +2,13 @@
 title: Действие enableLostMode
 description: Включение режима потеряны
 author: tfitzmac
-ms.openlocfilehash: b75df200a57f5861515f1e5d3c867df8b3f08276
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8ba6a21466c2a612920754e18a0252ef8f2b826
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359481"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807247"
 ---
 # <a name="enablelostmode-action"></a>Действие enableLostMode
 
@@ -40,11 +41,11 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

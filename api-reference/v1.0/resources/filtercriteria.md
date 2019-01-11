@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса FilterCriteria
 description: Представляет условия фильтра, применяемые к столбцу.
-ms.openlocfilehash: 7fafbf8ef71eac9cf4896927f38ed1add5da9320
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 27fd3b6b211934c2cc81a11f203287c530993dde
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028195"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808570"
 ---
 # <a name="filtercriteria-resource-type"></a>Тип ресурса FilterCriteria
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса governanceRoleSetting
 description: " правила и т. д."
-ms.openlocfilehash: 64245b2d6f0aa9e0ea3ffda4a5eaebfb9fd205df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d63685ae1a4383ce7ab245dda0fd7d1207c57f88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805889"
 ---
 # <a name="governancerolesetting-resource-type"></a>Тип ресурса governanceRoleSetting
 
@@ -19,18 +20,18 @@ ms.locfileid: "27079099"
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | [governanceRoleSetting](../resources/governancerolesetting.md) коллекции|Список коллекцию параметров роли для ресурса.|
-|[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Чтение свойства и связи параметров ролей.|
-|[Update](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновите объект параметров роли. |
+|[получение](../api/governancerolesetting-get.md); |  [governanceRoleSetting](../resources/governancerolesetting.md) |Чтение свойства и связи параметров ролей.|
+|[обновление](../api/governancerolesetting-update.md). | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновите объект параметров роли. |
 
 ## <a name="properties"></a>Свойства
 |Свойство               |Тип                                      |Описание|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |String                                  |Идентификатор roleSetting.|
-|resourceId           |String                                  |Обязательно. Идентификатор ресурса, с которым связана параметров ролей.|
-|roleDefinitionId     |Строка                                  |Обязательно. Идентификатор определения роли, с которым связана параметров ролей.|
+|id                   |Строка                                  |Идентификатор roleSetting.|
+|resourceId           |Строка                                  |Обязательный. Идентификатор ресурса, с которым связана параметров ролей.|
+|roleDefinitionId     |Строка                                  |Обязательный. Идентификатор определения роли, с которым связана параметров ролей.|
 |isDefault            |Логический                                 |Только для чтения. Укажите, является ли roleSetting roleSetting по умолчанию|
 |lastUpdatedDateTime  |DateTimeOffset                          |Только для чтения. Время последнего обновления параметров ролей. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|lastUpdatedBy        |String                                  |Только для чтения. Отображаемое имя администратора, который последним обновил roleSetting.|
+|lastUpdatedBy        |Строка                                  |Только для чтения. Отображаемое имя администратора, который последним обновил roleSetting.|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) коллекции|Параметры правил, которые вычисляются, когда администратор пытается добавить назначение подходящими роли.|
 |adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md) коллекции|Параметры правил, которые вычисляются, когда администратор пытается добавить членами назначения ролей.|
 |userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md) коллекции|Параметры правил, которые вычисляются, когда пользователь пытается добавить назначение подходящими роли. Параметр не поддерживается в данный момент.|

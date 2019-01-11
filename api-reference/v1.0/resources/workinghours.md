@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса workingHours
 description: Представляет дни недели и часы работы пользователя в определенном часовом поясе.
-ms.openlocfilehash: 23b24536ffc86feb261a17c0847e5c15ffc25922
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b221b6f4f1fe8dee7fc7a043993f0d0cd3ea5b7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805245"
 ---
 # <a name="workinghours-resource-type"></a>Тип ресурса workingHours
 

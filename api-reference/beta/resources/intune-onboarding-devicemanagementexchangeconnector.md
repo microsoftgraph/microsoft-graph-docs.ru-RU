@@ -2,12 +2,13 @@
 title: Тип ресурса deviceManagementExchangeConnector
 description: Объект, представляющий подключение к среде Exchange.
 author: tfitzmac
-ms.openlocfilehash: 726afd7957f8e95d38b68065b1bc99f884a9208d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db632a46b1c7154bf973eb88dabb122d11534e9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312028"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804993"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Тип ресурса deviceManagementExchangeConnector
 

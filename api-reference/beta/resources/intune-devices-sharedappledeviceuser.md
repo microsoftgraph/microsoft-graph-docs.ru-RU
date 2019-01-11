@@ -2,12 +2,13 @@
 title: Тип ресурса sharedAppleDeviceUser
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 4e16d691ed6286fb8046c0693292012e1e94a0ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5ee74080b95328cf55813dc628ee7a517dff08e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806855"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>Тип ресурса sharedAppleDeviceUser
 
@@ -20,7 +21,7 @@ ms.locfileid: "27315992"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userPrincipalName|Строка|Имя пользователя|
-|dataToSync|Boolean.|Данные для синхронизации|
+|dataToSync|Логический|Данные для синхронизации|
 |dataQuota|Int64|Квота данных|
 |dataUsed|Int64|Квота данных|
 

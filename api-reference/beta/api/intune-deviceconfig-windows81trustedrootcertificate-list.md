@@ -2,12 +2,13 @@
 title: Список windows81TrustedRootCertificates
 description: Свойства списка и связей объектов windows81TrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 294166b736d50ef53a2045fcaba4cfab97c40f73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0f2bd38e2d481cef1e90ea3251755117388ee4c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807380"
 ---
 # <a name="list-windows81trustedrootcertificates"></a>Список windows81TrustedRootCertificates
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

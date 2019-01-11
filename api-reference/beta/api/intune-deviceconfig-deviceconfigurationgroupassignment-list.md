@@ -2,12 +2,13 @@
 title: Список deviceConfigurationGroupAssignments
 description: Свойства списка и связей объектов deviceConfigurationGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: a1dce979ab078d22c755b77724abfd274a1872cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34e222c249f25f854c5b5183fccbbb46738c4f10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361434"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807786"
 ---
 # <a name="list-deviceconfigurationgroupassignments"></a>Список deviceConfigurationGroupAssignments
 
@@ -45,11 +46,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

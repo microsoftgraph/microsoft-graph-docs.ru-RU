@@ -2,12 +2,13 @@
 title: 'Table: reapplyFilters'
 description: Повторно применяет все текущие фильтры к таблице.
 author: lumine2008
-ms.openlocfilehash: 9a98d07734b174f0f8d3180c6aa0cbd5437da63d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ffeb1881cecc932e9c8c7bb70672a6f03fefc534
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334736"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808164"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 
@@ -34,7 +35,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

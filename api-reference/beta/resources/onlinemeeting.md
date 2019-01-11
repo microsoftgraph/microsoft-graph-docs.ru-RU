@@ -2,12 +2,13 @@
 title: Тип ресурса onlineMeeting
 description: Сбор сведений о собрании, включая присоединения к URL-адрес, в список участников и описание.
 author: VinodRavichandran
-ms.openlocfilehash: 3a2b26ac212bd7a77428dab9f5618db8165de65b
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: b1a0b09c0e7c792b0a9662c08daecd212c027c89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805161"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -25,21 +26,21 @@ ms.locfileid: "27380480"
 
 | Свойство                  | Тип                                                   | Описание                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| accessLevel               | String                                                 | Уровень доступа, который управляет допуска на собрание по сети. Возможные значения: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
+| accessLevel               | Строка                                                 | Уровень доступа, который управляет допуска на собрание по сети. Возможные значения: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | Представляет телефона данные для доступа к onlineMeeting. |
 | canceledDateTime          | DateTime                                               | Время, когда приглашение на собрание было отменено. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | Chat, связанного с этого собрания. |
 | creationDateTime          | DateTime                                               | Время создания собрания. Только для чтения.
 | endDateTime               | DateTime                                               | Время окончания собрания. |
-| entryExitAnnouncement     | Boolean                                                | Состояние присутствия объявлений для собрания по сети. При включении извещения присутствия собрание по сети объявлять имена participantswho join в собрании по аудио. |
+| entryExitAnnouncement     | Логический                                                | Состояние присутствия объявлений для собрания по сети. При включении извещения присутствия собрание по сети объявлять имена participantswho join в собрании по аудио. |
 | expirationDateTime        | DateTime                                               | Абсолютный по Гринвичу (UTC) даты и времени, после которого можно удалить собрание по сети. Даты и времени должны быть от одного года до до десять лет после текущей датой и временем на сервере. |
-| id                        | String                                                 | Идентификатор, связанный с собрания по сети. Используется в начало HTTP-запросов в качестве идентификатора. Только для чтения. Сервер, созданный. |
+| id                        | Строка                                                 | Идентификатор, связанный с собрания по сети. Используется в начало HTTP-запросов в качестве идентификатора. Только для чтения. Сервер, созданный. |
 | isCancelled               | Boolean                                                | Приглашение на собрание была ли отменена. |
-| joinUrl                   | String                                                 | URL-адрес, используемый при собрание по сети, связанное с веб. |
-| meetingType               | String                                                 | Возможные значения: `meetNow`, `scheduled`, `recurring`,`broadcast` |
+| joinUrl                   | Строка                                                 | URL-адрес, используемый при собрание по сети, связанное с веб. |
+| meetingType               | Строка                                                 | Возможные значения: `meetNow`, `scheduled`, `recurring`,`broadcast` |
 | participants              | [meetingParticipants](meetingparticipants.md)          | Участники, связанные с собрания по сети.  Сюда входят Организатор и участники. |
 | startDateTime             | DateTime                                               | Запустите время собрания. |
-| subject                   | String                                                 | Тема собрания по сети. |
+| subject                   | Строка                                                 | Тема собрания по сети. |
 
 ## <a name="relationships"></a>Связи
 Нет

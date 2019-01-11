@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerRecentPlanReference
 description: 'Ресурс **plannerRecentPlanReference** введите repesents ссылку на plannerPlan, недавно просмотренный пользователя. '
-ms.openlocfilehash: ac774ffbf7ebdfe45211cf50c2ce065921de30f1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6ac17cd0a99d384cbc1f42e2e0d243c582204101
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805679"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>Тип ресурса plannerRecentPlanReference
 
@@ -17,10 +18,10 @@ ms.locfileid: "27075532"
 Рекомендуется уведомлять пользователей есть несоответствия приложений и обновлять записи.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |lastAccessedDateTime|DateTimeOffset|Дата и время, планирование последнего просмотра пользователем. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|planTitle|String|Название плана во время пользователь просматривать его.|
+|planTitle|Строка|Название плана во время пользователь просматривать его.|
 
 ## <a name="json-representation"></a>Представление JSON
 

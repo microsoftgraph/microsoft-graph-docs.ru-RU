@@ -2,12 +2,13 @@
 title: Тип перечисления androidForWorkSyncStatus
 description: Состояние синхронизации клиента с помощью API EMM Google
 author: tfitzmac
-ms.openlocfilehash: 937abe8d814144f1bda65f87f48ac363ad71d76e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0149c76c3f06a0c8cad754431b852d637ba185d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807919"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>Тип перечисления androidForWorkSyncStatus
 
@@ -24,7 +25,7 @@ ms.locfileid: "27360895"
 |androidForWorkApiError|2|Н/Д|
 |managementServiceError|3|Н/Д|
 |unknownError|4|Н/Д|
-|none|5|Н/Д|
+|Нет|5|Н/Д|
 
 
 

@@ -2,12 +2,13 @@
 title: Перечисление объектов managedEBookAssignment
 description: Список свойств и связей объектов managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: 43625693f6510eb632f4c361cebab07066ae058f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdcfbca3e08e87eb6811162a1c2a9ea833b29d3f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808087"
 ---
 # <a name="list-managedebookassignments"></a>Перечисление объектов managedEBookAssignment
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

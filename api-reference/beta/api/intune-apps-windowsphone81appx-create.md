@@ -2,12 +2,13 @@
 title: Создание windowsPhone81AppX
 description: Создание нового объекта windowsPhone81AppX.
 author: tfitzmac
-ms.openlocfilehash: ac8501c6c68f1efe2fb99a39c659868944254048
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6ad7aa7f33fca7222e9cafbe431c3773ffadfdb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325713"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808584"
 ---
 # <a name="create-windowsphone81appx"></a>Создание windowsPhone81AppX
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта windowsPhone81AppX.
 
 В следующей таблице показаны свойства, которые необходимы для создания windowsPhone81AppX.
@@ -71,8 +72,8 @@ POST /deviceAppManagement/mobileApps
 |identityPublisherHash|String|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|phoneProductIdentifier|String.|Идентификатор продукта телефона.|
-|phonePublisherId|String.|Publisher с идентификатором телефона.|
+|phoneProductIdentifier|Строка|Идентификатор продукта телефона.|
+|phonePublisherId|Строка|Publisher с идентификатором телефона.|
 |identityVersion|String|Версия удостоверения.|
 
 

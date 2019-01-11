@@ -1,12 +1,13 @@
 ---
 title: Список записей
 description: 'Получение публикаций из указанной цепочки. Можно указать родительский беседы и поток, или, '
-ms.openlocfilehash: 35c4c178b02cb700ab21a324c29a4522203fad19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 60c8cb3e369653c1ae5440a64195fb3ecfbfb513
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805322"
 ---
 # <a name="list-posts"></a>Список записей
 
@@ -35,7 +36,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -52,8 +53,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

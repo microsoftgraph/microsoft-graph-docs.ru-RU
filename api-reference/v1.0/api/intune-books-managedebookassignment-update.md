@@ -2,12 +2,13 @@
 title: Обновление объекта managedEBookAssignment
 description: Обновление свойств объекта managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: 041d1b16754c7c3f8047a40073590d5647e91f3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cad8ce31a9de355b79407ee4658ea13ef0415732
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326504"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804965"
 ---
 # <a name="update-managedebookassignment"></a>Обновление объекта managedEBookAssignment
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

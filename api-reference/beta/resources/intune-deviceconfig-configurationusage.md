@@ -2,12 +2,13 @@
 title: Тип перечисления configurationUsage
 description: Возможные значения списка ConfigurationUsage.
 author: tfitzmac
-ms.openlocfilehash: 7ecfbb77404e3f50c484680c7e3868ae3da3c228
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2bbbd0b88ff4c81c141a687b106ac1795f75b6b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311643"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808318"
 ---
 # <a name="configurationusage-enum-type"></a>Тип перечисления configurationUsage
 
@@ -21,7 +22,7 @@ ms.locfileid: "27311643"
 |:---|:---|:---|
 |заблокировано|0|Не разрешены.|
 |Обязательный|1|Обязательный.|
-|разрешено|2|Необязательный атрибут.|
+|разрешено|2|Необязательное.|
 
 
 

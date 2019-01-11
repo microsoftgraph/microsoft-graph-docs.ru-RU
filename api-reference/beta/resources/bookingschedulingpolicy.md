@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса bookingSchedulingPolicy
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 7a16e9a2ec4e64978dd3c20f7510cfd42d76e826
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 15f9e0dea22a7cfb5eab437bcc023fe3387bb2ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805365"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>Тип ресурса bookingSchedulingPolicy
 
@@ -15,7 +16,7 @@ ms.locfileid: "27078234"
 Представляет набор политик, определяющие способ создания встреч в календаре Microsoft резервирования.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowStaffSelection|Логический|True, если разрешить пользователям выбрать определенным человеком резервирования.|
 |maximumAdvance|Продолжительность|Максимальное количество дней, которые могут поступать резервирования. Следует формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|

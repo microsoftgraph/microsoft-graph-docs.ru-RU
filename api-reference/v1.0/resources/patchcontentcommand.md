@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса patchContentCommand
 description: Изменения, которые необходимо внести на страницу OneNote в запросе PATCH.
-ms.openlocfilehash: bfbdceeda0294540f701f9fa458030834e7d7850
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb0900490b3fe05e6fb90dc4ab8252620bf43983
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804538"
 ---
 # <a name="patchcontentcommand-resource-type"></a>Тип ресурса patchContentCommand
 
@@ -40,7 +41,7 @@ ms.locfileid: "27025446"
 |action|onenotePatchActionType|Действие, которое требуется выполнить с целевым элементом. Возможные значения: `replace`, `append`, `delete`, `insert`, или `prepend`.|
 |content|String|Строка правильно оформленного HTML-кода, который необходимо добавить на страницу, а также двоичные данные любого изображения или файла. Если контент содержит двоичные данные, необходимо отправить запрос с использованием типа контента `multipart/form-data` с частью Commands. |
 |position|onenotePatchInsertPosition|Расположение относительно целевого элемента, куда нужно добавить указанное содержимое. Возможные значения: `after` (по умолчанию) или `before`.|
-|target|String|Элемент для обновления. Значение этого свойства должно представлять собой `#<data-id>`, созданный идентификатор `<id>` элемента либо ключевое слово `body` или `title`.|
+|target|Строка|Элемент для обновления. Значение этого свойства должно представлять собой `#<data-id>`, созданный идентификатор `<id>` элемента либо ключевое слово `body` или `title`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

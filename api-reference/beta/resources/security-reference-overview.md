@@ -1,12 +1,13 @@
 ---
 title: Использование Microsoft Graph API для обнаружения угроз безопасности и защиты (Предварительная версия)
 description: Сложность угрозы безопасности по-прежнему производится перевод, влияния на глобальной экономики. Повреждение чаще всего осуществляется за срок перед организациями даже обнаружения его. Microsoft Graph можно использовать для построения или расширить, объединение и соотнесения оповещение системы безопасности из нескольких источников, обнаружения угроз, которые пытаются злоумышленнику удостоверения пользователя, unlock контекстных данных для автоматизации и информирование расследований решения по обеспечению безопасности операции по безопасности для повышения эффективности.
-ms.openlocfilehash: 48cfbc2ea2bfb0ce47e77d3d37e971c0a19b9158
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f728ddbee32a25742b5e0062ff442c552121c353
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804454"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Использование Microsoft Graph API для обнаружения угроз безопасности и защиты (Предварительная версия)
 

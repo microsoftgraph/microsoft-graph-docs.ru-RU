@@ -2,12 +2,13 @@
 title: Получение объекта managedDeviceMobileAppConfigurationDeviceSummary
 description: Чтение свойств и связей объекта managedDeviceMobileAppConfigurationDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: 12a9f069f4a34bc0f38c85c0f0a4a1566237e5e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df5a9fbb686f4deaa324c8fdb4858e5b6686e6db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805987"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>Получение объекта managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

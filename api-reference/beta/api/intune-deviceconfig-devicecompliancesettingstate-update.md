@@ -2,12 +2,13 @@
 title: Update deviceComplianceSettingState
 description: Обновление свойств объекта deviceComplianceSettingState.
 author: tfitzmac
-ms.openlocfilehash: 699ddfebe1e333c97d6fc186e4d65e40c4f367aa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f607b699f4a89d925f099724851d92800ed9ddc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348211"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807138"
 ---
 # <a name="update-devicecompliancesettingstate"></a>Update deviceComplianceSettingState
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

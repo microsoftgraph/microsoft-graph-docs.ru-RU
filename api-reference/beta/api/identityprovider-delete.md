@@ -1,12 +1,13 @@
 ---
 title: Удаление identityProvider
 description: Удаление существующих identityProvider.
-ms.openlocfilehash: ac6f8cafa72b94891a540c05c2d4e5e2f32e23c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 35689037d4f6a564ee3e1e40d18401ef793ef474
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808297"
 ---
 # <a name="delete-identityprovider"></a>Удаление identityProvider
 
@@ -39,7 +40,7 @@ DELETE /identityProviders/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

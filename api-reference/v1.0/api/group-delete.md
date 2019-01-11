@@ -2,12 +2,13 @@
 title: Удаление группы
 description: Удаление группы.
 author: dkershaw10
-ms.openlocfilehash: 6377c3d7865ebcc1ef13a649afbde083163e7048
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9d2e9cbe3a86906c815178b570cd6d7980ac89e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326280"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808311"
 ---
 # <a name="delete-group"></a>Удаление группы
 Удаление группы.
@@ -32,7 +33,7 @@ DELETE /groups/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

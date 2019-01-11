@@ -2,12 +2,13 @@
 title: Создание объекта managedMobileApp
 description: Создание объекта managedMobileApp.
 author: tfitzmac
-ms.openlocfilehash: 8f431dd7d2f8e64ea9421f1558d3dca411b92c51
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a79f8ce7e6cbad49c48f5b9b06bf7a86c8e414c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805182"
 ---
 # <a name="create-managedmobileapp"></a>Создание объекта managedMobileApp
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

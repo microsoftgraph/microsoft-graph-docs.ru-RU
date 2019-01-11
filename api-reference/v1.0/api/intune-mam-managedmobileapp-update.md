@@ -2,12 +2,13 @@
 title: Обновление объекта managedMobileApp
 description: Обновление свойств объекта managedMobileApp.
 author: tfitzmac
-ms.openlocfilehash: 7dc10fa3d7272c2042712d385425504885020f1e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6cc9c8df05db8bf9b7c0eb6e53f635c816e114ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321100"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807254"
 ---
 # <a name="update-managedmobileapp"></a>Обновление объекта managedMobileApp
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

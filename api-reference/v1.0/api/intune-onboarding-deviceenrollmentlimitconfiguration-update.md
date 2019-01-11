@@ -2,12 +2,13 @@
 title: Обновление объекта deviceEnrollmentLimitConfiguration
 description: Обновление свойств объекта deviceEnrollmentLimitConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 32c75e34d3dc1e409c55497fe61d6c067c046a81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f41238c42159f40821b2913f51e0b46a1f21725d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345082"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804916"
 ---
 # <a name="update-deviceenrollmentlimitconfiguration"></a>Обновление объекта deviceEnrollmentLimitConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

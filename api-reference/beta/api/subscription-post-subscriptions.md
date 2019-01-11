@@ -1,12 +1,13 @@
 ---
 title: Создание подписки
 description: Подписывается прослушиватель для получения уведомлений при изменении данных в Microsoft Graph ресурсов.
-ms.openlocfilehash: f524213871f8a9216ad7f7ec8da4ffb521a4a2aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b7f465e556d1fb752bcb2d3c962fd6444d462c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082318"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805056"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -24,8 +25,8 @@ ms.locfileid: "27082318"
 | Беседы               | Group.Read.All      |
 | События                      | Calendars.Read      |
 | Сообщения                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| Группы                      | Group.Read.All      |
+| Пользователи                       | User.Read.All       |
 | Диск (хранилище OneDrive пользователя)    | Files.ReadWrite.     |
 | На дисках (содержимое общих SharePoint и диски) | Files.ReadWrite.All |
 | Предупреждение системы безопасности              | SecurityEvents.ReadWrite.All |
@@ -83,16 +84,15 @@ Content-type: application/json
 |Почта|me/mailfolders('inbox')/messages<br />me/messages|
 |Контакты|me/contacts|
 |Календари|me/events|
-|Users|users|
-|Groups|группы|
+|Пользователи|users|
+|Группы|группы|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
 |Предупреждение системы безопасности|Оповещение системы безопасности /? $filter = состояние eq «Создать»|
 
 ##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

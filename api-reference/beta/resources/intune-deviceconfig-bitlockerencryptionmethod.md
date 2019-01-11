@@ -2,12 +2,13 @@
 title: Тип перечисления bitLockerEncryptionMethod
 description: Типы BitLockerEncryptionMethod
 author: tfitzmac
-ms.openlocfilehash: 2b3689442706da757e30d06835c6d2f90c26a9d8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 915aea15d3dd35428f973d0aa34bd7178863a4cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806890"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>Тип перечисления bitLockerEncryptionMethod
 

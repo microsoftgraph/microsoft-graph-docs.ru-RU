@@ -2,12 +2,13 @@
 title: Действие disconnect
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 99fbd3bc1f16a96252deaf573c545115bab8106d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9f49aa57400d15410c31cc4a45793ef0e230ab5f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329976"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808199"
 ---
 # <a name="disconnect-action"></a>Действие disconnect
 
@@ -37,11 +38,11 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
