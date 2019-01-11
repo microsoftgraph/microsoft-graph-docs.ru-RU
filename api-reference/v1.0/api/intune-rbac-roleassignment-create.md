@@ -2,28 +2,29 @@
 title: Создание объекта roleAssignment
 description: Создание объекта roleAssignment.
 author: tfitzmac
-ms.openlocfilehash: ac3a8ee5b007c918a9b655cb2f396c872f9f2d92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 769deaffbb153fe54bfe2e32c936868f9480efc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362239"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871031"
 ---
-# <a name="create-roleassignment"></a><span data-ttu-id="f2519-103">Создание объекта roleAssignment</span><span class="sxs-lookup"><span data-stu-id="f2519-103">Create roleAssignment</span></span>
+# <a name="create-roleassignment"></a><span data-ttu-id="2a4fd-103">Создание объекта roleAssignment</span><span class="sxs-lookup"><span data-stu-id="2a4fd-103">Create roleAssignment</span></span>
 
-> <span data-ttu-id="f2519-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="f2519-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="2a4fd-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="f2519-105">Создание объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="f2519-105">Create a new [roleAssignment](../resources/intune-rbac-roleassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="f2519-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="f2519-106">Prerequisites</span></span>
-<span data-ttu-id="f2519-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2519-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2a4fd-105">Создание объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="2a4fd-105">Create a new [roleAssignment](../resources/intune-rbac-roleassignment.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2a4fd-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="2a4fd-106">Prerequisites</span></span>
+<span data-ttu-id="2a4fd-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a4fd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f2519-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f2519-109">Permission type</span></span>|<span data-ttu-id="f2519-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f2519-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="2a4fd-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2a4fd-109">Permission type</span></span>|<span data-ttu-id="2a4fd-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="2a4fd-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f2519-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f2519-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f2519-112">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2519-112">DeviceManagementRBAC.ReadWrite.All</span></span>|
-|<span data-ttu-id="f2519-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f2519-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f2519-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f2519-114">Not supported.</span></span>|
-|<span data-ttu-id="f2519-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f2519-115">Application</span></span>|<span data-ttu-id="f2519-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f2519-116">Not supported.</span></span>|
+|<span data-ttu-id="2a4fd-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2a4fd-111">Delegated (work or school account)</span></span>|<span data-ttu-id="2a4fd-112">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2a4fd-112">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="2a4fd-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2a4fd-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2a4fd-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-114">Not supported.</span></span>|
+|<span data-ttu-id="2a4fd-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2a4fd-115">Application</span></span>|<span data-ttu-id="2a4fd-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f2519-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f2519-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2a4fd-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2a4fd-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -32,33 +33,33 @@ ms.locfileid: "27362239"
 POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f2519-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f2519-118">Request headers</span></span>
-|<span data-ttu-id="f2519-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f2519-119">Header</span></span>|<span data-ttu-id="f2519-120">Значение</span><span class="sxs-lookup"><span data-stu-id="f2519-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2a4fd-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2a4fd-118">Request headers</span></span>
+|<span data-ttu-id="2a4fd-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2a4fd-119">Header</span></span>|<span data-ttu-id="2a4fd-120">Значение</span><span class="sxs-lookup"><span data-stu-id="2a4fd-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f2519-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f2519-121">Authorization</span></span>|<span data-ttu-id="f2519-122">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="f2519-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f2519-123">Accept</span><span class="sxs-lookup"><span data-stu-id="f2519-123">Accept</span></span>|<span data-ttu-id="f2519-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f2519-124">application/json</span></span>|
+|<span data-ttu-id="2a4fd-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a4fd-121">Authorization</span></span>|<span data-ttu-id="2a4fd-122">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="2a4fd-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2a4fd-123">Accept</span><span class="sxs-lookup"><span data-stu-id="2a4fd-123">Accept</span></span>|<span data-ttu-id="2a4fd-124">application/json</span><span class="sxs-lookup"><span data-stu-id="2a4fd-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f2519-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f2519-125">Request body</span></span>
-<span data-ttu-id="f2519-126">В теле запроса добавьте представление объекта roleAssignment в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f2519-126">In the request body, supply a JSON representation for the roleAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2a4fd-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2a4fd-125">Request body</span></span>
+<span data-ttu-id="2a4fd-126">В теле запроса добавьте представление объекта roleAssignment в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-126">In the request body, supply a JSON representation for the roleAssignment object.</span></span>
 
-<span data-ttu-id="f2519-127">В приведенной ниже таблице указаны свойства, необходимые при создании объекта roleAssignment.</span><span class="sxs-lookup"><span data-stu-id="f2519-127">The following table shows the properties that are required when you create the roleAssignment.</span></span>
+<span data-ttu-id="2a4fd-127">В приведенной ниже таблице указаны свойства, необходимые при создании объекта roleAssignment.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-127">The following table shows the properties that are required when you create the roleAssignment.</span></span>
 
-|<span data-ttu-id="f2519-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="f2519-128">Property</span></span>|<span data-ttu-id="f2519-129">Тип</span><span class="sxs-lookup"><span data-stu-id="f2519-129">Type</span></span>|<span data-ttu-id="f2519-130">Описание</span><span class="sxs-lookup"><span data-stu-id="f2519-130">Description</span></span>|
+|<span data-ttu-id="2a4fd-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="2a4fd-128">Property</span></span>|<span data-ttu-id="2a4fd-129">Тип</span><span class="sxs-lookup"><span data-stu-id="2a4fd-129">Type</span></span>|<span data-ttu-id="2a4fd-130">Описание</span><span class="sxs-lookup"><span data-stu-id="2a4fd-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f2519-131">id</span><span class="sxs-lookup"><span data-stu-id="f2519-131">id</span></span>|<span data-ttu-id="f2519-132">Строка</span><span class="sxs-lookup"><span data-stu-id="f2519-132">String</span></span>|<span data-ttu-id="f2519-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="f2519-133">Key of the entity.</span></span> <span data-ttu-id="f2519-134">Это свойство доступно только для чтения и создается автоматически.</span><span class="sxs-lookup"><span data-stu-id="f2519-134">This is read-only and automatically generated.</span></span>|
-|<span data-ttu-id="f2519-135">displayName</span><span class="sxs-lookup"><span data-stu-id="f2519-135">displayName</span></span>|<span data-ttu-id="f2519-136">String</span><span class="sxs-lookup"><span data-stu-id="f2519-136">String</span></span>|<span data-ttu-id="f2519-137">Отображаемое или понятное имя назначения роли.</span><span class="sxs-lookup"><span data-stu-id="f2519-137">The display or friendly name of the role Assignment.</span></span>|
-|<span data-ttu-id="f2519-138">описание</span><span class="sxs-lookup"><span data-stu-id="f2519-138">description</span></span>|<span data-ttu-id="f2519-139">String</span><span class="sxs-lookup"><span data-stu-id="f2519-139">String</span></span>|<span data-ttu-id="f2519-140">Описание назначения роли.</span><span class="sxs-lookup"><span data-stu-id="f2519-140">Description of the Role Assignment.</span></span>|
-|<span data-ttu-id="f2519-141">resourceScopes</span><span class="sxs-lookup"><span data-stu-id="f2519-141">resourceScopes</span></span>|<span data-ttu-id="f2519-142">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="f2519-142">String collection</span></span>|<span data-ttu-id="f2519-143">Список идентификаторов групп безопасности с элементами области применения ролей.</span><span class="sxs-lookup"><span data-stu-id="f2519-143">List of ids of role scope member security groups.</span></span>  <span data-ttu-id="f2519-144">Эти идентификаторы берутся из Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="f2519-144">These are IDs from Azure Active Directory.</span></span>|
+|<span data-ttu-id="2a4fd-131">id</span><span class="sxs-lookup"><span data-stu-id="2a4fd-131">id</span></span>|<span data-ttu-id="2a4fd-132">Строка</span><span class="sxs-lookup"><span data-stu-id="2a4fd-132">String</span></span>|<span data-ttu-id="2a4fd-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-133">Key of the entity.</span></span> <span data-ttu-id="2a4fd-134">Это свойство доступно только для чтения и создается автоматически.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-134">This is read-only and automatically generated.</span></span>|
+|<span data-ttu-id="2a4fd-135">displayName</span><span class="sxs-lookup"><span data-stu-id="2a4fd-135">displayName</span></span>|<span data-ttu-id="2a4fd-136">String</span><span class="sxs-lookup"><span data-stu-id="2a4fd-136">String</span></span>|<span data-ttu-id="2a4fd-137">Отображаемое или понятное имя назначения роли.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-137">The display or friendly name of the role Assignment.</span></span>|
+|<span data-ttu-id="2a4fd-138">описание</span><span class="sxs-lookup"><span data-stu-id="2a4fd-138">description</span></span>|<span data-ttu-id="2a4fd-139">String</span><span class="sxs-lookup"><span data-stu-id="2a4fd-139">String</span></span>|<span data-ttu-id="2a4fd-140">Описание назначения роли.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-140">Description of the Role Assignment.</span></span>|
+|<span data-ttu-id="2a4fd-141">resourceScopes</span><span class="sxs-lookup"><span data-stu-id="2a4fd-141">resourceScopes</span></span>|<span data-ttu-id="2a4fd-142">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="2a4fd-142">String collection</span></span>|<span data-ttu-id="2a4fd-143">Список идентификаторов групп безопасности с элементами области применения ролей.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-143">List of ids of role scope member security groups.</span></span>  <span data-ttu-id="2a4fd-144">Эти идентификаторы берутся из Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-144">These are IDs from Azure Active Directory.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="f2519-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2519-145">Response</span></span>
-<span data-ttu-id="f2519-146">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [roleAssignment](../resources/intune-rbac-roleassignment.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f2519-146">If successful, this method returns a `201 Created` response code and a [roleAssignment](../resources/intune-rbac-roleassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2a4fd-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="2a4fd-145">Response</span></span>
+<span data-ttu-id="2a4fd-146">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [roleAssignment](../resources/intune-rbac-roleassignment.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-146">If successful, this method returns a `201 Created` response code and a [roleAssignment](../resources/intune-rbac-roleassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f2519-147">Пример</span><span class="sxs-lookup"><span data-stu-id="f2519-147">Example</span></span>
-### <a name="request"></a><span data-ttu-id="f2519-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="f2519-148">Request</span></span>
-<span data-ttu-id="f2519-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f2519-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2a4fd-147">Пример</span><span class="sxs-lookup"><span data-stu-id="2a4fd-147">Example</span></span>
+### <a name="request"></a><span data-ttu-id="2a4fd-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="2a4fd-148">Request</span></span>
+<span data-ttu-id="2a4fd-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-149">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 Content-type: application/json
@@ -74,8 +75,8 @@ Content-length: 193
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="f2519-150">Ответ</span><span class="sxs-lookup"><span data-stu-id="f2519-150">Response</span></span>
-<span data-ttu-id="f2519-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="f2519-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2a4fd-150">Ответ</span><span class="sxs-lookup"><span data-stu-id="2a4fd-150">Response</span></span>
+<span data-ttu-id="2a4fd-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="2a4fd-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

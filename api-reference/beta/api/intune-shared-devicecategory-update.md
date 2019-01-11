@@ -2,36 +2,37 @@
 title: Обновление объекта deviceCategory
 description: Обновление свойств объекта deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: 8676067ff4ce34358bcfd8400d28e1d73bd11f68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c9a8babcab2eb49b28dee118a6912fcd8923e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872824"
 ---
-# <a name="update-devicecategory"></a><span data-ttu-id="d9c85-103">Обновление объекта deviceCategory</span><span class="sxs-lookup"><span data-stu-id="d9c85-103">Update deviceCategory</span></span>
+# <a name="update-devicecategory"></a><span data-ttu-id="dcac9-103">Обновление объекта deviceCategory</span><span class="sxs-lookup"><span data-stu-id="dcac9-103">Update deviceCategory</span></span>
 
-> <span data-ttu-id="d9c85-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="d9c85-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d9c85-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9c85-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="dcac9-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="dcac9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="dcac9-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dcac9-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="d9c85-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="d9c85-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="dcac9-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="dcac9-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="d9c85-107">Обновление свойств объекта [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="d9c85-107">Update the properties of a [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
+<span data-ttu-id="dcac9-107">Обновление свойств объекта [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="dcac9-107">Update the properties of a [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d9c85-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="d9c85-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="dcac9-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="dcac9-108">Prerequisites</span></span>
 
-<span data-ttu-id="d9c85-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9c85-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dcac9-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dcac9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d9c85-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d9c85-111">Permission type</span></span>|<span data-ttu-id="d9c85-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="d9c85-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="dcac9-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dcac9-111">Permission type</span></span>|<span data-ttu-id="dcac9-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="dcac9-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d9c85-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d9c85-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="d9c85-114">&nbsp; &nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="d9c85-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="d9c85-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9c85-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-| <span data-ttu-id="d9c85-116">&nbsp;&nbsp; **Адаптация новых сотрудников**</span><span class="sxs-lookup"><span data-stu-id="d9c85-116">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="d9c85-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d9c85-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="d9c85-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d9c85-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d9c85-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9c85-119">Not supported.</span></span>|
-|<span data-ttu-id="d9c85-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d9c85-120">Application</span></span>|<span data-ttu-id="d9c85-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9c85-121">Not supported.</span></span>|
+|<span data-ttu-id="dcac9-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dcac9-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="dcac9-114">&nbsp; &nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="dcac9-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="dcac9-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dcac9-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+| <span data-ttu-id="dcac9-116">&nbsp;&nbsp; **Адаптация новых сотрудников**</span><span class="sxs-lookup"><span data-stu-id="dcac9-116">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="dcac9-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dcac9-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="dcac9-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dcac9-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dcac9-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dcac9-119">Not supported.</span></span>|
+|<span data-ttu-id="dcac9-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="dcac9-120">Application</span></span>|<span data-ttu-id="dcac9-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dcac9-121">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d9c85-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d9c85-122">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dcac9-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dcac9-122">HTTP Request</span></span>
 
-<span data-ttu-id="d9c85-123">**Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="d9c85-123">**Device management**</span></span>
+<span data-ttu-id="dcac9-123">**Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="dcac9-123">**Device management**</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,7 +42,7 @@ ms.locfileid: "27321520"
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-<span data-ttu-id="d9c85-124">**На использование доски**</span><span class="sxs-lookup"><span data-stu-id="d9c85-124">**On-boarding**</span></span>
+<span data-ttu-id="dcac9-124">**На использование доски**</span><span class="sxs-lookup"><span data-stu-id="dcac9-124">**On-boarding**</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -51,36 +52,36 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d9c85-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d9c85-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="dcac9-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dcac9-125">Request headers</span></span>
 
-|<span data-ttu-id="d9c85-126">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d9c85-126">Header</span></span>|<span data-ttu-id="d9c85-127">Значение</span><span class="sxs-lookup"><span data-stu-id="d9c85-127">Value</span></span>|
+|<span data-ttu-id="dcac9-126">Заголовок</span><span class="sxs-lookup"><span data-stu-id="dcac9-126">Header</span></span>|<span data-ttu-id="dcac9-127">Значение</span><span class="sxs-lookup"><span data-stu-id="dcac9-127">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d9c85-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d9c85-128">Authorization</span></span>|<span data-ttu-id="d9c85-129">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="d9c85-129">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d9c85-130">Accept</span><span class="sxs-lookup"><span data-stu-id="d9c85-130">Accept</span></span>|<span data-ttu-id="d9c85-131">application/json</span><span class="sxs-lookup"><span data-stu-id="d9c85-131">application/json</span></span>|
+|<span data-ttu-id="dcac9-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="dcac9-128">Authorization</span></span>|<span data-ttu-id="dcac9-129">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="dcac9-129">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="dcac9-130">Accept</span><span class="sxs-lookup"><span data-stu-id="dcac9-130">Accept</span></span>|<span data-ttu-id="dcac9-131">application/json</span><span class="sxs-lookup"><span data-stu-id="dcac9-131">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d9c85-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d9c85-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="dcac9-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="dcac9-132">Request body</span></span>
 
-<span data-ttu-id="d9c85-133">В теле запроса добавьте представление объекта [deviceCategory](../resources/intune-shared-devicecategory.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d9c85-133">In the request body, supply a JSON representation for the [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
+<span data-ttu-id="dcac9-133">В теле запроса добавьте представление объекта [deviceCategory](../resources/intune-shared-devicecategory.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dcac9-133">In the request body, supply a JSON representation for the [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
 
-<span data-ttu-id="d9c85-134">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="d9c85-134">The following table shows the properties that are required when you create the [deviceCategory](../resources/intune-shared-devicecategory.md).</span></span>
+<span data-ttu-id="dcac9-134">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="dcac9-134">The following table shows the properties that are required when you create the [deviceCategory](../resources/intune-shared-devicecategory.md).</span></span>
 
-|<span data-ttu-id="d9c85-135">Свойство</span><span class="sxs-lookup"><span data-stu-id="d9c85-135">Property</span></span>|<span data-ttu-id="d9c85-136">Тип</span><span class="sxs-lookup"><span data-stu-id="d9c85-136">Type</span></span>|<span data-ttu-id="d9c85-137">Описание</span><span class="sxs-lookup"><span data-stu-id="d9c85-137">Description</span></span>|
+|<span data-ttu-id="dcac9-135">Свойство</span><span class="sxs-lookup"><span data-stu-id="dcac9-135">Property</span></span>|<span data-ttu-id="dcac9-136">Тип</span><span class="sxs-lookup"><span data-stu-id="dcac9-136">Type</span></span>|<span data-ttu-id="dcac9-137">Описание</span><span class="sxs-lookup"><span data-stu-id="dcac9-137">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d9c85-138">id</span><span class="sxs-lookup"><span data-stu-id="d9c85-138">id</span></span>|<span data-ttu-id="d9c85-139">Строка</span><span class="sxs-lookup"><span data-stu-id="d9c85-139">String</span></span>|<span data-ttu-id="d9c85-140">Уникальный идентификатор категории устройства.</span><span class="sxs-lookup"><span data-stu-id="d9c85-140">Unique identifier for the device category.</span></span> <span data-ttu-id="d9c85-141">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="d9c85-141">Read-only.</span></span>|
-|<span data-ttu-id="d9c85-142">**Адаптация новых сотрудников**</span><span class="sxs-lookup"><span data-stu-id="d9c85-142">**Onboarding**</span></span>|
-|<span data-ttu-id="d9c85-143">описание</span><span class="sxs-lookup"><span data-stu-id="d9c85-143">description</span></span>|<span data-ttu-id="d9c85-144">String</span><span class="sxs-lookup"><span data-stu-id="d9c85-144">String</span></span>|<span data-ttu-id="d9c85-145">Необязательное описание категории устройств.</span><span class="sxs-lookup"><span data-stu-id="d9c85-145">Optional description for the device category.</span></span>|
-|<span data-ttu-id="d9c85-146">displayName</span><span class="sxs-lookup"><span data-stu-id="d9c85-146">displayName</span></span>|<span data-ttu-id="d9c85-147">String</span><span class="sxs-lookup"><span data-stu-id="d9c85-147">String</span></span>|<span data-ttu-id="d9c85-148">Отображаемое имя категории устройств.</span><span class="sxs-lookup"><span data-stu-id="d9c85-148">Display name for the device category.</span></span>|
+|<span data-ttu-id="dcac9-138">id</span><span class="sxs-lookup"><span data-stu-id="dcac9-138">id</span></span>|<span data-ttu-id="dcac9-139">Строка</span><span class="sxs-lookup"><span data-stu-id="dcac9-139">String</span></span>|<span data-ttu-id="dcac9-140">Уникальный идентификатор категории устройства.</span><span class="sxs-lookup"><span data-stu-id="dcac9-140">Unique identifier for the device category.</span></span> <span data-ttu-id="dcac9-141">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="dcac9-141">Read-only.</span></span>|
+|<span data-ttu-id="dcac9-142">**Адаптация новых сотрудников**</span><span class="sxs-lookup"><span data-stu-id="dcac9-142">**Onboarding**</span></span>|
+|<span data-ttu-id="dcac9-143">описание</span><span class="sxs-lookup"><span data-stu-id="dcac9-143">description</span></span>|<span data-ttu-id="dcac9-144">String</span><span class="sxs-lookup"><span data-stu-id="dcac9-144">String</span></span>|<span data-ttu-id="dcac9-145">Необязательное описание категории устройств.</span><span class="sxs-lookup"><span data-stu-id="dcac9-145">Optional description for the device category.</span></span>|
+|<span data-ttu-id="dcac9-146">displayName</span><span class="sxs-lookup"><span data-stu-id="dcac9-146">displayName</span></span>|<span data-ttu-id="dcac9-147">String</span><span class="sxs-lookup"><span data-stu-id="dcac9-147">String</span></span>|<span data-ttu-id="dcac9-148">Отображаемое имя категории устройств.</span><span class="sxs-lookup"><span data-stu-id="dcac9-148">Display name for the device category.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d9c85-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="d9c85-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dcac9-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="dcac9-149">Response</span></span>
 
-<span data-ttu-id="d9c85-150">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceCategory](../resources/intune-shared-devicecategory.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="d9c85-150">If successful, this method returns a `200 OK` response code and an updated [deviceCategory](../resources/intune-shared-devicecategory.md) object in the response body.</span></span>
+<span data-ttu-id="dcac9-150">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceCategory](../resources/intune-shared-devicecategory.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="dcac9-150">If successful, this method returns a `200 OK` response code and an updated [deviceCategory](../resources/intune-shared-devicecategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d9c85-151">Пример</span><span class="sxs-lookup"><span data-stu-id="d9c85-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dcac9-151">Пример</span><span class="sxs-lookup"><span data-stu-id="dcac9-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d9c85-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="d9c85-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="dcac9-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="dcac9-152">Request</span></span>
 
-<span data-ttu-id="d9c85-153">Ниже приведены примеры запроса.</span><span class="sxs-lookup"><span data-stu-id="d9c85-153">Here are examples of the request.</span></span>
+<span data-ttu-id="dcac9-153">Ниже приведены примеры запроса.</span><span class="sxs-lookup"><span data-stu-id="dcac9-153">Here are examples of the request.</span></span>
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
@@ -95,9 +96,9 @@ Content-length: 82
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-### <a name="response"></a><span data-ttu-id="d9c85-154">Ответ</span><span class="sxs-lookup"><span data-stu-id="d9c85-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dcac9-154">Ответ</span><span class="sxs-lookup"><span data-stu-id="dcac9-154">Response</span></span>
 
-<span data-ttu-id="d9c85-155">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d9c85-155">Here is an example of the response.</span></span> <span data-ttu-id="d9c85-156">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="d9c85-156">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="d9c85-157">Свойства ответа будет отличаться в зависимости от контекста.</span><span class="sxs-lookup"><span data-stu-id="d9c85-157">Response properties will vary according to context.</span></span>
+<span data-ttu-id="dcac9-155">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="dcac9-155">Here is an example of the response.</span></span> <span data-ttu-id="dcac9-156">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="dcac9-156">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="dcac9-157">Свойства ответа будет отличаться в зависимости от контекста.</span><span class="sxs-lookup"><span data-stu-id="dcac9-157">Response properties will vary according to context.</span></span>
 
 ``` http
 HTTP/1.1 200 OK
