@@ -1,12 +1,13 @@
 ---
 title: Список businessFlowTemplates
 description: В Azure AD доступа к функции проверки, список всех объектов businessFlowTemplate.
-ms.openlocfilehash: 9c6dc976244c60151cb2c230430ab6b4d0dc4b43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 021a3c939c6642caf5200b5e9cc4e47b390019b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075374"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829500"
 ---
 # <a name="list-businessflowtemplates"></a>Список businessFlowTemplates
 
@@ -30,9 +31,9 @@ GET /businessFlowTemplates
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ
@@ -50,7 +51,7 @@ GET https://graph.microsoft.com/beta/businesFlowTemplates
 ```
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

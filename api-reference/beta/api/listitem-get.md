@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Получение записи из списка SharePoint
-ms.openlocfilehash: 240f9f285178407f167cfb66b790224aa24c35d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f023743f0780a0f79aff3c3235e139166dc90be1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080159"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846510"
 ---
 # <a name="get-an-item-in-a-list"></a>Получение элемента списка
 

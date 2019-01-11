@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса targetResourceGroup
 description: 'Указывает тип группы, которая изменилась из-за загрузки аудита. Содержит значения, как объединенные группам и Azure AD '
-ms.openlocfilehash: 3427f2401a0e93767f0c563842be323f66d9f21b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2cc7e0adb1a93394b64375d05dfb6a6e349bac55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851186"
 ---
 # <a name="targetresourcegroup-resource-type"></a>Тип ресурса targetResourceGroup
 Указывает тип группы, которая изменилась из-за загрузки аудита. Содержит значения, как объединенные группам и Azure AD 
@@ -14,9 +15,9 @@ ms.locfileid: "27078090"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupType|String| Возможные значения: `unifiedGroups`, `azureAD`, `unknownFutureValue`.|
+|groupType|Строка| Возможные значения: `unifiedGroups`, `azureAD`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

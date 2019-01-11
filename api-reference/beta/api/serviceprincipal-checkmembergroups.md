@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: checkMemberGroups'
 description: Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
-ms.openlocfilehash: bf16206e9029ddcf687738c3a7db5a0a27a43903
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f9eb06fdb871c2466dec753e3c3deb9c8f1b1590
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852502"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
@@ -32,7 +33,7 @@ POST /servicePrincipals/{id}/checkMemberGroups
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -64,8 +65,7 @@ Content-length: 44
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

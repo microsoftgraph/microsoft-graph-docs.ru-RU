@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта FormatProtection
 description: Обновление свойств объекта FormatProtection.
-ms.openlocfilehash: 691715a921ae98f725f26566fb144530f27330b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26e51babc4610c331563923c464db341d4517c51
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847644"
 ---
 # <a name="update-formatprotection"></a>Обновление объекта FormatProtection
 
@@ -33,7 +34,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -62,8 +63,7 @@ Content-length: 45
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

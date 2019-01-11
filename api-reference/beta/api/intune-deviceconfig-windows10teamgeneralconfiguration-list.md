@@ -2,12 +2,13 @@
 title: Перечисление объектов windows10TeamGeneralConfiguration
 description: Перечисление свойств и связей объектов windows10TeamGeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8776e14c41930ce84ee765e4a92fb467fdd01cfc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd0bb5e96bfe216d67865f4c55cdf1bba095a2e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315969"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847882"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Перечисление объектов windows10TeamGeneralConfiguration
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

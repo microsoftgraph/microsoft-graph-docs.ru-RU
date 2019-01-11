@@ -2,12 +2,13 @@
 title: Тип ресурса RangeBorder
 description: Представляет границу объекта.
 author: lumine2008
-ms.openlocfilehash: c6166e1cfebc0759ad25fda5c0e8ec471af07b11
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b20078b7d4d0cabf4c16e212fd3e9264cad1650
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359152"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830802"
 ---
 # <a name="rangeborder-resource-type"></a>Тип ресурса RangeBorder
 

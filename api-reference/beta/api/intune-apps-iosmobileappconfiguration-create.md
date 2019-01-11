@@ -2,12 +2,13 @@
 title: Создать iosMobileAppConfiguration
 description: Создание нового объекта iosMobileAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: e61a90540e0541fd9b14f4cad33e8ea9f95a803a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd5c5aabb8e23e4e9d4adf781c59847f5edc10eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854364"
 ---
 # <a name="create-iosmobileappconfiguration"></a>Создать iosMobileAppConfiguration
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

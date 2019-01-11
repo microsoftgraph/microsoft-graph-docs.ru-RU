@@ -2,12 +2,13 @@
 title: Обновление объекта deviceCompliancePolicySettingStateSummary
 description: Обновление свойств объекта deviceCompliancePolicySettingStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 87fb75ea6e0a059a83f17a06697131e6efa77a97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97eec7bba67552c21c208ed087aab40a096d47b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830025"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>Обновление объекта deviceCompliancePolicySettingStateSummary
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

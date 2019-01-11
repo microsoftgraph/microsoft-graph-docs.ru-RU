@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса androidManagedStoreAppConfiguration
 description: Содержит свойства, наследуемые свойства и действия для конфигурации мобильного приложения Android предприятия.
-ms.openlocfilehash: e9e92065d46d311f3e6891f9dc13fa0ab60ff2b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 53d8ad4e566bac9d96c467e459ac08bc2e4d011d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866355"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>Тип ресурса androidManagedStoreAppConfiguration
 
@@ -30,16 +31,16 @@ ms.locfileid: "27076480"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|id|Строка|Ключ объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |targetedMobileApps|Коллекция String|приложение-обработчик Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного объекта конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
-|описание|String|Администратор предоставил описание конфигурация устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|описание|Строка|Администратор предоставил описание конфигурация устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
-|displayName|String|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|displayName|Строка|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |packageId|String|Идентификатор приложения пакета конфигурации Android предприятия.|
-|payloadJson|String|Android корпоративного приложения конфигурации JSON полезных данных.|
+|payloadJson|Строка|Android корпоративного приложения конфигурации JSON полезных данных.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) коллекции|Список разрешений для Android и соответствующие действия разрешений.|
 
 ## <a name="relationships"></a>Связи

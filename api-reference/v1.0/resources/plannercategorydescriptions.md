@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerCategoryDescriptions
 description: 'Ресурс **plannerCategoryDescriptions** представляет описательные метки категорий, заданных для плана. Он принадлежит объекту сведений о плане. Можно задать до 6 категорий. '
-ms.openlocfilehash: e71cbd1f41d23747691b3738b5a46ff302a72168
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e8efd456602dd6805e5e9e9744db9c3d73f3dcbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875770"
 ---
 # <a name="plannercategorydescriptions-resource-type"></a>Тип ресурса plannerCategoryDescriptions
 

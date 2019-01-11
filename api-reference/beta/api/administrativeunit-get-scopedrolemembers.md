@@ -2,12 +2,13 @@
 title: Получение scopedRoleMember
 description: Получение определенных scopedRoleMembership ресурсов.
 author: lleonard-msft
-ms.openlocfilehash: a0a947895c7c172ae4e3f3a44566e5ea19e9dc8d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eb014bba18fabaeaf1bd2a118ed0adce3b15122d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304461"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829346"
 ---
 # <a name="get-a-scopedrolemember"></a>Получение scopedRoleMember
 
@@ -37,7 +38,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

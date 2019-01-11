@@ -2,12 +2,13 @@
 title: Создание объекта editionUpgradeConfiguration
 description: Создание объекта editionUpgradeConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9ea7bb6206b882f81cad3cfd62419dc887f04898
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a0b40ce0ffc32f50b3152f55d6aa44237c35016
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866950"
 ---
 # <a name="create-editionupgradeconfiguration"></a>Создание объекта editionUpgradeConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

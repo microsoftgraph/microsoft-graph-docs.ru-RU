@@ -2,12 +2,13 @@
 title: Тип ресурса outlookTaskGroup
 description: 'Группа папок (outlookTaskFolder), которые содержат задачи Outlook (коллекцию объектов outlookTask). '
 author: angelgolfer-ms
-ms.openlocfilehash: 9fed69e1401f2b11ae3630a3c4cef66fd9446920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e885c4c8cc2abe4b3890635e010d495267dc877
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359397"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878773"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>Тип ресурса outlookTaskGroup
 
@@ -34,7 +35,7 @@ ms.locfileid: "27359397"
 |changeKey|Строка|Версия групповой задачи.|
 |groupKey|Edm.Guid|Уникальный идентификатор GUID для группы задач.|
 |id|Строка|Уникальная строка идентификатор группы задач. Только для чтения.|
-|isDefaultGroup|Boolean.|Значение true, если группа задач является группу задач по умолчанию.|
+|isDefaultGroup|Логический|Значение true, если группа задач является группу задач по умолчанию.|
 |name|Строка|Имя группы задач.|
 
 ## <a name="relationships"></a>Связи

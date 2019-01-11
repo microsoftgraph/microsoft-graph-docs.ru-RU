@@ -2,12 +2,13 @@
 title: Создание androidWorkProfileCompliancePolicy
 description: Создание нового объекта androidWorkProfileCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: ef3b9b7d15eea1911a17747b845ca80341ae02a5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3acd506e40c9054ce3ca5d4128ed9cef2228f8f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339307"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846503"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>Создание androidWorkProfileCompliancePolicy
 
@@ -35,11 +36,11 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта androidWorkProfileCompliancePolicy.
 
 В следующей таблице показаны свойства, которые необходимы для создания androidWorkProfileCompliancePolicy.

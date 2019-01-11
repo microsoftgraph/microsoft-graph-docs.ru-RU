@@ -1,12 +1,13 @@
 ---
 title: Перечисление курсов
 description: 'Получение списка объектов курсов. Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах. '
-ms.openlocfilehash: 3df6b8115e68e341b45e5755dfff587f8f5e20d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f40169a9d9fcefff6ceb5231810bed1864f88001
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829997"
 ---
 # <a name="list-classes"></a>Перечисление курсов
 
@@ -37,7 +38,7 @@ GET /education/users/{id}/classes
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationClass](../resources/educationclass.md) в теле отклика.

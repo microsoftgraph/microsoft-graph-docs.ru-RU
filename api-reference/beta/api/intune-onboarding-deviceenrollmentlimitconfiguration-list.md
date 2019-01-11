@@ -2,12 +2,13 @@
 title: Перечисление объектов deviceEnrollmentLimitConfiguration
 description: Список свойств и связей объектов deviceEnrollmentLimitConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a0a69a87a2fb9ebebf7a26cc5095982c7bacd5fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed0970122783f7c134268db7910ab03e15029ba7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848712"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>Перечисление объектов deviceEnrollmentLimitConfiguration
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

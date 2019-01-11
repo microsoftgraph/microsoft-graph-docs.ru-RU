@@ -2,12 +2,13 @@
 title: Тип перечисления ratingFranceTelevisionType
 description: Метки TV оценки содержимого во Франции
 author: tfitzmac
-ms.openlocfilehash: f202b2e942e36e7c13052643a31ee0a984723f5d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 082591b7208e5fff3ed856aebe6d8f7a3e478051
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312217"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826343"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>Тип перечисления ratingFranceTelevisionType
 

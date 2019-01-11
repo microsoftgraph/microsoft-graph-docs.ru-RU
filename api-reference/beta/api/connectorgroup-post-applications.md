@@ -1,12 +1,13 @@
 ---
 title: Создание приложения
 description: Используйте этот интерфейс API для создания нового приложения.
-ms.openlocfilehash: 08300057f78671ce74dd98bd98f7d3182bde083d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e9d1c76f153c27ab3df24a93b44a570c2c1d836a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077926"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824670"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -31,9 +32,9 @@ POST /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .
 
 ## <a name="response"></a>Ответ
@@ -58,8 +59,7 @@ Content-length: 329
 ```
 В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

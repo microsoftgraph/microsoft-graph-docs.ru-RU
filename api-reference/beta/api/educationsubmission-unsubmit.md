@@ -2,12 +2,13 @@
 title: 'educationSubmission: unsubmit'
 description: 'Действие, которое указывает, что студента работает на отправки назначения после включения. Это действие может быть занято только учащегося. '
 author: dipakboyed
-ms.openlocfilehash: a61f2e9c05691266ae9248ca95700f173e0ee0b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 853dce22c7c79ffda7b823794259fa7be0363d02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304230"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829220"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 
@@ -35,7 +36,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

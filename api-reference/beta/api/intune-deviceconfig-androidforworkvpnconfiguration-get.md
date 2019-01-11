@@ -2,12 +2,13 @@
 title: Получение androidForWorkVpnConfiguration
 description: Чтение свойства и связи объекта androidForWorkVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8eee69d5304e72bfcbd27ede1bccb25368eba518
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0260905d52cda7a73847f1cf1dfee026da5ba1c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847651"
 ---
 # <a name="get-androidforworkvpnconfiguration"></a>Получение androidForWorkVpnConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

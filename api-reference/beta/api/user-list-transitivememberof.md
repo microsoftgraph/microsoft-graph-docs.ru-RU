@@ -1,12 +1,13 @@
 ---
 title: Доверия транзитивных член списка пользователей
 description: Получите групп, каталог ролей и административных единиц измерения, которыми пользователь. Этот запрос API доверия транзитивных и вернет все группы, которые пользователь является участником вложенных.
-ms.openlocfilehash: b507e7e0e54fcd37b4a31a9a6cf9e07b32e41244
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eadb9722bc323ea056d015ac15c8aed975306eee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887915"
 ---
 # <a name="list-user-transitive-memberof"></a>Доверия транзитивных член списка пользователей
 
@@ -43,7 +44,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 
@@ -67,8 +68,7 @@ GET https://graph.microsoft.com/beta/me/transitiveMemberOf
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",

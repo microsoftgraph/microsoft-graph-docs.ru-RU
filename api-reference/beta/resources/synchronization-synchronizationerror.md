@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса synchronizationError
 description: Представляет ошибки, возникшей во время синхронизации.
-ms.openlocfilehash: a1e3725151a4e36772cd3b6079f787370f4c85dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc6b58444ac56303bfd2e41f1fcae17658f6aea9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847245"
 ---
 # <a name="synchronizationerror-resource-type"></a>Тип ресурса synchronizationError
 
@@ -19,7 +20,7 @@ ms.locfileid: "27075585"
 <!-- Add descriptions for the properties. -->
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|code|String||
+|code|Строка||
 |message|String||
 |tenantActionable|Логический||
 

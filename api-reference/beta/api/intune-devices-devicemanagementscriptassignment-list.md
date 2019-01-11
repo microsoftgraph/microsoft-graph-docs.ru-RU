@@ -2,12 +2,13 @@
 title: Список deviceManagementScriptAssignments
 description: Свойства списка и связей объектов deviceManagementScriptAssignment.
 author: tfitzmac
-ms.openlocfilehash: 6a1884bed0e468785a233004835103ba4d3948b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47bf7ca7938fb8bab7ea41a925804f1e7b084ff5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329969"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873922"
 ---
 # <a name="list-devicemanagementscriptassignments"></a>Список deviceManagementScriptAssignments
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignm
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOneDriveUsageAccountCounts'
 description: Отслеживайте, как меняется количество активных сайтов OneDrive для бизнеса. Активным считается сайт, на котором пользователи просматривали, изменяли, добавляли, скачивали, отправляли или синхронизировали файлы.
-ms.openlocfilehash: e467fac8d6836df002e6c8f13cd3a9fab207b8c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 06bedc2da04a10a01cdbcf6960c8548f06aa882c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872116"
 ---
 # <a name="reportroot-getonedriveusageaccountcounts"></a>reportRoot: getOneDriveUsageAccountCounts
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса subscribedSku
 description: " Создание, обновление и удаление не поддерживается. Выражения фильтра запроса не поддерживается. Наследуется от directoryObject."
-ms.openlocfilehash: ab9b64d8de67379aa002ffeec78edd327b15b222
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 07f40c766d7f46974cf99b9954f63a61c2c0c621
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081435"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829605"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 

@@ -1,13 +1,14 @@
 ---
-title: Разрешения
+title: Permissions
 description: 'Публикация приложения в каталоге приложений группами Майкрософт. '
 author: nkramer
-ms.openlocfilehash: 01d552a013b3d1324893bd775611e797253ff261
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d6e98fc3c95485fc771a6db841021940b0c87a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335198"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864983"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Публикация приложений в каталоге приложений организации
 
@@ -40,7 +41,7 @@ POST /appCatalogs/teamsApps
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | приложение/zip |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Zip полезных команд манифеста. Для приложения группы ZIP-файл, [перейдите в раздел Create пакет приложения](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Не удается создать приложения для организации, которая имеет тот же идентификатор манифеста в качестве другого приложения в организации.
 

@@ -2,12 +2,13 @@
 title: Тип ресурса managedIOSLobApp
 description: Содержит свойства, в том числе унаследованные, для управляемых бизнес-приложений iOS.
 author: tfitzmac
-ms.openlocfilehash: 65ed1dffd352e95d8300f34b4aa3a482f75f1323
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09f84a8864a31eaf81f8bb59fe5d50b5ecb85bcf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309823"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876477"
 ---
 # <a name="managedioslobapp-resource-type"></a>Тип ресурса managedIOSLobApp
 

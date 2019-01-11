@@ -1,12 +1,13 @@
 ---
 title: Получение объекта Icon
 description: Получение свойств и связей объекта значка.
-ms.openlocfilehash: e2fe811b1847555d4ac2adc94f5b332419b2b929
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b018a9b422cf3f4ae3e83902db1246d737fe608e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075592"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829311"
 ---
 # <a name="get-icon"></a>Получение объекта Icon
 
@@ -36,7 +37,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -53,8 +54,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

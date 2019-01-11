@@ -2,12 +2,13 @@
 title: Обновление объекта deviceComplianceDeviceOverview
 description: Обновление свойств объекта deviceComplianceDeviceOverview.
 author: tfitzmac
-ms.openlocfilehash: a6cf54ad22e1d9f0c961d651149ee109fa4bd865
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 884e8dc786196ff865c4f184a2f20a73926d3855
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876519"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>Обновление объекта deviceComplianceDeviceOverview
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

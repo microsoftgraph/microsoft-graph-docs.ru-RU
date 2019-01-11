@@ -2,12 +2,13 @@
 title: Тип ресурса win32LobAppRegistryDetection
 description: Содержит свойства реестра для определения приложения Win32
 author: tfitzmac
-ms.openlocfilehash: 5adeca1b569531d15657acc2a8960bab60580dc6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: faccc030a9f15b511af4123c94687c904e60ff10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347742"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867139"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>Тип ресурса win32LobAppRegistryDetection
 
@@ -22,12 +23,12 @@ ms.locfileid: "27347742"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|check32BitOn64System|Boolean.|Значение, указывающее, является ли этот путь в реестре для проверки 32-разрядная версия приложения на 64-разрядных систем|
-|ключевого пути|String.|Путь к разделу реестра для определения Win32 строки из бизнес-приложения|
-|Имени|String.|Имя значения реестра|
+|check32BitOn64System|Логический|Значение, указывающее, является ли этот путь в реестре для проверки 32-разрядная версия приложения на 64-разрядных систем|
+|ключевого пути|Строка|Путь к разделу реестра для определения Win32 строки из бизнес-приложения|
+|Имени|Строка|Имя значения реестра|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Тип обнаружения данных реестра. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения данных реестра. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|String.|Определение значения реестра|
+|detectionValue|Строка|Определение значения реестра|
 
 ## <a name="relationships"></a>Связи
 Нет

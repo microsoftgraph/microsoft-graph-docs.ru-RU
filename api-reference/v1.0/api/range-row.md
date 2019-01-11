@@ -2,12 +2,13 @@
 title: 'Range: Row'
 description: Возвращает строку из диапазона.
 author: lumine2008
-ms.openlocfilehash: d758af607fa80314abe6c3f90e611eb87ac62914
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 647ef8cb8afeb87662158d2f880ef0bb0de0ba6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829745"
 ---
 # <a name="range-row"></a>Range: Row
 
@@ -35,7 +36,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/row
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

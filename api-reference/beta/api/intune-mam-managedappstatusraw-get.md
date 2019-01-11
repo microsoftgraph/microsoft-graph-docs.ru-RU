@@ -2,12 +2,13 @@
 title: Get managedAppStatusRaw
 description: Считывание свойств и связей объекта managedAppStatusRaw.
 author: tfitzmac
-ms.openlocfilehash: c308b36a49645b682b497f928c997eebdae6d520
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23b226de9b5c8d92faf8f2803e806d8ca1d65b56
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854700"
 ---
 # <a name="get-managedappstatusraw"></a>Get managedAppStatusRaw
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

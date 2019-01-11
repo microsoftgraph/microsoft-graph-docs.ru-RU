@@ -2,12 +2,13 @@
 title: Удаление объекта androidForWorkEnrollmentProfile
 description: Удаляет объект androidForWorkEnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 4a5e47062cf228f45d1d2b62bc1b13e17940cbd6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7d2ff7008b372d98d2f47c886c0631c6d94a365
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828723"
 ---
 # <a name="delete-androidforworkenrollmentprofile"></a>Удаление объекта androidForWorkEnrollmentProfile
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollm
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

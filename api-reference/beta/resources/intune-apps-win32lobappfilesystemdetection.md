@@ -2,12 +2,13 @@
 title: Тип ресурса win32LobAppFileSystemDetection
 description: Содержит путь файла или папки для обнаружения приложений Win32
 author: tfitzmac
-ms.openlocfilehash: 26d65c8a1fcf70032c780b3e6e00a198a8ff2c30
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13a994d39ec42ddcb45bc71aac739864a6ef6dc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306876"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849275"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Тип ресурса win32LobAppFileSystemDetection
 
@@ -23,11 +24,11 @@ ms.locfileid: "27306876"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |path|String|Путь файла или папки для обнаружения Win32 строки из бизнес-приложения|
-|fileOrFolderName|String.|Имя файла или папки для обнаружения Win32 строки из бизнес-приложения|
-|check32BitOn64System|Boolean.|Значение, указывающее, является ли этот файл или папку для проверки 32-разрядная версия приложения на 64-разрядных систем|
+|fileOrFolderName|Строка|Имя файла или папки для обнаружения Win32 строки из бизнес-приложения|
+|check32BitOn64System|Логический|Значение, указывающее, является ли этот файл или папку для проверки 32-разрядная версия приложения на 64-разрядных систем|
 |detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Обнаружение тип файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения файла или fodler. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|String.|Значение обнаружения файла или папки|
+|detectionValue|Строка|Значение обнаружения файла или папки|
 
 ## <a name="relationships"></a>Связи
 Нет

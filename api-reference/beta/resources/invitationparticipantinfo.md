@@ -2,12 +2,13 @@
 title: Тип ресурса invitationParticipantInfo
 description: '**InvitationParticipant** используется для представления набора удостоверения, связанного с приглашением беседы и предоставляет приглашение Дополнительные параметры.'
 author: VinodRavichandran
-ms.openlocfilehash: f833fcd0c555dfcc88da4027313ed7f40da81428
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7a6fb418b7076b0f0a42dc05b6afe71dcda6a71e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865004"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса invitationParticipantInfo
 
@@ -21,9 +22,9 @@ ms.locfileid: "27380487"
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | Возможные значения: `default`, `voicemail`. |
 | identity                           | [identitySet](identityset.md) | [IdentitySet](identityset.md) , связанной с приглашением.                   |
-| languageId                         | String                        | Строка языка и региональных параметров языка.                                                                                     |
-| область                             | String                        | Область участника.                                                           |
-| replacesCallId                     | String                        | Необязательный параметр. Вызов которого idenity целевой в настоящее время является частью. Этот звонок будет удалена, после добавления участника. |
+| languageId                         | Строка                        | Строка языка и региональных параметров языка.                                                                                     |
+| область                             | Строка                        | Область участника.                                                           |
+| replacesCallId                     | Строка                        | Необязательный параметр. Вызов которого idenity целевой в настоящее время является частью. Этот звонок будет удалена, после добавления участника. |
 
 ## <a name="json-representation"></a>Представление JSON
 

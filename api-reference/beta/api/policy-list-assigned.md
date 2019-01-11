@@ -1,12 +1,13 @@
 ---
 title: Список политики, назначенные для приложения или участника-службы
 description: Получение объектов политики, назначенных для приложения или участника службы.
-ms.openlocfilehash: cfdcf3d8e6709080f4c8f7bfc3e2dbc256789f6f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3c66eece645313f7039f12aec708cba4581fb4bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875357"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>Список политики, назначенные для приложения или участника-службы
 
@@ -36,7 +37,7 @@ GET /applications/{id}/policies
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -54,8 +55,7 @@ GET https://graph.microsoft.com/beta/applications/{id}/policies
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ```http
 HTTP/1.1 200 OK

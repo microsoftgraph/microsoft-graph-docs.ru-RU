@@ -1,12 +1,13 @@
 ---
 title: Получение locatedRiskEvent
 description: Извлечение свойств и связи объекта locatedriskevent.
-ms.openlocfilehash: 9803df66f305d3750747c964c2d50485278edc05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 428c0cdac81fffc7cfca085922e23beccea82b90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079073"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829150"
 ---
 # <a name="get-locatedriskevent"></a>Получение locatedRiskEvent
 
@@ -20,7 +21,7 @@ ms.locfileid: "27079073"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskEvent.Read.All |
+|Для приложений | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +35,7 @@ GET /locatedRiskEvents/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -51,8 +52,7 @@ GET /locatedRiskEvents/{id}
 GET https://graph.microsoft.com/v1.0/locatedRiskEvents/27b91217-a6ca-edff-da2b-c46feaf0228f-a6653179-3c7b-4e99-bb4c-dddeb18adfc1-42445d4d-fe22-9840-cf9d-72f6ce8cd056
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

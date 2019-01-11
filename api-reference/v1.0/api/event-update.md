@@ -2,12 +2,13 @@
 title: Обновление события
 description: Обновление свойства объекта события.
 author: angelgolfer-ms
-ms.openlocfilehash: 1ea0ae20a88159f9d96a23028fa731ea04d6817b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b7d969b3f374bfddb12a49d1318fb8c1bb2105e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312448"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846650"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -46,7 +47,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

@@ -2,12 +2,13 @@
 title: Создание importedDeviceIdentityResult
 description: Создание нового объекта importedDeviceIdentityResult.
 author: tfitzmac
-ms.openlocfilehash: 2613cd100ccb1803464907821d56eb75fc4024fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5c9494b4170493ef25bee0d72091c49ecde098d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829444"
 ---
 # <a name="create-importeddeviceidentityresult"></a>Создание importedDeviceIdentityResult
 
@@ -37,11 +38,11 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта importedDeviceIdentityResult.
 
 В следующей таблице показаны свойства, которые необходимы для создания importedDeviceIdentityResult.
@@ -49,7 +50,7 @@ POST /deviceManagement/importedDeviceIdentities
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор identity импортированных устройства унаследованные от [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
-|importedDeviceIdentifier|String.|Импортированные устройства идентификатор наследуется от [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
+|importedDeviceIdentifier|Строка|Импортированные устройства идентификатор наследуется от [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импорта наследуется идентификатор устройства из [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Последние изменения даты и времени описания унаследованные от [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |createdDateTime|DateTimeOffset|Созданные Дата и время устройства унаследованные от [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
@@ -57,7 +58,7 @@ POST /deviceManagement/importedDeviceIdentities
 |описание|Строка|Описание устройства унаследованные от [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune наследуется от [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[Платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Наследуется от [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
-|status|Boolean.|Состояние импортированных устройств удостоверений|
+|status|Логический|Состояние импортированных устройств удостоверений|
 
 
 

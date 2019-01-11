@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windowsKioskConfiguration
 description: Этот объект содержит описания объявленные методы, свойства и связи, предоставляемые элементом киоска ресурсов.
-ms.openlocfilehash: 94e1f7ee29b97e3ea87cec285a33b86eed989bd4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b7ebcabeda93a6a58b21e110cd8ee6ac79452b25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077909"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876722"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>Тип ресурса windowsKioskConfiguration
 
@@ -30,16 +31,16 @@ ms.locfileid: "27077909"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) коллекции|Этот параметр политики позволяет определить список профилей киоска для базовой конфигурации. Эта коллекция может содержать не более 500 элементов.|
-|kioskBrowserDefaultUrl|String|Укажите URL-адрес по умолчанию, должен перейти браузер при запуске.|
+|kioskBrowserDefaultUrl|Строка|Укажите URL-адрес по умолчанию, должен перейти браузер при запуске.|
 |kioskBrowserEnableHomeButton|Логический|Кнопка браузера киоска Домашняя страница. По умолчанию домашняя страница кнопка отключена.|
 |kioskBrowserEnableNavigationButtons|Логический|Включите buttons(forward/back) навигации киоска браузера. По умолчанию отключены кнопки перехода.|
 |kioskBrowserEnableEndSessionButton|Логический|Кнопка браузера киоска окончания сеанса. По умолчанию отключена кнопка окончания сеанса.|
@@ -48,7 +49,7 @@ ms.locfileid: "27077909"
 |kioskBrowserBlockedUrlExceptions|Коллекция String|Укажите URL-адресов, которые может киоска браузера перейдите на|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) коллекции|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|

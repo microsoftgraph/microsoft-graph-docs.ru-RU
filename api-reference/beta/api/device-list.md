@@ -2,12 +2,13 @@
 title: Список устройств
 description: 'Получение списка устройств, зарегистрированных в каталоге. '
 author: tfitzmac
-ms.openlocfilehash: 04275c3d6356fbf28434b7bbe6ebfbd54f6bba8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4cbe2ad3f43cfda274901fb6cdc7322d1c1e523
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320288"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824579"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -37,7 +38,7 @@ GET /devices
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

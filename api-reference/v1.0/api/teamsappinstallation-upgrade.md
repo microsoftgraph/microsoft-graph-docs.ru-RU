@@ -2,12 +2,13 @@
 title: Обновление приложения в группе
 description: Обновляет установку приложения в группе
 author: nkramer
-ms.openlocfilehash: 7f3787d6c22f6def80c8d36950ae3beadfd36b90
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36ddc41e6c15def1c5570fc49c3b151c87a63421
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826602"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>Обновление приложения в группе
 
@@ -36,7 +37,7 @@ POST /teams/{id}/installedApps/{id}/upgrade
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

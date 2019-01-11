@@ -2,12 +2,13 @@
 title: Тип перечисления windowsSModeConfiguration
 description: Возможные варианты для настройки режима S разблокировки
 author: tfitzmac
-ms.openlocfilehash: 592eb58a13d1f78caadb5b46acac5b43e6c97384
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e37bd51be1b5476e8b4590b92b3caeeed92ac45
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344704"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830739"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>Тип перечисления windowsSModeConfiguration
 

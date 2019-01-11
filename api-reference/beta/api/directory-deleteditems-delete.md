@@ -2,12 +2,13 @@
 title: Удаление элемента без возможности восстановления
 description: Окончательное удаление элемента из контейнера для удаленных элементов.
 author: lleonard-msft
-ms.openlocfilehash: cdea85ee1b46b4d3c7156a599081a93f31318eac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5f9bfb7a235386abb6f0e885aa9ada5f1e32517
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853978"
 ---
 # <a name="permanently-delete-item"></a>Удаление элемента без возможности восстановления
 
@@ -34,7 +35,7 @@ DELETE /directory/deleteditems/{id}
 | Authorization  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

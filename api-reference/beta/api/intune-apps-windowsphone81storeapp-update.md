@@ -2,12 +2,13 @@
 title: Обновление windowsPhone81StoreApp
 description: Обновление свойства объекта windowsPhone81StoreApp.
 author: tfitzmac
-ms.openlocfilehash: f17bf43518c46397db4ad8c15a717b8f1b8c9fa5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d1ba9c814d29d57c0bcb8024dc70b537c4a92b57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875420"
 ---
 # <a name="update-windowsphone81storeapp"></a>Обновление windowsPhone81StoreApp
 
@@ -39,11 +40,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md).

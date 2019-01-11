@@ -2,12 +2,13 @@
 title: Функция getManagedAppPolicies
 description: Получает ограничения для определенного пользователя.
 author: tfitzmac
-ms.openlocfilehash: 3b06ca0e3aca10fb88c1cdc4bb42199b41719870
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ab17c5e0101eb9842e55b5c7442cc51786cf7a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323571"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828821"
 ---
 # <a name="getmanagedapppolicies-function"></a>Функция getManagedAppPolicies
 
@@ -36,11 +37,11 @@ GET /users/{usersId}/getManagedAppPolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

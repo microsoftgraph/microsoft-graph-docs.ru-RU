@@ -1,12 +1,13 @@
 ---
 title: 'workbookRange: visibleView'
 description: Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
-ms.openlocfilehash: 18b8e4567eb40dd8861b94b72bfeb3cad9aa004f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1832c30c8a223b1a5067cede03796bcab16d5a94
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024533"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826910"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
@@ -31,7 +32,7 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ### <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRangeView](../resources/workbookrangeview.md) в теле отклика.
@@ -49,8 +50,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/rang
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,12 +2,13 @@
 title: Get androidManagedAppProtection
 description: Чтение свойств и связей объекта androidManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: 877b7da27203c4fe625d0a5a4a187d62f96d5471
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e9da36760c73e8992cd29a2d45a51ff1bf1f2e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340504"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828366"
 ---
 # <a name="get-androidmanagedappprotection"></a>Get androidManagedAppProtection
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtecti
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

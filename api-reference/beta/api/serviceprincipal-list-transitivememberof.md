@@ -1,12 +1,13 @@
 ---
 title: Доверия транзитивных член servicePrincipal списка
 description: Получите групп и ролей каталогов, которые этой основной службы является членом. Эта операция доверия транзитивных и будет включать всех групп, эта служба участника, вложенных входит.
-ms.openlocfilehash: e08185e15f583173e585bf392f628a8d9c0800eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 814059a5abb0c98098436134d8e60e21e22b4b9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848151"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Доверия транзитивных член servicePrincipal списка
 
@@ -36,7 +37,7 @@ GET /servicePrincipals/{id}/memberOf
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -58,8 +59,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

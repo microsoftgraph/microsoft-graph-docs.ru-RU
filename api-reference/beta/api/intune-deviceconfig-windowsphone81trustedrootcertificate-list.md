@@ -2,12 +2,13 @@
 title: Список windowsPhone81TrustedRootCertificates
 description: Свойства списка и связей объектов windowsPhone81TrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 73a6f00d2ab82ba72570424ef11d49642d802208
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fadadd9ee08392a81bace42bf54bc9e2934a1200
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339181"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847140"
 ---
 # <a name="list-windowsphone81trustedrootcertificates"></a>Список windowsPhone81TrustedRootCertificates
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mentionsPreview
 description: Представляет сведения об объектах упоминаются в экземпляре ресурсов.
-ms.openlocfilehash: cf6bed3cdfb2d3f541438da0c06fcf8f4873c17e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1534b7f0ef48a80d0faaaa09880b91cb270e8eca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826112"
 ---
 # <a name="mentionspreview-resource-type"></a>Тип ресурса mentionsPreview
 
@@ -15,7 +16,7 @@ ms.locfileid: "27081432"
 Представляет сведения о [упомянуть](../resources/mention.md) объекты в экземпляре ресурсов.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | isMentioned | Логический | Значение true, если пользователь выполнил вход упоминается в экземпляре ресурсов родительского. Только для чтения. Поддержка фильтра. |
 

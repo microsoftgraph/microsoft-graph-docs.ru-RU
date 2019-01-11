@@ -2,12 +2,13 @@
 title: Тип ресурса win32LobAppMsiInformation
 description: Содержит свойства приложения MSI для приложения Win32.
 author: tfitzmac
-ms.openlocfilehash: 1753df68ab1f4b0e1649c16a4a7fa0ad49941bf9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e43b3dc9e46ed193b7547a7ce85863253445d30c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846517"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>Тип ресурса win32LobAppMsiInformation
 
@@ -21,8 +22,8 @@ ms.locfileid: "27326140"
 |:---|:---|:---|
 |productCode|String|Код продукта MSI.|
 |productVersion|String|Версия продукта MSI.|
-|upgradeCode|String.|Код обновления MSI.|
-|requiresReboot|Boolean.|Требуется ли приложение MSI для завершения установки перезагрузить компьютер.|
+|upgradeCode|Строка|Код обновления MSI.|
+|requiresReboot|Логический|Требуется ли приложение MSI для завершения установки перезагрузить компьютер.|
 |Тип корпуса|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Тип пакета MSI. Возможные значения: `perMachine`, `perUser`, `dualPurpose`.|
 
 ## <a name="relationships"></a>Связи

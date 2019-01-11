@@ -1,12 +1,13 @@
 ---
 title: Обновление mailSearchFolder
 description: Обновление для записи свойства объекта mailSearchFolder.
-ms.openlocfilehash: abe32817c45ee1e05fbb251bd46a31941eb4218b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 843dbe4d4312fdeb3485b0eb9e441a76b761dd46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082847"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867231"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление mailSearchFolder
 
@@ -36,15 +37,15 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
+| displayName | Строка | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
 | includeNestedFolders | Логический | Как следует обход иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
 | sourceFolderIDs | Коллекция String | Папки почтовых ящиков, которые должны быть получены. |
-| filterQuery | String | Запросов OData для фильтрации сообщений. |
+| filterQuery | Строка | Запросов OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.

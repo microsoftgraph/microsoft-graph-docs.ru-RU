@@ -2,12 +2,13 @@
 title: Действие deleteUserFromSharedAppleDevice
 description: Удаление пользователя на общем устройстве Apple
 author: tfitzmac
-ms.openlocfilehash: e2b2eb30f54c3e1efe53c3b99049cfccb3e3aa98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbbd42b2efc7b0c7e5367f7f3692f01c7fc6661e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830578"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Действие deleteUserFromSharedAppleDevice
 
@@ -37,11 +38,11 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

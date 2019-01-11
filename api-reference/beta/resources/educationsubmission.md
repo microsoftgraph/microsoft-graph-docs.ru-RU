@@ -2,12 +2,13 @@
 title: Тип ресурса educationSubmission
 description: Отправка сообщений о принадлежат назначения. Отправка представляет ресурсы, отдельных пользователей (или групп) включить в для назначения и марки/отзыв, который возвращается.
 author: dipakboyed
-ms.openlocfilehash: 5535aef4db988e0f4c4417128b5b53bbed884cc2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 92d0799b0052383d1ec12511ce98b3263245da9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328023"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847819"
 ---
 # <a name="educationsubmission-resource-type"></a>Тип ресурса educationSubmission
 
@@ -41,7 +42,7 @@ ms.locfileid: "27328023"
 |releasedDateTime|DateTimeOffset|Момент времени, когда была выпущена подачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |returnedBy|[identitySet](identityset.md)|Пользователь, который перемещены состояние в этом отправки возвращено.|
 |returnedDateTime|DateTimeOffset|Момент времени, когда был возвращен подачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|resourcesFolderUrl|String.|Папка, где должны храниться все файловые ресурсы в этом отправки.|
+|resourcesFolderUrl|Строка|Папка, где должны храниться все файловые ресурсы в этом отправки.|
 |status|string| Только для чтения. Возможные значения: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|Пользователь, который перемещены в отправленных состояние ресурса.|
 |submittedDateTime|DateTimeOffset|Момент времени, когда подачи был перемещен в отправленных состояние. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|

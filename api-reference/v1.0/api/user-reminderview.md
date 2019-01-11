@@ -2,12 +2,13 @@
 title: 'user: reminderView'
 description: 'Возвращает список напоминаний календаря за указанный период времени. '
 author: dkershaw10
-ms.openlocfilehash: 4437e3972c56f8b85f8fe38d3c23a2e3461106f9
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 08f1e8414b727b5625b271d8a84c10a7fa3e980d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748327"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851732"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 Возвращает список событий напоминания в календаре пользователя в рамках указанного время начала и окончания. 

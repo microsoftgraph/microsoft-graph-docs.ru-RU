@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Возобновляемая отправка файлов
-ms.openlocfilehash: b4519de2a4fb417ce8a0b4524fff6d60547be7ec
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: c8ab45f9915b16f75e8b44ad50215c4e73c13fff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865182"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -87,14 +88,14 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | Параметр            | Тип                          | Описание
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | driveItemUploadableProperties | Данные о выгружаемого файла
-| deferCommit          | Boolean                       | Если параметр имеет значение true, окончательный Создание файла в месте назначения будут требуют явного запроса. Только на OneDrive для бизнеса.
+| deferCommit          | Логический                       | Если параметр имеет значение true, окончательный Создание файла в месте назначения будут требуют явного запроса. Только на OneDrive для бизнеса.
 
 ## <a name="item-properties"></a>Свойства элемента
 
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:---------------------------------
-| описание          | String             | Предоставляет видимыми описание элемента. Чтение и запись. Только на личные OneDrive.
-| name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
+| описание          | Строка             | Предоставляет видимыми описание элемента. Чтение и запись. Только на личные OneDrive.
+| name                 | Строка             | Имя элемента (имя и расширение файла). Чтение и запись.
 
 ### <a name="request"></a>Запрос
 

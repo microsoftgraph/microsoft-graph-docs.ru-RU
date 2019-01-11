@@ -2,12 +2,13 @@
 title: Удаление объекта macOSOfficeSuiteApp
 description: Удаляет объект macOSOfficeSuiteApp.
 author: tfitzmac
-ms.openlocfilehash: 0fa046de1db8fd3a8710a4fc93d29a01149e7397
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3e846fa2b0f37cd5fce85c0ea94acc847b3d39f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362617"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828982"
 ---
 # <a name="delete-macosofficesuiteapp"></a>Удаление объекта macOSOfficeSuiteApp
 
@@ -35,11 +36,11 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

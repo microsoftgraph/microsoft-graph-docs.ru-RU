@@ -1,12 +1,13 @@
 ---
 title: Работа с Microsoft Teams при помощи API Microsoft Graph
 description: Группами Майкрософт — это рабочая область на основе чата в Office 365, который предоставляет встроенные доступ к календарей конкретных групп, файлы, заметки OneNote, планировщик работы планы и др.
-ms.openlocfilehash: b42c33a34e0191eae236f675f29762834dfc29da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 196b7e3726609fe64f1621c0c1030dc6bfdd83be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866614"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -16,7 +17,7 @@ ms.locfileid: "27026300"
 
 ## <a name="key-resources-in-microsoft-teams"></a>Основные ресурсы в группах Майкрософт
 
-| Resource | Методы |
+| Resource | Methods |
 |:---------------|:--------|
 |[Группа](../resources/team.md)| [список рабочих групп](../api/user-list-joinedteams.md), [список всех групп](/graph/teams-list-all-teams), [Создание](../api/team-put-teams.md), [Чтение](../api/team-get.md), [обновление](../api/team-update.md), [Удаление](/graph/api/group-delete?view=graph-rest-1.0), [клонированной](../api/team-clone.md), [архив](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
 |[group](../resources/group.md)| [Добавить элемент](../api/group-post-members.md), [Удалить элемент](../api/group-delete-members.md), [Добавьте владельца](../api/group-post-owners.md), [Удалить владельца](../api/group-delete-owners.md), [Получение файлов](drive.md), [Получение записной книжки](/graph/api/resources/notebook?view=graph-rest-1.0), [Получение планы](plannergroup.md), [Получение календаря](event.md) |
@@ -78,5 +79,5 @@ ms.locfileid: "27026300"
 
 ## <a name="see-also"></a>См. также
 
-- [Обзор API группами Майкрософт](/graph/teams-concept-overview)
+- [Обзор API Microsoft Teams](/graph/teams-concept-overview)
 - Пример кода: [Авиакомпании Contoso](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [мини примеров C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)

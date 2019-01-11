@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса imageInfo
 description: Сложный тип для представления свойство **атрибуты** в части visualInfo объекта активности.
-ms.openlocfilehash: dbd04c5350d618540ebdffcb38a2bc11bfef6129
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9df93e24c2019f246fc9da269b40ab690ae81aa4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081648"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828569"
 ---
 # <a name="imageinfo-resource-type"></a>Тип ресурса imageInfo
 
@@ -16,10 +17,10 @@ ms.locfileid: "27081648"
 
 ## <a name="properties"></a>Свойства
 
-|Имя | Тип | Description|
+|Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|iconUrl | String | Необязательный; URI, указывающий на значок, представляющий приложение, используемый для создания операции|
-|alternateText | String | Необязательный; Замещающий текст доступного содержимого для образа|
+|iconUrl | Строка | Необязательный; URI, указывающий на значок, представляющий приложение, используемый для создания операции|
+|alternateText | Строка | Необязательный; Замещающий текст доступного содержимого для образа|
 |addImageQuery | Логический | Необязательный; параметр служит для указания сервера может отобразить изображение динамически в ответ на параметризации. Для примера — изображение высокой контрастности|
 
 ## <a name="json-representation"></a>Представление JSON

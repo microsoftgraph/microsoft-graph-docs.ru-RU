@@ -1,12 +1,13 @@
 ---
 title: Запуск синхронизации после загрузки файлов educationSynchronizationProfile
 description: Проверьте файлы, отправленные в конкретных школа профиль синхронизации данных клиента. Если проверка выполнена успешно, в профиле будет запустить синхронизацию. В противном случае ответ будет содержать ошибки и предупреждения. Если ответ содержит ошибки, не запустится синхронизации. Если ответ содержит только предупреждения, будет запущен процесс синхронизации.
-ms.openlocfilehash: 4b123c5a90b65b333d881da471c475161b1c6507
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 465ab6a807fc6af10067d048459c440c7c567361
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866740"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Запуск синхронизации после загрузки файлов educationSynchronizationProfile
 
@@ -36,7 +37,7 @@ POST /synchronizationProfiles/{id}/start
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если неудачно, возвращается `400 Bad Request`. Ответ содержит коллекцию объектов [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) как часть тела ответа, если найдены ошибки и предупреждения.

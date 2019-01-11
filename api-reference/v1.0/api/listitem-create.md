@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Создание записи в списке SharePoint
-ms.openlocfilehash: 15abca086a5a690d795c9663f848427ba9ad9ef5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9456a8d7a8cb7561487a5a6bf08e5fd08082cf05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026994"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876414"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
 

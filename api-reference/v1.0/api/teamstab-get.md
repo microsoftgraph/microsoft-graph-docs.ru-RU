@@ -2,12 +2,13 @@
 title: Получить вкладки
 description: 'Извлечение свойств и отношения между заданной вкладки. '
 author: nkramer
-ms.openlocfilehash: 30c98258585db9443e2481db5a9fb8c304b8d72b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ff4fe753a087870b2f8562669b23045a34af6465
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829973"
 ---
 # <a name="get-tab"></a>Получить вкладки
 
@@ -40,7 +41,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

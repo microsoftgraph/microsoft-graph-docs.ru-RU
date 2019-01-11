@@ -2,12 +2,13 @@
 title: Тип перечисления savedUIStateGenerationOptions
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 9074f057a9bc660551da4114c0fe6e2a481271b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 341d851bf5a43381507e98bdb666e0d1e34a6bf4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826399"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>Тип перечисления savedUIStateGenerationOptions
 
@@ -17,7 +18,7 @@ ms.locfileid: "27301283"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Н/Д|
+|Нет|0|Н/Д|
 |omitSilverlightPolicyReferences|1|Н/Д|
 
 

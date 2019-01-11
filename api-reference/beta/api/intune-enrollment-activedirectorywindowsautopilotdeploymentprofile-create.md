@@ -2,12 +2,13 @@
 title: Создание activeDirectoryWindowsAutopilotDeploymentProfile
 description: Создание нового объекта activeDirectoryWindowsAutopilotDeploymentProfile.
 author: tfitzmac
-ms.openlocfilehash: 50959427a9634d2b8376cece9c3c33c908c69365
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d8e94a6110716c826808b1c4ace85a11bc0e0fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324089"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847616"
 ---
 # <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a>Создание activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -37,11 +38,11 @@ POST /deviceManagement/windowsAutopilotDeploymentProfiles
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта activeDirectoryWindowsAutopilotDeploymentProfile.
 
 В следующей таблице показаны свойства, которые необходимы для создания activeDirectoryWindowsAutopilotDeploymentProfile.
@@ -56,8 +57,8 @@ POST /deviceManagement/windowsAutopilotDeploymentProfiles
 |lastModifiedDateTime|DateTimeOffset|Профиль последнего изменения время унаследованные от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|В соответствующем взаимодействия параметру унаследованные от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Установка унаследованные от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) экрана состояния подачи заявок|
-|extractHardwareHash|Boolean.|Извлечение HardwareHash для профиля унаследованные от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
-|deviceNameTemplate|String.|Шаблон, используемый для имя устройства автопилот. Это может быть настраиваемого текста, а также может содержать серийный номер устройства или случайное число. Общая длина текста, созданной с помощью шаблона может быть не более 15 символов. Наследуется от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|extractHardwareHash|Логический|Извлечение HardwareHash для профиля унаследованные от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|deviceNameTemplate|Строка|Шаблон, используемый для имя устройства автопилот. Это может быть настраиваемого текста, а также может содержать серийный номер устройства или случайное число. Общая длина текста, созданной с помощью шаблона может быть не более 15 символов. Наследуется от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 
 
 

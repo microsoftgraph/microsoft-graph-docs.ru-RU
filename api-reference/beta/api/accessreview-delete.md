@@ -1,12 +1,13 @@
 ---
 title: Удаление accessReview
 description: Доступ к функции проверки в Azure AD, удалить объект accessReview.
-ms.openlocfilehash: b9578b575705de909eca99ac70f5efbb70d053cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b062931e58834e1b6a62c83791ec663865fb5c9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829458"
 ---
 # <a name="delete-accessreview"></a>Удаление accessReview
 
@@ -30,9 +31,9 @@ DELETE /accessReviews('<id>')
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

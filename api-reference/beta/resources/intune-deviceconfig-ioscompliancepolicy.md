@@ -2,12 +2,13 @@
 title: Тип ресурса iosCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для IOS.
 author: tfitzmac
-ms.openlocfilehash: ae7c5c1df55236c7232e34e377a1b55e947e84ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbfff1a4dee9d9875c7bfe4fd27ddc3589ea0697
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830277"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>Тип ресурса iosCompliancePolicy
 
@@ -38,7 +39,7 @@ ms.locfileid: "27336381"
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passcodeBlockSimple|Boolean|Указывает, следует ли блокировать простые секретные коды.|
+|passcodeBlockSimple|Логический|Указывает, следует ли блокировать простые секретные коды.|
 |passcodeExpirationDays|Int32|Количество дней до окончания срока действия секретного кода. Допустимые значения: от 1 до 65 535.|
 |passcodeMinimumLength|Int32|Минимальная длина секретного кода. Допустимые значения: от 4 до 14.|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах) до запроса пароля.|
@@ -46,7 +47,7 @@ ms.locfileid: "27336381"
 |passcodePreviousPasscodeBlockCount|Int32|Количество предыдущих секретных кодов, которые следует блокировать. Допустимые значения: от 1 до 24.|
 |passcodeMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passcodeRequired|Boolean|Указывает, требуется ли запрашивать секретный код.|
+|passcodeRequired|Логический|Указывает, требуется ли запрашивать секретный код.|
 |osMinimumVersion|String|Минимальная версия iOS.|
 |osMaximumVersion|String|Максимальная версия iOS.|
 |securityBlockJailbrokenDevices|Boolean|Устройства запрещено взламывать и рутовать.|

@@ -2,12 +2,13 @@
 title: Тип ресурса deviceComplianceActionItem
 description: Конфигурация запланированного действия
 author: tfitzmac
-ms.openlocfilehash: d2df3b7eaf62c5a50e24f7b64a797b7bb91c2264
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d697275780b686edc9a3b1eed42b6afb712163b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866432"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>Тип ресурса deviceComplianceActionItem
 

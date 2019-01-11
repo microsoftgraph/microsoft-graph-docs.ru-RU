@@ -2,12 +2,13 @@
 title: Тип ресурса windowsInformationProtectionDataRecoveryCertificate
 description: Сертификат восстановления данных Windows Information Protection
 author: tfitzmac
-ms.openlocfilehash: c45abb14669c3cf67571748a9da7d62bed037ff6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f7b27bf766e17000f20679e86c006675f81e92bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826847"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>Тип ресурса windowsInformationProtectionDataRecoveryCertificate
 

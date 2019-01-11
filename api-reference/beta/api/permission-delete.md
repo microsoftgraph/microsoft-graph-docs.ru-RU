@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Отмена доступа к элементу
-ms.openlocfilehash: 726818b14a694380e46bfd38280e4cba9effb67d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 784f67b8e376398d32ad66af2e0f38b9cf9d7f20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829297"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Удаление разрешения на общий доступ для файла или папки
 

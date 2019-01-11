@@ -2,12 +2,13 @@
 title: Обновление объекта resourceOperation
 description: Обновляет свойства объекта resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: 98da602683c61313b11862bc5dc567f4a04e4268
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97457b82bb74891ef4d709809efcae2d171df670
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319735"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830410"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

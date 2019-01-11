@@ -2,12 +2,13 @@
 title: Список networkIPv4ConfigurationManagementConditions
 description: Свойства списка и связей объектов networkIPv4ConfigurationManagementCondition.
 author: tfitzmac
-ms.openlocfilehash: 6e1707fa85788fb5085f37654645b0863b5a8b46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f4fd7516320780850197a46f4abd83b18304d03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363615"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828401"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>Список networkIPv4ConfigurationManagementConditions
 
@@ -38,11 +39,11 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Create settingStateDeviceSummary
 description: Создание объекта settingStateDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: 53cccf3ee6cf11daa6cec1697de89eaf7f0a7140
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c6025a1ee8ff513b18d66d5b71f8c857bba9913
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867986"
 ---
 # <a name="create-settingstatedevicesummary"></a>Create settingStateDeviceSummary
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

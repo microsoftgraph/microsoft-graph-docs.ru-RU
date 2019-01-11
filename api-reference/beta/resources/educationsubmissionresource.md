@@ -2,12 +2,13 @@
 title: Тип ресурса educationSubmissionResource
 description: 'Оболочку ресурсов для использования на отправку. Программа-оболочка добавляет указатель назначения ресурсов в том случае, если это скопированный из назначения.  '
 author: dipakboyed
-ms.openlocfilehash: bfbf2f522106f5a1e2033898cbb2702223d3e241
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8703072fccb77a2577db6ce0717647e79a47fdc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361560"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875987"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>Тип ресурса educationSubmissionResource
 
@@ -26,7 +27,7 @@ ms.locfileid: "27361560"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String.|Указатель на назначения, с которого был скопирован этот ресурс. Если это значение null, студент загружаться ресурса.|
+|assignmentResourceUrl|Строка|Указатель на назначения, с которого был скопирован этот ресурс. Если это значение null, студент загружаться ресурса.|
 |id|Строка| Только для чтения.|
 |resource|[educationResource](educationresource.md)|Объект ресурса.|
 

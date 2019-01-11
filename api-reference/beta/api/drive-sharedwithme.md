@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Создание списка файлов, к которым мне предоставлен доступ
-ms.openlocfilehash: 96279dc37d8d72a51fc2703965d7eb3a602d0484
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9144c906a3f363ba10564dde36ca11c352a4fdcf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079803"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881510"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему
 

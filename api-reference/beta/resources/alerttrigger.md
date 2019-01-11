@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса alertTrigger
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 353f7dd09b11a2bfc509b53665c7f13ec390c80a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e375538806f09f85539f7a03e31c8a1ae041afdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866649"
 ---
 # <a name="alerttrigger-resource-type"></a>Тип ресурса alertTrigger
 
@@ -18,9 +19,9 @@ ms.locfileid: "27074811"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|name|String|Имя свойства, используемого в качестве триггера обнаружения.|
-|type|String|Тип свойства в пары "ключ: значение" для интерпретации. Например String, Boolean, и т.д.|
-|value|String|Значение свойства, используемого в качестве триггера обнаружения.|
+|name|Строка|Имя свойства, используемого в качестве триггера обнаружения.|
+|type|Строка|Тип свойства в пары "ключ: значение" для интерпретации. Например String, Boolean, и т.д.|
+|value|Строка|Значение свойства, используемого в качестве триггера обнаружения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

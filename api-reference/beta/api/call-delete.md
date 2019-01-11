@@ -2,12 +2,13 @@
 title: Удалить вызов
 description: Удалите или прервите активного вызова.
 author: VinodRavichandran
-ms.openlocfilehash: ae12a6ee937075745957cfccbd4adcbd4dc2f5f8
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 1d7c1ef73282a74c1934a0dbaebf1743bdff44ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848687"
 ---
 # <a name="delete-call"></a>Удалить вызов
 
@@ -37,7 +38,7 @@ DELETE /applications/{id}/calls/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

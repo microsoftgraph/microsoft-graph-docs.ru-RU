@@ -2,12 +2,13 @@
 title: Обновить iosMobileAppConfiguration
 description: Обновление свойств объекта iosMobileAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: d70b528ca5524c1dfddbc84a21d1c60844f4b0a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4dbc0fa4397e9e393bf99685fa2cc9e083f4a1c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360657"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849058"
 ---
 # <a name="update-iosmobileappconfiguration"></a>Обновить iosMobileAppConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

@@ -1,12 +1,13 @@
 ---
 title: Получение объекта NamedItem
 description: Получение свойств и связей объекта nameditem.
-ms.openlocfilehash: d60666630bffd99dd5dd7ce17f0eb6e40a80bf81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ee9ce271ebf6ad687324d2ba9d378ae7151460cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867195"
 ---
 # <a name="get-nameditem"></a>Получение объекта NamedItem
 
@@ -34,7 +35,7 @@ GET /workbook/names/{name}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -51,8 +52,7 @@ GET /workbook/names/{name}
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

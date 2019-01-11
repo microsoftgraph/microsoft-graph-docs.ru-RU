@@ -2,12 +2,13 @@
 title: Удаление androidTrustedRootCertificate
 description: Удаляет androidTrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 51a01d89683db7d3acbdaf6edbc24fdf8f082480
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5c25963aaf1774545b54cf13acce1a5b54036c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848239"
 ---
 # <a name="delete-androidtrustedrootcertificate"></a>Удаление androidTrustedRootCertificate
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

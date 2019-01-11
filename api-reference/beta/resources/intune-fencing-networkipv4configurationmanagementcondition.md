@@ -2,12 +2,13 @@
 title: Тип ресурса networkIPv4ConfigurationManagementCondition
 description: Параметры сети IPv4, может быть определен условия управления на основе конфигурации, который будет запускать при обнаружении определенных IP-адрес устройства. Условия управления конфигурации IP-адресов только рассматривается как TRUE при активной сетевого подключения.
 author: tfitzmac
-ms.openlocfilehash: eba20d0ef5db1667cad2ffb85b9477c9044b28b9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6964f3e84deacdd20a1c5909fb6bd8c87ddcd8f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847301"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>Тип ресурса networkIPv4ConfigurationManagementCondition
 
@@ -32,16 +33,16 @@ ms.locfileid: "27344263"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для управления условия. Значение, назначенное при создании создаваемый системой. Наследуется от [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|уникального имени|String.|Уникальное имя для управления условия. Используется в выражениях условие управления. Наследуется от [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|уникального имени|Строка|Уникальное имя для управления условия. Используется в выражениях условие управления. Наследуется от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|Строка|Имя условия управления определенные администратором. Наследуется от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |описание|Строка|Описание управления условия, определенные администратором. Наследуется от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|Время создания условие управления. Создан со стороны службы. Наследуется от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условие управления. Обновление со стороны службы. Наследуется от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag условие управления. Обновление со стороны службы. Наследуется от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) коллекции|Применимые платформ для этого условия управления. Наследуется от [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|ipV4Prefix|String.|Подсеть IPv4, подключенных к. например 10.0.0.0/8|
-|ipV4Gateway|String.|IPv4-адрес шлюза. например 10.0.0.0|
-|ipV4DHCPServer|String.|IPv4-адрес на DHCP-сервер для адаптера.|
+|ipV4Prefix|Строка|Подсеть IPv4, подключенных к. например 10.0.0.0/8|
+|ipV4Gateway|Строка|IPv4-адрес шлюза. например 10.0.0.0|
+|ipV4DHCPServer|Строка|IPv4-адрес на DHCP-сервер для адаптера.|
 |ipV4DNSServerList|Коллекция String|IPv4 DNS-серверов, настроенных для адаптера.|
 |dnsSuffixList|Коллекция String|Допустимое DNS-суффиксы для текущей сети. Например seattle.contoso.com|
 

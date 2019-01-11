@@ -2,12 +2,13 @@
 title: Create macOSGeneralDeviceConfiguration
 description: Создание объекта macOSGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 38d1ba01fda9b568a37779e6ff20c75172eb9d69
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00169427419d56abc34326b156940e21cda3ea50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853167"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Create macOSGeneralDeviceConfiguration
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -69,27 +70,27 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Указывает, обязательно ли использовать пароль.|
-|keychainBlockCloudSync|Boolean.|Указывает, является ли iCloud ключей синхронизации заблокированных (macOS 10.12 и более поздних версий).|
-|airPrintBlocked|Boolean.|Указывает, является ли AirPrint заблокированных (macOS 10.12 и более поздних версий).|
-|airPrintForceTrustedTLS|Boolean.|Указывает, являются ли доверенные сертификаты для печати обмена данными TLS (macOS 10.13 и более поздних версий).|
-|airPrintBlockiBeaconDiscovery|Boolean.|Указывает, заблокирован ли обнаружения iBeacon AirPrint принтеров. Это позволяет предотвратить ложных маяки AirPrint Bluetooth от фишинга для сетевого трафика (macOS 10.3 и более поздних версий).|
-|safariBlockAutofill|Boolean|Указывает, следует ли запретить использовать автозаполнение в Safari.|
-|cameraBlocked|Boolean|Указывает, следует ли запретить доступ к камере устройства.|
-|iTunesBlockMusicService|Boolean|Указывает, следует ли блокировать службы музыки и вернуться музыки приложения в классическом режиме.|
-|spotlightBlockInternetResults|Boolean|Указывает, следует ли запретить возвращение результатов из и поиск в Интернете в центре внимания.|
-|keyboardBlockDictation|Boolean|Указывает, следует ли пользователь с помощью диктовки входные данные.|
-|definitionLookupBlocked|Boolean|Указывает, следует ли блокировать определение подстановки.|
-|appleWatchBlockAutoUnlock|Boolean.|Указывает, является ли или чтобы запретить пользователям разблокирование их Mac с Apple Watch.|
-|iTunesBlockFileSharing|Boolean.|Указывает ли для блокировки файлов, из которых передаются с помощью iTunes.|
-|iCloudBlockDocumentSync|Boolean|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
-|iCloudBlockMail|Boolean.|Указывает, следует ли блокировать iCloud синхронизацию почты.|
-|iCloudBlockAddressBook|Boolean.|Указывает, следует ли блокировать iCloud синхронизацию контактов.|
-|iCloudBlockCalendar|Boolean.|Указывает, следует ли блокировать iCloud из списка синхронизации календарей.|
-|iCloudBlockReminders|Boolean.|Указывает, следует ли блокировать iCloud синхронизацию напоминания.|
-|iCloudBlockBookmarks|Boolean.|Указывает, следует ли блокировать iCloud синхронизацию закладки.|
-|iCloudBlockNotes|Boolean.|Указывает, следует ли блокировать iCloud синхронизацию заметки.|
-|airDropBlocked|Boolean|Указывает, следует ли разрешить AirDrop.|
-|passwordBlockModification|Boolean.|Указывает, следует ли разрешить изменения секретный код.|
+|keychainBlockCloudSync|Логический|Указывает, является ли iCloud ключей синхронизации заблокированных (macOS 10.12 и более поздних версий).|
+|airPrintBlocked|Логический|Указывает, является ли AirPrint заблокированных (macOS 10.12 и более поздних версий).|
+|airPrintForceTrustedTLS|Логический|Указывает, являются ли доверенные сертификаты для печати обмена данными TLS (macOS 10.13 и более поздних версий).|
+|airPrintBlockiBeaconDiscovery|Логический|Указывает, заблокирован ли обнаружения iBeacon AirPrint принтеров. Это позволяет предотвратить ложных маяки AirPrint Bluetooth от фишинга для сетевого трафика (macOS 10.3 и более поздних версий).|
+|safariBlockAutofill|Логический|Указывает, следует ли запретить использовать автозаполнение в Safari.|
+|cameraBlocked|Логический|Указывает, следует ли запретить доступ к камере устройства.|
+|iTunesBlockMusicService|Логический|Указывает, следует ли блокировать службы музыки и вернуться музыки приложения в классическом режиме.|
+|spotlightBlockInternetResults|Логический|Указывает, следует ли запретить возвращение результатов из и поиск в Интернете в центре внимания.|
+|keyboardBlockDictation|Логический|Указывает, следует ли пользователь с помощью диктовки входные данные.|
+|definitionLookupBlocked|Логический|Указывает, следует ли блокировать определение подстановки.|
+|appleWatchBlockAutoUnlock|Логический|Указывает, является ли или чтобы запретить пользователям разблокирование их Mac с Apple Watch.|
+|iTunesBlockFileSharing|Логический|Указывает ли для блокировки файлов, из которых передаются с помощью iTunes.|
+|iCloudBlockDocumentSync|Логический|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
+|iCloudBlockMail|Логический|Указывает, следует ли блокировать iCloud синхронизацию почты.|
+|iCloudBlockAddressBook|Логический|Указывает, следует ли блокировать iCloud синхронизацию контактов.|
+|iCloudBlockCalendar|Логический|Указывает, следует ли блокировать iCloud из списка синхронизации календарей.|
+|iCloudBlockReminders|Логический|Указывает, следует ли блокировать iCloud синхронизацию напоминания.|
+|iCloudBlockBookmarks|Логический|Указывает, следует ли блокировать iCloud синхронизацию закладки.|
+|iCloudBlockNotes|Логический|Указывает, следует ли блокировать iCloud синхронизацию заметки.|
+|airDropBlocked|Логический|Указывает, следует ли разрешить AirDrop.|
+|passwordBlockModification|Логический|Указывает, следует ли разрешить изменения секретный код.|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
 
 

@@ -2,12 +2,13 @@
 title: Получение объекта onPremisesConditionalAccessSettings
 description: Чтение свойств и связей объекта onPremisesConditionalAccessSettings.
 author: tfitzmac
-ms.openlocfilehash: 630c7edc640932f2c1cd651e5c54e8fc15c1b1dc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 563ca92ad81957d4edc9b291c0e0c65c45284f21
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325804"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846685"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>Получение объекта onPremisesConditionalAccessSettings
 
@@ -40,11 +41,11 @@ GET /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

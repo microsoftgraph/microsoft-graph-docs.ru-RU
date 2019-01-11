@@ -2,12 +2,13 @@
 title: 'ChartPointsCollection: ItemAt'
 description: Получение точки на основании сведений о ее позиции в ряду.
 author: lumine2008
-ms.openlocfilehash: f48a51e8da2c3dca76952460da61b492ea1235ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c497f0f15b3d1ddcdb3e5adb05d9e9d0b1ade57e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829017"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -35,12 +36,12 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/It
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|number|Значение индекса получаемого объекта. Используется нулевой индекс.|
+|index|число|Значение индекса получаемого объекта. Используется нулевой индекс.|
 
 ## <a name="response"></a>Отклик
 

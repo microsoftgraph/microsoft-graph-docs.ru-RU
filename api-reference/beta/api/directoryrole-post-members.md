@@ -2,12 +2,13 @@
 title: Добавление участника роли каталога
 description: С помощью этого API можно создать участника роли каталога.
 author: lleonard-msft
-ms.openlocfilehash: 790a2b71f05e19edb01c371d1a54283b5037e4f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0fb3f753f57a9727229e3037d1c0896ce6128a8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303957"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875308"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 

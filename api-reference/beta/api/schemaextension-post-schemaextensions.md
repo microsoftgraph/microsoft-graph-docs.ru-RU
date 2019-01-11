@@ -1,12 +1,13 @@
 ---
 title: Создание schemaExtension
 description: Создайте новое определение schemaExtension, чтобы расширить поддерживаемый тип ресурса.
-ms.openlocfilehash: 3ad3e3cb52b6abacf16643a7419b6297217d074c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4d351565d697e1e9c399dcabd0d03a701cac2e81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826392"
 ---
 # <a name="create-schemaextension"></a>Создание schemaExtension
 

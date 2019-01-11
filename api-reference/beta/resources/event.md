@@ -2,12 +2,13 @@
 title: Тип ресурса event
 description: Событие в календаре.
 author: angelgolfer-ms
-ms.openlocfilehash: e60b070ab6b02ca0373d4aebcef4202f42a4f1a5
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: b1986a6d463e1750fea05144e5a8520c62e5a94a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826763"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -95,13 +96,13 @@ ms.locfileid: "27748488"
 |:---------------|:--------|:----------|
 |attendees|Коллекция [ATTENDEE](attendee.md)|Коллекция участников события.|
 |body|[ItemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
-|bodyPreview|String|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
+|bodyPreview|Строка|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
 |categories|Коллекция String|Категории, связанные с событием. Каждой категории соответствует свойству **displayName** [outlookCategory](outlookcategory.md) , определенные для этого пользователя.|
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |end|[DateTimeTimeZone](datetimetimezone.md)|Дата и время завершения события.|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
-|id|String| Только для чтения.|
+|id|Строка| Только для чтения.|
 |importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|

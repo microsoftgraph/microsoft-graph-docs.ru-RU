@@ -2,12 +2,13 @@
 title: Тип ресурса windowsPhone81StoreApp
 description: Содержит свойства и наследуемые свойства для приложения в магазине 8.1 Windows Phone.
 author: tfitzmac
-ms.openlocfilehash: 0ce242fd2337a9db602d361f8fceb05c126478fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9bb1eec02fcd2958926f431b2a118b215048ca37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807548"
 ---
 # <a name="windowsphone81storeapp-resource-type"></a>Тип ресурса windowsPhone81StoreApp
 

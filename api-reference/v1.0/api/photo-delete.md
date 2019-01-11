@@ -1,12 +1,13 @@
 ---
 title: Удаление фотографии
 description: Удаление фотографии.
-ms.openlocfilehash: 8d00eb3685d349efaa88981c6a725faa97896bb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e83e00f6579c300395b21608c89984a775bb5ab4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027292"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830557"
 ---
 # <a name="delete-photo"></a>Удаление фотографии
 
@@ -34,7 +35,7 @@ DELETE /drive/root/createdByUser/photo
 | if-match  | string  | Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

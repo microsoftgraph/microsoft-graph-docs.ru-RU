@@ -1,12 +1,13 @@
 ---
 title: Удаление privilegedRoleAssignment
 description: Удалите privilegedRoleAssignment.
-ms.openlocfilehash: 345ebbfbf32a8d5e6f9399e5746ca9ece9b91d3b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10d8b10522f26c386e918fb1806c1807d28314e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888944"
 ---
 # <a name="delete-privilegedroleassignment"></a>Удаление privilegedRoleAssignment
 
@@ -38,7 +39,7 @@ DELETE /privilegedRoleAssignments/{id}
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -57,8 +58,7 @@ DELETE /privilegedRoleAssignments/{id}
 DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true

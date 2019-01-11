@@ -2,12 +2,13 @@
 title: Delete windows10CustomConfiguration
 description: Удаляет объект windows10CustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 983bdc29dd5eeec2b8a743ba560cf73b34874f35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 43b0247cdd888603ff9525adb63e859462960d83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302151"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868042"
 ---
 # <a name="delete-windows10customconfiguration"></a>Delete windows10CustomConfiguration
 
@@ -35,11 +36,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

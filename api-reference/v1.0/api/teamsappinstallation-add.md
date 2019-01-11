@@ -2,12 +2,13 @@
 title: Добавление приложения в группу
 description: Пакет приложения для указанной группы.
 author: nkramer
-ms.openlocfilehash: 41682d1280b9aaa76f6ef09d0b5ddbd5338d110f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8a4e96486f017d208d7afe343dcee3add1827fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846524"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в группу
 
@@ -35,7 +36,7 @@ POST /teams/{id}/installedApps
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|

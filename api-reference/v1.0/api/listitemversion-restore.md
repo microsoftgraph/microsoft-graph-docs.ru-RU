@@ -1,12 +1,13 @@
 ---
 title: Восстановление предыдущей версии ресурса ListItem
 description: Восстановление предыдущей версии ресурса ListItem в качестве текущей версии. При этом будет создана новая версия с тем же содержимым, что и в предыдущей версии, но будут сохранены все существующие версии элемента.
-ms.openlocfilehash: f8dc4196c40c51287e93aaa667c325e8d4f6dcfb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6fb315986a8dc22363e22235f8cf65e0cbc21fed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866964"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Восстановление предыдущей версии ресурса ListItem
 

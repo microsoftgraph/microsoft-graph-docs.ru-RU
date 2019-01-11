@@ -1,12 +1,13 @@
 ---
 title: Список объектов SubscribedSku
 description: Получение списка коммерческих подписок, приобретенных организацией.
-ms.openlocfilehash: c20e72344c56765dd24c89d6d6c1d0aa24244f2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6439fde92c4f8f520d172969fd1c7b2fa2c09282
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078338"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830187"
 ---
 # <a name="list-subscribedskus"></a>Список объектов SubscribedSku
 
@@ -36,7 +37,7 @@ GET /subscribedSkus
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -53,8 +54,7 @@ GET /subscribedSkus
 GET https://graph.microsoft.com/beta/subscribedSkus
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

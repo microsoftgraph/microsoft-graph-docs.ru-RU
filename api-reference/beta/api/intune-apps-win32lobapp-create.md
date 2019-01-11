@@ -2,12 +2,13 @@
 title: Создание win32LobApp
 description: Создание нового объекта win32LobApp.
 author: tfitzmac
-ms.openlocfilehash: 7eb282ad8c12172e0af960ac71c3a1a5a4ba8fd9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edd3e68d71cb2f31bb7b2f3fc0b24bde1e33768a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874377"
 ---
 # <a name="create-win32lobapp"></a>Создание win32LobApp
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта win32LobApp.
 
 В следующей таблице показаны свойства, которые необходимы для создания win32LobApp.
@@ -66,8 +67,8 @@ POST /deviceAppManagement/mobileApps
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|installCommandLine|String.|Командной строки для установки этого приложения|
-|uninstallCommandLine|String.|В командной строке команду Удалить это приложение|
+|installCommandLine|Строка|Командной строки для установки этого приложения|
+|uninstallCommandLine|Строка|В командной строке команду Удалить это приложение|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
 |minimumFreeDiskSpaceInMB|Int32|Значение для минимального свободного дискового пространства, которая требуется для установки этого приложения.|
@@ -78,7 +79,7 @@ POST /deviceAppManagement/mobileApps
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Опыт установки для этого приложения.|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) коллекции|Коды возврата для записи поведение при установке.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Подробности MSI, если это приложение Win32 представляет собой приложение MSI.|
-|setupFilePath|String.|Относительный путь к файлу программы установки в пакете зашифрованные Win32LobApp.|
+|setupFilePath|Строка|Относительный путь к файлу программы установки в пакете зашифрованные Win32LobApp.|
 
 
 

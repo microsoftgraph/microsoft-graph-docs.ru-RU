@@ -1,12 +1,13 @@
 ---
 title: Обновление synchronizationSchema
 description: Обновление схемы синхронизации для данного задания или шаблона. Этот метод полностью заменяет текущей схеме в запросе. Для обновления схемы шаблона, звонок на объект приложения. Необходимо быть владельцем приложения.
-ms.openlocfilehash: 18ad164f0f1860ce954a9d4e1170f71e47f513b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4f3f3540fe0d304b4edc3a5fcaec7b3366dbb0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826140"
 ---
 # <a name="update-synchronizationschema"></a>Обновление synchronizationSchema
 
@@ -36,7 +37,7 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставить объект [synchronizationSchema](../resources/synchronization-synchronizationschema.md) для замены существующей схемы с.
 

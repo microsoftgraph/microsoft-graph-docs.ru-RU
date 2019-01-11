@@ -2,12 +2,13 @@
 title: Удаление windows10EasEmailProfileConfiguration
 description: Удаляет windows10EasEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: ca709bc7a1d2ffde0c0eb3f4da9188d98681906b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3489cd01c73cded23baa9fa4986b7804c752cedf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338341"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847658"
 ---
 # <a name="delete-windows10easemailprofileconfiguration"></a>Удаление windows10EasEmailProfileConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

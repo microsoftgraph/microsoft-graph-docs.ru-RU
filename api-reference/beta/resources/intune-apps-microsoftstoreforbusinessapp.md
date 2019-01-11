@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса microsoftStoreForBusinessApp
 description: Приложения из Microsoft Store для бизнеса. Этот класс не поддерживает операции создания, удаления и обновления.
-ms.openlocfilehash: 2046a1bee4d8a8e7f4ea68196f8f2a93c77cba9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c7fc509e498c42ebbadce22dd8fb5f03d0918eec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826105"
 ---
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>Тип ресурса microsoftStoreForBusinessApp
 
@@ -30,7 +31,7 @@ ms.locfileid: "27079654"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

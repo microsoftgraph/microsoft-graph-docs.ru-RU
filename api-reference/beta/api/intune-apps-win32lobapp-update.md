@@ -2,12 +2,13 @@
 title: Обновление win32LobApp
 description: Обновление свойства объекта win32LobApp.
 author: tfitzmac
-ms.openlocfilehash: 8c05da48719aa2e923ae767faec4979f23976e14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2deac829d1aad6cf0b1a1f3ec4a2a91e7b07c6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348624"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864934"
 ---
 # <a name="update-win32lobapp"></a>Обновление win32LobApp
 
@@ -39,11 +40,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [win32LobApp](../resources/intune-apps-win32lobapp.md).
@@ -68,8 +69,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|installCommandLine|String.|Командной строки для установки этого приложения|
-|uninstallCommandLine|String.|В командной строке команду Удалить это приложение|
+|installCommandLine|Строка|Командной строки для установки этого приложения|
+|uninstallCommandLine|Строка|В командной строке команду Удалить это приложение|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
 |minimumFreeDiskSpaceInMB|Int32|Значение для минимального свободного дискового пространства, которая требуется для установки этого приложения.|
@@ -80,7 +81,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Опыт установки для этого приложения.|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) коллекции|Коды возврата для записи поведение при установке.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Подробности MSI, если это приложение Win32 представляет собой приложение MSI.|
-|setupFilePath|String.|Относительный путь к файлу программы установки в пакете зашифрованные Win32LobApp.|
+|setupFilePath|Строка|Относительный путь к файлу программы установки в пакете зашифрованные Win32LobApp.|
 
 
 

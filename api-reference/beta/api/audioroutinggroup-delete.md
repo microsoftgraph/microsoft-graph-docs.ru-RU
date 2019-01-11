@@ -2,12 +2,13 @@
 title: Удаление звука группы маршрутизации
 description: Удаление указанного звука группы маршрутизации.
 author: VinodRavichandran
-ms.openlocfilehash: a21c90722b63d582f3c76ff518bcc68837135593
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: e8c5d28d2bdb620dc32e5c31d6926ed8b9e1c34e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380375"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829522"
 ---
 # <a name="delete-audio-routing-group"></a>Удаление звука группы маршрутизации
 
@@ -22,7 +23,7 @@ ms.locfileid: "27380375"
 | :-------------- | :------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +37,7 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

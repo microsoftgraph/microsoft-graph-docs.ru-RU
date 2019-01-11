@@ -2,12 +2,13 @@
 title: Delete windows10GeneralConfiguration
 description: Удаляет объект windows10GeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: d02f5b9175b257eb2d8900e82a0a371c9320b002
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd39ad386ce47973b049ae14f59e53bc82c17b33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352152"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852278"
 ---
 # <a name="delete-windows10generalconfiguration"></a>Delete windows10GeneralConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

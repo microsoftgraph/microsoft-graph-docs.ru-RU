@@ -2,12 +2,13 @@
 title: Тип перечисления notificationTemplateBrandingOptions
 description: Фирменная символика параметры для шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune.
 author: tfitzmac
-ms.openlocfilehash: e42dcf06be05fce5659311187673549da828361a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db7707c904192547667c19d93085c7a1fc9081ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848890"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>Тип перечисления notificationTemplateBrandingOptions
 
@@ -19,7 +20,7 @@ ms.locfileid: "27304251"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Нет фирменной символики.|
+|Нет|0|Нет фирменной символики.|
 |includeCompanyLogo|1|Включить логотип компании.|
 |includeCompanyName|2|Добавьте имя компании.|
 |includeContactInformation|4|Включают контактные сведения.|

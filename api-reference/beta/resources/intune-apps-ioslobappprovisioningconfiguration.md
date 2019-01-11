@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса iosLobAppProvisioningConfiguration
 description: В этом разделе приведены описания объявленные методы, свойства и связи, предоставляемые элементом IOS бизнес-приложения подготовки конфигурации ресурсов.
-ms.openlocfilehash: 07ae7c53f481aa6f2c9ad083881752591ab421fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fba0e89eb1caec8282dbd70fa71140bf9dff0ecd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078844"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866397"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>Тип ресурса iosLobAppProvisioningConfiguration
 
@@ -28,18 +29,18 @@ ms.locfileid: "27078844"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |expirationDateTime|DateTimeOffset|Необязательный профиль истечение срока действия Дата и время.|
 |payloadFileName|String|Имя файла полезной нагрузки (*.mobileprovision | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|описание|String|Указанное администратором описание конфигурации устройства.|
+|описание|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) коллекции|Назначения связанную группу.|
 |assignments|[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) коллекции|Назначения связанную группу для IosLobAppProvisioningConfiguration.|

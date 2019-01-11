@@ -2,12 +2,13 @@
 title: Перечисление объектов managedDeviceMobileAppConfigurationAssignment
 description: Список свойств и связей объектов managedDeviceMobileAppConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: db0a64dec86aa6dac0d869509de1e5a1abd5648e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96d37f3b58caf94dbaebae5ae77dc4386039f365
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828968"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>Перечисление объектов managedDeviceMobileAppConfigurationAssignment
 
@@ -35,11 +36,11 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

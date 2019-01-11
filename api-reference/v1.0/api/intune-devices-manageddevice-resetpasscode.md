@@ -2,12 +2,13 @@
 title: Действие resetPasscode
 description: Сброс секретного кода
 author: tfitzmac
-ms.openlocfilehash: 4f000a8c3e7c78f8fefabbaabff0727ff6f3385e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ec158e148b18af8922a11130e06b4269b52345d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867041"
 ---
 # <a name="resetpasscode-action"></a>Действие resetPasscode
 
@@ -37,11 +38,11 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

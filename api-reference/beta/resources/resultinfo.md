@@ -2,12 +2,13 @@
 title: Тип ресурса resultInfo
 description: Тип resultInfo.
 author: VinodRavichandran
-ms.openlocfilehash: db208ed214213ec906dac18b65140f010014fc6c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ca814fd5c44f0f811099faed53354d08ce8befdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380410"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855281"
 ---
 # <a name="resultinfo-resource-type"></a>Тип ресурса resultInfo
 
@@ -19,9 +20,9 @@ ms.locfileid: "27380410"
 
 | Свойство | Тип   | Описание          |
 | :------- | :----- | :------------------  |
-| code     | String | Код результата.     |
+| code     | Строка | Код результата.     |
 | message  | String | Сообщение.         |
-| дополнительный код  | String | Вложенный код результата. |
+| дополнительный код  | Строка | Вложенный код результата. |
 
 ## <a name="json-representation"></a>Представление JSON
 

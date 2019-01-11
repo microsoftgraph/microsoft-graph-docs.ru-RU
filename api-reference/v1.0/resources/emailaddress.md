@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса emailAddress
 description: Имя и электронный адрес контакта или получателя сообщения.
-ms.openlocfilehash: 962b2f36af9e292125edc3da8606cd532b8c2ec0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5ea1919e5c5f389c9b7fece508e8339f722b725a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024733"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826888"
 ---
 # <a name="emailaddress-resource-type"></a>Тип ресурса emailAddress
 

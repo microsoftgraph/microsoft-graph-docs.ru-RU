@@ -1,12 +1,13 @@
 ---
 title: Создание объекта plannerTask
 description: Используйте этот API, чтобы создать объект **plannerTask**.
-ms.openlocfilehash: 71f74bf9423666e0a8d7e8da79d891eb3e0f2bf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c80669b51a503ecd47bf1df3f41baa6457a8103d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028292"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880670"
 ---
 # <a name="create-plannertask"></a>Создание объекта plannerTask
 
@@ -66,8 +67,7 @@ Content-length: 285
 ```
 Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON.
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

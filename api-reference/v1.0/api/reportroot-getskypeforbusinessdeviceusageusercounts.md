@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSkypeForBusinessDeviceUsageUserCounts'
 description: Отследите динамику использования по количеству пользователей в организации, подключавшихся с помощью приложения Skype для бизнеса. Кроме того, вы получите статистические данные с разбивкой по типу устройства (Windows, телефон с Windows, телефон с Android, iPhone или iPad), на котором установлено клиентское приложение Skype для бизнеса, используемое в организации.
-ms.openlocfilehash: 262518865e7e5bb6997f32d1f71a2e04d015f428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b4f86079a1ce4a12ce3e480c148c588361bd9b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875817"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageUserCounts
 

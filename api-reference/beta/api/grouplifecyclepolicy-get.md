@@ -2,12 +2,13 @@
 title: Получение groupLifecyclePolicy
 description: Получение свойств и связей, принадлежащих объекту groupLifecyclePolicies.
 author: dkershaw10
-ms.openlocfilehash: ef239385766b33c4a03576200c6c9abf3938c25a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7f22c75c9ebfb53c967422712689dbfc4f25031
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879298"
 ---
 # <a name="get-grouplifecyclepolicy"></a>Получение groupLifecyclePolicy
 
@@ -39,7 +40,7 @@ GET /groupLifecyclePolicies/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.

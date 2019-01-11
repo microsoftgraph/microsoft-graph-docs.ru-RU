@@ -1,12 +1,13 @@
 ---
 title: Список directoryAudits
 description: Список журналов аудита, созданных функцией Azure Active Directory. Включает в себя журналы аудита, созданных функцией различных служб в Azure Active Directory пользователя, приложения, устройств и управление группами, привилегированной управления удостоверениями, обзоры доступа, условия использования, защиту, управление паролями (SSPR и администрирования сброс пароля ), Самообслуживания и т.д группы управления...
-ms.openlocfilehash: e607d866443a07f1405260b02a630276951ce310
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 08b9cd5ded6771883a6d0f1129cf44a808515f8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829339"
 ---
 # <a name="list-directoryaudits"></a>Список directoryAudits
 
@@ -19,7 +20,7 @@ ms.locfileid: "27074693"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложения | AuditLog.Read.All | 
+|Для приложений | AuditLog.Read.All | 
 
 Кроме того приложения должны быть [правильно зарегистрирован](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) для Azure AD.
 
@@ -55,7 +56,7 @@ GET /auditLogs/directoryAudits
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [directoryAudit](../resources/directoryaudit.md) в теле ответа.
@@ -70,8 +71,7 @@ GET /auditLogs/directoryAudits
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

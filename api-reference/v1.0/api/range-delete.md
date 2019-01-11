@@ -2,12 +2,13 @@
 title: 'Range: delete'
 description: Удаляет ячейки, связанные с диапазоном.
 author: lumine2008
-ms.openlocfilehash: 8abcc24161aef5dbb8fa40e028b21b9e54c0ff39
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c08b570ff6dcd0694b2dc1fb9031149cc5ed7402
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335618"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846643"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -35,7 +36,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

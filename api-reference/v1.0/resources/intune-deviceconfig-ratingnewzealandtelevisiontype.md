@@ -2,12 +2,13 @@
 title: Тип перечисления ratingNewZealandTelevisionType
 description: Метки TV оценки содержимого в новой Зеландии
 author: tfitzmac
-ms.openlocfilehash: fd390f678cf2d44239fbc86abda369c22a396504
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fcafb9c202f9392d5dc3ba834e7c7e78d2592972
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311902"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875490"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>Тип перечисления ratingNewZealandTelevisionType
 

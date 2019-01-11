@@ -2,12 +2,13 @@
 title: Создать VPP токен
 description: Создайте новый объект vppToken.
 author: tfitzmac
-ms.openlocfilehash: ab4c4c061f7a527583768382f309ef8c9adcb709
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 015cb03b806d3cd4fc79f690c4ad5e1aa11a072a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353006"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846923"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -61,10 +62,10 @@ POST /deviceAppManagement/vppTokens
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Boolean.|Согласны полномочия для данных, общий доступ для покупки программа корпоративного Apple.|
+|dataSharingConsentGranted|Логический|Согласны полномочия для данных, общий доступ для покупки программа корпоративного Apple.|
 |displayName|Строка|Администратор указанного маркера понятное имя.|
-|locationName|String.|Маркер расположение, возвращенные Apple VPP.|
-|claimTokenManagementFromExternalMdm|Boolean.|Admin разрешаете разрешить информация по получению маркеров управления из внешнего MDM.|
+|locationName|Строка|Маркер расположение, возвращенные Apple VPP.|
+|claimTokenManagementFromExternalMdm|Логический|Admin разрешаете разрешить информация по получению маркеров управления из внешнего MDM.|
 
 
 

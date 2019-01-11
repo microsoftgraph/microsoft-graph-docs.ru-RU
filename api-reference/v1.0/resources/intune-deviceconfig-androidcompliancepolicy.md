@@ -2,12 +2,13 @@
 title: Тип ресурса androidCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Android.
 author: tfitzmac
-ms.openlocfilehash: 95b8e4aff038b1fbc547ee7364ea900875953d6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33766bef485fbc639b4e89808bd679cef8af4fb0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829934"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>Тип ресурса androidCompliancePolicy
 

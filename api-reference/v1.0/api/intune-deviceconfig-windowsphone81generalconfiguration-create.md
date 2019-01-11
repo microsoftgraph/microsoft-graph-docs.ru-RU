@@ -2,12 +2,13 @@
 title: Создание объекта windowsPhone81GeneralConfiguration
 description: Создает объект windowsPhone81GeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 23e98acd93fc5851df690b7f06ee0bac3a16ce70
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 594dc82a4be7e939bd04d937cbf4d2ed583d7ddd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307086"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867083"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Создание объекта windowsPhone81GeneralConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -59,7 +60,7 @@ POST /deviceManagement/deviceConfigurations
 |cellularBlockWifiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений (разрешенных или заблокированных в зависимости от значения свойства CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Список, указанный с помощью свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Boolean|Указывает, следует ли заблокировать отправку диагностических данных.|
+|diagnosticDataBlockSubmission|Логический|Указывает, следует ли заблокировать отправку диагностических данных.|
 |emailBlockAddingAccounts|Boolean|Указывает, следует ли заблокировать пользовательские учетные записи электронной почты.|
 |locationServicesBlocked|Boolean|Указывает, следует ли заблокировать службы определения местоположения.|
 |microsoftAccountBlocked|Boolean|Указывает, следует ли запретить использовать учетную запись Майкрософт.|

@@ -2,12 +2,13 @@
 title: Обновление outlooktask
 description: Изменения для записи свойств задачи Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: 0cd4907c4ab1cb517ab2611cc4dc30431e496440
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 13426446fec4e7d33ea0f7fe35cd28d12e4e61d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771732"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874755"
 ---
 # <a name="update-outlooktask"></a>Обновление outlooktask
 
@@ -51,25 +52,25 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|assignedTo|String|Имя пользователя, которому назначена задача.|
+|assignedTo|Строка|Имя пользователя, которому назначена задача.|
 |body|[itemBody](../resources/itembody.md)|Основная задача, который обычно содержит сведения о задаче. Обратите внимание на то, что поддерживается только тип HTML-код.|
 |categories|Коллекция String|Категории, связанные с задачей.|
-|changeKey|String|Версия задачи.|
+|changeKey|Строка|Версия задачи.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанный часовой пояс, окончания задачи.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства используется формат ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанный часовой пояс, которую требуется завершения задачи.|
-|hasAttachments|Boolean|Значение true, если у задачи вложения.|
+|hasAttachments|Логический|Значение true, если у задачи вложения.|
 |importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Значение true, если оповещение установлено значение Напоминать пользователю задачи.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|owner|String|Имя человека, создавшего задачу.|
-|parentFolderId|String|Уникальный идентификатор родительской папки задач.|
+|owner|Строка|Имя человека, создавшего задачу.|
+|parentFolderId|Строка|Уникальный идентификатор родительской папки задач.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Шаблон повторения для задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время оповещения напоминание задачи, будет выполнена.|
 |sensitivity|string|Указывает уровень конфиденциальности для задачи. Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе после начала задачи.|
 |status|string|Указывает состояние или хода выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|subject|String|Краткое описание или название задачи.|
+|subject|Строка|Краткое описание или название задачи.|
 
 ## <a name="response"></a>Ответ
 

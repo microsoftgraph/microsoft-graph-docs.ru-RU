@@ -2,12 +2,13 @@
 title: Создание deviceManagementScriptGroupAssignment
 description: Создание нового объекта deviceManagementScriptGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: f084fb933d4694d9c1dfa43f018fb3ce2d8dd95b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 080db816339d544681a8cb6de87ebcc9b7e60b71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324782"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881538"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Создание deviceManagementScriptGroupAssignment
 
@@ -37,11 +38,11 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта deviceManagementScriptGroupAssignment.
 
 В следующей таблице показаны свойства, которые необходимы для создания deviceManagementScriptGroupAssignment.
@@ -49,7 +50,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта назначения группы, сценарий управления устройства.|
-|targetGroupId|String.|Идентификатор группы Azure Active Directory мы ориентация сценария.|
+|targetGroupId|Строка|Идентификатор группы Azure Active Directory мы ориентация сценария.|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса impossibleTravelRiskEvent
 description: События риска обнаруживается Azure Active Directory защиту которых возникают два учетной записи войти в систему из мест необычных для пользователя и невозможно в поездке между различными расположениями в интервал между которые запускаются входа полные сведения о события рисков можно найти в документации по Azure AD защиту.
-ms.openlocfilehash: 38e61927121f520e79fd1fec8b8e6443fa8b76e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e9ce064a5ea724b498f3290f630a4169b1aef897
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075119"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846454"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>Тип ресурса impossibleTravelRiskEvent
 
@@ -22,7 +23,7 @@ ms.locfileid: "27075119"
 |[Получение impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |Чтение свойства и связи объекта impossibleTravelRiskEvent.|
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Это всегда больше или равно datetime самого события риска. Это правильное свойство для использования в качестве фильтра при запросе события рисков.|
@@ -44,7 +45,7 @@ ms.locfileid: "27075119"
 |userPrincipalName|string| Имя участника-пользователя пользователя в группу риска|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Только для чтения. Допускается значение null.|
 
