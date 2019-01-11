@@ -3,30 +3,31 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Копирование файла или папки
-ms.openlocfilehash: e34ef4808f284d0f8ad22c9c2094bf5d5cff2523
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8289bd3c15575e1469fe18baf45c6c2f937ed2dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077555"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879445"
 ---
-# <a name="copy-a-driveitem"></a><span data-ttu-id="f43c5-102">Копирование ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="f43c5-102">Copy a DriveItem</span></span>
+# <a name="copy-a-driveitem"></a><span data-ttu-id="85f7e-102">Копирование ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="85f7e-102">Copy a DriveItem</span></span>
 
-> <span data-ttu-id="f43c5-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f43c5-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f43c5-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f43c5-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="85f7e-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="85f7e-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="85f7e-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="85f7e-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="f43c5-105">Асинхронно создает копию элемента [driveItem][item-resource] (включая все дочерние элементы) в новом родительском элементе или с новым именем.</span><span class="sxs-lookup"><span data-stu-id="f43c5-105">Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.</span></span>
+<span data-ttu-id="85f7e-105">Асинхронно создает копию элемента [driveItem][item-resource] (включая все дочерние элементы) в новом родительском элементе или с новым именем.</span><span class="sxs-lookup"><span data-stu-id="85f7e-105">Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f43c5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f43c5-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="85f7e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="85f7e-106">Permissions</span></span>
 
-<span data-ttu-id="f43c5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f43c5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="85f7e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="85f7e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f43c5-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f43c5-109">Permission type</span></span>      | <span data-ttu-id="f43c5-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f43c5-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="85f7e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="85f7e-109">Permission type</span></span>      | <span data-ttu-id="85f7e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="85f7e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f43c5-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f43c5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f43c5-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f43c5-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f43c5-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f43c5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f43c5-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f43c5-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f43c5-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f43c5-115">Application</span></span> | <span data-ttu-id="f43c5-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f43c5-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="85f7e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="85f7e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="85f7e-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85f7e-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="85f7e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="85f7e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="85f7e-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85f7e-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="85f7e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="85f7e-115">Application</span></span> | <span data-ttu-id="85f7e-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85f7e-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f43c5-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f43c5-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="85f7e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="85f7e-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,22 +39,22 @@ POST /sites/{siteId}/drive/items/{itemId}/copy
 POST /users/{userId}/drive/items/{itemId}/copy
 ```
 
-### <a name="request-body"></a><span data-ttu-id="f43c5-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f43c5-118">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="85f7e-118">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="85f7e-118">Request body</span></span>
 
-<span data-ttu-id="f43c5-119">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f43c5-119">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="85f7e-119">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="85f7e-119">In the request body, provide a JSON object with the following parameters.</span></span>
 
 
-| <span data-ttu-id="f43c5-120">Имя</span><span class="sxs-lookup"><span data-stu-id="f43c5-120">Name</span></span>            | <span data-ttu-id="f43c5-121">Значение</span><span class="sxs-lookup"><span data-stu-id="f43c5-121">Value</span></span>                                          | <span data-ttu-id="f43c5-122">Описание</span><span class="sxs-lookup"><span data-stu-id="f43c5-122">Description</span></span>                                                                                                 |
+| <span data-ttu-id="85f7e-120">Имя</span><span class="sxs-lookup"><span data-stu-id="85f7e-120">Name</span></span>            | <span data-ttu-id="85f7e-121">Значение</span><span class="sxs-lookup"><span data-stu-id="85f7e-121">Value</span></span>                                          | <span data-ttu-id="85f7e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="85f7e-122">Description</span></span>                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="f43c5-123">parentReference</span><span class="sxs-lookup"><span data-stu-id="f43c5-123">parentReference</span></span> | [<span data-ttu-id="f43c5-124">ItemReference</span><span class="sxs-lookup"><span data-stu-id="f43c5-124">ItemReference</span></span>](../resources/itemreference.md) | <span data-ttu-id="f43c5-p103">Необязательный. Отсылает к родительскому элементу, в котором будет создана копия.</span><span class="sxs-lookup"><span data-stu-id="f43c5-p103">Optional. Reference to the parent item the copy will be created in.</span></span>                                         |
-| <span data-ttu-id="f43c5-127">name</span><span class="sxs-lookup"><span data-stu-id="f43c5-127">name</span></span>            | <span data-ttu-id="f43c5-128">строка</span><span class="sxs-lookup"><span data-stu-id="f43c5-128">string</span></span>                                         | <span data-ttu-id="f43c5-p104">Необязательный. Новое имя копии. Если оно не предоставлено, будет использовано такое же имя, как в оригинале.</span><span class="sxs-lookup"><span data-stu-id="f43c5-p104">Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.</span></span>    |
+| <span data-ttu-id="85f7e-123">parentReference</span><span class="sxs-lookup"><span data-stu-id="85f7e-123">parentReference</span></span> | [<span data-ttu-id="85f7e-124">ItemReference</span><span class="sxs-lookup"><span data-stu-id="85f7e-124">ItemReference</span></span>](../resources/itemreference.md) | <span data-ttu-id="85f7e-p103">Необязательный. Отсылает к родительскому элементу, в котором будет создана копия.</span><span class="sxs-lookup"><span data-stu-id="85f7e-p103">Optional. Reference to the parent item the copy will be created in.</span></span>                                         |
+| <span data-ttu-id="85f7e-127">name</span><span class="sxs-lookup"><span data-stu-id="85f7e-127">name</span></span>            | <span data-ttu-id="85f7e-128">строка</span><span class="sxs-lookup"><span data-stu-id="85f7e-128">string</span></span>                                         | <span data-ttu-id="85f7e-p104">Необязательный. Новое имя копии. Если оно не предоставлено, будет использовано такое же имя, как в оригинале.</span><span class="sxs-lookup"><span data-stu-id="85f7e-p104">Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.</span></span>    |
 
-<span data-ttu-id="f43c5-132">**Примечание.** Элемент _parentReference_ должен включать параметры `driveId` и `id` для целевой папки.</span><span class="sxs-lookup"><span data-stu-id="f43c5-132">**Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.</span></span>
+<span data-ttu-id="85f7e-132">**Примечание.** Элемент _parentReference_ должен включать параметры `driveId` и `id` для целевой папки.</span><span class="sxs-lookup"><span data-stu-id="85f7e-132">**Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f43c5-133">Пример</span><span class="sxs-lookup"><span data-stu-id="f43c5-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="85f7e-133">Пример</span><span class="sxs-lookup"><span data-stu-id="85f7e-133">Example</span></span>
 
-<span data-ttu-id="f43c5-134">В этом примере показано, как копировать файл с идентификатором `{item-id}` в папку с идентификатором `driveId` и значением `id`.</span><span class="sxs-lookup"><span data-stu-id="f43c5-134">This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.</span></span>
-<span data-ttu-id="f43c5-135">У новой копии файла будет имя `contoso plan (copy).txt`.</span><span class="sxs-lookup"><span data-stu-id="f43c5-135">The new copy of the file will be named `contoso plan (copy).txt`.</span></span>
+<span data-ttu-id="85f7e-134">В этом примере показано, как копировать файл с идентификатором `{item-id}` в папку с идентификатором `driveId` и значением `id`.</span><span class="sxs-lookup"><span data-stu-id="85f7e-134">This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.</span></span>
+<span data-ttu-id="85f7e-135">У новой копии файла будет имя `contoso plan (copy).txt`.</span><span class="sxs-lookup"><span data-stu-id="85f7e-135">The new copy of the file will be named `contoso plan (copy).txt`.</span></span>
 
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -70,9 +71,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="f43c5-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="f43c5-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="85f7e-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="85f7e-136">Response</span></span>
 
-<span data-ttu-id="f43c5-137">Возвращает сведения о том, как [отслеживать ход](/graph/long-running-actions-overview) копирования после принятия запроса.</span><span class="sxs-lookup"><span data-stu-id="f43c5-137">Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.</span></span>
+<span data-ttu-id="85f7e-137">Возвращает сведения о том, как [отслеживать ход](/graph/long-running-actions-overview) копирования после принятия запроса.</span><span class="sxs-lookup"><span data-stu-id="85f7e-137">Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -81,12 +82,12 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-<span data-ttu-id="f43c5-138">В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования.</span><span class="sxs-lookup"><span data-stu-id="f43c5-138">The value of the `Location` header provides a URL for a service that will return the current state of the copy operation.</span></span>
-<span data-ttu-id="f43c5-139">Вы можете использовать эти сведения, чтобы [определить, когда копирование будет завершено](/graph/long-running-actions-overview).</span><span class="sxs-lookup"><span data-stu-id="f43c5-139">You can use this info to [determine when the copy has finished](/graph/long-running-actions-overview).</span></span>
+<span data-ttu-id="85f7e-138">В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования.</span><span class="sxs-lookup"><span data-stu-id="85f7e-138">The value of the `Location` header provides a URL for a service that will return the current state of the copy operation.</span></span>
+<span data-ttu-id="85f7e-139">Вы можете использовать эти сведения, чтобы [определить, когда копирование будет завершено](/graph/long-running-actions-overview).</span><span class="sxs-lookup"><span data-stu-id="85f7e-139">You can use this info to [determine when the copy has finished](/graph/long-running-actions-overview).</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="f43c5-140">Примечания</span><span class="sxs-lookup"><span data-stu-id="f43c5-140">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="85f7e-140">Примечания</span><span class="sxs-lookup"><span data-stu-id="85f7e-140">Remarks</span></span>
 
-<span data-ttu-id="f43c5-p107">Во многих случаях копирование выполняется асинхронно. Отклик API указывает, что операция копирования принята или отклонена, например из-за использования имени конечного файла.</span><span class="sxs-lookup"><span data-stu-id="f43c5-p107">In many cases the copy action is performed asynchronously. The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.</span></span>
+<span data-ttu-id="85f7e-p107">Во многих случаях копирование выполняется асинхронно. Отклик API указывает, что операция копирования принята или отклонена, например из-за использования имени конечного файла.</span><span class="sxs-lookup"><span data-stu-id="85f7e-p107">In many cases the copy action is performed asynchronously. The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.</span></span>
 
 [item-resource]: ../resources/driveitem.md
 

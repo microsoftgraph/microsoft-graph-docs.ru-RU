@@ -1,50 +1,51 @@
 ---
 title: Перечисление schemaExtensions
 description: 'Ознакомьтесь со списком schemaExtension объекты, созданные им владеете в текущем клиентов (который может быть любой приложений '
-ms.openlocfilehash: b5e11856156094cc797b9e620c8e2d3ff82da349
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bc8ac2ed0c96e112b5f5e47b9d84ecc16de7533b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028193"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880033"
 ---
-# <a name="list-schemaextensions"></a><span data-ttu-id="cd70f-103">Перечисление schemaExtensions</span><span class="sxs-lookup"><span data-stu-id="cd70f-103">List schemaExtensions</span></span>
+# <a name="list-schemaextensions"></a><span data-ttu-id="bbc47-103">Перечисление schemaExtensions</span><span class="sxs-lookup"><span data-stu-id="bbc47-103">List schemaExtensions</span></span>
 
-<span data-ttu-id="cd70f-104">Получение списка объектов [schemaExtension](../resources/schemaextension.md), созданных любыми приложениями, которыми вы владеете в текущем клиенте (они могут иметь состояние **InDevelopment**, **Available** или **Deprecated**), и всех других расширений схемы, принадлежащих другим приложениям и отмеченных как **Available**.</span><span class="sxs-lookup"><span data-stu-id="cd70f-104">Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**.</span></span> 
+<span data-ttu-id="bbc47-104">Получение списка объектов [schemaExtension](../resources/schemaextension.md), созданных любыми приложениями, которыми вы владеете в текущем клиенте (они могут иметь состояние **InDevelopment**, **Available** или **Deprecated**), и всех других расширений схемы, принадлежащих другим приложениям и отмеченных как **Available**.</span><span class="sxs-lookup"><span data-stu-id="bbc47-104">Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="cd70f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cd70f-105">Permissions</span></span>
-<span data-ttu-id="cd70f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cd70f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bbc47-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bbc47-105">Permissions</span></span>
+<span data-ttu-id="bbc47-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bbc47-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="cd70f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cd70f-108">Permission type</span></span>      | <span data-ttu-id="cd70f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cd70f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bbc47-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bbc47-108">Permission type</span></span>      | <span data-ttu-id="bbc47-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bbc47-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cd70f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cd70f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cd70f-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="cd70f-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="cd70f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cd70f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd70f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd70f-113">Not supported.</span></span>    |
-|<span data-ttu-id="cd70f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cd70f-114">Application</span></span> | <span data-ttu-id="cd70f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd70f-115">Not supported.</span></span> |
+|<span data-ttu-id="bbc47-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bbc47-110">Delegated (work or school account)</span></span> | <span data-ttu-id="bbc47-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="bbc47-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="bbc47-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bbc47-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bbc47-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bbc47-113">Not supported.</span></span>    |
+|<span data-ttu-id="bbc47-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bbc47-114">Application</span></span> | <span data-ttu-id="bbc47-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bbc47-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cd70f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cd70f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bbc47-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bbc47-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /schemaExtensions
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cd70f-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cd70f-117">Optional query parameters</span></span>
-<span data-ttu-id="cd70f-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="cd70f-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="bbc47-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="bbc47-117">Optional query parameters</span></span>
+<span data-ttu-id="bbc47-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="bbc47-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cd70f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cd70f-119">Request headers</span></span>
-| <span data-ttu-id="cd70f-120">Имя</span><span class="sxs-lookup"><span data-stu-id="cd70f-120">Name</span></span>      |<span data-ttu-id="cd70f-121">Описание</span><span class="sxs-lookup"><span data-stu-id="cd70f-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bbc47-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bbc47-119">Request headers</span></span>
+| <span data-ttu-id="bbc47-120">Имя</span><span class="sxs-lookup"><span data-stu-id="bbc47-120">Name</span></span>      |<span data-ttu-id="bbc47-121">Описание</span><span class="sxs-lookup"><span data-stu-id="bbc47-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cd70f-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cd70f-122">Authorization</span></span>  | <span data-ttu-id="cd70f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cd70f-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="cd70f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cd70f-125">Content-Type</span></span>   | <span data-ttu-id="cd70f-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cd70f-126">application/json</span></span> |
+| <span data-ttu-id="bbc47-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bbc47-122">Authorization</span></span>  | <span data-ttu-id="bbc47-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bbc47-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bbc47-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bbc47-125">Content-Type</span></span>   | <span data-ttu-id="bbc47-126">application/json</span><span class="sxs-lookup"><span data-stu-id="bbc47-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cd70f-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cd70f-127">Request body</span></span>
-<span data-ttu-id="cd70f-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cd70f-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bbc47-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="bbc47-127">Request body</span></span>
+<span data-ttu-id="bbc47-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="bbc47-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cd70f-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd70f-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bbc47-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="bbc47-129">Response</span></span>
 
-<span data-ttu-id="cd70f-130">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [schemaExtension](../resources/schemaextension.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="cd70f-130">If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cd70f-131">Пример</span><span class="sxs-lookup"><span data-stu-id="cd70f-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cd70f-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd70f-132">Request</span></span>
-<span data-ttu-id="cd70f-133">В приведенном ниже примере показано, как искать определенное расширение среди всех доступных расширений путем фильтрации по уникальному **идентификатору** расширения.</span><span class="sxs-lookup"><span data-stu-id="cd70f-133">The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**.</span></span> 
+<span data-ttu-id="bbc47-130">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [schemaExtension](../resources/schemaextension.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="bbc47-130">If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="bbc47-131">Пример</span><span class="sxs-lookup"><span data-stu-id="bbc47-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bbc47-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="bbc47-132">Request</span></span>
+<span data-ttu-id="bbc47-133">В приведенном ниже примере показано, как искать определенное расширение среди всех доступных расширений путем фильтрации по уникальному **идентификатору** расширения.</span><span class="sxs-lookup"><span data-stu-id="bbc47-133">The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**.</span></span> 
 <!-- {
   "blockType": "request",
   "name": "get_schemaextensions"
@@ -52,8 +53,8 @@ GET /schemaExtensions
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphlearn_test'
 ```
-##### <a name="response"></a><span data-ttu-id="cd70f-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd70f-134">Response</span></span>
-<span data-ttu-id="cd70f-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="cd70f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="bbc47-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="bbc47-134">Response</span></span>
+<span data-ttu-id="bbc47-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="bbc47-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,10 +87,10 @@ Content-length: 274
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="cd70f-138">См. также</span><span class="sxs-lookup"><span data-stu-id="cd70f-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bbc47-138">См. также</span><span class="sxs-lookup"><span data-stu-id="bbc47-138">See also</span></span>
 
-- [<span data-ttu-id="cd70f-139">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="cd70f-139">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="cd70f-140">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="cd70f-140">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="bbc47-139">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="bbc47-139">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="bbc47-140">Добавление пользовательских данных в группы с помощью расширений схемы</span><span class="sxs-lookup"><span data-stu-id="bbc47-140">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
