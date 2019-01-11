@@ -2,12 +2,13 @@
 title: Создание windowsAutopilotDeploymentProfileAssignment
 description: Создание нового объекта windowsAutopilotDeploymentProfileAssignment.
 author: tfitzmac
-ms.openlocfilehash: c73cd0c8f32ea5b5e84afb5873700a6523186059
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5edb72c852be52340eae366c0f2031385fb7ad4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338852"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851746"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>Создание windowsAutopilotDeploymentProfileAssignment
 
@@ -37,11 +38,11 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта windowsAutopilotDeploymentProfileAssignment.
 
 В следующей таблице показаны свойства, которые необходимы для создания windowsAutopilotDeploymentProfileAssignment.

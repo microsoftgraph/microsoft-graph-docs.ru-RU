@@ -2,12 +2,13 @@
 title: Создание объекта deviceManagementTroubleshootingEvent
 description: Создание объекта deviceManagementTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: cef96acd7db28fd9b686c01e748532e775cf5f01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25253b9851c675417801b41692ffaa90a1fe1039
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851781"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Создание объекта deviceManagementTroubleshootingEvent
 
@@ -37,7 +38,7 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

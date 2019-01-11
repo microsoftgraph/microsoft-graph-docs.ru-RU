@@ -2,12 +2,13 @@
 title: Обновление androidManagedStoreApp
 description: Обновление свойства объекта androidManagedStoreApp.
 author: tfitzmac
-ms.openlocfilehash: 2355b79b64c03da4f3be12e42d796b96ebbb31b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 45f37c037b1a9e1d66ff9ce7ace58a51453b6eb4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336129"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879396"
 ---
 # <a name="update-androidmanagedstoreapp"></a>Обновление androidManagedStoreApp
 
@@ -39,11 +40,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md).

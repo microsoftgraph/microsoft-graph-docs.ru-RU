@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса filterOperatorSchema
 description: Описывает оператор, который может использоваться в фильтре.
-ms.openlocfilehash: 1a4e21aea2b65073a00c9797065f6788a66e2334
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0d26fb58b77369b70ab185fa8ad5214d6b6c1e71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848281"
 ---
 # <a name="filteroperatorschema-resource-type"></a>Тип ресурса filterOperatorSchema
 
@@ -16,11 +17,11 @@ ms.locfileid: "27076037"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство                   | Тип                      | Description    |
+| Свойство                   | Тип                      | Описание    |
 |:---------------------------|:--------------------------|:---------------|
-|арность                       |String          |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию — `Binary`.|
+|арность                       |Строка          |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию — `Binary`.|
 |multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Возможные значения: `All`, `Any`. Применяется только к многозначных атрибутов. `All`означает, что все значения должны соответствовать условие. `Any`означает, что по крайней мере одно значение должен удовлетворяют условию. Значение по умолчанию — `All`.|
-|name                        |String                     |Имя оператора. |
+|name                        |Строка                     |Имя оператора. |
 |supportedAttributeTypes     |Коллекция String         |Атрибут типы, которые поддерживаются оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
 ## <a name="json-representation"></a>Представление JSON

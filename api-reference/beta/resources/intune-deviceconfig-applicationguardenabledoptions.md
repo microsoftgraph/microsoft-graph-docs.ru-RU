@@ -2,12 +2,13 @@
 title: Тип перечисления applicationGuardEnabledOptions
 description: Возможные значения для ApplicationGuardEnabledOptions
 author: tfitzmac
-ms.openlocfilehash: 9dd5327bb964f27706a0671a4cca41dda5b10780
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 599bae33fb5d76305256aeab2c3b339494f1143f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852523"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>Тип перечисления applicationGuardEnabledOptions
 

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Hashes
-ms.openlocfilehash: 2387af83450f667aa4732cc46d7d3cf2111579f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff147b45bcdc200e3da5d4a8761d8248fa887271
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075107"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853412"
 ---
 # <a name="hashes-resource-type"></a>Тип ресурса Hashes
 
@@ -42,7 +43,7 @@ ms.locfileid: "27075107"
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | Хэш SHA1 для содержимого файла (если доступно). Только для чтения. |
 | **crc32Hash**    | String | Значение CRC32 файла (если доступно). Только для чтения.            |
-| **quickXorHash** | String | Особый хэш файла, который можно использовать, чтобы определить, было ли изменено содержимое файла (если доступно). Только для чтения. |
+| **quickXorHash** | Строка | Особый хэш файла, который можно использовать, чтобы определить, было ли изменено содержимое файла (если доступно). Только для чтения. |
 
 **Примечание.** В некоторых случаях значения хэша могут быть недоступны. Если это так, значения хэша для определенного элемента будут обновлены после загрузки элемента.
 

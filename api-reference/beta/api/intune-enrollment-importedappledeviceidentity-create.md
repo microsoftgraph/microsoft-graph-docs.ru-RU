@@ -2,12 +2,13 @@
 title: Создание importedAppleDeviceIdentity
 description: Создание нового объекта importedAppleDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: f329e520659bea7332a84c78ed32f1abf071744d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d1c88a7d1621cc386ea5fd299d6fc1b014cb7b05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848421"
 ---
 # <a name="create-importedappledeviceidentity"></a>Создание importedAppleDeviceIdentity
 
@@ -37,11 +38,11 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта importedAppleDeviceIdentity.
 
 В следующей таблице показаны свойства, которые необходимы для создания importedAppleDeviceIdentity.
@@ -50,7 +51,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |serialNumber|Строка|Серийный номер устройства|
-|requestedEnrollmentProfileId|String.|Admin идентификатор профиля регистрации планирует применять на устройство во время следующего регистрации|
+|requestedEnrollmentProfileId|Строка|Admin идентификатор профиля регистрации планирует применять на устройство во время следующего регистрации|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль регистрации времени была назначена на устройство|
 |isSupervised|Boolean|Указывает, если управляет устройства Apple. Дополнительные сведения о был создан:https://support.apple.com/en-us/HT202837|
 |discoverySource;|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройства Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
