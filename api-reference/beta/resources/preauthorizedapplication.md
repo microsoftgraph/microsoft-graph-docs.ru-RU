@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса preAuthorizedApplication
 description: Представляет приложение и запрошенные разрешения для явного согласия пользователя. Требуется администраторам предоставляются разрешения для приложения. preAuthorizedApplications пользователя согласие на запрошенные разрешения не требуются. Разрешения, перечисленные в preAuthorizedApplications не требуют согласия пользователя. Тем не менее любые дополнительные запрошенные разрешения, не указанные в preAuthorizedApplications требуется согласия пользователя.
-ms.openlocfilehash: d299aefcac541407e0e42d0b0933e903afa3e84d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa26b8046b81db70300b8ff40abcbd2b84f3f0c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082428"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832797"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>Тип ресурса preAuthorizedApplication
 
@@ -16,7 +17,7 @@ ms.locfileid: "27082428"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |appId|String| Уникальный идентификатор для приложения. |
 |permissionIds|Коллекция String| Уникальный идентификатор для [publishedPermissionScope](permissionscope.md) или [роли приложения](approle.md) приложения требуется. |

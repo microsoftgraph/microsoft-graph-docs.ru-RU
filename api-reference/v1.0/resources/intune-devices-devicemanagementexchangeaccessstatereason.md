@@ -2,12 +2,13 @@
 title: Тип перечисления deviceManagementExchangeAccessStateReason
 description: Причина состояния доступа устройства Exchange.
 author: tfitzmac
-ms.openlocfilehash: d51e9656c841a86d282eb1b5654da042f91866fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96bcc60daa0ec69788856413bf1d253d8b0cabfc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834796"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>Тип перечисления deviceManagementExchangeAccessStateReason
 
@@ -17,7 +18,7 @@ ms.locfileid: "27323445"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Нет причин состояние доступа, обнаруженные в Exchange|
+|Нет|0|Нет причин состояние доступа, обнаруженные в Exchange|
 |unknown|1|Причина состояния Неизвестный доступ|
 |exchangeGlobalRule|2|Определяет, какие Exchange глобальное правило состояние доступа|
 |exchangeIndividualRule|3|Определяет, какие Exchange отдельное правило состояние доступа|

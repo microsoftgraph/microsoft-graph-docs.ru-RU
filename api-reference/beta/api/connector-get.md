@@ -1,12 +1,13 @@
 ---
 title: Получение соединителя
 description: Извлечение свойств объекта соединителя.
-ms.openlocfilehash: f299648093350d4d91637268aa76908f69ca7a38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 59a27a24dbb0f91881c4be71c0715ce0c648c4d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833336"
 ---
 # <a name="get-connector"></a>Получение соединителя
 
@@ -33,9 +34,9 @@ GET /connectorGroups/{id}/members/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -52,8 +53,7 @@ GET /connectorGroups/{id}/members/{id}
 GET https://graph.microsoft.com/{ver}/connectors/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

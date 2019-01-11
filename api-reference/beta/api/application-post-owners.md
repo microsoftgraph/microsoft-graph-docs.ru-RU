@@ -2,12 +2,13 @@
 title: Создание владельца
 description: Используйте этот интерфейс API для создания нового владельца.
 author: lleonard-msft
-ms.openlocfilehash: 60aaec55b0cc2994bd9f001b1af81a64a6ddca14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 82a117fb42cdd80ae83ef24b9c0fedf74dbd3d04
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353447"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833784"
 ---
 # <a name="create-owner"></a>Создание владельца
 

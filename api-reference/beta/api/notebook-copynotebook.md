@@ -1,12 +1,13 @@
 ---
 title: 'notebook: copyNotebook'
 description: Копирование записной книжки в папку Notebooks в целевой библиотеке документов. Если такой папки нет, она будет создана.
-ms.openlocfilehash: 4d22c6904f14d0ccc5d4f3de35cdf46fbd3afd6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ba9ed886ab0102a3ed66c31efbc420832e67d316
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833056"
 ---
 # <a name="notebook-copynotebook"></a>notebook: copyNotebook
 
@@ -39,15 +40,15 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите объект JSON, который содержит параметры, требуемые операцией. Если тело не нужно, можно отправить пустое тело.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|Идентификатор сайта SharePoint для копирования. Используйте только при копировании на сайте группы разработчиков Office 365.|
-|siteId|String|Идентификатор веб-сайта SharePoint, чтобы скопировать. Используйте только при копировании на сайте группы разработчиков Office 365.|
-|groupId|String|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
-|renameAs|String|Имя копии. По умолчанию используется имя существующего элемента. |
+|siteCollectionId|Строка|Идентификатор сайта SharePoint для копирования. Используйте только при копировании на сайте группы разработчиков Office 365.|
+|siteId|Строка|Идентификатор веб-сайта SharePoint, чтобы скопировать. Используйте только при копировании на сайте группы разработчиков Office 365.|
+|groupId|Строка|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
+|renameAs|Строка|Имя копии. По умолчанию используется имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 

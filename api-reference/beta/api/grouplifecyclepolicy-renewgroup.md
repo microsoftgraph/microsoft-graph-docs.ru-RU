@@ -1,12 +1,13 @@
 ---
 title: 'groupLifecyclePolicy: renewGroup'
 description: Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
-ms.openlocfilehash: 13e1713d3d00e7feac0b23eae8a314e55341e20e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5472927769175912736f66a2d848f103cfb5b8c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833322"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 
@@ -41,7 +42,7 @@ POST /groupLifecyclePolicies/renewGroup
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип | Описание |

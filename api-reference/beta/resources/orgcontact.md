@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса orgContact
 description: Ниже представлено описание ресурса в формате JSON.
-ms.openlocfilehash: 90d25d3ef7688372e4e961220bc454a2b5607344
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: bdf63762a4bb632dccc3578963f42b91d7127fe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832972"
 ---
 # <a name="orgcontact-resource-type"></a>Тип ресурса orgContact
 

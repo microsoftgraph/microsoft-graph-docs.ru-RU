@@ -2,12 +2,13 @@
 title: Тип ресурса windows10EnterpriseModernAppManagementConfiguration
 description: Конфигурация управления современными приложениями для Windows 10 Корпоративная.
 author: tfitzmac
-ms.openlocfilehash: 12ac8aca2ef16c09154db68786d806376e80cf43
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a9a2456936e2c97966c4606c41151218e1c2c49d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831229"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>Тип ресурса windows10EnterpriseModernAppManagementConfiguration
 

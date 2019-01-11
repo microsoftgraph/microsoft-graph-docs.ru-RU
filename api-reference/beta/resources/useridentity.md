@@ -1,12 +1,13 @@
 ---
 title: Тип удостоверению пользователя
 description: 'Для Azure AD вызвать обзоры, этот тип представляет удостоверение пользователя Azure AD для рецензент проверки доступа.  '
-ms.openlocfilehash: 6cbbe7aa017572bcd753a57edbf82751ac4986a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b629fff4c5cecd513777cc5004646aac5f1c85b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839643"
 ---
 # <a name="useridentity-type"></a>Тип удостоверению пользователя
 
@@ -19,10 +20,10 @@ ms.locfileid: "27077814"
 
 ## <a name="methods"></a>Methods
 
-Отсутствуют.  Объекты этого типа будет включать в теле запроса при [создании accessReview](../api/accessreview-create.md).
+Нет.  Объекты этого типа будет включать в теле запроса при [создании accessReview](../api/accessreview-create.md).
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `displayName` | `String` | Отображаемое имя удостоверения. Обратите внимание, что не всегда возможно, доступен или актуальными.    |
 | `id`          | `String` | Уникальный идентификатор удостоверения.  |
@@ -42,8 +43,8 @@ ms.locfileid: "27077814"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение accessReview рецензентов](../api/accessreview-listreviewers.md) |       Коллекция [удостоверению пользователя](useridentity.md)| Получите рецензентов accessReview. |
-|[Добавление accessReview редактор](../api/accessreview-addreviewer.md) |      Отсутствуют.   |   Добавьте проверяющий accessReview. |
-|[Удаление accessReview редактор](../api/accessreview-removereviewer.md) | Отсутствуют.  |   Удаление рецензента из accessReview. |
+|[Добавление accessReview редактор](../api/accessreview-addreviewer.md) |      Нет.   |   Добавьте проверяющий accessReview. |
+|[Удаление accessReview редактор](../api/accessreview-removereviewer.md) | Нет.  |   Удаление рецензента из accessReview. |
 
 ## <a name="json-representation"></a>Представление JSON
 

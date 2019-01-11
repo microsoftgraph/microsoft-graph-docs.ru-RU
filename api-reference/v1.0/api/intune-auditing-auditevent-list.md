@@ -2,12 +2,13 @@
 title: Перечисление объектов auditEvent
 description: Список свойств и связей объектов auditEvent.
 author: tfitzmac
-ms.openlocfilehash: b4ef3d3993884c045428134c03b5097643b3b171
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 344e6a1413d95ede901d2cd6d3390ad83281af47
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839797"
 ---
 # <a name="list-auditevents"></a>Перечисление объектов auditEvent
 
@@ -35,11 +36,11 @@ GET /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,12 +2,13 @@
 title: Тип перечисления applicationGuardBlockFileTransferType
 description: Возможные значения для applicationGuardBlockFileTransfer
 author: tfitzmac
-ms.openlocfilehash: fe1be9b0ceaee5651302b041b6612515557d899e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63460da5d7b3d78c302b706a8aeedcdedb066c48
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835304"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>Тип перечисления applicationGuardBlockFileTransferType
 

@@ -2,12 +2,13 @@
 title: Список androidVpnConfigurations
 description: Свойства списка и связей объектов androidVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a26fe24e4680153075a54614b241ce7103d3caf2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d4fbe96a6463e81d010af19295bb57b46c41c8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833392"
 ---
 # <a name="list-androidvpnconfigurations"></a>Список androidVpnConfigurations
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

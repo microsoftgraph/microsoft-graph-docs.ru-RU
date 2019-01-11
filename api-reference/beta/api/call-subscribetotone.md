@@ -2,12 +2,13 @@
 title: 'вызов: subscribeToTone'
 description: Подпишитесь на DTMF (двухтональный несколькими частота сигналы). Это позволяет получать уведомления при нажатии клавиш на телефоне «тонального сигнала».
 author: VinodRavichandran
-ms.openlocfilehash: 82f7632736dc187fae1313224a6cb6f4807e0dd1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 226edd59e7d826dd7304ae45ec58c360e8ef3191
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380438"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833434"
 ---
 # <a name="call-subscribetotone"></a>вызов: subscribeToTone
 
@@ -22,7 +23,7 @@ ms.locfileid: "27380438"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,12 +37,12 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    | Описание |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Контекст клиента. |
+| clientContext  | Строка  | Контекст клиента. |
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.

@@ -1,12 +1,13 @@
 ---
 title: 'Группа: validateProperties'
 description: Проверьте, если группу Office 365 отображаемое имя или почты псевдонимов стандарту именования политик. Клиенты могут использовать API-Интерфейс для определения отображаемое имя или псевдоним почты является допустимым перед попыткой **обновления** группы с Office 365. Для проверки свойства перед созданием группы, используйте функцию validateProperties для объектов каталога.
-ms.openlocfilehash: d7f2767908e6cbf9116bec769a1abc32731e4758
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0ffdf44f687ad047d952e00c268239432244006d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075613"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833903"
 ---
 # <a name="group-validateproperties"></a>Группа: validateProperties
 
@@ -41,13 +42,13 @@ POST /groups/<id>/validateProperties
 | Authorization  | Bearer {code}    |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String| Отображаемое имя группы, чтобы проверить. Свойство не требуется по отдельности. Тем не менее по крайней мере одно свойство (отображаемое имя или mailNickname) является обязательным. |
+|displayName|Строка| Отображаемое имя группы, чтобы проверить. Свойство не требуется по отдельности. Тем не менее по крайней мере одно свойство (отображаемое имя или mailNickname) является обязательным. |
 |mailNickname|String| Псевдоним почты группы для проверки. Свойство не требуется по отдельности. Тем не менее по крайней мере одно свойство (отображаемое имя или mailNickname) является обязательным. |
 |onBehalfOfUserId|Guid| Идентификатор объекта пользователя для олицетворения при вызове API. Результаты проверки используются атрибуты onBehalfOfUserId и роли. |
 

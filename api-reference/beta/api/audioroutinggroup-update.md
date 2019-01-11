@@ -2,12 +2,13 @@
 title: Обновление звука группы маршрутизации
 description: Изменение источники и приемники audioRoutingGroup.
 author: VinodRavichandran
-ms.openlocfilehash: f1fac21e2d52818ee068bfe64e8db7853332d993
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: b12d93d3cd8255cb735beaba7c78684a2b3b3a9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833840"
 ---
 # <a name="update-audio-routing-group"></a>Обновление звука группы маршрутизации
 
@@ -22,7 +23,7 @@ ms.locfileid: "27380368"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

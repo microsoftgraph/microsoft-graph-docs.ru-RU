@@ -2,12 +2,13 @@
 title: Удаление объекта rejectedSender
 description: Удаление пользователя или группы из списка rejectedSenders.
 author: dkershaw10
-ms.openlocfilehash: ea70f367fc547e08697746b3a582135e3254f8fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6033b1991807aac1b3edfff10ff407f0b667df7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339426"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830529"
 ---
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
 Удаление пользователя или группы из списка rejectedSenders.
@@ -34,7 +35,7 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный. 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

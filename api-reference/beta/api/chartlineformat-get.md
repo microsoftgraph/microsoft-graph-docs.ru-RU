@@ -2,12 +2,13 @@
 title: Получение объекта ChartLineFormat
 description: Получение свойств и связей объекта chartlineformat.
 author: lumine2008
-ms.openlocfilehash: 4ceef0712eabeec616ec0ac03ac4b07579ff798b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 45f45a079d24d65cf0c2224fd58233222ce472b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833364"
 ---
 # <a name="get-chartlineformat"></a>Получение объекта ChartLineFormat
 
@@ -39,7 +40,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

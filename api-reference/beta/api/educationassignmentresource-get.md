@@ -2,12 +2,13 @@
 title: Получение educationAssignmentResource
 description: 'Получение свойств определенного ресурса по назначению.  '
 author: dipakboyed
-ms.openlocfilehash: 25c448f3247631c9129a837bd00842588bf152d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da96f7476e6feda2f27b0653393de8c2eaac3022
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358816"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832958"
 ---
 # <a name="get-educationassignmentresource"></a>Получение educationAssignmentResource
 
@@ -36,7 +37,7 @@ GET /education/classes/{id}/assignments/{id}/resources/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [educationAssignmentResource](../resources/educationassignmentresource.md) в теле ответа.

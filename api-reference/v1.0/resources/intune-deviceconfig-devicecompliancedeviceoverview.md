@@ -2,12 +2,13 @@
 title: Тип ресурса deviceComplianceDeviceOverview
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: b7384eef7a1a1c9ddf7be8e3be14807c45604593
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ee24c421eb962db68754ad05bcd2b966db0563d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334778"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830949"
 ---
 # <a name="devicecompliancedeviceoverview-resource-type"></a>Тип ресурса deviceComplianceDeviceOverview
 

@@ -2,12 +2,13 @@
 title: Удаление объекта deviceComplianceUserStatus
 description: Удаляет объект deviceComplianceUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 00c9962cb87d797b8867f7786a9507895468fbb2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 81c1d2bdab48cb94067218f132546af1246b2874
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832517"
 ---
 # <a name="delete-devicecomplianceuserstatus"></a>Удаление объекта deviceComplianceUserStatus
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/use
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

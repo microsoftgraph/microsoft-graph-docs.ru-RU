@@ -1,12 +1,13 @@
 ---
 title: Список privilegedRoleAssignments
 description: Получение списка privilegedRoleAssignment объекты, которые соответствуют все назначения ролей для организации.
-ms.openlocfilehash: 7642768348e2fff43f52c6865cabf85aa16ef893
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ee6fac823e4d05eb13ada0a3ad1082ba1a78a7e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838663"
 ---
 # <a name="list-privilegedroleassignments"></a>Список privilegedRoleAssignments
 
@@ -37,7 +38,7 @@ GET /privilegedRoleAssignments
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

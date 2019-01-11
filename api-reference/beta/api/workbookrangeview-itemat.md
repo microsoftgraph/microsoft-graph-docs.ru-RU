@@ -1,12 +1,13 @@
 ---
 title: 'workbookRangeView: itemAt'
 description: Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
-ms.openlocfilehash: c19a2480202b1528a1d09ffd6151835a357c14ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2fc5c638bbe55f3209d629415023ece7d81e6c29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078740"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834778"
 ---
 # <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
 
@@ -33,7 +34,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 
 | Параметр    | Тип   |Описание|
@@ -58,8 +59,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

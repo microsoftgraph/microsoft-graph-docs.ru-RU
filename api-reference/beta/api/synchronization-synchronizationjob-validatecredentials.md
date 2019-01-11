@@ -1,12 +1,13 @@
 ---
 title: 'synchronizationJob: validateCredentials'
 description: Убедитесь, что учетные данные действительны в клиентов.
-ms.openlocfilehash: b4f488787474158172800fe23d7d0ae78ef6a366
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b78d6f7b3ff197607897fbdce123aa1e7e646afc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834923"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -34,10 +35,10 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |useSavedCredentials|Логический|При `true`, `credentials` параметр игнорируется и проверяются предварительно сохраненных учетных данных (при его наличии). |
 |учетные данные|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) коллекции|Учетные данные для проверки. Игнорируется, если `useSavedCredentials` — это параметр `true`.|

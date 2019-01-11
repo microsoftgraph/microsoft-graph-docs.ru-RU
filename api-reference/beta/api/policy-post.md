@@ -1,12 +1,13 @@
 ---
 title: Создание политики
 description: Создание нового объекта политики, указав отображаемое имя, тип политики и описание политики.
-ms.openlocfilehash: fca6201d7afa6a78f15da0d37fb611e4114783e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4850b2899bfd9add703af912f16602960b2657f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831236"
 ---
 # <a name="create-policy"></a>Создание политики
 
@@ -36,16 +37,16 @@ POST /policies
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | application/json  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса для представления JSON объекта [политики](../resources/policy.md) .
 
 В следующей таблице приведены свойства, необходимых при создании политики.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|definition|String|Строковая версия объекта [политики](../resources/policy.md) .|
-|displayName|String|Пользовательское имя для политики.|
-|type|String|Указывает тип политики. В настоящее время должен быть «TokenLifetimePolicy»|
+|definition|Строка|Строковая версия объекта [политики](../resources/policy.md) .|
+|displayName|Строка|Пользовательское имя для политики.|
+|type|Строка|Указывает тип политики. В настоящее время должен быть «TokenLifetimePolicy»|
 
 ## <a name="response"></a>Ответ
 
@@ -69,8 +70,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ```http
 HTTP/1.1 201 Created

@@ -2,12 +2,13 @@
 title: Тип ресурса windowsPrivacyDataAccessControlItem
 description: Задать уровень доступа элемента управления по категориям конфиденциальности данных
 author: tfitzmac
-ms.openlocfilehash: 3655282d7b3b6ff31268f9fe536a4a8f6ac85341
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3672ff7bd0c968f60cc80797545aa8bb13d2bb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314989"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837424"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>Тип ресурса windowsPrivacyDataAccessControlItem
 
@@ -31,8 +32,8 @@ ms.locfileid: "27314989"
 |id|Строка|Ключ WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Указывает уровень доступа для категории конфиденциальности данных, к которому будет предоставлен указанного приложения к. Возможные значения: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Указывает категорию конфиденциальности данных, к которому будет применяться контроля доступа к определенным. Возможные значения: `notConfigured`, `accountInfo`, `appsRunInBackground`, `calendar`, `callHistory`, `camera`, `contacts`, `diagnosticsInfo`, `email`, `location`, `messaging`, `microphone`, `motion`, `notifications`, `phone`, `radios`, `tasks`, `syncWithDevices`, `trustedDevices` .|
-|appPackageFamilyName|String.|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
-|appDisplayName|String.|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
+|appPackageFamilyName|Строка|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
+|appDisplayName|Строка|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
 
 ## <a name="relationships"></a>Связи
 Нет

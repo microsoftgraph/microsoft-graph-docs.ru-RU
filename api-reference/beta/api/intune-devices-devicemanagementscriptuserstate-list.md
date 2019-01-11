@@ -2,12 +2,13 @@
 title: Список deviceManagementScriptUserStates
 description: Свойства списка и связей объектов deviceManagementScriptUserState.
 author: tfitzmac
-ms.openlocfilehash: 8ddf98dc30a71aab2b3efbc4946123e4891954ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1db0da2994d490410b6d0d36d62d6cfad8ca0ec6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822514"
 ---
 # <a name="list-devicemanagementscriptuserstates"></a>Список deviceManagementScriptUserStates
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

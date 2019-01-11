@@ -1,12 +1,13 @@
 ---
 title: Список orgContacts
 description: Получить список организационных контакты для данной организации.
-ms.openlocfilehash: 01be5350898bed181f2e1d304bf58f8ec1e4e47f
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 0b4dc4a099562b8817396bee8f3141fa32c28572
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283628"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831978"
 ---
 # <a name="list-orgcontacts"></a>Список orgContacts
 
@@ -34,9 +35,9 @@ GET /contacts
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

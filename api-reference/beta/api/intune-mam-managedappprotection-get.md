@@ -2,12 +2,13 @@
 title: Get managedAppProtection
 description: Чтение свойств и связей объекта managedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: ac2d6b3e501903fb0433b86bc19488e264619e9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6b24a043ec3d55e07bc841744f382581fb7922b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831565"
 ---
 # <a name="get-managedappprotection"></a>Get managedAppProtection
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

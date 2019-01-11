@@ -2,12 +2,13 @@
 title: Обновление организации
 description: Обновление свойств объекта organization.
 author: tfitzmac
-ms.openlocfilehash: d26d11bb2f67b933ba5d78e444ae8e52d32339ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7ecdb1ea142f31b07038f1ffe8779c675eeaaf4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835527"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -35,7 +36,7 @@ PATCH /organization/{organizationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

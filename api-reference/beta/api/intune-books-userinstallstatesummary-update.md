@@ -2,12 +2,13 @@
 title: Обновление объекта userInstallStateSummary
 description: Обновление свойств объекта userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 10129a9a18030498add1b8e3c0b664f2aa921de6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 336b4bf9bd51148b1902fb6fadb3c3068b476573
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832782"
 ---
 # <a name="update-userinstallstatesummary"></a>Обновление объекта userInstallStateSummary
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

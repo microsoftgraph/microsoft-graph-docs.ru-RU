@@ -1,12 +1,13 @@
 ---
 title: Список приложений
 description: Получение списка объектов приложения, связанные с connectorGroup.
-ms.openlocfilehash: 11d81454677b60e2402c4d1fe32aae5c974c1afc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f23bd18d646233fd932c10e5f2fe4d8bda1732d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078604"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833384"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -33,9 +34,9 @@ GET /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -52,8 +53,7 @@ GET /connectorGroups/{id}/applications
 GET https://graph.microsoft.com/{ver}/connectorGroups/{id}/applications
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

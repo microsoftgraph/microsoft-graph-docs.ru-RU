@@ -2,12 +2,13 @@
 title: Тип ресурса Post
 description: Представляет элемент отдельных post в сущности converstaionThread.
 author: dkershaw10
-ms.openlocfilehash: 6030bd5ef3c59edbad9712b549531a193b808b14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1912917347697a6f78876175e6fe9f9c160869e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363720"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834043"
 ---
 # <a name="post-resource-type"></a>Тип ресурса Post
 

@@ -2,12 +2,13 @@
 title: 'Table: Range'
 description: Получает объект диапазона, связанный со всей таблицей.
 author: lumine2008
-ms.openlocfilehash: 9c5bdddd311a122a38888010a4154be61e5c930d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edf42f4cbefe9572bb5c147e03489ec7317abc61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806484"
 ---
 # <a name="table-range"></a>Table: Range
 
@@ -36,7 +37,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/Range
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

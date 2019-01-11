@@ -2,12 +2,13 @@
 title: Обновление windowsKioskConfiguration
 description: Обновление свойства объекта windowsKioskConfiguration.
 author: tfitzmac
-ms.openlocfilehash: e399daa1f57ac7ddcbbd1add9e414392bb8e3789
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c9c80f6279879750d282d5b75aea6064447f0d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832678"
 ---
 # <a name="update-windowskioskconfiguration"></a>Обновление windowsKioskConfiguration
 
@@ -39,11 +40,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md).
@@ -53,16 +54,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) коллекции|Этот параметр политики позволяет определить список профилей киоска для базовой конфигурации. Эта коллекция может содержать не более 500 элементов.|
-|kioskBrowserDefaultUrl|String.|Укажите URL-адрес по умолчанию, должен перейти браузер при запуске.|
-|kioskBrowserEnableHomeButton|Boolean.|Кнопка браузера киоска Домашняя страница. По умолчанию домашняя страница кнопка отключена.|
-|kioskBrowserEnableNavigationButtons|Boolean.|Включите buttons(forward/back) навигации киоска браузера. По умолчанию отключены кнопки перехода.|
-|kioskBrowserEnableEndSessionButton|Boolean.|Кнопка браузера киоска окончания сеанса. По умолчанию отключена кнопка окончания сеанса.|
+|kioskBrowserDefaultUrl|Строка|Укажите URL-адрес по умолчанию, должен перейти браузер при запуске.|
+|kioskBrowserEnableHomeButton|Логический|Кнопка браузера киоска Домашняя страница. По умолчанию домашняя страница кнопка отключена.|
+|kioskBrowserEnableNavigationButtons|Логический|Включите buttons(forward/back) навигации киоска браузера. По умолчанию отключены кнопки перехода.|
+|kioskBrowserEnableEndSessionButton|Логический|Кнопка браузера киоска окончания сеанса. По умолчанию отключена кнопка окончания сеанса.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Укажите время в минутах, сеанс находится в состоянии простоя до перезапуска браузера киоска новым состояние.  Допустимые значения: 1-1440. Допустимые значения 1 до 1440|
 |kioskBrowserBlockedURLs|Коллекция String|Укажите URL-адреса, не должен перейти киоска браузеры|
 |kioskBrowserBlockedUrlExceptions|Коллекция String|Укажите URL-адресов, которые может киоска браузера перейдите на|

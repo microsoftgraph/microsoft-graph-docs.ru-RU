@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса organization
 description: " Создание и удаление не поддерживаются. Наследуется от directoryObject."
-ms.openlocfilehash: 5651e300c4ebfc7adbbccc7aef485a43263b4830
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Priority
+ms.openlocfilehash: 532ffc15e4e594f353bc125c47dd889525f49045
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833651"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -38,8 +39,8 @@ ms.locfileid: "27771739"
 |createdDateTime|DateTimeOffset| Метка времени создания организации. Значение не могут быть изменены и заполняется автоматически при создании организации. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 | deletedDateTime                    | DateTimeOffset                                                    | Представляет дату и время, когда в Azure AD клиент был удален с использованием формата ISO 8601 и — это всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.                                                                                     |
 | displayName                          | String                                                            | Отображаемое имя для клиента.                                                                                                                                                                                                                                                     |
-| id                                   | String                                                            | Идентификатор клиента, уникальный идентификатор, представляющий организации (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.                                                                                                                                                            |
-|isMultipleDataLocationsForServicesEnabled|Boolean|**значение true,** Если организация — ферма с несколькими-географически включено; **значение false,** Если организация не включена несколькими географически; **значение NULL** (по умолчанию). Только для чтения. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+| id                                   | Строка                                                            | Идентификатор клиента, уникальный идентификатор, представляющий организации (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.                                                                                                                                                            |
+|isMultipleDataLocationsForServicesEnabled|Логический|**значение true,** Если организация — ферма с несколькими-географически включено; **значение false,** Если организация не включена несколькими географически; **значение NULL** (по умолчанию). Только для чтения. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 | marketingNotificationEmails          | Коллекция String                                                 | Значение null не допускается.                                                                                                                                                                                                                                                                        |
 | onPremisesLastSyncDateTime               | DateTimeOffset                                                    | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 | onPremisesSyncEnabled                       | Boolean                                                           | Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию).                        |

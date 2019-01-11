@@ -2,12 +2,13 @@
 title: Перечисление объектов managedAppPolicy
 description: Список свойств и связей объектов managedAppPolicy.
 author: tfitzmac
-ms.openlocfilehash: 46242412fc24c8e36484753c998b9f67230794ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3169e1a189205049d3a18a578af06b4f1528628b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832685"
 ---
 # <a name="list-managedapppolicies"></a>Перечисление объектов managedAppPolicy
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,12 +2,13 @@
 title: Перечисление объектов iosGeneralDeviceConfiguration
 description: Перечисление свойств и связей объектов iosGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 2c6d243ac40f1089a2745413c5119e36f6b6e602
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 982ee0b219b435d2226e70399bbe011b9d32ce27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343388"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832993"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Перечисление объектов iosGeneralDeviceConfiguration
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

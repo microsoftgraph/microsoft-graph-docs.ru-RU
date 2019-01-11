@@ -2,12 +2,13 @@
 title: Удаление канала
 description: Удаление канала.
 author: nkramer
-ms.openlocfilehash: 9eb4378920a652529ec99129cca50c7b2e7ad565
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ff974205c20ea8a50778f04c741dc3f7e39a7e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833427"
 ---
 # <a name="delete-channel"></a>Удаление канала
 
@@ -38,7 +39,7 @@ DELETE /teams/{id}/channels/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

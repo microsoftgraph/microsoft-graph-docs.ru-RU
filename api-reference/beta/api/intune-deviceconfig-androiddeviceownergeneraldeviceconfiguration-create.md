@@ -2,12 +2,13 @@
 title: Создание androidDeviceOwnerGeneralDeviceConfiguration
 description: Создание нового объекта androidDeviceOwnerGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 404233f1c9eba62021b5ba019a9f3bb049c272c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7802762fc88e45a434614a8101f4690f8c4bc1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333260"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812693"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>Создание androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -38,11 +39,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта androidDeviceOwnerGeneralDeviceConfiguration.
 
 В следующей таблице показаны свойства, которые необходимы для создания androidDeviceOwnerGeneralDeviceConfiguration.
@@ -52,51 +53,51 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|accountsBlockModification|Boolean.|Указывает, отключена ли добавлять и удалять учетные записи.|
-|appsAllowInstallFromUnknownSources|Boolean.|Указывает, может ли пользователь для включения неизвестных источников установки.|
+|accountsBlockModification|Логический|Указывает, отключена ли добавлять и удалять учетные записи.|
+|appsAllowInstallFromUnknownSources|Логический|Указывает, может ли пользователь для включения неизвестных источников установки.|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|Указывает значение политики app автоматическое обновление. Возможные значения: `notConfigured`, `userChoice`, `never`, `wiFiOnly`, `always`.|
 |appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|Указывает политику разрешений для запросов для разрешения среды выполнения, если один не определен для приложения, в частности. Возможные значения: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|bluetoothBlockConfiguration|Boolean.|Указывает, следует ли запретить пользователю Настройка bluetooth.|
-|bluetoothBlockContactSharing|Boolean.|Указывает, следует ли запретить совместное использование контактов с помощью bluetooth пользователю.|
-|cameraBlocked|Boolean|Указывает, следует ли отключить использование камеры.|
+|bluetoothBlockConfiguration|Логический|Указывает, следует ли запретить пользователю Настройка bluetooth.|
+|bluetoothBlockContactSharing|Логический|Указывает, следует ли запретить совместное использование контактов с помощью bluetooth пользователю.|
+|cameraBlocked|Логический|Указывает, следует ли отключить использование камеры.|
 |cellularBlockWiFiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi.|
-|dataRoamingBlocked|Boolean.|Указывает, следует ли запретить пользователю перемещение данных.|
-|dateTimeConfigurationBlocked|Boolean.|Указывает ли пользователь вручную изменение даты и времени на устройстве|
+|dataRoamingBlocked|Логический|Указывает, следует ли запретить пользователю перемещение данных.|
+|dateTimeConfigurationBlocked|Логический|Указывает ли пользователь вручную изменение даты и времени на устройстве|
 |factoryResetDeviceAdministratorEmails|Коллекция String|Список Google учетной записи по электронной почте, которые понадобятся для проверки подлинности после фабрики сбросить, прежде чем выполнить настройку устройства.|
 |factoryResetBlocked|Boolean|Указывает, отключена ли параметр сброса фабрики в параметрах.|
 |kioskModeApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список управляемых приложений, которые будут отображаться, если устройство находится в полноэкранном режиме. Эта коллекция может содержать не более 500 элементов.|
-|microphoneForceMute|Boolean.|Указывает, следует ли блокировать выключения звука микрофона на устройстве.|
-|networkEscapeHatchAllowed|Boolean.|Указывает, будет ли устройства разрешить подключение к временной сетевое подключение во время загрузки.|
-|nfcBlockOutgoingBeam|Boolean.|Указывает, следует ли блокировать исходящей балки NFC.|
-|passwordBlockKeyguard|Boolean.|Указывает, отключена ли keyguard.|
+|microphoneForceMute|Логический|Указывает, следует ли блокировать выключения звука микрофона на устройстве.|
+|networkEscapeHatchAllowed|Логический|Указывает, будет ли устройства разрешить подключение к временной сетевое подключение во время загрузки.|
+|nfcBlockOutgoingBeam|Логический|Указывает, следует ли блокировать исходящей балки NFC.|
+|passwordBlockKeyguard|Логический|Указывает, отключена ли keyguard.|
 |passwordExpirationDays|Int32|Указывает время в секундах, пароль может быть задан для до истечения срока действия и требуется указать новый пароль. Допустимые значения: от 1 до 365.|
 |passwordMinimumLength|Int32|Указывает минимальную длину пароля на устройстве. Допустимые значения: от 4 до 16.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Простоя перед экрана времени ожидания в миллисекундах.|
 |passwordPreviousPasswordCountToBlock|Int32|Длина журнал паролей, где пользователь не сможет ввести новый пароль, которые совпадают с любой пароль в журнале. Допустимые значения: от 0 до 24|
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Указывает минимальную качество, необходимые на устройстве. Возможные значения: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Указывает, сколько раз для ввода неправильного пароля перед Очистить устройство. Допустимые значения: от 4 до 11|
-|safeBootBlocked|Boolean.|Указывает, следует ли перезагрузка отключенные устройства в безопасной загрузки.|
-|screenCaptureBlocked|Boolean|Указывает, следует ли отключить возможность использовать снимки экрана.|
-|securityAllowDebuggingFeatures|Boolean.|Указывает, следует ли пользователь не Включение функции отладки на устройстве.|
+|safeBootBlocked|Логический|Указывает, следует ли перезагрузка отключенные устройства в безопасной загрузки.|
+|screenCaptureBlocked|Логический|Указывает, следует ли отключить возможность использовать снимки экрана.|
+|securityAllowDebuggingFeatures|Логический|Указывает, следует ли пользователь не Включение функции отладки на устройстве.|
 |securityRequireVerifyApps|Boolean|Указывает ли проверка приложений является обязательным.|
-|statusBarBlocked|Boolean.|Указывает, будет ли или состояние панели не действует, включая уведомления, параметры быстрого и других перекрытий экрана.|
+|statusBarBlocked|Логический|Указывает, будет ли или состояние панели не действует, включая уведомления, параметры быстрого и других перекрытий экрана.|
 |stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md) коллекции|Список режимы, в которых хранятся устройства отображения включении. Эта коллекция может содержать до 4 элементов. Возможные значения: `notConfigured`, `ac`, `usb`, `wireless`.|
-|storageAllowUsb|Boolean.|Указывает, следует ли разрешить USB запоминающих устройств.|
-|storageBlockExternalMedia|Boolean.|Указывает, следует ли блокировать внешний носитель.|
-|storageBlockUsbFileTransfer|Boolean.|Указывает, следует ли блокировать USB передачи файлов.|
+|storageAllowUsb|Логический|Указывает, следует ли разрешить USB запоминающих устройств.|
+|storageBlockExternalMedia|Логический|Указывает, следует ли блокировать внешний носитель.|
+|storageBlockUsbFileTransfer|Логический|Указывает, следует ли блокировать USB передачи файлов.|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|Указывает количество минут после полуночи, начинающимся окно обновление системы. Допустимые значения 0 до 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|Указывает количество минут после полуночи, завершающей окне обновление системы. Допустимые значения 0 до 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|Тип обновления конфигурации системы. Возможные значения: `deviceDefault`, `postpone`, `windowed`, `automatic`.|
-|usersBlockAdd|Boolean.|Указывает, отключена ли добавление пользователей и профилей.|
-|usersBlockRemove|Boolean.|Указывает, следует ли отключить удаление других пользователей с устройства.|
-|volumeBlockAdjustment|Boolean.|Указывает, следует ли настройка отключенные громкости.|
-|wifiBlockEditConfigurations|Boolean.|Указывает, следует ли пользователь не может изменять параметры подключения wifi.|
-|wifiBlockEditPolicyDefinedConfigurations|Boolean.|Указывает, следует ли пользователь не может изменять только что сетей, определенные политикой.|
+|usersBlockAdd|Логический|Указывает, отключена ли добавление пользователей и профилей.|
+|usersBlockRemove|Логический|Указывает, следует ли отключить удаление других пользователей с устройства.|
+|volumeBlockAdjustment|Логический|Указывает, следует ли настройка отключенные громкости.|
+|wifiBlockEditConfigurations|Логический|Указывает, следует ли пользователь не может изменять параметры подключения wifi.|
+|wifiBlockEditPolicyDefinedConfigurations|Логический|Указывает, следует ли пользователь не может изменять только что сетей, определенные политикой.|
 
 
 

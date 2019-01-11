@@ -2,12 +2,13 @@
 title: Перечисление объектов windowsPhone81GeneralConfiguration
 description: Список свойств и связей объектов windowsPhone81GeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: db1f67f4356c1083e667e18516bfac347c79dad3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f2cc7a6320e9c4b4e20c8a58e1ce341a370d8ac5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317453"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831810"
 ---
 # <a name="list-windowsphone81generalconfigurations"></a>Перечисление объектов windowsPhone81GeneralConfiguration
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

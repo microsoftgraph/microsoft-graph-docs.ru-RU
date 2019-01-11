@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса synchronizationTemplate
 description: " всем пользователям можно извлечь шаблон, чтобы увидеть параметры по умолчанию, включая схемы синхронизации."
-ms.openlocfilehash: 90850ad43fdd14fc38ff6ae8cfa97f47806a289d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e98d3fa16d0a80ac9353aaa75200d8cb24d3e904
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833077"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>Тип ресурса synchronizationTemplate
 
@@ -21,7 +22,7 @@ ms.locfileid: "27078900"
 | Метод        | Возвращаемый тип               | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationtemplate-list.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md) коллекции  |Список шаблонов, доступных для приложения или экземпляра приложения (участников-служб).|
-|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Чтение свойства и связи объекта **synchronizationTemplate** .|
+|[получение](../api/synchronization-synchronizationtemplate-get.md);      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Чтение свойства и связи объекта **synchronizationTemplate** .|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -31,16 +32,16 @@ ms.locfileid: "27078900"
 
 | Свойство      | Тип                      | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |String                     |Шаблон уникальный идентификатор.|
+|id             |Строка                     |Шаблон уникальный идентификатор.|
 |applicationId  |String                     |Идентификатор приложения, к которому принадлежит этот шаблон.|
 |по умолчанию        |Логический                    |`true`Если этот шаблон рекомендуется по умолчанию для приложения.|
 |описание    |String                     |Описание шаблона.|
-|обнаруживаемые   |String                     |`true`Если этот шаблон должен отображаться в коллекцию шаблонов, доступных для экземпляра приложения (участников-служб).|
-|factoryTag     |String                     |Один из известных фабрики тегов, поддерживаемые обработчиком синхронизации. **FactoryTag** сообщает о том, обработчик синхронизации реализация для использования при обработке задания на основе этого шаблона.|
+|обнаруживаемые   |Строка                     |`true`Если этот шаблон должен отображаться в коллекцию шаблонов, доступных для экземпляра приложения (участников-служб).|
+|factoryTag     |Строка                     |Один из известных фабрики тегов, поддерживаемые обработчиком синхронизации. **FactoryTag** сообщает о том, обработчик синхронизации реализация для использования при обработке задания на основе этого шаблона.|
 |метаданные       |metadataEntry коллекции   |Расширение дополнительные свойства. Если не указан явно, значения метаданных не должно изменяться.|
 
 ## <a name="relationships"></a>Связи
-| Связь      | Тип      |Description|
+| Связь      | Тип      |Описание|
 |:------------------|:----------|:----------|
 |схема             |[synchronizationSchema](synchronization-synchronizationschema.md)     |Схема синхронизации по умолчанию для заданий на основе этого шаблона.|
 

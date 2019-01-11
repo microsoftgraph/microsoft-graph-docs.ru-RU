@@ -2,12 +2,13 @@
 title: Обновление managementConditionStatement
 description: Обновление свойства объекта managementConditionStatement.
 author: tfitzmac
-ms.openlocfilehash: 56de75540fa774f32fab7b6edf2795f3ac0d5351
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33bee3fe6e386d9d426eb0763ccb608cbc6242e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333448"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829451"
 ---
 # <a name="update-managementconditionstatement"></a>Обновление managementConditionStatement
 
@@ -38,11 +39,11 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).

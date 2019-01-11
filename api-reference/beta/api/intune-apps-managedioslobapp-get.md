@@ -2,12 +2,13 @@
 title: Get managedIOSLobApp
 description: Чтение свойств и связей объекта managedIOSLobApp.
 author: tfitzmac
-ms.openlocfilehash: 38e53954b9beba328fd5a6d86e2109b751b1c7f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 59e15c522c6ffcd0570fc74fdd0133870c47a64d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833381"
 ---
 # <a name="get-managedioslobapp"></a>Get managedIOSLobApp
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

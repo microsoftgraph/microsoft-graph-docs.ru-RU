@@ -2,12 +2,13 @@
 title: Тип ресурса macOSCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Mac OS.
 author: tfitzmac
-ms.openlocfilehash: 9a70566e1d596606809b3037075d59153a09a91f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d86a25c350175101bcf61fa7d6342664ef5dd88c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830459"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>Тип ресурса macOSCompliancePolicy
 
@@ -53,9 +54,9 @@ ms.locfileid: "27313106"
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Mac OS.|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Система и режим конфиденциальности, который определяет, какие приложения расположений загрузки может выполняться на устройстве macOS. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|firewallEnabled|Boolean.|Является ли брандмауэра должна быть включена или нет.|
-|firewallBlockAllIncoming|Boolean.|Соответствующий параметр «Блокировать все входящие подключения».|
-|firewallEnableStealthMode|Boolean.|Соответствует «Включить режим скрытое».|
+|firewallEnabled|Логический|Является ли брандмауэра должна быть включена или нет.|
+|firewallBlockAllIncoming|Логический|Соответствующий параметр «Блокировать все входящие подключения».|
+|firewallEnableStealthMode|Логический|Соответствует «Включить режим скрытое».|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

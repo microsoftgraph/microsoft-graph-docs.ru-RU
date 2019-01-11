@@ -1,12 +1,13 @@
 ---
 title: Получение объекта FormatProtection
 description: Получение свойств и связей объекта FormatProtection.
-ms.openlocfilehash: 4c586d070b506dd0ab10db8291863e051137f840
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd6d4ef53555d2c6eb8c9232d7a08ea7579e20e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831159"
 ---
 # <a name="get-formatprotection"></a>Получение объекта FormatProtection
 
@@ -36,7 +37,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -53,8 +54,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

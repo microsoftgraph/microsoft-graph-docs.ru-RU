@@ -1,12 +1,13 @@
 ---
 title: Список registeredDevices
 description: Получение списка зарегистрированных устройств пользователя.
-ms.openlocfilehash: be157572183b165dfb3bd6e23fd7b7a46f29e94a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63d6f3333be40a6e62cfe0622030ff39e5482707
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834827"
 ---
 # <a name="list-registereddevices"></a>Список registeredDevices
 
@@ -33,7 +34,7 @@ GET /users/{id | userPrincipalName}/registeredDevices
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -50,8 +51,7 @@ GET /users/{id | userPrincipalName}/registeredDevices
 GET https://graph.microsoft.com/v1.0/me/registeredDevices
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Получение календаря
 description: 'Получение свойств и связей объекта calendar. Календарь может иметь одно для пользователя '
-ms.openlocfilehash: b4dd218e25d154fa1641a7a62d3b79790a15f7da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6c6deaaeb0cef1ae33c70a1140f835024dc093fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829528"
 ---
 # <a name="get-calendar"></a>Получение календаря
 
@@ -56,7 +57,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -75,8 +76,7 @@ GET https://graph.microsoft.com/beta/me/calendar
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

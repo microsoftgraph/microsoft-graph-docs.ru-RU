@@ -2,12 +2,13 @@
 title: Перечисление объектов notificationMessageTemplate
 description: Список свойств и связей объектов notificationMessageTemplate.
 author: tfitzmac
-ms.openlocfilehash: 3a62cc773856d3841c0c6f11ac2d13f5b7aea57b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0dd41e1b7ffeb8eecbead8399514dbc648cc85dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831899"
 ---
 # <a name="list-notificationmessagetemplates"></a>Перечисление объектов notificationMessageTemplate
 
@@ -37,11 +38,11 @@ GET /deviceManagement/notificationMessageTemplates
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

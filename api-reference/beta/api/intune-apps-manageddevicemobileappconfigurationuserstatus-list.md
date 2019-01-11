@@ -2,12 +2,13 @@
 title: Перечисление объектов managedDeviceMobileAppConfigurationUserStatus
 description: Список свойств и связей объектов managedDeviceMobileAppConfigurationUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 081d359bb1b34f3842d59786df2692a8261982a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5ed4c1efcbee91401b767b0450afe7167b8677ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837669"
 ---
 # <a name="list-manageddevicemobileappconfigurationuserstatuses"></a>Перечисление объектов managedDeviceMobileAppConfigurationUserStatus
 
@@ -38,11 +39,11 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

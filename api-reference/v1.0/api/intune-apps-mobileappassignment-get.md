@@ -2,12 +2,13 @@
 title: Get mobileAppAssignment
 description: Чтение свойств и связей объекта mobileAppAssignment.
 author: tfitzmac
-ms.openlocfilehash: ca8905962126d53b476bde8d8322024fa8cbb3b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 790b6e6a8c0f970c7f4b0aa13ed739cec585d9d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831124"
 ---
 # <a name="get-mobileappassignment"></a>Get mobileAppAssignment
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignme
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

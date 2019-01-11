@@ -1,12 +1,13 @@
 ---
 title: Создание член групп
 description: Используйте этот интерфейс API для создания нового член групп.
-ms.openlocfilehash: f753f2e8f14fb60eb23b10512506bfe6e3b95bdd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8862292da568c18ac4952306559e041ba5de31af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826742"
 ---
 # <a name="create-memberof"></a>Создание член групп
 
@@ -59,8 +60,7 @@ Content-length: 30
 ```
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

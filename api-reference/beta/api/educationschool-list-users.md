@@ -2,12 +2,13 @@
 title: Перечисление EducationUsers
 description: Получение списка пользователей в учебном заведении.
 author: mmast-msft
-ms.openlocfilehash: 6e642792b8cb3d7463b13288b0ed95838590ec52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fed061fd5afc867126c7cc70ee702e937a8eba4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833581"
 ---
 # <a name="list-educationusers"></a>Перечисление EducationUsers
 
@@ -37,7 +38,7 @@ GET /education/schools/{id}/users
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationUser](../resources/educationuser.md) в теле отклика.

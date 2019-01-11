@@ -2,12 +2,13 @@
 title: Обновление объекта ChartSeries
 description: Обновление свойств объекта chartseries.
 author: lumine2008
-ms.openlocfilehash: 69e6de2e6d332a63f4ea7b1cc23ca48032cbbaba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b7d80aca2aa0d98d37fabd7820f0d6752d9da3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833280"
 ---
 # <a name="update-chartseries"></a>Обновление объекта ChartSeries
 
@@ -34,7 +35,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

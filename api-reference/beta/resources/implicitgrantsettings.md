@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса implicitGrantSettings
 description: Разрешение запроса маркеры, с помощью поток неявных OAuth 2.0 этого веб-приложения. Отдельные свойства доступны для запроса маркеры идентификатор и доступа как часть неявных потока. Чтобы включить неявных поток, по крайней мере одного из следующих свойств необходимо установить значение true.
-ms.openlocfilehash: 018cd422b56724811e1913ff0e94aea16d7c68f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 93a54ac0c0e4c6c32ebb99c9747d44d75f98af07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834267"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>Тип ресурса implicitGrantSettings
 
@@ -16,7 +17,7 @@ ms.locfileid: "27077140"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 |enableIdTokenIssuance| Логический | Разрешение запроса с помощью поток неявных OAuth 2.0 маркера Идентификации данного веб-приложения.|
 |enableAccessTokenIssuance| Логический | Разрешение запроса маркер доступа с помощью поток неявных OAuth 2.0 этого веб-приложения.|

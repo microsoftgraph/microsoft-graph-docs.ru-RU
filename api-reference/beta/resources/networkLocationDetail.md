@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса networkLocationDetail
 description: Указывает сведения, связанные с сетевую папку. .
-ms.openlocfilehash: 5dd1410318d380a1b943de6a7dbb0d739172cc76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079295"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834323"
 ---
 # <a name="networklocationdetail-resource-type"></a>Тип ресурса networkLocationDetail
 Указывает сведения, связанные с сетевую папку. .
@@ -14,10 +15,10 @@ ms.locfileid: "27079295"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|networkType|String|Предоставляет тип сети. Возможные значения: `intranet`, `extranet`, `namedNetwork`, и `trusted`.|
-|networkName|String|Имя сети.|
+|networkType|Строка|Предоставляет тип сети. Возможные значения: `intranet`, `extranet`, `namedNetwork`, и `trusted`.|
+|networkName|Строка|Имя сети.|
 
 
 ## <a name="json-representation"></a>Представление JSON

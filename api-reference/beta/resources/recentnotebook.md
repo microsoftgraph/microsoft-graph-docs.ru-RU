@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса recentNotebook
 description: Недавно открытая записная книжка OneNote. Ресурс **recentNotebook** похож на ресурс notebook, но имеет меньше свойств.
-ms.openlocfilehash: c3b717fcebdc229864aefe13c6452ce5eb95fc53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f2dd1ca642203cde36bb636b9cb2eb7c79344e3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078552"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833833"
 ---
 # <a name="recentnotebook-resource-type"></a>Тип ресурса recentNotebook
 
@@ -17,7 +18,7 @@ ms.locfileid: "27078552"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|String|Имя записной книжки.|
+|name|Строка|Имя записной книжки.|
 |lastAccessedTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |links|[recentNotebookLinks](recentnotebooklinks.md)|Ссылки для открытия записной книжки. Ссылка `oneNoteClientURL` открывает записную книжку в клиенте OneNote, если он установлен. Ссылка `oneNoteWebURL` открывает записную книжку в OneNote Online.|
 |sourceService|String|Внутреннее хранилище, в котором находится записная книжка (`OneDriveForBusiness` или `OneDrive`).|

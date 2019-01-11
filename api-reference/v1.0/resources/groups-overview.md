@@ -2,12 +2,13 @@
 title: Работа с группами в Microsoft Graph
 description: Группы — это коллекции пользователей и других субъектов, у которых есть совместный доступ к ресурсам в службах Майкрософт или в вашем приложении. Microsoft Graph предоставляет интерфейсы API, с помощью которых можно создавать разнообразные группы и их функции, а также управлять ими в соответствии с конкретным случаем. Для всех операций с группами в Microsoft Graph необходимо согласие администратора.
 author: dkershaw10
-ms.openlocfilehash: f3d18fd2ebf579c878e50bfae66e3987b6ef1a84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5b2bc6776122a67d09156c30714e671c9519dc9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835618"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Работа с группами в Microsoft Graph
 

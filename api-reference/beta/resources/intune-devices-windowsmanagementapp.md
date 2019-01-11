@@ -2,12 +2,13 @@
 title: Тип ресурса windowsManagementApp
 description: Сущность приложения управления Windows.
 author: tfitzmac
-ms.openlocfilehash: 641538644dc313234e27b0f518a26d8a38c612b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47262f93e619690352cac9ae3f9a500d0dc77c20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346426"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833416"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Тип ресурса windowsManagementApp
 
@@ -26,7 +27,7 @@ ms.locfileid: "27346426"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|String.|Управление приложения доступные версии Windows.|
+|availableVersion|Строка|Управление приложения доступные версии Windows.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

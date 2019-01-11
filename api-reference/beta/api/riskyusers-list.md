@@ -1,12 +1,13 @@
 ---
 title: Список riskyUsers
 description: Извлечение свойств и связи объекта **riskyUsers** .
-ms.openlocfilehash: d800f37c1e7e2d03edc0273d30e2be37c799d0d4
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+localization_priority: Normal
+ms.openlocfilehash: bc5023df014e2abc1e7b510bc10a051f6b725e3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835240"
 ---
 # <a name="list-riskyusers"></a>Список riskyUsers
 
@@ -39,7 +40,7 @@ GET /riskyUsers/{query}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

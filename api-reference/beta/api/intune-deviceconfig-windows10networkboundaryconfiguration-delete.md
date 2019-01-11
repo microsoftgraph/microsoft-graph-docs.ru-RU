@@ -2,12 +2,13 @@
 title: Удаление windows10NetworkBoundaryConfiguration
 description: Удаляет windows10NetworkBoundaryConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8083c2266beb2f2899f314520a4283beb99c1b4c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b2a555de7b3876d6cc9e79e3203ace6ee00e8b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318832"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832223"
 ---
 # <a name="delete-windows10networkboundaryconfiguration"></a>Удаление windows10NetworkBoundaryConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

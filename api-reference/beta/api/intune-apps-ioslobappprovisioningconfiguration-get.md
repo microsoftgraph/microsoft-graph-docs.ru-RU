@@ -2,12 +2,13 @@
 title: Получение iosLobAppProvisioningConfiguration
 description: Чтение свойства и связи объекта iosLobAppProvisioningConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 73faa38e0c9b0e4b0ef1f7ec4eda9b06d6b33588
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 942818ef47c6fecabb2dc4cb8870fda8a3e289f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362834"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832713"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>Получение iosLobAppProvisioningConfiguration
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

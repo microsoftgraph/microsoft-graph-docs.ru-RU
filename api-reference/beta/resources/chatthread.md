@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса chatThread
 description: ChatThread — это коллекция chatMessages в группах Майкрософт.
-ms.openlocfilehash: ef8f118ae4354a5e4197802708aecfa1fb6f8cb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5060d7ea846f5aedec5551aaf247642a36f73c1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081634"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833245"
 ---
 # <a name="chatthread-resource-type"></a>Тип ресурса chatThread
 
@@ -25,10 +26,10 @@ ChatThread — это коллекция [chatMessages](chatmessage.md) в гр�
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения.|
+|id|Строка| Только для чтения.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |rootMessage|[chatMessage](chatmessage.md)| Допускается значение null.|
 |chatMessages|[chatMessage](chatmessage.md) коллекции| Допускается значение null.|

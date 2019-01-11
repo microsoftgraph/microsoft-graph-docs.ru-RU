@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса deviceManagement
 description: 'Ресурс deviceManagement представляет контейнер, содержимое которого различаться в зависимости от рабочего процесса, включая:  '
-ms.openlocfilehash: 4e092c3d1ae318da47f52e6ccfb2d5efe577e8eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7517ac2c9560723c6c3c4dce2dc070b1ec96af3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027282"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822206"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -20,7 +21,7 @@ ms.locfileid: "27027282"
 - Управление устройствами  
 - Конечная точка защиты  
 - Профили подачи заявок  
-- Notifications  
+- Уведомления  
 - Адаптация новых сотрудников политики, параметры и подробные сведения  
 - Политики управления ДОСТУПОМ на основе ролей доступа  
 - Партнеры удаленный помощник  
@@ -50,7 +51,7 @@ ms.locfileid: "27027282"
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложений "Корпоративный портал" и веб-портала пользователя.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |**аудита;**|
 |auditEvents|Коллекция [auditEvent](../resources/intune-auditing-auditevent.md)|События аудита|
@@ -72,7 +73,7 @@ ms.locfileid: "27027282"
 |**Регистрация**|
 |importedWindowsAutopilotDeviceIdentities|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Коллекция импортированных устройств Windows AutoPilot.|
 |importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) коллекции|Коллекция автопилот Windows, отправка устройств.|
-|**Notifications**|
+|**Уведомления**|
 |notificationMessageTemplates|Коллекция [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Шаблоны сообщений уведомления.|
 |**Адаптация новых сотрудников**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|Параметры локального условного доступа в Exchange. Для локального условного доступа устройства должны быть зарегистрированы для доступа к почте и поддерживать его.|

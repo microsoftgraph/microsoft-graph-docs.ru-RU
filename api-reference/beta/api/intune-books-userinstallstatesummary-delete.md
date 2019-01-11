@@ -2,12 +2,13 @@
 title: Удаление объекта userInstallStateSummary
 description: Удаляет объект userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 854be19ec7c1def053992b3b690bdc8acd15cd94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6706513076e45eb021eb972196afc2c9afea7078
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327253"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832706"
 ---
 # <a name="delete-userinstallstatesummary"></a>Удаление объекта userInstallStateSummary
 
@@ -37,11 +38,11 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{use
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

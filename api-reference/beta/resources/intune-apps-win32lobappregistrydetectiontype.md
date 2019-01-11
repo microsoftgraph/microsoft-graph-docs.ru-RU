@@ -2,12 +2,13 @@
 title: Тип перечисления win32LobAppRegistryDetectionType
 description: Содержит все поддерживаемые тип обнаружения данных реестра.
 author: tfitzmac
-ms.openlocfilehash: d47d13c01d282d73d65f559e016bde5f74248158
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 60e27e01825c54677bfb88727b8dcbc16a808278
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362491"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831856"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>Тип перечисления win32LobAppRegistryDetectionType
 

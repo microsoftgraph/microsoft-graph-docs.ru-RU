@@ -2,12 +2,13 @@
 title: 'ChartSeriesCollection: ItemAt'
 description: Возвращает ряд на основании сведений о его позиции в коллекции.
 author: lumine2008
-ms.openlocfilehash: 9a61617fff9322452698761696a5f5a4f2d110ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b164bd145dc0552bf5eef613c6650b586a3132ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839671"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 
@@ -33,7 +34,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/itemAt
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

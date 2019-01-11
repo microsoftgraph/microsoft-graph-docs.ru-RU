@@ -2,12 +2,13 @@
 title: Список объектов roleAssignment
 description: Список свойств и связей объектов roleAssignment.
 author: tfitzmac
-ms.openlocfilehash: 2899d5fd94ea084cbd314710e3a4baf20a4401f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b0aa8f8894ac378aa009f188887e31a4a5e1525
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314142"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808304"
 ---
 # <a name="list-roleassignments"></a>Список объектов roleAssignment
 
@@ -35,11 +36,11 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

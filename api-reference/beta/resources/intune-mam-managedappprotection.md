@@ -2,12 +2,13 @@
 title: Тип ресурса managedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенного набора приложений.
 author: tfitzmac
-ms.openlocfilehash: bd67c482ab3f255361f23b290b48a44fdd11dec5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97d98a6edea3b03b7d35d68ca1f274e938449990
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311265"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833000"
 ---
 # <a name="managedappprotection-resource-type"></a>Тип ресурса managedAppProtection
 
@@ -61,8 +62,8 @@ ms.locfileid: "27311265"
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о невозможности получить доступ к данным компании.|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение.|
-|minimumWipeOsVersion|String.|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании.|
-|minimumWipeAppVersion|String.|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании.|
+|minimumWipeOsVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании.|
+|minimumWipeAppVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании.|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировки или очистки, когда устройства либо корневого или jailbroken, если DeviceComplianceRequired задано значение true. Возможные значения: `block`, `wipe`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, либо блок или стирание, на основании максимальное количество повторных попыток неправильный ПИН-код. Возможные значения: `block`, `wipe`.|
 |pinRequiredInsteadOfBiometricTimeout|Продолжительность|Время ожидания в минутах для закрепления приложения вместо секретный код не биометрия|

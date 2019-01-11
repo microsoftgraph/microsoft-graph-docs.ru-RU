@@ -2,12 +2,13 @@
 title: Тип ресурса outlookUser
 description: Представляет службы Outlook, доступные пользователю.
 author: angelgolfer-ms
-ms.openlocfilehash: 3a65206c74d16f7943d986e38b520ef388803c22
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a4f15266ebfda3e2af43a5d39e28803fe9d87b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314744"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837375"
 ---
 # <a name="outlookuser-resource-type"></a>Тип ресурса outlookUser
 

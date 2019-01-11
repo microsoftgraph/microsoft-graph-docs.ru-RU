@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта plannerbucket
 description: Обновление свойств объекта **plannerbucket**.
-ms.openlocfilehash: 22414bb7aaa3155974679a765eb4b83f1c98fd6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c2a3e0daec852e4c871a42b1bbc88dcc950afa6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836045"
 ---
 # <a name="update-plannerbucket"></a>Обновление объекта plannerbucket
 
@@ -39,7 +40,7 @@ PATCH /planner/buckets/<id>
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|Строка|Имя сегмента.|
-|orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определен в статье [Использование указаний order в Планировщике](../resources/planner-order-hint-format.md).|
+|orderHint|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определен в статье [Использование указаний order в Планировщике](../resources/planner-order-hint-format.md).|
 |planId|Строка|Идентификатор плана, к которому относится сегмент.|
 
 ## <a name="response"></a>Ответ
@@ -66,8 +67,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

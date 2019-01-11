@@ -2,12 +2,13 @@
 title: Получение deviceManagementTroubleshootingEvent
 description: Чтение свойств и связей объекта deviceManagementTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 63600c8d6ca01ecbbafaf8d85c2b169192c12426
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1704536a527e78d3a49e577e487e2f5f417c7514
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349548"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839685"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>Получение deviceManagementTroubleshootingEvent
 
@@ -37,11 +38,11 @@ GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEven
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

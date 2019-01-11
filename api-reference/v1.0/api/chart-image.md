@@ -2,12 +2,13 @@
 title: 'Chart: Image'
 description: Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.
 author: lumine2008
-ms.openlocfilehash: ccf2ba82dad05508b0857122f0316be8afcd03bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f79f52e619281817c95f41efd8a96b3dcfa7d6e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318195"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831614"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -40,8 +41,8 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|height|Int32|Желаемую высоту изображения. Необязательный атрибут.|
-|width|Int32|Желаемую ширину изображения. Необязательный атрибут.|
+|height|Int32|Желаемую высоту изображения. Необязательное.|
+|width|Int32|Желаемую ширину изображения. Необязательное.|
 |fittingMode|строка|Метод, используемый для масштабирования диаграммы для указанного измерения (если заданы высота и ширина).»  Возможные значения: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Отклик

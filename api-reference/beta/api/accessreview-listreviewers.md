@@ -1,12 +1,13 @@
 ---
 title: Список accessReview рецензентов
 description: В Azure AD access дается обзор компонента, получения редакторов объект accessReview.
-ms.openlocfilehash: 24c8b3dacbbe1a5868c9ba82141f37b006dc7a75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 042887944902be9a603ae0581835c8d55355f8a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076324"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829374"
 ---
 # <a name="list-accessreview-reviewers"></a>Список accessReview рецензентов
 
@@ -30,9 +31,9 @@ GET /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ
@@ -50,7 +51,7 @@ GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fe
 ```
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,8 +76,8 @@ Content-type: application/json
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Получите обзор доступа. |
-|[Добавление accessReview редактор](accessreview-addreviewer.md) |     Отсутствуют.   |   Добавьте проверяющий accessReview. |
-|[Удаление accessReview редактор](accessreview-removereviewer.md) | Отсутствуют. |   Удаление рецензента из accessReview. |
+|[Добавление accessReview редактор](accessreview-addreviewer.md) |     Нет.   |   Добавьте проверяющий accessReview. |
+|[Удаление accessReview редактор](accessreview-removereviewer.md) | Нет. |   Удаление рецензента из accessReview. |
 
 
 <!-- {

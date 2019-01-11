@@ -2,12 +2,13 @@
 title: Тип ресурса commsNotification
 description: Связь уведомлений базовый тип, который был опубликован серверами коммуникаций для уведомление об изменениях.
 author: VinodRavichandran
-ms.openlocfilehash: 65cb2884b98d25008779fcb80968a7b4d0481033
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 526ed88f4b1c5983a06b1830f5c0b0bb97cc874e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837151"
 ---
 # <a name="commsnotification-resource-type"></a>Тип ресурса commsNotification
 
@@ -18,8 +19,8 @@ ms.locfileid: "27380270"
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    | Описание                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | Возможные значения: `created`, `updated`, `deleted`.      |
-| resource       | String  | URI-идентификатор ресурса, который был изменен.                      |
+| changeType     | Строка  | Возможные значения: `created`, `updated`, `deleted`.      |
+| resource       | Строка  | URI-идентификатор ресурса, который был изменен.                      |
 
 > **Примечание:** `resourceData` доступен в качестве дополнительных данных. Это объект или Collection(entity) в зависимости от изменений, упакованный в уведомления.
 

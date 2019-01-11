@@ -2,12 +2,13 @@
 title: Get managedDeviceMobileAppConfigurationAssignment
 description: Чтение свойств и связей объекта managedDeviceMobileAppConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 12c70f594a944893a48ddfeb39b66e962e22ae87
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cbc4bdfa00d35532d1292d77abb5251ffa7f7cef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831369"
 ---
 # <a name="get-manageddevicemobileappconfigurationassignment"></a>Get managedDeviceMobileAppConfigurationAssignment
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

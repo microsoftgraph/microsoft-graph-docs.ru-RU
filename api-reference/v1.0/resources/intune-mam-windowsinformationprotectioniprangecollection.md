@@ -2,12 +2,13 @@
 title: Тип ресурса windowsInformationProtectionIPRangeCollection
 description: Коллекция диапазонов IP-адресов Windows Information Protection
 author: tfitzmac
-ms.openlocfilehash: 12030ab0b71448c644e4e664f9095dea3e48a26c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ba01b8a4385b5c06cc1e6a95441e9b7946a116d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839748"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Тип ресурса windowsInformationProtectionIPRangeCollection
 

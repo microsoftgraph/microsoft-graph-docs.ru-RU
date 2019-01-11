@@ -2,12 +2,13 @@
 title: Тип ресурса meetingParticipantInfo
 description: Сведения о участник в собрании.
 author: VinodRavichandran
-ms.openlocfilehash: 2bbb410ea26640ec05d66b5beb0c4b4ea24a42bd
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d7b5ae17bd3bfb566bce0da9814b86aab98173da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380200"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834260"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>Тип ресурса meetingParticipantInfo
 
@@ -20,7 +21,7 @@ ms.locfileid: "27380200"
 | Свойство       | Тип                          | Описание                              |
 |:---------------|:------------------------------|:-----------------------------------------|
 | identity       | [identitySet](identityset.md) | Сведения об удостоверениях участника. |
-| Имя участника-пользователя            | String                        | Имя участника-пользователя участника.  |
+| Имя участника-пользователя            | Строка                        | Имя участника-пользователя участника.  |
 
 ## <a name="json-representation"></a>Представление JSON
 

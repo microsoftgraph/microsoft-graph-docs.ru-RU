@@ -1,12 +1,13 @@
 ---
 title: Удаление schemaExtension
 description: Удаление определения расширения схемы.
-ms.openlocfilehash: 5ec3ee675de3b4f40133d836e7caca055fa603a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8e9279377810c4895c5327afc64b85f421e8b221
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028192"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831602"
 ---
 # <a name="delete-schemaextension"></a>Удаление schemaExtension
 
@@ -36,7 +37,7 @@ DELETE /schemaExtensions/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

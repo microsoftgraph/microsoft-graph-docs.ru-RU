@@ -2,12 +2,13 @@
 title: Тип ресурса macOSFirewallApplication
 description: Представляет приложение в списке приложений macOS брандмауэра
 author: tfitzmac
-ms.openlocfilehash: 0d248194eed1b6e1841d2e4533aa1f79b772ccc0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 536f2f596286f6b5457557f575ba018c65001bfe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835223"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>Тип ресурса macOSFirewallApplication
 
@@ -20,7 +21,7 @@ ms.locfileid: "27302725"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |bundleId|String|BundleId приложения.|
-|allowsIncomingConnections|Boolean.|Указывает, разрешены ли входящих подключений.|
+|allowsIncomingConnections|Логический|Указывает, разрешены ли входящих подключений.|
 
 ## <a name="relationships"></a>Связи
 Нет

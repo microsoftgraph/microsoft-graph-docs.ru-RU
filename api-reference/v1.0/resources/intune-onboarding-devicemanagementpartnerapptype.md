@@ -2,12 +2,13 @@
 title: Тип перечисления deviceManagementPartnerAppType
 description: Тип приложения партнера.
 author: tfitzmac
-ms.openlocfilehash: a2958c30c06dffe193793e0a4bc2c314c89853a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 240e069e77acd2e00d410239a43842d1b6214684
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306078"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833672"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>Тип перечисления deviceManagementPartnerAppType
 

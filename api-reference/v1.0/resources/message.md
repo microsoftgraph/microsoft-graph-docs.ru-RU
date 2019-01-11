@@ -2,12 +2,13 @@
 title: Тип ресурса message
 description: Сообщение в mailFolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 57183290f872f56684e8b629b83bb31151bff134
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: d7519c98a9a9fd35ed5b1bdcdd85da5e876e5265
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748579"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833021"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -72,10 +73,10 @@ ms.locfileid: "27748579"
 |inferenceClassification | inferenceClassificationType | Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused` или `other`. |
 |internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовки сообщений, определенные в [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Набор включает заголовки сообщений, указывая сетевой путь, по сообщение от отправителя получателю. Он также может содержать заголовки настраиваемого сообщения, в которых содержатся данные приложения для сообщения. |
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
-|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Boolean|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isRead|Boolean|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isRead|Логический|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|

@@ -2,12 +2,13 @@
 title: Удаление объекта eventMessage
 description: Удаление объекта eventMessage.
 author: angelgolfer-ms
-ms.openlocfilehash: 13ca9c908dc1b00a355c33f69951e04b80f26e0a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb6f00b642a919e63250074dc6f447be7997a722
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337718"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831278"
 ---
 # <a name="delete-eventmessage"></a>Удаление объекта eventMessage
 
@@ -35,7 +36,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

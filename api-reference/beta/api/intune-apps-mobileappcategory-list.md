@@ -2,12 +2,13 @@
 title: Перечисление объектов mobileAppCategory
 description: Список свойств и связей объектов mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: 1776a4c563a283a592d2a0ad37dc215423e91d0d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 65248654cb84e7522d0eadf9789e4026109b8c9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833399"
 ---
 # <a name="list-mobileappcategories"></a>Перечисление объектов mobileAppCategory
 
@@ -38,11 +39,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

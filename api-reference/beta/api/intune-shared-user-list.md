@@ -2,12 +2,13 @@
 title: Перечисление пользователей
 description: Список свойств и связей объектов user.
 author: tfitzmac
-ms.openlocfilehash: ab3849bad141463bc674dce7c692d33c6e652952
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bff53db369acad45dba42a6d558cfb2f15d8122
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832790"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -45,11 +46,11 @@ GET /users
 
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

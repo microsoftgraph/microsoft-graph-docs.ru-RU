@@ -2,12 +2,13 @@
 title: Delete iosGeneralDeviceConfiguration
 description: Удаление объекта iosGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3c0c3e846192df19a79ecae1ea07916c3426241b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2eee65afe58c61da619f4db5dce56932752d980d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831893"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>Delete iosGeneralDeviceConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

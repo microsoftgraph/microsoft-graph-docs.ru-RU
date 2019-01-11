@@ -2,12 +2,13 @@
 title: Сообщение канала
 description: Получение единственного сообщения (без его ответы) в канале команды.
 author: nkramer
-ms.openlocfilehash: 2da10f4151cc1ddaaa1bddfe376f4035a6baa180
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 202e2c341e58175e1807e1aa47c120f6c829a7c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309228"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829122"
 ---
 # <a name="get-channel-message"></a>Сообщение канала
 
@@ -38,7 +39,7 @@ GET /teams/{id}/channels/{id}/messages/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

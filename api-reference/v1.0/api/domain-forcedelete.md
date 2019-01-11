@@ -2,12 +2,13 @@
 title: Принудительно удалить домен
 description: Удаление домена, с помощью асинхронной операции длительным.
 author: lleonard-msft
-ms.openlocfilehash: 85839d8bf7d36925661d0202c053574288763dc6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22ad640195fa9b14e0407a479438bf618d8f19c1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309116"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831355"
 ---
 # <a name="force-domain-deletion"></a>Принудительно удалить домен
 
@@ -54,7 +55,7 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

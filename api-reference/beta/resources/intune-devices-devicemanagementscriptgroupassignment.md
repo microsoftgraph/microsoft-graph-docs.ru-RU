@@ -2,12 +2,13 @@
 title: Тип ресурса deviceManagementScriptGroupAssignment
 description: Содержит свойства, используемые для назначения сценарий управления устройства в группу.
 author: tfitzmac
-ms.openlocfilehash: 446e293ee3d4c0cc2071f6a93e01bcdf8cf72a2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6dfeca71b20ffae27f99fdd4af0909332338b4f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832209"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>Тип ресурса deviceManagementScriptGroupAssignment
 
@@ -29,7 +30,7 @@ ms.locfileid: "27345943"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта назначения группы, сценарий управления устройства.|
-|targetGroupId|String.|Идентификатор группы Azure Active Directory мы ориентация сценария.|
+|targetGroupId|Строка|Идентификатор группы Azure Active Directory мы ориентация сценария.|
 
 ## <a name="relationships"></a>Связи
 Нет
