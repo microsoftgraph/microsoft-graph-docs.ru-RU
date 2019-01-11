@@ -1,12 +1,13 @@
 ---
 title: Экспорт governanceRoleAssignmentRequests
 description: Получить коллекцию governanceRoleAssignmentRequests в формате `application/octet-stream`, который можно преобразовать в файл CSV в браузере.
-ms.openlocfilehash: 8b9e64faeb8134f5b0bb964d296b1bab309021d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10fd7c720bf7b6f162a4d8c2189e81a9205e53ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076648"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828730"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Экспорт governanceRoleAssignmentRequests
 
@@ -21,7 +22,7 @@ ms.locfileid: "27076648"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +46,7 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Тип ресурса windowsKioskDesktopApp
 description: Базовый класс для типов приложений
 author: tfitzmac
-ms.openlocfilehash: a5ef4000b66f15f5951b49a152d25df30167004d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53eb615dcd1ba2b88c6cdd4bb5a1b76b83b67eaf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830977"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>Тип ресурса windowsKioskDesktopApp
 
@@ -25,8 +26,8 @@ ms.locfileid: "27344522"
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитку приложение для макета Пуск унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|Строка|Представляет понятное имя приложения унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |path|String|Определение пути классического приложения|
-|desktopApplicationId|String.|Определение DesktopApplicationID приложения|
-|desktopApplicationLinkPath|String.|Определение DesktopApplicationLinkPath приложения|
+|desktopApplicationId|Строка|Определение DesktopApplicationID приложения|
+|desktopApplicationLinkPath|Строка|Определение DesktopApplicationLinkPath приложения|
 
 ## <a name="relationships"></a>Связи
 Нет

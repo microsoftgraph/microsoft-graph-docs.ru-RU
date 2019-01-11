@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса meetingTimeCandidatesResult
 description: Коллекция предложений (если они есть) или причина их отсутствия.
-ms.openlocfilehash: 38ca5b6be15d3cd268403f7f95645a8aaf31cf9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b261295de43dcb0bfb94f85c833559430365002
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075529"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810656"
 ---
 # <a name="meetingtimecandidatesresult-resource-type"></a>Тип ресурса meetingTimeCandidatesResult
 
@@ -44,9 +45,9 @@ ms.locfileid: "27075529"
 
 ```
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|emptySuggestionsHint|String|Причина отсутствия предложений в результатах. Возможные значения: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` и `unknown`.|
+|emptySuggestionsHint|Строка|Причина отсутствия предложений в результатах. Возможные значения: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` и `unknown`.|
 |meetingTimeSlots|[meetingTimeCandidate](meetingtimecandidate.md) коллекции|Массив предложений.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

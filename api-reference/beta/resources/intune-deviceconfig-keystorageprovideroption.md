@@ -2,12 +2,13 @@
 title: Тип перечисления keyStorageProviderOption
 description: Параметры импорта хранилища ключей поставщика (поставщика хранилища КЛЮЧЕЙ).
 author: tfitzmac
-ms.openlocfilehash: 7923dd5c4b8a09d834d29b65928430828f3dafac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4609092c3022b62331bbb6226a5b91e4b287ff79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826469"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>Тип перечисления keyStorageProviderOption
 

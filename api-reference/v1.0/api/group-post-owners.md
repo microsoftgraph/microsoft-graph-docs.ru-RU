@@ -1,12 +1,13 @@
 ---
 title: Добавление владельца группы
 description: Добавление пользователя в качестве владельца группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы.
-ms.openlocfilehash: ac3790ac3a61beb9b5d92916e8dac82f1849cc8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 435d4a2c89abbeb49fc6dbe914cc378d832a8235
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825307"
 ---
 # <a name="add-group-owner"></a>Добавление владельца группы
 Добавление пользователя в качестве владельца группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы.

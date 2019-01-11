@@ -2,12 +2,13 @@
 title: Создание объекта managedDeviceMobileAppConfigurationAssignment
 description: Создание объекта managedDeviceMobileAppConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 8418b853c4d82f0a56d592a90542505f0355df0b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48e18e516d9cc55e7c7b94f1b60524ea78e91cac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808696"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>Создание объекта managedDeviceMobileAppConfigurationAssignment
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса SortField
 description: Представляет условие в операции сортировки.
-ms.openlocfilehash: b6fc87e03b63a3e1cc34beef61a7538a913a118a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2c1b9a272fd024455d1297c5f59ca7684283e1a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825972"
 ---
 # <a name="sortfield-resource-type"></a>Тип ресурса SortField
 
@@ -18,7 +19,7 @@ ms.locfileid: "27027231"
 |ascending|boolean|Указывает, выполняется ли сортировка по возрастанию.|
 |color|строка|Представляет целевой цвет условия при сортировке по шрифту или цвету ячеек.|
 |dataOption|string|Представляет Дополнительные параметры сортировки для этого поля. Возможные значения: `Normal`, `TextAsNumber`.|
-|key|целое|Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).|
+|key|int|Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).|
 |sortOn|строка|Представляет тип сортировки этого условия. Возможные значения: `Value`, `CellColor`, `FontColor`, `Icon`.|
 |icon|[WorkbookIcon](icon.md)|Представляет целевой значок условия при сортировке по значку ячейки.|
 

@@ -2,12 +2,13 @@
 title: Перечисление serviceConfigurationRecords
 description: Получение списка объектов domainDnsRecord, которые требуются, чтобы включить службы для домена.
 author: lleonard-msft
-ms.openlocfilehash: 067315499b1557f667578f17f687ad21bb166dc5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 958115620d9cf1e8a108c08004bfb124328f15b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302942"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825335"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Перечисление serviceConfigurationRecords
 
@@ -43,7 +44,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

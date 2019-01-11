@@ -2,12 +2,13 @@
 title: Создание embeddedSIMDeviceState
 description: Создание нового объекта embeddedSIMDeviceState.
 author: tfitzmac
-ms.openlocfilehash: bacf4e0beb240a9c6e60792c7d2a853ac37dcce4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27bf12ff0bcb2ed61f5bb689a1994373d9efd551
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832881"
 ---
 # <a name="create-embeddedsimdevicestate"></a>Создание embeddedSIMDeviceState
 
@@ -37,11 +38,11 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта embeddedSIMDeviceState.
 
 В следующей таблице показаны свойства, которые необходимы для создания embeddedSIMDeviceState.
@@ -52,11 +53,11 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |createdDateTime|DateTimeOffset|Время создания внедренных состояние устройства диспетчера установки. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения внедренного состояние устройства диспетчера установки. Обновление со стороны службы.|
 |lastSyncDateTime|DateTimeOffset|Время, внедренные устройства диспетчера установки последнего возврата. Обновление со стороны службы.|
-|universalIntegratedCircuitCardIdentifier|String.|Универсальные интегральной карточки идентификатор (UICCID) Идентификация оборудования, на котором профиль — для развертывания.|
+|universalIntegratedCircuitCardIdentifier|Строка|Универсальные интегральной карточки идентификатор (UICCID) Идентификация оборудования, на котором профиль — для развертывания.|
 |deviceName|String|Имя устройства, к которому был подписки например рабочего СТОЛА ДЖО подготовить к работе|
 |userName|String|Имя пользователя, который был подписки подготовлен к например joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профилей, применяемые к устройства. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|stateDetails|String.|Строка Описание подготовки состояния.|
+|stateDetails|Строка|Строка Описание подготовки состояния.|
 
 
 

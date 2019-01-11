@@ -2,12 +2,13 @@
 title: Получение домена
 description: Получение свойств и связей объекта домена.
 author: lleonard-msft
-ms.openlocfilehash: 6135f43ab305558c1ade7d9ec1bc27c9e5c4a043
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d49fe39f9e953b6e0bcdb4504a4f2296d5d4ff9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817222"
 ---
 # <a name="get-domain"></a>Получение домена
 
@@ -44,7 +45,7 @@ GET /domains/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

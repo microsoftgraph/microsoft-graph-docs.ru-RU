@@ -2,12 +2,13 @@
 title: Список элементов
 description: Получение списка пользователей, которым назначена роль каталога.  Роли каталогов можно назначать только пользователям.
 author: lleonard-msft
-ms.openlocfilehash: 8bd0f67d6ca565dac6dfae501f5bc5c829f4db3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d7f0ee776646933743cd1fefb63eaa620ffe7ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359103"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824810"
 ---
 # <a name="list-members"></a>Перечисление участников
 
@@ -36,7 +37,7 @@ GET /directoryRoles/{id}/members
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

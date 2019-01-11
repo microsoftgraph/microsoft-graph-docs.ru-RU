@@ -2,12 +2,13 @@
 title: Получение unsupportedDeviceConfiguration
 description: Чтение свойства и связи объекта unsupportedDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9b6b350356d59b3792ca533c3fa65053e7113fa7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ebff30e34436239a5c7ffec4d03cb83966a59d98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817413"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>Получение unsupportedDeviceConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

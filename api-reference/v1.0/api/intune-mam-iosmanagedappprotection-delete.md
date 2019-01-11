@@ -2,12 +2,13 @@
 title: Delete iosManagedAppProtection
 description: Удаление объекта iosManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: 0de0f993da11f9c06f3853a615928906989a63c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 901073d54c7c8e154f5b757228d8a813a99dbfea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825027"
 ---
 # <a name="delete-iosmanagedappprotection"></a>Delete iosManagedAppProtection
 
@@ -35,11 +36,11 @@ DELETE /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

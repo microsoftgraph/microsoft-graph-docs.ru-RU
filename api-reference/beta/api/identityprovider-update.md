@@ -1,12 +1,13 @@
 ---
 title: Обновление identityProvider
 description: Обновление свойств в существующий identityProvider.
-ms.openlocfilehash: b89b0f50ef2f62625a1707c3e77c32865adaec67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ebe49fb562f77004edfa3504130fbf50f4d40003
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832811"
 ---
 # <a name="update-identityprovider"></a>Обновление identityProvider
 
@@ -40,15 +41,15 @@ PATCH /identityProviders/{id}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Предоставить объект JSON в тексте запроса одно или несколько свойств, которые должны быть обновлены.
 
-|Свойство|Тип|Description|
+|Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|clientId|String|Идентификатор клиента для приложения. Это идентификатор клиента, полученные при регистрации приложения с поставщиком удостоверений.|
-|clientSecret|String|Секрет клиента для приложения. Это секрет клиента, полученные при регистрации приложения с поставщиком удостоверений.|
-|name|String|Отображаемое имя поставщика удостоверений.|
+|clientId|Строка|Идентификатор клиента для приложения. Это идентификатор клиента, полученные при регистрации приложения с поставщиком удостоверений.|
+|clientSecret|Строка|Секрет клиента для приложения. Это секрет клиента, полученные при регистрации приложения с поставщиком удостоверений.|
+|name|Строка|Отображаемое имя поставщика удостоверений.|
 
 ## <a name="response"></a>Ответ
 

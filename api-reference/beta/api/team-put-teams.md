@@ -2,12 +2,13 @@
 title: Создание группы из группы
 description: Создание новой группы из группы.
 author: nkramer
-ms.openlocfilehash: c9b3b686d9327872f7e5a68fe325141e256c6f53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: ee4ad11dd7b9c4aeaa40886a53dcd750953771a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330298"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825762"
 ---
 # <a name="create-team-from-group"></a>Создание группы из группы
 
@@ -46,7 +47,7 @@ PUT /groups/{id}/team
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите представление JSON объекта [группы](../resources/team.md) .
 

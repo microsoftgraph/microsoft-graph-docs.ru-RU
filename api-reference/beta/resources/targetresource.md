@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса targetResource
 description: Указывает коллекцию конечных типов ресурсов, связанные с действием аудита. Каждый тип целевого ресурса наследуют свойства, используйте следующий из данного ресурса.
-ms.openlocfilehash: ba3bee7ce89f73ed97610d62676c22d14488ed9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f86cfe45870292dae93327859c32d38aa2b252fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828681"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
 Указывает коллекцию конечных типов ресурсов, связанные с действием аудита. Каждый тип целевого ресурса наследуют свойства, используйте следующий из данного ресурса.
@@ -15,8 +16,8 @@ ms.locfileid: "27075229"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Указывает отображаемое имя, описанные в разделе типы назначения ресурсов ниже ресурсов.|
-|id|String|Указывает уникальный идентификатор ресурса (например: идентификатор пользователя, AppId, RoleId.).|
+|displayName|Строка|Указывает отображаемое имя, описанные в разделе типы назначения ресурсов ниже ресурсов.|
+|id|Строка|Указывает уникальный идентификатор ресурса (например: идентификатор пользователя, AppId, RoleId.).|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) коллекции|Указывает имя, старое значение и новое значение каждого атрибута, которые изменены. Этот параметр доступен для всех действий, «Обновить»|
 
 ### <a name="target-resource-types"></a>Типы назначения ресурсов
@@ -25,14 +26,14 @@ ms.locfileid: "27075229"
 
 |Имя ресурса| Справочные материалы|
 |-------------|----------|
-Устройство|[targetResourceDevice](targetresourcedevice.md)
+Device|[targetResourceDevice](targetresourcedevice.md)
 Каталог|[targetResourceDirectory] (targetresourcedirectory.md]
 Group|[targetResourceGroup](targetresourcegroup.md)
 Политика|[targetResourcePolicy](targetresourcepolicy.md)
 Role|[targetResourceRole](targetresourcerole.md)
 Участников-служб|[targetResourceServicePrincipal](targetresourceserviceprincipal.md)
-User|[targetResourceUser](targetresourceuser.md)
-Other (другие)|[targetResourceOther](targetresourceother.md)
+Пользователь|[targetResourceUser](targetresourceuser.md)
+Другое|[targetResourceOther](targetresourceother.md)
 
 ## <a name="json-representation"></a>Представление JSON
 

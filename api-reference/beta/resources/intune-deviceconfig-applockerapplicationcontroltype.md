@@ -2,12 +2,13 @@
 title: Тип перечисления appLockerApplicationControlType
 description: Возможные значения элемента управления типов AppLocker приложений
 author: tfitzmac
-ms.openlocfilehash: 0d6190170d6f6695a3303047f9ccb193afd248f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ca34a44b1ea4e55199eb65283f839cb50e222da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330207"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807807"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>Тип перечисления appLockerApplicationControlType
 

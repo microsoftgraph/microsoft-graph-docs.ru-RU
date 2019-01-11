@@ -2,12 +2,13 @@
 title: Тип перечисления teamSpecialization
 description: Описание варианта использования специальных для команды.
 author: nkramer
-ms.openlocfilehash: 2e17f03374457ff8ddd9d3941eb56bebbec2dde6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18e1993272a94df989066cf95d01b6a4f66fd8d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348015"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826042"
 ---
 # <a name="teamspecialization-enum-type"></a>Тип перечисления teamSpecialization
 
@@ -19,5 +20,5 @@ ms.locfileid: "27348015"
 
 | Элемент             | Значение | Описание                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
-| none               | 0     | Тип для группы, которая предоставляет опыт стандартной рабочей группы по умолчанию.          |
+| Нет               | 0     | Тип для группы, которая предоставляет опыт стандартной рабочей группы по умолчанию.          |
 | unknownFutureValue | 7     | Sentinel значение зарезервировано для выполнения будущее расширение перечисления. |

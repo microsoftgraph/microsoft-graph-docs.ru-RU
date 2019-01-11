@@ -2,12 +2,13 @@
 title: Тип ресурса hardwareInformation
 description: Сведения об оборудовании данного устройства.
 author: tfitzmac
-ms.openlocfilehash: c483aa800d920a50392d21c326cd20dea7b72e18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2684f1ff7e7a6407942ac61fae7d45ead16820d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334526"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831826"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса hardwareInformation
 
@@ -28,16 +29,16 @@ ms.locfileid: "27334526"
 |model|String|Модель устройства|
 |phoneNumber|String|Номер телефона устройства|
 |subscriberCarrier|String|Подписчик на поставщика устройства|
-|cellularTechnology|String.|Сотовой связи технология устройства|
-|wifiMac|String.|WiFi MAC-адрес устройства|
-|operatingSystemLanguage|String.|Язык операционной системы устройства|
+|cellularTechnology|Строка|Сотовой связи технология устройства|
+|wifiMac|Строка|WiFi MAC-адрес устройства|
+|operatingSystemLanguage|Строка|Язык операционной системы устройства|
 |isSupervised|Boolean|Контролируемом режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
-|isSharedDevice|Boolean.|Общие iPad|
+|isSharedDevice|Логический|Общие iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) коллекции|Всем пользователям, включенным общего устройства Apple|
-|tpmSpecificationVersion|String.|Строка, которая указывает версию спецификации.|
-|operatingSystemEdition|String.|Строка, определяющая версии операционной системы.|
-|deviceFullQualifiedDomainName|String.|Возвращает полное доменное имя устройства (при его наличии). Если устройство не присоединенный к домену, возвращает пустую строку. |
+|tpmSpecificationVersion|Строка|Строка, которая указывает версию спецификации.|
+|operatingSystemEdition|Строка|Строка, определяющая версии операционной системы.|
+|deviceFullQualifiedDomainName|Строка|Возвращает полное доменное имя устройства (при его наличии). Если устройство не присоединенный к домену, возвращает пустую строку. |
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требования безопасности на основе виртуализации оборудования. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние защиты локальной системы Администратор учетных данных. . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|

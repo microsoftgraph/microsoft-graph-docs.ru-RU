@@ -2,12 +2,13 @@
 title: Список deviceConfigurationConflictSummaries
 description: Свойства списка и связей объектов deviceConfigurationConflictSummary.
 author: tfitzmac
-ms.openlocfilehash: e1390cd776769400508feec73564c5e7d5593261
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19677c1de67b53f1d0c127f237e6e9a8de7748d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827925"
 ---
 # <a name="list-deviceconfigurationconflictsummaries"></a>Список deviceConfigurationConflictSummaries
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceConfigurationConflictSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

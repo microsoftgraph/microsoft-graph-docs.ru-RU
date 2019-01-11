@@ -2,12 +2,13 @@
 title: Тип ресурса meetingCapability
 description: Содержит возможности собрания
 author: VinodRavichandran
-ms.openlocfilehash: 1a6f172922c0efbc9ad93e32141e364e2d0fc711
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 3a7f291c81522d33bffbcce6e97a407f09234db5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380249"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825811"
 ---
 # <a name="meetingcapability-resource-type"></a>Тип ресурса meetingCapability
 
@@ -19,8 +20,8 @@ ms.locfileid: "27380249"
 
 | Свойство                          | Тип    | Описание                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | Boolean | Указывает, может ли анонимные пользователи исходящие звонки на собрании. |
-| allowAnonymousUsersToStartMeeting | Boolean | Указывает, разрешены ли анонимные пользователи начало собрания.  |
+| allowAnonymousUsersToDialOut      | Логический | Указывает, может ли анонимные пользователи исходящие звонки на собрании. |
+| allowAnonymousUsersToStartMeeting | Логический | Указывает, разрешены ли анонимные пользователи начало собрания.  |
 | autoAdmittedUsers                 | String  | Возможные значения: `everyoneInCompany`, `everyone`.              |
 
 ## <a name="json-representation"></a>Представление JSON

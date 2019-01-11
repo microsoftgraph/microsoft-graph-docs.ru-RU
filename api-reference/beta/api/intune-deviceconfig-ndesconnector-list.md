@@ -2,12 +2,13 @@
 title: Список ndesConnectors
 description: Свойства списка и связей объектов ndesConnector.
 author: tfitzmac
-ms.openlocfilehash: cd91f4aad8a3e4969594e34a7f8124411687c9be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e9406151d58940f0a8a0f220a938be38743cf60d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832569"
 ---
 # <a name="list-ndesconnectors"></a>Список ndesConnectors
 
@@ -37,11 +38,11 @@ GET /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

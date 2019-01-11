@@ -2,12 +2,13 @@
 title: Обновление объекта targetedManagedAppConfiguration
 description: Обновление свойств объекта targetedManagedAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3207c0ffca215ae3a0669b28e60e624cd7630648
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ee8ff72cbeda93922b47c5a8de2872ef282b26e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805602"
 ---
 # <a name="update-targetedmanagedappconfiguration"></a>Обновление объекта targetedManagedAppConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -54,7 +55,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |version|Строка|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |customSettings|Коллекция [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Набор строковых пар "ключ-значение", которые отправляются в приложения для пользователей с заданной конфигурацией и не меняются этой службой. Наследуется от объекта [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md).|
 |deployedAppCount|Int32|Количество приложений, для которых развернута текущая политика.|
-|isAssigned|Boolean|Указывает, развернута ли политика для групп включения.|
+|isAssigned|Логический|Указывает, развернута ли политика для групп включения.|
 
 
 

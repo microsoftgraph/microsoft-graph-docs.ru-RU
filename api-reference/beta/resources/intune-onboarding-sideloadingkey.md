@@ -2,12 +2,13 @@
 title: Тип ресурса sideLoadingKey
 description: SideLoadingKey сущность является обязательным для Windows 8 и 8.1 устройств для установите строку бизнес-приложений для клиента.
 author: tfitzmac
-ms.openlocfilehash: 66dc833ab46f8dc1c030a3ef97be78cd73ee3660
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b08715ebc8cd19ab4086fd82013301ed89efd183
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814254"
 ---
 # <a name="sideloadingkey-resource-type"></a>Тип ресурса sideLoadingKey
 
@@ -33,7 +34,7 @@ SideLoadingKey сущность является обязательным для
 |displayName|Строка|Со стороны загрузка ключа имя, отображаемое для администраторов для ИТ-специалистов.|
 |описание|Строка|Со стороны загрузки ключ описание, отображаемое для администраторов для ИТ-специалистов.|
 |totalActivation|Int32|Со стороны загрузки ключ общее активация отображаются для администраторов для ИТ-специалистов.|
-|lastUpdatedDateTime|String.|Со стороны загрузки ключ обновлен Дата последнего отображаются для администраторов для ИТ-специалистов.|
+|lastUpdatedDateTime|Строка|Со стороны загрузки ключ обновлен Дата последнего отображаются для администраторов для ИТ-специалистов.|
 
 ## <a name="relationships"></a>Связи
 Нет

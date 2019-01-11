@@ -2,12 +2,13 @@
 title: Обновление объекта deviceConfigurationUserOverview
 description: Обновление свойств объекта deviceConfigurationUserOverview.
 author: tfitzmac
-ms.openlocfilehash: 9aac0cc7c578ed281999391f4db88e29ee336cfc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dcb5734661093b4d6bdc8da226af1c77dd7e72f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812392"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>Обновление объекта deviceConfigurationUserOverview
 
@@ -45,7 +46,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

@@ -2,12 +2,13 @@
 title: Список submittedResources
 description: Список ресурсов, поданных официально для ранжирования. Учебы, ответственных за подачи не может изменить отправляемого списка без повторной отправки назначения. Это является оболочкой реальных ресурсов и может содержать указатель фактический назначения ресурса, если этот ресурс, скопированный из назначения.
 author: dipakboyed
-ms.openlocfilehash: 9689d9687127006f38884107d0b015e571fd6ab0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da036713e6683aaef6576145dfe32b3b6eeaf11e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356142"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824145"
 ---
 # <a name="list-submittedresources"></a>Список submittedResources
 
@@ -37,7 +38,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationSubmissionResource](../resources/educationsubmissionresource.md) в теле ответа.

@@ -2,12 +2,13 @@
 title: Создание androidManagedStoreApp
 description: Создание нового объекта androidManagedStoreApp.
 author: tfitzmac
-ms.openlocfilehash: 3d0766a7ebb285feec9fb6733c504fa72b028385
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6278ed99a41bdf80af2e43579974855ce8fc145b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346888"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824438"
 ---
 # <a name="create-androidmanagedstoreapp"></a>Создание androidManagedStoreApp
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта androidManagedStoreApp.
 
 В следующей таблице показаны свойства, которые необходимы для создания androidManagedStoreApp.

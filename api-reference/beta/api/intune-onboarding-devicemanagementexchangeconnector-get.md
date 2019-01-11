@@ -2,12 +2,13 @@
 title: Get deviceManagementExchangeConnector
 description: Чтение свойств и связей объекта deviceManagementExchangeConnector.
 author: tfitzmac
-ms.openlocfilehash: 98507354a3f0501d22d24e28177c9769f744153b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea85262c7f32deec653c9118cc2986c9f5ca024b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351830"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832601"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>Get deviceManagementExchangeConnector
 
@@ -39,11 +40,11 @@ GET /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Создание объекта macOSDeviceFeaturesConfiguration
 description: Создание объекта macOSDeviceFeaturesConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 15539bb2aebf1e05a8eec9c42262f3436a516919
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db5b900250f166d829b56dcf3542fa4a9824af7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829808"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>Создание объекта macOSDeviceFeaturesConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

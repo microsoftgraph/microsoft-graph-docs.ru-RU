@@ -2,12 +2,13 @@
 title: Тип ресурса educationOneNoteResource
 description: 'Подкласс educationResource. Представляет расположение страницы OneNote.  '
 author: mmast-msft
-ms.openlocfilehash: dc6fc6a71da12a27cb589e072371814e4bc33cc1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9dea19683786d22c48af2eedd6239ffe76441ef2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359866"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825930"
 ---
 # <a name="educationonenoteresource-resource-type"></a>Тип ресурса educationOneNoteResource
 
@@ -18,8 +19,8 @@ ms.locfileid: "27359866"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|pageUrl|String.|URL-адрес графическое представление Microsoft на страницу OneNote.|
-|sectionName|String.|Имя раздела, который следует скопировать в или были скопированы в распределения.|
+|pageUrl|Строка|URL-адрес графическое представление Microsoft на страницу OneNote.|
+|sectionName|Строка|Имя раздела, который следует скопировать в или были скопированы в распределения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

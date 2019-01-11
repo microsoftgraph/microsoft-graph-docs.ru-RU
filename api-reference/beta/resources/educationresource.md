@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationResource
 description: Суперкласса для всех объектов ресурсов в системе. Ресурс связан с **назначения** и/или **отправки**, который представляет объект обучения, который
-ms.openlocfilehash: b7e64a946992bb0b43c5bfe50e8d92b5f7176856
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0608f3c0fb84f05404032bed611f0af887e7bb67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827561"
 ---
 # <a name="educationresource-resource-type"></a>Тип ресурса educationResource
 
@@ -22,7 +23,7 @@ ms.locfileid: "27080219"
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Создатель ресурса.|
 |createdDateTime|Момент времени, когда был создан ресурса.  DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|displayName|String|Отображаемое имя ресурса.|
+|displayName|Строка|Отображаемое имя ресурса.|
 |lastModifiedBy|[identitySet](identityset.md)|Кто был последний пользователям изменять ресурса.|
 |lastModifiedDateTime|DateTimeOffset|Момент времени, время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 

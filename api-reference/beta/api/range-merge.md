@@ -2,12 +2,13 @@
 title: 'Range: merge'
 description: Объединяет ячейки диапазона в одну область на листе.
 author: lumine2008
-ms.openlocfilehash: 628acea9c86ff7cf8b460fb5db2abb7157c85146
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e6c5f0b56ddaff77802d8258d4c2226c538a5d90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317341"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806239"
 ---
 # <a name="range-merge"></a>Range: merge
 
@@ -37,7 +38,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

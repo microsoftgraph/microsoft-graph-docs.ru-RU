@@ -2,12 +2,13 @@
 title: Обновление importedWindowsAutopilotDeviceIdentity
 description: Обновляет свойства объекта importedWindowsAutopilotDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: 885101518f5d88261a0a0e11cfc509c470b8bf5b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7c54ed330af3dcea6c1965ce5fd1abcbe58c66f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828576"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Обновление importedWindowsAutopilotDeviceIdentity
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

@@ -2,12 +2,13 @@
 title: Список windowsKioskConfigurations
 description: Свойства списка и связей объектов windowsKioskConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 59e4510f85bb47c53c00c679b0c8ea021aba2797
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66a13926abbbcbd23da09a44c79a1cc4b5376a94
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822416"
 ---
 # <a name="list-windowskioskconfigurations"></a>Список windowsKioskConfigurations
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

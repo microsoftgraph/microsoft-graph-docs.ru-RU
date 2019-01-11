@@ -2,12 +2,13 @@
 title: Получение targetedManagedAppConfiguration
 description: Чтение свойств и связей объекта targetedManagedAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: f40ae61063967239642ba3cc16403b7fcb7b04e2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 99e584684053716c9916a2cf8424a34cf751810b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824978"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>Получение targetedManagedAppConfiguration
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

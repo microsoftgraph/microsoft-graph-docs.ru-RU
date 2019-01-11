@@ -1,12 +1,13 @@
 ---
 title: Создание outlookTaskFolder
 description: Создайте папку задачи в группе задач по умолчанию (`My Tasks`) из почтового ящика пользователя.
-ms.openlocfilehash: 688f3dfb603bec1bc5acb05344e1dc9e8465ae47
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d863786028f29419d6e20d8be7c18d6b37250e25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079026"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832572"
 ---
 # <a name="create-outlooktaskfolder"></a>Создание outlookTaskFolder
 
@@ -34,7 +35,7 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [outlookTaskFolder](../resources/outlooktaskfolder.md) .
 
 ## <a name="response"></a>Ответ
@@ -59,8 +60,7 @@ Content-length: 60
 ```
 В тексте запроса укажите представление JSON объекта [outlookTaskFolder](../resources/outlooktaskfolder.md) .
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

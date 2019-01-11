@@ -2,12 +2,13 @@
 title: Тип ресурса windowsPhone81AppXBundle
 description: Содержит свойства и наследуемые свойства для приложений Windows Phone 8.1 AppX набор бизнес-систем.
 author: tfitzmac
-ms.openlocfilehash: 76bdf536ba7b895e347555fbd84d4af23bde3ff9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c12bcc3afa8e7e7e681c786f5a24e9448ba3e18a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825034"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>Тип ресурса windowsPhone81AppXBundle
 
@@ -54,8 +55,8 @@ ms.locfileid: "27331285"
 |identityPublisherHash|String|Хэш издателей удостоверений. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phoneProductIdentifier|String.|Идентификатор продукта телефона. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|phonePublisherId|String.|Идентификатор издателя телефона наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phoneProductIdentifier|Строка|Идентификатор продукта телефона. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|phonePublisherId|Строка|Идентификатор издателя телефона наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityVersion|String|Версия удостоверения. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |appXPackageInformationList|[windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md) коллекции|Список AppX сведения о пакете.|
 

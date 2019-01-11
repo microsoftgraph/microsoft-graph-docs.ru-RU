@@ -2,12 +2,13 @@
 title: Обновление mobileAppInstallStatus
 description: Обновление свойства объекта mobileAppInstallStatus.
 author: tfitzmac
-ms.openlocfilehash: dbf65aa07258b48a8ce64cf01db0a5ef00097f3a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a60bcf69ded37ea0b4a04430c6a837bb6df95100
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336325"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817951"
 ---
 # <a name="update-mobileappinstallstatus"></a>Обновление mobileAppInstallStatus
 
@@ -38,11 +39,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md).
@@ -61,7 +62,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |osDescription|String|Описание операционная система|
 |userName|String|Имя пользователя устройства|
 |userPrincipalName|Строка|"User Principal Name" (Имя участника-пользователя);|
-|displayVersion|String.|Человеческого для чтения версию приложения|
+|displayVersion|Строка|Человеческого для чтения версию приложения|
 
 
 

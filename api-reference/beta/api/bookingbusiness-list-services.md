@@ -1,12 +1,13 @@
 ---
 title: Список служб
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 74326f68f86eeb461b18e3533e9c4da262ccd847
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ceb26fe3e628db30860620871d495e98e80b711d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829654"
 ---
 # <a name="list-services"></a>Список служб
 
@@ -35,7 +36,7 @@ GET /bookingBusinesses/{id}/services
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [bookingService](../resources/bookingservice.md) в теле ответа.

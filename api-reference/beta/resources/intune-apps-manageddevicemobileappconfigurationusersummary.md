@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managedDeviceMobileAppConfigurationUserSummary
 description: Содержит свойства, унаследованные свойства и действия из сводки по состоянию конфигурации мобильных приложений MDM для пользователя.
-ms.openlocfilehash: b27f4c24dc4b89238ec4e555d9507f36795ebc9b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b409e81e1fe82237d739dc5e8b75ce42e74a783
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077713"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805420"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>Тип ресурса managedDeviceMobileAppConfigurationUserSummary
 
@@ -24,7 +25,7 @@ ms.locfileid: "27077713"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
 |notApplicableCount|Int32|Число пользователей не применим|
 |successCount|Int32|Количество успешных пользователей.|

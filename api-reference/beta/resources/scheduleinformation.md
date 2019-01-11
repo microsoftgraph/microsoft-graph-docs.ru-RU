@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса scheduleInformation
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 0b7bbd861a044b28cd22603fd0ccc27d20f46fba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e535f5c2b47e810fc767cb29d0b24f28ed3c7bf0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828709"
 ---
 # <a name="scheduleinformation-resource-type"></a>Тип ресурса scheduleInformation
 
@@ -15,11 +16,11 @@ ms.locfileid: "27078137"
 Представляет доступности пользователя, ресурса или список рассылки для заданного периода времени.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|availabilityView |String |Представляет объединенное представление доступности всех элементов в `scheduleItems`. Представление состоит из слотами времени. Доступность во время каждого промежуток времени, обозначается: `0`свободен, = `1`= под вопросом, `2`= «занят», `3`= нет на месте, `4`= работа в другом месте.|
+|availabilityView |Строка |Представляет объединенное представление доступности всех элементов в `scheduleItems`. Представление состоит из слотами времени. Доступность во время каждого промежуток времени, обозначается: `0`свободен, = `1`= под вопросом, `2`= «занят», `3`= нет на месте, `4`= работа в другом месте.|
 |error |[freeBusyError](freebusyerror.md) |Сведения об ошибке при попытке получить доступности пользователя, ресурса или список рассылки. |
-|scheduleId |String |SMTP-адрес пользователя, ресурса, идентифицирующий экземпляр **scheduleInformation**или список рассылки. |
+|scheduleId |Строка |SMTP-адрес пользователя, ресурса, идентифицирующий экземпляр **scheduleInformation**или список рассылки. |
 |scheduleItems |[scheduleItem](scheduleitem.md) семейства сайтов |Содержит элементы, описывающие доступности пользователя или ресурса. |
 |workingHours |[workingHours](workinghours.md) |Дни недели и часы работы пользователя в определенном часовом поясе. Они задаются в составе пользователя [mailboxSettings](mailboxsettings.md).|
 

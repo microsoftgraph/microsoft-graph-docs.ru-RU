@@ -2,12 +2,13 @@
 title: Тип перечисления windowsPrivacyDataCategory
 description: Windows конфиденциальности данных описателя категории для доступа к данным о конфиденциальности.
 author: tfitzmac
-ms.openlocfilehash: f5a9f0fc23e7fa5f3036b8653609db694f6932dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9b533b9ecbf08f09760b57bb0d2bac7080746e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304951"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826755"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>Тип перечисления windowsPrivacyDataCategory
 

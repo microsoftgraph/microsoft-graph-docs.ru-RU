@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса governanceSubject
 description: Представляет пользователей, групп и субъектов-служб, управляемых в управления правами Identity (PIM).
-ms.openlocfilehash: c2129a0da488d4e7f425d6ef3596a955269e0da8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f3f8762c9136a3ae92269f6c06f52000fb73f710
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075437"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832594"
 ---
 # <a name="governancesubject-resource-type"></a>Тип ресурса governanceSubject
 
@@ -18,9 +19,9 @@ ms.locfileid: "27075437"
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип       |Описание|
 |:----------|:----------|:----------|
-|id         |String     | Идентификатор субъекта.|
-|type       |String     |Тип субъекта. Значение может быть ``User``, ``Group``, и ``ServicePrincipal``.|
-|displayName|String     |Отображаемое имя субъекта.|
+|id         |Строка     | Идентификатор субъекта.|
+|type       |Строка     |Тип субъекта. Значение может быть ``User``, ``Group``, и ``ServicePrincipal``.|
+|displayName|Строка     |Отображаемое имя субъекта.|
 |email      |String     |Адрес электронной почты субъекта пользователя. Если темы в других типах, он будет пустым.|
 |principalName|String   |Имя субъекта пользователя. Если темы в других типах, он будет пустым.|
 

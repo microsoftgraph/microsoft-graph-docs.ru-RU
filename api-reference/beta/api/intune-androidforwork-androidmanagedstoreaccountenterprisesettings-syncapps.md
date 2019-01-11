@@ -2,12 +2,13 @@
 title: Действие syncApps
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 7acfeada743a1bce70ec7de424f25ae7157deced
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 98b1c94e7fecb49bd51a75f3b445354c4f6c7046
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824796"
 ---
 # <a name="syncapps-action"></a>Действие syncApps
 
@@ -37,11 +38,11 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/syncApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

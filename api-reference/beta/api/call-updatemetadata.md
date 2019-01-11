@@ -2,12 +2,13 @@
 title: 'вызов: updateMetadata'
 description: Обновление приложений метаданные, связанные с помощью вызова.
 author: VinodRavichandran
-ms.openlocfilehash: b81b41b827aee17fbc2ebed2dee56c15c5376a88
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 2b736c56a7a517f0b68d656ab96933a34cf4a09d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813589"
 ---
 # <a name="call-updatemetadata"></a>вызов: updateMetadata
 
@@ -22,7 +23,7 @@ ms.locfileid: "27380543"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,13 +37,13 @@ POST /applications/{id}/calls/{id}/updateMetadata
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|metadata|String|Большой двоичный объект данных, предоставленных участника в списке.|
-|clientContext|String|Контекст клиента.|
+|metadata|Строка|Большой двоичный объект данных, предоставленных участника в списке.|
+|clientContext|Строка|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.

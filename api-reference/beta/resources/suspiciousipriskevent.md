@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса suspiciousIpRiskEvent
 description: Событие риск, обнаруженных защитой Azure Active Directory Identity которых учетной записи входа в попытке с подозрительные IP-адреса. Полные сведения о событиях риска можно найти в документации по Azure AD защиту.
-ms.openlocfilehash: 5d5b2da25c926a88eb7b589d562e6fa9ec914338
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fff23d3034267adc56f3611f22a181ac415499cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080807"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822122"
 ---
 # <a name="suspiciousipriskevent-resource-type"></a>Тип ресурса suspiciousIpRiskEvent
 
@@ -22,7 +23,7 @@ ms.locfileid: "27080807"
 |[Получение suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) | [suspiciousIpRiskEvent](suspiciousipriskevent.md) |Чтение свойства и связи объекта suspiciousIpRiskEvent.|
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Это всегда больше или равно datetime самого события риска. Это правильное свойство для использования в качестве фильтра при запросе события рисков.|
@@ -38,7 +39,7 @@ ms.locfileid: "27080807"
 |userPrincipalName|string| Имя участника-пользователя пользователя в группу риска|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Только для чтения. Допускается значение null.|
 

@@ -2,12 +2,13 @@
 title: Создание cartToClassAssociation
 description: Создание нового объекта cartToClassAssociation.
 author: tfitzmac
-ms.openlocfilehash: 3ed7ef088acca7908ece1e0b5e61797bb54a2e9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e3582f3f38258db75236b6cc877a64471da4b85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330655"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822710"
 ---
 # <a name="create-carttoclassassociation"></a>Создание cartToClassAssociation
 
@@ -37,11 +38,11 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта cartToClassAssociation.
 
 В следующей таблице показаны свойства, которые необходимы для создания cartToClassAssociation.

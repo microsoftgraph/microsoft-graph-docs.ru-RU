@@ -2,12 +2,13 @@
 title: 'workbookRangeView: range'
 description: Возвращение диапазона, связанного с ресурсом rangeView.
 author: lumine2008
-ms.openlocfilehash: 6e9c0c0f36231a29689c24d721d8c8978e8f1bf0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e707bb4a1ff31526f6a2aafcb569c7dd8328279
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362736"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808738"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 Возвращение диапазона, связанного с ресурсом rangeView.
@@ -34,7 +35,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ### <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.

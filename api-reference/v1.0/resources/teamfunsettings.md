@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса teamFunSettings
 description: Параметры для настройки использования Giphy, memes и наклейки рабочих групп.
-ms.openlocfilehash: ef816d027f015155cc09195c359523c83589725e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3257e54744ef14a94a0570ae45afd271c1514bb0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825601"
 ---
 # <a name="teamfunsettings-resource-type"></a>Тип ресурса teamFunSettings
 
@@ -15,7 +16,7 @@ ms.locfileid: "27024796"
 Параметры для настройки использования Giphy, memes и наклейки в [группы](team.md).
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowGiphy|Логический|Если присвоено значение true, позволяет использовать Giphy.|
 |giphyContentRating|String (enum)|Оценка контента Giphy. Возможные значения: `moderate`, `strict`.|

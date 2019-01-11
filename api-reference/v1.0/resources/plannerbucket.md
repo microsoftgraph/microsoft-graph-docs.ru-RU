@@ -2,12 +2,13 @@
 title: Тип ресурса plannerBucket
 description: ) для выполнения задач в плане в Office 365. Она содержится в plannerPlan и можно создать свою коллекцию plannerTasks.
 author: TarkanSevilmis
-ms.openlocfilehash: 09c9fab569a819f0545e5c851da12be98b45b150
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 592d0e24f527d7ae343bd29e71a3dfdf0247720f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831460"
 ---
 # <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 

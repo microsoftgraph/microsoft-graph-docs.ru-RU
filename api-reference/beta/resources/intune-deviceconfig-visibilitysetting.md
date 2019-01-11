@@ -2,12 +2,13 @@
 title: Тип перечисления visibilitySetting
 description: Состояние универсальный видимости.
 author: tfitzmac
-ms.openlocfilehash: a3a765a2c3404875d047bd81774c204b280b90ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 349bb7e8bd4c2dbe7fecb508b628ae1414b9fc9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830823"
 ---
 # <a name="visibilitysetting-enum-type"></a>Тип перечисления visibilitySetting
 

@@ -1,12 +1,13 @@
 ---
 title: 'orgContact: диспетчер Get'
 description: Получение диспетчера контактов
-ms.openlocfilehash: 7fe4c61422eb83bb4501fbb521f301ec6f9afaa5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 18839c2184bb92dae1e23f125885541408696c98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075965"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826546"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact: диспетчер Get
 
@@ -39,7 +40,7 @@ GET /contacts/{id}/manager
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

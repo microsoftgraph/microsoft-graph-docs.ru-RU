@@ -1,12 +1,13 @@
 ---
 title: Создание категории Outlook
 description: Создание объекта outlookCategory в основном списке категорий пользователя.
-ms.openlocfilehash: d9bc5f3dce80cc05e50784b781e7368c787780d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71bb00d96119b06fda624b02fa9b64be67313f6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815381"
 ---
 # <a name="create-outlook-category"></a>Создание категории Outlook
 
@@ -60,8 +61,7 @@ Content-Length: 70
 ```
 Включите в текст запроса описание объекта [outlookCategory](../resources/outlookcategory.md) в формате JSON.
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

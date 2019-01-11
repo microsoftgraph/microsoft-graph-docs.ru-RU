@@ -2,12 +2,13 @@
 title: Тип перечисления safeSearchFilterType
 description: Указывает, какой уровень безопасного поиска (фильтрация содержимое для взрослых) является обязательным
 author: tfitzmac
-ms.openlocfilehash: eb0c7cfb862364ddc4703c89d19ea844ada6466d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 28aea918c35bb9d90f514e4a8838f219c212405b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343199"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830858"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>Тип перечисления safeSearchFilterType
 

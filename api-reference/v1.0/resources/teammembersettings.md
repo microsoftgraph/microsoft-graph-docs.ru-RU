@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса teamMemberSettings
 description: Параметры для настройки ли члены могут выполнять определенные действия, например, создание каналов и добавьте программы-роботы, рабочих групп.
-ms.openlocfilehash: 74d88e1d87c65745fe98da9b1ee21b26824dc4e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b63bce5bc298f7d9599d8c6146d7962d319c79f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826070"
 ---
 # <a name="teammembersettings-resource-type"></a>Тип ресурса teamMemberSettings
 
@@ -15,7 +16,7 @@ ms.locfileid: "27027154"
 Параметры для настройки ли члены могут выполнять определенные действия, например, создание каналов и добавьте программы-роботы, в [группы](team.md).
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|Логический|Если параметр имеет значение true, участники могли добавлять и обновлять каналов.|
 |allowDeleteChannels|Логический|Если параметр имеет значение true, участники могут удалять каналы.|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса безопасности
 description: Безопасность ресурсов — это точка входа для объектной модели безопасности. Возвращает ресурсов безопасности одного. Он не содержит какие-либо можно использовать свойства.
-ms.openlocfilehash: ddf00e46135733ef18c18918c0c365134138671f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2486bf9cae2ffad471c1bacb8b7ca01c6bef4ee7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025334"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827015"
 ---
 # <a name="security-resource-type"></a>Тип ресурса безопасности
 
@@ -24,7 +25,7 @@ ms.locfileid: "27025334"
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип        | Description |
+| Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |alerts|[оповещение о](alert.md) семейства сайтов| Только для чтения. Допускается значение null.|
 

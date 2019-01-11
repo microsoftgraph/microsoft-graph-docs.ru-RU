@@ -2,12 +2,13 @@
 title: Тип ресурса roleAssignment
 description: Ресурс назначения роли. Назначения ролей объединяют определение роли с участниками и областями. Одной роли может соответствовать одно или несколько назначений. Это относится как к настраиваемым, так и ко встроенным ролям.
 author: tfitzmac
-ms.openlocfilehash: 5c4b09151a7957f52dbaa525f696b89479a898ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cb3b07abc47224b2f96a35f4099d3a691b6c901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825496"
 ---
 # <a name="roleassignment-resource-type"></a>Тип ресурса roleAssignment
 

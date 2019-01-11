@@ -1,14 +1,15 @@
 ---
-title: Список secureScores
+title: Перечисление объектов secureScores
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: f5466e24d6b523809a72f712666063808987e530
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6bf0a1e1964c93043bad4a81ab812786627ea737
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831817"
 ---
-# <a name="list-securescores"></a>Список secureScores
+# <a name="list-securescores"></a>Перечисление объектов secureScores
 
  > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -22,7 +23,7 @@ ms.locfileid: "27076405"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All.   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложения | SecurityEvents.Read.All SecurityEvents.ReadWrite.All. |
+|Для приложений | SecurityEvents.Read.All SecurityEvents.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +39,7 @@ GET /security/secureScores
 |:----------|:----------|
 | Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

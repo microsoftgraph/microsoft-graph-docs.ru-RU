@@ -2,12 +2,13 @@
 title: Обновление defaultDeviceCompliancePolicy
 description: Обновление свойства объекта defaultDeviceCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 6f4dcb134bcb03e3026c1361a34e38f7975ff495
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6bad561bc82777c594191a34eb6dec8b3a3e3ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361014"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817404"
 ---
 # <a name="update-defaultdevicecompliancepolicy"></a>Обновление defaultDeviceCompliancePolicy
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md).

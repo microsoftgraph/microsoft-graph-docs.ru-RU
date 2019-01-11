@@ -1,12 +1,13 @@
 ---
 title: Перечисление задач
 description: Получение списка объектов **plannertask**, связанных с объектом plannerPlan.
-ms.openlocfilehash: 5cf6667062d9ad7579a4c79feef5a88926d87a07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f0823aea0731f03ab0a0b3387f2e4f4eca86a534
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028359"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815297"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -31,7 +32,7 @@ GET /planner/plans/{id}/tasks
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -51,8 +52,7 @@ GET /planner/plans/{id}/tasks
 GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/tasks
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

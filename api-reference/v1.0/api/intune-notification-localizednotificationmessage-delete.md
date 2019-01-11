@@ -2,12 +2,13 @@
 title: Удаление localizedNotificationMessage
 description: Удаляет объект localizedNotificationMessage.
 author: tfitzmac
-ms.openlocfilehash: c77aa563734ca9c57a64b2316de87928f571eee7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 02e20332549df460059ac4f992207d4c426af809
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346104"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825965"
 ---
 # <a name="delete-localizednotificationmessage"></a>Удаление localizedNotificationMessage
 
@@ -35,11 +36,11 @@ DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTempla
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

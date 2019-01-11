@@ -2,12 +2,13 @@
 title: Получение importedAppleDeviceIdentityResult
 description: Чтение свойства и связи объекта importedAppleDeviceIdentityResult.
 author: tfitzmac
-ms.openlocfilehash: 99054c68f82f6da3d0d45f14ab51b116dd62394b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 865ffb9e720449ab0ceedefd2b8d4cd425e203bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322276"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817320"
 ---
 # <a name="get-importedappledeviceidentityresult"></a>Получение importedAppleDeviceIdentityResult
 
@@ -39,11 +40,11 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedApp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

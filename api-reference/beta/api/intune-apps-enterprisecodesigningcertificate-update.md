@@ -2,12 +2,13 @@
 title: Обновление enterpriseCodeSigningCertificate
 description: Обновление свойства объекта enterpriseCodeSigningCertificate.
 author: tfitzmac
-ms.openlocfilehash: 4cf0eb5607af176e1c0cb0a6418f01339b2bb96f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5272c0ff0e18fd7200e85ff51575c10825dbf7f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332804"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829318"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>Обновление enterpriseCodeSigningCertificate
 
@@ -37,11 +38,11 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md).
@@ -53,8 +54,8 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовить к работе или не подготовлен. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|Строка|Значения субъектов для сертификата.|
-|Имя поставщика|String.|Имя поставщика для сертификата.|
-|издателя|String.|Значение издателя сертификата.|
+|Имя поставщика|Строка|Имя поставщика для сертификата.|
+|издателя|Строка|Значение издателя сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Дата время подписывания кода сертификата при его загрузке.|
 

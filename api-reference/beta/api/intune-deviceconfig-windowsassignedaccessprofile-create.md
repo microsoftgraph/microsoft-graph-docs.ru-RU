@@ -2,12 +2,13 @@
 title: Создание windowsAssignedAccessProfile
 description: Создание нового объекта windowsAssignedAccessProfile.
 author: tfitzmac
-ms.openlocfilehash: 626b0815234153f585d74edcdad65f7ad2dfd3a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4db64578ec2d03f81d10110951a4caf93dc564c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304545"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827358"
 ---
 # <a name="create-windowsassignedaccessprofile"></a>Создание windowsAssignedAccessProfile
 
@@ -37,11 +38,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта windowsAssignedAccessProfile.
 
 В следующей таблице показаны свойства, которые необходимы для создания windowsAssignedAccessProfile.
@@ -49,8 +50,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Имя_профиля|String.|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
-|showTaskBar|Boolean.|Этот параметр позволяет администратору задать, отображается ли панель задач.|
+|Имя_профиля|Строка|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
+|showTaskBar|Логический|Этот параметр позволяет администратору задать, отображается ли панель задач.|
 |appUserModelIds|Коллекция String|Это единственный приложений для магазина Windows, чтобы оно было доступно для запуска в меню Пуск.|
 |desktopAppPaths|Коллекция String|Ниже приведены пути в настольных приложений, которые будут доступны в меню Пуск и только приложения пользователь будет иметь возможность запуска.|
 |userAccounts|Коллекция String|Учетные записи пользователей, которые будут заблокированы для этой базовой конфигурации.|

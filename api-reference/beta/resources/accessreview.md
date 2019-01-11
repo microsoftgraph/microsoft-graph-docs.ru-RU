@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса accessReview
 description: 'В Azure AD access дается обзор компонента, `accessReview` представляет проверки доступа.  '
-ms.openlocfilehash: 1ad1edc9d3909ea2648f2644e1ba5438ce981c2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 283fed0f9e96ca9d0f9cdf06fdfee824326c038d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826077"
 ---
 # <a name="accessreview-resource-type"></a>Тип ресурса accessReview
 
@@ -21,17 +22,17 @@ ms.locfileid: "27075871"
 |:---------------|:--------|:----------|
 |[Получение accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Получите обзор доступа с определенным идентификатором. |
 |[Создание accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Создание нового accessReview. |
-|[Удаление accessReview](../api/accessreview-delete.md) | Отсутствуют.   | Удалите accessReview. |
+|[Удаление accessReview](../api/accessreview-delete.md) | Нет.   | Удалите accessReview. |
 |[Обновление accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Обновление accessReview. |
 |[Список accessReview рецензентов](../api/accessreview-listreviewers.md) |      Коллекция [удостоверению пользователя](useridentity.md)| Получите рецензентов accessReview. |
-|[Добавление accessReview редактор](../api/accessreview-addreviewer.md) |      Отсутствуют.   |   Добавьте проверяющий accessReview. |
-|[Удаление accessReview редактор](../api/accessreview-removereviewer.md) | Отсутствуют.  |   Удаление рецензента из accessReview. |
+|[Добавление accessReview редактор](../api/accessreview-addreviewer.md) |      Нет.   |   Добавьте проверяющий accessReview. |
+|[Удаление accessReview редактор](../api/accessreview-removereviewer.md) | Нет.  |   Удаление рецензента из accessReview. |
 |[Список accessReview решения](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md) коллекции| Получите решения accessReview.|
 |[Мои accessReview решения](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md) коллекции| В качестве читателя получите Мои решения accessReview.|
-|[Отправлять напоминание accessReview](../api/accessreview-sendreminder.md) |        Отсутствуют.   |   Отправьте напоминание, чтобы проверяющие accessReview. |
-|[Остановка accessReview](../api/accessreview-stop.md) |     Отсутствуют.   |   Остановите accessReview. |
-|[Сброс accessReview решения](../api/accessreview-reset.md) |     Отсутствуют.   |   Сброс решения, принимаемые при accessReview в хода выполнения.|
-|[Применение accessReview решения](../api/accessreview-apply.md) |     Отсутствуют.   |   Применение решения из завершенных accessReview.|
+|[Отправлять напоминание accessReview](../api/accessreview-sendreminder.md) |        Нет.   |   Отправьте напоминание, чтобы проверяющие accessReview. |
+|[Остановка accessReview](../api/accessreview-stop.md) |     Нет.   |   Остановите accessReview. |
+|[Сброс accessReview решения](../api/accessreview-reset.md) |     Нет.   |   Сброс решения, принимаемые при accessReview в хода выполнения.|
+|[Применение accessReview решения](../api/accessreview-apply.md) |     Нет.   |   Применение решения из завершенных accessReview.|
 
 ## <a name="permissions"></a>Permissions
 
@@ -43,7 +44,7 @@ ms.locfileid: "27075871"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | Функция назначенный уникальный идентификатор проверки доступа. |
 | `displayName`             |`String`                                                        | Имя проверки доступа. Требуется при создании. |
@@ -64,7 +65,7 @@ ms.locfileid: "27075871"
 
 
 
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `reviewers`               |Коллекция [удостоверению пользователя](useridentity.md)                     | Коллекция рецензентов на проверку доступа, если reviewerType проверки доступа имеет тип `delegate`. |
 | `decisions`               |[accessReviewDecision](accessreviewdecision.md) коллекции | Коллекция решений для этой проверки доступа. |
@@ -113,7 +114,7 @@ ms.locfileid: "27075871"
 
 `accessReviewSettings` Предоставляет дополнительные параметры при создании проверки доступа для управления поведением компонента при запуске проверки доступа.  Этот тип имеет следующие свойства: 
 
-| Свойство                     | Тип                      | Description |
+| Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
 | `mailNotificationsEnabled`|`Boolean`                | Флаг, указывающий, включена ли отправке почты рецензентов и просмотр создателя.                |
 | `remindersEnabled`|`Boolean`       | Флаг, указывающий, включены ли отправка по электронной почте напоминания для рецензентов.       |
@@ -131,7 +132,7 @@ ms.locfileid: "27075871"
 
 `autoReviewSettings` Встроенного в параметры проверки доступа, а также определяет поведение функции при завершении проверки доступа.  Тип имеет одно свойство `notReviewedResult`.
 
-| Свойство                     | Тип     | Description                          |
+| Свойство                     | Тип     | Описание                          |
 | :--------------------------- | :------  | :----------                          |
 | `notReviewedResult`          |`String`  | Должно иметь один из типов `Approve`, `Deny` или `Recommendation`. |
 
@@ -140,7 +141,7 @@ ms.locfileid: "27075871"
 
 `accessReviewRecurrenceSettings` Встроенного в параметры проверки доступа и указывает, что проверка доступа повторяется через регулярные интервалы времени.  Этот тип имеет следующие свойства:
 
-| Свойство                     | Тип                                                                                                          | Description |
+| Свойство                     | Тип                                                                                                          | Описание |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | Интервал повторения, который должен быть один из `onetime`, `weekly`, `monthly`, `quarterly` или `annual`.                                                                   |
 | `recurrenceEndType`|`String` | Как повторение будет завершено. Он может иметь одно из `Never`, что нет без явного конец повторений, `Endby`, повторения заканчивается в определенной даты, и `occurrences`, заканчивается, что ряд после завершения определенное количество экземпляров просмотра. |

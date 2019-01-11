@@ -2,12 +2,13 @@
 title: Обновление mobileAppIntentAndState
 description: Обновление свойства объекта mobileAppIntentAndState.
 author: tfitzmac
-ms.openlocfilehash: d219e6d9d146f71c4979973e7f6510010fe2fa92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd43c13d8e166563e60cb36cdcad980e25124aa5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303187"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827099"
 ---
 # <a name="update-mobileappintentandstate"></a>Обновление mobileAppIntentAndState
 
@@ -37,11 +38,11 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md).

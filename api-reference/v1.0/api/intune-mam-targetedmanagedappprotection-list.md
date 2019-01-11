@@ -2,12 +2,13 @@
 title: Перечисление объектов targetedManagedAppProtection
 description: Перечисление свойств и связей объектов targetedManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: 8ba4564e9a1995356d7210c039394df30d040446
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48fef12c16e01c3f05167abb21e7829c83c57b3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825468"
 ---
 # <a name="list-targetedmanagedappprotections"></a>Перечисление объектов targetedManagedAppProtection
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

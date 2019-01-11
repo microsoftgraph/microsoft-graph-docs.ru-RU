@@ -2,12 +2,13 @@
 title: Получение windows10EasEmailProfileConfiguration
 description: Чтение свойства и связи объекта windows10EasEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9990b00d68c0fd61fce0461a09574939dd52fe13
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 531872591b3e28805daae0abfd67c82be90c28a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827512"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>Получение windows10EasEmailProfileConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

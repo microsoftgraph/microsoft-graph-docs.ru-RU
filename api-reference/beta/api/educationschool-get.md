@@ -2,12 +2,13 @@
 title: Получение educationSchool
 description: Получение свойств и связей объекта school.
 author: mmast-msft
-ms.openlocfilehash: 143d55ce3500f855fd912362f578d385347497c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f077cf3e614d6809a60e9fce03d82d0dee82f95b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313491"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813302"
 ---
 # <a name="get-educationschool"></a>Получение educationSchool
 
@@ -39,7 +40,7 @@ GET /education/users/schools
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [educationSchool](../resources/educationschool.md) в теле отклика.

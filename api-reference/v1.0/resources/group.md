@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса group
 description: Представляет группу Azure Active Directory (Azure AD), который может быть группы с Office 365, динамические группы или группы безопасности.
-ms.openlocfilehash: e9e6d652bba485a28a36a5efa8d670d9f4a6053f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: f4d4de207cdc8e3f9fbd312ad08639b85cbc87a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026022"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828016"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -108,7 +109,7 @@ ms.locfileid: "27026022"
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) коллекции| Ошибки при использовании продуктов Майкрософт синхронизации во время подготовки. |
 |onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) для локальной группы, синхронизированной с облаком. Только для чтения. |
 |onPremisesSyncEnabled|Логическое|Значение **true** указывает, что эта группа синхронизируется из локального каталога. Значение **false** указывает, что эта группа ранее синхронизировалась из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. Поддерживает параметр $filter.|
-|preferredDataLocation|String|Расположение предпочитаемый данных для группы. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|preferredDataLocation|Строка|Расположение предпочитаемый данных для группы. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |proxyAddresses|Коллекция String| Для выражений фильтра в случае использования многозначных свойств требуется оператор **any**. Только для чтения. Значение NULL не допускается. Поддерживает параметр $filter. |
 |renewedDateTime|DateTimeOffset| Метка времени последнего обновления группы. Не может изменяться непосредственно. Обновляется только при выполнении [действия обновления](../api/group-renew.md). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |securityEnabled|Логическое|Указывает, является ли эта группа группой безопасности. Если для свойства **mailEnabled** также задано значение true, это группа безопасности с включенной поддержкой почты. В противном случае это обычная группа безопасности. Для групп Office 365 должно быть задано значение **false**. Поддерживает параметр $filter.|

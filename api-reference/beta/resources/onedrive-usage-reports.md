@@ -1,12 +1,13 @@
 ---
 title: Отчеты об использовании OneDrive
 description: Можно получить высокоуровневое представление значение, которое вы получаете из службы OneDrive в виде общее число файлов и хранения данных, используемых во всех учетных записей OneDrive в вашей организации. Вы также можете получить детализированные сведения для понимания того, каковы тенденции активных учетных записей OneDrive, с каким количеством файлов пользователи работали, какой объем хранилища используется. Он также дает на OneDrive сведения учетной записи.
-ms.openlocfilehash: e21fbb1feba0c61c1ecd7554e77b1124ca11d951
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a3d75a7863a539c67ef4971193b108f0ba73a1fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077504"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829738"
 ---
 # <a name="onedrive-usage-reports"></a>Отчеты об использовании OneDrive
 

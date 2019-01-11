@@ -2,12 +2,13 @@
 title: Тип ресурса managedDeviceMobileAppConfiguration
 description: Абстрактный класс для настройки мобильного приложения для зарегистрированных устройств.
 author: tfitzmac
-ms.openlocfilehash: a533d5d7c15a32d811a7fd23f9ab39b89db9b7da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66c0a3da5c52b58c98e42a58133d7aeb8c186656
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831481"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Тип ресурса managedDeviceMobileAppConfiguration
 

@@ -1,18 +1,19 @@
 ---
 title: Тип ресурса office365ServicesUserCounts
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 975a70b040ac5886ea36219a5407f580a42aeadc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 18282aaa8dcd176a6eaa3a8176154670bfd6da9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808017"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>Тип ресурса office365ServicesUserCounts
 
 ## <a name="properties"></a>Свойства
 
-| Свойство                 | Тип   | Description                              |
+| Свойство                 | Тип   | Описание                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | Date   | Последняя дата контента.          |
 | exchangeActive           | Int64  | Число активных пользователей на сервере Exchange. Любой пользователь, который можно читать и отправлять электронную почту считается активного пользователя. |
@@ -27,7 +28,7 @@ ms.locfileid: "27075741"
 | yammerInactive           | Int64  | Количество неактивных пользователей в Yammer.  |
 | teamsActive              | Int64  | Число активных пользователей в группы. Любой пользователь, который сообщений, помещенных в каналы группы, отправленных сообщений в сеансах частной беседы или являлся участником собрания или вызовы считается активного пользователя. |
 | teamsInactive            | Int64  | Число активных пользователей в группы.     |
-| reportPeriod             | String | Количество дней, на которое отчета.    |
+| reportPeriod             | Строка | Количество дней, на которое отчета.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

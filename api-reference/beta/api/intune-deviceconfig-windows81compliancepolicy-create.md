@@ -2,12 +2,13 @@
 title: Создание объекта windows81CompliancePolicy
 description: Создание объекта windows81CompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: a4fb905dc14e8505b60d910de191282e126ea660
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bee3e80b08b19009f61fa82ba334dcf962c993c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822605"
 ---
 # <a name="create-windows81compliancepolicy"></a>Создание объекта windows81CompliancePolicy
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

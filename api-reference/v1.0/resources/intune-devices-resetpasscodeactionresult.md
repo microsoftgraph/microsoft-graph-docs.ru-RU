@@ -2,12 +2,13 @@
 title: Тип ресурса resetPasscodeActionResult
 description: Результат сброса секретного кода
 author: tfitzmac
-ms.openlocfilehash: 135aa6be61f54435aa7f990a51445cd5e61a9032
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 81a30b36ac418d5553c7387fea22a172926a73ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824859"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>Тип ресурса resetPasscodeActionResult
 

@@ -1,12 +1,13 @@
 ---
 title: timeZoneStandard значения
 description: " Значение"
-ms.openlocfilehash: 7212a3ca1394ce73357aa9c22550a79f638ea973
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f9a08a7f20ff9b4f5463c6d7e4877568c49eee1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825734"
 ---
 ### <a name="timezonestandard-values"></a>timeZoneStandard значения
 
@@ -18,14 +19,14 @@ ms.locfileid: "27025326"
 
 ### <a name="freebusystatus-values"></a>freeBusyStatus значения
 
-| Элемент            |Значение
+| Член            |Значение
 |:------------------|:-------
 | Бесплатная загрузка              | 0
 | под вопросом         | 1
 | «занят»              | 2
 | об отсутствии на работе               | 3
 | workingElsewhere  | 4
-| unknown           | -1
+| unknown           | –1
 
 
 ### <a name="attendeetype-values"></a>attendeeType значения
@@ -57,9 +58,9 @@ ms.locfileid: "27025326"
 
 ### <a name="calendarcolor-values"></a>calendarColor значения
 
-| Элемент     | Значение
+| Член     | Значение
 |:-----------|:----------
-| Авто       | -1
+| Авто       | –1
 | цвет lightBlue  | 0
 | lightGreen | 1
 | lightOrange| 2
@@ -236,12 +237,12 @@ ms.locfileid: "27025326"
 
 ### <a name="onenoteuserrole-values"></a>onenoteUserRole значения
 
-| Элемент      | Значение
+| Член      | Значение
 |:------------|:------------
 | Owner       | 0
 | Участник | 1
 | Средство чтения      | 2
-| Нет        | -1
+| Нет        | –1
 
 
 ### <a name="operationstatus-values"></a>operationStatus значения
@@ -251,14 +252,14 @@ ms.locfileid: "27025326"
 | NotStarted
 | Под управлением
 | Completed
-| Не удалось
+| Failed
 
 
 ### <a name="onenotepatchactiontype-values"></a>onenotePatchActionType значения
 
 | Значение
 |:-------------------------
-| Replace
+| Заменить
 | Добавление
 | Delete
 | Insert
@@ -269,7 +270,7 @@ ms.locfileid: "27025326"
 | Значение
 |:-------------------------
 | After
-| Before
+| Прежде чем
 
 
 ### <a name="phonetype-values"></a>phoneType значения
@@ -278,7 +279,7 @@ ms.locfileid: "27025326"
 |:-------------------------
 | Домашняя страница
 | Business
-| mobile
+| мобильных устройств
 | другие
 | Помощник по
 | Домашний факс
@@ -398,9 +399,9 @@ ms.locfileid: "27025326"
 
 ### <a name="categorycolor-values"></a>categoryColor значения
 
-| Элемент   |Значение    
+| Член   |Значение    
 |:---------|:--------
-| Нет     | -1      
+| Нет     | –1      
 | preset0  | 0       
 | preset1  | 1       
 | preset2  | 2       
@@ -598,7 +599,7 @@ ms.locfileid: "27025326"
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|-1|Неизвестно.|
+|unknown|–1|Неизвестно.|
 |интерактивные|0|Интерактивный вход в систему.|
 |remoteInteractive|1| Вход в систему удаленного интерактивного.|
 |сеть|2| Вход в систему — сети.|
@@ -613,7 +614,7 @@ ms.locfileid: "27025326"
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|-1|Неизвестно.|
+|unknown|–1|Неизвестно.|
 |стандартный|0|Участник группы обычными пользователями.|
 |Power|1| Быть членом группы опытных пользователей.|
 |Администратор|2| Быть членом группы "Администраторы".|

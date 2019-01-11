@@ -1,12 +1,13 @@
 ---
 title: Получение connectorGroup
 description: Извлечение свойств объекта connectorGroup.
-ms.openlocfilehash: 8677432bf14559d47811218dc20cd0af6837dd3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: df809efdd9e89d34abf79893bb5a747e500a7a81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077928"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824306"
 ---
 # <a name="get-connectorgroup"></a>Получение connectorGroup
 
@@ -33,9 +34,9 @@ GET /connectorGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -52,8 +53,7 @@ GET /connectorGroups/{id}
 GET https://graph.microsoft.com/{ver}/connectorGroups/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

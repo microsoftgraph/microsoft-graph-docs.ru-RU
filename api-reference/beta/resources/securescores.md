@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса secureScores
 description: 'в начало = n, где n — число дней данных, которую необходимо получить. '
-ms.openlocfilehash: 96d5c487bb854559b0128d93ea8e0783fcc61f0c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 332a9656d8237bb07d5c7739b666e09539cf984f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828737"
 ---
 # <a name="securescores-resource-type"></a>Тип ресурса secureScores
 
@@ -19,17 +20,17 @@ ms.locfileid: "27075650"
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Список secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Чтение свойства и метаданные объекта secureScores.|
+|[Перечисление объектов secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Чтение свойства и метаданные объекта secureScores.|
 
 
 ## <a name="properties"></a>Свойства
 Свойства содержащий тип сущности безопасности клиента широкополосном (ежедневного моментальный снимок данных).
 
-|Свойство |Тип |Description |
+|Свойство |Тип |Описание |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   Идентификатор GUID строки для клиента.  |
+|   azureTenantId   |   Строка  |   Идентификатор GUID строки для клиента.  |
 |   createdDateTime |   DateTimeOffset  |   Дата создания объекта.  |
-|   id  |   String  |   Сочетание azureTenantId_createdDateTime.   |
+|   id  |   Строка  |   Сочетание azureTenantId_createdDateTime.   |
 |   licensedUserCount   |   Int32   |   Число пользователей данного клиента с корпоративным лицензированием.    |
 |   activeUserCount |   Int32   |   Число активных пользователей указанного клиента.  |
 |   currentScore    |   Double  |   Оценка текущего обновления клиента на указанной даты.    |

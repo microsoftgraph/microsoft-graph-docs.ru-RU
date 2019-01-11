@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса windows10EndpointProtectionConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом Windows10EndpointProtectionConfiguration.
-ms.openlocfilehash: 6d982a2296bdc4b70abc6c75db913fb79702c53c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8c9709bcb1afc743794419a8d06d4eca4932bd1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079061"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828604"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>Тип ресурса windows10EndpointProtectionConfiguration
 
@@ -30,13 +31,13 @@ ms.locfileid: "27079061"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право используется диспетчером учетных данных во время резервного копирования и восстановления. Сохраненные учетные данные пользователей могут быть раскрыты, если эта привилегия предоставляется другим лицам. Поддерживаются только состояния NotConfigured и разрешено|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи и группы могут подключаться к компьютеру по сети. Поддерживается состояний разрешено.|
@@ -75,9 +76,9 @@ ms.locfileid: "27079061"
 |localSecurityOptionsBlockMicrosoftAccounts|Логический|Запретить пользователям добавление новых учетных записей Майкрософт для этого компьютера.|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Логический|Включение локальных учетных записей, которые не являются войти в систему из мест, отличных от физическое устройство защищены паролем. По умолчанию — включена|
 |localSecurityOptionsEnableAdministratorAccount|Логический|Определяет, включена ли учетная запись локального администратора.|
-|localSecurityOptionsAdministratorAccountName|String|Определите имя другой учетной записи необходимо сопоставить с идентификатором безопасности (SID) для учетной записи «Администратор».|
+|localSecurityOptionsAdministratorAccountName|Строка|Определите имя другой учетной записи необходимо сопоставить с идентификатором безопасности (SID) для учетной записи «Администратор».|
 |localSecurityOptionsEnableGuestAccount|Логический|Определяет, включен ли гостевая учетная запись.|
-|localSecurityOptionsGuestAccountName|String|Определите имя другой учетной записи необходимо сопоставить с идентификатором безопасности (SID) для учетной записи «Гость».|
+|localSecurityOptionsGuestAccountName|Строка|Определите имя другой учетной записи необходимо сопоставить с идентификатором безопасности (SID) для учетной записи «Гость».|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Логический|Запретить портативных компьютеров извлечения без необходимости входа.|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Логический|Следует ограничьте Установка драйверов принтера как часть подключение к принтеру только администраторам.|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Логический|Включение этот параметр позволяет только интерактивно пользователя для доступа к компакт-диска носителя.|
@@ -87,11 +88,11 @@ ms.locfileid: "27079061"
 |localSecurityOptionsDoNotRequireCtrlAltDel|Логический|Требуется сочетание клавиш CTRL + ALT + DEL нажатие, прежде чем пользователь сможет войти.|
 |localSecurityOptionsHideLastSignedInUser|Логический|Не отображать username последнего человека, который в системе на это устройство.|
 |localSecurityOptionsHideUsernameAtSignIn|Логический|Не отображать имя пользователя человека, вход в это устройство после ввода учетных данных и перед отображением рабочий стол устройства.|
-|localSecurityOptionsLogOnMessageTitle|String|Задайте заголовок сообщения для пользователей при входе в.|
-|localSecurityOptionsLogOnMessageText|String|Задайте текст сообщения для пользователей при входе в.|
+|localSecurityOptionsLogOnMessageTitle|Строка|Задайте заголовок сообщения для пользователей при входе в.|
+|localSecurityOptionsLogOnMessageText|Строка|Задайте текст сообщения для пользователей при входе в.|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Логический|Блок PKU2U запросы проверки подлинности для этого устройства для использования online удостоверения.|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Логический|Пользовательский Интерфейс вспомогательных логическое для сущности LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Измените строку языке по умолчанию, которую нужно разрешить или запретить пользователей и групп для удаленных вызовов для SAM.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|Строка|Измените строку языке по умолчанию, которую нужно разрешить или запретить пользователей и групп для удаленных вызовов для SAM.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет клиенту требовать согласования 128-битового шифрования и/или безопасность сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет серверу требовать согласования 128-битового шифрования и/или безопасность сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Этот параметр безопасности определяет, какой протокол проверки подлинности на запрос и ответ используется для регистрации в сети. Возможные значения: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
@@ -130,10 +131,10 @@ ms.locfileid: "27079061"
 |defenderSecurityCenterDisableRansomwareUI|Логический|Используется для отключения отображения области ransomware защиты. |
 |defenderSecurityCenterDisableSecureBootUI|Логический|Используется для отключения отображения области безопасной загрузки в разделе Безопасность устройств.|
 |defenderSecurityCenterDisableTroubleshootingUI|Логический|Используется для отключения отображения процесса обеспечения безопасности, устранение неполадок в разделе Безопасность устройств.|
-|defenderSecurityCenterOrganizationDisplayName|String|Имя компании, которая отображается для пользователей.|
-|defenderSecurityCenterHelpEmail|String|Адрес электронной почты, который отображается для пользователей.|
-|defenderSecurityCenterHelpPhone|String|Номер телефона или Скайп код, который отображается для пользователей.|
-|defenderSecurityCenterHelpURL|String|Портал справки URL-адрес, оно отображается для пользователей.|
+|defenderSecurityCenterOrganizationDisplayName|Строка|Имя компании, которая отображается для пользователей.|
+|defenderSecurityCenterHelpEmail|Строка|Адрес электронной почты, который отображается для пользователей.|
+|defenderSecurityCenterHelpPhone|Строка|Номер телефона или Скайп код, который отображается для пользователей.|
+|defenderSecurityCenterHelpURL|Строка|Портал справки URL-адрес, оно отображается для пользователей.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Уведомления для отображения из отображаемой области приложения. Возможные значения: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Настройка места отображения контактов ИТ сведения для конечных пользователей. Возможные значения: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Boolean|Блокирует FTP-подключения к устройству с отслеживанием состояния.|

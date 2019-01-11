@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса conversation
 description: Беседа — коллекция цепочек, содержащих записи. Все цепочки и записи в беседе имеют одинаковую тему.
-ms.openlocfilehash: 8a4a83fdc109eb047a22afbd3b15ad2d575f0795
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 69ae0a8ca7d5040ae1701a52cec007e3ad55449e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815003"
 ---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 

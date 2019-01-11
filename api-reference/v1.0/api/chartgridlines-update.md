@@ -2,12 +2,13 @@
 title: Обновление объекта chartgridlines
 description: Обновление свойств объекта chartgridlines.
 author: lumine2008
-ms.openlocfilehash: db55f639cbe95f80929467b0feefd260a64fc596
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6bba20f1bcf8a4cdccf56e7d390b5cf7c319fe97
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346461"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826063"
 ---
 # <a name="update-chartgridlines"></a>Обновление объекта chartgridlines
 
@@ -34,7 +35,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridline
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

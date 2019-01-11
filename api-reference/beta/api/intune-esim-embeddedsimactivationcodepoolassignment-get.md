@@ -2,12 +2,13 @@
 title: Получение embeddedSIMActivationCodePoolAssignment
 description: Чтение свойства и связи объекта embeddedSIMActivationCodePoolAssignment.
 author: tfitzmac
-ms.openlocfilehash: 7663b0f5c57359e3fa9f1f0bff1c746914fae49c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1bb76adcb48a3cf6d31ffd3921b1316bc9c5a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827914"
 ---
 # <a name="get-embeddedsimactivationcodepoolassignment"></a>Получение embeddedSIMActivationCodePoolAssignment
 
@@ -39,11 +40,11 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

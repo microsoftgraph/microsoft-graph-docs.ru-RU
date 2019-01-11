@@ -2,12 +2,13 @@
 title: Создание объекта macOSOfficeSuiteApp
 description: Создание объекта macOSOfficeSuiteApp.
 author: tfitzmac
-ms.openlocfilehash: 7d0f71c501e3645f0f8b4f89610094fa9b13dd2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f82ebbaa3b7a5936d45f36a56a929eb6472600a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824138"
 ---
 # <a name="create-macosofficesuiteapp"></a>Создание объекта macOSOfficeSuiteApp
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

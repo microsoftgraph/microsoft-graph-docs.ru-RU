@@ -2,12 +2,13 @@
 title: 'event: decline'
 description: Отклонить приглашение на события, указанного в календаре пользователя.
 author: angelgolfer-ms
-ms.openlocfilehash: 22051dc7f27a99a71748d20877cff6b562da6335
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c96e04bfc3547d1ff4323fbba3e4d2cde527095e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322346"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806204"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -53,7 +54,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

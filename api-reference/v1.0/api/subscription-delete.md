@@ -1,12 +1,13 @@
 ---
 title: Удаление подписки
 description: Удаление подписки.
-ms.openlocfilehash: 249393cef11e2768eec0a6435a8485b51cf6921c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a5bd1998df3a7e3a8896fa770c0dbdd72cd59940
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805595"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -22,8 +23,8 @@ ms.locfileid: "27028286"
 | Беседы               | Group.Read.All      |
 | События                      | Calendars.Read      |
 | Сообщения                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| Группы                      | Group.Read.All      |
+| Пользователи                       | User.Read.All       |
 | Диск (хранилище OneDrive пользователя)    | Files.ReadWrite.     |
 | На дисках (содержимое общих SharePoint и диски) | Files.ReadWrite.All |
 |Предупреждение системы безопасности| SecurityEvents.ReadWrite.All |
@@ -42,7 +43,7 @@ DELETE /subscriptions/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

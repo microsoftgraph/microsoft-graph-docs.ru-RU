@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mailboxSettings
 description: Параметры основного параметра вошедшего пользователя.
-ms.openlocfilehash: b8fb2c1f11f849a4633d6be4f4519b85b33923ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4df71930a26c711c59f164aca5090bda809b503
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827001"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 

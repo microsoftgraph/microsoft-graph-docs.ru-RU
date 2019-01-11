@@ -2,12 +2,13 @@
 title: Получение iosWiFiConfiguration
 description: Чтение свойства и связи объекта iosWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: fa024d1d6b0ba014c9ddc3fb0b3e260631c23abe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14574cd20474e64102ba2b276bff3ffbdee8db82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827975"
 ---
 # <a name="get-ioswificonfiguration"></a>Получение iosWiFiConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

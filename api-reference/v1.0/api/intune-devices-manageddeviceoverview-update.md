@@ -2,12 +2,13 @@
 title: Обновление объекта managedDeviceOverview
 description: Обновление свойств объекта managedDeviceOverview.
 author: tfitzmac
-ms.openlocfilehash: 504f4f8dd3693e2c7aba2fc754e9f5d1b468e304
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: be6b7260b6613ef4396e84670b0c83869804b43c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311377"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824936"
 ---
 # <a name="update-manageddeviceoverview"></a>Обновление объекта managedDeviceOverview
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

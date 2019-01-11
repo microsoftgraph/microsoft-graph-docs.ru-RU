@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса attributeMappingSource
 description: 'Определяет, как должно быть значение извлечены (или преобразовать) из исходного объекта. Например может быть простой значение из заданного атрибута для объекта источника, или она может быть более сложного выражения string объединения и извлечения/замену на основе нескольких атрибутов источника. '
-ms.openlocfilehash: aeb39c829d7be081fe9ee08aa5845e6ced1194dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7c1493f27f34230d4305fe95b2d2f03a5ad25e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078159"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825013"
 ---
 # <a name="attributemappingsource-resource-type"></a>Тип ресурса attributeMappingSource
 
@@ -16,12 +17,12 @@ ms.locfileid: "27078159"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство              | Тип                      | Description               |
+| Свойство              | Тип                      | Описание               |
 |:----------------------|:--------------------------|:--------------------------|
-|выражение             |String                     |Представление эквивалентное выражение объекта **attributeMappingSource** .|
-|name                   |String                     |Имя параметра источник сопоставления. В зависимости от значения свойства **типа** это может быть имя функции, имя исходного атрибута или постоянное значение для использования. |
+|выражение             |Строка                     |Представление эквивалентное выражение объекта **attributeMappingSource** .|
+|name                   |Строка                     |Имя параметра источник сопоставления. В зависимости от значения свойства **типа** это может быть имя функции, имя исходного атрибута или постоянное значение для использования. |
 |parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) коллекции | Если этот объект представляет функцию, список параметров функции. Параметры состоят из объектов **attributeMappingSource** сами, позволяя для сложных выражений. Если **Тип** не `Function`, это свойство будет иметь значение null или пустой массив. |
-|type                   | String                    |Тип сопоставления этого атрибута источника. Возможные значения: `Attribute`, `Constant`, `Function`. Значение по умолчанию: `Attribute`.| 
+|type                   | Строка                    |Тип сопоставления этого атрибута источника. Возможные значения: `Attribute`, `Constant`, `Function`. Значение по умолчанию: `Attribute`.| 
 
 ## <a name="json-representation"></a>Представление JSON
 

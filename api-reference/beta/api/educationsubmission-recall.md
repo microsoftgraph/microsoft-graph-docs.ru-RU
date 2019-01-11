@@ -2,12 +2,13 @@
 title: 'educationSubmission: отзыв'
 description: 'Указывает, что студента хочет вернуть отправку. Это действие можно выполнить только с студента. '
 author: dipakboyed
-ms.openlocfilehash: ad49302ac9010923d0da2e31686ae4f6967bb50b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a94d1c66764128d15c1017b664f9d4a6bd3f57fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828765"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission: отзыв
 
@@ -35,7 +36,7 @@ POST /education/classes/<id>/assignments/{id}/submissions/{id}/recall
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.

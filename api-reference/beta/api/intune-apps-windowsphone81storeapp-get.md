@@ -2,12 +2,13 @@
 title: Получение windowsPhone81StoreApp
 description: Чтение свойства и связи объекта windowsPhone81StoreApp.
 author: tfitzmac
-ms.openlocfilehash: 7ea7a0fc6f379523cf6e5485578c9092ea9a5c02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f1dd843bff8556e190e784b03534746d7af4b4af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808990"
 ---
 # <a name="get-windowsphone81storeapp"></a>Получение windowsPhone81StoreApp
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

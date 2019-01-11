@@ -2,12 +2,13 @@
 title: Тип ресурса serviceHostedMediaConfig
 description: Тип serviceHostedMediaConfig.
 author: VinodRavichandran
-ms.openlocfilehash: 544c1d3bce934064092e0f9c74b888686e49d426
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ec2ff24ef0bb45a9b49ecf2d0dc5e7419318b5af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828702"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>Тип ресурса serviceHostedMediaConfig
 
@@ -20,7 +21,7 @@ ms.locfileid: "27380319"
 | Свойство                    | Тип                                                        | Описание                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | [mediaInfo](mediainfo.md) коллекции                        | Список мультимедиа для предварительно выборки.                   |
-| removeFromDefaultAudioGroup | Boolean                                                     | Удалите собственный участника из группы по умолчанию звука. |
+| removeFromDefaultAudioGroup | Логический                                                     | Удалите собственный участника из группы по умолчанию звука. |
 
 ## <a name="json-representation"></a>Представление JSON
 

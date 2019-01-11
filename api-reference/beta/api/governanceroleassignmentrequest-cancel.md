@@ -1,12 +1,13 @@
 ---
 title: Отменить governanceRoleAssignmentRequest
 description: Отмена governanceRoleAssignmentRequest.
-ms.openlocfilehash: 3e83d47b94f69b124b841f99490a012f2e39a42c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f155a832a0c29935216dbc740e7db6ae8708f429
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809109"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отменить governanceRoleAssignmentRequest
 
@@ -21,7 +22,7 @@ ms.locfileid: "27077566"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters).
@@ -38,7 +39,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 | Authorization  | Bearer {code}|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

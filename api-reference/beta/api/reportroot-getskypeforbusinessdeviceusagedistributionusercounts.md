@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts'
 description: Узнайте, сколько сотрудников организации используют уникальные устройства. В отчете будет показано количество пользователей Windows, телефонов с Windows, телефонов с Android, iPhone и iPad.
-ms.openlocfilehash: bee105fc41d18543c611f05d2a3e389ff6a84526
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87385d36b6af3451b71a7886c9da7187b4a2c1ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076750"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831803"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusagedistributionusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 
