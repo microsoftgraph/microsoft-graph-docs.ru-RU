@@ -2,12 +2,13 @@
 title: Тип ресурса managedEBook
 description: Абстрактный класс, содержащий базовые свойства управляемой электронной книги.
 author: tfitzmac
-ms.openlocfilehash: 7b826d7b0a11ce957a87154f276abc0e8168f45d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3bf01c2115f4a0224ab09e59a9049324e82fa855
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347147"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834190"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 

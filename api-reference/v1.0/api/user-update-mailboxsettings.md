@@ -1,12 +1,13 @@
 ---
 title: Обновление параметров почтового ящика пользователя
 description: Обновление одного или нескольких параметров почтового ящика пользователя. Это относится к параметрам автоматических ответов (автоматического уведомления пользователей после получения электронных сообщений от них), языковых стандартов (языка и страны или региона), часового пояса и рабочего времени.
-ms.openlocfilehash: b5d52771e67bb79abb7c325c908e0c5f155fff15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cfc19337ed96a3cfefcfe5778807bc81e4c72fc7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840645"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 

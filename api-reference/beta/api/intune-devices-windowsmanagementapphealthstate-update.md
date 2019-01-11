@@ -2,12 +2,13 @@
 title: Обновление windowsManagementAppHealthState
 description: Обновление свойства объекта windowsManagementAppHealthState.
 author: tfitzmac
-ms.openlocfilehash: 72beed52f76531aacd3ba0c48e350954bd4ac525
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4af20e28e47fa65c0e57ae5030c84bd23e74e3e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838635"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Обновление windowsManagementAppHealthState
 
@@ -37,11 +38,11 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md).
@@ -50,10 +51,10 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояния работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String.|Управление приложения установленной версии Windows.|
+|installedVersion|Строка|Управление приложения установленной версии Windows.|
 |lastCheckInDateTime|DateTimeOffset|Приложение управления Windows последний раз.|
 |deviceName|String|Имя устройства, на какие Windows установлено приложение управления.|
-|deviceOSVersion|String.|10 версии Windows устройства, на какие Windows установлено приложение управления.|
+|deviceOSVersion|Строка|10 версии Windows устройства, на какие Windows установлено приложение управления.|
 
 
 

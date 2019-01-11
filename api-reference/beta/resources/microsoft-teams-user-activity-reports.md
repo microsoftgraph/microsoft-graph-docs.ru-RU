@@ -1,12 +1,13 @@
 ---
 title: Отчеты о действиях пользователей Microsoft Teams
 description: Использование отчетов об активности пользователей группами Майкрософт для получения полезные сведения о в действие пользователя группами Майкрософт в вашей организации.
-ms.openlocfilehash: 26af58ad88541fb4e9e0f64159505846bfe90bb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2fc2eee8243a338204687114d2f1de3d2e794a9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845524"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Отчеты о действиях пользователей Microsoft Teams
 

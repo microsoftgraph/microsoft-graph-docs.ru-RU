@@ -1,12 +1,13 @@
 ---
 title: Удаление bookingBusiness
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: d920414bb73f506c4e94cb973642c124544fc1bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 273c3f3578653e457122b2bf045eb54644ea6b08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076328"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849919"
 ---
 # <a name="delete-bookingbusiness"></a>Удаление bookingBusiness
 
@@ -33,7 +34,7 @@ DELETE /bookingBusinesses/<id>
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

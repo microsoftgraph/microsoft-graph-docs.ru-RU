@@ -2,12 +2,13 @@
 title: Тип ресурса domainDnsSrvRecord
 description: Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
 author: lleonard-msft
-ms.openlocfilehash: d8fbdb6a99e2a4c88b38d350ace3976842eb7f92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 655dc6fcbccdcb6e1794c94d97dd8e7fc4837f04
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835793"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>Тип ресурса domainDnsSrvRecord
 

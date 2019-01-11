@@ -1,12 +1,13 @@
 ---
 title: Список registeredOwners
 description: Получение списка пользователей, являющихся зарегистрированными владельцами устройства. Зарегистрированный владелец — пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца.
-ms.openlocfilehash: 7a56e036ac904f98fdc1cc2d4f781f97f43c85dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f2b39217485ef248cb7da203152f8e87c483096d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025216"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845684"
 ---
 # <a name="list-registeredowners"></a>Список registeredOwners
 
@@ -34,7 +35,7 @@ GET /devices/{id}/registeredOwners
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -51,8 +52,7 @@ GET /devices/{id}/registeredOwners
 GET https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

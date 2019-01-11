@@ -2,12 +2,13 @@
 title: Тип ресурса configurationManagerClientEnabledFeatures
 description: Включенные клиентом функции диспетчера конфигураций
 author: tfitzmac
-ms.openlocfilehash: fe975f2e8d537d1231a89eb9f2a44cdd8258fd1a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c69e0ae9528a31ec7512348931e9a6eb0b1dd7b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325146"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838943"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Тип ресурса configurationManagerClientEnabledFeatures
 

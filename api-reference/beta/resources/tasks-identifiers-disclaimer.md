@@ -1,12 +1,13 @@
 ---
 title: Идентификаторы в задачах
 description: 'Идентификаторы объектов в задачах, созданных службы строковых значений. . Значения 28 символов в длину и зависят от регистра символов. При передаче в качестве службы будет выполнять проверку простой формат идентификатора, если возникает ошибка проверки формата, вызывающих будет получен ответ неверный запрос (400) об ошибке, указывающее, эта проблема. Это сообщение указывает на ошибку в вызывающему приложению, таких как:'
-ms.openlocfilehash: d57ca282de87c2bce42b37d0be6d08dbe128c522
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb66f0a610d6fe7d383e078674ca349776ddb4e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836668"
 ---
 # <a name="identifiers-in-tasks"></a>Идентификаторы в задачах
 

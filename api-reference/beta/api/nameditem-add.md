@@ -1,12 +1,13 @@
 ---
 title: Add Named Item
-description: Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
-ms.openlocfilehash: 1592ec4706b4a73f24f6205aaedd29df15725355
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.
+localization_priority: Normal
+ms.openlocfilehash: 57ae84505327f2afbe2936b2671b655e76a85bd4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836703"
 ---
 # <a name="add-named-item"></a>Add Named Item
 
@@ -36,7 +37,7 @@ POST /workbook/worksheets({id|name})/names/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -73,8 +74,7 @@ Content-length: 54
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

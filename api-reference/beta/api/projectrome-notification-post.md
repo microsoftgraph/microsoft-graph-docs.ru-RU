@@ -1,12 +1,13 @@
 ---
 title: Создание и отправка уведомления
 description: 'Создание и отправка уведомления, предназначенные для пользователей через Microsoft Graph. Уведомление, сохраненных в Microsoft Graph уведомление, веб-канала хранилища и отправляется всем клиентам приложения на всех конечных точках устройства, которые пользователь входит в систему.  '
-ms.openlocfilehash: 7855d8b369a2efc6dada33c66c12ae76384a2760
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 67906aa56ace21d9d03cfe47c17acda38d8c680f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843901"
 ---
 # <a name="create-and-send-a-notification"></a>Создание и отправка уведомления
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
@@ -30,8 +31,8 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | string |Заголовок authorization используется для передачи учетных данных вызывающей стороны. Носителя {маркер}. Обязательный атрибут. |
-## <a name="request-body"></a>Текст запроса
+|Authorization | string |Заголовок authorization используется для передачи учетных данных вызывающей стороны. Носителя {маркер}. Обязательный. |
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [уведомлений](../resources/projectrome-notification.md) .
 
 ## <a name="response"></a>Ответ

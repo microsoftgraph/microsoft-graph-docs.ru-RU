@@ -1,12 +1,13 @@
 ---
 title: Удаление programControl
 description: Доступ к функции проверки в Azure AD, удалить объект programControl.  Это удаляет связь проверки доступа из программы.
-ms.openlocfilehash: a7f21cd4c18ecda2ce15a6dd76d87322f75e4af0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 782cc8f336e84f82d937e3180d7de6af69e67e52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077341"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843920"
 ---
 # <a name="delete-programcontrol"></a>Удаление programControl
 
@@ -30,9 +31,9 @@ DELETE /programControls('<id>')
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

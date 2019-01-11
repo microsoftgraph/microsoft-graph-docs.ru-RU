@@ -2,12 +2,13 @@
 title: Delete androidCustomConfiguration
 description: Удаляет объект androidCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 06af1113f18dca40b39e1826db5a26af0f317685
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27c37c5c983c8dddb45890d8914ed3c81d8fd551
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327862"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844466"
 ---
 # <a name="delete-androidcustomconfiguration"></a>Delete androidCustomConfiguration
 
@@ -35,11 +36,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

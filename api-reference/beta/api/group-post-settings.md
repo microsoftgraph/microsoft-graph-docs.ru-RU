@@ -2,12 +2,13 @@
 title: Создайте параметр каталога на группы
 description: Используйте этот интерфейс API для создания нового параметра каталог для группы.
 author: dkershaw10
-ms.openlocfilehash: 2e400babc809bdc8d9277cad1bd41b8b714e4e92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7db7072f683515ee1e5765d80184c6c284671eee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358998"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838586"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Создайте параметр каталога на группы
 
@@ -31,9 +32,9 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носителя <token>. Обязательное|
+| Authorization  | Носителя <token>. Обязательное|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [directorySetting](../resources/directorysetting.md) .
 
 ## <a name="response"></a>Ответ

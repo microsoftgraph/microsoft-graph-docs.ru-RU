@@ -1,12 +1,13 @@
 ---
 title: 'bookingAppointment: Отмена'
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 4cd7b511f997f32c134f70a976cd94c2ed910fb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffb800b5084177b05b62e1ba14b475b8a760d766
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074758"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844480"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: Отмена
 
@@ -34,12 +35,12 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|Сообщение для подтверждения с клиентом отменена встречи.|
+|cancellationMessage|Строка|Сообщение для подтверждения с клиентом отменена встречи.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.

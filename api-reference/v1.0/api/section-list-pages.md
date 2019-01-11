@@ -1,12 +1,13 @@
 ---
 title: Перечисление страниц
 description: Получение списка объектов page из указанного раздела.
-ms.openlocfilehash: 5fe7e5dad2368d5c3de4d2a2904059801bb0e82b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d7745ffea6eb07528a76d29a1ff0d456f1d4a47e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836010"
 ---
 # <a name="list-pages"></a>Перечисление страниц
 
@@ -41,7 +42,7 @@ GET /sites/{id}/onenote/sections/{id}/pages
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

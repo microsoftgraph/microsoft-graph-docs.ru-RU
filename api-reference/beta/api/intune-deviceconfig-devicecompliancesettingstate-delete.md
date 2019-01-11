@@ -2,12 +2,13 @@
 title: Удаление объекта deviceComplianceSettingState
 description: Удаляет объект deviceComplianceSettingState.
 author: tfitzmac
-ms.openlocfilehash: 410cc7593a9c7a1a8bc519d6b9375758e274d25b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ece2315ef2417da52c35ee53359e9d21b482ba6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345334"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836927"
 ---
 # <a name="delete-devicecompliancesettingstate"></a>Удаление объекта deviceComplianceSettingState
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

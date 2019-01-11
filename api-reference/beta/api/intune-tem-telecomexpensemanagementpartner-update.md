@@ -2,12 +2,13 @@
 title: Обновление объекта telecomExpenseManagementPartner
 description: Обновление свойств объекта telecomExpenseManagementPartner.
 author: tfitzmac
-ms.openlocfilehash: 5180ce7338bdffde0fb51f504882e2b82ca96cac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c97b2c5b864914c9f8434ce4616f3bd5803ca08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318727"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840652"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>Обновление объекта telecomExpenseManagementPartner
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

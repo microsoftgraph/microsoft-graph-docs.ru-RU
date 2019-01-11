@@ -1,12 +1,13 @@
 ---
 title: Список переопределений
 description: Получите переопределения фокус папки "Входящие", пользователь настроил для всегда классификации сообщения от определенных отправителей различными способами.
-ms.openlocfilehash: 343faaacf47d16b723cd8aebc25a6df79ef7e3db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6d2d731858ad3a87cad10b4feb23378cb4dab992
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082084"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837557"
 ---
 # <a name="list-overrides"></a>Список переопределений
 
@@ -36,7 +37,7 @@ GET /users/{id}/inferenceClassification/overrides
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -53,8 +54,7 @@ GET /users/{id}/inferenceClassification/overrides
 GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,12 +1,13 @@
 ---
 title: Список встреч
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 5e0846a1671a7a566e5175a331dc7c03e02af537
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 920a0d53635e5d017ecd51ee75d3b244aafcb802
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076346"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839013"
 ---
 # <a name="list-appointments"></a>Список встреч
 
@@ -37,7 +38,7 @@ GET /bookingBusinesses/{id}/appointments
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [bookingAppointment](../resources/bookingappointment.md) в теле ответа.

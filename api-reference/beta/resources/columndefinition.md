@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
-ms.openlocfilehash: 9b99abe78b009786d489ec7f0c0fdce1e2945b1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5db835b9720f9fa711d683dd505e8325b27d79d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074945"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844494"
 ---
 # <a name="columndefinition-resource-type"></a>Тип ресурса columnDefinition
 
@@ -68,7 +69,7 @@ ms.locfileid: "27074945"
 | **id**                  | строка  | Уникальный идентификатор столбца.
 | **indexed**             | логический | Указывает, можно ли использовать значения столбцов для сортировки и поиска.
 | **name**                | строка  | Используемое в API имя столбца из свойства [fields][] объекта [listItem][]. Имя, которое видит пользователь, указывается в свойстве **displayName**.
-| **readOnly**            | bool    | Указывает, можно ли менять значения в столбце.
+| **readOnly**            | логический    | Указывает, можно ли менять значения в столбце.
 | **required**            | логический | Указывает, является ли значение в столбце обязательным.
 | **boolean**       | [booleanColumn][]       | В этом столбце хранятся логические значения.
 | **calculated**    | [calculatedColumn][]    | Данные в этом столбце вычисляются относительно других столбцов.

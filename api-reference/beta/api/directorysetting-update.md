@@ -2,12 +2,13 @@
 title: Обновите параметр каталога
 description: Обновление свойства объекта параметр конкретного каталога.
 author: lleonard-msft
-ms.openlocfilehash: c4ff2401397b7a89d30f1513c504acaca5c71140
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f1c4c4c408f287fe6bfcf84eed3599aa85e3afbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308829"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843353"
 ---
 # <a name="update-a-directory-setting"></a>Обновите параметр каталога
 

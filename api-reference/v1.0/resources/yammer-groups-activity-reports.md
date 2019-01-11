@@ -1,12 +1,13 @@
 ---
 title: Отчеты об активности в группах Yammer
 description: Эти отчеты позволяют получить представление об активности в группах Yammer в организации и узнать, сколько групп Yammer создается и используется.
-ms.openlocfilehash: c7107402eb338553bf9603413e48969a02d2d1b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9f4c9fa3462517f630e6cacfd7d713d78fe22d3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026647"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845355"
 ---
 # <a name="yammer-groups-activity-reports"></a>Отчеты об активности в группах Yammer
 

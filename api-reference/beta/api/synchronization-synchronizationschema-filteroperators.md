@@ -1,12 +1,13 @@
 ---
 title: 'synchronizationSchema: filterOperators'
 description: Список всех операторы, поддерживаемые в области видимости фильтров.
-ms.openlocfilehash: 968abf6584868b2b0b5e664c59f14eebc780f151
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6c7f15c684bb0017c8e8430e390015029204ef1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077997"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835758"
 ---
 # <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
 
@@ -37,7 +38,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

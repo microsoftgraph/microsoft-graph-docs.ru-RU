@@ -1,12 +1,13 @@
 ---
 title: Получение объекта plannerPlan
 description: Получение свойств и связей объекта **plannerplan**.
-ms.openlocfilehash: ffc160d9fbab2cb55c6301168220e5e6e0fc099d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3ea9a643ab9a792106777967611223584aab2d35
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839377"
 ---
 # <a name="get-plannerplan"></a>Получение объекта plannerPlan
 
@@ -30,7 +31,7 @@ GET /planner/plans/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -50,8 +51,7 @@ GET /planner/plans/{id}
 GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

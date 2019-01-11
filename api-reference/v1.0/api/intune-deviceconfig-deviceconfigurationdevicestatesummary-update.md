@@ -2,12 +2,13 @@
 title: Обновление объекта deviceConfigurationDeviceStateSummary
 description: Обновление свойств объекта deviceConfigurationDeviceStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 9dd5e96762a750b015d6eb8dea7d1778ac36f66b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c11471cbf86806e914e939f2385f92440046c05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354259"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849835"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>Обновление объекта deviceConfigurationDeviceStateSummary
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

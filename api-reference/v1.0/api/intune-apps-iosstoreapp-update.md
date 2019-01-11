@@ -2,12 +2,13 @@
 title: Update iosStoreApp
 description: Обновление свойств объекта iosStoreApp.
 author: tfitzmac
-ms.openlocfilehash: 8d1195120e1eab46f1e7a1b3ad95e6734d74e57f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d41f3d19971337b9745f3720232a3300c9a0cf13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843346"
 ---
 # <a name="update-iosstoreapp"></a>Update iosStoreApp
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

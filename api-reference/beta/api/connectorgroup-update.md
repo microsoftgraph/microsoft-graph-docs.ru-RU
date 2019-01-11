@@ -1,12 +1,13 @@
 ---
 title: Обновление connectorGroups
 description: Обновление свойства объекта connectorgroup.
-ms.openlocfilehash: a9777394a3ecfc65a7c03c07643359ef3c763aca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9a4db622328edd4d3aea348fd078acdc832a9c52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843802"
 ---
 # <a name="update-connectorgroups"></a>Обновление connectorGroups
 
@@ -30,15 +31,15 @@ PATCH /connectorGroups/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Носителя. Обязательный|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Возможные значения: `applicationProxy`.|
-|name|String|Имя connectorGroup.|
+|name|Строка|Имя connectorGroup.|
 
 ## <a name="response"></a>Ответ
 
@@ -61,8 +62,7 @@ Content-length: 99
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

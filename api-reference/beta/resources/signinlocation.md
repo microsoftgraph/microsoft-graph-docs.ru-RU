@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса signInLocation
 description: Предоставляет Город, состояние и страны или региона, из которой входа в произошло.
-ms.openlocfilehash: a3d4f6ca5ec18e70960f45a3da1bb06d51ee1e65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078908"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839139"
 ---
 # <a name="signinlocation-resource-type"></a>Тип ресурса signInLocation
 Предоставляет Город, состояние и страны или региона, из которой входа в произошло.
@@ -17,9 +18,9 @@ ms.locfileid: "27078908"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |city|String|Предоставляет Город, входа в источник. При расчете используется в операции регистрации Широта и долгота сведения.|
-|countryOrRegion|String|Предоставляет info код страны (2 код письма) входа в источник.  При расчете используется в операции регистрации Широта и долгота сведения.|
+|countryOrRegion|Строка|Предоставляет info код страны (2 код письма) входа в источник.  При расчете используется в операции регистрации Широта и долгота сведения.|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Предоставляет широта, долгота и высота входа в источник.|
-|state|String|Предоставляет состояние входа в источник. При расчете используется в операции регистрации Широта и долгота сведения.|
+|state|Строка|Предоставляет состояние входа в источник. При расчете используется в операции регистрации Широта и долгота сведения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

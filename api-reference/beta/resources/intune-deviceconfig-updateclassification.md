@@ -2,12 +2,13 @@
 title: Тип перечисления updateClassification
 description: Возможные значения для классификации автоматического обновления.
 author: tfitzmac
-ms.openlocfilehash: cf52ac76cb625d38af4737c0ca87bb47beffd6c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e120a2935fbc04a2a61c48e06c03a2f87b72c957
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844823"
 ---
 # <a name="updateclassification-enum-type"></a>Тип перечисления updateClassification
 
@@ -22,7 +23,7 @@ ms.locfileid: "27337956"
 |userDefined|0|User Defined, значение по умолчанию, без цели.|
 |recommendedAndImportant|1|Рекомендуемые и важные.|
 |important|2|Важные.|
-|none|3|Нет.|
+|Нет|3|Нет.|
 
 
 

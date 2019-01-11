@@ -2,12 +2,13 @@
 title: Удаление androidForWorkApp
 description: Удаляет androidForWorkApp.
 author: tfitzmac
-ms.openlocfilehash: 53ea38fe0e16f4222a9cf65395565787f63d2745
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dac70608702f7f3647187db654e42bfa62bc339f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304013"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833763"
 ---
 # <a name="delete-androidforworkapp"></a>Удаление androidForWorkApp
 
@@ -39,11 +40,11 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

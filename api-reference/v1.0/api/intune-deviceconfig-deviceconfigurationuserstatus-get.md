@@ -2,12 +2,13 @@
 title: Get deviceConfigurationUserStatus
 description: Чтение свойств и связей объекта deviceConfigurationUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 19ae9c0abcae8a46d252bd6b09eeee2e7338a4c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36bb09a631f1df37b350de8ae56b7000b1bb3157
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304062"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836640"
 ---
 # <a name="get-deviceconfigurationuserstatus"></a>Get deviceConfigurationUserStatus
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses/
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

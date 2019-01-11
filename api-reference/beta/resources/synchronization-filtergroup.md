@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса filterGroup
 description: Определяет набор условий, которые должны соответствовать объекта следует учитывать в области. Объект считается в области действия группы (рассчитано группы для `true`) только в том случае, если все предложения группе вычисляются для `true`.
-ms.openlocfilehash: d49f7a4364f1d8ce3e1c4daba3bb331cf9a9c001
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 174c02518069e949c49887d9e21e778e8455509a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836115"
 ---
 # <a name="filtergroup-resource-type"></a>Тип ресурса filterGroup
 
@@ -15,10 +16,10 @@ ms.locfileid: "27080947"
 Определяет набор условий, которые должны соответствовать объекта следует учитывать в области. Объект считается в области действия группы (рассчитано группы для `true`) только в том случае, если все предложения группе вычисляются для `true`.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |предложения|[filterClause](synchronization-filterclause.md) коллекции|Фильтрация условия (условия) этой группы. Все предложения в группе должны быть выполнены в порядке для группы фильтра для вычисления `true`.|
-|name|String|Понятное имя группы фильтра.|
+|name|Строка|Понятное имя группы фильтра.|
 
 ## <a name="json-representation"></a>Представление JSON
 

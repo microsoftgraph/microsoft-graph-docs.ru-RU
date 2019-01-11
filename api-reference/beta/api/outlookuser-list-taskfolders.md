@@ -1,12 +1,13 @@
 ---
 title: Список taskFolders
 description: Получите все папки задач Outlook в почтовом ящике пользователя.
-ms.openlocfilehash: 5c5636af9abe46b67d29fa03ae39d3020173849a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71cacaf2cc666376dc696a1df124847b6a2a45eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837585"
 ---
 # <a name="list-taskfolders"></a>Список taskFolders
 
@@ -35,7 +36,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -52,8 +53,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

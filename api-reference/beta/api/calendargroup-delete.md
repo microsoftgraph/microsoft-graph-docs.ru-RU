@@ -2,12 +2,13 @@
 title: Удаление объекта calendarGroup
 description: Удаление группы календарей, отличной от стандартной.
 author: angelgolfer-ms
-ms.openlocfilehash: edcb75cfe6d395e505a9d100e85bf4e03bde67a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7b67908b8ffc00a3a857c1ee163ee5290c17c7e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336745"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838796"
 ---
 # <a name="delete-calendargroup"></a>Удаление объекта calendarGroup
 
@@ -40,7 +41,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

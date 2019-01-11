@@ -2,12 +2,13 @@
 title: Тип перечисления depTokenType
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 590d8027e0431fbc38f09da6dcbd2f7647c05d1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f61a52eca40f308adbc503d3e05ba7d23de95a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837711"
 ---
 # <a name="deptokentype-enum-type"></a>Тип перечисления depTokenType
 
@@ -19,7 +20,7 @@ ms.locfileid: "27310369"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Тип маркера не используется|
+|Нет|0|Тип маркера не используется|
 |Предотвращение выполнения данных|1|Тип токена — предотвращения выполнения данных.|
 |appleSchoolManager|2|Тип токена — диспетчер школа Apple|
 

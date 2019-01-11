@@ -1,12 +1,13 @@
 ---
 title: Список taskGroups
 description: Получение всех групп задач Outlook в почтовом ящике пользователя.
-ms.openlocfilehash: ba4291f72c1fc6afe3c5f445026169d11f8030db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f945527dd3e8c607205f0b4b0e6375600f74d29b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806764"
 ---
 # <a name="list-taskgroups"></a>Список taskGroups
 
@@ -37,7 +38,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -54,8 +55,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

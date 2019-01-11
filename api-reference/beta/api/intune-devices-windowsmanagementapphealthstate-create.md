@@ -2,12 +2,13 @@
 title: Создание windowsManagementAppHealthState
 description: Создание нового объекта windowsManagementAppHealthState.
 author: tfitzmac
-ms.openlocfilehash: 5fec23dec7510c0b7b1a53b0be7d2dfe507959f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3df0880168c4b4ccb15b11e39124ec8ee7ab708
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359082"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838628"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Создание windowsManagementAppHealthState
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта windowsManagementAppHealthState.
 
 В следующей таблице показаны свойства, которые необходимы для создания windowsManagementAppHealthState.
@@ -50,10 +51,10 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояния работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String.|Управление приложения установленной версии Windows.|
+|installedVersion|Строка|Управление приложения установленной версии Windows.|
 |lastCheckInDateTime|DateTimeOffset|Приложение управления Windows последний раз.|
 |deviceName|String|Имя устройства, на какие Windows установлено приложение управления.|
-|deviceOSVersion|String.|10 версии Windows устройства, на какие Windows установлено приложение управления.|
+|deviceOSVersion|Строка|10 версии Windows устройства, на какие Windows установлено приложение управления.|
 
 
 

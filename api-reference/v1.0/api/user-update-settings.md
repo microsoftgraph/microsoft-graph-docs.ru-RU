@@ -2,12 +2,13 @@
 title: Обновление параметров
 description: 'Обновляет свойства объекта settings. '
 author: dkershaw10
-ms.openlocfilehash: 571acf47852e703ee3bb20bd0c37cc5736cc4f1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f39c0a2e98951bb61b0a9af1b5a1a196248d6118
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320253"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836248"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -42,13 +43,13 @@ PATCH https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/settings/
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean.|Параметр имеет значение true отключить делегированный доступ для [тенденций](/graph/api/resources/insights-trending?view=graph-rest-beta) API и отключать доступ к документам в углубимся Office для пользователя. Настройка значение "true" также влияет на соответствие содержимого, отображаемые в Office 365 —, предлагаемые сайты в Домашняя страница SharePoint и представления обнаружения в OneDrive для бизнеса Показать менее релевантные результаты. Этот параметр отражает состояние элемента управления в [Углубимся Office](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Логический|Параметр имеет значение true отключить делегированный доступ для [тенденций](/graph/api/resources/insights-trending?view=graph-rest-beta) API и отключать доступ к документам в углубимся Office для пользователя. Настройка значение "true" также влияет на соответствие содержимого, отображаемые в Office 365 —, предлагаемые сайты в Домашняя страница SharePoint и представления обнаружения в OneDrive для бизнеса Показать менее релевантные результаты. Этот параметр отражает состояние элемента управления в [Углубимся Office](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Пример 
 

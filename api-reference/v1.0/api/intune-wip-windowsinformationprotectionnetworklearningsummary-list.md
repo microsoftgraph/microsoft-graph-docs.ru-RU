@@ -2,12 +2,13 @@
 title: Список объектов windowsInformationProtectionNetworkLearningSummary
 description: Список свойств и связей объектов windowsInformationProtectionNetworkLearningSummary.
 author: tfitzmac
-ms.openlocfilehash: bdb702881b7994d30cdcc02b0f583b6cb0fc5d69
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b18e6c3a810fc2abe633ad1096ab9221cf379df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839195"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>Список объектов windowsInformationProtectionNetworkLearningSummary
 
@@ -35,11 +36,11 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

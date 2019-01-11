@@ -2,12 +2,13 @@
 title: 'ChartFill: clear'
 description: Очищает цвет заливки элемента диаграммы.
 author: lumine2008
-ms.openlocfilehash: db7b02c59f2391099b86756a2d3a82bdbd48630d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3dc40f7ece8eb8bb5821e6ee924a80f0c19cf5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311615"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843808"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

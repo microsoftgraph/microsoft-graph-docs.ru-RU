@@ -2,12 +2,13 @@
 title: Получение объекта ChartAxis
 description: Получение свойств и связей объекта chartaxis.
 author: lumine2008
-ms.openlocfilehash: 1ced1a11acb125e0c1411a2e08507b580919c705
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 75e16d88ce446bed6e635db76abc0d8938185306
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335772"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845712"
 ---
 # <a name="get-chartaxis"></a>Получение объекта ChartAxis
 
@@ -37,7 +38,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

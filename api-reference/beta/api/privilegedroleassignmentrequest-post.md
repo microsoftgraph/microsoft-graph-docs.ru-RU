@@ -1,12 +1,13 @@
 ---
 title: Создание privilegedRoleAssignmentRequest
 description: Создайте объект privilegedroleassignmentrequest.
-ms.openlocfilehash: e262682b5a5e8bffa7fb089ae783f3bb7e67803c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f1b88415e5671e38ad557cc28200569a42a9630
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847772"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание privilegedRoleAssignmentRequest
 
@@ -34,15 +35,15 @@ POST /privilegedRoleAssignmentRequests
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
 
-| Свойство     | Тип    |  Description|
+| Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
-|roleId|String|Идентификатор роли. Обязательное.|
-|type|String|Представляет тип операции в назначении ролей. Значение может быть `AdminAdd`: администраторам Добавление пользователей в роли. `UserAdd`: Добавление назначений ролей пользователей. Обязательный атрибут.|
-|assignmentState|String|Состояние назначения. Значение может быть `Eligible` подходящими назначения `Active` - если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный атрибут.|
-|Причина|String|Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
+|roleId|Строка|Идентификатор роли. Обязательное.|
+|type|Строка|Представляет тип операции в назначении ролей. Значение может быть `AdminAdd`: администраторам Добавление пользователей в роли. `UserAdd`: Добавление назначений ролей пользователей. Обязательный.|
+|assignmentState|Строка|Состояние назначения. Значение может быть `Eligible` подходящими назначения `Active` - если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
+|Причина|Строка|Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
 |расписание|[governanceSchedule](../resources/governanceschedule.md)|Расписание для запроса назначений ролей.|
 
 ## <a name="response"></a>Ответ

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
-ms.openlocfilehash: 195d4840fdb25339eda3858c0bac2395ee9b1c4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 34798437f1bf27c68c390b0f04618985de5cecf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843318"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса разрешения
 
@@ -68,8 +69,8 @@ ms.locfileid: "27081638"
 | inheritedFrom       | [ItemReference][]           | Предоставляет ссылку на предка текущего разрешения, если оно унаследовано от предка. Только для чтения.
 | ссылка                | [SharingLink][]             | Предоставляет сведения о ссылке для текущего разрешения, если это разрешение типа link. Только для чтения.
 | roles               | Collection(String)          | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
-| shareId             | String                      | Уникальный маркер, который можно использовать для доступа к этой общий элемент через **[общий API][]**. Только для чтения.
-| expirationDateTime  | DateTimeOffset              | В формате гггг-мм-Ддвчч DateTimeOffset указывает время истечения срока действия разрешения. DateTime.MinValue указывает на наличие задано без ограничения срока действия для этого разрешения. Необязательный атрибут.
+| shareId             | Строка                      | Уникальный маркер, который можно использовать для доступа к этой общий элемент через **[общий API][]**. Только для чтения.
+| expirationDateTime  | DateTimeOffset              | В формате гггг-мм-Ддвчч DateTimeOffset указывает время истечения срока действия разрешения. DateTime.MinValue указывает на наличие задано без ограничения срока действия для этого разрешения. Необязательное.
 | hasPassword         | Логический                     | Указывает, будет ли для этого разрешения, задать пароль, отображаются в ответ. Необязательный и только для чтения и только личные OneDrive.
 
 ### <a name="roles-enumeration-values"></a>Значения перечисления роли

@@ -2,12 +2,13 @@
 title: Список androidForWorkCustomConfigurations
 description: Свойства списка и связей объектов androidForWorkCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 95ace512553d17e4c9d40bcfecbfd432fc2c3b93
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b36a2d84bc68c5298d76fa05742e52c823aa689
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836969"
 ---
 # <a name="list-androidforworkcustomconfigurations"></a>Список androidForWorkCustomConfigurations
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

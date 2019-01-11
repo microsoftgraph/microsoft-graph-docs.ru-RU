@@ -2,12 +2,13 @@
 title: Список iosTrustedRootCertificates
 description: Свойства списка и связей объектов iosTrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 644cc698a9d147ed14c85801a2c7699995d03e87
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4eb4e4e9a23e67a9cd9d7c9dd331319d789b7d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355904"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837137"
 ---
 # <a name="list-iostrustedrootcertificates"></a>Список iosTrustedRootCertificates
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

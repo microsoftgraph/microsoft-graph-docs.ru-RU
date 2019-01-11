@@ -2,12 +2,13 @@
 title: Функция deviceConfigurationUserActivity
 description: Метаданные для отчета о действиях пользователей с конфигурацией устройств
 author: tfitzmac
-ms.openlocfilehash: 3cf73f5b8df21d7675ceeeed1b11bd1705e19c1c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b403fa45e228d1393127943dcbf9011b91ab18f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305497"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806365"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>Функция deviceConfigurationUserActivity
 
@@ -38,11 +39,11 @@ GET /reports/deviceConfigurationUserActivity
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

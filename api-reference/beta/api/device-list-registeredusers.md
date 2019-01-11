@@ -2,12 +2,13 @@
 title: Список registeredUsers
 description: Получение списка пользователей, являющихся зарегистрированными пользователями устройства.
 author: tfitzmac
-ms.openlocfilehash: 56bfac40f5103a6e6c459511d428c03b88cb523f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e552ffe1d3bb07c365f06c4bcfcee08bdacedba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305854"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843598"
 ---
 # <a name="list-registeredusers"></a>Список registeredUsers
 
@@ -41,7 +42,7 @@ GET /devices/{id}/registeredUsers
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

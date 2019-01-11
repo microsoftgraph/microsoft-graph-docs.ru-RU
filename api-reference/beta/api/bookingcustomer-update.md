@@ -1,12 +1,13 @@
 ---
 title: Обновление bookingcustomer
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: d28a2a30da1c626c65c65a1dc3cab000a06580d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ccfd7d496f796ea71568a58d48e62ed84c29abc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844347"
 ---
 # <a name="update-bookingcustomer"></a>Обновление bookingcustomer
 
@@ -32,12 +33,12 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя клиента.|
+|displayName|Строка|Имя клиента.|
 |emailAddress|String|SMTP-адрес клиента.|
 
 ## <a name="response"></a>Ответ

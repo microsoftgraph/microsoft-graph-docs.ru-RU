@@ -2,12 +2,13 @@
 title: 'Планировщик работы: дельты'
 description: Извлекает изменения объектов, на которые подписан пользователь.
 author: TarkanSevilmis
-ms.openlocfilehash: dcc60ad9c1bc5ea9e56099d4bc79fb57d4e95374
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fe4ed9164c5baf9aea8819ba4f3140c23ec87d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838642"
 ---
 # <a name="planner-delta"></a>Планировщик работы: дельты
 
@@ -48,7 +49,7 @@ GET /users/<id>/planner/all/delta
 |:---------------|:--------------------------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

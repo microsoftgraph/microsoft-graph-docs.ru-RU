@@ -2,12 +2,13 @@
 title: Получение объекта contactFolder
 description: Получение папки контактов с помощью ее идентификатора.
 author: angelgolfer-ms
-ms.openlocfilehash: 7a51194f93bc7daf23fb0a0555e4e69425c7387b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa2f988593a3e73db55a661bf4cc83d2cbb612cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358977"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838194"
 ---
 # <a name="get-contactfolder"></a>Получение объекта contactFolder
 
@@ -43,7 +44,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

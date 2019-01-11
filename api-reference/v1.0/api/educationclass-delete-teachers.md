@@ -2,12 +2,13 @@
 title: Удаление преподавателя
 description: Удаление преподавателя для курса.
 author: mmast-msft
-ms.openlocfilehash: c0ff720fb5a8c9b176728e55393cbb764da751a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 444b97fb5fa25c7863b0607455752956dc6396f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836325"
 ---
 # <a name="remove-teacher"></a>Удаление преподавателя
 
@@ -32,7 +33,7 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

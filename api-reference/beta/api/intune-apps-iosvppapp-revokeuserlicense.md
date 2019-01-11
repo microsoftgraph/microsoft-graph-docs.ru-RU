@@ -2,12 +2,13 @@
 title: Действие revokeUserLicense
 description: Назначенные REVOKE iOS VPP пользовательской лицензии для заданного приложения.
 author: tfitzmac
-ms.openlocfilehash: 94d8dff027421d5b3b1c763439dbcf4ec3d2391f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 241306b812615bb804a3139082a439df9eeae059
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837305"
 ---
 # <a name="revokeuserlicense-action"></a>Действие revokeUserLicense
 
@@ -39,11 +40,11 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -51,7 +52,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор пользователя, для которого является отозвать лицензии назначенные приложения|
-|notifyManagedDevices|Boolean.|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
+|notifyManagedDevices|Логический|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
 
 
 

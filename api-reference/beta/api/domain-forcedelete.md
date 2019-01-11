@@ -2,12 +2,13 @@
 title: 'домен: forceDelete'
 description: Удаление домена, с помощью асинхронной операции.
 author: lleonard-msft
-ms.openlocfilehash: 4af5b70fca7600538d4212768243d8de82eb79ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e90b960bc2e2ff63068b1d91029371044075be27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316214"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838061"
 ---
 # <a name="domain-forcedelete"></a>домен: forceDelete
 
@@ -56,13 +57,13 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean.| Параметр, чтобы отключить переименованной учетных записей. Если учетная запись пользователя отключена, пользователь не разрешено вход.<br>*Значение true* (по умолчанию) — переименовано в рамках этой операции учетными записями пользователей.<br>*False* — переименовано в рамках этой операции учетные записи пользователей не отключены. |
+|disableUserAccounts|Логический| Параметр, чтобы отключить переименованной учетных записей. Если учетная запись пользователя отключена, пользователь не разрешено вход.<br>*Значение true* (по умолчанию) — переименовано в рамках этой операции учетными записями пользователей.<br>*False* — переименовано в рамках этой операции учетные записи пользователей не отключены. |
 
 ## <a name="response"></a>Ответ
 

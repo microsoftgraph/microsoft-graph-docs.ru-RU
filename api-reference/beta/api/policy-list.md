@@ -1,12 +1,13 @@
 ---
 title: Список политик
 description: Извлечение всех объектов политики в каталоге.
-ms.openlocfilehash: 5abff0973a53dc3bddfd256dbc43faad519e20e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea97146b646068515ab6fdc7fab4b3cefb16031e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081942"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836059"
 ---
 # <a name="list-policies"></a>Список политик
 
@@ -33,7 +34,7 @@ GET /policies
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -51,8 +52,7 @@ GET https://graph.microsoft.com/beta/policies
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ```http
 HTTP/1.1 200 OK

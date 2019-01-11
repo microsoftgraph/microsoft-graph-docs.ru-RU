@@ -1,12 +1,13 @@
 ---
 title: 'пользователь: exportPersonalData'
 description: Отправляет запрос операции данные политики, внесенные администратором компании для экспорта данных организации пользователя.
-ms.openlocfilehash: ffde9af132fbb15706fe54af8a6b3aaeba07d12b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: d660994868e331fb8c1813bb9ff90aebe4790e9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845341"
 ---
 # <a name="user-exportpersonaldata"></a>пользователь: exportPersonalData
 
@@ -39,7 +40,7 @@ POST /users/<id>/exportPersonalData
 
 | Параметр    | Тип   |Описание |
 |:---------------|:--------|:----------|
-|storageLocation|String|Это URL-адрес подписи (SAS) общий доступ к учетной записи хранилища Azure, для которых следует экспортировать данные.|
+|storageLocation|Строка|Это URL-адрес подписи (SAS) общий доступ к учетной записи хранилища Azure, для которых следует экспортировать данные.|
 
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. Он не возвращает все действия в теле ответа. Ответ содержит следующие заголовки.

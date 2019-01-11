@@ -2,12 +2,13 @@
 title: Получение объекта Chart
 description: Получение свойств и связей объекта диаграммы.
 author: lumine2008
-ms.openlocfilehash: 3020b558917e866eb7f655ebf7b309d960dee4c2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 84517a9bf31a3e8f9bdbb41df0d309eff1750dd8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316417"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838509"
 ---
 # <a name="get-chart"></a>Получение объекта Chart
 
@@ -37,7 +38,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,12 +2,13 @@
 title: Delete windowsUniversalAppX
 description: Удаляет объект windowsUniversalAppX.
 author: tfitzmac
-ms.openlocfilehash: 0b6e91d68a0b86d4008aab2d1fdcce440eceade6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22f35700413a395110f74313effbaac0d175f8f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843634"
 ---
 # <a name="delete-windowsuniversalappx"></a>Delete windowsUniversalAppX
 
@@ -39,11 +40,11 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

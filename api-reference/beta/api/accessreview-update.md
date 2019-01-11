@@ -1,12 +1,13 @@
 ---
 title: Обновление accessReview
 description: В Azure AD access дается обзор компонента "," Обновление существующий объект accessReview изменение одно или несколько свойств.
-ms.openlocfilehash: 8913377db8acea17023605f85d01c8c9ecea419b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 65420b3682eb9d9f72d95beea624eb84429628ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833749"
 ---
 # <a name="update-accessreview"></a>Обновление accessReview
 
@@ -34,14 +35,14 @@ PATCH /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON параметров объекта [accessReview](../resources/accessreview.md) .
 
 В следующей таблице показаны свойства, которые могут быть предоставлены при обновлении accessReview.
 
-| Свойство     | Тип        | Description |
+| Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | Имя проверки доступа.  |
 | `startDateTime`           |`DateTimeOffset`                                                | Дата и время при планировании проверки быть запуск.  Это должно быть даты в будущем.   |

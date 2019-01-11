@@ -2,12 +2,13 @@
 title: 'WorksheetProtection: unprotect'
 description: Снятие защиты с листа
 author: lumine2008
-ms.openlocfilehash: 11dc000919fc1b60bae7646d00cc669f63a3f690
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 52feaf77964949fee9bbedbf3ced2967226bb486
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850521"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
@@ -35,7 +36,7 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

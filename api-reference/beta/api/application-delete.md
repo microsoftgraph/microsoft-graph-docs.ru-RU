@@ -2,12 +2,13 @@
 title: Удаление приложения
 description: Приложение удаляется.
 author: lleonard-msft
-ms.openlocfilehash: e19ca94be2d8599f250908ab2aaa33d64b513b8d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46c02d0fc1730f5741175e5ab99e2082e60c8f48
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343500"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838817"
 ---
 # <a name="delete-application"></a>Удаление приложения
 
@@ -35,7 +36,7 @@ DELETE /applications/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

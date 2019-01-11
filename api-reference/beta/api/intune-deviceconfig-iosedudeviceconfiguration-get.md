@@ -2,12 +2,13 @@
 title: Получение iosEduDeviceConfiguration
 description: Чтение свойства и связи объекта iosEduDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: bd06e41b78c39ae05329c714874e7d5906f8ffe5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bbc011a2cb9596d2aa384936847f4c8b361957a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356100"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836871"
 ---
 # <a name="get-iosedudeviceconfiguration"></a>Получение iosEduDeviceConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: 'TableSort: clear'
 description: Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.
-ms.openlocfilehash: c8cfed9703aa5914ed4c0d47f29563d3e87ac0d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 00d81e05ccaea45be0ce67cd29b828e2d7ce1634
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842751"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear
 
@@ -33,7 +34,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

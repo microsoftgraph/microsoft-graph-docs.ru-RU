@@ -2,12 +2,13 @@
 title: Перечисление verificationDnsRecords
 description: Получение списка объектов domainDnsRecord.
 author: lleonard-msft
-ms.openlocfilehash: 9f9fd611b590c3ace61394309637340288cf7bb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48549b2020bb4e73169712f9d8ba6b8034187082
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353104"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850591"
 ---
 # <a name="list-verificationdnsrecords"></a>Перечисление verificationDnsRecords
 
@@ -47,7 +48,7 @@ GET /domains/{id}/verificationDnsRecords
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

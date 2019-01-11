@@ -2,12 +2,13 @@
 title: Тип ресурса windows81VpnProxyServer
 description: VPN-сервер прокси-сервера.
 author: tfitzmac
-ms.openlocfilehash: 015df762d25e1a87a9ce29bd4efbc15e98ed7e08
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b694206fd65bad46c9176a9fc01586f00237bdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834715"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>Тип ресурса windows81VpnProxyServer
 
@@ -22,11 +23,11 @@ VPN-сервер прокси-сервера.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|String.|Прокси-Автоматическая настройка сценария URL-адрес. Наследуется от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|automaticConfigurationScriptUrl|Строка|Прокси-Автоматическая настройка сценария URL-адрес. Наследуется от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|Адрес. Наследуется от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |port|Int32|Порт. Допустимыми значениями от 0 до 65535 унаследованные от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|automaticallyDetectProxySettings|Boolean.|Автоматическое определение параметров прокси-сервера.|
-|bypassProxyServerForLocalAddress|Boolean.|Использовать прокси-сервер для локальных адресов.|
+|automaticallyDetectProxySettings|Логический|Автоматическое определение параметров прокси-сервера.|
+|bypassProxyServerForLocalAddress|Логический|Использовать прокси-сервер для локальных адресов.|
 
 ## <a name="relationships"></a>Связи
 Нет

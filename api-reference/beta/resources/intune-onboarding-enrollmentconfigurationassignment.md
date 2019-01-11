@@ -2,12 +2,13 @@
 title: Тип ресурса enrollmentConfigurationAssignment
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 3c2668b2c31425c76f904e6d78a2fa61907f3964
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f785a8def96ede682b4e49285b9147d05f2fe8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306603"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846223"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Тип ресурса enrollmentConfigurationAssignment
 

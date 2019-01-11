@@ -2,12 +2,13 @@
 title: Create iosStoreApp
 description: Создание объекта iosStoreApp.
 author: tfitzmac
-ms.openlocfilehash: 0d46f8f8e123563f86a0475593f2699705f8fd5d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6dc5f1b6a3690fa66689aa0c8cebe1cd27d3ce4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836346"
 ---
 # <a name="create-iosstoreapp"></a>Create iosStoreApp
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

@@ -2,12 +2,13 @@
 title: Действие targetApps
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: ef8623efc272d4812bb1430bebd41f02effdb2a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3751dde9dcb54cffdfacd7a186ed8be7545869a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835842"
 ---
 # <a name="targetapps-action"></a>Действие targetApps
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

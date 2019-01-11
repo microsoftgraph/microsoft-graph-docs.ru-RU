@@ -2,12 +2,13 @@
 title: Обновление importedDeviceIdentity
 description: Обновление свойства объекта importedDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: 6910eedf448c85d919da74f5d4e04d11213cf6d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9072c0b5e8a01c72352b9250b4167cdb5ec190fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838432"
 ---
 # <a name="update-importeddeviceidentity"></a>Обновление importedDeviceIdentity
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).
@@ -49,7 +50,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор идентификатор импортированных устройства|
-|importedDeviceIdentifier|String.|Идентификатор импортированных устройства|
+|importedDeviceIdentifier|Строка|Идентификатор импортированных устройства|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип удостоверения импортированных устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Последние изменения даты и времени описания|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|

@@ -2,12 +2,13 @@
 title: Удаление параметра группы
 description: Удаление параметра группы.
 author: dkershaw10
-ms.openlocfilehash: c5e1dc6dc3fddfde756adb969714842dde4023cb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55a9c1d51e03eaea785d351c0700803915b2fe33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839069"
 ---
 # <a name="delete-a-group-setting"></a>Удаление параметра группы
 
@@ -39,7 +40,7 @@ DELETE /groups/{id}/settings/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

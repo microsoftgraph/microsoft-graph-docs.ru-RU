@@ -1,12 +1,13 @@
 ---
 title: Список programControls
 description: В Azure AD access дается обзор компонента, список объектов programControl для всех программ в клиентов.
-ms.openlocfilehash: 7e1dcb197a546e3aa823b731a9e7954803b36c2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bc56fd5013bcf0013007b9d4264ab89eca02d43b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075802"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843955"
 ---
 # <a name="list-programcontrols"></a>Список programControls
 
@@ -30,9 +31,9 @@ GET /programControls
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ
@@ -50,7 +51,7 @@ GET https://graph.microsoft.com/beta/programControls
 ```
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

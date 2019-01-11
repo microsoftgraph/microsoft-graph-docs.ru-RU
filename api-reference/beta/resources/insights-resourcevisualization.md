@@ -2,12 +2,13 @@
 title: Тип ресурса resourceVisualization
 description: Сложный тип, содержащий свойства средствами.
 author: simonhult
-ms.openlocfilehash: d0c54895468fc9a01017e448df57c09c654616e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7600c843e36e3bce6c8a4182e0bfda14ad21d7b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844978"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса resourceVisualization
 
@@ -38,12 +39,12 @@ ms.locfileid: "27333539"
 | -------------         |---------------| -------------|
 | title                 | Строка        | Текст заголовка элемента.               |
 | type              | Строка        | Тип элемента мультимедиа. Можно использовать для фильтрации для конкретного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
-| Тип носителя             | String.        | Тип элемента мультимедиа. Можно использовать для фильтрации для определенного типа файлов, поддерживаемые типы Mime IANA мультимедиа на основании. Обратите внимание, что не все типы Mime мультимедиа поддерживаются. |
-| previewImageUrl       | String.        | URL-адрес, приводя к изображения предварительного просмотра для элемента. |
-| previewText           | String.        | Предварительная версия текст для элемента. |
-| containerWebUrl       | String.        | Путь, приводя к папке, в которой хранится элемент. |
-| containerDisplayName  | String.        | Строка, описывающая, где хранится элемент. Например имя сайт SharePoint или имя пользователя, определение владельца OneDrive, хранения элемента.  |
-| containerType         | String. | Можно использовать для фильтрации по типу контейнер, в котором хранится файл. Например, сайта или OneDriveBusiness.       |
+| Тип носителя             | Строка        | Тип элемента мультимедиа. Можно использовать для фильтрации для определенного типа файлов, поддерживаемые типы Mime IANA мультимедиа на основании. Обратите внимание, что не все типы Mime мультимедиа поддерживаются. |
+| previewImageUrl       | Строка        | URL-адрес, приводя к изображения предварительного просмотра для элемента. |
+| previewText           | Строка        | Предварительная версия текст для элемента. |
+| containerWebUrl       | Строка        | Путь, приводя к папке, в которой хранится элемент. |
+| containerDisplayName  | Строка        | Строка, описывающая, где хранится элемент. Например имя сайт SharePoint или имя пользователя, определение владельца OneDrive, хранения элемента.  |
+| containerType         | Строка | Можно использовать для фильтрации по типу контейнер, в котором хранится файл. Например, сайта или OneDriveBusiness.       |
 
 ## <a name="type-property-values"></a>Тип значения свойств
 -   PowerPoint
@@ -64,13 +65,13 @@ ms.locfileid: "27333539"
 -   Audio (аудио)
 -   Video (видео)
 -   Изображение
--   Web
+-   Веб
 -   Текст
 -   Xml
 -   Story
 -   ExternalContent
 -   Folder
--   Other
+-   Другое
 
 Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 

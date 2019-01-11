@@ -1,12 +1,13 @@
 ---
 title: 'group: getMemberObjects'
 description: 'Возвращает все группы и административных единиц измерения, которые должна быть членом группы. Проверка доверия транзитивных. Примечание: Группы не может быть члены роли каталога, поэтому роли не каталог не возвращается.'
-ms.openlocfilehash: e0ff719b58f13f036cbf8502725fb1e146cb1227
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 72d9bc23fa5499ebf1f43d8baee9c9562a57c645
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838110"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -34,7 +35,7 @@ POST /groups/{id}/getMemberObjects
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

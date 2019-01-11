@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Shared
-ms.openlocfilehash: 38bc8604ba2528a24e2193a2fb521428b2b5c2d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cae69a60691d388570d29176fc20aac429907f8a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838992"
 ---
 # <a name="shared-resource-type"></a>Тип ресурса Shared
 
@@ -40,7 +41,7 @@ ms.locfileid: "27080556"
 | Свойство       | Тип                          | Описание
 | :------------- |:------------------------------|:----------------------------
 | owner          | [IdentitySet](identityset.md) | Удостоверение владельца общего элемента. Только для чтения.
-| scope          | String                        | Указывает область, в рамках которой предоставлен доступ к общему элементу: `anonymous`, `organization` или `users`. Только для чтения.
+| scope          | Строка                        | Указывает область, в рамках которой предоставлен доступ к общему элементу: `anonymous`, `organization` или `users`. Только для чтения.
 | sharedBy       | [identitySet](identityset.md) | Удостоверение пользователя, предоставившего общий доступ к элементу. Только для чтения.
 | sharedDateTime | DateTimeOffset                | Дата и время предоставления общего доступа к элементу в формате UTC. Только для чтения.
 

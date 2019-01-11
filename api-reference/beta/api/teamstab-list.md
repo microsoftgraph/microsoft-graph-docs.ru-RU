@@ -2,12 +2,13 @@
 title: Список вкладок в канале
 description: 'Получить список вкладок в указанный канал в группе. '
 author: nkramer
-ms.openlocfilehash: 12d2c0c1abe85d1e2fa93cee0bdab12d8880eed9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9d6ea6603785df178bccea86a30a0f9ba22f6129
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346860"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845138"
 ---
 # <a name="list-tabs-in-channel"></a>Список вкладок в канале
 
@@ -41,7 +42,7 @@ GET /teams/{id}/channels/{id}/tabs
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

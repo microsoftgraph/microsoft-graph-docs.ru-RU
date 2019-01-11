@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationAssignmentIndividualRecipient
 description: 'Используется в свойстве assignment.assignTo. Если задано значение отдельные список получателей, будет выбранного студентов в классе '
-ms.openlocfilehash: a71f1845b91f190afa98f3fad8d393a7f68f14c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fab79d7836a7562c0518197600392021a71c45c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841820"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>Тип ресурса educationAssignmentIndividualRecipient
 

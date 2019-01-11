@@ -2,12 +2,13 @@
 title: Удаление объекта windowsUpdateForBusinessConfiguration
 description: Удаляет объект windowsUpdateForBusinessConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a036530f5c57ea7b856bb6ba210609b77f4ebff4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eeccc45c25f3bd02200b31b21a9a5f2940c1cab4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324747"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835966"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>Удаление объекта windowsUpdateForBusinessConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

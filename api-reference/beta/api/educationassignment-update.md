@@ -1,12 +1,13 @@
 ---
 title: Обновление educationassignment
 description: Обновите объект назначения. Это можно сделать только преподавателей в классе. Обратите внимание на то, что запрос на исправление нельзя использовать для изменения состояния назначения. Используется для изменения состояния назначения действие опубликовать.
-ms.openlocfilehash: 8b23b7ac4b971856ed7a96b4991fca2e5220d069
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077562"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838292"
 ---
 # <a name="update-educationassignment"></a>Обновление educationassignment
 
@@ -37,13 +38,13 @@ PATCH /education/classes/{id}/assignments/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowLateSubmissions|Логический| Является ли отправленные данные можно отправлять после даты выполнения.|
 |allowStudentsToAddResourcesToSubmission|Логический| Является ли студента можно добавить ресурсы для отправки. Указывает, является ли только элементов на отправку поступил из списка назначений ресурсов. |
 |assignDateTime|DateTimeOffset| Дата назначения должны быть опубликованы для студентов. |
 |assignTo|educationAssignmentRecipient| Студентов, получение назначения.|
-|displayName|String| Имя назначения. |
+|displayName|Строка| Имя назначения. |
 |dueDateTime|DateTimeOffset| Дата назначения должно быть выполнено. |
 |Оценка успеваемости|educationAssignmentGradeType| Как будет выражаемым числом назначения.|
 |инструкции|itemBody| Инструкции для студентов, а также назначения. |

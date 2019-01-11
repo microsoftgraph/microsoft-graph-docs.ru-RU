@@ -2,12 +2,13 @@
 title: Получение windowsManagementApp
 description: Чтение свойства и связи объекта windowsManagementApp.
 author: tfitzmac
-ms.openlocfilehash: dc1baf7e8d85d315d2778102b0e86f3c51178abb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0af5c7636ae0e9aae671d68815b030211dfc5840
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849632"
 ---
 # <a name="get-windowsmanagementapp"></a>Получение windowsManagementApp
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/windowsManagementApp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

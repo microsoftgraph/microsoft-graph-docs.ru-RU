@@ -2,12 +2,13 @@
 title: Действие commit
 description: Подтверждает файл заданного приложения.
 author: tfitzmac
-ms.openlocfilehash: 728cbaeb431fd6f3f9b27b64d118a603bbf9347d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53a72e5b773c7fd5b306ff1f0cc4a6422dd640fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836563"
 ---
 # <a name="commit-action"></a>Действие commit
 
@@ -35,11 +36,11 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

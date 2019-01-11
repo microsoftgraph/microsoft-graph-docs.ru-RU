@@ -1,12 +1,13 @@
 ---
 title: Список identityProviders
 description: Извлечение всех identityProviders в каталоге.
-ms.openlocfilehash: fd5662690b644bc7a34587a5bdfc519188a3d4ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43442a0bf354816c8c104d57d9720940d83bc0d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080955"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837970"
 ---
 # <a name="list-identityproviders"></a>Список identityProviders
 
@@ -39,7 +40,7 @@ GET /identityProviders
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

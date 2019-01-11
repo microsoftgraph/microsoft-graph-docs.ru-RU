@@ -2,12 +2,13 @@
 title: Тип ресурса advancedThreatProtectionOnboardingStateSummary
 description: Windows Защитник расширенной угроз защиты входящая состояние Сводка по учетной записи.
 author: tfitzmac
-ms.openlocfilehash: 3a31d489374b87469d2ed6fb87bb70f8d89d710c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b700658c6ae7b486ae52f4ea226b7a6bab7f0af6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838222"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Тип ресурса advancedThreatProtectionOnboardingStateSummary
 

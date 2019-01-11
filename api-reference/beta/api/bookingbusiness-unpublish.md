@@ -1,12 +1,13 @@
 ---
 title: 'bookingBusiness: Отмена публикации'
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 7d0e083eded3ce0c1328c9532358cf7a054db52b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fc2556b62ab3b9a32ca278704864265c2de4d25e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838789"
 ---
 # <a name="bookingbusiness-unpublish"></a>bookingBusiness: Отмена публикации
 
@@ -36,7 +37,7 @@ POST /bookingBusinesses/{id}/unpublish
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.

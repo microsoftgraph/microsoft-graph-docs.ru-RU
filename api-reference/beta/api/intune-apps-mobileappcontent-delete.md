@@ -2,12 +2,13 @@
 title: Delete mobileAppContent
 description: Удаляет объект mobileAppContent.
 author: tfitzmac
-ms.openlocfilehash: fcce8b7a1a79506218b9ac0a306b5e1b9f22bbb7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0872e68d59de49409a198fa32a39fd7d37425288
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302613"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837452"
 ---
 # <a name="delete-mobileappcontent"></a>Delete mobileAppContent
 
@@ -39,11 +40,11 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

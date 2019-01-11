@@ -2,12 +2,13 @@
 title: 'ChartLineFormat: clear'
 description: Очищает формат линий элемента диаграммы.
 author: lumine2008
-ms.openlocfilehash: 123efee9740c2ef78d5dc4c1ad76c5fb28c23ba7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ee575b846bcf85c9cca7d0c203a3589fd28f180
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843906"
 ---
 # <a name="chartlineformat-clear"></a>ChartLineFormat: clear
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridline
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

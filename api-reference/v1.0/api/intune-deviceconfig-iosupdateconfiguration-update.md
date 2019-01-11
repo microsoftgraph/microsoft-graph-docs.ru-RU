@@ -2,12 +2,13 @@
 title: Обновление объекта iosUpdateConfiguration
 description: Обновление свойств объекта iosUpdateConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 5fa6e33b3ed8872b49f43d8db9bd90057e998d03
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9ecd2a3ac0cee1d7287308f20c88f495391ede7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307863"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849009"
 ---
 # <a name="update-iosupdateconfiguration"></a>Обновление объекта iosUpdateConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

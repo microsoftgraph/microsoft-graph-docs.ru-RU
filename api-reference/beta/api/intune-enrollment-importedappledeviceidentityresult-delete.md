@@ -2,12 +2,13 @@
 title: Удаление importedAppleDeviceIdentityResult
 description: Удаляет importedAppleDeviceIdentityResult.
 author: tfitzmac
-ms.openlocfilehash: 0a9be53ea8fa0084ae235417d757cc0a85a4120e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6113d6fff7ba8648812faf3eb32510f43895e97c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837494"
 ---
 # <a name="delete-importedappledeviceidentityresult"></a>Удаление importedAppleDeviceIdentityResult
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/imported
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

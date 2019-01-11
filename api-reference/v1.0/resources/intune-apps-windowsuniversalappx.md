@@ -2,12 +2,13 @@
 title: Тип ресурса windowsUniversalAppX
 description: Содержит свойства, в том числе унаследованные, для универсальных бизнес-приложений AppX Windows.
 author: tfitzmac
-ms.openlocfilehash: 057f2c13c085fa4481b626609d28354da340f8cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8179ddfa50cd84a08dc3ecd2bc1ad726341cd59c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362316"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844874"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>Тип ресурса windowsUniversalAppX
 

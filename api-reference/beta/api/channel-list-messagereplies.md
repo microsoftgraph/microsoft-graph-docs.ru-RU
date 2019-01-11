@@ -2,12 +2,13 @@
 title: Ответы на сообщение канала списка
 description: Список всех ответов на сообщение в канал группы.
 author: nkramer
-ms.openlocfilehash: ac0447e8c0e29e21b60b52c78362c22b0acbd5de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b2866bf2b6768eca4b6227f53ab50adec0ba5ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336633"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849842"
 ---
 # <a name="list-channel-message-replies"></a>Ответы на сообщение канала списка
 
@@ -38,7 +39,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

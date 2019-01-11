@@ -2,12 +2,13 @@
 title: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 description: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: ab9dbf4132c18e40e4a72194d1fe456a2777d02e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 704365da447e3e6ccf702479ddceb06a3c14c4cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313309"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836241"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -52,18 +53,18 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|advancedThreatProtectionOnboardingBlob|String.|Windows Defender AdvancedThreatProtection входящая больших двоичных объектов.|
-|advancedThreatProtectionOnboardingFilename|String.|Имя файла, из которого был получен AdvancedThreatProtectionOnboardingBlob.|
-|advancedThreatProtectionAutoPopulateOnboardingBlob|Boolean.|Автоматическое заполнение больших двоичных объектов входящая программным способом из службы защиты расширенного угроз|
+|advancedThreatProtectionOnboardingBlob|Строка|Windows Defender AdvancedThreatProtection входящая больших двоичных объектов.|
+|advancedThreatProtectionOnboardingFilename|Строка|Имя файла, из которого был получен AdvancedThreatProtectionOnboardingBlob.|
+|advancedThreatProtectionAutoPopulateOnboardingBlob|Логический|Автоматическое заполнение больших двоичных объектов входящая программным способом из службы защиты расширенного угроз|
 |allowSampleSharing|Boolean|Правило "Разрешить общий доступ к выборкам" службы Advanced Threat Protection в Защитнике Windows|
 |enableExpeditedTelemetryReporting|Boolean|Увеличение частоты создания отчетов о телеметрии службой Advanced Threat Protection в Защитнике Windows.|
-|advancedThreatProtectionOffboardingBlob|String.|Windows Defender AdvancedThreatProtection Исходящая миграция больших двоичных объектов.|
-|advancedThreatProtectionOffboardingFilename|String.|Имя файла, из которого был получен AdvancedThreatProtectionOffboardingBlob.|
+|advancedThreatProtectionOffboardingBlob|Строка|Windows Defender AdvancedThreatProtection Исходящая миграция больших двоичных объектов.|
+|advancedThreatProtectionOffboardingFilename|Строка|Имя файла, из которого был получен AdvancedThreatProtectionOffboardingBlob.|
 
 
 

@@ -2,12 +2,13 @@
 title: Получение объекта ChartTitle
 description: Получение свойств и связей объекта charttitle.
 author: lumine2008
-ms.openlocfilehash: 2216ba5fe3e99819bf103b1517d0aae159be5363
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 529115fb7795bde483697e5d5f07979dc1e9b837
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836591"
 ---
 # <a name="get-charttitle"></a>Получение объекта ChartTitle
 
@@ -35,7 +36,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/title
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

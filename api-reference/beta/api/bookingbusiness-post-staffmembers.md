@@ -1,12 +1,13 @@
 ---
 title: Создание bookingStaffMember
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 01983d5a0831b47c2eddfa45dad917f30bdd7b8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43935dbeeda30fb5f69b799993f772ffffa3eeed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838775"
 ---
 # <a name="create-bookingstaffmember"></a>Создание bookingStaffMember
 
@@ -33,7 +34,7 @@ POST /bookingBusinesses/{id}/staffMembers
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [bookingStaffMember](../resources/bookingstaffmember.md) . Необходимо включить следующие свойства:
 
 - **displayName**

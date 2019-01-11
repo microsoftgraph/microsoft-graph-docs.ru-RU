@@ -2,12 +2,13 @@
 title: Тип ресурса iosVppEBookAssignment
 description: Содержит свойства, используемые при назначении электронной книги в формате VPP для iOS группе.
 author: tfitzmac
-ms.openlocfilehash: d2e8bf4e5c3ee7fe626d1af17a97d94e1440f3a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea47b3927eb0702cb4ea365f9c23d7fd6d1e2f4e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849268"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Тип ресурса iosVppEBookAssignment
 

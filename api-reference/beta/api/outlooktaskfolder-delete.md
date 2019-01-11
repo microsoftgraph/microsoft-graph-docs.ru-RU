@@ -2,12 +2,13 @@
 title: Удаление outlookTaskFolder
 description: Удаление указанной папки задач Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: c3024bb6f9fad987d98370787427880739993b2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8fd5a62113ee9ad66a7ca080f5b4d2593834c2d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836360"
 ---
 # <a name="delete-outlooktaskfolder"></a>Удаление outlookTaskFolder
 
@@ -35,7 +36,7 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
