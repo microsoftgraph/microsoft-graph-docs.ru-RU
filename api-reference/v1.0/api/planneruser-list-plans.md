@@ -1,27 +1,28 @@
 ---
 title: Перечисление планов
 description: Получение списка объектов **plannerplan**, к которым есть доступ у объекта user.
-ms.openlocfilehash: da61f20431e28144c56832f38c979c576affe0ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 68784779877e78a9662186158dde6abe265c6882
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026322"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826147"
 ---
-# <a name="list-plans"></a><span data-ttu-id="7c1ac-103">Перечисление планов</span><span class="sxs-lookup"><span data-stu-id="7c1ac-103">List plans</span></span>
+# <a name="list-plans"></a><span data-ttu-id="e4cd4-103">Перечисление планов</span><span class="sxs-lookup"><span data-stu-id="e4cd4-103">List plans</span></span>
 
-<span data-ttu-id="7c1ac-104">Получение списка объектов **plannerplan**, к которым есть доступ у объекта [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="7c1ac-104">Retrieve a list of **plannerplan** objects shared with a [user](../resources/user.md) object.</span></span>
+<span data-ttu-id="e4cd4-104">Получение списка объектов **plannerplan**, к которым есть доступ у объекта [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="e4cd4-104">Retrieve a list of **plannerplan** objects shared with a [user](../resources/user.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7c1ac-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7c1ac-105">Permissions</span></span>
-<span data-ttu-id="7c1ac-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7c1ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e4cd4-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e4cd4-105">Permissions</span></span>
+<span data-ttu-id="e4cd4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e4cd4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7c1ac-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7c1ac-108">Permission type</span></span>      | <span data-ttu-id="7c1ac-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7c1ac-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e4cd4-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e4cd4-108">Permission type</span></span>      | <span data-ttu-id="e4cd4-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e4cd4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7c1ac-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7c1ac-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7c1ac-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7c1ac-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7c1ac-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7c1ac-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c1ac-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7c1ac-113">Not supported.</span></span>    |
-|<span data-ttu-id="7c1ac-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7c1ac-114">Application</span></span> | <span data-ttu-id="7c1ac-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7c1ac-115">Not supported.</span></span> |
+|<span data-ttu-id="e4cd4-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e4cd4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e4cd4-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e4cd4-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e4cd4-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e4cd4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4cd4-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e4cd4-113">Not supported.</span></span>    |
+|<span data-ttu-id="e4cd4-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e4cd4-114">Application</span></span> | <span data-ttu-id="e4cd4-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e4cd4-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7c1ac-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7c1ac-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e4cd4-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e4cd4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/plans
@@ -29,23 +30,23 @@ GET /users/{id}/planner/plans
 GET /drive/root/createdByUser/planner/plans
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7c1ac-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7c1ac-117">Request headers</span></span>
-| <span data-ttu-id="7c1ac-118">Имя</span><span class="sxs-lookup"><span data-stu-id="7c1ac-118">Name</span></span>      |<span data-ttu-id="7c1ac-119">Описание</span><span class="sxs-lookup"><span data-stu-id="7c1ac-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e4cd4-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e4cd4-117">Request headers</span></span>
+| <span data-ttu-id="e4cd4-118">Имя</span><span class="sxs-lookup"><span data-stu-id="e4cd4-118">Name</span></span>      |<span data-ttu-id="e4cd4-119">Описание</span><span class="sxs-lookup"><span data-stu-id="e4cd4-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7c1ac-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7c1ac-120">Authorization</span></span>  | <span data-ttu-id="7c1ac-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7c1ac-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e4cd4-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e4cd4-120">Authorization</span></span>  | <span data-ttu-id="e4cd4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e4cd4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7c1ac-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7c1ac-123">Request body</span></span>
-<span data-ttu-id="7c1ac-124">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7c1ac-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e4cd4-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e4cd4-123">Request body</span></span>
+<span data-ttu-id="e4cd4-124">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e4cd4-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7c1ac-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="7c1ac-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e4cd4-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="e4cd4-125">Response</span></span>
 
-<span data-ttu-id="7c1ac-126">В случае успеха этот метод возвращает код ответа `200 OK` и коллекцию объектов [plannerPlan](../resources/plannerplan.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="7c1ac-126">If successful, this method returns a `200 OK` response code and collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
+<span data-ttu-id="e4cd4-126">В случае успеха этот метод возвращает код ответа `200 OK` и коллекцию объектов [plannerPlan](../resources/plannerplan.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="e4cd4-126">If successful, this method returns a `200 OK` response code and collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.</span></span>
 
-<span data-ttu-id="7c1ac-p103">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="7c1ac-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="e4cd4-p103">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="e4cd4-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="7c1ac-130">Пример</span><span class="sxs-lookup"><span data-stu-id="7c1ac-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7c1ac-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="7c1ac-131">Request</span></span>
-<span data-ttu-id="7c1ac-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7c1ac-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e4cd4-130">Пример</span><span class="sxs-lookup"><span data-stu-id="e4cd4-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e4cd4-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="e4cd4-131">Request</span></span>
+<span data-ttu-id="e4cd4-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e4cd4-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_plans"
@@ -53,9 +54,8 @@ GET /drive/root/createdByUser/planner/plans
 ```http
 GET https://graph.microsoft.com/v1.0/me/planner/plans
 ```
-##### <a name="response"></a><span data-ttu-id="7c1ac-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="7c1ac-133">Response</span></span>
-<span data-ttu-id="7c1ac-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="7c1ac-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e4cd4-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="e4cd4-133">Response</span></span>
+<span data-ttu-id="e4cd4-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="e4cd4-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
