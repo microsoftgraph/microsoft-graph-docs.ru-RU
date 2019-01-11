@@ -2,12 +2,13 @@
 title: Тип ресурса termsAndConditionsAcceptanceStatus
 description: C) политики данным пользователем. Чтобы получить доступ к корпоративному порталу, пользователям нужно принять последнюю версию условий.
 author: tfitzmac
-ms.openlocfilehash: 9e7788cb34cb6c4e2a173af9bae77e66adb549da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17d76be4db1f790d00fb90322307ff04152291be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360713"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849394"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Тип ресурса termsAndConditionsAcceptanceStatus
 

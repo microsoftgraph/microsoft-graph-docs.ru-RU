@@ -2,12 +2,13 @@
 title: 'Worksheet: delete'
 description: Удаляет лист из книги.
 author: lumine2008
-ms.openlocfilehash: 37a87ecbefbb88afb30a6cb773e03775c4de36b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a8f0b358590bfaf84e24fc476bf7d148453381c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850570"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
 
@@ -35,7 +36,7 @@ POST /workbook/worksheets/{id|name}/delete
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

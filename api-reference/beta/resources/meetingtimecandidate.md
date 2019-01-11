@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса meetingTimeCandidate
 description: 'Предложения о собрании, который содержит сведения, например, время собрания, вероятность присутствия, отдельных '
-ms.openlocfilehash: 56aae66cf4c532108d2db2f8f4cfc71487f09150
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bbd237e9bfebac0b6d3f27b343ec1294d9e21881
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853034"
 ---
 # <a name="meetingtimecandidate-resource-type"></a>Тип ресурса meetingTimeCandidate
 
@@ -44,7 +45,7 @@ ms.locfileid: "27076520"
 |confidence|Double|Процент вероятности того, что все участники будут присутствовать на собрании.|
 |locations|Коллекция [location](location.md)|Массив, в котором указано имя и географические данные каждого расположения для проведения этого варианта собрания.|
 |meetingTimeSlot|[timeSlot](timeslot.md)|Период времени, предложенный для собрания.|
-|organizerAvailability|String| Доступность организатора собрания для этого варианта собрания. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|organizerAvailability|Строка| Доступность организатора собрания для этого варианта собрания. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |suggestionHint|String|Обоснование предложенного времени для проведения собрания.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

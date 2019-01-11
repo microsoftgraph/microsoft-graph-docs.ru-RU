@@ -1,12 +1,13 @@
 ---
 title: Добавление соединителя connectorGroup
 description: Используйте этот интерфейс API для добавления нового connectorGroup соединитель.
-ms.openlocfilehash: 6dfc681f997953420811fbd7223a8c121934949e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 13967fc31bbf482a8eba6db9fe5e4dc1d7bf305d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854623"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя connectorGroup
 
@@ -31,9 +32,9 @@ POST /connectors/{id}/memberOf
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Authorization  | Носителя. Обязательное|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="response"></a>Ответ
@@ -58,8 +59,7 @@ Content-length: 99
 ```
 В тексте запроса укажите представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

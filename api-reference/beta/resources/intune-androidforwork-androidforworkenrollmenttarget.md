@@ -2,12 +2,13 @@
 title: Тип перечисления androidForWorkEnrollmentTarget
 description: Android (en) для управления работой устройства Выбор типа учетной записи
 author: tfitzmac
-ms.openlocfilehash: 75c446e65b8af1466bf1eb5988921c3e1a6b3ac9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec9ba5522871821bd84e7c3c8399dc3d9888b962
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333105"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852383"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>Тип перечисления androidForWorkEnrollmentTarget
 
@@ -19,7 +20,7 @@ Android (en) для управления работой устройства В�
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Н/Д|
+|Нет|0|Н/Д|
 |all|1|Н/Д|
 |нацелено|2|Н/Д|
 |targetedAsEnrollmentRestrictions|3|Н/Д|

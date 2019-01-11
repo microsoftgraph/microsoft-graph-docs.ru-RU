@@ -2,12 +2,13 @@
 title: Список вложений
 description: Получение списка объектов вложений.
 author: angelgolfer-ms
-ms.openlocfilehash: 49467c8b7576dfda8f47587acc1dc8d83f6ce445
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b5ca42a0ee191b62ab8c5484acce41acf7d924a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363658"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853951"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -37,7 +38,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

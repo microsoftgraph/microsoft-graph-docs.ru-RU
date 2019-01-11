@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса bookingReminder
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: f5f7b30c296433dd96ffa14a75e3f0286e8a16a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f1708d4ac9606ad5c862cb9b1bc73e1ddcfec4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853867"
 ---
 # <a name="bookingreminder-resource-type"></a>Тип ресурса bookingReminder
 
@@ -16,11 +17,11 @@ ms.locfileid: "27079008"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |message|String|Сообщение в напоминания.|
 |Смещение|Продолжительность|Количество времени до начала встречи, на который будут отправляться напоминания. Отображаются в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|recipients|String| Лиц, которые shouold получать оповещение. Возможные значения: `allAttendees`, `staff`, `customer`.|
+|recipients|Строка| Лиц, которые shouold получать оповещение. Возможные значения: `allAttendees`, `staff`, `customer`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

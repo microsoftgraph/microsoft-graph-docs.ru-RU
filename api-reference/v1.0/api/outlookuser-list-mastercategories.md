@@ -2,12 +2,13 @@
 title: Перечисление категорий Outlook
 description: Получение всех категорий, определенных для пользователя.
 author: angelgolfer-ms
-ms.openlocfilehash: bb22f38ef83e76198abade54166fddcb5048f0e2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6405e1bb886a397a2762c08c29c6a89e9e37d615
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848162"
 ---
 # <a name="list-outlook-categories"></a>Перечисление категорий Outlook
 
@@ -37,7 +38,7 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

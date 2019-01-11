@@ -2,12 +2,13 @@
 title: Обновление ndesConnector
 description: Обновление свойства объекта ndesConnector.
 author: tfitzmac
-ms.openlocfilehash: 80a518a403ce2354ec2f0a633520baf98ae2c7c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef3857d6b12803279c50540883125ec0685ff81b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847315"
 ---
 # <a name="update-ndesconnector"></a>Обновление ndesConnector
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).

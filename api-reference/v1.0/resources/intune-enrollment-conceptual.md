@@ -2,12 +2,13 @@
 title: Регистрация корпоративных устройств с помощью Intune
 description: " Сценарий (BYOD)."
 author: tfitzmac
-ms.openlocfilehash: f3103d2098053a75839b297eb4ef0a656d6d53a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e182282476c4dc2add7fdb311dee56da8283d59f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845719"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 

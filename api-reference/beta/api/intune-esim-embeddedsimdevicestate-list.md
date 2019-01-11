@@ -2,12 +2,13 @@
 title: Список embeddedSIMDeviceStates
 description: Свойства списка и связей объектов embeddedSIMDeviceState.
 author: tfitzmac
-ms.openlocfilehash: 3e3f68a0152e6919d5bf96847404b1d3d4f100e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c0838d4344ed69e1d6d98b7a1a52a7f10e5d416b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846944"
 ---
 # <a name="list-embeddedsimdevicestates"></a>Список embeddedSIMDeviceStates
 
@@ -37,11 +38,11 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

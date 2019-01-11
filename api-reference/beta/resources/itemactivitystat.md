@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
-ms.openlocfilehash: 067cf88773b5f5d69b2b3538a2ddeab6741631a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d0917d0100d33abee1095e2a7d06a4732d382937
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854252"
 ---
 # <a name="itemactivitystat-resource-type"></a>Тип ресурса itemActivityStat
 
@@ -42,7 +43,7 @@ ms.locfileid: "27075135"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство         | Тип                    | Description
+| Свойство         | Тип                    | Описание
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | Указывает, что Статистика ожидания основаны на неполные данные. Только для чтения.
 | isTrending       | Логический                 | Указывает, является ли элемент «прибора.» Только для чтения.

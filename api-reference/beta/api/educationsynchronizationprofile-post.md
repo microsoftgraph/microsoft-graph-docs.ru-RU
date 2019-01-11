@@ -2,12 +2,13 @@
 title: Создание educationSynchronizationProfile
 description: 'Создание запроса для школа данных синхронизации профиля в клиентов. Запрос состояния, чтобы получить сведения о состоянии профиля. '
 author: mmast-msft
-ms.openlocfilehash: 20c4a7f4dd1512a52bed4a12d1642b8d1138d0e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5ce12f43af4e32691c34038a9a0c0527d314c06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853853"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Создание educationSynchronizationProfile
 
@@ -18,7 +19,7 @@ ms.locfileid: "27345313"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Разрешения |
+| Тип разрешения | Permissions |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
@@ -36,7 +37,7 @@ POST /synchronizationProfiles
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 | Content-Type | string | Приложение/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление объекта [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) с JSON.
 
 ## <a name="response"></a>Ответ

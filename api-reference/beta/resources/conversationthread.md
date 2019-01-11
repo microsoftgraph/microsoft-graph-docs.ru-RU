@@ -2,12 +2,13 @@
 title: Тип ресурса conversationThread
 description: conversationThread — это коллекция экземпляров post.
 author: dkershaw10
-ms.openlocfilehash: 10fc07863c0650cb3a92032d5de10da6cd7011c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1101bb56e69b6418cfd57e719cf1633fa76b161c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845271"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 

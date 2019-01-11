@@ -2,12 +2,13 @@
 title: Список windowsPhone81SCEPCertificateProfiles
 description: Свойства списка и связей объектов windowsPhone81SCEPCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: b2b99031363f08238e048ef1d918fa731a6217e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b842026f6ba8fab51161324c752d510d72115653
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847182"
 ---
 # <a name="list-windowsphone81scepcertificateprofiles"></a>Список windowsPhone81SCEPCertificateProfiles
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

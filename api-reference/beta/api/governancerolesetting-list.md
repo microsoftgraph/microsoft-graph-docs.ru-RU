@@ -1,12 +1,13 @@
 ---
 title: Список governanceRoleSettings
 description: Получите коллекцию governanceRoleSettings для ресурса.
-ms.openlocfilehash: 81aa141cecdfce65f8ca2934b2464f5978b96eac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b0b076ed2b63eab8916567f6aef1cb61046dbc91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853662"
 ---
 # <a name="list-governancerolesettings"></a>Список governanceRoleSettings
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075605"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
 Помимо области разрешений этот интерфейс API требует инициатор запроса может иметь по крайней мере одна роль назначения для ресурса.
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,7 +39,7 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

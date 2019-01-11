@@ -2,12 +2,13 @@
 title: Тип ресурса appleVpnConfiguration
 description: Профиль конфигурации Apple VPN.
 author: tfitzmac
-ms.openlocfilehash: 7a893fd481764daa8f98e33c153c2c451777f063
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 85a70322a601fd09c9b944fcfd1d07885fa8f1fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332573"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853258"
 ---
 # <a name="applevpnconfiguration-resource-type"></a>Тип ресурса appleVpnConfiguration
 
@@ -31,27 +32,27 @@ ms.locfileid: "27332573"
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|connectionName|String.|Имя подключения отображается для пользователя.|
+|connectionName|Строка|Имя подключения отображается для пользователя.|
 |Тип подключения|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|Тип подключения. Возможные значения: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`, `zscalerPrivateAccess`, `f5Access2018`, `citrixSso`, `paloAltoGlobalProtectV2`.|
-|loginGroupOrDomain|String.|Группа для входа или домена, если тип подключения задано значение Dell SonicWALL Mobile подключения.|
-|role|String.|Роль, если тип подключения для обеспечения безопасности Pulse.|
-|область|String.|Область, если тип подключения для обеспечения безопасности Pulse.|
+|loginGroupOrDomain|Строка|Группа для входа или домена, если тип подключения задано значение Dell SonicWALL Mobile подключения.|
+|role|Строка|Роль, если тип подключения для обеспечения безопасности Pulse.|
+|область|Строка|Область, если тип подключения для обеспечения безопасности Pulse.|
 |сервер|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)|VPN-сервер в сети. Убедитесь, что конечные пользователи могут получить доступ к этой сетевой папке.|
-|идентификатор|String.|Идентификатор предоставлена поставщиком VPN, если тип подключения задано значение Custom VPN. Например: Cisco AnyConnect использует идентификатор com.cisco.anyconnect.applevpn.plugin формы|
+|идентификатор|Строка|Идентификатор предоставлена поставщиком VPN, если тип подключения задано значение Custom VPN. Например: Cisco AnyConnect использует идентификатор com.cisco.anyconnect.applevpn.plugin формы|
 |customData|Коллекция [keyValue](../resources/intune-deviceconfig-keyvalue.md)|Пользовательские данные, если тип подключения задано значение Custom VPN. Это поле используется для включения функциональных возможностей, не поддерживаемых Intune, но доступны в решении VPN. Обратитесь к поставщику сети VPN, чтобы узнать, как добавить эти ключ значение пары. Эта коллекция может содержать не более 25 элементов.|
 |customKeyValueData|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Пользовательские данные, если тип подключения задано значение Custom VPN. Это поле используется для включения функциональных возможностей, не поддерживаемых Intune, но доступны в решении VPN. Обратитесь к поставщику сети VPN, чтобы узнать, как добавить эти ключ значение пары. Эта коллекция может содержать не более 25 элементов.|
-|enableSplitTunneling|Boolean.|Отправьте все сетевого трафика через VPN.|
+|enableSplitTunneling|Логический|Отправьте все сетевого трафика через VPN.|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности для VPN-подключения. Возможные значения: `certificate`, `usernameAndPassword`.|
-|enablePerApp|Boolean.|Установка значения true создает полезных данных VPN-App, который позднее можно сопоставить с приложениями, которые может активировать этот conneciton VPN на устройстве iOS конечного пользователя.|
+|enablePerApp|Логический|Установка значения true создает полезных данных VPN-App, который позднее можно сопоставить с приложениями, которые может активировать этот conneciton VPN на устройстве iOS конечного пользователя.|
 |safariDomains|Коллекция String|Safari доменов, при включении VPN каждого параметра приложения. В дополнение к приложений, связанных с этой виртуальной частной сети Safari домены указанного здесь также будет иметь для запуска этой VPN-подключение.|
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md) коллекции|Правила по запросу. Эта коллекция может содержать не более 500 элементов.|
 |прокси-серверу|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Прокси-сервер.|
-|optInToDeviceIdSharing|Boolean.|Явного согласия пользователя к совместному использованию кода устройства сторонних производителей VPN-клиентов для использования во время проверки контроля доступа к сети.|
+|optInToDeviceIdSharing|Логический|Явного согласия пользователя к совместному использованию кода устройства сторонних производителей VPN-клиентов для использования во время проверки контроля доступа к сети.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

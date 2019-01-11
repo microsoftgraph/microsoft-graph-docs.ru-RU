@@ -2,12 +2,13 @@
 title: Удаление androidDeviceOwnerWiFiConfiguration
 description: Удаляет androidDeviceOwnerWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 2636578a531af2e32b2843065f8353f4661152fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0122ecafb75a6552b4cfee0decacd71c6030ffae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852670"
 ---
 # <a name="delete-androiddeviceownerwificonfiguration"></a>Удаление androidDeviceOwnerWiFiConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

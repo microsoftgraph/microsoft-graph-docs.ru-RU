@@ -2,12 +2,13 @@
 title: Обновление объекта deviceAndAppManagementRoleDefinition
 description: Обновление свойств объекта deviceAndAppManagementRoleDefinition.
 author: tfitzmac
-ms.openlocfilehash: 74a66dc0480d9b856ee97f8a1c794659469d06b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a28cd41464891062e9c5620cb7255e1f523c829e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851487"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>Обновление объекта deviceAndAppManagementRoleDefinition
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

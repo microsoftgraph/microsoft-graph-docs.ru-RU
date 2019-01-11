@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса itemAttachment
 description: 'Контакт, событие или сообщение, вложенное в другое событие, сообщение или запись.  '
-ms.openlocfilehash: 79097b10327d895a41090e068a2fd8e9681df125
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: df996175e545b78f4ca9a1b6271b9cb012ffffce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853524"
 ---
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
 
@@ -18,7 +19,7 @@ ms.locfileid: "27026263"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Чтение свойств и связей объекта itemAttachment.|
+|[Получение](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Чтение свойств и связей объекта itemAttachment.|
 |[Delete](../api/attachment-delete.md) | Нет |Удаление объекта itemAttachment. |
 
 ## <a name="properties"></a>Свойства

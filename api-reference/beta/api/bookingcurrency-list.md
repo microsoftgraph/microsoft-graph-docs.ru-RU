@@ -1,12 +1,13 @@
 ---
 title: Список bookingCurrencies
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 146fc1197a8ef206e78304d81c30878a67eeafad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 809ee9222f8ae997633becbe13f87539dd816b1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074761"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849219"
 ---
 # <a name="list-bookingcurrencies"></a>Список bookingCurrencies
 
@@ -35,7 +36,7 @@ GET /bookingCurrencies
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [bookingCurrency](../resources/bookingcurrency.md) в теле ответа.

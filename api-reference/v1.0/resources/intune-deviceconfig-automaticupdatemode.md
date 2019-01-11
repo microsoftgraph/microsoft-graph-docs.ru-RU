@@ -2,12 +2,13 @@
 title: Тип перечисления automaticUpdateMode
 description: Возможные значения для режима автоматического обновления.
 author: tfitzmac
-ms.openlocfilehash: 01e71e51a47a06aff12dd82e132d7eb468f26229
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 07a6b410289ea6455d0f6756efa7d1ec4d735ce4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849989"
 ---
 # <a name="automaticupdatemode-enum-type"></a>Тип перечисления automaticUpdateMode
 

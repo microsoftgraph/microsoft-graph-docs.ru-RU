@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса hostSecurityState
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: ae64d4e0f13e39cb344fd54f5e600cfbfe0dc4f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ae1436dd9771d34c37542eb756f81a4f8f0306a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853377"
 ---
 # <a name="hostsecuritystate-resource-type"></a>Тип ресурса hostSecurityState
 
@@ -16,17 +17,17 @@ ms.locfileid: "27078231"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство   | Тип|Description|
+| Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|полное доменное имя|String|Полное доменное имя (полное доменное имя) (например, machine.company.com) узла.|
+|полное доменное имя|Строка|Полное доменное имя (полное доменное имя) (например, machine.company.com) узла.|
 |isAzureAadJoined|Логический|Значение true, если узел является домен, в состав доменных служб Active Directory Azure.|
 |isAzureAadRegistered|Логический|Значение true, если узел зарегистрирован устройства регистрации Azure Active Directory (BYOD устройства - то есть, не полностью управляются предприятия).|
 |isHybridAzureDomainJoined|Логический|Значение true, если узел присоединен к домену на локальный домен Active Directory.|
-|netBiosName|String|Имя локального узла без DNS-имени домена.|
-|операционная система|String|Операционной системы. (Например, Windows10, MacOS, RHEL, и т.д.).|
-|privateIpAddress|String|Частный (не маршрутизируемые) адрес IPv4 или IPv6 [(см)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
-|publicIpAddress|String|Открыто маршрутизируемыми IPv4 или IPv6-адрес [(см)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
-|riskScore|String|Оценка риска поставщика создается/вычисляемые узла.  Рекомендуемое значение диапазона 0-1, который соответствует в процентах.|
+|netBiosName|Строка|Имя локального узла без DNS-имени домена.|
+|операционная система|Строка|Операционной системы. (Например, Windows10, MacOS, RHEL, и т.д.).|
+|privateIpAddress|Строка|Частный (не маршрутизируемые) адрес IPv4 или IPv6 [(см)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
+|publicIpAddress|Строка|Открыто маршрутизируемыми IPv4 или IPv6-адрес [(см)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
+|riskScore|Строка|Оценка риска поставщика создается/вычисляемые узла.  Рекомендуемое значение диапазона 0-1, который соответствует в процентах.|
 
 ## <a name="json-representation"></a>Представление JSON
 

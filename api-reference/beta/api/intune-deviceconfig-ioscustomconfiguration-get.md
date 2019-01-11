@@ -2,12 +2,13 @@
 title: Get iosCustomConfiguration
 description: Чтение свойств и связей объекта iosCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: aab8af4cbdaff832327f7d92474b88f453b47e10
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9c7dac29bed2b13b6b0baa239af69e15af61f8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355116"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847602"
 ---
 # <a name="get-ioscustomconfiguration"></a>Get iosCustomConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

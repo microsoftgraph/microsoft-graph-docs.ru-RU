@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта plannerProgressTaskBoardTaskFormat
 description: Обновление свойств объекта **plannerProgressTaskBoardTaskFormat**.
-ms.openlocfilehash: 628b17075e02bfad5859f68c118f742a11691a53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4fedbf9bc5edf90b78545a7e7dec29257b471fd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075341"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846398"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Обновление объекта plannerProgressTaskBoardTaskFormat
 
@@ -38,7 +39,7 @@ PATCH /planner/tasks/<id>/progressTaskBoardFormat
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|orderHint|String|Значение подсказки для упорядочивания задачи на представление о ходе выполнения задач платы. Формат определяется в [с помощью подсказки порядке в планировщике](../resources/planner-order-hint-format.md).|
+|orderHint|Строка|Значение подсказки для упорядочивания задачи на представление о ходе выполнения задач платы. Формат определяется в [с помощью подсказки порядке в планировщике](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Ответ
 
@@ -64,8 +65,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

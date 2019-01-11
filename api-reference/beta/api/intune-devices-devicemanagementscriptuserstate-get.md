@@ -2,12 +2,13 @@
 title: Получение deviceManagementScriptUserState
 description: Чтение свойства и связи объекта deviceManagementScriptUserState.
 author: tfitzmac
-ms.openlocfilehash: a1dbe0bf839c52dc8b1d8c4834188154a0bd1095
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b93cc1dc2d957dcbba6816095df9ebe3e8755ac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852565"
 ---
 # <a name="get-devicemanagementscriptuserstate"></a>Получение deviceManagementScriptUserState
 
@@ -39,11 +40,11 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSharePointSiteUsageFileCounts'
 description: Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен в указанный период или им поделились в указанный период.
-ms.openlocfilehash: bbb92167468a35e94c8131d5d0284466278fdf3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 28b847858d4061fd1e56cadcb28f101c601ba0ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025936"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846258"
 ---
 # <a name="reportroot-getsharepointsiteusagefilecounts"></a>reportRoot: getSharePointSiteUsageFileCounts
 

@@ -2,12 +2,13 @@
 title: Тип перечисления remoteAssistanceOnboardingStatus
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 88472833f47ac2cea862d6780c46223fb5f09525
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ff61d48f9d7991400d909c91c02751bc37b5ec03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846580"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>Тип перечисления remoteAssistanceOnboardingStatus
 

@@ -2,12 +2,13 @@
 title: Получение списка pivotTables
 description: Получение списка объектов workbookpivottable.
 author: lumine2008
-ms.openlocfilehash: 4056d901c39db51589cc622e83b51fe294ee7ccd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9aac1b23045ee6f6e751e75dccdc57f61a95203
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320426"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845229"
 ---
 # <a name="list-pivottables"></a>Получение списка pivotTables
 
@@ -39,7 +40,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

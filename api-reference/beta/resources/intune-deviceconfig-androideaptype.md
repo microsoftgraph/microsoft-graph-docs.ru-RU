@@ -2,12 +2,13 @@
 title: Тип перечисления androidEapType
 description: Типы конфигурации расширенной проверки подлинности протокол (EAP).
 author: tfitzmac
-ms.openlocfilehash: 6a1133fa83c2daba414530eb46191f7263953bcd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 009000adbe5f84628bd7f15375391cd2c026e7e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852816"
 ---
 # <a name="androideaptype-enum-type"></a>Тип перечисления androidEapType
 

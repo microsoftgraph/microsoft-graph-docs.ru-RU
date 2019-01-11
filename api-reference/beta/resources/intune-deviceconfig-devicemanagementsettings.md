@@ -2,12 +2,13 @@
 title: Тип ресурса deviceManagementSettings
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 048755ef068bf28381e84067a9eff5d5cbe88ad6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f973f2645b37375641bc536b5ace0fa508fb0b0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334890"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854420"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
@@ -22,7 +23,7 @@ ms.locfileid: "27334890"
 |deviceComplianceCheckinThresholdDays|Int32|Количество дней, в течение которых устройство может считаться соответствующим требованиям, несмотря на отсутствие записей после изменения. Допустимые значения: от 0 до 120|
 |isScheduledActionEnabled|Boolean|Включена ли функция для запланированного действия для правила.|
 |secureByDefault|Boolean|Устройство считается несоответствующим требованиям, если для данного свойства установлено значение true, но не выбраны целевые политики соответствия требованиям.|
-|enhancedJailBreak|Boolean.|— Это функция включена или не для улучшения обнаружения jailbreak.|
+|enhancedJailBreak|Логический|— Это функция включена или не для улучшения обнаружения jailbreak.|
 |deviceInactivityBeforeRetirementInDay|Int32|Когда устройство не проверяет, для указанного числа дней, компании данных может быть удален, устройство не будет в разделе Управление. Допустимые значения 30 на 270 градусов|
 
 ## <a name="relationships"></a>Связи

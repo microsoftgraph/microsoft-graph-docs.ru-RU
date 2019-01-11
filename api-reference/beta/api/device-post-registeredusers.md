@@ -2,12 +2,13 @@
 title: Создание объекта registeredUser
 description: Добавление зарегистрированного пользователя устройства.
 author: tfitzmac
-ms.openlocfilehash: 83b03c8119c4d47b0ab47a4eefb3762f3f0a4ada
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49103a4b9612e5ff801205e653cec4a61bea155b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336318"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854035"
 ---
 # <a name="create-registereduser"></a>Создание объекта registeredUser
 

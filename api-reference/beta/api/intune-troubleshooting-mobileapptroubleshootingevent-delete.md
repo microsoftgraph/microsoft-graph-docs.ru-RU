@@ -2,12 +2,13 @@
 title: Удаление mobileAppTroubleshootingEvent
 description: Удаляет mobileAppTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 93f6d39f585eee694af5d390da7dc8490695c092
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d49ff8be5d4011ea0d1e5d0ed331b087521fbc9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318965"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847203"
 ---
 # <a name="delete-mobileapptroubleshootingevent"></a>Удаление mobileAppTroubleshootingEvent
 
@@ -37,11 +38,11 @@ DELETE /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

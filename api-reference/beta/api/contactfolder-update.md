@@ -2,12 +2,13 @@
 title: Обновление объекта contactFolder
 description: Обновление свойств объекта contactfolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 5b61758309e8489312d2f8360625d6d12566fae0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 155a8fb17f0423e2a4718dde8fc9743d8c1f0342
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854763"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
@@ -35,7 +36,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

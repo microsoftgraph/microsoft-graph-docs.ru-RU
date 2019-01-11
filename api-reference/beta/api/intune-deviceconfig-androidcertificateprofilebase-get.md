@@ -2,12 +2,13 @@
 title: Получение androidCertificateProfileBase
 description: Чтение свойства и связи объекта androidCertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: c2b0ef9f1dd5e4dd608b0fb7042af86d68ed2c4c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd8dc677d0c388c8f5c6bc9763855daf8fb90a22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822822"
 ---
 # <a name="get-androidcertificateprofilebase"></a>Получение androidCertificateProfileBase
 
@@ -42,11 +43,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

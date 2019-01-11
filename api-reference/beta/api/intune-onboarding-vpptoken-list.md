@@ -2,12 +2,13 @@
 title: Список VPP токенов
 description: Список свойств и связей объектов VPP токен.
 author: tfitzmac
-ms.openlocfilehash: 7a3e1d52c91d28b1714b1111f3207942355c5156
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a8ca845ac2392a39ae9378300a74288caef6862
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344333"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851865"
 ---
 # <a name="list-vpptokens"></a>Список VPP токенов
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

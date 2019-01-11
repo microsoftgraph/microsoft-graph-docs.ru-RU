@@ -2,12 +2,13 @@
 title: Список таблиц
 description: Получение списка объектов таблиц.
 author: lumine2008
-ms.openlocfilehash: 0bfac2e9901f35f6ca2ce0c1df5098562a531482
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e99a1842948972dae46658819e504d3cf1b3bd2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853041"
 ---
 # <a name="list-tables"></a>Список таблиц
 
@@ -35,7 +36,7 @@ GET /workbook/tables
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

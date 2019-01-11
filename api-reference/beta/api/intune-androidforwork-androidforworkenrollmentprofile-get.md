@@ -2,12 +2,13 @@
 title: Получение объекта androidForWorkEnrollmentProfile
 description: Чтение свойств и связей объекта androidForWorkEnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 7983524b6992c68d01766d8c6015a05bbfe7342b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f61eef778d6b981f261d603028cf3f276153db7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315878"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848834"
 ---
 # <a name="get-androidforworkenrollmentprofile"></a>Получение объекта androidForWorkEnrollmentProfile
 
@@ -39,11 +40,11 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollment
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,12 +2,13 @@
 title: Получение объекта ChartLegend
 description: Получение свойств и связей объекта chartlegend.
 author: lumine2008
-ms.openlocfilehash: 27b1680adb36222e9d05ca01619d87e73f1a6d8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b29b3a4a83070000693c23bcfc6d7df001b17f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321891"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835331"
 ---
 # <a name="get-chartlegend"></a>Получение объекта ChartLegend
 
@@ -35,7 +36,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/legend
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: Работа с Excel в Microsoft Graph
 description: 'Можно использовать Microsoft Graph, чтобы разрешать веб-приложениям и мобильным приложениям считывать и изменять книги Excel, хранящиеся в OneDrive для бизнеса, на сайте SharePoint или диске группы. Ресурс `Workbook` (или файл Excel) содержит все остальные ресурсы Excel благодаря отношениям. Можно получить доступ к книге через интерфейс API Drive, указав расположение файла в URL-адресе. Пример:'
-ms.openlocfilehash: b08ee4d6a82d4d45d75e53d568102a9c6f322a01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 30129637586b9bfdd6e06ca48f9612d0d067268e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849933"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 

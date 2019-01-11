@@ -2,12 +2,13 @@
 title: Получение educationSynchronizationErrors
 description: 'Получите ошибки, возникающие во время проверки и/или во время синхронизации профиля синхронизации данных конкретного school в клиентов. '
 author: mmast-msft
-ms.openlocfilehash: afd494f77e8298007c70643321c05660569ee1ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b0504ae8ef7c463afb4041a89bfb4229833b63e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322157"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854007"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Получение educationSynchronizationErrors
 
@@ -35,7 +36,7 @@ GET /synchronizationProfiles/{id}/errors
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [Ошибка синхронизации](../resources/educationsynchronizationerror.md) в теле ответа.

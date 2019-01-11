@@ -1,12 +1,13 @@
 ---
 title: Общие ресурсы в Microsoft Intune
 description: Эти конечные точки используются в нескольких Microsoft Graph API Intune рабочих процессов.  Цель, назначения и разрешения, необходимые для использования указанного ресурса изменяется в зависимости от конкретного рабочего процесса и контекста вызова базового.  Кроме того некоторые методы, свойства и действия поддерживаются только для определенных рабочих процессов.
-ms.openlocfilehash: a0e896b2aed219679ec45804dc94b22b7cb9d727
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c381ba84c9240a2b8e7428a3c055b8baf35fb243
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082233"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852628"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -47,7 +48,7 @@ ms.locfileid: "27082233"
 - [Состояние выполнения](intune-shared-runstate.md)
 - [Сохранить параметры создания состояние пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [user](intune-shared-user.md)
+- [пользователь](intune-shared-user.md);
 - [Тип учетной записи маркеров VPP](intune-shared-vpptokenaccounttype.md)
 - [Причина сбоя VPP маркеров действие](intune-shared-vpptokenactionfailurereason.md)
 - [Конфигурация join домена Windows](intune-shared-windowsdomainjoinconfiguration.md)

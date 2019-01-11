@@ -2,12 +2,13 @@
 title: Получение outlookTaskFolder
 description: Получите свойства и связи указанной папки задач Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: 093741ebffb8c2bd3305399b61391af1216eef9f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 61f31f95ab31aab254c3497f088117480e84a512
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853545"
 ---
 # <a name="get-outlooktaskfolder"></a>Получение outlookTaskFolder
 
@@ -37,7 +38,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

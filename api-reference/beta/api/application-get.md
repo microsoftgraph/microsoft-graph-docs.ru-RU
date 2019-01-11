@@ -2,12 +2,13 @@
 title: Получение приложения
 description: Извлечение свойств и связи объекта приложения.
 author: lleonard-msft
-ms.openlocfilehash: a041cbc4e97a59500106542b88e754b9c495f985
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0b83a2ee5ed94d9e793a8f1a37f5fb41acaedaf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849709"
 ---
 # <a name="get-application"></a>Получение приложения
 
@@ -37,7 +38,7 @@ GET /applications/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

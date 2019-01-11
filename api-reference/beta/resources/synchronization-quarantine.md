@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса synchronizationQuarantine
 description: Предоставляет информацию о состоянии карантина synchronizationJob.
-ms.openlocfilehash: b29da9644968ffe17abb02010f8aa5c304ca7905
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fba0077d48e69ed4c2c190d0b50a6fcfc1749626
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849730"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>Тип ресурса synchronizationQuarantine
 
@@ -15,11 +16,11 @@ ms.locfileid: "27075608"
 Предоставляет информацию о состоянии карантина [synchronizationJob](synchronization-synchronizationjob.md).
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |currentBegan|DateTimeOffset|Дата и время последнего карантина вычисляется и накладываемого. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |nextAttempt|DateTimeOffset|Дата и время, станут при следующей попытке выполните повторную оценку на карантин. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|Причина|String|Код, который обозначает зачем накладываемого карантина. Возможные значения: `EncounteredBaseEscrowThreshold`, `EncounteredTotalEscrowThreshold`, `EncounteredEscrowProportionThreshold`, `EncounteredQuarantineException`, `Unknown`.|
+|Причина|Строка|Код, который обозначает зачем накладываемого карантина. Возможные значения: `EncounteredBaseEscrowThreshold`, `EncounteredTotalEscrowThreshold`, `EncounteredEscrowProportionThreshold`, `EncounteredQuarantineException`, `Unknown`.|
 |seriesBegan|DateTimeOffset|Дата и время, когда карантина был сначала установленных в этой серии (серии запускается при карантина сначала накладываемого и сброс сразу же удален карантина). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |seriesCount|Int64|Сколько раз в этой серии карантина было повторно вычисляется и фактически слева (серии запускается при карантина сначала накладываемого и сброс сразу же удален карантин).|
 

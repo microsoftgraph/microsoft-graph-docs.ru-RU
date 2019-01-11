@@ -2,12 +2,13 @@
 title: Список educationSynchronizationProfiles
 description: Получение коллекции школа данных синхронизации профилей в клиента.
 author: mmast-msft
-ms.openlocfilehash: d7ee2b643259eec6c9106ab6ff89245ab79a3044
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b234ac8a6a99f5cc32a3f4416975ea77f4c66ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303103"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853671"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Список educationSynchronizationProfiles
 
@@ -38,7 +39,7 @@ GET /synchronizationProfiles
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.

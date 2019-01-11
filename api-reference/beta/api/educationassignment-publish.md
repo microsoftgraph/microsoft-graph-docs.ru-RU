@@ -1,12 +1,13 @@
 ---
 title: 'educationAssignment: публикация'
 description: Это действие изменяет состояние назначения его исходное состояние черновика для опубликованного состояние. Только преподаватель в классе можно позвонить. После назначения находится в состоянии черновиков, студентов не отображается как назначения, а также будет ли любые объекты отправки. При вызове этот интерфейс API для создания объектов отправки и назначения в списке учащегося.
-ms.openlocfilehash: d5de5a45d437662dbcd2bf869aef93502a3669f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 09261da506113f53c6b6b9ff98af69c7dba4c784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075663"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854742"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: публикация
 
@@ -34,7 +35,7 @@ POST /education/classes/{id}/assignments/{id}/publish
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

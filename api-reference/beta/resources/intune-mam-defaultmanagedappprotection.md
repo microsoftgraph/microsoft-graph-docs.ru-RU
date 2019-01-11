@@ -2,12 +2,13 @@
 title: Тип ресурса defaultManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенного набора приложений для всех пользователей, к которым не применяется политика TargetedManagedAppProtection
 author: tfitzmac
-ms.openlocfilehash: 17f5377df623d439fbd68342f26d9a570c676f55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 907a313e9a5dd399ece3deec2be171b0a87e4713
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849247"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>Тип ресурса defaultManagedAppProtection
 
@@ -63,8 +64,8 @@ ms.locfileid: "27317047"
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о доступе к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeOsVersion|String.|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeAppVersion|String.|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeOsVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeAppVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировки или очистки, когда устройства либо корневого или jailbroken, если DeviceComplianceRequired задано значение true. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, либо блок или стирание, на основании максимальное количество повторных попыток неправильный ПИН-код. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
 |pinRequiredInsteadOfBiometricTimeout|Продолжительность|Время ожидания в минутах для закрепления приложения вместо секретный код не биометрия унаследованные от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -81,15 +82,15 @@ ms.locfileid: "27317047"
 |exemptedAppPackages|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Android пакет приложения в этом списке будут исключены из политики и будет иметь возможность получать данные из управляемых приложений. (только для Android).|
 |faceIdBlocked|Boolean|Указывает, можно ли использовать FaceID вместо ПИН-кода, если для параметра PinRequired установлено значение True. (только для iOS)|
 |minimumWipeSdkVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
-|minimumWipePatchVersion|String.|Android обновления для системы безопасности равен заданному значению или уровень будет удаления управляемых приложений и данных связанные компании. (только для Android).|
-|allowedIosDeviceModels|String.|Список разделенных точкой с запятой моделей устройств могут в виде строки, управляемых приложений для работы. (только для iOS)|
+|minimumWipePatchVersion|Строка|Android обновления для системы безопасности равен заданному значению или уровень будет удаления управляемых приложений и данных связанные компании. (только для Android).|
+|allowedIosDeviceModels|Строка|Список разделенных точкой с запятой моделей устройств могут в виде строки, управляемых приложений для работы. (только для iOS)|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировать или очистки, если модели указанного устройства не допускается. (только для iOS.) Возможные значения: `block`, `wipe`.|
-|allowedAndroidDeviceManufacturers|String.|Список разделенных точкой с запятой производителей устройств могут в виде строки, управляемых приложений для работы. (только для Android).|
+|allowedAndroidDeviceManufacturers|Строка|Список разделенных точкой с запятой производителей устройств могут в виде строки, управляемых приложений для работы. (только для Android).|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировать или очистки, если указанный производителя не допускается. (Только для приложений android). Возможные значения: `block`, `wipe`.|
-|thirdPartyKeyboardsBlocked|Boolean.|Определяет, если клавиатуры сторонних производителей могут при доступе к управляемых приложений. (только для iOS)|
-|filterOpenInToOnlyManagedApps|Boolean.|Определяет, если операция открыть в поддерживается из управляемых приложений для выбранного расположения filesharing. Этот параметр применяется только в том случае, когда AllowedOutboundDataTransferDestinations задано значение ManagedApps и DisableProtectionOfManagedOutboundOpenInData имеет значение False. (только для iOS)|
-|disableProtectionOfManagedOutboundOpenInData|Boolean.|Отключение защиты данных, переданных в другие приложения через параметр OpenIn операций ввода-ВЫВОДА. Этот параметр можно использовать только быть имеет значение True, если AllowedOutboundDataTransferDestinations равен ManagedApps. (только для iOS)|
-|protectInboundDataFromUnknownSources|Boolean.|Для защиты входящих данных неизвестному источнику. Этот параметр можно использовать только быть имеет значение True, если AllowedInboundDataTransferSources равен AllApps. (только для iOS)|
+|thirdPartyKeyboardsBlocked|Логический|Определяет, если клавиатуры сторонних производителей могут при доступе к управляемых приложений. (только для iOS)|
+|filterOpenInToOnlyManagedApps|Логический|Определяет, если операция открыть в поддерживается из управляемых приложений для выбранного расположения filesharing. Этот параметр применяется только в том случае, когда AllowedOutboundDataTransferDestinations задано значение ManagedApps и DisableProtectionOfManagedOutboundOpenInData имеет значение False. (только для iOS)|
+|disableProtectionOfManagedOutboundOpenInData|Логический|Отключение защиты данных, переданных в другие приложения через параметр OpenIn операций ввода-ВЫВОДА. Этот параметр можно использовать только быть имеет значение True, если AllowedOutboundDataTransferDestinations равен ManagedApps. (только для iOS)|
+|protectInboundDataFromUnknownSources|Логический|Для защиты входящих данных неизвестному источнику. Этот параметр можно использовать только быть имеет значение True, если AllowedInboundDataTransferSources равен AllApps. (только для iOS)|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

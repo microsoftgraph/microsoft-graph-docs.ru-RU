@@ -2,12 +2,13 @@
 title: Тип ресурса chatInfo
 description: Сведения о сообщении в группах Майкрософт.
 author: VinodRavichandran
-ms.openlocfilehash: 45af1a7e178286c77ed4bf90528eb602fd48a6bb
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c2cc0dd288abdab7852017600c4c55b9a40b0aa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380417"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852943"
 ---
 # <a name="chatinfo-resource-type"></a>Тип ресурса chatInfo
 
@@ -19,9 +20,9 @@ ms.locfileid: "27380417"
 
 | Свойство            | Тип    | Описание|
 |:--------------------|:--------|:-----------|
-| Код сообщения           | String  | Уникальный идентификатор для сообщения в канале группами Майкрософт. |
-| replyChainMessageId | String  | Идентификатор сообщения. |
-| threadId            | String  | Уникальный идентификатор потока в группами Майкрософт. |
+| Код сообщения           | Строка  | Уникальный идентификатор для сообщения в канале группами Майкрософт. |
+| replyChainMessageId | Строка  | Идентификатор сообщения. |
+| threadId            | Строка  | Уникальный идентификатор потока в группами Майкрософт. |
 
 ## <a name="json-representation"></a>Представление JSON
 

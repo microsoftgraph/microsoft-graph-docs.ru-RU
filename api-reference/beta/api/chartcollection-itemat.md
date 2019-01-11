@@ -2,12 +2,13 @@
 title: 'ChartCollection: ItemAt'
 description: Возвращает диаграмму на основании сведений о ее позиции в коллекции.
 author: lumine2008
-ms.openlocfilehash: 6490958908e7f6093e2d307764dd422026205f46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ebb673d3b9f1ffc5cdcbe0f64d3a9365818c707
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303740"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854567"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -35,12 +36,12 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|number|Значение индекса получаемого объекта. Используется нулевой индекс.|
+|index|число|Значение индекса получаемого объекта. Используется нулевой индекс.|
 
 ## <a name="response"></a>Отклик
 

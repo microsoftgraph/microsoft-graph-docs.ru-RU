@@ -1,12 +1,13 @@
 ---
 title: 'directoryObject: дельты'
 description: 'Get вновь созданных, обновлении или удалении объектов каталога из следующих типов: пользователей, группы и организационной контакт в запросе единого дельты. Отслеживание изменений для получения дополнительных сведений см.'
-ms.openlocfilehash: 98674a141c0567defb06da7b1ccd95a209aaa4f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 823107bce56d77c4e9c29a77405ac014443f5190
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076684"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854497"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: дельты
 
@@ -116,7 +117,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 Ниже приведен пример ответа при использовании `deltaLink` полученных при инициализации запроса. Не `isOf` был использован фильтр, поэтому возвращаются все типы, производные от directoryObject.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

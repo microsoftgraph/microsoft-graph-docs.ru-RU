@@ -1,12 +1,13 @@
 ---
 title: Создание outlookTask
 description: Создание задачи Outlook в группе задач по умолчанию (`My Tasks`) и папки задач по умолчанию (`Tasks`) в почтовом ящике пользователя.
-ms.openlocfilehash: c9019db8e36151c70c5e3d2abe1ea4fea2e94ef0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c158af6ac5125bb410bcbe57a1cb26b8cd955e28
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081254"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853741"
 ---
 # <a name="create-outlooktask"></a>Создание outlookTask
 

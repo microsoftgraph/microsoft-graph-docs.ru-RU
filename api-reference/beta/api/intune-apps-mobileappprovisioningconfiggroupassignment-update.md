@@ -2,12 +2,13 @@
 title: Обновление mobileAppProvisioningConfigGroupAssignment
 description: Обновление свойства объекта mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: c113c16234cb51146aa2e627d39405f740d6aab3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b341de06c1bd5d504e4835ebef8fce2aa3a5aac7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848344"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Обновление mobileAppProvisioningConfigGroupAssignment
 
@@ -37,18 +38,18 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|targetGroupId|String.|Идентификатор группы AAD целевого приложения подготовки конфигурации.|
+|targetGroupId|Строка|Идентификатор группы AAD целевого приложения подготовки конфигурации.|
 |id|Строка|Ключ объекта.|
 
 

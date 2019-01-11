@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса synchronizationTaskExecution
 description: Сводка результатов запустите задание синхронизации.
-ms.openlocfilehash: 4aefba4bdf9ab850892344e6e34683e81d1a1afa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 99b6c66b15577ee4c6cbbf5ffe44e17cf0672696
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078579"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851508"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>Тип ресурса synchronizationTaskExecution
 
@@ -15,9 +16,9 @@ ms.locfileid: "27078579"
 Сводка результатов запустите задание синхронизации.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|activityIdentifier           |String |Идентификатор запуска задания.|
+|activityIdentifier           |Строка |Идентификатор запуска задания.|
 |countEntitled                |Int64  |Число обработанных записей, которые были им назначены для этого приложения.|
 |countEntitledForProvisioning |Int64  |Число обработанных записей, которые были им назначены для подготовки.|
 |countEscrowed                |Int64  |Число записей, которые были депонированные (ошибки).|
@@ -28,7 +29,7 @@ ms.locfileid: "27078579"
 |countImportedDeltas          |Int64  |Число импортированных дельта изменения.|
 |countImportedReferenceDeltas |Int64  |Число импортированных дельта изменения, относящиеся к изменений ссылок.|
 |error                        |[synchronizationError](synchronization-synchronizationerror.md)|Если произошла ошибка, содержит объект **synchronizationError** с подробностями.|
-|state                        |String |Подведение итогов в результате выполнения кода. Возможные значения: `Succeeded`, `Failed`, `EntryLevelErrors`.|
+|state                        |Строка |Подведение итогов в результате выполнения кода. Возможные значения: `Succeeded`, `Failed`, `EntryLevelErrors`.|
 |timeBegan                    |DateTimeOffset|При выполнении этого задания времени начала. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |timeEnded                    |DateTimeOffset|При выполнении этого задания времени окончания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 

@@ -2,12 +2,13 @@
 title: Тип перечисления mobileAppActionType
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 1116231da1e4db409ceefd0e3394fc96159149fe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39be7b8bb7899f0949765bb63ae9efa3df4ebab7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347420"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808941"
 ---
 # <a name="mobileappactiontype-enum-type"></a>Тип перечисления mobileAppActionType
 

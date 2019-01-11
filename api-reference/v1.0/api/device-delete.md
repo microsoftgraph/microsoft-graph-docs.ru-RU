@@ -2,12 +2,13 @@
 title: Удаление устройства
 description: Удаление зарегистрированного устройства.
 author: tfitzmac
-ms.openlocfilehash: ae2f4b458ebd18c366c2b8aecf6b203ff5d42cda
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eec8a198c783a0c04ba1e20d73095701c471b5cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342905"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845670"
 ---
 # <a name="delete-device"></a>Удаление устройства
 
@@ -35,7 +36,7 @@ DELETE /devices/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

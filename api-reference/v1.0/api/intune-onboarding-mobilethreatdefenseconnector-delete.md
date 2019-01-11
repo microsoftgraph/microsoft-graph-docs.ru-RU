@@ -2,12 +2,13 @@
 title: Удаление объекта mobileThreatDefenseConnector
 description: Удаляет объект mobileThreatDefenseConnector.
 author: tfitzmac
-ms.openlocfilehash: 08cf4a904fcdac06c81f15caa5188aa235913e0b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24a7f91cb7fe545d0cac9f8c7acacabd0dcb5855
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321324"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845572"
 ---
 # <a name="delete-mobilethreatdefenseconnector"></a>Удаление объекта mobileThreatDefenseConnector
 
@@ -35,11 +36,11 @@ DELETE /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConne
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

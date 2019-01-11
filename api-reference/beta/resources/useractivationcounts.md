@@ -2,12 +2,13 @@
 title: Тип ресурса userActivationCounts
 description: Ниже указано представление ресурса в формате JSON.
 author: dkershaw10
-ms.openlocfilehash: 396f6182d000df6d701e8c0cbad3dd02a258c4c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cae194545f13d312ee78b572659017752e43a6a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322920"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845292"
 ---
 # <a name="useractivationcounts-resource-type"></a>Тип ресурса userActivationCounts
 
@@ -15,14 +16,14 @@ ms.locfileid: "27322920"
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| productType       | String. | Тип продукта, например «Office 365 профессиональный плюс», «Клиента Project» или «Visio Pro для Office 365". |
+| productType       | Строка | Тип продукта, например «Office 365 профессиональный плюс», «Клиента Project» или «Visio Pro для Office 365". |
 | lastActivatedDate | Date   | Дата последней активации.       |
 | Windows           | Int64  | Число активации в Windows. Эта цифра включает в себя каждые активации на компьютерах под управлением Windows. |
 | mac               | Int64  | Число активации на Mac OS.          |
 | windows10Mobile   | Int64  | Активация на количество Windows 10 mobile. |
 | операций ввода-вывода               | Int64  | Число активации на операций ввода-вывода.             |
 | Android (en)           | Int64  | Число активации на устройстве Android.  |
-| activatedOnSharedComputer   | Boolean. | Значение true, если пользователь продукта на совместно используемый компьютер перед. |
+| activatedOnSharedComputer   | Логический | Значение true, если пользователь продукта на совместно используемый компьютер перед. |
 
 ## <a name="json-representation"></a>Представление JSON
 

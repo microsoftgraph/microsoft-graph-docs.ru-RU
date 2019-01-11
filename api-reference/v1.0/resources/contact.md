@@ -2,12 +2,13 @@
 title: Тип ресурса contact
 description: Контакт — элемент в Outlook, в котором вы можете упорядочить и хранить сведения о людях и организациях, с которыми поддерживаете связь. Контакты содержатся в папках контактов.
 author: angelgolfer-ms
-ms.openlocfilehash: 13eb3b1e3f88c5018031176cffbcc89a038073ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 6ff19278e6cf120404b892bb95881326ce281a72
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854378"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 

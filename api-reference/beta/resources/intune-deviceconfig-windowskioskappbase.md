@@ -2,12 +2,13 @@
 title: Тип ресурса windowsKioskAppBase
 description: Базовый класс для типов приложений
 author: tfitzmac
-ms.openlocfilehash: 2afccff07d15fa1f2dfeff6a4ae9029494faa521
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa83243959105b09707fa28a53271d8f95c5fd1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307450"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845159"
 ---
 # <a name="windowskioskappbase-resource-type"></a>Тип ресурса windowsKioskAppBase
 

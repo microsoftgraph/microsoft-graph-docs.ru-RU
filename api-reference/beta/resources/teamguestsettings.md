@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса teamGuestSettings
 description: Параметры для настройки ли гости могут создать, обновить или удалить каналы рабочих групп.
-ms.openlocfilehash: 744e19165121d101a720a86bec0242fc31137768
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 15644f3761329589a4d770e777ae5fd63751e6be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078483"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851543"
 ---
 # <a name="teamguestsettings-resource-type"></a>Тип ресурса teamGuestSettings
 
@@ -15,7 +16,7 @@ ms.locfileid: "27078483"
 Параметры для настройки ли гости могут создать, обновить или удалить каналы в [группы](team.md).
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|Логический|Если параметр имеет значение true, Гости можно добавлять и обновлять каналов.|
 |allowDeleteChannels|Логический|Если параметр имеет значение true, гости могут удалять каналы.|

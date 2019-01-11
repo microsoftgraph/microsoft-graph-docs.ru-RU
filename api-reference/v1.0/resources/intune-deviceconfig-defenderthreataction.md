@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления defenderThreatAction
 description: Действие по умолчанию Защитника для обнаруженных вредоносных программ угрозы, связанные с.
-ms.openlocfilehash: a5eb108a3ab26596eec9abe838e3bbfe853d96d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ed84a16dbac493a3e962e37ba246d8d418782a91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852824"
 ---
 # <a name="defenderthreataction-enum-type"></a>Тип перечисления defenderThreatAction
 
@@ -14,7 +15,7 @@ ms.locfileid: "27027289"
 
 Действие по умолчанию Защитника для обнаруженных вредоносных программ угрозы, связанные с.
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Применить действие на основе определения обновления.|
 |clean|1|Очистите обнаруженных угроз.|

@@ -2,12 +2,13 @@
 title: Создание объекта userInstallStateSummary
 description: Создание объекта userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: a1da2855896bae9d9c902ae978d3ce8c127f3bc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4630d8176c8ab1a2aa20f118d97304c213020a17
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847378"
 ---
 # <a name="create-userinstallstatesummary"></a>Создание объекта userInstallStateSummary
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

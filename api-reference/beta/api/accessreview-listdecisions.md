@@ -1,12 +1,13 @@
 ---
 title: Список accessReview решения
 description: В Azure AD access дается обзор компонента, извлечение решения accessReview объекта.
-ms.openlocfilehash: d8cf89706f053dfee6e98cdf23d2539874ac6997
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ade39abbf63c4e1eb71a6fa25fd3febd8a24c41b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076019"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849751"
 ---
 # <a name="list-accessreview-decisions"></a>Список accessReview решения
 
@@ -33,9 +34,9 @@ GET /accessReviews('{reviewId}')/decisions
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ
@@ -53,7 +54,7 @@ GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fe
 ```
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,10 +84,10 @@ Content-type: application/json
 |:---------------|:--------|:----------|
 |[Получение accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Получите обзор доступа. |
 |[Мои accessReview решения](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) коллекции|    В качестве читателя получите Мои решения accessReview.|
-|[Отправлять напоминание accessReview](accessreview-sendreminder.md) |       Отсутствуют.   |   Отправьте напоминание, чтобы проверяющие accessReview. |
-|[Остановка accessReview](accessreview-stop.md) |        Отсутствуют.   |   Остановите accessReview. |
-|[Сброс accessReview решения](accessreview-reset.md) |        Отсутствуют.   |   Сброс решения, принимаемые при accessReview в хода выполнения.|
-|[Применение accessReview решения](accessreview-apply.md) |        Отсутствуют.   |   Применение решения из завершенных accessReview.|
+|[Отправлять напоминание accessReview](accessreview-sendreminder.md) |       Нет.   |   Отправьте напоминание, чтобы проверяющие accessReview. |
+|[Остановка accessReview](accessreview-stop.md) |        Нет.   |   Остановите accessReview. |
+|[Сброс accessReview решения](accessreview-reset.md) |        Нет.   |   Сброс решения, принимаемые при accessReview в хода выполнения.|
+|[Применение accessReview решения](accessreview-apply.md) |        Нет.   |   Применение решения из завершенных accessReview.|
 
 
 <!-- {

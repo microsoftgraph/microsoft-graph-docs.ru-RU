@@ -2,12 +2,13 @@
 title: Создание windowsPhoneXAP
 description: Создание нового объекта windowsPhoneXAP.
 author: tfitzmac
-ms.openlocfilehash: f20a1cc210f87bc9a2bad31cc6d79eac6aa892bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b219870d1d3539ee9b29b221af45fc38210c777e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808829"
 ---
 # <a name="create-windowsphonexap"></a>Создание windowsPhoneXAP
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта windowsPhoneXAP.
 
 В следующей таблице показаны свойства, которые необходимы для создания windowsPhoneXAP.
@@ -67,7 +68,7 @@ POST /deviceAppManagement/mobileApps
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|productIdentifier|String.|Идентификатор продукта.|
+|productIdentifier|Строка|Идентификатор продукта.|
 |identityVersion|String|Версия удостоверения.|
 
 

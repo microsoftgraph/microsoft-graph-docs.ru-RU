@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса synchronizationSchema
 description: Определяет объекты, которые будут синхронизированы и как они будут синхронизироваться. Схема синхронизации содержит основные сведения об установке для задания синхронизации. Как правило будет настроить некоторые сопоставления атрибутов или добавить фильтр области видимости, чтобы синхронизировать только объекты, удовлетворяющие определенному условию.
-ms.openlocfilehash: 13e57db5f78af2d3f0a8243d247fe5c3f3d5e0af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 696bdbbc6fa2d96965d11a12fb09fdfc0ce16106
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078129"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847322"
 ---
 # <a name="synchronizationschema-resource-type"></a>Тип ресурса synchronizationSchema
 
@@ -42,11 +43,11 @@ ms.locfileid: "27078129"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство      | Тип      | Description    |
+| Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
 |directories            |[directoryDefinition](synchronization-directorydefinition.md) коллекции   |Описывает каталоги и объекты, которые входят в состав [synchronizationJob](synchronization-synchronizationjob.md) или [synchronizationTemplate](synchronization-synchronizationtemplate.md). |
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md) коллекции   |Коллекция правил синхронизации, настроенных для [synchronizationJob](synchronization-synchronizationjob.md) или [synchronizationTemplate](synchronization-synchronizationtemplate.md) |
-|version                |String                             |Версия схемы, автоматического обновления при каждом изменении схемы.|
+|version                |Строка                             |Версия схемы, автоматического обновления при каждом изменении схемы.|
 
 
 ## <a name="json-representation"></a>Представление JSON
