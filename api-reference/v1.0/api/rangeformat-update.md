@@ -2,64 +2,65 @@
 title: Обновление объекта RangeFormat
 description: Обновление свойств объекта rangeformat.
 author: lumine2008
-ms.openlocfilehash: 0aea5712db6eb149356e1c3c9db85e5aebcebf17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 410c9fd705f0f91a48a0e0c6f542f4d539bcf914
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344620"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843094"
 ---
-# <a name="update-rangeformat"></a><span data-ttu-id="93eb4-103">Обновление объекта RangeFormat</span><span class="sxs-lookup"><span data-stu-id="93eb4-103">Update rangeformat</span></span>
+# <a name="update-rangeformat"></a><span data-ttu-id="c9a01-103">Обновление объекта RangeFormat</span><span class="sxs-lookup"><span data-stu-id="c9a01-103">Update rangeformat</span></span>
 
-<span data-ttu-id="93eb4-104">Обновление свойств объекта rangeformat.</span><span class="sxs-lookup"><span data-stu-id="93eb4-104">Update the properties of rangeformat object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="93eb4-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="93eb4-105">Permissions</span></span>
-<span data-ttu-id="93eb4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="93eb4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c9a01-104">Обновление свойств объекта rangeformat.</span><span class="sxs-lookup"><span data-stu-id="c9a01-104">Update the properties of rangeformat object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c9a01-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c9a01-105">Permissions</span></span>
+<span data-ttu-id="c9a01-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c9a01-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="93eb4-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="93eb4-108">Permission type</span></span>      | <span data-ttu-id="93eb4-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="93eb4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c9a01-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c9a01-108">Permission type</span></span>      | <span data-ttu-id="c9a01-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c9a01-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="93eb4-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="93eb4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="93eb4-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93eb4-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="93eb4-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="93eb4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="93eb4-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="93eb4-113">Not supported.</span></span>    |
-|<span data-ttu-id="93eb4-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="93eb4-114">Application</span></span> | <span data-ttu-id="93eb4-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="93eb4-115">Not supported.</span></span> |
+|<span data-ttu-id="c9a01-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c9a01-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c9a01-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9a01-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c9a01-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c9a01-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9a01-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c9a01-113">Not supported.</span></span>    |
+|<span data-ttu-id="c9a01-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c9a01-114">Application</span></span> | <span data-ttu-id="c9a01-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c9a01-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="93eb4-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c9a01-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}/range/format
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
-## <a name="request-headers"></a><span data-ttu-id="93eb4-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="93eb4-117">Request headers</span></span>
-| <span data-ttu-id="93eb4-118">Имя</span><span class="sxs-lookup"><span data-stu-id="93eb4-118">Name</span></span>       | <span data-ttu-id="93eb4-119">Описание</span><span class="sxs-lookup"><span data-stu-id="93eb4-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c9a01-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c9a01-117">Request headers</span></span>
+| <span data-ttu-id="c9a01-118">Имя</span><span class="sxs-lookup"><span data-stu-id="c9a01-118">Name</span></span>       | <span data-ttu-id="c9a01-119">Описание</span><span class="sxs-lookup"><span data-stu-id="c9a01-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="93eb4-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="93eb4-120">Authorization</span></span>  | <span data-ttu-id="93eb4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="93eb4-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="93eb4-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="93eb4-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c9a01-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c9a01-120">Authorization</span></span>  | <span data-ttu-id="c9a01-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c9a01-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c9a01-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="c9a01-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="93eb4-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="93eb4-126">Request body</span></span>
-<span data-ttu-id="93eb4-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c9a01-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c9a01-126">Request body</span></span>
+<span data-ttu-id="c9a01-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="93eb4-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="93eb4-130">Property</span></span>     | <span data-ttu-id="93eb4-131">Тип</span><span class="sxs-lookup"><span data-stu-id="93eb4-131">Type</span></span>   |<span data-ttu-id="93eb4-132">Описание</span><span class="sxs-lookup"><span data-stu-id="93eb4-132">Description</span></span>|
+| <span data-ttu-id="c9a01-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="c9a01-130">Property</span></span>     | <span data-ttu-id="c9a01-131">Тип</span><span class="sxs-lookup"><span data-stu-id="c9a01-131">Type</span></span>   |<span data-ttu-id="c9a01-132">Описание</span><span class="sxs-lookup"><span data-stu-id="c9a01-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="93eb4-133">columnWidth</span><span class="sxs-lookup"><span data-stu-id="93eb4-133">columnWidth</span></span>|<span data-ttu-id="93eb4-134">double</span><span class="sxs-lookup"><span data-stu-id="93eb4-134">double</span></span>|<span data-ttu-id="93eb4-p105">Возвращает или задает ширину всех столбцов в пределах диапазона. Если столбцы разной ширины, будет возвращено значение NULL.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p105">Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.</span></span>|
-|<span data-ttu-id="93eb4-137">horizontalAlignment</span><span class="sxs-lookup"><span data-stu-id="93eb4-137">horizontalAlignment</span></span>|<span data-ttu-id="93eb4-138">string</span><span class="sxs-lookup"><span data-stu-id="93eb4-138">string</span></span>|<span data-ttu-id="93eb4-139">Представляет горизонтальное выравнивание для указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="93eb4-139">Represents the horizontal alignment for the specified object.</span></span> <span data-ttu-id="93eb4-140">Возможные значения: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.</span><span class="sxs-lookup"><span data-stu-id="93eb4-140">The possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.</span></span>|
-|<span data-ttu-id="93eb4-141">rowHeight</span><span class="sxs-lookup"><span data-stu-id="93eb4-141">rowHeight</span></span>|<span data-ttu-id="93eb4-142">double</span><span class="sxs-lookup"><span data-stu-id="93eb4-142">double</span></span>|<span data-ttu-id="93eb4-p107">Возвращает или задает высоту всех строк в диапазоне. Если строки разной высоты, будет возвращено значение NULL.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p107">Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.</span></span>|
-|<span data-ttu-id="93eb4-145">verticalAlignment</span><span class="sxs-lookup"><span data-stu-id="93eb4-145">verticalAlignment</span></span>|<span data-ttu-id="93eb4-146">string</span><span class="sxs-lookup"><span data-stu-id="93eb4-146">string</span></span>|<span data-ttu-id="93eb4-147">Представляет вертикальное выравнивание для указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="93eb4-147">Represents the vertical alignment for the specified object.</span></span> <span data-ttu-id="93eb4-148">Возможные значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.</span><span class="sxs-lookup"><span data-stu-id="93eb4-148">The possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.</span></span>|
-|<span data-ttu-id="93eb4-149">wrapText</span><span class="sxs-lookup"><span data-stu-id="93eb4-149">wrapText</span></span>|<span data-ttu-id="93eb4-150">boolean</span><span class="sxs-lookup"><span data-stu-id="93eb4-150">boolean</span></span>|<span data-ttu-id="93eb4-p109">Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p109">Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting</span></span>|
+|<span data-ttu-id="c9a01-133">columnWidth</span><span class="sxs-lookup"><span data-stu-id="c9a01-133">columnWidth</span></span>|<span data-ttu-id="c9a01-134">double</span><span class="sxs-lookup"><span data-stu-id="c9a01-134">double</span></span>|<span data-ttu-id="c9a01-p105">Возвращает или задает ширину всех столбцов в пределах диапазона. Если столбцы разной ширины, будет возвращено значение NULL.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p105">Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.</span></span>|
+|<span data-ttu-id="c9a01-137">horizontalAlignment</span><span class="sxs-lookup"><span data-stu-id="c9a01-137">horizontalAlignment</span></span>|<span data-ttu-id="c9a01-138">string</span><span class="sxs-lookup"><span data-stu-id="c9a01-138">string</span></span>|<span data-ttu-id="c9a01-139">Представляет горизонтальное выравнивание для указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="c9a01-139">Represents the horizontal alignment for the specified object.</span></span> <span data-ttu-id="c9a01-140">Возможные значения: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.</span><span class="sxs-lookup"><span data-stu-id="c9a01-140">The possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.</span></span>|
+|<span data-ttu-id="c9a01-141">rowHeight</span><span class="sxs-lookup"><span data-stu-id="c9a01-141">rowHeight</span></span>|<span data-ttu-id="c9a01-142">double</span><span class="sxs-lookup"><span data-stu-id="c9a01-142">double</span></span>|<span data-ttu-id="c9a01-p107">Возвращает или задает высоту всех строк в диапазоне. Если строки разной высоты, будет возвращено значение NULL.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p107">Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.</span></span>|
+|<span data-ttu-id="c9a01-145">verticalAlignment</span><span class="sxs-lookup"><span data-stu-id="c9a01-145">verticalAlignment</span></span>|<span data-ttu-id="c9a01-146">string</span><span class="sxs-lookup"><span data-stu-id="c9a01-146">string</span></span>|<span data-ttu-id="c9a01-147">Представляет вертикальное выравнивание для указанного объекта.</span><span class="sxs-lookup"><span data-stu-id="c9a01-147">Represents the vertical alignment for the specified object.</span></span> <span data-ttu-id="c9a01-148">Возможные значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.</span><span class="sxs-lookup"><span data-stu-id="c9a01-148">The possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.</span></span>|
+|<span data-ttu-id="c9a01-149">wrapText</span><span class="sxs-lookup"><span data-stu-id="c9a01-149">wrapText</span></span>|<span data-ttu-id="c9a01-150">boolean</span><span class="sxs-lookup"><span data-stu-id="c9a01-150">boolean</span></span>|<span data-ttu-id="c9a01-p109">Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p109">Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting</span></span>|
 
-## <a name="response"></a><span data-ttu-id="93eb4-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c9a01-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-153">Response</span></span>
 
-<span data-ttu-id="93eb4-154">Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленный объект [WorkbookRangeFormat](../resources/rangeformat.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="93eb4-154">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFormat](../resources/rangeformat.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="93eb4-155">Пример</span><span class="sxs-lookup"><span data-stu-id="93eb4-155">Example</span></span>
+<span data-ttu-id="c9a01-154">Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленный объект [WorkbookRangeFormat](../resources/rangeformat.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="c9a01-154">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFormat](../resources/rangeformat.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c9a01-155">Пример</span><span class="sxs-lookup"><span data-stu-id="c9a01-155">Example</span></span>
 
-### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a><span data-ttu-id="93eb4-156">Обновляет свойства Format, Fill и Font в трех ячейках таблицы</span><span class="sxs-lookup"><span data-stu-id="93eb4-156">Update the format, fill, and font properties in three table cells</span></span>
+### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a><span data-ttu-id="c9a01-156">Обновляет свойства Format, Fill и Font в трех ячейках таблицы</span><span class="sxs-lookup"><span data-stu-id="c9a01-156">Update the format, fill, and font properties in three table cells</span></span>
 
-<span data-ttu-id="93eb4-157">Следующие примеры демонстрируют, как для обновления свойств свойства [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md)и [WorkbookRangeFont](../resources/rangefont.md) указанного диапазона.</span><span class="sxs-lookup"><span data-stu-id="93eb4-157">The following examples demonstrate how to update properties of the [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md), and [WorkbookRangeFont](../resources/rangefont.md) properties of a specified range.</span></span>
+<span data-ttu-id="c9a01-157">Следующие примеры демонстрируют, как для обновления свойств свойства [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md)и [WorkbookRangeFont](../resources/rangefont.md) указанного диапазона.</span><span class="sxs-lookup"><span data-stu-id="c9a01-157">The following examples demonstrate how to update properties of the [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md), and [WorkbookRangeFont](../resources/rangefont.md) properties of a specified range.</span></span>
 
-<span data-ttu-id="93eb4-158">В результате этого набора запросов создается таблица с тремя ячейками, отформатированными так же, как три ячейки на приведенном ниже рисунке.</span><span class="sxs-lookup"><span data-stu-id="93eb4-158">The result of this set of requests is a table with three cells formatted like the top three cells in the image below.</span></span>
+<span data-ttu-id="c9a01-158">В результате этого набора запросов создается таблица с тремя ячейками, отформатированными так же, как три ячейки на приведенном ниже рисунке.</span><span class="sxs-lookup"><span data-stu-id="c9a01-158">The result of this set of requests is a table with three cells formatted like the top three cells in the image below.</span></span>
 
 ![Таблица-диаграмма Excel с тремя ячейками, свойства Format, Fill и Font которых были обновлены.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
-##### <a name="request"></a><span data-ttu-id="93eb4-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-160">Request</span></span>
-<span data-ttu-id="93eb4-161">Этот запрос обновляет выравнивание по вертикали, высоту строк и столбцов первой ячейки.</span><span class="sxs-lookup"><span data-stu-id="93eb4-161">This request updates the vertical alignment, row height, and column height of the first cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="c9a01-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-160">Request</span></span>
+<span data-ttu-id="c9a01-161">Этот запрос обновляет выравнивание по вертикали, высоту строк и столбцов первой ячейки.</span><span class="sxs-lookup"><span data-stu-id="c9a01-161">This request updates the vertical alignment, row height, and column height of the first cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -76,8 +77,8 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="93eb4-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-162">Response</span></span>
-<span data-ttu-id="93eb4-p110">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9a01-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-162">Response</span></span>
+<span data-ttu-id="c9a01-p110">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,8 +97,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="93eb4-166">Запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-166">Request</span></span>
-<span data-ttu-id="93eb4-167">Этот запрос обновляет начертание, размер и цвет шрифта в первой ячейке.</span><span class="sxs-lookup"><span data-stu-id="93eb4-167">This request updates the font style, size, and color of the first cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="c9a01-166">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-166">Request</span></span>
+<span data-ttu-id="c9a01-167">Этот запрос обновляет начертание, размер и цвет шрифта в первой ячейке.</span><span class="sxs-lookup"><span data-stu-id="c9a01-167">This request updates the font style, size, and color of the first cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -113,8 +114,8 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a><span data-ttu-id="93eb4-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-168">Response</span></span>
-<span data-ttu-id="93eb4-p111">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9a01-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-168">Response</span></span>
+<span data-ttu-id="c9a01-p111">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,8 +135,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="93eb4-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-172">Request</span></span>
-<span data-ttu-id="93eb4-173">Этот запрос обновляет цвет заливки первой ячейки.</span><span class="sxs-lookup"><span data-stu-id="93eb4-173">This request updates the background color of the first cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="c9a01-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-172">Request</span></span>
+<span data-ttu-id="c9a01-173">Этот запрос обновляет цвет заливки первой ячейки.</span><span class="sxs-lookup"><span data-stu-id="c9a01-173">This request updates the background color of the first cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -149,8 +150,8 @@ Content-type: application/json
   "color": "#FF0000"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="93eb4-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-174">Response</span></span>
-<span data-ttu-id="93eb4-p112">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p112">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9a01-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-174">Response</span></span>
+<span data-ttu-id="c9a01-p112">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p112">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -164,8 +165,8 @@ Content-type: application/json
     "color": "#FF0000"
 }
 ```
-##### <a name="request"></a><span data-ttu-id="93eb4-178">Запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-178">Request</span></span>
-<span data-ttu-id="93eb4-179">Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов второй ячейки.</span><span class="sxs-lookup"><span data-stu-id="93eb4-179">This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="c9a01-178">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-178">Request</span></span>
+<span data-ttu-id="c9a01-179">Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов второй ячейки.</span><span class="sxs-lookup"><span data-stu-id="c9a01-179">This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -183,8 +184,8 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="93eb4-180">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-180">Response</span></span>
-<span data-ttu-id="93eb4-p113">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9a01-180">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-180">Response</span></span>
+<span data-ttu-id="c9a01-p113">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -203,8 +204,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="93eb4-184">Запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-184">Request</span></span>
-<span data-ttu-id="93eb4-185">Этот запрос обновляет начертание и размер шрифта во второй ячейке.</span><span class="sxs-lookup"><span data-stu-id="93eb4-185">This request updates the font style and size of the second cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="c9a01-184">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-184">Request</span></span>
+<span data-ttu-id="c9a01-185">Этот запрос обновляет начертание и размер шрифта во второй ячейке.</span><span class="sxs-lookup"><span data-stu-id="c9a01-185">This request updates the font style and size of the second cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -219,8 +220,8 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a><span data-ttu-id="93eb4-186">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-186">Response</span></span>
-<span data-ttu-id="93eb4-p114">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9a01-186">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-186">Response</span></span>
+<span data-ttu-id="c9a01-p114">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -240,8 +241,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="93eb4-190">Запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-190">Request</span></span>
-<span data-ttu-id="93eb4-191">Этот запрос обновляет цвет заливки второй ячейки.</span><span class="sxs-lookup"><span data-stu-id="93eb4-191">This request updates the background color of the second cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="c9a01-190">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-190">Request</span></span>
+<span data-ttu-id="c9a01-191">Этот запрос обновляет цвет заливки второй ячейки.</span><span class="sxs-lookup"><span data-stu-id="c9a01-191">This request updates the background color of the second cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -255,8 +256,8 @@ Content-type: application/json
   "color": "#00FF00"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="93eb4-192">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-192">Response</span></span>
-<span data-ttu-id="93eb4-p115">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p115">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9a01-192">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-192">Response</span></span>
+<span data-ttu-id="c9a01-p115">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p115">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -271,8 +272,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="93eb4-196">Запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-196">Request</span></span>
-<span data-ttu-id="93eb4-197">Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов третьей ячейки.</span><span class="sxs-lookup"><span data-stu-id="93eb4-197">This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="c9a01-196">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-196">Request</span></span>
+<span data-ttu-id="c9a01-197">Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов третьей ячейки.</span><span class="sxs-lookup"><span data-stu-id="c9a01-197">This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -290,8 +291,8 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="93eb4-198">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-198">Response</span></span>
-<span data-ttu-id="93eb4-p116">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p116">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9a01-198">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-198">Response</span></span>
+<span data-ttu-id="c9a01-p116">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p116">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -310,8 +311,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="93eb4-202">Запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-202">Request</span></span>
-<span data-ttu-id="93eb4-203">Этот запрос обновляет начертание, размер и цвет шрифта в третьей ячейке.</span><span class="sxs-lookup"><span data-stu-id="93eb4-203">This request updates the font style, size, and color of the third cell.</span></span> <span data-ttu-id="93eb4-204">Обратите внимание: свойство подчеркивания (Underline) принимает значения **Single** или **Double**.</span><span class="sxs-lookup"><span data-stu-id="93eb4-204">Note that the underline property takes **Single** or **Double** as values.</span></span>
+##### <a name="request"></a><span data-ttu-id="c9a01-202">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-202">Request</span></span>
+<span data-ttu-id="c9a01-203">Этот запрос обновляет начертание, размер и цвет шрифта в третьей ячейке.</span><span class="sxs-lookup"><span data-stu-id="c9a01-203">This request updates the font style, size, and color of the third cell.</span></span> <span data-ttu-id="c9a01-204">Обратите внимание: свойство подчеркивания (Underline) принимает значения **Single** или **Double**.</span><span class="sxs-lookup"><span data-stu-id="c9a01-204">Note that the underline property takes **Single** or **Double** as values.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -327,8 +328,8 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a><span data-ttu-id="93eb4-205">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-205">Response</span></span>
-<span data-ttu-id="93eb4-p118">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p118">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9a01-205">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-205">Response</span></span>
+<span data-ttu-id="c9a01-p118">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p118">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -348,8 +349,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="93eb4-209">Запрос</span><span class="sxs-lookup"><span data-stu-id="93eb4-209">Request</span></span>
-<span data-ttu-id="93eb4-210">Этот запрос обновляет цвет заливки третьей ячейки.</span><span class="sxs-lookup"><span data-stu-id="93eb4-210">This request updates the background color of the third cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="c9a01-209">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9a01-209">Request</span></span>
+<span data-ttu-id="c9a01-210">Этот запрос обновляет цвет заливки третьей ячейки.</span><span class="sxs-lookup"><span data-stu-id="c9a01-210">This request updates the background color of the third cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -363,8 +364,8 @@ Content-type: application/json
   "color": "#0000FF"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="93eb4-211">Отклик</span><span class="sxs-lookup"><span data-stu-id="93eb4-211">Response</span></span>
-<span data-ttu-id="93eb4-p119">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="93eb4-p119">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9a01-211">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9a01-211">Response</span></span>
+<span data-ttu-id="c9a01-p119">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="c9a01-p119">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

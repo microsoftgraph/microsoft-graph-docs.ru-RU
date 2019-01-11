@@ -1,33 +1,34 @@
 ---
 title: Тип ресурса oneDriveUsageAccountDetail
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 4b80ebc24aa45be0368dbb59d6d3e99e7adacc8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92695f509302ede4b3ce64320e8f4ed42418f7e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842611"
 ---
-# <a name="onedriveusageaccountdetail-resource-type"></a><span data-ttu-id="df2e6-103">Тип ресурса oneDriveUsageAccountDetail</span><span class="sxs-lookup"><span data-stu-id="df2e6-103">oneDriveUsageAccountDetail resource type</span></span>
+# <a name="onedriveusageaccountdetail-resource-type"></a><span data-ttu-id="bec5c-103">Тип ресурса oneDriveUsageAccountDetail</span><span class="sxs-lookup"><span data-stu-id="bec5c-103">oneDriveUsageAccountDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="df2e6-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="df2e6-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bec5c-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="bec5c-104">Properties</span></span>
 
-| <span data-ttu-id="df2e6-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="df2e6-105">Property</span></span>                | <span data-ttu-id="df2e6-106">Тип</span><span class="sxs-lookup"><span data-stu-id="df2e6-106">Type</span></span>    |
+| <span data-ttu-id="bec5c-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="bec5c-105">Property</span></span>                | <span data-ttu-id="bec5c-106">Тип</span><span class="sxs-lookup"><span data-stu-id="bec5c-106">Type</span></span>    |
 | :---------------------- | :------ |
-| <span data-ttu-id="df2e6-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="df2e6-107">reportRefreshDate</span></span>       | <span data-ttu-id="df2e6-108">Date</span><span class="sxs-lookup"><span data-stu-id="df2e6-108">Date</span></span>    |
-| <span data-ttu-id="df2e6-109">siteUrl</span><span class="sxs-lookup"><span data-stu-id="df2e6-109">siteUrl</span></span>                 | <span data-ttu-id="df2e6-110">String</span><span class="sxs-lookup"><span data-stu-id="df2e6-110">String</span></span>  |
-| <span data-ttu-id="df2e6-111">ownerDisplayName</span><span class="sxs-lookup"><span data-stu-id="df2e6-111">ownerDisplayName</span></span>        | <span data-ttu-id="df2e6-112">String</span><span class="sxs-lookup"><span data-stu-id="df2e6-112">String</span></span>  |
-| <span data-ttu-id="df2e6-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="df2e6-113">isDeleted</span></span>               | <span data-ttu-id="df2e6-114">Логический</span><span class="sxs-lookup"><span data-stu-id="df2e6-114">Boolean</span></span> |
-| <span data-ttu-id="df2e6-115">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="df2e6-115">lastActivityDate</span></span>        | <span data-ttu-id="df2e6-116">Date</span><span class="sxs-lookup"><span data-stu-id="df2e6-116">Date</span></span>    |
-| <span data-ttu-id="df2e6-117">fileCount</span><span class="sxs-lookup"><span data-stu-id="df2e6-117">fileCount</span></span>               | <span data-ttu-id="df2e6-118">Int64</span><span class="sxs-lookup"><span data-stu-id="df2e6-118">Int64</span></span>   |
-| <span data-ttu-id="df2e6-119">activeFileCount</span><span class="sxs-lookup"><span data-stu-id="df2e6-119">activeFileCount</span></span>         | <span data-ttu-id="df2e6-120">Int64</span><span class="sxs-lookup"><span data-stu-id="df2e6-120">Int64</span></span>   |
-| <span data-ttu-id="df2e6-121">storageUsedInBytes</span><span class="sxs-lookup"><span data-stu-id="df2e6-121">storageUsedInBytes</span></span>      | <span data-ttu-id="df2e6-122">Int64</span><span class="sxs-lookup"><span data-stu-id="df2e6-122">Int64</span></span>   |
-| <span data-ttu-id="df2e6-123">storageAllocatedInBytes</span><span class="sxs-lookup"><span data-stu-id="df2e6-123">storageAllocatedInBytes</span></span> | <span data-ttu-id="df2e6-124">Int64</span><span class="sxs-lookup"><span data-stu-id="df2e6-124">Int64</span></span>   |
-| <span data-ttu-id="df2e6-125">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="df2e6-125">reportPeriod</span></span>            | <span data-ttu-id="df2e6-126">String</span><span class="sxs-lookup"><span data-stu-id="df2e6-126">String</span></span>  |
+| <span data-ttu-id="bec5c-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="bec5c-107">reportRefreshDate</span></span>       | <span data-ttu-id="bec5c-108">Date</span><span class="sxs-lookup"><span data-stu-id="bec5c-108">Date</span></span>    |
+| <span data-ttu-id="bec5c-109">siteUrl</span><span class="sxs-lookup"><span data-stu-id="bec5c-109">siteUrl</span></span>                 | <span data-ttu-id="bec5c-110">Строка</span><span class="sxs-lookup"><span data-stu-id="bec5c-110">String</span></span>  |
+| <span data-ttu-id="bec5c-111">ownerDisplayName</span><span class="sxs-lookup"><span data-stu-id="bec5c-111">ownerDisplayName</span></span>        | <span data-ttu-id="bec5c-112">Строка</span><span class="sxs-lookup"><span data-stu-id="bec5c-112">String</span></span>  |
+| <span data-ttu-id="bec5c-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="bec5c-113">isDeleted</span></span>               | <span data-ttu-id="bec5c-114">Логический</span><span class="sxs-lookup"><span data-stu-id="bec5c-114">Boolean</span></span> |
+| <span data-ttu-id="bec5c-115">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="bec5c-115">lastActivityDate</span></span>        | <span data-ttu-id="bec5c-116">Date</span><span class="sxs-lookup"><span data-stu-id="bec5c-116">Date</span></span>    |
+| <span data-ttu-id="bec5c-117">fileCount</span><span class="sxs-lookup"><span data-stu-id="bec5c-117">fileCount</span></span>               | <span data-ttu-id="bec5c-118">Int64</span><span class="sxs-lookup"><span data-stu-id="bec5c-118">Int64</span></span>   |
+| <span data-ttu-id="bec5c-119">activeFileCount</span><span class="sxs-lookup"><span data-stu-id="bec5c-119">activeFileCount</span></span>         | <span data-ttu-id="bec5c-120">Int64</span><span class="sxs-lookup"><span data-stu-id="bec5c-120">Int64</span></span>   |
+| <span data-ttu-id="bec5c-121">storageUsedInBytes</span><span class="sxs-lookup"><span data-stu-id="bec5c-121">storageUsedInBytes</span></span>      | <span data-ttu-id="bec5c-122">Int64</span><span class="sxs-lookup"><span data-stu-id="bec5c-122">Int64</span></span>   |
+| <span data-ttu-id="bec5c-123">storageAllocatedInBytes</span><span class="sxs-lookup"><span data-stu-id="bec5c-123">storageAllocatedInBytes</span></span> | <span data-ttu-id="bec5c-124">Int64</span><span class="sxs-lookup"><span data-stu-id="bec5c-124">Int64</span></span>   |
+| <span data-ttu-id="bec5c-125">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="bec5c-125">reportPeriod</span></span>            | <span data-ttu-id="bec5c-126">String</span><span class="sxs-lookup"><span data-stu-id="bec5c-126">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="df2e6-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="df2e6-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bec5c-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bec5c-127">JSON representation</span></span>
 
-<span data-ttu-id="df2e6-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="df2e6-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bec5c-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bec5c-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
