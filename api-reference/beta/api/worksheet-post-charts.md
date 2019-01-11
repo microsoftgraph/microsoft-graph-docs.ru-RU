@@ -2,12 +2,13 @@
 title: Создание объекта Chart
 description: С помощью этого API можно создать объект Chart.
 author: lumine2008
-ms.openlocfilehash: abc58613e87c6765a83db62178e54ef58ce425d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96d5d53254ae9874a96dc6bfc5440991619ac6a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894455"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 

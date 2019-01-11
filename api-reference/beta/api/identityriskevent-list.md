@@ -2,12 +2,13 @@
 title: Список identityRiskEvents
 description: Получение списка объектов identityriskevent.
 author: cloudhandler
-ms.openlocfilehash: ee730b2da90cd1d458bd3e3ad4c432db93fa4cea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fbd5e739986ded9fa6f5346e35808f4018bff625
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894252"
 ---
 # <a name="list-identityriskevents"></a>Список identityRiskEvents
 
@@ -34,7 +35,7 @@ GET /identityRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

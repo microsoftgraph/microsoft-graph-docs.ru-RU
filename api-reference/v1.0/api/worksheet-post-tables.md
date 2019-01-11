@@ -2,12 +2,13 @@
 title: Создание таблицы
 description: С помощью этого API можно создать объект Table.
 author: lumine2008
-ms.openlocfilehash: 6bc55e68b615598863482859ed554e5d27a9d18c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 893ca43eb27069e8a9d333143ad3620b43e591a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304622"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894406"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -33,7 +34,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр           | Тип      |Описание|

@@ -2,12 +2,13 @@
 title: Update windowsMobileMSI
 description: Обновление свойств объекта windowsMobileMSI.
 author: tfitzmac
-ms.openlocfilehash: 859d32fbf053ba22c0bd59afe8ad24d6b05c84a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6632343b7a85b6f3444908b6dc3699d11bf4673a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310747"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894581"
 ---
 # <a name="update-windowsmobilemsi"></a>Update windowsMobileMSI
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

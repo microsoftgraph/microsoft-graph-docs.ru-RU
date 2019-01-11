@@ -1,12 +1,13 @@
 ---
 title: 'RangeFormat: autofitRows'
-description: Изменяет высоту строк текущего диапазона так, чтобы она была оптимальной, с учетом текущих данных в столбцах.
-ms.openlocfilehash: 428e405cad1464fad6e1e90940d9f9016fafdb48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Изменяет высоту строк текущего диапазона на оптимальную с учетом текущих данных в столбцах.
+localization_priority: Normal
+ms.openlocfilehash: 1a915a3af5a0d0300f957ebf27ef0415c0d00465
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077053"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894287"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 
@@ -36,7 +37,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

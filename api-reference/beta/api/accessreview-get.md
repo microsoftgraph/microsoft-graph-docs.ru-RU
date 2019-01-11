@@ -1,12 +1,13 @@
 ---
 title: Получение accessReview
 description: 'В Azure AD access дается обзор компонента, извлечение объекта accessReview.  '
-ms.openlocfilehash: ecd802613e6ab36816800197c00595c90426fb2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 471cebe3dbfa60e6cc05e2be546504216163ee0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076336"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894042"
 ---
 # <a name="get-accessreview"></a>Получение accessReview
 
@@ -35,9 +36,9 @@ GET /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ
@@ -55,7 +56,7 @@ GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fe
 ```
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

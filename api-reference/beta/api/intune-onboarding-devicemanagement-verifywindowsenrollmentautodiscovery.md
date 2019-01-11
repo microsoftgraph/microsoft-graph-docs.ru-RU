@@ -2,12 +2,13 @@
 title: Функция verifyWindowsEnrollmentAutoDiscovery
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: c093490b27db844db434b05725e48464d9792cb7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb14317a132d4368a354d8655df56452100bf5a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344809"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894301"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>Функция verifyWindowsEnrollmentAutoDiscovery
 
@@ -37,11 +38,11 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 

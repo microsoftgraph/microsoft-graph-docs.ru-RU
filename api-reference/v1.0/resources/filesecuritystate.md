@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса fileSecurityState
 description: Содержит сведения о файле (не процесса), связанные с оповещение.
-ms.openlocfilehash: d1358d7fe0d5565845201781e32b3da14a89f412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 14ffa41b395bde04972f0af0436297aa4d038524
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028183"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894098"
 ---
 # <a name="filesecuritystate-resource-type"></a>Тип ресурса fileSecurityState
 
@@ -14,12 +15,12 @@ ms.locfileid: "27028183"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство   | Тип|Description|
+| Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |fileHash|[fileHash](filehash.md)|Сложный тип, содержащий файл хэш-значений (криптографии и расположение конфиденциальные).|
-|name|String|Имя файла (без пути).|
+|name|Строка|Имя файла (без пути).|
 |path|String|Полный путь к файлу файл/файл изображения.|
-|riskScore|String|Поставщик создан/вычисляется риск показатель файл оповещений. Рекомендуемое значение диапазона 0-1, который соответствует в процентах.|
+|riskScore|Строка|Поставщик создан/вычисляется риск показатель файл оповещений. Рекомендуемое значение диапазона 0-1, который соответствует в процентах.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,12 +2,13 @@
 title: Исправление канала
 description: Обновляет свойства указанного канала.
 author: nkramer
-ms.openlocfilehash: 267cc6bc148259bc573625fdb2775ac8b581a988
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78f2d8eebf70d52b6067612c715939d7463b17f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894084"
 ---
 # <a name="patch-channel"></a>Исправление канала
 
@@ -39,7 +40,7 @@ PATCH /teams/{id}/channels/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [канала](../resources/channel.md) .
 
 ## <a name="response"></a>Ответ

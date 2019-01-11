@@ -2,12 +2,13 @@
 title: Тип ресурса macOSScepCertificateProfile
 description: Mac OS SCEP сертификат профилей.
 author: tfitzmac
-ms.openlocfilehash: 687ff0194e372a6142ad1c72503b3a37d222c286
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2e6c36be7a537cb64b30fe92e852e0cf1809129
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894511"
 ---
 # <a name="macosscepcertificateprofile-resource-type"></a>Тип ресурса macOSScepCertificateProfile
 
@@ -34,7 +35,7 @@ Mac OS SCEP сертификат профилей.
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -45,12 +46,12 @@ Mac OS SCEP сертификат профилей.
 |certificateValidityPeriodValue|Int32|Значение срок действия сертификата. Наследуется от [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Масштаб срок действия сертификата. Наследуется от [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md). Возможные значения: `days`, `months`, `years`.|
 |scepServerUrls|Коллекция String|URL-адреса сервера SCEP.|
-|subjectNameFormatString|String.|Пользовательский формат для использования с SubjectNameFormat = пользовательский. Например: CN = {{EmailAddress}}, E = {{EmailAddress}}, OU = корпоративных пользователей, O = Contoso Corporation, L = Redmond, ST = WA, C = US|
+|subjectNameFormatString|Строка|Пользовательский формат для использования с SubjectNameFormat = пользовательский. Например: CN = {{EmailAddress}}, E = {{EmailAddress}}, OU = корпоративных пользователей, O = Contoso Corporation, L = Redmond, ST = WA, C = US|
 |keyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|SCEP использования ключа. Возможные значения: `keyEncipherment`, `digitalSignature`.|
 |keySize|[keySize](../resources/intune-deviceconfig-keysize.md)|Размер ключа SCEP. Возможные значения: `size1024`, `size2048`.|
 |hashAlgorithm|[hashAlgorithms](../resources/intune-deviceconfig-hashalgorithms.md)|Алгоритм хэширования SCEP. Возможные значения: `sha1`, `sha2`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md) коллекции|Параметры расширенного использования ключа (EKU). Эта коллекция может содержать не более 500 элементов.|
-|subjectAlternativeNameFormatString|String.|Пользовательская строка, которая определяет атрибут AAD.|
+|subjectAlternativeNameFormatString|Строка|Пользовательская строка, которая определяет атрибут AAD.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

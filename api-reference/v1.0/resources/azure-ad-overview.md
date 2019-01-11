@@ -1,12 +1,13 @@
 ---
 title: Работа с ресурсами Azure Active Directory в Microsoft Graph
 description: 'Microsoft Graph предоставляет доступ к ресурсам Azure Active Directory (Azure AD) для управления ролями администратора (каталога), приглашения внешних пользователей в организацию, и, если вы являетесь поставщиком облачных решений, управления данными клиентов.  Microsoft Graph также предоставляет методы, которые могут использоваться приложениями, например для поиска информации о транзитивных группах и ролях пользователей. '
-ms.openlocfilehash: 737415f04bea5e149e1b3d9ba6d41c195cfb25fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5269725a130a2aada958ec5998f21bc6489696b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026404"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894336"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 

@@ -1,12 +1,13 @@
 ---
 title: Получение объекта conversationThread
 description: 'Получение определенной цепочки, принадлежащей группе. Можно указать родительский беседы и поток, или, '
-ms.openlocfilehash: 1c4e0da5a85464c07844c976140425a70fd48b76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 61ec38651274cf71e87f362927de66873a6cca24
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894245"
 ---
 # <a name="get-conversationthread"></a>Получение объекта conversationThread
 
@@ -34,7 +35,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -51,8 +52,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,12 +2,13 @@
 title: Тип ресурса alertTrigger
 description: Содержит сведения о свойствах, которые запускаются обнаружения (свойства существуют оповещения сущности).
 author: Preetikr
-ms.openlocfilehash: f0888e6caf78d806909f818a8b72fb21320e7796
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1dc8bb2b18380da50134aa67e742da89dea3c057
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894343"
 ---
 # <a name="alerttrigger-resource-type"></a>Тип ресурса alertTrigger
 

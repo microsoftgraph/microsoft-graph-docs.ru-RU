@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса governanceRuleSetting
 description: Представляет правила, которые предоставляют параметры роли.
-ms.openlocfilehash: 486b5163c59772c971cfc1d61a98817b7f0c16f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7554c96daec70a95cde5ab0c3faedfba74764cff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894259"
 ---
 # <a name="governancerulesetting-resource-type"></a>Тип ресурса governanceRuleSetting
 
@@ -16,9 +17,9 @@ ms.locfileid: "27079012"
 
 
 ## <a name="properties"></a>Свойства
-|Свойство      | Тип         |Description|
+|Свойство      | Тип         |Описание|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |Идентификатор правила. Например ``ExpirationRule`` и ``MfaRule``.|
+|ruleIdentifier|Строка        |Идентификатор правила. Например ``ExpirationRule`` и ``MfaRule``.|
 |setting       |String        |Параметры правила. Значение — это строка JSON со списком пар в формате Parameter_Name:Parameter_Value. Например, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>Представление JSON

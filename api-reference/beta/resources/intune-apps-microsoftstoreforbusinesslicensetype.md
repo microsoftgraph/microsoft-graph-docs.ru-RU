@@ -2,12 +2,13 @@
 title: Тип перечисления microsoftStoreForBusinessLicenseType
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: e16269ae439cfd46c05f462f1ced76cb2dd3d98b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 632748db6c33bdb30759cee66894e621ced7cf24
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894132"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>Тип перечисления microsoftStoreForBusinessLicenseType
 

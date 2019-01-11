@@ -1,12 +1,13 @@
 ---
 title: Получение вход
 description: Извлекает Azure AD входы для клиента. Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.
-ms.openlocfilehash: 1934af9b918dc976ef7f3fc6cdd21c04f6fcc705
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894497"
 ---
 # <a name="get-signin"></a>Получение вход
 Извлекает Azure AD входы для клиента. Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.
@@ -19,7 +20,7 @@ ms.locfileid: "27081048"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложения | AuditLog.Read.All | 
+|Для приложений | AuditLog.Read.All | 
 
 Кроме того приложения должны быть [правильно зарегистрирован](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) для Azure AD.
 
@@ -36,7 +37,7 @@ GET /auditLogs/signIns/{id}
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [входить](../resources/signin.md) и кода ответа в теле ответа.

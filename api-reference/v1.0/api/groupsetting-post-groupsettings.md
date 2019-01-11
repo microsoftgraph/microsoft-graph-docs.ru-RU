@@ -1,12 +1,13 @@
 ---
 title: Создание параметра группы
 description: Этот API позволяет создавать новые параметры на базе шаблонов, доступных в объектах groupSettingTemplate. Эти параметры можно использовать как на уровне клиента, так и на уровне группы. Запрос на создание должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. Специально для групп можно задавать только параметр, разрешающий или запрещающий членам группы приглашать пользователей-гостей. Возможность добавлять пользователей-гостей в группу общедоступна, поэтому данный параметр позволит контролировать подобное поведение.
-ms.openlocfilehash: b17ccd32934e1b26475175ec89da48fb8ea4b744
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c5ba428380e6503f8d54682709d36e12b7ff4de3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894539"
 ---
 # <a name="create-a-group-setting"></a>Создание параметра группы
 
@@ -39,7 +40,7 @@ POST /groups/{id}/settings
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса предоставьте описание объекта [groupSetting](../resources/groupsetting.md) в формате JSON. Отображаемое имя для параметра будет задано с учетом имени указанного шаблона параметров.
 
 ## <a name="response"></a>Отклик

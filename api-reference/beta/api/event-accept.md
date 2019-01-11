@@ -2,12 +2,13 @@
 title: 'event: accept'
 description: Примите события, указанного в календаре пользователя.
 author: angelgolfer-ms
-ms.openlocfilehash: 62ca800a118331ce36ca22cc26c26391d9f186c6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afff4a9eebb72fa9c624decb55d2677d4c5d41fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894469"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -48,7 +49,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

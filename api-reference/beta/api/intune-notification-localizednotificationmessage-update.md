@@ -2,12 +2,13 @@
 title: Обновление объекта localizedNotificationMessage
 description: Обновление свойств объекта localizedNotificationMessage.
 author: tfitzmac
-ms.openlocfilehash: 915a053501f40633be8662fb7196a84ff9db4b1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c3278f25dc6092d455e48d4fc86e5909775b7225
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351795"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894518"
 ---
 # <a name="update-localizednotificationmessage"></a>Обновление объекта localizedNotificationMessage
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

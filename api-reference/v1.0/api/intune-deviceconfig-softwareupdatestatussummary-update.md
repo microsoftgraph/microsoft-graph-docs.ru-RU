@@ -2,12 +2,13 @@
 title: Update softwareUpdateStatusSummary
 description: Обновление свойств объекта softwareUpdateStatusSummary.
 author: tfitzmac
-ms.openlocfilehash: a08efea3a4552e97b638336eb70165c16e58055a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d588dd4f16ca3aecafa56f90a30efab65963e9c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825356"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Update softwareUpdateStatusSummary
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

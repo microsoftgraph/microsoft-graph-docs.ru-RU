@@ -2,12 +2,13 @@
 title: Получение параметра группы
 description: Получение свойств для определенного объекта параметра группы.
 author: dkershaw10
-ms.openlocfilehash: 567fc7a38f95f295ca6d896b1aed6c456abbab4c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 286554ab89e841dbcb1b875016ceb982277e6f01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894574"
 ---
 # <a name="get-a-group-setting"></a>Получение параметра группы
 
@@ -43,7 +44,7 @@ GET /groups/{id}/settings/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

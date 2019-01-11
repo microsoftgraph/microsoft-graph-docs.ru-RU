@@ -2,12 +2,13 @@
 title: Действие setDeviceName
 description: Задайте имя устройства устройства.
 author: tfitzmac
-ms.openlocfilehash: 9856e9698da807e3bb3af1a3c30fa7e138569f48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 006ca412c59df6c4e0184827e52b3d790d7ea8bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894105"
 ---
 # <a name="setdevicename-action"></a>Действие setDeviceName
 
@@ -40,11 +41,11 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

@@ -2,12 +2,13 @@
 title: 'notebook: getRecentNotebooks'
 description: Получите список экземпляров recentNotebook, которые недавно открывал вошедший в систему пользователь.
 author: Jewan-microsoft
-ms.openlocfilehash: ca0f39b3a7184e667b8ed848ac89ffd78ae096f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c6d6920636f3d5aa6201bb1183437906bad6cfd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894294"
 ---
 # <a name="notebook-getrecentnotebooks"></a>notebook: getRecentNotebooks
 
@@ -41,9 +42,9 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {code}|
+| Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

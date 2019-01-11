@@ -2,12 +2,13 @@
 title: Тип ресурса omaSettingStringXml
 description: Определение строки параметра OMA в формате XML.
 author: tfitzmac
-ms.openlocfilehash: 5582ca84a9d6c918ce7b8dea5a21f616804da4ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 976c95ed9ffa6674ddc185bb1723c7d7f9d054f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323788"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894021"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Тип ресурса omaSettingStringXml
 
