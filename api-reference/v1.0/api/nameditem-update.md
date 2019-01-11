@@ -1,50 +1,51 @@
 ---
 title: Обновление объекта NamedItem
 description: Обновление свойств объекта nameditem.
-ms.openlocfilehash: 9ec62a87d007d7647aba89fddd7d9a7705434588
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 59919e030d06e4c84242396d61c68d601433cc7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838712"
 ---
-# <a name="update-nameditem"></a><span data-ttu-id="96430-103">Обновление объекта NamedItem</span><span class="sxs-lookup"><span data-stu-id="96430-103">Update nameditem</span></span>
+# <a name="update-nameditem"></a><span data-ttu-id="e6b08-103">Обновление объекта NamedItem</span><span class="sxs-lookup"><span data-stu-id="e6b08-103">Update nameditem</span></span>
 
-<span data-ttu-id="96430-104">Обновление свойств объекта nameditem.</span><span class="sxs-lookup"><span data-stu-id="96430-104">Update the properties of nameditem object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="96430-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="96430-105">Permissions</span></span>
-<span data-ttu-id="96430-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="96430-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e6b08-104">Обновление свойств объекта nameditem.</span><span class="sxs-lookup"><span data-stu-id="e6b08-104">Update the properties of nameditem object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e6b08-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e6b08-105">Permissions</span></span>
+<span data-ttu-id="e6b08-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e6b08-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="96430-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="96430-108">Permission type</span></span>      | <span data-ttu-id="96430-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="96430-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e6b08-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e6b08-108">Permission type</span></span>      | <span data-ttu-id="e6b08-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e6b08-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="96430-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="96430-110">Delegated (work or school account)</span></span> | <span data-ttu-id="96430-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="96430-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="96430-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="96430-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96430-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="96430-113">Not supported.</span></span>    |
-|<span data-ttu-id="96430-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="96430-114">Application</span></span> | <span data-ttu-id="96430-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="96430-115">Not supported.</span></span> |
+|<span data-ttu-id="e6b08-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e6b08-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e6b08-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e6b08-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e6b08-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e6b08-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6b08-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6b08-113">Not supported.</span></span>    |
+|<span data-ttu-id="e6b08-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e6b08-114">Application</span></span> | <span data-ttu-id="e6b08-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6b08-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="96430-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="96430-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e6b08-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e6b08-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="96430-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="96430-117">Optional request headers</span></span>
-| <span data-ttu-id="96430-118">Имя</span><span class="sxs-lookup"><span data-stu-id="96430-118">Name</span></span>       | <span data-ttu-id="96430-119">Описание</span><span class="sxs-lookup"><span data-stu-id="96430-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="e6b08-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e6b08-117">Optional request headers</span></span>
+| <span data-ttu-id="e6b08-118">Имя</span><span class="sxs-lookup"><span data-stu-id="e6b08-118">Name</span></span>       | <span data-ttu-id="e6b08-119">Описание</span><span class="sxs-lookup"><span data-stu-id="e6b08-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="96430-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="96430-120">Authorization</span></span>  | <span data-ttu-id="96430-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="96430-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="96430-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="96430-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="96430-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="96430-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e6b08-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e6b08-120">Authorization</span></span>  | <span data-ttu-id="e6b08-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e6b08-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e6b08-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e6b08-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e6b08-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="e6b08-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="96430-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="96430-126">Request body</span></span>
-<span data-ttu-id="96430-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="96430-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e6b08-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e6b08-126">Request body</span></span>
+<span data-ttu-id="e6b08-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="e6b08-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="96430-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="96430-130">Property</span></span>     | <span data-ttu-id="96430-131">Тип</span><span class="sxs-lookup"><span data-stu-id="96430-131">Type</span></span>   |<span data-ttu-id="96430-132">Описание</span><span class="sxs-lookup"><span data-stu-id="96430-132">Description</span></span>|
+| <span data-ttu-id="e6b08-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="e6b08-130">Property</span></span>     | <span data-ttu-id="e6b08-131">Тип</span><span class="sxs-lookup"><span data-stu-id="e6b08-131">Type</span></span>   |<span data-ttu-id="e6b08-132">Описание</span><span class="sxs-lookup"><span data-stu-id="e6b08-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="96430-133">visible</span><span class="sxs-lookup"><span data-stu-id="96430-133">visible</span></span>|<span data-ttu-id="96430-134">boolean</span><span class="sxs-lookup"><span data-stu-id="96430-134">boolean</span></span>|<span data-ttu-id="96430-135">Определяет, является ли объект видимым.</span><span class="sxs-lookup"><span data-stu-id="96430-135">Specifies whether the object is visible or not.</span></span>|
-|<span data-ttu-id="96430-136">comment</span><span class="sxs-lookup"><span data-stu-id="96430-136">comment</span></span>|   <span data-ttu-id="96430-137">строка</span><span class="sxs-lookup"><span data-stu-id="96430-137">string</span></span>  |<span data-ttu-id="96430-138">Представляет примечание, связанное с этим именем.</span><span class="sxs-lookup"><span data-stu-id="96430-138">Represents the comment associated with this name.</span></span>|
+|<span data-ttu-id="e6b08-133">visible</span><span class="sxs-lookup"><span data-stu-id="e6b08-133">visible</span></span>|<span data-ttu-id="e6b08-134">boolean</span><span class="sxs-lookup"><span data-stu-id="e6b08-134">boolean</span></span>|<span data-ttu-id="e6b08-135">Определяет, является ли объект видимым.</span><span class="sxs-lookup"><span data-stu-id="e6b08-135">Specifies whether the object is visible or not.</span></span>|
+|<span data-ttu-id="e6b08-136">comment</span><span class="sxs-lookup"><span data-stu-id="e6b08-136">comment</span></span>|   <span data-ttu-id="e6b08-137">строка</span><span class="sxs-lookup"><span data-stu-id="e6b08-137">string</span></span>  |<span data-ttu-id="e6b08-138">Представляет примечание, связанное с этим именем.</span><span class="sxs-lookup"><span data-stu-id="e6b08-138">Represents the comment associated with this name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="96430-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="96430-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e6b08-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="e6b08-139">Response</span></span>
 
-<span data-ttu-id="96430-140">Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленный объект [WorkbookNamedItem](../resources/nameditem.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="96430-140">If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="96430-141">Пример</span><span class="sxs-lookup"><span data-stu-id="96430-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="96430-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="96430-142">Request</span></span>
-<span data-ttu-id="96430-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="96430-143">Here is an example of the request.</span></span>
+<span data-ttu-id="e6b08-140">Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленный объект [WorkbookNamedItem](../resources/nameditem.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="e6b08-140">If successful, this method returns a `200 OK` response code and updated [WorkbookNamedItem](../resources/nameditem.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e6b08-141">Пример</span><span class="sxs-lookup"><span data-stu-id="e6b08-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e6b08-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="e6b08-142">Request</span></span>
+<span data-ttu-id="e6b08-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e6b08-143">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_nameditem"
@@ -63,9 +64,8 @@ Content-length: 87
   "visible": true
 }
 ```
-##### <a name="response"></a><span data-ttu-id="96430-144">Ответ</span><span class="sxs-lookup"><span data-stu-id="96430-144">Response</span></span>
-<span data-ttu-id="96430-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="96430-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e6b08-144">Ответ</span><span class="sxs-lookup"><span data-stu-id="e6b08-144">Response</span></span>
+<span data-ttu-id="e6b08-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="e6b08-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
