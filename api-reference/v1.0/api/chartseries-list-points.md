@@ -2,12 +2,13 @@
 title: Список точек
 description: Получение списка объектов chartpoints.
 author: lumine2008
-ms.openlocfilehash: 7385c589f87604e454c8cd7e5a9cda260feb9440
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1d712c764489d7c818cb32c8195b0bbb83ad29e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884590"
 ---
 # <a name="list-points"></a>Список точек
 
@@ -35,7 +36,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

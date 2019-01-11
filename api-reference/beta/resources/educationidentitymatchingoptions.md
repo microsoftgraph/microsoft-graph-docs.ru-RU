@@ -2,12 +2,13 @@
 title: Тип ресурса educationIdentityMatchingOptions
 description: Содержит сопоставления между свойство source и свойства конечного объекта для сопоставления учетных записей пользователей. Свойство source должна существовать в источнике данных. Свойство target должно быть допустимое свойство в Azure Active Directory (Azure AD).
 author: mmast-msft
-ms.openlocfilehash: bc2b99654d8e27d52ed92d9b55a32fdff8e730f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80e9222f8f0c03294a947f403b33cc4f2cd2ef0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325433"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876281"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>Тип ресурса educationIdentityMatchingOptions
 

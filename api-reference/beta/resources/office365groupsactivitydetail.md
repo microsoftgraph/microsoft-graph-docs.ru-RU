@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса office365GroupsActivityDetail
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: a849932d646be61f3cedec76ecdafdaca941baaf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 94dc10064c0005770294c8f783c77d41ce0c479b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894273"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>Тип ресурса office365GroupsActivityDetail
 
@@ -15,11 +16,11 @@ ms.locfileid: "27075587"
 | Свойство                          | Тип    | Описание                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
 | reportRefreshDate                 | Date    | Последняя дата контента.          |
-| groupDisplayName                  | String  | Отображаемое имя группы.           |
+| groupDisplayName                  | Строка  | Отображаемое имя группы.           |
 | isDeleted                         | Логический | Был ли этот пользователь удаленного или программных удалены. |
-| ownerPrincipalName                | String  | Имя участника группы владельца.          |
+| ownerPrincipalName                | Строка  | Имя участника группы владельца.          |
 | lastActivityDate                  | Date    | Дата последнего действия для следующих сценариев: групповой полученных почтового ящика электронной почты; пользователю просматривать, редактировать, общих или синхронизирован файлы в библиотеке документов SharePoint. пользователь просматривает страницы SharePoint; пользователь учтена, чтение или оцененных сообщений в группах Yammer. |
-| groupType                         | String  | Тип группы. Возможные значения: **Public** или **Private**. |
+| groupType                         | Строка  | Тип группы. Возможные значения: **Public** или **Private**. |
 | memberCount                       | Int64   | Счетчик членов группы.                  |
 | externalMemberCount               | Int64   | Счетчик внешнего участника группы.         |
 | exchangeReceivedEmailCount        | Int64   | Число электронной почты, полученных почтового ящика группы. |
@@ -31,7 +32,7 @@ ms.locfileid: "27075587"
 | exchangeMailboxStorageUsedInBytes | Int64   | Хранения, используемый для почтового ящика группы.   |
 | sharePointTotalFileCount          | Int64   | Общее число файлов на сайте группы SharePoint. |
 | sharePointSiteStorageUsedInBytes  | Int64   | Хранилище, используемое сайта группы SharePoint. |
-| reportPeriod                      | String  | Количество дней, на которое отчета.    |
+| reportPeriod                      | Строка  | Количество дней, на которое отчета.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

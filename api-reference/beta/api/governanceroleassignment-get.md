@@ -1,12 +1,13 @@
 ---
 title: Получение governanceRoleAssignment
 description: Извлечение свойств и отношения governanceRoleAssignment.
-ms.openlocfilehash: 622fb890422ed0a4cf00542fede5ebaf662e5e71
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 838c096ccb8b719d9a07741aa80f3e132071a0c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191076"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887572"
 ---
 # <a name="get-governanceroleassignment"></a>Получение governanceRoleAssignment
 
@@ -17,7 +18,7 @@ ms.locfileid: "27191076"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -45,9 +46,9 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [governanceRoleAssignment](../resources/governanceroleassignment.md) и кода ответа в теле ответа.
 ## <a name="example"></a>Пример
 <!-- {
@@ -59,7 +60,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/0ba78f41-ee7a-4227-adb9-1499431b2164?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": false,

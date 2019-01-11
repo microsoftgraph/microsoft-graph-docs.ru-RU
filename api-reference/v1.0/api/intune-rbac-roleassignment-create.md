@@ -2,12 +2,13 @@
 title: Создание объекта roleAssignment
 description: Создание объекта roleAssignment.
 author: tfitzmac
-ms.openlocfilehash: ac3a8ee5b007c918a9b655cb2f396c872f9f2d92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 769deaffbb153fe54bfe2e32c936868f9480efc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362239"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871031"
 ---
 # <a name="create-roleassignment"></a>Создание объекта roleAssignment
 
@@ -35,7 +36,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

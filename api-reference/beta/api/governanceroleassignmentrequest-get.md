@@ -1,12 +1,13 @@
 ---
 title: Получение governanceRoleAssignmentRequest
 description: 'Получите governanceRoleAssignmentRequest. '
-ms.openlocfilehash: aac41bd8443d6066a7866462624a072db57b35da
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 190e79787b32e7e21e9d321ee6f3d90dc27605ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887453"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Получение governanceRoleAssignmentRequest
 
@@ -17,7 +18,7 @@ ms.locfileid: "27191097"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -40,10 +41,10 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -57,7 +58,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/e68ff888-4af5-4ccb-8b74-39156090344b
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": true,

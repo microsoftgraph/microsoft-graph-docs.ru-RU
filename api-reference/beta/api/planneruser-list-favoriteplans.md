@@ -2,12 +2,13 @@
 title: Список favoritePlans
 description: Получение списка plannerPlans, помеченные как избранные пользователем. План в Избранное можно пометить, изменив plannerUser ресурсов.
 author: TarkanSevilmis
-ms.openlocfilehash: c0f82522c41977df1aa034dbd14a86749b10b803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1aada942a2437886683bc8041143f156e2ec848c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324586"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876302"
 ---
 # <a name="list-favoriteplans"></a>Список favoritePlans
 
@@ -36,9 +37,9 @@ GET /users/<id>/planner/favoritePlans
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [plannerPlan](../resources/plannerplan.md) в теле ответа.

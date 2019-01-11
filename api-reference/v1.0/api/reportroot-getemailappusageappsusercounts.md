@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailAppUsageAppsUserCounts'
 description: Узнайте, сколько уникальных пользователей у каждого почтового приложения.
-ms.openlocfilehash: a8f167b94521139ea332cec00f217e5dd604a713
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c9a05532f1dcbe3db4718ac2b551278af9691011
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026623"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875854"
 ---
 # <a name="reportroot-getemailappusageappsusercounts"></a>reportRoot: getEmailAppUsageAppsUserCounts
 

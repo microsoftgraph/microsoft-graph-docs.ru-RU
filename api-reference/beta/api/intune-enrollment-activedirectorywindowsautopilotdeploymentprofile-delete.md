@@ -2,12 +2,13 @@
 title: Удаление activeDirectoryWindowsAutopilotDeploymentProfile
 description: Удаляет activeDirectoryWindowsAutopilotDeploymentProfile.
 author: tfitzmac
-ms.openlocfilehash: 0ae86497a437b2064994d82a8e0c04e54ec3d245
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b6b47c6edcef6e5c1bf533a0759bfbf8cf0d3834
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338859"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886521"
 ---
 # <a name="delete-activedirectorywindowsautopilotdeploymentprofile"></a>Удаление activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

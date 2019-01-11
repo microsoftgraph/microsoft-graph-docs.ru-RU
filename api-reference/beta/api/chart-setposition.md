@@ -2,12 +2,13 @@
 title: 'Chart: setPosition'
 description: Располагает диаграмму относительно ячеек на листе.
 author: lumine2008
-ms.openlocfilehash: 8d5a5f2b599d9d3b3902c8bbb5feec2d8178a6e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e48db7ccf2a41f4dc87b15089440b9b2bf3aa10a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314926"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894119"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -35,7 +36,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса termsAndConditions
 description: Содержимое C политик, изучите пользователям при их первая попытка возможность зачисления в Intune, а затем после изменения которой необходимо re приемки администратора. Благодаря им администраторы могут огласить условия, с которыми должен согласиться пользователь для регистрации устройств в Intune.
-ms.openlocfilehash: 73a79a4e0684f04cb7c8caaff1e9ed944af7fe80
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2f435f08c306f8dadd76257e19a53c9a6cee95d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881580"
 ---
 # <a name="termsandconditions-resource-type"></a>Тип ресурса termsAndConditions
 

@@ -1,12 +1,13 @@
 ---
 title: Работа с файлами в Microsoft Graph
 description: С помощью Microsoft Graph можно создать приложение, которое подключается к файлам в OneDrive, OneDrive для бизнеса и библиотеках документов SharePoint. Используя Microsoft Graph, вы можете создавать различные решения для работы с файлами в Office 365. Возможны варианты как для простого хранения документов пользователей, так и сложные сценарии совместного использования файлов.
-ms.openlocfilehash: 6b25f279fbbc6386e110647cc25e882f7a388220
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 8b44324987b94c824ed71da558b9ee3e5ded2d83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077015"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887166"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Работа с файлами в Microsoft Graph
 

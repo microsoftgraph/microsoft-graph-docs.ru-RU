@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
-ms.openlocfilehash: 65cfe61dadd1708abffe2d01abbbb15f40d158ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4673138106e23afedb5ff0f28d8ce72fa2797b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871493"
 ---
 # <a name="sitepage-resource"></a>sitePage ресурсов
 
@@ -26,15 +27,15 @@ ms.locfileid: "27080470"
 |:--------------------------------|:------------------------------
 | [Перечисление страниц][]                  | Получение /pages
 | [Получение страницы][]                    | Получение /pages/ {идентификатор страницы}
-| [Create][]                      | POST /pages
-| [Delete][]                      | Удаление /pages/ {идентификатор страницы}
-| [Publish][]                     | Учет /pages/ {идентификатор страницы} аудио- и публикация
+| [создание][];                      | POST /pages
+| [удаление][];                      | Удаление /pages/ {идентификатор страницы}
+| [публикация][];                     | Учет /pages/ {идентификатор страницы} аудио- и публикация
 
 [Перечисление страниц]: ../api/sitepage-list.md
 [Получение страницы]: ../api/sitepage-get.md
-[Create]: ../api/sitepage-create.md
+[Создание]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
-[Publish]: ../api/sitepage-publish.md
+[публикация]: ../api/sitepage-publish.md;
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -93,7 +94,7 @@ ms.locfileid: "27080470"
 
 Ресурс **sitePage** имеет следующие метаданные, связанные с разработки. Свойство publishingState будет отражают состояние как извлечь или опубликовать разработки страниц.
 
-| Имя свойства          | Тип                   | Description
+| Имя свойства          | Тип                   | Описание
 |:-----------------------|:-----------------------|:---------------------------
 | publishingState        | [publicationFacet][].   | Состояния публикации и MM.mm версия страницы.
 
@@ -119,7 +120,7 @@ ms.locfileid: "27080470"
 [columnDefinition]: columndefinition.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[list]: list.md
+[списки]: list.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md.

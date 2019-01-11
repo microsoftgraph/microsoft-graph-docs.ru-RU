@@ -2,12 +2,13 @@
 title: Обновление outlooktaskfolder
 description: Обновление для записи свойств папки задач Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: 83b78a7d3ff625a6eaaacd3ac54612e487350cde
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06dd21cf9da2fab8c0472ac29f477b6a40d2df5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874356"
 ---
 # <a name="update-outlooktaskfolder"></a>Обновление outlooktaskfolder
 
@@ -36,7 +37,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

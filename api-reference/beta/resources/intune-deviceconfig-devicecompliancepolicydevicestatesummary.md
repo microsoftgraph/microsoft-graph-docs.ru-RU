@@ -2,12 +2,13 @@
 title: Тип ресурса deviceCompliancePolicyDeviceStateSummary
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 006b1ca71f8441898ba758397334c7ae31ac5690
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4aa91b68e9e389027f9e53b67757319af87980c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887600"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>Тип ресурса deviceCompliancePolicyDeviceStateSummary
 

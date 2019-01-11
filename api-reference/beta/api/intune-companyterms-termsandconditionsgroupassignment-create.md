@@ -2,12 +2,13 @@
 title: Создание termsAndConditionsGroupAssignment
 description: Создание нового объекта termsAndConditionsGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: 54bcf9591cbfc9cd9369e434b11440a8247ea813
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d02e0f1a2e4f0a79f6baa9fec76a68c45ef3dec7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301388"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878584"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Создание termsAndConditionsGroupAssignment
 
@@ -37,11 +38,11 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта termsAndConditionsGroupAssignment.
 
 В следующей таблице показаны свойства, которые необходимы для создания termsAndConditionsGroupAssignment.
@@ -49,7 +50,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта.|
-|targetGroupId|String.|Уникальный идентификатор группы, которая назначена политика T & C.|
+|targetGroupId|Строка|Уникальный идентификатор группы, которая назначена политика T & C.|
 
 
 

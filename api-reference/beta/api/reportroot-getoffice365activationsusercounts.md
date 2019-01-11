@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
 description: Получение числа пользователей, для которых включено и те, которые активации подписки Office на настольных ПК или устройства или на общедоступном компьютере.
-ms.openlocfilehash: 4d7d75d084408e4d0d8af0473397252fdcbe7aa9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd86940ad25a63f7b9657b850d33721438525770
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871829"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
@@ -129,9 +130,9 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserCounts?$
 
 #### <a name="response"></a>Ответ
 
-Ниже приводится пример отклика.
+Ниже показан пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

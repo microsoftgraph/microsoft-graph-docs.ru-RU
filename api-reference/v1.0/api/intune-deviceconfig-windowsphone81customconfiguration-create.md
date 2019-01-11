@@ -2,12 +2,13 @@
 title: Создание объекта windowsPhone81CustomConfiguration
 description: Создание объекта windowsPhone81CustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 02701baa092b32ecdb2519780d05de42c6c73447
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e4e1113184727d1cd0f03468d182cc32ca81d5e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876743"
 ---
 # <a name="create-windowsphone81customconfiguration"></a>Создание объекта windowsPhone81CustomConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

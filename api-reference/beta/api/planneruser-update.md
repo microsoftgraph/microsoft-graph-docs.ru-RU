@@ -1,12 +1,13 @@
 ---
 title: Обновление plannerUser
 description: Обновление свойства объекта plannerUser. Эту операцию можно использовать для добавления или удаления планы из пользовательского списка избранных планы и для указания которого планы пользователь недавно просмотра.
-ms.openlocfilehash: 872bdaed0aff174abe01d350fa4d5304d4bcc620
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ae09deff65c5de08d80e34140abacd43d43a94b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889056"
 ---
 # <a name="update-planneruser"></a>Обновление plannerUser
 
@@ -32,12 +33,12 @@ PATCH /me/planner
 | Имя       | Описание|
 |:-----------|:-----------|
 | Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
-| If-Match  | Последний неизвестное значение ETag для **plannerUser** , который требуется обновить. Обязательный атрибут.|
+| If-Match  | Последний неизвестное значение ETag для **plannerUser** , который требуется обновить. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md);|Изменения в коллекцию, содержащую ссылки на планы, которые пользователь отметил в список избранного.|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md).|Коллекция, содержащая ссылки на планы, которые пользователь недавно просмотреть изменения.|

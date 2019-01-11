@@ -2,12 +2,13 @@
 title: Тип ресурса ChartDataLabels
 description: Представляет коллекцию всех меток данных в точке диаграммы.
 author: lumine2008
-ms.openlocfilehash: ef1880fcbf1f74f99f6b323c06b8fd35812f340a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e45db4129422c32af809d46c076b2f6d82eff89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352180"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876197"
 ---
 # <a name="chartdatalabels-resource-type"></a>Тип ресурса ChartDataLabels
 

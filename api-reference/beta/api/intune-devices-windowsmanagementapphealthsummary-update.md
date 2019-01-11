@@ -2,12 +2,13 @@
 title: Обновление windowsManagementAppHealthSummary
 description: Обновление свойства объекта windowsManagementAppHealthSummary.
 author: tfitzmac
-ms.openlocfilehash: 274ffcc65706f7d730815d4a8350af2dee68f763
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 068e99b09d2204c3e33955a2407e9bbac3ff31b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307072"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887194"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>Обновление windowsManagementAppHealthSummary
 
@@ -37,11 +38,11 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).

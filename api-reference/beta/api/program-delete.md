@@ -1,12 +1,13 @@
 ---
 title: Удаление программы
 description: В Azure AD доступ к функции проверки, удалить объект программы.
-ms.openlocfilehash: c09dcc36bfc4fbf279e7b6c49ea24bba9153c071
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10b8c1e6eab7b3a42b053f854ae5f08faefc2e12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872011"
 ---
 # <a name="delete-program"></a>Удаление программы
 
@@ -34,9 +35,9 @@ DELETE /programs('<id>')
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

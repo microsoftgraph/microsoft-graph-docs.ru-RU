@@ -1,12 +1,13 @@
 ---
 title: Получение onenoteOperation
 description: 'Получение сведений о состоянии операции OneNote, выполняющейся в течение длительного времени. Применяется к операциям, возвращающим заголовок **Operation-Location** в отклике, например `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.   '
-ms.openlocfilehash: 67f11fb29d34b0d8cd2968cdc1dd5addabb3c0a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c402c5d334ab3b1fb34b2991ffcdb94c89bd5da3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894329"
 ---
 # <a name="get-onenoteoperation"></a>Получение onenoteOperation
 
@@ -44,7 +45,7 @@ GET /sites/{id}/onenote/operations/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,8 +62,7 @@ GET /sites/{id}/onenote/operations/{id}
 GET https://graph.microsoft.com/v1.0/me/onenote/operations/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,12 +2,13 @@
 title: Перечисление объектов managedAppOperation
 description: Список свойств и связей объектов managedAppOperation.
 author: tfitzmac
-ms.openlocfilehash: 9d9b24bca1f19a672dcb99aedcf7efa9b200d660
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd698bcabbd285583826a280db54c3ad45798a4f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894091"
 ---
 # <a name="list-managedappoperations"></a>Перечисление объектов managedAppOperation
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/oper
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

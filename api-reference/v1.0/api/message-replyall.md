@@ -2,12 +2,13 @@
 title: 'message: replyAll'
 description: Ответ всем получателям сообщения. После этого сообщение сохраняется в папке "Отправленные".
 author: angelgolfer-ms
-ms.openlocfilehash: cefe4d92d23cb9531f6fa66f74d1c9af87ef429e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e2d9b2481e4fb0fc4e6e166dae1189baa77b7e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348988"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884310"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -36,7 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

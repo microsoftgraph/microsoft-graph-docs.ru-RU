@@ -2,12 +2,13 @@
 title: Список WorksheetCollection
 description: Получение списка объектов листов.
 author: lumine2008
-ms.openlocfilehash: 1680a7abce783d4b1954c9bb05e03627d57a3783
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8ffa91c99355ecc42345793f026d17c7b5b3082
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885234"
 ---
 # <a name="list-worksheetcollection"></a>Список WorksheetCollection
 
@@ -35,7 +36,7 @@ GET /workbook/worksheets
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

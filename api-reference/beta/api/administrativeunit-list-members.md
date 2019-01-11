@@ -2,12 +2,13 @@
 title: Перечисление участников
 description: Используйте этот интерфейс API для получения элементов списка (пользователей и групп) в административное подразделение.
 author: lleonard-msft
-ms.openlocfilehash: d373c8353928d8e8d5d8b398aa09e62d457ba665
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2708f5e0395812f651942b26ab3ed303752d058d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894371"
 ---
 # <a name="list-members"></a>Перечисление участников
 
@@ -38,7 +39,7 @@ GET /administrativeUnits/{id}/members/$ref
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

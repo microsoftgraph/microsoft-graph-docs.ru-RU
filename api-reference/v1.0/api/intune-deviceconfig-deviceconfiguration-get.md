@@ -2,12 +2,13 @@
 title: Get deviceConfiguration
 description: Чтение свойств и связей объекта deviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 147b102bb276b5c79840e565e1ba74edfcb3da12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee502af04c1e00edd37ade9f8f29b5b27320f940
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331475"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884296"
 ---
 # <a name="get-deviceconfiguration"></a>Get deviceConfiguration
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

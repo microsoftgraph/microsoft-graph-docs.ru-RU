@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationSchool
 description: 'Ресурс представляет учебное заведение и используется для управления классами, преподавателями и учащимися данного учебного заведения.  '
-ms.openlocfilehash: 8a87b3a0ceebf9a3dd66978da1bdde2d677ef63e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b957355bc132fd0b90c4bf623e68619d7ebcd0ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877023"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 

@@ -2,12 +2,13 @@
 title: 'Worksheet: Range'
 description: Возвращает объект диапазона, указанный по адресу или имени.
 author: lumine2008
-ms.openlocfilehash: fec1ea97be1ca2c094af7e32deac0b6a37f4f086
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f057b93cbc0bd2e846330b9e5e1e49b2323bf8b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319868"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873320"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 

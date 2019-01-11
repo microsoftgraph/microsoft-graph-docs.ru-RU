@@ -1,12 +1,13 @@
 ---
 title: Обновление inferenceClassificationOverride
 description: 'Изменение поля **classifyAs** фокус папки "Входящие" переопределять значение, как указано. '
-ms.openlocfilehash: 696b3826bf09d3e0f706a3c3fdfba620e416ef22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b9d462bc09f69b07d5b6b4bce031932e1b702b44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887908"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Обновление inferenceClassificationOverride
 
@@ -69,8 +70,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

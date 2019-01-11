@@ -2,12 +2,13 @@
 title: Список recentPlans
 description: Получение списка plannerPlans недавно просмотре пользователем. Недавно просматриваемые планы можно обновить, изменив plannerUser ресурсов.
 author: TarkanSevilmis
-ms.openlocfilehash: 68ed0cf626207e0cf02b6d32187598c3cf68d9d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bfc2ffff15db55c289a95223ced6cb15af0535cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884492"
 ---
 # <a name="list-recentplans"></a>Список recentPlans
 
@@ -33,9 +34,9 @@ GET /users/<id>/planner/recentPlans
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [plannerPlan](../resources/plannerplan.md) в теле ответа.

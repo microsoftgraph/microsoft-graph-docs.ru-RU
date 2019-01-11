@@ -2,12 +2,13 @@
 title: Удаление educationAssignment
 description: Удаление существующего назначения. Назначения можно удалить только учителя внутри класса.
 author: dipakboyed
-ms.openlocfilehash: 94d99f65f491d641b74313a3ac9b06841b049731
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09365c44bef4f12ad9be24f8ed30cfb0efc5c6f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352915"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874993"
 ---
 # <a name="delete-educationassignment"></a>Удаление educationAssignment
 
@@ -36,7 +37,7 @@ DELETE /education/classes/<id>/assignments/<id>
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

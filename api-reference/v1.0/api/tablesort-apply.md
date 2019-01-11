@@ -2,12 +2,13 @@
 title: 'TableSort: apply'
 description: Выполняет сортировку.
 author: lumine2008
-ms.openlocfilehash: d3e19dbd1ed77f32a215dfa165ebc796706b09a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 682cacd558d42cc32b092bd7421aa14967f9c5b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309683"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877044"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -34,7 +35,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

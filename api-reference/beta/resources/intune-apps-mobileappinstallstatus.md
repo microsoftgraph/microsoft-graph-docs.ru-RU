@@ -2,12 +2,13 @@
 title: Тип ресурса mobileAppInstallStatus
 description: Содержит свойства для установки состояния мобильного приложения для устройства.
 author: tfitzmac
-ms.openlocfilehash: ba2c0026d54235683a2f5d5b26c19b88ea11a9d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a81113001a1ff06b530b2b9249ee705b9cd5ac40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320890"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880502"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>Тип ресурса mobileAppInstallStatus
 
@@ -40,7 +41,7 @@ ms.locfileid: "27320890"
 |osDescription|String|Описание операционная система|
 |userName|String|Имя пользователя устройства|
 |userPrincipalName|Строка|"User Principal Name" (Имя участника-пользователя);|
-|displayVersion|String.|Человеческого для чтения версию приложения|
+|displayVersion|Строка|Человеческого для чтения версию приложения|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

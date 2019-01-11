@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса recurrencePattern
 description: 'Описывает частоту повторения события. '
-ms.openlocfilehash: 7cd783748d9e1de5b62ee3677040616162b3c1ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ebdb8a71d9f3acfb40191a7148f55999f6158aa1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892185"
 ---
 # <a name="recurrencepattern-resource-type"></a>Тип ресурса recurrencePattern
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса governanceSchedule
 description: 'Представляет расписание для governanceRoleAssignmentRequest. Для запроса назначений ролей, расписание определяет, когда следует выполнить операцию назначения ролей, время завершения назначения ролей и как часто следует выполнить операцию назначения ролей. '
-ms.openlocfilehash: 6eff3977aa7806c975f968b8706f2e8c21e5d99e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8bf36b786adbd8064ee0c00c0ce293408c6e2b7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882315"
 ---
 # <a name="governanceschedule-resource-type"></a>Тип ресурса governanceSchedule
 
@@ -21,7 +22,7 @@ ms.locfileid: "27079871"
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|Время начала назначения ролей. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |endDateTime|DateTimeOffset|Время окончания назначения ролей. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. *Примечание: Если значение равно `null`, указывает постоянное назначение.*|
-|type|String|Тип расписания назначения ролей. Только `Once` поддерживается в данный момент.
+|type|Строка|Тип расписания назначения ролей. Только `Once` поддерживается в данный момент.
 |duration|Продолжительность|Длительность назначения ролей. Это в формате интервал времени.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса inferenceClassificationOverride
 description: Представляет пользователя переопределения для способ входящих сообщений от определенного отправителя всегда должны следует рассматривать как
-ms.openlocfilehash: 63c753b7af21907717d7d9706d0606726d5670f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9124f773a26c9edf1238276c3d0017dcc46e7ad8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075857"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876273"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Тип ресурса inferenceClassificationOverride
 
@@ -19,7 +20,7 @@ ms.locfileid: "27075857"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **ClassifyAs** переопределения, указанный. |
+|[обновление](../api/inferenceclassificationoverride-update.md). | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **ClassifyAs** переопределения, указанный. |
 |[Delete](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
 
 ## <a name="properties"></a>Свойства

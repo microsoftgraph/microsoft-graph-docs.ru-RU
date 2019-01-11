@@ -1,12 +1,13 @@
 ---
 title: educationSynchronizationOAuth1ConnectionSettings ресурсов
 description: При OAuth1 будет использоваться для подключения к поставщику данных, этот тип параметры подключения можно использовать для настройки профиля.
-ms.openlocfilehash: 17bfbed14bf22d8b30d82766985d64595204d05b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30c4abce27b1b9593346bcb0392581eb83c7830e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894154"
 ---
 # <a name="educationsynchronizationoauth1connectionsettings-resource"></a>educationSynchronizationOAuth1ConnectionSettings ресурсов
 

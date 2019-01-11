@@ -2,12 +2,13 @@
 title: Получение embeddedSIMDeviceState
 description: Чтение свойства и связи объекта embeddedSIMDeviceState.
 author: tfitzmac
-ms.openlocfilehash: d9ffb9c915d29a096a39b4cc9499eb712def5892
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: de2b5c5d04239eb5d4086c4399043d373bf7de66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877443"
 ---
 # <a name="get-embeddedsimdevicestate"></a>Получение embeddedSIMDeviceState
 
@@ -39,11 +40,11 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

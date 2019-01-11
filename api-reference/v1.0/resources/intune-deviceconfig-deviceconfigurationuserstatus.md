@@ -2,12 +2,13 @@
 title: Тип ресурса deviceConfigurationUserStatus
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: d47881bcc13e14d96be86056e3cc83fa9e47a697
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aebbdcf940dafbd61de4d50b20bbc0bfd7f02d7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319945"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874132"
 ---
 # <a name="deviceconfigurationuserstatus-resource-type"></a>Тип ресурса deviceConfigurationUserStatus
 

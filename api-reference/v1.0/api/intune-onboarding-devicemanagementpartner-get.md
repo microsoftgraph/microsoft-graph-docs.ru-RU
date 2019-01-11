@@ -2,12 +2,13 @@
 title: Получение deviceManagementPartner
 description: Чтение свойств и связей объекта deviceManagementPartner.
 author: tfitzmac
-ms.openlocfilehash: 6ab545598d8cbdc985510e6d7bd87e6a9804c42e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5696ce5ad5a723ef7940c01353270fce50df2f2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884233"
 ---
 # <a name="get-devicemanagementpartner"></a>Получение deviceManagementPartner
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
