@@ -2,12 +2,13 @@
 title: Восстановление удаленного элемента
 description: 'Восстановление недавно удаленного элемента из контейнера для удаленных элементов. '
 author: lleonard-msft
-ms.openlocfilehash: 3a78d2d481fb26c6c6b56770375d4ce23f007bd5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 125029ed28dc4a6f58aa4cc77f6917a37f4c5e01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301318"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816074"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 
@@ -48,7 +49,7 @@ POST /directory/deletedItems/{id}/restore
 | Authorization  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

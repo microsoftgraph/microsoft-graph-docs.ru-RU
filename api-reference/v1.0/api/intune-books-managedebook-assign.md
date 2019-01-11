@@ -2,12 +2,13 @@
 title: Действие assign
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: fae5747fc058f1bcea7d4bafd02fa965c7c355ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22e440a89059a2df0c4a3f187bba790c1ed38f87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815731"
 ---
 # <a name="assign-action"></a>Действие assign
 
@@ -35,11 +36,11 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

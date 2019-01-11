@@ -1,12 +1,13 @@
 ---
 title: Перечисление fileHashType
 description: Перечисление для типов файлов хэш-функции.
-ms.openlocfilehash: fbaa390ee8c543d2ed7c77cc05a11b519df0da9b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e1c31aaea6c8cea40817efea61dc8654d3d17fae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075507"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816333"
 ---
 # <a name="filehashtype-enum"></a>Перечисление fileHashType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075507"
 
 ## <a name="members"></a>Элементы
 
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестный тип.|
 |SHA1|1|Тип хэш SHA1.|

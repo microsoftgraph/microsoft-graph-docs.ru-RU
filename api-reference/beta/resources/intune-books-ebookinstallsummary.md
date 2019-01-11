@@ -2,12 +2,13 @@
 title: Тип ресурса eBookInstallSummary
 description: Содержит свойства сводки по установке книги для устройства.
 author: tfitzmac
-ms.openlocfilehash: 631ebbcc704072051f5c9a954040de4cc94a2c48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41e9752707cfdca974162b097ad4e6fc96b3b43a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815892"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Тип ресурса eBookInstallSummary
 

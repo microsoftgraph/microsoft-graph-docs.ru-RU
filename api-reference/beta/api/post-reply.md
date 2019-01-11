@@ -2,12 +2,13 @@
 title: 'post: reply'
 description: 'Ответ на публикацию и добавление новой публикации в указанную цепочку беседы группы. Можно указать '
 author: dkershaw10
-ms.openlocfilehash: 33cd99fd24dc5acfca4b96f232f748a0377d1564
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6e0f59901d1948c9152dab40082de76d3ffb056
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816039"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -36,7 +37,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

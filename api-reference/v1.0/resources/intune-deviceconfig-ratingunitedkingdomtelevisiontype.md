@@ -2,12 +2,13 @@
 title: Тип перечисления ratingUnitedKingdomTelevisionType
 description: Метки TV оценки содержимого в Соединенное Королевство
 author: tfitzmac
-ms.openlocfilehash: 89916e951e2aec380b261ff45cd6c4aea099a23d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1dfe0a089df3bf3b500ea1199f2384aaf8a960e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318667"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815710"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>Тип перечисления ratingUnitedKingdomTelevisionType
 

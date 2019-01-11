@@ -2,12 +2,13 @@
 title: Update auditEvent
 description: Обновление свойств объекта auditEvent.
 author: tfitzmac
-ms.openlocfilehash: 631144a0192af20580cdbf108d3acf7daa3d82f7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63da381029325977f7cdcf74b8de776c668e0656
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815717"
 ---
 # <a name="update-auditevent"></a>Update auditEvent
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

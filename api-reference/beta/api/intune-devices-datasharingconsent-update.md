@@ -2,12 +2,13 @@
 title: Обновление dataSharingConsent
 description: Обновление свойства объекта dataSharingConsent.
 author: tfitzmac
-ms.openlocfilehash: 1d7759def9c11165fca0b646f166ac792c14369e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e2486b6d1900369bae17853be399eccb4fe8740
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816438"
 ---
 # <a name="update-datasharingconsent"></a>Обновление dataSharingConsent
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).
@@ -49,12 +50,12 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Разрешения общего доступа данных идентификатор|
-|Отображаемое_имя_службы|String.|Отображаемое имя службы рабочих процессов|
-|termsUrl|String.|TermsUrl для данных, общий доступ к согласия|
-|предоставлено|Boolean.|Предоставленные состояний для данных, общий доступ к согласия|
+|Отображаемое_имя_службы|Строка|Отображаемое имя службы рабочих процессов|
+|termsUrl|Строка|TermsUrl для данных, общий доступ к согласия|
+|предоставлено|Логический|Предоставленные состояний для данных, общий доступ к согласия|
 |grantDateTime|DateTimeOffset|Были предоставлены разрешения времени для этой учетной записи|
-|grantedByUpn|String.|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
-|grantedByUserId|String.|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
+|grantedByUpn|Строка|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
+|grantedByUserId|Строка|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
 
 
 
