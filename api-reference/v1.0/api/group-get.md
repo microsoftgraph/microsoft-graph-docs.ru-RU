@@ -2,12 +2,13 @@
 title: Вывод группы
 description: Получение свойств и связей объекта группы.
 author: dkershaw10
-ms.openlocfilehash: aed805172759971740d1576b4b3040934116cd66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 554a0b6bf6fcb4afb2a57f12e2c814cf5fa57951
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340315"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873411"
 ---
 # <a name="get-group"></a>Вывод группы
 Получение свойств и связей объекта группы.
@@ -70,7 +71,7 @@ GET /groups/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

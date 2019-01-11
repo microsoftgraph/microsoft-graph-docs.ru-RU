@@ -2,12 +2,13 @@
 title: Получение androidWorkProfileTrustedRootCertificate
 description: Чтение свойства и связи объекта androidWorkProfileTrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 473568f12b90af2af6e085202243dff1257059b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e0cead3035cb2614d0158b3dfa269abdc206ad82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360083"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878388"
 ---
 # <a name="get-androidworkprofiletrustedrootcertificate"></a>Получение androidWorkProfileTrustedRootCertificate
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

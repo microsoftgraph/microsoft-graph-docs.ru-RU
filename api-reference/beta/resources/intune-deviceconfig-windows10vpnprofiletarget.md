@@ -2,12 +2,13 @@
 title: Тип перечисления windows10VpnProfileTarget
 description: Типы назначения профилей Windows 10 VPN.
 author: tfitzmac
-ms.openlocfilehash: 66adac1fe6e517a442988a5f8e43f9aaafa2793e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 608fa39d190e941106e584c984ee32e727749fcb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361749"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880201"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>Тип перечисления windows10VpnProfileTarget
 

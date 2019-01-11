@@ -2,12 +2,13 @@
 title: Обновление группы
 description: Обновление свойств, принадлежащих объекту группы.
 author: dkershaw10
-ms.openlocfilehash: 11144b477d6a19ae876eed1f561ade4a139564a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 92ba1110f0b92a8042e3e3a982d385ded4fdc68a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879697"
 ---
 # <a name="update-group"></a>Обновление группы
 
@@ -37,7 +38,7 @@ PATCH /groups/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 

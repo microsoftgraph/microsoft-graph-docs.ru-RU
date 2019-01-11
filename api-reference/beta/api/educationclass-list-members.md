@@ -1,12 +1,13 @@
 ---
 title: Перечисление участников
 description: Получает преподавателей и учащихся для курса. Обратите внимание на то, что если используется делегированный маркер, участников могут видеть только другие участники курса.
-ms.openlocfilehash: e8f31720733fec3942d4ddb35fa7f2fdac1b26f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 13484a6a20f1b35e69a8957eb05bb93c9666ee75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075339"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874895"
 ---
 # <a name="list-members"></a>Перечисление участников
 
@@ -21,7 +22,7 @@ ms.locfileid: "27075339"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается  |
-|Для приложения | EduRoster.Read.All, EduRoster.ReadWrite.All, а также Member.Read.Hidden | 
+|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All, а также Member.Read.Hidden | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +37,7 @@ GET /education/classes/{id}/members
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationUser](../resources/educationuser.md) в теле отклика.

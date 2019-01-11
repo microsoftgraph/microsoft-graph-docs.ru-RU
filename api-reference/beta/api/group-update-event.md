@@ -2,12 +2,13 @@
 title: Обновление события
 description: Обновление объекта event.
 author: dkershaw10
-ms.openlocfilehash: dc55ea69ff67a813eeeec853889f19c30d975068
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1499ab66d698f8f22bde79d0ef3e53fdd8722302
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879228"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -36,7 +37,7 @@ PATCH /groups/{id}/calendar/events/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ

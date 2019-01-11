@@ -2,12 +2,13 @@
 title: Обновление iosVppAppAssignedLicense
 description: Обновление свойства объекта iosVppAppAssignedLicense.
 author: tfitzmac
-ms.openlocfilehash: e15aba6cf5ca5225210e946f04a6b1bff82cdd83
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 226a192e5a3da8071b5c31a523f97c60ecec8b09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322325"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879158"
 ---
 # <a name="update-iosvppappassignedlicense"></a>Обновление iosVppAppAssignedLicense
 
@@ -37,11 +38,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md).
@@ -49,7 +50,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|userEmailAddress|String.|Адрес электронной почты пользователя.|
+|userEmailAddress|Строка|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
 |userPrincipalName|Строка|Имя участника-пользователя.|

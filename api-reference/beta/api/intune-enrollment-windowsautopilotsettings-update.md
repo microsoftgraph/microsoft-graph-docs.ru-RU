@@ -2,12 +2,13 @@
 title: Обновление windowsAutopilotSettings
 description: Обновление свойства объекта windowsAutopilotSettings.
 author: tfitzmac
-ms.openlocfilehash: 281a0ff6412151e284c566444886092e2566b491
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8087ce2a3d7fd02eb6cc118d75082382bcddd58d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877653"
 ---
 # <a name="update-windowsautopilotsettings"></a>Обновление windowsAutopilotSettings
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/windowsAutopilotSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md).

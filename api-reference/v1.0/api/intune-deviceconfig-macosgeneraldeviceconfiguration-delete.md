@@ -2,12 +2,13 @@
 title: Удаление объекта macOSGeneralDeviceConfiguration
 description: Удаляет объект macOSGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a7b4ac7e75a9fe0bb6bd8db9ab11e60b2596c584
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc6903eb5a549f249d63af027555e662466402bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329136"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876337"
 ---
 # <a name="delete-macosgeneraldeviceconfiguration"></a>Удаление объекта macOSGeneralDeviceConfiguration
 
@@ -35,11 +36,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

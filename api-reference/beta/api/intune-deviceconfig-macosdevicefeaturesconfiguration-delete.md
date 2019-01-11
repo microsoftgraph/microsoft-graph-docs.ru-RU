@@ -2,12 +2,13 @@
 title: Удаление объекта macOSDeviceFeaturesConfiguration
 description: Удаляет объект macOSDeviceFeaturesConfiguration.
 author: tfitzmac
-ms.openlocfilehash: ff436f0071346d89ab89ce68f8d99e00093d2b2f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0c85766a02ecba992ebd2e131d33e93f9f71c07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878577"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>Удаление объекта macOSDeviceFeaturesConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

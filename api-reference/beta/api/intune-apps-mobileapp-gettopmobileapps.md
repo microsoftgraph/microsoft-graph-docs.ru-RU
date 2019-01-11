@@ -2,12 +2,13 @@
 title: функция getTopMobileApps
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 03157e744358f4d76e781d33ae056104cf0a1130
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4f9299e2de7dca455d192637eba84ccc553d434
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879501"
 ---
 # <a name="gettopmobileapps-function"></a>функция getTopMobileApps
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 

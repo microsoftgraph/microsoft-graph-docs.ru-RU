@@ -1,12 +1,13 @@
 ---
 title: Перечисление правил
 description: Получение всех объектов messageRule, определенных для папки "Входящие" пользователя.
-ms.openlocfilehash: 9cd56e3ad7c63a2b8ad84758ac7d26c3c349810a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3145c1f2b2900971021b6799917996e23cf36866
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863366"
 ---
 # <a name="list-rules"></a>Перечисление правил
 
@@ -36,7 +37,7 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [messageRule](../resources/messagerule.md) в тексте ответа.
@@ -51,8 +52,7 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

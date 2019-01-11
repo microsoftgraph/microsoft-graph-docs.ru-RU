@@ -2,12 +2,13 @@
 title: Перечисление преподавателей
 description: Получение списка преподавателей для класса. Чтобы делегированные маркеры могли получить список преподавателей, они должны принадлежать к классу.
 author: mmast-msft
-ms.openlocfilehash: 9f60ab7c8bd03d84a7d085f16626b074ede82841
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d8030f9d3adb61b678c4224205a7f9d1f6a36b5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879004"
 ---
 # <a name="list-teachers"></a>Перечисление преподавателей
 
@@ -37,7 +38,7 @@ GET /education/classes/{id}/teachers
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationUser](../resources/educationuser.md) в теле отклика.

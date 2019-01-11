@@ -2,12 +2,13 @@
 title: Тип ресурса managementConditionStatement
 description: Условная инструкция управления — это группа управления условий, включения или отключения конфигурации устройства или приложение при все содержащиеся управления условий.
 author: tfitzmac
-ms.openlocfilehash: ca0966edd64166479361f42816e36fd278dbc6b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6281d151555c0c58a0eb608e9dafc754384369f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347679"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878402"
 ---
 # <a name="managementconditionstatement-resource-type"></a>Тип ресурса managementConditionStatement
 

@@ -2,12 +2,13 @@
 title: Получение mobileAppTroubleshootingEvent
 description: Чтение свойства и связи объекта mobileAppTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 24adc2e292dce5d28737dde5ec545dfd08d3f5c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f22e0909b53695b7edde6f8469176c2ae2ead25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861728"
 ---
 # <a name="get-mobileapptroubleshootingevent"></a>Получение mobileAppTroubleshootingEvent
 
@@ -39,11 +40,11 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEve
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

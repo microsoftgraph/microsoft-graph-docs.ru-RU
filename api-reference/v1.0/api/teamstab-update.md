@@ -2,12 +2,13 @@
 title: Вкладка "обновления"
 description: Обновляет свойства указанной вкладки.
 author: nkramer
-ms.openlocfilehash: 6594585721ddbe57ea56229ae37ebb85f9dfff66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e5ddaec72908cb97aa5bccfc768ae78a82ad11a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881531"
 ---
 # <a name="update-tab"></a>Вкладка "обновления"
 
@@ -39,7 +40,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [вкладки](../resources/teamstab.md) .
 
 ## <a name="response"></a>Ответ

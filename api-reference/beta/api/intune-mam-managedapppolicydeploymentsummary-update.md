@@ -2,12 +2,13 @@
 title: Обновление объекта managedAppPolicyDeploymentSummary
 description: Обновление свойств объекта managedAppPolicyDeploymentSummary.
 author: tfitzmac
-ms.openlocfilehash: f3d8445ac8b937b1a4b5ce10c0b89987103967dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 220443e5c75121083fb23758e42d7ec331bbee18
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325188"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877427"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Обновление объекта managedAppPolicyDeploymentSummary
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

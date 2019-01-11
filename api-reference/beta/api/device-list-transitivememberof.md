@@ -1,12 +1,13 @@
 ---
 title: Доверия транзитивных групп списка устройств
 description: Получите, устройство является членом группы. Этот запрос API доверия транзитивных и также возвращает все группы, устройство является участником вложенных.
-ms.openlocfilehash: 39589ec7c1858d773ed0907950142ec3b1f4cdef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c15080fa3af336ec0a2bd14f0dd7812719bff52a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874972"
 ---
 # <a name="list-device-transitive-groups"></a>Доверия транзитивных групп списка устройств
 
@@ -43,7 +44,7 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 
@@ -67,8 +68,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 <!-- {
   "blockType": "response",

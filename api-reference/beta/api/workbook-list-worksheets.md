@@ -2,12 +2,13 @@
 title: Список листов
 description: Получение списка объектов листов.
 author: lumine2008
-ms.openlocfilehash: 218138a8bb9c15430c3693ab137afea9de91e059
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d337eac1ccc1d5543bcca605a30d57867fda63e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878843"
 ---
 # <a name="list-worksheets"></a>Список листов
 
@@ -37,7 +38,7 @@ GET /workbook/worksheets
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

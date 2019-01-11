@@ -2,12 +2,13 @@
 title: Перечисление удаленных элементов
 description: Получение списка недавно удаленных элементов.
 author: lleonard-msft
-ms.openlocfilehash: 205052402f4402b9895cca6cc46b6ab656a51ed8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef23704c01a7d1b6cd3a85ffcab1dc34ded0936d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879438"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -41,7 +42,7 @@ GET /directory/deletedItems/microsoft.graph.user
 | Authorization  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,12 +1,13 @@
 ---
 title: Получение параметров почтового ящика пользователя
 description: 'Получите mailboxSettings пользователя. Это включает параметры для автоматических ответов (уведомление людей автоматически при '
-ms.openlocfilehash: fae1bb16ec533abf7f29d0aadc0f66ba33f5ec25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d1e2ce16d82e89e701bbe90386c28b76d1607c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081284"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880180"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -57,7 +58,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

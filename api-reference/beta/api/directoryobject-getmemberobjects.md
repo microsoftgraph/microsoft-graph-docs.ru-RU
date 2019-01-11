@@ -1,12 +1,13 @@
 ---
 title: Вывод объектов элементов
 description: " Возвращает все группы, административные единиц измерения и каталог роли, которые пользователь, группа, субъектов-служб или объекта directory является членом. Эта функция транзитивное. "
-ms.openlocfilehash: f1bf68276fc4ed7d4694fadc73a08ae328047222
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f63c077414f656df168db5c5af498cec0f79e703
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074994"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874804"
 ---
 # <a name="get-member-objects"></a>Вывод объектов элементов
 
@@ -41,7 +42,7 @@ POST /directoryObjects/{id}/getMemberObjects
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

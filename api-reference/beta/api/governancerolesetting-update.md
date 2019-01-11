@@ -1,12 +1,13 @@
 ---
 title: Обновление governanceRoleSetting
 description: Обновление свойств governanceRoleSetting.
-ms.openlocfilehash: 2d9417c99e63b1b4c7302c2afdda4c272b2fce82
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: e76d7955576d9d514a70b52b31f4d034362aac1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874909"
 ---
 # <a name="update-governancerolesetting"></a>Обновление governanceRoleSetting
 
@@ -19,7 +20,7 @@ ms.locfileid: "27191118"
 
 >**Примечание:** Этот интерфейс API также требуется, что источник запроса имеют по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -37,7 +38,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 | Content-Type  | application/json|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса задаете значения параметра [governanceRuleSettings](../resources/governancerulesetting.md) , который требуется обновить. 
 
 | Свойство     | Тип   |Описание|
@@ -74,7 +75,7 @@ Content-length: 350
   "adminEligibleSettings":[{"ruleIdentifier":"ExpirationRule","setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"}]
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.None"

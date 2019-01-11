@@ -2,12 +2,13 @@
 title: Get settingStateDeviceSummary
 description: Чтение свойств и связей объекта settingStateDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: 3308a4fff48b6433d7c35303566ddc73f03c23e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc8ab9e2dbc9e12fec1b0d8e4a3bf14fe92c69e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878409"
 ---
 # <a name="get-settingstatedevicesummary"></a>Get settingStateDeviceSummary
 
@@ -48,11 +49,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

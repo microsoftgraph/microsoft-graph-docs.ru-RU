@@ -2,12 +2,13 @@
 title: Список столбцов
 description: Получение списка объектов tablecolumn.
 author: lumine2008
-ms.openlocfilehash: 18bd254a1d45e95d35862c33a59e9ce1c70de6ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 69577701a2bd94bea50fa7619dc8c3261f4458d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876330"
 ---
 # <a name="list-columns"></a>Список столбцов
 
@@ -38,7 +39,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

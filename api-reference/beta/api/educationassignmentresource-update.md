@@ -2,12 +2,13 @@
 title: Обновление educationAssignmentResource
 description: 'Обновление свойств ресурса, связанного с назначением. Учителя только в классе можно изменить объекты назначения ресурсов.  '
 author: dipakboyed
-ms.openlocfilehash: 68c8f471462c489e9e655a1642731be3a8700ba4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91321cc124baa87a82f2f1f5fecc65365cafc18d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343220"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879312"
 ---
 # <a name="update-educationassignmentresource"></a>Обновление educationAssignmentResource
 
@@ -40,7 +41,7 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean.| Указывает, следует ли скопировать этот ресурс объект ресурсов каждого студента при публикации назначения.|
+|distributeForStudentWork|Логический| Указывает, следует ли скопировать этот ресурс объект ресурсов каждого студента при публикации назначения.|
 |resource|educationResource| Объект ресурса. |
 
 ## <a name="response"></a>Ответ

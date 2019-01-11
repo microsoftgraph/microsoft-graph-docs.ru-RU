@@ -2,12 +2,13 @@
 title: 'ChartPointsCollection: ItemAt'
 description: Получение точки на основании сведений о ее позиции в ряду.
 author: lumine2008
-ms.openlocfilehash: fd4adc19397ddd4f29a98d875f50df0e6df302f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 51a79ff10b71d1f39c6c6da82adf11205b42b57f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348904"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880488"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -33,7 +34,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/item
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

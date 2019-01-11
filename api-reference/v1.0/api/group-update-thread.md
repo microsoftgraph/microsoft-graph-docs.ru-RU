@@ -2,12 +2,13 @@
 title: Обновление цепочки беседы
 description: Обновление объекта thread.
 author: dkershaw10
-ms.openlocfilehash: db4b30d50bd616680f88949906cb96480668c612
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aca6b79a3a577105d0038aa6ab8ca4715909bd52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348596"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880439"
 ---
 # <a name="update-conversation-thread"></a>Обновление цепочки беседы
 Обновление объекта [thread](../resources/conversationthread.md).
@@ -32,7 +33,7 @@ PATCH /groups/{id}/threads/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ

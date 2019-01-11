@@ -2,12 +2,13 @@
 title: Перечисление объектов userInstallStateSummary
 description: Список свойств и связей объектов userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: c061a443ce26074240abc2ce0056696805fa01d7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 919d4cfc6aa3c84b6482f82278dd7017e2e78af9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875588"
 ---
 # <a name="list-userinstallstatesummaries"></a>Перечисление объектов userInstallStateSummary
 
@@ -35,11 +36,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

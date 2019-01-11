@@ -1,12 +1,13 @@
 ---
 title: Обновление plannerPlan
 description: Обновление свойства объекта **plannerPlan** .
-ms.openlocfilehash: 477246b442971693c2748d9f2cde10ac46b8ef0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6e15ff81f48a7e98a53cefea0bee5c33be24b34f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082723"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876449"
 ---
 # <a name="update-plannerplan"></a>Обновление plannerPlan
 
@@ -41,7 +42,7 @@ PATCH /planner/plans/<id>
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|owner|String|Идентификатор `id` [группы](../resources/group.md), которой принадлежит план. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. Указанное значение может изменить только владелец.|
+|owner|Строка|Идентификатор `id` [группы](../resources/group.md), которой принадлежит план. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. Указанное значение может изменить только владелец.|
 |title|Строка|Название плана.|
 
 ## <a name="response"></a>Ответ
@@ -68,8 +69,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

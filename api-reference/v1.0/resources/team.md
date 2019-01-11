@@ -2,12 +2,13 @@
 title: Тип ресурса группы
 description: 'Группы в группах Microsoft — это коллекция каналов. '
 author: nkramer
-ms.openlocfilehash: 3bb6fde320dbab2c19f151015d7121c3fc840c97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 85694e18771ac17873f97cedf68d074ee550f787
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878549"
 ---
 # <a name="team-resource-type"></a>Тип ресурса группы
 
@@ -42,7 +43,7 @@ ms.locfileid: "27323872"
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |Параметры для настройки использования Giphy, memes и наклейки рабочих групп.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Параметры для настройки ли гости могут создать, обновить или удалить каналы рабочих групп.|
-|isArchived|Boolean.|Является ли эта группа в режиме только для чтения. |
+|isArchived|Логический|Является ли эта группа в режиме только для чтения. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки ли члены могут выполнять определенные действия, например, создание каналов и добавьте программы-роботы, рабочих групп.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки системы обмена сообщениями и упоминания рабочих групп.|
 |webUrl|String (только для чтения) | Гиперссылка, будут поступать на группы в клиенте группами Майкрософт. Это URL-адрес, который вы получаете при щелкните правой кнопкой мыши группы в клиенте Microsoft группы и выберите **получить ссылку на группы**. Этот URL-адрес должен быть обрабатываются как непрозрачный больших двоичных объектов и не синтаксический анализ. |

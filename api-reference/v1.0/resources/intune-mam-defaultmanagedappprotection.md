@@ -2,12 +2,13 @@
 title: Тип ресурса defaultManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенного набора приложений для всех пользователей, к которым не применяется политика TargetedManagedAppProtection
 author: tfitzmac
-ms.openlocfilehash: 3c9599ebc3e381a61460351b0802105c23ef75d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f29bc450ca2dfd8f58efe235263d50908d05ab12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331103"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880880"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>Тип ресурса defaultManagedAppProtection
 

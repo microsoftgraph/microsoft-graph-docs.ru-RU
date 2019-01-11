@@ -2,12 +2,13 @@
 title: Тип перечисления windowsUpdateForBusinessUpdateWeeks
 description: Запланировано установки обновления на недели, месяца
 author: tfitzmac
-ms.openlocfilehash: 2d42e9e4951cdcbec1acc89f9478421b1aef0a36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 563c1cf2a756fb77560b11a6ec42d8b698879374
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328813"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877037"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>Тип перечисления windowsUpdateForBusinessUpdateWeeks
 

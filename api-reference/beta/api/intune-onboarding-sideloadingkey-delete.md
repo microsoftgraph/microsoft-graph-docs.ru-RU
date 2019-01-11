@@ -2,12 +2,13 @@
 title: Удаление sideLoadingKey
 description: Удаляет sideLoadingKey.
 author: tfitzmac
-ms.openlocfilehash: 9f1c311299d9c027ece81d4478aece98ba0e2052
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 949b65c6c2a8a091fd0854778a61d2d1c77e5822
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321751"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877310"
 ---
 # <a name="delete-sideloadingkey"></a>Удаление sideLoadingKey
 
@@ -37,11 +38,11 @@ DELETE /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

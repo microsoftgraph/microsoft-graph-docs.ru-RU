@@ -2,12 +2,13 @@
 title: Обновление объекта windows10CustomConfiguration
 description: Обновление свойств объекта windows10CustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 7ca09c829adfad05724075b2934693b693b9056d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 767b3e9e79c33a631a773658f636d69076fb810f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875091"
 ---
 # <a name="update-windows10customconfiguration"></a>Обновление объекта windows10CustomConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

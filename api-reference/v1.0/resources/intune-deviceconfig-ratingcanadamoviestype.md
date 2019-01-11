@@ -2,12 +2,13 @@
 title: Тип перечисления ratingCanadaMoviesType
 description: Оценка метки в Канада кино
 author: tfitzmac
-ms.openlocfilehash: fdedbd1b52c8ac8527119fb4957a26becd5c0a1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fbc62e8f578307f2d8a6b23ef57d6a1eb7f0ca62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336934"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880551"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>Тип перечисления ratingCanadaMoviesType
 

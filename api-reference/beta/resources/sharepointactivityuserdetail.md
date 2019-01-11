@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса sharePointActivityUserDetail
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: a5b6de8a4a9b82d9e6d34a2ae289f0c7589798ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4503739a7b2e13cade72951ae56ab410f22608b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075477"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880698"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>Тип ресурса sharePointActivityUserDetail
 
@@ -15,7 +16,7 @@ ms.locfileid: "27075477"
 | Свойство                  | Тип              |
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Date              |
-| userPrincipalName         | String            |
+| userPrincipalName         | Строка            |
 | isDeleted                 | Логический           |
 | deletedDate               | Date              |
 | lastActivityDate          | Date              |

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса Icon
 description: Представляет значок ячейки.
-ms.openlocfilehash: fd3e0682a7eb73dd4e3286e11d9f9680755db265
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e1b31632884c757d40be4a7c9639933439028382
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861693"
 ---
 # <a name="icon-resource-type"></a>Тип ресурса Icon
 
@@ -20,12 +21,12 @@ ms.locfileid: "27076838"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта Icon](../api/icon-get.md) | [Icon](icon.md) |Чтение свойств и связей объекта значка.|
-|[Update](../api/icon-update.md) | [Icon](icon.md)  |Обновление объекта значка. |
+|[обновление](../api/icon-update.md). | [Icon](icon.md)  |Обновление объекта значка. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|целое|Представляет собой индекс значка данного набора.|
+|index|int|Представляет собой индекс значка данного набора.|
 |set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="relationships"></a>Связи

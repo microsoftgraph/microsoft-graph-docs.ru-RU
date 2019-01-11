@@ -1,12 +1,13 @@
 ---
 title: Получение educationClass
 description: "  Группа \"Администраторы\" представляют преподавателей в классе. Если вы используете делегированный маркер, пользователь увидит только курсы, участником которых является."
-ms.openlocfilehash: 931c47a0885d8b82411410721fb0729aa250a422
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9d4a48a12d05bd7ef6bd1c6204ce23755b26019e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874930"
 ---
 # <a name="get-educationclass"></a>Получение educationClass
 
@@ -36,7 +37,7 @@ GET /education/classes/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [educationClass](../resources/educationclass.md) в теле отклика.

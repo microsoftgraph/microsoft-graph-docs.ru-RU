@@ -2,12 +2,13 @@
 title: Get defaultManagedAppProtection
 description: Чтение свойств и связей объекта defaultManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: 1932ee08cc3ea879dc207dade7010fc029d49afa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6da64f0bf2d5cd14a9d9be4344594fb6cd4876b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341624"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877142"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtecti
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

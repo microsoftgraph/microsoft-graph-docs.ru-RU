@@ -2,12 +2,13 @@
 title: Тип ресурса deviceComplianceDeviceStatus
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 3d316b81d66ede87b945803e19850545547ddf18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ceb97152da7e3f1421319a4e890c9467bde1fc0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327050"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880103"
 ---
 # <a name="devicecompliancedevicestatus-resource-type"></a>Тип ресурса deviceComplianceDeviceStatus
 

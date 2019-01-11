@@ -2,12 +2,13 @@
 title: Тип ресурса webApp
 description: Содержит свойства, в том числе унаследованные, для веб-приложений.
 author: tfitzmac
-ms.openlocfilehash: de2ad3c372c7538f07bf506ce00dc636a86a3454
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e4646040fd0558fbcf65e5f25854e3322a982bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880901"
 ---
 # <a name="webapp-resource-type"></a>Тип ресурса webApp
 

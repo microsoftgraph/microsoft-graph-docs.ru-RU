@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса physicalAddress
 description: Представляет почтовый адрес ресурса, например контакта или события.
-ms.openlocfilehash: 819240be3eb9a088fde43390fbb1d1d4af1fd30c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3a656046cc23394fc8cff9100eb5ad2289050b25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081409"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823585"
 ---
 # <a name="physicaladdress-resource-type"></a>Тип ресурса physicalAddress
 
@@ -16,8 +17,8 @@ ms.locfileid: "27081409"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|String|Тип адреса. Возможные значения: `unknown`, `home`, `business`, `other`.|
-|postOfficeBox|String|Номер абонентского ящика.|
+|type|Строка|Тип адреса. Возможные значения: `unknown`, `home`, `business`, `other`.|
+|postOfficeBox|Строка|Номер абонентского ящика.|
 |city|String|Город.|
 |countryOrRegion|String|Страна или регион. Это строковое значение в произвольном формате, например "США".|
 |postalCode|String|Почтовый индекс.|

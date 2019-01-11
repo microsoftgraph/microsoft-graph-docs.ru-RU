@@ -2,12 +2,13 @@
 title: Список windowsIdentityProtectionConfigurations
 description: Свойства списка и связей объектов windowsIdentityProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8ce4e97da0477cbc79015271b36b86dfebef6a4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0bc4b871ea2b093867051a76b53d756126006e40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331306"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877668"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>Список windowsIdentityProtectionConfigurations
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

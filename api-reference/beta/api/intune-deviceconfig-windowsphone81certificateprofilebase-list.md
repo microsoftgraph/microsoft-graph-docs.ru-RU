@@ -2,12 +2,13 @@
 title: Список windowsPhone81CertificateProfileBases
 description: Свойства списка и связей объектов windowsPhone81CertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 0bd57e78fd1a89e087767cd93ba92792afbdb2a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9fe08d72fa64fd62c5fec3ca4e9efc2740231e3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346258"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877639"
 ---
 # <a name="list-windowsphone81certificateprofilebases"></a>Список windowsPhone81CertificateProfileBases
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

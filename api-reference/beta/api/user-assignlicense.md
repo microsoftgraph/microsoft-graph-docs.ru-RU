@@ -1,12 +1,13 @@
 ---
 title: assignLicense
 description: Добавление или удаление лицензии пользователя для включения или отключения их использования Microsoft облака. К примеру организация может иметь подписки на Office 365 для предприятий E3 со 100 лицензий и этого запроса назначает один из этих лицензий для определенного пользователя. Также можно включить и отключить определенные планы, связанных с подпиской. Для получения дополнительных сведений о подписках и лицензий, см в этой статье Technet.
-ms.openlocfilehash: ecfe1f97e2e951998e0a62eea68412279eae524f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71287b47a0a42ce4f89635fe6a1769c78874ae36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082849"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876204"
 ---
 # <a name="assignlicense"></a>assignLicense
 
@@ -36,7 +37,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

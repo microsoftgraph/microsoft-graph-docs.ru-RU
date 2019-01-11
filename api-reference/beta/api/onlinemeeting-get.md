@@ -2,12 +2,13 @@
 title: Get собрания по сети
 description: Извлечение свойств и связи объекта **onlineMeeting** .
 author: VinodRavichandran
-ms.openlocfilehash: bfae4273aba0583e6c10a7e10f9c67865326bacf
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 75f4b4372e8e2bf12deee4d77f8f271696c715d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880635"
 ---
 # <a name="get-online-meeting"></a>Get собрания по сети
 
@@ -26,7 +27,7 @@ ms.locfileid: "27380382"
 |:---------------------------------------|:------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложений                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
+| Application                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +44,7 @@ GET /applications/{id}/onlineMeetings/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

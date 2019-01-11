@@ -1,12 +1,13 @@
 ---
 title: Создание канала
 description: Создайте новый канал в группы разработчиков Microsoft, как указано в тексте запроса.
-ms.openlocfilehash: 7f561c13b688d76ec4d45f03c2fd7f73192fe8a8
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Normal
+ms.openlocfilehash: f7192c177d79e48a0a9e55c9edc5dbb394539928
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222529"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875049"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -39,10 +40,10 @@ POST /teams/{id}/channels
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [канала](../resources/channel.md) .
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `201 Created` объект [канала](../resources/channel.md) и кода ответа в теле ответа.
 
@@ -62,7 +63,7 @@ Content-type: application/json
   "description": "This channel is where we debate all future architecture plans"
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

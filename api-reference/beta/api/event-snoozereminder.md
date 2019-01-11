@@ -2,12 +2,13 @@
 title: 'event: snoozeReminder'
 description: Отложить напоминание для события в календаре пользователя до нового времени.
 author: angelgolfer-ms
-ms.openlocfilehash: fc97ae4fffca5eeb054f708fe1dec8575382e6be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 440b46b3cb2bebff8f3586e201a0503edcc59000
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874986"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
@@ -48,7 +49,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

@@ -2,12 +2,13 @@
 title: 'workbookRange: rowsAbove'
 description: Возвращает определенное количество строк над заданным диапазоном.
 author: lumine2008
-ms.openlocfilehash: d90d46cad9fa68b1270c8877fdad69fea3cedccf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0eb7a9ec6539854d4148148e2d283df0eaa366d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351312"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875014"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -41,7 +42,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

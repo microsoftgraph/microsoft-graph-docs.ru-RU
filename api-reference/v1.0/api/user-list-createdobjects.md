@@ -2,12 +2,13 @@
 title: Список createdObjects
 description: Получение списка созданных пользователем объектов каталога.
 author: dkershaw10
-ms.openlocfilehash: e24e4de1d7d17e6c3a2fda95c484f82c91bb8189
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b999f4f9c5de484bd23e42497cc40ef0d3547b0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876946"
 ---
 # <a name="list-createdobjects"></a>Список createdObjects
 
@@ -34,7 +35,7 @@ GET /users/{id | userPrincipalName}/createdObjects
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

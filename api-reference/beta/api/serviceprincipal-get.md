@@ -1,12 +1,13 @@
 ---
 title: Получение servicePrincipal
 description: Извлечение свойств и связи объекта serviceprincipal.
-ms.openlocfilehash: 903bec11787b4b5acc5da688f7b73bf2bbd76262
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 97b1f05fe672d935a88648cb010d1e7cb9dfeaa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082296"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878892"
 ---
 # <a name="get-serviceprincipal"></a>Получение servicePrincipal
 
@@ -21,7 +22,7 @@ ms.locfileid: "27082296"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +37,7 @@ GET /servicePrincipals/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -53,8 +54,7 @@ GET /servicePrincipals/{id}
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

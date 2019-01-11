@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса dataPolicyOperation
 description: Представляет операцию политики отправленных данных. Он содержит сведения, необходимые для отслеживания состояния операции. Например администратор компании запрос данных политики операции экспорта данных сотрудника компании и затем отслеживать этот запрос.
-ms.openlocfilehash: 6e896fdfa60b733dd91e9da573d998c1949f0d9c
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+localization_priority: Normal
+ms.openlocfilehash: b56cfe766bbfcae9339805dd61ce816e372d02f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156035"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876008"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Тип ресурса dataPolicyOperation
 
@@ -25,12 +26,12 @@ ms.locfileid: "27156035"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Представляет, когда запрос для этой операции политики данных был выполнен, в формате UTC, в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. NULL до завершения операции.|
-|id|String| Уникальный ключ для этой операции. |
+|id|Строка| Уникальный ключ для этой операции. |
 |status|string| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
-|storageLocation|String|URL-адрес расположения, в котором выполняется экспорт данных для запросы на экспорт.|
+|storageLocation|Строка|URL-адрес расположения, в котором выполняется экспорт данных для запросы на экспорт.|
 |userId|String|Идентификатор пользователя, для которого выполняется операция.|
 |submittedDateTime|DateTimeOffset|Представляет, когда для этой операции с данными был отправлен запрос, в формате UTC, в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|Ход выполнения|Double|Указывает ход выполнения операции.|
+|progress|Double|Указывает ход выполнения операции.|
 
 ## <a name="relationships"></a>Связи
 Нет

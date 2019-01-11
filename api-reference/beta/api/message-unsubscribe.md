@@ -2,12 +2,13 @@
 title: 'сообщение: отписаться'
 description: Отправляет запрос электронной почты от имени пользователя, выполнившего вход Чтобы отписаться от список рассылки по электронной почте. Использует сведения, приведенные в `List-Unsubscribe` заголовка.
 author: angelgolfer-ms
-ms.openlocfilehash: e516a8aa68bde02f056e503da9c85d4e7a6f62fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f66c24e2900ca4c881d08a402698dacbaf5af5f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877688"
 ---
 # <a name="message-unsubscribe"></a>сообщение: отписаться
 
@@ -44,7 +45,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

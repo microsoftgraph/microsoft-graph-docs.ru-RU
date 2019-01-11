@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса Location
 description: Представляет сведения о месте проведения события.
-ms.openlocfilehash: 149af193864c2a0ecab67ab2c722c9c3b46e9293
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 553634aec386798ac17e00b83883c54a99c0f9ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025941"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879802"
 ---
 # <a name="location-resource-type"></a>Тип ресурса Location
 
@@ -28,9 +29,9 @@ ms.locfileid: "27025941"
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Географические координаты и высота расположения. |
 | displayName  | String | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный электронный адрес для расположения.              |
-| locationUri | String | Необязательный URI, представляющий местоположение. |
+| locationUri | Строка | Необязательный URI, представляющий местоположение. |
 | locationType | locationType | Тип расположения. Возможные значения: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Только для чтения.|
-| uniqueId | String | Только для внутреннего использования.|
+| uniqueId | Строка | Только для внутреннего использования.|
 | uniqueIdType | locationUniqueIdType | Только для внутреннего использования. |
 
 ## <a name="json-representation"></a>Представление JSON

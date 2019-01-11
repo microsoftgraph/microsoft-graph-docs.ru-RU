@@ -2,12 +2,13 @@
 title: Список androidForWorkMobileAppConfigurations
 description: Свойства списка и связей объектов androidForWorkMobileAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: d727f5752d863bcc5efd803031ceff4cbd71c975
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d8ae140fae118ec7778b0188706a518485fbbc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318545"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879263"
 ---
 # <a name="list-androidforworkmobileappconfigurations"></a>Список androidForWorkMobileAppConfigurations
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

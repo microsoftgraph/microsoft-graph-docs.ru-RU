@@ -2,12 +2,13 @@
 title: Список организаций
 description: Список свойств и связей объектов organization.
 author: tfitzmac
-ms.openlocfilehash: 6e01ebb56c8630a847f8f384f10f3d21fe41fa6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f2e6ddfe5fbdd05ae34a06a2cb17348af2494dcc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330718"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877415"
 ---
 # <a name="list-organizations"></a>Список организаций
 
@@ -37,11 +38,11 @@ GET /organization
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

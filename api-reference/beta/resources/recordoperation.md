@@ -2,12 +2,13 @@
 title: Тип ресурса recordOperation
 description: Тип recordOperation
 author: VinodRavichandran
-ms.openlocfilehash: 54b39f30df1dd53a95260b549ae9fab2eedddfd8
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: be6a124fcd7175489679a8c2392218530d510e9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880019"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса recordOperation
 
@@ -19,15 +20,15 @@ ms.locfileid: "27380424"
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | Контекст клиента.                                                                                                                               |
-| completionReason               | String                      | Возможные значения: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
+| clientContext                  | Строка                      | Контекст клиента.                                                                                                                               |
+| completionReason               | Строка                      | Возможные значения: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
 | createdDateTime                | DateTimeOffset              | Время создания записи.                                                                                                          |
-| id                             | String                      | Идентификатор операции сервера. Только для чтения. Сервер, созданный.                                                                                             |
+| id                             | Строка                      | Идентификатор операции сервера. Только для чтения. Сервер, созданный.                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | Время последнего действия операции.                                                                                                     |
-| recordResourceAccessToken      | String                      | Маркер доступа, необходимые для извлечения записи.                                                                                              |
-| recordResourceLocation         | String                      | Расположение, где расположена записи.                                                                                                      |
+| recordResourceAccessToken      | Строка                      | Маркер доступа, необходимые для извлечения записи.                                                                                              |
+| recordResourceLocation         | Строка                      | Расположение, где расположена записи.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результатов.  Только для чтения. Сервер, созданный.                                                                                             |
-| status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. Сервер, созданный.                                                 |
+| status                         | Строка                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. Сервер, созданный.                                                 |
 
 ## <a name="relationships"></a>Связи
 Нет

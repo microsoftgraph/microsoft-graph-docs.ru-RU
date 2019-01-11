@@ -1,12 +1,13 @@
 ---
 title: Получение объекта sectionGroup
 description: Получение свойств и связей объекта sectionGroup.
-ms.openlocfilehash: 12ba258056ae1a317541e01b6747e8de5a97450f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e89460b45c03e35e36ab320433981eb0b60b3c7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081682"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878132"
 ---
 # <a name="get-sectiongroup"></a>Получение объекта sectionGroup
 
@@ -41,7 +42,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

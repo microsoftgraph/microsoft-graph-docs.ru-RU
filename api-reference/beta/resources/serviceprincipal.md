@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса servicePrincipal
 description: Представляет экземпляр объекта приложения в каталоге. Наследуется от directoryObject.
-ms.openlocfilehash: c3a08efb1dea1109bd32d59a479260e14089783d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 2df27225f62e7c2b7b026bb3d829abf546241267
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880208"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -65,27 +66,27 @@ ms.locfileid: "27080179"
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
 |accountEnabled|Логический| **значение true,** Если включена участника учетной записи службы. в противном случае — **false**.            |
-|appDisplayName|String|Отображаемое имя, предоставляемые элементом соответствующего приложения.|
+|appDisplayName|Строка|Отображаемое имя, предоставляемые элементом соответствующего приложения.|
 |appId|String|Уникальный идентификатор для соответствующего приложения (его свойство **appId** ).|
 |appRoleAssignmentRequired|Логический|Указывает, будет ли **appRoleAssignment** пользователю или группе требуется перед Azure AD выпустит пользователя или маркер доступа к приложению. Значение null не допускается. |
 |appRoles|Коллекция [роли приложения](approle.md)|Роли приложений, предоставляемые элементом соответствующего приложения. Дополнительные сведения см в определении свойств **appRoles** на сущность [приложения](application.md) . Значение null не допускается. |
-|displayName|String|Отображаемое имя участника-службы.|
-|errorUrl|String|            |
-|Домашняя страница|String|URL-адрес домашней страницы соответствующего приложения.|
+|displayName|Строка|Отображаемое имя участника-службы.|
+|errorUrl|Строка|            |
+|Домашняя страница|Строка|URL-адрес домашней страницы соответствующего приложения.|
 |keyCredentials|[keyCredential](keycredential.md) коллекции|Коллекция ключей учетные данные, связанные со службой участника. Значение null не допускается.            |
-|logoutUrl|String| Задает URL-адрес, который будет использоваться службой авторизации корпорации Майкрософт для выхода из системы на пользователя, с помощью [канала передний план](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [снова канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколы выхода SAML.  |
+|logoutUrl|Строка| Задает URL-адрес, который будет использоваться службой авторизации корпорации Майкрософт для выхода из системы на пользователя, с помощью [канала передний план](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [снова канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколы выхода SAML.  |
 |oauth2Permissions|[oAuth2Permission](oauth2permission.md) коллекции|Разрешения OAuth 2.0, предоставляемые элементом соответствующего приложения. Дополнительные сведения см в определении свойств **oauth2Permissions** на сущность [приложения](application.md) . Значение null не допускается.            |
-|id|String|Уникальный идентификатор для участников-служб. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
+|id|Строка|Уникальный идентификатор для участников-служб. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
 |passwordCredentials|[passwordCredential](passwordcredential.md) коллекции|Коллекция пароль учетных данных, связанных с участников-служб. Значение null не допускается. |
-|preferredTokenSigningKeyThumbprint|String|Зарезервировано для внутреннего пользования. Не записывать или в противном случае использовать это свойство. Могут быть удалены в будущих версиях. |
+|preferredTokenSigningKeyThumbprint|Строка|Зарезервировано для внутреннего пользования. Не записывать или в противном случае использовать это свойство. Могут быть удалены в будущих версиях. |
 |publisherName|String|Отображаемое имя клиента, в котором указаны соответствующего приложения.|
 |replyUrls|Коллекция String|URL-адреса, что маркеры пользователей будут отправлены для входа с ним приложении или перенаправления коды авторизации коды URI, OAuth 2.0, и будут отправлены маркеры доступа для соответствующего приложения. Значение null не допускается. |
-|samlMetadataUrl|String| |
+|samlMetadataUrl|Строка| |
 |servicePrincipalNames|Коллекция String|Коды URI, определение соответствующего приложения. Дополнительные сведения содержатся, [приложения и объекты участников-служб](https://msdn.microsoft.com/library/azure/dn132633.aspx). **Любой** оператор является обязательным для выражения фильтра с несколькими значениями свойств.  Значение null не допускается. |
 |теги|Коллекция String| Значение null не допускается. |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип |Description|
+| Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъектов-служб), назначенные этой участников-служб. Только для чтения.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) коллекции|Приложения, которым назначена участников-служб. Только для чтения. Допускается значение null.|
@@ -112,7 +113,7 @@ ms.locfileid: "27080179"
 |[Список ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получите коллекцию объектов ownedObject.|
 |[Добавление владельца](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Создайте новый владелец, отправку сообщений владельцев семейства.|
 |[Список владельцев](../api/serviceprincipal-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получите владельцем коллекции объектов.|
-|[Update](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Обновление объекта servicePrincipal. |
+|[обновление](../api/serviceprincipal-update.md). | [servicePrincipal](serviceprincipal.md)  |Обновление объекта servicePrincipal. |
 |[Delete](../api/serviceprincipal-delete.md) | Нет |Удалите объект servicePrincipal. |
 |[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Коллекция String||
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Коллекция String||

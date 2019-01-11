@@ -2,12 +2,13 @@
 title: Get windows10EnterpriseModernAppManagementConfiguration
 description: Чтение свойств и связей объекта windows10EnterpriseModernAppManagementConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 2053d26c8678fadbe0ebee7e3e0b0acac8b2ebea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8490a72cbd3c8094ec663c5c24fe1d95532a27b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881882"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Get windows10EnterpriseModernAppManagementConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

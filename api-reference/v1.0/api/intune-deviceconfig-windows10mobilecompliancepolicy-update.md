@@ -2,12 +2,13 @@
 title: Update windows10MobileCompliancePolicy
 description: Обновление свойств объекта windows10MobileCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 696b5c0cb2e51b4f49c656e876940323151e5cba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb78108dc5e97a195f5dddf8b486aef2457df049
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881168"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>Update windows10MobileCompliancePolicy
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

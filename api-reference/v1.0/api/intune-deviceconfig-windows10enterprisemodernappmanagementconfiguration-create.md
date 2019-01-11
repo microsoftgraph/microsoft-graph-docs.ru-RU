@@ -2,12 +2,13 @@
 title: Создание объекта windows10EnterpriseModernAppManagementConfiguration
 description: Создание объекта windows10EnterpriseModernAppManagementConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 0e04d717c1bed1803472c90dbffdba3b11a32aa4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7158690d9206922dd52941cd79d7cc4a6d9dab6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318209"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880012"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>Создание объекта windows10EnterpriseModernAppManagementConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

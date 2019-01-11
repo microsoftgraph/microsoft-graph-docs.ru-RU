@@ -2,12 +2,13 @@
 title: Тип перечисления windowsSpotlightEnablementSettings
 description: Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
 author: tfitzmac
-ms.openlocfilehash: e5ce0c09bd155e493a4df9a105edb12d09e8f9e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea0e306d78176c763245f0664b11856e4da02608
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312994"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879599"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>Тип перечисления windowsSpotlightEnablementSettings
 

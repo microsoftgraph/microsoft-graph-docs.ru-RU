@@ -2,12 +2,13 @@
 title: Использование подсказок порядка в Планировщике
 description: '`)'
 author: TarkanSevilmis
-ms.openlocfilehash: 17aee5f0a867f086ff8171bb3a7f8609526bf1ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e24b9c0510b574c9bf6cfeaaeacb66051a6d3df2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304006"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875938"
 ---
 # <a name="using-order-hints-in-planner"></a>Использование подсказок порядка в Планировщике
 

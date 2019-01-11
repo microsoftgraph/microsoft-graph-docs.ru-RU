@@ -1,12 +1,13 @@
 ---
 title: 'directoryObject: validateProperties'
 description: Проверьте, если группу Office 365 отображаемое имя или почты псевдонимов стандарту именования политик.  Клиенты могут использовать API-Интерфейс для определения отображаемое имя или псевдоним почты является допустимым перед попыткой **Создать** группу Office 365. Для проверки правильности свойств существующей группы, используйте функцию validateProperties для групп.
-ms.openlocfilehash: 82592eff14829fdd8ae1d74c87f43402a3938adf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f38a30d86cf5b28eea6b9891687c4dbca4b78fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076258"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879823"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
@@ -36,13 +37,13 @@ POST /directoryObjects/validateProperties
 | Authorization  | Bearer {code}    |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|entityType|String| `Group`— Это тип только поддерживаемые сущности. |
-|displayName|String| Отображаемое имя группы, чтобы проверить. Свойство не требуется по отдельности. Тем не менее по крайней мере одно свойство (отображаемое имя или mailNickname) является обязательным. |
+|entityType|Строка| `Group`— Это тип только поддерживаемые сущности. |
+|displayName|Строка| Отображаемое имя группы, чтобы проверить. Свойство не требуется по отдельности. Тем не менее по крайней мере одно свойство (отображаемое имя или mailNickname) является обязательным. |
 |mailNickname|String| Псевдоним почты группы для проверки. Свойство не требуется по отдельности. Тем не менее по крайней мере одно свойство (отображаемое имя или mailNickname) является обязательным. |
 |onBehalfOfUserId|Guid| Идентификатор объекта пользователя для олицетворения при вызове API. Результаты проверки используются атрибуты onBehalfOfUserId и роли. |
 

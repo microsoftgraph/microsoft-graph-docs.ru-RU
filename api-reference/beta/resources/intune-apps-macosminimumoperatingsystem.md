@@ -2,12 +2,13 @@
 title: Тип ресурса macOSMinimumOperatingSystem
 description: Минимальные операционной системы, необходимые для приложения MacOS.
 author: tfitzmac
-ms.openlocfilehash: ff9d4e3fc375f17d7b3c3efdd4af16cd7e87ceb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 21f557ebd3fbc1ae5e86a1991eb1a0207a902ce2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862092"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>Тип ресурса macOSMinimumOperatingSystem
 
@@ -19,13 +20,13 @@ ms.locfileid: "27354777"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|v10_7|Boolean.|Mac OS 10,7 или более поздней версии.|
-|v10_8|Boolean.|Mac OS 10,8 или более поздней версии.|
-|v10_9|Boolean.|Mac OS 10.9 или более поздней версии.|
-|v10_10|Boolean.|Mac OS 10.10 или более поздней версии.|
-|v10_11|Boolean.|Mac OS 10.11 или более поздней версии.|
-|v10_12|Boolean.|Mac OS 10.12 или более поздней версии.|
-|v10_13|Boolean.|Mac OS 10.13 или более поздней версии.|
+|v10_7|Логический|Mac OS 10,7 или более поздней версии.|
+|v10_8|Логический|Mac OS 10,8 или более поздней версии.|
+|v10_9|Логический|Mac OS 10.9 или более поздней версии.|
+|v10_10|Логический|Mac OS 10.10 или более поздней версии.|
+|v10_11|Логический|Mac OS 10.11 или более поздней версии.|
+|v10_12|Логический|Mac OS 10.12 или более поздней версии.|
+|v10_13|Логический|Mac OS 10.13 или более поздней версии.|
 
 ## <a name="relationships"></a>Связи
 Нет

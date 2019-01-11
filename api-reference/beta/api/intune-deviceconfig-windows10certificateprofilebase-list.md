@@ -2,12 +2,13 @@
 title: Список windows10CertificateProfileBases
 description: Свойства списка и связей объектов windows10CertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 6efda26760ecbcb50bba6334f8934489f75bab31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 152c8920fecfc34e5ff3b69dc2b94d6f8ce38dc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881069"
 ---
 # <a name="list-windows10certificateprofilebases"></a>Список windows10CertificateProfileBases
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

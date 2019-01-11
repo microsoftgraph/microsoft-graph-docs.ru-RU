@@ -1,12 +1,13 @@
 ---
 title: Список signIns
 description: Извлекает Azure AD входы для клиента. Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.  Самые последние signIns возвращаются первые.
-ms.openlocfilehash: 3abca59187dcc9667789e33bcefc1bcc51d5ab10
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861791"
 ---
 # <a name="list-signins"></a>Список signIns
 
@@ -20,7 +21,7 @@ ms.locfileid: "27076424"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложения | AuditLog.Read.All | 
+|Для приложений | AuditLog.Read.All | 
 
 Кроме того приложения должны быть [правильно зарегистрирован](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) для Azure AD.
 
@@ -86,8 +87,7 @@ GET auditLogs/signIns
 GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

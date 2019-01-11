@@ -2,12 +2,13 @@
 title: Тип ресурса officeClientConfiguration
 description: Конфигурация клиента Office.
 author: tfitzmac
-ms.openlocfilehash: 67a7845a2e0327e2e5de37d424274f6e2ee35604
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 297383f8b7450e6d0df268afc4c009b3110205ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879634"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>Тип ресурса officeClientConfiguration
 
@@ -32,7 +33,7 @@ ms.locfileid: "27303838"
 |policyPayload|Stream|Параметры политики JSON string в двоичном формате, пользователь не может изменить эти значения.|
 |описание|Строка|Н/Д|
 |displayName|Строка|Admin предоставляются описание клиента office конфигурации политики.|
-|lastModifiedDateTime|DateTime.|Отметка измененные даты и времени последнего политики.|
+|lastModifiedDateTime|DateTime|Отметка измененные даты и времени последнего политики.|
 |priority|Int32|Значение приоритета должно быть уникальное значение для каждой политики в области клиента и будет использоваться для разрешения конфликтов, меньшее значение означает, что высокого приоритета.|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Возврат Сводка пользователей для политики.|
 |checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) коллекции|Список office состояние возврата клиента.|

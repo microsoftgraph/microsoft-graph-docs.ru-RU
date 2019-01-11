@@ -1,12 +1,13 @@
 ---
 title: 'section: copyToNotebook'
 description: Копирование раздела в указанную записную книжку.
-ms.openlocfilehash: 393618ddae4fa20b47bdb77aa650185f3b2ed518
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7213220711051f0d4edd926305bcdc983cfa259a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878038"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
@@ -38,16 +39,16 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите объект JSON, который содержит параметры, требуемые операцией.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|Идентификатор сайта SharePoint для копирования. Используйте только при копировании на сайте группы разработчиков Office 365.|
-|siteId|String|Идентификатор веб-сайта SharePoint, чтобы скопировать. Используйте только при копировании на сайте группы разработчиков Office 365.|
-|groupId|String|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
+|siteCollectionId|Строка|Идентификатор сайта SharePoint для копирования. Используйте только при копировании на сайте группы разработчиков Office 365.|
+|siteId|Строка|Идентификатор веб-сайта SharePoint, чтобы скопировать. Используйте только при копировании на сайте группы разработчиков Office 365.|
+|groupId|Строка|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
 |id|Строка|Обязательный. Идентификатор целевой записной книжки. |
-|renameAs|String|Имя копии. По умолчанию используется имя существующего элемента. |
+|renameAs|Строка|Имя копии. По умолчанию используется имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 

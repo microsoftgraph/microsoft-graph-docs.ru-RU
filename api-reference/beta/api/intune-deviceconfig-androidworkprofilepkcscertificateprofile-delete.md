@@ -2,12 +2,13 @@
 title: Удаление androidWorkProfilePkcsCertificateProfile
 description: Удаляет androidWorkProfilePkcsCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 6a42c70bb0949e81482aeb2af46cc7e193743257
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 84ce653e02891949135f48b5b86f2d79926464e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881594"
 ---
 # <a name="delete-androidworkprofilepkcscertificateprofile"></a>Удаление androidWorkProfilePkcsCertificateProfile
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
