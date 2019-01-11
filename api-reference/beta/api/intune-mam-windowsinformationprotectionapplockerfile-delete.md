@@ -2,12 +2,13 @@
 title: Удаление объекта windowsInformationProtectionAppLockerFile
 description: Удаляет объект windowsInformationProtectionAppLockerFile.
 author: tfitzmac
-ms.openlocfilehash: 184bf32cace77f344213b037b20bab82b7e509ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2bfe19845807d0ccf3e111e3b3dc315ac4fef109
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312091"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868427"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>Удаление объекта windowsInformationProtectionAppLockerFile
 
@@ -40,11 +41,11 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса privilegedApproval
 description: Представляет утверждения, запрашиваемых в привилегированной управления удостоверениями для получения в роли.
-ms.openlocfilehash: 3f900ef4a141b2f71c303becd49789b86cefb1b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dee8cffba02270308c6786b2549b66aa5ad9dfa8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078701"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868350"
 ---
 # <a name="privilegedapproval-resource-type"></a>Тип ресурса privilegedApproval
 
@@ -26,21 +27,21 @@ ms.locfileid: "27078701"
 |[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Получите запрашивающего запросов на утверждение.|
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |approvalDuration|Продолжительность||
 |approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalType|Строка||
+|approverReason|Строка||
 |endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id|String| Только для чтения.|
-|requestorReason|String||
-|roleId|String||
+|id|Строка| Только для чтения.|
+|requestorReason|Строка||
+|roleId|Строка||
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |userId|String||
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
 |запрос|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Только для чтения. Запрос назначения ролей для данного объекта утверждения|

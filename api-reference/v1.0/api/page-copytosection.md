@@ -1,12 +1,13 @@
 ---
 title: 'page: copyToSection'
 description: Копирование страницы в определенный раздел.
-ms.openlocfilehash: eaa6aae4939856be14a47de1800d3691b53274ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 971d5eb47c6130ab7379e8b7db67d355b55c8d7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871500"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 Копирование страницы в определенный раздел.
@@ -35,12 +36,12 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите объект JSON, который содержит параметры, требуемые операцией.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupId|String|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
+|groupId|Строка|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
 |id|String|Обязательный. Идентификатор целевого раздела.|
 
 ## <a name="response"></a>Отклик

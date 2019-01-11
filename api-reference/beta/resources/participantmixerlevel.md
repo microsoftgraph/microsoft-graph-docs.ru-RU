@@ -2,12 +2,13 @@
 title: Тип ресурса participantMixerLevel
 description: Конфигурация микшер уровни для заданного звука участников
 author: VinodRavichandran
-ms.openlocfilehash: 9d5a5d740fbdf250f90b28539221e8231c0bf38c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 8a7b77c07240fbb5face70eb8ea21be55b85f1fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874139"
 ---
 # <a name="participantmixerlevel-resource-type"></a>Тип ресурса participantMixerLevel
 
@@ -21,7 +22,7 @@ ms.locfileid: "27380144"
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | Уклонение от                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Конфигурация (синхронизацию и) из других источников для этой partipant пользовательский набор Уклонение от.       |
 | exclusiveMode          | boolean                                                   | Является ли источники без явного источника уровня необходимо удалить из набора.                       |
-| Участник            | String                                                    | Участник, для которого настраивается микшера.                                             |
+| Участник            | Строка                                                    | Участник, для которого настраивается микшера.                                             |
 | sourceLevels           | [audioSourceLevel](audiosourcelevel.md) коллекции        | Конфигурации уровня для других источников.                                                              |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -2,12 +2,13 @@
 title: Список событий
 description: Получение списка событий в календаре.  Этот список содержит собрания с одним экземпляром и образцы рядов.
 author: angelgolfer-ms
-ms.openlocfilehash: d0be013693b387cf94929fe30b31d7672c3c89d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 72c2391e3ab568c56cd6973483042a4d5bd79753
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305448"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868651"
 ---
 # <a name="list-events"></a>Список событий
 

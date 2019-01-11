@@ -2,12 +2,13 @@
 title: Удаление educationSynchronizationProfile
 description: Удаление профиля синхронизации данных school в клиентов на основе идентификатора.
 author: mmast-msft
-ms.openlocfilehash: b0287133d579915279e0f9a02bf49dd981ccf419
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09cc19b22cfa433cef39c81a6cbeadeddcf52ace
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870366"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Удаление educationSynchronizationProfile
 
@@ -18,7 +19,7 @@ ms.locfileid: "27343304"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Разрешения |
+| Тип разрешения | Permissions |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 
@@ -35,7 +36,7 @@ DELETE /synchronizationProfiles/{id}
 |Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted` и не возвращает тело отклика.

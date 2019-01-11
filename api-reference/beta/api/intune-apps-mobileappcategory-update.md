@@ -2,12 +2,13 @@
 title: Обновление объекта mobileAppCategory
 description: Обновление свойств объекта mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: c7c53344d28dc60dc5c0dc306615a3d700cdcf82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb21e4e3b564f50538f7399f8715c7f55a56b58b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869778"
 ---
 # <a name="update-mobileappcategory"></a>Обновление объекта mobileAppCategory
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

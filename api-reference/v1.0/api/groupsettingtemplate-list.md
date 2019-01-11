@@ -2,12 +2,13 @@
 title: Перечисление объектов groupSettingTemplate
 description: Шаблоны параметров группы представляют набор шаблонов, на базе которых можно создавать параметры группы для использования в клиенте.  Эта операция позволяет получить список доступных объектов groupSettingTemplate.
 author: dkershaw10
-ms.openlocfilehash: b47613093d8efa7fac99a313fff45d846d7a5073
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 476577de23bc0fe5c2df9ce37b2d9083105bb6f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359362"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869876"
 ---
 # <a name="list-groupsettingtemplates"></a>Перечисление объектов groupSettingTemplate
 
@@ -39,7 +40,7 @@ GET /groupSettingTemplates
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

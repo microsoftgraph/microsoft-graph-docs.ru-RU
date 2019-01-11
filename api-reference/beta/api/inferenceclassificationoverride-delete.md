@@ -1,12 +1,13 @@
 ---
 title: Удаление объекта inferenceClassificationOverride
 description: Удалить фокус папки "Входящие" переопределение, указанный по идентификатору.
-ms.openlocfilehash: 888902f1b4e2f9690e875162a5ed0a792bd02f72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7db351e11ccfa8e88fe97ff1ee22173a87242d57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079023"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870142"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Удаление объекта inferenceClassificationOverride
 
@@ -33,7 +34,7 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -51,8 +52,7 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4r
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true

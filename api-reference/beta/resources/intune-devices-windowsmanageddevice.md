@@ -2,12 +2,13 @@
 title: Тип ресурса windowsManagedDevice
 description: Устройства Windows, управляемых или pre-enrolled через Intune
 author: tfitzmac
-ms.openlocfilehash: d432e4cdc4552117de56362df0fd632f6bc1719e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc1b55694881b913fac57edeff3d9e1f9e48f099
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328940"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872732"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>Тип ресурса windowsManagedDevice
 
@@ -90,11 +91,11 @@ ms.locfileid: "27328940"
  Только для чтения. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) коллекции|Указывает последний вход в систему пользователи устройства унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Отчеты о DateTime параметр preferMdmOverGroupPolicy имеет значение.  Если задано, параметры Intune MDM переопределяет параметры групповой политики в случае конфликта. Только для чтения. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Boolean.|Отчеты при регистрации управляемой устройство через автопилот. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Boolean.|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Логический|Отчеты при регистрации управляемой устройство через автопилот. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Логический|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Отчеты устройства управления срок действия сертификата унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|iccid|String.|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|UDID|String.|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|iccid|Строка|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|UDID|Строка|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тег области для этого устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|Число активных вредоносных программ для этого устройства windows унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|Число проверка вредоносных программ для этого устройства windows унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|

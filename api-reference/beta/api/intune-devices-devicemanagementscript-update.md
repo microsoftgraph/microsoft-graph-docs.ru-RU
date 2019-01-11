@@ -2,12 +2,13 @@
 title: Обновление deviceManagementScript
 description: Обновление свойства объекта deviceManagementScript.
 author: tfitzmac
-ms.openlocfilehash: e0eb397960a9ddae4041578761d5001b729f1464
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaca6501f0a1c0fd206583af4e976b9afe9ac2cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869295"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md).
@@ -56,7 +57,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |createdDateTime|DateTimeOffset|Дата и время создания сценарий управления устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценарий управления устройства.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения скрипта управления устройства выполняется в. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean.|Указывает, должно быть извлеченных подписи скрипта.|
+|enforceSignatureCheck|Логический|Указывает, должно быть извлеченных подписи скрипта.|
 |fileName|String|Имя файла сценария.|
 
 

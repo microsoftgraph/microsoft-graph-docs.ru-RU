@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса emailAddress
 description: Представляет имя и SMTP-адрес экземпляра объекта, например сообщения получателю и календарь владельцем.
-ms.openlocfilehash: f607fe4ce01b9a3c3f5e7af5aa1638fef3840177
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5286334378aa5d208cf171ecab0bdc1777a4073b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075846"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871227"
 ---
 # <a name="emailaddress-resource-type"></a>Тип ресурса emailAddress
 
@@ -18,7 +19,7 @@ ms.locfileid: "27075846"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |address|String|Адрес электронной почты экземпляр сущности.|
-|name|String|Отображаемое имя экземпляра сущности.|
+|name|Строка|Отображаемое имя экземпляра сущности.|
 
 ## <a name="json-representation"></a>Представление JSON
 

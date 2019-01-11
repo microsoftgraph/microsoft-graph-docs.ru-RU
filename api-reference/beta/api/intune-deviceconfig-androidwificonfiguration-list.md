@@ -2,12 +2,13 @@
 title: Список androidWiFiConfigurations
 description: Свойства списка и связей объектов androidWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: c46107207f9b33c86707e7f80b51ac15ffdce771
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 42943f892370ff9ea63117363fb57a6b0abd82fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870198"
 ---
 # <a name="list-androidwificonfigurations"></a>Список androidWiFiConfigurations
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

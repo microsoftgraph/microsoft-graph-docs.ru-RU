@@ -2,12 +2,13 @@
 title: Тип ресурса educationFeedback
 description: Отзывы учитель студента. Это свойство представляет часть текста обратной связи, а также who.
 author: mmast-msft
-ms.openlocfilehash: 934d1ec104133257bb1b767e8922c2379e3fd11a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d08f3bc5c7b4882693cdcbba41b364734c6ccef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873565"
 ---
 # <a name="educationfeedback-resource-type"></a>Тип ресурса educationFeedback
 

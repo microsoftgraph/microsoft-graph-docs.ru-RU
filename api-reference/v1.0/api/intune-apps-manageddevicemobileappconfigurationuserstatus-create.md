@@ -2,12 +2,13 @@
 title: Создание объекта managedDeviceMobileAppConfigurationUserStatus
 description: Создание объекта managedDeviceMobileAppConfigurationUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 180e664df4b3e946415b6b4cf0dde09d9b82a659
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1608345f2549da48488bc16f2e5417feb2a4107
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869806"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>Создание объекта managedDeviceMobileAppConfigurationUserStatus
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

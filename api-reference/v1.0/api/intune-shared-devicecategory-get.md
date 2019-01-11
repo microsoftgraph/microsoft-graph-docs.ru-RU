@@ -2,12 +2,13 @@
 title: Получение объекта deviceCategory
 description: Чтение свойств и связей объекта deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: c69e3ecf97889636dd00deab213caf116233f6b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ba5fdee5ba2290b25bdf9485b94307f0f637649a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872193"
 ---
 # <a name="get-devicecategory"></a>Получение объекта deviceCategory
 
@@ -44,11 +45,11 @@ GET /deviceManagement/deviceCategories/{deviceCategoryId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

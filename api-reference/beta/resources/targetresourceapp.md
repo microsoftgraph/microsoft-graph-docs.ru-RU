@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса targetResourceApp
 description: Указывает объект приложения, который был добавлен, обновлении или удалении администраторами с как часть аудита активности. На основе targetResource ресурсов.
-ms.openlocfilehash: e5858ee9c9e72449c39eb563d426773625d00b39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e426eacb1bdea15a2666f45bb061d28afcc693bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078874"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873369"
 ---
 # <a name="targetresourceapp-resource-type"></a>Тип ресурса targetResourceApp
 Указывает объект приложения, который был добавлен, обновлении или удалении администраторами с как часть аудита активности. На основе [targetResource](targetresource.md) ресурсов.

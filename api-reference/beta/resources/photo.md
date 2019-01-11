@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Photo
-ms.openlocfilehash: f61d37eecccd4bf08a2f8abbf4cda15dee5eb94d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ed891f917ba8018aac349976df0455adfd269fdb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869386"
 ---
 # <a name="photo-resource-type"></a>Тип ресурса Photo
 
@@ -41,7 +42,7 @@ ms.locfileid: "27078693"
 | Свойство                | Тип           | Описание
 |:------------------------|:---------------|:----------------------------------
 | **takenDateTime**       | DateTimeOffset | Представляет дату и время съемки. Только для чтения.
-| **cameraMake**          | String         | Изготовитель камеры. Только для чтения.
+| **cameraMake**          | Строка         | Изготовитель камеры. Только для чтения.
 | **cameraModel**         | String         | Модель камеры. Только для чтения.
 | **fNumber**             | Double         | Значение диафрагмы камеры. Только для чтения.
 | **exposureDenominator** | Double         | Знаменатель дробного значения выдержки камеры. Только для чтения.

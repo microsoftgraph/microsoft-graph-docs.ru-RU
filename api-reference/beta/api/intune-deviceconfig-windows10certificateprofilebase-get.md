@@ -2,12 +2,13 @@
 title: Получение windows10CertificateProfileBase
 description: Чтение свойства и связи объекта windows10CertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 851cc94f1c2820c7a4c329b463ecd4d2e2cba10c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eae4bab910220e8f25152de45bdfd128cb7f23af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340931"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868945"
 ---
 # <a name="get-windows10certificateprofilebase"></a>Получение windows10CertificateProfileBase
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

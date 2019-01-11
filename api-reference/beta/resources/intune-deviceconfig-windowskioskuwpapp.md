@@ -2,12 +2,13 @@
 title: Тип ресурса windowsKioskUWPApp
 description: Базовый класс для типов приложений
 author: tfitzmac
-ms.openlocfilehash: 328a91065692a7b315ade5dae86c15d6def320eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f456841962b399a1e9687017a0a8eaeb07a4ba7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871864"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>Тип ресурса windowsKioskUWPApp
 
@@ -24,9 +25,9 @@ ms.locfileid: "27305182"
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитку приложение для макета Пуск унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|Строка|Представляет понятное имя приложения унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appUserModelId|String.|Это единственный идентификатор модели приложения пользователя (AUMID), чтобы оно было доступно для использования в полноэкранном режиме запуска|
+|appUserModelId|Строка|Это единственный идентификатор модели приложения пользователя (AUMID), чтобы оно было доступно для использования в полноэкранном режиме запуска|
 |appId|String|Это ссылается на Intune приложения, который будет целевой для те же назначения как базовой конфигурации|
-|containedAppId|String.|Это ссылается автономные приложения из приложения для Intune|
+|containedAppId|Строка|Это ссылается автономные приложения из приложения для Intune|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,12 +2,13 @@
 title: Get deviceCompliancePolicy
 description: Чтение свойств и связей объекта deviceCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 54c998f79e8b916e549751186e2967b0482e23bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5473d48a5868af2748d14e68ff1e12bbc8e6d0b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322794"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869477"
 ---
 # <a name="get-devicecompliancepolicy"></a>Get deviceCompliancePolicy
 
@@ -39,11 +40,11 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

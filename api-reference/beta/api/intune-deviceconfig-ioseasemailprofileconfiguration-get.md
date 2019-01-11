@@ -2,12 +2,13 @@
 title: Получение iosEasEmailProfileConfiguration
 description: Чтение свойства и связи объекта iosEasEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3d5b253e2469e05fda63ef3a3a0fbb5b4aae14e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53340389e882b1a42d988fceb3856acd1cd5b16d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328072"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873852"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>Получение iosEasEmailProfileConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

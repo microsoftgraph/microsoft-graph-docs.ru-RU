@@ -2,12 +2,13 @@
 title: Тип ресурса androidForWorkSettings
 description: Параметры Android For Work.
 author: tfitzmac
-ms.openlocfilehash: 2a3bedbed986e10c0df1cae94d3302d16607e3f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d96ebd30985b4bea50cf236b3315114db4c3e216
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873795"
 ---
 # <a name="androidforworksettings-resource-type"></a>Тип ресурса androidForWorkSettings
 
@@ -38,7 +39,7 @@ ms.locfileid: "27361714"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения параметров Android for Work|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Указывает пользователей, которые можно зарегистрировать устройств в Android для управления работой устройства. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|deviceOwnerManagementEnabled|Boolean.|Указывает, если эта учетная запись flighting для Android владелец управление устройствами с CloudDPC.|
+|deviceOwnerManagementEnabled|Логический|Указывает, если эта учетная запись flighting для Android владелец управление устройствами с CloudDPC.|
 
 ## <a name="relationships"></a>Связи
 Нет

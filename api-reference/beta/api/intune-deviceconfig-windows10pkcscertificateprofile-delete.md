@@ -2,12 +2,13 @@
 title: Удаление windows10PkcsCertificateProfile
 description: Удаляет windows10PkcsCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: fcefbd78f6f634bbe2e01cca3e64e74b6f72d63e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ceddd89de1b5dd8051493ef5eeec47f03e367ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868707"
 ---
 # <a name="delete-windows10pkcscertificateprofile"></a>Удаление windows10PkcsCertificateProfile
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

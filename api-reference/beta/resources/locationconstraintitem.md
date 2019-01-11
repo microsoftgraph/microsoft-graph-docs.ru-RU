@@ -1,12 +1,13 @@
 ---
 title: Тип ресурсов locationConstraintItem
 description: Условия, заданные клиентом в отношении расположения для проведения собрания.
-ms.openlocfilehash: f29ff1283d876e726e27473485a183956137f981
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4c44a97a3ed0d5bcf56204fab1527c7e4b58455d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874084"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Тип ресурсов locationConstraintItem
 
@@ -46,7 +47,7 @@ ms.locfileid: "27075122"
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Географические координаты и высота расположения. |
 | displayName  | String | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный электронный адрес для расположения. |
-| locationUri | String | Необязательный URI, представляющий местоположение. |
+| locationUri | Строка | Необязательный URI, представляющий местоположение. |
 | resolveAvailability | Boolean | Если задано значение true и указанный ресурс занят, [findMeetingTimes](../api/user-findmeetingtimes.md) ищет свободный ресурс. Если задано значение false и указанный ресурс занят, **findMeetingTimes** возвращает ресурс с наиболее высоким приоритетом в кэше пользователя, не проверяя, свободен ли этот ресурс. Значение по умолчанию: true. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

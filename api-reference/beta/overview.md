@@ -1,12 +1,13 @@
 ---
 title: Справочник по конечной точки бета-версию Microsoft Graph
 description: 'Содержимое ссылки в этом разделе документы в конечную точку бета-версию Microsoft Graph. Конечная точка бета-версия включает в себя API-интерфейсы, которые в настоящее время в предварительной версии и еще не общедоступной. Мы пригласить повторите эти интерфейсы API и обеспечивают ваш отзыв с помощью следующих каналов:'
-ms.openlocfilehash: 9ed6362405a6ff542b707ac546383a9820a8228d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9f9223c36679865b40303dc3530dee9c2c93950d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874307"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Справочник по конечной точки бета-версию Microsoft Graph
 

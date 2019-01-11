@@ -2,12 +2,13 @@
 title: Создание объекта deviceComplianceActionItem
 description: Создание объекта deviceComplianceActionItem.
 author: tfitzmac
-ms.openlocfilehash: 52dd6bca4aa4f91f68d6e986a69e061e899602e8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 282babf1cf567752885858bbb397977b095a7a34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356121"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873614"
 ---
 # <a name="create-devicecomplianceactionitem"></a>Создание объекта deviceComplianceActionItem
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

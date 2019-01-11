@@ -2,12 +2,13 @@
 title: Тип ресурса windows10AssociatedApps
 description: Определение приложения связанного 10 Windows.
 author: tfitzmac
-ms.openlocfilehash: a990d3b1f9b2b33a1e98fd30f5dea4da7fbf4ae8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 097edb32ca01d673bb4d42802e8588edd20cf2d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344830"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869624"
 ---
 # <a name="windows10associatedapps-resource-type"></a>Тип ресурса windows10AssociatedApps
 
@@ -20,7 +21,7 @@ ms.locfileid: "27344830"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Тип|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|Тип приложения. Возможные значения: `desktop`, `universal`.|
-|идентификатор|String.|Идентификатор.|
+|идентификатор|Строка|Идентификатор.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса extension
 description: Абстрактный тип для поддержки открытого типа openTypeExtension в OData 4-й версии.
-ms.openlocfilehash: b67c347e44c875ca550465be46eecdff3f845eef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6a07a341e812ebb119c13b7003841450163cbdd2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075853"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869302"
 ---
 # <a name="extension-resource-type"></a>Тип ресурса extension
 
@@ -35,7 +36,7 @@ ms.locfileid: "27075853"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения.|
+|id|Строка| Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет

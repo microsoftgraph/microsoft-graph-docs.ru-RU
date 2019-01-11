@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса directoryDefinition
 description: Предоставляет синхронизации сведения о каталоге и его объекты. Этот ресурс сообщает о том, обработчик синхронизации, например, что папка содержит объекты с именами **пользователей** и **группы**, какие атрибуты поддерживаются для этих объектов и типы для этих атрибутов. Чтобы объектов и атрибутов для участия в объект сопоставления и правила синхронизации они должны быть определены как часть определения каталогов.
-ms.openlocfilehash: ddc32237efc18d43da23d815aea00ee01b2650be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e6b2b55fb9e9e7963b01403c6aed2f0997e2318b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874524"
 ---
 # <a name="directorydefinition-resource-type"></a>Тип ресурса directoryDefinition
 
@@ -22,9 +23,9 @@ ms.locfileid: "27082347"
 
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|id           |String     |Идентификатор папки. Значение null не допускается.|
+|id           |Строка     |Идентификатор папки. Значение null не допускается.|
 |метаданные       |metadataEntry коллекции    |Расширение дополнительные свойства. Если не указан явно, значения метаданных не должно изменяться.|
-|name           |String     |Имя каталога. Должно быть уникальным в рамках [схемы синхронизации](synchronization-synchronizationschema.md). Значение null не допускается.|
+|name           |Строка     |Имя каталога. Должно быть уникальным в рамках [схемы синхронизации](synchronization-synchronizationschema.md). Значение null не допускается.|
 |объекты        |[objectDefinition](synchronization-objectdefinition.md) коллекции    |Коллекция объектов, поддерживаемых в каталоге.|
 
 ## <a name="json-representation"></a>Представление JSON

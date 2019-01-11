@@ -1,12 +1,13 @@
 ---
 title: Отчеты о действиях в SharePoint
 description: Просматривайте сведения о действиях каждого пользователя, имеющего лицензию на SharePoint, в отчетах о действиях с файлами в SharePoint. Кроме того, вы можете отслеживать уровень взаимодействия, просматривая количество файлов, которыми поделились.
-ms.openlocfilehash: b180a098cdec6ef432ec2837c576192e7aa80b1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 00cc158fee8b5ec108af99c57c089c2259106a73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025131"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869043"
 ---
 # <a name="sharepoint-activity-reports"></a>Отчеты о действиях в SharePoint
 

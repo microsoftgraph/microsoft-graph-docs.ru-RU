@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerFavoritePlanReference
 description: 'Repesents тип **plannerFavoritePlanReference** ресурсов ссылку на plannerPlan, который был помечен как Избранное пользователя. '
-ms.openlocfilehash: bd399572dfce54ee7e46da6af60eb661484519de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b17846eaa1b9a9859d23735d18a191cae4872542
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871325"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>Тип ресурса plannerFavoritePlanReference
 
@@ -20,8 +21,8 @@ Repesents тип **plannerFavoritePlanReference** ресурсов ссылку 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определен в статье [Использование указаний order в Планировщике](planner-order-hint-format.md).|
-|planTitle|String|Название плана в то время, что пользователь отметил его в список избранного.|
+|orderHint|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определен в статье [Использование указаний order в Планировщике](planner-order-hint-format.md).|
+|planTitle|Строка|Название плана в то время, что пользователь отметил его в список избранного.|
 
 
 ## <a name="json-representation"></a>Представление JSON

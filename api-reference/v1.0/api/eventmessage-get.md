@@ -1,12 +1,13 @@
 ---
 title: Получение объекта eventMessage
 description: Разверните параметр на свойство навигации **события** для получения связанного события в календаре участника.
-ms.openlocfilehash: 06b306146a15d98bb327352f568869267f26c37d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea429ba661d9fd75c45adf50c1cec2bb5a2227cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873817"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -39,7 +40,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,12 +2,13 @@
 title: Обновление правила
 description: Изменение записываемых свойств объекта messageRule и сохранение изменений.
 author: angelgolfer-ms
-ms.openlocfilehash: 3ff8910130099a53328c2161c34ec3f1186e0fb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f9263b237d27ba1e938e5e6ecbb7ed558f80a9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871289"
 ---
 # <a name="update-rule"></a>Обновление правила
 
@@ -35,7 +36,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -44,8 +45,8 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия, при соблюдении которых с указанным правилом выполняются соответствующие действия. |
 | displayName | Строка | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | Условия исключения для правила. |
-| isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
-| isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
+| isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. |
+| isReadOnly | Логический | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
 | sequence | Int32 | Определяет последовательность выполнения правила среди прочих правил. |
 
 

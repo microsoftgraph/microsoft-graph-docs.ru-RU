@@ -2,12 +2,13 @@
 title: Тип перечисления ratingGermanyMoviesType
 description: Оценка метки в Германии кино
 author: tfitzmac
-ms.openlocfilehash: 2dc78b1de99c193ab575b28ef3658ddd2b5f6df2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 170dbf4614b34f8dacfa55f7d635146e06d56ea4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874692"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>Тип перечисления ratingGermanyMoviesType
 

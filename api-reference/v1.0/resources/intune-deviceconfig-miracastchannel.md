@@ -2,12 +2,13 @@
 title: Тип перечисления miracastChannel
 description: Возможные значения для Miracast канала.
 author: tfitzmac
-ms.openlocfilehash: 8e24f74b7b46af12394da0df598bf44a3d2a9ecb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 20182ef1a9d5ca28f99343a0150390e1c26762a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873103"
 ---
 # <a name="miracastchannel-enum-type"></a>Тип перечисления miracastChannel
 

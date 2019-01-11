@@ -2,12 +2,13 @@
 title: Удаление windows10VpnConfiguration
 description: Удаляет windows10VpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3c02b9b8add523137a24f6fd2c3ccfaaea108f4f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 409bb303e4c5fcdedbca2a773c161cb857f3f5c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873691"
 ---
 # <a name="delete-windows10vpnconfiguration"></a>Удаление windows10VpnConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

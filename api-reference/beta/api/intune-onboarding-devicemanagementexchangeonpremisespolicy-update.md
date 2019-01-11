@@ -2,12 +2,13 @@
 title: Обновление deviceManagementExchangeOnPremisesPolicy
 description: Обновление свойства объекта deviceManagementExchangeOnPremisesPolicy.
 author: tfitzmac
-ms.openlocfilehash: 260f20fd73320da901eedd1b95ff9b670f78e001
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5cd001f6935836537fe06bd44af20ca9e6a6aa7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305749"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873971"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>Обновление deviceManagementExchangeOnPremisesPolicy
 
@@ -38,11 +39,11 @@ PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md).

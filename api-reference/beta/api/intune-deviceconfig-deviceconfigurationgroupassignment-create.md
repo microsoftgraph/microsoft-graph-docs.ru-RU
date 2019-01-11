@@ -2,12 +2,13 @@
 title: Создание deviceConfigurationGroupAssignment
 description: Создание нового объекта deviceConfigurationGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: c07356d3cf63699fda95e2be6fe361841e0b0d95
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4193470483918a2b690962ae3e190a08ac2f4c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869533"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Создание deviceConfigurationGroupAssignment
 
@@ -45,11 +46,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта deviceConfigurationGroupAssignment.
 
 В следующей таблице показаны свойства, которые необходимы для создания deviceConfigurationGroupAssignment.
@@ -57,8 +58,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|targetGroupId|String.|Идентификатор группы AAD мы ориентация для настройки устройств.|
-|excludeGroup|Boolean.|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
+|targetGroupId|Строка|Идентификатор группы AAD мы ориентация для настройки устройств.|
+|excludeGroup|Логический|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
 
 
 

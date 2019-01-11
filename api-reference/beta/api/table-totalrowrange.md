@@ -2,12 +2,13 @@
 title: 'Table: TotalRowRange'
 description: Получает объект диапазона, связанный со строкой итогов таблицы.
 author: lumine2008
-ms.openlocfilehash: 7e2526c8082aa495e507db6db77c2f96928b3525
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0da7935ca7c6b2747c8c8bad41154730f485fe95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303479"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872214"
 ---
 # <a name="table-totalrowrange"></a>Table: TotalRowRange
 
@@ -36,7 +37,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/TotalRowRange
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

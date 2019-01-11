@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Получение сайта SharePoint
-ms.openlocfilehash: a9fc304c52413a53d3fa352fa8e950a9f9ed8a77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 72a99b1768486da792a401cea4b8dfde5a25a153
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872858"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 

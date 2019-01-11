@@ -2,12 +2,13 @@
 title: Get deviceComplianceDeviceOverview
 description: Чтение свойств и связей объекта deviceComplianceDeviceOverview.
 author: tfitzmac
-ms.openlocfilehash: 66d66bb11de5cbda25232c5d7caea12919b47d7e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 776479aaa8105ea49f60875665e393c5f809321d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870996"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>Get deviceComplianceDeviceOverview
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: Unarchive группы
 description: Восстановление архивированных группы. Это восстанавливает возможность отправлять сообщения и изменение группы, сотрудничает с параметры клиента и группы. Команды архивируются использования API архива.
-ms.openlocfilehash: 7ea400e93efceed7b8a35de24339739bcaa9d74f
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Normal
+ms.openlocfilehash: 512d2e69434430a19af8489082789c671efe2b7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870296"
 ---
 # <a name="unarchive-team"></a>Unarchive группы
 
@@ -38,10 +39,10 @@ POST /teams/{id}/unarchive
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Если unarchiving запускается успешно, этот метод возвращает `202 Accepted` код ответа. Ответ также будет содержать `Location` заголовок, который содержит расположение [teamsAsyncOperation](../resources/teamsasyncoperation.md) , который был создан для обработки unarchiving рабочей группы. Проверьте состояние unarchiving операции, внесение запрос GET в этом расположении.
 
@@ -56,7 +57,7 @@ POST /teams/{id}/unarchive
 POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример ответа.
 ```http
 HTTP/1.1 202 Accepted

@@ -2,12 +2,13 @@
 title: Тип перечисления win32LobAppMsiPackageType
 description: Указывает тип пакета MSI Win32LobApp.
 author: tfitzmac
-ms.openlocfilehash: 7caf13d48dda3cf8e1b88605c575ae5f6322c6fe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdb47ae6b068644ad5f1edb2316ce9b74821c0d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335681"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872578"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>Тип перечисления win32LobAppMsiPackageType
 

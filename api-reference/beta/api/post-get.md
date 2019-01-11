@@ -2,12 +2,13 @@
 title: Вывод записи
 description: 'Получение свойств и связей публикации в указанной цепочке. Можно указать как родительской '
 author: dkershaw10
-ms.openlocfilehash: 98bed589c1982411f3c0b989e28e04d2e6166466
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5bcb303a302d1236b9d74800c1bd5a0388aebed3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868749"
 ---
 # <a name="get-post"></a>Вывод записи
 
@@ -39,7 +40,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

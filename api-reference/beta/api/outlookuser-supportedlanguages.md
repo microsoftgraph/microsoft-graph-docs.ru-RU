@@ -1,12 +1,13 @@
 ---
 title: 'outlookUser: supportedLanguages'
 description: Получение списка поддерживаемых языковых стандартов и языков, которые настроены на сервере почтовых ящиков пользователя.
-ms.openlocfilehash: ac1b9693121f3ba3f180b53532bb6a6c917e2108
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8d3a830a34d4b6d59bae1a601562ab6d70f7a39f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075039"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868581"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
 
@@ -38,7 +39,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Действие beginOnboarding
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: e5d9d164e359484f6823c67c80169dbcef5116c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6678b9f9608655b068865d6bf952195e5041bde3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337312"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871045"
 ---
 # <a name="beginonboarding-action"></a>Действие beginOnboarding
 
@@ -35,11 +36,11 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/begi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

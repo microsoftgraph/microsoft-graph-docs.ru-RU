@@ -2,12 +2,13 @@
 title: Update managedIOSLobApp
 description: Обновление свойств объекта managedIOSLobApp.
 author: tfitzmac
-ms.openlocfilehash: adcd36af7354a9a0e4807fe38f6bc407fe235e83
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 72e7f2b1c24f562bb94874e8a0a8cf4d2621ed69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873551"
 ---
 # <a name="update-managedioslobapp"></a>Update managedIOSLobApp
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

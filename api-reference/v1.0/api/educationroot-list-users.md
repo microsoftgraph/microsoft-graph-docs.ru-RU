@@ -2,12 +2,13 @@
 title: Список пользователей
 description: Получение списка объектов user. Эти объекты user будут содержать специальные свойства, связанные с образованием.
 author: mmast-msft
-ms.openlocfilehash: 54cabab078fb3564f26f8d150c9931ece5fe6b6c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c0a2edc0545f7d2159fec356c9b1d299082cefe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870905"
 ---
 # <a name="list-users"></a>Список пользователей
 
@@ -35,7 +36,7 @@ GET /education/users
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationUser](../resources/educationuser.md) в теле отклика.

@@ -2,12 +2,13 @@
 title: Получение windowsAppX
 description: Чтение свойства и связи объекта windowsAppX.
 author: tfitzmac
-ms.openlocfilehash: ee4ea8652acd1c64d9ee78e1ee22569c849c8220
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa87736626fbd2a26849b67b6993f7706de7cd75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338887"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869799"
 ---
 # <a name="get-windowsappx"></a>Получение windowsAppX
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: Корпоративные условия в Microsoft Intune
 description: Вы можете развернуть условия Intune для групп пользователей, чтобы показать, как регистрация, доступ к рабочим ресурсам и приложение "Корпоративный портал" влияют на устройства и пользователей. Пользователи должны принять условия, чтобы использовать Корпоративный портал для регистрации и доступа к своей рабочей среде.
-ms.openlocfilehash: a617a656d71dc2cb490bb1aa43bea8b028f04080
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 23e4bf95e8538301efcb268d23aeadc2874e069f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028202"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870947"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Корпоративные условия в Microsoft Intune
 

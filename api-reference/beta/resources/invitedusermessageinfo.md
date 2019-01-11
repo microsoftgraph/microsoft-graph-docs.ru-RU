@@ -1,12 +1,13 @@
 ---
 title: Настройка приглашения
 description: Объект invitedUserMessageInfo позволяет настроить сообщение приглашение.
-ms.openlocfilehash: 326ca6654fd30da9c36022424b48c4a8f7b82ffe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f8a6dd118f1774320e3fe8327d284dac1141fc55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874125"
 ---
 # <a name="configuring-the-invitation-message"></a>Настройка приглашения
 
@@ -20,7 +21,7 @@ ms.locfileid: "27076514"
 |:---------------|:--------|:----------|
 |ccRecipients|[Recipients](recipient.md)|Дополнительные получатели, которым следует отправить приглашение. В настоящее время поддерживается только 1 дополнительный получатель.|
 |customizedMessageBody|Строка|Ваш собственный текст сообщения, который можно отправлять вместо предоставляемого по умолчанию.|
-|messageLanguage|String|Выбранный вами язык для сообщения, которое отправляется по умолчанию. Если указано значение customizedMessageBody, это свойство игнорируется, и сообщение отправляется с помощью customizedMessageBody. Язык должен быть указан в формате ISO 639. Значение по умолчанию — en-US.|
+|messageLanguage|Строка|Выбранный вами язык для сообщения, которое отправляется по умолчанию. Если указано значение customizedMessageBody, это свойство игнорируется, и сообщение отправляется с помощью customizedMessageBody. Язык должен быть указан в формате ISO 639. Значение по умолчанию — en-US.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

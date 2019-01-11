@@ -2,12 +2,13 @@
 title: Перечисление объектов mobileLobApp
 description: Список свойств и связей объектов mobileLobApp.
 author: tfitzmac
-ms.openlocfilehash: 5e2f923c3cdbd20f333f639b7b19dbf039a714ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab338c62ff1e0212aef4ea926071819b6152654f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345005"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870163"
 ---
 # <a name="list-mobilelobapps"></a>Перечисление объектов mobileLobApp
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

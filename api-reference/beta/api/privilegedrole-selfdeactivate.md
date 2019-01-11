@@ -1,12 +1,13 @@
 ---
 title: 'privilegedRole: selfDeactivate'
 description: Отключение роли, назначенной для инициатора запроса.
-ms.openlocfilehash: f9f72a4f61dfd154829406eb535b394f8f137069
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5d3d23acd63609ad6f2b4b53db1be328c03aba1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868791"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
 
@@ -36,7 +37,7 @@ POST /privilegedRoles/{id}/selfDeactivate
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -57,8 +58,7 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

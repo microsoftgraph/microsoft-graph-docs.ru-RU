@@ -2,12 +2,13 @@
 title: Тип перечисления edgeCookiePolicy
 description: Возможные значения, чтобы указать, какие файлы cookie разрешены в Microsoft пограничного сервера.
 author: tfitzmac
-ms.openlocfilehash: 711e4f3393f2917883a01e025d827a57139a9637
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b4f02a6f6ca87154ed67707da6ef554fe9a5c457
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871696"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>Тип перечисления edgeCookiePolicy
 

@@ -2,12 +2,13 @@
 title: Создание объекта mobileAppCategory
 description: Создание объекта mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: 17084b8c02421b94b733a9ecb1011d647dab02d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c09b557da645767e090bfecca7974c0af41b17f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326336"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870800"
 ---
 # <a name="create-mobileappcategory"></a>Создание объекта mobileAppCategory
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

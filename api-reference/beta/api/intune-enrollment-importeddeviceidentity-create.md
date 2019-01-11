@@ -2,12 +2,13 @@
 title: Создание importedDeviceIdentity
 description: Создание нового объекта importedDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: 4a1180bd924b2f8d7c2d66fdd1f4fff76ae8f685
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3a6ca16d9bfa4a79d723816544e9a7bcf3f77df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870527"
 ---
 # <a name="create-importeddeviceidentity"></a>Создание importedDeviceIdentity
 
@@ -37,11 +38,11 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта importedDeviceIdentity.
 
 В следующей таблице показаны свойства, которые необходимы для создания importedDeviceIdentity.
@@ -49,7 +50,7 @@ POST /deviceManagement/importedDeviceIdentities
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор идентификатор импортированных устройства|
-|importedDeviceIdentifier|String.|Идентификатор импортированных устройства|
+|importedDeviceIdentifier|Строка|Идентификатор импортированных устройства|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип удостоверения импортированных устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Последние изменения даты и времени описания|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|

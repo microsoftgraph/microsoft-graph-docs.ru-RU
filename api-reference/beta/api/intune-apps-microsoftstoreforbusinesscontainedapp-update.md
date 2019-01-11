@@ -2,12 +2,13 @@
 title: Обновление microsoftStoreForBusinessContainedApp
 description: Обновление свойства объекта microsoftStoreForBusinessContainedApp.
 author: tfitzmac
-ms.openlocfilehash: e4b9e451e5632a8d4b923aae5de86c854febfa2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1250e6fd95caaa4e85761ce21d8db89faa139e81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324810"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870009"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>Обновление microsoftStoreForBusinessContainedApp
 
@@ -39,11 +40,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md).
@@ -51,7 +52,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String.|Автономные приложения MicrosoftStoreForBusinessApp модели пользователя приложения.|
+|appUserModelId|Строка|Автономные приложения MicrosoftStoreForBusinessApp модели пользователя приложения.|
 
 
 

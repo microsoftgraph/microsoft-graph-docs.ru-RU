@@ -2,12 +2,13 @@
 title: Тип ресурса managedDevice
 description: Устройства, которые управляются или предварительно регистрируются с помощью Intune
 author: tfitzmac
-ms.openlocfilehash: ac55f444eb4c87f65befbc1ba33c2e9bc65dced2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d08b0559065b3977978621004b290a87879cdc70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309613"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869218"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -109,11 +110,11 @@ ms.locfileid: "27309613"
  Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) коллекции|Указывает последний вход в систему пользователей устройства|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Отчеты о DateTime параметр preferMdmOverGroupPolicy имеет значение.  Если задано, параметры Intune MDM переопределяет параметры групповой политики в случае конфликта. Только для чтения.|
-|autopilotEnrolled|Boolean.|Отчеты при регистрации управляемой устройство через автопилот.|
-|requireUserEnrollmentApproval|Boolean.|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя.|
+|autopilotEnrolled|Логический|Отчеты при регистрации управляемой устройство через автопилот.|
+|requireUserEnrollmentApproval|Логический|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя.|
 |managementCertificateExpirationDate|DateTimeOffset|Дата окончания срока действия сертификата управления устройства отчетов|
-|iccid|String.|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки.|
-|UDID|String.|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств.|
+|iccid|Строка|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки.|
+|UDID|Строка|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств.|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тег области для этого устройства.|
 |windowsActiveMalwareCount|Int32|Число активных вредоносных программ для этого устройства windows|
 |windowsRemediatedMalwareCount|Int32|Число проверка вредоносных программ для этого устройства windows|

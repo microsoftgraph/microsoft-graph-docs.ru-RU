@@ -2,12 +2,13 @@
 title: Список embeddedSIMActivationCodePoolAssignments
 description: Свойства списка и связей объектов embeddedSIMActivationCodePoolAssignment.
 author: tfitzmac
-ms.openlocfilehash: 798701e538d1eabe7d49350efdb16777deee3dea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd3fceea3601f17bfc22e75f15cba959865a7b9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352929"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873383"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>Список embeddedSIMActivationCodePoolAssignments
 
@@ -37,11 +38,11 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

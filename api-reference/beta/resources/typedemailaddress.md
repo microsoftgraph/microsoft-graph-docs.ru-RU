@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса typedEmailAddress
 description: Представляет имя, адреса электронной почты и соответствующий тип адреса электронной почты контакта.
-ms.openlocfilehash: 3f40add32fbc219606b6d78041552fc108803d1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c77d3dddc3e2bfcac47e6ed245dad9223fe7f08c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871269"
 ---
 # <a name="typedemailaddress-resource-type"></a>Тип ресурса typedEmailAddress
 
@@ -18,9 +19,9 @@ ms.locfileid: "27082741"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |address|String|Адрес электронной почты контакта.|
-|name|String|Отображаемое имя контакта.|
-|type |String |Тип адреса электронной почты. Возможные значения: `unknown`, `work`, `personal`, `main`, `other`. Значение по умолчанию — `unknown`, который означает, что **адрес** не был установлен как определенного типа. |
-|otherLabel |String  |Чтобы сделать настраиваемого типа адреса электронной почты, задать **Тип** `other`и назначьте **otherLabel** настраиваемой строки. Например может использовать действительный адрес электронной почты конкретного авторам действий. Значение **типа** `other`и установите **otherLabel** в настраиваемой строке таких как `Volunteer work`. |
+|name|Строка|Отображаемое имя контакта.|
+|type |Строка |Тип адреса электронной почты. Возможные значения: `unknown`, `work`, `personal`, `main`, `other`. Значение по умолчанию — `unknown`, который означает, что **адрес** не был установлен как определенного типа. |
+|otherLabel |Строка  |Чтобы сделать настраиваемого типа адреса электронной почты, задать **Тип** `other`и назначьте **otherLabel** настраиваемой строки. Например может использовать действительный адрес электронной почты конкретного авторам действий. Значение **типа** `other`и установите **otherLabel** в настраиваемой строке таких как `Volunteer work`. |
 
 ## <a name="json-representation"></a>Представление JSON
 

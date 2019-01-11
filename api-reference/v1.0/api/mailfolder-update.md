@@ -2,12 +2,13 @@
 title: Обновление объекта mailfolder
 description: Обновление свойств объекта mailfolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 2c740d72557204d01abea4e2582467c740295197
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e2ce809c75a911b7d68ed80692a14a537c659d37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315052"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871633"
 ---
 # <a name="update-mailfolder"></a>Обновление объекта mailfolder
 
@@ -33,7 +34,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

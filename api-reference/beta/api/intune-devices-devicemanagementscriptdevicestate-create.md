@@ -2,12 +2,13 @@
 title: Создание deviceManagementScriptDeviceState
 description: Создание нового объекта deviceManagementScriptDeviceState.
 author: tfitzmac
-ms.openlocfilehash: 2b809c82e077bc75c354d3b8b1c09548eaacad64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4f2dcd346aaef4d71b0309f65b7f6a7005c4346
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304853"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874258"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Создание deviceManagementScriptDeviceState
 
@@ -38,11 +39,11 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта deviceManagementScriptDeviceState.
 
 В следующей таблице показаны свойства, которые необходимы для создания deviceManagementScriptDeviceState.
@@ -51,7 +52,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |:---|:---|:---|
 |id|Строка|Ключ сущности состояния устройства устройства управления скрипта.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего выполнения сценарий управления устройства. Возможные значения: `unknown`, `success`, `fail`.|
-|resultMessage|String.|Подробные сведения о результатов выполнения.|
+|resultMessage|Строка|Подробные сведения о результатов выполнения.|
 |lastStateUpdateDateTime|DateTimeOffset|Время последнего выполняет сценарий управления устройства.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочный выполнение сценария управления устройства.|
 |errorDescription|String|Описание ошибки, соответствующий ошибочный выполнение сценария управления устройства.|

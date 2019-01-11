@@ -2,12 +2,13 @@
 title: Создание объекта RangeBorder
 description: С помощью этого API можно создать объект RangeBorder.
 author: lumine2008
-ms.openlocfilehash: cf2db73c85b587288265a04dadb2b5b765029d3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d87f4943158fa33d2cc09e600959bd7dc99087b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306015"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873089"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -35,7 +36,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [WorkbookRangeBorder](../resources/rangeborder.md) .
 
 ## <a name="response"></a>Ответ

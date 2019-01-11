@@ -2,12 +2,13 @@
 title: Получение объекта ChartDataLabels
 description: Получение свойств и связей объекта chartdatalabels.
 author: lumine2008
-ms.openlocfilehash: ff56c61534c2f1a599c2b7d66fc46b57c489be1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5938e43e0b514cc05d182500d81d538aafd92eaf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329052"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871395"
 ---
 # <a name="get-chartdatalabels"></a>Получение объекта ChartDataLabels
 
@@ -35,7 +36,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

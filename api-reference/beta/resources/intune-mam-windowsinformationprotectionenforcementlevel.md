@@ -2,12 +2,13 @@
 title: Тип перечисления windowsInformationProtectionEnforcementLevel
 description: Возможные значения для защиты НЗП принудительное применение уровней
 author: tfitzmac
-ms.openlocfilehash: cb30ffb58b129fc302d7896c148072a54b98c0a2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5097682172281ece366a8f0389c314e2fb630190
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315164"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868371"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>Тип перечисления windowsInformationProtectionEnforcementLevel
 

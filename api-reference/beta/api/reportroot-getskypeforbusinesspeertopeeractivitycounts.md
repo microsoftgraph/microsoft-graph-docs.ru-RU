@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityCounts'
 description: Отслеживайте динамику использования по количеству и типу проведенных в организации сеансов (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям и передача файлов).
-ms.openlocfilehash: b489db8827e951e734d0b0d292e3782f3c809c5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a962a80f2cf1aff70a267a5b52ac429e88286fe2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871710"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivitycounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
 

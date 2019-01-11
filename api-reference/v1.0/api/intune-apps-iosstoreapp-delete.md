@@ -2,12 +2,13 @@
 title: Удаление объекта iosStoreApp
 description: Удаляет объект iosStoreApp.
 author: tfitzmac
-ms.openlocfilehash: d25d32b4bb4bb4ea5643af374e3dcad3c8296c72
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e240b9bb10af7c3b73db8f3c06e891b409b9ebf8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874615"
 ---
 # <a name="delete-iosstoreapp"></a>Удаление объекта iosStoreApp
 
@@ -35,11 +36,11 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

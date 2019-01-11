@@ -2,12 +2,13 @@
 title: Список androidManagedStoreAppConfigurations
 description: Свойства списка и связей объектов androidManagedStoreAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3d2cebb1075842c44419466a94c259cb45bbf070
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27d63dca0934d916ecbdfeb06be40c8fe9d6153c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874510"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>Список androidManagedStoreAppConfigurations
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Обновление importedAppleDeviceIdentity
 description: Обновление свойства объекта importedAppleDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: e2248a781ac4f6bb8ce238d12f2679217e7badd6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4019621eb6f69b288575a592b59b0018582c0b06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352089"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870506"
 ---
 # <a name="update-importedappledeviceidentity"></a>Обновление importedAppleDeviceIdentity
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md).
@@ -50,7 +51,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |serialNumber|Строка|Серийный номер устройства|
-|requestedEnrollmentProfileId|String.|Admin идентификатор профиля регистрации планирует применять на устройство во время следующего регистрации|
+|requestedEnrollmentProfileId|Строка|Admin идентификатор профиля регистрации планирует применять на устройство во время следующего регистрации|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль регистрации времени была назначена на устройство|
 |isSupervised|Boolean|Указывает, если управляет устройства Apple. Дополнительные сведения о был создан:https://support.apple.com/en-us/HT202837|
 |discoverySource;|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройства Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|

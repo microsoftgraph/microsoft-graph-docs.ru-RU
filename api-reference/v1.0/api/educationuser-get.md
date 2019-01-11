@@ -2,12 +2,13 @@
 title: Получение educationUser
 description: Получение свойств и связей пользователя.
 author: mmast-msft
-ms.openlocfilehash: df7b2de211b8950350e9d4418c053d0cc8b7b90b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c1ae6b5af9eb6311cabcf6ee56e805af5602dbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337116"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872256"
 ---
 # <a name="get-educationuser"></a>Получение educationUser
 
@@ -35,7 +36,7 @@ GET /education/users/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [educationUser](../resources/educationuser.md) в теле отклика.

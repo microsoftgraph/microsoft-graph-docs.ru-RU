@@ -2,12 +2,13 @@
 title: Получение объекта RangeFont
 description: Получение свойств и связей объекта rangefont.
 author: lumine2008
-ms.openlocfilehash: 86d30418c7a392cb596d6670894691741dbcac5a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d516a7ac37c7489e18c878ad7393d1318ad3ddc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872004"
 ---
 # <a name="get-rangefont"></a>Получение объекта RangeFont
 
@@ -39,7 +40,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,12 +1,13 @@
 ---
 title: Получение объекта plannerAssignedToTaskBoardTaskFormat
 description: Получение свойств и связей объекта **plannerAssignedToTaskBoardTaskFormat**.
-ms.openlocfilehash: 4c7ee2149f9250743b52f144aa0f5bc7ca85b472
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b9f0f053ccd1ef67e985a9855938fa5bc31ec308
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025127"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874237"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>Получение объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -30,7 +31,7 @@ GET /planner/tasks/{id}/assignedToTaskBoardFormat
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -50,8 +51,7 @@ GET /planner/tasks/{id}/assignedToTaskBoardFormat
 GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/assignedToTaskBoardFormat
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

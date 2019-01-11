@@ -2,12 +2,13 @@
 title: Тип участника ресурса
 description: Тип участника.
 author: VinodRavichandran
-ms.openlocfilehash: 3fcc5fc5d95ded3b5424370cd180fde38c1a65be
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c125589506dbd529d2b45df4171e9d54b346cbba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380396"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869834"
 ---
 # <a name="participant-resource-type"></a>Тип участника ресурса
 
@@ -29,12 +30,12 @@ ms.locfileid: "27380396"
 
 | Свойство             | Тип                                     | Описание                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | Код участника.                                          |
+| id                   | Строка                                   | Код участника.                                          |
 | сведения о                 | [participantInfo](participantinfo.md)    | Участник участника.                          |
 | isInLobby            | boolean                                  | значение true, если участник в зале ожидания                          |
 | isMuted              | boolean                                  | значение true, если выключен ли участника (клиент или сервер выключен ли)    |
 | mediaStreams         | [mediaStream](mediastream.md) коллекции | Список мультимедийных потоков.                                   |
-| метаданные             | String                                   | Большой двоичный объект данных, предоставленных участника в списке     |
+| метаданные             | Строка                                   | Большой двоичный объект данных, предоставленных участника в списке     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Сведения о ли участник имеет возможность записи. |
 
 ## <a name="relationships"></a>Связи

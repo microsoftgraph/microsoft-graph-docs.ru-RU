@@ -2,12 +2,13 @@
 title: Перечисление sectionGroups
 description: Получение списка групп разделов из указанной записной книжки.
 author: Jewan-microsoft
-ms.openlocfilehash: ad0a8d82fc5fff7bfe8a6b9895e7d94f9a4bc9e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91ea3188b32657ad83963f12214e9987aa785d0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869141"
 ---
 # <a name="list-sectiongroups"></a>Перечисление sectionGroups
 
@@ -42,7 +43,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sectionGroups
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

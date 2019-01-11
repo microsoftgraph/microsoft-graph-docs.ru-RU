@@ -2,12 +2,13 @@
 title: Тип ресурса organizerMeetingInfo
 description: Сведения о собрании, содержащий организатора собрания.
 author: VinodRavichandran
-ms.openlocfilehash: 296b20125908caf73221c2a8380e91931deb7e61
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: fd096a55762892ca9b2fd72c883a544e503c5f90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380214"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870735"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>Тип ресурса organizerMeetingInfo
 
@@ -19,7 +20,7 @@ ms.locfileid: "27380214"
 
 | Свойство                     | Тип                          | Описание                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Boolean                       | Указывает, если беседы можно продолжить после покидает узла беседы. |
+| allowConversationWithoutHost | Логический                       | Указывает, если беседы можно продолжить после покидает узла беседы. |
 | organizer                    | [identitySet](identityset.md) | Организатор identity Azure Active Directory.  |
 
 ## <a name="json-representation"></a>Представление JSON

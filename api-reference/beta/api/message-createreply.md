@@ -2,12 +2,13 @@
 title: 'message: createReply'
 description: 'Создание черновика сообщения ответа, чтобы добавить примечание или обновить все свойства сообщения '
 author: angelgolfer-ms
-ms.openlocfilehash: cf7bfb3ce584a17a3e4105d04c7e781b69c4901c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 45dfd80be469d6a921eb70ba54f468b531eeb047
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873447"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -43,7 +44,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

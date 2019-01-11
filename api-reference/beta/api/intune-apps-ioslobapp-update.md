@@ -2,12 +2,13 @@
 title: Update iosLobApp
 description: Обновление свойств объекта iosLobApp.
 author: tfitzmac
-ms.openlocfilehash: f224064bdde083416e25de9675c150e6ce7ca226
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a556f521465c94366bdf1418eba69c73e9abe1f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330284"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870135"
 ---
 # <a name="update-ioslobapp"></a>Update iosLobApp
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
