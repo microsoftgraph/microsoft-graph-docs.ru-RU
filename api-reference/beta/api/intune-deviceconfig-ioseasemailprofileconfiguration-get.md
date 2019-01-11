@@ -2,30 +2,31 @@
 title: Получение iosEasEmailProfileConfiguration
 description: Чтение свойства и связи объекта iosEasEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3d5b253e2469e05fda63ef3a3a0fbb5b4aae14e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53340389e882b1a42d988fceb3856acd1cd5b16d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328072"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873852"
 ---
-# <a name="get-ioseasemailprofileconfiguration"></a><span data-ttu-id="fe901-103">Получение iosEasEmailProfileConfiguration</span><span class="sxs-lookup"><span data-stu-id="fe901-103">Get iosEasEmailProfileConfiguration</span></span>
+# <a name="get-ioseasemailprofileconfiguration"></a><span data-ttu-id="919d6-103">Получение iosEasEmailProfileConfiguration</span><span class="sxs-lookup"><span data-stu-id="919d6-103">Get iosEasEmailProfileConfiguration</span></span>
 
-> <span data-ttu-id="fe901-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="fe901-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fe901-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe901-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="919d6-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="919d6-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="919d6-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="919d6-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="fe901-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="fe901-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="919d6-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="919d6-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="fe901-107">Чтение свойства и связи объекта [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="fe901-107">Read properties and relationships of the [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="fe901-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="fe901-108">Prerequisites</span></span>
-<span data-ttu-id="fe901-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fe901-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="919d6-107">Чтение свойства и связи объекта [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="919d6-107">Read properties and relationships of the [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="919d6-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="919d6-108">Prerequisites</span></span>
+<span data-ttu-id="919d6-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="919d6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fe901-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fe901-111">Permission type</span></span>|<span data-ttu-id="fe901-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="fe901-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="919d6-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="919d6-111">Permission type</span></span>|<span data-ttu-id="919d6-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="919d6-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="fe901-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fe901-113">Delegated (work or school account)</span></span>|<span data-ttu-id="fe901-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="fe901-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="fe901-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fe901-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fe901-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe901-116">Not supported.</span></span>|
-|<span data-ttu-id="fe901-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fe901-117">Application</span></span>|<span data-ttu-id="fe901-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe901-118">Not supported.</span></span>|
+|<span data-ttu-id="919d6-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="919d6-113">Delegated (work or school account)</span></span>|<span data-ttu-id="919d6-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="919d6-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="919d6-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="919d6-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="919d6-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="919d6-116">Not supported.</span></span>|
+|<span data-ttu-id="919d6-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="919d6-117">Application</span></span>|<span data-ttu-id="919d6-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="919d6-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="fe901-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fe901-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="919d6-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="919d6-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,30 +37,30 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="fe901-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fe901-120">Optional query parameters</span></span>
-<span data-ttu-id="fe901-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="fe901-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="fe901-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fe901-122">Request headers</span></span>
-|<span data-ttu-id="fe901-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="fe901-123">Header</span></span>|<span data-ttu-id="fe901-124">Значение</span><span class="sxs-lookup"><span data-stu-id="fe901-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="919d6-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="919d6-120">Optional query parameters</span></span>
+<span data-ttu-id="919d6-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="919d6-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="919d6-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="919d6-122">Request headers</span></span>
+|<span data-ttu-id="919d6-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="919d6-123">Header</span></span>|<span data-ttu-id="919d6-124">Значение</span><span class="sxs-lookup"><span data-stu-id="919d6-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="fe901-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fe901-125">Authorization</span></span>|<span data-ttu-id="fe901-126">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="fe901-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="fe901-127">Accept</span><span class="sxs-lookup"><span data-stu-id="fe901-127">Accept</span></span>|<span data-ttu-id="fe901-128">application/json</span><span class="sxs-lookup"><span data-stu-id="fe901-128">application/json</span></span>|
+|<span data-ttu-id="919d6-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="919d6-125">Authorization</span></span>|<span data-ttu-id="919d6-126">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="919d6-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="919d6-127">Accept</span><span class="sxs-lookup"><span data-stu-id="919d6-127">Accept</span></span>|<span data-ttu-id="919d6-128">application/json</span><span class="sxs-lookup"><span data-stu-id="919d6-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fe901-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fe901-129">Request body</span></span>
-<span data-ttu-id="fe901-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fe901-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="919d6-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="919d6-129">Request body</span></span>
+<span data-ttu-id="919d6-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="919d6-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fe901-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="fe901-131">Response</span></span>
-<span data-ttu-id="fe901-132">Успешно завершена, этот метод возвращает `200 OK` объект [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="fe901-132">If successful, this method returns a `200 OK` response code and [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="919d6-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="919d6-131">Response</span></span>
+<span data-ttu-id="919d6-132">Успешно завершена, этот метод возвращает `200 OK` объект [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="919d6-132">If successful, this method returns a `200 OK` response code and [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fe901-133">Пример</span><span class="sxs-lookup"><span data-stu-id="fe901-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="fe901-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="fe901-134">Request</span></span>
-<span data-ttu-id="fe901-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fe901-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="919d6-133">Пример</span><span class="sxs-lookup"><span data-stu-id="919d6-133">Example</span></span>
+### <a name="request"></a><span data-ttu-id="919d6-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="919d6-134">Request</span></span>
+<span data-ttu-id="919d6-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="919d6-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="fe901-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="fe901-136">Response</span></span>
-<span data-ttu-id="fe901-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="fe901-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="919d6-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="919d6-136">Response</span></span>
+<span data-ttu-id="919d6-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="919d6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

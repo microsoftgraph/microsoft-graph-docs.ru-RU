@@ -2,52 +2,53 @@
 title: Перечисление объектов groupSettingTemplate
 description: Шаблоны параметров группы представляют набор шаблонов, на базе которых можно создавать параметры группы для использования в клиенте.  Эта операция позволяет получить список доступных объектов groupSettingTemplate.
 author: dkershaw10
-ms.openlocfilehash: b47613093d8efa7fac99a313fff45d846d7a5073
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 476577de23bc0fe5c2df9ce37b2d9083105bb6f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359362"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869876"
 ---
-# <a name="list-groupsettingtemplates"></a><span data-ttu-id="f4093-104">Перечисление объектов groupSettingTemplate</span><span class="sxs-lookup"><span data-stu-id="f4093-104">List groupSettingTemplates</span></span>
+# <a name="list-groupsettingtemplates"></a><span data-ttu-id="23089-104">Перечисление объектов groupSettingTemplate</span><span class="sxs-lookup"><span data-stu-id="23089-104">List groupSettingTemplates</span></span>
 
-<span data-ttu-id="f4093-p102">Шаблоны параметров группы представляют набор шаблонов, на базе которых можно создавать параметры группы для использования в клиенте.  Эта операция позволяет получить список доступных объектов groupSettingTemplate.</span><span class="sxs-lookup"><span data-stu-id="f4093-p102">Group setting templates represents a set of templates  from which group settings may be created and used within a tenant.  This operation retrieves the list of available groupSettingTemplates objects.</span></span>
+<span data-ttu-id="23089-p102">Шаблоны параметров группы представляют набор шаблонов, на базе которых можно создавать параметры группы для использования в клиенте.  Эта операция позволяет получить список доступных объектов groupSettingTemplate.</span><span class="sxs-lookup"><span data-stu-id="23089-p102">Group setting templates represents a set of templates  from which group settings may be created and used within a tenant.  This operation retrieves the list of available groupSettingTemplates objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4093-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f4093-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="23089-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="23089-107">Permissions</span></span>
 
-<span data-ttu-id="f4093-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f4093-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="23089-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="23089-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="f4093-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f4093-110">Permission type</span></span>      | <span data-ttu-id="f4093-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f4093-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="23089-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="23089-110">Permission type</span></span>      | <span data-ttu-id="23089-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="23089-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f4093-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f4093-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f4093-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f4093-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="f4093-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f4093-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4093-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f4093-115">Not supported.</span></span>    |
-|<span data-ttu-id="f4093-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f4093-116">Application</span></span> | <span data-ttu-id="f4093-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f4093-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="23089-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="23089-112">Delegated (work or school account)</span></span> | <span data-ttu-id="23089-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="23089-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="23089-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="23089-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="23089-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="23089-115">Not supported.</span></span>    |
+|<span data-ttu-id="23089-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="23089-116">Application</span></span> | <span data-ttu-id="23089-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23089-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f4093-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f4093-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="23089-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="23089-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groupSettingTemplates
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f4093-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f4093-119">Optional query parameters</span></span>
-<span data-ttu-id="f4093-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="f4093-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="23089-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="23089-119">Optional query parameters</span></span>
+<span data-ttu-id="23089-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="23089-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-> <span data-ttu-id="f4093-121">**Примечание.** $filter не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f4093-121">**Note:** $filter is not supported.</span></span>
+> <span data-ttu-id="23089-121">**Примечание.** $filter не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="23089-121">**Note:** $filter is not supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f4093-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f4093-122">Request headers</span></span>
-| <span data-ttu-id="f4093-123">Имя</span><span class="sxs-lookup"><span data-stu-id="f4093-123">Name</span></span> | <span data-ttu-id="f4093-124">Описание</span><span class="sxs-lookup"><span data-stu-id="f4093-124">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="23089-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="23089-122">Request headers</span></span>
+| <span data-ttu-id="23089-123">Имя</span><span class="sxs-lookup"><span data-stu-id="23089-123">Name</span></span> | <span data-ttu-id="23089-124">Описание</span><span class="sxs-lookup"><span data-stu-id="23089-124">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="f4093-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f4093-125">Authorization</span></span>  | <span data-ttu-id="f4093-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f4093-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="23089-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="23089-125">Authorization</span></span>  | <span data-ttu-id="23089-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="23089-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f4093-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f4093-128">Request body</span></span>
-<span data-ttu-id="f4093-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f4093-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="23089-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="23089-128">Request body</span></span>
+<span data-ttu-id="23089-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="23089-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f4093-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="f4093-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="23089-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="23089-130">Response</span></span>
 
-<span data-ttu-id="f4093-131">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupSettingTemplate](../resources/groupsettingtemplate.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f4093-131">If successful, this method returns a `200 OK` response code and collection of [groupSettingTemplate](../resources/groupsettingtemplate.md) objects in the response body.</span></span>
+<span data-ttu-id="23089-131">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupSettingTemplate](../resources/groupsettingtemplate.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="23089-131">If successful, this method returns a `200 OK` response code and collection of [groupSettingTemplate](../resources/groupsettingtemplate.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f4093-132">Пример</span><span class="sxs-lookup"><span data-stu-id="f4093-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f4093-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="f4093-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="23089-132">Пример</span><span class="sxs-lookup"><span data-stu-id="23089-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="23089-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="23089-133">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_groupsettingtemplates"
@@ -55,9 +56,9 @@ GET /groupSettingTemplates
 ```http
 GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 ```
-##### <a name="response"></a><span data-ttu-id="f4093-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="f4093-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="23089-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="23089-134">Response</span></span>
 
-<span data-ttu-id="f4093-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f4093-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="23089-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="23089-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
