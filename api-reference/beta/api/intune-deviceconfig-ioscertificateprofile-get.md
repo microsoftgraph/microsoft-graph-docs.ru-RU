@@ -2,12 +2,13 @@
 title: Get iosCertificateProfile
 description: Чтение свойств и связей объекта iosCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 8281f5a64a150c9410d71974118dd1b0a9ce3c2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5685c1de0b18838c5b9c37d2d644a52c02440f79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327890"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891849"
 ---
 # <a name="get-ioscertificateprofile"></a>Get iosCertificateProfile
 
@@ -40,11 +41,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

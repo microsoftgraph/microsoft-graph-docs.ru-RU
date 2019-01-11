@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса подсказок
 description: 'Информационные сообщения о получателе, отображаемых для пользователей, хотя они составлять сообщение. Например сообщение об отсутствии '
-ms.openlocfilehash: 6c5d64248aa940b9449a93caad952bc7b4d13ca6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0506d10ad4b1c5eb473b04a30eb8d48334685574
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025421"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891695"
 ---
 # <a name="mailtips-resource-type"></a>Тип ресурса подсказок
 
@@ -17,7 +18,7 @@ ms.locfileid: "27025421"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Почтовые подсказки для автоматического ответа, если она была настроена для получателя. |
-| customMailTip | String | Совет настраиваемых почты, который может устанавливаться на почтовый ящик получателя. |
+| customMailTip | Строка | Совет настраиваемых почты, который может устанавливаться на почтовый ящик получателя. |
 | deliveryRestricted| Логический | Ли почтовый ящик получателя restricted, например, прием сообщений только в стандартном списке отправителей, отклонение сообщения из предварительно заданных списка отправителей или принимать сообщения от только проверенных. |
 | emailAddress | [emailAddress](../resources/emailaddress.md) | Адрес электронной почты для получения подсказки для получателя. |
 | error | [mailTipsError](../resources/mailtipserror.md) | Ошибки, возникающие во время действия [getMailTips](../api/user-getmailtips.md) . |

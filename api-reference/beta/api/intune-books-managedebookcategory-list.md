@@ -2,12 +2,13 @@
 title: Список managedEBookCategories
 description: Свойства списка и связей объектов managedEBookCategory.
 author: tfitzmac
-ms.openlocfilehash: f4ffe260e1d6e66d981376cf0d5f96a22790a1f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b263135e04c3ca27728deb1304d15a38e3a033a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347735"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892213"
 ---
 # <a name="list-managedebookcategories"></a>Список managedEBookCategories
 
@@ -38,11 +39,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

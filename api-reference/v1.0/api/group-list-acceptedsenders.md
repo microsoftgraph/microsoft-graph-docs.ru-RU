@@ -2,12 +2,13 @@
 title: Список acceptedSenders
 description: Получение пользователей или групп из списка acceptedSenders для данной группы.
 author: dkershaw10
-ms.openlocfilehash: 15b2387ce726b83d8e7b8b10034061d454b42e39
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ce0adaf53c0f9940e582da88932f5e8d04aafc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892283"
 ---
 # <a name="list-acceptedsenders"></a>Список acceptedSenders
 Получение пользователей или групп из списка acceptedSenders для данной группы.
@@ -36,7 +37,7 @@ GET /groups/{id}/acceptedSenders
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

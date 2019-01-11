@@ -2,12 +2,13 @@
 title: Удаление educationSchool
 description: Удаление учебного заведения.
 author: mmast-msft
-ms.openlocfilehash: e104265f718ad69a84b9e2362962d72763e8fc54
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 691bd8090a15a5fc31960c5ac33ba5acabadbeb0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892493"
 ---
 # <a name="delete-educationschool"></a>Удаление educationSchool
 
@@ -34,7 +35,7 @@ DELETE /education/schools/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

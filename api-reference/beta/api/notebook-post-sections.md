@@ -2,12 +2,13 @@
 title: Создание раздела
 description: Создание раздела в указанной записной книжке.
 author: Jewan-microsoft
-ms.openlocfilehash: 026473c7bed93fa127fd8fc4db8c27cfcb47acdc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6c091d399ae2b9fc69d249a3e2a34f3051c1611
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325769"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892465"
 ---
 # <a name="create-section"></a>Создание раздела
 
@@ -37,7 +38,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите имя раздела.
 
 В рамках одного и того же уровня иерархии имена разделов должны быть уникальными. Имя должно содержать не более 50 символов, в нем не должно быть следующих знаков:  ?*\/:<>|&#''%~

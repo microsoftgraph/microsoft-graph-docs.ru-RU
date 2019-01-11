@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса synchronizationJob
 description: Выполняет синхронизацию с периодически выполняется в фоновом режиме, опроса для изменения в один каталог и помещает их в другой каталог. Задание синхронизации всегда специально для конкретного экземпляра приложения клиента. Как часть процесса установки задания синхронизации необходимо предоставить разрешение на чтение и запись в целевом каталоге объекты и настройке задания синхронизации схемы.
-ms.openlocfilehash: 0e6428f2a088e5326f4412e743489c4d94b10296
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082245"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892150"
 ---
 # <a name="synchronizationjob-resource-type"></a>Тип ресурса synchronizationJob
 
@@ -20,7 +21,7 @@ ms.locfileid: "27082245"
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationjob-list.md)             |[synchronizationJob](synchronization-synchronizationjob.md) коллекции  |Список существующих заданий для экземпляра данного приложения (участников-служб).|
 |[Получение synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |Чтение свойства и связи объекта synchronizationJob.|
-|[Create](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |Создание нового задания для данного приложения.|
+|[создание](../api/synchronization-synchronizationjob-post.md);         |[synchronizationJob](synchronization-synchronizationjob.md)   |Создание нового задания для данного приложения.|
 |[Start](../api/synchronization-synchronizationjob-start.md)          |Нет   |Запуск синхронизации. Если задание находится в приостановленном состоянии, он по-прежнему производится из точки, где был приостановлен задания. Если задание находится в карантине, состояние карантина снят.|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |Нет   |Принудительное задание, чтобы начать заново и повторно обрабатывать все объекты в каталоге.|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |Нет   |Временно приостановить синхронизации. Сохраняются все текущие, включая состояние задания и задание продолжит работу с где оно было прервано Если [запустить](../api/synchronization-synchronizationjob-start.md) вызов.|
@@ -33,13 +34,13 @@ ms.locfileid: "27082245"
 
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|id             |String                     |Идентификатор задания уникальных синхронизации. Только для чтения.|
+|id             |Строка                     |Идентификатор задания уникальных синхронизации. Только для чтения.|
 |расписание       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Расписание выполнения задания. Только для чтения.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Состояние задания, которое включает в себя после последнего выполнения задания, текущее состояние задания и ошибках.|
 |templateId     |String    |Идентификатор [шаблона синхронизации](synchronization-synchronizationtemplate.md) на основе этого задания.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |схема|[synchronizationSchema](synchronization-synchronizationschema.md)| Схема синхронизации, настроенных для задания.|
 

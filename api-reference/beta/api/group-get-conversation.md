@@ -2,12 +2,13 @@
 title: Получение беседы
 description: Удаление объекта conversation.
 author: dkershaw10
-ms.openlocfilehash: 8cca15ce4279dbe1d3e0a894c54be03066a047ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 374fd472cf97e17586ea9e95c55f765c5d79dc34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892374"
 ---
 # <a name="get-conversation"></a>Получение беседы
 
@@ -38,7 +39,7 @@ GET /groups/{id}/conversations/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

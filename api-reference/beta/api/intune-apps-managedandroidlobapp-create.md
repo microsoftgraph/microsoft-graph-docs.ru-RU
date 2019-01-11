@@ -2,12 +2,13 @@
 title: Create managedAndroidLobApp
 description: Создание объекта managedAndroidLobApp.
 author: tfitzmac
-ms.openlocfilehash: ed814dfac8849e8dd3517496152a2e0ae18e51ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5026406a36e523e535286ff82cc3017571e8a875
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892542"
 ---
 # <a name="create-managedandroidlobapp"></a>Create managedAndroidLobApp
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

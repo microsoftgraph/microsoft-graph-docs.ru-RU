@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса attributeMappingParameterSchema
 description: Описывает один параметр, используемый в attributeMappingFunctionSchema.
-ms.openlocfilehash: 164387a345f245f390d24b89a349e02ee2242041
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 083f89ebc5a74e6fd58a33925b2bfa46801b7961
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892171"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>Тип ресурса attributeMappingParameterSchema
 
@@ -16,10 +17,10 @@ ms.locfileid: "27081506"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство                   | Тип                      | Description    |
+| Свойство                   | Тип                      | Описание    |
 |:---------------------------|:-------------------------|:---------------|
 |allowMultipleOccurrences    |Логический                   |Данному параметру можно указать несколько раз (например нескольких входных данных строки в `Concatenate(string,string,...)` функция). |
-|name                        |String                    |Имя параметра. |
+|name                        |Строка                    |Имя параметра. |
 |Обязательный                    |Логический                   |`true`Если параметр является обязательным; в противном случае `false`. |
 |type                        |String                    |Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Значение по умолчанию: `String`.|
 

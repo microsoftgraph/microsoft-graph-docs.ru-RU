@@ -2,12 +2,13 @@
 title: Get iosVppEBook
 description: Считывание свойств и связей объекта iosVppEBook.
 author: tfitzmac
-ms.openlocfilehash: 7b0b8acd2cbb50bfe2e9674532dc974d24528388
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 674a6433f5bd159f7566320a98af61baa80af489
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313540"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892409"
 ---
 # <a name="get-iosvppebook"></a>Get iosVppEBook
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

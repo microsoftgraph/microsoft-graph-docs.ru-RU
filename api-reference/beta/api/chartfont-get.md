@@ -2,12 +2,13 @@
 title: Получение объекта ChartFont
 description: Получение свойств и связей объекта chartfont.
 author: lumine2008
-ms.openlocfilehash: 2a40686b95e1cd30ca51c177c692ead08a62a7f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b5ea27a182f009a029300a2d8268537bebc76f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892437"
 ---
 # <a name="get-chartfont"></a>Получение объекта ChartFont
 
@@ -39,7 +40,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

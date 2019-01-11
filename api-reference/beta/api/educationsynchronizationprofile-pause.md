@@ -2,12 +2,13 @@
 title: Приостановка синхронизации на educationSynchronizationProfile
 description: Приостановка синхронизации в конкретных школа профиль синхронизации данных клиента.
 author: mmast-msft
-ms.openlocfilehash: 14e94cf4a083e8f37b03f96b287a75aa40b7afed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97ded3f4fdf30e6bc56345abcc71f3466ef4ff61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313288"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892322"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Приостановка синхронизации на educationSynchronizationProfile
 
@@ -18,7 +19,7 @@ ms.locfileid: "27313288"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Разрешения |
+| Тип разрешения | Permissions |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
@@ -35,7 +36,7 @@ POST /synchronizationProfiles/{id}/pause
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.

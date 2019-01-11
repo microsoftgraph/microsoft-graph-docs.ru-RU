@@ -2,12 +2,13 @@
 title: Тип ресурса windowsAutopilotDeploymentProfile
 description: Windows автопилот развертывания профилей
 author: tfitzmac
-ms.openlocfilehash: 9534a9c252c3ab678bf2dea83d497c9541f30c47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1538497dc5105dcd2e7f0c9ff7fdf83c3ddec56e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892199"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
 
@@ -33,8 +34,8 @@ Windows автопилот развертывания профилей
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|В соответствующем взаимодействия параметр|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Параметр экрана состояния подачи заявок|
-|extractHardwareHash|Boolean.|Извлечение HardwareHash для профиля|
-|deviceNameTemplate|String.|Шаблон, используемый для имя устройства автопилот. Это может быть настраиваемого текста, а также может содержать серийный номер устройства или случайное число. Общая длина текста, созданной с помощью шаблона может быть не более 15 символов.|
+|extractHardwareHash|Логический|Извлечение HardwareHash для профиля|
+|deviceNameTemplate|Строка|Шаблон, используемый для имя устройства автопилот. Это может быть настраиваемого текста, а также может содержать серийный номер устройства или случайное число. Общая длина текста, созданной с помощью шаблона может быть не более 15 символов.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

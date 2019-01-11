@@ -2,12 +2,13 @@
 title: Обновление свойств educationSchool
 description: Обновление свойств объекта school.
 author: mmast-msft
-ms.openlocfilehash: fab3eea2896b96881512c1390583bd25b1139ea2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23c7c476e2447fbde43a0e7521d4b3d626f80f5b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309242"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892234"
 ---
 # <a name="update-educationschool-properties"></a>Обновление свойств educationSchool
 

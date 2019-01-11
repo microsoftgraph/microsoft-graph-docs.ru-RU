@@ -2,12 +2,13 @@
 title: Действие createToken
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: d1e62847aeea37f9d365bc7c66281aba90c0e031
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7c39af9c77728e2ccfbc5bc4412058a3b0b8fc2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322164"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892388"
 ---
 # <a name="createtoken-action"></a>Действие createToken
 
@@ -37,11 +38,11 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollmen
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

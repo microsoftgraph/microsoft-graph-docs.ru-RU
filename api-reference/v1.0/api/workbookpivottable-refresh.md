@@ -2,12 +2,13 @@
 title: 'workbookPivotTable: refresh'
 description: Обновляет сводную таблицу.
 author: lumine2008
-ms.openlocfilehash: b95c1d8d9c4d48a8e7204a099c21781a00a6d935
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74bca619a96a4fded1bd93e21cb5b69d6f605882
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892360"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 
@@ -35,7 +36,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ### <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
