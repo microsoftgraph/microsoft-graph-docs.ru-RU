@@ -1,18 +1,19 @@
 ---
 title: Тип ресурса office365ActiveUserCounts
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 63d0469f5531d68a7b81c37014103a02e977e870
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 887f9b08d7f46aac023fbd0f34e6174e5f422760
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078187"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882721"
 ---
 # <a name="office365activeusercounts-resource-type"></a>Тип ресурса office365ActiveUserCounts
 
 ## <a name="properties"></a>Свойства
 
-| Свойство          | Тип   | Description                              |
+| Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Date   | Последняя дата контента.          |
 | Office 365         | Int64  | Число активных пользователей в Office 365. Эта цифра включает в себя всех активных пользователей в Exchange, OneDrive, SharePoint, Скайп для бизнеса, Yammer и группами Майкрософт. Определение активного пользователя можно найти для каждого продукта в описании соответствующих свойств. |
@@ -23,7 +24,7 @@ ms.locfileid: "27078187"
 | Yammer            | Int64  | Число активных пользователей в Yammer. Любой пользователь, который можно публиковать, чтение или как сообщения считается активного пользователя. |
 | группы             | Int64  | Число активных пользователей в группы Microsoft. Любой пользователь, который сообщений, помещенных в каналы группы, отправленных сообщений в сеансах частной беседы или являлся участником собрания или вызовы считается активного пользователя. |
 | reportDate        | Date   | Дата, на котором выполнялись число пользователей. |
-| reportPeriod      | String | Количество дней, на которое отчета.    |
+| reportPeriod      | Строка | Количество дней, на которое отчета.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

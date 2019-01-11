@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса privilegedOperationEvent
 description: Представляет событие аудита, созданное привилегированной управления удостоверениями для операций роли, такие как администратор управляет привилегированной ролей, пользователь активирует его роли и пользователь деактивирует его роль.
-ms.openlocfilehash: e35e0744a8a8d54ad9f1cc8cd536b05283eaa9fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc7374f4cf3bc18fbf2f3c36ee4f57e6d703434b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882686"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>Тип ресурса privilegedOperationEvent
 
@@ -22,7 +23,7 @@ ms.locfileid: "27079708"
 |[Список privilegedOperationEvent](../api/privilegedoperationevent-list.md) | Коллекция [privilegedOperationEvent](privilegedoperationevent.md) . |Получите коллекцию объектов privilegedOperationEvent.|
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |additionalInformation|string|Подробные человеческого для чтения сведения для события.|
 |creationDateTime|dateTimeOffset|Указывает время создания события.|

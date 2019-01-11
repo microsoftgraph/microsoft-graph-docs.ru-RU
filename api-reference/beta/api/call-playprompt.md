@@ -2,12 +2,13 @@
 title: 'вызов: playPrompt'
 description: Воспроизведение запрос в вызове.
 author: VinodRavichandran
-ms.openlocfilehash: e432375fdfc9d31822698997f4fda27180e08ac9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 47d4dac56f1424f71fff20f63c9d68f3f09d3926
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883659"
 ---
 # <a name="call-playprompt"></a>вызов: playPrompt
 
@@ -37,13 +38,13 @@ POST /applications/{id}/calls/{id}/playPrompt
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |запросы|[запрос](../resources/prompt.md) семейства сайтов||
-|clientContext|String|Контекст клиента.|
+|clientContext|Строка|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [playPromptOperation](../resources/playPromptOperation.md) и кода ответа в теле ответа.

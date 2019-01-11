@@ -1,12 +1,13 @@
 ---
 title: Создание appRoleAssignment
 description: Используйте этот интерфейс API для создания нового appRoleAssignment.
-ms.openlocfilehash: f75d20927d3452dcc8f0fc79cb330366d65da745
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ce498312f294ff11b97f12b136a6f48ebb4d3791
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081230"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886984"
 ---
 # <a name="create-approleassignment"></a>Создание appRoleAssignment
 
@@ -34,7 +35,7 @@ POST /servicePrincipals/{id}/appRoleAssignments
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [appRoleAssignment](../resources/approleassignment.md) .
 
 ## <a name="response"></a>Ответ
@@ -63,8 +64,7 @@ Content-length: 233
 ```
 В тексте запроса укажите представление JSON объекта [appRoleAssignment](../resources/approleassignment.md) .
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

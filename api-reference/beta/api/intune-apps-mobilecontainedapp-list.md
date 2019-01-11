@@ -2,12 +2,13 @@
 title: Список mobileContainedApps
 description: Свойства списка и связей объектов mobileContainedApp.
 author: tfitzmac
-ms.openlocfilehash: 66c361e6e6a3e4935722a72389e38b9bbda5811c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74aa7d04975c6098b0368d916d0c86f019359dae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887481"
 ---
 # <a name="list-mobilecontainedapps"></a>Список mobileContainedApps
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: 'TableRow: Range'
 description: Возвращает объект диапазона, связанный со всей строкой.
 author: lumine2008
-ms.openlocfilehash: f6ad50c8d4bd94e2f37c774b8dba8696be43026e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: efac71fb3069258eaa82c9215d2333c21377b619
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303852"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882336"
 ---
 # <a name="tablerow-range"></a>TableRow: Range
 
@@ -34,7 +35,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

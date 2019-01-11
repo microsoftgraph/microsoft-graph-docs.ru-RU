@@ -1,12 +1,13 @@
 ---
 title: Получение governanceResource
 description: Извлечение свойств и связи объекта governanceResource.
-ms.openlocfilehash: 55fcea026a2816f33ab6064ea5828d3af4526690
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 16442ea971a635aedfd89f09c48ffddf14c83b95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191083"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888034"
 ---
 # <a name="get-governanceresource"></a>Получение governanceResource
 
@@ -17,7 +18,7 @@ ms.locfileid: "27191083"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -39,9 +40,9 @@ GET /privilegedAccess/azureResources/resources/{id}
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [governanceResource](../resources/governanceresource.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -54,7 +55,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": false,

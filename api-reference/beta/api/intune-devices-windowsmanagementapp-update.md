@@ -2,12 +2,13 @@
 title: Обновление windowsManagementApp
 description: Обновление свойства объекта windowsManagementApp.
 author: tfitzmac
-ms.openlocfilehash: 4e14dc250167fed09969cea82b8291ce4bd9bf97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 182dd2ef39a322c38497dd8b714945724bf5b12e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886753"
 ---
 # <a name="update-windowsmanagementapp"></a>Обновление windowsManagementApp
 
@@ -37,11 +38,11 @@ PATCH /deviceAppManagement/windowsManagementApp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md).
@@ -49,7 +50,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|String.|Управление приложения доступные версии Windows.|
+|availableVersion|Строка|Управление приложения доступные версии Windows.|
 
 
 

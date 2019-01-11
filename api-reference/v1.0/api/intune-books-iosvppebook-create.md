@@ -2,12 +2,13 @@
 title: Create iosVppEBook
 description: Создание объекта iosVppEBook.
 author: tfitzmac
-ms.openlocfilehash: 753e49af6b00124b18b687decbeee195e2e1ee1d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c8946efab803393c349fb011b714b78a075dd69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356072"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815871"
 ---
 # <a name="create-iosvppebook"></a>Create iosVppEBook
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

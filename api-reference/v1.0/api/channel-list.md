@@ -2,12 +2,13 @@
 title: Список каналов
 description: Получить список каналов в данной группы.
 author: nkramer
-ms.openlocfilehash: a09a4a25fb2324726bd7d8a8ac62290cfc3c5f92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: e47afbb3b1568a656aff261b015cb5a11403e6e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307401"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885507"
 ---
 # <a name="list-channels"></a>Список каналов
 
@@ -41,7 +42,7 @@ GET /teams/{id}/channels
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

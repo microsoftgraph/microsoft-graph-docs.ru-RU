@@ -2,12 +2,13 @@
 title: 'workbookRange: columnsAfter'
 description: Возвращает определенное количество столбцов справа от заданного диапазона.
 author: lumine2008
-ms.openlocfilehash: b80657c6afb7709049a1e0ccaa3c3b232f5501c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49d2f19622d55297abe9748dff4b91a7a219fda8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886172"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -33,7 +34,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|count|Int32|Необязательный атрибут. Число столбцов для включения в результирующий диапазон. В общем случае используйте положительное число для создания диапазона за пределами текущего диапазона. Отрицательное значение можно также использовать для создания диапазона в текущем диапазоне. Значение по умолчанию — 1|
+|count|Int32|Необязательное. Число столбцов для включения в результирующий диапазон. В общем случае используйте положительное число для создания диапазона за пределами текущего диапазона. Отрицательное значение можно также использовать для создания диапазона в текущем диапазоне. Значение по умолчанию — 1|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -41,7 +42,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

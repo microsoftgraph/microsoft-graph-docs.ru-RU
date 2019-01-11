@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса emailAppUsageVersionsUserCounts
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 7b4a59a1e15ddf41f0e4204efc4d3e0c6549e587
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2aff22c0ae1d3042859f3457f398ef5d0a5ffbe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080207"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884849"
 ---
 # <a name="emailappusageversionsusercounts-resource-type"></a>Тип ресурса emailAppUsageVersionsUserCounts
 

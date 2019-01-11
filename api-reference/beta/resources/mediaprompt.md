@@ -2,12 +2,13 @@
 title: Тип ресурса mediaPrompt
 description: Тип mediaPrompt.
 author: VinodRavichandran
-ms.openlocfilehash: 4782772f463a613a759ad3b2b25cb05e7e160555
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 31e1e0e1d842c758cddfb78a39b2dcc185e97ec9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380291"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884268"
 ---
 # <a name="mediaprompt-resource-type"></a>Тип ресурса mediaPrompt
 
@@ -19,7 +20,7 @@ ms.locfileid: "27380291"
 
 | Свойство    | Тип                      | Описание                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| цикл        | Int32                     | Счетчик цикла. значение 0 указывает цикл бесконечно. Значение по умолчанию — `1`. |
+| цикл        | Int32                     | Счетчик цикла. значение 0 указывает цикл бесконечно. Значение по умолчанию — `1`. |
 | mediaInfo   | [mediaInfo](mediainfo.md) | Сведения о мультимедиа                                                           |
 
 ## <a name="json-representation"></a>Представление JSON

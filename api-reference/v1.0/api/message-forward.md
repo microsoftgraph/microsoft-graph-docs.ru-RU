@@ -2,12 +2,13 @@
 title: 'message: forward'
 description: Пересылка сообщения. Сообщение сохраняется в папке "Отправленные".
 author: angelgolfer-ms
-ms.openlocfilehash: fe1b5f9498d8be417818168b83abc56da8986bd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c547b34cdafc3b9706cd5704dd84fb0866c38a50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884779"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -36,7 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

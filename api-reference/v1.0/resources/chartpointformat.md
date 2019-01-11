@@ -2,12 +2,13 @@
 title: Тип ресурса ChartPointFormat
 description: Представляет объект форматирования для точек диаграммы.
 author: lumine2008
-ms.openlocfilehash: 94ba58eb60f80cf704de3d8a44e6e96f010429a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5923252a9fce47eedc58751def301b6515560ddd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883344"
 ---
 # <a name="chartpointformat-resource-type"></a>Тип ресурса ChartPointFormat
 

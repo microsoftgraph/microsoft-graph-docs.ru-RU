@@ -2,12 +2,13 @@
 title: Тип ресурса mobileAppAssignmentSettings
 description: Абстрактный класс, содержащий свойства, которые используются при назначении мобильного приложения группе.
 author: tfitzmac
-ms.openlocfilehash: 34f742ca6e08ee39bcb179187e387906414444a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 530c26c5c6622ad7eb59e7f501252a5bdc7270f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301626"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885703"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>Тип ресурса mobileAppAssignmentSettings
 

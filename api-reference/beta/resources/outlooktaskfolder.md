@@ -2,12 +2,13 @@
 title: Тип ресурса outlookTaskFolder
 description: 'Папка, содержащая задачи Outlook (коллекцию объектов outlookTask). '
 author: angelgolfer-ms
-ms.openlocfilehash: 505b6bf0fe172d701d85230b907727663595d9d3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b4c4bade46022b30c6e4e1f50aae58d32656f0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306211"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882931"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>Тип ресурса outlookTaskFolder
 
@@ -38,7 +39,7 @@ ms.locfileid: "27306211"
 |:---------------|:--------|:----------|
 |changeKey|Строка|Версия папки задач.|
 |id|Строка|Идентификатор папки задач, уникальные в почтовом ящике пользователя. Только для чтения.|
-|isDefaultFolder|Boolean.|Значение true, если папка является папки задач по умолчанию.|
+|isDefaultFolder|Логический|Значение true, если папка является папки задач по умолчанию.|
 |name|Строка|Имя папки задач.|
 |parentGroupKey|Guid|Уникальный идентификатор GUID для родительской папки задач группы.|
 

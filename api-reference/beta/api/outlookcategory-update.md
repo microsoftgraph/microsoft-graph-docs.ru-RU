@@ -1,12 +1,13 @@
 ---
 title: Обновление категории Outlook
 description: 'Обновление перезаписываемого свойства **color** указанного объекта outlookCategory. Не удается изменить свойство **displayName** '
-ms.openlocfilehash: 741536a659add633da21b27e00006a6782a8beb7
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 55252f376f3314689d3dc7a67b54b4fc00c98c80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885941"
 ---
 # <a name="update-outlook-category"></a>Обновление категории Outlook
 
@@ -40,7 +41,7 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|String|Предустановленная константа, которая характеризует категорию и сопоставлена с одним из 25 предопределенных цветов. |
+|color|Строка|Предустановленная константа, которая характеризует категорию и сопоставлена с одним из 25 предопределенных цветов. |
 
 ## <a name="response"></a>Ответ
 

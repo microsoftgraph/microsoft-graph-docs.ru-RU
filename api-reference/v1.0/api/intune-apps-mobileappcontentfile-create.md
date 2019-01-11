@@ -2,12 +2,13 @@
 title: Создание объекта mobileAppContentFile
 description: Создание объекта mobileAppContentFile.
 author: tfitzmac
-ms.openlocfilehash: 9fba589cdb04d6c0258b18cb17da4c96441123e2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2cef9b1d496ca4838f5e4f8be6f155180913118b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850829"
 ---
 # <a name="create-mobileappcontentfile"></a>Создание объекта mobileAppContentFile
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

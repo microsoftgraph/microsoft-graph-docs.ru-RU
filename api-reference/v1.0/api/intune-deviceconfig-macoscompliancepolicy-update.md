@@ -2,12 +2,13 @@
 title: Update macOSCompliancePolicy
 description: Обновление свойств объекта macOSCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 08b256fc12dcfd7d2d5e79f0dc0b277244214a2d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09bba9c19d912d1d4065f390ed35cc209f1879a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321065"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886767"
 ---
 # <a name="update-macoscompliancepolicy"></a>Update macOSCompliancePolicy
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -66,9 +67,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Mac OS.|
-|firewallEnabled|Boolean.|Является ли брандмауэра должна быть включена или нет.|
-|firewallBlockAllIncoming|Boolean.|Соответствующий параметр «Блокировать все входящие подключения».|
-|firewallEnableStealthMode|Boolean.|Соответствует «Включить режим скрытое».|
+|firewallEnabled|Логический|Является ли брандмауэра должна быть включена или нет.|
+|firewallBlockAllIncoming|Логический|Соответствующий параметр «Блокировать все входящие подключения».|
+|firewallEnableStealthMode|Логический|Соответствует «Включить режим скрытое».|
 
 
 

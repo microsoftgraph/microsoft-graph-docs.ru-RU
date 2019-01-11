@@ -1,12 +1,13 @@
 ---
 title: Список календарей
 description: 'Получение всех календарей пользователя (свойство навигации `/calendars`), календарей из группы календарей по умолчанию или из указанной группы календарей. '
-ms.openlocfilehash: 93919f434bfbd7d3f2c11e641c9712a6d48e45b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c59ee99c900aa39221530473c9323dfcaab721b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886518"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -51,7 +52,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -68,8 +69,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 GET https://graph.microsoft.com/beta/me/calendars
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

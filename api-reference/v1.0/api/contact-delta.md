@@ -1,12 +1,13 @@
 ---
 title: 'contact: delta'
 description: Получение набора контактов, которые были добавлены в указанную папку, обновлены в ней или удалены из нее.
-ms.openlocfilehash: 457844ccf24947fbf084cdc71719695d9d86c622
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eae0e5cd4f96678ad2bced2fa5d403ed1d0142aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886746"
 ---
 # <a name="contact-delta"></a>contact: delta
 

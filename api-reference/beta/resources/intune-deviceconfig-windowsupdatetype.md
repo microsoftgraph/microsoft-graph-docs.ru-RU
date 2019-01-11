@@ -2,12 +2,13 @@
 title: Тип перечисления windowsUpdateType
 description: Какие устройства филиала будет получать обновления из
 author: tfitzmac
-ms.openlocfilehash: b41fea0254cbbb6a590d240c2db9e4fb7aa0e6eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15d2d46684d38b57690cc9c12d9c49eccd652e6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309627"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887040"
 ---
 # <a name="windowsupdatetype-enum-type"></a>Тип перечисления windowsUpdateType
 

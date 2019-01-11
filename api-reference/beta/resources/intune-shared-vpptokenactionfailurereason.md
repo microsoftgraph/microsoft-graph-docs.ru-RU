@@ -2,12 +2,13 @@
 title: Тип перечисления vppTokenActionFailureReason
 description: Возможные типы причины возник сбой маркеров действие программы покупки корпоративного Apple.
 author: tfitzmac
-ms.openlocfilehash: f36b92238b097f50990bbdb2f3c3584b2ff48901
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f488302b7fc701e8a419357ad7d6cbbb6015759b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883722"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>Тип перечисления vppTokenActionFailureReason
 
@@ -19,7 +20,7 @@ ms.locfileid: "27320966"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Отсутствуют.|
+|Нет|0|Нет.|
 |appleFailure|1|Произошла ошибка службы Apple.|
 |internalError|2|Возникла внутренняя ошибка.|
 |expiredVppToken|3|Произошла ошибка, так как истекших маркер покупки программы корпоративного Apple.|

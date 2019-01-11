@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса licenseUnitsDetail
 description: Свойство **prepaidUnits** объекта subscribedSku относится к типу **licenseUnitsDetail**.
-ms.openlocfilehash: 5f3d62c39248739746923195945efbc3322d5686
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d6fb464eaf9c1247d21ad9effb2b70c6bdaa1c3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074874"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883512"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Тип ресурса licenseUnitsDetail
 

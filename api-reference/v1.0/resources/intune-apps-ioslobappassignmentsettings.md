@@ -2,12 +2,13 @@
 title: Тип ресурса iosLobAppAssignmentSettings
 description: Содержит свойства, используемые при назначении бизнес-приложения для iOS группе.
 author: tfitzmac
-ms.openlocfilehash: 78de511bdbdf2e4a8b16d9ce32a790329d2eb3c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b28211457cd2295fd8f81c3a4725afb8da933b60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884499"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Тип ресурса iosLobAppAssignmentSettings
 

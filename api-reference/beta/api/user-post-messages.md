@@ -1,12 +1,13 @@
 ---
 title: Создание объекта Message
 description: С помощью этого API можно создать черновик нового сообщения. Черновики можно создавать в любой папке и при необходимости изменять перед отправкой. Для сохранения в папке "Черновики" используйте ярлык /messages.
-ms.openlocfilehash: 21a5f9dc54afdbfd6298841f1f441a78103ab28c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff4472b84ed218607ff6cda2b991f6bf2b63cda3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883736"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -42,7 +43,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление объекта [message](../resources/message.md) с JSON.
 
 Если вы хотите использовать **упомянуть** помечать другого пользователя в новое сообщение:

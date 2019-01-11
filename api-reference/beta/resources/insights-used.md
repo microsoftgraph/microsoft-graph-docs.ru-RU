@@ -2,12 +2,13 @@
 title: используемый тип ресурса
 description: Возможность получения, представляющее документы, используемые для определенного пользователя. Возвращает полезные сведения о наиболее важные документы, которые пользователь просматривать или доступны.
 author: simonhult
-ms.openlocfilehash: 89eac33ad954905c77a26df669bb15a2cf471edd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb41fcb7cef5c9e39f9100ebd1d8c2640f06e2d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885535"
 ---
 # <a name="used-resource-type"></a>используемый тип ресурса
 

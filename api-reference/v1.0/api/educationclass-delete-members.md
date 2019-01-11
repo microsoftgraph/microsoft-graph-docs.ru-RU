@@ -2,12 +2,13 @@
 title: Удаление учащегося
 description: Удаляет educationUser из educationClass.
 author: mmast-msft
-ms.openlocfilehash: a887b3286a0c9cbdbb7d12f0bdaa26131332346f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5d0a51f7687c0ccab6da1a85dd5407faf08fd50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303817"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883855"
 ---
 # <a name="remove-a-student"></a>Удаление учащегося
 
@@ -34,7 +35,7 @@ DELETE /education/classes/{id}/members/{userId}/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Преобразование в другие форматы
-ms.openlocfilehash: 70558e7c0497c71f620481ff67b7d07cc255cd95
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+localization_priority: Normal
+ms.openlocfilehash: d27420153a295eac9d3f880910d63bd701525427
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209721"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887439"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 

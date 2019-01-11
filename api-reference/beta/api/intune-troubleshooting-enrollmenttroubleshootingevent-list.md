@@ -2,12 +2,13 @@
 title: Список объектов enrollmentTroubleshootingEvent
 description: Список свойств и связей объектов enrollmentTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 7fbf8919e84846337d1c86c6ef664b2fdba2f4b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2d98aa5e411fba91ec2fd9d4112a23483758f42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334876"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882644"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>Список объектов enrollmentTroubleshootingEvent
 
@@ -37,11 +38,11 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

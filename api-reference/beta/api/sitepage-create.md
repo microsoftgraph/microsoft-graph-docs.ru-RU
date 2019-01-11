@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
 title: Создание новой страницы на сайте SharePoint
-ms.openlocfilehash: 142b34a56f4971d8228ba6761bc7a3a9e2f48caf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8b3c1f6cabbacd62e671a27c03658c68b237ef92
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885598"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создайте страницу в списке страниц сайта узла
 
@@ -34,7 +35,7 @@ ms.locfileid: "27081234"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите представление JSON [sitePage][] ресурсов для создания.
 

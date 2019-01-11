@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: Добавление владельца'
 description: Используйте этот интерфейс API для добавления владельца для участников-служб.
-ms.openlocfilehash: 79ffb0d8d6c680b517421455cee011b3764c8f15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1bfb82589c730512ba877a94b55d565a6a44d4b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081018"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887159"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal: Добавление владельца
 
@@ -21,7 +22,7 @@ ms.locfileid: "27081018"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Application.ReadWrite.OwnedBy и Directory.Read.All, Application.ReadWrite.All и Directory.Read.All |
+|Для приложений | Application.ReadWrite.OwnedBy и Directory.Read.All, Application.ReadWrite.All и Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -60,8 +61,7 @@ Content-length: 30
 ```
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

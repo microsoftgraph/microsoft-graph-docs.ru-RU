@@ -2,12 +2,13 @@
 title: Действие windowsDefenderUpdateSignatures
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: e8e613863d33195b5aa99524823048f74227d9c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 93869feea6163636ca19fb681740293e76c72d98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316718"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885556"
 ---
 # <a name="windowsdefenderupdatesignatures-action"></a>Действие windowsDefenderUpdateSignatures
 
@@ -37,11 +38,11 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

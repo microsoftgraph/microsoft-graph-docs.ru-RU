@@ -2,12 +2,13 @@
 title: Тип ресурса vppToken
 description: Вы приобрели несколько лицензий для приложений для iOS по программе корпоративных покупок Apple Volume Purchase Program для бизнеса или образовательных учреждений. Это включает настройку учетной записи Apple VPP с веб-сайта Apple и передачу токена Apple VPP для бизнеса или образовательных учреждений в Intune. Затем вы можете синхронизировать данные корпоративных покупок с помощью Intune и отслеживать использование приложения, приобретенного по программе корпоративных покупок. Вы можете передать несколько токенов Apple VPP для бизнеса или образовательных учреждений.
 author: tfitzmac
-ms.openlocfilehash: fd4fdcda2af6964b7ad506d8f1b08b23586b4af9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c3394ea1872ed91e8c2b8e95db498cd47da05a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306841"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885227"
 ---
 # <a name="vpptoken-resource-type"></a>Тип ресурса vppToken
 
@@ -44,10 +45,10 @@ ms.locfileid: "27306841"
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Boolean.|Согласны полномочия для данных, общий доступ для покупки программа корпоративного Apple.|
+|dataSharingConsentGranted|Логический|Согласны полномочия для данных, общий доступ для покупки программа корпоративного Apple.|
 |displayName|Строка|Администратор указанного маркера понятное имя.|
-|locationName|String.|Маркер расположение, возвращенные Apple VPP.|
-|claimTokenManagementFromExternalMdm|Boolean.|Admin разрешаете разрешить информация по получению маркеров управления из внешнего MDM.|
+|locationName|Строка|Маркер расположение, возвращенные Apple VPP.|
+|claimTokenManagementFromExternalMdm|Логический|Admin разрешаете разрешить информация по получению маркеров управления из внешнего MDM.|
 
 ## <a name="relationships"></a>Связи
 Нет

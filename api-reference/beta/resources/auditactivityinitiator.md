@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса auditActivityInitiator
 description: Идентификатор объекта ресурса, запускает действие. Инициатор может быть пользователем, приложения или системы (который считается, что приложение)
-ms.openlocfilehash: 834b39f67a9a3a251c61f15d3b1fa8aa964870e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 14c92a4df42c3d8dbcd6836695df8d6caac3cf87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884611"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>Тип ресурса auditActivityInitiator
 Идентификатор объекта ресурса, запускает действие. Инициатор может быть пользователем, приложения или системы (который считается, что приложение)
@@ -14,7 +15,7 @@ ms.locfileid: "27079535"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |приложение|[appIdentity](appidentity.md)|Если ресурсов, инициализация действие представляет собой приложение, это свойство показывает все приложения связанные сведения, например, appId, имя, servicePrincipalId, имя.|
 |user|[удостоверению пользователя](useridentity.md)|Если ресурсов, инициализация действия пользователя, это свойство показывает все пользовательские связанные сведения, например, идентификатор пользователя, имя, UserPrinicpalName.|

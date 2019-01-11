@@ -2,12 +2,13 @@
 title: Удаление deviceConfigurationConflictSummary
 description: Удаляет deviceConfigurationConflictSummary.
 author: tfitzmac
-ms.openlocfilehash: c0dba169b531a7fb5f01661c617cf01950d3e90b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25491d368cb63daf9968415ee0eb15120e11a0a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882371"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>Удаление deviceConfigurationConflictSummary
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/deviceConfigurationConflictSummary/{deviceConfiguration
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

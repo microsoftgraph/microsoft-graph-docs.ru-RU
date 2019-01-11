@@ -2,12 +2,13 @@
 title: Тип перечисления windowsDeviceHealthState
 description: Состояние защиты компьютера конечной точки
 author: tfitzmac
-ms.openlocfilehash: b794f8121132e396459f9198c644084690fe95b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91869502d0d61c25c6eb8dd67ba4e8e32d28fbb2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885927"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>Тип перечисления windowsDeviceHealthState
 

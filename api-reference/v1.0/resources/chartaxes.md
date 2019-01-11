@@ -2,12 +2,13 @@
 title: Тип ресурса ChartAxes
 description: Представляет оси диаграммы.
 author: lumine2008
-ms.openlocfilehash: 23a9a5cc1f9eaa9a4ff222cf18f00953d829f88a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53f0e4a7344ddfab89330203f90032266e0c622d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885906"
 ---
 # <a name="chartaxes-resource-type"></a>Тип ресурса ChartAxes
 

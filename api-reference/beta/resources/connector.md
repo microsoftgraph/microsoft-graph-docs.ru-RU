@@ -1,12 +1,13 @@
 ---
 title: Тип соединителя ресурсов
 description: Ниже представлено описание ресурса в формате JSON.
-ms.openlocfilehash: 6d4cb7e5ca1a5384dbb6c8be92e7ce4eb107388a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 98fa998a37b01ad64e556b229912932f4d1cfc75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884625"
 ---
 # <a name="connector-resource-type"></a>Тип соединителя ресурсов
 
@@ -27,15 +28,15 @@ ms.locfileid: "27081266"
 |[Перечисление memberOf](../api/connector-list-memberof.md) |[connectorGroup](connectorgroup.md) коллекции| Получите объект connectorGroup, связанный с соединителем.|
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|externalIp|String|Внешний IP-адрес как вредоносным службой для этого соединителя компьютера. Только для чтения|
-|id|String| Идентификатор объекта соединитель. <BR>Только для чтения.|
-|имя_компьютера|String| Имя компьютера, на котором работает соединитель. <BR>Только для чтения|
+|externalIp|Строка|Внешний IP-адрес как вредоносным службой для этого соединителя компьютера. Только для чтения|
+|id|Строка| Идентификатор объекта соединитель. <BR>Только для чтения.|
+|имя_компьютера|Строка| Имя компьютера, на котором работает соединитель. <BR>Только для чтения|
 |status|string| Указывает состояние соединителя. Возможные значения: `active`, `inactive`. Только для чтения |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |memberOf|[connectorGroup](connectorgroup.md) коллекции| ConnectorGroup, который является членом подключиться.<br>Только для чтения. |
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса governancePermission
 description: 'Представляет, governanceSubject имеет разрешение на доступ к определенным governanceResource.  '
-ms.openlocfilehash: d7b3e1eb70c89c278ccc2a8b3e9a16e265e4ae97
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e082ca50e5642e865b3e30859eea607df63a03b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882875"
 ---
 # <a name="governancepermission-resource-type"></a>Тип ресурса governancePermission
 
@@ -16,9 +17,9 @@ ms.locfileid: "27079406"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accessLevel|String|Уровень доступа. Допустимые значения: ``None``, ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
+|accessLevel|Строка|Уровень доступа. Допустимые значения: ``None``, ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
 |isActive|Логический|Указывает, если инициатора запроса имеет назначения активная роль на уровне доступа.|
 |isEligible|Логический|Указывает, имеет ли инициатора запроса все назначения ролей право на уровне доступа.|
 

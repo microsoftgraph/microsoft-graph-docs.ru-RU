@@ -2,12 +2,13 @@
 title: Отправка сообщений о списка
 description: Список всех отправленных данных, связанных с данного назначения. Преподаватель можно получить всех отправляемых во время студента можно получить только отправленные данные, связанные с ними.
 author: dipakboyed
-ms.openlocfilehash: ac7bd47b4cbc4549f38239c4a68504bd20b3a2e8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b807a1b19bdb47e3b184ffdce4a15b38740c574
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308430"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883217"
 ---
 # <a name="list-submissions"></a>Отправка сообщений о списка
 
@@ -37,7 +38,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationSubmission](../resources/educationsubmission.md) в теле ответа.

@@ -3,12 +3,13 @@ author: kevinlam
 ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo
-ms.openlocfilehash: 8b8f7a962e237cc20a42503efd31f083996ad715
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7df636f9c406a499baa5ef3be1748273920cac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026840"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885479"
 ---
 # <a name="itempreviewinfo-resource-type"></a>Тип ресурса itemPreviewInfo
 
@@ -26,7 +27,7 @@ ms.locfileid: "27026840"
 
 ## <a name="properties"></a>Свойства
 
-| Имя           | Тип   | Description
+| Имя           | Тип   | Описание
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | URL-адрес для внедрения с помощью HTTP GET (Интернет-кадров, и т.д.)
 | postUrl        | string | URL-адрес для внедрения с помощью HTTP POST (отправки формы, JS, и т.д.)

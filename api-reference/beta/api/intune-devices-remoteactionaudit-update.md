@@ -2,12 +2,13 @@
 title: Обновление remoteActionAudit
 description: Обновление свойства объекта remoteActionAudit.
 author: tfitzmac
-ms.openlocfilehash: a27cd54246aaa1badc9bdbf54379c5d9d2a5a218
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 147f526218e70c788bdb3c60312e1ebe8591b125
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352131"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886949"
 ---
 # <a name="update-remoteactionaudit"></a>Обновление remoteActionAudit
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md).
@@ -51,11 +52,11 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 |id|Строка|Идентификатор отчета.|
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[устаревшие\] вместо этого используйте InitiatedByUserPrincipalName.|
-|initiatedByUserPrincipalName|String.|Пользователя, который инициировал действие устройства имеет формат имени участника-пользователя.|
+|initiatedByUserPrincipalName|Строка|Пользователя, который инициировал действие устройства имеет формат имени участника-пользователя.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
 |requestDateTime|DateTimeOffset|Время, когда действие был отправлен, в формате UTC.|
-|deviceOwnerUserPrincipalName|String.|Имя участника-пользователя владельца устройства.|
-|deviceIMEI|String.|IMEI устройства.|
+|deviceOwnerUserPrincipalName|Строка|Имя участника-пользователя владельца устройства.|
+|deviceIMEI|Строка|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 

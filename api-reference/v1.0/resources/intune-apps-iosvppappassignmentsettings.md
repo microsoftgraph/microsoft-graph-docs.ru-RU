@@ -2,12 +2,13 @@
 title: Тип ресурса iosVppAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения VPP для iOS группе.
 author: tfitzmac
-ms.openlocfilehash: 65a143c1f6cc9eed4dfdc6dabeb6f9379517277c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4c9a5196be760204af682c1a7318318920284a40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310250"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886116"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Тип ресурса iosVppAppAssignmentSettings
 

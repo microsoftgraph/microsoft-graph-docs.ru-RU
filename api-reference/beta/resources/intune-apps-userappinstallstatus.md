@@ -2,12 +2,13 @@
 title: Тип ресурса userAppInstallStatus
 description: Содержит свойства для состояние установки для пользователя.
 author: tfitzmac
-ms.openlocfilehash: 024fff32aac2a268a2e0bbec81a6d46b31012a11
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4d848a4fe4cd742df8a83184d539d7ff27290b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302760"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885206"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Тип ресурса userAppInstallStatus
 

@@ -2,12 +2,13 @@
 title: Обновление sideLoadingKey
 description: Обновление свойства объекта sideLoadingKey.
 author: tfitzmac
-ms.openlocfilehash: 6d616db947defb8e08926e40df23590c7d27e84d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f4a6348df539924bdccbf3cacf8411442f877eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885633"
 ---
 # <a name="update-sideloadingkey"></a>Обновление sideLoadingKey
 
@@ -37,11 +38,11 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).
@@ -53,7 +54,7 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |displayName|Строка|Со стороны загрузка ключа имя, отображаемое для администраторов для ИТ-специалистов.|
 |описание|Строка|Со стороны загрузки ключ описание, отображаемое для администраторов для ИТ-специалистов.|
 |totalActivation|Int32|Со стороны загрузки ключ общее активация отображаются для администраторов для ИТ-специалистов.|
-|lastUpdatedDateTime|String.|Со стороны загрузки ключ обновлен Дата последнего отображаются для администраторов для ИТ-специалистов.|
+|lastUpdatedDateTime|Строка|Со стороны загрузки ключ обновлен Дата последнего отображаются для администраторов для ИТ-специалистов.|
 
 
 

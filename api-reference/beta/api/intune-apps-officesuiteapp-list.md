@@ -2,12 +2,13 @@
 title: Список officeSuiteApps
 description: Свойства списка и связей объектов officeSuiteApp.
 author: tfitzmac
-ms.openlocfilehash: 2b6366da8bf36954fedaa9670f0de71ed723c06c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80961f9846969d20e6a938bbd639b101f0ff5557
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350669"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882406"
 ---
 # <a name="list-officesuiteapps"></a>Список officeSuiteApps
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

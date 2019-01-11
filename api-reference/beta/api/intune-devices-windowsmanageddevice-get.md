@@ -2,12 +2,13 @@
 title: Получение windowsManagedDevice
 description: Чтение свойства и связи объекта windowsManagedDevice.
 author: tfitzmac
-ms.openlocfilehash: 51d5adb884779a850c9689ec8b25704cde916a13
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 639b67d9feddb83835c5da5f2a39a3454f47d19b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314058"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886599"
 ---
 # <a name="get-windowsmanageddevice"></a>Получение windowsManagedDevice
 
@@ -42,11 +43,11 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

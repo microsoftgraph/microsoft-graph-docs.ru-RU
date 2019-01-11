@@ -2,12 +2,13 @@
 title: Тип ресурса windowsStoreApp
 description: Содержит свойства и наследуемые свойства для приложений для магазина Windows.
 author: tfitzmac
-ms.openlocfilehash: 7c02681dcc8538116967a4b45e01485f9b69b75c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 331ed1d6b6f22d3bf93ed23d4bf51aea4edf80c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886235"
 ---
 # <a name="windowsstoreapp-resource-type"></a>Тип ресурса windowsStoreApp
 
@@ -25,13 +26,13 @@ ms.locfileid: "27346496"
 |[Список windowsStoreApps](../api/intune-apps-windowsstoreapp-list.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) коллекции|Свойства списка и связей объектов [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .|
 |[Получение windowsStoreApp](../api/intune-apps-windowsstoreapp-get.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Чтение свойства и связи объекта [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .|
 |[Создание windowsStoreApp](../api/intune-apps-windowsstoreapp-create.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Создание нового объекта [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .|
-|[Удаление windowsStoreApp](../api/intune-apps-windowsstoreapp-delete.md)|Нет (None)|Удаляет [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md).|
+|[Удаление windowsStoreApp](../api/intune-apps-windowsstoreapp-delete.md)|Нет|Удаляет [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md).|
 |[Обновление windowsStoreApp](../api/intune-apps-windowsstoreapp-update.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Обновление свойства объекта [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

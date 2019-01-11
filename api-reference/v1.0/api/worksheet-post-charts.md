@@ -2,12 +2,13 @@
 title: Создание объекта Chart
 description: С помощью этого API можно создать объект Chart.
 author: lumine2008
-ms.openlocfilehash: 507972400367056b9ba2a97668f388a46b7f86b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 30bc845fc3e6c04d1f961d08c396c806e37e9e6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882833"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
@@ -33,7 +34,7 @@ POST /workbook/worksheets/{id|name}/charts/
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [WorkbookChart](../resources/chart.md) .
 
 ## <a name="response"></a>Ответ

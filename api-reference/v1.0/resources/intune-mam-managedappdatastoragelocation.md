@@ -2,12 +2,13 @@
 title: Тип перечисления managedAppDataStorageLocation
 description: Места хранения, где управляемых приложений могут потенциально хранят свои данные
 author: tfitzmac
-ms.openlocfilehash: 4521a209e499185d07dec5edef9e89ff7c6e5f5d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ae5b5a77f6fae9d1043993a4e464920b1d6127a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888097"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>Тип перечисления managedAppDataStorageLocation
 

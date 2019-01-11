@@ -2,12 +2,13 @@
 title: Обновление объекта windowsInformationProtectionAppLearningSummary
 description: Обновление свойств объекта windowsInformationProtectionAppLearningSummary.
 author: tfitzmac
-ms.openlocfilehash: 92302f282987a4cc6c56fbf3347e419696f58ee4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 052a18270aab27603969d8abaeec88f86f0bc5e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354322"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882910"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Обновление объекта windowsInformationProtectionAppLearningSummary
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

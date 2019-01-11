@@ -2,12 +2,13 @@
 title: Перечисление объектов deviceAndAppManagementRoleDefinition
 description: Список свойств и связей объектов deviceAndAppManagementRoleDefinition.
 author: tfitzmac
-ms.openlocfilehash: 5705afa2faa02ad76cd9f9a7b429944d90275c72
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ca7df9ecc957895794a28298fa7d8b9ed08c04e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885689"
 ---
 # <a name="list-deviceandappmanagementroledefinitions"></a>Перечисление объектов deviceAndAppManagementRoleDefinition
 
@@ -37,11 +38,11 @@ GET /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,12 +2,13 @@
 title: Тип перечисления nonEapAuthenticationMethodForEapTtlsType
 description: Методы EAP без проверки подлинности.
 author: tfitzmac
-ms.openlocfilehash: 57d24189da1a6bc5f552ad32d2be9c4557539dab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27673d4245f9bea1ef24c25034497b4d5bf7aebd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884184"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>Тип перечисления nonEapAuthenticationMethodForEapTtlsType
 

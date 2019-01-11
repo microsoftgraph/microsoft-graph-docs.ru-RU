@@ -2,12 +2,13 @@
 title: 'conversationThread: reply'
 description: 'Ответ на поток во время групповой беседы и добавьте новую запись. Можно указать родительский беседы '
 author: dkershaw10
-ms.openlocfilehash: 196a28c5b8a5ae2bfa98a2cbfd4aa0d120cbceef
-ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+localization_priority: Normal
+ms.openlocfilehash: 60d06a44f942e7c974381f717324c2c5b120454f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27413185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887467"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -36,7 +37,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

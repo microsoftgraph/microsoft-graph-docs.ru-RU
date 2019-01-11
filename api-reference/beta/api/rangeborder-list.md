@@ -2,12 +2,13 @@
 title: Список RangeBorderCollection
 description: Получение списка объектов rangeborder.
 author: lumine2008
-ms.openlocfilehash: 8905ff70a55b7d0bf9a4732031d3b54b5e32082d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d37caffe7f279dfe924522ff3950f7fe1f341c7e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884940"
 ---
 # <a name="list-rangebordercollection"></a>Список RangeBorderCollection
 
@@ -39,7 +40,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

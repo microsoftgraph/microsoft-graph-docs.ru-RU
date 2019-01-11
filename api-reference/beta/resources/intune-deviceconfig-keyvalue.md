@@ -2,12 +2,13 @@
 title: Тип ресурса keyValue
 description: Определение значения ключа.
 author: tfitzmac
-ms.openlocfilehash: 5e5754657e679f3a703c2b5dec7cea36d1bad860
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aae0fea85c5dd4f647a72c0fe66890bd8b82520b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302641"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885017"
 ---
 # <a name="keyvalue-resource-type"></a>Тип ресурса keyValue
 
@@ -19,7 +20,7 @@ ms.locfileid: "27302641"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|key|String.|Ключ.|
+|key|Строка|Ключ.|
 |value|Строка|Значение|
 
 ## <a name="relationships"></a>Связи

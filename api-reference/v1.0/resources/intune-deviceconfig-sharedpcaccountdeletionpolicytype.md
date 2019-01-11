@@ -2,12 +2,13 @@
 title: Тип перечисления sharedPCAccountDeletionPolicyType
 description: Возможные значения для при удалении учетных записей на общую ПК.
 author: tfitzmac
-ms.openlocfilehash: 8789faeeec7772cd6115cae82691c62894446f59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a1e3c9e15409e253852b4b896e18181ef1bc391
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301003"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884128"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>Тип перечисления sharedPCAccountDeletionPolicyType
 

@@ -1,12 +1,13 @@
 ---
 title: 'group: unsubscribeByMail'
 description: 'При вызове этого метода приведет к отключению текущего пользователя, чтобы получать уведомления по электронной почте для данной группы о новых сообщений, события и файлы в эту группу. Поддерживается только в Office 365 группы. '
-ms.openlocfilehash: 4891b3c4f8908c61cdbc46ce8bc43f9e51cc4e16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a9c4777a511010ac42bcc31b2fa0a6dc754ac23f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887530"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 

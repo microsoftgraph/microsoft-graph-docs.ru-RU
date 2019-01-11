@@ -2,12 +2,13 @@
 title: Удаление managedEBookCategory
 description: Удаляет managedEBookCategory.
 author: tfitzmac
-ms.openlocfilehash: 1333a93081ebc77f53345e07b68af6c30de19d7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4123c596129eca9666f951bc7dbbee4c69575e5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883057"
 ---
 # <a name="delete-managedebookcategory"></a>Удаление managedEBookCategory
 
@@ -38,11 +39,11 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEB
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

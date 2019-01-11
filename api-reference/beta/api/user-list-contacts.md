@@ -1,12 +1,13 @@
 ---
 title: Список контактов
 description: Получение контактов в почтовом ящике пользователя.
-ms.openlocfilehash: 649adacf88b13e080ae02ca67986b448f3426cac
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+localization_priority: Normal
+ms.openlocfilehash: b78009d44fd442bab31b9911056023256a1d5102
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209742"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886620"
 ---
 # <a name="list-contacts"></a>Список контактов
 
@@ -66,10 +67,10 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [контактов](../resources/contact.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -84,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddres
 ```
 
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

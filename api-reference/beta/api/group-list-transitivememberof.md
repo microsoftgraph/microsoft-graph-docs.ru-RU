@@ -1,12 +1,13 @@
 ---
 title: Доверия транзитивных член группы списка
 description: Получите административные единиц измерения, которые должна быть членом группы и группы.  Эта операция доверия транзитивных и также будет включать всех групп, которым будет вложенных членом этой группы. В отличие от начало пользователя Office 365 групп, возвращает все типы групп, не только группы Office 365.
-ms.openlocfilehash: e622ee484a4070560c38528bccfe7f12e2172d54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2dececa36b96cfae866afe2f03d4ebb926467ae0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077282"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887404"
 ---
 # <a name="list-group-transitive-memberof"></a>Доверия транзитивных член группы списка
 
@@ -38,7 +39,7 @@ GET /groups/{id}/transitiveMemberOf
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

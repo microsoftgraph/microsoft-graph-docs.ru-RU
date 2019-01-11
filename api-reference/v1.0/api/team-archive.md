@@ -2,12 +2,13 @@
 title: Группа архива
 description: 'Архивируйте указанной группы. '
 author: nkramer
-ms.openlocfilehash: bd673db676bebad2213710b8005abd28d074f1ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5a364fe025688bf082de187940e40acdee22d6a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301248"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882854"
 ---
 # <a name="archive-team"></a>Группа архива
 
@@ -43,7 +44,7 @@ POST /teams/{id}/archive
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В запросе, можно _Дополнительно_ включить `shouldSetSpoSiteReadOnlyForMembers` параметр в формате JSON в body следующим образом.
 ```JSON
 {

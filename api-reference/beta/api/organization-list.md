@@ -1,12 +1,13 @@
 ---
 title: Список организаций
 description: Получение списка объектов организаций.
-ms.openlocfilehash: 01a6b08b241fcf28edc9b387a00693acfa7beb71
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7087ea0ef7e3885334b33d53416d5e4b6fc750a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081695"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882798"
 ---
 # <a name="list-organization"></a>Список организаций
 
@@ -34,7 +35,7 @@ GET /organization
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -51,8 +52,7 @@ GET /organization
 GET https://graph.microsoft.com/beta/organization
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,12 +2,13 @@
 title: Тип ресурса deviceAppManagement
 description: Одноэлементный объект, служащий контейнером для всех функций управления приложениями на устройствах.
 author: tfitzmac
-ms.openlocfilehash: 1c77a7c08f50f765d45d22fc95e2e086ac904c6e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7be07f04c33dcb81ab0dfe350290fa95fb8c1679
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885108"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 

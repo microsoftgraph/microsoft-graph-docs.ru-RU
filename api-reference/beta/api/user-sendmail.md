@@ -2,12 +2,13 @@
 title: Отправка почты
 description: Отправка сообщения, указанного в теле запроса. Сообщение сохраняется в папке "Отправленные" по умолчанию.
 author: dkershaw10
-ms.openlocfilehash: bceafc0a5142a85acfca59872a9ee897ac839f19
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b0ac9b478bccf5080b2e8971bdb1ada881f5b28
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851060"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -41,7 +42,7 @@ POST /users/{id | userPrincipalName}/sendMail
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

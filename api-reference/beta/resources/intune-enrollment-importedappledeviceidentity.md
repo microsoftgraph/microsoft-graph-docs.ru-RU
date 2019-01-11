@@ -2,12 +2,13 @@
 title: Тип ресурса importedAppleDeviceIdentity
 description: Ресурс importedAppleDeviceIdentity представляет идентификатор импортированных устройства устройства Apple.
 author: tfitzmac
-ms.openlocfilehash: 966e384b63026def366ba19ea634d635d77d9083
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7ad629721190b67e001ea56ca732eb325358768
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887446"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>Тип ресурса importedAppleDeviceIdentity
 
@@ -31,7 +32,7 @@ ms.locfileid: "27317593"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |serialNumber|Строка|Серийный номер устройства|
-|requestedEnrollmentProfileId|String.|Admin идентификатор профиля регистрации планирует применять на устройство во время следующего регистрации|
+|requestedEnrollmentProfileId|Строка|Admin идентификатор профиля регистрации планирует применять на устройство во время следующего регистрации|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль регистрации времени была назначена на устройство|
 |isSupervised|Boolean|Указывает, если управляет устройства Apple. Дополнительные сведения о был создан:https://support.apple.com/en-us/HT202837|
 |discoverySource;|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройства Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|

@@ -2,12 +2,13 @@
 title: Обновление embeddedSIMActivationCodePool
 description: Обновление свойства объекта embeddedSIMActivationCodePool.
 author: tfitzmac
-ms.openlocfilehash: 83a374ab748ec7b9f93c327b609a5213073f470b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e2b8d3a8163292f2dfac431d72dab83ea71b658
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882658"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>Обновление embeddedSIMActivationCodePool
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md).

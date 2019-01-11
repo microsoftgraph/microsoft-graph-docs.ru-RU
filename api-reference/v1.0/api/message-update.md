@@ -2,12 +2,13 @@
 title: Обновление сообщения
 description: Обновление свойств объекта сообщения.
 author: angelgolfer-ms
-ms.openlocfilehash: c15d4ac183b41b2ab927fc39e175df80626f348e
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: 24705fbf986f9ecf1142e66d189ae2071e1be223
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884786"
 ---
 # <a name="update-message"></a>Обновление сообщения
 
@@ -44,12 +45,12 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
 |ccRecipients|Коллекция объектов Recipient|Получателей копии сообщения. |
 |from|Recipient|Владелец почтового ящика и отправитель сообщения. Должно соответствовать фактический почтового ящика, используемого.|
-|importance|String|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused` или `other`. |
+|importance|Строка|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
+|inferenceClassification | Строка | Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused` или `other`. |
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Обновляемые только если isDraft = true.|
-|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isRead|Boolean|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isRead|Логический|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Коллекция Многозначный расширенных свойств, определенных для сообщения. Допускается значение null.|
 |replyTo|Коллекция объектов Recipient|Электронные адреса, которые необходимо использовать при ответе. Обновляемые только если isDraft = true.|
 |sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Обновляемые при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактический почтового ящика, используемого.|

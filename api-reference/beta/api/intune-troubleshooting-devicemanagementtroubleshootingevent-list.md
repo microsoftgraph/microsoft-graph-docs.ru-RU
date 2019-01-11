@@ -2,12 +2,13 @@
 title: Список объектов deviceManagementTroubleshootingEvent
 description: Список свойств и связей объектов deviceManagementTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 7d159e6f851c1e3635a85be2ab123436e267493b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3ea9749fc67ef338c0b1ca20703208f3aee86a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885220"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>Список объектов deviceManagementTroubleshootingEvent
 
@@ -37,11 +38,11 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

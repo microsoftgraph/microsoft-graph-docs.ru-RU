@@ -2,12 +2,13 @@
 title: Перечисление объектов macOSCompliancePolicy
 description: Список свойств и связей объектов macOSCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 0e283b8a2540968cf6a10ef0ae9be740a32c9d71
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e6c32e5b9ee4f582168d30c8efa674becd4846f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327505"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888076"
 ---
 # <a name="list-macoscompliancepolicies"></a>Перечисление объектов macOSCompliancePolicy
 
@@ -35,11 +36,11 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

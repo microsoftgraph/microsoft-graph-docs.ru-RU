@@ -2,12 +2,13 @@
 title: Перечисление объектов settingStateDeviceSummary
 description: Список свойств и связей объектов settingStateDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: 5a18bb843e11eaf8d87ba9b6977cbd4f47e9d23b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 10ffa86bb266b4757a986174ee993eda156b6f0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882007"
 ---
 # <a name="list-settingstatedevicesummaries"></a>Перечисление объектов settingStateDeviceSummary
 
@@ -46,11 +47,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

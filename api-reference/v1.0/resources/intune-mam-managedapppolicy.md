@@ -2,12 +2,13 @@
 title: Тип ресурса managedAppPolicy
 description: Ресурс ManagedAppPolicy представляет базовый тип политик для определенных платформ.
 author: tfitzmac
-ms.openlocfilehash: b1efe085bc2fc43804049ff4b091e10c458b9a98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5766e3a467a157bac0d876fd0178dc3ba1cb94e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310551"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888083"
 ---
 # <a name="managedapppolicy-resource-type"></a>Тип ресурса managedAppPolicy
 

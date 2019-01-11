@@ -1,12 +1,13 @@
 ---
 title: Обзор синхронизации API Azure AD
 description: ') позволяет автоматизировать создания, обслуживания и удаления удостоверений в облако (программное обеспечение как службы или SaaS) приложениями, такими как общего банка данных, Salesforce, ServiceNow и многое другое. API синхронизации можно использовать в Microsoft Graph для управления синхронизацией identity программным путем, включая:'
-ms.openlocfilehash: ff3acb00801c9b04b8257345b06100297e11710c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aada94f39c67fb1174924d49c6e57650f4961cc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884688"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Обзор синхронизации API Azure AD
 

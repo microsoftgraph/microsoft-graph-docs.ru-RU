@@ -2,12 +2,13 @@
 title: Действие requestRemoteAssistance
 description: Запрос удаленной помощи
 author: tfitzmac
-ms.openlocfilehash: 30d84f939fbd7d411bce21eca284d951f4c5cd43
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7e59caef391d7ed2ee97764d6ed74d14ef35643
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321485"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886716"
 ---
 # <a name="requestremoteassistance-action"></a>Действие requestRemoteAssistance
 
@@ -40,11 +41,11 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

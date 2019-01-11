@@ -2,12 +2,13 @@
 title: Create webApp
 description: Создание объекта webApp.
 author: tfitzmac
-ms.openlocfilehash: 75d26e735db898f6175aed3ce5999c3a47e6bcdb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e6ee095d9c162f8fe738716b4c966d6560d24dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343794"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882091"
 ---
 # <a name="create-webapp"></a>Create webApp
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

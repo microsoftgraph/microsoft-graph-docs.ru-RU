@@ -2,12 +2,13 @@
 title: Тип перечисления androidWiFiSecurityType
 description: Типы безопасности Wi-Fi для Android.
 author: tfitzmac
-ms.openlocfilehash: 3f74f044b907e2bcbf398e7940188e0b26522a5a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a8dde9046e6774726486753d7e4e1420af8a05f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885665"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>Тип перечисления androidWiFiSecurityType
 

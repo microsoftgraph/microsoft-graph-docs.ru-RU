@@ -1,12 +1,13 @@
 ---
 title: Отчеты об активности в одноранговых сеансах Skype для бизнеса
 description: Подробные сведения можно получить в действии peer-to-peer внутри организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
-ms.openlocfilehash: c4f5397c31020d0fecd6e7cb68a3e39098349bb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 40ab1cc9f35de449ce5853b28c54606ceb089b22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882742"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Отчеты об активности в одноранговых сеансах Skype для бизнеса
 

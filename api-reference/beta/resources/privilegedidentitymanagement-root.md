@@ -1,12 +1,13 @@
 ---
 title: Управление удостоверениями привилегиями Azure AD
 description: Ниже приведен список методы, предоставляемые службой привилегированной управления удостоверениями.
-ms.openlocfilehash: ec060c4dc233677f1333e9588e4fb888f8dff9a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c1108711c96dd253f784a418a396ca30507c5f7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074603"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884065"
 ---
 # <a name="azure-ad-privileged-identity-management"></a>Управление удостоверениями привилегиями Azure AD
 
@@ -29,7 +30,7 @@ ms.locfileid: "27074603"
 |[Создание privilegedRoleAssignment](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Создайте новый privilegedRoleAssignment (назначение ролей), отправку сообщений в коллекцию privilegedRoleAssignments.|
 |[Список privilegedRoleAssignment](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) коллекции |Получите коллекцию объектов privilegedRoleAssignment. Коллекция содержит все назначения ролей для организации. Каждый privilegedRoleAssignment представляет назначения ролей для пользователя. |
 |[Получение privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md)|Получите объект privilegedRoleAssignment с идентификатором указанному назначению. |
-|[Удаление privilegedRoleAssignment](../api/privilegedroleassignment-delete.md) | Отсутствуют. |Удалите объект privilegedRoleAssignment. |
+|[Удаление privilegedRoleAssignment](../api/privilegedroleassignment-delete.md) | Нет. |Удалите объект privilegedRoleAssignment. |
 |[makePermanent](../api/privilegedroleassignment-makepermanent.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Сделайте как постоянное назначение ролей. |
 |[makeEligible](../api/privilegedroleassignment-makeeligible.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Сделайте назначения ролей как подходящими. |
 |[Мои](../api/privilegedroleassignment-my.md) | [privilegedRoleAssignment](privilegedroleassignment.md) коллекции|Получите запрашивающего назначения ролей. |

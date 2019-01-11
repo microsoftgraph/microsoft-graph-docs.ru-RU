@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipals: список ownedObjects'
 description: Получение списка объектов, владельцем которого servicePrincipal.  Это может включать приложения или групп.
-ms.openlocfilehash: 79ca70c5c86e535a7d8a11598509e7ebf61780a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f061a99c6389651985779ac71df2ced5a91ba527
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081023"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882868"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: список ownedObjects
 
@@ -36,7 +37,7 @@ GET /servicePrincipals/{id}/ownedObjects
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -53,8 +54,7 @@ GET /servicePrincipals/{id}/ownedObjects
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

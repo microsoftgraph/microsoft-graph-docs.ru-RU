@@ -2,12 +2,13 @@
 title: Тип ресурса appHostedMediaConfig
 description: Стек мультимедиа, размещенных в приложении.
 author: VinodRavichandran
-ms.openlocfilehash: b96d6ff836ab36e5561c9ba3958123178e2fbde9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 583964a6c7cd65ae4e8341f7fcba92d754916b36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884569"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>Тип ресурса appHostedMediaConfig
 
@@ -19,8 +20,8 @@ ms.locfileid: "27380130"
 
 | Свойство                          | Тип    | Описание                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| BLOB-объектов                              | String  | Blob конфигурации мультимедиа, созданные агентом смарт-мультимедиа.    |
-| removeFromDefaultAudioGroup       | Boolean | Удаление звук из группы по умолчанию звука                       |
+| BLOB-объектов                              | Строка  | Blob конфигурации мультимедиа, созданные агентом смарт-мультимедиа.    |
+| removeFromDefaultAudioGroup       | Логический | Удаление звук из группы по умолчанию звука                       |
 
 ## <a name="json-representation"></a>Представление JSON
 

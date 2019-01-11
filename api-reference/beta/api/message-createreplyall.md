@@ -1,12 +1,13 @@
 ---
 title: 'message: createReplyAll'
 description: 'Создание черновика сообщения ответить всем добавить примечание или обновить все свойства сообщения '
-ms.openlocfilehash: 85cdef106fcd84764fe0d5f86d24ecef6b6ed29e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d56f79b415232954434841d89cbdc95bafc1c6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078747"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816928"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -44,7 +45,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -83,8 +84,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

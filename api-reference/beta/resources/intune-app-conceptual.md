@@ -2,12 +2,13 @@
 title: Защита данных корпоративных приложений с помощью Microsoft Intune
 description: Политики защиты приложений в Microsoft Intune помогают защитить корпоративные данные и предотвратить потерю данных.
 author: tfitzmac
-ms.openlocfilehash: 3d3b9d5d6a9169146c5a6c1dd3ab0473f7eabf4f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a5c2b532474c2d9e9704bd076a6b65c9b1bc31a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318013"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886935"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 

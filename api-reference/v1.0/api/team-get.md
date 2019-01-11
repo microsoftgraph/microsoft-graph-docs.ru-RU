@@ -2,12 +2,13 @@
 title: Получение группы
 description: Извлечение свойств и связи из указанной группы.
 author: nkramer
-ms.openlocfilehash: e91140b50a1120667a3df579d0e20144de776e59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 3efec6e9b767d026d0a7626c2da257feaa20fde3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887082"
 ---
 # <a name="get-team"></a>Получение группы
 
@@ -41,7 +42,7 @@ GET /teams/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

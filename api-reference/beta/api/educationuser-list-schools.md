@@ -2,12 +2,13 @@
 title: Перечисление учебных заведений
 description: Получение списка учебных заведений для этого пользователя.
 author: mmast-msft
-ms.openlocfilehash: 35810f4b1928249576ac1216356701489f68feca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dfe2e48d0246e30d93bebd019c4b7f81ae788e66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883503"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -40,7 +41,7 @@ GET /education/users/{id}/schools
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationSchool](../resources/educationschool.md) в теле отклика.

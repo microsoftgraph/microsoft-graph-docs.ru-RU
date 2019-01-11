@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса governanceRoleAssignmentRequest
 description: Представляет запрос для операций назначения роли управления удостоверениями Privilegd.
-ms.openlocfilehash: b3f3c7b3ec324b9b3df24cc0c53eaa6d1cda7a4c
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 036e44a34d3c5373bcedba305eba6bd686c28601
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885094"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>Тип ресурса governanceRoleAssignmentRequest
 

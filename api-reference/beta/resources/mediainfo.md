@@ -2,12 +2,13 @@
 title: Тип ресурса mediaInfo
 description: Запрашивает сведения о мультимедиа, используемые в действиях для.
 author: VinodRavichandran
-ms.openlocfilehash: ea2eaa9e8e85da737df4c0c0170457fb3350820b
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 6fe2c49e86bac9d5961310694b21e9439a4896ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885605"
 ---
 # <a name="mediainfo-resource-type"></a>Тип ресурса mediaInfo
 
@@ -19,7 +20,7 @@ ms.locfileid: "27380277"
 | Свойство       | Тип    | Описание                      |
 |:---------------|:--------|:---------------------------------|
 | resourceId     | String  | Уникальный идентификатор ресурса. |
-| URI            | String  | Путь к ресурсу.            |
+| URI            | Строка  | Путь к ресурсу.            |
 
 ## <a name="json-representation"></a>Представление JSON
 

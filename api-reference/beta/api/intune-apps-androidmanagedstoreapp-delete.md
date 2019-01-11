@@ -2,12 +2,13 @@
 title: Удаление androidManagedStoreApp
 description: Удаляет androidManagedStoreApp.
 author: tfitzmac
-ms.openlocfilehash: bb45432e2e81991de77fb6ed9f799c5a5ecb9d28
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2802dbd8fea878d39827545029f625e1647d767
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883106"
 ---
 # <a name="delete-androidmanagedstoreapp"></a>Удаление androidManagedStoreApp
 
@@ -39,11 +40,11 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

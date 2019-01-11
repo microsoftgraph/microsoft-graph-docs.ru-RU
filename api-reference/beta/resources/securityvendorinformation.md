@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса securityVendorInformation
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 4016e274a82ad6a28101dbf5b053124b439a3cbf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 34e565a69f716f0d167240ab753e5d192758508a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080568"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884387"
 ---
 # <a name="securityvendorinformation-resource-type"></a>Тип ресурса securityVendorInformation
 
@@ -16,12 +17,12 @@ ms.locfileid: "27080568"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство   | Тип|Description|
+| Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|Поставщик |String|Определенного поставщика (продуктов и услуг - не поставщика организации); Например WindowsDefenderATP.|
-|providerVersion|String|Версия поставщика или subprovider, если он существует, создавшее оповещение. *Required*|
-|subProvider|String|Определенные subprovider (в разделе статистической обработки поставщика); Например WindowsDefenderATP.SmartScreen.|
-|поставщика |String|Имя оповещения поставщика (например, Microsoft, Dell, FireEye). *Required*|
+|Поставщик |Строка|Определенного поставщика (продуктов и услуг - не поставщика организации); Например WindowsDefenderATP.|
+|providerVersion|Строка|Версия поставщика или subprovider, если он существует, создавшее оповещение. *Required*|
+|subProvider|Строка|Определенные subprovider (в разделе статистической обработки поставщика); Например WindowsDefenderATP.SmartScreen.|
+|поставщика |Строка|Имя оповещения поставщика (например, Microsoft, Dell, FireEye). *Required*|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса androidForWorkAppConfigurationSchema
 description: Схема, описывающая пользовательские конфигурации приложения Android for Work.
-ms.openlocfilehash: f555c7e1b9c62024531f4c4fc57a3fd3df3336fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fecb4c3983254643704e6c5966212272f8f1d65e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882896"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>Тип ресурса androidForWorkAppConfigurationSchema
 
@@ -28,7 +29,7 @@ ms.locfileid: "27075442"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
-|exampleJson|Двоичный|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
+|exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
 |schemaItems|Коллекция [androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме|
 
 ## <a name="relationships"></a>Связи

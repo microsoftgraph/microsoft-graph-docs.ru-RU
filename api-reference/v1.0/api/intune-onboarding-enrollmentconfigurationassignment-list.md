@@ -2,12 +2,13 @@
 title: Список объектов enrollmentConfigurationAssignment
 description: Список свойств и связей объектов enrollmentConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: d266cb9782e8be4e7e99fd10eef18680adbf4e40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8800bce134225e226890a812cacbae879d68220c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885360"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>Список объектов enrollmentConfigurationAssignment
 
@@ -35,11 +36,11 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

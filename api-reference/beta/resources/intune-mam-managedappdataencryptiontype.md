@@ -2,12 +2,13 @@
 title: Тип перечисления managedAppDataEncryptionType
 description: Представляет уровень, на который приложение шифрование для управляемых приложений
 author: tfitzmac
-ms.openlocfilehash: 6bd23f6cd590724c2c981ddf2c3087ead4c21817
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2c494b6822a2a85cd4a3d295ac70b80efffcd10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326119"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885948"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>Тип перечисления managedAppDataEncryptionType
 

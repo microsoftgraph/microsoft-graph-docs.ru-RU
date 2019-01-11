@@ -2,12 +2,13 @@
 title: Получение объекта deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Чтение свойств и связей объекта deviceEnrollmentWindowsHelloForBusinessConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a5ee2052854582c6892f6609647207fbe9d9c358
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8152ad5a578c210214aa26508b31efcc7d96baef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361203"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882273"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Получение объекта deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -39,11 +40,11 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
