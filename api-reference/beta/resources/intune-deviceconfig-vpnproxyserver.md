@@ -2,12 +2,13 @@
 title: Тип ресурса vpnProxyServer
 description: VPN-сервер прокси-сервера.
 author: tfitzmac
-ms.openlocfilehash: f622d476e041fd89a639c14113e273a16aca992f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b4842444bc248e51e1967fcbef4a863ed50498c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867678"
 ---
 # <a name="vpnproxyserver-resource-type"></a>Тип ресурса vpnProxyServer
 
@@ -19,7 +20,7 @@ VPN-сервер прокси-сервера.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|String.|Прокси-Автоматическая настройка сценария URL-адрес.|
+|automaticConfigurationScriptUrl|Строка|Прокси-Автоматическая настройка сценария URL-адрес.|
 |address|String|Адрес.|
 |port|Int32|Порт. Допустимые значения от 0 до 65535|
 

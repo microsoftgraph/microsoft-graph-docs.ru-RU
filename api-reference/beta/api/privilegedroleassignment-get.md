@@ -1,12 +1,13 @@
 ---
 title: Получение privilegedRoleAssignment
 description: Извлечение свойств и связи объекта privilegedRoleAssignment.
-ms.openlocfilehash: ad8815842698be0ef6a3eef37dc3e26f7dc11dbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 12dd2587dc024deff48f678d44df4e2c876f02ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861378"
 ---
 # <a name="get-privilegedroleassignment"></a>Получение privilegedRoleAssignment
 
@@ -37,7 +38,7 @@ GET /privilegedRoleAssignments/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -56,8 +57,7 @@ GET /privilegedRoleAssignments/{id}
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

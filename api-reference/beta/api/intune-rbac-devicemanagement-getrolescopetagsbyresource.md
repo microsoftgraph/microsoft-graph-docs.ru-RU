@@ -2,12 +2,13 @@
 title: функция getRoleScopeTagsByResource
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 5fc5592927d51a8f153d02d74834aeefdb449604
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b357259388ab9fde459686ad4832f845853fbc0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313547"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868063"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>функция getRoleScopeTagsByResource
 
@@ -37,11 +38,11 @@ GET /deviceManagement/getRoleScopeTagsByResource
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 

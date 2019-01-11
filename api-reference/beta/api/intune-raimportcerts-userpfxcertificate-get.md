@@ -2,12 +2,13 @@
 title: Получение userPFXCertificate
 description: Чтение свойства и связи объекта userPFXCertificate.
 author: tfitzmac
-ms.openlocfilehash: 19dd8ac9216585857524419d3da03a7f9784adb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 044ee2b822420d0996c8191438801557857b52cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862575"
 ---
 # <a name="get-userpfxcertificate"></a>Получение userPFXCertificate
 
@@ -39,11 +40,11 @@ GET /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

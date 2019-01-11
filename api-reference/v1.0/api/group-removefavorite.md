@@ -1,12 +1,13 @@
 ---
 title: 'group: removeFavorite'
 description: Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для Групп Office 365.
-ms.openlocfilehash: d599b0057e12acadcae7b8c74709bdad6651cdc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f35f11e5c2a0cc011c522952bda99fc431d53d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026303"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865578"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для Групп Office 365.

@@ -2,12 +2,13 @@
 title: Создание intuneBrandingProfile
 description: Создание нового объекта intuneBrandingProfile.
 author: tfitzmac
-ms.openlocfilehash: 4058e30fe858c261a59b105652d198946b630222
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e8ec4990b333d18dd761772627665c5ecb04179
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314877"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862022"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание intuneBrandingProfile
 
@@ -37,11 +38,11 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта intuneBrandingProfile.
 
 В следующей таблице показаны свойства, которые необходимы для создания intuneBrandingProfile.
@@ -49,9 +50,9 @@ POST /deviceManagement/intuneBrandingProfiles
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Клавиша профилей|
-|Имя_профиля|String.|Имя профиля|
-|profileDescription|String.|Описание профиля|
-|isDefaultProfile|Boolean.|Представляет при использовании профиля по умолчанию.|
+|Имя_профиля|Строка|Имя профиля|
+|profileDescription|Строка|Описание профиля|
+|isDefaultProfile|Логический|Представляет при использовании профиля по умолчанию.|
 |createdDateTime|DateTimeOffset|При создании BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile.|
 |displayName|String|Название компании или организации, которое отображается пользователям.|

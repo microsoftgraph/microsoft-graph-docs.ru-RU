@@ -2,12 +2,13 @@
 title: Список рядов
 description: Получение списка объектов chartseries.
 author: lumine2008
-ms.openlocfilehash: 6c623a939a760dd0128a5c60ab752ad67415a0d7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 29283563b9c939dfe0309943b6173e4b992a312a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865991"
 ---
 # <a name="list-series"></a>Список рядов
 
@@ -37,7 +38,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/series
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

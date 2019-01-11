@@ -2,12 +2,13 @@
 title: Получение объекта ChartSeries
 description: Получение свойств и связей объекта chartseries.
 author: lumine2008
-ms.openlocfilehash: a45365cc863efc1810f37f01623180af152272f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 980e95bc02ce9ff5d71fd5c84c234b93e42e4349
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866866"
 ---
 # <a name="get-chartseries"></a>Получение объекта ChartSeries
 
@@ -37,7 +38,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

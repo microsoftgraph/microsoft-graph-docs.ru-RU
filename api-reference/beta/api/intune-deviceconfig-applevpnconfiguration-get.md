@@ -2,12 +2,13 @@
 title: Получение appleVpnConfiguration
 description: Чтение свойства и связи объекта appleVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 0a3b9b82adfef4ce3deb3ce267e7993153571fdf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e4ce8cc77eac328effccf9b89a8a9923ea6d48e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863611"
 ---
 # <a name="get-applevpnconfiguration"></a>Получение appleVpnConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

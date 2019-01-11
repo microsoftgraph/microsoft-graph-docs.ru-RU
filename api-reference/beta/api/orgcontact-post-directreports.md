@@ -1,12 +1,13 @@
 ---
 title: Создание directReport
 description: Используйте этот интерфейс API для создания нового directReport.
-ms.openlocfilehash: e99c2dcbc2a75e19f298a6bf2e655f302ca9137e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8119ea6972f1ea5b4e94e68ff4acd0dc8771c99f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082713"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862561"
 ---
 # <a name="create-directreport"></a>Создание directReport
 
@@ -59,8 +60,7 @@ Content-length: 30
 ```
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

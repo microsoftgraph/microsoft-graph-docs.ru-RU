@@ -1,12 +1,13 @@
 ---
 title: Удаление historyItem
 description: Удаление существующего элемента журнала для существующего действия пользователя.
-ms.openlocfilehash: 231a5dd1ffdeb09dab2ad08346b0202a1fe3d8fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3476aba19a2de09f5b4c168ab2a4075b74fd2a93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861924"
 ---
 # <a name="delete-a-historyitem"></a>Удаление historyItem
 
@@ -37,7 +38,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Нет текста запроса.
 

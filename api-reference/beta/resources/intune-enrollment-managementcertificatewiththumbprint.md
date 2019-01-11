@@ -2,12 +2,13 @@
 title: Тип ресурса managementCertificateWithThumbprint
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 03846890822cae02a2eb04fc058895992119c98a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d8f18e7fc117f00f99346267f544abc7d12db17e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827218"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>Тип ресурса managementCertificateWithThumbprint
 
@@ -19,7 +20,7 @@ ms.locfileid: "27348939"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|отпечаток|String.|Отпечаток сертификата, управление|
+|отпечаток|Строка|Отпечаток сертификата, управление|
 |certificate|String|Управление сертификат кодировке Base 64|
 
 ## <a name="relationships"></a>Связи

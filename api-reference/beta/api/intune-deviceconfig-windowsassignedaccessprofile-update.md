@@ -2,12 +2,13 @@
 title: Обновление windowsAssignedAccessProfile
 description: Обновление свойства объекта windowsAssignedAccessProfile.
 author: tfitzmac
-ms.openlocfilehash: 84cbc1aaaebf9383c3d113d7f309c61de0cdeb67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bfa70208a456d7b7d2a2d0ae524d9edd9508cab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331362"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867048"
 ---
 # <a name="update-windowsassignedaccessprofile"></a>Обновление windowsAssignedAccessProfile
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md).
@@ -49,8 +50,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Имя_профиля|String.|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
-|showTaskBar|Boolean.|Этот параметр позволяет администратору задать, отображается ли панель задач.|
+|Имя_профиля|Строка|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
+|showTaskBar|Логический|Этот параметр позволяет администратору задать, отображается ли панель задач.|
 |appUserModelIds|Коллекция String|Это единственный приложений для магазина Windows, чтобы оно было доступно для запуска в меню Пуск.|
 |desktopAppPaths|Коллекция String|Ниже приведены пути в настольных приложений, которые будут доступны в меню Пуск и только приложения пользователь будет иметь возможность запуска.|
 |userAccounts|Коллекция String|Учетные записи пользователей, которые будут заблокированы для этой базовой конфигурации.|

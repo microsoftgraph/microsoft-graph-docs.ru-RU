@@ -1,12 +1,13 @@
 ---
 title: Получение governanceRoleDefinition
 description: Извлечение свойств и отношения governanceRoleDefinition.
-ms.openlocfilehash: da6f81c57d8070a977482a81f8f2211b85ab0f97
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 99f19e1942c198259d9df7dd6e0f9e5a7685bc09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865067"
 ---
 # <a name="get-governanceroledefinition"></a>Получение governanceRoleDefinition
 
@@ -21,7 +22,7 @@ ms.locfileid: "27081418"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
 
 Помимо области разрешений этот интерфейс API требует инициатор запроса может иметь по крайней мере одно назначение роли на ресурс, который принадлежит [governanceRoleDefinition](../resources/governanceroledefinition.md) .
 
@@ -40,7 +41,7 @@ GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+
 | Authorization  | Bearer {code}|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [governanceRoleDefinition](../resources/governanceroledefinition.md) и кода ответа в теле ответа.

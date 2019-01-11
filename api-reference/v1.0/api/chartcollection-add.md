@@ -2,12 +2,13 @@
 title: 'ChartCollection: add'
 description: Создает диаграмму.
 author: lumine2008
-ms.openlocfilehash: bfae5968c6a1131cb58bda80bd2587a68047bed9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4aa1a017da88fdd06b8e396130d5b09fbbeaebb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332958"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867944"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -33,7 +34,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

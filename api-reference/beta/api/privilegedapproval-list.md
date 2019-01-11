@@ -1,12 +1,13 @@
 ---
 title: Список privilegedApproval
 description: Получение списка объектов privilegedapproval.
-ms.openlocfilehash: 35b3e2cf6b4034731c8ddf9d1af41e129acbfe3f
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 1b444c255a8cd89abad3b23ba69379db37a31bf2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866775"
 ---
 # <a name="list-privilegedapproval"></a>Список privilegedApproval
 

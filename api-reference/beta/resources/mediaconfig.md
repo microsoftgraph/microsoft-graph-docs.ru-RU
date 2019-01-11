@@ -2,12 +2,13 @@
 title: Тип ресурса mediaConfig
 description: Конфигурация мультимедиа, используемый для подключения к звонку.
 author: VinodRavichandran
-ms.openlocfilehash: 1b68d9236ba78ae1a83228b3382c96fc81516d1f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ec76adf2d3a508ebe2518ed0010a1c653daca546
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867350"
 ---
 # <a name="mediaconfig-resource-type"></a>Тип ресурса mediaConfig
 
@@ -19,7 +20,7 @@ ms.locfileid: "27380263"
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| removeFromDefaultAudioGroup | Логический |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,12 +2,13 @@
 title: Список опубликованных приложений из каталога приложений группами Майкрософт
 description: 'Список приложений из каталога приложений группами Майкрософт. '
 author: nkramer
-ms.openlocfilehash: 77867d5b75721fcb169da6ad6a8ff39c46de196e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4cd3d8d66caa384a064711987f4fcd7473083089
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863457"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Список опубликованных приложений из каталога приложений группами Майкрософт
 
@@ -42,8 +43,8 @@ GET /appCatalogs/teamsApps
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
-Отсутствуют.
+## <a name="request-body"></a>Тело запроса
+Нет.
 
 >**Примечание:** Можно отфильтровать поля объекта [teamsCatalogApp](../resources/teamsapp.md) для сокращения списка результатов. Можно использовать любой из следующих операций фильтра: равно, не равно и, или, а не.
 

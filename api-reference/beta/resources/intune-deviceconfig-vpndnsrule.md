@@ -2,12 +2,13 @@
 title: Тип ресурса vpnDnsRule
 description: Определение правила DNS VPN.
 author: tfitzmac
-ms.openlocfilehash: 7be94c48dafd4352938ac2c63ab1af66c65ea098
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d09e26b105a139f04db34ba69184fcf60e9ef238
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351165"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868203"
 ---
 # <a name="vpndnsrule-resource-type"></a>Тип ресурса vpnDnsRule
 
@@ -21,7 +22,7 @@ ms.locfileid: "27351165"
 |:---|:---|:---|
 |name|Строка|Имя.|
 |серверы|Коллекция String|Серверы.|
-|proxyServerUri|String.|Uri сервера прокси-сервера.|
+|proxyServerUri|Строка|Uri сервера прокси-сервера.|
 
 ## <a name="relationships"></a>Связи
 Нет

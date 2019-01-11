@@ -2,12 +2,13 @@
 title: Тип перечисления applicationType
 description: Возможные типы приложений
 author: tfitzmac
-ms.openlocfilehash: 0485e6642ed4b4df68442f7a2dd840c047d6308f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed3c54798b7f65b5d580db0dde5812afec727892
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862547"
 ---
 # <a name="applicationtype-enum-type"></a>Тип перечисления applicationType
 

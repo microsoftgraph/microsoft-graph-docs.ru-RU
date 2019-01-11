@@ -2,12 +2,13 @@
 title: Тип ресурса managedApp
 description: Абстрактный класс содержит свойства, в том числе унаследованные, для приложений, которыми вы можете управлять с помощью политики защиты приложений Intune.
 author: tfitzmac
-ms.openlocfilehash: 6a53732f1518765e73c94366eefe874611121ae6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3390671b67366cfea52ffa0c8442c3b2857d1471
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309928"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862967"
 ---
 # <a name="managedapp-resource-type"></a>Тип ресурса managedApp
 

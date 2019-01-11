@@ -2,12 +2,13 @@
 title: Получение advancedThreatProtectionOnboardingStateSummary
 description: Чтение свойства и связи объекта advancedThreatProtectionOnboardingStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 51cfc20a38e1b594b3fd983b481cf124e9e88455
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b298ddb0f8f1e82283902c2385d5fbce2b5f2e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863660"
 ---
 # <a name="get-advancedthreatprotectiononboardingstatesummary"></a>Получение advancedThreatProtectionOnboardingStateSummary
 
@@ -39,11 +40,11 @@ GET /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

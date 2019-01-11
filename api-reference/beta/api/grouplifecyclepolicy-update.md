@@ -2,12 +2,13 @@
 title: Update groupLifecyclePolicy
 description: Обновляет свойства объекта groupLifecyclePolicyтип ресурса groupLifecyclePolicy.
 author: dkershaw10
-ms.openlocfilehash: 6977bb53a1b885ee65f110238727d4db0c212391
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c428e2d513c359b2b59a7cbb3883458b450ac429
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303621"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864913"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Update groupLifecyclePolicy
 
@@ -37,7 +38,7 @@ PATCH /groupLifecyclePolicies/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 

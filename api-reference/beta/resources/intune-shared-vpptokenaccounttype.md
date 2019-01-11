@@ -2,12 +2,13 @@
 title: Тип перечисления vppTokenAccountType
 description: Возможные типы маркер покупки программы корпоративного Apple.
 author: tfitzmac
-ms.openlocfilehash: f4f7caa3deaf11aaa9fe02935b32bbe3e1a0e9e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d17c4555b46e1251780a90db5e6935bbb865c40a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861448"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>Тип перечисления vppTokenAccountType
 

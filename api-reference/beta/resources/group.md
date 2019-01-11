@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса group
 description: Представляет группу Azure Active Directory (Azure AD), который может быть группы с Office 365, группе в группами Майкрософт, динамические группы или группы безопасности.
-ms.openlocfilehash: d48448991b75946f9ac60a037fee3b083601954a
-ms.sourcegitcommit: 5747eb595bf0c7c391b2a5219c3ae9b6a48df26b
+localization_priority: Priority
+ms.openlocfilehash: 928eb9887665b117535bcf4fa13cf6a95b8ff283
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "27265236"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866894"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -107,22 +108,22 @@ ms.locfileid: "27265236"
 |groupTypes|Коллекция String| Указывает тип создаваемой группы. Возможные значения: `Unified` Создание группы Office 365, или `DynamicMembership` для динамических групп.  Для всех других группы типов, таких как группы с включенной поддержкой безопасности и групп безопасности с включенной поддержкой электронной почты, это свойство не задано.|
 |id|String|Уникальный идентификатор группы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
 |isSubscribedByMail|Boolean|Значение по умолчанию: **true**. Указывает, подписан ли текущий пользователь на получение бесед по электронной почте.|
-|licenseProcessingState|String.|Указывает состояние лицензии назначения группы всем членам группы. Только для чтения. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress`, и `ProcessingComplete`.|
+|licenseProcessingState|Строка|Указывает состояние лицензии назначения группы всем членам группы. Только для чтения. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress`, и `ProcessingComplete`.|
 |mail|String|SMTP-адрес группы, например "serviceadmins@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.|
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. Если для свойства **securityEnabled** также задано значение **true**, это группа безопасности с включенной поддержкой почты. В противном случае это группа рассылки Microsoft Exchange.|
 |mailNickname|String|Почтовый псевдоним для группы, уникальный в организации. Это свойство должно быть указано при создании группы. Поддерживает параметр $filter.|
-|membershipRule|String.|Правило, которое определяет элементы для этой группы, если группа является динамическая группа (содержит groupTypes `DynamicMembership`). Дополнительные сведения о синтаксисе правила членства можно [Синтаксис правила](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
-|membershipRuleProcessingState|String.|Указывает, находится на обработку динамическое членство или приостановлено. Возможные значения: «На» или «Приостановлено»|
+|membershipRule|Строка|Правило, которое определяет элементы для этой группы, если группа является динамическая группа (содержит groupTypes `DynamicMembership`). Дополнительные сведения о синтаксисе правила членства можно [Синтаксис правила](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
+|membershipRuleProcessingState|Строка|Указывает, находится на обработку динамическое членство или приостановлено. Возможные значения: «На» или «Приостановлено»|
 |onPremisesLastSyncDateTime|DateTimeOffset|Указывает время последнего, в котором объект был синхронизирован с локального каталога. Тип метки времени представляет сведения даты и времени с использованием формата ISO 8601 и — это всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Поддерживает параметр $filter.|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) коллекции| Ошибки при использовании продуктов Майкрософт синхронизации во время подготовки. |
 |onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) для локальной группы, синхронизированной с облаком. Только для чтения. |
 |onPremisesSyncEnabled|Boolean|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. Поддерживает параметр $filter.|
-|preferredDataLocation|String.|Расположение предпочитаемый данных для группы. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|preferredDataLocation|Строка|Расположение предпочитаемый данных для группы. Для получения дополнительных сведений см [OneDrive Online Multi-географически](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|Предпочитаемый язык для группы с Office 365. Необходимо соблюдать код ISO 639-1; Например, «en US».|
 |proxyAddresses|Коллекция String| Например: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` **любой** оператор для фильтра выражений на многозначные свойства. Только для чтения. Значение NULL не допускается. Поддерживает параметр $filter. |
 |renewedDateTime|DateTimeOffset| Метка времени последнего обновления группы. Не может изменяться непосредственно. Обновляется только при выполнении [действия обновления](../api/grouplifecyclepolicy-renewgroup.md). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |securityEnabled|Логическое|Указывает, является ли эта группа группой безопасности. Если для свойства **mailEnabled** также задано значение true, это группа безопасности с включенной поддержкой почты. В противном случае это обычная группа безопасности. Для групп Office 365 должно быть задано значение **false**. Поддерживает параметр $filter.|
-|темы|String.|Указывает группу Office 365 цвета темы. Возможные значения: `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` или `Red`.|
+|темы|Строка|Указывает группу Office 365 цвета темы. Возможные значения: `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` или `Red`.|
 |unseenConversationsCount|Int32|Количество бесед, которые были доставлены один или несколько новых сообщений с момента последнего посетить пользователь выполнил вход в группу. Это свойство соответствует **unseenCount**.|
 |unseenCount|Int32|Количество бесед, которые были доставлены один или несколько новых сообщений с момента последнего посетить пользователь выполнил вход в группу. Это свойство соответствует **unseenConversationsCount**.|
 |unseenMessagesCount|Int32|Количество новых сообщений, которые были доставлены групповой беседы с момента последнего посетить пользователь выполнил вход в группу.|

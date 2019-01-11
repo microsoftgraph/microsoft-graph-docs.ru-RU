@@ -2,12 +2,13 @@
 title: Удаление объекта directoryObject
 description: Удалите directoryObject.
 author: lleonard-msft
-ms.openlocfilehash: f53ffc488529c2af4b566ada52f213d1fc132c60
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e291004f13eaf6d0f24750002c8068d3e97b3052
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865206"
 ---
 # <a name="delete-directoryobject"></a>Удаление объекта directoryObject
 
@@ -36,7 +37,7 @@ DELETE /directoryObjects/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

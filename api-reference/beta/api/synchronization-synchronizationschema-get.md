@@ -1,12 +1,13 @@
 ---
 title: Получение synchronizationSchema
 description: Получение схемы для задания синхронизации или шаблона.
-ms.openlocfilehash: 93624a334c928b6402851ebc566e6e29e341ca1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 768a35940593231bbc4fbd4c3f5498c7eb3243fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076404"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863471"
 ---
 # <a name="get-synchronizationschema"></a>Получение synchronizationSchema
 
@@ -37,7 +38,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

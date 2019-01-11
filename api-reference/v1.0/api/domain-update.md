@@ -2,12 +2,13 @@
 title: Обновление домена
 description: Обновление свойств объекта домена.
 author: lleonard-msft
-ms.openlocfilehash: d1ba59d345f172f1485dda628585fe8de549ee1d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 07e1e78a43902b846e070523802eeb128217f953
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861413"
 ---
 # <a name="update-domain"></a>Обновление домена
 
@@ -41,7 +42,7 @@ PATCH /domains/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.
 

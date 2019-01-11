@@ -1,12 +1,13 @@
 ---
 title: 'Range: clear'
 description: Очищает формат, заливку, границу, значения диапазона и т. д.
-ms.openlocfilehash: c4a320827031eed62727ef464551cd410d71b610
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8bf7bafd42947528c98a83819afd7b16f49d2e7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027461"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861917"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -34,7 +35,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

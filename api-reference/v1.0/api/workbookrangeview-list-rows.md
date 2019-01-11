@@ -2,12 +2,13 @@
 title: Получение списка строк rangeView
 description: Получение списка, который включает в себя объекты видимых ячеек в диапазоне.
 author: lumine2008
-ms.openlocfilehash: eabcc8742785264a26f1a1922fea7741a5fc99a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9116c20c3c248c1d689e71a7d08bf0c3188a95ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861301"
 ---
 # <a name="list-rangeview-rows"></a>Получение списка строк rangeView
 
@@ -37,7 +38,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ### <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [workbookRangeView](../resources/workbookrangeview.md) в теле отклика.

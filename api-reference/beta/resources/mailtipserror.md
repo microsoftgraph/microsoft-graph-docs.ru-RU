@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса mailTipsError
 description: Ошибка, возникающая во время действия.
-ms.openlocfilehash: 94ab795d5cb12c2ff8490806326968d363e1a761
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7df13bb45471d89fdf25b4a251e441bbf2dfad9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865626"
 ---
 # <a name="mailtipserror-resource-type"></a>Тип ресурса mailTipsError
 
@@ -15,10 +16,10 @@ ms.locfileid: "27081353"
 Ошибка, возникающая во время действия.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:-----|:-----|:-----|
 | message | String | Сообщение об ошибке. |
-| code | String | Код ошибки. |
+| code | Строка | Код ошибки. |
 
 ## <a name="json-representation"></a>Представление JSON
 

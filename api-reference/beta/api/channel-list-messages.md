@@ -1,12 +1,13 @@
 ---
 title: Список сообщения
 description: 'Получаете список сообщений в канале команды (без ответов). Чтобы получить ответы на сообщения, вызовите ответов сообщения списка или ответе на сообщение get API. '
-ms.openlocfilehash: b53b2616e88a07aa8f870304111680c4e842ef1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c972b84b0ec4de9389f8a0e861cafb74d7b23020
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867097"
 ---
 # <a name="list-channel-messages"></a>Список сообщения
 
@@ -37,7 +38,7 @@ GET /teams/{id}/channels/{id}/messages
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

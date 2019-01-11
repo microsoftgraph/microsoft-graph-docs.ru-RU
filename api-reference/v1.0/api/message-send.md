@@ -1,12 +1,13 @@
 ---
 title: 'message: send'
 description: Отправьте сообщение в папке «Черновики». Черновик сообщения могут быть новый черновик сообщения, ответ черновиков, ответить всем черновиков или
-ms.openlocfilehash: 8fe04db6a7fe4a469374cd54a00f308e01341274
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: cd98c4965f7eee3e53fc24bad551a1b14e8c7521
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867447"
 ---
 # <a name="message-send"></a>message: send
 
@@ -36,9 +37,9 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Length | number | 0. требуется. |
+| Content-Length | число | 0. требуется. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

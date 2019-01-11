@@ -1,12 +1,13 @@
 ---
 title: Список directReports
 description: Получение подчиненных пользователя. Возвращает пользователей и контакты, для которых данный пользователь назначен руководителем.
-ms.openlocfilehash: 33903aa45fb5f7550feba72d0db48da389dd8c82
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9a5a76b98dfd47d9a0d1d4daceeb6a93c4dc5163
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863436"
 ---
 # <a name="list-directreports"></a>Список directReports
 
@@ -35,7 +36,7 @@ GET /users/{id | userPrincipalName}/directReports
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -52,8 +53,7 @@ GET /users/{id | userPrincipalName}/directReports
 GET https://graph.microsoft.com/beta/me/directReports
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

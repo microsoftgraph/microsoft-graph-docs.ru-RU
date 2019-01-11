@@ -1,12 +1,13 @@
 ---
 title: Список объектов mailFolder
 description: Получите все почтовые папки в почтовом ящике пользователь выполнил вход.
-ms.openlocfilehash: c93c870447e2414dfbdeb4e248f65c3aa5e0a4a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dca8b39b9685a0744a4b1ba0c1de148ed8987436
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866747"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -36,7 +37,7 @@ GET /users/{id | userPrincipalName}/mailFolders
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -53,8 +54,7 @@ GET /users/{id | userPrincipalName}/mailFolders
 GET https://graph.microsoft.com/beta/me/mailFolders
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

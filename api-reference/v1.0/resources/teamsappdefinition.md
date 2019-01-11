@@ -2,12 +2,13 @@
 title: Тип ресурса teamsAppDefinition
 description: Подробные сведения о одной версии teamsApp.
 author: nkramer
-ms.openlocfilehash: 43bd4262008a29668739e78d4b598da1e77e3d4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8fafb266b2bfc2c7ea6e0951ac2906f133817246
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351641"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860979"
 ---
 # <a name="teamsappdefinition-resource-type"></a>Тип ресурса teamsAppDefinition
 

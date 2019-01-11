@@ -2,12 +2,13 @@
 title: Список androidForWorkVpnConfigurations
 description: Свойства списка и связей объектов androidForWorkVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: ca56e8033563166f80aa5e364f716b9bc4c38c0b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 81816923c27d604b9002c49e88ed573a4e126713
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817502"
 ---
 # <a name="list-androidforworkvpnconfigurations"></a>Список androidForWorkVpnConfigurations
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

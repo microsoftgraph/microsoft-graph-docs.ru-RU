@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationAssignmentPointsGradeType
 description: Используется совместно со свойством **assignments.grading** . Это подкласс educationAssignmentGradeType.
-ms.openlocfilehash: 5c170540e99003a78df0550d4d6542c07df8f1ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f00014eab1dbf7bc8eb78a8898c6abba9977e8a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081821"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860972"
 ---
 # <a name="educationassignmentpointsgradetype-resource-type"></a>Тип ресурса educationAssignmentPointsGradeType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27081821"
 Это означает, что назначения выражаемым числом и сохраняет максимальное число пунктов, которые можно достичь каждого студента на этот рабочий элемент. Если это назначения, каждой отправки будет [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) свойства, связанного с ним для хранения каждого студента точек.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |maxPoints|Single| Максимальное число точек можно для данного назначения.  |
 

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса eventMessage
 description: Сообщение, которое представляет собой приглашение на собрание, уведомление об отмене или ответ (принятие, предварительное принятие или отклонение).
-ms.openlocfilehash: c93f642d80fec8514af6a80afd8c47cd82569cd9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 83a7c0fa48f48536b468afe5f5e4f22031be50e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028235"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862750"
 ---
 # <a name="eventmessage-resource-type"></a>Тип ресурса eventMessage
 
@@ -64,7 +65,7 @@ ms.locfileid: "27028235"
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
 |id|String|Уникальный идентификатор для сообщения события (Обратите внимание, что это значение может меняться сообщение при перемещении или изменено)|
 |importance|String| Важность сообщения: `low`, `normal`, `high`.|
-|inferenceClassification|String| Возможные значения: `focused`, `other`.|
+|inferenceClassification|Строка| Возможные значения: `focused`, `other`.|
 |internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, установленных по [RFC 5322](https://www.ietf.org/rfc/rfc5322.txt), которые содержат информацию о маршруте прохождения сообщения. Только для чтения.|
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Логическое|Указывает, запрашивается ли уведомление о прочтении сообщения.|

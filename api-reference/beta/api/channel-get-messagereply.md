@@ -2,12 +2,13 @@
 title: Получение ответа на сообщение канала
 description: Получение одного ответа на сообщение в канал группы.
 author: nkramer
-ms.openlocfilehash: 190bcd04adb07ccdeed83095e6a29b0bc1d23241
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f88345e5d3681b481e4d2fdd15c9201a3dd77c66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319280"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866005"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Получение ответа на сообщение канала
 
@@ -38,7 +39,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

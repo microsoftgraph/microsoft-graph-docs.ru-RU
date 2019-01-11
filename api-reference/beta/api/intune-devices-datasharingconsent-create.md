@@ -2,12 +2,13 @@
 title: Создание dataSharingConsent
 description: Создание нового объекта dataSharingConsent.
 author: tfitzmac
-ms.openlocfilehash: 07d76bbd92d2741571683bb7614b3336c10d9058
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf45db12a9876d9be89d20fa3328e89eeea82013
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862288"
 ---
 # <a name="create-datasharingconsent"></a>Создание dataSharingConsent
 
@@ -37,11 +38,11 @@ POST /deviceManagement/dataSharingConsents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта dataSharingConsent.
 
 В следующей таблице показаны свойства, которые необходимы для создания dataSharingConsent.
@@ -49,12 +50,12 @@ POST /deviceManagement/dataSharingConsents
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Разрешения общего доступа данных идентификатор|
-|Отображаемое_имя_службы|String.|Отображаемое имя службы рабочих процессов|
-|termsUrl|String.|TermsUrl для данных, общий доступ к согласия|
-|предоставлено|Boolean.|Предоставленные состояний для данных, общий доступ к согласия|
+|Отображаемое_имя_службы|Строка|Отображаемое имя службы рабочих процессов|
+|termsUrl|Строка|TermsUrl для данных, общий доступ к согласия|
+|предоставлено|Логический|Предоставленные состояний для данных, общий доступ к согласия|
 |grantDateTime|DateTimeOffset|Были предоставлены разрешения времени для этой учетной записи|
-|grantedByUpn|String.|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
-|grantedByUserId|String.|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
+|grantedByUpn|Строка|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
+|grantedByUserId|Строка|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
 
 
 

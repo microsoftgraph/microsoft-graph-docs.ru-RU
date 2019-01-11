@@ -1,19 +1,20 @@
 ---
 title: Тип ресурса dateTimeTimeZone
 description: Описывает дату, время и часовой пояс для определенного момента.
-ms.openlocfilehash: 3ce02fbf82dabbbe354b2672cfd950812ea0bd32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9bec62c21f97c58b915ecc40010f8030ea760825
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827330"
 ---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
 
 Описывает дату, время и часовой пояс для определенного момента.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |dateTime|String|Один момент времени в объединенном представлении даты и времени (`<date>T<time>`).|
 |timeZone|String|Один из указанных ниже часовых поясов.|

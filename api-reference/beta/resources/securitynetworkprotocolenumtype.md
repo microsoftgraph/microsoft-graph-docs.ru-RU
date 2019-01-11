@@ -1,12 +1,13 @@
 ---
 title: Перечисление securityNetworkProtocol
 description: Возможные значения для сетевого протокола.
-ms.openlocfilehash: f646ca152685f5ccb7344be2277877001a43c724
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5764da75dfdf4325bee2af0a1baa7e21ff2fdb46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078126"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866761"
 ---
 # <a name="securitynetworkprotocol-enum"></a>Перечисление securityNetworkProtocol
 
@@ -16,9 +17,9 @@ ms.locfileid: "27078126"
 
 ## <a name="members"></a>Элементы
 
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|-1|Неизвестный протокол.|
+|unknown|–1|Неизвестный протокол.|
 |IP-адресов|0|Протокол Интернета.|
 |ICMP|1| Протокол ICMP.|
 |IGMP|2| Протокол IGMP.|

@@ -2,12 +2,13 @@
 title: Тип ресурса deviceConfiguration
 description: Конфигурация устройства
 author: tfitzmac
-ms.openlocfilehash: 7d1c765ff643950947f23192969078dd12028c2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c789c114f422a6e541762fb33c311cfb75ffca85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315738"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865844"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Тип ресурса deviceConfiguration
 
@@ -32,7 +33,7 @@ ms.locfileid: "27315738"
 |id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности.|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения.|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |описание|Строка|Указанное администратором описание конфигурации устройства.|
 |displayName|Строка|Указанное администратором имя конфигурации устройства.|

@@ -1,12 +1,13 @@
 ---
 title: Получение группы
 description: Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.
-ms.openlocfilehash: 9a91f430f82ed4b5804958fa1045b76d5eff3c6f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9f84a1310fbc42d2f5e5a1b7e828dc90a71ab5fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866271"
 ---
 # <a name="get-group"></a>Вывод группы
 
@@ -35,7 +36,7 @@ GET /education/classes/{id}/group
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в теле отклика.

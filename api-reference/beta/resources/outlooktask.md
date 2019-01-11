@@ -2,12 +2,13 @@
 title: Тип ресурса outlookTask
 description: 'Элемент Outlook, можно отслеживать рабочего элемента. '
 author: angelgolfer-ms
-ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 71f649c0ef5fd23caafc9bcd3e35282287d35372
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335233"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865564"
 ---
 # <a name="outlooktask-resource-type"></a>Тип ресурса outlookTask
 
@@ -52,14 +53,14 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|String.|Имя пользователя, которому назначена задача.|
+|assignedTo|Строка|Имя пользователя, которому назначена задача.|
 |body|[itemBody](itembody.md)|Основная задача, который обычно содержит сведения о задаче. Обратите внимание на то, что поддерживается только тип HTML-код.|
 |categories|Коллекция String|Категории, связанные с задачей. Свойство **displayName** [outlookCategory](outlookcategory.md) , определяемые соответствует каждой категории.|
 |changeKey|Строка|Версия задачи.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанный часовой пояс, окончания задачи.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства используется формат ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанный часовой пояс, которую требуется завершения задачи.|
-|hasAttachments|Boolean|Значение true, если у задачи вложения.|
+|hasAttachments|Логический|Значение true, если у задачи вложения.|
 |id|Строка|Уникальный идентификатор задачи. Только для чтения.|
 |importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Значение true, если оповещение установлено значение Напоминать пользователю задачи.|

@@ -2,12 +2,13 @@
 title: Создание importedWindowsAutopilotDeviceIdentityUpload
 description: Создание нового объекта importedWindowsAutopilotDeviceIdentityUpload.
 author: tfitzmac
-ms.openlocfilehash: 16c3b83d81eb43362c3d2ffb091579efd6e5b598
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7c175b87258067fe4781316fe4287da9bdd1a66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861385"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>Создание importedWindowsAutopilotDeviceIdentityUpload
 
@@ -35,11 +36,11 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта importedWindowsAutopilotDeviceIdentityUpload.
 
 В следующей таблице показаны свойства, которые необходимы для создания importedWindowsAutopilotDeviceIdentityUpload.

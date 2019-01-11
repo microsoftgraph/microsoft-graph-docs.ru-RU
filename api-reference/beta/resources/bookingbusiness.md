@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса bookingBusiness
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 0ea11dcd16a129e6d6648be4b09435c5c052de9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb8b79b4c728236ebc8231bae5da74e65466c20c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861637"
 ---
 # <a name="bookingbusiness-resource-type"></a>Тип ресурса bookingBusiness
 
@@ -21,7 +22,7 @@ ms.locfileid: "27078422"
 |[Список bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) коллекции |Получите коллекцию объектов bookingbusiness в клиента. |
 |[Создание bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Создание нового резервирования Microsoft business. |
 |[Получение bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Чтение свойства и связи объекта bookingBusiness.|
-|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Обновление свойств в объект **bookingBusiness** . |
+|[обновление](../api/bookingbusiness-update.md). | [bookingBusiness](bookingbusiness.md) |Обновление свойств в объект **bookingBusiness** . |
 |[Delete](../api/bookingbusiness-delete.md) | Нет |Удалите объект **bookingBusiness** . |
 |[Создание bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Создайте новый bookingAppointment, отправку сообщений в коллекцию встреч.|
 |[Список встреч](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) коллекции| Получите коллекцию объектов bookingAppointment.|
@@ -40,19 +41,19 @@ ms.locfileid: "27078422"
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|Почтовый адрес организации. Свойство **адрес** вместе с **телефона** и **webSiteUrl**отображаются в нижнем колонтитуле предприятие планирования страницы.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) коллекции|Часы работы для предприятий.|
-|businessType|String|Тип бизнеса.|
-|defaultCurrencyIso|String|Код для валюты, предприятию работает в Microsoft резервирования.|
-|displayName|String|Название организации, который взаимодействует с клиентами. Это имя отображается в верхней части бизнеса, планирование страницы.|
+|businessType|Строка|Тип бизнеса.|
+|defaultCurrencyIso|Строка|Код для валюты, предприятию работает в Microsoft резервирования.|
+|displayName|Строка|Название организации, который взаимодействует с клиентами. Это имя отображается в верхней части бизнеса, планирование страницы.|
 |email|String|Адрес электронной почты для бизнеса.|
-|id|String|Уникальный программный идентификатор для бизнеса. Только для чтения.|
+|id|Строка|Уникальный программный идентификатор для бизнеса. Только для чтения.|
 |isPublished|Логический|Страница расписания предоставленной внешним клиентам. Для установки этого свойства используется действий **Публикация** и **Отмена публикации** . Только для чтения.|
 |phone|String|Номер телефона для бизнеса. Свойство **phone** вместе с **адресом** и **webSiteUrl**отображаются в нижнем колонтитуле предприятие планирования страницы.|
-|publicUrl|String|URL-адрес для планирования страницы, которая задается после [публикации](../api/bookingbusiness-publish.md) или [отмены публикации](../api/bookingbusiness-unpublish.md) страницы. Только для чтения.|
+|publicUrl|Строка|URL-адрес для планирования страницы, которая задается после [публикации](../api/bookingbusiness-publish.md) или [отмены публикации](../api/bookingbusiness-unpublish.md) страницы. Только для чтения.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Указывает, как можно создать резервирования для бизнеса.|
-|webSiteUrl|String|URL-адрес веб-сайта бизнеса. Свойство **webSiteUrl** вместе с **адреса**, **Телефон**, отображаются в нижней части страницы планирования бизнес.|
+|webSiteUrl|Строка|URL-адрес веб-сайта бизнеса. Свойство **webSiteUrl** вместе с **адреса**, **Телефон**, отображаются в нижней части страницы планирования бизнес.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appointments|[bookingAppointment](bookingappointment.md) коллекции| Все встречи бизнеса. Только для чтения. Допускается значение null.|
 |calendarView|[bookingAppointment](bookingappointment.md) коллекции| Набор встреч в этом бизнеса в указанный диапазон дат. Только для чтения. Допускается значение null.|

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса objectDefinition
 description: Описывает объект и его атрибуты. Определения объектов являются частью directoryDefinition, который обновляется как часть synchronizationSchema.
-ms.openlocfilehash: c4c2d54eb33f5140464e3e8aa479aa6baec72df8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d5e7a12f06886ae3cbdad6a5f2f98907aafca74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866082"
 ---
 # <a name="objectdefinition-resource-type"></a>Тип ресурса objectDefinition
 
@@ -16,11 +17,11 @@ ms.locfileid: "27082266"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство      | Тип      | Description    |
+| Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
 |attributes     |[attributeDefinition](synchronization-attributedefinition.md) коллекции    | Определяет атрибуты объекта. |
 |метаданные       |[metadataEntry](synchronization-metadataentry.md) коллекции   |Расширение дополнительные свойства. Если не указан явно, значения метаданных не должно изменяться.|
-|name           |String     |Имя объекта. Должно быть уникальным в определении каталога. Значение null не допускается.|
+|name           |Строка     |Имя объекта. Должно быть уникальным в определении каталога. Значение null не допускается.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,12 +2,13 @@
 title: 'событие: Отмена'
 description: 'Это действие позволяет организатора собрания отправить сообщение об отмене и отмены события. '
 author: angelgolfer-ms
-ms.openlocfilehash: 5e32219be129d1b16e05badd1fb778f86d95849b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 482804d58078f148ed321a0c3489954fc9144f8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350311"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864626"
 ---
 # <a name="event-cancel"></a>событие: Отмена
 
@@ -56,7 +57,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

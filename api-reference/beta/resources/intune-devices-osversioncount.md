@@ -2,12 +2,13 @@
 title: Тип ресурса osVersionCount
 description: Количество устройств с вредоносных программ для каждой версии операционной системы
 author: tfitzmac
-ms.openlocfilehash: ccc031c6060604b36166b4869d02f08854dfdd2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 227e802de7226d653d68997268c9bf4eac4aa259
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864150"
 ---
 # <a name="osversioncount-resource-type"></a>Тип ресурса osVersionCount
 

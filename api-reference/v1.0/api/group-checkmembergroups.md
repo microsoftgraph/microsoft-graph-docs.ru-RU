@@ -2,12 +2,13 @@
 title: 'group: checkMemberGroups'
 description: Проверьте наличие членства в указанный список групп. Возвращает из списка из которых эти группы
 author: dkershaw10
-ms.openlocfilehash: 6f31e4f53e99272c456f6bb4263054e9cb5a208f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 812377d3fe8677d877ac8faddce75c25732ff471
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861868"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -41,7 +42,7 @@ POST /groups/{id}/checkMemberGroups
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

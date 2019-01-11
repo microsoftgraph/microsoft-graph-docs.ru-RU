@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса publicClient
 description: Задает параметры для без веб-приложения или веб-Api. (например, Mobile или других общедоступных клиентом, например установленные приложения, запущенного на устройстве настольных систем)
-ms.openlocfilehash: ba921fecb554a8749a9020508c538c68a7ff342e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c466c91f90ac8adc2bf3806fa212e0b01e6d2507
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075450"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864199"
 ---
 # <a name="publicclient-resource-type"></a>Тип ресурса publicClient
 
@@ -16,7 +17,7 @@ ms.locfileid: "27075450"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |redirectUris|Коллекция String| Указывает URL-адресов, которые будут отправлены маркеры пользователя для входа в или отправки коды авторизации коды URI, OAuth 2.0 и маркеры доступа для перенаправления. |
 

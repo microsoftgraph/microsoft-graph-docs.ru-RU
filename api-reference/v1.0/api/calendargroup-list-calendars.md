@@ -2,12 +2,13 @@
 title: Список календарей
 description: Получение списка календарей из группы календарей.
 author: angelgolfer-ms
-ms.openlocfilehash: e150d25976cda8cde52a70669fb38333f2a95fd2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55af5ab454b6afe534a1a8d2efa76de7a0e7f9d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341386"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862988"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -51,7 +52,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

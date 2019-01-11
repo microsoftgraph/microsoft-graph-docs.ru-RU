@@ -2,12 +2,13 @@
 title: Тип ресурса person
 description: Объединенные данные о сотруднике из всех почты, контакты и социальными сетями. Пользователи могут быть локального контактов, контакты из социальных сетей, вашей организации каталогов и людей из последних коммуникаций (например, электронной почты и Скайп).
 author: simonhult
-ms.openlocfilehash: eccd5da56806b6608f5610579c61a171713990b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c0318986b01704501a2b7910888d6a5e962a5dca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865382"
 ---
 # <a name="person-resource-type"></a>Тип ресурса person
 

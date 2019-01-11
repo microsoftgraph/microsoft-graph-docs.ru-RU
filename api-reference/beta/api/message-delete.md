@@ -1,12 +1,13 @@
 ---
 title: Удаление сообщения
 description: Удалить сообщение в почтовый ящик указанного пользователя или отношения сообщения.
-ms.openlocfilehash: 8f7429dfa4ee586f7bb6c263bdbb80971416d006
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3a76c936f72ebd238ee6d7a898dfd6a3e0356036
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082403"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864528"
 ---
 # <a name="delete-message"></a>Удаление сообщения
 
@@ -50,7 +51,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса localeInfo
 description: Сведения о языковом стандарте, в частности предпочитаемом языке и стране или регионе, вошедшего пользователя.
-ms.openlocfilehash: f61f1af1d4ad49b1083403576ac4069d97d694cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0c89a133ba31965b99099555ad18f185495fe4c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862589"
 ---
 # <a name="localeinfo-resource-type"></a>Тип ресурса localeInfo
 

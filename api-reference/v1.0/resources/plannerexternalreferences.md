@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerExternalReferences
 description: Ресурс **plannerExternalReferences** представляет коллекцию справочных материалов для задачи. Это открытый тип. Он является частью объекта сведений о задаче. Значение в паре "свойство-значение" представляет собой объект externalReference.
-ms.openlocfilehash: 6c1141ebdfd95fef5706c36ecf38d6c1ca0b8783
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aedfd0321843c4a906defe22f184bac7d293a6e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862078"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>Тип ресурса plannerExternalReferences
 

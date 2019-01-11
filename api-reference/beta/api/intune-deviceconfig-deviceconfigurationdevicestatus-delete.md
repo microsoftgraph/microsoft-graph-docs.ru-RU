@@ -2,12 +2,13 @@
 title: Удаление объекта deviceConfigurationDeviceStatus
 description: Удаляет объект deviceConfigurationDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: 538b0a66df7fd9c214a5b136465c866ecf41c4dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 904436cc2e200c1d51cf985eb59193b389a15cd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353244"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863688"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>Удаление объекта deviceConfigurationDeviceStatus
 
@@ -45,11 +46,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

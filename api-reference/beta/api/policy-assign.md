@@ -1,12 +1,13 @@
 ---
 title: Назначение политики
 description: Назначает политику для приложения или участников-служб.
-ms.openlocfilehash: 25dee4ac43716949125795114318d2571d5b8647
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30ba92c1d0308f9c4846702008a203821ae2b7b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081248"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865459"
 ---
 # <a name="assign-policy"></a>Назначение политики
 
@@ -40,7 +41,7 @@ POST /serviceprincipals/{id}/policies/$ref
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | application/json  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса для представления JSON добавляемый объект политики.
 
 ## <a name="response"></a>Ответ
@@ -62,8 +63,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ```http
 HTTP/1.1 204 No Content

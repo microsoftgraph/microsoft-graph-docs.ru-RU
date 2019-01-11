@@ -1,12 +1,13 @@
 ---
 title: Список programControlTypes
 description: В Azure AD доступа к функции проверки, список всех объектов programControlType.
-ms.openlocfilehash: 9e3b8efccd8d8be96ef1295dfba1a5c2e329c756
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ae5a2298d3c0f542f7d8fd766f412b8cf5648730
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860888"
 ---
 # <a name="list-programcontroltypes"></a>Список programControlTypes
 
@@ -30,9 +31,9 @@ GET /programControlTypes
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ
@@ -50,7 +51,7 @@ GET https://graph.microsoft.com/beta/programControlTypes
 ```
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,12 +2,13 @@
 title: Тип ресурса managedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенного набора приложений.
 author: tfitzmac
-ms.openlocfilehash: 0a5e4df5f524a4a193434d54391c66ecb459829f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb5c6f6a158a79bdc9bd19094b79ef7510db1f3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327141"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861819"
 ---
 # <a name="managedappprotection-resource-type"></a>Тип ресурса managedAppProtection
 

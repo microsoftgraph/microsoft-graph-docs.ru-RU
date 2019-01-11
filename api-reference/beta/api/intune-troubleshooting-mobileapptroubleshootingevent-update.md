@@ -2,12 +2,13 @@
 title: Обновление mobileAppTroubleshootingEvent
 description: Обновление свойства объекта mobileAppTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 58e5b67329fb044f19c6f216fbb25f60ada44e9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1dee1ecb19f58412acbdcf529991f2491e0deabb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862808"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>Обновление mobileAppTroubleshootingEvent
 
@@ -37,11 +38,11 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md).

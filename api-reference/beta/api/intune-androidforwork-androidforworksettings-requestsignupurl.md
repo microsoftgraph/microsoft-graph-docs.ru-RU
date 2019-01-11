@@ -2,12 +2,13 @@
 title: Действие requestSignupUrl
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 5a6e057842befe22dd2ad7035a76d013aca45e4e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7e1b732631df277f53a2c7c2ef45bbd70fcff5b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336045"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864458"
 ---
 # <a name="requestsignupurl-action"></a>Действие requestSignupUrl
 
@@ -37,11 +38,11 @@ POST /deviceManagement/androidForWorkSettings/requestSignupUrl
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

@@ -2,12 +2,13 @@
 title: Тип перечисления windowsUserAccountControlSettings
 description: Возможные значения для параметров контроля учетных записей пользователей Windows.
 author: tfitzmac
-ms.openlocfilehash: dcec2ca6e5b6401b5277e513867c0646bff79c21
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2803e2d15b907fc2a05303be8a0b4e4db4ce66f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861455"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>Тип перечисления windowsUserAccountControlSettings
 

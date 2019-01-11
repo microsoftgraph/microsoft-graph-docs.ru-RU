@@ -2,12 +2,13 @@
 title: Тип перечисления ratingAppsType
 description: Оценка как и мультимедийного контента приложения
 author: tfitzmac
-ms.openlocfilehash: fa9a70128347201657dfa0d5de6044142b37525d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4c3399b7d1a9c7eb18467e2df0db217a96602493
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861015"
 ---
 # <a name="ratingappstype-enum-type"></a>Тип перечисления ratingAppsType
 

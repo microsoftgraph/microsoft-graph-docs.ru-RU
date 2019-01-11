@@ -1,12 +1,13 @@
 ---
 title: Добавление участника
 description: С помощью этого API можно добавить участника в группу Office 365 или группу безопасности (обычную или с поддержкой почты) через свойство навигации **members**.
-ms.openlocfilehash: 1fe2d5c259b4e1974168df30e282d97d3342e0bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 89f4bd5060e167e1920e5f64d70127c1fed41ad6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867524"
 ---
 # <a name="add-member"></a>Добавление участника
 С помощью этого API можно добавить участника в группу Office 365 или группу безопасности (обычную или с поддержкой почты) через свойство навигации **members**.
@@ -20,7 +21,7 @@ ms.locfileid: "27026352"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Group.ReadWrite.All и Directory.ReadWrite.All |
+|Для приложений | Group.ReadWrite.All и Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -1,12 +1,13 @@
 ---
 title: Дается обзор доступа Microsoft Azure AD
 description: Можно использовать Azure AD доступ к обзоры для настройки доступа однократное или повторяющееся обзоры для аттестации права доступа.
-ms.openlocfilehash: 33722c68429729e3996ad289d07146c95ee219ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 259a88bf95bfe0796e0ee46dd2d0a64c68831a64
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860790"
 ---
 # <a name="azure-ad-access-reviews"></a>Дается обзор доступа Microsoft Azure AD
 
@@ -34,25 +35,25 @@ ms.locfileid: "27079331"
 |:---------------|:--------|:----------|
 |[Получение accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Получите обзор доступа с определенным идентификатором. |
 |[Создание accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Создание нового accessReview. |
-|[Удаление accessReview](../api/accessreview-delete.md) | Отсутствуют.   | Удалите accessReview. |
+|[Удаление accessReview](../api/accessreview-delete.md) | Нет.   | Удалите accessReview. |
 |[Обновление accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Обновление accessReview. |
 |[Список accessReview рецензентов](../api/accessreview-listreviewers.md) |      Коллекция [удостоверению пользователя](useridentity.md)| Получите рецензентов accessReview. |
-|[Добавление accessReview редактор](../api/accessreview-addreviewer.md) |      Отсутствуют.   |   Добавьте проверяющий accessReview. |
-|[Удаление accessReview редактор](../api/accessreview-removereviewer.md) | Отсутствуют.  |   Удаление рецензента из accessReview. |
+|[Добавление accessReview редактор](../api/accessreview-addreviewer.md) |      Нет.   |   Добавьте проверяющий accessReview. |
+|[Удаление accessReview редактор](../api/accessreview-removereviewer.md) | Нет.  |   Удаление рецензента из accessReview. |
 |[Список accessReview решения](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md) коллекции| Получите решения accessReview.|
 |[Мои accessReview решения](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md) коллекции| В качестве читателя получите Мои решения accessReview.|
-|[Отправлять напоминание accessReview](../api/accessreview-sendreminder.md) |        Отсутствуют.   |   Отправьте напоминание, чтобы проверяющие accessReview. |
-|[Остановка accessReview](../api/accessreview-stop.md) |     Отсутствуют.   |   Остановите accessReview. |
-|[Сброс accessReview решения](../api/accessreview-reset.md) |     Отсутствуют.   |   Сброс решения, принимаемые при accessReview в хода выполнения.|
-|[Применение accessReview решения](../api/accessreview-apply.md) |     Отсутствуют.   |   Применение решения из завершенных accessReview.|
+|[Отправлять напоминание accessReview](../api/accessreview-sendreminder.md) |        Нет.   |   Отправьте напоминание, чтобы проверяющие accessReview. |
+|[Остановка accessReview](../api/accessreview-stop.md) |     Нет.   |   Остановите accessReview. |
+|[Сброс accessReview решения](../api/accessreview-reset.md) |     Нет.   |   Сброс решения, принимаемые при accessReview в хода выполнения.|
+|[Применение accessReview решения](../api/accessreview-apply.md) |     Нет.   |   Применение решения из завершенных accessReview.|
 |[Список businessFlowTemplates](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md) коллекции| Получение шаблонов поток business подходят для доступа к обзоры.|
 |[Создание программы](../api/program-create.md) |   [Программа](program.md)   |   Создание программы.|
-|[Удаление программы](../api/program-delete.md) |   Отсутствуют.   |   Удаление программы.|
+|[Удаление программы](../api/program-delete.md) |   Нет.   |   Удаление программы.|
 |[Список программ](../api/program-list.md) |  [программа](program.md) семейства сайтов|   Получите коллекцию всех программ.|
 |[Список programControls программы](../api/program-listcontrols.md) |      [programControl](programcontrol.md) коллекции| Получите коллекцию элементов управления из программы.|
 |[Обновите программу](../api/program-update.md) |   [Программа](program.md)|  Обновите программу.|
 |[Создание programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Добавьте programControl программы.|
-|[Удаление programControl](../api/programcontrol-delete.md) |     Отсутствуют.   |   Удалите programControl из программы.|
+|[Удаление programControl](../api/programcontrol-delete.md) |     Нет.   |   Удалите programControl из программы.|
 |[Список programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) коллекции| Список элементов управления для всех программ в клиентов.|
 |[Список programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) коллекции| Список типов элементов управления программы. |
 

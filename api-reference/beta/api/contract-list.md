@@ -1,12 +1,13 @@
 ---
 title: Перечисление contract
 description: Получение списка объектов contract, сопоставленных с клиентом партнера.
-ms.openlocfilehash: 41e30880bded985695581e7d1402a24d2353e07e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e1d3fa539a29a84a61c5e715edcfa773a7a705b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076249"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866131"
 ---
 # <a name="list-contracts"></a>Перечисление contract
 
@@ -44,7 +45,7 @@ GET /contracts
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

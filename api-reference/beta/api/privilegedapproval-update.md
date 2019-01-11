@@ -1,12 +1,13 @@
 ---
 title: Обновление privilegedapproval
 description: Обновление свойства объекта privilegedapproval.
-ms.openlocfilehash: b50f5fb5e50bc47c94b759ea1253c9c9117bfe5d
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 0ddab7d7a628be8513c27114e1e4ec3d13477784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866887"
 ---
 # <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
@@ -40,11 +41,11 @@ PATCH /privilegedApproval/<id>
 |:---------------|:--------|:----------|
 |approvalDuration|Продолжительность||
 |approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalType|Строка||
+|approverReason|Строка||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
-|roleId|String||
+|requestorReason|Строка||
+|roleId|Строка||
 |startDateTime|DateTimeOffset||
 |userId|String||
 

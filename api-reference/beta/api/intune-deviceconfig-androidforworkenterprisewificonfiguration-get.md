@@ -2,12 +2,13 @@
 title: Получение androidForWorkEnterpriseWiFiConfiguration
 description: Чтение свойства и связи объекта androidForWorkEnterpriseWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 68862f02843a50e3673d0fbbb3d293664c1c3d7d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 298ba87abbf6e88557bac5feed6b54c8846009a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863746"
 ---
 # <a name="get-androidforworkenterprisewificonfiguration"></a>Получение androidForWorkEnterpriseWiFiConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

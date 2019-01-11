@@ -2,12 +2,13 @@
 title: Тип ресурса androidForWorkApp
 description: Содержит свойства и свойства, наследуемые для Android для работы (AFW) приложения.
 author: tfitzmac
-ms.openlocfilehash: 1e754d6f893d536fbc52e492c87e163766afaffb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d62dded43d1ea622bd27a122d6535d71fae0cd6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340630"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861441"
 ---
 # <a name="androidforworkapp-resource-type"></a>Тип ресурса androidForWorkApp
 

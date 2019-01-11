@@ -2,12 +2,13 @@
 title: Удаление educationUser
 description: Удаление пользователя.
 author: mmast-msft
-ms.openlocfilehash: e74b45a1de58cc02fdd559821812aebcc9292fc1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bc6e27e3bfb9326b147ab1121b5c900d7878ff85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362813"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866852"
 ---
 # <a name="delete-educationuser"></a>Удаление educationUser
 
@@ -35,7 +36,7 @@ DELETE /education/users/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

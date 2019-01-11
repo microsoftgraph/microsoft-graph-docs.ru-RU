@@ -2,12 +2,13 @@
 title: Получение контакта
 description: Получение свойств и связей объекта contact.
 author: angelgolfer-ms
-ms.openlocfilehash: 20677bd9cf10f1098ff233a8f60d69e7728aab85
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 057a97ba25d12f7baaa951ba7750cdd4ab9dd435
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860909"
 ---
 # <a name="get-contact"></a>Получение контакта
 
@@ -55,7 +56,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

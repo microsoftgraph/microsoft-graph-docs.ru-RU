@@ -2,12 +2,13 @@
 title: Тип ресурса win32LobAppInstallExperience
 description: Содержит свойства интерфейса установки для приложения Win32
 author: tfitzmac
-ms.openlocfilehash: c24ed0536416bd330fc2928a85cb0d5fce558256
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74e7dd5b036d42d85e49935f454f3050f604827b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342163"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866908"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>Тип ресурса win32LobAppInstallExperience
 

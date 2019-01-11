@@ -2,12 +2,13 @@
 title: Тип перечисления mobileAppContentFileUploadState
 description: Содержит свойства для отправки запроса состояний.
 author: tfitzmac
-ms.openlocfilehash: a0edd5f7fe5068077d4e1dde813a3424f4c8c3c2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 65a69df78c86c67350c48af9a9d472e9d90c8d39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360748"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862533"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>Тип перечисления mobileAppContentFileUploadState
 
