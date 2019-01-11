@@ -3,20 +3,21 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: fieldValueSet
-ms.openlocfilehash: 8c5ad7c3db578374a62a0b60017adf6266c304f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f8c842f107b5090eb80bba9e614666f10d4dc0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028372"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889693"
 ---
-# <a name="fieldvalueset-resource"></a><span data-ttu-id="978ce-102">Ресурс fieldValueSet</span><span class="sxs-lookup"><span data-stu-id="978ce-102">FieldValueSet resource</span></span>
+# <a name="fieldvalueset-resource"></a><span data-ttu-id="27589-102">Ресурс fieldValueSet</span><span class="sxs-lookup"><span data-stu-id="27589-102">FieldValueSet resource</span></span>
 
-<span data-ttu-id="978ce-103">Представляет значения столбца в ресурсе [listItem](listitem.md).</span><span class="sxs-lookup"><span data-stu-id="978ce-103">Represents the column values in a [listItem](listitem.md) resource.</span></span>
+<span data-ttu-id="27589-103">Представляет значения столбца в ресурсе [listItem](listitem.md).</span><span class="sxs-lookup"><span data-stu-id="27589-103">Represents the column values in a [listItem](listitem.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="978ce-104">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="978ce-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="27589-104">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="27589-104">JSON representation</span></span>
 
-<span data-ttu-id="978ce-105">Ниже показано представление ресурса **fieldValueSet** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="978ce-105">Here is a JSON representation of a **fieldValueSet** resource.</span></span>
+<span data-ttu-id="27589-105">Ниже показано представление ресурса **fieldValueSet** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="27589-105">Here is a JSON representation of a **fieldValueSet** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
       "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
        "baseType": "microsoft.graph.entity", "openType": true } -->
@@ -31,24 +32,24 @@ ms.locfileid: "27028372"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="978ce-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="978ce-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="27589-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="27589-106">Properties</span></span>
 
-<span data-ttu-id="978ce-107">Каждое отображаемое для пользователя поле в элементе **listItem** возвращается в виде пары имя-значение в объекте **fieldValueSet**.</span><span class="sxs-lookup"><span data-stu-id="978ce-107">Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.</span></span>
-<span data-ttu-id="978ce-108">В примере выше используется список, состоящий из четырех столбцов: **Author** (Автор), **Name** (Имя), **Color** (Цвет) и **Quantity** (Количество).</span><span class="sxs-lookup"><span data-stu-id="978ce-108">The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.</span></span>
+<span data-ttu-id="27589-107">Каждое отображаемое для пользователя поле в элементе **listItem** возвращается в виде пары имя-значение в объекте **fieldValueSet**.</span><span class="sxs-lookup"><span data-stu-id="27589-107">Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.</span></span>
+<span data-ttu-id="27589-108">В примере выше используется список, состоящий из четырех столбцов: **Author** (Автор), **Name** (Имя), **Color** (Цвет) и **Quantity** (Количество).</span><span class="sxs-lookup"><span data-stu-id="27589-108">The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.</span></span>
 
-<span data-ttu-id="978ce-109">По умолчанию поля подстановки (например, поле `Author` выше) не возвращаются.</span><span class="sxs-lookup"><span data-stu-id="978ce-109">Lookup fields (like `Author` above) are not returned by default.</span></span>
-<span data-ttu-id="978ce-110">Вместо этого сервер возвращает поле LookupId (например, поле `AuthorLookupId` выше), ссылающееся на элемент listItem, являющийся целевым элементом в подстановке.</span><span class="sxs-lookup"><span data-stu-id="978ce-110">Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.</span></span>
-<span data-ttu-id="978ce-111">Имя поля LookupId представляет собой исходное имя поля, за которым следует текст `LookupId`.</span><span class="sxs-lookup"><span data-stu-id="978ce-111">The name of the 'LookupId' field is the original field name followed by `LookupId`.</span></span>
+<span data-ttu-id="27589-109">По умолчанию поля подстановки (например, поле `Author` выше) не возвращаются.</span><span class="sxs-lookup"><span data-stu-id="27589-109">Lookup fields (like `Author` above) are not returned by default.</span></span>
+<span data-ttu-id="27589-110">Вместо этого сервер возвращает поле LookupId (например, поле `AuthorLookupId` выше), ссылающееся на элемент listItem, являющийся целевым элементом в подстановке.</span><span class="sxs-lookup"><span data-stu-id="27589-110">Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.</span></span>
+<span data-ttu-id="27589-111">Имя поля LookupId представляет собой исходное имя поля, за которым следует текст `LookupId`.</span><span class="sxs-lookup"><span data-stu-id="27589-111">The name of the 'LookupId' field is the original field name followed by `LookupId`.</span></span>
 
-<span data-ttu-id="978ce-112">В одном запросе можно запросить до 12 полей подстановки.</span><span class="sxs-lookup"><span data-stu-id="978ce-112">Up to 12 lookup fields may be requested in a single query.</span></span>
-<span data-ttu-id="978ce-113">Сервер возвратит значения подстановки, если запрос содержит оператор `select`, в котором указаны необходимые вам поля.</span><span class="sxs-lookup"><span data-stu-id="978ce-113">The server will return lookup values if your request includes a `select` statement with the fields you need.</span></span>
-<span data-ttu-id="978ce-114">Пример.</span><span class="sxs-lookup"><span data-stu-id="978ce-114">Example:</span></span>
+<span data-ttu-id="27589-112">В одном запросе можно запросить до 12 полей подстановки.</span><span class="sxs-lookup"><span data-stu-id="27589-112">Up to 12 lookup fields may be requested in a single query.</span></span>
+<span data-ttu-id="27589-113">Сервер возвратит значения подстановки, если запрос содержит оператор `select`, в котором указаны необходимые вам поля.</span><span class="sxs-lookup"><span data-stu-id="27589-113">The server will return lookup values if your request includes a `select` statement with the fields you need.</span></span>
+<span data-ttu-id="27589-114">Пример.</span><span class="sxs-lookup"><span data-stu-id="27589-114">Example:</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
 ```
 
-<span data-ttu-id="978ce-115">В одном запросе вы можете запросить до 12 полей подстановки, а также любое количество "обычных" полей.</span><span class="sxs-lookup"><span data-stu-id="978ce-115">You may request up to 12 lookup fields in a single query, plus any number of regular fields.</span></span>
+<span data-ttu-id="27589-115">В одном запросе вы можете запросить до 12 полей подстановки, а также любое количество "обычных" полей.</span><span class="sxs-lookup"><span data-stu-id="27589-115">You may request up to 12 lookup fields in a single query, plus any number of regular fields.</span></span>
 
 <!-- {
   "type": "#page.annotation",

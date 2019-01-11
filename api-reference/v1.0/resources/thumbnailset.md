@@ -3,20 +3,21 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ThumbnailSet
-ms.openlocfilehash: 2ba45363b684142b91aac62d4b2a5b0d371d6b3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 779cc9129bbbe660286d2350a76451c9666752d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025979"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888874"
 ---
-# <a name="thumbnailset-resource-type"></a><span data-ttu-id="7840d-102">Тип ресурса ThumbnailSet</span><span class="sxs-lookup"><span data-stu-id="7840d-102">ThumbnailSet resource type</span></span>
+# <a name="thumbnailset-resource-type"></a><span data-ttu-id="23617-102">Тип ресурса ThumbnailSet</span><span class="sxs-lookup"><span data-stu-id="23617-102">ThumbnailSet resource type</span></span>
 
-<span data-ttu-id="7840d-p101">Ресурс **ThumbnailSet** представляет собой коллекцию ресурсов [thumbnail](thumbnail.md) с ключами. Он представляет набор эскизов, связанных с ресурсом DriveItem.</span><span class="sxs-lookup"><span data-stu-id="7840d-p101">The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources. It is used to represent a set of thumbnails associated with a DriveItem.</span></span>
+<span data-ttu-id="23617-p101">Ресурс **ThumbnailSet** представляет собой коллекцию ресурсов [thumbnail](thumbnail.md) с ключами. Он представляет набор эскизов, связанных с ресурсом DriveItem.</span><span class="sxs-lookup"><span data-stu-id="23617-p101">The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources. It is used to represent a set of thumbnails associated with a DriveItem.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="7840d-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7840d-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="23617-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="23617-105">JSON representation</span></span>
 
-<span data-ttu-id="7840d-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7840d-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="23617-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="23617-106">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -42,15 +43,15 @@ ms.locfileid: "27025979"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="7840d-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="7840d-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="23617-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="23617-107">Properties</span></span>
 
-| <span data-ttu-id="7840d-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="7840d-108">Property</span></span> | <span data-ttu-id="7840d-109">Тип</span><span class="sxs-lookup"><span data-stu-id="7840d-109">Type</span></span>                      | <span data-ttu-id="7840d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="7840d-110">Description</span></span>                                                                       |
+| <span data-ttu-id="23617-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="23617-108">Property</span></span> | <span data-ttu-id="23617-109">Тип</span><span class="sxs-lookup"><span data-stu-id="23617-109">Type</span></span>                      | <span data-ttu-id="23617-110">Описание</span><span class="sxs-lookup"><span data-stu-id="23617-110">Description</span></span>                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| <span data-ttu-id="7840d-111">id</span><span class="sxs-lookup"><span data-stu-id="7840d-111">id</span></span>       | <span data-ttu-id="7840d-112">String</span><span class="sxs-lookup"><span data-stu-id="7840d-112">String</span></span>                    | <span data-ttu-id="7840d-p102">Идентификатор в элементе. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="7840d-p102">The id within the item. Read-only.</span></span>                                                |
-| <span data-ttu-id="7840d-115">large</span><span class="sxs-lookup"><span data-stu-id="7840d-115">large</span></span>    | [<span data-ttu-id="7840d-116">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="7840d-116">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="7840d-117">Эскиз размером 1920x1920.</span><span class="sxs-lookup"><span data-stu-id="7840d-117">A 1920x1920 scaled thumbnail.</span></span>                                                     |
-| <span data-ttu-id="7840d-118">medium</span><span class="sxs-lookup"><span data-stu-id="7840d-118">medium</span></span>   | [<span data-ttu-id="7840d-119">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="7840d-119">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="7840d-120">Эскиз размером 176x176.</span><span class="sxs-lookup"><span data-stu-id="7840d-120">A 176x176 scaled thumbnail.</span></span>                                                       |
-| <span data-ttu-id="7840d-121">small</span><span class="sxs-lookup"><span data-stu-id="7840d-121">small</span></span>    | [<span data-ttu-id="7840d-122">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="7840d-122">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="7840d-123">Обрезанный эскиз размером 48x48.</span><span class="sxs-lookup"><span data-stu-id="7840d-123">A 48x48 cropped thumbnail.</span></span>                                                        |
-| <span data-ttu-id="7840d-124">source</span><span class="sxs-lookup"><span data-stu-id="7840d-124">source</span></span>   | [<span data-ttu-id="7840d-125">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="7840d-125">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="7840d-126">Пользовательский эскиз исходного изображения, используемого для создания других эскизов.</span><span class="sxs-lookup"><span data-stu-id="7840d-126">A custom thumbnail image or the original image used to generate other thumbnails.</span></span> |
+| <span data-ttu-id="23617-111">id</span><span class="sxs-lookup"><span data-stu-id="23617-111">id</span></span>       | <span data-ttu-id="23617-112">String</span><span class="sxs-lookup"><span data-stu-id="23617-112">String</span></span>                    | <span data-ttu-id="23617-p102">Идентификатор в элементе. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="23617-p102">The id within the item. Read-only.</span></span>                                                |
+| <span data-ttu-id="23617-115">large</span><span class="sxs-lookup"><span data-stu-id="23617-115">large</span></span>    | [<span data-ttu-id="23617-116">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="23617-116">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="23617-117">Эскиз размером 1920x1920.</span><span class="sxs-lookup"><span data-stu-id="23617-117">A 1920x1920 scaled thumbnail.</span></span>                                                     |
+| <span data-ttu-id="23617-118">medium</span><span class="sxs-lookup"><span data-stu-id="23617-118">medium</span></span>   | [<span data-ttu-id="23617-119">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="23617-119">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="23617-120">Эскиз размером 176x176.</span><span class="sxs-lookup"><span data-stu-id="23617-120">A 176x176 scaled thumbnail.</span></span>                                                       |
+| <span data-ttu-id="23617-121">small</span><span class="sxs-lookup"><span data-stu-id="23617-121">small</span></span>    | [<span data-ttu-id="23617-122">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="23617-122">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="23617-123">Обрезанный эскиз размером 48x48.</span><span class="sxs-lookup"><span data-stu-id="23617-123">A 48x48 cropped thumbnail.</span></span>                                                        |
+| <span data-ttu-id="23617-124">source</span><span class="sxs-lookup"><span data-stu-id="23617-124">source</span></span>   | [<span data-ttu-id="23617-125">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="23617-125">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="23617-126">Пользовательский эскиз исходного изображения, используемого для создания других эскизов.</span><span class="sxs-lookup"><span data-stu-id="23617-126">A custom thumbnail image or the original image used to generate other thumbnails.</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

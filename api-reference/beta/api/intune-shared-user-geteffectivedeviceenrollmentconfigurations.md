@@ -2,33 +2,34 @@
 title: функция getEffectiveDeviceEnrollmentConfigurations
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: b7bdf815f972f56892027a01db83539065fe9caf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f2ba565908920f87fa1392dc665f8a87b2600e3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890645"
 ---
-# <a name="geteffectivedeviceenrollmentconfigurations-function"></a><span data-ttu-id="9539c-103">функция getEffectiveDeviceEnrollmentConfigurations</span><span class="sxs-lookup"><span data-stu-id="9539c-103">getEffectiveDeviceEnrollmentConfigurations function</span></span>
+# <a name="geteffectivedeviceenrollmentconfigurations-function"></a><span data-ttu-id="98948-103">функция getEffectiveDeviceEnrollmentConfigurations</span><span class="sxs-lookup"><span data-stu-id="98948-103">getEffectiveDeviceEnrollmentConfigurations function</span></span>
 
-> <span data-ttu-id="9539c-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="9539c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9539c-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9539c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="98948-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="98948-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="98948-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="98948-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="9539c-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="9539c-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="98948-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="98948-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="9539c-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="9539c-107">Not yet documented</span></span>
+<span data-ttu-id="98948-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="98948-107">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9539c-108">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="9539c-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="98948-108">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="98948-108">Prerequisites</span></span>
 
-<span data-ttu-id="9539c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9539c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="98948-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="98948-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9539c-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9539c-111">Permission type</span></span>|<span data-ttu-id="9539c-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="9539c-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="98948-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="98948-111">Permission type</span></span>|<span data-ttu-id="98948-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="98948-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9539c-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9539c-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="9539c-114">&nbsp;&nbsp; **Адаптация новых сотрудников**</span><span class="sxs-lookup"><span data-stu-id="9539c-114">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="9539c-115">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9539c-115">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="9539c-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9539c-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9539c-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9539c-117">Not supported.</span></span>|
-|<span data-ttu-id="9539c-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9539c-118">Application</span></span>|<span data-ttu-id="9539c-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9539c-119">Not supported.</span></span>|
+|<span data-ttu-id="98948-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="98948-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="98948-114">&nbsp;&nbsp; **Адаптация новых сотрудников**</span><span class="sxs-lookup"><span data-stu-id="98948-114">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="98948-115">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98948-115">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="98948-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="98948-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="98948-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="98948-117">Not supported.</span></span>|
+|<span data-ttu-id="98948-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="98948-118">Application</span></span>|<span data-ttu-id="98948-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="98948-119">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9539c-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9539c-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98948-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="98948-120">HTTP Request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,35 +39,35 @@ ms.locfileid: "27315255"
 GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9539c-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9539c-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="98948-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="98948-121">Request headers</span></span>
 
-|<span data-ttu-id="9539c-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9539c-122">Header</span></span>|<span data-ttu-id="9539c-123">Значение</span><span class="sxs-lookup"><span data-stu-id="9539c-123">Value</span></span>|
+|<span data-ttu-id="98948-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="98948-122">Header</span></span>|<span data-ttu-id="98948-123">Значение</span><span class="sxs-lookup"><span data-stu-id="98948-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9539c-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9539c-124">Authorization</span></span>|<span data-ttu-id="9539c-125">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="9539c-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9539c-126">Accept</span><span class="sxs-lookup"><span data-stu-id="9539c-126">Accept</span></span>|<span data-ttu-id="9539c-127">application/json</span><span class="sxs-lookup"><span data-stu-id="9539c-127">application/json</span></span>|
+|<span data-ttu-id="98948-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="98948-124">Authorization</span></span>|<span data-ttu-id="98948-125">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="98948-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="98948-126">Accept</span><span class="sxs-lookup"><span data-stu-id="98948-126">Accept</span></span>|<span data-ttu-id="98948-127">application/json</span><span class="sxs-lookup"><span data-stu-id="98948-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9539c-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9539c-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="98948-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="98948-128">Request body</span></span>
 
-<span data-ttu-id="9539c-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9539c-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="98948-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="98948-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9539c-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="9539c-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="98948-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="98948-130">Response</span></span>
 
-<span data-ttu-id="9539c-131">Если успешно завершена, эта функция возвращает `200 OK` код ответа и семейства [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="9539c-131">If successful, this function returns a `200 OK` response code and a [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection in the response body.</span></span>
+<span data-ttu-id="98948-131">Если успешно завершена, эта функция возвращает `200 OK` код ответа и семейства [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="98948-131">If successful, this function returns a `200 OK` response code and a [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9539c-132">Пример</span><span class="sxs-lookup"><span data-stu-id="9539c-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="98948-132">Пример</span><span class="sxs-lookup"><span data-stu-id="98948-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9539c-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="9539c-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="98948-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="98948-133">Request</span></span>
 
-<span data-ttu-id="9539c-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9539c-134">Here is an example of the request.</span></span>
+<span data-ttu-id="98948-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="98948-134">Here is an example of the request.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/beta/users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="9539c-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="9539c-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="98948-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="98948-135">Response</span></span>
 
-<span data-ttu-id="9539c-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="9539c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="98948-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="98948-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ``` http
 HTTP/1.1 200 OK

@@ -3,28 +3,29 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Создание списка последних файлов
-ms.openlocfilehash: 8647de9a84b4f60a3ac0ef5eb6e831c2a7f0e22f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ede3f5683dc17d1de82dbc94acc06cc531cecfdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888272"
 ---
-# <a name="list-recent-files"></a><span data-ttu-id="63386-102">Создание списка последних файлов</span><span class="sxs-lookup"><span data-stu-id="63386-102">List recent files</span></span>
+# <a name="list-recent-files"></a><span data-ttu-id="027e1-102">Создание списка последних файлов</span><span class="sxs-lookup"><span data-stu-id="027e1-102">List recent files</span></span>
 
-<span data-ttu-id="63386-p101">Указание набора элементов, которые недавно использовались пользователем, вошедшим в свою учетную запись. Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.</span><span class="sxs-lookup"><span data-stu-id="63386-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="027e1-p101">Указание набора элементов, которые недавно использовались пользователем, вошедшим в свою учетную запись. Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.</span><span class="sxs-lookup"><span data-stu-id="027e1-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="63386-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="63386-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="027e1-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="027e1-105">Permissions</span></span>
 
-<span data-ttu-id="63386-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="63386-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="027e1-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="027e1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="63386-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="63386-108">Permission type</span></span>      | <span data-ttu-id="63386-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="63386-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="027e1-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="027e1-108">Permission type</span></span>      | <span data-ttu-id="027e1-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="027e1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="63386-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="63386-110">Delegated (work or school account)</span></span> | <span data-ttu-id="63386-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63386-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="63386-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="63386-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63386-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63386-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="63386-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="63386-114">Application</span></span> | <span data-ttu-id="63386-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63386-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="027e1-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="027e1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="027e1-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="027e1-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="027e1-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="027e1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="027e1-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="027e1-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="027e1-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="027e1-114">Application</span></span> | <span data-ttu-id="027e1-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="027e1-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="63386-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="63386-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="027e1-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="027e1-116">HTTP request</span></span>
 
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
@@ -36,9 +37,9 @@ ms.locfileid: "27024952"
 GET /me/drive/recent
 ```
 
-## <a name="response"></a><span data-ttu-id="63386-117">Ответ</span><span class="sxs-lookup"><span data-stu-id="63386-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="027e1-117">Ответ</span><span class="sxs-lookup"><span data-stu-id="027e1-117">Response</span></span>
 
-<span data-ttu-id="63386-118">Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец объекта drive недавно получал доступ.</span><span class="sxs-lookup"><span data-stu-id="63386-118">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
+<span data-ttu-id="027e1-118">Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец объекта drive недавно получал доступ.</span><span class="sxs-lookup"><span data-stu-id="027e1-118">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
 
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.driveItem)",
@@ -84,9 +85,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="63386-119">Примечания</span><span class="sxs-lookup"><span data-stu-id="63386-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="027e1-119">Примечания</span><span class="sxs-lookup"><span data-stu-id="027e1-119">Remarks</span></span>
 
-<span data-ttu-id="63386-p103">Некоторые элементы driveItem, возвращенные **последним** действием, будут содержать аспект **remoteItem**, который указывает, что это элементы с другого диска. Чтобы получить доступ к исходному объекту driveItem, следует отправить запрос, используя данные, указанные в **remoteItem** в следующем формате:</span><span class="sxs-lookup"><span data-stu-id="63386-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="027e1-p103">Некоторые элементы driveItem, возвращенные **последним** действием, будут содержать аспект **remoteItem**, который указывает, что это элементы с другого диска. Чтобы получить доступ к исходному объекту driveItem, следует отправить запрос, используя данные, указанные в **remoteItem** в следующем формате:</span><span class="sxs-lookup"><span data-stu-id="027e1-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 

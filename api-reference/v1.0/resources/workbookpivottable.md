@@ -2,38 +2,39 @@
 title: Тип ресурсов pivotTable
 description: Представляет сводную таблицу Excel.
 author: lumine2008
-ms.openlocfilehash: 68075aebeac9c0846e48739daf65e5bf97e4d6f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d500d4bc88608b032262cfae505385bf7ed3f072
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889210"
 ---
-# <a name="pivottable-resource-type"></a><span data-ttu-id="e361c-103">Тип ресурсов pivotTable</span><span class="sxs-lookup"><span data-stu-id="e361c-103">pivotTable resource type</span></span>
+# <a name="pivottable-resource-type"></a><span data-ttu-id="69a46-103">Тип ресурсов pivotTable</span><span class="sxs-lookup"><span data-stu-id="69a46-103">pivotTable resource type</span></span>
 
-<span data-ttu-id="e361c-104">Представляет сводную таблицу Excel.</span><span class="sxs-lookup"><span data-stu-id="e361c-104">Represents an Excel PivotTable.</span></span>
+<span data-ttu-id="69a46-104">Представляет сводную таблицу Excel.</span><span class="sxs-lookup"><span data-stu-id="69a46-104">Represents an Excel PivotTable.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e361c-105">Методы</span><span class="sxs-lookup"><span data-stu-id="e361c-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="69a46-105">Методы</span><span class="sxs-lookup"><span data-stu-id="69a46-105">Methods</span></span>
 
-| <span data-ttu-id="e361c-106">Метод</span><span class="sxs-lookup"><span data-stu-id="e361c-106">Method</span></span>           | <span data-ttu-id="e361c-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="e361c-107">Return Type</span></span>    |<span data-ttu-id="e361c-108">Описание</span><span class="sxs-lookup"><span data-stu-id="e361c-108">Description</span></span>|
+| <span data-ttu-id="69a46-106">Метод</span><span class="sxs-lookup"><span data-stu-id="69a46-106">Method</span></span>           | <span data-ttu-id="69a46-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="69a46-107">Return Type</span></span>    |<span data-ttu-id="69a46-108">Описание</span><span class="sxs-lookup"><span data-stu-id="69a46-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="e361c-109">Получение workbookPivotTable</span><span class="sxs-lookup"><span data-stu-id="e361c-109">Get workbookPivotTable</span></span>](../api/workbookpivottable-get.md) | [<span data-ttu-id="e361c-110">workbookPivotTable</span><span class="sxs-lookup"><span data-stu-id="e361c-110">workbookPivotTable</span></span>](workbookpivottable.md) |<span data-ttu-id="e361c-111">Чтение свойств и связей объекта workbookPivotTable.</span><span class="sxs-lookup"><span data-stu-id="e361c-111">Read properties and relationships of workbookPivotTable object.</span></span>|
-|[<span data-ttu-id="e361c-112">Refresh</span><span class="sxs-lookup"><span data-stu-id="e361c-112">Refresh</span></span>](../api/workbookpivottable-refresh.md)|<span data-ttu-id="e361c-113">Нет</span><span class="sxs-lookup"><span data-stu-id="e361c-113">None</span></span>|<span data-ttu-id="e361c-114">Обновляет сводную таблицу.</span><span class="sxs-lookup"><span data-stu-id="e361c-114">Refreshes the PivotTable.</span></span> |
-|[<span data-ttu-id="e361c-115">Refreshall</span><span class="sxs-lookup"><span data-stu-id="e361c-115">Refreshall</span></span>](../api/workbookpivottable-refreshall.md)|<span data-ttu-id="e361c-116">Нет</span><span class="sxs-lookup"><span data-stu-id="e361c-116">None</span></span>|<span data-ttu-id="e361c-p101">Обновляет все таблицы на заданном листе. Обратите внимание, что это действие доступно только в коллекции сводных таблиц.</span><span class="sxs-lookup"><span data-stu-id="e361c-p101">Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.</span></span>|
+|[<span data-ttu-id="69a46-109">Получение workbookPivotTable</span><span class="sxs-lookup"><span data-stu-id="69a46-109">Get workbookPivotTable</span></span>](../api/workbookpivottable-get.md) | [<span data-ttu-id="69a46-110">workbookPivotTable</span><span class="sxs-lookup"><span data-stu-id="69a46-110">workbookPivotTable</span></span>](workbookpivottable.md) |<span data-ttu-id="69a46-111">Чтение свойств и связей объекта workbookPivotTable.</span><span class="sxs-lookup"><span data-stu-id="69a46-111">Read properties and relationships of workbookPivotTable object.</span></span>|
+|[<span data-ttu-id="69a46-112">Refresh</span><span class="sxs-lookup"><span data-stu-id="69a46-112">Refresh</span></span>](../api/workbookpivottable-refresh.md)|<span data-ttu-id="69a46-113">Нет</span><span class="sxs-lookup"><span data-stu-id="69a46-113">None</span></span>|<span data-ttu-id="69a46-114">Обновляет сводную таблицу.</span><span class="sxs-lookup"><span data-stu-id="69a46-114">Refreshes the PivotTable.</span></span> |
+|[<span data-ttu-id="69a46-115">Refreshall</span><span class="sxs-lookup"><span data-stu-id="69a46-115">Refreshall</span></span>](../api/workbookpivottable-refreshall.md)|<span data-ttu-id="69a46-116">Нет</span><span class="sxs-lookup"><span data-stu-id="69a46-116">None</span></span>|<span data-ttu-id="69a46-p101">Обновляет все таблицы на заданном листе. Обратите внимание, что это действие доступно только в коллекции сводных таблиц.</span><span class="sxs-lookup"><span data-stu-id="69a46-p101">Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="e361c-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="e361c-119">Properties</span></span>
-| <span data-ttu-id="e361c-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="e361c-120">Property</span></span>     | <span data-ttu-id="e361c-121">Тип</span><span class="sxs-lookup"><span data-stu-id="e361c-121">Type</span></span>   |<span data-ttu-id="e361c-122">Описание</span><span class="sxs-lookup"><span data-stu-id="e361c-122">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="69a46-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="69a46-119">Properties</span></span>
+| <span data-ttu-id="69a46-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="69a46-120">Property</span></span>     | <span data-ttu-id="69a46-121">Тип</span><span class="sxs-lookup"><span data-stu-id="69a46-121">Type</span></span>   |<span data-ttu-id="69a46-122">Описание</span><span class="sxs-lookup"><span data-stu-id="69a46-122">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e361c-123">id</span><span class="sxs-lookup"><span data-stu-id="e361c-123">id</span></span>|<span data-ttu-id="e361c-124">String</span><span class="sxs-lookup"><span data-stu-id="e361c-124">String</span></span>| <span data-ttu-id="e361c-p102">Идентификатор сводной таблицы.   Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="e361c-p102">Id of the PivotTable.   Read-only.</span></span>|
-|<span data-ttu-id="e361c-127">name</span><span class="sxs-lookup"><span data-stu-id="e361c-127">name</span></span>|<span data-ttu-id="e361c-128">String</span><span class="sxs-lookup"><span data-stu-id="e361c-128">String</span></span>|<span data-ttu-id="e361c-129">Имя сводной таблицы.</span><span class="sxs-lookup"><span data-stu-id="e361c-129">Name of the PivotTable.</span></span>    |
+|<span data-ttu-id="69a46-123">id</span><span class="sxs-lookup"><span data-stu-id="69a46-123">id</span></span>|<span data-ttu-id="69a46-124">String</span><span class="sxs-lookup"><span data-stu-id="69a46-124">String</span></span>| <span data-ttu-id="69a46-p102">Идентификатор сводной таблицы.   Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="69a46-p102">Id of the PivotTable.   Read-only.</span></span>|
+|<span data-ttu-id="69a46-127">name</span><span class="sxs-lookup"><span data-stu-id="69a46-127">name</span></span>|<span data-ttu-id="69a46-128">String</span><span class="sxs-lookup"><span data-stu-id="69a46-128">String</span></span>|<span data-ttu-id="69a46-129">Имя сводной таблицы.</span><span class="sxs-lookup"><span data-stu-id="69a46-129">Name of the PivotTable.</span></span>    |
 
-## <a name="relationships"></a><span data-ttu-id="e361c-130">Связи</span><span class="sxs-lookup"><span data-stu-id="e361c-130">Relationships</span></span>
-| <span data-ttu-id="e361c-131">Связь</span><span class="sxs-lookup"><span data-stu-id="e361c-131">Relationship</span></span> | <span data-ttu-id="e361c-132">Тип</span><span class="sxs-lookup"><span data-stu-id="e361c-132">Type</span></span>   |<span data-ttu-id="e361c-133">Описание</span><span class="sxs-lookup"><span data-stu-id="e361c-133">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="69a46-130">Связи</span><span class="sxs-lookup"><span data-stu-id="69a46-130">Relationships</span></span>
+| <span data-ttu-id="69a46-131">Связь</span><span class="sxs-lookup"><span data-stu-id="69a46-131">Relationship</span></span> | <span data-ttu-id="69a46-132">Тип</span><span class="sxs-lookup"><span data-stu-id="69a46-132">Type</span></span>   |<span data-ttu-id="69a46-133">Описание</span><span class="sxs-lookup"><span data-stu-id="69a46-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e361c-134">worksheet</span><span class="sxs-lookup"><span data-stu-id="e361c-134">worksheet</span></span>|[<span data-ttu-id="e361c-135">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="e361c-135">WorkbookWorksheet</span></span>](worksheet.md)| <span data-ttu-id="e361c-p103">Лист, содержащий текущую сводную таблицу. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="e361c-p103">The worksheet containing the current PivotTable. Read-only.</span></span>   |
+|<span data-ttu-id="69a46-134">worksheet</span><span class="sxs-lookup"><span data-stu-id="69a46-134">worksheet</span></span>|[<span data-ttu-id="69a46-135">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="69a46-135">WorkbookWorksheet</span></span>](worksheet.md)| <span data-ttu-id="69a46-p103">Лист, содержащий текущую сводную таблицу. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="69a46-p103">The worksheet containing the current PivotTable. Read-only.</span></span>   |
 
-## <a name="json-representation"></a><span data-ttu-id="e361c-138">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e361c-138">JSON representation</span></span>
-<span data-ttu-id="e361c-139">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e361c-139">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="69a46-138">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="69a46-138">JSON representation</span></span>
+<span data-ttu-id="69a46-139">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="69a46-139">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

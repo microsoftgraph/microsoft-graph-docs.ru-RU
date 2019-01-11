@@ -1,52 +1,53 @@
 ---
 title: Получение шаблона параметр каталога
 description: Шаблон каталога параметр представляет шаблон параметры, с которых могут быть созданы параметры клиента. Эта операция позволяет получать свойства объекта directorySettingTemplate, включая доступные параметры и значения по умолчанию.
-ms.openlocfilehash: 1928642883632a672ddaccb9181f6366ade5ce04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 55312fd4d7e2a77821dc7ad18ca3f67bded261df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075318"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888174"
 ---
-# <a name="get-a-directory-setting-template"></a><span data-ttu-id="9da97-104">Получение шаблона параметр каталога</span><span class="sxs-lookup"><span data-stu-id="9da97-104">Get a directory setting template</span></span>
+# <a name="get-a-directory-setting-template"></a><span data-ttu-id="9c8dd-104">Получение шаблона параметр каталога</span><span class="sxs-lookup"><span data-stu-id="9c8dd-104">Get a directory setting template</span></span>
 
-> <span data-ttu-id="9da97-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="9da97-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9da97-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9da97-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9c8dd-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9c8dd-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="9da97-107">Шаблон каталога параметр представляет шаблон параметры, с которых могут быть созданы параметры клиента.</span><span class="sxs-lookup"><span data-stu-id="9da97-107">A directory setting template represents a template of settings from which settings may be created within a tenant.</span></span> <span data-ttu-id="9da97-108">Эта операция позволяет получать свойства объекта directorySettingTemplate, включая доступные параметры и значения по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="9da97-108">This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.</span></span>
+<span data-ttu-id="9c8dd-107">Шаблон каталога параметр представляет шаблон параметры, с которых могут быть созданы параметры клиента.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-107">A directory setting template represents a template of settings from which settings may be created within a tenant.</span></span> <span data-ttu-id="9c8dd-108">Эта операция позволяет получать свойства объекта directorySettingTemplate, включая доступные параметры и значения по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-108">This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.</span></span>
 
-> <span data-ttu-id="9da97-109">**Примечание**: версия /beta этот интерфейс API является только относится к группам.</span><span class="sxs-lookup"><span data-stu-id="9da97-109">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="9da97-110">Для *получения groupSettingTemplate*переименован версии /v1.0 этот интерфейс API.</span><span class="sxs-lookup"><span data-stu-id="9da97-110">The /v1.0 version of this API has been renamed to *Get groupSettingTemplate*.</span></span>
+> <span data-ttu-id="9c8dd-109">**Примечание**: версия /beta этот интерфейс API является только относится к группам.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-109">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="9c8dd-110">Для *получения groupSettingTemplate*переименован версии /v1.0 этот интерфейс API.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-110">The /v1.0 version of this API has been renamed to *Get groupSettingTemplate*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9da97-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9da97-111">Permissions</span></span>
-<span data-ttu-id="9da97-p105">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9da97-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9c8dd-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9c8dd-111">Permissions</span></span>
+<span data-ttu-id="9c8dd-p105">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9c8dd-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9da97-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9da97-114">Permission type</span></span>      | <span data-ttu-id="9da97-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9da97-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9c8dd-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9c8dd-114">Permission type</span></span>      | <span data-ttu-id="9c8dd-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9c8dd-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9da97-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9da97-116">Delegated (work or school account)</span></span> | <span data-ttu-id="9da97-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9da97-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="9da97-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9da97-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9da97-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9da97-119">Not supported.</span></span>    |
-|<span data-ttu-id="9da97-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9da97-120">Application</span></span> | <span data-ttu-id="9da97-121">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9da97-121">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="9c8dd-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9c8dd-116">Delegated (work or school account)</span></span> | <span data-ttu-id="9c8dd-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9c8dd-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="9c8dd-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9c8dd-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c8dd-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-119">Not supported.</span></span>    |
+|<span data-ttu-id="9c8dd-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9c8dd-120">Application</span></span> | <span data-ttu-id="9c8dd-121">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c8dd-121">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9da97-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9da97-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9c8dd-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9c8dd-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directorySettingTemplates/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="9da97-123">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9da97-123">Optional query parameters</span></span>
-<span data-ttu-id="9da97-124">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9da97-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9c8dd-123">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9c8dd-123">Optional query parameters</span></span>
+<span data-ttu-id="9c8dd-124">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9da97-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9da97-125">Request headers</span></span>
-| <span data-ttu-id="9da97-126">Имя</span><span class="sxs-lookup"><span data-stu-id="9da97-126">Name</span></span>      |<span data-ttu-id="9da97-127">Описание</span><span class="sxs-lookup"><span data-stu-id="9da97-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9c8dd-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9c8dd-125">Request headers</span></span>
+| <span data-ttu-id="9c8dd-126">Имя</span><span class="sxs-lookup"><span data-stu-id="9c8dd-126">Name</span></span>      |<span data-ttu-id="9c8dd-127">Описание</span><span class="sxs-lookup"><span data-stu-id="9c8dd-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="9da97-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9da97-128">Authorization</span></span>  | <span data-ttu-id="9da97-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9da97-p106">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="9c8dd-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9c8dd-128">Authorization</span></span>  | <span data-ttu-id="9c8dd-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-p106">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9da97-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9da97-131">Request body</span></span>
-<span data-ttu-id="9da97-132">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9da97-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9c8dd-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9c8dd-131">Request body</span></span>
+<span data-ttu-id="9c8dd-132">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9da97-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="9da97-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9c8dd-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="9c8dd-133">Response</span></span>
 
-<span data-ttu-id="9da97-134">Успешно завершена, этот метод возвращает `200 OK` объект [directorySettingTemplate](../resources/directorysettingtemplate.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="9da97-134">If successful, this method returns a `200 OK` response code and [directorySettingTemplate](../resources/directorysettingtemplate.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9da97-135">Пример</span><span class="sxs-lookup"><span data-stu-id="9da97-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9da97-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="9da97-136">Request</span></span>
-<span data-ttu-id="9da97-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9da97-137">Here is an example of the request.</span></span>
+<span data-ttu-id="9c8dd-134">Успешно завершена, этот метод возвращает `200 OK` объект [directorySettingTemplate](../resources/directorysettingtemplate.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-134">If successful, this method returns a `200 OK` response code and [directorySettingTemplate](../resources/directorysettingtemplate.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9c8dd-135">Пример</span><span class="sxs-lookup"><span data-stu-id="9c8dd-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9c8dd-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="9c8dd-136">Request</span></span>
+<span data-ttu-id="9c8dd-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directorysettingtemplate"
@@ -54,9 +55,8 @@ GET /directorySettingTemplates/{id}
 ```http
 GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="9da97-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="9da97-138">Response</span></span>
-<span data-ttu-id="9da97-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="9da97-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9c8dd-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="9c8dd-138">Response</span></span>
+<span data-ttu-id="9c8dd-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="9c8dd-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
