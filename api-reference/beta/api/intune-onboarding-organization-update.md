@@ -2,30 +2,31 @@
 title: Обновление организации
 description: Обновление свойств объекта organization.
 author: tfitzmac
-ms.openlocfilehash: 5037fa0fb14ec327fd24dc3fa12575037487468d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 67ce9fd0181c3f60f3615a29313e2da642e697ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862148"
 ---
-# <a name="update-organization"></a><span data-ttu-id="129f9-103">Обновление организации</span><span class="sxs-lookup"><span data-stu-id="129f9-103">Update organization</span></span>
+# <a name="update-organization"></a><span data-ttu-id="92d22-103">Обновление организации</span><span class="sxs-lookup"><span data-stu-id="92d22-103">Update organization</span></span>
 
-> <span data-ttu-id="129f9-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="129f9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="129f9-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="129f9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="92d22-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="92d22-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="92d22-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="92d22-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="129f9-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="129f9-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="92d22-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="92d22-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="129f9-107">Обновление свойств объекта [organization](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="129f9-107">Update the properties of a [organization](../resources/intune-onboarding-organization.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="129f9-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="129f9-108">Prerequisites</span></span>
-<span data-ttu-id="129f9-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="129f9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="92d22-107">Обновление свойств объекта [organization](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="92d22-107">Update the properties of a [organization](../resources/intune-onboarding-organization.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="92d22-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="92d22-108">Prerequisites</span></span>
+<span data-ttu-id="92d22-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="92d22-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="129f9-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="129f9-111">Permission type</span></span>|<span data-ttu-id="129f9-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="129f9-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="92d22-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="92d22-111">Permission type</span></span>|<span data-ttu-id="92d22-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="92d22-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="129f9-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="129f9-113">Delegated (work or school account)</span></span>|<span data-ttu-id="129f9-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="129f9-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="129f9-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="129f9-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="129f9-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="129f9-116">Not supported.</span></span>|
-|<span data-ttu-id="129f9-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="129f9-117">Application</span></span>|<span data-ttu-id="129f9-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="129f9-118">Not supported.</span></span>|
+|<span data-ttu-id="92d22-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="92d22-113">Delegated (work or school account)</span></span>|<span data-ttu-id="92d22-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="92d22-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="92d22-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="92d22-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="92d22-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="92d22-116">Not supported.</span></span>|
+|<span data-ttu-id="92d22-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="92d22-117">Application</span></span>|<span data-ttu-id="92d22-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="92d22-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="129f9-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="129f9-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="92d22-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="92d22-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,32 +35,32 @@ ms.locfileid: "27313134"
 PATCH /organization/{organizationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="129f9-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="129f9-120">Request headers</span></span>
-|<span data-ttu-id="129f9-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="129f9-121">Header</span></span>|<span data-ttu-id="129f9-122">Значение</span><span class="sxs-lookup"><span data-stu-id="129f9-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="92d22-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="92d22-120">Request headers</span></span>
+|<span data-ttu-id="92d22-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="92d22-121">Header</span></span>|<span data-ttu-id="92d22-122">Значение</span><span class="sxs-lookup"><span data-stu-id="92d22-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="129f9-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="129f9-123">Authorization</span></span>|<span data-ttu-id="129f9-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="129f9-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="129f9-125">Accept</span><span class="sxs-lookup"><span data-stu-id="129f9-125">Accept</span></span>|<span data-ttu-id="129f9-126">application/json</span><span class="sxs-lookup"><span data-stu-id="129f9-126">application/json</span></span>|
+|<span data-ttu-id="92d22-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="92d22-123">Authorization</span></span>|<span data-ttu-id="92d22-124">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="92d22-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="92d22-125">Accept</span><span class="sxs-lookup"><span data-stu-id="92d22-125">Accept</span></span>|<span data-ttu-id="92d22-126">application/json</span><span class="sxs-lookup"><span data-stu-id="92d22-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="129f9-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="129f9-127">Request body</span></span>
-<span data-ttu-id="129f9-128">В теле запроса добавьте представление объекта [organization](../resources/intune-onboarding-organization.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="129f9-128">In the request body, supply a JSON representation for the [organization](../resources/intune-onboarding-organization.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="92d22-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="92d22-127">Request body</span></span>
+<span data-ttu-id="92d22-128">В теле запроса добавьте представление объекта [organization](../resources/intune-onboarding-organization.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="92d22-128">In the request body, supply a JSON representation for the [organization](../resources/intune-onboarding-organization.md) object.</span></span>
 
-<span data-ttu-id="129f9-129">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [organization](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="129f9-129">The following table shows the properties that are required when you create the [organization](../resources/intune-onboarding-organization.md).</span></span>
+<span data-ttu-id="92d22-129">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [organization](../resources/intune-onboarding-organization.md).</span><span class="sxs-lookup"><span data-stu-id="92d22-129">The following table shows the properties that are required when you create the [organization](../resources/intune-onboarding-organization.md).</span></span>
 
-|<span data-ttu-id="129f9-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="129f9-130">Property</span></span>|<span data-ttu-id="129f9-131">Тип</span><span class="sxs-lookup"><span data-stu-id="129f9-131">Type</span></span>|<span data-ttu-id="129f9-132">Описание</span><span class="sxs-lookup"><span data-stu-id="129f9-132">Description</span></span>|
+|<span data-ttu-id="92d22-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="92d22-130">Property</span></span>|<span data-ttu-id="92d22-131">Тип</span><span class="sxs-lookup"><span data-stu-id="92d22-131">Type</span></span>|<span data-ttu-id="92d22-132">Описание</span><span class="sxs-lookup"><span data-stu-id="92d22-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="129f9-133">id</span><span class="sxs-lookup"><span data-stu-id="129f9-133">id</span></span>|<span data-ttu-id="129f9-134">Строка</span><span class="sxs-lookup"><span data-stu-id="129f9-134">String</span></span>|<span data-ttu-id="129f9-135">GUID объекта.</span><span class="sxs-lookup"><span data-stu-id="129f9-135">The GUID for the object.</span></span>|
-|<span data-ttu-id="129f9-136">mobileDeviceManagementAuthority</span><span class="sxs-lookup"><span data-stu-id="129f9-136">mobileDeviceManagementAuthority</span></span>|[<span data-ttu-id="129f9-137">mdmAuthority</span><span class="sxs-lookup"><span data-stu-id="129f9-137">mdmAuthority</span></span>](../resources/intune-onboarding-mdmauthority.md)|<span data-ttu-id="129f9-138">Центр управления мобильными устройствами.</span><span class="sxs-lookup"><span data-stu-id="129f9-138">Mobile device management authority.</span></span> <span data-ttu-id="129f9-139">Возможные значения: `unknown`, `intune`, `sccm`, `office365`.</span><span class="sxs-lookup"><span data-stu-id="129f9-139">Possible values are: `unknown`, `intune`, `sccm`, `office365`.</span></span>|
-|<span data-ttu-id="129f9-140">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="129f9-140">certificateConnectorSetting</span></span>|[<span data-ttu-id="129f9-141">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="129f9-141">certificateConnectorSetting</span></span>](../resources/intune-onboarding-certificateconnectorsetting.md)|<span data-ttu-id="129f9-142">Параметр соединителя сертификата.</span><span class="sxs-lookup"><span data-stu-id="129f9-142">Certificate connector setting.</span></span>|
+|<span data-ttu-id="92d22-133">id</span><span class="sxs-lookup"><span data-stu-id="92d22-133">id</span></span>|<span data-ttu-id="92d22-134">Строка</span><span class="sxs-lookup"><span data-stu-id="92d22-134">String</span></span>|<span data-ttu-id="92d22-135">GUID объекта.</span><span class="sxs-lookup"><span data-stu-id="92d22-135">The GUID for the object.</span></span>|
+|<span data-ttu-id="92d22-136">mobileDeviceManagementAuthority</span><span class="sxs-lookup"><span data-stu-id="92d22-136">mobileDeviceManagementAuthority</span></span>|[<span data-ttu-id="92d22-137">mdmAuthority</span><span class="sxs-lookup"><span data-stu-id="92d22-137">mdmAuthority</span></span>](../resources/intune-onboarding-mdmauthority.md)|<span data-ttu-id="92d22-138">Центр управления мобильными устройствами.</span><span class="sxs-lookup"><span data-stu-id="92d22-138">Mobile device management authority.</span></span> <span data-ttu-id="92d22-139">Возможные значения: `unknown`, `intune`, `sccm`, `office365`.</span><span class="sxs-lookup"><span data-stu-id="92d22-139">Possible values are: `unknown`, `intune`, `sccm`, `office365`.</span></span>|
+|<span data-ttu-id="92d22-140">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="92d22-140">certificateConnectorSetting</span></span>|[<span data-ttu-id="92d22-141">certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="92d22-141">certificateConnectorSetting</span></span>](../resources/intune-onboarding-certificateconnectorsetting.md)|<span data-ttu-id="92d22-142">Параметр соединителя сертификата.</span><span class="sxs-lookup"><span data-stu-id="92d22-142">Certificate connector setting.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="129f9-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="129f9-143">Response</span></span>
-<span data-ttu-id="129f9-144">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [organization](../resources/intune-onboarding-organization.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="129f9-144">If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune-onboarding-organization.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="92d22-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="92d22-143">Response</span></span>
+<span data-ttu-id="92d22-144">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [organization](../resources/intune-onboarding-organization.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="92d22-144">If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune-onboarding-organization.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="129f9-145">Пример</span><span class="sxs-lookup"><span data-stu-id="129f9-145">Example</span></span>
-### <a name="request"></a><span data-ttu-id="129f9-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="129f9-146">Request</span></span>
-<span data-ttu-id="129f9-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="129f9-147">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="92d22-145">Пример</span><span class="sxs-lookup"><span data-stu-id="92d22-145">Example</span></span>
+### <a name="request"></a><span data-ttu-id="92d22-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="92d22-146">Request</span></span>
+<span data-ttu-id="92d22-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="92d22-147">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}
 Content-type: application/json
@@ -79,8 +80,8 @@ Content-length: 441
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="129f9-148">Ответ</span><span class="sxs-lookup"><span data-stu-id="129f9-148">Response</span></span>
-<span data-ttu-id="129f9-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="129f9-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="92d22-148">Ответ</span><span class="sxs-lookup"><span data-stu-id="92d22-148">Response</span></span>
+<span data-ttu-id="92d22-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="92d22-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
