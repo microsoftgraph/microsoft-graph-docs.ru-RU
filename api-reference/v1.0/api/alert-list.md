@@ -2,28 +2,29 @@
 title: перечисление оповещений;
 description: Получение списка объектов оповещения.
 author: Preetikr
-ms.openlocfilehash: 64589fa04d4b6b11fb2ec435f6531df2e2f58a8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: eac124cfd49f333c2c44053f21894f90f6d47582
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324033"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859054"
 ---
-# <a name="list-alerts"></a><span data-ttu-id="3dae2-103">перечисление оповещений;</span><span class="sxs-lookup"><span data-stu-id="3dae2-103">List alerts</span></span>
+# <a name="list-alerts"></a><span data-ttu-id="6bb37-103">перечисление оповещений;</span><span class="sxs-lookup"><span data-stu-id="6bb37-103">List alerts</span></span>
 
-<span data-ttu-id="3dae2-104">Получение списка объектов [оповещение](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="3dae2-104">Retrieve a list of [alert](../resources/alert.md) objects.</span></span>
+<span data-ttu-id="6bb37-104">Получение списка объектов [оповещение](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="6bb37-104">Retrieve a list of [alert](../resources/alert.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3dae2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3dae2-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6bb37-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6bb37-105">Permissions</span></span>
 
-<span data-ttu-id="3dae2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3dae2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6bb37-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6bb37-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3dae2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3dae2-108">Permission type</span></span>      | <span data-ttu-id="3dae2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3dae2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6bb37-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6bb37-108">Permission type</span></span>      | <span data-ttu-id="6bb37-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6bb37-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3dae2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3dae2-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="3dae2-111">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3dae2-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>  |
-|<span data-ttu-id="3dae2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3dae2-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3dae2-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3dae2-113">Not supported.</span></span>  |
-|<span data-ttu-id="3dae2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3dae2-114">Application</span></span> | <span data-ttu-id="3dae2-115">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3dae2-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="6bb37-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6bb37-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="6bb37-111">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6bb37-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>  |
+|<span data-ttu-id="6bb37-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6bb37-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="6bb37-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6bb37-113">Not supported.</span></span>  |
+|<span data-ttu-id="6bb37-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6bb37-114">Application</span></span> | <span data-ttu-id="6bb37-115">SecurityEvents.Read.All SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6bb37-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3dae2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3dae2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6bb37-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6bb37-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,40 +36,40 @@ GET /security/alerts?$filter={property} eq '{property-value}'&$top=5
 GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{property-value}'
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3dae2-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="3dae2-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6bb37-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="6bb37-117">Optional query parameters</span></span>
 
-<span data-ttu-id="3dae2-118">Этот метод поддерживает следующие [Параметры запроса OData](/graph/query-parameters) для настройки ответа:</span><span class="sxs-lookup"><span data-stu-id="3dae2-118">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
+<span data-ttu-id="6bb37-118">Этот метод поддерживает следующие [Параметры запроса OData](/graph/query-parameters) для настройки ответа:</span><span class="sxs-lookup"><span data-stu-id="6bb37-118">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- <span data-ttu-id="3dae2-119">`$top`Возвращает совокупные верхней результаты из каждого API поставщика безопасности.</span><span class="sxs-lookup"><span data-stu-id="3dae2-119">`$top` will return the aggregated top results from each security API provider.</span></span>  
+- <span data-ttu-id="6bb37-119">`$top`Возвращает совокупные верхней результаты из каждого API поставщика безопасности.</span><span class="sxs-lookup"><span data-stu-id="6bb37-119">`$top` will return the aggregated top results from each security API provider.</span></span>  
 
-<span data-ttu-id="3dae2-120">Чтобы вернуть набор альтернативных свойства, используйте OData `$select` параметр для определения набора свойств **оповещения** , которые будут запроса.</span><span class="sxs-lookup"><span data-stu-id="3dae2-120">To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.</span></span>  <span data-ttu-id="3dae2-121">Например, для возврата **assignedTo**, **категории**и свойства **уровень серьезности** , добавьте следующий запрос: `$select=assignedTo,category,severity`.</span><span class="sxs-lookup"><span data-stu-id="3dae2-121">For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.</span></span>
+<span data-ttu-id="6bb37-120">Чтобы вернуть набор альтернативных свойства, используйте OData `$select` параметр для определения набора свойств **оповещения** , которые будут запроса.</span><span class="sxs-lookup"><span data-stu-id="6bb37-120">To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.</span></span>  <span data-ttu-id="6bb37-121">Например, для возврата **assignedTo**, **категории**и свойства **уровень серьезности** , добавьте следующий запрос: `$select=assignedTo,category,severity`.</span><span class="sxs-lookup"><span data-stu-id="6bb37-121">For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.</span></span>
 
-> <span data-ttu-id="3dae2-122">**Примечание:** `$top` имеет более 1000 оповещения и сочетание `$top`  +  `$skip` не может превышать 6000 оповещения.</span><span class="sxs-lookup"><span data-stu-id="3dae2-122">**Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts.</span></span> <span data-ttu-id="3dae2-123">Например `/security/alerts?$top=10&$skip=5990` возвращает `200 OK` код ответа, но `/security/alerts?$top=10&$skip=5991` возвращает `400 Bad Request` код ответа.</span><span class="sxs-lookup"><span data-stu-id="3dae2-123">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>  <span data-ttu-id="3dae2-124">Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="3dae2-124">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+> <span data-ttu-id="6bb37-122">**Примечание:** `$top` имеет более 1000 оповещения и сочетание `$top`  +  `$skip` не может превышать 6000 оповещения.</span><span class="sxs-lookup"><span data-stu-id="6bb37-122">**Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts.</span></span> <span data-ttu-id="6bb37-123">Например `/security/alerts?$top=10&$skip=5990` возвращает `200 OK` код ответа, но `/security/alerts?$top=10&$skip=5991` возвращает `400 Bad Request` код ответа.</span><span class="sxs-lookup"><span data-stu-id="6bb37-123">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>  <span data-ttu-id="6bb37-124">Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="6bb37-124">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3dae2-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3dae2-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6bb37-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6bb37-125">Request headers</span></span>
 
-| <span data-ttu-id="3dae2-126">Имя</span><span class="sxs-lookup"><span data-stu-id="3dae2-126">Name</span></span>      |<span data-ttu-id="3dae2-127">Описание</span><span class="sxs-lookup"><span data-stu-id="3dae2-127">Description</span></span>|
+| <span data-ttu-id="6bb37-126">Имя</span><span class="sxs-lookup"><span data-stu-id="6bb37-126">Name</span></span>      |<span data-ttu-id="6bb37-127">Описание</span><span class="sxs-lookup"><span data-stu-id="6bb37-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3dae2-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3dae2-128">Authorization</span></span>  | <span data-ttu-id="3dae2-p104">В заголовке указывается "Bearer {код}". Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3dae2-p104">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="6bb37-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="6bb37-128">Authorization</span></span>  | <span data-ttu-id="6bb37-p104">В заголовке указывается "Bearer {код}". Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6bb37-p104">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3dae2-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3dae2-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6bb37-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="6bb37-131">Request body</span></span>
 
-<span data-ttu-id="3dae2-132">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3dae2-132">Do not supply a request body for this method.</span></span> <span data-ttu-id="3dae2-133">Текст запроса будет игнорироваться.</span><span class="sxs-lookup"><span data-stu-id="3dae2-133">The request body will be ignored.</span></span>
+<span data-ttu-id="6bb37-132">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6bb37-132">Do not supply a request body for this method.</span></span> <span data-ttu-id="6bb37-133">Текст запроса будет игнорироваться.</span><span class="sxs-lookup"><span data-stu-id="6bb37-133">The request body will be ignored.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3dae2-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="3dae2-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6bb37-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="6bb37-134">Response</span></span>
 
-<span data-ttu-id="3dae2-135">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов **оповещения** в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="3dae2-135">If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.</span></span> <span data-ttu-id="3dae2-136">Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="3dae2-136">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="3dae2-137">Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="3dae2-137">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="6bb37-135">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов **оповещения** в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="6bb37-135">If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.</span></span> <span data-ttu-id="6bb37-136">Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="6bb37-136">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="6bb37-137">Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="6bb37-137">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="3dae2-138">Пример</span><span class="sxs-lookup"><span data-stu-id="3dae2-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6bb37-138">Пример</span><span class="sxs-lookup"><span data-stu-id="6bb37-138">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3dae2-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="3dae2-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6bb37-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="6bb37-139">Request</span></span>
 
-<span data-ttu-id="3dae2-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3dae2-140">The following is an example of the request.</span></span>
+<span data-ttu-id="6bb37-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6bb37-140">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_alerts"
@@ -78,11 +79,11 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 
-### <a name="response"></a><span data-ttu-id="3dae2-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="3dae2-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6bb37-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="6bb37-141">Response</span></span>
 
-<span data-ttu-id="3dae2-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3dae2-142">The following is an example of the response.</span></span>
+<span data-ttu-id="6bb37-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6bb37-142">The following is an example of the response.</span></span>
 
-><span data-ttu-id="3dae2-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3dae2-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="6bb37-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6bb37-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

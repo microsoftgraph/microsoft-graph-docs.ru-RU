@@ -1,25 +1,26 @@
 ---
 title: Тип ресурса plannerAppliedCategories
 description: Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или метки), которые были применены к задаче. Он является частью объекта plannerTask.
-ms.openlocfilehash: 0bb7987c3da62f2302b08ab43fa00d09763e0c1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a47317f907b8ee934a59a320af67e94ce6d3bf8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081155"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856016"
 ---
-# <a name="plannerappliedcategories-resource-type"></a><span data-ttu-id="0fdda-104">Тип ресурса plannerAppliedCategories</span><span class="sxs-lookup"><span data-stu-id="0fdda-104">plannerAppliedCategories resource type</span></span>
+# <a name="plannerappliedcategories-resource-type"></a><span data-ttu-id="20647-104">Тип ресурса plannerAppliedCategories</span><span class="sxs-lookup"><span data-stu-id="20647-104">plannerAppliedCategories resource type</span></span>
 
-> <span data-ttu-id="0fdda-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0fdda-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0fdda-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0fdda-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="20647-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="20647-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="20647-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="20647-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="0fdda-p103">Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или меток), примененных к задаче. Он является частью объекта [plannerTask](plannertask.md). К задаче можно применить до 6 категорий. Описания категорий, например `category1` и `category2`, являются частью объекта [сведений о плане](plannerplandetails.md). Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="0fdda-p103">The **AppliedCategoriesCollection** resource represents the collection of categories (or labels) that have been applied to a task. It is part of the [plannerTask](plannertask.md) object. There can be up to 6 categories applied to a task. Category descriptions, e.g. `category1`, `category2` etc., are part of the [plan details](plannerplandetails.md) object. This is an open type.</span></span>
+<span data-ttu-id="20647-p103">Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или меток), примененных к задаче. Он является частью объекта [plannerTask](plannertask.md). К задаче можно применить до 6 категорий. Описания категорий, например `category1` и `category2`, являются частью объекта [сведений о плане](plannerplandetails.md). Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="20647-p103">The **AppliedCategoriesCollection** resource represents the collection of categories (or labels) that have been applied to a task. It is part of the [plannerTask](plannertask.md) object. There can be up to 6 categories applied to a task. Category descriptions, e.g. `category1`, `category2` etc., are part of the [plan details](plannerplandetails.md) object. This is an open type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0fdda-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="0fdda-112">Properties</span></span>
-<span data-ttu-id="0fdda-p104">Клиент может определять свойства открытого типа. В этом случае клиент должен указать значения для свойств `category1`, `category2`, `category3`, `category4`, `category5` или `category6`, а также использовать логическое значение `true` при применении соответствующих категорий к задаче. Ниже показан пример. Если не применить свойства, они будут автоматически удалены. Для этого им будет присвоено логическое значение `false`.</span><span class="sxs-lookup"><span data-stu-id="0fdda-p104">Properties of an Open Type can be defined by the client. In this case though, the client must provide `category1`, `category2`, `category3`, `category4`, `category5` and/or `category6` as properties with their values being the `true` boolean when the corresponding categories are applied on the task. Example is shown below. When they do not apply, properties are automatically removed by setting their values to the `false` boolean.</span></span> 
+## <a name="properties"></a><span data-ttu-id="20647-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="20647-112">Properties</span></span>
+<span data-ttu-id="20647-p104">Клиент может определять свойства открытого типа. В этом случае клиент должен указать значения для свойств `category1`, `category2`, `category3`, `category4`, `category5` или `category6`, а также использовать логическое значение `true` при применении соответствующих категорий к задаче. Ниже показан пример. Если не применить свойства, они будут автоматически удалены. Для этого им будет присвоено логическое значение `false`.</span><span class="sxs-lookup"><span data-stu-id="20647-p104">Properties of an Open Type can be defined by the client. In this case though, the client must provide `category1`, `category2`, `category3`, `category4`, `category5` and/or `category6` as properties with their values being the `true` boolean when the corresponding categories are applied on the task. Example is shown below. When they do not apply, properties are automatically removed by setting their values to the `false` boolean.</span></span> 
 
-## <a name="json-representation"></a><span data-ttu-id="0fdda-117">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="0fdda-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="20647-117">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="20647-117">JSON representation</span></span>
 
-<span data-ttu-id="0fdda-118">Ниже показано представление ресурса в формате JSON</span><span class="sxs-lookup"><span data-stu-id="0fdda-118">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="20647-118">Ниже показано представление ресурса в формате JSON</span><span class="sxs-lookup"><span data-stu-id="20647-118">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,7 +36,7 @@ ms.locfileid: "27081155"
 }
 ```
 
-<span data-ttu-id="0fdda-119">Пример:</span><span class="sxs-lookup"><span data-stu-id="0fdda-119">Example:</span></span> 
+<span data-ttu-id="20647-119">Пример:</span><span class="sxs-lookup"><span data-stu-id="20647-119">Example:</span></span> 
 
 ```json
 {
