@@ -2,41 +2,42 @@
 title: Получение message
 description: Извлечение свойств и связи объекта message.
 author: angelgolfer-ms
-ms.openlocfilehash: 8408e9ef0347721978eb1be00c64ce1f66f882d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c83d0e9a59a69ebf0e20cfa0f883301b827c84f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352684"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852390"
 ---
-# <a name="get-message"></a><span data-ttu-id="b384b-103">Получение message</span><span class="sxs-lookup"><span data-stu-id="b384b-103">Get message</span></span>
+# <a name="get-message"></a><span data-ttu-id="6b163-103">Получение message</span><span class="sxs-lookup"><span data-stu-id="6b163-103">Get message</span></span>
 
-> <span data-ttu-id="b384b-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b384b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b384b-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b384b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6b163-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6b163-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6b163-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6b163-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="b384b-106">Извлечение свойств и связи объекта [message](../resources/message.md) .</span><span class="sxs-lookup"><span data-stu-id="b384b-106">Retrieve the properties and relationships of the [message](../resources/message.md) object.</span></span>
+<span data-ttu-id="6b163-106">Извлечение свойств и связи объекта [message](../resources/message.md) .</span><span class="sxs-lookup"><span data-stu-id="6b163-106">Retrieve the properties and relationships of the [message](../resources/message.md) object.</span></span>
 
-<span data-ttu-id="b384b-107">К примеру можно получить сообщение и разверните все экземпляры [упомянуть](../resources/mention.md) в сообщении.</span><span class="sxs-lookup"><span data-stu-id="b384b-107">For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.</span></span>
+<span data-ttu-id="6b163-107">К примеру можно получить сообщение и разверните все экземпляры [упомянуть](../resources/mention.md) в сообщении.</span><span class="sxs-lookup"><span data-stu-id="6b163-107">For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.</span></span>
 
-<span data-ttu-id="b384b-108">Существует два сценария, где приложения можно получить сообщение в почтовой папки другого пользователя.</span><span class="sxs-lookup"><span data-stu-id="b384b-108">There are two scenarios where an app can get a message in another user's mail folder:</span></span>
+<span data-ttu-id="6b163-108">Существует два сценария, где приложения можно получить сообщение в почтовой папки другого пользователя.</span><span class="sxs-lookup"><span data-stu-id="6b163-108">There are two scenarios where an app can get a message in another user's mail folder:</span></span>
 
-* <span data-ttu-id="b384b-109">Если приложение имеет разрешения приложения, или,</span><span class="sxs-lookup"><span data-stu-id="b384b-109">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="b384b-110">Если приложение имеет соответствующий делегированных [разрешений](#permissions) от одного пользователя и другой пользователь доступ к папке почты с этим пользователем или, предоставленное делегированный доступ для пользователя, который.</span><span class="sxs-lookup"><span data-stu-id="b384b-110">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="b384b-111">В разделе [сведения и примеры](/graph/outlook-share-messages-folders).</span><span class="sxs-lookup"><span data-stu-id="b384b-111">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+* <span data-ttu-id="6b163-109">Если приложение имеет разрешения приложения, или,</span><span class="sxs-lookup"><span data-stu-id="6b163-109">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="6b163-110">Если приложение имеет соответствующий делегированных [разрешений](#permissions) от одного пользователя и другой пользователь доступ к папке почты с этим пользователем или, предоставленное делегированный доступ для пользователя, который.</span><span class="sxs-lookup"><span data-stu-id="6b163-110">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="6b163-111">В разделе [сведения и примеры](/graph/outlook-share-messages-folders).</span><span class="sxs-lookup"><span data-stu-id="6b163-111">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
 
-<span data-ttu-id="b384b-112">Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `GET` можно также получить настраиваемые свойства и данные расширения в экземпляре **message**.</span><span class="sxs-lookup"><span data-stu-id="b384b-112">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.</span></span>
+<span data-ttu-id="6b163-112">Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `GET` можно также получить настраиваемые свойства и данные расширения в экземпляре **message**.</span><span class="sxs-lookup"><span data-stu-id="6b163-112">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="b384b-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b384b-113">Permissions</span></span>
-<span data-ttu-id="b384b-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b384b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6b163-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6b163-113">Permissions</span></span>
+<span data-ttu-id="6b163-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6b163-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b384b-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b384b-116">Permission type</span></span>      | <span data-ttu-id="b384b-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b384b-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6b163-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6b163-116">Permission type</span></span>      | <span data-ttu-id="6b163-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6b163-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b384b-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b384b-118">Delegated (work or school account)</span></span> | <span data-ttu-id="b384b-119">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="b384b-119">Mail.Read</span></span>    |
-|<span data-ttu-id="b384b-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b384b-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b384b-121">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="b384b-121">Mail.Read</span></span>    |
-|<span data-ttu-id="b384b-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b384b-122">Application</span></span> | <span data-ttu-id="b384b-123">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="b384b-123">Mail.Read</span></span> |
+|<span data-ttu-id="6b163-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6b163-118">Delegated (work or school account)</span></span> | <span data-ttu-id="6b163-119">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="6b163-119">Mail.Read</span></span>    |
+|<span data-ttu-id="6b163-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6b163-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b163-121">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="6b163-121">Mail.Read</span></span>    |
+|<span data-ttu-id="6b163-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6b163-122">Application</span></span> | <span data-ttu-id="6b163-123">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="6b163-123">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b384b-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b384b-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6b163-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6b163-124">HTTP request</span></span>
 
-<span data-ttu-id="b384b-125">Для получения указанного сообщения:<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="b384b-125">To get the specified message: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="6b163-125">Для получения указанного сообщения:<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="6b163-125">To get the specified message: <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /me/messages/{id}
 GET /users/{id | userPrincipalName}/messages/{id}
@@ -44,7 +45,7 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-<span data-ttu-id="b384b-126">Чтобы получить сообщение и разверните все упоминания в сообщении:<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="b384b-126">To get a message and expand all mentions in the message: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="6b163-126">Чтобы получить сообщение и разверните все упоминания в сообщении:<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="6b163-126">To get a message and expand all mentions in the message: <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /me/messages/{id}?$expand=mentions
 GET /users/{id | userPrincipalName}/messages/{id}?$expand=mentions
@@ -52,28 +53,28 @@ GET /me/mailFolders/{id}/messages/{id}?$expand=mentions
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=mentions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b384b-127">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b384b-127">Optional query parameters</span></span>
-<span data-ttu-id="b384b-128">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="b384b-128">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6b163-127">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="6b163-127">Optional query parameters</span></span>
+<span data-ttu-id="6b163-128">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="6b163-128">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="b384b-129">Можно использовать `$expand` были развернуты параметр запроса на **упоминания** свойство навигации для получения сообщений подробные сведения о каждом [упомянуть](../resources/mention.md) в сообщении.</span><span class="sxs-lookup"><span data-stu-id="b384b-129">You can use the `$expand` query parameter on the **mentions** navigation property to get a message with the details of each [mention](../resources/mention.md) in the message expanded.</span></span>
+<span data-ttu-id="6b163-129">Можно использовать `$expand` были развернуты параметр запроса на **упоминания** свойство навигации для получения сообщений подробные сведения о каждом [упомянуть](../resources/mention.md) в сообщении.</span><span class="sxs-lookup"><span data-stu-id="6b163-129">You can use the `$expand` query parameter on the **mentions** navigation property to get a message with the details of each [mention](../resources/mention.md) in the message expanded.</span></span>
 
 
 
-## <a name="request-headers"></a><span data-ttu-id="b384b-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b384b-130">Request headers</span></span>
-| <span data-ttu-id="b384b-131">Имя</span><span class="sxs-lookup"><span data-stu-id="b384b-131">Name</span></span>       | <span data-ttu-id="b384b-132">Тип</span><span class="sxs-lookup"><span data-stu-id="b384b-132">Type</span></span> | <span data-ttu-id="b384b-133">Описание</span><span class="sxs-lookup"><span data-stu-id="b384b-133">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6b163-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6b163-130">Request headers</span></span>
+| <span data-ttu-id="6b163-131">Имя</span><span class="sxs-lookup"><span data-stu-id="6b163-131">Name</span></span>       | <span data-ttu-id="6b163-132">Тип</span><span class="sxs-lookup"><span data-stu-id="6b163-132">Type</span></span> | <span data-ttu-id="6b163-133">Описание</span><span class="sxs-lookup"><span data-stu-id="6b163-133">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="b384b-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="b384b-134">Authorization</span></span>  | <span data-ttu-id="b384b-135">string</span><span class="sxs-lookup"><span data-stu-id="b384b-135">string</span></span>  | <span data-ttu-id="b384b-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b384b-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b384b-138">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="b384b-138">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="b384b-139">string</span><span class="sxs-lookup"><span data-stu-id="b384b-139">string</span></span> | <span data-ttu-id="b384b-140">Формат возвращаемых свойств **body** и **uniqueBody**.</span><span class="sxs-lookup"><span data-stu-id="b384b-140">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="b384b-141">Возможные значения: "text" или "html".</span><span class="sxs-lookup"><span data-stu-id="b384b-141">Values can be "text" or "html".</span></span> <span data-ttu-id="b384b-142">Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан.</span><span class="sxs-lookup"><span data-stu-id="b384b-142">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="b384b-143">Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML.</span><span class="sxs-lookup"><span data-stu-id="b384b-143">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="b384b-144">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="b384b-144">Optional.</span></span> |
+| <span data-ttu-id="6b163-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="6b163-134">Authorization</span></span>  | <span data-ttu-id="6b163-135">string</span><span class="sxs-lookup"><span data-stu-id="6b163-135">string</span></span>  | <span data-ttu-id="6b163-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6b163-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6b163-138">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="6b163-138">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="6b163-139">string</span><span class="sxs-lookup"><span data-stu-id="6b163-139">string</span></span> | <span data-ttu-id="6b163-140">Формат возвращаемых свойств **body** и **uniqueBody**.</span><span class="sxs-lookup"><span data-stu-id="6b163-140">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="6b163-141">Возможные значения: "text" или "html".</span><span class="sxs-lookup"><span data-stu-id="6b163-141">Values can be "text" or "html".</span></span> <span data-ttu-id="6b163-142">Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан.</span><span class="sxs-lookup"><span data-stu-id="6b163-142">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="6b163-143">Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML.</span><span class="sxs-lookup"><span data-stu-id="6b163-143">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="6b163-144">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="6b163-144">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b384b-145">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b384b-145">Request body</span></span>
-<span data-ttu-id="b384b-146">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b384b-146">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6b163-145">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="6b163-145">Request body</span></span>
+<span data-ttu-id="6b163-146">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6b163-146">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b384b-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="b384b-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6b163-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="6b163-147">Response</span></span>
 
-<span data-ttu-id="b384b-148">В случае успеха этот метод возвращает код отклика `200 OK` и объект [message](../resources/message.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b384b-148">If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="b384b-149">Пример</span><span class="sxs-lookup"><span data-stu-id="b384b-149">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="b384b-150">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="b384b-150">Request 1</span></span>
-<span data-ttu-id="b384b-151">Первый пример получает указанное сообщение.</span><span class="sxs-lookup"><span data-stu-id="b384b-151">The first example gets the specified message.</span></span> <span data-ttu-id="b384b-152">Не указывается любой заголовок для указания нужный формат текста которого требуется получить.</span><span class="sxs-lookup"><span data-stu-id="b384b-152">It does not specify any header to indicate the desired format of the body to be returned.</span></span>
+<span data-ttu-id="6b163-148">В случае успеха этот метод возвращает код отклика `200 OK` и объект [message](../resources/message.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6b163-148">If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6b163-149">Пример</span><span class="sxs-lookup"><span data-stu-id="6b163-149">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="6b163-150">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="6b163-150">Request 1</span></span>
+<span data-ttu-id="6b163-151">Первый пример получает указанное сообщение.</span><span class="sxs-lookup"><span data-stu-id="6b163-151">The first example gets the specified message.</span></span> <span data-ttu-id="6b163-152">Не указывается любой заголовок для указания нужный формат текста которого требуется получить.</span><span class="sxs-lookup"><span data-stu-id="6b163-152">It does not specify any header to indicate the desired format of the body to be returned.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -82,9 +83,9 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
 ```
-##### <a name="response-1"></a><span data-ttu-id="b384b-153">Ответ 1</span><span class="sxs-lookup"><span data-stu-id="b384b-153">Response 1</span></span>
-<span data-ttu-id="b384b-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="b384b-154">Here is an example of the response.</span></span> <span data-ttu-id="b384b-155">Свойства **body** и **uniqueBody** возвращаются в формате HTML по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="b384b-155">The **body** and **uniqueBody** properties are returned in the default HTML format.</span></span>
-<span data-ttu-id="b384b-156">Примечание: Для краткости усекается объект ответа, показано ниже.</span><span class="sxs-lookup"><span data-stu-id="b384b-156">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="b384b-157">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b384b-157">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="6b163-153">Ответ 1</span><span class="sxs-lookup"><span data-stu-id="6b163-153">Response 1</span></span>
+<span data-ttu-id="6b163-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6b163-154">Here is an example of the response.</span></span> <span data-ttu-id="6b163-155">Свойства **body** и **uniqueBody** возвращаются в формате HTML по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="6b163-155">The **body** and **uniqueBody** properties are returned in the default HTML format.</span></span>
+<span data-ttu-id="6b163-156">Примечание: Для краткости усекается объект ответа, показано ниже.</span><span class="sxs-lookup"><span data-stu-id="6b163-156">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="6b163-157">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6b163-157">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,8 +113,8 @@ Content-length: 523
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="b384b-158">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="b384b-158">Request 2</span></span>
-<span data-ttu-id="b384b-159">В следующем примере пользователь выполнил вход — Swope Дану.</span><span class="sxs-lookup"><span data-stu-id="b384b-159">In the next example, the signed-in user is Dana Swope.</span></span> <span data-ttu-id="b384b-160">В примере показано получение сведения обо всех упоминания в указанное сообщение в почтовый ящик пользователя Дану.</span><span class="sxs-lookup"><span data-stu-id="b384b-160">The example shows getting the details of all the mentions in the specified message in Dana's mailbox.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="6b163-158">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="6b163-158">Request 2</span></span>
+<span data-ttu-id="6b163-159">В следующем примере пользователь выполнил вход — Swope Дану.</span><span class="sxs-lookup"><span data-stu-id="6b163-159">In the next example, the signed-in user is Dana Swope.</span></span> <span data-ttu-id="6b163-160">В примере показано получение сведения обо всех упоминания в указанное сообщение в почтовый ящик пользователя Дану.</span><span class="sxs-lookup"><span data-stu-id="6b163-160">The example shows getting the details of all the mentions in the specified message in Dana's mailbox.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
@@ -122,8 +123,8 @@ Content-length: 523
 ```http
 GET https://graph.microsoft.com/beta/me/messages/('AQMkADJmMTUAAAgVZAAAA')?$expand=mentions
 ```
-##### <a name="response-2"></a><span data-ttu-id="b384b-161">Ответ 2</span><span class="sxs-lookup"><span data-stu-id="b384b-161">Response 2</span></span>
-<span data-ttu-id="b384b-p109">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="b384b-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="6b163-161">Ответ 2</span><span class="sxs-lookup"><span data-stu-id="6b163-161">Response 2</span></span>
+<span data-ttu-id="6b163-p109">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="6b163-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -221,9 +222,9 @@ Content-length: 2248
 ```
 
 
-##### <a name="request-3"></a><span data-ttu-id="b384b-165">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="b384b-165">Request 3</span></span>
+##### <a name="request-3"></a><span data-ttu-id="6b163-165">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="6b163-165">Request 3</span></span>
 
-<span data-ttu-id="b384b-166">Третий пример показано, как использовать `Prefer: outlook.body-content-type="text"` заголовка для получения **uniqueBody** указанного сообщения и **основной текст** в текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="b384b-166">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.</span></span>
+<span data-ttu-id="6b163-166">Третий пример показано, как использовать `Prefer: outlook.body-content-type="text"` заголовка для получения **uniqueBody** указанного сообщения и **основной текст** в текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="6b163-166">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -236,9 +237,9 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')?$select
 Prefer: outlook.body-content-type="text"
 ```
 
-##### <a name="response-3"></a><span data-ttu-id="b384b-167">Ответ 3</span><span class="sxs-lookup"><span data-stu-id="b384b-167">Response 3</span></span>
+##### <a name="response-3"></a><span data-ttu-id="6b163-167">Ответ 3</span><span class="sxs-lookup"><span data-stu-id="6b163-167">Response 3</span></span>
 
-<span data-ttu-id="b384b-168">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b384b-168">Here is an example of the response.</span></span> <span data-ttu-id="b384b-169">Примечание: Ответ включает `Preference-Applied: outlook.body-content-type` заголовок, чтобы подтвердить `Prefer: outlook.body-content-type` заголовка запроса.</span><span class="sxs-lookup"><span data-stu-id="b384b-169">Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.</span></span>
+<span data-ttu-id="6b163-168">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6b163-168">Here is an example of the response.</span></span> <span data-ttu-id="6b163-169">Примечание: Ответ включает `Preference-Applied: outlook.body-content-type` заголовок, чтобы подтвердить `Prefer: outlook.body-content-type` заголовка запроса.</span><span class="sxs-lookup"><span data-stu-id="6b163-169">Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -267,9 +268,9 @@ Content-length: 1550
 }
 ```
 
-##### <a name="request-4"></a><span data-ttu-id="b384b-170">Запрос 4</span><span class="sxs-lookup"><span data-stu-id="b384b-170">Request 4</span></span>
+##### <a name="request-4"></a><span data-ttu-id="6b163-170">Запрос 4</span><span class="sxs-lookup"><span data-stu-id="6b163-170">Request 4</span></span>
 
-<span data-ttu-id="b384b-171">Четвертый примере показано, как получить заголовки сообщений Интернета для конкретного сообщения.</span><span class="sxs-lookup"><span data-stu-id="b384b-171">The fourth example shows how to get the Internet message headers of a specific message.</span></span>  
+<span data-ttu-id="6b163-171">Четвертый примере показано, как получить заголовки сообщений Интернета для конкретного сообщения.</span><span class="sxs-lookup"><span data-stu-id="6b163-171">The fourth example shows how to get the Internet message headers of a specific message.</span></span>  
 
 <!-- {
   "blockType": "request",
@@ -281,9 +282,9 @@ Content-length: 1550
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=internetMessageHeaders
 ```
 
-##### <a name="response-4"></a><span data-ttu-id="b384b-172">Отклик 4</span><span class="sxs-lookup"><span data-stu-id="b384b-172">Response 4</span></span>
+##### <a name="response-4"></a><span data-ttu-id="6b163-172">Отклик 4</span><span class="sxs-lookup"><span data-stu-id="6b163-172">Response 4</span></span>
 
-<span data-ttu-id="b384b-173">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b384b-173">Here is an example of the response.</span></span> <span data-ttu-id="b384b-174">Примечание: Число заголовков сообщений Интернета в объекте ответа были ограничены, для краткости.</span><span class="sxs-lookup"><span data-stu-id="b384b-174">Note: The number of Internet message headers in the response object has been reduced for brevity.</span></span>
+<span data-ttu-id="6b163-173">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6b163-173">Here is an example of the response.</span></span> <span data-ttu-id="6b163-174">Примечание: Число заголовков сообщений Интернета в объекте ответа были ограничены, для краткости.</span><span class="sxs-lookup"><span data-stu-id="6b163-174">Note: The number of Internet message headers in the response object has been reduced for brevity.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -324,11 +325,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="b384b-175">См. также</span><span class="sxs-lookup"><span data-stu-id="b384b-175">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6b163-175">См. также</span><span class="sxs-lookup"><span data-stu-id="6b163-175">See also</span></span>
 
-- [<span data-ttu-id="b384b-176">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="b384b-176">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="b384b-177">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="b384b-177">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="b384b-178">Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="b384b-178">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="6b163-176">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="6b163-176">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="6b163-177">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="6b163-177">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="6b163-178">Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="6b163-178">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
