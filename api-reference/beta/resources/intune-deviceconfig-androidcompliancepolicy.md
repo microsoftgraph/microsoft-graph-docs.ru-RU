@@ -2,12 +2,13 @@
 title: Тип ресурса androidCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Android.
 author: tfitzmac
-ms.openlocfilehash: 025b0203c36c204e5df853627e9ba2f8cb53b276
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c3455767e30b83decdd99e73bb918ed5efcb38a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339692"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851200"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>Тип ресурса androidCompliancePolicy
 
@@ -59,7 +60,7 @@ ms.locfileid: "27339692"
 |securityRequireGooglePlayServices|Boolean|Указывает, что на устройстве требуется установить и включить Сервисы Google Play.|
 |securityRequireUpToDateSecurityProviders|Boolean|Указывает, что на устройстве требуется использовать обновленных поставщиков безопасности. Указывает, что устройству требуется включить и обновлять Сервисы Google Play.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Указывает, обязательна ли проверка целостности среды выполнения в клиентском приложении "Корпоративный портал".|
-|conditionStatementId|String.|ИД условие оператора.|
+|conditionStatementId|Строка|ИД условие оператора.|
 |restrictedApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Требуется устройство, чтобы отказаться от указанного приложения, установленные. Эта коллекция может содержать не более 10 000 элементов.|
 
 ## <a name="relationships"></a>Связи

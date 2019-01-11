@@ -1,12 +1,13 @@
 ---
 title: 'NamedItem: Range'
 description: Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.
-ms.openlocfilehash: d446250b736ad8c5ac5eb65871eb024246813e72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 93b00c813c84d7013f23d6dbe30cd86640b4e880
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851179"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 
@@ -32,7 +33,7 @@ POST /workbook/names/{name}/range
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 
@@ -52,8 +53,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

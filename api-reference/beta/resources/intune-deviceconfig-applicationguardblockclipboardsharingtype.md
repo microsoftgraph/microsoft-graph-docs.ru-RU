@@ -2,12 +2,13 @@
 title: Тип перечисления applicationGuardBlockClipboardSharingType
 description: Возможные значения для applicationGuardBlockClipboardSharingType
 author: tfitzmac
-ms.openlocfilehash: d55945c0e229801bab9a338a475e6ef6fd5e8b02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f11df623a3b7dcf79df351fac7d6eeee80c254ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851494"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>Тип перечисления applicationGuardBlockClipboardSharingType
 

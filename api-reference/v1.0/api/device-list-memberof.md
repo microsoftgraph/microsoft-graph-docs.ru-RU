@@ -2,12 +2,13 @@
 title: Список групп устройств
 description: Получите группы, это устройство является непосредственным членом. Эта операция не транзитивное.
 author: tfitzmac
-ms.openlocfilehash: a73bc3c2db80169634f8217418026c0e5c34a033
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a189b6fc0c06862b444d741767c20a46f0fa115a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306925"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804811"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
@@ -36,7 +37,7 @@ GET /devices/{id}/memberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,12 +1,13 @@
 ---
 title: Создание programControl
 description: В Azure AD доступа к функции проверки, создайте новый объект programControl.  Это связывает проверки доступа к программе.
-ms.openlocfilehash: fa6a93b13391fd4b9e3c5816bb2a27259e730c0d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4dfbb76244a41867b8a57faa42f63dc728f59136
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851536"
 ---
 # <a name="create-programcontrol"></a>Создание programControl
 
@@ -38,14 +39,14 @@ POST /programControls
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [programControl](../resources/programcontrol.md) .
 
 Ниже приведены свойства, которые необходимы для создания элемента управления программы.
 
-| Свойство     | Тип        | Description |
+| Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | `programId`              |`String`                | ProgramId программа этот элемент управления будет стать частью.                             |
 | `controlId`              |`String`                | ControlId элемента управления, в частности идентификатор доступа просмотрите.                                                |
@@ -75,7 +76,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

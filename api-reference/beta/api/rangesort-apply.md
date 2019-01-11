@@ -2,12 +2,13 @@
 title: 'RangeSort: apply'
 description: Выполняет сортировку.
 author: lumine2008
-ms.openlocfilehash: df083fb9f81e529d3f70363eaedec6e4286fc835
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 563e12db5716bbc49072043578e2412b6079df03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850913"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -37,7 +38,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

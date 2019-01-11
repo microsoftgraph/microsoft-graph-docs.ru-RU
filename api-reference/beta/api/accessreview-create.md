@@ -1,12 +1,13 @@
 ---
 title: Создание accessReview
 description: В Azure AD доступа к функции проверки, создайте новый объект accessReview.
-ms.openlocfilehash: 9d8e8b246c3c43e4f69172ea59715a8718d39d1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ee5ce696f1d71c57adf9e6c5ee30c067536c8ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075375"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851445"
 ---
 # <a name="create-accessreview"></a>Создание accessReview
 
@@ -35,14 +36,14 @@ POST /accessReviews
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [accessReview](../resources/accessreview.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания accessReview.
 
-| Свойство     | Тип        | Description |
+| Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | Имя проверки доступа.  |
 | `startDateTime`           |`DateTimeOffset`                                                | Дата и время при планировании проверки быть запуск.  Это должно быть даты в будущем.   |

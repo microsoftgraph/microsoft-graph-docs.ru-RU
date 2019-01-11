@@ -2,12 +2,13 @@
 title: Get eBookInstallSummary
 description: Чтение свойств и связей объекта eBookInstallSummary.
 author: tfitzmac
-ms.openlocfilehash: 186383e98e87fbf96af47d290593eee6d2f1723b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2fad44d4597f59cdba8cb461caf0a46a9a47e9ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852089"
 ---
 # <a name="get-ebookinstallsummary"></a>Get eBookInstallSummary
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

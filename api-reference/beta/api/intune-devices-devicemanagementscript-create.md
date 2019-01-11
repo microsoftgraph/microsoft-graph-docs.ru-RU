@@ -2,12 +2,13 @@
 title: Создание deviceManagementScript
 description: Создание нового объекта deviceManagementScript.
 author: tfitzmac
-ms.openlocfilehash: 862b9c3ba50f879e92e47b50e6efaf0bcf41927a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a9f62c4e67b73dd5dc37e6cd5c46c2e6a4ad396
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315437"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838033"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
 
@@ -37,11 +38,11 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта deviceManagementScript.
 
 В следующей таблице показаны свойства, которые необходимы для создания deviceManagementScript.
@@ -56,7 +57,7 @@ POST /deviceManagement/deviceManagementScripts
 |createdDateTime|DateTimeOffset|Дата и время создания сценарий управления устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценарий управления устройства.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения скрипта управления устройства выполняется в. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean.|Указывает, должно быть извлеченных подписи скрипта.|
+|enforceSignatureCheck|Логический|Указывает, должно быть извлеченных подписи скрипта.|
 |fileName|String|Имя файла сценария.|
 
 

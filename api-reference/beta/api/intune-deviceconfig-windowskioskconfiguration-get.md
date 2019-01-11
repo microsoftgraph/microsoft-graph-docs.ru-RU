@@ -2,12 +2,13 @@
 title: Получение windowsKioskConfiguration
 description: Чтение свойства и связи объекта windowsKioskConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4596eeaba219227048a81a9f4ecc6693a7c20204
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4860924b415ef71913792a2f96c7a4ac934c25cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851725"
 ---
 # <a name="get-windowskioskconfiguration"></a>Получение windowsKioskConfiguration
 
@@ -41,11 +42,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSharePointSiteUsageStorage'
 description: Отслеживайте динамику выделенного и использованного объема хранилища за отчетный период.
-ms.openlocfilehash: ae310cc45252a90c5f2e70a190480ded1ef95922
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 231da76d9009966fd14e98badf52aa84a231d7b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807338"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 

@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта plannertask
 description: Обновление свойств объекта **plannertask**.
-ms.openlocfilehash: aea85ef7a5e463153c84149c815f8e6dbd74075f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b753e62e463ecd3a19e16ddaca5d2fd03c90a44b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838761"
 ---
 # <a name="update-plannertask"></a>Обновление объекта plannertask
 
@@ -41,10 +42,10 @@ PATCH /planner/tasks/<id>
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Категории, к которым применена задача. Возможные значения см. [здесь](../resources/plannerappliedcategories.md).|
 |assigneePriority|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|Список пользователей, которым назначена задача.|
-|bucketId|String|Код сегмента, к которой принадлежит задачи. Должен быть в плане, задача находится в сегменте. Это 28 знаков без учета регистра. [Формат](../resources/tasks-identifiers-disclaimer.md) проверяются на службу. |
+|bucketId|Строка|Код сегмента, к которой принадлежит задачи. Должен быть в плане, задача находится в сегменте. Это 28 знаков без учета регистра. [Формат](../resources/tasks-identifiers-disclaimer.md) проверяются на службу. |
 |conversationThreadId|Строка|Идентификатор беседы в задаче. Это идентификатор объекта беседы, созданной в группе.|
 |dueDateTime|DateTimeOffset|Срок выполнения задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
+|orderHint|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|Процент выполнения задачи. Если установлено значение `100`, задача считается выполненной. |
 |planId|Строка|Идентификатор плана, к которому относится задача.|
 |startDateTime|DateTimeOffset|Дата и время начала задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -83,8 +84,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

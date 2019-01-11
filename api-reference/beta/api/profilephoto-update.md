@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта profilephoto
 description: Обновление фотографий для любого пользователя, в том числе выполнил вход для клиентов пользователя, или указанной группы или контакта. Начиная с него
-ms.openlocfilehash: 801ccd58e57cb02c1805f927dc22c9fd593cbae5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e79a58d92276cc88884874c0a3339d52ac8c2847
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079534"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850885"
 ---
 # <a name="update-profilephoto"></a>Обновление объекта profilephoto
 
@@ -25,7 +26,7 @@ ms.locfileid: "27079534"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Фотографий профиля выполнившего вход **пользователя**:<br/>User.ReadWrite User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения                            | Для ресурса **user**:<br/>User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.ReadWrite |
+|Для приложений                            | Для ресурса **user**:<br/>User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.ReadWrite |
 
 > **Примечание.** Чтобы обновить фотографию какого-либо пользователя в организации, ваше приложение должно получить разрешение User.ReadWrite.All приложения и вызвать API с применением собственного идентификатора, не от имени пользователя. Дополнительные сведения см. в статье [Получение доступа без пользователя](/graph/auth-v2-service).
 
@@ -46,7 +47,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | image/jpeg. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Включите в текст запроса двоичные данные фотографии.
 
 ## <a name="response"></a>Отклик
@@ -67,8 +68,7 @@ Binary data for the image
 
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

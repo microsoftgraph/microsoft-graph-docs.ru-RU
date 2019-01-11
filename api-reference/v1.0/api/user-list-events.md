@@ -1,12 +1,13 @@
 ---
 title: Список событий
 description: 'Получите список объектов событий в почтовом ящике пользователя. Список содержит один '
-ms.openlocfilehash: 546e47de6b3d14b911462db19e7c739355445023
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a4766528e8a8e9ee71075377bccc5dfbeaaa4c06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852040"
 ---
 # <a name="list-events"></a>Список событий
 

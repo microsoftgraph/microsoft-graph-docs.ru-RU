@@ -2,12 +2,13 @@
 title: Тип ресурса commsNotifications
 description: Список уведомлений, используемого серверами коммуникаций для отправки нескольких уведомлений в одном пакете.
 author: VinodRavichandran
-ms.openlocfilehash: 052520a99081e5c09cd6e3ec3b74f74e9527d38d
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9ce629e17c85806d7e05bce99d6a62f9fa9cbff8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380452"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851501"
 ---
 # <a name="commsnotifications-resource-type"></a>Тип ресурса commsNotifications
 
