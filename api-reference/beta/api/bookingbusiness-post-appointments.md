@@ -1,48 +1,49 @@
 ---
 title: Создание bookingAppointment
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 436e0121a36fbc0dd0bf0d7cd3302d7999776d9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: df8d1ab3d4eeb93de37e51085935b121609dd023
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855078"
 ---
-# <a name="create-bookingappointment"></a><span data-ttu-id="b93fe-104">Создание bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="b93fe-104">Create bookingAppointment</span></span>
+# <a name="create-bookingappointment"></a><span data-ttu-id="0ce46-104">Создание bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="0ce46-104">Create bookingAppointment</span></span>
 
- > <span data-ttu-id="b93fe-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b93fe-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b93fe-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b93fe-106">Use of these APIs in production applications is not supported.</span></span>
+ > <span data-ttu-id="0ce46-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0ce46-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0ce46-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0ce46-106">Use of these APIs in production applications is not supported.</span></span>
  
-<span data-ttu-id="b93fe-107">Создание нового [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingbusiness](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="b93fe-107">Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="b93fe-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b93fe-108">Permissions</span></span>
-<span data-ttu-id="b93fe-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b93fe-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0ce46-107">Создание нового [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingbusiness](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="0ce46-107">Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0ce46-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0ce46-108">Permissions</span></span>
+<span data-ttu-id="0ce46-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0ce46-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b93fe-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b93fe-111">Permission type</span></span>      | <span data-ttu-id="b93fe-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b93fe-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0ce46-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0ce46-111">Permission type</span></span>      | <span data-ttu-id="0ce46-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0ce46-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b93fe-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b93fe-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="b93fe-114">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="b93fe-114">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="b93fe-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b93fe-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b93fe-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b93fe-116">Not supported.</span></span>   |
-|<span data-ttu-id="b93fe-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b93fe-117">Application</span></span> | <span data-ttu-id="b93fe-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b93fe-118">Not supported.</span></span>  |  
+|<span data-ttu-id="0ce46-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0ce46-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="0ce46-114">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="0ce46-114">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="0ce46-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0ce46-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0ce46-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0ce46-116">Not supported.</span></span>   |
+|<span data-ttu-id="0ce46-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0ce46-117">Application</span></span> | <span data-ttu-id="0ce46-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0ce46-118">Not supported.</span></span>  |  
 
-## <a name="http-request"></a><span data-ttu-id="b93fe-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b93fe-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0ce46-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0ce46-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/appointments
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="b93fe-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b93fe-120">Request headers</span></span>
-| <span data-ttu-id="b93fe-121">Имя</span><span class="sxs-lookup"><span data-stu-id="b93fe-121">Name</span></span>       | <span data-ttu-id="b93fe-122">Описание</span><span class="sxs-lookup"><span data-stu-id="b93fe-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0ce46-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0ce46-120">Request headers</span></span>
+| <span data-ttu-id="0ce46-121">Имя</span><span class="sxs-lookup"><span data-stu-id="0ce46-121">Name</span></span>       | <span data-ttu-id="0ce46-122">Описание</span><span class="sxs-lookup"><span data-stu-id="0ce46-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="b93fe-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b93fe-123">Authorization</span></span>  | <span data-ttu-id="b93fe-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="b93fe-124">Bearer {code}</span></span>|
+| <span data-ttu-id="0ce46-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="0ce46-123">Authorization</span></span>  | <span data-ttu-id="0ce46-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="0ce46-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b93fe-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b93fe-125">Request body</span></span>
-<span data-ttu-id="b93fe-126">В тексте запроса укажите представление JSON объекта [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="b93fe-126">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0ce46-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0ce46-125">Request body</span></span>
+<span data-ttu-id="0ce46-126">В тексте запроса укажите представление JSON объекта [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="0ce46-126">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="b93fe-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="b93fe-127">Response</span></span>
-<span data-ttu-id="b93fe-128">Успешно завершена, этот метод возвращает `201, Created` объект [bookingAppointment](../resources/bookingappointment.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="b93fe-128">If successful, this method returns `201, Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0ce46-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="0ce46-127">Response</span></span>
+<span data-ttu-id="0ce46-128">Успешно завершена, этот метод возвращает `201, Created` объект [bookingAppointment](../resources/bookingappointment.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="0ce46-128">If successful, this method returns `201, Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b93fe-129">Пример</span><span class="sxs-lookup"><span data-stu-id="b93fe-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b93fe-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="b93fe-130">Request</span></span>
-<span data-ttu-id="b93fe-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b93fe-131">The following is an example of the request.</span></span> <span data-ttu-id="b93fe-132">В этом встречи не затрагивает резервирование конкретных сотрудников.</span><span class="sxs-lookup"><span data-stu-id="b93fe-132">This appointment does not involve booking specific staff members.</span></span>
+## <a name="example"></a><span data-ttu-id="0ce46-129">Пример</span><span class="sxs-lookup"><span data-stu-id="0ce46-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0ce46-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="0ce46-130">Request</span></span>
+<span data-ttu-id="0ce46-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0ce46-131">The following is an example of the request.</span></span> <span data-ttu-id="0ce46-132">В этом встречи не затрагивает резервирование конкретных сотрудников.</span><span class="sxs-lookup"><span data-stu-id="0ce46-132">This appointment does not involve booking specific staff members.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_bookingappointment_from_bookingbusiness"
@@ -158,9 +159,9 @@ Content-type: application/json
     }
 }
 ```
-<span data-ttu-id="b93fe-133">В тексте запроса укажите представление JSON объекта [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="b93fe-133">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="b93fe-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="b93fe-134">Response</span></span>
-<span data-ttu-id="b93fe-135">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="b93fe-135">The following is an example of the response.</span></span> <span data-ttu-id="b93fe-136">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="b93fe-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="b93fe-137">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b93fe-137">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0ce46-133">В тексте запроса укажите представление JSON объекта [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="0ce46-133">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="0ce46-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="0ce46-134">Response</span></span>
+<span data-ttu-id="0ce46-135">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="0ce46-135">The following is an example of the response.</span></span> <span data-ttu-id="0ce46-136">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="0ce46-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="0ce46-137">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0ce46-137">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

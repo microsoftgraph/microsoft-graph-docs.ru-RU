@@ -2,50 +2,51 @@
 title: Создание приложения
 description: Используйте этот интерфейс API для создания нового приложения.
 author: lleonard-msft
-ms.openlocfilehash: 9530c94598eeb2413af67782b50bbf70f415e2a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9a4ca06bfd19dbe6319bb276cd5c33fc13f6d81d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855008"
 ---
-# <a name="create-application"></a><span data-ttu-id="4c63e-103">Создание приложения</span><span class="sxs-lookup"><span data-stu-id="4c63e-103">Create Application</span></span>
+# <a name="create-application"></a><span data-ttu-id="7df75-103">Создание приложения</span><span class="sxs-lookup"><span data-stu-id="7df75-103">Create Application</span></span>
 
-> <span data-ttu-id="4c63e-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="4c63e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4c63e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4c63e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7df75-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="7df75-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7df75-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7df75-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="4c63e-106">Используйте этот интерфейс API для создания нового приложения.</span><span class="sxs-lookup"><span data-stu-id="4c63e-106">Use this API to create a new application.</span></span>
+<span data-ttu-id="7df75-106">Используйте этот интерфейс API для создания нового приложения.</span><span class="sxs-lookup"><span data-stu-id="7df75-106">Use this API to create a new application.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4c63e-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4c63e-107">Permissions</span></span>
-<span data-ttu-id="4c63e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4c63e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7df75-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7df75-107">Permissions</span></span>
+<span data-ttu-id="7df75-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7df75-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="4c63e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4c63e-110">Permission type</span></span>      | <span data-ttu-id="4c63e-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4c63e-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7df75-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7df75-110">Permission type</span></span>      | <span data-ttu-id="7df75-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7df75-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4c63e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4c63e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4c63e-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4c63e-113">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="4c63e-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4c63e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4c63e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4c63e-115">Not supported.</span></span>    |
-|<span data-ttu-id="4c63e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4c63e-116">Application</span></span> | <span data-ttu-id="4c63e-117">Application.ReadWrite.OwnedBy Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c63e-117">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="7df75-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7df75-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7df75-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7df75-113">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="7df75-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7df75-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7df75-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7df75-115">Not supported.</span></span>    |
+|<span data-ttu-id="7df75-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7df75-116">Application</span></span> | <span data-ttu-id="7df75-117">Application.ReadWrite.OwnedBy Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7df75-117">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4c63e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4c63e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7df75-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7df75-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4c63e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4c63e-119">Request headers</span></span>
-| <span data-ttu-id="4c63e-120">Имя</span><span class="sxs-lookup"><span data-stu-id="4c63e-120">Name</span></span>       | <span data-ttu-id="4c63e-121">Тип</span><span class="sxs-lookup"><span data-stu-id="4c63e-121">Type</span></span> | <span data-ttu-id="4c63e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="4c63e-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7df75-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7df75-119">Request headers</span></span>
+| <span data-ttu-id="7df75-120">Имя</span><span class="sxs-lookup"><span data-stu-id="7df75-120">Name</span></span>       | <span data-ttu-id="7df75-121">Тип</span><span class="sxs-lookup"><span data-stu-id="7df75-121">Type</span></span> | <span data-ttu-id="7df75-122">Описание</span><span class="sxs-lookup"><span data-stu-id="7df75-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="4c63e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4c63e-123">Authorization</span></span>  | <span data-ttu-id="4c63e-124">string</span><span class="sxs-lookup"><span data-stu-id="4c63e-124">string</span></span>  | <span data-ttu-id="4c63e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4c63e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7df75-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7df75-123">Authorization</span></span>  | <span data-ttu-id="7df75-124">string</span><span class="sxs-lookup"><span data-stu-id="7df75-124">string</span></span>  | <span data-ttu-id="7df75-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7df75-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4c63e-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4c63e-127">Request body</span></span>
-<span data-ttu-id="4c63e-128">В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .</span><span class="sxs-lookup"><span data-stu-id="4c63e-128">In the request body, supply a JSON representation of [application](../resources/application.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7df75-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="7df75-127">Request body</span></span>
+<span data-ttu-id="7df75-128">В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .</span><span class="sxs-lookup"><span data-stu-id="7df75-128">In the request body, supply a JSON representation of [application](../resources/application.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4c63e-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="4c63e-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7df75-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="7df75-129">Response</span></span>
 
-<span data-ttu-id="4c63e-130">Успешно завершена, этот метод возвращает `201 Created` объект ответа кодов и [приложений](../resources/application.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="4c63e-130">If successful, this method returns `201 Created` response code and [application](../resources/application.md) object in the response body.</span></span>
+<span data-ttu-id="7df75-130">Успешно завершена, этот метод возвращает `201 Created` объект ответа кодов и [приложений](../resources/application.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="7df75-130">If successful, this method returns `201 Created` response code and [application](../resources/application.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4c63e-131">Пример</span><span class="sxs-lookup"><span data-stu-id="4c63e-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4c63e-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="4c63e-132">Request</span></span>
-<span data-ttu-id="4c63e-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4c63e-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7df75-131">Пример</span><span class="sxs-lookup"><span data-stu-id="7df75-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7df75-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="7df75-132">Request</span></span>
+<span data-ttu-id="7df75-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7df75-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_application_from_applications"
@@ -60,9 +61,9 @@ Content-length: 67
   "displayName": "Display name"
 }
 ```
-<span data-ttu-id="4c63e-134">В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .</span><span class="sxs-lookup"><span data-stu-id="4c63e-134">In the request body, supply a JSON representation of [application](../resources/application.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="4c63e-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="4c63e-135">Response</span></span>
-<span data-ttu-id="4c63e-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="4c63e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7df75-134">В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .</span><span class="sxs-lookup"><span data-stu-id="7df75-134">In the request body, supply a JSON representation of [application](../resources/application.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="7df75-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="7df75-135">Response</span></span>
+<span data-ttu-id="7df75-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="7df75-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
