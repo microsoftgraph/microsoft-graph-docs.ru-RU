@@ -2,12 +2,13 @@
 title: Тип ресурса messageRule
 description: Правило, которое применяется к сообщениям в папке "Входящие" пользователя.
 author: angelgolfer-ms
-ms.openlocfilehash: 1a8e0bb0c8540848c9a57bd59b7536688afd6926
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9336f2e35d6c68d86c3e92b5f94c024eff1e49a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862127"
 ---
 # <a name="messagerule-resource-type"></a>Тип ресурса messageRule
 
@@ -28,8 +29,8 @@ ms.locfileid: "27347329"
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Условия исключения для правила. |
 | hasError | Boolean | Указывает, является ли правило ошибкой. Только для чтения. |
 | id |String|Уникальный идентификатор правила. Только для чтения.|
-| isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
-| isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
+| isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. |
+| isReadOnly | Логический | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
 | sequence | Int32 | Определяет последовательность выполнения правила среди прочих правил. |
 
 

@@ -2,12 +2,13 @@
 title: Тип ресурса win32LobAppPowerShellScriptDetection
 description: Содержит свойства сценария PowerShell для обнаружения приложений Win32
 author: tfitzmac
-ms.openlocfilehash: 7f69b2c066ae90cfcd805b3d3cfe57193046d440
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdd3c0e6864a3568b4f1efb7c1c18a25f3e7c84d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327575"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863030"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptDetection
 
@@ -22,9 +23,9 @@ ms.locfileid: "27327575"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enforceSignatureCheck|Boolean.|Значение, указывающее, применяется ли проверка подписи|
-|runAs32Bit|Boolean.|Значение, указывающее, будет ли этот скрипт должна запускаться в 32-разрядная версия|
-|scriptContent|String.|Содержимое сценария для обнаружения Win32 строки из бизнес-приложения в кодировке base64|
+|enforceSignatureCheck|Логический|Значение, указывающее, применяется ли проверка подписи|
+|runAs32Bit|Логический|Значение, указывающее, будет ли этот скрипт должна запускаться в 32-разрядная версия|
+|scriptContent|Строка|Содержимое сценария для обнаружения Win32 строки из бизнес-приложения в кодировке base64|
 
 ## <a name="relationships"></a>Связи
 Нет

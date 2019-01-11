@@ -2,12 +2,13 @@
 title: Delete windows81CompliancePolicy
 description: Удаляет объект windows81CompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 849905dcf678039c68eb501d822ca2301f514fbf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cee736fadddec348916bbbcf53433b60024aa687
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862176"
 ---
 # <a name="delete-windows81compliancepolicy"></a>Delete windows81CompliancePolicy
 
@@ -35,11 +36,11 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

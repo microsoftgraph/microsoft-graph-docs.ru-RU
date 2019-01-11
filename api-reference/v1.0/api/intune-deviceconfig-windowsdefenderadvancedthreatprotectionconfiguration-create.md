@@ -2,12 +2,13 @@
 title: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 description: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 31db5f1c254ebe5721748c4e8f35907c49b72217
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 073301ce6e00bc7d33926468158feb39c8ac67d4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355505"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844457"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

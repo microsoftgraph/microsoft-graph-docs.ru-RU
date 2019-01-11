@@ -2,12 +2,13 @@
 title: List deviceComplianceDeviceStatuses
 description: Перечисление свойств и связей объектов deviceComplianceDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: a9fd88a674579bcfae490fe250d5f84ef50cc153
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e37144ef7e2545f3e04c47d07478bde94ff4deb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852159"
 ---
 # <a name="list-devicecompliancedevicestatuses"></a>List deviceComplianceDeviceStatuses
 
@@ -35,11 +36,11 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

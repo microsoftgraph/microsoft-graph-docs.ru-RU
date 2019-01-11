@@ -2,12 +2,13 @@
 title: Удаление deviceManagementScript
 description: Удаляет deviceManagementScript.
 author: tfitzmac
-ms.openlocfilehash: 597a58c7ba5b344846dd741e3699e4048649e1a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9954a43ac263af478e7bc4e3120e1b5404338a05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863317"
 ---
 # <a name="delete-devicemanagementscript"></a>Удаление deviceManagementScript
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

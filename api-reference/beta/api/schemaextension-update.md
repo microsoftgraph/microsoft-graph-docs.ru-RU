@@ -1,12 +1,13 @@
 ---
 title: Обновление schemaExtension
 description: Обновление свойств в определении указанного ресурса schemaExtension.
-ms.openlocfilehash: 783999a22f41300f8ea086d98e755d72b3520685
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4e9ebcb020fe5aa8a549a79405963feb462b61e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081084"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823564"
 ---
 # <a name="update-schemaextension"></a>Обновление schemaExtension
 
@@ -43,7 +44,7 @@ PATCH /schemaExtensions/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 

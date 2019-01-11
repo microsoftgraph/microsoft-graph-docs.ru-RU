@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса plannerPlanDetails
 description: Ресурс **plannerPlanDetails** представляет дополнительные сведения о плане. С каждым объектом plan связан объект details.
-ms.openlocfilehash: 1cce5727666bca705da67fccd1a3edf370c68127
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 117a2f69324180a7ef45dcf96c773f510bdbcb9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860160"
 ---
 # <a name="plannerplandetails-resource-type"></a>Тип ресурса plannerPlanDetails
 
@@ -26,7 +27,7 @@ ms.locfileid: "27081424"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Объект с описаниями шести категорий, которые могут быть связаны с задачами в плане.|
-|id|String| Только для чтения. Идентификатор сведений о плане. Это 28 знаков без учета регистра. [Формат](tasks-identifiers-disclaimer.md) проверяются на службу.|
+|id|Строка| Только для чтения. Идентификатор сведений о плане. Это 28 знаков без учета регистра. [Формат](tasks-identifiers-disclaimer.md) проверяются на службу.|
 |sharedWith|[plannerUserIds](planneruserids.md)|Набор, этот план используется совместно с идентификаторами пользователей. Если вы используете Office 365 групп, используйте группы API для управления членством в группе для совместного использования плана [группы](group.md) . Можно также добавить существующих членов группы этой коллекции, несмотря на то, что в порядке их для доступа к плана, принадлежащих группе не требуется. |
 |contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md);|Только для чтения. Коллекция Дополнительные сведения, связанные с записями [plannerPlanContext](plannerplancontext.md) , определенных для контейнера [plannerPlan](plannerplan.md) . |
 

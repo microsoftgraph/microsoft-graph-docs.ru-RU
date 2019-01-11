@@ -2,12 +2,13 @@
 title: Удаление элемента роли каталога
 description: Удаление элемента из объекта directoryRole.
 author: lleonard-msft
-ms.openlocfilehash: c2b0f8896ca2cc13ebb9f53900638875ade365bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57b99ec59765d58a96ae43919e7907d480e8817a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302417"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843325"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -40,7 +41,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

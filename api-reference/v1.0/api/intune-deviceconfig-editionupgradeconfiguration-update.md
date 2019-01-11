@@ -2,12 +2,13 @@
 title: Обновление объекта editionUpgradeConfiguration
 description: Обновление свойств объекта editionUpgradeConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 011a9869ae7c15853e246292ac0acb80e7ad650f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7d621099c1749922c4614c9d8c5ea874c5c70f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805406"
 ---
 # <a name="update-editionupgradeconfiguration"></a>Обновление объекта editionUpgradeConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

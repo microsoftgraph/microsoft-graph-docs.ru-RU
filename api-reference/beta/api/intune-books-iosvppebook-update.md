@@ -2,12 +2,13 @@
 title: Обновление объекта iosVppEBook
 description: Обновление свойств объекта iosVppEBook.
 author: tfitzmac
-ms.openlocfilehash: 275b8fa6f1c60b0381df09716da8ccf5985611df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8af46ca4e5e75e362043cfc74fc2745072ac033
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823382"
 ---
 # <a name="update-iosvppebook"></a>Обновление объекта iosVppEBook
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

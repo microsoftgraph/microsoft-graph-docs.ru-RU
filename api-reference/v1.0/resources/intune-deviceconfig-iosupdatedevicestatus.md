@@ -2,12 +2,13 @@
 title: Тип ресурса iosUpdateDeviceStatus
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: ee7366c83cbe8a65c128944cc17abfc9dd2cf0df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: efc41f794c385ee6387f81c40164fdc50f40cf49
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309249"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860384"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>Тип ресурса iosUpdateDeviceStatus
 

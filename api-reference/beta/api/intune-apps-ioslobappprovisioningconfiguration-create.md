@@ -2,12 +2,13 @@
 title: Создание iosLobAppProvisioningConfiguration
 description: Создание нового объекта iosLobAppProvisioningConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 80d6b607d514758942ccd5f8334315fd62c0270a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7879cc256a041b960f8d4e728e19bfa5f4f0ffe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333651"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809102"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Создание iosLobAppProvisioningConfiguration
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта iosLobAppProvisioningConfiguration.
 
 В следующей таблице показаны свойства, которые необходимы для создания iosLobAppProvisioningConfiguration.

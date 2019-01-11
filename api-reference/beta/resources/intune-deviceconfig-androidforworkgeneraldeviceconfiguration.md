@@ -2,12 +2,13 @@
 title: Тип ресурса androidForWorkGeneralDeviceConfiguration
 description: Конфигурация устройств общего Android для работы.
 author: tfitzmac
-ms.openlocfilehash: 3b8aa84ea4a59487c2d5889bb179ad0615663e24
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 445b5eabcc695a8c6d265e9ea2a5d8abb3e904a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860041"
 ---
 # <a name="androidforworkgeneraldeviceconfiguration-resource-type"></a>Тип ресурса androidForWorkGeneralDeviceConfiguration
 
@@ -34,7 +35,7 @@ ms.locfileid: "27329444"
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -48,17 +49,17 @@ ms.locfileid: "27329444"
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения: от 4 до 11|
 |passwordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileDataSharingType|[androidForWorkCrossProfileDataSharingType](../resources/intune-deviceconfig-androidforworkcrossprofiledatasharingtype.md)|Тип данных, общий доступ к, разрешен. Возможные значения: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
-|workProfileBlockNotificationsWhileDeviceLocked|Boolean.|Указывает, следует ли блокировать уведомления во время устройство заблокирован.|
-|workProfileBlockAddingAccounts|Boolean.|Запретить пользователям добавление или удаление учетных записей в профиле работой.|
-|workProfileBluetoothEnableContactSharing|Boolean.|Разрешить bluetooth устройств для доступа к корпоративной контакты.|
-|workProfileBlockScreenCapture|Boolean.|Снимок экрана блок в профиле работой.|
-|workProfileBlockCrossProfileCallerId|Boolean.|Блокировки отображения рабочих профилей идентификатор звонящего в личный профиль.|
-|workProfileBlockCamera|Boolean.|Камера профилей рабочего блока.|
-|workProfileBlockCrossProfileContactsSearch|Boolean.|Блок рабочих профилей доступности контактов в личный профиль.|
-|workProfileBlockCrossProfileCopyPaste|Boolean.|Логическое значение, которое указывает, включен ли параметр Запретить на нескольких профилей копирование и вставка.|
+|workProfileBlockNotificationsWhileDeviceLocked|Логический|Указывает, следует ли блокировать уведомления во время устройство заблокирован.|
+|workProfileBlockAddingAccounts|Логический|Запретить пользователям добавление или удаление учетных записей в профиле работой.|
+|workProfileBluetoothEnableContactSharing|Логический|Разрешить bluetooth устройств для доступа к корпоративной контакты.|
+|workProfileBlockScreenCapture|Логический|Снимок экрана блок в профиле работой.|
+|workProfileBlockCrossProfileCallerId|Логический|Блокировки отображения рабочих профилей идентификатор звонящего в личный профиль.|
+|workProfileBlockCamera|Логический|Камера профилей рабочего блока.|
+|workProfileBlockCrossProfileContactsSearch|Логический|Блок рабочих профилей доступности контактов в личный профиль.|
+|workProfileBlockCrossProfileCopyPaste|Логический|Логическое значение, которое указывает, включен ли параметр Запретить на нескольких профилей копирование и вставка.|
 |workProfileDefaultAppPermissionPolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidforworkdefaultapppermissionpolicytype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|workProfilePasswordBlockFingerprintUnlock|Boolean.|Указывает ли блокировать отпечатка разблокировки для работы профиля.|
-|workProfilePasswordBlockTrustAgents|Boolean.|Указывает, следует ли блокировать смарт-Lock и других агенты управления безопасностью для рабочих профилей.|
+|workProfilePasswordBlockFingerprintUnlock|Логический|Указывает ли блокировать отпечатка разблокировки для работы профиля.|
+|workProfilePasswordBlockTrustAgents|Логический|Указывает, следует ли блокировать смарт-Lock и других агенты управления безопасностью для рабочих профилей.|
 |workProfilePasswordExpirationDays|Int32|Количество дней до пароля профиля рабочих срок действия. Допустимые значения: от 1 до 365.|
 |workProfilePasswordMinimumLength|Int32|Минимальная длина пароля профиля работой. Допустимые значения: от 4 до 16.|
 |workProfilePasswordMinNumericCharacters|Int32|Минимальное число цифр в рабочих профилей пароль требуется. Допустимые значения 1 до 10|
@@ -71,10 +72,10 @@ ms.locfileid: "27329444"
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Число предыдущих паролей рабочих профилей для блокировки. Допустимые значения: от 0 до 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Число входа в сбоев перед удалением рабочих профилей и удаление всех корпоративных данных. Допустимые значения: от 4 до 11|
 |workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Тип рабочих профилей пароль, который является обязательным. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
-|workProfileRequirePassword|Boolean.|Пароль или не для работы профиля|
+|workProfileRequirePassword|Логический|Пароль или не для работы профиля|
 |securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
-|vpnAlwaysOnPackageIdentifier|String.|Включите режим блокировки для всегда на VPN.|
-|vpnEnableAlwaysOnLockdownMode|Boolean.|Включите режим блокировки для всегда на VPN.|
+|vpnAlwaysOnPackageIdentifier|Строка|Включите режим блокировки для всегда на VPN.|
+|vpnEnableAlwaysOnLockdownMode|Логический|Включите режим блокировки для всегда на VPN.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -2,12 +2,13 @@
 title: Действие executeAction
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 8ab2749e694ac600c141e314018308efe34b4151
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a95d9dd38c317f83e53c0c4bca98a379602df8db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812553"
 ---
 # <a name="executeaction-action"></a>Действие executeAction
 
@@ -39,11 +40,11 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

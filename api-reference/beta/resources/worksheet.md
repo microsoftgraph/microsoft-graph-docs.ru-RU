@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса Worksheet
 description: Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т. д.
-ms.openlocfilehash: 513a1fceb8e0b7e2c7667d5fac2e4a5978ed7c04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 690596bfe6df5f6bfd98f7f5bd37021e47132152
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075805"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807800"
 ---
 # <a name="worksheet-resource-type"></a>Тип ресурса Worksheet
 
@@ -25,7 +26,7 @@ ms.locfileid: "27075805"
 |[List charts](../api/worksheet-list-charts.md) |Коллекция объектов [Chart](chart.md)| Получение коллекции объектов Chart.|
 |[Создание объекта Table](../api/worksheet-post-tables.md) |[Table](table.md)| Создание таблицы путем добавления в коллекцию таблиц.|
 |[Список таблиц](../api/worksheet-list-tables.md) |Коллекция объектов [Table](table.md)| Получение коллекции объектов Table.|
-|[Update](../api/worksheet-update.md) | [Worksheet](worksheet.md)   |Обновление объекта Worksheet. |
+|[обновление](../api/worksheet-update.md). | [Worksheet](worksheet.md)   |Обновление объекта Worksheet. |
 |[Cell](../api/worksheet-cell.md)|[Range](range.md)|Получает объект диапазона, содержащий одну ячейку, на основе номеров строки и столбца. Ячейка может выходить за пределы родительского диапазона, если она расположена в сетке листа.|
 |[Range](../api/worksheet-range.md)|[Range](range.md)|Возвращает объект диапазона, указанный по адресу или имени.|
 |[Usedrange](../api/worksheet-usedrange.md)|[Range](range.md)|Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если лист пустой, эта функция вернет верхнюю левую ячейку.|
@@ -39,7 +40,7 @@ ms.locfileid: "27075805"
 |:---------------|:--------|:----------|
 |id|строка|Возвращает значение, однозначно идентифицирующее лист в данной книге. Значение идентификатора остается прежним, даже если переименовать или переместить лист. Только для чтения.|
 |name|строка|Отображаемое имя листа.|
-|position|целое|Положение листа (начиная с нуля) в книге.|
+|position|int|Положение листа (начиная с нуля) в книге.|
 |visibility|string|Видимость листа. Возможные значения: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## <a name="relationships"></a>Связи

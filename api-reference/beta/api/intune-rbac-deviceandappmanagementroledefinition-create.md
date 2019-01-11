@@ -2,12 +2,13 @@
 title: Создание deviceAndAppManagementRoleDefinition
 description: Создание объекта deviceAndAppManagementRoleDefinition.
 author: tfitzmac
-ms.openlocfilehash: fdf6e4b1a4c80456c51b8a155974c5cd8d9728bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 69a5dee8677ae47a5055782b0ac53bc4c11d3112
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857388"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>Создание deviceAndAppManagementRoleDefinition
 
@@ -37,7 +38,7 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

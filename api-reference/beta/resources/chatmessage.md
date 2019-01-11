@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса chatMessage
 description: Представляет сообщение адресу сущности канала или чата. Сообщение может быть корневой сообщение или частью поток, который определяется свойством **replyToId** в сообщении.
-ms.openlocfilehash: 1fba27567d5a1c80a36a5758925ec427735504cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855995"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -26,11 +27,11 @@ ms.locfileid: "27074938"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Уникальный идентификатор сообщения.|
+|id|Строка| Только для чтения. Уникальный идентификатор сообщения.|
 |replyToId| string | Идентификатор сообщения message/root родительского потока |
 |from|[identitySet](identityset.md)| Сведения о отправитель сообщения|
 |etag| string | Номер версии сообщения |
-|messageType|String|Поддерживаемый тип сообщения текущего значения: сообщения, chatEvent, набор|
+|messageType|Строка|Поддерживаемый тип сообщения текущего значения: сообщения, chatEvent, набор|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Когда сообщение было изменяется обновлено отметки времени|
 |isDeleted|boolean|Представляет Мягкая удаления сообщения|

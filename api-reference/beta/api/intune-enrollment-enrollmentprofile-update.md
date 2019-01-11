@@ -2,12 +2,13 @@
 title: Обновление enrollmentProfile
 description: Обновление свойства объекта enrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 1f268d07e3636682d77edb238c59e2acaa7ec7d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a5628ad6aff7926d4248e76e5203a9419fc1727
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308318"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822598"
 ---
 # <a name="update-enrollmentprofile"></a>Обновление enrollmentProfile
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).
@@ -51,9 +52,9 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |id|Строка|GUID объекта|
 |displayName|Строка|Имя профиля|
 |описание|Строка|Описание профиля|
-|requiresUserAuthentication|Boolean.|Указывает необходимость проверки подлинности пользователей в профиле|
-|configurationEndpointUrl|String.|URL-адрес конечной точки конфигурации для подачи заявок|
-|enableAuthenticationViaCompanyPortal|Boolean.|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании.|
+|requiresUserAuthentication|Логический|Указывает необходимость проверки подлинности пользователей в профиле|
+|configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для подачи заявок|
+|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании.|
 
 
 

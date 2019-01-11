@@ -2,12 +2,13 @@
 title: Обновление объекта eventMessage
 description: Обновление свойств объекта eventMessage.
 author: angelgolfer-ms
-ms.openlocfilehash: 20c910ae2d6562a4bb9a593a0fac32269dbd413f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 128849b2b0a1a156ef68498b345ca30833922d82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867699"
 ---
 # <a name="update-eventmessage"></a>Обновление объекта eventMessage
 
@@ -35,16 +36,16 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В основном тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом изменений других значений свойств. Чтобы обеспечить максимальную производительность, не включайте существующие значения, которые не изменились, в запрос. Ниже перечислены свойства, доступные для записи и обновления.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |categories|String|Категории, связанные с сообщением.|
 |importance|Строка|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
-|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isRead|Boolean|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isRead|Логический|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 
 ## <a name="response"></a>Отклик
 

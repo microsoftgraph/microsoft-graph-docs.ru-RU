@@ -2,12 +2,13 @@
 title: Тип ресурса embeddedSIMActivationCodePool
 description: Пул представляет группу внедренных коды активации диспетчера установки.
 author: tfitzmac
-ms.openlocfilehash: 9f756488d4e00e3d69bebf0e484f01aeec5650a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d6b5d67f90b8f0da701493380b2c3668b6d87f6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307142"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823515"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>Тип ресурса embeddedSIMActivationCodePool
 

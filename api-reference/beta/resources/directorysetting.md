@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса directorySetting
 description: Параметры каталога можно основанного на доступные directorySettingTemplates и изменено с предварительно значения по умолчанию. Эти параметры можно управлять сущности или функцию поведения, как на уровне клиента, так и на уровне определенной сущности. Если же параметр определен на уровне всей клиента и определенных сущностей, параметр уровня определенной сущности может отказаться от клиента по умолчанию.  Например клиента по умолчанию может разрешить Гости планируемой с существующих членов группы, но параметр конкретную группу может отказаться и запретить гостевым планируемой членами группы. В настоящее время системных параметров являются только влияет на поведение группы Office.
-ms.openlocfilehash: 4a807d22bfd5d6651b4064542d33fe285b637a3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2687df732896abfb8ecf3b0651682228b84fa17b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078451"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810141"
 ---
 # <a name="directorysetting-resource-type"></a>Тип ресурса directorySetting
 

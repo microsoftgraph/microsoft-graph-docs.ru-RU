@@ -2,12 +2,13 @@
 title: Обновление объекта resourceOperation
 description: Обновляет свойства объекта resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: 8050b91aee679f9dd29e78cbbad62f9f6352343e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41702941a5de5869b13e4b1616448f34fcc6daf1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317824"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851795"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -49,11 +50,11 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|String.|Категория ресурсов, к которому относится данная операция.|
+|resource|Строка|Категория ресурсов, к которому относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально кратким (только несколько слов).|
 |описание|String|Описание операции с ресурсом. Используется в тексте, который отображается над обозначением операции при наведении указателя мыши на портале Azure.|
-|enabledForScopeValidation|Boolean.|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
+|enabledForScopeValidation|Логический|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
 
 
 

@@ -2,12 +2,13 @@
 title: Получение message
 description: Извлечение свойств и связи объекта message.
 author: angelgolfer-ms
-ms.openlocfilehash: 8408e9ef0347721978eb1be00c64ce1f66f882d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c83d0e9a59a69ebf0e20cfa0f883301b827c84f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352684"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852390"
 ---
 # <a name="get-message"></a>Получение message
 

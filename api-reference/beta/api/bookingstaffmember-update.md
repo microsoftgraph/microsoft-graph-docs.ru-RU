@@ -1,12 +1,13 @@
 ---
 title: Обновление bookingstaffmember
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 99501f31ccd2b810d6a0c7f836d5b70bb98f223b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4ba2ea126f916b6bd91b83bdd81e24d30fae8ac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824985"
 ---
 # <a name="update-bookingstaffmember"></a>Обновление bookingstaffmember
 
@@ -32,14 +33,14 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|Логический|Значение true означает, что если сотрудник является пользователь Office 365, API резервирования применяет сотрудник личного календаря в Office 365, а также свойство **workingHours** для определения доступности. |
 |ColorIndex (en)|Int32|Определяет цвет сотрудника. Цвет соответствует цветовой палитры на странице **сведений о персонала** в приложении резервирования.|
-|displayName|String|Имя сотрудника, как оно отображается для клиентов.|
+|displayName|Строка|Имя сотрудника, как оно отображается для клиентов.|
 |emailAddress|String|Адрес электронной почты сотрудника. Это может быть в одном клиентов Office 365 как предприятию или в домене различных электронной почты. Этот адрес электронной почты используется, если свойство **sendConfirmationsToOwner** имеет значение true в политике планирования бизнеса.|
 |role|string| Роль сотрудника в организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
 |useBusinessHours|Логический|Значение true означает, что сотрудник доступность определяется свойством **businessHours** бизнеса. False означает, что доступность определяется значение свойства **workingHouse** сотрудника.|

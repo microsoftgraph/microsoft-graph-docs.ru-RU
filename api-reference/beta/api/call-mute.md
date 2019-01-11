@@ -2,12 +2,13 @@
 title: 'Вызовите: Выкл.'
 description: Позволяет отключить самого приложения.
 author: VinodRavichandran
-ms.openlocfilehash: dc1baddb65521f4874f108dd28c7e9ec7b778a25
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 603c0d49f47291ec5050cd08dfbb0cc0faa2bc0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380171"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813442"
 ---
 # <a name="call-mute"></a>Вызовите: Выкл.
 
@@ -36,12 +37,12 @@ POST /applications/{id}/calls/{id}/mute
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|String|Контекст клиента.|
+|clientContext|Строка|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [commsOperation](../resources/commsoperation.md) в теле ответа.

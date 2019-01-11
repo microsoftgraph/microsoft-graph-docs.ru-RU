@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса workbook
 description: Workbook — это объект верхнего уровня, содержащий связанные объекты книг, например листы, таблицы, диапазоны и т. д.
-ms.openlocfilehash: 398ba5f4cea3fd6094c18b02cc1db277a6c43433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9479c6888dc27fd595db2313ab6a88617410530f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806799"
 ---
 # <a name="workbook-resource-type"></a>Тип ресурса workbook
 

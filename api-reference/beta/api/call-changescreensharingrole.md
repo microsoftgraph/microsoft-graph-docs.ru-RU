@@ -2,12 +2,13 @@
 title: 'вызов: changeScreenSharingRole'
 description: Запуск и остановка совместного использования экрана в вызове. Этот интерфейс API используется для разрешения приложений для совместного использования экрана содержимое с участниками звонок или собрания.
 author: VinodRavichandran
-ms.openlocfilehash: a0f745fa6af1dbf97c19e95a70ca37350dacc408
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 64c85025a7aa1f3095fe6ddd8d7d398348a2a1ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865011"
 ---
 # <a name="call-changescreensharingrole"></a>вызов: changeScreenSharingRole
 
@@ -22,7 +23,7 @@ ms.locfileid: "27380466"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | Calls.AccessMedia.All                       |
+| Application                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,12 +37,12 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|role|String|Возможные значения: «Средство просмотра», «Активного проекта»|
+|role|Строка|Возможные значения: «Средство просмотра», «Активного проекта»|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа.

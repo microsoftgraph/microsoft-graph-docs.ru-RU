@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса governanceResource
 description: Представляет ресурсы, которые может осуществляться по управления правами Identity (PIM). Azure ресурсах может быть подписки, группы ресурсов и ресурсов, таких как виртуальную машину, базы данных SQL, и т.д.
-ms.openlocfilehash: 6a048680c3b9bb614287e764d547a20bd09b5d25
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 263996049753256fd39906dba61138c3ab0f0248
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869393"
 ---
 # <a name="governanceresource-resource-type"></a>Тип ресурса governanceResource
 
@@ -35,9 +36,9 @@ ms.locfileid: "27191132"
 |status             |Строка     |Состояние указанного ресурса. Например, он может представлять ли ресурс заблокирован или нет (значения: `Active` / `Locked`). Примечание: Это свойство может быть расширен в будущем для поддержки дополнительных сценариев.|
 |registeredDateTime|DateTimeOffset      |Представляет при регистрации ресурса в PIM даты и времени.|
 |registeredRoot|Строка      |ExternalId область корневой ресурсов, зарегистрированные в PIM. Область корневой может быть родительский элемент или выше ресурсы предков.|
-|roleAssignmentCount|Int32      |Необязательный атрибут. Число назначений ролей для указанного ресурса. Чтобы получить свойство, рекомендуется использовать явным образом `$select=roleAssignmentCount` в запросе.|
-|roleDefinitionCount|Int32      |Необязательный атрибут. Количество определений ролей для указанного ресурса. Чтобы получить свойство, рекомендуется использовать явным образом `$select=roleDefinitionCount` в запросе.|
-|permissions|[governancePermission](../resources/governancepermission.md)      |Необязательный атрибут. Он представляет состояние запрашивающего доступ к ресурсу. Чтобы получить свойство, рекомендуется использовать явным образом `$select=permissions` в запросе.|
+|roleAssignmentCount|Int32      |Необязательное. Число назначений ролей для указанного ресурса. Чтобы получить свойство, рекомендуется использовать явным образом `$select=roleAssignmentCount` в запросе.|
+|roleDefinitionCount|Int32      |Необязательное. Количество определений ролей для указанного ресурса. Чтобы получить свойство, рекомендуется использовать явным образом `$select=roleDefinitionCount` в запросе.|
+|permissions|[governancePermission](../resources/governancepermission.md)      |Необязательное. Он представляет состояние запрашивающего доступ к ресурсу. Чтобы получить свойство, рекомендуется использовать явным образом `$select=permissions` в запросе.|
 
 ## <a name="relationships"></a>Связи
 | Связь   | Тип                                         |Описание|

@@ -2,12 +2,13 @@
 title: Перечисление объектов deviceComplianceActionItem
 description: Список свойств и связей объектов deviceComplianceActionItem.
 author: tfitzmac
-ms.openlocfilehash: 78aedc180f793938db86c7faa3595052371233a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d3ec9b512fb48114cb58920d109ded1dba13dc77
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813617"
 ---
 # <a name="list-devicecomplianceactionitems"></a>Перечисление объектов deviceComplianceActionItem
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

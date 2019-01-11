@@ -2,12 +2,13 @@
 title: Список windowsPrivacyDataAccessControlItems
 description: Свойства списка и связей объектов windowsPrivacyDataAccessControlItem.
 author: tfitzmac
-ms.openlocfilehash: 642db3e0381adf3bedfff52baf4987b7ea43cdaf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f6730bd76f0531767f8329ac72671fea1cad364
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862596"
 ---
 # <a name="list-windowsprivacydataaccesscontrolitems"></a>Список windowsPrivacyDataAccessControlItems
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

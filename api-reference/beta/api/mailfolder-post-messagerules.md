@@ -2,12 +2,13 @@
 title: Создание правила
 description: 'Создает объект messageRule, определяя набор условий и действий. '
 author: angelgolfer-ms
-ms.openlocfilehash: 4b127c4634650648062e9c41789d5fc076b3ea67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34224240ec931bdc07e3ad8a262528f94600393b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821051"
 ---
 # <a name="create-rule"></a>Создание правила
 
@@ -48,7 +49,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Условия, выполнение которых активирует соответствующие действия для указанного правила. Необязательное свойство.|
 |displayName| Строка  | Отображаемое имя правила. Обязательный.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Представляет условия исключения для правила. Необязательное свойство. |
-|isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
+|isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
 |sequence| Int32 | Определяет последовательность выполнения правила среди прочих правил. Обязательный.|
 
 ## <a name="response"></a>Отклик

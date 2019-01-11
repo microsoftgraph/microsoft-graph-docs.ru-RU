@@ -2,12 +2,13 @@
 title: Список строк
 description: Получение списка объектов tablerow.
 author: lumine2008
-ms.openlocfilehash: d3ae25face1d2ca43d240c60621c390b7bf67da5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48455cf2700672c7363b591d0963a8c97830be29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838320"
 ---
 # <a name="list-rows"></a>Список строк
 
@@ -38,7 +39,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

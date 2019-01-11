@@ -2,12 +2,13 @@
 title: Создание объекта androidManagedAppRegistration
 description: Создание объекта androidManagedAppRegistration.
 author: tfitzmac
-ms.openlocfilehash: c05c698179f2f8fa54ab12282be6e397b9275408
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 84fc753a055e64549b0042d24acedf83827271df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841555"
 ---
 # <a name="create-androidmanagedappregistration"></a>Создание объекта androidManagedAppRegistration
 
@@ -35,7 +36,7 @@ POST /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

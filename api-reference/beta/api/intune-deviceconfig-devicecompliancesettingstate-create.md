@@ -2,12 +2,13 @@
 title: Создание объекта deviceComplianceSettingState
 description: Создание объекта deviceComplianceSettingState.
 author: tfitzmac
-ms.openlocfilehash: ab149e492b133ae2d39805e6ef6e3b6f93e484e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0ef4061f659429b4e43f40fd502caaad77ef0894
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868756"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Создание объекта deviceComplianceSettingState
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

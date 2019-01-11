@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getMailboxUsageMailboxCounts'
 description: Узнайте, сколько всего почтовых ящиков в организации и сколько из них были активный в отчетный период. Почтовый ящик считается активным, если пользователь отправил или прочитал по крайней мере одно письмо.
-ms.openlocfilehash: 2eca2ec689413055d9e1c382ad189b205f71f486
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6e62bd5fb8145a2db941048c7b645f76a9f66619
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024717"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804825"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 

@@ -2,12 +2,13 @@
 title: Создание deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Создание объекта deviceEnrollmentWindowsHelloForBusinessConfiguration.
 author: tfitzmac
-ms.openlocfilehash: f45ad5764521c8ab94ab4742764ee4a73ddfc660
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd395803e5940855c3eb21e5ca1ca8b8b1ec3bdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335072"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829493"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Создание deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
