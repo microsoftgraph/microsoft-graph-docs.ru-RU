@@ -1,12 +1,13 @@
 ---
 title: Список leakedCredentialsRiskEvents
 description: Получение списка объектов leakedcredentialsriskevent.
-ms.openlocfilehash: 49cfd54c580634e43cff50aa7c125ffc79116ea3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 695499c2db07f108e1f7dd762a97ce95629cca42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079987"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857437"
 ---
 # <a name="list-leakedcredentialsriskevents"></a>Список leakedCredentialsRiskEvents
 
@@ -20,7 +21,7 @@ ms.locfileid: "27079987"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | IdentityRiskEvent.Read.All |
+|Для приложений | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +34,7 @@ GET /leakedCredentialsRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -50,8 +51,7 @@ GET /leakedCredentialsRiskEvents
 GET https://graph.microsoft.com/v1.0/leakedCredentialsRiskEvents
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

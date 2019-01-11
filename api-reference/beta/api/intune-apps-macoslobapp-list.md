@@ -2,12 +2,13 @@
 title: Список macOSLobApps
 description: Свойства списка и связей объектов macOSLobApp.
 author: tfitzmac
-ms.openlocfilehash: bf65160d55f63808c93e9a8ca1aef6f4918423b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80367f7fe096f0b23edb6f6c12ee2360fbfbfdd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859593"
 ---
 # <a name="list-macoslobapps"></a>Список macOSLobApps
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

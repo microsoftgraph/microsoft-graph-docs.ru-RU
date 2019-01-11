@@ -2,12 +2,13 @@
 title: 'educationSubmission: освобождение'
 description: " и указывает, что выполняется оценка успеваемости. Это действие можно выполнить только с преподаватель."
 author: dipakboyed
-ms.openlocfilehash: 9a21c45198ccd0ef933d58721c2d594cf29443bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a2723684f734a9e31dc08fb97d1e184400cac387
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859012"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission: освобождение
 
@@ -35,7 +36,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/release
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

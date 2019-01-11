@@ -2,12 +2,13 @@
 title: Удаление embeddedSIMActivationCodePool
 description: Удаляет embeddedSIMActivationCodePool.
 author: tfitzmac
-ms.openlocfilehash: 25d55d45f035e871de867258528303db2ba1484f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2c767ad68282a9bf408a5e50024ac4d79c6718d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858116"
 ---
 # <a name="delete-embeddedsimactivationcodepool"></a>Удаление embeddedSIMActivationCodePool
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

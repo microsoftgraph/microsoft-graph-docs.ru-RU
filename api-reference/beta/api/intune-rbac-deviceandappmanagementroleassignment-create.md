@@ -2,12 +2,13 @@
 title: Создание объекта deviceAndAppManagementRoleAssignment
 description: Создание объекта deviceAndAppManagementRoleAssignment.
 author: tfitzmac
-ms.openlocfilehash: 4ed81fdc58a2675be6d5f0b991507914d5c92e89
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a6f5d0e90ee15d6036c97b451c3796c357a8a2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323991"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857444"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>Создание объекта deviceAndAppManagementRoleAssignment
 
@@ -37,7 +38,7 @@ POST /deviceManagement/roleAssignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

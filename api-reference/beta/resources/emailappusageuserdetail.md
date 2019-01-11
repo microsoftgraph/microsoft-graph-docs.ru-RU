@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса emailAppUsageUserDetail
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 951d53f7491ff7f2b7721b14ed354d770cfd1730
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9f1748d6ae3b313fd9f3a87cc211858b5b876b9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858949"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>Тип ресурса emailAppUsageUserDetail
 
@@ -15,8 +16,8 @@ ms.locfileid: "27075424"
 | Свойство          | Тип              |
 | :---------------- | :---------------- |
 | reportRefreshDate | Date              |
-| userPrincipalName | String            |
-| displayName       | String            |
+| userPrincipalName | Строка            |
+| displayName       | Строка            |
 | isDeleted         | Логический           |
 | deletedDate       | Date              |
 | lastActivityDate  | Date              |

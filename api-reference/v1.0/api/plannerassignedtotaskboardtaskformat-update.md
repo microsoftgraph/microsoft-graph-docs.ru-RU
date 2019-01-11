@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта plannerAssignedToTaskBoardTaskFormat
 description: Обновление свойств объекта **plannerAssignedToTaskBoardTaskFormat**.
-ms.openlocfilehash: c6577d6ee019bfbf0c1ff353bfd0809d556ac2f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9efb07bd8bda108497f77d4f982b42eb3c8e53b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855638"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Обновление объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -65,8 +66,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

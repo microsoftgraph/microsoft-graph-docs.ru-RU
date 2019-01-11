@@ -1,12 +1,13 @@
 ---
 title: Список calendarView
 description: Получите вхождения, исключений и отдельные экземпляры событий в календарном представлении определенный временной интервал,
-ms.openlocfilehash: 37f4b1e72f15e455ab611d9d9b85b18ca7bba68d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 48ec49eb5038e7a4c977af0248443e1ca7241cb6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025675"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857703"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -79,8 +80,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-01-07T19:00:00.0000000
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

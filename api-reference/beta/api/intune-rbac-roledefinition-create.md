@@ -2,12 +2,13 @@
 title: Создание roleDefinition
 description: Создание объекта roleDefinition.
 author: tfitzmac
-ms.openlocfilehash: 03134f270d49002c5882a1e65cb0c4454684cd4a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1e4b80388ecb74a4bd521e4b910a24ffb22af6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858984"
 ---
 # <a name="create-roledefinition"></a>Создание roleDefinition
 
@@ -37,7 +38,7 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

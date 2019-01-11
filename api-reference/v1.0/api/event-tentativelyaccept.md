@@ -2,12 +2,13 @@
 title: 'event: tentativelyAccept'
 description: Примите под вопросом события, указанного в календаре пользователя.
 author: angelgolfer-ms
-ms.openlocfilehash: be22b88c444b3720eaf204bda3246d4b99b90623
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9aa718385ecd41726e8e421e946a97e1ad9183c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335793"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856639"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -46,7 +47,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

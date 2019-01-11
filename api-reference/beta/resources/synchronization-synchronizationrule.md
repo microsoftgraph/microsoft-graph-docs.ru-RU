@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса synchronizationRule
 description: Определяет, как следует выполнять синхронизацию для обработчика синхронизации, включая объектов для синхронизации и направление, как объекты из исходного каталога должны совпадать с объектами в целевом каталоге и как атрибуты должен быть преобразован при их в случае синхронизации из источника в конечный каталог.
-ms.openlocfilehash: c860228637a6cc3ad9137851408379bd7f779c75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a739db59a68ece026f9f13dfd22bafce8112f6b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856159"
 ---
 # <a name="synchronizationrule-resource-type"></a>Тип ресурса synchronizationRule
 
@@ -20,16 +21,16 @@ ms.locfileid: "27076746"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство      | Тип      | Description    |
+| Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
 |изменения       |Логический    |`true`Если можно настроить правила синхронизации; `false` Если это правило доступно только для чтения и не должно изменяться.|
-|id             |String     |Идентификатор правила синхронизации. Должен быть один из идентификаторов, распознаваемых обработчик синхронизации. Поддерживается правило, которое идентификаторы можно найти в шаблоне синхронизации, возвращаемых API.|
+|id             |Строка     |Идентификатор правила синхронизации. Должен быть один из идентификаторов, распознаваемых обработчик синхронизации. Поддерживается правило, которое идентификаторы можно найти в шаблоне синхронизации, возвращаемых API.|
 |метаданные       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) коллекции |Расширение дополнительные свойства. Если не указано явно группой поддержки, значения метаданных не должно изменяться.|
-|name           |String     |Понятное имя правила синхронизации. Значение null не допускается.|
+|name           |Строка     |Понятное имя правила синхронизации. Значение null не допускается.|
 |objectMappings |[objectMapping](synchronization-objectmapping.md) коллекции    |Коллекция сопоставления объектов, поддерживаемых правило. Указывает обработчик синхронизации объектов, которые должны быть синхронизированы.|
 |priority       |Целое число    |Приоритет относительно других правил в [synchronizationSchema](synchronization-synchronizationschema.md). Правила с наименьшим номером приоритет будут обрабатываться в первую очередь.|
-|sourceDirectoryName       |String    |Имя исходного каталога. Должно соответствовать одному из определений каталога в [synchronizationSchema](synchronization-synchronizationschema.md).|
-|targetDirectoryName       |String    |Имя в конечный каталог. Должно соответствовать одному из определений каталога в [synchronizationSchema](synchronization-synchronizationschema.md).|
+|sourceDirectoryName       |Строка    |Имя исходного каталога. Должно соответствовать одному из определений каталога в [synchronizationSchema](synchronization-synchronizationschema.md).|
+|targetDirectoryName       |Строка    |Имя в конечный каталог. Должно соответствовать одному из определений каталога в [synchronizationSchema](synchronization-synchronizationschema.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 

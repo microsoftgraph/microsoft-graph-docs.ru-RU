@@ -2,12 +2,13 @@
 title: Функция downloadApplePushNotificationCertificateSigningRequest
 description: Скачивание запроса на подпись сертификата для push-уведомлений Apple
 author: tfitzmac
-ms.openlocfilehash: c65b700a7c3eca69d6207d4fa8d69073e9b54ce0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3620c75d84aa26710b9837d601ad6cc8bab16aae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312672"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856569"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Функция downloadApplePushNotificationCertificateSigningRequest
 
@@ -37,11 +38,11 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

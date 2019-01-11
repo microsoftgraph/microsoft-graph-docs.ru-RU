@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса bookingNamedEntity
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 1d82fcf6fcf7ffad6e60baea3f3e1118ec60345d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa307d0ee07b43a44210fc6ceaf4c74a29999caa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075278"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860503"
 ---
 # <a name="bookingnamedentity-resource-type"></a>Тип ресурса bookingNamedEntity
 
@@ -17,8 +18,8 @@ ms.locfileid: "27075278"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя для производные сущности, который взаимодействует с клиентами.|
-|id|String| Идентификатор производные сущности. Только для чтения.|
+|displayName|Строка|Имя для производные сущности, который взаимодействует с клиентами.|
+|id|Строка| Идентификатор производные сущности. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет

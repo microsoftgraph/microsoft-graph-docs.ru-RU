@@ -2,12 +2,13 @@
 title: Добавить участника
 description: Используйте этот интерфейс API для добавления элемента (пользователя или группы) для административного подразделения.
 author: lleonard-msft
-ms.openlocfilehash: be47dbf06c5f59c0a4aaaea4f8c8b4aa8c3ce902
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 222621b37e545a6f2f9dcb9b248bee3cfd6970c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339230"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860062"
 ---
 # <a name="add-a-member"></a>Добавить участника
 
@@ -37,7 +38,7 @@ POST /administrativeUnits/{id}/members/$ref
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON [пользователя](../resources/user.md), [группы](../resources/group.md) или [directoryObject](../resources/directoryobject.md) для добавления.
 
 ## <a name="response"></a>Отклик

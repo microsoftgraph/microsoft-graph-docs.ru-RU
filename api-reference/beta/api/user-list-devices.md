@@ -1,12 +1,13 @@
 ---
 title: Список пользователей устройств
 description: Ознакомьтесь со списком пользователей устройств, которые поддерживают возможности рим проекта. Этот компонент включает возможность запуска приложения, или сообщение или отправки данных в приложение. После того как вы выполнять на мне вызов GET- и устройств, передайте идентификатор устройства для отправки команды на устройство.
-ms.openlocfilehash: b9e6132af0e16deae1a4175bfc811f74c18e1ae6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 455a134b2edcf64255a2818887c6ff68959a1202
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855925"
 ---
 # <a name="list-user-devices"></a>Список пользователей устройств
 
@@ -40,7 +41,7 @@ GET me/devices
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

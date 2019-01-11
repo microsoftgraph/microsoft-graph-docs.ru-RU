@@ -2,12 +2,13 @@
 title: Получение объекта mailFolder
 description: Получение свойств и связей объекта папки сообщений.
 author: angelgolfer-ms
-ms.openlocfilehash: e1394c6bf97a3c5d65bda0ee7b8f29d8a29643bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8301f5ff1cef7602b3e9d488c67daec8ac277cce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357815"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856653"
 ---
 # <a name="get-mailfolder"></a>Получение объекта mailFolder
 
@@ -45,7 +46,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

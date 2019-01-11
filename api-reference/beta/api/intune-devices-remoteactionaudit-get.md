@@ -2,12 +2,13 @@
 title: Получение remoteActionAudit
 description: Чтение свойства и связи объекта remoteActionAudit.
 author: tfitzmac
-ms.openlocfilehash: d5400eefe34419a725681d8870bfae513d192237
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 43a35a52ef379960652326279fa7c90b95ac8900
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859782"
 ---
 # <a name="get-remoteactionaudit"></a>Получение remoteActionAudit
 
@@ -39,11 +40,11 @@ GET /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

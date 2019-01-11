@@ -1,12 +1,13 @@
 ---
 title: 'пользователь: invalidateAllRefreshTokens'
 description: Признает недействительным всех маркеров обновления пользователя, выданный приложений (а также файлы cookie сеанса в браузере пользователя), сброс свойство пользователя **refreshTokensValidFromDateTime** текущая дата и время. Как правило эта операция выполняется (по пользователь или администратор), если у пользователя есть потерянных или украденных устройств.  Эта операция может запретить доступ к любой из организации данных, доступных через приложения на устройстве без уведомления пользователя, сначала необходимо выполнить повторный вход. На самом деле эта операция будет принудительно пользователя выполнить повторный вход для всех приложений, которые они ранее согласие, вне зависимости от устройства.
-ms.openlocfilehash: 23743c4bc372193a5478d79432b7bb4e0a9ec4ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4ece9866e703d47ab8f7b024496f92f30a4a14b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858081"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>пользователь: invalidateAllRefreshTokens
 
@@ -33,7 +34,7 @@ POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Эта операция не имеет запроса содержимого.
 
 ## <a name="response"></a>Ответ

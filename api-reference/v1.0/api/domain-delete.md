@@ -2,12 +2,13 @@
 title: Удаление домена
 description: Удаление домена из клиента.
 author: lleonard-msft
-ms.openlocfilehash: eeebfb0c4c654dbfc119b4af97ccab6e27fbef91
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd13c304329f40e48dad1cd69772c54577559336
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856652"
 ---
 # <a name="delete-domain"></a>Удаление домена
 
@@ -43,7 +44,7 @@ DELETE /domains/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

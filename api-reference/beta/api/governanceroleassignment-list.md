@@ -1,12 +1,13 @@
 ---
 title: Список governanceRoleAssignments
 description: Получите коллекцию governanceRoleAssignments.
-ms.openlocfilehash: 0f4680c8998191fa07af993e8ee3712557b7010d
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 51a36cdcd0b565bf1ec7a991fb41af05da19b573
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859446"
 ---
 # <a name="list-governanceroleassignments"></a>Список governanceRoleAssignments
 
@@ -17,7 +18,7 @@ ms.locfileid: "27191069"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -46,10 +47,10 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceRoleAssignment](../resources/governanceroleassignment.md) в теле ответа.
 ## <a name="example"></a>Пример
 
@@ -63,7 +64,7 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'918e54be-12c4-4f4c-a6d3-2ee0e3661c51'
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 <!-- {
   "blockType": "response",
   "truncated": true,

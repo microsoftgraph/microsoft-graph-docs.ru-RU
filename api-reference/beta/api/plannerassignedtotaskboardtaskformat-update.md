@@ -1,12 +1,13 @@
 ---
 title: Обновление объекта plannerAssignedToTaskBoardTaskFormat
 description: Обновление свойств объекта **plannerAssignedToTaskBoardTaskFormat**.
-ms.openlocfilehash: 7bf559b5962c895c1ce7b5d3192ab743bca3acb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2586e0d413ce6debcc90b720c2ec45773518507e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077338"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856807"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Обновление объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -39,7 +40,7 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Словарь подсказки используется для задачи заказа на просмотр AssignedTo панели задач. Ключ каждой записи — один пользователей, которым назначена эта задача, а значение — подсказка order. Формат каждое значение определяется в [с помощью подсказки порядке в планировщике (.. / resources/planner_order_hint_format.md).|
-|unassignedOrderHint|String|Присваивается значение подсказку для упорядочивания задачи в представлении AssignedTo Доска задач при всем пользователям, не назначена задача или orderHintsByAssignee словаря не предоставляет подсказку порядке для пользователя задачи. Формат определяется в [с помощью подсказки порядке в планировщике](../resources/planner-order-hint-format.md).|
+|unassignedOrderHint|Строка|Присваивается значение подсказку для упорядочивания задачи в представлении AssignedTo Доска задач при всем пользователям, не назначена задача или orderHintsByAssignee словаря не предоставляет подсказку порядке для пользователя задачи. Формат определяется в [с помощью подсказки порядке в планировщике](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Отклик
 
@@ -67,8 +68,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

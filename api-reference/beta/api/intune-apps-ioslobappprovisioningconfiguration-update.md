@@ -2,12 +2,13 @@
 title: Обновление iosLobAppProvisioningConfiguration
 description: Обновление свойства объекта iosLobAppProvisioningConfiguration.
 author: tfitzmac
-ms.openlocfilehash: df3cc8d27bb242998d513e98b8ce9b7ebfb24fd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 637c1052f4097c3a33ff4c8fc4949ef48773ce68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859320"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>Обновление iosLobAppProvisioningConfiguration
 
@@ -37,11 +38,11 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md).

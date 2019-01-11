@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса termsAndConditions
 description: Содержимое C политик, изучите пользователям при их первая попытка возможность зачисления в Intune, а затем после изменения которой необходимо re приемки администратора. Благодаря им администраторы могут огласить условия, с которыми должен согласиться пользователь для регистрации устройств в Intune.
-ms.openlocfilehash: b47efb4151357c355a5ec01fbfddb85f1c4cb786
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8f6de8e97d8399d0c251eadafdcdacf09176cb6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858606"
 ---
 # <a name="termsandconditions-resource-type"></a>Тип ресурса termsAndConditions
 
@@ -39,7 +40,7 @@ ms.locfileid: "27078269"
 |version|Int32|Целое число, указывающее текущую версию условий. Увеличивается, когда администратор вносит изменения в условия и запрашивает повторное принятие измененной политики у пользователей.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) коллекции|Список назначений группы для этой политики T & C.|
 |assignments|Коллекция объектов [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|Список назначений для этой политики условий.|

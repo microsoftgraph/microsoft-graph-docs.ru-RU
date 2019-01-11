@@ -2,12 +2,13 @@
 title: Create windowsMobileMSI
 description: Создание объекта windowsMobileMSI.
 author: tfitzmac
-ms.openlocfilehash: 6c3ba27b3b6009bf25fc98f2ee5151991fedca19
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 731c869152d8b47f123f84f6640b5212f4b11185
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353111"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860146"
 ---
 # <a name="create-windowsmobilemsi"></a>Create windowsMobileMSI
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

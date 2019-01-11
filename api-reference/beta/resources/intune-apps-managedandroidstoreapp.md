@@ -2,12 +2,13 @@
 title: Тип ресурса managedAndroidStoreApp
 description: Содержит свойства, в том числе унаследованные, для приложений из магазина Android, которыми вы можете управлять с помощью политики защиты приложений Intune.
 author: tfitzmac
-ms.openlocfilehash: aebbc1ab3e6f4675ae683efb679a42ed2021324a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cc985f76cd139833bd1f8eb7f40426887a1dc735
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357941"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856177"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>Тип ресурса managedAndroidStoreApp
 

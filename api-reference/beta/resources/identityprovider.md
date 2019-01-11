@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса identityProvider
 description: Представляет имя поставщика удостоверений Azure Active Directory (Azure AD). Поставщик удостоверений может быть Microsoft, Google, Facebook, Amazon или LinkedIn.
-ms.openlocfilehash: 672e2e6225374451a475b69e2ce4ce6adfe65ef0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0a465b1c7b4ad7f74e6357e77da3692d64294e7e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076847"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858543"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 
@@ -33,7 +34,7 @@ ms.locfileid: "27076847"
 
 ## <a name="properties"></a>Свойства
 
-|Свойство|Тип|Обязательный|Nullable|Description|
+|Свойство|Тип|Обязательный|Nullable|Описание|
 |:---------------|:--------|:--------|:--------|:----------|
 |clientId|Строка|Да|Нет|Идентификатор клиента для приложения. Это идентификатор клиента, полученные при регистрации приложения с поставщиком удостоверений.|
 |clientSecret|Строка|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученные при регистрации приложения с поставщиком удостоверений. Это только для записи. Возвращает операции чтения "\*\*\*\*«.|

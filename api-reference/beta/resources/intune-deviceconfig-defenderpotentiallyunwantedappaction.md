@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления defenderPotentiallyUnwantedAppAction
 description: Защитника действие, которое выполняется обнаруженных потенциально ненужные приложения (PUA).
-ms.openlocfilehash: c786906046d6a35c026da95246016537e4325aab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b04cd6daeae303910519d0735165171575d8c44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076869"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858648"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>Тип перечисления defenderPotentiallyUnwantedAppAction
 
@@ -16,7 +17,7 @@ ms.locfileid: "27076869"
 
 Защитника действие, которое выполняется обнаруженных потенциально ненужные приложения (PUA).
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Защита PUA отключено. Защитник будет обеспечивает защиту от нежелательных приложений.|
 |блок|1|Защита от PUA включена. Обнаруженными блокируются. Они будут отображаться в журнал, а также другие угрозы, связанные с.|

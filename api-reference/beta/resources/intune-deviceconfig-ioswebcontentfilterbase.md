@@ -2,12 +2,13 @@
 title: Тип ресурса iosWebContentFilterBase
 description: Представляет операций ввода-вывода базового типа параметра фильтра веб-содержимого. Пустой и абстрактный базовый. Звонящий следует использовать один из производных типов для конфигураций.
 author: tfitzmac
-ms.openlocfilehash: 2b611be8f2715612447ee84ca2301c4708e8b0cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c29648ddbcb39ae3f879a9b500ab1a3813fa584
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332265"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856633"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>Тип ресурса iosWebContentFilterBase
 

@@ -2,12 +2,13 @@
 title: Create androidCompliancePolicy
 description: Создание нового объекта androidCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: d09040d1db8d2516cf186b72e26ad24782b76328
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf6b5d9ca8d509254dab08b420da55700f55351a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860251"
 ---
 # <a name="create-androidcompliancepolicy"></a>Create androidCompliancePolicy
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -76,7 +77,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |securityRequireGooglePlayServices|Boolean|Указывает, что на устройстве требуется установить и включить Сервисы Google Play.|
 |securityRequireUpToDateSecurityProviders|Boolean|Указывает, что на устройстве требуется использовать обновленных поставщиков безопасности. Указывает, что устройству требуется включить и обновлять Сервисы Google Play.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Указывает, обязательна ли проверка целостности среды выполнения в клиентском приложении "Корпоративный портал".|
-|conditionStatementId|String.|ИД условие оператора.|
+|conditionStatementId|Строка|ИД условие оператора.|
 |restrictedApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Требуется устройство, чтобы отказаться от указанного приложения, установленные. Эта коллекция может содержать не более 10 000 элементов.|
 
 

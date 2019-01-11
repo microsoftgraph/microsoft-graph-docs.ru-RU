@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления clonableTeamParts
 description: 'Описывается, какие часть команды должны клонируется. '
-ms.openlocfilehash: 123cdb5ff7fd4a4291df5d9352b0db466908cc3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7eb71de266ea4f0ed9f94900dd03a47da1a24cc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076147"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860559"
 ---
 # <a name="clonableteamparts-enum-type"></a>Тип перечисления clonableTeamParts
 

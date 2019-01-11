@@ -2,12 +2,13 @@
 title: Удаление объекта deviceManagementTroubleshootingEvent
 description: Удаляет объект deviceManagementTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 7195eecf4676ca8eae5b87b5123957ba22a71989
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5461f7d7ef9dffd26e87eae6442df0c66b50299
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856886"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>Удаление объекта deviceManagementTroubleshootingEvent
 
@@ -37,11 +38,11 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

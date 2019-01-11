@@ -2,12 +2,13 @@
 title: Получение windowsInformationProtection
 description: Чтение свойств и связей объекта windowsInformationProtection.
 author: tfitzmac
-ms.openlocfilehash: 99eaaa0ae6decd32ee95097c435a5ab6313cdb31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 599725a5399e49394b1ef0a494f834e9b7dd2b4c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341225"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859495"
 ---
 # <a name="get-windowsinformationprotection"></a>Получение windowsInformationProtection
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

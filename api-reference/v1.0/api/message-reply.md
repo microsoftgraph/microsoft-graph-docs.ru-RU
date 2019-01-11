@@ -2,12 +2,13 @@
 title: 'message: reply'
 description: Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".
 author: angelgolfer-ms
-ms.openlocfilehash: e52dc393edf92f4fecfda93166392be0249ca4c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ba3df6551aab9138e90fa5e3fc452f2929b4815
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363629"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856325"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -36,7 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

@@ -2,12 +2,13 @@
 title: Действие cleanWindowsDevice
 description: Очистка устройства с Windows
 author: tfitzmac
-ms.openlocfilehash: 9d19b71f200381c10b7501eadf9007162ff9fff3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c6d2eeff97e840cc4f9bb45492af168e2c95c37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301766"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856380"
 ---
 # <a name="cleanwindowsdevice-action"></a>Действие cleanWindowsDevice
 
@@ -37,11 +38,11 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

@@ -2,12 +2,13 @@
 title: Тип ресурса sharedPCAccountManagerPolicy
 description: Политика диспетчера учетных записей SharedPC. Применяется, только если включен диспетчер учетных записей.
 author: tfitzmac
-ms.openlocfilehash: f41efe5c3f1dc033d25df7f931ff860d6c27de70
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4c8e66f64f316b0fd0a31ab17d143e3da2375ee4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312225"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856604"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>Тип ресурса sharedPCAccountManagerPolicy
 

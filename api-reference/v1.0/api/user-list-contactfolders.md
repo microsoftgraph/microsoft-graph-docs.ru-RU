@@ -2,12 +2,13 @@
 title: Список объектов contactFolder
 description: Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.
 author: dkershaw10
-ms.openlocfilehash: b1f467fa74fa2962efbfc5e02c0de0a45c28ddde
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55558b8ea0db3c35d63abdffdef55d01488fe7e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857374"
 ---
 # <a name="list-contactfolders"></a>Список объектов contactFolder
 
@@ -34,7 +35,7 @@ GET /users/{id | userPrincipalName}/contactFolders
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

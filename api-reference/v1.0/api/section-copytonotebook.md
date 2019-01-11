@@ -1,12 +1,13 @@
 ---
 title: 'section: copyToNotebook'
 description: Копирование раздела в указанную записную книжку.
-ms.openlocfilehash: 365e4745f01c3d011cbf8cf0186a16b5eb580c5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fae817d1d256de490a246a43dfbfe6ca3a8c4e3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026928"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856303"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 Копирование раздела в указанную записную книжку.
@@ -34,14 +35,14 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите объект JSON, который содержит параметры, требуемые операцией.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupId|String|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
+|groupId|Строка|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
 |id|Строка|Обязательный. Идентификатор целевой записной книжки. |
-|renameAs|String|Имя копии. По умолчанию используется имя существующего элемента. |
+|renameAs|Строка|Имя копии. По умолчанию используется имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 

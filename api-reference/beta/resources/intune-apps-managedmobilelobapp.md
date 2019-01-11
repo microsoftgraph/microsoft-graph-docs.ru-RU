@@ -2,12 +2,13 @@
 title: Тип ресурса managedMobileLobApp
 description: Абстрактный базовый класс, содержащий свойства для всех управляемых мобильных бизнес-приложений.
 author: tfitzmac
-ms.openlocfilehash: 1eeec631750ebf9ae8fb6ad11733b4d03ee13a40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb53a0da401103b69c24fca184978ef33288bff9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354385"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858361"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>Тип ресурса managedMobileLobApp
 

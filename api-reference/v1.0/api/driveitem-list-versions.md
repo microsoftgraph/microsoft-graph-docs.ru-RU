@@ -1,12 +1,13 @@
 ---
 title: Список версий DriveItem
 description: OneDrive и SharePoint можно настроить на хранение журнала для файлов.
-ms.openlocfilehash: 7f8dc407a064047292c1d581bbbdf7e8da3fe7cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6093371e6ef461b82fd2b5c92b22da7333f7e342
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027246"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855491"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Список версий DriveItem
 

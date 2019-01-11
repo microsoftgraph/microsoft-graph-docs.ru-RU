@@ -2,12 +2,13 @@
 title: Тип ресурса iosLobApp
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений iOS.
 author: tfitzmac
-ms.openlocfilehash: 35e7f6b32e0ed6abade53f593253d65ebd89bc1e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e56c9b2a9a107985ab7f863525f45bc3f43d4f41
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857451"
 ---
 # <a name="ioslobapp-resource-type"></a>Тип ресурса iosLobApp
 

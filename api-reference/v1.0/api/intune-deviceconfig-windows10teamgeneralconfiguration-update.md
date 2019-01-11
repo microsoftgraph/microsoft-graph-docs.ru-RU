@@ -2,12 +2,13 @@
 title: Обновление windows10TeamGeneralConfiguration
 description: Обновление свойств объекта windows10TeamGeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 283e7211c98899b1c8eb02007c9b0d9b889f8ce5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 44ea0c4f76bd95d84ecd5126bec32e988b40a6f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334491"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858368"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>Обновление windows10TeamGeneralConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

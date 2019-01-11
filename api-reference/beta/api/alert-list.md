@@ -1,12 +1,13 @@
 ---
 title: перечисление оповещений;
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: e6ddf41616d27b41414386f83a9ce067411d92b9
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+localization_priority: Normal
+ms.openlocfilehash: 6036514c2aeabe287fd019ce69157d4b7897af60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860209"
 ---
 # <a name="list-alerts"></a>перечисление оповещений;
 
@@ -57,11 +58,11 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 |:----------|:----------|
 | Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода. Текст запроса будет игнорироваться.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов **оповещения** в теле ответа. Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения. Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
 
@@ -79,7 +80,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 GET https://graph.microsoft.com/beta/security/alerts
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

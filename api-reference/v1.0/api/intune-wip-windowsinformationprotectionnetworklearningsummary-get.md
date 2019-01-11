@@ -2,12 +2,13 @@
 title: Получение windowsInformationProtectionNetworkLearningSummary
 description: Чтение свойств и связей объекта windowsInformationProtectionNetworkLearningSummary.
 author: tfitzmac
-ms.openlocfilehash: 46c255b5e59ab4245b1945d588bc15b36b55aec8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27b25a6a2ed39e5f18acf66df7142b2c6ad3fd96
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858641"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Получение windowsInformationProtectionNetworkLearningSummary
 
@@ -37,11 +38,11 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wind
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

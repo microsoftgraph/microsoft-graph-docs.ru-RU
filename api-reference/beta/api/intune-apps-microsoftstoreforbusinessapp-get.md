@@ -2,12 +2,13 @@
 title: Get microsoftStoreForBusinessApp
 description: Чтение свойств и связей объекта microsoftStoreForBusinessApp.
 author: tfitzmac
-ms.openlocfilehash: 5c1732c6babf72b6c4a0f4a6719eb64652b4fa3f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50975e2a3abc73ad61f457f155c2bc4ae3f484f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859614"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>Get microsoftStoreForBusinessApp
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

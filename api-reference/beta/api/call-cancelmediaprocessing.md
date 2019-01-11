@@ -2,12 +2,13 @@
 title: 'вызов: cancelMediaProcessing'
 description: Отменяет с мультимедиа для всех выполняемых любых операций PlayPrompt или записи.
 author: VinodRavichandran
-ms.openlocfilehash: 5e95e4a1b56d7cea806e1a3d588403d81c200923
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9885e05bdca0d04daf597190eb118c81b8774c0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859453"
 ---
 # <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
 
@@ -36,13 +37,13 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    | Описание                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | Boolean | Флаг, указывающий, следует ли остановить все операции или текущий. |
-| clientContext  | String  | Контекст клиента.                                            |
+| all            | Логический | Флаг, указывающий, следует ли остановить все операции или текущий. |
+| clientContext  | Строка  | Контекст клиента.                                            |
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.

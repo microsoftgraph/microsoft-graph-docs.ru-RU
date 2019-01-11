@@ -2,12 +2,13 @@
 title: Тип перечисления policyPlatformType
 description: Типы платформ Suppoorted для политик.
 author: tfitzmac
-ms.openlocfilehash: d661dbb559f1bcff6c3807ef9b9ec59b66660ac0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a61b0f206299e4ddff48570f2639c91a514f81f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855330"
 ---
 # <a name="policyplatformtype-enum-type"></a>Тип перечисления policyPlatformType
 

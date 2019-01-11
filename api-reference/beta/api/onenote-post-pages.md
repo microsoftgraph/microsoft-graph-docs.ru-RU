@@ -2,12 +2,13 @@
 title: Создание страницы
 description: Создание страницы OneNote в разделе по умолчанию записной книжки по умолчанию.
 author: Jewan-microsoft
-ms.openlocfilehash: 2ffc152a6f6e54ffab7e5d7c61e9794423bd69ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ca5656015a79e5ee684845d12b815cb1ec5f5159
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858991"
 ---
 # <a name="create-page"></a>Создание страницы
 
@@ -43,7 +44,7 @@ POST /sites/{id}/onenote/pages
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | строка | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите содержимое HTML для страницы.
 
 Тело может содержать HTML-код, размещенный непосредственно в теле запроса, либо формат составного сообщения, как показано в примере. Если вы отправляете двоичные данные, необходимо отправить составной запрос.

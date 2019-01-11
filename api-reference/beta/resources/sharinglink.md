@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
-ms.openlocfilehash: 094de0cbdb77fe427ba70b9418ced5cc6e9cc731
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c303436aafbdbb5167a992f405036b5e00e4d635
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856394"
 ---
 # <a name="sharinglink-resource-type"></a>Тип ресурса sharingLink
 
@@ -66,7 +67,7 @@ ms.locfileid: "27076467"
 
 Следующая таблица определяет возможные значения для свойства **области** .
 
-| Значение            | Description
+| Значение            | Описание
 |:-----------------|:------------------------------------------------------------
 | `anonymous`      | Лица, имеющие ссылку имеет доступ, без необходимости входа. Сюда может входить пользователям за пределами вашей организации.
 | `organization`   | Любой пользователь вошел в вашей организации (клиента) используйте ссылку для доступа. Доступно только в OneDrive для бизнеса и SharePoint.

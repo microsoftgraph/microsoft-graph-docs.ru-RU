@@ -2,12 +2,13 @@
 title: Список scopedMembers для роли каталога
 description: Получение списка объектов scopedRoleMembership для роли каталога.
 author: lleonard-msft
-ms.openlocfilehash: b3d0e8bc67b6ab670b7dc8a149bad0f031b03762
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbe294d2f55f7e4c0ee265aa180551e7078a5ab1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311720"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859215"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>Список scopedMembers для роли каталога
 
@@ -36,7 +37,7 @@ GET /directoryroles/{id}/scopedMembers
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Создание объекта acceptedSender
 description: Добавление пользователя или группы в список объектов acceptedSender.
 author: dkershaw10
-ms.openlocfilehash: 7a0fc795507a1c2b6a8b20407b9f72347503e507
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a53a68dfb1322124992f1e4ac9ac6a86110ce3a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27300856"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860154"
 ---
 # <a name="create-acceptedsender"></a>Создание объекта acceptedSender
 Добавление пользователя или группы в список объектов acceptedSender.

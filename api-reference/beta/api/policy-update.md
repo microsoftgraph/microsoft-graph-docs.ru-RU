@@ -1,12 +1,13 @@
 ---
 title: Обновление политики
 description: Обновление свойств в уже существующей политики.
-ms.openlocfilehash: 426476b5545e511fe2da111acb1f47f38f32c96f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2992f2f76c0e8b213ad8aabca1bfd0fe59883989
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081948"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857157"
 ---
 # <a name="update-policy"></a>Обновление политики
 
@@ -34,15 +35,15 @@ PATCH /policies/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | application/json  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите объект JSON вместе с параметрами, которые должны быть обновлены. В следующей таблице показаны возможные параметры.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|definition|String|Stringified версия объекта [политики](../resources/policy.md) .|
-|displayName|String|Пользовательское имя для политики.|
+|definition|Строка|Stringified версия объекта [политики](../resources/policy.md) .|
+|displayName|Строка|Пользовательское имя для политики.|
 |isOrganizationDefault|Логический|Указывает, если эта политика будет применяться по умолчанию.|
-|type|String|Указывает тип политики. В настоящее время должен быть «TokenLifetimePolicy»|
+|type|Строка|Указывает тип политики. В настоящее время должен быть «TokenLifetimePolicy»|
 
 ## <a name="response"></a>Ответ
 
@@ -64,8 +65,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 
 ```http
 HTTP/1.1 204 No Content

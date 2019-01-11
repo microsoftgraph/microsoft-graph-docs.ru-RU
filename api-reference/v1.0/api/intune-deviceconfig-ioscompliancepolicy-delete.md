@@ -2,12 +2,13 @@
 title: Delete iosCompliancePolicy
 description: Удаляет объект iosCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 4a36a5e3a272fb3983153d9739ecc894decbab59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d75ac6b0f5918df07978bc59af3dbece7c361c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859474"
 ---
 # <a name="delete-ioscompliancepolicy"></a>Delete iosCompliancePolicy
 
@@ -35,11 +36,11 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

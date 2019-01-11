@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationFileResource
 description: Подкласс educationResource, которая представляет собой объект-файл, который связан с назначения или отправки.  В этом случае файл не относится к одному из специальных файлов (Word, Excel и т. д.), но представляет собой файл, для которого не специальная обработка в системе. Файл ресурсов должно храниться в **resourceFolder** , который связан с назначения или отправки, которым связан этот ресурс.
-ms.openlocfilehash: b3ba77b6b9243d987ad1137afe6d2206e47dadaf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5fda86b80030a2bc0c885b4dd90a384b7ede7fff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858088"
 ---
 # <a name="educationfileresource-resource-type"></a>Тип ресурса educationFileResource
 
@@ -15,9 +16,9 @@ ms.locfileid: "27078885"
 Подкласс [educationResource](educationresource.md) , которая представляет собой объект-файл, который связан с назначения или отправки.  В этом случае файл не относится к одному из специальных файлов (Word, Excel и т. д.), но представляет собой файл, для которого не специальная обработка в системе. Файл ресурсов должно храниться в **resourceFolder** , который связан с назначения или отправки, которым связан этот ресурс.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|String|Место на диске файл ресурсов.|
+|fileUrl|Строка|Место на диске файл ресурсов.|
 
 ## <a name="json-representation"></a>Представление JSON
 

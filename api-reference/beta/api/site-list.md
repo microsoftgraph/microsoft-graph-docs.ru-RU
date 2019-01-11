@@ -1,12 +1,13 @@
 ---
 title: Перечисление сайтов
 description: Список [] доступных [сайтов] в организации, соответствующих указанным критериям фильтра и запроса.
-ms.openlocfilehash: 4e7d9d12f7b18df84a8b23cc3272084b310edb3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87ce5b68ccadffa6e0422c413ab79ee784f361c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855820"
 ---
 # <a name="enumerate-sites"></a>Перечисление сайтов
 
@@ -16,13 +17,13 @@ ms.locfileid: "27079495"
 
 В настоящее время поддерживаются только следующие параметры запроса:
 
-| Оператор фильтра             | Оператор SELECT        | Description
+| Оператор фильтра             | Оператор SELECT        | Описание
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Список всех семейств сайтов корневого уровня в организации. Полезные при обнаружении главного сайта для каждого География.
 
 Кроме того могут используйте запрос **[поиска][]** семейства сайтов «/ sites» для поиска сайты, соответствующие заданным ключевые слова.
 
-[Поиск]: site-search.md
+[search]: site-search.md
 [sites]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения

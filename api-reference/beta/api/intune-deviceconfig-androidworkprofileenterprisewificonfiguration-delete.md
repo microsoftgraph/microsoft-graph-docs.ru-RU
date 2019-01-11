@@ -2,12 +2,13 @@
 title: Удаление androidWorkProfileEnterpriseWiFiConfiguration
 description: Удаляет androidWorkProfileEnterpriseWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: fdeffb608c2097faae24b9f49f4b7cfe29e74ffe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0cbe8f462f969a0ee4abd28bf1a8de7b1b5c34dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852509"
 ---
 # <a name="delete-androidworkprofileenterprisewificonfiguration"></a>Удаление androidWorkProfileEnterpriseWiFiConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

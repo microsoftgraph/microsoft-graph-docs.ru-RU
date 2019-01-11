@@ -2,12 +2,13 @@
 title: Тип ресурса educationExcelResource
 description: 'Подкласс educationResource. Этот тип ресурсов представляет документа в формате Excel.  '
 author: mmast-msft
-ms.openlocfilehash: 427de6fac1f5f4ad63de8286e2714dd8fad472f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f772f7911667c76e64c31a856f3a9f8b6f3e6ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315941"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858102"
 ---
 # <a name="educationexcelresource-resource-type"></a>Тип ресурса educationExcelResource
 
@@ -21,7 +22,7 @@ ms.locfileid: "27315941"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|String.|Указатель на объект файла Excel.|
+|fileUrl|Строка|Указатель на объект файла Excel.|
 
 ## <a name="json-representation"></a>Представление JSON
 

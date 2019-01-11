@@ -2,12 +2,13 @@
 title: Get deviceInstallState
 description: Чтение свойств и связей объекта deviceInstallState.
 author: tfitzmac
-ms.openlocfilehash: 5487403c5c9ea37f9bc1e5c7eb00dd248c359905
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edb1b3a26164c8c49206c12d372cf172582e87b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328562"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860314"
 ---
 # <a name="get-deviceinstallstate"></a>Get deviceInstallState
 
@@ -38,11 +39,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

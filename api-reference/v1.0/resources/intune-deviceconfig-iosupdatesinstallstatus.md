@@ -2,12 +2,13 @@
 title: Тип перечисления iosUpdatesInstallStatus
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 364fc4f3b1c64d3fe8d37d1c6b96c877a56bbed7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c10acec4d11aa5d5ef38c31b753263ad290f19de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353657"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855743"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>Тип перечисления iosUpdatesInstallStatus
 

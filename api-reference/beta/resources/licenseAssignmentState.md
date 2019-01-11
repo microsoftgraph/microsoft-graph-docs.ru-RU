@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса licenseAssignmentState
 description: 'Свойство **licenseAssignmentStates** удостоверение пользователя — это коллекция **licenseAssignmentState**. Его предоставляет подробные сведения о назначениях лицензии для пользователя. Сведения о включает в себя сведения, например:  '
-ms.openlocfilehash: 4e7101acc756a845913a081368b79242834ef3bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 51ff878f356902362487eda36d17c1894c33e5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080561"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855631"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>Тип ресурса licenseAssignmentState
 
@@ -21,13 +22,13 @@ ms.locfileid: "27080561"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assignedByGroup|string|Идентификатор группы, предназначенного для назначения данной лицензии. Если назначения лицензий назначенных прямым, это поле будет Null. Только для чтения.|
 |disabledPlans|Collection(String)|Планы обслуживания, которые отключены в этой назначения. Только для чтения.|
-|error|String|Сбой назначения лицензий. Если лицензия назначена успешно, в этом поле будет Null. Только для чтения. Возможные значения: `CountViolation`, `MutuallyExclusiveViolation`, `DependencyViolation`, `ProhibitedInUsageLocationViolation`, `UniquenessViolation`, и `Others`. Дополнительные сведения о том, как выявлять и исправлять назначение лицензий ошибки можно [здесь](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
-|skuId|String|Уникальный идентификатор SKU. Только для чтения.|
-|state|String|Указывает текущее состояние данного назначения. Только для чтения. Возможные значения: активный, ActiveWithError, отключено и ошибки.|
+|error|Строка|Сбой назначения лицензий. Если лицензия назначена успешно, в этом поле будет Null. Только для чтения. Возможные значения: `CountViolation`, `MutuallyExclusiveViolation`, `DependencyViolation`, `ProhibitedInUsageLocationViolation`, `UniquenessViolation`, и `Others`. Дополнительные сведения о том, как выявлять и исправлять назначение лицензий ошибки можно [здесь](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
+|skuId|Строка|Уникальный идентификатор SKU. Только для чтения.|
+|state|Строка|Указывает текущее состояние данного назначения. Только для чтения. Возможные значения: активный, ActiveWithError, отключено и ошибки.|
 
 ## <a name="json-representation"></a>Представление JSON
 

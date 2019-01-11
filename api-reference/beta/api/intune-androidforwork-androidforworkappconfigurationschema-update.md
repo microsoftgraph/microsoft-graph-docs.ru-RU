@@ -2,12 +2,13 @@
 title: Обновление объекта androidForWorkAppConfigurationSchema
 description: Обновление свойств объекта androidForWorkAppConfigurationSchema.
 author: tfitzmac
-ms.openlocfilehash: ba4050ce741e1fdcfd3158e7f9e9d9e47f422882
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6bcc24b93100cf8aa11bf643ac347af013ff917
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859208"
 ---
 # <a name="update-androidforworkappconfigurationschema"></a>Обновление объекта androidForWorkAppConfigurationSchema
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkApp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

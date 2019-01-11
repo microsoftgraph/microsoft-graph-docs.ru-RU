@@ -1,12 +1,13 @@
 ---
 title: Удаление synchronizationSchema
 description: Удаление настраиваемой схемы и сбрасывает схемы в конфигурации по умолчанию. Если схема удаляется в контексте шаблона, он возвращает схему одно связанное с помощью шаблона по умолчанию `factoryTag`.
-ms.openlocfilehash: 81c1a918b10e8f4553b3e99312f20bb538bfbe4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 281911d34355f598f4a3fe57b20c701dde36d4b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080821"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855890"
 ---
 # <a name="delete-synchronizationschema"></a>Удаление synchronizationSchema
 
@@ -36,7 +37,7 @@ DELETE /applications/{id}/synchronization/templates/{templateId}/schema
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

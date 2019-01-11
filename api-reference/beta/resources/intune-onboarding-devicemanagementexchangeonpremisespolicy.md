@@ -2,12 +2,13 @@
 title: Тип ресурса deviceManagementExchangeOnPremisesPolicy
 description: Одного сущности, который представляет Exchange OnPremises политики, настроенной для клиента.
 author: tfitzmac
-ms.openlocfilehash: 84ef0e5794ed6cf7986bde7d08b876e54e7a6c8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da4e17bc6051b8b03158da19ddb876457c7853d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337214"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855001"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>Тип ресурса deviceManagementExchangeOnPremisesPolicy
 

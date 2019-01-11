@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailActivityUserCounts'
 description: Позволяет понять, как меняется количество уникальных пользователей, которые отправляют, читают и получают письма.
-ms.openlocfilehash: 71f68cce7cdce66151d2d4e64e84aba461da3cc0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: de31c804bde4de615ec2c431b1fd31868723d058
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856625"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 

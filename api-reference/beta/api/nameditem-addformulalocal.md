@@ -1,12 +1,13 @@
 ---
 title: Add Named Item FormulaLocal
-description: Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
-ms.openlocfilehash: 931a6b928678802cc6bc60c42e4df73d09833ed4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.
+localization_priority: Normal
+ms.openlocfilehash: 064bc4a6e8183b58242522dfe663d2585eed09b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077049"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859572"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
@@ -33,7 +34,7 @@ POST /workbook/worksheets({id|name})/names/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -69,8 +70,7 @@ Content-length: 54
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

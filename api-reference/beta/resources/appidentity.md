@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса appIdentity
 description: Указывает идентификатор приложения, выполнившего действия или была изменена. Включает в себя код приложения, имя, идентификатор участника-службы и имя. Этот ресурс вызывается directoryAudit API
-ms.openlocfilehash: 6fcbe8dbb1e17139111c5f1fa9e8681cd1b996a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec61782fca0ab4004fab5a55bd4774c0d64afb3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078630"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855785"
 ---
 # <a name="appidentity-resource-type"></a>Тип ресурса appIdentity
 Указывает идентификатор приложения, выполнившего действия или была изменена. Включает в себя код приложения, имя, идентификатор участника-службы и имя. Этот ресурс вызывается [directoryAudit](../api/directoryaudit-get.md) API
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appId|String|Указывает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
-|displayName|String|Ссылается на имя приложения, отображаемые на портале Azure.|
-|servicePrincipalId|String|Указывает уникальный идентификатор GUID, указывающее идентификатор участника-службы в Azure Active Directory для соответствующего приложения.|
+|displayName|Строка|Ссылается на имя приложения, отображаемые на портале Azure.|
+|servicePrincipalId|Строка|Указывает уникальный идентификатор GUID, указывающее идентификатор участника-службы в Azure Active Directory для соответствующего приложения.|
 |servicePrincipalName|String|Ссылается на имя участника-службы — это имя приложения в клиентов. |
 
 ## <a name="json-representation"></a>Представление JSON

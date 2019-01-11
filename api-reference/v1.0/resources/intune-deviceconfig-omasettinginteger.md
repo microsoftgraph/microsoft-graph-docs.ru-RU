@@ -2,12 +2,13 @@
 title: Тип ресурса omaSettingInteger
 description: Определение целого числа параметра OMA.
 author: tfitzmac
-ms.openlocfilehash: 6a2e6fe6e6782159afa99d91785ae9e854a2e99c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f40d5d225c2b4b99573c482b39f886bcd463e9fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306554"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860454"
 ---
 # <a name="omasettinginteger-resource-type"></a>Тип ресурса omaSettingInteger
 

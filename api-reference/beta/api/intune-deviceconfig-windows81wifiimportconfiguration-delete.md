@@ -2,12 +2,13 @@
 title: Удаление windows81WifiImportConfiguration
 description: Удаляет windows81WifiImportConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 62b742ed30c22ef663a0dd21b28c757babef07d8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7be2320d10e053dc2dfe439bc34df024869fba08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342345"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857850"
 ---
 # <a name="delete-windows81wifiimportconfiguration"></a>Удаление windows81WifiImportConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Создание объекта termsAndConditionsAssignment
 description: Создание объекта termsAndConditionsAssignment.
 author: tfitzmac
-ms.openlocfilehash: 5907cf97a54f10f34f6d16901c10cce331161472
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 60163cc1263a55232d52d577621b0749b95d3755
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360265"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859887"
 ---
 # <a name="create-termsandconditionsassignment"></a>Создание объекта termsAndConditionsAssignment
 
@@ -37,7 +38,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

@@ -1,12 +1,13 @@
 ---
 title: 'section: copyToSectionGroup'
 description: Копирование раздела в указанную группу разделов.
-ms.openlocfilehash: c73f24084c26d8b4c715ab164267bbc41c74ceb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 58907c479096843cdde82ab27eeb318a00fcd32f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858683"
 ---
 # <a name="section-copytosectiongroup"></a>section: copyToSectionGroup
 
@@ -39,16 +40,16 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите объект JSON, который содержит параметры, требуемые операцией.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|Идентификатор сайта SharePoint для копирования. Используйте только при копировании на сайте группы разработчиков Office 365.|
-|siteId|String|Идентификатор веб-сайта SharePoint, чтобы скопировать. Используйте только при копировании на сайте группы разработчиков Office 365.|
-|groupId|String|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
+|siteCollectionId|Строка|Идентификатор сайта SharePoint для копирования. Используйте только при копировании на сайте группы разработчиков Office 365.|
+|siteId|Строка|Идентификатор веб-сайта SharePoint, чтобы скопировать. Используйте только при копировании на сайте группы разработчиков Office 365.|
+|groupId|Строка|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
 |id|Строка|Обязательный. Идентификатор целевой группы разделов. |
-|renameAs|String|Имя копии. По умолчанию используется имя существующего элемента. |
+|renameAs|Строка|Имя копии. По умолчанию используется имя существующего элемента. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||

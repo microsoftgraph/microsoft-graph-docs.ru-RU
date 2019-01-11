@@ -2,12 +2,13 @@
 title: Получение ndesConnector
 description: Чтение свойства и связи объекта ndesConnector.
 author: tfitzmac
-ms.openlocfilehash: ccff6dd13e37ccee19b9f86b91adcf2f6bbc9960
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a43ddacaf1aa385ba53ef33f5a38f8772a9e8d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858662"
 ---
 # <a name="get-ndesconnector"></a>Получение ndesConnector
 
@@ -39,11 +40,11 @@ GET /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

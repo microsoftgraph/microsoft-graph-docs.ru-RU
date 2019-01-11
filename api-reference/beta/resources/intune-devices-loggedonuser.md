@@ -2,12 +2,13 @@
 title: Тип ресурса loggedOnUser
 description: Вход в систему пользователя
 author: tfitzmac
-ms.openlocfilehash: c2021d51356798dec906331797a2504f779264b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e832c6452b73a6fad39723675acb129d79c2b888
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327176"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859754"
 ---
 # <a name="loggedonuser-resource-type"></a>Тип ресурса loggedOnUser
 

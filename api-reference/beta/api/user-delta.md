@@ -1,12 +1,13 @@
 ---
 title: 'user: delta'
 description: Get вновь созданных, обновлении или удалении пользователей без необходимости выполнять полное чтение коллекции всей пользователя. Отслеживание изменений для получения дополнительных сведений см.
-ms.openlocfilehash: 7c87f3e0da6e79f2f8a316a214c1408cf2fa7ebc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2aaee8a5722c22ad8fc381f0a4b1d577461b3991
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856198"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -115,7 +116,7 @@ GET https://graph.microsoft.com/beta/users/delta
 
 Ниже приведен пример ответа при использовании `deltaLink` полученных при инициализации запроса.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

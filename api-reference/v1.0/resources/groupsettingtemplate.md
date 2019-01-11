@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса groupSettingTemplate
 description: Шаблоны параметров группы представляют определенные системой параметры для клиента. Можно на базе доступных объектов groupSettingTemplate создавать **параметры группы**, а также менять предопределенные значения по умолчанию этих параметров. Шаблоны параметров группы невозможно создать, обновить или удалить. Эти параметры могут представлять параметры на уровне клиента или отдельной группы. На данный момент доступны только шаблоны, применимые к группам Office 365 и включающие параметры, которые, например, разрешают или запрещают пользователям создавать группы либо приглашать внешних гостей в группу.
-ms.openlocfilehash: 3c4111b2727e79e048778063b259611795733de4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c2e6b465226b8c1c69438fab37d874735e89ac52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027962"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859348"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>Тип ресурса groupSettingTemplate
 

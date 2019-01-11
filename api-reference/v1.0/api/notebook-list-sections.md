@@ -2,12 +2,13 @@
 title: Перечисление разделов
 description: Получение списка объектов onenoteSection из указанного записной книжки.
 author: Jewan-microsoft
-ms.openlocfilehash: 06072dc31a18c6573dffef67d905da04afec1aa1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ddc884c99ed72608de0f23200ab7fb91e8e3501
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306295"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855806"
 ---
 # <a name="list-sections"></a>Перечисление разделов
 
@@ -43,7 +44,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

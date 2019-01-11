@@ -2,12 +2,13 @@
 title: Тип ресурса androidPermissionAction
 description: Сопоставление разрешений для Android и Android действие должен выполнять при запросе это разрешение.
 author: tfitzmac
-ms.openlocfilehash: 90117b30dae765151e79d8ad1c2ae1afaa5a42ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: daf72bbc5f8d1e32480adeda72c3f759255f54db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860538"
 ---
 # <a name="androidpermissionaction-resource-type"></a>Тип ресурса androidPermissionAction
 
@@ -19,7 +20,7 @@ ms.locfileid: "27331138"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|разрешение|String.|Строка, Android разрешений, определенных в Официальная документация Android.  Пример «android.permission.READ_CONTACTS».|
+|разрешение|Строка|Строка, Android разрешений, определенных в Официальная документация Android.  Пример «android.permission.READ_CONTACTS».|
 |action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Тип действия Android разрешений. Возможные значения: `prompt`, `autoGrant`, `autoDeny`.|
 
 ## <a name="relationships"></a>Связи

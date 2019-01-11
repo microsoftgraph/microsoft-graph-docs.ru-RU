@@ -2,12 +2,13 @@
 title: Тип ресурса vpnRoute
 description: Определение маршрута VPN.
 author: tfitzmac
-ms.openlocfilehash: 64d755c4f21b47e928c64348a2f1d6dad1f7206a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eaa74a1cef7d2eee8148e240cd80ca72f94adcb4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860573"
 ---
 # <a name="vpnroute-resource-type"></a>Тип ресурса vpnRoute
 
@@ -19,7 +20,7 @@ ms.locfileid: "27322024"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|destinationPrefix|String.|Префикс назначения (адрес IPv4/v6).|
+|destinationPrefix|Строка|Префикс назначения (адрес IPv4/v6).|
 |prefixSize|Int32|Префикс размера. (1-32). Допустимые значения 1 до 32|
 
 ## <a name="relationships"></a>Связи

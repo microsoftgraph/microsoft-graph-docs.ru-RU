@@ -2,12 +2,13 @@
 title: Обновление объекта sharedPCConfiguration
 description: Обновляет свойства объекта sharedPCConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 72bf330dd6292d6f11fc648a32350d818ad8b114
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e129a455fad0ec3089b7f72224e73716751c7193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362820"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860377"
 ---
 # <a name="update-sharedpcconfiguration"></a>Обновление объекта sharedPCConfiguration
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

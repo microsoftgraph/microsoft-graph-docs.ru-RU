@@ -2,12 +2,13 @@
 title: Тип ресурса localizedNotificationMessage
 description: Текстовое содержимое шаблона сообщения уведомления для указанного языкового стандарта.
 author: tfitzmac
-ms.openlocfilehash: b3fe7cbc2cdaf5a8afbedd228ca57c989aedfa03
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc4bf6df2d4ec8d19c80b5b2b12d7f2af3b6a9c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325846"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860287"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>Тип ресурса localizedNotificationMessage
 
