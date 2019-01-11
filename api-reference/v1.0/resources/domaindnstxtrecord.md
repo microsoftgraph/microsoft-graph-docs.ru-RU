@@ -2,12 +2,13 @@
 title: Тип ресурса domainDnsTxtRecord
 description: Представляет запись типа TXT, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
 author: lleonard-msft
-ms.openlocfilehash: b7714555a9d88a6af201d81083efea3eb20c660c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 81b55bafc07dda0900c57505805c5ac1ed2ebf51
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313526"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890029"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>Тип ресурса domainDnsTxtRecord
 

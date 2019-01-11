@@ -2,12 +2,13 @@
 title: Тип ресурса audioDuckingConfiguration
 description: Параметры для Уклонение от других источников, (синхронизацию и выходить из нее других источников).
 author: VinodRavichandran
-ms.openlocfilehash: e595e2a46f3e8bcbee2bb7ad0e3421216244db71
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 713e7012381bf6b727321494f81e75c88c66ebe6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891562"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>Тип ресурса audioDuckingConfiguration
 

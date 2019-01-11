@@ -2,12 +2,13 @@
 title: Обновление termsAndConditionsGroupAssignment
 description: Обновление свойства объекта termsAndConditionsGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: ccce1cad1bcddd68e69ba3cdcb417b0aabbe7136
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 003713e436e20dbcec9ee6ec1ab6999256fee0b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891212"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>Обновление termsAndConditionsGroupAssignment
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md).
@@ -49,7 +50,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта.|
-|targetGroupId|String.|Уникальный идентификатор группы, которая назначена политика T & C.|
+|targetGroupId|Строка|Уникальный идентификатор группы, которая назначена политика T & C.|
 
 
 

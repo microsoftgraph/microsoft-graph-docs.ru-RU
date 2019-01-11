@@ -2,12 +2,13 @@
 title: Тип ресурса deviceManagementScriptDeviceState
 description: Содержит свойства для устройства, состояние сценарий управления устройства выполнения.
 author: tfitzmac
-ms.openlocfilehash: 5667de5351ea3130ab0c3e00a55013ada66ed01a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d67b7a43817864906984ce21c90536572b0747d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890540"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>Тип ресурса deviceManagementScriptDeviceState
 
@@ -30,7 +31,7 @@ ms.locfileid: "27337326"
 |:---|:---|:---|
 |id|Строка|Ключ сущности состояния устройства устройства управления скрипта.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего выполнения сценарий управления устройства. Возможные значения: `unknown`, `success`, `fail`.|
-|resultMessage|String.|Подробные сведения о результатов выполнения.|
+|resultMessage|Строка|Подробные сведения о результатов выполнения.|
 |lastStateUpdateDateTime|DateTimeOffset|Время последнего выполняет сценарий управления устройства.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочный выполнение сценария управления устройства.|
 |errorDescription|String|Описание ошибки, соответствующий ошибочный выполнение сценария управления устройства.|

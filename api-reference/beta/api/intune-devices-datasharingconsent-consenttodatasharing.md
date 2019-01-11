@@ -2,12 +2,13 @@
 title: Действие consentToDataSharing
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 2e2e8f198c10e1ff043544ee25dcdb889a9e2635
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7106cc8289c2d14f6eddb102146d26e2032b0b2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890876"
 ---
 # <a name="consenttodatasharing-action"></a>Действие consentToDataSharing
 
@@ -37,11 +38,11 @@ POST /deviceManagement/dataSharingConsents/{dataSharingConsentId}/consentToDataS
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

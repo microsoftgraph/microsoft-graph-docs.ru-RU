@@ -2,12 +2,13 @@
 title: Список windowsAutopilotDeviceIdentities
 description: Свойства списка и связей объектов windowsAutopilotDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: 998a1af97c4ae6173fdfed8b36a84c91ccd20f80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3519dbd27086c8d22ec03f201512f6d15283075
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891352"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>Список windowsAutopilotDeviceIdentities
 
@@ -38,11 +39,11 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,13 @@
 title: Обновление объекта tableRow
 description: Обновление свойств объекта tablerow.
 author: lumine2008
-ms.openlocfilehash: 3990885ac237ccfe5e7a01c71353b0ec44d1a14d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 989a8ad5e28f265ec6e3f248717ebf63748dff74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314261"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891660"
 ---
 # <a name="update-tablerow"></a>Обновление объекта tableRow
 
@@ -33,7 +34,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

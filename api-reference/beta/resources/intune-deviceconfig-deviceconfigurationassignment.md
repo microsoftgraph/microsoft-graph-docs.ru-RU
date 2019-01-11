@@ -2,12 +2,13 @@
 title: Тип ресурса deviceConfigurationAssignment
 description: Объект назначения конфигурации устройств назначает группу AAD определенной конфигурации устройств.
 author: tfitzmac
-ms.openlocfilehash: ef5a9156b98eb8915471dbc042f6e028542be768
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 086ff1f3c9d06a1afe394afff0bd7ee6c543804d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343297"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888699"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Тип ресурса deviceConfigurationAssignment
 

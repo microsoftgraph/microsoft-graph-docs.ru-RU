@@ -2,12 +2,13 @@
 title: Тип ресурса WorksheetProtectionOptions
 description: Представляет параметры защиты листа.
 author: lumine2008
-ms.openlocfilehash: d7217c825e1ac1fef297882ddf984bc94b10cc12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c1e9b9510e56d240175fc5aa9d5631a962458af4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335191"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890141"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>Тип ресурса WorksheetProtectionOptions
 

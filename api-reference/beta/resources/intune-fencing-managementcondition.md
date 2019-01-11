@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса managementCondition
 description: События, например географически границы, может быть запущено динамически выполняются условия управления временные границы и границы сети.
-ms.openlocfilehash: 3c2bc1d7594e61642b96398bfb55d6aa38f3283d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a836aeaa660de8f02c4e441e9eb390e1513c917c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076843"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834113"
 ---
 # <a name="managementcondition-resource-type"></a>Тип ресурса managementCondition
 
@@ -25,17 +26,17 @@ ms.locfileid: "27076843"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для управления условия. Значение, назначенное при создании создаваемый системой.|
-|уникального имени|String|Уникальное имя для управления условия. Используется в выражениях условие управления.|
-|displayName|String|Имя условия управления определенные администратором.|
-|описание|String|Описание управления условия, определенные администратором.|
+|id|Строка|Уникальный идентификатор для управления условия. Значение, назначенное при создании создаваемый системой.|
+|уникального имени|Строка|Уникальное имя для управления условия. Используется в выражениях условие управления.|
+|displayName|Строка|Имя условия управления определенные администратором.|
+|описание|Строка|Описание управления условия, определенные администратором.|
 |createdDateTime|DateTimeOffset|Время создания условие управления. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условие управления. Обновление со стороны службы.|
 |eTag|String|ETag условие управления. Обновление со стороны службы.|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) коллекции|Применимые платформ для этого условия управления.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Description|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) коллекции|Операторы условие управления, связанные с условием управления.|
 

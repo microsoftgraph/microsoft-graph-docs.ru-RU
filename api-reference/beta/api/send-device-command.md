@@ -1,12 +1,13 @@
 ---
 title: Отправка команды устройства
 description: 'Этот интерфейс API обеспечивает возможности рим проекта для передачи команд устройство, связанное с учетной записью Майкрософт. После выполнения на вызов GET `me/devices`, передайте идентификатор устройства, чтобы выполнить команду на устройство. Поддерживаются два типа из команд: LaunchURI и AppServices. Если вы используете LaunchURI, указания параметров *типа* и *полезных данных* . Для вызова AppService, укажите '
-ms.openlocfilehash: bf330ab1234ef6ce22c6a43711621827b628a7ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078753"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891989"
 ---
 # <a name="send-device-command"></a>Отправка команды устройства
 
@@ -41,7 +42,7 @@ POST me/devices/{id}/commands
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите представление JSON свойства команды.
 
@@ -81,13 +82,13 @@ HTTP/1.1 201 OK
 |:----|:------|:------|
 |payload | Microsoft.Graph.JSON| Полезные данные для отправки приложения-службы или для запуска URI на устройстве. |
 |responsePayload | Microsoft.Graph.JSON| Полезные данные, возвращаемые целевого устройства. |
-|postBackURI | String | Публикация резервного URI для отправки последующих уведомлений об обновлениях. |
-|packageFamilyName | String | Имя семейства Windows пакет приложения. |
-|appServiceName | String | Имя приложения-службы, определенные в конечное приложение. Требуется при запуске приложения-службы. |
-|type| String | LaunchURI или AppService. |
-|id| String | Идентификатор команды, полученного на устройство. |
-|actionStatus | String | [Состояние](get-device-command-status.md) команды. |
-|error| String| Все ошибки, связанные с запросом от целевого приложения. |
+|postBackURI | Строка | Публикация резервного URI для отправки последующих уведомлений об обновлениях. |
+|packageFamilyName | Строка | Имя семейства Windows пакет приложения. |
+|appServiceName | Строка | Имя приложения-службы, определенные в конечное приложение. Требуется при запуске приложения-службы. |
+|type| Строка | LaunchURI или AppService. |
+|id| Строка | Идентификатор команды, полученного на устройство. |
+|actionStatus | Строка | [Состояние](get-device-command-status.md) команды. |
+|error| Строка| Все ошибки, связанные с запросом от целевого приложения. |
 
 ## <a name="launch-uri-example"></a>Запуск примера URI
 

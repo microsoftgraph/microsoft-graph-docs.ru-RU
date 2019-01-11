@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса educationAssignmentGrade
 description: " Тем не менее являются подклассов это всех типов участников (точек, работоспособность и т.д.)"
-ms.openlocfilehash: c9cd043f8887fda9427d7b56cf832001361d03a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 371346c6ff23623a118b9ee169e563e75e2429f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080211"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889014"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>Тип ресурса educationAssignmentGrade
 
@@ -16,7 +17,7 @@ ms.locfileid: "27080211"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |gradedBy|[identitySet](identityset.md)| Пользователь, который был участников. |
 |gradedDateTime|DateTimeOffset| Момент времени, когда марки была применена этот объект отправки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|

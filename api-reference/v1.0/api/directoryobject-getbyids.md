@@ -2,12 +2,13 @@
 title: Получение объектов каталога из списка идентификаторов
 description: Выберите "параметр запроса не поддерживается для этой операции.
 author: lleonard-msft
-ms.openlocfilehash: 78653f6db76092685de119390053624bbc6be882
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b504fc69deecd6688f61c20c30e17133f80b1dc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350507"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889651"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 
@@ -44,7 +45,7 @@ POST /directoryObjects/getByIds
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | строка | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

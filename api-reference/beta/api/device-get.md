@@ -2,12 +2,13 @@
 title: Получение устройства
 description: Получение свойств и связей объекта устройства.
 author: tfitzmac
-ms.openlocfilehash: 632094db64cce86a965751d97b0ae9c92d439d5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d3845fb2fa7b84a7cf627772e0133c35dd2cd385
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813372"
 ---
 # <a name="get-device"></a>Получение устройства
 
@@ -39,7 +40,7 @@ GET /devices/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

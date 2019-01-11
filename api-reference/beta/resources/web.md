@@ -1,12 +1,13 @@
 ---
 title: тип веб-ресурса
 description: Задает параметры для веб-приложения.
-ms.openlocfilehash: c040de0c323e57f20e04dcf662ea088b1018c144
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26efe59eda739597e7193fa1ff79443f3d64b5a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890204"
 ---
 # <a name="web-resource-type"></a>тип веб-ресурса
 
@@ -16,10 +17,10 @@ ms.locfileid: "27080737"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Description |
+| Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 |implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Разрешение запроса маркеры, с помощью поток неявных OAuth 2.0 этого веб-приложения.|
-|logoutUrl|String| Задает URL-адрес, который будет использоваться службой авторизации корпорации Майкрософт для выхода из системы на пользователя, с помощью [канала передний план](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [снова канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколы выхода SAML. |
+|logoutUrl|Строка| Задает URL-адрес, который будет использоваться службой авторизации корпорации Майкрософт для выхода из системы на пользователя, с помощью [канала передний план](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [снова канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколы выхода SAML. |
 |oauth2AllowImplicitFlow|Логический| Рекомендуется использовать. Не используйте. | 
 |redirectUris|Коллекция String| Указывает URL-адресов, которые будут отправлены маркеры пользователя для входа в или отправки коды авторизации коды URI, OAuth 2.0 и маркеры доступа для перенаправления. |
 

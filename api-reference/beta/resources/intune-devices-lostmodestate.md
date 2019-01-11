@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления lostModeState
 description: Состояние потеряны режиме, указывающее, включено ли потеряны режим
-ms.openlocfilehash: 5e106a8d93381bcda24451ed5d8f1db1bfeeb115
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 667d4f088dafaec5ba040f592a478a30ee51c298
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890267"
 ---
 # <a name="lostmodestate-enum-type"></a>Тип перечисления lostModeState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27081099"
 
 Состояние потеряны режиме, указывающее, включено ли потеряны режим
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
 |Этот параметр отключен|0|Потеряно режим отключен.|
 |enabled|1|Включен режим потеряны.|

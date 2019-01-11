@@ -2,12 +2,13 @@
 title: Список пользователей
 description: Получение списка объектов user.
 author: dkershaw10
-ms.openlocfilehash: 6d80bde11d5370a87432394c191519bc9a1780ab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 48b63f5a9ccc3616bd8ecee986cbf26dfedfb8d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890533"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -41,7 +42,7 @@ GET /users
 | Авторизация | Bearer {токен} (обязательный)  |
 | Content-Type  | application/json           |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

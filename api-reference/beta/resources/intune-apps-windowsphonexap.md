@@ -2,12 +2,13 @@
 title: Тип ресурса windowsPhoneXAP
 description: Содержит свойства и наследуемые свойства для Windows Phone XAP бизнес-приложений.
 author: tfitzmac
-ms.openlocfilehash: 58b6b9106a81c51b64c8d62d1990a2ae4498d0e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 29d728198a7da0cba0733eb2ad48a6951ddf4ae6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337018"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890281"
 ---
 # <a name="windowsphonexap-resource-type"></a>Тип ресурса windowsPhoneXAP
 
@@ -50,7 +51,7 @@ ms.locfileid: "27337018"
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|productIdentifier|String.|Идентификатор продукта.|
+|productIdentifier|Строка|Идентификатор продукта.|
 |identityVersion|String|Версия удостоверения.|
 
 ## <a name="relationships"></a>Связи

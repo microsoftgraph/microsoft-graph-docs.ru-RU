@@ -2,12 +2,13 @@
 title: Тип ресурса variableManagementConditionExpression
 description: Оценивает условие состояние управления как логическое выражение.
 author: tfitzmac
-ms.openlocfilehash: 8a6ee46bd42139d519e845c7fe53ab3ae964833f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d0805f7c698f90cbcb10bfffdce9c95ce6705b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890155"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>Тип ресурса variableManagementConditionExpression
 
@@ -22,7 +23,7 @@ ms.locfileid: "27305924"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|managementConditionId|String.|Идентификатор условия управления, которая используется для оценки выражения.|
+|managementConditionId|Строка|Идентификатор условия управления, которая используется для оценки выражения.|
 
 ## <a name="relationships"></a>Связи
 Нет

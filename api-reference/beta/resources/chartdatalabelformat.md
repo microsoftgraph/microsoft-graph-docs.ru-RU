@@ -2,12 +2,13 @@
 title: Тип ресурса ChartDataLabelFormat
 description: Инкапсулирует свойства формата для меток данных диаграммы.
 author: lumine2008
-ms.openlocfilehash: cf1912e30fadba3f024307aed6218ea6525d0067
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b086247cc2627fb0757a624ad1e43ed39c702bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347203"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891464"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>Тип ресурса ChartDataLabelFormat
 

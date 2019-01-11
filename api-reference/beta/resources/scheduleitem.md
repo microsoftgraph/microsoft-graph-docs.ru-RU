@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса scheduleItem
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: a7a31f47cde92549a72299b22a40b10c6f7845c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e5d14826a27153af27648484554ec864d62ed6c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080206"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890435"
 ---
 # <a name="scheduleitem-resource-type"></a>Тип ресурса scheduleItem
 
@@ -19,10 +20,10 @@ ms.locfileid: "27080206"
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |Даты, времени и часового пояса, название которого заканчивается соответствующего события. |
 |isPrivate |Логический |Уровень конфиденциальности сообщения соответствующего события. Значение true, если событие помечено `private`, и false в противном случае. |
-|location |String | Расположение, где удерживается или посетившие из соответствующих событий. Необязательный атрибут.|
+|location |String | Расположение, где удерживается или посетившие из соответствующих событий. Необязательное.|
 |start |[dateTimeTimeZone](datetimetimezone.md) |Даты, времени и часового пояса, который запускает соответствующего события. |
-|status |String | Состояние доступности пользователя или ресурсов во время соответствующего события. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |String | Строка темы соответствующего события. Необязательный атрибут.|
+|status |Строка | Состояние доступности пользователя или ресурсов во время соответствующего события. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
+|subject |Строка | Строка темы соответствующего события. Необязательное.|
 
 
 ## <a name="json-representation"></a>Представление JSON

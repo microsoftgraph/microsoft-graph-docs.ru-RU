@@ -2,12 +2,13 @@
 title: Тип ресурса windowsAssignedAccessProfile
 description: Назначенный профиль доступа для Windows.
 author: tfitzmac
-ms.openlocfilehash: 6b01f362c31f6e2791a00d8ff02a7ecd5b798e3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 93f71952c45f4fd8bbd397f0ea115abbe3faafac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328793"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890610"
 ---
 # <a name="windowsassignedaccessprofile-resource-type"></a>Тип ресурса windowsAssignedAccessProfile
 
@@ -29,8 +30,8 @@ ms.locfileid: "27328793"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Имя_профиля|String.|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
-|showTaskBar|Boolean.|Этот параметр позволяет администратору задать, отображается ли панель задач.|
+|Имя_профиля|Строка|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
+|showTaskBar|Логический|Этот параметр позволяет администратору задать, отображается ли панель задач.|
 |appUserModelIds|Коллекция String|Это единственный приложений для магазина Windows, чтобы оно было доступно для запуска в меню Пуск.|
 |desktopAppPaths|Коллекция String|Ниже приведены пути в настольных приложений, которые будут доступны в меню Пуск и только приложения пользователь будет иметь возможность запуска.|
 |userAccounts|Коллекция String|Учетные записи пользователей, которые будут заблокированы для этой базовой конфигурации.|

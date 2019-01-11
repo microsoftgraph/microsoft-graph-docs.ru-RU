@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса androidForWorkAppConfigurationSchemaItem
 description: Один элемент конфигурации в схеме настраиваемой конфигурации Android for Work.
-ms.openlocfilehash: 74f75eb57f6e7fc667499ef69f887c89d5e8a414
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1fb6cb56f754b6d2b100ea2f4d666e31c21efaaf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075438"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890897"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Тип ресурса androidForWorkAppConfigurationSchemaItem
 

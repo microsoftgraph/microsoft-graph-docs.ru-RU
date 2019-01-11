@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса yammerDeviceUsageUserDetail
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 8812b61d974815fd1cdf1bbe1549a21193e5a2f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0f4d543ec8a96eaa4e237a1db1367efdc625c4e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082101"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892017"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>Тип ресурса yammerDeviceUsageUserDetail
 
@@ -15,9 +16,9 @@ ms.locfileid: "27082101"
 | Свойство          | Тип    |
 | :---------------- | :------ |
 | reportRefreshDate | Date    |
-| userPrincipalName | String  |
-| displayName       | String  |
-| userState         | String  |
+| userPrincipalName | Строка  |
+| displayName       | Строка  |
+| userState         | Строка  |
 | stateChangeDate   | Date    |
 | lastActivityDate  | Date    |
 | usedWeb           | Логический |

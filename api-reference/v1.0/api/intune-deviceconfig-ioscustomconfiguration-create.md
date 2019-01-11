@@ -2,12 +2,13 @@
 title: Создание объекта iosCustomConfiguration
 description: Создание объекта iosCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 2b445ae1e8025eb90426c51580890c765842b622
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2acaa050303c6548ad7f3ace9c72b603b1db115e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328810"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888566"
 ---
 # <a name="create-ioscustomconfiguration"></a>Создание объекта iosCustomConfiguration
 
@@ -35,7 +36,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

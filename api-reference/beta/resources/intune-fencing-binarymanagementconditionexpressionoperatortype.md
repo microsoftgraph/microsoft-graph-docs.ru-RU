@@ -2,12 +2,13 @@
 title: Тип перечисления binaryManagementConditionExpressionOperatorType
 description: Поддерживаемые двоичные операторы для управления условным выражением.
 author: tfitzmac
-ms.openlocfilehash: 4b8fb4f1434f222c15bde5fd74261f021d282535
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b836dba7c45eacf0f2d8ffe425b301733e60759
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346958"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891072"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>Тип перечисления binaryManagementConditionExpressionOperatorType
 

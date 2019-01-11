@@ -2,12 +2,13 @@
 title: Тип ресурса androidLobApp
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений Android.
 author: tfitzmac
-ms.openlocfilehash: 11b1dddc43b2fbeb03618965f9dce55979e11df4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 16ae8d15f2262dffc45ad7a8b1db129418d035ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304206"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888743"
 ---
 # <a name="androidlobapp-resource-type"></a>Тип ресурса androidLobApp
 

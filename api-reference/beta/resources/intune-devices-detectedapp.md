@@ -2,12 +2,13 @@
 title: Тип ресурса detectedApp
 description: Управляемое или неуправляемое приложение, которое устанавливается на управляемое устройство. Неуправляемые приложения отображаются только на устройствах, относящихся к корпоративной собственности.
 author: tfitzmac
-ms.openlocfilehash: 0b8e234651c0936fea71d8420b30fcc5d1c6fb7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f62e41b51d2b22d9524a0e86775e5f1cf9526618
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890078"
 ---
 # <a name="detectedapp-resource-type"></a>Тип ресурса detectedApp
 

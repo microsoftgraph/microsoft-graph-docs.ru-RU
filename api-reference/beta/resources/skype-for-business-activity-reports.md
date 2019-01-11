@@ -1,12 +1,13 @@
 ---
 title: Отчеты о работе со Skype для бизнеса
 description: Можно получить подробные сведения об активности внутри организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений.
-ms.openlocfilehash: 3681c733ae641dfd421171c864a737ea083eec41
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f27efa2b07345d73ef0a5b0034aca4f0f3e25793
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891625"
 ---
 # <a name="skype-for-business-activity-reports"></a>Отчеты о работе со Skype для бизнеса
 

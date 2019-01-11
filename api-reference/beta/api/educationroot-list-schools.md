@@ -2,12 +2,13 @@
 title: Перечисление educationSchools
 description: Получение списка всех объектов school.
 author: mmast-msft
-ms.openlocfilehash: 98b3dcd1421ab42d88dbbf831b69ba9591337052
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0bef367932b89ba998405f5da8b27b7af54efb94
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813582"
 ---
 # <a name="list-educationschools"></a>Перечисление educationSchools
 

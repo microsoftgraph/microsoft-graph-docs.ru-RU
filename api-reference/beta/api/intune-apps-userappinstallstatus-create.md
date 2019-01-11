@@ -2,12 +2,13 @@
 title: Создание userAppInstallStatus
 description: Создание нового объекта userAppInstallStatus.
 author: tfitzmac
-ms.openlocfilehash: ef110f5ce911e7e2244ebe2a50bcad194421ecea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cbf61af7c9d25070c9b95f227b4db74f367d261
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308486"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891667"
 ---
 # <a name="create-userappinstallstatus"></a>Создание userAppInstallStatus
 
@@ -37,11 +38,11 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта userAppInstallStatus.
 
 В следующей таблице показаны свойства, которые необходимы для создания userAppInstallStatus.

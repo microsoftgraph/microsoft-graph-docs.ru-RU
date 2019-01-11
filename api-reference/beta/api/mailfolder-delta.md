@@ -1,12 +1,13 @@
 ---
 title: 'mailFolder: delta'
 description: Получение набора папок почты, которые были добавлены в почтовый ящик пользователя или удалены из него.
-ms.openlocfilehash: 7acb50a8d4f32ba6f193fdb18c688622fc5e56dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c26d11426c2b2066a4f5fc93b46b8e9b5b79973a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080096"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889350"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 

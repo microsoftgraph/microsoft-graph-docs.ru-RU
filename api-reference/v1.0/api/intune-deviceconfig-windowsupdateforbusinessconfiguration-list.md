@@ -2,12 +2,13 @@
 title: Перечисление объектов windowsUpdateForBusinessConfiguration
 description: Перечисление свойств и связей объектов windowsUpdateForBusinessConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 071271816d1241e30d202e22c5ce9488c368c566
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bcc2ffd2d39bd9b759578fd8786fc0675555e95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889063"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Перечисление объектов windowsUpdateForBusinessConfiguration
 
@@ -35,11 +36,11 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

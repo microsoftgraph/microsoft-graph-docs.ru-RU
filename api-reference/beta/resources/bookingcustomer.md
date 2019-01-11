@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса bookingCustomer
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 1eef44dfe994238d654a21c5f26ec102dcf1881d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 02439b16235b3ff1560b5a74b15cd6ce2cb3075b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075864"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888979"
 ---
 # <a name="bookingcustomer-resource-type"></a>Тип ресурса bookingCustomer
 
@@ -22,15 +23,15 @@ ms.locfileid: "27075864"
 |[Список клиентов](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md) коллекции | Получите список объектов **bookingCustomer** . |
 |[Создание bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Создание нового объекта **bookingCustomer** . |
 |[Получение bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Чтение свойства и связи объекта **bookingCustomer** .|
-|[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Обновление объекта **bookingCustomer** . |
+|[обновление](../api/bookingcustomer-update.md). | [bookingCustomer](bookingcustomer.md) |Обновление объекта **bookingCustomer** . |
 |[Delete](../api/bookingcustomer-delete.md) | Нет |Удалите объект **bookingCustomer** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя клиента.|
+|displayName|Строка|Имя клиента.|
 |emailAddress|String|SMTP-адрес клиента.|
-|id|String| Идентификатор клиента. Только для чтения.|
+|id|Строка| Идентификатор клиента. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет

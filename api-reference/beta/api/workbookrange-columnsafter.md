@@ -2,12 +2,13 @@
 title: 'workbookRange: columnsAfter'
 description: Возвращает определенное количество столбцов справа от заданного диапазона.
 author: lumine2008
-ms.openlocfilehash: f597d117a4b182656e636108b8a821e0db31be6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9bdab549d3dc2511e17df1f838ce5ca146b0485a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305196"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890869"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -42,7 +43,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

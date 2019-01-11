@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса вход
 description: 'Этот ресурс подробно описывает активность пользователя или приложения входа в каталоге. '
-ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+localization_priority: Priority
+ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241078"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889070"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса вход
 Этот ресурс подробно описывает активность пользователя или приложения входа в каталоге. 
@@ -25,9 +26,9 @@ ms.locfileid: "27241078"
 |appId|String|Указывает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
 |clientAppUsed|Строка|Предоставляет устаревший клиент, используемый для входа в activty.E.g. включает в себя браузера, протокол Exchange Active Sync, современный клиентов, IMAP, MAPI, SMTP, POP.|
 |appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) коллекции|Предоставляет список политик условного доступа, которые запускаются с помощью соответствующего действия входа в.|
-|conditionalAccessStatus|строка| Предоставляет сведения о состоянии политики условного доступа запущено. Возможные значения: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
+|conditionalAccessStatus|string| Предоставляет сведения о состоянии политики условного доступа запущено. Возможные значения: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
 |originalRequestId|Строка|Идентификатор запроса на первый запрос в последовательность проверки подлинности.|
-|isInteractive|Boolean|Указывает, является ли вход интерактивные или нет.|
+|isInteractive|Логический|Указывает, является ли вход интерактивные или нет.|
 |tokenIssuerName|Строка|Имя идентификатора поставщика (например, sts.microsoft.com)|
 |tokenIssuerType|Строка|Предоставляет тип identityProvider. Возможные значения: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
 |correlationId|String|Ссылается на идентификатор, который отправляется из клиента при входе в. Используется для устранения неполадок соответствующего действия входа при вызове служба технической поддержки или в службу поддержки.|
@@ -44,7 +45,7 @@ ms.locfileid: "27241078"
 |riskState|`riskState`|Предоставляет «состояние риска» рискованный пользователя, входа или события риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Предоставляет многофакторной проверкой Подлинности связанные сведения, как требуется многофакторной проверкой Подлинности, состояние многофакторной проверкой Подлинности для соответствующих входа в.|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Предоставляет сведения о сетевой папке.|
-|riskLevel|строка| Предоставляет уровень риска, связанный с входа в программу. Возможные значения: `low`, `medium`, `high`.|
+|riskLevel|string| Предоставляет уровень риска, связанный с входа в программу. Возможные значения: `low`, `medium`, `high`.|
 |status|[signInStatus](signinstatus.md)|Предоставляет состояние входа. Возможные значения `Success` и `Failure`.|
 |userDisplayName|String|Указывает отображаемое имя пользователя.|
 |userId|String|Указывает идентификатор пользователя пользователя.|

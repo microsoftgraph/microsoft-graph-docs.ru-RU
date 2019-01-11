@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365ActivationCounts'
 description: Получите количество активаций Office 365 на компьютерах и мобильных устройствах.
-ms.openlocfilehash: efceb1d1096192cd66e8e0cde2bc6d4e4890f7fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8447c0a8b98b9bf26bf7e8efd728a6ef120813d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025934"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890554"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 

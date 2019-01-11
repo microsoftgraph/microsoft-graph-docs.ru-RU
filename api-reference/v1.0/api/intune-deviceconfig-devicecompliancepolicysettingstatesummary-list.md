@@ -2,12 +2,13 @@
 title: Перечисление объектов deviceCompliancePolicySettingStateSummary
 description: Список свойств и связей объектов deviceCompliancePolicySettingStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 1a93aaaf6c4c1373069e0cf0459bb39e0e1fc069
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3125a764386890a718037387ab37508bef7f224c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888300"
 ---
 # <a name="list-devicecompliancepolicysettingstatesummaries"></a>Перечисление объектов deviceCompliancePolicySettingStateSummary
 
@@ -35,11 +36,11 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

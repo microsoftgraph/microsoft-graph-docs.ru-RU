@@ -1,12 +1,13 @@
 ---
 title: 'message: delta'
 description: Получение списка сообщений, которые были добавлены в указанную папку, обновлены в ней или удалены из нее.
-ms.openlocfilehash: 31d8c1c0129257d2cd125ce7e349f9f361eff5ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b0e5e5a295d7be92e1d4d45f2e079493f1633a45
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888363"
 ---
 # <a name="message-delta"></a>message: delta
 

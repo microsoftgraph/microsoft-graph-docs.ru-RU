@@ -2,12 +2,13 @@
 title: Тип ресурсов pivotTable
 description: Представляет сводную таблицу Excel.
 author: lumine2008
-ms.openlocfilehash: 68075aebeac9c0846e48739daf65e5bf97e4d6f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d500d4bc88608b032262cfae505385bf7ed3f072
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889210"
 ---
 # <a name="pivottable-resource-type"></a>Тип ресурсов pivotTable
 

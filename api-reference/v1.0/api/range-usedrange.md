@@ -2,12 +2,13 @@
 title: 'Range: UsedRange'
 description: Возвращает используемый диапазон заданного объекта диапазона.
 author: lumine2008
-ms.openlocfilehash: 108c19b5af6fcaf5b4c0792d9a71b8f32f1d6148
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 980d0cc8ac59c28e148a50c25b90b52baad51110
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301717"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889931"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 

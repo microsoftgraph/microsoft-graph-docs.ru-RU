@@ -1,12 +1,13 @@
 ---
 title: Обновление открытого расширения
 description: Обновление открытого расширения (объекта openTypeExtension) с использованием свойств, указанных в теле запроса.
-ms.openlocfilehash: 986e5a466577aeb571e893b49a6b734c77027cb7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5765dc8eb32950e3eb5cab951535cbc92bab0c58
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025076"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891520"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
@@ -21,7 +22,7 @@ ms.locfileid: "27025076"
 
 В зависимости от разрешений и ресурсов, данное расширение имени файла, созданного на тип (делегированные или приложение) запрошенный, разрешение, указанное в следующей таблице минимальными правами требуется для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Для приложения |
+| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Не поддерживается | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |

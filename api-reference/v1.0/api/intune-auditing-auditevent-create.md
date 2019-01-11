@@ -2,12 +2,13 @@
 title: Создание объекта auditEvent
 description: Создание объекта auditEvent.
 author: tfitzmac
-ms.openlocfilehash: 0997ca2e9a7bf5421d20e2e3c784ebd444943d4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e333f960e66a11c1f70b1475f74bfbbdb990551
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318412"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889154"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 
@@ -35,7 +36,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

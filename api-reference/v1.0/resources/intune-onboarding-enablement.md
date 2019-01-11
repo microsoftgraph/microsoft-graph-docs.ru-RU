@@ -2,12 +2,13 @@
 title: Включение тип перечисления
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 196372e0b28b4c189fc6d8629ea74ece0df7a6ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9110769de94bd7863692787269fe7bc680c50f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311727"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888111"
 ---
 # <a name="enablement-enum-type"></a>Включение тип перечисления
 

@@ -2,12 +2,13 @@
 title: Удаление объекта managedMobileApp
 description: Удаляет объект managedMobileApp.
 author: tfitzmac
-ms.openlocfilehash: ea2efb72282ad60e09e3f33370ea6edf0036961a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b678efab2333a759edaf620fe19193f589ca7e10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358949"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890442"
 ---
 # <a name="delete-managedmobileapp"></a>Удаление объекта managedMobileApp
 
@@ -40,11 +41,11 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

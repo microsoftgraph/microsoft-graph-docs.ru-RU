@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса extensionSchemaProperty
 description: Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения schemaExtension.
-ms.openlocfilehash: f699ccebefc849a7bf9cacc6dbda61cbcbb9896d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 44769bab4a4f4b40a80d896bed2311554ea5e8ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076428"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889861"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
@@ -18,7 +19,7 @@ ms.locfileid: "27076428"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|String| Имя строго типизированные свойства, определенные как часть расширение схемы.|
+|name|Строка| Имя строго типизированные свойства, определенные как часть расширение схемы.|
 |type|Строка| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
 
 #### <a name="supported-property-data-types"></a>Поддерживаемые типы данных свойств 

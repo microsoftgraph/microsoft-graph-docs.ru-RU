@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса freeBusyError
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: d1bf6671d6c506d9959fcd5abc8843c1a08c924b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63cfc4b14ba6176d582155df57b7f7f787e63cf4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27080874"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889770"
 ---
 # <a name="freebusyerror-resource-type"></a>Тип ресурса freeBusyError
 
@@ -15,10 +16,10 @@ ms.locfileid: "27080874"
 Представляет сведения об ошибке при попытке получить доступности пользователя, ресурса или список рассылки.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |message |String |Описание ошибки. |
-|responseCode |String |Код ответа от запроса для обеспечения доступности пользователя, ресурса или список рассылки. |
+|responseCode |Строка |Код ответа от запроса для обеспечения доступности пользователя, ресурса или список рассылки. |
 
 
 ## <a name="json-representation"></a>Представление JSON

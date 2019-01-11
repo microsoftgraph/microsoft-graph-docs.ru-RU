@@ -2,12 +2,13 @@
 title: Тип ресурса educationSubmissionRecipient
 description: Абстрактный класс, представляющий различные наборы пользователей, которым можно назначить отправку. Возможные значения включают отдельных пользователей или групп. Используется в свойстве **submission.recipient** .
 author: dipakboyed
-ms.openlocfilehash: fc0837b15b1b45d61ab9a69a9074f1bbf104cee5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41a1630322e148471a00ddd1779d85e9b5d1845b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891982"
 ---
 # <a name="educationsubmissionrecipient-resource-type"></a>Тип ресурса educationSubmissionRecipient
 

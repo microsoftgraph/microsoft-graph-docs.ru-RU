@@ -2,12 +2,13 @@
 title: Список androidForWorkEasEmailProfileBases
 description: Свойства списка и связей объектов androidForWorkEasEmailProfileBase.
 author: tfitzmac
-ms.openlocfilehash: b10b5e863cf55715e10dd8f2e009e3f0fb6b7aa8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c030372847600ff9c43752cc820ad649bb5d209b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302977"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891842"
 ---
 # <a name="list-androidforworkeasemailprofilebases"></a>Список androidForWorkEasEmailProfileBases
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
