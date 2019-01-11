@@ -1,53 +1,54 @@
 ---
 title: Тип удостоверению пользователя
 description: 'Для Azure AD вызвать обзоры, этот тип представляет удостоверение пользователя Azure AD для рецензент проверки доступа.  '
-ms.openlocfilehash: 6cbbe7aa017572bcd753a57edbf82751ac4986a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b629fff4c5cecd513777cc5004646aac5f1c85b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839643"
 ---
-# <a name="useridentity-type"></a><span data-ttu-id="cd8d1-103">Тип удостоверению пользователя</span><span class="sxs-lookup"><span data-stu-id="cd8d1-103">userIdentity type</span></span>
+# <a name="useridentity-type"></a><span data-ttu-id="82eee-103">Тип удостоверению пользователя</span><span class="sxs-lookup"><span data-stu-id="82eee-103">userIdentity type</span></span>
 
-> <span data-ttu-id="cd8d1-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cd8d1-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="82eee-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="82eee-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="82eee-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="82eee-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="cd8d1-106">Для Azure AD, [дается обзор доступа](accessreviews-root.md)этот тип представляет удостоверение пользователя Azure AD для рецензент проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-106">For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a reviewer of an access review.</span></span>  
-<span data-ttu-id="cd8d1-107">В контексте журнал аудита Azure AD представляет сведений о пользователе, который инициировал или затронутого пользователем действия аудита.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-107">In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.</span></span>
+<span data-ttu-id="82eee-106">Для Azure AD, [дается обзор доступа](accessreviews-root.md)этот тип представляет удостоверение пользователя Azure AD для рецензент проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="82eee-106">For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a reviewer of an access review.</span></span>  
+<span data-ttu-id="82eee-107">В контексте журнал аудита Azure AD представляет сведений о пользователе, который инициировал или затронутого пользователем действия аудита.</span><span class="sxs-lookup"><span data-stu-id="82eee-107">In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.</span></span>
 
-<span data-ttu-id="cd8d1-108">Этот тип наследуется от [удостоверения](identity.md) и одного дополнительного свойства имя участника-пользователя пользователя.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-108">This type inherits from [identity](identity.md) and has one additional property, the user principal name of the user.</span></span>
+<span data-ttu-id="82eee-108">Этот тип наследуется от [удостоверения](identity.md) и одного дополнительного свойства имя участника-пользователя пользователя.</span><span class="sxs-lookup"><span data-stu-id="82eee-108">This type inherits from [identity](identity.md) and has one additional property, the user principal name of the user.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="cd8d1-109">Methods</span><span class="sxs-lookup"><span data-stu-id="cd8d1-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="82eee-109">Methods</span><span class="sxs-lookup"><span data-stu-id="82eee-109">Methods</span></span>
 
-<span data-ttu-id="cd8d1-110">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-110">None.</span></span>  <span data-ttu-id="cd8d1-111">Объекты этого типа будет включать в теле запроса при [создании accessReview](../api/accessreview-create.md).</span><span class="sxs-lookup"><span data-stu-id="cd8d1-111">You would include objects of this type in the body of a request when [creating an accessReview](../api/accessreview-create.md).</span></span>
+<span data-ttu-id="82eee-110">Нет.</span><span class="sxs-lookup"><span data-stu-id="82eee-110">None.</span></span>  <span data-ttu-id="82eee-111">Объекты этого типа будет включать в теле запроса при [создании accessReview](../api/accessreview-create.md).</span><span class="sxs-lookup"><span data-stu-id="82eee-111">You would include objects of this type in the body of a request when [creating an accessReview](../api/accessreview-create.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cd8d1-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="cd8d1-112">Properties</span></span>
-| <span data-ttu-id="cd8d1-113">Свойство</span><span class="sxs-lookup"><span data-stu-id="cd8d1-113">Property</span></span>     | <span data-ttu-id="cd8d1-114">Тип</span><span class="sxs-lookup"><span data-stu-id="cd8d1-114">Type</span></span>   |<span data-ttu-id="cd8d1-115">Description</span><span class="sxs-lookup"><span data-stu-id="cd8d1-115">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="82eee-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="82eee-112">Properties</span></span>
+| <span data-ttu-id="82eee-113">Свойство</span><span class="sxs-lookup"><span data-stu-id="82eee-113">Property</span></span>     | <span data-ttu-id="82eee-114">Тип</span><span class="sxs-lookup"><span data-stu-id="82eee-114">Type</span></span>   |<span data-ttu-id="82eee-115">Описание</span><span class="sxs-lookup"><span data-stu-id="82eee-115">Description</span></span>|
 |:---------------|:--------|:----------|
-| `displayName` | `String` | <span data-ttu-id="cd8d1-116">Отображаемое имя удостоверения.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-116">The identity's display name.</span></span> <span data-ttu-id="cd8d1-117">Обратите внимание, что не всегда возможно, доступен или актуальными.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-117">Note that this may not always be available or up-to-date.</span></span>    |
-| `id`          | `String` | <span data-ttu-id="cd8d1-118">Уникальный идентификатор удостоверения.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-118">Unique identifier for the identity.</span></span>  |
-| `ipAddress`| `String`| <span data-ttu-id="cd8d1-119">Указывает IP-адрес клиента, используемых пользователь, выполняющий действие (только для журнала аудита).</span><span class="sxs-lookup"><span data-stu-id="cd8d1-119">Indicates the client IP address used by user performing the activity (audit log only).</span></span>|
-| `userPrincipalName`|`String` | <span data-ttu-id="cd8d1-120">Атрибут userPrincipalName пользователя.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-120">The userPrincipalName attribute of the user.</span></span> |
+| `displayName` | `String` | <span data-ttu-id="82eee-116">Отображаемое имя удостоверения.</span><span class="sxs-lookup"><span data-stu-id="82eee-116">The identity's display name.</span></span> <span data-ttu-id="82eee-117">Обратите внимание, что не всегда возможно, доступен или актуальными.</span><span class="sxs-lookup"><span data-stu-id="82eee-117">Note that this may not always be available or up-to-date.</span></span>    |
+| `id`          | `String` | <span data-ttu-id="82eee-118">Уникальный идентификатор удостоверения.</span><span class="sxs-lookup"><span data-stu-id="82eee-118">Unique identifier for the identity.</span></span>  |
+| `ipAddress`| `String`| <span data-ttu-id="82eee-119">Указывает IP-адрес клиента, используемых пользователь, выполняющий действие (только для журнала аудита).</span><span class="sxs-lookup"><span data-stu-id="82eee-119">Indicates the client IP address used by user performing the activity (audit log only).</span></span>|
+| `userPrincipalName`|`String` | <span data-ttu-id="82eee-120">Атрибут userPrincipalName пользователя.</span><span class="sxs-lookup"><span data-stu-id="82eee-120">The userPrincipalName attribute of the user.</span></span> |
 
-## <a name="remarks"></a><span data-ttu-id="cd8d1-121">Заметки</span><span class="sxs-lookup"><span data-stu-id="cd8d1-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="82eee-121">Заметки</span><span class="sxs-lookup"><span data-stu-id="82eee-121">Remarks</span></span>
 
-<span data-ttu-id="cd8d1-p104">В некоторых случаях уникальный идентификатор субъекта может быть недоступен. В таком случае для удостоверения возвращается свойство **displayName**, но в ресурсе будет отсутствовать свойство **id**.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-p104">In some circumstances, the unique identifier for the actor may not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.</span></span>
+<span data-ttu-id="82eee-p104">В некоторых случаях уникальный идентификатор субъекта может быть недоступен. В таком случае для удостоверения возвращается свойство **displayName**, но в ресурсе будет отсутствовать свойство **id**.</span><span class="sxs-lookup"><span data-stu-id="82eee-p104">In some circumstances, the unique identifier for the actor may not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="cd8d1-124">Связи</span><span class="sxs-lookup"><span data-stu-id="cd8d1-124">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="82eee-124">Связи</span><span class="sxs-lookup"><span data-stu-id="82eee-124">Relationships</span></span>
 
-<span data-ttu-id="cd8d1-125">Нет.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-125">None.</span></span>
+<span data-ttu-id="82eee-125">Нет.</span><span class="sxs-lookup"><span data-stu-id="82eee-125">None.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="cd8d1-126">См. также</span><span class="sxs-lookup"><span data-stu-id="cd8d1-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="82eee-126">См. также</span><span class="sxs-lookup"><span data-stu-id="82eee-126">See also</span></span>
 
-| <span data-ttu-id="cd8d1-127">Метод</span><span class="sxs-lookup"><span data-stu-id="cd8d1-127">Method</span></span>           | <span data-ttu-id="cd8d1-128">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="cd8d1-128">Return Type</span></span>    |<span data-ttu-id="cd8d1-129">Описание</span><span class="sxs-lookup"><span data-stu-id="cd8d1-129">Description</span></span>|
+| <span data-ttu-id="82eee-127">Метод</span><span class="sxs-lookup"><span data-stu-id="82eee-127">Method</span></span>           | <span data-ttu-id="82eee-128">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="82eee-128">Return Type</span></span>    |<span data-ttu-id="82eee-129">Описание</span><span class="sxs-lookup"><span data-stu-id="82eee-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="cd8d1-130">Получение accessReview рецензентов</span><span class="sxs-lookup"><span data-stu-id="cd8d1-130">Get accessReview reviewers</span></span>](../api/accessreview-listreviewers.md) |       <span data-ttu-id="cd8d1-131">Коллекция [удостоверению пользователя](useridentity.md)</span><span class="sxs-lookup"><span data-stu-id="cd8d1-131">[userIdentity](useridentity.md) collection</span></span>| <span data-ttu-id="cd8d1-132">Получите рецензентов accessReview.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-132">Get the reviewers of an accessReview.</span></span> |
-|[<span data-ttu-id="cd8d1-133">Добавление accessReview редактор</span><span class="sxs-lookup"><span data-stu-id="cd8d1-133">Add accessReview reviewer</span></span>](../api/accessreview-addreviewer.md) |      <span data-ttu-id="cd8d1-134">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-134">None.</span></span>   |   <span data-ttu-id="cd8d1-135">Добавьте проверяющий accessReview.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-135">Add a reviewer to an accessReview.</span></span> |
-|[<span data-ttu-id="cd8d1-136">Удаление accessReview редактор</span><span class="sxs-lookup"><span data-stu-id="cd8d1-136">Remove accessReview reviewer</span></span>](../api/accessreview-removereviewer.md) | <span data-ttu-id="cd8d1-137">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-137">None.</span></span>  |   <span data-ttu-id="cd8d1-138">Удаление рецензента из accessReview.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-138">Remove a reviewer from an accessReview.</span></span> |
+|[<span data-ttu-id="82eee-130">Получение accessReview рецензентов</span><span class="sxs-lookup"><span data-stu-id="82eee-130">Get accessReview reviewers</span></span>](../api/accessreview-listreviewers.md) |       <span data-ttu-id="82eee-131">Коллекция [удостоверению пользователя](useridentity.md)</span><span class="sxs-lookup"><span data-stu-id="82eee-131">[userIdentity](useridentity.md) collection</span></span>| <span data-ttu-id="82eee-132">Получите рецензентов accessReview.</span><span class="sxs-lookup"><span data-stu-id="82eee-132">Get the reviewers of an accessReview.</span></span> |
+|[<span data-ttu-id="82eee-133">Добавление accessReview редактор</span><span class="sxs-lookup"><span data-stu-id="82eee-133">Add accessReview reviewer</span></span>](../api/accessreview-addreviewer.md) |      <span data-ttu-id="82eee-134">Нет.</span><span class="sxs-lookup"><span data-stu-id="82eee-134">None.</span></span>   |   <span data-ttu-id="82eee-135">Добавьте проверяющий accessReview.</span><span class="sxs-lookup"><span data-stu-id="82eee-135">Add a reviewer to an accessReview.</span></span> |
+|[<span data-ttu-id="82eee-136">Удаление accessReview редактор</span><span class="sxs-lookup"><span data-stu-id="82eee-136">Remove accessReview reviewer</span></span>](../api/accessreview-removereviewer.md) | <span data-ttu-id="82eee-137">Нет.</span><span class="sxs-lookup"><span data-stu-id="82eee-137">None.</span></span>  |   <span data-ttu-id="82eee-138">Удаление рецензента из accessReview.</span><span class="sxs-lookup"><span data-stu-id="82eee-138">Remove a reviewer from an accessReview.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="cd8d1-139">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cd8d1-139">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="82eee-139">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="82eee-139">JSON representation</span></span>
 
-<span data-ttu-id="cd8d1-140">Ниже представлена JSON типа.</span><span class="sxs-lookup"><span data-stu-id="cd8d1-140">Here is a JSON representation of the type.</span></span>
+<span data-ttu-id="82eee-140">Ниже представлена JSON типа.</span><span class="sxs-lookup"><span data-stu-id="82eee-140">Here is a JSON representation of the type.</span></span>
 
 <!-- {
   "blockType": "resource",
