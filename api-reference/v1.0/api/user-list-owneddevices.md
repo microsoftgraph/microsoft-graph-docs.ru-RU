@@ -2,12 +2,13 @@
 title: Список ownedDevices
 description: Получение списка устройств, принадлежащих пользователю.
 author: dkershaw10
-ms.openlocfilehash: bae014e3916547cdd2782a7ec267df14eeda822d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0354dee0c08d93e4121a87a47ebd49324ecc98a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320078"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811405"
 ---
 # <a name="list-owneddevices"></a>Список ownedDevices
 
@@ -34,7 +35,7 @@ GET /users/{id | userPrincipalName}/ownedDevices
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

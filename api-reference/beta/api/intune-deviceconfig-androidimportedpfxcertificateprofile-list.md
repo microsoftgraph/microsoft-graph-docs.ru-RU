@@ -2,12 +2,13 @@
 title: Список androidImportedPFXCertificateProfiles
 description: Свойства списка и связей объектов androidImportedPFXCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: b92ce652296d69d0a6db8b71e22badd6558e9f17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3327c1d30c67ef86d563a44e9d456a6a8d348427
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807485"
 ---
 # <a name="list-androidimportedpfxcertificateprofiles"></a>Список androidImportedPFXCertificateProfiles
 
@@ -38,11 +39,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

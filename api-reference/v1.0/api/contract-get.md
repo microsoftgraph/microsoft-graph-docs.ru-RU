@@ -1,12 +1,13 @@
 ---
 title: Получение Contract
 description: Получение свойств и связей объекта contract.
-ms.openlocfilehash: 2542fd551277e0a8d9ef76cfe82c2f8c80ec3d7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd379286e161cc68e33af49bec20bb580512ef0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27027261"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805777"
 ---
 # <a name="get-contract"></a>Получение Contract
 
@@ -39,7 +40,7 @@ GET /contracts/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 

@@ -2,12 +2,13 @@
 title: Тип ресурса windows10AppsForceUpdateSchedule
 description: Расписание обновления force Windows 10 для приложения
 author: tfitzmac
-ms.openlocfilehash: 851f22e092f2669dfc44911783df6182cda1dc6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef8a0583bd02a62a4461a3415aae86833e24e948
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323704"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811237"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>Тип ресурса windows10AppsForceUpdateSchedule
 
@@ -21,7 +22,7 @@ ms.locfileid: "27323704"
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Перезапустите время начала для сотрудников.|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Расписание повторения. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
-|runImmediatelyIfAfterStartDateTime|Boolean.|Если значение true, если StartDateTime в прошлом else, будет выполняться в следующего повторения немедленно запускается задание.|
+|runImmediatelyIfAfterStartDateTime|Логический|Если значение true, если StartDateTime в прошлом else, будет выполняться в следующего повторения немедленно запускается задание.|
 
 ## <a name="relationships"></a>Связи
 Нет

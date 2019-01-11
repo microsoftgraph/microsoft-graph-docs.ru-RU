@@ -2,12 +2,13 @@
 title: Update mobileAppContentFile
 description: Обновление свойств объекта mobileAppContentFile.
 author: tfitzmac
-ms.openlocfilehash: 7117fe10ca2f191607c6d5a4823cc39a9fcc8cb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee36235a7de5e08b90959b2abaa83ac370371f55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811251"
 ---
 # <a name="update-mobileappcontentfile"></a>Update mobileAppContentFile
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

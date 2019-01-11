@@ -1,12 +1,13 @@
 ---
 title: Тип перечисления androidManagedStoreAppConfigurationSchemaItemDataType
 description: Тип данных для элемента конфигурации внутри схемы настраиваемой конфигурации Android приложения
-ms.openlocfilehash: 4cfaeb1ba02746c7f3307a7d388a2c6a503d3d70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 185785fec7de9b87342703b41063ad49a0bd1bf5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814877"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>Тип перечисления androidManagedStoreAppConfigurationSchemaItemDataType
 
@@ -16,9 +17,9 @@ ms.locfileid: "27082367"
 
 Тип данных для элемента конфигурации внутри схемы настраиваемой конфигурации Android приложения
 ## <a name="members"></a>Элементы
-|Элемент|Значение|Description|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|bool|0|Н/Д|
+|логический|0|Н/Д|
 |целое число|1|Н/Д|
 |string|2|Н/Д|
 |Выбор|3|Н/Д|

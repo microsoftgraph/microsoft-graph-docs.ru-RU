@@ -2,12 +2,13 @@
 title: Действие bypassActivationLock
 description: Обход блокировки активации
 author: tfitzmac
-ms.openlocfilehash: 285c333b395956fbba156766652c9c8e08c8eef3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 026f4fa6380a5dd49d1d6baf2f1bd84d9e8bec89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346951"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810537"
 ---
 # <a name="bypassactivationlock-action"></a>Действие bypassActivationLock
 
@@ -37,11 +38,11 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

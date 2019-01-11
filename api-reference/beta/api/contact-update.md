@@ -2,12 +2,13 @@
 title: Обновление контакта
 description: Обновляет свойства объекта контакта.
 author: angelgolfer-ms
-ms.openlocfilehash: d25efb55a090c4c0b5fa750b64a0b2a905327a76
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e205421413dabeec7667252a05fc8398bdd48e36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809326"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -45,7 +46,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -59,7 +60,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |displayName|String|Отображаемое имя контакта. Обратите внимание, что более поздние обновления для других свойств может стать причиной автоматически подставленное значение для перезаписи значение displayName, заданные. Чтобы сохранить существующие значения, всегда включите его в качестве displayName в операции обновления.|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md) коллекции|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
-|gender |String. |Пол контакта. |
+|gender |Строка |Пол контакта. |
 |generation|String|Поколение контакта.|
 |givenName|String|Имя контакта.|
 |imAddresses|String|Адреса контакта для обмена мгновенными сообщениями.|

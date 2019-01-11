@@ -2,12 +2,13 @@
 title: Обновление объекта chartAxis
 description: Обновление свойств объекта chartaxis.
 author: lumine2008
-ms.openlocfilehash: bc6bea839751641530a3c3945307db2a206b7725
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 843aad2b3d6ea822078834439a085ba4bb10bf8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325489"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813701"
 ---
 # <a name="update-chartaxis"></a>Обновление объекта chartAxis
 
@@ -36,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|

@@ -2,12 +2,13 @@
 title: Тип перечисления deviceManagementSubscriptions
 description: Управление подписок на мобильное устройство клиента.
 author: tfitzmac
-ms.openlocfilehash: 064363ff05617b48ffd5ef66d57c315545223910
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a68d443be1232dd679afc58a7178a54291b0f14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814611"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>Тип перечисления deviceManagementSubscriptions
 
@@ -19,7 +20,7 @@ ms.locfileid: "27326154"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Нет|
+|Нет|0|Нет|
 |Intune|1|Подписки на Microsoft Intune|
 |Office 365|2|Подписки на Office 365|
 |intunePremium|4|Подписки на Microsoft Intune премиум|

@@ -2,12 +2,13 @@
 title: 'domain: verify'
 description: Проверка права собственности на домен.
 author: lleonard-msft
-ms.openlocfilehash: f6a8019d9530691e32ca8a8347d6fe8ff2ac15d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 359a266acf854e4353bce4eda0f65191ca2783c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328926"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814835"
 ---
 # <a name="domain-verify"></a>domain: verify
 
@@ -42,7 +43,7 @@ POST /domains/{id}/verify
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

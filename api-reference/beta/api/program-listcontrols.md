@@ -1,12 +1,13 @@
 ---
 title: Список programControls программы
 description: В Azure AD access дается обзор компонента, список всех programControl объектов, связанные с определенной программе.
-ms.openlocfilehash: 78b28851dadfa1c24bc5bc0556b1c471e7bc09e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8895634b098474cdbeab695cbe730a1e2fd02e2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809339"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Список programControls программы
 
@@ -30,9 +31,9 @@ GET /programs('{programId}')/controls
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ

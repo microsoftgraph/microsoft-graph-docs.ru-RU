@@ -2,12 +2,13 @@
 title: Получение win32LobApp
 description: Чтение свойства и связи объекта win32LobApp.
 author: tfitzmac
-ms.openlocfilehash: f4ca14ac3205cd4ede825e8817260b815606cf59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f9dc2e655d4c5bcf28840365e8ef26681518ad1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813729"
 ---
 # <a name="get-win32lobapp"></a>Получение win32LobApp
 
@@ -41,11 +42,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

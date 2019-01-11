@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса sharePointActivityPages
 description: Ниже указано представление ресурса в формате JSON.
-ms.openlocfilehash: 9111457d5cb9e710f0b07a43ea06c137af0db0f1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 758dcfd2e1c48b0bf8d0d85f06a68f26bfbbef99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074846"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811846"
 ---
 # <a name="sharepointactivitypages-resource-type"></a>Тип ресурса sharePointActivityPages
 

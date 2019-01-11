@@ -2,12 +2,13 @@
 title: Перечисление объектов macOSOfficeSuiteApp
 description: Список свойств и связей объектов macOSOfficeSuiteApp.
 author: tfitzmac
-ms.openlocfilehash: 3536fc65d96c2d4c019a03c0bba4dfb51adfd16d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b668d7a052d124b798abd8f2a0aadaab77f6153a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813323"
 ---
 # <a name="list-macosofficesuiteapps"></a>Перечисление объектов macOSOfficeSuiteApp
 
@@ -35,11 +36,11 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

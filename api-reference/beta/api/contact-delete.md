@@ -2,12 +2,13 @@
 title: Удаление контакта
 description: Удаление контакта.
 author: angelgolfer-ms
-ms.openlocfilehash: a8f1ea8c1ee0f202e60d4efb05f65022a9269c01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e0fd4dcf7abc1b52b0a99d4220e313bef11a6b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813379"
 ---
 # <a name="delete-contact"></a>Удаление контакта
 
@@ -44,7 +45,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/con
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

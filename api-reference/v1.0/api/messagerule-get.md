@@ -2,12 +2,13 @@
 title: Получение правила
 description: Получение свойств и связей объекта messageRule.
 author: angelgolfer-ms
-ms.openlocfilehash: cd89c8f3c287ba4df18a2ff42462ed8ef6aa48b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cfc934ffccb5dd4462f7cf51c318bef198d952dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814107"
 ---
 # <a name="get-rule"></a>Получение правила
 
@@ -39,7 +40,7 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [messageRule](../resources/messagerule.md) в тексте ответа.

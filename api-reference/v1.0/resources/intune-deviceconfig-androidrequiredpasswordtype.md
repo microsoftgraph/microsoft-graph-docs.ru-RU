@@ -2,12 +2,13 @@
 title: Тип перечисления androidRequiredPasswordType
 description: Тип Android пароль.
 author: tfitzmac
-ms.openlocfilehash: e9b757dc86bf71462f7f987cedfcd9e04497880e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06a89256920f143af923e6a3949e61843fa7aa00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814422"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>Тип перечисления androidRequiredPasswordType
 

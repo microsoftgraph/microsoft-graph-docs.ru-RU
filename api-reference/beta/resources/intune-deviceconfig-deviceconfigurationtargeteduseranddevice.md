@@ -2,12 +2,13 @@
 title: Тип ресурса deviceConfigurationTargetedUserAndDevice
 description: Конфликт сводки для набора политик конфигурации устройства.
 author: tfitzmac
-ms.openlocfilehash: 04b0e31d0f3f099389e4901eb654139d286f4bd8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46355f78f23060ecc901c3f98f0e3f7d13101d1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345243"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809627"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Тип ресурса deviceConfigurationTargetedUserAndDevice
 

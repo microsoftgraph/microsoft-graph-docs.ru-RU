@@ -2,12 +2,13 @@
 title: 'Вызовите: перенаправление'
 description: Перенаправление входящего звонка.
 author: VinodRavichandran
-ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: f581a5ce95368e7d852a5b1435ef05bf940f607c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809473"
 ---
 # <a name="call-redirect"></a>Вызовите: перенаправление
 
@@ -22,7 +23,7 @@ ms.locfileid: "27380221"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Для приложений     | Calls.Initiate.All                                  |
+| Application     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,16 +37,16 @@ POST /applications/{id}/calls/{id}/redirect
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |целевые значения|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) коллекции|Участники целевой операции перенаправления.|
-|targetDisposition|String|Возможное значение — это:`default`|
+|targetDisposition|Строка|Возможное значение — это:`default`|
 |timeout|Int32|Время ожидания в секундах для операции перенаправления.|
-|maskCallee|Boolean|Указывает, следует ли скрытие вызываемого абонента.|
-|maskCaller|Boolean|Указывает, следует ли скрытие вызывающего абонента.|
+|maskCallee|Логический|Указывает, следует ли скрытие вызываемого абонента.|
+|maskCaller|Логический|Указывает, следует ли скрытие вызывающего абонента.|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа

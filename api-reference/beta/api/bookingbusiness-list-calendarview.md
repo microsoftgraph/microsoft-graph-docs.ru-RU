@@ -1,12 +1,13 @@
 ---
 title: Список резервирования представления календаря
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: fed5cb09985ad00a3233899662148f5c4ce8ecd2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5abf88b4d0f0f5721ba3bcbf467406cfedfbe9f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809466"
 ---
 # <a name="list-bookings-calendarview"></a>Список резервирования представления календаря
 
@@ -34,10 +35,10 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |start|DateTimeOffset|Дата и время начала интервала, представленного в формате ISO 8601, как UTC или смещение времени в формате UTC. Например полночь по Гринвичу на 1 января 2018 будет выглядеть следующим образом: "2018-01-01T00:00:00Z", и то же время в PST-файлов будет выглядеть следующим образом: "2017-12-31T16:00:00-08:00".|
 |end|DateTimeOffset|Дата и время окончания интервала, представленного в формате ISO 8601, как UTC или смещение времени в формате UTC. В примере 3 am UTC на 1 января 2018 будет выглядеть следующим образом: "2018-01-01T03:00:00Z", и то же время в PST-файлов будет выглядеть следующим образом: "2017-12-31T19:00:00-08:00".|

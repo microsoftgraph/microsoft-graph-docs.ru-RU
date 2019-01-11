@@ -2,12 +2,13 @@
 title: Действие shareForSchoolDataSyncService
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 11b7d890a6fd6d0199fcfbc099cef38eab414c57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 12fea3192dc5aa1e4c2c2416565126d2b8b47fc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313519"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814065"
 ---
 # <a name="shareforschooldatasyncservice-action"></a>Действие shareForSchoolDataSyncService
 
@@ -37,11 +38,11 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/shareForSc
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

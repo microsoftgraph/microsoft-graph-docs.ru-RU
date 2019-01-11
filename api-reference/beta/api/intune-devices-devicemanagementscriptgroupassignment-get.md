@@ -2,12 +2,13 @@
 title: Получение deviceManagementScriptGroupAssignment
 description: Чтение свойства и связи объекта deviceManagementScriptGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: 6068a46a86d71794b58bc69ac7aedb1f9e13f56d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b5ed43b70b80c9924c4443fd33a69c6c225fdceb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809361"
 ---
 # <a name="get-devicemanagementscriptgroupassignment"></a>Получение deviceManagementScriptGroupAssignment
 
@@ -39,11 +40,11 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

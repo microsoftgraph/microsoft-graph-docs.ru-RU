@@ -2,12 +2,13 @@
 title: Получение educationAssignment
 description: " учителя могут видеть все назначения в классе."
 author: dipakboyed
-ms.openlocfilehash: 384f99a48340e51c6d919b96471f31c9fbff27a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f10b9e422e99bde6012de75f2c6bb445abc178ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341911"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813491"
 ---
 # <a name="get-educationassignment"></a>Получение educationAssignment
 
@@ -38,7 +39,7 @@ GET /education/classes/{id}/assignments/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

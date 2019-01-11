@@ -2,12 +2,13 @@
 title: Тип ресурса notificationMessageTemplate
 description: " раздел. Используйте объект notificationMessageTemplate, чтобы создать собственные настраиваемые уведомления, которые могут выбрать администраторы во время настройки действий в случае несоответствия требованиям."
 author: tfitzmac
-ms.openlocfilehash: 110fdfd12c7fc8f556b276581c470d688ae4a35d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf7e15318402a8b2aef24f6a254d12668fda94b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358095"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805444"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Тип ресурса notificationMessageTemplate
 

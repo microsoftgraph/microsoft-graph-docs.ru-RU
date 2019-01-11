@@ -2,12 +2,13 @@
 title: Тип ресурса mobileAppTroubleshootingAppTargetHistory
 description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
 author: tfitzmac
-ms.openlocfilehash: cdb901d4c532b57025837a2fb0cc0975ceba3f8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 76595f4fd643e985d28bcb84ad1c4ea6d7be2ad6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312735"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810341"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>Тип ресурса mobileAppTroubleshootingAppTargetHistory
 
@@ -23,7 +24,7 @@ ms.locfileid: "27312735"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Время возникновения элемент журнала. Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|securityGroupId|String.|К которому нацелено AAD идентификатор группы безопасности.|
+|securityGroupId|Строка|К которому нацелено AAD идентификатор группы безопасности.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
 |errorCode|String|Код ошибки сбоя, пустой, если нет сбоев.|
 

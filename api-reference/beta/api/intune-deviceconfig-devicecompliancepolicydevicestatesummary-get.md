@@ -2,12 +2,13 @@
 title: Get deviceCompliancePolicyDeviceStateSummary
 description: Чтение свойств и связей объекта deviceCompliancePolicyDeviceStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 48dfe674bbc67005afe4e41a3c666157b77a292d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1306501b6ea303fd3ff816af4ae0102b17b8cae6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328100"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812791"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>Get deviceCompliancePolicyDeviceStateSummary
 
@@ -39,11 +40,11 @@ GET /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

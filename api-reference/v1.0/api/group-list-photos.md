@@ -2,12 +2,13 @@
 title: Перечисление фотографий
 description: Получение списка объектов profilePhoto.
 author: dkershaw10
-ms.openlocfilehash: fda70cc81e0a98f8527e8bd00e980a5092804f6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0772b6c4394070a57887439f77d8a94a38453202
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353706"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812483"
 ---
 # <a name="list-photos"></a>Перечисление фотографий
 Получение списка объектов [profilePhoto](../resources/profilephoto.md).
@@ -35,7 +36,7 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

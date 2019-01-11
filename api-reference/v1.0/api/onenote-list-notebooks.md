@@ -2,12 +2,13 @@
 title: Перечисление записных книжек
 description: Получение списка объектов notebook.
 author: Jewan-microsoft
-ms.openlocfilehash: c5925d858b7cbd567b018bd5d8491f2f20b33f66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5a6ae25ab048e0f0e9b25144957add5bbf85d615
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309830"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810152"
 ---
 # <a name="list-notebooks"></a>Перечисление записных книжек
 
@@ -42,7 +43,7 @@ GET /sites/{id}/onenote/notebooks
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

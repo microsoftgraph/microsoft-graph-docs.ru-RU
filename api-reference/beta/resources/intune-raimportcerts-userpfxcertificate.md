@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса userPFXCertificate
 description: Объект, инкапсулирующий все сведения, необходимые для пользователя PFX сертификатов.
-ms.openlocfilehash: 89040cafa976c88ce84cb8f73bc8a68e2cdfbdf2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87516c48e53c8117c9efa119fb6cab62844e6b68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27079255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809998"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Тип ресурса userPFXCertificate
 
@@ -27,17 +28,17 @@ ms.locfileid: "27079255"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сертификата PFX.|
-|отпечаток|String|Отпечаток сертификата, PFX SHA-1.|
+|id|Строка|Уникальный идентификатор для сертификата PFX.|
+|отпечаток|Строка|Отпечаток сертификата, PFX SHA-1.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификата своей целью с точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
+|userPrincipalName|Строка|Имя участника-пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата и время начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Его допустимость Дата и время окончания.|
-|providerName|String|Поставщик криптографии для шифрования в этом больших двоичных объектов.|
-|keyName|String|Имя ключа (в рамках поставщика) используется для шифрования больших двоичных объектов.|
+|providerName|Строка|Поставщик криптографии для шифрования в этом больших двоичных объектов.|
+|keyName|Строка|Имя ключа (в рамках поставщика) используется для шифрования больших двоичных объектов.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Заполнение схемы, используемый поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|encryptedPfxBlob|Двоичный|Зашифрованные больших двоичных объектов PFX.|
-|encryptedPfxPassword|String|Зашифрованный пароль PFX.|
+|encryptedPfxBlob|Binary|Зашифрованные больших двоичных объектов PFX.|
+|encryptedPfxPassword|Строка|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время при импорте сертификата PFX.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения этого сертификата PFX.|
 

@@ -2,12 +2,13 @@
 title: Перечисление объектов termsAndConditionsAcceptanceStatus
 description: Список свойств и связей объектов termsAndConditionsAcceptanceStatus.
 author: tfitzmac
-ms.openlocfilehash: 6c538d331dfaedde5c2cabe483f5860a1c53e56d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdb88a8832c682e273a46fbbfe2510ff0b2bd978
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813778"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>Перечисление объектов termsAndConditionsAcceptanceStatus
 
@@ -37,11 +38,11 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

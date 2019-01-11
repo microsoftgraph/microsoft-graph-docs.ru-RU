@@ -2,12 +2,13 @@
 title: Обновление deviceConfigurationConflictSummary
 description: Обновление свойства объекта deviceConfigurationConflictSummary.
 author: tfitzmac
-ms.openlocfilehash: 46290062b73a13cad575535cf28cb073f3a952be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fb01b5fe7321d25e6b1d7e346a029e830375247
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812763"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Обновление deviceConfigurationConflictSummary
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md).

@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса settingTemplateValue
 description: Представляет определение отдельного параметра шаблона, включая значение по умолчанию для этого параметра, если экземпляр этого параметра не создан.
-ms.openlocfilehash: afc872f3e3d8d02acae639b967cdaf9375bb60cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e941630ab72363db1c4be40079cf2af9e40ff002
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811867"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>Тип ресурса settingTemplateValue
 

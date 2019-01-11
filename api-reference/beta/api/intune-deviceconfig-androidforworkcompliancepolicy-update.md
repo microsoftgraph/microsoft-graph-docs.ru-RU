@@ -2,12 +2,13 @@
 title: Обновление androidForWorkCompliancePolicy
 description: Обновление свойства объекта androidForWorkCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: ca1030b26074825aa8bba2d8857be12e2e476bb1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b02e7f54d5281478c2489dd86eb4f2d25f27fc7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812735"
 ---
 # <a name="update-androidforworkcompliancepolicy"></a>Обновление androidForWorkCompliancePolicy
 
@@ -37,11 +38,11 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md).

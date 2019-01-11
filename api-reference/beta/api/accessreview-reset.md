@@ -1,12 +1,13 @@
 ---
 title: Сброс accessReview
 description: В компоненте обзоры доступа Azure AD Сброс решения текущего активного accessReview.  Конечный объект может быть review однократного доступа или экземпляр повторяющейся проверки доступа.  Предыдущие решения больше не записываются, но рецензентов можно продолжить обновление решения.
-ms.openlocfilehash: b633a56926b56b33c509214d7574971056831967
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 750b9e4da130a087350b7b78c53e71c835d12be1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076017"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809578"
 ---
 # <a name="reset-accessreview"></a>Сброс accessReview
 
@@ -31,9 +32,9 @@ POST /accessReviews('<id>')/resetDecisions()
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный атрибут. |
+| Authorization | string | Носителя \{маркеров\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 

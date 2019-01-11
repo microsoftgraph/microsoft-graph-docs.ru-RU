@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса privilegedAccess
 description: " например `privilegedAccess/azureResources` представляет PIM управление правами доступа к ресурсам Azure."
-ms.openlocfilehash: af109c0cc355bfb282630d21cd02bb463b944f38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f4166fb539d627730c68c7e039fd8d672ff4c785
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082437"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810054"
 ---
 # <a name="privilegedaccess-resource-type"></a>Тип ресурса privilegedAccess
 
@@ -20,12 +21,12 @@ ms.locfileid: "27082437"
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип      |Описание|
 |:----------|:----------|:----------|
-|id         |String     |Идентификатор поставщика, управляется PIM.|
-|displayName|String     |Отображаемое имя поставщика, управляется PIM.|
+|id         |Строка     |Идентификатор поставщика, управляется PIM.|
+|displayName|Строка     |Отображаемое имя поставщика, управляется PIM.|
 
 
 ## <a name="relationships"></a>Связи
-| Связь   | Тип                                         |Description|
+| Связь   | Тип                                         |Описание|
 |:---------------|:---------------------------------------------|:----------|
 |resources       |[governanceResource](../resources/governanceresource.md) коллекции            |Набор ресурсов для поставщика.|
 |roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) коллекции|Коллекция назначения ролей для поставщика.|

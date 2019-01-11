@@ -1,12 +1,13 @@
 ---
 title: Получение appRoleAssignment
 description: Извлечение свойств и связи объекта approleassignment.
-ms.openlocfilehash: f61ea33a2625b06d4e121429946fa87d3acfecb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 465ef0365bee8c1dd002fa423232cc615fc45635
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809662"
 ---
 # <a name="get-approleassignment"></a>Получение appRoleAssignment
 
@@ -37,7 +38,7 @@ GET /groups/{id}/appRoleAssignments/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -54,8 +55,7 @@ GET /groups/{id}/appRoleAssignments/{id}
 GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

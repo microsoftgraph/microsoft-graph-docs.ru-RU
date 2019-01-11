@@ -2,12 +2,13 @@
 title: Перечисление объектов mobileAppAssignment
 description: Список свойств и связей объектов mobileAppAssignment.
 author: tfitzmac
-ms.openlocfilehash: f4cac347aec66a6b41e260941b72cd71514e4a95
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa626e56cea6bae1cb43a8e607ecc3701a17946e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318020"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811279"
 ---
 # <a name="list-mobileappassignments"></a>Перечисление объектов mobileAppAssignment
 
@@ -35,11 +36,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

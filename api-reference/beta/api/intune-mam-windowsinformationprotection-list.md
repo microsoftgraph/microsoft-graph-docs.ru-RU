@@ -2,12 +2,13 @@
 title: Перечисление объектов windowsInformationProtection
 description: Список свойств и связей объектов windowsInformationProtection.
 author: tfitzmac
-ms.openlocfilehash: 34491a305124cf4d9f31ed6dcb1529f2c7b88e5b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 397429d09e174957ed5b6ba7b52e4930b9869cce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348177"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811664"
 ---
 # <a name="list-windowsinformationprotections"></a>Перечисление объектов windowsInformationProtection
 
@@ -39,11 +40,11 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

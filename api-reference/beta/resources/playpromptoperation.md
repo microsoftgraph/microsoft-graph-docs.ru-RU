@@ -2,12 +2,13 @@
 title: Тип ресурса playPromptOperation
 description: Операция playPrompt для получения результатов playPrompt действие.
 author: VinodRavichandran
-ms.openlocfilehash: d63b8f6cfa96706104cd7baaa08475974b12ca13
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: bc18b8f64dedd3fa4d758778bbee37c6bcfd46c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814380"
 ---
 # <a name="playpromptoperation-resource-type"></a>Тип ресурса playPromptOperation
 
@@ -19,13 +20,13 @@ ms.locfileid: "27380954"
 
 | Свойство            | Тип                        | Описание|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | Контекст клиента.                                                                |
-| completionReason    | String                      | Возможные значения: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
+| clientContext       | Строка                      | Контекст клиента.                                                                |
+| completionReason    | Строка                      | Возможные значения: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
 | createdDateTime     | DateTimeOffset              | Время начала операции.                                                   |
-| id                  | String                      | Только для чтения.                                                                         |
+| id                  | Строка                      | Только для чтения.                                                                         |
 | lastActionDateTime  | DateTimeOffset              | Время последнего действия операции.                                      |
 | resultInfo          | [resultInfo](resultInfo.md) | Сведения о результатов. Только для чтения. Сервер, созданный.                               |
-| status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |
+| status              | Строка                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## <a name="relationships"></a>Связи
 Нет

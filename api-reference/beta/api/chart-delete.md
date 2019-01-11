@@ -2,12 +2,13 @@
 title: 'Chart: delete'
 description: Удаляет объект диаграммы.
 author: lumine2008
-ms.openlocfilehash: bb92d9f66bfcaed1d72e4d288d7bbc465f9aa2eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7988c515d7b350653460721f9352b617b7853f7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356548"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813568"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -35,7 +36,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/delete
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 

@@ -2,12 +2,13 @@
 title: Тип ресурса deviceManagementScript
 description: Intune будет предоставлять возможности выполнения их скриптов Powershell на устройствах 10 зарегистрированных windows Azure Active Directory в состав клиента. Скрипт может выполняться периодически или один раз.
 author: tfitzmac
-ms.openlocfilehash: f35a0b4159c84535c4696f7b57c8486b866504b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 321d525aaf9de386ba639bc904915a06eda56a75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811048"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Тип ресурса deviceManagementScript
 
@@ -37,7 +38,7 @@ Intune будет предоставлять возможности выполн
 |createdDateTime|DateTimeOffset|Дата и время создания сценарий управления устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценарий управления устройства.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения скрипта управления устройства выполняется в. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean.|Указывает, должно быть извлеченных подписи скрипта.|
+|enforceSignatureCheck|Логический|Указывает, должно быть извлеченных подписи скрипта.|
 |fileName|String|Имя файла сценария.|
 
 ## <a name="relationships"></a>Связи

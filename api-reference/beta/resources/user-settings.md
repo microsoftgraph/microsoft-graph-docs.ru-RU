@@ -2,12 +2,13 @@
 title: параметры типа ресурсов
 description: 'Параметры текущего пользователя. '
 author: dkershaw10
-ms.openlocfilehash: 81a89d726374cb9640e163d13f10825390e91c23
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 107ec7c425e4818f9233755e54d867b07087aa3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316641"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805022"
 ---
 # <a name="settings-resource-type"></a>параметры типа ресурсов
 
@@ -30,8 +31,8 @@ ms.locfileid: "27316641"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean.|Если задано значение true, делегированный доступ для пользователя отключена [прибора](insights-trending.md) API. Если параметр имеет значение true, документов в углубимся Office пользователя отключены. Если задано значение true, релевантность содержимое, отображаемое в Office 365, например в предлагаемые сайты в Домашняя страница SharePoint и влияет на представление обнаружения в OneDrive для бизнеса. Пользователи могут управлять этим параметром [Углубимся Office](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Boolean.|Отражает [уровень организации](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) управление делегированный доступ, [прибора](insights-trending.md) API. Если значение равно true, организации не имеет доступа к углубимся Office. Релевантность содержимое, отображаемое в Office 365, например в предлагаемые сайты в Домашняя страница SharePoint и представления обнаружения в OneDrive для бизнеса контролируется для всей организации. Этот параметр доступен только для чтения и может быть изменено только администраторами в [центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Логический|Если задано значение true, делегированный доступ для пользователя отключена [прибора](insights-trending.md) API. Если параметр имеет значение true, документов в углубимся Office пользователя отключены. Если задано значение true, релевантность содержимое, отображаемое в Office 365, например в предлагаемые сайты в Домашняя страница SharePoint и влияет на представление обнаружения в OneDrive для бизнеса. Пользователи могут управлять этим параметром [Углубимся Office](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Логический|Отражает [уровень организации](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) управление делегированный доступ, [прибора](insights-trending.md) API. Если значение равно true, организации не имеет доступа к углубимся Office. Релевантность содержимое, отображаемое в Office 365, например в предлагаемые сайты в Домашняя страница SharePoint и представления обнаружения в OneDrive для бизнеса контролируется для всей организации. Этот параметр доступен только для чтения и может быть изменено только администраторами в [центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 ## <a name="json-representation"></a>Представление JSON
 

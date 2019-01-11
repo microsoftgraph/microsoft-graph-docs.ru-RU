@@ -1,12 +1,13 @@
 ---
 title: Отчеты о действиях в OneDrive
 description: Можно получить активности каждый пользователь с лицензии на использование OneDrive, посмотрев их взаимодействие с файлами на OneDrive. Он также помогает понять уровень совместной работы более подробное с отображением число общих файлов.
-ms.openlocfilehash: cfcae36cad301c777eea4ede4532efda0ce13b39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fc87eebeb7c0df1bd6d08a82fa67ccd6d9fa40a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814492"
 ---
 # <a name="onedrive-activity-reports"></a>Отчеты о действиях в OneDrive
 

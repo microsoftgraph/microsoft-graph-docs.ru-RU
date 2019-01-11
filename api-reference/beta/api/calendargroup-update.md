@@ -2,12 +2,13 @@
 title: Обновление объекта calendarGroup.
 description: Обновление свойств объекта calendargroup.
 author: angelgolfer-ms
-ms.openlocfilehash: e0e2cbc9ef2f86298d320285163e2e7378a8f3ec
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a8006098c1088caec444b30aa5210b44388f5cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336706"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809403"
 ---
 # <a name="update-calendargroup"></a>Обновление объекта calendarGroup.
 
@@ -43,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 

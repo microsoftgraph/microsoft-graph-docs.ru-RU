@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса reportRoot
 description: Ресурс, который представляет экземпляр объекта устройства или устранения неполадок отчет, в зависимости от контекста.
-ms.openlocfilehash: 581f13bd7383be31ccdce7e536626eb6375ba777
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8a2c1cbc666698eea7f466c32bae6c404264f545
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27075125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809648"
 ---
 # <a name="reportroot-resource-type"></a>Тип ресурса reportRoot
 

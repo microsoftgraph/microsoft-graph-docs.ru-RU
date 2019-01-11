@@ -1,12 +1,13 @@
 ---
 title: 'notebook: copyNotebook'
 description: Копирование записной книжки в папку Notebooks в целевой библиотеке документов. Если такой папки нет, она будет создана.
-ms.openlocfilehash: d3289f4f22a683d82605d01cc0355dba7ca72f29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 927cdd95a1cf39b27ac18faeeae11ccc56cfff6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812770"
 ---
 # <a name="notebook-copynotebook"></a>notebook: copyNotebook
 Копирование записной книжки в папку Notebooks в целевой библиотеке документов. Если такой папки нет, она будет создана.
@@ -35,13 +36,13 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите объект JSON, который содержит параметры, требуемые операцией. Если тело не нужно, можно отправить пустое тело.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupId|String|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
-|renameAs|String|Имя копии. По умолчанию используется имя существующего элемента. |
+|groupId|Строка|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
+|renameAs|Строка|Имя копии. По умолчанию используется имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 

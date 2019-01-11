@@ -1,12 +1,13 @@
 ---
 title: Получение bookingBusiness
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: 809bfad0685f595b4b8076210c6345760b22f3bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6df16d3c4dbb77c2e97e55fda1881a38c9270c22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27077009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809522"
 ---
 # <a name="get-bookingbusiness"></a>Получение bookingBusiness
 
@@ -35,7 +36,7 @@ GET /bookingBusinesses/<id>
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [bookingBusiness](../resources/bookingbusiness.md) и кода ответа в теле ответа.

@@ -2,12 +2,13 @@
 title: Удалить вкладку с канала
 description: 'Удаляет (отключит) вкладки с указанными в группе. '
 author: nkramer
-ms.openlocfilehash: eef80488fe1a14d8c7021dd25625aac0716665de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2373dd8a27a747fef031631deafc4d771e9cbf29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320764"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811643"
 ---
 # <a name="delete-tab-from-channel"></a>Удалить вкладку с канала
 
@@ -37,7 +38,7 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

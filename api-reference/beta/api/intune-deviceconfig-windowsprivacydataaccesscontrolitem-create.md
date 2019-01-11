@@ -2,12 +2,13 @@
 title: Создание windowsPrivacyDataAccessControlItem
 description: Создание нового объекта windowsPrivacyDataAccessControlItem.
 author: tfitzmac
-ms.openlocfilehash: 262f6866c37d3ed624916189a25ce5a5b5fd0634
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6881d6125e91f18eccfd93079c10dac672167f14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337683"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811990"
 ---
 # <a name="create-windowsprivacydataaccesscontrolitem"></a>Создание windowsPrivacyDataAccessControlItem
 
@@ -37,11 +38,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта windowsPrivacyDataAccessControlItem.
 
 В следующей таблице показаны свойства, которые необходимы для создания windowsPrivacyDataAccessControlItem.
@@ -51,8 +52,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|Строка|Ключ WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Указывает уровень доступа для категории конфиденциальности данных, к которому будет предоставлен указанного приложения к. Возможные значения: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Указывает категорию конфиденциальности данных, к которому будет применяться контроля доступа к определенным. Возможные значения: `notConfigured`, `accountInfo`, `appsRunInBackground`, `calendar`, `callHistory`, `camera`, `contacts`, `diagnosticsInfo`, `email`, `location`, `messaging`, `microphone`, `motion`, `notifications`, `phone`, `radios`, `tasks`, `syncWithDevices`, `trustedDevices` .|
-|appPackageFamilyName|String.|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
-|appDisplayName|String.|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
+|appPackageFamilyName|Строка|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
+|appDisplayName|Строка|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
 
 
 

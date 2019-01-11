@@ -2,12 +2,13 @@
 title: Тип ресурса user
 description: Представляет объект пользователя Azure Active Directory.
 author: tfitzmac
-ms.openlocfilehash: 88db96c374321f428f40971da530ab8ba82965c2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5aef878787f0bf9b8a7a2cd95810e54d1e8f166
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329220"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811881"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 

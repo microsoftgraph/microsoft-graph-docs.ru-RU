@@ -2,12 +2,13 @@
 title: Тип ресурса windowsUpdateForBusinessConfiguration
 description: Конфигурация Центра обновления Windows для бизнеса.
 author: tfitzmac
-ms.openlocfilehash: 9b9573ba3e0d2f4f78b05b9e903e8d2a42d548dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8376508e701262deca7fdacdd49add179d7dae5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343899"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815479"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Тип ресурса windowsUpdateForBusinessConfiguration
 
@@ -36,7 +37,7 @@ ms.locfileid: "27343899"
 |id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean.|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -54,13 +55,13 @@ ms.locfileid: "27343899"
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время завершения срока приостановки исправлений.|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время, когда будет завершен срок приостановки обновлений компонентов.|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Определяет, какие устройства филиала будет получать обновления из. Возможные значения: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|skipChecksBeforeRestart|Boolean.|Задайте для всех проверку перед перезагрузкой: уровень батарей = 40%, сведения о присутствии пользователя необходимости отображения, режиме презентации, полноэкранный режим, состояние телефонный звонок, режим игры и т.д. |
+|skipChecksBeforeRestart|Логический|Задайте для всех проверку перед перезагрузкой: уровень батарей = 40%, сведения о присутствии пользователя необходимости отображения, режиме презентации, полноэкранный режим, состояние телефонный звонок, режим игры и т.д. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Планирование установки обновления на недели, месяца. Возможные значения: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
-|qualityUpdatesPauseStartDateTime|String.|Запуск обновления приостановить datetime качества|
-|featureUpdatesPauseStartDateTime|String.|Функция начать приостановить обновления даты и времени|
+|qualityUpdatesPauseStartDateTime|Строка|Запуск обновления приостановить datetime качества|
+|featureUpdatesPauseStartDateTime|Строка|Функция начать приостановить обновления даты и времени|
 |featureUpdatesRollbackWindowInDays|Int32|Число дней после обновления компонента, для которого отката является допустимым|
-|qualityUpdatesWillBeRolledBack|Boolean.|Определяет, будет ли отката обновлений качества на следующего устройства проверку|
-|featureUpdatesWillBeRolledBack|Boolean.|Определяет, нужно ли выполнить откат обновления компонента на следующего устройства проверку|
+|qualityUpdatesWillBeRolledBack|Логический|Определяет, будет ли отката обновлений качества на следующего устройства проверку|
+|featureUpdatesWillBeRolledBack|Логический|Определяет, нужно ли выполнить откат обновления компонента на следующего устройства проверку|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Качество запуск отката обновления даты и времени|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Запуск отката обновления даты и времени в функциях|
 |engagedRestartDeadlineInDays|Int32|Крайний срок в днях, прежде чем автоматически планирование и выполнение отложенная перезагрузка active часы с допустимый диапазон от 2 до 30 дней|

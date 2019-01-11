@@ -1,12 +1,13 @@
 ---
 title: 'synchronizationSchema: parseExpression'
 description: '(.. / resources/synchronization_attributemappingsource.md) объекта. '
-ms.openlocfilehash: d6cc929681458ff00a806150aa8db9daf115548a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dbde03b9ae85377801ad894c8b8ca22c6baebc85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811027"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
@@ -37,13 +38,13 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр    | Тип   |Description|
+| Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|выражение               |String               |Выражение для синтаксического разбора.|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Объект данных тестирования для оценки выражения. Необязательный атрибут.|
+|выражение               |Строка               |Выражение для синтаксического разбора.|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Объект данных тестирования для оценки выражения. Необязательное.|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сопоставлен с этого выражения. Необязательный параметр.|
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: Список член групп пользователей
 description: Получите групп, каталог ролей и административных единиц измерения, которые пользователь является участником прямой. Эта операция не транзитивное.
-ms.openlocfilehash: 0d22189f35e41798929c10d63219a5f5688c42c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a00cba40c556aafdf22c66507f4f5d1885feae30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27078897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809977"
 ---
 # <a name="list-user-memberof"></a>Список член групп пользователей
 
@@ -40,7 +41,7 @@ GET /users/{id | userPrincipalName}/memberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 
@@ -63,8 +64,7 @@ GET https://graph.microsoft.com/beta/me/memberOf
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

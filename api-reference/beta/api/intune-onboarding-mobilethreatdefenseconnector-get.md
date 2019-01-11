@@ -2,12 +2,13 @@
 title: Получение объекта mobileThreatDefenseConnector
 description: Чтение свойств и связей объекта mobileThreatDefenseConnector.
 author: tfitzmac
-ms.openlocfilehash: 07e0d8fc3a66f941925bb5a36ae7093abe2368b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 64d5afcae9eb4bde80277ca7489408afb9dbf31f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318672"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811685"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>Получение объекта mobileThreatDefenseConnector
 
@@ -39,11 +40,11 @@ GET /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnecto
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

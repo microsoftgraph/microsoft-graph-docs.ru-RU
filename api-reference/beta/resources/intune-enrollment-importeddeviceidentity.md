@@ -2,12 +2,13 @@
 title: Тип ресурса importedDeviceIdentity
 description: Ресурс importedDeviceIdentity представляет identity уникальный оборудования устройства, заранее подготовленных для конфигурации предварительной регистрации.
 author: tfitzmac
-ms.openlocfilehash: f7b6b054eab3815203a208382a19fbd9974cfb37
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c33069520913c7c750220ca8938459ba9bf96c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811671"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>Тип ресурса importedDeviceIdentity
 
@@ -30,7 +31,7 @@ ms.locfileid: "27350514"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор идентификатор импортированных устройства|
-|importedDeviceIdentifier|String.|Идентификатор импортированных устройства|
+|importedDeviceIdentifier|Строка|Идентификатор импортированных устройства|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип удостоверения импортированных устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Последние изменения даты и времени описания|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|

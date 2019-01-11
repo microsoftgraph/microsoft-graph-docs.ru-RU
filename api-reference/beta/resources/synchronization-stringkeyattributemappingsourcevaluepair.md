@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса stringKeyAttributeMappingSourceValuePair
 description: Представляет пару ключ значение, где ключ — это строка, а значение — attributeMappingSource.
-ms.openlocfilehash: 875c593ae652ce763f420d29e5dd4e5e2601bc88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 24695cc64fd3c240d5416a7b37e9a5d373e5a88a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27081863"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805091"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>Тип ресурса stringKeyAttributeMappingSourceValuePair
 
@@ -17,7 +18,7 @@ ms.locfileid: "27081863"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|String|Имя параметра.|
+|key|Строка|Имя параметра.|
 |value|[attributeMappingSource](synchronization-attributemappingsource.md)|Значение параметра.|
 
 ## <a name="json-representation"></a>Представление JSON

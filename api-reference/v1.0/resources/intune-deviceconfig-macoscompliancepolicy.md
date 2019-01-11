@@ -2,12 +2,13 @@
 title: Тип ресурса macOSCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Mac OS.
 author: tfitzmac
-ms.openlocfilehash: d8b210c5c8c0b5f961bc5a6079ed165667884fb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 93fa2f617a22a63524572193cb02fbb1e370e17e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340882"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810992"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>Тип ресурса macOSCompliancePolicy
 
@@ -49,9 +50,9 @@ ms.locfileid: "27340882"
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Mac OS.|
-|firewallEnabled|Boolean.|Является ли брандмауэра должна быть включена или нет.|
-|firewallBlockAllIncoming|Boolean.|Соответствующий параметр «Блокировать все входящие подключения».|
-|firewallEnableStealthMode|Boolean.|Соответствует «Включить режим скрытое».|
+|firewallEnabled|Логический|Является ли брандмауэра должна быть включена или нет.|
+|firewallBlockAllIncoming|Логический|Соответствующий параметр «Блокировать все входящие подключения».|
+|firewallEnableStealthMode|Логический|Соответствует «Включить режим скрытое».|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

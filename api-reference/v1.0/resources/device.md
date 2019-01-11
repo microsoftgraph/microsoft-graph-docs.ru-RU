@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса device
 description: Представляет устройство, зарегистрированное в организации. Экземпляры device создаются в облаке с помощью службы Device Registration Service или Intune. Их используют политики условного доступа для многофакторной проверки подлинности. Представленными устройствами могут быть компьютеры и ноутбуки, смартфоны и планшеты. Наследуется от directoryObject.
-ms.openlocfilehash: c32267001b309b0f701ed17d30b29f93f64f0936
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 4b28b27439f911ff98f13e7d1ae88b873b1286f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191167"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811713"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -38,7 +39,7 @@ ms.locfileid: "27191167"
 |accountEnabled|Boolean| Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Обязательный параметр.|
 |alternativeSecurityIds|Коллекция alternativeSecurityId| Только для внутреннего использования. Значение NULL не допускается. |
 |approximateLastSignInDateTime|DateTimeOffset| Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
-|deviceId|строка| Уникальный идентификатор, задаваемый службой Azure Device Registration Service при регистрации. |
+|deviceId|string| Уникальный идентификатор, задаваемый службой Azure Device Registration Service при регистрации. |
 |deviceMetadata|String| Только для внутреннего использования. Задано значение NULL. |
 |deviceVersion|Int32| Только для внутреннего использования. |
 |displayName|String|Отображаемое имя устройства. Обязательный параметр. |

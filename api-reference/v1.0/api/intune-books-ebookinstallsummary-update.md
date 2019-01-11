@@ -2,12 +2,13 @@
 title: Update eBookInstallSummary
 description: Обновление свойств объекта eBookInstallSummary.
 author: tfitzmac
-ms.openlocfilehash: 200a84609523ed81ea7e5b9b3c50bd95913ddd80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7198daad26b4409808e1e1a84e0b180f47fedfd4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811370"
 ---
 # <a name="update-ebookinstallsummary"></a>Update eBookInstallSummary
 
@@ -35,7 +36,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

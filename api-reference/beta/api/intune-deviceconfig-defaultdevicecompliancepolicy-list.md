@@ -2,12 +2,13 @@
 title: Список defaultDeviceCompliancePolicies
 description: Свойства списка и связей объектов defaultDeviceCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: da41612b61383545d6b7e162633406e26ea40547
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00dd404b9f768efda9b7a153bb11f39057571493
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329927"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813792"
 ---
 # <a name="list-defaultdevicecompliancepolicies"></a>Список defaultDeviceCompliancePolicies
 
@@ -37,11 +38,11 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

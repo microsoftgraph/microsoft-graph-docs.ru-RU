@@ -2,12 +2,13 @@
 title: Список ChartPointsCollection
 description: Получение списка объектов chartpoint.
 author: lumine2008
-ms.openlocfilehash: 1541e93505da09cbadb4434e4d24133f59a13de9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0e48904a07d2f4202be536596675c77c8cfae3cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813596"
 ---
 # <a name="list-chartpointscollection"></a>Список ChartPointsCollection
 
@@ -37,7 +38,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

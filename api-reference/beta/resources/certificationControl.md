@@ -1,12 +1,13 @@
 ---
 title: " Тип ресурса certificationControl"
 description: Этот ресурс содержит соответствия требованиям сертификации данные, связанные с безопасного элемента управления показателя.
-ms.openlocfilehash: 62b6627a9bb1a012d6d7e542d87abbaddb0e279a
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 6f8269a85a8d3cb032f3e58457df95f4dd432c11
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810390"
 ---
 #  <a name="certificationcontrol-resource-type"></a>Тип ресурса certificationControl
 

@@ -2,12 +2,13 @@
 title: Тип ресурса callRoute
 description: Тип callRoute.
 author: VinodRavichandran
-ms.openlocfilehash: 9538fb8f27f60e869c19edc7bd19d7f6b29e8fff
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: e417a7e814b5a2a80da1fa9cd7a551f82e0c37db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380158"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815087"
 ---
 # <a name="callroute-resource-type"></a>Тип ресурса callRoute
 
@@ -21,7 +22,7 @@ ms.locfileid: "27380158"
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | Окончательный               | [identitySet](identityset.md) | Идентификатор, который был разрешен к в вызове.               |
 | Исходный текст            | [identitySet](identityset.md) | Идентификатор, который изначально использовался в вызове.           |
-| routingType         | String                        | Возможные значения: `forwarded`, `lookup`, `selfFork`.  |
+| routingType         | Строка                        | Возможные значения: `forwarded`, `lookup`, `selfFork`.  |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,12 +2,13 @@
 title: Список iosVppAppAssignedUserLicenses
 description: Свойства списка и связей объектов iosVppAppAssignedUserLicense.
 author: tfitzmac
-ms.openlocfilehash: 4e4de201d570813a3b985430d97774444d1e76f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c80063496089f6bd95e8736dd75e016d18b191b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302494"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813722"
 ---
 # <a name="list-iosvppappassigneduserlicenses"></a>Список iosVppAppAssignedUserLicenses
 
@@ -37,11 +38,11 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

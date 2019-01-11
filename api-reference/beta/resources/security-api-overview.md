@@ -1,12 +1,13 @@
 ---
 title: Использование API безопасности Microsoft Graph
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: dff91665fc288bf1714d1975f3ec2e109f576530
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+localization_priority: Priority
+ms.openlocfilehash: be07bf3bbc2c09efc4ed9e918e6b8296fcf0ff37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184534"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811923"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование API безопасности Microsoft Graph
 

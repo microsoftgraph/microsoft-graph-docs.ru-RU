@@ -2,12 +2,13 @@
 title: Удаление объекта sharedPCConfiguration
 description: Удаляет объект sharedPCConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 2de013448728da0942b13696be87820b0229fce0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 98f21b7b506e7f384b01c59f9662e7ae76ba4028
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318447"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812854"
 ---
 # <a name="delete-sharedpcconfiguration"></a>Удаление объекта sharedPCConfiguration
 
@@ -39,11 +40,11 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

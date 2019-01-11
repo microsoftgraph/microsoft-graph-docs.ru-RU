@@ -2,12 +2,13 @@
 title: Функция getAuditCategories
 description: Н/Д
 author: tfitzmac
-ms.openlocfilehash: 03aa26dbb05469926e00542c0005afcee5f5907e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a80439fd9e2f9be2e18af9ffeb669d4bd7ae2d54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337228"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815472"
 ---
 # <a name="getauditcategories-function"></a>Функция getAuditCategories
 
@@ -35,11 +36,11 @@ GET /deviceManagement/auditEvents/getAuditCategories
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -1,12 +1,13 @@
 ---
 title: 'bookingBusiness: публикация'
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: b3145409de1371a164d86ad1cc52ea199d245f50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 58dfc0487a12524f3d87992c5d3cc288e092db01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076683"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809410"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness: публикация
 
@@ -36,7 +37,7 @@ POST /bookingBusinesses/{id}/publish
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.

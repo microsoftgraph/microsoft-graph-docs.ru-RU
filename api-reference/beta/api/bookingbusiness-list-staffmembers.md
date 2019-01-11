@@ -1,12 +1,13 @@
 ---
 title: Список staffMembers
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-ms.openlocfilehash: a2b04aba32d3bbc51dc380f51b54a2700114fd20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fdbf1c60731627e518bc5d13ad46abfbf6f39b69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809564"
 ---
 # <a name="list-staffmembers"></a>Список staffMembers
 
@@ -35,7 +36,7 @@ GET /bookingBusinesses/{id}/staffMembers
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [bookingStaffMember](../resources/bookingstaffmember.md) в теле ответа.

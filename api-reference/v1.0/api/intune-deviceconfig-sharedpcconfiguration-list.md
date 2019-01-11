@@ -2,12 +2,13 @@
 title: Перечисление объектов sharedPCConfiguration
 description: Список свойств и связей объектов sharedPCConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 7266db5644b748828889351bd6e1f21d556ba8a5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b97e4cbb7794e6d05082c20de7b7570600a30d01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337676"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814485"
 ---
 # <a name="list-sharedpcconfigurations"></a>Перечисление объектов sharedPCConfiguration
 
@@ -35,11 +36,11 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

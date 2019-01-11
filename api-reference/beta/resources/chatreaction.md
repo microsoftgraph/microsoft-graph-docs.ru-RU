@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса chatMessageReaction
 description: 'Представляет реакцию на chatMessage сущности. '
-ms.openlocfilehash: 1ad1f7948405a8891ec9aa13065b71108e9c47c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5020653ef02c1604aece46f3ff2c7ea1c82a75ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082519"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810068"
 ---
 # <a name="chatmessagereaction-resource-type"></a>Тип ресурса chatMessageReaction
 
@@ -15,7 +16,7 @@ ms.locfileid: "27082519"
 Сущность типа `chatMessageReaction` возвращается как часть [получить сообщения](../api/channel-get-message.md) API, как часть [chatMessage](chatmessage.md) сущности.
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |reactionType|string| Тип реакции. Запланированные значения: <br><ul><li>Как - как сообщение, контент не задан в этом случае.</li><li>Emoji - Emoji реакции. Содержимое задано значение Юникод из emoji.</li><li>Подпись — содержимое задано значение строки в метку.</li></ul>|
 |createdDateTime|dateTimeOffset|Метка времени UTC корневой сообщения в формате ISO 8601.|
