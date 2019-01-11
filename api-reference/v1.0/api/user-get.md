@@ -2,71 +2,72 @@
 title: Получение пользователя
 description: Получение свойств и связей объекта пользователей.
 author: dkershaw10
-ms.openlocfilehash: f26b77ccb21c4b25cc3d869582ce1d4064b16f53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 8b21e45c5b6e86a539a2056859a0afa007614fcf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886214"
 ---
-# <a name="get-a-user"></a><span data-ttu-id="9f451-103">Получение пользователя</span><span class="sxs-lookup"><span data-stu-id="9f451-103">Get a user</span></span>
+# <a name="get-a-user"></a><span data-ttu-id="b7060-103">Получение пользователя</span><span class="sxs-lookup"><span data-stu-id="b7060-103">Get a user</span></span>
 
-<span data-ttu-id="9f451-104">Получение свойств и связей объекта пользователей.</span><span class="sxs-lookup"><span data-stu-id="9f451-104">Retrieve the properties and relationships of user object.</span></span>
+<span data-ttu-id="b7060-104">Получение свойств и связей объекта пользователей.</span><span class="sxs-lookup"><span data-stu-id="b7060-104">Retrieve the properties and relationships of user object.</span></span>
 
-> <span data-ttu-id="9f451-p101">Примечание. При получении пользователя возвращается только стандартный набор свойств (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). С помощью параметра `$select` можно получить остальные свойства и связи объекта [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="9f451-p101">Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.</span></span>
+> <span data-ttu-id="b7060-p101">Примечание. При получении пользователя возвращается только стандартный набор свойств (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). С помощью параметра `$select` можно получить остальные свойства и связи объекта [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="b7060-p101">Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9f451-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9f451-107">Permissions</span></span>
-<span data-ttu-id="9f451-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9f451-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7060-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b7060-107">Permissions</span></span>
+<span data-ttu-id="b7060-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7060-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9f451-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9f451-110">Permission type</span></span>      | <span data-ttu-id="9f451-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9f451-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b7060-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b7060-110">Permission type</span></span>      | <span data-ttu-id="b7060-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b7060-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9f451-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9f451-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9f451-113">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9f451-113">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="9f451-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9f451-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f451-115">User.Read, User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9f451-115">User.Read, User.ReadWrite</span></span>    |
-|<span data-ttu-id="9f451-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9f451-116">Application</span></span> | <span data-ttu-id="9f451-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f451-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="b7060-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b7060-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b7060-113">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b7060-113">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="b7060-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b7060-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7060-115">User.Read, User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b7060-115">User.Read, User.ReadWrite</span></span>    |
+|<span data-ttu-id="b7060-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b7060-116">Application</span></span> | <span data-ttu-id="b7060-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7060-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9f451-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9f451-118">HTTP request</span></span>
-<span data-ttu-id="9f451-119">Для конкретного пользователя.<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="9f451-119">For a specific user: <!-- { "blockType": "ignored" } --></span></span>
+## <a name="http-request"></a><span data-ttu-id="b7060-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b7060-118">HTTP request</span></span>
+<span data-ttu-id="b7060-119">Для конкретного пользователя.<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="b7060-119">For a specific user: <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /users/{id | userPrincipalName}
 ```
 
-<span data-ttu-id="9f451-120">Для пользователя выполнил вход.<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="9f451-120">For the signed-in user: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="b7060-120">Для пользователя выполнил вход.<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="b7060-120">For the signed-in user: <!-- { "blockType": "ignored" } --></span></span>
 ```http
 GET /me
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9f451-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9f451-121">Optional query parameters</span></span>
-<span data-ttu-id="9f451-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9f451-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b7060-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b7060-121">Optional query parameters</span></span>
+<span data-ttu-id="b7060-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="b7060-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="9f451-123">По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span><span class="sxs-lookup"><span data-stu-id="9f451-123">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> 
+<span data-ttu-id="b7060-123">По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span><span class="sxs-lookup"><span data-stu-id="b7060-123">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> 
 
-<span data-ttu-id="9f451-124">Чтобы возвратить альтернативный набор свойств, необходимо указать нужный набор свойств [user](../resources/user.md) с помощью параметра запроса OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="9f451-124">To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="9f451-125">Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.</span><span class="sxs-lookup"><span data-stu-id="9f451-125">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
+<span data-ttu-id="b7060-124">Чтобы возвратить альтернативный набор свойств, необходимо указать нужный набор свойств [user](../resources/user.md) с помощью параметра запроса OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="b7060-124">To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="b7060-125">Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.</span><span class="sxs-lookup"><span data-stu-id="b7060-125">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9f451-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9f451-126">Request headers</span></span>
-| <span data-ttu-id="9f451-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9f451-127">Header</span></span>       | <span data-ttu-id="9f451-128">Значение</span><span class="sxs-lookup"><span data-stu-id="9f451-128">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b7060-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b7060-126">Request headers</span></span>
+| <span data-ttu-id="b7060-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b7060-127">Header</span></span>       | <span data-ttu-id="b7060-128">Значение</span><span class="sxs-lookup"><span data-stu-id="b7060-128">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="9f451-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9f451-129">Authorization</span></span>  | <span data-ttu-id="9f451-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9f451-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9f451-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9f451-132">Content-Type</span></span>   | <span data-ttu-id="9f451-133">application/json</span><span class="sxs-lookup"><span data-stu-id="9f451-133">application/json</span></span> |
+| <span data-ttu-id="b7060-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b7060-129">Authorization</span></span>  | <span data-ttu-id="b7060-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b7060-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b7060-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b7060-132">Content-Type</span></span>   | <span data-ttu-id="b7060-133">application/json</span><span class="sxs-lookup"><span data-stu-id="b7060-133">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9f451-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9f451-134">Request body</span></span>
-<span data-ttu-id="9f451-135">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9f451-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7060-134">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b7060-134">Request body</span></span>
+<span data-ttu-id="b7060-135">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b7060-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9f451-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="9f451-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b7060-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="b7060-136">Response</span></span>
 
-<span data-ttu-id="9f451-137">При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [user](../resources/user.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="9f451-137">If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="b7060-137">При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [user](../resources/user.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="b7060-137">If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9f451-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="9f451-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b7060-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="b7060-138">Examples</span></span>
 
-### <a name="example-1-standard-users-request"></a><span data-ttu-id="9f451-139">Пример 1. Обычный запрос пользователей</span><span class="sxs-lookup"><span data-stu-id="9f451-139">Example 1: Standard users request</span></span>
+### <a name="example-1-standard-users-request"></a><span data-ttu-id="b7060-139">Пример 1. Обычный запрос пользователей</span><span class="sxs-lookup"><span data-stu-id="b7060-139">Example 1: Standard users request</span></span>
 
-<span data-ttu-id="9f451-140">По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span><span class="sxs-lookup"><span data-stu-id="9f451-140">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> <span data-ttu-id="9f451-141">В этом примере показаны запрос и ответ по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="9f451-141">This example illustrates the default request and response.</span></span> 
+<span data-ttu-id="b7060-140">По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_).</span><span class="sxs-lookup"><span data-stu-id="b7060-140">By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ).</span></span> <span data-ttu-id="b7060-141">В этом примере показаны запрос и ответ по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="b7060-141">This example illustrates the default request and response.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
-##### <a name="response"></a><span data-ttu-id="9f451-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="9f451-142">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b7060-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="b7060-142">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -92,11 +93,11 @@ Content-length: 491
 ```
 
 
-### <a name="example-2-signed-in-user-request"></a><span data-ttu-id="9f451-143">Пример 2. Запрос для вошедшего пользователя</span><span class="sxs-lookup"><span data-stu-id="9f451-143">Example 2: Signed-in user request</span></span>
+### <a name="example-2-signed-in-user-request"></a><span data-ttu-id="b7060-143">Пример 2. Запрос для вошедшего пользователя</span><span class="sxs-lookup"><span data-stu-id="b7060-143">Example 2: Signed-in user request</span></span>
 
-<span data-ttu-id="9f451-144">Вы можете получить информацию о вошедшем пользователе, заменив `/users/{id | userPrincipalName}` на `/me`.</span><span class="sxs-lookup"><span data-stu-id="9f451-144">You can get the user information for the signed-in user by replacing `/users/{id | userPrincipalName}` with `/me`.</span></span>
+<span data-ttu-id="b7060-144">Вы можете получить информацию о вошедшем пользователе, заменив `/users/{id | userPrincipalName}` на `/me`.</span><span class="sxs-lookup"><span data-stu-id="b7060-144">You can get the user information for the signed-in user by replacing `/users/{id | userPrincipalName}` with `/me`.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9f451-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="9f451-145">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b7060-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="b7060-145">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -105,7 +106,7 @@ Content-length: 491
 ```http
 GET https://graph.microsoft.com/v1.0/me
 ```
-##### <a name="response"></a><span data-ttu-id="9f451-146">Ответ</span><span class="sxs-lookup"><span data-stu-id="9f451-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b7060-146">Ответ</span><span class="sxs-lookup"><span data-stu-id="b7060-146">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -134,16 +135,16 @@ Content-length: 491
 }
 ```
 
-### <a name="example-3-users-request-using-select"></a><span data-ttu-id="9f451-147">Пример 3. Запрос пользователей с помощью оператора $select</span><span class="sxs-lookup"><span data-stu-id="9f451-147">Example 3: Users request using $select</span></span>
+### <a name="example-3-users-request-using-select"></a><span data-ttu-id="b7060-147">Пример 3. Запрос пользователей с помощью оператора $select</span><span class="sxs-lookup"><span data-stu-id="b7060-147">Example 3: Users request using $select</span></span>
 
-<span data-ttu-id="9f451-148">Если вам нужен другой набор свойств, можете использовать параметр запроса OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="9f451-148">If you need a different property set, you can use the OData `$select` query parameter.</span></span> <span data-ttu-id="9f451-149">Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.</span><span class="sxs-lookup"><span data-stu-id="9f451-149">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
+<span data-ttu-id="b7060-148">Если вам нужен другой набор свойств, можете использовать параметр запроса OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="b7060-148">If you need a different property set, you can use the OData `$select` query parameter.</span></span> <span data-ttu-id="b7060-149">Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.</span><span class="sxs-lookup"><span data-stu-id="b7060-149">For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9f451-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="9f451-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b7060-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="b7060-150">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
-##### <a name="response"></a><span data-ttu-id="9f451-151">Ответ</span><span class="sxs-lookup"><span data-stu-id="9f451-151">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b7060-151">Ответ</span><span class="sxs-lookup"><span data-stu-id="b7060-151">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

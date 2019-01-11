@@ -2,30 +2,31 @@
 title: функция autopilotDeviceStream
 description: Создание запроса загрузки с потоком автопилот устройство в нем.
 author: tfitzmac
-ms.openlocfilehash: fd7f2b1c452d69f772d2a3d80cf9a68ba8139df1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b574b8b4266f1a121f097d8ce73e7a57cf7c44f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885892"
 ---
-# <a name="autopilotdevicestream-function"></a><span data-ttu-id="ffdfc-103">функция autopilotDeviceStream</span><span class="sxs-lookup"><span data-stu-id="ffdfc-103">autopilotDeviceStream function</span></span>
+# <a name="autopilotdevicestream-function"></a><span data-ttu-id="e7e11-103">функция autopilotDeviceStream</span><span class="sxs-lookup"><span data-stu-id="e7e11-103">autopilotDeviceStream function</span></span>
 
-> <span data-ttu-id="ffdfc-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ffdfc-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e7e11-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="e7e11-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e7e11-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e7e11-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="ffdfc-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="e7e11-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="e7e11-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="ffdfc-107">Создание запроса загрузки с потоком автопилот устройство в нем.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-107">Create a upload request with autopilot device stream in it.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="ffdfc-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="ffdfc-108">Prerequisites</span></span>
-<span data-ttu-id="ffdfc-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ffdfc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e7e11-107">Создание запроса загрузки с потоком автопилот устройство в нем.</span><span class="sxs-lookup"><span data-stu-id="e7e11-107">Create a upload request with autopilot device stream in it.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e7e11-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="e7e11-108">Prerequisites</span></span>
+<span data-ttu-id="e7e11-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e7e11-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ffdfc-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ffdfc-111">Permission type</span></span>|<span data-ttu-id="ffdfc-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ffdfc-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e7e11-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e7e11-111">Permission type</span></span>|<span data-ttu-id="e7e11-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="e7e11-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ffdfc-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ffdfc-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ffdfc-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffdfc-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="ffdfc-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ffdfc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ffdfc-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-116">Not supported.</span></span>|
-|<span data-ttu-id="ffdfc-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ffdfc-117">Application</span></span>|<span data-ttu-id="ffdfc-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-118">Not supported.</span></span>|
+|<span data-ttu-id="e7e11-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e7e11-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e7e11-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7e11-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="e7e11-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e7e11-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e7e11-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e7e11-116">Not supported.</span></span>|
+|<span data-ttu-id="e7e11-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e7e11-117">Application</span></span>|<span data-ttu-id="e7e11-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e7e11-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ffdfc-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ffdfc-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e7e11-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e7e11-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,28 +35,28 @@ ms.locfileid: "27307135"
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/autopilotDeviceStream
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ffdfc-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ffdfc-120">Request headers</span></span>
-|<span data-ttu-id="ffdfc-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ffdfc-121">Header</span></span>|<span data-ttu-id="ffdfc-122">Значение</span><span class="sxs-lookup"><span data-stu-id="ffdfc-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e7e11-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e7e11-120">Request headers</span></span>
+|<span data-ttu-id="e7e11-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e7e11-121">Header</span></span>|<span data-ttu-id="e7e11-122">Значение</span><span class="sxs-lookup"><span data-stu-id="e7e11-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ffdfc-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ffdfc-123">Authorization</span></span>|<span data-ttu-id="ffdfc-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="ffdfc-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ffdfc-125">Accept</span><span class="sxs-lookup"><span data-stu-id="ffdfc-125">Accept</span></span>|<span data-ttu-id="ffdfc-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ffdfc-126">application/json</span></span>|
+|<span data-ttu-id="e7e11-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7e11-123">Authorization</span></span>|<span data-ttu-id="e7e11-124">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="e7e11-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e7e11-125">Accept</span><span class="sxs-lookup"><span data-stu-id="e7e11-125">Accept</span></span>|<span data-ttu-id="e7e11-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e7e11-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ffdfc-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ffdfc-127">Request body</span></span>
-<span data-ttu-id="ffdfc-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e7e11-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e7e11-127">Request body</span></span>
+<span data-ttu-id="e7e11-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e7e11-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ffdfc-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="ffdfc-129">Response</span></span>
-<span data-ttu-id="ffdfc-130">В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-130">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e7e11-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="e7e11-129">Response</span></span>
+<span data-ttu-id="e7e11-130">В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e7e11-130">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ffdfc-131">Пример</span><span class="sxs-lookup"><span data-stu-id="ffdfc-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="ffdfc-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="ffdfc-132">Request</span></span>
-<span data-ttu-id="ffdfc-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e7e11-131">Пример</span><span class="sxs-lookup"><span data-stu-id="e7e11-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="e7e11-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="e7e11-132">Request</span></span>
+<span data-ttu-id="e7e11-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e7e11-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/autopilotDeviceStream
 ```
 
-### <a name="response"></a><span data-ttu-id="ffdfc-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="ffdfc-134">Response</span></span>
-<span data-ttu-id="ffdfc-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="ffdfc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e7e11-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="e7e11-134">Response</span></span>
+<span data-ttu-id="e7e11-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="e7e11-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

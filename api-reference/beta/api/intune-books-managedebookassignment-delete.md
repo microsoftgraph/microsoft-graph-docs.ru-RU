@@ -2,30 +2,31 @@
 title: Удаление объекта managedEBookAssignment
 description: Удаляет объект managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: 512ebf28739a29f941ce0a9175c7cdae2e6b9bc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9424f028dd678aedf980fa9385188dc6e4e5df62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313568"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882791"
 ---
-# <a name="delete-managedebookassignment"></a><span data-ttu-id="6b625-103">Удаление объекта managedEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="6b625-103">Delete managedEBookAssignment</span></span>
+# <a name="delete-managedebookassignment"></a><span data-ttu-id="08a92-103">Удаление объекта managedEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="08a92-103">Delete managedEBookAssignment</span></span>
 
-> <span data-ttu-id="6b625-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6b625-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6b625-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6b625-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="08a92-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="08a92-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="08a92-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08a92-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="6b625-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="6b625-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="08a92-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="08a92-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6b625-107">Удаляет объект [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="6b625-107">Deletes a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6b625-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="6b625-108">Prerequisites</span></span>
-<span data-ttu-id="6b625-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6b625-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="08a92-107">Удаляет объект [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="08a92-107">Deletes a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="08a92-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="08a92-108">Prerequisites</span></span>
+<span data-ttu-id="08a92-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="08a92-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6b625-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6b625-111">Permission type</span></span>|<span data-ttu-id="6b625-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="6b625-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="08a92-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="08a92-111">Permission type</span></span>|<span data-ttu-id="08a92-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="08a92-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6b625-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6b625-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6b625-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b625-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="6b625-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6b625-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6b625-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6b625-116">Not supported.</span></span>|
-|<span data-ttu-id="6b625-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6b625-117">Application</span></span>|<span data-ttu-id="6b625-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6b625-118">Not supported.</span></span>|
+|<span data-ttu-id="08a92-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="08a92-113">Delegated (work or school account)</span></span>|<span data-ttu-id="08a92-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08a92-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="08a92-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="08a92-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="08a92-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08a92-116">Not supported.</span></span>|
+|<span data-ttu-id="08a92-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="08a92-117">Application</span></span>|<span data-ttu-id="08a92-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08a92-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6b625-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6b625-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="08a92-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="08a92-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,28 +35,28 @@ ms.locfileid: "27313568"
 DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6b625-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6b625-120">Request headers</span></span>
-|<span data-ttu-id="6b625-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="6b625-121">Header</span></span>|<span data-ttu-id="6b625-122">Значение</span><span class="sxs-lookup"><span data-stu-id="6b625-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="08a92-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="08a92-120">Request headers</span></span>
+|<span data-ttu-id="08a92-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="08a92-121">Header</span></span>|<span data-ttu-id="08a92-122">Значение</span><span class="sxs-lookup"><span data-stu-id="08a92-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6b625-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6b625-123">Authorization</span></span>|<span data-ttu-id="6b625-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="6b625-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6b625-125">Accept</span><span class="sxs-lookup"><span data-stu-id="6b625-125">Accept</span></span>|<span data-ttu-id="6b625-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6b625-126">application/json</span></span>|
+|<span data-ttu-id="08a92-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="08a92-123">Authorization</span></span>|<span data-ttu-id="08a92-124">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="08a92-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="08a92-125">Accept</span><span class="sxs-lookup"><span data-stu-id="08a92-125">Accept</span></span>|<span data-ttu-id="08a92-126">application/json</span><span class="sxs-lookup"><span data-stu-id="08a92-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6b625-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6b625-127">Request body</span></span>
-<span data-ttu-id="6b625-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6b625-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="08a92-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="08a92-127">Request body</span></span>
+<span data-ttu-id="08a92-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="08a92-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6b625-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="6b625-129">Response</span></span>
-<span data-ttu-id="6b625-130">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="6b625-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="08a92-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="08a92-129">Response</span></span>
+<span data-ttu-id="08a92-130">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="08a92-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6b625-131">Пример</span><span class="sxs-lookup"><span data-stu-id="6b625-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="6b625-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="6b625-132">Request</span></span>
-<span data-ttu-id="6b625-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6b625-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="08a92-131">Пример</span><span class="sxs-lookup"><span data-stu-id="08a92-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="08a92-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="08a92-132">Request</span></span>
+<span data-ttu-id="08a92-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="08a92-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="6b625-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="6b625-134">Response</span></span>
-<span data-ttu-id="6b625-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="6b625-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="08a92-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="08a92-134">Response</span></span>
+<span data-ttu-id="08a92-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="08a92-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
