@@ -3,12 +3,13 @@ title: Список importedDeviceIdentities
 description: Свойства списка и связей объектов importedDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 093fc726da0e7a66193022e1c021781c96f6964b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 11f40baaa839229c483dab70f0483be7e61f979c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882147"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939275"
 ---
 # <a name="list-importeddeviceidentities"></a>Список importedDeviceIdentities
 

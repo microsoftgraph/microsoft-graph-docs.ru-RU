@@ -3,12 +3,13 @@ title: Удаление объекта deviceManagementPartner
 description: Удаляет объект deviceManagementPartner.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5cf106f7084ede49a00cd8363f9d0cd5395747b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d389b6087e504aa2219a4ccd87216a3d0653eaba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807443"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925415"
 ---
 # <a name="delete-devicemanagementpartner"></a>Удаление объекта deviceManagementPartner
 

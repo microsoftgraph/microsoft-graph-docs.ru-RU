@@ -3,12 +3,13 @@ title: Действие sendTestMessage
 description: Отправляет проверочное сообщение, используя указанный объект notificationMessageTemplate в языковом стандарте по умолчанию.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8ca3eda7f085e80090c172d7612936ec7cd1275e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f2886ceae00573549a905dc31939fb828906992b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889889"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924848"
 ---
 # <a name="sendtestmessage-action"></a>Действие sendTestMessage
 

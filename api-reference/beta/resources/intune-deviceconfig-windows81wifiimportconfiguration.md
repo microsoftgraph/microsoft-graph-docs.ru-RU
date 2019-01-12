@@ -3,12 +3,13 @@ title: Тип ресурса windows81WifiImportConfiguration
 description: " Импорт конфигурации Wi-Fi. При настройке этого профиля можно указать Windows 8.1 (и более поздних версий) устройств для подключения к конечной точке желаемую Wi-Fi. Подключите устройство Windows 8.1 желаемую сеть Wi-Fi и извлеките XML из устройства для внедрения в этот профиль Wi-Fi более поздней версии."
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c567d9b82c301e262c83d69d013b459ed6a1636
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 11245d69efcc397cafa7798c3284b724e9ee2e90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826841"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932751"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>Тип ресурса windows81WifiImportConfiguration
 

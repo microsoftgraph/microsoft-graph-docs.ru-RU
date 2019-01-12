@@ -3,12 +3,13 @@ title: Тип перечисления appListType
 description: Возможные значения список соответствия требованиям приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 17452d09976d84f19ed56bbaeb4e558a727b1c7c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eb2b4afa6639d70b81a59bda1250ea9ed231ccdb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841022"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939646"
 ---
 # <a name="applisttype-enum-type"></a>Тип перечисления appListType
 

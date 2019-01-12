@@ -3,12 +3,13 @@ title: Тип перечисления visibilitySetting
 description: Состояние универсальный видимости.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 32949fa460e04e0ddc4d27862ab7e2967450e50e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d09b3237e7c7b1a41fd7fdc681fc828ebcc24a02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880376"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934697"
 ---
 # <a name="visibilitysetting-enum-type"></a>Тип перечисления visibilitySetting
 

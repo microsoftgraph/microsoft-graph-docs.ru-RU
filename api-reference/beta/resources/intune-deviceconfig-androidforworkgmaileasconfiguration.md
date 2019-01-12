@@ -2,12 +2,14 @@
 title: Тип ресурса androidForWorkGmailEasConfiguration
 description: С указанием конфигураций в этом профиле можно указать клиента электронной почты Gmail на устройствах Android для работы для взаимодействия с Exchange server и получение электронной почты, контакты, календарь, задачи и заметки. Кроме того можно также указать объем электронной почты для синхронизации и как часто следует синхронизировать устройства.
 localization_priority: Normal
-ms.openlocfilehash: e912ad1db2aaff82333c69f7fede37d4f16bf0e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: f974da3c84a0db18517b7d9210623f631c30c037
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849233"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928635"
 ---
 # <a name="androidforworkgmaileasconfiguration-resource-type"></a>Тип ресурса androidForWorkGmailEasConfiguration
 

@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 05/07/2018
 title: Удаление страницы на сайте SharePoint
 localization_priority: Normal
-ms.openlocfilehash: 1089bd904167f4c86ee1f6becede2824a2b6f2f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: b4ac336999484f6af97e41d08caa926fae4c055f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815117"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950027"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Удалить страницу в списке страниц сайта узла
 

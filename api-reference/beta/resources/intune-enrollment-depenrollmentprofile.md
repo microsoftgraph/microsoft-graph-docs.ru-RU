@@ -3,12 +3,13 @@ title: Тип ресурса depEnrollmentProfile
 description: Ресурс depEnrollmentProfile представляет профиля регистрации программы регистрации устройства Apple (DEP). Этот тип профиля должен быть назначен Apple DEP представленные числами, прежде чем соответствующих устройств можно зарегистрировать с помощью функции.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da2bd0415abfeefb6e7a330663ed51cb9e5de271
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 852bc809250cf8372be44674be458b122a561f15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849086"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933122"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>Тип ресурса depEnrollmentProfile
 

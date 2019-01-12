@@ -2,12 +2,14 @@
 title: Update managedIOSLobApp
 description: Обновление свойств объекта managedIOSLobApp.
 author: tfitzmac
-ms.openlocfilehash: af73dac3e1ccb785664f48a02837cec369b91297
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 82a3a3b1b9e767e0fe8cb93b6c2380896ae22851
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325510"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939968"
 ---
 # <a name="update-managedioslobapp"></a>Update managedIOSLobApp
 
@@ -39,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

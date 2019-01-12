@@ -3,12 +3,13 @@ title: Тип ресурса windowsStoreApp
 description: Содержит свойства и наследуемые свойства для приложений для магазина Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 331ed1d6b6f22d3bf93ed23d4bf51aea4edf80c5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f94726e7b3cf0df365e1134a0aa7ae94ce498b7b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886235"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952610"
 ---
 # <a name="windowsstoreapp-resource-type"></a>Тип ресурса windowsStoreApp
 

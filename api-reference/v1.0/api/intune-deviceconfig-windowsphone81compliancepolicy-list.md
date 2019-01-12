@@ -3,12 +3,13 @@ title: Перечисление объектов windowsPhone81CompliancePolicy
 description: Список свойств и связей объектов windowsPhone81CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c015e303580831a38c073739cd34e6171ac03791
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 801fcc094b78ad058e9c28c81cc3f529f2540aea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810733"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934137"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>Перечисление объектов windowsPhone81CompliancePolicy
 

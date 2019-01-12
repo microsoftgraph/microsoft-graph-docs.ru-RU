@@ -2,12 +2,14 @@
 title: Создание educationAssignmentResource
 description: создается OData.Type, чтобы указать, какой тип ресурсов. Обратите внимание, что файловым ресурсам, сначала нужно передать для назначения **resourceFolder**.
 localization_priority: Normal
-ms.openlocfilehash: 206e7db8c8e96f230bc0062fa9b080831b1b4e1a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: 46233ec2f8c8acb698dd707f7df06edaca70fec4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854014"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965392"
 ---
 # <a name="create-educationassignmentresource"></a>Создание educationAssignmentResource
 

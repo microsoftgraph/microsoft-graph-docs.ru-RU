@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: Создание записи в списке SharePoint
 localization_priority: Priority
-ms.openlocfilehash: 9456a8d7a8cb7561487a5a6bf08e5fd08082cf05
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 9a7b81c17f7d0e56bb076fe3e351e8ba9c68e29f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876414"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963369"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
 

@@ -3,12 +3,13 @@ title: Создание macOSTrustedRootCertificate
 description: Создание нового объекта macOSTrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e8f49ec5a1a3b2d744eb990cd0b43aa09d1ed906
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 83bc88cfa27bbb744e8bd133ce0bdb27061f23ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873895"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934039"
 ---
 # <a name="create-macostrustedrootcertificate"></a>Создание macOSTrustedRootCertificate
 

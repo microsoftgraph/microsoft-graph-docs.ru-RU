@@ -2,12 +2,14 @@
 title: Добавление scopedRoleMember
 description: 'Добавьте новый scopedRoleMembership. Примечание: Только роли *пользователя учетной записи администратора* и *администратору службы поддержки* в настоящее время поддерживаются областью действия ролями.'
 localization_priority: Normal
-ms.openlocfilehash: e2ff1803ac0357fa8fef9e1cf68b2ff78f877895
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6dce85d891c9d124d1d57d14a8a7309fb766b895
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860020"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936685"
 ---
 # <a name="add-a-scopedrolemember"></a>Добавление scopedRoleMember
 

@@ -2,12 +2,14 @@
 title: Тип ресурса windowsPhoneEASEmailProfileConfiguration
 description: С указанием конфигураций в этом профиле можно указать собственного почтового клиента на Windows Phone для взаимодействия с Exchange server и получение электронной почты, контакты, календарь и задачи. Кроме того можно также указать объем электронной почты для синхронизации и как часто следует синхронизировать устройства.
 localization_priority: Normal
-ms.openlocfilehash: 03442c352d0868ee8d75a16ce2934d9b8c22a992
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: e48ad65da5c91278460dea2c8c6a74707f7b3f41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932499"
 ---
 # <a name="windowsphoneeasemailprofileconfiguration-resource-type"></a>Тип ресурса windowsPhoneEASEmailProfileConfiguration
 

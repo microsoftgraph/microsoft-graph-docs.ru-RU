@@ -3,12 +3,13 @@ title: Удаление преподавателя
 description: Удаление преподавателя для курса.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 5a5e5f2fed8a22bf00ca4e29cca51d87b6dc9a8e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 39a9df74ea6f816b179844f6c26218a0caa17210
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865137"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965119"
 ---
 # <a name="remove-teacher"></a>Удаление преподавателя
 

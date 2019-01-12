@@ -3,12 +3,13 @@ title: 'Range: EntireColumn'
 description: Возвращает объект, представляющий весь столбец диапазона.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 99de7bfff2008702722ba07a84b04c02d50b3e69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: b9919a8f2a94fdf892d7e4f4342697daee455ab4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961234"
 ---
 # <a name="range-entirecolumn"></a>Range: EntireColumn
 

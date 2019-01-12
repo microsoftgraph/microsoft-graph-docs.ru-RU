@@ -2,12 +2,14 @@
 title: Получение plannerUser
 description: 'Извлечение свойств и связи объекта plannerUser. Возвращаемых свойств включают пользователя избранные планы и планы, которые были открыты. '
 localization_priority: Normal
-ms.openlocfilehash: 1abffddb2ddbefdcd0aaeddedffe94ae8ad605d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 742d29d65c5d80db96c8cff199e25465f7a80dd7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810642"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915993"
 ---
 # <a name="get-planneruser"></a>Получение plannerUser
 

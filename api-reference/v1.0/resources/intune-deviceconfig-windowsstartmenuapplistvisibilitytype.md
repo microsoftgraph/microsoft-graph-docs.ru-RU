@@ -3,12 +3,13 @@ title: Тип перечисления windowsStartMenuAppListVisibilityType
 description: Тип видимости списка приложения меню Пуск.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0ed7c264cb8e3a107d24e3cc4b59340aa789f39f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aaec41f28e14b4f14019bf62ef15db82baa5dbd5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811839"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940192"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>Тип перечисления windowsStartMenuAppListVisibilityType
 

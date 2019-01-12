@@ -3,12 +3,13 @@ title: Тип перечисления welcomeScreenMeetingInformation
 description: Возможные значения для сведений о собраниях экран приветствия.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: db63201ae68d8b1a0c597fb67d1196b01f3f1bb4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1bdec076eae34adddf9846df5d29436dd20100d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821366"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937658"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>Тип перечисления welcomeScreenMeetingInformation
 

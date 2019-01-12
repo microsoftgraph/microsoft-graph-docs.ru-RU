@@ -3,12 +3,13 @@ title: Тип ресурса audioSourceLevel
 description: Конфигурации уровня для других источников.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: adf3c4805271d0a8d02d25fc8e7ecb547db10215
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 79ad56c11e8b277a1354ffc3a6292a0434466c8a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880642"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947654"
 ---
 # <a name="audiosourcelevel-resource-type"></a>Тип ресурса audioSourceLevel
 

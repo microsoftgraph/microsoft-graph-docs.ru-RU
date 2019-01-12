@@ -3,12 +3,13 @@ title: Перечисление groupLifecyclePolicies
 description: Получает список объектов groupLifecyclePolicy, к которым принадлежит группа.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 7bcb01b35a7d2c39dd02cd54ff5287f893524521
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 5e2153a1827f2ddbe3c7274c090f092d8b7c5724
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875539"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934271"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Перечисление groupLifecyclePolicies
 

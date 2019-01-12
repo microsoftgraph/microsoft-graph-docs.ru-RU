@@ -3,12 +3,13 @@ title: Тип перечисления состояние действия
 description: Состояние действие на устройстве
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c0c05e283b94473a5c8c43498ff5bf1dd82da7a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5579d8de986a764cd96e42dff30c007449130b0b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871941"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922447"
 ---
 # <a name="actionstate-enum-type"></a>Тип перечисления состояние действия
 

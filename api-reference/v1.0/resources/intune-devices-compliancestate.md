@@ -3,12 +3,13 @@ title: Тип перечисления complianceState
 description: Состояние соответствия требованиям.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53b17f258f577e0842dbfc81c6341303f6b43799
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5a4f4c359665eb1a0087f64802b5e7c829002fd6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820344"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940199"
 ---
 # <a name="compliancestate-enum-type"></a>Тип перечисления complianceState
 

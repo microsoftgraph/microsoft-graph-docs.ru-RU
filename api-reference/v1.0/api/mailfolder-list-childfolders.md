@@ -3,12 +3,13 @@ title: Список childFolders
 description: 'Получите коллекцию папок в указанной папке. Можно использовать `.../me/MailFolders` ярлык для получения верхнего уровня '
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 1d1a002bef6d1e16c48cc484211abe752e4adbe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 3fec593d1d1b29e84f43e46d4bee7ef8f4aa61d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819917"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935404"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 

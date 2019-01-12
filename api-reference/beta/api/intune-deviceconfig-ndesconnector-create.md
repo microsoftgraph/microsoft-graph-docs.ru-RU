@@ -3,12 +3,13 @@ title: Создание ndesConnector
 description: Создание нового объекта ndesConnector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: be52a9b8b3b11a56c89c4c90ab42ef136017847d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 809a324665136927796790e88d3beb742cf06be4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832279"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940185"
 ---
 # <a name="create-ndesconnector"></a>Создание ndesConnector
 

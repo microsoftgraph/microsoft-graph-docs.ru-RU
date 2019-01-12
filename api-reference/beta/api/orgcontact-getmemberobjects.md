@@ -2,12 +2,14 @@
 title: 'orgContact: getMemberObjects'
 description: Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
 localization_priority: Normal
-ms.openlocfilehash: ac6c8fddf4cedae156ec25933ea8d9f95bf8020a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 597dfeaa1870aab74d8bc813b50aebc2891dc430
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856576"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938855"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 

@@ -2,12 +2,14 @@
 title: Тип ресурса enrollmentProfile
 description: Ресурс enrollmentProfile представляет коллекцию конфигураций, которым необходимо предоставить предварительной регистрации для включения регистрация некоторых устройствах, идентификаторы были предварительно разделены. Предварительно разделены устройства удостоверения назначаются этот тип профиля для применения настроек профиля в регистрации соответствующего устройства.
 localization_priority: Normal
-ms.openlocfilehash: 43aa6f5f3e8093da0c066012d763e5f0f6455da6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b88745c060e71e32199a96b23f94fa0d3229d451
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894308"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935593"
 ---
 # <a name="enrollmentprofile-resource-type"></a>Тип ресурса enrollmentProfile
 

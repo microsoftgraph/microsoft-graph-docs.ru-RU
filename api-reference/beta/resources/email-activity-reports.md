@@ -2,12 +2,14 @@
 title: Отчеты о работе с электронной почтой
 description: Высокоуровневое представление трафика электронной почты можно получить в рамках организации на странице отчеты. Вы также можете перейти в мини-приложения электронной почты активности понять тенденции и сведения на одного пользователя действия электронной почты в вашей организации.
 localization_priority: Normal
-ms.openlocfilehash: 90af28ce5136f8b444bcd432e756d08558290977
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: reports
+ms.openlocfilehash: ccbe53a783da8f45294c3140f6cbf9405d1d1f04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835049"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947682"
 ---
 # <a name="email-activity-reports"></a>Отчеты о работе с электронной почтой
 

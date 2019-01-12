@@ -3,12 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: List
-ms.openlocfilehash: 3439443090e27c5ef48c2877fe9ea74a9c00cf42
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: sharepoint
+ms.openlocfilehash: 6bfd46e0822045869074cb0d78f14e3f0be0c994
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27026775"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984390"
 ---
 # <a name="list-resource"></a>Ресурс List
 
