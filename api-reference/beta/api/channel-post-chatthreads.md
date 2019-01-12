@@ -3,50 +3,51 @@ title: Создать поток разговора
 description: Создайте новый поток чата в указанном канала, передав корневой сообщения.
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: edd3c99376a93b2c4405d97b6435cfd9a128ae8b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d748826b98336feffcded345f356663f8fb80f4f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809074"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946359"
 ---
-# <a name="create-chat-thread"></a><span data-ttu-id="2a410-103">Создать поток разговора</span><span class="sxs-lookup"><span data-stu-id="2a410-103">Create chat thread</span></span>
+# <a name="create-chat-thread"></a><span data-ttu-id="6f650-103">Создать поток разговора</span><span class="sxs-lookup"><span data-stu-id="6f650-103">Create chat thread</span></span>
 
-> <span data-ttu-id="2a410-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="2a410-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2a410-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a410-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6f650-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6f650-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6f650-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6f650-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="2a410-106">Создание нового потока чата в указанном [канала](../resources/channel.md) , передав корневой сообщения.</span><span class="sxs-lookup"><span data-stu-id="2a410-106">Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.</span></span>
+<span data-ttu-id="6f650-106">Создание нового потока чата в указанном [канала](../resources/channel.md) , передав корневой сообщения.</span><span class="sxs-lookup"><span data-stu-id="6f650-106">Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2a410-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2a410-107">Permissions</span></span>
-<span data-ttu-id="2a410-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a410-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6f650-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6f650-107">Permissions</span></span>
+<span data-ttu-id="6f650-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6f650-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2a410-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2a410-110">Permission type</span></span>      | <span data-ttu-id="2a410-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2a410-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6f650-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6f650-110">Permission type</span></span>      | <span data-ttu-id="6f650-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6f650-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2a410-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2a410-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2a410-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2a410-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2a410-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2a410-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a410-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a410-115">Not supported.</span></span>    |
-|<span data-ttu-id="2a410-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2a410-116">Application</span></span> | <span data-ttu-id="2a410-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a410-117">Not supported.</span></span> |
+|<span data-ttu-id="6f650-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6f650-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6f650-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6f650-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6f650-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6f650-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6f650-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6f650-115">Not supported.</span></span>    |
+|<span data-ttu-id="6f650-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6f650-116">Application</span></span> | <span data-ttu-id="6f650-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6f650-117">Not supported.</span></span> |
 
-> <span data-ttu-id="2a410-118">На данный момент только [делегированных разрешений](/graph/permissions-reference) поддерживаются для этой операции.</span><span class="sxs-lookup"><span data-stu-id="2a410-118">Currently, only [delegated permissions](/graph/permissions-reference) are supported for this operation.</span></span>  <span data-ttu-id="2a410-119">Будущих выпусках обеспечения разрешения приложения.</span><span class="sxs-lookup"><span data-stu-id="2a410-119">Future releases will support application permissions.</span></span> 
+> <span data-ttu-id="6f650-118">На данный момент только [делегированных разрешений](/graph/permissions-reference) поддерживаются для этой операции.</span><span class="sxs-lookup"><span data-stu-id="6f650-118">Currently, only [delegated permissions](/graph/permissions-reference) are supported for this operation.</span></span>  <span data-ttu-id="6f650-119">Будущих выпусках обеспечения разрешения приложения.</span><span class="sxs-lookup"><span data-stu-id="6f650-119">Future releases will support application permissions.</span></span> 
 
-## <a name="http-request"></a><span data-ttu-id="2a410-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2a410-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6f650-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6f650-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels/{id}/chatThreads
 ```
-## <a name="request-headers"></a><span data-ttu-id="2a410-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2a410-121">Request headers</span></span>
-| <span data-ttu-id="2a410-122">Имя</span><span class="sxs-lookup"><span data-stu-id="2a410-122">Name</span></span>       | <span data-ttu-id="2a410-123">Тип</span><span class="sxs-lookup"><span data-stu-id="2a410-123">Type</span></span> | <span data-ttu-id="2a410-124">Описание</span><span class="sxs-lookup"><span data-stu-id="2a410-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6f650-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6f650-121">Request headers</span></span>
+| <span data-ttu-id="6f650-122">Имя</span><span class="sxs-lookup"><span data-stu-id="6f650-122">Name</span></span>       | <span data-ttu-id="6f650-123">Тип</span><span class="sxs-lookup"><span data-stu-id="6f650-123">Type</span></span> | <span data-ttu-id="6f650-124">Описание</span><span class="sxs-lookup"><span data-stu-id="6f650-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="2a410-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a410-125">Authorization</span></span>  | <span data-ttu-id="2a410-126">string</span><span class="sxs-lookup"><span data-stu-id="2a410-126">string</span></span>  | <span data-ttu-id="2a410-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2a410-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6f650-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="6f650-125">Authorization</span></span>  | <span data-ttu-id="6f650-126">string</span><span class="sxs-lookup"><span data-stu-id="6f650-126">string</span></span>  | <span data-ttu-id="6f650-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6f650-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2a410-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2a410-129">Request body</span></span>
-<span data-ttu-id="2a410-130">В тексте запроса укажите представление JSON объекта [chatThread](../resources/chatthread.md) , который содержит свойство rootMessage.</span><span class="sxs-lookup"><span data-stu-id="2a410-130">In the request body, supply a JSON representation of a [chatThread](../resources/chatthread.md) object that contains the rootMessage property.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6f650-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="6f650-129">Request body</span></span>
+<span data-ttu-id="6f650-130">В тексте запроса укажите представление JSON объекта [chatThread](../resources/chatthread.md) , который содержит свойство rootMessage.</span><span class="sxs-lookup"><span data-stu-id="6f650-130">In the request body, supply a JSON representation of a [chatThread](../resources/chatthread.md) object that contains the rootMessage property.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2a410-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="2a410-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6f650-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="6f650-131">Response</span></span>
 
-<span data-ttu-id="2a410-132">Успешно завершена, этот метод возвращает `201 Created` код ответа с помощью тело пустой ответа.</span><span class="sxs-lookup"><span data-stu-id="2a410-132">If successful, this method returns `201 Created` response code with an empty reponse body.</span></span>
+<span data-ttu-id="6f650-132">Успешно завершена, этот метод возвращает `201 Created` код ответа с помощью тело пустой ответа.</span><span class="sxs-lookup"><span data-stu-id="6f650-132">If successful, this method returns `201 Created` response code with an empty reponse body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2a410-133">Пример</span><span class="sxs-lookup"><span data-stu-id="2a410-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2a410-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="2a410-134">Request</span></span>
-<span data-ttu-id="2a410-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2a410-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6f650-133">Пример</span><span class="sxs-lookup"><span data-stu-id="6f650-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6f650-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="6f650-134">Request</span></span>
+<span data-ttu-id="6f650-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6f650-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_chatthread_from_channel"
@@ -65,11 +66,11 @@ Content-type: application/json
 }
 ```
 
-> <span data-ttu-id="2a410-136">На данный момент contentType должно быть указано как целое число, а не строкой: 0 для 1 для «html» или «text».</span><span class="sxs-lookup"><span data-stu-id="2a410-136">Currently, the contentType must be specified as an integer rather than a string: 0 for "text" or 1 for "html".</span></span>  <span data-ttu-id="2a410-137">Это будет исправить будущих выпусках API.</span><span class="sxs-lookup"><span data-stu-id="2a410-137">Future API releases will fix this.</span></span>
+> <span data-ttu-id="6f650-136">На данный момент contentType должно быть указано как целое число, а не строкой: 0 для 1 для «html» или «text».</span><span class="sxs-lookup"><span data-stu-id="6f650-136">Currently, the contentType must be specified as an integer rather than a string: 0 for "text" or 1 for "html".</span></span>  <span data-ttu-id="6f650-137">Это будет исправить будущих выпусках API.</span><span class="sxs-lookup"><span data-stu-id="6f650-137">Future API releases will fix this.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="2a410-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="2a410-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="6f650-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="6f650-138">Response</span></span>
 
-<span data-ttu-id="2a410-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="2a410-139">Here is an example of the response.</span></span>
+<span data-ttu-id="6f650-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6f650-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
