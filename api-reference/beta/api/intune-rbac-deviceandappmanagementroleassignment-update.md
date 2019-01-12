@@ -3,12 +3,13 @@ title: Обновление объекта deviceAndAppManagementRoleAssignment
 description: Обновление свойств объекта deviceAndAppManagementRoleAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3f669ac0c3758f2b96e4732fbbdd46966dd87b4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5c4b0d4feab2f1e213d60204e57e802b00d3ab84
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953551"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>Обновление объекта deviceAndAppManagementRoleAssignment
 

@@ -2,12 +2,14 @@
 title: Список контактов
 description: Получение контактов в почтовом ящике пользователя.
 localization_priority: Normal
-ms.openlocfilehash: b78009d44fd442bab31b9911056023256a1d5102
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2b427be9872aff70ecf5ed3166e94a48b94a62ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886620"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953632"
 ---
 # <a name="list-contacts"></a>Список контактов
 

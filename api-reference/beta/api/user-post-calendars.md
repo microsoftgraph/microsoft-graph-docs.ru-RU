@@ -3,12 +3,13 @@ title: Создание объекта Calendar
 description: С помощью этого API можно создать календарь для экземпляра user.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 867641a47ca02e903c22a3338a0fe87f7c70bddf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a61094b857c06fd2da435ae11c5b7498e9e355ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887824"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949138"
 ---
 # <a name="create-calendar"></a>Создание объекта Calendar
 

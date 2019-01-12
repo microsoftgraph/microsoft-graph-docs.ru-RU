@@ -2,12 +2,14 @@
 title: Обновление объекта plannerplandetails
 description: Обновление свойств объекта **plannerplandetails**.
 localization_priority: Normal
-ms.openlocfilehash: 45675e4c45e14b8574a66edda581e59203159608
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: fd42196238fb103021debf8a4fee2f658053a255
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843997"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950139"
 ---
 # <a name="update-plannerplandetails"></a>Обновление объекта plannerplandetails
 

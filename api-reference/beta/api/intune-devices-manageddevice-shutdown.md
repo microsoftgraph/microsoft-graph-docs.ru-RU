@@ -3,12 +3,13 @@ title: Действие shutDown
 description: Завершение работы устройства
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 39ed0a62a21197bb438f8a6094c82cdb1afa0b1c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e6a7435561d40811f260a881a617ed406a85f900
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873348"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948893"
 ---
 # <a name="shutdown-action"></a>Действие shutDown
 

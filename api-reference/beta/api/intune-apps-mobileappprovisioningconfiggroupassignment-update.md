@@ -3,12 +3,13 @@ title: Обновление mobileAppProvisioningConfigGroupAssignment
 description: Обновление свойства объекта mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b341de06c1bd5d504e4835ebef8fce2aa3a5aac7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d2526c69091c9d41a1b9ebb181f4abbbc01bf23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848344"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954997"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Обновление mobileAppProvisioningConfigGroupAssignment
 

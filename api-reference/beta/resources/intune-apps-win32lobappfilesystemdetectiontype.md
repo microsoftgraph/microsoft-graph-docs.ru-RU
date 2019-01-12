@@ -3,12 +3,13 @@ title: Тип перечисления win32LobAppFileSystemDetectionType
 description: Содержит тип обнаружения все поддерживаемые файловой системы.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1748b98732e77c8da7360dbd7a4474235da31925
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 407bc9ae603f72419133cdfb7eb234fcf92d8fe6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846566"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947899"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>Тип перечисления win32LobAppFileSystemDetectionType
 

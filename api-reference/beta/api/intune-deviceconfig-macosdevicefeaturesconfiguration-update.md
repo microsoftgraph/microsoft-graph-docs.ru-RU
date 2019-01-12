@@ -3,12 +3,13 @@ title: Обновление объекта macOSDeviceFeaturesConfiguration
 description: Обновление свойств объекта macOSDeviceFeaturesConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e9023fa910fb6bd19de92c685f008a4edb7e3e10
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 718e64382b54280ecc135ea1d651363cc44f6767
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852264"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954066"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Обновление объекта macOSDeviceFeaturesConfiguration
 

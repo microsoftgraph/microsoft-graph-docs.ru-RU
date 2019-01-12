@@ -3,12 +3,13 @@ title: Список диаграмм
 description: Получение списка объектов диаграмм.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: a06dd02ec1e979bd967b767b8287e3b6331add57
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 25d4ef332a373d6b92560a11c7fb679338b10e76
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839384"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950118"
 ---
 # <a name="list-charts"></a>Список диаграмм
 

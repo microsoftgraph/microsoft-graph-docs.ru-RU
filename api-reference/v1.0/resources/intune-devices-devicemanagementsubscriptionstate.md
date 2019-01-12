@@ -3,12 +3,13 @@ title: Тип перечисления deviceManagementSubscriptionState
 description: Состояние подписки на управление мобильными устройствами для клиента.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a31e4e776c782c01ae1d1bdc2dea71bced58b295
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b862a4fbdc38db7714b37ff9aef476bfcd8ae4fb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870646"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949936"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>Тип перечисления deviceManagementSubscriptionState
 

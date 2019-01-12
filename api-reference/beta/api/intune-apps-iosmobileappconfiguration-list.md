@@ -3,12 +3,13 @@ title: Список iosMobileAppConfigurations
 description: Список свойств и связей объектов iosUpdateConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1f161d86bf7065e3ad04a8dff057e4d44cfc3955
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f93dbcec40f7d4aee62750f4b0bc24ecf201df88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875098"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949670"
 ---
 # <a name="list-iosmobileappconfigurations"></a>Список iosMobileAppConfigurations
 

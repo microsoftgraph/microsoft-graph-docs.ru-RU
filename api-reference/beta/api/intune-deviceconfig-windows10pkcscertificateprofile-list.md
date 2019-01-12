@@ -3,12 +3,13 @@ title: Список windows10PkcsCertificateProfiles
 description: Свойства списка и связей объектов windows10PkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 73528f84ddd4c7b871888d764ebe7b0cc6fcd754
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 21de6279780e8e1d4ab5d6a8c25063a9a68ab0f5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827897"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950328"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>Список windows10PkcsCertificateProfiles
 

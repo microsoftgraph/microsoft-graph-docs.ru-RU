@@ -3,12 +3,13 @@ title: тенденции тип ресурса
 description: Расширенный отношения подключения пользователя к документам, которые прибора вокруг пользователя (являются предназначенных для пользователя). Файлы OneDrive и файлов, хранящихся на сайтах группы SharePoint могут тенденций вокруг пользователя.
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: dc0154d3985e5f6e1e4770bb7d10bc727a0eb0ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: 6a5bd678124a4768303d3cd3ffd4449f4d47bb69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862386"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950748"
 ---
 # <a name="trending-resource-type"></a>тенденции тип ресурса
 

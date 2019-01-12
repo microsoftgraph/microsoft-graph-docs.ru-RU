@@ -3,12 +3,13 @@ title: Перечисление фотографий
 description: Получение списка объектов profilePhoto.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: e9628d03fb0986ee073f7a3eedccd37e67dd82bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 51c8ba85aa183b07c8e7497dbd2b64ded0b87ad0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848554"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951070"
 ---
 # <a name="list-photos"></a>Перечисление фотографий
 

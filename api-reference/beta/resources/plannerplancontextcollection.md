@@ -2,12 +2,14 @@
 title: Тип ресурса plannerPlanContextCollection
 description: Ресурс **plannerPlanContextCollection** представляет коллекцию внешних контекстах, с которыми связан плана. Этот ресурс является открытым и является частью объекта plannerPlan. Значение в паре значение свойства — это объект plannerPlanContext.
 localization_priority: Normal
-ms.openlocfilehash: 51a09353993a61324f31a03c8ffadd5462cac692
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 3281a7664561ac32c3908ca059209a1b89b4ea7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805455"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951812"
 ---
 # <a name="plannerplancontextcollection-resource-type"></a>Тип ресурса plannerPlanContextCollection
 

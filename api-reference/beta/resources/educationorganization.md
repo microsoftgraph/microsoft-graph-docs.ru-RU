@@ -3,12 +3,13 @@ title: Тип ресурса educationOrganization
 description: 'Использовать для моделирования обеих другой организации типов в образовательных сектора абстрактной сущности.  '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: c9930a32e52e9380e26c6fa94095b3a7099beb70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a1e3f82e2d777b1d32cc445f543e7beed570a8b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822507"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949523"
 ---
 # <a name="educationorganization-resource-type"></a>Тип ресурса educationOrganization
 

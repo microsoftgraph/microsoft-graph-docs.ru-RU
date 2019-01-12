@@ -2,12 +2,14 @@
 title: Список staffMembers
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: fdbf1c60731627e518bc5d13ad46abfbf6f39b69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 81f170e101ad2aa600991cb79eaccdc65db8e4be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809564"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951385"
 ---
 # <a name="list-staffmembers"></a>Список staffMembers
 

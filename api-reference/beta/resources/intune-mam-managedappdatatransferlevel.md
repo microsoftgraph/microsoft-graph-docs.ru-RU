@@ -3,12 +3,13 @@ title: Тип перечисления managedAppDataTransferLevel
 description: Данные могут быть перенесены из/эти классы приложений
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 218888cb9b122e9017e24d77df3e5a8cb93d1bfe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 094f27cbc8bdde38c5ef95bcbac9209485463096
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847784"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947178"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>Тип перечисления managedAppDataTransferLevel
 

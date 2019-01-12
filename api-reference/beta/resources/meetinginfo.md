@@ -3,12 +3,13 @@ title: Тип ресурса meetingInfo
 description: Информация, указанная для создания или присоединиться к собранию на собрания.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 24ac0247fd39569276f2cb288646eca578447e07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: b3590227e55ee217c63110c8f90e1a1741eac81d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817754"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947920"
 ---
 # <a name="meetinginfo-resource-type"></a>Тип ресурса meetingInfo
 

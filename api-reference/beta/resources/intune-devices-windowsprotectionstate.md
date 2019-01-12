@@ -3,12 +3,13 @@ title: Тип ресурса windowsProtectionState
 description: Устройство защиты состояния сущности.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5a21cc27039f3119836e0027b2558cadadab1b5d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f15044f597fb04e98571de7aec8796e9a9ddf74
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884107"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954528"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>Тип ресурса windowsProtectionState
 

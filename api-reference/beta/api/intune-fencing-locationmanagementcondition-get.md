@@ -3,12 +3,13 @@ title: Получение locationManagementCondition
 description: Чтение свойства и связи объекта locationManagementCondition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1bf6476fb1dad5db06f239df5594205f859b34df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 65dafbb03b755539bb0a2e919429f3454a225764
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841239"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953331"
 ---
 # <a name="get-locationmanagementcondition"></a>Получение locationManagementCondition
 

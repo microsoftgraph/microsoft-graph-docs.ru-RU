@@ -3,12 +3,13 @@ title: Тип ресурса windowsUniversalAppXContainedApp
 description: Класс, представляющий автономные приложения WindowsUniversalAppX приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d7b9c814b73ce08bacdba97b40b5b7f07362606e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ee4d8a08fe182322412c228b04da56339be93f54
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950762"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>Тип ресурса windowsUniversalAppXContainedApp
 

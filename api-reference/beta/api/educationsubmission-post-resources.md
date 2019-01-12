@@ -3,12 +3,13 @@ title: Создание educationSubmissionResource
 description: 'Добавляет ресурс в список ресурсов. Это действие можно выполнить только с учебы, которому назначена эта отправки. Это действие не будет выполнено, если флаг **allowStudentsToAddResources** не установлен в значение true. Если вызывающий объект должен создать новый файловый ресурс, необходимо отправить этот файл в папку ресурсов, который связан с подачи. Если файл не существует или не находится в папке, запрос POST завершится с ошибкой. '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 585ece0dd8239c5a3107420b88cf2103fe5fb7eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a3c7592614eb1987df6730cd7f029bc84bb422cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888118"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950650"
 ---
 # <a name="create-educationsubmissionresource"></a>Создание educationSubmissionResource
 

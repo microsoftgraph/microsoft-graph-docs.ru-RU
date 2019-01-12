@@ -3,12 +3,13 @@ title: Получение educationSchool
 description: Получение свойств и связей объекта school.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: f077cf3e614d6809a60e9fce03d82d0dee82f95b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: fdd53873322bb9d5f56b2414dd23dee2e88cf9c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813302"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946401"
 ---
 # <a name="get-educationschool"></a>Получение educationSchool
 

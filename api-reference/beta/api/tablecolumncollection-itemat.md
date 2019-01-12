@@ -3,12 +3,13 @@ title: 'TableColumnCollection: ItemAt'
 description: Возвращает столбец на основании его позиции в коллекции.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0cd2c587c8520fc7c76f98f07d540ab0cd934baf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: f311206477a2a1f5b4cd0d6ea76f372e9906dfe1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836164"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947864"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 

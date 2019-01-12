@@ -3,12 +3,13 @@ title: Перечисление объектов windowsPhone81GeneralConfigurat
 description: Список свойств и связей объектов windowsPhone81GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b28530a6b6b7a070c0a03a51a161242c84159722
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eb4e4acad6074093778b53bf9dff1484e549b1ed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852936"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947262"
 ---
 # <a name="list-windowsphone81generalconfigurations"></a>Перечисление объектов windowsPhone81GeneralConfiguration
 

@@ -3,12 +3,13 @@ title: Тип ресурса deviceManagementExchangeConnector
 description: Объект, представляющий подключение к среде Exchange.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5706bdefd9ef8f250bf26a63380c66874dbf25b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1167cb4a56b4a378ee5b7e946fa3e748247c4612
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822094"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948410"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Тип ресурса deviceManagementExchangeConnector
 

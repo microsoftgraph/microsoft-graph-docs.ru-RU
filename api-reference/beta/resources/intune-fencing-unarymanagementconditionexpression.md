@@ -3,12 +3,13 @@ title: Тип ресурса unaryManagementConditionExpression
 description: Выражение условия управления, который вычисляется с использованием унарного.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 619d931e53fbd65419e07ab1b2f27341ccb5dd41
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 06a379a53d6d85956a54bede444714e082196ba3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829773"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949425"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>Тип ресурса unaryManagementConditionExpression
 

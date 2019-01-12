@@ -3,12 +3,13 @@ title: Управление приложениями с помощью Microsoft
 description: 'Для управления мобильными приложениями в Intune используются перечисленные ниже ресурсы Graph.  '
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 84a1f796d234b9eadc33e6577e7ecf4a5bc4dd9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 988042a5e36cb87f6fedf3c8ba3764c56d955b98
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835646"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951819"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Управление приложениями с помощью Microsoft Intune
 

@@ -3,12 +3,13 @@ title: Тип перечисления androidWorkProfileDefaultAppPermissionPol
 description: Android рабочих профилей по умолчанию приложения политики тип разрешения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8df9621db55ae5bd74c12fc7e35a920b88bd39df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5f4e3b7a01d92981b79311049fd2da46c058c0aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814191"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947514"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>Тип перечисления androidWorkProfileDefaultAppPermissionPolicyType
 
