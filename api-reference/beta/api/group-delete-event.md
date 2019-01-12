@@ -3,49 +3,50 @@ title: Удаление события
 description: Удаление объекта event.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: e120910aa35aea0d7b8e74a356204e6aea2509d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 5973a3002b15531993e9bd2bcc1cd1615f3cdd02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813386"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965735"
 ---
-# <a name="delete-event"></a><span data-ttu-id="64eb5-103">Удаление события</span><span class="sxs-lookup"><span data-stu-id="64eb5-103">Delete event</span></span>
+# <a name="delete-event"></a><span data-ttu-id="4ebbd-103">Удаление события</span><span class="sxs-lookup"><span data-stu-id="4ebbd-103">Delete event</span></span>
 
-> <span data-ttu-id="64eb5-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="64eb5-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="64eb5-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64eb5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4ebbd-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4ebbd-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="64eb5-106">Удаление объекта [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="64eb5-106">Delete an [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="4ebbd-106">Удаление объекта [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="4ebbd-106">Delete an [event](../resources/event.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="64eb5-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="64eb5-107">Permissions</span></span>
-<span data-ttu-id="64eb5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="64eb5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4ebbd-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4ebbd-107">Permissions</span></span>
+<span data-ttu-id="4ebbd-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4ebbd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="64eb5-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="64eb5-110">Permission type</span></span>      | <span data-ttu-id="64eb5-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="64eb5-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4ebbd-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4ebbd-110">Permission type</span></span>      | <span data-ttu-id="4ebbd-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4ebbd-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="64eb5-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="64eb5-112">Delegated (work or school account)</span></span> | <span data-ttu-id="64eb5-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64eb5-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="64eb5-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="64eb5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64eb5-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64eb5-115">Not supported.</span></span>    |
-|<span data-ttu-id="64eb5-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="64eb5-116">Application</span></span> | <span data-ttu-id="64eb5-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64eb5-117">Not supported.</span></span> |
+|<span data-ttu-id="4ebbd-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4ebbd-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4ebbd-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4ebbd-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4ebbd-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4ebbd-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4ebbd-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-115">Not supported.</span></span>    |
+|<span data-ttu-id="4ebbd-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4ebbd-116">Application</span></span> | <span data-ttu-id="4ebbd-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="64eb5-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="64eb5-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4ebbd-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4ebbd-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/events/{id}
 DELETE /groups/{id}/calendar/events/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="64eb5-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="64eb5-119">Request headers</span></span>
-| <span data-ttu-id="64eb5-120">Имя</span><span class="sxs-lookup"><span data-stu-id="64eb5-120">Name</span></span>       | <span data-ttu-id="64eb5-121">Тип</span><span class="sxs-lookup"><span data-stu-id="64eb5-121">Type</span></span> | <span data-ttu-id="64eb5-122">Описание</span><span class="sxs-lookup"><span data-stu-id="64eb5-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4ebbd-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4ebbd-119">Request headers</span></span>
+| <span data-ttu-id="4ebbd-120">Имя</span><span class="sxs-lookup"><span data-stu-id="4ebbd-120">Name</span></span>       | <span data-ttu-id="4ebbd-121">Тип</span><span class="sxs-lookup"><span data-stu-id="4ebbd-121">Type</span></span> | <span data-ttu-id="4ebbd-122">Описание</span><span class="sxs-lookup"><span data-stu-id="4ebbd-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="64eb5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="64eb5-123">Authorization</span></span>  | <span data-ttu-id="64eb5-124">string</span><span class="sxs-lookup"><span data-stu-id="64eb5-124">string</span></span>  | <span data-ttu-id="64eb5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="64eb5-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4ebbd-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4ebbd-123">Authorization</span></span>  | <span data-ttu-id="4ebbd-124">строка</span><span class="sxs-lookup"><span data-stu-id="4ebbd-124">string</span></span>  | <span data-ttu-id="4ebbd-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="64eb5-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="64eb5-127">Request body</span></span>
-<span data-ttu-id="64eb5-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="64eb5-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4ebbd-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="4ebbd-127">Request body</span></span>
+<span data-ttu-id="4ebbd-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="64eb5-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="64eb5-129">Response</span></span>
-<span data-ttu-id="64eb5-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="64eb5-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4ebbd-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ebbd-129">Response</span></span>
+<span data-ttu-id="4ebbd-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="64eb5-132">Пример</span><span class="sxs-lookup"><span data-stu-id="64eb5-132">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="64eb5-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="64eb5-133">Request</span></span>
-<span data-ttu-id="64eb5-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="64eb5-134">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4ebbd-132">Пример</span><span class="sxs-lookup"><span data-stu-id="4ebbd-132">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="4ebbd-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="4ebbd-133">Request</span></span>
+<span data-ttu-id="4ebbd-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_group_event"
@@ -54,9 +55,9 @@ DELETE /groups/{id}/calendar/events/{id}
 DELETE https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events/AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA==
 ```
 
-#### <a name="response"></a><span data-ttu-id="64eb5-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="64eb5-135">Response</span></span>
-<span data-ttu-id="64eb5-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="64eb5-136">The following is an example of the response.</span></span> 
-><span data-ttu-id="64eb5-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="64eb5-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="4ebbd-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ebbd-135">Response</span></span>
+<span data-ttu-id="4ebbd-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-136">The following is an example of the response.</span></span> 
+><span data-ttu-id="4ebbd-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4ebbd-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
