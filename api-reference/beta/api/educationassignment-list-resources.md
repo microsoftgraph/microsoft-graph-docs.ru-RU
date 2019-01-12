@@ -3,48 +3,49 @@ title: Список educationAssignmentResources
 description: Получите все ресурсы, связанные с этим назначением.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 650d731883a7cde8bc05ec50889be472bb0967a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 0fa0a5b46d7f40b1d1e8b6d265b12f84384e2c50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823893"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936202"
 ---
-# <a name="list-educationassignmentresources"></a><span data-ttu-id="dfb69-103">Список educationAssignmentResources</span><span class="sxs-lookup"><span data-stu-id="dfb69-103">List educationAssignmentResources</span></span>
+# <a name="list-educationassignmentresources"></a><span data-ttu-id="18651-103">Список educationAssignmentResources</span><span class="sxs-lookup"><span data-stu-id="18651-103">List educationAssignmentResources</span></span>
 
-> <span data-ttu-id="dfb69-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="dfb69-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="dfb69-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dfb69-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="18651-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="18651-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="18651-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18651-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="dfb69-106">Получите все ресурсы, связанные с этим назначением.</span><span class="sxs-lookup"><span data-stu-id="dfb69-106">Get all the resources associated with this assignment.</span></span>
+<span data-ttu-id="18651-106">Получите все ресурсы, связанные с этим назначением.</span><span class="sxs-lookup"><span data-stu-id="18651-106">Get all the resources associated with this assignment.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dfb69-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dfb69-107">Permissions</span></span>
-<span data-ttu-id="dfb69-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dfb69-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="18651-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="18651-107">Permissions</span></span>
+<span data-ttu-id="18651-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="18651-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dfb69-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dfb69-110">Permission type</span></span>      | <span data-ttu-id="dfb69-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="dfb69-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="18651-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="18651-110">Permission type</span></span>      | <span data-ttu-id="18651-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="18651-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dfb69-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dfb69-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="dfb69-113">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dfb69-113">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="dfb69-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dfb69-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="dfb69-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dfb69-115">Not supported.</span></span>  |
-|<span data-ttu-id="dfb69-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="dfb69-116">Application</span></span> | <span data-ttu-id="dfb69-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dfb69-117">Not supported.</span></span> | 
+|<span data-ttu-id="18651-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="18651-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="18651-113">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="18651-113">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="18651-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="18651-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="18651-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18651-115">Not supported.</span></span>  |
+|<span data-ttu-id="18651-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="18651-116">Application</span></span> | <span data-ttu-id="18651-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18651-117">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="dfb69-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dfb69-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="18651-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="18651-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignments/{id}/resources
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="dfb69-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="dfb69-119">Optional query parameters</span></span>
-<span data-ttu-id="dfb69-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="dfb69-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="18651-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="18651-119">Optional query parameters</span></span>
+<span data-ttu-id="18651-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="18651-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="dfb69-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dfb69-121">Request headers</span></span>
-| <span data-ttu-id="dfb69-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="dfb69-122">Header</span></span>       | <span data-ttu-id="dfb69-123">Значение</span><span class="sxs-lookup"><span data-stu-id="dfb69-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="18651-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="18651-121">Request headers</span></span>
+| <span data-ttu-id="18651-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="18651-122">Header</span></span>       | <span data-ttu-id="18651-123">Значение</span><span class="sxs-lookup"><span data-stu-id="18651-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="dfb69-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="dfb69-124">Authorization</span></span>  | <span data-ttu-id="dfb69-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="dfb69-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="18651-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="18651-124">Authorization</span></span>  | <span data-ttu-id="18651-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="18651-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="dfb69-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="dfb69-127">Request body</span></span>
-<span data-ttu-id="dfb69-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="dfb69-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="dfb69-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="dfb69-129">Response</span></span>
-<span data-ttu-id="dfb69-130">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationAssignmentResource](../resources/educationassignmentresource.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="dfb69-130">If successful, this method returns a `200 OK` response code and a collection of [educationAssignmentResource](../resources/educationassignmentresource.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="dfb69-131">Пример</span><span class="sxs-lookup"><span data-stu-id="dfb69-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dfb69-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="dfb69-132">Request</span></span>
-<span data-ttu-id="dfb69-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="dfb69-133">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="18651-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="18651-127">Request body</span></span>
+<span data-ttu-id="18651-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="18651-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="18651-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="18651-129">Response</span></span>
+<span data-ttu-id="18651-130">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationAssignmentResource](../resources/educationassignmentresource.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="18651-130">If successful, this method returns a `200 OK` response code and a collection of [educationAssignmentResource](../resources/educationassignmentresource.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="18651-131">Пример</span><span class="sxs-lookup"><span data-stu-id="18651-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="18651-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="18651-132">Request</span></span>
+<span data-ttu-id="18651-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="18651-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_resources"
@@ -52,10 +53,10 @@ GET /education/classes/{id}/assignments/{id}/resources
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/resources
 ```
-##### <a name="response"></a><span data-ttu-id="dfb69-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="dfb69-134">Response</span></span>
-<span data-ttu-id="dfb69-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="dfb69-135">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="18651-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="18651-134">Response</span></span>
+<span data-ttu-id="18651-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="18651-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="dfb69-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="dfb69-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="18651-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="18651-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",

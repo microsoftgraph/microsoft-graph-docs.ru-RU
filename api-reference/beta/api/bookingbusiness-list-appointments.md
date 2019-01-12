@@ -2,49 +2,51 @@
 title: Список встреч
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: 920a0d53635e5d017ecd51ee75d3b244aafcb802
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 3334e4db060868fa7b514d50d1d879e4d0182b08
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839013"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946839"
 ---
-# <a name="list-appointments"></a><span data-ttu-id="a45be-104">Список встреч</span><span class="sxs-lookup"><span data-stu-id="a45be-104">List appointments</span></span>
+# <a name="list-appointments"></a><span data-ttu-id="1caba-104">Список встреч</span><span class="sxs-lookup"><span data-stu-id="1caba-104">List appointments</span></span>
 
- > <span data-ttu-id="a45be-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a45be-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a45be-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a45be-106">Use of these APIs in production applications is not supported.</span></span>
+ > <span data-ttu-id="1caba-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="1caba-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1caba-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1caba-106">Use of these APIs in production applications is not supported.</span></span>
  
-<span data-ttu-id="a45be-107">Получите список объектов [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingbusiness](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="a45be-107">Get a list of [bookingAppointment](../resources/bookingappointment.md) objects for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="a45be-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a45be-108">Permissions</span></span>
-<span data-ttu-id="a45be-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a45be-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1caba-107">Получите список объектов [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingbusiness](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="1caba-107">Get a list of [bookingAppointment](../resources/bookingappointment.md) objects for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1caba-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1caba-108">Permissions</span></span>
+<span data-ttu-id="1caba-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1caba-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a45be-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a45be-111">Permission type</span></span>      | <span data-ttu-id="a45be-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a45be-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1caba-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1caba-111">Permission type</span></span>      | <span data-ttu-id="1caba-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1caba-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a45be-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a45be-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="a45be-114">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="a45be-114">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="a45be-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a45be-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a45be-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a45be-116">Not supported.</span></span>   |
-|<span data-ttu-id="a45be-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a45be-117">Application</span></span> | <span data-ttu-id="a45be-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a45be-118">Not supported.</span></span>  | 
+|<span data-ttu-id="1caba-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1caba-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="1caba-114">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="1caba-114">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="1caba-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1caba-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1caba-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1caba-116">Not supported.</span></span>   |
+|<span data-ttu-id="1caba-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1caba-117">Application</span></span> | <span data-ttu-id="1caba-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1caba-118">Not supported.</span></span>  | 
 
-## <a name="http-request"></a><span data-ttu-id="a45be-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a45be-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1caba-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1caba-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/appointments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a45be-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="a45be-120">Optional query parameters</span></span>
-<span data-ttu-id="a45be-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="a45be-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1caba-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1caba-120">Optional query parameters</span></span>
+<span data-ttu-id="1caba-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="1caba-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="a45be-122">Чтобы задать встреч business резервирования в интервал дат, а не `$filter`, [Получение представления календаря](bookingbusiness-list-calendarview.md) для этого диапазона дат.</span><span class="sxs-lookup"><span data-stu-id="a45be-122">To get the set of appointments of a Bookings business within a date range, instead of `$filter`, [get the calendarView](bookingbusiness-list-calendarview.md) for that date range.</span></span> 
+<span data-ttu-id="1caba-122">Чтобы задать встреч business резервирования в интервал дат, а не `$filter`, [Получение представления календаря](bookingbusiness-list-calendarview.md) для этого диапазона дат.</span><span class="sxs-lookup"><span data-stu-id="1caba-122">To get the set of appointments of a Bookings business within a date range, instead of `$filter`, [get the calendarView](bookingbusiness-list-calendarview.md) for that date range.</span></span> 
 
-## <a name="request-headers"></a><span data-ttu-id="a45be-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a45be-123">Request headers</span></span>
-| <span data-ttu-id="a45be-124">Имя</span><span class="sxs-lookup"><span data-stu-id="a45be-124">Name</span></span>      |<span data-ttu-id="a45be-125">Описание</span><span class="sxs-lookup"><span data-stu-id="a45be-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1caba-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1caba-123">Request headers</span></span>
+| <span data-ttu-id="1caba-124">Имя</span><span class="sxs-lookup"><span data-stu-id="1caba-124">Name</span></span>      |<span data-ttu-id="1caba-125">Описание</span><span class="sxs-lookup"><span data-stu-id="1caba-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a45be-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="a45be-126">Authorization</span></span>  | <span data-ttu-id="a45be-127">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="a45be-127">Bearer {code}</span></span>|
+| <span data-ttu-id="1caba-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="1caba-126">Authorization</span></span>  | <span data-ttu-id="1caba-127">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="1caba-127">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a45be-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a45be-128">Request body</span></span>
-<span data-ttu-id="a45be-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a45be-129">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="a45be-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="a45be-130">Response</span></span>
-<span data-ttu-id="a45be-131">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [bookingAppointment](../resources/bookingappointment.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="a45be-131">If successful, this method returns a `200 OK` response code and collection of [bookingAppointment](../resources/bookingappointment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a45be-132">Пример</span><span class="sxs-lookup"><span data-stu-id="a45be-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a45be-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="a45be-133">Request</span></span>
-<span data-ttu-id="a45be-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a45be-134">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1caba-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1caba-128">Request body</span></span>
+<span data-ttu-id="1caba-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1caba-129">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="1caba-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="1caba-130">Response</span></span>
+<span data-ttu-id="1caba-131">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [bookingAppointment](../resources/bookingappointment.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="1caba-131">If successful, this method returns a `200 OK` response code and collection of [bookingAppointment](../resources/bookingappointment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1caba-132">Пример</span><span class="sxs-lookup"><span data-stu-id="1caba-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1caba-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="1caba-133">Request</span></span>
+<span data-ttu-id="1caba-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1caba-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_appointments"
@@ -52,8 +54,8 @@ GET /bookingBusinesses/{id}/appointments
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
 ```
-##### <a name="response"></a><span data-ttu-id="a45be-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="a45be-135">Response</span></span>
-<span data-ttu-id="a45be-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="a45be-136">The following is an example of the response.</span></span> <span data-ttu-id="a45be-137">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="a45be-137">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="a45be-138">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a45be-138">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1caba-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="1caba-135">Response</span></span>
+<span data-ttu-id="1caba-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="1caba-136">The following is an example of the response.</span></span> <span data-ttu-id="1caba-137">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="1caba-137">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1caba-138">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1caba-138">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,49 +3,50 @@ title: Удаление outlookTaskFolder
 description: Удаление указанной папки задач Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c8fd5a62113ee9ad66a7ca080f5b4d2593834c2d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 2a43ad79edfee90ec32d45e6d91c619630c6bd9f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836360"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935327"
 ---
-# <a name="delete-outlooktaskfolder"></a><span data-ttu-id="f8d56-103">Удаление outlookTaskFolder</span><span class="sxs-lookup"><span data-stu-id="f8d56-103">Delete outlookTaskFolder</span></span>
+# <a name="delete-outlooktaskfolder"></a><span data-ttu-id="a377f-103">Удаление outlookTaskFolder</span><span class="sxs-lookup"><span data-stu-id="a377f-103">Delete outlookTaskFolder</span></span>
 
-> <span data-ttu-id="f8d56-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f8d56-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f8d56-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f8d56-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a377f-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a377f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a377f-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a377f-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="f8d56-106">Удаление указанной папки задач Outlook.</span><span class="sxs-lookup"><span data-stu-id="f8d56-106">Delete the specified Outlook task folder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f8d56-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f8d56-107">Permissions</span></span>
-<span data-ttu-id="f8d56-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f8d56-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a377f-106">Удаление указанной папки задач Outlook.</span><span class="sxs-lookup"><span data-stu-id="a377f-106">Delete the specified Outlook task folder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a377f-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a377f-107">Permissions</span></span>
+<span data-ttu-id="a377f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a377f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f8d56-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f8d56-110">Permission type</span></span>      | <span data-ttu-id="f8d56-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f8d56-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a377f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a377f-110">Permission type</span></span>      | <span data-ttu-id="a377f-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a377f-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f8d56-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f8d56-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f8d56-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f8d56-113">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="f8d56-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f8d56-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f8d56-115">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f8d56-115">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="f8d56-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f8d56-116">Application</span></span> | <span data-ttu-id="f8d56-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f8d56-117">Not supported.</span></span> |
+|<span data-ttu-id="a377f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a377f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a377f-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a377f-113">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="a377f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a377f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a377f-115">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a377f-115">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="a377f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a377f-116">Application</span></span> | <span data-ttu-id="a377f-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a377f-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f8d56-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f8d56-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a377f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a377f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="f8d56-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f8d56-119">Request headers</span></span>
-| <span data-ttu-id="f8d56-120">Имя</span><span class="sxs-lookup"><span data-stu-id="f8d56-120">Name</span></span>       | <span data-ttu-id="f8d56-121">Описание</span><span class="sxs-lookup"><span data-stu-id="f8d56-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a377f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a377f-119">Request headers</span></span>
+| <span data-ttu-id="a377f-120">Имя</span><span class="sxs-lookup"><span data-stu-id="a377f-120">Name</span></span>       | <span data-ttu-id="a377f-121">Описание</span><span class="sxs-lookup"><span data-stu-id="a377f-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f8d56-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f8d56-122">Authorization</span></span>  | <span data-ttu-id="f8d56-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f8d56-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a377f-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a377f-122">Authorization</span></span>  | <span data-ttu-id="a377f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a377f-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f8d56-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f8d56-125">Request body</span></span>
-<span data-ttu-id="f8d56-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f8d56-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a377f-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a377f-125">Request body</span></span>
+<span data-ttu-id="a377f-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a377f-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f8d56-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="f8d56-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a377f-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="a377f-127">Response</span></span>
 
-<span data-ttu-id="f8d56-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="f8d56-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="a377f-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="a377f-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f8d56-130">Пример</span><span class="sxs-lookup"><span data-stu-id="f8d56-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f8d56-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="f8d56-131">Request</span></span>
-<span data-ttu-id="f8d56-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f8d56-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a377f-130">Пример</span><span class="sxs-lookup"><span data-stu-id="a377f-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a377f-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="a377f-131">Request</span></span>
+<span data-ttu-id="a377f-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a377f-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_outlooktaskfolder"
@@ -53,8 +54,8 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/outlook/taskFolders('AAMkADIyAAAhrbPXAAA=')
 ```
-##### <a name="response"></a><span data-ttu-id="f8d56-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="f8d56-133">Response</span></span>
-<span data-ttu-id="f8d56-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f8d56-134">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="a377f-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="a377f-133">Response</span></span>
+<span data-ttu-id="a377f-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a377f-134">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
