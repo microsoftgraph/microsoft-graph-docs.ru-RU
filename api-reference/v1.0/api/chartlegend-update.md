@@ -3,12 +3,13 @@ title: Обновление объекта chartlegend
 description: Обновление свойств объекта chartlegend.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: e4408f5a65059fe2b5c79299b712bf465e0bbd7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: bdd765cebe86015bdd01ef42c9db829a89c7749f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843108"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930259"
 ---
 # <a name="update-chartlegend"></a>Обновление объекта chartlegend
 
@@ -39,7 +40,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overlay|boolean|Логическое значение, определяющее, должна ли легенда диаграммы пересекаться с основной частью диаграммы.|
-|position|string|Представляет положение легенды диаграммы. Возможные значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
+|position|строка|Представляет положение легенды диаграммы. Возможные значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|boolean|Логическое значение, представляющее видимость объекта ChartLegend.|
 
 ## <a name="response"></a>Отклик

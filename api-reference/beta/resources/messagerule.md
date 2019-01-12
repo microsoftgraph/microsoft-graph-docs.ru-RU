@@ -3,12 +3,13 @@ title: Тип ресурса messageRule
 description: Правило, которое применяется к сообщениям в папке "Входящие" пользователя.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: ca26ad271930b83294e472b2d55e71e170722f11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 86fa0edd5bf24be6e8b18fe648b6cffa505d0a7a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820960"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931079"
 ---
 # <a name="messagerule-resource-type"></a>Тип ресурса messageRule
 
@@ -26,11 +27,11 @@ ms.locfileid: "27820960"
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | Действия, которые нужно применить к сообщению при выполнении определенных условий. |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Условия, при соблюдении которых с указанным правилом выполняются соответствующие действия. |
-| displayName | Строка | Отображаемое имя правила. |
+| displayName | String | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Условия исключения для правила. |
 | hasError | Boolean | Указывает, является ли правило ошибкой. Только для чтения. |
 | id |String|Уникальный идентификатор правила. Только для чтения.|
-| isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. |
+| isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
 | isReadOnly | Логический | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
 | sequence | Int32 | Определяет последовательность выполнения правила среди прочих правил. |
 

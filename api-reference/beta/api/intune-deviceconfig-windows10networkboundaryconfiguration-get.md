@@ -3,12 +3,13 @@ title: Получение windows10NetworkBoundaryConfiguration
 description: Чтение свойства и связи объекта windows10NetworkBoundaryConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1e0c5a32b430a406e753f67d0797fca401d04bc0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e99faa1c725111e0040c443751f8c4c461d18310
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841519"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931708"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>Получение windows10NetworkBoundaryConfiguration
 
@@ -49,7 +50,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -59,7 +60,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

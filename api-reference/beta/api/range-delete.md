@@ -3,12 +3,13 @@ title: 'Range: delete'
 description: Удаляет ячейки, связанные с диапазоном.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 1817a1c1481d86e08de4146215da6f6fc8de6a8c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 2a3ea63884964f1c1eb2b423c459fcae3ba6bfb1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871787"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931344"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -43,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|shift|string|Указывает направление сдвига ячеек.  Возможные значения: `Up`, `Left`.|
+|shift|строка|Указывает направление сдвига ячеек.  Возможные значения: `Up`, `Left`.|
 
 ## <a name="response"></a>Отклик
 
@@ -67,7 +68,7 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

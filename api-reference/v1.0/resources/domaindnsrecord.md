@@ -2,12 +2,14 @@
 title: Тип ресурса domainDnsRecord
 description: Для каждого домена в клиентов может потребоваться добавление записи DNS для файла зоны DNS домена этого домена, которые могут использоваться с Microsoft Online Services. Сущность **DomainDnsRecord** используется для представления таких записей DNS. Базовая сущность для DomainDnsCnameRecord, DomainDnsMxRecord, DomainDnsSrvRecord и DomainDnsSrvRecord сущностей.
 localization_priority: Normal
-ms.openlocfilehash: 30c5f63f4ecac2c716f7884ccf82fd129125c8b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ce154f97757ad7900388986f9809007acb516c4a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822346"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915629"
 ---
 # <a name="domaindnsrecord-resource-type"></a>Тип ресурса domainDnsRecord
 
@@ -19,7 +21,7 @@ ms.locfileid: "27822346"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
+|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
 |isOptional|Логический| Если указано значение false, для правильной работы служб Microsoft Online Services с доменом клиент должен настроить эту запись на узле DNS. |
 |label|Строка| Значение, используемое при настройке имени записи DNS на узле DNS. |
 |recordType|Строка| Указывает, какой тип записи DNS представляет этот объект.</br></br>Возможные значения: *CName*, *Mx*, *Srv*, *Txt*.</br></br>Ключ |

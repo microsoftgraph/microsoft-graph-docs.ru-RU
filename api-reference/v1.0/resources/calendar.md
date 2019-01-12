@@ -2,12 +2,14 @@
 title: Тип ресурса calendar
 description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для ресурса user или стандартный календарь для ресурса group, представляющего группу Office 365.
 localization_priority: Priority
-ms.openlocfilehash: c567a37be651987f2ca5af08cf9837ba6f41076f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6d7f926c26b0fdcf0c70e7f6d02593cff8bb46a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843248"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917624"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
@@ -45,7 +47,7 @@ ms.locfileid: "27843248"
 |canViewPrivateItems |Boolean |Значение true, если пользователь может читать элементы календаря, которые были помечены как частные, в противном случае — значение false. |
 |changeKey|String|Указывает версию объекта calendar. При каждом изменении календаря также меняется значение changeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
 |color|calendarColor|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue = 0, LightGreen = 1, LightOrange = 2, LightGray = 3, LightYellow = 4, LightTeal = 5, LightPink = 6, LightBrown = 7, LightRed = 8, MaxColor = 9, Auto = -1.|
-|id|Строка|Уникальный идентификатор группы. Только для чтения.|
+|id|String|Уникальный идентификатор группы. Только для чтения.|
 |name|String|Имя календаря.|
 |owner |[emailAddress](emailaddress.md) | Если это свойство задано, оно указывает на пользователя, создавшего или добавившего календарь. В календаре, созданном или добавленном пользователем, свойство **owner** установлено для этого пользователя. В календаре, который используется совместно с пользователем, свойство **owner** установлено для лица, предоставившего пользователю общий доступ к этому календарю. |
 

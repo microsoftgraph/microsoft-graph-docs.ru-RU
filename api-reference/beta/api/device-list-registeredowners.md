@@ -2,12 +2,14 @@
 title: Список registeredOwners
 description: Получение списка пользователей, являющихся зарегистрированными владельцами устройства. Зарегистрированный владелец — пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца.
 localization_priority: Normal
-ms.openlocfilehash: a0b4fac3ef36ac3137307186ab736b812e5f0274
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ebf6350de33d2dfa70f9c098cd618abf7d7df4ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833343"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931715"
 ---
 # <a name="list-registeredowners"></a>Список registeredOwners
 
@@ -38,7 +40,7 @@ GET /devices/{id}/registeredOwners
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
@@ -56,7 +58,7 @@ GET /devices/{id}/registeredOwners
 ```http
 GET https://graph.microsoft.com/beta/devices/{id}/registeredOwners
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

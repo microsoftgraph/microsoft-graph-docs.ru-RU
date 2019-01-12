@@ -3,12 +3,13 @@ title: Обновление параметров
 description: 'Обновляет свойства объекта settings. '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 230170f4779ed20c59dd61673d32d37e523234fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8f538d298f71ad7ef537988a29bae812015566ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870499"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913228"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -51,7 +52,7 @@ PATCH https://graph.microsoft.com/beta/users/{id | userPrincipalName}/settings/
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Логический|Параметр имеет значение true отключить делегированный доступ для [тенденций](../resources/insights-trending.md) API и отключать доступ к документам в углубимся Office для пользователя. Настройка значение "true" также влияет на соответствие содержимого, отображаемые в Office 365 —, предлагаемые сайты в Домашняя страница SharePoint и представления обнаружения в OneDrive для бизнеса Показать менее релевантные результаты. Этот параметр отражает состояние элемента управления в [Углубимся Office](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Boolean|Параметр имеет значение true отключить делегированный доступ для [тенденций](../resources/insights-trending.md) API и отключать доступ к документам в углубимся Office для пользователя. Настройка значение "true" также влияет на соответствие содержимого, отображаемые в Office 365 —, предлагаемые сайты в Домашняя страница SharePoint и представления обнаружения в OneDrive для бизнеса Показать менее релевантные результаты. Этот параметр отражает состояние элемента управления в [Углубимся Office](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Пример 
 
@@ -69,7 +70,7 @@ Content-length: 37
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 

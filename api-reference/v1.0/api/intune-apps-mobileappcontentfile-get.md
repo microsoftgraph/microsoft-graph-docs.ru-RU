@@ -3,12 +3,13 @@ title: Get mobileAppContentFile
 description: Чтение свойств и связей объекта mobileAppContentFile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3a9b8fceb83e857a0be630dac478efcd0a6e926a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9ecbdfac8335e777c4c104f732e378ebf2d07f17
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870877"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932142"
 ---
 # <a name="get-mobileappcontentfile"></a>Get mobileAppContentFile
 
@@ -55,7 +56,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

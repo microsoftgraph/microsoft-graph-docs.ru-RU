@@ -3,12 +3,13 @@ title: Update mobileAppContentFile
 description: Обновление свойств объекта mobileAppContentFile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ee36235a7de5e08b90959b2abaa83ac370371f55
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dd03a16e60d4218bbd8072ba19eda80e2fddccee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811251"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912297"
 ---
 # <a name="update-mobileappcontentfile"></a>Update mobileAppContentFile
 

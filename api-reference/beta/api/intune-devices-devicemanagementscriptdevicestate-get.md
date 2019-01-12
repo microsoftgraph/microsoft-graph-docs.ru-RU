@@ -3,12 +3,13 @@ title: Получение deviceManagementScriptDeviceState
 description: Чтение свойства и связи объекта deviceManagementScriptDeviceState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fb82aec0d1e1a93f66986a8c2673ad92b7791d01
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d79479c956bb28705c778f78f090a7c1aa069c50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849443"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933304"
 ---
 # <a name="get-devicemanagementscriptdevicestate"></a>Получение deviceManagementScriptDeviceState
 
@@ -48,7 +49,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -58,7 +59,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

@@ -3,12 +3,13 @@ title: Тип ресурса conversationThread
 description: conversationThread — это коллекция экземпляров post.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 89f57e90551efbea435181c35751d54168c498f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: a1a45f5ac6d26b58f1179616d3a6b9b76c6c1618
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886431"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912318"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 conversationThread — это коллекция экземпляров [post](post.md).
@@ -30,7 +31,7 @@ conversationThread — это коллекция экземпляров [post](p
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Только для чтения.|
+|id|String| Только для чтения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели в поле "Кому" для цепочки.|
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели в поле "Копия" для цепочки.|
 |topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.||

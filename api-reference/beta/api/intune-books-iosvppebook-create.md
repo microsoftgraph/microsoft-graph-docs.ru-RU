@@ -3,12 +3,13 @@ title: Create iosVppEBook
 description: Создание объекта iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 810efd73c1c0559fa3e885b19bf22af189d771b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 96fb518c3ecc9434aaa1c0bd4da1cf18271a8a57
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823123"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930007"
 ---
 # <a name="create-iosvppebook"></a>Create iosVppEBook
 
@@ -49,9 +50,9 @@ POST /deviceAppManagement/managedEBooks
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|id|String|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|String|Имя электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
-|описание|Строка|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|описание|String|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
@@ -108,7 +109,7 @@ Content-length: 856
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

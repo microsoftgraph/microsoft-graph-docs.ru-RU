@@ -3,12 +3,13 @@ title: Тип ресурса TableSort
 description: Управляет операциями сортировки для объектов Table.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d56d739a51b78ad7fdfd9f5cc8033b544ebb87ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: be607832be82b99853b4cd44cfa5b60449a2c432
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835079"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929475"
 ---
 # <a name="tablesort-resource-type"></a>Тип ресурса TableSort
 
@@ -29,7 +30,7 @@ ms.locfileid: "27835079"
 |:---------------|:--------|:----------|
 |fields|[WorkbookSortField](sortfield.md) коллекции|Указывает текущие условия, которые использовались при последней сортировке таблицы. Только для чтения.|
 |matchCase|boolean|Указывает, учитывался ли регистр при последней сортировке таблице. Только для чтения.|
-|method|string|Представляет порядка способ, используемый для сортировки в таблице последнего китайских знаков. Возможные значения: `PinYin`, `StrokeCount`. Только для чтения.|
+|method|строка|Представляет порядка способ, используемый для сортировки в таблице последнего китайских знаков. Возможные значения: `PinYin`, `StrokeCount`. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

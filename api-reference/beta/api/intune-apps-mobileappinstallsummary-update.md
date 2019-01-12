@@ -3,12 +3,13 @@ title: Обновление mobileAppInstallSummary
 description: Обновление свойства объекта mobileAppInstallSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 19bd1e61359c5d2bdaff6ee87e807bae7dba0f05
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3886512ff2524ccf2ac424d198533ebaafae20ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864801"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930063"
 ---
 # <a name="update-mobileappinstallsummary"></a>Обновление mobileAppInstallSummary
 
@@ -49,7 +50,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, которые были успешно установлены этого приложения.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
 |notApplicableDeviceCount|Int32|Количество устройств, которые не применимы для этого приложения.|

@@ -2,12 +2,14 @@
 title: Активация directoryRole
 description: Активация роли каталога. Чтобы можно было считать роль каталога или обновить ее членов, сначала следует активировать ее на клиенте. По умолчанию активируются только неявные роли каталога пользователей, а также роли каталога администраторов организации. Чтобы получить доступ к членам и назначить для них другую роль каталога, сначала следует активировать ее с помощью соответствующего шаблона роли каталога (directoryRoleTemplate).
 localization_priority: Normal
-ms.openlocfilehash: 9e3e962de4e25422cbf35f9efa8a83499cfe81bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5d127580c0a4851c5a991ccc0646007ddf1298a5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885150"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924918"
 ---
 # <a name="activate-directoryrole"></a>Активация directoryRole
 
@@ -31,7 +33,7 @@ POST /directoryRoles
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type  | строка  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса

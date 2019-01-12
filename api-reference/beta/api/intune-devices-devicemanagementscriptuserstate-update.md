@@ -3,12 +3,13 @@ title: Обновление deviceManagementScriptUserState
 description: Обновление свойства объекта deviceManagementScriptUserState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e5c3f991a8deaa3a68e7434426cc51c7ea205ef3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 301715f0c2ec522f0999a5551ae45167b5e726bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806911"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928751"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Обновление deviceManagementScriptUserState
 
@@ -49,14 +50,14 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ сущности состояние пользователя устройства управления скрипта.|
+|id|String|Ключ сущности состояние пользователя устройства управления скрипта.|
 |successDeviceCount|Int32|Число допустимых устройства для определенного пользователя.|
 |errorDeviceCount|Int32|Число ошибок устройства для определенного пользователя.|
-|userPrincipalName|Строка|Имени участника-пользователя для определенного пользователя.|
+|userPrincipalName|String|Имени участника-пользователя для определенного пользователя.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -74,7 +75,7 @@ Content-length: 110
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

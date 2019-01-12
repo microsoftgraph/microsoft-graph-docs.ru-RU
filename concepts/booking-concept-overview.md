@@ -2,12 +2,14 @@
 title: Обзор API Microsoft Bookings (предварительная версия)
 description: Microsoft Bookings — это приложения для браузера и мобильных устройств, упрощающие планирование встреч для небольших компаний и их клиентов. Небольшие компании, которые предоставляют услуги, предусматривающие планирование встреч (например, автомастерские, парикмахерские, юридические фирмы), смогут освободить время, отведенное на управление резервированием, и потратить его на более важные задачи для развития бизнеса. Служба Microsoft Bookings доступна для компаний с подпиской на Office 365 бизнес премиум.
 author: angelgolfer-ms
-ms.openlocfilehash: 7e76c72950ea889b0c6029568ef287ee1ae5eedb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: bookings
+ms.openlocfilehash: af9fa2b993a3ed4a55c5c526f31e0582b18ea837
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339818"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917337"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Обзор API Microsoft Bookings (предварительная версия)
 

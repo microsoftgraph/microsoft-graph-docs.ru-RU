@@ -3,12 +3,13 @@ title: Клонирование группы
 description: Создайте копию группы. Эта операция также создает копию соответствующей группе.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 9239e58f28e4214ee82acad3d2c893f52fafefde
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: afd0c4d1f264989a349a300201ea4a1c528fd681
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805756"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912500"
 ---
 # <a name="clone-a-team"></a>Клонирование группы
 
@@ -61,7 +62,7 @@ POST /teams/{id}/clone
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Список разделенных запятой частей следует скопировать. Юридические части, «приложений, вкладок, параметры, каналы, участники».|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (необязательно)| Определяет видимость группы. Возможные значения: **частный**, **открытым**. Если видимости не указан, видимости копируются из исходной группы или группы. Если группа клонировании — это группа **educationClass** , параметр видимости игнорируется и видимости новой группы будут иметь значение HiddenMembership.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Если успешно завершена, этот метод возвращает `202 Accepted` код ответа с расположением: заголовок, с указанием ресурсов [операции](../resources/teamsasyncoperation.md) .
 После завершения операции ресурсов операции сообщит вам, идентификатор созданного группы.
@@ -86,7 +87,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",

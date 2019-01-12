@@ -3,12 +3,13 @@ title: функция getRoleScopeTagsByIds
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dd5389c4cece513bfaea434192fd612dd60bc239
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4eeb89d0b3636ad20f9b59ad1ee9db867e5481e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868336"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929706"
 ---
 # <a name="getrolescopetagsbyids-function"></a>функция getRoleScopeTagsByIds
 
@@ -52,7 +53,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Если успешно завершена, эта функция возвращает `200 OK` код ответа и семейства [roleScopeTag](../resources/intune-rbac-rolescopetag.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -64,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/getRoleScopeTagsByIds(ids=
 ])
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

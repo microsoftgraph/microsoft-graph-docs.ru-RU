@@ -3,12 +3,13 @@ title: Get deviceConfigurationAssignment
 description: Чтение свойств и связей объекта deviceConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 54a1086e7d6d6cfc266cb73f75e3a775a788b700
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e8739dee9de548179dc88b68b3bf842ddc11241c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847975"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930119"
 ---
 # <a name="get-deviceconfigurationassignment"></a>Get deviceConfigurationAssignment
 
@@ -65,7 +66,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

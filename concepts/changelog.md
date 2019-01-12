@@ -2,12 +2,13 @@
 title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
-ms.openlocfilehash: e4afc0f2b3a0302493f2d4d25f5c90777d5ffe73
-ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+localization_priority: Priority
+ms.openlocfilehash: a4d1250297b4bb0fc03915acbd3adf7dd41b7df3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27413199"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882861"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 

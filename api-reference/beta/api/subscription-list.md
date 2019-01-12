@@ -2,12 +2,13 @@
 title: Список подписок
 description: " сценарии ниже для получения дополнительных сведений см."
 localization_priority: Normal
-ms.openlocfilehash: 1b751b8632d82626e2ba87bf00a054b2be4f25f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: e7b6c618c35aa9952673b79f238777a71bc41f6a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876988"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928782"
 ---
 # <a name="list-subscriptions"></a>Список подписок
 
@@ -15,7 +16,7 @@ ms.locfileid: "27876988"
 
 Получение списка webhook подписки. Содержимое ответа зависит от контекста, в котором вызов приложения; сценарии ниже для получения дополнительных сведений см.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 Этот интерфейс API поддерживает следующие области разрешений; [для получения дополнительных сведений, включая выбор разрешений, см.](/graph/permissions-reference)
 
@@ -62,13 +63,13 @@ GET /subscriptions
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и список объектов [подписки](../resources/subscription.md) в теле ответа.
 
@@ -85,7 +86,7 @@ GET /subscriptions
 GET https://graph.microsoft.com/beta/subscriptions
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание: Для краткости может усекаться ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
 

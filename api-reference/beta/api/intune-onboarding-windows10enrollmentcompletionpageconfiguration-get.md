@@ -3,12 +3,13 @@ title: Получение windows10EnrollmentCompletionPageConfiguration
 description: Чтение свойства и связи объекта windows10EnrollmentCompletionPageConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bfe21ca19b86ec960c647e6052badb975ec43874
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 89c1eb47654bbb249672e46a1b39fbeebeb8d345
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890519"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928845"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Получение windows10EnrollmentCompletionPageConfiguration
 
@@ -47,7 +48,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -57,7 +58,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

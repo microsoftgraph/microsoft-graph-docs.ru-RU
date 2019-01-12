@@ -3,12 +3,13 @@ title: Тип ресурса enrollmentConfigurationAssignment
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ec93693c306b5b45ace461644661398c9c654ce3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2beb8504e7a6de59be01e610095ed35db51c5b8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814947"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912542"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Тип ресурса enrollmentConfigurationAssignment
 
@@ -27,7 +28,7 @@ ms.locfileid: "27814947"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Н/Д|
 
 ## <a name="relationships"></a>Связи

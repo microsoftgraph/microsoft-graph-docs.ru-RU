@@ -3,12 +3,13 @@ title: Get deviceCompliancePolicyAssignment
 description: Чтение свойств и связей объекта deviceCompliancePolicyAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 284d3b5707d7b036e9f6ce5a4976768addd88765
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f2ba4adeb8e80b12cbd92375bbf99bb593ecf81
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812245"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930336"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>Get deviceCompliancePolicyAssignment
 
@@ -55,7 +56,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

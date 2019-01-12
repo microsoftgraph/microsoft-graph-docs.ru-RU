@@ -3,12 +3,13 @@ title: Удаление mobileAppProvisioningConfigGroupAssignment
 description: Удаляет mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5d0d316ab620050c1ba096289aaed372c8e70e02
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54534f66bdef7e3afabe26effae4c153799a78f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869659"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930126"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>Удаление mobileAppProvisioningConfigGroupAssignment
 
@@ -45,7 +46,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/groupAssignments/{mobileAppProvisioningConfigGroupAssignmentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content
