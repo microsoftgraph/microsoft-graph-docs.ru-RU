@@ -3,46 +3,47 @@ title: Удаление преподавателя
 description: Удаление преподавателя для курса.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 444b97fb5fa25c7863b0607455752956dc6396f8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 1003a0fee736c0f713a82516e79295c25aab0d5b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836325"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986119"
 ---
-# <a name="remove-teacher"></a><span data-ttu-id="344e9-103">Удаление преподавателя</span><span class="sxs-lookup"><span data-stu-id="344e9-103">Remove teacher</span></span>
+# <a name="remove-teacher"></a><span data-ttu-id="93891-103">Удаление преподавателя</span><span class="sxs-lookup"><span data-stu-id="93891-103">Remove teacher</span></span>
 
-<span data-ttu-id="344e9-104">Удаление преподавателя для курса.</span><span class="sxs-lookup"><span data-stu-id="344e9-104">Remove a teacher from a class.</span></span>
+<span data-ttu-id="93891-104">Удаление преподавателя для курса.</span><span class="sxs-lookup"><span data-stu-id="93891-104">Remove a teacher from a class.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="344e9-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="344e9-105">Permissions</span></span>
-<span data-ttu-id="344e9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="344e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="93891-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="93891-105">Permissions</span></span>
+<span data-ttu-id="93891-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="93891-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="344e9-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="344e9-108">Permission type</span></span>      | <span data-ttu-id="344e9-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="344e9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="93891-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="93891-108">Permission type</span></span>      | <span data-ttu-id="93891-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="93891-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="344e9-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="344e9-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="344e9-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="344e9-111">Not supported.</span></span>  |
-|<span data-ttu-id="344e9-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="344e9-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="344e9-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="344e9-113">Not supported.</span></span>  |
-|<span data-ttu-id="344e9-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="344e9-114">Application</span></span> | <span data-ttu-id="344e9-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="344e9-115">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="93891-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="93891-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="93891-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="93891-111">Not supported.</span></span>  |
+|<span data-ttu-id="93891-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="93891-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="93891-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="93891-113">Not supported.</span></span>  |
+|<span data-ttu-id="93891-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="93891-114">Application</span></span> | <span data-ttu-id="93891-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="93891-115">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="344e9-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="344e9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="93891-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="93891-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}/teachers/{userId}/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="344e9-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="344e9-117">Request headers</span></span>
-| <span data-ttu-id="344e9-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="344e9-118">Header</span></span>       | <span data-ttu-id="344e9-119">Значение</span><span class="sxs-lookup"><span data-stu-id="344e9-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="93891-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="93891-117">Request headers</span></span>
+| <span data-ttu-id="93891-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="93891-118">Header</span></span>       | <span data-ttu-id="93891-119">Значение</span><span class="sxs-lookup"><span data-stu-id="93891-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="344e9-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="344e9-120">Authorization</span></span>  | <span data-ttu-id="344e9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="344e9-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="93891-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="93891-120">Authorization</span></span>  | <span data-ttu-id="93891-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="93891-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="344e9-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="344e9-123">Request body</span></span>
-<span data-ttu-id="344e9-124">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="344e9-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="93891-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="93891-123">Request body</span></span>
+<span data-ttu-id="93891-124">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="93891-124">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="344e9-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="344e9-125">Response</span></span>
-<span data-ttu-id="344e9-126">При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.</span><span class="sxs-lookup"><span data-stu-id="344e9-126">If successful, this method returns a `204 No Content` response code and an empty response body.</span></span>
+## <a name="response"></a><span data-ttu-id="93891-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="93891-125">Response</span></span>
+<span data-ttu-id="93891-126">При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.</span><span class="sxs-lookup"><span data-stu-id="93891-126">If successful, this method returns a `204 No Content` response code and an empty response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="344e9-127">Пример</span><span class="sxs-lookup"><span data-stu-id="344e9-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="344e9-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="344e9-128">Request</span></span>
-<span data-ttu-id="344e9-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="344e9-129">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="93891-127">Пример</span><span class="sxs-lookup"><span data-stu-id="93891-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="93891-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="93891-128">Request</span></span>
+<span data-ttu-id="93891-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="93891-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_educationclass_from_educationschool"
@@ -51,8 +52,8 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
 DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{teacher-id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="344e9-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="344e9-130">Response</span></span>
-<span data-ttu-id="344e9-131">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="344e9-131">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="93891-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="93891-130">Response</span></span>
+<span data-ttu-id="93891-131">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="93891-131">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

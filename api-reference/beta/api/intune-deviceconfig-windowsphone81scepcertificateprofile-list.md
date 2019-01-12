@@ -3,30 +3,31 @@ title: Список windowsPhone81SCEPCertificateProfiles
 description: Свойства списка и связей объектов windowsPhone81SCEPCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b842026f6ba8fab51161324c752d510d72115653
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 90cbef0e6b9c70afc7d5ebd6aa854aa79e6fc4f4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847182"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990148"
 ---
-# <a name="list-windowsphone81scepcertificateprofiles"></a><span data-ttu-id="a5e38-103">Список windowsPhone81SCEPCertificateProfiles</span><span class="sxs-lookup"><span data-stu-id="a5e38-103">List windowsPhone81SCEPCertificateProfiles</span></span>
+# <a name="list-windowsphone81scepcertificateprofiles"></a><span data-ttu-id="56625-103">Список windowsPhone81SCEPCertificateProfiles</span><span class="sxs-lookup"><span data-stu-id="56625-103">List windowsPhone81SCEPCertificateProfiles</span></span>
 
-> <span data-ttu-id="a5e38-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a5e38-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a5e38-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a5e38-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="56625-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="56625-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="56625-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="56625-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="a5e38-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="a5e38-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="56625-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="56625-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="a5e38-107">Свойства списка и связей объектов [windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="a5e38-107">List properties and relationships of the [windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="a5e38-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="a5e38-108">Prerequisites</span></span>
-<span data-ttu-id="a5e38-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5e38-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="56625-107">Свойства списка и связей объектов [windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="56625-107">List properties and relationships of the [windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="56625-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="56625-108">Prerequisites</span></span>
+<span data-ttu-id="56625-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56625-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a5e38-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a5e38-111">Permission type</span></span>|<span data-ttu-id="a5e38-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="a5e38-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="56625-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="56625-111">Permission type</span></span>|<span data-ttu-id="56625-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="56625-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a5e38-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a5e38-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a5e38-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="a5e38-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="a5e38-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a5e38-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a5e38-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a5e38-116">Not supported.</span></span>|
-|<span data-ttu-id="a5e38-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a5e38-117">Application</span></span>|<span data-ttu-id="a5e38-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a5e38-118">Not supported.</span></span>|
+|<span data-ttu-id="56625-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="56625-113">Delegated (work or school account)</span></span>|<span data-ttu-id="56625-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="56625-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="56625-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="56625-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="56625-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="56625-116">Not supported.</span></span>|
+|<span data-ttu-id="56625-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="56625-117">Application</span></span>|<span data-ttu-id="56625-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="56625-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a5e38-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a5e38-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="56625-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="56625-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,28 +37,28 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a5e38-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a5e38-120">Request headers</span></span>
-|<span data-ttu-id="a5e38-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a5e38-121">Header</span></span>|<span data-ttu-id="a5e38-122">Значение</span><span class="sxs-lookup"><span data-stu-id="a5e38-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="56625-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="56625-120">Request headers</span></span>
+|<span data-ttu-id="56625-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="56625-121">Header</span></span>|<span data-ttu-id="56625-122">Значение</span><span class="sxs-lookup"><span data-stu-id="56625-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a5e38-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5e38-123">Authorization</span></span>|<span data-ttu-id="a5e38-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="a5e38-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a5e38-125">Accept</span><span class="sxs-lookup"><span data-stu-id="a5e38-125">Accept</span></span>|<span data-ttu-id="a5e38-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a5e38-126">application/json</span></span>|
+|<span data-ttu-id="56625-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="56625-123">Authorization</span></span>|<span data-ttu-id="56625-124">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="56625-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="56625-125">Accept</span><span class="sxs-lookup"><span data-stu-id="56625-125">Accept</span></span>|<span data-ttu-id="56625-126">application/json</span><span class="sxs-lookup"><span data-stu-id="56625-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a5e38-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a5e38-127">Request body</span></span>
-<span data-ttu-id="a5e38-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a5e38-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="56625-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="56625-127">Request body</span></span>
+<span data-ttu-id="56625-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="56625-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a5e38-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="a5e38-129">Response</span></span>
-<span data-ttu-id="a5e38-130">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="a5e38-130">If successful, this method returns a `200 OK` response code and a collection of [windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="56625-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="56625-129">Response</span></span>
+<span data-ttu-id="56625-130">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="56625-130">If successful, this method returns a `200 OK` response code and a collection of [windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a5e38-131">Пример</span><span class="sxs-lookup"><span data-stu-id="a5e38-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="a5e38-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="a5e38-132">Request</span></span>
-<span data-ttu-id="a5e38-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a5e38-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="56625-131">Пример</span><span class="sxs-lookup"><span data-stu-id="56625-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="56625-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="56625-132">Request</span></span>
+<span data-ttu-id="56625-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="56625-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="a5e38-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="a5e38-134">Response</span></span>
-<span data-ttu-id="a5e38-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="a5e38-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="56625-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="56625-134">Response</span></span>
+<span data-ttu-id="56625-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="56625-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
