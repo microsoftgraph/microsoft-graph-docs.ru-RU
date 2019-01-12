@@ -3,12 +3,13 @@ title: Тип ресурса iosManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве iOS
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9db58d13f8a1512fd73ba1242a7e21c85648e31f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0834b335df5188f1db0cf245d3911a40b2837522
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850108"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912724"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>Тип ресурса iosManagedAppProtection
 

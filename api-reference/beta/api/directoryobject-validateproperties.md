@@ -2,12 +2,14 @@
 title: 'directoryObject: validateProperties'
 description: Проверьте, если группу Office 365 отображаемое имя или почты псевдонимов стандарту именования политик.  Клиенты могут использовать API-Интерфейс для определения отображаемое имя или псевдоним почты является допустимым перед попыткой **Создать** группу Office 365. Для проверки правильности свойств существующей группы, используйте функцию validateProperties для групп.
 localization_priority: Normal
-ms.openlocfilehash: 1f38a30d86cf5b28eea6b9891687c4dbca4b78fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 515acb022150d091e7dcbbdecc1fb1adef849a88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921320"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 

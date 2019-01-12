@@ -3,12 +3,13 @@ title: Тип ресурса restrictedAppsViolation
 description: Нарушение профиля конфигурации ограниченных приложений каждого устройства на одного пользователя
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aefd9996805f0ee454bebc8871662b0ceac05a9b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 14979303c37cf189379a71b8cabc38f31e6b16b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849380"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923154"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>Тип ресурса restrictedAppsViolation
 

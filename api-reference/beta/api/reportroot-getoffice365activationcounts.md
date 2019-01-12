@@ -1,12 +1,14 @@
 ---
 title: 'reportRoot: getOffice365ActivationCounts'
 description: Получите количество активаций Office 365 на компьютерах и мобильных устройствах.
-ms.openlocfilehash: c75b957f02eb5d5fa77f5e3dfa696f3086f9d817
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.prod: reports
+ms.openlocfilehash: 8027cf24c5a79f6d129f9b266cdb80929f2d707a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076408"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913760"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
@@ -131,9 +133,9 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActivationCounts?$forma
 
 #### <a name="response"></a>Ответ
 
-Ниже приводится пример отклика.
+Ниже показан пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

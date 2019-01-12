@@ -2,12 +2,14 @@
 title: Создание bookingCustomer
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: ea534616c35f2ca43c7fb5b0b5169cc935aef1d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 555723fdb4eb7bacb2c876ed3fd87eb539a5239d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819455"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922258"
 ---
 # <a name="create-bookingcustomer"></a>Создание bookingCustomer
 

@@ -2,12 +2,13 @@
 title: Получение добавочных изменений для пользователей
 description: Запрос позволяет запрашивать добавления, удаления или обновления пользователей с помощью серии вызовов функции delta. Запрос изменений позволяет находить изменения пользователей. При этом не требуется получать полный набор пользователей из Microsoft Graph и сравнивать изменения.
 author: piotrci
-ms.openlocfilehash: 7e00ea6b305cad379b618c4a3410bf832c29a298
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b4f79951f79393e22c40ef9a4f55e29e0145ccea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346475"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850479"
 ---
 # <a name="get-incremental-changes-for-users"></a>Получение добавочных изменений для пользователей
 

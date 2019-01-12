@@ -3,12 +3,13 @@ title: Получение объекта directoryRoleTemplate
 description: Получение свойств и связей объекта directoryroletemplate.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: d67b539fa01d03e8a22c7153e20282d3f56907bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d66cf5f4d8784eeee5d4f84dd4eaa3616bafa5a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811328"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922608"
 ---
 # <a name="get-directoryroletemplate"></a>Получение объекта directoryRoleTemplate
 

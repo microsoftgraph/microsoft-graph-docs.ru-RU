@@ -1,12 +1,13 @@
 ---
 title: Связывание учетной записи Office 365 с Azure AD для создания приложений и управления ими
 description: 'Для проверки подлинности приложений с помощью Microsoft Azure Active Directory необходимо зарегистрировать их в Azure AD. Именно здесь хранятся сведения об учетной записи пользователя Office 365 и приложениях. Чтобы управлять Azure Active Directory на портале Azure, необходима подписка на Microsoft Azure. Управлять пользователями, ролями и приложениями можно с помощью портала в Microsoft Azure. '
-ms.openlocfilehash: 1a0935a88d985d8be72197c2652586bbbc19bd1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 815cc80fa8d25f52ac05a1bf80f9e9dfa89b9b4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092647"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880159"
 ---
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>Связывание учетной записи Office 365 с Azure AD для создания приложений и управления ими
 

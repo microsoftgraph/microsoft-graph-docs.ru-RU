@@ -2,12 +2,13 @@
 title: 'Разбиение данных Microsoft Graph по страницам в приложении '
 description: 'свойство odata.nextLink в ответе, содержащем URL-адрес следующей страницы результатов. '
 author: piotrci
-ms.openlocfilehash: b5c6c6adafde4d1cce4135af1b1bb23d068aab27
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 6a19d1873057f5a6f6ea1749a6941389b9be8eb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830662"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Разбиение данных Microsoft Graph по страницам в приложении 
 

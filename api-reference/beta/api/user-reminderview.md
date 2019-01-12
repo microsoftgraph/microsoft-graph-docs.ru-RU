@@ -3,12 +3,13 @@ title: 'user: reminderView'
 description: 'Возвращает список напоминаний календаря за указанный период времени. '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 4edcc4a6a46cbdee1233ad7496fa231bba8bfd27
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3fb0283aaae4f814f06b59a8a6ad6183cc18fec1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918212"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -65,7 +66,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

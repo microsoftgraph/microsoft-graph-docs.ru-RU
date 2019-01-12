@@ -2,12 +2,14 @@
 title: Работа с Microsoft Teams при помощи API Microsoft Graph
 description: Группами Майкрософт — это рабочая область на основе чата в Office 365, который предоставляет встроенные доступ к календарей конкретных групп, файлы, заметки OneNote, планировщик работы планы и др.
 localization_priority: Priority
-ms.openlocfilehash: 1e46bb3c31b30ec8ef776c4377bd391355abd50d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8b14d975c1d1f58fd9c4724428b4800c567a5606
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868679"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924526"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 

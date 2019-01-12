@@ -3,12 +3,13 @@ title: Создание importedWindowsAutopilotDeviceIdentityUpload
 description: Создание нового объекта importedWindowsAutopilotDeviceIdentityUpload.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 31c9aed97f5b0b4505e348db85db798fa9fa9bd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 414191348a6654e59a81c8e46c48bb3e7728a303
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913892"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>Создание importedWindowsAutopilotDeviceIdentityUpload
 

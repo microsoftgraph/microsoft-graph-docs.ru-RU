@@ -1,12 +1,13 @@
 ---
 title: Работа с действиями, выполняющимися длительное время (бета-версия)
 description: В этой статье описаны принципы работы с действиями, выполняющимися длительное время.
-ms.openlocfilehash: 73e00efd88b2656cc842c3c46f8a2241315ba184
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7ee9631e9e18ae1972e2b156366c66d3d3dd455
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868056"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Работа с действиями, выполняющимися длительное время (бета-версия)
 

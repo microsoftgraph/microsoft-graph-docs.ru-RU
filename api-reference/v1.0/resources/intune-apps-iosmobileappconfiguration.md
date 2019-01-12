@@ -2,12 +2,14 @@
 title: тип ресурса iosMobileAppConfiguration
 description: Содержит свойства, унаследованные свойства и действия для конфигураций мобильного приложения для iOS.
 localization_priority: Normal
-ms.openlocfilehash: ad2d701da1100a1ca1044efe89058aef7e1f874c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: aff33ae97d883e2fcd238d54b1a66ff0dd6e8b90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840931"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925961"
 ---
 # <a name="iosmobileappconfiguration-resource-type"></a>тип ресурса iosMobileAppConfiguration
 

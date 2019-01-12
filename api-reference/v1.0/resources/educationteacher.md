@@ -3,12 +3,13 @@ title: Тип ресурса educationTeacher
 description: Дополнительные сведения, добавляемые в объект educationUser, который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 612e319699bac9bbb5776f7692d6d6f3b7da3867
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: b58d74e6b53b1721a5139d050c7e89197b8721be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849527"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929559"
 ---
 # <a name="educationteacher-resource-type"></a>Тип ресурса educationTeacher
 

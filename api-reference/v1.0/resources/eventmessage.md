@@ -2,12 +2,14 @@
 title: Тип ресурса eventMessage
 description: Сообщение, которое представляет собой приглашение на собрание, уведомление об отмене или ответ (принятие, предварительное принятие или отклонение).
 localization_priority: Normal
-ms.openlocfilehash: 83a7c0fa48f48536b468afe5f5e4f22031be50e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: e6effa3f97b0625786ec999f1b478c3dd8530f52
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862750"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917729"
 ---
 # <a name="eventmessage-resource-type"></a>Тип ресурса eventMessage
 

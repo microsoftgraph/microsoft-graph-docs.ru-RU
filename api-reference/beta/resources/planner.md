@@ -2,12 +2,14 @@
 title: Тип ресурса planner
 description: Ресурс **planner** — это точка входа для объектной модели Планировщика. Он возвращает одноэлементный ресурс **planner**.  Он не содержит свойства, которые можно использовать.
 localization_priority: Normal
-ms.openlocfilehash: 9dc6904da25d7612b94649264001dcae98859925
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: cf2877d5f413f3e54e1e0e750da1f22d6f9ffd95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889098"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925184"
 ---
 # <a name="planner-resource-type"></a>Тип ресурса planner
 

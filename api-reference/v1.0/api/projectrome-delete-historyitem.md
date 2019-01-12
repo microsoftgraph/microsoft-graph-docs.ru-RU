@@ -2,12 +2,13 @@
 title: Удаление historyItem
 description: Удаление существующего элемента журнала для существующего действия пользователя.
 localization_priority: Normal
-ms.openlocfilehash: 3476aba19a2de09f5b4c168ab2a4075b74fd2a93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 4814987367b7b9a278c645dbdca8fb5e795ce784
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861924"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923938"
 ---
 # <a name="delete-a-historyitem"></a>Удаление historyItem
 

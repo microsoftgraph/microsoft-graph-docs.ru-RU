@@ -3,12 +3,13 @@ title: Тип ресурса intuneBrand
 description: Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c6db973dd24490ae33b5e50e619ff28cd35e8157
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ec1db08ee3e6d6a669078800f2fab69950db14e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857367"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917708"
 ---
 # <a name="intunebrand-resource-type"></a>Тип ресурса intuneBrand
 

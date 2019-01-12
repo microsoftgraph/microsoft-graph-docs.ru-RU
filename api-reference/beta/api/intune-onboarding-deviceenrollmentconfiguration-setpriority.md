@@ -3,12 +3,13 @@ title: Действие setPriority
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 44232f48465b8dd57312d506ff7fad947b808f30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d7d91a806a9547a0649d9d17cfc8807fa29a55e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821758"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921355"
 ---
 # <a name="setpriority-action"></a>Действие setPriority
 

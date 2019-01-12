@@ -3,12 +3,13 @@ title: Get windows10TeamGeneralConfiguration
 description: Чтение свойств и связей объекта windows10TeamGeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f9f50627d58850c8945f852517503c1ac5823f57
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1744145366cd253b9ea432352867f0d9225563d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862743"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913109"
 ---
 # <a name="get-windows10teamgeneralconfiguration"></a>Get windows10TeamGeneralConfiguration
 

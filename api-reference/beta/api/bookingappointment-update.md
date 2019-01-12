@@ -2,12 +2,14 @@
 title: Обновление bookingappointment
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: baedaf0e894dfdda96c43ff9dc0cb47ce796db9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: c36f7033cb9a8f884436b4315399c794516a93ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809683"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917260"
 ---
 # <a name="update-bookingappointment"></a>Обновление bookingappointment
 

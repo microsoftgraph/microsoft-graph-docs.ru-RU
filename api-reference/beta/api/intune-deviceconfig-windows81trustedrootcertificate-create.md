@@ -3,12 +3,13 @@ title: Создание windows81TrustedRootCertificate
 description: Создание нового объекта windows81TrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a4c69d1b0bdb23da7cd100f0b213eab0a63b1baa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 99a549f23b9aca36b1061c7ce349b26034ebb869
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837165"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920767"
 ---
 # <a name="create-windows81trustedrootcertificate"></a>Создание windows81TrustedRootCertificate
 

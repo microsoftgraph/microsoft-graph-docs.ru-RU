@@ -2,12 +2,14 @@
 title: Запуск синхронизации после загрузки файлов educationSynchronizationProfile
 description: Проверьте файлы, отправленные в конкретных школа профиль синхронизации данных клиента. Если проверка выполнена успешно, в профиле будет запустить синхронизацию. В противном случае ответ будет содержать ошибки и предупреждения. Если ответ содержит ошибки, не запустится синхронизации. Если ответ содержит только предупреждения, будет запущен процесс синхронизации.
 localization_priority: Normal
-ms.openlocfilehash: 465ab6a807fc6af10067d048459c440c7c567361
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: efdc0863a1de58f7ebf46492b662e632972275c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866740"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915251"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Запуск синхронизации после загрузки файлов educationSynchronizationProfile
 

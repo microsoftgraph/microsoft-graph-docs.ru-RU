@@ -3,12 +3,13 @@ title: 'Table: TotalRowRange'
 description: Получает объект диапазона, связанный со строкой итогов таблицы.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0da7935ca7c6b2747c8c8bad41154730f485fe95
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 8e0294b778edf9c8b077cffeb5a5c3349b5abb93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872214"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923791"
 ---
 # <a name="table-totalrowrange"></a>Table: TotalRowRange
 

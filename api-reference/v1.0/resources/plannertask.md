@@ -2,12 +2,14 @@
 title: Тип ресурса plannerTask
 description: Ресурс **plannerTask** представляет задачу планировщика в Office 365. Задача планировщика содержится в плане и может быть назначена сегменту в плане. Каждый объект задачи имеет объект details, который может содержать дополнительные сведения о задаче. Дополнительные сведения об отношениях между группой, планом и задачей см. в этом обзоре.
 localization_priority: Priority
-ms.openlocfilehash: a4c9ffc9c3bcd3e4a7b9df3348cdfe355a648a8d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 3a90dcdc2cbad09355619c1afe1ff3200181fb39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832258"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917589"
 ---
 # <a name="plannertask-resource-type"></a>Тип ресурса plannerTask
 

@@ -3,12 +3,13 @@ title: Тип ресурса teamsUserActivityUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 8a48a80992d8370a3b6b198862a3af901737fa04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: bcb69c09d621ce3cce006fd9130afa0a70e4cdb8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836661"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912822"
 ---
 # <a name="teamsuseractivityusercounts-resource-type"></a>Тип ресурса teamsUserActivityUserCounts
 

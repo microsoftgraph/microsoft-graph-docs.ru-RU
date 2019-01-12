@@ -1,12 +1,13 @@
 ---
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти национальные версии представляют собой изолированные в логических сетях физические экземпляры корпоративных облачных служб Майкрософт, которые находятся в географических границах определенных стран и обслуживаются местным персоналом. Дополнительные сведения см. в статье "Национальные облака Майкрософт".
-ms.openlocfilehash: b0f2ab257773faa14fe59566992bb1ed0dd77959
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b22fce675bc97d0f22833d89dab01afd18e06032
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840420"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 

@@ -2,12 +2,13 @@
 title: Обзор API OneNote
 description: OneNote — это цифровая записная книжка, с помощью которой клиенты могут записывать и отслеживать свои идеи и заметки для дома, учебы и работы, вводя данные, рисуя или диктуя текст в Интернете, на телефоне, планшете или настольном компьютере. Они могут свободно упорядочивать заметки, переключаться между устройствами и продолжать работу с места, на котором они закончили ее в прошлый раз. Кроме того, они могут работать над заметками вместе с другими пользователями в режиме реального времени.
 author: Jewan-microsoft
-ms.openlocfilehash: aa4f102d0e3db455fe41801b852bcc68d12f26ab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: a3ca57e9bac52613fbe884368f79b31b5b5165e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825720"
 ---
 # <a name="onenote-api-overview"></a>Обзор API OneNote
 

@@ -3,12 +3,13 @@ title: Тип ресурса resetPasscodeActionResult
 description: Результат сброса секретного кода
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 81a30b36ac418d5553c7387fea22a172926a73ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e526370ca86792ed30a5f5e24a4be244d73441b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824859"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920844"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>Тип ресурса resetPasscodeActionResult
 

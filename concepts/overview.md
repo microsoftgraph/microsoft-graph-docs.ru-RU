@@ -2,12 +2,13 @@
 title: Обзор Microsoft Graph
 description: Microsoft Graph открывает доступ к данным и средствам искусственного интеллекта в Microsoft 365. С помощью единой модели программируемости Microsoft Graph можно работать с колоссальным объемом данных в Office 365, Enterprise Mobility + Security и Windows 10.
 author: jthake-msft
-ms.openlocfilehash: 754580e0f5a6af628a2bf18c11a0a20d3c2d1329
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d4cb238090abd5b8b78f5589b36db75ef090506f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879914"
 ---
 # <a name="overview-of-microsoft-graph"></a>Обзор Microsoft Graph
 
@@ -46,8 +47,7 @@ Microsoft Graph подключает все ресурсы в этих служ�
 
 Все это и многое другое возможно с API Microsoft Graph.
 
->
-  **Примечание.** Используя API Microsoft Graph, вы соглашаетесь с [условиями использования Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use) и [заявлением Майкрософт о конфиденциальности](https://go.microsoft.com/fwlink/?LinkId=521839).
+>**Примечание.** Используя API Microsoft Graph, вы соглашаетесь с [условиями использования Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use) и [заявлением Майкрософт о конфиденциальности](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ### <a name="popular-requests"></a>Популярные запросы
 

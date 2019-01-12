@@ -2,12 +2,14 @@
 title: Update androidLobApp
 description: Обновление свойств объекта androidLobApp.
 author: tfitzmac
-ms.openlocfilehash: 520574fe1ae3fbc2d529839bd16683d7906ccc09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 81479b93cd24ec0597c55ccf53692af16b63de94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356464"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925975"
 ---
 # <a name="update-androidlobapp"></a>Update androidLobApp
 
@@ -39,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

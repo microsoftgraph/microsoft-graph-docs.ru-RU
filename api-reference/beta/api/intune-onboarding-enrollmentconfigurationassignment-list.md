@@ -3,12 +3,13 @@ title: Список объектов enrollmentConfigurationAssignment
 description: Список свойств и связей объектов enrollmentConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8691d2b05e7fe618c5ed7d3d4fd6ea314467e7fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1b60c1e67ea4a294b130ab93dc443b11d8a169aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849653"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920333"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>Список объектов enrollmentConfigurationAssignment
 

@@ -2,12 +2,14 @@
 title: Тип ресурса plannerOrderHintsByAssignee
 description: '**PlannerOrderHintsByAssignee** — это ресурс, который содержит упорядочения ссылки assignees в plannerTask ресурсов, чтобы указать порядок задач в представлении назначено панели задач.'
 localization_priority: Normal
-ms.openlocfilehash: cdc254eab43972d321e01e646880b3087f3af6f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: f678317d4ace4a86c4606668277c17c0bc547c8d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863947"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925191"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>Тип ресурса plannerOrderHintsByAssignee
 

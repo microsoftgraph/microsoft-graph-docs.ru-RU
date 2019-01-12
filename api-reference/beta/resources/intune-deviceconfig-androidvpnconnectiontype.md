@@ -3,12 +3,13 @@ title: Тип перечисления androidVpnConnectionType
 description: Android тип подключения через VPN.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4ecd0db2a6e4d916b6ad5d2244b43990c99a4c4e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 01dee5d50564d712dab436d6570aad1bb08f7519
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809991"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928753"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>Тип перечисления androidVpnConnectionType
 

@@ -3,12 +3,13 @@ title: Создание windowsWifiConfiguration
 description: Создание нового объекта windowsWifiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1dcb2254c5f73f3e223d2d36d6911ab33f07bb3b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f0e2a12b502ef5aea92ebcc011f2006efbe210fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826420"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914467"
 ---
 # <a name="create-windowswificonfiguration"></a>Создание windowsWifiConfiguration
 

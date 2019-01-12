@@ -3,12 +3,13 @@ title: Получение windowsManagementApp
 description: Чтение свойства и связи объекта windowsManagementApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0af5c7636ae0e9aae671d68815b030211dfc5840
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e3db561767619befe3b99fd8993e5f8e0a0c7576
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849632"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913818"
 ---
 # <a name="get-windowsmanagementapp"></a>Получение windowsManagementApp
 
