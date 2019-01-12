@@ -3,12 +3,13 @@ title: Тип ресурса windowsKioskUWPApp
 description: Базовый класс для типов приложений
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8f456841962b399a1e9687017a0a8eaeb07a4ba7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8719fdd248276a657b96235c592f1bb62607b856
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871864"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934914"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>Тип ресурса windowsKioskUWPApp
 
@@ -24,10 +25,10 @@ ms.locfileid: "27871864"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитку приложение для макета Пуск унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|Строка|Представляет понятное имя приложения унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appUserModelId|Строка|Это единственный идентификатор модели приложения пользователя (AUMID), чтобы оно было доступно для использования в полноэкранном режиме запуска|
+|name|String|Представляет понятное имя приложения унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|appUserModelId|String|Это единственный идентификатор модели приложения пользователя (AUMID), чтобы оно было доступно для использования в полноэкранном режиме запуска|
 |appId|String|Это ссылается на Intune приложения, который будет целевой для те же назначения как базовой конфигурации|
-|containedAppId|Строка|Это ссылается автономные приложения из приложения для Intune|
+|containedAppId|String|Это ссылается автономные приложения из приложения для Intune|
 
 ## <a name="relationships"></a>Связи
 Нет

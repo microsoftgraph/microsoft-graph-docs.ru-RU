@@ -3,12 +3,13 @@ title: Тип ресурса deviceConfigurationGroupAssignment
 description: Назначение группы конфигурации устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b670ffd828634e244053b8a83e5f1f05f79ebbe1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 53e998044760dba40f40f3658b141d8aa05d7082
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883981"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943118"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>Тип ресурса deviceConfigurationGroupAssignment
 
@@ -29,9 +30,9 @@ ms.locfileid: "27883981"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|targetGroupId|Строка|Идентификатор группы AAD мы ориентация для настройки устройств.|
-|excludeGroup|Логический|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
+|id|String|Ключ объекта.|
+|targetGroupId|String|Идентификатор группы AAD мы ориентация для настройки устройств.|
+|excludeGroup|Boolean|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

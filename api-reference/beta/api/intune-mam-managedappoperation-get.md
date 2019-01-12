@@ -3,12 +3,13 @@ title: Get managedAppOperation
 description: Чтение свойств и связей объекта managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f694c61ed7ea52ad5a5afb38f6c66d8e85aa48a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a6b54b7ec891d97bbcc9bab3e9c162114b78529d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807058"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944392"
 ---
 # <a name="get-managedappoperation"></a>Get managedAppOperation
 
@@ -57,7 +58,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/oper
 GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

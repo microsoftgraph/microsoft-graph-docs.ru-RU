@@ -3,12 +3,13 @@ title: Удаление цепочки беседы
 description: Удаление объекта thread.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: ce9be63bc3bc90986886e9b2c49be7cf5e21a50e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 24e779b528391e82f452f7bbe3153e39a3975b93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810789"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946758"
 ---
 # <a name="delete-conversation-thread"></a>Удаление цепочки беседы
 Удаление объекта [thread](../resources/conversationthread.md).
@@ -31,7 +32,7 @@ DELETE /groups/{id}/threads/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

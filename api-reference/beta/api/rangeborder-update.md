@@ -3,12 +3,13 @@ title: Обновление объекта RangeBorder
 description: Обновление свойств объекта rangeborder.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 99db19208242ae25c94c081b4e43f9f8caa47e67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: ac989724f0e950a079479c8285cea64e2e24a8fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877058"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933780"
 ---
 # <a name="update-rangeborder"></a>Обновление объекта RangeBorder
 
@@ -44,7 +45,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideInd
 |:---------------|:--------|:----------|
 |color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
 |style|строка|Одна из констант типа линии, определяющая тип линии границы. Возможные значения: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
-|weight|string|Определяет толщину границы вокруг диапазона. Возможные значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
+|weight|строка|Определяет толщину границы вокруг диапазона. Возможные значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## <a name="response"></a>Отклик
 
@@ -68,7 +69,7 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

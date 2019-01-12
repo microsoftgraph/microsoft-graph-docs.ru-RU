@@ -3,12 +3,13 @@ title: Список опубликованных приложений из ка�
 description: 'Список приложений из каталога приложений группами Майкрософт. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 494bc371f88cd15a7c96ff0c145e6593c0716b5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fc8648ac99a3b502956ce07d5c5b53bab930095e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887067"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945589"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Список опубликованных приложений из каталога приложений группами Майкрософт
 
@@ -48,7 +49,7 @@ GET /appCatalogs/teamsApps
 
 >**Примечание:** Можно отфильтровать поля объекта [teamsCatalogApp](../resources/teamsapp.md) для сокращения списка результатов. Можно использовать любой из следующих операций фильтра: равно, не равно и, или, а не.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и список объектов [teamsCatalogApp](../resources/teamsapp.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
@@ -60,7 +61,7 @@ GET /appCatalogs/teamsApps
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -87,7 +88,7 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -3,12 +3,13 @@ title: Список TableColumnCollection
 description: Получение списка объектов tablecolumn.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 14d1dd6e387dfc877638b811d7050edeffc4d3af
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9ce078d8f36b8d9843fd2f871f32f8384ec1e7ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867755"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947049"
 ---
 # <a name="list-tablecolumncollection"></a>Список TableColumnCollection
 
@@ -40,7 +41,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [WorkbookTableColumn](../resources/tablecolumn.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -53,7 +54,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

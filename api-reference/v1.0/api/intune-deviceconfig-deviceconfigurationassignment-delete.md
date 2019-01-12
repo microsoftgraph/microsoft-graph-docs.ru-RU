@@ -3,12 +3,13 @@ title: Delete deviceConfigurationAssignment
 description: Удаляет объект deviceConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: efb420b3e53e801344ac65de16b9ef43caca2b2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5f5814e4baa8cb7a17e68c9e46687b3974f36463
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839321"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937021"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>Delete deviceConfigurationAssignment
 
@@ -43,7 +44,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignment
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -53,7 +54,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignment
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

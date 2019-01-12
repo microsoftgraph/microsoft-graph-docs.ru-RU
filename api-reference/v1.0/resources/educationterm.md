@@ -3,12 +3,13 @@ title: Тип ресурса educationTerm
 description: Срок. Представляет определенную часть учебного года. Используется в educationClass.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: af11aa6b4a110417152c76dd606245a18ad51c28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 9c26565b552471fe2601d8e3cb629fd933d72937
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851452"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947584"
 ---
 # <a name="educationterm-resource-type"></a>Тип ресурса educationTerm
 

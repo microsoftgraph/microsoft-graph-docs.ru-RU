@@ -3,12 +3,13 @@ title: 'mailFolder: copy'
 description: Копирование папки почты со всем ее содержимым в другую папку почты.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 94470a21a1a640f4333419620e79eaf7b8d1130b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 37160f5b6f62ce29d605e84a93a7748f426bd240
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844095"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940738"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -72,7 +73,7 @@ Content-length: 44
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

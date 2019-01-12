@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: site
 localization_priority: Priority
-ms.openlocfilehash: bdb8387c49e76e3f326cffe595397e6277d40738
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: cd0631d8426dffa6ea731fabe024a1028e080f1c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821100"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937014"
 ---
 # <a name="site-resource"></a>Ресурс site
 
@@ -90,7 +91,7 @@ ms.locfileid: "27821100"
 | **createdDateTime**      | DateTimeOffset                      | Дата и время создания элемента. Только для чтения.                                             |
 | **description**          | строка                              | Текст с описанием сайта.                                                             |
 | **displayName**          | строка                              | Полное название сайта. Только для чтения.                                                        |
-| **eTag**;                 | string                              | ETag для элемента. Только для чтения.                                                                  |
+| **eTag**;                 | строка                              | ETag для элемента. Только для чтения.                                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | Дата и время последнего изменения элемента. Только для чтения.                                       |
 | **name**                 | строка                              | Имя или название элемента.                                                                  |
 | **root**                 | [root](root.md)                     | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.            |

@@ -3,12 +3,13 @@ title: Тип ресурса cartToClassAssociation
 description: CartToClassAssociation для связывания устройства корзины с помощью аудиторий.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 02a7d04b40d4d984f98f04eb653ee45ed436d099
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 38d9b940dd3e7a5450854f29ba69b2eac69e2a45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868035"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943937"
 ---
 # <a name="carttoclassassociation-resource-type"></a>Тип ресурса cartToClassAssociation
 
@@ -29,12 +30,12 @@ CartToClassAssociation для связывания устройства корз
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |version|Int32|Версия CartToClassAssociation.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
-|описание|Строка|Admin, предоставляемые описание CartToClassAssociation.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
+|описание|String|Admin, предоставляемые описание CartToClassAssociation.|
 |deviceCartIds|Коллекция String|Идентификаторы корзины устройства необходимо сопоставить с классы.|
 |classroomIds|Коллекция String|Идентификаторы аудиторий необходимо сопоставить с устройства корзины.|
 

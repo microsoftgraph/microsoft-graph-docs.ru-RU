@@ -2,12 +2,14 @@
 title: 'message: delta'
 description: Получение списка сообщений, которые были добавлены в указанную папку, обновлены в ней или удалены из нее.
 localization_priority: Priority
-ms.openlocfilehash: b0e5e5a295d7be92e1d4d45f2e079493f1633a45
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 180d2378c52e5f01fa9b99d05fa783a8be2f9417
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936783"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -52,7 +54,7 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type  | строка  | application/json. Обязательный. |
 | Prefer | строка  | odata.maxpagesize={x}. Необязательный параметр. |
 

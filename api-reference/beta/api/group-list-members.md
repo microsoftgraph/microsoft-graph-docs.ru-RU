@@ -2,12 +2,14 @@
 title: Список членов группы
 description: Ознакомьтесь со списком прямое членов группы. Группы могут быть пользователи, контакты, устройств, субъектов-служб и других групп участников. Эта операция не транзитивное.
 localization_priority: Normal
-ms.openlocfilehash: af54ef994fb0f62af43bf9f9ce3cd5fe5d2b1503
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 8fd082773c1661c182801eac67738165fff48490
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854140"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936160"
 ---
 # <a name="list-group-members"></a>Список членов группы
 
@@ -39,7 +41,7 @@ GET /groups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

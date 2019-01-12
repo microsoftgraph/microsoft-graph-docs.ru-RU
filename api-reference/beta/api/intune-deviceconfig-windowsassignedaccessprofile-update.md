@@ -3,12 +3,13 @@ title: Обновление windowsAssignedAccessProfile
 description: Обновление свойства объекта windowsAssignedAccessProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4bfa70208a456d7b7d2a2d0ae524d9edd9508cab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f82a1ad5a5bdea639ec3dc24f40a3c66c4a0fe1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867048"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940381"
 ---
 # <a name="update-windowsassignedaccessprofile"></a>Обновление windowsAssignedAccessProfile
 
@@ -49,9 +50,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|Имя_профиля|Строка|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
-|showTaskBar|Логический|Этот параметр позволяет администратору задать, отображается ли панель задач.|
+|id|String|Ключ объекта.|
+|Имя_профиля|String|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
+|showTaskBar|Boolean|Этот параметр позволяет администратору задать, отображается ли панель задач.|
 |appUserModelIds|Коллекция String|Это единственный приложений для магазина Windows, чтобы оно было доступно для запуска в меню Пуск.|
 |desktopAppPaths|Коллекция String|Ниже приведены пути в настольных приложений, которые будут доступны в меню Пуск и только приложения пользователь будет иметь возможность запуска.|
 |userAccounts|Коллекция String|Учетные записи пользователей, которые будут заблокированы для этой базовой конфигурации.|
@@ -59,7 +60,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -86,7 +87,7 @@ Content-length: 297
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

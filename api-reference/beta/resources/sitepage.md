@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
-ms.openlocfilehash: d4673138106e23afedb5ff0f28d8ce72fa2797b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: a756929212dbca04f16e9e4701e34bbd8d4de28f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871493"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939240"
 ---
 # <a name="sitepage-resource"></a>sitePage ресурсов
 
@@ -87,7 +88,7 @@ ms.locfileid: "27871493"
 | Имя свойства      | Тип                       | Описание
 |:-------------------|:---------------------------|:---------------------------
 | должности.              | строка                     | Заголовок страницы.
-| pageLayout         | string                     | Имя страницы макета страницы.
+| pageLayout         | строка                     | Имя страницы макета страницы.
 | веб-части           | [веб-части][]                | Веб-частей на странице.
 
 ## <a name="authoring-metadata"></a>Создание метаданных
@@ -105,7 +106,7 @@ ms.locfileid: "27871493"
 | id                   | строка            | Уникальный идентификатор элемента. Только для чтения.
 | name                 | строка            | Имя или название элемента.
 | createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
-| eTag                 | string            | ETag для элемента. Только для чтения.
+| eTag                 | строка            | ETag для элемента. Только для чтения.
 | lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
 | lastModifiedDateTime | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
 | parentReference      | [itemReference][] | Дата и время последнего изменения элемента. Только для чтения.

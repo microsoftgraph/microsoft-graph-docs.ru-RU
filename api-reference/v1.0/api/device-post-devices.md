@@ -1,14 +1,15 @@
 ---
 title: Создание устройства
 description: Создание и регистрация нового устройства в организации.
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: e0dafeb56b6551070bc157ee53b4a9f7f6ac984e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 98ad7cd2735458a59f30a6ce00edb64015f7cf2d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811811"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946107"
 ---
 # <a name="create-device"></a>Создание устройства
 
@@ -33,7 +34,7 @@ POST /devices
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type | строка | application/json |
 
 ## <a name="request-body"></a>Текст запроса

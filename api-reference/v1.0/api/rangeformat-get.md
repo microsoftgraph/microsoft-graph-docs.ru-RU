@@ -3,12 +3,13 @@ title: Получение объекта RangeFormat
 description: Получение свойств и связей объекта rangeformat.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 123aeb715a424246f7694e5a98ae5acf1197d6dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9c3c79e2b8fc3182b05063228f02f5e4fafaba70
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846167"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936860"
 ---
 # <a name="get-rangeformat"></a>Получение объекта RangeFormat
 
@@ -41,7 +42,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [WorkbookRangeFormat](../resources/rangeformat.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -54,7 +55,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

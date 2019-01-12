@@ -3,12 +3,13 @@ title: Получение mobileAppProvisioningConfigGroupAssignment
 description: Чтение свойства и связи объекта mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a353435d8ec4ed89485de944f7552005a1befde2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5f3243869dcd18ed6b76dad19a6648b6ed124a11
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887964"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939730"
 ---
 # <a name="get-mobileappprovisioningconfiggroupassignment"></a>Получение mobileAppProvisioningConfigGroupAssignment
 
@@ -47,7 +48,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -57,7 +58,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/groupAssignments/{mobileAppProvisioningConfigGroupAssignmentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

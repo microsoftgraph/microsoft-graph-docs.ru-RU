@@ -3,12 +3,13 @@ title: Создание iosLobAppProvisioningConfiguration
 description: Создание нового объекта iosLobAppProvisioningConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7879cc256a041b960f8d4e728e19bfa5f4f0ffe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d5a39a91156ebba649a3463568517d9b55a7fdfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809102"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944763"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Создание iosLobAppProvisioningConfiguration
 
@@ -49,19 +50,19 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |expirationDateTime|DateTimeOffset|Необязательный профиль истечение срока действия Дата и время.|
 |payloadFileName|String|Имя файла полезной нагрузки (*.mobileprovision | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|описание|Строка|Указанное администратором описание конфигурации устройства.|
+|описание|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -84,7 +85,7 @@ Content-length: 377
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

@@ -3,12 +3,13 @@ title: Тип ресурса person
 description: Агрегирование сведений о человеке из почты, контактов и социальных сетей. В качестве людей могут выступать локальные контакты, контакты из социальных сетей или каталога вашей организации, а также лица, с которыми пользователь недавно общался (например, по почте или в Skype).
 author: simonhult
 localization_priority: Priority
-ms.openlocfilehash: d61d1393795408636ac8f5720e018bb4ea885cb5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: c92709143ee7def0ede98dfdb81a419df43c4493
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890995"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940297"
 ---
 # <a name="person-resource-type"></a>Тип ресурса person
 

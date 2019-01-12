@@ -3,12 +3,13 @@ title: Список azureADWindowsAutopilotDeploymentProfiles
 description: Свойства списка и связей объектов azureADWindowsAutopilotDeploymentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5436c8b787d39b476ea2a86a6c7badcd5797a958
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 369ea25a56e08f64992159aef51f86e29116d257
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887278"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942943"
 ---
 # <a name="list-azureadwindowsautopilotdeploymentprofiles"></a>Список azureADWindowsAutopilotDeploymentProfiles
 
@@ -45,7 +46,7 @@ GET /deviceManagement/windowsAutopilotDeploymentProfiles
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [azureADWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-azureadwindowsautopilotdeploymentprofile.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ GET /deviceManagement/windowsAutopilotDeploymentProfiles
 GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

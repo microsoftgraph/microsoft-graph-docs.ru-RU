@@ -3,12 +3,13 @@ title: Вывод группы
 description: Получение свойств и связей объекта группы.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 48bc4322326087895542ac24e23c7a57f5ddf07e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 99215af564be186edaf57563ae493f363c9cc2fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838677"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941053"
 ---
 # <a name="get-group"></a>Вывод группы
 
@@ -91,7 +92,7 @@ GET /groups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
@@ -110,7 +111,7 @@ GET /groups/{id}
 GET https://graph.microsoft.com/beta/groups/{id}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 >**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения. При фактическом вызове будут возвращены все свойства по умолчанию, как описано ранее.
 <!-- {

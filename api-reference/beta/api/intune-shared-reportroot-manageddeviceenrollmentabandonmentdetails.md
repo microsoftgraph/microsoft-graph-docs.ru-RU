@@ -3,12 +3,13 @@ title: функция managedDeviceEnrollmentAbandonmentDetails
 description: Метаданные для отчета о регистрации abandonment
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f3913bee2e3adae3932ff1ad6b036a3f96482ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e2031657c3aff7d09d126b6eff01beaf34813a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840791"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939912"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>функция managedDeviceEnrollmentAbandonmentDetails
 
@@ -51,12 +52,12 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 |:---|:---|:---|
 |skip|Int32|Н/Д|
 |top|Int32|Н/Д|
-|filter|Строка|Н/Д|
-|skipToken|Строка|Н/Д|
+|filter|String|Н/Д|
+|skipToken|String|Н/Д|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune-shared-report.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -66,7 +67,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 GET https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentAbandonmentDetails(skip=4,top=3,filter='parameterValue',skipToken='parameterValue')
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

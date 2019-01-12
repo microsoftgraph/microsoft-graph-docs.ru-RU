@@ -2,12 +2,13 @@
 title: Создание открытого расширения
 description: Создание расширения open (объект openTypeExtension) и Добавление настраиваемых свойств
 localization_priority: Normal
-ms.openlocfilehash: 363bd629b5b7c9041f36ce039403717f715e202c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 58df4ab2898abe0e49563de4b655eccacfdc91fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863037"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948571"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
@@ -17,7 +18,7 @@ ms.locfileid: "27863037"
 
 > **Примечание:** При создании open расширения Outlook ресурсов, содержатся в разделе **относящиеся к Outlook** в разделе [Тип ресурса openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 В зависимости от разрешений и ресурсов, которое вы создаете расширения в тип (делегированные или приложение) запрошенный, разрешение, указанное в следующей таблице минимальными правами требуется для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 

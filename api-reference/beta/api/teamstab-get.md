@@ -3,12 +3,13 @@ title: Получить вкладки
 description: 'Извлечение свойств и отношения между заданной вкладки. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: f08853cb1969427bfbabac8bd5e6e446b1142ffe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: c9aa65401681797723aeda00ea0fde6a7c5bee08
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864948"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944077"
 ---
 # <a name="get-tab"></a>Получить вкладки
 
@@ -44,7 +45,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [tab](../resources/teamstab.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -53,7 +54,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

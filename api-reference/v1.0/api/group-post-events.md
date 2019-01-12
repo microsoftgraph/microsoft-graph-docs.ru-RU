@@ -3,12 +3,13 @@ title: Создание объекта event
 description: С помощью этого API можно создать событие.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 5dcd32f122441d4005c7b753142cf6060630e1b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 1d264ec205d8f94027a8121253819c2613d1f4d6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875525"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941123"
 ---
 # <a name="create-event"></a>Создание объекта event
 С помощью этого API можно создать [событие](../resources/event.md).
@@ -37,7 +38,7 @@ POST /groups/{id}/calendar/events
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -66,7 +67,7 @@ Content-length: 285
 ```
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

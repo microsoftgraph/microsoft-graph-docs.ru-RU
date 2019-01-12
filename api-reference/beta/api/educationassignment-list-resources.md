@@ -3,12 +3,13 @@ title: Список educationAssignmentResources
 description: Получите все ресурсы, связанные с этим назначением.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 650d731883a7cde8bc05ec50889be472bb0967a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 0fa0a5b46d7f40b1d1e8b6d265b12f84384e2c50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823893"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936202"
 ---
 # <a name="list-educationassignmentresources"></a>Список educationAssignmentResources
 
@@ -40,7 +41,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationAssignmentResource](../resources/educationassignmentresource.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -52,7 +53,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/resources
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

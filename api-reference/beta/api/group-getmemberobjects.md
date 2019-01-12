@@ -2,12 +2,14 @@
 title: 'group: getMemberObjects'
 description: 'Возвращает все группы и административных единиц измерения, которые должна быть членом группы. Проверка доверия транзитивных. Примечание: Группы не может быть члены роли каталога, поэтому роли не каталог не возвращается.'
 localization_priority: Normal
-ms.openlocfilehash: 72d9bc23fa5499ebf1f43d8baee9c9562a57c645
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: a83987a15f384cf17e268a8bdbd6791164484f7e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838110"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935929"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -33,7 +35,7 @@ POST /groups/{id}/getMemberObjects
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -62,7 +64,7 @@ Content-length: 33
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

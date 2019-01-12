@@ -2,12 +2,14 @@
 title: Обновление orgcontact
 description: Обновление свойства объекта orgcontact.
 localization_priority: Normal
-ms.openlocfilehash: f48795bef6ea1a4833379f54747cbf2c291b2454
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2f7943234dbff62da070b51a3ae6d92d2bdb28d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859068"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938820"
 ---
 # <a name="update-orgcontact"></a>Обновление orgcontact
 
@@ -31,7 +33,7 @@ PATCH /contacts/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -42,7 +44,7 @@ PATCH /contacts/{id}
 |country|String||
 |department|String||
 |onPremisesSyncEnabled|Boolean||
-|displayName|Строка||
+|displayName|String||
 |givenName|String||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
@@ -52,12 +54,12 @@ PATCH /contacts/{id}
 |officeLocation|String||
 |postalCode|String||
 |proxyAddresses|String||
-|state|Строка||
+|state|String||
 |streetAddress|String||
 |surname|String||
 |businessPhones|String||
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [orgContact](../resources/orgcontact.md) объект в теле ответа.
 ## <a name="example"></a>Пример
@@ -83,7 +85,7 @@ Content-length: 222
   "displayName": "displayName-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

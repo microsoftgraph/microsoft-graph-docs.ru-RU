@@ -2,12 +2,14 @@
 title: assignLicense
 description: Добавление или удаление лицензии пользователя для включения или отключения их использования Microsoft облака. К примеру организация может иметь подписки на Office 365 для предприятий E3 со 100 лицензий и этого запроса назначает один из этих лицензий для определенного пользователя. Также можно включить и отключить определенные планы, связанных с подпиской. Для получения дополнительных сведений о подписках и лицензий, см в этой статье Technet.
 localization_priority: Normal
-ms.openlocfilehash: 71287b47a0a42ce4f89635fe6a1769c78874ae36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 82347f46855baa91b5a42452cdbacc914bc89cdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876204"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933794"
 ---
 # <a name="assignlicense"></a>assignLicense
 

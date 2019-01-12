@@ -2,12 +2,14 @@
 title: Тип ресурса educationClass
 description: 'Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Office 365, для него используется тот же идентификатор. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Чтобы решения для Office работали правильно, преподаватели должны быть включены как в коллекцию teachers, так и в коллекцию members.  '
 localization_priority: Normal
-ms.openlocfilehash: 97cf3b63cfb25a4c50df03c9c10212bd774c8b61
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: c5b145d12dd99293eef9c338ff840d5781c5ef3f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831848"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933990"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 

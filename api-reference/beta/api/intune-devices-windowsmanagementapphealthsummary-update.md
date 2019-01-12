@@ -3,12 +3,13 @@ title: Обновление windowsManagementAppHealthSummary
 description: Обновление свойства объекта windowsManagementAppHealthSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 068e99b09d2204c3e33955a2407e9bbac3ff31b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9c3e60a3fe75e805e6513f3007e214dde904c0bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887194"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940920"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>Обновление windowsManagementAppHealthSummary
 
@@ -49,7 +50,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ сущности сводки работоспособности приложения управления, Windows.|
+|id|String|Ключ сущности сводки работоспособности приложения управления, Windows.|
 |healthyDeviceCount|Int32|Счетчик работоспособном устройства.|
 |unhealthyDeviceCount|Int32|Счетчик неработоспособные устройства.|
 |unknownDeviceCount|Int32|Счетчик неизвестные устройства.|

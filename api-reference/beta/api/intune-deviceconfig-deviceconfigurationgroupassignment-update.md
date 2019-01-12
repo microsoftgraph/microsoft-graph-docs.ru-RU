@@ -3,12 +3,13 @@ title: Обновление deviceConfigurationGroupAssignment
 description: Обновление свойства объекта deviceConfigurationGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4742cfb5fb61b94eda6b299927160d0e51f6ab98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 632ade6d8c2fdb2cfb859c3b480606547d9b0ead
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822992"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938519"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Обновление deviceConfigurationGroupAssignment
 
@@ -57,13 +58,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|targetGroupId|Строка|Идентификатор группы AAD мы ориентация для настройки устройств.|
-|excludeGroup|Логический|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
+|id|String|Ключ объекта.|
+|targetGroupId|String|Идентификатор группы AAD мы ориентация для настройки устройств.|
+|excludeGroup|Boolean|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -80,7 +81,7 @@ Content-length: 73
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

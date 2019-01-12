@@ -2,12 +2,14 @@
 title: Остановка accessReview
 description: В Azure AD access дается обзор компонента, Остановка текущего активного accessReview.  Конечный объект может быть review однократного доступа или экземпляр повторяющейся проверки доступа.  (Чтобы предотвратить запуск будущих экземпляры повторяющихся проверки доступа, обновите его, чтобы изменить его дату окончания).  После обеспечения доступа просмотрите останавливается, рецензентов больше не могут предоставить входные данные и решения проверки доступа можно применить.
 localization_priority: Normal
-ms.openlocfilehash: 57c0473b58b8ca4bbbb4e9f182b7da4582af4c38
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8d71796272cf9852683688a47f3d78eebd849357
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860118"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941466"
 ---
 # <a name="stop-accessreview"></a>Остановка accessReview
 
@@ -31,7 +33,7 @@ POST /accessReviews('<id>')/stop()
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный. |
+| Authorization | строка | Носителя \{маркеров\}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

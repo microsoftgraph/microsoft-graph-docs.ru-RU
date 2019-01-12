@@ -3,12 +3,13 @@ title: Добавить участника
 description: Используйте этот интерфейс API для добавления элемента (пользователя или группы) для административного подразделения.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 222621b37e545a6f2f9dcb9b248bee3cfd6970c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f64ca4c00265903fa1b4ebc467f2d70274628078
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946828"
 ---
 # <a name="add-a-member"></a>Добавить участника
 
@@ -61,7 +62,7 @@ Content-length: 109
 ```
 В тексте запроса укажите представление JSON `id` объекта [пользователя](../resources/user.md) или [группы](../resources/group.md) , необходимо добавить.
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
  
 ```http

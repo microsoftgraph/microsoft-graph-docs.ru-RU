@@ -3,12 +3,13 @@ title: Получение deviceManagementScriptGroupAssignment
 description: Чтение свойства и связи объекта deviceManagementScriptGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b5ed43b70b80c9924c4443fd33a69c6c225fdceb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 86cd64b1faacb90c3c9480b9c724a4dd7cd2d282
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809361"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941095"
 ---
 # <a name="get-devicemanagementscriptgroupassignment"></a>Получение deviceManagementScriptGroupAssignment
 
@@ -47,7 +48,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -57,7 +58,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

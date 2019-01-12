@@ -3,12 +3,13 @@ title: Тип ресурса mobileApp
 description: Абстрактный класс, содержащий базовые свойства мобильных приложений Intune.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 01bde6a94c0d16b26b20d1ba30e69bec0457972e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c5b7af252c27f60a1b6dd78f7a69bc7a712541b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812539"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938456"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -29,7 +30,7 @@ ms.locfileid: "27812539"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |displayName|String|Администратор предоставил или импортировал название приложения.|
 |описание|String|Описание приложения.|
 |publisher|String|Издатель приложения.|

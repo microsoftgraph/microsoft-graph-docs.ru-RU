@@ -2,12 +2,14 @@
 title: 'RangeFormat: autofitColumns'
 description: Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.
 localization_priority: Normal
-ms.openlocfilehash: 024475e606b6a94136e42eaa5dd2f32fcaf06b21
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: e5530f0f4ce5f1896b8515c529b5c3bb39a8293b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872760"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933703"
 ---
 # <a name="rangeformat-autofitcolumns"></a>RangeFormat: autofitColumns
 

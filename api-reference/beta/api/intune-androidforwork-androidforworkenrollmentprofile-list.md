@@ -3,12 +3,13 @@ title: Перечисление объектов androidForWorkEnrollmentProfile
 description: Список свойств и связей объектов androidForWorkEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef83136793b21b25827e4b9f16aeeff0a3a7464a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 818aca336f5c0998ccbb819c32a989fb28923ed9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813127"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936608"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Перечисление объектов androidForWorkEnrollmentProfile
 
@@ -55,7 +56,7 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 GET https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentProfiles
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

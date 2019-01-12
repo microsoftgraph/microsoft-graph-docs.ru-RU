@@ -2,12 +2,14 @@
 title: 'пользователь: findRooms'
 description: 'Получение всех комнатах для собраний в клиент пользователя или в списке конкретных комнаты. '
 localization_priority: Priority
-ms.openlocfilehash: 12ddd4c6956d743322ff86c93c5d445f6966e29a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0be6034056b20473b65e9a04c70419b3e4e1ba95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845418"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934011"
 ---
 # <a name="user-findrooms"></a>пользователь: findRooms
 
@@ -49,19 +51,19 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 | Параметр запроса       | Тип | Описание |
 |:---------------|:----------|:----------|
-| RoomList | string | SMTP-адрес, связанный с список помещений. Каждый список помещений представляется экземпляром [emailAddress](../resources/emailaddress.md) , которое включает в себя SMTP-адрес. |
+| RoomList | строка | SMTP-адрес, связанный с список помещений. Каждый список помещений представляется экземпляром [emailAddress](../resources/emailaddress.md) , которое включает в себя SMTP-адрес. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type  | строка  | application/json. Обязательный. |
 
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` кода и [emailAddress](../resources/emailaddress.md) коллекции объект ответа в теле ответа.
 

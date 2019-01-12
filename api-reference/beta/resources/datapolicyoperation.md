@@ -2,12 +2,14 @@
 title: Тип ресурса dataPolicyOperation
 description: Представляет операцию политики отправленных данных. Он содержит сведения, необходимые для отслеживания состояния операции. Например администратор компании запрос данных политики операции экспорта данных сотрудника компании и затем отслеживать этот запрос.
 localization_priority: Normal
-ms.openlocfilehash: b56cfe766bbfcae9339805dd61ce816e372d02f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876008"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938750"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Тип ресурса dataPolicyOperation
 
@@ -26,9 +28,9 @@ ms.locfileid: "27876008"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Представляет, когда запрос для этой операции политики данных был выполнен, в формате UTC, в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. NULL до завершения операции.|
-|id|Строка| Уникальный ключ для этой операции. |
-|status|string| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
-|storageLocation|Строка|URL-адрес расположения, в котором выполняется экспорт данных для запросы на экспорт.|
+|id|String| Уникальный ключ для этой операции. |
+|status|строка| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
+|storageLocation|String|URL-адрес расположения, в котором выполняется экспорт данных для запросы на экспорт.|
 |userId|String|Идентификатор пользователя, для которого выполняется операция.|
 |submittedDateTime|DateTimeOffset|Представляет, когда для этой операции с данными был отправлен запрос, в формате UTC, в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |progress|Double|Указывает ход выполнения операции.|

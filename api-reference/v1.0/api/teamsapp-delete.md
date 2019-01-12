@@ -1,13 +1,15 @@
 ---
-title: Permissions
+title: Разрешения
 description: 'Удаление приложения из каталога приложений организации (каталог приложений клиента). '
 localization_priority: Normal
-ms.openlocfilehash: e19826407a5f809787beffc8211f77ddce21d043
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 58984044ea59bd38f0232bfa9407c01f97f22708
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804930"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943608"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Удаление приложения из каталога приложений организации
 

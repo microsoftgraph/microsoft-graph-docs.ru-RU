@@ -3,12 +3,13 @@ title: Список назначений
 description: Получение списка объектов назначений. Преподаватель может видеть все объекты назначения для класса. Студентов можно видеть только назначения, которые были им назначены.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: a58406f26b45ccf3b16b6ff6bfa17e38b52590e7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 2907a0ce34060246bb4254708049501fdef072ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823921"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935047"
 ---
 # <a name="list-assignments"></a>Список назначений
 
@@ -40,7 +41,7 @@ GET /education/classes/{id}/assignments
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -52,7 +53,7 @@ GET /education/classes/{id}/assignments
 ```http
 GET https://graph.microsoft.com/beta/education/classes/<id>/assignments
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

@@ -3,12 +3,13 @@ title: Обновление объекта deviceCategory
 description: Обновление свойств объекта deviceCategory.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6c9a8babcab2eb49b28dee118a6912fcd8923e09
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0d34746c6047b5a61450361886483f3011523855
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872824"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943102"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -68,7 +69,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация новых сотрудников**|
 |описание|String|Необязательное описание категории устройств.|
 |displayName|String|Отображаемое имя категории устройств.|
@@ -96,7 +97,7 @@ Content-length: 82
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будет отличаться в зависимости от контекста.
 

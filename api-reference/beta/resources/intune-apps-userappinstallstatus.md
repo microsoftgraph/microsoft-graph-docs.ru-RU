@@ -3,12 +3,13 @@ title: Тип ресурса userAppInstallStatus
 description: Содержит свойства для состояние установки для пользователя.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f4d848a4fe4cd742df8a83184d539d7ff27290b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f17a504537b1230de175e033779441627f5f98be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885206"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938015"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Тип ресурса userAppInstallStatus
 
@@ -29,9 +30,9 @@ ms.locfileid: "27885206"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|Строка|Имя участника-пользователя.|
+|userPrincipalName|String|Имя участника-пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
 |notInstalledDeviceCount|Int32|Количество не установленных устройств.|

@@ -3,12 +3,13 @@ title: Тип перечисления ratingJapanTelevisionType
 description: Метки TV оценки содержимого в Японии
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f34fc1ee6ba9aa045e2c926916272e3130750cca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8bea20d7a7b2491bf60d6df61493f3f4ba1f711b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813337"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947570"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>Тип перечисления ratingJapanTelevisionType
 

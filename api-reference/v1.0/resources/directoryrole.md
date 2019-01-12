@@ -2,12 +2,14 @@
 title: Тип ресурса directoryRole
 description: Представляет роль directory Azure AD. Каталог роли Azure AD также называются *ролями администратора*. Дополнительные сведения о ролях каталогов (администратор) в разделе назначение ролей администратора в Azure AD. Microsoft Graph можно назначить роли каталог, чтобы предоставлять им разрешения целевой роли пользователей. Для чтения роли каталога или обновите его члены, необходимо активировать в клиентов. Только роль directory Администраторы организации активируется по умолчанию. Активация других ролей доступны directory отправить запрос POST с Идентификатором directoryRoleTemplate, лежащие в основе роли каталога. Наследуется от directoryObject.
 localization_priority: Priority
-ms.openlocfilehash: 05d897d6426b2feab7c08adaa125788590675f66
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4b3379bbbecd86612043dcc3cb8455f5c43ba9cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820869"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939548"
 ---
 # <a name="directoryrole-resource-type"></a>Тип ресурса directoryRole
 
@@ -32,7 +34,7 @@ ms.locfileid: "27820869"
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
 |описание|String|Описание роли каталога. Только для чтения. |
-|displayName|Строка|Отображаемое имя роли каталога. Только для чтения. |
+|displayName|String|Отображаемое имя роли каталога. Только для чтения. |
 |id|String|Уникальный идентификатор роли каталога. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается, только для чтения.|
 |roleTemplateId|String| Свойство **id** ресурса [directoryRoleTemplate](directoryroletemplate.md), определяющего значения свойств для этой роли. При активации роли каталога на клиенте следует указать свойство с помощью операции POST. После активации роли каталога свойство доступно только для чтения. |
 

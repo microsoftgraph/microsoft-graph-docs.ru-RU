@@ -3,12 +3,13 @@ title: 'Chart: Image'
 description: Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: f79f52e619281817c95f41efd8a96b3dcfa7d6e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 0f61866885f0798b9e96f80e22a636fb5f619e34
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831614"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939723"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -41,8 +42,8 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|height|Int32|Желаемую высоту изображения. Необязательное.|
-|width|Int32|Желаемую ширину изображения. Необязательное.|
+|height|Int32|Желаемую высоту изображения. Необязательный атрибут.|
+|width|Int32|Желаемую ширину изображения. Необязательный атрибут.|
 |fittingMode|строка|Метод, используемый для масштабирования диаграммы для указанного измерения (если заданы высота и ширина).»  Возможные значения: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Отклик
@@ -60,7 +61,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http

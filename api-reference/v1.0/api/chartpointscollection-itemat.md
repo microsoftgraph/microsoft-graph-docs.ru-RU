@@ -3,12 +3,13 @@ title: 'ChartPointsCollection: ItemAt'
 description: Получение точки на основании сведений о ее позиции в ряду.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 51a79ff10b71d1f39c6c6da82adf11205b42b57f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 91537f67a050d17484c7425eff342049df205df0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880488"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937980"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -66,7 +67,7 @@ Content-length: 20
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

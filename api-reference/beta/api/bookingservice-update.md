@@ -2,12 +2,14 @@
 title: Обновление bookingservice
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: 6eee5949d5d8cee23821d726563b4687febd77a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 6830ebc8fc101c4c9ce60f6157ed6bfdab82748c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838922"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937042"
 ---
 # <a name="update-bookingservice"></a>Обновление bookingservice
 
@@ -49,13 +51,13 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultDuration|Продолжительность|Длина по умолчанию службы, представленный в числа дней, часов, минут и секунд. Например P11D23H59M59.999999999999S. |
 |defaultLocation|[location](../resources/location.md)|Физическое расположение по умолчанию для службы.|
 |defaultPrice|Double|Денежные Цена по умолчанию для службы.|
-|defaultPriceType|string|По умолчанию способ службу оценивается. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultPriceType|строка|По умолчанию способ службу оценивается. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md) коллекции|Значение по умолчанию набора оповещения о встрече этой службы. Значение этого свойства доступна только при чтении этой **bookingService** по идентификатору.|
-|описание|Строка|Текстовое описание для службы.|
-|displayName|Строка|Имя службы.|
+|описание|String|Текстовое описание для службы.|
+|displayName|String|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
-|id|Строка| Только для чтения.|
-|isHiddenFromCustomers|Логический|Значение true означает, что эта служба недоступна для клиентов для резервирования.|
+|id|String| Только для чтения.|
+|isHiddenFromCustomers|Boolean|Значение true означает, что эта служба недоступна для клиентов для резервирования.|
 |notes|String|Дополнительные сведения об этой службы.|
 |postBuffer|Продолжительность|Заканчивается время буфер после встречи для этой службы и перед следующим встречи клиента можно заранее.|
 |пребуфер|Продолжительность|Время для буфера до начала встречи для этой службы.|
@@ -80,7 +82,7 @@ Content-type: application/json
     "defaultDuration":"PT30M"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

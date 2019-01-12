@@ -2,12 +2,14 @@
 title: Тип ресурса deviceManagement
 description: 'Ресурс deviceManagement представляет контейнер, содержимое которого различаться в зависимости от рабочего процесса, включая:  '
 localization_priority: Normal
-ms.openlocfilehash: e7517ac2c9560723c6c3c4dce2dc070b1ec96af3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: a5868a5d156a60cc51a131884a2deca22c114393
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822206"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942222"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
