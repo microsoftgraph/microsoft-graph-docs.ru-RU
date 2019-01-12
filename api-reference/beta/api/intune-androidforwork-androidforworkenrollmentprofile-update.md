@@ -3,12 +3,13 @@ title: Обновление объекта androidForWorkEnrollmentProfile
 description: Обновление свойств объекта androidForWorkEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a9f7f98e8fc1192ce80ce054f6699690189905b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5c65c01996ce482d7456396fd831a9ab2aa465b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824047"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916210"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>Обновление объекта androidForWorkEnrollmentProfile
 

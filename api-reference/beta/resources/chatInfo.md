@@ -3,12 +3,13 @@ title: Тип ресурса chatInfo
 description: Сведения о сообщении в группах Майкрософт.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: c2cc0dd288abdab7852017600c4c55b9a40b0aa7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 840073d6882d6665be60e7386eaafe3168b70dbe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852943"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940752"
 ---
 # <a name="chatinfo-resource-type"></a>Тип ресурса chatInfo
 

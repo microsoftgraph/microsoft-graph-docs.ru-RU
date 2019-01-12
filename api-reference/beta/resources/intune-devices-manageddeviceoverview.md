@@ -3,12 +3,13 @@ title: Тип ресурса managedDeviceOverview
 description: Сводные данные для управляемых устройств
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1eeb349e8ec77adce3d69df9d61f43e43fb3b770
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 091871ed88903f4fcb3a3ad8be86e7b997f173b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872550"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932518"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 

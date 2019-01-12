@@ -2,12 +2,14 @@
 title: Добавление участника
 description: С помощью этого API можно добавить участника в группу Office 365 или группу безопасности (обычную или с поддержкой почты) через свойство навигации **members**.
 localization_priority: Priority
-ms.openlocfilehash: 89f4bd5060e167e1920e5f64d70127c1fed41ad6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: bddb4176fc94426ef527f7f7d15980611919cc1c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867524"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932519"
 ---
 # <a name="add-member"></a>Добавление участника
 С помощью этого API можно добавить участника в группу Office 365 или группу безопасности (обычную или с поддержкой почты) через свойство навигации **members**.

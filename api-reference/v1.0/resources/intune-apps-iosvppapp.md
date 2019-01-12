@@ -3,12 +3,13 @@ title: Тип ресурса iosVppApp
 description: Содержит свойства, в том числе унаследованные, для приложений iOS, на которые распространяется программа VPP (Volume Purchase Program).
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 73a0c3612943f75c665676bd21973d1bee6b2437
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c32885bad05f11de8dce34997c69b3a618294b51
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821912"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912493"
 ---
 # <a name="iosvppapp-resource-type"></a>Тип ресурса iosVppApp
 

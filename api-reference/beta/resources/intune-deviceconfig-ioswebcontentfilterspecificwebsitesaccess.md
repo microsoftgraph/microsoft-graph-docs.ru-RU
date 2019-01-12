@@ -2,12 +2,14 @@
 title: Тип ресурса iosWebContentFilterSpecificWebsitesAccess
 description: Представляет операций ввода-вывода тип параметра фильтра веб-содержимого, который устанавливает закладки URL-адрес в браузере встроенных операций ввода-вывода. Пример сценария находится в классе, где преподавателей, предоставляемых студентов переходить веб-сайтов через браузер закладки, настроенного в своих устройствах iOS и нет доступа на другие сайты.
 localization_priority: Normal
-ms.openlocfilehash: 0dc3023c37311dc5fdeb2700b8a0fec58bdb4725
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 3b117aca95c43f36c216d6249221d689ae2da325
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844956"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942698"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>Тип ресурса iosWebContentFilterSpecificWebsitesAccess
 

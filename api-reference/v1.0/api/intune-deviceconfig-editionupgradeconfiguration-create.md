@@ -3,12 +3,13 @@ title: Создание объекта editionUpgradeConfiguration
 description: Создание объекта editionUpgradeConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4a0b40ce0ffc32f50b3152f55d6aa44237c35016
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c32873ffe50a4a35f94324d782e055508389e7e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866950"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937924"
 ---
 # <a name="create-editionupgradeconfiguration"></a>Создание объекта editionUpgradeConfiguration
 

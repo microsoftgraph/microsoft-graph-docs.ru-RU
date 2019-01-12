@@ -3,12 +3,13 @@ title: Тип ресурса appleDeviceFeaturesConfigurationBase
 description: Профиль конфигурации функций устройства Apple.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5c404f30ef606aa43f894e6d8f5db03137b671d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6a5eb731bad478da1d409b4f6153c344538f7f69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869421"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933213"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>Тип ресурса appleDeviceFeaturesConfigurationBase
 

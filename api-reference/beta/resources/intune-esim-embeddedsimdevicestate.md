@@ -3,12 +3,13 @@ title: Тип ресурса embeddedSIMDeviceState
 description: Описывает состояние развертывания кода активации внедренных диспетчера установки при использовании устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 15e969037a93ee11c300f7b18b0c8afcb36d0ce1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ce96250b8c64fc97171ee7721ca44b4cd4579072
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881517"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912626"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Тип ресурса embeddedSIMDeviceState
 

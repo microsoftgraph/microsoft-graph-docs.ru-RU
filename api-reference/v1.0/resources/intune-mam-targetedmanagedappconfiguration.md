@@ -3,12 +3,13 @@ title: Тип ресурса targetedManagedAppConfiguration
 description: Конфигурация, используемая для предоставления набора настраиваемых параметров в исходном виде для всех пользователей в целевой группе безопасности.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9683dffe81e5eac5bc3360999eaf84ced18d0aec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f622aa6a4baac6eb301981b0413c199cf0e14136
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841393"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913144"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>Тип ресурса targetedManagedAppConfiguration
 

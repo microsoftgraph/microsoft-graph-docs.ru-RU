@@ -3,12 +3,13 @@ title: Создание объекта managedEBookAssignment
 description: Создание объекта managedEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8699cac63bec90693a06d8e73879a53cd3d6a4b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ad6d30b07bd128572500be7a1a85fa4ae1333e6c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892241"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935208"
 ---
 # <a name="create-managedebookassignment"></a>Создание объекта managedEBookAssignment
 

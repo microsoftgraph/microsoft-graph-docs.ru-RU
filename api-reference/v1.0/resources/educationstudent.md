@@ -3,12 +3,13 @@ title: Тип ресурса educationStudent
 description: Добавляются дополнительные сведения в файл educationUser, который присутствует, когда значение параметра primaryRole для пользователя — `student`.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 80135827abb2dbf934e7ebec5e25ae6a52e58513
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 683a290806f9a70f97bda4aa9429a64578fbcd97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822052"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916364"
 ---
 # <a name="educationstudent-resource-type"></a>Тип ресурса educationStudent
 

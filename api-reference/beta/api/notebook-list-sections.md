@@ -1,14 +1,15 @@
 ---
 title: Перечисление разделов
 description: Получение списка объектов section из указанной записной книжки.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 9bb7889bbcee720b914b89219642b781af2debed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: ce9005068827176e08eb17e8b5e63b2e3a9db39b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870304"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943426"
 ---
 # <a name="list-sections"></a>Перечисление разделов
 

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Возобновляемая отправка файлов
 localization_priority: Priority
-ms.openlocfilehash: 84c16f83113452d920c6c2f13a0e0f37577aa0f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 21a6ed64e22e6a8fa7460418de4461adf36e0c4b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812091"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942481"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -105,7 +106,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В случае успешного выполнения запроса ответ будет содержать сведения о том, куда отправлять остальные запросы (в виде ресурса [UploadSession](../resources/uploadsession.md)).
 
@@ -155,7 +156,7 @@ Content-Range: bytes 0-25/128
 **Важно!** Приложение должно указывать в заголовках **Content-Range** всех запросов один и тот же общий размер файла.
 Если объявить для диапазона байтов другой размер файла, запрос не будет выполнен.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.
 
@@ -260,7 +261,7 @@ Content-Type: application/json
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приводится пример отклика.
 

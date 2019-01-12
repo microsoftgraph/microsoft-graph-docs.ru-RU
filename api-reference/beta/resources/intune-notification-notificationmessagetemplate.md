@@ -3,12 +3,13 @@ title: Тип ресурса notificationMessageTemplate
 description: " раздел. Используйте объект notificationMessageTemplate, чтобы создать собственные настраиваемые уведомления, которые могут выбрать администраторы во время настройки действий в случае несоответствия требованиям."
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 196f7809d288517807ef2b87bd8d577e902873d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: db6ce39158981d95561b41a2cd0b2a23915aea83
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844620"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912430"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Тип ресурса notificationMessageTemplate
 

@@ -2,12 +2,14 @@
 title: Получение шаблона параметр каталога
 description: Шаблон каталога параметр представляет шаблон параметры, с которых могут быть созданы параметры клиента. Эта операция позволяет получать свойства объекта directorySettingTemplate, включая доступные параметры и значения по умолчанию.
 localization_priority: Normal
-ms.openlocfilehash: 55312fd4d7e2a77821dc7ad18ca3f67bded261df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2fb9f8edbc374760f16496bd9ec5bcf666a09883
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888174"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935677"
 ---
 # <a name="get-a-directory-setting-template"></a>Получение шаблона параметр каталога
 
@@ -42,7 +44,7 @@ GET /directorySettingTemplates/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` объект [directorySettingTemplate](../resources/directorysettingtemplate.md) и кода ответа в теле ответа.
 ## <a name="example"></a>Пример
@@ -55,7 +57,7 @@ GET /directorySettingTemplates/{id}
 ```http
 GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

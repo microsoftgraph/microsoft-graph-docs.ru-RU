@@ -2,12 +2,13 @@
 title: Тип ресурса office365GroupsActivityStorage
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 9824d3d172a8578f8a25a049c2d0d3b407bbc47e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 180e60a52b397f969aa10cee5bc27bba934ad1e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862253"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944455"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>Тип ресурса office365GroupsActivityStorage
 

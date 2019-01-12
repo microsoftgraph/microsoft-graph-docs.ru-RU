@@ -3,12 +3,13 @@ title: 'ChartCollection: add'
 description: Создает диаграмму.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 4aa1a017da88fdd06b8e396130d5b09fbbeaebb5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 1e4813ee72f7cccb109369ef12b884efe24e9563
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916406"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -41,7 +42,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 |:---------------|:--------|:----------|
 |type|строка|Представляет тип диаграммы.  Возможные значения: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
 |sourceData|Json|Объект Range, соответствующий исходным данным.|
-|seriesBy|string|Необязательный параметр. Указывает, что способ столбцы или строки используются в качестве рядов данных на диаграмме.  Возможные значения: `Auto`, `Columns`, `Rows`.|
+|seriesBy|строка|Необязательный параметр. Указывает, что способ столбцы или строки используются в качестве рядов данных на диаграмме.  Возможные значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Ответ
 

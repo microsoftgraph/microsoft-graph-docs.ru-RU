@@ -3,12 +3,13 @@ title: Тип ресурса remoteAssistancePartner
 description: Ресурсы remoteAssistPartner представляются метаданные и состояние определенной партнерской службы удаленного помощника.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da82d42d3ddfe673b912477aaacd034380c96be3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc0f788d9a083b1d1b6dda30170a06fd62d80908
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889406"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915580"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Тип ресурса remoteAssistancePartner
 

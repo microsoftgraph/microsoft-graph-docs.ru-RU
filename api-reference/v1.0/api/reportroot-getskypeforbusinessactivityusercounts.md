@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessActivityUserCounts'
 description: Отследите, как меняется количество уникальных организаторов и участников сеансов конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов.
 localization_priority: Normal
-ms.openlocfilehash: 6a10f6a31bf0fd4470d8df4b232c6a57bdd0d462
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: d50348da7418cf91c26e9f42b62ad2061c67580e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860398"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934438"
 ---
 # <a name="reportroot-getskypeforbusinessactivityusercounts"></a>reportRoot: getSkypeForBusinessActivityUserCounts
 

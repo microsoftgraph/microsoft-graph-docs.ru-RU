@@ -2,12 +2,14 @@
 title: Список контактов
 description: Получение коллекции контактов из папки контактов по умолчанию для вошедшего пользователя (`.../me/contacts`) или из указанной папки контактов.
 localization_priority: Normal
-ms.openlocfilehash: a617cae074ee467d0c47ffcc86351a5e4d65e45a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: bc7cc37eaefbd84e9fea8d4cbb1e888b5c445d1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855470"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912479"
 ---
 # <a name="list-contacts"></a>Список контактов
 

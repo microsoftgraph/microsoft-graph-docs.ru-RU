@@ -2,12 +2,14 @@
 title: Получение educationClass
 description: "  Группа \"Администраторы\" представляют преподавателей в классе. Если вы используете делегированный маркер, пользователь увидит только курсы, участником которых является."
 localization_priority: Normal
-ms.openlocfilehash: 9d4a48a12d05bd7ef6bd1c6204ce23755b26019e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: ddf29c9d2a136f8f5cee24b30ef9ab1c0f9643f5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874930"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935684"
 ---
 # <a name="get-educationclass"></a>Получение educationClass
 
@@ -51,7 +53,7 @@ GET /education/classes/{id}
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11023
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

@@ -3,12 +3,13 @@ title: Тип перечисления policyPlatformType
 description: Типы платформ Suppoorted для политик.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a61b0f206299e4ddff48570f2639c91a514f81f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6287fb458f0650e70f7767a646e36e8a3a64337e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855330"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917372"
 ---
 # <a name="policyplatformtype-enum-type"></a>Тип перечисления policyPlatformType
 

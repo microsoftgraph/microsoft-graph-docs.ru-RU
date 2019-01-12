@@ -2,12 +2,14 @@
 title: Тип ресурса androidWorkProfileNineWorkEasConfiguration
 description: С указанием конфигураций в этом профиле можно указать клиента электронной почты девяти работой на устройствах Android профиля рабочего для взаимодействия с Exchange server и получение электронной почты, контакты, календарь, задачи и заметки. Кроме того можно также указать объем электронной почты для синхронизации и как часто следует синхронизировать устройства.
 localization_priority: Normal
-ms.openlocfilehash: 3bc29aabb637c38fc90054e3100aef89d6a71a3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 7ee7f42a37a882d71318acbcf0b472a808cb8104
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847371"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943965"
 ---
 # <a name="androidworkprofilenineworkeasconfiguration-resource-type"></a>Тип ресурса androidWorkProfileNineWorkEasConfiguration
 

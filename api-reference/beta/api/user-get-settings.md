@@ -3,12 +3,13 @@ title: Получение параметров
 description: Чтение объекта параметры пользователей и организаций.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 30217d43ac453c9e3502b00ece22ac01edf0abfb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5e9f66d96fc0f742196bf97c7e54406231d2b042
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852404"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914831"
 ---
 # <a name="get-settings"></a>Получение параметров
 
@@ -43,7 +44,7 @@ GET /users/{id | userPrincipalName}/settings/
 
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` объект [параметров пользователя](../resources/user-settings.md) и кода ответа в теле ответа.
 
@@ -55,7 +56,7 @@ GET /users/{id | userPrincipalName}/settings/
 GET https://graph.microsoft.com/beta/me/settings
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 

@@ -3,12 +3,13 @@ title: Создание iosVppAppAssignedLicense
 description: Создание нового объекта iosVppAppAssignedLicense.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 225b7168d584faa2e5ff1ec2910fe0e3e53fda8a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 65c0b449b1b9add9697d5c1453245efbd1b2e213
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936321"
 ---
 # <a name="create-iosvppappassignedlicense"></a>Создание iosVppAppAssignedLicense
 
@@ -57,7 +58,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -77,7 +78,7 @@ Content-length: 234
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

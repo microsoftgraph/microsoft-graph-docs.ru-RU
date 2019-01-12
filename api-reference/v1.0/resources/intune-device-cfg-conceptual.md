@@ -3,12 +3,13 @@ title: Конфигурация устройств в Microsoft Intune
 description: Использование рабочей нагрузки настройки устройств Microsoft Intune для управления параметрами и компонентов на все устройства, которые вы управляете.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7ea30ad4ad490390f7de0b5a5342d2040fe00716
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eda3d25b712b10feba3aac76135861acbc5a2f86
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820197"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936146"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройств в Microsoft Intune
 

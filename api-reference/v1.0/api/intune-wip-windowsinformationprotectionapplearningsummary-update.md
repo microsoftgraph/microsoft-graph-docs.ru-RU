@@ -3,12 +3,13 @@ title: Обновление объекта windowsInformationProtectionAppLearni
 description: Обновление свойств объекта windowsInformationProtectionAppLearningSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 052a18270aab27603969d8abaeec88f86f0bc5e6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 66f144c801c720289f52c5bfc8963e625065cb6f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882910"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940598"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Обновление объекта windowsInformationProtectionAppLearningSummary
 

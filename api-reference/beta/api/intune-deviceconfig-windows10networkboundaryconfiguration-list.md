@@ -3,12 +3,13 @@ title: Список windows10NetworkBoundaryConfigurations
 description: Свойства списка и связей объектов windows10NetworkBoundaryConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1bdc97e04db44abe4edea126a00e3ae247bf5b8a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a670b349f1de39cbb8a675790aa181a539e798af
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873538"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942376"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>Список windows10NetworkBoundaryConfigurations
 

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Создание списка пользователей, имеющих доступ к файлу
 localization_priority: Normal
-ms.openlocfilehash: 814c2a40e017c3a7d779f4df344498a7f9dc2bbb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: c85ca498cbdfce27e5fff549b3d75c89a805109d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840063"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938288"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Создание списка разрешений совместного доступа в элементе DriveItem
 
@@ -56,7 +57,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | string | Если указан этот заголовок запроса, а предоставленный тег etag совпадает с текущим тегом etag элемента, будет возвращен отклик `HTTP 304 Not Modified`. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию ресурсов [Permission](../resources/permission.md) в теле отклика.
 
@@ -79,7 +80,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 GET /me/drive/items/{item-id}/permissions
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Этот пример отклика включает три разрешения. Первое разрешение представляет собой ссылку для общего доступа с разрешениями на изменение, второе — явное разрешение для пользователя с именем John, которое унаследовано от родительской папки, а третье разрешение — это ссылка для общего доступа с правами на чтение и запись, созданная приложением.
 

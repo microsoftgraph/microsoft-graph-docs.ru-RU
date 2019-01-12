@@ -3,12 +3,13 @@ title: Список windows10EasEmailProfileConfigurations
 description: Свойства списка и связей объектов windows10EasEmailProfileConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4afcc59bda7749655458a2906f292d34fe1c5932
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e5811ce6a7c83424b3ea3b3682e01c489afdca1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842352"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935201"
 ---
 # <a name="list-windows10easemailprofileconfigurations"></a>Список windows10EasEmailProfileConfigurations
 

@@ -3,12 +3,13 @@ title: Удаление параметра группы
 description: Удаление параметра группы.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 55a9c1d51e03eaea785d351c0700803915b2fe33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 32bdd6b2856a96377859d523767f198779d23497
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839069"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936111"
 ---
 # <a name="delete-a-group-setting"></a>Удаление параметра группы
 

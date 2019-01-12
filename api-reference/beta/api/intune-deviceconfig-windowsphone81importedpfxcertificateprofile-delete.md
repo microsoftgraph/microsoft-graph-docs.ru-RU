@@ -3,12 +3,13 @@ title: Удаление windowsPhone81ImportedPFXCertificateProfile
 description: Удаляет windowsPhone81ImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aedfeed49ed9df4b3dba5be9287a9a0c323cfc19
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d5e4720950b5f162dc48ab0b674e157fad866923
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816619"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940605"
 ---
 # <a name="delete-windowsphone81importedpfxcertificateprofile"></a>Удаление windowsPhone81ImportedPFXCertificateProfile
 

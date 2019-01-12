@@ -2,12 +2,14 @@
 title: Тип ресурса directoryRoleTemplate
 description: 'Представляет шаблон роли каталога. Шаблон роли каталога задает значения свойств роли каталога (directoryRole). Нет объекта связанного directory роли шаблона для каждой роли каталогов, которые может быть активировано клиента. Для чтения роли каталога или обновите его члены, необходимо активировать в клиентов. Только роль directory Администраторы организации активируется по умолчанию. Активация других ролей доступны directory отправить запрос POST для `/directoryRoles` конечная точка с Идентификатором роль шаблона каталога — это каталог роль на основе указанного в параметре **roleTemplateId** запроса. После успешного выполнения этого запроса то затем сможете для чтения и добавления членов в роль directory. **Примечание**: шаблона роли каталога, открытой для роли каталогов пользователей. Роль каталогов пользователей неявных и не отображается на клиентах каталогов. Каждый пользователь клиента назначена эта роль в инфраструктуре. Роль уже активировано. Не используйте этот шаблон.'
 localization_priority: Normal
-ms.openlocfilehash: bffff81db3416c538031bce58cfc80580c06f48e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2b4a4e79c11f38991da88cd685983229c9f7da7b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821191"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938183"
 ---
 # <a name="directoryroletemplate-resource-type"></a>Тип ресурса directoryRoleTemplate
 

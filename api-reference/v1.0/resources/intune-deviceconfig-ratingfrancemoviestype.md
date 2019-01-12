@@ -3,12 +3,13 @@ title: Тип перечисления ratingFranceMoviesType
 description: Оценка меток во Франции кино
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ffe18a6335a156bce9850de8d0de68ec9b42a819
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e2445c885576e72a09bd0c70d3fb91c9ec039276
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850612"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942159"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>Тип перечисления ratingFranceMoviesType
 

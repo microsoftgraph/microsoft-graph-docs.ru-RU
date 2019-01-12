@@ -3,12 +3,13 @@ title: Список androidWorkProfileGmailEasConfigurations
 description: Свойства списка и связей объектов androidWorkProfileGmailEasConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 54c06b08d20dec3d2591d9a4d63956e695fd4d32
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 739744a4150d56d0cfdf175e72cff4a302cea92c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837480"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943699"
 ---
 # <a name="list-androidworkprofilegmaileasconfigurations"></a>Список androidWorkProfileGmailEasConfigurations
 

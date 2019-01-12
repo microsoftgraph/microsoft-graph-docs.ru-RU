@@ -2,12 +2,13 @@
 title: Тип ресурса yammerDeviceUsageDistributionUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: ad8707d33c4200ea6729205819871d890929f001
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 937691487046e2e77cc26b2c1f1a154966e1681b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889035"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936349"
 ---
 # <a name="yammerdeviceusagedistributionusercounts-resource-type"></a>Тип ресурса yammerDeviceUsageDistributionUserCounts
 
