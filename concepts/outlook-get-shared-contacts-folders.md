@@ -2,12 +2,14 @@
 title: Получение контактов Outlook из общей папки
 description: Пользователи Outlook могут делиться папками и предоставлять права на чтение, создание, изменение или удаление отдельных папок контактов. Outlook также позволяет клиенту делегировать другому пользователю действовать от имени клиента.
 author: angelgolfer-ms
-ms.openlocfilehash: d0dc5be8df709c3d736ff0baa55667926cfc5936
-ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+localization_priority: Normal
+ms.prod: outlook
+ms.openlocfilehash: 86533a28c0af206458b63fd19f32f01c5b68710b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27413157"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932156"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>Получение контактов Outlook из общей папки
 

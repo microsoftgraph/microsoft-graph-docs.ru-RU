@@ -2,12 +2,14 @@
 title: Регистрация приложения с помощью конечной точки Azure AD версии 2.0
 description: 'Приложение должно быть зарегистрировано в Azure AD. При регистрации приложения создается уникальный идентификатор и другие значения, используемые приложением для проверки подлинности в Azure AD и получения маркеров. Для конечной точки Azure AD версии 2.0 приложение регистрируется на портале Майкрософт для регистрации приложений. Для регистрации приложения можно использовать либо учетную запись Майкрософт, либо рабочую или учебную учетную запись. В зависимости от типа создаваемого приложения, во время регистрации вам может потребоваться скопировать одно или несколько свойств, чтобы использовать их при настройке проверки подлинности и авторизации для приложения. '
 author: jackson-woods
-ms.openlocfilehash: 10f955e63cbf6fd53dc357fd8772ac3364b8c84a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 87bff46dcb18585ba0814a5848f3cd67deb855d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348834"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930560"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Регистрация приложения с помощью конечной точки Azure AD версии 2.0
 

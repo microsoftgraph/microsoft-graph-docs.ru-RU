@@ -1,12 +1,15 @@
 ---
 title: Обзор API книг и диаграмм Excel
 description: Excel — незаменимый инструмент для эффективной работы. Пользователи из всех отраслей на всевозможных должностях используют его для хранения и отслеживания различных данных, а также работы с ними. Он используется как для простого отслеживания задач и управления данными, так и для сложных вычислений и создания профессиональных отчетов. С помощью REST API для Excel в Microsoft Graph вы можете получить больше пользы от ваших данных, вычислений, отчетов и информационных панелей.
-ms.openlocfilehash: 4d433b4b84bab2fc6a75cf8d0020d715a030683b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 940a8e055a6a730bd12a7ab73e7d3a611a63e53f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092751"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921698"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Обзор API книг и диаграмм Excel
 

@@ -3,12 +3,13 @@ title: Тип перечисления windowsPrivacyDataAccessLevel
 description: Определите уровень доступа к определенной категории конфиденциальности данных Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 74ab32a703422203fec7a6c9ed1bc035e01949a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 64db5eb78708a0cfa835bd695ba01b2c267fc4fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888776"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959318"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>Тип перечисления windowsPrivacyDataAccessLevel
 

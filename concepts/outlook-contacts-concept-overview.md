@@ -2,12 +2,14 @@
 title: Обзор API для личных контактов Outlook
 description: Контакты Outlook позволяют хранить данные личных контактов и являются частью центра обмена сообщениями Outlook в Office 365. Через Outlook можно управлять сообщениями электронной почты, планировать собрания, искать сведения о пользователях организации, начинать беседы в Интернете, делиться файлами и совместно работать в группах.
 author: angelgolfer-ms
-ms.openlocfilehash: bccf32fd0cc3022a146e16590d915c4b85d60127
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 6991845e05373a1c874553b8b195f77fb79757b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347518"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937322"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Обзор API для личных контактов Outlook
 

@@ -1,12 +1,14 @@
 ---
 title: Microsoft Graph и работа на разных устройствах
 description: 'В современном мире пользователи применяют множество устройств различных форм-факторов с разными платформами: они читают утренние новости на планшетах, проверяют почту на смартфонах по пути на работу и используют настольные компьютеры на работе. По вечерам они смотрят фильмы на домашних мультимедийных консолях и слушают новости за день на умных колонках. Средний клиент в течение дня использует несколько устройств и платформ. '
-ms.openlocfilehash: 83557d59f964631fe12a8a5cb7f00121955432d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: project-rome
+ms.openlocfilehash: 85d48d07f06d189f30c8eba9f7f0876353b3ff25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092586"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920686"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Microsoft Graph и работа на разных устройствах
 

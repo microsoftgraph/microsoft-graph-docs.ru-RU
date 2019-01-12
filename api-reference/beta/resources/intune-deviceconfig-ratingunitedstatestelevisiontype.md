@@ -3,12 +3,13 @@ title: Тип перечисления ratingUnitedStatesTelevisionType
 description: Метки TV оценки содержимого в США
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 036ea2cbe81076a45dfcbc9aadfc433af60e00c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9f4492fac5bc003fdaba15a39b0f58892872ea87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875875"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964804"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>Тип перечисления ratingUnitedStatesTelevisionType
 

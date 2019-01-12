@@ -2,12 +2,14 @@
 title: Тип ресурса plannerAssignments
 description: 'Назначения ресурсов plannerTask представляет **plannerAssignments** ресурс. Этот тип является открытым типом. Имя каждого свойства в этом типе '
 localization_priority: Normal
-ms.openlocfilehash: 42d85a1787efbfa55196db36cbcdd09aae7d1a84
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: bf079cbf91e0c9b8b1a8c92403324b301bbde923
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811909"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966820"
 ---
 # <a name="plannerassignments-resource-type"></a>Тип ресурса plannerAssignments
 

@@ -2,12 +2,14 @@
 title: Microsoft Graph Data Connect (предварительная версия)
 description: 'Microsoft Graph Data Connect предоставляет вам данные Office 365 и ресурсы Microsoft Azure через основной конвейер данных. Вы можете использовать Microsoft Graph Data Connect для создания интеллектуальных приложений, имеющих доступ к ценным данным, с помощью наилучших средств разработки, предлагаемых корпорацией Майкрософт в пределах безопасного облака Майкрософт. Все организации заинтересованы в повышении производительности, и это означает, что создание продуктов, повышающих производительность информационных работников, представляет значительные возможности. '
 author: ajacks-msft
-ms.openlocfilehash: 283ad9044eb5ae5bc53bb4b72e4d6d1f2434cfee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: data-connect
+ms.openlocfilehash: 412cfa0fd5a4638d3831c3f23a4e6d943549cb9e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315269"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914292"
 ---
 # <a name="microsoft-graph-data-connect-preview"></a>Microsoft Graph Data Connect (предварительная версия)
 

@@ -2,12 +2,13 @@
 title: Тип ресурса visualInfo
 description: Сложный тип для представления свойство **visualElements** в объекте активности.
 localization_priority: Normal
-ms.openlocfilehash: 3e1dd3d7e4ecfaf5053f839f0ac0d0039692b2a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 3bc26d7eb63d07d857783e5392337b88124ec685
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855316"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963733"
 ---
 # <a name="visualinfo-resource-type"></a>Тип ресурса visualInfo
 

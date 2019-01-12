@@ -2,12 +2,14 @@
 title: Начало работы с подключением данных Microsoft Graph (предварительная версия)
 description: 'Прежде чем использовать подключение данных Microsoft Graph, администратору Office 365 необходимо выполнить два действия, которые включают возможность управления перемещением данных для администраторов через Privileged Access Management (PAM). '
 author: ajacks-msft
-ms.openlocfilehash: 1cd8d5734b0fd8b48df8a49fe0a833583c21148d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: data-connect
+ms.openlocfilehash: f7426147908a2ded298bee065c05afffc182cd4b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312084"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914446"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect-preview"></a>Начало работы с подключением данных Microsoft Graph (предварительная версия)
 

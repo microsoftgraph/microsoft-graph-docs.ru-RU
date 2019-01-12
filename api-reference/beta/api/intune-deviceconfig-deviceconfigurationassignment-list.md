@@ -3,12 +3,13 @@ title: Перечисление объектов deviceConfigurationAssignment
 description: Список свойств и связей объектов deviceConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 342ee967a3a7792977dff759fcf86515398db057
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9506e692a46cd1b09916621da3f4190869a40a13
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852586"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964923"
 ---
 # <a name="list-deviceconfigurationassignments"></a>Перечисление объектов deviceConfigurationAssignment
 

@@ -3,12 +3,13 @@ title: Обновление объекта macOSOfficeSuiteApp
 description: Обновление свойств объекта macOSOfficeSuiteApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 545a9e6e36ec7860b3cad4f0865d59f397b64079
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4efcc20060f3bd68a17f02bad4f00ef8deeecb5f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813897"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966204"
 ---
 # <a name="update-macosofficesuiteapp"></a>Обновление объекта macOSOfficeSuiteApp
 

@@ -2,12 +2,14 @@
 title: Обзор API устройств и приложений Intune
 description: 'Microsoft Intune помогает предприятиям управлять устройствами и приложениями в организации. С помощью API Intune в Microsoft Graph вы можете управлять устройствами и приложениями, а также настраивать Intune, используя привычные средства. '
 author: tfitzmac
-ms.openlocfilehash: 0eac57d7434e85faae86a7f1042cc6bb61783e52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: intune
+ms.openlocfilehash: 3fc51a81bce93de3b17b8107158998a3b5764da4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332853"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913667"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Обзор API устройств и приложений Intune
 

@@ -3,12 +3,13 @@ title: Тип ресурса deviceComplianceActionItem
 description: Конфигурация запланированного действия
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bbb67151b38f6c65bf8abae1b16a96b8cb25584f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 46828e3379fbf5179658ed7e2fb2e5e960d61ada
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965707"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>Тип ресурса deviceComplianceActionItem
 

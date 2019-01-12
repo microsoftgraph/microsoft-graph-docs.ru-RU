@@ -3,12 +3,13 @@ title: Создание группы
 description: Создание новой группы.
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 891377ace047e51f653327fc081e183de14de5ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 018d6085cec94a7aa2697e027f69b4b6f70cfaad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847147"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962739"
 ---
 # <a name="create-team"></a>Создание группы
 

@@ -3,12 +3,13 @@ title: Получение windowsInformationProtectionNetworkLearningSummary
 description: Чтение свойств и связей объекта windowsInformationProtectionNetworkLearningSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 27b25a6a2ed39e5f18acf66df7142b2c6ad3fd96
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9fb911985cf17fbfd8db10a5caf30469a63e082c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858641"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960499"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Получение windowsInformationProtectionNetworkLearningSummary
 
@@ -55,7 +56,7 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wind
 GET https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

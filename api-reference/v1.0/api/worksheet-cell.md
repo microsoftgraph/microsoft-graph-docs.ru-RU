@@ -2,12 +2,14 @@
 title: 'Worksheet: Cell'
 description: Получает объект диапазона, содержащий одну ячейку, на основе номеров строки и столбца. Ячейка может выходить за пределы родительского диапазона, если она расположена в сетке листа.
 localization_priority: Normal
-ms.openlocfilehash: 94abdb533e64ef1b6fd94e9e7f0b5b149c0c2666
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 96069c11d8e520b64854eb7a2a72dc9d5f6de25b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831383"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967303"
 ---
 # <a name="worksheet-cell"></a>Worksheet: Cell
 

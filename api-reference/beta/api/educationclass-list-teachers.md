@@ -3,12 +3,13 @@ title: Перечисление преподавателей
 description: Получение списка преподавателей для класса. Чтобы делегированные маркеры могли получить список преподавателей, они должны принадлежать к классу.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: d8030f9d3adb61b678c4224205a7f9d1f6a36b5a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 871090596ec83e9af90a37e8afc6f4b8f67faed5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879004"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960513"
 ---
 # <a name="list-teachers"></a>Перечисление преподавателей
 

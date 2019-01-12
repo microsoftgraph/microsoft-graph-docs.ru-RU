@@ -3,12 +3,13 @@ title: Delete mobileAppContent
 description: Удаляет объект mobileAppContent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b44aee13184b56ef1dd2d136e6fc3bfb3d1b052e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8a65ff8e92bd17c4c753b6bdc5793f92ead2907f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876379"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961752"
 ---
 # <a name="delete-mobileappcontent"></a>Delete mobileAppContent
 

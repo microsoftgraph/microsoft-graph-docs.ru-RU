@@ -2,12 +2,14 @@
 title: Пользователи, с которыми можно связаться при помощи Microsoft Graph
 description: 'Корпорация Майкрософт предлагает службы и решения, расширяющие возможности современной работы и современной жизни. '
 author: dkershaw10
-ms.openlocfilehash: 65510fafc91d13fbea68463f699bc0e8cbcef3f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1f68023bb86ee08defb10c9b955e5691e07ea3ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331936"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948403"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Пользователи, с которыми можно связаться при помощи Microsoft Graph
 

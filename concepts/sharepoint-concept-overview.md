@@ -1,12 +1,14 @@
 ---
 title: Обзор API сайтов и контента SharePoint
 description: SharePoint — это ваша мобильная интеллектуальная интрасеть. В SharePoint пользователи могут делиться и управлять контентом, знаниями и приложениями при работе в группах, искать необходимую информацию и вести совместную работу в рамках организации. С помощью REST API для SharePoint в Microsoft Graph вы можете интегрировать свои решения с сайтами и контентом SharePoint.
-ms.openlocfilehash: e71ef735cadf13ddb05799431fcf74ae9b3fa463
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: sharepoint
+ms.openlocfilehash: 7f703854112643afc11cf82b32b6b9247f0bca39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092708"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965273"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>Обзор API сайтов и контента SharePoint
 

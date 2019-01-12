@@ -2,12 +2,14 @@
 title: Тип ресурса plannerUserIds
 description: Ресурс **plannerUserIds** представляет список идентификаторов пользователей, которым предоставлен доступ к плану. Это открытый тип. Если вы используете функцию "Группы Office 365", то для предоставления доступа к плану группы применяйте API для групп (чтобы управлять членством в группах). Вы также можете добавить существующих участников группы в эту коллекцию, хотя им необязательно иметь доступ к плану, принадлежащему группе.
 localization_priority: Normal
-ms.openlocfilehash: d1ded78b76b2e8284a7563ad43b2c466cda4cc5e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 33a1d6472f4c146d0875ec35fdee920652b7de39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879025"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966960"
 ---
 # <a name="planneruserids-resource-type"></a>Тип ресурса plannerUserIds
 

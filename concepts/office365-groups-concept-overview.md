@@ -2,12 +2,14 @@
 title: Обзор групп Office 365 в Microsoft Graph
 description: 'Группы Office 365 — фундаментальная служба, которая позволяет пользователям делиться беседами, файлами, заметками, календарями, планами и другими ресурсами. '
 author: dkershaw10
-ms.openlocfilehash: 7dcb13210a69737ae5f7889fe797afd9fec19c81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: reports
+ms.openlocfilehash: 3706c7373a80992cec1f920dbfdf5e8829829d10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320463"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932713"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Обзор групп Office 365 в Microsoft Graph
 

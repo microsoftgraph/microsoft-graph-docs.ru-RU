@@ -3,12 +3,13 @@ title: Создание windows10PkcsCertificateProfile
 description: Создание нового объекта windows10PkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d93477adb0358196f0bfa2bedd8ef35a555ee7e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 85fd8c3dc8c8f1f8d00cf6b84cb342dc6172ee8a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809277"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966757"
 ---
 # <a name="create-windows10pkcscertificateprofile"></a>Создание windows10PkcsCertificateProfile
 

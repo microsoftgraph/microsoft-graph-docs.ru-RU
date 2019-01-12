@@ -3,12 +3,13 @@ title: Get windows10EnterpriseModernAppManagementConfiguration
 description: Чтение свойств и связей объекта windows10EnterpriseModernAppManagementConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8490a72cbd3c8094ec663c5c24fe1d95532a27b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 095cbe9c34d6ae3d2545926a51437316af88e0eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881882"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968087"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Get windows10EnterpriseModernAppManagementConfiguration
 

@@ -2,12 +2,14 @@
 title: 'post: forward'
 description: 'Переадресация публикации получателю. Можно указать в приглашении на родительский беседы и поток '
 localization_priority: Normal
-ms.openlocfilehash: 64b7d87745cf897ea827d37a9cd4f4c60d197068
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: e2729428b2708c85c819b8ee00f163142b6ede3d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889441"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965903"
 ---
 # <a name="post-forward"></a>post: forward
 

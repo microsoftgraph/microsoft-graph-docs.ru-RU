@@ -3,12 +3,13 @@ title: Получение easEmailProfileConfigurationBase
 description: Чтение свойства и связи объекта easEmailProfileConfigurationBase.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 91e60829772a13a6d7a8e1fa242cdb769c4e8fe1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5049e643175a5ea0cbf8788abe98ae1527238327
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863338"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963159"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>Получение easEmailProfileConfigurationBase
 

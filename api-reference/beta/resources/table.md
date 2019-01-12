@@ -3,12 +3,13 @@ title: Тип ресурса Table
 description: Представляет таблицу Excel.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9fe5e9c196ac3df87ed99db75b27021c6e022e59
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 7d1f6debdbdab3047d55bebe6fc5ec848adcb832
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956992"
 ---
 # <a name="table-resource-type"></a>Тип ресурса Table
 

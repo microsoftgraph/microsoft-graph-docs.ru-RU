@@ -3,12 +3,13 @@ title: Тип ресурса contactFolder
 description: Папка, содержащая контакты.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 87276ced9a1b333eb502feab122bca88e86b5349
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 450c683d91eeb789c8c54b2bbfd38db695fbbba2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810159"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967548"
 ---
 # <a name="contactfolder-resource-type"></a>Тип ресурса contactFolder
 
@@ -43,7 +44,7 @@ ms.locfileid: "27810159"
 |displayName|String|Отображаемое имя папки.|
 |id|String|Уникальный идентификатор папки с контактами. Только для чтения.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
-|wellKnownName|string|Имя папки, если распознанный папки. В настоящее время `contacts` является единственным папку распознанный контакты.|
+|wellKnownName|строка|Имя папки, если распознанный папки. В настоящее время `contacts` является единственным папку распознанный контакты.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

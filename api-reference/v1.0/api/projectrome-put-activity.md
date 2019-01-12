@@ -2,12 +2,13 @@
 title: Создание или замена действия
 description: Создание новой или заменить существующий активности пользователей для вашего приложения. Если вы хотите создать действие пользователя и его связанных с ними **historyItems** в один запрос, можно использовать глубокой вставки.
 localization_priority: Normal
-ms.openlocfilehash: faaebd5e3e88cca7c442be46505aac434111f148
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 1e5a7956ab5ac151613ac3559415b16570a2b087
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812084"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966687"
 ---
 # <a name="create-or-replace-an-activity"></a>Создание или замена действия
 

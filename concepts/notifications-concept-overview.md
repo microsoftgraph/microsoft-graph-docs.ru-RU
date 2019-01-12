@@ -1,12 +1,14 @@
 ---
 title: 'Использование API уведомлений в Microsoft Graph для включения интерфейсов уведомлений, ориентированных на человека '
 description: 'Уведомления — самый эффективный способ повторного привлечения пользователей. Они могут привлекать внимание пользователей и возвращать их в ваше приложение. При применении нескольких устройств пользователи могут получать доступ к вашим приложениям и службам из любой точки мира, на различных платформах и устройствах, на которых присутствуют ваши приложения. '
-ms.openlocfilehash: 7ff36d7e0d406cb7918e2999812e3c756ae3b5bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: project-rome
+ms.openlocfilehash: e3ccdd3cc7274042ae5b2531874cb6b8e2612fd4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092610"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947122"
 ---
 # <a name="using-the-notifications-api-in-microsoft-graph-to-enable-human-centric-notification-experiences"></a>Использование API уведомлений в Microsoft Graph для включения интерфейсов уведомлений, ориентированных на человека 
 
