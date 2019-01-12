@@ -3,12 +3,13 @@ title: Обновление события
 description: Обновление объекта event.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: dd287032c898e4a56983a77815ce12daef05dae9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 1bab9229ea6f005074bfbcce91a3f6d1c5761f54
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892269"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991617"
 ---
 # <a name="update-event"></a>Обновление события
 Обновление объекта [event](../resources/event.md).
@@ -32,12 +33,12 @@ PATCH /groups/{id}/calendar/events/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -66,7 +67,7 @@ Content-length: 211
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 
 <!-- {

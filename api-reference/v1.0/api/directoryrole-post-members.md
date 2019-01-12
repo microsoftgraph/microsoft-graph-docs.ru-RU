@@ -3,12 +3,13 @@ title: Добавление участника роли каталога
 description: С помощью этого API можно создать участника роли каталога.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 11b06eac57d0850e8df5233bba47966f6b7932d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f138be1632c72f8c31eb08fcdaefc50e7affb3e5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886641"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991533"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -32,7 +33,7 @@ POST /directoryRoles/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type  | строка  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса

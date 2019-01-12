@@ -2,12 +2,14 @@
 title: Тип ресурса Range
 description: Объект Range представляет собой набор из одной или нескольких смежных ячеек, например ячейку, строку, столбец, блок ячеек и т. д.
 localization_priority: Priority
-ms.openlocfilehash: 65cbea6b0e025d5d4d574ebf1db3b924e042f497
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: a97747f1dc8cfce10f5f219f1970c07b1f982a52
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806540"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991603"
 ---
 # <a name="range-resource-type"></a>Тип ресурса Range
 
@@ -47,8 +49,8 @@ ms.locfileid: "27806540"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|address|string|Представляет ссылку на диапазон в стиле A1. Значение адреса будет содержать ссылку на лист (например, Лист1!A1:B4). Только для чтения.|
-|addressLocal|string|Представляет ссылку на указанный диапазон на языке пользователя. Только для чтения.|
+|address|строка|Представляет ссылку на диапазон в стиле A1. Значение адреса будет содержать ссылку на лист (например, Лист1!A1:B4). Только для чтения.|
+|addressLocal|строка|Представляет ссылку на указанный диапазон на языке пользователя. Только для чтения.|
 |cellCount|int|Количество ячеек в диапазоне. Только для чтения.|
 |columnCount|int|Представляет общее количество столбцов в диапазоне. Только для чтения.|
 |columnHidden|boolean|Указывает, скрыты ли все столбцы текущего диапазона.|

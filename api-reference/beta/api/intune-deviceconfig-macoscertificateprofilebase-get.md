@@ -3,12 +3,13 @@ title: Получение macOSCertificateProfileBase
 description: Чтение свойства и связи объекта macOSCertificateProfileBase.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 74462445eec8b7f71636dc86c4d66ccc75121c02
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f395a724f1eb063ec74475a4dbd2c47a79e2d88a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842618"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991855"
 ---
 # <a name="get-macoscertificateprofilebase"></a>Получение macOSCertificateProfileBase
 

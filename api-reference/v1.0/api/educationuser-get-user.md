@@ -2,12 +2,14 @@
 title: Получение пользователя
 description: Получение простого каталога **user**, который соответствует этому объекту **educationUser**.
 localization_priority: Normal
-ms.openlocfilehash: ae2cdfa5aed7dadf7e61c275e65c646196f4667d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 063b1297c2243f11b6eb1020703b7332390a4aa2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836857"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991925"
 ---
 # <a name="get-user"></a>Получение пользователя
 
@@ -49,7 +51,7 @@ GET /education/users/{id}/user
 ```http
 GET https://graph.microsoft.com/v1.0/education/me/user
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

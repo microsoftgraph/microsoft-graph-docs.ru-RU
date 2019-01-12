@@ -3,12 +3,13 @@ title: Удаление беседы
 description: Удаление объекта conversation.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 8eda987cb30d4ffbdda32bf9df750c58f3b77f37
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 26ed441d17de547d11667ff90ec4b71e09cdc599
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859061"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991680"
 ---
 # <a name="delete-conversation"></a>Удаление беседы
 
@@ -34,7 +35,7 @@ DELETE /groups/{id}/conversations/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
@@ -53,7 +54,7 @@ DELETE /groups/{id}/conversations/{id}
 DELETE https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/conversations/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgAQABuXO3guDWBMpyKF7LsVwfU=
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

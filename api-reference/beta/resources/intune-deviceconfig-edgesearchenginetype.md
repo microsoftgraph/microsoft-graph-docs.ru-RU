@@ -3,12 +3,13 @@ title: Тип перечисления edgeSearchEngineType
 description: Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 87ebdebbcbbe3aa939595978f202d06b1c727a44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1c2ac2c9217aefd5b2a84632da2a4dc51c4820d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859621"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991687"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>Тип перечисления edgeSearchEngineType
 

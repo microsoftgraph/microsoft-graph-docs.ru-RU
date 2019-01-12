@@ -3,12 +3,13 @@ title: Отправка почты
 description: Отправка сообщения, указанного в теле запроса. Сообщение сохраняется в папке "Отправленные" по умолчанию.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 2b0ac9b478bccf5080b2e8971bdb1ada881f5b28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 48e6087cb8393bb4f679cabfe73d5cb280a71907
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851060"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991429"
 ---
 # <a name="send-mail"></a>Отправка почты
 

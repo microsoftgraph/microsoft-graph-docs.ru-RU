@@ -2,12 +2,14 @@
 title: 'Range: clear'
 description: Очищает формат, заливку, границу, значения диапазона и т. д.
 localization_priority: Normal
-ms.openlocfilehash: 60667f8bf8ef8ef5e12af929ecab61b989359242
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: a32c21763c18371d3f0efe649b795135d4752b87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861217"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991631"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -42,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|applyTo|string|Необязательный параметр. Определяет тип действия очистки.  Возможные значения: `All`, `Formats`, `Contents`.|
+|applyTo|строка|Необязательный параметр. Определяет тип действия очистки.  Возможные значения: `All`, `Formats`, `Contents`.|
 
 ## <a name="response"></a>Отклик
 

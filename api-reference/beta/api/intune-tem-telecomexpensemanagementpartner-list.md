@@ -3,12 +3,13 @@ title: Список объектов telecomExpenseManagementPartner
 description: Список свойств и связей объектов telecomExpenseManagementPartner.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 29952915b8e115d14f1c9ece8d7f176e7360e266
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: abb529efbb70c4caf29fa76dbde159a3ccb731bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846321"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27992065"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>Список объектов telecomExpenseManagementPartner
 
@@ -55,7 +56,7 @@ GET /deviceManagement/telecomExpenseManagementPartners
 GET https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagementPartners
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

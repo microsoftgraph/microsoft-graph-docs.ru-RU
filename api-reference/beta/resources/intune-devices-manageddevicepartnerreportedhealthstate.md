@@ -3,12 +3,13 @@ title: Тип перечисления managedDevicePartnerReportedHealthState
 description: Состояния работоспособности недоступны для API состояния устройства
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e3383edca25d6d4ac03a9b5536f3514412e2bf7a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 14fe3c6769e717abb3d899e6ce7da33215a04a78
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862057"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991764"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>Тип перечисления managedDevicePartnerReportedHealthState
 

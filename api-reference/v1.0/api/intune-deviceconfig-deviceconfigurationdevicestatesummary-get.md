@@ -3,12 +3,13 @@ title: Получение объекта deviceConfigurationDeviceStateSummary
 description: Чтение свойств и связей объекта deviceConfigurationDeviceStateSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2495e94ffb431c417bd8c98e4ccf70ad9efbbec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d920d6c8bc67e278e497cc8235d7c0419a5fcc14
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833602"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991379"
 ---
 # <a name="get-deviceconfigurationdevicestatesummary"></a>Получение объекта deviceConfigurationDeviceStateSummary
 
@@ -55,7 +56,7 @@ GET /deviceManagement/deviceConfigurationDeviceStateSummaries
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurationDeviceStateSummaries
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
