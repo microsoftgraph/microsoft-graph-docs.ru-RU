@@ -2,12 +2,14 @@
 title: Тип ресурса managedAppStatus
 description: Представляет состояние защиты и конфигурации приложений для организации.
 author: tfitzmac
-ms.openlocfilehash: e23b20b53d7ad89a4bbd0df8510a66e0f7da581d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: b06e52d34cbbfb1e358ee2353c3420f8d129a61e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331593"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956936"
 ---
 # <a name="managedappstatus-resource-type"></a>Тип ресурса managedAppStatus
 

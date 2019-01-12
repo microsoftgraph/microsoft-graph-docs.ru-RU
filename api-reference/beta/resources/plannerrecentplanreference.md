@@ -2,12 +2,14 @@
 title: Тип ресурса plannerRecentPlanReference
 description: 'Ресурс **plannerRecentPlanReference** введите repesents ссылку на plannerPlan, недавно просмотренный пользователя. '
 localization_priority: Normal
-ms.openlocfilehash: 6ac17cd0a99d384cbc1f42e2e0d243c582204101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: bafaf6d20dc8f64ffe49eb4e2f998607708a2773
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805679"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943532"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>Тип ресурса plannerRecentPlanReference
 

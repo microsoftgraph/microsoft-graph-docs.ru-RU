@@ -2,12 +2,14 @@
 title: Тип перечисления defenderPotentiallyUnwantedAppAction
 description: Защитника действие, которое выполняется обнаруженных потенциально ненужные приложения (PUA).
 localization_priority: Normal
-ms.openlocfilehash: 9b04cd6daeae303910519d0735165171575d8c44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 96a3dd70ae0f56f2d0d5a9d6c4f87846e10bba45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858648"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938561"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>Тип перечисления defenderPotentiallyUnwantedAppAction
 

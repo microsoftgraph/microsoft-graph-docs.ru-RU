@@ -3,12 +3,13 @@ title: Тип ресурса managedDevice
 description: Устройства, которые управляются или предварительно регистрируются с помощью Intune
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d08b0559065b3977978621004b290a87879cdc70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 38c96bb3c2a4a5ccfe9ce7dc40b247af79c428a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869218"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957720"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 

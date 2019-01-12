@@ -3,12 +3,13 @@ title: Обновление iosEnterpriseWiFiConfiguration
 description: Обновление свойства объекта iosEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c79afffe3a092bab22969f1a638b6429a6c5750a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 14cfbd5af762061948ef7218ef41077cf1413da4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833315"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944140"
 ---
 # <a name="update-iosenterprisewificonfiguration"></a>Обновление iosEnterpriseWiFiConfiguration
 

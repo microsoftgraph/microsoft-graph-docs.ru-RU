@@ -3,12 +3,13 @@ title: Создание androidForWorkApp
 description: Создание нового объекта androidForWorkApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0e2414c0da4d3c184d43443b7a607c6db7baffb9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4f557c9577d2b85e96038cc9976f9d19ddfaf867
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853965"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951910"
 ---
 # <a name="create-androidforworkapp"></a>Создание androidForWorkApp
 

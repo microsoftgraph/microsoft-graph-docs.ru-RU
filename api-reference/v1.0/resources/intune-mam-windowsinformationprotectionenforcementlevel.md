@@ -3,12 +3,13 @@ title: Тип перечисления windowsInformationProtectionEnforcementLe
 description: Возможные значения для защиты НЗП принудительное применение уровней
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4b3ffff4e1d78ed8796f4b5be8768db99d6b4ae3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4661c80655defe85f27ac8259a961955552f7021
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820190"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964174"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>Тип перечисления windowsInformationProtectionEnforcementLevel
 

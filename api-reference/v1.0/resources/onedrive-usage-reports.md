@@ -2,12 +2,13 @@
 title: Отчеты об использовании OneDrive
 description: Отчеты об использовании OneDrive позволяют оценить пользу от OneDrive, просматривая общее количество используемых файлов и общий объем используемого хранилища для всех учетных записей OneDrive в организации. Вы также можете получить детализированные сведения для понимания того, каковы тенденции активных учетных записей OneDrive, с каким количеством файлов пользователи работали, какой объем хранилища используется. В этих отчетах также можно просматривать сведения с разбивкой по учетным записям OneDrive.
 localization_priority: Normal
-ms.openlocfilehash: f1c0ba915d83373febe968bbc87642ec3c2f58c5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: fdcf1eb277733da2ea46a30fb9985ea889ae87ab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876729"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962669"
 ---
 # <a name="onedrive-usage-reports"></a>Отчеты об использовании OneDrive
 

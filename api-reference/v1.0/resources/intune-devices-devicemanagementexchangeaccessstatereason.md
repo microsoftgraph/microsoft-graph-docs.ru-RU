@@ -3,12 +3,13 @@ title: Тип перечисления deviceManagementExchangeAccessStateReason
 description: Причина состояния доступа устройства Exchange.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 96bcc60daa0ec69788856413bf1d253d8b0cabfc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 956eca76c4ccabe0d3d5c003d38e35ced172febf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834796"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917414"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>Тип перечисления deviceManagementExchangeAccessStateReason
 

@@ -2,12 +2,14 @@
 title: Тип ресурса directorySettingTemplate
 description: Шаблоны параметр Directory представляют системные параметры, доступные для клиента. Параметры каталога могут создаваться на основе доступных directorySettingTemplates и значения, измененные из предварительно значения по умолчанию. Шаблоны параметр каталога не создан, обновлении или удалении. Эти параметры можно представить параметры на уровне клиента или может представлять параметров определенной сущности.  На данный момент доступны только шаблоны применяются к группам Office и включают параметры, такие как пользователи могут создавать группы или пригласить Гости из за пределами организации стать членам группы.
 localization_priority: Normal
-ms.openlocfilehash: e0df923854059723ee83380f7aa0f6425cf2afb9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d950b94c71bae70474bf9cdb9eee76fb8a3d9134
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806148"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957636"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>Тип ресурса directorySettingTemplate
 

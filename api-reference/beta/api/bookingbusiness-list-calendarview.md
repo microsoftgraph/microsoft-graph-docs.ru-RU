@@ -2,12 +2,14 @@
 title: Список резервирования представления календаря
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: 5abf88b4d0f0f5721ba3bcbf467406cfedfbe9f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 96da0d02d58f9ea4a3503e08c0733f4394dbbd6a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809466"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956943"
 ---
 # <a name="list-bookings-calendarview"></a>Список резервирования представления календаря
 

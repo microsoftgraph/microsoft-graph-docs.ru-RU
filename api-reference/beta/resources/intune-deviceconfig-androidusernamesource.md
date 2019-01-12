@@ -3,12 +3,13 @@ title: Тип перечисления androidUsernameSource
 description: Источник Android имя пользователя.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9b48598ae9ea46684c56364e1901e162003e2066
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 78094ae5221f02a0357de0398db11e05ef12e610
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938023"
 ---
 # <a name="androidusernamesource-enum-type"></a>Тип перечисления androidUsernameSource
 

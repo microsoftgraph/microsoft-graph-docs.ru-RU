@@ -3,12 +3,13 @@ title: Тип ресурса windows10VpnConfiguration
 description: С указанием конфигураций в этот профиль может проинструктировать устройства Windows 10 (настольного компьютера или мобильного) для подключения к требуемой конечной точки VPN. Путем указания типов безопасности и метод проверки подлинности ожидаемого конечной точкой виртуальной частной сети VPN-подключение можно сделать полностью для конечных пользователей.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 72617e1d91a6a9ce180e63733a209bcee7e204bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 775a4dfbeb46c27264b5539c51c63b29b488565b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816068"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937770"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>Тип ресурса windows10VpnConfiguration
 

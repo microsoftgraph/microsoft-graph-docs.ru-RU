@@ -3,12 +3,13 @@ title: Тип ресурса windows81CertificateProfileBase
 description: Конфигурация устройства
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9536d9d4342d02e406731e046029dee30bc4804c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1bd6a308cd49cf8a49bcc68db7138e24703fabd1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831362"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946002"
 ---
 # <a name="windows81certificateprofilebase-resource-type"></a>Тип ресурса windows81CertificateProfileBase
 

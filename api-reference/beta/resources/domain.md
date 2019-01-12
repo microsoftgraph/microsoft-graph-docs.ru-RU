@@ -3,12 +3,13 @@ title: Тип ресурса domain
 description: Представляет домен, связанный с клиентом.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 3aeede3a796bfdf6019e4cb840e6b7a949d96b20
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5d8dabf29285aea0b24613e584184dc13e02e499
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849513"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942397"
 ---
 # <a name="domain-resource-type"></a>Тип ресурса domain
 

@@ -3,12 +3,13 @@ title: Обновление объекта rangefont
 description: Обновление свойств объекта rangefont.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 4a9e73842a664ab11c7b61a5b3851e83b410938c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 40dfe68ec16415dbfa4abcbdb46da8cc9f89c961
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816662"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927305"
 ---
 # <a name="update-rangefont"></a>Обновление объекта rangefont
 

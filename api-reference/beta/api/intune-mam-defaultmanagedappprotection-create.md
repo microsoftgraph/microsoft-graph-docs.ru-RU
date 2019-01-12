@@ -3,12 +3,13 @@ title: Создание объекта defaultManagedAppProtection
 description: Создает объект defaultManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d479fa5dcb1df66bb67cd6e1d7ae550ff408fd43
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e51dd120df2f16c28f920219363fbc076dcdf839
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890414"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936650"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Создание объекта defaultManagedAppProtection
 
