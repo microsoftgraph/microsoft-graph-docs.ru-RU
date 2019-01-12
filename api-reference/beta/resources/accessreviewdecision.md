@@ -2,12 +2,14 @@
 title: Тип ресурса accessReviewDecision
 description: В Azure AD access дается обзор компонента, `accessReviewDecision` представляет Azure AD access review принятия решения об доступа к конкретной сущности.  В рамках проверки доступа, или экземпляр повторяющейся проверки доступа, существует один `accessReviewDecision` на проверенные пользователя.  К примеру Если группы имеет два Гости и один не гостевая-как члены и обзор доступа с гостевым выполняется для этой группы будет двух объектов решений проверки доступа.  Если проверяющий изменяет их принятия решений или другой редактор переопределяет их, а затем `accessReviewDecision` обновляется.
 localization_priority: Normal
-ms.openlocfilehash: 208337f3427fad65499b400dee769d379c38dcb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b6b10a53726e12c37a598f8df735a3f70174c807
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870051"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977558"
 ---
 # <a name="accessreviewdecision-resource-type"></a>Тип ресурса accessReviewDecision
 

@@ -1,12 +1,14 @@
 ---
 title: Вызов служб Office 365 в Visual Studio 2017 с помощью API Microsoft Graph
 description: Вы можете сделать так, чтобы приложение вызывало API Microsoft Graph, с помощью Подключенных служб Visual Studio. В этой статье описано, как получить фотографию профиля вошедшего пользователя, передать ее в OneDrive и отправить письмо со ссылкой для общего доступа к фотографии.
-ms.openlocfilehash: 33469dec7014d81ed55c2efceb96a26c2651d239
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: reports
+ms.openlocfilehash: 0a084fd7c4fa946854e3f932586f52cdcce370fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092641"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979238"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Вызов служб Office 365 в Visual Studio 2017 с помощью API Microsoft Graph
 

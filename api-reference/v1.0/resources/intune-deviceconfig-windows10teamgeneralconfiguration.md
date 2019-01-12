@@ -2,12 +2,14 @@
 title: Тип ресурса windows10TeamGeneralConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом windows10TeamGeneralConfiguration.
 localization_priority: Normal
-ms.openlocfilehash: 44325dc62e111200207b4ce56f92d38b249939ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 3888cc254dda44a6835f9c609dc74362861c8b70
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865753"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957349"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>Тип ресурса windows10TeamGeneralConfiguration
 
@@ -29,11 +31,11 @@ ms.locfileid: "27865753"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |azureOperationalInsightsBlockTelemetry|Boolean|Указывает, следует ли заблокировать оперативную аналитику Azure.|
 |azureOperationalInsightsWorkspaceId|String|Идентификатор рабочей области оперативной аналитики Azure.|

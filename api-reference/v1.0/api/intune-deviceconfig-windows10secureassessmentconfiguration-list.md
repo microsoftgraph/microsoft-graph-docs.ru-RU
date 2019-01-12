@@ -3,12 +3,13 @@ title: Перечисление объектов windows10SecureAssessmentConfig
 description: Список свойств и связей объектов windows10SecureAssessmentConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e8771fbbff958082d8baae2f3552eaf06f75a988
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 29fbc3d8b599fa3f290304d12f97b97c1d05c7cc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831523"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985770"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Перечисление объектов windows10SecureAssessmentConfiguration
 

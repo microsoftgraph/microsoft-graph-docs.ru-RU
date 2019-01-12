@@ -2,12 +2,13 @@
 title: Обновление подписки
 description: Возобновление подписки путем увеличения срока действия.
 localization_priority: Normal
-ms.openlocfilehash: 63bcf8f4084053356819601cd6306ad3ff5238c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: 3404a561f50e5d2f99d5d1db56f13772a1165c73
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836122"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968536"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -28,7 +29,7 @@ ms.locfileid: "27836122"
 | События                      | Calendars.Read      |
 | Сообщения                    | Mail.Read           |
 | Группы                      | Group.Read.All      |
-| Пользователи                       | User.Read.All       |
+| Users                       | User.Read.All       |
 | Диск (хранилище OneDrive пользователя)    | Files.ReadWrite.     |
 | На дисках (содержимое общих SharePoint и диски) | Files.ReadWrite.All |
 |Предупреждение системы безопасности               | SecurityEvents.ReadWrite.All |
@@ -47,7 +48,7 @@ PATCH /subscriptions/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="response"></a>Отклик
 

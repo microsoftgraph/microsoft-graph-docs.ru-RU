@@ -3,12 +3,13 @@ title: Список managedDeviceMobileAppConfigurationDeviceStatuses
 description: Свойства списка и связей объектов managedDeviceMobileAppConfigurationDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 810be50eb9532b0de226cb5b8264b464fc9c420b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e4d244539dba986435c92084be76a8824f23b672
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873215"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968619"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>Список managedDeviceMobileAppConfigurationDeviceStatuses
 

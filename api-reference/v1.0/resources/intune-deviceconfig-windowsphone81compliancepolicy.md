@@ -3,12 +3,13 @@ title: Тип ресурса windowsPhone81CompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Windows 8.1 Mobile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7a91c2dc43992bed132a0e6cd7d463a5d9d3b6e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7bbb6f809ad4ae0d4a4f4c660778091c9428922c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805287"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975605"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>Тип ресурса windowsPhone81CompliancePolicy
 

@@ -3,12 +3,13 @@ title: Перечисление объектов managedAndroidLobApp
 description: Список свойств и связей объектов managedAndroidLobApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 63b401e7559df91b41292e54d8ca20c4eb9ba7e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aaf78a00b6dddcda754d1dafb3fc14a9e6f78850
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808416"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969298"
 ---
 # <a name="list-managedandroidlobapps"></a>Перечисление объектов managedAndroidLobApp
 

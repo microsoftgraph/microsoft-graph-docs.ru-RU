@@ -3,12 +3,13 @@ title: Тип перечисления deviceThreatProtectionLevel
 description: Уровни защиты threat устройства для API защиты от угроз устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fa287d9259ed88f1b2240fd9bbdcaf77bcf9170e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a5b908b3d978c6a05897f466e43651b50f9931b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850584"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974986"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>Тип перечисления deviceThreatProtectionLevel
 

@@ -3,12 +3,13 @@ title: Обновление symantecCodeSigningCertificate
 description: Обновление свойства объекта symantecCodeSigningCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7d95627e9a2c678097be0c3cb818a03906e8a06f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f0a938fcb207ee242115eb89cd45da0b1c092a6f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824740"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968787"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Обновление symantecCodeSigningCertificate
 
@@ -52,11 +53,11 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |id|String|Ключ объекта.|
 |content|Binary|Сертификат подписи кода Symantec Windows в формате необработанные данные.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние Cert подготовить к работе или не подготовлен. Возможные значения: `notProvisioned`, `provisioned`.|
-|password|Строка|Пароль, необходимый для PFX-файл.|
+|password|String|Пароль, необходимый для PFX-файл.|
 |subjectName|String|Имя субъекта для сертификата.|
-|subject|Строка|Значения субъектов для сертификата.|
-|Имя поставщика|Строка|Имя поставщика для сертификата.|
-|издателя|Строка|Значение издателя сертификата.|
+|subject|String|Значения субъектов для сертификата.|
+|Имя поставщика|String|Имя поставщика для сертификата.|
+|издателя|String|Значение издателя сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Тип сертификата подписывания кода как Symantec Cert.|
 

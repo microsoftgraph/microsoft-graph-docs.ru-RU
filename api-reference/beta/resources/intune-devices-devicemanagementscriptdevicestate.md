@@ -3,12 +3,13 @@ title: Тип ресурса deviceManagementScriptDeviceState
 description: Содержит свойства для устройства, состояние сценарий управления устройства выполнения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d67b7a43817864906984ce21c90536572b0747d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f50026e549e9927b33ebe8a27b6206daecf0ea5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890540"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968857"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>Тип ресурса deviceManagementScriptDeviceState
 
@@ -29,9 +30,9 @@ ms.locfileid: "27890540"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ сущности состояния устройства устройства управления скрипта.|
+|id|String|Ключ сущности состояния устройства устройства управления скрипта.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего выполнения сценарий управления устройства. Возможные значения: `unknown`, `success`, `fail`.|
-|resultMessage|Строка|Подробные сведения о результатов выполнения.|
+|resultMessage|String|Подробные сведения о результатов выполнения.|
 |lastStateUpdateDateTime|DateTimeOffset|Время последнего выполняет сценарий управления устройства.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочный выполнение сценария управления устройства.|
 |errorDescription|String|Описание ошибки, соответствующий ошибочный выполнение сценария управления устройства.|

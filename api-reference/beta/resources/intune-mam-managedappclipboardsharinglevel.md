@@ -2,12 +2,14 @@
 title: Тип перечисления managedAppClipboardSharingLevel
 description: Представляет уровень, на который устройство буфер обмена могут совместно использоваться приложений
 localization_priority: Normal
-ms.openlocfilehash: 363e80b2242f5ac4d481389633aaa72fcc27894a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 41983b9bb30880768fff0ee02883c32fcb5305a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808178"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968419"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>Тип перечисления managedAppClipboardSharingLevel
 

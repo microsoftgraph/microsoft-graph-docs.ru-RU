@@ -3,12 +3,13 @@ title: Тип ресурса educationIdentitySynchronizationConfiguration
 description: Абстрактный базовый класс для всех школа данных профиля identity синхронизации конфигураций. Производные классы определите поведение синхронизации удостоверения. Ниже приведены производные типы.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: c04233dd7f0383d238f0a7e7245e9451fb764be6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 6d9841d4957d5330fc966f60a24582e101831b6c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869064"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969032"
 ---
 # <a name="educationidentitysynchronizationconfiguration-resource-type"></a>Тип ресурса educationIdentitySynchronizationConfiguration
 

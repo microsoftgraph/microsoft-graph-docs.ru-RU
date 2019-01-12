@@ -1,13 +1,15 @@
 ---
 title: Создание элементов с абсолютным положением на страницах OneNote
 description: В тексте страницы OneNote может содержаться много прямых (`div`, `img`) и дочерних (`object`) элементов, которые можно разместить независимо друг от друга на странице.
-author: Jewan-microsoft
-ms.openlocfilehash: 37e6fb88ff7738c273cd0a3ef9debfe5c6ef8975
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Normal
+ms.prod: onenote
+ms.openlocfilehash: 9630741091be52de8791f560a13b225ccce2e218
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321072"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981170"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>Создание элементов с абсолютным положением на страницах OneNote
 

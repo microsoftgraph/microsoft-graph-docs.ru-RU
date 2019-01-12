@@ -2,12 +2,14 @@
 title: Диспетчер приглашений
 description: 'С помощью диспетчера приглашений можно создать приглашение для добавления внешнего пользователя в организацию. '
 localization_priority: Priority
-ms.openlocfilehash: 4e47131fd7e3128366d482c314c059d833c8e101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0a0ee3ba23cb0c323a660b9afd26fa044a50897c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867440"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976739"
 ---
 # <a name="invitation-manager"></a>Диспетчер приглашений
 

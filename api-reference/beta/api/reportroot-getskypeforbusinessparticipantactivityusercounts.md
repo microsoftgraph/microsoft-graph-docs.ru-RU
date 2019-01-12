@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessParticipantActivityUserCounts'
 description: Отслеживайте динамику использования по количеству уникальных пользователей и типу конференций, в которых участвовали сотрудники организации (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через стороннюю службу).
 localization_priority: Normal
-ms.openlocfilehash: 5bc447e6cd4ea6845f60a01645d28b2745bb6fb5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 7883bb53a591210342cd97884a4197b2495e6757
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867573"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977649"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivityusercounts"></a>reportRoot: getSkypeForBusinessParticipantActivityUserCounts
 

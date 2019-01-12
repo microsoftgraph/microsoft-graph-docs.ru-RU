@@ -3,12 +3,13 @@ title: Обновление iosVppAppAssignedLicense
 description: Обновление свойства объекта iosVppAppAssignedLicense.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 226a192e5a3da8071b5c31a523f97c60ecec8b09
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 86b618275d1312953d14367d23bbde99aee0cff4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969074"
 ---
 # <a name="update-iosvppappassignedlicense"></a>Обновление iosVppAppAssignedLicense
 
@@ -49,11 +50,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|userEmailAddress|Строка|Адрес электронной почты пользователя.|
+|id|String|Ключ объекта.|
+|userEmailAddress|String|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|Строка|Имя участника-пользователя.|
+|userPrincipalName|String|Имя участника-пользователя.|
 
 
 

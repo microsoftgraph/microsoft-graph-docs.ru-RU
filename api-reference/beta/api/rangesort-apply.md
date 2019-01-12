@@ -3,12 +3,13 @@ title: 'RangeSort: apply'
 description: Выполняет сортировку.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 563e12db5716bbc49072043578e2412b6079df03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 66006bafdc26ecca85dda3dc0eb0999a387dddc5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850913"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968367"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -46,8 +47,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 |fields|SortField|Список условий для сортировки.|
 |matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
 |hasHeaders|boolean|Необязательный параметр. Указывает, есть ли у диапазона заголовок.|
-|orientation|string|Необязательный параметр. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows`, `Columns`.|
-|метод|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
+|orientation|строка|Необязательный параметр. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows`, `Columns`.|
+|метод|строка|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Отклик
 

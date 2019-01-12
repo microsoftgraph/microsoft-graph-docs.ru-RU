@@ -2,12 +2,13 @@
 title: Тип ресурса historyItem
 description: Представляет элемент журнала для действия в приложении. Действия пользователя представляют одну целевую в вашем приложении -, например Показать TV, документа или текущей кампании в игру. Когда пользователь подключает с помощью этого действия, деловые регистрируются как элемента журнала, которое указывает время начала и окончания для этого действия. Как пользователь повторно массовых с этой операции со временем, несколько элементов журнала записываются действия одного пользователя.
 localization_priority: Normal
-ms.openlocfilehash: 7eb6d72b55530d1938c9c092dd5b80f54929a3e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 168587aa54446aeee78107deaa9087c6bffb8586
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825776"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976956"
 ---
 # <a name="historyitem-resource-type"></a>Тип ресурса historyItem
 

@@ -3,12 +3,13 @@ title: Создание объекта rejectedSender
 description: Добавление пользователя или группы в список объектов rejectedSender.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: dbdf31c34fb9934ff705bc8d2be03efda8f4de12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 851fd68fd1457ad4e926290bc103fc8222ead7c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826917"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968654"
 ---
 # <a name="create-rejectedsender"></a>Создание объекта rejectedSender
 Добавление пользователя или группы в список объектов rejectedSender.

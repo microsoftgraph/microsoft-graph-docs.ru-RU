@@ -3,12 +3,13 @@ title: Тип ресурса RangeFill
 description: Представляет фон объекта диапазона.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8ceab66373331b6e144b69119d521a3e5ddccdc7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 4043122f4c35c3e7f1c6f9d3919687833d35b9b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817761"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974345"
 ---
 # <a name="rangefill-resource-type"></a>Тип ресурса RangeFill
 

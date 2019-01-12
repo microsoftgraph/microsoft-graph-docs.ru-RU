@@ -2,12 +2,14 @@
 title: Обзор API для образования
 description: API в Microsoft Graph дополняет ресурсы Office 365 сведениями, актуальными для учебных заведений, включая данные об учреждениях, классах, пользователях (учащихся и преподавателях), заданиях и сданных работах. Это упрощает создание решений, интегрируемых с образовательными ресурсами, для различных сценариев в учебных заведениях и аудиториях.
 author: mmast-msft
-ms.openlocfilehash: 2085c9be619e3de5eb4df457579461445423113a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: education
+ms.openlocfilehash: 0d3f5360d0ef40283021a1e037c40df66d90dd92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344991"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985489"
 ---
 # <a name="education-api-overview"></a>Обзор API для образования
 
