@@ -3,12 +3,13 @@ title: Get iosLobApp
 description: Чтение свойств и связей объекта iosLobApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 629a671d3261b8d8e884178a9d018879aa0bda0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cba5cf8c7d2bd093e3de1d8fb556358991d38e29
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836465"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968724"
 ---
 # <a name="get-ioslobapp"></a>Get iosLobApp
 
@@ -55,7 +56,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

@@ -3,12 +3,13 @@ title: Тип ресурса teamsAsyncOperation
 description: 'Операцию асинхронного группами Майкрософт — это операция, выходит за рамки жизненным циклом одним запросом API. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 20a616d3c09337b96c50cc008e4f56021c61e593
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 240e195d01c8fca2b0e92d67d28dcc4b41876e44
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885577"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974520"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>Тип ресурса teamsAsyncOperation
 
@@ -30,7 +31,7 @@ ms.locfileid: "27885577"
 |lastActionDateTime|DateTimeOffset |Время последнего обновления асинхронной операции.|
 |attemptsCount|Int32|Количество раз, когда операция перед помечаются как успешные и неудачные.|
 |targetResourceId|Идентификатор GUID |Идентификатор объекта, который создал или изменены в результате этой асинхронной операции, обычно [группы](../resources/team.md).|
-|targetResourceLocation|string|Расположение объекта, который создал или изменил как результат этой асинхронной операции. Этот URL-адрес следует рассматривать как Непрозрачное значение и не синтаксический анализ в его компонента пути.|
+|targetResourceLocation|строка|Расположение объекта, который создал или изменил как результат этой асинхронной операции. Этот URL-адрес следует рассматривать как Непрозрачное значение и не синтаксический анализ в его компонента пути.|
 |error|[operationError](operationerror.md)|Любая ошибка, которая приводит к сбою асинхронной операции.|
 
 ## <a name="json-representation"></a>Представление JSON

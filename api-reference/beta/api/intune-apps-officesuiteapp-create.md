@@ -3,12 +3,13 @@ title: Создание officeSuiteApp
 description: Создание нового объекта officeSuiteApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6cc3aaff3a206d12d589372a3edc769cb9dc369d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ab96d73869678a264fed17ba3df3c9bdbdbab2d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837956"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971202"
 ---
 # <a name="create-officesuiteapp"></a>Создание officeSuiteApp
 
@@ -49,7 +50,7 @@ POST /deviceAppManagement/mobileApps
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -64,21 +65,21 @@ POST /deviceAppManagement/mobileApps
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние передачи. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|autoAcceptEula|Логический|Значение, чтобы принять условия лицензионного соглашения автоматически на устройстве enduser.|
+|autoAcceptEula|Boolean|Значение, чтобы принять условия лицензионного соглашения автоматически на устройстве enduser.|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md) коллекции|Коды продуктов, представляющих SKU набора приложений Office 365. Возможные значения: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
 |excludedApps;|[excludedApps](../resources/intune-apps-excludedapps.md);|Свойство для представления приложения, исключенных из выбранного продукта Office 365 идентификатор.|
-|useSharedComputerActivation|Логический|Свойство для представления, является ли активация совместно используемый компьютер используется не для набора приложений Office 365.|
+|useSharedComputerActivation|Boolean|Свойство для представления, является ли активация совместно используемый компьютер используется не для набора приложений Office 365.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Свойство для представления канала обновления Office 365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версию пакета приложения Office 365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |localesToInstall|Коллекция String|Свойство для представления языковых стандартов, которые устанавливаются при установке приложения из Office 365. Используется стандартный 6033 RFC. Параметры REF:https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Чтобы задать уровень отображения для пользовательского интерфейса программы установки ход выполнения установки на устройстве. Возможные значения: `none`, `full`.|
-|shouldUninstallOlderVersionsOfOffice|Логический|Свойство, позволяющее определить, нужно ли удалить существующий MSI Office, если пакет приложений Office 365 развертывается на устройство или нет.|
-|targetVersion|Строка|Свойство для представления конкретной версия набора приложений Office 365, должны оставаться развернутое на устройствах.|
-|updateVersion|Строка|Свойство для представления версии обновления, в котором версия целевой доступна для набора приложений Office 365.|
+|shouldUninstallOlderVersionsOfOffice|Boolean|Свойство, позволяющее определить, нужно ли удалить существующий MSI Office, если пакет приложений Office 365 развертывается на устройство или нет.|
+|targetVersion|String|Свойство для представления конкретной версия набора приложений Office 365, должны оставаться развернутое на устройствах.|
+|updateVersion|String|Свойство для представления версии обновления, в котором версия целевой доступна для набора приложений Office 365.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -141,7 +142,7 @@ Content-length: 1466
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

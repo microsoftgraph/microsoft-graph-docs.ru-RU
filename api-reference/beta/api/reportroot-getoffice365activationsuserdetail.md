@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365ActivationsUserDetail'
 description: Получите сведения о пользователях, которые активировали Office 365.
 localization_priority: Normal
-ms.openlocfilehash: 686a27f0942f89a9d173544d565c2562622c6e05
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 55ec9d8a279c48cc394d75994240e2a5afd8eba1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835282"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971006"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 
@@ -45,7 +46,7 @@ GET /reports/getOffice365ActivationsUserDetail
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -92,7 +93,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserDetail?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -136,7 +137,7 @@ Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserDetail?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

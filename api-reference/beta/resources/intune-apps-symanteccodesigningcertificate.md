@@ -3,12 +3,13 @@ title: Тип ресурса symantecCodeSigningCertificate
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a2e4f53e0ca7329f163b507677e2b91a4c02fe12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9c195a31dae12c1a67d8226a219fe57a68bf905d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845012"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965938"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>Тип ресурса symantecCodeSigningCertificate
 
@@ -29,11 +30,11 @@ ms.locfileid: "27845012"
 |id|String|Ключ объекта.|
 |content|Binary|Сертификат подписи кода Symantec Windows в формате необработанные данные.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние Cert подготовить к работе или не подготовлен. Возможные значения: `notProvisioned`, `provisioned`.|
-|password|Строка|Пароль, необходимый для PFX-файл.|
+|password|String|Пароль, необходимый для PFX-файл.|
 |subjectName|String|Имя субъекта для сертификата.|
-|subject|Строка|Значения субъектов для сертификата.|
-|Имя поставщика|Строка|Имя поставщика для сертификата.|
-|издателя|Строка|Значение издателя сертификата.|
+|subject|String|Значения субъектов для сертификата.|
+|Имя поставщика|String|Имя поставщика для сертификата.|
+|издателя|String|Значение издателя сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Тип сертификата подписывания кода как Symantec Cert.|
 

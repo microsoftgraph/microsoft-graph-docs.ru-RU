@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Отправка приглашения на доступ к элементу
 localization_priority: Normal
-ms.openlocfilehash: 1ba3bc3465274c6e1525d54c1ba1b59041b1e59f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 23e58c063e31f8ad68ac887a4fd1d2cd4dcd5274
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855582"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976963"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -93,7 +94,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

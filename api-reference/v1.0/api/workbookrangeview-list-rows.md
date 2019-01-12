@@ -3,12 +3,13 @@ title: Получение списка строк rangeView
 description: Получение списка, который включает в себя объекты видимых ячеек в диапазоне.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9116c20c3c248c1d689e71a7d08bf0c3188a95ac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: ea0c4043bdc4f2edb56fb00257cd50e0d44eb65c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861301"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974701"
 ---
 # <a name="list-rangeview-rows"></a>Получение списка строк rangeView
 
@@ -52,7 +53,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/rows
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

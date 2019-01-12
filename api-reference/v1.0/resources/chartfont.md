@@ -2,12 +2,14 @@
 title: Тип ресурса ChartFont
 description: Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта диаграммы.
 localization_priority: Normal
-ms.openlocfilehash: 9b2d6e07f5049449d71be45b41585ed3bd300b7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 85a11d59e58d6968154a4ede12fa978b1f061de1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850788"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972791"
 ---
 # <a name="chartfont-resource-type"></a>Тип ресурса ChartFont
 

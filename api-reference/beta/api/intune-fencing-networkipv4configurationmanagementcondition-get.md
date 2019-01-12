@@ -3,12 +3,13 @@ title: Получение networkIPv4ConfigurationManagementCondition
 description: Чтение свойства и связи объекта networkIPv4ConfigurationManagementCondition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eb628aa17138bad6f03d96c9c9671df8339af9be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 51265c2ecc162e3a0235e11bd450ac3cbce16bbd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821898"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973183"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>Получение networkIPv4ConfigurationManagementCondition
 

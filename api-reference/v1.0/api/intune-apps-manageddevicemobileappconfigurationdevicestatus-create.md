@@ -3,12 +3,13 @@ title: Создание managedDeviceMobileAppConfigurationDeviceStatus
 description: Создание нового объекта managedDeviceMobileAppConfigurationDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2871583d7fb68ec0004b2a97390b085416ed4495
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3167845ea24dae9e0f2875406d4a1f74b91752d6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828870"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976823"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>Создание managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -47,7 +48,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
 |userName|String|Имя пользователя в отчете.|
 |deviceModel|String|Модель устройства в отчете.|

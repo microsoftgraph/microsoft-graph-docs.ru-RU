@@ -3,12 +3,13 @@ title: Тип ресурса windowsKioskMultipleApps
 description: Класс, используемый для идентификации конфигурацию разных приложения для базовой конфигурации
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 01758c66a466b66fcba6b443f80d0350d308756d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3770f8c63be230dff97e43d3706ed35d79826751
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851207"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977131"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Тип ресурса windowsKioskMultipleApps
 
@@ -24,8 +25,8 @@ ms.locfileid: "27851207"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) коллекции|Это единственный приложений для магазина Windows, чтобы оно было доступно для запуска в меню Пуск.|
-|showTaskBar|Логический|Этот параметр позволяет администратору задать, отображается ли панель задач.|
-|disallowDesktopApps|Логический|Этот параметр показывает, что приложений для настольных систем. По умолчанию установлено значение true.|
+|showTaskBar|Boolean|Этот параметр позволяет администратору задать, отображается ли панель задач.|
+|disallowDesktopApps|Boolean|Этот параметр показывает, что приложений для настольных систем. По умолчанию установлено значение true.|
 |startMenuLayoutXml|Binary|Позволяет администраторам переопределить макет Пуск по умолчанию и не позволяет пользователю изменять его.Чтобы изменить макет, необходимо указать XML-файл на основе схемы изменения макета. XML должен быть в двоичном формате.|
 
 ## <a name="relationships"></a>Связи

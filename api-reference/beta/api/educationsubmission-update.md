@@ -3,12 +3,13 @@ title: Обновление educationsubmission
 description: Добавьте марки и свои отзывы и предложения для отправки. Только учителя можно выполнить эту операцию. Обратите внимание на то, не имеет доступа к свойствам марки основные разрешения и поэтому не могут выполнять запись марки или свои отзывы и предложения. Это действие не освобождает марки и свои отзывы и предложения для учащихся. Преподаватель должен выполнить действие явные выпуска для данных марки должно быть возвращено для студента.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 516940f9a6dd43460aa0ceb9b955c41dc89196c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 7ebe8445a6537333ed17f3626a58258a952ee844
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828786"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975339"
 ---
 # <a name="update-educationsubmission"></a>Обновление educationsubmission
 

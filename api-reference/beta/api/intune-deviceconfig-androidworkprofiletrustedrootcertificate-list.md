@@ -3,12 +3,13 @@ title: Список androidWorkProfileTrustedRootCertificates
 description: Свойства списка и связей объектов androidWorkProfileTrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0cb7ff44af333b38eb15fd28cf94628755e8ad79
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a0761450a28482489825f1b3cbf2731165104ac3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817166"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974107"
 ---
 # <a name="list-androidworkprofiletrustedrootcertificates"></a>Список androidWorkProfileTrustedRootCertificates
 
@@ -46,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [androidWorkProfileTrustedRootCertificate](../resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -56,7 +57,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

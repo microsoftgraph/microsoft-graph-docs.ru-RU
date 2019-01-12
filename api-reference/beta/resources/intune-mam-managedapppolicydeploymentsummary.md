@@ -3,12 +3,13 @@ title: Тип ресурса managedAppPolicyDeploymentSummary
 description: ManagedAppEntity — это базовый тип для всех остальных типов объектов в рабочем процессе управления приложениями.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: edc039f5f5da1b0cf0798fcd7055d5239926acf1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4ab34deb28349e1860d4970c14171efedf44267f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878080"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976340"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>Тип ресурса managedAppPolicyDeploymentSummary
 
@@ -26,12 +27,12 @@ ManagedAppEntity — это базовый тип для всех остальн
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Н/Д|
+|displayName|String|Н/Д|
 |configurationDeployedUserCount|Int32|Н/Д|
 |lastRefreshTime|DateTimeOffset|Н/Д|
 |configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Н/Д|
-|id|Строка|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет

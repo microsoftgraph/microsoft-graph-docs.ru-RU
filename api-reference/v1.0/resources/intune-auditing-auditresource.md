@@ -3,12 +3,13 @@ title: Тип ресурса auditResource
 description: Класс, содержащий свойства ресурса аудита.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7f8fc3a96b3d17759e1e65eaa17c6571e4cec347
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4778e01076e2af1c18edb16a2587f65396cc6466
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844739"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977254"
 ---
 # <a name="auditresource-resource-type"></a>Тип ресурса auditResource
 

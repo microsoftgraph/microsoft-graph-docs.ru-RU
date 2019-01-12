@@ -3,12 +3,13 @@ title: 'message: replyAll'
 description: 'Ответить всем получателям сообщения, указав комментария и изменение любые обновляемые свойства '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5377de8737445f61d34e1d1148af9376cb7e9658
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 1abbf271350c6bbbd10af1f17c6c7d3069c3cf22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843304"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976368"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -45,8 +46,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | строка  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -87,7 +88,7 @@ Content-Type: application/json
 ```
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

@@ -3,12 +3,13 @@ title: Удаление androidForWorkGmailEasConfiguration
 description: Удаляет androidForWorkGmailEasConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a28d21b63360d4d3c5ef24637dfe098b7dc8feff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d6ff48bd17ff942b52b99417d9ad4c6108055d07
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832588"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975311"
 ---
 # <a name="delete-androidforworkgmaileasconfiguration"></a>Удаление androidForWorkGmailEasConfiguration
 

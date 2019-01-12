@@ -3,12 +3,13 @@ title: Удаление educationSynchronizationProfile
 description: Удаление профиля синхронизации данных school в клиентов на основе идентификатора.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 09cc19b22cfa433cef39c81a6cbeadeddcf52ace
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: d3c55cd90734fa78654baf10c940cd0debc57c50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870366"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976158"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Удаление educationSynchronizationProfile
 
@@ -19,7 +20,7 @@ ms.locfileid: "27870366"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения | Permissions |
+| Тип разрешения | Разрешения |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 
@@ -32,7 +33,7 @@ DELETE /synchronizationProfiles/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.  |
+| Authorization  | строка  | Bearer {токен}. Обязательный.  |
 |Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 

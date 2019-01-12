@@ -3,12 +3,13 @@ title: 'Вызовите: Включение звука'
 description: Позволяет приложениям включить сам.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 3f010b7b7fb790b40455c8e09b785ffe29af0983
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: e4474fc092f141d4cf1fb94f3bde2725b8a1b078
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813680"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975402"
 ---
 # <a name="call-unmute"></a>Вызовите: Включение звука
 
@@ -23,7 +24,7 @@ ms.locfileid: "27813680"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Отсутствуют.                                        |
+| Приложение                            | Отсутствуют.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,9 +43,9 @@ POST /applications/{id}/calls/{id}/unmute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|Строка|Контекст клиента.|
+|clientContext|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -67,7 +68,7 @@ Content-Length: 46
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

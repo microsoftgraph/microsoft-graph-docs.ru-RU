@@ -3,12 +3,13 @@ title: Тип ресурса deviceConfigurationDeviceOverview
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f0d2de25034c28fed12ad8df4caa5e6c3de8506
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 754fc4ffe7fd92ae2630b9c4a6a2686cdb9f3e0a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837031"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973218"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>Тип ресурса deviceConfigurationDeviceOverview
 
@@ -26,7 +27,7 @@ ms.locfileid: "27837031"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
 |notApplicablePlatformCount|Int32|Число неприменимо устройств из-за несоответствие платформы и политики|

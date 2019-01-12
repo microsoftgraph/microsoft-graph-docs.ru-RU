@@ -3,12 +3,13 @@ title: Создание звуковых группы маршрутизации
 description: Создание нового **audioRoutingGroup**.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 4f8a430e46137d54df5fc6d99a9676f4faa0d5ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fe623a581233324e13c949d16570b1396fdd663c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838481"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966386"
 ---
 # <a name="create-audio-routing-group"></a>Создание звуковых группы маршрутизации
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/audioRoutingGroups
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [audioRoutingGroup](../resources/audioroutinggroup.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [audioRoutingGroup](../resources/audioroutinggroup.md) и кода ответа в теле ответа.
 
 ## <a name="examples"></a>Примеры

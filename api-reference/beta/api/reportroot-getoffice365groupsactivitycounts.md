@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365GroupsActivityCounts'
 description: Узнайте, сколько различных действий было в группах.
 localization_priority: Normal
-ms.openlocfilehash: 4ee6dc35f93188b63d5c3ab4b6a7733e015747f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 39e434066dad74998c379dc3d1bc54276fd4c8ea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841071"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966302"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 
@@ -51,7 +52,7 @@ GET /reports/getOffice365GroupsActivityCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -104,7 +105,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -148,7 +149,7 @@ Report Refresh Date,Exchange Emails Received,Yammer Messages Posted,Yammer Messa
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

@@ -3,12 +3,13 @@ title: Получение объекта deviceAndAppManagementRoleAssignment
 description: Чтение свойств и связей объекта deviceAndAppManagementRoleAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f441db82b73a0c8d7f3a13e1212ee625b8c940f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e8683667e8ae5e3ffed6191b31116a1531b2e9c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865900"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974735"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>Получение объекта deviceAndAppManagementRoleAssignment
 
@@ -57,7 +58,7 @@ GET /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 GET https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

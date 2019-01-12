@@ -2,12 +2,14 @@
 title: 'Worksheet: UsedRange'
 description: Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если лист пустой, эта функция вернет верхнюю левую ячейку.
 localization_priority: Normal
-ms.openlocfilehash: edbe1a45f22ec07b0225be70549a2a7d59faf7eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 444a88dfaad3983948a139f2a3db304c200a1153
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894364"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975304"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 

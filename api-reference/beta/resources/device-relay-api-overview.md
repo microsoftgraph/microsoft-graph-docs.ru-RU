@@ -1,14 +1,15 @@
 ---
 title: См. также
 description: '{Это Обзор API уровня модуля ретрансляции устройства}.'
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 39b856d95232fc54e85dbefc0f46f5eadbc7a646
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: df665c5a34193b6f5bddd9b93cba2a8b46aa46c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875980"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966393"
 ---
 # <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>Используйте устройство реле API для передачи взаимодействие с пользователем через устройства (Предварительная версия)
 

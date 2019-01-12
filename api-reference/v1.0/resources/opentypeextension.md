@@ -2,12 +2,13 @@
 title: Тип ресурсов openTypeExtension (открытые расширения)
 description: Открыть extensions (ранее называлась расширения данные Office 365) предоставляют простой способ добавлять нетипизированный свойства непосредственно к ресурсам в Microsoft Graph.
 localization_priority: Priority
-ms.openlocfilehash: e0e7bf992d75ccb8ee04a3cccb90fd42c996d50a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 854897e1cc4d887fc0f4d2f184a4e745e5cdc468
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891688"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977516"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -72,7 +73,7 @@ ms.locfileid: "27891688"
 |Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |extensionName|String|Уникальный текстовый идентификатор для открытых расширений открытого типа. Обязательно свойство.|
-|id|Строка| Полный идентификатор, в котором сцеплены тип расширения и свойство **extensionName**. Только для чтения.|
+|id|String| Полный идентификатор, в котором сцеплены тип расширения и свойство **extensionName**. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 

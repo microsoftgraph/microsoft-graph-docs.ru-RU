@@ -3,12 +3,13 @@ title: Создание educationSchool
 description: Создание учебного заведения.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 9fdc61d966b0b5bd05d9aee0e382df9dc410f829
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: b5639c0eb3ab1052d43b6a3faf04106585aaa206
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814765"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973925"
 ---
 # <a name="create-educationschool"></a>Создание educationSchool
 
@@ -77,7 +78,7 @@ Content-length: 292
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

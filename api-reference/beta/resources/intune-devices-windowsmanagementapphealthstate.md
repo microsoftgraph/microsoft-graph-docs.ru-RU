@@ -3,12 +3,13 @@ title: Тип ресурса windowsManagementAppHealthState
 description: Сущность состояние работоспособности приложения управления Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 23381aed47ade8f42937f6bc48cfff33b36d1fa7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8cf679cf1a5ac86c47354db2fc9f800647d309c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875301"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976473"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>Тип ресурса windowsManagementAppHealthState
 
@@ -29,12 +30,12 @@ ms.locfileid: "27875301"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
+|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояния работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|Строка|Управление приложения установленной версии Windows.|
+|installedVersion|String|Управление приложения установленной версии Windows.|
 |lastCheckInDateTime|DateTimeOffset|Приложение управления Windows последний раз.|
 |deviceName|String|Имя устройства, на какие Windows установлено приложение управления.|
-|deviceOSVersion|Строка|10 версии Windows устройства, на какие Windows установлено приложение управления.|
+|deviceOSVersion|String|10 версии Windows устройства, на какие Windows установлено приложение управления.|
 
 ## <a name="relationships"></a>Связи
 Нет

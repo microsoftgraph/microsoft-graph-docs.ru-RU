@@ -2,12 +2,14 @@
 title: Список сообщения
 description: 'Получаете список сообщений в канале команды (без ответов). Чтобы получить ответы на сообщения, вызовите ответов сообщения списка или ответе на сообщение get API. '
 localization_priority: Priority
-ms.openlocfilehash: c972b84b0ec4de9389f8a0e861cafb74d7b23020
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 1af48a84d6ffd39d8e592fa6db54388f4c9460a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867097"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966596"
 ---
 # <a name="list-channel-messages"></a>Список сообщения
 

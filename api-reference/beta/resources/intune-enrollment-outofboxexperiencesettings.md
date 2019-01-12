@@ -3,12 +3,13 @@ title: Тип ресурса outOfBoxExperienceSettings
 description: В соответствующем взаимодействия параметр
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: af276dd520df9ee3b257650e703813de355bed9a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 70f1fb573409a55dd1e586b8e88133c5535de894
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882735"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977292"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>Тип ресурса outOfBoxExperienceSettings
 
@@ -20,12 +21,12 @@ ms.locfileid: "27882735"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|hidePrivacySettings|Логический|Показать или скрыть параметры конфиденциальности для пользователя|
-|hideEULA|Логический|Показать или скрыть лицензионное соглашение для пользователя|
+|hidePrivacySettings|Boolean|Показать или скрыть параметры конфиденциальности для пользователя|
+|hideEULA|Boolean|Показать или скрыть лицензионное соглашение для пользователя|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md).|Тип проверки подлинности соединения AAD. Возможные значения: `singleUser`, `shared`.|
-|skipKeyboardSelectionPage|Логический|Если набор, а затем пропустить раскладка клавиатуры страницы Если значение языка и региона|
-|hideEscapeLink|Логический|Если параметр имеет значение true, затем пользователь не может запуститься через с другой учетной записи для входа в компании|
+|skipKeyboardSelectionPage|Boolean|Если набор, а затем пропустить раскладка клавиатуры страницы Если значение языка и региона|
+|hideEscapeLink|Boolean|Если параметр имеет значение true, затем пользователь не может запуститься через с другой учетной записи для входа в компании|
 
 ## <a name="relationships"></a>Связи
 Нет

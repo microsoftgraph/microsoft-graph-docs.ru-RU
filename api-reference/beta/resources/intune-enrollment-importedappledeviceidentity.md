@@ -3,12 +3,13 @@ title: Тип ресурса importedAppleDeviceIdentity
 description: Ресурс importedAppleDeviceIdentity представляет идентификатор импортированных устройства устройства Apple.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b7ad629721190b67e001ea56ca732eb325358768
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf6c13e4bb34141e2f1ee7e98556cf0e4a8fb6e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887446"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977481"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>Тип ресурса importedAppleDeviceIdentity
 
@@ -30,15 +31,15 @@ ms.locfileid: "27887446"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|serialNumber|Строка|Серийный номер устройства|
-|requestedEnrollmentProfileId|Строка|Admin идентификатор профиля регистрации планирует применять на устройство во время следующего регистрации|
+|id|String|Ключ объекта.|
+|serialNumber|String|Серийный номер устройства|
+|requestedEnrollmentProfileId|String|Admin идентификатор профиля регистрации планирует применять на устройство во время следующего регистрации|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль регистрации времени была назначена на устройство|
 |isSupervised|Boolean|Указывает, если управляет устройства Apple. Дополнительные сведения о был создан:https://support.apple.com/en-us/HT202837|
 |discoverySource;|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройства Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|
 |lastContactedDateTime|DateTimeOffset|Связаться с даты последнего устройства|
-|описание|Строка|Описание устройства|
+|описание|String|Описание устройства|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[Платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 

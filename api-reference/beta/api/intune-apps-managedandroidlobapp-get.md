@@ -3,12 +3,13 @@ title: Get managedAndroidLobApp
 description: Чтение свойств и связей объекта managedAndroidLobApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 06604421b274b6ba5900f5e7cba636f8a8e41bb9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f28b352d1fa15902016db9005f355a27194eb2ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838236"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965504"
 ---
 # <a name="get-managedandroidlobapp"></a>Get managedAndroidLobApp
 
@@ -59,7 +60,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

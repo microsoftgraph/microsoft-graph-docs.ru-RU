@@ -3,12 +3,13 @@ title: Тип ресурса advancedThreatProtectionOnboardingStateSummary
 description: Windows Защитник расширенной угроз защиты входящая состояние Сводка по учетной записи.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b700658c6ae7b486ae52f4ea226b7a6bab7f0af6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c308f91862e1d709d92a45d0a83148df5c23fd88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838222"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966603"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Тип ресурса advancedThreatProtectionOnboardingStateSummary
 
@@ -26,7 +27,7 @@ Windows Защитник расширенной угроз защиты вход
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор.|
+|id|String|Уникальный идентификатор.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|

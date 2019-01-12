@@ -1,14 +1,15 @@
 ---
 title: Тип ресурса onenoteOperation
 description: Состояние определенных операций OneNote, выполняющихся в течение длительного времени.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 89c1d1ac3404653ae3996a95bdf40c22fdd3b7c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: eaab313e9399e6e8724d5096b7ac29ec315889ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845936"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977467"
 ---
 # <a name="onenoteoperation-resource-type"></a>Тип ресурса onenoteOperation
 
@@ -46,9 +47,9 @@ ms.locfileid: "27845936"
 |id|строка|Идентификатор операции. Только для чтения.|
 |lastActionDateTime| DateTimeOffset |Время последнего действия операции.|
 |resourceId|строка|Идентификатор ресурса.|
-|resourceLocation|string|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
-|status|string|Текущее состояние операции: `notstarted`, `running`, `completed`, `failed`. |
-|percentComplete|string|Процент завершения операции, если операция в состоянии `running`.
+|resourceLocation|строка|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
+|status|строка|Текущее состояние операции: `notstarted`, `running`, `completed`, `failed`. |
+|percentComplete|строка|Процент завершения операции, если операция в состоянии `running`.
 
 ## <a name="relationships"></a>Связи
 Нет

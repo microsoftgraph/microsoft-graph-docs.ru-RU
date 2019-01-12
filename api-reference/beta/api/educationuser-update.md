@@ -2,12 +2,14 @@
 title: Обновление свойств educationUser
 description: Обновление свойств объекта **educationuser**.
 localization_priority: Normal
-ms.openlocfilehash: a6479095abbb1884acf98377e8fef9d115d4a6c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 52b9e3f3784bae75ed9a2d4aa91fc52dd8917de6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843514"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976186"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -46,11 +48,11 @@ PATCH /education/users/{id}
 |surname| String | Фамилия пользователя|
 |mail| String| Электронный адрес|
 |mobilePhone| String | Номер мобильного телефона пользователя |
-|externalSource|string| Возможные значения: `sis`, `manual`, `enum_sentinel`.|
-|externalSource|string| Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|строка| Возможные значения: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|строка| Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Почтовый адрес пользователя.|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Адрес проживания пользователя.|
-|primaryRole|string| Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`.|
+|primaryRole|строка| Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| Если основная роль — student, этот блок будет содержать данные, касающиеся учащегося.|
 |teacher|[educationTeacher](../resources/educationteacher.md)| Если основная роль — teacher, этот блок будет содержать данные, касающиеся преподавателя.|
 
@@ -76,7 +78,7 @@ Content-length: 508
   "surname": "Cazares",
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

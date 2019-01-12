@@ -2,12 +2,14 @@
 title: Получение доступа без пользователя
 description: 'Некоторые приложения вызывают Microsoft Graph от своего имени, а не от имени пользователя. Зачастую это фоновые службы и управляющие программы, которые работают на сервере без выполнившего вход пользователя. Примером таких приложений можно назвать службу архивации электронной почты, которая выходит из спящего режима и работает в течение ночи. В некоторых случаях приложения также могут вызывать Microsoft Graph от своего имени, когда пользователь выполнил вход. Например, приложению может потребоваться возможность, для использования которой нужны более высокие привилегии, чем те, которыми обладает пользователь.  '
 author: jackson-woods
-ms.openlocfilehash: 7798afd402e0ebc6fb70f8f0cc056b484f559dc5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ca003bc10551c03dd781db05aad7170b799304b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320876"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977502"
 ---
 # <a name="get-access-without-a-user"></a>Получение доступа без пользователя
 

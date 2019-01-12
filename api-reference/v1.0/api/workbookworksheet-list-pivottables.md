@@ -3,12 +3,13 @@ title: Получение списка pivotTables
 description: Получение списка объектов workbookpivottable.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 6de7870f0fe16582e463ac1ff833ad282460888e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 427a1b1a61ac4594497d8016eaa2eb8eed9fd732
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886018"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965756"
 ---
 # <a name="list-pivottables"></a>Получение списка pivotTables
 
@@ -52,7 +53,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

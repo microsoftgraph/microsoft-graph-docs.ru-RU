@@ -2,12 +2,13 @@
 title: 'reportRoot: getOneDriveActivityUserCounts'
 description: Отслеживайте, как меняется количество активных пользователей OneDrive.
 localization_priority: Normal
-ms.openlocfilehash: 824aa9b51984c440118eac95a352fde2b6146cf5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: bef98fa708f62ec7d79eae0dd432ab821a9a609e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965784"
 ---
 # <a name="reportroot-getonedriveactivityusercounts"></a>reportRoot: getOneDriveActivityUserCounts
 
@@ -48,7 +49,7 @@ GET /reports/getOneDriveActivityUserCounts(period='{period_value}')
 | Авторизация | Bearer {токен}. Обязательный.                |
 | If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательный параметр. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета. Этот URL-адрес можно найти в заголовке `Location` отклика.
 
@@ -80,7 +81,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityUserCounts(period='D7')
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

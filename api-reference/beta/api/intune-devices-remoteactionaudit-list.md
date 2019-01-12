@@ -3,12 +3,13 @@ title: Список remoteActionAudits
 description: Свойства списка и связей объектов remoteActionAudit.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6de4fdfd13e750fa06afa1436db1d4140152e312
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8124c5da95e01c1c0513e5f8ac88cd45d7943fd5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847449"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971174"
 ---
 # <a name="list-remoteactionaudits"></a>Список remoteActionAudits
 
@@ -45,7 +46,7 @@ GET /deviceManagement/remoteActionAudits
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ GET /deviceManagement/remoteActionAudits
 GET https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

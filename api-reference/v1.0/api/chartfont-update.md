@@ -3,12 +3,13 @@ title: Обновление объекта ChartFont
 description: Обновление свойств объекта chartfont.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: b9a3a6e3fd29c551ef9b26e8c5d4ac939b0e5dea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 077b7b4431671d2e615517c030df7868c580f581
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858074"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974261"
 ---
 # <a name="update-chartfont"></a>Обновление объекта ChartFont
 
@@ -47,7 +48,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 |size|Double|Размер шрифта (например, 11)|
 |underline|строка|Тип подчеркивание шрифта. Возможные значения: `None`, `Single`.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленный объект [WorkbookChartFont](../resources/chartfont.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -71,7 +72,7 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

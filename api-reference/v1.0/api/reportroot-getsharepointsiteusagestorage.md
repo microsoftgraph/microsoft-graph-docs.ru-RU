@@ -2,12 +2,13 @@
 title: 'reportRoot: getSharePointSiteUsageStorage'
 description: Отслеживайте динамику выделенного и использованного объема хранилища за отчетный период.
 localization_priority: Normal
-ms.openlocfilehash: 327333dc25b335e6529ae882786dadc2d7d0b1a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: c8f99317bbbb122140a9478a14ed6db52c8ed859
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846216"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965840"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 
@@ -48,7 +49,7 @@ GET /reports/getSharePointSiteUsageStorage(period='{period_value}')
 | Авторизация | Bearer {токен}. Обязательный.                |
 | If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательный параметр. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета. Этот URL-адрес можно найти в заголовке `Location` отклика.
 
@@ -78,7 +79,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageStorage(period='D7')
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

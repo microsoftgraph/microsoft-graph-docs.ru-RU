@@ -3,12 +3,13 @@ title: Создание sideLoadingKey
 description: Создание нового объекта sideLoadingKey.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 178236e03d508eb8a5017b67a1795fceca72bdee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 140dc11778bad432d388f8d22173cd31cbdef915
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974849"
 ---
 # <a name="create-sideloadingkey"></a>Создание sideLoadingKey
 
@@ -49,16 +50,16 @@ POST /deviceAppManagement/sideLoadingKeys
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Со стороны загрузка уникальный идентификатор ключа.|
-|value|Строка|Со стороны загрузки ключ значение — значение 5 x 5, разделенных hiphens.|
-|displayName|Строка|Со стороны загрузка ключа имя, отображаемое для администраторов для ИТ-специалистов.|
-|описание|Строка|Со стороны загрузки ключ описание, отображаемое для администраторов для ИТ-специалистов.|
+|id|String|Со стороны загрузка уникальный идентификатор ключа.|
+|value|String|Со стороны загрузки ключ значение — значение 5 x 5, разделенных hiphens.|
+|displayName|String|Со стороны загрузка ключа имя, отображаемое для администраторов для ИТ-специалистов.|
+|описание|String|Со стороны загрузки ключ описание, отображаемое для администраторов для ИТ-специалистов.|
 |totalActivation|Int32|Со стороны загрузки ключ общее активация отображаются для администраторов для ИТ-специалистов.|
-|lastUpdatedDateTime|Строка|Со стороны загрузки ключ обновлен Дата последнего отображаются для администраторов для ИТ-специалистов.|
+|lastUpdatedDateTime|String|Со стороны загрузки ключ обновлен Дата последнего отображаются для администраторов для ИТ-специалистов.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -79,7 +80,7 @@ Content-length: 246
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

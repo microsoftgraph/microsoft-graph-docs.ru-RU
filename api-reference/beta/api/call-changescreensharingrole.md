@@ -3,12 +3,13 @@ title: 'вызов: changeScreenSharingRole'
 description: Запуск и остановка совместного использования экрана в вызове. Этот интерфейс API используется для разрешения приложений для совместного использования экрана содержимое с участниками звонок или собрания.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 64c85025a7aa1f3095fe6ddd8d7d398348a2a1ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: c7463f54ab5bfc74a55ed7dc5360a4f16876116c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865011"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976228"
 ---
 # <a name="call-changescreensharingrole"></a>вызов: changeScreenSharingRole
 
@@ -23,7 +24,7 @@ ms.locfileid: "27865011"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Application                            | Calls.AccessMedia.All                       |
+| Приложение                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,9 +43,9 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|role|Строка|Возможные значения: «Средство просмотра», «Активного проекта»|
+|role|String|Возможные значения: «Средство просмотра», «Активного проекта»|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код ответа.
 
 ## <a name="example"></a>Пример

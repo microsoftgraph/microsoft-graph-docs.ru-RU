@@ -2,12 +2,13 @@
 title: Тип ресурса office365GroupsActivityCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 87867071545a36f7aca1833a369f919317153bc6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 7e9f983d131d3b213689a48e10d8d23d3f99085b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874111"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968290"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>Тип ресурса office365GroupsActivityCounts
 
@@ -21,7 +22,7 @@ ms.locfileid: "27874111"
 | yammerMessagesRead     | Int64  | Количество сообщений, ознакомьтесь с разделом в группы Yammer. |
 | yammerMessagesLiked    | Int64  | Количество сообщений, оцененных в группах Yammer. |
 | reportDate             | Date   | Дата отправки целого ряда по электронной почте в почтовый ящик группы или учета количество сообщений, чтение или нравится, что в группе Yammer |
-| reportPeriod           | Строка | Количество дней, на которое отчета.    |
+| reportPeriod           | String | Количество дней, на которое отчета.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

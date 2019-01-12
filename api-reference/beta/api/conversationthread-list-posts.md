@@ -2,12 +2,14 @@
 title: Список записей
 description: 'Получение публикаций из указанной цепочки. Можно указать родительский беседы и поток, или, '
 localization_priority: Normal
-ms.openlocfilehash: da2fb8dadd18445cab051421d2c614bbbe9ec384
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 9275540b933a87f266d040e25c37ab22e0371736
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808759"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970887"
 ---
 # <a name="list-posts"></a>Список записей
 
@@ -54,7 +56,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 ```http
 GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

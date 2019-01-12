@@ -2,12 +2,14 @@
 title: Проверка групп элементов
 description: Проверить членство в заданном списке групп и возвращает из этого списка в эти группы
 localization_priority: Normal
-ms.openlocfilehash: cfa9f1a50ffd284233707799a8d05d6b5c46dfc1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 93ff0a0cb215e489490e50bde40f56e5b562be95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854042"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971090"
 ---
 # <a name="check-member-groups"></a>Проверка групп элементов
 
@@ -37,7 +39,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса

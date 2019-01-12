@@ -2,18 +2,19 @@
 title: Список подписок
 description: Извлечение свойств и связи webhook подписок, на основе идентификатора приложения, пользователь и роли пользователя с помощью клиента.
 localization_priority: Priority
-ms.openlocfilehash: 663586cc769f04be631e1f3c1bdf86bc4f798022
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: c2e9446721f4390341c33f8b976893e4b1ab14be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850416"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972938"
 ---
 # <a name="list-subscriptions"></a>Список подписок
 
 Извлечение свойств и связи webhook подписок, на основе идентификатора приложения, пользователь и роли пользователя с помощью клиента.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 Этот интерфейс API поддерживает следующие области разрешений; [для получения дополнительных сведений, включая выбор разрешений, см.](/graph/permissions-reference)
 
@@ -60,7 +61,7 @@ GET /subscriptions
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 

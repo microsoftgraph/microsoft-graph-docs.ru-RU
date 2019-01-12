@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Перемещение файла или папки
 localization_priority: Normal
-ms.openlocfilehash: a6135993d77e4fb23fbbba89757a6bd385ebcd60
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: fe852af054d192c75c3b22aed5516e376361ad11
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966344"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Перемещение ресурса DriveItem в новую папку
 
@@ -56,7 +57,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 **Примечание.** При перемещении элементов в корневую папку объекта drive вашему приложению не удастся использовать синтаксис `"id:" "root"`.
 Приложению потребуется предоставить фактический идентификатор корневой папки для ссылки на родительский элемент.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.
 
@@ -78,7 +79,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В примере ниже показан отклик для этого запроса на перемещение.
 

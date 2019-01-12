@@ -3,12 +3,13 @@ title: 'вызов: updateMetadata'
 description: Обновление приложений метаданные, связанные с помощью вызова.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 2b736c56a7a517f0b68d656ab96933a34cf4a09d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 19e56c3ac00aa0b61efef6be3a25020166e364d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813589"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976480"
 ---
 # <a name="call-updatemetadata"></a>вызов: updateMetadata
 
@@ -42,8 +43,8 @@ POST /applications/{id}/calls/{id}/updateMetadata
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|metadata|Строка|Большой двоичный объект данных, предоставленных участника в списке.|
-|clientContext|Строка|Контекст клиента.|
+|metadata|String|Большой двоичный объект данных, предоставленных участника в списке.|
+|clientContext|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.

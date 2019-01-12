@@ -2,12 +2,14 @@
 title: Создание embeddedSIMActivationCodePool
 description: Создание нового объекта embeddedSIMActivationCodePool.
 author: tfitzmac
-ms.openlocfilehash: 88b495437859e6e7552763581886e0bf6786374c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: a46245cb8f0a246363b5b1112298c360c3a4c24d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302599"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973701"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>Создание embeddedSIMActivationCodePool
 
@@ -37,19 +39,19 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON для объекта embeddedSIMActivationCodePool.
 
 В следующей таблице показаны свойства, которые необходимы для создания embeddedSIMActivationCodePool.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для внедренных пула кода активации диспетчера установки. Значение, назначенное при создании создаваемый системой.|
-|displayName|Строка|Имя группы внедренных диспетчера установки активации кода определенные администратором.|
+|id|String|Уникальный идентификатор для внедренных пула кода активации диспетчера установки. Значение, назначенное при создании создаваемый системой.|
+|displayName|String|Имя группы внедренных диспетчера установки активации кода определенные администратором.|
 |createdDateTime|DateTimeOffset|Время создания внедренных пула кода активации диспетчера установки. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения внедренного пула кода активации диспетчера установки. Обновление со стороны службы.|
 |activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) коллекции|Коды активации, которые относятся к этот пул. Это свойство навигации использовать для активации кодов Intune, но не может использоваться для чтения из Intune коды активации.|
@@ -57,7 +59,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -83,7 +85,7 @@ Content-length: 460
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

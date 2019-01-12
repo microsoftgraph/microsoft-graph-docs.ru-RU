@@ -3,12 +3,13 @@ title: Обновление объекта macOSOfficeSuiteApp
 description: Обновление свойств объекта macOSOfficeSuiteApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 020f5090c85458619eb599e519dae0605ccb310a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7e1986f96b120605cc99aef9fbf8a8c321d041e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830571"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975941"
 ---
 # <a name="update-macosofficesuiteapp"></a>Обновление объекта macOSOfficeSuiteApp
 
@@ -47,7 +48,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -95,7 +96,7 @@ Content-length: 584
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

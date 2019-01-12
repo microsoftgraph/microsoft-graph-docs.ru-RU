@@ -3,12 +3,13 @@ title: Удаление учащегося
 description: Удаляет educationUser из educationClass.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 0afab5c80c546a9404ee11fc4d127d15b13a4e9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 38e3a1e5058db04db1c35213c65ec231e6d3a86e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824154"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966589"
 ---
 # <a name="remove-a-student"></a>Удаление учащегося
 
@@ -55,7 +56,7 @@ DELETE /education/classes/{id}/members/{userId}/$ref
 DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
