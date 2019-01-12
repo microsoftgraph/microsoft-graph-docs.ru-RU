@@ -3,55 +3,56 @@ title: Создание домена
 description: Добавление домена в клиент.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 1a32117f5fa398d84cb9a75cca7ecba39de02f35
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 28026b78aef810e33ebc8bf88bdf5d73a4ae482c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885101"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987681"
 ---
-# <a name="create-domain"></a><span data-ttu-id="bb8de-103">Создание домена</span><span class="sxs-lookup"><span data-stu-id="bb8de-103">Create domain</span></span>
+# <a name="create-domain"></a><span data-ttu-id="b9051-103">Создание домена</span><span class="sxs-lookup"><span data-stu-id="b9051-103">Create domain</span></span>
 
-<span data-ttu-id="bb8de-104">Добавление домена в клиент.</span><span class="sxs-lookup"><span data-stu-id="bb8de-104">Adds a domain to the tenant.</span></span>
+<span data-ttu-id="b9051-104">Добавление домена в клиент.</span><span class="sxs-lookup"><span data-stu-id="b9051-104">Adds a domain to the tenant.</span></span>
 
-<span data-ttu-id="bb8de-p101">**Важно!** Вам не удастся использовать сопоставленный домен с вашим клиентом Azure AD, пока не будет проверено владение доменом. Дополнительные сведения см. в статье [Перечисление verificationDnsRecords](domain-list-verificationdnsrecords.md). Для корневых доменов требуется проверка. Например, для домена contoso.com требуется проверка. Если корневой домен проверен, то его дочерние домены будут автоматически считаться проверенными. Например, если домен contoso.com проверен, то его дочерний домен subdomain.contoso.com будет автоматически считаться проверенным.</span><span class="sxs-lookup"><span data-stu-id="bb8de-p101">**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](domain-list-verificationdnsrecords.md) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.</span></span>
+<span data-ttu-id="b9051-p101">**Важно!** Вам не удастся использовать сопоставленный домен с вашим клиентом Azure AD, пока не будет проверено владение доменом. Дополнительные сведения см. в статье [Перечисление verificationDnsRecords](domain-list-verificationdnsrecords.md). Для корневых доменов требуется проверка. Например, для домена contoso.com требуется проверка. Если корневой домен проверен, то его дочерние домены будут автоматически считаться проверенными. Например, если домен contoso.com проверен, то его дочерний домен subdomain.contoso.com будет автоматически считаться проверенным.</span><span class="sxs-lookup"><span data-stu-id="b9051-p101">**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified. See [List verificationDnsRecords](domain-list-verificationdnsrecords.md) for details. Root domains require verification. For example, contoso.com requires verification. If a root domain is verified, subdomains of the root domain are automatically verified. For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bb8de-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bb8de-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b9051-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b9051-111">Permissions</span></span>
 
-<span data-ttu-id="bb8de-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bb8de-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b9051-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b9051-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="bb8de-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bb8de-114">Permission type</span></span>      | <span data-ttu-id="bb8de-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bb8de-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b9051-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b9051-114">Permission type</span></span>      | <span data-ttu-id="b9051-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b9051-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bb8de-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bb8de-116">Delegated (work or school account)</span></span> | <span data-ttu-id="bb8de-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="bb8de-117">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="bb8de-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bb8de-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bb8de-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bb8de-119">Not supported.</span></span>    |
-|<span data-ttu-id="bb8de-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bb8de-120">Application</span></span> | <span data-ttu-id="bb8de-121">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bb8de-121">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="b9051-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b9051-116">Delegated (work or school account)</span></span> | <span data-ttu-id="b9051-117">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b9051-117">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="b9051-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b9051-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9051-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b9051-119">Not supported.</span></span>    |
+|<span data-ttu-id="b9051-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b9051-120">Application</span></span> | <span data-ttu-id="b9051-121">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9051-121">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bb8de-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bb8de-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b9051-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b9051-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
 ```
-## <a name="request-headers"></a><span data-ttu-id="bb8de-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bb8de-123">Request headers</span></span>
-| <span data-ttu-id="bb8de-124">Имя</span><span class="sxs-lookup"><span data-stu-id="bb8de-124">Name</span></span>       | <span data-ttu-id="bb8de-125">Описание</span><span class="sxs-lookup"><span data-stu-id="bb8de-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b9051-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b9051-123">Request headers</span></span>
+| <span data-ttu-id="b9051-124">Имя</span><span class="sxs-lookup"><span data-stu-id="b9051-124">Name</span></span>       | <span data-ttu-id="b9051-125">Описание</span><span class="sxs-lookup"><span data-stu-id="b9051-125">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="bb8de-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bb8de-126">Authorization</span></span>  | <span data-ttu-id="bb8de-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bb8de-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="bb8de-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bb8de-129">Content-Type</span></span>  | <span data-ttu-id="bb8de-130">application/json</span><span class="sxs-lookup"><span data-stu-id="bb8de-130">application/json</span></span> |
+| <span data-ttu-id="b9051-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b9051-126">Authorization</span></span>  | <span data-ttu-id="b9051-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b9051-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="b9051-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b9051-129">Content-Type</span></span>  | <span data-ttu-id="b9051-130">application/json</span><span class="sxs-lookup"><span data-stu-id="b9051-130">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bb8de-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="bb8de-131">Request body</span></span>
-<span data-ttu-id="bb8de-132">В теле запроса укажите представление JSON объекта [domain](../resources/domain.md).</span><span class="sxs-lookup"><span data-stu-id="bb8de-132">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b9051-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b9051-131">Request body</span></span>
+<span data-ttu-id="b9051-132">В теле запроса укажите представление JSON объекта [domain](../resources/domain.md).</span><span class="sxs-lookup"><span data-stu-id="b9051-132">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
 
-> <span data-ttu-id="bb8de-p104">Тело запроса содержит свойство id для нового домена. id — это единственное свойство, которое можно указать, и оно является обязательным. Значение свойства id — полное доменное имя, которое необходимо создать.</span><span class="sxs-lookup"><span data-stu-id="bb8de-p104">The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.</span></span>
+> <span data-ttu-id="b9051-p104">Тело запроса содержит свойство id для нового домена. id — это единственное свойство, которое можно указать, и оно является обязательным. Значение свойства id — полное доменное имя, которое необходимо создать.</span><span class="sxs-lookup"><span data-stu-id="b9051-p104">The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bb8de-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="bb8de-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b9051-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="b9051-136">Response</span></span>
 
-<span data-ttu-id="bb8de-137">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [domain](../resources/domain.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="bb8de-137">If successful, this method returns `201 Created` response code and [domain](../resources/domain.md) object in the response body.</span></span>
+<span data-ttu-id="b9051-137">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [domain](../resources/domain.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="b9051-137">If successful, this method returns `201 Created` response code and [domain](../resources/domain.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bb8de-138">Пример</span><span class="sxs-lookup"><span data-stu-id="bb8de-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="bb8de-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="bb8de-139">Request</span></span>
+## <a name="example"></a><span data-ttu-id="b9051-138">Пример</span><span class="sxs-lookup"><span data-stu-id="b9051-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b9051-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="b9051-139">Request</span></span>
 
-<span data-ttu-id="bb8de-140">В теле запроса укажите представление JSON объекта [domain](../resources/domain.md).</span><span class="sxs-lookup"><span data-stu-id="bb8de-140">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
+<span data-ttu-id="b9051-140">В теле запроса укажите представление JSON объекта [domain](../resources/domain.md).</span><span class="sxs-lookup"><span data-stu-id="b9051-140">In the request body, supply a JSON representation of [domain](../resources/domain.md) object.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -67,8 +68,8 @@ Content-length: 192
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="bb8de-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="bb8de-141">Response</span></span>
-<span data-ttu-id="bb8de-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bb8de-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b9051-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="b9051-141">Response</span></span>
+<span data-ttu-id="b9051-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b9051-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

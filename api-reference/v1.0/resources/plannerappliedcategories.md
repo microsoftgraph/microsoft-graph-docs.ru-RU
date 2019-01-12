@@ -2,24 +2,26 @@
 title: Тип ресурса plannerAppliedCategories
 description: Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или метки), которые были применены к задаче. Он является частью объекта plannerTask.
 localization_priority: Normal
-ms.openlocfilehash: 5601c3b0d49e7504c16a8ee517b60f3c98c84fee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 604cf63d922ab59e038b5ccb8ea3b48a707a9bc0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814785"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981604"
 ---
-# <a name="plannerappliedcategories-resource-type"></a><span data-ttu-id="7ae7f-104">Тип ресурса plannerAppliedCategories</span><span class="sxs-lookup"><span data-stu-id="7ae7f-104">plannerAppliedCategories resource type</span></span>
+# <a name="plannerappliedcategories-resource-type"></a><span data-ttu-id="c08b7-104">Тип ресурса plannerAppliedCategories</span><span class="sxs-lookup"><span data-stu-id="c08b7-104">plannerAppliedCategories resource type</span></span>
 
 
-<span data-ttu-id="7ae7f-p102">Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или меток), примененных к задаче. Он является частью объекта [plannerTask](plannertask.md). К задаче можно применить до 6 категорий. Описания категорий, например `category1` и `category2`, являются частью объекта [сведений о плане](plannerplandetails.md). Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="7ae7f-p102">The **AppliedCategoriesCollection** resource represents the collection of categories (or labels) that have been applied to a task. It is part of the [plannerTask](plannertask.md) object. There can be up to 6 categories applied to a task. Category descriptions, e.g. `category1`, `category2` etc., are part of the [plan details](plannerplandetails.md) object. This is an open type.</span></span>
+<span data-ttu-id="c08b7-p102">Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или меток), примененных к задаче. Он является частью объекта [plannerTask](plannertask.md). К задаче можно применить до 6 категорий. Описания категорий, например `category1` и `category2`, являются частью объекта [сведений о плане](plannerplandetails.md). Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="c08b7-p102">The **AppliedCategoriesCollection** resource represents the collection of categories (or labels) that have been applied to a task. It is part of the [plannerTask](plannertask.md) object. There can be up to 6 categories applied to a task. Category descriptions, e.g. `category1`, `category2` etc., are part of the [plan details](plannerplandetails.md) object. This is an open type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7ae7f-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="7ae7f-110">Properties</span></span>
-<span data-ttu-id="7ae7f-p103">Клиент может определять свойства открытого типа. В этом случае клиент должен указать значения для свойств `category1`, `category2`, `category3`, `category4`, `category5` или `category6`, а также использовать логическое значение `true` при применении соответствующих категорий к задаче. Ниже показан пример. Если не применить свойства, они будут автоматически удалены. Для этого им будет присвоено логическое значение `false`.</span><span class="sxs-lookup"><span data-stu-id="7ae7f-p103">Properties of an Open Type can be defined by the client. In this case though, the client must provide `category1`, `category2`, `category3`, `category4`, `category5` and/or `category6` as properties with their values being the `true` boolean when the corresponding categories are applied on the task. Example is shown below. When they do not apply, properties are automatically removed by setting their values to the `false` boolean.</span></span> 
+## <a name="properties"></a><span data-ttu-id="c08b7-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="c08b7-110">Properties</span></span>
+<span data-ttu-id="c08b7-p103">Клиент может определять свойства открытого типа. В этом случае клиент должен указать значения для свойств `category1`, `category2`, `category3`, `category4`, `category5` или `category6`, а также использовать логическое значение `true` при применении соответствующих категорий к задаче. Ниже показан пример. Если не применить свойства, они будут автоматически удалены. Для этого им будет присвоено логическое значение `false`.</span><span class="sxs-lookup"><span data-stu-id="c08b7-p103">Properties of an Open Type can be defined by the client. In this case though, the client must provide `category1`, `category2`, `category3`, `category4`, `category5` and/or `category6` as properties with their values being the `true` boolean when the corresponding categories are applied on the task. Example is shown below. When they do not apply, properties are automatically removed by setting their values to the `false` boolean.</span></span> 
 
-## <a name="json-representation"></a><span data-ttu-id="7ae7f-115">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="7ae7f-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c08b7-115">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="c08b7-115">JSON representation</span></span>
 
-<span data-ttu-id="7ae7f-116">Ниже показано представление ресурса в формате JSON</span><span class="sxs-lookup"><span data-stu-id="7ae7f-116">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="c08b7-116">Ниже показано представление ресурса в формате JSON</span><span class="sxs-lookup"><span data-stu-id="c08b7-116">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,7 +36,7 @@ ms.locfileid: "27814785"
 }
 ```
 
-<span data-ttu-id="7ae7f-117">Пример:</span><span class="sxs-lookup"><span data-stu-id="7ae7f-117">Example:</span></span> 
+<span data-ttu-id="c08b7-117">Пример:</span><span class="sxs-lookup"><span data-stu-id="c08b7-117">Example:</span></span> 
 
 ```json
 {

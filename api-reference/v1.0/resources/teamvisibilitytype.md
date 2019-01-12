@@ -3,22 +3,23 @@ title: Элементы
 description: 'Описывает видимость группы. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 76633f52cd0238d6ef63aa393b7d08a754fbde98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ea8868924681d3e8f8cd0b4f55ff947c085260e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884563"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990945"
 ---
-#<a name="teamvisibilitytype-enum-type"></a><span data-ttu-id="f8bfe-103">Тип перечисления teamVisibilityType</span><span class="sxs-lookup"><span data-stu-id="f8bfe-103">teamVisibilityType enum type</span></span>
+#<a name="teamvisibilitytype-enum-type"></a><span data-ttu-id="1f6ea-103">Тип перечисления teamVisibilityType</span><span class="sxs-lookup"><span data-stu-id="1f6ea-103">teamVisibilityType enum type</span></span>
 
 
 
-<span data-ttu-id="f8bfe-104">Описывает видимость [группы](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="f8bfe-104">Describes the visibility of a [team](../resources/team.md).</span></span> 
+<span data-ttu-id="1f6ea-104">Описывает видимость [группы](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="1f6ea-104">Describes the visibility of a [team](../resources/team.md).</span></span> 
 
-## <a name="members"></a><span data-ttu-id="f8bfe-105">Элементы</span><span class="sxs-lookup"><span data-stu-id="f8bfe-105">Members</span></span>
+## <a name="members"></a><span data-ttu-id="1f6ea-105">Элементы</span><span class="sxs-lookup"><span data-stu-id="1f6ea-105">Members</span></span>
 
-| <span data-ttu-id="f8bfe-106">Элемент</span><span class="sxs-lookup"><span data-stu-id="f8bfe-106">Member</span></span> | <span data-ttu-id="f8bfe-107">Значение</span><span class="sxs-lookup"><span data-stu-id="f8bfe-107">Value</span></span>| <span data-ttu-id="f8bfe-108">Описание</span><span class="sxs-lookup"><span data-stu-id="f8bfe-108">Description</span></span> |
+| <span data-ttu-id="1f6ea-106">Элемент</span><span class="sxs-lookup"><span data-stu-id="1f6ea-106">Member</span></span> | <span data-ttu-id="1f6ea-107">Значение</span><span class="sxs-lookup"><span data-stu-id="1f6ea-107">Value</span></span>| <span data-ttu-id="1f6ea-108">Описание</span><span class="sxs-lookup"><span data-stu-id="1f6ea-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f8bfe-109">закрытый</span><span class="sxs-lookup"><span data-stu-id="f8bfe-109">private</span></span>|<span data-ttu-id="f8bfe-110">0</span><span class="sxs-lookup"><span data-stu-id="f8bfe-110">0</span></span>|<span data-ttu-id="f8bfe-111">Любой пользователь может просматривать группы, но только владелец можно добавить пользователя в группу.</span><span class="sxs-lookup"><span data-stu-id="f8bfe-111">Anyone can see the team but only the owner can add a user to the team.</span></span>|
-|<span data-ttu-id="f8bfe-112">public</span><span class="sxs-lookup"><span data-stu-id="f8bfe-112">public</span></span>|<span data-ttu-id="f8bfe-113">1</span><span class="sxs-lookup"><span data-stu-id="f8bfe-113">1</span></span>|<span data-ttu-id="f8bfe-114">Для присоединения к группе.</span><span class="sxs-lookup"><span data-stu-id="f8bfe-114">Anyone can join the team.</span></span>|
+|<span data-ttu-id="1f6ea-109">закрытый</span><span class="sxs-lookup"><span data-stu-id="1f6ea-109">private</span></span>|<span data-ttu-id="1f6ea-110">0</span><span class="sxs-lookup"><span data-stu-id="1f6ea-110">0</span></span>|<span data-ttu-id="1f6ea-111">Любой пользователь может просматривать группы, но только владелец можно добавить пользователя в группу.</span><span class="sxs-lookup"><span data-stu-id="1f6ea-111">Anyone can see the team but only the owner can add a user to the team.</span></span>|
+|<span data-ttu-id="1f6ea-112">public</span><span class="sxs-lookup"><span data-stu-id="1f6ea-112">public</span></span>|<span data-ttu-id="1f6ea-113">1</span><span class="sxs-lookup"><span data-stu-id="1f6ea-113">1</span></span>|<span data-ttu-id="1f6ea-114">Для присоединения к группе.</span><span class="sxs-lookup"><span data-stu-id="1f6ea-114">Anyone can join the team.</span></span>|
