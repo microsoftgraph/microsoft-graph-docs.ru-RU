@@ -3,12 +3,13 @@ title: Тип перечисления deviceRegistrationState
 description: Состояние регистрации устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e2b755d213d39beb228afe603b2066b55416f14c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5b0048385930166de3329ef9d407f5ddd19efc77
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857325"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911898"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>Тип перечисления deviceRegistrationState
 

@@ -3,12 +3,13 @@ title: Тип перечисления macOSGatekeeperAppSources
 description: Параметры исходного приложения macOS Привратник.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6c784dba6a79b6a9d406e3632d2ac4beaf2a47ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5c2c1d553408b7269a53f9fc3500493a44bc3645
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888370"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918117"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>Тип перечисления macOSGatekeeperAppSources
 

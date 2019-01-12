@@ -3,12 +3,13 @@ title: Удаление androidManagedStoreApp
 description: Удаляет androidManagedStoreApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2802dbd8fea878d39827545029f625e1647d767
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 35581244bccaca2337691b55bacabfca054c3056
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883106"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920718"
 ---
 # <a name="delete-androidmanagedstoreapp"></a>Удаление androidManagedStoreApp
 

@@ -3,12 +3,13 @@ title: Тип перечисления managedAppDataStorageLocation
 description: Места хранения, где управляемых приложений могут потенциально хранят свои данные
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3ae5b5a77f6fae9d1043993a4e464920b1d6127a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 35de839afa6a70459ba11143313f5acc069679d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888097"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917155"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>Тип перечисления managedAppDataStorageLocation
 

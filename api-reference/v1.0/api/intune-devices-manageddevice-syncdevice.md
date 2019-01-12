@@ -3,12 +3,13 @@ title: Действие syncDevice
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 90a321ae025fc1b6fa963d3d1ce6d5111fd328cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 60741bb7406ec9f020070a242694ed716f536df9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850849"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923105"
 ---
 # <a name="syncdevice-action"></a>Действие syncDevice
 

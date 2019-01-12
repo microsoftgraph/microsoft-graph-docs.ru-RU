@@ -3,12 +3,13 @@ title: Тип перечисления defenderCloudBlockLevelType
 description: Возможные значения уровня блока облако
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 51ed838b6abaaf36a69230b566c01b8d496c2a70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 13f8828478eb063eaa25d8561d5a254c86f4b856
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872074"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924722"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>Тип перечисления defenderCloudBlockLevelType
 

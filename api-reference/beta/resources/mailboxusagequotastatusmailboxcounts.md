@@ -2,12 +2,14 @@
 title: Тип ресурса mailboxUsageQuotaStatusMailboxCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: b87bb1ce91626f9151d294e2243bba72ba72346b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 45e4754fef0dd3a2f7a669e3b3b96692d117c8f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835225"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921236"
 ---
 # <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a>Тип ресурса mailboxUsageQuotaStatusMailboxCounts
 

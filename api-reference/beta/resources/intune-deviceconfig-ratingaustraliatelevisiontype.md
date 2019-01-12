@@ -3,12 +3,13 @@ title: Тип перечисления ratingAustraliaTelevisionType
 description: Метки TV оценки содержимого в Австралии
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 207d37884cf56ff31934141ac945042c878b520f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5af818245d4b71a038cdfa0cd3a4f3c188e76e60
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871038"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911975"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>Тип перечисления ratingAustraliaTelevisionType
 

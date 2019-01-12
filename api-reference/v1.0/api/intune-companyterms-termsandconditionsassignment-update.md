@@ -3,12 +3,13 @@ title: Обновление объекта termsAndConditionsAssignment
 description: Удаление свойств объекта termsAndConditionsAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 79b8595015496605711d2304d22381171ef3ef34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 84213c90925882492442671b4702082b7385a25c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911786"
 ---
 # <a name="update-termsandconditionsassignment"></a>Обновление объекта termsAndConditionsAssignment
 

@@ -3,12 +3,13 @@ title: Добавление вкладки канала
 description: 'Добавляет (PIN) вкладку для указанного канала в группе. '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 13fbe0c259b990e2731e2ea6876ec94585e09978
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ce91b841ab8eeaaec3811382c55f8debba99ce31
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815521"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921166"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки канала
 

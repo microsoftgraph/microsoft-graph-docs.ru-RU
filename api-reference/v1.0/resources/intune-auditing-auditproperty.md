@@ -3,12 +3,13 @@ title: Тип ресурса auditProperty
 description: Класс, содержащий свойства для свойства аудита.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e91f3771be981f6ff410e8774f6a8ac9fbc121dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 290aae8c245fd09c17fc766cedd7c2e253626943
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870919"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912031"
 ---
 # <a name="auditproperty-resource-type"></a>Тип ресурса auditProperty
 

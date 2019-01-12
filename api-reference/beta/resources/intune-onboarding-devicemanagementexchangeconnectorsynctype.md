@@ -3,12 +3,13 @@ title: Тип перечисления deviceManagementExchangeConnectorSyncType
 description: Тип соединителя Exchange запрошенную синхронизацию.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bc62e03f61a5170b5495300b0c7f5182262ddafb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ac6f54c2a09752df2382ae6b27f9dc9387262acf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851774"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912731"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>Тип перечисления deviceManagementExchangeConnectorSyncType
 

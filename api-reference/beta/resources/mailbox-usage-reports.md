@@ -2,12 +2,14 @@
 title: Отчеты об использовании почтовых ящиков
 description: Вы можете получать сведения о пользователях с почтового ящика и их уровень активности в основном основанное на сообщения электронной почты, отправленных и полученных. Вы также можете посмотреть, сколько места занимает каждый почтовый ящик и сколько почтовых ящиков скоро превысят квоту хранилища.
 localization_priority: Normal
-ms.openlocfilehash: 2f165ea0c9c52e1cc2f4d5fab4b8f3597fd502d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: reports
+ms.openlocfilehash: a91e01edc3b2d61494a51b9bf53f1f0612a64343
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870149"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923126"
 ---
 # <a name="mailbox-usage-reports"></a>Отчеты об использовании почтовых ящиков
 

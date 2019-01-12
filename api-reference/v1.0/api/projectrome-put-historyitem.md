@@ -2,12 +2,13 @@
 title: Создать или заменить historyItem
 description: Создание новой или заменить существующий элемент журнала для существующего действия пользователя.
 localization_priority: Normal
-ms.openlocfilehash: b3462edef2c210399e4dd653e9b3c7d91bb67875
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 21c4420ff64d105a5512df1f9a57a5e8309413f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856296"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913004"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Создать или заменить historyItem
 

@@ -3,12 +3,13 @@ title: Тип ресурса managedAppOperation
 description: Представляет операцию, примененную к регистрации приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2c91290891ee28a9cd811c6326794a33316676d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 52e511ca24f67a485ab289f48c25fa1ceb309910
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820239"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920480"
 ---
 # <a name="managedappoperation-resource-type"></a>Тип ресурса managedAppOperation
 

@@ -2,12 +2,14 @@
 title: Тип ресурса Worksheet
 description: Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т. д.
 localization_priority: Normal
-ms.openlocfilehash: 690596bfe6df5f6bfd98f7f5bd37021e47132152
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: d04ebafda64f9a081096fbf0fd94461b9765a6db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807800"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926528"
 ---
 # <a name="worksheet-resource-type"></a>Тип ресурса Worksheet
 

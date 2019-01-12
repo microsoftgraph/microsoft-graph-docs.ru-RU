@@ -3,12 +3,13 @@ title: Обновление androidForWorkEnterpriseWiFiConfiguration
 description: Обновление свойства объекта androidForWorkEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: af6dee5a2459788a78ad2111123531f0b477213f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: be9ecfdc0e883830641d4fb234de717f6af429ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828373"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918926"
 ---
 # <a name="update-androidforworkenterprisewificonfiguration"></a>Обновление androidForWorkEnterpriseWiFiConfiguration
 

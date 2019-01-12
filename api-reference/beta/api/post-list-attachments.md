@@ -3,12 +3,13 @@ title: Список вложений
 description: Получение списка объектов attachment, вложенных в запись.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 50d41b94300eaf93c6d0cd595e64facc982cb461
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 690b4ab540982dc9b7febcd1ea302afbcf8429ab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872109"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916301"
 ---
 # <a name="list-attachments"></a>Список вложений
 

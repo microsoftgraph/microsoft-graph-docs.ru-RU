@@ -3,12 +3,13 @@ title: Тип ресурса operatingSystemVersionRange
 description: Диапазон версии операционной системы.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 56df6b53dc29247d3f718ad185152069a071a0f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c0b81482ad4b48ad5fe59b1ec0109fcd3bf03f83
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875805"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918548"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>Тип ресурса operatingSystemVersionRange
 

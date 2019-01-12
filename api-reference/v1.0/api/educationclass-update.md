@@ -2,12 +2,14 @@
 title: Обновление свойств educationclass
 description: Обновление свойств курса.
 author: mmast-msft
-ms.openlocfilehash: 9a11ae5e1a2139df4ade3417c940d00dea2d1888
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: education
+ms.openlocfilehash: 89517aa1f2b458dbdec311969f0cedd994464702
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358711"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923000"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 

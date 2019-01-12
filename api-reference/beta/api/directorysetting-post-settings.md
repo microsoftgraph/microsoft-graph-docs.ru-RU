@@ -2,12 +2,14 @@
 title: Создайте параметр каталога
 description: Используйте этот интерфейс API для создания нового параметра, на основе шаблонов, доступных в directorySettingTemplates. Эти параметры можно на уровне клиента или на уровне объекта (в настоящее время только для групп). Запрос на создание необходимо задать settingValues для всех параметров, определенных в шаблоне. Для определенных параметров может устанавливаться только параметр Управление ли членов группы можно приглашать пользователей гостя. Преимущественную это поведение после общедоступной возможность добавления гостевых пользователей в группу.
 localization_priority: Normal
-ms.openlocfilehash: 692ca0d68522b5b268e9ee670c694e5a5c6bee90
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6754e8e4210da0161a6f0cd790dc355e4788e121
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848722"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921768"
 ---
 # <a name="create-a-directory-setting"></a>Создайте параметр каталога
 

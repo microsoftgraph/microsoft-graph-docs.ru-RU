@@ -3,12 +3,13 @@ title: Список androidManagedStoreAppConfigurationSchemas
 description: Свойства списка и связей объектов androidManagedStoreAppConfigurationSchema.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f70bcd25833f727e661bf90d016d7987ccb1b117
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 45ed200e8296bd3968aada63b7dd9d1716d73d91
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819840"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926017"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>Список androidManagedStoreAppConfigurationSchemas
 

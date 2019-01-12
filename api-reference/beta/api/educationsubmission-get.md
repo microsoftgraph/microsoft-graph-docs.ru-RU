@@ -3,12 +3,13 @@ title: Получение educationSubmission
 description: 'Получение определенного отправки. Объект отправки представляет учащихся трудозатраты для назначения. Ресурсы, связанные с представляют отправки этой функции. Студент подачи присваивается можно просмотреть и изменить подачи. Преподаватель имеет полный доступ для всех отправляемых. '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 4eacc6ce261566afdc6d712172d35a46f9d9e595
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: e58ca86361204a05fa1a71febe7ecfab3d91181a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813365"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915699"
 ---
 # <a name="get-educationsubmission"></a>Получение educationSubmission
 

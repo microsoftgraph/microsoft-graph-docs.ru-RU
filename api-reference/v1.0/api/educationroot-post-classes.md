@@ -2,12 +2,14 @@
 title: Создание educationClass
 description: Создание курса. При этом будет также создана универсальная группа. При использовании этот интерфейс API для создания класса специальные свойства добавляется в группу, которая будет
 localization_priority: Normal
-ms.openlocfilehash: 9a9a9b13560530adfe26b83af3025ce85be299c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 39c88e16bf4a736f718f4a67798ebc07ce6f4022
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922944"
 ---
 # <a name="create-educationclass"></a>Создание educationClass
 

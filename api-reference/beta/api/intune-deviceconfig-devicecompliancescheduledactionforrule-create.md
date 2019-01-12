@@ -3,12 +3,13 @@ title: Создание объекта deviceComplianceScheduledActionForRule
 description: Создание объекта deviceComplianceScheduledActionForRule.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa9d0cf3c403d243c6cc9a21f3737f68bdb60c7a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 217ad13de93f45ce288a39cad766ce2e64dc97cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869148"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926612"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Создание объекта deviceComplianceScheduledActionForRule
 

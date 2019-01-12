@@ -3,12 +3,13 @@ title: Получение звукового группы маршрутизац
 description: Извлечение свойств и связи объекта audioRoutingGroup.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ebb0887f071fe24056903af9eae1e3f55ab6ede3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 08c86e0a88cb77ddf42f8b7feee2f55093723d35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814184"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922559"
 ---
 # <a name="get-audio-routing-group"></a>Получение звукового группы маршрутизации
 

@@ -2,12 +2,14 @@
 title: Доверия транзитивных членов группы списка
 description: Получите список членов группы. Группы могут быть пользователи, контакты, устройства, субъектов-служб и других групп участников. Эта операция доверия транзитивных и возвратит списка всех вложенных элементов.
 localization_priority: Normal
-ms.openlocfilehash: a89894bf17d12f7cd23350f466e9e1272fa0cb6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 368ac57880e3095be98221102bf18d7f7fed2aa6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892220"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915331"
 ---
 # <a name="list-group-transitive-members"></a>Доверия транзитивных членов группы списка
 

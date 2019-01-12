@@ -3,12 +3,13 @@ title: Тип ресурса mediaInfo
 description: Запрашивает сведения о мультимедиа, используемые в действиях для.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 6fe2c49e86bac9d5961310694b21e9439a4896ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 217b9a5aaa88a1bbf343447fad344b322cfeb611
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885605"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924533"
 ---
 # <a name="mediainfo-resource-type"></a>Тип ресурса mediaInfo
 

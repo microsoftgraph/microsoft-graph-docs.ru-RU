@@ -3,12 +3,13 @@ title: Создание mdmWindowsInformationProtectionPolicy
 description: Создание объекта mdmWindowsInformationProtectionPolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6d69ab787e7a643b99ff6ec3176a78b4f46f538c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dafc641d0af7f45332c2785ae387b20265ca82e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854154"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926269"
 ---
 # <a name="create-mdmwindowsinformationprotectionpolicy"></a>Создание mdmWindowsInformationProtectionPolicy
 

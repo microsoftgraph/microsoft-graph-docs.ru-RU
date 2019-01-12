@@ -3,12 +3,13 @@ title: Тип ресурса androidEnterpriseWiFiConfiguration
 description: С указанием конфигураций в этом профиле можно указать Android устройства, чтобы подключиться к конечной точке желаемую Wi-Fi. Путем указания типов безопасности и метод проверки подлинности ожидаемого Wi-Fi конечной точкой подключения Wi-Fi можно сделать полностью для конечных пользователей.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bdb2fd80c37ef7662801473bea53c1af6fbac363
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 53751acedb869b3a796c11634dab99b76b967986
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805903"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919479"
 ---
 # <a name="androidenterprisewificonfiguration-resource-type"></a>Тип ресурса androidEnterpriseWiFiConfiguration
 

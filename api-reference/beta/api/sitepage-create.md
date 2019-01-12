@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 05/07/2018
 title: Создание новой страницы на сайте SharePoint
 localization_priority: Normal
-ms.openlocfilehash: 8b3c1f6cabbacd62e671a27c03658c68b237ef92
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 112c9f564c549bbae06430d4c2353c26abbac908
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885598"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921740"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создайте страницу в списке страниц сайта узла
 

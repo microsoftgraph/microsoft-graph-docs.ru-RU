@@ -2,12 +2,14 @@
 title: Получение объекта managedDeviceMobileAppConfigurationDeviceSummary
 description: Чтение свойств и связей объекта managedDeviceMobileAppConfigurationDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: c435fcb8c91b540fc8fa07b1ee9660bf193b7bc2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 8a2488cc0a1820dac1cdc020c7d0db86423dfd2c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306036"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925926"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>Получение объекта managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -39,11 +41,11 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

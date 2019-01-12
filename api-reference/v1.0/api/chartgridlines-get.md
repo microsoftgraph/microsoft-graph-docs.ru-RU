@@ -3,12 +3,13 @@ title: Получение объекта ChartGridlines
 description: Получение свойств и связей объекта chartgridlines.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 71c036bd8cb805ce660ecb9c3c9d6d98f860392f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e3e8ef069de4508e148b3408e7e5ddc78a5e9c09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847476"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923294"
 ---
 # <a name="get-chartgridlines"></a>Получение объекта ChartGridlines
 

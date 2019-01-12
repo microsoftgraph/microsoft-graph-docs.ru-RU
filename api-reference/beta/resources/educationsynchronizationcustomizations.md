@@ -2,12 +2,14 @@
 title: Тип ресурса educationSynchronizationCustomizations
 description: Содержит список сущностей для синхронизации и их настройки, при их наличии.
 localization_priority: Normal
-ms.openlocfilehash: 0c07b166c09b2bfa6bf88159533523dab869a325
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 3254915887afc1e6b0da0b3b6c44b59689219ab1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817040"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918191"
 ---
 # <a name="educationsynchronizationcustomizations-resource-type"></a>Тип ресурса educationSynchronizationCustomizations
 

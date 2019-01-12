@@ -3,12 +3,13 @@ title: 'Вызовите: перенаправление'
 description: Перенаправление входящего звонка.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: f581a5ce95368e7d852a5b1435ef05bf940f607c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 20470a57358caea08116bbacf6348d659d0d3636
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809473"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921726"
 ---
 # <a name="call-redirect"></a>Вызовите: перенаправление
 

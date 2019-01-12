@@ -3,12 +3,13 @@ title: Тип ресурса mobileAppProvisioningConfigGroupAssignment
 description: Содержит свойства, используемые для назначения к конфигурации подготовки приложения в группу.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 32c5bb83fc3991d36c4e52a4350b0e05496b32fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6996bf29776910d8af3da08d63003889b817cfbf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840784"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912136"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>Тип ресурса mobileAppProvisioningConfigGroupAssignment
 

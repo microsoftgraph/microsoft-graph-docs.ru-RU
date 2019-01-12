@@ -3,12 +3,13 @@ title: Тип ресурса vppToken
 description: Вы приобрели несколько лицензий для приложений для iOS по программе корпоративных покупок Apple Volume Purchase Program для бизнеса или образовательных учреждений. Это включает настройку учетной записи Apple VPP с веб-сайта Apple и передачу токена Apple VPP для бизнеса или образовательных учреждений в Intune. Затем вы можете синхронизировать данные корпоративных покупок с помощью Intune и отслеживать использование приложения, приобретенного по программе корпоративных покупок. Вы можете передать несколько токенов Apple VPP для бизнеса или образовательных учреждений.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3c3394ea1872ed91e8c2b8e95db498cd47da05a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c69329cefc99d2a57907c8bc0fe34beb8371f1d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885227"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912360"
 ---
 # <a name="vpptoken-resource-type"></a>Тип ресурса vppToken
 

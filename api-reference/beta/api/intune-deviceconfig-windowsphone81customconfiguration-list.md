@@ -3,12 +3,13 @@ title: Перечисление объектов windowsPhone81CustomConfigurati
 description: Перечисление свойств и связей объектов windowsPhone81CustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e11124fbcddd7e990ba75eedec4c85a4a4b40f70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dab76fc012a23522d2eb67adca0b5148c9ae4f84
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878682"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916336"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Перечисление объектов windowsPhone81CustomConfiguration
 
