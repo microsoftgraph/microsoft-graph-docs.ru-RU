@@ -3,12 +3,13 @@ title: Создание объекта detectedApp
 description: Создание объекта detectedApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41d7cd2c7b078baae265ecd9a9c4244b7191fedc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a30ec97009099f7102362ed5cae3eac2aeeaee93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846328"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957356"
 ---
 # <a name="create-detectedapp"></a>Создание объекта detectedApp
 

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: Получение элементов из списка SharePoint
 localization_priority: Normal
-ms.openlocfilehash: eaecf297e612f8eb832f13751571816dfe950942
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 5da54754567fdaf3517b551aa41e25e8273d596f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874482"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958252"
 ---
 # <a name="enumerate-items-in-a-list"></a>Перечисление элементов списка
 

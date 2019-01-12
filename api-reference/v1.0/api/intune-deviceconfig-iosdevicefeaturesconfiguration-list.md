@@ -3,12 +3,13 @@ title: Перечисление объектов iosDeviceFeaturesConfiguration
 description: Список свойств и связей объектов iosDeviceFeaturesConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 31a903c3d938b2f85227e7a5d0e51d3003f64727
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: baf4d826fc765b5e3b3e38e8a760b4e0a0ca1ec1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884114"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982983"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>Перечисление объектов iosDeviceFeaturesConfiguration
 

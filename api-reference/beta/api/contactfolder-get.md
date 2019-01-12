@@ -3,12 +3,13 @@ title: Получение объекта contactFolder
 description: Получение папки контактов с помощью ее идентификатора.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: aa2f988593a3e73db55a661bf4cc83d2cbb612cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 86f2adf867737e31d96a75d40f50442b10a468b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838194"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985118"
 ---
 # <a name="get-contactfolder"></a>Получение объекта contactFolder
 

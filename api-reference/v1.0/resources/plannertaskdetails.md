@@ -2,12 +2,14 @@
 title: Тип ресурса plannerTaskDetails
 description: Ресурс **plannerTaskDetails** представляет дополнительные сведения о задаче. С каждым объектом task связан объект details.
 localization_priority: Normal
-ms.openlocfilehash: a183ba0f9b19ea2de700913d29e9586442ba2c03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 75e17200dc52fff385c7be8fb0269a3da20464b8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806576"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956012"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Тип ресурса plannerTaskDetails
 

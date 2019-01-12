@@ -3,12 +3,13 @@ title: Получение беседы
 description: Получение свойств и связей объекта беседы.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: b4fbde2e64e4fba5efd95d77b57f20a514f1c6a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 174d5a5b5309348de5ebf01d38445d032d9e31ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886165"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980393"
 ---
 # <a name="get-conversation"></a>Получение беседы
 

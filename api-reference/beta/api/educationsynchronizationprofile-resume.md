@@ -3,12 +3,13 @@ title: Возобновление синхронизации на educationSynch
 description: Возобновление синхронизации в конкретных школа профиль синхронизации данных клиента.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: c68fb6d042d92fd0f1334dc498b175c27cbc4ced
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 0a74d85bd902c21f3af6e8aa506438471f142600
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894210"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984670"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Возобновление синхронизации на educationSynchronizationProfile
 

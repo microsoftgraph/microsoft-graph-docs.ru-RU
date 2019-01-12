@@ -3,12 +3,13 @@ title: Список вкладок в канале
 description: 'Получить список вкладок в указанный канал в группе. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 628dcf57656782f2d921876dccb70173ef7b4623
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d481b34036cc68d59b044c29b21bcdc9461af5ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842884"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981093"
 ---
 # <a name="list-tabs-in-channel"></a>Список вкладок в канале
 

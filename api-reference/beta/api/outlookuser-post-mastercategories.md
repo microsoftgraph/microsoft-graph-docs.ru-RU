@@ -2,12 +2,14 @@
 title: Создание категории Outlook
 description: Создание объекта outlookCategory в основном списке категорий пользователя.
 localization_priority: Normal
-ms.openlocfilehash: 4f032bff358fbc3c07b30f925abee27664c01c8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: e76f6ddc0f733bd2e50b3aac62707acbed370ee3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807093"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984705"
 ---
 # <a name="create-outlook-category"></a>Создание категории Outlook
 

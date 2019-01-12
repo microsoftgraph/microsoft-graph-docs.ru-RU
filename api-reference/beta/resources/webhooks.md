@@ -2,12 +2,13 @@
 title: Использование Microsoft Graph API для получения уведомлений об изменении
 description: Microsoft Graph REST API использует механизм webhook для доставки уведомлений на клиентах. Клиент — веб-службы, который настраивает URL-адреса для получения уведомлений. Клиентские приложения используйте уведомления для обновления их состоянии после изменения. Дополнительные сведения, включая как подписывание и обработка оповещения о входящих, посвященной Set up уведомления об изменениях в пользовательских данных.
 localization_priority: Normal
-ms.openlocfilehash: 9b1907d37115e21b41a9e957de9b7ae0a32fd311
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: fe571fe0a9a7c982ee7ce93b08457586134d7d91
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816473"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986139"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Использование Microsoft Graph API для получения уведомлений об изменении
 

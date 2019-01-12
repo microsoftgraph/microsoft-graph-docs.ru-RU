@@ -3,12 +3,13 @@ title: Get mobileAppCategory
 description: Чтение свойств и связей объекта mobileAppCategory.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3ef51f39e1844769d7b4342573d52e4a46b05a0a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 50cb03496561a0b6d0c1d34405822d66b3e6cca6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892311"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956187"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 

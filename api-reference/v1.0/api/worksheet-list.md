@@ -3,12 +3,13 @@ title: Список WorksheetCollection
 description: Получение списка объектов листов.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c8ffa91c99355ecc42345793f026d17c7b5b3082
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9b8e8a32e42f6fa0922fe011deae4ae64558d09b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885234"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981191"
 ---
 # <a name="list-worksheetcollection"></a>Список WorksheetCollection
 

@@ -3,12 +3,13 @@ title: Тип перечисления managedDeviceRemoteAction
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fc75efe53e561f90669c0619078c1b218531a6be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b448a30d48c6dda0de2d3b67d027e152d1fa31b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827379"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982073"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>Тип перечисления managedDeviceRemoteAction
 

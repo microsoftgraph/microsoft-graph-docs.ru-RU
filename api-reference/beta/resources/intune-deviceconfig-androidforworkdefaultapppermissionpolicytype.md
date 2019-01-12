@@ -3,12 +3,13 @@ title: Тип перечисления androidForWorkDefaultAppPermissionPolicyT
 description: Тип политики разрешений приложения по умолчанию Android для работы.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5d449e170378357d5e82abf9771eedcd6f46ca27
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d493fc3877acd4d98f79768d04a86c7b3bfe2a55
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859201"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982878"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>Тип перечисления androidForWorkDefaultAppPermissionPolicyType
 

@@ -2,12 +2,14 @@
 title: Обновление объекта managedAppOperation
 description: Обновление свойств объекта managedAppOperation.
 author: tfitzmac
-ms.openlocfilehash: 2bd0d326a4300bdae29484b547bbd5aa429728ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 5d0baf0b503edcde0bdc03329ec354a4d6e42a4c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311979"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980134"
 ---
 # <a name="update-managedappoperation"></a>Обновление объекта managedAppOperation
 
@@ -35,7 +37,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 

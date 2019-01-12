@@ -2,12 +2,14 @@
 title: Тип ресурса educationResource
 description: Суперкласса для всех объектов ресурсов в системе. Ресурс связан с **назначения** и/или **отправки**, который представляет объект обучения, который
 localization_priority: Normal
-ms.openlocfilehash: 0608f3c0fb84f05404032bed611f0af887e7bb67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 9ac84fd9d661f31186ea65e95c680456cdabe221
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827561"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982122"
 ---
 # <a name="educationresource-resource-type"></a>Тип ресурса educationResource
 

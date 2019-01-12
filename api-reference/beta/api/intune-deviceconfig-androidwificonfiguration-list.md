@@ -3,12 +3,13 @@ title: Список androidWiFiConfigurations
 description: Свойства списка и связей объектов androidWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 42943f892370ff9ea63117363fb57a6b0abd82fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f42bda9cbc4ebe9f8a250a7017048dd9762f83cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870198"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955879"
 ---
 # <a name="list-androidwificonfigurations"></a>Список androidWiFiConfigurations
 

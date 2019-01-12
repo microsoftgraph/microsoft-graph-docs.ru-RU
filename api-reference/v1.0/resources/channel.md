@@ -3,12 +3,13 @@ title: Тип ресурса канала
 description: 'Канал представляет коллекцию сообщений в группе. '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 9a7b12646f36152bef17cec2d206e8e84abdcbbe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: f513a0c8de51cdfb8ca692098cab403dd74d747a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826567"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986350"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса канала
 

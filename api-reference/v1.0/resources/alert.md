@@ -2,12 +2,14 @@
 title: Тип оповещения ресурса
 description: Представляет потенциальных проблем безопасности в клиент пользователя, который идентификации Майкрософт или партнер решения по обеспечению безопасности. Используйте оповещения для объединения и упростить управление проблемами безопасности через все интегрированные решения. Примеры запросов в обозревателе график Дополнительные сведения см.
 localization_priority: Priority
-ms.openlocfilehash: b7821fbbec382b5829275682bf697985787616e7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 5e1501609bc7aeacd5bc666ced4ce8825dadcdb3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840441"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957006"
 ---
 # <a name="alert-resource-type"></a>Тип оповещения ресурса
 

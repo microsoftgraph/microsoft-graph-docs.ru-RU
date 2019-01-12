@@ -3,12 +3,13 @@ title: Тип ресурса deviceAndAppManagementAssignmentTarget
 description: Базовый тип для объектов назначения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a8ecbd5322691123cd2f187aabb31fc6ae67fed7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fbac23bc2f7378e6d7b354f5fa3f2348295c4651
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816501"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981695"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Тип ресурса deviceAndAppManagementAssignmentTarget
 

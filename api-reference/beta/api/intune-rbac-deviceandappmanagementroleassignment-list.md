@@ -3,12 +3,13 @@ title: Перечисление объектов deviceAndAppManagementRoleAssig
 description: Список свойств и связей объектов deviceAndAppManagementRoleAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8dc9307ed69c977b3d312f63e3d2a1e1ed9814b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d6d583c440b73ef1fac3d84d130183116b14a21
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848407"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991055"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Перечисление объектов deviceAndAppManagementRoleAssignment
 

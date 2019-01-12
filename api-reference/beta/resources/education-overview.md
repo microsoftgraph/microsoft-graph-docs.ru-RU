@@ -2,12 +2,14 @@
 title: Работа с интерфейсами API для образования в Microsoft Graph
 description: Интерфейсы API в Microsoft Graph education Улучшите ресурсов Office 365 и данных с помощью сведений, имеющих отношение к education сценарии, включая школ, студентов, преподавателей, классы, регистрации и назначений. Это упрощает создание решений, интегрируемых с образовательными ресурсами.
 localization_priority: Normal
-ms.openlocfilehash: 3f04ee2817a7346710608df0e97a89251103acc9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f5803a5a74933bfe4f09661e68288bc11954a65b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852474"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958091"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Работа с интерфейсами API для образования в Microsoft Graph
 

@@ -3,12 +3,13 @@ title: Тип перечисления windowsDeviceType
 description: Содержит свойства для типа устройства Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6d94bf34975c0bec7a7cb58e8b8cdcc099d500a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af17ebee38a2f597f5dae7032106ef5faab7fa96
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841085"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981975"
 ---
 # <a name="windowsdevicetype-enum-type"></a>Тип перечисления windowsDeviceType
 

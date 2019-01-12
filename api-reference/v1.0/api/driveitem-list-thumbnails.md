@@ -3,12 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Получение эскизов файла или папки
-ms.openlocfilehash: 990c8f6714c188e9468e73ffe35526d3c3825cc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.prod: sharepoint
+ms.openlocfilehash: 7543a8177c146779c645d848292b1600a80c3398
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27025480"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990595"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 

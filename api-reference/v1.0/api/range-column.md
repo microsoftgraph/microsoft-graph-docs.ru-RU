@@ -3,12 +3,13 @@ title: 'Range: Column'
 description: Возвращает столбец в диапазоне.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 5966e8429d2a0406df3b6774db673d286cc4c8b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 21338edb35c8e3e7c060d0f4a03e7e3e77f4e60b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870898"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986721"
 ---
 # <a name="range-column"></a>Range: Column
 

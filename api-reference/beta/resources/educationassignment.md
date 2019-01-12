@@ -2,12 +2,14 @@
 title: Тип ресурса educationAssignment
 description: Представляет ресурс **educationAssignment** задачи или единицы трудозатрат, назначенных участником группы или учебы в классе как часть изучение. Только для преподавателей или владельцев группы могут создавать назначений. Назначения содержат раздаточные материалы и задачи, которые преподаватель хочет учебы для работы на. Каждое назначение учебы имеет связанные отправки, которая содержит все данные, которые их учитель предложено включены. Преподаватель можно добавить показатели и свои отзывы и предложения для предоставления включена по студента.
 localization_priority: Normal
-ms.openlocfilehash: d9d7b11dcd476f0fdd2bbb24364dd0e1e026f200
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: e96b2a27d24f0dc38595e5aea931045199eb6d10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812455"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982262"
 ---
 # <a name="educationassignment-resource-type"></a>Тип ресурса educationAssignment
 

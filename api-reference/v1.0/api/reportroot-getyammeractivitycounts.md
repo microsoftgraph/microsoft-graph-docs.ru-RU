@@ -2,12 +2,13 @@
 title: 'reportRoot: getYammerActivityCounts'
 description: Отслеживайте динамику активности пользователей в Yammer по количеству опубликованных, прочитанных и понравившихся сообщений.
 localization_priority: Normal
-ms.openlocfilehash: fb1e0a9dab16fffb3c1b6c8c0e2577942fa881c3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: e9d9b858c59eeaa153fdc76a0422252f0c00747d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858886"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979952"
 ---
 # <a name="reportroot-getyammeractivitycounts"></a>reportRoot: getYammerActivityCounts
 

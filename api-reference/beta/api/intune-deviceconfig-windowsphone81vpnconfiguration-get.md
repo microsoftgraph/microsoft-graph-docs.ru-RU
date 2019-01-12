@@ -3,12 +3,13 @@ title: Получение windowsPhone81VpnConfiguration
 description: Чтение свойства и связи объекта windowsPhone81VpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7d7e3aaee8b2be09fbd6bab81f9d7e773aefab67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 910555b194701c72c888dc6544ae0d9615fcb5b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886340"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982598"
 ---
 # <a name="get-windowsphone81vpnconfiguration"></a>Получение windowsPhone81VpnConfiguration
 

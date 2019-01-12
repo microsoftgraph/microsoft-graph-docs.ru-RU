@@ -3,12 +3,13 @@ title: Тип перечисления ratingNewZealandMoviesType
 description: Фильмы рейтинг метки в новой Зеландии
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7ebcb0022d8f898d36e1a0e124503771dd924b2a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 19a49c19241446b0a3d5b53074b54dafd152ac8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986371"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>Тип перечисления ratingNewZealandMoviesType
 

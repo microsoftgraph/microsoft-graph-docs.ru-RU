@@ -3,12 +3,13 @@ title: Тип ресурса networkIPv4ConfigurationManagementCondition
 description: Параметры сети IPv4, может быть определен условия управления на основе конфигурации, который будет запускать при обнаружении определенных IP-адрес устройства. Условия управления конфигурации IP-адресов только рассматривается как TRUE при активной сетевого подключения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6964f3e84deacdd20a1c5909fb6bd8c87ddcd8f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 412f5de452e23eeb58f536655c4678526e996e07
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847301"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962109"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>Тип ресурса networkIPv4ConfigurationManagementCondition
 

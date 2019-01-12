@@ -3,12 +3,13 @@ title: Список unsupportedDeviceConfigurations
 description: Свойства списка и связей объектов unsupportedDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 132eea772eb9e428946c34a64b7166c08867bf7d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bfcb2337474b2e45af6b01953078d856cd2e8efd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864906"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984810"
 ---
 # <a name="list-unsupporteddeviceconfigurations"></a>Список unsupportedDeviceConfigurations
 

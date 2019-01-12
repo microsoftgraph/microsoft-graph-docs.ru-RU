@@ -3,12 +3,13 @@ title: Тип ресурса iosHomeScreenApp
 description: Представляет значок приложения на начальном экране
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bb63950229f88fb9987e75f42abfbe39793864ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d27d632050a288966e5f1596e94243b08b40726e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845698"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981751"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Тип ресурса iosHomeScreenApp
 

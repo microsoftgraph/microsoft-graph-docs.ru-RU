@@ -3,12 +3,13 @@ title: Тип ресурса bulkManagedDeviceActionResult
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c7aa0d49182908a960130e202fd4cf096c2c16c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: adc2b2a6b139ad428cb191fe45a3ca7f4192092a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872249"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981779"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса bulkManagedDeviceActionResult
 

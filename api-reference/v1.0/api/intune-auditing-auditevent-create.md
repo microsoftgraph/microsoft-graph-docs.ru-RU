@@ -3,12 +3,13 @@ title: Создание объекта auditEvent
 description: Создание объекта auditEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7e333f960e66a11c1f70b1475f74bfbbdb990551
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 696368ca8c129f1e2fd51682e037626bb89469aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889154"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991169"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 

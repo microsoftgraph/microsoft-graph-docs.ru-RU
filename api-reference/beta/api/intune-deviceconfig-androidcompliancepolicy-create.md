@@ -3,12 +3,13 @@ title: Create androidCompliancePolicy
 description: Создание нового объекта androidCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf6b5d9ca8d509254dab08b420da55700f55351a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 58303104236896100cf2e4b3c81bfeed44992498
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860251"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990896"
 ---
 # <a name="create-androidcompliancepolicy"></a>Create androidCompliancePolicy
 

@@ -3,12 +3,13 @@ title: Тип ресурса depIOSEnrollmentProfile
 description: Ресурс DepIOSEnrollmentProfile представляет определенного профиля регистрации программы регистрации устройства Apple (DEP) в конфигурации операций ввода-вывода. Этот тип профиля должен быть назначен Apple DEP представленные числами, прежде чем соответствующих устройств можно зарегистрировать с помощью функции.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 49e681129c4961638d9443886a89ea05708385ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 92a5e277f0356445ae1dd36c3a643d73624e2207
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869862"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985615"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>Тип ресурса depIOSEnrollmentProfile
 

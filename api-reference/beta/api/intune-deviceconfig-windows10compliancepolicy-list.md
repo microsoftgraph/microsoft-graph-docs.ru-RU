@@ -3,12 +3,13 @@ title: Перечисление объектов windows10CompliancePolicy
 description: Список свойств и связей объектов windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c1aedec43721f6ec4c5649df2f8073c0ca7ea53f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f14888c83568a4fa283b275360b9775b7e0d2c04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863667"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982563"
 ---
 # <a name="list-windows10compliancepolicies"></a>Перечисление объектов windows10CompliancePolicy
 

@@ -3,12 +3,13 @@ title: Get iosLobApp
 description: Чтение свойств и связей объекта iosLobApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a500d5355119ecdcca7d2b0edba3d8a29c848c7c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d07ccb613f4e1bf19df603ba82683f1680f13422
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891604"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984194"
 ---
 # <a name="get-ioslobapp"></a>Get iosLobApp
 

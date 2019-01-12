@@ -3,12 +3,13 @@ title: Тип ресурса Post
 description: Представляет отдельный элемент Post в сущности conversationThread.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 585d823a7a3e4b6814f06c1613cac66a82a93e65
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: d594b7f44a39f17427ac395d4cd734d064d8b1ae
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851193"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982871"
 ---
 # <a name="post-resource-type"></a>Тип ресурса Post
 Представляет отдельный элемент Post в сущности [conversationThread](conversationthread.md).

@@ -2,12 +2,14 @@
 title: Тип ресурса educationIdentityDomain
 description: 'Представляет сопоставление между тип образования пользователя и домен, к которому принадлежит учетная запись пользователя. Домен ресурсов является частью конфигурации создания удостоверений. '
 localization_priority: Normal
-ms.openlocfilehash: 5675499aca010f90deeb517210065ac4802d66b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 280ae1a65e0c14e7960d316cc21154e405f2ee0d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807751"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982031"
 ---
 # <a name="educationidentitydomain-resource-type"></a>Тип ресурса educationIdentityDomain
 

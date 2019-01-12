@@ -3,12 +3,13 @@ title: Список deviceManagementScriptAssignments
 description: Свойства списка и связей объектов deviceManagementScriptAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 47bf7ca7938fb8bab7ea41a925804f1e7b084ff5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a9ece504661e2f30417973eab615f81bf59baec2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873922"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957713"
 ---
 # <a name="list-devicemanagementscriptassignments"></a>Список deviceManagementScriptAssignments
 

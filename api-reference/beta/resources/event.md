@@ -3,12 +3,13 @@ title: Тип ресурса event
 description: Событие в календаре.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: b1986a6d463e1750fea05144e5a8520c62e5a94a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 3a42bd4c87b6c4d8cb26160ae3c36bc7d6380b79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826763"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981149"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 

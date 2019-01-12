@@ -2,12 +2,14 @@
 title: Тип ресурса подсказок
 description: 'Информационные сообщения о получателе, отображаемых для пользователей, хотя они составлять сообщение. Например сообщение об отсутствии '
 localization_priority: Normal
-ms.openlocfilehash: 62955594412b2d42a4d05b4b13858c4e511605df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: ed6d43e033b020b884a6cd1b6220b1ff566a507b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860643"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985958"
 ---
 # <a name="mailtips-resource-type"></a>Тип ресурса подсказок
 

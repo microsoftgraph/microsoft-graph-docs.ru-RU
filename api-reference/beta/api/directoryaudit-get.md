@@ -2,12 +2,14 @@
 title: Получение directoryAudit
 description: Предоставляет (или получает) определенного элемента журнала аудита Azure Active Directory. Включает в себя журналы аудита, созданных функцией различных служб в Azure Active Directory пользователя, приложения, устройств и управление группами, привилегированной управления удостоверениями, обзоры доступа, условия использования, защиту, управление паролями (SSPR и администрирования сброс пароля ), Самообслуживания и т.д группы управления...
 localization_priority: Normal
-ms.openlocfilehash: e85c0c14e4f6c6a0aa3b8beca1ef9d05f4b82aa0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809273"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956320"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 Предоставляет (или получает) определенного элемента журнала аудита Azure Active Directory. Включает в себя журналы аудита, созданных функцией различных служб в Azure Active Directory пользователя, приложения, устройств и управление группами, привилегированной управления удостоверениями, обзоры доступа, условия использования, защиту, управление паролями (SSPR и администрирования сброс пароля ), Самообслуживания и т.д группы управления...

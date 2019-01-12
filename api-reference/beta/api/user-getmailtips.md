@@ -3,12 +3,13 @@ title: 'пользователь: getMailTips'
 description: Получите подсказки одного или нескольких получателей как доступные для пользователя, выполнившего вход.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 2577b37f6cbfa3bd6dc5eff712c07562ecdadbf2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 899524a9db73a202901800804c6061289f32f3fb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855967"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958126"
 ---
 # <a name="user-getmailtips"></a>пользователь: getMailTips
 
@@ -49,7 +50,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 |EmailAddresses|Коллекция String|Коллекция SMTP-адреса для получения подсказок для получателей.|
 |MailTipsOptions|Строка|Перечисление флаги, который представляет запрошенный подсказок. Возможные значения: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, и `totalMemberCount`.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [подсказок](../resources/mailtips.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -73,7 +74,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

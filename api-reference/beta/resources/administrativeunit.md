@@ -2,12 +2,14 @@
 title: Тип ресурса administrativeUnit
 description: Административное подразделение предоставляет концептуальные контейнер для пользователей и групп объектов каталога. С помощью административного единиц измерения, администратор компании теперь можно делегировать административные обязанности для управления пользователями и групп, содержащихся в рамках или заданной областью единице администрирования для администратора региональных или отделов.
 localization_priority: Normal
-ms.openlocfilehash: 523214d7bd319d940f042d461b4903ff1f1475e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a4fb81c9a9d605dd155facefb263ff4a310442c3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845411"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955319"
 ---
 # <a name="administrativeunit-resource-type"></a>Тип ресурса administrativeUnit
 

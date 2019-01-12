@@ -3,12 +3,13 @@ title: Тип перечисления internetSiteSecurityLevel
 description: Возможные значения для уровня безопасности для сайтов Интернета.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 20a826382ca54be2a68b281d2500ea056aa73b79
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 674c9e7b1202584db5bbaae7224e5c042b977d78
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860167"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987617"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>Тип перечисления internetSiteSecurityLevel
 

@@ -3,12 +3,13 @@ title: Тип ресурса iosScepCertificateProfile
 description: профиль сертификат SCEP операций ввода-вывода.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 158a9defdf8291c0e3887c870b351e2732238f43
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5d38d6e9272bc349348cf45fee5c0b7a0ce7d2a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814989"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985986"
 ---
 # <a name="iosscepcertificateprofile-resource-type"></a>Тип ресурса iosScepCertificateProfile
 
