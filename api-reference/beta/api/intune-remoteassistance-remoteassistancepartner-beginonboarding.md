@@ -3,12 +3,13 @@ title: Действие beginOnboarding
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2afc1475c0fb4d3f08ebef18f7b87c5c3927029
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c4111484afa7d118f6e18ee6eabc0b2511495fc2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890638"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913874"
 ---
 # <a name="beginonboarding-action"></a>Действие beginOnboarding
 

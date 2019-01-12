@@ -3,12 +3,13 @@ title: 'Range: EntireRow'
 description: Возвращает объект, представляющий всю строку диапазона.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 502456af2b3af0f7dfeeb9b419a57478a8aea252
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 4e07b3da46d30e3163c62b182d55d9f3fea3a9df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860216"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928033"
 ---
 # <a name="range-entirerow"></a>Range: EntireRow
 

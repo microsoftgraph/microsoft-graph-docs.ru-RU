@@ -3,12 +3,13 @@ title: Тип ресурса managedDeviceModelsAndManufacturers
 description: Модели и производители meatadata для управляемых устройств в учетной записи
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 86d9f9dd0642abab73f6b750b997c75851f6be02
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8a1769f82153fd8184807877c484a4dc31ebda1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875623"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927529"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>Тип ресурса managedDeviceModelsAndManufacturers
 

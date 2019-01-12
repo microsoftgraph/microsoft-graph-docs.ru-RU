@@ -1,12 +1,15 @@
 ---
 title: Использование интерфейса API REST почты Outlook
 description: Microsoft Graph позволяет получить авторизованные доступ к данным почты Outlook пользователя в личный или организации учетной записи приложения.
-ms.openlocfilehash: 5ea7973901e7679821a7a194d1894b3f5b821206
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 96d2924846adebaae0ed435aed7dcf65934db81a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082430"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933017"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование интерфейса API REST почты Outlook
 

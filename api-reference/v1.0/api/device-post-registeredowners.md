@@ -1,14 +1,15 @@
 ---
 title: Создание объекта registeredOwner
 description: Добавление пользователя в качестве зарегистрированного владельца устройства.
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 295c48c586a6ddf31b1ceef15b9f1137227ba3ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 94d286b88b32d0e86e70581c4d4b91f7408bde51
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820526"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927648"
 ---
 # <a name="create-registeredowner"></a>Создание объекта registeredOwner
 

@@ -3,12 +3,13 @@ title: Тип ресурса activeDirectoryWindowsAutopilotDeploymentProfile
 description: Windows автопилот развертывания профилей
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a7928487cf0377407738e88f8a4da6a994cb0bba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a9974c2569016ee4d34d0f5d52b99f33e981f448
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866754"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932835"
 ---
 # <a name="activedirectorywindowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса activeDirectoryWindowsAutopilotDeploymentProfile
 

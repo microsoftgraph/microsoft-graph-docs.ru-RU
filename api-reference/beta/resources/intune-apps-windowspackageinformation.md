@@ -3,12 +3,13 @@ title: Тип ресурса windowsPackageInformation
 description: Содержит свойства для сведения о пакете для строки Windows бизнес-приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f7f3cd593670e071ae62bdb287bcebeee01d555
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ac0f9aad1cdba1eaaac12754fd4a4d0ad4a6db32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849534"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926850"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Тип ресурса windowsPackageInformation
 

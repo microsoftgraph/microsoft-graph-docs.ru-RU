@@ -3,12 +3,13 @@ title: Обновление объекта targetedManagedAppPolicyAssignment
 description: Обновление свойств объекта targetedManagedAppPolicyAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ba9b7d362360cf12b7af4627721892ef68143efa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5d20413017c9a1063204273574bb9b24e8ba31b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829948"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927767"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Обновление объекта targetedManagedAppPolicyAssignment
 

@@ -2,12 +2,13 @@
 title: Отчеты об использовании устройств с Yammer
 description: Отчеты об использовании устройств с Yammer содержат сведения о том, какие устройства с Yammer есть у пользователей. Вы можете просматривать сведения о количестве пользователей за указанный период с разбивкой по типам устройств и по пользователям.
 localization_priority: Normal
-ms.openlocfilehash: 8ead8d84007507debede65716a4ab1512b0f0d1b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 009d33b0a12f7785a5802f4880acb617f3652f77
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894049"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930399"
 ---
 # <a name="yammer-device-usage-reports"></a>Отчеты об использовании устройств с Yammer
 

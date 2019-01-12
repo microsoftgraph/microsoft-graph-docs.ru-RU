@@ -3,12 +3,13 @@ title: Перечисление объектов defaultManagedAppProtection
 description: Перечисление свойств и связей объектов defaultManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f81d45eb43c565620216ba15a7ee14b4c4b8257b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e9523f8dddaf2ae4fee28d3497649b9cbe2f223e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848981"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928789"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Перечисление объектов defaultManagedAppProtection
 

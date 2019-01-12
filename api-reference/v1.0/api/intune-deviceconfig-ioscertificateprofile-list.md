@@ -3,12 +3,13 @@ title: Перечисление объектов iosCertificateProfile
 description: Список свойств и связей объектов iosCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 46f4d8a37ef1efea7958656e3ed41085c4a98a16
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dd1bf50ac9a90a8d291580951ec99d87a44c1158
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825510"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927060"
 ---
 # <a name="list-ioscertificateprofiles"></a>Перечисление объектов iosCertificateProfile
 

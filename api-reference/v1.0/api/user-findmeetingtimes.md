@@ -2,12 +2,14 @@
 title: 'user: findMeetingTimes'
 description: Предложите совещаний и на основе доступности организатора и участников и ограничения времени или расположение указан как параметры расположения.
 localization_priority: Priority
-ms.openlocfilehash: 0eb17aaab4eb8a93ce4a6d1af754ab5f192328fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b1e2ced373cffec19ab0d945dbc27e24833e8059
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867979"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923168"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 Предложите совещаний и на основе доступности организатора и участников и ограничения времени или расположение указан как параметры расположения.
